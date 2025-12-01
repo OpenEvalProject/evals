@@ -1,0 +1,1779 @@
+{
+  "submission": {
+    "id": "a47eabf1-6f24-477a-ad1c-27ad41074669",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:30:04.573166Z",
+    "updated_at": "2025-11-30T21:30:04.573166Z"
+  },
+  "content": [
+    {
+      "id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "submission_id": "a47eabf1-6f24-477a-ad1c-27ad41074669",
+      "content_type": "manuscript",
+      "content_text": "# A specific role for serotonin in overcoming effort cost\n\n## Authors\n\n- Florent Meyniel<sup>1</sup> ([ORCID: 0000-0002-6992-678X](https://orcid.org/0000-0002-6992-678X)) \u2020\n- Guy M Goodwin<sup>4</sup>\n- JF William Deakin<sup>6</sup> ([ORCID: 0000-0002-2750-962X](https://orcid.org/0000-0002-2750-962X))\n- Corinna Klinge<sup>4</sup>\n- Christine MacFadyen<sup>4</sup>\n- Holly Milligan<sup>6</sup>\n- Emma Mullings<sup>6</sup>\n- Mathias Pessiglione<sup>1</sup>\n- Rapha\u00ebl Gaillard<sup>7</sup>\n\n### Affiliations\n\n1. Motivation, Brain and Behavior team Institut du Cerveau et de la Moelle \u00e9pini\u00e8re, Groupe Hospitalier Piti\u00e9-Salp\u00eatri\u00e8re Paris France\n2. INSERM UMRS 1127, CNRS UMR 7225, Universit\u00e9 Pierre et Marie Curie (UPMC-P6) Paris France\n3. Cognitive Neuroimaging Unit, NeuroSpin Center INSERM U992, Institut d'Imagerie Biom\u00e9dicale, Direction de la recherche fondamentale, Commissariat \u00e0 l'\u00e9nergie atomique et aux \u00e9nergies alternatives Gif-sur-Yvette France\n4. Department of Psychiatry University of Oxford Oxford United Kingdom\n5. Warneford Hospital University of Oxford Oxford United Kingdom\n6. Neuroscience and Psychiatry Unit The University of Manchester Manchester United Kingdom\n7. Centre Hospitalier Sainte-Anne Service de Psychiatrie Paris France\n8. Facult\u00e9 de M\u00e9decine Paris Descartes Universit\u00e9 Paris Descartes, Sorbonne Paris Cit\u00e9 Paris France\n9. Laboratoire de Physiopathologie des maladies Psychiatriques, Centre de Psychiatrie et Neurosciences INSERM U894, Universit\u00e9 Paris Descartes, Sorbonne Paris Cit\u00e9 Paris France\n10. Human Histopathology and Animal Models, Department of Infection and Epidemiology Institut Pasteur Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nSerotonin is implicated in many aspects of behavioral regulation. Theoretical attempts to unify the multiple roles assigned to serotonin proposed that it regulates the impact of costs, such as delay or punishment, on action selection. Here, we show that serotonin also regulates other types of action costs such as effort. We compared behavioral performance in 58 healthy humans treated during 8 weeks with either placebo or the selective serotonin reuptake inhibitor escitalopram. The task involved trading handgrip force production against monetary benefits. Participants in the escitalopram group produced more effort and thereby achieved a higher payoff. Crucially, our computational analysis showed that this effect was underpinned by a specific reduction of effort cost, and not by any change in the weight of monetary incentives. This specific computational effect sheds new light on the physiological role of serotonin in behavioral regulation and on the clinical effect of drugs for depression.Clinical trial Registration: ISRCTN75872983\n\n## Introduction\n\nSelective serotonin reuptake inhibitors (SSRI) are the most prescribed medications for major depressive episodes (Bauer et al., 2008). The effects of SSRI on improving mood and reducing anxiety have been well documented (Trivedi et al., 2006; Stahl, 2008; Cipriani et al., 2009) and many experimental studies showed that serotonin modulates emotional processing even in healthy volunteers (Harmer et al., 2009; Serretti et al., 2010). Loss of interest or pleasure in daily activities is also a key symptom of depression (American Psychiatric Association, 2013). However, the impact of SSRI on the\u00a0motivation deficit (apathy) remains rather controversial (Papakostas et al., 2006; Weber et al., 2009).\n\nIndeed, several studies reported that SSRI treatments do not reduce apathy as much as other symptoms (Fava et al., 2014) or can even induce apathy in patients (Barnhart et al., 2004; Sansone and Sansone, 2010; Padala et al., 2012). However, other studies also reported that SSRI treatments increase motivation or at least the sensitivity to reward (Tang et al., 2009; Stoy et al., 2012; Yuen et al., 2014). The related animal literature is also contradictory: some studies on cost/benefit trade-off showed reduced effort expenditure with SSRIs (Yohn et al., 2016) or no effect with serotonin blockers (Denk et al., 2005), while other studies reported increased motor activity induced by SSRI (Weber et al., 2009) or optogenetic stimulation of the dorsal raphe nucleus (Warden et al., 2012).\n\nOne issue with clinical studies is that SSRI effects may be confounded by an interaction with the pathological state: an SSRI treatment was reported to decrease apathy in late-life depression (Yuen et al., 2014) and to increase it in Parkinson\u2019s disease (Zahodne et al., 2012). Another issue is that apathy may not be a simple construct. It is typically captured as a loss of behavioral activation (Cl\u00e9ry-Melin et al., 2011; Treadway et al., 2012), which could arise from different causes at the cognitive level: for instance a diminished sensitivity to reward attractiveness, or alternatively an exacerbated sensitivity to action cost. The ambition of the present study therefore was two-fold: we aimed (1) to clarify the effects of an SSRI on the motivation of effortful behavior in healthy volunteers, unconfounded by psychopathology, and (2) to reconcile these effects with a more general role of serotonin in the sensitivity to action costs vs. benefits.\n\nAlthough experimental findings seem diverse at first sight, they might suggest a general role for serotonin in the behavioral adaptation to action costs. Previous studies suggested that serotonin is implicated in the motor aspects of action production and also the valuation processes that motivate the action. Notably, serotonin was found to condition impulse control and the capacity for behavioral inhibition (Cools et al., 2005; Crockett et al., 2009; Warden et al., 2012; Guitart-Masip et al., 2014) and to promote patience for delayed rewards (Schweighofer et al., 2008; Miyazaki et al., 2014; Worbe et al., 2014). Serotonin also impacts the determinants of actions, for instance, how positive and negative outcomes guide learning in humans (Chamberlain et al., 2006; Crockett et al., 2009; Faulkner and Deakin, 2014), monkeys (Clarke et al., 2004) and rodents (Bari et al., 2010). Several attempts have been made previously to capture serotonin function in a coherent computational theory. Key ideas are that serotonin (1) regulates the impact of action costs such as punishments (Daw et al., 2002; Niv et al., 2007) or delay (Niv et al., 2007; Cools et al., 2011; Miyazaki et al., 2014) and (2) adjusts the propensity to activate versus inhibit the action (Boureau and Dayan, 2011; Cools et al., 2011).\n\nBorrowing from these models, we retain the general working hypothesis that serotonin regulates behavioral activation by modulating the weight of action costs rather than benefits.\n\nWe further suggest that the notion of action cost could be more general than initially envisaged. Indeed, in the literature quoted above, actions are mostly implemented as binary responses (e.g., approach vs. avoidance) and their costs or benefits are manipulated through the valence of their outcome (e.g., monetary gain or loss). Such tasks therefore over-simplify the real-life situation, where actions may often require more or less effort, depending on their intensity and duration.\n\nHere, we tested the specific hypothesis that serotonin regulates the weight of effort cost in action production, as opposed to the weight of expected benefit. To assess the impact of changing cerebral serotonin levels and how it unfolds over time, we compared different groups of healthy subjects treated under double blind conditions with escitalopram (an SSRI) or placebo during eight weeks. Participants performed a previously published task (Meyniel et al., 2013), during which they allocated physical effort over time in order to maximize a monetary payoff that increased with effort duration (see Figure 1A). The task thus involves trading a physical effort cost against distinct levels of monetary incentives. Although changes in cost and benefit were independently manipulated in the task, they may result in intricate effects at the behavioral level. To disentangle between potential effects of serotonin on cost or benefit estimates, or both, we used a formal model of how decisions are generated by a hidden level of computations in our task, as previously described (Meyniel et al., 2013, 2014). Based on this computational analysis of the behavior, we could pinpoint the specific effect of serotonin on cost-related parameters, and track the predicted effects of such a computational change onto the experimental measures.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17282/elife-17282-fig1-v1.jpg)\n\n**Figure 1.:** (A) The screenshots depict a trial as it was presented to subjects.Subjects were free to allocate their effort as they wished over the 30s corresponding to the trial duration. They were instructed that their monetary payoff would be proportional to both the monetary incentive and the effort duration, i.e. the time spent squeezing a handgrip harder than a target force level, which varied with task difficulty. Subjects were provided with on-line feedback on the payoff accumulated in the trial (score on the top) and on the instantaneous pressure exerted on the grip (fluid level in the thermometer). The force time series of an example trial is shown below the screenshots, revealing 3 effort periods, with rewarded effort (force above target) plotted in black (not gray). Two factors were manipulated across trials: (i) the incentive level, shown as a coin image (1, 2 or 5p) and (ii) the difficulty level, corresponding to the same white bar in the thermometer reached with different target force levels (70%, 80% or 90% of the maximal force). The last screen summarized the payoff cumulated over preceding trials.\u00a0(B) Using a double-blind procedure, healthy subjects were assigned to one of the two treatment groups, corresponding to a daily intake of either placebo or escitalopram (10 mg during the initial phase, 20 mg during the intermediate and late phase) during 9 weeks. Each subject completed the effort allocation task three times at distinct treatment phases (initial, intermediate and late). Numbers of subjects and visits correspond to data sets included in the analysis after compliance and quality checks.\u00a0(C) The three left-most graphs show task performance (as reflected in monetary payoff) sorted by treatment group (black: placebo; gray: escitalopram) and time since treatment onset. Statistical significance was assessed with two-sample, two-sided t-tests. On the right-most plot, payoff was averaged over visits at the subject level. Statistical significance was assessed with ANOVAs including treatments as between-subject factors and test phase (initial, intermediate or late) as a within-subject factor. *p<0.05; **p<0.005. Error bars indicate Student's 95% confidence intervals.\n\n## Results\n\n### Escitalopram improves performance in the effort allocation task\n\n58\u00a0subjects were included in the analysis, see Table 1.\u00a0We took the cumulated payoff as the primary measure of performance in the task and compared it between groups and visits (see Figure 1C). We found a significant effect of treatment group: performance was significantly improved in the escitalopram group (F1, 58.4=9.37, p=0.003) as compared to the placebo group. This difference was stable over time: there was no significant interaction between groups and visits (F2, 91=0.22, p=0.8). The average payoff per visit was \u00a335.9\u00b11.21\u2009s.e.m. and \u00a330.1\u00b11.44\u2009s.e.m. in the escitalopram and placebo groups respectively.\n\n### Escitalopram has a specific computational effect on effort cost\n\nThe better performance observed in the escitalopram group could be underpinned by different mechanisms: alleviation of effort costs or inflation of incentive values, or both. To disentangle between the two mechanisms, we relied on a computational model of effort allocation that was previously proposed (Meyniel et al., 2013; Meyniel et al., 2014). This model assumes that a single computational variable, termed cost evidence, accounts for the decision to stop and resume effort exertion. Cost evidence waxes during effort (with slope Se) until reaching an upper bound where effort is stopped, and it wanes during rest (with slope Sr) until reaching a lower bound where effort is resumed. The distance between bounds is the cost-evidence amplitude (denoted A). Effort and rest durations are determined by the ratios of amplitude and slopes (see Figure 2A) so that performance depends on the value of latent parameters (A, Se, Sr) and its potential modulation by task factors (monetary incentive and effort difficulty). We used a Bayesian Model Selection procedure previously validated (Meyniel et al., 2013, 2014) to pinpoint the effect of the task factors onto these latent parameters (see Materials\u00a0and\u00a0methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17282/elife-17282-fig2-v1.jpg)\n\n**Figure 2.:** (A) The cost-evidence accumulation model assumes that effort and rest durations are respectively determined by the accumulation (mean slope Sem) and dissipation (mean slope Srm) of cost evidence between bounds (mean amplitude Am).\u00a0Possible modulations of these parameters by incentive and difficulty levels were implemented in 20 distinct models. In the best model identified (#20) by Bayesian selection, increasing effort difficulty shortens effort duration by steepening the accumulation slope (a parametric effect controlled by parameter Sed and illustrated with colors from yellow to red). Increasing the\u00a0incentive level has two effects: first, it shortens rest duration by speeding up the dissipation (parametric effect of Sri, illustrated by colors from dark to light blue); second, it lengthens effort duration by pushing back the bounds (parametric effect of Ai, illustrated by green scaling).\u00a0(B) Plots show inter-subject means and Student's 95% confidence intervals obtained for the fitted values of model parameters (which were averaged over visits at the subject level). To facilitate visual comparison, scales and offsets were adjusted so that mean and error bars are visually equal across plots in the placebo group. Statistical significance corresponds to ANOVAs including treatment group (escitalopram vs. placebo) as a between-subject factor and treatment phase as a within-subject factor (initial, intermediate or late); **p<0.005.\u00a0(C) Data in the placebo group served as a\u00a0baseline to simulate effort and rest durations after imposing a 20% increase in computational parameters. In the table, each row corresponds to a simulated change in one single parameter. Colors denote the effect sizes recovered by model fitting for each parameter, as percent of change compared to baseline. Numbers indicate the percentage of 'hit' (on the diagonal) and 'false alarm' (off-diagonal) in detecting a significant change in parameter values with a paired t-test thresholded at p<0.01.\u00a0(D)\u00a0The graph illustrates why the effect of escitalopram, characterized at the computational level as a reduced accumulation slope of cost-evidence during effort (Sem), should translate at the behavioral level into both a longer effort duration and an increased sensitivity of effort duration to incentive level.\n\nReplicating our previous studies, the best model showed that incentives impacted the amplitude (A) and dissipation slope (Sr), whereas effort difficulty impacted the accumulation slope (Se), as illustrated in Figure 2A, right. To capture all the effects, the cost-evidence accumulation model therefore necessitates five free parameters: the mean slope of cost-evidence accumulation (Sem) and its steepening for higher difficulty levels (Sed); the mean slope of cost-evidence dissipation during rest (Srm) and its steepening for higher incentives (Sri); and the expansion of the cost-evidence amplitude as higher incentives push the bounds back (Ai). The fact that the same best model was found independently in each treatment group with high confidence levels (exceedance probabilities xp>98% in each group) indicates that all subjects can be characterized within this common computational framework. We computed for each subject the best-fitting values of the model parameters (Ai, Sem, Sed, Srm, Sri). Since the interaction between treatments (placebo vs. escitalopram) and treatment phase was not significant for any parameter (all F2, 91<2.03, p>0.14), we provide fitted values pooled over treatment phases in Figure 2B.\n\nOnly one model parameter was significantly different between the placebo and escitalopram groups: the cost-evidence accumulation slope (Sem, F1, 58.0=9.88, p=0.003). This parameter captures the average value of effort cost across conditions: there was a 31% decrease in the escitalopram group compared to the placebo group (on average with \u00b1 s.e.m., placebo: 0.16\u00b10.012, escitalopram: 0.11\u00b10.008); the difference was actually significant at each visit (all p<0.015; two-sided t-test).\n\nThe difference between escitalopram and placebo never reached significance for the other model parameters (all p>0.08, see Table 2; on average with \u00b1 s.e.m. for placebo vs. escitalopram, Ai: 0.15\u00b10.028 vs. 0.19\u00b10.022, Sed: 0.021\u00b10.004 vs. 0.013\u00b10.002, Srm: 0.37\u00b10.022 vs. 0.42\u00b10.029, Sri: 0.086\u00b10.018 vs. 0.126\u00b10.016). We checked the sensitivity and specificity of our model fitting procedure in detecting a treatment effect through simulations. A 20% change in any given parameter was reliably detected and the difference recovered by model fitting was significant in a 96% of simulations at least for Ai, Sem, Srm and Sri and in a 77% of simulations for Sed. Importantly, a change in one single parameter was recovered without propagating to other parameters and the false alarm rate was below 5% for all parameters (Figure 2C).\n\n**Table 1.**\n Details on participants\u00a0N corresponds to the number of subjects per treatment type and phase. A few datasets were not available due technical problems and late withdrawals. Based on criteria specific to the present task (and not to the clinical trial), some subjects were excluded from the analysis ('excluded'). We report the age and sex of participants included in the analysis and the exact time of their test since the treatment onset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Treatment type</th>\n      <th>Treatment phase</th>\n      <th>N not available</th>\n      <th>N excluded</th>\n      <th>N after exclusion</th>\n      <th>Sex (Male / female)</th>\n      <th>Age (years) \u00b1 SD of included subjects</th>\n      <th>Time since treatment onset (days) \u00b1 SD for included subjects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Placebo</td>\n      <td>Initial</td>\n      <td>0</td>\n      <td>5</td>\n      <td>27</td>\n      <td>14/13</td>\n      <td>23.4 \u00b1 4.35</td>\n      <td>3.0 \u00b1 0.68</td>\n    </tr>\n    <tr>\n      <td>Placebo</td>\n      <td>Intermediate</td>\n      <td>0</td>\n      <td>6</td>\n      <td>26</td>\n      <td>14/12</td>\n      <td>23.2 \u00b1 4.33</td>\n      <td>13.8 \u00b1 1.13</td>\n    </tr>\n    <tr>\n      <td>Placebo</td>\n      <td>Late</td>\n      <td>0</td>\n      <td>4</td>\n      <td>28</td>\n      <td>15/13</td>\n      <td>23.4 \u00b1 4.27</td>\n      <td>54.7 \u00b1 4.98</td>\n    </tr>\n    <tr>\n      <td>Escitalopram</td>\n      <td>Initial</td>\n      <td>1</td>\n      <td>8</td>\n      <td>23</td>\n      <td>11/12</td>\n      <td>24.5 \u00b1 4.71</td>\n      <td>3.1 \u00b1 0.63</td>\n    </tr>\n    <tr>\n      <td>Escitalopram</td>\n      <td>Intermediate</td>\n      <td>1</td>\n      <td>6</td>\n      <td>25</td>\n      <td>12/13</td>\n      <td>24.5 \u00b1 4.51</td>\n      <td>14.0 \u00b1 0.87</td>\n    </tr>\n    <tr>\n      <td>Escitalopram</td>\n      <td>Late</td>\n      <td>2</td>\n      <td>6</td>\n      <td>24</td>\n      <td>10/14</td>\n      <td>24.6 \u00b1 4.61</td>\n      <td>55.3 \u00b1 4.69</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Treatment effect on computational parameters and behavioral measures.\u00a0All numbers are p-values obtained from ANOVAs. p-values lower than 0.05/5=0.01 (computational parameters) and 0.05/6=0.008 (behavioral measures) appears in bold to show significant effects that survive correction for multiple comparisons.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Treatment</th>\n      <th>Visit</th>\n      <th>Interaction</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ai</td>\n      <td>0.388</td>\n      <td>0.197</td>\n      <td>0.406</td>\n    </tr>\n    <tr>\n      <td>Sem</td>\n      <td>0.003</td>\n      <td>0.039</td>\n      <td>0.260</td>\n    </tr>\n    <tr>\n      <td>Sed</td>\n      <td>0.0797</td>\n      <td>0.543</td>\n      <td>0.137</td>\n    </tr>\n    <tr>\n      <td>Srm</td>\n      <td>0.186</td>\n      <td>0.778</td>\n      <td>0.612</td>\n    </tr>\n    <tr>\n      <td>Sri</td>\n      <td>0.130</td>\n      <td>0.196</td>\n      <td>0.557</td>\n    </tr>\n    <tr>\n      <td>Effort duration \u2013 mean</td>\n      <td>0.002</td>\n      <td>0.199</td>\n      <td>0.875</td>\n    </tr>\n    <tr>\n      <td>Effort duration \u2013 sensitivity to incentive</td>\n      <td>0.023</td>\n      <td>0.187</td>\n      <td>0.115</td>\n    </tr>\n    <tr>\n      <td>Effort duration \u2013 sensitivity to difficulty</td>\n      <td>0.247</td>\n      <td>0.813</td>\n      <td>0.318</td>\n    </tr>\n    <tr>\n      <td>Rest duration \u2013 mean</td>\n      <td>0.213</td>\n      <td>0.482</td>\n      <td>0.531</td>\n    </tr>\n    <tr>\n      <td>Rest duration \u2013 sensitivity to incentive</td>\n      <td>0.162</td>\n      <td>0.937</td>\n      <td>0.807</td>\n    </tr>\n    <tr>\n      <td>Rest duration \u2013 sensitivity to difficulty</td>\n      <td>0.115</td>\n      <td>0.423</td>\n      <td>0.681</td>\n    </tr>\n  </tbody>\n</table>\n\nTo further test the specificity of SSRI effect on cost-evidence accumulation, we performed another Bayesian model selection that contrasted the two groups of subjects. Parameters of the cost-evidence accumulation model were fitted on the placebo group data to serve as a reference. In the escitalopram group, they were fixed to these reference values and only one or two modulations were permitted to capture the treatment effects. Models including a modulation of Sem outperformed the others (log Bayes Factor, all \u0394>147.9), see Table 3. A version with modulations of both Sem and Sed was slightly more likely than a version with only a modulation of Sem (\u0394=3) and much more likely than any other combination (\u0394>5.9).\n\n**Table 3.**\n Model comparison assessing the specificity of treatment effect.Data in the escitalopram group were fitted with the cost-evidence accumulation model. The parameters were fixed to the values fitted onto the placebo group, excepted when a modulation was permitted. The first row contains models that permit the modulation of one single parameter, whereas the remaining rows correspond to models that permit a combination of two modulations. Each cell gives log Bayes Factor (i.e. log model evidence) relative to the null model. Higher values denote better models.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sem</th>\n      <th>Sed</th>\n      <th>Srm</th>\n      <th>Sri</th>\n      <th>Ai</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Only one modulation</td>\n      <td>173.6</td>\n      <td>19.9</td>\n      <td>\u22124.2</td>\n      <td>\u22123.8</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>Also includes Sem</td>\n      <td></td>\n      <td>176.6</td>\n      <td>169.6</td>\n      <td>169.7</td>\n      <td>170.7</td>\n    </tr>\n    <tr>\n      <td>Also includes Sed</td>\n      <td></td>\n      <td></td>\n      <td>15.7</td>\n      <td>16.1</td>\n      <td>21.7</td>\n    </tr>\n    <tr>\n      <td>Also includes Srm</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u22127.3</td>\n      <td>\u22121.1</td>\n    </tr>\n    <tr>\n      <td>Also includes Sri</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>1.2</td>\n    </tr>\n  </tbody>\n</table>\n\nThus, the specific effect of SSRI on cost-related parameters supports our hypothesis that serotonin is involved in the estimation of action cost, rather than benefits.\n\n### Computational effects of escitalopram translate into behavioral effects\n\nReducing the effort cost (Sem) only should have two effects at the behavioral level (see Figure 2D). The first is straightforward: the duration of effort epochs should be longer. The second is less trivial: the sensitivity of effort duration to incentive level should be increased. This is because in our model, incentive level modulates the amplitude between bounds (as captured by parameter Ai). Thus, the effect of incentive level on effort duration is proportional to the accumulation slope Sem: if the accumulation is slower, then a given displacement of the upper bound will have a larger effect on effort duration.\n\nFulfilling these predictions, we found both a longer effort duration per se (F1, 58.1=10.72, p=0.002, on average placebo: 7.63s\u00b10.56, escitalopram: 10.2s\u00b10.55, with s.e.m.) and a higher sensitivity of effort duration to incentive level (F1, 58.5=5.46, p=0.023, on average with \u00b1 s.e.m., placebo: 1.11\u00b10.22, escitalopram: 1.95\u00b10.26) in the escitalopram group compared to placebo (see Figure 3A). The difference between the two treatment groups never reached significance for the other behavioral variables (all p>0.11, on average with \u00b1 s.e.m., for placebo vs. escitalopram, effort sensitivity to difficulty: \u22120.84\u00b10.13 vs. \u22121.06\u00b10.14, rest duration: 3.17s\u00b10.19 vs 2.85s\u00b10.19, rest sensitivity to incentives: \u22120.19\u00b10.04 vs. \u22120.30\u00b10.05, rest sensitivity to difficulty: 0.077\u00b10.018 vs. 0.025\u00b10.03).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17282/elife-17282-fig3-v1.jpg)\n\n**Figure 3.:** (A) Plots show inter-subject means and Student's 95% confidence intervals obtained from linear regression.Regression coefficients were averaged over visits at the subject level. To facilitate visual comparison, scales and offsets were adjusted so that mean and s.e.m. are visually equal across plots in the placebo group. Statistical significance corresponds to ANOVAs including treatment group (escitalopram vs. placebo) as a between-subject factor and treatment phase as a within-subject factor (initial, intermediate or late); *p<0.05, **p<0.005.\u00a0(B) As predicted by the cost-evidence accumulation model, effort duration and its sensitivity to incentive level are correlated across subjects (one dot corresponds to one subject; values were averaged across visits for each subject). The line shows the linear regression fit obtained when pooling the two treatment groups (\u03c156=0.55, p<10\u20135).\n\nCrucially, because they arise from a common cause, the model also predicts that the two effects should be correlated: the more Sem is reduced, the more effort duration and its sensitivity to incentive level should be increased. The Pearson correlation over subjects was indeed significantly positive in both groups (placebo: \u03c127=0.43, p=0.02; escitalopram: \u03c127=0.54, p=0.002, see Figure 3B).\n\n## Discussion\n\nOur behavioral results in healthy volunteers show that the SSRI escitalopram improves global performance and hence payoff in a task that involves trading effort cost against monetary benefit. Taking advantage of the independent manipulation of cost and benefit, our computational analysis characterized the effect of escitalopram as a specific diminution of effort cost.\n\nTogether with previous findings, our results support the hypothesis that cost may be a general functional domain for serotonin (Boureau and Dayan, 2011; Dayan, 2012). For instance, interventions targeting serotonergic transmission during probabilistic and reversal learning paradigms in rodents, monkeys and humans suggested that serotonin impacts sensitivity to negative rather than positive feedback (Clarke et al., 2004; Chamberlain et al., 2006; Crockett et al., 2009; Bari et al., 2010; Cohen et al., 2015). The reduction of serotonergic transmission in humans following acute tryptophan depletion (for a review, see Faulkner and Deakin, 2014) reduced information sampling in a decision-making task, but crucially, only when sampling had a financial cost (Crockett et al., 2012). Serotonin may also impact moral costs, such as unfairness in social decision-making (Crockett et al., 2008). Furthermore, serotonin may control the cost of delay in reward delivery in rodents, such that a higher firing rate of serotonergic neurons correlates with an increased ability to wait for bigger rewards (Miyazaki et al., 2014), without affecting the sensitivity to the reward itself (Fonseca et al., 2015). Conversely, low serotonin levels, e.g. after acute tryptophan depletion, were suggested to exacerbate sensitivity to the cost of waiting, which could result in impulse control disorders (Crockett et al., 2009; Cools et al., 2011; Dayan, 2012). Thus, it is tempting to build a parsimonious computational theory on the idea that serotonin is involved in processing all kinds of action costs. This is compatible with the notion that different types of costs are processed by distinct neural circuits, since neuromodulators such as serotonin can affect many brain regions. However, such a generalization would necessitate assessing the putative role of each mono-amine and their interactions with different types of costs within the same study. Previous attempts in rodents have observed effects that\u00a0are\u00a0inconsistent with the present results: in cost/benefit trade-off tasks, serotonin blockers impacted choices only when costs were delays, and not physical efforts (Denk et al., 2005), whereas dopamine blockers affected both types of costs. Such discrepancies may call for caution when translating the\u00a0results of pharmacological studies in rodents into medication effects in humans.\n\nA general role for serotonin in cost processing also seems compatible with the effects on apathy and impulsivity reported in healthy and pathological conditions (Cools et al., 2005; Papakostas et al., 2006; Schweighofer et al., 2008; Crockett et al., 2009; Weber et al., 2009; Warden et al., 2012; Guitart-Masip et al., 2014; Miyazaki et al., 2014; Worbe et al., 2014). Indeed, according to our interpretation, SSRIs might reduce the perceived cost of performing actions, which would promote behavioral activation, hence the alleviation of apathy. As SSRIs might also reduce the perceived cost of delaying action, they would improve response control and reduce impulsivity (Cools et al., 2005; Cools et al., 2011; Crockett et al., 2009; Dayan, 2012; Bari and Robbins, 2013; Miyazaki et al., 2014; Fonseca et al., 2015).\n\nHowever, it is important to note that the SSRI effects obtained here relate to effort cost and not to time discounting. Although time is central in our task, it departs from delay and waiting paradigms in several respects. First, the overall task duration was fixed and its pace was independent from how subjects allocated their effort within trials. Second, the\u00a0reward was gained instantaneously, concomitantly to effort production, without delay. Therefore, the SSRI effect on effort duration (how long subjects sustain an effort) cannot be explained by a change in temporal discounting (how long subjects wait for a reward).\n\nThe direction of the effect obtained in the present study suggests that higher serotonin level alleviates the\u00a0effort cost. This interpretation is based on the assumption that the primary effect of SSRI is to increase serotonin level in the synaptic cleft (Nutt et al., 1999; Stahl, 2008). However, the net effect of SSRI might not be so straightforward to interpret at the molecular level for several reasons. First, a high tonic concentration could have the paradoxical effect of reducing the sensitivity to phasic serotonergic signals (Faulkner and Deakin, 2014). Second, the ubiquitous negative feedback regulation by auto-receptors can initially revert the response expected from high extracellular levels of serotonin (Stahl, 2008; Fischer et al., 2014) and also produce non-linear dose-response functions for cognitive performance (Bari et al., 2010). Third, much evidence suggests that different serotonin projections to different forebrain systems mediate varying acute and chronic adaptive responses to aversive events (Hale et al., 2013; Faulkner and Deakin, 2014). The effect of serotonin also depends on the location in the brain and on the type of receptors, for instance, 5-HT1A and 5-HT2A receptors respectively inhibit and excite motoneurons (Jacobs and Azmitia, 1992). Thus, the superficial interpretation that serotonin helps overcoming effort costs will need to be refined by addressing the complexity of SSRI effects at the molecular level. We nevertheless note that the superficial interpretation is consistent with demonstrations that serotonin also helps overcoming other costs such as delay in humans (Schweighofer et al., 2008).\n\nRefinement is also needed at the computational level. Our model does not specify how exactly serotonin could attenuate the impact of effort cost on action production. An indirect effect through an increase in muscular capacity can be excluded since there was no difference in maximal force between the placebo and SSRI groups at any visit. The computational analysis simply suggests that a slower accumulation of effort cost (lower Sem) under SSRI prolonged effort duration. It does not distinguish between down-regulation of the cost signal itself, or down-regulation of the weight this cost has in the decision to produce an effort. The former (perceptual) view would be in line with an analgesic effect of escitalopram, which is consistent with the findings that nociception and/or somatosensory perception are both modulated by serotonin at central levels (Jacobs and Azmitia, 1992), that serotonin is targeted by common drugs modulating pain like acetaminophen (Smith, 2009) and that serotonin modulates the inhibitory feedback loop that allows muscular fatigue to down-regulate the motor command (Gandevia, 2001; Cotel et al., 2013). The latter (decisional) view would be more generalizable to the capacity of overcoming other types of costs.\n\nAs the serotonin and dopamine systems strongly interact (Dremencov et al., 2009; Cools et al., 2011; Schilstr\u00f6m et al., 2011; Fischer et al., 2014), the SSRI effect observed here might also be at least in part mediated by dopamine. Indeed, the beneficial effect of SSRI shown here is reminiscent of previous reports about dopaminergic manipulations in mesolimbic structures, which affected the propensity to choose high reward \u2013 high effort over low reward \u2013 low effort options in rodents (Cousins et al., 1996; Salamone et al., 2007). However, if SSRIs antagonize dopamine release (Dremencov et al., 2009; Cools et al., 2011), escitalopram should have reduced effort production in our task (but see Schilstr\u00f6m et al., 2011). Moreover, the fact that escitalopram did not modulate incentive effects on parameters such as the amplitude or dissipation slope argues against a participation of dopamine. Indeed dopaminergic manipulations in humans have been repeatedly shown to affect reward processing, not only in learning contexts (Frank et al., 2004; Pessiglione et al., 2006; Palminteri et al., 2009) but also in reward/effort trade-off paradigms (Wardle et al., 2011; Treadway et al., 2012; Le Bouc et al., 2016). It might be that serotonin and dopamine have complementary roles in promoting action production (and alleviating apathy): the former by reducing effort cost and the latter by enhancing the incentive value of potential rewards.\n\nPrevious studies suggest that we should distinguish between acute and chronic effects of SSRIs (Fischer et al., 2014). We did not find an interaction with time in our results but only a main effect of treatment group. Both parametric and non-parametric statistics showed that such a group difference is very unlikely to arise from chance in sampling the population (under the null hypothesis). General psychological assessment at baseline was also similar in the two groups. However, we acknowledge that our shortest time since treatment onset (3 days) may already depart from the acute regime, that ceiling effects in the SSRI group could in principle mask an interaction with time, and that our study may lack the statistical power to reveal such an effect. This absence of an interaction contrasts with the apparently delayed clinical effect of SSRIs in depressed patients, which usually take weeks to improve mood (Stahl, 2008). However, at the molecular level, serotonin release is boosted by SSRIs from treatment onset (Kobayashi et al., 2008) and SSRI effects on emotional processing also occur with little or no delay in healthy subjects (Harmer et al., 2003). In pathological conditions, time may be needed to adjust to the new, less negative perception of costs, as well as the reduced emotional bias, and convert these implicit changes into a conscious subjective improvement that can be reported to the practitioner (Harmer et al., 2009; Cools et al., 2011). This idea has been formalized in a recent study showing how positive and negative outcomes can shape mood on the long run (Eldar and Niv, 2015). Further studies in depressed patients are needed to assess whether an early detection of effort cost attenuation could be used to predict long-term treatment effects on clinical symptoms.\n\nFinally, our results also indicate that non-trivial behavioral effects can be accounted for by a change in a single computational parameter (Sem): a specific modulation of cost can result in both longer efforts and an increased sensitivity of effort duration to potential benefits in our results. Intuitively, this effect on reward sensitivity corresponds to the idea that when perceived costs are too high, a change in reward prospect will have little effect. Thus, our analysis shows that the behavioral consequences of cost and benefit estimates are intricate but computationally tractable. Our paradigm and model could provide experimental and conceptual tools to refine the description of motivational disorders. Distinct dysfunctions, such as amplification of effort cost vs. flattening of reward prospects, might call for different treatments: if drugs modulating serotonin only affect cost estimates, then other drugs (possibly dopaminergic) should aim to impact the valuation of potential benefits.\n\n## Materials\u00a0and\u00a0methods\n\n### Participants\n\nHealthy volunteers (18\u201345 years old) were recruited to the study by public advertisement after approval by the Ethics Committee of Berkshire, UK (protocol CL1-20098-81, on 28th\u00a0Sept. 2011) and registration as a clinical trial, ISRCTN75872983. Participants gave their written informed consent prior to participation. Normal health was checked by clinical and psychiatric examinations including laboratory tests. Exclusions and withdrawals from the study were adjusted to include 64 participants (2 treatment groups of 32 participants, 16 men per group), tested at 3 separate visits, resulting in 192 completions of the task. Given that the clinical trial was exploratory and also included tests from other research groups, the sample size was not selected specifically for our study; however it appeared reasonable given typical studies in the field. Indeed, published between-subject comparisons of placebo and anti-depressant treatments were made on a lower sample size per group (e.g. N=14 in Harmer et al., 2004, N=20 in Chamberlain et al., 2006 and N=30 in Guitart-Masip et al., 2014), and a single visit per subject (while we have three). Due to technical problems or late withdrawals, 4 task completions were not fully acquired and therefore unusable. The remaining data were checked for quality by F.M. prior to unblinding: 11 were excluded due to mis-calibration of task difficulty; 9 due to hardware default or signal quality; 15 for non-compliance with task instructions. Subjects were asked to produce an effort in every trial. As there were eight trials per condition in the task, a given visit was excluded for non-compliance when the total number of effort (or rest) was lower than three in at least one condition. As a result, the number of participants per visit varied between 23 and 28 in each treatment group, for a total of 153 task completions. Note that a given participant may produce an interpretable dataset at a given visit and not at another. The total number of participants with at least one interpretable dataset across the three visits happened to be 29 in each treatment group. The finally included data set is summarized in Table 1.\n\nSex ratio (14/29 vs. 16/29, Z test for proportion: z= 0.53, p=0.6), ratio of excluded data sets (15/96 vs. 20/92, z=1.08, p=0.28) and age (mean with \u00b1 s.e.m., 23.2 \u00b1 0.8 vs. 24.2 \u00b1 0.8, p=0.38) were similar in the two groups. We also used psychological tests to assess differences between groups of subjects at baseline, before treatment. T-test comparison showed no significant difference in Mood Visual Analog Scales for the items 'happy'\u00a0(p=0.75), 'sad' (p=0.96), 'hostile' (p=0.48), 'alert' (p=0.73), 'anxious' (p=0.51), 'calm' (p=0.14), nor in the Hospital Anxiety Depression score for anxiety (p=0.68) and depression (p=0.35). The difference in State-Trait Anxiety Inventory score was at p=0.04 at baseline but p=0.45 and p=0.83 after 7 and 55 days of treatment respectively. Therefore, psychological variables were not significantly different at baseline when correcting for multiple comparisons (at p=0.05/9) and the one passing the uncorrected threshold p=0.05 was not significantly different during the testing phase.\n\n### Drug and testing schedule\n\nTwo centers participated in the study (Oxford and Manchester, UK). Data were collected between January 2012 and July 2013. Participants were randomly assigned to one of the two parallel treatment groups following a double-blind procedure: placebo or escitalopram (10 mg during week #1 and #9; 20 mg from week #2 to #8). The randomisation list was constructed in blind, by the Institut de Recherches Internationales Servier, with stratification by gender and center (Oxford, Manchester). Treatments were conditioned by Les Laboratoires Servier Industrie so as to be visually indistinguishable and shipped in numbered containers to the investigators. The randomisation list was not made available to the investigators until the final data set had been checked for quality and locked by transfer to a Contract Research Organization (Biotrial). Participants took a daily oral capsule around 8 P.M. for 9 weeks and performed the Effort Allocation Task three times at distinct latencies (Figure 1B): initial (2\u20134 days after treatment onset), intermediate (12\u201317 days) and late (52\u201360 days for all subjects but 3, who were tested between the 33rd and 44th days before withdrawing from the study). The task was not performed on week #9. The clinical trial included other tests, not presented here, to assess emotional processing, sexual acceptability and learning abilities. Safety evaluations (adverse events collection, blood pressure/heart rate and laboratory test) were performed along with\u00a0the study.\n\n### Experimental set-up\n\nThe Effort Allocation Task is schematized in Figure 1A and detailed in a previous publication (Meyniel et al., 2013). The only change was the\u00a0adoption of the local currency (British pounds). On each trial, participants had 30 s that could be spent either resting or squeezing a handgrip. They were instructed that the payoff would be proportional to both the monetary incentive and the time spent above a force target corresponding to effort difficulty. The task lasted approximately one hour and was split into 8 blocks. The factor levels (monetary incentives: 1, 2 or 5p and effort difficulty: 70, 80, 90% of the maximal force) were manipulated independently and crossed, resulting in 9 conditions, each corresponding to a trial, presented in a randomized order in each block. Left and right hands were used alternatively over blocks. Participants were encouraged to maximize their payoff at each trial, and told that the cumulated payoff would be added to their financial compensation for participating in the study. Unbeknown to them, this payoff was rounded up to a fixed amount after the last visit such that all participants eventually received the same total. The task difficulty was adjusted to the subject's maximal force, which was measured at each visit before the test. The procedure for measuring the\u00a0maximal force (sustained handgrip squeezing) is detailed in (Meyniel et al., 2013) and follows published guidelines (Gandevia, 2001). The maximal force was not affected by treatments (F3, 113.7=0.93, p=0.42), visits (F2, 180=1.34, p=0.26) or by the interaction of these two factors (F6, 180=0.27, p=0.95).\n\n### Behavioral analysis\n\nThe cumulated effort duration determined the payoff obtained at each trial. Yet there are many ways of chunking this cumulated duration depending on the duration of each effort and rest epochs. Effort and rest epochs were determined based on the force time series (Figure 1A provides an example) using an off-line algorithm (Meyniel et al., 2014). The offline detection algorithm was based on both the force signal normalized by the calibration maximal force, and its temporal derivative. Samples with positive derivative, exceeding one standard deviation of the derivative time series, and force level higher than 0.5 (half the maximum) were tentatively marked as effort onsets. Effort offsets were defined similarly for negative derivative values and force levels below 0.5. When multiple offsets were detected between two onsets, all but the last one were discarded. If multiple onsets were detected before an offset, the one with minimum force was kept. An offset was marked at the trial end if the\u00a0effort was still sustained at that moment. Elapsed time between effort onsets and offsets determined effort and rest durations. The first rest duration was the elapsed time between trial onset and the first effort onset.\n\nWe performed a model-free analysis of the behavior, for each subject and visit, with multiple linear regressions done separately for effort and rest durations. The linear models included the factors of interest (incentive and difficulty) and temporal factors (block number; trial number within a block, effort or rest epoch number within a trial). Regressors (excepted the constant) were z-scored so that regression coefficients (beta estimates) correspond to standardized effect sizes. These beta values were then compared between treatments using ANOVA (see statistical analysis below).\n\n### Computational analysis\n\n#### The cost-evidence accumulation framework\n\nTo account for the decision to stop and resume effort exertion in our task, we previously developed a computational model that was supported by both behavioral and neuroimaging data (Meyniel et al., 2013; Meyniel et al., 2014). The central assumption of our model is that the allocation of effort over time is underpinned by the variation of a single computational variable. This decision variable waxes during effort until reaching an upper bound, which triggers effort cessation, and wanes during rest until reaching a lower bound, which triggers effort resumption. The model thus has three latent parameters: the accumulation ($S_{e}$) and dissipation ($S_{r}$) slopes of cost evidence and the amplitude of these variations (A; the distance between bounds). The ratios of amplitude and slopes determine the\u00a0effort and rest durations (see Figure 2A).\n\nThe computational analysis, detailed below, aimed at (1) identifying how the model latent parameters are modulated by the task factors (incentive and difficulty levels), (2) testing whether these modulations differ between treatment groups and (3) assessing the specificity and sensitivity of our fitting procedure in detecting potential differences between treatment groups.\n\n#### Model fit and selection\n\nIn this section, we provide details about model fit and model selection, although we followed the exact same methods as reported in our previous publication (Meyniel et al., 2013).\n\nIn principle, each model latent parameter (accumulation slope $S_{e}$, dissipation slope $S_{r}$ and amplitude of variations $A$) could be modulated by each task factor, which we formalized as linear effects:\n\n$$\nTe=\\frac{A}{Se};Tr=\\frac{A}{Sr};{A=A_{m}+A_{i}I+A_{d}DSe=Se_{m}+Se_{i}I+Se_{d}DSr=Sr_{m}+Sr_{i}I+Sr_{d}D\n$$\n\nwhere $T_{e}$ and $T_{r}$ are the mean durations of effort and rest epochs (fitted across experimental conditions); I and D are the z-scored incentive and difficulty levels; $A_{i}$, $A_{d}$, $Se_{i}$, $Se_{d}$, $Sr_{i}$ and $Sr_{d}$ capture potential modulations by task factors. The goal of model selection was to identify whether allowing fewer modulations, e.g. only $A_{i}$, $Se_{d}$ and $Sr_{i}$, could still provide a reasonable goodness-of-fit. In total, there are 26=64 possible combinations of the six modulations by task factors. However, we noted in (Meyniel et al., 2013) that only 20 combinations can a priori reproduce the behavioral effects observed in the effort allocation task (and potentially other effects): increased $T_{e}$ with incentive, decreased $T_{r}$ with incentive, and decreased $T_{e}$ with difficulty. These 20 models correspond to four possible combinations of the incentive effect: ${A_{i},Se_{i},Sr_{i}}$ or ${A_{i},Se_{i}}$ or ${A_{i},Sr_{i}}$ or ${Se_{i},Sr_{i}}$ crossed with five possible combinations of the difficulty effect: ${A_{d},Se_{d},Sr_{d}}$ or ${A_{d},Se_{d}}$ or ${A_{d},Sr_{d}}$ or ${Se_{d},Sr_{d}}$ or ${Se_{d}}$. Besides these modulation terms, all models also included the mean accumulation and dissipation slopes, $Sr_{m}$ and $Se_{m}$, as free parameters. Since effort and rest durations are determined by the ratios of amplitude and slopes in Equation 1, the mean amplitude $A_{m}$ was not considered as a free parameter; it was fixed to one, so that each subject could be characterized by a unique set of best-fitting parameter values instead of an infinity of proportional solutions.\n\nWe used Bayesian model selection to identify a solution with the best tradeoff between goodness-of-fit and simplicity (number of modulation terms in the model). The 20 models were fitted for each subject and visit separately using a variational Bayesian procedure described in (Daunizeau et al., 2014). We used non-informative priors for the fitted parameter values. This variational procedure provides, for each visit and model, the posterior mean values of the latent parameters and the model evidence. The latter is a key summary statistic on the basis of which the best model is identified (Stephan et al., 2009; Daunizeau et al., 2014). In order to obtain a single summary statistic per subject, we took the joint (i.e., product of) model evidence over visits. The algorithm used for group-level, random-effect Bayesian Model Selection is described in (Stephan et al., 2009) and implemented in the Matlab toolbox SPM8 (Wellcome Department of Imaging Neuroscience, London, UK; function spm_BMS.m).\n\n#### Best computational model identified\n\nIn both treatment groups, Bayesian model selection (see Figure 2A) identified the following model as providing the best trade-off between simplicity and goodness-of-fit of the data:\n\n$$\nTe=\\frac{A}{Se};Tr=\\frac{A}{Sr};{A=A_{m}+A_{i}ISe=Se_{m}+Se_{d}DSr=Sr_{m}+Sr_{i}I\n$$\n\nThis is the same best model as in our previous publication (Meyniel et al., 2013), although it is fitted on different subjects. Fitted parameter values were on average positive such that higher incentives expanded the bounds of cost-evidence variations and quickened its dissipation during rest and higher difficulty levels increased the accumulation rate of cost-evidence during effort (see Figure 2B).\n\nThis computational model can be interpreted as follows, for a more complete discussion see (Meyniel et al., 2013, 2014). The accumulation of cost evidence may reflect the build-up of physiological fatigue: the instantaneous effort cost increases as it becomes gradually more difficult to sustain a given force level. As expected from a physiological perspective, fatigue builds up more quickly when higher force levels are exerted, which is captured by $Se_{d}$. An upper bound on the accumulation process ensures that instantaneous cost remains within a certain range that is adjusted to the reward rate. Indeed, the bound is pushed back for higher incentives (which is captured by $A_{i}$), as if an extra cost is allowed when a higher benefit makes it worthy. The bounded accumulation mechanism therefore seems to control the balance between cost and benefit, which could be implemented as an opponency between brain systems (Daw et al., 2002; Balasubramani et al., 2015).\n\nThe dissipation of cost evidence may reflect that it takes time to recover full exercising capacity after a strenuous effort. Interestingly, effort was not resumed immediately after cessation, but only after a substantial decrease in cost evidence. Waiting until a lower bound is reached may ensure that effort is not systematically produced at maximal instantaneous cost. Rest may therefore contribute to optimizing the cost/benefit balance on the long run. Importantly, an exceedingly long rest would also be suboptimal since it would reduce the payoff. Indeed, only efforts are rewarded in the task: there is therefore an opportunity cost to rest (Niv et al., 2007). This opportunity cost seems to be taken into account since the cost-evidence dissipation is speeded up for higher incentives (which is captured by $Se_{i}$), so that effort can be resumed more quickly.\n\n#### Specificity and sensitivity of the fitting procedure\n\nThe fitted parameter values were then compared between treatment groups (see below). We used simulations to assess whether our fitting procedure can detect specific changes in the model parameters between groups. For each subject in the placebo group, we fitted the model and took the mean value over visits of a given parameter (henceforth the 'target'). To simulate a potential effect of the SSRI treatment on this target parameter, we increased this value by a 20%. Then we computed mean effort and rest durations in each experimental condition using Equation 2 and we corrupted these means with noise (we added the residuals of fitted data taken from another random subject in the placebo group). Last, we fitted again the model by adjusting a second set of parameters onto these simulated mean effort and rest durations. To assess statistical significance, we repeated this procedure 100 times for each subject and each target parameter. We compared the initial parameter values (fitted on actual data) and the new ones (fitted on simulated data) for each simulation with paired t-test across subjects and the threshold p<0.05/5 to correct for the 5 parameters tested. For 'target' parameters, a significant difference indicates that the fitting procedure correctly recovers the simulated increase (a\u00a0'hit'); for 'non-target' parameters, a significant difference indicates a lack of specificity (a\u00a0'false alarm'). We report the simulated changes identified by the fitting procedure in Figure 2C, as the median parameter change (across subjects), averaged over simulations.\n\n#### Specificity of the treatment effect\n\nWe also used Bayesian model comparison to test the specificity of treatment effect on computational parameters. We performed this comparison at the group level since our design is between-subject and different subjects may have different parameter values irrespective of the treatment type. To this end, we concatenated across subjects the mean effort and rest durations per condition, separately for each group. The parameters of the accumulation model (Equation 2) were fitted onto the placebo group data. These fitted values served as reference: AiREF, SemREF, SedREF, SrmREF, SriREF. We then modeled the potential treatment effect in the escitalopram group as a modulation of the reference parameters: Ai = AiREF*(1+\u03b4Ai), Sem= SemREF*(1+\u03b4Sem), and so on for\u00a0Sed, Srm or Sri. For each parameter, the sign and value of \u03b4 captures the direction and strength of the treatment effect with respect to the placebo group. We designed single-modulation variants of the accumulation model (Equation 2) by forcing \u03b4 to zero for all but one parameter, for which \u03b4 remained free. In other words, a modulation of only one single parameter was permitted. We also designed double-modulation models in which two modulations are permitted and modeled with distinct \u03b4s. All models were fitted with the variational Bayesian procedure by (Daunizeau et al., 2014). Values of log model evidence are reported in Table 3 for model comparison.\n\n### Statistical analysis\n\nWe characterized the effect of treatments on (1) the monetary payoff, (2) the fitted parameters of the best computational model (Equation 2), (3) the regression coefficients of the model-free analysis. We provide source data files for each of these three sets of variables. We used a repeated-measure ANOVA with subjects as a random factor, treatment group as a between-subject factor and time since treatment onset (initial, intermediate, late) as a within-subject factor. Interaction between the within-subject factors was included in all ANOVAs. We followed up the ANOVA results with two-sample two-sided t-tests at a given time since treatment onset. Significance levels corrected for comparing multiple variables are included in Table 2.\n\nGiven our large sample size (N=58 included subjects), these classical parametric statistics reliably quantify the likelihood that the observed differences between treatment groups reported in our study may be due to chance in sampling the population. Indeed, we confirmed these significance levels with non-parametric permutation tests, using 10,000 permutations of treatment labels between subjects to estimate the probability that an equal or more extreme statistic (F or T depending on the test) could occur by chance.\n",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "920480f6-f539-43d8-aae1-683f6f9af7da",
+      "submission_id": "a47eabf1-6f24-477a-ad1c-27ad41074669",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Joshua I Gold, University of Pennsylvania , United States\n\n## Review text\n\nDOI: [10.7554/eLife.17282.014](https://doi.org/10.7554/eLife.17282.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A specific role for serotonin in overcoming effort cost\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Joshua Gold as the Reviewing Editor and Sabine Kastner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Read Montague (Reviewer #1); Roshan Cools (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study used a physical effort/incentive-based task with two groups of subjects \u2013 one taking escitalopram, the other placebo \u2013 to test whether SSRIs, and putatively serotonin, have an effect on the amount of effort human subjects will expend to get a reward. Several of the authors had previously developed a rise-to-bound computational model to account for behavior on this task in terms of a \"cost evidence\" variable that rises during effort and falls during rest. Here they used the model to show that overall better performance of the SSRI group (more reward) is associated with reduced effort costs and not the weight in monetary incentives. Thus, 5HT's role in action costs might be more general than hitherto thought, extending from the regulation of punishment and delay to that of effort costs.\n\nThe reviewers all agreed that this is an excellent paper: interesting, well done, and well written. The role of serotonin in behavioral control and decision-making is complex, and this paper makes a solid contribution to shrinking some of this complexity by sharpening our understanding of it in relation to effort. The ubiquity of SSRI use \u2013 in depression, Parkinson's Disease, and other disorders \u2013 and the lack of model-based understanding of what these drugs do in terms of information processing makes the contribution important. It is also commendable from a clinical perspective that chronic rather than just acute effects of the drug were assessed.\n\nEssential revisions:\n\n1) Several reviewers thought that the model needed to be explained better, and the modeling results analyzed more thoroughly.\n\nA) Specifically, the text only briefly refers to specific parameters (\"amplitude, accumulation and dissipation slopes of the cost-evidence decision variable\") that a reader without thorough familiarity of the earlier papers will have a hard time following. It would be useful to describe the model in the text. Likewise, the model parameters are listed (\"Ai, Sem, etc.) without being explained. For more context, it might also be useful to relate their model more directly to the RL model in Daw et al. 2002 referenced in the paper, and also the model in Balasubramani et al. 2015, Frontiers of Computational Neuroscience.\n\nB) More substantively, there were questions about the specificity of the effect from the modeling analyses. It is stated that interactions between treatments and pairs of computational variables (Sem versus each other parameter) were always significant. The implication of this result depends on the sign of the parameters. The cumulative payoff effect might represent, for example, enhanced amplitude modulation (Ai) and/or reduced cost-evidence accumulation (Sem). How were computational parameters coded when entered into the ANOVA? To assess specificity, one might want to reverse the coding for A and Sr. More generally, to what extent were the parameters independent of each other in the model? Also, might it be possible to define a different model space that would allow the use of Bayesian stats, and model comparison to estimate the drug effects on the various parameters? The distinct advantage of such an approach would be that it allows the capturing of drug effects despite the presence of individual differences of no interest.\n\nC) Is any background 'reference' neuropsychological data available to confirm that there were no group differences of no interest? If so, please report.\n\n2) There were questions about the interpretation of the effects in terms of the role of time in task performance. The main effects coming out of the modeling analysis appear to be related to effort duration. But longer effort durations are also longer overall durations, which brings up the literature on 5-HT and delay costs (some of the delay discounting papers with 5-HT manipulations are actually cited in the manuscript). The authors appear to favor the view that different types of costs can be reduced to one process that is related overall to multiple types of costs. There is evidence both for and against this, and the authors are of course free to interpret their results in this way. In fact, this discussion contributes to the field in an interesting way. However, how much of the effect they are seeing is related to time per se? The authors should discuss this.\n\n3) The Introduction might benefit from mentioning the implication of 5HT not just in apathy, but also in the other end of the motivation continuum, that is impulsivity. And in the Discussion, how do the findings relate to observations that 5HT is key for impulse control? More generally, the paper might come full circle, by linking, in the Discussion section, the obtained results to these various clinical hypotheses (involvement in apathy, impulsivity).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A specific role for serotonin in overcoming effort cost\" for further consideration at eLife. Your revised article has been favorably evaluated by Sabine Kastner (Senior editor), a Reviewing editor (Joshua Gold), and one new reviewer, who offered input from a statistical perspective. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined by the reviewer:\n\nReviewer #4:\n\nI have reviewed this paper from a statistical perspective as this is a registered trial.\n\nThis manuscript presents the analysis of a single randomised placebo controlled and double blinded study. It is not a trial of an intervention but rather a controlled study to understand the mechanism of action that the specific drug takes. The trial has been registered with a target sample size of 128 and it has a single hypothesis statement that aims to 'assess the effects of' agolmelatine and escitalopram on emotional binding, emotional processing and motivation'. Each participant is measured over several tasks during the treatment period of 9 weeks.\n\nI realise that it is not in the eLife style to report numerical estimates in the Abstract but as this report analyses a single controlled experiment I think they should put the strength of the evidence in the Abstract to back up their statement that 'they show that serotonin also regulates other types of action costs such as effort'. As there is no replication they should report this in a more guarded manner.\n\nThe authors have completed the Consort statement but they need to provide more complete information within the manuscript so they can say yes to more of the checklist.\n\nThe trial registration lists a compound aim/hypothesis and also lists three primary outcomes listed which I think have all been used in this analysis but the main question for the manuscript is 'does serotonin regulate the weight of effort cost as opposed to the weight of expected benefit?'\n\nI would like to see a clearer link between the main research question and the forms of analysis. A sample size of 58 is not that large even with repeated measurement. Was there really any power to test for interactions? The Consort checklist says 'no' to sample size but surely the size was justified originally? I feel a bit concerned that sometimes Bonferonni correction is used to conclude there were no differences when this just reduces power.\n",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61b0e19c-88d6-4039-8452-2cc206947e33",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C1",
+      "claim": "Selective serotonin reuptake inhibitors (SSRI) are the most prescribed medications for major depressive episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective serotonin reuptake inhibitors (SSRI) are the most prescribed medications for major depressive episodes (Bauer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bauer et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "12672b59-6925-46b9-a1c6-a076e6e8b7b8",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C2",
+      "claim": "The effects of SSRI on improving mood and reducing anxiety have been well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of SSRI on improving mood and reducing anxiety have been well documented (Trivedi et al., 2006; Stahl, 2008; Cipriani et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Trivedi et al., 2006; Stahl, 2008; Cipriani et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "3d46526e-d6ce-4f8b-af37-eef014ceb634",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C3",
+      "claim": "Serotonin modulates emotional processing even in healthy volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "many experimental studies showed that serotonin modulates emotional processing even in healthy volunteers (Harmer et al., 2009; Serretti et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Harmer et al., 2009; Serretti et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5bc652ee-9074-44d1-b80c-f9ceaefe2ae5",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C4",
+      "claim": "Loss of interest or pleasure in daily activities is a key symptom of depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of interest or pleasure in daily activities is also a key symptom of depression (American Psychiatric Association, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to American Psychiatric Association, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "965f9d23-be1e-415b-a58b-55c5a115ba52",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C5",
+      "claim": "The impact of SSRI on the motivation deficit (apathy) remains rather controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the impact of SSRI on the motivation deficit (apathy) remains rather controversial (Papakostas et al., 2006; Weber et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Papakostas et al., 2006; Weber et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e6a18f96-2846-475a-9029-64d8bbc47fe7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C6",
+      "claim": "SSRI treatments do not reduce apathy as much as other symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "several studies reported that SSRI treatments do not reduce apathy as much as other symptoms (Fava et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fava et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5f563e87-0cac-4769-933c-74b72d5d2edd",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C7",
+      "claim": "SSRI can induce apathy in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "or can even induce apathy in patients (Barnhart et al., 2004; Sansone and Sansone, 2010; Padala et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barnhart et al., 2004; Sansone and Sansone, 2010; Padala et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5e26afc4-aba1-42fa-b850-6f3777d04938",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C8",
+      "claim": "SSRI treatments increase motivation or at least the sensitivity to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies also reported that SSRI treatments increase motivation or at least the sensitivity to reward (Tang et al., 2009; Stoy et al., 2012; Yuen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tang et al., 2009; Stoy et al., 2012; Yuen et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "02cdae4b-51d0-403d-9331-bbc843f34a22",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C9",
+      "claim": "Some studies on cost/benefit trade-off showed reduced effort expenditure with SSRIs.",
+      "claim_type": "EXPLICIT",
+      "source": "some studies on cost/benefit trade-off showed reduced effort expenditure with SSRIs (Yohn et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yohn et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7291457d-3ad7-472b-a0b9-56f39e0ed8e1",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C10",
+      "claim": "Serotonin blockers have no effect on effort expenditure in cost/benefit trade-off tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "or no effect with serotonin blockers (Denk et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Denk et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "d1a9ef23-3e0e-4595-ad1a-84dbabcb110d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C11",
+      "claim": "SSRI increases motor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "while other studies reported increased motor activity induced by SSRI (Weber et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weber et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "c12ebbe3-8242-475e-a997-ceafac21c350",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C12",
+      "claim": "Optogenetic stimulation of the dorsal raphe nucleus increases motor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "or optogenetic stimulation of the dorsal raphe nucleus (Warden et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Warden et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "fb1275a5-4590-43c3-8f5a-c3f805cb315d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C13",
+      "claim": "SSRI treatment decreases apathy in late-life depression.",
+      "claim_type": "EXPLICIT",
+      "source": "an SSRI treatment was reported to decrease apathy in late-life depression (Yuen et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yuen et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "368d4d5c-dbb9-4881-ba4c-2f4345a39d69",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C14",
+      "claim": "SSRI treatment increases apathy in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "and to increase it in Parkinson's disease (Zahodne et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zahodne et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7c6e9258-ba8d-4cb9-ad57-aca875d9e7f0",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C15",
+      "claim": "Serotonin is implicated in the motor aspects of action production.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggested that serotonin is implicated in the motor aspects of action production and also the valuation processes that motivate the action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from previous studies mentioned in the text",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "44e5a98b-0952-4767-9aba-97d9551decaf",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C16",
+      "claim": "Serotonin is implicated in the valuation processes that motivate action.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggested that serotonin is implicated in the motor aspects of action production and also the valuation processes that motivate the action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from previous studies mentioned in the text",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8fe2f6d0-3cd3-4072-9707-a5f3e170b414",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C17",
+      "claim": "Serotonin conditions impulse control and the capacity for behavioral inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, serotonin was found to condition impulse control and the capacity for behavioral inhibition (Cools et al., 2005; Crockett et al., 2009; Warden et al., 2012; Guitart-Masip et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cools et al., 2005; Crockett et al., 2009; Warden et al., 2012; Guitart-Masip et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e41dc550-86f1-4a2a-b9f7-ec4095aac33f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C18",
+      "claim": "Serotonin promotes patience for delayed rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "and to promote patience for delayed rewards (Schweighofer et al., 2008; Miyazaki et al., 2014; Worbe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schweighofer et al., 2008; Miyazaki et al., 2014; Worbe et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "3046cb51-8ffa-40dd-9666-3915c526a1d3",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C19",
+      "claim": "Serotonin impacts how positive and negative outcomes guide learning in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin also impacts the determinants of actions, for instance, how positive and negative outcomes guide learning in humans (Chamberlain et al., 2006; Crockett et al., 2009; Faulkner and Deakin, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chamberlain et al., 2006; Crockett et al., 2009; Faulkner and Deakin, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "54183ba7-5d8e-47ba-a632-adee7d61ac5c",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C20",
+      "claim": "Serotonin impacts how positive and negative outcomes guide learning in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "monkeys (Clarke et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clarke et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "a64538e7-dd96-4052-8562-24a1b7d5fe94",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C21",
+      "claim": "Serotonin impacts how positive and negative outcomes guide learning in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "and rodents (Bari et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bari et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "c78403da-90f4-4815-bc58-c5f4a8680d1f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C22",
+      "claim": "Serotonin regulates the impact of action costs such as punishments.",
+      "claim_type": "EXPLICIT",
+      "source": "Key ideas are that serotonin (1) regulates the impact of action costs such as punishments (Daw et al., 2002; Niv et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Daw et al., 2002; Niv et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "d0c9a400-bbbe-4e24-96b4-91b997a86ee9",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C23",
+      "claim": "Serotonin regulates the impact of action costs such as delay.",
+      "claim_type": "EXPLICIT",
+      "source": "or delay (Niv et al., 2007; Cools et al., 2011; Miyazaki et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Niv et al., 2007; Cools et al., 2011; Miyazaki et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "db00b382-2748-48e5-a639-a396aed3cfc5",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C24",
+      "claim": "Serotonin adjusts the propensity to activate versus inhibit action.",
+      "claim_type": "EXPLICIT",
+      "source": "and (2) adjusts the propensity to activate versus inhibit the action (Boureau and Dayan, 2011; Cools et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boureau and Dayan, 2011; Cools et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "90234f3c-3790-4304-8193-b0510e3833bd",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C25",
+      "claim": "58 subjects were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "58 subjects were included in the analysis, see Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "76a6456d-50a8-4fd6-be9c-d1911009a55b",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C26",
+      "claim": "Performance was significantly improved in the escitalopram group compared to the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant effect of treatment group: performance was significantly improved in the escitalopram group (F1, 58.4=9.37, p=0.003) as compared to the placebo group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "0c883a2f-6924-401e-88be-4ce65b425882",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C27",
+      "claim": "The performance difference between escitalopram and placebo groups was stable over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was stable over time: there was no significant interaction between groups and visits (F2, 91=0.22, p=0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "6d702274-5f94-4565-8774-9d8395f9fa2c",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C28",
+      "claim": "The average payoff per visit was \u00a335.9\u00b11.21 s.e.m. in the escitalopram group.",
+      "claim_type": "EXPLICIT",
+      "source": "The average payoff per visit was \u00a335.9\u00b11.21 s.e.m. and \u00a330.1\u00b11.44 s.e.m. in the escitalopram and placebo groups respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7f05da5b-1958-423d-833d-ecf238ce0b84",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C29",
+      "claim": "The average payoff per visit was \u00a330.1\u00b11.44 s.e.m. in the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "The average payoff per visit was \u00a335.9\u00b11.21 s.e.m. and \u00a330.1\u00b11.44 s.e.m. in the escitalopram and placebo groups respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "24406d9c-ec59-4c5d-8093-28e990f05966",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C30",
+      "claim": "Only one model parameter (cost-evidence accumulation slope, Sem) was significantly different between the placebo and escitalopram groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one model parameter was significantly different between the placebo and escitalopram groups: the cost-evidence accumulation slope (Sem, F1, 58.0=9.88, p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of computational model parameters fitted to experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8011b601-b7ac-4c28-b947-f950842ed1bc",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C31",
+      "claim": "There was a 31% decrease in cost-evidence accumulation slope (Sem) in the escitalopram group compared to the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "This parameter captures the average value of effort cost across conditions: there was a 31% decrease in the escitalopram group compared to the placebo group (on average with \u00b1 s.e.m., placebo: 0.16\u00b10.012, escitalopram: 0.11\u00b10.008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "9c91a17c-0a92-4cbf-9da4-eab9b624a642",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C32",
+      "claim": "The difference in cost-evidence accumulation slope between escitalopram and placebo was significant at each visit.",
+      "claim_type": "EXPLICIT",
+      "source": "the difference was actually significant at each visit (all p<0.015; two-sided t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7cab3e7b-9683-4746-8286-022cb4244df3",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C33",
+      "claim": "Effort duration was longer in the escitalopram group compared to placebo.",
+      "claim_type": "EXPLICIT",
+      "source": "we found both a longer effort duration per se (F1, 58.1=10.72, p=0.002, on average placebo: 7.63s\u00b10.56, escitalopram: 10.2s\u00b10.55, with s.e.m.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e8150237-c421-449a-8c99-545da6a3e105",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C34",
+      "claim": "The sensitivity of effort duration to incentive level was higher in the escitalopram group compared to placebo.",
+      "claim_type": "EXPLICIT",
+      "source": "and a higher sensitivity of effort duration to incentive level (F1, 58.5=5.46, p=0.023, on average with \u00b1 s.e.m., placebo: 1.11\u00b10.22, escitalopram: 1.95\u00b10.26) in the escitalopram group compared to placebo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "9af75e49-82e8-44c8-ae37-68eabe49b5a5",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C35",
+      "claim": "Effort duration and its sensitivity to incentive level are correlated across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson correlation over subjects was indeed significantly positive in both groups (placebo: \u03c127=0.43, p=0.02; escitalopram: \u03c127=0.54, p=0.002, see Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e8883750-ca9d-4a0e-b77d-2aa4079f0b1f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C36",
+      "claim": "Escitalopram improves global performance in a task that involves trading effort cost against monetary benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our behavioral results in healthy volunteers show that the SSRI escitalopram improves global performance and hence payoff in a task that involves trading effort cost against monetary benefit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing improved payoff in escitalopram group",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "70bcdc82-a91f-4db4-8e5e-dc40839b6dbf",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C37",
+      "claim": "The effect of escitalopram is characterized as a specific diminution of effort cost.",
+      "claim_type": "EXPLICIT",
+      "source": "our computational analysis characterized the effect of escitalopram as a specific diminution of effort cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational analysis of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "995b356f-74e1-45d6-8091-dda231a7a755",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C38",
+      "claim": "Cost may be a general functional domain for serotonin.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with previous findings, our results support the hypothesis that cost may be a general functional domain for serotonin (Boureau and Dayan, 2011; Dayan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by current experimental results combined with previous literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "df84e382-4394-4a0a-808e-0de121caed58",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C39",
+      "claim": "Serotonin impacts sensitivity to negative rather than positive feedback during probabilistic and reversal learning paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, interventions targeting serotonergic transmission during probabilistic and reversal learning paradigms in rodents, monkeys and humans suggested that serotonin impacts sensitivity to negative rather than positive feedback (Clarke et al., 2004; Chamberlain et al., 2006; Crockett et al., 2009; Bari et al., 2010; Cohen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clarke et al., 2004; Chamberlain et al., 2006; Crockett et al., 2009; Bari et al., 2010; Cohen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "1e1e8fa5-a6bb-4acc-bfb7-9575bfc11ea8",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C40",
+      "claim": "Acute tryptophan depletion reduces information sampling in a decision-making task, but only when sampling has a financial cost.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of serotonergic transmission in humans following acute tryptophan depletion (for a review, see Faulkner and Deakin, 2014) reduced information sampling in a decision-making task, but crucially, only when sampling had a financial cost (Crockett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Faulkner and Deakin, 2014 and Crockett et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "3135c362-6c84-487b-aece-63acb21f13e0",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C41",
+      "claim": "Serotonin may impact moral costs, such as unfairness in social decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin may also impact moral costs, such as unfairness in social decision-making (Crockett et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crockett et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "f6c19841-4218-45f1-b9ec-bef625bb7074",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C42",
+      "claim": "Higher firing rate of serotonergic neurons correlates with an increased ability to wait for bigger rewards in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, serotonin may control the cost of delay in reward delivery in rodents, such that a higher firing rate of serotonergic neurons correlates with an increased ability to wait for bigger rewards (Miyazaki et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miyazaki et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7992b24b-4653-480f-bee0-324e8709e4fd",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C43",
+      "claim": "Serotonin does not affect the sensitivity to the reward itself.",
+      "claim_type": "EXPLICIT",
+      "source": "without affecting the sensitivity to the reward itself (Fonseca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fonseca et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "f50fd25a-ea06-48f7-939e-677b672b1c3d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C44",
+      "claim": "Low serotonin levels exacerbate sensitivity to the cost of waiting, which could result in impulse control disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, low serotonin levels, e.g. after acute tryptophan depletion, were suggested to exacerbate sensitivity to the cost of waiting, which could result in impulse control disorders (Crockett et al., 2009; Cools et al., 2011; Dayan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crockett et al., 2009; Cools et al., 2011; Dayan, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "16d5367a-2217-435d-886e-98618a6720a7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C45",
+      "claim": "Serotonin blockers impacted choices only when costs were delays, and not physical efforts in cost/benefit trade-off tasks in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "in cost/benefit trade-off tasks, serotonin blockers impacted choices only when costs were delays, and not physical efforts (Denk et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Denk et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "fdf4ea51-b528-436a-8e71-6fbd2b4f026f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C46",
+      "claim": "Dopamine blockers affected both delay and physical effort costs in cost/benefit trade-off tasks in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas dopamine blockers affected both types of costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from context of discussion about Denk et al., 2005 study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "f872e141-6289-4e45-97ef-ddcb5417f5aa",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C47",
+      "claim": "The SSRI effect on effort duration cannot be explained by a change in temporal discounting.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the SSRI effect on effort duration (how long subjects sustain an effort) cannot be explained by a change in temporal discounting (how long subjects wait for a reward).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from task design features",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "d786a803-5500-4008-876a-97a780b5aded",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C48",
+      "claim": "Higher serotonin level alleviates the effort cost.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of the effect obtained in the present study suggests that higher serotonin level alleviates the effort cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing reduced effort cost parameter with SSRI treatment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "a0dde27d-cbd2-471b-8807-380b8eb5d69b",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C49",
+      "claim": "The primary effect of SSRI is to increase serotonin level in the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is based on the assumption that the primary effect of SSRI is to increase serotonin level in the synaptic cleft (Nutt et al., 1999; Stahl, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nutt et al., 1999; Stahl, 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "d9366248-a8ce-420f-8d35-5c6f7c1a9780",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C50",
+      "claim": "5-HT1A and 5-HT2A receptors respectively inhibit and excite motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, 5-HT1A and 5-HT2A receptors respectively inhibit and excite motoneurons (Jacobs and Azmitia, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacobs and Azmitia, 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "cee4c11b-3fa6-488d-b7a6-b4d0455e43be",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C51",
+      "claim": "Serotonin helps overcoming delay costs in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We nevertheless note that the superficial interpretation is consistent with demonstrations that serotonin also helps overcoming other costs such as delay in humans (Schweighofer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schweighofer et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "725ff274-b695-4a53-a9be-8823b6327d78",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C52",
+      "claim": "There was no difference in maximal force between the placebo and SSRI groups at any visit.",
+      "claim_type": "EXPLICIT",
+      "source": "An indirect effect through an increase in muscular capacity can be excluded since there was no difference in maximal force between the placebo and SSRI groups at any visit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "92c02bad-35b8-4dc0-9661-f1027348a27f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C53",
+      "claim": "Nociception and/or somatosensory perception are both modulated by serotonin at central levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The former (perceptual) view would be in line with an analgesic effect of escitalopram, which is consistent with the findings that nociception and/or somatosensory perception are both modulated by serotonin at central levels (Jacobs and Azmitia, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacobs and Azmitia, 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8a7c6d68-c88e-42db-8b05-d69483ae65d1",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C54",
+      "claim": "Serotonin is targeted by common drugs modulating pain like acetaminophen.",
+      "claim_type": "EXPLICIT",
+      "source": "that serotonin is targeted by common drugs modulating pain like acetaminophen (Smith, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "169f7151-771a-4426-9b1f-037e3397492c",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C55",
+      "claim": "Serotonin modulates the inhibitory feedback loop that allows muscular fatigue to down-regulate the motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "and that serotonin modulates the inhibitory feedback loop that allows muscular fatigue to down-regulate the motor command (Gandevia, 2001; Cotel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gandevia, 2001; Cotel et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "22305145-9b2b-4821-af46-e348d1ee74f5",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C56",
+      "claim": "The serotonin and dopamine systems strongly interact.",
+      "claim_type": "EXPLICIT",
+      "source": "As the serotonin and dopamine systems strongly interact (Dremencov et al., 2009; Cools et al., 2011; Schilstr\u00f6m et al., 2011; Fischer et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dremencov et al., 2009; Cools et al., 2011; Schilstr\u00f6m et al., 2011; Fischer et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "aeb87d20-0488-4f8f-a5db-1d89f4961a43",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C57",
+      "claim": "Dopaminergic manipulations in mesolimbic structures affected the propensity to choose high reward \u2013 high effort over low reward \u2013 low effort options in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the beneficial effect of SSRI shown here is reminiscent of previous reports about dopaminergic manipulations in mesolimbic structures, which affected the propensity to choose high reward \u2013 high effort over low reward \u2013 low effort options in rodents (Cousins et al., 1996; Salamone et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cousins et al., 1996; Salamone et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "dcddd991-fe7a-4bb7-82ac-9f82b1d1418c",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C58",
+      "claim": "Dopaminergic manipulations in humans affect reward processing in learning contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed dopaminergic manipulations in humans have been repeatedly shown to affect reward processing, not only in learning contexts (Frank et al., 2004; Pessiglione et al., 2006; Palminteri et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Frank et al., 2004; Pessiglione et al., 2006; Palminteri et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "eca0bbb9-338e-410f-9ae0-f4b5c2f54acc",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C59",
+      "claim": "Dopaminergic manipulations in humans affect reward processing in reward/effort trade-off paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "but also in reward/effort trade-off paradigms (Wardle et al., 2011; Treadway et al., 2012; Le Bouc et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wardle et al., 2011; Treadway et al., 2012; Le Bouc et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "2385fbb6-2ae0-4557-8fdf-6518cb43a7db",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C60",
+      "claim": "Serotonin release is boosted by SSRIs from treatment onset at the molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the molecular level, serotonin release is boosted by SSRIs from treatment onset (Kobayashi et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kobayashi et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "7f75dc10-d0b0-4a95-bd09-3defba33263f",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C61",
+      "claim": "SSRI effects on emotional processing occur with little or no delay in healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "and SSRI effects on emotional processing also occur with little or no delay in healthy subjects (Harmer et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harmer et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "d223350d-67ec-4d00-b1d4-01a88324ca34",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C62",
+      "claim": "Positive and negative outcomes can shape mood on the long run.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea has been formalized in a recent study showing how positive and negative outcomes can shape mood on the long run (Eldar and Niv, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eldar and Niv, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "6f5ef701-e015-457a-98c7-2d0710a3946a",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C63",
+      "claim": "A specific modulation of cost can result in both longer efforts and an increased sensitivity of effort duration to potential benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results also indicate that non-trivial behavioral effects can be accounted for by a change in a single computational parameter (Sem): a specific modulation of cost can result in both longer efforts and an increased sensitivity of effort duration to potential benefits in our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational analysis of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "93a90209-b463-4f07-a9e9-b0496bd04bf8",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C64",
+      "claim": "The task involved trading handgrip force production against monetary benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "The task involved trading handgrip force production against monetary benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental task design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "133aa9a0-b2f8-43a3-9041-19ff304bcd7d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C65",
+      "claim": "Participants in the escitalopram group produced more effort and thereby achieved a higher payoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants in the escitalopram group produced more effort and thereby achieved a higher payoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "80d80515-8601-48e1-80ab-6b9b3a527db2",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C66",
+      "claim": "The effect of escitalopram was underpinned by a specific reduction of effort cost, and not by any change in the weight of monetary incentives.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, our computational analysis showed that this effect was underpinned by a specific reduction of effort cost, and not by any change in the weight of monetary incentives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational analysis of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "df459791-2393-46a8-a504-2863a5abd18b",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C67",
+      "claim": "Healthy volunteers aged 18\u201345 years old were recruited to the study by public advertisement.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy volunteers (18\u201345 years old) were recruited to the study by public advertisement after approval by the Ethics Committee of Berkshire, UK (protocol CL1-20098-81, on 28th Sept. 2011) and registration as a clinical trial, ISRCTN75872983.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "b6b209f4-5e76-4f1d-952d-e14fd051e442",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C68",
+      "claim": "The study was approved by the Ethics Committee of Berkshire, UK on 28th Sept. 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "after approval by the Ethics Committee of Berkshire, UK (protocol CL1-20098-81, on 28th Sept. 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8fccba24-0037-43ca-8384-be4d93f08c83",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C69",
+      "claim": "The study was registered as clinical trial ISRCTN75872983.",
+      "claim_type": "EXPLICIT",
+      "source": "and registration as a clinical trial, ISRCTN75872983.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of trial registration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "ec8be538-1aae-43eb-b908-6419376edb51",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C70",
+      "claim": "Participants gave their written informed consent prior to participation.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants gave their written informed consent prior to participation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "57aed1ee-6abb-4026-aa7b-e5d57f478f00",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C71",
+      "claim": "Participants were randomly assigned to one of two parallel treatment groups following a double-blind procedure: placebo or escitalopram.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were randomly assigned to one of the two parallel treatment groups following a double-blind procedure: placebo or escitalopram (10 mg during week #1 and #9; 20 mg from week #2 to #8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5532c181-17d4-4712-8057-ef825a591b76",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C72",
+      "claim": "Escitalopram was administered at 10 mg during week #1 and #9.",
+      "claim_type": "EXPLICIT",
+      "source": "placebo or escitalopram (10 mg during week #1 and #9; 20 mg from week #2 to #8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of treatment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e6a46a90-45fe-4a52-a748-76117c872f7d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C73",
+      "claim": "Escitalopram was administered at 20 mg from week #2 to #8.",
+      "claim_type": "EXPLICIT",
+      "source": "placebo or escitalopram (10 mg during week #1 and #9; 20 mg from week #2 to #8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of treatment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "118ad416-2048-4ab2-85eb-37b3e37fa5f4",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C74",
+      "claim": "Participants took a daily oral capsule around 8 P.M. for 9 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants took a daily oral capsule around 8 P.M. for 9 weeks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of treatment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8d5bb65d-6153-4cab-88ef-351b7b7391e7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C75",
+      "claim": "Participants performed the Effort Allocation Task three times at distinct latencies: initial (2\u20134 days after treatment onset), intermediate (12\u201317 days) and late (52\u201360 days).",
+      "claim_type": "EXPLICIT",
+      "source": "and performed the Effort Allocation Task three times at distinct latencies (Figure 1B): initial (2\u20134 days after treatment onset), intermediate (12\u201317 days) and late (52\u201360 days for all subjects but 3, who were tested between the 33rd and 44th days before withdrawing from the study).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of study methodology, also shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "9114864d-a5a0-4be3-a3f2-ff00f79b62fa",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C76",
+      "claim": "The maximal force was not affected by treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal force was not affected by treatments (F3, 113.7=0.93, p=0.42)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "2fbba341-d20c-41e3-8003-0b120d71609a",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C77",
+      "claim": "The maximal force was not affected by visits.",
+      "claim_type": "EXPLICIT",
+      "source": "visits (F2, 180=1.34, p=0.26)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "c09dd63d-427d-449b-9893-4be6cfc5b957",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C78",
+      "claim": "The maximal force was not affected by the interaction of treatment and visit factors.",
+      "claim_type": "EXPLICIT",
+      "source": "or by the interaction of these two factors (F6, 180=0.27, p=0.95).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "fb104292-dc93-4d31-917e-5e65c6c6ef3c",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C79",
+      "claim": "The same best computational model was found independently in each treatment group with high confidence levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the same best model was found independently in each treatment group with high confidence levels (exceedance probabilities xp>98% in each group) indicates that all subjects can be characterized within this common computational framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian model selection analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "160e4d7b-eb84-4632-9ee5-9268e9275897",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C80",
+      "claim": "A 20% change in any given parameter was reliably detected by the model fitting procedure in at least 77% of simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A 20% change in any given parameter was reliably detected and the difference recovered by model fitting was significant in a 96% of simulations at least for Ai, Sem, Srm and Sri and in a 77% of simulations for Sed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8850d80d-c51a-4e3e-a059-531d4d18493d",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C81",
+      "claim": "A change in one single parameter was recovered without propagating to other parameters and the false alarm rate was below 5% for all parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a change in one single parameter was recovered without propagating to other parameters and the false alarm rate was below 5% for all parameters (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "dfc78960-adf8-4ab1-aac7-5af8802a5970",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C82",
+      "claim": "Models including a modulation of Sem outperformed the others in Bayesian model selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Models including a modulation of Sem outperformed the others (log Bayes Factor, all \u0394>147.9), see Table 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian model selection analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5efc67f3-505e-46e2-afdb-6df75d0b71b7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C83",
+      "claim": "A version with modulations of both Sem and Sed was slightly more likely than a version with only a modulation of Sem.",
+      "claim_type": "EXPLICIT",
+      "source": "A version with modulations of both Sem and Sed was slightly more likely than a version with only a modulation of Sem (\u0394=3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian model selection analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "292572e6-a021-4d82-80f4-46d6d386ffc6",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C84",
+      "claim": "The model with modulations of both Sem and Sed was much more likely than any other combination.",
+      "claim_type": "EXPLICIT",
+      "source": "and much more likely than any other combination (\u0394>5.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian model selection analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "36af1890-b083-416e-ba36-494b87389a5b",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C85",
+      "claim": "Serotonin regulates behavioral activation by modulating the weight of action costs rather than benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Borrowing from these models, we retain the general working hypothesis that serotonin regulates behavioral activation by modulating the weight of action costs rather than benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as working hypothesis based on previous models",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "5e9e31f1-b835-40d0-9b81-fcf191c1f614",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C86",
+      "claim": "Serotonin regulates the weight of effort cost in action production, as opposed to the weight of expected benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we tested the specific hypothesis that serotonin regulates the weight of effort cost in action production, as opposed to the weight of expected benefit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the specific hypothesis tested in this study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "f1fb8280-c4c6-476a-8fef-c05684eade48",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C87",
+      "claim": "SSRIs might reduce the perceived cost of performing actions, which would promote behavioral activation and alleviate apathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, according to our interpretation, SSRIs might reduce the perceived cost of performing actions, which would promote behavioral activation, hence the alleviation of apathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on experimental results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "b7d4b23d-f21c-4e6b-8d4e-001b13da0780",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C88",
+      "claim": "SSRIs might reduce the perceived cost of delaying action, improving response control and reducing impulsivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As SSRIs might also reduce the perceived cost of delaying action, they would improve response control and reduce impulsivity (Cools et al., 2005; Cools et al., 2011; Crockett et al., 2009; Dayan, 2012; Bari and Robbins, 2013; Miyazaki et al., 2014; Fonseca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on experimental results and previous literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "33cc05d4-7517-4d3e-9b40-f601103439db",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C89",
+      "claim": "Serotonin and dopamine may have complementary roles in promoting action production: serotonin by reducing effort cost and dopamine by enhancing the incentive value of potential rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "It might be that serotonin and dopamine have complementary roles in promoting action production (and alleviating apathy): the former by reducing effort cost and the latter by enhancing the incentive value of potential rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on experimental results and previous literature",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "8006cb4c-4e5e-41a9-adea-e669ae6c4880",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C90",
+      "claim": "An early detection of effort cost attenuation could be used to predict long-term treatment effects on clinical symptoms in depressed patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies in depressed patients are needed to assess whether an early detection of effort cost attenuation could be used to predict long-term treatment effects on clinical symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative suggestion for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "1ecc95ea-7ab1-46fb-b0c7-ae00076f5688",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "claim_id": "C91",
+      "claim": "Distinct dysfunctions, such as amplification of effort cost vs. flattening of reward prospects, might call for different treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct dysfunctions, such as amplification of effort cost vs. flattening of reward prospects, might call for different treatments: if drugs modulating serotonin only affect cost estimates, then other drugs (possibly dopaminergic) should aim to impact the valuation of potential benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative clinical implication based on experimental results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a133b60-33fd-4c50-8b02-2a494641425e",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Escitalopram improves performance in an effort allocation task in healthy volunteers. In a double-blind, placebo-controlled trial with 58 subjects, the escitalopram group achieved significantly higher monetary payoff (\u00a335.9\u00b11.21 vs \u00a330.1\u00b11.44 s.e.m., p=0.003) that was stable across three testing phases over 8 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 and C64-C75 provide converging evidence from a well-designed randomized controlled trial with appropriate statistical analysis (F1,58.4=9.37, p=0.003), adequate sample size (N=58), proper blinding, and ethical approval. The behavioral effect is robust and consistent across visits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "eb62b42d-5998-493b-b26e-8e80346379b4",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational modeling reveals that escitalopram specifically reduces effort cost without affecting reward sensitivity. The cost-evidence accumulation slope (Sem) showed a 31% decrease in the escitalopram group (p=0.003), while other model parameters remained unchanged. Bayesian model selection and simulation analyses confirmed the specificity and sensitivity of this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C79-C84 demonstrate rigorous computational analysis with Bayesian model selection (exceedance probability >98%), validation through simulation (77-96% detection rate with <5% false alarms), and consistent statistical significance across all visits (all p<0.015). The specificity is well-established through systematic model comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "169b1548-79a5-4a47-9e84-deff421c95f9",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The computational effect of reduced effort cost translates into predicted behavioral changes: longer effort duration (10.2s vs 7.63s, p=0.002) and increased sensitivity to incentives (1.95 vs 1.11, p=0.023). These two effects are correlated across subjects as predicted by the model (\u03c1=0.43-0.54, p<0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35, C63, and C66 show that computational predictions match observed behavior with appropriate statistics. The correlation between effort duration and incentive sensitivity (Figure 3B) provides strong validation that both effects arise from a common computational mechanism (reduced Sem), supporting the model's explanatory power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study supports the hypothesis that serotonin regulates behavioral activation by modulating effort cost rather than reward valuation. This extends previous theories about serotonin's role in cost processing to include physical effort costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C48, C85-C86 are well-supported by the convergence of behavioral performance data (C26-C29), computational specificity (C30-C32), and predicted behavioral patterns (C33-C35). The interpretation that higher serotonin alleviates effort cost is consistent with the SSRI mechanism and the observed 31% reduction in Sem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "cbc9f026-819b-4abd-ac28-add0e5043425",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Maximal force capacity was not affected by escitalopram treatment, ruling out changes in muscular capacity as an explanation for the behavioral effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 and C52 provide important control data showing no treatment effect on maximal force (F3,113.7=0.93, p=0.42), no visit effect (F2,180=1.34, p=0.26), and no interaction (F6,180=0.27, p=0.95). This strengthens the interpretation that effects are cognitive/motivational rather than physical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "05fe34da-9885-4d68-9b5e-7193fabfe179",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The SSRI effect on effort duration cannot be explained by changes in temporal discounting because rewards were gained instantaneously during effort production without delay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by the task design described in C64 and C75, where the 30s trial duration was fixed and rewards accumulated in real-time during effort. This design feature allows dissociation of effort cost from delay cost, strengthening the specificity of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "e030ece2-6316-4455-9598-16fc965a2f7e",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior literature on SSRIs and motivation shows contradictory findings, with some studies reporting reduced apathy and others reporting increased apathy or no effect, depending on the clinical population and experimental paradigm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 accurately summarize the contradictory state of prior literature with appropriate citations. This establishes the motivation for the current study but represents background rather than new findings. The authors correctly identify the need to clarify SSRI effects in healthy volunteers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "da477fd5-df0f-4301-9729-c499723aed8b",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous research suggests serotonin is involved in multiple aspects of behavioral control including motor production, valuation, impulse control, patience for delayed rewards, and learning from positive/negative outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C24 provide appropriate background on serotonin's diverse roles with proper citations. These claims establish the theoretical framework but do not represent new findings from this study. They are accurately presented as prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "eeaede5e-a747-49f4-9b18-58359673f0fa",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior studies support a general role for serotonin in processing various types of action costs including punishment, delay, financial costs, and moral costs, though findings on physical effort costs have been inconsistent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 accurately summarize relevant prior literature with appropriate citations. The discussion of inconsistencies (e.g., C45-C46 showing serotonin blockers affected delay but not effort in rodents) appropriately contextualizes why the current findings are important and potentially species-specific.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The interpretation that SSRIs increase synaptic serotonin to alleviate effort cost is based on established SSRI mechanisms, though the molecular complexity involving receptor subtypes and feedback regulation requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 appropriately acknowledge both the standard interpretation of SSRI action (C49) and important caveats about molecular complexity (C50, C53-C55). The authors appropriately cite established mechanisms while noting that the 'superficial interpretation' needs refinement at the molecular level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "1149d54f-60b7-4664-89fb-3dcc34462bad",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Serotonin and dopamine systems interact, and dopaminergic manipulations affect effort-reward trade-offs in both rodents and humans, though the current findings suggest escitalopram's effects are not mediated by dopamine antagonism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 appropriately discuss the serotonin-dopamine interaction with proper citations. The authors correctly note that if escitalopram antagonized dopamine (C56), it should have reduced rather than increased effort, and that the lack of incentive modulation argues against dopamine involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "c9e674b4-a033-4551-a21c-a7771879ebd9",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While clinical antidepressant effects of SSRIs typically take weeks to manifest, molecular serotonin release and effects on emotional processing occur rapidly, suggesting that time may be needed to convert implicit changes into subjective mood improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 appropriately reconcile the absence of time interaction in the current study with delayed clinical effects in depression. The citations support rapid molecular/cognitive effects (C60-C61) and the theoretical framework for how these translate to mood over time (C62).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    },
+    {
+      "id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7",
+      "content_id": "fabe167c-2935-4f59-b298-95e11cb1f5f4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that SSRIs may alleviate apathy by reducing perceived action costs and improve impulse control by reducing delay costs, with potential clinical implications for personalized treatment based on whether patients show amplified costs versus flattened rewards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C91 are explicitly speculative interpretations and suggestions for future work. While logically consistent with the findings, they extend beyond the current data to clinical populations not studied here. The authors appropriately frame these as hypotheses requiring further investigation (C90) rather than established conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:04.573166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "90234f3c-3790-4304-8193-b0510e3833bd",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "76a6456d-50a8-4fd6-be9c-d1911009a55b",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "0c883a2f-6924-401e-88be-4ce65b425882",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "6d702274-5f94-4565-8774-9d8395f9fa2c",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "7f05da5b-1958-423d-833d-ecf238ce0b84",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "93a90209-b463-4f07-a9e9-b0496bd04bf8",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "133aa9a0-b2f8-43a3-9041-19ff304bcd7d",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "df459791-2393-46a8-a504-2863a5abd18b",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "b6b209f4-5e76-4f1d-952d-e14fd051e442",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "8fccba24-0037-43ca-8384-be4d93f08c83",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "ec8be538-1aae-43eb-b908-6419376edb51",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "57aed1ee-6abb-4026-aa7b-e5d57f478f00",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "5532c181-17d4-4712-8057-ef825a591b76",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "e6a46a90-45fe-4a52-a748-76117c872f7d",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "118ad416-2048-4ab2-85eb-37b3e37fa5f4",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "8d5bb65d-6153-4cab-88ef-351b7b7391e7",
+      "result_id": "1a133b60-33fd-4c50-8b02-2a494641425e"
+    },
+    {
+      "claim_id": "24406d9c-ec59-4c5d-8093-28e990f05966",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "8011b601-b7ac-4c28-b947-f950842ed1bc",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "9c91a17c-0a92-4cbf-9da4-eab9b624a642",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "fb104292-dc93-4d31-917e-5e65c6c6ef3c",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "160e4d7b-eb84-4632-9ee5-9268e9275897",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "8850d80d-c51a-4e3e-a059-531d4d18493d",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "dfc78960-adf8-4ab1-aac7-5af8802a5970",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "5efc67f3-505e-46e2-afdb-6df75d0b71b7",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "292572e6-a021-4d82-80f4-46d6d386ffc6",
+      "result_id": "eb62b42d-5998-493b-b26e-8e80346379b4"
+    },
+    {
+      "claim_id": "7cab3e7b-9683-4746-8286-022cb4244df3",
+      "result_id": "169b1548-79a5-4a47-9e84-deff421c95f9"
+    },
+    {
+      "claim_id": "e8150237-c421-449a-8c99-545da6a3e105",
+      "result_id": "169b1548-79a5-4a47-9e84-deff421c95f9"
+    },
+    {
+      "claim_id": "9af75e49-82e8-44c8-ae37-68eabe49b5a5",
+      "result_id": "169b1548-79a5-4a47-9e84-deff421c95f9"
+    },
+    {
+      "claim_id": "6f5ef701-e015-457a-98c7-2d0710a3946a",
+      "result_id": "169b1548-79a5-4a47-9e84-deff421c95f9"
+    },
+    {
+      "claim_id": "80d80515-8601-48e1-80ab-6b9b3a527db2",
+      "result_id": "169b1548-79a5-4a47-9e84-deff421c95f9"
+    },
+    {
+      "claim_id": "e8883750-ca9d-4a0e-b77d-2aa4079f0b1f",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "70bcdc82-a91f-4db4-8e5e-dc40839b6dbf",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "995b356f-74e1-45d6-8091-dda231a7a755",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "d786a803-5500-4008-876a-97a780b5aded",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "36af1890-b083-416e-ba36-494b87389a5b",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "5e9e31f1-b835-40d0-9b81-fcf191c1f614",
+      "result_id": "998b2af0-d0b6-479e-8d28-f6d3345d38b9"
+    },
+    {
+      "claim_id": "9114864d-a5a0-4be3-a3f2-ff00f79b62fa",
+      "result_id": "cbc9f026-819b-4abd-ac28-add0e5043425"
+    },
+    {
+      "claim_id": "2fbba341-d20c-41e3-8003-0b120d71609a",
+      "result_id": "cbc9f026-819b-4abd-ac28-add0e5043425"
+    },
+    {
+      "claim_id": "c09dd63d-427d-449b-9893-4be6cfc5b957",
+      "result_id": "cbc9f026-819b-4abd-ac28-add0e5043425"
+    },
+    {
+      "claim_id": "725ff274-b695-4a53-a9be-8823b6327d78",
+      "result_id": "cbc9f026-819b-4abd-ac28-add0e5043425"
+    },
+    {
+      "claim_id": "f872e141-6289-4e45-97ef-ddcb5417f5aa",
+      "result_id": "05fe34da-9885-4d68-9b5e-7193fabfe179"
+    },
+    {
+      "claim_id": "61b0e19c-88d6-4039-8452-2cc206947e33",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "12672b59-6925-46b9-a1c6-a076e6e8b7b8",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "3d46526e-d6ce-4f8b-af37-eef014ceb634",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "5bc652ee-9074-44d1-b80c-f9ceaefe2ae5",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "965f9d23-be1e-415b-a58b-55c5a115ba52",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "e6a18f96-2846-475a-9029-64d8bbc47fe7",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "5f563e87-0cac-4769-933c-74b72d5d2edd",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "5e26afc4-aba1-42fa-b850-6f3777d04938",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "02cdae4b-51d0-403d-9331-bbc843f34a22",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "7291457d-3ad7-472b-a0b9-56f39e0ed8e1",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "d1a9ef23-3e0e-4595-ad1a-84dbabcb110d",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "c12ebbe3-8242-475e-a997-ceafac21c350",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "fb1275a5-4590-43c3-8f5a-c3f805cb315d",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "368d4d5c-dbb9-4881-ba4c-2f4345a39d69",
+      "result_id": "e030ece2-6316-4455-9598-16fc965a2f7e"
+    },
+    {
+      "claim_id": "7c6e9258-ba8d-4cb9-ad57-aca875d9e7f0",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "44e5a98b-0952-4767-9aba-97d9551decaf",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "8fe2f6d0-3cd3-4072-9707-a5f3e170b414",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "e41dc550-86f1-4a2a-b9f7-ec4095aac33f",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "3046cb51-8ffa-40dd-9666-3915c526a1d3",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "54183ba7-5d8e-47ba-a632-adee7d61ac5c",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "a64538e7-dd96-4052-8562-24a1b7d5fe94",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "c78403da-90f4-4815-bc58-c5f4a8680d1f",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "d0c9a400-bbbe-4e24-96b4-91b997a86ee9",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "db00b382-2748-48e5-a639-a396aed3cfc5",
+      "result_id": "da477fd5-df0f-4301-9729-c499723aed8b"
+    },
+    {
+      "claim_id": "df84e382-4394-4a0a-808e-0de121caed58",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "1e1e8fa5-a6bb-4acc-bfb7-9575bfc11ea8",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "3135c362-6c84-487b-aece-63acb21f13e0",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "f6c19841-4218-45f1-b9ec-bef625bb7074",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "7992b24b-4653-480f-bee0-324e8709e4fd",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "f50fd25a-ea06-48f7-939e-677b672b1c3d",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "16d5367a-2217-435d-886e-98618a6720a7",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "fdf4ea51-b528-436a-8e71-6fbd2b4f026f",
+      "result_id": "eeaede5e-a747-49f4-9b18-58359673f0fa"
+    },
+    {
+      "claim_id": "a0dde27d-cbd2-471b-8807-380b8eb5d69b",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "d9366248-a8ce-420f-8d35-5c6f7c1a9780",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "cee4c11b-3fa6-488d-b7a6-b4d0455e43be",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "92c02bad-35b8-4dc0-9661-f1027348a27f",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "8a7c6d68-c88e-42db-8b05-d69483ae65d1",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "169f7151-771a-4426-9b1f-037e3397492c",
+      "result_id": "23ac3540-2fe9-4b20-9deb-8e1ebcee6ab7"
+    },
+    {
+      "claim_id": "22305145-9b2b-4821-af46-e348d1ee74f5",
+      "result_id": "1149d54f-60b7-4664-89fb-3dcc34462bad"
+    },
+    {
+      "claim_id": "aeb87d20-0488-4f8f-a5db-1d89f4961a43",
+      "result_id": "1149d54f-60b7-4664-89fb-3dcc34462bad"
+    },
+    {
+      "claim_id": "dcddd991-fe7a-4bb7-82ac-9f82b1d1418c",
+      "result_id": "1149d54f-60b7-4664-89fb-3dcc34462bad"
+    },
+    {
+      "claim_id": "eca0bbb9-338e-410f-9ae0-f4b5c2f54acc",
+      "result_id": "1149d54f-60b7-4664-89fb-3dcc34462bad"
+    },
+    {
+      "claim_id": "2385fbb6-2ae0-4557-8fdf-6518cb43a7db",
+      "result_id": "c9e674b4-a033-4551-a21c-a7771879ebd9"
+    },
+    {
+      "claim_id": "7f75dc10-d0b0-4a95-bd09-3defba33263f",
+      "result_id": "c9e674b4-a033-4551-a21c-a7771879ebd9"
+    },
+    {
+      "claim_id": "d223350d-67ec-4d00-b1d4-01a88324ca34",
+      "result_id": "c9e674b4-a033-4551-a21c-a7771879ebd9"
+    },
+    {
+      "claim_id": "f1fb8280-c4c6-476a-8fef-c05684eade48",
+      "result_id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7"
+    },
+    {
+      "claim_id": "b7d4b23d-f21c-4e6b-8d4e-001b13da0780",
+      "result_id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7"
+    },
+    {
+      "claim_id": "33cc05d4-7517-4d3e-9b40-f601103439db",
+      "result_id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7"
+    },
+    {
+      "claim_id": "8006cb4c-4e5e-41a9-adea-e669ae6c4880",
+      "result_id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7"
+    },
+    {
+      "claim_id": "1ecc95ea-7ab1-46fb-b0c7-ae00076f5688",
+      "result_id": "01332fbd-01b3-4373-bcf3-1aa4ac3961e7"
+    }
+  ],
+  "comparisons": []
+}

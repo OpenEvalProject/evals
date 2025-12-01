@@ -1,0 +1,1287 @@
+{
+  "submission": {
+    "id": "0004893c-9a6c-4e94-b8a7-7fc7a008c7e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:33:19.275354Z",
+    "updated_at": "2025-11-30T21:33:19.275354Z"
+  },
+  "content": [
+    {
+      "id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "submission_id": "0004893c-9a6c-4e94-b8a7-7fc7a008c7e5",
+      "content_type": "manuscript",
+      "content_text": "# Rotating waves during human sleep spindles organize global patterns of activity that repeat precisely through the night\n\n## Authors\n\n- Lyle Muller<sup>1</sup> ([ORCID: 0000-0001-5165-9890](https://orcid.org/0000-0001-5165-9890))\n- Giovanni Piantoni<sup>2</sup> ([ORCID: 0000-0002-5308-926X](https://orcid.org/0000-0002-5308-926X))\n- Dominik Koller<sup>1</sup>\n- Sydney S Cash<sup>2</sup>\n- Eric Halgren<sup>3</sup>\n- Terrence J Sejnowski<sup>1</sup> ([ORCID: 0000-0002-0622-7391](https://orcid.org/0000-0002-0622-7391)) \u2020\n\n### Affiliations\n\n1. Computational Neurobiology Laboratory Salk Institute for Biological Studies La Jolla United States\n2. Department of Neurology, Massachusetts General Hospital Harvard Medical School Boston United States\n3. Department of Radiology University of California, San Diego San Diego United States\n4. Department of Neurosciences University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring sleep, the thalamus generates a characteristic pattern of transient, 11-15 Hz sleep spindle oscillations, which synchronize the cortex through large-scale thalamocortical loops. Spindles have been increasingly demonstrated to be critical for sleep-dependent consolidation of memory, but the specific neural mechanism for this process remains unclear. We show here that cortical spindles are spatiotemporally organized into circular wave-like patterns, organizing neuronal activity over tens of milliseconds, within the timescale for storing memories in large-scale networks across the cortex via spike-time dependent plasticity. These circular patterns repeat over hours of sleep with millisecond temporal precision, allowing reinforcement of the activity patterns through hundreds of reverberations. These results provide a novel mechanistic account for how global sleep oscillations and synaptic plasticity could strengthen networks distributed across the cortex to store coherent and integrated memories.\n\n## Introduction\n\nMemories are stored in distributed networks across the cortex. In the two-stage model of memory consolidation (McClelland et al., 1995; Rasch and Born, 2007), memories are integrated in the hippocampus and then linked in the neocortex for long-term storage, where information represented in visual, auditory, somatosensory, or cognitive regions must be bound into a coherent whole (Wheeler et al., 2000; Horner et al., 2015). It is well established that sleep oscillations actively contribute to this process: during stage 2 sleep spindles, the thalamus generates a rhythmic activity pattern that becomes widespread through large-scale thalamocortical loops (Contreras et al., 1996), and spindles are critical to sleep-dependent memory consolidation (Gais et al., 2002; Mednick et al., 2013). Long-range connections in cortex result primarily from excitatory pyramidal cells (Sholl, 1956; Sch\u00fcz et al., 2002), but precisely how sleep oscillations aid strengthening of these excitatory connections between distributed cortical networks through spike-time dependent plasticity (STDP) remains unclear, particularly in the presence of long axonal conduction delays (Lubenov and Siapas, 2008). Here, we identify a global activity pattern repeatedly observed during sleep spindle oscillations in human neocortex that could serve this role.\n\nWe study intracranial electrocorticogram (ECoG) recordings of five clinical patients in stage 2 sleep and apply recently developed computational methods (Muller et al., 2014) to classify spatiotemporal dynamics at the level of individual oscillation cycles. ECoG arrays were implanted in subjects undergoing evaluation for resective surgery of epileptogenic cortex (Figure 1A, left). Over several days of recording, these subjects exhibit long periods without major epileptic events. During that time, subjects express a relatively normal sleep architecture, with well-defined sleep oscillations. Stage 2 sleep epochs were then manually identified by an expert rater, and sleep spindles recorded on the ECoG were isolated using automated techniques (Hagler et al., 2016). These spindles appeared physiologically normal and well-isolated from background noise (Figure 1A, right and Figure 1\u2014figure supplement 1). Our algorithmic approach classifies spatiotemporal patterns as expanding waves, defined as a significant linear increase in phase offset with distance from a point source (Figure 1\u2014figure supplement 2; see Materials\u00a0and\u00a0methods \u2013 Spatiotemporal dynamics), or rotating waves, defined as a significant increase in phase offset with rotation about a wave center (Figure 1\u2014figure supplement 3). In 41,860 spindle oscillation cycles tested across subjects, a large proportion (50.8%) was classified as rotating waves, along with a smaller subset (15.6%) as expanding. After inspecting these results, we observed further that the rotating waves exhibited a clear bias towards travel in the temporal \u2192 parietal \u2192 frontal (TPF) direction (69.5%, p<10\u221210, one-tail binomial test against equal occurrence, 14,796 TPF cycles, 21,272 total; for each individual subject p<10\u22123, see Figure 1\u2014source data 1 for individual wave totals) (Figure 1B and Video 1). Propagation speed distributions peaked between 2\u20135\u2009m/s (Figure 1C), varying within a narrow range from the 20th to the 80th percentiles (3\u20139\u2009m/s for the full distribution; 4\u201310, 3\u20138, 3\u201310, 2\u20133, and 4\u201313\u2009m/s for individual subjects, respectively), within the range of conduction speeds for the short (Girard et al., 2001) and long (Sch\u00fcz et al., 2002; Swadlow and Waxman, 2012) white matter association fibers. Further, this rotating TPF organization occurred consistently across subjects and implantation hemispheres (Figure 1D; see also Figure 1\u2014figure supplements 5\u20137).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-v1.jpg)\n\n**Figure 1.:** (A) Electrode placement for subject 1 (left), with a stereotypical spindling epoch observed on the array (right). The right panel depicts the average over channels (black) together with the individual channels (gray). (B) When visualized on the cortex, individual spindle cycles are often organized as rotating waves traveling from temporal (+0 ms, top) to parietal (+20 ms, middle) to frontal (+40 ms, bottom) lobes. (C) Phase speed distributions across subjects. Plotted is the kernel smoothing density estimate for individual subjects (gray dotted lines) and for the full distribution (black line). (D) The field of propagation directions, aligned on the putative rotation center and averaged across oscillation cycles and across subjects, shows a consistent flow in the temporal $\u2192$ parietal $\u2192$ frontal (TPF) direction. The center point is marked in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Average power spectral density estimate for spindle epochs (black) and matched non-spindle epochs (red), illustrating the nearly 10 dB increase within the 11\u201315 Hz spindle band during algorithmically selected epochs (divisive normalization, inset). Power at line noise frequency omitted for clarity. (B) Average spatial correlation values for spindle (black) and non-spindle (red) epochs illustrate increased global correlations during spindles.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The algorithmic approach to detecting expanding waves in noisy multichannel data proceeds in three steps: (1) phase extraction, through the analytic signal (Feldman, 2011) representation, followed by (2) center localization by taking the divergence of the phase gradient, and (3) quantification of the spatiotemporal pattern by calculating the circular-linear correlation of phase with distance from the center point. By finding an anchor point (in step 2) and then quantifying the spatial pattern of activity through the appropriate correlation metric (in step 3), we can capture the spatiotemporal pattern of expanding activity on the array in a single number ($\u03c1_{\u03d5,\\delta}$).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The approach to detecting rotating waves in noisy multichannel data proceeds similarly to that for expanding waves: (1) phase extraction, followed by (2) center localization by taking the curl of the phase gradient, and (3) quantification of the spatiotemporal pattern by calculating the circular-circular correlation of phase with rotation about the center point. By finding an anchor point (in step 2) and then quantifying the spatial pattern of activity through an appropriate correlation metric (in step 3), we can capture the spatiotemporal pattern of rotating activity on the array in a single number ($\u03c1_{\u03d5,\\theta}$).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Cumulative distribution function for expanding (blue) and rotational (red) correlation coefficients. Dotted lines indicate the 99th percentile from a random shuffling permutation test. Rotational waves exceeding the determined threshold exhibit a marked preference for the temporal $\u2192$ parietal $\u2192$ frontal (TPF) direction (inset). (B) Phase speed distributions were similar for both expanding and rotational waves. Plotted is the kernel smoothing density estimate with the\u00a0constraint of positive support.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Average re-centered phase gradient directions over identified rotational cycles traveling in the TPF direction, illustrating the robustness of the multichannel detection algorithm. Center point marked in red. (B) Average re-centered phase gradient directions over expanding waves.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Distributions of phase gradient directions (gray lines) and circular mean direction of each distribution (black lines) are plotted relative to the rotation center (red dot) for all TPF wave cycles across subjects. The sharp distributions of phase gradient directions extend out to the edge of the electrode array, illustrating the global extent of the detected rotating waves.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Average re-centered phase gradient directions over all spindle cycles in subjects 1\u20135. In each case, a rotational vector field indicates the robust spatiotemporal organization of rotating waves in a preferred direction (temporal $\u2192$ parietal $\u2192$ frontal cortex), in both right and left hemisphere electrode implantations (average). The two right columns for each subject depict average re-centered phase gradient directions for identified rotating waves in the TPF and TFP direction, respectively.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** (A) The distribution of rotation center is plotted on the cortical surface of Subject 1, for 10,944 rotating TPF waves. The distribution is concentrated around the dorsal temporal lobe, and centered on the Sylvian fissure. For this panel, a Gaussian smoothing with a\u00a0standard deviation of 1 pixel has been applied. (B) The distribution of change in wave center for consecutive rotating TPF wave cycles in Subjects 1\u20135 illustrates that the rotating wave center changes slowly, if at all (cf. Video 1). (C\u2013F) The distribution of rotation center for Subjects 2\u20135, plotted as in panel (A), illustrates approximately consistent anatomical localization of the TPF rotation center across subjects.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** The proportion of expanding and rotational waves is given for subjects 1\u20135 (left), in addition to cycles unclassified by the detection algorithm. In each case, a rotational preference for the temporal $\u2192$ parietal $\u2192$ frontal (TPF) direction is present at the level of individual spindle oscillation cycles (right).\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp10-v1.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Average re-centered phase gradient directions over all spindle cycles in three frequency bands (1\u20134 Hz, left; 9\u201318 Hz, center; 40\u201380 Hz, right) for subjects 1 (top row) and 2 (bottom row). In the 40\u201380 Hz frequency band, notch filtering in time was applied to remove the 60 Hz line noise. A clear pattern in the average directions emerges for the spindle frequency band, while the phase gradient direction maps in the other frequency bands are less clear.\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp11-v1.jpg)\n\n**Figure 1\u2014figure supplement 11.:** Using simulated expanding and rotating waves, we verified the robustness of our detection approach under Gaussian white noise of varying amplitude. (A) Snapshots of simulated expanding waves in one oscillation cycle (at 85, 105, and 125 ms), under varying levels of noise (standard deviation 0, 0.1, and 0.2). (B) Simulated rotating waves, as in (A). (C) The\u00a0performance of the algorithm in detecting expanding and rotational waves (blue and red solid lines, mean \u00b1 SEM), as compared to the thresholds derived from the permutation test (dotted lines). Every point represents 25 simulated spindles with 14 oscillation cycles each. Even when the noise standard deviation is unity (at parity with oscillation amplitude, highly obscuring visual detection), the algorithm recovers a correlation magnitude around 0.8 in each case, far above the determined permutation thresholds. In contrast, with only Gaussian white noise as input, the algorithm returns a low correlation value for rotational detection, below the determined permutation threshold (gray line). (D) Robustness of the algorithm to center position. This panel illustrates the performance of the algorithm for expanding (blue) and rotating (red) waves at different points on the electrode array, under Gaussian white noise (standard deviation 0.2). Note that performance drops for rotational detection at the border of the array, but this is small in comparison to the threshold determined from the permutation control (dotted red line).\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig1-figsupp12-v1.jpg)\n\n**Figure 1\u2014figure supplement 12.:** To test whether highly\u00a0local spindles organized as traveling waves would be detected, we ran our algorithm on simulated global (64 electrodes) and local (6 electrodes, or 9.4% of the simulated array) rotating waves. (A) Each channel in the simulated waves had added noise similar to that observed in the data (top trace). Distal channels in the local waves had only noise (bottom trace). Note 100 ms scale bar in gray. (B) The correlation magnitude for the global wave (black line, mean + SEM) is high above the determined permutation threshold (dotted red line), while the correlation magnitude for the highly local wave (gray line) is well below. This control illustrates that finding high $\u03c1_{\u03d5,\\theta}$ is indicative of a distributed and global phase pattern on the electrode array.\n\n![Video 1.](https://cdn.elifesciences.org/articles/17267/elife-17267-media1.mp4.jpg)\n\n**Video 1.:** Normalized activity for bandpass filtered timeseries is plotted in falsecolor at electrode positions on the cortical surface of Subject 1. The cortical electrode marked with a red dot (bottom) corresponds to the black timecourse in the inset (top). The other ECoG channels are plotted in gray. The time period visualized corresponds to approximately 300 milliseconds, or five cycles of the spindle oscillation. Note that no spatial smoothing is applied in these data.\n\nSpike-time dependent plasticity is a well-studied mechanism for regulating synaptic strengths that depends on the relative timing of presynaptic inputs and postsynaptic spikes (Markram et al., 1997; Bi and Poo, 1998), but for establishing large-scale neural assemblies during sleep oscillations through synaptic plasticity, axonal conduction delays pose a specific problem (Lubenov and Siapas, 2008). For example, cortical white matter association fibers have conduction delays up to 50 milliseconds across the cortex (Figure 2A, left) (Girard et al., 2001; Sch\u00fcz et al., 2002; Swadlow and Waxman, 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig2-v1.jpg)\n\n**Figure 2.:** (A) Spikes emitted from region A will arrive at B with a temporal delay of 20 milliseconds (left). If spindle oscillations were perfectly synchronized across the cortex, EPSPs from region A would occur after the spikes in region B, within the window for long-term depression (right). (B) In contrast, if spindles are spatiotemporally organized with stereotyped trajectories (left), then EPSPs from region A would align with population spiking in region B, allowing for synaptic strengthening to occur.\n\nIt is well established that spindles cause pyramidal cells and interneurons in cortex to fire preferentially at the peak of the surface-positive (depth-negative) LFP oscillation, both in intracellular (Contreras and Steriade, 1995, 1996; Kandel and Buzs\u00e1ki, 1997) and extracellular (Peyrache et al., 2011) recordings. If cortical spindles were perfectly synchronized, spikes emitted during one cycle of the spindle oscillation would arrive at their post-synaptic targets with this temporal delay, leading to a pairing within the window for persistent long-term depression (LTD) that would progressively weaken long-range connections (Figure 2A, right). If, however, spindles are self-organized into large-scale wave-like activity patterns, with phase speeds matching those of the underlying fiber networks and stereotyped, precisely repeating trajectories (Figure 2B, left), then EPSPs caused by spikes traveling along pyramidal axons to distant regions in the\u00a0cortex would align with the local burst of population activity (Figure 2B, right), creating the conditions necessary for synaptic strengthening to occur.\n\nNext, we wanted to understand whether these population activity patterns repeat with the temporal precision required for strengthening of large-scale assemblies. We defined the correlation magnitude over phase values on the electrode array between individual oscillation cycles to be a pairwise similarity index (see Materials\u00a0and\u00a0methods), in order to detect similar spatiotemporal patterns across oscillation cycles (Video 2). By calculating this metric over all cycle pairs in different wave classes (all cycles, expanding, rotational), we can directly compare the temporal precision mediated by each type. The cumulative distribution function (CDF) of similarity indices among identified rotational waves is highly shifted to the right (Figure 3A, black) compared to the CDF for all cycles (5 subjects, 42/54 sleep epochs, 77.8% significant, one-tailed two-sample Kolmogorov-Smirnov test, \u03b1=0.01, Bonferroni correction), indicating higher intra-class similarity between these cycles than for other wave types. Note that this is not simply a consequence of the rotational phase pattern itself, as expanding waves emanating from a consistent point source could certainly exhibit higher intra-class similarity than rotational waves with a varying center. Further, the median similarity index consistently increases in individual subjects when rotational waves of progressively increasing strength are considered (Figure 3B). This indicates the observed rotating waves strongly modulate temporal precision in repeated patterns of population activity. To be specific, by utilizing the average temporal frequency for these spindle oscillations (13.5\u2009Hz), we can estimate that in two cycles whose similarity index falls into the highest bin in Figure 3C (0.9\u20131.0), 50% of electrodes will experience an alignment of the spatiotemporal activity pattern within a 5 millisecond temporal window. Recent experiments have shown a tight temporal link between field potentials and synaptic currents (both EPSPs and IPSPs; Haider et al., 2016). By detecting these precisely recurring activity patterns in ECoG recordings, we can infer that distributed networks composed of local excitatory and inhibitory groups, whose firing is modulated by thalamocortical fibers during the sleep spindle, are repeatedly activated with a millisecond accuracy that is well within the temporal precision required for STDP.\n\n![Video 2.](https://cdn.elifesciences.org/articles/17267/elife-17267-media2.mp4.jpg)\n\n**Video 2.:** Two rotating waves with high phase similarity on the ECoG array, separated by 5.62 min of stage 2 sleep. Bandpass filtered timeseries are normalized to their maximum within the interval and plotted in falsecolor (bottom panels). Activity for each channel is plotted as a function of time (top panels), with an indication of temporal progression (red dotted line).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig3-v1.jpg)\n\n**Figure 3.:** (A) Rotating waves exhibit higher intra-class similarity. Cumulative distribution functions (CDFs) for shuffled data (purple), expanding waves (red), all cycles (blue), and rotating waves (black) are given for an example 15 min epoch of stage 2 sleep (subject 5). (B) Spindle cycles exhibiting stronger rotating patterns also express greater intra-class similarity. Gray lines indicate the median similarity index (ordinate) for the population of oscillation cycles expressing rotational waves above a threshold strength (abscissa), averaged over individual sleep epochs. Red dots and error bars indicate the median and median absolute deviation for the full distribution, respectively. (C) Spindle cycles exhibiting high similarity index are temporally precise. The distribution of phase difference at each electrode across spindle cycles is given as a function of the\u00a0similarity index (indicated by colors, inset). By utilizing the mean spindle oscillation frequency (13.5\u2009Hz), the midspread (interquartile range) of each distribution is given in units of time (inset).\n\nIf this millisecond precision in fact mediates formation and maintenance of corticocortical assemblies, we would then expect spiking associated with these synaptic currents to drive increased reverberation throughout the night, as excitatory connections between local groups of pyramidal cells and interneurons are strengthened and in turn promote more replay of the expressed activity pattern. High gamma-band power (HGP, 80\u2013120\u2009Hz), a reliable electrophysiological correlate of spiking activity (Ray et al., 2008; Ray and Maunsell, 2011; Ray, 2015; similar in nature to the 'broadband power shift' described in Manning et al., 2009), consistently increases around spindles (Figure 4A). Further, HGP is modulated by spindle phase (Figure 4B), increasing towards the surface-positive (depth-negative) peak, consistent with previous animal (Peyrache et al., 2011) and human (Andrillon et al., 2011) recordings. Finally, by studying repeats of rotating waves over 2.5\u2009hr of continuous sleep recording in Subject 1, we observe a preliminary indication of increased reverberation consistent with strengthening of distributed excitatory networks: similarity in the next identified rotating wave is highly predictive of the number of strong reverberations throughout the night (black dots, Figure 4C). Randomizing the relationship between the next rotating wave and the rest of the sleep recording eliminates this effect (shuffling control, Figure 4C), and such increased reverberation is not observed for expanding waves under similar conditions (Figure 4\u2014figure supplement 1). Similar observations are consistent across subjects (Figure 4\u2014figure supplement 2). These results support the hypothesis that precisely repeating rotating waves may enable strengthening of large-scale corticocortical assemblies throughout the night.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig4-v1.jpg)\n\n**Figure 4.:** (A) High gamma-band power (HGP) consistently increases around spindle onset. Plotted are the normalized amplitude envelopes for spindles (black) and HGP (red), averaged over 186 spindles in Subject 1. (B) HGP is modulated by spindle phase. Plotted is the mean high gamma-band power at each phase of the spindle oscillation (20 bins), for varying amplitudes of the spindle oscillation (see colorbar), each normalized by the mean HGP in matched non-spindle epochs. (C) Strength of the first repeat predicts the number of strong reverberations. The number of similar rotational patterns (above similarity index 0.7) following a spindle oscillation cycle is given as a function of the next cycle\u2019s similarity index (black dots, mean + SEM) over 2.5\u2009hr of sleep in Subject 1. Error bars are obscured by markers. Light blue lines indicate results from a shuffling permutation test (10 iterations).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The increase in the number of strong repeats is given for expanding (gray dots, mean + SEM) and rotational (black dots) waves. Error bars are obscured behind the\u00a0markers. Plotted also are the shuffling controls for rotating (light blue) and expanding (light gray) waves (25 iterations at each point). (B) The numbers of strong repeats in panel A are plotted as z-scores relative to the shuffling control distribution, for expanding (gray) and rotating (black) waves. This panel illustrates that the substantial, marked increase in reverberation is observed for rotating, but not expanding, waves.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** By aggregating data from shorter recordings in Subjects 2\u20135, we replicated the reverberation analysis (Figure 4C) using fewer bins (Low, less than 0.5 similarity index; high, greater than 0.5). Rotating wave patterns with a high-strength first repeat showed increased reverberation relative to the shuffling control (light blue dotted lines).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17267/elife-17267-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (Left) Mean HGP as a function of spindle phase is plotted for example stage 2 sleep epochs in Subjects 1\u20135. For this plot, spindle amplitudes above a given threshold (5 z-score units) were considered. As in Figure 4B, each plot is normalized by mean HGP in matched non-spindle epochs. (Right) Plotting each HGP modulation ratio normalized to its maximum (higher values in white) shows the consistent increase in HGP near the surface-positive (depth-negative) peak in each subject.\n\nEarly animal sleep spindle studies, using up to 8 electrodes in a linear array (Andersen et al., 1967; Kim et al., 1995; Contreras et al., 1996, 1997), in addition to preliminary EEG evidence in the human (Achermann and Borb\u00e9ly, 1998), proposed that spindles involve global synchronization of cortical circuits, raising the possibility that this sleep oscillation places neocortex into a specialized state for consolidation of long-term memories. In recent years, several studies have reported a mixture of 'local' and 'global' spindles using amplitude-duration thresholding approaches (Nir et al., 2011; Andrillon et al., 2011). By carefully studying the\u00a0phase information in the spindle frequency band recorded on large-scale ECoG arrays, we have uncovered that a substantial number of spindle oscillation cycles are organized into global, hemisphere-spanning patterns of rotating and expanding waves (Figure 1\u2014figure supplement 7). These patterns most likely represent the characteristic spatiotemporal organization of the 'global' spindles observed in Andrillon et al. (Andrillon et al., 2011) (\u226540% involvement, cf. their Figure 5C), with more localized patterns left unclassified by our detection approach (Figure 1\u2014figure supplements 9 and 12). These global patterns are likely established through widespread thalamocortical loops, placing the cortex into a state of large-scale coherence (Contreras et al., 1996), shaped into rotating and expanding waves through corticocortical white matter connections with axonal conduction speeds consistent with the observed propagation speeds (Figure 1C). Future computational modeling work will address in detail the role of thalamocortical, corticocortical, and corticothalamic connections in generating the spatiotemporal activity patterns reported here.\n\nSpindles have recently been specifically and causally implicated in the sleep-dependent consolidation of long-term memories (Mednick et al., 2013; Hennies et al., 2016). While some memories integrate content from single sensory modalities, requiring consolidation in only single cortical regions (such as motor cortex, Khazipov et al., 2004), many memories integrate multimodal sensory and cognitive information (Gibson and Maunsell, 1997), and require 'global' integration of distributed networks across the cortex. In this work, we have identified a novel mechanism by which this process could occur: the stereotyped activity patterns reported here may enable STDP to establish large-scale neuronal assemblies at scales where axonal conduction delays are long relative to the oscillation cycle (Fries, 2005; Lubenov and Siapas, 2008), and repeat many times throughout sleep with millisecond accuracy. While the schema illustrated in Figure 2 is a highly simplified view of the microscale interactions between long-range excitatory projections and local networks during spindle oscillations, computational and theoretical studies have previously obtained a detailed understanding of STDP dynamics with neurons receiving sequenced (Rao and Sejnowski, 2001, 2003), bursting (Song et al., 2000), and oscillating inputs (Muller et al., 2011; Luz and Shamir, 2016). This theoretical understanding of the interplay between STDP and population activity can allow in future work a precise account of how microscale synaptic interactions are shaped by global oscillation patterns, and how variability in these patterns (e.g. variation in wave speed, Figure 1C) will affect this mechanism. Taken together, these results provide insight into how distributed information stored across cortical regions may be bound into a coherent, integrated, but specific memory through spike-time dependent synaptic plasticity.\n\n## Materials and methods\n\n### Subjects\n\nPatients with longstanding pharmacologically resistant complex seizures gave fully informed consent according to NIH guidelines as monitored by the local Institutional Review Board (Massachusetts General Hospital). Electrocorticogram (ECoG) recordings during natural sleep were made over the course of clinical monitoring for spontaneous seizures. Electrode placement was determined solely by clinical criteria, with electrode grids usually spanning the Sylvian fissure and multiple lobes of the cerebral cortex (frontal, parietal, and temporal). Patients were informed that participation in the research would not alter their clinical treatment in any way, and that they may withdraw their consent at any time without jeopardizing clinical care.\n\n### Electrodes\n\nECoG contacts (Ad-Tech Medical Instrument Corp., Racine, WI) were 3\u2009mm platinum-iridium (90% platinum) discs arranged in a two-dimensional grid (8 rows and 8 columns, Subjects 1, 3, and 4; 8 rows and 12 columns, Subject 2; 8 rows and 6 columns, Subject 5) implanted semi-chronically on the pial surface in an effort to localize the\u00a0seizure origin. Within the grid, electrodes were spaced 10\u2009mm apart. In some patients, linear ECoG arrays provided additional spatial coverage; application of our multichannel detection approach, however, focused on the two-dimensional electrode grid. One strip of electrodes positioned over the pial surface and facing the skull served as the reference during the recordings; results were additionally verified using an average reference. Note that due to reference artifacts, an average reference was employed for the recordings in Subject 4. We note as well that the temporal extent of the waves, over tens of milliseconds, makes electrophysiological artifacts such as volume conduction an unlikely explanation for the observations reported here. Recordings were performed with clinical EEG monitoring equipment (XLTEK, Natus Medical Inc., Pleasanton, CA) and sampled at 500 or 512\u2009Hz.\n\n### Electrode localization\n\nPost-implantation electrode localization utilized coregistration of preoperative magnetic resonance imaging (MRI) with postoperative computed tomography (CT), as described by Dykstra et al.\u00a0(Dykstra et al., 2012). Cortical surfaces were computed with FreeSurfer (Dale et al., 1999; Fischl et al., 1999). To account for the misalignment between the MRI and CT due to the craniotomy, the locations of the grid electrodes were projected onto the cortical surface (Dykstra et al., 2012). Geodesic electrode distances, which take into account the folded geometry of the cortical surface and were used in some calculations (e.g.\u2009estimation of spatial correlation values), were estimated using a shortest paths approach on the cortical surface mesh.\n\n### Sleep spindle detection\n\nDuring the monitoring period for spontaneous seizures, the\u00a0subjects slept in the clinical environment and expressed relatively normal sleep patterns. ECoG recordings that did not have a seizure in the preceding or following 12\u2009hr were scored visually by an expert rater following the standard sleep stage classification (Silber et al., 2007). For each patient, we obtained from 15 to 101.5 min of NREM stage 2 sleep, when the\u00a0spindles are most prevalent. Individual sleep spindles were then detected during stage 2 sleep using one of several complementary methods, either based on amplitude-duration thresholding (Gais et al., 2002; Warby et al., 2014) or a similar wavelet-based approach with additional verification steps (Hagler et al., 2016). The number of spindles detected was in agreement with previous reports of spindle density (Gais et al., 2002; Warby et al., 2014).\n\nThe\u00a0results were additionally verified using a novel approach quantifying the signal-to-noise ratio (SNR) of power in the bandpass (9\u201318\u2009Hz, 8th-order Butterworth filter) versus the bandstop (1\u2013100\u2009Hz bandpass, with 9\u201318\u2009Hz bandstop) signal. In this approach, the SNR metric is calculated on short (500 ms) sliding windows in each channel. When the SNR metric reaches 0 dB, the signal and noise power are at parity, corresponding to a sharp, narrowband epoch in the recording. Picking a constant SNR threshold (5 dB) corresponds roughly to the constant false alarm rate (CFAR) technique in radar. This approach yields a conservative but approximately amplitude-invariant method for detecting arbitrary narrowband epochs in multichannel data.\n\n### Power spectral density analysis\n\nFollowing spindle detection, we made a verification analysis by calculating the average power spectral density (PSD) over isolated spindle epochs in each subject. Data were initially filtered to remove line noise artifacts, and PSDs were then calculated in 1 s intervals during the spindle and matched non-spindle epochs. PSDs for individual channel and spindle epochs were concatenated into a large array and averaged in each case. A clear peak in the 11\u201315\u2009Hz frequency band for the spindle epochs can be seen, while no peak is observed in the matched non-spindle epochs (Figure 1\u2014figure supplement 1A). Divisive normalization is calculated by dividing the power at each frequency in the spindle epochs by the power in the matched non-spindle epochs, and expressing the result in dB (Figure 1\u2014figure supplement 1A, inset). If the divisive normalization over an epoch of stage 2 sleep reached 5 dB, then the spindles were taken to be well-isolated and possessing the spectral characteristics necessary for an accurate phase representation, and were then included in further analysis. Based on this calculation, 54 individual epochs of stage 2 sleep, varying from 30 s to 35 min in duration, were selected in five clinical subjects.\n\n### Temporal filtering\n\nTemporal filtering of stage 2 sleep recordings was carried out with an 8th-order digital Butterworth bandpass filter (9\u201318\u2009Hz), forward-reverse in time to prevent phase distortion (see MATLAB function filtfilt). All results were checked with multiple cutoff frequencies to ensure against parametric sensitivity.\n\n### Spatial correlation analysis\n\nTo assess spatial correlation during spindle oscillations as a function of distance in the cortex, we adapted standard methods (Destexhe et al., 1999) with a Monte Carlo implementation more suited for sampling correlations on two-dimensional electrode arrays. To calculate this metric, one electrode is first selected at random, and a second is then selected from the set of electrodes within a binned distance $d_{i}$ from the first. The temporal correlation between these electrode pairs is then computed in the bandpass timeseries between the start and end points of the spindle. This process is repeated for a given number of iterations $N_{k}$ at each distance bin $d_{i}$, and the average spatial correlation is computed as the mean of the correlation values for the individual epochs (Figure 1\u2014figure supplement 1B, black). The spatial correlation values were computed for non-spindle epochs matched to the temporal extent of the individual tested spindle epochs (Figure 1\u2014figure supplement 1B, red). The average spatial correlation values are elevated during spindle oscillations with respect to the matched non-spindle periods of stage 2 sleep, indicating that a coherent, large-scale increase in global activity occurs during spindles, in agreement with previous studies (Destexhe et al., 1999).\n\n### Spatiotemporal dynamics\n\nTo study spatiotemporal dynamics in these neural recordings, we adapted our previously introduced method for detecting arbitrarily shaped traveling waves (Muller et al., 2014) to multisite ECoG arrays (Figure 1\u2014figure supplements 2 and 3). This approach allowed us to characterize and classify the spatiotemporal dynamics during thousands of episodes of spindling activity in many hours of sleep recordings. The method proceeds in three steps: (1) analytic signal representation for characterization of instantaneous signal characteristics at each electrode, (2) center localization at each individual oscillation cycle, and (3) quantification of the spatiotemporal pattern in each oscillation cycle as a function of distance from (or rotation about) the isolated center point. In the following, we describe in detail the method for isolating expanding and rotating waves in multichannel data.\n\nTo estimate instantaneous signal characteristics, we employ the well-known analytic signal representation. This approach entails transforming a real-valued timeseries into a complex phasor, whose modulus (length) and argument (angle) in the complex plane represent the\u00a0signal instantaneous amplitude and phase, respectively. Specifically, if $v_{x,y,t}$ is a real-valued, narrowband timeseries at a point $(x,y),x\\in[1,N_{c}],y\\in[1,N_{r}]$, where $N_{c}$ and $N_{r}$ denote the number of rows and columns, and $t\\in[1,N_{t}]$ is the sample number, then its analytic signal representation is\n\n$$\nV_{x,y,t}=v_{x,y,t}+i\u2062v^_{x,y,t}\n$$\n\nwhere $i$ is the complex unit and $f^$ denotes the Hilbert transform of a signal $f$. The instantaneous phase of $v_{x,y,t}$ is then the argument at each point in this complex sequence\n\n$$\n\u03d5_{x,y,t}=A\u2062r\u2062g\u2062(V_{x,y,t}),\n$$\n\nand instantaneous amplitude is the modulus. At several points in the analysis, results were confirmed with an FIR implementation of the Hilbert transform, in addition to the standard FFT-based approach (Marple, 1999). We evaluated phase values at a set of time points $\ud835\udcaf={t_{1},t_{2},\u2026,t_{K}}$ in each spindle near the positive oscillation peaks. The phase fields were then smoothed using a robust approach (Garcia, 2010) for center localization to reduce noise and interpolate values from missing electrodes; note that the smoothed values were not used in the calculations for detecting expanding and rotational wave patterns.\n\nThese phase values are then used to capture spatiotemporal dynamics in the multichannel data. To isolate putative expanding or rotating wave centers in each oscillation cycle, we first assess the spatial gradient of phase\n\n$$\ng\u2192_{x,y,t_{j}}\u2261-\\nabla\u2061\u03d5_{x,y,t_{j}}\n$$\n\nwith $t_{j}\\in\ud835\udcaf$. For the spatial gradient, derivatives are taken across the two dimensions of space and are approximated by the appropriate forward and centered finite differences. As in previous work, phase derivatives were implemented as multiplications in the complex plane (Feldman, 2011; Muller et al., 2014).\n\n### Detection of expanding waves\n\nTo detect expanding waves, we assess the divergence of the phase gradient field\n\n$$\nd_{x,y,t_{j}}=\\nabla\u22c5g\u2192_{x,y,t_{j}},\n$$\n\nand define the putative wave source to be that point which satisfies the arg max over space in each cycle\n\n$$\n\ud835\udcae\u2261(x,y;t_{j})=argmaxx,yd_{x,y,t_{j}},\n$$\n\nwhere $argmaxf(a,b)\u2261{a,b|\u2200p,q:f(p,q)\\leqf(a,b)}$. This step allows us to find the source for a possible expanding wave in each cycle (step 2, Figure 1\u2014figure supplement 2), about which the phase field is then evaluated to quantify the evidence for an expanding wave spatiotemporal organization (step 3, Figure 1\u2014figure supplement 2). For this next step, we calculate the circular-linear correlation coefficient $\u03c1_{\u03d5,\\delta}$ (Jammalakadaka and Sengupta, 2001;\u00a0Berens, 2009) between signal phase $\u03d5$ and radial distance $\\delta$ from the source point in the original, unsmoothed phase field\n\n$$\n\u03c1_{\u03d5,\\delta}=\\sqrt{\\frac{r_{c\\delta}^{2}+r_{s\\delta}^{2}\u22122r_{c\\delta}r_{s\\delta}r_{cs}}{1\u2212r_{cs}^{2}}},\n$$\n\nwhere $r_{c\u2062\\delta}$ represents the Pearson correlation between the cosine of the circular variable $\u03d5$ and the linear variable $\\delta$, $r_{s\u2062\\delta}$ between the sine of $\u03d5$ and the variable $\\delta$, and $r_{c\u2062s}$ between the cosine and sine of $\u03d5$. This approach allows us to quantify the strength of the spatiotemporal pattern of activity on the array in a single number, which is then compared to the value produced by repeating the calculations many times under random shuffling of the data (blue dotted line, Figure 1\u2014figure supplement 4A and Materials\u00a0and\u00a0methods \u2013 Shuffling Controls).\n\n### Detection of rotating waves\n\nAnalogous to the above case, we start by assessing the curl of the phase gradient field\n\n$$\nc\u2192_{x,y,t_{j}}=\\nabla\\timesg\u2192_{x,y,t_{j}},\n$$\n\nand defining the putative center to be that point which satisfies the arg max over space\n\n$$\n\ud835\udc9e\u2261(x,y;t_{j})=argmaxx,y||c\u2192_{x,y,t_{j}}||.\n$$\n\nThis center point then defines an anchor about which we can pass into a polar coordinate system, describing the distance $\\delta$ and rotation angle $\\theta$ about that point (step 2, Figure 1\u2014figure supplement 3). With the putative rotation center isolated in each oscillation cycle, we then proceed to calculate the circular-circular correlation coefficient $\u03c1_{\u03d5,\\theta}$ between signal phase $\u03d5$ and rotation angle $\\theta$\u00a0(Fisher, 1993; Berens, 2009) in the original, unsmoothed phase field\n\n$$\n\u03c1_{\u03d5,\\theta}=-\\frac{\\sum_{x\u2062y}sin\u2061(\u03d5_{x\u2062y}-\u03d5\u00af)\u2062sin\u2061(\\theta_{x\u2062y}-\\theta\u00af)}{\\sqrt{\\sum_{x\u2062y}sin^{2}\u2061(\u03d5_{x\u2062y}-\u03d5\u00af)\u2062sin^{2}\u2061(\\theta_{x\u2062y}-\\theta\u00af)}},\n$$\n\nwhere overbar indicates circular mean\n\n$$\n\u03d5\u00af=A\u2062r\u2062g\u2062[\\sumx\u2062ye^{i\u2062\u03d5_{x\u2062y}}].\n$$\n\nSimilar to the previous case, this number $\u03c1_{\u03d5,\\theta}$ quantifies the evidence for a\u00a0rotational wave organization on the array, which is then compared to the value derived from a random-shuffling permutation test (red dotted line, Figure 1\u2014figure supplement 4A and Materials\u00a0and\u00a0methods \u2013 Shuffling Controls). For each case, additional control analyses with simulated rotating waves embedded in noise were used to verify the robustness of our approach (Figure 1\u2014figure supplement 11). Finally, in the case that both expanding and rotational elements are detected, the pattern is classified as rotational, because sub-patterns of rotational waves tend to be detected as expanding elements (verified in Figure 1\u2014figure supplement 5; see also Materials\u00a0and\u00a0methods \u2013 Average vector field controls).\n\n### Shuffling controls\n\nTo quantify the level of spatiotemporal phase flow expected in the data by chance, we implemented a shuffling procedure to establish a permutation-based threshold for both the expanding and rotating wave measures. To do this, we shuffled the phase values in each oscillation cycle randomly across space a number of times (100 or 1000 times in initial tests, then reduced to 25 without changing results), repeating each time the same calculation as for the un-shuffled data. The 99th percentile of the resulting distribution then determines a threshold above which the value for the correlation metric (either for expanding or rotational waves, considered separately) exceeds chance, with the spatial autocorrelation erased.\n\nA possible confound resulting from this shuffling procedure is that the data intrinsically possess some spatial autocorrelation (Figure 1\u2014figure supplement 1B), which is ignored by the so-constructed permutation test. To address this point in the context of rotational wave detection, we conceived an additional permutation test control. In this second control, we considered the set of points at a Chebyshev (i.e.\u2009King\u2019s chessboard) distance $d_{i}\\in[1,d_{m}]$ from the putative rotation center, where $d_{m}$ indicates the maximum distance on the electrode array from that point. We then shuffled channels at distances $d_{i}$ for all $i$, and repeated the calculation for the rotational wave detection. The resulting permuted data have a spatial correlation function identical to that in the un-shuffled data, but with the rotational structure fully destroyed. The 99th percentile cutoff determined from this second control analysis fell within 0.01 of the originally estimated value (3% difference), validating the original shuffling permutation test employed above.\n\n### Simulated data controls\n\nUsing simulated expanding waves of the form\n\n$$\nf\u2062(t,\\delta)=A\u2062e^{i\u2062(\\omega\u2062t-\u03ba\u2062\\delta)}+\\sigma\u2062\u03b7\u2062(t),\n$$\n\nand simulated rotating waves\n\n$$\nf\u2062(t,\\theta)=A\u2062e^{i\u2062(\\omega\u2062t-\\gamma\u2062\\theta)}+\\sigma\u2062\u03b7\u2062(t),\n$$\n\nwhere $A$ is the oscillation amplitude, $\\omega$ is the oscillation angular frequency, $\u03ba$ is the wavenumber, $\\gamma$ is the polar wavenumber, and $\u03b7\u2062(t)$ is a Gaussian white noise term, we verified the robustness of our detection approach under noise of varying amplitudes. Note that $\\delta$ and $\\theta$ are defined with respect to the wave center, left unspecified for simplicity. Oscillation amplitude was set to unity, without loss of generality, and other oscillation parameters were matched to those observed during stage 2 sleep spindles. Oscillation frequency $\\omega$ was set to the average instantaneous frequency estimated from 702 spindles in Subject 1 (13.5\u2009Hz), and wavenumbers were adjusted to approximate the wavelengths observed in the data. Varying systematically the level of added noise, we ran the algorithms for detecting expanding and rotating waves described above for 25 trials at each point and recorded the algorithm\u2019s detection performance in each case (mean $\u00b1 $ SEM, Figure 1\u2014figure supplement 11C). These results illustrate the approximate invariance of our computational approach to random noise.\n\nIn another test, we systematically varied the position of the wave center on the simulated 64 electrode array, for both expanding and rotational waves (Figure 1\u2014figure supplement 11D). Parameters were set as above, and simulations were again run over 25 trials at each point. This test probed the sensitivity of the rotational detection approach to border effects, which is expected to be negligible at the encountered noise levels in comparison to the thresholds established by the permutation controls (dotted lines, Figure 1\u2014figure supplement 11D).\n\nIn a third test, we verified that the spatiotemporal patterns observed here are not due to variations in spindle frequency, which are known to occur along the rostro-caudal axis (Peter-Derex et al., 2012). To do this, we re-ran our analysis on one stage 2 sleep session containing 179 spindles in Subject 1, generating surrogate data as follows. Each electrode evolved in time according to its mean instantaneous frequency during the spindle, but with a randomized initial phase angle. These surrogate data thus possessed the same frequency content on average as in the original data, but with their spatial organization of phase removed. In this control, both rotating and expanding wave patterns were highly decreased (3.5% and 0.8% of cycles, respectively, compared to 64% and 14% in the original data).\n\n### Average vector field controls\n\nThe algorithmic classification of wave patterns in individual oscillation cycles involves several steps, and we wanted to make an independent check to verify these results. To do this, we adopted a re-centered averaging approach, shifting the vector field of propagation directions from the smoothed phase fields at each oscillation cycle to the putative rotation center (red dots, Figure 1\u2014figure supplement 5), and taking the circular mean\u00a0(Fisher, 1993; Berens, 2009) of propagation direction at each point. Performing the calculation in this way prevents regions with noise or high phase gradient magnitude from dominating the result. The obtained vector fields for rotational TPF (Figure 1\u2014figure supplement 5A) and expanding (Figure 1\u2014figure supplement 5B) waves illustrate the accuracy of the algorithm and the general validity of our classification approach in separating waves into expanding and rotational groups.\n\n### Phase map correlation analysis\n\nTo quantify the precision of repeated spatiotemporal patterns during across spindle oscillations over several minutes of data, we calculated the circular-circular correlation between phase values in individual oscillation cycles. For two phase maps $\\alpha_{x,y}$ and $\\beta_{x,y}$, the circular correlation is defined as above\u00a0(Fisher, 1993; Berens, 2009)\n\n$$\n\u03c1_{\\alpha,\\beta}=\\frac{\\sum_{x\u2062y}sin\u2061(\\alpha_{x\u2062y}-\\alpha\u00af)\u2062sin\u2061(\\beta_{x\u2062y}-\\beta\u00af)}{\\sqrt{\\sum_{x\u2062y}sin^{2}\u2061(\\alpha_{x\u2062y}-\\alpha\u00af)\u2062sin^{2}\u2061(\\beta_{x\u2062y}-\\beta\u00af)}}.\n$$\n\nThis correlation value defined between individual phase maps then constitutes elements of an $M\\timesM$ matrix $C_{i\u2062j}$, where $M$ is the number of isolated oscillation cycles in question:\n\n$$\nC_{i\u2062j}=[1\u03c1_{1,2}\u03c1_{1,3}\u03c1_{1,4}\u22ef\u03c1_{1,M}\u03c1_{2,1}1\u03c1_{2,3}\u03c1_{2,4}\u22ef\u03c1_{2,M}\u03c1_{3,1}\u03c1_{3,2}1\u03c1_{3,4}\u22ef\u03c1_{3,M}\u03c1_{4,1}\u03c1_{4,2}\u03c1_{4,3}1\u22ef\u03c1_{4,M}\u22ee\u22ee\u22ee\u22ee\u22f1\u22ee\u03c1_{M,1}\u03c1_{M,2}\u03c1_{M,3}\u03c1_{M,4}\u22ef1]\n$$\n\nwhere all elements in the diagonal and lower triangle ($C_{ij}\u2200i\\geqj$) are not considered, without loss of generality. We then construct this matrix for all cycles in an individual wave classification (all cycles, expanding, rotational), and consider the cumulative distribution function (CDF) of values in the upper triangle (Figure 3A). To construct the CDF in the permutation case (Figure 3A, purple line), we first randomly shuffled the phase maps in all spindle cycles and then proceeded with the calculation as normal.\n\n### Code availability\n\nA MATLAB toolbox for analysis of traveling waves and complex spatiotemporal dynamics in noisy multisite data is available as an open-source release on BitBucket: http://bitbucket.org/lylemuller/wave-matlab\n",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "8d49f1b3-f6bf-4af8-a937-fe1d63b3b320",
+      "submission_id": "0004893c-9a6c-4e94-b8a7-7fc7a008c7e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, University Health Network , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17267.025](https://doi.org/10.7554/eLife.17267.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Repeating circular waves enable strengthening of large-scale neural assemblies during sleep spindles in human cortex\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis work is an analysis of spindle oscillations recorded from human subdural grids placed for the purpose of localizing epileptic seizures. The authors examine the spatio-temporal structures of spindles during sleep in human, and their possible role in memory consolidation. The techniques used are developed from their earlier work where waves were found in monkey visual cortex. Used here in considering both amplitude and phase information, the authors show that spindles exhibit a sophisticated spatio-temporal structure, with the majority of spindles traveling from temporal to parietal to frontal (TPF) cortex. The authors suggest that such traveling waves could serve to facilitate spike-timing dependent plasticity between anatomically remote areas, which would otherwise be difficult due to long axonal delays. The analysis is rigorous and the application of methods to detect propagating waves to spindles is novel. Spindles are of high interest for memory consolidation, and this dataset is highly valuable.\n\nThe revision requirements are three-fold.\n\n1) An expansion and clarification of methodological aspects is needed in various places. Specific points are as follows.\n\na) Rotating spindle waves: The presented data and analyses on spindle oscillations are clear. They rely on a large dataset of spindle oscillations and the provided movies give a good sense of the observations made. However, clarifications are needed. First, the authors should incorporate a definition of what they consider as rotating and expanding waves, as well as the specific criterion used to distinguish these. Definitions should appear in the main text, and the supplementary material should include the specific criteria used for the classification of spatio-temporal patterns of activity. In the absence of this, it remains quite difficult to validate the method.\n\nThe methods present clearly the identification of the center point of the oscillation, important to perform a polar parameterization, thus essential to extract rotating or expanding waves. This step is well described and the method relies on the computation of gradients and curl. It would be important to know:\n\ni) If the authors pre-processed the data and if smoothing occurred to compute these differential elements. In particular, filtering is indicated in Figure 1\u2014figure supplement 8. Was a similar filtering used in the identification of waves? If this was not the case, how did the authors correct high frequency signals that may be amplified in the computation of differential quantities?\n\nii) Once the polar coordinate system has been derived and the phase map computed, how did the classification take place and what were the error rates accepted for this classification? The statement about the proportion of spindle oscillations classified as rotating waves of ~50% remains a little bit hard to appreciate since there are only 2 classes (plus \"complex\" waves that are those not satisfying their criteria of rotating or expanding wave). Moreover, the analysis of Figure 1\u2014figure supplement 7 provides a more contrasted view of this result: rotational waves are not necessarily the leading form of oscillation, except for subject 1 (for other subjects, spindles were generally classified as complex).\n\niii) The authors indicate that among the rotating waves, they identified a clear bias towards TPF direction of rotation. Was this observation supported by a statistical test?\n\niv) The waves observed indeed reflect a peak between 3-5 m/s, but also a very high variance. From the individual curves, it seems that we see the superposition of two speed distributions centered at distinct values. Could the authors comment on the variations of the speed value provided?\n\nb) The analysis of intra-class similarity is nicely developed. However, for the level of synchronization, it was unclear how the millisecond precision was computed. Particularly, it was unclear what was meant by \"in two cycles with the highest similarity\". Could the authors elaborate in the Methods or in the text on this choice?\n\nc) A rigorous demonstration that spindles are waves would be a highly novel finding. However, given the limited size of the dataset, and the relationship of spindles to the underlying anatomy being unclear, additional analyses and explanations are needed.\n\ni) Discrepancy with \"local spindles\", different frequencies of controparietal/frontal spindles finding, and relationship to underlying anatomy. Much previous work concludes that human spindles are \"local\" and that spindle frequencies vary between areas (i.e. Andrillon et al. 2011, Peter-Derex et al. 2012, Nir et al. 2014). However, here the statement is made that this is in fact not so and the explanation is provided that this might be due to using a threshold for detection. It is unclear how this analysis supports this statement. What would the wave-detection approach show if these spindles would in fact be local? All that is done here is to fit a field of vectors in 2D space and then to see if a curl can be fit. No goodness of fit is assessed (only that it is significant). But presumably this would also work for fields where only subsets of the vectors are fit, with the others random. Also, spindles have different frequencies depending on anatomical origin as well as in time relative to spindle onset. Could these frequency changes \"generate\" the appearance of waves (or vice-versa)?\n\nii) Structure of waves. It was unclear whether the origin (center) of waves remained constant, changed wave-by-wave or changed slowly. Figures are shown \"re-centered\", so it isn't apparent where the actual center was. Also, how sensitive is this method to edge effects, i.e., is it equally sensitive to detect centers everywhere on the array or only in the center? Overall, the location of the centers and the underlying anatomy should be clarified. The authors suggest a TPF direction of spread, so does this indicate center preferentially in temporal lobe?\n\n2) A toning down of interpretation and claims and situating the work more appropriately. That is, STDP and memory consolidation aspects aren't actually measured. Specifically:\n\na) The authors should consider adjusting their title somewhat in toning down the claims (i.e., \"\u2026 enable strengthening of large-scale neural assemblies\u2026\") to more appropriately reflect the main aspects of the paper.\n\nb) Mechanistic interpretation is not supported. The Abstract talks extensively about synapses and STDP, neither of which is measured here. This should be clarified (e.g., interesting suggestions, but cannot be assessed using this data). Same for \"spiking activity\" \u2013 all that is measured is \u03b3 band power. Statements such as \"groups of spikes\" are not supported by this data. Others have measured spindles and spikes simultaneously in humans (i.e. Andrillon et al., as cited), showing a complex relationship.\n\nc) Another suggestion is that the authors expand on their Figure 2 description/illustration. For example, could the authors say something about spindle mechanisms (RT cells and mutual inhibition etc.), and how such spikings illustrated in Figure 2 translate to EPSPs (IPSPs?). Haider et al. is cited to justify LFP and synaptic current tight couplings, but this includes IPSPs. Related to this is the consideration of different STDP rules for different cell types (e.g., see Abbott and Nelson, Nature Neuroscience 2000).\n\nIn essence, since much has been published regarding STDP, spindling mechanisms, memory consolidation etc., it would be good for the authors to put these various pieces together in their suggestions for the general reader to appreciate more fully, and so that interpretations/limitations/assumptions are clear in what is being said. As it stands, it comes across as overly simplistic regarding the timing relationships and LTP/LTD (Figure 2) and traveling waves with STDP aspects and so on.\n\n3) Clearly describing/demonstrating that a differentiation between the two types of 'waves' is possible along with what is the current consensus in the literature \u2013 'local spindles' and how it was ruled out with their analyses. This is unclear at present. Perhaps some of the unclassified waves are of that nature? That is statistics and classification are not always clear [see point (1) above].\n\nAdditional points to address:\n\ni) In general, please provide more statistical support and more information on the statistical tests and the data analysis procedures used. It is stated that the code is available on bitbucket, but when looked for by one of the reviewers, access was not possible, thus preventing a better understanding of the types of tests used.\n\nii) How were the recordings referenced? Phase analysis is highly sensitive to this.\n\niii) What Figure 4C quantifies is unclear \u2013 please clarify how this is calculated. Can one show the same data for expanding waves and show this critical analysis for multiple patients?\n",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3c4dfa47-6c6d-41bc-99bf-283f5b79efe4",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C1",
+      "claim": "During sleep, the thalamus generates a characteristic pattern of transient, 11-15 Hz sleep spindle oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "During sleep, the thalamus generates a characteristic pattern of transient, 11-15 Hz sleep spindle oscillations, which synchronize the cortex through large-scale thalamocortical loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sleep spindles and thalamic oscillations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "9b717cb4-a991-418b-9ffa-c9e72c26617f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C2",
+      "claim": "Sleep spindles synchronize the cortex through large-scale thalamocortical loops.",
+      "claim_type": "EXPLICIT",
+      "source": "During sleep, the thalamus generates a characteristic pattern of transient, 11-15 Hz sleep spindle oscillations, which synchronize the cortex through large-scale thalamocortical loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Contreras et al., 1996 in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "a25f38ac-ca06-4db1-9dfc-13b41396a9f5",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C3",
+      "claim": "Spindles are critical for sleep-dependent consolidation of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindles have been increasingly demonstrated to be critical for sleep-dependent consolidation of memory, but the specific neural mechanism for this process remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gais et al., 2002 and Mednick et al., 2013 in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "0c92d373-58df-47e5-9b08-86cb72efa4e4",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C4",
+      "claim": "The specific neural mechanism for how spindles contribute to memory consolidation remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindles have been increasingly demonstrated to be critical for sleep-dependent consolidation of memory, but the specific neural mechanism for this process remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "450be575-337b-460b-9b0f-7f6200654253",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C5",
+      "claim": "Cortical spindles are spatiotemporally organized into circular wave-like patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that cortical spindles are spatiotemporally organized into circular wave-like patterns, organizing neuronal activity over tens of milliseconds, within the timescale for storing memories in large-scale networks across the cortex via spike-time dependent plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data presented in Figure 1 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "da9a4bdc-d544-4bbc-b3f4-7acf617e64eb",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C6",
+      "claim": "Cortical spindle wave patterns organize neuronal activity over tens of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that cortical spindles are spatiotemporally organized into circular wave-like patterns, organizing neuronal activity over tens of milliseconds, within the timescale for storing memories in large-scale networks across the cortex via spike-time dependent plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the temporal analysis of wave patterns shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "1df24553-9b11-48a4-a328-0396d13a3d56",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C7",
+      "claim": "The timescale of cortical spindle wave patterns is within the timescale for storing memories via spike-time dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that cortical spindles are spatiotemporally organized into circular wave-like patterns, organizing neuronal activity over tens of milliseconds, within the timescale for storing memories in large-scale networks across the cortex via spike-time dependent plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known STDP timescales and the measured temporal organization of spindles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "f0b2323c-b332-4fa3-87b5-726c04ee4db2",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C8",
+      "claim": "Circular spindle patterns repeat over hours of sleep with millisecond temporal precision.",
+      "claim_type": "EXPLICIT",
+      "source": "These circular patterns repeat over hours of sleep with millisecond temporal precision, allowing reinforcement of the activity patterns through hundreds of reverberations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 3 showing similarity indices and temporal precision measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "e19fe704-ca08-465b-8b83-854a28b18753",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C9",
+      "claim": "Circular spindle patterns allow reinforcement of activity patterns through hundreds of reverberations.",
+      "claim_type": "EXPLICIT",
+      "source": "These circular patterns repeat over hours of sleep with millisecond temporal precision, allowing reinforcement of the activity patterns through hundreds of reverberations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 4C showing reverberation counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "a0816fd0-9b4e-4489-8c64-31e640e8b959",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C10",
+      "claim": "Memories are stored in distributed networks across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Memories are stored in distributed networks across the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "dd441bf6-e92b-4b0e-837c-5e3c4767a6f4",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C11",
+      "claim": "In the two-stage model of memory consolidation, memories are integrated in the hippocampus and then linked in the neocortex for long-term storage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two-stage model of memory consolidation (McClelland et al., 1995; Rasch and Born, 2007), memories are integrated in the hippocampus and then linked in the neocortex for long-term storage, where information represented in visual, auditory, somatosensory, or cognitive regions must be bound into a coherent whole (Wheeler et al., 2000; Horner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McClelland et al., 1995 and Rasch and Born, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "2bffb510-5dc8-43d2-94ad-bb3fadacb612",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C12",
+      "claim": "Information represented in visual, auditory, somatosensory, or cognitive regions must be bound into a coherent whole during memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two-stage model of memory consolidation (McClelland et al., 1995; Rasch and Born, 2007), memories are integrated in the hippocampus and then linked in the neocortex for long-term storage, where information represented in visual, auditory, somatosensory, or cognitive regions must be bound into a coherent whole (Wheeler et al., 2000; Horner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wheeler et al., 2000 and Horner et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "e7dac5c9-86f6-4060-ae2a-323487108ada",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C13",
+      "claim": "Sleep oscillations actively contribute to memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that sleep oscillations actively contribute to this process: during stage 2 sleep spindles, the thalamus generates a rhythmic activity pattern that becomes widespread through large-scale thalamocortical loops (Contreras et al., 1996), and spindles are critical to sleep-dependent memory consolidation (Gais et al., 2002; Mednick et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Contreras et al., 1996, Gais et al., 2002, and Mednick et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "9cfe319f-8076-4229-b7e1-0d041b3f59b5",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C14",
+      "claim": "Long-range connections in cortex result primarily from excitatory pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range connections in cortex result primarily from excitatory pyramidal cells (Sholl, 1956; Sch\u00fcz et al., 2002), but precisely how sleep oscillations aid strengthening of these excitatory connections between distributed cortical networks through spike-time dependent plasticity (STDP) remains unclear, particularly in the presence of long axonal conduction delays (Lubenov and Siapas, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sholl, 1956 and Sch\u00fcz et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "eb78e32e-839d-4358-b171-40fb3c42b113",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C15",
+      "claim": "How sleep oscillations aid strengthening of excitatory connections through STDP remains unclear, particularly in the presence of long axonal conduction delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range connections in cortex result primarily from excitatory pyramidal cells (Sholl, 1956; Sch\u00fcz et al., 2002), but precisely how sleep oscillations aid strengthening of these excitatory connections between distributed cortical networks through spike-time dependent plasticity (STDP) remains unclear, particularly in the presence of long axonal conduction delays (Lubenov and Siapas, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge, with citation to Lubenov and Siapas, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "8d688b61-41e2-4357-b97a-a491abd05a6a",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C16",
+      "claim": "50.8% of spindle oscillation cycles were classified as rotating waves.",
+      "claim_type": "EXPLICIT",
+      "source": "In 41,860 spindle oscillation cycles tested across subjects, a large proportion (50.8%) was classified as rotating waves, along with a smaller subset (15.6%) as expanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "4e62d86f-8e28-4405-aed3-1b2a925ee83c",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C17",
+      "claim": "15.6% of spindle oscillation cycles were classified as expanding waves.",
+      "claim_type": "EXPLICIT",
+      "source": "In 41,860 spindle oscillation cycles tested across subjects, a large proportion (50.8%) was classified as rotating waves, along with a smaller subset (15.6%) as expanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "b02cd790-b347-48b6-9383-00add070bf8a",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C18",
+      "claim": "Rotating waves exhibited a clear bias towards travel in the temporal \u2192 parietal \u2192 frontal (TPF) direction (69.5%, p<10\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "After inspecting these results, we observed further that the rotating waves exhibited a clear bias towards travel in the temporal \u2192 parietal \u2192 frontal (TPF) direction (69.5%, p<10\u221210, one-tail binomial test against equal occurrence, 14,796 TPF cycles, 21,272 total; for each individual subject p<10\u22123, see Figure 1\u2014source data 1 for individual wave totals) (Figure 1B and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the data and shown in Figure 1B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "2738e438-ea77-4a8c-abed-f1ba3d8d4545",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C19",
+      "claim": "Propagation speed distributions for spindle waves peaked between 2\u20135 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Propagation speed distributions peaked between 2\u20135 m/s (Figure 1C), varying within a narrow range from the 20th to the 80th percentiles (3\u20139 m/s for the full distribution; 4\u201310, 3\u20138, 3\u201310, 2\u20133, and 4\u201313 m/s for individual subjects, respectively), within the range of conduction speeds for the short (Girard et al., 2001) and long (Sch\u00fcz et al., 2002; Swadlow and Waxman, 2012) white matter association fibers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with data from all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "b4908fa4-af89-449e-a63c-be881faae255",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C20",
+      "claim": "Spindle wave propagation speeds are within the range of conduction speeds for short and long white matter association fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Propagation speed distributions peaked between 2\u20135 m/s (Figure 1C), varying within a narrow range from the 20th to the 80th percentiles (3\u20139 m/s for the full distribution; 4\u201310, 3\u20138, 3\u201310, 2\u20133, and 4\u201313 m/s for individual subjects, respectively), within the range of conduction speeds for the short (Girard et al., 2001) and long (Sch\u00fcz et al., 2002; Swadlow and Waxman, 2012) white matter association fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited literature on white matter conduction speeds.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "a515acce-fa70-4380-ac65-cb0bf247d7c2",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C21",
+      "claim": "Rotating TPF organization occurred consistently across subjects and implantation hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this rotating TPF organization occurred consistently across subjects and implantation hemispheres (Figure 1D; see also Figure 1\u2014figure supplements 5\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D and supplementary figures 5-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "11edfacf-0965-4250-9aee-05d2cce57fa1",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C22",
+      "claim": "Cortical white matter association fibers have conduction delays up to 50 milliseconds across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cortical white matter association fibers have conduction delays up to 50 milliseconds across the cortex (Figure 2A, left) (Girard et al., 2001; Sch\u00fcz et al., 2002; Swadlow and Waxman, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Girard et al., 2001, Sch\u00fcz et al., 2002, and Swadlow and Waxman, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "940bc88b-b6f9-422b-85f9-a0ea8ddb135d",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C23",
+      "claim": "Spindles cause pyramidal cells and interneurons in cortex to fire preferentially at the peak of the surface-positive (depth-negative) LFP oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that spindles cause pyramidal cells and interneurons in cortex to fire preferentially at the peak of the surface-positive (depth-negative) LFP oscillation, both in intracellular (Contreras and Steriade, 1995, 1996; Kandel and Buzs\u00e1ki, 1997) and extracellular (Peyrache et al., 2011) recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies including Contreras and Steriade, 1995, 1996, Kandel and Buzs\u00e1ki, 1997, and Peyrache et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "38324bbb-4645-49b0-b71e-efa25fa0653a",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C24",
+      "claim": "If cortical spindles were perfectly synchronized, spikes would arrive at post-synaptic targets with temporal delays leading to long-term depression.",
+      "claim_type": "EXPLICIT",
+      "source": "If cortical spindles were perfectly synchronized, spikes emitted during one cycle of the spindle oscillation would arrive at their post-synaptic targets with this temporal delay, leading to a pairing within the window for persistent long-term depression (LTD) that would progressively weaken long-range connections (Figure 2A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical inference based on STDP principles and conduction delays, illustrated in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "3eff2be1-acf5-43d9-a81e-5f7c9a3729f5",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C25",
+      "claim": "If spindles are self-organized into wave-like patterns with stereotyped trajectories, EPSPs would align with local population activity, creating conditions for synaptic strengthening.",
+      "claim_type": "EXPLICIT",
+      "source": "If, however, spindles are self-organized into large-scale wave-like activity patterns, with phase speeds matching those of the underlying fiber networks and stereotyped, precisely repeating trajectories (Figure 2B, left), then EPSPs caused by spikes traveling along pyramidal axons to distant regions in the cortex would align with the local burst of population activity (Figure 2B, right), creating the conditions necessary for synaptic strengthening to occur.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical inference illustrated in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "9060a88d-7754-41dc-9926-1a63bf84ed1b",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C26",
+      "claim": "The cumulative distribution function of similarity indices among identified rotational waves is highly shifted to the right compared to all cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative distribution function (CDF) of similarity indices among identified rotational waves is highly shifted to the right (Figure 3A, black) compared to the CDF for all cycles (5 subjects, 42/54 sleep epochs, 77.8% significant, one-tailed two-sample Kolmogorov-Smirnov test, \u03b1=0.01, Bonferroni correction), indicating higher intra-class similarity between these cycles than for other wave types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "7c6c8f4a-a36e-42a0-82a1-5a15abf57d0e",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C27",
+      "claim": "Rotating waves exhibit higher intra-class similarity than other wave types.",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative distribution function (CDF) of similarity indices among identified rotational waves is highly shifted to the right (Figure 3A, black) compared to the CDF for all cycles (5 subjects, 42/54 sleep epochs, 77.8% significant, one-tailed two-sample Kolmogorov-Smirnov test, \u03b1=0.01, Bonferroni correction), indicating higher intra-class similarity between these cycles than for other wave types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the statistical analysis of similarity indices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "5763666a-a614-41e1-ae49-816bbfcf37f4",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C28",
+      "claim": "The median similarity index increases when rotational waves of progressively increasing strength are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the median similarity index consistently increases in individual subjects when rotational waves of progressively increasing strength are considered (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B across individual subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "09f33eb8-5794-4b53-bd72-b45a0e83bf53",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C29",
+      "claim": "Rotating waves strongly modulate temporal precision in repeated patterns of population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates the observed rotating waves strongly modulate temporal precision in repeated patterns of population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing increased similarity with stronger rotating waves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "abd30a2c-a7b2-4c6d-b06d-f81ab258d51f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C30",
+      "claim": "In cycles with similarity index 0.9-1.0, 50% of electrodes experience alignment within a 5 millisecond temporal window.",
+      "claim_type": "EXPLICIT",
+      "source": "To be specific, by utilizing the average temporal frequency for these spindle oscillations (13.5 Hz), we can estimate that in two cycles whose similarity index falls into the highest bin in Figure 3C (0.9\u20131.0), 50% of electrodes will experience an alignment of the spatiotemporal activity pattern within a 5 millisecond temporal window.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the data in Figure 3C using the measured spindle frequency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "d35b7e90-dd01-401d-b1e8-cc2f4cdaad8d",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C31",
+      "claim": "Recent experiments have shown a tight temporal link between field potentials and synaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have shown a tight temporal link between field potentials and synaptic currents (both EPSPs and IPSPs; Haider et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haider et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "d32b872e-4adf-443a-8b04-53f1410a7be8",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C32",
+      "claim": "Distributed networks are repeatedly activated with millisecond accuracy well within the temporal precision required for STDP.",
+      "claim_type": "EXPLICIT",
+      "source": "By detecting these precisely recurring activity patterns in ECoG recordings, we can infer that distributed networks composed of local excitatory and inhibitory groups, whose firing is modulated by thalamocortical fibers during the sleep spindle, are repeatedly activated with a millisecond accuracy that is well within the temporal precision required for STDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the measured temporal precision of recurring patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "44da563e-d06b-4656-8f43-e4b6b6003783",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C33",
+      "claim": "High gamma-band power (HGP, 80\u2013120 Hz) is a reliable electrophysiological correlate of spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "High gamma-band power (HGP, 80\u2013120 Hz), a reliable electrophysiological correlate of spiking activity (Ray et al., 2008; Ray and Maunsell, 2011; Ray, 2015; similar in nature to the 'broadband power shift' described in Manning et al., 2009), consistently increases around spindles (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ray et al., 2008, Ray and Maunsell, 2011, Ray, 2015, and Manning et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "f45612af-ddb3-4264-8a8d-b567fec59828",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C34",
+      "claim": "High gamma-band power consistently increases around spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "High gamma-band power (HGP, 80\u2013120 Hz), a reliable electrophysiological correlate of spiking activity (Ray et al., 2008; Ray and Maunsell, 2011; Ray, 2015; similar in nature to the 'broadband power shift' described in Manning et al., 2009), consistently increases around spindles (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "d62080ba-fdfb-4fce-84ce-27c00b6eefa9",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C35",
+      "claim": "High gamma-band power is modulated by spindle phase, increasing towards the surface-positive peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, HGP is modulated by spindle phase (Figure 4B), increasing towards the surface-positive (depth-negative) peak, consistent with previous animal (Peyrache et al., 2011) and human (Andrillon et al., 2011) recordings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B and supported by citations to Peyrache et al., 2011 and Andrillon et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "b65f5362-ac6b-4e1f-810a-a0bbaefa8f8b",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C36",
+      "claim": "Similarity in the next identified rotating wave is highly predictive of the number of strong reverberations throughout the night.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by studying repeats of rotating waves over 2.5 hr of continuous sleep recording in Subject 1, we observe a preliminary indication of increased reverberation consistent with strengthening of distributed excitatory networks: similarity in the next identified rotating wave is highly predictive of the number of strong reverberations throughout the night (black dots, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C for Subject 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "ba972cfb-66b5-428e-9555-00fba5020d8e",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C37",
+      "claim": "Randomizing the relationship between the next rotating wave and the rest of the sleep recording eliminates the reverberation effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomizing the relationship between the next rotating wave and the rest of the sleep recording eliminates this effect (shuffling control, Figure 4C), and such increased reverberation is not observed for expanding waves under similar conditions (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C with shuffling control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "bdce5b79-2bf4-4e36-83aa-e9a64fd87b5f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C38",
+      "claim": "Increased reverberation is not observed for expanding waves under similar conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomizing the relationship between the next rotating wave and the rest of the sleep recording eliminates this effect (shuffling control, Figure 4C), and such increased reverberation is not observed for expanding waves under similar conditions (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "4ebff268-0dec-499f-9117-6650ab9bb9a8",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C39",
+      "claim": "Observations of increased reverberation are consistent across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations are consistent across subjects (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "53642e64-83cb-4d09-b3f1-d5dcfcde4d52",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C40",
+      "claim": "Precisely repeating rotating waves may enable strengthening of large-scale corticocortical assemblies throughout the night.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the hypothesis that precisely repeating rotating waves may enable strengthening of large-scale corticocortical assemblies throughout the night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the reverberation data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "c4871cbc-367e-4a11-8026-2600bd446292",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C41",
+      "claim": "Early animal sleep spindle studies proposed that spindles involve global synchronization of cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Early animal sleep spindle studies, using up to 8 electrodes in a linear array (Andersen et al., 1967; Kim et al., 1995; Contreras et al., 1996, 1997), in addition to preliminary EEG evidence in the human (Achermann and Borb\u00e9ly, 1998), proposed that spindles involve global synchronization of cortical circuits, raising the possibility that this sleep oscillation places neocortex into a specialized state for consolidation of long-term memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Andersen et al., 1967, Kim et al., 1995, Contreras et al., 1996, 1997, and Achermann and Borb\u00e9ly, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "e89376ab-2871-4658-87c4-a113dc946410",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C42",
+      "claim": "Several studies have reported a mixture of 'local' and 'global' spindles using amplitude-duration thresholding approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, several studies have reported a mixture of 'local' and 'global' spindles using amplitude-duration thresholding approaches (Nir et al., 2011; Andrillon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nir et al., 2011 and Andrillon et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "d3cbbebd-e229-4983-bb09-9e30cd3d60b2",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C43",
+      "claim": "A substantial number of spindle oscillation cycles are organized into global, hemisphere-spanning patterns of rotating and expanding waves.",
+      "claim_type": "EXPLICIT",
+      "source": "By carefully studying the phase information in the spindle frequency band recorded on large-scale ECoG arrays, we have uncovered that a substantial number of spindle oscillation cycles are organized into global, hemisphere-spanning patterns of rotating and expanding waves (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "4c46a80d-4de5-4111-801c-8e2adeea7fde",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C44",
+      "claim": "Global patterns are likely established through widespread thalamocortical loops.",
+      "claim_type": "EXPLICIT",
+      "source": "These global patterns are likely established through widespread thalamocortical loops, placing the cortex into a state of large-scale coherence (Contreras et al., 1996), shaped into rotating and expanding waves through corticocortical white matter connections with axonal conduction speeds consistent with the observed propagation speeds (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known thalamocortical connectivity and the observed propagation speeds, with citation to Contreras et al., 1996.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "e1232b47-2224-4662-99eb-02dc219ad854",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C45",
+      "claim": "Spindles have been specifically and causally implicated in sleep-dependent consolidation of long-term memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindles have recently been specifically and causally implicated in the sleep-dependent consolidation of long-term memories (Mednick et al., 2013; Hennies et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mednick et al., 2013 and Hennies et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "9c63425e-8f8a-487e-8c61-62a20703d7b9",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C46",
+      "claim": "Many memories integrate multimodal sensory and cognitive information and require 'global' integration of distributed networks across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While some memories integrate content from single sensory modalities, requiring consolidation in only single cortical regions (such as motor cortex, Khazipov et al., 2004), many memories integrate multimodal sensory and cognitive information (Gibson and Maunsell, 1997), and require 'global' integration of distributed networks across the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Khazipov et al., 2004 and Gibson and Maunsell, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "27aad037-5703-432d-b739-98d6f24babe3",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C47",
+      "claim": "Stereotyped activity patterns may enable STDP to establish large-scale neuronal assemblies at scales where axonal conduction delays are long relative to the oscillation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we have identified a novel mechanism by which this process could occur: the stereotyped activity patterns reported here may enable STDP to establish large-scale neuronal assemblies at scales where axonal conduction delays are long relative to the oscillation cycle (Fries, 2005; Lubenov and Siapas, 2008), and repeat many times throughout sleep with millisecond accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data, with citations to Fries, 2005 and Lubenov and Siapas, 2008.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "8e636397-1069-4d52-8c8a-fac7fd2b2578",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C48",
+      "claim": "Patients with longstanding pharmacologically resistant complex seizures gave fully informed consent according to NIH guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with longstanding pharmacologically resistant complex seizures gave fully informed consent according to NIH guidelines as monitored by the local Institutional Review Board (Massachusetts General Hospital).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's ethical procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "838ca7b2-207a-4c9d-93a2-c696b0753153",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C49",
+      "claim": "ECoG recordings during natural sleep were made over the course of clinical monitoring for spontaneous seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrocorticogram (ECoG) recordings during natural sleep were made over the course of clinical monitoring for spontaneous seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "8090ce69-32e7-4c8a-aad3-0a633985d76c",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C50",
+      "claim": "Electrode placement was determined solely by clinical criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrode placement was determined solely by clinical criteria, with electrode grids usually spanning the Sylvian fissure and multiple lobes of the cerebral cortex (frontal, parietal, and temporal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode placement methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "80a831d6-2a68-48aa-98d1-82bfe3c8d02f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C51",
+      "claim": "ECoG contacts were 3 mm platinum-iridium (90% platinum) discs arranged in a two-dimensional grid.",
+      "claim_type": "EXPLICIT",
+      "source": "ECoG contacts (Ad-Tech Medical Instrument Corp., Racine, WI) were 3 mm platinum-iridium (90% platinum) discs arranged in a two-dimensional grid (8 rows and 8 columns, Subjects 1, 3, and 4; 8 rows and 12 columns, Subject 2; 8 rows and 6 columns, Subject 5) implanted semi-chronically on the pial surface in an effort to localize the seizure origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "35fa00c6-3cb3-4e16-863f-c5a68ffbc6f7",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C52",
+      "claim": "Within the grid, electrodes were spaced 10 mm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the grid, electrodes were spaced 10 mm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode spacing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "6af1e4bd-6fec-4178-ae2f-622672aea951",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C53",
+      "claim": "Recordings were performed with clinical EEG monitoring equipment and sampled at 500 or 512 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were performed with clinical EEG monitoring equipment (XLTEK, Natus Medical Inc., Pleasanton, CA) and sampled at 500 or 512 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment and sampling rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "91a1f972-4f69-498b-9e3b-db606381c2d2",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C54",
+      "claim": "Post-implantation electrode localization utilized coregistration of preoperative MRI with postoperative CT.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-implantation electrode localization utilized coregistration of preoperative magnetic resonance imaging (MRI) with postoperative computed tomography (CT), as described by Dykstra et al. (Dykstra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode localization method with citation to Dykstra et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "50e72e3d-e8ab-4e0c-91a6-dee7ccd83caa",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C55",
+      "claim": "Cortical surfaces were computed with FreeSurfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical surfaces were computed with FreeSurfer (Dale et al., 1999; Fischl et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for computing cortical surfaces with citations to Dale et al., 1999 and Fischl et al., 1999.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "74cd7935-f910-4aa0-a01b-e5a98335d8ea",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C56",
+      "claim": "The subjects slept in the clinical environment and expressed relatively normal sleep patterns during the monitoring period.",
+      "claim_type": "EXPLICIT",
+      "source": "During the monitoring period for spontaneous seizures, the subjects slept in the clinical environment and expressed relatively normal sleep patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sleep conditions during recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "dcd00b69-0c8f-43f6-95e2-58433754ac05",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C57",
+      "claim": "ECoG recordings that did not have a seizure in the preceding or following 12 hr were scored visually by an expert rater.",
+      "claim_type": "EXPLICIT",
+      "source": "ECoG recordings that did not have a seizure in the preceding or following 12 hr were scored visually by an expert rater following the standard sleep stage classification (Silber et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sleep scoring procedure with citation to Silber et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "23df689a-c4cb-41ff-b864-af2d1172a6dd",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C58",
+      "claim": "For each patient, 15 to 101.5 min of NREM stage 2 sleep was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "For each patient, we obtained from 15 to 101.5 min of NREM stage 2 sleep, when the spindles are most prevalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the amount of stage 2 sleep data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "5f46393b-c99d-462e-a4ab-e526c6c65c3f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C59",
+      "claim": "Individual sleep spindles were detected using amplitude-duration thresholding or a wavelet-based approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual sleep spindles were then detected during stage 2 sleep using one of several complementary methods, either based on amplitude-duration thresholding (Gais et al., 2002; Warby et al., 2014) or a similar wavelet-based approach with additional verification steps (Hagler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spindle detection methods with citations to Gais et al., 2002, Warby et al., 2014, and Hagler et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "ea117ce7-5b67-436f-a094-e88087725194",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C60",
+      "claim": "The number of spindles detected was in agreement with previous reports of spindle density.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of spindles detected was in agreement with previous reports of spindle density (Gais et al., 2002; Warby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the spindle detection against previous literature with citations to Gais et al., 2002 and Warby et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "840ad496-f2fe-4aa9-be3d-4dcf831a18f8",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C61",
+      "claim": "54 individual epochs of stage 2 sleep, varying from 30 s to 35 min in duration, were selected in five clinical subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this calculation, 54 individual epochs of stage 2 sleep, varying from 30 s to 35 min in duration, were selected in five clinical subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final dataset used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "60bb8041-b698-4baf-ae5f-456379a34489",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C62",
+      "claim": "Temporal filtering was carried out with an 8th-order digital Butterworth bandpass filter (9\u201318 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal filtering of stage 2 sleep recordings was carried out with an 8th-order digital Butterworth bandpass filter (9\u201318 Hz), forward-reverse in time to prevent phase distortion (see MATLAB function filtfilt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the filtering method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "0a0f04f0-26b5-4b95-acaa-1eee34bff31f",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C63",
+      "claim": "The average spatial correlation values are elevated during spindle oscillations with respect to matched non-spindle periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The average spatial correlation values are elevated during spindle oscillations with respect to the matched non-spindle periods of stage 2 sleep, indicating that a coherent, large-scale increase in global activity occurs during spindles, in agreement with previous studies (Destexhe et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1B with citation to Destexhe et al., 1999.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "f4196c68-38be-4639-a692-220ee29b9c54",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C64",
+      "claim": "The analytic signal representation transforms a real-valued timeseries into a complex phasor whose modulus and argument represent instantaneous amplitude and phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach entails transforming a real-valued timeseries into a complex phasor, whose modulus (length) and argument (angle) in the complex plane represent the signal instantaneous amplitude and phase, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical method used for phase extraction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "a2e9e9fa-01ff-429a-b710-c4f4e9c2c7ba",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "claim_id": "C65",
+      "claim": "A MATLAB toolbox for analysis of traveling waves is available as an open-source release on BitBucket.",
+      "claim_type": "EXPLICIT",
+      "source": "A MATLAB toolbox for analysis of traveling waves and complex spatiotemporal dynamics in noisy multisite data is available as an open-source release on BitBucket: http://bitbucket.org/lylemuller/wave-matlab",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b554e84b-13d5-4c11-83a8-c703c97be025",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cortical spindles are spatiotemporally organized into circular wave-like patterns, with 50.8% classified as rotating waves and 15.6% as expanding waves. Rotating waves exhibit a directional bias (69.5% temporal\u2192parietal\u2192frontal, p<10\u207b\u00b9\u2070) with propagation speeds of 2-5 m/s, consistent across subjects and hemispheres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C21 provide converging evidence from multiple analyses (wave classification, directional bias with statistical significance, propagation speed measurements, cross-subject consistency) supported by extensive data in Figures 1 and supplements. The statistical testing is appropriate (binomial test, p<10\u207b\u00b9\u2070) and the propagation speeds match known white matter conduction velocities (C20), providing biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rotating spindle wave patterns repeat with millisecond temporal precision over hours of sleep. Rotating waves show significantly higher intra-class similarity than other wave types (77.8% of epochs significant, KS test, \u03b1=0.01), with stronger rotating waves exhibiting greater temporal precision (5 ms alignment window for highest similarity cycles).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 demonstrate temporal precision through rigorous statistical analysis (Kolmogorov-Smirnov test with Bonferroni correction) and quantitative similarity metrics shown in Figure 3. The calculation linking similarity index to temporal precision (C30) is mathematically sound, using the measured spindle frequency (13.5 Hz). The inference about STDP-compatible precision (C32) is reasonable given the measured timescales.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Similarity in the next rotating wave predicts the number of strong reverberations throughout the night in Subject 1, with this effect eliminated by shuffling controls and not observed for expanding waves. Similar observations are consistent across subjects, supporting the hypothesis that rotating waves enable strengthening of corticocortical assemblies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C36-C39 show data supporting increased reverberation with appropriate controls (shuffling, expanding wave comparison, cross-subject consistency in Figure 4 and supplements), the result is described as 'preliminary' with data primarily from Subject 1. The mechanistic claim (C40) remains speculative as no direct evidence of synaptic strengthening is provided. Additional subjects and direct plasticity measurements would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose a theoretical mechanism whereby rotating spindle waves with stereotyped trajectories could enable STDP-mediated synaptic strengthening despite long axonal conduction delays (up to 50 ms), in contrast to synchronized spindles which would cause long-term depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 present a logically coherent theoretical framework supported by established knowledge about STDP, axonal conduction delays, and neuronal firing during spindles (C23 with multiple citations). The theoretical predictions (C24, C25) are illustrated in Figure 2 and are consistent with the measured wave properties (C7). However, this remains a theoretical proposal requiring experimental validation of actual synaptic changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "999f69b4-c9ad-4993-9596-0cb4c3ebe934",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "High gamma-band power (80-120 Hz), a correlate of spiking activity, consistently increases around spindles and is modulated by spindle phase, increasing toward the surface-positive peak, consistent with previous animal and human recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are well-supported by data in Figure 4A-B and Figure 4\u2014figure supplement 3, with appropriate citations establishing HGP as a spiking correlate (C33). The phase modulation finding (C35) is consistent with prior literature (Peyrache et al., 2011; Andrillon et al., 2011), providing validation. This result supports the link between field potential patterns and neuronal activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "94584be5-0c77-47b9-927f-7909b913e6bb",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A substantial number of spindle oscillation cycles are organized into global, hemisphere-spanning patterns of rotating and expanding waves, likely established through widespread thalamocortical loops and shaped by corticocortical connections. This extends prior work proposing global spindle synchronization and recent reports of mixed local/global spindles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by data in Figure 1\u2014figure supplement 7 showing hemisphere-spanning patterns. The mechanistic interpretation (C44) is a reasonable inference based on known thalamocortical connectivity (Contreras et al., 1996) and the measured propagation speeds matching white matter conduction velocities. The contextualization with prior work (C41-C42) is appropriately cited and positions the findings within existing literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "c58de15f-39ab-4311-ac46-2c6552c85714",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that stereotyped rotating wave patterns provide a novel mechanism for how spindles contribute to memory consolidation by enabling STDP to establish large-scale neuronal assemblies despite long axonal conduction delays, addressing a previously unclear aspect of sleep-dependent memory consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C47 presents a mechanistically plausible proposal supported by the observed wave patterns and temporal precision, it remains speculative (marked as SPECULATION in evidence_type). Claims C3, C13, C45 establish the importance of spindles for memory consolidation through citations, and C4, C15 identify the knowledge gap. However, no direct evidence linking the observed wave patterns to actual memory consolidation or synaptic plasticity changes is provided. This is a hypothesis requiring future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "6e6f93a1-332f-4564-b6c7-186702842f75",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study used ECoG recordings from five epilepsy patients during natural sleep, with electrode placement determined by clinical criteria. Data collection, processing, and spindle detection methods are described, yielding 54 epochs of stage 2 sleep (15-101.5 min per patient) with spindle detection validated against previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C62 provide comprehensive methodological details with appropriate citations for established techniques (electrode localization C54, cortical surface computation C55, sleep scoring C57, spindle detection C59-C60). The validation of spindle detection against prior literature (C60) strengthens confidence in the data. However, the use of epilepsy patients is a limitation not explicitly addressed in these claims, though electrode placement was clinically determined (C50), potentially affecting coverage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "3aae79f3-c153-4085-8341-abba0a04b5ef",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial correlation values are elevated during spindle oscillations compared to non-spindle periods, indicating large-scale coherent activity. The analytic signal representation was used for phase extraction, and analysis code is publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by data in Figure 1\u2014figure supplement 1B with appropriate citation (Destexhe et al., 1999). The mathematical method (C64) is standard and correctly described. Code availability (C65) supports reproducibility. These are appropriate validation and methodological transparency measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    },
+    {
+      "id": "92539ea9-06a7-43bc-bafd-02d1502bb989",
+      "content_id": "195b3cb1-7805-43cf-bea1-6e549145037b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about sleep spindles, memory consolidation, and cortical connectivity, including that thalamus generates 11-15 Hz spindle oscillations that synchronize cortex, spindles are critical for memory consolidation, and long-range cortical connections result from excitatory pyramidal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C12, C14 represent established knowledge appropriately supported by citations to foundational literature (Contreras et al., 1996; McClelland et al., 1995; Rasch and Born, 2007; Wheeler et al., 2000; Horner et al., 2015; Sholl, 1956; Sch\u00fcz et al., 2002). These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:33:19.275354Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "450be575-337b-460b-9b0f-7f6200654253",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "da9a4bdc-d544-4bbc-b3f4-7acf617e64eb",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "8d688b61-41e2-4357-b97a-a491abd05a6a",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "4e62d86f-8e28-4405-aed3-1b2a925ee83c",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "b02cd790-b347-48b6-9383-00add070bf8a",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "2738e438-ea77-4a8c-abed-f1ba3d8d4545",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "b4908fa4-af89-449e-a63c-be881faae255",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "a515acce-fa70-4380-ac65-cb0bf247d7c2",
+      "result_id": "b554e84b-13d5-4c11-83a8-c703c97be025"
+    },
+    {
+      "claim_id": "f0b2323c-b332-4fa3-87b5-726c04ee4db2",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "9060a88d-7754-41dc-9926-1a63bf84ed1b",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "7c6c8f4a-a36e-42a0-82a1-5a15abf57d0e",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "5763666a-a614-41e1-ae49-816bbfcf37f4",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "09f33eb8-5794-4b53-bd72-b45a0e83bf53",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "abd30a2c-a7b2-4c6d-b06d-f81ab258d51f",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "d32b872e-4adf-443a-8b04-53f1410a7be8",
+      "result_id": "a14321e1-7e18-40f1-92ed-e9ffa66e20e7"
+    },
+    {
+      "claim_id": "b65f5362-ac6b-4e1f-810a-a0bbaefa8f8b",
+      "result_id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf"
+    },
+    {
+      "claim_id": "ba972cfb-66b5-428e-9555-00fba5020d8e",
+      "result_id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf"
+    },
+    {
+      "claim_id": "bdce5b79-2bf4-4e36-83aa-e9a64fd87b5f",
+      "result_id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf"
+    },
+    {
+      "claim_id": "4ebff268-0dec-499f-9117-6650ab9bb9a8",
+      "result_id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf"
+    },
+    {
+      "claim_id": "53642e64-83cb-4d09-b3f1-d5dcfcde4d52",
+      "result_id": "d3329ebf-5373-4ed3-9fa8-7ac2a672f2cf"
+    },
+    {
+      "claim_id": "38324bbb-4645-49b0-b71e-efa25fa0653a",
+      "result_id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511"
+    },
+    {
+      "claim_id": "3eff2be1-acf5-43d9-a81e-5f7c9a3729f5",
+      "result_id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511"
+    },
+    {
+      "claim_id": "1df24553-9b11-48a4-a328-0396d13a3d56",
+      "result_id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511"
+    },
+    {
+      "claim_id": "11edfacf-0965-4250-9aee-05d2cce57fa1",
+      "result_id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511"
+    },
+    {
+      "claim_id": "940bc88b-b6f9-422b-85f9-a0ea8ddb135d",
+      "result_id": "c6a8a9f4-cfc6-4abe-91a2-94e751e19511"
+    },
+    {
+      "claim_id": "f45612af-ddb3-4264-8a8d-b567fec59828",
+      "result_id": "999f69b4-c9ad-4993-9596-0cb4c3ebe934"
+    },
+    {
+      "claim_id": "d62080ba-fdfb-4fce-84ce-27c00b6eefa9",
+      "result_id": "999f69b4-c9ad-4993-9596-0cb4c3ebe934"
+    },
+    {
+      "claim_id": "44da563e-d06b-4656-8f43-e4b6b6003783",
+      "result_id": "999f69b4-c9ad-4993-9596-0cb4c3ebe934"
+    },
+    {
+      "claim_id": "d3cbbebd-e229-4983-bb09-9e30cd3d60b2",
+      "result_id": "94584be5-0c77-47b9-927f-7909b913e6bb"
+    },
+    {
+      "claim_id": "4c46a80d-4de5-4111-801c-8e2adeea7fde",
+      "result_id": "94584be5-0c77-47b9-927f-7909b913e6bb"
+    },
+    {
+      "claim_id": "c4871cbc-367e-4a11-8026-2600bd446292",
+      "result_id": "94584be5-0c77-47b9-927f-7909b913e6bb"
+    },
+    {
+      "claim_id": "e89376ab-2871-4658-87c4-a113dc946410",
+      "result_id": "94584be5-0c77-47b9-927f-7909b913e6bb"
+    },
+    {
+      "claim_id": "27aad037-5703-432d-b739-98d6f24babe3",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "a25f38ac-ca06-4db1-9dfc-13b41396a9f5",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "0c92d373-58df-47e5-9b08-86cb72efa4e4",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "e7dac5c9-86f6-4060-ae2a-323487108ada",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "eb78e32e-839d-4358-b171-40fb3c42b113",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "e1232b47-2224-4662-99eb-02dc219ad854",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "9c63425e-8f8a-487e-8c61-62a20703d7b9",
+      "result_id": "c58de15f-39ab-4311-ac46-2c6552c85714"
+    },
+    {
+      "claim_id": "8e636397-1069-4d52-8c8a-fac7fd2b2578",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "838ca7b2-207a-4c9d-93a2-c696b0753153",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "8090ce69-32e7-4c8a-aad3-0a633985d76c",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "80a831d6-2a68-48aa-98d1-82bfe3c8d02f",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "35fa00c6-3cb3-4e16-863f-c5a68ffbc6f7",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "6af1e4bd-6fec-4178-ae2f-622672aea951",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "91a1f972-4f69-498b-9e3b-db606381c2d2",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "50e72e3d-e8ab-4e0c-91a6-dee7ccd83caa",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "74cd7935-f910-4aa0-a01b-e5a98335d8ea",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "dcd00b69-0c8f-43f6-95e2-58433754ac05",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "23df689a-c4cb-41ff-b864-af2d1172a6dd",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "5f46393b-c99d-462e-a4ab-e526c6c65c3f",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "ea117ce7-5b67-436f-a094-e88087725194",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "840ad496-f2fe-4aa9-be3d-4dcf831a18f8",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "60bb8041-b698-4baf-ae5f-456379a34489",
+      "result_id": "6e6f93a1-332f-4564-b6c7-186702842f75"
+    },
+    {
+      "claim_id": "0a0f04f0-26b5-4b95-acaa-1eee34bff31f",
+      "result_id": "3aae79f3-c153-4085-8341-abba0a04b5ef"
+    },
+    {
+      "claim_id": "f4196c68-38be-4639-a692-220ee29b9c54",
+      "result_id": "3aae79f3-c153-4085-8341-abba0a04b5ef"
+    },
+    {
+      "claim_id": "a2e9e9fa-01ff-429a-b710-c4f4e9c2c7ba",
+      "result_id": "3aae79f3-c153-4085-8341-abba0a04b5ef"
+    },
+    {
+      "claim_id": "3c4dfa47-6c6d-41bc-99bf-283f5b79efe4",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    },
+    {
+      "claim_id": "9b717cb4-a991-418b-9ffa-c9e72c26617f",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    },
+    {
+      "claim_id": "a0816fd0-9b4e-4489-8c64-31e640e8b959",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    },
+    {
+      "claim_id": "dd441bf6-e92b-4b0e-837c-5e3c4767a6f4",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    },
+    {
+      "claim_id": "2bffb510-5dc8-43d2-94ad-bb3fadacb612",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    },
+    {
+      "claim_id": "9cfe319f-8076-4229-b7e1-0d041b3f59b5",
+      "result_id": "92539ea9-06a7-43bc-bafd-02d1502bb989"
+    }
+  ],
+  "comparisons": []
+}

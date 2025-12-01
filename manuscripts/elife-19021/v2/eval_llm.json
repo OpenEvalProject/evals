@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors developed a pan-neuronal calcium imaging system utilizing wide-field illumination with post-acquisition deconvolution, enabling fast acquisition (20 fps) with minimal photo-toxicity for up to 45 minutes. The system uses nuclear-targeted ratiometric indicators and incorporates GPU-based 3D deconvolution and GVF-based cell tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21, C75-C76 describe the technical specifications and design choices of the imaging system. The methodological details are internally consistent, supported by appropriate citations (Bruce and Butte, 2013; Li et al., 2007; Schr\u00f6del et al., 2013), and validated by the successful acquisition of calcium imaging data presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C68"
+    ],
+    "result": "Pan-neuronal calcium imaging successfully recapitulated previously reported thermosensation circuitry, detecting strong cultivation temperature-dependent calcium signals in AFD thermosensory neurons and smaller signals in AIY interneurons during gradual temperature increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 demonstrate validation of the imaging approach by reproducing known thermosensory responses in AFD and AIY neurons, consistent with prior work (Clark et al., 2006). Claim C68 appropriately summarizes this validation. The data in Figure 1C and supplementary figures support these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C69"
+    ],
+    "result": "Pan-neuronal screening identified previously unreported thermosensory neurons including RIS, which showed broad, temperature-dependent calcium signals starting ~3\u00b0C above cultivation temperature, and RMDV/SMDV neurons, which showed negative correlation to AFD/RIS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 present novel findings from the pan-neuronal screen, supported by calcium imaging data in Figure 1C and Figure 1\u2014figure supplement 2. The RIS neuron finding is particularly notable given its prior association only with quiescence (C26, Turek et al., 2013). Claim C69 appropriately summarizes these discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Using a focused 1440 nm infrared laser to deliver rapid noxious thermal stimuli (23\u00b0C to 33\u00b0C in tens of milliseconds), the authors identified neurons responding to thermal nociception, with AFD showing the strongest positive correlation, FLP and AIY showing weaker positive correlations, and RIS/RMDV/SMDV not responding consistently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C71-C73 describe the noxious thermal stimulation method and resulting neuronal responses. The 1440 nm wavelength choice is appropriately justified (C71, Smith et al., 2009). The calcium imaging data in Figure 2A-B support the differential neuronal responses. The stimulus parameters and behavioral consequences (C72-C73) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "AWC neurons showed asymmetric responses to noxious thermal stimuli: one AWC (identified as AWCOFF) produced deterministic positive signals that adapted to repeated heating, while the other AWC (AWCON) produced deterministic negative signals without adaptation. This represents a novel role for AWC asymmetry in noxious thermosensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C38-C41 describe the discovery of AWC asymmetry in thermal nociception. The calcium imaging data with cell-specific markers (Figure 2C, Figure 2\u2014figure supplement 1) clearly demonstrate opposite correlations and differential adaptation patterns. This finding is novel as AWC was previously implicated only in chemosensation and thermosensation (C35), not noxious thermosensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In nsy-1 and nsy-7 mutants with disrupted AWC asymmetry, calcium imaging revealed that both AWC neurons in nsy-1 (AWCON-like) correlated negatively with noxious thermal stimuli, while both AWCs in nsy-7 (AWCOFF-like) correlated positively, with AFD responses remaining normal in both mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate that AWC functional asymmetry in thermal nociception depends on the same genetic pathways (nsy-1, nsy-7) that establish AWC asymmetry in chemosensation. The calcium imaging data in Figure 3A-B and Figure 3\u2014figure supplement 1 clearly show the predicted reversal of asymmetry patterns while AFD remains unaffected, providing strong genetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Behavioral analysis during plate-heating assays revealed that nsy-1 mutants showed significantly reduced turning behavior and lacked adaptation in turning and reversal behaviors across repeated heating phases, patterns that matched the calcium transient adaptation observed in AWCOFF but not AWCON neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 connect calcium imaging observations to behavioral outputs. The behavioral data in Figure 4A-C demonstrate reduced turning in nsy-1 and lack of behavioral adaptation matching the calcium signal patterns. Claim C50 appropriately infers the connection between neural and behavioral adaptation, though this remains correlative rather than mechanistically proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Detailed behavioral transition analysis revealed that nsy-1 mutants showed reduced forward-to-reversal (FR) transition rates during noxious heating, with FR transitions in wild-type and nsy-7 adapting over repeated heating phases but not in nsy-1. The authors infer that AWCOFF is responsible for accelerating FR transitions and their adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 present detailed behavioral transition analysis (Figure 4D, Figure 4\u2014figure supplement 2) revealing subtle phenotypes masked in simple behavioral fractions. The parallel between FR transition adaptation and AWCOFF calcium signal adaptation (C57) is compelling. However, C58 represents an inference rather than direct demonstration\u2014the connection is correlative and alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Single-worm laser ablation experiments demonstrated that nsy-1 mutants and worms with AWCOFF ablated showed 5-fold reduced reversal duration after noxious thermal stimulation at 50 mA, while AWCON ablation had no effect. This reduction was rescued at higher laser intensities, confirming AWCOFF is required and sufficient for thermal avoidance at standard stimulus intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide strong causal evidence through laser ablation (Figure 5A-B). The genetic (nsy-1) and ablation approaches converge on the same conclusion. The intensity-dependent rescue (C61) suggests threshold effects or alternative pathways. The 'required and sufficient' conclusion (C64) is well-supported for the specific conditions tested (50 mA), though C65 appropriately notes limitations at higher intensities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "At higher laser intensities, worms with AWCOFF or both AWCs ablated showed increased reversal duration, suggesting the presence of another thermal nociceptive signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is explicitly labeled as speculation in the evidence. While the observation of intensity-dependent effects is data-supported, the interpretation of 'another thermal nociceptive signaling pathway' is speculative without further characterization. This represents an interesting observation requiring follow-up work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C66",
+      "C67",
+      "C70"
+    ],
+    "result": "The authors conclude that AWCOFF neuron is essential and sufficient for noxious heat sensation and subsequent avoidance behavior, playing a critical role in sensing/processing thermal nociception. This function parallels AWCOFF's role in olfactory sensation where it detects odor removal and activates reversal and omega turn behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C17, C66-C67, C70 represent the main conclusions integrating calcium imaging, genetic, and ablation data. The convergent evidence from multiple experimental approaches (imaging, mutants, ablations) strongly supports AWCOFF's essential role. The parallel to olfactory function (C66-C67, Chalasani et al., 2007) provides additional context, though the mechanistic connection between sensory modalities remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors acknowledge limitations of nuclear-localized calcium indicators, noting they miss functional signals in the cytoplasm and fail to detect signals in some interneurons like RIA where activity occurs in neurites and cell body rather than nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent appropriate acknowledgment of methodological limitations. The RIA observation (C78) is consistent with prior reports (C79, Hendricks et al., 2012). These limitations are honestly reported and do not undermine the main findings, as the authors successfully detected signals in sensory and motor neurons relevant to their conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Most worms survived the calcium imaging conditions and showed no behavioral defects a few hours after transfer back to NGM plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 addresses an important control regarding the physiological relevance of the imaging conditions. The observation that worms recover without behavioral defects supports that the imaging protocol does not cause lasting damage that would confound interpretation of the neural activity measurements.",
+    "result_type": "MINOR"
+  }
+]

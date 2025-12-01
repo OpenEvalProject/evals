@@ -1,0 +1,2281 @@
+{
+  "submission": {
+    "id": "dd4758c3-60ca-408d-8b2c-bf6316aaaa59",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:32:30.561528Z",
+    "updated_at": "2025-11-30T20:32:30.561528Z"
+  },
+  "content": [
+    {
+      "id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "submission_id": "dd4758c3-60ca-408d-8b2c-bf6316aaaa59",
+      "content_type": "manuscript",
+      "content_text": "# Co-transcriptional R-loops are the main cause of estrogen-induced DNA damage\n\n## Authors\n\n- Caroline Townsend Stork<sup>1</sup>\n- Michael Bocek<sup>1</sup>\n- Madzia P Crossley<sup>1</sup>\n- Julie Sollier<sup>1</sup>\n- Lionel A Sanz<sup>2</sup>\n- Fr\u00e9d\u00e9ric Ch\u00e9din<sup>2</sup>\n- Tomek Swigut<sup>1</sup>\n- Karlene A Cimprich<sup>1</sup> ([ORCID: 0000-0002-1937-2969](https://orcid.org/0000-0002-1937-2969)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Systems Biology Stanford University School of Medicine Stanford United States\n2. Department of Molecular and Cellular Biology University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe hormone estrogen (E2) binds the estrogen receptor to promote transcription of E2-responsive genes in the breast and other tissues. E2 also has links to genomic instability, and elevated E2 levels are tied to breast cancer. Here, we show that E2 stimulation causes a rapid, global increase in the formation of R-loops, co-transcriptional RNA-DNA products, which in some instances have been linked to DNA damage. We show that E2-dependent R-loop formation and breast cancer rearrangements are highly enriched at E2-responsive genomic loci and that E2 induces DNA replication-dependent double-strand breaks (DSBs). Strikingly, many DSBs that accumulate in response to E2 are R-loop dependent. Thus, R-loops resulting from the E2 transcriptional response are a significant source of DNA damage. This work reveals a novel mechanism by which E2 stimulation leads to genomic instability and highlights how transcriptional programs play an important role in shaping the genomic landscape of DNA damage susceptibility.\n\n## Introduction\n\nThe hormone estrogen (E2, 17\u03b2-estradiol) is essential for the development and function of mammary tissue (Bieche et al., 2001), stimulating a transcriptional program that drives breast cell proliferation. Paradoxically, E2 exposure is also associated with an elevated risk of breast carcinogenesis (Liehr, 2000; Yager and Davidson, 2006). Specifically, higher E2 serum concentrations and longer lifetime E2 exposure are both positively correlated with an increased incidence of sporadic breast cancer (Clemons and Goss, 2001; Colditz, 1998; Hilakivi-Clarke et al., 2002). Breast cancers exhibit a large number of chromosomal abnormalities, including mutations and copy number alterations (Nik-Zainal et al., 2016). Moreover, E2 leads to DNA damage in breast epithelial cells that express the estrogen receptor (ER) (Liehr, 2000; Williamson and Lees-Miller, 2011), and in rat models, E2 stimulation is causally linked to chromosome instability and aneuploidy (Li et al., 2004). Despite strong links between estrogen and genomic instability, the molecular mechanism by which E2 causes this instability in breast cancer is unclear.\n\nFunctionally, E2 is a key transcriptional regulator that governs the expression of thousands of genes in breast cells (Cheung and Kraus, 2010; Hah et al., 2011) through its association with the nuclear hormone receptors ER-\u03b1 and ER-\u03b2. Upon translocation into the nucleus, the E2-ER complex binds to estrogen-response elements or to other transcription factors, thus altering gene expression (Marino et al., 2006). Among the genes induced by E2 are a number that are important for cell proliferation (Gong et al., 2014). Thus, one proposed model to explain E2-induced genome instability is that the uncontrolled proliferation driven by deregulation of genes such as Cyclin D1 causes replication stress and DNA damage (Caldon, 2014; Halazonetis et al., 2008). However, another relatively unexplored hypothesis is that the dramatic increase in\u00a0transcription itself contributes to E2-induced DNA damage.\n\nCo-transcriptional structures known as R-loops form upon hybridization of nascent RNA with the template DNA strand and are prevalent in mammalian genomes. These structures are proposed to serve regulatory roles in the cell including the patterning of promoter chromatin and the facilitation of transcription termination (Ginno et al., 2012; Skourti-Stathaki et al., 2011). In certain contexts, however, R-loops may serve as precursors for DSBs. The coordinated cleavage of an R-loop at the switch region in B-cells facilitates recombination and generates antibody diversity (Santos-Pereira and Aguilera, 2015; Yu et al., 2003). Changes in R-loop levels, moreover, are clearly associated with increased DNA damage and genomic instability. For example, the loss of RNA processing and R-loop regulatory factors results in an increase in R-loops and R-loop-dependent DNA damage in both yeast and human cells (Garcia-Rubio et al., 2015; Huertas and Aguilera, 2003; Li and Manley, 2005; Paulsen et al., 2009; Sollier et al., 2014; Tuduri et al., 2009). Additionally, highly transcribed loci may be more prone to R-loop formation. This is evidenced by the enrichment of R-loops at rDNA repeats (El Hage et al., 2010) and the binding of the R-loop suppressing factor Npl3 preferentially at the most highly transcribed genes (Santos-Pereira et al., 2013).\n\nWhile many studies have shown that the absence of RNA processing factors can lead to R-loop-dependent DNA damage, little is known about how more physiological changes, such as those induced by hormones or environmental stimuli, may influence R-loop formation and DNA damage in human cells. Dramatic and rapid changes in gene expression could challenge co-transcriptional processing pathways resulting in R-loop formation. Here, we tested whether the formation of R-loops following increased gene expression is a source of E2-induced DNA damage in ER-positive breast epithelial cells. We report that E2 treatment leads to a dramatic increase in R-loops, most strongly at E2-responsive genes. E2-responsive genes, moreover, are enriched in breast cancer rearrangements. We find that E2 treatment also leads to a significant increase in DNA replication- and transcription-dependent DNA damage signaling and DSBs through an R-loop dependent process. Collectively, our data indicate that physiological changes in transcription can drive R-loop formation to promote genomic instability in human cells.\n\n## Results\n\n### E2 induces transcription and replication-dependent DSBs\n\nWe first sought to characterize the DNA damage that arises in response to E2 stimulation in ER-positive breast epithelial cells (Williamson and Lees-Miller, 2011). To do so, we examined phosphorylation of the histone variant H2AX (P-H2AX), a marker of DNA damage, after treatment of hormone-starved MCF7 cells with different doses of E2. We observed a clear, dose-dependent increase in P-H2AX intensity 24\u2009hr after E2 addition (Figure 1A,B). E2 treatment also resulted in an increase in 53BP1 foci (Figure 1\u2014figure supplement 1), another marker of damaged DNA. Hormone-free culture conditions cause ER-positive cells to withdraw from the cell cycle, and low P-H2AX levels arise during normal DNA replication (Mirzoeva and Petrini, 2003). Thus, we asked whether an increase in the percentage of cells in S phase following E2 stimulation could account for the increased P-H2AX signal. Notably, cells treated with 1 or 100 nM E2 had similar cell cycle profiles (Figure 1\u2014figure supplement 2), despite significantly different P-H2AX levels, suggesting that the increase in DNA damage was not due to differences in the S phase population. Importantly, ER-negative MCF10A breast epithelial cells showed no significant change in P-H2AX signal when treated with 100 nM E2 (Figure 1\u2014figure supplements 3A,B), consistent with the previous finding that E2-induced DNA damage depends on the ER (Williamson and Lees-Miller, 2011). We also asked if E2 treatment leads to an increase in DSBs or if the observed changes in DNA damage response (DDR) signaling are induced by some alternative mechanism. The neutral comet assay provided direct evidence that E2 leads to DSB formation (Figure 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-v2.jpg)\n\n**Figure 1.:** (A) Immunostaining for P-H2AX in MCF7 cells treated with 0, 1, 10, or 100 nM E2 for 24\u2009hr. (B) Quantification of P-H2AX immunostaining for data shown in (A), ****p<0.0001. n\u00a0=\u00a02 biological replicates. (C) Neutral comet assay in MCF7 cells treated with 0, 10, or 100 nM E2 for 24\u2009hr. (D) Quantification of the\u00a0neutral comet tail moment for data in (C). ****p<0.0001. n\u00a0=\u00a04 biological replicates. \u226550 comets/condition. (E) Quantification of P-H2AX immunostaining per nucleus in cells treated with 0, 10 or 100 nM E2 for indicated time prior to fixation. min = minutes, h = hours. ****p<0.0001. n\u00a0=\u00a03 biological replicates. (F) Quantification of the percent of P-H2AX positive cells and EdU staining in cells treated with 0 or 100 nM E2 for the indicated time. Cells were pulsed for 30 min with 10 \u03bcM EdU prior to fixation. Error bars represent SD of 2 biological replicates. (G) Immunostaining for EdU and P-H2AX for the experiment described in (F). (H) Quantification of P-H2AX immunostaining per nucleus in cells treated with 0 or 100 nM E2 concurrently with DMSO or 1 \u03bcM Cdc7 inhibitor PHA 767491 for 14\u2009hr. Cells were pulsed with 10 \u03bcM\u00a0EdU 30 min prior to fixation. n\u00a0=\u00a03 biological replicates. (I) Quantification of P-H2AX immunostaining in MCF7 cells treated with 0 or 100 nM E2 for 12\u2009hr prior to the addition of 0.8 \u03bcM flavopiridol or DMSO for 2\u2009hr. Cells were pulsed with 10 \u03bcM EdU for 30 min prior to harvesting. ****p<0.0001. n\u00a0=\u00a03 biological replicates. For all graphs: box and whiskers represent 25\u201375 and 10\u201390 percentiles, respectively. The line represents the median value. a.u. = arbitrary units. Associated p-values are from non-parametric Mann-Whitney rank sum t-test. >1000 cells/condition unless noted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Nuclei stained with Hoechst.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cells were pulsed with 25 \u03bcM BrdU for 30 min prior to fixation. DNA content is marked by propidium iodide (x-axis) and BrdU incorporation is shown on the y-axis. The percentage of cells in each of the four cell-cycle quadrants is shown.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Quantification of P-H2AX immunostaining in MCF10A cells treated with 0 or 100 nM E2 for 24\u2009hr. ns\u00a0=\u00a0not significant (non-parametric Mann-Whitney rank sum t-test). n\u00a0= 3 biological replicates. >250 cells/condition. a.u.\u00a0= arbitrary units. (B) Western blot for ER-\u03b1 in MCF10A and MCF7 cells.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** h\u00a0=\u00a0hours. Errors bars represent SD of 2 biological replicates.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Quantification of the percent of cells positive for EdU incorporation for cells treated with 0 or 100 nM E2 concurrently with DMSO or 1 \u03bcM Cdc7 inhibitor PHA 767491 for 14\u2009hrs. Cells were pulsed with EdU 30 min prior to fixation. Errors bars represent the SD of 3 biological replicates. (B) Western blot of Ser2 CTD phosphorylation (pSer2) of RNA Pol II in MCF7 cells treated with 100 nM E2 concurrently with either control,1 \u03bcM Cdc7 inhibitor PHA 767491 for 14\u2009hr, or 0.8 \u03bcM flavopiridol for 2\u2009hrs.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Cells were pulsed with 10 \u03bcm EdU for 30 min prior to harvesting. Error bars represent the SD of 3 biological replicates.\n\nPrevious studies have shown that E2 induces the rapid and transient formation of DNA breaks necessary for transcriptional induction at E2 promoters, and these breaks have been reported to be dependent upon the activity of TopoII\u03b2 and APOBEC3B (Ju et al., 2006; Periyasamy et al., 2015). When we examined this early response to E2, we found that the P-H2AX signal resulting from 24\u2009hr of E2 stimulation was significantly greater than the signal resulting from very short (10\u201340 min) treatments, raising the possibility that the later DNA breaks arise through a different mechanism (Figure 1E). Given that a significant portion of cells would have entered S-phase by the 24-hr time point, we asked whether DNA replication was associated with E2-induced damage by pulsing cells with EdU at various times after E2 addition and monitoring H2AX phosphorylation. The percentage of P-H2AX positive cells increased dramatically after 16 and 24\u2009hr, and the majority of these cells were EdU positive (Figure\u00a01\u00a0F,G, and Figure 1\u2014figure supplement 4). This finding strongly suggests that E2-induced DNA damage may require DNA replication. Indeed, when we treated E2-stimulated cells with a Cdc7 inhibitor (PHA 767491) that largely blocks S phase entry (Figure 1\u2014figure supplement 5A), we found that the DNA damage was reduced (Figure 1H). At the 1 \u03bcM dose of PHA 767491 used, phosphorylation of RNA\u00a0Pol II at Ser2 by Cdk9 was not inhibited, indicating the effect on P-H2AX is not a result of inhibiting RNA Pol II elongation (Figure 1\u2014figure supplement 5B). We also asked if the late phase of E2-induced DNA damage is affected by blocking transcription coincident with S-phase entry. Treatment with the transcription inhibitor flavopiridol abolished the late E2-induced increase in P-H2AX (Figure 1I) but did not significantly affect the percentage of cells in S phase (Figure 1\u2014figure supplement 6). Taken together, these results demonstrate that E2 induces DSBs in a replication- and transcription-dependent manner.\n\n### Estrogen induces robust R-loop formation at E2-responsive genes\n\nE2 stimulation causes a rapid burst of transcription at a large number of genes (Hah et al., 2011). As defects in co-transcriptional processing have been shown to promote R-loop formation (Hamperl and Cimprich, 2014; Santos-Pereira and Aguilera, 2015; Sollier and Cimprich, 2015), we asked whether E2 stimulation, which might saturate co-transcriptional processing pathways, leads to elevated R-loop levels. To do so, we probed genomic DNA from mock- or E2-treated cells (24\u2009hr) with the anti RNA-DNA hybrid monoclonal antibody S9.6 (Boguslawski et al., 1986). We observed a dramatic increase in RNA-DNA hybrids upon E2 treatment (Figure 2A). Moreover, RNase H treatment, which specifically removes the RNA strand of an RNA-DNA hybrid, abolished the signal (Figure 2A), indicating antibody specificity for RNA-DNA hybrids.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig2-v2.jpg)\n\n**Figure 2.:** (A) Slot blot to detect global RNA-DNA hybrids with S9.6 antibody in MCF7 cells treated with 0 or 100 nM E2 for 24\u2009hr. Total denatured DNA is stained with a single-strand DNA antibody. RNase H was added as indicated. (B) Meta-gene analysis for indicated DRIP signal over indicated genomic features. Data are shown for DRIP-seq biological replicate # 3. An enrichment is seen in all data sets but relative read density at these sites varies between replicates. (C) DRIP-seq read counts normalized for total mapped reads from DRIP in 0 nM E2 conditions vs DRIP from cells treated with 100 nm E2 for 2\u2009hr (top) or 24\u2009hr (bottom). Graphs are from 3 biological experiments. Black dots indicate DRIP peaks and red dots indicate induced DRIP peaks relative to 0 nM E2. (D) Integrated Genome Viewer (IGV) display of DRIP-seq enrichment at XBP1. Scale = million mapped reads. RNase H was performed prior to DRIP-seq on one replicate each from 0 nM E2 and 100 nM E2 24\u2009hr. Independent replicates are shown as 1\u20133. (E) IGV display of CCND1 (Cyclin D1), as described in (D). (F) DRIP-qPCR validation. Cells were treated with 0, 10, or 100 nM E2 for 24\u2009hr and harvested for DRIP. MLKL and 83/84 are negative controls. Error bars represent S.E.M. of 2 biological experiments. RNase H treatment was performed for 24\u2009hr prior to DRIP-qPCR where indicated. (G) Functional signatures by GREAT of E2-induced DRIP peaks found to be differentially induced in 100 nM E2, 2\u2009hr (top) or 100 nM E2 24\u2009hr (bottom) than in 0 nM E2 treated cells. The 7 highest enrichment scores are shown, with red highlighting E2-associated signatures. (H) Fold change in DRIP signal after 2\u2009hr of 100 nM E2 relative to 0 nM E2 (x-axis) vs. fold change in GRO-seq signal after 160\u00a0min of 100 nM E2 relative to 0 nM E2 (y-axis). E2-induced DRIP peaks that show a positive (red) or negative (blue) fold change in GRO-seq upon E2 stimulation are highlighted. Negative changes in DRIP upon E2 that correspond to a positive (yellow) or negative (green) fold change in GRO-seq are also shown. GRO-seq data from (Hah et al., 2011).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Average read count in input (x-axis) versus S9.6 immunoprecipitation (y-axis) in MCF7 cells treated with 0 nM E2 (left), 100 nM E2 for 24\u2009hr (middle) or 100 nM E2 for 2\u2009hr (right). Black dots above the diagonal represent DRIP peaks above input. Red dots correspond to E2-induced peaks. (B) RNase H treatment. Read per kilobase per million (RPKM) plots of DRIP peaks in 0 nM E2 versus DRIP peaks from 0 nM E2 sample treated with RNase H prior to IP (left) and of DRIP peaks from cells treated with 100 nM E2 for 24\u2009hr versus DRIP peaks from cells treated with RNase H after 100 nM E2 for 24\u2009hr (right). Red dots show identified E2-induced DRIP peaks and their sensitivity to RNase H. (C) GC skew density in DRIP peaks. The strongest 3000 DRIP peaks from each indicated samples are shown. GC skew obtained from Ginno et al., 2012. (D) G-quartet density in DRIP peaks. The strongest 3000 DRIP peaks from each indicated samples are shown. G-quartet data obtained from Chambers et al., 2015. (E) IGV display of DRIP-seq enrichment at SLC7A5. Scale = million mapped reads. An RNase H control was performed prior to DRIP-seq from 0 or 100 nM E2-treated cells for 24\u2009hrs. Biological replicates are shown as 1\u20133. (F) FACS profiles of MCF7 cells treated with 0 nM E2 (left), or 100 nM E2 for 2\u2009hr (middle) or 24\u2009hrs (right). Cells were pulsed with 25 \u03bcM BrdU prior to fixation. DNA content is marked by propidium iodide (x-axis) and BrdU incorporation is shown on the y-axis. The percentage of cells in each of the four cell-cycle quadrants is shown.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) GC skew density in E2-induced DRIP peaks that show a positive (red) or negative (blue) change in GRO-seq upon E2. (B) G-quartet density in E2-induced DRIP peaks that show a positive (red) or negative (blue) change in GRO-seq upon E2. Error bands for (A,B) represent the 1st and 3rd quartile from 1000x bootstrap. (C) DRIP peak strength compared to expression level for DRIP performed with 0 nM E2 (left) and 100 nM E2 for 2\u2009hr (middle) or 100 nM E2 for 24\u2009hr (right). Expression levels in non-E2 treated or E2-treated cells for similar time periods obtained from publically available RNA-seq (Honkela et al., 2015).\n\nTo directly determine the location and abundance of R-loops genome-wide, we performed DNA-RNA immunoprecipitation (DRIP) with this antibody followed by next generation sequencing on cells treated with no E2 or 100 nM E2 for 2 or 24\u2009hr. These times were chosen to assess R-loop formation prior to and/or concurrent with E2-transcriptional induction and DNA damage. In mock-treated MCF7 cells, we observed 17,445 DRIP peaks across the genome (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 1\u2014source data 1), a number in line with the previous DRIP-seq experiments performed in human Ntera2 cells and primary human fibroblasts (Ginno et al., 2012; Lim et al., 2015). Strikingly, however, in cells treated with E2 we observed a dramatic increase in DRIP peaks, with 33,458 or 24,781 peaks at 2 or 24\u2009hr, respectively (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 1\u2014source data 2, 3). DRIP peaks from mock-treated cells covered 49.0 Mb of genome space, while those from E2-treated cells for 2\u2009hr or 24\u2009hr covered 81.9 MB and 63.2 Mb of genome space, respectively. Importantly, the vast majority of peaks were abolished by RNase H treatment (Figure 2\u2014figure supplement 1B).\n\nNext, we asked whether the RNA-DNA hybrids identified exhibit known R-loop features. Indeed, DRIP peaks were enriched at promoters, 5\u2019 gene regions and sites of transcriptional termination (Figure 2B), consistent with their published distribution and roles at these regulatory regions (Ginno et al., 2013; Ginno et al., 2012; Skourti-Stathaki et al., 2014). DRIP peaks also exhibited GC skew (Figure 2\u2014figure supplement 1C) and overlapped with in vitro mapped G-quartets (Figure 2\u2014figure supplement 1D) (Chambers et al., 2015), two sequence characteristics that are associated with R-loop formation (Duquette et al., 2004; Ginno et al., 2013). Taken together, these observations suggest that E2 treatment is associated with a dramatic induction of R-loops at new genomic sites.\n\nTo further explore the effects of E2 on R-loop formation, we sought to identify the genomic regions in which DRIP signal was induced at 2 and 24\u2009hr by differential peak calling. Using triplicate data for each condition, we combined all DRIP-positive regions in at least one sample with a set of similarly-sized intervals with no significant enrichment and performed the\u00a0differential analysis. Differential peaks were only identified if they showed a significant change upon E2 induction in each biological replicate. Analysis of RNA-DNA hybrids induced after E2 treatment revealed a dramatic increase throughout the genome, with 8,023 and 3,263 peaks significantly induced at 2\u2009hr or 24\u2009hr, respectively (Figure 2C, Figure 2\u2014figure supplements 1A,B, Figure 2C \u2014 source data 1, 2). Of those hybrids induced at 24\u2009hr, ~60% were also significantly induced at 2\u2009hr, suggesting that the E2 treatment can result in a sustained increase in R-loop formation at many loci. Loci that showed a robust increase following E2 addition include XBP1, CCND1 (Cyclin D1), and SLC7A5 (Figure 2D,E, Figure 2\u2014figure supplement 1E), all targets of E2-transcription (Honkela et al., 2015). We validated our DRIP-seq data at several loci using DRIP-qPCR. A dose-dependent increase in DRIP signal was observed upon both 10 nM and 100 nM E2 treatment at several E2-transcription targets (Figure 2F), while two genomic regions (MLKL and 83/84) devoid of DRIP peaks showed no change.\n\nUsing GREAT, a bioinformatic tool that annotates ontologies for cis-regulatory regions of the genome (McLean et al., 2010), we next asked whether there was a common signature among these E2-induced RNA-DNA hybrids. We found a dramatic enrichment of R-loops in E2-transcriptionally responsive genes at both time points (Figure 2G, red highlighting). These data clearly demonstrate that the induction of R-loops by E2 is a robust response that occurs quickly at E2-responsive genes, and persists at a subset of these genes. Taken together with data shown in Figure 1, these data also demonstrate that R-loop formation occurs prior to the onset of DNA damage, and in cells that have not yet entered S phase (Figure 2\u2014figure supplement 1F).\n\nTo systematically investigate the relationship between E2-responsiveness and R-loop induction, we also correlated DRIP signal enrichment with changes in expression level upon E2 stimulation. We focused on transcriptionally engaged RNA polymerase by using publically available global run-on sequencing (GRO-seq) data from samples prepared under similar conditions (Hah et al., 2011) (Figure 2H). A modest correlation between the induction of DRIP signal and the induction of expression was observed, consistent with the requirement for transcription in R-loop formation. Although the majority of induced DRIP peaks were found in E2-responsive genes (red\u00a0highlighting), some were also induced at sites that were not E2-responsive or that were negatively regulated by E2 (blue\u00a0highlighting). Both sets of hybrid-forming sequences exhibit GC skew and enhanced G-quadruplex formation (Figure 2\u2014figure supplements 2A,B). We also found no meaningful correlation between DRIP signal enrichment and overall expression level as measured by publically available RNA-seq data from similarly paired conditions. This finding indicates that DRIP peaks do not form only on highly expressed genes (Figure 2\u2014figure supplement 2C). We conclude that R-loop induction by E2 is correlated with E2-induced transcription, but that expression level is not the sole determinant of R-loop formation and other secondary structures or sequence elements may contribute.\n\n### Breast cancer rearrangements are enriched in E2-responsive genes\n\nBecause E2-induced R-loops are strongly enriched in E2-transcriptionally responsive genes, we wondered if estrogen-responsive loci are also more prone to mutation in breast cancer. To accomplish this, we utilized the somatic mutation data from the recent, large-scale whole-genome sequencing of 560 breast tumors (Nik-Zainal et al., 2016). Three groups of somatic mutations were used: 1) structural variants such as duplications, deletions, or inversions, 2) translocations, or 3) simple somatic mutations such as substitutions and indels (Nik-Zainal et al., 2016). For each group of mutations, we determined whether the sites of mutation were enriched in E2-responsive loci, as measured by the Z-score from RNA-seq data (Honkela et al., 2015). For mutated genes in each of the three classifications, we examined enrichment relative to control gene sets matched for both expression level and replication timing (Figure 3\u2014figure supplements 1, 2, and 3). Notably, we observed a significant enrichment of both structural variants (p<1.00*10\u22126) and translocations (p<1.00*10\u22126) in genes that are transcriptionally-responsive to E2 (Figure 3A,B). In contrast, there were fewer simple somatic mutations in E2-responsive loci relative to the matched set (p<1.00*10\u22126) (Figure 3C). These results demonstrate that genes whose expression is induced in response to E2 are enriched in genomic rearrangements in breast tumors and support the view that these sites are prone to certain types of DNA damage.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig3-v2.jpg)\n\n**Figure 3.:** (A) Histogram of E2-induced expression changes (Z-score) for genes that overlap with breast cancer structural variants (red bars) compared to the distribution of E2-induced expression changes (Z-score) for a control gene set (blue bars), matched for expression level and replicating timing. Genes with structural variants are enriched in E2-responsive genes. p<1.00*10\u22126. (B) Histogram of E2-induced expression changes (Z-score) for genes with breast cancer translocations (red bars) compared to a control gene set (blue bars), as described in (A). Genes with translocations are enriched in E2-responsive genes p<1.00*10\u22126. (C) Histogram of enrichment of breast cancer simple somatic mutations in E2-responsive genes. Data plotted as the log transformation of simple somatic mutations per kilobase for E2-induced genes (red bars) relative to a matched set (blue bars), as described previously. E2-responsive genes have fewer simple somatic mutations than the control gene set (p<1.00*10\u20136). In A\u2013C, p-values represent two-tailed bootstrap of medians. All breast cancer mutation data from (Nik-Zainal et al., 2016).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig3-figsupp3-v2.jpg)\n\n### E2-induced R-loops colocalize with DNA damage markers on chromatin\n\nGiven that E2-responsive genes are strongly enriched in regions of genomic rearrangement in breast tumors and these mutations could arise through DNA DSB formation, we asked whether we could directly detect DNA damage in the vicinity of E2-induced R-loops. To address this, we performed a proximity ligation assay (PLA) using the S9.6 and P-H2AX antibodies to visualize interactions between RNA-DNA hybrids and phosphorylated H2AX. Notably, the percentage of cells that contain at least one PLA focus in the nucleus increased approximately 2-fold following E2 treatment (Figure 4A,B). The relatively small number of detectable interactions between the RNA-DNA hybrid and P-H2AX antibodies upon E2 addition may indicate that the majority of DNA damage occurs at a distance from the R-loop that is outside the limits of PLA detection (<30\u201340 nM). In order to confirm the interaction between R-loops and P-H2AX, we used the S9.6 antibody to precipitate RNA-DNA hybrids from cross-linked E2-treated cells. We found that that both P-H2AX and another DDR target, P-KAP1, interacted with RNA-DNA hybrid containing chromatin fragments (Figure 4C). This interaction was specific, as it did not occur with MCM3, another chromatin-bound protein (Figure 4C). Taken together, these results suggest that DNA damage markers bind the chromatin environment near R-loops following E2 treatment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig4-v2.jpg)\n\n**Figure 4.:** (A) Proximity ligation assay between S9.6 antibody and P-H2AX antibody in cells treated either with 0 or 100 nM E2 for 24\u2009hr. (B) Quantification of the percentage of cells with \u2265 1 PLA focus per nucleus. Single-antibody controls from cells treated with 100 nM E2 for 24\u2009hr are shown. Error bars represent the SEM from 4 biological replicates. **p<0.01 (Student\u2019s t-test). (C) P-H2AX and P-KAP1 levels from co-IP of S9.6 or IgG from cross-linked and sonicated cells treated with 100 nM E2 for 24\u2009hr. Input is 60% of the IP. (D) Western blot with Flag antibody in MCF7 tetOn-RH cells. 1000 ng/mL doxycycline (DOX) was added for 48\u2009hrs where indicated. (E) Immunostaining for P-H2AX and FLAG in MCF7 tetON-RH cells treated with increasing concentrations of DOX (100, 250, 500 1000 ng/mL) for 24\u2009hrs prior to the addition of either 0 or 100 nM E2 for 24\u2009hr. (F) Quantification of P-H2AX intensity for the experiment described in (E), where the triangle indicates increasing concentrations of DOX. ****p<0.0001 (non-parametric Mann-Whitney rank sum t-test). n\u00a0=\u00a03 biological replicates. >1000 cells/condition quantified. (G) Neutral comet assay in MCF7-tetOn-RH cells treated with or without 1000 ng/mL DOX for 24\u2009hrs prior to 0 nM E2 or 100 nM for 24\u2009hr. (H) Quantification of the\u00a0neutral comet tail moment described in (G). **p<0.01 (non-parametric Mann-Whitney rank sum t-test). n\u00a0=\u00a03 biological replicates. >100 comets/condition. a.u. = arbitrary units.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Error bars represent SD of 3 technical replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Quantification of P-H2AX intensity per nucleus in MCF7 tetON-RH clone 6 (left) or MCF7 tetON-RH clone 8 (right) treated with 0 or 1000 ng/mL DOX for 24\u2009hr prior to the addition of 0 nM or 100 nM E2 for 24\u2009hr. ****p<0.0001 (non-parametric Mann-Whitney rank sum t-test). n\u00a0=\u00a03 technical replicates. >500 cells/condition. (B) Western blot with Flag antibody in MCF7 tetOn-RH cells, clones 6 and 8. DOX was added at 1000 ng/mL MCF7 tetOn-RH cells for 48\u2009hr.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Cells were pulsed with 25 \u03bcM BrdU for 30 min prior to fixation. DNA content is marked by propidium iodide (x-axis) and BrdU incorporation is shown on the y-axis. The percentage of cells in each of the four cell-cycle quadrants is shown.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) EU staining in MCF7 tetON-RH cells either treated with or without 1000 ng/mL DOX for 24\u2009hr prior to the addition of 0 or 100 nM E2 for 24\u2009hr (48\u2009hr DOX total). 100 \u03bcM DRB was added for 2\u2009hr. Cells were pulsed with 100 \u03bcM EU for 30 min before fixation. Hoechst is used to stain the nucleus. (B) Quantification of EU staining for the experiment described in (A). n\u00a0=\u00a02 biological replicates. >200 cells/condition. a.u. = arbitrary units.\n\n### RNase H reduces E2-induced DNA damage and DSBs\n\nWe then asked whether the E2-induced accumulation of DSBs is a direct result of E2-induced R-loop formation. If R-loops cause E2-induced DNA damage, expression of RNase H should abrogate DSB formation. We tested this idea by monitoring P-H2AX levels in an MCF7 cell line stably expressing a doxycycline-inducible, Flag-tagged RNase H (Figure 4D). Strikingly, we observed a dramatic and dose-dependent reduction in P-H2AX intensity and foci formation upon increasing RNase H expression (Figure 4E,F, Figure 4\u2014figure supplement 1). Similar results were observed in two additional independent stable cell clones (Figure 4\u2014figure supplements 2A,B). Importantly, expression of RNase H did not alter E2-driven cell cycle progression (Figure 4\u2014figure supplement 3), nor did it reduce global levels of transcription, as measured by EU labeling (Figure 4\u2014figure supplements 4A,B). Thus, the decreased P-H2AX signal is not a result of reduced transcription or a defect in cell cycle progression. Finally, we found that RNase H expression resulted in a significant decrease in DSBs upon E2 stimulation, as measured by the\u00a0neutral comet assay (Figure 4G,H). These findings clearly demonstrate that RNA-DNA hybrids are needed to form E2-induced DSBs.\n\n### NER factors are required for E2-induced DSB formation\n\nWe recently showed that R-loop-mediated DSB formation depends on factors specifically involved in transcription-coupled nucleotide excision repair (TC-NER), but not factors specifically involved in global genome NER (GG-NER) (Sollier et al., 2014). In these studies, R-loops were induced by the knockdown of RNA processing genes and/or splicing factors. To ask if the DNA damage resulting from E2-induced co-transcriptional R-loop formation arises by a similar mechanism, we assessed whether knockdown of NER factors altered the DDR following E2. Strikingly, we found that P-H2AX levels were significantly reduced following knockdown of XPG, an endonuclease involved in both forms NER (Figure 5A, Figure 5\u2014figure supplement 1). XPG knockdown also dramatically reduced the comet tail moment that forms in response to E2 treatment (Figure 5B,C), signifying a significant reduction in E2-mediated DSBs. Importantly, we also found that knockdown of the TC-NER specific factor Cockayne syndrome group B (CSB) significantly reduced P-H2AX levels induced by E2 (Figure 5D). In contrast, knockdown of XPC, a lesion-recognition factor specifically involved in GG-NER, caused little change in P-H2AX levels after E2 treatment (Figure 5E). These findings suggest that R-loops induced by E2 are processed by TC-NER factors. Taken as a whole, our findings demonstrate that replication-dependent E2-induced DNA damage results from the induction of R-loops triggered by E2-mediated transcription.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig5-v2.jpg)\n\n**Figure 5.:** (A) P-H2AX intensity based on immunostaining of MCF7 cells transfected with indicated siRNA 64\u2009hrprior to the addition of 0 or 100 nM E2 for 24\u2009hr. ****p<0.0001. Western blot shows the level of XPG. (B) Neutral comet assay in cells transfected with indicated siRNA 64\u2009hr prior to the addition of 0 or 100 nM E2 for 24\u2009hr. (C) Quantification of neutral comet tail moment described in (B). ****p<0.0001. >100 comets/condition. (D, E) P-H2AX intensity based on immunostaining in MCF7 cells treated as in (A) with the indicated siRNA. ****p<0.0001. Western blot shows the level of CSB or XPC. The siGL3 control in the quantification shown in (D) is the same as shown in (A). a.u. = arbitrary units. For all data, associated p-values are from non-parametric Mann-Whitney rank sum t-test. n=3 biological replicates. Quantification from >1000 cells/condition unless noted.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17548/elife-17548-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) FACS profiles of MCF7 cells transfected with siXPG or siGL3 and grown for 64\u2009hr prior to the addition of 0 or 100 nM E2 for 24\u2009hr, with DNA content marked by propidium iodide (x-axis), and cell content shown on the y-axis.\n\n## Discussion\n\nGiven the clear link between E2 exposure and breast cancer incidence, there is significant interest in understanding the molecular mechanisms by which E2 promotes DNA damage and genome instability, which can drive tumorigenesis. Accordingly, several mechanisms for E2-induced DNA damage have been elucidated. For example, TopoII\u03b2 and APOBEC3B cause the rapid and transient formation of DNA damage in a process necessary for E2-induced transcriptional activation (Ju et al., 2006; Periyasamy et al., 2015). Additionally, E2 metabolites can cause oxidative DNA damage (Lavigne et al., 2001; Yager, 2014). Here, we report the first R-loop-dependent mechanism of E2-induced DNA damage. Specifically, we show that R-loops induced by E2 treatment in ER-positive breast cancer cells lead to DSB formation in the vicinity of the R-loop. Our findings suggest that increased transcription due to a physiologically relevant stimulus may result in R-loop-mediated genomic instability.\n\nIntriguingly, the R-loop-dependent DNA damage we observe requires the initiation of DNA replication (Figure 1F,H). Although E2 causes a dramatic increase in R-loops after 2\u2009hr (Figure 2C), no significant change in DNA damage is observed at that time (Figure 1F). Thus, although R-loops are present, they do not cause DNA damage until S phase entry. Consistent with this finding, R-loop-dependent DNA damage has been previously associated with DNA replication (Alzu et al., 2012; Gan et al., 2011; Houlard et al., 2011). Moreover, a few common fragile sites correspond to late-replicating, long genes where R-loops form, and early-replicating fragile sites are associated with highly transcribed genes (Barlow et al., 2013; Helmrich et al., 2011). This suggests that genes that are highly transcribed or R-loop prone may pose the greatest challenge to genome integrity when they meet the replication fork. Interestingly, we find that TC-NER factors are also involved in generating the replication-associated DNA damage observed (Figure 5). This raises the possibility that these factors may be acting in a non-canonical manner in S phase, and there are several possible mechanisms by which their activity may be coordinated with replication activities that have been previously discussed (see Sollier et al., 2014).\n\nImportantly, we find that R-loops are induced predominantly at E2-responsive genes (p<10\u2212233). In agreement with this, we see a correlation between the induction of expression by E2, as measured by GRO-seq, and the induction of R-loops by E2 (Figure 2H). The modest strength of the correlation likely indicates that factors distinct from the\u00a0transcription status play an important role in dictating R-loop formation. Interestingly, a small subset of genomic regions exist that show a significant increase in R-loops despite no increase in expression (Figure 2H, blue\u00a0highlighting). Similarly, RPL13A, the expression of which is unaffected by E2 (Shah and Faridi, 2011), showed a significant increase in R-loops upon E2 (Figure 2F). One possibility is that upon a burst in transcription, the cell\u2019s normal splicing and R-loop modulating factors initially become saturated. Thus, some loci that are prone to form R-loops may accumulate these structures and become vulnerable to DNA damage, regardless of their response to the transcription stimulus.\n\nWe also observe that breast cancer rearrangements, but not simple somatic mutations, are significantly enriched in E2-responsive genes (Figure 3). Both structural variants and translocations have been suggested to occur due to erroneous repair of a DSB (Kasparek and Humphrey, 2011) and these mutation types have been shown to be more prevalent in breast tumors relative to other tumor tissues (Yang et al., 2013). Intriguingly, some cancer-associated genes are found among genes forming E2-induced R-loops. For example, we observed a dramatic increase in R-loops at Cyclin D1 (Figure 2E), which is amplified in\u00a0up to 20% of breast cancers, the majority of which are ER-positive (Arnold and Papanikolaou, 2005; Osborne et al., 2004). Similarly, E2 induces robust R-loop formation at ZNF703. This locus has been implicated in driving oncogenesis in luminal B breast tumors (Holland et al., 2011; Sircoulomb et al., 2011). Both Cyclin D1 and ZNF703 were among the genes identified as breast cancer drivers, as were an additional 27 genes with E2-induced R-loops (Nik-Zainal et al., 2016). Our findings raise the possibility that E2-induced R-loop formation could lead to DNA damage and genome instability at some of these and other R-loop prone loci. Intriguingly, testosterone (DHT) stimulation in prostate cells has been shown to lead to DSBs and recurrent translocations at androgen-receptor (AR) target loci (Haffner et al., 2010; Lin et al., 2009). While these breaks are TOP2B-dependent and necessary for the induction of transcription, DHT may also induce DNA damage in an R-loop and replication dependent manner. Notably, in prostate cancer, recurrent rearrangements are frequently observed at androgen-receptor (AR) target genes (Kumar-Sinha et al., 2008).\n\nIn summary, our findings have uncovered a role for R-loops in E2-induced DNA damage and reveal a new mechanism by which genome instability may arise in ER-responsive breast cancer cells. Notably, transcription factor responses vary between cell types and following different physiological and environment stimuli. Thus, the induction of potentially toxic R-loops at sites of induced transcription may offer insight into the tissue-specific DNA damage and mutation patterns observed in some cancers.\n\n## Materials and methods\n\n### Cell culture\n\nMCF7 cells were obtained from ATCC (HTB-22, RRID:CVCL_0031), where they were authenticated by STR profiling and tested negative for mycoplasma. These MCF7 cells were cultured in DMEM (GIBCO) supplemented with 10% FBS in 5% CO2 at 37\u00b0C. For estrogen stimulation, MCF7 cells were plated in DMEM with 10% FBS for at minimum of 16\u2009hr before being washed 3 times in 1X PBS. Phenol-red free DMEM (GIBCO) with 10% charcoal-stripped FBS (Invitrogen) was then added for 48\u2009hr prior to the addition of E2 dissolved in EtOH or the vehicle control (100% EtOH). MCF10A cells were obtained from ATCC (CRL-10317, RRID:CVCL_0598), where they were authenticated by STR profiling and tested negative for mycoplasma. MCF10A cells were cultured in a 1:1 mixture of DMEM and F12 medium (GIBCO) supplemented with 5% horse serum, hydrocortisone (0.5 mg/ml), insulin (10\u2009\u03bcg/ml), epidermal growth factor (20 ng/ml), cholera toxin (100 ng/ml) and penicillin-streptomycin (100\u2009\u03bcg/ml each). For estrogen stimulation, MCF10A cells were washed 3 times in 1X PBS and then media containing a 1:1 mixture of phenol-red free DMEM and F12 medium (GIBCO) supplemented with 5% charcoal-stripped FBS (Invitrogen), hydrocortisone (0.5 mg/ml), insulin (10\u2009\u03bcg/ml), and cholera toxin (100 ng/ml) was added and cells were grown for 48\u2009hr before stimulation. The MCF7-TetON-RH cell line was generated from MCF7 cells (ATCC HTB-22, RRID:CVCL_0031, as described above) that were first transduced with a pLVX-EF1\u03b1-Tet3G-Hygro transactivator-containing vector and selected with 500 \u03bcg/mL hygromycin. Hygromyocin-resistant cells were then transduced with a pLVX-Tight-Puro vector, expressing a FLAG-tagged truncated version of RNase H1 (pLVX-Tight-Puro-RH-Flag) and selected with 1 \u03bcg/mL puromycin. Cells were maintained in 500 \u03bcg/mL hygromyocin and 1 \u03bcg/mL puromycin.\n\n### Antibodies, plasmids, and reagents\n\nAntibodies to single-stranded DNA (EMD Millipore, #MAB3868), P-H2AX (Cell Signaling, 9718S), P-KAP1 (Bethyl, A300-767A), MCM3 (Abcam, ab4460), XPG (Santa Cruz, 393004), CSB (Bethyl, A301-345A), XPC (Abcam, ab6264), 53BP1 (BD, 612523), BrdU (BD, 347580) ALPHA-TUB (Sigma, T9026), FLAG (Sigma, F1804), GAPDH (Abcam, ab8245), ER-\u03b1 (Santa Cruz, HC-20), and RNA Pol II phospho S2 H5 (Abcam, ab24758) were used. The S9.6 antibody was purified from a S9.6 hybridoma cell line (ATCC, HB-8730; RRID: CVCL_G144). Hybridoma supernatant was applied to a 1\u2009mL HiTrap Protein G HP column (GE Healthcare). The antibody was eluted with 100\u2009mM glycine pH 2.5, in 0.5\u2009mL fractions. Fractions were screened for antibody by SDS-PAGE and antibody-containing fractions were pooled and dialyzed in PBS overnight followed by dialysis in 50% glycerol for 6\u2009hr. The antibody concentration was measured against a BSA standard and aliquots were made at 1 \u03bcg/mL. The pLVX-Tight-Puro-RH-Flag was made by inserting a truncated FLAG-tagged human RNase H1 lacking the first 27 amino acids. siRNAs, purchased from ThermoFisher, were: siGL3 (D-001400-01), siXPG (D-006626-02), siCSB2 (D-00488-04), siCSB4 (D-00488-06), siXPC1 (D-016040-01), siXPC2 (D-016040-02), and siXPC3 (D-016040-04). All siRNA transfections were performed using Dharmafect1 (ThermoFisher) according to the manufacturer\u2019s protocol and 20 nM siRNA unless otherwise indicated. For siRNA transfections, cells were reverse transfected with 20 nM siRNA in antibiotic free DMEM with 10% FBS. 16\u2009hr later, the\u00a0media was removed, cells were washed 3 times with 1X PBS and phenol-red free DMEM with 10% charcoal-stripped FBS was added. 64\u2009hr after transfection, cells were transfected again with 10 nM of the siRNA and E2 or vehicle control (100% EtOH) was added to the media for 24\u2009hrs.\u00a017\u00df-Estradiol (E2) (Sigma, AC00006) was dissolved in 200-proof EtOH (Goldshield). Flavopiridol (Tocris, 3094) and the Cdc7 inhibitor PHA 767491 (Sigma, PZ0178) were prepared in DMSO. Doxycycline (DOX) (Sigma) was added every 24\u2009hr when indicated. Human RNaseH purified from MBP-RNaseH1 was a gift from the Chedin lab and was used with commercially available RNase H buffer (NEB, M0297).\n\n### Neutral comet assay\n\nThe\u00a0neutral comet assay was performed using the\u00a0CometAssay Reagent Kit for Single Cell Gel Electrophoresis Assay (Trevigen) according to the manufacturer\u2019s protocol with 1X TBE running buffer. Electrophoresis was performed at 4\u00b0C in the CometAssay Electrophoresis System II. SYBR-Gold (Invitrogen) was used to stain DNA. Images were taken on an epifluorescence microscope at 10x magnification. Comet tail moments were quantified using OpenComet software (Gyori et al., 2014). In box and whisker plots, box and whiskers indicate 25\u201375 and 10\u201390 percentiles, respectively, with lines representing median values.\n\n### Immunostaining\n\nCells were fixed with 4% PFA/PBS (EMS) for 15\u2009min, permeabilized with 0.25% Triton-X 100 for 15\u2009min, washed 3 times in 1X PBS, and blocked in 2% BSA/PBS for 1\u2009hr at RT. The\u00a0primary antibody was incubated overnight at 4\u00b0C. Antibodies were used at the following dilutions: Rabbit P-H2AX antibody (1:500, Cell Signaling), FLAG, mouse FLAG antibody (1:500, Sigma), mouse 53BP1 (1:500,\u00a0BD). Cells were then washed 3 times in 1X PBS and stained with Hoechst (1:1000) and anti-rabbit AlexaFluoro-488-conjugated secondary (1:1000). For co-staining, anti-mouse AlexaFluoro-594-conjugated secondary (1:1000) was used. Cells were imaged on a fully automated Molecular Devices ImageXpress Micro microscope. Images were captured at either 20X or 40X. Analysis of P-H2AX intensity was performed MetaXpress quantification software, where Hoechst is used as a mask for the nucleus and the intensity and/or number of foci per nucleus is determined. In box and whisker plots, box and whiskers indicate 25\u201375 and 10\u201390 percentiles, respectively, with lines representing median values.\n\n### EdU staining\n\nFor EdU staining, cells were pulsed for 30 min with 10 \u03bcM EdU from the Click-iT Edu Alexa Fluor 488 imaging kit (ThermoFisher). Cells were then fixed by 4% PFA/PBS for 15 min, and permeabilized with 0.25% Triton/PBS for 15 min. The Click-It reaction was then performed according to manufacturer\u2019s instructions. Immunostaining was carried out as described. Images were acquired on a fully automated Molecular Devices ImageXpress Micro microscope and intensity analysis was performed using MetaXpress quantification software.\n\n### EU staining\n\nFor EU staining, cells were pulsed for 1\u2009hr with 100 \u03bcM EU from the Click-iT RNA Alexa Fluor 488 imaging kit (ThermoFisher). When indicated, 100 \u03bcM DRB (Cayman Chemical Company) was added for 2\u2009hrs with 100 \u03bcM EU being added for the last hour. Cells were then fixed by 4% PFA/PBS for 15 min, and permeabilized with 0.25% Triton/PBS for 15 min. The Click-It reaction was then performed according to manufacturer\u2019s instructions. Cells were then incubated in Hoechst (1:1000) for 15 min before the\u00a0slides were mounted with Pro-Long Gold Antifade reagent and imaged on a Zeiss Axioscope at 40X. EU signal intensity was calculated using ImageJ (v 1.47).\n\n### S9.6 Slot blotting\n\nTotal nucleic acid was extracted by a standard SDS/Proteinase K lysis followed by phenol/chloroform extraction and EtOH/sodium acetate precipitation. DNA (1 \u03bcg) from each sample was spotted on Nylon membrane (Amersham) using a slot blot apparatus and vacuum suction. For RNase H treatment, 5 \u03bcg of DNA was treated with RNase H at 37\u00b0C overnight, and then purified by standard phenol/chloroform EtOH precipitation. For total DNA control, the membrane was denatured for 10\u2009min in 0.5\u2009M NaOH, 1.5\u2009M NaCl, and neutralized for another 10\u2009min in 1\u2009M NaCl, 0.5\u2009M Tris-HCl pH7.0. Membranes were then UV-crosslinked (0.12J/m2), blocked in 5% milk/TBST, and incubated overnight at 4\u00b0C with mouse S9.6 (1:500) or single-strand DNA antibody (1:10,000). Blots were washed 3 times with TBST and secondary antibody (1:10,000 goat anti-mouse HRP) was added for 1\u2009hr at RT.\n\n### S9.6 Immunoprecipitation (DRIP)\n\nDRIP was performed as described in Ginno et al. (2012). Briefly, DNA was extracted carefully by phenol/chloroform extraction in phase lock tubes, precipitated with EtOH/sodium acetate, washed with 70% EtOH, and resuspended in TE. DNA was digested with a cocktail of restriction enzymes (Bsrg1, EcoR1, HindIII, SspI, XbaI) overnight at 37\u02daC. For RNase H-treated samples, 8 \u03bcg of DNA was treated with RNase H overnight at 37\u02daC. DNA was purified by standard methods described above. 4\u00a0\u03bcg of DNA was bound with 10 \u03bcg of S9.6 antibody in 1 X binding buffer (10\u2009mM NaPO4 pH 7, 140\u2009mM NaCl, 0.05% Triton X-100) overnight at 4\u02daC. Protein A/G sepharose beads were added for 2\u2009hr. Bound beads were washed 3 times in binding buffer and elution was performed in elution buffer (50\u2009mM Tris pH 8, 10\u2009mM EDTA, 0.5% SDS, Proteinase K) for 45\u2009min at 55\u02daC. DNA was purified as described. qPCR was performed on a Roche LightCycler 480 Instrument II using SYBR-Green master mix (Biorad). qPCR primers are described in Supplementary file 1.\n\n### Library preparation and sequencing\n\nDNA libraries were prepared from 3 pooled DRIPs by sample. Briefly, input and DRIP DNA was sonicated to approximately 300\u2013700 bp on a Bioruptor (Diagenode). End repair (NEB E6050S), A-tailing (NEB M0212S), ligation of adapters (NEB M2200S; Affymetrix Prep2Seq Adapters 79800), and PCR amplification were performed by standard methods as described (Ginno et al., 2012). Ampure XP beads (Beckman Coulter, A63880) were used for size selection. Libraries were pooled and sequenced on an Illumina HiSeq machine with single-end 50 bp reads by Elim BioPharm (Hayward, CA).\n\n### Peak calling and differential peak analysis\n\nRaw reads from the DRIP experiments were aligned to the reference genome hg19/GRCh37 using bowtie2. An interval file of restriction fragments for the\u00a0enzyme cocktail used in DRIP was obtained by verbose search of restriction site sequences with bowtie. Aligned reads with Q score over 10 were counted over the intervals separated by restriction enzyme cut sites using bedtools. Intervals with lower coverage (less than 10 counts per interval in any sample) were removed from the data set. Regions enriched over background were discovered with DESeq2. To perform differential analysis using triplicate data, we combined the set of regions with positive DRIP signal in at least one condition, together with the matched set of negative intervals and performed differential analysis with DESeq2. Read counts were normalized to the total number of mapped reads. To perform analysis of functional term enrichment, we ran GREAT analysis (McLean et al., 2010) on sets of differential DRIP regions.\n\n### Expression correlation analysis\n\nRNA-seq data from GEO, accession number GSE62789, was obtained from MCF7 cells that were hormone starved and treated with 0 nM E2 or 10 nM E2 for 160\u00a0min (used to match 2\u2009hr DRIP) or 1280\u00a0min\u00a0(used to match 24\u2009hr DRIP) (Honkela et al., 2015). DRIP peaks were sorted for those that are within 1 KB of a gene. 7628 gene-proximal regions that form DRIP peaks in any sample were identified. XY plots were generated in R for both control and E2 conditions showing the relative expression distribution of all genes relative to Log2Fold change in DRIP peak signal over input.\n\n### GRO-seq analysis\n\nGRO-seq data from MCF7 cells was obtained from (Hah et al., 2011), where cells were treated with vehicle or 100 nM E2 for 160 min. The bedGraph data from accession GSE27463 was converted to coverage files over the DRIP restriction intervals using bedtools. As GSE27463 is aligned to hg18, liftOver was used to convert the intervals to hg18 before determining the coverage. Fold changes between the mock and 160\u2009min E2 GRO-seq were determined using DESeq2. Intervals that had an adjusted p value < 0.1 in the DRIP and an adjusted p value < 0.5 in the GRO-seq were called as significant, and were split into categories on the basis of having positive or negative log2 fold changes in DESeq2. The criteria used when in Figure 2H are: (1) Up in DRIP: log2FoldChange(2\u2009hr IP vs Mock IP) > 0, adjusted p<0.1 (2) Down in DRIP: log2FoldChange(2\u2009hr IP vs Mock IP) < 0, adjusted p<0.1 (3) Up in GRO-seq: log2Fold Change(2\u2009hr GRO-seq vs Mock GRO-seq) > 0, adjusted p<0.9 (4) Down in GRO-seq: log2Fold Change(2\u2009hr GRO-seq vs Mock GRO-seq) < 0, adjusted p<0.9.\n\n### Cell cycle analysis\n\nCells were pulse-labeled with 25 \u03bcM BrdU for 30\u2009min. Cells were washed with 1X PBS, and the cell pellet was resuspended in 500 \u03bcL 1X PBS. Cells were fixed in 5\u2009mL ice-cold 70% EtOH, permeabilized with 0.25% TritonX-100/PBS for 15\u2009min on ice, blocked in 2% BSA/PBS for 15\u2009min, and incubated in primary BrdU antibody (BD Bioscience 1:100) for 3\u2009hr. Cells were then washed with 1X PBS 3 times and incubated for 1\u2009hr in a 1:400 solution of AlexaFluoro-488 secondary. Propidium iodide (PI, 0.1\u00a0mg/mL, Sigma) and RNase A (Qiagen) were added and cells were run on a FACS Caliber (BD Biocience. Cell cycle profiles were determined using FlowJo software.\n\n### Breast cancer mutation analysis for enrichment in E2-responsive genes\n\nFor all genes in the MCF7 mock and E2-induced RNA-seq dataset (Honkela et al., 2015), E2-induction was defined as the z-score between the mock-treated (0\u2009hr) and E2-induced samples following 160\u2009min E2. The z-score was calculated using the provided means and standard deviations from the dataset, using the formula (\u00b5E2 - \u00b5Mock)/sqrt(\u03c32E2 + \u03c32Mock). Breast cancer structural variants, translocations, and simple somatic mutations were obtained from (Nik-Zainal et al., 2016), accession number EGAS00001001178.\n\nFor the translocation data, genes were included on the list if they had at least one translocation in any patient sample. Similarly, for the structural variant data, genes were included on the list if they had at least one structural variant in any patient sample. For each mutation data set, a background data set made up of genes with similar replication timing and expression was used. Expression was defined as the average expression from the mock, 160 min\u00a0E2-treated and 1280\u00a0min\u00a0E2-treated RNA-seq samples. Replication timing was determined from the mean wavelet smoothed RepliSeq signal across each gene body, using ENCODE MCF7 RepliSeq data (accession number wgEncodeEH002247). We used custom python scripts to match each translocated gene to a similar counterpart (scripts: https://github.com/cimprichlab/stork_et_al_analysis). Briefly, the replication and expression data were studentized, and the Euclidean distance between each mutated and non-mutated gene was calculated. For every gene in the mutated set, we picked the closest gene by Euclidean distance that was not currently in the matched set. We then compared the Z-score of estrogen induction between the test and matched sets.\n\nSimple somatic mutation data were obtained from the ICGC commons (Nik-Zainal et al., 2016). Using the previously-calculated z-scores for estrogen induction from the RNA-seq dataset, genes with z-score greater than 2 were categorized as induced, while genes with z-score less than 2 were categorized as non-induced. The raw numbers of simple somatic mutation events were counted over each gene in the RNA-seq dataset, and the counts were normalized to the length of the gene in kilobases as defined by the UCSC gene associated with the gene symbol. Genomic regions matched for replication timing and expression were calculated as described above. Data were log transformed before plotting.\n\nSignificance was assessed by a two-tailed bootstrap of the median, where the data were re-sampled into sets with the same size as the test and matched sets 1,000,000 times, and the median was calculated for both sets. The p-value was calculated as the fraction of instances that the absolute value of the difference in medians between the resampled test and matched set was greater than the absolute value of the difference in median between the true test and matched sets.\n\n### Proximity ligation assay\n\nFor the proximity ligation assay (PLA), cells were pre-extracted with cold 0.5% NP-40 for 3 min on ice. Cells were then fixed with 4% PFA/PBS for 15 min, washed 3 times with 1X PBS and blocked for 1\u2009hr at RT with 2% BSA/PBS. Cells were then incubated with primary antibody overnight at 4\u00b0C (1:200 mouse S9.6 antibody alone; 1:500 rabbit P-H2AX alone; or 1:200 mouse S9.6 with 1:500 rabbit P-H2AX). Cells were washed 3 times in 1X PBS and incubated in a pre-mixed solution of PLA probe anti-mouse minus and PLA probe anti-rabbit plus (Sigma) for 1\u2009hr at 37\u02daC. The Duolink In Situ Detection Reagents (Green) were then used to perform the PLA reaction according to the manufacturer\u2019s instructions. Slides were mounted in Duolink In Situ Mounting Medium with DAPI and imaged on a Zeiss Axioscope at 40X. The number of PLA foci was quantified using Image J.\n\n### S9.6 co-IP\n\nCells were trypsinized, washed in 1X PBS, and resuspended in 25\u2009mL of 1X PBS. Cells were crosslinked in 1% formaldehyde (Pierce), quenched with 0.125\u2009M glycine, and washed 2 times in 1X PBS containing protease inhibitor (PI; Roche). The cells were lysed in lysis buffer (50\u2009mM HEPES pH 7.9, 140\u2009mM NaCl, 1\u2009mM EDTA, 10% glycerol, 0.5% NP-40, 0.25% Triton X-100) with PI and chromatin was sonicated in shearing buffer (0.1%SDS, 1\u2009mM EDTA, 10\u2009mM Tris pH 8.1) on a Covaris to an average size of 1 kb. Washed Protein A/G sepharose beads (Pierce) were used to pre-clear chromatin for 2\u2009hr. 10 \u03bcg of chromatin and 20 \u03bcg of S9.6 antibody or 20 \u03bcg mouse IgG were incubated overnight at 4\u00b0C. Pre-washed protein A/G sepharose beads were then added to chromatin/antibody mixture for 2\u2009hr. After washing three times in binding buffer (10\u2009mM NaPO4 pH 7, 140\u2009mM NaCl, 0.05% Triton X-100), bound beads were boiled in 30 \u03bcL 5X sample buffer and loaded on a 4\u201320% gradient gel (Biorad).\n\n### Replicates and statistical analysis (for sequencing see relevant methods)\n\nIn this study, biological replicates indicate replicates of the experiment performed with separate passages of a cell line and independently prepared reagent mixes, most often at different times. Technical replicates indicate distinct measurements from distinct wells or coverslips from the same biological experiment, processed at the same time. Box and whiskers in all graphs represent 25\u201375 and 10\u201390 percentiles, respectively. The line represents the median value. All box and whisker plots show representative experiments. Prism v6 (GraphPad Software) was used to perform student\u2019s t-test and non-parametric Mann-Whitney rank sum t-test, where noted. Error bars represent standard deviation (SD) unless otherwise noted as standard error of the mean (SEM). *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.\n",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "5d1e043d-00ea-42ad-83e1-11f9378e581a",
+      "submission_id": "dd4758c3-60ca-408d-8b2c-bf6316aaaa59",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, CABIMER, Universidad de Sevilla , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17548.040](https://doi.org/10.7554/eLife.17548.040)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Estrogen-induced DNA damage is caused by co-transcriptional R-loops\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Andr\u00e9s Aguilera as the Reviewing Editor and James Manley as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andre Nussenzweig (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors observe that MCF-7 cells display increases in DNA damage after exposure to prolonged periods of estrogen. This DNA damage is demonstrated by the appearance of P-H2AX, 53BP1 foci, and increased tail moment by neutral comet assay, suggesting these are DNA DSBs. The DNA damage is dependent on both transcription and DNA replication. The significance of the manuscript centers around the idea that DNA DSBs are dependent on R-loops formed by estrogen receptor-mediated transcription, which may saturate co-transcriptional machinery. The work describes that R-loops are formed after estrogen induction, showing convincingly that TC-NER machinery is required for P-H2AX and DSB formation.\n\nEssential revisions:\n\nThe demonstration that H2AX is phosphorylated near R-loops using a proximity-ligation assay (PLA) does not seem to be entirely convincing. The PLA signal is mostly restricted to one focus, which is quite reminiscent of the single DNA damage response focus that can be detected in these cells with 53BP1 or pH2AX antibodies. It would be important therefore to try to complement with new information probing the proximity of R loops to DNA breaks. Since it seems that using the PLA assay most of the time only one S9.6-P-H2AX foci is observed, this could mean that not all P-H2AX foci originate (directly) from a R-loop, or that H2AX is phosphorylated at different genomic loci than where R-loops are formed. This can be tested by P-H2AX ChIP-qPCR after E2 induction on the E2 responsive genes depicted in Figure 2F upon E2 induction. Alternatively, or additionally, you could explore whether genomic rearrangements occurring in ER positive tumors are enriched at ER target sites. The recent Nature paper (Nik-Zainal S et al. 2016) cataloging all genomic rearrangements in more than 500 breast cancers allows this analysis.\n",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7e70314e-0ee9-4766-b510-a8238bfb456f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C1",
+      "claim": "E2 stimulation causes a rapid, global increase in the formation of R-loops in ER-positive breast epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that E2 stimulation causes a rapid, global increase in the formation of R-loops, co-transcriptional RNA-DNA products, which in some instances have been linked to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "54cbdd63-cde7-4f81-9cd1-cfd370ee1367",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C2",
+      "claim": "E2-dependent R-loop formation is highly enriched at E2-responsive genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that E2-dependent R-loop formation and breast cancer rearrangements are highly enriched at E2-responsive genomic loci and that E2 induces DNA replication-dependent double-strand breaks (DSBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by DRIP-seq data and GREAT analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "de3952c8-8364-44b8-8432-5356c212de84",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C3",
+      "claim": "E2 induces DNA replication-dependent double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "We show that E2-dependent R-loop formation and breast cancer rearrangements are highly enriched at E2-responsive genomic loci and that E2 induces DNA replication-dependent double-strand breaks (DSBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by EdU staining and Cdc7 inhibitor experiments shown in Figure 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "660d2b84-5c5a-4dfd-b507-4794b89e087b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C4",
+      "claim": "Many DSBs that accumulate in response to E2 are R-loop dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, many DSBs that accumulate in response to E2 are R-loop dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by RNase H overexpression experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4c7c4093-f7ca-4afd-9f13-1175b8ba0c0d",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C5",
+      "claim": "Higher E2 serum concentrations are positively correlated with an increased incidence of sporadic breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, higher E2 serum concentrations and longer lifetime E2 exposure are both positively correlated with an increased incidence of sporadic breast cancer (Clemons and Goss, 2001; Colditz, 1998; Hilakivi-Clarke et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "8195f62c-90f7-4319-ac78-d9d1567f32bc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C6",
+      "claim": "Longer lifetime E2 exposure is positively correlated with an increased incidence of sporadic breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, higher E2 serum concentrations and longer lifetime E2 exposure are both positively correlated with an increased incidence of sporadic breast cancer (Clemons and Goss, 2001; Colditz, 1998; Hilakivi-Clarke et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c286319b-8b33-47c3-b352-5be64c1823eb",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C7",
+      "claim": "E2 leads to DNA damage in breast epithelial cells that express the estrogen receptor (ER).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, E2 leads to DNA damage in breast epithelial cells that express the estrogen receptor (ER) (Liehr, 2000; Williamson and Lees-Miller, 2011), and in rat models, E2 stimulation is causally linked to chromosome instability and aneuploidy (Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d04aee06-4570-4baa-a27d-aaf84f0ce4f2",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C8",
+      "claim": "In rat models, E2 stimulation is causally linked to chromosome instability and aneuploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, E2 leads to DNA damage in breast epithelial cells that express the estrogen receptor (ER) (Liehr, 2000; Williamson and Lees-Miller, 2011), and in rat models, E2 stimulation is causally linked to chromosome instability and aneuploidy (Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d1216433-5b1c-445c-bae1-65b9bf3eda42",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C9",
+      "claim": "E2 governs the expression of thousands of genes in breast cells through its association with the nuclear hormone receptors ER-\u03b1 and ER-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, E2 is a key transcriptional regulator that governs the expression of thousands of genes in breast cells (Cheung and Kraus, 2010; Hah et al., 2011) through its association with the nuclear hormone receptors ER-\u03b1 and ER-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "cd4ded3d-5a3a-4d61-a07a-3a670c2c2e00",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C10",
+      "claim": "The E2-ER complex binds to estrogen-response elements or to other transcription factors, thus altering gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon translocation into the nucleus, the E2-ER complex binds to estrogen-response elements or to other transcription factors, thus altering gene expression (Marino et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "10bee1c7-aedc-4678-a459-b44b5c38bd2c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C11",
+      "claim": "R-loops are proposed to serve regulatory roles in the cell including the patterning of promoter chromatin and the facilitation of transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures are proposed to serve regulatory roles in the cell including the patterning of promoter chromatin and the facilitation of transcription termination (Ginno et al., 2012; Skourti-Stathaki et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "511a2183-eae0-4714-8965-8fa24a72e41b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C12",
+      "claim": "The coordinated cleavage of an R-loop at the switch region in B-cells facilitates recombination and generates antibody diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinated cleavage of an R-loop at the switch region in B-cells facilitates recombination and generates antibody diversity (Santos-Pereira and Aguilera, 2015; Yu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "eb3b9e2e-87b0-4155-af92-0d279ff8d34f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C13",
+      "claim": "The loss of RNA processing and R-loop regulatory factors results in an increase in R-loops and R-loop-dependent DNA damage in both yeast and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the loss of RNA processing and R-loop regulatory factors results in an increase in R-loops and R-loop-dependent DNA damage in both yeast and human cells (Garcia-Rubio et al., 2015; Huertas and Aguilera, 2003; Li and Manley, 2005; Paulsen et al., 2009; Sollier et al., 2014; Tuduri et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "e70a5f62-9f66-45a9-9c6f-08e6d8cf7682",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C14",
+      "claim": "R-loops are enriched at rDNA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "This is evidenced by the enrichment of R-loops at rDNA repeats (El Hage et al., 2010) and the binding of the R-loop suppressing factor Npl3 preferentially at the most highly transcribed genes (Santos-Pereira et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4e1fd062-e5c0-4acf-967c-b7387118752a",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C15",
+      "claim": "The R-loop suppressing factor Npl3 binds preferentially at the most highly transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is evidenced by the enrichment of R-loops at rDNA repeats (El Hage et al., 2010) and the binding of the R-loop suppressing factor Npl3 preferentially at the most highly transcribed genes (Santos-Pereira et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "07ffdc38-4254-42eb-9cfa-d3bc8f4a231c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C16",
+      "claim": "E2 treatment leads to a dose-dependent increase in P-H2AX intensity 24 hr after E2 addition in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a clear, dose-dependent increase in P-H2AX intensity 24 hr after E2 addition (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "83187463-90e3-4abf-99b5-7c47a8f869fe",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C17",
+      "claim": "E2 treatment results in an increase in 53BP1 foci in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "E2 treatment also resulted in an increase in 53BP1 foci (Figure 1\u2014figure supplement 1), another marker of damaged DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "9f8aab8d-5749-44b1-94c5-8747709a6a56",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C18",
+      "claim": "Cells treated with 1 or 100 nM E2 had similar cell cycle profiles despite significantly different P-H2AX levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cells treated with 1 or 100 nM E2 had similar cell cycle profiles (Figure 1\u2014figure supplement 2), despite significantly different P-H2AX levels, suggesting that the increase in DNA damage was not due to differences in the S phase population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by FACS data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "8997d947-8eb1-4a61-8a22-1f92033c6a96",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C19",
+      "claim": "The increase in DNA damage following E2 treatment was not due to differences in the S phase population.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cells treated with 1 or 100 nM E2 had similar cell cycle profiles (Figure 1\u2014figure supplement 2), despite significantly different P-H2AX levels, suggesting that the increase in DNA damage was not due to differences in the S phase population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that cells with similar cell cycle profiles had different P-H2AX levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "2725d35b-152b-440d-b798-d33deceb27a4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C20",
+      "claim": "ER-negative MCF10A breast epithelial cells showed no significant change in P-H2AX signal when treated with 100 nM E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ER-negative MCF10A breast epithelial cells showed no significant change in P-H2AX signal when treated with 100 nM E2 (Figure 1\u2014figure supplements 3A,B), consistent with the previous finding that E2-induced DNA damage depends on the ER (Williamson and Lees-Miller, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 1\u2014figure supplements 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "9fd2f1bd-2ca8-4ad1-bf09-e25d534c30f9",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C21",
+      "claim": "E2-induced DNA damage depends on the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ER-negative MCF10A breast epithelial cells showed no significant change in P-H2AX signal when treated with 100 nM E2 (Figure 1\u2014figure supplements 3A,B), consistent with the previous finding that E2-induced DNA damage depends on the ER (Williamson and Lees-Miller, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and by the experimental data showing no P-H2AX increase in ER-negative cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "42185d79-9258-45b6-98f2-e8211fe2f724",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C22",
+      "claim": "E2 treatment leads to an increase in DSBs as measured by the neutral comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutral comet assay provided direct evidence that E2 leads to DSB formation (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by neutral comet assay data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "7446e18e-6cbe-4ff6-94b4-c883ae05b3f4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C23",
+      "claim": "The P-H2AX signal resulting from 24 hr of E2 stimulation was significantly greater than the signal resulting from very short (10\u201340 min) treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined this early response to E2, we found that the P-H2AX signal resulting from 24 hr of E2 stimulation was significantly greater than the signal resulting from very short (10\u201340 min) treatments, raising the possibility that the later DNA breaks arise through a different mechanism (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by time-course data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "3895947c-e6f3-4bfe-9eb3-be29154d3dcc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C24",
+      "claim": "The later DNA breaks arising from E2 treatment may arise through a different mechanism than the early breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined this early response to E2, we found that the P-H2AX signal resulting from 24 hr of E2 stimulation was significantly greater than the signal resulting from very short (10\u201340 min) treatments, raising the possibility that the later DNA breaks arise through a different mechanism (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of different kinetics of P-H2AX signal.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ecf44f15-c5c1-4ae1-9d5f-4d7692318ab1",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C25",
+      "claim": "The percentage of P-H2AX positive cells increased dramatically after 16 and 24 hr of E2 treatment, and the majority of these cells were EdU positive.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of P-H2AX positive cells increased dramatically after 16 and 24 hr, and the majority of these cells were EdU positive (Figure 1 F,G, and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by EdU and P-H2AX co-staining data shown in Figure 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d6800386-7ef3-4b72-a288-1b00134d7ba7",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C26",
+      "claim": "E2-induced DNA damage may require DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding strongly suggests that E2-induced DNA damage may require DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that P-H2AX positive cells are predominantly EdU positive.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f11a4a94-c756-488a-bc7a-21f94879eeeb",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C27",
+      "claim": "Treatment with a Cdc7 inhibitor (PHA 767491) that largely blocks S phase entry reduced E2-induced DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we treated E2-stimulated cells with a Cdc7 inhibitor (PHA 767491) that largely blocks S phase entry (Figure 1\u2014figure supplement 5A), we found that the DNA damage was reduced (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by P-H2AX quantification data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "0735b94a-ffb9-4a32-a208-8959f61b1764",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C28",
+      "claim": "At the 1 \u03bcM dose of PHA 767491 used, phosphorylation of RNA Pol II at Ser2 by Cdk9 was not inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 1 \u03bcM dose of PHA 767491 used, phosphorylation of RNA Pol II at Ser2 by Cdk9 was not inhibited, indicating the effect on P-H2AX is not a result of inhibiting RNA Pol II elongation (Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Western blot data shown in Figure 1\u2014figure supplement 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "3dc36cab-8825-4493-9554-871918155759",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C29",
+      "claim": "The effect of PHA 767491 on P-H2AX is not a result of inhibiting RNA Pol II elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 1 \u03bcM dose of PHA 767491 used, phosphorylation of RNA Pol II at Ser2 by Cdk9 was not inhibited, indicating the effect on P-H2AX is not a result of inhibiting RNA Pol II elongation (Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that RNA Pol II phosphorylation was not affected by the inhibitor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "0d72aa6b-6c2b-4785-b110-5344a6ce3325",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C30",
+      "claim": "Treatment with the transcription inhibitor flavopiridol abolished the late E2-induced increase in P-H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with the transcription inhibitor flavopiridol abolished the late E2-induced increase in P-H2AX (Figure 1I) but did not significantly affect the percentage of cells in S phase (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by P-H2AX quantification data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "853f0695-d121-4475-9b0c-ebedb9b00ca6",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C31",
+      "claim": "Flavopiridol treatment did not significantly affect the percentage of cells in S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with the transcription inhibitor flavopiridol abolished the late E2-induced increase in P-H2AX (Figure 1I) but did not significantly affect the percentage of cells in S phase (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by EdU staining data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c9647fc9-3771-4a2d-9b1e-721a82229516",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C32",
+      "claim": "E2 induces DSBs in a replication- and transcription-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that E2 induces DSBs in a replication- and transcription-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experiments with Cdc7 inhibitor and flavopiridol.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "458f50c8-63a4-4288-b821-a419d5824d1d",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C33",
+      "claim": "E2 treatment leads to a dramatic increase in RNA-DNA hybrids as detected by the S9.6 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dramatic increase in RNA-DNA hybrids upon E2 treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by slot blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d25005cc-42c6-4643-8926-64403e2bc549",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C34",
+      "claim": "RNase H treatment abolished the S9.6 signal, indicating antibody specificity for RNA-DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNase H treatment, which specifically removes the RNA strand of an RNA-DNA hybrid, abolished the signal (Figure 2A), indicating antibody specificity for RNA-DNA hybrids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by slot blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c0a9711a-fdd7-4ba0-918f-4df8a15e3045",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C35",
+      "claim": "In mock-treated MCF7 cells, 17,445 DRIP peaks were observed across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In mock-treated MCF7 cells, we observed 17,445 DRIP peaks across the genome (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 1\u2014source data 1), a number in line with the previous DRIP-seq experiments performed in human Ntera2 cells and primary human fibroblasts (Ginno et al., 2012; Lim et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-seq data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "218d6f7f-f237-44f7-8447-c9e98bb16824",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C36",
+      "claim": "In cells treated with E2 for 2 hr, 33,458 DRIP peaks were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, in cells treated with E2 we observed a dramatic increase in DRIP peaks, with 33,458 or 24,781 peaks at 2 or 24 hr, respectively (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 1\u2014source data 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-seq data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4c7b0373-ae01-4fee-bd6e-15af71ab1aea",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C37",
+      "claim": "In cells treated with E2 for 24 hr, 24,781 DRIP peaks were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, in cells treated with E2 we observed a dramatic increase in DRIP peaks, with 33,458 or 24,781 peaks at 2 or 24 hr, respectively (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 1\u2014source data 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-seq data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "6fcd5f3c-d06e-438d-8247-cb6479c79bfe",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C38",
+      "claim": "DRIP peaks from mock-treated cells covered 49.0 Mb of genome space.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks from mock-treated cells covered 49.0 Mb of genome space, while those from E2-treated cells for 2 hr or 24 hr covered 81.9 MB and 63.2 Mb of genome space, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ff730bb8-df2d-48d9-8932-1bfbc914fa32",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C39",
+      "claim": "DRIP peaks from E2-treated cells for 2 hr covered 81.9 Mb of genome space.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks from mock-treated cells covered 49.0 Mb of genome space, while those from E2-treated cells for 2 hr or 24 hr covered 81.9 MB and 63.2 Mb of genome space, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "0a5b294d-8042-42c0-8f75-bdecc67dbfa7",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C40",
+      "claim": "DRIP peaks from E2-treated cells for 24 hr covered 63.2 Mb of genome space.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks from mock-treated cells covered 49.0 Mb of genome space, while those from E2-treated cells for 2 hr or 24 hr covered 81.9 MB and 63.2 Mb of genome space, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "485a740f-f9c5-4e0a-b34c-71d255983ba5",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C41",
+      "claim": "The vast majority of DRIP peaks were abolished by RNase H treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the vast majority of peaks were abolished by RNase H treatment (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-seq data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "60da3a28-ece0-47f3-816e-4d2884df2e5c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C42",
+      "claim": "DRIP peaks were enriched at promoters, 5' gene regions and sites of transcriptional termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DRIP peaks were enriched at promoters, 5' gene regions and sites of transcriptional termination (Figure 2B), consistent with their published distribution and roles at these regulatory regions (Ginno et al., 2013; Ginno et al., 2012; Skourti-Stathaki et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by meta-gene analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "0687feb6-049d-4dbe-b615-28ac69d60fa1",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C43",
+      "claim": "DRIP peaks exhibited GC skew.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks also exhibited GC skew (Figure 2\u2014figure supplement 1C) and overlapped with in vitro mapped G-quartets (Figure 2\u2014figure supplement 1D) (Chambers et al., 2015), two sequence characteristics that are associated with R-loop formation (Duquette et al., 2004; Ginno et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by GC skew analysis shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "40ec4ba7-1a13-4c76-9217-a085b1e7cab8",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C44",
+      "claim": "DRIP peaks overlapped with in vitro mapped G-quartets.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks also exhibited GC skew (Figure 2\u2014figure supplement 1C) and overlapped with in vitro mapped G-quartets (Figure 2\u2014figure supplement 1D) (Chambers et al., 2015), two sequence characteristics that are associated with R-loop formation (Duquette et al., 2004; Ginno et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by G-quartet analysis shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "7db7f625-22a9-47de-a003-e62aee3db5dc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C45",
+      "claim": "GC skew and G-quartet formation are sequence characteristics associated with R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP peaks also exhibited GC skew (Figure 2\u2014figure supplement 1C) and overlapped with in vitro mapped G-quartets (Figure 2\u2014figure supplement 1D) (Chambers et al., 2015), two sequence characteristics that are associated with R-loop formation (Duquette et al., 2004; Ginno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "836f4809-be6c-4895-af21-985cdd799946",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C46",
+      "claim": "E2 treatment is associated with a dramatic induction of R-loops at new genomic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations suggest that E2 treatment is associated with a dramatic induction of R-loops at new genomic sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the DRIP-seq data showing increased DRIP peaks upon E2 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "bb1202cd-b13c-427c-89d8-c177be0c4ac4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C47",
+      "claim": "8,023 DRIP peaks were significantly induced at 2 hr of E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of RNA-DNA hybrids induced after E2 treatment revealed a dramatic increase throughout the genome, with 8,023 and 3,263 peaks significantly induced at 2 hr or 24 hr, respectively (Figure 2C, Figure 2\u2014figure supplements 1A,B, Figure 2C \u2014 source data 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by differential DRIP peak analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "8c0a9563-e4df-4117-9712-b8308833aa03",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C48",
+      "claim": "3,263 DRIP peaks were significantly induced at 24 hr of E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of RNA-DNA hybrids induced after E2 treatment revealed a dramatic increase throughout the genome, with 8,023 and 3,263 peaks significantly induced at 2 hr or 24 hr, respectively (Figure 2C, Figure 2\u2014figure supplements 1A,B, Figure 2C \u2014 source data 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by differential DRIP peak analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "5218159f-1fda-4100-82c7-0cea3ed1f962",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C49",
+      "claim": "Approximately 60% of RNA-DNA hybrids induced at 24 hr were also significantly induced at 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those hybrids induced at 24 hr, ~60% were also significantly induced at 2 hr, suggesting that the E2 treatment can result in a sustained increase in R-loop formation at many loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "cdaff6fe-de0f-41da-9b71-8aad99ed55be",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C50",
+      "claim": "E2 treatment can result in a sustained increase in R-loop formation at many loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those hybrids induced at 24 hr, ~60% were also significantly induced at 2 hr, suggesting that the E2 treatment can result in a sustained increase in R-loop formation at many loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that many R-loops persist from 2 hr to 24 hr.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ab162a66-4060-48e1-a8bb-353bb3506744",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C51",
+      "claim": "XBP1 showed a robust increase in R-loops following E2 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci that showed a robust increase following E2 addition include XBP1, CCND1 (Cyclin D1), and SLC7A5 (Figure 2D,E, Figure 2\u2014figure supplement 1E), all targets of E2-transcription (Honkela et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by IGV display shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "60051e75-0a45-4434-8abf-8636bf7820f0",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C52",
+      "claim": "CCND1 (Cyclin D1) showed a robust increase in R-loops following E2 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci that showed a robust increase following E2 addition include XBP1, CCND1 (Cyclin D1), and SLC7A5 (Figure 2D,E, Figure 2\u2014figure supplement 1E), all targets of E2-transcription (Honkela et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by IGV display shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "54952182-c728-4d7f-b602-c8f26ffec571",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C53",
+      "claim": "SLC7A5 showed a robust increase in R-loops following E2 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci that showed a robust increase following E2 addition include XBP1, CCND1 (Cyclin D1), and SLC7A5 (Figure 2D,E, Figure 2\u2014figure supplement 1E), all targets of E2-transcription (Honkela et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by IGV display shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "b7dbd763-0760-426e-a65c-c548577971c5",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C54",
+      "claim": "XBP1, CCND1, and SLC7A5 are all targets of E2-transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci that showed a robust increase following E2 addition include XBP1, CCND1 (Cyclin D1), and SLC7A5 (Figure 2D,E, Figure 2\u2014figure supplement 1E), all targets of E2-transcription (Honkela et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c16d8a89-dc7c-4344-aa4f-ce06c492ed4a",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C55",
+      "claim": "A dose-dependent increase in DRIP signal was observed upon both 10 nM and 100 nM E2 treatment at several E2-transcription targets.",
+      "claim_type": "EXPLICIT",
+      "source": "A dose-dependent increase in DRIP signal was observed upon both 10 nM and 100 nM E2 treatment at several E2-transcription targets (Figure 2F), while two genomic regions (MLKL and 83/84) devoid of DRIP peaks showed no change.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-qPCR data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "df929bd2-f12c-4f99-9a15-f8941077edbc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C56",
+      "claim": "Two genomic regions (MLKL and 83/84) devoid of DRIP peaks showed no change in DRIP signal upon E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A dose-dependent increase in DRIP signal was observed upon both 10 nM and 100 nM E2 treatment at several E2-transcription targets (Figure 2F), while two genomic regions (MLKL and 83/84) devoid of DRIP peaks showed no change.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-qPCR data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "338ac3ca-ed13-4a49-a77e-affa950769b8",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C57",
+      "claim": "E2-induced RNA-DNA hybrids are dramatically enriched in E2-transcriptionally responsive genes at both 2 hr and 24 hr time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a dramatic enrichment of R-loops in E2-transcriptionally responsive genes at both time points (Figure 2G, red highlighting).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by GREAT analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "953889b2-40ff-4919-8929-a783ee3593b8",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C58",
+      "claim": "The induction of R-loops by E2 is a robust response that occurs quickly at E2-responsive genes, and persists at a subset of these genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data clearly demonstrate that the induction of R-loops by E2 is a robust response that occurs quickly at E2-responsive genes, and persists at a subset of these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the DRIP-seq and GREAT analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ebb9fba9-7f6e-4c9e-94b6-6cb4fa4d0623",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C59",
+      "claim": "R-loop formation occurs prior to the onset of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with data shown in Figure 1, these data also demonstrate that R-loop formation occurs prior to the onset of DNA damage, and in cells that have not yet entered S phase (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that R-loops are induced at 2 hr while DNA damage is not significant until later time points.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "81d0cccc-dfb0-4974-8acd-edab9e80bb26",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C60",
+      "claim": "R-loop formation occurs in cells that have not yet entered S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with data shown in Figure 1, these data also demonstrate that R-loop formation occurs prior to the onset of DNA damage, and in cells that have not yet entered S phase (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by FACS data shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "71939fcb-9cec-4b75-8a96-e72df1fee20b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C61",
+      "claim": "A modest correlation between the induction of DRIP signal and the induction of expression was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A modest correlation between the induction of DRIP signal and the induction of expression was observed, consistent with the requirement for transcription in R-loop formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from correlation analysis with GRO-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "222fc623-677b-4586-baff-417d7975d9d5",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C62",
+      "claim": "The majority of induced DRIP peaks were found in E2-responsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of induced DRIP peaks were found in E2-responsive genes (red highlighting), some were also induced at sites that were not E2-responsive or that were negatively regulated by E2 (blue highlighting).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by correlation analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "fe128573-1bf9-434e-8699-3a1de30457ab",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C63",
+      "claim": "Some induced DRIP peaks were also induced at sites that were not E2-responsive or that were negatively regulated by E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of induced DRIP peaks were found in E2-responsive genes (red highlighting), some were also induced at sites that were not E2-responsive or that were negatively regulated by E2 (blue highlighting).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by correlation analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "3988ada2-592b-4fb0-bdae-9d6a35e07e8f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C64",
+      "claim": "DRIP peaks do not form only on highly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found no meaningful correlation between DRIP signal enrichment and overall expression level as measured by publically available RNA-seq data from similarly paired conditions. This finding indicates that DRIP peaks do not form only on highly expressed genes (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by correlation analysis shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "2b77ff49-d2ab-47ff-8423-cd01d2adadad",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C65",
+      "claim": "R-loop induction by E2 is correlated with E2-induced transcription, but expression level is not the sole determinant of R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that R-loop induction by E2 is correlated with E2-induced transcription, but that expression level is not the sole determinant of R-loop formation and other secondary structures or sequence elements may contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the correlation analyses with GRO-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "49d55a0e-a7dc-4864-94f6-8f1ff209852c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C66",
+      "claim": "Other secondary structures or sequence elements may contribute to R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that R-loop induction by E2 is correlated with E2-induced transcription, but that expression level is not the sole determinant of R-loop formation and other secondary structures or sequence elements may contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation that expression level alone does not fully explain R-loop formation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4e56bc03-a846-4399-834a-3f3c67f341a1",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C67",
+      "claim": "Structural variants in breast cancer are significantly enriched in genes that are transcriptionally-responsive to E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed a significant enrichment of both structural variants (p<1.00*10\u22126) and translocations (p<1.00*10\u22126) in genes that are transcriptionally-responsive to E2 (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by enrichment analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c1c9c2fa-cc45-400e-bfc1-82d64a4a7342",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C68",
+      "claim": "Translocations in breast cancer are significantly enriched in genes that are transcriptionally-responsive to E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed a significant enrichment of both structural variants (p<1.00*10\u22126) and translocations (p<1.00*10\u22126) in genes that are transcriptionally-responsive to E2 (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by enrichment analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "b2d1d955-7d7f-4b40-9a15-7d39605031a0",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C69",
+      "claim": "There were fewer simple somatic mutations in E2-responsive loci relative to the matched set.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were fewer simple somatic mutations in E2-responsive loci relative to the matched set (p<1.00*10\u22126) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by enrichment analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c66d2305-16c1-4394-a900-d53dbf74623f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C70",
+      "claim": "Genes whose expression is induced in response to E2 are enriched in genomic rearrangements in breast tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that genes whose expression is induced in response to E2 are enriched in genomic rearrangements in breast tumors and support the view that these sites are prone to certain types of DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the enrichment analysis of breast cancer mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "9735a47b-8ebe-4b24-a5db-d12c686bc496",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C71",
+      "claim": "E2-responsive sites are prone to certain types of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that genes whose expression is induced in response to E2 are enriched in genomic rearrangements in breast tumors and support the view that these sites are prone to certain types of DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the enrichment of rearrangements in E2-responsive genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ce300b1b-6a00-4335-a050-4ff890fbf751",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C72",
+      "claim": "The percentage of cells that contain at least one PLA focus in the nucleus increased approximately 2-fold following E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the percentage of cells that contain at least one PLA focus in the nucleus increased approximately 2-fold following E2 treatment (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by PLA data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "b03e6919-a0a6-433b-982c-0b46cdc5c9c5",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C73",
+      "claim": "The majority of DNA damage may occur at a distance from the R-loop that is outside the limits of PLA detection (<30\u201340 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively small number of detectable interactions between the RNA-DNA hybrid and P-H2AX antibodies upon E2 addition may indicate that the majority of DNA damage occurs at a distance from the R-loop that is outside the limits of PLA detection (<30\u201340 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of relatively few PLA foci.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "88006c63-6397-45b8-9af3-a38ba6611405",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C74",
+      "claim": "Both P-H2AX and P-KAP1 interacted with RNA-DNA hybrid containing chromatin fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that that both P-H2AX and another DDR target, P-KAP1, interacted with RNA-DNA hybrid containing chromatin fragments (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by co-IP data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4f5151a9-4a75-4d9d-a271-728009fc5e38",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C75",
+      "claim": "The interaction between P-H2AX/P-KAP1 and RNA-DNA hybrids was specific, as it did not occur with MCM3.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was specific, as it did not occur with MCM3, another chromatin-bound protein (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by co-IP data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "b530e6c2-6abd-4a49-a9eb-1de23df7c46e",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C76",
+      "claim": "DNA damage markers bind the chromatin environment near R-loops following E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that DNA damage markers bind the chromatin environment near R-loops following E2 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the PLA and co-IP experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "25142ef5-de04-44f3-9d51-c890777bda87",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C77",
+      "claim": "Expression of RNase H resulted in a dramatic and dose-dependent reduction in P-H2AX intensity and foci formation upon E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed a dramatic and dose-dependent reduction in P-H2AX intensity and foci formation upon increasing RNase H expression (Figure 4E,F, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "3dc2ff7b-631c-498c-8258-7ea5ffecd607",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C78",
+      "claim": "Expression of RNase H did not alter E2-driven cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of RNase H did not alter E2-driven cell cycle progression (Figure 4\u2014figure supplement 3), nor did it reduce global levels of transcription, as measured by EU labeling (Figure 4\u2014figure supplements 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by FACS data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "9c346d9c-f95b-42f1-abf1-0029b7580954",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C79",
+      "claim": "Expression of RNase H did not reduce global levels of transcription, as measured by EU labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of RNase H did not alter E2-driven cell cycle progression (Figure 4\u2014figure supplement 3), nor did it reduce global levels of transcription, as measured by EU labeling (Figure 4\u2014figure supplements 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by EU staining data shown in Figure 4\u2014figure supplements 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "43f6acf7-55be-4c49-aa93-fa44724a9211",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C80",
+      "claim": "The decreased P-H2AX signal upon RNase H expression is not a result of reduced transcription or a defect in cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the decreased P-H2AX signal is not a result of reduced transcription or a defect in cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observations that RNase H does not affect transcription or cell cycle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "59d82922-fa31-4ac6-91ac-6a170f21965b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C81",
+      "claim": "RNase H expression resulted in a significant decrease in DSBs upon E2 stimulation, as measured by the neutral comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that RNase H expression resulted in a significant decrease in DSBs upon E2 stimulation, as measured by the neutral comet assay (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by neutral comet assay data shown in Figure 4G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "048af19e-d2c8-4a29-b802-b898355e0d5e",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C82",
+      "claim": "RNA-DNA hybrids are needed to form E2-induced DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings clearly demonstrate that RNA-DNA hybrids are needed to form E2-induced DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the RNase H overexpression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "af18e32b-a512-4106-9591-4aa906e4d8c9",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C83",
+      "claim": "R-loop-mediated DSB formation depends on factors specifically involved in transcription-coupled nucleotide excision repair (TC-NER), but not factors specifically involved in global genome NER (GG-NER).",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that R-loop-mediated DSB formation depends on factors specifically involved in transcription-coupled nucleotide excision repair (TC-NER), but not factors specifically involved in global genome NER (GG-NER) (Sollier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f7353be3-e6fb-4715-a34e-2338dfe60c90",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C84",
+      "claim": "P-H2AX levels were significantly reduced following knockdown of XPG.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that P-H2AX levels were significantly reduced following knockdown of XPG, an endonuclease involved in both forms NER (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4e8a73ab-4f8e-462b-a7a9-90d962625a1d",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C85",
+      "claim": "XPG knockdown dramatically reduced the comet tail moment that forms in response to E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "XPG knockdown also dramatically reduced the comet tail moment that forms in response to E2 treatment (Figure 5B,C), signifying a significant reduction in E2-mediated DSBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by neutral comet assay data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "82241dd9-aead-440d-b587-16ce5aecfcf5",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C86",
+      "claim": "Knockdown of the TC-NER specific factor Cockayne syndrome group B (CSB) significantly reduced P-H2AX levels induced by E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also found that knockdown of the TC-NER specific factor Cockayne syndrome group B (CSB) significantly reduced P-H2AX levels induced by E2 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "b774bf73-0133-41c7-bf04-374d1e8bd681",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C87",
+      "claim": "Knockdown of XPC, a lesion-recognition factor specifically involved in GG-NER, caused little change in P-H2AX levels after E2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, knockdown of XPC, a lesion-recognition factor specifically involved in GG-NER, caused little change in P-H2AX levels after E2 treatment (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by immunostaining data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "61b993f9-18e0-487b-9570-1133d351e9c4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C88",
+      "claim": "R-loops induced by E2 are processed by TC-NER factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that R-loops induced by E2 are processed by TC-NER factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential effects of TC-NER and GG-NER factor knockdowns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f792a0a7-e1fa-4d6d-9b4b-8753ebb0842f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C89",
+      "claim": "Replication-dependent E2-induced DNA damage results from the induction of R-loops triggered by E2-mediated transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken as a whole, our findings demonstrate that replication-dependent E2-induced DNA damage results from the induction of R-loops triggered by E2-mediated transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "16d96544-5abc-45b0-a2a9-49095762e464",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C90",
+      "claim": "TopoII\u03b2 and APOBEC3B cause the rapid and transient formation of DNA damage in a process necessary for E2-induced transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TopoII\u03b2 and APOBEC3B cause the rapid and transient formation of DNA damage in a process necessary for E2-induced transcriptional activation (Ju et al., 2006; Periyasamy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "bd049066-7b67-4e09-b503-9a57d50fd1ce",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C91",
+      "claim": "E2 metabolites can cause oxidative DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, E2 metabolites can cause oxidative DNA damage (Lavigne et al., 2001; Yager, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ccd676bf-9120-4db6-8e71-41fa159cd4f3",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C92",
+      "claim": "Although E2 causes a dramatic increase in R-loops after 2 hr, no significant change in DNA damage is observed at that time.",
+      "claim_type": "EXPLICIT",
+      "source": "Although E2 causes a dramatic increase in R-loops after 2 hr (Figure 2C), no significant change in DNA damage is observed at that time (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by data shown in Figures 1F and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c0691490-97f7-4d99-93f3-d9adb50a3de1",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C93",
+      "claim": "R-loops are present but do not cause DNA damage until S phase entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although R-loops are present, they do not cause DNA damage until S phase entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that R-loops form before DNA damage and that DNA damage requires replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "e990e427-ef37-4e27-9bac-952cc9ab4111",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C94",
+      "claim": "R-loop-dependent DNA damage has been previously associated with DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, R-loop-dependent DNA damage has been previously associated with DNA replication (Alzu et al., 2012; Gan et al., 2011; Houlard et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "39104692-61ce-4699-b791-7a8a86a6f574",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C95",
+      "claim": "A few common fragile sites correspond to late-replicating, long genes where R-loops form.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a few common fragile sites correspond to late-replicating, long genes where R-loops form, and early-replicating fragile sites are associated with highly transcribed genes (Barlow et al., 2013; Helmrich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "bcc739ce-5fb2-44a5-a9bc-dbdae58110a0",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C96",
+      "claim": "Early-replicating fragile sites are associated with highly transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a few common fragile sites correspond to late-replicating, long genes where R-loops form, and early-replicating fragile sites are associated with highly transcribed genes (Barlow et al., 2013; Helmrich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "06d5df18-5855-4196-912e-f01fb7735378",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C97",
+      "claim": "Genes that are highly transcribed or R-loop prone may pose the greatest challenge to genome integrity when they meet the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that genes that are highly transcribed or R-loop prone may pose the greatest challenge to genome integrity when they meet the replication fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the association of fragile sites with transcription and R-loops.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "cbd3d44f-0f0d-4f67-8478-2ad6af8aa9f6",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C98",
+      "claim": "TC-NER factors may be acting in a non-canonical manner in S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that these factors may be acting in a non-canonical manner in S phase, and there are several possible mechanisms by which their activity may be coordinated with replication activities that have been previously discussed (see Sollier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation that TC-NER factors are involved in replication-dependent damage.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "c0bb4446-57eb-4f4b-a71e-ab34e14e1543",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C99",
+      "claim": "R-loops are induced predominantly at E2-responsive genes (p<10\u2212233).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we find that R-loops are induced predominantly at E2-responsive genes (p<10\u2212233).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and is derived from GREAT analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "23e4f676-26e1-4a54-9132-e0b3ca8b26ce",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C100",
+      "claim": "A small subset of genomic regions exist that show a significant increase in R-loops despite no increase in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a small subset of genomic regions exist that show a significant increase in R-loops despite no increase in expression (Figure 2H, blue highlighting).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by correlation analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "fdca3029-e67b-4cda-ab65-05040251894b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C101",
+      "claim": "RPL13A, the expression of which is unaffected by E2, showed a significant increase in R-loops upon E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RPL13A, the expression of which is unaffected by E2 (Shah and Faridi, 2011), showed a significant increase in R-loops upon E2 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by DRIP-qPCR data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f505b36c-f62d-4eed-8ea5-854dc4903e1c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C102",
+      "claim": "Upon a burst in transcription, the cell's normal splicing and R-loop modulating factors initially become saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that upon a burst in transcription, the cell's normal splicing and R-loop modulating factors initially become saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposed as a possible explanation for R-loop formation at non-responsive genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d63c0dd3-07cf-46d7-bca5-8e77840e49e7",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C103",
+      "claim": "Some loci that are prone to form R-loops may accumulate these structures and become vulnerable to DNA damage, regardless of their response to the transcription stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, some loci that are prone to form R-loops may accumulate these structures and become vulnerable to DNA damage, regardless of their response to the transcription stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposed as a possible explanation for R-loop formation at non-responsive genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ea171053-350f-495a-8b64-a0172b18b0ee",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C104",
+      "claim": "Both structural variants and translocations have been suggested to occur due to erroneous repair of a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Both structural variants and translocations have been suggested to occur due to erroneous repair of a DSB (Kasparek and Humphrey, 2011) and these mutation types have been shown to be more prevalent in breast tumors relative to other tumor tissues (Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "5e4143b2-cd6e-4e92-bbd3-ae9a278f84e8",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C105",
+      "claim": "Structural variants and translocations have been shown to be more prevalent in breast tumors relative to other tumor tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Both structural variants and translocations have been suggested to occur due to erroneous repair of a DSB (Kasparek and Humphrey, 2011) and these mutation types have been shown to be more prevalent in breast tumors relative to other tumor tissues (Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "93ee046c-7996-472d-a78b-c05a363981e3",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C106",
+      "claim": "E2 induces robust R-loop formation at Cyclin D1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we observed a dramatic increase in R-loops at Cyclin D1 (Figure 2E), which is amplified in up to 20% of breast cancers, the majority of which are ER-positive (Arnold and Papanikolaou, 2005; Osborne et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by IGV display shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "6404ffb5-1bcb-4d8a-9287-4169b74242f7",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C107",
+      "claim": "Cyclin D1 is amplified in up to 20% of breast cancers, the majority of which are ER-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we observed a dramatic increase in R-loops at Cyclin D1 (Figure 2E), which is amplified in up to 20% of breast cancers, the majority of which are ER-positive (Arnold and Papanikolaou, 2005; Osborne et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "18597e38-16c6-4baf-8f52-cfc39e40bb93",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C108",
+      "claim": "E2 induces robust R-loop formation at ZNF703.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, E2 induces robust R-loop formation at ZNF703.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "a7cf4cca-3414-49ac-950b-1db28441383a",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C109",
+      "claim": "ZNF703 has been implicated in driving oncogenesis in luminal B breast tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This locus has been implicated in driving oncogenesis in luminal B breast tumors (Holland et al., 2011; Sircoulomb et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "2d88cde8-34ab-4847-bb6b-2591356ff1b2",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C110",
+      "claim": "Both Cyclin D1 and ZNF703 were among the genes identified as breast cancer drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Cyclin D1 and ZNF703 were among the genes identified as breast cancer drivers, as were an additional 27 genes with E2-induced R-loops (Nik-Zainal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and supported by a citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f0a31e22-085c-4aad-b695-707f9130b1ae",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C111",
+      "claim": "An additional 27 genes with E2-induced R-loops were identified as breast cancer drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Cyclin D1 and ZNF703 were among the genes identified as breast cancer drivers, as were an additional 27 genes with E2-induced R-loops (Nik-Zainal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the text and supported by a citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "a48cd271-8a55-4005-ba2a-b66f6c150996",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C112",
+      "claim": "E2-induced R-loop formation could lead to DNA damage and genome instability at some R-loop prone loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings raise the possibility that E2-induced R-loop formation could lead to DNA damage and genome instability at some of these and other R-loop prone loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the findings of R-loops at cancer driver genes.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "16d7dc03-e77e-44c5-8197-8402ec807a5d",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C113",
+      "claim": "Testosterone (DHT) stimulation in prostate cells has been shown to lead to DSBs and recurrent translocations at androgen-receptor (AR) target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, testosterone (DHT) stimulation in prostate cells has been shown to lead to DSBs and recurrent translocations at androgen-receptor (AR) target loci (Haffner et al., 2010; Lin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "987f475a-e2b3-4092-abe7-6de71c26aacc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C114",
+      "claim": "DHT-induced breaks are TOP2B-dependent and necessary for the induction of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "While these breaks are TOP2B-dependent and necessary for the induction of transcription, DHT may also induce DNA damage in an R-loop and replication dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "e17416ea-f6de-44f3-a358-62ffe6f406c1",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C115",
+      "claim": "DHT may also induce DNA damage in an R-loop and replication dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While these breaks are TOP2B-dependent and necessary for the induction of transcription, DHT may also induce DNA damage in an R-loop and replication dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, drawing a parallel to the E2 findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "e65e8bad-ca8a-4a28-9b0d-771122837a25",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C116",
+      "claim": "In prostate cancer, recurrent rearrangements are frequently observed at androgen-receptor (AR) target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in prostate cancer, recurrent rearrangements are frequently observed at androgen-receptor (AR) target genes (Kumar-Sinha et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "4492525f-ba36-42b7-b685-980e391118a4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "claim_id": "C117",
+      "claim": "The induction of potentially toxic R-loops at sites of induced transcription may offer insight into the tissue-specific DNA damage and mutation patterns observed in some cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the induction of potentially toxic R-loops at sites of induced transcription may offer insight into the tissue-specific DNA damage and mutation patterns observed in some cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a broader implication of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E2 treatment induces dose-dependent DNA damage in ER-positive breast epithelial cells, as measured by P-H2AX and 53BP1 foci, and this damage is ER-dependent. The increase in DNA damage is not due to differences in S phase population, and E2 treatment leads to an increase in DSBs as measured by the neutral comet assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 collectively demonstrate that E2 induces DNA damage in ER-positive cells through multiple complementary assays (P-H2AX immunostaining, 53BP1 foci, neutral comet assay). The ER-dependence is confirmed by negative control experiments in ER-negative MCF10A cells (C20-C21). The cell cycle analysis (C18-C19) appropriately controls for S phase differences. The data are internally consistent and supported by multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ca278b19-9b65-479b-96f5-4b27eea5347c",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "E2-induced DNA damage at 24 hr is significantly greater than early (10-40 min) damage and requires both DNA replication and transcription. The majority of P-H2AX positive cells at 16-24 hr are EdU positive, and inhibition of S phase entry (Cdc7 inhibitor) or transcription (flavopiridol) reduces E2-induced DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32 provide strong evidence for replication- and transcription-dependent DNA damage through multiple pharmacological inhibitor experiments (C27, C30) with appropriate controls (C28-C29, C31). The EdU co-staining data (C25-C26) directly links DNA damage to replicating cells. The time-course analysis (C23) distinguishes early from late damage mechanisms. The conclusion (C32) is well-supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "45d55415-545b-4d97-aef2-b47e1042f85f",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "E2 treatment leads to a dramatic increase in RNA-DNA hybrids (R-loops) genome-wide, as detected by S9.6 antibody and DRIP-seq. DRIP peaks increase from 17,445 in mock-treated cells to 33,458 at 2 hr and 24,781 at 24 hr E2 treatment. These peaks are RNase H-sensitive and exhibit characteristic R-loop features including enrichment at promoters, 5' gene regions, transcription termination sites, GC skew, and G-quartet overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C46 provide comprehensive characterization of E2-induced R-loops through multiple complementary approaches. The RNase H sensitivity (C34, C41) confirms specificity for RNA-DNA hybrids. The DRIP-seq data (C35-C40) show dramatic and reproducible increases in R-loop formation. The genomic features (C42-C44) are consistent with known R-loop characteristics from prior literature (C45). The conclusion (C46) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ac379ca3-694c-4a03-a159-081c538bc995",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E2 induces 8,023 DRIP peaks at 2 hr and 3,263 peaks at 24 hr, with ~60% of 24 hr peaks also induced at 2 hr, indicating sustained R-loop formation. E2-induced R-loops are dramatically enriched at E2-transcriptionally responsive genes including XBP1, CCND1, and SLC7A5, as validated by DRIP-qPCR and GREAT analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C58 demonstrate specific enrichment of R-loops at E2-responsive genes through differential peak analysis (C47-C48), temporal analysis (C49-C50), specific gene examples (C51-C53), DRIP-qPCR validation (C55-C56), and functional enrichment analysis (C57). The data are internally consistent and the conclusion (C58) is well-supported. The use of negative control regions (C56) strengthens the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "R-loop formation occurs prior to DNA damage onset and in cells that have not entered S phase. R-loop induction correlates modestly with E2-induced transcription (GRO-seq), with the majority of induced DRIP peaks in E2-responsive genes, but some also at non-responsive or negatively regulated sites. Expression level alone is not the sole determinant of R-loop formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 integrate temporal (C59-C60), transcriptional (C61-C63), and expression-level (C64) analyses to characterize the relationship between transcription and R-loop formation. The modest correlation (C61) and exceptions (C63, C64) are appropriately acknowledged. The conclusion (C65) is well-supported, though the speculation about other contributing factors (C66) is appropriately tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ba47d746-a8c4-4102-879d-fb979a09b721",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structural variants and translocations in breast cancer are significantly enriched in E2-responsive genes (p<1.00*10^-6 for both), while simple somatic mutations are depleted in these regions (p<1.00*10^-6). This demonstrates that E2-responsive genes are enriched in genomic rearrangements and prone to certain types of DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 provide strong statistical evidence for enrichment of specific mutation types in E2-responsive genes using large-scale breast cancer genomic data (560 tumors). The analysis appropriately controls for expression level and replication timing. The differential enrichment of rearrangements vs. simple mutations (C67-C69) is internally consistent and statistically significant. The conclusions (C70-C71) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNA damage markers (P-H2AX and P-KAP1) colocalize with R-loops following E2 treatment, as demonstrated by proximity ligation assay (2-fold increase in PLA foci) and co-immunoprecipitation experiments. The interaction is specific, as it does not occur with the chromatin-bound protein MCM3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 provide evidence for spatial association between R-loops and DNA damage markers through two complementary approaches (PLA and co-IP). The specificity control (C75) strengthens the conclusion. However, the relatively modest PLA signal (C72) and the speculation about detection limits (C73) suggest the association may be indirect or occur at a distance. The conclusion (C76) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "db129f07-7b68-4f74-bb99-0cad3e264094",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNase H overexpression results in a dramatic, dose-dependent reduction in E2-induced P-H2AX intensity, foci formation, and DSBs (neutral comet assay), without affecting cell cycle progression or global transcription levels. This demonstrates that RNA-DNA hybrids are required for E2-induced DSB formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 provide strong causal evidence that R-loops are required for E2-induced DNA damage through RNase H overexpression experiments. The dose-dependent effect (C77) and appropriate controls for cell cycle (C78) and transcription (C79) strengthen the conclusion. The neutral comet assay (C81) directly measures DSBs. The conclusion (C82) is well-supported by the data and represents a key mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "d8b37c89-2282-446e-a4d5-f47c4be62961",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "E2-induced DNA damage requires TC-NER factors (XPG and CSB) but not GG-NER factors (XPC). Knockdown of XPG or CSB significantly reduces P-H2AX levels and DSBs, while XPC knockdown has little effect. This demonstrates that R-loops induced by E2 are processed by TC-NER factors and that replication-dependent E2-induced DNA damage results from R-loops triggered by E2-mediated transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 provide strong evidence for TC-NER involvement through differential knockdown experiments with appropriate specificity controls (C87). The use of both P-H2AX (C84, C86, C87) and neutral comet assay (C85) strengthens the conclusions. The differential requirement for TC-NER vs. GG-NER factors is consistent with prior work (C83) and supports the mechanistic model. The final conclusion (C89) integrates multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "f8b21afb-27a0-46e2-9c43-1c3cf946311a",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Although E2 causes a dramatic increase in R-loops after 2 hr, no significant change in DNA damage is observed at that time. R-loops are present but do not cause DNA damage until S phase entry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 integrate temporal data from Figures 1F and 2C to establish the sequence of events: R-loop formation precedes DNA damage, which requires replication. This is consistent with the EdU co-staining data (C25) and Cdc7 inhibitor experiments (C27). The inference (C93) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "ff50cc59-7a5c-4c1d-b42f-2defe6bddcc6",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "R-loops are induced predominantly at E2-responsive genes (p<10^-233), but a small subset of genomic regions show increased R-loops despite no increase in expression, including RPL13A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 provide strong statistical evidence for enrichment at E2-responsive genes (C99) while acknowledging exceptions (C100-C101). The RPL13A example (C101) is validated by DRIP-qPCR. This nuanced view is consistent with the correlation analysis (C61-C65) and appropriately acknowledges complexity in R-loop formation determinants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "673a3b08-922f-461a-a95d-eebb72aaa4bc",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E2 induces robust R-loop formation at cancer-associated genes including Cyclin D1 (amplified in 20% of ER-positive breast cancers) and ZNF703 (implicated in luminal B breast tumors). Both genes, along with 27 additional genes with E2-induced R-loops, were identified as breast cancer drivers, raising the possibility that E2-induced R-loop formation could lead to DNA damage and genome instability at these loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C112 link E2-induced R-loops to cancer-relevant genes through specific examples (C106, C108) with literature support for their cancer associations (C107, C109). The identification of 29 total cancer driver genes with E2-induced R-loops (C110-C111) strengthens the biological significance. However, the causal link (C112) remains speculative and would require additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "60360a91-6025-4631-95f0-94e0416e2362",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior literature establishes that higher E2 serum concentrations and longer lifetime E2 exposure are correlated with increased breast cancer incidence, that E2 leads to DNA damage in ER-expressing breast epithelial cells, and that E2 governs expression of thousands of genes through ER-\u03b1 and ER-\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 accurately summarize established prior knowledge from cited literature. These claims provide appropriate context for the current study but do not represent new findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature establishes that R-loops serve regulatory roles in cells, can facilitate programmed recombination in B-cells, and that loss of RNA processing factors leads to increased R-loops and DNA damage. R-loops are enriched at highly transcribed loci and exhibit characteristic sequence features including GC skew and G-quartet formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 and C45 accurately summarize established R-loop biology from cited literature. These claims provide appropriate background context but do not represent new findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "0c112b22-3ef9-4190-89cd-21ed44b98c06",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established that R-loop-mediated DSB formation depends on TC-NER factors, that TopoII\u03b2 and APOBEC3B cause rapid DNA damage necessary for E2-induced transcription, that E2 metabolites cause oxidative damage, and that R-loop-dependent DNA damage is associated with replication and fragile sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C90-C91, and C94-C97 accurately summarize relevant prior literature, including the authors' own previous work (C83). These claims provide appropriate context for interpreting the current findings but do not represent new results. The citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "1bd83627-3875-4d34-a560-1af1104bd204",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior literature establishes that structural variants and translocations arise from erroneous DSB repair and are more prevalent in breast tumors, and that testosterone stimulation in prostate cells leads to DSBs and translocations at AR target loci through TOP2B-dependent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 and C113-C114, C116 accurately summarize relevant prior literature on mutation mechanisms and hormone-induced DNA damage in other systems. These claims provide appropriate context for the discussion but do not represent new findings. The citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    },
+    {
+      "id": "6a7319f1-efa1-46e5-8d48-2a00a60633be",
+      "content_id": "3cb0f89f-87f5-43b7-8384-6d6ac93cfb23",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript includes several speculative claims about mechanisms: that later DNA breaks may arise through different mechanisms than early breaks, that other factors beyond expression level contribute to R-loop formation, that DNA damage may occur at a distance from R-loops, that TC-NER factors may act non-canonically in S phase, that R-loop regulatory factors may become saturated during transcriptional bursts, that E2-induced R-loops could lead to instability at cancer driver genes, that DHT may induce R-loop-dependent damage in prostate, and that R-loop induction may explain tissue-specific mutation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24, C66, C73, C98, C102-C103, C112, C115, and C117 represent speculative interpretations or hypotheses that extend beyond the direct experimental evidence. While these speculations are reasonable and appropriately presented as possibilities rather than conclusions, they would require additional experimental validation. These represent important directions for future work but are not directly supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:30.561528Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "07ffdc38-4254-42eb-9cfa-d3bc8f4a231c",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "83187463-90e3-4abf-99b5-7c47a8f869fe",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "9f8aab8d-5749-44b1-94c5-8747709a6a56",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "8997d947-8eb1-4a61-8a22-1f92033c6a96",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "2725d35b-152b-440d-b798-d33deceb27a4",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "9fd2f1bd-2ca8-4ad1-bf09-e25d534c30f9",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "42185d79-9258-45b6-98f2-e8211fe2f724",
+      "result_id": "8e06484b-e1e8-4ee0-94b7-f977183d90d4"
+    },
+    {
+      "claim_id": "7446e18e-6cbe-4ff6-94b4-c883ae05b3f4",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "3895947c-e6f3-4bfe-9eb3-be29154d3dcc",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "ecf44f15-c5c1-4ae1-9d5f-4d7692318ab1",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "d6800386-7ef3-4b72-a288-1b00134d7ba7",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "f11a4a94-c756-488a-bc7a-21f94879eeeb",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "0735b94a-ffb9-4a32-a208-8959f61b1764",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "3dc36cab-8825-4493-9554-871918155759",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "0d72aa6b-6c2b-4785-b110-5344a6ce3325",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "853f0695-d121-4475-9b0c-ebedb9b00ca6",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "c9647fc9-3771-4a2d-9b1e-721a82229516",
+      "result_id": "ca278b19-9b65-479b-96f5-4b27eea5347c"
+    },
+    {
+      "claim_id": "458f50c8-63a4-4288-b821-a419d5824d1d",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "d25005cc-42c6-4643-8926-64403e2bc549",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "c0a9711a-fdd7-4ba0-918f-4df8a15e3045",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "218d6f7f-f237-44f7-8447-c9e98bb16824",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "4c7b0373-ae01-4fee-bd6e-15af71ab1aea",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "6fcd5f3c-d06e-438d-8247-cb6479c79bfe",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "ff730bb8-df2d-48d9-8932-1bfbc914fa32",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "0a5b294d-8042-42c0-8f75-bdecc67dbfa7",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "485a740f-f9c5-4e0a-b34c-71d255983ba5",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "60da3a28-ece0-47f3-816e-4d2884df2e5c",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "0687feb6-049d-4dbe-b615-28ac69d60fa1",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "40ec4ba7-1a13-4c76-9217-a085b1e7cab8",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "7db7f625-22a9-47de-a003-e62aee3db5dc",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "836f4809-be6c-4895-af21-985cdd799946",
+      "result_id": "45d55415-545b-4d97-aef2-b47e1042f85f"
+    },
+    {
+      "claim_id": "bb1202cd-b13c-427c-89d8-c177be0c4ac4",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "8c0a9563-e4df-4117-9712-b8308833aa03",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "5218159f-1fda-4100-82c7-0cea3ed1f962",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "cdaff6fe-de0f-41da-9b71-8aad99ed55be",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "ab162a66-4060-48e1-a8bb-353bb3506744",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "60051e75-0a45-4434-8abf-8636bf7820f0",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "54952182-c728-4d7f-b602-c8f26ffec571",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "b7dbd763-0760-426e-a65c-c548577971c5",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "c16d8a89-dc7c-4344-aa4f-ce06c492ed4a",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "df929bd2-f12c-4f99-9a15-f8941077edbc",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "338ac3ca-ed13-4a49-a77e-affa950769b8",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "953889b2-40ff-4919-8929-a783ee3593b8",
+      "result_id": "ac379ca3-694c-4a03-a159-081c538bc995"
+    },
+    {
+      "claim_id": "ebb9fba9-7f6e-4c9e-94b6-6cb4fa4d0623",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "81d0cccc-dfb0-4974-8acd-edab9e80bb26",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "71939fcb-9cec-4b75-8a96-e72df1fee20b",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "222fc623-677b-4586-baff-417d7975d9d5",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "fe128573-1bf9-434e-8699-3a1de30457ab",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "3988ada2-592b-4fb0-bdae-9d6a35e07e8f",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "2b77ff49-d2ab-47ff-8423-cd01d2adadad",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "49d55a0e-a7dc-4864-94f6-8f1ff209852c",
+      "result_id": "a3e26e3b-5a6c-42a0-bbf2-30a7a6a4d076"
+    },
+    {
+      "claim_id": "4e56bc03-a846-4399-834a-3f3c67f341a1",
+      "result_id": "ba47d746-a8c4-4102-879d-fb979a09b721"
+    },
+    {
+      "claim_id": "c1c9c2fa-cc45-400e-bfc1-82d64a4a7342",
+      "result_id": "ba47d746-a8c4-4102-879d-fb979a09b721"
+    },
+    {
+      "claim_id": "b2d1d955-7d7f-4b40-9a15-7d39605031a0",
+      "result_id": "ba47d746-a8c4-4102-879d-fb979a09b721"
+    },
+    {
+      "claim_id": "c66d2305-16c1-4394-a900-d53dbf74623f",
+      "result_id": "ba47d746-a8c4-4102-879d-fb979a09b721"
+    },
+    {
+      "claim_id": "9735a47b-8ebe-4b24-a5db-d12c686bc496",
+      "result_id": "ba47d746-a8c4-4102-879d-fb979a09b721"
+    },
+    {
+      "claim_id": "ce300b1b-6a00-4335-a050-4ff890fbf751",
+      "result_id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b"
+    },
+    {
+      "claim_id": "b03e6919-a0a6-433b-982c-0b46cdc5c9c5",
+      "result_id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b"
+    },
+    {
+      "claim_id": "88006c63-6397-45b8-9af3-a38ba6611405",
+      "result_id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b"
+    },
+    {
+      "claim_id": "4f5151a9-4a75-4d9d-a271-728009fc5e38",
+      "result_id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b"
+    },
+    {
+      "claim_id": "b530e6c2-6abd-4a49-a9eb-1de23df7c46e",
+      "result_id": "6753c14e-a0ff-48f0-91a0-f5c60bc94f2b"
+    },
+    {
+      "claim_id": "25142ef5-de04-44f3-9d51-c890777bda87",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "3dc2ff7b-631c-498c-8258-7ea5ffecd607",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "9c346d9c-f95b-42f1-abf1-0029b7580954",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "43f6acf7-55be-4c49-aa93-fa44724a9211",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "59d82922-fa31-4ac6-91ac-6a170f21965b",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "048af19e-d2c8-4a29-b802-b898355e0d5e",
+      "result_id": "db129f07-7b68-4f74-bb99-0cad3e264094"
+    },
+    {
+      "claim_id": "f7353be3-e6fb-4715-a34e-2338dfe60c90",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "4e8a73ab-4f8e-462b-a7a9-90d962625a1d",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "82241dd9-aead-440d-b587-16ce5aecfcf5",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "b774bf73-0133-41c7-bf04-374d1e8bd681",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "61b993f9-18e0-487b-9570-1133d351e9c4",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "f792a0a7-e1fa-4d6d-9b4b-8753ebb0842f",
+      "result_id": "d8b37c89-2282-446e-a4d5-f47c4be62961"
+    },
+    {
+      "claim_id": "ccd676bf-9120-4db6-8e71-41fa159cd4f3",
+      "result_id": "f8b21afb-27a0-46e2-9c43-1c3cf946311a"
+    },
+    {
+      "claim_id": "c0691490-97f7-4d99-93f3-d9adb50a3de1",
+      "result_id": "f8b21afb-27a0-46e2-9c43-1c3cf946311a"
+    },
+    {
+      "claim_id": "c0bb4446-57eb-4f4b-a71e-ab34e14e1543",
+      "result_id": "ff50cc59-7a5c-4c1d-b42f-2defe6bddcc6"
+    },
+    {
+      "claim_id": "23e4f676-26e1-4a54-9132-e0b3ca8b26ce",
+      "result_id": "ff50cc59-7a5c-4c1d-b42f-2defe6bddcc6"
+    },
+    {
+      "claim_id": "fdca3029-e67b-4cda-ab65-05040251894b",
+      "result_id": "ff50cc59-7a5c-4c1d-b42f-2defe6bddcc6"
+    },
+    {
+      "claim_id": "93ee046c-7996-472d-a78b-c05a363981e3",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "6404ffb5-1bcb-4d8a-9287-4169b74242f7",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "18597e38-16c6-4baf-8f52-cfc39e40bb93",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "a7cf4cca-3414-49ac-950b-1db28441383a",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "2d88cde8-34ab-4847-bb6b-2591356ff1b2",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "f0a31e22-085c-4aad-b695-707f9130b1ae",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "a48cd271-8a55-4005-ba2a-b66f6c150996",
+      "result_id": "673a3b08-922f-461a-a95d-eebb72aaa4bc"
+    },
+    {
+      "claim_id": "4c7c4093-f7ca-4afd-9f13-1175b8ba0c0d",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "8195f62c-90f7-4319-ac78-d9d1567f32bc",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "c286319b-8b33-47c3-b352-5be64c1823eb",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "d04aee06-4570-4baa-a27d-aaf84f0ce4f2",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "d1216433-5b1c-445c-bae1-65b9bf3eda42",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "cd4ded3d-5a3a-4d61-a07a-3a670c2c2e00",
+      "result_id": "60360a91-6025-4631-95f0-94e0416e2362"
+    },
+    {
+      "claim_id": "10bee1c7-aedc-4678-a459-b44b5c38bd2c",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "511a2183-eae0-4714-8965-8fa24a72e41b",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "eb3b9e2e-87b0-4155-af92-0d279ff8d34f",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "e70a5f62-9f66-45a9-9c6f-08e6d8cf7682",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "4e1fd062-e5c0-4acf-967c-b7387118752a",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "7db7f625-22a9-47de-a003-e62aee3db5dc",
+      "result_id": "74e21e3f-0a40-4a30-8ec7-fe87b3d71973"
+    },
+    {
+      "claim_id": "af18e32b-a512-4106-9591-4aa906e4d8c9",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "16d96544-5abc-45b0-a2a9-49095762e464",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "bd049066-7b67-4e09-b503-9a57d50fd1ce",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "e990e427-ef37-4e27-9bac-952cc9ab4111",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "39104692-61ce-4699-b791-7a8a86a6f574",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "bcc739ce-5fb2-44a5-a9bc-dbdae58110a0",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "06d5df18-5855-4196-912e-f01fb7735378",
+      "result_id": "0c112b22-3ef9-4190-89cd-21ed44b98c06"
+    },
+    {
+      "claim_id": "ea171053-350f-495a-8b64-a0172b18b0ee",
+      "result_id": "1bd83627-3875-4d34-a560-1af1104bd204"
+    },
+    {
+      "claim_id": "5e4143b2-cd6e-4e92-bbd3-ae9a278f84e8",
+      "result_id": "1bd83627-3875-4d34-a560-1af1104bd204"
+    },
+    {
+      "claim_id": "16d7dc03-e77e-44c5-8197-8402ec807a5d",
+      "result_id": "1bd83627-3875-4d34-a560-1af1104bd204"
+    },
+    {
+      "claim_id": "987f475a-e2b3-4092-abe7-6de71c26aacc",
+      "result_id": "1bd83627-3875-4d34-a560-1af1104bd204"
+    },
+    {
+      "claim_id": "e65e8bad-ca8a-4a28-9b0d-771122837a25",
+      "result_id": "1bd83627-3875-4d34-a560-1af1104bd204"
+    },
+    {
+      "claim_id": "3895947c-e6f3-4bfe-9eb3-be29154d3dcc",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "49d55a0e-a7dc-4864-94f6-8f1ff209852c",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "b03e6919-a0a6-433b-982c-0b46cdc5c9c5",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "cbd3d44f-0f0d-4f67-8478-2ad6af8aa9f6",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "f505b36c-f62d-4eed-8ea5-854dc4903e1c",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "d63c0dd3-07cf-46d7-bca5-8e77840e49e7",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "a48cd271-8a55-4005-ba2a-b66f6c150996",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "e17416ea-f6de-44f3-a358-62ffe6f406c1",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    },
+    {
+      "claim_id": "4492525f-ba36-42b7-b685-980e391118a4",
+      "result_id": "6a7319f1-efa1-46e5-8d48-2a00a60633be"
+    }
+  ],
+  "comparisons": []
+}

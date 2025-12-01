@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript provides a comprehensive historical overview of H5N1 HPAI and H5Nx clade 2.3.4.4 virus evolution, spread, and epidemiology from 1996 to 2015, documenting the emergence in China, global spread patterns, reassortment events, and the development of clade nomenclature systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 collectively document the historical epidemiology of H5 viruses and are consistently supported by appropriate citations to authoritative sources (FAO, WHO, OIE, peer-reviewed literature). These claims establish the background context for the study and represent well-documented prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior studies identified domestic duck density, water presence indices, and anthropogenic variables as consistent risk factors for H5N1 HPAI, but no global-scale comparative studies distinguishing between clades had been conducted, warranting the current investigation of clade 2.3.4.4 viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 accurately summarize prior literature (supported by Gilbert and Pfeiffer 2012, De Vries et al. 2015) and identify legitimate gaps in knowledge that justify the current study. The characterization of prior work appears accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "For H5N1 HPAI models, standard cross-validation showed high performance (AUC > 0.9) across all predictor sets with minimal reduction when accounting for spatial sorting bias, but spatial cross-validation revealed that host-based models (Sets 1 and 4) had superior extrapolation capacity compared to land-use and eco-climatic models (Sets 2 and 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are directly supported by quantitative data presented in Figure 1 and supplementary figures. The contrasting performance between standard and spatial CV is clearly demonstrated, and the superiority of host-based models in spatial extrapolation is well-documented. The statistical evidence is appropriate and clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "H5Nx clade 2.3.4.4 models showed high performance under standard CV (AUC ~0.9 with Set 1 variables), but spatial CV revealed drastically reduced extrapolation capacity, with Sets 2 and 4 outperforming Set 1, leading to selection of the more parsimonious Set 4 as the final model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by data in Figure 1 showing the dramatic difference between standard and spatial CV performance. The model selection rationale based on parsimony and spatial extrapolation capacity is clearly justified. However, the overall low spatial extrapolation capacity raises questions about prediction reliability at large distances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Relative contribution analysis revealed that H5Nx clade 2.3.4.4 models showed higher contributions from human population density and intensive chicken production, while H5N1 HPAI models showed higher contributions from duck density and extensive chicken production, with temperature contributing substantially to both models and cultivated vegetation contributing more to H5Nx clade 2.3.4.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by relative contribution data presented in Figure 2. The differential importance of predictor variables between the two virus groups is clearly demonstrated and quantified. This represents a key finding distinguishing the ecological niches of the two virus groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Partial dependence analysis showed that extensive chicken density was positively associated with H5N1 HPAI but not with H5Nx clade 2.3.4.4, while both virus groups showed positive associations with duck density, intensive chicken density, and human population density, negative associations with the China vaccination variable, and optimal relationships with cropland percentage and temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by partial dependence plots in Figure 3 and supplementary figures. The key distinction in extensive chicken associations between virus groups is clearly demonstrated. The shared and divergent patterns are appropriately characterized, though the biological interpretation of some non-linear relationships could be more thoroughly explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Models optimized using spatial CV resulted in much lower optimal tree numbers compared to standard CV, suggesting that standard CV may overfit local clusters rather than producing reliable long-distance predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by data in Figure 3\u2014figure supplement 2. The inference about overfitting is reasonable given the dramatic difference in optimal tree numbers, though this interpretation could benefit from additional validation. This represents an important methodological insight about the limitations of standard CV for spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "MESS analysis showed that both models extrapolate in areas with similar environmental conditions (positive MESS values), but the H5N1 HPAI model has a comparatively wider geographical space with high similarity to occurrence points than the H5Nx clade 2.3.4.4 model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by MESS analysis results referenced in the text and shown in supplementary figures. This finding is consistent with the longer establishment period and broader geographic distribution of H5N1 HPAI compared to the more recently emerged clade 2.3.4.4 viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The H5N1 HPAI suitability model correctly identifies known high-risk areas in Asia (China, Indo-Gangetic plain, Thailand, Myanmar, Vietnam, Indonesia, Egypt), areas of transient introduction (South Korea, Japan, Ukraine, Romania), recent outbreak areas (Nigeria), and predicts suitability in areas without sustained establishment (Eastern Europe, Americas, Dominican Republic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by suitability maps in Figure 4 and match known epidemiological patterns. The model's ability to identify both areas of persistence and transient introduction provides validation. However, predictions for areas without historical outbreaks should be interpreted cautiously given the model's reliance on observed data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The H5Nx clade 2.3.4.4 suitability model highlights more isolated areas with low spatial extrapolation capacity, requiring cautious interpretation at large distances from known presence points, but shows robust predictions near presence points including Asia (China, South Korea, Japan, Taiwan), known reassortment areas (Indo-Gangetic plains, Vietnam deltas, Myanmar, Java), Africa (Nile delta), North America (Midwestern and southern USA), Europe (Netherlands, Belgium, northwest France), and Australia (Victoria, New South Wales) despite no historical H5 reports there.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C82 are partially supported by Figure 4 and spatial CV results. The low extrapolation capacity (C72) undermines confidence in predictions far from known outbreaks, creating tension with specific geographic predictions (C76-C81). The prediction for Australia (C81-C82) is particularly uncertain given no historical H5 presence and the model's acknowledged limitations. The authors appropriately express caution (C73-C74), but the specific geographic predictions may overstate confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A global H5N1 HPAI suitability model with high spatial extrapolation capacity was successfully developed, with host distribution variables providing the best predictions compared to land-use or eco-climatic variables, and combinations of host variables with environmental predictors not significantly improving spatial CV performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 represent the primary conclusion about H5N1 HPAI modeling and are well-supported by the comprehensive cross-validation results (Figures 1, 3). The superiority of host-based models is convincingly demonstrated through multiple validation approaches. This is a robust and well-validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The finding that host variables best predict H5N1 HPAI is consistent with prior literature showing inconsistent eco-climatic associations across studies, suggesting H5N1 HPAI is not as environmentally constrained as previously suggested, with successful transmission observed across wide temperature and humidity ranges, and main constraints relating to host distributions and human population density as a surrogate for anthropogenic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately contextualize findings within prior literature (Gilbert and Pfeiffer 2012, Williams and Peterson 2009, Zhang et al. 2014) and provide reasonable biological interpretation. The inference about environmental constraints (C88) is well-supported by the modeling results and observed outbreak patterns. The interpretation of human population density (C91) as a surrogate is plausible though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "For H5Nx clade 2.3.4.4 viruses, models combining host distribution and environmental variables showed improved extrapolation capacity, but overall predictive power was relatively low, likely because the virus has not fully extended to its potential range and false pseudo-absences may have impacted model construction and prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94 present reasonable interpretations but are largely speculative (C93-C94). While the improved performance of combined models (C92) is supported by data, the explanations for low predictive power rely on assumptions about incomplete geographic spread and pseudo-absence quality that cannot be directly validated. These limitations should be more prominently acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Spatial cross-validation is essential for building and validating avian influenza suitability models over large geographic extents, with significant differences between standard and spatial CV for H5N1 HPAI models and even more striking differences for H5Nx clade 2.3.4.4 models, demonstrating that standard CV is misleading for assessing geographic extrapolation capacity and that spatial CV is necessary to discriminate among predictor variable sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 represent a major methodological contribution strongly supported by the comparative validation results (Figure 1). The demonstration that standard CV can be highly misleading for spatial extrapolation is convincing and has important implications for disease modeling. This is a well-supported and significant methodological finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The focus on spatial extrapolation capacity for variable selection is based on the assumption that models with causal mechanisms should extrapolate well, while models with coincidental associations should extrapolate poorly, with standard CV unable to quantify these losses due to spatial correlations between training and validation sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 articulate the theoretical foundation for prioritizing spatial CV and are logically sound. The assumption about causal mechanisms and extrapolation (C102) is reasonable though not universally applicable. The inference about standard CV limitations (C104) is well-supported by the empirical results. This provides appropriate theoretical justification for the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Domestic duck density was the most important variable for both models (though with lower contribution for H5Nx clade 2.3.4.4), consistent with ducks' established role as intermediate reservoirs between wild Anatidae and domestic poultry, their characterization as 'Trojan horses' for H5N1 HPAI, and their ability to explain differences in extrapolation capacity between host-based and land-use/eco-climatic models, as exemplified by contrasting predictions for India.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 are well-supported by relative contribution data (Figure 2), extensive prior literature (Gilbert and Pfeiffer 2012, Kim et al. 2014, Hulse-Post et al. 2005), and model predictions (Figure 4). The biological interpretation is sound and the India example (C112-C113) effectively illustrates the importance of duck density in model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The strong association between H5Nx clade 2.3.4.4 and ducks was somewhat unexpected given disease occurrence in intensive chicken farms, but is consistent with phylogeographic evidence from South Korea showing introduction associated with duck-waterfowl interface areas, where reassortment opportunities exist, fitting with H5N1 spatial epidemiology knowledge and serving as a major predictor in both models, as exemplified by the 2015 Dordogne, France epidemic in a high duck density area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 appropriately reconcile seemingly contradictory observations (disease in chicken farms vs. duck associations) using phylogeographic evidence (Hill et al. 2015) and reassortment biology (Deng et al. 2013). The France example (C118-C119) provides supporting evidence, though involving different H5 viruses. The synthesis is reasonable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The association with chicken production systems differed between virus groups, with H5Nx clade 2.3.4.4 more strongly associated with intensive systems in high human population areas, potentially explained by greater fitness for spread through intensive production and trade systems, supported by preliminary evidence of lower pathogenicity with longer survival and shedding periods compared to H5N1 HPAI, which may facilitate circulation in intensive systems and explain geographic patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 are supported by modeling data (Figures 2-3), but the mechanistic explanations (C124, C127-C129) are largely speculative. The pathogenicity evidence (C125-C126) from Kim et al. 2014, Swayne et al. 2015, and Sun et al. 2016 is described as 'preliminary' and the causal link to intensive system associations is hypothetical. This represents an interesting hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study used 17,068 H5N1 HPAI outbreaks from January 2004 to March 2015 (primarily in Asia, none in the Americas) from the FAO EMPRES-i database, and 1,309 H5Nx clade 2.3.4.4 outbreaks from November 2013 to June 2015 across 17 countries, compiled from EMPRES-i with clade assignments from OpenFlu database and literature sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 describe the data sources and are supported by appropriate citations and Figure 5. The datasets are well-characterized with clear temporal and geographic scope. The clade assignment procedure for 2.3.4.4 viruses is appropriately described, though potential misclassification of some post-2013 H5N1 outbreaks is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Boosted Regression Tree models were employed for their ability to model complex non-linear relationships and interactions, with demonstrated accuracy for H5N1 and H7N9 predictions, using datasets reduced to 5,038 H5N1 HPAI and 403 H5Nx clade 2.3.4.4 presence points after removing duplicate pixels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 describe the modeling approach with appropriate methodological citations (Elith et al. 2006, 2008, Martin et al. 2011, Gilbert et al. 2014). The choice of BRT is well-justified. The data reduction procedure is clearly described. The substantial difference in sample sizes (5,038 vs. 403) may partially explain differences in model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Best H5N1 HPAI predictions are obtained using host distribution variables with strong associations with duck and extensive chicken densities, while H5Nx clade 2.3.4.4 models show lower spatial extrapolation capacity with stronger associations with intensive chicken densities and anthropogenic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 summarize the main findings and are well-supported by the comprehensive modeling results (Figures 1-4). These represent the core conclusions of the study and are appropriately stated based on the evidence presented. The contrasts between the two virus groups are clearly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

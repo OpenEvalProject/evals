@@ -1,0 +1,1559 @@
+{
+  "submission": {
+    "id": "0bd1e57f-df52-4cf0-8c72-76948ee03451",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:44:23.724778Z",
+    "updated_at": "2025-11-30T22:44:23.724778Z"
+  },
+  "content": [
+    {
+      "id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "submission_id": "0bd1e57f-df52-4cf0-8c72-76948ee03451",
+      "content_type": "manuscript",
+      "content_text": "# Habitat and social factors shape individual decisions and emergent group structure during baboon collective movement\n\n## Authors\n\n- Ariana Strandburg-Peshkin<sup>1</sup> ([ORCID: 0000-0003-2985-6788](https://orcid.org/0000-0003-2985-6788)) \u2020\n- Damien R Farine<sup>2</sup> ([ORCID: 0000-0003-2208-7613](https://orcid.org/0000-0003-2208-7613))\n- Margaret C Crofoot<sup>5</sup>\n- Iain D Couzin<sup>2</sup>\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology Princeton University Princeton United States\n2. Department of Collective Behaviour Max Planck Institute for Ornithology Konstanz Germany\n3. Department of Biology, Chair of Biodiversity and Collective Behaviour University of Konstanz Konstanz Germany\n4. Department of Zoology, Edward Grey Institute of Field Ornithology University of Oxford Oxford United Kingdom\n5. Department of Anthropology University of California, Davis Davis United States\n6. Animal Behaviour Graduate Group University of California, Davis Davis United States\n7. Smithsonian Tropical Research Institute Panama\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor group-living animals traveling through heterogeneous landscapes, collective movement can be influenced by both habitat structure and social interactions. Yet research in collective behavior has largely neglected habitat influences on movement. Here we integrate simultaneous, high-resolution, tracking of wild baboons within a troop with a 3-dimensional reconstruction of their habitat to identify key drivers of baboon movement. A previously unexplored social influence \u2013 baboons\u2019 preference for locations that other troop members have recently traversed \u2013 is the most important predictor of individual movement decisions. Habitat is shown to influence movement over multiple spatial scales, from long-range attraction and repulsion from the troop\u2019s sleeping site, to relatively local influences including road-following and a short-range avoidance of dense vegetation. Scaling to the collective level reveals a clear association between habitat features and the emergent structure of the group, highlighting the importance of habitat heterogeneity in shaping group coordination.\n\n## Introduction\n\nAcross a wide range of taxa and habitats, animals exhibit coordinated group movement. Maintaining cohesion with conspecifics can benefit individuals by reducing predation risk, improving foraging efficiency (Krause and Ruxton, 2002), and, in some cases, by enhancing sensing of environmental gradients (Berdahl et al., 2013). For social animals moving in complex, heterogeneous environments, individual decisions and the resulting collective movement patterns are likely to be driven by a combination of factors, including habitat and social influence. Despite this, studies of collective motion have tended to discount the potential role of environmental complexity by either conducting experiments in relatively simple or featureless environments composed of mostly unobstructed space, as in many lab experiments (Buhl et al., 2006; Katz et al., 2011; Herbert-Read et al., 2011; Rosenthal et al., 2015) (but see [Berdahl et al., 2013]), or when they do consider animals moving in structured environments, by focusing only on social influences on movement (Biro et al., 2006; Strandburg-Peshkin et al., 2015; King and Sueur, 2011). Conversely, recent research in the growing area of movement ecology (Nathan et al., 2008) has yielded much insight into the internal factors and habitat-driven influences underlying animal movement patterns\u00a0(Coulon et al., 2008; Hodson et al., 2010; Dickson et al., 2005; Leblond et al., 2010; Northrup et al., 2012; Mann et al., 2014; Johnson et al., 2015; McLean et al., 2016), yet here the social drivers of movement are only beginning to be incorporated (Vanak et al., 2013; Potts et al., 2014; Latombe et al., 2014; Basille et al., 2015).\n\nHabitat structure could alter collective movement patterns in a variety of ways. At the individual level, animals can exhibit goal-directed movement toward or away from certain habitat features (Polansky et al., 2015). They can also be constrained by physical features of the landscape such as steep hills or dense vegetation (Wall et al., 2006; McLean et al., 2016). At the collective level, these influences may result in changes to the organization, coordination, and movement patterns of entire groups. For example, theoretical models suggest that when some individuals within a collectively-moving group exhibit goal-directed movement, an elongated group structure can emerge (Couzin et al., 2005). The role of habitat structure could manifest itself both by altering the frequency with which groups exhibit characteristic structures (Tunstr\u00f8m et al., 2013), or by forcing the group into entirely new structures that would otherwise not occur. Habitat factors such as vegetation density could constrain the extent to which animals can coordinate their movement, both by limiting the flow of information (e.g. by reducing visibility to other group members) and by imposing physical constraints on where and how fast animals can move. Moreover, both individual movement rules and emergent group structure could be altered by environmental context, leading groups to be observed in different states or exhibit different behaviors depending on the area of their home range they occupy on a moment-to-moment basis. Thus, to understand how the varied patterns of group spatial organization and movement dynamics seen in nature emerge, taking the habitat into account is likely to be of critical importance.\n\nUncovering the role of habitat structure in shaping collective movement poses a considerable challenge, however, requiring simultaneous tracking of multiple individuals from the same social group combined with detailed information on their physical environment. Moreover, by contrast with studies assessing broad-scale habitat selection (Dickson et al., 2005; Fortin et al., 2005), in order to investigate decision-making at the local scale at which within-group social interactions occur, a finer-scale characterization of both the movements of animals and the environmental structure is required. In recent years, there has been an explosion of technological advances in both animal tracking (Krause et al., 2013; Kays et al., 2015) and remote sensing (Anderson and Gaston, 2013). Advances in GPS tracking capabilities now make it possible to collect data at a high enough spatial and temporal resolution that fine-scale movement decisions and social interactions can be resolved (Nagy et al., 2010; King et al., 2012; Mann et al., 2014; Giuggioli et al., 2015; Strandburg-Peshkin et al., 2015). At the same time, the increased consumer availability of unmanned aerial vehicles (UAVs), coupled with computational advances in image stitching and three-dimensional landscape reconstruction, have made these tools increasingly accessible to researchers in biology (Anderson and Gaston, 2013). Thus, we have only recently developed the capacity to address the influence of environmental heterogeneity on collective movement in the wild.\n\nTo investigate the interplay between social and habitat influences on collective movement at both an individual and a group scale, we studied the movement behavior and spatial organization of a troop of olive baboons (Papio anubis) within their natural habitat at Mpala Research Centre in Laikipia, Kenya. Baboon troops, which range in size from a few to over a hundred individuals, normally remain cohesive while foraging throughout the day, despite traveling long distances over variable routes through a heterogeneous savanna habitat (Byrne, 2000; Cheney and Seyfarth, 2008). Olive baboons are generalist omnivores, and typically feed on dispersed and widespread resources throughout their range. The two major predators of baboons are leopards and lions (Cowlishaw, 1994). Leopards, which will kill baboons both during the day and at night, are very common at the study site. To avoid predation at night, baboons choose safe sleeping sites and generally return to the same site each evening (although we observed our study troop temporarily changing sleeping site after the end of the study period after a leopard was observed at their sleeping site the previous night). Lions are much less common at the study site, and were unlikely to represent a major threat to our study group.\n\nIn a previous study (Strandburg-Peshkin et al., 2015), we used simultaneous high-resolution GPS tracking of individuals within a troop of wild baboons to investigate how baboons make movement decisions during daily travel in the context of the movements of their groupmates, revealing patterns consistent with a shared decision-making process governed by a majority rule. While analysis of these movement data alone yielded insights into the social processes underlying collective movement, this work neglected the potentially important influence of habitat structure, both on the decisions of individuals and on the emergent collective behavior of the group.\n\nHere we explicitly investigate the influence of habitat structure on collective movement by combining the above GPS tracking data of wild baboons (Crofoot et al., 2015) with fine-grained data on the habitat through which the group moved (Figure 1A, Videos 1\u20132). We collected high-resolution imagery of the baboons\u2019 habitat using an unmanned aerial vehicle (UAV), and from these images generated a 3-dimensional reconstruction of the habitat with c. 5 cm precision\u00a0(Appendix 1\u2014figure 1; Appendix 1\u2014figure 2; Appendix 1\u2014figure 3; Appendix 1\u2014figure 4). Using model fitting procedures, we infer the relative importance of different social and habitat features in influencing the local (\u223c5 m step length, see Materials\u00a0and\u00a0methods) movement decisions of individual baboons\u00a0(Appendix 1\u2014figure 5). We incorporate both small-scale and large-scale habitat features, and both current and past positions of conspecifics into our models (see Table 1 for a list of features included). We also use these data to quantify how the environment influenced emergent properties (e.g. shape and speed) of the baboon group, and to investigate how both individual-level decisions and group structure change in different environmental contexts.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig1-v2.jpg)\n\n**Figure 1.:** (A) Example of baboon trajectories overlaid on a high-resolution three-dimensional habitat reconstruction. Colored lines show trajectories of each baboon. (B) Predictive accuracy for step selection models using habitat features only (red point), social features only (blue point), or both social and habitat features (purple point), as compared to a null model (black point). Y-axis shows the negative log loss of out-of-sample data; points farther up the y-axis indicate better model predictions. (C) AIC weights associated with each feature based on multi-model inference. Each point shows the feature weights for a particular baboon individual, and black bars show the median feature weight across all individuals. Features are ranked from highest median feature weight (top) to lowest mean feature weight (bottom). See also Videos 1\u20132.\n\n**Table 1.**\n Features (predictor variables) used in conditional logistic regression models to predict baboon movement decisions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Feature</th>\n      <th>Description</th>\n      <th>Type</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Environment density</td>\n      <td>Fraction of non-ground (vegetated) area within a 2.5 m* radius of a potential location</td>\n      <td>Habitat Feature</td>\n    </tr>\n    <tr>\n      <td>Social density</td>\n      <td>Fraction of all troop mates within a 4.25 m* radius of a potential location</td>\n      <td>Social Feature</td>\n    </tr>\n    <tr>\n      <td>Sleep site direction</td>\n      <td>Direction of a potential location relative to the sleep site, ranges from \u22121 (directly away) to 1 (directly toward), fit as interaction with time of day</td>\n      <td>Habitat Feature</td>\n    </tr>\n    <tr>\n      <td>Roads</td>\n      <td>Whether a potential location is on a road (1) or not (0). Fit as an interaction with whether the baboon\u2019s previous location was on a road</td>\n      <td>Habitat Feature</td>\n    </tr>\n    <tr>\n      <td>Recently-used space</td>\n      <td>Number of other baboons (not including focal individual) that have occupied a potential location within the past 4.5 min*</td>\n      <td>Social Feature</td>\n    </tr>\n    <tr>\n      <td>Ever-used space</td>\n      <td>Whether a potential location was ever occupied by another baboon (not including focal individual) across the entire dataset</td>\n      <td>Both</td>\n    </tr>\n    <tr>\n      <td>Animal paths</td>\n      <td>Whether a potential location is on an animal path (1) or not (0), fit as interaction with whether baboon\u2019s previous location was on a path</td>\n      <td>Habitat Feature</td>\n    </tr>\n    <tr>\n      <td>Visible neighbors</td>\n      <td>Fraction of other group members visible from a potential location (i.e. direct line-of-sight does not pass through any vegetated areas)</td>\n      <td>Social Feature</td>\n    </tr>\n    <tr>\n      <td>Slope</td>\n      <td>Change in elevation to a potential location from the baboon\u2019s previous location</td>\n      <td>Habitat Feature</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Spatial and temporal scales were determined using maximum likelihood in a preliminary analysis. See Supplementary methods and Appendix 1\u2014table 1 for further details._\n\n![Video 1.](https://cdn.elifesciences.org/articles/19505/elife-19505-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/19505/elife-19505-media2.mp4.jpg)\n\n**Video 2.:** Each point shows the movement of a single baboon within the troop, with color indicating the baboon\u2019s age and sex (red: adult female, dark blue: adult male, orange: subadult female, light blue: subadult male, gray: juvenile male).\n\n## Results\n\n### Which social and habitat drivers play a role in determining baboon movement decisions?\n\nWe used step selection models to evaluate the relative importance of social and habitat factors in influencing individual movement decisions. Step selection is a widely employed framework for assessing the environmental drivers of animal movement patterns (Thurfjell et al., 2014). Animal movements are considered as sets of discrete steps through a landscape, and probabilistic models are fitted to attempt to predict the next location an animal will move to out of a set of available options (herein potential locations), based on a set of features associated with each option. Alternative options are drawn from a distribution of step lengths (distance traveled during each step) and turning angles (angle between consecutive step directions), thus controlling for these basic properties of movement. The resulting model fits can thus be used to infer which environmental features are relevant to animal movement decisions, and their relative strengths of influence. Step selection models have previously been employed to infer the habitat preferences of animals (Fortin et al., 2005; Coulon et al., 2008; Hodson et al., 2010), as well as their responses to distributions of predators (Fortin et al., 2005; Basille et al., 2015; Latombe et al., 2014), and competitors (Vanak et al., 2013; Potts et al., 2014). However, to our knowledge step selection models have not before been applied to the study of the fine-scale social interactions within animal groups and their interplay with nonsocial influences on movement.\n\nHere we identify a variety of both habitat and social features from our habitat and trajectory data (Table 1), and incorporate these as predictors into step selection models to determine which features are most important in predicting baboon local movement decisions. Because some features depend on the spatial or temporal scale over which they are measured, we also use maximum likelihood to infer from the data the most likely scales over which these features affect baboon movement decisions (see Materials\u00a0and\u00a0methods, Appendix 1\u2014figure 6\u20138), following (Mashintonio et al., 2014). We fit separate step selection models for each baboon, enabling us to test whether the patterns we observe are general across all individuals.\n\nOur analysis indicates that both social factors and habitat factors are important in determining baboon movement decisions. Comparing the predictive ability of models incorporating only social features (social only), only habitat features (habitat only), all features (habitat + social), or no features (null model) shows a clear increase in predictive power for models including both social and habitat features, as compared to those incorporating only one or the other (Figure 1B). To infer which habitat and social factors exert the greatest influence over baboon movement decisions, we compute the relative feature weight of each predictor using multi-model inference (Figure 1C; Appendix 1\u2014figure 5; see Supplementary methods). We find that the top-ranked predictor (highest feature weight) of whether a baboon moved to a given location is the number of other baboons that had occupied that location within the recent past (recently used feature, Figure 1C). The best supported time scale associated with this effect is approximately 4.5 min (Appendix 1\u2014figure 8); in other words, baboons show a preference to move to locations that have been occupied by many of their troop-mates within that timescale.\n\nTo confirm that this result is not an artifact of the fact that recently-used locations also represent locations that are suitable for baboons to move through, we include as a control in our models a binary predictor variable reflecting whether any baboon (other than the focal individual being modeled) ever used a particular location over the entire dataset (ever used feature, Figure 1C). We find that the recently used predictor achieves the top rank even when this control predictor is included, suggesting that locations recently used by conspecifics are attractive to baboons above and beyond the effect of physical suitability. It is also notable that this feature ranks much higher in the multi-model inference results than social density, which would be expected to rank highly if baboons were simply maintaining cohesion with other troop members.\n\nIn addition to recently used space, multi-model inference also reveals that habitat features influence movement, and that these operate at multiple spatial scales. The direction relative to the location of the sleep site emerges as an important predictor of individual movement decisions (sleep site dir feature ranked second, Figure 1C), with baboons tending to move away from the sleep site in the morning and towards it in the evening. Thus this spatial feature determines a general direction of travel for the group that is dynamic across the day. More locally, whether a location is on a road influences its probability of being selected (roads feature, Figure 1C), and in particular, baboons show a strong preference to follow roads once on them (Appendix 1\u2014figures 10\u201311). By contrast, smaller game paths (Appendix 1\u2014figure 3), although much more numerous than man-made roads, have a less pronounced influence on baboon movement decisions (paths feature is low-ranked, Figure 1C). Over a similarly local scale (2.5\u00a0m, Appendix 1\u2014figure 6), baboons tend to avoid locations of high vegetation density (env density feature, Figure 1C). This feature, along with the change in elevation required to reach a location, and the fraction of visible neighbors, plays a more minor role, but all are still supported by multi-model inference (Figure 1C). Thus, our model-fitting results support that baboons incorporate a variety of both habitat and social elements operating over a range of spatial scales when making movement decisions. From the model fits, we can also generate a data-driven 'preference landscape' to visualize the influence of each of these features on individual movement decisions (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig2-v2.jpg)\n\n**Figure 2.:** (A) Example of a single step taken by a focal individual. Background image shows overhead view of 3D habitat reconstruction. White marker shows the location of the focal baboon (whose next step is being modeled), and white circle shows a radius of 5 m (the specified step size) around the focal individual. White arrow shows the step actually taken by the individual. Red lines show recent locations of other baboons, and red points show locations of other baboons at the end of the step. (B\u00a0\u2013I) Visualizations of the influence of each habitat and social factor (the \u2018preference landscape\u2019) based on the fitted step selection model - lighter yellow areas represent locations that are more preferred, and darker blue areas are less preferred. Each panel represents the influence of a particular factor (ignoring all others) as predicted by the model: (B) vegetation density, (C) sleep site direction, (D) roads, (E) animal paths, (F) social density, (G) fraction of visible neighbors, (H) locations that have ever been used by another baboon, (I) number of baboons that have recently (in the past 4.5 minutes) used a location. (J\u2013L) Last three panels represent overall preference landscapes, combining information from all habitat features only (J), all social features only (K), and all features, i.e. the full model prediction (L). For another example of preference landscapes (from a case where the focal individual started on a road), see Appendix 1\u2014figure 14.\n\n### How do social and habitat features combine to determine individual movement decisions?\n\nIn addition to determining which features are important, we also explicitly investigate the interplay between habitat and social features in influencing baboon movement decisions. To do so, we start by characterizing how baboon movement decisions are influenced by the previous locations of their troop mates (the top-ranked feature according to our multi-model inference results). We compare the properties of each real location where a baboon moved to those of an alternative location that it could have moved, with alternative locations generated by randomly drawing from the baboon\u2019s step length / turning angle distribution. For each pair of real and alternative locations, we randomly select one location and denote it location 1, with the other denoted location 2. We then compute the probability that location 1 was the real location, as a function of the difference between the number of other baboons that had recently occupied location 1 and the number that had recently occupied location 2. The result is a sigmoidal response (Figure 3A), where the true location selected by a baboon is likely to be the one that more of its troop-mates have recently passed through, with this probability increasing as the difference in the number of troop-mates to occupy the two alternative locations increases. This result is consistent with the previously-observed preference of baboons to follow the majority of troop-mates (Strandburg-Peshkin et al., 2015), but in this case the preference is shown to be for a particular location in space rather than a general direction of travel. Thus as baboons move through space they effectively \u2018pave the way\u2019 for their troop mates, who tend to follow in the footsteps of larger subgroups.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig3-v2.jpg)\n\n**Figure 3.:** We compare each real location where a baboon moved to an alternative location that it could have moved. We randomly select one of these two locations and denote it location 1, denoting the other location 2. Each plot shows the probability that location 1 was the true location actually chosen by the baboon, as a function of the difference between the numbers of other baboons that had recently (within the past 4.5 min) occupied location 1 and the number that had recently occupied location 2. (A) Across all data, the location chosen by the focal baboon is more likely to be the one recently occupied by more of its group mates. Moreover, the greater the difference between the number of baboons to have occupied each location, the stronger the effect (sigmoidal shape of curve). (B,C) Movement decisions are altered by the influence of roads. Here, data are shown from when the focal baboon started on a road (B) and when it started off a road (C), in three different cases: neither location was on a road (black line), both locations were on a road (blue line) or location 1 was on a road whereas location 2 was not (red line). (D\u2013F) Movement decisions are influenced by the direction of the sleep site in the morning (D) and evening (F), but less in the midday (E). Each colored line shows data from instances when the difference in the steps\u2019 directedness toward the sleep site between location 1 and location 2 fell into a different bin (given in the legend), with lighter (more yellow) colors indicating a greater difference. When there is little difference (dark purple lines), the curve resembles that shown in panel A. As the difference increases, the location that is in the direction away from (in the morning) or towards (in the evening) the sleep site becomes more likely to be chosen by the baboon. Shaded regions denote 95% confidence intervals (based on Clopper-Pearson intervals). See also Appendix 1\u2014figure 12 (other environmental influences) and Appendix 1\u2014figure 13 (10 m steps rather than 5 m steps).\n\nWe then assess how this social influence on movement combines with habitat factors by testing whether the sigmoidal relationship is altered by the presence of roads (Figure 3B\u2013C) and the sleep site direction (Figure 3D\u2013F). When comparing two potential locations, if we subset our data to instances in which one potential location is on a road and the other is not, a clear bias towards choosing the on-road location emerges (Figure 3B\u2013C, red lines), and is particularly prominent when the focal baboon starts on a road (Figure 3B). This result suggests that both roads and the previous locations of troop members strongly influence the locations where baboons choose to move, with the relative contributions of these two influences reflected in the shape of the sigmoidal curve (Figure 3). The sleep site direction is found to introduce a similar bias (Figure 3D\u2013F), where in the morning baboons were more likely to choose locations farther away from the sleep site, and conversely for the evening. Taken together, these results illustrate how habitat influences on movement weigh against social influence. For example, from Figure 3B one can determine that when a baboon starts on a road, it takes 3\u20134 more troop mates to walk through an off-road location before a baboon will have an equal chance of picking it compared to an on-road location (indicated by the red line crossing y\u00a0=\u00a00.5).\n\nThe approach of computing probabilities directly from the data (Figure 3) is complementary to the model fitting approach described earlier: while model fitting allows us to control for many factors simultaneously, it also makes assumptions about the way in which these different factors combine to determine the probability of making a certain decision, whereas the direct approach allows us to relax these assumptions. Both approaches produce consistent results (see also Appendix 1\u2014figures 12\u201313), giving us increased confidence as to their robustness, while also providing a clearer view of the interplay among different features affecting baboon movement decisions.\n\n### How do individual movement decisions and emergent group structure vary across different environmental contexts?\n\nBy influencing the movement decisions of individuals, habitat structure can also shape movement patterns at the group level. Here we address this question by evaluating how group structure changes within different environmental contexts. We characterize group structure using six group-level metrics representing the global spatial organization and movement of the troop (Figure 4), and investigate four types of context: time of day (morning, midday, and evening), environment density (the fraction of the total area occupied by the group that is covered with vegetation), path density (fraction of group area that is on a path) and the presence of roads (whether a road is within the group area). In addition, to assess whether group-level shifts in structure could be driven by changes in individual-level movement priorities, we fit separate step selection models for the data within each context and compare the feature ranks across these different contexts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig4-v2.jpg)\n\n**Figure 4.:** For further information, see Supplementary methods.\n\nConsidering different contexts reveals broad consistency, but also telling changes, in the priorities driving baboon movement at the individual level (Appendix 1\u2014figure 15; Appendix 1\u2014figure 16). For example, models fitted using data that correspond to different times of day demonstrate that the importance of roads is stronger in the morning and evening relative to the middle of the day. The direction of the sleep site also plays a larger role in the morning and evening than in the midday. This suggests that baboons are effectively \u2018commuting\u2019 to and from foraging locations during the start and end of each day (Appendix 1\u2014figure 15A). These individual-level changes are coupled with changes to group structure at the collective level\u00a0. During morning and evening, the troop tends to be more elongated, and to move more often in a directed manner with lower tilt (Appendix 1\u2014figure 18, Appendix 1\u2014figure 22), all of which would be expected based on either more goal-directed movement (toward or away from the sleep site) and/or movement that utilizes roads. Indeed, the group spent considerably more time on roads during morning and evening than during the midday (12.1% in morning and evening vs. 7.5% during midday, Appendix 1\u2014figure 23). Moreover, comparing group structure on and off roads supports the idea that baboons use roads as an efficient method of travel, with groups moving faster and in a more directed manner on roads (Figure 5B, Appendix 1\u2014figure 20).\n\nIn addition to large-scale habitat features such as roads and the sleep site, individual movements are also constrained by fine-scale vegetation structure, with consequences for the emergent structure and coordination of groups. Although when data are considered in aggregate, environment density plays a relatively small role in influencing the local movement decisions of individual baboons (Figure 1C), its importance increases when considering individual movement decisions in particularly dense environments, surpassing both roads and social density (Appendix 1\u2014figure 15B). Thus, in dense environments, baboons\u2019 movement decisions become more strongly influenced by local-scale heterogeneity in vegetation relative to other factors. At the group level, high-density areas are associated with lower group polarization, as well as slower troop speed and less directed travel (Figure 5C). These changes suggest that vegetation structure plays an important role in constraining the degree of movement coordination in animal groups. Similarly, though animal paths are low ranked in feature weight when models are fitted across all data, their importance at the individual level\u00a0increases in areas with a particularly high density of paths (Appendix 1\u2014figure 15C). Areas with a high density of paths are also associated with faster, more directed, and more polarized movement at the group level (Appendix 1\u2014figure 17, Appendix 1\u2014figure 21).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig5-v2.jpg)\n\n**Figure 5.:** (A) Two-dimensional histograms of the speed and polarization (top panel), spread and directedness (middle panel), and elongation and tilt (bottom panel) of the baboon troop across all data. Lighter areas represent more likely group configurations. (B\u2013C) Difference between the distributions within a given context and the overall distribution across all data. Redder areas represent group configurations that are over-represented within a given context (relative to the rest of the data), and bluer areas represent under-represented configurations. Each column represents a different context: (B) on-road and off-road, and (C) open, medium, and dense vegetation. See also Appendix 1\u2014figures 17\u201318 for the influence of path density and time of day respectively, as well as Appendix 1\u2014figures 19\u201322 for one-dimensional histograms of each group-level property within each context.\n\nTo disentangle the effects of different habitat factors and time of day on group-level properties, we fit linear models predicting each group-level property as a function of habitat density, path density, and presence of roads within the area occupied the group, as well as time of day (morning, midday, and evening). Computing the feature weights of each of these predictors via multi-model inference reveals that the habitat features receive larger weights across all group-level properties than does time of day (Figure 6). This result suggests that group structure is shaped more by the current habitat the baboons occupy than by the temporal context. The fits also reveal that roads and areas of high path density are associated with similar changes to group structure \u2013 i.e. groups become faster, more elongated, and more polarized \u2013 but that roads are generally a stronger predictor of these changes (higher feature weight, Figure 6). By contrast, in dense habitats essentially the reverse of this pattern is seen.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19505/elife-19505-fig6-v2.jpg)\n\n**Figure 6.:** Colors show feature weights, with lighter colors indicating habitat/temporal features (columns) that were more supported by multi-model inference to predict each group-level property (rows). Arrows indicate the direction of the effects for each fit, with upward (downward) pointing arrows indicating a positive (negative) effect. For time of day column, arrows correspond to morning (left), midday (middle), and evening (right), with the upward (downward) pointing arrow indicating the time of day associated with the largest (smallest) value of the group-level property in each row.\n\n## Discussion\n\nEfforts to understand collective animal movement (Sumpter, 2010) and habitat influences on individual movement (Boyce and McDonald, 1999; Nathan et al., 2008; Thurfjell et al., 2014) have constituted major avenues of research in recent years. It is perhaps surprising, then, that these parallel streams of effort, which both aim to understand and quantify the patterns of animal distribution and movement observed in nature, have so far had relatively little interaction with one another (but see [Potts et al., 2014; Berdahl et al., 2013]). By exploiting recent advances in GPS tracking, remote sensing, and analytical methods, we uncover a range of both habitat and social influences, operating over varied spatial scales, which exert influence on the local movement decisions made by individual baboons and ultimately the aggregate structure and dynamics of the group. Changes in coordination and group spatial organization as a function of environmental factors will have important consequences for understanding both the mechanistic basis of group coordination and its costs and benefits.\n\nWe demonstrate that a variety of habitat features wield influence on individual movement decisions. Moreover, habitat influences extend beyond the level of individual decisions to the collective dynamics of the group, leading to changes in emergent group structure and coordination in different environmental contexts. This effect is manifested in our dataset in the fast movement and elongated group structures formed on roads and areas of high path density, and the decrease in coordination when moving through dense habitats. These changes could reflect direct habitat constraints on movement (such as physical barriers to movement), but also behavioral changes associated with different habitats (such as a shift from foraging to directed travel in different environments).\n\nOur results suggest that, although few in number and in total area, roads and sleeping sites are relatively dramatic features of the habitat that have a large impact on baboon movement patterns. The importance of roads is consistent with studies in other species which suggest that roads may facilitate animal movement (Dickson et al., 2005), perhaps by serving as navigational landmarks (Mann et al., 2014). This hypothesis is consistent with the weaker influence of paths in our analysis (Figure 1C), whose sheer abundance and tortuosity could make them less useful as navigational aids. We also found that roads were more important predictors of baboon movement in the mornings and afternoons than during the middle of the day. This temporal difference is likely to reflect the needs of the troop to travel away from their core zone (near their sleeping site) to forage (Appendix 1\u2014figure 23). In fact, baboons in our troop often travelled 5\u20136 kms per day during the study period, probably because conditions were dry and food, although not scarce, was not abundant enough close to their sleep site to sustain the entire troop.\n\nOur analysis also uncovers a primary role of social interactions - in particular a baboon\u2019s tendency to follow at a very fine scale where others have gone before - in shaping individual movement decisions. Baboons\u2019 tendency to follow in the footsteps of others emerges as the highest-ranked predictor of individual movement decisions in our analysis. There are several possible explanations for this finding. The first possibility is that individuals are following others to resource patches within the landscape. However, in order for this effect to be driving our result, our study troop would have to be foraging on patches that are both ephemeral (so that they would not be accounted for by the ever used feature we included as a control) and slowly depleting (so that followers would benefit from visiting locations where others previously foraged). Our observation in the field is that the troop forages on mixed resources that are widely distributed (e.g. grass roots and prickly pear fruit), meaning that this explanation seems unlikely. Alternatively, the importance of following others could reflect a risk reduction strategy, since locations that conspecifics have recently passed through have already been effectively \u2018pre-screened\u2019 for threats such as leopards or venomous snakes. This hypothesis is supported by the decrease in the importance rank of the recently used feature when the troop is in open habitats (Appendix 1\u2014figure 15B), as there are likely to be fewer anti-predator benefits to be gained by following others in open areas. A third possibility is that baboons moving through the landscape trample local vegetation, in turn making recently-used paths easier to follow. However, if this were the case, then we would expect existing animal paths to also emerge as important predictors of movement, which in our case they did not (Figure 1C). A final possibility is that since following in the footsteps of others is a less cognitively demanding task than carving out one\u2019s own path (Piyapong et al., 2007), by generally following these paths baboons are reducing the cognitive effort of navigation (Kool et al., 2010). Future work, including explicit measurement of both the resource distribution and the behavior that individuals engaged in while moving could help discriminate among these possibilities. Regardless of the explanation, baboons\u2019 tendency to follow in the footsteps of others is likely to have consequences for the aggregate space use patterns of baboon troops, with troops making use of a smaller portion of the area within their surroundings than would be naively expected if individuals were moving more randomly within the troop\u2019s boundaries, which in turn could alter their impact on the environment around them.\n\nOur results also have implications for understanding the costs and benefits of within-group spatial positioning. Where individuals position themselves within groups is thought to reflect a trade-off between forging new ground to find resources and being exposed to predators (Hirsch, 2007; Krause, 1994; Parrish and Edelstein-Keshet, 1999; Hirsch, 2011; Teichroeb et al., 2015). While work in this area has typically focused on how this tradeoff can drive differences in the amount of time individuals spend at the front vs back of the group, or in the center vs periphery, our results suggest that the extent to which animals follow in each others footsteps is another dynamic which should be considered, as this factor will have an important impact on the rate at which individuals are exposed to new areas - and hence the rate at which they will encounter both new resources and stationary predators.\n\nWhile our work illustrates the insight that can be gained by combining step-selection models with high-resolution collective movement and environment data, we were limited to a relatively short period of data collection (weeks) for logistical reasons, largely relating to limited battery life. An exciting future direction would be to conduct longer-term or repeated sampling of a troop across the year to capture changing environmental conditions, and to investigate how these changes impact both individual decisions and group-level properties. For example, when conditions are very dry or very wet, do individual movement rules change, and do these conditions impact group structure? Wet conditions are likely to lead to more food, but also denser habitat and therefore more risk from ambush predators such as leopards. If predation is the primary reason individuals tend to move to locations where others have recently been, these conditions should increase the propensity for individuals to carefully follow others. Further, our study only accounted for short-term social drivers of movement. Recent theoretical (Bode et al., 2011) and empirical (King et al., 2008; King and Sueur, 2011) studies have highlighted potential for differences in social relationships to affect movement. Independent observations of affiliations, notably grooming relationships, could be also incorporated into our model to explicitly test when and how these inter-individual relationships are important for movement.\n\nWhile the results shown here are specific to the system we explore, the methods employed and many of the insights gained are likely to extend to a variety of social animals. As the resolution at which we can map both the movements of animals and their environments improve, the integration of habitat features into studies of collective behavior - and conversely the incorporation of within-group social interactions into studies in movement ecology - will be critical for understanding the movement patterns of social animals.\n\n## Materials and methods\n\nGPS tracking data (1 Hz) were collected from 25 wild olive baboons (Papio anubis) belonging to a single troop at Mpala Research Centre in Laikipia, Kenya, from 1 August - 2 September, 2012. Tracked individuals included 81% (23/ 29) of the adult and subadult members of the troop, as well as two juveniles (for a total of 25). We did not apply any smoothing to the GPS data, but filled in the few short (1 s) gaps in the data using linear interpolation, as well as filtering out a small number of outlier data points (see Supplementary methods). Aerial imagery of the habitat was collected from 9\u201317 January, 2015 using an eBee fixed-wing UAV (Sensefly Ltd). The mapped area covered 3.3 km2, representing approximately 2/3 of the area covered by the baboon troop during the first 14 days (the period from which we analyzed tracking data). Although we had a gap between the two data collection periods, both had similar ecological conditions (dry season) and habitat characteristics (trees, roads, bushes) were unlikely to have changed much over this period. After collection, images were automatically combined using Postflight Terra 3D software (Pix4D) to reconstruct a three-dimensional point cloud image of the landscape, and these were used to identify all habitat features. All procedures were subject to ethical review and were carried out in accordance with the approved guidelines set out by the National Commission for Science, Technology and Innovation of the Republic of Kenya (NACOSTI/P/15/5727/4608). Baboon tracking was approved by the Smithsonian Tropical Research Institute (IACUC 2012.0601.2015).\n\nWe used a step selection framework to determine the habitat and social features most predictive of baboon movement decisions. To determine which habitat and social features (Table 1) were important in the fitted conditional logistic regression models, we used multi-model inference and computed the AIC weights of each feature. We quantified the group structure at each minute using six troop-level metrics (Figure 4). To characterize how group spatial structure and movement depended on context, we compared distributions of the metrics across different contexts by subtracting the histogram computed using all data from the histogram computed using data within each context. This allowed us to determine which areas of parameter space were over- and under- represented in a given context. We also fit linear models predicting each group-level property as a function of all possible combinations of habitat and temporal contexts, then computed AIC weights to determine the relative importance of each of these contexts in predicting each group-level property. See Supplementary methods for further details.\n",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "86c761d3-c450-4561-af61-d26a016368a6",
+      "submission_id": "0bd1e57f-df52-4cf0-8c72-76948ee03451",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Catherine Carr, University of Maryland , United States\n\n## Review text\n\nDOI: [10.7554/eLife.19505.039](https://doi.org/10.7554/eLife.19505.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Habitat structure shapes individual decisions and emergent group structure in collectively moving wild baboons\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nThe consensus among your reviewers is that your manuscript, on how habitat structure shapes individual decisions and emergent group structure in collectively moving wild baboons, has a well-developed approach to collective behavior, but that you have rather oversold the novelty of your approach. We think that your manuscript would benefit from a more explicit exploration of your results.\n\nOne reviewer notes several major concerns. First, there were no specific hypotheses tested in this study, other than the expectation that both social and habitat factors influence individual movement and collective patterns. Both reviewers think it possible that your manuscript could be revised to focus on some hypotheses, for example, about why different features of the habitat are important. In general, eLife does not send authors back to collect more data, but a more focused analysis could be beneficial.\n\nSummary:\n\nYour reviewers would like to see a more explicit, hypothesis driven exploration of your results, to explore what features of the habitat influence the group coordination. A second major concern is that your claims of technical advances are not well supported.\n\nEssential revisions:\n\nTechnical advances are shared by, for example.\n\nVanak AT et al. 2013. Moving to stay in place: behavioral mechanisms for coexistence of African large carnivores. Ecology 94, 2619- 2631.\n\nLatombe G et al. 2013. Spatiotemporal dynamics in the response of woodland caribou and moose to the passage of gray wolf. J. Anim. Ecol. 83, 185- 198.\n\nPotts, J. R., Mokross, K., & Lewis, M. A. (2014). A unifying framework for quantifying the nature of animal interactions. Journal of the Royal Society Interface, 11(96), 20140333.\n\nThis should be addressed.\n\nAt present, the approaches used to link habitat and collective movement are not really compelling. There is concern about your metrics describing collective movement, and how they might be influenced by habitat variables. Since groups can be in different types of habitats, especially at your spatial resolution, you might instead model the collective movement metrics in response to habitat variables. Similarly, it is not clear why you have compared environmental contexts for roads and environmental density but not for other variables.\n\nThe leader \u2013 follower measure seems largely disconnected from issues of resource availability. Does this imply that baboons are ecologically extreme in some sense such that group cohesion consistently trumps concerns about resource exhaustion and trailing individuals 'losing out' to those they follow through the landscape? Such issues of resource access relative to intra-group position are a fundamental tenet in other studies of the movement of primate groups. Alternatively, are the landscapes simply so lush that there is no risk of resource limitation among group members? Your reviewers would like to see some explanation for this primacy of group cohesion over other considerations.\n\nThere is a concern about the short time-duration of their analyzed tracking data. You might include more discussion of why the significant habitat parameters may be biologically important for baboons, more background on the socioecology of olive baboons, and address what could be added with a longer study period.\n",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b2921602-53db-4bc8-8e43-5494cadc501a",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C1",
+      "claim": "GPS tracking data (1 Hz) were collected from 25 wild olive baboons (Papio anubis) belonging to a single troop at Mpala Research Centre in Laikipia, Kenya, from 1 August - 2 September, 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "GPS tracking data (1 Hz) were collected from 25 wild olive baboons (Papio anubis) belonging to a single troop at Mpala Research Centre in Laikipia, Kenya, from 1 August - 2 September, 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the Materials and methods section describing the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "0a6dc945-690c-4a1c-9182-66acf85949a3",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C2",
+      "claim": "Tracked individuals included 81% (23/29) of the adult and subadult members of the troop, as well as two juveniles (for a total of 25).",
+      "claim_type": "EXPLICIT",
+      "source": "Tracked individuals included 81% (23/ 29) of the adult and subadult members of the troop, as well as two juveniles (for a total of 25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the sample composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "643e8f7e-c5da-4a0d-90b3-7cac7ac2d0d9",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C3",
+      "claim": "Aerial imagery of the habitat was collected from 9\u201317 January, 2015 using an eBee fixed-wing UAV (Sensefly Ltd).",
+      "claim_type": "EXPLICIT",
+      "source": "Aerial imagery of the habitat was collected from 9\u201317 January, 2015 using an eBee fixed-wing UAV (Sensefly Ltd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the Materials and methods section describing the aerial imagery collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "a152ec07-70ef-40ed-a831-69f2a918c0a8",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C4",
+      "claim": "The mapped area covered 3.3 km2, representing approximately 2/3 of the area covered by the baboon troop during the first 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The mapped area covered 3.3 km2, representing approximately 2/3 of the area covered by the baboon troop during the first 14 days (the period from which we analyzed tracking data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the extent of the mapped area.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "15461a13-66a6-4a6a-82ee-5469f24392a6",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C5",
+      "claim": "A three-dimensional reconstruction of the habitat was generated with c. 5 cm precision.",
+      "claim_type": "EXPLICIT",
+      "source": "from these images generated a 3-dimensional reconstruction of the habitat with c. 5 cm precision (Appendix 1\u2014figure 1; Appendix 1\u2014figure 2; Appendix 1\u2014figure 3; Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the precision of the 3D reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2d9974ec-bb98-4f7f-a49f-878d0bde687f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C6",
+      "claim": "Baboons' preference for locations that other troop members have recently traversed is the most important predictor of individual movement decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "A previously unexplored social influence \u2013 baboons' preference for locations that other troop members have recently traversed \u2013 is the most important predictor of individual movement decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a primary finding, supported by multi-model inference results showing recently used space as the top-ranked feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "22463379-5ec8-4693-ab20-4a256e4ee950",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C7",
+      "claim": "The best supported time scale for the recently used space effect is approximately 4.5 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The best supported time scale associated with this effect is approximately 4.5 min (Appendix 1\u2014figure 8); in other words, baboons show a preference to move to locations that have been occupied by many of their troop-mates within that timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on maximum likelihood analysis of temporal scales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "75d61d22-fbdf-4289-8e82-3a5443820f28",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C8",
+      "claim": "Both social factors and habitat factors are important in determining baboon movement decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that both social factors and habitat factors are important in determining baboon movement decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result based on model comparison showing increased predictive power when both types of features are included.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "58542ab8-6421-44b0-8b81-91b0394ba3a1",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C9",
+      "claim": "Models incorporating both social and habitat features have greater predictive power than models incorporating only one or the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the predictive ability of models incorporating only social features (social only), only habitat features (habitat only), all features (habitat + social), or no features (null model) shows a clear increase in predictive power for models including both social and habitat features, as compared to those incorporating only one or the other (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 1B showing predictive accuracy comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "d96480a6-bf29-4ed3-9f8b-ecfe18e82dd1",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C10",
+      "claim": "Baboons tend to move away from the sleep site in the morning and towards it in the evening.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction relative to the location of the sleep site emerges as an important predictor of individual movement decisions (sleep site dir feature ranked second, Figure 1C), with baboons tending to move away from the sleep site in the morning and towards it in the evening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on model fitting results and feature ranking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "a46bc278-221f-4ee4-9d69-51596a493676",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C11",
+      "claim": "Baboons show a strong preference to follow roads once on them.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether a location is on a road influences its probability of being selected (roads feature, Figure 1C), and in particular, baboons show a strong preference to follow roads once on them (Appendix 1\u2014figures 10\u201311).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on model results and supported by referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "716e385d-0dc4-40c8-a80d-2c9b90dab0ec",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C12",
+      "claim": "Smaller game paths have a less pronounced influence on baboon movement decisions than man-made roads.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, smaller game paths (Appendix 1\u2014figure 3), although much more numerous than man-made roads, have a less pronounced influence on baboon movement decisions (paths feature is low-ranked, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on feature ranking comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "820ec29f-1b71-49c2-bdc8-fcaee81d9733",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C13",
+      "claim": "Baboons tend to avoid locations of high vegetation density over a local scale of 2.5 m.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a similarly local scale (2.5 m, Appendix 1\u2014figure 6), baboons tend to avoid locations of high vegetation density (env density feature, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on model results at a specific spatial scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "ea50d556-d6a2-480f-9ee5-cbe069927d15",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C14",
+      "claim": "Baboons incorporate a variety of both habitat and social elements operating over a range of spatial scales when making movement decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model-fitting results support that baboons incorporate a variety of both habitat and social elements operating over a range of spatial scales when making movement decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on the multi-model inference results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "1a3a8607-b47e-4ffb-890e-2e373567a5cd",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C15",
+      "claim": "The true location selected by a baboon is likely to be the one that more of its troop-mates have recently passed through.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is a sigmoidal response (Figure 3A), where the true location selected by a baboon is likely to be the one that more of its troop-mates have recently passed through, with this probability increasing as the difference in the number of troop-mates to occupy the two alternative locations increases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "a3386689-090c-43f7-bba1-649983041159",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C16",
+      "claim": "When a baboon starts on a road, it takes 3\u20134 more troop mates to walk through an off-road location before a baboon will have an equal chance of picking it compared to an on-road location.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, from Figure 3B one can determine that when a baboon starts on a road, it takes 3\u20134 more troop mates to walk through an off-road location before a baboon will have an equal chance of picking it compared to an on-road location (indicated by the red line crossing y = 0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on quantitative analysis of Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "bb807d37-57e6-4fed-b9ba-6d800d42731f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C17",
+      "claim": "Roads and the previous locations of troop members strongly influence the locations where baboons choose to move.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that both roads and the previous locations of troop members strongly influence the locations where baboons choose to move, with the relative contributions of these two influences reflected in the shape of the sigmoidal curve (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on analysis of Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c6dafb06-3483-453a-92c3-08e483ab33b4",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C18",
+      "claim": "In the morning baboons were more likely to choose locations farther away from the sleep site, and conversely for the evening.",
+      "claim_type": "EXPLICIT",
+      "source": "The sleep site direction is found to introduce a similar bias (Figure 3D\u2013F), where in the morning baboons were more likely to choose locations farther away from the sleep site, and conversely for the evening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on analysis shown in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "f76c2e3c-89ac-4608-8d33-a89630f3fc00",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C19",
+      "claim": "The importance of roads is stronger in the morning and evening relative to the middle of the day.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, models fitted using data that correspond to different times of day demonstrate that the importance of roads is stronger in the morning and evening relative to the middle of the day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on context-specific model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "17aafd94-da6f-422e-9660-ad9790491983",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C20",
+      "claim": "The direction of the sleep site plays a larger role in the morning and evening than in the midday.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of the sleep site also plays a larger role in the morning and evening than in the midday.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on context-specific model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "e334dfc7-6622-4b76-8ed1-f63e08c0e9d8",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C21",
+      "claim": "During morning and evening, the troop tends to be more elongated, and to move more often in a directed manner with lower tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "During morning and evening, the troop tends to be more elongated, and to move more often in a directed manner with lower tilt (Appendix 1\u2014figure 18, Appendix 1\u2014figure 22), all of which would be expected based on either more goal-directed movement (toward or away from the sleep site) and/or movement that utilizes roads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on group-level analysis shown in referenced figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "d405760a-cb7a-483c-a650-0906763e6a48",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C22",
+      "claim": "The group spent considerably more time on roads during morning and evening than during the midday (12.1% in morning and evening vs. 7.5% during midday).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the group spent considerably more time on roads during morning and evening than during the midday (12.1% in morning and evening vs. 7.5% during midday, Appendix 1\u2014figure 23).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with specific percentages from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "058c9d76-0e4d-4421-ae14-f3e6a732993b",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C23",
+      "claim": "Groups move faster and in a more directed manner on roads.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, comparing group structure on and off roads supports the idea that baboons use roads as an efficient method of travel, with groups moving faster and in a more directed manner on roads (Figure 5B, Appendix 1\u2014figure 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on comparison of group structure in different contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2f0aeb94-1bd6-4332-85a4-6c166d9361cb",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C24",
+      "claim": "In dense environments, baboons' movement decisions become more strongly influenced by local-scale heterogeneity in vegetation relative to other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although when data are considered in aggregate, environment density plays a relatively small role in influencing the local movement decisions of individual baboons (Figure 1C), its importance increases when considering individual movement decisions in particularly dense environments, surpassing both roads and social density (Appendix 1\u2014figure 15B). Thus, in dense environments, baboons' movement decisions become more strongly influenced by local-scale heterogeneity in vegetation relative to other factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on context-specific model fitting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "d2567bd6-63c3-423b-99c9-80aabc48157a",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C25",
+      "claim": "High-density areas are associated with lower group polarization, as well as slower troop speed and less directed travel.",
+      "claim_type": "EXPLICIT",
+      "source": "At the group level, high-density areas are associated with lower group polarization, as well as slower troop speed and less directed travel (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on group-level analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c31af953-457e-45aa-af6b-37f6d82ce888",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C26",
+      "claim": "Vegetation structure plays an important role in constraining the degree of movement coordination in animal groups.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes suggest that vegetation structure plays an important role in constraining the degree of movement coordination in animal groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observed changes in group coordination in different vegetation densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "49e7f7d2-e2fc-4249-a738-e1e6f7783d16",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C27",
+      "claim": "The importance of animal paths at the individual level increases in areas with a particularly high density of paths.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, though animal paths are low ranked in feature weight when models are fitted across all data, their importance at the individual level increases in areas with a particularly high density of paths (Appendix 1\u2014figure 15C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on context-specific model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "351a1c5b-01b4-41e2-b22a-15f6384f29a2",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C28",
+      "claim": "Areas with a high density of paths are associated with faster, more directed, and more polarized movement at the group level.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas with a high density of paths are also associated with faster, more directed, and more polarized movement at the group level (Appendix 1\u2014figure 17, Appendix 1\u2014figure 21).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on group-level analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "5c3c94a6-9aae-49e7-8002-3a385a4bbd13",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C29",
+      "claim": "Habitat features receive larger weights across all group-level properties than does time of day.",
+      "claim_type": "EXPLICIT",
+      "source": "Computing the feature weights of each of these predictors via multi-model inference reveals that the habitat features receive larger weights across all group-level properties than does time of day (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on multi-model inference results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "e6b2db57-4ad3-44fd-87a4-4f650317bd19",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C30",
+      "claim": "Group structure is shaped more by the current habitat the baboons occupy than by the temporal context.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that group structure is shaped more by the current habitat the baboons occupy than by the temporal context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the feature weight comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "6fcdeffc-4daa-4244-a4c8-4dda56fd923f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C31",
+      "claim": "Roads and areas of high path density are associated with similar changes to group structure \u2013 i.e. groups become faster, more elongated, and more polarized.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits also reveal that roads and areas of high path density are associated with similar changes to group structure \u2013 i.e. groups become faster, more elongated, and more polarized \u2013 but that roads are generally a stronger predictor of these changes (higher feature weight, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "a4b82f1d-ea74-40c4-9f77-7df270ea12ee",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C32",
+      "claim": "Roads are generally a stronger predictor of group structure changes than areas of high path density.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits also reveal that roads and areas of high path density are associated with similar changes to group structure \u2013 i.e. groups become faster, more elongated, and more polarized \u2013 but that roads are generally a stronger predictor of these changes (higher feature weight, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement based on feature weight comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "df4bf410-e833-4f0c-b1ad-156ef9236b10",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C33",
+      "claim": "Baboon troops range in size from a few to over a hundred individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Baboon troops, which range in size from a few to over a hundred individuals, normally remain cohesive while foraging throughout the day, despite traveling long distances over variable routes through a heterogeneous savanna habitat (Byrne, 2000; Cheney and Seyfarth, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "8a28e721-b13a-4752-b24f-bff66e03946b",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C34",
+      "claim": "Baboon troops normally remain cohesive while foraging throughout the day, despite traveling long distances over variable routes through a heterogeneous savanna habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "Baboon troops, which range in size from a few to over a hundred individuals, normally remain cohesive while foraging throughout the day, despite traveling long distances over variable routes through a heterogeneous savanna habitat (Byrne, 2000; Cheney and Seyfarth, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "5d7a6c21-1ad8-49d6-a822-a2a593f214a7",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C35",
+      "claim": "Olive baboons are generalist omnivores, and typically feed on dispersed and widespread resources throughout their range.",
+      "claim_type": "EXPLICIT",
+      "source": "Olive baboons are generalist omnivores, and typically feed on dispersed and widespread resources throughout their range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about olive baboon ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "ad2f12da-0060-410b-aa8f-ba672b024b98",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C36",
+      "claim": "The two major predators of baboons are leopards and lions.",
+      "claim_type": "EXPLICIT",
+      "source": "The two major predators of baboons are leopards and lions (Cowlishaw, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "1f80afcd-1b17-4e59-a471-928c5dc818b3",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C37",
+      "claim": "Leopards, which will kill baboons both during the day and at night, are very common at the study site.",
+      "claim_type": "EXPLICIT",
+      "source": "Leopards, which will kill baboons both during the day and at night, are very common at the study site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on knowledge of the study site and leopard behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "652078ba-767a-4052-91cc-e8da456066dd",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C38",
+      "claim": "To avoid predation at night, baboons choose safe sleeping sites and generally return to the same site each evening.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid predation at night, baboons choose safe sleeping sites and generally return to the same site each evening (although we observed our study troop temporarily changing sleeping site after the end of the study period after a leopard was observed at their sleeping site the previous night).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on general baboon behavior and specific observation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c6c1f16c-1603-4177-8b2a-3bfb0877593b",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C39",
+      "claim": "Lions are much less common at the study site, and were unlikely to represent a major threat to the study group.",
+      "claim_type": "EXPLICIT",
+      "source": "Lions are much less common at the study site, and were unlikely to represent a major threat to our study group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on knowledge of the study site.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "7413b84c-f35e-47c4-b6ad-2ea4251637ad",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C40",
+      "claim": "Maintaining cohesion with conspecifics can benefit individuals by reducing predation risk, improving foraging efficiency, and, in some cases, by enhancing sensing of environmental gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining cohesion with conspecifics can benefit individuals by reducing predation risk, improving foraging efficiency (Krause and Ruxton, 2002), and, in some cases, by enhancing sensing of environmental gradients (Berdahl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "31b9e4b1-2975-480b-972c-1993455d507b",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C41",
+      "claim": "Studies of collective motion have tended to discount the potential role of environmental complexity by either conducting experiments in relatively simple or featureless environments or by focusing only on social influences on movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, studies of collective motion have tended to discount the potential role of environmental complexity by either conducting experiments in relatively simple or featureless environments composed of mostly unobstructed space, as in many lab experiments (Buhl et al., 2006; Katz et al., 2011; Herbert-Read et al., 2011; Rosenthal et al., 2015) (but see [Berdahl et al., 2013]), or when they do consider animals moving in structured environments, by focusing only on social influences on movement (Biro et al., 2006; Strandburg-Peshkin et al., 2015; King and Sueur, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2e6fa033-f556-4c15-8eb4-ff1ab67e5127",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C42",
+      "claim": "At the individual level, animals can exhibit goal-directed movement toward or away from certain habitat features.",
+      "claim_type": "EXPLICIT",
+      "source": "At the individual level, animals can exhibit goal-directed movement toward or away from certain habitat features (Polansky et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2017c35a-9e3a-4765-a82f-39f0bc3be3b2",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C43",
+      "claim": "Animals can be constrained by physical features of the landscape such as steep hills or dense vegetation.",
+      "claim_type": "EXPLICIT",
+      "source": "They can also be constrained by physical features of the landscape such as steep hills or dense vegetation (Wall et al., 2006; McLean et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2dcce053-f9ed-4da1-81ab-56a1df19af19",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C44",
+      "claim": "Theoretical models suggest that when some individuals within a collectively-moving group exhibit goal-directed movement, an elongated group structure can emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, theoretical models suggest that when some individuals within a collectively-moving group exhibit goal-directed movement, an elongated group structure can emerge (Couzin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "0cda1dab-7150-409f-bc91-9315191276f1",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C45",
+      "claim": "Habitat factors such as vegetation density could constrain the extent to which animals can coordinate their movement, both by limiting the flow of information and by imposing physical constraints on where and how fast animals can move.",
+      "claim_type": "EXPLICIT",
+      "source": "Habitat factors such as vegetation density could constrain the extent to which animals can coordinate their movement, both by limiting the flow of information (e.g. by reducing visibility to other group members) and by imposing physical constraints on where and how fast animals can move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "4c5c9d09-1a06-47f1-a951-6001a9979247",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C46",
+      "claim": "Both individual movement rules and emergent group structure could be altered by environmental context, leading groups to be observed in different states or exhibit different behaviors depending on the area of their home range they occupy on a moment-to-moment basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both individual movement rules and emergent group structure could be altered by environmental context, leading groups to be observed in different states or exhibit different behaviors depending on the area of their home range they occupy on a moment-to-moment basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "7f386054-e888-49de-9eca-8661b3c02ace",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C47",
+      "claim": "To understand how the varied patterns of group spatial organization and movement dynamics seen in nature emerge, taking the habitat into account is likely to be of critical importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, to understand how the varied patterns of group spatial organization and movement dynamics seen in nature emerge, taking the habitat into account is likely to be of critical importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the discussion of habitat influences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "7e758994-3ff8-447f-bf3f-65b7eb3aa7c6",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C48",
+      "claim": "Advances in GPS tracking capabilities now make it possible to collect data at a high enough spatial and temporal resolution that fine-scale movement decisions and social interactions can be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in GPS tracking capabilities now make it possible to collect data at a high enough spatial and temporal resolution that fine-scale movement decisions and social interactions can be resolved (Nagy et al., 2010; King et al., 2012; Mann et al., 2014; Giuggioli et al., 2015; Strandburg-Peshkin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "d835d9ad-9e05-448e-a753-434194fd7625",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C49",
+      "claim": "The increased consumer availability of unmanned aerial vehicles (UAVs), coupled with computational advances in image stitching and three-dimensional landscape reconstruction, have made these tools increasingly accessible to researchers in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the increased consumer availability of unmanned aerial vehicles (UAVs), coupled with computational advances in image stitching and three-dimensional landscape reconstruction, have made these tools increasingly accessible to researchers in biology (Anderson and Gaston, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "b22c7cbc-99ee-4b6f-88b6-1c13a4e19aea",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C50",
+      "claim": "Baboons often travelled 5\u20136 kms per day during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, baboons in our troop often travelled 5\u20136 kms per day during the study period, probably because conditions were dry and food, although not scarce, was not abundant enough close to their sleep site to sustain the entire troop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on observation during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2777c199-1de5-4f0c-882e-0fa08449f879",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C51",
+      "claim": "Conditions were dry during the study period and food, although not scarce, was not abundant enough close to the sleep site to sustain the entire troop.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, baboons in our troop often travelled 5\u20136 kms per day during the study period, probably because conditions were dry and food, although not scarce, was not abundant enough close to their sleep site to sustain the entire troop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on observation and inference about environmental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "84a34e98-e9f3-4a10-8b66-00321fc1715c",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C52",
+      "claim": "The study troop forages on mixed resources that are widely distributed (e.g. grass roots and prickly pear fruit).",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation in the field is that the troop forages on mixed resources that are widely distributed (e.g. grass roots and prickly pear fruit), meaning that this explanation seems unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on field observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "4322bcac-7829-4b7f-88c1-b6f74cd7fb14",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C53",
+      "claim": "The importance of following others could reflect a risk reduction strategy, since locations that conspecifics have recently passed through have already been effectively 'pre-screened' for threats such as leopards or venomous snakes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the importance of following others could reflect a risk reduction strategy, since locations that conspecifics have recently passed through have already been effectively 'pre-screened' for threats such as leopards or venomous snakes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "1487de79-465c-4a1f-b1fb-0cfc934253f2",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C54",
+      "claim": "The decrease in the importance rank of the recently used feature when the troop is in open habitats supports the hypothesis that following others provides anti-predator benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by the decrease in the importance rank of the recently used feature when the troop is in open habitats (Appendix 1\u2014figure 15B), as there are likely to be fewer anti-predator benefits to be gained by following others in open areas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from context-specific model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "6ccc4f30-4e05-47cf-a3e6-aacd84e4ac43",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C55",
+      "claim": "Following in the footsteps of others is a less cognitively demanding task than carving out one's own path.",
+      "claim_type": "EXPLICIT",
+      "source": "A final possibility is that since following in the footsteps of others is a less cognitively demanding task than carving out one's own path (Piyapong et al., 2007), by generally following these paths baboons are reducing the cognitive effort of navigation (Kool et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "be722d16-fe95-4e02-88a8-05d1c10684fd",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C56",
+      "claim": "Baboons' tendency to follow in the footsteps of others is likely to have consequences for the aggregate space use patterns of baboon troops, with troops making use of a smaller portion of the area within their surroundings than would be naively expected if individuals were moving more randomly within the troop's boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the explanation, baboons' tendency to follow in the footsteps of others is likely to have consequences for the aggregate space use patterns of baboon troops, with troops making use of a smaller portion of the area within their surroundings than would be naively expected if individuals were moving more randomly within the troop's boundaries, which in turn could alter their impact on the environment around them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observed behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "fa732423-3b3e-4809-9b52-11b8056fa64f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C57",
+      "claim": "Where individuals position themselves within groups is thought to reflect a trade-off between forging new ground to find resources and being exposed to predators.",
+      "claim_type": "EXPLICIT",
+      "source": "Where individuals position themselves within groups is thought to reflect a trade-off between forging new ground to find resources and being exposed to predators (Hirsch, 2007; Krause, 1994; Parrish and Edelstein-Keshet, 1999; Hirsch, 2011; Teichroeb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "e5d73f1c-382e-462c-9949-77698ee9fe39",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C58",
+      "claim": "The extent to which animals follow in each others footsteps will have an important impact on the rate at which individuals are exposed to new areas - and hence the rate at which they will encounter both new resources and stationary predators.",
+      "claim_type": "EXPLICIT",
+      "source": "While work in this area has typically focused on how this tradeoff can drive differences in the amount of time individuals spend at the front vs back of the group, or in the center vs periphery, our results suggest that the extent to which animals follow in each others footsteps is another dynamic which should be considered, as this factor will have an important impact on the rate at which individuals are exposed to new areas - and hence the rate at which they will encounter both new resources and stationary predators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "80f629d3-7d3b-4ee9-ba0e-78b015d6f521",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C59",
+      "claim": "Roads may facilitate animal movement, perhaps by serving as navigational landmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of roads is consistent with studies in other species which suggest that roads may facilitate animal movement (Dickson et al., 2005), perhaps by serving as navigational landmarks (Mann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "6b7d8b6f-2eb4-4358-842a-935f6e358375",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C60",
+      "claim": "The weaker influence of paths compared to roads is consistent with the hypothesis that roads serve as navigational landmarks, as the abundance and tortuosity of paths could make them less useful as navigational aids.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is consistent with the weaker influence of paths in our analysis (Figure 1C), whose sheer abundance and tortuosity could make them less useful as navigational aids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from comparison of road and path effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "ba03e890-e46b-4d9d-bda0-6186340bd34e",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C61",
+      "claim": "The temporal difference in road importance is likely to reflect the needs of the troop to travel away from their core zone (near their sleeping site) to forage.",
+      "claim_type": "EXPLICIT",
+      "source": "This temporal difference is likely to reflect the needs of the troop to travel away from their core zone (near their sleeping site) to forage (Appendix 1\u2014figure 23).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the observed temporal patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "da79b842-a951-4c4c-b3a9-59e82001464a",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C62",
+      "claim": "Changes in coordination and group spatial organization as a function of environmental factors will have important consequences for understanding both the mechanistic basis of group coordination and its costs and benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in coordination and group spatial organization as a function of environmental factors will have important consequences for understanding both the mechanistic basis of group coordination and its costs and benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "3beaf0ff-a649-4597-aefd-e8ce1edd5519",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C63",
+      "claim": "Habitat influences extend beyond the level of individual decisions to the collective dynamics of the group, leading to changes in emergent group structure and coordination in different environmental contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, habitat influences extend beyond the level of individual decisions to the collective dynamics of the group, leading to changes in emergent group structure and coordination in different environmental contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on the group-level analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "934ddb17-0755-4202-8468-04f5aa962e33",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C64",
+      "claim": "Changes in group structure could reflect direct habitat constraints on movement (such as physical barriers to movement), but also behavioral changes associated with different habitats (such as a shift from foraging to directed travel in different environments).",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is manifested in our dataset in the fast movement and elongated group structures formed on roads and areas of high path density, and the decrease in coordination when moving through dense habitats. These changes could reflect direct habitat constraints on movement (such as physical barriers to movement), but also behavioral changes associated with different habitats (such as a shift from foraging to directed travel in different environments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "1f730ec4-1b44-49fb-8bc0-0b6f2565cbcf",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C65",
+      "claim": "Roads and sleeping sites are relatively dramatic features of the habitat that have a large impact on baboon movement patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that, although few in number and in total area, roads and sleeping sites are relatively dramatic features of the habitat that have a large impact on baboon movement patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "784e5fa2-f80c-4533-ad20-54c729aea7ef",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C66",
+      "claim": "As the resolution at which we can map both the movements of animals and their environments improve, the integration of habitat features into studies of collective behavior - and conversely the incorporation of within-group social interactions into studies in movement ecology - will be critical for understanding the movement patterns of social animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As the resolution at which we can map both the movements of animals and their environments improve, the integration of habitat features into studies of collective behavior - and conversely the incorporation of within-group social interactions into studies in movement ecology - will be critical for understanding the movement patterns of social animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about future research directions based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "6b1be8d5-e606-49b8-8139-08c6cbda5b24",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C67",
+      "claim": "The methods employed and many of the insights gained are likely to extend to a variety of social animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the results shown here are specific to the system we explore, the methods employed and many of the insights gained are likely to extend to a variety of social animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the generalizability of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "1b5c93ff-7974-4ef4-9487-5d43e00db016",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C68",
+      "claim": "Step selection is a widely employed framework for assessing the environmental drivers of animal movement patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Step selection is a widely employed framework for assessing the environmental drivers of animal movement patterns (Thurfjell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "d58ae638-45ef-41b3-a75b-8f39b6055ce7",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C69",
+      "claim": "Step selection models have previously been employed to infer the habitat preferences of animals, as well as their responses to distributions of predators and competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Step selection models have previously been employed to infer the habitat preferences of animals (Fortin et al., 2005; Coulon et al., 2008; Hodson et al., 2010), as well as their responses to distributions of predators (Fortin et al., 2005; Basille et al., 2015; Latombe et al., 2014), and competitors (Vanak et al., 2013; Potts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "645ab2a9-5205-426f-bf81-91285500cc09",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C70",
+      "claim": "Step selection models have not before been applied to the study of the fine-scale social interactions within animal groups and their interplay with nonsocial influences on movement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge step selection models have not before been applied to the study of the fine-scale social interactions within animal groups and their interplay with nonsocial influences on movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the novelty of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "72a33745-9074-4588-b4f7-ff876923c587",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C71",
+      "claim": "Images were automatically combined using Postflight Terra 3D software (Pix4D) to reconstruct a three-dimensional point cloud image of the landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "After collection, images were automatically combined using Postflight Terra 3D software (Pix4D) to reconstruct a three-dimensional point cloud image of the landscape, and these were used to identify all habitat features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the image processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "ecf486e4-3c43-4053-8b71-6c055945bf8f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C72",
+      "claim": "All procedures were subject to ethical review and were carried out in accordance with the approved guidelines set out by the National Commission for Science, Technology and Innovation of the Republic of Kenya (NACOSTI/P/15/5727/4608).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were subject to ethical review and were carried out in accordance with the approved guidelines set out by the National Commission for Science, Technology and Innovation of the Republic of Kenya (NACOSTI/P/15/5727/4608).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c443612f-444a-4f33-90b0-7b8d7508b682",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C73",
+      "claim": "Baboon tracking was approved by the Smithsonian Tropical Research Institute (IACUC 2012.0601.2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Baboon tracking was approved by the Smithsonian Tropical Research Institute (IACUC 2012.0601.2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c0aca4af-b631-4560-b067-e415ec2b4885",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C74",
+      "claim": "Baboons are effectively 'commuting' to and from foraging locations during the start and end of each day.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that baboons are effectively 'commuting' to and from foraging locations during the start and end of each day (Appendix 1\u2014figure 15A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the temporal patterns in movement behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "5f1a0c82-b28c-443f-a240-62a08597e410",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C75",
+      "claim": "The preference for recently-used locations is shown to be for a particular location in space rather than a general direction of travel.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the previously-observed preference of baboons to follow the majority of troop-mates (Strandburg-Peshkin et al., 2015), but in this case the preference is shown to be for a particular location in space rather than a general direction of travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from comparison with prior findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "790ee63e-3568-414f-aa89-02dea5e02e8e",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C76",
+      "claim": "As baboons move through space they effectively 'pave the way' for their troop mates, who tend to follow in the footsteps of larger subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus as baboons move through space they effectively 'pave the way' for their troop mates, who tend to follow in the footsteps of larger subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observed preference for recently-used locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "26460d73-3746-4db0-a4d8-7b4391173f07",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "claim_id": "C77",
+      "claim": "Both the data collection periods (August-September 2012 for GPS tracking and January 2015 for aerial imagery) had similar ecological conditions (dry season) and habitat characteristics (trees, roads, bushes) were unlikely to have changed much over this period.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we had a gap between the two data collection periods, both had similar ecological conditions (dry season) and habitat characteristics (trees, roads, bushes) were unlikely to have changed much over this period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the comparability of data collection periods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected high-resolution GPS tracking data (1 Hz) from 25 wild olive baboons (81% of adults/subadults) over 14 days in August-September 2012, and aerial imagery via UAV in January 2015, generating a 3D habitat reconstruction with ~5 cm precision covering 3.3 km\u00b2 (approximately 2/3 of the troop's range).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C71-C73, and C77 provide comprehensive methodological details about data collection, including sample size, temporal coverage, spatial resolution, and ethical approvals. The temporal gap between GPS and aerial data collection is acknowledged (C77) with justification that habitat characteristics were unlikely to have changed substantially during the dry season.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "6883cb77-3e98-4919-9670-356f9ef2cc99",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Baboons' preference for locations recently traversed by troop members (within ~4.5 minutes) is the most important predictor of individual movement decisions, with individuals tending to follow in the footsteps of larger subgroups at specific spatial locations rather than general directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C15 are directly supported by multi-model inference showing 'recently used space' as the top-ranked feature (Figure 1C) and maximum likelihood analysis identifying the 4.5-minute timescale (Appendix 1\u2014figure 8). The sigmoidal relationship in Figure 3A quantitatively demonstrates this preference. Claims C75-C76 provide important context distinguishing this from prior directional-following results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "14b78359-e952-41bd-8f63-1468bafbc14f",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both social and habitat factors are important determinants of baboon movement decisions, with models incorporating both feature types showing greater predictive power than models with only one type, and baboons integrating multiple factors operating over different spatial scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are directly supported by Figure 1B showing clear improvements in predictive accuracy when both social and habitat features are included compared to single-feature-type models. Claim C14 appropriately summarizes the multi-scale nature of influences revealed by the analysis. The step selection framework and multi-model inference provide robust statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sleep site direction is the second-ranked predictor of movement, with baboons moving away from the sleep site in morning and toward it in evening, suggesting 'commuting' behavior between the sleep site and foraging areas, with this effect and road use being stronger during morning/evening than midday.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C18-C20 are supported by feature ranking (Figure 1C) and context-specific analyses (Figure 3D-F, Appendix 1\u2014figure 15A). Claims C61 and C74 provide reasonable interpretations linking temporal patterns to foraging ecology. The consistency across multiple analytical approaches (model fitting and direct probability calculations) strengthens support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "46be772e-8423-4bb8-a98a-473439502ebf",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Roads strongly influence baboon movement decisions, with baboons showing strong preference to follow roads once on them, spending more time on roads during morning/evening (12.1%) than midday (7.5%), and moving faster and more directedly on roads, with roads potentially serving as navigational landmarks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C16-C17, C22-C23 are well-supported by feature ranking (Figure 1C), quantitative analysis (Figure 3B showing 3-4 additional troop mates needed to overcome road preference), and group-level metrics (Figure 5B, Appendix 1\u2014figure 20). Claim C22 provides specific percentages. Claims C59-C60 and C65 offer reasonable interpretations supported by citations, though the navigational landmark hypothesis remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "0f8e30ce-a937-4588-8274-982476e191b1",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Animal paths have less pronounced influence on movement decisions than roads when considered across all data, but their importance increases in areas with high path density, where groups also move faster, more directedly, and with greater polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C27-C28 are supported by feature ranking showing paths as low-ranked overall (Figure 1C) but context-specific analysis revealing increased importance in high-path-density areas (Appendix 1\u2014figure 15C, 17, 21). Claim C60 provides reasonable interpretation for the difference between roads and paths. The context-dependent nature of path influence is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "14135ee5-47ab-4721-9942-eec015b2df10",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Baboons avoid high vegetation density at local scales (2.5 m), with this factor becoming more important in particularly dense environments where it surpasses roads and social density in influence, and dense areas being associated with lower group polarization, slower speed, and less directed travel, suggesting vegetation constrains movement coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C24 are supported by feature ranking (Figure 1C) and context-specific analysis (Appendix 1\u2014figure 15B). Claim C25 is supported by group-level analysis (Figure 5C). Claim C26 provides a reasonable mechanistic interpretation. The multi-scale analysis (aggregate vs. context-specific) reveals important nuances in how vegetation density influences movement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Group structure (elongation, polarization, speed, directedness) varies with environmental context, with habitat features receiving larger weights than time of day in predicting group-level properties, indicating that current habitat shapes group structure more than temporal context, and that habitat influences extend from individual decisions to collective dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C29-C32 are supported by group-level analyses (Appendix 1\u2014figures 18, 22) and multi-model inference (Figure 6) showing habitat features consistently outweigh temporal factors. Claim C30 appropriately interprets these results. Claim C63 provides an important summary linking individual and collective levels. The systematic comparison across contexts strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "c5fa2f5d-d493-44e2-b680-9ee9288be6e4",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During the study period, baboons traveled 5-6 km per day under dry conditions with food not abundant enough near the sleep site, foraging on widely distributed mixed resources including grass roots and prickly pear fruit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are based on direct field observations during the study period. While C51 includes some inference about food abundance, the observational basis and consistency with the movement patterns observed (long daily travel distances, commuting behavior) provide reasonable support. These ecological details provide important context for interpreting movement patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "48db0334-99da-44c1-b7b1-5abc18b06b84",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tendency to follow recently-used locations could reflect risk reduction (pre-screening for threats), reduced cognitive load, or other mechanisms, with the decreased importance in open habitats supporting the anti-predator hypothesis, and this behavior likely having consequences for aggregate space use patterns and exposure to resources/predators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C55 present multiple speculative explanations for the observed following behavior, appropriately citing relevant literature. Claim C54 provides some empirical support for the anti-predator hypothesis from context-specific analysis. However, these remain untested hypotheses. Claims C56 and C58 make reasonable inferences about consequences, but lack direct empirical validation. Additional experiments would be needed to distinguish among proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "cd211618-2da4-4f52-a4be-fa11046a7da1",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Baboon troops (ranging from a few to over 100 individuals) remain cohesive while foraging despite traveling long distances through heterogeneous savanna habitat; olive baboons are generalist omnivores feeding on dispersed resources; leopards (common at the study site) and lions (less common) are major predators, with baboons returning to safe sleeping sites nightly to avoid predation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 provide essential background on baboon ecology and the study system, supported by appropriate citations (C33-C34, C36) and site-specific knowledge (C37-C39). These claims establish the ecological context necessary for interpreting the movement results. The information about predators and sleeping sites is particularly relevant for understanding the importance of sleep site direction in movement decisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior research on collective motion has largely neglected environmental complexity, focusing on simple environments or only social influences, despite theoretical and empirical evidence that habitat structure can influence individual movement (through goal-directed movement and physical constraints) and collective patterns (through altered group structure and coordination), making habitat integration critical for understanding collective movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 accurately characterize prior literature with appropriate citations. Claims C45-C47 present reasonable hypotheses about habitat influences that motivate the current study. While C45-C46 are somewhat speculative, they are appropriately framed as possibilities and are supported by the results presented in the manuscript. This provides strong justification for the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent technological advances in GPS tracking and UAVs have enabled fine-scale resolution of movement decisions and habitat structure; step selection models are widely used for assessing environmental drivers of movement but have not previously been applied to fine-scale social interactions within groups; integrating habitat and social factors will be critical for understanding social animal movement, with the methods likely extending to other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C68-C69 accurately describe technological and methodological advances with appropriate citations. Claim C70 correctly identifies the novelty of applying step selection to within-group social interactions. Claims C66-C67 make reasonable inferences about future directions and generalizability. These claims effectively position the study's contributions within the broader field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    },
+    {
+      "id": "40a5069d-5b77-4631-a125-b0fa1654012e",
+      "content_id": "fa8cd793-6dc7-4401-9b33-410b08581185",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Within-group spatial positioning reflects trade-offs between resource access and predation risk; changes in coordination and group structure as a function of environmental factors have important consequences for understanding mechanisms and costs/benefits of group coordination; observed changes could reflect direct habitat constraints or behavioral shifts associated with different habitats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 accurately summarizes prior theory with appropriate citations. Claims C62 and C64 make reasonable inferences about the implications and potential mechanisms underlying the observed patterns. While C64 acknowledges that distinguishing between direct constraints and behavioral changes requires further work, the interpretations are appropriately cautious and well-grounded in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:23.724778Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b2921602-53db-4bc8-8e43-5494cadc501a",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "0a6dc945-690c-4a1c-9182-66acf85949a3",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "643e8f7e-c5da-4a0d-90b3-7cac7ac2d0d9",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "a152ec07-70ef-40ed-a831-69f2a918c0a8",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "15461a13-66a6-4a6a-82ee-5469f24392a6",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "72a33745-9074-4588-b4f7-ff876923c587",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "ecf486e4-3c43-4053-8b71-6c055945bf8f",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "c443612f-444a-4f33-90b0-7b8d7508b682",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "26460d73-3746-4db0-a4d8-7b4391173f07",
+      "result_id": "1038de0d-75a1-40b4-a5c7-78f62ca4f051"
+    },
+    {
+      "claim_id": "2d9974ec-bb98-4f7f-a49f-878d0bde687f",
+      "result_id": "6883cb77-3e98-4919-9670-356f9ef2cc99"
+    },
+    {
+      "claim_id": "22463379-5ec8-4693-ab20-4a256e4ee950",
+      "result_id": "6883cb77-3e98-4919-9670-356f9ef2cc99"
+    },
+    {
+      "claim_id": "1a3a8607-b47e-4ffb-890e-2e373567a5cd",
+      "result_id": "6883cb77-3e98-4919-9670-356f9ef2cc99"
+    },
+    {
+      "claim_id": "5f1a0c82-b28c-443f-a240-62a08597e410",
+      "result_id": "6883cb77-3e98-4919-9670-356f9ef2cc99"
+    },
+    {
+      "claim_id": "790ee63e-3568-414f-aa89-02dea5e02e8e",
+      "result_id": "6883cb77-3e98-4919-9670-356f9ef2cc99"
+    },
+    {
+      "claim_id": "75d61d22-fbdf-4289-8e82-3a5443820f28",
+      "result_id": "14b78359-e952-41bd-8f63-1468bafbc14f"
+    },
+    {
+      "claim_id": "58542ab8-6421-44b0-8b81-91b0394ba3a1",
+      "result_id": "14b78359-e952-41bd-8f63-1468bafbc14f"
+    },
+    {
+      "claim_id": "ea50d556-d6a2-480f-9ee5-cbe069927d15",
+      "result_id": "14b78359-e952-41bd-8f63-1468bafbc14f"
+    },
+    {
+      "claim_id": "d96480a6-bf29-4ed3-9f8b-ecfe18e82dd1",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "c6dafb06-3483-453a-92c3-08e483ab33b4",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "f76c2e3c-89ac-4608-8d33-a89630f3fc00",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "17aafd94-da6f-422e-9660-ad9790491983",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "ba03e890-e46b-4d9d-bda0-6186340bd34e",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "c0aca4af-b631-4560-b067-e415ec2b4885",
+      "result_id": "2f7ac7d6-2d4e-4a36-9081-1c651fb91dfe"
+    },
+    {
+      "claim_id": "a46bc278-221f-4ee4-9d69-51596a493676",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "a3386689-090c-43f7-bba1-649983041159",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "bb807d37-57e6-4fed-b9ba-6d800d42731f",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "d405760a-cb7a-483c-a650-0906763e6a48",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "058c9d76-0e4d-4421-ae14-f3e6a732993b",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "80f629d3-7d3b-4ee9-ba0e-78b015d6f521",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "6b7d8b6f-2eb4-4358-842a-935f6e358375",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "1f730ec4-1b44-49fb-8bc0-0b6f2565cbcf",
+      "result_id": "46be772e-8423-4bb8-a98a-473439502ebf"
+    },
+    {
+      "claim_id": "716e385d-0dc4-40c8-a80d-2c9b90dab0ec",
+      "result_id": "0f8e30ce-a937-4588-8274-982476e191b1"
+    },
+    {
+      "claim_id": "49e7f7d2-e2fc-4249-a738-e1e6f7783d16",
+      "result_id": "0f8e30ce-a937-4588-8274-982476e191b1"
+    },
+    {
+      "claim_id": "351a1c5b-01b4-41e2-b22a-15f6384f29a2",
+      "result_id": "0f8e30ce-a937-4588-8274-982476e191b1"
+    },
+    {
+      "claim_id": "6b7d8b6f-2eb4-4358-842a-935f6e358375",
+      "result_id": "0f8e30ce-a937-4588-8274-982476e191b1"
+    },
+    {
+      "claim_id": "820ec29f-1b71-49c2-bdc8-fcaee81d9733",
+      "result_id": "14135ee5-47ab-4721-9942-eec015b2df10"
+    },
+    {
+      "claim_id": "2f0aeb94-1bd6-4332-85a4-6c166d9361cb",
+      "result_id": "14135ee5-47ab-4721-9942-eec015b2df10"
+    },
+    {
+      "claim_id": "d2567bd6-63c3-423b-99c9-80aabc48157a",
+      "result_id": "14135ee5-47ab-4721-9942-eec015b2df10"
+    },
+    {
+      "claim_id": "c31af953-457e-45aa-af6b-37f6d82ce888",
+      "result_id": "14135ee5-47ab-4721-9942-eec015b2df10"
+    },
+    {
+      "claim_id": "e334dfc7-6622-4b76-8ed1-f63e08c0e9d8",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "5c3c94a6-9aae-49e7-8002-3a385a4bbd13",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "e6b2db57-4ad3-44fd-87a4-4f650317bd19",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "6fcdeffc-4daa-4244-a4c8-4dda56fd923f",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "a4b82f1d-ea74-40c4-9f77-7df270ea12ee",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "3beaf0ff-a649-4597-aefd-e8ce1edd5519",
+      "result_id": "4646ed3e-6774-4c8a-91ff-644c5d26fbf2"
+    },
+    {
+      "claim_id": "b22c7cbc-99ee-4b6f-88b6-1c13a4e19aea",
+      "result_id": "c5fa2f5d-d493-44e2-b680-9ee9288be6e4"
+    },
+    {
+      "claim_id": "2777c199-1de5-4f0c-882e-0fa08449f879",
+      "result_id": "c5fa2f5d-d493-44e2-b680-9ee9288be6e4"
+    },
+    {
+      "claim_id": "84a34e98-e9f3-4a10-8b66-00321fc1715c",
+      "result_id": "c5fa2f5d-d493-44e2-b680-9ee9288be6e4"
+    },
+    {
+      "claim_id": "4322bcac-7829-4b7f-88c1-b6f74cd7fb14",
+      "result_id": "48db0334-99da-44c1-b7b1-5abc18b06b84"
+    },
+    {
+      "claim_id": "1487de79-465c-4a1f-b1fb-0cfc934253f2",
+      "result_id": "48db0334-99da-44c1-b7b1-5abc18b06b84"
+    },
+    {
+      "claim_id": "6ccc4f30-4e05-47cf-a3e6-aacd84e4ac43",
+      "result_id": "48db0334-99da-44c1-b7b1-5abc18b06b84"
+    },
+    {
+      "claim_id": "be722d16-fe95-4e02-88a8-05d1c10684fd",
+      "result_id": "48db0334-99da-44c1-b7b1-5abc18b06b84"
+    },
+    {
+      "claim_id": "e5d73f1c-382e-462c-9949-77698ee9fe39",
+      "result_id": "48db0334-99da-44c1-b7b1-5abc18b06b84"
+    },
+    {
+      "claim_id": "df4bf410-e833-4f0c-b1ad-156ef9236b10",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "8a28e721-b13a-4752-b24f-bff66e03946b",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "5d7a6c21-1ad8-49d6-a822-a2a593f214a7",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "ad2f12da-0060-410b-aa8f-ba672b024b98",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "1f80afcd-1b17-4e59-a471-928c5dc818b3",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "652078ba-767a-4052-91cc-e8da456066dd",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "c6c1f16c-1603-4177-8b2a-3bfb0877593b",
+      "result_id": "cd211618-2da4-4f52-a4be-fa11046a7da1"
+    },
+    {
+      "claim_id": "7413b84c-f35e-47c4-b6ad-2ea4251637ad",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "31b9e4b1-2975-480b-972c-1993455d507b",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "2e6fa033-f556-4c15-8eb4-ff1ab67e5127",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "2017c35a-9e3a-4765-a82f-39f0bc3be3b2",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "2dcce053-f9ed-4da1-81ab-56a1df19af19",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "0cda1dab-7150-409f-bc91-9315191276f1",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "4c5c9d09-1a06-47f1-a951-6001a9979247",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "7f386054-e888-49de-9eca-8661b3c02ace",
+      "result_id": "83bf4dc3-b5af-49a5-bfd7-426c294b44f4"
+    },
+    {
+      "claim_id": "7e758994-3ff8-447f-bf3f-65b7eb3aa7c6",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "d835d9ad-9e05-448e-a753-434194fd7625",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "784e5fa2-f80c-4533-ad20-54c729aea7ef",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "6b1be8d5-e606-49b8-8139-08c6cbda5b24",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "1b5c93ff-7974-4ef4-9487-5d43e00db016",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "d58ae638-45ef-41b3-a75b-8f39b6055ce7",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "645ab2a9-5205-426f-bf81-91285500cc09",
+      "result_id": "e8a1fe92-4bfc-43df-b05e-48b3787415ff"
+    },
+    {
+      "claim_id": "fa732423-3b3e-4809-9b52-11b8056fa64f",
+      "result_id": "40a5069d-5b77-4631-a125-b0fa1654012e"
+    },
+    {
+      "claim_id": "da79b842-a951-4c4c-b3a9-59e82001464a",
+      "result_id": "40a5069d-5b77-4631-a125-b0fa1654012e"
+    },
+    {
+      "claim_id": "934ddb17-0755-4202-8468-04f5aa962e33",
+      "result_id": "40a5069d-5b77-4631-a125-b0fa1654012e"
+    }
+  ],
+  "comparisons": []
+}

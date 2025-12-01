@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors demonstrate that a single pairwise equation form fails to qualitatively capture diverse pairwise microbial interactions. Different equations are required depending on whether mediators are consumable or reusable, whether interactions involve one or multiple mediators, and sometimes on quantitative community details such as relative fitness and initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are strongly supported by analytical derivations (Figure 3, Methods sections) and numerical simulations (Figures 4-6) showing that saturable L-V and alternative pairwise models are not interchangeable and that model choice depends on mechanistic details. The work systematically demonstrates failures across multiple interaction types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "For reusable mediators, the mechanistic model can be transformed into a saturable L-V pairwise model after mediator acclimation, and this model is valid regardless of competitive outcomes. For consumable mediators where the supplier always grows faster than the consumer, the mediator accumulates proportionally to the supplier and can be approximated by a saturable L-V model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by analytical derivations in Figure 3A and Methods (Case I), with numerical validation in Figure 3\u2014figure supplement 1 and Figure 4A. The mathematical transformations are explicitly shown and conditions for validity are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The saturable L-V model and the alternative pairwise model are not interchangeable for consumable mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is directly demonstrated in Figure 4, where the two models produce qualitatively different predictions for the same mechanistic system. Figure 4A shows saturable L-V works when alternative fails, and Figure 4B shows the reverse, providing clear empirical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "When one species affects another via multiple mediators, these mediators generally cannot be represented by a single pairwise model. For two reusable mediators with different potencies, saturable L-V parameters can differ qualitatively depending on initial community density, causing models derived from high-density communities to fail for low-density communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by analytical work in Methods and numerical demonstrations in Figure 5 and Figure 5\u2014figure supplement 1D. The work shows that only under special conditions (similar potencies or one dominant mediator) can multiple mediators be treated as one.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "For competitive commensal communities, the best-fitting L-V pairwise model can predict future dynamics in some but not all cases, depending on mechanistic model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is demonstrated in Figure 6, which shows three different parameter regimes where the L-V pairwise model succeeds (panels B, C) or fails (panel D) to predict mechanistic dynamics. This provides direct numerical evidence for parameter-dependent model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "In multispecies communities, pairwise models can work when indirect interactions form interaction chains with independent segments, but fail when indirect interactions involve interaction modification, even if each species pair is accurately represented by a pairwise model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by Figure 7A-B (interaction chains work) and Figure 7C-F (interaction modification fails). The distinction between these two types of indirect interactions is also analytically justified in Methods (C32-C33), showing interaction modification violates additivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C75",
+      "C76"
+    ],
+    "result": "Pairwise modeling will often fail to predict microbial dynamics due to violations of both the universality assumption (demonstrated in this work) and the additivity assumption (in multispecies communities). Caution is needed when extrapolating conclusions from pairwise models, especially for communities with diverse interaction mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C75, C76 represent the main conclusions drawn from the collective results (C4-C60). The work systematically demonstrates failures of the universality assumption across multiple scenarios, and combines this with known issues with additivity to argue for limited predictive power of pairwise models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Pairwise models are commonly used to describe many-species communities, assuming additive fitness effects from pairwise interactions (additivity assumption) and that all interactions can be represented by a single equation form (universality assumption).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe established modeling practices in the field, supported by the extensive literature citations throughout the manuscript (C18, C19, C22, C23, C27). These are well-documented assumptions underlying L-V pairwise models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "L-V pairwise models have successfully explained prey-predator oscillatory dynamics (hare-lynx) and carnivore coexistence competing for herbivores. In these cases, pairwise and mechanistic models are mathematically equivalent because species are also mediators or mediators rapidly reach steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by citations to classic ecological literature (Volterra 1926, MacArthur 1970, Chesson 1990) and illustrated in Figure 1\u2014figure supplement 1. The explanations for why pairwise models work in these cases are logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Interaction modification violates the additivity assumption of pairwise models, while interaction chains do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are analytically demonstrated in Methods section 'Interaction modification but not interaction chain violates the additivity assumption' with supporting citations. The mathematical proof shows interaction modification introduces terms that depend on multiple species, violating Equation 6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Using mechanistic reference models offers advantages: community dynamics is deterministically known, deriving pairwise models is not limited by experimental inaccuracy, and flexibility allows exploration of various interaction mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe methodological advantages that are logically sound and demonstrated throughout the Results section. The approach allows systematic comparison between mechanistic and pairwise models without experimental noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Pairwise models have been useful for understanding ecological phenomena, identifying interaction patterns, understanding assembly rules in small communities, generating hypotheses, and making limited-scale predictions, though they encounter difficulties predicting species removal/addition effects in larger communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by citations to published literature (Volterra 1926, Vetsigian 2011, Friedman 2017, Stein 2013, etc.) and represent a balanced assessment of when pairwise models have been useful versus their limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The authors advocate transitioning to models that incorporate interaction mechanisms at the appropriate level of abstraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is a recommendation based on the findings, but the manuscript does not provide concrete guidance on how to determine the 'appropriate level of abstraction' beyond the illustrative example in Figure 8. This remains an open challenge requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Microbial communities are important for industrial applications (cheese/wine fermentation, waste treatment) and human health (immune modulation, digestion). Community properties are influenced by interactions where individuals alter each other's physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide background context supported by appropriate citations (van Hijum 2013, Seghezzo 1998, Round and Mazmanian 2009, Widder 2016). These establish the practical importance of understanding microbial community dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Many microbial interactions are chemically mediated. Mechanistic models require knowledge of mediators (often challenging to identify) and more equations/parameters than pairwise models, whose parameters are relatively easy to estimate. Consequently, pairwise modeling has been liberally applied to microbial communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by citations (Mounier 2008, Stein 2013, etc.) and Figure 1 demonstrating the complexity difference. These claims establish the motivation for using pairwise models despite their limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mediator modification is common in microbial communities, including antibiotic inactivation by third species and shared production/consumption of organic acids in oral biofilms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by citations to published literature (Kelsic 2015, Bairey 2016, Bradshaw 1994, Kolenbrander 2000). These examples illustrate the prevalence of interaction modification in real microbial systems.",
+    "result_type": "MINOR"
+  }
+]

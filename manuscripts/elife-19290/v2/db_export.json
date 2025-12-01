@@ -1,0 +1,1419 @@
+{
+  "submission": {
+    "id": "6f76dedc-06ed-42cf-ab76-19511c5a416f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:40:16.716439Z",
+    "updated_at": "2025-11-30T22:40:16.716439Z"
+  },
+  "content": [
+    {
+      "id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "submission_id": "6f76dedc-06ed-42cf-ab76-19511c5a416f",
+      "content_type": "manuscript",
+      "content_text": "# The invariant cleavage pattern displayed by ascidian embryos depends on spindle positioning along the cell's longest axis in the apical plane and relies on asynchronous cell divisions\n\n## Authors\n\n- R\u00e9mi Dumollard<sup>1</sup> ([ORCID: 0000-0002-8444-0630](https://orcid.org/0000-0002-8444-0630)) \u2020\n- Nicolas Minc<sup>2</sup>\n- Gregory Salez<sup>1</sup>\n- Sameh Ben Aicha<sup>1</sup>\n- Faisal Bekkouche<sup>1</sup>\n- C\u00e9line Hebras<sup>1</sup>\n- Lydia Besnardeau<sup>1</sup>\n- Alex McDougall<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratoire de Biologie du D\u00e9veloppement de Villefranche-sur-mer (LBDV) UMR7009 Sorbonne Universit\u00e9s, Universit\u00e9 Pierre-et-Marie-Curie, CNRS Villefranche sur mer France\n2. Institut Jacques Monod, UMR7592 CNRS Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ascidian embryo is an ideal system to investigate how cell position is determined during embryogenesis. Using 3D timelapse imaging and computational methods we analyzed the planar cell divisions in ascidian early embryos and found that spindles in every cell tend to align at metaphase in the long length of the apical surface except in cells undergoing unequal cleavage. Furthermore, the invariant and conserved cleavage pattern of ascidian embryos was found to consist in alternate planar cell divisions between ectoderm and endomesoderm. In order to test the importance of alternate cell divisions we manipulated zygotic transcription induced by \u03b2-catenin or downregulated wee1 activity, both of which abolish this cell cycle asynchrony. Crucially, abolishing cell cycle asynchrony consistently disrupted the spindle orienting mechanism underpinning the invariant cleavage pattern. Our results demonstrate how an evolutionary conserved cell cycle asynchrony maintains the invariant cleavage pattern driving morphogenesis of the ascidian blastula.\n\n## Introduction\n\nIn chordate embryos the functional pattern of cells is generated before gastrulation such that a fate map for all chordate embryos at the blastula stage predicts that cells in different positions will give rise to new cell types and layers that are important for morphogenesis (Kourakis and Smith, 2005). Invertebrate chordate embryos of the ascidian display a similar fate map to other chordates even though their blastulae are composed of only 64 cells rather than several thousand cells typical of other chordates (Kourakis and Smith, 2005; Lemaire et al., 2008). Due to its conserved fate map yet small cell number, the ascidian embryo is an ideal system to elucidate mechanisms underpinning cell positioning during morphogenesis of a chordate blastula. Because ascidian embryos display an invariant cleavage pattern with no cell migration or cell death up to the time of gastrulation, cell division plane orientation is important for pattern formation (McDougall et al., 2015). In addition, although the invariant-cleavage pattern displayed by asicidian embryos is specific to ascidians, the lophotrochozoa also display stereotyped spiral cleavage patterns that may employ similar rules as the ones we address here in the ascidian (Rabinowitz and Lambert, 2010; Brun-Usan et al., 2017). All blastomeres are fate restricted in the 64 cell ascidian blastula and most cell divisions at the 32 cell stage are fate segregating asymmetric divisions (Lemaire et al., 2008; Lemaire, 2009). Such fate-segregating asymmetric cell divisions rely on precisely regulated cell divisions partitioning maternal determinants (muscle lineage) or allowing local cell-cell contacts for polarised inductive cell fate specification e.g. neural lineage induction (Kumano and Nishida, 2007; Lemaire, 2009).\n\nThe invariant cleavage pattern of ascidian embryos is a relatively simple morphogenetic process operating at the level of the whole embryo that is amenable to genetic analysis in order to identify the gene regulatory networks (GRNs) controlling cell division orientation. The overall invariant temporal and spatial pattern of cell divisions in ascidians is even conserved between distantly-related species. Ascidians are split into three orders that diverged more than 350 millions years ago (aplousobranch, phlebobranch and stolidobranch), and it has been estimated that non-coding DNA sequences from two distinct ascidian species can be as different from each other as fish are from mammals (Stolfi et al., 2014). Distantly-related species of ascidian also show the same relative cell cycle asynchrony since the 24 cell stage embryo is common to both phlebobranch (Ciona/Phallusia) and stolidobranch (Halocynthia/Styela) ascidians. In Phallusia this cell cycle asynchrony is induced by a GRN dependent upon nuclear accumulation of \u03b2-catenin in six vegetal cells of the 16 cell stage embryo (Dumollard et al., 2013). How such stereotyped cell cycle asynchrony has been conserved in distantly-related ascidians is presently unknown, but it is interesting to note that \u03b2-catenin becomes nuclear in vegetal blastomeres in both Ciona and Halocynthia embryos at the 16 cell stage (Kawai et al., 2007; Hudson et al., 2013).\n\nMitotic spindles align relative to a number of cues that display a competitive hierarchal relationship with one another. For example, an underlying mechanism known as the long-axis rule based upon microtubule behavior and motors (reviewed in Minc and Piel, 2012) causes animal cell to divide orthogonal to their long axis as was noted more than a century ago by Hertwig (Hertwig, 1893). This geometric long-axis rule can be altered by cortical polarity cues such as lateral junctions (Nakajima et al., 2013; Ragkousi and Gibson, 2014) or the apical cortex in asymmetrically dividing Drosophila neuroblasts (Siller and Doe, 2009). During planar cell divisions in epithelia and endothelia, a lateral belt of LGN/NuMA coupled with the exclusion of LGN/NuMA from the apical cortex causes planar spindle orientation (Zheng et al., 2010; Morin and Bella\u00efche, 2011). After acquiring a planar orientation the spindle rotates in the apical plane to find its final position at metaphase. Spindle orientation in the apical plane will set cell position in the epithelium and is regulated by apical cell shape (Ragkousi and Gibson, 2014). Because of mitotic cell rounding in cultured cells and some epithelia, apical cell shape at metaphase may become completely round (Lancaster and Baum, 2014). In these cells, the spindle aligns with the long axis of the cell during interphase which is memorized during mitotic cell rounding via retraction fibers in cultured cells (Th\u00e9ry and Bornens, 2008) or LGN/NuMA-rich tricellular junctions in Drosophila epithelia (Bosveld et al., 2016). Alternatively, mitotic cell rounding is less pronounced in the squamous epithelia such as the enveloping cell layer (EVL) of Zebrafish gastrulae which maintain a long axis at metaphase to orient the mitotic spindle (Campinho et al., 2013). Mitotic cell rounding does not seem to occur in the Xenopus blastula (Strauss et al., 2006) and remains poorly documented in blastulae of other species (Xiong et al., 2014). A computational approach revealed very recently that the first 4 cell divisions in ascidian embryos may follow a geometric rule in a similar manner to early Xenopus, Zebrafish or sea urchin embryos (Pierre et al., 2016). Major cell shape changes have been noted during the 32\u201344 cell stage in ascidian (Ciona) embryos (Tassy et al., 2006) suggesting that mitotic cell rounding may occur in cells of the ascidian blastula. However, the impact of cell cycle asynchrony or mitotic cell rounding on mitotic spindle orientation in cells of the ascidian blastula have not been studied so far.\n\nAscidian embryos display an invariant cleavage pattern up to the 64 cell stage such that both the orientation of cell division and the relative timing of cell division in the different lineages are predictable. In order to determine if mitotic spindles aligned with the cells longest length in the apical plane we extracted the apical plane of every blastomere and assessed with a 2D computational model whether geometry of the apical surface can regulate spindle orientation in the apical plane to set cell positioning. Finally, since both phlebobranch and stolidobranch ascidians display a 24 cell stage indicating that cell cycle asynchrony begins at the 16 cell stage, we assessed what impact reducing this cell cycle asynchrony has on spindle orientation and the invariant cleavage pattern. We perturbed the GRN driving this cell cycle asynchrony to create quasi-synchronous cell cycles and determined the impact on spindle orientation in the apical plane. In this study we provide evidence that spindles align parallel to the apical surface and along the longest length of the apical surface of the blastomeres. We also show that the invariant cleavage pattern is disrupted when the asynchronous cell cycles are made more synchronous.\n\n## Results\n\n### Spindle rotations during oriented cell divisions underlie the invariant cleavage pattern of ascidian embryos\n\nAscidian embryos undergo a very stereotyped development consisting of unequal cleavages and symmetric cell divisions (Lemaire, 2009; McDougall et al., 2011). At the 64 cell stage all cells of the ascidian blastula face the outside of the embryo (Figure 1A) suggesting that all cell divisions are parallel to the apical surface and that embryonic cleavage proceeds through planar cell divisions to generate the ascidian blastula. In unstretched epithelia (and in early embryos) daughter cells divide orthogonally to the mitotic orientation of their mother cell reflected in one cell generating a square of 4 cells upon two planar cell divisions (Wyatt et al., 2015). Cell division is said to be oriented (called oriented cell division: OCD) when daughter cells divide in the same orientation as their mother (Strome, 1993; Wyatt et al., 2015). By analysing the pattern of 4 grand-daughter cells generated by two successive cell divisions from the 16 cell stage in Phallusia embryos (see McDougall et al., 2015for details) we found that some blastomeres do not divide orthogonally to their mother. Figure 1A shows a virtual Phallusia mammillata embryo (Tassy et al., 2006) with color-coded lineages. When following two successive cell divisions from the 16 cell stage it can be observed at the 64 cell stage that some groups of 4 grand-daughters form a square pattern (lineages b5.3, b5.4 and A5.2 shown in blue and pink, Figure 1A) suggesting that two cell divisions orthogonal to each other occurred. In contrast, the grand-daughters of B5.1, B5.2 and a5.3 (brown) form a T pattern suggesting that the spindle of one of the two daughter cells is in the same orientation as the spindle of its mother (indicating OCD in this cell). Finally the grand-daughters of A5.1 and a5.4 (orange) form a line indicating that two OCDs occurred in these lineages (Figure 1A and B, see also McDougall et al., 2015). Using this strategy we could identify three cells undergoing OCD (asterisks in Figure 1A) at the 16\u201324 cell stage (a5.3; a5.4; B5.2) and seven cells at the 32\u201344 cell stage (A6.1; A6.2; a6.6; a6.7; a6.8; B6.2 and B6.3). Strikingly the square, T and linear patterns observed at the 64 cell stage are perfectly conserved in Styela partita (Figure 1B) and Ciona intestinalis (McDougall et al., 2015), showing that the pattern of planar cell divisions in early ascidian embryos may be perfectly conserved.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig1-v2.jpg)\n\n**Figure 1.:** (A) Images taken from virtual Phallusia mammillata embryos (obtained from http://www.aniseed.cnrs.fr/aniseed/download/download_3dve) showing the different embryonic stages. Top row: Animal hemisphere, bottom row: Vegetal hemisphere. The right side of embryos is color coded for germ layers at the 16 cell stage: Ectoderm is in green, endomesoderm in red and germ lineage in yellow. The left side of embryo is color coded according to type of lineages. Lineages displaying square arrangements of 4 cells at 64 cell stage are shown in blue (b5.3, A5.2) and pink (b5.4). Lineages displaying T arrangements are depicted in light (B5.1) and dark (a5.3, B5.2) brown. Lineages displaying linear arrangements of cell are depicted in orange (a5.4, A5.1). (B) Schematic drawing showing 64 cell stage embryos of Phallusia mammillata (left, outlines from an embryo stained with Cell Mask Orange) and of Styela partita (Conklin, 1905). The names of each blastomere are depicted to show conservation of cell positions between the two distant ascidian species. Same color coding as in A. (C) Spindle rotation in the ectoderm (Animal hemisphere) at the 44 cell stage. Time lapse epifluorescence imaging of a P. mammillata embryo expressing MAP7::GFP to monitor mitotic spindles and H2B::mRFP1 to monitor DNA (superimposed on the BF image). In red are the cell\u2019s outline drawn using the BF image during the running of the computational model. Blue circles joined by a green bar represent mitotic spindles predicted by the computational model. Scale bar\u00a0=\u00a020 \u00b5m. Bar graph showing quantification of the angle difference between observed and predicted spindles (orienting deviation). Black asterisks denote statistical difference with the value for a6.6 at prophase/prometaphase (student test; *p<0.05; ***p<0.0001). n represents the number of blastomeres analysed with the computational model.\n\nTime lapse imaging of mitotic spindles in live ascidian embryos revealed that spindle rotation accompanies unequal cleavages in the germ lineage (B5.2; B63; Prodon et al., 2010) but also in several other lineages where we predicted OCDs (for a5.3; b5.3; a6.6; a6.7; a6.8 see Video 1 and Figure 1C and for A6.1; A6.2 see Negishi and Yasuo, 2015). In the experiments depicted in Figures 1C and 2D epifluorescence imaging is used and only the plane of imaging is analysed. The apical surface of a6.6, a6.8 and b6.8 cells can be imaged by our 2D imaging protocol as both spindle poles remain in the plane of imaging during the whole of mitosis. We consistently observed spindle rotation in the apical plane of a6.6 and a6.8 which are predicted to undergo OCD (Figure 1C, Video 1). Spindle rotation in A6.1, A.62 (Negishi and Yasuo, 2015) and a6.7 (data not shown) which also display OCD is also limited to the apical plane of the cell. In contrast, blastomeres not displaying OCD such as b6.8 blastomeres show no major spindle rotation (Figure 1C, Video 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig2-v2.jpg)\n\n**Figure 2.:** (A) Compressing embryos: Left: CellMask images of 4 cell-stage embryos in control (4 cell control) or compressed (4 cell compress) conditions. A3, B3 are names of blastomeres, arrowheads indicate the position of the CAB (marking the posterior pole of the embryo). In the images of 4 cell compressed embryos, predicted spindles are shown (blue circles joined by a green line). Scale bar\u00a0=\u00a030 \u00b5m. Middle: sagittal views of control and compressed embryos after 3D rendering on Imaris. Plasma membrane is in green and spindles in red, arrowheads indicate the position of the CAB. Table shows orienting deviation measured in A3 and B3 blastomeres in compressed embryos (n\u00a0=\u00a08 cells taken from five embryos). Right: Top: CellMask images of control embryo at the 8 cell stage with a Vegetal layer of 4 cells and an Animal layer of 4 cells (same embryo shown). CellMask images of 2 different compressed embryos at the 8 cell stage showing one layer of 8 cells. Arrowheads show the position of the CAB. Scale bar\u00a0=\u00a030 \u00b5m. (B) Culture in Ca2+ free sea water to remove cell adhesion: CellMask image of 4 cell stage embryo cultured in Ca2+ free sea water from the one cell stage. Like in a control embryo, the 4 cells are arranged in one plane. FSW: 8 cell stage embryo cultured in filtered sea water (FSW) exhibiting 2 layers of 4 animal and four vegetal cells (n\u00a0=\u00a08/8 embryos). Ca-Free SW: 8 cell stage embryos cultured in Ca2+-free sea water from the 2 cell stage exhibiting variable morphologies comprising either wild type morphology (4 animal and four vegetal cells, n\u00a0=\u00a06 out of 17 embryos) or affected morphologies with 6\u20135 animal and 2\u20133 vegetal cells (n\u00a0=\u00a08 out of 17 embryos) or even one layer of 8 cells (3 out of 17 embryos). Scale bars\u00a0=\u00a030 \u00b5m. (C) DA-aPKC: Image of a 4 cell stage embryo showing embryo morphology (BF image) and spindle positions (imaged with Venus::Tpx2) as well as predicted spindle positions superimposed (blue circles joined by a green line: for those cells where both spindle poles were in the imaging plane. Scale bar\u00a0=\u00a030 \u00b5m. 8 cell stage embryos expressing DA-aPKC::Venus which exhibit variable morphologies comprising either wild type morphology (4 animal and four vegetal cells, n\u00a0=\u00a02 out of 14 embryos) or affected morphologies with 6\u20135 animal and 2\u20133 vegetal cells (n\u00a0=\u00a010 out of 14 embryos) or 7 and 1 cells (2 out of 14 embryos). Scale bar\u00a0=\u00a030 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/19290/elife-19290-media1.mp4.jpg)\n\n**Video 1.:** Movie showing live imaging of a Phallusia mammillata embryo injected with RNAs coding for MAP7::GFP (in green) and H2B::mRfp1 (in red). (z-stacks taken 2 min apart). View of the ectoderm showing mitoses of 24\u201332 cell stage and 44\u201364 cell stage. Spindle rotation is clearly visible in six blastomeres at mitosis 44\u201364 cell stage (a6.6; a6.7; a6.8).\n\nTo test whether spindle rotation is influenced by the geometry of the apical surface of the cell, we used a 2D computational model that predicts the preferred spindle orientation based on cell shape (Minc et al., 2011; Minc and Piel, 2012; Campinho et al., 2013; Bosveld et al., 2016). Using the outline of cells (in red), the computational model outputs a predicted spindle position and orientation (blue circles joined by a green line) which do not change between prophase and anaphase (Figure 1C). By comparing the angle between the observed and predicted spindle orientations (orienting deviation) it can be observed that at prophase/prometaphase (i.e., before spindle rotation), apical cell geometry poorly predicts spindle orientation in a6.6 and a6.8 (orienting deviation: 61.0\u00b0 in a6.6 and 47.0\u00b0 in a6.8) whereas apical cell geometry predicts reliably spindle position in b6.8 (orienting deviation: 14.7\u00b0). In contrast, at metaphase, all observed spindles show an orienting deviation of less than 20\u00b0 indicating that apical cell shape predicts reliably spindle orientation in the apical plane (Figure 1C). These observations suggest that mitotic spindles in a6.6 and a6.8 are not aligned with the long length of the cell in the apical plane at prophase and they rotate during mitosis to align with the long length of the cell\u2019s apical surface at metaphase. In contrast, in b6.8 (not displaying OCD) the spindle is aligned in the long length of the cell\u2019s apical surface already in prophase.\n\n### Cell shape and cell adhesion support the invariant cleavage pattern at mitosis 4\u20138 cell\n\nIn order to confirm that cell shape can influence spindle positioning in early ascidian embryos we changed blastomeres shapes by compressing embryos or by inhibiting cell adhesion (Figure 2). Mitosis from 4 to 8 cells transforms a single layered 4 cell stage embryo into an 8 cell embryo made of 2 layers of cells comprising 4 animal and four vegetal cells as all mitotic spindles align along the Animal-Vegetal axis of the embryo (Figure 2, Negishi et al., 2007; Pierre et al., 2016). Compressing the 4 cell stage embryo along the Animal-Vegetal axis creates a flattened embryo (Figure 2A, \u20184-cell compressed\u2019) which, upon cell division, gives rise to a single layer of 8 cells. Computational analysis shows a good prediction of spindle positioning by cell shape in these embryos (orienting deviation: 22.7\u00a0\u00b1\u00a05.6\u00b0 for A3 blastomere and 19.5\u00a0\u00b1\u00a03.4\u00b0 for B3) (Figure 2A). Therefore mitotic spindle orientation in these compressed embryos tends to follow the newly created long axis of the cell.\n\nWe then removed cell adhesion between blastomeres by culturing embryos in Ca2+-free sea water from the one-cell stage (Figure 2B) or by inhibiting basolateral membrane formation using a dominant active form of aPKC (Sabherwal et al., 2009, Figure 2C). Both treatments reduced drastically cell adhesion from the 2 cell stage resulting in rounder blastomeres. Spindle orientation did not seem affected during the mitosis from 2 to 4 cell stage (data not shown) and 4 cell stage embryos with reduced cell adhesion show no blastomere positional changes as they are still made by a single layer of 4 cells (Figure 2B and C). However, the invariant cleavage pattern is affected in these embryos during the 4 to 8 cell mitosis which normally creates 2 layers of 4 animal and four vegetal (Figure 2B and C). For example, downregulating cell adhesion causes embryonic morphologies at the 8 cell stage ranging from wild type patterns (2 layers of 4 cells) to one layer of 8 cells with all intermediate patterns (Figure 2B and C). Computational analysis of the cell divisions occurring in the plane of imaging revealed a good prediction of spindle positioning by the computational mode (orienting deviation: 9,64\u00a0\u00b1\u00a04.16\u00b0 in DA-aPKC expressing embryos, Figure 2C) suggesting that cell shape still regulates spindle orientation in these cells. Finally cell divisions at 16 and 32 cell stages were random giving rise to 64 cell blastula of highly variable morphologies (data not shown) preventing further manual analysis.\n\nThese observations show that cell shape can orient spindle positioning in early ascidian embryos and indicates that cell adhesion and regulated apicobasal polarity are absolutely vital to maintain the cell shapes supporting the invariant cleavage pattern of early ascidian embryos.\n\n### The complete pattern of cell divisions of the ascidian blastula is predicted by a computational model based on apical cell shape at metaphase\n\nHaving revealed that mitotic spindles aligned with the long length of the apical surface during metaphase causing some mitotic spindles to rotate through approximately 90\u00b0 while others remained relatively fixed in position, we wished to determine if apical cell shape can predict spindle orientation in the apical plane in all blastomeres up to the 64 cell stage. Defining the apical plane of an irregular polyhedral shape created by living cells is challenging since 2D imaging provides inherently false information as mitotic spindles in three dimensional embryos rarely align within the imaging plane. We therefore performed confocal 3D + time lapse imaging of living ascidian embryos stained with Cell Mask Orange (Invitrogen) to monitor cell membranes and spindle poles at metaphase in all blastomeres (see McDougall et al., 2015 for a detailed protocol). The apical plane of each blastomere (defined as the 2D plane containing the poles of the mitotic spindle which can separate most of the apical surface from the basolateral surface) was systematically extracted from 3D-rendered blastomeres using Imaris software following a specific protocol (see Materials and methods and McDougall et al., 2015) for detailed protocols) and the position of the mitotic spindle in the extracted 2D plane was compared with the position of a mitotic spindle predicted by the computational model (Minc et al., 2011).\n\n3D rendering and in silico isolation of each blastomere at interphase, prophase and metaphase revealed drastic cell shape changes during the cell cycle (Figure 3). Sphericity of each blastomere was determined using Imaris statistics (see Materials and methods) to estimate the complexity of polyhedral shape of in silico isolated blastomeres. Sphericity of blastomeres at metaphase was found to be significantly different from a round standard from the 4 cell stage and was particularly pronounced at the 16\u201324 and 32\u201344 cell stages during which spindle rotations occur (Figure 3A). At the 32 cell stage, in silico isolated blastomeres were found to be columnar during interphase and to flatten along the apical direction at metaphase (Figure 3B) without significantly changing cell volume (data not shown). This was reflected in an increase in the average sphericity of blastomeres at metaphase indicating that, at this stage, blastomeres partially round up at mitosis (Figure 3B). We then segmented manually apical (red) from basolateral (green) membranes on each 3D-rendered blastomere and calculated the apical surface ratio (apical surface divided by total surface) and found that a large increase in apical surface area accompanies mitotic cell rounding (from 0,15\u20130,23 at interphase to 0,42\u20130,56 at metaphase, Figure 3B) similarly to what is observed in differentiated epithelia (Ragkousi and Gibson, 2014). These observations document partial mitotic cell rounding at the sixth cell cycle which results in blastomeres increasing their apical surface by apical expansion at prophase and metaphase. Therefore the apical surface ratio is a better quantitative measure of cell shape changes than sphericity as some cell shape changes observed from a columnar cell (with a small apical surface) to a \u2018brick\u2019 shaped cell (with a larger apical surface) are not associated with changes in sphericity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig3-v2.jpg)\n\n**Figure 3.:** (A) Quantification of polyhedral shape complexity of in silico isolated blastomeres at metaphase (using sphericity measurements of Imaris software). While blastomeres at the 2 cell stage have a similar sphericity than a spherical standard (standard: 0.975+/0.001 (n\u00a0=\u00a04); 2 cell: 0.950\u00a0\u00b1\u00a00.010 (n\u00a0=\u00a04)), from the 4-cell-stage on sphericity significantly decreases compared to standard (p<0.05, black asterisk). Average values are: 4 cell: 0.897\u00a0\u00b1\u00a00.013 (n\u00a0=\u00a08); 8 cell: 0.889\u00a0\u00b1\u00a00.009 (n\u00a0=\u00a08); 16 cell (vegetal): 0.846\u00a0\u00b1\u00a00.006 (n\u00a0=\u00a08), 24 cell (animal): 0.779\u00a0\u00b1\u00a00.007 (n\u00a0=\u00a08), 32 cell (vegetal): 0.851\u00a0\u00b1\u00a00.012 (n\u00a0=\u00a08); 44 cell (animal): 0.825\u00a0\u00b1\u00a00.012 (n\u00a0=\u00a08). Note that animal blastomeres (24 cell stage) have a significantly more complex polyhedral shape than their vegetal counterparts (16 cell) (p<0.05, red asterisk). An example of an in silico isolated blastomere is depicted above each bar of the graph. (B) Quantification of cell shape changes during the cell cycle at the 32\u201344 cell-stage. Left: 3D views of manually segmented blastomeres at interphase, prophase and metaphase (32 cell stage) showing cell shape changes between interphase, prophase and metaphase (inset: apical surface ratio of cell shown). Green is basolateral and red is apical. Scale bar as indicated. Top right: quantification of cell sphericity at interphase, prophase and metaphase. 6 blastomeres of the animal (red) and vegetal (blue) hemisphere of the 32 cell stage were averaged. The sphericity was significantly higher at metaphase than at interphase (black asterisk, p<0,05). Bottom right: quantification of the apical surface ratio at the same time points. The same blastomeres as in the sphericity graph were used to average apical surface ratio in the animal (red) and vegetal (blue) hemisphere. The apical surface ratio at prophase and at metaphase were significantly higher than at interphase (black asterisks, p<0,05). The apical surface ratio was higher in vegetal blastomeres than in animal ones (\u00a7 sign, p<0,05). (C) Pipeline for predicting spindle position using 2D computational model (Minc et al., 2011). See McDougall et al. (2015) for the full protocol of apical plane extraction. Top row shows examples of 3D rendered, in silico isolated blastomeres. Bottom row shows the extracted apical plane of the corresponding blastomeres with spindle predictions (blue circles joined by a green line). Scale bars\u00a0=\u00a020 \u00b5m.\n\nWe then extracted the apical plane of each blastomere from the 2 cell stage to the 44 cell stage. The cell outline drawn from the 2D extracted apical plane of each blastomere was then computed to predict spindle orientation (Figure 3C, Figure 4). Figure 4A shows the observed and predicted spindle positions in the extracted apical plane of each blastomere from the fourth mitosis (8\u201316 cell) to the sixth mitosis (32-44-64 cell) and reveals a good prediction of spindle orientation by apical cell shape in almost all blastomeres. Quantification of the deviation between the predicted center of spindles and the observed center of spindles (centering deviation) from the 2 cell stage to the 44 cell stage confirms that all spindles are centered within 20% except for the B4.1 and B6.3 blastomeres of the germ cell lineage which undergo CAB-dependant unequal cleavages (Figure 4B). Strikingly we found that orienting deviation is under 30\u00b0 in all cells except in B5.2/B6.3 and A6.3 (Figure 4C). By comparing the orienting deviation observed in 149 cell divisions (excluding the germ cell precursors that divide unequally) to randomly generated angles between 0 and 90\u00b0 we found that the distribution of observed orienting deviations is non uniform and significantly different from a random distribution (Figure 4D). In our data set, 88% of cells show an orienting deviation of 30\u00b0 or less, 78% of cells have an orienting deviation under 20\u00b0 and 52% of cells show an orienting deviation of less than 10\u00b0 (Figure 4D). Therefore our model robustly predicts that spindle aligns with the long length of the apical surface in most cells with a precision of 30\u00b0 and 20\u00b0. In contrast spindle orientation could not be predicted reliably in B5.2, B6.3 and A6.3 blastomeres (i. e. orienting deviation is above 30\u00b0) suggesting that in these three blastomeres apical cell shape does not regulate spindle positioning in the apical plane. This was expected in B5.2 and B6.3 which display spindle rotation during unequal cleavage (Prodon et al., 2010), but not in A6.3 which do not show spindle rotation nor unequal cleavage. However A6.3 cells undergo an asymmetric division segregating endoderm and mesoderm fates driven by asymmetric Ephrin and MAPK signalling (Shi and Levine, 2008) suggesting that, like in the germ lineage, cues other than apical cell shape might regulate spindle orientation in A6.3 blastomeres.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig4-v2.jpg)\n\n**Figure 4.:** (A) 3D views of Phallusia embryos from 8 cell stage to 44 cell stage and extracted apical plane of each blastomere. Observed spindle poles are depicted by white circles/balls. Predicted spindles are depicted with blue circles joined by a green line. The red outline of each cell is the shape used by the computational model to predict spindle position. a=anterior, p=posterior, scale bars are all 20 \u00b5m. Lineages are color coded like in Figure 1. (B) Mean centering deviation in each blastomere. n\u00a0=\u00a06 cells analysed for each blastomere except A6.4 (n\u00a0=\u00a04); B6.1 (n\u00a0=\u00a05); a6.7 (n\u00a0=\u00a04), b6.5 (n\u00a0=\u00a04). Red asterisk denote cells undergoing unequal cleavage. (C) Mean orienting deviation in each blastomere. n\u00a0=\u00a06 cells analysed for each blastomere except A6.4 (n\u00a0=\u00a04); B6.1 (n\u00a0=\u00a05); a6.7 (n\u00a0=\u00a04), b6.5 (n\u00a0=\u00a04). Red asterisks denote cells undergoing unequal cleavage. Blue asterisks denote blastomeres undergoing OCD. Triple black asterisks denote that orienting deviation in the grouped B5.2, A6.3, and B6.3 cells are statistically greater than those in other lineages (Wilcoxon rank sum test with continuity correction, p-value=4.789*10\u22127). (D) Quantification of orienting deviation: cumulative percentage graph of measured data (blue dots, n\u00a0=\u00a0149 cell divisions, black dots denote the six A6.3 cells analysed) and randomly generated data (orange dots, n\u00a0=\u00a0149). The measured data are not uniform and significantly different from the random data (One-sample Kolmogorov-Smirnov test, p<2.2*10\u22126). The numbers indicated under each graph is the proportion of cells with orienting deviations under the considered threshold (10\u00b0, 20, and 30\u00b0).\n\n### Maternal and zygotic contributions to the stereotyped pattern of cell divisions\n\nIn the early ascidian embryo, unequal cleavages in the germ lineage are regulated by a maternal factor located in the posterior pole of the embryo called the Centrosome Attracting Body (CAB). The CAB is a cortical complex composed of cell polarity proteins (Patalano et al., 2006) which is segregated in the germ lineage and is responsible for spindle orientation in the B5.2/B6.3 mitoses in a cell autonomous manner (Nishikata et al., 1999; Prodon et al., 2010) against apical cell shape (Figure 4C). Conversely, zygotic transcription is required for germ layer patterning starting from the 16 cell stage in ascidians (Lemaire, 2009; Hudson et al., 2013) and also for generating cell cycle asynchrony from the 16 cell stage (Dumollard et al., 2013).\n\nRemoving the precursor of the CAB by dissecting the contraction pole (CP) at the zygote stage prevents unequal cleavage in the germ lineage as well as \u03b2-catenin stabilization in the endomesoderm giving rise to a synchronous hollow blastula that cannot gastrulate (Nishida, 1996; Dumollard et al., 2013). For example, removing the CP prevents unequal cleavage in CAB-containing blastomeres at the 8 cell stage (B4.1 pair) resulting in more centered spindles (Figure 5B) and the absence of small cells in the vegetal posterior pole of the embryo of CP-ablated embryos (Figure 5A). The general morphology of radialized embryos indicates that all cell shapes in the whole embryo are affected at the 16\u201332 cell stages (Figure 5A). Computational analysis of the cell divisions occurring in the imaging plane shows orienting deviations below 30\u00b0 at 8, 16 and 32 cell stages (Figure 5B) suggesting that cell shape still regulates spindle orientation in CAB-depleted embryos. Therefore, the activity of the maternal CAB impacts not only unequal cleavage in the germ lineage but also cell shape and hence cell divisions in the rest of the embryo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig5-v2.jpg)\n\n**Figure 5.:** (A) Images showing embryonic morphology and cell shapes in Control (top row) and CP-ablated (bottom row) embryos. Top row: Images showing mitotic spindles (MAP7::GFP) and cell membranes (PH::GFP, CM-orange: Cell Mask Orange; Ech::Ve: Echinoid::Venus). Scale bar\u00a0=\u00a015 \u00b5m. Animal hemisphere (An) is depicted in green while the vegetal hemisphere (Veg) is depicted in red. Purple asterisks indicate unequal cell division in the germ line. Bottom row: images showing mitotic spindles and cell membranes (MAP7::GFP and PH::GFP) in radialised embryos in which the contraction pole (CP) was removed (CP-ablation). These embryos (n\u00a0=\u00a05) are completely radialised and do not bear small cells in the vegetal posterior pole of the embryo. Scale bar\u00a0=\u00a015 \u00b5m. (B) Left: Quantification of centering deviation showing that it is less than 10% in a4.2, b4.2 and A4.1 blastomeres whereas it is over 10% in B4.1 of control embryos. In CP-ablated embryos centering deviation is not affected in A4.1 but is decreased in B4.1. Triple asterisk indicates a significant difference with A4.1 (student, p=0.00004). Right: Quantification of orienting deviation showing that it is below 30\u00b0 in both control and CP-ablated embryos at the 8 cell stage (a4.2, b4.2, A4.1, B4.1) and at the 16 and 32 cell stages in CP-ablated embryos.\n\nWe then assessed the specific impact of zygotic transcription on the ascidian invariant cleavage pattern by either blocking all zygotic transcription using Pem1 expression (see Kumano et al., 2011; Shirae-Kurabayashi et al., 2011 and Dumollard et al. (2013) for details on the effects of PEM1 ectopic expression) or by blocking \u03b2-catenin transactivation using DN-Tcf (which does not affect non transcriptional functions of \u03b2-catenin, see Dumollard et al., 2013 for details). Embryo morphology at 16 cell stage and CAB-dependant unequal cleavages are maintained in embryos expressing Pem1 ectopically as shown previously (Negishi et al., 2007; Kumano et al., 2011; Dumollard et al., 2013). However, all mitotic spindle rotations previously observed at the 16 and 32 cell stages are strongly impaired in Pem1 and DN-Tcf expressing embryos resulting in cell divisions with different orientation from the invariant cleavage pattern (termed \u2018misoriented cell divisions\u2019) (Figure 6). Most strikingly linear and T patterns of two sister cell spindles at the 32-44-64-cell mitosis were often replaced by two parallel spindles (giving rise to square pattern of cells) in these embryos (outlined in red in Figure 6A). Counting the occurrence of misoriented cell divisions in embryos expressing Pem1 or DN-Tcf (Figure 6B) shows that the blastomeres undergoing spindle rotation displayed more occurrence of misoriented cell divisions (a5.3, b5.3, A6.1, A6.2, a6.6, a6.7, a6.8 marked with an asterisk in Figure 6B). b6.5 and b6.6 blastomeres also showed a strong incidence of misoriented cell divisions but as a consequence of their mother (b5.3) being misoriented. The shape of the apical surface appears altered both in Pem1 and DN-Tcf expressing embryos and computational analysis of cell divisions in a6.8 (normally displaying spindle rotation) shows that misoriented cell divisions are still predicted reliably by apical cell shape (Figure 6C). Therefore the processes supporting spindle orientation in the long length of the cell in the apical plane are maintained in these embryos and misoriented cell divisions are probably due to altered cell shape in manipulated embryos.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig6-v2.jpg)\n\n**Figure 6.:** (A) Images showing metaphase spindle (green) and nuclei (red) in control, Pem1::Ve and DN-Tcf expressing embryos. Unaffected cell divisions are surrounded by a colored line (in control and manipulated embryos). Misoriented cell divisions are surrounded by a red line. Scale bars\u00a0=\u00a020 \u00b5m. dt32c indicates the difference in timing of mitotic entry between animal and vegetal hemispheres at the 32\u201344 cell stage. (B) Graph plotting the incidence of misoriented cell divisions in control (black bars), Pem1::Ve (yellow bars) and DN-Tcf (red bars) embryos. Blue asterisks denote blastomeres undergoing OCD. (C) Images showing embryonic morphology in the ectoderm (animal) at the 32\u201344 cell stage. Blastomeres with asterisks are a6.8 for which cell outline (in red) and spindle prediction (blue circles joined by a green bar) are depicted. Orienting deviation in a6.8 blastomeres displaying OCD in control embryos and misoriented cell divisions in a6.8 blastomeres in Pem1 and DN-Tcf embryos are indicated under the images. n indicates the number of a6.8 blastomeres analysed. Scale bars are 20 \u00b5m.\n\nSince both PEM1 overexpression and DN-Tcf reduce cell cycle asynchrony (Dumollard et al., 2013) we next sought to directly alter cell cycle duration to assess the impact cell cycle asynchrony has on the invariant cleavage pattern.\n\n### Inhibiting cell cycle asynchrony disrupts the invariant pattern of cell divisions\n\nIn Xenopus, Drosophila or Zebrafish embryos early embryonic cell cycles are regulated by a balance of the two cell cycle regulators Wee1 and Cdc25 which inhibit or activate cdk1 respectively to set interphase length (reviewed in Farrell and O'Farrell, 2014). Wee1 maternal RNAs are present in the unfertilized oocyte in Phallusia mammillata (Figure 7A, see also RNA-seq data in Aniseed database: http://www.aniseed.cnrs.fr/ with Gene Id: phmamm.CG.MTP2014.S423.g08568) where it is enriched in the vegetal cortex. Then maternal Wee1 transcripts can be observed in the CAB similarly to PEM-type genes (Prodon et al., 2007). Zygotic Wee1 transcripts first appear at late 32 cell stage in the endoderm lineage (64\u201376-stage) just before these cells invaginate. After the onset of gastrulation (112 cell stage) Wee1 transcripts are expressed in mesodermal cells just before they invaginate (Figure 7A). We modified Wee1 activity in the whole embryo (see Materials and methods, Murakami et al., 2004; Farrell and O'Farrell, 2014) and found, as anticipated, that Wee1 inhibition speeded up the slow cell cycle in the ectoderm at the 16 cell stage without affecting the cell cycle duration of the vegetal endomesoderm thereby eliminating the transient 24 cell stage (Figure 7B). At the 32 cell stage, cell cycle asynchrony between ectoderm (animal) and endomesoderm (vegetal) was 6\u20138 min in Wee1-manipulated embryos compared to 15 min in control embryos (Figure 8A). Analysis of cell division orientation at the 16\u201324 and 32\u201344 cell stages in Wee1-manipulated embryos revealed deviations from the invariant cleavage pattern as well as variability between individuals (Figure 8A and B). In synchronized embryos, misoriented cell divisions are particularly obvious at the 32\u201364 cell stage where the linear arrangements of A6.1/A6.2 and a6.8/a6.7 daughter cells observed in control embryos were changed to square arrangements of cells (circled in red in Figure 8A). Counting the occurrence of misoriented cell divisions revealed that the blastomeres b5.3, A6.1, A6.2, a6.7 and a6.8 were the most affected (Figure 8B). The orientation of cell division in b6.5 and b6.6 was also affected (Figure 8B). Therefore the blastomeres most affected by synchronization were the ones displaying oriented cell division (b5.3, A6.1, A6.2, a6.7 and a6.8) or daughters of cells displaying OCD (ie b6.5, b6.6). Apical surface area at metaphase was altered in Wee1-manipulated embryos and misoriented cell divisions in a6.8 blastomeres still aligned with the long length of the apical surface (orienting deviation: 10.17 \u00b1 4.15\u00b0, Figure 8B). Therefore, inhibition of cell cycle asynchrony did not seem to disrupt the mechanisms supporting spindle orientation in the apical plane and misoriented cell divisions may rather be due to altered apical surface area.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig7-v2.jpg)\n\n**Figure 7.:** (A) Images showing in situ hybridizations of Pm-Wee1 from the unfertilized egg (Unf) to the late 112 stage. Wee1 is expressed in the unfertilized oocytes where it is slightly enriched in the vegetal cortex of the egg. Then a maternal signal can be observed in the early stages with a specific enrichment in the CAB region hosting the germ plasm. Zygotic Wee1 is expressed in the endoderm precursors from the late 32 cell stage to the 76 cell stage and in the muscle precursor from the 112 cell stage (i.e., just before they gastrulate). In some images Hoechst staining of nuclei is shown in blue. Scale bar is 20 \u00b5m. (B) Quantification of cell cycle length at the 16\u201332 cell stage (MBT, cell cycle 5) in manipulated embryos: control embryos (black bars, n\u00a0=\u00a010), embryos expressing Wee1KD::Ve (stripped bars, n\u00a0=\u00a09), embryos injected with wee1 MO (diamond bars, n\u00a0=\u00a09). wee1KD and wee1 MO both speed up the ectoderm cells (EctoD) without affecting the endomesoderm (Endo-MesoD) or the germ line (Germ L). % increase in cell cycle time relative to cell cycle timing at the 8 cell stage. A 20% increase means that the cell cycle timing has increased by 20% compared to the previous cell cycle at 8 cell stage (see Dumollard et al., 2013 for details). Triple black asterisks indicate p=0.0003 for wee1KD and p=0.000009 for wee1MO.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/19290/elife-19290-fig8-v2.jpg)\n\n**Figure 8.:** (A) Images showing metaphase spindles in control and wee1 MO injected embryos (top two rows) or showing nuclei in wee1KD::Ve and control embryos (bottom two rows). Unaffected cell divisions are surrounded by a colored line in control embryos. Misoriented cell divisions occurring in manipulated embryos are surrounded by a red line. Scale bar\u00a0=\u00a020 \u00b5m. dt32c indicates the difference in timing of mitotic entry between animal and vegetal hemispheres at the 32\u201344 cell stage. (B) Graph plotting the incidence of misoriented cell divisions in control (black bars), wee1KD (pink bars) and wee1 MO (purple bars) injected embryos. Blue asterisks denote blastomeres undergoing spindle rotation, green asterisks indicate daughters of b5.3 (undergoing spindle rotation). Inset: Images showing embryonic morphology in the ectoderm (animal) at the 32\u201344 cell stage. Blastomeres with asterisks are a6.8 for which cell outline (in red) and spindle prediction (blue circles joined by a green bar) are depicted. Orienting deviation in a6.8 blastomeres displaying OCD in control embryos (n\u00a0=\u00a06 cells) and misoriented cell divisions in wee1-KD (n\u00a0=\u00a08 cells) embryos is indicated in the images. Scale bars are 20 \u00b5m.\n\n## Discussion\n\nDuring ascidian early embryogenesis, all planar cell divisions generating the blastula-stage embryo occur in a highly predictable manner which is implicit in the term \u2018invariant cleavage pattern\u2019. In the absence of either cell migration or death, cell division orientation thus defines the precise topographical positioning of all cells in the whole blastula-stage embryo. Moreover, these precise cell positions are invariant between distantly-related species of ascidian. We find here that a small number of maternal factors and gene-regulatory networks (GRN) influence the final position of cells in early ascidian embryos. One maternal mechanism is provided by the CAB which influences the shape of all cells in the embryo indirectly since its ablation causes embryos to become radialized (hence affecting the shape of all cells in the embryo). One zygotic GRN that influences cell position is controlled by \u03b2-catenin which induces cell cycle asynchrony from the 16 cell stage to fine-tune cell position at the 24-32-44 cell stages. Finally, one additional maternal cue is provided by the polarisation of the cells which occurs during cleavage divisions and causes mitotic spindles to align parrallel to the apical cell surface. All of these cues/inputs are likely propagated between the cells of the embryo through cell adhesion and the resulting adhesive forces balanced with physical forces such as surface tension giving rise to the particular cell shapes observed. In particular, we report here that it is the long axis of the cell in the apical plane that is important for creating the invariant cleavage pattern.\n\n### Apical cell shape supports OCDs and underpins the invariant cleavage pattern\n\nThe ascidian embryo provided a convenient experimental system in which to test the contribution of apical cell shape to spindle orientation by a computational mathematical model (Minc et al., 2011; Minc and Piel, 2012). We demonstrate here for the first time that a partial mitotic cell rounding accompanies cell division in the ascidian blastula whereas it was not observed in Xenopus (Strauss et al., 2006) and is still not clearly documented in Zebrafish (Xiong et al., 2014). Interestingly, in these two species, cell deformations have been observed at MBT but only in isolated blastomeres (called \u2018cell motility\u2019 in Newport and Kirschner, 1982 and Kane and Kimmel, 1993). However, even though the isolated blastomeres with the longest cell cycle showed more pronounced cell deformations, cell cycle dependence of such cell deformations remains unclear. Mirror-like cell shape changes in 32\u201344 cell stage ascidian embryos were noted previously (Tassy et al., 2006), prompting us to test the idea that cell cycle asynchrony may be involved in the mirror-like cell shape regulation. We demonstrate here that these cell shape changes consist in cell rounding and apical expansion during mitosis and they correspond to the mitotic cell rounding observed in epithelial cells (Ragkousi and Gibson, 2014). In contrast to cells in differentiated Drosophila epithelia which completely round up at mitosis (Bosveld et al., 2016) but similarly to the epibolizing enveloping cell layer (EVL) of Zebrafish embryos (Campinho et al., 2013), mitotic cell rounding in the ascidian blastula is incomplete. In consequence, blastomeres at the 16\u201324 and 32\u201344 cell stage do not become completely round and the shape of the apical surface remains anisotropic during metaphase.\n\nAfter confirming in ascidian embryos that, like in C elegans, sea urchin, Zebrafish or Xenopus embryos (Wildwater et al., 2011; Minc et al., 2011; Strauss et al., 2006; Pierre et al., 2016), cell shape impacts the orientation of cell division, we show that a computational model based on the shape of the apical surface predicts spindle orientation in the apical surface in all cells of the embryo except in the germ lineage (B5.2, B6.3) and A6.3. 88% of these cells can be predicted by the model with a 30\u00b0 precision and 78% of these cells are still predicted by the computational model with 20\u00b0 precision (Figure 4D). These observations strongly indicate that mitotic spindles align with the long axis of the cell in the apical plane to implement the invariant cleavage pattern of planar cell division thus creating the distinctive topographical organization of cells in the ascidian blastula. In the ascidian blastula such a general geometric rule is overridden only in the germ lineage where a maternally derived cortical polarity complex (the CAB) attracts one spindle pole duing unequal cell division (Prodon et al., 2010). It would be interesting to extend this mathematical analysis to other developmental stages and to distantly-related ascidian species, since we may have unveiled a conserved apical cell shape dependent mechanism underpining the invariant cleavage pattern displayed by all ascidians.\n\nBy following the position of clones of cells from the 16 cell stage to the 64 cell stage we inferred the occurence of OCDs (when daughter cell spindle is not orthogonal to the spindle orientation of its mother) in specific cells. By imaging spindles during mitosis in these cells we discovered that they all perform OCD through spindle rotation rather than migration/rotation of the nucleo-centrosomal complex. A6.1 is the only exception to this observation where it is the nucleo-centrosomal complex rather than the spindle that rotates, but OCD in this lineage still depends on apical cell shape (see Negishi and Yasuo, 2015 for details). Thus we argue that, together with apico-basal polarity which likely enforces the planar orientation of cell division, apical cell shape is a major driver of cell positioning in the ascidian blastula. This hypothesis implies that apical cell shape at metaphase must be very stereotyped and conserved in ascidian early embryos. Although perhaps surprising, this finding should be considered with the fact that cell position in ascidian embryos at the 64 cell stage is crucial since it is at this time that the fate map is established (Lemaire, 2009). More specifically, precise cell position in the anterior part of the embryo determines the number of animal marginal cells (a6.5, b6.5) that will receive a local cell induction from contacting vegetal cells to create a neural ectoderm of 6 cells at the 64 cell stage (Lemaire, 2009). Mesodermal cells of the vegetal hemisphere located in the marginal region segregate, during mitosis 32\u201344 cell, neural and notochord fates in the anterior part of the embryo (A6.1, A6.2) and muscle and mesenchyme (B6.2) fates in the posterior part of the embryo (Kumano and Nishida, 2007). Therefore, the invariant cleavage pattern and oriented cell divisions might be part of the mechanism enforcing fate segregation in the ascidian blastula.\n\n### Cell cycle asynchrony underpins the invariant spatial pattern of cell divisions\n\nA central finding of this study is the causal relationship between cell cycle asynchrony and the orientation of cell division. We suggest that cell cycle asynchrony impacts the spatial pattern of planar cell divisions by regulating the shape of the cell\u2019s apical surface at metaphase. First, we found that every mitotic spindle tends to align with the long length of the cell\u2019s apical plane at metaphase. Second, abolishing the asynchrony that causes the appearance of the 24 cell stage altered the invariant cleavage pattern. Third, misoriented cell divisions in synchronized embryos are still reliably predicted by apical cell shape.\n\nCritically, either causing vegetal cell cycles to become slower at the 16 cell stage by inhibiting zygotic transcription, or making animal cell cycles faster by inhibiting Wee1 kinase activity both had the same overall effect: all cells divided synchronously and the invariant cleavage pattern was disrupted. We conclude that overall cell cycle duration is not important, and rather it is the asynchrony between the animal and vegetal halves of the embryo that is crucial. Since ascidian embryos live in a marine environment that does not have a constant temperature, absolute cell cycle duration is likely less important than the cell cycle asynchrony which is maintained over a range of tempartures in different species of ascidian. Therefore the zygotic GRN driven by nuclear \u03b2-catenin that patterns germ layers is also responsible for causing cell cycle asynchrony, which in turn enforces the invariant cleavage pattern through cell shape dependent mitotic spindle orientation in the apical plane at the 16-32-44-cell stages.\n\nWe find here that entry into mitosis is accompanied with partial cell rounding via apical expansion (and hence a reduction in cell adhesion) in the ascidian blastula. It was found in Ciona embryos that \u2018between the early 32-cell stage and the mid 44-cell stage, the elongation factors of opposing animal and vegetal cells change in precisely opposite manner with time\u2019 (Tassy et al., 2006). We hypothesize that such mirror behaviors between animal and vegetal blastomeres is brought about by asynchronous mitotic cell rounding between animal and vegetal blastomeres. Precise shape of the apical surface during mitosis may be a function of not only adhesion with neighbouring cells but also of the remaining adhesion between interphasic and mitotic cells in opposite hemispheres since during cell division in ascidians the adhesion between blastomeres remains. We found that apical cell shape was altered in animal cells when we slowed down the cell cycle of vegetal cells with DN-TCF or PEM1 (Figure 6). Likewise, we report that apical cell shape was altered in vegetal blastomeres when we speeded up the cell cycle of animal cells by inhibiting Wee1 (Figure 8). We therefore conclude that the shape of the apical surface of animal cells is affected by the cell cycle state of the vegetal cells, and likewise that the shape of the apical surface of vegetal cells is affected by the cell cycle state of the animal cells. It is interesting to note that the overall cell cycle asynchrony between the animal and vegetal cells is about 15 min. which is about the duration of M phase. We wonder whether this may be one of the selective pressures leading to the retention of the cell cycle asynchrony between distantly-related ascidians. Indeed, both phlebobranchs and stolidobranchs ascidians display nuclear \u03b2-catenin in vegetal cells at the 16 cell stage (Ciona: Hudson et al. (2013), Halocynthia: Kawai et al., 2007), and it is a GRN controlled by \u03b2-catenin that causes cell cycle asynchrony starting at the 16 cell stage (Dumollard et al., 2013). It will therefore be interesting to elucidate the entire GRN that controls cell cycle duration in the ascidian at the 16\u201324 cell stage, and to determine how conserved that GRN is between distantly-related ascidian species.\n\nImportantly the removal of the axial determinant (the pre-CAB or centrosome-attracting body) that generates unequal cell division in the germ lineage (Nishikata et al., 1999; Patalano et al., 2006) not only prevents unequal cleavage in the germ lineage but also affects cell division orientation in the whole embryo as CAB-ablated ascidian embryos are completely radialized (Nishida, 1996, this study). Unequal cleavage of the two vegetal posterior blastomeres at the 16 cell stage thus affects the shape of every cell in the early embryo. Such effect of unequal cleavage on cell division of distant cells is supported by cell adhesion-dependant mechanical coupling between blastomeres which was found to be necessary to maintain the invariant cleavage pattern. It is noteworthy that regulated apicobasal polarity is crucial to maintain cell adhesion in the ascidian embryo to propagate individual cell deformations to the rest of the embryo and implement the invariant cleavage pattern.\n\nGiven the important role played by the shape of the apical surface in spindle orientation in ascidian early embryos it is evident that physical cellular properties that minimize energy during cell packing likely play an important role in cell division plane specification. Further studies will be required to understand how the apical surface of every blastomere is interdependent on neighboring cells due to packing constraints. Such interdependence between cell division plane orientation and apical cell shape is involved in a number of morphological processes. In vertebrate embryos oriented tissue strain generated by the gastrulating mesoderm determines the global axis of planar polarity in the Xenopus ectoderm (Chien et al., 2015), while cell division is oriented by tissue tension in the Zebrafish ectoderm to improve epithelial spreading over the yolk layer during epiboly (Campinho et al., 2013; Xiong et al., 2014). In ascidian blastulae, we hypothesize that the shape of cells in mitosis is a function of the tension generated between the dividing cells and their neighboring interphasic cells coupled with the tension between the cells that are dividing. This may exert stereotyped deformations of adhering mitotic cells to generate the invariant cleavage pattern. However, further studies are needed to assess whether global tissue tension deforms blastomeres of the ascidian embryo or whether, on the contrary, autonomous cell cycle-driven cell shape changes are transmitted in the embryo via cell adhesion.\n\n## Materials and methods\n\n### Biological material\n\nEggs from the ascidians Phallusia mammillata were harvested from animals obtained in S\u00e8te and kept in the laboratory in a tank of natural sea water at 16\u00b0C. Egg preparation and microinjection have been described previously (see detailed protocols in McDougall et al., 2014, 2015). All imaging experiments were performed at 19\u00b0C.\n\n### Live imaging of Phallusia embryos\n\nMicrotubules and mitotic spindles were imaged using our characterised constructs of either MAP7::GFP or Ensconsin::3XGFP (McDougall et al., 2015). DNA and nuclei were imaged with H2B::mRfp or the nuclear proteins (wee1KD::Ve, Ve::cdc45, Dumollard et al., 2013). Plasma membrane was stained using PH::GFP or PH::dTomato or Cell Mask Orange (Invitrogen, see protocols in McDougall et al., 2015). Control embryos in Figure 2A are embryos stained with cell mask and cultured in filtered sea water (FSW). Control embryos in Figures 2B,C, 5, 6, 7 and 8 are embryos injected with cRNAs coding for MAP7::GFP or Ens::3XGFP or PH::GFP or Ve::cdc45 (in green) or H2B::mRfp (in red) or a combination of two of these markers. We have found that all these staining procedures have no impact on the invariant cleavage pattern (McDougall et al., 2015).\n\n### Manipulation of zygotic transcription and of cell cycle timing in Phallusia embryos\n\nTo inhibit embryonic patterning Pm-Pem1 (Shirae-Kurabayashi et al., 2011; Kumano et al., 2011) and DN-Tcf (kindly provided by Yasuo Hitoyoshi (UMR7009, LBDV)) were used exactly as in Dumollard et al. (2013). Ci-wee1 (gene Id: KH.S256.1) was amplified from a Ciona intestinalis Gateway-compatible cDNA library using PCR (Roure et al., 2007). To speed up cell cycle the activity of the Wee1 kinase was inhibited using a kinase dead form of Wee1 (Wee1KD) which was generated by introducing a stop codon inside the catalytic domain of the protein (resulting in a deletion of aa 532 to 633). Such a construct was shown to have a dominant negative effect on endogenous wee1 (Murakami et al., 2004). Alternatively, a morpholino target to Pm-wee1 (CAGGACCATATAAACTCCTACTGCT) was injected to decrease wee1 activity in the whole embryo. All constructs were made using pSPE3 (Roure et al., 2007) and the Gateway cloning system (Invitrogen) unless otherwise stated (see McDougall et al., 2014, 2015 for detailed protocols). Synthetic RNAs were injected in unfertilized eggs or in one blastomere of a 2 cell stage embryo.\n\n### Manipulation of cell adhesion and apicobasal polarity and embryo compressions\n\nTo remove cell adhesion, Phallusia zygotes stained with Cell Mask-Orange or expressing MAP7::GFP and PH::GFP (to image cell membranes and spindle poles) were cultured in Ca2+-free sea water (supplemented with 1 mM EDTA, as described in Sardet et al., 2011) and imaged up to the 64 cell stage.\n\nDominant active aPKC: Pm-aPKC (GenBank: AY987397.1, Patalano et al., 2006) was cut at K146 to remove the N-terminal regulatory domain of aPKC and tagged with Venus using our Gateway cloning system (McDougall et al., 2015; Roure et al., 2007). Removal of the N-terminal regulatory domain of aPKC results in a constitutively active form (DA-aPKC). This construct can expand the apical domain of superficial cells at the expense of the basolateral domain in Xenopus embryos (Sabherwal et al., 2009) and could significantly reduce cell adhesion in ascidian embryos. Ve::Tpx2 was expressed together with DA-aPKC in order to monitor spindles during mitosis (McDougall et al., 2015).\n\n4 cell stage embryos stained with Cell Mask-Orange were compressed between slide and coverslip. Only embryos showing a compressed Animal-Vegetal axis of 45 \u00b5m (confirmed by confocal imaging) or less were used for analysis.\n\n### Time-lapse and fluorescence microscopy\n\nTime-lapse imaging of Venus, GFP, mRfp1,Cherry and Tomato constructs was performed on a Zeiss Axiovert200 and a Zeiss Axiovert100 inverted microscopes set up for epifluorescence imaging. Sequential brightfield and fluorescence images were captured using a cooled CCD camera (Micromax, Sony Interline chip, Princeton Instruments, Trenton NJ) and data was collected using MetaMorph software (Molecular Devices, Sunnyvale CA) essentially as described in McDougall et al. (2014), (2015). Time series were reconstructed and analysed by MetaMorph and Image J (NIH, USA) software packages. 4D confocal imaging was performed on Leica CSLM SP2 through a long distance 40X (NA\u00a0=\u00a00.8) objective to obtain 3D embryos over time (30\u201335 z-planes imaged every minute) that were manually segmented and 3D rendered using Imaris 3.7. 2D imaging was performed for Figures 1C, 2, 5, 6 and 8 and only the cells whose spindle remains in the imaging plane during the whole of mitosis are analysed. 3D confocal imaging and 3D rendering were performed only for Figures 3 and 4.\n\n### 3D rendering and plane extraction using imaris software\n\nThe complete protocol for 3D rendering of confocal stacks using Imaris (x64, version 7.7.2, Bitplane) is published in details in McDougall et al. (2015) and can be downloaded from http://www.biodev.obs-vlfr.fr/~dumollard/protocols/Segmentation-manuelle-Imaris-En.pdf. All cell contours were drawn manually on 2D-slices before 3D rendering and analysis by Imaris. Sphericity of the 3D shapes was calculated by Imaris software (\u2018statistics\u2019 function) for each blastomere and compared to the sphericity of a spherical standard (an in vivo isolated blastomere at metaphase from a 2 cell stage which showed a sphericity of 0.975\u00a0\u00b1\u00a00.001, n\u00a0=\u00a04 cells). Sphericity was found to be significantly lower than spherical standard at the 4 cell stage (0.897\u00a0\u00b1\u00a00.013, n\u00a0=\u00a08 cells). To calculate the apical surface ratio (apical surface related to total surface), the contact-free surface (apical in red) and the surface of contacts with other cells (basolateral in green) were manually segmented by cutting and duplicating the 3D surfaces of each blastomere (the protocol used for cutting 3D objects using Imaris can be downloaded from http://www.biodev.obs-vlfr.fr/~dumollard/protocols/protocole-surface-apicale-En.pdf). In Figure 3B, the apical surface ratio and sphericity of the eight quasi-synchronous animal cells was compared to the six quasi-synchronous vegetal cells at early interphase, prophase and metaphase. B6.3 and B6.4 were not analysed in this experiments because they were delayed with the rest of the embryo (by\u00a0~10 min).\n\nThe protocol for apical plane extraction in each blastomere is published in McDougall et al. (2015). Briefly, the apical plane (i.e. the plane parallel to the apical surface) considered as the 2D plane comprising the two spindle poles which can separate most of the apical and basolateral membranes was cut (using clipping plane function of Imaris) from 3D rendered blastomeres.\n\n### Spindle position prediction using computational model\n\nPrediction of spindle position in 2D extracted planes was performed with MatLab using scripts which may be dowloaded at: http://www.minclab.fr/research/ (Minc et al., 2011). This model postulates that MTs radiating from spindle poles reach the cell cortex and pull with forces that scale to MT length. The model assays all possible orientations in the 2D shape and computes the evolution of the torque with spindle orientation, which informs on the mechanical equilibrium corresponding to stable spindle orientation. To implement the model with the current study, the outline of the cells and the experimental positions of the spindle poles were drawn manually as inputs. The script returned the difference between the centers of observed and predicted spindles (computed as a \u2018centering deviation\u2019 in %) and the difference in angle orientation between predicted and observed spindles (computed as an \u2018orienting deviation\u2019 in degrees (\u00b0)). A protocol for how this script was used in this study may be downloaded from http://www.biodev.obs-vlfr.fr/~dumollard/protocols/Minc-prediction-En.pdf .\n\n### In situ hybridization on whole embryos\n\nFor in situ hybridization of mRNAs, embryos were fixed in 100 mM MOPS pH7.6/0.5 M NaCl/4% formaldehyde ON at 4\u00b0C and then washed in PBS, dehydrated in ethanol and stored at \u221220\u00b0C. Fixed embryos were then processed as described in Sardet et al. (2011).\n\n### Statistical methods\n\nBar graphs in all figures except in Figures 6B and 8B show mean with error bars indicating s.e.m. The number of cell analysed for each graph bar is indicated in the figure legend. Statistical difference was evaluated by an unpaired two-tailed Student t-test (with Excell) and the Wilcoxon rank sum test, or the one sample Kolmogorov-Smirnov test with R. software package, and \ufeffP values are depicted in the figure legends. Bar graphs in Figures 6B and 8B show percentage of misoriented cell divisions (i.e. cell divisions showing a different orientation to the invariant cleavage pattern) in each blastomere calculated as the ratio of misoriented cell division divided by the total number of cell divisions analysed (indicated in the graph legend).\n",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "15b8015d-ad17-49fa-a9dd-c801cb8701cc",
+      "submission_id": "6f76dedc-06ed-42cf-ab76-19511c5a416f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19290.012](https://doi.org/10.7554/eLife.19290.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell cycle asynchrony determines cell shape at metaphase to support the invariant cleavage pattern of a chordate embryo\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors seek to link cell shape, spindle orientation and timing of cell division to this, suggesting that these are connected and together constrain development. Cell adhesion is postulated as linking these and experiments manipulating adhesion via Ca2+ deprivation or playing with cell polarity support this, though the connection is indirect. The authors show that cleavage asynchrony is important for the shape of the embryo. They show this affects the shape of individual blastomeres. They contend that the orientation of cell division is controlled by cell shape, and show that when disrupted the development of the embryo (and hence setting up fated cell territories) goes awry.\n\nWhile the experiments are persuasive and the flow of logic in the manuscript sound, there are key pieces of information missing. Buried in here is one assumption: that the shape of the embryo determines spindle orientation such that division occurs roughly along the longest axis. While data from cultured cells etc show this is a reasonable assumption, the data presented here only show a correlation between cell shape and spindle orientation. It is equally possible that both are determined by some other parameter (e.g. something similar happens in the ascidian germ line lineage where the CAB directs the division axis, as the authors consider and discuss).\n\nEssential revisions:\n\n1) The manuscript would be significantly strengthened if this connection could be experimentally demonstrated. For example, could they deform isolated blastomeres and/or embryos to 'stretch' cells in unusual directions? If the authors are correct this should also affect spindle orientation and the direction of cell division in a predictable way.\n\n2) The Introduction is quite hard to follow. It should be expanded to provide important background issues/questions for the non-expert.\n\n3) Subsection \u201cMaternal and zygotic contributions to the stereotyped pattern of cell divisions.\u201d \u2013 CAB depletion, removing cell-cell adhesion and arrest of zygotic transcription experiments: Do the cleavage patterns in these embryos obey the Hertwig's rule? I could not find clear statement about this point in the text. In the same section, the authors mentioned that the blastomeres exhibited misoriented cleavages. How are the cell division misoriented? I think the description here is somewhat vague and clearer explanation may be necessary. In addition, if the effect is particularly seen in cells that display spindle rotation in normal embryos (as stated in paragraph four of that section), there might be a mechanism other than Hertwig's rule to determine the orientation of spindle in these cells.\n\n4) Subsection \u201cMaternal and zygotic contributions to the stereotyped pattern of cell divisions.\u201d, third paragraph: the significance of the experiments presented here. The authors mentioned that cell-cell interaction is vital for determining cleavage patterns are not clear. Additional results from the experiments such as Ca2+ free treatment may address this since embryos developed in Ca2+ free seawater are not able to keep their shape. What are the effect of the treatment on mitosis? Could positional changes of cells be caused by the lower resistance against the outside force due to the loss of cell-cell adhesion (for example, water flow could change cell position) while the cleavage patterns itself is conserved.\n\n5) The authors claim that zygotic transcription is required for cell shaping and asynchrony of cell cycle up to the 64-cell stage by inhibiting zygotic transcription by suppressing \u03b2-catenin pathway and PEM overexpression. As both proteins are also involved in cellular functions other than controlling gene expression, this is not necessarily the case. Ideally, inhibition of zygotic transcription with pharmaceutical drugs, Actinomycin D or \u03b1-amanitin would be recommended. For example, in subsection \u201cMaternal and zygotic contributions to the stereotyped pattern of cell divisions.\u201d, fourth paragraph: the use of Pem1 for disrupting transcription of proteins may be problematic in this experiment, because Pem1 is a regulator of spindle position in Ciona (Negishi et al., 2007).\n\n6) It is important to examine whether Wee1 is the target of TCF/\u03b2-catenin. This data could connect the \u03b2-catenin pathway, zygotic transcription, cell cycle asynchrony and cell division orientation. In the Discussion section, the authors mentioned that a gene regulatory network is co-opted to the long axis rule. However, the manuscript only states \"transcription is necessary for the rule\". This is an overstatement, since how the gene regulatory network is co-opted is not shown.\n\n7) Subsection \u201cCell cycle asynchrony underpins the invariant spatial pattern of cell divisions\u201d paragraph two: The authors argument is not clear, since mosaicism can be a significant cause of such variable phenotypes. Please discuss.\n\n8) The authors should better explain the computational mathematical method they use to predict the spindle orientation. There is no information on this in the manuscript. At least, the basic logic should be provided in the present manuscript. The logic does not seem simple because in Figure 3A, the predictions in the b4.2, A4.1, and B4.1 blastomeres do not seem to match the longest planer axis at a glance.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cell cycle asynchrony determines cell shape at metaphase to support the invariant cleavage pattern of a chordate embryo\" for further consideration at eLife. Your revised article has been favorably evaluated by Marianne Bronner (Senior editor), a Reviewing editor, and three reviewers. Because one of the original reviewers was not available for re-review, we sought the advice or a different reviewer who has raised some very good points. I have included both a summary of major points that need addressing, as well as the detailed comments of the reviewers (below) as that may be helpful to you in revising the manuscript.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nRequired Revisions:\n\n1) The author's conclusion that cell division orientation follows the \"long axis\" rule is an oversimplification. It is more likely that cell division orientation is under a dual control: 1) apico-basal polarity specifies the orientation of the plane of division; 2) 2D cell geometry within this plane then constrains the orientation of cell division. This model departs from Hertwig's rule and appears quite different from the authors' proposal. Thus, the authors should remove the rigid statements that the ascidian's cleavage obeys the Hertwig's rule. The manuscript should be rewritten to indicate that cleavage orientation is determined by the shape (the longest axis) of the blastomeres along the observed plane.\n\n2) It would be better to include Wee1 in situ hybridization data once again. While the authors used Wee1 MO and the dominant negative construct as the tools for modifying cell cycle, the analyses of the data need to be accompanied by the expression profile of the gene.\n\n3) The Introduction is still very difficult to read and needs to be rewritten. Similarly, parts of the results need to better flow.\n\n4) The title \"Cell cycle asynchrony determines cell shape at metaphase\" is not appropriate and needs to be changes, as the authors have not studied the impact on cell shape of changes in the timing of cell division.\n\nDetailed comments from Reviewer #4:\n\nAscidian embryos develop with a stereotyped and invariant pattern of cell divisions. This study addresses the role of cellular geometry and timing in the orientation of these divisions. It combines experiments in early embryos with a modelling approach initially developed to characterize the plane of division of sea urchin eggs deformed into microfabricated chambers (Minc et al., 2011).\n\nThe study makes two major claims: 1) during normal development, the orientation of the division axis correlates with the long axis of the cell in its apical plane at metaphase, which is presented as corresponding to \"Hertwig's rule\" in the manuscript. This rule is respected when embryo morphology is altered by compression or ablation of a structure previously shown to orient divisions, the Contraction Pole. 2) The asynchrony of animal vs vegetal cell divisions is crucial for the precise oriented cell divisions, as observed by preventing the asynchrony through \u03b2-catenin or wee1 loss of function. In these experiments radical changes in both cell shape and planar division orientation are observed.\n\nOverall, the paper is of lesser general interest, novelty and depth than ascidian articles recently published in eLife (e.g. Stolfi et al., 2014; Negishi et al., 2016, Hudson et al., 2016). The study identifies and quantifies interesting phenomena (some of which have previously been qualitatively described, e.g. cell rounding at mitosis, Tassy et al., 2006, Figure 4B), but does not provide deep mechanistic insights. Authors present potentially interesting quantitative analyses of the evolution of mean cell shape during ascidians development, of spindle rotation at a specific stage, of mitotic cell rounding and apical expansion at metaphase in WT and perturbed embryos. The causal links between these different parameters are, however, not always clear and robust and the message thus lacks impact and depth. The two main messages, respect of Hertwig's rule and direct causal relationship between cell cycle timing, cell shape and orientation of cell divisions are insufficiently supported.\n\nMajor comments:\n\nHertwig's rule links the orientation of cell division to the 3D geometry of cells: 'The two poles of the division figure come to lie in the direction of the greatest protoplasmic mass' (Hertwig, 1884). This \"long axis rule\" is thus applicable to the 3D geometry of cells. Minc and colleagues (Cell, 2011) could use a 2D model of the process in Urchin eggs, because the height of the microfabricated wells used to constrain egg shape was smaller than the diameter of the egg, thereby making sure that the long axis of the cell was included in the analyzed plane. In the current study, the authors focus on planes perpendicular to the apico-basal axis of the cells, although the long axis of the cell may not be included in these planes. Figure 3 illustrates indeed that the long axis of most cells at metaphase is unlikely to lie in the plane of division (e.g. Figure 3C A6.3, a6.6). The author's conclusion that cell division orientation follows the \"long axis\" rule thus appears to be an oversimplification. It is more likely that cell division orientation is under a dual control: 1) apico-basal polarity specifies the orientation of the plane of division; 2) 2D cell geometry within this plane then constrains the orientation of cell division. This model departs from Hertwig's rule and appears quite different from the authors' proposal. Figure 2C may be consistent with the notion that when apico-basal polarity is affected, spindle orientation deviates from the expected plane (though the choice to perform the 2D analysis on the specific plane extracted in red appears quite arbitrary).\n\nThe planes chosen for geometric analysis are not always rigorously defined, and sometimes appear arbitrary. For example on Figure 1, the plane extracted for a6.8 is likely to be close to the apical plane, but those of a6.6 and b6.8 are at a significant angle from the apical planes of these cells. In Figure 5A control 8-cell, the extracted plane does not seem to follow the manual extraction rules presented in McDougall et al. (Methods Cell Biol 2015) as the apico-basal axis is included in \u2013 or close to \u2013 the selected plane. It is not clear how robust, reproducible and rigorous this manual method is. To avoid arbitrary choices, an automated method would be preferable. An analysis of the robustness of the model to changes in the definition of the plane would also help. It should also be said that the choice of the plane is not solely determined by the geometry of cell shape: the apico-basal position of the spindle is also taken into account.\n\nThe link between cell cycle asynchrony and the orientation of cell division is simply correlative and the impact of cell cycle asynchrony on cell shape control is not directly explored in this study, contrary to what the title suggests. The demonstration that affecting wee1 activity causes a speeding up of animal cell divisions and leads to changes in the orientation of cell divisions is interesting, but the analysis of these experiments remains too superficial. A likely explanation of the phenotype is that a change in the timing of cell divisions affects the shape of both animal and vegetal cells at metaphase and that this causes changes in their division orientation. The authors do not, however, analyze the shape of cells at metaphase following these perturbations, nor do they run their model to predict the new division axis.\n\nGenerally, the Introduction is difficult to read, as are some sections of the Results and Discussion. The question addressed at the end of the Introduction is not clearly defined. The text added to the Introduction during revision is a simple copy/paste from the article McDougall et al. (Meth Cell Biol. 2015) and is for the most part redundant. This is careless and unethical. The manuscript would benefit from a major rewriting effort. Figure layout could also be improved and is currently not homogeneous. It is difficult to understand the figures at first glance.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Cell cycle asynchrony is required for robust spindle orientation in the planar axis at metaphase in a chordate embryo.\" for consideration by eLife. Your article has been reviewed by one peer reviewer, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nUnfortunately, we do not feel that you have adequately addressed the comments of the reviewers and that only minimal editorial changes were made. It is very unusual and strongly discouraged for a paper in eLife to go through this many rounds of review. Therefore, I will give you just one more chance to attend to the reviewers comments and otherwise will have to no choice but to decline your paper.\n\nEssential revisions:\n\nThe authors have carried out a minimal textual revision of their work, involving minimal rewriting and have left several issues unanswered (e.g. would a different value for the threshold angle to call abnormal orientation qualitatively change the results?).\n\nIssues that remain confusing and would need to be dealt with if the authors want to be understood by their readers are summarized below:\n\n1) Planar axis: this is very confusing. Is it a plane? is it an axis (i.e. a line?). The definition the authors use is that of a plane, but they themselves get confused in their rebuttal letter. \"We thank the reviewer for noting that it is not the cell's long axis but rather its longest planar axis\u2026\": here they do mean an axis (a plane has no length). But in the next paragraph \"the cell's long axis occurs in the planar axis of cells\u2026\": here they mean a plane! I strongly suggest to entirely get rid of this confusing and unnecessary term and replace it by \"apical plane\" throughout the manuscript.\n\n2) The authors still refer to \"Hertwig's rule in the planar axis\". They have also left ambiguous statements, about Hertwig's rule although the analysis is done in 2D. Hertwig's rule was defined as a 3D rule, and simply cannot be used in a 2D context. The authors should replace any mention to Hertwig's rule in a 2D context by a different term, saying for instance that the orientation of the cell division follows the long axis of the cell in the apical plane.\n",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9611d0c3-2465-4246-92cb-087292526af5",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C1",
+      "claim": "The ascidian embryo is an ideal system to investigate how cell position is determined during embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ascidian embryo is an ideal system to investigate how cell position is determined during embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a premise for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "04756830-3a5b-47ea-a859-0559e2ed53ca",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C2",
+      "claim": "Spindles in every cell tend to align at metaphase in the long length of the apical surface except in cells undergoing unequal cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 3D timelapse imaging and computational methods we analyzed the planar cell divisions in ascidian early embryos and found that spindles in every cell tend to align at metaphase in the long length of the apical surface except in cells undergoing unequal cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on 3D timelapse imaging and computational analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "1254e8ae-2115-4eb4-a634-a8dfac84eddc",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C3",
+      "claim": "The invariant and conserved cleavage pattern of ascidian embryos consists in alternate planar cell divisions between ectoderm and endomesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the invariant and conserved cleavage pattern of ascidian embryos was found to consist in alternate planar cell divisions between ectoderm and endomesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "7defc63c-132a-4667-877b-de94b1e54129",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C4",
+      "claim": "Abolishing cell cycle asynchrony consistently disrupted the spindle orienting mechanism underpinning the invariant cleavage pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, abolishing cell cycle asynchrony consistently disrupted the spindle orienting mechanism underpinning the invariant cleavage pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental manipulation of zygotic transcription and wee1 activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "6fb35832-0082-4b31-bcca-04615863354a",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C5",
+      "claim": "A fate map for all chordate embryos at the blastula stage predicts that cells in different positions will give rise to new cell types and layers that are important for morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In chordate embryos the functional pattern of cells is generated before gastrulation such that a fate map for all chordate embryos at the blastula stage predicts that cells in different positions will give rise to new cell types and layers that are important for morphogenesis (Kourakis and Smith, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kourakis and Smith, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "5af22420-d4e1-4896-b77f-ae01717243fa",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C6",
+      "claim": "Invertebrate chordate embryos of the ascidian display a similar fate map to other chordates even though their blastulae are composed of only 64 cells rather than several thousand cells typical of other chordates.",
+      "claim_type": "EXPLICIT",
+      "source": "Invertebrate chordate embryos of the ascidian display a similar fate map to other chordates even though their blastulae are composed of only 64 cells rather than several thousand cells typical of other chordates (Kourakis and Smith, 2005; Lemaire et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kourakis and Smith, 2005 and Lemaire et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "90126fd2-665c-4cc4-b6d6-272a39db07d6",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C7",
+      "claim": "Ascidian embryos display an invariant cleavage pattern with no cell migration or cell death up to the time of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ascidian embryos display an invariant cleavage pattern with no cell migration or cell death up to the time of gastrulation, cell division plane orientation is important for pattern formation (McDougall et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McDougall et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "adacf5a6-ea92-4886-88a6-a1209065b50b",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C8",
+      "claim": "Cell division plane orientation is important for pattern formation in ascidian embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ascidian embryos display an invariant cleavage pattern with no cell migration or cell death up to the time of gastrulation, cell division plane orientation is important for pattern formation (McDougall et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the invariant cleavage pattern and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "f72c9171-cf4e-4495-996c-01f4ddc3fc66",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C9",
+      "claim": "All blastomeres are fate restricted in the 64 cell ascidian blastula.",
+      "claim_type": "EXPLICIT",
+      "source": "All blastomeres are fate restricted in the 64 cell ascidian blastula and most cell divisions at the 32 cell stage are fate segregating asymmetric divisions (Lemaire et al., 2008; Lemaire, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lemaire et al., 2008 and Lemaire, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "678302a3-e61a-4f8c-9d32-d0668a105a91",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C10",
+      "claim": "Most cell divisions at the 32 cell stage are fate segregating asymmetric divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "All blastomeres are fate restricted in the 64 cell ascidian blastula and most cell divisions at the 32 cell stage are fate segregating asymmetric divisions (Lemaire et al., 2008; Lemaire, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lemaire et al., 2008 and Lemaire, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "89283630-85ab-47dd-8e98-cacdfe1ac70c",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C11",
+      "claim": "The overall invariant temporal and spatial pattern of cell divisions in ascidians is conserved between distantly-related species.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall invariant temporal and spatial pattern of cell divisions in ascidians is even conserved between distantly-related species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "19340168-48b8-4a6d-aa2d-b92b0d8adc3e",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C12",
+      "claim": "Ascidians are split into three orders that diverged more than 350 millions years ago (aplousobranch, phlebobranch and stolidobranch).",
+      "claim_type": "EXPLICIT",
+      "source": "Ascidians are split into three orders that diverged more than 350 millions years ago (aplousobranch, phlebobranch and stolidobranch), and it has been estimated that non-coding DNA sequences from two distinct ascidian species can be as different from each other as fish are from mammals (Stolfi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stolfi et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "87cc2fb5-4323-47b8-852a-a00d827672d0",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C13",
+      "claim": "Non-coding DNA sequences from two distinct ascidian species can be as different from each other as fish are from mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascidians are split into three orders that diverged more than 350 millions years ago (aplousobranch, phlebobranch and stolidobranch), and it has been estimated that non-coding DNA sequences from two distinct ascidian species can be as different from each other as fish are from mammals (Stolfi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stolfi et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "c3d4c031-df8a-4fee-bc8a-aca941773752",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C14",
+      "claim": "The 24 cell stage embryo is common to both phlebobranch (Ciona/Phallusia) and stolidobranch (Halocynthia/Styela) ascidians.",
+      "claim_type": "EXPLICIT",
+      "source": "Distantly-related species of ascidian also show the same relative cell cycle asynchrony since the 24 cell stage embryo is common to both phlebobranch (Ciona/Phallusia) and stolidobranch (Halocynthia/Styela) ascidians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about conserved cell cycle asynchrony.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "29fb3b2b-2e7c-4227-88d2-522c0b83a7cc",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C15",
+      "claim": "In Phallusia, cell cycle asynchrony is induced by a GRN dependent upon nuclear accumulation of \u03b2-catenin in six vegetal cells of the 16 cell stage embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "In Phallusia this cell cycle asynchrony is induced by a GRN dependent upon nuclear accumulation of \u03b2-catenin in six vegetal cells of the 16 cell stage embryo (Dumollard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Dumollard et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "39131181-4506-4760-86ec-cb145949d6aa",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C16",
+      "claim": "\u03b2-catenin becomes nuclear in vegetal blastomeres in both Ciona and Halocynthia embryos at the 16 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "How such stereotyped cell cycle asynchrony has been conserved in distantly-related ascidians is presently unknown, but it is interesting to note that \u03b2-catenin becomes nuclear in vegetal blastomeres in both Ciona and Halocynthia embryos at the 16 cell stage (Kawai et al., 2007; Hudson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kawai et al., 2007 and Hudson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "61e669de-5a69-4712-82ae-90f57a15323e",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C17",
+      "claim": "An underlying mechanism known as the long-axis rule based upon microtubule behavior and motors causes animal cell to divide orthogonal to their long axis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an underlying mechanism known as the long-axis rule based upon microtubule behavior and motors (reviewed in Minc and Piel, 2012) causes animal cell to divide orthogonal to their long axis as was noted more than a century ago by Hertwig (Hertwig, 1893).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Minc and Piel, 2012 and Hertwig, 1893.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "a9f3b76a-a924-497d-8d32-f9e3085359ad",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C18",
+      "claim": "The geometric long-axis rule can be altered by cortical polarity cues such as lateral junctions or the apical cortex in asymmetrically dividing Drosophila neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "This geometric long-axis rule can be altered by cortical polarity cues such as lateral junctions (Nakajima et al., 2013; Ragkousi and Gibson, 2014) or the apical cortex in asymmetrically dividing Drosophila neuroblasts (Siller and Doe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nakajima et al., 2013, Ragkousi and Gibson, 2014, and Siller and Doe, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "e28cc425-2c08-447b-a90b-c4952117f2a0",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C19",
+      "claim": "During planar cell divisions in epithelia and endothelia, a lateral belt of LGN/NuMA coupled with the exclusion of LGN/NuMA from the apical cortex causes planar spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "During planar cell divisions in epithelia and endothelia, a lateral belt of LGN/NuMA coupled with the exclusion of LGN/NuMA from the apical cortex causes planar spindle orientation (Zheng et al., 2010; Morin and Bella\u00efche, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zheng et al., 2010 and Morin and Bella\u00efche, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "856fd514-c995-4fa0-be9c-94c0849916b3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C20",
+      "claim": "Mitotic cell rounding does not seem to occur in the Xenopus blastula.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitotic cell rounding does not seem to occur in the Xenopus blastula (Strauss et al., 2006) and remains poorly documented in blastulae of other species (Xiong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Strauss et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "b83663e1-d986-446c-9505-d3315bb38987",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C21",
+      "claim": "A computational approach revealed that the first 4 cell divisions in ascidian embryos may follow a geometric rule in a similar manner to early Xenopus, Zebrafish or sea urchin embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "A computational approach revealed very recently that the first 4 cell divisions in ascidian embryos may follow a geometric rule in a similar manner to early Xenopus, Zebrafish or sea urchin embryos (Pierre et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pierre et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "026eea1d-2595-40fe-95a8-88cd2ad6694b",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C22",
+      "claim": "Major cell shape changes have been noted during the 32\u201344 cell stage in ascidian (Ciona) embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Major cell shape changes have been noted during the 32\u201344 cell stage in ascidian (Ciona) embryos (Tassy et al., 2006) suggesting that mitotic cell rounding may occur in cells of the ascidian blastula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tassy et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "97b2053b-acb5-448a-a0ff-215b4e569f3d",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C23",
+      "claim": "At the 64 cell stage all cells of the ascidian blastula face the outside of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 64 cell stage all cells of the ascidian blastula face the outside of the embryo (Figure 1A) suggesting that all cell divisions are parallel to the apical surface and that embryonic cleavage proceeds through planar cell divisions to generate the ascidian blastula.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 1A and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "83bac075-e21c-447e-b481-de3334262780",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C24",
+      "claim": "All cell divisions are parallel to the apical surface in ascidian embryos up to the 64 cell stage.",
+      "claim_type": "IMPLICIT",
+      "source": "At the 64 cell stage all cells of the ascidian blastula face the outside of the embryo (Figure 1A) suggesting that all cell divisions are parallel to the apical surface and that embryonic cleavage proceeds through planar cell divisions to generate the ascidian blastula.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that all cells face the outside at 64 cell stage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "a2b2f297-914f-4d04-950c-49732b7fcfdc",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C25",
+      "claim": "Three cells undergo OCD at the 16\u201324 cell stage (a5.3; a5.4; B5.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this strategy we could identify three cells undergoing OCD (asterisks in Figure 1A) at the 16\u201324 cell stage (a5.3; a5.4; B5.2) and seven cells at the 32\u201344 cell stage (A6.1; A6.2; a6.6; a6.7; a6.8; B6.2 and B6.3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is identified through analysis of cell division patterns shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "aa43b7ce-7c0e-431a-bcbb-d76fe8f1a78d",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C26",
+      "claim": "Seven cells undergo OCD at the 32\u201344 cell stage (A6.1; A6.2; a6.6; a6.7; a6.8; B6.2 and B6.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this strategy we could identify three cells undergoing OCD (asterisks in Figure 1A) at the 16\u201324 cell stage (a5.3; a5.4; B5.2) and seven cells at the 32\u201344 cell stage (A6.1; A6.2; a6.6; a6.7; a6.8; B6.2 and B6.3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is identified through analysis of cell division patterns shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "dbb59599-fca2-416f-b442-9dd64f1c472b",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C27",
+      "claim": "The square, T and linear patterns observed at the 64 cell stage are perfectly conserved in Styela partita and Ciona intestinalis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly the square, T and linear patterns observed at the 64 cell stage are perfectly conserved in Styela partita (Figure 1B) and Ciona intestinalis (McDougall et al., 2015), showing that the pattern of planar cell divisions in early ascidian embryos may be perfectly conserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and supported by citation to McDougall et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "d32d7eea-c97e-429b-85c3-6f849717d5a3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C28",
+      "claim": "Spindle rotation accompanies unequal cleavages in the germ lineage (B5.2; B63).",
+      "claim_type": "EXPLICIT",
+      "source": "Time lapse imaging of mitotic spindles in live ascidian embryos revealed that spindle rotation accompanies unequal cleavages in the germ lineage (B5.2; B63; Prodon et al., 2010) but also in several other lineages where we predicted OCDs (for a5.3; b5.3; a6.6; a6.7; a6.8 see Video 1 and Figure 1C and for A6.1; A6.2 see Negishi and Yasuo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time lapse imaging and citation to Prodon et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "b210d4d2-9f3e-4a2b-bcaa-17019242d9ed",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C29",
+      "claim": "Spindle rotation occurs in several lineages where OCDs were predicted (a5.3; b5.3; a6.6; a6.7; a6.8; A6.1; A6.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Time lapse imaging of mitotic spindles in live ascidian embryos revealed that spindle rotation accompanies unequal cleavages in the germ lineage (B5.2; B63; Prodon et al., 2010) but also in several other lineages where we predicted OCDs (for a5.3; b5.3; a6.6; a6.7; a6.8 see Video 1 and Figure 1C and for A6.1; A6.2 see Negishi and Yasuo, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Video 1, Figure 1C, and supported by citation to Negishi and Yasuo, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "d9ce2558-7a16-4645-b3a2-b8e9c0aba8e9",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C30",
+      "claim": "Blastomeres not displaying OCD such as b6.8 blastomeres show no major spindle rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, blastomeres not displaying OCD such as b6.8 blastomeres show no major spindle rotation (Figure 1C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "6d31266f-3f38-40d4-9fb3-3d127690caba",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C31",
+      "claim": "At prophase/prometaphase, apical cell geometry poorly predicts spindle orientation in a6.6 and a6.8 (orienting deviation: 61.0\u00b0 in a6.6 and 47.0\u00b0 in a6.8).",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the angle between the observed and predicted spindle orientations (orienting deviation) it can be observed that at prophase/prometaphase (i.e., before spindle rotation), apical cell geometry poorly predicts spindle orientation in a6.6 and a6.8 (orienting deviation: 61.0\u00b0 in a6.6 and 47.0\u00b0 in a6.8) whereas apical cell geometry predicts reliably spindle position in b6.8 (orienting deviation: 14.7\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling and measurement of orienting deviation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "a80c08df-5b3c-45d1-b5fe-6423fa689ce6",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C32",
+      "claim": "At metaphase, all observed spindles show an orienting deviation of less than 20\u00b0 indicating that apical cell shape predicts reliably spindle orientation in the apical plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at metaphase, all observed spindles show an orienting deviation of less than 20\u00b0 indicating that apical cell shape predicts reliably spindle orientation in the apical plane (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational modeling shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "9e58705c-9d5a-4bf9-b806-5342e4771630",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C33",
+      "claim": "Compressing the 4 cell stage embryo along the Animal-Vegetal axis creates a flattened embryo which, upon cell division, gives rise to a single layer of 8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compressing the 4 cell stage embryo along the Animal-Vegetal axis creates a flattened embryo (Figure 2A, '4-cell compressed') which, upon cell division, gives rise to a single layer of 8 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown experimentally in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "433a78cd-0dc5-4bea-9e9d-99fca382241d",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C34",
+      "claim": "Computational analysis shows a good prediction of spindle positioning by cell shape in compressed embryos (orienting deviation: 22.7 \u00b1 5.6\u00b0 for A3 blastomere and 19.5 \u00b1 3.4\u00b0 for B3).",
+      "claim_type": "EXPLICIT",
+      "source": "Computational analysis shows a good prediction of spindle positioning by cell shape in these embryos (orienting deviation: 22.7 \u00b1 5.6\u00b0 for A3 blastomere and 19.5 \u00b1 3.4\u00b0 for B3) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational modeling of compressed embryos shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "324a82d6-9d33-4334-8108-53710daa8b85",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C35",
+      "claim": "Downregulating cell adhesion causes embryonic morphologies at the 8 cell stage ranging from wild type patterns (2 layers of 4 cells) to one layer of 8 cells with all intermediate patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, downregulating cell adhesion causes embryonic morphologies at the 8 cell stage ranging from wild type patterns (2 layers of 4 cells) to one layer of 8 cells with all intermediate patterns (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown experimentally in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "51aa914f-de20-4bef-ad45-02d22f984191",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C36",
+      "claim": "Cell shape can orient spindle positioning in early ascidian embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations show that cell shape can orient spindle positioning in early ascidian embryos and indicates that cell adhesion and regulated apicobasal polarity are absolutely vital to maintain the cell shapes supporting the invariant cleavage pattern of early ascidian embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the compression and cell adhesion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "cf8774a1-257f-4727-ba0e-e9c9a6752510",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C37",
+      "claim": "Cell adhesion and regulated apicobasal polarity are absolutely vital to maintain the cell shapes supporting the invariant cleavage pattern of early ascidian embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations show that cell shape can orient spindle positioning in early ascidian embryos and indicates that cell adhesion and regulated apicobasal polarity are absolutely vital to maintain the cell shapes supporting the invariant cleavage pattern of early ascidian embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the compression and cell adhesion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "e23deac7-eee0-469c-86e3-4c78f284f2c4",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C38",
+      "claim": "Sphericity of blastomeres at metaphase was found to be significantly different from a round standard from the 4 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphericity of blastomeres at metaphase was found to be significantly different from a round standard from the 4 cell stage and was particularly pronounced at the 16\u201324 and 32\u201344 cell stages during which spindle rotations occur (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "e397b811-fe8a-465c-8eb8-22375bc47a58",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C39",
+      "claim": "At the 32 cell stage, in silico isolated blastomeres were found to be columnar during interphase and to flatten along the apical direction at metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 32 cell stage, in silico isolated blastomeres were found to be columnar during interphase and to flatten along the apical direction at metaphase (Figure 3B) without significantly changing cell volume (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B through 3D rendering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "f219fdc5-b9ae-467d-a968-6bfc1b28539d",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C40",
+      "claim": "A large increase in apical surface area accompanies mitotic cell rounding (from 0,15\u20130,23 at interphase to 0,42\u20130,56 at metaphase).",
+      "claim_type": "EXPLICIT",
+      "source": "We then segmented manually apical (red) from basolateral (green) membranes on each 3D-rendered blastomere and calculated the apical surface ratio (apical surface divided by total surface) and found that a large increase in apical surface area accompanies mitotic cell rounding (from 0,15\u20130,23 at interphase to 0,42\u20130,56 at metaphase, Figure 3B) similarly to what is observed in differentiated epithelia (Ragkousi and Gibson, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured and shown in Figure 3B, with comparison to Ragkousi and Gibson, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "711a1ba9-51f8-475e-9ab0-792e3dcbf14d",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C41",
+      "claim": "88% of cells show an orienting deviation of 30\u00b0 or less.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data set, 88% of cells show an orienting deviation of 30\u00b0 or less, 78% of cells have an orienting deviation under 20\u00b0 and 52% of cells show an orienting deviation of less than 10\u00b0 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the data set and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "9fbf548f-bb38-4093-9b9e-1335066cb02b",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C42",
+      "claim": "78% of cells have an orienting deviation under 20\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data set, 88% of cells show an orienting deviation of 30\u00b0 or less, 78% of cells have an orienting deviation under 20\u00b0 and 52% of cells show an orienting deviation of less than 10\u00b0 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the data set and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "c26032df-8f12-46c9-8624-2398339515a9",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C43",
+      "claim": "52% of cells show an orienting deviation of less than 10\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data set, 88% of cells show an orienting deviation of 30\u00b0 or less, 78% of cells have an orienting deviation under 20\u00b0 and 52% of cells show an orienting deviation of less than 10\u00b0 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the data set and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "b603c608-ea83-4c91-a69c-9926167c5554",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C44",
+      "claim": "Spindle orientation could not be predicted reliably in B5.2, B6.3 and A6.3 blastomeres (i.e. orienting deviation is above 30\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast spindle orientation could not be predicted reliably in B5.2, B6.3 and A6.3 blastomeres (i. e. orienting deviation is above 30\u00b0) suggesting that in these three blastomeres apical cell shape does not regulate spindle positioning in the apical plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling and measurement of orienting deviation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "7fd6ea4f-6462-48d1-a406-06f5d9c6ceca",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C45",
+      "claim": "The CAB is a cortical complex composed of cell polarity proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAB is a cortical complex composed of cell polarity proteins (Patalano et al., 2006) which is segregated in the germ lineage and is responsible for spindle orientation in the B5.2/B6.3 mitoses in a cell autonomous manner (Nishikata et al., 1999; Prodon et al., 2010) against apical cell shape (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Patalano et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "05ac37a1-e5a6-4cee-8090-a020e9fe3ad3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C46",
+      "claim": "The CAB is responsible for spindle orientation in the B5.2/B6.3 mitoses in a cell autonomous manner against apical cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAB is a cortical complex composed of cell polarity proteins (Patalano et al., 2006) which is segregated in the germ lineage and is responsible for spindle orientation in the B5.2/B6.3 mitoses in a cell autonomous manner (Nishikata et al., 1999; Prodon et al., 2010) against apical cell shape (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Nishikata et al., 1999 and Prodon et al., 2010, and shown in Figure 4C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "86af1b85-c0d5-4039-8eab-c5d593848511",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C47",
+      "claim": "Zygotic transcription is required for germ layer patterning starting from the 16 cell stage in ascidians.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, zygotic transcription is required for germ layer patterning starting from the 16 cell stage in ascidians (Lemaire, 2009; Hudson et al., 2013) and also for generating cell cycle asynchrony from the 16 cell stage (Dumollard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lemaire, 2009 and Hudson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "f687df2b-621e-4018-b24c-0c88492b2e8c",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C48",
+      "claim": "Zygotic transcription is required for generating cell cycle asynchrony from the 16 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, zygotic transcription is required for germ layer patterning starting from the 16 cell stage in ascidians (Lemaire, 2009; Hudson et al., 2013) and also for generating cell cycle asynchrony from the 16 cell stage (Dumollard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dumollard et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "aadb1db0-3012-46de-aed3-667548a89aed",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C49",
+      "claim": "Removing the CP prevents unequal cleavage in CAB-containing blastomeres at the 8 cell stage (B4.1 pair) resulting in more centered spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, removing the CP prevents unequal cleavage in CAB-containing blastomeres at the 8 cell stage (B4.1 pair) resulting in more centered spindles (Figure 5B) and the absence of small cells in the vegetal posterior pole of the embryo of CP-ablated embryos (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown experimentally in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "2b20e079-8e0c-41a7-b601-0ee62d8d161c",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C50",
+      "claim": "The activity of the maternal CAB impacts not only unequal cleavage in the germ lineage but also cell shape and hence cell divisions in the rest of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the activity of the maternal CAB impacts not only unequal cleavage in the germ lineage but also cell shape and hence cell divisions in the rest of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the CP-ablation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "40f4a2de-b4c8-41f8-b54e-6f8aa2ccb9b6",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C51",
+      "claim": "All mitotic spindle rotations previously observed at the 16 and 32 cell stages are strongly impaired in Pem1 and DN-Tcf expressing embryos resulting in cell divisions with different orientation from the invariant cleavage pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all mitotic spindle rotations previously observed at the 16 and 32 cell stages are strongly impaired in Pem1 and DN-Tcf expressing embryos resulting in cell divisions with different orientation from the invariant cleavage pattern (termed 'misoriented cell divisions') (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown experimentally in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "4cbafca4-2642-4278-a7aa-83acae8bbfd5",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C52",
+      "claim": "The blastomeres undergoing spindle rotation displayed more occurrence of misoriented cell divisions (a5.3, b5.3, A6.1, A6.2, a6.6, a6.7, a6.8) in embryos expressing Pem1 or DN-Tcf.",
+      "claim_type": "EXPLICIT",
+      "source": "Counting the occurrence of misoriented cell divisions in embryos expressing Pem1 or DN-Tcf (Figure 6B) shows that the blastomeres undergoing spindle rotation displayed more occurrence of misoriented cell divisions (a5.3, b5.3, A6.1, A6.2, a6.6, a6.7, a6.8 marked with an asterisk in Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "14a0c8c0-dcb6-476a-9099-1a9754fa9440",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C53",
+      "claim": "Misoriented cell divisions in manipulated embryos are still predicted reliably by apical cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the apical surface appears altered both in Pem1 and DN-Tcf expressing embryos and computational analysis of cell divisions in a6.8 (normally displaying spindle rotation) shows that misoriented cell divisions are still predicted reliably by apical cell shape (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through computational analysis in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "f20ba5c6-b12f-4459-8cb2-1087d9b10ded",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C54",
+      "claim": "Wee1 maternal RNAs are present in the unfertilized oocyte in Phallusia mammillata.",
+      "claim_type": "EXPLICIT",
+      "source": "Wee1 maternal RNAs are present in the unfertilized oocyte in Phallusia mammillata (Figure 7A, see also RNA-seq data in Aniseed database: http://www.aniseed.cnrs.fr/ with Gene Id: phmamm.CG.MTP2014.S423.g08568) where it is enriched in the vegetal cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A and supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "7ec5f98d-6924-4b1c-87c0-bc33305570ba",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C55",
+      "claim": "Maternal Wee1 transcripts are enriched in the vegetal cortex of the unfertilized oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Wee1 maternal RNAs are present in the unfertilized oocyte in Phallusia mammillata (Figure 7A, see also RNA-seq data in Aniseed database: http://www.aniseed.cnrs.fr/ with Gene Id: phmamm.CG.MTP2014.S423.g08568) where it is enriched in the vegetal cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "eb45508c-d627-458b-8c1b-befe6d1e20be",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C56",
+      "claim": "Zygotic Wee1 transcripts first appear at late 32 cell stage in the endoderm lineage (64\u201376-stage) just before these cells invaginate.",
+      "claim_type": "EXPLICIT",
+      "source": "Zygotic Wee1 transcripts first appear at late 32 cell stage in the endoderm lineage (64\u201376-stage) just before these cells invaginate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on in situ hybridization results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "73dda5c7-a0df-455a-b047-5c117631aeff",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C57",
+      "claim": "After the onset of gastrulation (112 cell stage) Wee1 transcripts are expressed in mesodermal cells just before they invaginate.",
+      "claim_type": "EXPLICIT",
+      "source": "After the onset of gastrulation (112 cell stage) Wee1 transcripts are expressed in mesodermal cells just before they invaginate (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "05ee9d43-22a3-4a35-91af-f5b7fcac2ad1",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C58",
+      "claim": "Wee1 inhibition speeded up the slow cell cycle in the ectoderm at the 16 cell stage without affecting the cell cycle duration of the vegetal endomesoderm thereby eliminating the transient 24 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We modified Wee1 activity in the whole embryo (see Materials and methods, Murakami et al., 2004; Farrell and O'Farrell, 2014) and found, as anticipated, that Wee1 inhibition speeded up the slow cell cycle in the ectoderm at the 16 cell stage without affecting the cell cycle duration of the vegetal endomesoderm thereby eliminating the transient 24 cell stage (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown experimentally in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "eb10a750-545b-4168-be47-9b875c9bc6cd",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C59",
+      "claim": "At the 32 cell stage, cell cycle asynchrony between ectoderm (animal) and endomesoderm (vegetal) was 6\u20138 min in Wee1-manipulated embryos compared to 15 min in control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 32 cell stage, cell cycle asynchrony between ectoderm (animal) and endomesoderm (vegetal) was 6\u20138 min in Wee1-manipulated embryos compared to 15 min in control embryos (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured and shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "ca1c95ac-eaf8-4d32-9d7c-25113a29b578",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C60",
+      "claim": "The blastomeres most affected by synchronization were the ones displaying oriented cell division (b5.3, A6.1, A6.2, a6.7 and a6.8) or daughters of cells displaying OCD (ie b6.5, b6.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore the blastomeres most affected by synchronization were the ones displaying oriented cell division (b5.3, A6.1, A6.2, a6.7 and a6.8) or daughters of cells displaying OCD (ie b6.5, b6.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from counting misoriented cell divisions in Wee1-manipulated embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "04a8d498-9db8-457b-a543-6c8fba1528d6",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C61",
+      "claim": "Inhibition of cell cycle asynchrony did not seem to disrupt the mechanisms supporting spindle orientation in the apical plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inhibition of cell cycle asynchrony did not seem to disrupt the mechanisms supporting spindle orientation in the apical plane and misoriented cell divisions may rather be due to altered apical surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that misoriented divisions still align with the long axis of the apical surface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "0cb01402-d00b-444b-82fb-70719d8fd3a9",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C62",
+      "claim": "Apical cell shape is a major driver of cell positioning in the ascidian blastula.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we argue that, together with apico-basal polarity which likely enforces the planar orientation of cell division, apical cell shape is a major driver of cell positioning in the ascidian blastula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is argued based on the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "397c5dbd-ef41-4949-8ec3-0c8cd418dd9f",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C63",
+      "claim": "Cell cycle asynchrony impacts the spatial pattern of planar cell divisions by regulating the shape of the cell's apical surface at metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that cell cycle asynchrony impacts the spatial pattern of planar cell divisions by regulating the shape of the cell's apical surface at metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "d39c2e12-c694-465d-937f-ef63d36140ed",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C64",
+      "claim": "The zygotic GRN driven by nuclear \u03b2-catenin that patterns germ layers is also responsible for causing cell cycle asynchrony, which in turn enforces the invariant cleavage pattern through cell shape dependent mitotic spindle orientation in the apical plane at the 16-32-44-cell stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore the zygotic GRN driven by nuclear \u03b2-catenin that patterns germ layers is also responsible for causing cell cycle asynchrony, which in turn enforces the invariant cleavage pattern through cell shape dependent mitotic spindle orientation in the apical plane at the 16-32-44-cell stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental manipulations of \u03b2-catenin and cell cycle timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "1c1913d6-5066-4347-8e9d-8232c8e5bfd9",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C65",
+      "claim": "Entry into mitosis is accompanied with partial cell rounding via apical expansion (and hence a reduction in cell adhesion) in the ascidian blastula.",
+      "claim_type": "EXPLICIT",
+      "source": "We find here that entry into mitosis is accompanied with partial cell rounding via apical expansion (and hence a reduction in cell adhesion) in the ascidian blastula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed through 3D rendering and analysis of cell shape changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "af6df793-b525-4030-9db9-5439582a6d83",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C66",
+      "claim": "The overall cell cycle asynchrony between the animal and vegetal cells is about 15 min which is about the duration of M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the overall cell cycle asynchrony between the animal and vegetal cells is about 15 min. which is about the duration of M phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is noted from the timing measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "644b347d-0862-4b12-87f2-fb8af6ba428e",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C67",
+      "claim": "Both phlebobranchs and stolidobranchs ascidians display nuclear \u03b2-catenin in vegetal cells at the 16 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both phlebobranchs and stolidobranchs ascidians display nuclear \u03b2-catenin in vegetal cells at the 16 cell stage (Ciona: Hudson et al. (2013), Halocynthia: Kawai et al., 2007), and it is a GRN controlled by \u03b2-catenin that causes cell cycle asynchrony starting at the 16 cell stage (Dumollard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hudson et al., 2013, Kawai et al., 2007, and Dumollard et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "11731bcf-74af-47b9-b219-6acc406c5909",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C68",
+      "claim": "Unequal cleavage of the two vegetal posterior blastomeres at the 16 cell stage affects the shape of every cell in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Unequal cleavage of the two vegetal posterior blastomeres at the 16 cell stage thus affects the shape of every cell in the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the CP-ablation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "751f230a-5489-47d0-8d09-e099823971aa",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "claim_id": "C69",
+      "claim": "Regulated apicobasal polarity is crucial to maintain cell adhesion in the ascidian embryo to propagate individual cell deformations to the rest of the embryo and implement the invariant cleavage pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that regulated apicobasal polarity is crucial to maintain cell adhesion in the ascidian embryo to propagate individual cell deformations to the rest of the embryo and implement the invariant cleavage pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the cell adhesion and polarity manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9508806-7d43-4d30-8039-7e1b82980fa3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Spindles align with the long axis of the apical surface at metaphase in most cells, with 88% showing orienting deviation \u226430\u00b0 and 78% \u226420\u00b0. Cells undergoing oriented cell divisions (OCDs) display spindle rotation from prophase to metaphase to achieve this alignment, while non-OCD cells maintain alignment throughout mitosis. Exceptions include B5.2, B6.3, and A6.3 blastomeres where orienting deviation exceeds 30\u00b0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31-32, C41-43 provide quantitative evidence from computational modeling showing strong predictive power of apical cell shape for spindle orientation at metaphase. Claims C28-30 demonstrate spindle rotation in OCD cells through time-lapse imaging. The computational model successfully predicts spindle orientation in the vast majority of cells (C44, C62), with well-characterized exceptions in the germ lineage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "25d7a5ff-8cd9-4a7a-a17c-9ed8a700e1dc",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The invariant cleavage pattern consists of specific oriented cell divisions (OCDs) at defined stages: three cells at 16-24 cell stage (a5.3, a5.4, B5.2) and seven cells at 32-44 cell stage (A6.1, A6.2, a6.6, a6.7, a6.8, B6.2, B6.3). This pattern, including square, T, and linear arrangements of cells at 64-cell stage, is conserved between distantly related ascidian species (Phallusia, Styela, Ciona).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-26 identify specific OCDs through systematic analysis of cell division patterns shown in Figure 1A. Claim C27 demonstrates conservation across species through comparative imaging (Figure 1B) and citation support. The characterization of alternating planar divisions (C3) is well-documented through the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "44cbd87d-f6dd-449e-a1e1-55edcdc7a2bd",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ascidian blastomeres undergo partial mitotic cell rounding characterized by increased sphericity and apical surface expansion at metaphase. At the 32-cell stage, blastomeres transition from columnar shapes during interphase to flattened shapes at metaphase, with apical surface ratio increasing from 0.15-0.23 to 0.42-0.56.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-40 provide quantitative measurements from 3D rendering and manual segmentation (Figure 3). Statistical significance is demonstrated for sphericity changes from 4-cell stage onward (C38), and apical surface ratio changes are well-quantified (C40). The documentation of partial mitotic cell rounding (C65) is novel for ascidians and supported by multiple measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "a34e18b8-528c-4960-816b-272d1ac98b2b",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Abolishing cell cycle asynchrony through inhibition of zygotic transcription (Pem1, DN-Tcf) or Wee1 activity disrupts the invariant cleavage pattern by causing misoriented cell divisions, particularly in blastomeres that normally undergo OCDs. Cell cycle asynchrony between ectoderm and endomesoderm (normally ~15 min at 32-cell stage) is reduced to 6-8 min in Wee1-manipulated embryos. Misoriented divisions still align with altered apical cell shapes, indicating the spindle orientation mechanism remains intact but operates on altered cell geometries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-52 demonstrate disruption of spindle rotations in Pem1/DN-Tcf embryos with quantification (Figure 6). Claims C58-60 show similar effects with Wee1 manipulation and quantify the reduction in asynchrony (Figure 8A). Critically, C53 and C61 show that misoriented divisions still follow apical cell shape predictions, supporting the mechanistic interpretation in C63-64. The causal link between cell cycle asynchrony and cleavage pattern is well-established through multiple perturbations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "3628bca8-4afc-418b-b4af-e9e9b7572392",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell shape can orient spindle positioning in early ascidian embryos, as demonstrated by compression experiments and cell adhesion perturbations. Compressed 4-cell embryos produce single-layer 8-cell embryos with spindles predicted by the altered cell shapes (orienting deviation 19.5-22.7\u00b0). Downregulating cell adhesion produces variable morphologies at 8-cell stage, indicating that cell adhesion and apicobasal polarity are essential for maintaining cell shapes that support the invariant cleavage pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-35 provide experimental manipulations with clear phenotypic outcomes (Figure 2). Computational modeling of compressed embryos (C34) shows good predictive power. The conclusion that cell shape orients spindles (C36) and that adhesion/polarity are vital (C37) are well-supported by the experimental perturbations, though the variable outcomes in adhesion experiments suggest complexity in the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "73d6afce-f41b-4a1e-aa18-90b87fed5034",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Centrosome Attracting Body (CAB), a maternal cortical complex of cell polarity proteins, controls spindle orientation in germ lineage cells (B5.2/B6.3) independently of apical cell shape. Removal of the CAB precursor (contraction pole ablation) prevents unequal cleavage in the germ lineage and radializes the entire embryo, affecting cell shapes throughout the embryo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-46 are supported by citations and data showing CAB function overrides apical cell shape in specific cells (Figure 4C). Claims C49-50 demonstrate through CP-ablation experiments (Figure 5) that CAB activity affects not only germ lineage divisions but also cell shapes throughout the embryo. The global effect on embryo morphology (C68) is clearly documented, though the mechanism of propagation requires cell adhesion as shown in other experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "b0a897e9-0c83-417a-a2dd-283117b36329",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wee1 is expressed both maternally and zygotically in Phallusia mammillata. Maternal Wee1 transcripts are present in unfertilized oocytes enriched in the vegetal cortex. Zygotic Wee1 expression begins at late 32-cell stage in endoderm lineage (64-76 cell stage) and later in mesodermal cells at 112-cell stage, just before these cells invaginate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-57 are supported by in situ hybridization data (Figure 7A) and RNA-seq database evidence. The temporal and spatial expression patterns are clearly documented and consistent with the proposed role of Wee1 in regulating cell cycle timing in specific lineages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "3ff490de-e00f-4500-8818-d2bb078f1dd6",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell cycle asynchrony from the 16-cell stage is induced by a gene regulatory network (GRN) dependent on nuclear \u03b2-catenin accumulation in vegetal cells. This mechanism is conserved between distantly related ascidian species (phlebobranchs and stolidobranchs), which both display nuclear \u03b2-catenin in vegetal cells at the 16-cell stage. Zygotic transcription is required for both germ layer patterning and cell cycle asynchrony from the 16-cell stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C47-48 are supported by multiple citations to prior work (Dumollard et al., 2013; Lemaire, 2009; Hudson et al., 2013). Claim C16 and C67 document conservation of nuclear \u03b2-catenin localization across species with appropriate citations. The connection between \u03b2-catenin, zygotic transcription, and cell cycle asynchrony is well-established in the cited literature and consistent with the experimental manipulations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "50c60c73-08db-4b7f-8199-0dfa3562140a",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ascidian embryos provide an ideal system for studying cell positioning due to their conserved chordate fate map despite having only 64 cells at blastula stage (versus thousands in other chordates). The invariant cleavage pattern with no cell migration or death makes cell division orientation crucial for pattern formation, with all blastomeres fate-restricted and most 32-cell divisions being fate-segregating asymmetric divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-10 establish the biological context and are supported by appropriate citations (Kourakis and Smith, 2005; Lemaire et al., 2008; Lemaire, 2009; McDougall et al., 2015). These are well-established facts in the field that provide rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "e9329690-cca9-4888-89b6-9b98dd6722f8",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The invariant cleavage pattern and cell cycle asynchrony (24-cell stage) are conserved between distantly related ascidian species that diverged >350 million years ago, despite having non-coding DNA sequences as divergent as fish and mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-14 establish evolutionary conservation with appropriate citation support (Stolfi et al., 2014). The observation of conserved 24-cell stage across orders provides context for the significance of the cell cycle asynchrony mechanism studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "f7715088-3628-4d52-9afb-8f6275fad5c3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on spindle orientation mechanisms in other systems: the long-axis rule causes cells to divide orthogonal to their long axis, but can be overridden by cortical polarity cues. Mitotic cell rounding is variable across species and cell types. Prior computational work suggested geometric rules may apply to early ascidian divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-22 provide literature context with appropriate citations (Minc and Piel, 2012; Hertwig, 1893; Nakajima et al., 2013; Ragkousi and Gibson, 2014; Siller and Doe, 2009; Zheng et al., 2010; Morin and Bella\u00efche, 2011; Strauss et al., 2006; Xiong et al., 2014; Pierre et al., 2016; Tassy et al., 2006). These establish the conceptual framework for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "3e071c09-f9e3-4c9e-8055-171df9f7ccd9",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The overall cell cycle asynchrony between animal and vegetal cells is approximately 15 minutes, which corresponds to the duration of M phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by timing measurements presented in the study (e.g., C59 shows 15 min asynchrony in controls). The observation that this matches M phase duration is noted as potentially significant for understanding selective pressure for conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "1d3a78f8-39d5-4cbd-9f42-4f6ef7efe8e3",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The ascidian embryo is an ideal system to investigate how cell position is determined during embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a premise statement that is justified by the subsequent claims about the system's properties (small cell number, invariant pattern, conserved fate map, no migration/death). This is a reasonable characterization supported by the biological features described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    },
+    {
+      "id": "cb031c47-b70e-4404-bf12-6a800fb76f2a",
+      "content_id": "5d6d1a1e-9fd7-440b-96b5-15e96aa3a1ba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Regulated apicobasal polarity is crucial to maintain cell adhesion in the ascidian embryo to propagate individual cell deformations to the rest of the embryo and implement the invariant cleavage pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by the cell adhesion and DA-aPKC experiments (C35, C37) showing that disrupting polarity/adhesion disrupts the cleavage pattern. The conclusion about propagation of deformations is a reasonable inference from the CP-ablation and adhesion experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:40:16.716439Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "04756830-3a5b-47ea-a859-0559e2ed53ca",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "97b2053b-acb5-448a-a0ff-215b4e569f3d",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "83bac075-e21c-447e-b481-de3334262780",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "d32d7eea-c97e-429b-85c3-6f849717d5a3",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "b210d4d2-9f3e-4a2b-bcaa-17019242d9ed",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "d9ce2558-7a16-4645-b3a2-b8e9c0aba8e9",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "6d31266f-3f38-40d4-9fb3-3d127690caba",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "a80c08df-5b3c-45d1-b5fe-6423fa689ce6",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "711a1ba9-51f8-475e-9ab0-792e3dcbf14d",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "9fbf548f-bb38-4093-9b9e-1335066cb02b",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "c26032df-8f12-46c9-8624-2398339515a9",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "b603c608-ea83-4c91-a69c-9926167c5554",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "0cb01402-d00b-444b-82fb-70719d8fd3a9",
+      "result_id": "e9508806-7d43-4d30-8039-7e1b82980fa3"
+    },
+    {
+      "claim_id": "a2b2f297-914f-4d04-950c-49732b7fcfdc",
+      "result_id": "25d7a5ff-8cd9-4a7a-a17c-9ed8a700e1dc"
+    },
+    {
+      "claim_id": "aa43b7ce-7c0e-431a-bcbb-d76fe8f1a78d",
+      "result_id": "25d7a5ff-8cd9-4a7a-a17c-9ed8a700e1dc"
+    },
+    {
+      "claim_id": "dbb59599-fca2-416f-b442-9dd64f1c472b",
+      "result_id": "25d7a5ff-8cd9-4a7a-a17c-9ed8a700e1dc"
+    },
+    {
+      "claim_id": "1254e8ae-2115-4eb4-a634-a8dfac84eddc",
+      "result_id": "25d7a5ff-8cd9-4a7a-a17c-9ed8a700e1dc"
+    },
+    {
+      "claim_id": "e23deac7-eee0-469c-86e3-4c78f284f2c4",
+      "result_id": "44cbd87d-f6dd-449e-a1e1-55edcdc7a2bd"
+    },
+    {
+      "claim_id": "e397b811-fe8a-465c-8eb8-22375bc47a58",
+      "result_id": "44cbd87d-f6dd-449e-a1e1-55edcdc7a2bd"
+    },
+    {
+      "claim_id": "f219fdc5-b9ae-467d-a968-6bfc1b28539d",
+      "result_id": "44cbd87d-f6dd-449e-a1e1-55edcdc7a2bd"
+    },
+    {
+      "claim_id": "1c1913d6-5066-4347-8e9d-8232c8e5bfd9",
+      "result_id": "44cbd87d-f6dd-449e-a1e1-55edcdc7a2bd"
+    },
+    {
+      "claim_id": "7defc63c-132a-4667-877b-de94b1e54129",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "40f4a2de-b4c8-41f8-b54e-6f8aa2ccb9b6",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "4cbafca4-2642-4278-a7aa-83acae8bbfd5",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "14a0c8c0-dcb6-476a-9099-1a9754fa9440",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "05ee9d43-22a3-4a35-91af-f5b7fcac2ad1",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "eb10a750-545b-4168-be47-9b875c9bc6cd",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "ca1c95ac-eaf8-4d32-9d7c-25113a29b578",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "04a8d498-9db8-457b-a543-6c8fba1528d6",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "397c5dbd-ef41-4949-8ec3-0c8cd418dd9f",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "d39c2e12-c694-465d-937f-ef63d36140ed",
+      "result_id": "a34e18b8-528c-4960-816b-272d1ac98b2b"
+    },
+    {
+      "claim_id": "9e58705c-9d5a-4bf9-b806-5342e4771630",
+      "result_id": "3628bca8-4afc-418b-b4af-e9e9b7572392"
+    },
+    {
+      "claim_id": "433a78cd-0dc5-4bea-9e9d-99fca382241d",
+      "result_id": "3628bca8-4afc-418b-b4af-e9e9b7572392"
+    },
+    {
+      "claim_id": "324a82d6-9d33-4334-8108-53710daa8b85",
+      "result_id": "3628bca8-4afc-418b-b4af-e9e9b7572392"
+    },
+    {
+      "claim_id": "51aa914f-de20-4bef-ad45-02d22f984191",
+      "result_id": "3628bca8-4afc-418b-b4af-e9e9b7572392"
+    },
+    {
+      "claim_id": "cf8774a1-257f-4727-ba0e-e9c9a6752510",
+      "result_id": "3628bca8-4afc-418b-b4af-e9e9b7572392"
+    },
+    {
+      "claim_id": "7fd6ea4f-6462-48d1-a406-06f5d9c6ceca",
+      "result_id": "73d6afce-f41b-4a1e-aa18-90b87fed5034"
+    },
+    {
+      "claim_id": "05ac37a1-e5a6-4cee-8090-a020e9fe3ad3",
+      "result_id": "73d6afce-f41b-4a1e-aa18-90b87fed5034"
+    },
+    {
+      "claim_id": "aadb1db0-3012-46de-aed3-667548a89aed",
+      "result_id": "73d6afce-f41b-4a1e-aa18-90b87fed5034"
+    },
+    {
+      "claim_id": "2b20e079-8e0c-41a7-b601-0ee62d8d161c",
+      "result_id": "73d6afce-f41b-4a1e-aa18-90b87fed5034"
+    },
+    {
+      "claim_id": "11731bcf-74af-47b9-b219-6acc406c5909",
+      "result_id": "73d6afce-f41b-4a1e-aa18-90b87fed5034"
+    },
+    {
+      "claim_id": "f20ba5c6-b12f-4459-8cb2-1087d9b10ded",
+      "result_id": "b0a897e9-0c83-417a-a2dd-283117b36329"
+    },
+    {
+      "claim_id": "7ec5f98d-6924-4b1c-87c0-bc33305570ba",
+      "result_id": "b0a897e9-0c83-417a-a2dd-283117b36329"
+    },
+    {
+      "claim_id": "eb45508c-d627-458b-8c1b-befe6d1e20be",
+      "result_id": "b0a897e9-0c83-417a-a2dd-283117b36329"
+    },
+    {
+      "claim_id": "73dda5c7-a0df-455a-b047-5c117631aeff",
+      "result_id": "b0a897e9-0c83-417a-a2dd-283117b36329"
+    },
+    {
+      "claim_id": "29fb3b2b-2e7c-4227-88d2-522c0b83a7cc",
+      "result_id": "3ff490de-e00f-4500-8818-d2bb078f1dd6"
+    },
+    {
+      "claim_id": "39131181-4506-4760-86ec-cb145949d6aa",
+      "result_id": "3ff490de-e00f-4500-8818-d2bb078f1dd6"
+    },
+    {
+      "claim_id": "86af1b85-c0d5-4039-8eab-c5d593848511",
+      "result_id": "3ff490de-e00f-4500-8818-d2bb078f1dd6"
+    },
+    {
+      "claim_id": "f687df2b-621e-4018-b24c-0c88492b2e8c",
+      "result_id": "3ff490de-e00f-4500-8818-d2bb078f1dd6"
+    },
+    {
+      "claim_id": "644b347d-0862-4b12-87f2-fb8af6ba428e",
+      "result_id": "3ff490de-e00f-4500-8818-d2bb078f1dd6"
+    },
+    {
+      "claim_id": "6fb35832-0082-4b31-bcca-04615863354a",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "5af22420-d4e1-4896-b77f-ae01717243fa",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "90126fd2-665c-4cc4-b6d6-272a39db07d6",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "adacf5a6-ea92-4886-88a6-a1209065b50b",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "f72c9171-cf4e-4495-996c-01f4ddc3fc66",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "678302a3-e61a-4f8c-9d32-d0668a105a91",
+      "result_id": "50c60c73-08db-4b7f-8199-0dfa3562140a"
+    },
+    {
+      "claim_id": "89283630-85ab-47dd-8e98-cacdfe1ac70c",
+      "result_id": "e9329690-cca9-4888-89b6-9b98dd6722f8"
+    },
+    {
+      "claim_id": "19340168-48b8-4a6d-aa2d-b92b0d8adc3e",
+      "result_id": "e9329690-cca9-4888-89b6-9b98dd6722f8"
+    },
+    {
+      "claim_id": "87cc2fb5-4323-47b8-852a-a00d827672d0",
+      "result_id": "e9329690-cca9-4888-89b6-9b98dd6722f8"
+    },
+    {
+      "claim_id": "c3d4c031-df8a-4fee-bc8a-aca941773752",
+      "result_id": "e9329690-cca9-4888-89b6-9b98dd6722f8"
+    },
+    {
+      "claim_id": "61e669de-5a69-4712-82ae-90f57a15323e",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "a9f3b76a-a924-497d-8d32-f9e3085359ad",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "e28cc425-2c08-447b-a90b-c4952117f2a0",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "856fd514-c995-4fa0-be9c-94c0849916b3",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "b83663e1-d986-446c-9505-d3315bb38987",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "026eea1d-2595-40fe-95a8-88cd2ad6694b",
+      "result_id": "f7715088-3628-4d52-9afb-8f6275fad5c3"
+    },
+    {
+      "claim_id": "af6df793-b525-4030-9db9-5439582a6d83",
+      "result_id": "3e071c09-f9e3-4c9e-8055-171df9f7ccd9"
+    },
+    {
+      "claim_id": "9611d0c3-2465-4246-92cb-087292526af5",
+      "result_id": "1d3a78f8-39d5-4cbd-9f42-4f6ef7efe8e3"
+    },
+    {
+      "claim_id": "751f230a-5489-47d0-8d09-e099823971aa",
+      "result_id": "cb031c47-b70e-4404-bf12-6a800fb76f2a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Axons dynamically interact through their shafts via zippering and unzippering processes. Zippering involves progressive adhesion of axon shafts forming larger fascicles, while unzippering leads to defasciculation. The zipper vertex moves at ~1 \u03bcm/min until equilibrium. Two types of zippers were identified: simple zippers (laminar structure allowing free movement) and entangled zippers (preventing unzippering past entanglement points).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C30-C38, C40-C42 provide converging evidence from time-lapse microscopy and SEM imaging showing dynamic shaft-shaft interactions. The observations are well-documented with quantitative measurements of zipper velocity and structural characterization. The distinction between simple and entangled zippers is supported by SEM evidence (C34-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C43",
+      "C44",
+      "C94",
+      "C95",
+      "C148",
+      "C149"
+    ],
+    "result": "The axon network progressively coarsens over hours, with total network length and number of vertices decreasing approximately linearly. This coarsening results from zippering events dominating over unzippering, occurring on a timescale of ~10 hours, much longer than individual zippering events (~10 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C43-C44, C94-C95, C148-C149 provide quantitative evidence from image analysis showing network coarsening in 5 out of 6 experiments with average 20\u00b116% reduction in network length. The separation of timescales (10 min for individual zippers vs. 10 hr for network coarsening) is well-documented and supports the interpretation that zippering dominates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Zippering arises from competition between axon-axon adhesion and mechanical tension. Adhesion favors increased zippered segment length, while tension favors unzippering to minimize total axon length. The force balance at equilibrium is given by S=2T(1-cos(\u03b2/2)) for symmetric zippers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C64, C125-C128 present a coherent biophysical framework supported by theoretical derivation (Equation 1) and experimental observations. The force balance equation is mathematically sound and consistent with observed zipper geometries. The framework successfully explains both static equilibrium and dynamic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C129",
+      "C131"
+    ],
+    "result": "Using BFP technique, axon tension was measured with a distribution sharply peaked at 678 pN (mean 679 pN, interquartile range 529-833 pN), comparable to previous measurements in PC-12 neurites (~650 pN). This represents the first quantification of axon-axon adhesion force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71, C129, C131 provide quantitative tension measurements using validated BFP technique (C69-C70). The values are consistent with previous literature (C66, C129), and the measurement approach is technically sound. The claim of being the first measurement of axon-axon adhesion is supported by the novelty statement (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C105",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The distribution of equilibrium zipper angles is sharply peaked around 42\u00b0 (mean 51.2\u00b0, interquartile range 34-60\u00b0). Small angles (0-30\u00b0) are notably absent, consistent with zippering dynamics where initial small incidence angles increase to equilibrium values. This distribution matches in vivo observations from Roberts and Taylor (1982).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C105, C110-C114 provide quantitative angle measurements from 17 zippers across 4 cultures. The under-representation of small angles is well-documented and mechanistically explained by zippering dynamics. The agreement with Roberts and Taylor (1982) data strengthens the interpretation and suggests in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C99",
+      "C170",
+      "C177",
+      "C178",
+      "C179",
+      "C181"
+    ],
+    "result": "Mechanical tension regulates fasciculation through control of zippering. FBS-induced explant contraction generated pulling forces causing axon stretching (~15 \u03bcm, 4-10% increase in path length), estimated to increase tension by >1 nN. This preceded rapid network de-coarsening with unzippering dominating over zippering, demonstrating tension-dependent control of fasciculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46-C58, C99, C170, C177-C179, C181 provide experimental evidence linking tension changes to fasciculation state. The FBS experiments show clear temporal sequence: tension increase within 20 min followed by de-coarsening. The estimated tension increase (>1 nN) is quantitatively significant compared to baseline (~679 pN) and comparable to physiologically relevant changes (C180).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C179"
+    ],
+    "result": "Cytochalasin B (2 \u03bcM) induced network coarsening within 30 min, consistent with decreased axon tension. The drug caused morphological changes (stub-like growth cones, reduced filopodia) consistent with previous studies showing cytochalasin-induced tension reduction. This demonstrates that decreased tension leads to zippering-driven coarsening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C156-C160, C179 provide experimental evidence from cytochalasin treatments with appropriate DMSO controls. The morphological changes are consistent with previous literature (C159-C160). The coarsening response is opposite to FBS-induced de-coarsening, supporting the tension-dependent model. However, direct tension measurements in cytochalasin-treated cultures were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C167",
+      "C168"
+    ],
+    "result": "Blebbistatin (10 \u03bcM) had a stabilizing effect on the network, inhibiting spontaneous coarsening while maintaining zipper mobility. No obvious effect on axon tension or extension was observed, contrasting with its effects in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51, C167-C168 report unexpected blebbistatin effects with appropriate DMSO controls. However, the mechanism remains unexplained (C168), and the lack of tension measurements prevents definitive interpretation. The result contradicts expectations based on blebbistatin's known effects (C161-C166), suggesting system-specific factors that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C134",
+      "C135"
+    ],
+    "result": "Micromanipulation experiments demonstrated reversible unzippering and re-zippering. Dragging one axon increased the zipper angle beyond equilibrium, causing unzippering. Upon release, axons snapped back and re-zippered to recover the initial configuration. Fitting these dynamics to the biophysical model provided an independent estimate of adhesion force comparable to static measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C134-C135 provide direct experimental manipulation evidence supporting the biophysical framework. The reversibility of zippering demonstrates that the process is governed by force balance rather than irreversible structural changes. The independent adhesion force estimate from dynamics validates the static measurements, though the dynamic estimate was lower (S/T=0.04 vs 0.24), possibly due to differences in fascicle size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Individual zipper dynamics show vertex velocities of 0.3-2 \u03bcm/min, with ~2/3 converging at approximately constant velocity and ~1/3 showing exponential decay. Comparison with dynamical model predictions indicates that zippering velocity is primarily limited by friction localized at the zipper vertex, and that zippering is driven by gradual rather than abrupt force changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 provide quantitative tracking of 17 individual zippers and systematic comparison with model predictions. The identification of vertex-localized friction as the dominant mechanism is supported by trajectory analysis (C87-C90). The inference about gradual force changes (C91-C92) is well-reasoned based on the observed constant velocity profiles. The friction constant estimate (~10^-3 Ns/m) is quantitatively derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Triangular loops in the network gradually collapse with vertices converging while maintaining approximately constant angles, consistent with decreased axon tension. The timescale separation (10-20 min for individual zippering vs. hours for network coarsening) indicates the network is locally near quasi-equilibrium corresponding to instantaneous tension values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 provide observations of loop dynamics and timescale analysis. The interpretation that loop collapse results from tension decrease is supported by FBS experiments showing loop expansion upon tension increase (C99). The timescale separation argument is logically sound and supports the quasi-equilibrium assumption used in subsequent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C123"
+    ],
+    "result": "The framework successfully explains network properties observed in the in vivo study of Roberts and Taylor (1982), showing good agreement with crossing probabilities as a function of incidence angle. This indicates the framework is not limited to dynamics in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118, C123 demonstrate quantitative agreement between the theoretical framework and independent in vivo data. The crossing probability prediction based on equilibrium angle distribution matches Roberts and Taylor's observations (C117), providing strong validation. This extends the relevance of the findings beyond the ex vivo culture system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C138",
+      "C139"
+    ],
+    "result": "This study provides strong evidence for a novel mechanism of fasciculation regulation at the level of axon shafts through zippering, independent of growth cone activity. This mechanism resulted in substantial network reorganization over ~10 hours in culture. The developed dynamical biophysical model enables inclusion of axon zippering in mathematical models of axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121, C138-C139 summarize the major conceptual advance. The evidence for shaft-level regulation is strong and well-documented throughout the manuscript. The timescale and extent of reorganization are quantified. The model development (Materials and methods) provides a framework for future computational studies, though actual implementation in guidance models is future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The slow network coarsening over ~10 hours may result from gradual decrease in average axon tension as the culture matures. This is supported by the observed sequence of culture stages (elongation, arrest, retraction) and by growth cones losing substrate grip. The arrest of growth may result from tension dropping below the threshold for elongation (~1 nN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C155 propose a mechanistic explanation for slow coarsening based on tension changes over time. The supporting evidence includes culture stage observations (C152) and growth cone behavior (C155), and is consistent with previous literature on tension thresholds (C153). However, this remains speculative (C151) as direct tension measurements over the culture maturation period were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C119",
+      "C122",
+      "C124",
+      "C141"
+    ],
+    "result": "While axon fasciculation plays a key role in neural development and is generally thought to be controlled at the growth cone level, very little was known about shaft-shaft interaction dynamics and biophysical mechanisms. Previous modeling studies focused on growth cone dynamics and did not consider axon shaft dynamics. Axon zippering has been rarely reported in previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C11, C15-C17, C119, C122, C124, C141 establish the knowledge gap and context. These are well-supported by citations to previous work and accurately characterize the state of the field. The statements about limited prior knowledge of shaft dynamics and zippering mechanisms are substantiated by the literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "OSN axons grow in cultures as unbranched axons through three main stages: (1) growth cone advance and network initiation (24-48 hr), (2) maintenance with little growth (48-72 hr), and (3) growth cone retraction and network collapse (3-5 d).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe the experimental system characteristics. These observations are straightforward and well-documented in the time-lapse recordings. The three-stage characterization provides important context for understanding when the analyzed dynamics occur (intermediate stage).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C176"
+    ],
+    "result": "In one BFP experiment, axon tension increased from 432\u00b1157 pN to 1665\u00b1219 pN, likely due to strong axon stretching (~6 \u03bcm) during the experiment. This demonstrates that stretching can cause substantial tension increases (~1.2 nN for 6 \u03bcm stretch).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C176 report a single observation of tension increase correlated with stretching. The measurement is well-documented with error estimates. This provides direct experimental support for the estimated tension increases in FBS experiments. However, this is a single case and was excluded from the main tension distribution analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "While fasciculation was previously interpreted as arising from differential adhesion (stronger axon-axon than axon-substrate adhesion), the observed fascicle structure with axons on top of each other confirms this. However, differential adhesion is not necessary in principle for shaft zippering to occur, as axons can gain mutual adhesion energy while remaining substrate-adhered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 discuss the relationship between differential adhesion and zippering. The SEM evidence (C143) supports stronger axon-axon adhesion. The theoretical argument that differential adhesion is not necessary (C144-C145) is logically sound. The model assumption of preserved substrate adhesion (C146-C147) is clearly stated as a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on neural network development, axon pathfinding, and the olfactory system. OSN axons undergo massive fasciculation to form olfactory nerve branches, followed by defasciculation in the olfactory bulb. Technical challenges prevent in vivo imaging and manipulation of mouse OSN axon dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C12-C14, C18-C21 provide background context supported by appropriate citations. These establish the biological significance of the study and justify the choice of experimental system. The technical limitations (C20-C21) appropriately motivate the ex vivo approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Previous literature established typical axon tension as ~1 nN. Technical limitations (small axon diameter ~200 nm) made calibrated needles/MEMS difficult and optical tweezers insufficient for required forces. BFP technique using red blood cell as force transducer was therefore employed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 justify the methodological choice of BFP technique. The technical limitations are clearly stated and reasonable. The BFP technique description is supported by appropriate citations (C69). This provides important context for understanding why this particular measurement approach was used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C169"
+    ],
+    "result": "Previous modeling studies focused on growth cone dynamics but not shaft dynamics. Blebbistatin effects on axon tension are complex and substrate-dependent based on previous literature. FBS was tested because specific agents to stimulate OSN axon growth/motility are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C161-C166, C169 provide literature context for methodological choices. The citations appropriately support the statements about previous work. The rationale for testing FBS (C169) is reasonable given the lack of known specific agents for this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The axon network dynamics is topologically reminiscent of two-dimensional foam coarsening, but the underlying structures and forces are substantially different.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 draw an analogy to foam physics while noting important differences. This is a useful conceptual framework discussed in detail in the Discussion section. The analogy is appropriately qualified and helps readers understand the network topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45",
+      "C171",
+      "C173",
+      "C180"
+    ],
+    "result": "FBS-induced explant contraction likely results from cell rounding, consistent with previous observations. The tension increase can be estimated from axon stretch and expected stiffness (~100 pN/\u03bcm), giving >1 nN increase for ~15 \u03bcm stretch. This is comparable to active tension changes demonstrated in previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C171, C173, C180 provide mechanistic interpretation and quantitative estimation of tension changes. The cell rounding explanation is supported by citation (C47). The stiffness estimate is based on previous measurements in similar systems. The comparison with literature values (C180) appropriately contextualizes the magnitude of the effect.",
+    "result_type": "MINOR"
+  }
+]

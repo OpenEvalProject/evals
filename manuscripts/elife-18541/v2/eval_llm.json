@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C17",
+      "C27",
+      "C28",
+      "C29",
+      "C41"
+    ],
+    "result": "The authors developed TPS (Time Point Selection), a novel non-iterative computational method that uses splines and greedy search to select optimal time points from densely sampled gene expression data. TPS can accommodate multiple genes simultaneously and allows flexible specification of the number of points to select.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C16, C17, C27-C29, and C41 collectively describe the TPS methodology and its novelty. The method is clearly described with implementation details, and the claim of being the first non-iterative method (C27) is supported by comparison to prior iterative approaches (C18-C20). The algorithmic components are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The authors collected 240 lung tissue samples from mice at multiple developmental time points using Laser Capture Microscopy and profiled 126 genes known or suspected to be involved in lung development using NanoString technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 describe the experimental design and data collection. These are straightforward methodological statements that are well-documented in the Materials and Methods section with specific numbers and technologies used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C30",
+      "C31"
+    ],
+    "result": "TPS successfully reconstructs mRNA expression profiles from a subset of selected time points, significantly outperforming both random and uniform sampling strategies across all tested subset sizes. Performance improvements are enhanced by proper initialization (sorting by absolute values) and advanced search strategies (simulated annealing, weighting, multiple point selection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C10-C12, C30-C31 are supported by extensive data in Figure 2 and Figure 3, showing quantitative comparisons with baselines. The reconstruction error approaches the noise floor (0.108) as more points are added (C12), and statistical significance is demonstrated. The visual reconstructions in Figure 3 confirm accurate profile fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C24",
+      "C35",
+      "C36",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Time points selected by TPS using mRNA data successfully generalize to miRNA profiling, achieving significantly lower reconstruction error than uniform or random sampling (p<0.01). While using miRNA data directly yields slightly better performance (error 0.4042 vs 0.4312 for 13 points), the difference is small relative to data noise, demonstrating that mRNA can serve as a proxy for selecting time points for other genomic data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C13-C14, C24, C35-C36, C51-C53 are supported by Figure 4 data showing miRNA reconstruction performance. Statistical significance (p<0.01) is reported for C13. The specific error values in C14 provide quantitative support. The claim that differences are small relative to noise (C36) is a reasonable inference given the reported values and noise levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C25",
+      "C26"
+    ],
+    "result": "TPS-selected time points based on mRNA data are appropriate for DNA methylation analysis. The 4 points selected using mRNA data (0.5, 5, 15, 26 days) were identical to those selected using methylation data itself, and strong correlations were observed between methylation and expression at the selected time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C25-C26 are supported by the DNA methylation analysis described in the text and Figure 5. The exact match of selected points (C15) provides strong evidence, and the observed correlations (C26, shown in Figure 5) further validate the approach. However, the methylation dataset is limited (13 genes, 8 time points), which constrains generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "TPS-selected time points based on mRNA data also perform well for protein profiling, with reconstruction errors lower than uniform or random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by protein profiling data mentioned in the text and referenced in the Appendix Results. However, the protein data is not shown in the main figures, making it difficult to fully evaluate the strength of this claim. The result is consistent with the miRNA and methylation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TPS remains effective even when 75% of genes are replaced with random profiles, still outperforming arbitrary time point selection. This robustness is relevant because at least 25% of genes are typically differentially expressed in time series experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by Figure 2\u2014figure supplement 2 and citations (C33). The robustness test (C32) demonstrates that TPS does not require perfect prior knowledge of relevant genes. The claim about typical differential expression rates (C33) is supported by citations, making the inference in C34 reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparison of TPS to prior lung development studies reveals that arbitrary time point selection used in previous work leads to significantly higher reconstruction errors and can miss important expression changes in key genes. This demonstrates that principled time point selection has substantial impact on the ability to identify key biological events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by Figure 6 and Appendix 2\u2014Table 4, showing visual and quantitative comparisons. Claims C59-C63 provide context about inconsistencies in prior studies (Table 1) and their potential consequences. The inference that accurate selection impacts biological discovery (C40) is reasonable given the demonstrated differences in reconstruction quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior methods for time point selection (Singh et al., Rosa et al.) are iterative, requiring multiple rounds of profiling, which lengthens experiments and introduces biases. These methods also have limitations including stopping criteria that don't consider full profiles and requirements for related prior experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C46-C48 accurately describe prior work based on the cited papers. The critiques in C20, C47-C48 are reasonable inferences about the limitations of iterative approaches, though they represent the authors' interpretation rather than demonstrated facts. The comparison to Singh et al. in Figure 1\u2014figure supplement 1 supports the claimed advantages of TPS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C67",
+      "C68"
+    ],
+    "result": "TPS provides a principled, cost-effective solution for designing multi-modal time series experiments, enabling selection of time points for RNA expression, miRNA, DNA methylation, and protein profiling from a single inexpensive gene-centric assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C67-C68 represent synthesis and interpretation of the collective results. These are supported by the demonstrated performance across multiple data types (mRNA, miRNA, methylation, protein). The claim of cost-effectiveness is reasonable given the use of targeted NanoString profiling of 126 genes versus genome-wide approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors acknowledge that TPS has only been tested on mouse lung development data, and while they believe this provides a challenging and representative test case, additional datasets may reveal new challenges requiring future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 represent appropriate acknowledgment of study limitations. C56 is factually accurate, C58 is the authors' assessment of their test case, and C57 appropriately identifies the need for broader validation. This is a reasonable and scientifically sound limitation statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The manuscript provides extensive background on time series genomic studies, lung development biology, and current practices in time point selection, establishing the motivation and context for developing TPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C21-C22, C42-C45, C49, C64-C66 are background claims supported by appropriate citations and established knowledge. These provide context but do not represent novel findings of the current work. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

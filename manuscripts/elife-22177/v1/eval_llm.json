@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Rats successfully learned two distinct associative memories (auditory CS-US and visual CS-US) that shared a common relational feature (CS-US pairing) but differed in sensory modality. Over approximately 12 conditioning sessions, rats developed conditioned responses (CRs) specific to CS-US paired trials, with temporal specificity (post-CS phase only), and learned to discriminate CS-alone from CS-US trials within each session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide converging behavioral evidence with appropriate statistical tests (three-way ANOVA, Friedman test) showing significant learning effects. The experimental design is clearly described with adequate controls (CS-alone trials), and the behavioral data demonstrate both acquisition of CS-US associations and discrimination of temporal context. The statistical analyses support the specificity of learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neural activity was recorded from the prelimbic mPFC using chronically implanted tetrodes (10-35 neurons per day) throughout the learning period, with minimal electrode movement to sample comparable regions across the one-month recording period. The dataset includes both neurons sampled repeatedly across days and neurons sampled once.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe the recording methodology with appropriate technical detail and citations. The approach is standard for chronic recording studies, though the mixture of repeated and single-sampled neurons introduces complexity in interpretation. The methodology is adequately described for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During learning, mPFC ensemble activity differentiated both physical features (auditory vs. visual CS) and relational features (CS-alone vs. CS-US trials). By the third post-learning week, when mPFC becomes necessary for memory expression, ensemble activity showed stronger differentiation for relational features than physical features, with this shift evident during the CS-US interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 describe a key finding supported by permutation tests showing significant differences in ensemble similarity patterns. The temporal evolution from encoding both features to preferentially encoding relational features is demonstrated with appropriate statistical comparisons. However, the reliance on correlation-based similarity measures and the interpretation of ensemble patterns could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Within single sessions during the third post-learning week, mPFC ensemble activity rapidly evolved into distinct patterns within the first ten trials of each block (CS-alone to CS-US transition), tightly coupled with behavioral CR expression. This rapid within-session differentiation was less pronounced during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe fine-timescale dynamics supported by trial-by-trial correlation analysis. The coupling between neural pattern evolution and behavioral expression (C30) is stated but the quantitative relationship is not fully established. The comparison between learning and post-learning periods is qualitative ('appeared to be smaller').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The mPFC ensemble initially encoded both physical and relational features comparably, but after extensive experience became less sensitive to physical features and more sensitive to relational features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide an interpretation of the ensemble data that is consistent with the reported findings. However, these are interpretive claims that synthesize multiple observations rather than direct experimental results. The interpretation is reasonable given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SVM classification analysis across five learning stages revealed that ensemble selectivity for relational features significantly improved (primarily during post-learning weeks 1-2), while selectivity for physical features significantly decreased (primarily during post-learning week 3). These changes occurred with different time courses, suggesting independent processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 describe population decoding results with appropriate statistical tests (one-way ANOVA, Tukey HSD). The confusion matrix analysis (C38-C39) provides insight into error patterns. The temporal dissociation between increased relational and decreased physical selectivity is well-supported. However, the SVM analysis involves random sampling of neurons across rats, which may not fully capture ensemble dynamics within individual animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Among 2101 recorded neurons, 65.1% showed significant firing rate changes during CS or CS-US intervals, with this proportion stable across learning stages. Of responsive neurons, 10.5% were selective for relational features, 13.7% for physical features, and 17.6% for both (conjunctive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide single-neuron characterization with appropriate statistical criteria (permutation tests, alpha=0.05). The proportions of different neuron types are clearly reported. However, the stability of the overall responsive proportion (C47) contrasts with the reported changes in selectivity, suggesting changes occur within the responsive population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Single-neuron analysis revealed that increased ensemble selectivity for relational features was mediated by increased magnitude of differential firing (significant increase across stages), while decreased selectivity for physical features involved decreased consistency of differential firing (measured by mutual information). The proportion of highly selective neurons did not change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe complementary single-neuron analyses using differentiation index (magnitude) and mutual information (consistency). The statistical tests (Kruskal-Wallis, Wilcoxon rank sum) are appropriate for the data. The dissociation between magnitude and consistency changes provides mechanistic insight. However, the interpretation (C60-C61) makes causal claims about mechanisms that are correlational observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In a generalization experiment, rats trained for ~30 sessions immediately expressed CRs to CS-US pairings in a novel chamber. mPFC neurons showed similar firing patterns for CS-US pairings across chambers but maintained differentiation between CS-alone and CS-US trials within each chamber. Population decoding showed high selectivity for relational features but weak selectivity for environmental context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 describe a well-designed generalization experiment with three rats. The behavioral and neural generalization is clearly demonstrated. The interpretation (C68-C69) that mPFC 'actively assimilates' codes is reasonable but somewhat speculative. The comparison to hippocampal remapping (C68) is appropriate but the underlying mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The observed gradual refinement of mPFC neuron selectivity represents a neuronal analog of knowledge development through systems consolidation. Over one month, mPFC ensemble activity became more sensitive to relational features and less sensitive to physical features, with these changes occurring after (not during) learning and with different time courses, supporting a role in extracting commonalities from experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 synthesize the main findings and place them in theoretical context with appropriate citations. The interpretation is well-supported by the data, though the causal link to 'knowledge development' (C71, C79) is inferential. The timing of changes (after learning, C74) is important for distinguishing consolidation from acquisition processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The observed selectivity for relational over physical features is consistent with prior reports of mPFC selectivity for rules/categories, but is not due to innate inability to encode physical features. During learning, mPFC encoded both feature types comparably, and physical features remained differentiated in CS-alone trials, arguing against learned equivalence and supporting development of context-dependent representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 relate findings to prior literature and rule out alternative explanations. The argument against learned equivalence (C84) is supported by the persistent differentiation in CS-alone trials (C83). The interpretation favoring context-dependent representations (C85) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Neural selectivity for relational features strengthens with time regardless of continued training (citing prior work), and mPFC immediately applies generalized codes to novel situations without reverting to detailed encoding. This relates to prior work showing time-dependent shifts in memory dependence from hippocampus to mPFC and the development of mPFC selectivity for CS-US associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 integrate current findings with prior literature through appropriate citations. The claims about time-dependence (C86) and generalization (C87) are supported by the current data and cited work. However, these claims rely heavily on prior studies and the integration could be more explicit about which aspects are novel versus confirmatory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study is motivated by theories that knowledge involves statistical integration across experiences, that memories lose contextual richness over time, and that systems consolidation involves gradual network reorganization. The mPFC is particularly involved in long-term memory, schema-dependent learning, and using existing knowledge for encoding, inference, and decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 provide theoretical background with appropriate citations. These are literature review claims that accurately represent prior work and establish the motivation for the current study. The citations are appropriate and the framing is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The abstract summarizes that mPFC neuron firing became less selective for perceptual features and more selective for relational features over weeks, with different time courses, and that selectivity for relational features immediately generalized to novel contexts. These patterns offer insight into how mPFC develops knowledge structures applicable to new experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 accurately summarize the main findings reported in the manuscript. The abstract claims are supported by the detailed results presented in the body of the paper. The interpretation about knowledge structures (C101) is appropriate for an abstract-level summary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Experiments were performed on four male Long-Evans rats (16-25 weeks old at surgery), housed individually on reversed light/dark cycle, with all methods approved by the University of Toronto Animal Care and Use Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe basic methodological details that are clearly stated. The sample size of four rats is small but appropriate for this type of chronic recording study. Ethical approval is documented.",
+    "result_type": "MINOR"
+  }
+]

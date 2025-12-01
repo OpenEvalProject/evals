@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MAPK signaling is required for injury-dependent NAD+ and ATP depletion but not for NAD+ and ATP depletion induced by activated SARM1. MKK4/7 knockdown maintains NAD+ at 45% of baseline at 6 hours post-axotomy (vs. undetectable in controls) and maintains ATP levels. However, MKK4/7 knockdown does not affect NAD+ or ATP depletion rates after SARM1-TIR dimerization, indicating MAPK signaling is not an intermediate between activated SARM1 and metabolite depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C50 are well-supported by experimental data in Figure 1 showing differential effects of MKK4/7 knockdown on injury-induced vs. SARM1-TIR-induced NAD+/ATP depletion. The data include appropriate controls, statistical significance (p\u22640.001 for NAD+, p\u22640.05 for ATP), and multiple timepoints. The conclusion that MAPK signaling is not downstream of SARM1 is logically sound based on the epistasis experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MKK4/7 depletion prevents axon degeneration for at least 24 hours after axotomy but fails to block axon degeneration induced by SARM1-TIR dimerization. JNK inhibition similarly fails to block SARM1-TIR-induced degeneration. However, activated SARM1 can induce MKK4 phosphorylation, indicating SARM1 can activate the MAPK pathway even though this activation is not functionally required for SARM1-mediated degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by experimental data in Figure 2 showing parallel experiments in the same dish comparing axotomy vs. SARM1-TIR dimerization. The authors acknowledge they cannot replicate prior findings from Yang et al. regarding MAPK requirement downstream of SARM1, but their data are internally consistent and include appropriate controls. The observation of MKK4 activation (C54) is confirmed by Western blot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MKK4/7 knockdown increases levels of endogenous NMNAT2 (3.2\u00b10.5 fold in neurons, 3.5\u00b10.8 fold in axons) and SCG10 (5.4\u00b11 fold in neurons, 4.3\u00b11.3 fold in axons). JNK inhibition similarly increases both proteins within 2 hours. NMNAT2-myc expressed from an exogenous promoter is also elevated upon MKK4/7 knockdown, indicating post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are well-supported by Western blot data (Figure 3A-D) and immunofluorescence (Figure 3D) with appropriate quantification and statistical analysis (p\u22640.001). Multiple independent approaches (shRNA knockdown, JNK inhibitor, exogenous promoter) converge on the same conclusion. The post-transcriptional regulation inference (C61) is logically sound given that exogenous promoter-driven NMNAT2 is still regulated by MKK4/7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In Drosophila larvae, expression of dominant negative JNK or JNK RNAi delays axon degeneration after nerve pinch injury and increases HA-dNmnat levels in larval nerves (2.8\u00b10.2 fold for JNK-DN, 2.2\u00b10.2 fold for JNK RNAi). This demonstrates that MAPK regulation of NMNAT is evolutionarily conserved and occurs in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by Drosophila experiments shown in Figure 4 and Figure 4\u2014figure supplement 1. The in vivo data strengthen the mammalian cell culture findings. Statistical significance is reported (p\u22640.001, p\u22640.0001) and the evolutionary conservation argument is well-justified. Sample sizes are adequate (N=8-10 animals for immunostaining, N=7-12 nerves for degeneration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NMNAT2 and SCG10 levels are comparable in wild-type and SARM1 knockout neurons at steady state. MKK4/7 knockdown elevates NMNAT2 (3.9\u00b10.7 fold) and SCG10 (6.6\u00b11.4 fold) in SARM1 knockout neurons, demonstrating that MAPK regulation of axon survival factors is independent of SARM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by Western blot data in Figure 3E-F. This is a critical epistasis experiment that places MAPK signaling upstream of SARM1. The data are clear, with appropriate controls and quantification (n=3). The genetic logic is sound: if MAPK functioned downstream of SARM1, then SARM1 knockout should phenocopy MKK4/7 knockdown, which it does not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "By 4 hours after axotomy, NMNAT2 and SCG10 are depleted/undetectable in control axons but are maintained in MKK4/7 knockdown axons at levels comparable to uninjured wild-type axons (1.2\u00b10.2 fold for NMNAT2-myc, 1.1\u00b10.2 fold for SCG10, p>0.05). The 4-hour timepoint is significant as it represents when axons irreversibly commit to degenerate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by immunofluorescence data in Figure 5A with appropriate quantification. The temporal analysis is well-designed, focusing on the critical 4-hour commitment point (C74, supported by citation to Gerdts et al., 2016). The conclusion (C75) that MKK4/7 knockdown maintains survival factors at the right time and place is logically sound and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "NMNAT2 and SCG10 are rapidly turned over with half-lives of ~1.1 and ~1.5 hours respectively. MKK4/7 knockdown slows turnover to ~3.4 and ~2.7 hours. Acute JNK inhibition (30 min pretreatment) is sufficient to delay degradation. Overexpression (>5-fold) does not slow turnover, indicating the effect is not due to saturation of degradation machinery. No increase in transcript levels occurs with MKK4/7 knockdown. MAPK-independent degradation mechanisms likely exist as proteins are still lost, albeit more slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C88 are well-supported by cycloheximide chase experiments (Figure 5C-E, Figure 5\u2014figure supplements 1-2) and RT-PCR (Figure 5B). Multiple controls address alternative explanations: acute inhibition rules out indirect effects (C83), overexpression experiments rule out saturation (C84-C85), and RT-PCR rules out transcriptional effects (C86). The half-life measurements are quantified with appropriate statistics (n=4, p\u22640.01-0.001). The inference of MAPK-independent mechanisms (C87-C88) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CRISPR/Cas9 knockout of NMNAT2 fully blocks the protein increase induced by MKK4/7 knockdown and abrogates the axonal protection. Control axons degenerate at 6 hours, MKK4/7 knockdown axons remain intact at 24 hours with scrambled gRNA, but simultaneous MKK4/7 and NMNAT2 knockdown causes degeneration at 6 hours. This demonstrates that NMNAT2 is required for and the protective effect of MKK4/7 knockdown is conferred by elevated NMNAT2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are strongly supported by genetic epistasis experiments using CRISPR/Cas9 in Figure 6A-B and Figure 6\u2014figure supplement 1. The experimental design is rigorous with appropriate controls (scrambled gRNA, SARM1 knockout as positive control). Western blots confirm NMNAT2 knockout (C89). The logic is sound: if elevated NMNAT2 mediates protection, then removing NMNAT2 should eliminate protection, which is exactly what is observed. Statistical significance is reported (p\u22640.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "NMNAT2 knockdown does not block the axonal protection afforded by SARM1 deletion, consistent with NMNAT2 functioning upstream of SARM1 to inhibit axonal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by data in Figure 6A-B showing that SARM1 knockout protects axons even when NMNAT2 is depleted. This is consistent with the established pathway order and with prior work (Gilley et al., 2015). The genetic epistasis logic is sound and the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Overexpression of SCG10-AA delays degeneration by ~3 hours, NMNAT2-myc protects for 36 hours, but co-expression of both provides robust protection for at least 72 hours\u2014comparable to cytoplasmic NMNAT1 overexpression. This indicates NMNAT2 and SCG10 elevation confers robust protection and suggests they function synergistically or in parallel pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by axon degeneration timecourse data in Figure 6C-D. The synergistic effect is striking and well-documented with appropriate statistics (p\u22640.01). The comparison to cytNMNAT1 (the gold standard) is valuable. However, the mechanistic interpretation (C103) that they function synergistically or in parallel is speculative\u2014the data show synergy but don't distinguish between direct interaction vs. parallel pathways. This is appropriately acknowledged as speculation in the evidence type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose that MAPK signaling is required for injury-induced activation of SARM1, but once SARM1 is active, MAPK signaling is dispensable for SARM1-dependent NAD+ depletion and axon loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 represent the key mechanistic model integrating multiple experimental findings. This model is well-supported by the differential requirement for MAPK signaling in injury vs. SARM1-TIR experiments (Figure 1-2), the independence from SARM1 (Figure 3E-F), and the requirement for NMNAT2 (Figure 6). The model is logically consistent with all presented data and represents a significant conceptual advance in understanding the axon degeneration pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MAPK signaling promotes axonal NMNAT2 protein turnover in both mouse DRG neurons in culture and Drosophila motoneurons in vivo, and also promotes turnover of SCG10. The data support a model that MAPK signaling promotes axonal degeneration by limiting the levels of axon survival factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 synthesize the major findings across mammalian and Drosophila systems. The model is well-supported by convergent evidence from protein level measurements (Figure 3), turnover experiments (Figure 5), in vivo data (Figure 4), and genetic epistasis (Figure 6). This represents the central mechanistic conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SARM1 knockout neurons do not have elevated NMNAT2/SCG10 at steady state, NMNAT2 is still degraded after injury in SARM1 knockout neurons (Gilley et al., 2015), and MKK4/7 regulate survival factors in the absence of SARM1. This provides genetic proof that MAPK signaling does not function downstream of SARM1 for regulation of NMNAT2 and SCG10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by data in Figure 3E-F and corroborated by cited work (Gilley et al., 2015). The genetic logic is rigorous and the conclusion (C111) is appropriately strong given the epistasis data. This is a critical result that definitively places MAPK upstream of SARM1 in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SCG10 is phosphorylated by JNK kinases, and mutating JNK phosphorylation sites slows SCG10 turnover. However, JNK inhibition further slows turnover of the mutant, suggesting additional regulatory mechanisms beyond direct phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by citations to prior work (Shin et al., 2012; Tararuk et al., 2006). These claims establish that at least part of the MAPK regulation of SCG10 is direct, while acknowledging additional complexity. The evidence is from prior publications rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "NMNAT2 turnover is regulated by palmitoylation, localization, and the ubiquitin ligase Highwire/PHR1. MAPK signaling could impact NMNAT2 turnover by modulating these processes, which will be investigated in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by multiple citations establishing known regulators of NMNAT2. Claim C116 is appropriately speculative about how MAPK might interface with these mechanisms. This represents a reasonable hypothesis for future work but is not tested in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose a model where MAPK signaling limits NMNAT2 levels, NMNAT2 inhibits SARM1 activation, injury blocks NMNAT2 transport causing local depletion, and when NMNAT2 falls below a threshold SARM1 activates leading to NAD+/ATP depletion and axon destruction. MAPK activity acts as a rheostat controlling NMNAT2 levels and degeneration propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 represent the integrated model shown in Figure 7. This model is well-supported by the experimental data presented throughout the manuscript and synthesizes the findings into a coherent mechanistic framework. The rheostat concept (C122) is a reasonable interpretation though somewhat speculative regarding quantitative tuning in chronic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Additional regulatory factors impinge on the core pathway: AKT inhibits MAPK signaling and is mildly axoprotective, Highwire/PHR1 targets NMNAT2 for degradation and its loss is axoprotective, and SCG10 enhances axonal transport. The authors speculate SCG10 could facilitate NMNAT2 transport to sites of action in injured axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 are supported by appropriate citations to prior work establishing these regulatory relationships. Claim C127 is appropriately speculative, proposing a mechanism for the observed synergy between SCG10 and NMNAT2 (Figure 6C-D) based on known SCG10 function in transport. These claims contextualize the core findings within the broader regulatory network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Lentiviral transduction of validated shRNAs targeting MKK4 and MKK7 effectively downregulates protein levels and confers robust axon protection after axotomy when used in tandem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by data in Figure 3\u2014figure supplement 1 showing effective knockdown and axon protection. This establishes the validity of the experimental system used throughout the study. Multiple shRNAs and CRISPR approaches were validated (Figure 3\u2014figure supplement 1B), strengthening confidence in the specificity of effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33"
+    ],
+    "result": "Background claims establishing the roles of NMNAT2, SCG10, DLK/JNK, and SARM1 in axon degeneration based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C33 represent established knowledge from prior publications, appropriately cited throughout. These provide essential context for the current work and are well-supported by the cited literature. The authors accurately represent prior findings.",
+    "result_type": "MINOR"
+  }
+]

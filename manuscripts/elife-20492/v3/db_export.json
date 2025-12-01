@@ -1,0 +1,1723 @@
+{
+  "submission": {
+    "id": "32e13cde-50ab-4a38-b93a-25fa151ae54a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:30:09.028099Z",
+    "updated_at": "2025-11-30T21:30:09.028099Z"
+  },
+  "content": [
+    {
+      "id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "submission_id": "32e13cde-50ab-4a38-b93a-25fa151ae54a",
+      "content_type": "manuscript",
+      "content_text": "# A transmission-virulence evolutionary trade-off explains attenuation of HIV-1 in Uganda\n\n## Authors\n\n- Fran\u00e7ois Blanquart<sup>1</sup> ([ORCID: 0000-0003-0591-2466](https://orcid.org/0000-0003-0591-2466)) \u2020\n- Mary Kate Grabowski<sup>4</sup>\n- Joshua Herbeck<sup>6</sup> ([ORCID: 0000-0003-4577-7406](https://orcid.org/0000-0003-4577-7406))\n- Fred Nalugoda<sup>8</sup>\n- David Serwadda<sup>8</sup>\n- Michael A Eller<sup>10</sup>\n- Merlin L Robb<sup>10</sup>\n- Ronald Gray<sup>4</sup>\n- Godfrey Kigozi<sup>8</sup>\n- Oliver Laeyendecker<sup>12</sup>\n- Katrina A Lythgoe<sup>1</sup>\n- Gertrude Nakigozi<sup>8</sup>\n- Thomas C Quinn<sup>12</sup>\n- Steven J Reynolds<sup>12</sup>\n- Maria J Wawer<sup>4</sup>\n- Christophe Fraser<sup>1</sup>\n\n### Affiliations\n\n1. MRC Centre for Outbreak Analysis and Modelling Imperial College London London United Kingdom\n2. Department of Infectious Disease Epidemiology Imperial College London London United Kingdom\n3. School of Public Health Imperial College London London United Kingdom\n4. Department of Epidemiology Johns Hopkins University Baltimore United States\n5. Bloomberg School of Public Health Johns Hopkins University Baltimore United States\n6. International Clinical Research Center University of Washington Seattle United States\n7. Department of Global Health University of Washington Seattle United States\n8. Rakai Health Sciences Program Entebbe Uganda\n9. School of Public Health Makerere University Kampala Uganda\n10. U.S. Military HIV Research Program Walter Reed Army Institute of Research Silver Spring United States\n11. Henry M. Jackson Foundation for the Advancement of Military Medicine Bethesda United States\n12. Laboratory of Immunoregulation National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States\n13. Division of Intramural Research National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States\n14. Department of Zoology University of Oxford Oxford United Kingdom\n15. Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvolutionary theory hypothesizes that intermediate virulence maximizes pathogen fitness as a result of a trade-off between virulence and transmission, but empirical evidence remains scarce. We bridge this gap using data from a large and long-standing HIV-1 prospective cohort, in Uganda. We use an epidemiological-evolutionary model parameterised with this data to derive evolutionary predictions based on analysis and detailed individual-based simulations. We robustly predict stabilising selection towards a low level of virulence, and rapid attenuation of the virus. Accordingly, set-point viral load, the most common measure of virulence, has declined in the last 20 years. Our model also predicts that subtype A is slowly outcompeting subtype D, with both subtypes becoming less virulent, as observed in the data. Reduction of set-point viral loads should have resulted in a 20% reduction in incidence, and a three years extension of untreated asymptomatic infection, increasing opportunities for timely treatment of infected individuals.\n\n## Introduction\n\nTo spread, a pathogen must multiply within the host to ensure transmission, while simultaneously maintaining opportunities for transmission by avoiding host morbidity or death (Anderson and May, 1982; Alizon et al., 2009). This creates a trade-off between transmission and virulence. This hypothesis permeates theoretical work on the evolution of virulence, but empirical evidence remains scarce (Dwyer et al., 1990; Mackinnon and Read, 1999; Fraser et al., 2007; de Roode and Yates, 2008; Alizon et al., 2009; Cressler et al., 2015). In HIV-1 infection, set-point viral load (SPVL), the stable viral load in the asymptomatic phase of infection, is a viral trait which is both variable and heritable (Hollingsworth et al., 2010; Fraser et al., 2014; Hodcroft et al., 2014), and has an important impact on the transmission cycle of the pathogen. In untreated infection, higher SPVL translates into higher per-contact transmission rates but also faster disease progression to AIDS and death. From the perspective of the transmission cycle, this creates a trade-off, under which an intermediate SPVL value maximises opportunities for transmission (Fraser et al., 2007). Indeed the transmission potential of a parasite is the product of the transmission rate and the time during which the host is alive and can transmit. The latter is approximately the time to AIDS in HIV as host death occurs shortly after the onset of AIDS and sexual activity may be reduced in the AIDS phase because of AIDS-associated symptoms\u00a0(Hollingsworth et al., 2008). The virulence-transmission trade-off in HIV is important for understanding pathogenesis and is a possible explanation for the significant changes in HIV virulence reported over the last decades in North America and Europe. There, SPVL increased at an estimated rate of 0.013 (Herbeck et al., 2012) and 0.020 log10 copies/mL/year (Pantazis et al., 2014) over the last 28 years. Since many persons at risk of infection do not routinely obtain HIV testing (Paz-Bailey et al., 2013), such changes may lead to more transmission and more newly diagnosed patients presenting with advanced infection, despite the widespread availability of antiretroviral therapy (ART).\n\nThe virulence-transmission trade-off is a promising hypothesis to explain changes in virulence of HIV, but this hypothesis and its predictions have so far been approached in a piecemeal manner, by combining data on infectiousness, AIDS-free survival and the dynamics of SPVL from very different cohorts (Fraser et al., 2007; Herbeck et al., 2012; Pantazis et al., 2014). Here we integrated extensive data from a single cohort in Uganda into an epidemiological-evolutionary model describing the transmission cycle of HIV. We then compared predictions on the evolution of SPVL evolution to the observed trends in SPVL in this cohort.\n\n## Results\n\nWe focused on one of the longest established generalised HIV epidemics, in rural Uganda, and used data collected as part of the Rakai Community Cohort Study (RCCS), a large and long-standing population-based open cohort conducted by the Rakai Health Sciences Program (RHSP) in Rakai District. We combined data on transmission rates and survival to estimate the evolutionary optimal distribution of SPVL for the RCCS cohort, and then compared it to the dynamics of SPVL over time from 1995 to 2012. ART probably had little effect on the evolutionary dynamics of SPVL in Uganda because it only became available in 2004 and is initiated at relatively late stage infection (CD4 < 250 cells/mm3 from 2004 to January 2011, and at < 350 cells/mm3 from February, 2011 to the time of writing, August 2016).\n\nAs in other HIV epidemics, we found that SPVL is highly variable in this population, with values ranging from 102 copies/mL to 107 copies/mL. SPVL was calculated for 647 individuals who had a positive HIV serologic test within two study visits of their last negative test ('HIV incident cases', Table 1; median time between last negative visit and first positive visit is 1.25 years), and for 817 participants in a serodiscordant partnership ('serodiscordant couples', Table 2).\n\n**Table 1.**\n Epidemiological and demographic characteristics of the HIV-1 incident cases in the Rakai cohort, used for the analysis of time trends in SPVL and for the analysis of time to AIDS. *Multiple subtypes (possibly dual infection) ** Recombinants, primarily A/D.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gender</th>\n      <th>N</th>\n      <th>Mean SPVL, [0.025; 0.975] quantiles</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>F</td>\n      <td>362</td>\n      <td>4.3 [2.3; 5.85]</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>285</td>\n      <td>4.54 [2.3; 6.03]</td>\n    </tr>\n    <tr>\n      <td>Date of infection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1995\u20131999</td>\n      <td>269</td>\n      <td>4.47 [2.3; 6.01]</td>\n    </tr>\n    <tr>\n      <td>2000\u20132004</td>\n      <td>297</td>\n      <td>4.46 [2.3; 5.83]</td>\n    </tr>\n    <tr>\n      <td>2005\u20132009</td>\n      <td>54</td>\n      <td>3.98 [2.3; 5.77]</td>\n    </tr>\n    <tr>\n      <td>\u22652010</td>\n      <td>27</td>\n      <td>3.97 [2.2; 5.33]</td>\n    </tr>\n    <tr>\n      <td>HIV-1 subtype</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>96</td>\n      <td>4.34 [2.78; 5.61]</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>6</td>\n      <td>3.92 [3.42; 4.71]</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>292</td>\n      <td>4.56 [2.62; 5.92]</td>\n    </tr>\n    <tr>\n      <td>M*</td>\n      <td>14</td>\n      <td>3.99 [2.48; 5.35]</td>\n    </tr>\n    <tr>\n      <td>R**</td>\n      <td>74</td>\n      <td>4.38 [2.33; 5.84]</td>\n    </tr>\n    <tr>\n      <td>Unknown</td>\n      <td>165</td>\n      <td>4.22 [2.3; 6.03]</td>\n    </tr>\n    <tr>\n      <td>Age at infection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15\u201319</td>\n      <td>61</td>\n      <td>4.17 [2.3; 5.51]</td>\n    </tr>\n    <tr>\n      <td>20\u201329</td>\n      <td>327</td>\n      <td>4.43 [2.3; 5.97]</td>\n    </tr>\n    <tr>\n      <td>30\u201339</td>\n      <td>182</td>\n      <td>4.45 [2.3; 5.88]</td>\n    </tr>\n    <tr>\n      <td>40\u201349</td>\n      <td>67</td>\n      <td>4.43 [2.28; 6.09]</td>\n    </tr>\n    <tr>\n      <td>\u226550</td>\n      <td>10</td>\n      <td>4.05 [2.3; 5.94]</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Epidemiological and demographic characteristics of the infected individual in serodiscordant couples in the Rakai cohort, used for the analysis of time trends in SPVL and for the analysis of time to AIDS. ** Including recombinants, primarily A/D.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gender</th>\n      <th>N</th>\n      <th>Mean SPVL, [0.025; 0.975] quantiles</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>F</td>\n      <td>324</td>\n      <td>3.99 [2.3; 5.61]</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>493</td>\n      <td>4.23 [2.3; 5.85]</td>\n    </tr>\n    <tr>\n      <td>Date of infection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Unknown</td>\n      <td>595</td>\n      <td>4.1 [2.3; 5.64]</td>\n    </tr>\n    <tr>\n      <td>1995\u20131999</td>\n      <td>93</td>\n      <td>4.13 [2.3; 5.53]</td>\n    </tr>\n    <tr>\n      <td>2000\u20132004</td>\n      <td>96</td>\n      <td>4.41 [2.3; 5.98]</td>\n    </tr>\n    <tr>\n      <td>2005\u20132009</td>\n      <td>30</td>\n      <td>4.08 [2.3; 5.62]</td>\n    </tr>\n    <tr>\n      <td>\u22652010</td>\n      <td>3</td>\n      <td>3.19 [2.36; 3.77]</td>\n    </tr>\n    <tr>\n      <td>HIV-1 subtype</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>54</td>\n      <td>4.11 [2.42; 5.72]</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>430</td>\n      <td>4.27 [2.4; 5.77]</td>\n    </tr>\n    <tr>\n      <td>Other/Unknown**</td>\n      <td>333</td>\n      <td>3.97 [2.3; 5.67]</td>\n    </tr>\n  </tbody>\n</table>\n\nWe analysed transmission in 817 serodiscordant couples, in which one partner was positive (index partner), while the other was initially negative and at risk of infection during follow-up. This analysis revealed that higher SPVL was associated with significantly increased rate of transmission. Transmission between partners was modelled as a Poisson process, in which the instantaneous transmission rate is constant (Fraser et al., 2007). We allowed the transmission rate to be a function of SPVL, \u03b2(v). We estimated all parameters by maximum likelihood and compared different models based on Akaike Information Criterion (AIC) (Materials\u00a0and\u00a0methods, Figure 1\u2014figure supplement 1). The best model fit was one where transmission rates increases from 0.019/year to 0.14/year in a stepwise fashion as SPVL increases with three plateaus (Figure 1a) (\u0394AIC = \u221275.96 compared to null model with a fixed transmission rate, n = 817). A function with three steps was favoured over others, but we also show a continuous function, the generalised Hill function, that may be considered more biologically realistic (\u0394AIC = - 71.17 compared to the null model, n = 817) (Figure 1a). The two functions fitted the data well, as shown by comparison with non-parametric estimates of the transmission rate in the data stratified by SPVL (Figure 1a), and by a Kaplan-Meier plot comparing data to the model prediction (Figure 1b). We also allowed the parameters of the function \u03b2(v) to vary with the covariates subtype, gender, and male circumcision status. In accordance with previous studies (Kiwanuka et al., 2009), subtype A had a higher transmission rate than subtype D for all SPVL values (Figure 3) (\u0394AIC = \u22123.32 compared to the model without subtype, n = 817). We will examine the evolutionary consequences of subtype differences later on. Gender did not have an effect on transmission (\u0394AIC = 1.66 compared to model without gender, n = 817), and male circumcision reduced transmission both from female to male and from male to female (\u0394AIC = \u22123.74 for female to male, n = 321; \u0394AIC = \u22123.17 for male to female, n = 487, compared to model without circumcision) (Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig1-v3.jpg)\n\n**Figure 1.:** On the left panels, black lines show the maximum likelihood relationships and shaded areas the bootstrap 95% confidence intervals. Both the step function (horizontal lines) and the generalised Hill function (curved line) are shown. The red lines show a non-parametric estimation of the transmission rate (a) and the time to AIDS (c) curves, when the data is stratified by SPVL in 8 bins of equal size. The right panels show Kaplan Meier plots when the data is partitioned in three SPVL groups defined by the maximum likelihood relationships. There was good agreement between the data (step functions) and the maximum likelihood function (smooth functions).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Functional forms include power (red), Hill (blue), generalised Hill (green), step function with three steps (black). The equivalent relationships as inferred in Fraser et al. (2007) are shown for comparison (black, dashed line).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** In each panel, the maximum likelihood step function (black line) with bootstrap confidence intervals (grey) is shown together with the maximum likelihood function when undetectable SPVL values are removed (dashed line).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Lines are the maximum likelihood functions; shaded intervals are the bootstrap confidence intervals.\n\nWe assessed the relationship between SPVL and time to AIDS from 562 incident cases with a SPVL value and information on time to AIDS, and found that higher SPVL was associated with significantly shorter time to AIDS (Figure 1c). The time to AIDS was assumed to follow a gamma distribution, where the expected value was a function of SPVL (Fraser et al., 2007). We optimized the likelihood function and compared different models for the dependence of time to AIDS on SPVL based on AIC. The best model was a step function with three plateaus, with time to AIDS decreasing from 40 years to 5 years from low to high SPVL (Figure 1c; \u0394AIC = 137.22 compared to null model with fixed time to AIDS). Again, non-parametric estimation of the time to AIDS (Figure 1c) and a Kaplan-Meier survival plot (Figure 1d) showed good fit of the model to the data. We also allowed the relationship between SPVL and time to AIDS to vary by subtype and gender. The inferred gamma distribution had shape parameter 1.2, similar to an exponential distribution (which is the special case where shape parameter is 1). We found, in agreement with previous studies ( Kiwanuka et al., 2008), that subtype D tended to confer faster disease progression, but this effect was not statistically significant here (Figure 1, \u0394AIC = 15.41 compared to the model without subtype, n = 562). However, subtype D-infected individuals who progressed rapidly were not included in the analysis because they had no SPVL value (among the 33 individuals who progressed to AIDS within 10 years but had no SPVL value, there were 12 subtype D, 1 recombinant, and 20 unknown subtype). Time to AIDS did not significantly vary by gender (Figure 1, \u0394AIC = 7.85 compared to the model without gender, n = 562).\n\nNext, we predicted how SPVL might change over time under the trade-off between virulence and transmission, incorporating our setting-specific estimates of the virulence-transmission trade-off into an evolutionary and epidemiological model. The model is an analytically tractable Susceptible-Infected compartmental ordinary differential equation (ODE) model, where the viral population is stratified by SPVL, similar to previous models of virulence evolution (Day and Proulx, 2004; Day and Gandon, 2007) (Material and methods). SPVL of an infected individual is the sum of a viral genetic effect g, which is transmitted with mutation from a donor to a recipient, and an environmental effect e, which includes host and other environmental factors and is independently drawn in a normal distribution with mean 0 in each newly infected individual. The evolution of mean SPVL in the population is determined by the evolution of the mean viral genetic effect g. In this model the transmission rate of a virus with SPVL v is the inferred function $\\beta(v)$ (Figure 1a), while death is assumed to occur at a constant rate $\\mu(v)$ given by the inverse of the mean time to AIDS (Figure 1c). In the ODE model, the time to AIDS follows an exponential distribution because the rate of AIDS-death is constant. The individual based model presented later on relaxes this assumption and considers gamma-distributed time to AIDS as inferred from the data.\n\nWe first developed an analytical expression for the evolution of SPVL. Because prevalence of HIV in this cohort is approximately constant (at 14% on average in the period 1995 to 2013, Figure 2\u2014figure supplement 1) and the distribution of SPVL can be closely approximated by a normal distribution, we were able to use an approximation of the Price equation (Price, 1970) inspired by a classical quantitative genetics model (Lande, 1976), to write the change in mean genetic effect of SPVL in prevalent cases over time as (Appendix):\n\n$$\n\\frac{dg\u00af}{dt}=V_{P}\u00a0h^{2}\\frac{\\mu\u00af^{2}}{\\beta\u00af}\\frac{\u2202(\\beta\u00af/\\mu\u00af)}{\u2202g\u00af}\u23dftransmission\u2212virulencetrade\u2212off+\\alpha\\mu\u00af\u23dfwithin\u2212hostevolution\n$$\n\nThe equation has two terms that respectively describe the effects of selection and of inheritance on SPVL evolution. The first term describes selection under a virulence-transmission trade-off, maximising the ratio of the mean transmission rate over the mean severity of infection, \u03b2\u00af/\u03bc\u00af, which is the mean fitness of the viral population. The SPVL that maximises mean fitness is 3.4 log10\u2009mL/copies (95% bootstrap CI [2.6; 4.0], Figure 2a). Adaptation of the viral population will proceed at a rate proportional to phenotypic variance VP (the variance in SPVL) and heritability h2 (the fraction of variance explained by viral genetic factors, assumed to be at equilibrium). The second term describes biased mutation that changes the mean SPVL from one infection to the next, where \u03b1 is the mean effect of mutations from the donor to the recipient, recapitulating the effect of within-host selection on mean SPVL. The effects of the transmission-virulence trade-off were very similar when we used the generalised Hill functional form to fit the relationships between SPVL and transmission and time to AIDS (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-v3.jpg)\n\n**Figure 2.:** (a), mean fitness of the viral population as a function of mean SPVL when transmission and time to AIDS are fitted as step functions (solid line; shaded area shows the 95% C.I.) or generalised Hill functions (dashed line). (b), evolutionary predictions for the temporal dynamics of mean SPVL given by the ODE model (thin solid and dashed lines), and the stochastic IBM (dotted lines), under three scenarios for the impact of within-host evolution (biased mutation) on SPVL in blue (1, \u03b1 = \u22120.47 log10 copies/mL), red (2, \u03b1 = \u22120.093 log10 copies/mL) and green (3, \u03b1 = +0.057 log10 copies/mL). The thick line is the data, showing the linear regression of SPVL on date of seroconversion, with 95% bootstrap confidence intervals shown as a shaded area. (c), distribution of SPVL in the population over time; grey points show the data, and the line is the unadjusted regression of SPVL over time. (d) coefficient of regression of SPVL over time in the adjusted linear regression, with confidence intervals, in various subsets of the data (Material and methods). All data; SPVL strict definition; SPVL measured with Abbott assay and Roche 1.5 assay; SPVL measured at Walter Reed (WR), John Hopkins (JH) and RHSP laboratories; SPVL in males and females; subtype A, subtype D, and other/unknown subtype viruses.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp1-v3.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** This is shown for the full dataset ('All') and several subsets of data. Confidence intervals are determined assuming normality of the coefficients.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Mean SPVL as a function of date of infection in the IBM including ART treatment, for heritability h2=0.36 and no biased mutation. ART treatment started in 2004. Individuals with a CD4 count below 350 cells/mm3 are eligible for treatment, and we varied coverage (the probability to receive treatment when eligible) from 0 to 50%. Treatment started 1 year after eligibility, and complete adherence was assumed. Upon treatment, the viral load is assumed to drop at 50 copies/mL.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The figure shows the 10% to 90% percentiles of the SPVL distribution as a function of time.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Mean SPVL as a function of date of seroconversion in the ODE model, for heritability h2=0.36 and biased mutation \u03b1 = \u22120.093 log10 copies/mL (scenario 2). The model with approximately stable prevalence at 14% (red plain line, same as on Figure 2) is shown together with a simulation of the ODE model where initial prevalence is 20%, and the baseline transmission rate is set such that prevalence decreases to 5% over the 20 years of the simulation.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig2-figsupp6-v3.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Mean SPVL is shown as a function of date of seroconversion (for incident cases) and year (for prevalent cases). The data is shown in black, for incident cases (regression line, same as in Figure 2B) and prevalent cases (points are average SPVL each year with 95% CI, line is the regression line). Simulations of the ODE model and predictions from the Price equation show the mean genetic effect as coloured lines, for heritability h2=0.36 and three scenarios for biased mutation shown in the three panels.\n\nNext we simulated the ODE and assessed the precision of the analytical approximation. We parameterised the ODE model with the data and simulated the evolution of mean SPVL from 1995 to 2015. Parameterisation was as follows: the transmission rate was as in Figure 1a; the mortality rate was the inverse of time to AIDS (Figure 1c); heritability of SPVL in the Rakai cohort was previously estimated at 36% (confidence interval 6\u201366%), using 97 donor-recipient transmission pairs (Hollingsworth et al., 2010) (who are participants of the present cohort). We had little data to parameterise the effect of within-host evolution on SPVL, $\\alpha$. Many different types of mutations may evolve within the host, and little is known on the net effect of these processes on SPVL. Within-host viral fitness is positively related to replicative capacity (RC), measured in the absence of an immune response, and immune escape, which is host-specific. Most studies of within-host HIV evolution have focused on CTL escape mutations, which are conditionally beneficial (i.e. their positive effect on fitness is host-specific). These usually sweep through during infection because the fitness benefit of evading the immune system outweighs the cost of reduced RC that these mutations also impose (Goepfert et al., 2008; Carlson and Brumme, 2008; Matthews et al., 2008). CTL escape mutations may be reverted if the virus harbouring a costly CTL-escape mutation is transmitted to an individual where the mutation does not help evade the new host\u2019s immune system (Carlson et al., 2014; Zanini et al., 2015). Mutations that increase the replicative capacity of the virus in all hosts may also evolve (Kouyos et al., 2011). It is also a possibility that slightly deleterious or beneficial mutations get fixed by genetic drift. We explored three scenarios where available data allow rough estimation of plausible values for the impact of within-host evolution on viral load (the $\\alpha$ parameter) (Material and methods). (i) Most mutations evolving are conditionally beneficial but carry a strong cost to RC ($\\alpha=\u22120.47$ log10 copies/mL). (ii) Most mutations evolving are conditionally beneficial but carry a moderate cost to RC ($\\alpha=\u22120.093$ log10 copies/mL). (iii) Most mutations have unconditionally beneficial effects on RC ($\\alpha=+0.057$ log10 copies/mL).\n\nThe ODE simulations predicted a decline in mean SPVL in incident cases from 1995 to 2015, at a rate of \u22120.042, \u22120.013 and \u22120.0009 log10 copies/mL/year in the three scenarios chosen for within-host evolution, for a heritability of 36%. The Price equation predicted the outcome of the ODE simulations quite precisely (Figure 2b). The Price equation shows that the virulence-transmission trade-off \u2013 the first term in the equation \u2013 contributes initially a decline in mean SPVL of $\u22120.01$ log10 copies/mL/year, slowing down as the population gets closer to the optimum. Note that the Price equation concerns average genetic effect of SPVL in the prevalent cases, but the rate of evolution in the incident cases was similar in these simulations (Figure 2\u2014figure supplement 6). Predictions of the ODE model were robust to the addition of a number of more realistic features of the HIV epidemic, as shown by a more comprehensive individual-based stochastic model (IBM) of HIV evolution (Herbeck et al., 2014, 2016). The IBM includes all features of the ODE model, in particular the fact that SPVL is the addition of a heritable genetic component and a random environmental component. In addition, it includes the phases of acute infection and AIDS, both characterized by viral loads being much higher than the set-point value. Disease progression was modelled as progression through a series of CD4 count categories until AIDS occurred, and the transition rates between these categories were tuned to reproduce the inferred gamma-distributed time to AIDS. Partnership formation and dissolution was also explicitly modelled, as well as some degree of behavioural heterogeneity in partnership duration and coital frequency. The IBM also predicted a decline in mean SPVL in the three scenarios, although at a somewhat faster rate compared to the simplified ODE model, confirming the generality and robustness of our results (Figure 2b).\n\nStrikingly, the data was in qualitative agreement with the evolutionary model: SPVL in the Rakai cohort decreased with date of seroconversion between 1995 and 2012, at a rate of \u22120.022 log10 copies/mL per year after adjustment for other covariates (CI [\u22120.04; \u22120.002], p=0.027, n = 603) (Figure 2). Average SPVL in prevalent cases was also declining at a rate of \u22120.020 log10 copies/mL, although for those it is more difficult to adjust for covariates and test for significance (because the same participants are 'prevalent cases' at multiple time points) (Figure 2\u2014figure supplement 6). The observed trends were best explained if mutations evolving within the host had a moderate negative impact on mean SPVL (scenario 2).\n\nThe agreement between the observed trend in mean SPVL and the evolutionary model suggests that genetic changes in the virus may be responsible for decreasing SPVLs. However, it is possible that other confounding effects might explain some or all of the decrease in SPVL. Because the Rakai cohort has been studied extensively, we were able to consider the potential impact of a number of confounders but none of them could explain the observed decline in mean SPVL of around 0.4 log10 copies/mL over 17 years (Figure 2). SPVL decline was significant in the linear model both without adjustment (\u22120.029 log10 copies/mL per year, CI [\u22120.045; \u22120.013], p=0.0005, n = 603, Figure 2c), and in the multivariate regression mentioned above, controlling for the laboratory where SPVL was measured, assay type, gender, age and subtype. Additionally, to verify the robustness of the decline in mean SPVL, we examined the trend in SPVL in a number of subsets of the population (Figure 2d). SPVL declined in a similar way: (i) when using the 'strict' definition of SPVL (i.e. the subset of measures that included more than one viral load measurement and where the standard error across viral loads of the same participant was less than one log10 copies/mL) (Appendix); (ii) within each gender (Figure 2d); (iii) within each assay type, when partitioning the data in viral loads measured with the 'Abbott' assays and the 'Roche 1.5' assays, showing that declining SPVL was not due to changing assays; (iv) for viral loads measured at the John Hopkins and at the RHSP laboratories; and it is unlikely there were independent downward shifts in assay reading over time in these two laboratories. Mean SPVL did not decline in the subset of SPVL measured in the Walter Reed laboratory, but 90% of those were for participants infected prior to 2003, limiting power to detect temporal trends.\n\nImprovement in nutrition or health care could be hypothesised to cause a decline in SPVL over time. However, improvement in nutrition would probably have no impact on the mean SPVL, as improving micronutrient intake slows down disease progression, but does not reduce plasma viral load (Fawzi et al., 2005; Friis, 2006; Baum et al., 2013). According to a survey conducted in 2006 in the Rakai communities, households experience on average 2 months per year of food insecurity, and the Household Dietary Diversity Score is 7.7 / 12 (S. Haberlen, personal communication, August 2016), which is high enough to meet WHO dietary requirements in energy, proteins, minerals and vitamins (Steyn et al., 2006). Improved healthcare is also a possible confounder. ART was introduced in Uganda in 2004, but until 2011 ART was prescribed only at late stage infection (CD4 count below 250 cells/mL). Although we excluded post-ART viral load measures from SPVL calculations, unreported ART use could have become more frequent at later time points and therefore might have contributed the decline in mean SPVL. To exclude this possibility, we first verified that the entire distribution of SPVL shifted downward, and the decline in mean SVPL was not only due to more low viral loads at later time points (Figure 2\u2014figure supplement 4). We also examined the individual viral load trajectories within participants to verify that the clear drop in viraemia caused by ART was not present in more recent participants without reported ART (Supplementary file 1). Last we examined the determinants of SPVL using the same linear model, focussing on the subset of SPVL values with viral loads measured before 2004, prior to ART availability in the region. We found a similar though non-significant linear decline in SPVL after non-significant 'laboratory' factors were removed (effect size = \u22120.019 log10 copies/mL, CI [\u22120.052; 0.014], p=0.26, n = 442). In this subset of data, all SPVL but one were measured with the Roche 1.5 assay. We had little power to distinguish between 'laboratory' and 'calendar time' effects because of a strong correlation between these factors (\u2206AIC = \u22121.9 for a model with \u201claboratory\u201d relative to a model with 'calendar time'). However we know from the analysis of the full dataset that 'laboratory' has no significant effect on SPVL, and furthermore the inferred effects of 'laboratory' in the pre-2004 subset are consistent with confounding by calendar time and different from those of the full dataset, which suggests the temporal effect is the genuine effect here.\n\nCoinfections such as tuberculosis, malaria, the herpes simplex virus 2, gonorrhea, or syphilis, might increase viral load in HIV infected individuals (Modjarrad and Vermund, 2010). Better health care in the Rakai district could have caused a population-level reduction in SPVL via a reduction in prevalence of these coinfections. However, none of these coinfections had a combination of high prevalence at the beginning of the study, a large reduction in prevalence between 1995 and 2012, and a large effect on SPVL, sufficient to explain a decline of 0.4 log10 copies/mL (Material and methods).\n\nTo corroborate the evolutionary model, we extended it to include data on the subtype-specific transmission rate and model jointly the evolution of SPVL and subtype A, D, and AD recombinants (the major subtypes circulating in the population). The evolutionary model predicted the observed dynamics of subtype A, D, and AD recombinants ('R') in the cohort (Figure 3). In particular, HIV subtype A was more transmissible than subtype D for a given SPVL (Kiwanuka et al., 2009), and therefore was predicted to increase in frequency in the population. Temporal trends in subtype frequency in the data were inferred by focusing on subtypes A, D, and R and fitting a multinomial linear model for the frequency of the three subtypes as a function of seroconversion date. This revealed significant changes in subtype frequencies (analysis of deviance, p=0.044, n = 551) an increase in the frequency of subtype A (0.009 per year, bootstrap CI [\u22120.0007; 0.022]) and recombinants (0.007 per year, CI [\u22120.005; 0.017]), and a decrease in subtype D (\u22120.016, CI [\u22120.027; \u22120.002]), in accordance with a previous study (Conroy et al., 2010). The rise of subtype A and R together with the lower SPVL associated with infection with these subtypes contributes additionally to the decline in mean SPVL, but this effect is estimated at \u22120.003 log10 copies/mL/year, very small compared to the within-subtype evolution of SPVL at a rate of \u22120.022 log10 copies/mL/year (Material and methods). To model the dynamics of subtype A, D, and R within the ODE model, we assumed co-infection by A and D occurred only transiently and resulted in an 'R' infection with probability r (Day and Gandon 2012). We assumed the transmission function for subtype R was intermediate between that of subtype A and subtype D. In spite of large uncertainty in the fitness function of subtype A due to smaller numbers of infected individuals (Figure 3c), the model accurately predicted the rise in frequency of both subtypes A and R for r=1 (Figure 3d). SPVL declined within subtype A and D, the two major subtypes co-circulating in the region (Figure 2d). The inferred fitness functions for subtype A and D were both consistent with a decline in SPVL within each subtype (Figure 3e). We note, though, that the model predicted a slower decline in SPVL within subtype A than the one observed, because this subtype is expanding in the population, which favours selection for transmission and slows down the attenuation of the virus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20492/elife-20492-fig3-v3.jpg)\n\n**Figure 3.:** Maximum likelihood functions for transmission (a) and time to AIDS (b) as a function of SPVL, stratified by subtype, for heritability h2=0.36 and biased mutation \u03b1 = \u22120.093 (scenario 2). Shaded areas are bootstrap confidence intervals. (c) Predicted fitness function for subtype A (red) and subtype D (blue). (d) Subtype dynamics in the Rakai cohort as inferred by fitting a multinomial linear model with a 'date seroconversion' effect (solid lines, and confidence intervals as a shaded area; points show the actual frequency in the data, binned in five time categories, with confidence intervals), together with subtype dynamics predicted by the ODE model stratified by subtype (dashed lines). Recombination occurs upon co-infection and generates 'R' subtypes (purple). (e) Rates of evolution of SPVL per year within subtype, in the data (points, with 95% confidence intervals) and in the ODE simulation stratified by subtype (open circles).\n\n## Discussion\n\nUsing extensive data on a population-based cohort in the Rakai district, Uganda, we confirmed the existence of a virulence-transmission trade-off in HIV, and predicted that the viral population should evolve reduced SPVL to maximise transmission opportunities. This prediction was verified, as mean SPVL in newly infected participants declined by 0.4 log10 copies/mL in the Rakai cohort form 1995 to 2012. We had limited information on the impact of within-host evolution on mean SPVL. However, the virulence-transmission trade-off was not negligible compared to the potential impact of within-host evolution, and results in a decline in mean SPVL of \u22120.01 log10 copies/mL/year, i.e. about 50% of the observed trend. We systematically examined potential confounders in this well-studied cohort, but none of them could account for the trend of declining SPVL, suggesting viral genetic changes may be responsible for the observed attenuation. The evolutionary model also quantitatively reproduced how higher transmission of subtype A resulted in expansion of this subtype in the population.\n\nThe attenuation of HIV in this Ugandan cohort is in contrast to increasing virulence in Europe. The European dynamics were hypothesized to result from viral adaptation to a higher optimal SPVL of 4.5 log10 copies/mL (Fraser et al., 2007; Herbeck et al., 2014). However this higher optimum was computed using a Zambian cohort for transmission estimates, and a Dutch cohort for time to AIDS (Figure 1\u2014figure supplement 1). Transient selection for increased virulence could also have been important in Europe, and in fact SPVL has declined since 2004 (Pantazis et al., 2014). Our finding of HIV attenuation is consistent with another study of the evolution of HIV virulence in Africa.Comparison between the epidemic in Botswana and the younger epidemic in South Africa revealed declines in SPVL, which was hypothesized to be due to the fixation of mutations conferring adaptation to HLA variants and decreased replicative capacity (Payne et al., 2014).\n\nAlthough the agreement between the observed trend in mean SPVL and the evolutionary model are consistent with genetic changes in the virus causing decreasing SPVLs, genomic data is lacking to positively demonstrate viral genetic changes. Even if genomic data were available, this would be a challenging task since SPVL is probably determined by many loci of small effect (Bartha et al., 2013), and polygenic adaption is difficult to detect (Pritchard et al., 2010). However, adaptation of the viral population to the low optimum is a logical consequence of the impact of SPVL on transmission and time to AIDS, two robust relationships inferred from the data (Figure 1). These effects of SPVL on the viral transmission cycle, together with 30\u201340% viral heritability of SPVL (36% specifically in the Rakai cohort, but generally around 30\u201340% in different settings, [Fraser et al., 2014; Mitov and Stadler, 2016; Leventhal and Bonhoeffer, 2016]), is predicted to result in attenuation of the virus.\n\nThe detailed evolutionary model of HIV SPVL evolution presented here quantitatively reproduced the attenuation of HIV-1 virulence that happened in the last 20 years. This decline in virulence is predicted to continue into the future. This decline is unaffected by ART becoming more widely available, as even aggressive test-and-treat strategies have little predicted effect on these evolutionary dynamics (Roberts et al., 2015; Herbeck et al., 2016) (Figure 2\u2014figure supplement 3). As ART becomes more widely available, essentially shortening the duration of infection, reduced SPVL will contribute to reductions in onwards transmission, and so synergise with efforts to eliminate the pathogen.\n\n## Materials and methods\n\nThe RCCS has conducted regular surveys (approximately annual) of all consenting residents aged 15\u201349 in the same 50 communities since 1994, collecting detailed information on demographics, sexual behaviours and health status and obtaining blood for HIV testing from all consenting participants. Personal information on marital and long-term consensual partners is also collected, which enables retrospective identification of stable couples. All individuals found to be HIV-infected are referred for care, including CD4\u2009T cells count and viral load measurements. Virtually all HIV transmission in this population is via heterosexual vaginal intercourse, and the rates of reported intercourse per week and month were found to be stable by HIV subtype and different study time periods.\n\n### SPVL\n\nSPVL was calculated for 817 participants in a serodiscordant partnership ('Serodiscordant couples', Table 2), and for 647 individuals who had a positive HIV serology test within two study visits of their last negative test ('HIV incident cases', Table 1; median time between last negative visit and first positive visit is 1.25 years). SPVL was defined as the mean log10 viral load for all visits occurring more than 6 months after estimated date of infection and before initiation of ART. Clinical records indicating ART initiation were available for participants who received care at an RHSP clinic prior to 2013. After 2013, ART care at most RHSP clinics was transferred to the Ugandan Ministry of Health. We determined receipt of treatment from clinics other than RHSP prior to 2013, or at any clinic post-2013, by self-reported ART treatment status (SI).\n\n### Transmission\n\nTransmission was modelled as a Poisson process, in which the instantaneous transmission rate is constant (Fraser et al., 2007). We allowed the transmission rate to be a function of SPVL and other epidemiological covariates. For a seropositive individual (the 'index') with SPVL v, the probability that infection of the seronegative partner occurs between time $t_{p,\u2212}$ and $t_{p,+}$ (where the subscript p stands for partner) is given by:\n\n$$\nP[t_{p,\u2212}<t_{p}^{*}<t_{p,+}]=e^{\u2212\\beta(v)(t_{p,\u2212}\u2212t_{init})}\u2212e^{\u2212\\beta(v)(t_{p,+}\u2212t_{init})}\n$$\n\nwhere $t_{init}$ is the time at which the index becomes infected (defined as the mid-point between last negative and first positive dates) or where observation of the couple starts, whichever occurs last and $\\beta(v)$ is the transmission hazard. In a Poisson process, the time to transmission is exponentially distributed: thus the probability is obtained by integration of the probability density function of the exponential distribution between time $t_{p,\u2212}$ and $t_{p,+}$. When infection occurred within the window of observation, $t_{p,\u2212}$ and $t_{p,+}$ are simply the last time the partner was seen negative and the first time he/she was seen positive. When infection did not occur within the window of observation, $t_{p,\u2212}$ is the last time the partner was seen and $t_{p,+}$ is infinity. The likelihood function is the product of these probabilities over all couples. We compared several functional forms for $\\beta(v)$, including a flat function where viral load has no impact on transmission, a power function $\\beta(v)=\\beta_{0}10^{k\u00a0v}$, the Hill function $\\beta(v)=\\beta_{max}\\frac{1}{1+10^{\u2212k\u00a0(v\u2212v_{50})}\u00a0}$, a generalised Hill function $\\beta(v)=\\beta_{min}+\\frac{\\beta_{max}\u2212\\beta_{min}}{(1+10^{\u2212k\u00a0(v\u2212v_{50})})^{\\frac{1}{\\gamma}}\u00a0}$, a step function with three plateaus and one with four plateaus. We computed the likelihood of each model, searched for the maximum likelihood parameters using the Nelder-Mead method and compared different models based on Akaike Information Criterion (AIC). We tested how transmission varied with other epidemiological factors, including subtype, gender, and circumcision status, by allowing the parameters of the function $\\beta(v)$ to vary with different values of these factors (Figure 1\u2014source data 1).\n\n### Time to AIDS\n\nThe time at which an individual was first diagnosed with AIDS was defined in one of three ways. For the majority of participants, it was defined as the time at which CD4 count is first below 200 cells per mm3, (n = 203 of the 288 participants who declared AIDS) or the time at which three symptoms of AIDS (Sewankambo et al., 2000) were first observed (n = 43), whichever came first. If AIDS was not defined according to these criteria, but the individual was known to have died of AIDS, the time to AIDS was taken to be the time to death (n = 42).\n\nTime to AIDS was assumed to follow a gamma distribution whose expected value was a decreasing function of the viral load. For this decreasing function we used a flat function (as a null model), a decreasing Hill function $t^_{AIDS}(v)=t_{max}\\frac{1}{1+10^{\u2212a\u00a0(v_{50}\u2212v)}\u00a0}$, a generalised Hill function $t^_{AIDS}(v)=t_{min}+\\frac{t_{max}\u2212t_{min}}{(1+10^{\u2212a\u00a0(v_{50}\u2212v)})^{\\frac{1}{b}}\u00a0}$ and a step function with three plateaus. For the Hill function and the generalised Hill function, we set the maximum time a virus can be carried by its host to $t_{max}=40$ years. We also allowed these functions to vary by subtype and gender. For a participant, the probability that AIDS occurred between time $t_{no\u00a0AIDS}$ and time $t_{AIDS}$ is:\n\n$$\nP[t_{no\u00a0AIDS}<t<t_{AIDS}]=\\frac{G(k,\u00a0t_{AIDS}/\\theta)}{\u0393(k)}\u2212\\frac{G(k,\u00a0t_{no\u00a0AIDS}/\\theta)}{\u0393(k)}\n$$\n\nwhere $G(k,\u00a0t_{AIDS}/\\theta)/\u0393(k)$ is the regularized gamma function which is the cumulative distribution function of the gamma distribution; $k$ is the shape parameter and $\\theta$ is the scale parameter set to $t^_{AIDS}/k$ so that the expected value is $t^_{AIDS}$. When AIDS was not declared in the individual, $t_{no\u00a0AIDS}$ was set to the date of last visit of this individual, and $\u00a0t_{AIDS}$ was set to infinity. The likelihood function was obtained by multiplying these probabilities across all participants. We computed the likelihood of each model, searched for the maximum likelihood parameters and compared different models based on Akaike Information Criterion (AIC).\n\n### Epidemiological and evolutionary modelling\n\nWe developed a Susceptible-Infected compartmental ordinary differential equation (ODE) model, where the viral population is stratified by SPVL. The set-point viral load v of an individual is given by v=g+e where g is the genetic effect, transmitted with mutation from a donor to a recipient, and e is the environmental effect, which includes host and other environmental factors, and is independently drawn in each newly infected individual. The model is akin to classical quantitative genetics models and in particular to a previously described model of virulence evolution (Lande, 1976;\u00a0Day and Proulx, 2004). The model neglects the impact on transmission of the higher viral loads in early and late phases of infection, however we relax this assumption in the individual-based model presented below. The number of infected with genetic and environmental effects (g, e) evolves as:\n\n$$\n\\frac{dY(g,e,t)}{dt}=\\int\\gamma=\u2212\u221e\u221e\\int\u03f5=\u2212\u221e\u221e\\beta(\\gamma+\u03f5)X(t)Y(\\gamma,\u03f5,t)P(e)Q(\\gamma\u2192g)d\u03f5\u00a0d\\gamma\u23dftransmission\u00a0\u2212\\mu(g+e)Y(g,e,t)\u23dfdeath\n$$\n\nand the number of uninfected individuals $X$changes as:\n\n$$\n\\frac{dX}{dt}=bX\u2212\\beta\u00afX\u00a0Y_{tot}\n$$\n\nThe first term in the equation for the number of infected reflects the increase in the number of infected individuals with viral genetic effect g and environmental effect e due to\u00a0new transmission events from all possible donors. The second term describes death of infected individuals. In these equations, $\\beta(.)$ is the transmission rate as a function of SPVL, $P(e)$ is the distribution of environmental effects in newly infected individuals, $Q(\\gamma\u2192g)$ is the mutation kernel, which is the probability that a donor with virus of genetic effect $\\gamma$ gives an infection with a virus of genetic effect $g$, $\\mu(.)$ is the AIDS death rate as a function of SPVL (inversely related to the time to AIDS), b is the birth rate,\u00a0$\\beta\u00af$ is the mean transmission rate in the population, and\u00a0$Y_{tot}$ is the total number of infected.\n\nThe evolution of mean SPVL in the population is determined by the evolution of the mean viral genetic effect g, as the mean environmental effect is set at 0 without loss of generality. Under this model, we find that evolution of mean genetic effect (denoted $g\u00af$) is determined by the Price equation (Price, 1970):\n\n$$\n\\frac{dg\u00af}{dt}=cov[\\betaX\u2212\\mu,g]+\\alpha\u00a0\\beta\u00af\u00a0X\n$$\n\n(see SI for derivation). The parameter $\\alpha$ is the mean effect of mutations on SPVL in log10 copies/mL. The first term of the equation is the Robertson-Price identity (Robertson, 1966; Price, 1970), which equates the change in character with the population covariance between a fitness measure, here $\\betaX\u2212\\mu$, and the genetic value of this character. The dependence on the number of uninfected individuals sets the balance between selection for higher transmission rate and selection for lower mortality. For example, when the number of susceptible individuals is large relative to its long-term equilibrium value $\\mu\u00af/\\beta\u00af$, selection for higher transmission and higher mortality is favored, an effect that can be important in an emerging epidemic (Bolker et al., 2010; Shirreff et al., 2011; Berngruber et al., 2013). The second term describes the effect of biased mutation, proportional to incidence $\\beta\u00af\u00a0X$.\n\nWe emphasize that knowledge of the molecular mechanism driving the decline in virulence is not needed to make evolutionary predictions. To derive further analytical insights, we assume that the number of susceptible individuals is approximately at its equilibrium value $\\mu\u00af/\\beta\u00af$. We take advantage of the approximately normal distribution of SPVL in the population to derive an expression for the change in mean SPVL in prevalent cases over time, akin to Lande\u2019s classical quantitative genetic equation (Lande, 1976).\n\n$$\n\\frac{dg\u00af}{dt}=V_{P}\u00a0h^{2}\\frac{\\mu\u00af^{2}}{\\beta\u00af}\\frac{\u2202(\\beta\u00af/\\mu\u00af)}{\u2202g\u00af}+\\alpha\u00a0\\mu\u00af\n$$\n\nwhere $V_{P}$ is the variance in SPVL and $\u00a0h^{2}$ is heritability of SPVL, the fraction of the variance explained by viral genetic factors. The mean SPVL in the population will evolve to the value maximizing mean fitness $\\beta\u00af/\\mu\u00af$, which is 3.4 log10\u2009mL/copies (95% CI [2.6; 4.0], Figure 2a), at a pace proportional to heritability (which is assumed to be at equilibrium).\n\nWe parameterised the ODE model with our data, and solved it using the Euler method. Specifically, the initial SPVL in incident cases was 4.72 log10 copies/mL. The transmission rate and mortality due to AIDS as a function of SPVL were the inferred functions (Figure 1). We tuned the baseline transmission rate and the birth rate to achieve the stable prevalence of 14% observed in the Rakai communities and a total population size of 20 millions adults. Declining prevalence would not change much the evolution of mean SPVL (Figure 2\u2014figure supplement 5).\n\nWe assumed that the mutation kernel $Q(\\gamma\u2192g)$ was the density of a normal distribution with a non-zero mean $\\alpha$, and standard deviation $\\sigma_{mut}=0.15$, evaluated at $g\u2212\\gamma$. The density of environmental effects $P(e)$ was given by the density of a normal distribution with mean 0 and standard deviation 0.76. The variance parameters were chosen to achieve an approximately stable phenotypic variance of SPVL $V_{P}=0.91$ and heritability at 36% as inferred in this cohort (Hollingsworth et al., 2010), and similar to the value of 30 to 40% established in a number of studies (Fraser et al., 2014; Mitov and Stadler, 2016).\n\nBecause only a small number of studies have linked within-host evolution to SPVL evolution, we explored three scenarios spanning a range of possibilities to parameterise $\\alpha$. (i) The dominant process is the increase in the frequency of CTL escape mutations, or other host-specific beneficial mutations imposing a RC cost, resulting in a reduced viral fitness and SPVL in the next typical infected person. We first parameterize \u03b1 in this scenario using data on the inferred decline in mean SPVL in Botswana (Payne et al., 2014). The mean SPVL in a cohort in South Africa was 4.47, compared to 4.19 log10 copies/mL in a cohort in Botswana where the epidemic started about 6 years earlier, giving an inferred decline of (4.19 \u2013 4.47) / 6 = \u22120.047 log10 copies/mL/year, hypothesized to result from the rise of CTL escape mutations in the viral population. From the Price equation, the decline in mean SPVL is given by $\\alpha\u00a0\\mu\u00af$, assuming constant prevalence and neglecting the virulence-transmission trade-off. Solving for $\\alpha$ in $\\alpha\u00a0\\mu\u00af=\u22120.047$, with a mean death rate of $\\mu\u00af$ = 0.1 per year as in the present cohort, gives a rough estimate of $\\alpha=\u22120.47$ log10 copies/mL under this scenario. (ii) Second, under a similar assumption that the dominant process is the increase in host-specific beneficial mutations imposing a RC cost, we now parameterize \u03b1 assuming that these mutations impose a RC cost similar to that of random mutations. Indeed some immune escape mutations, for example CTL escape mutations arising in the pol, env or nef gene, appear neutral (Matthews et al., 2008; Troyer et al., 2009). In\u00a0this\u00a0scenario, the coefficient of variation of the distribution of SPVL effects within the host would be the same as that of the distribution of fitness effects of random mutations. This coefficient of variation was estimated at \u22121.609 in a previous study\u00a0(Bonhoeffer et al., 2004), giving $\\alpha=\u2212\\sigma_{mut}/1.609=\u22120.093$ log10 copies/mL. (iii) The dominant process is the increase in frequency of mutations causing a within-host increase in RC, resulting in higher viral fitness in the next host. To our knowledge increase in RC over the course of infection has been evidenced only in one study (Kouyos et al., 2011). This study predicted an increase in RC over the course of infection of + 0.02 per year. The relationship between RC and SPVL inferred in that study (SPVL = 4.297 + 0.572 * RC, Figure 1A in [Kouyos et al., 2011]), together with the fact that the mean time to transmission is 5 years (as inferred from simulation of our IBM), leads to $\\alpha=0.02\u00a0\u00a0\\times\u00a05\u00a0\\times\u00a00.572=+\u00a00.057$ log10 copies/mL in this scenario.\n\nPredictions of the ODE model were robust to the addition of a number of more realistic features of the HIV epidemic, as shown by an individual-based stochastic model of HIV evolution (IBM) with a higher level of complexity, described in details previously (Herbeck et al., 2014; Herbeck et al., 2016). The IBM relaxed several assumptions of the ODE. In contrast to the ODE that described only the asymptomatic phase of infection characterized by a stable SPVL value, the IBM explicitly modelled the dynamics of viral load within individuals. This included the acute phase of infection and the AIDS phase, which are both characterized by a higher viral load. The viral load in the acute and AIDS phases, and the duration of acute phase did not vary across individuals. In the ODE, transmission was modelled using the law of mass action; in the IBM a changing network of sexual contacts was modelled (although sexes were not explicitly modelled). The number of partnerships in which each individual was engaged was variable, and there was heterogeneity in partnership duration (between 3 and 60 months). Furthermore, the behavioural dynamics were designed to reflect a core group of transmitters; individuals in the core group (10% of the overall population) had shorter partnership durations and increased coital frequency. The rate of overall partnership formation and the distribution of coital frequencies were both calibrated to result in an equilibrium prevalence of 14%, corresponding to the average prevalence in the 1995\u20132015 period, as for the main model.\n\n### Temporal trends in SPVL\n\nWe inferred temporal trends in SPVL in incident cases using a multivariate linear model where we explained variation in SPVL as a function of the laboratory in which SPVL was measured, the assay used, whether VL was measured at a RCCS visit (individuals with unclear infection status), gender, circumcision status, age, date at seroconversion, and subtype (Figure 2). Significance was assessed using type II analysis of variance, and confidence intervals were computed assuming asymptotic normality of the coefficients. Viral loads were measured in three different laboratories and using two types of PCR assays. This heterogeneity of laboratory approaches could potentially confound other trends; however our multivariate regression controlled for these effects, and revealed that they had small and non-significant effect sizes (Figure 2\u2014source data 1), such that they did not generate any systematic variability in SPVL. SPVL decreased at a pace of \u22120.033 log10 unit per year (CI [\u22120.057; \u22120.009], p=0.007, n = 603), resulting in a 0.66 log10 unit change over the 1995\u20132015 period. The estimated rate was \u22120.022 (CI [\u22120.041; \u22120.002], p=0.027, n = 603) after non-significant predictors were removed. The linear temporal trend in mean SPVL was more supported than a model where time was fitted as five discrete categories (\u2206AIC = 7.2). An important potential confounder of the reported trends in SPVL would have been the use of unreported antiretroviral therapy (ART) becoming more frequent at later time points. To exclude this possibility, we focused on the subset of SPVL values with viral loads measured before 2004, prior to ART availability in the region. Consistent with previous studies (Farzadegan et al., 1998; Gandhi et al., 2002), males had a higher SPVL than females (+0.259 log10 viral copies/mL, CI [0.14; 0.38], p=4.2 10\u20135, n = 603) subtype D conferred higher SPVL than other subtypes (+0.211 relative to subtype A, CI [0.038; 0.38], p=0.017, n = 603), and older age conferred slightly higher SPVL (+ 0.009 per year, CI [0.0008; 0.016], p=0.030, n = 603). The decreasing trend in SPVL as well as the effects of gender, and subtype D, were all robust, as they had similar magnitude in several subsets of data (Figure 2\u2014figure supplement 2).\n\nWe also inferred temporal trends in mean SPVL in prevalent cases by calculating each year the mean SPVL for cases who are infected, alive, and not lost to follow-up. In this analysis we found a decline in mean SPVL at a rate of \u22120.020 log10 copies/mL/year (Figure 2\u2014figure supplement 6). This decline was highly significant (p=5.06e\u221208, N = 18) but the p-value calculation did not account for non-independence across years (the same prevalent cases may be included in multiple years).\n\n### Review of coinfections as potential confounders of the SPVL trend\n\nCoinfections such as tuberculosis, malaria, the herpes simplex virus 2, gonorrhea, or syphilis, might increase viral load in HIV infected individuals (Modjarrad and Vermund, 2010). A reduction in prevalence $\\deltap$ of a disease with an effect $\\deltav$ on SPVL would cause a $\\deltap\u00a0\\deltav$ decrease in mean SPVL in the population. We systematically reviewed these diseases and show that potential reduction in prevalence of these diseases is unlikely to cause the observed 0.4 log10 copies/mL decline in mean SPVL.\n\nTuberculosis results in a $\\deltav=0.5$ log10 copies/mL increase in viral load (Modjarrad and Vermund, 2010), prevalence has decreased two-fold since 1995, and was 2.7% in 2014 among HIV infected persons screened for TB (WHO, 2015). This would result in a change in SPVL $\\deltap\u00a0\\deltav=\u22120.027\u22170.5=\u22120.013$ log10 copies/mL. Malaria incidence is high in Uganda (50.8 episodes per 100 person years in Uganda in 2001, [Mermin et al., 2006]), but malaria infection only causes a transient increase in SPVL of $\\deltav=0.25$ log10 copies/mL during ~ 40 days (Kublin et al., 2005). The overall effect of a hypothetical two-fold reduction in malaria incidence from 1995 to 2012 (from 60 to 30 per 100 person years) would be $\\deltap\u00a0\\deltav=\u22120.3\u221740/465\u22170.25=\u00a0\u22120.006$ log10 viral copies per mL. Herpes simplex virus 2 (HSV-2) prevalence was roughly stable, from 70% in 1994\u20131998 (Serwadda et al., 2003) to 88% in 2007\u20132008 (Reynolds et al., 2012) in HIV infected individuals in the Rakai district, and the prevalence of genital ulcer disease in the general populations, mostly caused by HSV-2 (Brankin et al., 2009) was stable over this period (data not shown). The prevalence of gonorrhea and syphilis was 8.6% and 3.3% respectively in 1994\u20131998 (Ahmed et al., 2001); therefore, given these diseases confer $\\deltav=0.04$ and $\\deltav=0.1$ log10 copies/mL increase in HIV viral load (Modjarrad and Vermund, 2010), an hypothetical two-fold reduction of prevalence from 1995 to 2012 would have caused a $\u22120.043\u22170.04=\u00a0\u22120.0018$ log10 viral copies per mL and $\u2212\u00a00.017*0.1=\u00a0\u22120.0017$ log10 viral copies per mL. Last, coinfection by helminths is rare in most of the Rakai communities (Wawer et al., 1999), although schistosomiasis is endemic in some fishing communities living near lake Victoria, with prevalence of up to 50% in 1998\u20132002 (Kabatereine et al., 2004). However, there is no evidence for an effect of helminth infection on HIV viral load (Brown et al., 2004; Modjarrad et al., 2005; Modjarrad and Vermund, 2010).\n\n### Subtype-specific predictions\n\nWe extended the ODE model to account for subtype-specific dynamics, in particular the dynamics of subtype A, subtype D, and AD recombinants (called 'R'). The functions describing transmission as a function of SPVL were the inferred subtype-specific step functions (Figure 3a). The function describing time to AIDS as a function of SPVL was the step function inferred on the whole cohort, as there was little difference between subtypes (Figure 1c). Starting conditions were parameterised based on the data, as follows. Mean SPVL in incident cases in 1995 were $v\u00af_{A,0}=4.58$, $v\u00af_{D,0}=4.79$, $v\u00af_{R,0}=4.66$ log10 copies per mL of blood. The frequencies of the three types in 1995 were pA=0.17, pD=0.7, pR=0.13. The mutation kernel $Q(\\gamma\u2192g)$ was, for all three types, the density of a normal distribution with a non-zero mean $\\alpha=\u22120.093$\u00a0(scenario\u00a02), and standard deviation $\\sigma_{mut}=0.15$, evaluated at $g\u2212\\gamma$. The density of environmental effects $P(e)$ was the density of a normal distribution with mean 0 and standard deviation 0.67. These parameters were chosen to achieve an approximately stable phenotypic variance of SPVL $V_{P}=0.7$ (the phenotypic variance in SPVL within subtype) and heritability at 36%.\n\nWe assumed super-infection occurred on a fast timescale and immediately resulted in one strain replacing the other. Super-infection with A and D, A and R, or D and R strains resulted in a recombinant subtype ('R') with probability r. We chose r=1 as it best reproduced the rise in frequency of recombinants (Figure 3d).\n\n### Contributions of within-subtype and between-subtype evolution to SPVL trends\n\nWe decomposed the trend in mean SPVL into the sum of two components, one due to changes in subtype frequency, one due to within-subtype changes in SPVL. The change in mean SPVL between time 0 and t reads:\n\n$$\n\u0394v\u00af=\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}p_{i,t}v\u00af_{i,t}\u2212\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}p_{i,0}v\u00af_{i,0}\n$$\n\nWith linear trends in subtype frequencies, $p_{i,t}=p_{i,0}+\\deltap_{i}\u00a0t$, and in mean SPVL within subtypes, $v\u00af_{i,t}=v\u00af_{i,0}+\\deltav\u00af_{i}\u00a0t$. Replacing yields:\n\n$$\n\u0394v\u00af=\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}(p_{i,0}+\\deltap_{i}\u00a0t)(v\u00af_{i,0}+\\deltav\u00af_{i}\u00a0t)\u2212\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}p_{i,0}v\u00af_{i,0}\n$$\n\nBecause the changes are slow (i.e. $\\deltap_{i}$ and $\\deltav\u00af_{i}$ are small), we can neglect the term in $\\deltap_{i}\\deltav\u00af_{i}$ and approximate the change as:\n\n$$\n\u0394v\u00af=[\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}p_{i,0}\\deltav\u00af_{i}+\\sumi\u00a0\\in{A,\u00a0D,\u00a0R}\\deltap_{i}\u00a0v\u00af_{i,0}]t\n$$\n\nThe first term reflects the changes in mean SPVL due to changes in mean SPVL within subtype. The second term reflects the changes in mean SPVL due to changing subtype frequencies. We have $v\u00af_{A,0}=4.58$, $v\u00af_{D,0}=4.79$, $v\u00af_{R,0}=4.66$ log10 copies/mL, and $\\deltap_{A}=0.009$, $\\deltap_{D}=\u22120.016$, $\\deltap_{R}=0.007$, inferred from a generalized linear model with multinomial response describing subtype frequency as a function of calendar time. Thus the change in mean SPVL due to the rise in subtype A and R is \u22120.003 log10 copies/mL per year. Assuming the same rate of SPVL evolution in all subtypes, $\\deltav\u00af_{A}=\\deltav\u00af_{D}=\\deltav\u00af_{R}=\u22120.022$ log10 copies/mL per year (a rate inferred from the linear model, adjusted for subtype and other covariates), the change in mean SPVL due to within-host evolution is also \u22120.022 log10 copies/mL per year. Thus the total mean SPVL change is $=\u22120.025$ log10 copies/mL per year and most of this change is due to within-subtype evolution.\n",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "8c2f8d4f-fc72-4b98-90c0-efceb29771d7",
+      "submission_id": "32e13cde-50ab-4a38-b93a-25fa151ae54a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20492.023](https://doi.org/10.7554/eLife.20492.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A transmission-virulence evolutionary trade-off drives attenuation of HIV-1 in Uganda\" for consideration by eLife. Your article has been favorably evaluated by Prabhat Jha as the Senior Editor and three reviewers, including Richard A Neher (Reviewer #1), who is a member of our Board of Reviewing Editors, and Troy Day (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, you present data on HIV transmission and set point viral load (SPVL) evolution and show that these data are consistent with a model of evolution in which SPVL is driven to a value maximizing transmission. This value corresponds to an optimal trade-off between high per-contact transmission probability, favoring high SPVL, and long periods of asymptomatic infection to allow for many potential transmission events (favoring low SPVL). The data from a large cohort of sero-discordant couples in Uganda followed for 20 years are well suited to parameterize the model and test its hypotheses. All reviewers agreed that you present much needed empirical support for a popular evolutionary hypothesis. However, in the reviews and ensuing discussion, we identified a number of points that need to be addressed.\n\nEssential revisions:\n\n1) Definition of virulence:\n\nIn most of the theoretical literature virulence is measured as the mortality rate that a pathogen induces upon its host during infection. And this is how you model it (subsection \u201cEpidemiological and evolutionary modelling\u201d, equation numbers would have helped) \u2013 an additional mortality rate that depends on the strain type. However, in HIV different strains don't induce different mortality rates during the asymptomatic phase, but more \"virulent\" strains (those with higher SPVL) shorten the asymptomatic phase. An extended discussion of the trade-off (Introduction, first paragraph) and the relationship of virulence, disease progression, and the expected number of transmission would help many readers. Are there quantitative differences depending on whether virulence variation is modeled as mortality variation or as variation in disease progression? Does the individual based model account for the \"time to AIDS\"-distribution?\n\n2) Intra-host SPVL trends:\n\nThe assumption that mutations that accumulate during chronic infection are randomly drawn from inferred or measured distributions fitness effects is not appropriate. Most deleterious mutations will be pruned by purifying selection. During within-host evolution, mutations will fix that allow the virus to evade host immune selection or increase viral fitness, for example via reversions and compensatory mutations. The authors need to demonstrate robustness of their results to the choice of \u03b1 and the variance of Q(\u03b3->g).\n\n3) Within vs. between subtype dynamics:\n\nSPVL differs between subtypes and the authors show that relative subtype frequencies change as expected from the virulence/transmission trade-off. We would like to see a discussion of what part of the observed SPVL decline is due to a shift in subtype frequencies and what part is due to intra-subtype evolution.\n\n4) Confounding by ART:\n\nUnreported ART after 2004 remains a concern. In \u2013the eleventh paragraph of the Results, the authors state that the same trend is observed in early years, but that the results are non-significant. You also state that \"[\u2026] after the non-significant [...] factors were removed\". Does this mean that you did not find similar trends when those variables are included? Why are there way fewer data points after 2004? Especially extremely high viral load measurements seem to be missing from the later years. Could the roll-out of ART have led to a reduced representation of rapid progressors in the data set since they were treated early?\n\n5) The study shows that an evolutionary model produces temporal patterns that are similar to the temporal patterns in the data. This match is consistent with evolution explaining the data but that is quite different from such a match suggesting that the evolutionary explanation is correct. Such claims (Results, tenth paragraph and Discussion, third paragraph) should be toned down.\n\n6) Equilibrium assumption for X:\n\nThe authors assume the fraction of susceptible individuals X is at equilibrium \u03bc\u00af/g\u00af. How robust are the results to this assumption? It might be interesting to note that one arrives at similar expression for mean SPVL evolution by Taylor-expanding \u03b2X \u2013\u03bc in g while assuming X is constant.\n",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "16da610a-740a-49dc-af2c-5b365c799e74",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C1",
+      "claim": "SPVL is highly variable in the Rakai population, with values ranging from 10\u00b2 copies/mL to 10\u2077 copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other HIV epidemics, we found that SPVL is highly variable in this population, with values ranging from 102 copies/mL to 107 copies/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the range of SPVL values observed in the population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "be95858a-1c8f-462b-98e4-32bf1c725cdc",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C2",
+      "claim": "SPVL was calculated for 647 HIV incident cases in the Rakai cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL was calculated for 647 individuals who had a positive HIV serologic test within two study visits of their last negative test ('HIV incident cases', Table 1; median time between last negative visit and first positive visit is 1.25 years)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific number of incident cases for which SPVL was calculated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e9f3098a-bee3-42d4-bc78-6fe454413b36",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C3",
+      "claim": "SPVL was calculated for 817 participants in serodiscordant partnerships in the Rakai cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL was calculated for 647 individuals who had a positive HIV serologic test within two study visits of their last negative test ('HIV incident cases', Table 1; median time between last negative visit and first positive visit is 1.25 years), and for 817 participants in a serodiscordant partnership ('serodiscordant couples', Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific number of serodiscordant couples for which SPVL was calculated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "8c570675-ac8f-4814-b4ab-c698418b1d20",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C4",
+      "claim": "The median time between last negative visit and first positive visit for HIV incident cases is 1.25 years.",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL was calculated for 647 individuals who had a positive HIV serologic test within two study visits of their last negative test ('HIV incident cases', Table 1; median time between last negative visit and first positive visit is 1.25 years)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the median time between visits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "0dfadb12-fedf-4f61-9268-f98a7bb55c4b",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C5",
+      "claim": "Higher SPVL is associated with significantly increased rate of transmission in serodiscordant couples.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that higher SPVL was associated with significantly increased rate of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a statistical association found in the analysis of serodiscordant couples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "452a54ea-18cd-4368-82b1-42914064f14c",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C6",
+      "claim": "The best model fit for transmission rate as a function of SPVL is a stepwise function with three plateaus, where transmission rates increase from 0.019/year to 0.14/year as SPVL increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The best model fit was one where transmission rates increases from 0.019/year to 0.14/year in a stepwise fashion as SPVL increases with three plateaus (Figure 1a) (\u0394AIC = \u221275.96 compared to null model with a fixed transmission rate, n = 817).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the best-fitting model based on AIC comparison and provides specific transmission rate values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "c749cb27-ba58-46a7-9ed6-8de537e7e567",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C7",
+      "claim": "A generalised Hill function also fits the transmission rate data well (\u0394AIC = -71.17 compared to the null model, n = 817).",
+      "claim_type": "EXPLICIT",
+      "source": "A function with three steps was favoured over others, but we also show a continuous function, the generalised Hill function, that may be considered more biologically realistic (\u0394AIC = - 71.17 compared to the null model, n = 817) (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the AIC comparison for the generalised Hill function model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ca8fa83d-9c17-47aa-8834-02a6b93b89fa",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C8",
+      "claim": "Subtype A has a higher transmission rate than subtype D for all SPVL values.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous studies (Kiwanuka et al., 2009), subtype A had a higher transmission rate than subtype D for all SPVL values (Figure 3) (\u0394AIC = \u22123.32 compared to the model without subtype, n = 817).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding supported by data analysis and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "02b60475-af57-4358-b03f-bad367f31752",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C9",
+      "claim": "Gender did not have an effect on transmission (\u0394AIC = 1.66 compared to model without gender, n = 817).",
+      "claim_type": "EXPLICIT",
+      "source": "Gender did not have an effect on transmission (\u0394AIC = 1.66 compared to model without gender, n = 817)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the result of model comparison showing no gender effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "3ea58859-b31f-4c6f-9271-5869aed535b9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C10",
+      "claim": "Male circumcision reduced transmission both from female to male and from male to female.",
+      "claim_type": "EXPLICIT",
+      "source": "male circumcision reduced transmission both from female to male and from male to female (\u0394AIC = \u22123.74 for female to male, n = 321; \u0394AIC = \u22123.17 for male to female, n = 487, compared to model without circumcision) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the effect of circumcision on transmission with AIC comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "57a9c129-9a79-45e2-aa07-94b837324327",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C11",
+      "claim": "Higher SPVL is associated with significantly shorter time to AIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the relationship between SPVL and time to AIDS from 562 incident cases with a SPVL value and information on time to AIDS, and found that higher SPVL was associated with significantly shorter time to AIDS (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a statistical association found in the analysis of incident cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "440522d4-9bbf-483a-a5ef-49faa7b2d9e4",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C12",
+      "claim": "The best model for time to AIDS as a function of SPVL is a step function with three plateaus, with time to AIDS decreasing from 40 years to 5 years from low to high SPVL.",
+      "claim_type": "EXPLICIT",
+      "source": "The best model was a step function with three plateaus, with time to AIDS decreasing from 40 years to 5 years from low to high SPVL (Figure 1c; \u0394AIC = 137.22 compared to null model with fixed time to AIDS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the best-fitting model based on AIC comparison and provides specific time to AIDS values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "48cc8eb1-0b99-4939-a483-6153a1cc7ec9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C13",
+      "claim": "The inferred gamma distribution for time to AIDS has shape parameter 1.2, similar to an exponential distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred gamma distribution had shape parameter 1.2, similar to an exponential distribution (which is the special case where shape parameter is 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the inferred parameter value from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e0966009-294f-4df4-add0-0e7b5552935a",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C14",
+      "claim": "Subtype D tends to confer faster disease progression, but this effect was not statistically significant in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, in agreement with previous studies ( Kiwanuka et al., 2008), that subtype D tended to confer faster disease progression, but this effect was not statistically significant here (Figure 1, \u0394AIC = 15.41 compared to the model without subtype, n = 562).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a trend observed in the data with reference to previous studies, but notes lack of statistical significance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "14aad9e0-a1e2-4714-8cba-fecc1433cab3",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C15",
+      "claim": "Time to AIDS did not significantly vary by gender (\u0394AIC = 7.85 compared to the model without gender, n = 562).",
+      "claim_type": "EXPLICIT",
+      "source": "Time to AIDS did not significantly vary by gender (Figure 1, \u0394AIC = 7.85 compared to the model without gender, n = 562).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the result of model comparison showing no gender effect on time to AIDS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "66bf53b5-a417-4ef2-a5d1-1a5dfb6d9d11",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C16",
+      "claim": "The SPVL that maximises mean fitness is 3.4 log10 mL/copies (95% bootstrap CI [2.6; 4.0]).",
+      "claim_type": "EXPLICIT",
+      "source": "The SPVL that maximises mean fitness is 3.4 log10 mL/copies (95% bootstrap CI [2.6; 4.0], Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the optimal SPVL value derived from the model with confidence intervals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "2ef7ba4b-7815-4f46-8d0a-7b3434030dd4",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C17",
+      "claim": "Prevalence of HIV in the Rakai cohort is approximately constant at 14% on average in the period 1995 to 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Because prevalence of HIV in this cohort is approximately constant (at 14% on average in the period 1995 to 2013, Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed prevalence in the cohort over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "bb66e703-cdc8-410e-90d3-50b4f240a155",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C18",
+      "claim": "The distribution of SPVL can be closely approximated by a normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Because prevalence of HIV in this cohort is approximately constant (at 14% on average in the period 1995 to 2013, Figure 2\u2014figure supplement 1) and the distribution of SPVL can be closely approximated by a normal distribution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the SPVL distribution is approximately normal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "8178ffdd-3562-4ecc-9917-977c6542502d",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C19",
+      "claim": "Heritability of SPVL in the Rakai cohort was previously estimated at 36% (confidence interval 6\u201366%), using 97 donor-recipient transmission pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "heritability of SPVL in the Rakai cohort was previously estimated at 36% (confidence interval 6\u201366%), using 97 donor-recipient transmission pairs (Hollingsworth et al., 2010) (who are participants of the present cohort).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study that estimated heritability in the same cohort.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e7fae346-27a4-47d5-a819-bf2459e89606",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C20",
+      "claim": "The ODE simulations predicted a decline in mean SPVL in incident cases from 1995 to 2015, at a rate of \u22120.042, \u22120.013 and \u22120.0009 log10 copies/mL/year in the three scenarios chosen for within-host evolution, for a heritability of 36%.",
+      "claim_type": "EXPLICIT",
+      "source": "The ODE simulations predicted a decline in mean SPVL in incident cases from 1995 to 2015, at a rate of \u22120.042, \u22120.013 and \u22120.0009 log10 copies/mL/year in the three scenarios chosen for within-host evolution, for a heritability of 36%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the predictions from the ODE model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9ef9a59c-4441-4b2a-8971-9b3d329119c2",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C22",
+      "claim": "SPVL in the Rakai cohort decreased with date of seroconversion between 1995 and 2012, at a rate of \u22120.022 log10 copies/mL per year after adjustment for other covariates (CI [\u22120.04; \u22120.002], p=0.027, n = 603).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the data was in qualitative agreement with the evolutionary model: SPVL in the Rakai cohort decreased with date of seroconversion between 1995 and 2012, at a rate of \u22120.022 log10 copies/mL per year after adjustment for other covariates (CI [\u22120.04; \u22120.002], p=0.027, n = 603) (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed trend in SPVL from the data analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "db456a97-46f4-4922-9d24-d9a41a4bd164",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C23",
+      "claim": "Average SPVL in prevalent cases was declining at a rate of \u22120.020 log10 copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Average SPVL in prevalent cases was also declining at a rate of \u22120.020 log10 copies/mL, although for those it is more difficult to adjust for covariates and test for significance (because the same participants are 'prevalent cases' at multiple time points) (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed trend in prevalent cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "f232e64a-a53b-41df-8d99-1a8d5ccb9bb2",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C24",
+      "claim": "The observed trends in SPVL were best explained if mutations evolving within the host had a moderate negative impact on mean SPVL (scenario 2).",
+      "claim_type": "EXPLICIT",
+      "source": "The observed trends were best explained if mutations evolving within the host had a moderate negative impact on mean SPVL (scenario 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states which scenario best fits the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e6e4a152-ed26-43d8-b2b3-b916e92df189",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C25",
+      "claim": "SPVL decline was significant in the linear model without adjustment (\u22120.029 log10 copies/mL per year, CI [\u22120.045; \u22120.013], p=0.0005, n = 603).",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL decline was significant in the linear model both without adjustment (\u22120.029 log10 copies/mL per year, CI [\u22120.045; \u22120.013], p=0.0005, n = 603, Figure 2c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the unadjusted statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "6855ec7e-a2a2-4add-af06-19dda412ae02",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C26",
+      "claim": "ART was introduced in Uganda in 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "ART was introduced in Uganda in 2004, but until 2011 ART was prescribed only at late stage infection (CD4 count below 250 cells/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states when ART became available in Uganda.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "f3d2c874-aa83-4b25-8cdd-9abb9efe08b9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C27",
+      "claim": "Until 2011, ART was prescribed only at late stage infection (CD4 count below 250 cells/mL) in Uganda.",
+      "claim_type": "EXPLICIT",
+      "source": "ART was introduced in Uganda in 2004, but until 2011 ART was prescribed only at late stage infection (CD4 count below 250 cells/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the ART prescription criteria in Uganda.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9d16b3f5-8c50-4310-8632-1ef819d51853",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C28",
+      "claim": "Improvement in micronutrient intake slows down disease progression but does not reduce plasma viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "However, improvement in nutrition would probably have no impact on the mean SPVL, as improving micronutrient intake slows down disease progression, but does not reduce plasma viral load (Fawzi et al., 2005; Friis, 2006; Baum et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on the effect of nutrition on HIV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "cd76c5ce-6186-452c-a637-318d25cb7cf7",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C29",
+      "claim": "According to a 2006 survey in Rakai communities, households experience on average 2 months per year of food insecurity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a survey conducted in 2006 in the Rakai communities, households experience on average 2 months per year of food insecurity, and the Household Dietary Diversity Score is 7.7 / 12 (S. Haberlen, personal communication, August 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a survey on food security in the study area.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "325ae64c-0179-41c3-aeb7-d17aad9f4057",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C30",
+      "claim": "The Household Dietary Diversity Score in Rakai communities is 7.7 / 12, which is high enough to meet WHO dietary requirements in energy, proteins, minerals and vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a survey conducted in 2006 in the Rakai communities, households experience on average 2 months per year of food insecurity, and the Household Dietary Diversity Score is 7.7 / 12 (S. Haberlen, personal communication, August 2016), which is high enough to meet WHO dietary requirements in energy, proteins, minerals and vitamins (Steyn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a survey and references WHO dietary requirements.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "2db21395-4b22-41a5-8954-8b0d31630dd2",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C31",
+      "claim": "The evolutionary model predicted the observed dynamics of subtype A, D, and AD recombinants in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary model predicted the observed dynamics of subtype A, D, and AD recombinants ('R') in the cohort (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the model predictions matched the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e8f1d600-4e91-4b81-a406-c90a0536b7df",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C32",
+      "claim": "HIV subtype A was more transmissible than subtype D for a given SPVL.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, HIV subtype A was more transmissible than subtype D for a given SPVL (Kiwanuka et al., 2009), and therefore was predicted to increase in frequency in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study and makes a prediction based on this finding.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9e566252-6f82-4e01-af9c-8e37cb46ac02",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C33",
+      "claim": "Temporal trends in subtype frequency showed significant changes (analysis of deviance, p=0.044, n = 551).",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed significant changes in subtype frequencies (analysis of deviance, p=0.044, n = 551)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical test result for subtype frequency changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ca05ad23-9927-43c6-86d7-9b4e157b78f9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C34",
+      "claim": "Subtype A increased in frequency at a rate of 0.009 per year (bootstrap CI [\u22120.0007; 0.022]).",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed significant changes in subtype frequencies (analysis of deviance, p=0.044, n = 551) an increase in the frequency of subtype A (0.009 per year, bootstrap CI [\u22120.0007; 0.022])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the rate of change in subtype A frequency with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "f4dccc0a-f9ce-405f-9abe-9a8d297408bb",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C35",
+      "claim": "Recombinants increased in frequency at a rate of 0.007 per year (CI [\u22120.005; 0.017]).",
+      "claim_type": "EXPLICIT",
+      "source": "an increase in the frequency of subtype A (0.009 per year, bootstrap CI [\u22120.0007; 0.022]) and recombinants (0.007 per year, CI [\u22120.005; 0.017])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the rate of change in recombinant frequency with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "86f96b13-8d7f-4552-9b49-e67b82948527",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C36",
+      "claim": "Subtype D decreased in frequency at a rate of \u22120.016 per year (CI [\u22120.027; \u22120.002]).",
+      "claim_type": "EXPLICIT",
+      "source": "and a decrease in subtype D (\u22120.016, CI [\u22120.027; \u22120.002]), in accordance with a previous study (Conroy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the rate of change in subtype D frequency with confidence intervals and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "7897d244-1522-4926-9c70-f49d3152496f",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C37",
+      "claim": "The rise of subtype A and R together with the lower SPVL associated with infection with these subtypes contributes to the decline in mean SPVL at a rate of \u22120.003 log10 copies/mL/year.",
+      "claim_type": "EXPLICIT",
+      "source": "The rise of subtype A and R together with the lower SPVL associated with infection with these subtypes contributes additionally to the decline in mean SPVL, but this effect is estimated at \u22120.003 log10 copies/mL/year, very small compared to the within-subtype evolution of SPVL at a rate of \u22120.022 log10 copies/mL/year (Material and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the calculated contribution of subtype frequency changes to SPVL decline.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "3fab6efc-9423-414a-8660-e0c8956cee12",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C38",
+      "claim": "Within-subtype evolution of SPVL occurs at a rate of \u22120.022 log10 copies/mL/year.",
+      "claim_type": "EXPLICIT",
+      "source": "The rise of subtype A and R together with the lower SPVL associated with infection with these subtypes contributes additionally to the decline in mean SPVL, but this effect is estimated at \u22120.003 log10 copies/mL/year, very small compared to the within-subtype evolution of SPVL at a rate of \u22120.022 log10 copies/mL/year (Material and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the rate of within-subtype SPVL evolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ab47ed6e-90a7-413f-b69e-114174b23c15",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C39",
+      "claim": "SPVL declined within subtype A and D, the two major subtypes co-circulating in the region.",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL declined within subtype A and D, the two major subtypes co-circulating in the region (Figure 2d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed trend within each subtype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "7df8c8d4-7075-42ee-8d60-301d9e07a623",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C40",
+      "claim": "The inferred fitness functions for subtype A and D were both consistent with a decline in SPVL within each subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred fitness functions for subtype A and D were both consistent with a decline in SPVL within each subtype (Figure 3e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the model predictions are consistent with observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "4ffc16d5-efdd-4536-8b23-42ce6e09d3f0",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C41",
+      "claim": "The model predicted a slower decline in SPVL within subtype A than the one observed, because this subtype is expanding in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, though, that the model predicted a slower decline in SPVL within subtype A than the one observed, because this subtype is expanding in the population, which favours selection for transmission and slows down the attenuation of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript notes a discrepancy between model prediction and observation and provides an explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "a1bd51ba-2636-43a2-b6c9-1f5035085382",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C42",
+      "claim": "The attenuation of HIV in the Ugandan cohort is in contrast to increasing virulence in Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "The attenuation of HIV in this Ugandan cohort is in contrast to increasing virulence in Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the findings to trends in Europe.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ba870c5d-0f0c-4d7a-8022-b0eba25b3b39",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C43",
+      "claim": "SPVL increased in Europe at an estimated rate of 0.013 log10 copies/mL/year over the last 28 years.",
+      "claim_type": "EXPLICIT",
+      "source": "There, SPVL increased at an estimated rate of 0.013 (Herbeck et al., 2012) and 0.020 log10 copies/mL/year (Pantazis et al., 2014) over the last 28 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on SPVL trends in Europe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9b39a3c3-ec96-498d-b044-c51695ed24d4",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C44",
+      "claim": "SPVL increased in Europe at an estimated rate of 0.020 log10 copies/mL/year over the last 28 years.",
+      "claim_type": "EXPLICIT",
+      "source": "There, SPVL increased at an estimated rate of 0.013 (Herbeck et al., 2012) and 0.020 log10 copies/mL/year (Pantazis et al., 2014) over the last 28 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on SPVL trends in Europe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9dd6971e-9ccd-463a-9949-825c91d3b4c5",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C45",
+      "claim": "The European dynamics were hypothesized to result from viral adaptation to a higher optimal SPVL of 4.5 log10 copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The European dynamics were hypothesized to result from viral adaptation to a higher optimal SPVL of 4.5 log10 copies/mL (Fraser et al., 2007; Herbeck et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies that proposed this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ec1a3220-86ec-4d9d-8109-7f77ed855a4d",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C46",
+      "claim": "SPVL has declined in Europe since 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient selection for increased virulence could also have been important in Europe, and in fact SPVL has declined since 2004 (Pantazis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on recent SPVL trends in Europe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "24f0333f-3278-4496-a4aa-ef9666d12567",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C47",
+      "claim": "Comparison between the epidemic in Botswana and the younger epidemic in South Africa revealed declines in SPVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of HIV attenuation is consistent with another study of the evolution of HIV virulence in Africa.Comparison between the epidemic in Botswana and the younger epidemic in South Africa revealed declines in SPVL, which was hypothesized to be due to the fixation of mutations conferring adaptation to HLA variants and decreased replicative capacity (Payne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on SPVL trends in Africa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "d055c80a-dda4-4e85-920a-c399001b862b",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C48",
+      "claim": "SPVL is probably determined by many loci of small effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if genomic data were available, this would be a challenging task since SPVL is probably determined by many loci of small effect (Bartha et al., 2013), and polygenic adaption is difficult to detect (Pritchard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on the genetic architecture of SPVL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "16b77615-fe1f-43f7-9e9f-43c426bcfd0c",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C49",
+      "claim": "Polygenic adaptation is difficult to detect.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if genomic data were available, this would be a challenging task since SPVL is probably determined by many loci of small effect (Bartha et al., 2013), and polygenic adaption is difficult to detect (Pritchard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on the challenges of detecting polygenic adaptation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "b6869ba0-53d4-4023-bcdd-948e469b6065",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C50",
+      "claim": "Heritability of SPVL is generally around 30\u201340% in different settings.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects of SPVL on the viral transmission cycle, together with 30\u201340% viral heritability of SPVL (36% specifically in the Rakai cohort, but generally around 30\u201340% in different settings, [Fraser et al., 2014; Mitov and Stadler, 2016; Leventhal and Bonhoeffer, 2016]), is predicted to result in attenuation of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies on heritability of SPVL across different settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "99fad0ac-2047-4f45-a8d1-7d7f070dc521",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C51",
+      "claim": "Reduced SPVL will contribute to reductions in onwards transmission as ART becomes more widely available.",
+      "claim_type": "EXPLICIT",
+      "source": "As ART becomes more widely available, essentially shortening the duration of infection, reduced SPVL will contribute to reductions in onwards transmission, and so synergise with efforts to eliminate the pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a prediction about the future impact of reduced SPVL.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ad522887-b0ee-4977-82bf-e5f2dafcdb03",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C52",
+      "claim": "The RCCS has conducted regular surveys (approximately annual) of all consenting residents aged 15\u201349 in the same 50 communities since 1994.",
+      "claim_type": "EXPLICIT",
+      "source": "The RCCS has conducted regular surveys (approximately annual) of all consenting residents aged 15\u201349 in the same 50 communities since 1994, collecting detailed information on demographics, sexual behaviours and health status and obtaining blood for HIV testing from all consenting participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the study design and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "e55dafb1-1587-48c4-a43b-1ce9fb527586",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C53",
+      "claim": "Virtually all HIV transmission in the Rakai population is via heterosexual vaginal intercourse.",
+      "claim_type": "EXPLICIT",
+      "source": "Virtually all HIV transmission in this population is via heterosexual vaginal intercourse, and the rates of reported intercourse per week and month were found to be stable by HIV subtype and different study time periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the mode of HIV transmission in the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "43f527ce-e39d-4c89-a622-60fa0659d383",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C54",
+      "claim": "The rates of reported intercourse per week and month were found to be stable by HIV subtype and different study time periods in the Rakai population.",
+      "claim_type": "EXPLICIT",
+      "source": "Virtually all HIV transmission in this population is via heterosexual vaginal intercourse, and the rates of reported intercourse per week and month were found to be stable by HIV subtype and different study time periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings on sexual behavior in the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "9b80dcb5-b452-4545-b9d0-72e5bd303407",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C55",
+      "claim": "SPVL was defined as the mean log10 viral load for all visits occurring more than 6 months after estimated date of infection and before initiation of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "SPVL was defined as the mean log10 viral load for all visits occurring more than 6 months after estimated date of infection and before initiation of ART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines how SPVL was calculated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "39b9e311-2ef7-4ece-a2fe-2cec46b3208c",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C56",
+      "claim": "Males had a higher SPVL than females (+0.259 log10 viral copies/mL, CI [0.14; 0.38], p=4.2 10\u20135, n = 603).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Farzadegan et al., 1998; Gandhi et al., 2002), males had a higher SPVL than females (+0.259 log10 viral copies/mL, CI [0.14; 0.38], p=4.2 10\u20135, n = 603)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a statistical finding on gender differences in SPVL and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "69ec753f-a3e5-478b-8566-cdc2fb6e8164",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C57",
+      "claim": "Subtype D conferred higher SPVL than subtype A (+0.211 relative to subtype A, CI [0.038; 0.38], p=0.017, n = 603).",
+      "claim_type": "EXPLICIT",
+      "source": "subtype D conferred higher SPVL than other subtypes (+0.211 relative to subtype A, CI [0.038; 0.38], p=0.017, n = 603)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a statistical finding on subtype differences in SPVL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "b232eaa3-a49e-4a63-a780-bd6d44eda90e",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C58",
+      "claim": "Older age conferred slightly higher SPVL (+ 0.009 per year, CI [0.0008; 0.016], p=0.030, n = 603).",
+      "claim_type": "EXPLICIT",
+      "source": "and older age conferred slightly higher SPVL (+ 0.009 per year, CI [0.0008; 0.016], p=0.030, n = 603).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a statistical finding on the effect of age on SPVL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "a33eb7b3-e016-4e7e-b65b-3e64c7d14990",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C61",
+      "claim": "Malaria incidence is high in Uganda (50.8 episodes per 100 person years in Uganda in 2001).",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria incidence is high in Uganda (50.8 episodes per 100 person years in Uganda in 2001, [Mermin et al., 2006])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on malaria incidence in Uganda.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "c2ea3aaf-dd11-4288-b2e0-a4c79a86d9f2",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C63",
+      "claim": "Herpes simplex virus 2 (HSV-2) prevalence was roughly stable, from 70% in 1994\u20131998 to 88% in 2007\u20132008 in HIV infected individuals in the Rakai district.",
+      "claim_type": "EXPLICIT",
+      "source": "Herpes simplex virus 2 (HSV-2) prevalence was roughly stable, from 70% in 1994\u20131998 (Serwadda et al., 2003) to 88% in 2007\u20132008 (Reynolds et al., 2012) in HIV infected individuals in the Rakai district",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on HSV-2 prevalence in the study area.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "0b0a8e64-0b96-4fdd-b07e-38d6f895b29c",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C64",
+      "claim": "The prevalence of gonorrhea was 8.6% in 1994\u20131998 in the Rakai district.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of gonorrhea and syphilis was 8.6% and 3.3% respectively in 1994\u20131998 (Ahmed et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on gonorrhea prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "6d3b55e2-80a0-4438-9fc1-db3c9c13cccf",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C65",
+      "claim": "The prevalence of syphilis was 3.3% in 1994\u20131998 in the Rakai district.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of gonorrhea and syphilis was 8.6% and 3.3% respectively in 1994\u20131998 (Ahmed et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on syphilis prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "76f32342-4a39-470c-82ff-916da0fa9fdd",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C68",
+      "claim": "Coinfection by helminths is rare in most of the Rakai communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, coinfection by helminths is rare in most of the Rakai communities (Wawer et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on helminth prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "cba5e310-1350-4fe1-9377-a3584f0e0d29",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C69",
+      "claim": "Schistosomiasis is endemic in some fishing communities living near lake Victoria, with prevalence of up to 50% in 1998\u20132002.",
+      "claim_type": "EXPLICIT",
+      "source": "although schistosomiasis is endemic in some fishing communities living near lake Victoria, with prevalence of up to 50% in 1998\u20132002 (Kabatereine et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on schistosomiasis prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "fb85d2b0-964a-482e-8e57-f64a00dc58b2",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C70",
+      "claim": "There is no evidence for an effect of helminth infection on HIV viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no evidence for an effect of helminth infection on HIV viral load (Brown et al., 2004; Modjarrad et al., 2005; Modjarrad and Vermund, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on the effect of helminth infection on viral load.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "593271c5-3abc-4d25-8142-a8a1de7d1559",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C71",
+      "claim": "ART probably had little effect on the evolutionary dynamics of SPVL in Uganda because it only became available in 2004 and is initiated at relatively late stage infection.",
+      "claim_type": "EXPLICIT",
+      "source": "ART probably had little effect on the evolutionary dynamics of SPVL in Uganda because it only became available in 2004 and is initiated at relatively late stage infection (CD4 < 250 cells/mm3 from 2004 to January 2011, and at < 350 cells/mm3 from February, 2011 to the time of writing, August 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides reasoning based on ART availability and prescription criteria.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "29d79620-ed93-47ec-af80-c3a88330677b",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C72",
+      "claim": "The detailed evolutionary model of HIV SPVL evolution quantitatively reproduced the attenuation of HIV-1 virulence that happened in the last 20 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The detailed evolutionary model of HIV SPVL evolution presented here quantitatively reproduced the attenuation of HIV-1 virulence that happened in the last 20 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the model predictions matched the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "217b1174-1c65-4160-808f-44e7b5873680",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C73",
+      "claim": "The decline in virulence is predicted to continue into the future.",
+      "claim_type": "EXPLICIT",
+      "source": "This decline in virulence is predicted to continue into the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a prediction based on the model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "2b78259d-86fa-4ef7-b20d-05a991af1aab",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C74",
+      "claim": "Aggressive test-and-treat strategies have little predicted effect on evolutionary dynamics of SPVL.",
+      "claim_type": "EXPLICIT",
+      "source": "This decline is unaffected by ART becoming more widely available, as even aggressive test-and-treat strategies have little predicted effect on these evolutionary dynamics (Roberts et al., 2015; Herbeck et al., 2016) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies and references a figure showing model predictions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "38a77f91-1642-4655-ad42-80339c8e90ec",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C75",
+      "claim": "Reduction of set-point viral loads should have resulted in a 20% reduction in incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of set-point viral loads should have resulted in a 20% reduction in incidence, and a three years extension of untreated asymptomatic infection, increasing opportunities for timely treatment of infected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a prediction from the model in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "84e5c415-4f9b-4870-8ceb-96bf7642d994",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C76",
+      "claim": "Reduction of set-point viral loads should have resulted in a three years extension of untreated asymptomatic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of set-point viral loads should have resulted in a 20% reduction in incidence, and a three years extension of untreated asymptomatic infection, increasing opportunities for timely treatment of infected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a prediction from the model in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ab9a31c3-3802-421a-abb1-a984882c1f63",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C77",
+      "claim": "Intermediate virulence maximizes pathogen fitness as a result of a trade-off between virulence and transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary theory hypothesizes that intermediate virulence maximizes pathogen fitness as a result of a trade-off between virulence and transmission, but empirical evidence remains scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a theoretical hypothesis from evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ba5008b1-9778-4a19-8ce1-1cbb11170ecc",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C78",
+      "claim": "Set-point viral load has declined in Uganda in the last 20 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, set-point viral load, the most common measure of virulence, has declined in the last 20 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states an observed trend in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "0259ba1b-e9d5-4a22-bcc0-302e431d24ab",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C79",
+      "claim": "Subtype A is slowly outcompeting subtype D in Uganda.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts that subtype A is slowly outcompeting subtype D, with both subtypes becoming less virulent, as observed in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a model prediction that matches observed data in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "98a7a284-37d0-41f5-802b-bffc36d80624",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C80",
+      "claim": "Both subtype A and subtype D are becoming less virulent in Uganda.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts that subtype A is slowly outcompeting subtype D, with both subtypes becoming less virulent, as observed in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a model prediction that matches observed data in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "27497fac-760b-45a4-8d2e-5b8a4e895aa9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C81",
+      "claim": "In untreated HIV infection, higher SPVL translates into higher per-contact transmission rates but also faster disease progression to AIDS and death.",
+      "claim_type": "EXPLICIT",
+      "source": "In untreated infection, higher SPVL translates into higher per-contact transmission rates but also faster disease progression to AIDS and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a known relationship in HIV infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "ab8dd6a4-cb1e-48a9-97cc-09df6198cc09",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C82",
+      "claim": "An intermediate SPVL value maximises opportunities for transmission in HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "From the perspective of the transmission cycle, this creates a trade-off, under which an intermediate SPVL value maximises opportunities for transmission (Fraser et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on the transmission-virulence trade-off.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "635dbb5f-16ab-4c81-a2ca-7ced1396ca67",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C83",
+      "claim": "The transmission potential of a parasite is the product of the transmission rate and the time during which the host is alive and can transmit.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed the transmission potential of a parasite is the product of the transmission rate and the time during which the host is alive and can transmit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a theoretical concept from epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "68e4588b-0d66-4a74-ab34-d93c86ef13bf",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C84",
+      "claim": "The time during which the host can transmit HIV is approximately the time to AIDS, as host death occurs shortly after the onset of AIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is approximately the time to AIDS in HIV as host death occurs shortly after the onset of AIDS and sexual activity may be reduced in the AIDS phase because of AIDS-associated symptoms (Hollingsworth et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on the relationship between AIDS and transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "2e927e1f-5ee4-40c3-b54f-3b7f89b22425",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C85",
+      "claim": "Sexual activity may be reduced in the AIDS phase because of AIDS-associated symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is approximately the time to AIDS in HIV as host death occurs shortly after the onset of AIDS and sexual activity may be reduced in the AIDS phase because of AIDS-associated symptoms (Hollingsworth et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on sexual activity during AIDS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "eb3f6a29-51be-4612-a14a-3b33afb8789a",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C86",
+      "claim": "Many persons at risk of HIV infection do not routinely obtain HIV testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many persons at risk of infection do not routinely obtain HIV testing (Paz-Bailey et al., 2013), such changes may lead to more transmission and more newly diagnosed patients presenting with advanced infection, despite the widespread availability of antiretroviral therapy (ART).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on HIV testing behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "5a1d2162-bf72-4fe1-99c1-8a4a4cca0468",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C87",
+      "claim": "CTL escape mutations usually sweep through during infection because the fitness benefit of evading the immune system outweighs the cost of reduced replicative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "These usually sweep through during infection because the fitness benefit of evading the immune system outweighs the cost of reduced RC that these mutations also impose (Goepfert et al., 2008; Carlson and Brumme, 2008; Matthews et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on CTL escape mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "260d8746-1406-4ace-b948-7296b510b41b",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C88",
+      "claim": "CTL escape mutations may be reverted if the virus harbouring a costly CTL-escape mutation is transmitted to an individual where the mutation does not help evade the new host's immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "CTL escape mutations may be reverted if the virus harbouring a costly CTL-escape mutation is transmitted to an individual where the mutation does not help evade the new host's immune system (Carlson et al., 2014; Zanini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on reversion of CTL escape mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "09a612f2-acde-451b-acfe-32190f7abed5",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "claim_id": "C89",
+      "claim": "Mutations that increase the replicative capacity of the virus in all hosts may evolve within HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that increase the replicative capacity of the virus in all hosts may also evolve (Kouyos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study on mutations affecting replicative capacity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5676dd54-7070-4407-b639-6d23135d291e",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SPVL was measured in 647 HIV incident cases and 817 serodiscordant couples in the Rakai cohort, showing high variability ranging from 10\u00b2 to 10\u2077 copies/mL. The median time between last negative and first positive visit for incident cases was 1.25 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide basic descriptive statistics of the study population and SPVL measurements. The sample sizes, ranges, and timing are clearly stated and form the foundation for subsequent analyses. These are straightforward data descriptions that are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "138ad8c8-d49c-46e2-b87c-70f528c3085d",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Higher SPVL is significantly associated with increased HIV transmission rate in serodiscordant couples. The best-fitting model is a stepwise function with three plateaus (transmission rates 0.019-0.14/year, \u0394AIC=-75.96), though a generalized Hill function also fits well (\u0394AIC=-71.17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 establish the transmission-SPVL relationship using appropriate statistical modeling (maximum likelihood, AIC comparison). The large \u0394AIC values indicate strong model support. Figure 1a-b show good agreement between model predictions and data. This is a core finding demonstrating the transmission component of the virulence-transmission trade-off.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "323ecbf9-17a5-4dcf-a6c2-88d0def94438",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Subtype A has higher transmission rates than subtype D across all SPVL values (\u0394AIC=-3.32). Gender had no effect on transmission (\u0394AIC=1.66), while male circumcision reduced transmission in both directions (\u0394AIC=-3.74 female-to-male, -3.17 male-to-female).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 examine covariates affecting transmission. The subtype effect is supported by modest \u0394AIC and prior literature. The gender null result and circumcision effects are appropriately reported with AIC comparisons. However, the positive \u0394AIC for gender (1.66) actually suggests the model without gender is slightly better, which is correctly interpreted as no effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "55548bae-1f1e-4eb4-b7de-565ad2ec12a9",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Higher SPVL is significantly associated with shorter time to AIDS. The best model is a stepwise function with three plateaus (time to AIDS: 40-5 years, \u0394AIC=137.22). The inferred gamma distribution has shape parameter 1.2, similar to exponential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 establish the virulence-SPVL relationship. The large \u0394AIC (137.22) strongly supports the model. Figure 1c-d show good model fit. The gamma shape parameter of 1.2 is close to exponential (shape=1), which is a reasonable approximation. This establishes the virulence component of the trade-off.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "c84c3f24-d5f8-4bb2-a93c-06460ed221f3",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Subtype D tended toward faster disease progression but was not statistically significant (\u0394AIC=15.41). Time to AIDS did not vary significantly by gender (\u0394AIC=7.85).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 report null or non-significant findings for covariates. The positive \u0394AIC values correctly indicate these factors do not improve model fit. The authors appropriately note the trend for subtype D is consistent with prior studies but lacks statistical significance here, possibly due to selection bias (rapid progressors lacking SPVL values).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "44a69e75-6842-415f-b0a9-d1fb5add34d0",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimal SPVL that maximizes mean viral fitness is 3.4 log10 copies/mL (95% CI [2.6; 4.0]). HIV prevalence was approximately constant at 14% from 1995-2013, SPVL distribution is approximately normal, and heritability was previously estimated at 36% (CI 6-66%) in this cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 establish key parameters for the evolutionary model. C16 derives the optimal SPVL from the transmission and virulence functions with appropriate confidence intervals. C17-C18 describe population-level parameters needed for the Price equation approximation. C19 cites prior heritability estimates from the same cohort. These are well-supported foundational parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "1142f885-66ec-4885-9dbc-24d345bdcff7",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ODE simulations predicted SPVL decline at rates of -0.042, -0.013, and -0.0009 log10 copies/mL/year under three within-host evolution scenarios. The observed trends were best explained by scenario 2 (moderate negative impact of within-host mutations, \u03b1=-0.093).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C24 present model predictions and identify the best-fitting scenario. The three scenarios span plausible parameter space based on literature. Scenario 2 provides the closest match to observed data (C22). However, the parameterization of \u03b1 relies on limited data and assumptions about within-host evolution, introducing uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "10f9a9ca-445e-4e93-a65d-3b099b8c2a7f",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SPVL in incident cases declined at -0.022 log10 copies/mL/year (adjusted, CI [-0.04; -0.002], p=0.027, n=603) and -0.029/year unadjusted (p=0.0005). Prevalent cases showed similar decline at -0.020/year, though significance testing was limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C25 report the key observed temporal trend. The adjusted analysis (C22) controls for multiple covariates and shows statistical significance. The unadjusted analysis (C25) shows stronger significance. The prevalent case analysis (C23) is appropriately noted as having limitations. Figure 2c shows the trend clearly. This is the central empirical finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple potential confounders were systematically evaluated: ART (introduced 2004, late-stage only until 2011), nutrition (adequate dietary diversity), and coinfections (tuberculosis, malaria, HSV-2, STIs, helminths). None could explain the observed 0.4 log10 decline in SPVL. ART likely had little effect on evolutionary dynamics given late initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30, C61, C63-C65, C68-C71 systematically address potential confounders. The authors provide quantitative estimates showing none could account for the observed decline. The ART analysis is particularly thorough, examining pre-2004 data and individual trajectories. The coinfection analysis uses prevalence and effect size data to estimate maximum possible impacts. This strengthens the inference that viral evolution is responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "3561c307-061b-465e-b33c-b0294ecc4a24",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The evolutionary model predicted subtype dynamics: subtype A increased (0.009/year, CI [-0.0007; 0.022]), recombinants increased (0.007/year, CI [-0.005; 0.017]), and subtype D decreased (-0.016/year, CI [-0.027; -0.002]) (p=0.044 overall). Subtype frequency changes contributed -0.003 log10/year to SPVL decline, much less than within-subtype evolution (-0.022/year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 extend the model to subtype-specific dynamics. The model predictions match observed subtype frequency changes (Figure 3d). The decomposition showing within-subtype evolution dominates over between-subtype changes is quantitatively supported. However, confidence intervals for subtype A and recombinants include zero, indicating some uncertainty in these trends.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "248ac3de-ca1f-4d7f-b9ef-ad7b78422265",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SPVL declined within both major subtypes (A and D). Inferred fitness functions for both subtypes were consistent with within-subtype SPVL decline. However, the model predicted slower decline in subtype A than observed, attributed to this subtype's population expansion favoring transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 examine within-subtype evolution. Figure 2d shows declining SPVL in both subtypes. The model-data discrepancy for subtype A (C41) is acknowledged and explained mechanistically. This demonstrates the model captures key dynamics while identifying areas where predictions diverge, which is scientifically appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "3eb8e04a-82b9-44da-9272-a77f97f30745",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed HIV attenuation in Uganda contrasts with increasing virulence in Europe (0.013-0.020 log10/year over 28 years), previously hypothesized to reflect adaptation to optimal SPVL of 4.5. However, European SPVL has declined since 2004. Similar attenuation was observed comparing Botswana and South Africa epidemics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 contextualize findings within global HIV evolution. All claims cite appropriate literature. The contrast with Europe is well-documented, though the authors note European trends may also reflect transient selection. The Botswana/South Africa comparison provides independent support for HIV attenuation in Africa. This appropriately situates the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "c407aaa4-7520-457b-8fe3-649168271bd3",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SPVL is likely determined by many loci of small effect, making polygenic adaptation difficult to detect. Heritability of SPVL is generally 30-40% across different settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 discuss the genetic architecture of SPVL and cite appropriate literature. These claims acknowledge limitations in directly demonstrating genetic changes while providing theoretical justification for why the observed phenotypic changes are consistent with genetic evolution. The heritability estimates are well-established across multiple studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "820f8b3a-9efe-4d00-9c7a-3e190e25f03a",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The evolutionary model quantitatively reproduced the observed 20-year attenuation of HIV-1 virulence. This decline is predicted to continue and is unaffected by ART expansion, as even aggressive test-and-treat strategies have little predicted effect on evolutionary dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 summarize model validation and future predictions. C72 is supported by the agreement between model and data (Figure 2b). C73-C74 are model-based predictions citing prior work showing ART has limited evolutionary impact. Figure 2\u2014figure supplement 3 supports C74. These are reasonable extrapolations from a validated model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "d2ea6b3c-1081-488e-abc6-1711790a1796",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The observed reduction in SPVL should have resulted in a 20% reduction in HIV incidence and a 3-year extension of untreated asymptomatic infection, increasing opportunities for timely treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C76 present public health implications but lack direct empirical support or detailed modeling justification in the manuscript. These appear to be model-based predictions, but the calculations are not shown. The 20% incidence reduction and 3-year extension are specific quantitative claims that require validation. Without supporting analysis, these remain uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "a80f06ef-178b-4ad3-839f-85ea3e148cd6",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The RCCS conducted approximately annual surveys of consenting residents aged 15-49 in 50 communities since 1994. HIV transmission is virtually all heterosexual, with stable reported intercourse rates. SPVL was defined as mean log10 viral load >6 months post-infection and pre-ART.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe study design and key definitions. These are straightforward methodological descriptions that establish the data collection framework. The SPVL definition is standard and appropriate for capturing set-point values while excluding acute and treated phases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "02bd8b0d-ab86-4c27-afe5-e11c8579d37d",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In multivariate analysis, males had higher SPVL than females (+0.259, p=4.2\u00d710\u207b\u2075), subtype D had higher SPVL than A (+0.211, p=0.017), and older age slightly increased SPVL (+0.009/year, p=0.030) (n=603).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 report covariate effects from multivariate regression. All show statistical significance with appropriate confidence intervals and p-values. These findings are consistent with prior literature (cited for C56). These establish important covariates that were controlled for in the temporal trend analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript establishes theoretical framework: evolutionary theory predicts intermediate virulence maximizes fitness via transmission-virulence trade-off. In HIV, higher SPVL increases transmission but accelerates progression to AIDS, creating a trade-off. Transmission potential equals transmission rate times infectious duration (approximately time to AIDS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C86 establish the theoretical foundation from evolutionary epidemiology. These are well-established concepts appropriately cited. C77 states the central hypothesis being tested. C81-C85 describe the HIV-specific trade-off mechanism. C86 notes testing behavior as context. These provide essential background and are well-supported by literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    },
+    {
+      "id": "2bebcbce-a284-4ae3-bd00-309b52979e5e",
+      "content_id": "6071549b-26e9-4408-b66f-2cdc75fcfb13",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Within-host HIV evolution involves CTL escape mutations (usually sweep despite RC costs due to immune evasion benefits), potential reversion in new hosts lacking relevant HLA, and possible RC-increasing mutations. The net effect on SPVL across transmission is uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 describe within-host evolutionary processes relevant to parameterizing the \u03b1 parameter. All cite appropriate literature. These claims acknowledge the complexity and uncertainty in within-host evolution, justifying the exploration of multiple scenarios. This appropriately frames the limitations in parameterizing within-host effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:30:09.028099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16da610a-740a-49dc-af2c-5b365c799e74",
+      "result_id": "5676dd54-7070-4407-b639-6d23135d291e"
+    },
+    {
+      "claim_id": "be95858a-1c8f-462b-98e4-32bf1c725cdc",
+      "result_id": "5676dd54-7070-4407-b639-6d23135d291e"
+    },
+    {
+      "claim_id": "e9f3098a-bee3-42d4-bc78-6fe454413b36",
+      "result_id": "5676dd54-7070-4407-b639-6d23135d291e"
+    },
+    {
+      "claim_id": "8c570675-ac8f-4814-b4ab-c698418b1d20",
+      "result_id": "5676dd54-7070-4407-b639-6d23135d291e"
+    },
+    {
+      "claim_id": "0dfadb12-fedf-4f61-9268-f98a7bb55c4b",
+      "result_id": "138ad8c8-d49c-46e2-b87c-70f528c3085d"
+    },
+    {
+      "claim_id": "452a54ea-18cd-4368-82b1-42914064f14c",
+      "result_id": "138ad8c8-d49c-46e2-b87c-70f528c3085d"
+    },
+    {
+      "claim_id": "c749cb27-ba58-46a7-9ed6-8de537e7e567",
+      "result_id": "138ad8c8-d49c-46e2-b87c-70f528c3085d"
+    },
+    {
+      "claim_id": "ca8fa83d-9c17-47aa-8834-02a6b93b89fa",
+      "result_id": "323ecbf9-17a5-4dcf-a6c2-88d0def94438"
+    },
+    {
+      "claim_id": "02b60475-af57-4358-b03f-bad367f31752",
+      "result_id": "323ecbf9-17a5-4dcf-a6c2-88d0def94438"
+    },
+    {
+      "claim_id": "3ea58859-b31f-4c6f-9271-5869aed535b9",
+      "result_id": "323ecbf9-17a5-4dcf-a6c2-88d0def94438"
+    },
+    {
+      "claim_id": "57a9c129-9a79-45e2-aa07-94b837324327",
+      "result_id": "55548bae-1f1e-4eb4-b7de-565ad2ec12a9"
+    },
+    {
+      "claim_id": "440522d4-9bbf-483a-a5ef-49faa7b2d9e4",
+      "result_id": "55548bae-1f1e-4eb4-b7de-565ad2ec12a9"
+    },
+    {
+      "claim_id": "48cc8eb1-0b99-4939-a483-6153a1cc7ec9",
+      "result_id": "55548bae-1f1e-4eb4-b7de-565ad2ec12a9"
+    },
+    {
+      "claim_id": "e0966009-294f-4df4-add0-0e7b5552935a",
+      "result_id": "c84c3f24-d5f8-4bb2-a93c-06460ed221f3"
+    },
+    {
+      "claim_id": "14aad9e0-a1e2-4714-8cba-fecc1433cab3",
+      "result_id": "c84c3f24-d5f8-4bb2-a93c-06460ed221f3"
+    },
+    {
+      "claim_id": "66bf53b5-a417-4ef2-a5d1-1a5dfb6d9d11",
+      "result_id": "44a69e75-6842-415f-b0a9-d1fb5add34d0"
+    },
+    {
+      "claim_id": "2ef7ba4b-7815-4f46-8d0a-7b3434030dd4",
+      "result_id": "44a69e75-6842-415f-b0a9-d1fb5add34d0"
+    },
+    {
+      "claim_id": "bb66e703-cdc8-410e-90d3-50b4f240a155",
+      "result_id": "44a69e75-6842-415f-b0a9-d1fb5add34d0"
+    },
+    {
+      "claim_id": "8178ffdd-3562-4ecc-9917-977c6542502d",
+      "result_id": "44a69e75-6842-415f-b0a9-d1fb5add34d0"
+    },
+    {
+      "claim_id": "e7fae346-27a4-47d5-a819-bf2459e89606",
+      "result_id": "1142f885-66ec-4885-9dbc-24d345bdcff7"
+    },
+    {
+      "claim_id": "f232e64a-a53b-41df-8d99-1a8d5ccb9bb2",
+      "result_id": "1142f885-66ec-4885-9dbc-24d345bdcff7"
+    },
+    {
+      "claim_id": "9ef9a59c-4441-4b2a-8971-9b3d329119c2",
+      "result_id": "10f9a9ca-445e-4e93-a65d-3b099b8c2a7f"
+    },
+    {
+      "claim_id": "db456a97-46f4-4922-9d24-d9a41a4bd164",
+      "result_id": "10f9a9ca-445e-4e93-a65d-3b099b8c2a7f"
+    },
+    {
+      "claim_id": "e6e4a152-ed26-43d8-b2b3-b916e92df189",
+      "result_id": "10f9a9ca-445e-4e93-a65d-3b099b8c2a7f"
+    },
+    {
+      "claim_id": "6855ec7e-a2a2-4add-af06-19dda412ae02",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "f3d2c874-aa83-4b25-8cdd-9abb9efe08b9",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "9d16b3f5-8c50-4310-8632-1ef819d51853",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "cd76c5ce-6186-452c-a637-318d25cb7cf7",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "325ae64c-0179-41c3-aeb7-d17aad9f4057",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "a33eb7b3-e016-4e7e-b65b-3e64c7d14990",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "c2ea3aaf-dd11-4288-b2e0-a4c79a86d9f2",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "0b0a8e64-0b96-4fdd-b07e-38d6f895b29c",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "6d3b55e2-80a0-4438-9fc1-db3c9c13cccf",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "76f32342-4a39-470c-82ff-916da0fa9fdd",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "cba5e310-1350-4fe1-9377-a3584f0e0d29",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "fb85d2b0-964a-482e-8e57-f64a00dc58b2",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "593271c5-3abc-4d25-8142-a8a1de7d1559",
+      "result_id": "5ab7c7f3-dedc-4c0b-b9c5-dbb033852a85"
+    },
+    {
+      "claim_id": "2db21395-4b22-41a5-8954-8b0d31630dd2",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "e8f1d600-4e91-4b81-a406-c90a0536b7df",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "9e566252-6f82-4e01-af9c-8e37cb46ac02",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "ca05ad23-9927-43c6-86d7-9b4e157b78f9",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "f4dccc0a-f9ce-405f-9abe-9a8d297408bb",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "86f96b13-8d7f-4552-9b49-e67b82948527",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "7897d244-1522-4926-9c70-f49d3152496f",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "3fab6efc-9423-414a-8660-e0c8956cee12",
+      "result_id": "3561c307-061b-465e-b33c-b0294ecc4a24"
+    },
+    {
+      "claim_id": "ab47ed6e-90a7-413f-b69e-114174b23c15",
+      "result_id": "248ac3de-ca1f-4d7f-b9ef-ad7b78422265"
+    },
+    {
+      "claim_id": "7df8c8d4-7075-42ee-8d60-301d9e07a623",
+      "result_id": "248ac3de-ca1f-4d7f-b9ef-ad7b78422265"
+    },
+    {
+      "claim_id": "4ffc16d5-efdd-4536-8b23-42ce6e09d3f0",
+      "result_id": "248ac3de-ca1f-4d7f-b9ef-ad7b78422265"
+    },
+    {
+      "claim_id": "a1bd51ba-2636-43a2-b6c9-1f5035085382",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "ba870c5d-0f0c-4d7a-8022-b0eba25b3b39",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "9b39a3c3-ec96-498d-b044-c51695ed24d4",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "9dd6971e-9ccd-463a-9949-825c91d3b4c5",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "ec1a3220-86ec-4d9d-8109-7f77ed855a4d",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "24f0333f-3278-4496-a4aa-ef9666d12567",
+      "result_id": "3eb8e04a-82b9-44da-9272-a77f97f30745"
+    },
+    {
+      "claim_id": "d055c80a-dda4-4e85-920a-c399001b862b",
+      "result_id": "c407aaa4-7520-457b-8fe3-649168271bd3"
+    },
+    {
+      "claim_id": "16b77615-fe1f-43f7-9e9f-43c426bcfd0c",
+      "result_id": "c407aaa4-7520-457b-8fe3-649168271bd3"
+    },
+    {
+      "claim_id": "b6869ba0-53d4-4023-bcdd-948e469b6065",
+      "result_id": "c407aaa4-7520-457b-8fe3-649168271bd3"
+    },
+    {
+      "claim_id": "29d79620-ed93-47ec-af80-c3a88330677b",
+      "result_id": "820f8b3a-9efe-4d00-9c7a-3e190e25f03a"
+    },
+    {
+      "claim_id": "217b1174-1c65-4160-808f-44e7b5873680",
+      "result_id": "820f8b3a-9efe-4d00-9c7a-3e190e25f03a"
+    },
+    {
+      "claim_id": "2b78259d-86fa-4ef7-b20d-05a991af1aab",
+      "result_id": "820f8b3a-9efe-4d00-9c7a-3e190e25f03a"
+    },
+    {
+      "claim_id": "38a77f91-1642-4655-ad42-80339c8e90ec",
+      "result_id": "d2ea6b3c-1081-488e-abc6-1711790a1796"
+    },
+    {
+      "claim_id": "84e5c415-4f9b-4870-8ceb-96bf7642d994",
+      "result_id": "d2ea6b3c-1081-488e-abc6-1711790a1796"
+    },
+    {
+      "claim_id": "ad522887-b0ee-4977-82bf-e5f2dafcdb03",
+      "result_id": "a80f06ef-178b-4ad3-839f-85ea3e148cd6"
+    },
+    {
+      "claim_id": "e55dafb1-1587-48c4-a43b-1ce9fb527586",
+      "result_id": "a80f06ef-178b-4ad3-839f-85ea3e148cd6"
+    },
+    {
+      "claim_id": "43f527ce-e39d-4c89-a622-60fa0659d383",
+      "result_id": "a80f06ef-178b-4ad3-839f-85ea3e148cd6"
+    },
+    {
+      "claim_id": "9b80dcb5-b452-4545-b9d0-72e5bd303407",
+      "result_id": "a80f06ef-178b-4ad3-839f-85ea3e148cd6"
+    },
+    {
+      "claim_id": "39b9e311-2ef7-4ece-a2fe-2cec46b3208c",
+      "result_id": "02bd8b0d-ab86-4c27-afe5-e11c8579d37d"
+    },
+    {
+      "claim_id": "69ec753f-a3e5-478b-8566-cdc2fb6e8164",
+      "result_id": "02bd8b0d-ab86-4c27-afe5-e11c8579d37d"
+    },
+    {
+      "claim_id": "b232eaa3-a49e-4a63-a780-bd6d44eda90e",
+      "result_id": "02bd8b0d-ab86-4c27-afe5-e11c8579d37d"
+    },
+    {
+      "claim_id": "ab9a31c3-3802-421a-abb1-a984882c1f63",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "ba5008b1-9778-4a19-8ce1-1cbb11170ecc",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "0259ba1b-e9d5-4a22-bcc0-302e431d24ab",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "98a7a284-37d0-41f5-802b-bffc36d80624",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "27497fac-760b-45a4-8d2e-5b8a4e895aa9",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "ab8dd6a4-cb1e-48a9-97cc-09df6198cc09",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "635dbb5f-16ab-4c81-a2ca-7ced1396ca67",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "68e4588b-0d66-4a74-ab34-d93c86ef13bf",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "2e927e1f-5ee4-40c3-b54f-3b7f89b22425",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "eb3f6a29-51be-4612-a14a-3b33afb8789a",
+      "result_id": "d4c7553c-b8a4-4f19-81ae-d06179bd3a09"
+    },
+    {
+      "claim_id": "5a1d2162-bf72-4fe1-99c1-8a4a4cca0468",
+      "result_id": "2bebcbce-a284-4ae3-bd00-309b52979e5e"
+    },
+    {
+      "claim_id": "260d8746-1406-4ace-b948-7296b510b41b",
+      "result_id": "2bebcbce-a284-4ae3-bd00-309b52979e5e"
+    },
+    {
+      "claim_id": "09a612f2-acde-451b-acfe-32190f7abed5",
+      "result_id": "2bebcbce-a284-4ae3-bd00-309b52979e5e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1531 @@
+{
+  "submission": {
+    "id": "90a91ccb-7fac-40d7-b4bd-acb8cefbb0e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:52:54.066465Z",
+    "updated_at": "2025-11-30T23:52:54.066465Z"
+  },
+  "content": [
+    {
+      "id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "submission_id": "90a91ccb-7fac-40d7-b4bd-acb8cefbb0e0",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule visualization of fast polymerase turnover in the bacterial replisome\n\n## Authors\n\n- Jacob S Lewis<sup>1</sup> ([ORCID: 0000-0002-9945-6133](https://orcid.org/0000-0002-9945-6133))\n- Lisanne M Spenkelink<sup>1</sup> ([ORCID: 0000-0002-5511-8757](https://orcid.org/0000-0002-5511-8757))\n- Slobodan Jergic<sup>1</sup>\n- Elizabeth A Wood<sup>4</sup>\n- Enrico Monachino<sup>1</sup>\n- Nicholas P Horan<sup>1</sup>\n- Karl E Duderstadt<sup>3</sup>\n- Michael M Cox<sup>4</sup>\n- Andrew Robinson<sup>1</sup>\n- Nicholas E Dixon<sup>1</sup> ([ORCID: 0000-0002-5958-6945](https://orcid.org/0000-0002-5958-6945)) \u2020\n- Antoine M van Oijen<sup>1</sup> ([ORCID: 0000-0002-1794-5161](https://orcid.org/0000-0002-1794-5161)) \u2020\n\n### Affiliations\n\n1. Centre for Medical and Molecular Bioscience University of Wollongong Wollongong Australia\n2. Illawarra Health and Medical Research Institute University of Wollongong Wollongong Australia\n3. Zernike Institute for Advanced Materials University of Groningen Groningen The Netherlands\n4. Department of Biochemistry University of Wisconsin-Madison Madison United States\n5. Max Planck Institute of Biochemistry Martinsried Germany\n6. Physik Department Technishche Universit\u00e4t M\u00fcnchen Garching Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Escherichia coli DNA replication machinery has been used as a road map to uncover design rules that enable DNA duplication with high efficiency and fidelity. Although the enzymatic activities of the replicative DNA Pol III are well understood, its dynamics within the replisome are not. Here, we test the accepted view that the Pol III holoenzyme remains stably associated within the replisome. We use in vitro single-molecule assays with fluorescently labeled polymerases to demonstrate that the Pol III* complex (holoenzyme lacking the \u03b22 sliding clamp), is rapidly exchanged during processive DNA replication. Nevertheless, the replisome is highly resistant to dilution in the absence of Pol III* in solution. We further show similar exchange in live cells containing labeled clamp loader and polymerase. These observations suggest a concentration-dependent exchange mechanism providing a balance between stability and plasticity, facilitating replacement of replisomal components dependent on their availability in the environment.\n\n## Introduction\n\nThe Escherichia coli replisome requires participation of 13 different proteins. Ten of them form the DNA polymerase III (Pol III) holoenzyme (HE), which is arranged into three functionally distinct and stably\u00a0bound subassemblies (Figure 1A): \u03b1\u03b5\u03b8 forms the Pol III core that has DNA polymerase activity; \u03b22 is the sliding clamp needed for stable association with the primer\u2013template DNA; and \u03c4n\u03b3(3\u2013n)\u03b4\u03b4\u2019\u03c8\u03c7 (where n\u00a0=\u00a02 or 3 in the HE) is the clamp loader complex (CLC) that loads \u03b22 onto DNA and is the central organizer of the replisome (Robinson and van Oijen, 2013; Duderstadt et al., 2014; Lewis et al., 2016). The CLC interacts with two or three Pol III cores via the \u03b1\u2013\u03c4 interaction, forming stable complexes termed Pol III* (i.e. HE lacking only the sliding clamp). Pol III* ensures the organization of the cores needed for coordinated DNA synthesis on the two template strands (Wu et al., 1992;\u00a0Onrust et al., 1995) and is essential for cell survival (Blinkova et al., 1993). Although physical coupling of leading and lagging strand cores in one HE particle requires the lagging strand polymerase to undergo cycles of release and rebinding from one Okazaki fragment to the next, the molecular mechanisms underlying its cycling are still debated (Dohrmann et al., 2011). There is, however, consensus that Pol III is reused rather than replaced for successive Okazaki fragment synthesis (Tanner et al., 2008, 2009, 2011; Yao et al., 2009; Georgescu et al., 2011). Thus, the replisome is believed to be a highly stable entity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig1-v2.jpg)\n\n**Figure 1.:** (A) Canonical view of the organization of the E. coli replication fork. The DnaB helicase encircles the lagging strand, facilitates unwinding of dsDNA through ATP hydrolysis, and recruits DnaG primase for synthesis of RNA primers that initiate synthesis of 1\u20132 kb Okazaki fragments on the lagging strand. The extruded single-stranded (ss) DNA is protected by ssDNA-binding protein, SSB. The Pol III holoenzyme (HE) uses the ssDNA of both strands as a template for coupled, simultaneous synthesis of a pair of new DNA duplex molecules. The \u03b22 sliding clamp confers high processivity on the Pol III HE by tethering the\u00a0\u03b1\u03b5\u03b8 Pol III core onto the DNA. The clamp loader complex (CLC) assembles the \u03b22 clamp onto RNA primer junctions. Up to three Pol III cores interact with the CLC through its \u03c4 subunits to form the Pol III* complex, and the \u03c4 subunits also interact with DnaB, thus coupling the Pol III HE to the helicase. (B) Schematic representation of the experimental design. 5'-Biotinylated M13 DNA is coupled to the passivated surface of a microfluidic flow cell through a streptavidin linkage. Addition of the E. coli replication proteins and nucleotides initiates DNA synthesis. The DNA products are elongated hydrodynamically by flow, labeled with intercalating DNA stain, and visualized using fluorescence microscopy (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Laser light of a specific wavelength is coupled into the microscope objective. The fluorescence signal from the sample is detected with an EMCCD or sCMOS camera. (Inset) Micro-fluidic flow cell schematic. A PDMS lid containing three flow chambers is placed on top of a PEG-biotin-functionalized microscope coverslip. Tubing is inserted into 1 mm holes in the PDMS.\n\nThe key observations that support efficient Pol III recycling derive from in vitro replication assays in the absence of free polymerase (Yao et al., 2009; Tanner et al., 2011; Georgescu et al., 2011) and are consistent with the high stability of the \u03b1\u2013\u03c4 interaction that binds cores to the CLC (KD\u00a0=\u00a00.3 nM; t1/2\u00a0=\u00a029 min in 300 mM NaCl) (Jergic et al., 2007). Nevertheless, the introduction of high concentrations of catalytically dead Pol III* (still able to bind primed DNA) inhibits ongoing replication (Yuan et al., 2016). Reconciling these different observations, we here demonstrate the presence of a novel exchange mechanism that allows Pol III* to remain stably associated with the replisome under conditions of high dilution, yet facilitates rapid exchange at nanomolar concentrations.\n\n## Results\n\n### In vitro single-molecule observation of Pol III dynamics\n\nWe use a single-molecule approach to directly visualize the dynamics of Pol III complexes at the replication fork (Mok and Marians, 1987; Tanner et al., 2009). A rolling-circle DNA amplification scheme is used to observe highly processive DNA synthesis in real time, while imaging Pol III complexes entering and leaving the replisome. Using the minimal set of 12 proteins required to support coupled leading and lagging strand synthesis, we allow active replisomes to self assemble onto pre-formed replication forks (Tanner et al., 2008,\u00a02009). A 5'-flap within a 7.2 kb double-stranded (ds) circular DNA substrate is anchored to the surface of a microfluidic flow cell and replication is initiated by introducing a laminar flow of buffer with the components required for coupled leading and lagging strand synthesis (Figure 1B). As replication proceeds, the newly synthesized leading strand becomes part of the circle and later acts as a template for lagging strand synthesis. With the lagging strand attached to the surface and the continuously growing DNA product stretched in the buffer flow, the dsDNA circle moves away from the anchor point. Replication is visualized by real-time near-TIRF fluorescence imaging of stained dsDNA (Figure 2A, Figure 2\u2014figure supplement 1). This strategy allows quantification of the rates of individual replisomes and their processivities (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig2-v2.jpg)\n\n**Figure 2.:** (A) Kymograph of an individual DNA molecule undergoing coupled leading and lagging strand replication. The gray scale indicates the fluorescence intensity of stained DNA. (B) Single-molecule trajectory obtained from the kymograph in (A), used to quantify the rates and processivities of replication events. The magenta box represents an example line segment used to determine rates. (C) Kymograph of the dynamics of red-labeled Pol IIIs on an individual DNA molecule. The Pol III moves with the replisome in the direction of flow as it elongates the DNA, visible as a bright magenta spot moving away from the surface anchor point. Additional Pol IIIs are left behind the moving replisome, seen as horizontal lines on the kymograph. (D) Histograms of the rate of replication for wild-type Pol III (492\u00a0\u00b1\u00a023 bp/s) and red Pol III (561\u00a0\u00b1\u00a027 bp/s) fit to Gaussian distributions. (E) Kymograph of the distribution of red Pol III on an individual DNA molecule in the presence of 150 nM Pol I and 100 nM DNA ligase. Prolonged Pol III spots behind the replisome are no longer observed due to the action of Pol I in Okazaki fragment processing. (F) Fluorescence intensity as a function of time of individual red Pol IIIs immobilized on the surface of a coverslip (lower trace; black line is an exponential fit with lifetime\u00a0=\u00a014.1\u00a0\u00b1\u00a00.4 s), and of the replisomal spot in (C) (upper trace). The fluorescence lifetime of red Pol III at the replisome is much longer than the photobleaching lifetime of the dye. The errors represent the standard errors of the mean.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Efficient DNA replication proceeds in the presence of the full complement of replication reaction mix, including the reconstituted E. coli replisome, NTPs and dNTPs. Note both the length and number of products. (B) No DNA products are evident in the entire flow cell in the absence of dNTPs from the replication reaction mix. Note some rolling-circle templates become linearized due to photodamage, visible as lines shorter than 7 kb (2.1 \u03bcm).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) SDS-PAGE of the final fraction from the \u03c4C16 affinity chromatography, pooled from successive samples from the peak in the chromatography profile in (B).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Agarose gel of products of Pol III strand-displacement (SD) DNA synthesis, a demanding assay for Pol III* activity (Jergic et al., 2013). The time course of flap-primer extension on M13 ssDNA depicts products larger than unit length of dsDNA (TFII) generated by SD DNA synthesis. (B) Alkaline agarose gel of coupled DNA replication. Reactions were performed on a 2 kb circular dsDNA template with wild-type (WT) Pol III*, WT Pol III* + SYTOX orange, red SNAP-labeled Pol III* and green SNAP-labeled Pol III*. (Left panel) The gel was stained with SYBR-Gold. (Right panel) Intensity profiles of lanes 2\u20135 of the left panel. The Okazaki fragment size distribution is centered at 1.3\u00a0\u00b1\u00a00.4 kb. Intensity profiles have been corrected for the difference in intensity of different size fragments using the ladder as a standard.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Double-stranded DNA was stained with SYTOX orange (gray scale) and Pol III was labeled with a red fluorophore (magenta). The kymograph demonstrates the fluorescent spot corresponding to Pol III co-localizes with the tip of the growing DNA product (evident as a white spot) where the replication fork is located.\n\nWe fluorescently labeled the Pol III \u03b1 subunit following its fusion to a SNAP tag (Figure 2\u2014figure supplement 2) and covalently coupled it separately in\u00a0>80% yields to red and green fluorophores. Fluorescently labeled Pol III cores were reconstituted from individual SNAP-\u03b1, \u03b5 and \u03b8 subunits and isolated chromatographically (Tanner et al., 2008), then assembled into single-color Pol III*s in situ with separately\u00a0isolated \u03c43-CLC (Tanner et al., 2008). The labeled Pol III*s were active in coupled DNA replication, producing Okazaki fragments of similar sizes to wild-type polymerase (Figure 2\u2014figure supplement 3).\n\nA kymograph (Figure 2C) shows the fluorescence of the red Pol III* during rolling-circle replication; it supports replication at rates similar to the untagged wild-type enzyme (Figure 2D). Simultaneous imaging of the stained DNA and red Pol III* shows that the polymerase spot is located at the tip of the growing DNA, confirming that the labeled Pol III is a functional component of reconstituted replisomes (Figure 2\u2014figure supplement 4). We also observe Pol III that remains bound to the DNA on the lagging strand behind the replication fork, evident as horizontal lines in Figure 2C. We reasoned that these correspond to polymerases bound to the 3'-termini of Okazaki fragments. We repeated the experiment in the presence of Pol I and/or DNA ligase; Pol I replaces RNA primers with DNA and ligase seals the remaining nick. In the presence of Pol I (with or without ligase), Pol III binding behind the replisome is no longer observed (Figure 2E), consistent with Pol I efficiently displacing Pol III during Okazaki fragment maturation.\n\nSurprisingly, the fluorescent Pol III at the growing tip of the rolling circle is highly resistant to photobleaching. Its fluorescence in the replisome has a much longer lifetime compared to that of labeled Pol III cores immobilized on a surface and subjected to the same excitation intensity (Figure 2F). Since the experiments in Figure 2 are performed with 6.7 nM Pol III* in solution, this observation suggests that the polymerase exchanges into the replisome from solution to replace photobleached Pol III.\n\n### Exchange of Pol III* complexes in vitro\n\nTo characterize the dynamic behavior of Pol III at the fork and directly visualize its exchange in real time, we used mixtures of red and green Pol III*s. To demonstrate that green Pol III cores in a Pol III* complex do not exchange with the red ones from another Pol III*, we combined them in a 1:1 ratio for 1 hr at 37\u00b0C (Figure 3A), then imaged the mixture on the surface of a coverslip at the single-molecule level (Figure 3B, Figure 3\u2014figure supplement 1). Consistent with the stable interaction between \u03b1\u00a0in the core and \u03c4\u00a0in the CLC, exchange of Pol III cores was not observed. It remained possible, however, that the nature and strength of the \u03b1\u2013\u03c4 interaction is different at a step in lagging strand replication that involves exchange of Pol III cores within the Pol III* complex (Leu et al., 2003). To test this possibility, we mixed pre-assembled red and green Pol III* complexes in a 1:1 ratio and used them in a bulk rolling-circle replication experiment in an eightfold molar excess over 5'-biotinylated flap-primed dsDNA template. Under these conditions, most Pol III*s will have participated in replication at the fork, as long leading strand and shorter lagging strand products are generated (Figure 3\u2014figure supplement 2). Next, the newly synthesized DNA was removed from proteins by its immobilization on streptavidin beads, and subsequent single-molecule imaging of the released protein fraction on the surface of a coverslip showed no co-localization of red and green Pol III cores (Figure 3C). This result confirms that the functional unit exchanging at the replication fork is the entire Pol III* complex; the interaction between the \u03c4 subunit of the CLC and \u03b1 of Pol III must remain intact during DNA replication, thus challenging the previously suggested model of a \u03c4 processivity switch on the lagging strand (Leu et al., 2003).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig3-v2.jpg)\n\n**Figure 3.:** (A) Red and green Pol III* are separately pre-assembled by treatment at 37\u00b0C for 15 min (30 nM Pol III core and 10 nM \u03c43-CLC). These are then mixed in equal ratios and kept at 37\u00b0C for 1 hr prior to dilution to 6 pM Pol III* for imaging. (B) Red Pol III* complexes and green Pol III* complexes do not co-localize to produce any white spots as seen in Figure 3\u2014figure supplement 1, demonstrating the \u03b1\u2013\u03c4 interaction within the Pol III* complex remains intact for the duration of the DNA replication assays. (C) Pre-assembled red and green Pol III* complexes that have participated in DNA replication (at 3.3 nM of each) do not co-localize, demonstrating that the Pol III cores within a Pol III* do not exchange with cores from other Pol III*s at the replication fork during active DNA synthesis. White scale bars represent 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (Right) Red and green Pol III cores are mixed before adding the CLC (30 nM Pol III core and 10 nM \u03c43-CLC). Pol III* is formed by treatment at 37\u00b0C for 15 min. Complexes are then allowed to equilibrate for 1 hr at 37\u00b0C prior to dilution to 6 pM for imaging. (Left) Red and green Pol III cores co-localize (white spots). White scale bar represents 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Reactions were performed on a 2 kb circular dsDNA template without dNTPs (lanes 1 and 2) and with dNTPs (lane 3). Lane 3 shows long leading strand and shorter lagging strand products are generated after 20 min; the leading strand products remain bound to beads in the well. The gel was stained with SYBR-Gold.\n\nWe visualized exchange of Pol III* at the replication fork by measuring the fluorescence intensity at the replisome spot as a function of time using 1:1 mixtures of red and green Pol III*s (Figure 4A,B, Figure 4\u2014figure supplement 1). At a total Pol III* concentration of 6.7 nM, the replisomal spot exhibits fast dynamics displaying both colors (Video 1), while at a lower concentration of 0.3 nM, the dynamics appear slower and distinct exchange events are visible (Video 2). The longer persistence of a single color at the lower concentration demonstrates that Pol III* exchange is concentration dependent. Given that Pol III* remains intact on time scales much longer than the duration of our experiment, these observations can only be explained by wholesale exchange of Pol III* at the replication fork.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-v2.jpg)\n\n**Figure 4.:** (A) and (B), Kymographs of the distributions of red Pol III* (magenta) and green Pol III* (green) on an individual DNA molecule at a total Pol III* concentration of 6.7 (A) or 0.3 nM (B). Co-localization of the two signals is shown as a bright white fluorescent spot. (C) Kymograph of a pre-assembled replisome containing red Pol III*. The intensity of the signal from the replisomal spot decreases after a Pol III* is left behind. It subsequently bleaches and the signal does not recover. (D) Histograms of the processivity of replication with Pol III* present in solution (73\u00a0\u00b1\u00a025 kb) and under pre-assembly conditions (76\u00a0\u00b1\u00a026 kb), each fit with a single exponential decay function. The errors represent the error of the fit. (E) Histograms of the rates of replication with Pol III* present in solution (561\u00a0\u00b1\u00a027 bp/s) and under pre-assembly conditions (445\u00a0\u00b1\u00a033 bp/s), each fit to a Gaussian distribution. (F) Histograms of the stoichiometry of Pol III* at the replication fork, fit to four (6.7 nM) or three (0.3 nM) Gaussians centered at integral numbers of Pol III* calculated from single Pol III core intensities (see Figure 4\u2014figure supplement 4). The black lines represent the sums of these distributions. The errors in (E) and (F) represent the standard errors of the mean.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Kymographs of the distributions of red (magenta) and green Pol III* (green) on individual DNA molecules at a total Pol III* concentration of 6.7 (A\u2013C) or 0.3 nM (D\u2013F). Co-localization of the two signals is shown as a white fluorescent spot.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Histograms for conditions with pre-assembled replisomes (no polymerases in solution; processivity\u00a0=\u00a076\u00a0\u00b1\u00a026 kb) and under conditions where pre-assembled replisomes are challenged with 10 nM Pol III core (3.5\u00a0\u00b1\u00a00.6 kb), each fit with a single exponential decay function. The data show that actively replicating Pol III* can be easily displaced when challenged with entities that bind to the clamp, but cannot support coordinated leading and lagging strand synthesis. The errors represent the errors of the fit.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Intensity distribution at 6.7 nM Pol III* and (B), intensity distribution at 0.3 nM Pol III*. The histograms are fit with sums of either four (6.7 nM) or three (0.3 nM) Gaussian distribution functions centered at integral numbers of Pol III*.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The histograms are fit with Gaussian distribution functions to give a mean intensity of 5100\u00a0\u00b1\u00a02000 for the red Pol III core and 1600 \u00b1 700 for the green Pol III core. The errors represent the standard errors of the mean.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The fluorescence intensity of labeled Pol III* complexes does not change as a function of DNA length during single-molecule rolling-circle DNA replication under constant flow. The error bars represent the standard deviation from the mean.\n\n![Video 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-media1.mp4.jpg)\n\n**Video 1.:** This movie was used to generate the kymograph in Figure 4A.\n\n![Video 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-media2.mp4.jpg)\n\n**Video 2.:** This movie was used to generate the kymograph in Figure 4B.\n\nOur demonstration of rapid exchange of entire Pol III*s, however, seems difficult to reconcile with observations that both leading and lagging strand Pol III cores remain stably associated during coupled DNA replication (Yao et al., 2009; Tanner et al., 2011; Georgescu et al., 2011). Those studies used assays in which replisomes were assembled, replication initiated, and the reactions rapidly diluted to measure the stability of synthesizing replisomes on DNA. To place our observations of dynamic exchange of Pol III* in context of the previous work, we carried out single-molecule pre-assembly replication assays (Yao et al., 2009; Tanner et al., 2011) using the red Pol III*. In this experiment, the replisome is pre-assembled onto the rolling-circle template in solution. Subsequently, the template is attached to the surface of a flow cell, which is then washed to remove all unbound proteins. Replication is initiated by introduction of a replication solution that omits Pol III* and helicase. Since the absence of free Pol III* in solution makes polymerase exchange impossible, we hypothesized that Pol III would be recycled within the replisome, enabling its sustained participation in processive DNA replication. These conditions indeed support highly processive DNA replication (Figure 4C), with synthesis rates and processivities identical to a situation with Pol III* in solution and consistent with values reported previously (Mok and Marians, 1987; McInerney et al., 2007; Tanner et al., 2009; Yao et al., 2009) (Figure 4D,E). Further, we observed photobleaching without recovery, consistent with the original, pre-assembled Pol III* remaining stably associated within the replisome. As further confirmation of the robustness of the pre-assembled replisome in the absence of competing polymerases and the easy displacement of Pol III* upon challenge, we initiate replication by pre-assembly of replisomes, normally supporting highly processive synthesis, and challenge them with Pol III core. The observation of a sharp reduction in processivity is consistent with the displacement of the Pol III* from the replication fork by the Pol III cores, which are unable to support coordinated leading and lagging strand synthesis (Wu et al., 1992) (Figure 4\u2014figure supplement 2).\n\n### Quantification of exchange time of Pol III* in vitro\n\nTo quantify the concentration-dependent exchange times of Pol III* during coupled DNA replication, we performed in vitro single-molecule FRAP (fluorescence recovery after photobleaching) experiments. We visualized red Pol III* entering and leaving the replication fork at different concentrations using the same rolling-circle amplification scheme as described in Figure 1B. Instead of continuous imaging at constant laser power, we periodically bleached all Pol III* at the replication fork using a high-laser power (Figure 5A). By bleaching the fluorescence signal of Pol III* complexes, we can monitor the recovery of the florescence signal as unbleached Pol III*s from solution exchange into the replisome (Figure 5B). We monitored the recovery of the fluorescence signal and calculated the average intensity after each FRAP pulse over time (Figure 5C, Figure 5\u2014figure supplement 1). By measuring the single-molecule FRAP of Pol III* over a concentration series spanning four orders of magnitude and fitting the rate of signal recovery, we obtained the characteristic exchange time of Pol III* into active replisomes (Figure 5D). At a total Pol III* concentration of 13 nM, the fluorescence signal recovers rapidly (characteristic exchange time, \u03c4\u00a0=\u00a01.85 s), while at 30 pM the fluorescence signal is 20-fold slower to recover (\u03c4\u00a0=\u00a042 s). These observations are in agreement with our previous two-color experiments, indicating that the rate of exchange is dependent on Pol III* concentration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig5-v2.jpg)\n\n**Figure 5.:** (A) (Top panel) Imaging sequence used during the FRAP experiments. Periodically, a FRAP pulse of high-laser power was used to rapidly photobleach all the Pol III* in the field of view. (Bottom panel) A representative kymograph of red Pol III*s at the replication fork. After each FRAP pulse (indicated by the magenta line), all Pol III*s have bleached, but the fluorescence intensity recovers as unbleached Pol III*s exchange into the replisome. (B) Normalized intensity over time for an individual replisome in the presence of 3 nM Pol III* in solution. (C) The average intensity over time from 23 replisomes with 3 nM Pol III* in solution. (D) The three recovery phases in (C) were averaged again to give the final averaged normalized intensity over time after a FRAP pulse. This curve was then fit to provide a characteristic exchange time. This was done for four concentrations of Pol III* ranging from 13 to 0.03 nM. (E) Exchange time as a function of Pol III* concentration.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Kymographs of the distributions of red Pol III* (magenta) on individual DNA molecules at a total Pol III* concentration of 13 (A), 3 (B), 0.3 (C) and 0.03 nM (D).\n\n### Exchange of Pol III* complexes in live cells\n\nInspired by our observations of rapid exchange of Pol III* in vitro, we used in vivo single-molecule measurements to determine whether Pol III* exchange also occurs in live E. coli cells. We imaged cells in which the clamp loader and core complexes were labeled at their C-termini with yellow and red fluorescent proteins, respectively (\u03c4-YPet, \u03b5-mKate2). As observed previously, these fusions remain fully functional (Reyes-Lamothe et al., 2010) (Figure 6\u2014figure supplement 1). These cells were immobilized on a (3-aminopropyl)triethoxysilane-treated coverslip and \u03c4-YPet and \u03b5-mKate2 foci were imaged simultaneously. Fluorescent proteins bound to large structures such as the nucleoid diffuse slowly and thus present in our images as diffraction-limited foci, whereas the signal from proteins freely diffusing through the cytosol blurs over the entire cell (Robinson et al., 2015). To monitor exchange of polymerase molecules at replisomes, the fluorescence intensity of individual replication foci was tracked over time. We noticed that once the population of fluorescent molecules had become partially nonfluorescent by irreversible photobleaching, instances of synchronized intensity fluctuations of \u03c4-YPetand \u03b5-mKate2 within the replisome foci could be observed (Figure 6A). To determine whether these intensity fluctuations were truly correlated, that\u00a0is, whether they could be explained by the exchange of Pol III*, we used cross-correlation analysis, a powerful unbiased method that enables the calculation of (i) the extent of similarity between two fluctuating signals and (ii) on which timescales that similarity occurs. The average cross-correlation function calculated for 1210 foci in 480 cells showed a clear positive cross-correlation peak, consistent with synchronous exchange of \u03c4-YPet and \u03b5-mKate2 (Figure 6B, black line). To show that this peak arises due to protein dynamics, we fixed cells with formaldehyde to arrest all cellular processes and demonstrate the absence of a cross-correlation peak (Figure 6B, gray line). To eliminate the possibility of correlated intensity changes due to laser fluctuations, we calculated the cross-correlation function for random pairs of \u03c4-YPet and \u03b5-mKate2 foci within the same field of view, but from different cells. Also here, no cross-correlation peak was detected (Figure 6B, red line). Our experimental data cannot be explained by exchange of core only, the uncoupled exchange of both \u03b5 and \u03c4, or even the complete absence of exchange (Figure 6\u2014figure supplement 2). In support of Pol III* exchange, a positive cross-correlation peak can, however, be explained by simultaneous exchange of \u03b5 and \u03c4 (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig6-v2.jpg)\n\n**Figure 6.:** (A) Left: image of \u03c4 (orange) and \u03b5 (blue) foci within a single E. coli cell, averaged over 40 s. Co-localization of the two signals is shown as a white spot. Middle: bright field image of the same cell. Right and below: fluorescence intensity of \u03c4 (orange) and \u03b5 (blue) over time. The trajectories are averaged using a 2 s moving average filter. (B) Averaged, normalized cross-correlation functions. The cross-correlation function of 1210 pairs of foci in living cells shows a clear positive peak (black line). The cross-correlation function for 297 pairs of foci in fixed cells (gray line) and the cross-correlation function of 1210 pairs of foci, randomized within the same field of view (red line) show no positive cross correlation. Cross-correlation functions have been vertically offset for clarity. (C) Exponential fit (red) to the cross-correlation function in (B). We obtained an exchange time scale of \u03c4\u00a0=\u00a04\u00a0\u00b1\u00a02 s. The error represents the error of the fit.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Growth curves were measured for 9.5 hr. The division times were obtained from a linear fit of the exponential growth phase. They are 33\u00a0\u00b1\u00a08 min for wild-type, 32\u00a0\u00b1\u00a05 min for dnaX-YPet, 32\u00a0\u00b1\u00a08 min for dnaQ-mKate2, and 33\u00a0\u00b1\u00a04 min for the double mutant. The errors represent the errors of the fit.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Individual intensity trajectories for 300 \u03b5 and \u03c4 foci were simulated in MATLAB 2014b. The simulation allows us to set kon and koff (in units of frames\u20131) for \u03b5 exchanging into Pol III*, and kon and koff for Pol III* exchanging into the replisome. By changing these rate constants, we can simulate different exchange mechanisms. The black line represents the average cross-correlation function for Pol III* exchange (both \u03b5 and \u03c4). Here, kon and koff for Pol III* were set to 0.01 and the rate constants for \u03b5 were set to kon\u00a0=\u00a01 and koff <<1 to simulate stable binding of core to Pol III*. A clear positive peak can be seen. The green line represents the average cross-correlation function for simulated trajectories without any exchange. Here, kon\u00a0=\u00a01 and koff<<1 for all rate constants, to simulate stable binding to the replisome. In this case, there is no positive cross correlation. The gray line represents the average cross-correlation function for core exchange. In this case kon\u00a0=\u00a01 and koff<<1 for Pol III* and kon and koff for \u03b5 were set to 0.01. Again, we do not observe a positive cross correlation. Cross-correlation functions have been vertically offset for clarity.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23932/elife-23932-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Mean fluorescence signal during photobleaching of wild-type MG1655. (B) Bleaching of the coverslip background signal within a single field of view. (C) Bleaching of \u03b5-mKate2 fluorescence within a single cell, corrected for the cellular autofluorescence (A) and the background fluorescence of the coverslip (B). This was fit with a single exponential decay (black line) to determine the maximum intensity. (D) Histogram of the single-molecule intensities obtained from the change-point step-fitting algorithm (inset). This was fit to a Gaussian distribution to find the mean intensity of a single mKate2 molecule.\n\nWe then calculated the in vivo exchange time by fitting the cross-correlation function with an exponential decay. From this, we found an exchange time of 4\u00a0\u00b1\u00a02 s (Figure 6C), consistent with measurements performed under similar experimental conditions (Beattie et al., 2017). Furthermore, the concentration of \u03c4 and \u03b5 was determined in the cell (Figure 6\u2014figure supplement 3). Similarly to previous observations (Reyes-Lamothe et al., 2010), we found under our experimental conditions a total concentration of 72\u00a0\u00b1\u00a03 nM of \u03b5 and 67\u00a0\u00b1\u00a05 nM of \u03c4. Assuming all \u03b5 and \u03c4\u00a0form functional Pol III* complexes within the cell, these concentrations of \u03b5 and \u03c4 would correspond to\u00a0~23 nM Pol III* per cell. These in vivo measurements are consistent with exchange times measured for the highest concentration of Pol III* in vitro (a few seconds at 13 nM). Given these observations, we conclude that Pol III* exchange occurs during coupled DNA replication in vivo.\n\n## Discussion\n\nWe conclude that the E. coli replisome strikes a balance between stability and plasticity. In the absence of Pol III* in solution, it retains its original polymerase and forms a highly stable complex resistant to dilution. In its presence, Pol III* readily exchanges into the replisome at a rate that is dependent on its concentration. Such a concentration-dependent exchange mechanism seems counterintuitive but can be rationalized through a complex protein\u2013protein and protein\u2013DNA interaction network controlled and maintained by multiple dynamic interactions. Under dilute conditions, transient disruption of any one of these interactions would be followed by its rapid re-formation, preventing dissociation. If, however, there are competing Pol III*s in close proximity to the fork, one of these can bind at a transiently vacated binding site (e.g. on the \u03b22 sliding clamp or DnaB helicase) and consequently be at a sufficiently high local concentration to compete out the original Pol III* for binding to the other sites. Such concentration-dependent exchange has recently been reported for other systems (Loparo et al., 2011; Graham et al., 2011; Geertsema et al., 2014; Gibb et al., 2014; Chen et al., 2015) and mathematically described by multisite competitive exchange mechanisms (Sing et al., 2014; \u00c5berg et al., 2016). Further evidence for a multisite mechanism comes from comparison of the number of Pol III*s in or near the replisome at different concentrations. We quantified the number of Pol III*s at the replication fork in the in vitro experiments by normalizing the fluorescence intensity of the replisomal spot to the intensity of a single Pol III* (Figure 4\u2014figure supplement 3). The peaks of the distributions are at one Pol III* per replisome (Figure 4F), consistent with in vivo observations (Reyes-Lamothe et al., 2010). Nevertheless, we find that often more than one Pol III* is present in the replisome. As its concentration increases, the binding equilibria are pushed toward occupancy of all binding sites and more than one Pol III* is associated with the replisome. At lower concentrations, Pol III* still exchanges, but the average number of Pol III*s is reduced. Our observation of Pol III* exchange in living cells shows that such a multisite exchange mechanism is a physiologically relevant pathway accessible to the replisome during coupled DNA replication. Such a mechanism may have direct implications for the mechanisms used by the replisome to deal with obstacles such as DNA damage and transcription. The ability for the replisome to rapidly exchange components in the presence of competing factors in a concentration-dependent manner could allow for components to be easily replaced from solution and provide frequent but limited access to other binding partners, such as translesion synthesis polymerases (Sutton, 2010), without violating fundamental chemical and thermodynamic principles.\n\n## Materials and methods\n\n### Replication proteins\n\nE. coli DNA replication proteins were produced as described previously: the \u03b22 sliding clamp (Oakley et al., 2003), SSB (Mason et al., 2013), the DnaB6(DnaC)6 helicase\u2013loader complex (Jergic et al., 2013), DnaG primase (Stamford et al., 1992), the Pol III \u03c43\u03b4\u03b4\u2019\u03c7\u03c8 clamp loader (Tanner et al., 2008) and Pol III \u03b1\u03b5\u03b8 core (Tanner et al., 2008). Highly purified E. coli Pol I and DNA ligase A were gifts of Yao Wang (Wang, 2015).\n\n### Expression plasmids for SNAP-\u03b1\n\n#### Construction of plasmid pBOB1 (encoding w.t. \u03b1)\n\nThe tac promoter plasmid pND517 contains the dnaE gene between a pair of BamHI restriction sites (Wijffels et al., 2004). In addition, the BamHI site following the gene overlaps with an NcoI site such that previous digestion with NcoI eliminates it. To incorporate an NdeI site at the start codon of dnaE, pND517 was used as template for PCR amplification of the 5'-portion of the dnaE gene using primers 671 (5'-AAAAGGATCCTAAGGAGGTTTGCATATGTCTGAACCACGTTTC; BamHI and NdeI sites are italicized, ribosome-binding site underlined) and 673 (5'-CGTTTGGCGATCTCAACGGTGT-3'). The PCR product (Fragment I; 522 bp) was isolated from an agarose gel following digestion with BamHI and XhoI. Next, pND517 was digested with NcoI, and the purified linearized product digested independently with XhoI to generate Fragment II (3063 bp) and with BamHI to yield Fragment III (5129 bp). Fragments I\u2013III were ligated to yield pBOB1.\n\n#### Construction of plasmid pJSL2197 (encoding SNAP-\u03b1)\n\nA modified snap26b gene was amplified from pSNAP-tag(T7)\u22122 (New England Biolabs,\u00a0Ipswich, MA) by strand overlap PCR. In the first PCR, an NdeI site was incorporated at the start codon and an internal MluI site was removed by silent mutation using primers 728 (5'-AAAAAAAACATATGGACAAAGATTGCGAA) and 729 (5'-TGAAAATAGGCGTTCAGCGCGGTCGCC), yielding Fragment I. A second PCR used primers 730 (5'-TGGCTGAACGCCTATTTTCATCAGCCGGAAGC) and 732 5'-AAAAGGATCCGATAGAGCCAGACTCACGCGTTCCCAGACCCGG-3') to generate Fragment II, removing the TGA stop codon and incorporating a sequence encoding a flexible peptide linker (sequence: TRESGSIGS [Williams et al., 2002]) flanked by MluI and BamHI sites at the 3' end of snap26b\u0394MluI. Equimolar amounts of isolated Fragments I and II were then used as templates for PCR with the outside primers 728 and 732 to generate a product that was digested with NdeI and BamHI and isolated from a gel. This fragment was ligated with the 502 bp BamHI\u2013XhoI fragment of pKO1479wt (Ozawa et al., 2013) encoding the N-terminal segment of \u03b1 and the large NdeI\u2013XhoI fragment of pBOB1, encoding the remainder of \u03b1, to generate pJSL2197, which directs overproduction of SNAP-\u03b1. Plasmid constructions were confirmed by nucleotide sequence determination.\n\n### Expression and purification of SNAP-\u03b1\n\nAn affinity resin for purification of full-length (unproteolysed) \u03b1 was prepared by conjugation of biotinylated \u03c4C16 (\u03b1-binding domain V of \u03c4) (Jergic et al., 2007) to high-capacity streptavidin-agarose (Pierce Biotechnology,\u00a0Waltham, MA). Biotinylated \u03c4C16 (15 ml; 12 mg) was added dropwise with gentle stirring into a suspension of 6 ml of resin in 11 ml of 50 mM Tris\u2013HCl pH 7.6, 2 mM dithiothreitol, 1 mM EDTA, 50 mM NaCl at 6\u00b0C over 20 min. Unconjugated streptavidin-agarose resin (2 ml) was added to a column and allowed to settle, then the suspension of \u03c4C16-conjugated resin was poured over it. The column (1\u00a0\u00d7\u00a010 cm) was then washed with 150 ml of 50 mM Tris-HCl pH 7.6, 2 mM dithiothreitol, 1 mM EDTA, 50 mM NaCl and stored at 4\u00b0C in 50 mM Tris-HCl, 5 mM dithiothreitol, 1 mM EDTA, 50 mM NaCl, 0.03% NaN3.\n\nE. coli strain BL21(\u03bbDE3)recA/pJSL2197 was grown at 30\u00b0C in LB medium supplemented with thymine (25 mg/l) and ampicillin (100 mg/l). Upon growth to A600\u00a0=\u00a00.6, 1 mM isopropyl-\u03b2-D-thiogalactoside (IPTG) was added and cultures were shaken for a further 3.5 hr, then chilled in ice. Cells (30 g from 6 l of culture) were harvested by centrifugation, frozen in liquid N2 and stored at \u201380\u00b0C. After thawing, cells were lysed and SNAP-\u03b1 was purified through Fraction IV essentially as described for wild-type \u03b1 (Wijffels et al., 2004). Fraction IV (50 ml) was dialysed against two changes of 2 l of buffer C\u03b1 (25 mM Tris-HCl pH 7.6, 2 mM dithiothreitol, 1 mM EDTA, 10% (v/v) glycerol) and applied at 1 ml/min onto a column (2.5\u00a0\u00d7\u00a012 cm) of heparin-Sepharose (Wijffels et al., 2004) that had been equilibrated with buffer C\u03b1. The column was washed with 30 ml of buffer C\u03b1 and proteins were eluted using a linear gradient (150 ml) of 0\u2013400 mM NaCl in buffer C\u03b1. SNAP-\u03b1 eluted as a single peak at\u00a0~40 mM NaCl. Fractions were collected and pooled to yield Fraction V, which was applied directly at 1 ml/min onto the column of \u03c4C16-agarose affinity resin that had been equilibrated in buffer D\u03b1 (50 mM Tris-HCl pH 7.6, 10 mM dithiothreitol, 1 mM EDTA, 5% (v/v) glycerol) containing 20 mM MgCl2. After the column had been washed with 15 ml of buffer D\u03b1+0.6 M MgCl2 and unbound proteins had been washed away, SNAP-\u03b1 was eluted using a linear gradient (20 ml) of 0.6\u20134.0 M MgCl2 in buffer D\u03b1. SNAP-\u03b1 eluted as a single peak at\u00a0~2.8 M MgCl2 (Figure 2\u2014figure supplement 2B). Fractions under the peak were immediately pooled and dialysed against two changes of 2 l of buffer E\u03b1 (50 mM Tris-HCl pH 7.6, 1 mM EDTA, 3 mM dithiothreitol, 100 mM NaCl, 20% (v/v) glycerol) to give Fraction VI (40 ml, containing 68 mg of protein; Figure 2\u2014figure supplement 2A). Aliquots were frozen in liquid N2 and stored at \u201380\u00b0C.\n\n### Fluorescent labeling of SNAP-\u03b1\n\nTwo different fluorescent probes, SNAP-Surface 649 (red) and SNAP-Surface Alexa Fluor 488 (green; New England Biolabs), were used to label SNAP-\u03b1. All labeling reactions were carried out using a twofold molar excess of dye with 27 \u03bcM SNAP-\u03b1 in 1 ml of 50 mM Tris-HCl pH 7.6, 2 mM dithiothreitol, 100 mM NaCl, 5% (v/v) glycerol (buffer F\u03b1) for 2 hr at 23\u00b0C, followed by 6\u00b0C overnight with gentle rotation. Following the coupling, the reaction mixture was supplemented with 1 mM EDTA and excess dye was removed by gel filtration at 1 ml/min through a column (1.5\u00a0\u00d7\u00a010 cm) of Sephadex G-25 (GE Healthcare, Chicago, IL) in buffer F\u03b1+1 mM EDTA. Fractions containing the labeled SNAP-\u03b1 were pooled and dialysed against 2 l of buffer E\u03b1, frozen in liquid N2 and stored in aliquots at \u201380\u00b0C. The degree of labeling was measured to be 90% for SNAP-\u03b1649 and 83% for SNAP-\u03b1488 by UV/vis spectrophotometry.\n\n### Ensemble strand-displacement DNA replication assays\n\nThe flap-primed ssDNA template was made as previously described (Jergic et al., 2013). Conditions for the standard coupled strand extension and Pol III strand-displacement (SD) reaction were adapted from described methods (Jergic et al., 2013). Briefly, reactions contained 2.5 nM primed DNA template, 1 mM ATP, 0.5 mM of each dNTP, 30 nM \u03c43\u03b4\u03b4\u2019\u03c7\u03c8, 150 nM Pol III (wild-type or SNAP-labeled), 200 nM \u03b22 and 800 nM SSB4 in 25 mM Tris-HCl pH 7.6, 10 mM MgCl2, 10 mM dithiothreitol and 130 mM NaCl, in a final volume of 13 \u03bcl. Components (except DNA) were mixed and treated at room temperature, then cooled in ice for 5 min before addition of DNA. Reactions were initiated at 30\u00b0C, and quenched at time points by addition of EDTA to\u00a0~100 mM and SDS to\u00a0~1%. Products were separated by agarose gel electrophoresis and stained with SYBR-Gold (Invitrogen, Waltham, MA).\n\n### Ensemble leading and lagging strand DNA replication assays\n\nCoupled leading and lagging strand DNA synthesis reactions were set up in replication buffer (25 mM Tris-HCl pH 7.9, 50 mM potassium glutamate, 10 mM Mg(OAc)2, 40 \u03bcg/ml BSA, 0.1 mM EDTA and 5 mM dithiothreitol) and contained 1.0\u20131.5 nM of a 5'-biotinylated flap-primed 2 kb circular dsDNA template\u00a0(Geng et al., 2011),\u00a01 mM ATP, 250 \u03bcM CTP, GTP, and UTP, and 50 \u03bcM dCTP, dGTP, dATP, and dTTP, 6.7 nM wild-type or SNAP-labeled Pol III*, 30 nM \u03b22, 300 nM DnaG, 100 nM SSB4, and 30 nM DnaB6(DnaC)6 in a final volume of 12 \u03bcl. Components (except DNA) were mixed and treated at room temperature, then cooled in ice for 5 min before addition of DNA. Reactions were initiated at 30\u00b0C, and quenched after 30 min by addition of 7 \u03bcl 0.5 M EDTA and 6 \u03bcl DNA loading dye (6 mM EDTA, 300 mM NaOH, 0.25% (v/v) bromocresol green, 0.25% (v/v) xylene cyanol FF, 30% (v/v) glycerol). The quenched mixtures were loaded into a 0.6% (w/v) agarose gel in alkaline running buffer (50 mM NaOH, 1 mM EDTA). Products were separated by agarose gel electrophoresis at 14 V for 14 hr. The gel was then neutralized in 1 M Tris-HCl, pH 7.6, 1.5 M NaCl and stained with SYBR Gold. The Okazaki fragment length distribution was calculated by normalizing the intensity as a function of DNA length.\n\nReactions for testing the stability of the \u03b1\u2013\u03c4 interaction in Pol III* during replication were performed as above with modifications. First, 125 \u03bcg streptavidin-coupled magnetic beads (Invitrogen) were washed and equilibrated in replication buffer containing 200 \u03bcM AMP-PNP (replication buffer B). DnaB6(DnaC)6 was first loaded at the fork by incubation of 7.5 nM rolling-circle DNA and 75 nM DnaB6(DnaC)6 (reaction A) at 37\u00b0C for 5 min in replication buffer B (40 \u03bcl), before being immobilized on streptavidin-coupled magnetic beads for 30 min at room temperature (reaction B). Unbound DNA was removed by washing reaction B three times in 200 \u03bcl replication buffer B. Replication was initiated by resuspending reaction B in replication buffer containing 1.25 mM ATP, 250 \u03bcM CTP, GTP and UTP, 200 \u03bcM dCTP, dGTP, dATP and dTTP, 3.35 nM each of red and green labeled Pol III*, 200 nM \u03b22, 300 nM DnaG, 50 nM SSB4, and 30 nM DnaB6(DnaC)6, and allowed to proceed for 20 min at 37\u00b0C. Reactions were quenched with 2.1 \u03bcl of\u00a02.5 M NaCl and 5 \u03bcl of\u00a00.5 M EDTA. Following quenching, the supernatant was removed, diluted 100-fold in replication buffer then imaged on the surface of a coverslip at the single-molecule level. The remaining DNA products coupled to the beads were washed three times in replication buffer, then resuspended in replication buffer (23 \u03bcl) and 7 \u03bcl DNA loading dye then heated to 70\u00b0C for 5 min. The DNA was loaded onto the alkaline agarose gel, which was run under the same conditions as before.\n\n### In vitro single-molecule rolling-circle DNA replication assay\n\nTo construct the rolling circle template (Tanner et al., 2009), the 66-mer 5'-biotin-T36AATTCGTAATCATGGTCATAGCTGTTTCCT-3' (Integrated DNA Technologies,\u00a0Coralville, IA) was annealed to M13mp18 ssDNA (New\u00a0England\u00a0Biolabs) in TBS buffer (40 mM Tris-HCl pH 7.5, 10 mM MgCl2, 50 mM NaCl) at 65\u00b0C. The primed M13 was then extended by adding 64 nM T7 gp5 polymerase (New England Biolabs) in 40 mM Tris-HCl pH 7.6, 50 mM potassium glutamate, 10 mM MgCl2, 100 \u03bcg/ml BSA, 5 mM dithiothreitol and 600 \u03bcM dCTP, dGTP, dATP and dTTP at 37\u00b0C for 60 min. The reaction was quenched with 100 mM EDTA and the DNA was purified using a PCR purification kit (Qiagen, the Netherlands). Microfluidic flow cells were prepared as described (Geertsema et al., 2015). Briefly, a PDMS flow chamber was placed on top of a PEG-biotin-functionalized microscope coverslip (Figure 1\u2014figure supplement 1 inset). To help prevent non-specific interactions of proteins and DNA with the surface, the chamber was blocked with buffer containing 20 mM Tris-HCl pH 7.5, 2 mM EDTA, 50 mM NaCl, 0.2 mg/ml BSA, and 0.005% Tween-20. The chamber was placed on an inverted microscope (Nikon Eclipse Ti-E) with a CFI Apo TIRF 100x oil-immersion TIRF objective (NA 1.49, Nikon,\u00a0Japan) and connected to a syringe pump (Adelab Scientific,\u00a0Australia) for flow of buffer.\n\nConditions for coupled DNA replication under continuous presence of all proteins were adapted from previously described methods (Tanner et al., 2008, 2009). All in vitro single-molecule experiments were performed at least four times. Briefly, 30 nM DnaB6(DnaC)6 was incubated with 1.5 nM biotinylated ds M13 template in replication buffer (25 mM Tris-HCl pH 7.9, 50 mM potassium glutamate, 10 mM Mg(OAc)2, 40 \u03bcg/ml BSA, 0.1 mM EDTA and 5 mM dithiothreitol) with 1 mM ATP at 37\u00b0C for 30 s. This mixture was loaded into the flow cell at 100 \u03bcl/min for 40 s and then at 10 \u03bcl/min. An imaging buffer was made with 1 mM UV-aged Trolox, 0.8% (w/v) glucose, 0.12 mg/ml glucose oxidase, and 0.012 mg/ml catalase (to increase the lifetime of the fluorophores and reduce blinking), 1 mM ATP, 250 \u03bcM CTP, GTP and UTP, and 50 \u03bcM dCTP, dGTP, dATP and dTTP in replication buffer. Pol III* was assembled in situ by incubating \u03c43\u03b4\u03b4\u2019\u03c7\u03c8 (410 nM) and SNAP-labeled Pol III cores (1.2 \u03bcM) in imaging buffer at 37\u00b0C for 90 s. Replication was initiated by flowing in the imaging buffer containing 6.7 nM Pol III* (unless specified otherwise), 30 nM \u03b22, 300 nM DnaG, 250 nM SSB4, and 30 nM DnaB6(DnaC)6 at 10 \u03bcl/min. Reactions were carried out 31\u00b0C, maintained by an electrically heated chamber (Okolab, Burlingame, CA).\n\nDouble-stranded DNA was visualized in real time by staining it with 150 nM SYTOX orange (Invitrogen) excited by a 568 nm laser (Coherent, Santa Clara, CA; Sapphire 568\u2013200 CW) at 150 \u03bcW/cm. The red and green Pol III* were excited at 700 mW/cm2 with 647 nm (Coherent, Obis 647\u2013100 CW) and 488 nm (Coherent, Sapphire 488\u2013200 CW) lasers, respectively (Figure 1\u2014figure supplement 1). The signals were separated via dichroic mirrors and appropriate filter sets (Chroma, Bellows Falls, VT). Imaging was done with either an EMCCD (Photometics,\u00a0Tucson, AZ; Evolve 512 Delta) or a\u00a0sCMOS camera (Andor,\u00a0UK; Zyla 4.2). The analysis was done with ImageJ using in-house built plugins. The rate of replication of a single molecule was obtained from its trajectory and calculated for each segment that has constant slope.\n\nConditions for the pre-assembly replication reactions were adapted from published methods (Tanner et al., 2011; Georgescu et al., 2011). Solution 1 was prepared as 30 nM DnaB6(DnaC)6, 1.5 nM biotinylated ds M13 substrate and 1 mM ATP in replication buffer. This was incubated at 37\u00b0C for 3 min. Solution 2 contained 60 \u03bcM dCTP and dGTP, 6.7 nM red Pol III*, and 74 nM \u03b22 in replication buffer (without dATP and dTTP). Solution 2 was added to an equal volume of solution 1 and incubated for 6 min at 37\u00b0C. This was then loaded onto the flow cell at 100 \u03bcl/min for 1 min and then 10 \u03bcl/min for 10 min. The flow cell was washed with replication buffer containing 60 \u03bcM dCTP and dGTP. Replication was finally initiated by flowing in the imaging buffer containing 50 nM \u03b22, 300 nM DnaG and 250 nM SSB4 at 10 \u03bcl/min.\n\n### Measurement of the stoichiometry of Pol III*s at the replisome\n\nThe average intensity of a single labeled Pol III core (6 pM) was calculated by immobilization on the surface of a cleaned microscope coverslip in imaging buffer. The imaging was under the same conditions as used during the single-molecule rolling-circle experiments. Using ImageJ with in-house built plugins, we calculated the integrated intensity for every Pol III core in a field of view after applying a local background subtraction. The histograms obtained were fit with a Gaussian distribution function using MATLAB 2014b, to give a mean intensity of 5100\u00a0\u00b1\u00a02000 for the red and 1600\u00a0\u00b1\u00a0700 for the green Pol III core (Figure 4\u2014figure supplement 4). To measure the intensity of the fluorescent spot at the replication fork, we tracked its position and integrated the intensity for both colors simultaneously over time. Given there is no decay in fluorescence intensity of labeled Pol III cores as a function of DNA length under near-TIRF imaging conditions during DNA replication (Figure 4\u2014figure supplement 5), we calculated the total number of Pol III*s at every time point during coupled DNA replication by dividing these intensities by the intensity of a single Pol III*. Subsequent histograms were fit to four (6.7 nM) or three (0.3 nM) Gaussians centered at integral numbers of Pol III* (Figure 4\u2014figure supplement 3) using MATLAB 2014b.\n\n### Fluorescent chromosomal fusions\n\nThe strain EAW192 (dnaQ-mKate2) was constructed using a modified version of the \u03bb RED recombination system (Huang et al., 1997), introducing a mutant FRT\u2013KanR\u2013wtFRT cassette. To select for recombinants, cells were plated on LB-agar supplemented with 40 \u00b5g/ml of kanamycin and grown overnight. Kanamycin-resistant strains were further screened for ampicillin sensitivity, to ensure that cells had been cured of the \u03bb RED plasmid pKD46. The two-color strain EAW203 (dnaX-YPet, dnaQ-mKate2) was constructed by P1 transduction. JJC5945 cells (dnaX-YPet) (Robinson et al., 2015) were first treated with pLH29 (Huang et al., 1997) to remove existing KanR markers, then infected with P1 grown on EAW192 (dnaQ-mKate2) cells. Transductants were selected for kanamycin resistance.\n\n### Growth rates of fluorescent chromosomal fusions\n\nSingle colonies of wild-type E. coli MG1655 and derivatives containing the C-terminal chromosomal dnaQ and dnaX fusions were used to inoculate 5 ml of LB broth (with 34 \u03bcg/ml kanamycin, if required) and grown at 37\u00b0C with shaking overnight. LB broth (100 ml) was inoculated with 1.0\u00a0\u00d7\u00a0105 cells/ml from overnight cultures. Subsequent growth of each strain was monitored at 37\u00b0C with shaking by determining OD600 every 30 min for 9.5 hr. The doubly labeled dnaX-YPet dnaQ-mKate2 cells grew only slightly more slowly than wild-type cells (division time\u00a0=\u00a033\u00a0\u00b1\u00a04 min cf. 33\u00a0\u00b1\u00a08 min) (Figure 6\u2014figure supplement 1), indicating that labeling the \u03b5\u00a0and \u03c4 components of the replisome does not significantly disrupt DNA replication.\n\n### In vivo single-molecule visualization assays\n\nThe cells were grown at 37\u00b0C in EZ rich defined medium (Teknova) that included 0.2% (w/v) glucose. For imaging, a PDMS well was placed on top of a coverslip that was functionalized with (3-aminopropyl)triethoxysilane (BioScientific,\u00a0Australia) (Robinson et al., 2015). The cells were immobilized on the surface of the well, which was then placed on the heated stage (Okolab) of the microscope. Imaging was done at 37\u00b0C. The \u03c4-YPet and \u03b5-mKate2 were excited at 0.03 mW/cm2 with 514 nm (Coherent, Sapphire 514\u2013150 CW) and 3 W/cm2 with 568 nm (Coherent, Sapphire 568\u2013200 CW) lasers, respectively. The signals were separated via a beam splitter (Photometrics, DV\u039b Multichannel Imaging System) and appropriate filter sets (Chroma). Imaging was done with an EMCCD camera (Photometrics, Evolve Delta). The visualization of foci in living cells was performed in triplicate. The image processing was done with ImageJ using in-house built plugins.\n\nThe concentrations or \u03b5 and \u03c4 were determined as described (Robinson et al., 2015) by measuring the total fluorescence within each cell and dividing by the mean intensity of a single molecule. To measure the total fluorescence, we first imaged 141 wild-type MG1655 cells to determine the cellular autofluorescence (Figure 6\u2014figure supplement 3A). We found the autofluorescence to be constant for the duration of our measurements. We then imaged 273 \u03c4-YPet, \u03b5-mKate2 cells in 20 fields of view. The background fluorescence from the microscope coverslip was determined by fitting the photobleaching per field of view with a single-exponential decay (Figure 6\u2014figure supplement 3B). The mean cellular intensities were corrected for the background and cellular autofluorescence. We then fitted individual cell photobleaching curves to obtain the amplitudes (Figure 6\u2014figure supplement 3C).\n\nTo find the intensity of a single-molecule, photobleaching trajectories of single foci were determined. The \u03c4 and \u03b5 foci were identified by making average projections of movies. The intensity over time trajectories for each focus as it photobleached was measured. Next, the local background fluorescence around each focus was subtracted. Trajectories showed step-wise intensity transitions corresponding to photobleaching of single fluorescent molecules (Figure 6\u2014figure supplement 3D inset). These transitions were fit by change-point analysis (Watkins and Yang, 2005; Duderstadt et al., 2016). A histogram of the step sizes showed a relatively narrow distribution (Figure 6\u2014figure supplement 3D). We found the mean intensity of a single molecule by fitting with a Gaussian distribution. These were 158\u00a0\u00b1\u00a02 for \u03b5 and 130\u00a0\u00b1\u00a05 for \u03c4 (mean \u00b1 s.e.).\n\nTo find the total fluorescence intensity per cell, the mean cell intensity was multiplied by the area of the cell. This was then divided by the single-molecule intensity. It was determined that there are 104\u00a0\u00b1\u00a03 copies of \u03b5 and 96\u00a0\u00b1\u00a06 copies of \u03c4 per cell. This corresponds to a concentration of 72\u00a0\u00b1\u00a03 nM for \u03b5 and 67\u00a0\u00b1\u00a05 nM for \u03c4. If we assume that all \u03b5 and \u03c4 are part of a Pol III* complex this tells us that there is 23 nM Pol III* in the cell. The intensities of the foci were measured by integrating the intensity of the peak and subtracting the mean local background intensity. The average cross-correlation functions were calculated using MATLAB 2014b (Mathworks). The cross-correlation was fit with an exponential decay and gave a characteristic time scale of 4\u00a0\u00b1\u00a02 s (mean \u00b1 error of the fit) (Figure 6).\n",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "95bde6d7-fa7d-4873-82d5-c7cf6f376691",
+      "submission_id": "90a91ccb-7fac-40d7-b4bd-acb8cefbb0e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23932.026](https://doi.org/10.7554/eLife.23932.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Single-molecule visualization of fast polymerase turnover in the bacterial replisome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Houra Merrikh (Reviewer #3).\n\nSummary:\n\nThis manuscript is a well performed analysis on the exchange of components at a replication fork. An emerging picture in the field is that components of tightly associated complexes can exchange rapidly, provided an excess of components is present. This paper applies this concept to the exchange of the Pol III* at a replication fork. The exchange is studied by a single molecule approach, giving very detailed data regarding this question. Furthermore, the authors take the work into the whole cell, and find that the exchange still occurs even in the context of the cell. The data are presented clearly, and the manuscript is well written. The findings presented in this paper are fundamentally important to the field's understanding of how the replisome functions. Classically, the replisome is thought to be a stable (non-dynamic) structure, but recent work has begun to indicate that this picture is not correct. In this paper, the authors present strong evidence with regards to the dynamic nature of the replisome, potentially changing the view of how this fundamental process functions in vivo. In particular, Pol III* holoenzyme seems to rapidly exchange in and out of the replisome.\n\nAlthough concentration-dependent exchange of polymerase has been reported before in the case of T7 replication machinery (this needs to be explicitly mentioned), this appears to be the first example of showing the same for E. coli in vitro, and we are not aware of an in vivo report, except by a recent eLife paper from University of Washington where they reported that the replicative helicase is disassembling and reassembling due to replication-transcription conflict. Therefore, the work is generally suitable for eLife. However, there are some missed opportunities, especially in solidifying the claim of concentration-dependent exchange in vivo, and more detailed summary of prior work is needed.\n\nEssential revisions:\n\n1) It is not clear whether the concentration dependence of the turnover rate (a key point) observed in vitro is also true in vivo. Since this concentration dependence is the main new finding, could the authors show this in live cells to strengthen this point? This is a difficult task but potential growth rate difference may modulate the concentrations of Pol III* in solution and perhaps facilitate such an analysis. Alternatively, the authors could try to conditionally deplete one of the core components and observe the dynamics as the concentrations of the proteins decrease over time. We prefer if the in vivo concentration be established experimentally. If the authors don't feel that this is necessary, then they should explain why this is the case.\n\n2) Since the authors do not show concentration dependence in vivo, how can the authors distinguish turnover of the Pol III* complex in vivo from disassembly of the entire replisome due to potential obstacles? If the authors calculate the average rate of turnover from the intensity traces in vivo, they could potentially correlate this with the in vitro numbers to support their point.\n\n3) They show evidence of exchange in vitro but there is no attempt to quantify the kinetics as a function of protein concentration in solution and put it in a firm mathematical footing. This is a glaring omission especially because the same group has put forward the mathematical framework.\n\n4) It remains possible that only the cores exchange between Pol III*s at a replication fork. The control was performed in Figure 3, but in that experiment the Pol III*'s are not at a working fork with DnaB where things might be different. For example, two Pol III*'s might bind one fork (required intermediate for wholesale exchange), and this would increase their local concentration of cores to a very high level, at which time the cores might begin exchanging between the two Pol III*'s. It is not clear that the clamp loader is also getting recycled in the in vitro experiment because it is not labeled fluorescently. The lack of exchange in the context of Pol III* alone is not sufficient because one cannot rule out the possibility of the interaction becoming more dynamic in the context of replisome. It seems the better side of caution for the authors to add a statement that explains that things could possibly be different at a moving fork, such that the cores exchange among two Pol III*s. One could note, that even if this occurs, it still runs along the same message line of the paper, that seemingly tight complexes in fact are quite fluid when an excess of a component is present.\n",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "46d63387-951c-49bf-849c-a535273c8b00",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C1",
+      "claim": "The Escherichia coli replisome requires participation of 13 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The Escherichia coli replisome requires participation of 13 different proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the introduction about the composition of the E. coli replisome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "44331231-07da-4c31-bfae-5a42db8e872a",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C2",
+      "claim": "Ten proteins form the DNA polymerase III (Pol III) holoenzyme (HE).",
+      "claim_type": "EXPLICIT",
+      "source": "Ten of them form the DNA polymerase III (Pol III) holoenzyme (HE), which is arranged into three functionally distinct and stably bound subassemblies (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the number of proteins forming the holoenzyme and references Figure 1A for structural context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "1ec98f88-6e31-447c-9fee-dc1e47b45f0d",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C3",
+      "claim": "\u03b1\u03b5\u03b8 forms the Pol III core that has DNA polymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1\u03b5\u03b8 forms the Pol III core that has DNA polymerase activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition and function of the Pol III core.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "307d4359-c792-4bfa-b139-183bea30e05b",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C4",
+      "claim": "\u03b22 is the sliding clamp needed for stable association with the primer\u2013template DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b22 is the sliding clamp needed for stable association with the primer\u2013template DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the function of the \u03b22 sliding clamp.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "30f0298b-8c4c-455c-a491-cdf178db16ef",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C5",
+      "claim": "\u03c4n\u03b3(3\u2013n)\u03b4\u03b4'\u03c8\u03c7 (where n = 2 or 3 in the HE) is the clamp loader complex (CLC) that loads \u03b22 onto DNA and is the central organizer of the replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c4n\u03b3(3\u2013n)\u03b4\u03b4'\u03c8\u03c7 (where n = 2 or 3 in the HE) is the clamp loader complex (CLC) that loads \u03b22 onto DNA and is the central organizer of the replisome (Robinson and van Oijen, 2013; Duderstadt et al., 2014; Lewis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ec1d1fdb-9664-4a2e-aa8c-c55111b467a0",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C6",
+      "claim": "The CLC interacts with two or three Pol III cores via the \u03b1\u2013\u03c4 interaction, forming stable complexes termed Pol III*.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLC interacts with two or three Pol III cores via the \u03b1\u2013\u03c4 interaction, forming stable complexes termed Pol III* (i.e. HE lacking only the sliding clamp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the interaction between CLC and Pol III cores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "0992f79f-0a33-46f0-a0d5-2775efd97e35",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C7",
+      "claim": "Pol III* ensures the organization of the cores needed for coordinated DNA synthesis on the two template strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol III* ensures the organization of the cores needed for coordinated DNA synthesis on the two template strands (Wu et al., 1992; Onrust et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "00a40e0d-d831-43ef-be2f-38a2cd61310f",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C8",
+      "claim": "Pol III* is essential for cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "and is essential for cell survival (Blinkova et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ca247630-2ff5-4572-b8bd-3485f8f15958",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C9",
+      "claim": "There is consensus that Pol III is reused rather than replaced for successive Okazaki fragment synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, consensus that Pol III is reused rather than replaced for successive Okazaki fragment synthesis (Tanner et al., 2008, 2009, 2011; Yao et al., 2009; Georgescu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about scientific consensus supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "02366452-cbee-450c-a1d6-5ceef99e2c98",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C10",
+      "claim": "The replisome is believed to be a highly stable entity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the replisome is believed to be a highly stable entity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the prevailing view of replisome stability.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8075b99c-0119-41b4-8044-7e82e08434b5",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C12",
+      "claim": "High concentrations of catalytically dead Pol III* inhibit ongoing replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the introduction of high concentrations of catalytically dead Pol III* (still able to bind primed DNA) inhibits ongoing replication (Yuan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "f71a9ed4-f9e5-4e89-9184-6a8c26951aa2",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C13",
+      "claim": "Pol III* remains stably associated with the replisome under conditions of high dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconciling these different observations, we here demonstrate the presence of a novel exchange mechanism that allows Pol III* to remain stably associated with the replisome under conditions of high dilution, yet facilitates rapid exchange at nanomolar concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "65d7e095-a120-49a6-b0e9-389b9f418adb",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C14",
+      "claim": "Pol III* facilitates rapid exchange at nanomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconciling these different observations, we here demonstrate the presence of a novel exchange mechanism that allows Pol III* to remain stably associated with the replisome under conditions of high dilution, yet facilitates rapid exchange at nanomolar concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5995375e-eac3-47f3-987c-2bbc24726d32",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C15",
+      "claim": "Red Pol III* supports replication at rates similar to the untagged wild-type enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A kymograph (Figure 2C) shows the fluorescence of the red Pol III* during rolling-circle replication; it supports replication at rates similar to the untagged wild-type enzyme (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "e1bd33bb-4a84-4fec-af05-46fd7d66e4d7",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C16",
+      "claim": "The rate of replication for wild-type Pol III is 492 \u00b1 23 bp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Histograms of the rate of replication for wild-type Pol III (492 \u00b1 23 bp/s) and red Pol III (561 \u00b1 27 bp/s) fit to Gaussian distributions.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 2D showing measured replication rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "f89f1265-8534-4c05-83ee-1ced1b64925d",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C17",
+      "claim": "The rate of replication for red Pol III is 561 \u00b1 27 bp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Histograms of the rate of replication for wild-type Pol III (492 \u00b1 23 bp/s) and red Pol III (561 \u00b1 27 bp/s) fit to Gaussian distributions.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 2D showing measured replication rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5194df64-6d1c-489b-a7c1-ca97a06391fc",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C18",
+      "claim": "Pol III remains bound to the DNA on the lagging strand behind the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe Pol III that remains bound to the DNA on the lagging strand behind the replication fork, evident as horizontal lines in Figure 2C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "6a241e71-e1f8-455c-8286-f2d3c44ef712",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C19",
+      "claim": "Pol III bound behind the replisome corresponds to polymerases bound to the 3'-termini of Okazaki fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that these correspond to polymerases bound to the 3'-termini of Okazaki fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "630221ae-cd77-40b1-9690-a3eb047e798d",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C20",
+      "claim": "In the presence of Pol I, Pol III binding behind the replisome is no longer observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Pol I (with or without ligase), Pol III binding behind the replisome is no longer observed (Figure 2E), consistent with Pol I efficiently displacing Pol III during Okazaki fragment maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5dc49424-95a3-4e69-a533-d35fab86c3cf",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C21",
+      "claim": "The fluorescent Pol III at the growing tip of the rolling circle is highly resistant to photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the fluorescent Pol III at the growing tip of the rolling circle is highly resistant to photobleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "2cecd186-99b8-44b8-b438-64f0149c09fd",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C22",
+      "claim": "Fluorescence of Pol III in the replisome has a much longer lifetime compared to that of labeled Pol III cores immobilized on a surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Its fluorescence in the replisome has a much longer lifetime compared to that of labeled Pol III cores immobilized on a surface and subjected to the same excitation intensity (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct comparison of experimental measurements shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "3af484f4-caf9-4ccf-afbe-d7b2e547111c",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C23",
+      "claim": "The polymerase exchanges into the replisome from solution to replace photobleached Pol III.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the experiments in Figure 2 are performed with 6.7 nM Pol III* in solution, this observation suggests that the polymerase exchanges into the replisome from solution to replace photobleached Pol III.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a7790fc4-f527-424e-a45c-340d3bebf473",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C24",
+      "claim": "Exchange of Pol III cores between different Pol III* complexes was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the stable interaction between \u03b1 in the core and \u03c4 in the CLC, exchange of Pol III cores was not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "9852c90d-9e14-422d-b0b6-545b2fec20d0",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C25",
+      "claim": "Pre-assembled red and green Pol III* complexes that have participated in DNA replication do not co-localize.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the newly synthesized DNA was removed from proteins by its immobilization on streptavidin beads, and subsequent single-molecule imaging of the released protein fraction on the surface of a coverslip showed no co-localization of red and green Pol III cores (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a7b3898b-d442-4559-bbba-f286ce11acdb",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C26",
+      "claim": "The functional unit exchanging at the replication fork is the entire Pol III* complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms that the functional unit exchanging at the replication fork is the entire Pol III* complex; the interaction between the \u03c4 subunit of the CLC and \u03b1 of Pol III must remain intact during DNA replication",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "d59a2afe-08d9-4a8a-b641-fa69838f8056",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C27",
+      "claim": "The interaction between the \u03c4 subunit of the CLC and \u03b1 of Pol III remains intact during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms that the functional unit exchanging at the replication fork is the entire Pol III* complex; the interaction between the \u03c4 subunit of the CLC and \u03b1 of Pol III must remain intact during DNA replication",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "d4738e97-50e9-4587-a15d-7b9a547f8416",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C28",
+      "claim": "At a total Pol III* concentration of 6.7 nM, the replisomal spot exhibits fast dynamics displaying both colors.",
+      "claim_type": "EXPLICIT",
+      "source": "At a total Pol III* concentration of 6.7 nM, the replisomal spot exhibits fast dynamics displaying both colors (Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a69fce9b-7403-4e98-a0ec-cb496cbb845f",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C29",
+      "claim": "At a concentration of 0.3 nM, the dynamics appear slower and distinct exchange events are visible.",
+      "claim_type": "EXPLICIT",
+      "source": "while at a lower concentration of 0.3 nM, the dynamics appear slower and distinct exchange events are visible (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "f437dd12-001c-40a5-9a1f-19135d349494",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C30",
+      "claim": "Pol III* exchange is concentration dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer persistence of a single color at the lower concentration demonstrates that Pol III* exchange is concentration dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparing experimental observations at different concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8ce0f7e4-8f4f-4a0b-ad5b-85355c95daf7",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C31",
+      "claim": "Pre-assembly replication assays support highly processive DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditions indeed support highly processive DNA replication (Figure 4C), with synthesis rates and processivities identical to a situation with Pol III* in solution and consistent with values reported previously (Mok and Marians, 1987; McInerney et al., 2007; Tanner et al., 2009; Yao et al., 2009) (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5c597670-ab14-4833-8be9-2d13d6e09c1a",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C32",
+      "claim": "Photobleaching without recovery was observed in pre-assembly conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed photobleaching without recovery, consistent with the original, pre-assembled Pol III* remaining stably associated within the replisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "d94b9643-ee15-4c9e-9af6-a79b81a71af4",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C33",
+      "claim": "The processivity of replication with Pol III* present in solution is 73 \u00b1 25 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Histograms of the processivity of replication with Pol III* present in solution (73 \u00b1 25 kb) and under pre-assembly conditions (76 \u00b1 26 kb), each fit with a single exponential decay function.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4D showing measured processivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "61d70e67-c8b7-4731-863d-3132d5c11b23",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C34",
+      "claim": "The processivity of replication under pre-assembly conditions is 76 \u00b1 26 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Histograms of the processivity of replication with Pol III* present in solution (73 \u00b1 25 kb) and under pre-assembly conditions (76 \u00b1 26 kb), each fit with a single exponential decay function.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4D showing measured processivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ab5c7817-69ed-4363-81b9-f325f95cfed6",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C35",
+      "claim": "The rate of replication with Pol III* present in solution is 561 \u00b1 27 bp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Histograms of the rates of replication with Pol III* present in solution (561 \u00b1 27 bp/s) and under pre-assembly conditions (445 \u00b1 33 bp/s), each fit to a Gaussian distribution.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4E showing measured replication rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "67e2a27a-7fbc-4286-8cac-9f94bdc45ddb",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C36",
+      "claim": "The rate of replication under pre-assembly conditions is 445 \u00b1 33 bp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Histograms of the rates of replication with Pol III* present in solution (561 \u00b1 27 bp/s) and under pre-assembly conditions (445 \u00b1 33 bp/s), each fit to a Gaussian distribution.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4E showing measured replication rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "13b660a0-18bb-49bf-9f17-67180e55d02e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C37",
+      "claim": "At a total Pol III* concentration of 13 nM, the fluorescence signal recovers rapidly with a characteristic exchange time \u03c4 = 1.85 s.",
+      "claim_type": "EXPLICIT",
+      "source": "At a total Pol III* concentration of 13 nM, the fluorescence signal recovers rapidly (characteristic exchange time, \u03c4 = 1.85 s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8bc31bbf-ea45-4f06-8911-ef9d7e739c79",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C38",
+      "claim": "At 30 pM Pol III*, the fluorescence signal is 20-fold slower to recover with \u03c4 = 42 s.",
+      "claim_type": "EXPLICIT",
+      "source": "while at 30 pM the fluorescence signal is 20-fold slower to recover (\u03c4 = 42 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a8985376-73c9-4c4b-920f-f22b9b88c6a9",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C39",
+      "claim": "The rate of exchange is dependent on Pol III* concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in agreement with our previous two-color experiments, indicating that the rate of exchange is dependent on Pol III* concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5f4f09e8-3646-4d34-8bc3-c7e4f55fe300",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C40",
+      "claim": "Instances of synchronized intensity fluctuations of \u03c4-YPet and \u03b5-mKate2 within the replisome foci could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that once the population of fluorescent molecules had become partially nonfluorescent by irreversible photobleaching, instances of synchronized intensity fluctuations of \u03c4-YPetand \u03b5-mKate2 within the replisome foci could be observed (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from in vivo experiments shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "b35f69d7-4ac8-4fd3-8cbf-97c5764201b4",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C41",
+      "claim": "The average cross-correlation function calculated for 1210 foci in 480 cells showed a clear positive cross-correlation peak.",
+      "claim_type": "EXPLICIT",
+      "source": "The average cross-correlation function calculated for 1210 foci in 480 cells showed a clear positive cross-correlation peak, consistent with synchronous exchange of \u03c4-YPet and \u03b5-mKate2 (Figure 6B, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct result from cross-correlation analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "fcabfd44-92b6-4ef6-8514-e8e7fa30a80e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C42",
+      "claim": "Fixed cells with formaldehyde show the absence of a cross-correlation peak.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that this peak arises due to protein dynamics, we fixed cells with formaldehyde to arrest all cellular processes and demonstrate the absence of a cross-correlation peak (Figure 6B, gray line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "6adf7789-f085-40dd-a62d-36f199e62ef1",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C43",
+      "claim": "The in vivo exchange time is 4 \u00b1 2 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We then calculated the in vivo exchange time by fitting the cross-correlation function with an exponential decay. From this, we found an exchange time of 4 \u00b1 2 s (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct measurement from in vivo experiments shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "fcc1f586-4cf5-452a-ab7b-45c37856be75",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C44",
+      "claim": "The total concentration of \u03b5 in the cell is 72 \u00b1 3 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous observations (Reyes-Lamothe et al., 2010), we found under our experimental conditions a total concentration of 72 \u00b1 3 nM of \u03b5 and 67 \u00b1 5 nM of \u03c4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from in vivo experiments with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "0337b8dc-be3f-42c7-aa4e-905b4540f076",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C45",
+      "claim": "The total concentration of \u03c4 in the cell is 67 \u00b1 5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous observations (Reyes-Lamothe et al., 2010), we found under our experimental conditions a total concentration of 72 \u00b1 3 nM of \u03b5 and 67 \u00b1 5 nM of \u03c4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from in vivo experiments with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8f735050-efcc-45be-85a4-eae42f4aaba1",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C46",
+      "claim": "The concentrations of \u03b5 and \u03c4 would correspond to ~23 nM Pol III* per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming all \u03b5 and \u03c4 form functional Pol III* complexes within the cell, these concentrations of \u03b5 and \u03c4 would correspond to ~23 nM Pol III* per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on measured concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8dc36163-92d2-4ae3-9c8c-9d8a5438ed6e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C47",
+      "claim": "Pol III* exchange occurs during coupled DNA replication in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these observations, we conclude that Pol III* exchange occurs during coupled DNA replication in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from in vivo experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "cec9408a-2745-4190-a886-79de98207d6d",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C48",
+      "claim": "In the absence of Pol III* in solution, the replisome retains its original polymerase and forms a highly stable complex resistant to dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Pol III* in solution, it retains its original polymerase and forms a highly stable complex resistant to dilution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "6a095eb7-dab7-42fb-9e0b-afad4ad80e17",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C49",
+      "claim": "In the presence of Pol III*, it readily exchanges into the replisome at a rate that is dependent on its concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In its presence, Pol III* readily exchanges into the replisome at a rate that is dependent on its concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "6a624b0b-bde0-4fe3-9e1d-90985ca6319c",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C50",
+      "claim": "The E. coli replisome strikes a balance between stability and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the E. coli replisome strikes a balance between stability and plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "c94fe280-a53b-47f5-97c9-2f5554a2eb75",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C51",
+      "claim": "The Okazaki fragment size distribution is centered at 1.3 \u00b1 0.4 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The Okazaki fragment size distribution is centered at 1.3 \u00b1 0.4 kb.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "7142fed8-91f7-44f7-bcba-e7363997cd36",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C52",
+      "claim": "The fluorescence lifetime of red Pol III at the replisome is much longer than the photobleaching lifetime of the dye.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence lifetime of red Pol III at the replisome is much longer than the photobleaching lifetime of the dye.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Observation from Figure 2F comparing fluorescence lifetimes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "6f6fea38-2e7b-4db9-b6ed-9c2061fbb58a",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C53",
+      "claim": "The photobleaching lifetime of immobilized red Pol III is 14.1 \u00b1 0.4 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence intensity as a function of time of individual red Pol IIIs immobilized on the surface of a coverslip (lower trace; black line is an exponential fit with lifetime = 14.1 \u00b1 0.4 s)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "166ecc86-17f3-4241-a75b-4eff3c3ec259",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C54",
+      "claim": "The labeled Pol III* were active in coupled DNA replication, producing Okazaki fragments of similar sizes to wild-type polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The labeled Pol III*s were active in coupled DNA replication, producing Okazaki fragments of similar sizes to wild-type polymerase (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8d4d7168-ca4e-49dc-ae7f-f83d7eb74eed",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C55",
+      "claim": "The labeled polymerase spot is located at the tip of the growing DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous imaging of the stained DNA and red Pol III* shows that the polymerase spot is located at the tip of the growing DNA, confirming that the labeled Pol III is a functional component of reconstituted replisomes (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experimental data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ee5a9be6-161b-4109-b728-fe3b6b814535",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C56",
+      "claim": "The doubly labeled dnaX-YPet dnaQ-mKate2 cells grew only slightly more slowly than wild-type cells (division time = 33 \u00b1 4 min cf. 33 \u00b1 8 min).",
+      "claim_type": "EXPLICIT",
+      "source": "The doubly labeled dnaX-YPet dnaQ-mKate2 cells grew only slightly more slowly than wild-type cells (division time = 33 \u00b1 4 min cf. 33 \u00b1 8 min) (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct measurement from growth curve experiments shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "3ba128d6-ce1c-43ba-819f-48afdba5e8ed",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C57",
+      "claim": "Labeling the \u03b5 and \u03c4 components of the replisome does not significantly disrupt DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that labeling the \u03b5 and \u03c4 components of the replisome does not significantly disrupt DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from growth rate measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a9843add-7064-4449-870b-8712fc23b151",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C58",
+      "claim": "The degree of labeling was measured to be 90% for SNAP-\u03b1649 and 83% for SNAP-\u03b1488.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of labeling was measured to be 90% for SNAP-\u03b1649 and 83% for SNAP-\u03b1488 by UV/vis spectrophotometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement of labeling efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "41e134b6-7164-4cda-8893-8fc087a875ca",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C59",
+      "claim": "There are 104 \u00b1 3 copies of \u03b5 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "It was determined that there are 104 \u00b1 3 copies of \u03b5 and 96 \u00b1 6 copies of \u03c4 per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "28b3b9e9-bcbb-4279-a804-d2bc1bc2ac43",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C60",
+      "claim": "There are 96 \u00b1 6 copies of \u03c4 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "It was determined that there are 104 \u00b1 3 copies of \u03b5 and 96 \u00b1 6 copies of \u03c4 per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "3d75fbf5-5cf8-486c-bec7-30bd52a58122",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C61",
+      "claim": "The mean intensity of a single mKate2 molecule is 158 \u00b1 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the mean intensity of a single molecule by fitting with a Gaussian distribution. These were 158 \u00b1 2 for \u03b5 and 130 \u00b1 5 for \u03c4 (mean \u00b1 s.e.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from single-molecule imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "003d6e19-f49e-41e6-9a81-b5e033a873f3",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C62",
+      "claim": "The mean intensity of a single YPet molecule is 130 \u00b1 5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the mean intensity of a single molecule by fitting with a Gaussian distribution. These were 158 \u00b1 2 for \u03b5 and 130 \u00b1 5 for \u03c4 (mean \u00b1 s.e.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from single-molecule imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "86b0eda5-a18b-4d98-9e29-fbd26f54bcd2",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C63",
+      "claim": "The mean intensity of a single red Pol III core is 5100 \u00b1 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "The histograms are fit with Gaussian distribution functions to give a mean intensity of 5100 \u00b1 2000 for the red Pol III core and 1600 \u00b1 700 for the green Pol III core.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "1e97f14c-11e2-406a-837b-1f36ca84acc0",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C64",
+      "claim": "The mean intensity of a single green Pol III core is 1600 \u00b1 700.",
+      "claim_type": "EXPLICIT",
+      "source": "The histograms are fit with Gaussian distribution functions to give a mean intensity of 5100 \u00b1 2000 for the red Pol III core and 1600 \u00b1 700 for the green Pol III core.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "8c56ea83-1b48-4937-8e67-8e5934c36c28",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C65",
+      "claim": "The peaks of the stoichiometry distributions are at one Pol III* per replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "The peaks of the distributions are at one Pol III* per replisome (Figure 4F), consistent with in vivo observations (Reyes-Lamothe et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from data analysis shown in Figure 4F with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "7e608872-3294-4415-a78e-128051d1c599",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C66",
+      "claim": "As Pol III* concentration increases, the binding equilibria are pushed toward occupancy of all binding sites and more than one Pol III* is associated with the replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "As its concentration increases, the binding equilibria are pushed toward occupancy of all binding sites and more than one Pol III* is associated with the replisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from stoichiometry measurements at different concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "829a35c0-6485-48e3-ad75-e2b5f1417de6",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C67",
+      "claim": "At lower concentrations, Pol III* still exchanges, but the average number of Pol III*s is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations, Pol III* still exchanges, but the average number of Pol III*s is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from stoichiometry measurements at different concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "fcee2d48-a2fd-4e44-8702-3378ad4a072e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C68",
+      "claim": "A multisite exchange mechanism is a physiologically relevant pathway accessible to the replisome during coupled DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of Pol III* exchange in living cells shows that such a multisite exchange mechanism is a physiologically relevant pathway accessible to the replisome during coupled DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from in vivo observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "4b316ed3-f908-44a8-818e-f039505ecb1e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C69",
+      "claim": "The ability for the replisome to rapidly exchange components in the presence of competing factors in a concentration-dependent manner could allow for components to be easily replaced from solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability for the replisome to rapidly exchange components in the presence of competing factors in a concentration-dependent manner could allow for components to be easily replaced from solution and provide frequent but limited access to other binding partners, such as translesion synthesis polymerases (Sutton, 2010), without violating fundamental chemical and thermodynamic principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the implications of the findings with supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "aa0390d2-3f4a-4188-b969-9ee20ec41f66",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C70",
+      "claim": "Concentration-dependent exchange has been reported for other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Such concentration-dependent exchange has recently been reported for other systems (Loparo et al., 2011; Graham et al., 2011; Geertsema et al., 2014; Gibb et al., 2014; Chen et al., 2015) and mathematically described by multisite competitive exchange mechanisms (Sing et al., 2014; \u00c5berg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "1abb1467-d454-4771-99f1-3dbc611e83c9",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C71",
+      "claim": "Multisite competitive exchange mechanisms have been mathematically described.",
+      "claim_type": "EXPLICIT",
+      "source": "Such concentration-dependent exchange has recently been reported for other systems (Loparo et al., 2011; Graham et al., 2011; Geertsema et al., 2014; Gibb et al., 2014; Chen et al., 2015) and mathematically described by multisite competitive exchange mechanisms (Sing et al., 2014; \u00c5berg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "3784c2d6-6c71-45cf-bbb2-5178830bd540",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C72",
+      "claim": "The processivity under challenge conditions with 10 nM Pol III core is 3.5 \u00b1 0.6 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms for conditions with pre-assembled replisomes (no polymerases in solution; processivity = 76 \u00b1 26 kb) and under conditions where pre-assembled replisomes are challenged with 10 nM Pol III core (3.5 \u00b1 0.6 kb), each fit with a single exponential decay function.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "405d1513-fcea-4ea5-923e-beda8af850e8",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C73",
+      "claim": "Actively replicating Pol III* can be easily displaced when challenged with entities that bind to the clamp, but cannot support coordinated leading and lagging strand synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that actively replicating Pol III* can be easily displaced when challenged with entities that bind to the clamp, but cannot support coordinated leading and lagging strand synthesis.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Conclusion drawn from data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ff7bd1e7-a04b-4190-983a-b31347600ed8",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C74",
+      "claim": "The fluorescence intensity of labeled Pol III* complexes does not change as a function of DNA length during single-molecule rolling-circle DNA replication under constant flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence intensity of labeled Pol III* complexes does not change as a function of DNA length during single-molecule rolling-circle DNA replication under constant flow.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "12e17deb-2268-4033-a53c-b93cc6cbc30d",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C75",
+      "claim": "In vivo exchange times are consistent with measurements performed under similar experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we found an exchange time of 4 \u00b1 2 s (Figure 6C), consistent with measurements performed under similar experimental conditions (Beattie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published results supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "92dbd3d6-78c5-4065-b597-378ff4643045",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "claim_id": "C76",
+      "claim": "In vivo measurements are consistent with exchange times measured for the highest concentration of Pol III* in vitro (a few seconds at 13 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "These in vivo measurements are consistent with exchange times measured for the highest concentration of Pol III* in vitro (a few seconds at 13 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between in vivo and in vitro measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The E. coli replisome consists of 13 proteins, with 10 forming the Pol III holoenzyme organized into three subassemblies: the \u03b1\u03b5\u03b8 core with polymerase activity, the \u03b22 sliding clamp for DNA association, and the \u03c4n\u03b3(3\u2013n)\u03b4\u03b4'\u03c8\u03c7 clamp loader complex (CLC) that organizes cores via \u03b1\u2013\u03c4 interactions to form Pol III*, which is essential for cell survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide a comprehensive description of replisome composition and organization, supported by established knowledge and appropriate citations. The structural and functional relationships are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "698ccedb-2a57-4906-81db-c873d6d45fcd",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The prevailing view is that the replisome is highly stable with Pol III being reused rather than replaced for successive Okazaki fragments, though high concentrations of catalytically dead Pol III* can inhibit ongoing replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C12 accurately summarize the existing consensus in the field with appropriate citations. The apparent contradiction between stability and inhibition by dead polymerase sets up the central question addressed by this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study demonstrates a novel exchange mechanism where Pol III* remains stably associated with the replisome under high dilution but facilitates rapid exchange at nanomolar concentrations, striking a balance between stability and plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C48-C50 present the main finding of the paper, supported by multiple lines of experimental evidence from both in vitro and in vivo experiments. The concentration-dependent exchange mechanism reconciles previous contradictory observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "d5be0305-a2e3-488c-a8fe-462475d8fb52",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fluorescently labeled Pol III* (SNAP-tagged with 83-90% labeling efficiency) supports replication at rates similar to wild-type enzyme (492\u00b123 bp/s for wild-type vs 561\u00b127 bp/s for labeled), producing Okazaki fragments of similar sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C54, C58 demonstrate that the fluorescent labeling does not significantly impair polymerase function. The replication rates are comparable and within expected biological variation, validating the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "75d2a0de-3373-4a91-88f9-24259cdf96a0",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pol III remains bound to DNA behind the replication fork at the 3'-termini of Okazaki fragments (1.3\u00b10.4 kb in size), but this binding is eliminated in the presence of Pol I, consistent with Pol I displacing Pol III during Okazaki fragment maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C51 provide direct visualization evidence for Pol III behavior on the lagging strand. The Pol I displacement experiment (C20) serves as an important control confirming the interpretation of the observed binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "f8237cda-64bf-4096-b7dd-90271ee770d4",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fluorescent Pol III at the replisome is highly resistant to photobleaching with a much longer fluorescence lifetime than immobilized Pol III (14.1\u00b10.4 s), suggesting polymerase exchange from solution (6.7 nM) replaces photobleached Pol III.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C52-C53 provide the initial observation suggesting exchange. The comparison between replisome-associated and immobilized polymerase photobleaching is a key control that supports the exchange hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "5e4e0682-fa7f-4fce-9b06-19b2931bc634",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The functional unit exchanging at the replication fork is the entire Pol III* complex, not individual cores, as demonstrated by the lack of co-localization between pre-assembled red and green Pol III* after replication, confirming the \u03b1\u2013\u03c4 interaction remains intact during DNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 provide critical mechanistic insight through well-designed two-color experiments. The lack of mixing between differently colored Pol III* complexes definitively shows that entire complexes exchange, not individual components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ab2f5987-dd72-4036-bd4d-d5cc128225b7",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two-color visualization experiments show that at 6.7 nM Pol III*, the replisome exhibits fast dynamics with both colors, while at 0.3 nM the dynamics are slower with distinct exchange events, demonstrating concentration-dependent exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 provide direct visual evidence of concentration-dependent exchange through real-time imaging. The qualitative difference in dynamics between concentrations is clear and supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "ca640631-7fd9-449d-b6a1-e00b7165f3af",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre-assembly replication assays (without Pol III* in solution) support highly processive DNA replication with processivity (76\u00b126 kb) and rates (445\u00b133 bp/s) comparable to conditions with Pol III* in solution (73\u00b125 kb, 561\u00b127 bp/s), with photobleaching without recovery confirming stable association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 reconcile the new findings with previous literature showing replisome stability. The pre-assembly experiments demonstrate that in the absence of competing polymerase, the replisome is indeed stable, consistent with earlier reports.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "a47a9361-0644-4b5a-a0d3-a2c9368d2721",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FRAP experiments show concentration-dependent exchange rates: at 13 nM Pol III*, fluorescence recovers rapidly (\u03c4=1.85 s), while at 30 pM recovery is 20-fold slower (\u03c4=42 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 provide quantitative measurements of exchange kinetics across a wide concentration range. The FRAP approach directly measures exchange rates and confirms the concentration dependence observed in two-color experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In vivo experiments with fluorescently labeled \u03c4-YPet and \u03b5-mKate2 (which do not significantly impair growth) show synchronized intensity fluctuations with a positive cross-correlation peak and exchange time of 4\u00b12 s, consistent with in vitro measurements at ~23 nM Pol III* (calculated from 72\u00b13 nM \u03b5 and 67\u00b15 nM \u03c4, or 104\u00b13 and 96\u00b16 copies per cell).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47, C56-C57, C59-C62, C75-C76 demonstrate that Pol III* exchange occurs in living cells. The cross-correlation analysis is rigorous with appropriate controls (fixed cells, randomized pairs), and the measured exchange time is consistent with in vitro data at comparable concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Stoichiometry measurements show peaks at one Pol III* per replisome (mean intensities: 5100\u00b12000 for red, 1600\u00b1700 for green), with higher concentrations pushing equilibria toward occupancy of multiple binding sites, while lower concentrations reduce average Pol III* number but exchange still occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 provide quantitative stoichiometry data supporting a multisite binding model. The observation that stoichiometry varies with concentration is consistent with the proposed concentration-dependent exchange mechanism, though the large error bars on single-molecule intensities introduce some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "4d08cb33-750d-4551-8527-eb7d8ec0fe8f",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The multisite exchange mechanism is physiologically relevant and has been reported in other systems with mathematical descriptions available. This mechanism could allow component replacement and provide access to other binding partners like translesion synthesis polymerases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 place the findings in broader context with appropriate citations. C68 is supported by the in vivo data, while C69 is appropriately framed as speculation about implications. The comparison to other systems (C70-C71) is well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "1ad69e30-d781-437b-80c6-16dcd1fa68b5",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Challenge experiments show that pre-assembled replisomes with high processivity (76\u00b126 kb) exhibit drastically reduced processivity (3.5\u00b10.6 kb) when challenged with 10 nM Pol III core, demonstrating that actively replicating Pol III* can be displaced by entities that bind the clamp but cannot support coordinated synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 provide important mechanistic evidence that Pol III* can be displaced from active replisomes. The dramatic reduction in processivity upon challenge with core alone supports the exchange model and demonstrates accessibility of the binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    },
+    {
+      "id": "bb270180-d392-4d4a-b92e-c3150c739a4f",
+      "content_id": "36f3011d-9b41-4ba4-bf71-7e7df6751185",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The fluorescence intensity of labeled Pol III* complexes does not change as a function of DNA length during rolling-circle replication under constant flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is an important control demonstrating that the imaging conditions do not introduce artifacts related to DNA length or flow effects. This validates the quantitative intensity measurements used for stoichiometry analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:52:54.066465Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "46d63387-951c-49bf-849c-a535273c8b00",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "44331231-07da-4c31-bfae-5a42db8e872a",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "1ec98f88-6e31-447c-9fee-dc1e47b45f0d",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "307d4359-c792-4bfa-b139-183bea30e05b",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "30f0298b-8c4c-455c-a491-cdf178db16ef",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "ec1d1fdb-9664-4a2e-aa8c-c55111b467a0",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "0992f79f-0a33-46f0-a0d5-2775efd97e35",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "00a40e0d-d831-43ef-be2f-38a2cd61310f",
+      "result_id": "58b25da3-e81c-4a05-9763-c0f95c8a4e9e"
+    },
+    {
+      "claim_id": "ca247630-2ff5-4572-b8bd-3485f8f15958",
+      "result_id": "698ccedb-2a57-4906-81db-c873d6d45fcd"
+    },
+    {
+      "claim_id": "02366452-cbee-450c-a1d6-5ceef99e2c98",
+      "result_id": "698ccedb-2a57-4906-81db-c873d6d45fcd"
+    },
+    {
+      "claim_id": "8075b99c-0119-41b4-8044-7e82e08434b5",
+      "result_id": "698ccedb-2a57-4906-81db-c873d6d45fcd"
+    },
+    {
+      "claim_id": "f71a9ed4-f9e5-4e89-9184-6a8c26951aa2",
+      "result_id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7"
+    },
+    {
+      "claim_id": "65d7e095-a120-49a6-b0e9-389b9f418adb",
+      "result_id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7"
+    },
+    {
+      "claim_id": "cec9408a-2745-4190-a886-79de98207d6d",
+      "result_id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7"
+    },
+    {
+      "claim_id": "6a095eb7-dab7-42fb-9e0b-afad4ad80e17",
+      "result_id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7"
+    },
+    {
+      "claim_id": "6a624b0b-bde0-4fe3-9e1d-90985ca6319c",
+      "result_id": "ff93d90a-bae6-4a13-83e2-1187a0f981b7"
+    },
+    {
+      "claim_id": "5995375e-eac3-47f3-987c-2bbc24726d32",
+      "result_id": "d5be0305-a2e3-488c-a8fe-462475d8fb52"
+    },
+    {
+      "claim_id": "e1bd33bb-4a84-4fec-af05-46fd7d66e4d7",
+      "result_id": "d5be0305-a2e3-488c-a8fe-462475d8fb52"
+    },
+    {
+      "claim_id": "f89f1265-8534-4c05-83ee-1ced1b64925d",
+      "result_id": "d5be0305-a2e3-488c-a8fe-462475d8fb52"
+    },
+    {
+      "claim_id": "166ecc86-17f3-4241-a75b-4eff3c3ec259",
+      "result_id": "d5be0305-a2e3-488c-a8fe-462475d8fb52"
+    },
+    {
+      "claim_id": "a9843add-7064-4449-870b-8712fc23b151",
+      "result_id": "d5be0305-a2e3-488c-a8fe-462475d8fb52"
+    },
+    {
+      "claim_id": "5194df64-6d1c-489b-a7c1-ca97a06391fc",
+      "result_id": "75d2a0de-3373-4a91-88f9-24259cdf96a0"
+    },
+    {
+      "claim_id": "6a241e71-e1f8-455c-8286-f2d3c44ef712",
+      "result_id": "75d2a0de-3373-4a91-88f9-24259cdf96a0"
+    },
+    {
+      "claim_id": "630221ae-cd77-40b1-9690-a3eb047e798d",
+      "result_id": "75d2a0de-3373-4a91-88f9-24259cdf96a0"
+    },
+    {
+      "claim_id": "c94fe280-a53b-47f5-97c9-2f5554a2eb75",
+      "result_id": "75d2a0de-3373-4a91-88f9-24259cdf96a0"
+    },
+    {
+      "claim_id": "5dc49424-95a3-4e69-a533-d35fab86c3cf",
+      "result_id": "f8237cda-64bf-4096-b7dd-90271ee770d4"
+    },
+    {
+      "claim_id": "2cecd186-99b8-44b8-b438-64f0149c09fd",
+      "result_id": "f8237cda-64bf-4096-b7dd-90271ee770d4"
+    },
+    {
+      "claim_id": "3af484f4-caf9-4ccf-afbe-d7b2e547111c",
+      "result_id": "f8237cda-64bf-4096-b7dd-90271ee770d4"
+    },
+    {
+      "claim_id": "7142fed8-91f7-44f7-bcba-e7363997cd36",
+      "result_id": "f8237cda-64bf-4096-b7dd-90271ee770d4"
+    },
+    {
+      "claim_id": "6f6fea38-2e7b-4db9-b6ed-9c2061fbb58a",
+      "result_id": "f8237cda-64bf-4096-b7dd-90271ee770d4"
+    },
+    {
+      "claim_id": "a7790fc4-f527-424e-a45c-340d3bebf473",
+      "result_id": "5e4e0682-fa7f-4fce-9b06-19b2931bc634"
+    },
+    {
+      "claim_id": "9852c90d-9e14-422d-b0b6-545b2fec20d0",
+      "result_id": "5e4e0682-fa7f-4fce-9b06-19b2931bc634"
+    },
+    {
+      "claim_id": "a7b3898b-d442-4559-bbba-f286ce11acdb",
+      "result_id": "5e4e0682-fa7f-4fce-9b06-19b2931bc634"
+    },
+    {
+      "claim_id": "d59a2afe-08d9-4a8a-b641-fa69838f8056",
+      "result_id": "5e4e0682-fa7f-4fce-9b06-19b2931bc634"
+    },
+    {
+      "claim_id": "d4738e97-50e9-4587-a15d-7b9a547f8416",
+      "result_id": "ab2f5987-dd72-4036-bd4d-d5cc128225b7"
+    },
+    {
+      "claim_id": "a69fce9b-7403-4e98-a0ec-cb496cbb845f",
+      "result_id": "ab2f5987-dd72-4036-bd4d-d5cc128225b7"
+    },
+    {
+      "claim_id": "f437dd12-001c-40a5-9a1f-19135d349494",
+      "result_id": "ab2f5987-dd72-4036-bd4d-d5cc128225b7"
+    },
+    {
+      "claim_id": "8ce0f7e4-8f4f-4a0b-ad5b-85355c95daf7",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "5c597670-ab14-4833-8be9-2d13d6e09c1a",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "d94b9643-ee15-4c9e-9af6-a79b81a71af4",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "61d70e67-c8b7-4731-863d-3132d5c11b23",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "ab5c7817-69ed-4363-81b9-f325f95cfed6",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "67e2a27a-7fbc-4286-8cac-9f94bdc45ddb",
+      "result_id": "ca640631-7fd9-449d-b6a1-e00b7165f3af"
+    },
+    {
+      "claim_id": "13b660a0-18bb-49bf-9f17-67180e55d02e",
+      "result_id": "a47a9361-0644-4b5a-a0d3-a2c9368d2721"
+    },
+    {
+      "claim_id": "8bc31bbf-ea45-4f06-8911-ef9d7e739c79",
+      "result_id": "a47a9361-0644-4b5a-a0d3-a2c9368d2721"
+    },
+    {
+      "claim_id": "a8985376-73c9-4c4b-920f-f22b9b88c6a9",
+      "result_id": "a47a9361-0644-4b5a-a0d3-a2c9368d2721"
+    },
+    {
+      "claim_id": "5f4f09e8-3646-4d34-8bc3-c7e4f55fe300",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "b35f69d7-4ac8-4fd3-8cbf-97c5764201b4",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "fcabfd44-92b6-4ef6-8514-e8e7fa30a80e",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "6adf7789-f085-40dd-a62d-36f199e62ef1",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "fcc1f586-4cf5-452a-ab7b-45c37856be75",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "0337b8dc-be3f-42c7-aa4e-905b4540f076",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "8f735050-efcc-45be-85a4-eae42f4aaba1",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "8dc36163-92d2-4ae3-9c8c-9d8a5438ed6e",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "ee5a9be6-161b-4109-b728-fe3b6b814535",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "3ba128d6-ce1c-43ba-819f-48afdba5e8ed",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "41e134b6-7164-4cda-8893-8fc087a875ca",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "28b3b9e9-bcbb-4279-a804-d2bc1bc2ac43",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "3d75fbf5-5cf8-486c-bec7-30bd52a58122",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "003d6e19-f49e-41e6-9a81-b5e033a873f3",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "12e17deb-2268-4033-a53c-b93cc6cbc30d",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "92dbd3d6-78c5-4065-b597-378ff4643045",
+      "result_id": "e529390d-3ff3-487f-ab6d-a4f3f15a1e61"
+    },
+    {
+      "claim_id": "86b0eda5-a18b-4d98-9e29-fbd26f54bcd2",
+      "result_id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97"
+    },
+    {
+      "claim_id": "1e97f14c-11e2-406a-837b-1f36ca84acc0",
+      "result_id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97"
+    },
+    {
+      "claim_id": "8c56ea83-1b48-4937-8e67-8e5934c36c28",
+      "result_id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97"
+    },
+    {
+      "claim_id": "7e608872-3294-4415-a78e-128051d1c599",
+      "result_id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97"
+    },
+    {
+      "claim_id": "829a35c0-6485-48e3-ad75-e2b5f1417de6",
+      "result_id": "61800a5d-0a97-4d2b-be0a-3008b31f8e97"
+    },
+    {
+      "claim_id": "fcee2d48-a2fd-4e44-8702-3378ad4a072e",
+      "result_id": "4d08cb33-750d-4551-8527-eb7d8ec0fe8f"
+    },
+    {
+      "claim_id": "4b316ed3-f908-44a8-818e-f039505ecb1e",
+      "result_id": "4d08cb33-750d-4551-8527-eb7d8ec0fe8f"
+    },
+    {
+      "claim_id": "aa0390d2-3f4a-4188-b969-9ee20ec41f66",
+      "result_id": "4d08cb33-750d-4551-8527-eb7d8ec0fe8f"
+    },
+    {
+      "claim_id": "1abb1467-d454-4771-99f1-3dbc611e83c9",
+      "result_id": "4d08cb33-750d-4551-8527-eb7d8ec0fe8f"
+    },
+    {
+      "claim_id": "3784c2d6-6c71-45cf-bbb2-5178830bd540",
+      "result_id": "1ad69e30-d781-437b-80c6-16dcd1fa68b5"
+    },
+    {
+      "claim_id": "405d1513-fcea-4ea5-923e-beda8af850e8",
+      "result_id": "1ad69e30-d781-437b-80c6-16dcd1fa68b5"
+    },
+    {
+      "claim_id": "ff7bd1e7-a04b-4190-983a-b31347600ed8",
+      "result_id": "bb270180-d392-4d4a-b92e-c3150c739a4f"
+    }
+  ],
+  "comparisons": []
+}

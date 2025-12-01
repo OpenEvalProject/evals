@@ -1,0 +1,1879 @@
+{
+  "submission": {
+    "id": "dc12ffd8-578e-4fff-8197-48ff49f918d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:54:42.345989Z",
+    "updated_at": "2025-11-30T21:54:42.345989Z"
+  },
+  "content": [
+    {
+      "id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "submission_id": "dc12ffd8-578e-4fff-8197-48ff49f918d0",
+      "content_type": "manuscript",
+      "content_text": "# Differentiation alters stem cell nuclear architecture, mechanics, and mechano-sensitivity\n\n## Authors\n\n- Su-Jin Heo<sup>1</sup>\n- Tristan P Driscoll<sup>1</sup>\n- Stephen D Thorpe<sup>3</sup> ([ORCID: 0000-0002-4707-7756](https://orcid.org/0000-0002-4707-7756))\n- Nandan L Nerurkar<sup>4</sup>\n- Brendon M Baker<sup>5</sup>\n- Michael T Yang<sup>5</sup>\n- Christopher S Chen<sup>5</sup>\n- David A Lee<sup>3</sup>\n- Robert L Mauck<sup>1</sup> ([ORCID: 0000-0002-9537-603X](https://orcid.org/0000-0002-9537-603X)) \u2020\n\n### Affiliations\n\n1. McKay Orthopaedic Research Laboratory, Department of Orthopaedic Surgery Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n2. Department of Bioengineering, School of Engineering and Applied Science University of Pennsylvania Pennsylvania United States\n3. Institute of Bioengineering, School of Engineering and Materials Science Queen Mary University of London London United Kingdom\n4. Department of Genetics, Harvard Medical School Harvard University Boston United States\n5. Department of Biomedical Engineering, College of Engineering Boston University Boston United States\n6. Wyss Institute for Biologically Inspired Engineering Harvard University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMesenchymal stem cell (MSC) differentiation is mediated by soluble and physical cues. In this study, we investigated differentiation-induced transformations in MSC cellular and nuclear biophysical properties and queried their role in mechanosensation. Our data show that nuclei in differentiated bovine and human MSCs stiffen and become resistant to deformation. This attenuated nuclear deformation was governed by restructuring of Lamin A/C and increased heterochromatin content. This change in nuclear stiffness sensitized MSCs to mechanical-loading-induced calcium signaling and differentiated marker expression. This sensitization was reversed when the \u2018stiff\u2019 differentiated nucleus was softened and was enhanced when the \u2018soft\u2019 undifferentiated nucleus was stiffened through pharmacologic treatment. Interestingly, dynamic loading of undifferentiated MSCs, in the absence of soluble differentiation factors, stiffened and condensed the nucleus, and increased mechanosensitivity more rapidly than soluble factors. These data suggest that the nucleus acts as a mechanostat to modulate cellular mechanosensation during differentiation.\n\n## Introduction\n\nMesenchymal stem cells (MSCs) are used in a variety of regenerative applications (Bianco et al., 2013). While considerable work has shown the importance of soluble differentiation factors in MSC lineage specification, recent studies have also highlighted that physical signals from the microenvironment, including substrate stiffness (Engler et al., 2006), cell shape (McBeath et al., 2004), and dynamic mechanical cues (Huang et al., 2010a) can influence fate decisions. However, the manner in which soluble and physical cues are integrated to inform lineage specification and commitment is only just beginning to be understood (Guilak et al., 2009). One potentially confounding feature is that the physical properties of MSCs themselves likely change coincident with lineage specification, and such changes might alter cellular perception of super-imposed mechanical perturbations that arise from the microenvironment.\n\nStrain transfer to (and deformation of) the nucleus has been proposed as a direct link between mechanical inputs from the microenvironment and gene regulation (Wang et al., 2009). The cytoskeleton forms a mechanically continuous network within the cell and transmits extracellular mechanical signals from sites of matrix adhesion to the nucleus through specialized proteins that comprise the linker of nucleus and cytoskeleton (LINC) complex (Haque et al., 2006). These connections allow for direct transfer of mechanical signals to the chromatin (Wang et al., 2009; Martins et al., 2012) annscription upregulation viad can regulate intracellular signaling (Driscoll et al., 2015). Chromatin remodeling induced by mechanical signals depends in part on a pre-tensed (contractile) actin cytoskeleton (Hu et al., 2005; Heo et al., 2016) and can regulate gene expression (Wang et al., 2009;\u00a0Tajik et al., 2016;\u00a0Shivashankar, 2011). Together, these findings demonstrate that changes in cytoskeletal organization, connectedness to the nuclear envelope, and pre-tension in the acto-myosin network all impact how cells sense and respond to mechanical signals.\n\nSince the nucleus is the stiffest of organelles, changes in nuclear architecture might also impact how forces are transmitted through the cell. It is well established that chromatin condensation increases nuclear stiffness (Dahl et al., 2005), as do changes in the amount and distribution of other intra-nuclear filamentous proteins, including the lamin protein family (Ho and Lammerding, 2012). For example, nuclear lamins stabilize and stiffen the nuclear envelope and are regulated both by differentiation (Lammerding et al., 2006) and the micro-elasticity of the surrounding tissue (Swift et al., 2013). Mouse embryonic fibroblasts lacking lamin A/C (LMAC) have aberrant nuclear morphologies and exaggerated nuclear deformation in response to deformation of the cell (Lammerding et al., 2004). Knockdown of LMAC in the nuclei of differentiated cells decreases nuclear stiffness (Pajerowski et al., 2007), while overexpression in neutrophils decreases their ability to pass through micron-sized openings (Davidson et al., 2014). In addition, lamins may contribute to chromatin remodeling, gene silencing, and transcriptional activation (Andr\u00e9s and Gonz\u00e1lez, 2009; Mewborn et al., 2010) via the action of lamin binding proteins (Wilson and Foisner, 2010) and their sequestration of chromatin to the nuclear periphery (Gurudatta et al., 2010).\n\nAs progenitor cells differentiate, a host of physical changes occur within the cell, depending on cell type and the lineage to which they are being driven. These biophysical changes extend to the nucleus, where for instance ES cell differentiation is accompanied by an increase in chromatin condensation (B\u00e1rtov\u00e1 et al., 2008) leading to an increase in nuclear stiffness (Pajerowski et al., 2007). Lamins change during differentiation as well; mouse ES cells start expressing high levels of A-type lamin during cell differentiation, suggestive of a role in the maintenance of differentiated state. Further, chromatin reorganization mediated by lamins can enhance heterochromatin formation in ES cells (Galiov\u00e1 et al., 2008), and haplo-insufficiency of LMAC can limit certain lineages (Sehgal et al., 2013). In C2C12 cells, a myogenic cell line, LMAC becomes heavily concentrated at the nuclear periphery with myogenesis (Markiewicz et al., 2005), and mutant isoforms of LMAC can block myogenic lineage specification (Markiewicz et al., 2005). In MSCs, LMAC knockdown promotes adipocyte differentiation (and decreases osteoblast differentiation) (Akter et al., 2009; Swift et al., 2013), while forced expression of the progerin mutant isoform of LMAC increases osteogenic differentiation (and reduces adipogenic differentiation) (Scaffidi and Misteli, 2008).\n\nGiven the centrality of the nucleus in mediating both the transcriptional activities that define lineage specification, as well its role in mediating mechanical force transduction, the objective of this study was to investigate the manner in which both cellular and nuclear biophysical properties change during differentiation and how such changes might impact the mechanobiology of the cell. Specifically, we examined the nuclear mechanics and mechanosensitivity of MSCs as they transited toward a differentiated (fibrochondrogenic) lineage on aligned nanofibrous scaffolds. These scaffolds not only direct new tissue formation for fibrous tissue engineering (Nerurkar et al., 2009; Baker et al., 2012) but also provide a useful template for the application of coordinated cell deformation (Nathan et al., 2011; Heo et al., 2011; Han et al., 2013). Using this experimental platform, we show that MSC fibrochondrogenesis mediated by soluble factor addition over the long term (days to weeks) increases nuclear stiffness, alters organization of key nuclear structural elements, and as a consequence, changes the manner in which MSCs respond in the short term (seconds to minutes) to dynamic mechanical signals from the microenvironment. We further demonstrate that the repeated application of this short term dynamic mechanical stimulation (as opposed to application of soluble differentiation factors) can itself evoke some of these same changes in nuclear structure and mechanics, and that it does so more rapidly than soluble factor addition alone. This implies that nuclear stiffening may be both a consequence and mediator of differentiation, tuning how progenitor cells interpret mechanical cues from their microenvironment. Such changes may act to first inform, and then reinforce, signals that promote and preserve lineage specification.\n\n## Results\n\n### Differentiation attenuates stretch-induced nuclear deformation\n\nWhen bovine MSCs were exposed to differentiation media (Diff), expression of fibrochondrogenic markers (aggrecan and collagen II) increased (Figure 1\u2014figure supplement 1a,\u00a0b), consistent with previous findings (Baker and Mauck, 2007). To assess mechanical changes in the nucleus with differentiation, MSCs cultured on aligned scaffolds were subjected to 10% tensile stretch of the scaffold (as in [Nathan et al., 2011; Heo et al., 2011]) on specific days over the first 10 days of culture. This terminal assay provides an indirect measure of nuclear stiffness/deformability in the context of a living cell. At early time points, stretch of the scaffold resulted in both cell and nuclear deformation, as evidenced by a marked increase in the absolute nuclear aspect ratio (NAR) values in both control (Ctrl) and differentiation (Diff) conditions (Figure 1a,\u00a0c). From day 5 onward, however, there was no change in the NAR in differentiated MSCs (Diff) with scaffold stretch, while nuclear deformation persisted in undifferentiated MSCs (Ctrl, Figure 1b,\u00a0c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig1-v2.jpg)\n\n**Figure 1.:** (a) On day 1, bovine MSCs on aligned nanofibrous scaffolds have elongated nuclei that are oriented in the prevailing fiber direction in both Ctrl and Diff conditions. Application of 10% scaffold stretch increased nuclear deformation under both culture conditions (bottom panels). (b) By day 7, application of 10% stretch continued to increase nuclear deformation in Ctrl conditions, while in Diff conditions nuclear deformation was almost completely absent. Scale: 20 \u00b5m. (c) Quantification of nuclear morphology showed that 10% stretch significantly increased MSC nuclear aspect ratio (NAR) in Ctrl conditions, irrespective of culture duration. Conversely, for MSCs in Diff conditions, a progressive decrease in the change in NAR with 10% stretch was observed with increasing culture duration (ANOVA, *p<0.05 vs. 0%, \u2020p<0.05 vs. Ctrl, \u2021p<0.05 vs. day 1, n\u00a0=\u00a0102 nuclei per time point from 4\u20135 scaffolds per condition, absolute NAR values, mean \u00b1 SEM, experiments were carried out at least three times in full). Population distribution of MSC NAR in Ctrl and Diff conditions on day 1 (d) and day 7 (e); on day 1, 10% stretch shifted the distribution to the right for both conditions, while the shift was only apparent in Ctrl conditions on day 7. See Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Type II collagen (Type II Col) and (b) aggrecan (AGG) gene expression in bovine MSCs as a function of media condition and time when cultured on aligned nanofibrous scaffolds.\u00a0Culture in differentiation media (Diff) led to a significant increase in fibrochondrogenic markers with culture duration (normalized to GAPDH, ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Day 1, n\u00a0=\u00a05, mean \u00b1 SD).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The overall response of human MSCs mirrored that of bovine MSCs, indicating that the reduction in nuclear strain transfer is independent of species. (a) Application of 10% scaffold stretch significantly increased NAR in MSCs under both media conditions on day 1. On day 7, nuclei in Ctrl condition continued to increase in NAR with stretch, while those in Diff conditions showed a progressive decrease in the change in NAR as differentiation progressed (ANOVA, *p<0.05 vs. 0%, \u2020p<0.05 vs. Ctrl, \u2021p<0.05 vs. day 1, n\u00a0=\u00a050 nuclei per time point from 4\u20135 scaffolds per condition, mean \u00b1 SEM). Population distribution of human MSC NAR in Ctrl and Diff conditions on day 1 (b) and day 7 (c). On day 1, 10% scaffold stretch shifted the distribution to the right for both media conditions, while the shift was only apparent in Diff conditions on day 7, consistent with results using bovine MSCs. Nuclear deformation was attenuated in a human ES-cell line cultured under differentiating conditions on aligned nanofibrous scaffolds subjected to 10% stretch. (d) Deformed ES-cell nuclei on scaffolds subjected to 10% stretch. Scale: 20 \u00b5m. Note the highly elongated morphology, as evidenced by the NAR\u00a0>\u00a03, of these nuclei relative to marrow derived MSCs cultured similarly. (e) Application of 10% scaffold stretch significantly increased NAR in ES cells under both media conditions on day 1. On day 7, nuclei in Ctrl conditions continued to increase in NAR, while those in Diff conditions showed a progressive decrease in the change in NAR as differentiation progressed (ANOVA, *p<0.05 vs. 0%, \u2020p\u00a0<\u00a00.05 vs. Day 1, n\u00a0=\u00a0100 nuclei per time point from 4\u20135 scaffolds per condition, mean \u00b1 SEM).\n\nSince this shift in the average response could simply represent a change in a subset of nuclei within the heterogeneous population, we next analyzed the distribution of NAR in all cells as a function of stretch and differentiation. On day 1, quantification showed a shift to a higher NAR with scaffold stretch for both groups (Figure 1d), but by day 7, differentiated cells (Diff) showed no shift in population NAR with scaffold deformation (Figure 1e). A similar effect, namely a reduction in nuclear deformation in response to stretch under differentiating conditions (Diff), was observed in both human bone marrow derived MSCs (hMSCs) (Figure 1\u2014figure supplement 2a\u2013c) and in a human embryonic stem (ES) cell line (Figure 1\u2014figure supplement 2d\u2013e) treated similarly.\n\n### Altered nuclear mechanics in differentiated MSCs attenuates stretch-induced nuclear deformation\n\nTo distinguish between potential factors that may contribute to this attenuation of stretch-induced nuclear deformation, we carried out a series of experiments to measure nuclear stiffness, investigate the role of deposited matrix (Figure 2a), and queried the patency and contractility of the cytoskeletal network with differentiation (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic illustrating how MSCs were cultured on aligned (AL) scaffolds in Ctrl condition or Diff condition for 7 days followed by re-seeding on fresh scaffolds (for stretch studies) or re-plating on tissue culture plastic (TCP, for analysis of peri-nuclear stiffness by AFM). (b) Fluorescent staining of F-actin (green) in MSCs re-plated on TCP for one day and (c) disruption of F-actin via treatment with cytochalasin D (CYTOD) for 30 min. Scale: 100 \u00b5m. (d) The peri-nuclear stiffness of differentiated Diff/MSCs was significantly higher than that of undifferentiated Ctrl/MSCs after re-plating on day 7 (normalized to Ctrl values, ANOVA, *p<0.05 vs. Ctrl, n\u00a0=\u00a010 per condition, dashed line indicates peri-nuclear modulus on day 1, mean \u00b1 SD, experiments were carried out in duplicate). Treatment with CYTOD (or DMSO vehicle control) did not alter the measured peri-nuclear stiffness. (e) F-actin (green) and DAPI (blue) staining of MSCs re-seeded onto fresh scaffolds. Scale: 100 \u00b5m. (f) DAPI staining of nuclear morphology before (0%) and after (10%) scaffold stretch showed that differentiated MSC nuclei did not deform after transfer to a fresh scaffold. Scale: 20 \u00b5m. (g) Quantification of NAR confirmed lack of deformation of Diff nuclei (ANOVA, *p<0.05 vs Ctrl/10% after re-seeding, n\u00a0=\u00a050 nuclei/condition, mean \u00b1 SEM, experiments were carried out at least three times). See Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Traction force increases substantially over the first 16 hr of exposure to 10 ng/ml TGF-\u03b23 (n\u00a0=\u00a020, Mean \u00b1 SD), where time t\u00a0=\u00a00 shows the baseline response in the absence of TGF-\u03b23. (b) Micro-Post Array Detector (mPAD) analysis showed little post deflection by MSCs in Ctrl conditions, while MSCs cultured in Diff conditions for 7 days showed significant post deflections (bar\u00a0=\u00a030 \u03bcm, F-actin: green; nuclei: blue) and quantification (c) showed that strain energy per cell was higher in MSCs in Diff conditions compared to MSCs in Ctrl conditions (Student\u2019s t-test, *p<0.0001 vs. Ctrl, n\u00a0=\u00a020/condition, Mean \u00b1 SEM). When aligned scaffolds were subjected to stretch (d), nuclear deformation was significantly reduced with either 7 days of differentiation (Diff) or via blockade of contractility in undifferentiated MSCs by ROCK inhibition (Ctrl/Y27, Y27632, 10 \u03bcM, ANOVA, *p<0.05 vs. Diff and Ctrl/Y27, n\u00a0=~\u00a050/condition, mean \u00b1 SEM).\n\nFirst, peri-nuclear elastic modulus was measured by atomic force microscopy of cells removed from scaffolds and plated on tissue culture plastic. Stiffness was measured in both undifferentiated and differentiated MSCs (Figure 2b, c). In previous work (Nathan et al., 2011;\u00a0Driscoll et al., 2015 ), we established that nuclear deformation with scaffold stretch was mediated primarily by the tensed actin cytoskeleton and its connections to the nucleus through nesprin-1 giant. Therefore, the peri-nuclear stiffness was measured both with and without the addition of cytochalasin D to remove potential contributions from the actin cytoskeleton (Figure 2b, c). Over seven days, the peri-nuclear stiffness did not change for undifferentiated MSCs (Ctrl), but increased by\u00a0>50% in differentiated MSCs (Diff, Figure 2d). Treatment with CytoD (and DMSO vehicle) did not alter these values, indicating that stiffening was not due to changes in f-actin organization or mechanics, although this does not rule out potential contributions from other cytoskeletal elements (i.e. microtubules, and intermediate filaments).\n\nGiven that MSC differentiation culminates in abundant matrix production, which may shield the cell from applied stress, we next investigated the potential role of this deposited extracellular matrix on our observation of a loss of nuclear deformation with stretch. To do so, MSCs were removed from the scaffold on day 7 (with trypsin) and re-seeded for 24 hr onto fresh scaffolds. Re-seeded MSCs from both Ctrl and Diff conditions adopted a highly aligned morphology (Figure 2e). Consistent with the above findings, nuclei of these re-seeded differentiated MSCs (Diff) did not deform (Figure 2f,\u00a0g) when the scaffold was stretched to 10%, while re-seeded undifferentiated MSC nuclei (Ctrl) increased in NAR by\u00a0~25%. These findings indicate that deposited extracellular matrix is not responsible for the observed attenuation in nuclear deformation with scaffold stretch. Additionally, we measured substantial increases in cytoskeletal contractility (which would tend to increase rather than decrease nuclear deformation, Figure 2\u2014figure supplement 1). To interrogate the force generating and strain transfer capacity of the actin cytoskeletal network, MSCs were also cultured on elastomeric micropost array detectors following culture on aligned scaffolds for 7 days in Ctrl or Diff conditions. Traction force increased over the first 16 hr of exposure to TGF-\u03b23 (Figure 2\u2014figure supplement 1a). Actin stress fibers were prominent in both undifferentiated (Ctrl) and differentiated (Diff) cells, although differentiated cells induced significantly greater post deflections (Figure 2\u2014figure supplement 1b). Quantification of the total strain energy per cell revealed a significant increase in traction forces (~5 fold) with differentiation (Figure 2\u2014figure supplement 1c). On scaffolds, blockade of acto-myosin contractility decreased nuclear deformation in undifferentiated cells (Ctrl/Y27, Figure 2\u2014figure supplement 1d), implicating the need for a patent and contractile cytoskeleton in the transfer of deformation from the scaffold to the nucleus. Taken together, these findings suggest that nuclear stiffening with differentiation dominates the response, resulting in a nucleus that no longer deforms when the cell is stretched.\n\n### Structural reorganization and condensation of the nucleus with MSC differentiation\n\nTo understand the origin of these increases in nuclear stiffness with MSC differentiation, we next interrogated the amount and distribution of nuclear structural proteins, as well as the degree to which chromatin condensed under differentiating conditions. On day 1, LMAC was distributed throughout the MSC nucleus (Figure 3a), and in Ctrl conditions, this distribution did not change through day 7 (Figure 3a and Video 1). Under Diff conditions, LMAC remodeled to localize solely to the nuclear periphery (Figure 3a,\u00a0b and Video 2). Localization to the nuclear periphery was accompanied by a\u00a0~50% increase in A-type lamin protein content (Figure 3c,\u00a0d). Likewise, staining for H3K27me3 (a heterochromatin marker) revealed a marked increase in the number of heterochromatin-rich nodules throughout the nucleus with differentiation (Diff, p<0.05 vs. Ctrl, Figure 3e,\u00a0f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig3-v2.jpg)\n\n**Figure 3.:** (a) On day 1, Lamin A/C (LMAC) was spread diffusely throughout the nucleus in both Ctrl and Diff conditions. By day 7, Diff conditions resulted in a restriction of LMAC to the nuclear periphery (scale: 20 \u00b5m). (b) Quantification showed that the nuclear volume occupancy ratio of LMAC (relative to DAPI) did not change in Ctrl conditions, while this ratio decreased significantly in Diff conditions as a function of culture duration (ANOVA, *p<0.05 vs. Ctrl, n\u00a0=\u00a031, mean \u00b1 SD, experiments wer carried out in triplicate). (c) Protein levels of A-type lamin (and \u03b2-actin) under Ctrl and Diff conditions. (d) Quantification showed a significant increase in A-type lamin with differentiation (Student\u2019s t-test, *p<0.05 vs. Ctrl, n\u00a0=\u00a06 from two biological replicates, mean \u00b1 SD). (e) Staining for heterochromatin (HTC) in Ctrl and Diff conditions on day 7. Scale: 5 \u00b5m. (f) HTC\u00a0staining intensity in Diff conditions was significantly higher than in Ctrl conditions on day 7 (ANOVA, *p<0.05 vs. Ctrl, n\u00a0=\u00a025 nuclei/condition, mean \u00b1 SD, experiments were carried out at least three times). See Figure 3\u2014source data\u00a01.\n\n![Video 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/18207/elife-18207-media2.mp4.jpg)\n\n### Altered nuclear mechanics modulates mechanosensitivity of differentiated MSCs\n\nThe above findings suggest that the nuclei of differentiated cells transform from being a \u2018strain sink\u2019 (an object readily deformed along with the rest of the cell) to a \u2018stress concentrator\u2019 (an object that no longer deforms, and as a consequence forces other elements of the cell to deform to a greater extent). Given this transformation, we next asked whether such changes in nuclear stiffness alter the degree to which mechanical perturbation of the whole cell regulates signal transduction as a function of differentiation state. To answer this question, cells on scaffolds were stretched rapidly, and short-term changes in calcium signaling were used as an early readout of altered mechanotransduction. Additionally, the stiff nuclei of differentiated MSCs (Diff) were softened via chemical pre-treatment with the histone deacetylase (HDAC) inhibitor, trichostatin A (TSA [Gerlitz and Bustin, 2010]) and the soft nuclei of undifferentiated cells (Ctrl) were transiently stiffened by short-term osmotic shock using D-mannitol (DM) (Irianto et al., 2013) prior to the application of this mechanical perturbation.\n\nTreatment of differentiated cells with TSA for 24 hr induces chromatin relaxation and, in this study, resulted in a marked reduction in both heterochromatin content and nuclear stiffness (Diff/TSA, Figure 4\u2014figure supplement 1a,\u00a0b and Figure 4\u2014figure supplement 1f). While TSA did not alter the distribution or the amount of LMAC in these differentiated cells (Figure 4\u2014figure supplement 1c\u2013e), it did partially restore nuclear deformation in response to scaffold stretch (Figure 4a,\u00a0b). To examine the link between nuclear stiffness and cellular mechanotransduction, we next evaluated changes in intracellular calcium in response to a rapidly applied stretch. In undifferentiated MSCs (Ctrl), a rapid stretch resulted in a small increase in intracellular Ca2+. When the same perturbation was applied to differentiated MSCs (Diff), a much larger increase was observed (p<0.01, Figure 4c,\u00a0i). Interestingly, this enhanced sensitivity was reversed by pre-treatment of differentiated MSCs with TSA (Diff/TSA). This sensitization to mechanical perturbation with differentiation (and blockade with TSA treatment) was also observed for aggrecan and collagen II gene expression (Figure 4d,\u00a0e). With TSA pre-treatment (Diff/TSA), we found no significant changes in cytoskeletal structure, contractility (as assessed by myosin light chain phosphorylation, pMLCK) or migration rate (Figure 4\u2014figure supplement 2a\u2013e).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig4-v2.jpg)\n\n**Figure 4.:** (a) On day 7, 10% static stretch increased nuclear deformation in Ctrl conditions but did not alter nuclear shape under Diff conditions. With TSA treatment (Diff/TSA), nuclear elongation of differentiated MSCs was once again apparent with stretch. Scale: 20 \u00b5m (b) Quantification of NAR via tracking of individual nuclei. With TSA treatment of differentiated MSCs, nuclear deformation was once again observed with 15% stretch (normalized to Ctrl 0%, ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, \u2021p\u00a0<\u00a00.05 vs. Ctrl 0%, dashed line indicates Ctrl 0%, n\u00a0=\u00a028, mean \u00b1 SEM, experiments were carried out in triplicate). (c and i) Baseline intracellular Ca2+ in MSCs was not different between groups. With 10% stretch, intracellular Ca2+ showed slight increases in Ctrl conditions, and a much more marked increase in Diff conditions. TSA addition (Diff/TSA) reduced intracellular Ca2+ release with stretch (Scale: 100 \u00b5m). (d) AGG and (e) COL II levels did not increase with stretch in Ctrl conditions, while significant increases were observed in Diff conditions. Addition of TSA (Diff/TSA), abrogated this stretch-induced response (10% static stretch for 1 hr, ANOVA, *p<0.05 vs. Ctrl, n\u00a0=\u00a03, mean \u00b1 SD, experiments were carried out in triplicate). (f and g) Pre-treatment of MSCs with D-mannitol (Ctrl/DM) decreased nuclear deformation with stretch (Scale: 20 \u00b5m, normalized to ctrl/0%, ANOVA, *p<0.05 vs. Ctrl, \u2021p\u00a0<\u00a00.05 vs. Ctrl/0%, n\u00a0=\u00a040, dashed line indicates Ctrl 0%, mean \u00b1 SEM, experiments were carried out in triplicate). (h and i) Pre-treatment with D-mannitol (Ctrl/DM) increased intracellular calcium mobilization with stretch compared to Ctrl conditions (Scale: 50 \u00b5m, ANOVA, *p<0.05 vs. Ctrl, \u2021p\u00a0<\u00a00.05 vs. Diff/TSA, n\u00a0=\u00a050, mean \u00b1 SEM, experiments were carried out in triplicate). See Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a and b) One day of TSA treatment (Diff/TSA) decreased heterochromatin (HTC) staining in differentiated MSCs (ANOVA, *p<0.05 vs. Ctrl, \u2021p\u00a0<\u00a00.05 vs. Diff/TSA, n\u00a0=\u00a035, mean \u00b1 SD). Scale: 20 \u00b5m. One day of TSA treatment (Diff/TSA) did not alter LMAC organization (c) or A-type lamin protein content (d and e, ANOVA, *p<0.05 vs.Ctrl, n\u00a0=\u00a03, mean \u00b1 SD). Scale 20 \u00b5m. (f) One day of TSA treatment (Diff/TSA) decreased nuclear stiffness in differentiated MSCs (ANOVA, *p<0.05 vs. Ctrl, \u2021p\u00a0<\u00a00.05 vs. Diff/TSA, n\u00a0=\u00a010, mean \u00b1 SD).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** DM treatment induces chromatin reorganization but does not perturb the actin cytoskeleton.(a and b) MLCK phosphorylation increased markedly in Diff compared to Ctrl MSCs but was not altered with TSA treatment (Diff/TSA, ANOVA, *p>0.05 vs. Diff/TSA, n\u00a0=\u00a03, mean \u00b1 SD). (c) There were no apparent changes in actin stress fiber density or distribution with differentiation (Diff) or TSA treatment (Diff/TSA), scale: 20 \u00b5m. (d and e) Differentiation slowed MSC migration in a wound healing assay; TSA treatment (Diff/TSA) did not alter migration rates (*p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, \u2021p<0.05 vs. 1 hr, n\u00a0=\u00a06, mean \u00b1 SD, Scale: 200 \u00b5m). Visualization (f) and quantification (g) of chromatin condensation parameter (CCP) with DM treatment of MSCs (Ctrl/DM, Student\u2019s t-test, *p<0.05 vs. Ctrl, n\u00a0=~30, mean \u00b1 SD, scale: 3 \u00b5m). (h) Phalloidin staining of actin under Ctrl and DM treatment conditions (Ctrl/DM). Scale: 100 \u00b5m.\n\nTo test the converse, undifferentiated MSCs were transiently exposed to a hypertonic solution [500 mM D-mannitol (DM), (Irianto et al., 2013), Ctrl/DM] for 30 min, which has been shown to induce the rapid condensation of nuclear chromatin. This treatment resulted in MSC nuclei that were more resistant to deformation when the scaffold was deformed (Figure 4\u2014figure supplement 2f\u2013g, Figure 4f\u2013g). Importantly, this treatment (Ctrl/DM) did not alter the organization of the actin cytoskeleton (Figure 4\u2014figure supplement 2h). When stretch was applied to MSCs whose nuclei were artificially stiffer, but still undifferentiated, a marked increase in calcium mobilization was once again observed (Figure 4h,\u00a0i).\n\n### Dynamic loading alters MSC nuclear mechanics and mechano-perception\n\nThe previous experiments demonstrated that MSC differentiation, guided by exogenous soluble factors, altered nuclear mechanics and mechano-perception. However, cells in mechanically loaded tissues experience repeated bouts of mechanical stimulation that, over time, can summate to drive lineage specification and/or regulate tissue homeostasis. To determine whether such mechanical signals on their own could elicit similar changes as the addition of soluble factors, undifferentiated MSCs were exposed to dynamic tensile loading in the absence of exogenous TGF-\u03b23. These studies showed that short periods of dynamic loading [1 hr of dynamic stretch (3%, 1 Hz)] that was applied each day for 5 days did not alter LMAC distribution (Figure 5a,\u00a0b). However, when the same loading regimen was applied for 3 or 6 hr per day, LMAC reorganization was evident by day 5 (Figure 5c,\u00a0d; Figure 5\u2014figure supplement 1a). Strain magnitude also modulated this process; LMAC reorganization was evident with 1.5% and 3% stretch, but not at 0.75% stretch (applied for 6 hr per day, Figure 5d\u2013g, Figure 5\u2014figure supplement 1b). LMAC staining intensity and organization in these mechanically pre-conditioned MSCs (i.e. those exposed to higher levels of DL for longer periods of time) was similar to that observed in MSCs differentiated via soluble mediators (Diff, Figure 5\u2014figure supplement 1c), suggesting that LMAC reorganization mediated through mechanical signals matches or exceeds that of soluble-factor-mediated differentiation. Similarly, dynamic loading (DL) conditions led to a marked increase in heterochromatin content, comparable to that induced by soluble factors (Figure 5\u2014figure supplement 1d,\u00a0e).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig5-v2.jpg)\n\n**Figure 5.:** Dynamic loading (DL) for 5 days in the absence of soluble differentiation factors resulted in reorganization of LMAC in a manner dependent on the duration (0, 1, 3, or 6 hr/day, a\u2013d) and magnitude (0, 0.75, 1.5, and 3% dynamic strain applied at 1 Hz, d\u2013g) of applied loading (Scale: 20 \u00b5m). (h) DL (6 hr, 3%) decreased changes in NAR with 10% static stretch (ANOVA, *p<0.05 vs. 0%, \u2020p<0.05 vs. Diff, \u2021p<0.05 vs. DL, n\u00a0=\u00a052, mean \u00b1 SEM, experiments were carried out in triplicate). (i) DL nuclei were stiffer than those in undifferentiated MSCs, but were not as stiff as nuclei in MSCs differentiated (Diff) through soluble factor addition (ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. DL, n\u00a0=\u00a010, mean \u00b1 SD, experiments were carried out in duplicate). (j and k) DL increased expression of AGG and TGF-\u03b2 to levels exceeding those of differentiated MSCs (ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, n\u00a0=\u00a05, mean \u00b1 SD, experiments were carried out in triplicate). (l) A rapid 10% stretch applied to DL-conditioned MSCs resulted in higher intracellular calcium release compared to the same perturbation of Diff MSCs (Student\u2019s t-test, *p<0.05, n\u00a0=~40, mean \u00b1 SEM, experiments were carried out in duplicate). See Figure 5\u2014source data 1 .\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** LMAC nuclear occupancy ratio as a function of strain duration (a) and magnitude (b) in MSCs dynamically loaded in Ctrl media (ANOVA, *p<0.05 vs. 0%/0 hr, n\u00a0=\u00a025, mean \u00b1 SD). (c) LMAC was restricted to the nuclear periphery with differentiation. After DL (6%, 5 days) in Ctrl media, LMAC organization closely mirrored that of differentiated MSCs. There was no clear change in actin stress fibers with differentiation or with application of dynamic loading (DL), scale: 20 \u00b5m. (d and e) Heterochromatin staining intensity increased with dynamic loading (DL), reaching levels similar to that of differentiation medium (Diff, ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, n\u00a0=\u00a030, mean \u00b1 SD, scale: 3 \u00b5m). (f) LMAC reorganization and heterochromatin formation (HTC) was evident at TGF-\u03b23 doses\u00a0\u22651 ng/mL [at one week, scale: 20 \u00b5m (top) or 3 \u00b5m (bottom)].\n\nGiven that the dynamic mechanical preconditioning above certain duration and magnitude elicited many of the same changes within the nucleus as soluble factor addition, we next investigated nuclear mechanics, nuclear deformability and response to mechanical perturbation in these cells. When mechanically pre-conditioned MSCs (DL, 3%, 1 Hz, 6 hr, 5 days of loading) were reseeded onto new scaffolds, nuclear deformation with 10% scaffold stretch was lower than for undifferentiated MSCs, approaching the levels observed in MSCs differentiated via soluble mediators (Diff, Figure 5h). Nuclei in DL pre-conditioned cells were stiffer than undifferentiated MSCs, although not as stiff as nuclei in MSCs differentiated via soluble factors (Diff, Figure 5i). Furthermore, DL increased aggrecan (AGG) and TGF-\u03b2 gene expression to levels higher than in differentiation conditions (Diff, Figure 5j,\u00a0k). The marked upregulation of TGF-\u03b2 expression is interesting, given that it is a key factor included within differentiation medium. Indeed, addition of low levels of exogenous TGF-\u03b23 (1 ng/mL) for 1 week resulted in changes in LMAC distribution and increases in heterochromatin in MSCs (Figure 5\u2014figure supplement 1f). When a rapid stretch was applied to DL pre-conditioned MSCs, a greater increase in intracellular calcium was observed, compared to undifferentiated MSCs (ctrl, Figure 5l).\n\nOverall, these data suggest that mechanical stimulation can drive lineage specification, including alterations in nuclear organization and mechanics, and that these changes may be mediated through autocrine/paracrine signaling. Importantly, in the absence of exogenous differentiation factors, dynamic loading alone can produce a mechanically-preconditioned nuclear state that is similar (but distinct) to that brought about by soluble factors.\n\n### Dynamics of MSC nuclear remodeling in response to soluble factors and mechanical pre-conditioning\n\nOur observation of nuclear remodeling after extended mechanical or biochemical stimulation (over a week time scale), led us to investigate the early remodeling of MSC nuclei in response to these cues. TGF-\u03b23 (Diff) did not alter LAMC organization or gene expression over the first 3 days of culture (Figure 6a,\u00a0d). However, within just 2\u00a0days under DL conditions, reorganization of LMAC was already apparent, with translocation to the nuclear envelope complete by day 3 (Figure 6a) and increased LMAC gene expression with DL at each time point (Figure 6d). Interestingly, HTC staining intensified more rapidly under DL conditions compared to Diff, with a higher number of heterochromatin-rich nodules present as early as day 1 (compared to day 3 under Diff conditions, Figure 6b,\u00a0c). This precocious chromatin restructuring under DL conditions was further quantified using an image-based technique (Irianto et al., 2013) that determines a \u2018chromatin condensation parameter\u2019 (CCP) based on the amount of free space and number of visible edges in DAPI-stained images of the nucleus. This quantitative analysis showed a more rapid structural reorganization of the nucleus under DL conditions, compared to culture in differentiation medium (Figure 6e,\u00a0f). Along with this, gene expression analysis revealed an early and robust response to dynamic loading in comparison to the addition of exogenous TGF-\u03b23 (Diff, Figure 6\u2014figure supplement 1a\u2013d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig6-v2.jpg)\n\n**Figure 6.:** (a) Staining for LMAC showed little change in Ctrl conditions, and only subtle changes in Diff conditions through day 3. Conversely, DL promoted LMAC reorganization as early as day 2 (Scale: 5 \u00b5m). (b) Heterochromatin staining was evident in Ctrl conditions on day 3, but was already present on day one in DL conditions (Scale: 5 \u00b5m). (c) Quantification of heterochromatin staining showed significant differences in the DL group as early as day 1 (ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, n\u00a0=\u00a035, mean \u00b1 SD, experiments were carried out in duplicate). (d) DL increased LMAC gene expression at each time point (ANOVA, *p<0.05 vs. Ctrl conditions, n\u00a0=\u00a03. Mean \u00b1 SD, experiments were carried out in triplicate). (e) Representative DAPI stained nuclei on days 1 through 5 with treatment (top row), and corresponding edge detection for CCP calculation (bottom row). Scale: 2 \u00b5m. (f) Chromatin condensation parameter (CCP) as a function of treatment group and time (ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, n\u00a0=\u00a029\u201331 cells per condition per time point, mean \u00b1 SD, experiments were carried out in duplicate). See Figure 6-source data\u00a01 and Source code 1 .\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Expression of (a) SOX9, (b) BMP2, (c) TGF -\u03b2, and (d) aggrecan (AGG) was transiently upregulated under Diff conditions over the first three days of culture. DL resulted in higher expression for longer durations (DL: 6 hr/day, ANOVA, *p<0.05 vs. Ctrl, \u2020p<0.05 vs. Diff, n\u00a0=\u00a03, mean \u00b1 SEM). (e) Smad3 phosphorylation increased markedly in Diff or DL compared to Ctrl MSCs.\n\n## Discussion\n\nIn addition to being the site for storage of genetic\u00a0material and gene transcription, the nucleus, which is generally the stiffest element of all eukaryotic cells (Dahl et al., 2008), plays a central role in mechanical strain transduction from the external microenvironment. While the mechanisms by which nuclear deformation regulates transcriptional activities are only now beginning to be elucidated, our data suggest that the nucleus acts as a mechanical rheostat within progenitor cells, where increases in nuclear stiffness sensitize the entire transduction machinery to prime the cell response to mechanical perturbation. Our data show that soluble differentiation factors as well as mechanical perturbation on its own, elicit marked changes in nuclear deformability, stiffness and organization as a direct consequence of chromatin condensation and restructuring of the Lamin A/C network in both adult progenitor cells and in embryonic stem cells. This change in nuclear mechanics and organization led to a greater mobilization of intracellular calcium when pre-conditioned mesenchymal stem cells were exposed to stretch, likely as a consequence of the nucleus transforming from a strain sink (an object that readily deforms) to a strain concentrator (an object that stops deforming, forcing other components to deform more). These changes would be expected to increase stress and/or deformation occurring at nucleo-cytoskeletal and cytoskeletal linkages (i.e. LINC complex) to the ECM (i.e. focal adhesions). When one element of an elastic mechanical linkage stiffens, the other weaker elements must deform more when the system is elongated by a set amount. Indeed, the enhanced mechanical sensitivity seen in differentiated cells was reversed when the \u2018stiff\u2019 differentiated nucleus was softened and was enhanced when the \u2018soft\u2019 undifferentiated nucleus was stiffened through pharmacologic treatment.\n\nThis notion of the nucleus as a dynamic mechanical feature of the cell that is responsive to the microenvironment is consistent with and extends several recent findings. Swift and colleagues recently showed that the stiffness of native tissue extracellular matrices defines the resting levels and ratios of Lamin isoforms in adult cells, with stiffer microenvironments increasing nuclear mechanics (Swift et al., 2013). Our data extend this concept to cells transiting from an undifferentiated to a differentiated phenotype as a result of soluble factor addition and exposure to repeated mechanical deformtion. This phenomenon may drive cell differentiation or maintain the differentiated phenotype to better match the dynamic mechanical tissue environment in which they operate. For instance, as soon as muscular contraction begins in the developing embryo, mesenchymal precursors are exposed to dynamic mechanical perturbation, and blockade of mechanical signaling during development interrupts joint formation and tissue maturation. In the context of injury and repair, recruited stem cells experience the mechanical environment of the tissue being repaired, and so for musculoskeletal tissues, experience dynamic mechanical stimulation as part of their normal microenvironment. Thus, dynamic mechanical forces transmitted through the environment may continuously adjust nuclear mechanics to modulate progenitor cell mechanosensitivity during tissue formation and repair.\n\nThe mechanism through which soluble factor addition or mechanical perturbation results in nuclear reorganization is not wholly elucidated, but these inputs may share some common downstream pathways. For example, both BMP and TGF-\u03b2 signaling increase baseline cellular contractility (Bhadriraju et al., 2007). Our data show that TGF-\u03b2 expression is highly upregulated with dynamic stretch at early time points and while TGF-\u03b2 in the media did not reach detectable levels, we did observe increased Smad3 signaling in response to stretch (Figure 6\u2014figure supplement 1e, [Furumatsu et al., 2013; Li et al., 2015]). Thus, elements of the TGF-signaling pathway may be mechano-responsive, in a ligand or ligand-less fashion (Heo et al., 2016). Mechanical perturbation itself can also increase cell contractility and spreading (Cui et al., 2015), and influence the subsequent mechano-response. Kaunas et al. showed that artificially increasing Rho GTPase activity in endothelial cells sensitizes their response to applied stretch (Kaunas et al., 2005), and Deguchi et al. showed that fluid shear stress, which also increases contractility, can stiffen the endothelial cell nucleus (Deguchi et al., 2005). Recent work by the Shivashankar and Burridge groups has shown that local application of mechanical force to the apical surface of cells causes local chromatin reorganization (Iyer et al., 2012) and that pulling on isolated nuclei results in changes in Lamin organization and nuclear stiffening (Guilluy et al., 2014).\n\nRegardless of the path to nuclear reorganization, our data provide evidence that the stiffer nucleus of differentiated cells can act as a stress concentrator (Figure 7), sensitizing these cells to mobilize calcium to a greater extent when external deformation is applied. This increased calcium mobilization may itself impact lamin processing (Kalinowski et al., 2013), creating a feed-forward loop to ensure that the nucleus remains patent under conditions of high mechanical activity. We recently showed that ATP-purinergic signaling is a central modulator in the load-induced-chromatin condensation in MSCs, as is signaling thorough Smad proteins (Heo et al., 2015, 2016). Further, we have established that the giant isoform of nesprin-1 (a component of the LINC complex that mediates actin connectivity to the nucleus) is essential for mechanical force transfer to the nucleus and activation of the YAP/TAZ pathway in response to exogenous mechanical loading (Driscoll et al., 2015). These signaling pathways may likewise impact lamin processing and chromatin condensation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18207/elife-18207-fig7-v2.jpg)\n\n**Figure 7.:** (a) The nucleus is mechanically linked to the extracellular environment through linker of nucleus and cytoskeleton (LINC) complex connections to a contractile cytoskeleton that interact with the extracellular matrix (ECM) through focal adhesion complexes. (b) When progenitor cells differentiate, the nucleus transforms from a deformable \u2018strain sink\u2019 into a comparatively rigid (relative to the cytoskeleton) \u2018stress concentrator\u2019, with localization of Lamin A/C to the nuclear envelope (red circle in nucleus) and an increase in heterochromatin content (grey lines in nucleus). In the undifferentiated state, the nucleus deforms along with the cell, resulting in little added strain (or stress) in the cytoskeleton (green filaments). In the differentiated state, the lack of deformation of the nucleus concentrates deformation (and stress) in the cytoskeletal network (red filaments) and at its connections. This transformation hyper-sensitizes the differentiated cell to respond to mechanical perturbation (red stars) by increasing stress at each point of cytoskeletal connectivity (focal adhesions and LINC complex). Mechanical inputs (when repeated dynamically) can evoke similar changes in nuclear architecture and mechanics and increase cell mechanosensitivity to direct lineage specification in the absence of exogenous soluble differentiation factors.\n\nWhile both mechanical forces and soluble factors had similar effects on nuclear properties and reorganization, those mediated by soluble factor addition arose more slowly than those wrought by mechanical forces. This suggests that the mechanical environment plays a significant role in dynamically modulating nuclear properties. Given that such changes act to first inform, and then reinforce, signals that promote and preserve lineage specification, this time dependence has implication for therapeutic use. That is, as MSCs transit between phenotypes, one would expect that their current differentiation status and time history of exposure to soluble or mechanical factors could influence their mechanobiologic response upon implantation. This understanding may aid in the design of biomaterials that can promote (or restrict) certain lineages based on nuclear remodeling. For example, if nuclear stiffening via Lamin reorganization is counter the intended differentiation pathway, then materials may be modified with ligands that interrupt mechano-sensing pathways, for example by decreasing cell contractility based on ligand presentation (Cosgrove et al., 2016). Alternatively, materials could be engineered to promote nuclear deformation (e.g. by aligning the cell population from the outset) so as to more efficiently transfer strain from the material to the nucleus to promote nuclear remodeling and achieve a differentiated status more quickly (Li et al., 2011).\n\nIn addition to material design, we also noted a path-dependent aspect in terms of the end results of nuclear reorganization; soluble factors resulted in complete abrogation of nuclear deformation, while mechanically mediated reorganization of the nucleus resulted in only a diminution of nuclear deformation with stretch. If nuclear deformation is essential for physiologic function, then complete elimination of nuclear deformation (as a consequence of soluble factor addition) may result in aberrant mechano-signaling. This has implications for establishing better cellular biophysical benchmarks by which small molecule drivers of differentiation are judged. These benchmarks may prove relevant for cell-based therapeutics, wherein naive stem cells are placed in a mechanically loaded environment. While it is not yet clear how permanent these changes are once soluble and mechanical stimuli are removed, it does suggest that care must be taken to preserve the appropriate mechano-response. In conclusion, the data presented herein demonstrates a mechanism whereby nuclear architecture and stiffness can be tuned to dynamically regulate cellular mechanosensitivity to promote and preserve lineage specification.\n\n## Materials and methods\n\n### Cell isolation, scaffold seeding and culture\n\nMesenchymal stem cells (MSCs), meniscal fibrochondrocytes (MFCs) and chondrocytes were isolated from juvenile bovine tibiofemoral joints (3\u20136 months old, Research 87, Inc., Boylston, MA) (Baker and Mauck, 2007;\u00a0Huang et al., 2010b). The cells were cultured and expanded in a basal medium (BM) consisting of Dulbecco\u2019s minimal essential medium (DMEM) containing 1\u00d7 penicillin/streptomycin/fungizone and 10% fetal bovine serum. A 150 \u03bcl aliquot containing 2.5\u00a0\u00d7\u00a0104 or 2\u00a0\u00d7\u00a0105 cells was seeded on each side of the electrospun aligned nanofibrous scaffold, followed by incubation in BM at 37\u00b0C for 2 hr to allow for cell attachment. After attachment, scaffolds were transferred to a chemically defined serum-free medium (Mauck et al., 2006). The chemically defined serum-free medium consists of high-glucose DMEM with 1\u00d7 penicillin/streptomycin/fungizone, 0.1 \u03bcM dexamethasone, 50 \u03bcg/ml ascorbate 2-phosphate, 40 \u03bcg/ml l-proline, 100 \u03bcg/ml sodium pyruvate, 6.25 \u03bcg/ml insulin, 6.25 \u03bcg/ml transferrin, 6.25 ng/ml selenous acid, 1.25 mg/ml bovine serum albumin and 5.35 \u03bcg/ml linoleic acid (Life Technologies, NY, USA). Medium was further supplemented with/without 10 ng/ml TGF-\u03b23 (Ctrl/Diff, R&D Systems, Minneapolis, MN). Cell-seeded scaffolds were cultured in this medium for up to 10 days. Human MSCs were isolated from surgical waste tissue from patients undergoing total joint replacement at the University of Pennsylvania, with institutional approval. A human embryonic stem cell line was acquired from a commercial source (BioTime, Alameda, CA) and expanded according to the manufacturers guidelines (Sternberg et al., 2012).\n\n### Fabrication of aligned nanofibrous scaffolds\n\nAligned poly(\u03b5-caprolactone) (PCL) nanofibrous scaffolds (\u00a0~0.50 mm thick) were fabricated by electrospinning onto a rotating mandrel. Briefly, PCL (Bright China Limited, China) was dissolved in a 1:1 solution of tetrahydrofuran and N, N-dimethylformamide (T427-1 and D119-1; Fisher Scientific, Pittsburgh, PA) at 14.3% w/v over 48 hr. The PCL solution was loaded into a 20-ml syringe tipped with an 18G stainless steel needle. This needle served as a \u2018spinneret\u2019 and was charged to\u00a0+13 KV (ES30P-5W; Gamma High Voltage Research Inc., Ormand Beach, FL) relative to ground. The PCL solution was extruded at a rate of 2.5 ml/hr using a syringe pump (KD Scientific, Model 780100). Fibers were collected onto a grounded cylindrical mandrel rotating with a surface velocity of 10 m/s, with the mandrel positioned 15 cm from the spinneret. Aluminum shields charged to\u00a0+5 kV were used to focus the fiber jet onto the collecting mandrel. Additional details on this scaffold fabrication process can be found in (Heo et al., 2011).\n\n### Single cell measures of contractility with differentiation\n\nTo query cell contractility changes with differentiation, a custom micro-post array detector (mPAD) was utilized (Fu et al., 2010; Yang et al., 2011). After 7 days on scaffolds, MSCs were detached and re-seeded onto an array of elastomeric micro-pillars (spring constant: 18.19 nN/\u03bcm), and cultured for 1 day before traction force measurements were taken. Images of live single cells deflecting the underlying micro-pillars were acquired (n\u00a0=\u00a020/group) using a fluorescence microscope equipped with a temperature and CO2-controlled incubator. Post deflections were visualized via DiI labeling of post tips and used to calculate strain energy per cell (Yang et al., 2011). Cells were fixed (4% PFA), permeabilized and stained with phalloidin and DAPI to visualize the actin cytoskeleton and nucleus, respectively.\n\n### Assays of cell migration with differentiation\n\nMigration of undifferentiated, differentiated and TSA-treated MSCs was evaluated using a standard \u2018scratch\u2019 assay. MSCs were released from scaffolds by trypsin treatment on day 7 and reseeded into 6-well tissue culture plates at a density of 2\u00a0\u00d7\u00a0105 cells per well in the same media in which they had been cultured (i.e. Ctrl or Diff conditions). After 1\u00a0day (to allow for attachment), confluent monolayers were scratched with a 2.5 \u00b5l pipette tip and washed three times with PBS to remove cell debris. In some Diff groups, TSA was added to Diff media 24 hr prior to wounding. Images of the wound area were taken at regular intervals using an inverted microscope and the degree of wound closure computed using Image J (RRID:SCR_003070). Wound area was normalized to the initial scratch area for each sample.\n\n### Visualization of cell and nuclear structural proteins and organization\n\nCells on the nanofibrous scaffolds were fixed with 4% PFA at 37\u00b0C for 30 min and then immunostained for Lamin A/C (LMAC) using a mouse anti-Lamin A/C primary antibody (1:100, MA3-1000, Thermo, IL, RRID:AB_325377). Anti mouse IgG-TRITC (T2402, Sigma, St Louis, MO, RRID:AB_261618) was used as secondary antibody. Nuclei were counterstained with 4',6-diamidino-2-phenylindole (DAPI, Prolong Gold Reagent, P-36931, Life Technologies, NY). The spatial localization of LMAC was evaluated by confocal microscopy (Zeiss, LSM 510, Penn Biomedical Imaging Core). The ratio of LMAC nuclear occupancy was calculated from the volume of LMAC stain divided by total DAPI-stained nuclear volume using Volocity software (Volocity 5.0, Improvision Inc.). To assess chromatin condensation, nuclei on scaffolds were stained with DAPI, and scanned across their mid-section using a confocal microscope (Zeiss, LSM 510). To generate a chromatin condensation parameter (CCP), a gradient-based Sobel edge detection algorithm was employed using MATLAB to measure the edge density for individual nuclei (Irianto et al., 2013). Phalloidin-AlexaFluor 488 (Invitrogen, Carlsbad, CA, RRID:AB_2315147) was used to stain the actin cytoskeleton. Heterochromatin (HTC) levels in MSC nuclei were assessed by the degree to which histone H3 was tri-methylated using the mouse anti-Histone H3 (tri methyl K27) antibody (ab6002, Abcam, MA, RRID:AB_305237). All images were collected using a fluorescent microscope (Zeiss, Axioplan-2 imaging fluorescent microscope) at 100\u00d7 magnification, with HTC staining intensity quantified using MetaMorph (Molecular Devices Inc., CA).\n\n### Perturbation of MSC nuclear stiffness and condensation\n\nTo decrease chromatin condensation in differentiated cells, MSCs that had been differentiated (Diff) for 6 days were treated with the histone deacetylase (HDAC) inhibitor Trichostatin A (TSA, T8552, Sigma-Aldrich, St. Louis, MO, USA) at 0.5 \u00b5g/ml for the final 24 hr of culture (in differentiation medium: Diff/TSA). To increase nuclear condensation in undifferentiated cells (Ctrl), MSCs on scaffold were exposed to a 500 mM solution of D-mannitol (Ctrl/DM) for 30 min as in (Irianto et al., 2013).\n\n### Static and dynamic mechanical perturbation of cell-seeded scaffolds\n\nNuclear deformation of cells on aligned scaffolds was first quantified by applying a quasi-static tensile stretch to cell-seeded scaffolds (2.5\u00a0\u00d7\u00a0104 cells per scaffold) using a custom device designed to permit visualization on an epi-fluorescent inverted microscope during stretch (Nathan et al., 2011). Cell-seeded scaffolds were stretched to 0% and 10% grip-to-grip strain at 2.5 %/min on days 1, 3, 5, 7 and 10. Constructs were fixed in the deformed state (in 4% paraformaldehyde) immediately after stretch, and nuclei were stained with DAPI after permeabilization with Triton X-100 (0.1%) for 10 min. All images were captured on an inverted fluorescent microscope (Nikon T30, Nikon Instruments, Melville, NY) equipped with a CCD camera. At each strain level, the nuclear aspect ratio defined as the long axis (b) divided by the perpendicular short axis (a) (NAR=b/a) was calculated from DAPI-stained nuclei using Image J. In subsequent studies, changes in NAR were tracked for individual MSC nuclei at each strain step (Han et al., 2013;\u00a0Driscoll et al., 2015). In some studies, the Rho kinase inhibitor, Y27632, was included at 10\u00b5M overnight prior to and during scaffold stretch.\n\nTo determine the effects of cyclic tensile deformation applied over a longer period, MSC seeded scaffolds (2\u00a0\u00d7\u00a0105 cells per side) were loaded into a custom bioreactor (Baker et al., 2011). Dynamic tensile loading (DL) was applied in Ctrl condition at 1 Hz for varying durations (up to 6 hr/day) and at various strain magnitudes (up to 3% strain) following 2 days of pre-culture in Ctrl media.\n\n### Measurement of peri-nuclear stiffness by atomic force microscopy\n\nMSC peri-nuclear stiffness was determined by atomic force microscopy (AFM, DAFM-2X, Veeco, Woodbury, NY). For this, cells were removed from scaffolds by trypsinization and re-plated onto tissue culture plastic for 24 hr. Cells were probed using a silicon nitride probe with a pyramidal tip (a spring constant of 0.06 N/m, DNP, Veeco) (Solon et al., 2007). To quantify peri-nuclear stiffness, the first 400 nm of tip deflection from the horizontal (Dd) were fit with the Hertz model modified for a conical tip (Solon et al., 2007). To confirm that AFM measurements represented changes in nuclear stiffness, rather than overall cell stiffness, control experiments were performed wherein the actin cytoskeleton was disrupted with 1 \u03bcM cytochalasin D (CYTOD, C2618, Sigma-Aldrich) for 30 mins prior to AFM probing. Control cells were treated with the carrier DMSO. Values of peri-nuclear stiffness were taken as the average of measurements made in three different regions of the nucleus.\n\n### Quantification of cell and nuclear structural proteins\n\nSemi-quantitative analysis of protein levels and phosphorylation states were assessed using Western blot analysis. For this, cell-seeded scaffolds were washed three times with PBS and lysed for 30 min on ice using radioimmunoprecipitation assay (RIPA) lysis buffer containing protease (p-8340, Sigma, St Louis, MO) and phosphatase inhibitors (p-2580, Sigma, St Louis, MO). Cell lysates were cleared by centrifugation at 10,000\u00a0g for 10 min, and protein concentrations were determined by Lowry assay (DC Protein Assay Kit, Biorad, CA). Cell lysates were separated on gradient poly-acrylamide gels (Mini-Protean TGX gels Any KD, 456\u20139034, Biorad, CA) in running buffer (Tris/Glycine/SDS Buffer, 161\u20130732, Biorad, CA). Separated proteins were transferred to nitrocellulose membranes (iBlot Gel Transfer Stacks Nitrocellulose, Regular, IB3010-01, Invitrogen Life Technologies, Carlsbad, CA) and blocked for 1 hr in either 5% (w/v) bovine serum albumin (Sigma) or 5% (w/v) dry milk powder in PBS containing 0.1% (v/v) Tween 20 (PBST, Acros Organics, Geel, Belgium). The transferred membranes were probed with antibodies for A-type lamin (MA3-1000, Thermo, IL), phosphorylated myosin light chain kinase (pMLCK, LS-C25729, LSBio, RRID:AB_903557), pSmad3 (C25A9, Cell Signaling, RRID:AB_2193207) and \u03b2-actin (#4967, Cell Signaling, RRID:AB_2629465). Anti-rabbit IgG, HRP-linked Antibody (7074 s, Cell signaling, RRID:AB_657966) or HRP AffiniPure Goat Anti-Mouse IgG (H+L) (Catalog No.115-035-062, Jackson Immunoresearch Laboratories, Inc., RRID:AB_2338504) were used as secondary antibodies. Blots were visualized by chemiluminescenc (34080, Thermo scientific, IL), and signal intensity was quantified by densitometry using ImageJ with normalization to \u03b2-actin.\n\n### Analysis of gene expression by real-time PCR\n\nTotal RNA in constructs was isolated using Trizol reagent followed by phenol-chloroform separation. mRNA was quantified using a Nanodrop spectrometer (ND-1000, Nanodrop Technologies, Wilmington, DE), and cDNA synthesized using the SuperScript First Strand Synthesis kit (Invitrogen, Life Technologies, Carlsbad, CA). Amplification was carried out using an Applied Biosystems Step One Plus real-time PCR system, with intron spanning primers and Fast SYBR Green Reaction Mix (#4385617, Applied Biosystems, Foster City, CA). Expression of collagen type II (Col2), aggrecan (AGG), sox9, TGF-\u03b2 (TGF\u03b2), BMP-2, and LMAC were determined and normalized to the housekeeping gene glyceraldehyde-3-phosphate dehydrogenase (GAPDH) using the comparative Ct method.\n\n### Real-time analysis of intracellular Ca2+\u00a0levels with stretch\n\nTo determine whether MSC differentiation resulted in increased mechano-sensitivity, intracellular calcium levels were measured during scaffold stretch using a calcium-sensitive fluorescent indicator. On day 7, undifferentiated and differentiated MSCs were loaded with 25 mM fluo-4/acetoxymethyl ester (fluo-4AM; Molecular Probes, Eugene, OR) in 0.05% Pluronic F-127 (Molecular Probes, NY) and 1% HEPES (Gibco, NY) in control media. Scaffolds were incubated with dye solution for 30 min, followed by incubation in fresh control medium. Real-time images were obtained using an inverted fluorescence microscope (Nikon T30, Nikon Instruments, Melville, NY) during scaffold stretch. Additional samples were pre-incubated for 24 hr with TSA as above prior to application of scaffold stretch. To measure the calcium response after DL pre-conditioning, cells were seeded on scaffolds for 2 days and then dynamically loaded for 5 days (3% strain, 1 Hz, 6 hr/day). Afterwards, samples were stained with fluo-4AM dye and subjected to a static stretch. For the osmotic challenge study, cells were seeded on scaffold for 2 days, treated with D-mannitol (DM) for 30 min, stained with Cal-520AM (#21130, AAT Bioquest, Sunnyvale, CA) and then subjected to static stretch. A step static stretch was applied at a rate of 1 %/sec up to 10%. Individual MSCs were tracked during this deformation, and the signal intensity before and after stretch was measured using MetaMorph and normalized to background intensity. Intracellular Ca2+ concentration in n\u00a0>\u00a050 cells was tracked across three scaffolds for each condition assayed.\n\n### Statistical analyses\n\nStatistical analysis was performed using Student\u2019s t-test or ANOVA with Fisher\u2019s LSD post hoc testing (SYSTAT v.10.2, Point Richmond, CA). Results are expressed as mean \u00b1 SEM or SD, as indicated in the figure legends. Differences were considered statistically significant at p<0.05.\n",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8c20c191-cb62-44f6-8b95-bebaa70808c1",
+      "submission_id": "dc12ffd8-578e-4fff-8197-48ff49f918d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Todd McDevitt, Gladstone Institutes , United States\n\n## Review text\n\nDOI: [10.7554/eLife.18207.027](https://doi.org/10.7554/eLife.18207.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Differentiation Alters Stem Cell Nuclear Architecture, Mechanics, and Mechano-Sensitivity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\n1) The primary concern to address is the ability to discriminate differences in nuclear mechanics independent of differentiation and the large differences in time scales examined (see reviewer 2's comments below). Specifically, examination of potential differences in undifferentiated and differentiated cells both with and without TSA treatment should be performed.\n\n2) Small molecule inhibition studies would strengthen the definitive nature of the authors' claims, specifically regarding autocrine/paracrine signaling.\n\n3) Attempt to examine the influence of other cytoskeletal elements on perinuclear properties besides just F-actin. Even if they had no effect, this would provide some evidence for specificity of particular elements, like F-actin.\n\nReviewer #1:\n\nOverall, this is an exciting and novel study that links nuclear mechanics to cellular differentiation. The study appears to be a collaboration among several of the main cell/nuclear mechanics groups, Mauck, Lee, Chen, etc.\n\nSeveral studies have previously shown this concept empirically but this study goes a level or two deeper by making multiple measurements and examining this concept mechanistically using MSC.\n\nThe study shows that nuclei indifferentiated MSCs stiffen and become resistant to deformation. This attenuated nuclear deformation was governed by restructuring of Lamin A/C and increased heterochromatin content. This change in nuclear stiffness sensitized MSCs to mechanical loading induced calcium signaling and differentiated marker expression. This sensitization was reversed when the 'stiff' differentiated nucleus was softened, and was enhanced when the 'soft' undifferentiated nucleus was stiffened through pharmacologic treatment. These data suggest that the nucleus acts as an additional mechanism to modulate cellular mechanosensation.\n\nReviewer #2:\n\nSummary:\n\nThe article by Heo et al. evaluates the effect of MSC differentiation and stretch on nuclear mechanics and calcium signaling. The conceptual advance results from observations that differentiation-dependent changes in chromatin condensation and nuclear structure/mechanics can alter the cellular responses to physical cues by shifting the nucleus from a strain sink to a strain concentrator. This change results in differential responses to load in the magnitude of calcium signaling. This is an interesting idea and is supported by several interesting results in the article. However, the article draws additional conclusions that are less well supported, in part because it is difficult to dissect the effects of chromatin condensation on differentiation from those on nuclear mechanics \u2013 as well as the effects on mechanosensitivity of mechanical (dynamic load) or soluble factors (TGF-\u03b2) factors. This article definitely brings forward some exciting new ideas that advance our understanding of mechanobiology, but additional experiments are needed to clarify the interpretation of the conclusions.\n\nSignificant Issues:\n\nThe most important issue is the need to more clearly discriminate nuclear mechanics from differentiation. Given that TSA affects HDAC activity, and has important effects on gene expression and differentiation, another approach is needed to discriminate the effects of nuclear softening/stiffening on cellular mechanotransduction and calcium signaling, relative to the effects on differentiation. Furthermore, Figure 4 is missing important controls that are needed to interpret these findings. In addition to verifying that the TSA and D-mannitol alter the modulus of the cells in this system using the AFM-based assay (i.e. Figure 2D), data for undifferentiated cells with TSA, and differentiated cells with D-mannitol, should also be shown. The same outcomes should be assessed in each condition. It could additionally be helpful to evaluate the lamin or chromatin outcomes in these conditions.\n\nThe study is manipulating and observing events over multiple time scales \u2013 including slow processes like differentiation \u2013 and quick ones like calcium signaling. After 6 days of differentiation, TSA is administered for 24h and mannitol for 30 minutes. In some cases, load is applied in a short term manner \u2013 to assess nuclear resistance to deformation, and in others, in a long term manner. These differences are very important to interpreting the data and understanding the implications of the results. Please comment on the time scale more clearly in the Results and in the Discussion.\n\nFor the two reasons above, it is difficult to interpret the interesting data in Figure 6. The authors suggest that dynamic load is driving similar changes in nuclear architecture and cellular function as TGF-\u03b2 \u2013 but more quickly (i.e. at the end of subsection \u201cDynamic Loading Alters MSC Nuclear Mechanics and Mechano-perception\u201d). However, some data indicate that these are distinct processes or that they achieve similar results in lamin A or gene expression via different mechanisms. In addition to clarifying the discussion and interpretation of these results, it would be helpful to design an experiment that could more fully discriminate the extent to which these stimuli are operating in the same or in distinct pathways. In other words, can you uncouple the mechanical vs soluble mechanosensitivity or show causal epistasis more convincingly?\n\nReviewer #3:\n\nOverall Assessment: I found this to be a compelling piece of research, with well-planned and systematic experiments. It may be a bit narrow in scope for eLife but if the scope fits in with the aspirations of the editors, I would recommend it strongly.\n\nSummary:\n\nMost studies on mechano-transduction have focused on the cell as a whole and actin cytoskeleton, while the role of nuclear architecture and how it is impacted in this process stills needs to be comprehensively elucidated. Furthermore, little is known about the manner in which soluble and physical cues are integrated to direct fate decisions, especially as the cell-state changes during the differentiation process. In this study the authors investigate how the biophysical properties of the cell and nucleus first change in response to soluble cues and microenvironment, and how these changes in the biophysical properties of the nucleus subsequently influences the mechano-transduction/sensing, to promote and preserve lineage specification.\n\nThe authors have employed a previously established biomaterial platform involving aligned nanofibrous scaffolds to guide fibrochondrogenesis and apply coordinated cell deformation. Using this platform, they have systematically illustrated that nuclear architecture/nuclear stiffness is modulated during differentiation and these changes influence subsequent mechano-sensitivity, by conducting well-planned experiments to measure nuclear deformation, peri-nuclear elastic modulus and to assess the specific role of nuclear stiffness as well as structural organization. They show that nuclear stiffening during differentiation dominates the response to subsequent external mechanical stimuli with respect to nuclear mechanics/deformation (even in presence of patent and contractile cytoskeleton). It transforms the nuclei from being a 'strain sink' to a 'stress concentrator', and increases mechano-sensitivity. Furthermore, their results indicate that nuclear stiffening is both a consequence and a mediator of differentiation, as it is manifested by soluble cues inducing differentiation, as well as mechanical stimulation by itself. While this paper provides several interesting insights, some revisions are indicated as listed below.\n\nSuggested revisions:\n\n1) In Figure 1, the figure caption is a bit confusing and can be clarified. In Figure 1C), clarify if absolute NAR values been plotted or relative/change in NAR been plotted?\n\nIndicate in caption that nuclear strain was applied on specific days post culture as indicated in the plot (and not continuous).\n\nSince experiments have been performed at least three times, add error bars to Figure 1D and E, or do these figures contain pooled data from all experiments?\n\n2) Provide some discussion on how these findings can be applied to optimize or preserve lineage specification in biomaterial constructs.\n\n3) Provide some discussion on possible mechano-sensors or signaling pathways (YAP etc.) that could regulate lamin levels and epigenetics to influence nuclear mechanics.\n\n4) Elevated expression of differentiation markers has been demonstrated in response to DL. Is it possible to induce functional fibrochondrogenic differentiation solely by DL?\n",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f412e9bd-25e3-4d25-9474-5933a6b061d2",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C1",
+      "claim": "Mesenchymal stem cell (MSC) differentiation is mediated by soluble and physical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesenchymal stem cell (MSC) differentiation is mediated by soluble and physical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "40d32263-afa8-4c52-91f2-57d462309420",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C2",
+      "claim": "Nuclei in differentiated bovine and human MSCs stiffen and become resistant to deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that nuclei in differentiated bovine and human MSCs stiffen and become resistant to deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM measurements and nuclear deformation assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "083b5637-5b34-4d00-897f-c6b5e24ac71f",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C3",
+      "claim": "Attenuated nuclear deformation in differentiated MSCs is governed by restructuring of Lamin A/C and increased heterochromatin content.",
+      "claim_type": "EXPLICIT",
+      "source": "This attenuated nuclear deformation was governed by restructuring of Lamin A/C and increased heterochromatin content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence staining and Western blot data showing Lamin A/C reorganization and heterochromatin quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a91a8629-61de-4870-9d20-9dc4be1d10d1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C4",
+      "claim": "Change in nuclear stiffness sensitized MSCs to mechanical-loading-induced calcium signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in nuclear stiffness sensitized MSCs to mechanical-loading-induced calcium signaling and differentiated marker expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging experiments showing increased calcium mobilization in differentiated cells upon stretch.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "fcf5173a-9449-47c6-938c-91be641a4d44",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C5",
+      "claim": "Sensitization to mechanical loading was reversed when the 'stiff' differentiated nucleus was softened through pharmacologic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This sensitization was reversed when the 'stiff' differentiated nucleus was softened and was enhanced when the 'soft' undifferentiated nucleus was stiffened through pharmacologic treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments using TSA to soften nuclei and D-mannitol to stiffen nuclei, with corresponding calcium measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "3e5ab794-a46a-46c5-a73f-787adabde0a5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C6",
+      "claim": "Dynamic loading of undifferentiated MSCs, in the absence of soluble differentiation factors, stiffened and condensed the nucleus more rapidly than soluble factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dynamic loading of undifferentiated MSCs, in the absence of soluble differentiation factors, stiffened and condensed the nucleus, and increased mechanosensitivity more rapidly than soluble factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-course experiments comparing dynamic loading to soluble factor treatment, showing earlier LMAC reorganization and heterochromatin formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e7fcf5e3-b8f9-4005-88ba-477c7da036fe",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C7",
+      "claim": "The nucleus acts as a mechanostat to modulate cellular mechanosensation during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the nucleus acts as a mechanostat to modulate cellular mechanosensation during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the collective experimental findings showing nuclear stiffness changes and altered mechanosensitivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e0a76509-ddcd-4de8-a115-4c5c43d3172f",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C8",
+      "claim": "Physical signals from the microenvironment, including substrate stiffness, can influence MSC fate decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "While considerable work has shown the importance of soluble differentiation factors in MSC lineage specification, recent studies have also highlighted that physical signals from the microenvironment, including substrate stiffness (Engler et al., 2006), cell shape (McBeath et al., 2004), and dynamic mechanical cues (Huang et al., 2010a) can influence fate decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d5ac5163-338b-46f1-9041-7365c1fb31f5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C9",
+      "claim": "The physical properties of MSCs themselves likely change coincident with lineage specification.",
+      "claim_type": "EXPLICIT",
+      "source": "One potentially confounding feature is that the physical properties of MSCs themselves likely change coincident with lineage specification, and such changes might alter cellular perception of super-imposed mechanical perturbations that arise from the microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that is tested and supported by the experimental data in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "39734c37-ae81-47d6-8d8f-aa5af424f2c2",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C10",
+      "claim": "Strain transfer to and deformation of the nucleus has been proposed as a direct link between mechanical inputs from the microenvironment and gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain transfer to (and deformation of) the nucleus has been proposed as a direct link between mechanical inputs from the microenvironment and gene regulation (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a6112331-10b1-4dc0-bf9d-2ceaa30fadb7",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C11",
+      "claim": "The cytoskeleton forms a mechanically continuous network within the cell and transmits extracellular mechanical signals to the nucleus through the LINC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoskeleton forms a mechanically continuous network within the cell and transmits extracellular mechanical signals from sites of matrix adhesion to the nucleus through specialized proteins that comprise the linker of nucleus and cytoskeleton (LINC) complex (Haque et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "90fdf977-b845-4f7f-a817-98afe0c9c5ae",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C12",
+      "claim": "LINC complex connections allow for direct transfer of mechanical signals to the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These connections allow for direct transfer of mechanical signals to the chromatin (Wang et al., 2009; Martins et al., 2012) annscription upregulation viad can regulate intracellular signaling (Driscoll et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "7080e5b5-585f-43b6-bb36-ea41f149a5cc",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C13",
+      "claim": "Chromatin remodeling induced by mechanical signals depends in part on a pre-tensed (contractile) actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodeling induced by mechanical signals depends in part on a pre-tensed (contractile) actin cytoskeleton (Hu et al., 2005; Heo et al., 2016) and can regulate gene expression (Wang et al., 2009; Tajik et al., 2016; Shivashankar, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cf3e0f62-f129-4f40-8971-c0973c28d5f5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C14",
+      "claim": "The nucleus is the stiffest of organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the nucleus is the stiffest of organelles, changes in nuclear architecture might also impact how forces are transmitted through the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "dbca8dcb-d15a-40a4-b541-8fb563c10517",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C15",
+      "claim": "Chromatin condensation increases nuclear stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that chromatin condensation increases nuclear stiffness (Dahl et al., 2005), as do changes in the amount and distribution of other intra-nuclear filamentous proteins, including the lamin protein family (Ho and Lammerding, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "580e8739-a2e7-4cc4-b0b5-fff30220c1a7",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C16",
+      "claim": "Nuclear lamins stabilize and stiffen the nuclear envelope and are regulated both by differentiation and the micro-elasticity of the surrounding tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, nuclear lamins stabilize and stiffen the nuclear envelope and are regulated both by differentiation (Lammerding et al., 2006) and the micro-elasticity of the surrounding tissue (Swift et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d3b7716b-5069-44ef-a9aa-09517cab9d67",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C17",
+      "claim": "Mouse embryonic fibroblasts lacking lamin A/C have aberrant nuclear morphologies and exaggerated nuclear deformation in response to cell deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse embryonic fibroblasts lacking lamin A/C (LMAC) have aberrant nuclear morphologies and exaggerated nuclear deformation in response to deformation of the cell (Lammerding et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "5060f1bb-2cb5-43b2-9556-a469e09047f6",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C18",
+      "claim": "Knockdown of LMAC in the nuclei of differentiated cells decreases nuclear stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of LMAC in the nuclei of differentiated cells decreases nuclear stiffness (Pajerowski et al., 2007), while overexpression in neutrophils decreases their ability to pass through micron-sized openings (Davidson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "75c2c66b-3d6e-4715-9ba3-37a38416815c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C19",
+      "claim": "Lamins may contribute to chromatin remodeling, gene silencing, and transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lamins may contribute to chromatin remodeling, gene silencing, and transcriptional activation (Andr\u00e9s and Gonz\u00e1lez, 2009; Mewborn et al., 2010) via the action of lamin binding proteins (Wilson and Foisner, 2010) and their sequestration of chromatin to the nuclear periphery (Gurudatta et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "edd53f4d-d219-4fe2-a5a3-0bf45eece02b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C20",
+      "claim": "ES cell differentiation is accompanied by an increase in chromatin condensation leading to an increase in nuclear stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "These biophysical changes extend to the nucleus, where for instance ES cell differentiation is accompanied by an increase in chromatin condensation (B\u00e1rtov\u00e1 et al., 2008) leading to an increase in nuclear stiffness (Pajerowski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4385222a-8454-4f22-b476-04352d4884ff",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C21",
+      "claim": "Mouse ES cells start expressing high levels of A-type lamin during cell differentiation, suggestive of a role in the maintenance of differentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamins change during differentiation as well; mouse ES cells start expressing high levels of A-type lamin during cell differentiation, suggestive of a role in the maintenance of differentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "7e96a888-97d9-41c9-80e1-bf1b162fdbbf",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C22",
+      "claim": "Chromatin reorganization mediated by lamins can enhance heterochromatin formation in ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, chromatin reorganization mediated by lamins can enhance heterochromatin formation in ES cells (Galiov\u00e1 et al., 2008), and haplo-insufficiency of LMAC can limit certain lineages (Sehgal et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "f6faafc6-ca7d-448f-94c5-25523cef7d4c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C23",
+      "claim": "In C2C12 cells, LMAC becomes heavily concentrated at the nuclear periphery with myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In C2C12 cells, a myogenic cell line, LMAC becomes heavily concentrated at the nuclear periphery with myogenesis (Markiewicz et al., 2005), and mutant isoforms of LMAC can block myogenic lineage specification (Markiewicz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "71668ee0-7e02-4601-93ea-f780af945aca",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C24",
+      "claim": "In MSCs, LMAC knockdown promotes adipocyte differentiation and decreases osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In MSCs, LMAC knockdown promotes adipocyte differentiation (and decreases osteoblast differentiation) (Akter et al., 2009; Swift et al., 2013), while forced expression of the progerin mutant isoform of LMAC increases osteogenic differentiation (and reduces adipogenic differentiation) (Scaffidi and Misteli, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "66489d8b-70a8-428b-9ad1-83754f4af8d7",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C25",
+      "claim": "When bovine MSCs were exposed to differentiation media, expression of fibrochondrogenic markers (aggrecan and collagen II) increased.",
+      "claim_type": "EXPLICIT",
+      "source": "When bovine MSCs were exposed to differentiation media (Diff), expression of fibrochondrogenic markers (aggrecan and collagen II) increased (Figure 1\u2014figure supplement 1a, b), consistent with previous findings (Baker and Mauck, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 1\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "43bc33ea-05ca-4755-9b2e-c7d76b7924e5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C26",
+      "claim": "At early time points, stretch of the scaffold resulted in both cell and nuclear deformation in both control and differentiation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "At early time points, stretch of the scaffold resulted in both cell and nuclear deformation, as evidenced by a marked increase in the absolute nuclear aspect ratio (NAR) values in both control (Ctrl) and differentiation (Diff) conditions (Figure 1a, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear aspect ratio measurements shown in Figure 1a, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e80e795a-fcbe-408e-b0fc-d19d3df306ba",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C27",
+      "claim": "From day 5 onward, there was no change in the NAR in differentiated MSCs with scaffold stretch, while nuclear deformation persisted in undifferentiated MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "From day 5 onward, however, there was no change in the NAR in differentiated MSCs (Diff) with scaffold stretch, while nuclear deformation persisted in undifferentiated MSCs (Ctrl, Figure 1b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear aspect ratio measurements shown in Figure 1b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "dcf2532a-5e62-490c-9c8c-3891ac1b3cb0",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C28",
+      "claim": "A similar reduction in nuclear deformation in response to stretch under differentiating conditions was observed in human bone marrow derived MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect, namely a reduction in nuclear deformation in response to stretch under differentiating conditions (Diff), was observed in both human bone marrow derived MSCs (hMSCs) (Figure 1\u2014figure supplement 2a\u2013c) and in a human embryonic stem (ES) cell line (Figure 1\u2014figure supplement 2d\u2013e) treated similarly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2a\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "9d3ae270-a987-4bd0-9896-63529d45263f",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C29",
+      "claim": "A similar reduction in nuclear deformation in response to stretch under differentiating conditions was observed in a human embryonic stem cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect, namely a reduction in nuclear deformation in response to stretch under differentiating conditions (Diff), was observed in both human bone marrow derived MSCs (hMSCs) (Figure 1\u2014figure supplement 2a\u2013c) and in a human embryonic stem (ES) cell line (Figure 1\u2014figure supplement 2d\u2013e) treated similarly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2d\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "39fac672-6394-46c7-b904-05c236c1eb96",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C30",
+      "claim": "The peri-nuclear stiffness did not change for undifferentiated MSCs over seven days, but increased by >50% in differentiated MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Over seven days, the peri-nuclear stiffness did not change for undifferentiated MSCs (Ctrl), but increased by >50% in differentiated MSCs (Diff, Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM measurements shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d4e4a21c-39b7-4c31-adc4-4cd9a5c80f69",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C31",
+      "claim": "Treatment with CytoD did not alter peri-nuclear stiffness values, indicating that stiffening was not due to changes in f-actin organization or mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with CytoD (and DMSO vehicle) did not alter these values, indicating that stiffening was not due to changes in f-actin organization or mechanics, although this does not rule out potential contributions from other cytoskeletal elements (i.e. microtubules, and intermediate filaments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM measurements with and without CytoD treatment shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8ff3f778-d887-4b90-8fff-b8ed5dfcf8ed",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C32",
+      "claim": "Nuclei of re-seeded differentiated MSCs did not deform when the scaffold was stretched to 10%, while re-seeded undifferentiated MSC nuclei increased in NAR by ~25%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above findings, nuclei of these re-seeded differentiated MSCs (Diff) did not deform (Figure 2f, g) when the scaffold was stretched to 10%, while re-seeded undifferentiated MSC nuclei (Ctrl) increased in NAR by ~25%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear deformation measurements shown in Figure 2f, g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cf4fddd8-df01-4fa6-af6f-0b9b37b6bd00",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C33",
+      "claim": "Deposited extracellular matrix is not responsible for the observed attenuation in nuclear deformation with scaffold stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that deposited extracellular matrix is not responsible for the observed attenuation in nuclear deformation with scaffold stretch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the re-seeding experiments showing persistent attenuation of nuclear deformation after removal of deposited matrix.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "9586cf8f-0898-4d83-9b2e-78a5917d7339",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C34",
+      "claim": "Traction force increased over the first 16 hr of exposure to TGF-\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "Traction force increases substantially over the first 16 hr of exposure to 10 ng/ml TGF-\u03b23 (n = 20, Mean \u00b1 SD), where time t = 0 shows the baseline response in the absence of TGF-\u03b23.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by traction force measurements shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "7c86e790-a0af-4355-9272-eb45b2cab65b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C35",
+      "claim": "MSCs cultured in Diff conditions for 7 days showed significant post deflections compared to MSCs in Ctrl conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Micro-Post Array Detector (mPAD) analysis showed little post deflection by MSCs in Ctrl conditions, while MSCs cultured in Diff conditions for 7 days showed significant post deflections (bar = 30 \u03bcm, F-actin: green; nuclei: blue) and quantification (c) showed that strain energy per cell was higher in MSCs in Diff conditions compared to MSCs in Ctrl conditions (Student's t-test, *p<0.0001 vs. Ctrl, n = 20/condition, Mean \u00b1 SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mPAD analysis shown in Figure 2\u2014figure supplement 1b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "21f83226-ee2e-48a9-8377-ac1ab64b4ee1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C36",
+      "claim": "Blockade of acto-myosin contractility decreased nuclear deformation in undifferentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On scaffolds, blockade of acto-myosin contractility decreased nuclear deformation in undifferentiated cells (Ctrl/Y27, Figure 2\u2014figure supplement 1d), implicating the need for a patent and contractile cytoskeleton in the transfer of deformation from the scaffold to the nucleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear deformation measurements with ROCK inhibition shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a1d93030-27ff-4f99-8715-3e32ec7cde30",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C37",
+      "claim": "Nuclear stiffening with differentiation dominates the response, resulting in a nucleus that no longer deforms when the cell is stretched.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that nuclear stiffening with differentiation dominates the response, resulting in a nucleus that no longer deforms when the cell is stretched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "03a6031d-8a40-4bdb-9935-8e01a23f868d",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C38",
+      "claim": "On day 1, LMAC was distributed throughout the MSC nucleus, and in Ctrl conditions, this distribution did not change through day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 1, LMAC was distributed throughout the MSC nucleus (Figure 3a), and in Ctrl conditions, this distribution did not change through day 7 (Figure 3a and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 3a and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "04c5edb5-0e6a-45f4-b96b-7eba7a541185",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C39",
+      "claim": "Under Diff conditions, LMAC remodeled to localize solely to the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Under Diff conditions, LMAC remodeled to localize solely to the nuclear periphery (Figure 3a, b and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 3a, b and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e7fe1370-49d2-4915-9444-e7f424410ffc",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C40",
+      "claim": "Localization of LMAC to the nuclear periphery was accompanied by a ~50% increase in A-type lamin protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "Localization to the nuclear periphery was accompanied by a ~50% increase in A-type lamin protein content (Figure 3c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot analysis shown in Figure 3c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "81f5d864-d9ad-4de0-83dc-de70bebb95f1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C41",
+      "claim": "Staining for H3K27me3 revealed a marked increase in the number of heterochromatin-rich nodules throughout the nucleus with differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, staining for H3K27me3 (a heterochromatin marker) revealed a marked increase in the number of heterochromatin-rich nodules throughout the nucleus with differentiation (Diff, p<0.05 vs. Ctrl, Figure 3e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence staining shown in Figure 3e, f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "da68f708-b026-45fd-bbc1-b8466cffa3be",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C42",
+      "claim": "Treatment of differentiated cells with TSA for 24 hr induces chromatin relaxation and resulted in a marked reduction in both heterochromatin content and nuclear stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of differentiated cells with TSA for 24 hr induces chromatin relaxation and, in this study, resulted in a marked reduction in both heterochromatin content and nuclear stiffness (Diff/TSA, Figure 4\u2014figure supplement 1a, b and Figure 4\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by heterochromatin staining and AFM measurements shown in Figure 4\u2014figure supplement 1a, b, f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4e17b7cf-0d82-4e61-b03e-6794cddb4037",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C43",
+      "claim": "TSA did not alter the distribution or the amount of LMAC in differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While TSA did not alter the distribution or the amount of LMAC in these differentiated cells (Figure 4\u2014figure supplement 1c\u2013e), it did partially restore nuclear deformation in response to scaffold stretch (Figure 4a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and Western blot data shown in Figure 4\u2014figure supplement 1c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cfcca08c-30a6-4bf6-9ef4-5c35bdd0a86d",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C44",
+      "claim": "TSA partially restored nuclear deformation in response to scaffold stretch in differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While TSA did not alter the distribution or the amount of LMAC in these differentiated cells (Figure 4\u2014figure supplement 1c\u2013e), it did partially restore nuclear deformation in response to scaffold stretch (Figure 4a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear deformation measurements shown in Figure 4a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e0970379-d61a-472d-a5d6-342015b062bc",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C45",
+      "claim": "In undifferentiated MSCs, a rapid stretch resulted in a small increase in intracellular Ca2+, while in differentiated MSCs, a much larger increase was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In undifferentiated MSCs (Ctrl), a rapid stretch resulted in a small increase in intracellular Ca2+. When the same perturbation was applied to differentiated MSCs (Diff), a much larger increase was observed (p<0.01, Figure 4c, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4c, i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a977e1cf-3e24-478e-a241-efaa37b6f4f0",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C46",
+      "claim": "The enhanced sensitivity to mechanical perturbation in differentiated MSCs was reversed by pre-treatment with TSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this enhanced sensitivity was reversed by pre-treatment of differentiated MSCs with TSA (Diff/TSA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data showing reduced calcium response in TSA-treated differentiated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cdd23963-4876-4f36-9afc-a78ca10901d9",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C47",
+      "claim": "Sensitization to mechanical perturbation with differentiation and blockade with TSA treatment was also observed for aggrecan and collagen II gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This sensitization to mechanical perturbation with differentiation (and blockade with TSA treatment) was also observed for aggrecan and collagen II gene expression (Figure 4d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 4d, e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "c6d71b21-9aa9-44d7-bb55-77c70a2b025d",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C48",
+      "claim": "With TSA pre-treatment, there were no significant changes in cytoskeletal structure, contractility, or migration rate.",
+      "claim_type": "EXPLICIT",
+      "source": "With TSA pre-treatment (Diff/TSA), we found no significant changes in cytoskeletal structure, contractility (as assessed by myosin light chain phosphorylation, pMLCK) or migration rate (Figure 4\u2014figure supplement 2a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2a\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "970fdaab-3190-4a25-b5a5-ef98fec4dfbe",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C49",
+      "claim": "Pre-treatment of MSCs with D-mannitol decreased nuclear deformation with stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the converse, undifferentiated MSCs were transiently exposed to a hypertonic solution [500 mM D-mannitol (DM), (Irianto et al., 2013), Ctrl/DM] for 30 min, which has been shown to induce the rapid condensation of nuclear chromatin. This treatment resulted in MSC nuclei that were more resistant to deformation when the scaffold was deformed (Figure 4\u2014figure supplement 2f\u2013g, Figure 4f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear deformation measurements shown in Figure 4f\u2013g and Figure 4\u2014figure supplement 2f\u2013g.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "36e9e437-72ec-432a-9517-80473217f120",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C50",
+      "claim": "D-mannitol treatment did not alter the organization of the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this treatment (Ctrl/DM) did not alter the organization of the actin cytoskeleton (Figure 4\u2014figure supplement 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phalloidin staining shown in Figure 4\u2014figure supplement 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "dd9e70d4-8774-4497-a04c-22e86e6d5344",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C51",
+      "claim": "When stretch was applied to MSCs whose nuclei were artificially stiffer, a marked increase in calcium mobilization was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When stretch was applied to MSCs whose nuclei were artificially stiffer, but still undifferentiated, a marked increase in calcium mobilization was once again observed (Figure 4h, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4h, i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "e2252839-0315-4bf1-8353-7130a1747a13",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C52",
+      "claim": "Short periods of dynamic loading (1 hr of dynamic stretch per day for 5 days) did not alter LMAC distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies showed that short periods of dynamic loading [1 hr of dynamic stretch (3%, 1 Hz)] that was applied each day for 5 days did not alter LMAC distribution (Figure 5a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 5a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "1536300f-90b3-4562-974c-7667755e3dbf",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C53",
+      "claim": "When dynamic loading was applied for 3 or 6 hr per day, LMAC reorganization was evident by day 5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the same loading regimen was applied for 3 or 6 hr per day, LMAC reorganization was evident by day 5 (Figure 5c, d; Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 5c, d and Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4e6816a4-6bf1-410d-b36f-b936dedff826",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C54",
+      "claim": "LMAC reorganization was evident with 1.5% and 3% stretch, but not at 0.75% stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain magnitude also modulated this process; LMAC reorganization was evident with 1.5% and 3% stretch, but not at 0.75% stretch (applied for 6 hr per day, Figure 5d\u2013g, Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 5d\u2013g and Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cf7aab6b-d52e-40d3-8859-60779d848b98",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C55",
+      "claim": "LMAC staining intensity and organization in mechanically pre-conditioned MSCs was similar to that observed in MSCs differentiated via soluble mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "LMAC staining intensity and organization in these mechanically pre-conditioned MSCs (i.e. those exposed to higher levels of DL for longer periods of time) was similar to that observed in MSCs differentiated via soluble mediators (Diff, Figure 5\u2014figure supplement 1c), suggesting that LMAC reorganization mediated through mechanical signals matches or exceeds that of soluble-factor-mediated differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 5\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "c7c5a32f-7830-49d5-abbf-84e6801199ba",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C56",
+      "claim": "Dynamic loading conditions led to a marked increase in heterochromatin content, comparable to that induced by soluble factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, dynamic loading (DL) conditions led to a marked increase in heterochromatin content, comparable to that induced by soluble factors (Figure 5\u2014figure supplement 1d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by heterochromatin staining shown in Figure 5\u2014figure supplement 1d, e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "04619766-1bff-4d44-9510-419821396f30",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C57",
+      "claim": "When mechanically pre-conditioned MSCs were reseeded onto new scaffolds, nuclear deformation with 10% scaffold stretch was lower than for undifferentiated MSCs, approaching the levels observed in MSCs differentiated via soluble mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "When mechanically pre-conditioned MSCs (DL, 3%, 1 Hz, 6 hr, 5 days of loading) were reseeded onto new scaffolds, nuclear deformation with 10% scaffold stretch was lower than for undifferentiated MSCs, approaching the levels observed in MSCs differentiated via soluble mediators (Diff, Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear deformation measurements shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4fb90acb-fd8e-4320-8c94-15e36383b82c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C58",
+      "claim": "Nuclei in DL pre-conditioned cells were stiffer than undifferentiated MSCs, although not as stiff as nuclei in MSCs differentiated via soluble factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei in DL pre-conditioned cells were stiffer than undifferentiated MSCs, although not as stiff as nuclei in MSCs differentiated via soluble factors (Diff, Figure 5i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM measurements shown in Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "1a08c41b-24fc-433c-ba83-20e875db6933",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C59",
+      "claim": "DL increased aggrecan and TGF-\u03b2 gene expression to levels higher than in differentiation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DL increased aggrecan (AGG) and TGF-\u03b2 gene expression to levels higher than in differentiation conditions (Diff, Figure 5j, k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 5j, k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "7329609c-a81d-4da6-80a8-43375b8e3a43",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C60",
+      "claim": "Addition of low levels of exogenous TGF-\u03b23 (1 ng/mL) for 1 week resulted in changes in LMAC distribution and increases in heterochromatin in MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, addition of low levels of exogenous TGF-\u03b23 (1 ng/mL) for 1 week resulted in changes in LMAC distribution and increases in heterochromatin in MSCs (Figure 5\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence imaging shown in Figure 5\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "b23022f6-0aaa-4eef-ba74-71b8079ffa21",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C61",
+      "claim": "When a rapid stretch was applied to DL pre-conditioned MSCs, a greater increase in intracellular calcium was observed, compared to undifferentiated MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When a rapid stretch was applied to DL pre-conditioned MSCs, a greater increase in intracellular calcium was observed, compared to undifferentiated MSCs (ctrl, Figure 5l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "b802a9d2-c5ce-4540-a41e-d77f04351a06",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C62",
+      "claim": "Mechanical stimulation can drive lineage specification, including alterations in nuclear organization and mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that mechanical stimulation can drive lineage specification, including alterations in nuclear organization and mechanics, and that these changes may be mediated through autocrine/paracrine signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective experimental findings showing mechanical loading effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "b9fc730d-dde6-472d-b2de-a086d6aeab8d",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C63",
+      "claim": "Dynamic loading alone can produce a mechanically-preconditioned nuclear state that is similar (but distinct) to that brought about by soluble factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the absence of exogenous differentiation factors, dynamic loading alone can produce a mechanically-preconditioned nuclear state that is similar (but distinct) to that brought about by soluble factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of dynamic loading and soluble factor effects on nuclear properties.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d058cca1-2fb7-4b18-af74-e6a692cc6412",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C64",
+      "claim": "TGF-\u03b23 did not alter LMAC organization or gene expression over the first 3 days of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF-\u03b23 (Diff) did not alter LAMC organization or gene expression over the first 3 days of culture (Figure 6a, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and gene expression data shown in Figure 6a, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "adf15638-d28b-42ca-bbe8-67219a253339",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C65",
+      "claim": "Within just 2 days under DL conditions, reorganization of LMAC was already apparent, with translocation to the nuclear envelope complete by day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within just 2 days under DL conditions, reorganization of LMAC was already apparent, with translocation to the nuclear envelope complete by day 3 (Figure 6a) and increased LMAC gene expression with DL at each time point (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and gene expression data shown in Figure 6a, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "5045a326-1bb0-44db-a117-8745543c6130",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C66",
+      "claim": "HTC staining intensified more rapidly under DL conditions compared to Diff, with a higher number of heterochromatin-rich nodules present as early as day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HTC staining intensified more rapidly under DL conditions compared to Diff, with a higher number of heterochromatin-rich nodules present as early as day 1 (compared to day 3 under Diff conditions, Figure 6b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by heterochromatin staining shown in Figure 6b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a1f4a53b-3d7f-4963-b336-f018af24c9f1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C67",
+      "claim": "Chromatin condensation parameter analysis showed a more rapid structural reorganization of the nucleus under DL conditions, compared to culture in differentiation medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantitative analysis showed a more rapid structural reorganization of the nucleus under DL conditions, compared to culture in differentiation medium (Figure 6e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin condensation parameter analysis shown in Figure 6e, f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "edcc9a2a-397f-4a88-accd-062e3ccb87af",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C68",
+      "claim": "Gene expression analysis revealed an early and robust response to dynamic loading in comparison to the addition of exogenous TGF-\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with this, gene expression analysis revealed an early and robust response to dynamic loading in comparison to the addition of exogenous TGF-\u03b23 (Diff, Figure 6\u2014figure supplement 1a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 6\u2014figure supplement 1a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "baea2294-46cf-485c-b891-3e5af23a82b7",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C69",
+      "claim": "The nucleus acts as a mechanical rheostat within progenitor cells, where increases in nuclear stiffness sensitize the entire transduction machinery to prime the cell response to mechanical perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being the site for storage of genetic material and gene transcription, the nucleus, which is generally the stiffest element of all eukaryotic cells (Dahl et al., 2008), plays a central role in mechanical strain transduction from the external microenvironment. While the mechanisms by which nuclear deformation regulates transcriptional activities are only now beginning to be elucidated, our data suggest that the nucleus acts as a mechanical rheostat within progenitor cells, where increases in nuclear stiffness sensitize the entire transduction machinery to prime the cell response to mechanical perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the collective experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4d347cb0-7904-4760-b6ad-b8d28944af1d",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C70",
+      "claim": "Soluble differentiation factors and mechanical perturbation elicit marked changes in nuclear deformability, stiffness and organization as a direct consequence of chromatin condensation and restructuring of the Lamin A/C network.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that soluble differentiation factors as well as mechanical perturbation on its own, elicit marked changes in nuclear deformability, stiffness and organization as a direct consequence of chromatin condensation and restructuring of the Lamin A/C network in both adult progenitor cells and in embryonic stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "389e2d5b-9d53-45a3-a9f3-7587c439bf68",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C71",
+      "claim": "Change in nuclear mechanics and organization led to a greater mobilization of intracellular calcium when pre-conditioned mesenchymal stem cells were exposed to stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in nuclear mechanics and organization led to a greater mobilization of intracellular calcium when pre-conditioned mesenchymal stem cells were exposed to stretch, likely as a consequence of the nucleus transforming from a strain sink (an object that readily deforms) to a strain concentrator (an object that stops deforming, forcing other components to deform more).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging experiments and is an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "6dad0b1e-b45e-4c87-a28b-5cbe29fc267c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C72",
+      "claim": "The nucleus transforms from a strain sink to a strain concentrator with differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in nuclear mechanics and organization led to a greater mobilization of intracellular calcium when pre-conditioned mesenchymal stem cells were exposed to stretch, likely as a consequence of the nucleus transforming from a strain sink (an object that readily deforms) to a strain concentrator (an object that stops deforming, forcing other components to deform more).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "0787d918-c90b-49a4-acd0-576b6858f915",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C73",
+      "claim": "When one element of an elastic mechanical linkage stiffens, the other weaker elements must deform more when the system is elongated by a set amount.",
+      "claim_type": "EXPLICIT",
+      "source": "When one element of an elastic mechanical linkage stiffens, the other weaker elements must deform more when the system is elongated by a set amount.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on mechanical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "1bf93aac-87c3-43fa-a342-bce513fef28e",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C74",
+      "claim": "The stiffness of native tissue extracellular matrices defines the resting levels and ratios of Lamin isoforms in adult cells, with stiffer microenvironments increasing nuclear mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Swift and colleagues recently showed that the stiffness of native tissue extracellular matrices defines the resting levels and ratios of Lamin isoforms in adult cells, with stiffer microenvironments increasing nuclear mechanics (Swift et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8b9366cb-4ae8-4559-ba82-846e43a2162b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C75",
+      "claim": "Dynamic mechanical forces transmitted through the environment may continuously adjust nuclear mechanics to modulate progenitor cell mechanosensitivity during tissue formation and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dynamic mechanical forces transmitted through the environment may continuously adjust nuclear mechanics to modulate progenitor cell mechanosensitivity during tissue formation and repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings and their implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "bc6a9c5f-715d-4a19-bcbb-8bd943d0825c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C76",
+      "claim": "Both BMP and TGF-\u03b2 signaling increase baseline cellular contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both BMP and TGF-\u03b2 signaling increase baseline cellular contractility (Bhadriraju et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "2214634d-0b69-4b51-826a-de64b498677b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C77",
+      "claim": "TGF-\u03b2 expression is highly upregulated with dynamic stretch at early time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that TGF-\u03b2 expression is highly upregulated with dynamic stretch at early time points and while TGF-\u03b2 in the media did not reach detectable levels, we did observe increased Smad3 signaling in response to stretch (Figure 6\u2014figure supplement 1e, [Furumatsu et al., 2013; Li et al., 2015]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data and Western blot analysis shown in Figure 6\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "2de6f7ce-3ff0-452c-868c-225657efc8b3",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C78",
+      "claim": "Mechanical perturbation itself can increase cell contractility and spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical perturbation itself can also increase cell contractility and spreading (Cui et al., 2015), and influence the subsequent mechano-response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "5a94c65e-1bf9-4fc8-9aa5-119a4c4ffbe6",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C79",
+      "claim": "Artificially increasing Rho GTPase activity in endothelial cells sensitizes their response to applied stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "Kaunas et al. showed that artificially increasing Rho GTPase activity in endothelial cells sensitizes their response to applied stretch (Kaunas et al., 2005), and Deguchi et al. showed that fluid shear stress, which also increases contractility, can stiffen the endothelial cell nucleus (Deguchi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "1779a590-8bc7-4c6f-b39d-a0c8f1f18692",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C80",
+      "claim": "Local application of mechanical force to the apical surface of cells causes local chromatin reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work by the Shivashankar and Burridge groups has shown that local application of mechanical force to the apical surface of cells causes local chromatin reorganization (Iyer et al., 2012) and that pulling on isolated nuclei results in changes in Lamin organization and nuclear stiffening (Guilluy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d4dee5dc-57d3-4b6e-a6fd-522943bb52e0",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C81",
+      "claim": "The stiffer nucleus of differentiated cells can act as a stress concentrator, sensitizing these cells to mobilize calcium to a greater extent when external deformation is applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the path to nuclear reorganization, our data provide evidence that the stiffer nucleus of differentiated cells can act as a stress concentrator (Figure 7), sensitizing these cells to mobilize calcium to a greater extent when external deformation is applied.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretive conclusion based on the experimental findings, illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "27864527-a54e-42a7-a5e7-38497e4777f6",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C82",
+      "claim": "Increased calcium mobilization may itself impact lamin processing, creating a feed-forward loop to ensure that the nucleus remains patent under conditions of high mechanical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased calcium mobilization may itself impact lamin processing (Kalinowski et al., 2013), creating a feed-forward loop to ensure that the nucleus remains patent under conditions of high mechanical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on citation to prior work and the current findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "57bfeca1-2258-40c5-a8c9-8f115a2e6d17",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C83",
+      "claim": "ATP-purinergic signaling is a central modulator in the load-induced-chromatin condensation in MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that ATP-purinergic signaling is a central modulator in the load-induced-chromatin condensation in MSCs, as is signaling thorough Smad proteins (Heo et al., 2015, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "4d3da9dc-d154-49c8-9b9b-e3e58940d045",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C84",
+      "claim": "The giant isoform of nesprin-1 is essential for mechanical force transfer to the nucleus and activation of the YAP/TAZ pathway in response to exogenous mechanical loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we have established that the giant isoform of nesprin-1 (a component of the LINC complex that mediates actin connectivity to the nucleus) is essential for mechanical force transfer to the nucleus and activation of the YAP/TAZ pathway in response to exogenous mechanical loading (Driscoll et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8f09e54c-0347-4a5b-9879-ea0b84a7fee2",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C85",
+      "claim": "Both mechanical forces and soluble factors had similar effects on nuclear properties and reorganization, but those mediated by soluble factor addition arose more slowly than those wrought by mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "While both mechanical forces and soluble factors had similar effects on nuclear properties and reorganization, those mediated by soluble factor addition arose more slowly than those wrought by mechanical forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the time-course experiments comparing dynamic loading and soluble factor treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8724585e-0f24-42ba-81f8-7bd661f6fe0f",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C86",
+      "claim": "The mechanical environment plays a significant role in dynamically modulating nuclear properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the mechanical environment plays a significant role in dynamically modulating nuclear properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that mechanical forces act more rapidly than soluble factors.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "f78a9c88-49cc-4c99-b3b6-574904658a88",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C87",
+      "claim": "As MSCs transit between phenotypes, their current differentiation status and time history of exposure to soluble or mechanical factors could influence their mechanobiologic response upon implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, as MSCs transit between phenotypes, one would expect that their current differentiation status and time history of exposure to soluble or mechanical factors could influence their mechanobiologic response upon implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings for therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "11c24ca3-82d6-4786-8eb1-666d805303d5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C88",
+      "claim": "Soluble factors resulted in complete abrogation of nuclear deformation, while mechanically mediated reorganization of the nucleus resulted in only a diminution of nuclear deformation with stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to material design, we also noted a path-dependent aspect in terms of the end results of nuclear reorganization; soluble factors resulted in complete abrogation of nuclear deformation, while mechanically mediated reorganization of the nucleus resulted in only a diminution of nuclear deformation with stretch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the comparison of nuclear deformation in cells treated with soluble factors versus dynamic loading.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8ae43ee6-5b29-46ad-a083-e561008158a1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C89",
+      "claim": "If nuclear deformation is essential for physiologic function, then complete elimination of nuclear deformation may result in aberrant mechano-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "If nuclear deformation is essential for physiologic function, then complete elimination of nuclear deformation (as a consequence of soluble factor addition) may result in aberrant mechano-signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential consequences of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "87c3122b-ef5c-47d7-b90b-c18b92ec9f33",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C90",
+      "claim": "The data demonstrates a mechanism whereby nuclear architecture and stiffness can be tuned to dynamically regulate cellular mechanosensitivity to promote and preserve lineage specification.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the data presented herein demonstrates a mechanism whereby nuclear architecture and stiffness can be tuned to dynamically regulate cellular mechanosensitivity to promote and preserve lineage specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the collective experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "bb90a905-5ea9-4de2-a5cf-6b44a4d79de3",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C91",
+      "claim": "Aligned nanofibrous scaffolds direct new tissue formation for fibrous tissue engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we examined the nuclear mechanics and mechanosensitivity of MSCs as they transited toward a differentiated (fibrochondrogenic) lineage on aligned nanofibrous scaffolds. These scaffolds not only direct new tissue formation for fibrous tissue engineering (Nerurkar et al., 2009; Baker et al., 2012) but also provide a useful template for the application of coordinated cell deformation (Nathan et al., 2011; Heo et al., 2011; Han et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "7719fb8a-2dc2-4371-b141-d5ea6047d73c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C92",
+      "claim": "MSC fibrochondrogenesis mediated by soluble factor addition over the long term increases nuclear stiffness and alters organization of key nuclear structural elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this experimental platform, we show that MSC fibrochondrogenesis mediated by soluble factor addition over the long term (days to weeks) increases nuclear stiffness, alters organization of key nuclear structural elements, and as a consequence, changes the manner in which MSCs respond in the short term (seconds to minutes) to dynamic mechanical signals from the microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "27f8cdf2-7928-4515-9b14-8b47b94ade89",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C93",
+      "claim": "Repeated application of short term dynamic mechanical stimulation can evoke changes in nuclear structure and mechanics more rapidly than soluble factor addition alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that the repeated application of this short term dynamic mechanical stimulation (as opposed to application of soluble differentiation factors) can itself evoke some of these same changes in nuclear structure and mechanics, and that it does so more rapidly than soluble factor addition alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "45ef728e-1fbb-48de-a1bb-bf4ff5b4ed76",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C94",
+      "claim": "Nuclear stiffening may be both a consequence and mediator of differentiation, tuning how progenitor cells interpret mechanical cues from their microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that nuclear stiffening may be both a consequence and mediator of differentiation, tuning how progenitor cells interpret mechanical cues from their microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "ac9acbab-0c1c-4d4d-8e3c-80a5645b7d40",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "claim_id": "C95",
+      "claim": "Changes in nuclear stiffness may act to first inform, and then reinforce, signals that promote and preserve lineage specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes may act to first inform, and then reinforce, signals that promote and preserve lineage specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion about the functional significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Differentiation of MSCs leads to nuclear stiffening and resistance to deformation. Nuclei in differentiated bovine and human MSCs (and ES cells) showed attenuated deformation in response to scaffold stretch from day 5 onward, while undifferentiated MSC nuclei continued to deform. Peri-nuclear stiffness increased by >50% in differentiated MSCs, independent of actin cytoskeleton changes. Re-seeding experiments confirmed that deposited extracellular matrix was not responsible for the observed attenuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C33, and C37 collectively demonstrate nuclear stiffening with differentiation through multiple complementary approaches: nuclear aspect ratio measurements during stretch (C26-C29), AFM measurements of peri-nuclear stiffness (C30-C31), re-seeding experiments ruling out matrix effects (C32-C33), and observations across multiple cell types. The data are internally consistent and use appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nuclear stiffening with differentiation is governed by restructuring of Lamin A/C and increased heterochromatin content. LMAC redistributed from throughout the nucleus to the nuclear periphery during differentiation, accompanied by ~50% increase in A-type lamin protein content. Heterochromatin-rich nodules increased markedly with differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C38-C41 provide converging evidence from immunofluorescence imaging (C38-C39), Western blot quantification (C40), and heterochromatin staining (C41) that nuclear reorganization involves both LMAC redistribution and chromatin condensation. The data are well-documented with appropriate quantification and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nuclear stiffening sensitizes MSCs to mechanical-loading-induced calcium signaling and gene expression. Differentiated MSCs showed much larger calcium increases upon rapid stretch compared to undifferentiated MSCs. This enhanced mechanosensitivity extended to aggrecan and collagen II gene expression and was attributed to the nucleus transforming from a strain sink to a stress concentrator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45-C47, C71, and C81 demonstrate increased mechanosensitivity through calcium imaging and gene expression analysis. The data show clear differences between differentiated and undifferentiated cells with appropriate statistical significance. The mechanistic interpretation (strain sink to stress concentrator) is reasonable given the data, though direct measurement of stress distribution would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "d1684e47-19d9-41de-b491-5f268e2c8710",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pharmacological manipulation of nuclear stiffness modulates mechanosensitivity. TSA treatment softened differentiated nuclei by reducing heterochromatin without altering LMAC distribution, partially restoring nuclear deformation and reversing enhanced mechanosensitivity. Conversely, D-mannitol treatment stiffened undifferentiated nuclei without altering actin cytoskeleton, reducing nuclear deformation and enhancing calcium mobilization upon stretch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42-C44, C46, C48-C51 provide bidirectional evidence through gain- and loss-of-function experiments. TSA and D-mannitol experiments show that nuclear stiffness can be manipulated independently of cytoskeletal changes, with corresponding effects on mechanosensitivity. Controls for cytoskeletal structure, contractility, and migration are appropriate. The partial restoration with TSA (rather than complete) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dynamic mechanical loading alone can drive nuclear reorganization and stiffening more rapidly than soluble factors. Dynamic loading (3%, 1 Hz, 6 hr/day for 5 days) induced LMAC reorganization, heterochromatin formation, nuclear stiffening, and increased mechanosensitivity in the absence of exogenous differentiation factors. The effects were dependent on loading duration and magnitude, with mechanical preconditioning producing a nuclear state similar but distinct from soluble factor-mediated differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C52-C59, C61-C63 demonstrate that mechanical loading can independently drive nuclear reorganization through systematic variation of loading parameters (duration and magnitude). The data show dose-dependent effects and include appropriate comparisons to soluble factor treatment. The claim that mechanical loading acts 'more rapidly' is supported by time-course data, though the endpoint states are noted as 'similar but distinct,' which is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8b720cd7-ad7f-4750-816f-087c20572ecb",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dynamic loading induces nuclear reorganization more rapidly than soluble factors. LMAC reorganization was apparent by day 2 under dynamic loading conditions (complete by day 3) but not until after day 3 with TGF-\u03b23 treatment. Heterochromatin formation and chromatin condensation occurred earlier with dynamic loading (day 1) compared to soluble factors (day 3). Gene expression analysis revealed an early and robust response to dynamic loading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68, C85-C86 provide detailed time-course comparisons between mechanical and biochemical stimulation. Multiple readouts (LMAC organization, heterochromatin staining, chromatin condensation parameter, gene expression) consistently show earlier responses to dynamic loading. The chromatin condensation parameter provides quantitative support for the qualitative observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "3fc18072-1218-4a75-a902-0a56bb9604b1",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The nucleus acts as a mechanostat to modulate cellular mechanosensation during differentiation. The authors propose that the nucleus functions as a mechanical rheostat where increases in nuclear stiffness sensitize mechanotransduction machinery, transforming the nucleus from a strain sink to a stress concentrator. This mechanism may both inform and reinforce signals that promote and preserve lineage specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C69, C72, C90, C94 represent the central interpretive framework supported by the collective experimental findings. The mechanostat/rheostat model is well-supported by the data showing: (1) nuclear stiffening with differentiation, (2) altered mechanosensitivity correlating with nuclear stiffness, (3) reversibility through pharmacological manipulation, and (4) mechanical loading driving similar changes. The model provides a coherent explanation for the observations, though it remains a conceptual framework rather than a directly tested mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "06b58203-f7fb-4638-97d6-a7cc1a6a5c11",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bovine MSCs exposed to differentiation media showed increased expression of fibrochondrogenic markers (aggrecan and collagen II).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by gene expression data in Figure 1\u2014figure supplement 1a,b showing significant increases in both markers with differentiation, consistent with prior work. This establishes that the differentiation protocol was effective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "5d8e8447-2d54-448f-b44d-1507dfb92a7b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Differentiation increases MSC contractility. Traction force increased substantially over 16 hours of TGF-\u03b23 exposure. MSCs in differentiation conditions showed significantly higher strain energy per cell on microposts compared to control conditions. Blockade of acto-myosin contractility decreased nuclear deformation in undifferentiated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 demonstrate increased contractility with differentiation through traction force measurements and micropost array analysis. The data show ~5-fold increase in strain energy with differentiation. ROCK inhibition experiments confirm the role of contractility in nuclear deformation. These findings rule out decreased contractility as an explanation for reduced nuclear deformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "16f3eacd-a256-48af-9311-b8b006257c7b",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dynamic loading upregulates TGF-\u03b2 expression and signaling. TGF-\u03b2 gene expression was highly upregulated with dynamic stretch at early time points, and increased Smad3 signaling was observed in response to stretch. Low levels of exogenous TGF-\u03b23 (1 ng/mL) for 1 week resulted in LMAC redistribution and heterochromatin increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C77 suggest autocrine/paracrine TGF-\u03b2 signaling may mediate mechanical loading effects. Gene expression data and Smad3 phosphorylation support this mechanism. The dose-response experiment with exogenous TGF-\u03b2 provides additional support. However, the authors note that TGF-\u03b2 in media did not reach detectable levels, suggesting intracellular or local signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "8b2f967c-2261-45c8-b954-eb97c19de019",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Soluble factors and mechanical loading produce path-dependent differences in nuclear reorganization. Soluble factors resulted in complete abrogation of nuclear deformation, while mechanical loading resulted in only diminution of nuclear deformation. The authors speculate that complete elimination of nuclear deformation may result in aberrant mechano-signaling if nuclear deformation is essential for physiologic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by the comparative data showing different degrees of nuclear deformation resistance between soluble factor and mechanical loading treatments. Claim C89 is appropriately identified as speculation about potential functional consequences. The observation of path-dependent differences is interesting but the functional implications remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "cd5dd728-cb16-4b1b-a0cd-6c3796ef0548",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MSC differentiation is mediated by both soluble and physical cues, and the physical properties of MSCs themselves likely change during lineage specification, potentially altering cellular perception of mechanical perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C9 provide the conceptual framework and motivation for the study. C8 is supported by citations to prior literature. C9 represents the hypothesis tested in this manuscript, which is supported by the experimental data showing changes in MSC physical properties during differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish the mechanistic framework. The nucleus is the stiffest organelle, chromatin condensation and lamins regulate nuclear stiffness, the LINC complex transmits mechanical signals to the nucleus, and prior work has shown roles for lamins and chromatin in differentiation and mechanotransduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C24, C73-C74, C76, C78-C80, C83-C84, C91 represent established knowledge and prior work that provides context for the current study. These are appropriately cited and provide the scientific foundation for the experimental approach. These claims are not tested in this manuscript but are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "145f2b44-f7a1-4f71-a048-d7031398703c",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Summary of main findings: Soluble differentiation factors and mechanical perturbation elicit marked changes in nuclear deformability, stiffness, and organization through chromatin condensation and Lamin A/C restructuring. Repeated dynamic mechanical stimulation can evoke these changes more rapidly than soluble factors alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C92-C93 are summary statements of the main findings that are well-supported by the collective experimental data presented throughout the manuscript. These represent accurate syntheses of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    },
+    {
+      "id": "0b8ff8b4-2a81-4d97-a575-89962945aba5",
+      "content_id": "ee045602-266c-49bc-8d60-f7d060524ec6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculative implications: Dynamic mechanical forces may continuously adjust nuclear mechanics to modulate progenitor cell mechanosensitivity during tissue formation and repair. Increased calcium mobilization may create a feed-forward loop affecting lamin processing. MSC differentiation status and exposure history could influence mechanobiologic response upon implantation. Changes in nuclear stiffness may inform and reinforce lineage specification signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75, C82, C87, C95 represent speculative extensions of the findings to physiological contexts and potential mechanisms. While these are reasonable hypotheses based on the data, they are not directly tested in this manuscript. The authors appropriately present these as speculative implications rather than demonstrated conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:42.345989Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "40d32263-afa8-4c52-91f2-57d462309420",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "43bc33ea-05ca-4755-9b2e-c7d76b7924e5",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "e80e795a-fcbe-408e-b0fc-d19d3df306ba",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "dcf2532a-5e62-490c-9c8c-3891ac1b3cb0",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "9d3ae270-a987-4bd0-9896-63529d45263f",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "39fac672-6394-46c7-b904-05c236c1eb96",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "d4e4a21c-39b7-4c31-adc4-4cd9a5c80f69",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "8ff3f778-d887-4b90-8fff-b8ed5dfcf8ed",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "cf4fddd8-df01-4fa6-af6f-0b9b37b6bd00",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "a1d93030-27ff-4f99-8715-3e32ec7cde30",
+      "result_id": "9d0d4206-f03f-4e21-9e79-6c267ef39b8b"
+    },
+    {
+      "claim_id": "083b5637-5b34-4d00-897f-c6b5e24ac71f",
+      "result_id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2"
+    },
+    {
+      "claim_id": "03a6031d-8a40-4bdb-9935-8e01a23f868d",
+      "result_id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2"
+    },
+    {
+      "claim_id": "04c5edb5-0e6a-45f4-b96b-7eba7a541185",
+      "result_id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2"
+    },
+    {
+      "claim_id": "e7fe1370-49d2-4915-9444-e7f424410ffc",
+      "result_id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2"
+    },
+    {
+      "claim_id": "81f5d864-d9ad-4de0-83dc-de70bebb95f1",
+      "result_id": "83314062-6cd1-4e48-8f5c-9ec2bf6c69a2"
+    },
+    {
+      "claim_id": "a91a8629-61de-4870-9d20-9dc4be1d10d1",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "e0970379-d61a-472d-a5d6-342015b062bc",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "a977e1cf-3e24-478e-a241-efaa37b6f4f0",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "cdd23963-4876-4f36-9afc-a78ca10901d9",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "389e2d5b-9d53-45a3-a9f3-7587c439bf68",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "d4dee5dc-57d3-4b6e-a6fd-522943bb52e0",
+      "result_id": "a4a323e4-3c7f-42b6-be8f-3b170f84458e"
+    },
+    {
+      "claim_id": "fcf5173a-9449-47c6-938c-91be641a4d44",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "da68f708-b026-45fd-bbc1-b8466cffa3be",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "4e17b7cf-0d82-4e61-b03e-6794cddb4037",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "cfcca08c-30a6-4bf6-9ef4-5c35bdd0a86d",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "a977e1cf-3e24-478e-a241-efaa37b6f4f0",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "c6d71b21-9aa9-44d7-bb55-77c70a2b025d",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "970fdaab-3190-4a25-b5a5-ef98fec4dfbe",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "36e9e437-72ec-432a-9517-80473217f120",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "dd9e70d4-8774-4497-a04c-22e86e6d5344",
+      "result_id": "d1684e47-19d9-41de-b491-5f268e2c8710"
+    },
+    {
+      "claim_id": "3e5ab794-a46a-46c5-a73f-787adabde0a5",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "e2252839-0315-4bf1-8353-7130a1747a13",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "1536300f-90b3-4562-974c-7667755e3dbf",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "4e6816a4-6bf1-410d-b36f-b936dedff826",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "cf7aab6b-d52e-40d3-8859-60779d848b98",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "c7c5a32f-7830-49d5-abbf-84e6801199ba",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "04619766-1bff-4d44-9510-419821396f30",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "4fb90acb-fd8e-4320-8c94-15e36383b82c",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "1a08c41b-24fc-433c-ba83-20e875db6933",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "b23022f6-0aaa-4eef-ba74-71b8079ffa21",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "b802a9d2-c5ce-4540-a41e-d77f04351a06",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "b9fc730d-dde6-472d-b2de-a086d6aeab8d",
+      "result_id": "b772e77a-d661-4ea3-93f7-1d280a0c21a4"
+    },
+    {
+      "claim_id": "d058cca1-2fb7-4b18-af74-e6a692cc6412",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "adf15638-d28b-42ca-bbe8-67219a253339",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "5045a326-1bb0-44db-a117-8745543c6130",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "a1f4a53b-3d7f-4963-b336-f018af24c9f1",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "edcc9a2a-397f-4a88-accd-062e3ccb87af",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "8f09e54c-0347-4a5b-9879-ea0b84a7fee2",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "8724585e-0f24-42ba-81f8-7bd661f6fe0f",
+      "result_id": "8b720cd7-ad7f-4750-816f-087c20572ecb"
+    },
+    {
+      "claim_id": "e7fcf5e3-b8f9-4005-88ba-477c7da036fe",
+      "result_id": "3fc18072-1218-4a75-a902-0a56bb9604b1"
+    },
+    {
+      "claim_id": "baea2294-46cf-485c-b891-3e5af23a82b7",
+      "result_id": "3fc18072-1218-4a75-a902-0a56bb9604b1"
+    },
+    {
+      "claim_id": "6dad0b1e-b45e-4c87-a28b-5cbe29fc267c",
+      "result_id": "3fc18072-1218-4a75-a902-0a56bb9604b1"
+    },
+    {
+      "claim_id": "87c3122b-ef5c-47d7-b90b-c18b92ec9f33",
+      "result_id": "3fc18072-1218-4a75-a902-0a56bb9604b1"
+    },
+    {
+      "claim_id": "45ef728e-1fbb-48de-a1bb-bf4ff5b4ed76",
+      "result_id": "3fc18072-1218-4a75-a902-0a56bb9604b1"
+    },
+    {
+      "claim_id": "66489d8b-70a8-428b-9ad1-83754f4af8d7",
+      "result_id": "06b58203-f7fb-4638-97d6-a7cc1a6a5c11"
+    },
+    {
+      "claim_id": "9586cf8f-0898-4d83-9b2e-78a5917d7339",
+      "result_id": "5d8e8447-2d54-448f-b44d-1507dfb92a7b"
+    },
+    {
+      "claim_id": "7c86e790-a0af-4355-9272-eb45b2cab65b",
+      "result_id": "5d8e8447-2d54-448f-b44d-1507dfb92a7b"
+    },
+    {
+      "claim_id": "21f83226-ee2e-48a9-8377-ac1ab64b4ee1",
+      "result_id": "5d8e8447-2d54-448f-b44d-1507dfb92a7b"
+    },
+    {
+      "claim_id": "7329609c-a81d-4da6-80a8-43375b8e3a43",
+      "result_id": "16f3eacd-a256-48af-9311-b8b006257c7b"
+    },
+    {
+      "claim_id": "2214634d-0b69-4b51-826a-de64b498677b",
+      "result_id": "16f3eacd-a256-48af-9311-b8b006257c7b"
+    },
+    {
+      "claim_id": "11c24ca3-82d6-4786-8eb1-666d805303d5",
+      "result_id": "8b2f967c-2261-45c8-b954-eb97c19de019"
+    },
+    {
+      "claim_id": "8ae43ee6-5b29-46ad-a083-e561008158a1",
+      "result_id": "8b2f967c-2261-45c8-b954-eb97c19de019"
+    },
+    {
+      "claim_id": "f412e9bd-25e3-4d25-9474-5933a6b061d2",
+      "result_id": "cd5dd728-cb16-4b1b-a0cd-6c3796ef0548"
+    },
+    {
+      "claim_id": "e0a76509-ddcd-4de8-a115-4c5c43d3172f",
+      "result_id": "cd5dd728-cb16-4b1b-a0cd-6c3796ef0548"
+    },
+    {
+      "claim_id": "d5ac5163-338b-46f1-9041-7365c1fb31f5",
+      "result_id": "cd5dd728-cb16-4b1b-a0cd-6c3796ef0548"
+    },
+    {
+      "claim_id": "39734c37-ae81-47d6-8d8f-aa5af424f2c2",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "a6112331-10b1-4dc0-bf9d-2ceaa30fadb7",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "90fdf977-b845-4f7f-a817-98afe0c9c5ae",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "7080e5b5-585f-43b6-bb36-ea41f149a5cc",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "cf3e0f62-f129-4f40-8971-c0973c28d5f5",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "dbca8dcb-d15a-40a4-b541-8fb563c10517",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "580e8739-a2e7-4cc4-b0b5-fff30220c1a7",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "d3b7716b-5069-44ef-a9aa-09517cab9d67",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "5060f1bb-2cb5-43b2-9556-a469e09047f6",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "75c2c66b-3d6e-4715-9ba3-37a38416815c",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "edd53f4d-d219-4fe2-a5a3-0bf45eece02b",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "4385222a-8454-4f22-b476-04352d4884ff",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "7e96a888-97d9-41c9-80e1-bf1b162fdbbf",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "f6faafc6-ca7d-448f-94c5-25523cef7d4c",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "71668ee0-7e02-4601-93ea-f780af945aca",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "0787d918-c90b-49a4-acd0-576b6858f915",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "1bf93aac-87c3-43fa-a342-bce513fef28e",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "bc6a9c5f-715d-4a19-bcbb-8bd943d0825c",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "2de6f7ce-3ff0-452c-868c-225657efc8b3",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "5a94c65e-1bf9-4fc8-9aa5-119a4c4ffbe6",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "1779a590-8bc7-4c6f-b39d-a0c8f1f18692",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "57bfeca1-2258-40c5-a8c9-8f115a2e6d17",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "4d3da9dc-d154-49c8-9b9b-e3e58940d045",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "bb90a905-5ea9-4de2-a5cf-6b44a4d79de3",
+      "result_id": "40bc37b4-c992-4f79-9c89-0d9221ef32a6"
+    },
+    {
+      "claim_id": "4d347cb0-7904-4760-b6ad-b8d28944af1d",
+      "result_id": "145f2b44-f7a1-4f71-a048-d7031398703c"
+    },
+    {
+      "claim_id": "7719fb8a-2dc2-4371-b141-d5ea6047d73c",
+      "result_id": "145f2b44-f7a1-4f71-a048-d7031398703c"
+    },
+    {
+      "claim_id": "27f8cdf2-7928-4515-9b14-8b47b94ade89",
+      "result_id": "145f2b44-f7a1-4f71-a048-d7031398703c"
+    },
+    {
+      "claim_id": "8b9366cb-4ae8-4559-ba82-846e43a2162b",
+      "result_id": "0b8ff8b4-2a81-4d97-a575-89962945aba5"
+    },
+    {
+      "claim_id": "27864527-a54e-42a7-a5e7-38497e4777f6",
+      "result_id": "0b8ff8b4-2a81-4d97-a575-89962945aba5"
+    },
+    {
+      "claim_id": "f78a9c88-49cc-4c99-b3b6-574904658a88",
+      "result_id": "0b8ff8b4-2a81-4d97-a575-89962945aba5"
+    },
+    {
+      "claim_id": "ac9acbab-0c1c-4d4d-8e3c-80a5645b7d40",
+      "result_id": "0b8ff8b4-2a81-4d97-a575-89962945aba5"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "MlaF, MlaE, MlaD, and MlaB form a stable complex in E. coli. His-tagged versions of MlaE, MlaF, and MlaD are functional and can co-purify with each other. MlaC does not stably associate with the inner membrane complex, suggesting weak or transient interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide converging evidence from multiple affinity purification experiments using different His-tagged constructs (His-MlaE, MlaF-His, MlaD-His) showing specific interactions between MlaF, MlaE, and MlaD. Functional complementation assays (C13, C17) validate that the tagged proteins are biologically active. The observation that MlaC does not co-purify (C19-C20) is consistent with its proposed role as a periplasmic binding protein with transient interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The soluble domain of MlaD forms extremely stable hexamers that are resistant to SDS denaturation. SEC-MALS analysis confirms hexameric assembly (~110.7 kDa), and the stoichiometry of the full MlaFEDB complex (~285 kDa) is consistent with six copies of MlaD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are well-supported by complementary biophysical techniques. SEC-MALS provides direct molecular weight determination confirming hexamers (C21), SDS-PAGE shows SDS-resistant oligomers (C23), and the mass of the full complex is consistent with hexameric MlaD (C22). The inference that oligomerization is a property of the soluble domain (C24) is reasonable given that the isolated soluble domain forms stable hexamers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "MlaD binds phospholipids with apparent preference for phosphatidylglycerol (PG) over phosphatidylethanolamine (PE). Native mass spectrometry indicates at least four phospholipid binding sites in the hexamer, and ligand binding is not strictly required for hexamer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by multiple orthogonal techniques (TLC, 31P NMR, native MS) demonstrating phospholipid binding. The negative control (dLolB-His, C27) strengthens the specificity argument. The observation of ~1:1 PE:PG ratio despite cellular abundance favoring PE (C28) supports preferential PG binding (C29). Native MS data showing hexamers with 0-4 bound lipids (C30-C31) is internally consistent and supports the conclusion of at least four binding sites (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MlaB is essential for assembly of the MlaFE complex. In the absence of MlaB, MlaF does not co-purify with MlaE, and MlaF stability appears reduced. This assembly function is independent of MlaD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide consistent evidence from multiple purification experiments showing that MlaF-MlaE interactions require MlaB. The experiments include both overexpression (C34) and low-level expression systems (C35), strengthening the conclusion. Reciprocal pulldowns (C36) and observations of reduced MlaF-His recovery (C37) support the role of MlaB in MlaF stability. The data converge on a clear assembly function for MlaB (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C55",
+      "C84"
+    ],
+    "result": "MlaB plays a critical role in ATP hydrolysis activity of the complex. The T52A mutation in MlaB abolishes ATPase activity without affecting complex assembly, separating MlaB's assembly and catalytic functions. The wild-type MlaFEB complex exhibits high intrinsic ATPase activity (kcat = 1.8 \u00b1 0.5 \u03bcmol ATP s\u207b\u00b9/\u03bcmol complex) with cooperative ATP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45, C55, and C84 are well-supported by enzyme kinetics data and functional complementation assays. The T52A mutation provides a clean separation-of-function phenotype: complex assembly is maintained (C39) but ATPase activity is abolished (C42), validated by in vivo complementation failure (C43). The kinetic parameters for wild-type MlaFEB are clearly reported with error estimates (C40-C41). The Walker A mutant (C44) serves as an appropriate positive control for loss of activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C57"
+    ],
+    "result": "MlaD modulates ATPase activity of the MlaFEB complex, reducing activity ~3-fold without significantly affecting ATP affinity. MlaD likely interacts with the transporter solely via MlaE, and this interaction may cause structural changes affecting catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C57 are supported by quantitative enzyme kinetics comparing MlaFEB and MlaFEDB complexes. The Km values are similar (C46) while kcat differs ~3-fold (C47), with appropriate error estimates. The inference that MlaD interacts via MlaE (C49) is reasonable based on purification data. However, the mechanistic speculation (C50) is appropriately tentative. The overall conclusion that MlaD modulates activity (C53) is well-supported by the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors propose that MlaD may stabilize inactive conformations and ensure ATP conservation, with the complex potentially activated upon substrate binding or MlaC interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61 are explicitly speculative (all marked as SPECULATION in evidence_type). While the speculation is reasonable given the observed reduction in ATPase activity upon MlaD binding, these mechanistic proposals lack direct experimental support. The authors appropriately present these as hypotheses rather than established findings, but they remain untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose an alternative model for phospholipid transport where transfer occurs via soluble intermediates driven by affinity differences rather than through direct protein-protein contacts between inner and outer membrane complexes. ATP hydrolysis may drive phospholipid release through conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C68 present a mechanistic model that is largely speculative (C65, C67, C68 are marked as SPECULATION). While the lack of strong MlaC interactions (C63) and the R. solenacerum MlaC-PE structure (C62) provide some support for soluble transport, the proposed affinity-driven mechanism and role of ATP hydrolysis in release (C68) lack direct experimental validation. The inference about high-affinity binding sites (C66) is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose that hexameric MCE domain architecture may be conserved across homologous systems in plants (TGD2) and actinomycetes (Mce systems), potentially representing a general architecture for lipid transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C74-C75 are speculative extrapolations from the E. coli MlaD structure to other systems. While C70-C73 cite literature supporting oligomerization of TGD2 and the organization of Mce operons, the claim of conserved hexameric architecture (C69, C75) is not directly demonstrated. The inference about hetero-hexameric arrangements in Mce systems (C74) is reasonable based on operon organization but lacks structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82"
+    ],
+    "result": "MlaD shows apparent specificity for PG over PE. The authors discuss whether this reflects purification artifact, physiological specificity, or a role in establishing membrane phospholipid composition differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is supported by experimental data (TLC and NMR), but claims C77-C79 and C82 are explicitly speculative about the biological significance of this observation. The authors appropriately present multiple alternative explanations but do not distinguish between them experimentally. The physiological relevance of the observed PG preference remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose potential mechanisms for MlaB function based on analogy to SpoIIAA, including possible phosphorylation at T52 or direct involvement in ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 and C91 cite literature establishing the SpoIIAA system, but claims C89-C90 and C92 are purely speculative about MlaB function. The analogy to SpoIIAA is reasonable given sequence conservation (C87), but no experimental evidence is provided for phosphorylation of MlaB (C89) or its direct involvement in ATP hydrolysis (C92). These remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C25",
+      "C56",
+      "C80",
+      "C81",
+      "C85",
+      "C86"
+    ],
+    "result": "Background claims about outer membrane structure, lipid asymmetry maintenance mechanisms, ABC transporter organization, and homologous systems in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11, C25, C56, C80-C81, C85-C86 are all supported by appropriate literature citations. These provide necessary background context for the study and are appropriately referenced. No original experimental validation is needed for these established facts from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Summary claims restating the main findings: MlaD forms SDS-resistant hexamers, binds phospholipids, modulates ATPase activity, and MlaB has roles in both assembly and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C54 are summary statements that accurately reflect the experimental findings detailed in other claim groups. These are appropriately supported by the data presented in Figures 1-5 as referenced in the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "In the absence of MlaB, the MlaFE complex cannot be isolated due to decreased MlaF stability and/or weakened MlaE-MlaF interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is an inference that reasonably synthesizes the purification data showing failure to isolate MlaFE without MlaB (Figure 4A). The proposed mechanisms (decreased stability vs. weakened interactions) are appropriately presented as alternatives rather than definitive conclusions.",
+    "result_type": "MINOR"
+  }
+]

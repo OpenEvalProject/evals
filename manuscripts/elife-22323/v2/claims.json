@@ -1,0 +1,1137 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "External effectors may influence observed co-localization independently from the local interaction of two proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "However, external effectors may influence the observed co-localization independently from the local interaction of two proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual statement about confounding factors in co-localization analysis, presented as established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Global bias, although biologically meaningful, is often neglected when interpreting co-localization.",
+    "claim_type": "EXPLICIT",
+    "source": "Such global bias, although biologically meaningful, is often neglected when interpreting co-localization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about current practices in the field, based on the authors' assessment of the literature.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "DeBias is a computational method to quantify and decouple global bias from local interactions between variables.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we describe DeBias, a computational method to quantify and decouple global bias from local interactions between variables by modeling the observed co-localization as the cumulative contribution of a global and a local component.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main methodological contribution of the paper, described explicitly in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The global bias encapsulates fundamental mechanistic insight into cellular behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "We showcase four applications of DeBias in different areas of cell biology, and demonstrate that the global bias encapsulates fundamental mechanistic insight into cellular behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the four case studies presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Most studies do not account for global bias effects in co-localization and co-orientation measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "Although global bias can significantly mislead the interpretation of co-localization and co-orientation measurements, most studies do not account for this effect (Adler and Parmryd, 2010; Bolte and Cordeli\u00e8res, 2006; Costes et al., 2004; Das et al., 2015; Dunn et al., 2011; Kalaidzidis et al., 2015; Rizk et al., 2014; Serra-Picamal et al., 2012; Tambe et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Previous approaches indirectly assessed spatial correlations but did not explicitly quantify the contribution of global bias to the observed joint distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous approaches indirectly assessed spatial correlations (e.g., [Drew et al., 2015; Karlon et al., 1999]), variants of mutual information (e.g., [Krishnaswamy et al., 2014; Reshef et al., 2011]) or spatial biases (Helmuth et al., 2010) but did not explicitly quantify the contribution of the global bias to the observed joint distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous methodological work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Previous methods approach global bias as a confounding factor that must be eliminated but ignore that it contains valuable mechanistic information.",
+    "claim_type": "EXPLICIT",
+    "source": "These methods approach the global bias as a confounding factor (VanderWeele and Shpitser, 2013) that must be eliminated for more accurate assessment of the true local interaction, but ignore the possibility that the global bias contains by-itself valuable mechanistic information to cell behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critical assessment of previous approaches, supported by citation and the authors' conceptual framework.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "DeBias enables simultaneous investigation of processes that drive global bias and local interactions between spatially-matched variables.",
+    "claim_type": "EXPLICIT",
+    "source": "The decoupling enables simultaneous investigation of processes that drive global bias and local interactions between spatially-matched variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated capability of the method, demonstrated through the case studies.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Similar observed alignments may arise from different levels of global bias and local interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar observed alignments may arise from different levels of global bias and local interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is demonstrated through simulations shown in Figure 1C-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "All simulations with different combinations of \u03c3 and \u03b1 display similar observed alignments (mean values, 18.9\u00b0\u221219.5\u00b0).",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, all simulations display similar observed alignments (mean values, 18.9\u00b0\u221219.5\u00b0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the simulations presented in Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "DeBias models the observed marginal distributions as the sum of contributions by a common effector (global bias) and by local interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "DeBias models the observed marginal distributions X' and Y' as the sum of contributions by a common effector, i.e., the global bias, and by local interactions that effect the co-alignment of the two variables in every data point (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is the fundamental modeling assumption of DeBias, illustrated in Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The global bias is defined as the dissimilarity between the uniform and resampled distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "The global bias is defined as the dissimilarity between the uniform and resampled distributions and accordingly describes to what extent elements of X' and Y' are aligned without local interaction (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a methodological definition illustrated in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The local interaction is defined by the difference of dissimilarity between the observed and uniform distributions and dissimilarity between the resampled and uniform distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Accordingly, the local interaction is defined by the difference of dissimilarity between the observed and uniform distributions and dissimilarity between the resampled and uniform distributions (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a methodological definition illustrated in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "When observations from X and Y are independent, LI converges to 0 for large N.",
+    "claim_type": "EXPLICIT",
+    "source": "The first limiting case is set by the scenario in which observations from X and Y are independent. The expected values of the observed and resampled alignments are identical; accordingly, LI converges to 0 for large N (Appendix 1, Theorem 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in Appendix 1, Theorem 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "When X and Y are both uniform, GI converges to 0 for large N.",
+    "claim_type": "EXPLICIT",
+    "source": "The second limiting case is set by the scenario in which X and Y are both uniform. The corresponding resampled alignment is also uniform; accordingly, GI converges to 0 for a large N (Appendix 1, Theorem 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in Appendix 1, Theorem 2.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "LI is a lower bound for the actual contribution of the local interaction to the observed alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Generalizing this case, we prove that LI is a lower bound for the actual contribution of the local interaction to the observed alignment (Appendix 1, Theorem 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in Appendix 1, Theorem 4.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "GI is an upper bound for the contribution of the global bias to the observed alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Complementarily, GI is an upper bound for the contribution of the global bias to the observed alignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a complementary theoretical property to the LI lower bound.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "When X and Y are truncated normal distributions, GI reduces to a limit of 0 as \u03c3 \u2192 \u221e.",
+    "claim_type": "EXPLICIT",
+    "source": "Last, we show that when X and Y are truncated normal distributions, or when the alignment distribution is truncated normal, GI reduces to a limit of 0 as \u03c3 \u2192 \u221e, when \u03c3 is the standard deviation of the normal distribution before truncation (Appendix 1, Theorem 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in Appendix 1, Theorem 5.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "\u03c3 and GI are negatively associated, i.e., GI decreases with increasing \u03c3.",
+    "claim_type": "EXPLICIT",
+    "source": "Simulations complement this result demonstrating that \u03c3 and GI are negatively associated, i.e., GI decreases with increasing \u03c3 (Figure 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 2E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Vimentin provides a structural template for microtubule growth and through this maintains cell polarity.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent work using genome-edited Retinal Pigment Epithelial (RPE) cells with endogenous levels of fluorescently tagged vimentin and \u03b1-tubulin showed that vimentin provides a structural template for microtubule growth, and through this maintains cell polarity (Gan et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to previous work by Gan et al., 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The alignment effect between vimentin and microtubules was strongest in cells at the wound front.",
+    "claim_type": "EXPLICIT",
+    "source": "The effect was strongest in cells at the wound front where both vimentin and microtubule networks collaboratively align with the direction of migration (Figure 3A\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the experimental data shown in Figure 3A-C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The GI is significantly higher in WT cells at the wound edge compared to cells inside the monolayer.",
+    "claim_type": "EXPLICIT",
+    "source": "The GI is significantly higher in WT cells at the wound edge ('Front', n = 12) compared to cells inside the monolayer ('Back', n = 12, fold change = 4.8, p-value < 0.0001)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 3D with statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The GI is significantly higher in WT cells at the wound edge compared to vimentin-depleted cells at the wound edge.",
+    "claim_type": "EXPLICIT",
+    "source": "or compared to vimentin-depleted cells at the wound edge ('VIM KD', n = 7, fold change = 5.2, p-value < 0.0001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 3D with statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Most of the discrepancy in vimentin-microtubule alignment originated from a shift in the global bias.",
+    "claim_type": "EXPLICIT",
+    "source": "Analysis of the GI and LI revealed that most of the discrepancy in vimentin-microtubule alignment originated from a shift in the global bias (Figure 3D)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the DeBias results shown in Figure 3D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The local interaction between the two cytoskeletons is unaffected by the cell position or knock-down of vimentin.",
+    "claim_type": "EXPLICIT",
+    "source": "suggesting that the local interaction between the two cytoskeletons is unaffected by the cell position or knock-down of vimentin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the DeBias analysis showing stable LI values across conditions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The reduced alignment between the two cytoskeletons is caused by a loss of cell polarity in cells away from the wound edge.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, the reduced alignment between the two cytoskeletons is caused by a loss of cell polarity in cells away from the wound edge, probably associated with the reduced geometric constraints imposed by the wound edge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the DeBias results, with speculation about the mechanism.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Reduction of vimentin expression relaxes global cell polarity cues that tend to impose alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "In a similar fashion, reduction of vimentin expression relaxes global cell polarity cues that tend to impose alignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the vimentin knockdown results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Cells at the wound edge tended to gradually increase their polarity and started migrating during the imaging time frame.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells at the wound edge tended to gradually increase their polarity and started migrating during the imaging time frame (Figure 3E, Video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from live cell imaging shown in Figure 3E and Video 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The GI increased over time during wound healing.",
+    "claim_type": "EXPLICIT",
+    "source": "Accordingly, the GI increased over time (Figure 3F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from time-lapse DeBias analysis shown in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Correlation between GI and time is approximately 0.90 with p-value < 10\u221230.",
+    "claim_type": "EXPLICIT",
+    "source": "Correlation between GI and time ~0.90, p-value < 10\u221230 (n time points = 83).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from the time-lapse analysis shown in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Plithotaxis is the tendency of individual cells to align their velocity with the maximum principal stress orientation.",
+    "claim_type": "EXPLICIT",
+    "source": "One mechanism for cell-cell communication is plithotaxis, the tendency of individual cells to align their velocity with the maximum principal stress orientation (He et al., 2015; Tambe et al., 2011; Zaritsky et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition supported by citations to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Das et al. screened 11 tight-junction proteins to identify pathways that promote motion-stress alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a wound healing assay, Das et al. (Das et al., 2015) screened 11 tight-junction proteins to identify pathways that promote motion-stress alignment (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of previous work by Das et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Knockdown of Merlin, Claudin1, Patj and Angiomotin reduced the alignment of velocity direction and stress orientation.",
+    "claim_type": "EXPLICIT",
+    "source": "Knockdown of Merlin, Claudin1, Patj and Angiomotin (Amot) reduced the alignment of velocity direction and stress orientation (Das et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from previous work by Das et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The stress orientation remained stable upon depletion of Merlin, Claudin1, Patj and Angiomotin, but the velocity direction distribution was much less biased towards the wound edge.",
+    "claim_type": "EXPLICIT",
+    "source": "Further inspection of these hits showed that the stress orientation remained stable upon depletion of these proteins, but the velocity direction distribution was much less biased towards the wound edge (Zaritsky et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from previous work by Zaritsky et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The four hits reported by Das et al. massively reduced the GI.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we confirmed that the four hits reported by (Das et al., 2015) massively reduced the GI, consistent with the notion that absence of these proteins diminished the general alignment of velocity to the direction induced by the migrating sheet (Figure 4B, red dashed rectangle).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from DeBias analysis shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Merlin, Patj and Angiomotin reduced the LI to values close to 0.",
+    "claim_type": "EXPLICIT",
+    "source": "Merlin, Patj and Angiomotin reduced the LI to values close to 0, suggesting that the local dependency between stress orientation and velocity direction was lost.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from DeBias analysis with interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Depletion of Claudin1 or Claudin2 reduced the LI to a lesser extent, similarly for both proteins, but had very different effects on the GI.",
+    "claim_type": "EXPLICIT",
+    "source": "Depletion of Claudin1, or of its paralog Claudin2, which was not reported as a hit in the Das et al. screen, reduced the LI to a lesser extent, similarly for both proteins, but had very different effects on the GI (Figure 4B, purple dashed rectangle).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from DeBias analysis shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The analysis by Das et al. missed effects that do not alter the general alignment of stress or motion.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggested that the analysis by (Das et al., 2015) missed effects that do not alter the general alignment of stress or motion, and implied the existence of a local velocity-stress alignment mechanism that does not immediately change the collective aspect of cell migration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the DeBias analysis comparing to previous work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Depletion of Claudin1 reduced the organization of stress orientations and of velocity direction, while Claudin2 reduced only the latter.",
+    "claim_type": "EXPLICIT",
+    "source": "When assessing the marginal distributions of stress orientation and velocity direction we observed that depletion of Claudin1 reduced the organization of stress orientations and of velocity direction, while Claudin2 reduced only the latter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the marginal distributions shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Stress-motion transmission mechanism is impaired to a similar extent by reduction of Claudin1 and Claudin2, albeit less than by reduction of Merlin.",
+    "claim_type": "EXPLICIT",
+    "source": "Since we think that aligned stress is transformed to aligned motion (He et al., 2015; Zaritsky et al., 2015), we propose that in this data the LI quantifies the effect of local mechanical communication on parallelizing the velocity among neighboring cells. Accordingly, stress-motion transmission mechanism is impaired to a similar extent by reduction of Claudin1 and Claudin2, albeit less than by reduction of Merlin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the DeBias results with reference to previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "ZO1, ZO2, ZO3, Occludin and ZONAB are characterized by small reductions in GI but a substantial increase in LI relative to control.",
+    "claim_type": "EXPLICIT",
+    "source": "ZO1, ZO2, ZO3, Occludin and ZONAB are all characterized by small reductions in GI but a substantial increase in LI relative to control (Figure 4B, orange dashed rectangle).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from DeBias analysis shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "ZO1 depletion has an 83% increase in LI and 8% reduction in GI compared to control.",
+    "claim_type": "EXPLICIT",
+    "source": "both conditions yield similar observed alignment distributions with nearly identical means, yet ZO1 depletion has an 83% increase in LI and 8% reduction in GI, i.e., the mild loss in the marginal alignment of velocity or stress is compensated by enhanced local alignment in ZO1 depleted cells (Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "All paralogs, ZO1, ZO2 and ZO3 fall into the same cluster of elevated LI and slightly reduced GI relative to control experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, all paralogs, ZO1, ZO2 and ZO3 fall into the same cluster of elevated LI and slightly reduced GI relative to control experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the DeBias analysis shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "ZO1 depletion increases both motility and cell-junctional forces.",
+    "claim_type": "EXPLICIT",
+    "source": "This phenotype is in agreement with the outcomes of a screen that found ZO1 depletion to increase both motility and cell-junctional forces (Bazelli\u00e8res et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from previous work by Bazelli\u00e8res et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Reduced PKC activity leads to energy transfer from CFP to YFPCFP, resulting in reduced FRET ratio.",
+    "claim_type": "EXPLICIT",
+    "source": "Reduced PKC activity leads to energy transfer from CFP to YFPCFP, resulting in reduced FRET ratio (CFPYFPCFP) (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the FRET mechanism illustrated in Figure 5A.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "PKC inhibition should reduce the difference between the CFP and YFPCFP channels, which would yield an increased LI.",
+    "claim_type": "EXPLICIT",
+    "source": "Assuming that the CFP signal is dominant (CFP > YFPCFP), this alteration should reduce the difference between the CFP and YFPCFP channels, which would in DeBias yield an increased LI (Figure 5A, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a prediction based on the DeBias method and FRET mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "LI increased after PKC inhibition (p-value < 0.008).",
+    "claim_type": "EXPLICIT",
+    "source": "LI increased (p-value < 0.008)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "GI decreased after PKC inhibition (p-value < 0.008).",
+    "claim_type": "EXPLICIT",
+    "source": "GI decreased (p-value < 0.008) after PKC inhibition.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 5F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Control experiments with cytoplasmic GFP and mCherry expression did not show the shifts observed in LI or GI.",
+    "claim_type": "EXPLICIT",
+    "source": "Control experiments with cytoplasmic GFP and mCherry expression did not show the shifts observed in LI or GI (Figure 5H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from control experiments shown in Figure 5H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "PKC inhibition changes the localization of PKC towards a more random spatial distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we conclude that PKC inhibition changes the localization of PKC towards a more random spatial distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the GI decrease observed after PKC inhibition.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "One possible mechanism for the more random PKC distribution is that deactivation releases the kinase from the substrate.",
+    "claim_type": "EXPLICIT",
+    "source": "One possible mechanism for this behavior is that deactivation releases the kinase from the substrate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for the observed GI decrease.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Cargo receptor composition plays an important role in regulating clathrin-coated pit initiation and maturation.",
+    "claim_type": "EXPLICIT",
+    "source": "Cargo receptor composition plays an important role in regulating clathrin-coated pit (CCP) initiation and maturation (Liu et al., 2010; Loerke et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The clustering of transferrin receptors promotes CCP initiation, in concert with clathrin and adaptor proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "The clustering of transferrin receptors (TfnR), the classic cargo receptor used to study CME, promotes CCP initiation, in concert with clathrin and adaptor proteins (Liu et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The oncogenic protein kinase Akt plays an important role in mediating CME in cancer cells but not in normal epithelial cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the oncogenic protein kinase Akt has been shown to play an important role in mediating CME in cancer cells (Liberali et al., 2014; Reis et al., 2015), but not in normal epithelial cells (Reis et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "LI values, indicative of the co-localization between TfnR and CLCa, were significantly lower in Akt-inhibited H1299 compared to control cells.",
+    "claim_type": "EXPLICIT",
+    "source": "LI values, indicative of the co-localization between TfnR and CLCa, were significantly lower in Akt-inhibited H1299 compared to control cells (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Akt inhibition increased the LI values in ARPE-19 cells but this effect was less prominent.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, Akt inhibition increased the LI values in ARPE-19 cells but this effect was less prominent (Figure 6D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Akt inhibition resulted in increased GI values for both cell lines, to a much greater degree in H1299 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Akt inhibition resulted in increased GI values for both cell lines, to a much greater degree in H1299 cells (Figure 6C\u2013D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from DeBias analysis shown in Figure 6C-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "AUC for the (GI, LI) representation was superior to using LI alone for both H1299 and ARPE-19 cell lines.",
+    "claim_type": "EXPLICIT",
+    "source": "AUC for the (GI, LI) representation was superior to using LI alone for both cell lines (H1299: 0.96 versus 0.88, Figure 6E; ARPE-19: 0.83 versus 0.72, Figure 6F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from classification analysis shown in Figure 6E-F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Upon Akt-inhibition, the joint distributions were more biased toward regions of low TfnR intensities.",
+    "claim_type": "EXPLICIT",
+    "source": "Upon Akt-inhibition, the joint distributions were more biased toward regions of low TfnR intensities (Figure 6G\u2013H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the joint distributions shown in Figure 6G-H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Although the CLCa distribution appeared not to change upon AKT inhibition, the frequency of CCPs with fewer TfnRs increased.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, although the CLCa distribution appeared not to change upon AKT inhibition, the frequency of CCPs with fewer TfnRs increased.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the marginal distributions shown in Figure 6I-J.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Live-imaging of H1299 cells showed a higher frequency of CCPs with shorter lifetimes upon Akt-inhibition.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, live-imaging of H1299 cells showed a higher frequency of CCPs with shorter lifetimes upon Akt-inhibition, which was not seen in normal ARPE-19 cells (Figure 6K\u2013L, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from live-imaging experiments shown in Figure 6K-L.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Akt inhibition reduces the rate of TfnR CME uptake in H1299 cells, but not in ARPE-19 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "It has previously been shown that Akt inhibition reduces the rate of TfnR CME uptake in H1299 cells, but not in ARPE-19 cells ([Reis et al., 2015], see also Figure 6M\u2013N)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from previous work and confirmed in Figure 6M-N.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The reduced levels of TfnR in CCPs upon Akt inhibition results in an increase in short-lived, most likely abortive events, and hence a decrease in CME efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "therefore, these findings indicate that the reduced levels of TfnR in CCPs upon Akt inhibition results in an increase in short-lived, most likely abortive events, and hence a decrease in CME efficiency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation combining multiple experimental observations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "DeBias could distinguish alterations in the regulation of CME between two cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Altogether, DeBias could distinguish alterations in the regulation of CME between two cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from the CME case study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Upon Akt inhibition, both untransformed and cancer cells showed a global bias towards CCPs with lowered TfnR intensities.",
+    "claim_type": "EXPLICIT",
+    "source": "The decoupling to GI and LI indicated that upon Akt inhibition, both untransformed and cancer cells showed a global bias towards CCPs with lowered TfnR intensities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the DeBias analysis of the CME data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The conclusion about global bias towards CCPs with lowered TfnR intensities could not have been reached by considering only the LI.",
+    "claim_type": "EXPLICIT",
+    "source": "This conclusion could not have been reached by considering only the LI, which increased for normal and decreased for transformed cell lines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the necessity of the GI for proper interpretation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The distinction of global and local contributions to the level of variable coupling eliminates much of the global confounder bias in the analysis of more direct interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "Our examples demonstrate that the distinction of global and local contributions to the level of variable coupling eliminates much of the global confounder bias in the analysis of more direct interactions and can unearth in the form of global bias mechanisms that are missed by a single parameter analysis (Figures 1\u20132).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary conclusion from the examples presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The global bias may be linked to mechanistically meaningful properties of the studied system.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the four applications shown in this work first emphasize the general need for a confounder analysis when dealing with coupled biological variables and second indicate that the global bias may be linked to mechanistically meaningful properties of the studied system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion from all four case studies.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Properties encoded by global bias were either ignored or eliminated by previous methods.",
+    "claim_type": "EXPLICIT",
+    "source": "These properties were either ignored or eliminated by previous methods, and now can be assessed directly by DeBias.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the novelty of DeBias compared to previous approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Helmuth et al. simulated the spatial distribution of objects in the absence of local interactions to calibrate co-localization measurement.",
+    "claim_type": "EXPLICIT",
+    "source": "For the specific example of object-based co-localization, Helmuth et al. simulated the spatial distribution of objects in the absence of local interactions to calibrate co-localization measurement (Helmuth et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of previous work supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Other methods mostly used second-order spatial statistics on distances between neighbor points to exclude confounders for better co-localization sensitivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Other methods mostly used second-order spatial statistics on distances between neighbor points to exclude confounders for better co-localization sensitivity (reviewed in Lagache et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of previous approaches supported by citation to a review.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "DREMI quantifies the influence of a protein X on protein Y based on the conditional probability P(Y|X).",
+    "claim_type": "EXPLICIT",
+    "source": "The authors developed a measure referred to as conditional-Density Resampled Estimate of Mutual Information (DREMI) to quantify the influence of a protein X on protein Y based on the conditional probability P(Y|X).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the DREMI method from Krishnaswamy et al., 2014.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "DREMI takes advantage of the abundant mass cytometry data to equally weigh data at different intervals along the range of X values using > 10,000 cells per experimental condition.",
+    "claim_type": "EXPLICIT",
+    "source": "DREMI takes advantage of the abundant mass cytometry data to equally weigh data at different intervals along the range of X values using > 10,000 cells per experimental condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how DREMI works from Krishnaswamy et al., 2014.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "DREMI is less reliable when limited data is available, because of the low confidence in the conditional probability of observations with low data abundance.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach is less reliable when limited data is available, because of the low confidence in the conditional probability of observations with low data abundance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critical assessment of DREMI's limitations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "DREMI is not well suited for image data, which typically has fewer observations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, DREMI is not well suited for image data, which typically has fewer observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about DREMI's applicability to image data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "DeBias estimates GI and LI assuming a constant global bias and local interaction for all observations.",
+    "claim_type": "EXPLICIT",
+    "source": "DeBias estimates GI and LI assuming a constant global bias and local interaction for all observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the DeBias method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "A two-fold increase in the direct interaction of two variables would not necessarily result in a two-fold increase in LI.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, a two-fold increase in the direct interaction of two variables would not necessarily result in a two-fold increase in LI.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the DeBias quantification.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The absence of complete orthogonality of GI and LI values complicates the interpretation in certain scenarios.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation is the absence of complete orthogonality of GI and LI values (Figure 2E\u2013F, Appendix 3\u2014figure 1), which complicates the interpretation of GI and LI in certain scenarios.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement about a limitation demonstrated in the figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The main conceptual advance DeBias seeks to make relates to the explicit integration of confounding factors in the analysis of coupled variables.",
+    "claim_type": "EXPLICIT",
+    "source": "The main conceptual advance DeBias seeks to make relates to the explicit integration of confounding factors in the analysis of coupled variables, which implies an expansion of the coupling metric from a scalar to a two-dimensional score.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the main contribution of DeBias.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The mechanism encoded by the GI is not always obvious.",
+    "claim_type": "EXPLICIT",
+    "source": "A forth limitation in the current implementation of DeBias is the linear normalization of multiple intensity variables in co-localization applications. Future versions may include non-linear normalization methods, although such normalization is usually highly specific to a particular data set. Last, the mechanism encoded by the GI is not always obvious.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of interpreting GI.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Sometimes additional experiments are required to unveil the information contained by the GI.",
+    "claim_type": "EXPLICIT",
+    "source": "Sometimes it requires additional experiments to unveil the information contained by the GI.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the need for complementary experiments.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Shifts in the GI encode a shift in the relative populations of short- and long-lived CCPs between conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, we combined fixed cell dual-color imaging with live-imaging and uptake assays to show that shifts in the GI encode a shift in the relative populations of short- and long-lived CCPs between conditions (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion from the CME case study combining multiple experimental approaches.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "DeBias offers a simple means to quantify and interpret mechanisms that alter confounders in the coupling of two variables.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite some of the discussed complexities, DeBias offers a simple means to quantify and interpret mechanisms that alter confounders in the coupling of two variables and to largely exclude such global biases from the quantification of direct interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the utility of DeBias.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

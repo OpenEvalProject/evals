@@ -1,0 +1,1422 @@
+{
+  "submission": {
+    "id": "bdf6b67b-835b-4889-a2ad-b40b92d61c8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:26:48.899211Z",
+    "updated_at": "2025-11-30T22:26:48.899211Z"
+  },
+  "content": [
+    {
+      "id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "submission_id": "bdf6b67b-835b-4889-a2ad-b40b92d61c8a",
+      "content_type": "manuscript",
+      "content_text": "# Flow environment and matrix structure interact to determine spatial competition in Pseudomonas aeruginosa biofilms\n\n## Authors\n\n- Carey D Nadell<sup>1</sup>\n- Deirdre Ricaurte<sup>2</sup>\n- Jing Yan<sup>2</sup>\n- Knut Drescher<sup>1</sup>\n- Bonnie L Bassler<sup>2</sup> ([ORCID: 0000-0002-0043-746X](https://orcid.org/0000-0002-0043-746X)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Terrestrial Microbiology Marburg Germany\n2. Department of Molecular Biology Princeton University Princeton United States\n3. Howard Hughes Medical Institute Chevy Chase United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria often live in biofilms, which are microbial communities surrounded by a secreted extracellular matrix. Here, we demonstrate that hydrodynamic flow and matrix organization interact to shape competitive dynamics in Pseudomonas aeruginosa biofilms. Irrespective of initial frequency, in competition with matrix mutants, wild-type cells always increase in relative abundance in planar microfluidic devices under simple flow regimes. By contrast, in microenvironments with complex, irregular flow profiles \u2013 which are common in natural environments \u2013 wild-type matrix-producing and isogenic non-producing strains can coexist. This result stems from local obstruction of flow by wild-type matrix producers, which generates regions of near-zero shear that allow matrix mutants to locally accumulate. Our findings connect the evolutionary stability of matrix production with the hydrodynamics and spatial structure of the surrounding environment, providing a potential explanation for the variation in biofilm matrix secretion observed among bacteria in natural environments.\n\n## Introduction\n\nIn nature, bacteria predominantly exist in biofilms, which are surface-attached or free-floating communities of cells held together by a secreted matrix (Hall-Stoodley et al., 2004; Nadell et al., 2009; Flemming et al., 2016). The extracellular matrix defines biofilm structure, promotes cell-cell and cell-surface adhesion, and confers resistance to chemical and physical insults (Flemming and Wingender, 2010; Hobley et al., 2015; Teschler et al., 2015; Tseng et al., 2013; Doroshenko et al., 2014; Landry et al., 2006). The matrix also plays a role in the social evolution and population dynamics of biofilm-dwelling bacteria (Nadell et al., 2009; Steenackers et al., 2016; Nadell et al., 2016; Ghoul and Mitri, 2016; Mitri et al., 2016, 2013, 2011). In some species, such as the soil bacterium Bacillus subtilis, matrix materials are readily shared among cells, leading to public goods dilemmas in which non-producing strains can outcompete producing strains (van Gestel et al., 2015, 2014; Kov\u00e1cs, 2014). In other species, including the pathogens Vibrio cholerae, Pseudomonas fluorescens, and P. aeruginosa, matrix-secreting cell lineages privatize most matrix components, allowing them to smother or laterally displace other cell lineages and, in so doing, outcompete non-producing cells (Xavier and Foster, 2007; Nadell and Bassler, 2011; Nadell et al., 2015; Kim et al., 2014c; Schluter et al., 2015; Irie et al., 2016;\u00a0Drescher et al., 2016; Yan et al., 2016; Madsen et al., 2015; Oliveira et al., 2015). Interestingly, not all wild and clinical isolates of these species produce a biofilm matrix, despite the clear ecological and competitive benefits of possessing a matrix (Mann and Wozniak, 2012; Yawata et al., 2014; Chowdhury et al., 2016). Theory and experiments investigating bacterial colonies on agar show that constrained movement can promote coexistence of different strains and species (Levin, 1974; Levin and Paine, 1974; Durrett and Levin, 1994, 1998; Kerr et al., 2002; Kim et al., 2008; Poltak and Cooper, 2011). Fitness trade-offs between the benefits of being adhered to surfaces and the ability to disperse to new locations can cause variability in matrix production (Nadell and Bassler, 2011; Yawata et al., 2014; Levin, 1974; Cohen and Levin, 1991), but it is not well understood how selective forces within the biofilm environment itself might drive the coexistence of strains that make matrix with strains that do not. Here, we explore how selection for matrix production occurs within biofilms on different surface geometries and under different flow regimes, including those that are relevant inside host organisms and in abiotic environments such as soil.\n\nThe local hydrodynamics associated with natural environments can have dramatic effects on biofilm matrix organization. This phenomenon has been particularly well established for P. aeruginosa, a common soil bacterium (Green et al., 1974) and opportunistic pathogen that thrives in open wounds (Fazli et al., 2009; Burm\u00f8lle et al., 2010), on sub-epithelial medical devices (Guaglianone et al., 2010), and in the lungs of cystic fibrosis patients (Harmsen et al., 2010; Ciofu et al., 2013; Folkesson et al., 2012; Stacy et al., 2015; McNally et al., 2014). Under steady laminar flow in simple microfluidic channels, P. aeruginosa forms biofilms with intermittent mushroom-shaped tower structures (Harmsen et al., 2010; Friedman and Kolter, 2004; Miller et al., 2012; Parsek and Tolker-Nielsen, 2008). Under irregular flow regimes in more complex environments, however, P. aeruginosa also produces sieve-like biofilm streamers that protrude into the liquid phase above the substratum (Persat et al., 2015; Kim et al., 2014a, 2014b; Rusconi et al., 2010). These streamers \u2013 whose structure depends on the secreted matrix \u2013 are proficient at catching cells, nutrients, and debris that pass by, leading to clogging and termination of local flow (Drescher et al., 2013).\n\nThe spatial and temporal characteristics of flow thus combine to alter matrix morphology, which, in turn, feeds back to alter local hydrodynamics and nutrient advection and diffusion (Nadell et al., 2016; Hellweger et al., 2016; Stewart and Franklin, 2008). By modifying community structure and solute transport in and around biofilms (Stewart, 2012), this feedback could have a significant influence on the evolutionary dynamics of matrix secretion in natural environments (Coyte et al., 2016). Here, we study within-biofilm competition as a function of flow regime using strains of P. aeruginosa PA14 that differ only in their production of Pel, a viscoelastic matrix polysaccharide that serves as the primary structural element for biofilm and streamer formation (Friedman and Kolter, 2004; Drescher et al., 2013; Chew et al., 2014; Jennings et al., 2015). Using a combination of fluid flow visualization and population dynamics analyses, we reveal a novel interaction between hydrodynamic conditions, biofilm architecture, and competition within bacterial communities.\n\n## Results/discussion\n\nWe performed competition experiments with wild type PA14 and an otherwise isogenic strain deleted for pelA, which is required for synthesis of Pel (Franklin et al., 2011). We focused on Pel because it is the key structural polysaccharide in PA14 biofilms, and it is necessary for streamer formation under complex flow regimes. Deletion of pelA significantly impairs biofilm formation in PA14, which does not naturally produce Psl, an additional matrix polysaccharide secreted by other P. aeruginosa isolates (Colvin et al., 2012, 2011). Wild-type cells produced GFP, and \u2206pelA mutants produced mCherry. Experiments in shaken liquid culture using genetically identical wild-type cells producing GFP or mCherry confirmed that fluorescent protein expression constructs had no measurable effect on growth rate (Figure 1\u2014figure supplement 1). Our first goal was to compare the population dynamics of the wild-type and \u2206pelA strains in typical planar microfluidic devices, which have simple parabolic flow regimes, and in porous environments containing turns and corners, which have irregular flow profiles and better reflect the packed soil environments that P. aeruginosa often occupies (Green et al., 1974; Das and Mukherjee, 2007; Stover et al., 2000). To approximate the latter environment, we used microfluidic chambers containing column obstacles. The size and spacing distributions of the column obstacles were specifically designed to simulate soil or sand (see Materials and methods). Analogous methods have been used previously to study bacterial growth (Vos et al., 2013) and the behavior of Caenorhabditis elegans (Lockery et al., 2008) in realistic environments while maintaining accessibility to microscopy. In our setup, flow was maintained through these chambers at rates comparable to those experienced by P. aeruginosa in a soil environment (Heath, 1983).\n\n### The flow regime alters selection for matrix production in biofilms\n\nSeveral approaches are available to study how competitive dynamics differ in particular flow environments. Most commonly, one would monitor biofilm co-cultures of wild-type and \u2206pelA PA14 cells over time until their strain compositions reached steady state. Performing such time-series experiments was not possible here due to a combination of low-fluorescence output in the early phases of biofilm growth coupled with phototoxicity incurred by cells during epifluorescence imaging. To circumvent this issue, we measured the change in frequency of wild-type and \u2206pelA cells over a fixed 72 hr time period as a function of their initial ratio in both planar chambers and soil-mimicking chambers containing column obstacles. Population composition was quantified in all cases using microscopy, as described in the Materials and methods section. From these measurements, we could infer the final stable states of Pel-producing and non-producing cells as a function of surface topography and flow conditions. This method is commonly used to evaluate the behavior of dynamical systems, and it has been employed in a variety of related experimental applications (Nadell and Bassler, 2011; Nadell et al., 2015; Madsen et al., 2015; Chuang et al., 2009; Sanchez and Gore, 2013; Drescher et al., 2014).\n\nIn planar chambers with simple parabolic flows, wild-type PA14 increased in relative abundance regardless of initial population composition, indicating uniform positive selection for Pel secretion (Figure 1A,B). This result is consistent with recent studies of V. cholerae and Pseudomonas spp. demonstrating that \u2013 in these species \u2013 core structural polysaccharides of the secreted matrix cannot be readily exploited by non-producing mutants (Nadell and Bassler, 2011; Nadell et al., 2015; Kim et al., 2014c; Schluter et al., 2015; Irie et al., 2016; Yan et al., 2016; Madsen et al., 2015). Confocal microscopy revealed that Pel-producers mostly excluded non-Pel-producing cells from biofilm clusters in planar chambers (Figure 2A,B), although some \u2206pelA mutants resided on the periphery of wild-type biofilms. The liquid effluent from these chambers contained an over-representation of the \u2206pelA mutant relative to wild type, consistent with the interpretation that \u2206pelA strain was displaced from the substratum over time (Figure 2C). When wild-type and \u2206pelA cells competed in microfluidic devices simulating porous microenvironments, by contrast, there was a pronounced shift to negative frequency-dependent selection for Pel production (Figure 1A,C). Wild-type PA14 was selectively favored at initial frequencies below\u00a0~0.6. Above this critical frequency, the \u2206pelA mutant was favored. From this result, we can infer that in this porous environment, \u2206pelA null mutants can grow and stably coexist with wild type Pel-producers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig1-v2.jpg)\n\n**Figure 1.:** (A) Wild-type and \u2206pelA strains were co-cultured at a range of initial frequencies in the simple planar (black data) or column-containing (blue data) microfluidic chambers. In both cases, fresh minimal M9 medium with 0.5% glucose was introduced at flow rates adjusted to equalize the volume of medium flowing through each chamber per unit time across all experiments. The diagonal gray line denotes the maximum possible increase in wild-type frequency for a given initial condition. Each data point is an independent biological replicate. (B) A maximum intensity projection (top-down view) of a confocal z-stack of wild type (green) and \u2206pelA (red) biofilms in simple flow chambers. (C) An epifluorescence micrograph (top-down view) of wild type (green) and \u2206pelA (red) biofilms after 72 hr growth in a flow chamber containing column obstacles to simulate a porous environment with irregular flows. Images in (B) and (C) were taken from chambers in which the wild type was inoculated at a frequency of 0.7.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** n\u00a0=\u00a04 biological x 6 technical replicates (different overnight cultures and microtiter plate wells, respectively (bars denote means \u00b1 S.E.). Growth rates were measured as the maximum slope of growth curves of cultures whose optical density at 600 nm was taken every 30 min until stationary phase. Cultures were grown in minimal M9 medium with 0.5% glucose at ambient room temperature (24\u00b0C). The maximum growth rates of wild-type cells expressing GFP and wild-type cells expressing mCherry were not different, indicating that the fluorescent protein constructs did not introduce growth rate bias (two-sample t\u00a0=\u00a00.235, df\u00a0=\u00a06, p=0.822). A two-sample t-test comparing the maximum growth rate of the \u2206pelA strain against the pooled data for wild type (t\u00a0=\u00a02.31, df\u00a0=\u00a010, p=0.0432) suggests a growth rate decrement on the part of wild type relative to \u2206pelA, but was not statistically significant at a critical p<0.05 threshold with Bonferroni correction for two pairwise comparisons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig2-v2.jpg)\n\n**Figure 2.:** (A) Absolute abundances of wild-type and \u0394pelA strains in monoculture and co-culture in planar microfluidic flow-chambers (bars denote means \u00b1 S.D. for n\u00a0=\u00a03\u20136). The two strains were inoculated alone (left two bars) or together at a 1:1 ratio (right two bars). (B) Single optical plane 3 \u03bcm from the surface, and z-projections at right and bottom respectively, of the wild-type (green) and \u0394pelA (red) strains grown in co-culture for 48 hr after inoculation at a 1:1 ratio. (C) Relative abundance of wild-type and \u2206pelA strains in the liquid effluent of planar microfluidic devices (points denote means \u00b1 S.D. for n\u00a0=\u00a03). Wild-type and \u2206pelA cells were combined at a 1:1 initial ratio and co-inoculated on the glass substratum of simple flow chambers. At 0, 24, and 48 hr, 5 \u00b5L of effluent was collected from chamber outlets. Wild-type frequency was calculated within biofilms and within the liquid effluent for each time point.\n\n### Wild-type P. aeruginosa obstructs porous environments, generating low-shear regions that Pel-deficient mutants can occupy\n\nPrevious work has shown that in environments with flow and with corners, wild-type P. aeruginosa produces Pel-dependent biofilm streamers that extrude from the surface into the passing liquid (Kim et al., 2014a; Rusconi et al., 2010; Drescher et al., 2013). In our experiments, streamers were produced by wild-type cells and could be readily detected via microscopy throughout column-containing chambers, but not planar chambers. Streamers are known to catch cells and debris that pass by (Drescher et al., 2013), and although \u2206pelA cells could be found in the streamers in our experiments, they were not abundant. Cell capture by streamers therefore cannot account for the observed coexistence of the two strains (Figure 3\u2014figure supplement 1). This result suggests that streamers do indeed catch debris, consistent with prior studies (Kim et al., 2014b; Drescher et al., 2013), but that in our system, \u2206pelA cells are not present at high enough density in the passing liquid phase to accumulate substantial population sizes by this mechanism.\n\nOur microscopy-based observation of chambers containing column obstacles suggested that wild-type biofilms gradually obstructed some of the regions located between columns over time. We hypothesized that partial clogging could render those portions of the chambers more suitable for growth of the \u2206pelA strain, which was previously shown to be sensitive to removal by shear (Colvin et al., 2012, 2011). This hypothesis predicts that \u2206pelA cells should be found predominantly in regions of the chamber that have been clogged by wild type biofilms. To test this prediction, we repeated our co-culture competition experiment with wild-type and \u2206pelA cells in chambers containing columns, and we measured the distribution of each strain as above. We next introduced fluorescent beads into the chambers by connecting new influent syringes to the inflow tubing. By tracking the beads with high frame-rate microscopy, we could distinguish areas in which flow was present from areas in which flow was absent or very low, and then we could superimpose this information onto the spatial distributions of wild-type and \u2206pelA mutant cells (Figure 3\u2014figure supplement 2).\n\nWild-type biofilms accumulated intermittently, often with clusters of \u2206pelA cells in close proximity. Importantly, and in support of our prediction, \u2206pelA biofilm clusters occurred significantly more often in regions in which flow was blocked by wild-type biofilms than in regions in which flow was not interrupted (Figure 3A,B). As shown previously (Drescher et al., 2013), \u2206pelA cells did not clog chambers when grown in isolation, supporting the interpretation that \u2206pelA accumulation relies on and only occurs after clogging by the wild type. This result is consistent with prior indications that Pel-producers have higher shear tolerance than Pel-deficient cells (Colvin et al., 2012, 2011), which we confirmed in our system by growing each strain in isolation under varying shear stress in planar chambers (Figure 3C). Further supporting our interpretation, the \u2206pelA strain can outcompete the wild type when the two are grown together in planar microfluidic chambers in the absence of flow (Figure 3\u2014figure supplement 3). This experiment approximates the clogged areas of complex flow environments, and the results explain how \u2013 on spatial scales encompassing areas of high flow and low or no flow \u2013 the wild-type and the \u2206pelA strains can coexist.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig3-v2.jpg)\n\n**Figure 3.:** (A) Wild-type (green) and \u2206pelA (red) P. aeruginosa strain mixtures were inoculated into complex flow chambers with irregularly-spaced column obstacles. Biofilms were imaged using confocal microscopy, after which fluorescent beads were flowed through the chamber. The presence or absence of flow was monitored through averaging successive exposures of bead tracks (white lines are bead tracks; blue arrows highlight flow trajectories). (B) Analysis of co-occurrence of flow and wild-type or \u2206pelA cell growth at the end of 1:1 competition experiments in complex flow chambers with column obstacles, as illustrated by the micrograph in (A). The occurrence of wild-type (gray) and \u2206pelA (white) cell clusters are shown as a function of whether local flow has been blocked or remained open after 72 hr of competition (bars denote means \u00b1 S.E. for n\u00a0=\u00a03). These occurrence frequency data are normalized to the total area of blocked versus open flow in the microfluidic devices, as determined by the presence or absence of fluorescent bead tracks. There is no significant difference in wild type occurrence in regions in which flow is unobstructed and in regions in which flow is blocked (two-sample t\u00a0=\u00a00.995, df\u00a0=\u00a04, p=0.376), but the \u2206pelA strain is significantly more likely to occur in regions in which flow is blocked at a p<0.05 threshold with Bonferroni correction for two pairwise comparisons (two-sample t\u00a0=\u00a03.60, df\u00a0=\u00a04, p=0.0227). (C) Biofilm growth of wild-type P. aeruginosa PA14 (gray) and the \u0394pelA mutant (white) in monoculture in planar flow chambers under different shear stress exposure treatments (bars denote means \u00b1 S.D. for n\u00a0=\u00a05\u201310).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Liquid enters the chamber on the left and exits on the right. (A) First, the positions of the columns were identified from the fluorescence image. The centers of the columns served as nodes to divide the spaces into triangular regions. Within each region, the area covered by the column was removed. (B) The corresponding image with fluorescent beads (white) to track local flows. Typically, 10 to 15 images were taken and integrated to cover the flow regions sampled by the beads. Overlaid are triangular regions showing \u2206pelA cell accumulation (from (C)). (C) Averaged intensity within each sampling region was calculated, and a threshold was set to determine if biofilm accumulation occurred in each region. White triangles correspond to regions identified as containing biofilms using this method. \u2206pelA cells accumulated primarily in regions lacking flow due to upstream clogging or in regions immediately downstream of obstructed areas. (D) Wild-type cells accumulated both in areas of high flow and areas of low flow.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21855/elife-21855-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** P. aeruginosa PA14 and the \u2206pelA strain were inoculated at a 1:1 ratio and allowed to form biofilms in planar microfluidic devices with or without flow for 72 hr. At that time, the biofilms were imaged, and the change in relative frequency of the wild-type strain was calculated (as in Figure 1 in the main text). When flow was present, the WT outcompeted the \u2206pelA strain, and thus, the WT strain tended to show a positive change in frequency within biofilms (gray). When flow was absent, the WT strain tended to show a negative change in frequency (white). Bars denote means \u00b1 S.D. for n\u00a0=\u00a03\u20134.\n\n### Conclusions\n\nBiofilm growth is ubiquitous in porous microenvironments and often causes clogging in natural and industrial contexts, including soil beds and water filtration systems (Knowles et al., 2011). Here, we have shown that the clogging process can dramatically influence population dynamics within growing biofilms by generating a feedback between hydrodynamic flow, biofilm spatial architecture, and competition (Coyte et al., 2016). Our findings suggest that when P. aeruginosa wild type and \u0394pelA mutants experience irregular flow in heterogeneous environments, wild-type biofilm formation causes partial clogging, regionally reducing local flow speed. The lack of flow generates favorable conditions for the \u2206pelA strain, whose biofilms would otherwise be removed by shear forces, presumably enabling it to proliferate locally if sufficient nutrients for growth diffuse from other areas of the chamber in which medium continues to flow (Bottero et al., 2013).\n\nP. aeruginosa is notorious as an opportunistic pathogen of plants and animals, including humans (Xavier, 2016). It also thrives outside of hosts, for example, in porous niches such as soil (Fierer et al., 2007). Despite the well-documented ecological benefits of matrix secretion during biofilm formation, environmental and clinical isolates of P. aeruginosa exhibit considerable variation in their production of matrix components, including loss or overexpression of Pel (Mann and Wozniak, 2012; Chew et al., 2014). Our results offer an explanation for natural variation in the ability of P. aeruginosa to produce extracellular matrix, particularly among bacteria in porous microhabitats: the evolutionary stable states of extracellular matrix secretion vary with the topographical complexity of the flow environment in which the bacteria reside.\n\n## Materials and methods\n\n### Strains\n\nAll strains are derivatives of Pseudomonas aeruginosa PA14 (RRID:WB_PA14). Wild-type PA14 strains constitutively producing fluorescent proteins (Drescher et al., 2013) were provided by Albert Siryaporn (UC Irvine), and they harbor genes encoding either EGFP or mCherry under the control of the PA1/04/03 promoter in single copy on the chromosome (Choi and Schweizer, 2006). The \u2206pelA strain was constructed using the lambda red system modified for P. aeruginosa (Lesic and Rahme, 2008).\n\n### Liquid growth rate experiments\n\nTo determine maximum growth rates and the potential for fluorescent protein production to cause fitness differences, bacterial strains were grown overnight in M9 minimal medium with 0.5% glucose at 37\u00b0C. Overnight cultures were back-diluted into minimal M9 medium with 0.5% glucose at room temperature and monitored until their optical densities at 600 nm were\u00a0~0.2, corresponding to logarithmic phase. Cultures were back diluted again into minimal M9 medium with 0.5% glucose and transferred to 96-well plates at room temperature. This experiment was repeated for four biological replicates (different overnight inoculation cultures), each repeated for six technical replicates (different wells within a 96-well plate). Measurements of culture optical density at 600 nm were taken once per 10 min until saturation, corresponding to stationary phase. Matlab\u00a0(Natick,\u00a0MA) curve fitting software was used to calculate the maximum growth rate of each strain (wild type [GFP]: 0.00716 h\u22121, wild type [mCherry]: 0.00733 h\u22121, \u2206pelA [mCherry]: 0.00842 h\u22121). These experiments confirmed that the fluorescent protein markers had no measurable effect on growth rates and thus did not contribute to competitive outcomes in our experiments.\n\n### Microfluidics and competition experiments\n\nMicrofluidic devices consisting of poly(dimethylsiloxane) (PDMS) bonded to 36 mm x 60 mm glass slides were constructed using standard soft photolithography techniques (Sia and Whitesides, 2003). We used planar microfluidic devices with no obstacles to simulate environments with simple parabolic flow profiles, and we used devices with PDMS pillars interspersed throughout the chamber volume to simulate environments with complex (i.e. irregular, non-parabolic) flow profiles. The size and spatial distributions of these column obstacles were determined by taking a cross-section through a simulated volume of packed beads mimicking a simple soil environment. Flow rates through these two chamber types were adjusted to equalize the average initial flow velocities, although the local flow velocity within each chamber varied as biofilms grew during experiments (see main text).\n\nFor all competition experiments, bacterial strains were grown overnight. The following morning, aliquots of the overnight cultures were added to Eppendorf\u00a0(Hamburg,\u00a0Germany) tubes, and their optical densities were equalized prior to preparation of defined mixtures of wild-type and \u2206pelA cells. 100 \u00b5L volumes of the wild-type strain alone, the \u2206pelA strain alone, or mixtures of the two strains (for competition experiments), were introduced into microfluidic chambers using 1 mL syringes and Cole-Parmer (Vernon Hills, IL) polytetrafluoroethylene tubing (inner diameter\u00a0=\u00a00.30 mm; outer diameter\u00a0=\u00a00.76 mm). After 3 hr, fresh tubing connected to syringes containing fresh minimal M9 medium with 0.5% glucose were inserted into the inlet channels. The syringes (3 mL BD Syringe, 27G; Becton, Dickinson and Co.; Franklin Lakes, NJ) were mounted onto high-precision syringe pumps (Harvard Apparatus;\u00a0Holliston,\u00a0MA), which were used to tune flow speeds according to empirical measurements of flow speeds in soil (Heath, 1983). In our experiments, the average flow speed was 150\u2013200 \u00b5m/s, unless noted otherwise. In Figure 3C, to alter shear, we varied the average flow speed; shear was estimated using standard calculations for surface shear stress under fluid flow: $\\tau(y)=\\alpha\\frac{\u2202u}{\u2202y}=\u00a0\\frac{\u0394p}{L}\u00a0\\frac{H}{2}$ where $\\tau$ is the shear stress, $y$ is the height above the surface (evaluated in this case for $y=0$), $\\alpha$ is the dynamic viscosity of the fluid, and $u$ is the fluid flow velocity field, calculated for a rectangular channel in terms of the pressure decrease $\u0394p/L$ across the length L and height H of the channel. The pressure decrease was calculated for our channel dimensions and flow rates using previously published results (Fuerstman et al., 2007). Biofilms were grown at room temperature. It should be noted that microfluidic experiments in the obstacle-containing chambers experience a high failure rate, in which no biofilms appear to grow after the 72 hr period of the experiment. No data could be extracted from such chambers, which were omitted from analysis. This problem was overcome by performing the experiment at high replication. Sufficient data were thus collected to populate the relevant panels in Figures 1 and 3 of the main text. In the case of competition experiments, one replicate was defined as the output from one independently inoculated microfluidic chamber (e.g. Figure 1A). For experiments in which biofilm growth was measured as a function of flow-mediated shear stress (Figure 3C), one replicate was defined as the output from one imaging location within a microfluidic chamber, with two to three locations per chamber being sampled.\n\n### Design of soil-mimicking microfluidic chambers\n\nTo obtain spatial patterns of column obstacles that mimic soil or sand, we first generated a 3D model of packed spheres. The centers of the spheres were positioned such that they had equal radii of 1 (arbitrary units), in a close-packed arrangement. Soil grains, however, are not all the same size. To include heterogeneity in sphere size in our model, we adjusted each sphere\u2019s radius using uniformly distributed random numbers to generate a range of sphere radii varying from 0.4\u00a0to\u00a01.0. For a plane that is oblique to any of the symmetry planes defined by the centers of the spheres, we generated a cross-section through the 3D packed-sphere model. This cross-section of the spheres was used to define the borders of the columns in our soil-mimicking microfluidic devices. To convert the arbitrarily sized spheres from the 3D model to the actual sizes of physical columns in our microfluidic chambers, we chose column radii that varied from 80 to 200 \u03bcm, corresponding to particle sizes of fine- and medium-grain sand.\n\n### Microscopy and image analysis\n\nMature biofilms were imaged using a Nikon\u00a0(Tokyo,\u00a0Japan) Ti-E\u00a0inverted microscope\u00a0via a widefield epifluorescence light path (using a 10x objective) or a Borealis-modified Yokogawa CSU-X1 (Tokyo,\u00a0Japan)\u00a0spinning disk confocal scanner (using a 60x TIRF objective). A 488-nm laser line was used to excite EGFP, and a 594-nm laser line was used to excite mCherry. Quantification of biofilm composition was performed using Matlab and Nikon NIS Elements analysis software (Drescher et al., 2014). Imaging of biofilms could only be performed once for each experiment, precluding time-series analyses, due to phototoxicity effects after multiple rounds of imaging. Phototoxicity was a particularly notable issue here due to dimness of the fluorescent proteins in P. aeruginosa, which made long exposures necessary to capture images of sufficient quality for later analysis. For this reason, we opted for inferential population dynamics analysis as described in the main text.\n\n### Effluent measurements\n\nTo measure strain frequencies in the biofilm effluent of planar chambers (Figure 2C), 1:1 strain mixtures of wild-type and \u2206pelA cells were prepared and inoculated into simple flow chambers according to the procedure outlined above for competition experiments. At 0, 24, and 48 hr, 5 \u00b5L samples were collected from the microfluidic chamber outlet tubing, mixed vigorously by vortex, and plated onto agar in serial dilution. After overnight growth at 37\u00b0C, plates were imaged with an Image Quant LAS 4000\u00a0(GE Healthcare Bio-Sciences; Pittsburgh, PA). Cy3 and Cy5 fluorescence settings were used for EGFP and mCherry excitation, respectively. Image Quant TL Colony Counting software was used to measure the relative abundance of each strain.\n\n### Flow tracking experiments\n\n1:1 mixtures of the wild-type and the \u2206pelA mutant were prepared and introduced into obstacle-containing flow chambers according to the procedure described above. Minimal M9 medium with 0.5% glucose was introduced into the chambers for 72 hr as described above. The entire chamber was then imaged using widefield epifluorescence microscopy to document the locations of wild-type and \u2206pelA cell clusters. Subsequently, the influent syringes were replaced with syringes containing yellow-green fluorescent beads (sulfate-modified, diameter\u00a0=\u00a02 \u00b5m; Invitrogen; Carlsbad, CA) at a concentration of 0.3%, and bead suspensions were flowed into the microfluidic chambers. To determine the presence or absence of flow with respect to the spatial distributions of wild-type and \u2206pelA cells, and to obtain large images for statistics, the entire chamber was imaged with a 1 s exposure time, over which traveling beads were captured as streaks. It should be noted that this experiment also has a high failure rate due to the sensitivity of the microfluidic chambers to removal and re-insertion of syringes, and required optimization to execute successfully. Custom Matlab code was written to correlate the presence or absence of fluid flow with the accumulation of wild-type and \u2206pelA cells. In brief, the positions of the columns were first identified and used to divide the chamber into triangular sampling areas using a network structure in which columns served as nodes and straight lines between column centers served as edges. Within each sampling triangle, the area covered by columns was first removed, and subsequently, the averaged \u2206pelA and wild-type fluorescence intensities in the remaining area were used to determine if a region had wild type and/or \u2206pelA accumulation. In parallel, each sampling area was scored for the presence of flow in the corresponding bead tracking images (Figure 3\u2014figure supplement 2).\n\n### Data display and statistical tests\n\nIn all cases where displayed, bars denote the mean values of the measurements taken, and with the exception of Figure 3B and Figure 1\u2014figure supplement 1, the error bars denote standard deviations. In Figure 3B and Figure 1\u2014figure supplement 1, error bars denote standard errors. In Figure 3B, we report the results of a two-tailed t-test comparing the wild type occurrence frequency in regions of soil-mimicking chambers where flow was obstructed, versus the wild type occurrence frequency in regions where flow was unobstructed. A second t-test was performed to make the same comparison for the \u2206pelA cells. The p-values from these tests were evaluated against a critical threshold of p<0.05 adjusted by Bonferroni correction for two pairwise comparisons. Two t-tests were also performed on the data in Figure 1\u2014figure supplement 1 measuring the maximum growth rates of our strains in liquid culture.\n",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "13842fc0-34dc-4026-8bd1-9880f485350c",
+      "submission_id": "bdf6b67b-835b-4889-a2ad-b40b92d61c8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Sara Mitri, University of Lausanne , Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.21855.015](https://doi.org/10.7554/eLife.21855.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Flow environment and matrix structure interact to determine spatial competition in Pseudomonas aeruginosa biofilms\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom served as Guest Editor, and the evaluation has been overseen by Richard Losick as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very well written manuscript on biofilm formation and strain co-existence in the bacterium Pseudomonas aeruginosa. The article studies the advantage of P. aeruginosa producing extracellular polymeric substances in different flow environments. By competing a wild-type producer strain with a non-producing mutant, the authors show that while the wild-type out-competes the mutant in an environment where flow is unobstructed, introducing barriers and creating an irregular flow environment can change these predictions to the advantage of the mutant, leading to co-existence. They argue that this is because shear is reduced in the complex environment, creating small pockets where the mutant can grow without being washed away.\n\nThe three reviewers all agree that this work is novel and intriguing. While the dynamics of bacterial biofilms within porous environments has long been studied, how genotypes compete at the pore scale has largely been ignored. Previous work has largely focused on Darcy scale phenomena and lack clear mechanistic insights into the processes that shape community structure. The message of the paper is also important, since it shows that selection pressures in simplified environmental conditions in the lab may change in more complex environments. The data also nicely explain natural diversity in biofilm production phenotypes. Finally, the article is clear and well written. However, the reviewers have made a few recommendations that would greatly improve the manuscript.\n\nEssential revisions:\n\n1) Matrix secretion is interesting from a social evolution perspective because matrix secretion is costly, but can potentially benefit other cells in the vicinity including non-matrix producers. Spatial structure has therefore previously been shown to foster strain co-existence in bacterial communities (e.g. Kerr et al. 2002 Nature, Kim et al. 2008 PNAS, Poltak & Cooper 2011 ISME Journal). The dynamics reported here are somewhat different, since previous studies were conducted in the absence of flow. Liquid flow changes the story substantially because fitness now depends on a strain's ability to stay put, and other secretions \u2013 which may be important public goods \u2013 are washed away. This social component and a clear comparison to previous literature is not well covered in the paper. The authors mention this aspect here and there, but do not clearly introduce the social principles. This should be changed.\n\nThe authors should also be careful in stating that secreted matrix cannot be exploited. First, there is evidence that matrix can efficiently be exploited (Van Gestel et al. 2014 ISME Journal). Second, the authors' results do not disprove exploitation, but simply show that it would not occur in this setup.\n\n2) The fitness advantages of the pelA mutant versus the WT in the different scenarios are unclear. Why does the fraction of WT cells decrease when they are inoculated at frequencies larger than 0.6 (even if the effect is not huge)? It seems that this could have many causes: measurements in liquid culture show that pelA cells do have a slightly larger growth rate than WT cells, but this difference was not statistically significant. Could the difference between the two genotypes be larger in a biofilm that is not exposed to flow (note the huge error bar in Figure 3C)? Or perhaps the architecture of the WT biofilm in porous environments is somehow playing a role? It seems that the basic mechanism behind this observation are not discussed in the manuscript.\n\nThere is one experiment that may make the story complete: competing the two strains in a regular microfluidic channel with no flow. In this scenario, biofilm can form, but cells will not be washed away. Will the mutant grow as in liquid (Figure 1\u2014figure supplement 1) or are there other advantages to biofilm growth? Will they grow even more relative to the wild-type than in liquid? The authors already show mono-culture data under this condition (Figure 3C). This would substantiate their claim in the conclusion that \"Pel non-producers do not appear to directly exploit the matrix material produced by wild type cells, but they can take advantage of the low-shear conditions that wild type matrix producers generate in complex flow environments\".\n\nWe realize how onerous suggesting additional experiments can be and the lead author is now working in a different lab, but it does seem that having some insight on dynamics of competition on flat surfaces and the mechanisms at play in the porous media would make this a much better paper.\n\n3) We are still left with questions about the fundamental mechanisms behind the empirical observations. Though the tradeoffs between surface colonization and dispersal are mentioned in the introduction, it is not clear whether the pel mutants, which are trapped in low flow regions, have relegated themselves to a low nutrient/low dispersal environment. Do the authors have an idea as to whether the cells trapped within these low velocity regions suffer from decreased reproductive fitness? The authors measured cells from the effluent in the flat microfluidic devices, is there a particular reason why similar observations could not be made in the porous channels?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Flow environment and matrix structure interact to determine spatial competition in Pseudomonas aeruginosa biofilms\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Losick (Senior editor) and a Reviewing editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nHow do the data in the new Figure (Figure 3\u2014figure supplement 3) compare to Figure 3C and to growth in liquid? Is there a bigger advantage? The best would also be to use similar plots for all growth comparisons (Figure 1\u2014figure supplement 1, Figure 3B and the new figure).\n\nI apologize for not noticing this earlier, but the details of flow rates appear to be missing. What flow rate are you using by default? And how does this change to you achieve the differences in shear in Figure 3C? How do you measure and verify differences in shear?\n\nIn your response, you state that \"Our experiments directly demonstrate that cells in the flow-blocked regions continue to grow\". I do not see these data. You have shown \u2013 and this is well-presented in the Results section \u2013 that there is a higher concentration of pelA mutants in areas with reduced flow. You also show in Figure 1 that the frequency of the wildtype is lower in the complex compared to the planar environment. But you have not provided data to show that the population size of pelA mutants is increasing over time in the complex environment. If you have these data, please add them as a supplementary figure. Otherwise, unless I have misunderstood something, the conclusions section needs to be modified: what you state \"[flow] enabl[es] [DpelA] to proliferate locally using nutrients diffusing from the bulk liquid phase that are replenished by flow in other regions of the environment\" has not been shown here. I think changing the sentence to something like \"potentially enabling it to proliferate locally assuming that sufficient nutrients are diffusing from the bulk liquid phase\u2026\" would be more fitting and sufficient given your current results.\n",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fbe62e6d-2593-46f8-9e73-a21f8dfbe6ef",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C1",
+      "claim": "Bacteria often live in biofilms, which are microbial communities surrounded by a secreted extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria often live in biofilms, which are microbial communities surrounded by a secreted extracellular matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in microbiology supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "5fc91365-ddf5-4aee-ac11-a3a414fc658f",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C2",
+      "claim": "In competition with matrix mutants, wild-type P. aeruginosa cells always increase in relative abundance in planar microfluidic devices under simple flow regimes, irrespective of initial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of initial frequency, in competition with matrix mutants, wild-type cells always increase in relative abundance in planar microfluidic devices under simple flow regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 1A,B showing wild-type PA14 increased in relative abundance regardless of initial population composition in planar chambers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "08dc797d-44fe-466e-a78f-1ec991fbd9a3",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C3",
+      "claim": "In microenvironments with complex, irregular flow profiles, wild-type matrix-producing and isogenic non-producing P. aeruginosa strains can coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in microenvironments with complex, irregular flow profiles \u2013 which are common in natural environments \u2013 wild-type matrix-producing and isogenic non-producing strains can coexist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,C demonstrating negative frequency-dependent selection in column-containing chambers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "63735c67-16f6-48e8-b4f6-d8d83d61599d",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C4",
+      "claim": "Local obstruction of flow by wild-type matrix producers generates regions of near-zero shear that allow matrix mutants to locally accumulate.",
+      "claim_type": "EXPLICIT",
+      "source": "This result stems from local obstruction of flow by wild-type matrix producers, which generates regions of near-zero shear that allow matrix mutants to locally accumulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow tracking experiments and spatial distribution analysis shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "59193392-c2c2-4090-88a0-8f88778e3d18",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C5",
+      "claim": "In nature, bacteria predominantly exist in biofilms, which are surface-attached or free-floating communities of cells held together by a secreted matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "In nature, bacteria predominantly exist in biofilms, which are surface-attached or free-floating communities of cells held together by a secreted matrix (Hall-Stoodley et al., 2004; Nadell et al., 2009; Flemming et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "e92ea467-f107-465a-b6ad-d80fe8dfe988",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C6",
+      "claim": "The extracellular matrix defines biofilm structure, promotes cell-cell and cell-surface adhesion, and confers resistance to chemical and physical insults.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular matrix defines biofilm structure, promotes cell-cell and cell-surface adhesion, and confers resistance to chemical and physical insults (Flemming and Wingender, 2010; Hobley et al., 2015; Teschler et al., 2015; Tseng et al., 2013; Doroshenko et al., 2014; Landry et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "17a6aa7f-4e91-4164-9fc4-bc839b945c76",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C7",
+      "claim": "The matrix plays a role in the social evolution and population dynamics of biofilm-dwelling bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The matrix also plays a role in the social evolution and population dynamics of biofilm-dwelling bacteria (Nadell et al., 2009; Steenackers et al., 2016; Nadell et al., 2016; Ghoul and Mitri, 2016; Mitri et al., 2016, 2013, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "2bed0d17-dd8f-413b-976f-c6cc130c1c6c",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C8",
+      "claim": "In Bacillus subtilis, matrix materials are readily shared among cells, leading to public goods dilemmas in which non-producing strains can outcompete producing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In some species, such as the soil bacterium Bacillus subtilis, matrix materials are readily shared among cells, leading to public goods dilemmas in which non-producing strains can outcompete producing strains (van Gestel et al., 2015, 2014; Kov\u00e1cs, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on B. subtilis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "03ada899-afde-4c1e-aed9-4e28bc5b0079",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C9",
+      "claim": "In Vibrio cholerae, Pseudomonas fluorescens, and P. aeruginosa, matrix-secreting cell lineages privatize most matrix components, allowing them to smother or laterally displace other cell lineages and outcompete non-producing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In other species, including the pathogens Vibrio cholerae, Pseudomonas fluorescens, and P. aeruginosa, matrix-secreting cell lineages privatize most matrix components, allowing them to smother or laterally displace other cell lineages and, in so doing, outcompete non-producing cells (Xavier and Foster, 2007; Nadell and Bassler, 2011; Nadell et al., 2015; Kim et al., 2014c; Schluter et al., 2015; Irie et al., 2016; Drescher et al., 2016; Yan et al., 2016; Madsen et al., 2015; Oliveira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d34bb614-dfb8-4e47-af55-d286d3224884",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C10",
+      "claim": "Not all wild and clinical isolates of V. cholerae, P. fluorescens, and P. aeruginosa produce a biofilm matrix, despite the clear ecological and competitive benefits of possessing a matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, not all wild and clinical isolates of these species produce a biofilm matrix, despite the clear ecological and competitive benefits of possessing a matrix (Mann and Wozniak, 2012; Yawata et al., 2014; Chowdhury et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "26fb242d-da99-4b0a-a242-5de945b5d170",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C11",
+      "claim": "Constrained movement can promote coexistence of different bacterial strains and species in colonies on agar.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory and experiments investigating bacterial colonies on agar show that constrained movement can promote coexistence of different strains and species (Levin, 1974; Levin and Paine, 1974; Durrett and Levin, 1994, 1998; Kerr et al., 2002; Kim et al., 2008; Poltak and Cooper, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "48d464fb-43e1-475e-a706-064b61b229a1",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C12",
+      "claim": "Fitness trade-offs between the benefits of being adhered to surfaces and the ability to disperse to new locations can cause variability in matrix production.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness trade-offs between the benefits of being adhered to surfaces and the ability to disperse to new locations can cause variability in matrix production (Nadell and Bassler, 2011; Yawata et al., 2014; Levin, 1974; Cohen and Levin, 1991), but it is not well understood how selective forces within the biofilm environment itself might drive the coexistence of strains that make matrix with strains that do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "e2fa0ab3-7de5-4d7f-a118-7b68bb69f59e",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C13",
+      "claim": "Local hydrodynamics associated with natural environments can have dramatic effects on biofilm matrix organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The local hydrodynamics associated with natural environments can have dramatic effects on biofilm matrix organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and the subsequent discussion of P. aeruginosa biofilm structures under different flow conditions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "741a7017-68af-4f0f-9f74-f12e737c53de",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C14",
+      "claim": "P. aeruginosa is a common soil bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been particularly well established for P. aeruginosa, a common soil bacterium (Green et al., 1974) and opportunistic pathogen that thrives in open wounds (Fazli et al., 2009; Burm\u00f8lle et al., 2010), on sub-epithelial medical devices (Guaglianone et al., 2010), and in the lungs of cystic fibrosis patients (Harmsen et al., 2010; Ciofu et al., 2013; Folkesson et al., 2012; Stacy et al., 2015; McNally et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "59d13a36-af7d-475c-9485-060af61c70e9",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C15",
+      "claim": "P. aeruginosa is an opportunistic pathogen that thrives in open wounds, on sub-epithelial medical devices, and in the lungs of cystic fibrosis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been particularly well established for P. aeruginosa, a common soil bacterium (Green et al., 1974) and opportunistic pathogen that thrives in open wounds (Fazli et al., 2009; Burm\u00f8lle et al., 2010), on sub-epithelial medical devices (Guaglianone et al., 2010), and in the lungs of cystic fibrosis patients (Harmsen et al., 2010; Ciofu et al., 2013; Folkesson et al., 2012; Stacy et al., 2015; McNally et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "c4fb8af4-5d2c-4072-9dd1-58150b045c7f",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C16",
+      "claim": "Under steady laminar flow in simple microfluidic channels, P. aeruginosa forms biofilms with intermittent mushroom-shaped tower structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Under steady laminar flow in simple microfluidic channels, P. aeruginosa forms biofilms with intermittent mushroom-shaped tower structures (Harmsen et al., 2010; Friedman and Kolter, 2004; Miller et al., 2012; Parsek and Tolker-Nielsen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "9782754f-233f-434a-b24a-108ac67a0357",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C17",
+      "claim": "Under irregular flow regimes in complex environments, P. aeruginosa produces sieve-like biofilm streamers that protrude into the liquid phase above the substratum.",
+      "claim_type": "EXPLICIT",
+      "source": "Under irregular flow regimes in more complex environments, however, P. aeruginosa also produces sieve-like biofilm streamers that protrude into the liquid phase above the substratum (Persat et al., 2015; Kim et al., 2014a, 2014b; Rusconi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "ae18f975-b4d5-440d-811f-51adba510c08",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C18",
+      "claim": "P. aeruginosa streamers are proficient at catching cells, nutrients, and debris that pass by, leading to clogging and termination of local flow.",
+      "claim_type": "EXPLICIT",
+      "source": "These streamers \u2013 whose structure depends on the secreted matrix \u2013 are proficient at catching cells, nutrients, and debris that pass by, leading to clogging and termination of local flow (Drescher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d4f65236-8758-49e3-b0db-f90fcaac2184",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C19",
+      "claim": "Pel is a viscoelastic matrix polysaccharide that serves as the primary structural element for P. aeruginosa PA14 biofilm and streamer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we study within-biofilm competition as a function of flow regime using strains of P. aeruginosa PA14 that differ only in their production of Pel, a viscoelastic matrix polysaccharide that serves as the primary structural element for biofilm and streamer formation (Friedman and Kolter, 2004; Drescher et al., 2013; Chew et al., 2014; Jennings et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "63a9e271-d6c4-43eb-addd-c48e0891906b",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C20",
+      "claim": "Deletion of pelA is required for synthesis of Pel in P. aeruginosa PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed competition experiments with wild type PA14 and an otherwise isogenic strain deleted for pelA, which is required for synthesis of Pel (Franklin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "fbd6bd96-6334-424f-b58c-d25795814b15",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C21",
+      "claim": "Deletion of pelA significantly impairs biofilm formation in PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of pelA significantly impairs biofilm formation in PA14, which does not naturally produce Psl, an additional matrix polysaccharide secreted by other P. aeruginosa isolates (Colvin et al., 2012, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "9bf1bd0e-5d4c-4ae1-b4d8-bf371f41f958",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C22",
+      "claim": "PA14 does not naturally produce Psl, an additional matrix polysaccharide secreted by other P. aeruginosa isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of pelA significantly impairs biofilm formation in PA14, which does not naturally produce Psl, an additional matrix polysaccharide secreted by other P. aeruginosa isolates (Colvin et al., 2012, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "51abda9e-41e7-4475-ba41-2037354a2607",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C23",
+      "claim": "Fluorescent protein expression constructs (GFP or mCherry) had no measurable effect on growth rate of P. aeruginosa PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in shaken liquid culture using genetically identical wild-type cells producing GFP or mCherry confirmed that fluorescent protein expression constructs had no measurable effect on growth rate (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "2f00103e-8997-4306-baa6-62707141284a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C24",
+      "claim": "Pel is necessary for streamer formation under complex flow regimes in P. aeruginosa PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on Pel because it is the key structural polysaccharide in PA14 biofilms, and it is necessary for streamer formation under complex flow regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge from prior studies and the experimental design of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "8065cccf-9b88-4d84-baef-fb59c55b4b64",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C25",
+      "claim": "In planar chambers with simple parabolic flows, wild-type PA14 increased in relative abundance regardless of initial population composition.",
+      "claim_type": "EXPLICIT",
+      "source": "In planar chambers with simple parabolic flows, wild-type PA14 increased in relative abundance regardless of initial population composition, indicating uniform positive selection for Pel secretion (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "0dc80ce0-608b-4e3d-a654-b46b50f0bfac",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C26",
+      "claim": "The result that wild-type PA14 outcompetes \u0394pelA in planar chambers is consistent with recent studies of V. cholerae and Pseudomonas spp. demonstrating that core structural polysaccharides of the secreted matrix cannot be readily exploited by non-producing mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with recent studies of V. cholerae and Pseudomonas spp. demonstrating that \u2013 in these species \u2013 core structural polysaccharides of the secreted matrix cannot be readily exploited by non-producing mutants (Nadell and Bassler, 2011; Nadell et al., 2015; Kim et al., 2014c; Schluter et al., 2015; Irie et al., 2016; Yan et al., 2016; Madsen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and inference from the current experimental results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "c7b18433-4e85-4df5-972c-722f8d4e83cb",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C27",
+      "claim": "Pel-producers mostly excluded non-Pel-producing cells from biofilm clusters in planar chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy revealed that Pel-producers mostly excluded non-Pel-producing cells from biofilm clusters in planar chambers (Figure 2A,B), although some \u2206pelA mutants resided on the periphery of wild-type biofilms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "c15c9ebd-e173-40d7-8e1e-147c311a6ce1",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C28",
+      "claim": "Some \u0394pelA mutants resided on the periphery of wild-type biofilms in planar chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy revealed that Pel-producers mostly excluded non-Pel-producing cells from biofilm clusters in planar chambers (Figure 2A,B), although some \u2206pelA mutants resided on the periphery of wild-type biofilms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "344529bb-adc2-468a-bdec-ad46930d0d24",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C29",
+      "claim": "The liquid effluent from planar chambers contained an over-representation of the \u0394pelA mutant relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The liquid effluent from these chambers contained an over-representation of the \u2206pelA mutant relative to wild type, consistent with the interpretation that \u2206pelA strain was displaced from the substratum over time (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "cf67c3cf-715f-44b3-b011-223c70f65ea4",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C30",
+      "claim": "The \u0394pelA strain was displaced from the substratum over time in planar chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "The liquid effluent from these chambers contained an over-representation of the \u2206pelA mutant relative to wild type, consistent with the interpretation that \u2206pelA strain was displaced from the substratum over time (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the effluent data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "bdf71bcf-e9a2-4ad9-a652-bf96e9ffb713",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C31",
+      "claim": "In microfluidic devices simulating porous microenvironments, there was a pronounced shift to negative frequency-dependent selection for Pel production.",
+      "claim_type": "EXPLICIT",
+      "source": "When wild-type and \u2206pelA cells competed in microfluidic devices simulating porous microenvironments, by contrast, there was a pronounced shift to negative frequency-dependent selection for Pel production (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "575ba68d-9091-4d20-b6f0-99b296ca2b28",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C32",
+      "claim": "Wild-type PA14 was selectively favored at initial frequencies below ~0.6 in porous microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type PA14 was selectively favored at initial frequencies below ~0.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "0a43cf32-f28d-4266-890a-e51b63514f23",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C33",
+      "claim": "Above a critical frequency of ~0.6, the \u0394pelA mutant was favored in porous microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "Above this critical frequency, the \u2206pelA mutant was favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "fbf92954-1729-4a7f-8bfd-768083c10b2f",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C34",
+      "claim": "In porous environments, \u0394pelA null mutants can grow and stably coexist with wild type Pel-producers.",
+      "claim_type": "EXPLICIT",
+      "source": "From this result, we can infer that in this porous environment, \u2206pelA null mutants can grow and stably coexist with wild type Pel-producers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the negative frequency-dependent selection data shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "3f58e3c9-770c-482f-be81-852b8bbb4a9f",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C35",
+      "claim": "Streamers were produced by wild-type P. aeruginosa cells in column-containing chambers but not planar chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, streamers were produced by wild-type cells and could be readily detected via microscopy throughout column-containing chambers, but not planar chambers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopy observations in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "0524b1fa-d8bd-4302-9426-facb20e78abd",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C36",
+      "claim": "\u0394pelA cells were not abundant in streamers produced by wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Streamers are known to catch cells and debris that pass by (Drescher et al., 2013), and although \u2206pelA cells could be found in the streamers in our experiments, they were not abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopy observations shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "df3d94bf-731b-4af1-ba82-b05f9195cd86",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C37",
+      "claim": "Cell capture by streamers cannot account for the observed coexistence of wild-type and \u0394pelA strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell capture by streamers therefore cannot account for the observed coexistence of the two strains (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that \u0394pelA cells were not abundant in streamers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "18dd2310-6b2f-49a9-b83a-0dff3afa48b6",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C38",
+      "claim": "Streamers catch debris.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that streamers do indeed catch debris, consistent with prior studies (Kim et al., 2014b; Drescher et al., 2013), but that in our system, \u2206pelA cells are not present at high enough density in the passing liquid phase to accumulate substantial population sizes by this mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and observations in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d0ebd64f-da2c-4b28-a41b-11767bfc82da",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C39",
+      "claim": "In the experimental system, \u0394pelA cells are not present at high enough density in the passing liquid phase to accumulate substantial population sizes by streamer capture.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that streamers do indeed catch debris, consistent with prior studies (Kim et al., 2014b; Drescher et al., 2013), but that in our system, \u2206pelA cells are not present at high enough density in the passing liquid phase to accumulate substantial population sizes by this mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that \u0394pelA cells were not abundant in streamers despite streamers catching debris.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "47a83992-fc4a-4e6c-a11f-68dd3f771940",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C40",
+      "claim": "Wild-type biofilms gradually obstructed some of the regions located between columns over time in chambers containing column obstacles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our microscopy-based observation of chambers containing column obstacles suggested that wild-type biofilms gradually obstructed some of the regions located between columns over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopy observations in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "69e66ef6-67f6-43a3-af07-8acf767a757a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C41",
+      "claim": "The \u0394pelA strain is sensitive to removal by shear.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that partial clogging could render those portions of the chambers more suitable for growth of the \u2206pelA strain, which was previously shown to be sensitive to removal by shear (Colvin et al., 2012, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "cbe27d33-6263-4d25-a5f5-578a7f4f6d0b",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C42",
+      "claim": "\u0394pelA cells should be found predominantly in regions of the chamber that have been clogged by wild type biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis predicts that \u2206pelA cells should be found predominantly in regions of the chamber that have been clogged by wild type biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the hypothesis that clogging reduces shear and the \u0394pelA strain is sensitive to shear.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "171e7c51-e023-48da-ac13-94a7e98bcdeb",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C43",
+      "claim": "\u0394pelA biofilm clusters occurred significantly more often in regions in which flow was blocked by wild-type biofilms than in regions in which flow was not interrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, and in support of our prediction, \u2206pelA biofilm clusters occurred significantly more often in regions in which flow was blocked by wild-type biofilms than in regions in which flow was not interrupted (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "4b5b84c7-fdc1-4b9a-8532-b78e60afd1eb",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C44",
+      "claim": "\u0394pelA cells did not clog chambers when grown in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Drescher et al., 2013), \u2206pelA cells did not clog chambers when grown in isolation, supporting the interpretation that \u2206pelA accumulation relies on and only occurs after clogging by the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature and observations in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "58187c29-b213-45c0-8b78-7af0defd910a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C45",
+      "claim": "\u0394pelA accumulation relies on and only occurs after clogging by the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Drescher et al., 2013), \u2206pelA cells did not clog chambers when grown in isolation, supporting the interpretation that \u2206pelA accumulation relies on and only occurs after clogging by the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation that \u0394pelA cells did not clog chambers when grown alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "9672aac8-1ef8-4749-878a-81251e59d74f",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C46",
+      "claim": "Pel-producers have higher shear tolerance than Pel-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with prior indications that Pel-producers have higher shear tolerance than Pel-deficient cells (Colvin et al., 2012, 2011), which we confirmed in our system by growing each strain in isolation under varying shear stress in planar chambers (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior literature and experimental data shown in Figure 3C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "7bde3cea-3a47-40c6-94fd-5bb4c339eae4",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C47",
+      "claim": "The \u0394pelA strain can outcompete the wild type when the two are grown together in planar microfluidic chambers in the absence of flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting our interpretation, the \u2206pelA strain can outcompete the wild type when the two are grown together in planar microfluidic chambers in the absence of flow (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d7a1bb60-bc13-4c23-9b1c-5b6aad6aea95",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C48",
+      "claim": "The absence of flow approximates the clogged areas of complex flow environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment approximates the clogged areas of complex flow environments, and the results explain how \u2013 on spatial scales encompassing areas of high flow and low or no flow \u2013 the wild-type and the \u2206pelA strains can coexist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the no-flow experiment to the complex flow environment observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "6a9d98d2-88ff-4dc5-a3a4-3e6014337960",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C49",
+      "claim": "On spatial scales encompassing areas of high flow and low or no flow, the wild-type and the \u0394pelA strains can coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment approximates the clogged areas of complex flow environments, and the results explain how \u2013 on spatial scales encompassing areas of high flow and low or no flow \u2013 the wild-type and the \u2206pelA strains can coexist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined results from flow and no-flow experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "bed5099d-4862-4f2f-9c1b-e95abd4d5c50",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C50",
+      "claim": "Biofilm growth is ubiquitous in porous microenvironments and often causes clogging in natural and industrial contexts, including soil beds and water filtration systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Biofilm growth is ubiquitous in porous microenvironments and often causes clogging in natural and industrial contexts, including soil beds and water filtration systems (Knowles et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "7490149e-8154-4f94-b774-86feebf3da4a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C51",
+      "claim": "The clogging process can dramatically influence population dynamics within growing biofilms by generating a feedback between hydrodynamic flow, biofilm spatial architecture, and competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that the clogging process can dramatically influence population dynamics within growing biofilms by generating a feedback between hydrodynamic flow, biofilm spatial architecture, and competition (Coyte et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented in the manuscript and a citation to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "7dee3618-a4fe-4022-9ae9-aac868d0d28a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C52",
+      "claim": "When P. aeruginosa wild type and \u0394pelA mutants experience irregular flow in heterogeneous environments, wild-type biofilm formation causes partial clogging, regionally reducing local flow speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that when P. aeruginosa wild type and \u0394pelA mutants experience irregular flow in heterogeneous environments, wild-type biofilm formation causes partial clogging, regionally reducing local flow speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results showing flow obstruction and spatial distribution of strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "25668fc7-a39d-43f1-b089-c0a76e4c48e1",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C53",
+      "claim": "The lack of flow generates favorable conditions for the \u0394pelA strain, whose biofilms would otherwise be removed by shear forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of flow generates favorable conditions for the \u2206pelA strain, whose biofilms would otherwise be removed by shear forces, presumably enabling it to proliferate locally if sufficient nutrients for growth diffuse from other areas of the chamber in which medium continues to flow (Bottero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results and a citation to related work on nutrient diffusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d59124e0-422c-44ee-af1b-d7d32e9554d7",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C54",
+      "claim": "P. aeruginosa is notorious as an opportunistic pathogen of plants and animals, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa is notorious as an opportunistic pathogen of plants and animals, including humans (Xavier, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "2391be5d-ee50-4b9f-8ef6-b35138693edf",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C55",
+      "claim": "P. aeruginosa thrives outside of hosts in porous niches such as soil.",
+      "claim_type": "EXPLICIT",
+      "source": "It also thrives outside of hosts, for example, in porous niches such as soil (Fierer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "10bf48e8-7ef6-44dd-b145-5cf6db277b71",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C56",
+      "claim": "Environmental and clinical isolates of P. aeruginosa exhibit considerable variation in their production of matrix components, including loss or overexpression of Pel.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the well-documented ecological benefits of matrix secretion during biofilm formation, environmental and clinical isolates of P. aeruginosa exhibit considerable variation in their production of matrix components, including loss or overexpression of Pel (Mann and Wozniak, 2012; Chew et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "d1af2859-f836-4762-9099-1622d6433205",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C57",
+      "claim": "The evolutionary stable states of extracellular matrix secretion vary with the topographical complexity of the flow environment in which the bacteria reside.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results offer an explanation for natural variation in the ability of P. aeruginosa to produce extracellular matrix, particularly among bacteria in porous microhabitats: the evolutionary stable states of extracellular matrix secretion vary with the topographical complexity of the flow environment in which the bacteria reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results showing different competitive outcomes in simple versus complex flow environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "73292d83-3bb4-465f-8a2c-a18577ed9187",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C58",
+      "claim": "All strains used in the study are derivatives of Pseudomonas aeruginosa PA14.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains are derivatives of Pseudomonas aeruginosa PA14 (RRID:WB_PA14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the strains used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "260569e1-ac1b-44f4-a57d-105f40847f81",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C59",
+      "claim": "Wild-type PA14 strains constitutively producing fluorescent proteins harbor genes encoding either EGFP or mCherry under the control of the PA1/04/03 promoter in single copy on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type PA14 strains constitutively producing fluorescent proteins (Drescher et al., 2013) were provided by Albert Siryaporn (UC Irvine), and they harbor genes encoding either EGFP or mCherry under the control of the PA1/04/03 promoter in single copy on the chromosome (Choi and Schweizer, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the genetic constructs used in the study, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "7f3875d0-1763-4e9e-95c8-e40cc308af05",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C60",
+      "claim": "The \u0394pelA strain was constructed using the lambda red system modified for P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u2206pelA strain was constructed using the lambda red system modified for P. aeruginosa (Lesic and Rahme, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the method used to construct the mutant strain, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "6b9780d0-71a9-4084-a9e0-05161b4db8c9",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C61",
+      "claim": "The maximum growth rates of wild-type cells expressing GFP and wild-type cells expressing mCherry were not different.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum growth rates of wild-type cells expressing GFP and wild-type cells expressing mCherry were not different, indicating that the fluorescent protein constructs did not introduce growth rate bias (two-sample t = 0.235, df = 6, p=0.822).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental growth rate data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "a364b23e-6661-41f8-b911-98f219b9dc6a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C62",
+      "claim": "Microfluidic devices consisting of PDMS bonded to glass slides were constructed using standard soft photolithography techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic devices consisting of poly(dimethylsiloxane) (PDMS) bonded to 36 mm x 60 mm glass slides were constructed using standard soft photolithography techniques (Sia and Whitesides, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the methods used, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "cd9c883c-637b-402b-9d38-f97a4078c06a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C63",
+      "claim": "The average flow speed in the experiments was 150\u2013200 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, the average flow speed was 150\u2013200 \u00b5m/s, unless noted otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "40440df0-b2b3-4ec8-b24e-ed63beb29152",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C64",
+      "claim": "The size and spatial distributions of column obstacles were determined by taking a cross-section through a simulated volume of packed beads mimicking a simple soil environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The size and spatial distributions of these column obstacles were determined by taking a cross-section through a simulated volume of packed beads mimicking a simple soil environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the design of the microfluidic chambers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "f59f9d3f-1389-4d0e-a874-f99296113d60",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C65",
+      "claim": "Column radii in the soil-mimicking microfluidic devices varied from 80 to 200 \u03bcm, corresponding to particle sizes of fine- and medium-grain sand.",
+      "claim_type": "EXPLICIT",
+      "source": "To convert the arbitrarily sized spheres from the 3D model to the actual sizes of physical columns in our microfluidic chambers, we chose column radii that varied from 80 to 200 \u03bcm, corresponding to particle sizes of fine- and medium-grain sand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the design specifications of the microfluidic chambers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "5dfd39a9-cbfb-400e-83ba-e99a2875973a",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C66",
+      "claim": "Imaging of biofilms could only be performed once for each experiment due to phototoxicity effects after multiple rounds of imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging of biofilms could only be performed once for each experiment, precluding time-series analyses, due to phototoxicity effects after multiple rounds of imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "2817ecfd-3606-4100-968e-beba464287b6",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C67",
+      "claim": "Phototoxicity was a particularly notable issue due to dimness of the fluorescent proteins in P. aeruginosa, which made long exposures necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "Phototoxicity was a particularly notable issue here due to dimness of the fluorescent proteins in P. aeruginosa, which made long exposures necessary to capture images of sufficient quality for later analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement explaining the experimental challenge.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "c3bec11a-5a01-4368-8af9-75de1c6b98d5",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C68",
+      "claim": "Microfluidic experiments in the obstacle-containing chambers experience a high failure rate, in which no biofilms appear to grow after the 72 hr period of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that microfluidic experiments in the obstacle-containing chambers experience a high failure rate, in which no biofilms appear to grow after the 72 hr period of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental challenges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "c1fe2169-fcaf-49d6-8694-3fa6e546f51b",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C69",
+      "claim": "There is no significant difference in wild type occurrence in regions in which flow is unobstructed and in regions in which flow is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant difference in wild type occurrence in regions in which flow is unobstructed and in regions in which flow is blocked (two-sample t = 0.995, df = 4, p=0.376), but the \u2206pelA strain is significantly more likely to occur in regions in which flow is blocked at a p<0.05 threshold with Bonferroni correction for two pairwise comparisons (two-sample t = 3.60, df = 4, p=0.0227).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "e936aa2d-9d3a-4e15-b012-6dffce8b7312",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "claim_id": "C70",
+      "claim": "The \u0394pelA strain is significantly more likely to occur in regions in which flow is blocked at a p<0.05 threshold with Bonferroni correction for two pairwise comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant difference in wild type occurrence in regions in which flow is unobstructed and in regions in which flow is blocked (two-sample t = 0.995, df = 4, p=0.376), but the \u2206pelA strain is significantly more likely to occur in regions in which flow is blocked at a p<0.05 threshold with Bonferroni correction for two pairwise comparisons (two-sample t = 3.60, df = 4, p=0.0227).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3e7bb067-8bea-485e-bf14-a48d19369e7c",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In planar microfluidic chambers with simple parabolic flow, wild-type P. aeruginosa PA14 consistently outcompetes \u0394pelA mutants regardless of initial frequency. Pel-producing cells exclude non-producers from biofilm clusters, and \u0394pelA cells are over-represented in the liquid effluent, indicating displacement from the substratum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25, C27, and C29 are directly supported by experimental data in Figures 1A,B and 2A-C. The spatial exclusion (C27-C28) and effluent enrichment (C29-C30) provide converging evidence for the competitive advantage of matrix producers in simple flow. The consistency with prior literature (C26) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "427373ba-004e-4133-81d7-039a3644b888",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In microfluidic chambers with column obstacles simulating porous environments, wild-type and \u0394pelA strains exhibit negative frequency-dependent selection, with wild-type favored below ~0.6 initial frequency and \u0394pelA favored above this threshold. This enables stable coexistence of matrix producers and non-producers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C33 are directly supported by experimental data in Figure 1A,C showing the frequency-dependent competitive dynamics. The inference of stable coexistence (C34) is logically sound given the crossing of the neutral line in the frequency plot, indicating an equilibrium point.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "26329811-ee86-4034-a3d6-8526ba31c62b",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wild-type biofilms obstruct flow in porous environments, creating low-shear regions where shear-sensitive \u0394pelA mutants preferentially accumulate. \u0394pelA cells occur significantly more often in flow-blocked regions (p=0.0227), and this accumulation depends on prior clogging by wild-type cells, as \u0394pelA alone cannot clog chambers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C70 provide statistically significant evidence (p=0.0227 with Bonferroni correction) for preferential \u0394pelA accumulation in blocked regions. Claims C44-C46 from prior literature and current experiments establish the shear sensitivity mechanism. The flow tracking experiments (C40, Figure 3A,B) directly visualize the spatial relationship between clogging and strain distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "0177a87b-e4e5-415a-8505-2b872f73387b",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the absence of flow, \u0394pelA outcompetes wild-type in planar chambers, approximating conditions in clogged regions of complex environments. This explains how the two strains coexist across spatial scales with heterogeneous flow conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by experimental data in Figure 3\u2014figure supplement 3. The inference connecting no-flow conditions to clogged regions (C48) is reasonable, and the explanation for coexistence (C49) logically integrates results from multiple flow conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "ebd89af2-781c-408a-baf4-eedabeeddaa4",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Streamers form in column-containing chambers but not planar chambers, and while they catch debris, \u0394pelA cells are not abundant in streamers. Cell capture by streamers cannot account for the observed coexistence of wild-type and \u0394pelA strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by microscopy observations (Figure 3\u2014figure supplement 1). The inference that streamer capture does not explain coexistence (C37, C39) is logically sound given the low abundance of \u0394pelA in streamers despite their debris-catching capability (C38).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "4a6ae26f-e9c2-4bd8-9283-b8a64edf59fc",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fluorescent protein expression constructs (GFP or mCherry) had no measurable effect on growth rate of P. aeruginosa PA14, with no significant difference between wild-type cells expressing different fluorophores (p=0.822).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C61 are supported by experimental data in Figure 1\u2014figure supplement 1 with appropriate statistical testing (two-sample t-test, p=0.822). This control validates that competitive outcomes are not artifacts of the fluorescent markers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "9509e169-4dc2-4087-a9b9-7619258ff827",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Statistical analysis shows no significant difference in wild-type occurrence between flow-blocked and unobstructed regions (p=0.376), but \u0394pelA is significantly more likely to occur in flow-blocked regions (p=0.0227 with Bonferroni correction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by appropriate statistical tests (two-sample t-tests) with Bonferroni correction for multiple comparisons. The sample size (n=3, df=4) is modest but the effect size for \u0394pelA is sufficient to reach significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "616e7cbe-e09c-4d9f-a4b2-06296b4d05fc",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evolutionary stable states of extracellular matrix secretion vary with the topographical complexity of the flow environment, providing an explanation for natural variation in matrix production among P. aeruginosa isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference (C57) is well-supported by the experimental demonstration of different competitive outcomes in simple versus complex flow environments (C2, C3, C31). The connection to natural variation (C10, C56) is reasonable, though direct field validation would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "47138bb6-1af0-4515-b9a1-72838b4bc209",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The clogging process dramatically influences population dynamics within growing biofilms by generating a feedback between hydrodynamic flow, biofilm spatial architecture, and competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This synthesis claim is supported by the integrated experimental results showing flow obstruction (C40), altered spatial distributions (C43), and frequency-dependent selection (C31). The feedback mechanism is demonstrated rather than merely inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "52b5e260-521b-4e49-866d-a00ba7529409",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pel is a viscoelastic matrix polysaccharide that serves as the primary structural element for PA14 biofilms and is necessary for streamer formation. Deletion of pelA, required for Pel synthesis, significantly impairs biofilm formation in PA14, which does not naturally produce the alternative polysaccharide Psl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C19-C22, C24) are supported by citations to established literature and form the basis for the experimental design. The characterization of Pel's role is well-established in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used P. aeruginosa PA14 derivatives with chromosomally integrated fluorescent proteins, \u0394pelA mutants constructed via lambda red recombination, and PDMS microfluidic devices with column obstacles (80-200 \u03bcm radii) designed to mimic soil environments, with flow speeds of 150-200 \u03bcm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims (C58-C65) are clearly stated and appropriately cited. The experimental design is well-documented, though the soil-mimicking design (C64-C65) is a simplification of natural porous environments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "86bc6110-bf2b-4a49-a52a-c1d8b9a79afa",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimental limitations included phototoxicity preventing time-series imaging due to dim fluorescent proteins requiring long exposures, and high failure rates in obstacle-containing chambers where biofilms failed to grow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations (C66-C68) are transparently reported and explain the methodological choice to use endpoint frequency measurements rather than time-series analysis. The high failure rate is acknowledged but addressed through high replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    },
+    {
+      "id": "9a853573-9341-4454-8e7a-54445311772e",
+      "content_id": "78859c5d-fa0f-46a4-96ad-7c6ea944e252",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that bacteria form biofilms with secreted extracellular matrices that play roles in structure, adhesion, resistance, and social evolution. Matrix production varies among species and isolates, with some showing public goods dynamics and others privatizing matrix benefits. P. aeruginosa is a soil bacterium and opportunistic pathogen that forms different biofilm structures under different flow regimes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1, C5-C18, C50, C54-C56) are well-supported by extensive citations to prior literature and represent established knowledge in the field. They provide appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:48.899211Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5fc91365-ddf5-4aee-ac11-a3a414fc658f",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "8065cccf-9b88-4d84-baef-fb59c55b4b64",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "0dc80ce0-608b-4e3d-a654-b46b50f0bfac",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "c7b18433-4e85-4df5-972c-722f8d4e83cb",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "c15c9ebd-e173-40d7-8e1e-147c311a6ce1",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "344529bb-adc2-468a-bdec-ad46930d0d24",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "cf67c3cf-715f-44b3-b011-223c70f65ea4",
+      "result_id": "3e7bb067-8bea-485e-bf14-a48d19369e7c"
+    },
+    {
+      "claim_id": "08dc797d-44fe-466e-a78f-1ec991fbd9a3",
+      "result_id": "427373ba-004e-4133-81d7-039a3644b888"
+    },
+    {
+      "claim_id": "bdf71bcf-e9a2-4ad9-a652-bf96e9ffb713",
+      "result_id": "427373ba-004e-4133-81d7-039a3644b888"
+    },
+    {
+      "claim_id": "575ba68d-9091-4d20-b6f0-99b296ca2b28",
+      "result_id": "427373ba-004e-4133-81d7-039a3644b888"
+    },
+    {
+      "claim_id": "0a43cf32-f28d-4266-890a-e51b63514f23",
+      "result_id": "427373ba-004e-4133-81d7-039a3644b888"
+    },
+    {
+      "claim_id": "fbf92954-1729-4a7f-8bfd-768083c10b2f",
+      "result_id": "427373ba-004e-4133-81d7-039a3644b888"
+    },
+    {
+      "claim_id": "63735c67-16f6-48e8-b4f6-d8d83d61599d",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "47a83992-fc4a-4e6c-a11f-68dd3f771940",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "69e66ef6-67f6-43a3-af07-8acf767a757a",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "cbe27d33-6263-4d25-a5f5-578a7f4f6d0b",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "171e7c51-e023-48da-ac13-94a7e98bcdeb",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "4b5b84c7-fdc1-4b9a-8532-b78e60afd1eb",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "58187c29-b213-45c0-8b78-7af0defd910a",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "9672aac8-1ef8-4749-878a-81251e59d74f",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "7dee3618-a4fe-4022-9ae9-aac868d0d28a",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "25668fc7-a39d-43f1-b089-c0a76e4c48e1",
+      "result_id": "26329811-ee86-4034-a3d6-8526ba31c62b"
+    },
+    {
+      "claim_id": "7bde3cea-3a47-40c6-94fd-5bb4c339eae4",
+      "result_id": "0177a87b-e4e5-415a-8505-2b872f73387b"
+    },
+    {
+      "claim_id": "d7a1bb60-bc13-4c23-9b1c-5b6aad6aea95",
+      "result_id": "0177a87b-e4e5-415a-8505-2b872f73387b"
+    },
+    {
+      "claim_id": "6a9d98d2-88ff-4dc5-a3a4-3e6014337960",
+      "result_id": "0177a87b-e4e5-415a-8505-2b872f73387b"
+    },
+    {
+      "claim_id": "3f58e3c9-770c-482f-be81-852b8bbb4a9f",
+      "result_id": "ebd89af2-781c-408a-baf4-eedabeeddaa4"
+    },
+    {
+      "claim_id": "0524b1fa-d8bd-4302-9426-facb20e78abd",
+      "result_id": "ebd89af2-781c-408a-baf4-eedabeeddaa4"
+    },
+    {
+      "claim_id": "df3d94bf-731b-4af1-ba82-b05f9195cd86",
+      "result_id": "ebd89af2-781c-408a-baf4-eedabeeddaa4"
+    },
+    {
+      "claim_id": "18dd2310-6b2f-49a9-b83a-0dff3afa48b6",
+      "result_id": "ebd89af2-781c-408a-baf4-eedabeeddaa4"
+    },
+    {
+      "claim_id": "d0ebd64f-da2c-4b28-a41b-11767bfc82da",
+      "result_id": "ebd89af2-781c-408a-baf4-eedabeeddaa4"
+    },
+    {
+      "claim_id": "51abda9e-41e7-4475-ba41-2037354a2607",
+      "result_id": "4a6ae26f-e9c2-4bd8-9283-b8a64edf59fc"
+    },
+    {
+      "claim_id": "6b9780d0-71a9-4084-a9e0-05161b4db8c9",
+      "result_id": "4a6ae26f-e9c2-4bd8-9283-b8a64edf59fc"
+    },
+    {
+      "claim_id": "c1fe2169-fcaf-49d6-8694-3fa6e546f51b",
+      "result_id": "9509e169-4dc2-4087-a9b9-7619258ff827"
+    },
+    {
+      "claim_id": "e936aa2d-9d3a-4e15-b012-6dffce8b7312",
+      "result_id": "9509e169-4dc2-4087-a9b9-7619258ff827"
+    },
+    {
+      "claim_id": "d1af2859-f836-4762-9099-1622d6433205",
+      "result_id": "616e7cbe-e09c-4d9f-a4b2-06296b4d05fc"
+    },
+    {
+      "claim_id": "7490149e-8154-4f94-b774-86feebf3da4a",
+      "result_id": "47138bb6-1af0-4515-b9a1-72838b4bc209"
+    },
+    {
+      "claim_id": "d4f65236-8758-49e3-b0db-f90fcaac2184",
+      "result_id": "52b5e260-521b-4e49-866d-a00ba7529409"
+    },
+    {
+      "claim_id": "63a9e271-d6c4-43eb-addd-c48e0891906b",
+      "result_id": "52b5e260-521b-4e49-866d-a00ba7529409"
+    },
+    {
+      "claim_id": "fbd6bd96-6334-424f-b58c-d25795814b15",
+      "result_id": "52b5e260-521b-4e49-866d-a00ba7529409"
+    },
+    {
+      "claim_id": "9bf1bd0e-5d4c-4ae1-b4d8-bf371f41f958",
+      "result_id": "52b5e260-521b-4e49-866d-a00ba7529409"
+    },
+    {
+      "claim_id": "2f00103e-8997-4306-baa6-62707141284a",
+      "result_id": "52b5e260-521b-4e49-866d-a00ba7529409"
+    },
+    {
+      "claim_id": "73292d83-3bb4-465f-8a2c-a18577ed9187",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "260569e1-ac1b-44f4-a57d-105f40847f81",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "7f3875d0-1763-4e9e-95c8-e40cc308af05",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "a364b23e-6661-41f8-b911-98f219b9dc6a",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "cd9c883c-637b-402b-9d38-f97a4078c06a",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "40440df0-b2b3-4ec8-b24e-ed63beb29152",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "f59f9d3f-1389-4d0e-a874-f99296113d60",
+      "result_id": "ee7dc6a7-9e9a-49f8-85d7-3b05e826034d"
+    },
+    {
+      "claim_id": "5dfd39a9-cbfb-400e-83ba-e99a2875973a",
+      "result_id": "86bc6110-bf2b-4a49-a52a-c1d8b9a79afa"
+    },
+    {
+      "claim_id": "2817ecfd-3606-4100-968e-beba464287b6",
+      "result_id": "86bc6110-bf2b-4a49-a52a-c1d8b9a79afa"
+    },
+    {
+      "claim_id": "c3bec11a-5a01-4368-8af9-75de1c6b98d5",
+      "result_id": "86bc6110-bf2b-4a49-a52a-c1d8b9a79afa"
+    },
+    {
+      "claim_id": "fbe62e6d-2593-46f8-9e73-a21f8dfbe6ef",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "59193392-c2c2-4090-88a0-8f88778e3d18",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "e92ea467-f107-465a-b6ad-d80fe8dfe988",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "17a6aa7f-4e91-4164-9fc4-bc839b945c76",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "2bed0d17-dd8f-413b-976f-c6cc130c1c6c",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "03ada899-afde-4c1e-aed9-4e28bc5b0079",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "d34bb614-dfb8-4e47-af55-d286d3224884",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "26fb242d-da99-4b0a-a242-5de945b5d170",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "48d464fb-43e1-475e-a706-064b61b229a1",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "e2fa0ab3-7de5-4d7f-a118-7b68bb69f59e",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "741a7017-68af-4f0f-9f74-f12e737c53de",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "59d13a36-af7d-475c-9485-060af61c70e9",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "c4fb8af4-5d2c-4072-9dd1-58150b045c7f",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "9782754f-233f-434a-b24a-108ac67a0357",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "ae18f975-b4d5-440d-811f-51adba510c08",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "bed5099d-4862-4f2f-9c1b-e95abd4d5c50",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "d59124e0-422c-44ee-af1b-d7d32e9554d7",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "2391be5d-ee50-4b9f-8ef6-b35138693edf",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    },
+    {
+      "claim_id": "10bf48e8-7ef6-44dd-b145-5cf6db277b71",
+      "result_id": "9a853573-9341-4454-8e7a-54445311772e"
+    }
+  ],
+  "comparisons": []
+}

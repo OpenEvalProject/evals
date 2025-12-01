@@ -1,0 +1,2053 @@
+{
+  "submission": {
+    "id": "9e32a09b-c425-47f4-a35e-9bbf58abe6b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:01:19.640495Z",
+    "updated_at": "2025-11-30T21:01:19.640495Z"
+  },
+  "content": [
+    {
+      "id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "submission_id": "9e32a09b-c425-47f4-a35e-9bbf58abe6b9",
+      "content_type": "manuscript",
+      "content_text": "# A non canonical subtilase attenuates the transcriptional activation of defence responses in Arabidopsis thaliana\n\n## Authors\n\n- Irene Serrano<sup>1</sup>\n- Pierre Buscaill<sup>1</sup>\n- Corinne Audran<sup>1</sup>\n- C\u00e9cile Pouzet<sup>2</sup>\n- Alain Jauneau<sup>2</sup>\n- Susana Rivas<sup>1</sup> ([ORCID: 0000-0002-2549-7346](https://orcid.org/0000-0002-2549-7346)) \u2020\n\n### Affiliations\n\n1. LIPM, Universit\u00e9 de Toulouse, INRA, CNRS Castanet-Tolosan France\n2. F\u00e9d\u00e9ration de Recherche 3450, Plateforme Imagerie, P\u00f4le de Biotechnologie V\u00e9g\u00e9tale Castanet-Tolosan France\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteases play crucial physiological functions in all organisms by controlling the lifetime of proteins. Here, we identified an atypical protease of the subtilase family [SBT5.2(b)] that attenuates the transcriptional activation of plant defence independently of its protease activity. The SBT5.2 gene produces two distinct transcripts encoding a canonical secreted subtilase [SBT5.2(a)] and an intracellular protein [SBT5.2(b)]. Concomitant to SBT5.2(a) downregulation, SBT5.2(b) expression is induced after bacterial inoculation. SBT5.2(b) localizes to endosomes where it interacts with and retains the defence-related transcription factor MYB30. Nuclear exclusion of MYB30 results in its reduced transcriptional activation and, thus, suppressed resistance. sbt5.2 mutants, with abolished SBT5.2(a) and SBT5.2(b) expression, display enhanced defence that is suppressed in a myb30 mutant background. Moreover, overexpression of SBT5.2(b), but not SBT5.2(a), in sbt5.2 plants reverts the phenotypes displayed by sbt5.2 mutants. Overall, we uncover a regulatory mode of the transcriptional activation of defence responses previously undescribed in eukaryotes.\n\n## Introduction\n\nRegulation of protein turnover plays a central role in the proper functioning of eukaryotic cells. Indeed, proteases of different families have been shown to be involved in the control of metabolism, physiology, growth and adaptive responses to biotic and abiotic stimuli (van der Hoorn, 2008). Subtilisin-like proteases (subtilases) are serine proteases featuring a catalytic triad characterized by the three amino acids aspartate, histidine and serine (Dodson\u00a0and\u00a0Wlodawer, 1998). According to the MEROPS (http://merops.sanger.ac.uk) classification, subtilases belong to the S8 family within the SB clan of serine proteases and are grouped into two subfamilies, subtilisins (S8A) and kexins (S8B). Nine subtilases have been characterized in mammals, seven of which belong to the kexin group and two others to the S8A subfamily (pyrolysins). With no representatives of the kexin type, plant subtilases exclusively belong to the pyrolysin group within the S8A subfamily. Pyrolysin-related subtilase families are largely expanded throughout the plant kingdom with a degree of complexity that exceeds that of their mammalian counterparts (Schaller et al., 2012). In Arabidopsis the subtilase family comprises 56 members distributed in six distinct subgroups (SBT1-6) (Rautengarten et al., 2005). Despite their prevalence, our knowledge of the function of plant subtilases is rather poor. Subtilases are predicted to be secreted and have been involved in general protein turnover as well as in the\u00a0highly specific regulation of plant development or responses to environmental changes and, more recently, in suppression of basal immunity and immune priming (Schaller et al., 2012; Figueiredo et al., 2014).\n\nAs sessile organisms, plants must face the diversity of pathogens that they encounter in their habitat. Plants, unlike mammals, lack mobile defender cells and a somatic adaptive immune system. Instead, they rely on the innate immunity of each cell and on systemic signals originating from infection sites. Plant resistance to disease is a costly response, closely connected to plant physiological and developmental processes, and often associated with the so-called hypersensitive response (HR), a form of programmed cell death that develops at attempted infection sites, allegedly to prevent pathogen propagation through the plant (Coll et al., 2011). The sharp limit of the HR suggests the existence of tight regulatory mechanisms to restrict cell death development to the inoculated zone although the molecular actors involved in this process remain unknown for the most part. In line with the high cellular cost of triggering defence and cell death-associated responses, negative regulatory mechanisms are used by the plant to attenuate the activation of immune-related functions and allow a balanced allocation of resources upon pathogen challenge.\n\nTranscriptional reprogramming of the plant cell is a crucial step that allows mounting of efficient defence responses after pathogen attack. Transcription factors (TFs) and co-regulatory proteins play essential roles in launching and regulating the transcriptional changes that direct the plant defence response (Buscaill and Rivas, 2014; Tsuda and Somssich, 2015). MYB TFs of the R2R3 type (126 members in Arabidopsis) mostly regulate plant-specific functions (Dubos et al., 2010). Among the MYB TFs regulating defence-related transcription, Arabidopsis MYB30 is one of the best characterized. MYB30 promotes defence and cell death-associated responses through the transcriptional activation of genes related to the lipid biosynthesis pathway that leads to the production of very-long-chain fatty acids (VLCFAs) (Raffaele et al., 2008). MYB30 is targeted by the effector protein XopD, from the bacterial pathogen Xanthomonas campestris pv. campestris (Xcc), leading to suppression of MYB30-mediated transcriptional activation of plant resistance and thus underlining the important role played by MYB30 in plant defence regulation (Canonne et al., 2011).\n\nA previously performed yeast two-hybrid (Y2H) screen using MYB30 as bait identified a secretory phospholipase (AtsPLA2-\u03b1) and a RING-type E3 ubiquitin ligase (MIEL1) that exert negative spatial and temporal control on MYB30 transcriptional activity through distinct molecular mechanisms (Froidure et al., 2010; Marino et al., 2013). Here, we describe SBT5.2, a serine protease of the subtilisin group, as a new MYB30-interacting partner. We demonstrate that the SBT5.2 transcript is alternatively spliced and that one of the two SBT5.2 splice variants, SBT5.2(b), whose expression pattern follows that of MYB30 after bacterial treatment, encodes an atypical subtilase that specifically mediates retention of MYB30 at endosomal vesicles. This phenomenon is independent of the integrity of the SBT5.2(b) catalytic triad, requires N-terminal myristoylation of SBT5.2(b) and results in attenuation of MYB30-mediated HR. Our work uncovers a novel regulatory mode for a subtilase protein and underlines the intricacy of the transcriptional regulation of plant responses to pathogen attack.\n\n## Results\n\n### Identification of SBT5.2\n\nIn order to search for components involved in MYB30-mediated signalling, a Y2H screen was previously conducted using a MYB30 version deleted from its transcriptional activation domain (MYB30\u0394AD) (Froidure et al., 2010) as bait. A cDNA clone encoding the last 103 amino acids of the Arabidopsis serine protease of the subtilisin group SBT5.2 (At1g20160) was identified in this screen (Figure 1). SBT5.2 belongs to subgroup V (6 members) within the classification of the Arabidopsis subtilase family (Schaller et al., 2012; Rautengarten et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig1-v2.jpg)\n\n**Figure 1.:** Yeasts are shown after growth for five days on low stringency (left; SD/-TL) or high stringency (right; SD/-TLHA) media. Co-expression of MYB30 deleted from its C-terminal transcription activation domain (MYB30\u25b3AD) and the isolated cDNA clone encoding the last 103 amino acids of SBT5.2 (SBT5.2628-730) resulted in yeast growth on selective medium. In a control experiment, yeast cells expressing MYB30\u25b3AD or SBT5.2628-730 with controls provided by Clontech (T-antigen or P53, respectively) were not able to grow on selective medium. BD, GAL4 DNA-binding domain; AD, GAL4 activation domain.\n\nTwo gene models are annotated in the TAIR database (http://www.arabidopsis.org) for At1g20160, suggesting that the corresponding transcript is alternatively spliced (Figure 2a). Comparison of the two SBT5.2 cDNA clones [designated SBT5.2(a) and SBT5.2(b)] with the genomic sequence revealed that the first intron is specifically spliced in the SBT5.2(b) cDNA (Figure 2\u2014figure supplement 1a). Reverse transcription PCR (RT-PCR) using specific cDNA primers confirmed the existence of both splice variants in planta (Figure 2b). The sequence of SBT5.2(a) and SBT5.2(b) 5\u2019 ends was determined by 5\u2019 RACE and cDNA sequencing (Figure 2\u2014figure supplement 1b). To gain knowledge on the relative abundance of both isoforms after bacterial inoculation, we monitored the expression of SBT5.2(a) and SBT5.2(b) in Col-0 wild-type plants inoculated with Pseudomonas syringae pv. tomato DC3000 expressing the avirulence gene AvrRpm1 (Pst AvrRpm1). As shown in Figure 2c, expression of SBT5.2(a) was downregulated after treatment with bacteria, whereas expression of SBT5.2(b) was induced and displayed an expression profile highly similar to that of MYB30 (Figure 2c). This data suggests that SBT5.2(b) may have a MYB30-related function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0Genomic structure of SBT5.2 alternatively spliced variants. Exons are shown as dark gray boxes (E1-E9), introns as black lines between exons and 5\u2019 and 3\u2019 UTRs are shown in light gray. (b) RT-PCR analysis of SBT5.2(a) and SBT5.2(b) transcripts in four-week old Col-0 Arabidopsis leaves. (c) The\u00a0relative expression of SBT5.2(a), SBT5.2(b) and MYB30 at the indicated timepoints after inoculation of Col-0 plants with Pst AvrRpm1 (5 \u00d7 107 cfu/ml). Expression values were normalized using SAND family gene as internal standard and related to the value of each gene at time 0, which is set at 1. The SEM values were calculated from 4 independent experiments (4 replicates/experiment). The asterisks indicate statistically significant values for the three tested genes according to a Student\u2019s t-test (p<0.005) and with respect to gene expression values at time 0. (d) Schematic representation of SBT5.2(a) and SBT5.2(b) protein sequences. The signal peptide (SP) and the pro-domain (PD) in the SBT5.2(a) isoform are shown as black and grey boxes, respectively. Catalytically conserved Asp, His, Asn, and Ser residues are indicated. Putative N-glycosylation sites (PGSs) are indicated by black dots. (e)\u00a0Confocal images of epidermal N. benthamiana cells 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. Accumulation of SBT5.2(a)-RFP in apoplastic spaces is indicated by arrowheads. Bars = 10 \u00b5m. (f) Western blot analysis of total protein extracts (TE) and intercellular fluids (IF) from N. benthamiana leaves expressing the intracellular protein MIEL1 alone (left) or co-expressed with HA-tagged SBT proteins (right), as indicated. Molecular mass markers in kilodaltons are indicated on the right.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Alignment of the two SBT5.2 cDNA sequences with the genomic sequence. The consensus splice sequences flanking the intron that is retained in SBT5.2(a) and shown in red in the genomic sequence are boxed. In the genomic sequence, ^ indicates 5\u2019 and 3\u2019 splice sites. In SBT5.2(a), the retained intron contains an ATG (in bold) encoding the first coding SBT5.2(a) Met residue. Splicing of this intron gives rise to the SBT5.2(b) isoform. Lower case in SBT5.2(a) and SBT5.2(b) cDNA sequences indicates untranslated 5\u2019UTRs whereas upper case indicates coding sequences. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined: for amplification of SBT5.2(a) the primer was situated in the intron [that is absent in SBT5.2(b)], whereas a primer in a sequence of the SBT5.2(b) 5\u2019UTR [that is absent in SBT5.2(a)] was used for SBT5.2(b) amplification. Identical sequences are highlighted by a green box. From the ATG (in bold) in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. (b) Nucleotide sequences of 5\u2019ends of SBT5.2(a) and SBT5.2(b) obtained by 5\u2019RACE amplification. The ATG encoding the first coding Met residue in each protein is shown in bold. Identical sequences are highlighted by a green box. From the ATG in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined. Every tenth residue is marked by |. (c) Sequence alignment of SBT5.2(a) and SBT5.2(b) proteins. Identical amino acids are highlighted in blue. The\u00a0signal peptide and the\u00a0prodomain in SBT5.2(a) are boxed in red and yellow, respectively. Catalytical conserved residues are indicated by red dots. Putative N-glycosylation sites (PGSs) are indicated by blue dots. The 103 C-terminal amino acids encoded by the partial SBT5.2 cDNA clone identified in the yeast two-hybrid screen as interacting with MYB30\u0394AD is boxed in blue. A putative myristoylation domain in SBT5.2(b) is boxed in green with an asterisk indicating the putative myristoylated glycine residue. Every tenth residue is marked by |.\n\nSBT5.2(a) corresponds to a transcript of 2402 bp, which is predicted to encode a 769 amino acid preproenzyme containing a signal peptide (SP) followed a by prodomain (PD), which acts as an intramolecular inhibitor, and a mature polypeptide (Figure 2d; Figure 2\u2014figure supplement 1c). In contrast, SBT5.2(b) corresponds to a transcript of 2373 bp, predicted to encode a protein of 730 amino acids with no SP and lacking the first five amino acids of the PD (Figure 2d; Figure 2\u2014figure supplement 1c). Except for their N-terminal differences, the two corresponding encoded proteins are predicted to be identical and contain a catalytic triad with three amino acids (D145, H210 and S546 in SBT5.2(a), and D106, H171 and S507 in SBT5.2(b)) conserved within serine proteases (Figure 2d; Figure 2\u2014figure supplement 1b).\n\n### SBT5.2(a) is a secreted protein whereas SBT5.2(b) is intracellular\n\nAlternative splicing (AS) of SBT5.2 may have important implications for the subcellular localization and function of the proteins encoded by the two transcripts. The presence of a SP and a PD in SBT5.2(a) suggests that this protein may enter the secretory pathway and be secreted to the extracellular space. Indeed, secretion of SBT5.2(a) was previously reported (Engineer et al., 2014; Kaschani et al., 2012). In contrast, the absence of the SP in SBT5.2(b) may prevent secretion of the protein. In order to test this possibility, the subcellular localization of the two proteins was first investigated using Agrobacterium-mediated transient expression of RFP-tagged SBT5.2(a) and SBT5.2(b) under the control of a dexamethasone- (Dex-) inducible promoter in leaf epidermal cells of N. benthamiana. As expected, SBT5.2(a) was found to be located in apoplastic spaces whereas SBT5.2(b) was detected at vesicle-like structures inside cells (Figure 2e).\n\nTo obtain biochemical validation of the subcellular localization of SBT5.2(a) and SBT5.2(b), HA-tagged versions of both proteins were transiently expressed in N. benthamiana and intercellular fluid (IF) was isolated. In order to control the detection of intracellular proteins in the IF, the intracellular protein MIEL1 (Marino et al., 2013) was co-expressed with SBT5.2 proteins. As expected for an intracellular protein, MIEL1 was detected in the total extract fraction (TE) and not in the IF, confirming that the IF fraction did not contain intracellular proteins due to unintentional cellular lysis during IF isolation (Figure 2f). SBT5.2(a) was detected in the IF as two protein bands that may correspond to the processed and unprocessed forms of the protease, whereas SBT5.2(b) was exclusively detected in the TE and never in the IF fraction (Figure 2f). These results confirm the secretion of SBT5.2(a) and the intracellular localization of SBT5.2(b).\n\n### SBT5.2(a), but not SBT5.2(b), is N-glycosylated\n\nMost extracellular or secreted proteins are modified via N-glycosylation (Moremen et al., 2012). Seven putative N-linked glycosylation sites (PGSs; N in NxS/T motifs) are present in SBT5.2 proteins [N225, N363, N467, N525, N636, N650 and N678 in SBT5.2(a)]. In order to test whether SBT5.2 proteins are glycosylated in planta, protein extracts containing SBT5.2(a) and SBT5.2(b) were treated with PNGase F or EndoH and analysed for mobility shifts by Western Blot. At the end of their maturation in the secretory pathway, some plant N-linked glycans are modified, which renders them resistant to cleavage by glycosylases (Lerouge et al., 1998). In agreement, an electrophoretic shift was only observed for the slow migrating, unprocessed form of SBT5.2(a), whereas migration of the fully processed form remained unaltered (Figure 3a). In addition, SBT5.2(a) bound to and was eluted from a concanavalin A resin (Figure 3b), further suggesting that SBT5.2(a) is a glycosylated protein. Finally, the increased electrophoretic mobility of SBT5.2(a) in protein extracts from N. benthamiana leaves expressing HA-tagged SBT5.2(a) and treated with tunicamycin, an inhibitor of N-linked glycosylation of newly synthesized glycoproteins in the ER (Bassik and Kampmann, 2011), further confirmed SBT5.2(a) N-glycosylation in planta (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig3-v2.jpg)\n\n**Figure 3.:** (a) SBT5.2(a), but not SBT5.2(b), is deglycosylated by PNGase F and Endo H. Protein extracts containing HA-tagged SBT5.2(a) and SBT5.2(b) transiently expressed in N. benthamiana were treated (+) or not (\u2212) with PNGase F or Endo H as indicated. The arrowhead on the left indicates the fully processed form of SBT5.2(a) whose mobility is not affected by the enzymatic treatment. (b) HA-tagged SBT5.2(a), but not SBT5.2(b) can be affinity purified using a concanavalin A resin. (c) Glycosylation of HA-tagged SBT5.2(a), but not SBT5.2(b), is blocked by tunicamycin treatment (+) after transient expression in N. benthamiana. (d) Electrophoretic mobility of individual HA-tagged PGS SBT5.2(a) mutants. Mutated N to A residues are indicated. WT: wild-type SBT5.2(a) proteins were interspersed to facilitate detection of the mobility shifts. In all cases, Western blot analyses were performed using anti-HA antibodies.\n\nWe next analyzed individual PGS removal mutants (in which the N residue was replaced by A) on high resolution SDS-PAGE gels to determine their electrophoretic mobility as compared to wild-type SBT5.2(a). This analysis revealed a small but significant mobility shift for all SBT5.2(a) PGS mutants (Figure 3d), suggesting that all PGS in SBT5.2(a) are used in planta.\n\nDespite the fact that SBT5.2(b) contains the seven PGSs present in SBT5.2(a), (i) SBT5.2(b) electrophoretic mobility was not modified after treatment with PNGase F or EndoH (Figure 3a); (ii) neither SBT5.2(b) binding to nor elution from a concanavalin A resin was observed (Figure 3b); and (iii) no effect of tunicamycin leaf treatment on the SBT5.2(b) electrophoresis profile was detected (Figure 3c). These results, which are consistent with the absence of SP in SBT5.2(b) and our previous observation that SBT5.2(b) is not secreted, strongly suggest that SBT5.2(b) does not enter the secretory pathway and is therefore not N-glycosylated.\n\n### SBT5.2(a), but not SBT5.2(b), shows serine protease activity\n\nSubtilases, as other proteases, are typically able to catalyze their self-processing to render a mature active polypeptide. The presence of the three conserved amino acids in the catalytic triad of SBT5.2 proteins is consistent with these proteins displaying protease activity. When transiently expressing SBT5.2(a) in leaf epidermal cells of N. benthamiana, two protein bands were detected that, as mentioned earlier, may correspond to the processed and unprocessed forms of the protease (Figure 4a). In contrast, only a single band was detected for SBT5.2(b), suggesting that this protein is either not processed or fully processed in planta (Figure 4a). In order to learn more about the proteolytic cleavage of SBT5.2 proteins, we engineered SBT5.2(a) and SBT5.2(b) mutant versions, in which the conserved histidine residue in the catalytic triad of both proteins was mutated to alanine, [SBT5.2(a)H210A and SBT5.2(b)H171A]. Following transient expression in N. benthamiana, mutation of the catalytic histidine residue did not affect migration of SBT5.2(b) as compared to the wild-type protein, suggesting that this protein does not self-process in planta (Figure 4a). In contrast, in the case of SBT5.2(a)H210A, only the slow migrating band, that very likely corresponds to the unprocessed form of the protein, was detected (Figure 4a). This observation suggests that SBT5.2(a) is able to auto-process in planta and is thus active as a protease.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig4-v2.jpg)\n\n**Figure 4.:** (a) Western blot analysis shows expression of HA-tagged SBT5.2(a), SBT5.2(b) and their catalytic mutant versions in N. benthamiana, as indicated. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right. (b) Fluorimetric assay to detect protease activity following incubation of Arabidopsis protoplasts expressing the indicated proteins with fluorescein isothiocyanate (FITC)-conjugated casein (top). RFU: relative fluorescence units. Error bars indicate SEM. Lowercase letters indicate significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test. All proteins were detected by Western blot (bottom). (c) TAP-tagged MYB30 was expressed in N. benthamiana alone or with SBT5.2(a), SBT5.2(b) and their catalytic mutant versions, as indicated. Western blot analysis shows the expression of TAP-tagged MYB30 and HA-tagged SBT proteins. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right.\n\nThe catalytic activity of HA-tagged SBT5.2(a) and SBT5.2(b) was further investigated using a fluorimetric assay. Protein extracts from Arabidopsis protoplasts expressing HA-tagged SBT5.2(a), SBT5.2(a)H210A, SBT5.2(b) or SBT5.2(b)H171A were incubated with the generic protease substrate casein conjugated to fluorescein isothiocyanate (FITC). Increased fluorescence was observed for SBT5.2(a), reflecting proteolytic cleavage of the FITC-casein substrate (Figure 4b). In contrast, fluorescence intensity in the case of SBT5.2(a)H210A, SBT5.2(b) and SBT5.2(b)H171A was indistinguishable from that of protoplasts transformed with an empty vector (Figure 4b), although their protein expression levels were comparable to those of SBT5.2(a) (Figure 4b). These results reinforce the idea that SBT5.2(a), but not SBT5.2(b), is correctly processed thus displaying protease activity.\n\nTo determine whether SBT5.2(a) or SBT5.2(b) are involved in MYB30 proteolytic processing, the in planta accumulation of MYB30 when expressed alone or together with the different SBT5.2 proteins was analysed. As shown in Figure 4c, MYB30 accumulation was consistently unaltered in the presence of SBT5.2(a) or SBT5.2(b) as compared to the expression observed in the presence of the respective subtilase catalytic mutant versions. These results suggest that neither SBT5.2(a) nor SBT5.2(b) are able to proteolytically cleave MYB30.\n\n### SBT5.2(b), but not SBT5.2(a), interacts with MYB30 at intracellular vesicles\n\nMYB30 was previously localized to the nucleus of N. benthamiana and Arabidopsis cells (Froidure et al., 2010). In order to investigate MYB30 potential colocalization with SBT5.2(a) and/or SBT5.2(b), GFP-tagged MYB30 was co-expressed with RFP-tagged SBT5.2(a) or SBT5.2(b). Confocal microscopy analysis of N. benthamiana leaves transiently co-expressing GFP-MYB30 and SBT5.2(a)-RFP showed that these proteins do not co-localize in planta, as SBT5.2(a) and MYB30 retain their respective extracellular and nuclear localization when expressed together (Figure 5a). Surprisingly, when co-expressed with RFP-tagged SBT5.2(b), GFP-MYB30 was excluded from the nucleus and localized to the same vesicle-like structures where SBT5.2(b) was localized, suggesting a possible in planta interaction between the two proteins outside the nucleus (Figure 5a). Importantly, the unrelated MYB TF MYB123 retained its nuclear localization when co-expressed with SBT5.2(b), suggesting that SBT5.2(b)-mediated MYB30 nuclear exclusion is specific (Figure 5a). Moreover, SBT5.2(b)-mediated specific nuclear exclusion of MYB30 was confirmed in Arabidopsis protoplasts (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Confocal images of epidermal N. benthamiana cells 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. (b)\u00a0Confocal images of Arabidopsis protoplasts 16\u2009hr after transformation of the indicated constructs. (c,d) GFP lifetime distribution of GFP-MYB30 in N. benthamiana cells (c) or Arabidopsis protoplasts (d) expressing SBT5.2(b). Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)-HA (green bars) or SBT5.2(b)-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (SBT5.2(b)-RFP) and green (SBT5.2(b)-HA) arrows. Bars = 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Confocal images of epidermal cells of N. benthamiana leaves 36\u2009hr after Agrobacterium-mediated transient expression of GFP-tagged MYB30 and HA-tagged (top) or untagged (down) versions of SBT5.2(b) Bars = 10 \u00b5m. (b) Confocal images of Arabidopsis protoplasts 16\u2009hr after transformation with the indicated constructs. Bars = 10 \u00b5m. (c) GFP lifetime distribution of GFP-MYB30 in protoplasts expressing SBT5.2(b)H171A. Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)H171A-HA (green bars) or SBT5.2(b)H171A-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (+SBT5.2(b)H171A-RFP) and green (SBT5.2(b)H171A-HA) arrows.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a\u2013c) Confocal images of epidermal cells of N. benthamiana leaves 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 \u00b5m. (d\u2013f) GFP lifetime distribution of GFP-MYB30, or GFP-MYB123, in nuclei of N. benthamiana cells expressing the C-terminus of SBT5.2(b) [SBT5.2(b)341-730], or SBT5.1 [SBT5.1405-780], as indicated. Histograms show the number of nuclei according to GFP-MYB30, or GFP-MYB123, lifetime classes when the MYB protein is expressed alone (green bars) or in the presence of RFP-tagged SBT5.2(b)341-730, or SBT5.1405-780, (magenta bars), as indicated. The degree of overlap of GFP lifetime distribution is represented with magenta (+RFP-tagged SBT constructs) and green (GFP-tagged MYB constructs) arrows.\n\nWe next sought out to confirm the interaction between MYB30 and SBT5.2 in plant cells. We focused on the study of the interaction between MYB30 and SBT5.2(b) because we were unable to detect a subcelullar co-localisation between MYB30 (nuclear) and SBT5.2(a) (secreted) (Figure 5a,b), which is a first requisite for the study of protein-protein interactions. The physical interaction between SBT5.2(b) and MYB30 was investigated in FRET-FLIM assays using GFP- (donor) and RFP- (acceptor) tagged MYB30 and SBT5.2(b), respectively. In order to avoid potential changes in GFP lifetime due to differences in the molecular environments of two distinct subcellular compartments [MYB30 being nuclear when expressed alone or in vesicle-like structures when co-expressed with SBT5.2(b)], the subcellular localization of GFP-tagged MYB30 when co-expressed with non-fluorescent HA-tagged, or an untagged version of SBT5.2(b), was therefore investigated. Importantly, both SBT5.2(b)-HA and untagged SBT5.2(b), which are not able to act as acceptors for GFP fluorescence, also led to MYB30 retention in intracellular vesicle-like structures (Figure 5\u2014figure supplement 1a,b). A significant reduction of GFP lifetime was observed when GFP-MYB30 was co-expressed with RFP-tagged SBT5.2(b) as compared to co-expression with SBT5.2(b)-HA, both in N. benthamiana epidermal cells and in Arabidopsis protoplasts, thus confirming the physical interaction between the two proteins in intracellular vesicles (Figure 5c,d; Table 1). This interaction did not depend on the integrity of SBT5.2(b) catalytic triad, as shown by the reduced GFP lifetime of GFP-MYB30 when co-expressed with RFP-tagged SBT5.2(b)H171A (Table 1; Figure 5\u2014figure supplement 1c).\n\n**Table 1.**\n FRET-FLIM analysis shows that MYB30 physically interacts with SBT5.2(b) at\u00a0intracellular vesicles.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Donor</th>\n      <th>Acceptor</th>\n      <th>Lifetime*</th>\n      <th>SD\u2020</th>\n      <th>N\u2021</th>\n      <th>E\u00a7</th>\n      <th>p-value#</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>N. benthamiana</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)-HA</td>\n      <td>2.552</td>\n      <td>0.013</td>\n      <td>57</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)-RFP</td>\n      <td>2.274</td>\n      <td>0.019</td>\n      <td>54</td>\n      <td>10.86</td>\n      <td>5.8 \u00d7 10\u221221</td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>-</td>\n      <td>2.669</td>\n      <td>0.009</td>\n      <td>82</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)362-730-RFP</td>\n      <td>2.271</td>\n      <td>0.016</td>\n      <td>51</td>\n      <td>14.91</td>\n      <td>3.8 \u00d7 10\u221249</td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.1(b)405-780-RFP</td>\n      <td>2.592</td>\n      <td>0.018</td>\n      <td>44</td>\n      <td>2.86</td>\n      <td>4.2 \u00d7 10\u221205</td>\n    </tr>\n    <tr>\n      <td>GFP-MYB123</td>\n      <td>-</td>\n      <td>2.570</td>\n      <td>0.013</td>\n      <td>59</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB123</td>\n      <td>SBT5.2(b)362-730-RFP</td>\n      <td>2.544</td>\n      <td>0.013</td>\n      <td>58</td>\n      <td>1.00</td>\n      <td>0.17</td>\n    </tr>\n    <tr>\n      <td>A. thaliana</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)-HA</td>\n      <td>2.491</td>\n      <td>0.009</td>\n      <td>60</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)-RFP</td>\n      <td>2.151</td>\n      <td>0.018</td>\n      <td>60</td>\n      <td>13.65</td>\n      <td>1.2 \u00d7 10\u221233</td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)H171A-HA</td>\n      <td>2.473</td>\n      <td>0.012</td>\n      <td>60</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GFP-MYB30</td>\n      <td>SBT5.2(b)H171A-RFP</td>\n      <td>2.115</td>\n      <td>0.023</td>\n      <td>60</td>\n      <td>14.49</td>\n      <td>7.8 \u00d7 10\u221226</td>\n    </tr>\n  </tbody>\n</table>\n\n_*\u00a0Mean lifetime in nanoseconds\u2020\u00a0Standard deviation\u2021\u00a0Total number of measured vesicles\u00a7\u00a0Percentage of FRET efficiency (E = 1 - \u03c4DA/\u03c4D) calculated by comparing the lifetime of the donor in the presence of the acceptor (\u03c4DA) with its lifetime in the absence of the acceptor (\u03c4D).#\u00a0p\u00a0value of the difference between the donor lifetimes in the presence and in the absence of the acceptor (t-test)_\n\nThe identification of a partial SBT5.2 cDNA clone in yeast suggested that the MYB30-SBT5.2(b) interaction is mediated by the C-terminus of SBT5.2(b). In order to confirm this idea, a truncated SBT5.2(b) version containing the C-terminal end of the protein [SBT5.2(b)362-730] fused to the RFP was generated and transiently expressed in N. benthamiana. SBT5.2(b)362-730-RFP presents a nucleocytoplasmic localization and colocalises with MYB30 in the nucleus (Figure 5\u2014figure supplement 2a). A significant reduction of the average GFP lifetime was measured in nuclei coexpressing GFP-MYB30 and SBT5.2(b)362-730-RFP, as compared to nuclei expressing GFP-MYB30 alone (Figure 5\u2014figure supplement 2d; Table 1), confirming that the C-terminus of SBT5.2(b) is sufficient for the interaction with MYB30. The specificity of this observation was highlighted by the lack of interaction between GFP-MYB30 and the equivalent C-terminal domain of the closest Arabidopsis SBT5.2 homolog, SBT5.1, (SBT5.1405-780-RFP) (Figure 5\u2014figure supplement 2b,e; Table 1). Moreover, no significant reduction of the average GFP lifetime was detected between nuclei expressing the unrelated TF MYB123 [whose nuclear localization was not affected in the presence of full length SBT5.2(b) (Figure 5a,b)], when expressed alone or together with SBT5.2(b)362-730-RFP, despite the nuclear co-localization of the two proteins (Figure 5\u2014figure supplement 2c,f; Table 1).\n\nTogether, our data confirms that MYB30 specifically interacts with SBT5.2(b) at vesicle-like structures. This interaction is mediated by SBT5.2(b) C-terminus, does not require an intact SBT5.2(b) catalytic triad and results in MYB30 nuclear exclusion.\n\n### An N-terminal myristoylation site in SBT5.2(b) determines its localization to endosomes and MYB30 nuclear exclusion\n\nWe next sought to determine the nature of the intracellular vesicle-like structures where SBT5.2(b) resides. Given the mobile character and varied sizes of these vesicles, we conducted co-localization experiments with VHA-a1 and SYP61, two markers for the trans-Golgi network/early endosomes (TGN/EE) (Dettmer et al., 2006; Tanaka et al., 2009) and ARA6 and SYP21, two markers for late endosomes/multivesicular bodies (LE/MVB) (Ueda et al., 2004; Uemura et al., 2004). Colocalization with of SBT5.2(b) with these endosomal markers was clearly observed in N. benthamiana leaves (Figure 6a, Figure 6\u2014figure supplement 1). In contrast, no colocalization of SBT5.2(b)-RFP with the Golgi marker GmMan-GFP (Nelson et al., 2007) was detected (Figure 6a).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig6-v2.jpg)\n\n**Figure 6.:** (a,b) Confocal images of epidermal N. benthamiana cells 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 \u00b5m. (a) SBT5.2(b) localizes to endosomal vesicles. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. (b) A free N-terminal myristoylation site in SBT5.2(b) mediates its localization to endosomes and retention of MYB30 in endosomal vesicles. (c) Relative fluorescence values of cytoplasmic MYB30, expressed alone or with the indicated SBT5.2(b) versions, represented as ratios between cytoplasmic and nuclear fluorescence values in individual cells. Mean and SEM values were calculated from two independent experiments in which fifteen fluorescence measurements were taken per experiment and construct combination. Lowercase letters indicate statistically significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Confocal images of epidermal cells of N. benthamiana leaves 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 \u00b5m.\n\nThe nucleocytoplasmic subcellular localization of SBT5.2(b)362-730 suggested that the N-terminal region of SBT5.2(b) is required for its localization to endosomes (Figure 5\u2014figure supplement 2). In order to further test this idea, an N-terminal deletion of SBT5.2(b) was generated [SBT5.2(b)162-730]. RFP-tagged SBT5.2(b)162-730 indeed localized to the cytoplasm (Figure 6b). Furthermore, an N-terminally tagged RFP fusion of SBT5.2(b)\u00a0also presented a cytoplasmic localization (Figure 6b), suggesting that a free SBT5.2(b)N-terminus is necessary for SBT5.2(b)\u00a0endosomal targeting. Close inspection of the SBT5.2(b)N-terminal region uncovered the presence of a putative myristoylation site (MGSASSA; Figure 2\u2014figure supplement 1c). A SBT5.2(b) version in which the putatively myristoylated Gly2 residue was mutated to Ala [SBT5.2(b)G2A] also localized to the cytoplasm (Figure 6b), confirming the importance of N-myristoylation for SBT5.2(b) endosomal targeting. Finally, co-expression of SBT5.2(b)162-730-RFP, RFP-SBT5.2(b) or SBT5.2(b)G2A RFP with GFP-MYB30 did not affect MYB30 nuclear targeting (Figure 6b). Interestingly, MYB30 accumulation in the cytoplasm was enhanced in the presence of these SBT5.2(b) versions, consistent with the presence in the three proteins of an intact SBT5.2 C-terminal domain that mediates the interaction with MYB30 (Figure 6c). An HA-tagged SBT5.2(b)G2A version induced the same effect confirming that the enhanced detection of GFP-MYB30 in the cytoplasm is not an artefact due the presence of a second fluorophore. Together, our data strongly suggest that a free N-terminal myristoylated residue is responsible of SBT5.2(b) targeting to the endosomes and of MYB30 retention in endosomal vesicles.\n\nIn order to further characterize the simultaneous localization of SBT5.2(b) to both early and late endosomes, HA-tagged versions of either SBT5.2(a), SBT5.2(b) or SBT5.2(b)G2A were co-expressed with both GFP-tagged VHA-a1 and RFP-tagged ARA6. When expressed with SBT5.2(a), both subcellular markers conserved their distinct subcellular localization in TGN/EE and LE/MVB, respectively (Figure 7). In contrast, co-expression with SBT5.2(b) led to co-localization of VHA-a1 and ARA6 in the same endosomal compartment, strongly suggesting that SBT5.2(b) is able to interfere with endosomal trafficking. Myristoylation of SBT5.2(b) appears to be essential to this effect, since expression of SBT5.2(b)G2A did not affect the discrete endosomal populations tagged by VHA-a1 or ARA6 (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig7-v2.jpg)\n\n**Figure 7.:** Confocal images of epidermal N. benthamiana cells 36\u2009hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 \u00b5m.\n\n### SBT5.2(b) attenuates MYB30-mediated responses to bacterial infection\n\nTo investigate the function of SBT5.2 in the plant response to bacterial inoculation, we used Arabidopsis sbt5.2 null mutants, sbt5.2\u20131 (SALK_012113) and sbt5.2\u20132 (SALK_132812C), both containing a T-DNA insertion in the last exon of SBT5.2. Despite the severe reduction of SBT5.2 expression in the mutant lines (Figure 8\u2014figure supplement 1), no obvious macroscopic phenotype was observed in these plants. The phenotype of these lines in response to bacterial inoculation was next analysed. Similar to MYB30-overexpressing (MYB30OE), sbt5.2 mutant plants showed stronger HR cell death symptoms after inoculation with Pst AvrRpm1 as compared to Col-0 wild-type plants (Figure 8a). This phenotype was quantified by ion leakage measurements in leaf disk assays. Conductivity values measured in sbt5.2 and MYB30OE plants were significantly higher than those displayed by Col-0 wild type plants after bacterial inoculation (Figure 8b). In agreement with faster HR development, sbt5.2 plants showed increased resistance in response to inoculation with Pst AvrRpm1, as compared to wild-type plants (Figure 8c), confirming the role of SBT5.2 as a negative regulator of plant defence.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig8-v2.jpg)\n\n**Figure 8.:** (a) Symptoms developed by the indicated Arabidopsis lines 60 hpi with Pst AvrRpm1 (2\u00a0\u00d7\u00a0106 cfu/ml). The\u00a0pictures are representative of three independent experiments in which 4 plants of each line were infiltrated. (b) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines in a time course of 24\u00a0hr. Plants were inoculated with Pst AvrRpm1 (5\u00a0\u00d7\u00a0106 cfu/ml). Mean and SEM values were calculated from four independent experiments in which three plants were inoculated (four leaves/plant). (c) Growth of Pst AvrRpm1 in the indicated Arabidopsis lines. Bacterial growth 0 (white bars) and three days (blue bars) was measured after inoculation (5\u00a0\u00d7\u00a0105 cfu/ml). Mean bacterial densities were calculated from 6 independent experiments with 6 individual plants (4 leaves/plant). Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.001) are indicated by letters.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (a) The\u00a0expression of SBT5.2 is strongly repressed in sbt5.2 mutant lines. qRT-PCR analysis of the six members of the clade V of Arabidopsis subtilases in wild-type Col-0 (black bars), sbt5.2\u20131 (gray bars) and sbt5.2\u20132 (white bars) Arabidopsis leaves. Expression values were normalized using SAND family gene as internal standard. Mean and SEM values were calculated from 4 independent replicates. Expression of SBT 5.4 and SBT5.5 was not detected in any line. (b) The\u00a0relative expression of SBT5.2 in Arabidopsis leaves in wild-type Col-0, SBT5.2(a)OE and SBT5.2(b)OE lines was determined by qRT-PCR. The expression values were normalized by using SAND family gene as internal standard, and related to the value of Col-0, which is set at 1. Mean and SEM values were calculated from four individual plants per line. (c) Western blot analysis showing SBT5.2(a)-HA or SBT5.2(b)-HA protein accumulation in Arabidopsis transgenic and Col-0 wild-type plants. Ponceau S staining confirms equal loading. Molecular mass markers in kiloDaltons are indicated on the right.\n\nImportantly, sbt5.2 mutant plants displayed higher expression of MYB30 VLCFA-related target genes FDH and CER2 (Raffaele et al., 2008) as compared to Col-0 wild-type plants 1\u2009hr after inoculation (Figure 9a). Moreover, this phenotype was abolished in the myb30 mutant background (sbt5.2 myb30; Figure 9a) and correlated with loss of increased HR in the sbt5.2 myb30 double mutant (Figure 9b). Together, these data confirm that SBT5.2 negatively regulates Arabidopsis defence through repression of MYB30 transcriptional activity.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig9-v2.jpg)\n\n**Figure 9.:** (a) Expression analysis of the MYB30 target genes FDH and CER2 in the indicated Arabidopsis lines 1\u00a0hr after inoculation with Pst AvrRpm1 (5\u00a0\u00d7\u00a0107 cfu/ml). Expression values of the individual genes were normalized using SAND family as internal standard. Mean and SEM values were calculated from 3 independent experiments (4 replicates/experiment). Statistical significance according to a Student\u2019s t-test (p<0.05) is indicated by letters. (b,c) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines before (black bars) and 24\u2009hr after (gray bars) inoculation with Pst AvrRpm1 (5\u00a0\u00d7\u00a0106 cfu/ml). Mean and SEM values were calculated from four independent experiments (three plants/experiment and four leaves/plant) and related to the value displayed by wild-type Col-0 plants, which is set at 100%. Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.01) are indicated by letters. (d) Representative pictures of accumulation of phenolic compounds (blue coloration indicative of cell death) in the indicated Arabidopsis lines detected by epifluorescence 24\u2009hr after inoculation with Pst AvrRpm1 (2 \u00d7 105 cfu/ml). Bar = 100 \u00b5m. (e)\u00a0Blue pixels in the indicated lines were quantified using Image-Pro Plus and are shown as the percentage of the total number of blue pixels in each image. Boxplots are as follows: box limits, values between first and third quartiles; middle bar, median. Whiskers cover 1.5 times the interquartile distance and circles represent extreme values. Lowercase letters indicate significant differences with respect to the sbt5.5\u20132 line as determined by Bonferroni-corrected p-values (p<0.01) obtained after ANOVA and subsequent LSD post-hoc test.\n\nIn sbt5.2 mutant plants, expression of both SBT5.2(a) and SBT5.2(b) is affected. To obtain additional proof of the negative role specifically played by SBT5.2(b) on MYB30-mediated responses, sbt5.2 mutant plants were transformed with an HA-tagged version of either SBT5.2(a) or SBT5.2(b) under the control of the 35S promoter. Expression of SBT5.2 gene and protein was monitored by qRT-PCR and Western Blot analysis in two independent homozygous T4 lines for each construct (Figure 8\u2014figure supplement 1b,c). Importantly, the increased HR phenotype displayed by the sbt5.2 mutant was specifically suppressed in sbt5.2 plants overexpressing SBT5.2(b), but not SBT5.2(a) (Figure 9c).\n\nIn order to obtain in vivo confirmation of the negative control of defence-related cell death exerted by SBT5.2(b), the above described lines were inoculated with a low dose of HR-inducing Pst AvrRpm1. Enhanced accumulation of phenolic compounds, characteristic of HR cell death, was detected in MYB30OE ans sbt5.2 mutant lines as compared to wild-type Col-0 and this phenotype was suppressed both in sbt5.2 myb30 double mutants and by overexpressing SBT5.2(b), but not SBT5.2(a), in the sbt5.2 mutant background (Figure 9d,e). Overall our data demonstrate that, in agreement with SBT5.2(b)-mediated retention of MYB30 in endosomes, negative regulation of MYB30-mediated defence-related cell death is specifically controlled by SBT5.2(b).\n\n## Discussion\n\nAS is a fundamental process that allows generating a large number of mRNA and protein isoforms from a genome of limited size (Graveley, 2005). Moreover, AS plays crucial functions in eukaryotic cells, as it determines the binding properties, intracellular localisation, enzymatic activity, protein stability and posttranslational modifications of a large number of proteins (Stamm et al., 2005). In humans, the importance of AS is clearly highlighted by the fact that about 15% of genetic hereditary diseases are caused by mutations that affect splicing (Kornblihtt et al., 2013). In plants, AS plays fundamental roles in regulating plant growth, development, and responses to environmental signals (Staiger and Brown, 2013). A genome-wide transcriptomic analysis in Arabidopsis plants inoculated with bacteria uncovered a surprisingly large number of AS events (Howard et al., 2013). Although we are still far from understanding the functional implications of this transcriptome complexity, the function of numerous plant resistance genes, encoding immune receptors, appears to be regulated by AS (Yang et al., 2014; Gassmann, 2008). To our knowledge, our work represents the first described example of AS affecting the function of a protein of the subtilase family. AS of SBT5.2 results in the production of the atypical subtilase SBT5.2(b), uncovering a novel mode of regulation of defence reactions and contributing to further our understanding of the varied roles of AS in the control of plant immunity.\n\nFollowing bacterial inoculation, the respective induction and repression of SBT5.2(b) and SBT5.2(a) expression suggests a functional role for SBT5.2(b) during defence regulation. This idea is reinforced by the observed co-regulation of SBT5.2(b) and MYB30 expression after bacterial treatment. Despite their pervasiveness, our current understanding of the functions of plants subtilases is still limited. Different studies suggest a role in both general protein turnover and regulation of plant development or responses to environmental cues (Schaller et al., 2012; Figueiredo et al., 2014). The first example of a plant subtilase potentially acting during plant-pathogen interactions was reported in tomato, where the\u00a0expression of the subtilases P69B and P69C was induced by pathogen infection and treatment with salycilic acid (Jord\u00e1 et al., 1999; Tornero et al., 1997). More recently, the Arabidopsis subtilase SBT3.3 was found to be involved in the regulation of immune signalling through chromatin remodelling of defence-related genes associated with the activation of immune priming (Ram\u00edrez et al., 2013).\n\nPlant subtilases are usually synthesized in the form of preproprotein precursors, translocated via an N-terminal ER-targeting SP into the endomembrane system (Schaller et al., 2012). In addition, using mass spectrometry (Cedzich et al., 2009) and structural analyses (Murayama et al., 2012), plant subtilases were shown to be glycosylated in the secretory pathway and to accumulate extracellularly (Schaller et al., 2012). In agreement with the preproprotein structure, the maturation of the active enzyme from its inactive precursor requires at least two processing steps. After cleavage of the SP, subtilases are ultimately activated by cleavage of the PD producing the mature active enzyme (Taylor et al., 1997). Processing of the PD, an auto-inhibitor domain of plant subtilases (Nakagawa et al., 2010; Meyer et al., 2016), is an intramolecular autocatalytic reaction that occurs late in the ER or in the early Golgi (Cedzich et al., 2009). Here, we show that AS of the SBT5.2 gene has important implications for the subcellular localization and activity of the resulting isoforms, despite the nearly total conservation between the two protein sequences. Consistent with harbouring all canonical features of a subtilase, we confirmed that SBT5.2(a) enters the secretory pathway, where it is glycosylated, and is secreted to the extracellular space as shown before (Engineer et al., 2014; Kaschani et al., 2012). SBT5.2 was previously described as a negative regulator of stomatal density under high CO2 conditions through cleavage of the extracellular pro-peptide ligand EPF2 in the apoplast (Engineer et al., 2014). In contrast, in agreement with its lacking a SP and the first five amino acids of the PD, SBT5.2(b) does not enter the secretory pathway, its PD is thus not cleaved and may fold onto SBT5.2(b) catalytic domain inhibiting its protease activity. Indeed, despite the presence of PGSs and catalytic residues, we were unable to detect SBT5.2(b) glycosylation or protease activity. We also showed that MYB30 accumulation in planta is not affected by SBT5.2(a) or SB5.2(b), indicating that these proteins do not proteolytically cleave the TF. In the case of catalytically active SBT5.2(a), this can be explained by the lack of co-localization of both proteins. Despite their subcellular co-localization and physical interaction, lack of modification of MYB30 accumulation in the presence of SBT5.2(b) is consistent with SBT5.2(b) being inactive as a protease, as underlined by the finding that both wild-type SBT5.2(b) and catalytic mutant SBT5.2(b)H171A are able to interact with and retain MYB30 at endosomal vesicles. These results suggest an alternative mode of action of SBT5.2(b) on MYB30 activity, likely related to SBT5.2(b)-mediated MYB30 nuclear exclusion. Examples of proteases playing proteolysis-independent functions have been described in mammals. The proprotein convertase subtilisin/kexin type 9 (PCSK9) plays a major regulatory role in cholesterol homeostasis but does not require its catalytic activity to induce degradation of low-density lipoproteins (LDLs) (McNutt et al., 2007). In addition, \u03b3-secretase, an aspartyl protease that performs the final proteolytic cleavage step in the processing cascade of the \u03b2-amyloid precursor protein (\u03b2APP) (Vassar et al., 1999), displays proteolysis-independent functions during the regulation of \u03b2APP maturation and trafficking (Wrigley et al., 2005).\n\nSBT5.2(b) localises to both early and late endosomal compartments and this requires N-terminal myristoylation of the protein. Since co-expression of SBT5.2(b), but not SBT5.2(a), with both early and late endosome markers leads to colocalisation of both markers, it is tempting to speculate that SBT5.2(b) is able to interfere with endosomal trafficking leading to the formation of hybrid endosomes. In mammals, expression of constitutively active Rab5 blocks the conversion of early to late endosomes, giving rise to hybrid endosomal compartments and deregulation of autophagy (Rink et al., 2005). Similarly, overexpression of Arabidopsis sorting nexin SNX2b leads to the formation of large SNX2-containing endosome aggregations, which inhibits vesicle trafficking (Phan et al., 2008).\n\nSBT5.2(b)-mediated regulation of MYB30 activity supports the emerging idea that endosomal trafficking pathways are not only central regulators of plasma membrane protein homeostasis but also control multiple signalling pathways, including those involved in plant disease resistance (Reyes et al., 2011). Enhanced susceptibility of plants impaired in regulators of endosome trafficking emphasizes the importance of endocytic processes in establishing defence (Lu et al., 2012). In addition, plasma membrane receptors that sense apoplastic microbes are immune-related cargos of plant trafficking pathways (Beck et al., 2012; Ben Khaled et al., 2015), and a number of intracellular immune receptors have been shown to constitutively localize to endomembranes (Takemoto et al., 2012; Engelhardt et al., 2012), further underlining the prominent role of endomembrane systems in determining plant resistance. Although the role of endosomes in implementing defence signalling is not yet well understood, they have been proposed as central subcellular sites for orchestration of the HR. Indeed, relocalisation of the potato resistance protein R3a from the cytoplasm to endosomal compartments is required to trigger the HR (Engelhardt et al., 2012). The importance of these compartments during immunity is further underlined by the fact that both plant and animal pathogens produce inhibitory effector proteins that specifically target endomembrane trafficking. For example, the Arabidopsis ADP ribosylation factor (ARF)-Guanine exchange factor (GEF) MIN7 is targeted and degraded by the bacterial effector HopM1 altering secretory trafficking (Nomura et al., 2006, 2011). In mammalian cells, the effector PipB2 from the bacterial pathogen Salmonella enterica causes a specific redistribution of late endosomes/lysosomes (LE/Lys) compartments to the cell periphery promoting formation of Salmonella-induced filaments (Sifs) (Knodler and Steele-Mortimer, 2005).\n\nOur finding that SBT5.2(b) mediates MYB30 nuclear exclusion resulting in attenuation of MYB30 gene expression and HR, is in agreement with several reports describing controlled nuclear localisation as an efficient mechanism to regulate TF activity in eukaryotic cells. Subcellular compartmentalization of the E2F TF family, either in the nucleus or in the cytoplasm, is used to control cell cycle in differentiated skeletal cells (Gill and Hamel, 2000). p53, a tightly regulated animal TF that acts as a hub for numerous signalling pathways including apoptosis, shifts from the nucleus to the cytoplasm in the presence of HDM2, where it has important roles that are independent of its transcriptional activity (Boyd et al., 2000; Green and Kroemer, 2009). Similarly, alternative functions for MYB30 in endosomal vesicles, other than HR regulation, cannot be excluded at this stage. In addition, nuclear import of 'dormant' TFs plays important roles in the regulation of gene expression. Upon exposure to environmental stresses, several membrane-bound TFs have been shown to be proteolytically activated by either ubiquitin-mediated proteasome activities or by specific membrane-bound proteases (Hoppe et al., 2001), which may facilitate triggering quick transcriptional responses to ensure plant survival under stressful conditions (Kim et al., 2006; Seo et al., 2010). Notably, subtilases are known to be involved in the release of 'dormant' membrane-bound TFs. Arabidopsis SBT6.1 is able to cleave the ER-located TF bZIP17 that, once released, moves to the nucleus to activate transcription in response to salt stress (Liu et al., 2007). Finally, nuclear exclusion by localization to small vesicle-like structures has been reported as a negative regulatory mechanism of TF activity. Indeed, the small interference protein MIF1, promotes nuclear exclusion of the TF ZHD5 that regulates flower architecture and leaf development. As a result, ZHD5 is relocalised into cytoplasmic vesicle-like structures, which interferes with is transcriptional activity (Hong et al., 2011).\n\nDuring the last few years, different regulatory mechanisms of MYB30-mediated HR have been uncovered (Raffaele and Rivas, 2013), including spatio-temporal control of MYB30 activity through the action of the secreted phospholipase AtsPLA2-\u03b1 (that specifically relocalises to the nucleus in the presence of MYB30 [Froidure et al., 2010]) and the RING-type E3 ligase MIEL1 (that ubiquitinates MYB30 and leads to its proteasomal degradation [Marino et al., 2013]). SBT5.2(b)-mediated nuclear exclusion of MYB30 represents an additional regulatory mode of the activity of this TF, underlining the complexity of the regulatory modes of defence-related plant cell death responses. This intricate regulation of MYB30 is reminiscent of the tight control exerted on animal TFs such as p53 that is also multi-regulated through varied modes including protein-protein interactions, ubiquitination and, notably, nuclear exclusion. This sophisticated fine-tuning, which provides an efficient means to regulate fundamental cellular processes, appears as a general feature underlying the transcriptional control in eukaryotic cells.\n\n## Materials and methods\n\n### Cloning procedures\n\nPlasmids used in this study were constructed by Gateway technology (GW; Invitrogen, Waltham, MA, USA) following the instructions of the manufacturer. PCR products flanked by the attB sites were recombined into the pDONR207 vector (Invitrogen) via a BP reaction to create the corresponding entry clones with attL sites. Inserts cloned into the entry clones were subsequently recombined into the destination vectors via an LR reaction to create the expression constructs.\n\nA\u00a0fusion of fluorescent proteins to MYB30, SBT5.2(b), SBT5.2(b)G2A, VHA-a1, SYP61, ARA6 and SYP21 was accomplished using a multisite GATEWAY cloning strategy (Invitrogen) described previously (Serrano et al., 2014). Briefly, the full-length open reading frames of the indicated proteins were amplified from a plasmid template and cloned into the donor vector pBSDONR P1-P4 or the pBSDONR P4r-P2 by BP reaction (ampicillin-resistant vectors derived from pDONR221 from Invitrogen) (Gu and Innes, 2011). eGFP (Cormack et al., 1996) and RFP (Campbell et al., 2002) were cloned into pBSDONR P1-P4 for N-terminal fusion and into pBSDONR P4r-P2 for C-terminal fusion. To fuse SBT5.2(a), SBT5.2(b), SBT5.2(b)162-730,SBT5.2(b)G2A, VHA-a1, SYP61, ARA6 and SYP21 with the epitope tags, the P1-P4 clones were mixed with corresponding P4r-P2 and the desired destination vectors and recombined using Gateway LR Clonase II (Invitrogen). All the above pBSDONR constructs were recombined with the destination vector pEarleyGate100 (Earley et al., 2006) with the exception of SBT5.2(a) and SBT5.2(b), for which the corresponding pBSDONR constructs were recombined with the steroid-inducible destination vector pBAV154 (Vinatzer et al., 2006).\n\nFor yeast assays, the\u00a0GAL4-BD-MYB30\u0394AD fusion was previously described (Froidure et al., 2010). AD-SBT5.2(b)628-730 construct was generated from recombination of the corresponding entry constructs with the pGAD-AD-GW vector (Froidure et al., 2010).\n\nPoint mutations were generated using the QuickChange mutagenesis kit (Stratagene, Santa Clara, CA,\u00a0USA) using the pENTR-SBT5.2 as a\u00a0template and following the manufacturer\u2019s instructions. Primers used for mutagenesis are shown in Supplementary file 1.\n\n### Yeast assays\n\nThe yeast two-hybrid screen and methods used for identification of SBT5.2 were previously described (Froidure et al., 2010). Briefly, an Arabidopsis thaliana Gal4 yeast two-hybrid cDNA prey library (MatchMaker; Clontech) was generated from mRNA isolated from leaves of four-week-old plants (Ws-4 ecotype) syringe-infiltrated with the Xanthomonas campestris pv. campestris 147 strain. An MYB30 version deleted from its C-terminal activation domain (amino acids 1 to 234) was used as bait for screening 2 \u00d7 106 independent transformants exhibiting His auxotrophy on selective plates.\n\n### 5\u2019 RACE assays\n\n5\u2019 ends of SBT5.2 mRNA were determined using the GeneRacerTM RACE Ready kit (Invitrogen, France) according to manufacturers\u2019 instructions, using RNA from Col-0 leaves and gene specific primers indicated in Supplementary file 1. PCR products were cloned in pGEM-T Easy vector (Promega Corporation, Fitchburg, WI, USA) and sequenced.\n\n### Plant and bacterial materials\n\nArabidopsis lines used in this study were in the Columbia background and grown in Jiffy pots under controlled conditions in a growth chamber at 21\u00b0C, with a 9-hr light period and a light intensity of 190 \u00b5mol.m\u22122.s\u22121. The MYB30ko line (SALK_122884) was reported before (Marino et al., 2013).\n\nFor transient expression of proteins in N. benthamiana, overnight bacterial cultures of Agrobacterium tumefaciens strain C58C1 or GV3101 carrying the vector of interest were harvested by centrifugation. Cells were resuspended in induction buffer (10\u2009mM MgCl2, 10\u2009mM MES, pH 5.6, and 150 \u00b5M acetosyringone) to an OD600 of 0.5. After 2\u2009hr at 22\u00b0C, cells were infiltrated into leaves of four-week-old N. benthamiana plants. Two days after A. tumefaciens infiltration, leaf discs used for experiments were harvested and processed, or frozen immediately in liquid nitrogen and stored at \u201380\u00b0C. For tunicamycin treatment, 24\u2009hr after Agrobacterium-mediated transient expression, leaf discs of N. benthamiana leaves were incubated in a solution of 10 \u00b5M tunicamycin for 20\u2009hr at room temperature and later frozen in liquid nitrogen before processing.\n\nWhen testing the effect of SBT5.2 proteins on MYB30 accumulation, to minimize differences in protein expression, which are inherent to transient assays, MYB30 was co-expressed with SBT5.2(a), or SBT5.2(b), and the respective catalytic mutant side by side in the same N. benthamiana leaf. To avoid ex planta protein degradation, the\u00a0leaves were pre-treated with the protease inhibitor PMSF (1\u2009mM) 30 min before harvesting the tissue for protein extraction.\n\nArabidopsis four-week-old plants were kept at high humidity 12\u2009hr before inoculation and injected with a bacterial suspension of Pst AvrRpm1 at the indicated bacterial densities using a blunt syringe on the abaxial side of the leaves. For determination of in planta bacterial growth, the\u00a0leaf samples were harvested 0 and three days after inoculation and ground on sterile water. A predetermined dilution for each sample was plated on King\u2019s B medium and incubated at 28\u00b0C for two days. The\u00a0data were submitted to a statistical analysis using Statgraphics Centurion XV.II Professional Software (Statpoint Technologies Inc., Warrenton, VA, USA). Normality of residues was verified by the Kolmogorov-Smirmov test. The effect of the genotype was tested by Multiple Factor ANOVA.\n\n### Fluorescence microscopy, FRET-FLIM and data analysis\n\nGFP and RFP fluorescence was analyzed with a confocal laser scanning microscope (TCS SP2-AOBS; Leica) using a x63 water immersion objective lens (numerical aperture 1.20; PL APO). GFP fluorescence was excited with the 488 nm ray line of the argon laser and recorded in one of the confocal channels in the 505 to 530 nm emission range. RFP fluorescence was excited with the 561 nm line ray of the He-Ne laser and detected in the range between 595 and 620 nm. Images were acquired in the sequential mode using Leica LCS software (version 2.61).\n\nIn order to quantify the fluorescence of MYB30 in the nucleus and cytoplasm, fluorescence intensity was measured using Leica LCS software (version 2.61). Region of interest (ROIs) were defined for each photograph and the mean value was taken as a fluorescence measure. Five fluorescence measures were obtained from 6 photographs taken from two independent experiments (n\u00a0=\u00a030).\n\nThe\u00a0fluorescence lifetime of the donor was experimentally measured in the presence and absence of the acceptor. The\u00a0FRET efficiency (E) was calculated by comparing the lifetime of the donor in the presence (tDA) or absence (tD) of the acceptor: E\u00a0=\u00a01-(tDA)/(tD). Statistical comparisons between control (donor) and assay (donor + acceptor) lifetime values were performed by Student t test. FRET-FLIM measurements were performed using a FLIM system coupled to a streak camera (Krishnan et al., 2003). The light source (l = 850 nm) was a pulsed pulsed femtosecond IR laser (Spectra-Physics, USA). All images were acquired with a 60x oil immersion lens (Plan Apo 1.4 numerical aperture, IR) mounted on an inverted microscope (Eclipse TE2000E, Nikon, Japan) coupled to the FLIM system. The fluorescence emission was directed back out into the detection unit through a band pass filter. The detector was composed of a streak camera (Streakscope C4334, Hamamatsu Photonics, Japan) coupled with a fast and high sensitivity CCD camera (model C8800-53C, Hamamatsu). For each region of interest (vesicle and nucleus), average fluorescence decay profiles were plotted and lifetimes were estimated by fitting data with exponential function using a non-linear least-squares estimation procedure.\n\n### Deglycosylation experiments\n\nProteins were extracted in 50\u2009mM Tris-HCl, pH 7.5, 150\u2009mM NaCl, 10% [v/v] glycerol, 1\u2009mM PMSF, and 1% plant protease inhibitor cocktail (Sigma-Aldrich, St Louis, MO, USA) and centrifuged at 14,000g for 10\u2009min at 4\u00b0C. Proteins in the supernatant were denatured and then incubated with PNGase F or Endo H (New England Biolabs, Ipswich, MA, USA) following the instructions of the manufacturer. Deglycosylation reactions were performed for 30 min and stopped by adding SDS-PAGE loading buffer and boiling. Proteins were detected by Western blot using anti-HA antibodies as described below.\n\n### Concanavalin A purification\n\nProteins were extracted in 50\u2009mM Tris-HCl, pH 7.5, 150\u2009mM NaCl, 10% [v/v] glycerol, 1\u2009mM PMSF, and 1% plant protease inhibitor cocktail (Sigma-Aldrich) and centrifuged at 14,000\u00a0g for 10\u2009min at 4\u00b0C. The supernatant was equilibrated in concanavalin A buffer (0.2\u2009M Tris-HCl pH 7.5, 1\u2009M NaCl, 200\u2009mM MgCl2, 200\u2009mM CaCl2) and applied to concanavalin A-agarose resin from Canavalia ensiformis (Sigma-Aldrich) pre-equilibrated in concanavalin A buffer. After three steps of washing with concanavalin A buffer, glycosylated proteins were eluted in concanavalin A buffer supplemented with 0.75\u2009M \u03b1-D-methyl-glucoside and 0.75\u2009M \u03b1-D-methylmannoside. The presence of HA-tagged SBT5.2 in the eluted proteins was confirmed by Western blot using anti HA antibodies as described below.\n\n### Isolation of intercellular (apoplastic) fluid\n\nN. benthamiana leaves transiently expressing the proteins of interest were harvested 48\u2009hr after agroinfiltration and infiltrated with water. Intercellular fluids (IF) were isolated by centrifugation at 3000\u00a0g as previously described (de Wit and Spikman, 1982).\n\n### Gel blot analysis\n\nAntibodies used for Western blotting were anti-HA-HRP (3F10, Roche, Germany, 1:5000), and PAP anti-rabbit-HRP (Sigma, 1:10,000). Proteins were visualized using the Immobilon kit (Millipore, Billerica, MA, USA) under standard conditions.\n\n### Transient transfection of Arabidopsis protoplasts\n\nThe isolation and transient transfection of leaf mesophyll cell protoplasts from Arabidopsis plants (four weeks-old) was performed at room temperature following published procedures (Yoo et al., 2007). A total of 10\u2009\u03bcg plasmid DNA was used for each transfection experiment and plasmids were mixed in an equal ratio for cotransfections.\n\n### Fluorescein isothiocyanate(FITC)-labeled casein assay for proteolytic activity\n\nFITC casein was used for the\u00a0detection of proteolytic activity (Twining, 1984). sbt5.2 Arabidopsis protoplasts transfected with SBT5.2(a), SBT5.2(a)H210A, SBT5.2(b), SBT5.2(b)H171A or empty vector were lysed and used for the activity assay. A concentration of 400 \u00b5g/ml of FITC casein was used in a final volume of 25 \u00b5l of 150\u2009mM NaCl, 20\u2009mM phosphate buffer pH 7.6. Samples were incubated for 1\u00a0hr at 25\u00b0C and fluorescence was measured at excitation 485 nm and emission 520 nm using a microtiter fluorimeter (FL600, Bio-Tek, Highland Park, VT, USA).\n\n### Quantification of cell death\n\nFor electrolyte leakage measurement, four leaf discs (6-mm diameter) were harvested at the indicated timepoints after plant inoculation, washed, and incubated at room temperature in 5\u2009ml of distilled water before measuring conductivity. The\u00a0production of phenolic compounds was monitored under UV light using a Zeiss Axioplan microscope 24\u2009hr after inoculation.\n\n### RNA extraction and Q-RT-PCR analysis\n\nMaterial for RNA analysis was grounded in liquid nitrogen and total RNA was isolated using the Nucleospin RNA plant kit (Macherey-Nagel, Germany) according to the manufacturer\u2019s recommendations. Reverse transcription was performed using 1.5 \u00b5g of total RNA. Real-time quantitative PCR was performed on a Light Cycler 480 II machine (Roche Diagnostics, France), using Roche reagents. Primers used for Q-RT-PCR are provided as Supporting Information. Relative expression was calculated as the \u2206Cp between each gene and the internal controls SAND family (At2g28390). Average \u2206Cp was related to the value of each gene in each line at time 0.\n",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "29e68a1c-7463-45fb-8b84-09213b14d8d2",
+      "submission_id": "9e32a09b-c425-47f4-a35e-9bbf58abe6b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary Stacey, University of Missouri , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19755.020](https://doi.org/10.7554/eLife.19755.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A non canonical subtilase attenuates the transcriptional activation of defence responses in Arabidopsis thaliana\" for consideration by eLife. Your article has been favorably evaluated by Detlef Weigel as the Senior Editor and three reviewers: Andreas Schaller (Reviewer #2), Marty Dickman (Reviewer #3), and a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nRivas and coworkers show that the subtilisin-like protease SBT5.2 is a negative regulator of defense in Arabidopsis and that it acts through repression of MYB30 transcriptional activity. They further show that there are two splice variants, SBT5.2(a) which represents the canonical secreted subtilase, and SBT5.2(b) which lacks a signal peptide and thus fails to be secreted. SBT5.2(b) is targeted to enodosomes by N-terminal myristoylation. It interacts with MYB30 via its C-terminal domain, sequestering the transcription factor in the cytosol thus preventing nuclear localization and activation of defense. These findings are novel and highly relevant. They provide important insight into the function of subtilases and reveal a novel mechanism of transcriptional regulation.\n\nSummary:\n\nThis is a thorough and comprehensive study. The paper is well written and the work is rigorously performed. Most of the conclusions are supported by multiple lines of evidence. Experiments are generally well-controlled and data appear solid.\n\nEssential revisions:\n\nNote that the reviewers did not find major flaws with the paper but did raise a number of more minor comments that the authors will need to address. These are listed below.\n\nPlease clarify the following, which the reviewers found either confusing or misleading:\n\n1) The prodomain serves as an intramolecular inhibitor and keeps SBTs inactive until it is cleaved and released from the enzyme. Because SBT5.2(b) still has its prodomain, I would expect it to be inactive. This should be clarified in the text in case not all readers are specialists in this area.\n\n2) There was a general concern about studies of protein activity based strictly on crude extracts that might, for example, contain inhibitors that could modulate activity, separate from that intrinsic to a purified protein. The authors need to address this concern and, at least, provide some caveats for their claims based on these experiments.\n\n3) Continuing with this concern, with respect to the suitability of the activity assay, the reviews raised concerns about the use of crude extracts on a universal protease substrate, resulting in high background activity. There is an increase of only 10% in protoplasts expressing SBT5.2(a). There were doubts about whether this assay is really suitable for extracellular proteins. Secreted proteins would likely be diluted in the medium and lost when lysed protoplasts are used for the activity assay.\n\n4) Is expression of SBT5.2(b) upregulated in the myb30 mutant background? The authors seem to imply that this gene is under MYB30 control.\n\n5) The authors need to confirm that their prediction of higher MYB30 levels in the sbt5.2 mutant plants is indeed occurring.\n\n6) It is known that only the processed form of SBTs is secreted, the precursor is not. Therefore, only the processed form is expected to be present in intercellular fluids (IF). However, in Figure 1F the SBT5.2(a) precursor is clearly detected in IF, and the ratio of band intensities for precursor and mature SBT5.2(a) appears to be the same in TE and in IF. This would argue for contamination with intracellular proteins.\n\n7) In Figure 2A, deglycosylation resulted in a mobility shift for both, the precursor and the mature protease. This observation raises doubts whether SBT5.2(a) is actually secreted, because during passage through the secretory pathway, the cleavable high-mannose precursors of N-linked glycans are modified. Plant-specific modifications include \u03b1(1,3)-fucosylation and \u03b2 1,2-xylosylation of the glycan core which renders them resistant to cleavage by EndoH and PNGase F (ref 1). Therefore, deglycosylation and the resulting mobility shift are only expected for the precursor that did pass through the Golgi yet. The mature protease, if secreted, would be expected to be EndoH and PNGase F resistant.\n\n8) As an easy experiment to confirm secretion of the protease would suggest to include plasmolysis treatment in the transient expression experiment shown in Figure 1E.\n",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1dec653e-f2bf-43e0-a145-c81b2f7e5dfa",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C1",
+      "claim": "SBT5.2 is a serine protease of the subtilase family that was identified as a MYB30-interacting partner in a yeast two-hybrid screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to search for components involved in MYB30-mediated signalling, a Y2H screen was previously conducted using a MYB30 version deleted from its transcriptional activation domain (MYB30\u0394AD) (Froidure et al., 2010) as bait. A cDNA clone encoding the last 103 amino acids of the Arabidopsis serine protease of the subtilisin group SBT5.2 (At1g20160) was identified in this screen (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the description of the Y2H screen methodology and the identification of SBT5.2 as an interacting partner, with reference to Figure 1 showing the interaction results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "401550ed-3967-48d0-8896-0567901cccfb",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C2",
+      "claim": "SBT5.2 belongs to subgroup V within the classification of the Arabidopsis subtilase family.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2 belongs to subgroup V (6 members) within the classification of the Arabidopsis subtilase family (Schaller et al., 2012; Rautengarten et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text with citations to previous classification studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b8e03de4-ddb9-4123-bb83-1c9866345dbc",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C3",
+      "claim": "The SBT5.2 gene produces two distinct transcripts through alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Two gene models are annotated in the TAIR database (http://www.arabidopsis.org) for At1g20160, suggesting that the corresponding transcript is alternatively spliced (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by database annotation and confirmed by Figure 2a showing the genomic structure of the two splice variants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "cd365510-2f7b-4a56-a0de-9ac74b8bb605",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C4",
+      "claim": "The first intron is specifically spliced in the SBT5.2(b) cDNA but retained in SBT5.2(a).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the two SBT5.2 cDNA clones [designated SBT5.2(a) and SBT5.2(b)] with the genomic sequence revealed that the first intron is specifically spliced in the SBT5.2(b) cDNA (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence comparison data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ec3e8b40-07da-461c-847a-6c2bca52c127",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C5",
+      "claim": "Both SBT5.2 splice variants exist in planta as confirmed by RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Reverse transcription PCR (RT-PCR) using specific cDNA primers confirmed the existence of both splice variants in planta (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-PCR experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "3ed11d48-59dd-4aa4-913b-c6d895d3b512",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C6",
+      "claim": "Expression of SBT5.2(a) is downregulated after bacterial inoculation with Pst AvrRpm1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2c, expression of SBT5.2(a) was downregulated after treatment with bacteria, whereas expression of SBT5.2(b) was induced and displayed an expression profile highly similar to that of MYB30 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2c following bacterial inoculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b1c9d8a9-f000-4b6b-9a99-477230e8ec53",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C7",
+      "claim": "Expression of SBT5.2(b) is induced after bacterial inoculation with Pst AvrRpm1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2c, expression of SBT5.2(a) was downregulated after treatment with bacteria, whereas expression of SBT5.2(b) was induced and displayed an expression profile highly similar to that of MYB30 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2c following bacterial inoculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "eb77de31-58b0-4961-ae22-dc9fde0f8a67",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C8",
+      "claim": "SBT5.2(b) expression profile is highly similar to that of MYB30 after bacterial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2c, expression of SBT5.2(a) was downregulated after treatment with bacteria, whereas expression of SBT5.2(b) was induced and displayed an expression profile highly similar to that of MYB30 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative gene expression data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a220706e-1867-4d78-833b-1338ad3b285d",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C9",
+      "claim": "SBT5.2(a) corresponds to a transcript of 2402 bp encoding a 769 amino acid preproenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(a) corresponds to a transcript of 2402 bp, which is predicted to encode a 769 amino acid preproenzyme containing a signal peptide (SP) followed a by prodomain (PD), which acts as an intramolecular inhibitor, and a mature polypeptide (Figure 2d; Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 2d and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "f2aa3534-25aa-429a-b29f-03c38686a4fd",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C10",
+      "claim": "SBT5.2(a) contains a signal peptide followed by a prodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(a) corresponds to a transcript of 2402 bp, which is predicted to encode a 769 amino acid preproenzyme containing a signal peptide (SP) followed a by prodomain (PD), which acts as an intramolecular inhibitor, and a mature polypeptide (Figure 2d; Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by protein structure prediction shown in Figure 2d and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "1cb4424c-2013-4c9d-ac5a-7f0cf6abb152",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C11",
+      "claim": "SBT5.2(b) corresponds to a transcript of 2373 bp encoding a protein of 730 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SBT5.2(b) corresponds to a transcript of 2373 bp, predicted to encode a protein of 730 amino acids with no SP and lacking the first five amino acids of the PD (Figure 2d; Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 2d and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "bcb9eec3-4771-4de2-9951-a4b8cbb33b4f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C12",
+      "claim": "SBT5.2(b) lacks a signal peptide and the first five amino acids of the prodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SBT5.2(b) corresponds to a transcript of 2373 bp, predicted to encode a protein of 730 amino acids with no SP and lacking the first five amino acids of the PD (Figure 2d; Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by protein structure analysis shown in Figure 2d and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "763eb381-0044-40fa-9bf3-8bf17dfd380a",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C13",
+      "claim": "Both SBT5.2 proteins contain a catalytic triad with three conserved amino acids (D145, H210 and S546 in SBT5.2(a), and D106, H171 and S507 in SBT5.2(b)).",
+      "claim_type": "EXPLICIT",
+      "source": "Except for their N-terminal differences, the two corresponding encoded proteins are predicted to be identical and contain a catalytic triad with three amino acids (D145, H210 and S546 in SBT5.2(a), and D106, H171 and S507 in SBT5.2(b)) conserved within serine proteases (Figure 2d; Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis showing conserved catalytic residues in Figure 2d and Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "0499a1d4-1240-4d8c-a45e-96023719d9e9",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C14",
+      "claim": "SBT5.2(a) is located in apoplastic spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, SBT5.2(a) was found to be located in apoplastic spaces whereas SBT5.2(b) was detected at vesicle-like structures inside cells (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "47369652-0118-4fd4-94f2-9768d7deb29c",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C15",
+      "claim": "SBT5.2(b) is detected at vesicle-like structures inside cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, SBT5.2(a) was found to be located in apoplastic spaces whereas SBT5.2(b) was detected at vesicle-like structures inside cells (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "fb93b114-e29c-4e33-8836-3a2a105b39a4",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C16",
+      "claim": "SBT5.2(a) is secreted to the intercellular fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(a) was detected in the IF as two protein bands that may correspond to the processed and unprocessed forms of the protease, whereas SBT5.2(b) was exclusively detected in the TE and never in the IF fraction (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by biochemical fractionation data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "37c2b6e4-29de-4bcf-97a7-5cac7d98fc2c",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C17",
+      "claim": "SBT5.2(b) is exclusively intracellular and not secreted.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(a) was detected in the IF as two protein bands that may correspond to the processed and unprocessed forms of the protease, whereas SBT5.2(b) was exclusively detected in the TE and never in the IF fraction (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by biochemical fractionation data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a60e3535-f4f4-45ee-91ed-1482ca354865",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C18",
+      "claim": "Secretion of SBT5.2(a) was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, secretion of SBT5.2(a) was previously reported (Engineer et al., 2014; Kaschani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "291d2451-73a4-4157-bc89-1a694ae582ae",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C19",
+      "claim": "Seven putative N-linked glycosylation sites are present in SBT5.2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven putative N-linked glycosylation sites (PGSs; N in NxS/T motifs) are present in SBT5.2 proteins [N225, N363, N467, N525, N636, N650 and N678 in SBT5.2(a)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis identifying N-glycosylation motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "fc064b3f-e116-482b-a629-33ff0b03e9a1",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C20",
+      "claim": "SBT5.2(a) is N-glycosylated in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the increased electrophoretic mobility of SBT5.2(a) in protein extracts from N. benthamiana leaves expressing HA-tagged SBT5.2(a) and treated with tunicamycin, an inhibitor of N-linked glycosylation of newly synthesized glycoproteins in the ER (Bassik and Kampmann, 2011), further confirmed SBT5.2(a) N-glycosylation in planta (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tunicamycin treatment experiments shown in Figure 3c, as well as PNGase F/EndoH treatment and concanavalin A binding assays.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "d1086a6b-3689-400b-a07c-c09ce6365267",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C21",
+      "claim": "All seven putative glycosylation sites in SBT5.2(a) are used in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a small but significant mobility shift for all SBT5.2(a) PGS mutants (Figure 3d), suggesting that all PGS in SBT5.2(a) are used in planta.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis and electrophoretic mobility analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "2ecd7965-a775-4bfe-8f37-1edb2c9a3b66",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C22",
+      "claim": "SBT5.2(b) is not N-glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that SBT5.2(b) contains the seven PGSs present in SBT5.2(a), (i) SBT5.2(b) electrophoretic mobility was not modified after treatment with PNGase F or EndoH (Figure 3a); (ii) neither SBT5.2(b) binding to nor elution from a concanavalin A resin was observed (Figure 3b); and (iii) no effect of tunicamycin leaf treatment on the SBT5.2(b) electrophoresis profile was detected (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by multiple biochemical assays shown in Figures 3a, 3b, and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a920acbf-42f2-4a8b-af98-3fbf13461fa8",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C23",
+      "claim": "SBT5.2(b) does not enter the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, which are consistent with the absence of SP in SBT5.2(b) and our previous observation that SBT5.2(b) is not secreted, strongly suggest that SBT5.2(b) does not enter the secretory pathway and is therefore not N-glycosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the lack of glycosylation and secretion data, combined with the absence of a signal peptide.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "f607b6a1-0e72-48ee-aa2d-511cf2c1d68f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C24",
+      "claim": "SBT5.2(a) is able to auto-process in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that SBT5.2(a) is able to auto-process in planta and is thus active as a protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that mutation of the catalytic histidine prevents processing, shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "dc2bde38-6712-4ad3-b93f-b53d9f27f4b1",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C25",
+      "claim": "SBT5.2(b) does not self-process in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "Following transient expression in N. benthamiana, mutation of the catalytic histidine residue did not affect migration of SBT5.2(b) as compared to the wild-type protein, suggesting that this protein does not self-process in planta (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ae163324-0364-459e-a54c-9e38fe02bd2b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C26",
+      "claim": "SBT5.2(a) displays protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased fluorescence was observed for SBT5.2(a), reflecting proteolytic cleavage of the FITC-casein substrate (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorimetric protease activity assay data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "7b810a8b-711d-4b9e-aa32-24f552a2f947",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C27",
+      "claim": "SBT5.2(b) does not display protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fluorescence intensity in the case of SBT5.2(a)H210A, SBT5.2(b) and SBT5.2(b)H171A was indistinguishable from that of protoplasts transformed with an empty vector (Figure 4b), although their protein expression levels were comparable to those of SBT5.2(a) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorimetric protease activity assay data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "8a0ec845-f39c-44dc-a8f9-e2fe3ca31528",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C28",
+      "claim": "Neither SBT5.2(a) nor SBT5.2(b) proteolytically cleave MYB30.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4c, MYB30 accumulation was consistently unaltered in the presence of SBT5.2(a) or SBT5.2(b) as compared to the expression observed in the presence of the respective subtilase catalytic mutant versions. These results suggest that neither SBT5.2(a) nor SBT5.2(b) are able to proteolytically cleave MYB30.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot analysis of MYB30 accumulation shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "076cc502-364d-4e4f-8c7e-c6122025a3bd",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C29",
+      "claim": "SBT5.2(a) and MYB30 do not colocalize in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy analysis of N. benthamiana leaves transiently co-expressing GFP-MYB30 and SBT5.2(a)-RFP showed that these proteins do not co-localize in planta, as SBT5.2(a) and MYB30 retain their respective extracellular and nuclear localization when expressed together (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ca1d37b7-0dae-4faf-8012-2377990ec7de",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C30",
+      "claim": "SBT5.2(b) causes nuclear exclusion of MYB30 when co-expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, when co-expressed with RFP-tagged SBT5.2(b), GFP-MYB30 was excluded from the nucleus and localized to the same vesicle-like structures where SBT5.2(b) was localized, suggesting a possible in planta interaction between the two proteins outside the nucleus (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a26eb3f0-a615-437c-838d-951edef2620b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C31",
+      "claim": "SBT5.2(b)-mediated nuclear exclusion of MYB30 is specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the unrelated MYB TF MYB123 retained its nuclear localization when co-expressed with SBT5.2(b), suggesting that SBT5.2(b)-mediated MYB30 nuclear exclusion is specific (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data showing MYB123 localization in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "3b43b703-121f-4d40-a111-189ca3fe6adc",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C32",
+      "claim": "SBT5.2(b)-mediated nuclear exclusion of MYB30 is confirmed in Arabidopsis protoplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, SBT5.2(b)-mediated specific nuclear exclusion of MYB30 was confirmed in Arabidopsis protoplasts (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data in Arabidopsis protoplasts shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e32f0c37-936d-4406-8d11-57728fca3231",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C33",
+      "claim": "MYB30 physically interacts with SBT5.2(b) in intracellular vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant reduction of GFP lifetime was observed when GFP-MYB30 was co-expressed with RFP-tagged SBT5.2(b) as compared to co-expression with SBT5.2(b)-HA, both in N. benthamiana epidermal cells and in Arabidopsis protoplasts, thus confirming the physical interaction between the two proteins in intracellular vesicles (Figure 5c,d; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET-FLIM data shown in Figure 5c, 5d, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "98dd02b5-b3f2-4582-b9bd-f804671a1575",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C34",
+      "claim": "The interaction between MYB30 and SBT5.2(b) does not depend on the integrity of SBT5.2(b) catalytic triad.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction did not depend on the integrity of SBT5.2(b) catalytic triad, as shown by the reduced GFP lifetime of GFP-MYB30 when co-expressed with RFP-tagged SBT5.2(b)H171A (Table 1; Figure 5\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET-FLIM data with catalytic mutant shown in Table 1 and Figure 5\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "08625270-c704-4cdf-a596-52f47a18d96f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C35",
+      "claim": "The C-terminus of SBT5.2(b) is sufficient for interaction with MYB30.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant reduction of the average GFP lifetime was measured in nuclei coexpressing GFP-MYB30 and SBT5.2(b)362-730-RFP, as compared to nuclei expressing GFP-MYB30 alone (Figure 5\u2014figure supplement 2d; Table 1), confirming that the C-terminus of SBT5.2(b) is sufficient for the interaction with MYB30.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET-FLIM data with truncated SBT5.2(b) shown in Figure 5\u2014figure supplement 2d and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "769ab3d0-c4e4-44ab-ba80-c3016f2dcd21",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C36",
+      "claim": "The C-terminal domain of SBT5.1 does not interact with MYB30.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of this observation was highlighted by the lack of interaction between GFP-MYB30 and the equivalent C-terminal domain of the closest Arabidopsis SBT5.2 homolog, SBT5.1, (SBT5.1405-780-RFP) (Figure 5\u2014figure supplement 2b,e; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET-FLIM data shown in Figure 5\u2014figure supplement 2b, 2e, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a8b7b414-e6f5-46b6-b76f-2f868414ee72",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C37",
+      "claim": "SBT5.2(b) localizes to trans-Golgi network/early endosomes (TGN/EE).",
+      "claim_type": "EXPLICIT",
+      "source": "Colocalization with of SBT5.2(b) with these endosomal markers was clearly observed in N. benthamiana leaves (Figure 6a, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colocalization with VHA-a1 and SYP61 markers shown in Figure 6a and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "4d35e9f2-cda1-4c7f-b04d-442798370031",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C38",
+      "claim": "SBT5.2(b) localizes to late endosomes/multivesicular bodies (LE/MVB).",
+      "claim_type": "EXPLICIT",
+      "source": "Colocalization with of SBT5.2(b) with these endosomal markers was clearly observed in N. benthamiana leaves (Figure 6a, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colocalization with ARA6 and SYP21 markers shown in Figure 6a and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "daf7f300-da31-4a13-84ff-625f13b82a4a",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C39",
+      "claim": "SBT5.2(b) does not colocalize with the Golgi marker GmMan-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no colocalization of SBT5.2(b)-RFP with the Golgi marker GmMan-GFP (Nelson et al., 2007) was detected (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b3af073c-27b8-4d30-88e1-82bb592448f2",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C40",
+      "claim": "A free N-terminal myristoylation site in SBT5.2(b) is necessary for its endosomal targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data strongly suggest that a free N-terminal myristoylated residue is responsible of SBT5.2(b) targeting to the endosomes and of MYB30 retention in endosomal vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from mutagenesis and localization data showing that N-terminal modifications prevent endosomal localization, shown in Figure 6b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "7bdc5106-8805-4716-8624-efc90d245697",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C41",
+      "claim": "Mutation of the putatively myristoylated Gly2 residue to Ala in SBT5.2(b) results in cytoplasmic localization.",
+      "claim_type": "EXPLICIT",
+      "source": "A SBT5.2(b) version in which the putatively myristoylated Gly2 residue was mutated to Ala [SBT5.2(b)G2A] also localized to the cytoplasm (Figure 6b), confirming the importance of N-myristoylation for SBT5.2(b) endosomal targeting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data of the G2A mutant shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "2a9cf38a-9538-483b-ac22-0cd30d5f8c1f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C42",
+      "claim": "SBT5.2(b) interferes with endosomal trafficking, causing colocalization of early and late endosome markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-expression with SBT5.2(b) led to co-localization of VHA-a1 and ARA6 in the same endosomal compartment, strongly suggesting that SBT5.2(b) is able to interfere with endosomal trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal microscopy data showing colocalization of normally distinct endosomal markers in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "62fb2e5a-255a-47b3-b3ea-e59a35f79ac5",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C43",
+      "claim": "Myristoylation of SBT5.2(b) is essential for its effect on endosomal trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Myristoylation of SBT5.2(b) appears to be essential to this effect, since expression of SBT5.2(b)G2A did not affect the discrete endosomal populations tagged by VHA-a1 or ARA6 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data with the G2A mutant shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "3e2ad0ea-9cdd-478d-8151-c81625ffa703",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C44",
+      "claim": "sbt5.2 mutant plants show stronger HR cell death symptoms after inoculation with Pst AvrRpm1 compared to wild-type plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to MYB30-overexpressing (MYB30OE), sbt5.2 mutant plants showed stronger HR cell death symptoms after inoculation with Pst AvrRpm1 as compared to Col-0 wild-type plants (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual symptoms and ion leakage measurements shown in Figure 8a and 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "f19c75a2-792e-45e5-81c0-bc0a59715742",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C45",
+      "claim": "sbt5.2 mutant plants display increased resistance to Pst AvrRpm1 compared to wild-type plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with faster HR development, sbt5.2 plants showed increased resistance in response to inoculation with Pst AvrRpm1, as compared to wild-type plants (Figure 8c), confirming the role of SBT5.2 as a negative regulator of plant defence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial growth assays shown in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "4c8498f5-7670-47ed-b9d3-e9852dbcc41b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C46",
+      "claim": "SBT5.2 acts as a negative regulator of plant defence.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with faster HR development, sbt5.2 plants showed increased resistance in response to inoculation with Pst AvrRpm1, as compared to wild-type plants (Figure 8c), confirming the role of SBT5.2 as a negative regulator of plant defence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the enhanced defence phenotype of sbt5.2 mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e435175a-2f7f-4839-bfc4-46a5f20a268c",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C47",
+      "claim": "sbt5.2 mutant plants display higher expression of MYB30 target genes FDH and CER2 compared to wild-type plants after bacterial inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, sbt5.2 mutant plants displayed higher expression of MYB30 VLCFA-related target genes FDH and CER2 (Raffaele et al., 2008) as compared to Col-0 wild-type plants 1 hr after inoculation (Figure 9a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR gene expression data shown in Figure 9a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "9533f383-c222-4ab8-a052-d8556fe13395",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C48",
+      "claim": "The enhanced expression of MYB30 target genes in sbt5.2 mutants is abolished in the myb30 mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this phenotype was abolished in the myb30 mutant background (sbt5.2 myb30; Figure 9a) and correlated with loss of increased HR in the sbt5.2 myb30 double mutant (Figure 9b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data in double mutants shown in Figure 9a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "8b9d0000-8abe-4e3d-802d-3f9e3a3005e9",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C49",
+      "claim": "The increased HR phenotype of sbt5.2 mutants is lost in the sbt5.2 myb30 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this phenotype was abolished in the myb30 mutant background (sbt5.2 myb30; Figure 9a) and correlated with loss of increased HR in the sbt5.2 myb30 double mutant (Figure 9b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell death measurements in double mutants shown in Figure 9b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "d4ce3576-34e3-4d2e-bdaf-1dd056431f49",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C50",
+      "claim": "SBT5.2 negatively regulates Arabidopsis defence through repression of MYB30 transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data confirm that SBT5.2 negatively regulates Arabidopsis defence through repression of MYB30 transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from genetic epistasis experiments showing MYB30-dependence of sbt5.2 phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "aba8ab67-c0bb-4d3a-b073-a3acd20a7944",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C51",
+      "claim": "Overexpression of SBT5.2(b), but not SBT5.2(a), suppresses the increased HR phenotype of sbt5.2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the increased HR phenotype displayed by the sbt5.2 mutant was specifically suppressed in sbt5.2 plants overexpressing SBT5.2(b), but not SBT5.2(a) (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell death measurements in complementation lines shown in Figure 9c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "5cc224e7-c38d-4977-881f-9eb0491461a4",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C52",
+      "claim": "Overexpression of SBT5.2(b), but not SBT5.2(a), suppresses enhanced accumulation of phenolic compounds in sbt5.2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced accumulation of phenolic compounds, characteristic of HR cell death, was detected in MYB30OE ans sbt5.2 mutant lines as compared to wild-type Col-0 and this phenotype was suppressed both in sbt5.2 myb30 double mutants and by overexpressing SBT5.2(b), but not SBT5.2(a), in the sbt5.2 mutant background (Figure 9d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenolic compound accumulation data shown in Figure 9d and 9e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b7a3b3b3-055c-420e-8d10-cbdca73bd6d5",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C53",
+      "claim": "Negative regulation of MYB30-mediated defence-related cell death is specifically controlled by SBT5.2(b).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall our data demonstrate that, in agreement with SBT5.2(b)-mediated retention of MYB30 in endosomes, negative regulation of MYB30-mediated defence-related cell death is specifically controlled by SBT5.2(b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the complementation experiments showing specific rescue by SBT5.2(b).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "f760cdcb-af62-477e-a210-4eeb0cde1cfe",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C54",
+      "claim": "Alternative splicing of SBT5.2 represents the first described example of AS affecting the function of a protein of the subtilase family.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, our work represents the first described example of AS affecting the function of a protein of the subtilase family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a novel finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "fb80a4cd-7424-4269-bd63-6e7bfd343ea1",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C55",
+      "claim": "Alternative splicing plays fundamental roles in regulating plant growth, development, and responses to environmental signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, AS plays fundamental roles in regulating plant growth, development, and responses to environmental signals (Staiger and Brown, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "bc5af649-3365-4f9e-8e86-29ba281bfd33",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C56",
+      "claim": "A genome-wide transcriptomic analysis in Arabidopsis plants inoculated with bacteria uncovered a large number of AS events.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide transcriptomic analysis in Arabidopsis plants inoculated with bacteria uncovered a surprisingly large number of AS events (Howard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "2f24f9f0-9803-499f-8fd2-06f2aa4094a8",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C57",
+      "claim": "The function of numerous plant resistance genes encoding immune receptors appears to be regulated by alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we are still far from understanding the functional implications of this transcriptome complexity, the function of numerous plant resistance genes, encoding immune receptors, appears to be regulated by AS (Yang et al., 2014; Gassmann, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "59a178ad-5b11-4762-ad0e-80ad4856ae93",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C58",
+      "claim": "Plant subtilases are usually synthesized as preproprotein precursors with an N-terminal ER-targeting signal peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant subtilases are usually synthesized in the form of preproprotein precursors, translocated via an N-terminal ER-targeting SP into the endomembrane system (Schaller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "d3ce1516-fdad-4518-96cc-6d322b660f55",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C59",
+      "claim": "Plant subtilases are glycosylated in the secretory pathway and accumulate extracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, using mass spectrometry (Cedzich et al., 2009) and structural analyses (Murayama et al., 2012), plant subtilases were shown to be glycosylated in the secretory pathway and to accumulate extracellularly (Schaller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "9138eade-2aec-4d9a-b30e-8672794c3016",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C60",
+      "claim": "The prodomain of plant subtilases acts as an auto-inhibitor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing of the PD, an auto-inhibitor domain of plant subtilases (Nakagawa et al., 2010; Meyer et al., 2016), is an intramolecular autocatalytic reaction that occurs late in the ER or in the early Golgi (Cedzich et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "3cb51212-1c6b-4f65-af7c-988d738550fa",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C61",
+      "claim": "SBT5.2 was previously described as a negative regulator of stomatal density under high CO2 conditions through cleavage of the extracellular pro-peptide ligand EPF2.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2 was previously described as a negative regulator of stomatal density under high CO2 conditions through cleavage of the extracellular pro-peptide ligand EPF2 in the apoplast (Engineer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "afe05d58-5bb4-4063-a22e-0aa22858f1e5",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C62",
+      "claim": "Examples of proteases playing proteolysis-independent functions have been described in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of proteases playing proteolysis-independent functions have been described in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by subsequent examples of PCSK9 and \u03b3-secretase.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "0b5293cb-5b1c-4c9e-bc2c-7f30c0e3fb3d",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C63",
+      "claim": "The proprotein convertase subtilisin/kexin type 9 (PCSK9) does not require its catalytic activity to induce degradation of low-density lipoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The proprotein convertase subtilisin/kexin type 9 (PCSK9) plays a major regulatory role in cholesterol homeostasis but does not require its catalytic activity to induce degradation of low-density lipoproteins (LDLs) (McNutt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b9ca2e97-b790-4b1c-8457-e46898c4b988",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C64",
+      "claim": "\u03b3-secretase displays proteolysis-independent functions during the regulation of \u03b2APP maturation and trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, \u03b3-secretase, an aspartyl protease that performs the final proteolytic cleavage step in the processing cascade of the \u03b2-amyloid precursor protein (\u03b2APP) (Vassar et al., 1999), displays proteolysis-independent functions during the regulation of \u03b2APP maturation and trafficking (Wrigley et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e08a57b2-46dd-4825-a917-e6706e2c4603",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C65",
+      "claim": "Overexpression of constitutively active Rab5 in mammals blocks the conversion of early to late endosomes, giving rise to hybrid endosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, expression of constitutively active Rab5 blocks the conversion of early to late endosomes, giving rise to hybrid endosomal compartments and deregulation of autophagy (Rink et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "2c3209fb-12c5-4257-b977-b309a8b793c5",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C66",
+      "claim": "Overexpression of Arabidopsis sorting nexin SNX2b leads to the formation of large SNX2-containing endosome aggregations, which inhibits vesicle trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression of Arabidopsis sorting nexin SNX2b leads to the formation of large SNX2-containing endosome aggregations, which inhibits vesicle trafficking (Phan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e69b825a-07e5-4ba7-b692-e484e5654119",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C67",
+      "claim": "Endosomal trafficking pathways control multiple signalling pathways, including those involved in plant disease resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(b)-mediated regulation of MYB30 activity supports the emerging idea that endosomal trafficking pathways are not only central regulators of plasma membrane protein homeostasis but also control multiple signalling pathways, including those involved in plant disease resistance (Reyes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "9d521433-8310-4106-be89-e4508db0484f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C68",
+      "claim": "Enhanced susceptibility of plants impaired in regulators of endosome trafficking emphasizes the importance of endocytic processes in establishing defence.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced susceptibility of plants impaired in regulators of endosome trafficking emphasizes the importance of endocytic processes in establishing defence (Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "f5b508fe-ba99-41c5-8c6c-585b45367c12",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C69",
+      "claim": "Plasma membrane receptors that sense apoplastic microbes are immune-related cargos of plant trafficking pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, plasma membrane receptors that sense apoplastic microbes are immune-related cargos of plant trafficking pathways (Beck et al., 2012; Ben Khaled et al., 2015), and a number of intracellular immune receptors have been shown to constitutively localize to endomembranes (Takemoto et al., 2012; Engelhardt et al., 2012), further underlining the prominent role of endomembrane systems in determining plant resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "03ba1044-1e7c-47d2-8be3-9610b5348450",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C70",
+      "claim": "Relocalisation of the potato resistance protein R3a from the cytoplasm to endosomal compartments is required to trigger the HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, relocalisation of the potato resistance protein R3a from the cytoplasm to endosomal compartments is required to trigger the HR (Engelhardt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "c70c6135-45cf-4ee4-be17-b0712ade8320",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C71",
+      "claim": "The bacterial effector HopM1 targets and degrades the Arabidopsis ARF-GEF MIN7, altering secretory trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Arabidopsis ADP ribosylation factor (ARF)-Guanine exchange factor (GEF) MIN7 is targeted and degraded by the bacterial effector HopM1 altering secretory trafficking (Nomura et al., 2006, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "951e9d56-05a0-46e5-a607-e133021122da",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C72",
+      "claim": "The effector PipB2 from Salmonella enterica causes redistribution of late endosomes/lysosomes compartments to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, the effector PipB2 from the bacterial pathogen Salmonella enterica causes a specific redistribution of late endosomes/lysosomes (LE/Lys) compartments to the cell periphery promoting formation of Salmonella-induced filaments (Sifs) (Knodler and Steele-Mortimer, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "62d777c8-9394-4323-b88f-878b7a20956e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C73",
+      "claim": "Subcellular compartmentalization of the E2F TF family is used to control cell cycle in differentiated skeletal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular compartmentalization of the E2F TF family, either in the nucleus or in the cytoplasm, is used to control cell cycle in differentiated skeletal cells (Gill and Hamel, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "7761d91f-4dcc-4f36-bff1-cf5c8d71405b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C74",
+      "claim": "p53 shifts from the nucleus to the cytoplasm in the presence of HDM2, where it has important roles independent of its transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "p53, a tightly regulated animal TF that acts as a hub for numerous signalling pathways including apoptosis, shifts from the nucleus to the cytoplasm in the presence of HDM2, where it has important roles that are independent of its transcriptional activity (Boyd et al., 2000; Green and Kroemer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a89774cc-5ddd-4e68-8050-968665671e3d",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C75",
+      "claim": "Arabidopsis SBT6.1 cleaves the ER-located TF bZIP17, which then moves to the nucleus to activate transcription in response to salt stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis SBT6.1 is able to cleave the ER-located TF bZIP17 that, once released, moves to the nucleus to activate transcription in response to salt stress (Liu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b539eee2-3056-4ba0-8cb8-5dd07c0fc76e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C76",
+      "claim": "The small interference protein MIF1 promotes nuclear exclusion of the TF ZHD5 by relocalizing it to cytoplasmic vesicle-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the small interference protein MIF1, promotes nuclear exclusion of the TF ZHD5 that regulates flower architecture and leaf development. As a result, ZHD5 is relocalised into cytoplasmic vesicle-like structures, which interferes with is transcriptional activity (Hong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "c910bb74-c6b0-4d22-a19a-71bcf1631b44",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C77",
+      "claim": "MYB30 is regulated by the secreted phospholipase AtsPLA2-\u03b1 through nuclear relocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "During the last few years, different regulatory mechanisms of MYB30-mediated HR have been uncovered (Raffaele and Rivas, 2013), including spatio-temporal control of MYB30 activity through the action of the secreted phospholipase AtsPLA2-\u03b1 (that specifically relocalises to the nucleus in the presence of MYB30 [Froidure et al., 2010]) and the RING-type E3 ligase MIEL1 (that ubiquitinates MYB30 and leads to its proteasomal degradation [Marino et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "8243bdcd-4289-4309-967c-e51e06c53c76",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C78",
+      "claim": "MYB30 is regulated by the RING-type E3 ligase MIEL1 through ubiquitination and proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the last few years, different regulatory mechanisms of MYB30-mediated HR have been uncovered (Raffaele and Rivas, 2013), including spatio-temporal control of MYB30 activity through the action of the secreted phospholipase AtsPLA2-\u03b1 (that specifically relocalises to the nucleus in the presence of MYB30 [Froidure et al., 2010]) and the RING-type E3 ligase MIEL1 (that ubiquitinates MYB30 and leads to its proteasomal degradation [Marino et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "da3f245f-de7b-4d82-99f2-fb5d88f629b6",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C79",
+      "claim": "SBT5.2(b)-mediated nuclear exclusion of MYB30 represents an additional regulatory mode of MYB30 transcription factor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "SBT5.2(b)-mediated nuclear exclusion of MYB30 represents an additional regulatory mode of the activity of this TF, underlining the complexity of the regulatory modes of defence-related plant cell death responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the novel mechanism described in this study in the context of previously known regulatory mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "25fb7efe-5b1d-4af7-a853-8f91e1105fea",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C80",
+      "claim": "The intricate regulation of MYB30 is reminiscent of the tight control exerted on animal TFs such as p53.",
+      "claim_type": "EXPLICIT",
+      "source": "This intricate regulation of MYB30 is reminiscent of the tight control exerted on animal TFs such as p53 that is also multi-regulated through varied modes including protein-protein interactions, ubiquitination and, notably, nuclear exclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a comparison drawn by the authors based on knowledge of p53 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "a907ab7d-0006-4613-a1eb-75bc20931927",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C81",
+      "claim": "Sophisticated fine-tuning of transcription factor activity provides an efficient means to regulate fundamental cellular processes and appears as a general feature underlying transcriptional control in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This sophisticated fine-tuning, which provides an efficient means to regulate fundamental cellular processes, appears as a general feature underlying the transcriptional control in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a general conclusion drawn by the authors based on the findings and comparison with other systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e69b2119-ce78-4ff8-bfed-2e3b20bfb26e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C82",
+      "claim": "Subtilases belong to the S8 family within the SB clan of serine proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the MEROPS (http://merops.sanger.ac.uk) classification, subtilases belong to the S8 family within the SB clan of serine proteases and are grouped into two subfamilies, subtilisins (S8A) and kexins (S8B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established classification from the MEROPS database.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "41eb9d0c-3096-4abe-89fc-9fcbf5d3a6b6",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C83",
+      "claim": "Nine subtilases have been characterized in mammals, seven of which belong to the kexin group.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine subtilases have been characterized in mammals, seven of which belong to the kexin group and two others to the S8A subfamily (pyrolysins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about mammalian subtilases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "bd4c8721-e267-4f81-97a0-b97f278811fd",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C84",
+      "claim": "Plant subtilases exclusively belong to the pyrolysin group within the S8A subfamily with no representatives of the kexin type.",
+      "claim_type": "EXPLICIT",
+      "source": "With no representatives of the kexin type, plant subtilases exclusively belong to the pyrolysin group within the S8A subfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about plant subtilases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b4223237-6e8f-42b9-8a08-e5ec63824132",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C85",
+      "claim": "In Arabidopsis the subtilase family comprises 56 members distributed in six distinct subgroups (SBT1-6).",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis the subtilase family comprises 56 members distributed in six distinct subgroups (SBT1-6) (Rautengarten et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous classification study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "3aec6a54-7ae6-44e2-9383-68be2b146cd3",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C86",
+      "claim": "Subtilases have been involved in general protein turnover as well as in the highly specific regulation of plant development or responses to environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtilases are predicted to be secreted and have been involved in general protein turnover as well as in the highly specific regulation of plant development or responses to environmental changes and, more recently, in suppression of basal immunity and immune priming (Schaller et al., 2012; Figueiredo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "50263bcd-b83a-49eb-bc14-c464543769f7",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C87",
+      "claim": "Subtilases have been involved in suppression of basal immunity and immune priming.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtilases are predicted to be secreted and have been involved in general protein turnover as well as in the highly specific regulation of plant development or responses to environmental changes and, more recently, in suppression of basal immunity and immune priming (Schaller et al., 2012; Figueiredo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b552c40e-f3ff-4361-9d28-5e0958fc3a5b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C88",
+      "claim": "Plants lack mobile defender cells and a somatic adaptive immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants, unlike mammals, lack mobile defender cells and a somatic adaptive immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about plant immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "1cade0a7-ef11-412d-b153-5ce71602f380",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C89",
+      "claim": "Plants rely on the innate immunity of each cell and on systemic signals originating from infection sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they rely on the innate immunity of each cell and on systemic signals originating from infection sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about plant immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "aad54016-2f1f-41fc-a83d-6a6e21f8caa1",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C90",
+      "claim": "Plant resistance to disease is often associated with the hypersensitive response (HR), a form of programmed cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant resistance to disease is a costly response, closely connected to plant physiological and developmental processes, and often associated with the so-called hypersensitive response (HR), a form of programmed cell death that develops at attempted infection sites, allegedly to prevent pathogen propagation through the plant (Coll et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "88b37a94-a69e-43b4-9312-bd902aaa15d2",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C91",
+      "claim": "MYB30 is one of the best characterized MYB TFs regulating defence-related transcription in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the MYB TFs regulating defence-related transcription, Arabidopsis MYB30 is one of the best characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "6bd39c16-1c46-4b08-a5be-a1a40e4ddaf3",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C92",
+      "claim": "MYB30 promotes defence and cell death-associated responses through transcriptional activation of genes related to the lipid biosynthesis pathway leading to production of very-long-chain fatty acids (VLCFAs).",
+      "claim_type": "EXPLICIT",
+      "source": "MYB30 promotes defence and cell death-associated responses through the transcriptional activation of genes related to the lipid biosynthesis pathway that leads to the production of very-long-chain fatty acids (VLCFAs) (Raffaele et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "1ad59525-4276-4040-815a-428787d7829e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C93",
+      "claim": "MYB30 is targeted by the effector protein XopD from Xanthomonas campestris pv. campestris, leading to suppression of MYB30-mediated transcriptional activation of plant resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "MYB30 is targeted by the effector protein XopD, from the bacterial pathogen Xanthomonas campestris pv. campestris (Xcc), leading to suppression of MYB30-mediated transcriptional activation of plant resistance and thus underlining the important role played by MYB30 in plant defence regulation (Canonne et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "56c1f02f-f3e3-4108-894a-ac38e79d7529",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C94",
+      "claim": "Co-expression of MYB30\u0394AD and SBT5.2628-730 resulted in yeast growth on selective medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of MYB30 deleted from its C-terminal transcription activation domain (MYB30\u25b3AD) and the isolated cDNA clone encoding the last 103 amino acids of SBT5.2 (SBT5.2628-730) resulted in yeast growth on selective medium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by yeast two-hybrid data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "17b111a6-e923-492e-8166-f17d07c05c3c",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "claim_id": "C95",
+      "claim": "Yeast cells expressing MYB30\u0394AD or SBT5.2628-730 with control proteins were not able to grow on selective medium.",
+      "claim_type": "EXPLICIT",
+      "source": "In a control experiment, yeast cells expressing MYB30\u25b3AD or SBT5.2628-730 with controls provided by Clontech (T-antigen or P53, respectively) were not able to grow on selective medium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by control experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7986af4c-9a01-434e-93bf-4b729db99452",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SBT5.2 was identified as a MYB30-interacting partner through yeast two-hybrid screening. The C-terminal 103 amino acids of SBT5.2 (SBT5.2628-730) interact with MYB30\u0394AD in yeast, as demonstrated by growth on selective medium, while appropriate negative controls did not show growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C94, and C95 provide converging evidence from Y2H screening with appropriate positive (interaction) and negative (no interaction with control proteins) controls shown in Figure 1. The methodology is standard and the results are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "55e6643a-5ee6-4037-a1c3-cbb18ae88c2e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SBT5.2 gene produces two distinct transcripts through alternative splicing, where the first intron is retained in SBT5.2(a) but spliced out in SBT5.2(b). Both splice variants exist in planta as confirmed by RT-PCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by database annotation (TAIR), genomic sequence comparison (Figure 2\u2014figure supplement 1a), and experimental RT-PCR validation (Figure 2b). The evidence is consistent and uses multiple complementary approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "64eaf2c9-3981-488e-88d9-817684e4252c",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Following bacterial inoculation with Pst AvrRpm1, SBT5.2(a) expression is downregulated while SBT5.2(b) expression is induced, with SBT5.2(b) displaying an expression profile highly similar to MYB30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by qRT-PCR time-course data shown in Figure 2c with appropriate statistical analysis (p<0.005). The differential regulation of the two isoforms and co-regulation of SBT5.2(b) with MYB30 is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "1fd984e3-c6d2-4785-a939-d02519fe4993",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SBT5.2(a) encodes a 769 amino acid preproenzyme with a signal peptide and prodomain, while SBT5.2(b) encodes a 730 amino acid protein lacking the signal peptide and first five amino acids of the prodomain. Both proteins contain conserved catalytic triad residues (Asp, His, Ser).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 are supported by sequence analysis and structural predictions shown in Figure 2d and Figure 2\u2014figure supplement 1b,c. The structural features are consistent with known subtilase architecture and the differences between isoforms are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b3259019-8238-4df0-ad70-7027f9479c25",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SBT5.2(a) is secreted to apoplastic spaces and detected in intercellular fluid, while SBT5.2(b) is intracellular, localized to vesicle-like structures, and not secreted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by confocal microscopy (Figure 2e) and biochemical fractionation (Figure 2f) with appropriate controls (MIEL1 as intracellular marker). The secretion of SBT5.2(a) is also supported by prior literature (C18). Multiple complementary approaches confirm the distinct localizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "780e5d74-810e-470b-8ad5-b3c97aa2471e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SBT5.2(a) contains seven putative N-glycosylation sites, is N-glycosylated in planta, and all seven sites are utilized as demonstrated by mutagenesis and biochemical assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by sequence analysis, deglycosylation assays (PNGase F/EndoH treatment, Figure 3a), concanavalin A binding (Figure 3b), tunicamycin treatment (Figure 3c), and site-directed mutagenesis showing mobility shifts for all PGS mutants (Figure 3d). The evidence is comprehensive and uses multiple complementary approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "38bce735-668d-4880-8c43-e1c1dd015357",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SBT5.2(b) is not N-glycosylated and does not enter the secretory pathway, despite containing the same seven putative glycosylation sites as SBT5.2(a).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by multiple negative results: no mobility shift with PNGase F/EndoH (Figure 3a), no concanavalin A binding (Figure 3b), and no effect of tunicamycin (Figure 3c). The inference that SBT5.2(b) does not enter the secretory pathway is consistent with the lack of signal peptide and absence of glycosylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "62ccaa79-84d7-4917-8dec-0e802ac506e6",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SBT5.2(a) displays protease activity and is able to auto-process in planta, while SBT5.2(b) does not self-process and lacks protease activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by Western blot analysis showing processing of wild-type SBT5.2(a) but not the H210A catalytic mutant (Figure 4a), and fluorimetric protease assays showing activity only for SBT5.2(a) (Figure 4b). The evidence clearly distinguishes the functional states of the two isoforms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ee3e32b7-556d-4171-8eb6-92ad527d739b",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neither SBT5.2(a) nor SBT5.2(b) proteolytically cleave MYB30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by Western blot analysis showing no change in MYB30 accumulation when co-expressed with either SBT5.2 isoform or their catalytic mutants (Figure 4c). The experimental design appropriately compares wild-type and catalytic mutant versions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "4646bd0c-857f-4845-b3a5-a1fe3904ae74",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SBT5.2(b), but not SBT5.2(a), causes specific nuclear exclusion of MYB30 when co-expressed, as demonstrated in both N. benthamiana and Arabidopsis protoplasts. The unrelated transcription factor MYB123 retains nuclear localization with SBT5.2(b).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by confocal microscopy in N. benthamiana (Figure 5a) and Arabidopsis protoplasts (Figure 5b), with appropriate specificity controls using MYB123. The nuclear exclusion phenotype is clearly demonstrated and specific to the MYB30-SBT5.2(b) pair.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ff14fd13-5ab1-492d-9be8-ab02772b97e3",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MYB30 physically interacts with SBT5.2(b) in intracellular vesicles, and this interaction does not depend on the integrity of the SBT5.2(b) catalytic triad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by FRET-FLIM data showing significant reduction in GFP lifetime when MYB30 is co-expressed with SBT5.2(b)-RFP compared to SBT5.2(b)-HA in both N. benthamiana and Arabidopsis protoplasts (Figure 5c,d, Table 1). The interaction persists with the H171A catalytic mutant, demonstrating independence from catalytic activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b7f6e990-f970-472b-9075-647111339ea3",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The C-terminus of SBT5.2(b) (amino acids 362-730) is sufficient for interaction with MYB30, and this interaction is specific as the equivalent C-terminal domain of SBT5.1 does not interact with MYB30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by FRET-FLIM data showing interaction between MYB30 and SBT5.2(b)362-730-RFP but not with SBT5.1405-780-RFP (Figure 5\u2014figure supplement 2, Table 1). The specificity control with SBT5.1 strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "51e74487-4515-4082-a91e-f7b425db5d85",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SBT5.2(b) localizes to both trans-Golgi network/early endosomes (TGN/EE) and late endosomes/multivesicular bodies (LE/MVB), but does not colocalize with the Golgi marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by colocalization studies with established endosomal markers (VHA-a1, SYP61, ARA6, SYP21) and lack of colocalization with Golgi marker (GmMan-GFP) shown in Figure 6a and Figure 6\u2014figure supplement 1. The use of multiple well-characterized markers provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "25d46df2-60bd-41ff-ae06-f89dd6600d7f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A free N-terminal myristoylation site in SBT5.2(b) is necessary for its endosomal targeting. Mutation of the putatively myristoylated Gly2 residue to Ala results in cytoplasmic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by confocal microscopy showing that N-terminal deletions, N-terminal tagging, or G2A mutation all result in cytoplasmic localization and loss of endosomal targeting (Figure 6b). The convergent evidence from multiple N-terminal modifications strongly supports the role of myristoylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "c27757bd-9340-4da6-85c1-66c81f1820f7",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SBT5.2(b) interferes with endosomal trafficking, causing colocalization of early and late endosome markers, and this effect requires myristoylation as the G2A mutant does not affect endosomal compartmentalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by confocal microscopy showing that wild-type SBT5.2(b) causes VHA-a1 and ARA6 to colocalize, while SBT5.2(a) and SBT5.2(b)G2A do not affect the discrete endosomal populations (Figure 7). The genetic requirement for myristoylation strengthens the mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "bd21a1e4-ddaa-4adc-823b-68ef56ca2f21",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "sbt5.2 mutant plants show enhanced hypersensitive response (HR) cell death symptoms and increased resistance to Pst AvrRpm1 compared to wild-type plants, demonstrating that SBT5.2 acts as a negative regulator of plant defence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by visual symptoms (Figure 8a), ion leakage measurements (Figure 8b), and bacterial growth assays (Figure 8c) with appropriate statistical analysis. The phenotypes are consistent across two independent mutant alleles, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "59574e53-a5d8-4d93-9f71-a5ccda4890b4",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "sbt5.2 mutants display higher expression of MYB30 target genes (FDH and CER2) after bacterial inoculation, and both the enhanced gene expression and increased HR phenotypes are abolished in the sbt5.2 myb30 double mutant, confirming that SBT5.2 negatively regulates defence through repression of MYB30 transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by qRT-PCR data (Figure 9a) and cell death measurements (Figure 9b) showing genetic epistasis. The loss of sbt5.2 phenotypes in the myb30 background provides strong evidence that SBT5.2 functions through MYB30.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ff5f7bdd-9954-46dc-a062-76fa1a44a7fe",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Overexpression of SBT5.2(b), but not SBT5.2(a), specifically suppresses the enhanced HR phenotype and phenolic compound accumulation in sbt5.2 mutants, demonstrating that negative regulation of MYB30-mediated defence-related cell death is specifically controlled by SBT5.2(b).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by complementation experiments showing that only SBT5.2(b) overexpression rescues the sbt5.2 mutant phenotypes (Figure 9c,d,e). The isoform-specific rescue provides strong evidence for the distinct functions of the two splice variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "c7352eb8-6940-4b5c-a014-b11521d8685d",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Alternative splicing of SBT5.2 represents the first described example of AS affecting the function of a protein of the subtilase family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is stated as a novel finding based on the authors' knowledge of the literature, but no systematic literature review or citation is provided to support the claim of being 'first'. While the finding is novel and significant, the claim of priority cannot be fully verified without comprehensive literature analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "896c526b-0c13-4c50-aa51-565886e5a27f",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Alternative splicing plays fundamental roles in plant biology, including regulation of growth, development, environmental responses, and immunity. Genome-wide studies have revealed extensive AS in response to bacterial infection, and numerous plant resistance genes are regulated by AS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are background knowledge claims supported by appropriate citations to review articles and primary research. These establish the broader context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "91706e31-add2-494d-869a-afd90c21356d",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Plant subtilases are typically synthesized as preproprotein precursors with signal peptides, are glycosylated in the secretory pathway, accumulate extracellularly, and contain prodomains that act as auto-inhibitors. SBT5.2 was previously described as regulating stomatal density through cleavage of EPF2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are background knowledge claims about plant subtilases supported by appropriate citations to previous studies. These establish the expected properties of canonical subtilases against which SBT5.2(b) is compared.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "e1c6dfa3-baa1-4cf7-ab7b-1488d22fed49",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Examples of proteases with proteolysis-independent functions exist in mammals, including PCSK9 (which regulates LDL degradation without requiring catalytic activity) and \u03b3-secretase (which has proteolysis-independent roles in \u03b2APP regulation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are background knowledge claims supported by citations to previous studies in mammalian systems. These provide precedent for the concept of catalytically-independent protease functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "9125da9f-8cec-4c15-8089-ca0efb2563da",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Overexpression of proteins that regulate endosomal trafficking can disrupt normal endosomal compartmentalization, as demonstrated by constitutively active Rab5 in mammals and SNX2b in Arabidopsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are background knowledge claims supported by citations providing precedent for the observation that SBT5.2(b) disrupts endosomal trafficking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "752e3981-e9d6-4544-9c3a-5219465ee843",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Endosomal trafficking pathways play important roles in plant immunity, as evidenced by the susceptibility of trafficking mutants, the localization of immune receptors to endomembranes, and targeting of trafficking components by pathogen effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are background knowledge claims supported by appropriate citations establishing the importance of endosomal trafficking in plant immunity and providing context for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "b19369c7-3e68-47f7-9bdb-c95c30ca832e",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Subcellular compartmentalization and nuclear exclusion are established mechanisms for regulating transcription factor activity in eukaryotes, as demonstrated by E2F, p53, bZIP17, and ZHD5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 are background knowledge claims supported by citations providing precedent for transcription factor regulation through subcellular localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "MYB30 is subject to multiple regulatory mechanisms including control by AtsPLA2-\u03b1 and MIEL1. SBT5.2(b)-mediated nuclear exclusion represents an additional regulatory mode. This intricate regulation is reminiscent of p53 and represents a general feature of transcriptional control in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 integrate the current findings with previous knowledge about MYB30 regulation (supported by citations) and draw broader conclusions about transcriptional regulation. The comparison to p53 is appropriate given the multiple regulatory modes, though the generalization to all eukaryotic transcriptional control (C81) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "664f0778-713b-4e3a-9531-654fec95b4f8",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Subtilases belong to the S8 family of serine proteases. Mammals have nine subtilases (mostly kexins), while plants have only pyrolysins. Arabidopsis has 56 subtilases in six subgroups. Subtilases function in protein turnover, development, environmental responses, and immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 are background knowledge claims about subtilase classification and function, supported by appropriate citations and database references (MEROPS). These establish the context for understanding SBT5.2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    },
+    {
+      "id": "ff84c2c1-3444-4e40-8d11-c22fba659628",
+      "content_id": "4ff91b4e-ef4f-48dd-964b-2a3ce21df814",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Plants lack mobile immune cells and adaptive immunity, relying instead on innate immunity. Plant resistance often involves the hypersensitive response (HR). MYB30 is a well-characterized transcription factor that promotes defence through activation of VLCFA biosynthesis genes and is targeted by the bacterial effector XopD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 are background knowledge claims about plant immunity and MYB30, supported by appropriate citations. These establish the biological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:01:19.640495Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1dec653e-f2bf-43e0-a145-c81b2f7e5dfa",
+      "result_id": "7986af4c-9a01-434e-93bf-4b729db99452"
+    },
+    {
+      "claim_id": "56c1f02f-f3e3-4108-894a-ac38e79d7529",
+      "result_id": "7986af4c-9a01-434e-93bf-4b729db99452"
+    },
+    {
+      "claim_id": "17b111a6-e923-492e-8166-f17d07c05c3c",
+      "result_id": "7986af4c-9a01-434e-93bf-4b729db99452"
+    },
+    {
+      "claim_id": "b8e03de4-ddb9-4123-bb83-1c9866345dbc",
+      "result_id": "55e6643a-5ee6-4037-a1c3-cbb18ae88c2e"
+    },
+    {
+      "claim_id": "cd365510-2f7b-4a56-a0de-9ac74b8bb605",
+      "result_id": "55e6643a-5ee6-4037-a1c3-cbb18ae88c2e"
+    },
+    {
+      "claim_id": "ec3e8b40-07da-461c-847a-6c2bca52c127",
+      "result_id": "55e6643a-5ee6-4037-a1c3-cbb18ae88c2e"
+    },
+    {
+      "claim_id": "3ed11d48-59dd-4aa4-913b-c6d895d3b512",
+      "result_id": "64eaf2c9-3981-488e-88d9-817684e4252c"
+    },
+    {
+      "claim_id": "b1c9d8a9-f000-4b6b-9a99-477230e8ec53",
+      "result_id": "64eaf2c9-3981-488e-88d9-817684e4252c"
+    },
+    {
+      "claim_id": "eb77de31-58b0-4961-ae22-dc9fde0f8a67",
+      "result_id": "64eaf2c9-3981-488e-88d9-817684e4252c"
+    },
+    {
+      "claim_id": "a220706e-1867-4d78-833b-1338ad3b285d",
+      "result_id": "1fd984e3-c6d2-4785-a939-d02519fe4993"
+    },
+    {
+      "claim_id": "f2aa3534-25aa-429a-b29f-03c38686a4fd",
+      "result_id": "1fd984e3-c6d2-4785-a939-d02519fe4993"
+    },
+    {
+      "claim_id": "1cb4424c-2013-4c9d-ac5a-7f0cf6abb152",
+      "result_id": "1fd984e3-c6d2-4785-a939-d02519fe4993"
+    },
+    {
+      "claim_id": "bcb9eec3-4771-4de2-9951-a4b8cbb33b4f",
+      "result_id": "1fd984e3-c6d2-4785-a939-d02519fe4993"
+    },
+    {
+      "claim_id": "763eb381-0044-40fa-9bf3-8bf17dfd380a",
+      "result_id": "1fd984e3-c6d2-4785-a939-d02519fe4993"
+    },
+    {
+      "claim_id": "0499a1d4-1240-4d8c-a45e-96023719d9e9",
+      "result_id": "b3259019-8238-4df0-ad70-7027f9479c25"
+    },
+    {
+      "claim_id": "47369652-0118-4fd4-94f2-9768d7deb29c",
+      "result_id": "b3259019-8238-4df0-ad70-7027f9479c25"
+    },
+    {
+      "claim_id": "fb93b114-e29c-4e33-8836-3a2a105b39a4",
+      "result_id": "b3259019-8238-4df0-ad70-7027f9479c25"
+    },
+    {
+      "claim_id": "37c2b6e4-29de-4bcf-97a7-5cac7d98fc2c",
+      "result_id": "b3259019-8238-4df0-ad70-7027f9479c25"
+    },
+    {
+      "claim_id": "a60e3535-f4f4-45ee-91ed-1482ca354865",
+      "result_id": "b3259019-8238-4df0-ad70-7027f9479c25"
+    },
+    {
+      "claim_id": "291d2451-73a4-4157-bc89-1a694ae582ae",
+      "result_id": "780e5d74-810e-470b-8ad5-b3c97aa2471e"
+    },
+    {
+      "claim_id": "fc064b3f-e116-482b-a629-33ff0b03e9a1",
+      "result_id": "780e5d74-810e-470b-8ad5-b3c97aa2471e"
+    },
+    {
+      "claim_id": "d1086a6b-3689-400b-a07c-c09ce6365267",
+      "result_id": "780e5d74-810e-470b-8ad5-b3c97aa2471e"
+    },
+    {
+      "claim_id": "2ecd7965-a775-4bfe-8f37-1edb2c9a3b66",
+      "result_id": "38bce735-668d-4880-8c43-e1c1dd015357"
+    },
+    {
+      "claim_id": "a920acbf-42f2-4a8b-af98-3fbf13461fa8",
+      "result_id": "38bce735-668d-4880-8c43-e1c1dd015357"
+    },
+    {
+      "claim_id": "f607b6a1-0e72-48ee-aa2d-511cf2c1d68f",
+      "result_id": "62ccaa79-84d7-4917-8dec-0e802ac506e6"
+    },
+    {
+      "claim_id": "dc2bde38-6712-4ad3-b93f-b53d9f27f4b1",
+      "result_id": "62ccaa79-84d7-4917-8dec-0e802ac506e6"
+    },
+    {
+      "claim_id": "ae163324-0364-459e-a54c-9e38fe02bd2b",
+      "result_id": "62ccaa79-84d7-4917-8dec-0e802ac506e6"
+    },
+    {
+      "claim_id": "7b810a8b-711d-4b9e-aa32-24f552a2f947",
+      "result_id": "62ccaa79-84d7-4917-8dec-0e802ac506e6"
+    },
+    {
+      "claim_id": "8a0ec845-f39c-44dc-a8f9-e2fe3ca31528",
+      "result_id": "ee3e32b7-556d-4171-8eb6-92ad527d739b"
+    },
+    {
+      "claim_id": "076cc502-364d-4e4f-8c7e-c6122025a3bd",
+      "result_id": "4646bd0c-857f-4845-b3a5-a1fe3904ae74"
+    },
+    {
+      "claim_id": "ca1d37b7-0dae-4faf-8012-2377990ec7de",
+      "result_id": "4646bd0c-857f-4845-b3a5-a1fe3904ae74"
+    },
+    {
+      "claim_id": "a26eb3f0-a615-437c-838d-951edef2620b",
+      "result_id": "4646bd0c-857f-4845-b3a5-a1fe3904ae74"
+    },
+    {
+      "claim_id": "3b43b703-121f-4d40-a111-189ca3fe6adc",
+      "result_id": "4646bd0c-857f-4845-b3a5-a1fe3904ae74"
+    },
+    {
+      "claim_id": "e32f0c37-936d-4406-8d11-57728fca3231",
+      "result_id": "ff14fd13-5ab1-492d-9be8-ab02772b97e3"
+    },
+    {
+      "claim_id": "98dd02b5-b3f2-4582-b9bd-f804671a1575",
+      "result_id": "ff14fd13-5ab1-492d-9be8-ab02772b97e3"
+    },
+    {
+      "claim_id": "08625270-c704-4cdf-a596-52f47a18d96f",
+      "result_id": "b7f6e990-f970-472b-9075-647111339ea3"
+    },
+    {
+      "claim_id": "769ab3d0-c4e4-44ab-ba80-c3016f2dcd21",
+      "result_id": "b7f6e990-f970-472b-9075-647111339ea3"
+    },
+    {
+      "claim_id": "a8b7b414-e6f5-46b6-b76f-2f868414ee72",
+      "result_id": "51e74487-4515-4082-a91e-f7b425db5d85"
+    },
+    {
+      "claim_id": "4d35e9f2-cda1-4c7f-b04d-442798370031",
+      "result_id": "51e74487-4515-4082-a91e-f7b425db5d85"
+    },
+    {
+      "claim_id": "daf7f300-da31-4a13-84ff-625f13b82a4a",
+      "result_id": "51e74487-4515-4082-a91e-f7b425db5d85"
+    },
+    {
+      "claim_id": "b3af073c-27b8-4d30-88e1-82bb592448f2",
+      "result_id": "25d46df2-60bd-41ff-ae06-f89dd6600d7f"
+    },
+    {
+      "claim_id": "7bdc5106-8805-4716-8624-efc90d245697",
+      "result_id": "25d46df2-60bd-41ff-ae06-f89dd6600d7f"
+    },
+    {
+      "claim_id": "2a9cf38a-9538-483b-ac22-0cd30d5f8c1f",
+      "result_id": "c27757bd-9340-4da6-85c1-66c81f1820f7"
+    },
+    {
+      "claim_id": "62fb2e5a-255a-47b3-b3ea-e59a35f79ac5",
+      "result_id": "c27757bd-9340-4da6-85c1-66c81f1820f7"
+    },
+    {
+      "claim_id": "3e2ad0ea-9cdd-478d-8151-c81625ffa703",
+      "result_id": "bd21a1e4-ddaa-4adc-823b-68ef56ca2f21"
+    },
+    {
+      "claim_id": "f19c75a2-792e-45e5-81c0-bc0a59715742",
+      "result_id": "bd21a1e4-ddaa-4adc-823b-68ef56ca2f21"
+    },
+    {
+      "claim_id": "4c8498f5-7670-47ed-b9d3-e9852dbcc41b",
+      "result_id": "bd21a1e4-ddaa-4adc-823b-68ef56ca2f21"
+    },
+    {
+      "claim_id": "e435175a-2f7f-4839-bfc4-46a5f20a268c",
+      "result_id": "59574e53-a5d8-4d93-9f71-a5ccda4890b4"
+    },
+    {
+      "claim_id": "9533f383-c222-4ab8-a052-d8556fe13395",
+      "result_id": "59574e53-a5d8-4d93-9f71-a5ccda4890b4"
+    },
+    {
+      "claim_id": "8b9d0000-8abe-4e3d-802d-3f9e3a3005e9",
+      "result_id": "59574e53-a5d8-4d93-9f71-a5ccda4890b4"
+    },
+    {
+      "claim_id": "d4ce3576-34e3-4d2e-bdaf-1dd056431f49",
+      "result_id": "59574e53-a5d8-4d93-9f71-a5ccda4890b4"
+    },
+    {
+      "claim_id": "aba8ab67-c0bb-4d3a-b073-a3acd20a7944",
+      "result_id": "ff5f7bdd-9954-46dc-a062-76fa1a44a7fe"
+    },
+    {
+      "claim_id": "5cc224e7-c38d-4977-881f-9eb0491461a4",
+      "result_id": "ff5f7bdd-9954-46dc-a062-76fa1a44a7fe"
+    },
+    {
+      "claim_id": "b7a3b3b3-055c-420e-8d10-cbdca73bd6d5",
+      "result_id": "ff5f7bdd-9954-46dc-a062-76fa1a44a7fe"
+    },
+    {
+      "claim_id": "f760cdcb-af62-477e-a210-4eeb0cde1cfe",
+      "result_id": "c7352eb8-6940-4b5c-a014-b11521d8685d"
+    },
+    {
+      "claim_id": "fb80a4cd-7424-4269-bd63-6e7bfd343ea1",
+      "result_id": "896c526b-0c13-4c50-aa51-565886e5a27f"
+    },
+    {
+      "claim_id": "bc5af649-3365-4f9e-8e86-29ba281bfd33",
+      "result_id": "896c526b-0c13-4c50-aa51-565886e5a27f"
+    },
+    {
+      "claim_id": "2f24f9f0-9803-499f-8fd2-06f2aa4094a8",
+      "result_id": "896c526b-0c13-4c50-aa51-565886e5a27f"
+    },
+    {
+      "claim_id": "59a178ad-5b11-4762-ad0e-80ad4856ae93",
+      "result_id": "91706e31-add2-494d-869a-afd90c21356d"
+    },
+    {
+      "claim_id": "d3ce1516-fdad-4518-96cc-6d322b660f55",
+      "result_id": "91706e31-add2-494d-869a-afd90c21356d"
+    },
+    {
+      "claim_id": "9138eade-2aec-4d9a-b30e-8672794c3016",
+      "result_id": "91706e31-add2-494d-869a-afd90c21356d"
+    },
+    {
+      "claim_id": "3cb51212-1c6b-4f65-af7c-988d738550fa",
+      "result_id": "91706e31-add2-494d-869a-afd90c21356d"
+    },
+    {
+      "claim_id": "afe05d58-5bb4-4063-a22e-0aa22858f1e5",
+      "result_id": "e1c6dfa3-baa1-4cf7-ab7b-1488d22fed49"
+    },
+    {
+      "claim_id": "0b5293cb-5b1c-4c9e-bc2c-7f30c0e3fb3d",
+      "result_id": "e1c6dfa3-baa1-4cf7-ab7b-1488d22fed49"
+    },
+    {
+      "claim_id": "b9ca2e97-b790-4b1c-8457-e46898c4b988",
+      "result_id": "e1c6dfa3-baa1-4cf7-ab7b-1488d22fed49"
+    },
+    {
+      "claim_id": "e08a57b2-46dd-4825-a917-e6706e2c4603",
+      "result_id": "9125da9f-8cec-4c15-8089-ca0efb2563da"
+    },
+    {
+      "claim_id": "2c3209fb-12c5-4257-b977-b309a8b793c5",
+      "result_id": "9125da9f-8cec-4c15-8089-ca0efb2563da"
+    },
+    {
+      "claim_id": "e69b825a-07e5-4ba7-b692-e484e5654119",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "9d521433-8310-4106-be89-e4508db0484f",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "f5b508fe-ba99-41c5-8c6c-585b45367c12",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "03ba1044-1e7c-47d2-8be3-9610b5348450",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "c70c6135-45cf-4ee4-be17-b0712ade8320",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "951e9d56-05a0-46e5-a607-e133021122da",
+      "result_id": "752e3981-e9d6-4544-9c3a-5219465ee843"
+    },
+    {
+      "claim_id": "62d777c8-9394-4323-b88f-878b7a20956e",
+      "result_id": "b19369c7-3e68-47f7-9bdb-c95c30ca832e"
+    },
+    {
+      "claim_id": "7761d91f-4dcc-4f36-bff1-cf5c8d71405b",
+      "result_id": "b19369c7-3e68-47f7-9bdb-c95c30ca832e"
+    },
+    {
+      "claim_id": "a89774cc-5ddd-4e68-8050-968665671e3d",
+      "result_id": "b19369c7-3e68-47f7-9bdb-c95c30ca832e"
+    },
+    {
+      "claim_id": "b539eee2-3056-4ba0-8cb8-5dd07c0fc76e",
+      "result_id": "b19369c7-3e68-47f7-9bdb-c95c30ca832e"
+    },
+    {
+      "claim_id": "c910bb74-c6b0-4d22-a19a-71bcf1631b44",
+      "result_id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8"
+    },
+    {
+      "claim_id": "8243bdcd-4289-4309-967c-e51e06c53c76",
+      "result_id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8"
+    },
+    {
+      "claim_id": "da3f245f-de7b-4d82-99f2-fb5d88f629b6",
+      "result_id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8"
+    },
+    {
+      "claim_id": "25fb7efe-5b1d-4af7-a853-8f91e1105fea",
+      "result_id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8"
+    },
+    {
+      "claim_id": "a907ab7d-0006-4613-a1eb-75bc20931927",
+      "result_id": "446f9fb5-7c4e-440e-9306-e15f5a8d7aa8"
+    },
+    {
+      "claim_id": "e69b2119-ce78-4ff8-bfed-2e3b20bfb26e",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "41eb9d0c-3096-4abe-89fc-9fcbf5d3a6b6",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "bd4c8721-e267-4f81-97a0-b97f278811fd",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "b4223237-6e8f-42b9-8a08-e5ec63824132",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "3aec6a54-7ae6-44e2-9383-68be2b146cd3",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "50263bcd-b83a-49eb-bc14-c464543769f7",
+      "result_id": "664f0778-713b-4e3a-9531-654fec95b4f8"
+    },
+    {
+      "claim_id": "b552c40e-f3ff-4361-9d28-5e0958fc3a5b",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    },
+    {
+      "claim_id": "1cade0a7-ef11-412d-b153-5ce71602f380",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    },
+    {
+      "claim_id": "aad54016-2f1f-41fc-a83d-6a6e21f8caa1",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    },
+    {
+      "claim_id": "88b37a94-a69e-43b4-9312-bd902aaa15d2",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    },
+    {
+      "claim_id": "6bd39c16-1c46-4b08-a5be-a1a40e4ddaf3",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    },
+    {
+      "claim_id": "1ad59525-4276-4040-815a-428787d7829e",
+      "result_id": "ff84c2c1-3444-4e40-8d11-c22fba659628"
+    }
+  ],
+  "comparisons": []
+}

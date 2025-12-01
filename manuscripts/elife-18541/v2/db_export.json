@@ -1,0 +1,1340 @@
+{
+  "submission": {
+    "id": "44606b0f-315f-41fe-a524-a9f994bc23ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:39:51.645657Z",
+    "updated_at": "2025-11-30T22:39:51.645657Z"
+  },
+  "content": [
+    {
+      "id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "submission_id": "44606b0f-315f-41fe-a524-a9f994bc23ff",
+      "content_type": "manuscript",
+      "content_text": "# Selecting the most appropriate time points to profile in high-throughput studies\n\n## Authors\n\n- Michael Kleyman<sup>1</sup>\n- Emre Sefer<sup>1</sup>\n- Teodora Nicola<sup>2</sup>\n- Celia Espinoza<sup>3</sup>\n- Divya Chhabra<sup>3</sup>\n- James S Hagood<sup>3</sup>\n- Naftali Kaminski<sup>5</sup>\n- Namasivayam Ambalavanan<sup>2</sup>\n- Ziv Bar-Joseph<sup>1</sup> ([ORCID: 0000-0003-3430-6051](https://orcid.org/0000-0003-3430-6051)) \u2020\n\n### Affiliations\n\n1. Machine Learning and Computational Biology School of Computer Science, Carnegie Mellon University Pittsburgh United States\n2. Division of Neonatology, Department of Pediatrics University of Alabama at Birmingham Birmingham United States\n3. Division of Respiratory Medicine, Department of Pediatrics University of California San Diego United States\n4. CARady Children\u2019s Hospital San Diego San Diego United States\n5. Section of Pulmonary, Critical Care and Sleep Medicine School of Medicine, Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiological systems are increasingly being studied by high throughput profiling of molecular data over time. Determining the set of time points to sample in studies that profile several different types of molecular data is still challenging. Here we present the Time Point Selection (TPS) method that solves this combinatorial problem in a principled and practical way. TPS utilizes expression data from a small set of genes sampled at a high rate. As we show by applying TPS to study mouse lung development, the points selected by TPS can be used to reconstruct an accurate representation for the expression values of the non selected points. Further, even though the selection is only based on gene expression, these points are also appropriate for representing a much larger set of protein, miRNA and DNA methylation changes over time. TPS can thus serve as a key design strategy for high throughput time series experiments. Supporting Website: www.sb.cs.cmu.edu/TPS\n\n## Introduction\n\nTime series experiments are very commonly used to study a wide range of biological processes. Examples include various developmental processes (Roy et al., 2010), stem cell differentiation (Sperger et al., 2003), immune responses (Yosef and Regev, 2011), stress responses (Gitter et al., 2013) and several others. Indeed, analysis of the largest repository of gene expression experiments, the Gene Expression Omnibus (GEO), determined that roughly a third of these datasets come from experiments profiling dynamic processes over time (Zinman et al., 2013).\n\nWhile mRNA gene expression data have been the primary source of high-throughput time series data, more recently several other genomic regulatory features are profiled over time. These include miRNA expression data (Schulz et al., 2013), ChIP-Seq studied to determine TF targets (Chang et al., 2013) and several types of epigenetic markers including DNA methylation (Singer et al., 2014), histone modifications (Paige et al., 2012) and more. In fact, with the rise in our ability to perform such high-throughput time series analysis, many researchers are now combining a few or several of these time series profiling experiments in a single experiment (Chang et al., 2013; Buenrostro et al., 2015) and then integrate these datasets to obtain a better understanding of cellular activity.\n\nWhile integrated analysis of high-throughput genomic datasets can greatly improve our ability to model biological processes and systems, it comes at a cost. From the monetary point of view, these costs include the increased number of Seq experiments required to profile all types of genomic features. While such costs are common to all types of studies utilizing high-throughput data, they can be prohibitively high for time series based studies since they are multiplied by the number of time points required, the number of repeats performed for each time point and the number of different types of data being profiled. Importantly, even if the budget is not an issue, the ability to obtain enough samples for profiling all genomic features at all time points may be challenging, if not completely prohibitive.\n\nOne of the key determinants of the experimental and sample acquisition costs associated with time series studies is the number of time points that are being profiled. In most studies, the first and last time point can usually be determined by the researcher (for example, the time from birth to full lung structural development and maturation in mice). However, the number of samples required between these two points and the sampling frequency (given a fixed budget) are often hard to determine based on phenotypic observations since the molecular events of interest may precede such phenotypic events. To date, sampling rates have largely been determined using one of two ad-hoc protocols. The first utilized uniform sampling across the duration of the study (Li et al., 2013) with the number of samples constrained by the available budget and samples. The second relied on some (conceived or real) knowledge of the process, often based on phenotypic observations. These studies, especially for responses though also for development, have often used nonuniform sampling (Schulz et al., 2013; Bar-Joseph et al., 2003a) though it is hard to determine if such sampling misses important molecular events between the sampled points.\n\nRelatively, little work has focused so far on the selection of time points to sample in high throughput time series studies. Singh et al (Singh et al., 2005) and Rosa et al (Rosa et al., 2012) presented an iterative process which starts with profiling a small number of time points and then selects the next time point either based on an Active Learning method (Singh et al., 2005) or based on using prior related experiments (Rosa et al., 2012). Next the selected point is profiled and the process is repeated until a stopping criteria has been reached. Both of these methods require several iterations until the final time series is profiled, which can drastically lengthen the experiment time and can introduce additional biases making them less useful in practice. In addition, these methods employ a stopping criteria that does not take into account the full profile and also require that related time series expression experiments be used to select the point, which may be problematic when studying new processes or treatments.\n\nHere, we propose the first non iterative method to address the issue of sampling rates across all different genomic data types. Our method starts by selecting a small set of genes that are known to be associated with the process being studied (while the full set is often unknown, for most processes a small set is usually known in advance). Next, we use a cheap array-based technology to sample these genes at a high, uniform rate across the duration of the study. Note that unlike standard curve fitting algorithms, a method for selecting time points for these experiments is required to accommodate over a hundred curves (for all genes) simultaneously, and we discuss various ways to formulate this as an optimization problem. To solve this optimization problems, we developed the Time Points Selection method (TPS), an algorithm that uses spline based analysis and combinatorial search to select a subset of the points that, when combined, provide enough information for reconstructing the values for all genes across all time points. The number of points selected can either be set in advance by the user (for example, based on budget constraints) or can be defined as a function of the reconstruction error. The selected time points are then used for the larger, genome-wide experiments across the different types of data being profiled.\n\nTo test and evaluate the method we applied it to study lung development in mice. Normal development of lung alveoli through the process of alveolar septation is a dynamic, coordinated process that requires the accurate spatial and temporal integration of signals. We currently lack a comprehensive understanding of the dynamic networks that govern normal alveolar septation. Thus, lung development can serve as an ideal test case for TPS since a variety of different time series genomic datasets are needed to enable accurate reconstruction of networks regulating this process. As we show, TPS was able to successfully identify time points for reconstructing the mRNA profiles of selected genes and these points improved upon uniform based sampling for such points. Further, we show that the set of points selected based on the analysis of this limited set of highly sampled mRNAs is also appropriate for sampling a much larger, unbiased, set of miRNA profiles as well as to determine the temporal protein levels of over 1000 proteins. Finally, we show that the mRNA samples can also be used to determine the optimal sampling points for a DNA methylation study of the same developmental process.\n\n## Results\n\n### The time points selection (TPS ) method\n\nWe developed TPS to select a subset of k time points from an initial larger set of n points such that the selected subset provides an accurate, yet compact, representation of the temporal trajectory. Figure 1 presents an overview of the method. TPS utilizes splines to represent temporal profiles and implements a cross-validation strategy to evaluate potential sets of points. Following initialization which is based on the expression values, we employ a greedy search procedure that adds and removes points until a local minima is reached (Materials\u00a0and\u00a0methods). The resulting set is then used for the larger genomic and epigenetic experiments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-v2.jpg)\n\n**Figure 1.:** Clockwise from top left.\u00a0Given a dense sampling of a selected subset of genes (a) we select an initial set of points (b) using the initialization method described in the text. Next, we fit a spline to the selected points for each gene (c) and evaluate the error on all other points. We perform a greedy search process (d) which iteratively removes and adds points to improve the test data fit resulting in the final set of points (e). The reconstructed curves are fitted to all genes (f) and an overall error is computed and compared to the theoretical limit (noise) to determine the ability of the selected number of points to fit the data.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (Singh et al., 2005) which used an active learning method based on dynamic programming.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The points labeled metricA, metricB, and metricC all use the dynamic initialization approaches, while the max distance points use static initialization.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp3-v2.jpg)\n\nTo test the usefulness of TPS , we used it to determine time points for a lung development study in mice. We first profiled the expression of 126 genes known or suspected to be involved in lung development using NanoString (See Appendix Methods for a list of the selected genes and the reason each was selected). We then used TPS analysis of these experiments to select a subset of time points for profiling the expression of a larger, unbiased, set of miRNAs. Finally, we have used TPS to design time series experiments to study DNA methylation patterns for a subset of the genes.\n\n### TPS identifies subset of important time points across multiple genes\n\nWe have tested the performance of TPS by using it to select subsets of points ranging from 3 to 25 and evaluating how well these can be used to determine the values of non-sampled points. To determine the accuracy of the reconstructed profiles using the selected points, we computed the average mean squared error for points that were not used by the method (Materials\u00a0and\u00a0methods). The results are presented in Figure 2. The figure includes a comparison of our method with two baseline methods: a random selection of the same number of points and uniform sampling of points within the range being studied, a method that is commonly used for time series expression profiling as discussed above. We have also compared the performance of the different strategies for initializing the set of points as discussed in Appendix\u00a0Method (sorting by absolute differences or by equal partition) and between different methods for searching for the optimal subset (simulated annealing, weighting genes by cluster size, and adding/removing multiple time points per iteration, Appendix\u00a0Methods). Finally, Figure 2 also presents the repeat noise values which is the theoretical limit for the performance of any profile reconstruction method.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-v2.jpg)\n\n**Figure 2.:** Error comparisons of TPS variants to uniform selection of points and noise. Absolute difference - Greedy iterative addition with absolute difference initialization (Algorithm 1, Appendix\u00a0Methods). Simulated annealing - Iterating using simulated annealing with absolute difference initialization. Weighted error - Selection based on cluster rather than individual gene errors. See Appendix Methods for details.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The 75% random data was created by replacing 75% of the gene time series with random value time series selected from a Gaussian distribution with mean 0 and standard deviation equal to the noise of the original data.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp4-v2.jpg)\n\nAs expected, we find significant performance improvement when using TPS when compared to randomly selected points. Importantly, we also see a significant and consistent improvement (for all sizes of selected time points) over uniform sampling highlighting the advantage of condition-specific sampling decisions. Sorting initial points by absolute values further improves the performance highlighting the importance of initialization when searching large combinatorial spaces. Simulated annealing, weighting, and multiple point selection improve performance as well. As the number of points used by TPS increases, it leads to results that are very close to the error represented by noise in the data (0.108) ( Figure 2\u2014figure supplement 1).\n\nFigure 3 presents the reconstructed and measured expression values when using TPS to select 13 time points (less than a third of the points that were profiled). Note that even though each of these genes has distinct trajectory and inflection points, the selected set of time points enable TPS to fit all quite accurately without overfitting (See Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2 for figures of several other genes and for figures reconstructed by using the best 8 time points as determined by TPS , respectively).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-v2.jpg)\n\n**Figure 3.:** (a). Pdgfra. , (b). Eln. , (c). Inmt.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-figsupp2-v2.jpg)\n\n### Identified time points using mRNA data are appropriate for miRNA profiling\n\nTo test the usefulness of our method for predicting the correct sampling rates for other genomic datasets, we next profiled mouse miRNAs for the same developmental process. miRNAs have been known to regulate lung development (Sessa and Hata, 2013) and several miRNAs are differentially expressed during this developmental process (Williams et al., 2007). Several of these are also coordinately activated with various TFs to control specific transitions during development (Schulz et al., 2013). Thus, any large scale effort to model lung development would require the profiling of miRNAs as well. Unlike the mRNA dataset, which utilized prior knowledge to profile less than 1% of all genes, the miRNA dataset contained a much larger number of miRNAs ($6^00$). Thus, the miRNA data represent an unbiased sample providing information on whether using one type of genomic data can be helpful for determining rates for other types. In our analysis, we normalized miRNA values by variance mean normalization (Bolstad et al., 2003).\n\nTo test TPS on this dataset, we used the mRNA expression data to select time points and then used the miRNA expression values for the selected time points to reconstruct the complete trajectories for each miRNA. The results are presented in Figure 4. As can be seen, when using the points selected based on the mRNA data we achieve a much lower error when compared to the error resulting from using the same number of uniform or random points (p<0.01 for random based on randomization analysis) highlighting the relationship between the two datasets and the ability to use one to determine points for the other. More generally, even though the noise in the miRNA data is higher than for the mRNA dataset, relative ordering of the performance of each of the methods is similar to the mRNA results in Figure 2. This serves as a strong indication that mRNAs can serve as a general proxy for selecting time points for other genomic datasets. Figure 4b presents the error achieved when using the miRNA data itself to select the set of points (evaluated on the miRNA data). As expected, the performance when using the miRNA data itself is better than when using the mRNA data. However, when taking into account the inherent noise in the data the differences are not large. For example, when using the 13 selected mRNA points, the average mean squared error is 0.4312 whereas when using the optimal points based on the miRNA data itself the error is 0.4042.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-v2.jpg)\n\n**Figure 4.:** (a) TPS\u00a0reconstruction error when using the mRNA data to select time points for the miRNA experiments. Results of random and uniform selection as well as repeat noise error are also presented for comparison. TPS\u00a0variants shown are the same two presented in Figure 2. (b) Error of splines with points selected by training TPS\u00a0on the actual miRNA data itself, using the maximum absolute difference initialization.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Comparison of the reconstruction error when using the points selected by TPS, uniform selection of points, and when using the same number of random points from the overall set of sampled points. (b) Error comparisons of TPSto noise, and various search and initialization options discussed in Methods.\n\nFigure 4\u2014figure supplement 1 presents the reconstructed and measured expression values for a few miRNAs based on time points identified using the mRNA dataset. As with the mRNA data, the ability to accurately reconstruct different miRNA profiles highlights the importance of selecting a global set of points that can fit all genes and miRNAs in our study.\n\nWe have also analyzed the performance of TPS when using the mRNA data to select sampling time points for profiling the levels of more than 1000 proteins. We observed results that are very similar to the results obtained for the miRNA time point selection. Specifically, the points selected by TPS\u00a0lead to reconstruction errors that are lower than those observed for uniform sampling or for a random set of the same number of points further demonstrating the general applicability of our method. See Appendix Results for details.\n\n### Using TPS to select time points for DNA methylation analysis\n\nIn addition to mRNA and miRNA expression data, epigenetic data have been increasingly studied in time series experiments (Talens et al., 2010; Schneider et al., 2010). To test the ability of the mRNA data to determine the\u00a0appropriate points for DNA methylation analysis, we used targeted bisulfite sequencing to profile three CpG-enriched regions for 13 genes at 8 of the 42 time points used for the mRNA and miRNA studies (Materials\u00a0and\u00a0methods). We next applied TPS to the mRNA data of these 8 points to select the best subest of 4 points and compared the selected points to those that would have been selected using the methylation data itself. The 4 points identified using the mRNA data (0.5, 5, 15, 26) were exactly the same as the ones selected using the methylation data indicating again that mRNA data is a good proxy for the dynamics of the epigenetic data as well. Figure 5\u2014figure supplement 1 presents the reconstructed splines over the identified points for several genomic methylation loci. Figure 5 presents the methylation and expression curves for 3 genes: Akt,1 Cdh11, and Tnc. These were the genes with the strongest negative correlation between their methylation and expression. As can be seen, in several cases we observed strong negative or positive correlations between the two datasets in the time points we used serving as another indication for the ability to use one dataset to select the sampling points for the other. See Figure 5\u2014figure supplement 2 for correlation of all genes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-v2.jpg)\n\n**Figure 5.:** (a). Akt1. , (b). Cdh11. , (c). Tnc.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The red circles are the Pearson correlation over all eight points and the blue triangles are the Pearson correlation for all subsets of 7 points.\n\n## Discussion\n\nTime series gene expression experiments are widely used in several studies. More recently, advances in sequencing and proteomics are enabling the profiling of several other types of genomic data over time. Here we focused on lung development in mice with the goal of identifying an optimal set of time points for profiling various genomic and proteomic data types for this process.\n\nAn important question is: Whether a better selection of time points really leads to observations that are missed when using an inferior set of points (even if the number of points is the same)? To answer this question we looked at several prior studies that profiled mouse lung development over time using various high throughput assays. Table 1 presents 9 representative studies and lists the biological data that was profiled and the time points that were used. As can be seen, while certain time points seem to be widely used across studies (for example, 7d) others were profiled in only one or two of the studies (2d, 10d, three weeks). This raises several issues. First, it is very hard to compare or combine these datasets (for example, protein levels were not profiled on day 7(Cox et al., 2007) whereas all mRNA levels were). It also makes it hard to determine if differences between DE genes or miRNAs between these studies are the result of differences in the underlying conditions studied (for example, when testing for mutants or treatments) or simply the result of different sampling. Finally, each of these studies may have missed key genes, proteins or miRNAs because of the sampling used restricting the ability of downstream analysis to use the data to model causal and regulatory events in lung development.\n\n**Table 1.**\n Summary of prior high throughput lung development studies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reference</th>\n      <th>Data types</th>\n      <th>Selected time points (Days)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>[Bonner et al., 2003]</td>\n      <td>mRNA expression</td>\n      <td>E9, E4, E17, 0, 7, 14, 28</td>\n    </tr>\n    <tr>\n      <td>[Mel\u00e9n et al., 2011]</td>\n      <td>mRNA expression</td>\n      <td>E16, E18, 0, 7, 14, 28</td>\n    </tr>\n    <tr>\n      <td>[Bhaskaran et al., 2009]</td>\n      <td>microRNA expression</td>\n      <td>E16, E19, E21, 0, 6, 14, 60</td>\n    </tr>\n    <tr>\n      <td>[Dong et al., 2011]</td>\n      <td>mRNA and microRNA expression</td>\n      <td>E12, E14, E16, 0, 2, 10</td>\n    </tr>\n    <tr>\n      <td>[Cox et al., 2007]</td>\n      <td>Protein expression levels</td>\n      <td>E12, E14, E18, 2, 14, 56</td>\n    </tr>\n    <tr>\n      <td>[Schulz et al., 2013]</td>\n      <td>mRNA and miRNA expression</td>\n      <td>0, 4, 7, 14, 42</td>\n    </tr>\n    <tr>\n      <td>[Cormack et al., 2010]</td>\n      <td>mRNA expression</td>\n      <td>0, 7, 14, adult</td>\n    </tr>\n    <tr>\n      <td>[Mager et al., 2007]</td>\n      <td>mRNA expression</td>\n      <td>E15, E17, E19, E21, 1, 14, 84</td>\n    </tr>\n    <tr>\n      <td>[Mariani et al., 2002]</td>\n      <td>mRNA expression</td>\n      <td>E18, 1, 4, 7, 10, 14, 21, adult</td>\n    </tr>\n  </tbody>\n</table>\n\nTo illustrate these problems we compared the resulting curves using three of the sampling rates from Table 1 to the reconstructed curves obtained by using TPS to select the optimal 5 and 8 time points. For example, the points selected by Schulz et al. (2013) are 0, 4, 7, 14 and 28 (since 28 is last day in our analysis we used it instead of 42). In contrast, TPS selects 0.5, 6, 9.5, 19 and 28. As can be seen in Figure 6, important expression changes in key genes are missed by using the arbitrary points while the TPS points are able to correctly reconstruct these profiles even though the total number of points is the same (5). More globally, the error for the arbitrary set of selected points is much higher on average (Appendix 2\u2014Table 4). Similar results are obtained for the other sampling rates used in the past (Figure 6, Appendix 2\u2014Table 4) and when comparing TPS\u00a0to iterative methods previously suggested for selecting the set of points to profile (Figure 1\u2014figure supplement 1). This indicates that accurate selection of time points can have a large impact on the ability of the study to identify key genes and events. See also Appendix Results for a discussion about the importance of the differences between the TPS\u00a0and prior work results for selected genes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig6-v2.jpg)\n\n**Figure 6.:** Dark green curves are the reconstructed profiles based on the points profiled by prior studies. Light green and red curves are based on the points selected by TPS . As can be seen, even when comparing results from using the same number of points, TPS can identify key events for some of the genes that are missed when using the phenotype based sampling rates. Subfigures a,b, and c are a piecewise linear \ufb01t over points 0.5, 7.0, 14.0, 28.0 . Subfigures d,e, and f are a piecewise linear fit over points 0.5, 2.0, 14.0, 28.0. Subfigures g,h, and i are a piecewise linear fit over points 0.5, 4.0, 7.0, 14.0, 28.0.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Eln/P54320, (b) F13a1/Q8BH61, (c) Chil1/Q61362.\n\nOur method relies on a very small subset of genes that are known to be involved in the process studied for the initial (highly sampled) set of experiments. While such set is known for several processes, there may be cases where very little is known about the biological process and so it may be hard to obtain such set. TPS\u00a0can still be applied to determine sampling rates for such processes using a small random set of genes. To illustrate this we repeated the analysis presented in Results using only the measured values of 25% of genes in our original set and replacing the values for the other genes with random profiles. As we show in Figure 2\u2014figure supplement 2, even when using such set, the time points selected by TPS\u00a0greatly improve upon an arbitrary set of the same number of time points. Since in most time series experiments at least 25% of the genes are differentially expressed (and in several cases a much larger fraction, (Zhou et al., 2009; Shi et al., 2015) a random selection of genes is likely to exhibit similar results even for poorly understood processes.\n\nBeyond the analysis of a specific type of data, several studies have now been profiling multiple types of genomic data over time. Such studies need to agree on a set of time points which would be common to all experiments so that these diverse types can be integrated to form a unified model (Chang et al., 2013; Roy et al., 2010). To date, the selection of such points relied on ad-hoc methods. The processes being studied were either sampled uniformly or based on prior knowledge. However, known properties of such systems were often been based on phenotypic observations which may not necessarily agree with the timing of molecular events. In addition, in many case studies of the same, or similar processes differed with respect to the time points that have been profiled. For example, early work on the analysis of cell cycle data in yeast utilized both uniform and nonuniform sampling (Spellman et al., 1998) and recent studies of circadian rhythms have followed a similar pattern (Storch et al., 2002; Ueda et al., 2002). Similarly, more recent analysis of responses to flu diverged widely in the (nonuniform) sampling rates that were used (Shapira et al., 2009; Li et al., 2011).\n\nTPS addresses these problems by using a principled method for determining sampling rates. An important goal in the development of TPS was to enable it to be successfully applied to different types of biological datasets. As we show, a relatively inexpensive, gene centric, method provides a very good solution for RNA expression profiling as well as other types of data including miRNAs and DNA methylation. Thus, a combined experiment can be fully designed using our method.\n\nWhile we evaluated TPS\u00a0on several types of high throughput data, we have only tested it so far on data for a specific biological process (lung development in mice). While we believe that such data is both challenging and representative and thus provides a good test case for the method, analysis of additional datasets may identify new challenges that we have not addressed and we leave it to future work to address these.\n\nTPS, including all initialization methods discussed, is implemented in Python and is available on the supporting website. We hope that as sequencing technology continues to advance, more and more studies would integrate diverse types of time series data and will utilize TPS in the design pipeline of their studies.\n\n## Materials and methods\n\n### mRNA and miRNA used in the study\n\nTo select the list of 126 genes used in the NanoString profiling we searched the literature for genes that have been linked to the following processes: (a) Cell type specification genes (e.g. alveolar type I epithelial, alveolar type II epithelial, any epithelial, basal, endothelial, mesenchymal, pericyte, fibroblast, monocyte), (b) genes known to be up or down regulated during septation, (c) genes known to be altered in DNA methylation during development, (d) genes known to be involved in septation, (e) genes known to be regulated by miRNA involved in septation, and (f) genes known to be regulated by DNA methylation during fibrosis. Appendix 2\u2014Table 1 contains a list of the selected genes and the process for which they were selected.\n\nFor the miRNA set we used a commercially available, unbiased, array (the nCounter Mouse miRNA Expression Assay Kit, NanoString).\n\n### mRNA and miRNA profiling and analysis\n\nA total of 240 samples were isolated by Laser Capture Microscopy (LCM) from murine lung at multiple time points (E16.5, P.05 to P14 every 12 hr, and P15 to P28 every 24 hr). The samples were used to prepare total RNA. RNA extraction was performed by miRNeasy MicroKit (Qiagen) following the manufacturer\u2019s protocol. RNA concentration and integrity were measured by using NanoDrop ND-2000 and 2200 Tape Station. A custom NanoString probe set (Reporter Code set and Capture Probe set) for 126 genes was designed and the nCounter Gene Expression Assay was performed using 50 ng total RNA. The data files produced by the nCounter Digital Analyzer were exported as a Reporter Code Count (RCC) file and data normalization was performed using the nSolver, the analysis software provided by Nanostring.\n\n### DNA methylation analysis\n\nMouse alveolar lung tissues attached to LCM caps were stored at \u221280\u00b0C until processing. DNA was extracted using the ZR Genomic DNA-Tissue MicroPrep kit (Zymo Research). Incubation with Digestion buffer and proteinase K was done overnight at 55\u00b0C in inverted tubes. 13 genes were chosen for targeted NextGen bisulfite sequencing (NGBS): Igfbp3, Wif1, Cdh11, Eln, Sox9, Tnc, Dnmt3a, Akt, Vegfa, Lox, Foxf2, Zfp536 and Src, based on published data (Cuna et al., 2015). Targeted NGBS was done on samples collected at: E16.5, E18.5, P0.5, P1.5, P2.5, P5, P10, P15, P19 and P26. Multiplex PCR was performed using 0.5 units of TaKaRa EpiTaq HS (Takara Bio,\u00a0Kusatsu, Japan) in 2x master mix. FASTQ files were aligned using open source Bismark Bisulfite Read Mapper using Bowtie2. Methylation levels were calculated in Bismark. Sites where the difference in methylation was less than 5% over the entire time period, those where there was a difference of >20% at a single time point and those with less than $3$ non zero values were removed from the analyses.\n\n### Problem statement\n\nOur goal is to identify a (small) subset of time points that can be used to accurately reconstruct the expression trajectory for all genes or other molecules being profiled. We assume that we can efficiently and cheaply obtain a dense sample for the expression of a very small subset of representative genes (here we use nanostring to profile less than 0.5% of all genes) and attempt to use this subset to determine optimal sampling points for the entire set of genes.\n\nFormally, let $G$ be the set of genes we have profiled in our dense sample, $T={t_{1},t_{2},\u2026,t_{T}}$ be the set of all sampled time points. We assume that for each time point we have $R$ repeats for all genes. We denote by $e_{g\u2062t}^{r}$ be the expression value for gene $g\\inG$ at time $t\\inT$ in the $r$\u2019th repeat for that time point. We define $D_{g}={e_{g\u2062t}^{r},t\\inT,r\\inR$ as the complete data for gene $g$ over all replicates and time points $T$.\n\nTo constrain the set of points we select, we assume that we have a predefined budget $k$ for the maximum number of time points we can sample in the complete experiment (i.e. for profiling all genes, miRNAs, epigenetic marks etc. using high-throughput seq experiments). We are interested in selecting $k$ time points from $T$ which, when using only the data collected at these $k$ points, minimizes the prediction error for the expression values of the unused points. To evaluate such a selection, we use the selected values to obtain a smoothing spline (De Boor, 1978; Bar-Joseph et al., 2003a; Wahba, 1990) function for each gene and compare the predicted values based on the spline to the measured value for the non-selected points to determine the error. In our problem, $t_{1}$ and $t_{T}$ define the first and end points, so they are always selected. The rest of the points are selected to maximize the following objective 1:\n\nProblem statement: Given $D_{g}$ for genes $g\\inG$, the number of desired time points $k$, identify a subset of $k-2$ time points in $T\u2216{t_{1},t_{T}}$ which minimizes the prediction error for the expression values of all genes in the remaining time points.\n\n### Spline assignments\n\nBefore discussing the actual procedure we use to select the set of time points, we discuss the method we use to assign splines based on a selected subset of points for each gene. There are two issues that need to be resolved when assigning such smoothing splines: (1) The number of knots (control points) and (2) their spacing. Past approaches for using splines to model time series gene expression data have usually used the same number of control points for all genes regardless of their trajectories (Subhani et al., 2010; Bar-Joseph et al., 2003b), and mostly employed uniform knot placements. However, since our method needs to be able to adapt to any size of $k$ as defined above, we also\u00a0attempt to select the number of knots and their spacing. We do this by using a regularization parameter for the fitted cubic smoothing spline where number of knots is increased until the smoothing condition is satisfied (Wahba, 1990). The\u00a0regularization parameter is estimated by leave-one-out cross-validation (LOOCV).\n\n### TPS : Iterative process to select points\n\nBecause of the highly combinatorial nature of the time points, we rely on a greedy iterative process to select the optimal points as summarized in Figure 1 (See Appendix Methods for pseudocode).\n\nThere are three key steps in this algorithm which we discuss in detail below.\n\n### Individual vs. cluster-based evaluation\n\nSo far, we assumed that error of each gene has the\u00a0same contribution to the overall error. However, this assumption ignores the fact that the\u00a0expression profiles of genes are correlated with the expression of other genes. To take the correlation between gene profiles into account, we also performed cluster based evaluation of genes where we analyzed the error by weighting each gene in terms of inverse of the numbers of genes in the cluster it belongs. This scheme ensures that each cluster contributes equally to the resulting error rather than each gene. We find clusters by k-means algorithm over time series-data by treating each gene as a point in $R^{T}$ space as well as over a vector of randomly sampled $T$ time points on fitted spline (Bishop, 2006). We use Bayesian Information Criterion (BIC) to determine the optimal number of clusters (Schwarz, 1978).\n",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "fa07cdf0-03a7-48bc-bac6-69177ce70b44",
+      "submission_id": "44606b0f-315f-41fe-a524-a9f994bc23ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Anshul Kundaje, Stanford University , United States\n\n## Review text\n\nDOI: [10.7554/eLife.18541.032](https://doi.org/10.7554/eLife.18541.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Determining sampling rates for high-throughput time series studies\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aviv Regev as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted these comments in an effort to crystallize our concerns about the novelty of this work. Before we render a binding decision, the Board asks that you respond soon to the essential concerns below in order to help us assess the technical advance you have achieved.\n\nSummary:\n\nTime course studies are critical for understanding biological processes. Facilitated by advances in sequencing technologies, high-throughput time series analyses are becoming more and more prevalent, and often more than one type of data is collected for each time point in order to probe/understand various aspects of cellular activity. Selecting the precise time points to use in such studies is challenging and often ad-hoc. In this manuscript, Kleyman et al. describe Time Point Selection (TPS), a method designed to address the problem of determining sampling rates in time series studies. The idea behind TPS is as follows:\n\n1) start with a small set of genes known to be important for the process to be studied;\n\n2) use cheap array-based experiments (e.g. NanoString) to measure expression of these genes at a high, uniform, sampling rate;\n\n3) use the data to infer a subset of points that can be used to optimally \"reconstruct\" the entire data set from step 2 (importantly, the authors implement a rigorous, spline-based procedure for identifying optimal time points);\n\n4) use the time points selected in step 3 for the genome-wide experiments.\n\nThe authors applied TPS to lung development in mice, and showed that the time points identified by TPS are better than uniform sampling and even phenotype-based sampling (in terms of reconstructing the mRNA profiles of the selected genes), and can be used not only for time series expression data, but also for miRNA and methylation time series data. The general strategy implemented in TPS has potential and could prove useful for future time course studies.\n\nEssential concerns:\n\n1) All the reviewers felt that the method is only compared to the most trivial baselines (uniform and random). E.g. there is no comparison to even the authors\u2019 own 2005 paper on a closely related setup. There are various existing works on selecting knots for splines. One could use them, for example, by first fitting a spline to all the high-rate data, and then select points for that curve. Does TPS work better than non-trivial baselines? The authors must perform systematic comparisons to related work such as Rosa et al. 2012, Optimal Timepoint Sampling in High-Throughput Gene Expression Experiments. Further, the paragraph in the Discussion section showing the advantage of using TPS over phenotype-based sampling should be moved into the main text and presented clearly as this is a critical part of the paper.\n\n2) All the reviewers also felt the manuscript required additional clarity and specific comments are below.\n\n3) Since TPS uses an iterative algorithm for solving an optimization problem with many local optima, the initialization procedure is critical. I appreciate the fact the authors tested multiple procedures for initialization, and when using TPS one can try all initialization procedures (and in the end select the one with the best results on the left-out data). It is not clear, however, whether the software implemented by the authors tests all these initialization procedures.\n\n4) In addition, the initialization metrics/methods are confusing. The Methods and Supplementary Methods sections talk about \"uniform\", \"intervals of equal sizes\", \"max distance\", metricA, metricB, and metricC. But it is not clear what initialization method was used in different analyses/figures. What procedure was used in Figure 1? The figure caption should mention that. The authors should decide on specific names for the different initialization methods, and use them consistently throughout the paper. Also, some figures present redundant results. Figure 1\u2014figure supplement 1 presents results for \"max distance\", metricA, metricB, and metricC. Figure 1\u2014figure supplement 2 presents \"max distance\", metricA, metricB, and metric, random points. So Figure 1\u2014figure supplement 1 could be removed.\n\n5) The \"iterative improvement\" procedures are also confusing. The method presented in Methods optimizes the mean squared error (on the left out data points) by iteratively removing/adding one point at a time. I assume this method was used in Figure 1. Then, in Figure 2A, what does \"absolute difference mean\"? (I assume this refers to an initialization procedure, right?) The way the authors name the combinations of search and initialization procedures in Figure 2 is very confusing. Some names reflect an initialization procedure (Uniform Selection), other a search procedure (Simulated Annealing), others an evaluation criterion (Weighted Error). Thus, the results presented in Figure 2B are confusing, and neither the caption nor the main text clarify what is being tested. Similarly for Figure 4.\n\n6) For the miRNA data, the authors perform a comparison of results using mRNA versus miRNA data for deciding the sampling time points. But the way the results are presented is again confusing. In the main text the authors say: \"The results are presented in Figure 4. In addition to the comparison included in the mRNA figure, the miRNA figure includes the optimal results for using the actual miRNA data (as opposed to mRNA data) to select the points.\" But the results using the miRNA data are not in that figure.\n\n7) It is nice that the project has a website but it looks mostly incomplete. Can the authors make the site a full-fledged web service so novice users and biologists with no programming background can use the software? Users should be able to upload a time series dataset and receive results with interactive visualization.\n\n8) There is only one case study. The method is described as a broad method, but since it was applied to one process, it should be stated more carefully that it is a general method. Perhaps the authors should focus on this case study without the need to \"sell\" the method as the primary focus of the study.\n\n9) The examples in Figure 6 are impressive. But how typical are they? What is the distribution of MSE across genes with TPS and with predefined timepoints?\n\n10) Performance curves (Figure 2, 4). Is the benefit due to a small number of genes, or consistent across the genome? It would be useful to show scatter plot (across genes) of MSE with TPS and with the best baseline.\n\n11) Figure 5. How were these three genes selected? Are the correlations surprisingly strong when corrected for multiple comparisons? In 5A, the correlation is probably dominated by an outlier (third green marker) otherwise It is hard to see that the two curves are strongly anti-correlated. A similar outlier is also in Figure 6\u2014figure supplement 1C. Accompanying with a scatter plot would clarify the relation between the two. Also, compute confidence-interval for that correlation using bootstrap.\n\n12) Figure 2: Seems that the uniform baseline was omitted from the left panel, please add it. Please also provide error bars for TPS and uniform baseline (on the left panel) by bootstrapping across the set of genes.\n\n13) Subsection \u201cIdentified time points using mRNA data are appropriate for miRNA profiling\u201d, second paragraph: \"Using the selected based on mRNA data [\u2026] random points (p<0.01)\". What is the p-value for the uniform baseline?\n\n14) There is a line in the paper that says 'performance is very similar [...].0.43 [\u2026] 0.40\". Provide a measure supported by a statistical test.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Selecting the most appropriate time points to profile in high-throughput studies\" for further consideration at eLife. Your revised article has been favorably evaluated by Aviv Regev as the Senior Editor, a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below by the referees. We ask that you pay close attention to these specific items, which we call out here, and are in the specific reviews below:\n\n1) The revised version still has formatting issues. The response refers to Table 5, but no such table is given; figures are not numbered and provided separately from their captions, which makes it hard to follow and comment.\n\n2) The new Figure 5 replaced outlier genes. The main text should explain how the 3 examples shown were selected.\n\n3) We do not see a benefit in having the left panel of Figure 2. In their response, the authors say they wanted to show the difference between TPS and uniform selection. But panel (A) shows random selection, not uniform selection. Random selection is a made-up baseline designed to make TPS look good. Now that they have better baselines comparisons, the paper does not need it, and panel (A) can be removed.\n\n4) Figure 3. Replace \"Rem points\" with \"remaining points\".\n\n5) The authors mentioned that they \"improved the caption of Figure 1 to explicitly state which initialization method is used for each result\". But Figure 1 caption is unchanged. (They did clarify other figure captions.)\n\n6) The authors added Figure 4\u2014figure supplement 3 to show the performance of TPS trained on miRNA data. But that plot could/should be included directly in Figure 4. Otherwise it is hard for the reader to compare TPS when trained on mRNA versus miRNA data. Also, since there are several versions of TPS, which one was used in Figure 4\u2014figure supplement 3? These kinds of details are still missing.\n\n7) Some of the figures are still of inadequate quality. Some plots have a strange aspect ratio (e.g. Figure 5). Several plots do not have a y-axis label (e.g. Figure 3). Sometimes the labels are incomplete (e.g. \"Error\" in the comparison to Singh et al.; is it mean squared error?) Overall, the paper is still difficult to follow. (The fact that all references appear as \"?\" in the PDF also makes the paper hard to read. I assume the text file was not processed correctly during submission. But shouldn't the author verify that before submitting the paper?)\n\nReviewer #1:\n\nThe authors addressed most of the concerns raised. Most importantly, the authors added some evaluation to other approaches for selecting time points, and replaced results based on outliers.\n\nThe revised version still has formatting issues. The response refers to Table 5, but no such table is given; figures are not numbered and provided separately from their captions, which makes it hard to follow and comment.\n\nReviewer #2:\n\nThe authors addressed several comments from reviewers. I am now ok with the substance of the paper. While it would be useful to see validation on additional data/systems, I appreciate the difficulties in getting additional data sets for further testing of the method.\n",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "da3506ea-50c4-4487-a2ea-8b7fca516c38",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C1",
+      "claim": "Roughly a third of datasets in the Gene Expression Omnibus (GEO) come from experiments profiling dynamic processes over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, analysis of the largest repository of gene expression experiments, the Gene Expression Omnibus (GEO), determined that roughly a third of these datasets come from experiments profiling dynamic processes over time (Zinman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zinman et al., 2013, which analyzed the GEO repository.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "4ffec167-a217-4469-8faf-54ddebda8e03",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C2",
+      "claim": "miRNAs have been known to regulate lung development.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNAs have been known to regulate lung development (Sessa and Hata, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sessa and Hata, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "a416a059-7842-4124-bed6-432791b3f89e",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C3",
+      "claim": "Several miRNAs are differentially expressed during lung developmental process.",
+      "claim_type": "EXPLICIT",
+      "source": "several miRNAs are differentially expressed during this developmental process (Williams et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Williams et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "d3f516eb-c74b-415a-b20b-be830c4cc5ac",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C4",
+      "claim": "Several miRNAs are coordinately activated with various TFs to control specific transitions during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these are also coordinately activated with various TFs to control specific transitions during development (Schulz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Schulz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "0a9d1b7b-37c3-475f-b032-e2a10ed9ff38",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C5",
+      "claim": "TPS utilizes expression data from a small set of genes sampled at a high rate.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS utilizes expression data from a small set of genes sampled at a high rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a description of the TPS method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "75e6551d-506f-4c62-8176-aea0a8ea6c24",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C6",
+      "claim": "The points selected by TPS can be used to reconstruct an accurate representation for the expression values of the non selected points.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show by applying TPS to study mouse lung development, the points selected by TPS can be used to reconstruct an accurate representation for the expression values of the non selected points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented in the manuscript, particularly in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "10687ec7-2fff-43e7-b4a2-253fd45bdc51",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C7",
+      "claim": "Even though the selection is only based on gene expression, these points are also appropriate for representing a much larger set of protein, miRNA and DNA methylation changes over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, even though the selection is only based on gene expression, these points are also appropriate for representing a much larger set of protein, miRNA and DNA methylation changes over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 4 and 5, showing miRNA and DNA methylation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "e22f661a-220c-4ed8-b1df-27e79e4502a1",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C8",
+      "claim": "A total of 240 samples were isolated by Laser Capture Microscopy (LCM) from murine lung at multiple time points.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 240 samples were isolated by Laser Capture Microscopy (LCM) from murine lung at multiple time points (E16.5, P.05 to P14 every 12 hr, and P15 to P28 every 24 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "62fde7c6-c43b-4dba-b82a-20d6db471a55",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C9",
+      "claim": "126 genes known or suspected to be involved in lung development were profiled using NanoString.",
+      "claim_type": "EXPLICIT",
+      "source": "We first profiled the expression of 126 genes known or suspected to be involved in lung development using NanoString (See Appendix Methods for a list of the selected genes and the reason each was selected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "ccb3c98e-ae44-402d-9c77-bd2d90f81829",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C10",
+      "claim": "TPS shows significant performance improvement when compared to randomly selected points.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we find significant performance improvement when using TPS when compared to randomly selected points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 2, which compares TPS to random selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "2cd7a818-16f6-4c61-bcdb-87a983090e6f",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C11",
+      "claim": "TPS shows significant and consistent improvement over uniform sampling for all sizes of selected time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also see a significant and consistent improvement (for all sizes of selected time points) over uniform sampling highlighting the advantage of condition-specific sampling decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 2, which compares TPS to uniform sampling across different numbers of selected points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "c480e0f9-578b-439d-add3-643c8296c48f",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C12",
+      "claim": "As the number of points used by TPS increases, it leads to results that are very close to the error represented by noise in the data (0.108).",
+      "claim_type": "EXPLICIT",
+      "source": "As the number of points used by TPS increases, it leads to results that are very close to the error represented by noise in the data (0.108) ( Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 1, with a specific noise value of 0.108.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "6d1ba25a-4235-49d6-97c6-ec0c4bcdf797",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C13",
+      "claim": "When using the points selected based on the mRNA data, a much lower error is achieved when compared to the error resulting from using the same number of uniform or random points (p<0.01 for random based on randomization analysis).",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, when using the points selected based on the mRNA data we achieve a much lower error when compared to the error resulting from using the same number of uniform or random points (p<0.01 for random based on randomization analysis)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis (p<0.01) and data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "cd166659-1c26-48d7-a8f5-ef99948197ce",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C14",
+      "claim": "When using the 13 selected mRNA points, the average mean squared error is 0.4312 whereas when using the optimal points based on the miRNA data itself the error is 0.4042.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when using the 13 selected mRNA points, the average mean squared error is 0.4312 whereas when using the optimal points based on the miRNA data itself the error is 0.4042.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides specific numerical values for reconstruction errors under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "2f5281e8-1b78-44d3-80cd-88814b159c92",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C15",
+      "claim": "The 4 points identified using the mRNA data (0.5, 5, 15, 26) were exactly the same as the ones selected using the methylation data.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4 points identified using the mRNA data (0.5, 5, 15, 26) were exactly the same as the ones selected using the methylation data indicating again that mRNA data is a good proxy for the dynamics of the epigenetic data as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by direct comparison of time points selected by different methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "cb31c34c-8b1b-49b3-a34f-ba54f5625a0b",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C16",
+      "claim": "TPS utilizes splines to represent temporal profiles and implements a cross-validation strategy to evaluate potential sets of points.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS utilizes splines to represent temporal profiles and implements a cross-validation strategy to evaluate potential sets of points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the TPS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "27ef1130-a9a6-45ee-95bd-19b48e812309",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C17",
+      "claim": "TPS employs a greedy search procedure that adds and removes points until a local minima is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Following initialization which is based on the expression values, we employ a greedy search procedure that adds and removes points until a local minima is reached (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the TPS algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "b74b6734-0c2e-4340-bc64-547e564ce5a3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C18",
+      "claim": "Singh et al presented an iterative process which starts with profiling a small number of time points and then selects the next time point based on an Active Learning method.",
+      "claim_type": "EXPLICIT",
+      "source": "Singh et al (Singh et al., 2005) and Rosa et al (Rosa et al., 2012) presented an iterative process which starts with profiling a small number of time points and then selects the next time point either based on an Active Learning method (Singh et al., 2005) or based on using prior related experiments (Rosa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Singh et al., 2005 and Rosa et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "3b9f7646-d0e5-47ab-9cc1-3d45a48a69bb",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C19",
+      "claim": "Rosa et al presented an iterative process which selects the next time point based on using prior related experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Singh et al (Singh et al., 2005) and Rosa et al (Rosa et al., 2012) presented an iterative process which starts with profiling a small number of time points and then selects the next time point either based on an Active Learning method (Singh et al., 2005) or based on using prior related experiments (Rosa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rosa et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "11fdd912-8c19-44c5-aadb-d7ebcc20a80b",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C20",
+      "claim": "Both Singh et al and Rosa et al methods require several iterations until the final time series is profiled, which can drastically lengthen the experiment time and can introduce additional biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these methods require several iterations until the final time series is profiled, which can drastically lengthen the experiment time and can introduce additional biases making them less useful in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the iterative nature of the methods described by Singh et al and Rosa et al.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "1bda6906-fc29-4707-a2e5-9183f9866031",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C21",
+      "claim": "Normal development of lung alveoli through the process of alveolar septation is a dynamic, coordinated process that requires the accurate spatial and temporal integration of signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal development of lung alveoli through the process of alveolar septation is a dynamic, coordinated process that requires the accurate spatial and temporal integration of signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established biological knowledge about lung development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "a1aefb38-5c35-4c0f-b199-5a357e4fdd61",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C22",
+      "claim": "We currently lack a comprehensive understanding of the dynamic networks that govern normal alveolar septation.",
+      "claim_type": "EXPLICIT",
+      "source": "We currently lack a comprehensive understanding of the dynamic networks that govern normal alveolar septation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "e56a0904-d33a-4f51-8eb6-04626da3437c",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C24",
+      "claim": "The miRNA data represent an unbiased sample providing information on whether using one type of genomic data can be helpful for determining rates for other types.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the miRNA data represent an unbiased sample providing information on whether using one type of genomic data can be helpful for determining rates for other types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the miRNA dataset and its utility for testing the TPS method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "ebdb9070-105b-4897-9b26-8ed989b3a614",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C25",
+      "claim": "Targeted bisulfite sequencing was used to profile three CpG-enriched regions for 13 genes at 8 of the 42 time points.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the ability of the mRNA data to determine the appropriate points for DNA methylation analysis, we used targeted bisulfite sequencing to profile three CpG-enriched regions for 13 genes at 8 of the 42 time points used for the mRNA and miRNA studies (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology for DNA methylation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "e5dd8e45-b96f-49b4-a383-05418e2967e3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C26",
+      "claim": "In several cases, strong negative or positive correlations were observed between methylation and expression datasets in the time points used.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, in several cases we observed strong negative or positive correlations between the two datasets in the time points we used serving as another indication for the ability to use one dataset to select the sampling points for the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 5, showing correlations between methylation and expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "88d295c4-ecf4-4b05-b9c5-d9f6fefc8da3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C27",
+      "claim": "TPS is the first non iterative method to address the issue of sampling rates across all different genomic data types.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose the first non iterative method to address the issue of sampling rates across all different genomic data types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the TPS method compared to prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "21843966-1278-4df0-be3c-f87ff3d5e334",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C28",
+      "claim": "A method for selecting time points for these experiments is required to accommodate over a hundred curves (for all genes) simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that unlike standard curve fitting algorithms, a method for selecting time points for these experiments is required to accommodate over a hundred curves (for all genes) simultaneously, and we discuss various ways to formulate this as an optimization problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements and challenges of the time point selection problem.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "cd5523ac-3aad-4b53-8b5f-35b731e984c7",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C29",
+      "claim": "The number of points selected by TPS can either be set in advance by the user or can be defined as a function of the reconstruction error.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of points selected can either be set in advance by the user (for example, based on budget constraints) or can be defined as a function of the reconstruction error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the flexibility of the TPS method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "65c6ae96-3277-4720-8b8b-dfa9175756a6",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C30",
+      "claim": "Sorting initial points by absolute values improves the performance highlighting the importance of initialization when searching large combinatorial spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Sorting initial points by absolute values further improves the performance highlighting the importance of initialization when searching large combinatorial spaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 2, comparing different initialization methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "26d50b5e-53d2-42ef-b82b-0dee7f974a59",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C31",
+      "claim": "Simulated annealing, weighting, and multiple point selection improve performance as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated annealing, weighting, and multiple point selection improve performance as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 2, comparing different search strategies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "1dc44fb0-0680-4386-aed7-6dc30ca5120b",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C32",
+      "claim": "Even when using a set where 75% of genes are replaced with random profiles, the time points selected by TPS greatly improve upon an arbitrary set of the same number of time points.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show in Figure 2\u2014figure supplement 2, even when using such set, the time points selected by TPS greatly improve upon an arbitrary set of the same number of time points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "7de56b73-f318-445d-9224-f7dd67185f21",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C33",
+      "claim": "In most time series experiments at least 25% of the genes are differentially expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in most time series experiments at least 25% of the genes are differentially expressed (and in several cases a much larger fraction, (Zhou et al., 2009; Shi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zhou et al., 2009 and Shi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "5f38e09f-6991-4998-9470-9253964334cc",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C34",
+      "claim": "A random selection of genes is likely to exhibit similar results even for poorly understood processes.",
+      "claim_type": "EXPLICIT",
+      "source": "a random selection of genes is likely to exhibit similar results even for poorly understood processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that at least 25% of genes are typically differentially expressed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "05d1a7df-5ae6-4da4-82a7-bebb96862e35",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C35",
+      "claim": "The performance when using the miRNA data itself is better than when using the mRNA data.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the performance when using the miRNA data itself is better than when using the mRNA data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of errors in Figure 4a and 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "2ced7fd3-16c9-4680-a436-a97c4ae80953",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C36",
+      "claim": "When taking into account the inherent noise in the data, the differences between using mRNA vs miRNA data for point selection are not large.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when taking into account the inherent noise in the data the differences are not large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the reconstruction errors to the noise level in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "6daf1a36-dca5-4e76-b4c2-0e7a13543cf6",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C37",
+      "claim": "The points selected by TPS lead to reconstruction errors that are lower than those observed for uniform sampling or for a random set of the same number of points for protein profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the points selected by TPS lead to reconstruction errors that are lower than those observed for uniform sampling or for a random set of the same number of points further demonstrating the general applicability of our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by protein profiling data discussed in the Appendix Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "28a69dfc-257d-452a-965d-5674d35c37aa",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C38",
+      "claim": "Important expression changes in key genes are missed by using the arbitrary points while the TPS points are able to correctly reconstruct these profiles even though the total number of points is the same.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 6, important expression changes in key genes are missed by using the arbitrary points while the TPS points are able to correctly reconstruct these profiles even though the total number of points is the same (5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual comparison in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "40cac530-dec5-4ead-8952-a08f3443c00d",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C39",
+      "claim": "The error for the arbitrary set of selected points is much higher on average.",
+      "claim_type": "EXPLICIT",
+      "source": "More globally, the error for the arbitrary set of selected points is much higher on average (Appendix 2\u2014Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Appendix 2\u2014Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "b0adfd31-ae22-447b-9041-a28d3139bb0a",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C40",
+      "claim": "Accurate selection of time points can have a large impact on the ability of the study to identify key genes and events.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that accurate selection of time points can have a large impact on the ability of the study to identify key genes and events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of TPS to prior sampling methods shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "ab4fdad2-51bc-4855-a3bf-8a4ec61983e3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C41",
+      "claim": "TPS is implemented in Python and is available on the supporting website.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS, including all initialization methods discussed, is implemented in Python and is available on the supporting website.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the availability of the TPS software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "1e564b1c-651a-4fcc-a1a7-7a0bf736e6f2",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C42",
+      "claim": "The first and last time point can usually be determined by the researcher.",
+      "claim_type": "EXPLICIT",
+      "source": "In most studies, the first and last time point can usually be determined by the researcher (for example, the time from birth to full lung structural development and maturation in mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in time series experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "849151ea-7819-49c5-a6e4-750d06606f79",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C43",
+      "claim": "The number of samples required between the first and last time points and the sampling frequency are often hard to determine based on phenotypic observations since the molecular events of interest may precede such phenotypic events.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of samples required between these two points and the sampling frequency (given a fixed budget) are often hard to determine based on phenotypic observations since the molecular events of interest may precede such phenotypic events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in experimental design for time series studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "b89cb024-7e96-4360-9231-4b8629e62c9f",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C44",
+      "claim": "Sampling rates have largely been determined using one of two ad-hoc protocols: uniform sampling or nonuniform sampling based on some knowledge of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, sampling rates have largely been determined using one of two ad-hoc protocols. The first utilized uniform sampling across the duration of the study (Li et al., 2013) with the number of samples constrained by the available budget and samples. The second relied on some (conceived or real) knowledge of the process, often based on phenotypic observations. These studies, especially for responses though also for development, have often used nonuniform sampling (Schulz et al., 2013; Bar-Joseph et al., 2003a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2013, Schulz et al., 2013, and Bar-Joseph et al., 2003a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "3ce9868f-5f81-445d-b98f-1e588b7308ae",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C45",
+      "claim": "It is hard to determine if nonuniform sampling based on phenotypic observations misses important molecular events between the sampled points.",
+      "claim_type": "EXPLICIT",
+      "source": "though it is hard to determine if such sampling misses important molecular events between the sampled points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current sampling approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "9a6bc346-8555-462d-9741-4532302d93e5",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C46",
+      "claim": "Relatively little work has focused so far on the selection of time points to sample in high throughput time series studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively, little work has focused so far on the selection of time points to sample in high throughput time series studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "63ab5517-717b-4889-ac03-a83731a66955",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C47",
+      "claim": "The methods by Singh et al and Rosa et al employ a stopping criteria that does not take into account the full profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these methods employ a stopping criteria that does not take into account the full profile and also require that related time series expression experiments be used to select the point, which may be problematic when studying new processes or treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of prior methods based on their design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "e21e373c-2413-4381-8223-dcd646e57ca8",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C48",
+      "claim": "The methods by Singh et al and Rosa et al require that related time series expression experiments be used to select the point, which may be problematic when studying new processes or treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these methods employ a stopping criteria that does not take into account the full profile and also require that related time series expression experiments be used to select the point, which may be problematic when studying new processes or treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of prior methods based on their requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "5761ab27-f7e3-4cd3-9888-c964b45743f3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C49",
+      "claim": "For most processes, a small set of genes associated with the process is usually known in advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method starts by selecting a small set of genes that are known to be associated with the process being studied (while the full set is often unknown, for most processes a small set is usually known in advance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about typical prior knowledge available for biological processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "a622318f-c95d-4720-8820-c36b9c686c26",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C51",
+      "claim": "The relative ordering of the performance of each of the methods is similar to the mRNA results for miRNA data.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, even though the noise in the miRNA data is higher than for the mRNA dataset, relative ordering of the performance of each of the methods is similar to the mRNA results in Figure 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on comparing Figure 2 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "9fac2dce-66fa-4ef2-93f2-998f810b71bc",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C52",
+      "claim": "The noise in the miRNA data is higher than for the mRNA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, even though the noise in the miRNA data is higher than for the mRNA dataset, relative ordering of the performance of each of the methods is similar to the mRNA results in Figure 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of noise levels between datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "58ee350a-26da-4ba3-bcc1-94fed250c315",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C53",
+      "claim": "mRNAs can serve as a general proxy for selecting time points for other genomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This serves as a strong indication that mRNAs can serve as a general proxy for selecting time points for other genomic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similar performance patterns observed across different data types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "8ceb800a-2320-4547-a8a3-0b4b0e76c0e3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C54",
+      "claim": "A relatively inexpensive, gene centric, method provides a very good solution for RNA expression profiling as well as other types of data including miRNAs and DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show, a relatively inexpensive, gene centric, method provides a very good solution for RNA expression profiling as well as other types of data including miRNAs and DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the results presented for multiple data types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "767df003-624c-44d2-b4c8-59b2dee321ef",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C55",
+      "claim": "A combined experiment can be fully designed using the TPS method.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a combined experiment can be fully designed using our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the applicability of TPS to experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "642408ab-a3fb-4e81-8549-d773ccf0d30d",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C56",
+      "claim": "TPS has only been tested so far on data for a specific biological process (lung development in mice).",
+      "claim_type": "EXPLICIT",
+      "source": "While we evaluated TPS on several types of high throughput data, we have only tested it so far on data for a specific biological process (lung development in mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "30d46852-099b-4e0b-8629-ee411e731e02",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C57",
+      "claim": "Analysis of additional datasets may identify new challenges that have not been addressed.",
+      "claim_type": "EXPLICIT",
+      "source": "While we believe that such data is both challenging and representative and thus provides a good test case for the method, analysis of additional datasets may identify new challenges that we have not addressed and we leave it to future work to address these.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future work and limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "b5e459d7-c725-4c4e-914f-07f7a9bc0db5",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C58",
+      "claim": "The lung development data is both challenging and representative and thus provides a good test case for the method.",
+      "claim_type": "EXPLICIT",
+      "source": "While we believe that such data is both challenging and representative and thus provides a good test case for the method",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the suitability of the test case used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "7e3a21bf-cb02-435f-a497-5b6c6616c187",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C59",
+      "claim": "Certain time points seem to be widely used across studies (for example, 7d) while others were profiled in only one or two of the studies (2d, 10d, three weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, while certain time points seem to be widely used across studies (for example, 7d) others were profiled in only one or two of the studies (2d, 10d, three weeks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "dcb20ff0-638e-4d93-8e6b-6b20cbab176a",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C60",
+      "claim": "It is very hard to compare or combine datasets from different lung development studies due to different time points used.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises several issues. First, it is very hard to compare or combine these datasets (for example, protein levels were not profiled on day 7(Cox et al., 2007) whereas all mRNA levels were).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of inconsistent time points across studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "d34c04c2-e222-4141-a438-2db4f4a1fa2c",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C61",
+      "claim": "It is hard to determine if differences between DE genes or miRNAs between studies are the result of differences in the underlying conditions studied or simply the result of different sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "It also makes it hard to determine if differences between DE genes or miRNAs between these studies are the result of differences in the underlying conditions studied (for example, when testing for mutants or treatments) or simply the result of different sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the challenges in interpreting results from studies with different sampling strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "6615445d-8e14-42cc-9ef3-0d623789fa24",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C62",
+      "claim": "Each of the prior lung development studies may have missed key genes, proteins or miRNAs because of the sampling used.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, each of these studies may have missed key genes, proteins or miRNAs because of the sampling used restricting the ability of downstream analysis to use the data to model causal and regulatory events in lung development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of prior studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "3a920858-5cfe-4aa2-827a-4703fb2179cd",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C63",
+      "claim": "The sampling used in prior studies restricts the ability of downstream analysis to use the data to model causal and regulatory events in lung development.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, each of these studies may have missed key genes, proteins or miRNAs because of the sampling used restricting the ability of downstream analysis to use the data to model causal and regulatory events in lung development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the impact of sampling strategies on downstream analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "fc9cdf82-9968-4d00-8d07-d0eb714882a7",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C64",
+      "claim": "Early work on the analysis of cell cycle data in yeast utilized both uniform and nonuniform sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, early work on the analysis of cell cycle data in yeast utilized both uniform and nonuniform sampling (Spellman et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Spellman et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "680b46b4-0358-4179-996d-569a89c0c713",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C65",
+      "claim": "Recent studies of circadian rhythms have followed a similar pattern of using both uniform and nonuniform sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "and recent studies of circadian rhythms have followed a similar pattern (Storch et al., 2002; Ueda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Storch et al., 2002 and Ueda et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "5eb4c4f5-ca85-4215-966c-721a80e06d64",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C66",
+      "claim": "More recent analysis of responses to flu diverged widely in the (nonuniform) sampling rates that were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, more recent analysis of responses to flu diverged widely in the (nonuniform) sampling rates that were used (Shapira et al., 2009; Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Shapira et al., 2009 and Li et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "61ea997d-6ad9-4554-a4a8-fd0fd598d804",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C67",
+      "claim": "TPS addresses the problems of inconsistent sampling by using a principled method for determining sampling rates.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS addresses these problems by using a principled method for determining sampling rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the contribution of TPS to addressing existing problems in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "a186480b-9446-4080-bb0b-e13bb03ca9b3",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "claim_id": "C68",
+      "claim": "An important goal in the development of TPS was to enable it to be successfully applied to different types of biological datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "An important goal in the development of TPS was to enable it to be successfully applied to different types of biological datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design goals of the TPS method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ee12b5eb-652b-40eb-948d-8b4358a9a110",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed TPS (Time Point Selection), a novel non-iterative computational method that uses splines and greedy search to select optimal time points from densely sampled gene expression data. TPS can accommodate multiple genes simultaneously and allows flexible specification of the number of points to select.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C16, C17, C27-C29, and C41 collectively describe the TPS methodology and its novelty. The method is clearly described with implementation details, and the claim of being the first non-iterative method (C27) is supported by comparison to prior iterative approaches (C18-C20). The algorithmic components are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "b72dace4-4a09-4bd7-aed9-cc9d9a926e65",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors collected 240 lung tissue samples from mice at multiple developmental time points using Laser Capture Microscopy and profiled 126 genes known or suspected to be involved in lung development using NanoString technology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 describe the experimental design and data collection. These are straightforward methodological statements that are well-documented in the Materials and Methods section with specific numbers and technologies used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "d15ac57d-f338-4e34-9926-d4213de76c73",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TPS successfully reconstructs mRNA expression profiles from a subset of selected time points, significantly outperforming both random and uniform sampling strategies across all tested subset sizes. Performance improvements are enhanced by proper initialization (sorting by absolute values) and advanced search strategies (simulated annealing, weighting, multiple point selection).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C10-C12, C30-C31 are supported by extensive data in Figure 2 and Figure 3, showing quantitative comparisons with baselines. The reconstruction error approaches the noise floor (0.108) as more points are added (C12), and statistical significance is demonstrated. The visual reconstructions in Figure 3 confirm accurate profile fitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Time points selected by TPS using mRNA data successfully generalize to miRNA profiling, achieving significantly lower reconstruction error than uniform or random sampling (p<0.01). While using miRNA data directly yields slightly better performance (error 0.4042 vs 0.4312 for 13 points), the difference is small relative to data noise, demonstrating that mRNA can serve as a proxy for selecting time points for other genomic data types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C13-C14, C24, C35-C36, C51-C53 are supported by Figure 4 data showing miRNA reconstruction performance. Statistical significance (p<0.01) is reported for C13. The specific error values in C14 provide quantitative support. The claim that differences are small relative to noise (C36) is a reasonable inference given the reported values and noise levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "fa2113a5-8fb4-4063-babc-1fbd73575667",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TPS-selected time points based on mRNA data are appropriate for DNA methylation analysis. The 4 points selected using mRNA data (0.5, 5, 15, 26 days) were identical to those selected using methylation data itself, and strong correlations were observed between methylation and expression at the selected time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C25-C26 are supported by the DNA methylation analysis described in the text and Figure 5. The exact match of selected points (C15) provides strong evidence, and the observed correlations (C26, shown in Figure 5) further validate the approach. However, the methylation dataset is limited (13 genes, 8 time points), which constrains generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "e29e1de0-7436-4a0b-96af-dd6e5c1d8621",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TPS-selected time points based on mRNA data also perform well for protein profiling, with reconstruction errors lower than uniform or random sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by protein profiling data mentioned in the text and referenced in the Appendix Results. However, the protein data is not shown in the main figures, making it difficult to fully evaluate the strength of this claim. The result is consistent with the miRNA and methylation findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "a97a3e42-ac95-4c25-8874-d643a4556af9",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TPS remains effective even when 75% of genes are replaced with random profiles, still outperforming arbitrary time point selection. This robustness is relevant because at least 25% of genes are typically differentially expressed in time series experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by Figure 2\u2014figure supplement 2 and citations (C33). The robustness test (C32) demonstrates that TPS does not require perfect prior knowledge of relevant genes. The claim about typical differential expression rates (C33) is supported by citations, making the inference in C34 reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "74b41874-b02f-4373-9519-5d0738430e8e",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison of TPS to prior lung development studies reveals that arbitrary time point selection used in previous work leads to significantly higher reconstruction errors and can miss important expression changes in key genes. This demonstrates that principled time point selection has substantial impact on the ability to identify key biological events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by Figure 6 and Appendix 2\u2014Table 4, showing visual and quantitative comparisons. Claims C59-C63 provide context about inconsistencies in prior studies (Table 1) and their potential consequences. The inference that accurate selection impacts biological discovery (C40) is reasonable given the demonstrated differences in reconstruction quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "90531506-8b98-4e30-8ff5-1a943b3c5373",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior methods for time point selection (Singh et al., Rosa et al.) are iterative, requiring multiple rounds of profiling, which lengthens experiments and introduces biases. These methods also have limitations including stopping criteria that don't consider full profiles and requirements for related prior experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C46-C48 accurately describe prior work based on the cited papers. The critiques in C20, C47-C48 are reasonable inferences about the limitations of iterative approaches, though they represent the authors' interpretation rather than demonstrated facts. The comparison to Singh et al. in Figure 1\u2014figure supplement 1 supports the claimed advantages of TPS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "57c65a08-b3ae-4772-9617-265b2db870db",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TPS provides a principled, cost-effective solution for designing multi-modal time series experiments, enabling selection of time points for RNA expression, miRNA, DNA methylation, and protein profiling from a single inexpensive gene-centric assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C67-C68 represent synthesis and interpretation of the collective results. These are supported by the demonstrated performance across multiple data types (mRNA, miRNA, methylation, protein). The claim of cost-effectiveness is reasonable given the use of targeted NanoString profiling of 126 genes versus genome-wide approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "6c8d94a2-db72-4213-8c6b-ca794a8dca42",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge that TPS has only been tested on mouse lung development data, and while they believe this provides a challenging and representative test case, additional datasets may reveal new challenges requiring future work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 represent appropriate acknowledgment of study limitations. C56 is factually accurate, C58 is the authors' assessment of their test case, and C57 appropriately identifies the need for broader validation. This is a reasonable and scientifically sound limitation statement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    },
+    {
+      "id": "fec98a07-fec5-459b-9dbc-38bc52803b68",
+      "content_id": "a51e5d04-8d87-4bae-ace2-eb7f19725577",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on time series genomic studies, lung development biology, and current practices in time point selection, establishing the motivation and context for developing TPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C21-C22, C42-C45, C49, C64-C66 are background claims supported by appropriate citations and established knowledge. These provide context but do not represent novel findings of the current work. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:51.645657Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0a9d1b7b-37c3-475f-b032-e2a10ed9ff38",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "cb31c34c-8b1b-49b3-a34f-ba54f5625a0b",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "27ef1130-a9a6-45ee-95bd-19b48e812309",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "88d295c4-ecf4-4b05-b9c5-d9f6fefc8da3",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "21843966-1278-4df0-be3c-f87ff3d5e334",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "cd5523ac-3aad-4b53-8b5f-35b731e984c7",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "ab4fdad2-51bc-4855-a3bf-8a4ec61983e3",
+      "result_id": "ee12b5eb-652b-40eb-948d-8b4358a9a110"
+    },
+    {
+      "claim_id": "e22f661a-220c-4ed8-b1df-27e79e4502a1",
+      "result_id": "b72dace4-4a09-4bd7-aed9-cc9d9a926e65"
+    },
+    {
+      "claim_id": "62fde7c6-c43b-4dba-b82a-20d6db471a55",
+      "result_id": "b72dace4-4a09-4bd7-aed9-cc9d9a926e65"
+    },
+    {
+      "claim_id": "75e6551d-506f-4c62-8176-aea0a8ea6c24",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "ccb3c98e-ae44-402d-9c77-bd2d90f81829",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "2cd7a818-16f6-4c61-bcdb-87a983090e6f",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "c480e0f9-578b-439d-add3-643c8296c48f",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "65c6ae96-3277-4720-8b8b-dfa9175756a6",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "26d50b5e-53d2-42ef-b82b-0dee7f974a59",
+      "result_id": "d15ac57d-f338-4e34-9926-d4213de76c73"
+    },
+    {
+      "claim_id": "10687ec7-2fff-43e7-b4a2-253fd45bdc51",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "6d1ba25a-4235-49d6-97c6-ec0c4bcdf797",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "cd166659-1c26-48d7-a8f5-ef99948197ce",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "e56a0904-d33a-4f51-8eb6-04626da3437c",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "05d1a7df-5ae6-4da4-82a7-bebb96862e35",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "2ced7fd3-16c9-4680-a436-a97c4ae80953",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "a622318f-c95d-4720-8820-c36b9c686c26",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "9fac2dce-66fa-4ef2-93f2-998f810b71bc",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "58ee350a-26da-4ba3-bcc1-94fed250c315",
+      "result_id": "3c796470-0f05-4bae-87c8-c6d2ab96f7f6"
+    },
+    {
+      "claim_id": "2f5281e8-1b78-44d3-80cd-88814b159c92",
+      "result_id": "fa2113a5-8fb4-4063-babc-1fbd73575667"
+    },
+    {
+      "claim_id": "ebdb9070-105b-4897-9b26-8ed989b3a614",
+      "result_id": "fa2113a5-8fb4-4063-babc-1fbd73575667"
+    },
+    {
+      "claim_id": "e5dd8e45-b96f-49b4-a383-05418e2967e3",
+      "result_id": "fa2113a5-8fb4-4063-babc-1fbd73575667"
+    },
+    {
+      "claim_id": "6daf1a36-dca5-4e76-b4c2-0e7a13543cf6",
+      "result_id": "e29e1de0-7436-4a0b-96af-dd6e5c1d8621"
+    },
+    {
+      "claim_id": "1dc44fb0-0680-4386-aed7-6dc30ca5120b",
+      "result_id": "a97a3e42-ac95-4c25-8874-d643a4556af9"
+    },
+    {
+      "claim_id": "7de56b73-f318-445d-9224-f7dd67185f21",
+      "result_id": "a97a3e42-ac95-4c25-8874-d643a4556af9"
+    },
+    {
+      "claim_id": "5f38e09f-6991-4998-9470-9253964334cc",
+      "result_id": "a97a3e42-ac95-4c25-8874-d643a4556af9"
+    },
+    {
+      "claim_id": "28a69dfc-257d-452a-965d-5674d35c37aa",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "40cac530-dec5-4ead-8952-a08f3443c00d",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "b0adfd31-ae22-447b-9041-a28d3139bb0a",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "7e3a21bf-cb02-435f-a497-5b6c6616c187",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "dcb20ff0-638e-4d93-8e6b-6b20cbab176a",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "d34c04c2-e222-4141-a438-2db4f4a1fa2c",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "6615445d-8e14-42cc-9ef3-0d623789fa24",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "3a920858-5cfe-4aa2-827a-4703fb2179cd",
+      "result_id": "74b41874-b02f-4373-9519-5d0738430e8e"
+    },
+    {
+      "claim_id": "b74b6734-0c2e-4340-bc64-547e564ce5a3",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "3b9f7646-d0e5-47ab-9cc1-3d45a48a69bb",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "11fdd912-8c19-44c5-aadb-d7ebcc20a80b",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "9a6bc346-8555-462d-9741-4532302d93e5",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "63ab5517-717b-4889-ac03-a83731a66955",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "e21e373c-2413-4381-8223-dcd646e57ca8",
+      "result_id": "90531506-8b98-4e30-8ff5-1a943b3c5373"
+    },
+    {
+      "claim_id": "8ceb800a-2320-4547-a8a3-0b4b0e76c0e3",
+      "result_id": "57c65a08-b3ae-4772-9617-265b2db870db"
+    },
+    {
+      "claim_id": "767df003-624c-44d2-b4c8-59b2dee321ef",
+      "result_id": "57c65a08-b3ae-4772-9617-265b2db870db"
+    },
+    {
+      "claim_id": "61ea997d-6ad9-4554-a4a8-fd0fd598d804",
+      "result_id": "57c65a08-b3ae-4772-9617-265b2db870db"
+    },
+    {
+      "claim_id": "a186480b-9446-4080-bb0b-e13bb03ca9b3",
+      "result_id": "57c65a08-b3ae-4772-9617-265b2db870db"
+    },
+    {
+      "claim_id": "642408ab-a3fb-4e81-8549-d773ccf0d30d",
+      "result_id": "6c8d94a2-db72-4213-8c6b-ca794a8dca42"
+    },
+    {
+      "claim_id": "30d46852-099b-4e0b-8629-ee411e731e02",
+      "result_id": "6c8d94a2-db72-4213-8c6b-ca794a8dca42"
+    },
+    {
+      "claim_id": "b5e459d7-c725-4c4e-914f-07f7a9bc0db5",
+      "result_id": "6c8d94a2-db72-4213-8c6b-ca794a8dca42"
+    },
+    {
+      "claim_id": "da3506ea-50c4-4487-a2ea-8b7fca516c38",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "4ffec167-a217-4469-8faf-54ddebda8e03",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "a416a059-7842-4124-bed6-432791b3f89e",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "d3f516eb-c74b-415a-b20b-be830c4cc5ac",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "1bda6906-fc29-4707-a2e5-9183f9866031",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "a1aefb38-5c35-4c0f-b199-5a357e4fdd61",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "1e564b1c-651a-4fcc-a1a7-7a0bf736e6f2",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "849151ea-7819-49c5-a6e4-750d06606f79",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "b89cb024-7e96-4360-9231-4b8629e62c9f",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "3ce9868f-5f81-445d-b98f-1e588b7308ae",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "5761ab27-f7e3-4cd3-9888-c964b45743f3",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "fc9cdf82-9968-4d00-8d07-d0eb714882a7",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "680b46b4-0358-4179-996d-569a89c0c713",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    },
+    {
+      "claim_id": "5eb4c4f5-ca85-4215-966c-721a80e06d64",
+      "result_id": "fec98a07-fec5-459b-9dbc-38bc52803b68"
+    }
+  ],
+  "comparisons": []
+}

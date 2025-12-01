@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C37",
+      "C38",
+      "C49",
+      "C85"
+    ],
+    "result": "The updated PrePPI database contains 1.35 million predicted protein-protein interactions covering approximately 85% (~17,200 proteins) of the human proteome, representing a significant expansion from the previous version's 300,000 interactions for ~13,300 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C37, C38, C49, and C85 consistently report the database size and coverage with specific numbers that are internally consistent across the abstract, introduction, results, and discussion sections. The data is presented as direct measurements from the database construction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C52",
+      "C53",
+      "C93",
+      "C3"
+    ],
+    "result": "PrePPI predicts at least 127,000 direct physical interactions based on structural evidence alone, with the actual number potentially reaching ~500,000 when considering predictions with structural LR > 100 combined with other evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C52, and C93 provide consistent estimates for direct interactions. C52 specifies 127,000 from combined structural sources, while C93 explains the broader estimate of ~500,000 based on a relaxed structural LR threshold. C3 appropriately labels this upper estimate as speculative, which is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PrePPI demonstrates performance comparable to state-of-the-art experimental databases (Y2H and BioPlex) based on ROC curve analysis, recovering ~60% of the PRS database and ~50% of the human HC reference set at LR>600, while recovering essentially no RRS (random) interactions at this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present a coherent validation strategy using multiple reference sets. The ROC curves (Figure 2a) and recovery statistics (Figure 2b) provide quantitative support. The lack of RRS recovery at LR>600 (C45) validates the reliability threshold, and the specific recovery percentages for Y2H (~7%) and BioPlex (~16%) provide appropriate benchmarks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C50"
+    ],
+    "result": "Structural modeling (SM) is the single most important evidence source, but when combined, structural evidence yields ~127,000 predictions while non-structural sources yield ~115,000 predictions. Integration of all evidence sources in the Bayesian framework increases predictions to 1.35 million, demonstrating the value of evidence integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 reference Table 1 and provide internally consistent numbers. C51 establishes SM as the most important single source (citing the previous study), while C52-C53 show structural and non-structural sources are approximately equivalent when combined. C54's inference about Bayesian integration value is supported by the dramatic increase from individual sources to the combined total.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The use of homology models dramatically improves PrePPI performance and coverage, enabling 1.24 million reliable predictions compared to only ~250,000 predictions using crystal structures alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 reference Figure 3 and provide specific numbers showing the impact of homology models. The ~5-fold increase in predictions (from 250,000 to 1.24 million) demonstrates a substantial contribution. The ROC curve improvement mentioned in C55 provides additional performance validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "After removing the GO term from PrePPI scoring, 89% of the remaining 732,000 predictions share a second-level GO biological process term, comparable to STRING (95%) and the human HC set (95%), and substantially higher than random pairs (55%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 reference Table 1 and provide consistent percentages for functional coherence. The comparison across PrePPI, STRING, human HC, and random sets provides appropriate context. The analysis appropriately removes GO evidence to avoid circularity, strengthening the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PrePPI recovers approximately 2/3 of CORUM multi-protein complexes at LR>600, with essentially no recovery of randomly constructed complexes at this threshold. Y2H and BioPlex recover only ~5% and ~20% of CORUM complexes, respectively, due to their smaller sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 reference Figure 5b and provide specific recovery statistics. The validation using random complexes (C68) strengthens the result. The comparison with Y2H and BioPlex (C69-C70) is appropriate, and C71 provides additional detail about predictive capability for complex membership.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "PrePPI predicts 854 disease-similar protein pairs from ClinVar (out of 3,714 total), substantially outperforming Y2H (5 pairs) and BioPlex (63 pairs), with 617 predictions unique to PrePPI compared to experimental databases and 326 unique compared to other computational databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 provide consistent numbers for disease-associated predictions. The comparisons with experimental (C74-C75) and computational databases (C76) are appropriate. The identification of unique predictions (C77-C78) demonstrates PrePPI's complementary value, though the biological significance of these specific predictions requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C99",
+      "C100"
+    ],
+    "result": "Disease-associated SNPs are significantly enriched in PrePPI-predicted interfaces (odds ratio 1.6, Z-score ~41), while benign SNPs are significantly depleted (odds ratio 0.5, Z-score ~35), demonstrating that predicted interfaces are accurate enough to identify disease-related mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 and C99-C100 provide consistent odds ratios and highly significant Z-scores. The Materials and methods section (C99-C100) references Table 5 and describes the statistical calculation. The opposing enrichment/depletion patterns for disease vs. benign SNPs strengthen the biological validity of the predicted interfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C10",
+      "C11",
+      "C39",
+      "C40"
+    ],
+    "result": "Using GSEA with PrePPI predictions, the most enriched gene set contains a correct GO annotation for ~2,100 of 10,800 query proteins, with correct annotations within the top 10 gene sets for ~5,500 proteins. The method provides enriched gene sets (q<0.01) for all but six proteins in the human proteome, including ~2,000 proteins of unknown function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 reference Figure 6 and provide specific accuracy statistics for the GSEA approach. The highly significant average q-value (0.0002, C84) supports the statistical validity. Claims C10-C11 and C39-C40 from the abstract are consistent with the detailed results. The near-complete proteome coverage demonstrates broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The Bayesian network was trained on 42,636 yeast PPIs reported in at least two publications and evaluated on 26,983 human interactions reported in at least two publications, along with appropriate negative reference sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C42 provide specific numbers for training and evaluation sets with clear quality criteria (\u22652 publications). The use of yeast for training and human for evaluation is appropriate for cross-species validation. The negative sets are described with sufficient detail in the Materials and methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Evidence from orthology does not artificially influence PrePPI performance, as 12,814 of 13,207 human HC interactions identified with orthology evidence also had LR>600 without it. Only ~13% of reliable predictions involve paralogs of template proteins, and only ~25% of structure-based predictions use paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 address potential circularity and specificity concerns. C57 provides strong evidence against training/test set contamination (97% retention without orthology evidence). C58-C59 demonstrate that paralog-based predictions are a minority, addressing specificity concerns. These are important methodological validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "About 63% of interactions with LR>600 in the previous PrePPI version retain LR>600 in the current version. However, nearly all (3,456 of 3,683) validated interactions from the previous version that were in the human HC reference set are retained in the current database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 provide version comparison statistics. While C60 shows substantial turnover (37% loss), C61 demonstrates that validated interactions are largely preserved (94% retention). This suggests the new version improves specificity while maintaining sensitivity for high-confidence interactions, which is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Of 2.1 million unique PPIs across all databases, 1.1 million are unique to PrePPI, 800,000 are unique to other computational databases, and 200,000 are shared. PrePPI overlaps with over one-third of STRING, 15% of HumanNet, and 25% of Ophid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 reference Tables 2 and 3 and provide consistent overlap statistics. The large number of unique PrePPI predictions (1.1 million) demonstrates complementary coverage. The overlap percentages with other databases (C89) are appropriate for context, though the biological significance of unique predictions requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "For 3,000 proteins with newly identified Y2H interactions (not in previous studies), PrePPI predicts 327,000 reliable PPIs, with 596 coinciding with Y2H interactions, accounting for more than half of the total PrePPI-Y2H overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 reference Table 2 and cite Rual et al. 2005 for defining 'not well-studied' proteins. The analysis demonstrates PrePPI is not biased toward well-studied proteins, as these 15% of proteins account for 25% of predictions. The overlap analysis (C91) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The current PrePPI database construction used 56,351 3D structures total, comprising 14,737 PDB structures and 41,614 homology models covering portions of ~15,000 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide consistent structural data statistics from the Materials and methods section. The numbers are internally consistent (14,737 + 41,614 = 56,351) and provide important context for understanding the database's structural foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "PPIs are classified into three categories: direct (physical contacts between proteins), indirect (proteins binding the same molecules without direct contact), and functional (functionally related proteins not interacting directly or indirectly).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 present standard definitions from the field. These are appropriately labeled as KNOWLEDGE in the evidence_type and provide necessary conceptual framework for understanding the different types of interactions PrePPI predicts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Achieving complete PPI coverage remains difficult, with existing high-throughput databases dominated by single-experiment interactions of uncertain reliability, and recent state-of-the-art approaches covering only one-quarter to one-third of the human proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C19-C21 cite appropriate references to support statements about the state of the field. These claims establish the motivation for PrePPI by documenting limitations of existing experimental approaches. The citations appear appropriate for these general knowledge claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Existing computational databases like STRING and HumanNet contain hundreds of thousands of interactions but are primarily comprised of well-studied proteins, contain all three PPI categories, and do not exploit structural information, which is the strongest evidence for direct physical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 cite appropriate references and provide specific database sizes for context. C28's claim that existing databases don't exploit structural information is supported by citations, and C29's assertion about structural information being the strongest evidence for direct interactions is a reasonable inference based on biophysical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The previous PrePPI version combined structural and non-structural information using a low-resolution approach enabling genome-wide application, providing ~300,000 reliable interactions for ~13,300 proteins with performance comparable to high-throughput approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 cite the previous PrePPI paper (Zhang et al., 2012) and the structural Blast approach (Dey et al., 2013). These claims appropriately describe prior work and establish the foundation for the current study. The numbers are consistent with C32 and other claims about the previous version.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The updated PrePPI incorporates additional evidence based on methodological advances in structure, orthology, RNA expression profiles, and domain-peptide interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 references Figure 1 and cites Chen et al. 2015 for the protein-peptide evidence. This claim accurately describes the new evidence types added to the updated version, which are detailed in the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "PrePPI performance is comparable to experimental databases by ROC curve analysis with far more extensive coverage, though individual predictions are expected to be less reliable than high-throughput experimental approaches conducted in cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 from the Discussion make reasonable inferences based on the ROC curve data (C94) and methodological considerations (C95). The acknowledgment of limitations (C95) is appropriate and demonstrates scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C35"
+    ],
+    "result": "The use of structural information in PrePPI enables prediction of numerous previously unreported interactions not inferred by other approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5 and C35 assert that structural information enables discovery of novel interactions. While the large number of unique PrePPI predictions (C86: 1.1 million unique) supports this claim, the specific contribution of structural information to these unique predictions versus other evidence types is not quantified. The claim is plausible but requires more detailed analysis to fully support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Structural information is the strongest evidence for a direct physical interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 makes a strong assertion about structural information being 'perhaps the strongest evidence' for direct interactions. While this is biophysically reasonable and supported by the field's understanding, the manuscript doesn't provide direct comparative evidence quantifying the relative strength of structural versus other evidence types for identifying direct interactions specifically. The qualifier 'perhaps' appropriately indicates some uncertainty.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Telescopic stimulation successfully targets individual optic lobe columns with minimal cross-talk. L2 cells show highly localized receptive fields (<30% response to adjacent columns), while T4 cells integrate input from multiple columns (50% response to adjacent columns, 25% to next ring), consistent with their role as motion detectors requiring spatially offset inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide converging evidence from calcium imaging (Figure 2) showing column-specific stimulation works as intended. The L2 data validates the method's spatial precision, while T4 data demonstrates expected multi-column integration. The interpretation (C24) logically follows from the receptive field measurements and is consistent with known T4 morphology (C15).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "T4 neurons implement both preferred direction enhancement and null direction suppression mechanisms in spatially segregated receptive field regions. Sequential stimulation in the preferred direction (ventral-to-dorsal) produces supra-linear responses, while null direction stimulation produces sub-linear suppression. These mechanisms are spatially offset, with PD enhancement shifted toward the null-side and ND suppression toward the preferred-side, and exhibit temporal dynamics peaking around 500ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 form the core experimental finding, supported by apparent motion experiments (Figure 3a-c). The nonlinear response analysis comparing actual responses to linear predictions provides clear evidence for both mechanisms. The spatial segregation (C28) is directly demonstrated in Figure 3b, and temporal dynamics (C29-C30) are quantified. This is rigorous experimental work with appropriate controls (flicker responses as linear predictions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Null direction suppression exhibits cumulative properties and can produce inhibition below baseline. Sequential null-direction stimulation across multiple columns produces progressively stronger suppression, with responses falling below single-column flicker responses. Simultaneous stimulation of the central column with dorsal columns also produces suppression, indicating spatial antagonism within the receptive field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 extend the characterization of ND suppression with systematic experiments (Figure 3d-e). The observation that responses fall below baseline (C33) provides strong evidence for active inhibition rather than passive filtering. The cumulative effect (C31, C34) and simultaneous suppression (C35-C36) are well-documented experimentally. However, the interpretation of 'inhibition' (C33) is inferential\u2014alternative mechanisms like adaptation or divisive normalization could produce similar effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The visibility of null direction suppression depends critically on stimulus spatial extent. Large horizontal bars (180\u00b0 \u00d7 4.5\u00b0) produce minimal flicker responses and obscure ND suppression, showing primarily PD enhancement. Small bars (4.5\u00b0 \u00d7 3\u00b0) reveal strong flicker responses and pronounced ND suppression localized to the dorsal receptive field, consistent with telescopic stimulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 demonstrate stimulus-dependency of mechanism visibility (Figure 4). This is important for reconciling different experimental paradigms and explains why prior studies may have missed ND suppression. The experiments are well-controlled (same cells, different stimulus sizes) and results are internally consistent with the telescopic stimulation findings. This addresses a key methodological issue in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C61"
+    ],
+    "result": "Computational modeling demonstrates that combining PD enhancement and ND suppression produces sharper directional tuning than either mechanism alone. The full model exhibits high directional selectivity across broad velocity ranges with minimal null-direction responses, while models lacking either mechanism show substantial null-direction responses nearly matching preferred-direction responses. This combination increases robustness to noise compared to the classical Hassenstein-Reichardt correlator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 and C61 present modeling results (Figure 5) that support the functional significance of dual mechanisms. The model is clearly described with specific parameters, and comparisons between full and reduced models are systematic. However, the model is relatively simple (algorithmic rather than biophysically detailed), and the noise robustness claim (C61) is inferential rather than quantitatively demonstrated. The model successfully reproduces key experimental observations but doesn't constitute independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "T4/T5 cells exhibit sharp directional tuning (90\u00b0 half-width) with strong preferred-direction responses and minimal null-direction responses across two orders of magnitude in velocity. This high directional selectivity persists when synaptic output is blocked with tetanus toxin, demonstrating that the mechanism originates in the dendrites rather than requiring feedback from oppositely-tuned cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 characterize directional selectivity and test the mechanism's origin (Figure 6). The tetanus toxin experiment (C48) is a strong control that rules out network-level explanations involving reciprocal inhibition between oppositely-tuned T4 cells. The conclusion (C49) logically follows from the experimental manipulation. However, the effectiveness of the tetanus toxin block is referenced to supplementary material, and it's unclear if partial block could affect the interpretation. Sample sizes are provided (n=7-15 flies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The spatial segregation of PD enhancement and ND suppression mechanisms requires T4 cells to receive input from more than two cell types across multiple columns. This prediction is consistent with recent connectomic data and functional blocking studies. The authors predict that enhancing inputs localize to the 'null-side' and suppressing inputs to the 'preferred-side' of T4 dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 present important mechanistic inferences and predictions. While the requirement for >2 input types (C54) follows logically from the spatial segregation findings, and is supported by connectomic (C55) and functional data (C56), the specific dendritic localization prediction (C57) remains speculative. The connectomic support includes unpublished personal communication, which cannot be independently verified. These are reasonable predictions requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The authors critique a recent study (Fisher et al. 2015) that concluded PD enhancement was the sole mechanism, arguing that the simultaneous two-position flash paradigm used cannot discriminate between ND suppression, lateral inhibition, and adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 address prior work. While C62 accurately cites Fisher et al. 2015, the critique in C63 is inferential and not experimentally demonstrated in this manuscript. The authors don't show data directly comparing their paradigm to Fisher et al.'s or demonstrate that the simultaneous flash paradigm is indeed ambiguous. This is a reasonable methodological critique but lacks direct experimental support within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The manuscript establishes context by reviewing established knowledge: two alternative mechanisms for direction selectivity (PD enhancement and ND suppression) have been proposed, T4/T5 are the first direction-selective neurons in the fly visual system, and classical models (Hassenstein-Reichardt, Barlow-Levick) produce weakly direction-selective signals requiring downstream processing. Surprisingly, T4/T5 cells already exhibit sharp directional tuning, which the current findings explain through combined mechanisms that may increase noise robustness and reduce energetic costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C14, C50-C52 provide accurate background context supported by appropriate citations. The definitions of PD enhancement (C13) and ND suppression (C14) are standard. The observation that T4/T5 show unexpectedly sharp tuning (C51) is well-established (Maisak et al. 2013). The functional speculation about noise robustness and energetic efficiency (C52) is reasonable but not experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript reviews established anatomical and organizational principles of the Drosophila visual system: the four-layer optic lobe structure, retinotopic columnar organization, parallel ON/OFF pathways, T4/T5 subgroups tuned to cardinal directions, synaptic connectivity patterns, and the neural superposition principle whereby photoreceptors from neighboring ommatidia with shared optical axes converge on single lamina cartridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10, C15-C18, C58-C60 accurately summarize established anatomical knowledge with appropriate citations. These provide necessary context but are not novel findings. The information is consistent with current understanding of fly visual system organization and is well-supported by the cited literature (Fischbach & Dittrich 1989, Takemura et al. 2013, Shinomiya et al. 2014, etc.).",
+    "result_type": "MINOR"
+  }
+]

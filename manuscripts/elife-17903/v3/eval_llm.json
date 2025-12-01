@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Histone K-to-M mutations are associated with multiple cancers and function dominantly to block methylation of corresponding lysines on wild-type histones, though their mechanisms remain controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the background context from prior literature. These are well-established facts in the field supported by multiple citations and represent accurate characterization of the state of knowledge regarding K-to-M mutations in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C85"
+    ],
+    "result": "In fission yeast, introducing the K9M mutation into one of three histone H3 genes dominantly blocks H3K9 methylation on wild-type H3 across the entire genome, as demonstrated by ChIP-seq showing genome-wide loss of H3K9me3 and significant reduction of H3K9me2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C29, and C85 collectively demonstrate the dominant-negative effect of H3K9M through multiple complementary approaches: serial dilution assays showing silencing defects, ChIP data showing loss of H3K9me3 and reduction of H3K9me2, qRT-PCR showing increased repeat transcripts, and genome-wide ChIP-seq. The K9R control (C23) strengthens the specificity argument. The data are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "H3K9M directly inhibits the enzymatic activity of Clr4 both in vitro and in vivo, as shown by reduced incorporation of radioactive methyl groups in vitro and loss of H3K9me3 at a reporter gene in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate inhibition of Clr4 activity through in vitro methyltransferase assays (C30) and in vivo reporter assays (C32). The inference that H3K9M inhibits Clr4 activity (C31, C33) is well-supported by the experimental data, though the mechanism of inhibition requires further characterization provided in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "H3K9M traps Clr4 at heterochromatin nucleation centers and prevents its spreading into neighboring regions, as evidenced by increased Clr4 levels at nucleation centers (dh and cenH) but not surrounding regions, despite unchanged overall Clr4 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide converging evidence for the trapping model: ChIP shows increased Clr4 at specific loci (C34, C38), Western blot confirms unchanged total Clr4 levels (C35), live-cell imaging shows stronger foci (C36), and detailed analysis across the mating-type locus shows Clr4 enrichment restricted to cenH with no spreading (C38-C40). The conclusion of trapping (C37, C41) is well-supported by this comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "H3K9M enhances binding of the Clr4 SET domain to histone H3 tail in a SAM-dependent manner, while showing no interaction with chromo domains of Clr4 or other H3K9me-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 demonstrate through in vitro binding assays that H3K9M does not bind chromo domains (C44-C45) but shows enhanced binding to the SET domain of both Clr4 and G9a in the presence of SAM (C46-C49). The SAM-dependence is demonstrated by reduced binding without SAM or with SAH (C47-C48). The in vivo validation with Clr4-W31G (C50) supports that effects are mediated through the SET domain. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C63",
+      "C64",
+      "C90",
+      "C91"
+    ],
+    "result": "Crystal structures of G9a in complex with H3K9M and H3K9Nle peptides reveal that the methionine/norleucine side chains occupy the lysine-binding pocket with a characteristic bend that enhances van der Waals interactions with surrounding aromatic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64, C90-C91 describe high-resolution crystal structures (1.7\u00c5 and 1.9\u00c5) with clear electron density for the peptides and SAM. The structural analysis reveals specific molecular interactions including the bent conformation of methionine/norleucine and enhanced van der Waals contacts. The structures provide molecular-level explanation for enhanced binding. The crystallographic data quality appears adequate based on reported resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Clr4-Y451N mutation, designed to disrupt H3K9M binding based on structural analysis, shows reduced binding to H3K9M peptide in vitro but cannot methylate histones, preventing definitive in vivo validation of the binding mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 show that Y451N reduces H3K9M binding in vitro (C65) and is properly expressed and assembled into complexes (C66-C67), but the mutation also abolishes catalytic activity (C68). This confounds interpretation because the loss of in vivo function could be due to either loss of H3K9M binding or loss of catalytic activity. The authors acknowledge this limitation but do not provide an alternative approach to validate the binding site in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Phosphorylation of S10 (or S10D mutation) adjacent to K9M alleviates Clr4 trapping and rescues heterochromatin assembly, demonstrating that the trapping mechanism can be modulated by adjacent histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 demonstrate through in vitro binding assays that S10 phosphorylation or S10D mutation reduces Clr4 binding to H3K9M (C69-C70), and in vivo experiments show that K9MS10D rescues Clr4 localization (C71) and heterochromatin function (C72). The cis-requirement (C73) strengthens the mechanistic interpretation. This provides functional validation of the binding mechanism and demonstrates a way to overcome H3K9M effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C98"
+    ],
+    "result": "The effects of H3K9M depend on the relative dosage of Clr4 and histone H3, as demonstrated by genetic screens identifying Clr4 and H3 overexpression as suppressors, and diploid experiments showing dosage-dependent effects on H3K9 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 and C98 provide multiple lines of evidence for dosage dependence: unbiased genetic screens identify Clr4 and H3 as suppressors (C74-C75), overexpression experiments show dose-dependent rescue (C77-C78), Swi6 overexpression does not rescue (C79), and diploid experiments demonstrate that reducing the ratio of mutant to wild-type H3 partially rescues the phenotype (C80-C81). The conclusion of competitive inhibition (C98) is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Deletion of the putative H3K9 demethylase Epe1 partially rescues H3K9M-associated silencing defects, suggesting that the balance between heterochromatin assembly and disassembly contributes to H3K9M effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 show that epe1\u0394 partially rescues silencing, H3K9me2 levels, and reduces repeat transcripts in hht3-K9M cells, though H3K9me3 rescue is marginal. The data support the conclusion that heterochromatin balance contributes to H3K9M effects. However, the caveat that Epe1 demethylase activity has not been demonstrated in vitro (mentioned in text) should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The trapping of Clr4 is mediated by direct interaction between H3K9M and the Clr4 SET domain, and recruitment of Clr4 to nucleation centers is essential for trapping; differential effects on H3K9me3 versus H3K9me2 are explained by the slower catalytic rate for H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 synthesize multiple experimental observations into a mechanistic model. The direct interaction is supported by binding assays and S10D rescue experiments (C86). The requirement for recruitment is inferred from the spatial restriction of trapping (C87). The differential effects on H3K9me3 vs H3K9me2 (C88) are explained by citing published kinetic data showing 10-fold slower kcat for H3K9me3 (C89). The model is internally consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The binding mode of H3K9M-G9a-SAM is consistent with the human H3K27M-PRC2 structure (methionine in lysine channel) but differs from the C. thermophilum H3K27M-PRC2 structure (arginine in lysine channel), and this binding mode can explain inhibition by all K-to-M mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 compare the current structure with published structures and generalize the findings. The structural comparisons are appropriate and the generalization to other K-to-M mutations is supported by citations showing similar inhibitory effects and increased methyltransferase association (C94-C95). This provides context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Prior work shows that S28 phosphorylation reduces H3K27M inhibitory effects on PRC2, and that inhibiting the H3K27 demethylase JMJD3 alleviates H3K27M effects in glioblastoma, consistent with the mechanisms identified for H3K9M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 and C99 cite published work showing that adjacent serine phosphorylation and demethylase inhibition can modulate K-to-M effects in mammalian systems. These citations are appropriate and support the generalizability of the mechanisms discovered for H3K9M. This is accurate representation of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Fission yeast contains three histone H3 genes (hht1+, hht2+, hht3+) that produce identical proteins expressed at similar levels, and heterochromatin is mainly present at pericentric regions, subtelomeres, and the silent mating-type region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 establish the experimental system. The three H3 genes producing identical proteins is supported by citation (C18), equal expression is demonstrated by Western blot (C19-C20), and heterochromatin distribution is established knowledge supported by citation (C21). These are foundational facts for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "hht3-K9M cells are predominantly of the M mating type and form lightly iodine-stained colonies similar to clr4\u0394 cells, consistent with loss of heterochromatin at the mating-type locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 demonstrate a functional consequence of heterochromatin loss at the mating-type locus through competitive PCR and iodine staining assays. The data are consistent with the known role of heterochromatin in mating-type switching and provide additional phenotypic validation of heterochromatin defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "H3K9Nle (norleucine substitution) enhanced binding of the H3 tail peptide to G9a similar to H3K9M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 states that binding data exist but are not shown ('data not shown'). Without access to these data, the quality and statistical significance cannot be evaluated. While the subsequent crystal structure (C63-C64) supports this claim, the absence of the primary binding data is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has established that H3K9me and H3K27me are critical for heterochromatin assembly, that K-to-M mutations in H3.3 are associated with specific cancers, and that these mutations inhibit methyltransferases while showing complex effects on methylation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 accurately summarize established knowledge from the literature, supported by appropriate citations. These provide essential background context for the current study and accurately represent the state of the field, including the controversial aspects (e.g., ectopic H3K27me3 peaks in C15).",
+    "result_type": "MINOR"
+  }
+]

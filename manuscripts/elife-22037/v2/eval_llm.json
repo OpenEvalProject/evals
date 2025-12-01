@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "DMS-seq adapted for E. coli produces reproducible and accurate RNA structure measurements. A read coverage of ~15 reads/nucleotide is sufficient for reproducibility, and structures determined show excellent agreement with both 16S rRNA crystal structure (90% agreement at 0.2 threshold) and mutationally verified mRNA structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide converging validation evidence for the DMS-seq method. The reproducibility analysis (C7), agreement with crystal structure (C8, C10), and agreement with mutationally verified structure (C9) collectively demonstrate that the method is technically sound and produces reliable data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Individual ORFs have characteristic ORF-wide mRNA structures that are intrinsic to their sequence. Each ORF maintains consistent structure throughout its length (first and second halves are highly correlated), and this correlation persists in the absence of translation (kasugamycin treatment), in vitro refolding, and computational prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide strong evidence through multiple independent approaches (in vivo, kasugamycin-treated, in vitro, computational) that all converge on the same conclusion. The consistency across conditions (C13-C17) particularly supports that structure is sequence-encoded rather than translation-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Adjacent ORFs on polycistronic mRNAs have distinct structural properties. The mRNA structure of adjacent ORFs can differ significantly, even when their start and stop codons overlap, indicating that characteristic structures are properties of individual ORFs rather than entire polycistronic transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are well-supported by the data shown in Figures 2G and supplementary figures. The observation that even overlapping ORFs (C20) maintain distinct structures strongly supports the conclusion that ORF-centric structure is a fundamental organizing principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Translation efficiency is highly negatively correlated with ORF-wide mRNA structure (\u03c1 = -0.75 to -0.76). Well-translated ORFs have less structure while poorly translated ORFs have more structure. Adjacent ORFs can have significantly different TEs, and even overlapping ORF pairs show similar variability in translation as non-overlapping pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 present strong correlative evidence with high correlation coefficients and appropriate statistical testing (K-S test in C25). The consistency of the correlation across operonic (C22) and all ORFs (C27) strengthens the finding. However, correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Control experiments demonstrate that Gini scores from DMS-seq reflect actual mRNA structure rather than sequencing artifacts. Gini scores from unmodified RNA samples show no correlation with TE (\u03c1 = 0.05), confirming that the observed correlations are due to genuine structural differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide critical negative control data that validates the specificity of the DMS-seq measurements. The lack of correlation in controls (C28) directly supports the interpretation that observed correlations reflect real structural differences (C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The correlation between mRNA structure and TE persists but weakens in the absence of translation. When translation is inhibited (\u03c1 = -0.58) or mRNA is refolded in vitro (\u03c1 = -0.48), correlation remains but is lower than in vivo (\u03c1 = -0.76). Highly translated mRNAs show the greatest structural differences with and without translation, suggesting ribosome unwinding contributes to in vivo structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide evidence for bidirectional causality through systematic comparison across conditions. The progressive decrease in correlation (C30-C32) and the correlation of structural differences with TE (C34) support the interpretation that both intrinsic structure and ribosome unwinding contribute (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The correlation between TE and mRNA structure increases with larger regions of the ORF and is highest for ORF-wide structure. The first and second halves of ORFs show similar correlations with TE, with the highest correlation observed for the entire ORF body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by systematic analysis shown in Figure 3\u2014figure supplement 1C. The finding that ORF-wide structure shows the strongest correlation (C38) is important for establishing that structure throughout the ORF, not just at the start site, is relevant to TE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Bacterial mRNA sequences encode both ORFs and ORF-wide secondary structures that provide a rough blueprint for translation efficiency. This intrinsic structural blueprint is then augmented by ribosomes and additional factors to determine final TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 represent integrative conclusions drawn from the preceding results. The evidence from multiple conditions (in vivo, kasugamycin, in vitro, computational) supports that structure is sequence-encoded (C39), and the differential correlations across conditions support the augmentation model (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Shine-Dalgarno sequence strength does not have predictive power for translation efficiency, even after controlling for mRNA structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by data in Figure 4\u2014figure supplement 1A and is consistent with prior work (Li et al., 2014). The analysis controls for structure (Gini index), strengthening the conclusion that SD strength is not a major determinant of endogenous TE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Codon usage (tAI) shows modest correlation with TE (\u03c1 = 0.34) but correlates more strongly with overall translation rate (\u03c1 = 0.61) and mRNA abundance (\u03c1 = 0.48). In contrast, Gini score correlates most strongly with TE (\u03c1 = -0.76) and poorly with mRNA abundance (\u03c1 = -0.05), suggesting codon bias is selected for expression level rather than translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present a coherent analysis comparing different predictors. The differential correlations (C43-C46) support the inference about evolutionary selection (C47). However, the inference about evolutionary selection is speculative and would require additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Codon usage correlates with mRNA half-life in both eukaryotes and prokaryotes, and ORF-wide codon usage (tAI) and intrinsic mRNA structure are largely independent variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by citations to prior work. Claim C49 is supported by data in Figure 4\u2014figure supplement 1D showing little correlation between tAI and structure. These claims establish that structure and codon usage are independent features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The codon influence metric from overexpressed exogenous genes shows weak correlation with endogenous TE (\u03c1 = 0.29), suggesting that codons providing efficient translation of overexpressed transgenes may differ from those for endogenous genes due to perturbation of charged tRNA pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by correlation data (Figure 4D) and citations explaining the mechanism. The weak correlation (C50) combined with known effects of overexpression on tRNA pools supports the inference (C51), though the inference remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "ORF-wide mRNA secondary structure is the strongest and most significant predictor of endogenous TE compared to other factors. A linear regression model including codon influence, tAI, and SD strength shows only marginal improvement over structure alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by comparative analysis in Figure 4\u2014figure supplement 2 and regression analysis. The systematic comparison across multiple predictors and the marginal improvement from multivariate models strongly support that structure is the dominant predictor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Codon optimization may be critical for highly expressed genes due to tRNA demand and may influence mRNA half-life, rather than being a primary driver of TE. Overexpressed transgenes likely perturb the balance between codon usage and tRNA abundance, creating global translation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are inferences supported by the correlation patterns observed and citations to prior work on tRNA expression tuning. The logic is sound but the claims remain somewhat speculative as they are not directly tested experimentally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Overexpression of a rare codon (CUA) but not a common codon (CUG) depletes cognate aa-tRNA pools and causes global translation perturbation. This is evidenced by elevated ribosome occupancy at CUA codons in endogenous genes and triggered expression of leucine biosynthetic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 present a well-designed experiment with appropriate controls (CUG codon and no coding sequence). The differential effects of rare vs. common codons (C56-C58) directly support the tRNA depletion model (C59-C60). The experimental design effectively tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Bacterial operons are densely packed with 62% of adjacent ORFs separated by \u226425nt. Despite this, mRNA structure undergoes sharp transitions at ORF boundaries, as ORFs maintain consistent internal structure while differing from adjacent ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by genome-wide analysis (Figure 5A). Claim C62 is an inference from the combination of consistent intra-ORF structure (Figure 2A-D) and variable inter-ORF structure (Figure 2G). The inference is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Local mRNA structure immediately downstream of the start site correlates with downstream gene TE, while structure upstream correlates only with upstream ORF TE. This demonstrates that polycistronic mRNAs consist of distinct ORF-length structural domains with sharp transitions at boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by systematic analysis across ORF boundaries (Figure 5B). The sharp transition in correlation at the start site (C63-C64) directly supports the conclusion of distinct structural domains (C65). The analysis is rigorous and the conclusion well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ORFs have a structure-free zone (~25-50nt) near start sites, followed by preferential base-pairing within the same ORF. Nucleotides downstream of this zone pair with regions further downstream, while nucleotides upstream pair with regions further upstream. This directionality is sequence-driven and persists without translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by meta-gene analysis (Figure 5E) and directionality analysis (Figure 5F). The observation that these patterns persist in kasugamycin-treated and in vitro samples (C69) strongly supports that the organization is sequence-encoded. The analysis is comprehensive and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutation M3 in the dusB stem-loop decreases Fis expression by inducing long-range interactions between dusB and fis mRNAs, which are normally structurally insulated. The M3 mutation causes the -58 to -53nt region to pair with the +9 to +14nt region of fis, increasing fis structure across its entire coding region. This demonstrates that specific sequences isolate mRNA folding within adjacent ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 present a compelling experimental test of the structural insulation model. The mutational analysis (C70-C71), structural characterization (C72-C73), and rescue by compensatory mutation provide strong evidence. The DMS-seq data directly demonstrate the structural changes predicted by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Polycistronic mRNAs are organized into ORF-centric modules with characteristic structures punctuated by low base-pairing regions at start sites. Intrinsic ORF-wide structure is highly predictive of TE and is amplified by translation in a self-reinforcing loop to specify final translation of each ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent the main conclusions of the paper, integrating all prior results. The evidence from structure determination (C77), correlation analysis (C78), and comparison across conditions (C79) collectively support this model. However, the 'self-reinforcing loop' concept (C79) is somewhat speculative and not directly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

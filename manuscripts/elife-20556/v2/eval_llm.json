@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors developed a mass-action model that accurately captures bulk cargo transport behavior in neurons. The model maps onto drift-diffusion equations and provides good fits to simulations of cargo movement with realistic velocities (15 \u03bcm/min) matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 and C77-C79 collectively demonstrate that the mass-action model is well-validated against both stochastic particle simulations and experimental data. The model's parameters are constrained by experimental measurements and the fit quality is quantified (Figure 1F, Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23"
+    ],
+    "result": "The formalized sushi-belt model can achieve arbitrarily complex spatial distributions of cargo in reconstructed neuronal morphologies through local control of trafficking rates. The model converges to a unique steady-state distribution regardless of initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, and C23 are supported by mathematical analysis and simulations in the CA1 pyramidal cell model (Figure 2). The steady-state analysis is mathematically rigorous and the simulations demonstrate convergence to complex demand patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C48"
+    ],
+    "result": "The model predicts transport bottlenecks when demand signals modulate local trafficking rates. The smallest demand signal determines the rate-limiting time constant for cargo delivery. Counterintuitively, proximal demand can accelerate delivery to distal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C48 are supported by mathematical analysis and simulations (Figure 3). The bottleneck phenomenon is demonstrated quantitatively with convergence times varying by orders of magnitude depending on demand patterns. The counterintuitive acceleration effect (C27) is clearly shown in Figure 3F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C49"
+    ],
+    "result": "The sushi-belt model exhibits an unavoidable tradeoff between speed and accuracy of cargo delivery. Different trafficking strategies (DDT vs DDD) perform differently depending on the spatial profile of demand, with DDD avoiding bottlenecks but DDT performing better for uniform demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C49 are supported by systematic comparisons of trafficking strategies under different demand scenarios (Figure 5). The tradeoff curves are quantified and the performance differences are clearly demonstrated for distal vs uniform demand patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C40",
+      "C52",
+      "C53"
+    ],
+    "result": "Using experimentally-constrained parameters, the model predicts severe delays (hours to days) for accurate cargo delivery. It takes over a day to deliver 95% of cargo with 10% error, and over a week for 1% error. The capture rate must be ~10x slower than trafficking to avoid proximal bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C30, C40, C52, and C53 are supported by quantitative simulations with realistic parameters (diffusion coefficient of 10 \u03bcm\u00b2/s) in an 800 \u03bcm cable (Figure 6B). The timescales are explicitly calculated and the order-of-magnitude scaling requirement is derived from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C50"
+    ],
+    "result": "Fine-tuning trafficking rates with a linearly decreasing anterograde bias can achieve faster delivery (within 10% error in 200 min), but this strategy is highly sensitive to changes in demand patterns and has not been observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C50 are supported by simulations showing improved performance with fine-tuned trafficking (Figure 6A3) but also demonstrating fragility when demand patterns change. The lack of experimental evidence (C50) is appropriately noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C54"
+    ],
+    "result": "Cargo recycling (reversible detachment) creates a new tradeoff between convergence time and excess cargo. Models with efficient cargo utilization (<10% excess) require >1 day to converge, while fast convergence (~17 hr) requires >90% excess cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C41, and C54 are supported by systematic analysis of models with reattachment (Figure 7). The tradeoff curves are quantified and show that recycling does not circumvent the fundamental speed-efficiency tradeoff, only transforms it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neuronal morphology influences trafficking tradeoffs, with different cell types showing order-of-magnitude differences in performance. The hippocampal granule cell achieved low error (~11.7%) while the L5 pyramidal and Purkinje cells showed higher errors (~27-29%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by simulations across five reconstructed cell types with uniform parameters (Figure 8). The quantitative error values are explicitly reported and the morphology-dependence is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The model reveals that neurons can distribute cargo through multiple strategies, but optimizing for any one property (speed, accuracy, or metabolic cost) comes at the expense of the others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported as summary conclusions from the comprehensive tradeoff analyses presented throughout the paper (Figures 5-8). The multi-dimensional tradeoff is demonstrated across different models and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Experimental evidence shows diversity in trafficking strategies: some mRNAs are uniformly distributed but locally translated (Aplysia), while Arc mRNA distribution matches protein patterns (dentate gyrus). The same cargo type can exhibit diverse movement statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by appropriate citations to experimental studies. These claims provide biological context for the model predictions and suggest that different strategies may be employed in different systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The authors speculate that different neuron types and cargoes may have adapted trafficking strategies matching performance tradeoffs to biological needs, and that real neurons might use unanticipated mechanisms to circumvent the predicted tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C62 are explicitly speculative statements about potential biological adaptations and mechanisms not included in the model. While reasonable hypotheses, they are not tested and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work establishes that synaptic plasticity depends on mRNA transport, that local biosynthesis supports dendritic physiology, and that neuronal activity influences trafficking through multiple mechanisms including transcription and second messengers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 and C42-C47 are background claims supported by appropriate citations to established literature. These provide the biological motivation for studying cargo trafficking but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on neuronal transport: neurons require intracellular transport of diverse cargo, local signals regulate trafficking, and the relative contributions of local vs global mechanisms are not understood. Transport is mediated by kinesin and dynein motors with stochastic, bidirectional movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, C12, C14-C16 provide established background knowledge supported by appropriate citations. These set up the biological context and motivation for the modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "The authors describe their modeling approach: the mass-action model is an approximation that assumes cargo can be described as a concentration, the sushi-belt model requires feedback between cargo concentration and demand signals, and the linear model has no other fixed points or limit cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C66-C69, and C72 describe methodological choices and mathematical properties of the model. These are appropriately characterized as assumptions and limitations, with C72 being a valid mathematical statement about linear systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The authors state that experimental falsification would prompt model revision, while experimental confirmation would have fundamental consequences for theories of synaptic plasticity requiring efficient nucleus-to-synapse trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 are appropriate statements about the implications of future experimental work. These represent testable predictions and acknowledge the provisional nature of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The CA1 pyramidal cell model was obtained from ModelDB (accession 144541) and representative morphologies of five cell types were obtained from neuromorpho.org.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 are straightforward methodological statements about data sources, properly cited and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C55"
+    ],
+    "result": "The authors provide mechanistic interpretations: speed/precision tradeoffs arise from conflict between exploring dendrites and capturing cargo, and generating excess cargo for rapid replacement will result in large dilution times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51 and C55 are interpretations and predictions from the model. While C51 is a reasonable intuitive explanation, C55 is a prediction about a scenario (rapid replacement of high-concentration cargo) that is not explicitly simulated in the paper.",
+    "result_type": "MINOR"
+  }
+]

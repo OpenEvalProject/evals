@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The EAE model exhibits demyelination, axonal degeneration, and sparse remyelination. Mice developed chronic paralysis peaking at ~14 days post-immunization. Demyelinating lesions were detected at peak severity, followed by extensive demyelination at late stages. Neurofilament staining revealed demyelinated axons at peak and significant axonal loss at late stages. Electron microscopy showed sparse remyelinated axons accompanied by numerous demyelinated and degenerating axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 provide comprehensive characterization of the EAE model using multiple complementary techniques (clinical scoring, OsO4 staining, immunohistochemistry, EM). The data consistently demonstrate the temporal progression of demyelination and axonal degeneration, establishing the complexity of the model with concurrent pathological processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Clemastine treatment significantly reduced EAE clinical severity, preserved myelin staining, and prevented axon loss without altering inflammatory cell infiltration (CD3+ or Iba1+ cells). However, histological analysis alone cannot conclusively determine whether clemastine's effects are solely due to accelerated remyelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C26 demonstrate clemastine's therapeutic effects with appropriate controls, but C27 correctly acknowledges a critical limitation: static histology cannot definitively establish mechanism of action. The lack of difference in immune cell infiltration (C26) is suggestive but not conclusive, as clemastine could affect other aspects of inflammation or have direct axonal effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C6",
+      "C75"
+    ],
+    "result": "Lineage tracing using Cspg4-CreErt; Mapt-mGFP mice demonstrated that clemastine treatment initiates remyelination as early as peak EAE disease. GFP-positive myelin sheaths were observed surrounding demyelinated axons, with some showing GFP+/MOG- phenotype. The authors hypothesize that newly formed myelin is protected from MOG-induced demyelination due to absence of MOG expression in immature myelin. Recombination efficiency was ~30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide direct evidence for early remyelination using an elegant lineage tracing approach. The observation of GFP+/MOG- myelin (C30) supports the hypothesis (C6, C75) about protection of new myelin, though this remains mechanistic speculation. The documented recombination efficiency (C31) is important for interpreting the results, acknowledging that not all remyelination events are captured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C78"
+    ],
+    "result": "Systematic knockout studies identified Chrm1 as the sole mediator of anti-muscarinic compound effects on oligodendrocyte differentiation. All six potential receptor targets (Chrm1-5, Hrh1) were expressed in OPCs. Clemastine/benzatropine enhanced OPC differentiation in wildtype and Chrm2-5/Hrh1 knockout cultures, but not in Chrm1 knockout cultures. Chrm1 deletion alone was sufficient to enhance OPC differentiation and myelination in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 present a comprehensive receptor deconvolution study with appropriate controls. The systematic knockout approach (C35-C37) provides strong evidence that Chrm1 is both necessary and sufficient for the drug effects. The in vitro data from OPC cultures and DRG cocultures (C38-C39) consistently support Chrm1 as a negative regulator of differentiation. This identifies the therapeutic target (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In the lysolecithin-induced demyelination model, Chrm1 null mice showed enhanced oligodendrocyte differentiation and accelerated remyelination kinetics at 10 days post-lesion, as demonstrated by increased Plp+ and Mag+ cells and MBP immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate accelerated remyelination in a non-inflammatory demyelination model using multiple markers (Plp, Mag, MBP). This provides important validation that Chrm1 deletion enhances remyelination in vivo, independent of the inflammatory context of EAE. The use of multiple complementary markers strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Chrm1 null mice showed reduced EAE disease severity with remission from day 19, reduced demyelination, and preserved myelinated axons. Importantly, CGRP+ unmyelinated axons showed similar degeneration in both wildtype and Chrm1 knockout mice after EAE, suggesting the protective effect is specific to myelinated axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide critical evidence using unmyelinated axons as an internal control. The observation that Chrm1 deletion does not protect CGRP+ unmyelinated fibers (C46-C48) strongly suggests the neuroprotective effect is mediated through remyelination rather than a general anti-inflammatory or direct neuroprotective mechanism. This is a well-designed control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Chrm1 conditional knockout (cKO) mice showed normal developmental myelination in adulthood, with similar g-ratios, myelinated fiber density, and oligodendrocyte numbers compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 establish that oligodendrocyte-specific Chrm1 deletion does not disrupt normal developmental myelination. This is essential for interpreting the EAE results, as it demonstrates that the therapeutic effects are not due to developmental compensation or abnormal baseline myelination. Multiple complementary measures (EM, immunostaining, cell counts) support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Oligodendrocyte-specific Chrm1 deletion (cKO) significantly attenuated EAE clinical severity in a dose-dependent manner. Chrm1 cKO mice showed increased myelinated axon density, enhanced remyelination (2-fold increase in remyelinated axons with g-ratio >0.8), and preserved total axon numbers without affecting demyelination severity (pre-existing myelinated axons with g-ratio <0.8) or inflammatory cell infiltration. This demonstrates that remyelination causally preserves axonal integrity in inflammatory demyelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 represent the central finding of the manuscript. The cell-specific genetic approach successfully uncouples remyelination from inflammation (C65) and other confounding factors. The g-ratio analysis (C60-C63) elegantly distinguishes pre-existing from remyelinated axons, showing that Chrm1 deletion enhances remyelination without affecting initial demyelination severity (C62). The 2-fold increase in remyelinated axons (C63) correlates with preserved total axon density (C61), supporting causality (C64, C66). The dose-dependent effect in heterozygotes (C55) further supports specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "The genetic approach uncouples remyelination from inflammation and degeneration in EAE, demonstrating that remyelination is sufficient to preserve axonal integrity and neuronal function. Endogenous remyelination is nearly absent at peak EAE and sparse at later stages, but myelin regenerative approaches can initiate remyelination as early as peak disease. Despite thin myelin, remyelination appears sufficient to preserve axons, suggesting early remyelination is an effective intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 synthesize the major findings. The statement that findings \"uncouple\" remyelination from inflammation (C72) is supported by the cell-specific genetic approach and lack of inflammatory changes (C65). The observation about sparse endogenous remyelination (C73) is supported by earlier data (C21-C22). The conclusion that thin remyelinated myelin is sufficient for axonal preservation (C76) is supported by the EM and g-ratio data (C59-C63). These represent well-supported interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Background claims about MS pathology, myelin function, remyelination failure, and current therapeutic limitations based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15, C67-C71 provide background context supported by appropriate citations to prior literature. These establish the rationale for the study but do not represent novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Summary claims from the abstract stating that oligodendroglial-specific Chrm1 deletion results in accelerated remyelination, preventing axonal loss and improving functional recovery in EAE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are high-level summary statements that are supported by the detailed experimental results presented in the manuscript (particularly claims C54-C66). These abstract-level claims accurately reflect the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C79"
+    ],
+    "result": "Speculative claims about clemastine's potential immunomodulatory effects and the promise of remyelination therapy for MS patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 acknowledges uncertainty about clemastine's immunomodulatory potential, which is appropriate given the data. Claim C79 about clinical promise is speculative and extends beyond what the EAE model data can definitively support, though it represents a reasonable inference from the findings. These forward-looking statements lack direct experimental support in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

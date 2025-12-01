@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Postnatal cardiac-specific EED inactivation (EedCKO) causes lethal dilated cardiomyopathy with progressive systolic dysfunction, cardiomegaly, cardiac hypertrophy, and fibrosis, demonstrating that EED is essential for neonatal heart maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C19 collectively provide strong evidence through survival curves (C10, C11), echocardiography (C12, C13), histopathology (C14, C16, C17), and molecular markers (C15) that EED inactivation causes lethal dilated cardiomyopathy. The data are internally consistent and use appropriate methods including Kaplan-Meier survival analysis, echocardiography, histological examination, and qRT-PCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "EED inactivation globally reduces H3K27me3 levels and causes differential gene expression with 863 genes upregulated (including slow-twitch myofiber genes enriched for skeletal muscle GO terms) and 392 genes downregulated. About half of upregulated genes are occupied by EED at their TSSs, suggesting gene derepression is the predominant direct effect of EED deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 are well-supported by immunoblotting (C20), ChIP-seq peak analysis (C21), RNA-seq differential expression analysis (C22-C23), and GO enrichment analysis (C25). The statistical thresholds (fold change >1.5 or <0.67, adjusted p-value<0.05) are appropriate. The integration of ChIP-seq and RNA-seq data (C28-C32) provides strong evidence for direct EED targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Gene upregulation in EedCKO occurs predominantly without loss of H3K27me3. Only 29% of upregulated genes (Cluster C1, 252/863 genes) show reduced H3K27me3, while the majority (Clusters C2 and C3, 611/863 genes) maintain H3K27me3 levels despite being upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C39 are strongly supported by multiple complementary analyses: quantitative H3K27me3 ChIP-seq analysis stratified by baseline occupancy (C33-C34), aggregate plots (C35), clustering analysis (C36), genome-wide comparisons (C37), and ChIP-qPCR validation. The finding is robust to normalization methods and represents a key departure from canonical PRC2 function. This challenges the prevailing model that EED repression operates primarily through H3K27me3 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "EED inactivation causes marked increases in histone acetylation, including H3K27ac, H3K9ac, and H4ac globally and specifically at upregulated genes. All 863 derepressed genes gained H3K27ac levels at their promoters and enhancers, suggesting EED is required to suppress H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C54 are well-supported by immunoblotting (C40-C42), acute knockdown experiments in HL-1 cells (C43), H3K27ac ChIP-seq showing genome-wide changes (C44-C47), and specific enrichment at upregulated genes (C48-C50). The use of both in vivo (EedCKO) and in vitro (HL-1 siRNA) systems strengthens the conclusion that increased acetylation is a direct consequence of EED loss rather than secondary to cardiac dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Delayed EED re-expression at P14 or P25 rescues cardiac function, normalizes gene expression, and corrects H3K27ac levels but does not restore H3K27me3 levels or distribution, demonstrating that phenotypic rescue is associated with H3K27ac normalization independent of H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 provide strong evidence through AAV-mediated rescue experiments with echocardiography (C55), heart weight measurements (C56, C58), qRT-PCR (C57), immunoblotting (C59-C60), and ChIP-seq (C61-C65). The key finding that rescue occurs without H3K27me3 restoration (C60, C62, C66) while H3K27ac is normalized (C59, C61, C67) is internally consistent across multiple assays and directly supports the H3K27me3-independent mechanism. The temporal rescue experiments (P14 and P25) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "EED physically interacts with HDACs (HDAC1-7, 9, but not HDAC8) and enhances HDAC2 deacetylase activity up to threefold in vitro. Nearly half of HDAC2 genomic binding sites overlap with EED peaks, supporting a model where EED represses target genes by stimulating HDAC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C69-C74, C80-C83 are well-supported by co-immunoprecipitation experiments with both overexpressed (C71-C72) and endogenous proteins (C73), ChIP-seq showing genomic co-occupancy (C74), and in vitro deacetylase activity assays (C80-C81). The prior work citation (C69-C70) provides historical context. The threefold enhancement of HDAC2 activity by EED (C80) is a quantitative biochemical finding that mechanistically links EED to histone deacetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Despite elevated histone acetylation in EedCKO hearts, total HDAC levels and HDAC2/HDAC5 genomic occupancy remain unchanged, indicating that HDAC recruitment is independent of EED and that elevated H3K27ac is not due to decreased HDAC binding but rather reduced HDAC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C75-C79 are supported by RNA-seq and immunoblotting showing unchanged HDAC expression (C68), HDAC2 ChIP-seq aggregate plots (C75), ChIP-qPCR validation (C76), and analysis across different gene classes (C77). This finding is critical for establishing that EED modulates HDAC activity rather than recruitment, distinguishing the mechanism from other HDAC-containing complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "AAV-mediated HDAC1/2 overexpression rescues EedCKO heart function, normalizes cardiomegaly, restores repression of slow-twitch sarcomere genes, and reduces H3K27ac at upregulated genes without affecting H3K27me3, demonstrating that HDAC activity is sufficient to correct EED deficiency independent of H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C84-C94 provide compelling genetic evidence through AAV-HDAC1/2 rescue experiments with echocardiography (C85), heart morphology (C86), qRT-PCR (C87-C88), RNA-seq (C89), and ChIP-seq (C90-C92). The finding that rescue occurs without H3K27me3 changes (C92, C94) while H3K27ac is normalized at specific loci (C90-C91, C93) strongly supports the H3K27me3-independent mechanism. The prior work citation (C84) provides important context that HDAC1/2 deletion causes similar phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "HDAC inhibition by SAHA blocks heart function rescue by AAV9-EED re-expression and prevents normalization of gene expression in four out of five tested genes, demonstrating that HDAC activity is essential for EED-mediated rescue of heart failure in EedCKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by echocardiography (C97) and qRT-PCR (C98) from SAHA treatment experiments. The finding that SAHA blocks EED rescue (C97-C98) provides pharmacological evidence for HDAC requirement. However, the result is somewhat weakened by the loss of 2/5 mice in the EedCKO+EED+SAHA group and the marginal statistical significance (p=0.07) for the functional rescue. The gene expression data (C98) showing blockade of normalization in 4/5 genes is more robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "EED has a non-canonical, H3K27me3-independent repressive mechanism that is essential for normal heart function. EED functions genetically upstream of HDACs and maintains transcriptional repression in post-mitotic cardiomyocytes by complexing with and stimulating HDAC activity to suppress H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C101-C104, C121-C123 represent the major integrative conclusions of the study. These are well-supported by the comprehensive data showing: (1) gene derepression without H3K27me3 loss (C122), (2) EED-HDAC physical and functional interaction, (3) rescue by EED or HDAC overexpression without H3K27me3 restoration, and (4) requirement of HDAC activity for EED function. The genetic epistasis argument (C102) is supported by HDAC overexpression rescuing EED deficiency. This represents a paradigm shift in understanding PRC2 function in post-mitotic cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C112"
+    ],
+    "result": "Organ dysfunction due to epigenetic dysregulation can be corrected by epigenetic rewiring, as demonstrated by functional rescue of EedCKO hearts without restoring the original H3K27me3 epigenetic landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C112 are supported by the rescue experiments showing that both AAV-EED and AAV-HDAC1/2 restore heart function and normalize gene expression without correcting the H3K27me3 landscape. This represents an important conceptual advance suggesting that epigenetic diseases may be treatable by alternative epigenetic mechanisms rather than requiring restoration of the original chromatin state. However, this is a broad generalization from a single model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Postnatal EED loss causes lethal dilated cardiomyopathy with ectopic slow skeletal muscle gene expression. De-repression is associated with marked H3K27ac gain rather than H3K27me3 loss, and phenotypic reversal correlates with H3K27ac normalization. A physical and genetic interaction between EED and HDACs mechanistically accounts for the link between EED loss and aberrant H3K27ac accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 summarize the key findings from the Discussion section and are well-supported by the comprehensive experimental data. These claims integrate the phenotypic (C105), epigenetic (C106-C109), and mechanistic (C110-C111) findings into a coherent model. The evidence includes survival data, RNA-seq, ChIP-seq for both H3K27me3 and H3K27ac, rescue experiments, co-IP, and activity assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Normal cardiac function requires proper expression of cardiac sarcomere genes and repression of skeletal muscle and slow-twitch myofiber genes, and abnormal expression of these genes contributes to weak cardiac contraction in EedCKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by citations to prior work (C26) and the observation of upregulated skeletal muscle genes coinciding with cardiac dysfunction in EedCKO (C27). The inference that abnormal gene expression contributes to dysfunction (C27) is reasonable given the correlation and prior literature, though direct causation is not definitively established. The claim would be strengthened by rescue experiments specifically targeting these genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Most PRC2 studies have been performed in actively cycling cells, whereas adult cardiomyocytes are largely post-mitotic, express little EZH2, but contain abundant H3K27me3. Cell cycle activity mandates histone mark re-deposition, so in mitotic cells the writing activity of epigenetic complexes may overshadow other functions important in non-proliferating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 provide important context for why the study's findings differ from canonical PRC2 models. These claims are supported by citations to prior literature (C113, C116, C118-C119) and data from the current study (C120). The inference about writing activity overshadowing other functions in mitotic cells (C117) is reasonable speculation supported by the requirement for histone mark re-deposition during cell division (C116). This contextualizes why the H3K27me3-independent mechanism may be more apparent in post-mitotic cardiomyocytes.",
+    "result_type": "MINOR"
+  }
+]

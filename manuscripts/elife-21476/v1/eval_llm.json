@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "RNAseq with extended OR gene models accurately quantifies OSN subtype abundance. Extended gene models increase OR mRNA detection 2.3-fold on average, with high reproducibility between replicates (rho=0.89). Validation experiments demonstrate that OR mRNA levels correlate strongly with OSN cell counts (rho=0.98) and reflect OSN subtype abundance rather than per-cell expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 collectively establish RNAseq as a valid method for quantifying OSN diversity. The validation includes deletion mutants (C10), ISH correlation (C11), single-cell analysis (C12-C13), and comparison with published data. The convergence of multiple independent validation approaches strongly supports the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14"
+    ],
+    "result": "OSN subtype distribution is stereotyped within genetically identical mice. Biological replicates of the same strain show high correlation (median rho=0.89), and only 1.2% of OR genes differ between B6 males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C14 demonstrate reproducibility within strains through high correlation coefficients and minimal sex differences. The statistical evidence is robust with appropriate replication (n=3-6) and significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "OSN subtype distribution varies extensively between mouse strains. 37% of OR genes differ between B6 and 129 strains, 50.8% between B6 and CAST, with 132 genes showing >8-fold differences. Overall, 65.7% of OR genes are differentially expressed between at least two strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C20-C23 provide comprehensive evidence for strain differences through differential expression analysis with appropriate statistical thresholds (FDR<5%). The use of pseudo-genomes to account for SNPs strengthens the analysis. Validation by ISH (C24) confirms the RNAseq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Genetic variation in OR gene regions differs substantially between strains. The 129 genome contains 13,484 SNPs and 1,936 indels in OR transcripts compared to B6, while CAST contains 45,688 SNPs and 6,303 indels. Copy number variation accounts for minimal differential expression (only 12 of 634 DE genes in CAST).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C18-C19, C25-C27 document genetic variation comprehensively using published genome data and de novo assembly. The finding that CNVs minimally contribute to differential expression (C27) is important for mechanistic interpretation. The computational approaches are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "RNAseq-based differential expression measurements accurately reflect differences in OSN numbers between strains. ISH validation shows high correlation (rho=0.98) between fold-changes measured by RNAseq and cell counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 provides critical validation that strain differences in RNAseq reflect actual OSN number differences. The correlation is very strong and based on nine OR genes with appropriate replication (n=4 for ISH, n=3-6 for RNAseq).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Genetic background, not olfactory environment, determines OSN repertoire. In cross-fostering experiments, samples cluster by genetic strain (correlation 0.97 within strain) rather than odor environment. Only 2 genes show environmental effects versus 507 genes showing genetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate genetic control through a well-designed cross-fostering experiment with appropriate controls. The statistical evidence is strong (t-test p=3.8\u00d710\u207b\u00b9\u00b2) and the contrast between genetic (507 genes) and environmental (2 genes) effects is striking. Sample size (n=6 aliens, n=6 cage-mates) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "OSN subtype abundance is independent of OR protein function. Newborn pups show the full repertoire with unequal distribution, pseudogenes show similar distributions to functional ORs, and 36-45% of OSN subtypes expressing identical OR proteins differ between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide multiple lines of evidence for independence from OR function: developmental timing (C33), pseudogene analysis (C34), and identical coding sequences with different expression (C35-C36). These converging approaches strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The Olfr2>Olfr1507 gene swap demonstrates that genomic context, not OR identity, determines OSN abundance. Olfr2-expressing OSNs increase 47-fold when placed in the Olfr1507 locus, though 118 other OSN subtypes show subtle changes (<2-fold for 90%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe a critical genetic experiment demonstrating cis-regulation. The 47-fold change is dramatic and well-documented (n=4). However, the secondary effects on 118 other OSN subtypes (C38) suggest some complexity that is not fully explained, though the authors acknowledge this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Differentially expressed OR genes show greater genetic variation in regulatory regions. DE ORs have significantly more SNPs/indels in coding sequences, transcripts, and promoter regions (p<0.02 for 129, p<0.0002 for CAST). CAST shows more changes in transcription factor binding sites than 129.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide mechanistic insight through computational analysis of regulatory sequences. The statistical significance is appropriate (Mann-Whitney test) and the comparison between strains is informative. However, this is correlative evidence that supports but does not prove causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Cis-acting genetic variation predominantly controls OSN composition. F1 hybrid analysis shows strong concordance (ccc=0.86, corrected to 0.92) between parental strain ratios and allelic expression ratios for 840 OR genes, indicating cis-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C44 provide strong evidence for cis-regulation through allele-specific expression analysis in F1 hybrids. The concordance correlation coefficient is appropriate for this analysis, and the correction for technical noise (C44) strengthens the conclusion. The finding extends previous work from specific loci to >800 genes genome-wide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Acute but not chronic odor exposure modulates OSN subtypes in a time-dependent manner. After 24 weeks of acute exposure to four odorants, 36 OR genes are differentially expressed. Changes emerge gradually (3 genes at 4 weeks, 5 at 10 weeks, 7 at 24 weeks), are reversible after 6-week recovery, and do not occur with chronic exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C51 demonstrate odor-mediated plasticity through well-controlled experiments with multiple time points and exposure paradigms. The validation by qRT-PCR (C46) in larger cohorts strengthens the RNAseq findings. The contrast between acute and chronic exposure (C51) is important for mechanistic interpretation. Sample sizes are adequate (n=6-13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Odor-mediated changes in OSN subtypes are odorant-specific. Exposure to (R)-carvone or heptanal individually affects 15 and 20 OR genes respectively, with minimal overlap (only Olfr538). Combined exposure affects 24 OR genes, with significant overlap with individual exposures (hypergeometric p=1.87\u00d710\u207b\u00b9\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 demonstrate odorant specificity through systematic comparison of individual and combined exposures. The statistical analysis is appropriate (hypergeometric test) and the finding that ~40% of ORs responding to the four-odorant mix also respond to individual components (C59) provides internal consistency. Sample size is adequate (n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Differentially expressed ORs after odor exposure are directly activated by the odorants. Half of tested DE ORs respond in vitro (Olfr538 to (R)-carvone, Olfr524 to heptanal). In vivo, 11 of 20 DE ORs after heptanal exposure are also enriched in pS6+ activated cells (hypergeometric p=0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide mechanistic validation through both in vitro (luciferase assays) and in vivo (pS6-IP) approaches. The convergence of evidence from long-term exposure and acute activation (C63) is particularly strong. However, only half of tested ORs respond in vitro, suggesting some complexity in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C64",
+      "C65",
+      "C66",
+      "C73",
+      "C74",
+      "C75",
+      "C79"
+    ],
+    "result": "Background claims about the olfactory system establish the biological context. The mouse MOE contains ~10 million OSNs, each expressing one OR gene from >1000 genes in a monoallelic fashion. The MOE continually regenerates its OSN pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C64-C66, C73-C75, C79 are well-established facts about the olfactory system supported by appropriate citations to foundational literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior work on OR gene regulation and OSN biology is cited to establish mechanistic context. This includes transcription factor binding sites in OR promoters, enhancer regulation, activity-dependent OSN survival, and variable responses to odor exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72, C77-C78 accurately cite prior literature to establish the state of knowledge. These citations are appropriate and provide context for the current findings. The authors correctly note conflicting prior results on odor-mediated OSN changes (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Human olfactory variation and its relationship to perception is discussed to contextualize the findings. Humans show OR allelic variation affecting perception, though coding variants explain limited phenotypic variance. Increasing OSN numbers enhances sensitivity in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 appropriately cite human olfaction literature to discuss the broader implications of the findings. The citations are accurate and relevant. These claims establish the translational significance of the mouse findings but do not present new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Mechanistic interpretations and speculations about OSN regulation. The authors propose that OSN composition is independent of OR function (C6), that cis-regulation predominates (C81), and that odor effects may involve OSN lifespan modulation (C86) and olfactory adaptation (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C76, C80-C87 mix supported conclusions (C6, C81) with speculative mechanistic proposals (C80, C82-C87). While C6 is well-supported by multiple experiments, the mechanistic explanations for secondary effects in the Olfr2>Olfr1507 mice (C83-C84) and the basis for odor-mediated changes (C85-C87) remain speculative. The authors appropriately present these as hypotheses rather than established facts.",
+    "result_type": "MINOR"
+  }
+]

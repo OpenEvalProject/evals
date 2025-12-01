@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C32",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Three cryo-EM density maps of Saccharomyces cerevisiae 90S pre-ribosome were determined at resolutions ranging from 4.5 to 8.7 \u00c5 using three different purification strategies (Noc4-TAP, \u0394Dhr1/Enp1-TAP, and \u0394Mtr4/Enp1-TAP). The maps were essentially superimposable and showed progressively better resolution and completeness, with the \u0394Mtr4 map achieving 4.5 \u00c5 resolution where bulky protein side chains were visible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C32, C37, C39-C41 provide consistent resolution measurements using the gold-standard FSC=0.143 criterion, describe appropriate cryo-EM methodology, and demonstrate map quality through visible structural features. The three maps are shown to be structurally similar (C41), validating the reconstructions. The resolution progression and structural features are well-documented with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C51",
+      "C118"
+    ],
+    "result": "The majority of the cryo-EM density maps were modeled and assigned to specific RNA and protein components using multiple complementary approaches including crystal structure fitting, de novo model building, and chemical crosslinking mass spectrometry (CXMS). The final model includes 36 assembly factors, 19 r-proteins, 462 nt of 5' ETS, 1103 nt of 18S, 12 nt of ITS1, 157 nt of U3 RNA, and 1553 unassigned protein residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C51, and C118 describe a comprehensive modeling approach combining multiple experimental techniques (CXMS with 595 crosslinks per C43, crystal structures, de novo building). The specific composition is detailed in C51 with reference to supplementary files. The claim of modeling \"the majority\" is supported by the extensive list of assigned components, though ~15 AFs remain unidentified (C51 vs C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Chemical crosslinking and mass spectrometry (CXMS) analysis of the \u0394Mtr4 90S sample yielded 595 crosslinks (340 intermolecular and 255 intramolecular), providing structural information that greatly assisted in the assignment of cryo-EM density maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report specific CXMS results with clear numbers of crosslinks obtained. The methodology is cited (Yang et al., 2012) and the data is referenced in supplementary materials. This orthogonal structural technique appropriately complements the cryo-EM data for model building and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "90S particles were purified using three different strategies: Noc4-TAP from wild-type cells, and Enp1-TAP from cells depleted of RNA helicases Dhr1 or Mtr4. Northern blot analysis revealed that helicase depletion caused accumulation of 22S pre-rRNA, indicating normal A0 cleavage but inhibited A1 cleavage and 90S-to-pre-40S conversion. The 5'-A0 fragment associates with 90S after cleavage but is significantly reduced in \u0394Dhr1 particles, correlating with weaker 5' ETS density in the corresponding cryo-EM maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C50 describe a well-designed purification and characterization strategy. The use of helicase depletion to enrich specific 90S states is supported by known helicase functions (C35, with citations). Northern blot data (C44-C49, with figure references) directly demonstrate the RNA composition and processing states. The correlation between RNA analysis and cryo-EM density (C50) provides internal validation. The heterogeneity explanation for weak densities (C34) is reasonable given the mixed processing states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The 90S structure has overall dimensions of approximately 300 \u00c5 \u00d7 310 \u00c5 \u00d7 360 \u00c5 with a head-like shape. The 5' ETS subcomplex accounts for ~40% of total mass and forms the bottom and back, with UTPA constituting the jaw, Utp10 forming a large arch, and UTPB and U3 snoRNP located at the right and left back respectively. The four domains of 18S rRNA are partially assembled and positioned at the top and front.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C59 describe the overall architecture with specific dimensional measurements and mass distribution. These are directly observable features in the cryo-EM maps with figure references provided. The structural organization is consistent with the known composition (C54 states 40% mass for 5' ETS subcomplex) and the described locations of major components are verifiable from the density maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "UTPB is composed of six proteins (Utp1/Pwp2, Utp21, Utp12/Dip2, Utp13, Utp8, and Utp6), with the first four containing tandem WD domains and forming a tetramer through their C-terminal domains. In 90S, UTPB adopts an elongated conformation similar to the free complex and makes extensive interactions with UTPA, other 5' ETS factors, and multiple ribosomal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe UTPB composition and structure with appropriate citations for prior knowledge (C60-C61). The structural observations (C62-C63) are based on fitting crystal structures into the cryo-EM density with figure references. The extensive interaction network described in C63 is consistent with UTPB's location at the surface of 90S and is supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "UTPA is composed of seven proteins (Utp8, Utp9, Utp5, Utp15, Utp4, Utp17/Nan1, and Utp10). Structural analysis revealed that UTPA and UTPB are evolutionarily related, both employing a homologous helical tetramerization domain for assembly. The N and M domains of Utp10 are separated in the structure, indicating they are linked by a disordered loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe UTPA composition (C64, with citations) and reveal a novel evolutionary relationship with UTPB based on structural similarity (C65-C66). The inference about evolutionary relationship (C66) is reasonable given the striking structural resemblance of the CTD tetramers. The conclusion about the disordered Utp10 loop (C67) is appropriately based on spatial separation of domains in the density map with crystal structure fitting (PDB codes provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "U3 snoRNA is divided into a 5' domain (nt 1-73) that base pairs with pre-rRNA and a 3' domain (nt 74-333) containing five helices (P1-P5) that associates with Nop56, Nop58, Snu13, Nop1, and Rrp9. The U3 snoRNP structure shares similar architecture with archaeal C/D RNP, with the P2 helix resembling a guide-substrate duplex, though Nop1 is not in an active conformation. U3 snoRNP adopts a rectangular structure in 90S with U3 RNA facing inside.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 describe U3 snoRNP structure and organization with appropriate citations for prior knowledge (C68-C69, C71). Structural comparisons with archaeal C/D RNP (C70, C73) are supported by figure references and citations. The observation that Nop1 is inactive (C74) is consistent with 90S being a pre-catalytic assembly. The WD domain interactions of Rrp9 (C72) confirm previous biochemical observations with structural detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A revised secondary structure model for the 5' ETS includes 10 helices (H1-H10), with eight helices (H1-H4, H6-H9) successfully modeled into the EM map. U3 forms two helices (Ha and Hb) with 5' ETS and two helices (Hc and Hd) with 18S rRNA. Notably, a novel U3-18S interaction was identified where the 5' end of U3 (nt 1-13) pairs with the 5' arm of helix 27 (nt 1111-1123) of 18S, forming helix Hd. This interaction is evolutionarily conserved from yeast to humans and is consistent with in vivo chemical probing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 describe a revised 5' ETS model based on structural data. The novel U3-helix 27 interaction (C85) is supported by multiple lines of evidence: the density map allows modeling of a 13-bp duplex, the interaction is consistent with the physical linkage of helices 26 and 28 (C85), it shows evolutionary conservation across species (C86, with figure), and it agrees with previous chemical probing (C87, with citation). The model differs from previous predictions (C82-C84) but is well-justified by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "U3 binds four sites of pre-rRNA, including a novel site on helix 27, but contrary to the long-standing hypothesis, does not bind the 3' side of the central pseudoknot (CPK). Previous mutational studies support U3 interaction with the 5' end of 18S but not with the 3' side of the CPK. By bringing the 5' end and central region of 18S close together, U3 would facilitate CPK formation and the overall architecture of mature 40S during the 90S-to-pre-40S transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C130-C134 present a major revision to the understanding of U3 function. The structural data directly shows U3 binding to the 5' end but not the 3' side of CPK (C132), contradicting the previous model (C131, with citation). This is supported by previous mutational data (C133, with citation). The proposed mechanism for CPK formation (C134) is a reasonable inference based on the spatial arrangement, though it remains speculative about future events and would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The 5' ETS RNA adopts a highly branched structure and contacts mainly 5' ETS factors. The 5' region (H1-H4) primarily contacts UTPA proteins, consistent with previous pull-down and crosslinking data. Imp3, in association with Mpp10, binds at the junction of H6, H7, Ha, and Hb, critically organizing this junction structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe the 5' ETS architecture and protein interactions. The branched structure (C88) is directly observable in the maps. The UTPA contacts (C89) are confirmed by both the current structure and previous biochemical data (with citations). The structural role of Imp3 at the RNA junction (C90) is supported by crystal structure fitting (PDB code provided) and explains its functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The four domains of 18S RNA are assembled into several subdomains that adopt native-like structures but are not yet packed together. The 5' and central domains already take a native orientation as in mature 40S, while the 3' major and 3' minor domains are placed far from their native positions. Only 19 of 33 r-proteins from mature 40S were identified, and the 18S RNA is well separated from the 5' ETS RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe the assembly state of the nascent ribosome with appropriate comparisons to the mature 40S structure. The observations are directly verifiable from the cryo-EM maps with figure references. The identification of 19/33 r-proteins (C94) is documented in supplementary files. The structural separation of 18S and 5' ETS (C95) reflects their distinct functional roles and is observable in the maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The 5' domain is assembled into basal and apical subdomains, heavily covered by assembly factors. Helix 6, the U14 snoRNA binding site, is disordered, consistent with U14's transient association with early 90S intermediates and its release in complete 90S particles. Bms1, a GTPase that associates with Rcl1, binds at a site that significantly overlaps with Tsr1's binding site in pre-40S, suggesting Bms1 is replaced by Tsr1 during 90S-to-pre-40S transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe the 5' domain structure and associated factors. The subdomain organization (C96) is observable in the maps. The disorder of helix 6 (C97) is explained by U14's absence in the samples (C98, with citation), providing internal consistency. The Bms1-Tsr1 replacement model (C100) is a reasonable inference based on overlapping binding sites, though it remains a prediction requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In 90S, the platform is partially assembled from helices 20, 22, 23, and 26 with six r-proteins (lacking S26). The large expansion segment ES6 was not located. Krr1 binds at the inner side of helix 23, with its binding site significantly overlapping those of helix 45 and S26, consequently occluding these elements from the platform and causing nearby helix 24 to be disordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the partial assembly of the central domain platform. The comparison with mature 40S (C101) provides context. The structural observations (C102-C106) are directly from the cryo-EM maps. The inference that Krr1 occludes helix 45 and S26 (C106) is well-supported by the overlapping binding sites (C105) and explains why these elements are missing from the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The 3' major domain is assembled into a basal subdomain (helices 28-30, 41-43 with r-proteins S5, S16, S28) and a beak subdomain (helices 32-34 with r-proteins S12, S31), with only 5 of 18 r-proteins from mature 40S located. The two subdomains are separated by Emg1, which binds to its modification target in helix 31. Imp4, a BRIX domain protein that associates with Mpp10, extensively contacts helices 43 and 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 describe the 3' major domain structure. The subdomain organization (C109) and incomplete assembly (C108) are observable in the maps. Emg1's location and function (C110-C111) are supported by crystal structure fitting and its known methyltransferase activity (C111, with citation). Imp4's assignment (C112) is based on structural similarity to Rpf2 (with PDB code) and known Mpp10 interaction (with citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In 90S, helix 44 of the 3' minor domain travels in a long curved path from helix 28 to rest its tip on Utp22, forming a small arch. The basal part is clamped between the tandem WD domains of Utp12 and Utp13. Pno1, which binds near the D site in pre-40S, is located near the center of UTPB in 90S with interactions to Utp21 and Utp1, suggesting initial recruitment by protein-protein interactions before D site RNA emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 describe the 3' minor domain structure and Pno1 location. The helix 44 path (C114-C115) is directly observable in the maps with figure references. The Pno1 location in 90S (C117) differs from its position in pre-40S (C116, with citations), and the inference about sequential recruitment is reasonable given the assembly timeline mentioned in the text. The D site RNA assignment is tentative but supported by Pno1 binding and potential hairpin structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "One main function of 90S is to process pre-rRNA at the A0, A1, and A2 sites, but the current model does not include these processing sites, which appear to be located at the periphery or outside the 90S core structure. Despite the samples containing multiple processing intermediates, all reconstructions yielded similar structures, suggesting pre-rRNA cleavage may not significantly affect the global architecture of 90S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 acknowledge a limitation of the current structure (C120) while providing a reasonable explanation. The observation that different processing states yield similar structures (C121) is supported by the data showing three similar maps from samples with different RNA compositions (C44-C50). This suggests the processing sites are indeed peripheral and that cleavage doesn't cause major conformational changes in the core structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The four domains of 18S are assembled with 19 core r-proteins into isolated subdomain structures corresponding to early folding units. The 5' and central domains are well-assembled and primed to combine into the body, while the 3' major and minor domains are significantly deviated from native structures, requiring large structural reorganization during 90S-to-pre-40S transition. Many assembly factors stabilize partially assembled structures, and the 5' ETS subcomplex acts as a large base to support and arrange ribosomal substructures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 present key conclusions about 90S assembly principles. These are well-supported by the structural data showing: isolated subdomains (C122, observable in maps), differential assembly states (C123-C124, from comparisons with mature 40S), and extensive AF-ribosome contacts (C126, from the structure). The inference about required reorganization (C125) logically follows from the non-native positioning of 3' domains. The role of the 5' ETS subcomplex (C127) is supported by its size and position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C8"
+    ],
+    "result": "U3 is a prominent component in the 5' ETS subcomplex, with its 5' domain located at the heart of 90S. U3 crucially organizes the 90S architecture by making four helices with the 5' ETS and 18S RNA, bringing together distant regions of the nascent ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129, C8 describe U3's central organizational role. The prominence of U3 (C128) is supported by citations. The location at the heart of 90S (C129) and formation of four helices are directly observable in the structure. The crucial organizational role (C8, C129) is well-supported by the extensive interactions and the spatial arrangement of U3-bound RNA elements, which bridge different regions of the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The 90S structure assembles in a stepwise 5' to 3' manner as the pre-rRNA transcript extends. The structural organization is consistent with the ordered assembly pathway, as the 5' ETS, 5' domain, and central domain can form independent structures with associated factors. Transcription of helix 44 triggers a dramatic assembly event involving 12 late factors, and the structural roles of helix 44 and six assigned late factors provide insight into this event, with helix 44 linking the 3' major domain to the central domain via Utp22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 integrate the structural data with known assembly kinetics. The stepwise assembly (C135) is supported by citations. The consistency between structure and assembly pathway (C136) is demonstrated by the modular organization. The helix 44-triggered event (C137) is from cited prior work, and the current structure (C138-C139) provides molecular details explaining how helix 44 establishes domain connections. This represents a good integration of structural and kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The 90S maps from S. cerevisiae and C. thermophilum are largely similar, indicating conservation of 90S architecture in yeast. However, the Sc map is more complete, with the Ct map lacking densities for the Utp22-Rrp7 complex, Rrp5, Utp18, helix 44, and having extremely weak densities for the beak subdomain and Enp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 compare the current work with the recent Ct 90S structure. The overall similarity (C140) indicates architectural conservation and validates both structures. The greater completeness of the Sc map (C141-C142) is documented with specific missing components and figure references. This comparison is appropriate and highlights the improvements in the current study, though some assignment differences between the two models are noted in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6"
+    ],
+    "result": "Eukaryotic small ribosomal subunits are first assembled into 90S pre-ribosomes, gigantic complexes with molecular mass of approximately five megadaltons. The nascent ribosome is assembled into isolated native-like substructures stabilized by abundant assembly factors, and the 5' ETS and U3 snoRNA nucleate a large subcomplex that scaffolds the nascent ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C6 provide the conceptual framework for the study. The assembly pathway (C1) and mass (C2) are established knowledge confirmed by the current work. The conclusions about isolated substructures (C5) and the scaffolding role of 5' ETS/U3 (C6) are well-supported by the structural data showing modular organization and the extensive interaction network of the 5' ETS subcomplex. These represent key findings from the structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "The nearly complete cryo-EM structure of 90S provides a platform to understand genetic and biochemical data on 18S rRNA processing and SSU assembly, and sets the stage to investigate the mechanism and dynamics of early SSU assembly at the level of entire 90S structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is a forward-looking statement about the significance and utility of the work. Given the comprehensive nature of the structure (36 AFs, 19 r-proteins, extensive RNA modeling per C51) and the insights it provides into assembly principles (C122-C127) and U3 function (C129-C134), this claim is well-supported. The structure does provide a framework for interpreting existing data and planning future experiments, though the statement is somewhat general.",
+    "result_type": "MINOR"
+  }
+]

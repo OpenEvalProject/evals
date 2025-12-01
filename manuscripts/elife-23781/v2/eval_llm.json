@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes background knowledge about the mitochondrial permeability transition pore (MPTP), describing it as a hypothesized channel with hallmark properties including very large ionic conductance (up to 1300 pS), high permeability to small molecules (<1.5 kDa), and no ion selectivity. The molecular identity of MPTP remains unknown despite previous candidates (VDAC, ANT, cyclophilin D) being ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 accurately summarize established knowledge about MPTP from the literature, appropriately citing prior work. These background claims provide the necessary context for evaluating the hypothesis that the c-ring is the MPTP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C25",
+      "C26"
+    ],
+    "result": "Jonas and co-workers proposed that the c-subunit ring of the ATP synthase is the MPTP, specifically that metabolic stress induces F1-Fo dissociation, after which the c-ring lumen becomes the MPTP. This claim has been questioned by other researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18, C25, and C26 accurately cite the hypothesis being tested (Alavian et al., 2014) and note that it has been questioned by others (Bernardi et al., 2015; Halestrap, 2014). This establishes the scientific controversy motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The c-ring is an oligomer of subunit-c hairpins arranged in two concentric rings around a central hydrophobic lumen. The F1 domain sits atop the ring, and in the operating enzyme, the c-ring rotates as protons bind to sites on the outer surface featuring conserved glutamate residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately describe the established structure and function of the c-ring based on multiple cited structural studies. These are well-established facts about ATP synthase architecture necessary for interpreting the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C63"
+    ],
+    "result": "Molecular dynamics simulations of the hydrated c10-ring from S. cerevisiae reveal conductance values of 2.5 pS for K+ and 116 pS for Cl\u2212 (at 100 mM KCl), which are inconsistent with MPTP properties in magnitude and show marked anion selectivity. This selectivity is attributed to a conserved arginine ring at the matrix-side entrance that electrostatically favors Cl\u2212 over K+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present computational results using validated methods (C63 cites benchmarking). The conductance calculations are orders of magnitude lower than MPTP's reported 1300 pS, and the strong anion selectivity contradicts MPTP's lack of ion selectivity. The mechanistic explanation involving the arginine ring is supported by control simulations without electrolytes (C32). However, these calculations assume the lumen is hydrated, which is addressed separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C64"
+    ],
+    "result": "Metadynamics simulations reveal that the water-filled state of the c10-ring lumen is approximately 15 kcal/mol less favorable than a dehydrated state, making the probability of a conducting state negligible. The water-filled state is metastable and sufficiently long-lived to observe permeation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 present free energy calculations showing the hydrated state is thermodynamically disfavored by ~15 kcal/mol, corresponding to multiple orders of magnitude difference in probability. The metastability observation (C64) validates that the conductance calculations in the previous result are meaningful despite the state being unfavorable. The methodology appears sound with error analysis provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C65"
+    ],
+    "result": "Simulations of c10-ring assembly intermediates lacking two c-subunits demonstrate that lipid molecules spontaneously displace water and occupy the lumen in a bilayer-like arrangement. This contradicts the implicit assumption that lipids are excluded during c-ring assembly, and structural evidence (X-ray, AFM) suggests lumens may be occluded by detergent/lipid molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present consistent results from three independent simulations showing lipid occlusion. The inference (C43) that complete ring assembly wouldn't change this is reasonable given the hydrophobic nature of the lumen. Supporting evidence from X-ray structures (C39) and AFM (C40) strengthens the conclusion. This addresses a critical assumption of the MPTP hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "To test whether c-ring expansion could explain MPTP properties, simulations were performed on a variant of the wider c13-ring from B. pseudofirmus. Despite the wider lumen, the hydrated state shows significantly larger but still anion-selective permeability, remains thermodynamically disfavored relative to the empty state, and becomes occluded by lipids in assembly intermediate simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 show that even with a wider lumen (the widest known c-ring structure, C45), the fundamental problems persist: anion selectivity, unfavorable hydration thermodynamics, and lipid occlusion. The use of a bacterial c-ring is justified as a model for potential expansion (C44), though the authors note no permeability transition has been described in bacteria (C46). This systematically addresses the expansion hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C62"
+    ],
+    "result": "The study concludes that the structure and biophysical properties of a correctly assembled c-ring are incompatible with those attributed to the MPTP. The c-ring lumen is lipid-occupied and non-conducting in the native enzyme, and even if F1-Fo dissociation occurred (despite nanomolar affinity) and the lumen became hydrated, the conductance would be unlike MPTP. Therefore, the c-ring is not the MPTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50, C52, C53, and C62 represent the main conclusions, which are well-supported by the computational data presented. The argument is logically structured: (1) the lumen is lipid-filled not water-filled, (2) even if hydrated, conductance is wrong, (3) even if expanded, problems persist. The nanomolar F1-Fo affinity (C54) makes dissociation unlikely. The conclusion is appropriately strong given the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors acknowledge their study doesn't rule out an unknown alternative c-subunit structure that could be the MPTP, but note no evidence for such a structure exists despite two decades of structural studies across diverse species and conditions consistently showing ring-like oligomers. Structural data is consistent with biochemical and functional measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 appropriately acknowledge limitations (C55) while providing strong context that no alternative c-subunit architecture has been observed despite extensive structural characterization (C57-C59). The consistency between structural and functional data (C60-C61) strengthens the argument that the known c-ring structure is the physiologically relevant form. This is a fair and scientifically rigorous discussion of scope.",
+    "result_type": "MINOR"
+  }
+]

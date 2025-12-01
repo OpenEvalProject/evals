@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Auxin-induced growth, nuclear auxin response (DR5::LUC), and apoplastic acidification all occur with a synchronized ~20-minute lag phase after auxin application in Arabidopsis hypocotyls. In contrast, fusicoccin (FC) triggers both growth and acidification within 6-8 minutes, demonstrating that the delay is specific to auxin signaling rather than an artifact of the experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide converging quantitative evidence (n=12 for growth and pH measurements) showing temporal correlation between auxin signaling, acidification, and growth onset at ~20 min. The FC control (C35, C38) effectively demonstrates the system can respond faster when auxin signaling is bypassed. The calculation in C40 confirms auxin penetration is not rate-limiting. This represents a key finding directly visualizing the coordination of these processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Protein synthesis is absolutely required for auxin-induced growth and acidification but not for growth per se. Cycloheximide (CHI) completely blocks auxin-induced growth, apoplastic acidification, and DR5::LUC response, while FC-induced growth remains largely unaffected by CHI treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate through pharmacological inhibition that protein synthesis is specifically required for auxin responses but not for the growth machinery itself. The complete inhibition of DR5::LUC by CHI (C47-C48) validates treatment efficacy. This clearly distinguishes auxin-dependent transcriptional requirements from growth execution mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Auxinole, a TIR1/AFB receptor inhibitor, substantially reduces auxin-induced growth and nuclear auxin response (DR5::LUC) while leaving FC-induced growth intact, demonstrating that nuclear auxin receptors mediate auxin-induced apoplastic pH changes and growth in hypocotyls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide pharmacological evidence through auxinole treatment that specifically blocks TIR1/AFB-auxin-Aux/IAA complex formation. The selective inhibition of auxin responses while preserving FC responses (C51) demonstrates specificity. This supports the nuclear pathway's role in mediating growth responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Auxin-induced growth and acidification require TIR1/AFB-Aux/IAA signaling and Aux/IAA degradation. The abp1 null mutants respond normally to auxin, while induction of the dominant-negative axr3-1 protein completely blocks auxin-induced growth and apoplastic acidification but not FC-induced growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide strong genetic evidence using abp1 knockouts (C53) and the axr3-1 dominant-negative approach (C55-C56). The axr3-1 results are particularly compelling as they specifically block Aux/IAA degradation while preserving the growth machinery (FC response intact). This definitively places auxin perception upstream of acidification, contradicting non-genomic pathway models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C92"
+    ],
+    "result": "The afb5-5 mutant shows reduced sensitivity to the auxin analog picloram in hypocotyl elongation while responding normally to NAA and fusicoccin. This genetic-pharmacological combination confirms the crucial role of the TIR1/AFB pathway in auxin-induced hypocotyl elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C92 exploit the specific AFB5-picloram interaction to demonstrate TIR1/AFB pathway involvement. The afb5-5 mutant's selective insensitivity to picloram (C61) while maintaining normal NAA and FC responses (C62) provides elegant genetic evidence. This circumvents the redundancy problem that plagued interpretation of higher-order tir1/afb mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Overexpression of stabilized SAUR19 protein (35S::GFP-SAUR19) causes auxin-independent hypocotyl elongation and maintains acidic apoplastic pH after decapitation. SAUR proteins mediate signals between nuclear auxin perception and growth execution, though this conclusion relies primarily on overexpression of a stabilized SAUR19 variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 demonstrate that 35S::GFP-SAUR19 lines grow without auxin and maintain acidic apoplast (C65), supporting SAUR's role downstream of auxin perception. However, the authors acknowledge this is based on overexpression of a stabilized protein (C66), which is a limitation. Claims C102-C105 provide context about SAUR biology supporting their suitability as rapid response mediators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C93"
+    ],
+    "result": "Strong activation of plasma membrane H+-ATPases is sufficient to trigger hypocotyl growth. The ost2-2D/aha2-5 double mutant and inducible AHA2\u03b495 line both show auxin-independent growth, demonstrating that H+-ATPase activation can explain the auxin-independent elongation phenotype of SAUR19 overexpression and validating the acid growth hypothesis in hypocotyls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide genetic evidence that H+-ATPase activation is sufficient for growth. The ost2-2D/aha2-5 combination (C68) and AHA2\u03b495 induction (C71) both trigger auxin-independent growth. The observation that ost2-2D alone shows minimal effect (C67) while the double mutant is effective (C68) reveals AHA1/AHA2 interdependence (C69-C70). This strongly supports the acid growth hypothesis for hypocotyls (C73, C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C86"
+    ],
+    "result": "During gravitropism, the apoplast on the lower side of gravistimulated hypocotyls becomes more acidic than the upper side within one hour. This apoplastic acidification asymmetry is one of the earliest visualizable hallmarks of gravitropic response and represents execution of auxin response downstream of nuclear auxin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 demonstrate asymmetric acidification during gravitropism using the apo-pHusion sensor. The lower side shows more acidic pH (C75) while non-gravistimulated controls show no directional bias (C76). This directly visualizes a key prediction of the acid growth theory in vivo and validates the relevance of the in vitro elongation assays (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C114"
+    ],
+    "result": "Induction of the dominant-negative axr3-1 protein completely blocks gravitropic bending and hypocotyl growth in vivo, demonstrating that nuclear auxin response is indispensable for gravitropism. This in vivo result corresponds well with the elongation assay results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 show that HS::axr3-1 induction abolishes gravitropism (C80) and growth (C81) in intact plants, directly demonstrating that nuclear auxin signaling is required for gravitropic responses. This validates the elongation assay findings in a physiological context. Claim C114 confirms consistency with prior literature on stable axr3-1 lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C94"
+    ],
+    "result": "Lines showing auxin-independent growth (35S::GFP-SAUR19, ost2-2D/aha2-5) display reduced gravitropic bending compared to controls. This demonstrates that the ability to respond dynamically to auxin redistribution is crucial for directional growth responses, and that acidification and growth gradient formation across the bending organ are necessary for proper gravitropism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 and C94 show that constitutive activation of the growth pathway impairs gravitropism, demonstrating that dynamic auxin responsiveness (not just growth capacity) is required. This is consistent with prior phototropism data (C85). The result elegantly demonstrates that proper tropisms require both growth induction and cessation capabilities (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In Arabidopsis hypocotyls, auxin-induced growth operates through a genomic pathway requiring nuclear auxin signaling (~20 min lag), protein synthesis, and Aux/IAA degradation. No non-genomic auxin pathway is required for apoplast acidification and growth regulation in hypocotyls, contrasting with roots where auxin acts rapidly and may use different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 synthesize the major findings demonstrating that hypocotyl auxin responses are entirely genomic. The ~20 min lag (C88), protein synthesis requirement (C89), and lack of need for non-genomic pathways (C90) are well-supported by the experimental evidence. Claim C91 appropriately notes tissue-specific differences with roots, though this relies on cited work rather than data presented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Auxin-induced acidification occurs through local H+-ATPase activation and requires TIR1/AFB-Aux/IAA nuclear auxin perception. During gravity response, this acidification is restricted to the lower organ side. SAUR proteins are crucial downstream mediators of auxin-induced growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions stated in the abstract and are well-supported by the comprehensive experimental evidence throughout the manuscript including genetic, pharmacological, and imaging approaches. These claims synthesize the major findings into the core message of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The use of relatively slow gene transcription and protein synthesis to regulate auxin-induced hypocotyl growth illustrates that plant tropisms do not need to be instantaneous, as environmental changes in gravity or light direction are also relatively slow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 provides an evolutionary/ecological interpretation of why the ~20 min genomic pathway is sufficient for tropisms. This is a reasonable inference given that gravitropic and phototropic stimuli change slowly relative to the 20-minute response time demonstrated in the experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "At least a notable fraction of mature plasma membrane H+-ATPases in plant cells might be hetero-oligomers of AHA1 and AHA2 subunits, with mature pumps thought to be hexamers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is speculative interpretation of the ost2-2D/aha2-5 genetic interaction data (C68-C69). While the genetic data show interdependence of AHA1 and AHA2, the hetero-oligomer model is one possible explanation but is not directly demonstrated. The hexamer structure is cited from prior work. This remains a hypothesis requiring biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background knowledge claims about plant cell biology, auxin biology, acid growth theory, auxin receptors, and prior literature findings that provide context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C33, C96-C115 represent established knowledge from the literature, cited appropriately throughout the manuscript. These provide necessary background and context. The citations appear appropriate and the characterizations of prior work are generally accurate, though some prior conclusions (e.g., C32-C33 about TIR1/AFB pathway) are challenged by the current work.",
+    "result_type": "MINOR"
+  }
+]

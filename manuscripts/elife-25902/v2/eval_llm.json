@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C133",
+      "C134",
+      "C137",
+      "C138",
+      "C143"
+    ],
+    "result": "The study reports a novel principle of vertebrate cartilage growth based on introducing transversally-oriented clones into pre-existing cartilage. Genetic tracing and clonal analysis demonstrated that sheet-shaped cartilages contain transversely oriented clonal columns perpendicular to the direction of lateral expansion, rather than longitudinally oriented clones as would be intuitively expected. This mechanism involves intercalation of columnar clonal units into pre-existing cartilage, providing the first experimental evidence of how directional clonal expansion influences vertebrate tissue shape on a large scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C62, C65, C66, C133, C134, C137, and C138 are strongly supported by multiple independent lines of evidence including genetic tracing with multiple Cre lines (Plp1-CreERT2, Sox10-CreERT2, Col2a1-CreERT2), EdU incorporation analysis, and confocal microscopy across multiple developmental stages (E13.5-E17.5). The transverse orientation of clones is documented in Figures 4, 6, and supplementary figures with quantitative rose diagrams showing perpendicular orientation. The inference that this represents a novel mechanism (C69, C143) is supported by the data and appropriate comparison to existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C103",
+      "C144",
+      "C146",
+      "C160"
+    ],
+    "result": "The transverse clonal growth mechanism uncouples lateral expansion from thickness control in sheet-shaped cartilages. Mathematical modeling and experimental validation using Gs\u03b1 knockout embryos demonstrated that cartilage thickness depends on the number of cells within transverse clones, while lateral expansion depends on the number of clones initiated. This uncoupling allows independent control of these two dimensions during growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C76, C103, C144, and C146 are well-supported by convergent evidence from computational modeling (C73, C76) and experimental validation using Gs\u03b1 knockout mice (C100-C103). Figure 8 shows that Gs\u03b1 knockout reduces cartilage thickness and cell numbers per column while preserving lateral dimensions and overall shape. The statistical analysis shows significant differences (p=0.0053 for olfactory, p=0.0087 for basisphenoid). The modeling predictions were experimentally validated, strengthening the conclusion about uncoupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C77",
+      "C78",
+      "C131"
+    ],
+    "result": "In silico 4D modeling of individual cell dynamics suggested that clonal dynamics observed in natural conditions require polarity cues in the system, specifically a two-sided gradient of signals to precisely fine-tune cartilage thickness. The model predicted that absence of gradients leads to asymmetrical clusters instead of straight columns and surface irregularities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C77-C78, and C131 describe computational modeling results that are internally consistent and qualitatively validated against experimental observations (C72). Figure 5 shows the modeling framework and results. However, the model makes qualitative rather than quantitative predictions, and the specific molecular identity of the predicted gradients remains unknown (C74). The model successfully predicts the phenotypic consequences of gradient disruption, which is later validated experimentally with ACVR1 manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C147"
+    ],
+    "result": "Experimental activation of ACVR1 (BMP type one receptor, ALK2) in developing cartilage disrupts clonal micro-geometries, changing perpendicular columns to disorganized spherical clusters and causing ectopic bumps and surface irregularities. This validates modeling predictions and suggests BMP signaling partially controls clonal envelope shape and orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C86-C87, and C147 are supported by genetic manipulation experiments using constitutively active caALK2 transgene with Sox10-CreERT2 (C83). Figure 6K-P shows dramatic changes in clonal geometry from columns to spherical clusters, with quantitative analysis in Figure 6R showing loss of correlation between clonal orientation and cartilage geometry (Spearman r = -0.001137, p=0.9931). The phenotype resembles the no-gradient condition in modeling (C84), providing experimental validation. However, the interpretation about BMP ligands producing gradients versus rendering cells insensitive to other gradients remains ambiguous (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C151",
+      "C152"
+    ],
+    "result": "Wnt/PCP pathway mutants (Wnt5a, Ror2, Vangl2) show distinct facial phenotypes with shortened nasal capsules but no defects in cartilage micro-geometry or clonal column orientation. These genes influence the position and shape of early chondrogenic condensations at E12.5 rather than controlling cartilage growth per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98, C151-C152 are supported by \u03bc-CT analysis and EdU incorporation studies in multiple Wnt/PCP mutants. Figure 7 shows that while macro-scale chondrocranium shape is affected (C95), EdU-positive perpendicular columns are preserved in Wnt5a mutants (C93), and early mesenchymal condensations show abnormal shape and placement at E12.5 (C94). The conclusion that these genes affect condensation patterning rather than growth mechanisms (C97-C98) is a reasonable inference from the data showing preserved micro-geometry but altered macro-geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C145",
+      "C162"
+    ],
+    "result": "Gs\u03b1 knockout embryos show reduced cartilage thickness and fewer cells per column while preserving lateral dimensions and overall shape. This demonstrates that differentiation speed regulates cartilage thickness by controlling the number of cell divisions within transverse clones, validating mathematical model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102, C145, and C162 are well-supported by genetic analysis of Gs\u03b1 knockout embryos with quantitative measurements. Figure 8 shows significant reductions in both absolute thickness (p=0.0053 for olfactory, p=0.0087 for basisphenoid) and cell numbers per column, while preserving transverse orientation and overall shape (C102). The prior knowledge about Gs\u03b1 function (C99, cited from Chagin et al., 2014) provides mechanistic context. This experimentally validates the modeling prediction about uncoupling thickness from lateral expansion (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C104",
+      "C105",
+      "C106",
+      "C157"
+    ],
+    "result": "In rod-shaped cartilages (Meckel, ribs, limbs), transverse clonal columns oriented in the plane of rod diameter determine the well-defined diameter. Longitudinal extension is based on continuous development of chondrogenic condensations at the distal tip, followed by transverse proliferation accounting for proper diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C104-C106, and C157 are supported by genetic tracing and EdU incorporation in multiple rod-shaped cartilages. Figure 9 shows highly oriented clonal arrangements in Meckel, rib, and limb cartilages with transverse orientation. The inference about longitudinal extension from distal condensations (C106) is reasonable based on the clonal orientation data, though direct visualization of the condensation-to-cartilage transition at the tips would strengthen this conclusion. The mechanism is conceptually similar to sheet-shaped cartilages, supporting the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C117",
+      "C118",
+      "C119",
+      "C171",
+      "C178"
+    ],
+    "result": "Anisotropic proliferation with localized high and low proliferative zones explains cartilage bending and groove formation at the macro-scale. In silico modeling and physical material modeling demonstrated that lateral slow-proliferation zones impose characteristic bending on the nasal capsule during E13.5 to E14.5 transition, validated by biological observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C108-C112, C117-C119, C171, and C178 are supported by EdU incorporation mapping (Figure 11), computational modeling (Figure 12A-D), and physical material modeling (Figure 12E-F). The EdU data show localized proliferative zones (C108), and the modeling demonstrates that lateral slow-proliferation zones generate the observed bending patterns (C111-C112). Physical modeling with plastic film validates the mechanical principles (C117-C118). The convergence of computational, physical, and biological evidence strongly supports the role of anisotropic proliferation in macro-scale shaping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C185",
+      "C186"
+    ],
+    "result": "Important geometrical features of the facial chondrocranium are produced from waves of fresh mesenchymal condensations induced adjacent to pre-existing cartilage between E13.5 and E17.5, including frontal nasal cartilage, nasal concha, labyrinth of ethmoid, and cribriform plate. This mechanism increases geometrical complexity of cartilage elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54, C185, and C186 are supported by genetic tracing experiments using Col2a1-CreERT2/R26Confetti and Sox10-CreERT2/R26Confetti with tamoxifen injection at E12.5 and analysis at E17.5. Figure 2 and supplementary figures show regions lacking traced cells that must have originated from later condensations. The 3D reconstructions clearly distinguish pre-existing cartilage from newly formed structures. This provides an alternative mechanism for shape refinement complementary to the clonal intercalation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "\u03bc-CT analysis with soft tissue contrasting enabled 3D reconstruction and validation of cartilage structures. Analysis revealed that synchondroses cannot entirely explain growth dynamics in all directions, and the nasal capsule shows complete absence of synchondroses and endochondrial ossifications between E14.5-17.5, indicating additional unknown growth mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by \u03bc-CT imaging validated against histological sections (C43, Figure 1 supplements 1-2). The observation of absent endochondrial ossifications in the nasal capsule (C44, C46) is clearly documented in Figure 1A. The conclusion that synchondroses cannot explain all growth dynamics (C45, C48) is a reasonable inference from the 3D measurements showing growth in multiple dimensions and the absence of synchondroses in the nasal capsule. This establishes the rationale for investigating alternative growth mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The nasal capsule shape is generally established by E14.5 and then accurately scaled up until E17.5 with significant geometrical tuning. Tomographic reconstructions revealed extensive expansion of surface area and volume, but cartilage thickness changed much less than other dimensions, indicating predominantly lateral expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C59-C61 are supported by \u03bc-CT-based 3D reconstructions across developmental stages. Figure 3 shows quantitative measurements of thickness, surface area, and volume expansion. The observation that thickness increases less than 50% while surface area and volume increase approximately 3-fold (Figure 3E-F) strongly supports the conclusion of predominantly lateral expansion (C61). This surprising finding motivates the investigation of clonal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C134"
+    ],
+    "result": "In cartilaginous structures with asymmetrical or complex irregular geometries (such as fusion points of multiple elements), clones form irregular clusters or randomly oriented doublets rather than perpendicular columns. The shape and orientation of clones corresponds to the local geometry of the cartilage element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 and C134 are supported by lineage tracing experiments showing different clonal patterns in irregular versus regular cartilage regions. Figure 6A-J demonstrates this correspondence, and the observation validates the modeling predictions about the relationship between geometry and clonal organization. The correlation between clonal shape and cartilage geometry (Figure 6Q) provides quantitative support (Spearman r = 0.7476, p<0.0001). This demonstrates the generality and context-dependence of the clonal growth mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study employed multiple complementary approaches including \u03bc-CT, genetic tracing with multicolor reporter strains (Col2a1-CreERT2/R26Confetti, Sox10-CreERT2/R26Confetti), mutant analysis, and mathematical modeling. These genetic tools recombine in committed chondrocyte progenitors and mature chondrocytes, enabling identification of cartilage regions developing from pre-existing versus new cellular sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C49-C51 describe the methodological approaches that are well-documented throughout the manuscript and figures. The specificity of the Cre lines (C50) is established by prior literature and validated by the observed recombination patterns. The combination of multiple independent approaches (genetic tracing, EdU incorporation, imaging, modeling) provides robust cross-validation of findings. The methods section provides detailed protocols for all techniques.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Modeling results suggested that the nasal septum functions as a slower proliferating anchoring point necessary for midline groove formation at E14.5. A simulated groove at the midline provided the general bend and flattened shape of in silico cartilage, similar to the native E14.5 nasal capsule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by computational modeling results shown in Figure 12C-D. The model demonstrates that including a midline groove produces shapes more similar to biological observations than models without the groove. However, this is based on computational modeling without direct experimental manipulation of the septum to test its functional role. The conclusion is reasonable but would benefit from experimental validation through septum-specific perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Clonal genetic tracing and EdU labeling experiments suggested that the origin of clonal columns might be cells at the periphery of forming cartilage, potentially perichondrial cells. Clonal relationships between perichondrial cells and chondrocyte columns support the hypothesis of perichondrial cells acting as a stem population during cartilage expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C166 represent hypotheses based on indirect evidence from clonal tracing and the caALK2 experiments showing peripheral cluster formation (C165). Figure 4 supplement 2C shows some clonal columns with associated perichondrial cells, but this does not definitively establish lineage relationships or stem cell identity. The evidence is suggestive but not conclusive. Direct lineage tracing specifically from perichondrial cells and functional stem cell assays would be needed to definitively support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "BMP ligands expressed around regularly shaped cartilages may play a role similar to the in silico predicted gradients. Expression data from public databases show that INHBA, BMP5, and BMP3 fit this expression profile, with BMP5 clearly expressed at the cartilage periphery and shown to affect cartilage shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C150 represent a hypothesis (C148 explicitly states \"we assume\") supported by database mining rather than direct experimental validation in this study. While the expression patterns from Allen Brain Atlas and Eurexpress are consistent with the hypothesis, and BMP5's role is supported by citation to Guenther et al., 2008 (C150), the causal role of these specific ligands in establishing the predicted gradients is not experimentally tested. The caALK2 experiments show BMP signaling is involved but don't identify the specific ligands or prove they form gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C153",
+      "C159",
+      "C183",
+      "C184"
+    ],
+    "result": "The discovered mechanisms might be evolutionary mechanisms underlying adaptations of facial shape across phylogenetic groups and could be important for understanding facial shape variation in humans and pathologies. The uncoupling of dimensions may enable developmental and evolutionary plasticity of cartilage size and shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C153, C159, C183, and C184 are explicitly speculative (using \"might,\" \"may,\" \"can be\") about evolutionary and clinical implications. While the mechanisms discovered could plausibly contribute to evolutionary variation and human pathologies, no comparative evolutionary data or human patient data are presented. These represent reasonable hypotheses for future investigation rather than supported conclusions from the current study. Citations to human variation (Sheehan and Nachman, 2014) and pathologies (Afsharpaiman et al., 2013) in C184 provide context but not direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Some yet-to-be-identified mechanism controls the average number of cell divisions in a column, regulating columnar height and cartilage thickness. The molecular mechanism controlling the dynamic distribution of fast/slow proliferative zones is unknown but likely linked to signals from other tissues such as olfactory epithelium or surrounding mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C180-C182 explicitly acknowledge gaps in knowledge about specific molecular mechanisms. While the study demonstrates that such mechanisms must exist (based on the observed patterns and Gs\u03b1 effects), the specific signals controlling cell division number per column and proliferative zone patterning are not identified. These represent important questions for future research rather than resolved findings. The speculation about tissue sources (C181) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "According to the computational model, lateral bending did not depend on anterio-posterior polarity or midline groove formation, while polarity only affected potential for anterior elongation due to anisotropic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by computational modeling results shown in Figure 12D. The model demonstrates that lateral bending occurs even without anterio-posterior polarity, while polarity affects elongation. However, these are modeling predictions that would benefit from experimental validation through manipulation of polarity signals. The conclusions are internally consistent with the model structure but represent computational rather than experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The heterogeneity and multipotency of perichondrial cells remains unclear, though studies show the perichondrium as a source of chondrocytes and osteoblasts. The perichondrium might mediate non-autonomous effects in cAlk2 and Gs\u03b1 experiments, and its role in border-setting during development and regeneration is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C170 acknowledge significant uncertainties about perichondrial cell biology. While C167 is supported by citations to previous work, C168-C170 are speculative about potential indirect effects and roles that are not directly tested. The observation that some perichondrial cells recombine with the Cre lines (C169) is noted but the functional consequences are uncertain. These represent important caveats and future research directions rather than resolved findings.",
+    "result_type": "MINOR"
+  }
+]

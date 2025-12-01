@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CNA number and length are associated with patient survival. In five cancer types (brca, lgg, hnsc, paad, ucec), fewer CNAs were significantly associated with longer survival (p < 0.05). In two cancer types (lgg, lihc), shorter CNAs were associated with longer survival (p < 0.05). No cancer types showed the opposite relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide specific statistical evidence from Kaplan-Meier survival analyses with appropriate controls for confounders (mutation number, ploidy). The consistent directionality (fewer/shorter CNAs \u2192 better survival, never the opposite) strengthens the conclusion in C2. The statistical tests are appropriate and p-values are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "63 genes (termed CONIM genes) are associated with differential CNA numbers. Mutations in 62 genes are associated with fewer CNAs, while TP53 mutations are associated with more CNAs. CONIM genes are enriched for known cancer drivers (15/63, p < e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the computational pipeline results identifying CONIM genes with appropriate statistical corrections. C28-C29 demonstrate significant enrichment of known cancer genes among CONIM genes. The methodology includes multiple controls for confounders (mutation rate, cancer type, gene-specific factors) as described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mutations in CONIM genes have higher functional impact scores than mutations in genes with similar mutation frequencies, and in two cancer types show lower variant allele fractions (VAFs), suggesting they arise later but are more pathogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 present data comparing CONIM genes to appropriately matched controls (genes with equal mutation frequencies). C32 provides a reasonable interpretation of the combined functional impact and VAF data. However, VAF analysis was limited to only 2/5 cancer types showing the effect, which somewhat weakens the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45"
+    ],
+    "result": "CONIM genes are functionally enriched for chromosome organization (q < e-4), chromatin modification (q < 0.001), histone modification (q < 0.001), DNA damage pathways (q < 0.01 to q < e-4), and macromolecular complex formation (q < e-4 to q < 0.001). Overall, 17/63 CONIM genes have functions related to chromosomal organization or epigenetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 report functional enrichment analysis with appropriate FDR correction and highly significant q-values. The enrichments are biologically coherent and consistent with the proposed mechanism. Multiple independent enrichment categories converge on chromatin/epigenetic functions, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "540 genes are associated with differential CNA length, with 122 overlapping with CNA number-associated genes (p < e-16). Of these overlapping genes, 98.5% are associated with both fewer and shorter CNAs, suggesting common mechanisms influence both properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide statistical evidence for genes affecting CNA length and the significant overlap with CNA number genes. The high percentage (98.5%) showing concordant effects supports the inference in C50 about shared mechanisms. Statistical tests are appropriate with FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "32 CONIM proteins (50.8%) form a large connected network with significantly more protein-protein interactions (p = 0.001) and a larger connected component (p = 0.003) than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe network analysis with appropriate randomization tests controlling for node degree. The statistical significance is strong and the methodology (1,000 randomizations) is robust. The finding that CONIM proteins are more interconnected than random supports functional coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CONIM proteins are enriched in the SWI/SNF chromatin remodeling complex (EP400, ARID1A, PBRM1, ATRX). Mutations in SWI/SNF components have been observed in tumors but their contribution to carcinogenesis is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 identify specific complex enrichment consistent with the functional enrichment results. C55 correctly describes SWI/SNF function based on established knowledge. C56-C57 appropriately acknowledge the gap in understanding about these mutations' role in cancer, supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Among 1,036 recurrent CNA breakpoints, the 'Heterochromatin' chromatin state shows the strongest enrichment in associated tissues (p = 0.009). 'ZNF genes and repeats' is also enriched (p = 0.03) but occurs >5-fold less frequently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe chromatin state enrichment analysis at CNA breakpoints using GISTIC2-identified recurrent CNAs. The statistical tests are appropriate (chi-square) and the finding is robust across different reference epigenome selections (Figure 4\u2014figure supplement 1). The comparison of effect sizes (C61) appropriately contextualizes the relative importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "H3K9me3 shows the strongest enrichment at CNA breakpoints in associated tissues (Bonferroni-corrected p < 0.001 for windows 10 kb to 10 Mb). This enrichment decreases with distance from breakpoints, suggesting colocalization of H3K9me3 marks with recurrent breakpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 present histone mark enrichment analysis with appropriate multiple testing correction (Bonferroni). The distance-dependent enrichment pattern (C63) provides strong evidence for the colocalization inference in C64. The result is robust across different reference epigenome selections (Figure 4\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CNAs originating from H3K9me3-enriched breakpoints are longer than those from H3K9me3-depleted breakpoints (p = 0.001). This difference is not explained by proximity to chromosome ends (p = 0.8) and remains significant when excluding breakpoints within 1-10 Mb of telomeres (p < 0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 demonstrate a novel relationship between local epigenetic state and CNA length with appropriate controls for the known confounding effect of telomere proximity. The statistical tests are appropriate (Mann-Whitney-Wilcoxon) and the robustness checks strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Three CONIM proteins (ATRX, EP400, NIPBL) bind H3K9me3 or form H3K9me3-binding complexes. Non-silent mutations in these genes affect more samples in cancer types with strong H3K9me3 enrichment at breakpoints (p < e-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by multiple citations establishing the H3K9me3-binding properties. C70 provides statistical evidence linking mutations in these specific genes to cancer types with H3K9me3-enriched breakpoints, establishing a mechanistic connection between CONIM genes and the epigenetic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The absolute correlation between heterochromatin amount and expression of CONIM genes (p < e-5) or CONIM histone modifiers (p < 0.05) is significantly larger than for non-CONIM genes, suggesting CONIM genes control heterochromatin amount under healthy conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present correlation analysis with appropriate statistical tests comparing CONIM genes to non-CONIM controls. However, C73 is speculative\u2014correlation does not establish that CONIM genes 'control' heterochromatin amount (could be reverse causation or confounding). The inference is reasonable but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "NIPBL shows the strongest correlation (-0.53) between expression and heterochromatin amount. Mutations in NIPBL's HEAT domain and N-terminal truncating mutations have stronger effects on CNA number than other mutations, consistent with known effects on chromatin compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 establish NIPBL's properties through correlation analysis and citations. C78-C79 demonstrate structure-function relationships where mutations predicted to have stronger functional effects show stronger associations with CNA number, supporting a causal role. The analysis appropriately leverages prior knowledge about NIPBL function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Average CNA number per cancer type correlates with heterochromatin percentage in the tissue-of-origin (Spearman's rho = 0.72, p = 0.02, excluding ovarian cancer). Average CNA length also correlates with heterochromatin percentage (rho = 0.85, p = 0.002, excluding ovarian cancer; rho = 0.62, p = 0.04 including it).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 present correlation analyses linking tissue-level heterochromatin to cancer-type-specific CNA properties. The correlations are strong and statistically significant. The analysis appropriately handles the ovarian cancer outlier. Robustness is demonstrated across different reference epigenome selections (Figure 5\u2014figure supplements 1-2). However, the sample size for cancer types is relatively small (n~13), limiting statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a mechanistic model where altered CONIM gene activity affects heterochromatin amount, with more heterochromatin leading to more and longer CNAs. Tissue-specific differences in CNA number reflect tissue-specific heterochromatin differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 present an integrative mechanistic model synthesizing multiple findings. While the model is consistent with the data (CONIM gene enrichment, heterochromatin-CNA correlations, H3K9me3 effects), it remains largely speculative. The directionality is unclear\u2014do CONIM mutations cause heterochromatin changes that cause CNAs, or are there alternative explanations? Experimental validation would be needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study confirms and extends previous observations about genes associated with CNA-rich (TP53, SPOP) and CNA-poor (CTCF, ARID1A, CASP8, CTNNB1) cancers. SPOP was recovered by cancer-type-specific analysis due to its highly context-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 appropriately contextualize the current findings relative to prior work through citations. The explanation for why SPOP was not in the main CONIM list (C96-C97) demonstrates methodological rigor and shows the complementary value of cancer-type-specific analyses. This validates the approach while extending previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "POLE-mutated samples have higher point mutation counts but do not have reduced CNA numbers, demonstrating that genes causing hypermutation do not automatically appear in the CONIM gene list due to the inverse CNA-mutation relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide an important negative control demonstrating that the CONIM gene detection is not simply capturing the known inverse relationship between CNAs and point mutations. This validates the specificity of the CONIM gene identification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C111",
+      "C112",
+      "C121",
+      "C122"
+    ],
+    "result": "The study demonstrates that local chromatin structure influences both where CNA breakpoints occur (enrichment in heterochromatin) and the length of resulting CNAs (longer from H3K9me3-enriched regions). The tissue-of-origin epigenome has a large impact on where CNAs arise during carcinogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C111-C112, C121-C122 synthesize the major epigenetic findings. The conclusions are well-supported by the chromatin state enrichment (C59), H3K9me3 enrichment (C62), and CNA length analyses (C65). This represents a novel systematic comparison of tissue-of-origin chromatin to cancer-type-specific CNA patterns, filling a gap identified in C104.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The increased length of CNAs from H3K9me3-enriched regions is proposed to result from heterochromatin facilitating long-range DNA contacts that serve as CNA endpoints. This interpretation is consistent with prior observations that chromatin shapes CNA length distribution and that telomeres (which form heterochromatin) are associated with longer CNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 presents a mechanistic hypothesis that is plausible and consistent with the data, but remains speculative without direct evidence of the proposed long-range contacts. C114-C116 appropriately connect the findings to prior literature, but this represents inference rather than demonstration. Experimental validation (e.g., Hi-C analysis correlating contact frequency with CNA endpoints) would be needed to confirm the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Ovarian cancer is an outlier in the heterochromatin-CNA correlations, potentially due to very high TP53 mutation frequency (94%). TP53 deficiency is strongly associated with high CNA numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 provide a reasonable explanation for the ovarian cancer outlier based on established knowledge about TP53 and citation to mutation frequency data. C118 is supported by both current study findings (C27) and prior literature (C90-C91). The explanation is plausible though not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C123",
+      "C124"
+    ],
+    "result": "The study concludes that the epigenome impacts CNA occurrence in tissue- and patient-specific manners. CONIM genes are enriched for chromatin-modifying genes, suggesting they influence CNA properties through chromatin modifications. CNA number and size are clinically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120, C123-C124 present the main conclusions synthesizing multiple lines of evidence. C119 is supported by the survival analyses (C2, C22-C23). C120 integrates tissue-level (heterochromatin correlations) and patient-level (CONIM mutations) findings. C123 is well-supported by functional enrichment (C33-C40). C124 is a reasonable inference though the mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  }
+]

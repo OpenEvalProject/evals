@@ -1,0 +1,505 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Out-of-plane tissue deformations are fundamental morphogenetic events in both plants and animals, generating 3D shapes through mechanisms that differ between kingdoms. In animals, these deformations involve processes like gastrulation and neurulation through differential contractions and tensions, while in plants, growth drives morphogenesis with minimal cell rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C13 establish well-accepted background knowledge about developmental biology. These are definitional and contextual statements supported by general knowledge and citations (C9), providing appropriate framing for the study. The distinction between plant and animal mechanisms (C10) is established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "External forces from adjacent organs are unlikely to play a major role in shaping the Snapdragon petal, as homeotic mutants converting stamens to petals do not significantly affect whorl 2 petal complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by citation to Bradley et al., 1993. The inference that external forces are unlikely to be important (C15) is reasonable given the cited mutant data, though this represents an indirect argument rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The modeling framework distinguishes between specified growth (intrinsic deformation free from mechanical constraints) and resultant growth (deformation including mechanical constraints and emergent properties), with specified growth patterns not directly inferable from observed deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 define the conceptual and mathematical framework (GPT framework) used throughout the study. These are definitional statements that establish the modeling approach, which is consistently applied in subsequent analyses. The framework is clearly described and logically coherent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Computational models demonstrate that different types of tissue conflicts generate distinct out-of-plane deformations: uniform isotropic growth produces simple enlargement, anisotropic growth produces elongation, surface conflict causes folding, areal conflict causes doming, and directional conflict with convergent polarity produces elongated domes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are directly supported by computational models shown in Figure 1A-J with accompanying videos. Each claim corresponds to a specific model output demonstrating the predicted deformation. The models are clearly presented and the results match the stated outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "While areal conflicts have been previously described in the literature, directional conflicts have been little explored, though they were proposed for Snapdragon corolla development. However, the precise patterns and cellular-level operation of directional conflicts had not been tested prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 accurately characterize the state of the field through citations (C24, C26) and identify the knowledge gap addressed by the current work (C25, C27). This provides appropriate context for the novelty of the study's focus on directional conflicts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The Snapdragon corolla has a bilaterally symmetric structure with five petals forming a tube and lobes, with dorsal, lateral, and ventral petals. The lower corolla features a wedge-shaped fold with a palate, rim, and lip, with peaks (foci) at lateral-ventral junctions. Dorsoventral identity is controlled by transcription factors including CYC, DICH, RAD (dorsal-specific) that repress DIV (ventral identity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide morphological descriptions supported by images in Figure 2 and genetic information supported by citations (C31-C32). These are well-established observations and genetic relationships that provide essential background for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "DIV is required for wedge-shaped fold development, as div mutants lack the wedge and instead form two small domes at the foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by phenotypic observations shown in Figure 2F-J. The loss of the wedge and appearance of domes in div mutants is clearly documented, establishing DIV's requirement for normal morphology. This is a straightforward genetic requirement demonstrated by mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Fate mapping reveals that the wild-type wedge initiates at 12 DAI from a narrow strip at the tube-lobe boundary, with a shallow furrow appearing proximal to petal sinuses. By 14 DAI, palate and lip regions are identifiable as crescents spanning the ventral petal and lateral petal flanks, while the other halves of lateral petals form the hinge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by the developmental time series in Figure 3A-G using OPT imaging and morphological landmarks. The fate mapping is systematic and well-documented, providing clear evidence for the spatial and temporal origins of the wedge structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "In div mutants, lower petals initially show no out-of-plane deformation, with domes first appearing as small adaxial bulges at 14 DAI and becoming clearly visible by 17 DAI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by the developmental series in Figure 3H-J. The timing and progression of dome formation in div mutants is clearly documented, providing a developmental comparison to wild-type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Calcofluor staining reveals cell wall age patterns, with computational modeling showing that isotropic growth produces random wall orientations, uniformly anisotropic growth produces walls perpendicular to growth direction, and switching growth orientations produces specific perpendicular wall patterns. These patterns are independent of initial cell geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by calcofluor imaging (Figure 4A-C) and computational models (Figure 4D-F, supplement 1). The modeling successfully recapitulates observed patterns and demonstrates robustness to initial conditions. This establishes the method for inferring growth orientations from cell wall patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Calcofluor staining shows that at 10 DAI, growth in div and wild-type petals is oriented proximodistally. Between 10-13 DAI, regions flanking the presumptive foci switch to mediolateral growth. By 15 DAI, div shows a clear orthogonal pattern of cell files, while wild-type shows a less clear pattern with mixed orientations at the rim. This switch to mediolateral growth occurs prior to and during out-of-plane deformation and is modulated by DIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by extensive calcofluor staining data in Figure 5 and supplements. The temporal progression and spatial patterns are well-documented across multiple developmental stages. The timing aligns with previous predictions (C55, citing Green et al., 2010). The data clearly demonstrate the orthogonal growth pattern and DIV's modulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Orthogonal cell file patterns occur at all petal junctions of the lower corolla, including the lateral-dorsal junction, but with varying growth dynamics. At the lateral-dorsal junction, the distal arm of the orthogonal pattern does not grow, unlike at the ventral-lateral junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by calcofluor data in Figure 5\u2014figure supplement 2. The observation that repatterning occurs at multiple junctions but with different dynamics is well-documented, showing the spatial complexity of the growth pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Computational models demonstrate that orthogonal patterns of specified anisotropic growth adjacent to isotropic growth regions generate domes through directional conflict resolution. Various dome shapes can be generated by varying the pattern and extent of directional conflict. Orthogonal directional conflict can be specified through combinations of orthogonal regional identities and polarity fields (convergent or parallel), but requires axial information from polarity fields rather than just areal conflict.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by systematic computational modeling in Figure 6F-U with videos. The models demonstrate how different configurations of orthogonal growth patterns produce different shapes. The distinction between directional and areal conflict (C60) is clearly shown. The framework is internally consistent and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Computational models show that similar out-of-plane deformations can be generated through contraction (negative growth) balanced with growth, rather than differential growth alone. This applies to surface, areal, and directional conflicts. For directional conflict, growth in one orientation balanced by contraction perpendicular to it is equivalent to convergent-extension, providing mechanisms for generating deformations with or without overall growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by computational models in Figure 7 comparing growth-based and contraction-based mechanisms. The equivalence of different cellular mechanisms for achieving similar shapes is clearly demonstrated. The connection to convergent-extension (C65) is supported by citation to Keller et al., 2008.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The Snapdragon genome contains 11 PIN genes including three PIN1 orthologues (PIN1a, PIN1b, PIN1c). All three show expression in developing petals with strong expression in vascular tissue and epidermis of the palate region. PIN1 protein localizes to the distal end of epidermal cells in early petal primordia with convergent polarity at the tip, consistent with patterns in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by RNA in situ hybridization (Figure 8\u2014figure supplement 1) and immunolocalization on sections (Figure 8\u2014figure supplement 2A-C). The genomic information (C67) and expression patterns are well-documented. Comparison to other species (C70) is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PIN1 immunolocalization reveals that prior to repatterning, PIN1 is strongly expressed near petal sinuses and margins with proximodistal orientation. At 13 DAI, PIN1 expression extends proximally, overlapping with regions showing proximodistal cell files. PIN1 is more extended in wild-type than div, with proximodistal orientation along the petal junction and diagonal orientation flanking it. Diagonal PIN1 polarity corresponds to diagonal cell files, while strong PIN1 signal is absent from regions with mediolateral cell files. PIN1 expression becomes restricted to margins by 15 DAI. DIV modulates PIN1 upregulation, which is not observed at lateral-dorsal sinuses where DIV is not strongly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 are extensively supported by whole-mount immunolocalization data in Figure 8 and supplements, combined with calcofluor staining. The spatial and temporal patterns of PIN1 are well-documented across genotypes and developmental stages. The correlation between PIN1 polarity and cell file orientation (C75) is directly shown. The conclusion about DIV modulation (C79) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A minimal computational model of div, based on fate mapping showing development from a curved strip at the tube-lobe boundary, successfully generates two domes at the foci and an extended lip matching the div phenotype. Systematic removal of each conflict type shows that removing surface conflict causes abaxial rather than adaxial protrusion, removing areal conflict produces a crumpled strip with long hinges, removing all directional conflict produces a curved strip, and removing orthogonal directional conflict produces a flat shape with a rim bend. The div deformation depends on all three conflict types, with orthogonal directional conflict playing a key role in dome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by computational modeling in Figure 9 with systematic perturbation analysis. The minimal model successfully recapitulates the div phenotype (C81, comparing Figure 9F to 2J). The perturbation experiments (C82-C85) clearly demonstrate the contribution of each conflict type. The conclusion about the requirement for all three conflicts (C86) is well-supported by the systematic removal experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Incorporating the minimal div model interactions into the full Snapdragon corolla model produces a corolla with features matching the div phenotype: open mouth, reduced palate, two domes at the foci, and flat extended lip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the full corolla model output in Figure 9K compared to the actual div phenotype in Figure 2F. The model successfully scales from the minimal system to the full corolla while maintaining phenotypic accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The wild-type computational model generates a wedge shape resembling the observed wild-type phenotype, with virtual clone patterns similar to experimentally induced clones. Both show predominantly proximodistal clones in palate and distal lip regions, but mediolateral clones in flanking lip regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by comparing model output (Figure 10F) to actual phenotype and experimental clones (Figure 2E). The match between virtual and experimental clones provides strong validation of the model's accuracy in capturing growth patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Systematic removal of conflict types from the wild-type model shows that removing surface conflict causes abaxial protrusion, removing areal conflict produces a crumpled strip with long hinges and narrow palate, removing all directional conflict produces a curled canvas with large lateral domes, and reducing orthogonal directional conflict produces a sharp rim bend with narrow lip. Wild-type morphogenesis depends on all three conflict types with directional conflict playing an essential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by systematic perturbation analysis in Figure 10G-J with videos. Each perturbation produces a distinct phenotype, demonstrating the specific contribution of each conflict type. The conclusion about requirement for all three conflicts (C94) parallels the div analysis and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Integrating DIV activity into the full div corolla model generates a typical wild-type Snapdragon shape. Removing dorsoventral gene activities (DIV, CYC, DICH) from the model produces phenotypes resembling respective mutants, which are distinct from virtual mutants obtained by removing tissue conflicts. Removing polarity deflection at the sinus produces an overarching lower corolla, suggesting polarity deflection refines corolla shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by full corolla modeling in Figures 10K and 11. The model successfully recapitulates wild-type (C95) and mutant phenotypes (C96). The distinction between gene-removal and conflict-removal virtual mutants (C97) is clearly demonstrated. The polarity deflection experiment (C98) provides additional insight into shape refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Through combined analysis of cell files, polarity patterns, and computational modeling, an orthogonal directional conflict plays a key role in generating out-of-plane deformations in wild-type and div Snapdragon corollas. This directional conflict interacts with areal and surface conflicts to generate the observed shapes. Dorsoventral genes like DIV affect all three conflict types to various degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 represent the main conclusions of the study, synthesizing results from cellular analysis (Figures 5, 8), computational modeling (Figures 9-11), and genetic analysis. The integration of multiple lines of evidence strongly supports these conclusions. The role of orthogonal directional conflict is demonstrated through both observation and perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Computational modeling allows revealing the role of each conflict by simulations removing individual conflicts while preserving others, producing virtual mutants with altered shapes. These conflict-removal virtual mutants are distinct from gene-removal virtual mutants, possibly reflecting evolutionary history where genes modulate conflicts in multiple ways to modify flower shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by the systematic modeling approach in Figures 9-11. The distinction between conflict-removal and gene-removal mutants is clearly demonstrated. However, C104 is speculative about evolutionary history without direct evidence, though it is presented as speculation ('may reflect').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Each conflict depends on combinatorial interactions of multiple genes, such as those specifying orthogonal domains for directional conflict. While orthogonal gene expression domains are prevalent in development, the specific genes establishing orthogonal domains in Snapdragon corolla remain unidentified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a logical inference from the modeling framework. C106 is supported by citation to Wolpert et al., 2015. C107 appropriately identifies a limitation and future direction. These claims accurately characterize what is known and unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Directional conflict requires axial information to orient specified growth. Axial information cannot be specified by gene expression levels alone (which provide only scalar information) but could be provided by polarity fields or mechanical cues like stresses. The authors hypothesize that axial information is primarily provided by a polarity field with growth rates specified parallel or perpendicular to it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are logical requirements supported by citation (C109). C110 presents alternative mechanisms supported by citations. C111 is explicitly stated as a hypothesis based on the authors' data and modeling. The reasoning is sound and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "PIN1 localization reveals a largely proximodistal polarity pattern at early stages. At repatterning, PIN1 is upregulated at petal junctions where polarity remains proximodistal (not inverted as previously hypothesized), though growth orientations would be similar for either pattern since anisotropic growth depends on axiality. PIN1 polarity is deflected toward the sinus during repatterning, with growth orientations following this deflection. PIN1 data helps narrow possibilities for polarity fields by providing information not inferable from growth analysis alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by PIN1 immunolocalization data (Figure 8) and logical reasoning about the modeling framework. The observation that polarity remains proximodistal rather than inverting (C113) corrects a previous hypothesis. The argument about axiality (C114) is logically sound. The value of PIN1 data for constraining models (C115) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The direction of polarity in flanking regions with mediolateral growth is unknown due to absence of PIN1 signal. For simplicity, the authors assume polarity remains proximodistal in these regions with growth enhanced perpendicular to polarity. These assumptions can generate a Snapdragon corolla shape similar to a previous model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 appropriately acknowledges a data limitation. C118 explicitly states a modeling assumption. C119 shows the assumption is sufficient to generate realistic shapes, supported by comparison to Green et al., 2010. The assumptions are reasonable and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Using local stresses to orient specified anisotropy is problematic because growth feeds back to modify and destabilize stress orientations. While average stress orientation across the sepal has been proposed to orient growth in Arabidopsis, it is unclear how such a mechanism would operate or allow specification of orthogonal orientation patterns in Snapdragon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 critically evaluate an alternative hypothesis (stress-based orientation) with appropriate citations to Hervieux et al., 2016. The critique is logical and identifies specific problems with applying this mechanism to the Snapdragon system. This is appropriately presented as uncertainty rather than definitive rejection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "At the cellular level, growing plant tissue is a deforming mesh of cell walls yielding to turgor pressure. Specified growth depends on genetic control of wall extensibility and turgor. Turgor acts isotropically while wall extensibility can be anisotropic due to cellulose fiber orientation and cross-linking. Conflicts arise through spatial variation in turgor and/or wall extensibility. Tissue cell polarity could influence growth orientations by biasing microtubule alignments or other processes affecting wall anisotropy, with directional conflicts arising through variation in polarity orientations and/or cellular responses to polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 connect the tissue-level modeling to cellular mechanisms, supported by citations (C124, C129). These represent established knowledge about plant cell mechanics (C124-C128) and reasonable hypotheses about how polarity influences growth (C129-C130). The reasoning is sound and appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Tissue conflict resolutions can generate similar deformations with or without overall growth, providing a flexible mechanism applicable to many systems. Examples include pollen wall folding through differential shrinkage (areal and directional conflicts), gastrulation through differential contraction (surface conflict), Drosophila wing formation possibly involving directional conflict based on orthogonal cell division patterns, and dorsal appendage formation through differential tension along orthogonal domains (directional conflict). Similar conflict resolution types may underlie deformations in both plant and animal tissues despite different underlying cell behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by modeling in Figures 6-7. Claims C132-C136 are supported by citations to published work, appropriately connecting the framework to other systems. C135 is appropriately speculative ('may therefore involve'). C137 is a reasonable synthesis though speculative about generality. The examples effectively illustrate the potential broad applicability of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Tissue deformations arise through dynamic interplay between gene activity and mechanical connectivity leading to local rotations via conflict resolution. Genes influence shape by changing spatiotemporal patterns of tissue conflicts, requiring modification of local cell properties (wall extensibility in plants, actomyosin contractility in animals) and tissue cell polarity. Outstanding questions include how cellular properties are genetically controlled to produce various conflict types and how they are modulated during evolution to generate diverse shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 synthesize the conceptual framework and findings of the study, supported by the modeling and experimental results. C140 is supported by citation. C141 appropriately identifies future research directions. These represent well-supported conclusions and reasonable extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "An orthogonal pattern of growth orientations plays a key role in generating out-of-plane deformations in Snapdragon flowers. This pattern is most likely oriented by a polarity field (highlighted by PIN1 localization) and modulated by dorsoventral gene activity. The orthogonal growth pattern interacts with other differential growth patterns to create tissue conflicts that shape the flower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the core findings stated in the abstract, supported by extensive cellular analysis (calcofluor staining in Figure 5), PIN1 immunolocalization (Figure 8), genetic analysis (div mutants), and computational modeling (Figures 9-10). The integration of multiple experimental approaches strongly supports these conclusions, which are the main contributions of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Similar shape changes can be generated by contraction as well as growth, suggesting tissue conflict resolution provides a flexible morphogenetic mechanism for generating shape diversity in plants and animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by computational models in Figure 7 showing equivalence of growth-based and contraction-based mechanisms. However, C7 is somewhat speculative about broad applicability to shape diversity, though the modeling provides proof-of-principle. The claim is appropriately qualified with 'suggesting'.",
+    "result_type": "MAJOR"
+  }
+]

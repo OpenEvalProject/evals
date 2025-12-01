@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "Sir3 binds to di-nucleosomes (DiN) with approximately 10-fold higher affinity than to mono-nucleosomes (MonoN), with KD values of ~0.17 \u00b5M for DiN versus ~1.4 \u00b5M for MonoN. This enhanced binding to DiN is cooperative, with a Hill coefficient of ~2, while binding to MonoN shows no cooperativity (Hill coefficient ~1). The higher affinity for DiN is specific to the di-nucleosome structure, as ScaI digestion of the linker DNA reduces binding affinity to MonoN levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent binding assays (EMSA and BLI) consistently demonstrate the 10-fold affinity difference and cooperative binding to DiN (C34-C36, C40-C41, C44-C45). The ScaI digestion control (C37) confirms that the enhanced binding is due to the di-nucleosome structure rather than simply increased DNA content. The measurements are reproducible across different techniques and include appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Sir3 binding to tri-nucleosomes (TriN) and tetra-nucleosomes (TetraN) shows similar affinity and cooperativity as binding to DiN, indicating that binding sites on two different nucleosomes form the fundamental unit of chromatin binding for Sir3 dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BLI measurements demonstrate that Sir3 binding affinity and cooperativity do not increase beyond what is observed with DiN when using larger nucleosome arrays (C46). This directly supports the conclusion that the di-nucleosome represents the maximal binding unit (C47), as additional nucleosomes do not enhance binding parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The Sir3 winged helix (wH) dimerization domain is required for cooperative and high-affinity binding to DiN but not for binding to MonoN. Deletion of the wH domain (Sir3\u0394wH) eliminates the 10-fold affinity difference between DiN and MonoN binding and abolishes cooperativity, while reducing the half-life of Sir3-DiN and Sir3-TriN complexes by ~40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple binding assays (EMSA and BLI) consistently show that Sir3\u0394wH binds MonoN with similar affinity as full-length Sir3 (~1.1 \u00b5M vs ~1.4 \u00b5M) but loses the enhanced affinity for DiN (C50-C52). Hill coefficient analysis confirms loss of cooperativity (C53), and kinetic measurements demonstrate reduced complex stability for multi-nucleosome templates (C55). The data coherently support the role of wH in inter-nucleosomal bridging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The AAAL domain of Sir3 plays an important role in stabilizing the BAH-mediated Sir3-nucleosome complex. Sir3 proteins lacking both AAAL and wH domains (Sir3BAH) show drastically reduced Sir3-MonoN complex half-life, while deletion of wH alone does not have this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Dissociation kinetics measurements clearly demonstrate that Sir3BAH has much shorter complex half-life with MonoN compared to Sir3\u0394wH (C56). This differential effect, combined with prior knowledge that AAAL binds weakly to chromatin on its own, supports the conclusion that AAAL stabilizes BAH-mediated interactions (C57). The experimental design appropriately isolates the contribution of each domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The Sir4 coiled-coil domain (Sir4CC) enhances Sir3 binding to DiN by approximately 2-fold but does not affect Sir3 binding to MonoN, suggesting that Sir4 binds to Sir3 proteins that bridge neighboring nucleosomes. Both Sir3wH and Sir4CC dimerization domains contribute to inter-nucleosomal bridging with partially redundant functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA experiments consistently show that Sir4CC reduces the KD for Sir3-DiN binding from 0.17 to 0.08 \u00b5M while not affecting Sir3-MonoN binding (C60-C61). The differential effect supports the inter-nucleosomal bridging model (C62). Experiments with Sir3\u0394wH show that Sir4CC can partially compensate for loss of wH in DiN binding (4-fold enhancement, C63-C64), supporting partial redundancy (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sir3, through its wH domain, acts as a bridge linking mono-nucleosomes in solution. Full-length Sir3 promotes recovery of free labeled nucleosomes in a crosslinking assay, while Sir3\u0394wH does not, regardless of Sir4CC presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleosome crosslinking assay provides direct evidence that Sir3 can bridge separate nucleosomes in solution (C66), and this activity requires the wH domain (C67). Western blot controls confirm equal protein loading, ruling out differential binding as an explanation. The result directly demonstrates the bridging function proposed from equilibrium binding studies (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "H4K16 acetylation and H3K79 trimethylation each reduce Sir3 binding affinity to nucleosomes by 4-5 fold. When both modifications are present together, they synergistically inhibit Sir3 binding so strongly that specific binding cannot be detected at concentrations up to 11 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA measurements show consistent 4-5 fold reductions in affinity for singly modified nucleosomes (C72-C75), with KD values of ~4.5-5.0 \u00b5M for MonoN and ~0.7-0.8 \u00b5M for DiN. The inability to detect specific binding to doubly modified nucleosomes at the highest tested concentration (C76) demonstrates strong synergy (C77). The results are consistent with prior literature and provide important quantification of the combined effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In vivo ChIP-seq experiments show that both Sir3wH and Sir4CC domains are required for Sir3 spreading at telomeres. Under Sir3 overexpression conditions, the domains become partially redundant, with wH playing a more important role than Sir4-Sir3 interaction. The double mutant eliminates Sir3 binding even with overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data demonstrate that single mutations in either sir3\u0394wH or sir4-I1311N strongly reduce Sir3 association with telomeres (C78-C79). Under overexpression conditions, Sir3 remains detectable in single mutants but with reduced levels, and the degree of association is higher in sir4-I1311N than sir3\u0394wH (C82-C83). The double mutant shows background-level binding (C84), supporting the conclusion of partial redundancy under overexpression (C85). The in vivo data corroborate the in vitro binding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C105",
+      "C106",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose an 'interrupted bridging' model for heterochromatin spreading in which Sir3 dimers form inter-nucleosomal bridges across neighboring nucleosomes but do not form continuous oligomers. Sir-Sir contacts do not extend beyond two appropriately modified nucleosomes, and spreading involves cooperative recruitment of new SIR complexes to nucleosome pairs independently of already-bound complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interrupted bridging model is well-supported by multiple lines of evidence: (1) Sir3 shows no cooperativity on MonoN despite two binding sites (C4), (2) maximal cooperativity is observed with DiN but not larger arrays (C5, C89), (3) the wH domain is required for DiN cooperativity but not MonoN binding (C54), and (4) Sir4CC enhances DiN but not MonoN binding (C61-C62). These observations collectively support the model that Sir3 bridges nucleosomes in an interrupted fashion (C86-C88, C106, C111) and that spreading requires cooperative binding to nucleosome pairs (C7, C105, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The cooperative binding mechanism provides specificity for Sir3 localization to heterochromatin. At physiological Sir3 concentrations (0.4-0.8 \u00b5M), unmodified nucleosome pairs are 50-80 fold more likely to be bound than isolated nucleosomes, with cooperativity contributing substantially more to this selectivity than affinity differences alone would provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculations of binding selectivity are based on experimentally determined KD values and Hill coefficients (C102). The comparison showing that cooperativity increases selectivity from ~12-fold to ~50-80-fold (C103) is mathematically sound. The estimated physiological Sir3 concentration (C101) is based on published data with appropriate citations. The conclusion that cooperative binding provides robustness against noise (C100, C104) is a reasonable inference from the quantitative analysis, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "The Sir3 BAH domain alone binds to MonoN and DiN with nearly identical affinity (~1.4 \u00b5M) and shows only a 2-fold higher affinity for DiN compared to MonoN, as expected from the increased number of binding sites. BAH domain binding to MonoN is non-cooperative and can be described by a model of two independent binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple binding assays (EMSA and BLI) consistently show that Sir3BAH binds MonoN and DiN with similar affinities (C38-C39). The Hill coefficient close to 1 (C42) and successful fitting to an independent sites model (C43) confirm non-cooperative binding. These results provide important controls demonstrating that the BAH domain alone cannot mediate the cooperative inter-nucleosomal interactions observed with full-length Sir3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The requirement for two nucleosomes in cooperative binding suggests a new rate-limiting step in nucleation of silent chromatin that may contribute to specific silencer-guided assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data clearly demonstrate that two nucleosomes are required for cooperative binding, the claim that this represents a 'new rate-limiting step' in nucleation (C90) is speculative. The authors have not directly measured nucleation kinetics or demonstrated that this step is rate-limiting in vivo. This is a reasonable hypothesis based on the binding data but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The interrupted spreading mechanism differs from previously proposed oligomerization models for heterochromatin proteins. Prior models for Swi6/HP1 and Sir3 suggested continuous oligomerization, but recent evidence indicates that oligomerization beyond dimers is weak and that these proteins primarily associate with chromatin as nucleosome bridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims accurately represent prior literature on HP1/Swi6 oligomerization models (C91), the weakness of higher-order oligomerization (C92), reanalysis of binding data (C93), and recent studies supporting bridging models (C94). The comparison to Sir3 oligomerization studies (C95) and the contrast with the current findings (C96) appropriately contextualize the results within the field. All claims are properly supported by citations.",
+    "result_type": "MINOR"
+  }
+]

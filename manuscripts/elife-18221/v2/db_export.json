@@ -1,0 +1,2182 @@
+{
+  "submission": {
+    "id": "16d26bb2-f660-4ec8-87e7-5fe95fb44f1d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:21:04.050007Z",
+    "updated_at": "2025-11-30T20:21:04.050007Z"
+  },
+  "content": [
+    {
+      "id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "submission_id": "16d26bb2-f660-4ec8-87e7-5fe95fb44f1d",
+      "content_type": "manuscript",
+      "content_text": "# Minimized human telomerase maintains telomeres and resolves endogenous roles of H/ACA proteins, TCAB1, and Cajal bodies\n\n## Authors\n\n- Jacob M Vogan<sup>1</sup>\n- Xiaozhu Zhang<sup>1</sup>\n- Daniel T Youmans<sup>1</sup>\n- Samuel G Regalado<sup>1</sup>\n- Joshua Z Johnson<sup>1</sup>\n- Dirk Hockemeyer<sup>1</sup>\n- Kathleen Collins<sup>1</sup> ([ORCID: 0000-0003-3172-7088](https://orcid.org/0000-0003-3172-7088)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe dissected the importance of human telomerase biogenesis and trafficking pathways for telomere maintenance. Biological stability of human telomerase RNA (hTR) relies on H/ACA proteins, but other eukaryotes use other RNP assembly pathways. To investigate additional rationale for human telomerase assembly as H/ACA RNP, we developed a minimized cellular hTR. Remarkably, with only binding sites for telomerase reverse transcriptase (TERT), minimized hTR assembled biologically active enzyme. TERT overexpression was required for cellular interaction with minimized hTR, indicating that H/ACA RNP assembly enhances endogenous hTR-TERT interaction. Telomere maintenance by minimized telomerase was unaffected by the elimination of the telomerase holoenzyme Cajal body chaperone TCAB1 or the Cajal body scaffold protein Coilin. Surprisingly, wild-type hTR also maintained and elongated telomeres in TCAB1 or Coilin knockout cells, with distinct changes in telomerase action. Overall, we elucidate trafficking requirements for telomerase biogenesis and function and expand mechanisms by which altered telomere maintenance engenders human disease.\n\n## Introduction\n\nEukaryotic chromosome stability relies on end-protective telomeres (Arnoult and Karlseder, 2015). In most organisms, end-protective telomeric chromatin assembles on a tract of simple-sequence DNA repeats (de Lange, 2010), for example the human repeat of TTAGGG on the strand with 3\u2019OH terminus. Maintenance of this telomeric repeat array requires de novo repeat synthesis by the ribonucleoprotein (RNP) reverse transcriptase telomerase to balance the repeat erosion inherent in DNA-dependent DNA-polymerase replication of the genome (Blackburn et al., 2006; Hug and Lingner, 2006). Telomerase extends chromosome 3' ends by copying a template within the telomerase RNA subunit (hTR in human cells), using an active site in the telomerase reverse transcriptase protein (TERT). The intricate co-folding and co-function of telomerase RNA and TERT obliges a step-wise RNP assembly process and generates a network of protein- and RNA-domain interactions (Blackburn and Collins, 2011, Schmidt and Cech, 2015).\n\nCellular RNP biogenesis involves transit through and concentration in specific nuclear bodies (Mao et al., 2011; Machyna et al., 2013). Trafficking pathways differ depending on the diverse steps of RNA processing, modification, and RNP assembly that give a transcript its fate and function. Among the best-studied RNP transit points are Cajal bodies, defined as foci of the protein Coilin (Nizami et al., 2010; Machyna et al., 2015). Enzymes resident in Cajal bodies catalyze numerous RNA processing and modification reactions as well as RNP assembly and remodeling (Machyna et al., 2013). Beyond RNA processing and RNP biogenesis factors, Cajal bodies also recruit regulatory complexes such as CDK2-cyclinE (Liu et al., 2000) and have widespread influence on gene expression (Wang et al., 2016). Despite the multiplicity of functions ascribed to Cajal bodies, including critical roles in vertebrate telomerase function described below, it remains unclear whether their formation is a\u00a0cause or consequence of associated RNP biogenesis pathways.\n\nCuriously, ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways, which are directed by telomerase RNA interaction with a La-motif protein, Sm proteins, or H/ACA proteins, respectively (Egan and Collins, 2012a). In human cells, telomerase shares the same mature H/ACA proteins (dyskerin, NHP2, NOP10, GAR1) and H/ACA RNP biogenesis chaperones as the intron-encoded small nucleolar (sno) or small Cajal body (sca) RNPs that catalyze cleavage and pseudouridylation of ribosomal and small nuclear RNAs (Kiss et al., 2010). Because precursor hTR is released from its site of synthesis as an autonomous transcript rather than the spliced intron lariat of other human H/ACA RNAs, it is sensitized to degradation in dyskeratosis congenita (DC) patient cells with a mutation of an H/ACA protein (Egan and Collins, 2012b; Armanios and Blackburn, 2012; Sarek et al., 2015). Also, unlike other H/ACA RNAs, hTR requires a 5' trimethylguanosine cap to prevent 5'-3' exonuclease processing (Mitchell et al., 1999). Models for vertebrate telomerase RNA trafficking suggest an initial transit of Cajal bodies, where 5' trimethylguanosine cap modification is thought to occur, followed by localization to nucleoli (Egan and Collins, 2012a). Subsequent RNP trafficking from nucleoli to steady-state concentration in Cajal bodies depends on the\u00a0binding of the Cajal body chaperone and telomerase holoenzyme protein TCAB1/WDR79/WRAP53\u03b2 to an hTR 3' stem-loop CAB-box motif (Venteicher et al., 2009; Tycowski et al., 2009; Zhong et al., 2011), which is present in both stem-loops of an H/ACA scaRNA (Kiss et al., 2010). Overall, this trafficking complexity could represent only a subset of the necessary cellular directions for human telomerase biogenesis and function.\n\nThe human telomerase holoenzyme subunits that localize active RNP to Cajal bodies are considered crucial for telomerase action at telomeres (Schmidt and Cech, 2015). Transient telomere colocalization with a Cajal body can be detected in S-phase, when telomerase acts at chromosome ends (J\u00e1dy et al., 2006; Tomlinson et al., 2006). Evidence for Cajal body delivery of telomerase to telomeres builds from studies depleting TCAB1 or Coilin using RNA interference, which reduced or eliminated hTR colocalization with telomeres and induced telomere shortening (Venteicher et al., 2009; Zhong et al., 2011; Stern et al., 2012; Zhong et al., 2012). DC patient cells with biallelic TCAB1 mutations have short telomeres and fail to maintain telomere length even with the up-regulated telomerase expression in induced pluripotent cells (Batista et al., 2011). With all of this experimental support for Cajal body delivery of human telomerase to telomeres, it is puzzling that mouse telomerase RNA does not localize to Cajal bodies (Tomlinson et al., 2010). Also, recently, Coilin gene knock-out (KO) in HeLa cells generated two clonal cell lines that maintained telomeres (Chen et al., 2015).\n\nHere, we address the significance of human telomerase biogenesis and trafficking pathways for active RNP assembly and function at telomeres. As a new approach, we first bypassed the endogenous hTR stability requirement for H/ACA proteins. Remarkably, we found that a minimal hTR (hTRmin) containing only binding sites for TERT can assemble active RNP in cells, and this active RNP can maintain stable telomere length homeostasis. TERT overexpression was required for cellular assembly with hTRmin, suggesting that hTR H/ACA RNP assembly enhances TERT interaction at scarce endogenous telomerase subunit levels. KO of TCAB1 or Coilin did not alter hTRmin RNP function at telomeres. Surprisingly, TCAB1 KO or Coilin KO was also permissive for hTR telomerase to maintain telomeres. In cancer and pluripotent stem cell lines with endogenous hTR and TERT expression, TCAB1 KO resulted in a slow decline of telomere length followed by stable telomere length homeostasis. We conclude that aside from conferring hTR stability and facilitating active telomerase assembly in cells with scarce TERT, hTR assembly as H/ACA RNP is not essential. Also, Cajal body localization is not essential for hTRmin or hTR telomerase to maintain stable telomere length homeostasis. Our findings illuminate the influences of nuclear trafficking on human telomerase biogenesis and action at telomeres, account for why telomerase biogenesis pathways can be so divergent in eukaryotic evolution, and give new interpretation to the mechanisms by which different telomerase subunit mutations impose human disease.\n\n## Results\n\n### Human telomerase can be liberated from H/ACA RNP assembly\n\nTo test the significance of H/ACA RNP biogenesis for human telomerase function at telomeres, we sought to bypass the essential role of this pathway in the\u00a0protection of hTR from degradation while preserving hTR-TERT interaction and RNP catalytic activity. The H/ACA-motif 5' stem of hTR (Figure 1A) separates two hTR regions that are critical for binding of TERT and catalytic activity: the template/pseudoknot (t/PK) and conserved regions (CR) 4/5 (Zhang et al., 2011). Previously we joined these two regions with a spacer to create hTRmin (Figure 1B), which in combination with TERT reconstitutes a minimized active telomerase in rabbit reticulocyte lysate (Wu and Collins, 2014). To allow cellular accumulation of hTRmin, the most successful strategy was to append 3' processing and protection motifs from the human long non-coding RNA MALAT1 (Brown et al., 2012; 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig1-v2.jpg)\n\n**Figure 1.:** (A,B) Diagrams of hTR and hTRmin secondary structure and bound proteins. (C) Parts list for a cellular minimal telomerase RNA. Components are presented in 5\u2019 to 3\u2019 order. (D,E) Northern blot assay for RNA accumulation in transfected 293T cells. Endogenous hTR was also detected. Loading control (LC) is a cellular RNA non-specifically detected by the Northern blot probe used for normalization. In (D), all hTRmin variants are without a 5\u2019 leader and with a 6 nt spacer. In (E), all constructs had the RNA triplex and RNase P site. hTRmin accumulation was normalized to LC to quantify relative accumulation (Rel). (F) Copurification of hTR or LhTRmin with tagged telomerase holoenzyme subunits co-overexpressed in transfected VA-13 cells. RNPs were purified from cell lysate using FLAG antibody resin and analyzed by immunoblot and Northern blot. F indicates 3xFLAG peptide, ZZ indicates tandem Protein A domains. (G) Northern blot assay for RNA accumulation in transfected VA-13 cells. RNA folding during extensive gel electrophoresis gives mature hTR two mobilities (a doublet of bands). (H) FISH detection of hTR or LhTRmin in transfected HCT116 cells. Untagged TERT was coexpressed. (I) Northern blot assay for RNA expressed from transgenes integrated at; in HCT116 cells. Endogenous hTR was also detected.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) U2OS cells were transiently transfected with constructs encoding F-TERT and either hTRmin, hTR, or empty vector (mock). TERT was immunopurified on anti-FLAG agarose from cell extract 48\u2009hr post-transfection. An aliquot of the bound samples were treated with TRIzol to purify RNA, which was analyzed by Northern blot. In parallel, bound samples were tested for telomerase activity by primer extension using 32P dGTP for radiolabeling. Products were precipitated and resolved by denaturing gel electrophoresis. A radioactive oligonucleotide recovery control (RC) was added prior to precipitation. For the hTR cell extract, different amounts of extract were assayed relative to the hTRmin sample set at 100%. All lanes are from the same gel. (B) HCT116 hTR KO#2 cells were transiently transfected to express hTR, CAB-box-mutant hTR (G414C), LhTRmin, or hTRmin. FISH was performed to detect the RNAs (green). Nuclei were counterstained with DAPI (blue).\n\nThe overall design strategy to optimize hTRmin accumulation involved testing combinations and variations of RNA modules (Figure 1C). For example, we interchanged the hTRmin 5\u2019 end as no leader, endogenous hTR quadruplex-forming leader (LeaderG), or a mutant leader (LeaderC) that eliminates one of the four adjacent guanosine tracts (Sexton and Collins, 2011). We also tested 6 or 14 nucleotide (nt) lengths of single-stranded RNA spacer separating the t/PK and CR4/5 regions. For 3'-end formation, we tested the MALAT1 triplex motif with or without an adjacent RNase P cleavage site mimicking a pre-tRNA (Brown et al., 2012). We also omitted or included a hepatitis delta virus ribozyme (HDV RZ), which can increase hTR accumulation by stabilizing the precursor 3' end with an exonuclease-resistant 2',3' cyclic phosphate (Egan and Collins, 2012b).\n\nWe first assessed hTRmin accumulation in transiently transfected 293T cells, using an expression context previously optimized for hTR that exploits the U3 snoRNA promoter to direct transcription by RNA Polymerase II (Fu and Collins, 2003). Accumulation of hTRmin to a level detectable by Northern blot required both the RNA triplex and the RNase P site (Figure 1D). We next tested if this cellular hTRmin could form active RNP. We transiently co-expressed hTRmin or hTR with 3xFLAG-tagged (F) TERT in the telomerase-negative U2OS cell line and assayed for telomeric primer extension by immunopurified TERT. Cellular reconstitution with hTRmin yielded lower RNA accumulation and proportionally lower overall activity than reconstitution with hTR, but hTRmin and hTR telomerase RNPs had similar profiles of repeat synthesis (Figure 1\u2014figure supplement 1A). For continued optimization, we next compared hTRmin accumulation with no 5\u2019 leader, LeaderG, or LeaderC and with 6 nt versus 14 nt spacer (Figure 1C), all with the RNA triplex and RNaseP cleavage site. The presence of a 5\u2019 leader increased accumulation, and the quadruplex-mutant LeaderC was as good or better than the native hTR LeaderG (Figure 1E). Also, the 6 nt spacer between t/PK and CR4/5 was as good or better than the 14 nt spacer (Figure 1E). HDV RZ addition downstream of the MALAT1 3' processing elements improved hTRmin accumulation from some transfected constructs but did not notably increase accumulation of the optimal LeaderC-containing hTRmin with 6 nt spacer (Figure 1E), which in subsequent experiments we designate LhTRmin for distinction from the leader-less hTRmin.\n\nTo confirm that removal of the H/ACA motif eliminated all interactions with H/ACA proteins, we expressed epitope-tagged TERT, dyskerin, or TCAB1 with hTR or LhTRmin in telomerase-negative VA-13 cells, immunopurified the tagged protein using FLAG antibody resin, and detected bound RNA by Northern blot (Figure 1F). As expected, TERT, dyskerin, and TCAB1 each bound hTR whereas only TERT bound LhTRmin. As in 293T cells, in VA-13 cells both leader-free hTRmin and LhTRmin accumulated, with LhTRmin being optimal (Figure 1G). The robust 3' end protection activity of the MALAT1 triplex was evident when it was appended to full-length hTR (Figure 1G; note that mature hTR sometimes migrates as a doublet due to in-gel folding). To compare the cellular localizations of LhTRmin and hTR, we overexpressed LhTRmin or hTR with TERT by transient transfection. While hTR concentrated in nuclear puncta as expected, LhTRmin distributed throughout the nucleoplasm (Figure 1H). Transfection of cells lacking endogenous hTR (see below) confirmed that hTRmin and LhTRmin have a diffuse nucleoplasmic distribution distinct from that of hTR or hTR with a CAB-box mutation (Figure 1\u2014figure supplement 1B). Together the studies above establish that cellular hTRmin and LhTRmin escape the confines of H/ACA RNP assembly.\n\nWe next tested whether hTRmin or LhTRmin could accumulate when stably expressed from an integrated transgene. In the near-diploid HCT116 human colon carcinoma cell line, we used a zinc finger nuclease that introduced a double-stranded DNA break at the AAVS1 safe-harbor locus (Hockemeyer et al., 2009) to integrate an RNA expression cassette and a neomycin resistance cassette. After selection, the polyclonal population of targeted cells was assayed for RNA accumulation by Northern blot. Consistent with results from transient transfection, LhTRmin accumulation exceeded that of hTRmin, with or without a downstream HDV RZ (Figure 1I). Stably expressed hTRmin was barely detectable, and even LhTRmin accumulated to a level lower than endogenous hTR (Figure 1I). Therefore, the MALAT1 3' processing elements do not confer as much accumulation to minimized hTR as does an embedded H/ACA RNP.\n\n### Catalytically active telomerase supports telomere maintenance without H/ACA proteins or TCAB1\n\nSuccessful cellular biogenesis of hTRmin telomerase RNP allowed us to test whether H/ACA proteins have post-biogenesis influences on telomerase function at telomeres. We first programmed Cas9 for cleavage of the endogenous hTR locus (TERC) in HCT116 cells in the presence of donor plasmid that would integrate a puromycin resistance cassette (Figure 2A). After selection, clonal cell lines were established and screened by PCR for biallelic gene disruption (Figure 2\u2014figure supplement 1A). Two independent cell lines with homozygous TERC KO were confirmed to lack telomerase catalytic activity in cell extract, as assayed by the PCR-based telomeric repeat amplification protocol performed with radiolabeled dGTP (hotTRAP) (Figure 2B and Figure 2\u2014figure supplement 1B, left). Initially, these two hTR KO clonal cell lines showed no growth defect.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of Cas9-mediated disruption of the hTR locus with a PURO selection cassette. (B) Northern blot and hotTRAP assays of hTR KO#1 and KO#2 clonal HCT116 cell lines. An internal control (IC) to normalize PCR amplification was always included in hotTRAP assays. (C) AAVS1 donor constructs used for transgene rescue of hTR KO HCT116 cells. RNA expression used the U3 promoter and terminated within 500 bp of transplanted genomic region from immediately downstream of endogenous hTR (g500). mRNA expression used the CAGGS promoter terminated with a polyadenylation element (pA). (D) Immunoblot, northern blot, and hotTRAP characterization of HCT116 cell lines 51 days after hTR KO targeting. (E) Brightfield microscopy images of HCT116 cell lines during the die-off interval of telomerase-negative cell cultures. Yellow arrowheads indicate membrane blebbing. (F) Chart of survival fate of HCT116 hTR KO cell lines with the indicated transgene at AAVS1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic and assay results for PCR detection of hTR locus KO. (B) Telomerase activity comparison by hotTRAP for the hTR KO cell lines with TERT OE alone or in combination with hTRmin or LhTRmin. Input total protein is whole cell lysate. Assays were from polyclonal populations following selection for transgene integration and extended post-targeting culture (114 days post-targeting for hTR KO). (C) QTRAP comparison of telomerase activity levels in the hTR KO cell lines rescued by AAVS1 hTRmin TERT OE or LhTRmin TERT OE. Values are set relative to parental HCT116 (n\u00a0= 3). (D) Immunoblot, northern blot, and hotTRAP characterization of HCT116 hTR KO cells with or without TERT OE from an AAVS1 transgene and with lentiviral hTR, LhTRmin, or GFP. (E) Time course of TRF in the HCT116 hTR KO with TERT OE and lentiviral LhTRmin or negative control GFP. Days post-targeting is relative to hTR KO; 65 days post-targeting was the last time point of collection prior to die-off of the telomerase-negative cells.\n\nIn each hTR KO cell line, we targeted transgene integration at AAVS1 with expression cassette(s) encoding GFP, N-terminally F-tagged TERT, hTR, LhTRmin, hTRmin, or LhTRmin or hTRmin coexpressed with TERT (Figure 2C). RNA expression was directed by the U3 snoRNA promoter, and protein expression was driven by the strong and constitutive CAGGS promoter. Polyclonal populations of transgene-containing cells were selected and immediately assayed for telomerase subunit expression and telomerase activity (Figure 2D). TERT overexpression (OE) was detected by immunoblot, and transgene-encoded RNA expression was detected by Northern blot. Telomerase catalytic activity was assayed by hotTRAP.\n\nTransgene expression of wild-type hTR restored telomerase catalytic activity to the hTR KO cells, rescuing endogenous TERC locus disruption (Figure 2D, lane 3). Transgene expression of GFP, LhTRmin, hTRmin, or TERT alone did not (Figure 2D, lanes 2 and 4\u20136). However, LhTRmin or hTRmin with TERT OE did generate active telomerase (Figure 2D, lanes 7\u20138). TERT co-expression did not affect hTRmin biological accumulation (Figure 2D, compare lanes 4\u20135 to lanes 7\u20138). Parallel results were confirmed using the independent hTR KO clonal cell line (Figure 2\u2014figure supplement 1B,C). In addition, we tested telomerase activity rescue of hTR KO cells or hTR KO cells with AAVS1 TERT OE by lentiviral introduction of LhTRmin. Only with TERT OE did lentiviral expression of LhTRmin produce active telomerase, whereas lentiviral expression of hTR rescued hTR KO without TERT OE (Figure 2\u2014figure supplement 1D,E). Telomerase activity levels in the hTRmin telomerase cell lines were within an order of magnitude of the telomerase level in parental HCT116 cells (Figure 2\u2014figure supplement 1B,C). From these experiments we conclude that hTR assembly as H/ACA RNP strongly stimulates hTR interaction with TERT when both subunits are at very low expression levels, but this role of H/ACA RNP assembly can be bypassed by increasing the cellular availability of TERT.\n\nThe hTR KO cell lines lacking active telomerase ultimately entered an interval of pervasive cell death with dramatic membrane blebbing (Figure 2E, yellow arrowheads) at ~70 days post-targeting, corresponding to ~70 population doublings. In stark contrast, all of the telomerase-positive polyclonal cell cultures and clonal cell lines proliferated over many months of continuous passage with normal morphology and doubling time (Figure 2F). Therefore, the catalytically active hTRmin telomerase RNPs conferred indefinite cellular proliferative capacity.\n\nWe next tested the hTR KO cell lines with AAVS1 transgenes for rescue of telomere shortening. As expected, hTR KO cells re-expressing hTR rapidly gained telomere length, whereas hTR KO cells expressing the negative control GFP did not (Figure 3A, lanes 1\u20133 and Figure 3\u2014figure supplement 1A). All cell cultures lacking active telomerase had short telomeres that continued to shorten until eventually all cells in the culture died (Figure 3A,B). Telomere length was heterogeneous in the polyclonal population of hTR KO cells rescued by LhTRmin with TERT OE (Figure 3A, lane 7 and Figure 3\u2014figure supplement 1B). We generated clonal cell lines from the hTR KO cell lines complemented by LhTRmin or hTRmin with TERT OE and characterized their maintenance of telomere length. These clonal cell lines had distinct but stable telomere lengths (Figure 3C,D and Figure 3\u2014figure supplement 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig3-v2.jpg)\n\n**Figure 3.:** (A) Southern blot detection of telomere restriction fragment lengths (TRF) for HCT116 cell lines after release from selection. The telomerase-negative cell line TRFs were analyzed before cultures commenced cell death. (B) Time course of TRF shortening in the telomerase-negative HCT116 cell lines. The 65 days post-targeting time point was the final cell collection before culture death. All lanes are from the same gel. Red dashed lines separate different genotypes. (C) TRF analysis for multiple clonal cell lines expressing LhTRmin with TERT OE or hTRmin with TERT OE, all cultured in parallel and assayed at the same time point 111 days post-targeting. (D) Time course of TRF in the clonal cell lines expressing LhTRmin with TERT OE or hTRmin with TERT OE. Days post-targeting refers to the hTR KO. (E) Immunoblot and Northern blot analysis of telomerase subunit expression levels across the clonal cell lines expressing LhTRmin with TERT OE or hTRmin with TERT OE, performed using cells at 111 days post-targeting. (F) Comparison of telomerase activity measured by QTRAP (purple bars) with telomerase subunit expression levels quantified from blots in (E). QTRAP (averaged, n\u00a0=\u00a05) and RNA signals were normalized to parental HCT116 cell line activity and endogenous hTR. TERT OE signals were set relative to LhTRmin TERT OE clone #1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Northern blot and TRF timecourse of HCT116 hTR KO#2 cell line rescue by transgene hTR. (B) Time course of HCT116 TRF after introduction of a\u00a0transgene for TERT OE alone or with LhTRmin or hTRmin; cell cultures were polyclonal after transgene introduction. Cells with TERT OE alone died shortly after 65 days post-targeting, counted from the original hTR KO. (C) Time course of TRF in clonal cell lines of HCT116 hTR KO with AAVS1 TERT OE and hTRmin. Days post-targeting refers to the original hTR KO. (D) QTRAP data from Figure 3F with error bars from technical replicates (n\u00a0=\u00a05). (E) Telomerase activity measured by hotTRAP for the HCT116 clonal cell lines with TERT OE and LhTRmin or hTRmin. In each panel, all lanes are from the same gel.\n\nTo investigate the clonal cell line variance in telomere length at length homeostasis, we profiled levels of telomerase subunits and activity across the clonal cell lines. All of the LhTRmin cell lines had higher steady-state RNA accumulation than the hTRmin lines (Figure 3E). LhTRmin levels varied more than hTRmin, and TERT levels varied more in LhTRmin lines than hTRmin lines (Figure 3E and Figure 3F, symbols). Telomerase activity measured by fluorescence quantification of telomeric repeat amplification (QTRAP) (Figure 3F, bars and Figure 3\u2014figure supplement 1D for replicates) or hotTRAP (Figure 3\u2014figure supplement 1E) was generally greatest in cell lines with high telomerase subunit expression (Figure 3F, compare symbols to bars). Higher telomerase activity in cell extract correlated generally but not absolutely to longer telomere length at homeostasis (compare Figure 3F, bars to Figure 3C). We suggest that differences in telomerase subunit expression levels could in part reflect epigenetic differences introduced upon transgene integration, which was an independent event in each clonal cell line. In addition, differences in subunit expression levels could result from the stochastic fluctuation established to occur in many model systems, including HeLa cells (Bryan et al., 1998).\n\n### TCAB1 and Cajal bodies contribute non-essential regulations of telomerase\n\nWe confirmed that the hTRmin telomerase RNP assembled in the stable cell lines did not have the endogenous hTR RNP interaction with TCAB1, tested by immunopurification of TCAB1 from cell lysate and subsequent telomerase activity assay (Figure 4\u2014figure supplement 1A). However, because telomere-associated telomerase would be a small fraction of the total telomerase RNP pool, we sought another approach to demonstrate that hTRmin telomerase maintained telomeres without a requirement for TCAB1-mediated recruitment to Cajal bodies. To this end, we disrupted the genes encoding TCAB1 and Coilin in HCT116 cells expressing hTRmin telomerase.\n\nWe programmed Cas9 for cleavage of the endogenous TCAB1 or Coilin locus in the presence of donor plasmid that would integrate a hygromycin resistance cassette (Figure 4A). Targeting and selection were highly efficient, resulting in polyclonal populations of LhTRmin TERT OE cells and hTRmin TERT OE cells with little TCAB1 or Coilin, as detected by immunoblot (Figure 4B) or immunofluorescence (Figure 4C). TCAB1 KO cells retained a normal level of Coilin, and Coilin KO cells retained a normal level of TCAB1 (Figure 4B). Cells lacking TCAB1 retained Cajal bodies (Figure 4C), in agreement with some previous findings (Venteicher et al., 2009; Zhong et al., 2011) but contrary to others (Mahmoudi et al., 2010; Wang et al., 2016). Also, nuclear foci of SMN remained detectable in the TCAB1 KO cells but not Coilin KO cells (Figure 4\u2014figure supplement 1B). We conclude that in HCT116 cells, TCAB1 KO did not disrupt Cajal bodies, and Coilin KO did not induce TCAB1 degradation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of Cas9-mediated disruption of TCAB1 and Coilin (COIL) loci with a HYGRO selection cassette. (B) Immunoblot and QTRAP analysis of the polyclonal populations of LhTRmin or hTRmin TERT OE cells selected for disruption of TCAB1 or COIL loci. QTRAP values were normalized to the cell line before TCAB1 or COIL disruption (n\u00a0=\u00a03). (C) Immunofluorescence localization of TCAB1 and Coilin in HCT116 cells. (D) Immunoblot analysis for TCAB1 and Coilin in clonal KO cell lines with LhTRmin + TERT OE or hTRmin + TERT OE. (E) QTRAP assay of the clonal cell lines in (D). QTRAP values were normalized to the cell line before TCAB1 or COIL disruption (n\u00a0=\u00a03). (F) Stable TRF lengths in clonal cell lines lacking TCAB1 or Coilin. Days post-targeting refers to the TCAB1 or COIL KO.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Immunopurification from HCT116 hTR KO cell lines expressing LhTRmin with TERT OE or hTRmin with TERT OE. Protein A/G beads were coupled with anti-TCAB1 antibody and used to immunopurify TCAB1 complexes. Rabbit IgG and anti-FLAG antibody were used as negative and positive controls, respectively. Immunopurified samples were assayed by hotTRAP. (B) Immunofluorescence localization of SMN in HCT116 TCAB1 KO and COIL KO cell lines. (C,D) Immunoblot and PCR genotyping of HCT116 TCAB1 KO and COIL KO cell lines. The immunoblots are also shown in main figures. The TCAB1 KO clonal cell line #2 in the\u00a0LhTRmin TERT OE#3 background had one allele with target-site mutagenesis that produced an early translation stop codon. (E) Extended culture TRF analysis of HCT116 TCAB1 KO and COIL KO clonal cell lines from the LTRmin and hTRmin telomerase backgrounds.\n\nWe isolated clonal cell lines from the polyclonal KO cell populations and validated homozygous TCAB1 or Coilin KO by genomic locus PCR and protein immunoblots (Figure 4D and Figure 4\u2014figure supplement 1C,D). These clonal cell lines retained telomerase catalytic activity in cell extract (Figure 4E) and stably maintained telomeres (Figure 4F and Figure 4\u2014figure supplement 1E). Some heterogeneity was evident comparing the telomere lengths maintained in different clonal cell lines, which could result from stochastic variation (Bryan et al., 1998). Importantly, neither TCAB1 KO nor Coilin KO affected cell viability, morphology, or proliferation in a readily detectable manner. These findings support the conclusion that an RNP of minimized hTRmin and TERT functions at telomeres without dependence on H/ACA RNP biogenesis or localization pathways.\n\nIn parallel, we generated TCAB1, Coilin, and TERT KO HCT116 cells with endogenous hTR expression using Cas9 for TCAB1 and Coilin or a zinc finger nuclease developed previously for TERT (Sexton et al., 2014). Clonal cell lines with homozygous KO were identified using genomic locus PCR (Figure 4\u2014figure supplement 1C,D and Figure 5\u2014figure supplement 1A) and validated for loss of TCAB1 or Coilin but not hTR (Figure 5A,B). TERT KO was validated by loss of telomerase activity from cell extract (Figure 5C). As expected, TCAB1 KO cells retained Coilin, and Coilin KO cells retained TCAB1 (Figure 5A). We also confirmed that immunopurification of TCAB1 from Coilin KO cell extract, but not from TCAB1 KO cell extract, enriched active telomerase (Figure 5\u2014figure supplement 1B). The loss of TCAB1 or Coilin did not alter telomerase activity in cell extract by more than a few-fold extent that could be within the range of clonal variation (Figure 5D and Figure 5\u2014figure supplement 1C). HCT116 cells with TCAB1 KO or Coilin KO showed no change in growth rate, cell viability, or morphology over more than half a year of continuous culture. In contrast, the TERT KO cells underwent cell death at ~70 days after targeting, paralleling the fate of the hTR KO HCT116 cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig5-v2.jpg)\n\n**Figure 5.:** (A) Immunoblot analysis of HCT116 TCAB1 KO and COIL KO clonal cell lines. (B) Northern blot for hTR in HCT116 TCAB1 KO and COIL KO clonal cell lines. (C) Lack of hotTRAP telomerase activity detection in the HCT116 TERT KO clonal cell lines. (D) QTRAP analysis of telomerase activity in the HCT116 TCAB1 KO and COIL KO clonal cell lines. Values were normalized to the parental HCT116 cell line (n\u00a0=\u00a03). (E) Time course of TRF in the HCT116 TERT KO clonal cell lines. (F,G) Time course of TRF in the HCT116 TCAB1 and COIL KO clonal cell lines. (H) Immunoblot analysis of hESC TCAB1 KO and COIL KO clonal cell lines. Wild-type refers to an hESC clonal cell line subjected to Cas9 electroporation but retaining a wild-type genotype. (I) QTRAP analysis of telomerase activity in the hESC TCAB1 KO and COIL KO clonal cell lines. Values were normalized to the parental hESC line (n\u00a0=\u00a03). (J,K) Time course of TRF in hESC TCAB1 KO and COIL KO clonal cell lines. Note that the long telomeres in mouse cells from the hESC feeder layer contribute some blot signal (indicated MEFs).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) PCR genotyping of HCT116 TERT KO clonal cell lines. (B) Immunopurification of TCAB1 complexes from parental, TCAB1 KO, and COIL KO HCT116 cell lines followed by hotTRAP. (C) HotTRAP of HCT116 TCAB1 KO and COIL KO cell lines.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) PCR genotyping of hESC TCAB1 KO and COIL KO clonal cell lines. Wild-type refers to an hESC clonal cell line subjected to Cas9 electroporation but retaining a wild-type genotype. (B) HotTRAP of the TCAB1 KO hESC lines. (C) Immunofluorescence localization of Coilin and TCAB1 in hESC lines.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Immunoblot and QTRAP analysis of HCT116 parental and TCAB1 KO cell lines expressing F-tagged TCAB1 or GFP from transgenes at AAVS1. QTRAP values were normalized to the GFP cell line signal (n\u00a0=\u00a03). Days post-targeting refers to transgene integration. (B) Time course of TRF in cell lines from (A). (C) Immunoblot and QTRAP analysis of hESC parental and TCAB1 KO cell lines expressing F-tagged TCAB1 transgene at AAVS1. QTRAP values were normalized to the unrescued TCAB1 KO cell line signal (n\u00a0=\u00a03). Days post-targeting refers to transgene integration. (D) Time course of TRF in cell lines from (C). (E) TCAB1 double-exon-disruption schematic with TCAB1 exon 2 and exon 8 KO genotyping by PCR. TCAB1 exon 8 targeting was performed in the HCT116 TCAB1 KO#2 background, which has a hygromycin resistance cassette inserted in TCAB1 exon 2. (F) TRF of HCT116 parental, TCAB1 KO#2 background, and exon 8 disrupted TCAB1 KO#2 (double-exon-disruption) cell lines. DNA was purified from double-exon-disruption cells at 43 days post-targeting the second KO. (G) Immunofluorescence staining for Coilin (green) and TCAB1 (red) in double-exon-disruption cells.\n\nAs expected the TERT KO cells experienced rapid, progressive telomere attrition (Figure 5E). Surprisingly, telomeres shortened more gradually in the TCAB1 KO clonal cell lines, followed by stable telomere length homeostasis (Figure 5F). The starting point of telomere length in TCAB1 KO clonal cell lines mirrored the amount of telomerase activity in cell extract (compare Figure 5D and Figure 5F, left panel), but after more than half a year of continuous growth, telomere lengths in all of the TCAB1 KO clonal cell lines stabilized at a few kbp shorter than telomeres in the parental cell line (Figure 5F, right panel). In comparison, telomeres in Coilin KO clonal cell lines cultured in parallel remained near the length of telomeres in the parental HCT116 cells (Figure 5G). We conclude that in HCT116 cells, neither TCAB1 nor Coilin is required for a stable telomere length homeostasis.\n\nStable telomere length maintenance in the TCAB1 KO cells with endogenous telomerase was unexpected. To determine whether this finding is general, we investigated the consequence of TCAB1 or Coilin KO in the human embryonic stem cell (hESC) line WIBR#3 (Chiba and Hockemeyer, 2015). Clonal hESC lines with TCAB1 or Coilin KO were generated using the same approach that was successful in HCT116 cells (Figure 5\u2014figure supplement 2A). As observed for HCT116 cells, hESC lines lacking TCAB1 or Coilin were viable with no evident change in cell morphology or proliferation. TCAB1 accumulated in Coilin KO cells, and Coilin accumulated in TCAB1 KO cells (Figure 5H). Neither TCAB1 KO nor Coilin KO affected telomerase activity assayed in cell extract beyond the range of clonal variation (Figure 5I and Figure 5\u2014figure supplement 2B). Coilin remained localized to Cajal bodies in TCAB1 KO cells (Figure 5\u2014figure supplement 2C). Over many months of continuous culture, hESCs lacking TCAB1 experienced very gradual telomere shortening followed by telomere length maintenance (Figure 5J). The rate of telomere shortening was slow compared to telomere shortening in TERT KO hESC (Sexton et al., 2014). The hESCs lacking Coilin retained telomere lengths comparable to the parental hESC culture (Figure 5K). Clonal hESC lines that had undergone targeting but retained the wild-type genotype also did not demonstrate telomere shortening (Figure 5J, lanes labeled wild-type).\n\nTo confirm that telomere shortening in TCAB1 KO cells was directly linked to the loss of TCAB1, we introduced a TCAB1 transgene to TCAB1 KO cells by integration at AAVS1. TCAB1 KO HCT116 cells ectopically expressing F-tagged TCAB1 regained telomere length (Figure 5\u2014figure supplement 3A,B). Likewise, TCAB1 KO hESCs ectopically expressing F-tagged TCAB1 regained telomere length (Figure 5\u2014figure supplement 3C,D). As a control for complete TCAB1 loss-of-function, we targeted the TCAB1 KO cells above, which have an exon 2 disruption shortly after the translation start codon (Figure 4A), for successful homozygous disruption of downstream exon 8 (Figure 5\u2014figure supplement 3E). Cells with homozygous disruptions of exon 2 and exon 8 showed no proliferation defect, no change in telomere length from the exon 2 KO, and no loss of Cajal bodies (Figure 5\u2014figure supplement 3F,G). Overall, based on the assays described above, we conclude that TCAB1 and Cajal bodies are not essential for hTR telomerase to maintain telomeres at a stable length homeostasis.\n\n### TCAB1 is not required for rapid telomere elongation by telomerase overexpression\n\nIn human somatic cells that remain telomerase-positive, stimulation to proliferate can be accompanied by dramatic telomerase activation and telomere length gain (Weng et al., 1997). This rapid increase in telomere length could depend on telomerase assistance by TCAB1 and/or Cajal bodies in a manner not required for maintaining length homeostasis. We therefore tested TCAB1 and Coilin KO cells for their ability to support rapid telomere elongation upon an\u00a0increase in telomerase expression, achieved by integrating transgenes for hTR and TERT overexpression at AAVS1.\n\nThe parental, TCAB1 KO, and Coilin KO HCT116 cells with integrated hTR and TERT transgenes acquired ~2-fold elevated hTR and ~5-fold elevated telomerase catalytic activity (Figure 6A). These High-Telomerase (HiT) polyclonal cell cultures had increased telomere length by the first time point after selection (Figure 6B). Telomere elongation was rapid in TCAB1 KO HiT cell cultures, reaching the limit of length discrimination almost immediately. Rapid telomere elongation in TCAB1 KO cells is consistent with telomere elongation in wild-type HeLa cells by overexpression of CAB-box-mutant hTR (Fu and Collins, 2007; Cristofari et al., 2007). In comparison, Coilin KO HiT cells had less telomere elongation (Figure 6B). These results were replicated in an independently performed HiT conversion of the same cell lines (not shown). Telomeres in both TCAB1 KO and Coilin KO cells elongated upon expression of a truncated POT1 compromised for binding to single-stranded telomeric-repeat DNA (Loayza and De Lange, 2003), expressed by transgene integration at AAVS1 (data not shown). No obvious hTR foci were detected in HCT116 HiT cells lacking TCAB1 or Coilin (Figure 6C), indicating that the hTR foci detected in HeLa cells lacking Coilin (Chen et al., 2015) are challenging to detect. We conclude that if telomerase is abundant, TCAB1 is not required to support telomerase-mediated elongation of even relatively long telomeres. Integrating all of the findings of this study, we conclude that human telomerase H/ACA RNP assembly is essential not only for the\u00a0biological stability of hTR but also for active RNP biogenesis at scarce subunit expression levels. In addition, H/ACA RNP assembly gives endogenous-level hESC telomerase the ability to maintain long telomeres. Remarkably, all of these H/ACA RNP assembly roles can be bypassed using hTRmin (Figure 7). This plasticity of telomerase RNP biogenesis and holoenzyme composition informs mechanisms of telomerase diversification across eukaryotes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunoblot, northern blot, and QTRAP characterization of TCAB1 KO and COIL KO HCT116 cells overexpressing hTR and TERT at AAVS1 (HiT). QTRAP values were normalized to parental HCT116 (n\u00a0=\u00a03). (B) Time course of TRF in the HiT HCT116 TCAB1 KO and COIL KO cell cultures polyclonal following HiT transgene introduction. Days post-targeting refers to HiT transgene introduction. The lanes labeled 'con' are the indicated cell line without HiT transgene introduction. (C) FISH for hTR localization in HiT HCT116 cell lines.\n\n## Discussion\n\nTelomerase holoenzymes from different eukaryotes share the cellular requisites of stable RNP biogenesis and active RNP recruitment to telomeres in S-phase, but the mechanisms that underlie these requirements for telomerase function vary greatly (Egan and Collins, 2012a). We set out to uncover the rationale for a\u00a0vertebrate telomerase evolutionary gain of H/ACA RNP biogenesis. H/ACA RNP biogenesis confers hTR biological stability, but across eukaryotes, telomerase RNA stability can be conferred by diverse other RNP assembly pathways. To bypass the essential role of H/ACA proteins in hTR cellular stability, we designed hTRmin RNAs containing the activity-essential hTR motifs and a 3\u2019 triplex structure but not an H/ACA motif. Although hTRmin did not bind H/ACA proteins or TCAB1, it did assemble catalytically active telomerase. The opposite TER redesign strategy was used to test the significance of the relative positioning of a large number of holoenzyme protein binding motifs in S. cerevisiae TLC1 (Zappulla et al., 2005). S. cerevisiae Mini-T retains all of the holoenzyme protein interactions but condenses the length of spacing between them (Zappulla et al., 2005).\n\nInitially we expected the biological function of hTRmin-TERT RNPs to require tethering to Cajal bodies or telomeres. Instead, hTRmin-TERT RNPs supported stable telomere maintenance without any supplementary trafficking instructions (Figure 7, left). Therefore, most telomerase holoenzyme proteins may serve indirect roles in telomerase function that are readily adapted to evolutionary divergence of nuclear architecture and its cell cycle regulation. Other than hTR biological stability, the contributions of H/ACA RNP assembly, TCAB1, and Cajal bodies to endogenous human telomerase function could all be accounted for by changes in subunit and RNP distribution within the nucleus (Figure 7, right).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18221/elife-18221-fig7-v2.jpg)\n\n**Figure 7.:** At left, hTRmin telomerase assembles and acts at telomeres without supplemental trafficking instructions. At right, endogenous hTR and TERT are trafficked for their assembly and for telomerase action at telomeres.\n\nStudies here point to stabilization and efficient interaction of low-abundance telomerase subunits as a main rationale for the vertebrate telomerase H/ACA RNP biogenesis pathway. Cellular assembly of minimized hTRmin into catalytically active telomerase RNP required a higher than endogenous expression level of TERT. One simple model for this influence would be that H/ACA RNP biogenesis directs trafficking of assembly-competent hTR to meet assembly-competent TERT. Based on the cell cycle regulation of human telomerase subunit synthesis and subunit exchange in assembled RNPs, we have suggested that active RNP assembly may occur with only newly synthesized TERT and/or hTR subunits prior to their steady-state distribution (Vogan and Collins, 2015). Newly synthesized subunits could meet in Cajal bodies, as pre-mature hTR transits to acquire 5' cap trimethylation, or in nucleoli. Additional non-exclusive possibilities for cellular role(s) of hTR H/ACA RNP assembly in active RNP biogenesis include hTR folding, which would parallel the precedent from ciliate telomerase biogenesis (Stone et al., 2007), and/or exclusion of non-productive hTR-protein interactions.\n\nIn both HCT116 cells and hESCs, TCAB1 KO led to telomere shortening followed by telomere length homeostasis. As one model to account for these results, TCAB1 could influence the subnuclear distribution of active RNP between nucleoli and nucleoplasm (Figure 7, right). This change in distribution would have different influence on the amount of new telomeric repeat synthesis depending on telomerase expression level and other variables across human cell types. Of note, we have not ruled out an influence of TCAB1 related to its proposed function in DNA damage repair (Henriksson and Farnebo, 2015). However, in studies here it is striking that TCAB1 KO affected telomere length only in cells with hTR telomerase, not in cells with hTRmin telomerase. Therefore, TCAB1 functions directly related to active telomerase assembly and trafficking are more logical hypotheses.\n\nConsistent with a contemporary study of Coilin KO in HeLa cells (Chen et al., 2015), we found that Coilin KO in HCT116 cells or in hESCs was permissive for stable telomere length maintenance. Coilin KO clonal cell lines generated in this work had telomere lengths similar to the parental cell lines. Because Coilin KO cells with endogenous telomerase levels have apparently unperturbed telomere length homeostasis, we suggest that they will be useful for visually tracking telomerase interactions with telomeres without the complication of Cajal body clustering of active with inactive hTR. Curiously, Coilin KO HCT116 cells had dampened telomere elongation upon an increase in telomerase expression. This could reflect less synergistic telomerase RNP loading on telomeres. Alternately, Cajal bodies could coordinate telomerase with other factors important for telomere synthesis, or they could safeguard telomere integrity. Our results support a paradigm of nuclear bodies as zones that draw factors together to fine-tune the likelihood of their physical association or functional cooperation rather than their interaction or reaction specificity.\n\nPrevious studies did not anticipate the genetic consequences of TCAB1 and Coilin KOs. For example, opposite the impact of TCAB1 and Coilin KOs on telomere lengths described above, previous studies found that endogenous hTR colocalization with telomeres was reduced more by Coilin depletion than TCAB1 depletion and overexpressed hTR colocalization with telomeres was reduced more by TCAB1 depletion than by Coilin depletion (Zhong et al., 2012; Stern et al., 2012). Also, TCAB1 mutations result in severe DC (Zhong et al., 2011; Armanios and Blackburn, 2012). We suggest that TCAB1 mutations reduce telomere length in early human development and in somatic cells with long telomeres. Overall, insights from this work inform strategies of therapy for human disease.\n\n## Materials and methods\n\n### Cell culture\n\nHCT116, 293T, VA-13, and U2OS cells were cultured in DMEM with GlutaMAX (Thermo,\u00a0Waltham,\u00a0MA) supplemented with 10% FBS and 100 \u00b5g/ml Primocin (Invivogen, San Diego, CA). HCT116 cells were obtained from the Molecular and Cell Biology Department tissue culture facility (UC Berkeley). The 293T, VA-13, and U2OS cell lines are long-term Collins lab stocks. The hESC line WIBR#3 (NIH stem cell registry #0079, originating at the Whitehead Institute for Biomedical Research) was maintained on inactivated mouse embryonic fibroblasts in DMEM/F12 under conditions previously described (Chiba and Hockemeyer, 2015). None of the cell lines have been authenticated recently at the genome sequence level, but all have the expected cell morphology and doubling time. HCT116 and hESC cell lines were tested for mycoplasma. Transient transfection, was performed using calcium phosphate or Lipofectamine 2000 (Thermo).\n\n### Northern blots\n\nRNA was purified using TRIzol (Thermo) and resuspended in distilled water. Concentration was determined by absorbance at 260 nm. Formamide loading buffer was added to RNA samples, followed by heat denaturation at 95\u00b0C for 1\u2009min and ice for 5\u2009min before loading on a denaturing gel (5% of 19:1 acrylamide:bis-acrylamide, 0.6X TBE, 32% formamide, and 5.6\u2009M urea). Following electrophoresis, RNA was transferred to nylon membrane by electroblotting. RNA was then UV crosslinked and the membrane was blocked in Church's buffer (1% BSA, 1\u2009mM EDTA, 0.5\u2009M NaP04, 7% SDS) with 15% formamide at 50\u00b0C. 32P-labeled, 2'O-methyl RNA probe complementary to the hTR template region was then added (Fu and Collins, 2003). In some experiments, 32P-labeled DNA oligonucleotides complementary to regions in the hTR pseudoknot (5'-TAGAATGAACGGTGGAAGGCGGCAGGCCGAGGCT-3') and hTR CR4/5 (5'-TCGCGGTGGCAGTGGGTGCCTCCGGAGAAGCCC-3') were also added to enhance signal detection. Membranes were hybridized overnight at 50\u00b0C, followed by extensive washing with 1X SSC + 0.1% SDS at 50\u00b0C. Blots were then exposed on phosphorimager screens and subsequently scanned on a Typhoon (GE Healthcare,\u00a0Chicago,\u00a0IL). Scans were processed using ImageJ software (NIH). The Northern blot loading control (LC) is a non-specifically detected cellular RNA.\n\n### Immunoblots\n\nProtein was resolved in 10% Bis-Tris SDS-PAGE gels in MOPS buffer (250\u2009mM MOPS pH 7.0, 250\u2009mM Tris, 5\u2009mM EDTA, 0.5% SDS) before being transferred to nitrocellulose membrane. The membranes were then blocked in immunoblot buffer consisting of 4% nonfat milk (Carnation) in TBS buffer (150\u2009mM NaCl, 50\u2009mM Tris pH 7.5). Membranes were then incubated with primary antibodies diluted in immunoblot buffer at 4\u00b0C overnight. After primary antibody incubation, membranes were washed extensively in TBS, followed by secondary antibody incubation in immunoblot buffer for 1\u2009hr at room temperature. After washing in TBS, blots were scanned using a LI-COR Odyssey imager. Immunoblot primary antibodies included mouse anti-tubulin (1:500, DM1A, Calbiochem,\u00a0Billerica,\u00a0MA), mouse anti-FLAG (1:4,000, F1804, Sigma), rabbit anti-TCAB1 (1:2000, NB100-68252, Novus Biologicals,\u00a0Littleton, CO), mouse anti-Coilin (1:250, IH10, Abcam, Cambridge, United Kingdom), and mouse anti-TERT (1:2000 (Wu et al., 2015)). Secondary antibodies included goat anti-mouse Alexa Fluor 680 (1:2000, Life Technologies,\u00a0Carlsbad,\u00a0CA) and goat anti-rabbit IR Dye 800 (1:10,000, Rockland Immunochemicals,\u00a0Pottstown, PA).\n\n### Immunopurification\n\nHLB150 buffer (20\u2009mM HEPES pH 8.0, 2\u2009mM MgCl2, 0.2\u2009mM EGTA, 10% glycerol, 1\u2009mM DTT, 0.1% Igepal, Sigma protease inhibitor cocktail, 150\u2009mM NaCl) was used throughout. Samples were normalized to 2 mg/ml and 200 \u00b5l was incubated at 4\u00b0C for 1\u20132\u2009hr with 4 \u00b5l magnetic anti-FLAG M2 beads (Sigma) or 4 \u00b5l magnetic Protein A/G beads (BioTool,\u00a0Houston,\u00a0TX) pre-bound with antibody against TCAB1 (Novus Biologicals), antibody against FLAG (Sigma), or rabbit IgG (Sigma). After binding and washing, the beads were resuspended in 20 \u00b5l HLB150 buffer. For hotTRAP, the resuspended beads were diluted 1:10 in HLB150, and 2 \u00b5l of the diluted sample was used per hotTRAP reaction. For Northern blot analysis, the washed beads were processed with TRIzol (Thermo).\n\n### Microscopy\n\nLive cell imaging was performed on a Zeiss Axio Observer A1 with a 40X phase contrast objective. For RNA and protein localization, cells were fixed in 4% paraformaldehyde for 10\u2009min at room temperature. Cells were then washed with PBS twice, before additional fixation and permeabilization with 100% methanol for 10\u2009min at room temperature. For RNA FISH, the methanol was aspirated and RNA probes in RNA FISH buffer were directly added to cells. Detection of hTR and hTRmin used Cy3-labeled RNA probes complementary to the template, pseudoknot, and CR4/5 spanning hTR nt 36\u201370, 129\u2013162, and 249\u2013281, respectively. Ten ng of each probe was diluted in RNA FISH buffer consisting of 2X SSC, 10% formamide, and 10% dextran sulfate. Probes were incubated with samples overnight at 37\u00b0C in a humidified chamber. Samples were then washed 6 times with 2X SSC before being mounted on coverslips using ProLong Gold with DAPI (Thermo). For immunofluorescence, cells were washed three times in PBS following methanol incubation and then rehydrated and blocked in 4% BSA in PBS for 1\u2009hr at room temperature or overnight at 4\u00b0C. Primary antibodies diluted in 4% BSA in PBS were then added and incubated with samples for 1\u2009hr at room temperature. Primary antibodies used included rabbit anti-TCAB1 (1:300, NB100-68252, Novus Biologicals), mouse anti-Coilin (1:250, IH10, Abcam), and mouse anti-SMN (1:300, sc-15320, Santa Cruz Biotechnology, Santa Cruz, CA). After washing in PBS, samples were incubated with Alexa Fluor 488 or Alexa Fluor 568 (Thermo) secondary antibodies diluted in 4% BSA in PBS for 1\u2009hr at room temperature. Samples were then washed in PBS and mounted on coverslips using ProLong Gold with DAPI. Images were acquired using a Zeiss LSM510 Meta confocal microscope with a \u00d7100/1.49 Apo objective, with 364-, 488-, and/or 543-nm laser excitation.\n\n### Telomerase activity assays\n\nCell extract was prepared by hypotonic freeze thaw lysis and salt extraction. Primer extension and hotTRAP were performed as previously described (Sexton et al., 2014). Unless otherwise noted, 200 ng total protein was used per hotTRAP or QTRAP reaction, quantified using the Bio-Rad protein assay. An internal control (IC) to normalize PCR amplification was always included in hotTRAP assays. QTRAP used the iTaq universal SYBR green Supermix (Bio-Rad) and a CFX96 Touch Real-Time PCR Detection System (Bio-Rad,\u00a0Hercules,\u00a0CA) as previously described (Vogan and Collins, 2015). Relative telomerase activity measured by QTRAP was calculated by delta Ct to a reference sample. All error bars shown are standard error of the mean and statistical significance was calculated using ANOVA with Tukey\u2019s multiple comparison test in GraphPad Prism 6.\n\n### Genome engineering\n\nSingle-guide RNA sequences for Cas9 targeting of protein coding genes were designed for selection cassette insertion downstream of the start codon. Optimal guide sequences were generated using the CRISPR Design tool (http://crispr.mit.edu/). Guide sequences were then inserted into the PX330 plasmid (Cong et al., 2013). TERC guide sequence, followed by the PAM: 5\u2019-TTCAGCGGGCGGAAAAGCCT CGG-3'. TCAB1 exon 2 guide sequence, followed by the PAM: 5'-TTTATTCATCGGGGAAGCGT GGG-3'. TCAB1 exon 8 guide sequence, followed by the PAM: 5\u2019-TGAGAAGAAGCGGTTGCCAT CGG-3\u2019. COIL exon 1 guide sequence, followed by the PAM: 5'-AAGCCGTAGCCTAACCGTCT CGG-3'. Donor plasmid constructs were designed by flanking a puromycin resistance cassette or a hygromycin resistance cassette with sequence 500\u2013600 bp upstream and downstream of the genomic DNA cut site. The TCAB1 targeting sites do not overlap with the upstream p53 gene.\n\nZinc-finger nuclease (ZFN) mediated disruption of the TERT gene and transgene integration at AAVS1 have been previously described (Sexton et al., 2014). For the\u00a0disruption of TERT gene exon 1, a donor plasmid carrying a hygromycin resistance cassette flanked by homology arms of approximately 500 bp upstream and downstream of the cut site was transfected with plasmids expressing the TERT-targeting ZFN. For AAVS1 transgene integration, donor plasmids carrying the transgene(s) with an upstream neomycin or puromycin resistance cassette, together flanked AAVS1 homology arms, were transfected with plasmids expressing the AAVS1-targeting ZFN.\n\nGenome engineering in HCT116 cells was performed by Lipofectamine 3000 transfection according to manufacturer guidelines (Thermo) using a 2:1 ratio of donor plasmid to nuclease plasmid. HCT116 cell lines were selected with 300 \u00b5g/ml hygromycin, 1 \u00b5g/ml puromycin, or 300 \u00b5g/ml G418. hESC gene editing was performed by electroporation as previously described (Sexton et al., 2014; Chiba and Hockemeyer, 2015).\n\n### Lentiviral transduction\n\nLentivirus was produced in 293T cells by calcium phosphate transfection with the packaging plasmid, psPAX2, the envelope plasmid, pMD2.G, and with transgene constructs in the DUET011 backbone (Zhou et al., 2007). Cell transfection media was replaced at 24\u2009hr post-transfection and virus was harvested 48\u2009hr post-transfection. Virus-containing media was applied to HCT116 cells in the presence of 5 \u00b5g/ml polybrene (Sigma) for 24\u2009hr before a media change. At 48\u2009hr post-infection, transduced cells were selected with 300 \u00b5g/ml hygromycin.\n\n### PCR genotyping\n\nGenomic DNA was prepared as described above for telomere restriction fragment analysis. Between 50\u2013100 ng of genomic DNA was used as the template for PCR using the Q5 polymerase (NEB,\u00a0Ipswich,\u00a0MA). For PCR confirmation of gene editing, PCR primers were designed to generate amplicon size differences between loci with or without a drug resistance cassette. Paired PCR primers complementary to genomic loci had one primer complementary to a region also in the donor plasmid and the other primer complementary to a region beyond the donor plasmid homology. A third primer against either the hygromycin or puromycin resistance cassette was included that would generate an amplicon size for cassette-containing alleles that was either smaller or larger than amplicons from alleles lacking the cassette.\n\nFor TCAB1 exon 2 and Coilin exon 1 PCRs, a hygromycin cassette primer (PGK hygro: 5'-AGGCTGATCAGCGGTTTAAACTTAGCCTCCCCTACCCGGTAGAATTC-3'; or hygro pA: 5\u2019-CTAGTGGATCCGAGCTCGGTACCAGATGCGGTGGGCTCTATGGC-3\u2019) was paired with the following locus-specific primers:\n\nCoil_FWD: 5'-TAGTGGATCCGAGCTCGGTACCACCACTGCTCCTGGCCTCTAGTTAC-3', Coil_REV: 5'-AGGCTGATCAGCGGTTTAAACTTAAGAACTGAAGCCGAAGCGCTGG-3', TCAB_FWD1: 5'-CTAGTGGATCCGAGCTCGGTACCAGGAAGGCTTTCCGTAATATCACACCCTAACG-3', and TCAB_REV1: 5'-AGGCTGATCAGCGGTTTAAACTTACAGAAAGTTCTTGCTCCTCGATTCGAGGACTC-3'. An alternative set of TCAB1 locus primers was also used for additional validation of the lines: TCAB1_FWD2: 5\u2019-CTAGTGGATCCGAGCTCGGTACCAGCGGTGCTAAGGAACACAGTGCTTTCAAAAG-3\u2019, and TCAB1_REV2: 5\u2019-AGGCTGATCAGCGGTTTAAACTTAGGCATCCCTCTCCTAGAAAACTGG-3\u2019.\n\nFor TCAB1 exon 8 PCR, a primer against the puromycin resistance cassette (PGK_PURO: 5\u2019-GGCGCACCGTGGGCTTGTACTCGGTCATGGTGGCGGGATGCAGGT CGAAAGGCCCG-3\u2019) was combined with two loci primers (TCAB1_ex8_FWD: 5\u2019-CCAAGGCCAACCAGCTGGTCAAAGGACTGCTTC-3\u2019, and TCAB1_ex8_REV:5\u2019-CTCAGCATCCTGGAGACAAGGAACAGGACCTGGAGT-3\u2019). For TERT locus PCR, another primer against the hygromycin cassette was used (TERT_hygro: 5'-CTCACCGCGACGTCTGTCGAGAAG-3') with the following locus-specific primers: TERT_FWD 5'-CTAGTGGATCCGAGCTCGGTACCAGCGGCGCGAGTTTCAGGCAG-3', and TERT_REV 5'-AGGCTGATCAGCGGTTTAAACTTAAACGGCAGACTTCGGCTGGCAC-3'.\n\nFor TERC locus PCR, a puromycin resistance cassette primer (5\u2019-TGAAGCCGAGCCGCTCGTAGAA-3\u2019) was combined with locus-specific primers: hTR_FWD 5\u2019-GTGGATCCGAGCTCGGTACCACCCACTGAGCCGAGACAAGATTC-3\u2019 and hTR_REV 5\u2019-GAAAGCGAACTGCATGTGTGAGCCG-3\u2019. Some primers had 5\u2019 regions complementary to the pcDNA3.1 vector to facilitate cloning, for which DNA was gel-excised, purified, and ligated into pcDNA3.1 (Thermo). DH5a cells were then transformed and several colonies were sequenced.\n\n### Southern blots\n\nCell pellets were lysed in RIPA buffer (150\u2009mM NaCl, 50\u2009mM Tris at pH 7.5, 1\u2009mM EDTA, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS, 1\u2009mM DTT), treated with RNase A for 30\u2009min at 37\u00b0C, followed by proteinase K treatment for 4\u2009hr to overnight at 50\u00b0C. DNA was then purified using phenol-isoamyl alcohol-chloroform, followed by precipitation with isopropanol and NaCl. After pelleting, the DNA was washed twice with ethanol and resuspended in TE buffer (10\u2009mM Tris, 1\u2009mM EDTA). DNA concentration was determined by absorbance at 260 nm. Two to 8 \u00b5g of DNA was then digested with MboI and AluI for 6\u2009hr to overnight before electrophoresis in a 0.7% agarose gel in 1X TAE. The agarose gel was then vacuum dried at 50\u00b0C for 1\u2009hr. The dried gel was then denatured with 0.5\u2009N NaOH, 1.5\u2009M NaCl for 30\u2009min at 50\u00b0C. The gel was washed twice with 4X SSC + 0.1% SDS and subsequently blocked with Church's buffer for 30\u2009min at 50\u00b0C. 32P-end-labeled telomeric repeat probe (T2AG3)3 and 32P-labeled probe made by random-priming of HinDIII lambda phage digest ladder (NEB) and/or the O'generuler 1 kbp plus DNA ladder (Thermo) were added. Probes were hybridized overnight at 50\u00b0C. The membrane was then extensively washed in 4X SSC + 0.1% SDS at 40\u00b0C before screen exposure and imaging on a Typhoon scanner (GE Healthcare).\n",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b6d6b808-da60-4d31-a54c-2012d302bd7e",
+      "submission_id": "16d26bb2-f660-4ec8-87e7-5fe95fb44f1d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carol Greider, Johns Hopkins University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18221.017](https://doi.org/10.7554/eLife.18221.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Streamlined human telomerases maintain telomeres and reveal endogenous roles of H/ACA proteins, TCAB1, and Cajal bodies\" for consideration by eLife. Your article has been favorably evaluated by James Manley (Senior editor) and three reviewers, one of whom, Carol Greider (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Jonathan Alder (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We hope you will be able to submit the revised version within two months, so please let us know if you have any questions first.\n\nThis manuscript by Vogan et al. provides strong evidence that a minimal telomerase RNA functions to elongate telomere in vivo in human cells. Recognizing that over evolution, telomerase RNAs in different species have acquired different 3' ends, the author test whether the box H/ACA 3' region of hTR is needed for telomerase to function at telomeres. They demonstrate that the H/ACA-interacting regions of hTR are dispensable if modifications are made to stabilize the RNA. The authors use the cleaver trick of putting an alternative stable 3' end from the MALAT1 triplex structure on the 3' end of hTR and find that when expression levels are sufficiently high, this minimal hTR functions to elongate telomeres in transformed human cells and hES cells. They go on to test the importance of TCAB1 and Coilin in telomere length maintenance and show they are not required for telomere elongation in vivo. This paper is important because it establishes that the minimal region for the human telomerase RNA does not require the 3' region or several accessory proteins. The work expands our understanding of the roles of TCAB1 and Coilin, which have been the subject of some controversy.\n\nThe manuscript does not need additional experiments but requires additional clarification of experiments presented and should be significantly rewritten to make it clearer and more concise. In places the manuscript is a bit confusing to follow and there are a number of changes that will greatly help clarify the conclusions.\n\nSpecific scientific points:\n\n1) In the Introduction the authors should site Zappulla 2005 Nat Struct Mol Biol. 2005. This group showed that a minimal telomerase RNA also functions in yeast, and similar to what is shown here, this smaller RNA needs to be expressed at a higher level perhaps to overcome inefficient assembly. Referring to this previous work in yeast would strengthen this argument made in this manuscript as the minimal RNA requirement is conserved.\n\n2) In the second paragraph of the subsection \u201cHuman telomerase can be liberated from its H/ACA RNP identity\u201d: the description of the different version of the hTR min here is very confusing. This section should be rewritten to clarify what each construct has, and not just say 'we tested various lengths...\" Lay out each component (RNA domain) and why it is being used, and explain what the \"LeaderG means. Figure 1C shows this well, but need to write about this clearly.\n\n3) It is not clear from Figure 2 whether telomerase activity can be increased with increasing amounts of hTRmin expression (as it can be with hTR Figure 1\u2014figure supplement 1), has this been tested? Or is it only hTERT over expression that stabilizes hTRmin?\n\n4) In the fourth paragraph of the subsection \u201cCatalytically active telomerase supports telomere maintenance without H/ACA proteins or TCAB1\u201d and Figure 2F: The authors state that the hTR KO cell lines lacking active telomerase ultimately entered senescence, however no time frame or passage number is given. Ideally clonogenic survival or growth curve would be appropriate to present. Simple pictures of cells cannot demonstrate the heterogeneity in the population of cells thus Figure 2E is not needed. Showing this picture does not help the reader, better to know how long it took the cells to die. Some discussion of this heterogeneity in viability would be very helpful. Also it would be very helpful to state passage numbers or days in culture to the 'time' arrow at the bottom of 2F.\n\n5) Specifically it is important to understand whether some cells in the population continue to grow for some time? Are some cells able to escape short telomere phenotype cause by hTRmin or LhTRmin?\n\n6) In the fifth paragraph of the subsection \u201cCatalytically active telomerase supports telomere maintenance without H/ACA proteins or TCAB1\u201d: The authors state, \"curiously these clonal lines had stable but distinct set points\". I am not sure why they say 'curiously' as it is well established in the literature that the founder effect of a given telomere length sets the length distribution in the daughter cells and then the equilibrium is distributed around that founding length. This fact has been published by others in human cells and in fact was first seen in yeast (Shampay & Blackburn PNAS 1988 Jan;85(2):534-8. Generation of telomere-length heterogeneity in Saccharomyces cerevisiae).\n\n7) In Figure 3\u2014figure supplement 1A the telomere lengths in cells expressing LhTRmin increase at 79 days post-targeting. How do these kinetics of elongation compare with time of elongation for expression of hTR (only 1 time point shown in Figure 3A for hTR)? Could the level of RNA expression affect the rates of elongation?\n\n8) In Figure 3E can the authors comment on the possible sources of variable expression of F-TERT. Presumably, these constructs have been integrated into the AAVS1 safe-harbor site. Do the differences arrive from different levels of the various hTRs?\n\n9) In the third paragraph of the subsection \u201cTCAB1 and Cajal bodies contribute distinct, non-essential regulations of telomerase\u201d: As noted above, heterogeneity in set points does not necessarily have to come from variation of telomerase component levels. The founder effect can establish differences in telomere length distributions without altering the genetically determined set point equilibrium. This concept of concluding this is an altered 'set point' should be reconsidered throughout the manuscript. Their data for hTRmin function is strong, there is no need to confuse it with discussion of alterations of set point.\n\n10) In the fifth paragraph of the subsection 2TCAB1 and Cajal bodies contribute distinct, non-essential regulations of telomerase\u201d: The conclusion that TCAB1 allows cells with box H/ACA to maintain longer telomere is presented without stating what the RNA levels are. What are the hTR levels and the stability? Is there a shorter half-life of hTRmin? I do not think additional experiments are needed, however more concise conclusions would help. The longer telomeres may be due to a more stable RNA, not any function of TCAB1. This sentence/conclusion should be reworked.\n\n11) In the last paragraph of the subsection \u201cTCAB1 and Cajal bodies contribute distinct, non-essential regulations of telomerase\u201d: the conclusion that is made \"that TCAB and Cajal bodies are not needed to maintain telomeres at a stable length\" does not accurately reflect the data shown. In the figure, clearly, telomeres get longer (Figure 5\u2014figure supplement 2B and D). The authors should say something about this elongation and then make conclusion from that, before saying perhaps that minimal maintenance of telomeres does not require TCAB and Cajal bodies. But to ignore the large increase in length in the concluding sentence is dissonant with the results presented.\n\n12) In the second paragraph of the subsection \u201cTCAB1 and Coilin differentially affect telomerase ability to increase telomere length\u201d: the authors state there is \"a 5 fold elevated telomerase catalytic activity\".\n\nHowever, TRAP is measured so they should state an increase in TRAP products, as they are not measuring telomerase catalytic activity rate.\n\n13) In the second paragraph of the subsection \u201cTCAB1 and Coilin differentially affect telomerase ability to increase telomere length\u201d: The authors state, Coilin KO HiT cells exhibited much slower and dramatically blunted telomere elongation\" this statement does not reflect the data in Figure 6B. While there is some difference in telomere elongation rate in TCAB1 KO and Colin KO cells, the overwhelming effect that is seen in these gels is dramatic telomere elongation. Some statement about the significant elongation is required for the reader to understand what subtle difference the authors are pointing to between the slightly different extents of the significant elongation. The words 'dramatically blunted' do not fit the data that is shown.\n\n14) In the second paragraph of the subsection \u201cTCAB1 and Coilin differentially affect telomerase ability to increase telomere length\u201d: the authors say \"this is the first time a factor other than telomerase determine the extent of length gain\". This sentence should be removed. It is well known that altering shelterin component levels affects length equilibrium, and it has been shown by several groups that ATM kinase activity regulates telomere elongation.\n\n15) In the last paragraph of the subsection 2TCAB1 and Coilin differentially affect telomerase ability to increase telomere length\u201d: The authors conclude from Figure 6D that there is no effect of Coilin KO on the level of telomere elongation in a Pot1 DeltaOB mutant background. However, it is striking that there is a strong effect in the TCAB KO that the authors do not comment on. Comparing Figure 6B and Figure 6E, it seems there is an equal but opposite effect of TCAB and Coilin KO. There is less elongation in Figure 6B in the Coilin mutant, and in Figure 6E there is less elongation in the TCAB mutant. This is very confusing and the authors do not mention this at all. I would suggest that since the Pot1 DeltaOB mutant is not really a large part of this story, that this experiment should be removed from the manuscript. It does not add any important information and is not easy to interpret.\n",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "24b57681-6b3c-42ba-bde7-400fb7c7ff24",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C1",
+      "claim": "Human telomerase RNA (hTR) biological stability relies on H/ACA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological stability of human telomerase RNA (hTR) relies on H/ACA proteins, but other eukaryotes use other RNP assembly pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known fact about hTR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3782e2bc-f88c-4b30-98f0-ec02ed56e3f4",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C2",
+      "claim": "Other eukaryotes use RNP assembly pathways different from H/ACA proteins for telomerase RNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological stability of human telomerase RNA (hTR) relies on H/ACA proteins, but other eukaryotes use other RNP assembly pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about eukaryotic diversity in telomerase assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b1321700-6371-4326-b287-68f0b7835fb0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C3",
+      "claim": "Minimized hTR with only binding sites for TERT assembled biologically active enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, with only binding sites for telomerase reverse transcriptase (TERT), minimized hTR assembled biologically active enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "09a50daf-9a14-4e00-937f-1414594d3e23",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C4",
+      "claim": "TERT overexpression was required for cellular interaction with minimized hTR.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT overexpression was required for cellular interaction with minimized hTR, indicating that H/ACA RNP assembly enhances endogenous hTR-TERT interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing that hTRmin required TERT OE for activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "dc0a9273-7883-451d-a86f-3106d1224a1f",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C5",
+      "claim": "H/ACA RNP assembly enhances endogenous hTR-TERT interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT overexpression was required for cellular interaction with minimized hTR, indicating that H/ACA RNP assembly enhances endogenous hTR-TERT interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that TERT OE was required for hTRmin but not for wild-type hTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b3098464-abf4-4e3a-abe4-0532b19da782",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C6",
+      "claim": "Telomere maintenance by minimized telomerase was unaffected by elimination of TCAB1.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere maintenance by minimized telomerase was unaffected by the elimination of the telomerase holoenzyme Cajal body chaperone TCAB1 or the Cajal body scaffold protein Coilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing stable telomere length in TCAB1 KO cells with hTRmin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "694a8c7e-2495-42a0-9375-5d4199cd13f4",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C7",
+      "claim": "Telomere maintenance by minimized telomerase was unaffected by elimination of Coilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere maintenance by minimized telomerase was unaffected by the elimination of the telomerase holoenzyme Cajal body chaperone TCAB1 or the Cajal body scaffold protein Coilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing stable telomere length in Coilin KO cells with hTRmin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "cd5771f3-d5dd-4d51-b092-f7befc8b67e0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C8",
+      "claim": "Wild-type hTR maintained and elongated telomeres in TCAB1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, wild-type hTR also maintained and elongated telomeres in TCAB1 or Coilin knockout cells, with distinct changes in telomerase action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing telomere maintenance in TCAB1 KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3d45ed0b-5cb9-4235-ab3d-7ed06eadcdcb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C9",
+      "claim": "Wild-type hTR maintained and elongated telomeres in Coilin knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, wild-type hTR also maintained and elongated telomeres in TCAB1 or Coilin knockout cells, with distinct changes in telomerase action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing telomere maintenance in Coilin KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b94b0555-7e0c-47d2-b2fa-51fb80a36bfa",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C10",
+      "claim": "Eukaryotic chromosome stability relies on end-protective telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic chromosome stability relies on end-protective telomeres (Arnoult and Karlseder, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f8ac30d6-f85a-4604-8df4-213718f1eec9",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C11",
+      "claim": "End-protective telomeric chromatin assembles on a tract of simple-sequence DNA repeats in most organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In most organisms, end-protective telomeric chromatin assembles on a tract of simple-sequence DNA repeats (de Lange, 2010), for example the human repeat of TTAGGG on the strand with 3'OH terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "a0c97057-13c1-4d8d-ad09-93297614d727",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C12",
+      "claim": "The human telomeric repeat is TTAGGG on the strand with 3'OH terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In most organisms, end-protective telomeric chromatin assembles on a tract of simple-sequence DNA repeats (de Lange, 2010), for example the human repeat of TTAGGG on the strand with 3'OH terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human telomeres.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "00f4f2ae-29b7-4bd1-8e51-5eba7d180dcf",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C13",
+      "claim": "Maintenance of telomeric repeat array requires de novo repeat synthesis by telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of this telomeric repeat array requires de novo repeat synthesis by the ribonucleoprotein (RNP) reverse transcriptase telomerase to balance the repeat erosion inherent in DNA-dependent DNA-polymerase replication of the genome (Blackburn et al., 2006; Hug and Lingner, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3c028718-31ae-4822-8ab6-89ce48167442",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C14",
+      "claim": "Telomerase extends chromosome 3' ends by copying a template within the telomerase RNA subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomerase extends chromosome 3' ends by copying a template within the telomerase RNA subunit (hTR in human cells), using an active site in the telomerase reverse transcriptase protein (TERT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomerase mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "ee2174ff-bc97-4be8-b29e-b22e8744aac0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C15",
+      "claim": "Ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways, which are directed by telomerase RNA interaction with a La-motif protein, Sm proteins, or H/ACA proteins, respectively (Egan and Collins, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "002a9a26-1447-4b94-b03b-76f4926fe7a5",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C16",
+      "claim": "Ciliate telomerase RNP biogenesis is directed by telomerase RNA interaction with a La-motif protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways, which are directed by telomerase RNA interaction with a La-motif protein, Sm proteins, or H/ACA proteins, respectively (Egan and Collins, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "49025ca0-61b7-4735-8a72-468ed767b79d",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C17",
+      "claim": "Fungal telomerase RNP biogenesis is directed by telomerase RNA interaction with Sm proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways, which are directed by telomerase RNA interaction with a La-motif protein, Sm proteins, or H/ACA proteins, respectively (Egan and Collins, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "44c3d88f-cb2b-4e2d-b1ab-c61a59644b68",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C18",
+      "claim": "Vertebrate telomerase RNP biogenesis is directed by telomerase RNA interaction with H/ACA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, ciliate, fungal, and vertebrate telomerases follow entirely different RNP biogenesis pathways, which are directed by telomerase RNA interaction with a La-motif protein, Sm proteins, or H/ACA proteins, respectively (Egan and Collins, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "dc8d872d-4374-437a-af24-ced8ead561da",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C19",
+      "claim": "Human telomerase shares the same mature H/ACA proteins (dyskerin, NHP2, NOP10, GAR1) as intron-encoded small nucleolar or small Cajal body RNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, telomerase shares the same mature H/ACA proteins (dyskerin, NHP2, NOP10, GAR1) and H/ACA RNP biogenesis chaperones as the intron-encoded small nucleolar (sno) or small Cajal body (sca) RNPs that catalyze cleavage and pseudouridylation of ribosomal and small nuclear RNAs (Kiss et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "906357f4-23b1-426a-9de4-faaf8b7d6165",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C20",
+      "claim": "Precursor hTR is released from its site of synthesis as an autonomous transcript rather than the spliced intron lariat of other human H/ACA RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because precursor hTR is released from its site of synthesis as an autonomous transcript rather than the spliced intron lariat of other human H/ACA RNAs, it is sensitized to degradation in dyskeratosis congenita (DC) patient cells with a mutation of an H/ACA protein (Egan and Collins, 2012b; Armanios and Blackburn, 2012; Sarek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3ee307f3-ccc7-443e-9631-214fb6d7cab1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C21",
+      "claim": "hTR is sensitized to degradation in dyskeratosis congenita patient cells with a mutation of an H/ACA protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Because precursor hTR is released from its site of synthesis as an autonomous transcript rather than the spliced intron lariat of other human H/ACA RNAs, it is sensitized to degradation in dyskeratosis congenita (DC) patient cells with a mutation of an H/ACA protein (Egan and Collins, 2012b; Armanios and Blackburn, 2012; Sarek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c33c2217-0666-4eda-ad83-804c69756466",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C22",
+      "claim": "hTR requires a 5' trimethylguanosine cap to prevent 5'-3' exonuclease processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, unlike other H/ACA RNAs, hTR requires a 5' trimethylguanosine cap to prevent 5'-3' exonuclease processing (Mitchell et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "34bec53d-2c8f-4175-8363-762bce0e9460",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C23",
+      "claim": "RNP trafficking from nucleoli to steady-state concentration in Cajal bodies depends on the binding of TCAB1 to an hTR 3' stem-loop CAB-box motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent RNP trafficking from nucleoli to steady-state concentration in Cajal bodies depends on the binding of the Cajal body chaperone and telomerase holoenzyme protein TCAB1/WDR79/WRAP53\u03b2 to an hTR 3' stem-loop CAB-box motif (Venteicher et al., 2009; Tycowski et al., 2009; Zhong et al., 2011), which is present in both stem-loops of an H/ACA scaRNA (Kiss et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "5bff014f-eb07-4ffc-b5d7-28822af31edc",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C24",
+      "claim": "Transient telomere colocalization with a Cajal body can be detected in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient telomere colocalization with a Cajal body can be detected in S-phase, when telomerase acts at chromosome ends (J\u00e1dy et al., 2006; Tomlinson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "9e557b4e-8f2a-4aae-9c30-81a67c2c6bf2",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C25",
+      "claim": "Telomerase acts at chromosome ends in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient telomere colocalization with a Cajal body can be detected in S-phase, when telomerase acts at chromosome ends (J\u00e1dy et al., 2006; Tomlinson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "6955c612-171d-40e4-b830-e789ee1ef2eb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C26",
+      "claim": "TCAB1 or Coilin depletion using RNA interference reduced or eliminated hTR colocalization with telomeres and induced telomere shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for Cajal body delivery of telomerase to telomeres builds from studies depleting TCAB1 or Coilin using RNA interference, which reduced or eliminated hTR colocalization with telomeres and induced telomere shortening (Venteicher et al., 2009; Zhong et al., 2011; Stern et al., 2012; Zhong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "0fde5da8-c824-416f-a672-087dc7acc952",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C27",
+      "claim": "DC patient cells with biallelic TCAB1 mutations have short telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "DC patient cells with biallelic TCAB1 mutations have short telomeres and fail to maintain telomere length even with the up-regulated telomerase expression in induced pluripotent cells (Batista et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "83be4e2d-07ed-448c-aad6-4ef664954428",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C28",
+      "claim": "DC patient cells with biallelic TCAB1 mutations fail to maintain telomere length even with up-regulated telomerase expression in induced pluripotent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DC patient cells with biallelic TCAB1 mutations have short telomeres and fail to maintain telomere length even with the up-regulated telomerase expression in induced pluripotent cells (Batista et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "99bb7242-3fa7-4763-9720-29ae9c7bb1aa",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C29",
+      "claim": "Mouse telomerase RNA does not localize to Cajal bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "With all of this experimental support for Cajal body delivery of human telomerase to telomeres, it is puzzling that mouse telomerase RNA does not localize to Cajal bodies (Tomlinson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7acee425-b7d8-4ad5-b461-0ce788749a23",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C30",
+      "claim": "Coilin gene knock-out in HeLa cells generated two clonal cell lines that maintained telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, recently, Coilin gene knock-out (KO) in HeLa cells generated two clonal cell lines that maintained telomeres (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7f05d58d-1a6e-482c-8662-e66467ae9c23",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C31",
+      "claim": "hTRmin containing only binding sites for TERT can assemble active RNP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that a minimal hTR (hTRmin) containing only binding sites for TERT can assemble active RNP in cells, and this active RNP can maintain stable telomere length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "548fd7b4-8325-4c25-9e1f-573a82219417",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C32",
+      "claim": "hTRmin active RNP can maintain stable telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that a minimal hTR (hTRmin) containing only binding sites for TERT can assemble active RNP in cells, and this active RNP can maintain stable telomere length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing stable telomere lengths over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "17398604-be9b-4e07-9efb-817c392cd056",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C33",
+      "claim": "hTR H/ACA RNP assembly enhances TERT interaction at scarce endogenous telomerase subunit levels.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT overexpression was required for cellular assembly with hTRmin, suggesting that hTR H/ACA RNP assembly enhances TERT interaction at scarce endogenous telomerase subunit levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that TERT OE was required for hTRmin but not for wild-type hTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "a0895ede-da12-4f1b-adee-8e52648428f8",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C34",
+      "claim": "KO of TCAB1 or Coilin did not alter hTRmin RNP function at telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "KO of TCAB1 or Coilin did not alter hTRmin RNP function at telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing stable telomere maintenance in KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "2312d234-b882-4388-a97f-f93dbfa82921",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C35",
+      "claim": "TCAB1 KO was permissive for hTR telomerase to maintain telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TCAB1 KO or Coilin KO was also permissive for hTR telomerase to maintain telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing telomere maintenance in TCAB1 KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b94a7689-8287-4d7e-bb9e-e3ac0119d490",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C36",
+      "claim": "Coilin KO was permissive for hTR telomerase to maintain telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TCAB1 KO or Coilin KO was also permissive for hTR telomerase to maintain telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing telomere maintenance in Coilin KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c7b20670-87db-4490-8422-797d9ea94136",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C37",
+      "claim": "In cancer and pluripotent stem cell lines with endogenous hTR and TERT expression, TCAB1 KO resulted in a slow decline of telomere length followed by stable telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer and pluripotent stem cell lines with endogenous hTR and TERT expression, TCAB1 KO resulted in a slow decline of telomere length followed by stable telomere length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing telomere length dynamics in TCAB1 KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "d8f458c7-a5e5-409f-9816-857dbeb3e9e1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C38",
+      "claim": "hTR assembly as H/ACA RNP is not essential aside from conferring hTR stability and facilitating active telomerase assembly in cells with scarce TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that aside from conferring hTR stability and facilitating active telomerase assembly in cells with scarce TERT, hTR assembly as H/ACA RNP is not essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with hTRmin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b80e3792-05cd-4033-89ea-fa6b0eeb39c3",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C39",
+      "claim": "Cajal body localization is not essential for hTRmin or hTR telomerase to maintain stable telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Cajal body localization is not essential for hTRmin or hTR telomerase to maintain stable telomere length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with TCAB1 and Coilin KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f9ca2ffc-cfd2-434d-a822-68d451fc9986",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C40",
+      "claim": "The H/ACA-motif 5' stem of hTR separates two hTR regions that are critical for binding of TERT and catalytic activity: the template/pseudoknot (t/PK) and conserved regions (CR) 4/5.",
+      "claim_type": "EXPLICIT",
+      "source": "The H/ACA-motif 5' stem of hTR (Figure 1A) separates two hTR regions that are critical for binding of TERT and catalytic activity: the template/pseudoknot (t/PK) and conserved regions (CR) 4/5 (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "30ac1bdc-82ee-43c1-b4db-58dc26a80b08",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C41",
+      "claim": "hTRmin in combination with TERT reconstitutes a minimized active telomerase in rabbit reticulocyte lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we joined these two regions with a spacer to create hTRmin (Figure 1B), which in combination with TERT reconstitutes a minimized active telomerase in rabbit reticulocyte lysate (Wu and Collins, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f122a933-7fbc-4761-b0d0-d68a80848238",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C42",
+      "claim": "Appending 3' processing and protection motifs from the human long non-coding RNA MALAT1 allowed cellular accumulation of hTRmin.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow cellular accumulation of hTRmin, the most successful strategy was to append 3' processing and protection motifs from the human long non-coding RNA MALAT1 (Brown et al., 2012; 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by experimental data and citations to prior work on MALAT1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7230c76b-cf79-46a5-90bc-b69921c7fa1b",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C43",
+      "claim": "Cellular hTRmin accumulation required both the RNA triplex and the RNase P site.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of hTRmin to a level detectable by Northern blot required both the RNA triplex and the RNase P site (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "e9a20f69-fd89-44ed-90a0-5b314fd1c4e0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C44",
+      "claim": "Cellular reconstitution with hTRmin yielded lower RNA accumulation and proportionally lower overall activity than reconstitution with hTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular reconstitution with hTRmin yielded lower RNA accumulation and proportionally lower overall activity than reconstitution with hTR, but hTRmin and hTR telomerase RNPs had similar profiles of repeat synthesis (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b98deb55-2df1-4e20-9409-05cfbdc68862",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C45",
+      "claim": "hTRmin and hTR telomerase RNPs had similar profiles of repeat synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular reconstitution with hTRmin yielded lower RNA accumulation and proportionally lower overall activity than reconstitution with hTR, but hTRmin and hTR telomerase RNPs had similar profiles of repeat synthesis (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "8c499159-6de9-4857-a9b9-637b41e8e8ef",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C46",
+      "claim": "TERT, dyskerin, and TCAB1 each bound hTR whereas only TERT bound LhTRmin.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, TERT, dyskerin, and TCAB1 each bound hTR whereas only TERT bound LhTRmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from immunopurification experiments shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "21dd0f31-a396-4ce9-a2e8-f87450d0a4f7",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C47",
+      "claim": "LhTRmin accumulated to a level lower than endogenous hTR when stably expressed from an integrated transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Stably expressed hTRmin was barely detectable, and even LhTRmin accumulated to a level lower than endogenous hTR (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "acc6ea80-306a-4d17-91df-557caf045d3c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C48",
+      "claim": "The MALAT1 3' processing elements do not confer as much accumulation to minimized hTR as does an embedded H/ACA RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the MALAT1 3' processing elements do not confer as much accumulation to minimized hTR as does an embedded H/ACA RNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing hTRmin and LhTRmin accumulation to endogenous hTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "2e644f64-2eba-4764-983f-95b3a3367eff",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C49",
+      "claim": "hTR concentrated in nuclear puncta while LhTRmin distributed throughout the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "While hTR concentrated in nuclear puncta as expected, LhTRmin distributed throughout the nucleoplasm (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from FISH shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "eb832580-861d-433d-bc22-a90eb4ead718",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C50",
+      "claim": "Two independent HCT116 cell lines with homozygous TERC KO lacked telomerase catalytic activity in cell extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Two independent cell lines with homozygous TERC KO were confirmed to lack telomerase catalytic activity in cell extract, as assayed by the PCR-based telomeric repeat amplification protocol performed with radiolabeled dGTP (hotTRAP) (Figure 2B and Figure 2\u2014figure supplement 1B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "4efe00e9-a2e0-445e-82a0-c74ea098b419",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C51",
+      "claim": "hTR KO clonal HCT116 cell lines initially showed no growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, these two hTR KO clonal cell lines showed no growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c87ab30e-5505-46e2-85b5-7c67188136f1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C52",
+      "claim": "Transgene expression of wild-type hTR restored telomerase catalytic activity to the hTR KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgene expression of wild-type hTR restored telomerase catalytic activity to the hTR KO cells, rescuing endogenous TERC locus disruption (Figure 2D, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "153d0499-6c50-4750-ad8e-bc7a72e29387",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C53",
+      "claim": "LhTRmin or hTRmin with TERT OE generated active telomerase in hTR KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LhTRmin or hTRmin with TERT OE did generate active telomerase (Figure 2D, lanes 7\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b6326244-bf67-40f8-bad7-0d6c4060ac74",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C54",
+      "claim": "TERT co-expression did not affect hTRmin biological accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT co-expression did not affect hTRmin biological accumulation (Figure 2D, compare lanes 4\u20135 to lanes 7\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "539fd10a-a0c9-4fbf-8059-d4f5cfc8548c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C55",
+      "claim": "hTR assembly as H/ACA RNP strongly stimulates hTR interaction with TERT when both subunits are at very low expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "From these experiments we conclude that hTR assembly as H/ACA RNP strongly stimulates hTR interaction with TERT when both subunits are at very low expression levels, but this role of H/ACA RNP assembly can be bypassed by increasing the cellular availability of TERT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that TERT OE was required for hTRmin but not for wild-type hTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "afce5274-c9d7-4646-b85e-7942684fcfc0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C56",
+      "claim": "The role of H/ACA RNP assembly in stimulating hTR-TERT interaction can be bypassed by increasing the cellular availability of TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "From these experiments we conclude that hTR assembly as H/ACA RNP strongly stimulates hTR interaction with TERT when both subunits are at very low expression levels, but this role of H/ACA RNP assembly can be bypassed by increasing the cellular availability of TERT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that TERT OE was required for hTRmin but not for wild-type hTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3568569f-7726-4ba1-8c37-23f92c21b3f6",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C57",
+      "claim": "hTR KO cell lines lacking active telomerase entered an interval of pervasive cell death at ~70 days post-targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The hTR KO cell lines lacking active telomerase ultimately entered an interval of pervasive cell death with dramatic membrane blebbing (Figure 2E, yellow arrowheads) at ~70 days post-targeting, corresponding to ~70 population doublings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and microscopy images shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c9432dc9-0bf1-4c2f-8876-57f588dcd68f",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C58",
+      "claim": "All telomerase-positive polyclonal cell cultures and clonal cell lines proliferated over many months of continuous passage with normal morphology and doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, all of the telomerase-positive polyclonal cell cultures and clonal cell lines proliferated over many months of continuous passage with normal morphology and doubling time (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "53161fc7-67a4-449c-a5c8-fe45e87f7eaf",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C59",
+      "claim": "Catalytically active hTRmin telomerase RNPs conferred indefinite cellular proliferative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the catalytically active hTRmin telomerase RNPs conferred indefinite cellular proliferative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that telomerase-positive cells proliferated indefinitely.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "e0e37601-5643-4ae1-9b04-c1e659a2a760",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C60",
+      "claim": "hTR KO cells re-expressing hTR rapidly gained telomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, hTR KO cells re-expressing hTR rapidly gained telomere length, whereas hTR KO cells expressing the negative control GFP did not (Figure 3A, lanes 1\u20133 and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "35f579d2-bbce-41ad-aac5-efa4c8c5861e",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C61",
+      "claim": "All cell cultures lacking active telomerase had short telomeres that continued to shorten until eventually all cells in the culture died.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell cultures lacking active telomerase had short telomeres that continued to shorten until eventually all cells in the culture died (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "8f871076-9437-46ef-a3e4-18b671a84f83",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C62",
+      "claim": "Clonal cell lines from hTR KO cells complemented by LhTRmin or hTRmin with TERT OE had distinct but stable telomere lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "These clonal cell lines had distinct but stable telomere lengths (Figure 3C,D and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C, 3D, and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "30c79d51-4c1b-40fb-93c1-2fb7021f87a9",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C63",
+      "claim": "All of the LhTRmin cell lines had higher steady-state RNA accumulation than the hTRmin lines.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the LhTRmin cell lines had higher steady-state RNA accumulation than the hTRmin lines (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "a9c99cd7-87b7-4173-a55b-61691bf562c0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C64",
+      "claim": "Higher telomerase activity in cell extract correlated generally but not absolutely to longer telomere length at homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher telomerase activity in cell extract correlated generally but not absolutely to longer telomere length at homeostasis (compare Figure 3F, bars to Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing Figure 3F and Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "1dfb65de-fd62-4486-96ce-0d4dd43b74b3",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C65",
+      "claim": "hTRmin telomerase RNP assembled in the stable cell lines did not have the endogenous hTR RNP interaction with TCAB1.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the hTRmin telomerase RNP assembled in the stable cell lines did not have the endogenous hTR RNP interaction with TCAB1, tested by immunopurification of TCAB1 from cell lysate and subsequent telomerase activity assay (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7cf60741-5e5f-43a4-862d-43f7e7bf943c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C66",
+      "claim": "TCAB1 KO cells retained a normal level of Coilin, and Coilin KO cells retained a normal level of TCAB1.",
+      "claim_type": "EXPLICIT",
+      "source": "TCAB1 KO cells retained a normal level of Coilin, and Coilin KO cells retained a normal level of TCAB1 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "50a00d3e-6d3a-4545-a1c7-56d86ebea567",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C67",
+      "claim": "Cells lacking TCAB1 retained Cajal bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells lacking TCAB1 retained Cajal bodies (Figure 4C), in agreement with some previous findings (Venteicher et al., 2009; Zhong et al., 2011) but contrary to others (Mahmoudi et al., 2010; Wang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b0d3fb82-9fed-4028-9715-6e8270d42940",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C68",
+      "claim": "Nuclear foci of SMN remained detectable in the TCAB1 KO cells but not Coilin KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, nuclear foci of SMN remained detectable in the TCAB1 KO cells but not Coilin KO cells (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "9acbc1f4-cfb9-4826-8c2c-f1c6ff3c6642",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C69",
+      "claim": "In HCT116 cells, TCAB1 KO did not disrupt Cajal bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in HCT116 cells, TCAB1 KO did not disrupt Cajal bodies, and Coilin KO did not induce TCAB1 degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the immunofluorescence and immunoblot data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "48e15e12-7bd2-4bbd-807f-a55449d198f5",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C70",
+      "claim": "In HCT116 cells, Coilin KO did not induce TCAB1 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in HCT116 cells, TCAB1 KO did not disrupt Cajal bodies, and Coilin KO did not induce TCAB1 degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the immunofluorescence and immunoblot data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c390b7b3-cd79-4ddf-b012-41db0eed8efd",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C71",
+      "claim": "Clonal cell lines with homozygous TCAB1 or Coilin KO retained telomerase catalytic activity in cell extract.",
+      "claim_type": "EXPLICIT",
+      "source": "These clonal cell lines retained telomerase catalytic activity in cell extract (Figure 4E) and stably maintained telomeres (Figure 4F and Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "a4164895-3a06-4787-bf2d-a2be6fabdb34",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C72",
+      "claim": "Clonal cell lines with homozygous TCAB1 or Coilin KO stably maintained telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "These clonal cell lines retained telomerase catalytic activity in cell extract (Figure 4E) and stably maintained telomeres (Figure 4F and Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4F and Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c08262eb-fd7e-4cf2-9600-f078bf722df1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C73",
+      "claim": "Neither TCAB1 KO nor Coilin KO affected cell viability, morphology, or proliferation in a readily detectable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither TCAB1 KO nor Coilin KO affected cell viability, morphology, or proliferation in a readily detectable manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "caeb9ac0-a4f1-40bb-8d56-77f2adec0beb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C74",
+      "claim": "An RNP of minimized hTRmin and TERT functions at telomeres without dependence on H/ACA RNP biogenesis or localization pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the conclusion that an RNP of minimized hTRmin and TERT functions at telomeres without dependence on H/ACA RNP biogenesis or localization pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with hTRmin in TCAB1 and Coilin KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "03028dca-4256-484e-8a8e-0ff1fd7ada06",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C75",
+      "claim": "The loss of TCAB1 or Coilin did not alter telomerase activity in cell extract by more than a few-fold extent that could be within the range of clonal variation.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of TCAB1 or Coilin did not alter telomerase activity in cell extract by more than a few-fold extent that could be within the range of clonal variation (Figure 5D and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D and Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7b186c97-a700-42b8-98f8-0d9a650f20de",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C76",
+      "claim": "HCT116 cells with TCAB1 KO or Coilin KO showed no change in growth rate, cell viability, or morphology over more than half a year of continuous culture.",
+      "claim_type": "EXPLICIT",
+      "source": "HCT116 cells with TCAB1 KO or Coilin KO showed no change in growth rate, cell viability, or morphology over more than half a year of continuous culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "33533132-45c1-4fcc-b7ce-21e3517f865c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C77",
+      "claim": "TERT KO HCT116 cells underwent cell death at ~70 days after targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the TERT KO cells underwent cell death at ~70 days after targeting, paralleling the fate of the hTR KO HCT116 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "2d63ccde-931d-4ba8-8770-044d4ae3345d",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C78",
+      "claim": "TERT KO cells experienced rapid, progressive telomere attrition.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected the TERT KO cells experienced rapid, progressive telomere attrition (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "478f8b4a-72d0-437b-afa0-131112bb58fb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C79",
+      "claim": "Telomeres shortened more gradually in the TCAB1 KO clonal cell lines, followed by stable telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, telomeres shortened more gradually in the TCAB1 KO clonal cell lines, followed by stable telomere length homeostasis (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "1ca89cb7-5cec-4168-be94-275e224271e8",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C80",
+      "claim": "After more than half a year of continuous growth, telomere lengths in all of the TCAB1 KO clonal cell lines stabilized at a few kbp shorter than telomeres in the parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The starting point of telomere length in TCAB1 KO clonal cell lines mirrored the amount of telomerase activity in cell extract (compare Figure 5D and Figure 5F, left panel), but after more than half a year of continuous growth, telomere lengths in all of the TCAB1 KO clonal cell lines stabilized at a few kbp shorter than telomeres in the parental cell line (Figure 5F, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "aed5b652-00b0-45e5-9ed0-013f7e04f28c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C81",
+      "claim": "Telomeres in Coilin KO clonal cell lines cultured in parallel remained near the length of telomeres in the parental HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, telomeres in Coilin KO clonal cell lines cultured in parallel remained near the length of telomeres in the parental HCT116 cells (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "4bd7badd-3878-452a-b18c-6547aae357b9",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C82",
+      "claim": "In HCT116 cells, neither TCAB1 nor Coilin is required for a stable telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in HCT116 cells, neither TCAB1 nor Coilin is required for a stable telomere length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with TCAB1 and Coilin KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "2622c0c9-cfe3-407b-9041-32d42e552589",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C83",
+      "claim": "hESC lines lacking TCAB1 or Coilin were viable with no evident change in cell morphology or proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed for HCT116 cells, hESC lines lacking TCAB1 or Coilin were viable with no evident change in cell morphology or proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "d5a97a83-4d2e-49bb-8b35-f163b17f8ef1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C84",
+      "claim": "Neither TCAB1 KO nor Coilin KO affected telomerase activity assayed in hESC cell extract beyond the range of clonal variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither TCAB1 KO nor Coilin KO affected telomerase activity assayed in cell extract beyond the range of clonal variation (Figure 5I and Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5I and Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "4f60c6ab-4afa-4dc9-a297-748156818570",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C85",
+      "claim": "Over many months of continuous culture, hESCs lacking TCAB1 experienced very gradual telomere shortening followed by telomere length maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Over many months of continuous culture, hESCs lacking TCAB1 experienced very gradual telomere shortening followed by telomere length maintenance (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c36d41b3-52df-4c10-aaab-3c78a34e3ba7",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C86",
+      "claim": "The rate of telomere shortening in TCAB1 KO hESCs was slow compared to telomere shortening in TERT KO hESC.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of telomere shortening was slow compared to telomere shortening in TERT KO hESC (Sexton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "8b877dc4-a901-499c-857e-a66b11276d03",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C87",
+      "claim": "hESCs lacking Coilin retained telomere lengths comparable to the parental hESC culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The hESCs lacking Coilin retained telomere lengths comparable to the parental hESC culture (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "368f135f-9e1f-4f70-937a-8ae9f0e7575f",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C88",
+      "claim": "TCAB1 KO HCT116 cells ectopically expressing F-tagged TCAB1 regained telomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "TCAB1 KO HCT116 cells ectopically expressing F-tagged TCAB1 regained telomere length (Figure 5\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f4113b50-9c26-4117-839a-710105258a44",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C89",
+      "claim": "TCAB1 KO hESCs ectopically expressing F-tagged TCAB1 regained telomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, TCAB1 KO hESCs ectopically expressing F-tagged TCAB1 regained telomere length (Figure 5\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "5c3372d5-172b-46bd-b561-0bfc70774fab",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C90",
+      "claim": "Cells with homozygous disruptions of TCAB1 exon 2 and exon 8 showed no proliferation defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with homozygous disruptions of exon 2 and exon 8 showed no proliferation defect, no change in telomere length from the exon 2 KO, and no loss of Cajal bodies (Figure 5\u2014figure supplement 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "b57fa8ec-af63-4614-9098-c33b512ea7ff",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C91",
+      "claim": "Cells with homozygous disruptions of TCAB1 exon 2 and exon 8 showed no change in telomere length from the exon 2 KO.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with homozygous disruptions of exon 2 and exon 8 showed no proliferation defect, no change in telomere length from the exon 2 KO, and no loss of Cajal bodies (Figure 5\u2014figure supplement 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "6720b54e-d871-457c-92c1-44faab1c1bd2",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C92",
+      "claim": "Cells with homozygous disruptions of TCAB1 exon 2 and exon 8 showed no loss of Cajal bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with homozygous disruptions of exon 2 and exon 8 showed no proliferation defect, no change in telomere length from the exon 2 KO, and no loss of Cajal bodies (Figure 5\u2014figure supplement 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "4c9a0eb8-e33c-4f59-a012-60ecc92e08f4",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C93",
+      "claim": "TCAB1 and Cajal bodies are not essential for hTR telomerase to maintain telomeres at a stable length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, based on the assays described above, we conclude that TCAB1 and Cajal bodies are not essential for hTR telomerase to maintain telomeres at a stable length homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with TCAB1 and Coilin KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "0f941df4-c204-4165-84ae-6e1de381c892",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C94",
+      "claim": "The parental, TCAB1 KO, and Coilin KO HCT116 cells with integrated hTR and TERT transgenes acquired ~2-fold elevated hTR and ~5-fold elevated telomerase catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The parental, TCAB1 KO, and Coilin KO HCT116 cells with integrated hTR and TERT transgenes acquired ~2-fold elevated hTR and ~5-fold elevated telomerase catalytic activity (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "e5bb92f5-ab0d-4ef1-8526-687822374c62",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C95",
+      "claim": "Telomere elongation was rapid in TCAB1 KO HiT cell cultures, reaching the limit of length discrimination almost immediately.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere elongation was rapid in TCAB1 KO HiT cell cultures, reaching the limit of length discrimination almost immediately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "e8c1b900-bce2-4d9a-bc42-918c28ad58b6",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C96",
+      "claim": "Rapid telomere elongation in TCAB1 KO cells is consistent with telomere elongation in wild-type HeLa cells by overexpression of CAB-box-mutant hTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid telomere elongation in TCAB1 KO cells is consistent with telomere elongation in wild-type HeLa cells by overexpression of CAB-box-mutant hTR (Fu and Collins, 2007; Cristofari et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "fd4ed561-b8b4-4fb6-ada8-3523724d6eeb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C97",
+      "claim": "Coilin KO HiT cells had less telomere elongation compared to TCAB1 KO HiT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, Coilin KO HiT cells had less telomere elongation (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "02e4e8e2-32cd-4050-9ac6-8f255ac5654d",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C98",
+      "claim": "If telomerase is abundant, TCAB1 is not required to support telomerase-mediated elongation of even relatively long telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that if telomerase is abundant, TCAB1 is not required to support telomerase-mediated elongation of even relatively long telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with HiT cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "aa6c0660-f279-4228-87f1-f0ebe7fbb4e2",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C99",
+      "claim": "Human telomerase H/ACA RNP assembly is essential for the biological stability of hTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating all of the findings of this study, we conclude that human telomerase H/ACA RNP assembly is essential not only for the biological stability of hTR but also for active RNP biogenesis at scarce subunit expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "a53d9066-db51-453c-88d5-0780d479f017",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C100",
+      "claim": "Human telomerase H/ACA RNP assembly is essential for active RNP biogenesis at scarce subunit expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating all of the findings of this study, we conclude that human telomerase H/ACA RNP assembly is essential not only for the biological stability of hTR but also for active RNP biogenesis at scarce subunit expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "694a8ebe-bd3a-4ac9-93b7-ca85e0d0b8d4",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C101",
+      "claim": "H/ACA RNP assembly gives endogenous-level hESC telomerase the ability to maintain long telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, H/ACA RNP assembly gives endogenous-level hESC telomerase the ability to maintain long telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with hESCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "7bd2c5f3-9c95-4319-b08e-20354f7657f0",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C102",
+      "claim": "All H/ACA RNP assembly roles can be bypassed using hTRmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, all of these H/ACA RNP assembly roles can be bypassed using hTRmin (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings with hTRmin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "197a0df0-bce8-444e-b0c5-2c73aa9c0bc5",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C103",
+      "claim": "Stabilization and efficient interaction of low-abundance telomerase subunits is a main rationale for the vertebrate telomerase H/ACA RNP biogenesis pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies here point to stabilization and efficient interaction of low-abundance telomerase subunits as a main rationale for the vertebrate telomerase H/ACA RNP biogenesis pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "d66de296-1fb6-4f3f-a4d9-429bf62955e9",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C104",
+      "claim": "TCAB1 could influence the subnuclear distribution of active RNP between nucleoli and nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "As one model to account for these results, TCAB1 could influence the subnuclear distribution of active RNP between nucleoli and nucleoplasm (Figure 7, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative model proposed to explain the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "21a22b9b-84f8-40d8-a50f-c934acb38426",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C105",
+      "claim": "TCAB1 KO affected telomere length only in cells with hTR telomerase, not in cells with hTRmin telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in studies here it is striking that TCAB1 KO affected telomere length only in cells with hTR telomerase, not in cells with hTRmin telomerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing TCAB1 KO effects in hTR vs hTRmin cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "db7ed264-3b3b-41f2-b292-159bbd0fba5c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C106",
+      "claim": "Coilin KO clonal cell lines generated in this work had telomere lengths similar to the parental cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Coilin KO clonal cell lines generated in this work had telomere lengths similar to the parental cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "788e6f4d-0297-4216-a1e2-3f3992a36518",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C107",
+      "claim": "Coilin KO cells with endogenous telomerase levels have apparently unperturbed telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Coilin KO cells with endogenous telomerase levels have apparently unperturbed telomere length homeostasis, we suggest that they will be useful for visually tracking telomerase interactions with telomeres without the complication of Cajal body clustering of active with inactive hTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "c4ac89c0-01a6-41b6-8af9-56d2cf18e2d9",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C108",
+      "claim": "Coilin KO HCT116 cells had dampened telomere elongation upon an increase in telomerase expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, Coilin KO HCT116 cells had dampened telomere elongation upon an increase in telomerase expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "da35e9ed-39d5-4e9c-8ed1-caf153c2ccaf",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C109",
+      "claim": "Endogenous hTR colocalization with telomeres was reduced more by Coilin depletion than TCAB1 depletion in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, opposite the impact of TCAB1 and Coilin KOs on telomere lengths described above, previous studies found that endogenous hTR colocalization with telomeres was reduced more by Coilin depletion than TCAB1 depletion and overexpressed hTR colocalization with telomeres was reduced more by TCAB1 depletion than by Coilin depletion (Zhong et al., 2012; Stern et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "4fa53e9c-8d78-4b9c-b5b2-f03b4c8aecc4",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C110",
+      "claim": "Overexpressed hTR colocalization with telomeres was reduced more by TCAB1 depletion than by Coilin depletion in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, opposite the impact of TCAB1 and Coilin KOs on telomere lengths described above, previous studies found that endogenous hTR colocalization with telomeres was reduced more by Coilin depletion than TCAB1 depletion and overexpressed hTR colocalization with telomeres was reduced more by TCAB1 depletion than by Coilin depletion (Zhong et al., 2012; Stern et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "372bae01-55bc-46ac-a5c1-1385b9c753e5",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C111",
+      "claim": "TCAB1 mutations result in severe dyskeratosis congenita.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, TCAB1 mutations result in severe DC (Zhong et al., 2011; Armanios and Blackburn, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "cb7a40c6-36b6-4a6b-8ed7-e8e7707ca8aa",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "claim_id": "C112",
+      "claim": "TCAB1 mutations reduce telomere length in early human development and in somatic cells with long telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that TCAB1 mutations reduce telomere length in early human development and in somatic cells with long telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3121f19f-f5b1-4099-961d-e7bca9686fb7",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A minimized human telomerase RNA (hTRmin) containing only TERT-binding sites and MALAT1 3' processing elements can assemble catalytically active telomerase in cells. hTRmin lacks H/ACA protein binding, accumulates at lower levels than full-length hTR, distributes throughout the nucleoplasm rather than in nuclear puncta, and produces telomerase with similar repeat synthesis profiles to wild-type hTR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31, C41-C49 collectively demonstrate successful cellular assembly of minimized telomerase. The experimental data from Northern blots (C43, C44, C47), immunopurification (C46), FISH (C49), and activity assays (C44, C45) provide converging evidence that hTRmin forms functional telomerase despite lacking H/ACA motifs. The design strategy and optimization are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "df78e8c3-551c-45a6-8c66-923c5ef67be7",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TERT overexpression is required for cellular assembly of active telomerase with hTRmin but not with wild-type hTR, indicating that H/ACA RNP assembly enhances hTR-TERT interaction at endogenous expression levels. This role of H/ACA RNP assembly can be bypassed by increasing TERT availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C33, C53-C56 are supported by experimental data showing that hTRmin requires TERT overexpression for activity (Figure 2D) while wild-type hTR does not. The inference that H/ACA RNP assembly enhances subunit interaction is logical and well-supported by the comparative data. TERT co-expression did not affect hTRmin accumulation (C54), isolating the effect to RNP assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "hTRmin telomerase maintains stable telomere length homeostasis and confers indefinite cellular proliferative capacity. Clonal cell lines with hTRmin and TERT overexpression established distinct but stable telomere lengths, with telomerase activity correlating generally but not absolutely with telomere length at homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C59-C64 are well-supported by longitudinal telomere length data (Figures 3C, 3D) showing stable maintenance over many months, proliferation data (Figure 2F), and activity measurements (Figure 3F). The correlation between activity and telomere length is appropriately qualified as general rather than absolute. Multiple independent clonal lines provide robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "3b9c5485-bf7d-40a7-853e-0f113eea03db",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Telomere maintenance by minimized telomerase (hTRmin) is unaffected by elimination of TCAB1 or Coilin. Clonal cell lines with hTRmin and TERT overexpression in TCAB1 or Coilin knockout backgrounds retained telomerase activity, stably maintained telomeres, and showed no defects in viability, morphology, or proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C34, C65, C71-C74 are supported by comprehensive data including immunopurification (C65, Figure 4\u2014figure supplement 1A), telomerase activity assays (C71, Figure 4E), telomere length analysis (C72, Figure 4F), and cellular phenotype observations (C73). The conclusion that hTRmin functions without H/ACA RNP biogenesis or localization pathways (C74) is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f08876b8-d850-4530-818c-390ca89671c1",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wild-type hTR telomerase maintained and elongated telomeres in TCAB1 or Coilin knockout cells. In HCT116 cells with endogenous telomerase, TCAB1 knockout resulted in gradual telomere shortening followed by stable homeostasis at lengths a few kbp shorter than parental cells, while Coilin knockout cells maintained telomere lengths comparable to parental cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C35-C37, C79-C82 are supported by extensive telomere length time-course data (Figures 5F, 5G) showing distinct phenotypes for TCAB1 vs Coilin knockouts. Multiple independent clonal lines were analyzed over more than half a year. The conclusion that neither TCAB1 nor Coilin is required for stable telomere homeostasis (C82) is well-supported, though the mechanism differs between the two knockouts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In human embryonic stem cells (hESCs), TCAB1 or Coilin knockout did not affect cell viability, morphology, proliferation, or telomerase activity beyond clonal variation. TCAB1 knockout hESCs experienced very gradual telomere shortening followed by length maintenance, while Coilin knockout hESCs retained telomere lengths comparable to parental cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 extend the HCT116 findings to hESCs with consistent results. The data include activity assays (C84, Figure 5I), longitudinal telomere measurements (C85, C87, Figures 5J, 5K), and comparison to prior TERT knockout data (C86). The very gradual shortening in TCAB1 knockout hESCs contrasts with rapid shortening in TERT knockout, supporting the conclusion that telomerase remains functional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "1342891f-6f8e-4b01-8749-5ec8064590f2",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ectopic expression of FLAG-tagged TCAB1 in TCAB1 knockout cells rescued telomere length in both HCT116 cells and hESCs. Double knockout of TCAB1 exons 2 and 8 showed no additional phenotype beyond single exon 2 knockout, confirming complete loss of TCAB1 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 provide important controls demonstrating that telomere phenotypes are specifically due to TCAB1 loss. Rescue experiments (C88, C89, Figure 5\u2014figure supplement 3A-D) show telomere length recovery upon TCAB1 re-expression. The double knockout experiment (C90-C92, Figure 5\u2014figure supplement 3F,G) rules out residual TCAB1 function and confirms that Cajal bodies persist without TCAB1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "d290e18f-1206-44ca-9395-6059062ebb54",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H/ACA RNP assembly is essential for hTR biological stability and for active telomerase biogenesis at scarce subunit expression levels, and gives endogenous-level hESC telomerase the ability to maintain long telomeres. However, all these roles can be bypassed using hTRmin. Cajal body localization is not essential for telomere maintenance by either hTRmin or wild-type hTR telomerase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, C93, C99-C103 represent the major conclusions integrating all experimental findings. These are well-supported by the collective evidence from hTRmin experiments (bypassing H/ACA requirements), TERT overexpression requirements (demonstrating enhanced subunit interaction), and TCAB1/Coilin knockout experiments (demonstrating non-essentiality of Cajal body localization). The conclusions appropriately distinguish between roles that are essential vs. those that can be bypassed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In HCT116 cells, TCAB1 knockout did not disrupt Cajal bodies or reduce Coilin levels, and Coilin knockout did not induce TCAB1 degradation or eliminate TCAB1 localization. SMN nuclear foci remained detectable in TCAB1 knockout but not Coilin knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by immunoblot data (C66, Figure 4B) and immunofluorescence data (C67, C68, Figures 4C, 4\u2014figure supplement 1B). These findings clarify the relationship between TCAB1 and Cajal bodies, resolving conflicting reports in the literature. The data demonstrate that TCAB1 is not required for Cajal body formation in HCT116 cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When telomerase is abundant (hTR and TERT overexpression), TCAB1 is not required to support telomerase-mediated elongation of even relatively long telomeres. TCAB1 knockout cells showed rapid telomere elongation reaching the limit of length discrimination, while Coilin knockout cells had less elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 are supported by data from High-Telomerase (HiT) experiments (Figure 6A, 6B) showing that overexpression of both subunits leads to rapid telomere elongation even without TCAB1. The comparison to prior CAB-box mutant studies (C96) provides additional context. The differential effect of Coilin knockout (C97) suggests distinct roles for TCAB1 and Coilin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "0e964cde-1add-47b6-90cc-e938dfe87846",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HCT116 cells with homozygous knockout of hTR (TERC) or TERT lacked telomerase activity and underwent cell death at approximately 70 days post-targeting with progressive telomere shortening. In contrast, cells with active telomerase (wild-type hTR, hTRmin with TERT overexpression, or LhTRmin with TERT overexpression) proliferated indefinitely with normal morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C57, C58, C77, C78 establish essential controls demonstrating that telomerase activity is required for long-term cell viability and telomere maintenance. The data include activity assays (C50, Figure 2B), telomere length measurements (C78, Figure 5E), and proliferation/viability observations (C51, C57, C58, C77). The ~70 day timeframe for cell death is consistent between hTR and TERT knockouts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "26f9396a-1ca0-45e3-9871-1dc2e684776f",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Loss of TCAB1 or Coilin did not substantially alter telomerase activity in cell extracts beyond clonal variation, and cells showed no change in growth rate, viability, or morphology over extended culture. TCAB1 knockout affected telomere length only in cells with wild-type hTR, not in cells with hTRmin. Coilin knockout cells with endogenous telomerase had unperturbed telomere homeostasis but showed dampened telomere elongation upon telomerase overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C76, C105-C108 are supported by activity assays (C75, Figures 5D, 5\u2014figure supplement 1C), long-term culture observations (C76), comparative telomere length data (C105, C106, Figures 4F, 5G), and HiT experiments (C108, Figure 6B). The findings distinguish between effects on telomere maintenance vs. elongation, and between hTR vs. hTRmin contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f16edfd9-b77a-4390-bfca-1153e233d5ca",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge claims about telomere biology, telomerase function, and RNP biogenesis pathways across eukaryotes, including the role of H/ACA proteins in hTR stability, TCAB1 in Cajal body trafficking, and prior findings on TCAB1/Coilin depletion and knockout effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10-C30 represent established knowledge from the literature, supported by appropriate citations. These provide essential context for interpreting the novel findings. The citations appear accurate and relevant, though C29 and C30 highlight puzzling observations that motivated the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "329ef884-20e3-496a-b3b3-99c4b6625adb",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The H/ACA-motif 5' stem of hTR separates the template/pseudoknot and CR4/5 regions that are critical for TERT binding and catalytic activity. Previously, these regions were joined with a spacer to create hTRmin, which reconstitutes active telomerase in rabbit reticulocyte lysate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C41 describe the structural basis and prior work that enabled the current study. C40 is supported by citation to prior structural work, and C41 is supported by citation to the authors' previous in vitro reconstitution study. These provide the foundation for the cellular hTRmin experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "f2234f4f-c816-4896-8d1a-31da9bada318",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculative models propose that TCAB1 could influence the subnuclear distribution of active RNP between nucleoli and nucleoplasm, and that TCAB1 mutations reduce telomere length in early human development and in somatic cells with long telomeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104 and C112 are explicitly speculative interpretations (labeled as SPECULATION in evidence_type). While these models are consistent with the data, they are not directly tested. C104 is presented as \"one model to account for these results\" and C112 uses \"we suggest,\" indicating these are hypotheses rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    },
+    {
+      "id": "dfc8d997-4ed3-49dd-9398-c038d31edb36",
+      "content_id": "1969e37d-4e0c-4713-b093-978948d1bdfc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies found that endogenous hTR colocalization with telomeres was reduced more by Coilin depletion than TCAB1 depletion, while overexpressed hTR colocalization was reduced more by TCAB1 depletion. TCAB1 mutations result in severe dyskeratosis congenita.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C111 cite prior literature to provide context for the current findings. The citations appear appropriate and the claims accurately represent prior work. C111 is particularly important for understanding the clinical significance of TCAB1, though the current study's findings suggest the mechanism may be more complex than previously thought.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:04.050007Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b1321700-6371-4326-b287-68f0b7835fb0",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "7f05d58d-1a6e-482c-8662-e66467ae9c23",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "30ac1bdc-82ee-43c1-b4db-58dc26a80b08",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "f122a933-7fbc-4761-b0d0-d68a80848238",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "7230c76b-cf79-46a5-90bc-b69921c7fa1b",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "e9a20f69-fd89-44ed-90a0-5b314fd1c4e0",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "b98deb55-2df1-4e20-9409-05cfbdc68862",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "8c499159-6de9-4857-a9b9-637b41e8e8ef",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "21dd0f31-a396-4ce9-a2e8-f87450d0a4f7",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "acc6ea80-306a-4d17-91df-557caf045d3c",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "2e644f64-2eba-4764-983f-95b3a3367eff",
+      "result_id": "3121f19f-f5b1-4099-961d-e7bca9686fb7"
+    },
+    {
+      "claim_id": "09a50daf-9a14-4e00-937f-1414594d3e23",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "dc0a9273-7883-451d-a86f-3106d1224a1f",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "17398604-be9b-4e07-9efb-817c392cd056",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "153d0499-6c50-4750-ad8e-bc7a72e29387",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "b6326244-bf67-40f8-bad7-0d6c4060ac74",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "539fd10a-a0c9-4fbf-8059-d4f5cfc8548c",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "afce5274-c9d7-4646-b85e-7942684fcfc0",
+      "result_id": "df78e8c3-551c-45a6-8c66-923c5ef67be7"
+    },
+    {
+      "claim_id": "548fd7b4-8325-4c25-9e1f-573a82219417",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "53161fc7-67a4-449c-a5c8-fe45e87f7eaf",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "e0e37601-5643-4ae1-9b04-c1e659a2a760",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "35f579d2-bbce-41ad-aac5-efa4c8c5861e",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "8f871076-9437-46ef-a3e4-18b671a84f83",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "30c79d51-4c1b-40fb-93c1-2fb7021f87a9",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "a9c99cd7-87b7-4173-a55b-61691bf562c0",
+      "result_id": "89bb13e4-b02d-4f83-bce4-3608bf257c5c"
+    },
+    {
+      "claim_id": "b3098464-abf4-4e3a-abe4-0532b19da782",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "694a8c7e-2495-42a0-9375-5d4199cd13f4",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "a0895ede-da12-4f1b-adee-8e52648428f8",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "1dfb65de-fd62-4486-96ce-0d4dd43b74b3",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "c390b7b3-cd79-4ddf-b012-41db0eed8efd",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "a4164895-3a06-4787-bf2d-a2be6fabdb34",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "c08262eb-fd7e-4cf2-9600-f078bf722df1",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "caeb9ac0-a4f1-40bb-8d56-77f2adec0beb",
+      "result_id": "3b9c5485-bf7d-40a7-853e-0f113eea03db"
+    },
+    {
+      "claim_id": "cd5771f3-d5dd-4d51-b092-f7befc8b67e0",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "3d45ed0b-5cb9-4235-ab3d-7ed06eadcdcb",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "2312d234-b882-4388-a97f-f93dbfa82921",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "b94a7689-8287-4d7e-bb9e-e3ac0119d490",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "c7b20670-87db-4490-8422-797d9ea94136",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "478f8b4a-72d0-437b-afa0-131112bb58fb",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "1ca89cb7-5cec-4168-be94-275e224271e8",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "aed5b652-00b0-45e5-9ed0-013f7e04f28c",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "4bd7badd-3878-452a-b18c-6547aae357b9",
+      "result_id": "f08876b8-d850-4530-818c-390ca89671c1"
+    },
+    {
+      "claim_id": "2622c0c9-cfe3-407b-9041-32d42e552589",
+      "result_id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8"
+    },
+    {
+      "claim_id": "d5a97a83-4d2e-49bb-8b35-f163b17f8ef1",
+      "result_id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8"
+    },
+    {
+      "claim_id": "4f60c6ab-4afa-4dc9-a297-748156818570",
+      "result_id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8"
+    },
+    {
+      "claim_id": "c36d41b3-52df-4c10-aaab-3c78a34e3ba7",
+      "result_id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8"
+    },
+    {
+      "claim_id": "8b877dc4-a901-499c-857e-a66b11276d03",
+      "result_id": "eae24f6f-aa6e-4ddb-952e-f60bbe17cbb8"
+    },
+    {
+      "claim_id": "368f135f-9e1f-4f70-937a-8ae9f0e7575f",
+      "result_id": "1342891f-6f8e-4b01-8749-5ec8064590f2"
+    },
+    {
+      "claim_id": "f4113b50-9c26-4117-839a-710105258a44",
+      "result_id": "1342891f-6f8e-4b01-8749-5ec8064590f2"
+    },
+    {
+      "claim_id": "5c3372d5-172b-46bd-b561-0bfc70774fab",
+      "result_id": "1342891f-6f8e-4b01-8749-5ec8064590f2"
+    },
+    {
+      "claim_id": "b57fa8ec-af63-4614-9098-c33b512ea7ff",
+      "result_id": "1342891f-6f8e-4b01-8749-5ec8064590f2"
+    },
+    {
+      "claim_id": "6720b54e-d871-457c-92c1-44faab1c1bd2",
+      "result_id": "1342891f-6f8e-4b01-8749-5ec8064590f2"
+    },
+    {
+      "claim_id": "4c9a0eb8-e33c-4f59-a012-60ecc92e08f4",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "d8f458c7-a5e5-409f-9816-857dbeb3e9e1",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "b80e3792-05cd-4033-89ea-fa6b0eeb39c3",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "aa6c0660-f279-4228-87f1-f0ebe7fbb4e2",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "a53d9066-db51-453c-88d5-0780d479f017",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "694a8ebe-bd3a-4ac9-93b7-ca85e0d0b8d4",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "7bd2c5f3-9c95-4319-b08e-20354f7657f0",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "197a0df0-bce8-444e-b0c5-2c73aa9c0bc5",
+      "result_id": "d290e18f-1206-44ca-9395-6059062ebb54"
+    },
+    {
+      "claim_id": "7cf60741-5e5f-43a4-862d-43f7e7bf943c",
+      "result_id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d"
+    },
+    {
+      "claim_id": "50a00d3e-6d3a-4545-a1c7-56d86ebea567",
+      "result_id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d"
+    },
+    {
+      "claim_id": "b0d3fb82-9fed-4028-9715-6e8270d42940",
+      "result_id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d"
+    },
+    {
+      "claim_id": "9acbc1f4-cfb9-4826-8c2c-f1c6ff3c6642",
+      "result_id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d"
+    },
+    {
+      "claim_id": "48e15e12-7bd2-4bbd-807f-a55449d198f5",
+      "result_id": "e4f9fd82-1012-4d4e-b41b-94571048ae6d"
+    },
+    {
+      "claim_id": "0f941df4-c204-4165-84ae-6e1de381c892",
+      "result_id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82"
+    },
+    {
+      "claim_id": "e5bb92f5-ab0d-4ef1-8526-687822374c62",
+      "result_id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82"
+    },
+    {
+      "claim_id": "e8c1b900-bce2-4d9a-bc42-918c28ad58b6",
+      "result_id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82"
+    },
+    {
+      "claim_id": "fd4ed561-b8b4-4fb6-ada8-3523724d6eeb",
+      "result_id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82"
+    },
+    {
+      "claim_id": "02e4e8e2-32cd-4050-9ac6-8f255ac5654d",
+      "result_id": "02f8fa20-90f6-46f6-ae9b-a7fe5b3f8f82"
+    },
+    {
+      "claim_id": "eb832580-861d-433d-bc22-a90eb4ead718",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "4efe00e9-a2e0-445e-82a0-c74ea098b419",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "c87ab30e-5505-46e2-85b5-7c67188136f1",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "3568569f-7726-4ba1-8c37-23f92c21b3f6",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "c9432dc9-0bf1-4c2f-8876-57f588dcd68f",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "33533132-45c1-4fcc-b7ce-21e3517f865c",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "2d63ccde-931d-4ba8-8770-044d4ae3345d",
+      "result_id": "0e964cde-1add-47b6-90cc-e938dfe87846"
+    },
+    {
+      "claim_id": "03028dca-4256-484e-8a8e-0ff1fd7ada06",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "7b186c97-a700-42b8-98f8-0d9a650f20de",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "21a22b9b-84f8-40d8-a50f-c934acb38426",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "db7ed264-3b3b-41f2-b292-159bbd0fba5c",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "788e6f4d-0297-4216-a1e2-3f3992a36518",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "c4ac89c0-01a6-41b6-8af9-56d2cf18e2d9",
+      "result_id": "26f9396a-1ca0-45e3-9871-1dc2e684776f"
+    },
+    {
+      "claim_id": "24b57681-6b3c-42ba-bde7-400fb7c7ff24",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "3782e2bc-f88c-4b30-98f0-ec02ed56e3f4",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "b94b0555-7e0c-47d2-b2fa-51fb80a36bfa",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "f8ac30d6-f85a-4604-8df4-213718f1eec9",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "a0c97057-13c1-4d8d-ad09-93297614d727",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "00f4f2ae-29b7-4bd1-8e51-5eba7d180dcf",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "3c028718-31ae-4822-8ab6-89ce48167442",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "ee2174ff-bc97-4be8-b29e-b22e8744aac0",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "002a9a26-1447-4b94-b03b-76f4926fe7a5",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "49025ca0-61b7-4735-8a72-468ed767b79d",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "44c3d88f-cb2b-4e2d-b1ab-c61a59644b68",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "dc8d872d-4374-437a-af24-ced8ead561da",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "906357f4-23b1-426a-9de4-faaf8b7d6165",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "3ee307f3-ccc7-443e-9631-214fb6d7cab1",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "c33c2217-0666-4eda-ad83-804c69756466",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "34bec53d-2c8f-4175-8363-762bce0e9460",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "5bff014f-eb07-4ffc-b5d7-28822af31edc",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "9e557b4e-8f2a-4aae-9c30-81a67c2c6bf2",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "6955c612-171d-40e4-b830-e789ee1ef2eb",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "0fde5da8-c824-416f-a672-087dc7acc952",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "83be4e2d-07ed-448c-aad6-4ef664954428",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "99bb7242-3fa7-4763-9720-29ae9c7bb1aa",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "7acee425-b7d8-4ad5-b461-0ce788749a23",
+      "result_id": "f16edfd9-b77a-4390-bfca-1153e233d5ca"
+    },
+    {
+      "claim_id": "f9ca2ffc-cfd2-434d-a822-68d451fc9986",
+      "result_id": "329ef884-20e3-496a-b3b3-99c4b6625adb"
+    },
+    {
+      "claim_id": "30ac1bdc-82ee-43c1-b4db-58dc26a80b08",
+      "result_id": "329ef884-20e3-496a-b3b3-99c4b6625adb"
+    },
+    {
+      "claim_id": "d66de296-1fb6-4f3f-a4d9-429bf62955e9",
+      "result_id": "f2234f4f-c816-4896-8d1a-31da9bada318"
+    },
+    {
+      "claim_id": "cb7a40c6-36b6-4a6b-8ed7-e8e7707ca8aa",
+      "result_id": "f2234f4f-c816-4896-8d1a-31da9bada318"
+    },
+    {
+      "claim_id": "da35e9ed-39d5-4e9c-8ed1-caf153c2ccaf",
+      "result_id": "dfc8d997-4ed3-49dd-9398-c038d31edb36"
+    },
+    {
+      "claim_id": "4fa53e9c-8d78-4b9c-b5b2-f03b4c8aecc4",
+      "result_id": "dfc8d997-4ed3-49dd-9398-c038d31edb36"
+    },
+    {
+      "claim_id": "372bae01-55bc-46ac-a5c1-1385b9c753e5",
+      "result_id": "dfc8d997-4ed3-49dd-9398-c038d31edb36"
+    }
+  ],
+  "comparisons": []
+}

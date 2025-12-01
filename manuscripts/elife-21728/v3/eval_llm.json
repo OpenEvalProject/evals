@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors successfully mapped DNA replication origins in C. elegans embryos using Okazaki fragment sequencing after lig-1 depletion. They identified >2000 replication origins with a median spacing of 40 kb, median efficiency of ~50%, and 96% of origins within 100 kb of another origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C19 collectively demonstrate successful application of the Okazaki fragment sequencing method to C. elegans. The experimental approach is well-established (C7-C9), the strand bias pattern matches expectations (C14-C15), and quantitative metrics are provided with supporting figures (C16-C19). The method appears appropriately adapted from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The size distribution of Okazaki fragments in C. elegans matches budding yeast, suggesting conserved coupling of lagging strand synthesis and nucleosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by experimental data (Figure 1A) showing periodic Okazaki fragment patterns similar to nucleosome spacing, consistent with cited prior work in yeast. The inference about conservation is reasonable given the similarity in fragment size distribution, though direct mechanistic evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Replication in C. elegans initiates within broad zones at most origins, similar to human cells but contrasting with the narrow initiation ranges in budding yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by experimental data (Figure 1\u2014figure supplement 3) and appropriate citations to prior work in yeast and human cells. The comparison across species is valid and the broad initiation zones are clearly demonstrated in the supplementary figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Genes near replication origins tend to be shorter and genes flanking origins show directional bias ensuring co-directional replication fork progression and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by experimental data (Figure 1\u2014figure supplement 4A and B) showing gene length and orientation patterns relative to origins. The data clearly demonstrate both the length bias and the pronounced directional bias, consistent with cited work in human cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C70"
+    ],
+    "result": "Replication origins are marked with specific histone modifications that define gene enhancers (H3K27ac, H3K4me2, H3K18ac, H3K23ac), and the level of these modifications scales with origin efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30, C69-C70 are strongly supported by multiple lines of evidence in Figure 2. The spatial concordance between origins and histone marks is clear (C24-C26), quantitative correlation with efficiency is demonstrated (C27, C29), and the association with enhancer marks is appropriately referenced (C30). The use of published ChIP-seq data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C71",
+      "C72"
+    ],
+    "result": "Replication origin positions and activity are largely invariant through embryogenesis, with origins established prior to the broad onset of zygotic transcription and independent of transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C71-C72 are supported by experimental comparison of replication patterns across developmental stages (Figure 3C-D). The high correlation between pre-gastrula, mixed early, and late embryos demonstrates origin invariance. The conclusion that origins are transcription-independent is well-supported by the pre-gastrula data and consistent with cited \u03b1-amanitin studies (C36-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "S phase in pre-gastrula embryonic cells ranges from ~10-25 min depending on lineage, and the observed median origin spacing of ~40 kb reflects incomplete origin firing in each S phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 combine cited prior knowledge about S phase timing with experimental observations about origin spacing. The theoretical calculation in C39 is mathematically sound, and the inference in C40 logically follows from comparing observed spacing with theoretical requirements. The reasoning is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C62"
+    ],
+    "result": "Genes involved in growth, embryonic development, cell cycle, gene expression, and chromatin are clustered near replication origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C62 are supported by gene ontology analysis (Figure 4A and Figure 4\u2014figure supplement 1). The enrichment of specific functional categories near origins is clearly demonstrated with appropriate statistical analysis. This represents a valid computational analysis of the spatial organization of genes relative to origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Transcription initiates in close proximity to pre-defined replication origins beginning at gastrulation (timepoint ~9), remains associated through timepoint ~25, then shifts away from origins after ~300 min, with peak transcription occurring 15-25 kb from origins by 500 min when cell division ceases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50, C58-C59, C73-C75 describe the temporal dynamics of transcription-origin association supported by whole embryo transcriptome analysis (Figure 4B and supplements). The data clearly show the coupling during early development and subsequent uncoupling. The spatial shift is well-documented and the correlation with developmental milestones is appropriately referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C68"
+    ],
+    "result": "The shift in transcription away from origins at ~300 min coincides with ventral enclosure, activation of the morphogenesis transcriptome, completion of the last wave of cell division, and the mid-developmental transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C68 integrate the experimental observations with developmental milestones from cited literature. The temporal correlation between transcription shift and developmental events is clearly demonstrated (Figure 4B-C). The association with the mid-developmental transition is appropriately referenced to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C65"
+    ],
+    "result": "The inactivation of replication origins may be coupled with transcriptome restructuring to facilitate post-replicative development and relieve spatial constraints on gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54 and C65 are speculative interpretations of the observed correlation between origin inactivation and transcriptional changes. While the temporal correlation is clear, the causal mechanism is not demonstrated. The use of 'may be' appropriately indicates uncertainty, but no direct experimental evidence for this coupling mechanism is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C76"
+    ],
+    "result": "The C. elegans genome has evolved to couple embryonic transcription with replication through co-localization of origins with enhancers, providing functional advantages such as higher effective copy number for origin-proximal genes and serving as fundamental organizers of gene activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61, C63, C76 present evolutionary and functional interpretations of the observed spatial organization. While the spatial coupling is well-demonstrated, the evolutionary claims and functional advantages are largely speculative. The inference about enhancer co-localization (C61) is reasonable given the histone modification data, but direct enhancer mapping is not provided. Claim C63 about copy number is logical but not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The passage of the replication fork may trigger reactivation of genes repressed during mitosis, preventing replication-transcription conflicts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is purely speculative with no supporting experimental evidence. While the hypothesis is plausible, it represents a proposed mechanism without validation. The claim appropriately uses 'may' to indicate speculation, but no data support this specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C20",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C55",
+      "C56",
+      "C57",
+      "C66",
+      "C67"
+    ],
+    "result": "Background claims about DNA replication in other organisms, prior methodological work, and C. elegans developmental biology from cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9, C20, C31, C36-C38, C55-C57, C66-C67 represent background knowledge appropriately cited from prior literature. These claims establish context and are not primary findings of this study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

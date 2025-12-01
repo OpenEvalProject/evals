@@ -1,0 +1,2781 @@
+{
+  "submission": {
+    "id": "078b3dfe-e777-40aa-94a9-08f29a9d55a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:24:13.708108Z",
+    "updated_at": "2025-11-30T21:24:13.708108Z"
+  },
+  "content": [
+    {
+      "id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "submission_id": "078b3dfe-e777-40aa-94a9-08f29a9d55a5",
+      "content_type": "manuscript",
+      "content_text": "# NPAS1-ARNT and NPAS3-ARNT crystal structures implicate the bHLH-PAS family as multi-ligand binding transcription factors\n\n## Authors\n\n- Dalei Wu<sup>1</sup>\n- Xiaoyu Su<sup>1</sup>\n- Nalini Potluri<sup>1</sup>\n- Youngchang Kim<sup>2</sup>\n- Fraydoon Rastinejad<sup>1</sup> ([ORCID: 0000-0002-0784-9352](https://orcid.org/0000-0002-0784-9352)) \u2020\n\n### Affiliations\n\n1. Integrative Metabolism Program Sanford Burnham Prebys Medical Discovery Institute Orlando United States\n2. Structural Biology Center, Biosciences Division Argonne National Laboratory Argonne United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe neuronal PAS domain proteins NPAS1 and NPAS3 are members of the basic helix-loop-helix-PER-ARNT-SIM (bHLH-PAS) family, and their genetic deficiencies are linked to a variety of human psychiatric disorders including schizophrenia, autism spectrum disorders and bipolar disease. NPAS1 and NPAS3 must each heterodimerize with the aryl hydrocarbon receptor nuclear translocator (ARNT), to form functional transcription complexes capable of DNA binding and gene regulation. Here we examined the crystal structures of multi-domain NPAS1-ARNT and NPAS3-ARNT-DNA complexes, discovering each to contain four putative ligand-binding pockets. Through expanded architectural comparisons between these complexes and HIF-1\u03b1-ARNT, HIF-2\u03b1-ARNT and CLOCK-BMAL1, we show the wider mammalian bHLH-PAS family is capable of multi-ligand-binding and presents as an ideal class of transcription factors for direct targeting by small-molecule drugs.\n\n## Introduction\n\nThe mammalian bHLH-PAS transcription factors share a common protein architecture consisting of a conserved bHLH DNA-binding domain, tandem PAS domains (PAS-A and PAS-B), and a variable activation or repression domain. These factors can be grouped into two classes based on their heterodimerization patterns (McIntosh et al., 2010; Bersten et al., 2013) (Figure 1A and Figure 1\u2014figure supplement 1). Class I includes the three hypoxia-inducible factor (HIF)-\u03b1 proteins (HIF-1\u03b1, HIF-2\u03b1 and HIF-3\u03b1), four neuronal PAS domain proteins (NPAS1-4), aryl hydrocarbon receptor (AHR), AHR repressor (AHRR), single-minded proteins (SIM1, SIM2) and clock circadian regulator (CLOCK); while class II includes aryl hydrocarbon receptor nuclear translocator (ARNT, also called HIF-1\u03b2), ARNT2, brain and muscle ARNT-like protein 1 (BMAL1, also called ARNTL) and BMAL2 (ARNTL2). Heterodimerization between class I and class II members produces functional transcription factors capable of DNA binding and target gene regulation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig1-v2.jpg)\n\n**Figure 1.:** (A) Heterodimerization patterns between bHLH-PAS proteins. (B) Protein domain arrangements of ARNT, NPAS1 and NPAS3. Percent amino-acid identities between corresponding domains of NPAS1 and NPAS3 are in red. (C) Overall crystal structure of the NPAS1-ARNT complex shown in two views. (D) Superposition of NPAS1-ARNT and HIF-2\u03b1-ARNT heterodimers. The arrows on top show the shift in position for the PAS-B domain of ARNT.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The bHLH, PAS-A and PAS-B segments, and the secondary structure components of NPAS1 are shown above the alignment. The NPAS1 residues interacting directly with ARNT (at interface 1\u20134) are marked using cyan round dots, while those at intra-molecular interfaces (5 and 6) are marked with brown round dots. Triangles show pocket amino-acids in NPAS1, HIF-2\u03b1, CLOCK, ARNT and BMAL1 (in cyan, magenta, brown, green and lime colors, respectively).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The two complexes are superimposed by aligning the bHLH domains (A) or PAS-B domains (B) of ARNT with BMAL1, respectively.\n\nMany bHLH-PAS proteins are significantly involved in human disease processes and would be ideal drug targets if their architectures could accommodate binding and modulation by small-molecules. Members of the HIF-\u03b1 subgroup mediate the response to hypoxia and regulate key genetic programs required for tumor initiation, progression, invasion and metastasis (Semenza, 2012). AHR controls T cell differentiation (Stevens and Bradfield, 2008) and maintains intestinal immune homeostasis (Leavy, 2011), making it a potential target for alleviating inflammation and autoimmune diseases. Loss-of-function mutations in SIM1 have been linked to severe obesity in human populations (Bonnefond et al., 2013), and defects in SIM2 are associated with cancers (Bersten et al., 2013). CLOCK and BMAL1 together establish molecular circadian rhythms and their functional disruption can lead to a variety of metabolic diseases (Gamble et al., 2014).\n\nThe NPAS genes are highly expressed in the nervous system (Zhou et al., 1997; Brunskill et al., 1999; Ooe et al., 2004). In mice, genetic deficiencies in NPAS1 and NPAS3 are associated with behavioral abnormalities including diminished startle response, social recognition deficit and locomotor hyperactivity (Erbel-Sieler et al., 2004; Brunskill et al., 2005). NPAS2 is highly related to CLOCK in protein sequence (Reick et al., 2001), and altered patterns of sleep and behavioral adaptability have been observed in NPAS2-deficient mice (Dudley et al., 2003). NPAS4 deficiency is associated with impairment of long-term contextual memory formation (Ramamoorthi et al., 2011). In humans, alterations in all four NPAS genes have been linked to neuropsychiatric diseases including schizophrenia, autism spectrum disorders, bipolar disease and seasonal depression disorders (Kamnasaran et al., 2003; Pieper et al., 2005; Partonen et al., 2007; Pickard et al., 2009; Huang et al., 2010a; Bersten et al., 2014; Stanco et al., 2014). Structural information has not been available for any NPAS proteins to show if they could bind drug-like molecules for treating psychiatric diseases.\n\nA crystal structure was previously reported for the CLOCK-BMAL1 heterodimer (Huang et al., 2012), and we recently reported crystal structures for both HIF-2\u03b1-ARNT and HIF-1\u03b1-ARNT heterodimers (Wu et al., 2015). In all these complexes, the conserved bHLH-PAS-A-PAS-B protein segments were visualized. While no internal cavities were reported within the CLOCK-BMAL1 architecture; we identified multiple hydrophobic pockets within HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers. Discrete pockets were encapsulated within each of the four PAS domains of their heterodimers (two within ARNT and two within each HIF-\u03b1 protein) (Wu et al., 2015). Beyond the first structural characterizations of NPAS1-ARNT and NPAS3-ARNT complexes presented here, we further addressed if ligand-binding cavities are a common feature of mammalian bHLH-PAS proteins. A comparison of these two structures with those of CLOCK-BMAL1, HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers unveils the larger mammalian bHLH-PAS family as ligand binding transcription factors with internal pockets appropriate for the selective binding of lipophilic molecules and drug-like compounds.\n\n## Results\n\n### NPAS1-ARNT and NPAS3-ARNT architectures\n\nWe employed the contiguous bHLH-PAS-A-PAS-B segments of NPAS1, NPAS3 and ARNT proteins for our crystallographic studies (Figure 1B). For the NPAS1-ARNT heterodimer, we obtained crystals that diffracted to 3.2 \u00c5 resolution (Table 1). The quaternary organization of the NPAS1-ARNT complex is shown in Figure 1C. We found that the bHLH, PAS-A and PAS-B domains of ARNT twist along the outside surface of the NPAS1 protein. Figure 1D shows that NPAS1-ARNT and HIF-2\u03b1-ARNT heterodimers are very similar in overall architectures, but the PAS-B domain of ARNT is slightly displaced in the NPAS1 heterodimeric complex. This observation indicates that the ARNT architecture can display flexibility in accommodating its different class I partners.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>NPAS-ARNT</th>\n      <th>NPAS3-ARNT-DNA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 1</td>\n      <td>P 43</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>69.9, 81.2, 138.1</td>\n      <td>64.8, 64.8, 249.1</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90.4, 95.1, 107.4</td>\n      <td>90.0, 90.0, 90.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50.0\u20133.20 (3.26\u20133.20)*</td>\n      <td>50.0\u20134.20 (4.27\u20134.20)</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>5.5 (76.4)</td>\n      <td>6.0 (84.8)</td>\n    </tr>\n    <tr>\n      <td>CC* (highest resolution shell)</td>\n      <td>0.793</td>\n      <td>0.971</td>\n    </tr>\n    <tr>\n      <td>CC1/2 (highest resolution shell)</td>\n      <td>0.459</td>\n      <td>0.893</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>14.0 (1.2)</td>\n      <td>20.0 (1.1)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>98.6 (98.3)</td>\n      <td>94.6 (72.3)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>2.1 (2.2)</td>\n      <td>5.2 (3.9)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>37.7\u20133.20 (3.32\u20133.20)</td>\n      <td>36.9\u20134.20 (5.28\u20134.20)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>39,096 (802)</td>\n      <td>5868 (2120)</td>\n    </tr>\n    <tr>\n      <td>Rwork/ Rfree (%)</td>\n      <td>19.2/24.9 (28.3/40.4)</td>\n      <td>29.5/36.2 (27.1/34.8)</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein/DNA</td>\n      <td>13,303</td>\n      <td>5313</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein/DNA</td>\n      <td>49.6</td>\n      <td>66.9</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.016</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.46</td>\n      <td>0.77</td>\n    </tr>\n  </tbody>\n</table>\n\n_One crystal was used for each structure.*Highest resolution shell is shown in parenthesis._\n\nWe could not obtain crystals of apo NPAS3-ARNT and instead pursued its DNA complex. The response element for NPAS1-ARNT is known to match the consensus hypoxia response element (HRE) (Ohsawa et al., 2005; Teh et al., 2007), but the response element for NPAS3-ARNT was not previously characterized. NPAS1 and NPAS3 closely share amino-acids within their bHLH domain (75% identity, see Figure 1B and Figure 1\u2014figure supplement 2), including conservation of residues that recognize DNA base-pairs based on our observations of the HIF-2\u03b1-ARNT-DNA complex (Wu et al., 2015). Therefore, we tested if NPAS3-ARNT could efficiently bind to the same consensus HRE sequence used by NPAS1-ARNT and HIF-\u03b1-ARNT heterodimers. We measured the dissociation constants (Kd) using a DNA duplex containing a central HRE sequence (5\u2019-TACGTG-3\u2019) and found similar Kd values of\u00a0~20 nM for both NPAS1-ARNT and NPAS3-ARNT (Figure 2A). These binding constants indicate a relatively higher affinity than that of the HIF-2\u03b1-ARNT heterodimer (Kd~40 nM) (Wu et al., 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig2-v2.jpg)\n\n**Figure 2.:** (A) DNA-binding affinities measured using fluorescence anisotropy. The Kd values of NPAS1-ARNT and NPAS3-ARNT binding to the same HRE element were 16.3\u00a0\u00b1\u00a01.1 nM and 17.5\u00a0\u00b1\u00a01.1 nM, as calculated from three technical replicates respectively. (B) Overall structures of the NPAS3-ARNT-DNA, with the hexameric HRE site colored in cyan and blue. (C) Structure comparison of NPAS3-ARNT-DNA and HIF-2\u03b1-ARNT-DNA complexes aligned on their DNA. (D) Superposition of NPAS3-ARNT and NPAS1-ARNT structures. DNA was omitted from the NPAS3-ARNT complex. Arrows show the extension of \u03b11 helices likely associated with its DNA binding.\n\nWe then obtained crystals for NPAS3-ARNT bound to this HRE element and solved the structure at 4.2 \u00c5 resolution (Figure 2B and Table 1). The resolution made possible an architectural comparison, at the quaternary level, between the NPAS3-ARNT, NPAS1-ARNT, HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers. All of these complexes share a similar overall architecture (Figure 2C,D) stabilized by the same six domain-domain junctions (see below). Furthermore, the cooperation between the two subunits of NPAS3-ARNT also creates a DNA-reading head that is similar to that of the HIF-\u03b1-ARNT-DNA complexes, allowing direct readout of the HRE site (Figure 2C).\n\n### Domain-domain arrangements\n\nWe next tested if the six domain-domain interfaces observed in NPAS1-ARNT and NPAS3-ARNT (Figure 3A) are important for maintaining the stability of their full-length heterodimers within cells. For our study, we used co-immunoprecipitation (co-IP) experiments in HEK293T cells, together with a series of single or double mutations positioned within ARNT (Figure 3B). Mutations in interfaces 1\u20134 were found to significantly destabilize ARNT\u2019s heterodimeric interactions with both NPAS1 and NPAS3, as predicted from their crystal structures. Point mutations within NPAS1 at interfaces 5 and 6 also destabilized heterodimerization with ARNT (Figure 3C). We additionally tested the effects of these destabilizing mutations on the transcriptional function of NPAS1-ARNT. NPAS1 has been shown to function as a transcriptional repressor on its target gene tyrosine hydroxylase (TH), since it lacks a functional transactivation domain (Teh et al., 2006). We confirmed this repression activity in both HRE-driven and TH-driven reporter assays, and further found that mutations that destabilized the heterodimer also compromised the transcriptional repression (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig3-v2.jpg)\n\n**Figure 3.:** (A) Detailed interactions at each of six interfaces in NPAS1-ARNT. Each junction is circled in the context of the overall structure of NPAS1-ARNT on the left, and each interface is further listed in the table. (B) Co-IP experiments showing the effects of ARNT mutations at interfaces 1\u20134 on the cellular stabilities of heterodimers formed with NPAS1, NPAS3, SIM1, NPAS4 and AHR, respectively. (C) Co-IP experiments showing the effects of NPAS1 mutations at interfaces 5 and 6 on the stabilities of NPAS1-ARNT heterodimer. (D) Luciferase reporter assay testing the effects of NPAS1 (wide-type and three mutants) on HRE-driven (left) and tyrosine hydroxylase (TH) promoter-driven (right) transactivation. Each sample represents the average reading of cells from three wells. (E) Co-IP experiments showing the effects of ARNT2 mutations at interfaces 1\u20134 (corresponding to ARNT) on the stabilities of heterodimers formed with SIM1 and NPAS4. The residues and mutants of ARNT, NPAS1 and ARNT2 are labelled in green, cyan and brown, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Secondary structures and positions of the bHLH, PAS-A and PAS-B domains of ARNT are indicated on top. The ARNT residues participating at dimerization interfaces are indicated with green dots.\n\nIn discovering that the NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers utilize the same six domain-domain interfaces to create a shared quaternary structure (Figures 1D and 2D), we also found that this type of architecture is clearly distinct from that of CLOCK-BMAL1 complex (Huang et al., 2012) (Figure 1\u2014figure supplement 3). Therefore, we conclude that there are at least two distinct architectural forms within the mammalian bHLH-PAS family. Since the ARNT heterodimers form a larger group than the BMAL1 heterodimers (Figure 1A), we asked if other ARNT heterodimers rely on the same six domain-domain junctions we observed in NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers. We could experimentally interrogate the degree of architectural variation within the ARNT heterodimer class by using our panel of ARNT mutations that were able to block its heterodimerization with NPAS1 and NPAS3.\n\nUsing co-IP studies, we tested if these same ARNT mutations would disrupt its heterodimeric complexes with SIM1, NPAS4 and AHR (Figure 3B). The SIM1-ARNT heterodimer stability was indeed compromised by these ARNT mutations, indicating that this heterodimer shares the same overall architecture as NPAS1-ARNT, NPAS3-ARNT and the two HIF-\u03b1-ARNT heterodimers. However, NPAS4-ARNT and AHR-ARNT heterodimer stabilities were not impacted in the same manner by these ARNT mutations, particularly when the mutations were located to interfaces 3 and 4. Therefore, we believe there is greater architectural variation within ARNT heterodimer group than what has been crystallographically observed to date. A protein amino-acid sequence alignment further indicates that residues observed to stabilize domain-domain junctions in the NPAS1/3-ARNT and HIF-\u03b1-ARNT heterodimers are much more conserved in SIM1 than in NPAS4 and AHR (Figure 1\u2014figure supplements 1 and 2).\n\nThe ARNT protein is ubiquitously expressed in mammalian cells, but its paralog ARNT2 is more specifically enriched in brain and kidney tissues (Hirose et al., 1996). ARNT and ARNT2 have both unique and overlapping cellular functions (Keith et al., 2001), and ARNT2 has been suggested as the preferred physiological partner for Class I members SIM1 (Michaud et al., 2000) and NPAS4 (Bersten et al., 2014). Since the amino-acid sequence identity at the bHLH-PAS region is nearly 80% between ARNT and ARNT2, and since all the ARNT residues observed to be participating at dimerization interfaces are fully conserved in ARNT2 (Figure 3\u2014figure supplement 1), we predict that ARNT2 heterodimers will display similar overall quaternary architectures as their ARNT counterparts. To test this prediction, we mutated two ARNT2 residues at each of the four dimer interfaces (Figure 3E). Compared with the ARNT mutations (Figure 3B), these corresponding ARNT2 mutations (both single and double ones) indeed had similar effects on the dimerization with not only SIM1 but also NPAS4 (Figure 3E), indicating that ARNT2 indeed dimerizes with SIM1 and NPAS4 in the same way as ARNT does.\n\n### NPAS1-ARNT and NPAS3-ARNT cavities\n\nIn both HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers, we previously identified hydrophobic pockets encapsulated within the two PAS domains of ARNT, and within the two PAS domains of each HIF-\u03b1 protein (Wu et al., 2015). Here we asked if NPAS1-ARNT and NPAS3-ARNT harbored similarly positioned pockets. NPAS1 and NPAS3 are genetically associated with a wide range of human neuropsychiatric disorders (Kamnasaran et al., 2003; Pieper et al., 2005; Stanco et al., 2014). Thus, the discovery of ligand-binding cavities could lead to the future discovery of therapeutic molecules for these illnesses. We show that NPAS1 protein\u2019s PAS-A and PAS-B domains do contain internal cavities with volumes measuring 190 \u00c53 and 180 \u00c53, respectively (Figure 4A,B and Table 2). Similarly positioned pockets are seen in the NPAS3 protein, measuring 100 \u00c53 and 230 \u00c53, respectively. Each of these PAS domains resembles a baseball catcher\u2019s mitt, with the beta strands forming the palm and short alpha-helices forming the opposing thumb to enclose a central pocket.\n\nThrough heterodimerization, ARNT further brings its own two pockets to join each of its class I partners. We examined if the two ARNT pockets alter their shape when ARNT forms different heterodimeric complexes. We could not detect any major change in the cavity size or shape of ARNT\u2019s PAS-A and PAS-B pockets, whether this protein was in a complex with HIF-2\u03b1 or NPAS1 (Figure 4C). ARNT is ubiquitously expressed in many cell types and is predominantly nuclear (Reyes et al., 1992); whereas its class I heterodimerization partners are signal activated and/or tissue restricted. Therefore, the pockets located in NPAS1, NPAS3, HIF-1\u03b1 and HIF-2\u03b1 should allow more selective actions of therapeutic drugs than the pockets within ARNT (Figure 4B\u2013D).\n\n### Variations in protein pockets\n\nOur findings of two similarly positioned pockets within each of NPAS1, NPAS3, HIF-1\u03b1, HIF-2\u03b1 and ARNT led us to consider if any other bHLH-PAS family members could also harbor putative ligand-binding cavities. The crystal structure of CLOCK-BMAL1 has been reported, but no internal cavities were described in its published analysis (Huang et al., 2012). Therefore, we closely examined this structure and found that both CLOCK and BMAL1 proteins contained discrete pockets within each of their PAS-A and PAS-B domains (Figure 4E\u2013G). The BMAL1\u2019s PAS-A and PAS-B pockets (measuring 200 \u00c53 and 220 \u00c53, respectively) are larger than those of CLOCK (measuring 120 \u00c53 and 140 \u00c53, respectively) (Table 2). Crystal structures are unavailable for SIM1 and SIM2 proteins; however, the close evolutionary and amino-acid sequence similarity with the NPAS1 protein led us to generate plausible models for their PAS-A and PAS-B pockets (Figure 4H, Figure 1\u2014figure supplements 1 and 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18790/elife-18790-fig4-v2.jpg)\n\n**Figure 4.:** (A and E) Relative positions of the four pockets (red circles) within the structures of NPAS1-ARNT (A) and CLOCK-BMAL1 (E) complexes. (B\u2013D and F\u2013H) Empty pockets in each of PAS-A and PAS-B domains of NPAS1 (B), ARNT (C), HIF-2\u03b1 (D), CLOCK (F), BMAL1 (G) and SIM1 (H). The accessible cavities are shown in red meshes, together with the amino-acid residues lining each pocket. For NPAS1, the surrounding residues are further covered with 2FO \u2013\u00a0FC map contoured at 1.0\u03c3 (B). The NPAS1 residues with identical counterparts in NPAS3 are in cyan and labelled in black, while those with non-conserved NAPS3 counterparts (indicated in parentheses) are in magenta and labelled in red (B). ARNT pocket residues from apo HIF-2\u03b1-ARNT complex (PDB: 4ZP4) (in wheat) and those from NPAS1-ARNT complex (in green) are superposed for comparison (C). The HIF-2\u03b1 residues with identical counterparts in HIF-1\u03b1 are in magenta, while those with non-conserved HIF-1\u03b1 counterparts (indicated in parentheses) are in green (D). Structures of CLOCK (F) and BMAL1 (G) are from the CLOCK-BMAL1 complex (PDB: 4F3L) in brown and lime, respectively. The SIM1 structure in orange was modelled from NPAS1 and HIF-2\u03b1; and the pocket residues not conserved in SIM2 are in green with their SIM2 counterparts indicated in parentheses (H).\n\n**Table 2.**\n Volumes of ligand-binding pockets of bHLH-PAS proteins.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Location</th>\n      <th>NPAS1</th>\n      <th>NPAS3</th>\n      <th>HIF-1\u03b1</th>\n      <th>HIF-2\u03b1</th>\n      <th>HIF-3\u03b1</th>\n      <th>ARNT</th>\n      <th>CLOCK</th>\n      <th>BMAL1</th>\n      <th>NPAS2</th>\n      <th>SIM1</th>\n      <th>SIM2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PAS-A</td>\n      <td>190</td>\n      <td>100</td>\n      <td>100</td>\n      <td>150</td>\n      <td>170</td>\n      <td>110</td>\n      <td>120</td>\n      <td>200</td>\n      <td>230</td>\n      <td>210</td>\n      <td>210</td>\n    </tr>\n    <tr>\n      <td>PAS-B</td>\n      <td>180</td>\n      <td>230</td>\n      <td>160</td>\n      <td>370</td>\n      <td>590</td>\n      <td>210</td>\n      <td>140</td>\n      <td>220</td>\n      <td>170</td>\n      <td>370</td>\n      <td>310</td>\n    </tr>\n  </tbody>\n</table>\n\n_Pocket volumes (\u00c53) were calculated using CASTp program (Dundas et al., 2006) using the default probe sphere radius of 1.4 \u00c5. The PDB coordinate files used for NPAS1 and NPAS3 proteins were from the NPAS1-ARNT and NPAS3-ARNT-DNA complexes, the coordinates for ARNT and HIF-2\u03b1 were from the apo HIF-2\u03b1-ARNT complex (PDB: 4ZP4), and the coordinates for CLOCK and BMAL1 were from the CLOCK-BMAL1 complex (PDB: 4F3L). The values of PAS-B domains of HIF-1\u03b1 and HIF-3\u03b1 (fatty acid bound) were from high-resolution single domain structures (PDBs: 4H6J and 4WN5), respectively. The PAS-A domain of HIF-3\u03b1, and both PAS domains of NPAS2, SIM1 and SIM2 were modeled using the SWISS-MODEL server (Biasini et al., 2014)._\n\nThe pockets of AHR and its repressor AHRR are more difficult to model based on our existing crystal structures, because of greater sequence and evolutionary divergence of these proteins (Figure 1\u2014figure supplement 1). Interestingly, multiple classes of ligands, including halogenated aromatic hydrocarbons, tetrapyrroles and several tryptophan derivatives were previously identified as direct AHR binding ligands (Denison et al., 2011; Stejskalova et al., 2011). These molecules display significant variations in their chemical structures and sizes, but still bind with high affinities to AHR (Kd values of 0.1\u2013100 nM). High-affinity, multi-ligand binding can best be accounted for by the use of four discrete pockets within AHR-ARNT, as shown here for other ARNT heterodimers, than just one pocket as suggested previously (Pandini et al., 2007).\n\nFigure 4 shows side-by-side comparisons of the PAS-A and PAS-B pockets from multiple bHLH-PAS proteins. Importantly, each PAS domain relies on a constellation of different amino-acids to form its interior cavity, allowing the pockets to bind selectively to different repertoires of endogenous ligands. Moreover, within subgroups such as HIF-1\u03b1/2\u03b1, NPAS1/3, and SIM1/2, the proteins share pocket residues more closely with each other than they do between subgroups. This observation indicates close ligand preferences within subgroups, suggesting they could recognize similar metabolites or signaling molecules derived from the same biosynthetic pathway. Importantly, in all the PAS-A and PAS-B pockets, the amino-acid residues lining interior cavities are predominantly hydrophobic. This property would allow favorable van der Waals interactions with lipophilic ligands. The desolvation of hydrophobic ligands can further contribute to favorable energetics of ligand-binding inside these cavities.\n\nThe internal pocket volumes in the bHLH-PAS family (100\u2013600 \u00c53) (Table 2) are in-line with pocket sizes observed in other classes of ligand-binding proteins (100\u20131000 \u00c53) (Liang et al., 1998). Moreover, we found that ligand binding can increase the size of pocket significantly. For example, HIF-2\u03b1 specific inhibitor 0X3 enlarged its PAS-B pocket volume from 370 \u00c53 to 560 \u00c53 (Wu et al., 2015). These observations suggest a high degree of adaptability in PAS domain pockets, and should encourage future drug-discovery efforts seeking multiple classes of synthetic modulators for bHLH-PAS proteins. An analogy can be made with the nuclear receptor family, where diverse classes of small-molecules can bind to the same pocket, and ligand binding can expand pocket sizes (Huang et al., 2010b).\n\n## Discussion\n\nPreviously, the nuclear receptors were believed to form the only transcription factor family in higher eukaryotes with conserved ligand binding capabilities. We showed here that the mammalian bHLH-PAS proteins constitute a second independent family of transcription factors with the appropriate and conserved molecular frameworks required for multi-ligand binding. Our findings are based on the direct crystallographic analysis of seven distinct bHLH family members (ARNT, HIF-1\u03b1, HIF-2\u03b1, NPAS1, NPAS3, CLOCK and BMAL1). In all these proteins, internal hydrophobic cavities were clearly observed within both their PAS-A and PAS-B domains. These PAS domains become interweaved in bHLH-PAS heterodimers through at least two highly distinct forms of architecture. Aside from the seven members we crystallographically examined, three additional members: AHR (Stejskalova et al., 2011), HIF-3\u03b1 (Fala et al., 2015) and NPAS2 (Dioum et al., 2002) are known to have ligand-binding capabilities associated with at least one of their PAS domains, bringing the experimentally confirmed number of ligand pocket containing members to ten. Our sequence-structure comparative analyses further implicate three more members: ARNT2, SIM1 and SIM2, as likely to harbor pockets due to considerable amino-acid conservations with ARNT and NPAS1.\n\nOur unmasking of the wider bHLH-PAS protein family as a group of transcription factors with multi-ligand-binding capabilities should fuel the future search for their physiological and endogenous ligands. The protein pockets, in each case, make these factors ideally suited for applications of high-throughput screening campaigns to find small-molecule therapeutics for a variety of human diseases, including psychiatric illnesses, cancers and metabolic diseases. The distinctive amino-acid residues inside their pockets predict successful outcomes for screens seeking highly selective modulators for each protein. These pockets are also highly pliable and can accommodate significantly larger ligands than their empty volumes alone suggest.\n\nThe precise mechanism through which endogenous and/or pharmacologic ligands can modulate transcriptional activities of bHLH-PAS proteins has not yet been fully revealed, and could differ for each family member. For example, ligand binding to AHR can displace heat shock protein 90 and initiate the nuclear translocation of AHR (Soshilov and Denison, 2011). Some small-molecule HIF-2\u03b1 antagonists that bind to the PAS-B domain can disrupt the dimerization between HIF-2\u03b1 and ARNT (Scheuermann et al., 2013). Beyond these initial observations to date, and without the availability of small-molecule tools to probe other bHLH-PAS proteins, the mechanistic links between ligand binding and transcriptional regulation remain to be discovered.\n\nIt is interesting that while dimeric nuclear receptors harbor two pockets in their functional architectures, the bHLH-PAS proteins present four distinct pockets. Notably a fifth pocket was also observed in HIF-2\u03b1-ARNT heterodimers, located between two subunits, allowing proflavine to promote subunit dissociation (Wu et al., 2015). The latter finding further suggests that crevices formed between the PAS domains within the quaternary architectures of family members could form additional ligand binding and modulation sites. The availability of so many distinctive pockets within bHLH-PAS proteins could allow a variety of biosynthetic or metabolic signals derived from cellular pathways to be integrated into a single unified functional response. Alternatively, each pocket may allow a bHLH-PAS protein to be the site of unique ligand within each cell-type. The identification and validation of endogenous ligands for this family will help define the genetic programs controlled by each bHLH-PAS member.\n\n## Materials and methods\n\n### Plasmid construction and site-directed mutagenesis\n\nFor protein overexpression in Escherichia coli, mouse NPAS1 (GenBank accession: AAI32114.1, residues 43\u2013423) and NPAS3 (GenBank accession: AAI67248.1, residues 56\u2013455) were cloned into the pSJ2 vector, respectively. For the co-immunoprecipitation studies, full-length mouse NPAS1, NPAS3, SIM1 and NPAS4 were cloned into the pCMV-Tag4 vector (C-terminal Myc-tagged), and mouse ARNT2 was cloned into the pCMV-Tag1 vector (C-terminal Flag-tagged). The cloning of ARNT and AHR constructs has been described previously (Wu et al., 2013, 2015). Site-directed mutagenesis was confirmed in each case by DNA sequencing.\n\n### Protein expression and purification\n\nThe recombinant plasmids pSJ2-NPAS1 and NPAS3 were co-transformed along with pMKH-ARNT into BL21-CodonPlus (DE3)-RIL competent cells (Agilent Technologies, Santa Clara, CA, #230245). Proteins were expressed and purified as previously described (Wu et al., 2015). To prepare NPAS3-ARNT DNA-bound complexes, synthetic 21mer double-strand DNA (forward: 5\u2019- GGCTGCGTACGTGCGGGTCGT-3\u2019 and reverse: 5\u2019-CACGACCCGCACGTACGCAGC-3\u2019) was mixed with the heterodimeric proteins.\n\n### Crystallization and X-ray data collection\n\nCrystallization of the NPAS1-ARNT complex was carried out using the sitting drop vapor diffusion method at 16\u00b0C, by mixing equal volume of protein (4 mg/ml) and reservoir solution containing 2% Tacsimate pH 7.0, 3% PEG3350. Before flash frozen in liquid nitrogen, crystals were soaked in reservoir plus 30% glycerol as the cryoprotectant. NPAS3-ARNT-DNA crystals were grown at 16\u00b0C in sitting drops formed by equal volume of complex (4 mg/ml) and reservoir consisting of 100 mM NH4F, 9% PEG 3350, and then transferred stepwise to cryoprotectant of 100 mM NH4F, 10% PEG 3350 and up to 30% PEG 400 (5% increase each step) prior to flash freezing. Diffraction data were collected at the Argonne National Laboratory SBC-CAT 19ID beamline at 100 K.\n\n### Structure determination and refinement\n\nThe structures of NPAS1-ARNT and NPAS3-ARNT-DNA complexes were solved by molecular replacement with Phaser (RRID: SCR_014219) (McCoy et al., 2007), using the HIF-2\u03b1-ARNT structures (PDB: 4ZP4 and 4ZPK) as the search models. Further manual model building was facilitated using Coot (RRID: SCR_014222) (Emsley et al., 2010), combined with the structure refinement using Phenix (RRID: SCR_014224) (Adams et al., 2010). The diffraction data and final statistics are summarized in Table 1.\u00a0The Ramachandran statistics, calculated by Molprobity (RRID: SCR_014226) (Chen et al., 2010), are 93/0.06% and 89/0.19% (favored/outliers) for NPAS1-ARNT and NPAS3-ARNT-DNA complexes, respectively. All the structural figures were prepared using PyMol (The Pymol Molecular Graphics System, RRID: SCR_000305). Coordinates and structure factors have been deposited in Protein Data Bank under accession numbers 5SY5 (NPAS1-ARNT) and 5SY7 (NPAS3-ARNT-DNA).\n\n### Fluorescence polarization binding assay\n\nThe 21-mer fluoresceinated double-strand DNA was prepared by annealing 6-FAM labelled forward strand (5\u2019-GGCTGCGTACGTGCGGGTCGT-3\u2019) with the unlabeled reverse strand (5\u2019-ACGACCCGCACGTACGCAGCC-3\u2019) in the buffer consisting of 10 mM Tris pH 7.5, 1 mM EDTA and 2 mM MgCl2. For the binding assay, 2 nM DNA was incubated with purified proteins for 30 min, and final protein concentrations were varied by serial dilution in binding buffer (20 mM Tris pH 8.0, 50 mM NaCl and 10 mM DTT). The fluorescence polarization signals were recorded and processed as previously (Wu et al., 2015).\n\n### Co-immunoprecipitation\n\nHEK293T cells (ATCC CRL-3216, RRID: CVCL_0063) were seeded in 10 cm dishes and cultured in DMEM containing 10% FBS (Thermo Fisher Scientific, #11995 and #16000) at 37\u00b0C with 5% CO2. One day later, cells were transfected with 2 \u03bcg pCMV-Tag4-NPAS1, NPAS3, SIM1, NPAS4 or AHR (WT or mutants) and 6 \u03bcg pCMV-Tag1-ARNT or ARNT2 (WT or mutants) plasmids using 16 \u03bcL jetPRIME regent (Polyplus-transfection, #114\u201307). After overnight incubation, medium was refreshed (10 nM 2,3,7,8-tetrachlorodibenzo-p-dioxin added in the case of AHR). Another 24 hr later, cells were harvested and immunoprecipitation was performed similarly to our previous work (Wu et al., 2015).\n\n### Luciferase reporter assay\n\nHEK293T cells were seeded in 24-well plates, and one day later transfected with 200 ng of pCMV-Tag4-NPAS1 (WT, mutants or empty plasmid), 1 ng of pRL (control Renilla luciferase), 100 ng of HRE-luc reporter (Ao et al., 2008) or TH-luc reporter containing the tyrosine hydroxylase promoter sequence (Thiel et al., 2005) using 0.6 \u03bcL jetPRIME regent for each well. Medium was refreshed after overnight transfection, and luciferase activity was measured another 24 hr later using the Dual-Glo Luciferase Assay System (Promega, #E2920). Final data were normalized by the relative ratio of firefly and Renilla luciferase activity.\n",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e6c698ff-854f-4406-a97a-908cd01994d5",
+      "submission_id": "078b3dfe-e777-40aa-94a9-08f29a9d55a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cynthia Wolberger, Johns Hopkins University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18790.013](https://doi.org/10.7554/eLife.18790.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structures of NPAS1-ARNT and NPAS3-ARNT Complexes Implicate bHLH-PAS Family as Multi-Ligand Binding Transcription Factor\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich as the Senior Editor and three reviewers, including Ronald M Evans (Reviewer #3) and a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports a structural and biochemical characterization of two heterodimeric bHLH-PAS domain proteins, NPAS1-ARNT and NPAS3-ARNT, that probes differences in domain-domain arrangements among different subclasses of PAS proteins and identifies broad conservation of ligand-binding pockets that appear capable of binding a broad array of ligands. The structure of NPAS3-ARNT bound to the hypoxia response element (HRE) recognized by NPAS1 establishes the specificity and provides mechanistic insight into DNA binding by NPAS3. Mutations in NPAS1 and NPAS3 underlie varies psychiatric disordered, making these potential targets of drug discovery. A comparison of these structures with a previous structure of related family members, CLOCK and BMAL1, reveals that the latter may also contain previously unnoticed ligand-binding pockets, thereby suggesting that bHLH-PAS proteins may be considered a new class of ligand-regulated transcription factors. The in vivo relevance of these structures is supported by transcriptional reporter assays and protein co-immunoprecipitation studies, where mutations at domain-domain interfaces identified in the structures disrupt the heterodimeric protein-protein interactions. Furthermore, the differential effects of the mutations in ARNT on its interactions with the additional bHLH-PAS family members SIM1, NPAS4 and AHR provide insight into its function as a common co-receptor.\n\nEssential revisions:\n\n1) Data shown in Figure 3D is based on HRE-luciferase reporters. This data should be replaced with validated NPAS/ARNT consensi from one or more of the promoters/enhancers of bona fide NPAS target genes.\n\n2) Mutations found in ARNT that disrupt SIM1 and NPAS4 dimerization should be introduced into ARNT2, and the IPs repeated. ARNT2 is their physiological partner, and this should be confirmed in the 293T assays, not simply inferred from sequence alignment.\n\n3) While the authors draw a comparison between bHLH-PAS proteins and nuclear receptors as ligand binding transcription factors, the conformational changes induced by ligand binding in PAS domains appear subtle, raising questions on how endogenous and/or pharmacologic ligands targeting these pockets affect transcriptional activity. Some discussion on potential mechanisms would improve the manuscript.\n",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "090aab3b-55e8-486c-a754-a6ad5534af71",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C1",
+      "claim": "NPAS1 and NPAS3 are members of the basic helix-loop-helix-PER-ARNT-SIM (bHLH-PAS) family.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuronal PAS domain proteins NPAS1 and NPAS3 are members of the basic helix-loop-helix-PER-ARNT-SIM (bHLH-PAS) family",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a classification of these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1b63d0c3-16f9-4b04-8b6c-2b4f20c20f9a",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C2",
+      "claim": "Genetic deficiencies in NPAS1 and NPAS3 are linked to human psychiatric disorders including schizophrenia, autism spectrum disorders and bipolar disease.",
+      "claim_type": "EXPLICIT",
+      "source": "their genetic deficiencies are linked to a variety of human psychiatric disorders including schizophrenia, autism spectrum disorders and bipolar disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature as indicated in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "58efd173-5b85-40f6-950e-67c4b19d0799",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C3",
+      "claim": "NPAS1 and NPAS3 must each heterodimerize with ARNT to form functional transcription complexes capable of DNA binding and gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS1 and NPAS3 must each heterodimerize with the aryl hydrocarbon receptor nuclear translocator (ARNT), to form functional transcription complexes capable of DNA binding and gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for function in the abstract and is consistent with established knowledge of bHLH-PAS proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "3eb4f8db-b790-4e4d-947c-1d4a2383cced",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C4",
+      "claim": "The crystal structure of NPAS1-ARNT contains four putative ligand-binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we examined the crystal structures of multi-domain NPAS1-ARNT and NPAS3-ARNT-DNA complexes, discovering each to contain four putative ligand-binding pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b510c97c-1162-41b9-b180-4dac5af53cc4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C5",
+      "claim": "The crystal structure of NPAS3-ARNT-DNA contains four putative ligand-binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we examined the crystal structures of multi-domain NPAS1-ARNT and NPAS3-ARNT-DNA complexes, discovering each to contain four putative ligand-binding pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "eee96b4f-3c83-4cba-88a0-a7a360c824f6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C6",
+      "claim": "The mammalian bHLH-PAS family is capable of multi-ligand-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "we show the wider mammalian bHLH-PAS family is capable of multi-ligand-binding and presents as an ideal class of transcription factors for direct targeting by small-molecule drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparative structural analysis of multiple family members.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a6619cf7-92f9-41ec-aa35-0fb49eef4220",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C7",
+      "claim": "The mammalian bHLH-PAS family presents as an ideal class of transcription factors for direct targeting by small-molecule drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "we show the wider mammalian bHLH-PAS family is capable of multi-ligand-binding and presents as an ideal class of transcription factors for direct targeting by small-molecule drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural findings of ligand-binding pockets.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1e52b093-e185-4f3b-8322-cfe9a98b9bc3",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C8",
+      "claim": "Mammalian bHLH-PAS transcription factors share a common protein architecture consisting of a conserved bHLH DNA-binding domain, tandem PAS domains (PAS-A and PAS-B), and a variable activation or repression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian bHLH-PAS transcription factors share a common protein architecture consisting of a conserved bHLH DNA-binding domain, tandem PAS domains (PAS-A and PAS-B), and a variable activation or repression domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the protein family architecture.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "865c3399-0560-4834-a9af-a72544556736",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C9",
+      "claim": "bHLH-PAS factors can be grouped into two classes based on their heterodimerization patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors can be grouped into two classes based on their heterodimerization patterns (McIntosh et al., 2010; Bersten et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "eabe3abf-67de-44b2-804c-169cb7c72043",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C10",
+      "claim": "Class I bHLH-PAS proteins include HIF-1\u03b1, HIF-2\u03b1, HIF-3\u03b1, NPAS1-4, AHR, AHRR, SIM1, SIM2, and CLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Class I includes the three hypoxia-inducible factor (HIF)-\u03b1 proteins (HIF-1\u03b1, HIF-2\u03b1 and HIF-3\u03b1), four neuronal PAS domain proteins (NPAS1-4), aryl hydrocarbon receptor (AHR), AHR repressor (AHRR), single-minded proteins (SIM1, SIM2) and clock circadian regulator (CLOCK)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0b937595-0717-454e-a77e-0a89862accf8",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C11",
+      "claim": "Class II bHLH-PAS proteins include ARNT, ARNT2, BMAL1, and BMAL2.",
+      "claim_type": "EXPLICIT",
+      "source": "while class II includes aryl hydrocarbon receptor nuclear translocator (ARNT, also called HIF-1\u03b2), ARNT2, brain and muscle ARNT-like protein 1 (BMAL1, also called ARNTL) and BMAL2 (ARNTL2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "27e1b328-1056-40b4-9017-b28e4c34c095",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C12",
+      "claim": "Heterodimerization between class I and class II members produces functional transcription factors capable of DNA binding and target gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterodimerization between class I and class II members produces functional transcription factors capable of DNA binding and target gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle of bHLH-PAS protein function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e7c26c9f-5ef7-4ec1-afb3-f7792871b65f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C13",
+      "claim": "HIF-\u03b1 proteins mediate the response to hypoxia and regulate key genetic programs required for tumor initiation, progression, invasion and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the HIF-\u03b1 subgroup mediate the response to hypoxia and regulate key genetic programs required for tumor initiation, progression, invasion and metastasis (Semenza, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b6208855-1d69-4649-99b7-b6de740fb1e3",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C14",
+      "claim": "AHR controls T cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "AHR controls T cell differentiation (Stevens and Bradfield, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "3ded48c3-e4cf-4d63-af2a-38721072568c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C15",
+      "claim": "AHR maintains intestinal immune homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "maintains intestinal immune homeostasis (Leavy, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "7c63427a-50ae-4430-b2d4-1c4310d104ef",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C16",
+      "claim": "AHR is a potential target for alleviating inflammation and autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "making it a potential target for alleviating inflammation and autoimmune diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on AHR's role in immune regulation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "fc2b743f-2511-418a-8cb4-b4992f14b27f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C17",
+      "claim": "Loss-of-function mutations in SIM1 have been linked to severe obesity in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in SIM1 have been linked to severe obesity in human populations (Bonnefond et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6f70fc3a-956c-4e91-a5c0-fffdda0abac6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C18",
+      "claim": "Defects in SIM2 are associated with cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "defects in SIM2 are associated with cancers (Bersten et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "974a34a6-9798-4dc2-8286-becf10ce6406",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C19",
+      "claim": "CLOCK and BMAL1 together establish molecular circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "CLOCK and BMAL1 together establish molecular circadian rhythms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0b1d7fdc-4e5a-4bf3-b6b0-e0008caffc9d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C20",
+      "claim": "Functional disruption of CLOCK and BMAL1 can lead to a variety of metabolic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "their functional disruption can lead to a variety of metabolic diseases (Gamble et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ea4cfacb-c84e-4697-a784-2fdccd06085f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C21",
+      "claim": "NPAS genes are highly expressed in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPAS genes are highly expressed in the nervous system (Zhou et al., 1997; Brunskill et al., 1999; Ooe et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "9caefb44-ad26-422a-9189-834a1977598d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C22",
+      "claim": "In mice, genetic deficiencies in NPAS1 and NPAS3 are associated with behavioral abnormalities including diminished startle response, social recognition deficit and locomotor hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, genetic deficiencies in NPAS1 and NPAS3 are associated with behavioral abnormalities including diminished startle response, social recognition deficit and locomotor hyperactivity (Erbel-Sieler et al., 2004; Brunskill et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b6a2afc2-09bc-4742-a447-16943bc3c007",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C23",
+      "claim": "NPAS2 is highly related to CLOCK in protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS2 is highly related to CLOCK in protein sequence (Reick et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0b7a65ec-2a7c-4827-a965-70e58bc109ae",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C24",
+      "claim": "Altered patterns of sleep and behavioral adaptability have been observed in NPAS2-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "altered patterns of sleep and behavioral adaptability have been observed in NPAS2-deficient mice (Dudley et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ce6575ed-80bd-49a6-be16-bd828f57a418",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C25",
+      "claim": "NPAS4 deficiency is associated with impairment of long-term contextual memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS4 deficiency is associated with impairment of long-term contextual memory formation (Ramamoorthi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e79f30f3-f57b-4dd6-8695-78e5d607185c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C26",
+      "claim": "In humans, alterations in all four NPAS genes have been linked to neuropsychiatric diseases including schizophrenia, autism spectrum disorders, bipolar disease and seasonal depression disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, alterations in all four NPAS genes have been linked to neuropsychiatric diseases including schizophrenia, autism spectrum disorders, bipolar disease and seasonal depression disorders (Kamnasaran et al., 2003; Pieper et al., 2005; Partonen et al., 2007; Pickard et al., 2009; Huang et al., 2010a; Bersten et al., 2014; Stanco et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4bba0682-2c1d-4dec-aa6b-fcbd28783a77",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C27",
+      "claim": "Structural information has not been available for any NPAS proteins prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural information has not been available for any NPAS proteins to show if they could bind drug-like molecules for treating psychiatric diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "d4d9f42c-6c69-4e66-9d13-41e8172b3ea8",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C28",
+      "claim": "A crystal structure was previously reported for the CLOCK-BMAL1 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure was previously reported for the CLOCK-BMAL1 heterodimer (Huang et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4c301684-588c-46eb-8a63-68c90cdea550",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C29",
+      "claim": "Crystal structures for both HIF-2\u03b1-ARNT and HIF-1\u03b1-ARNT heterodimers were recently reported.",
+      "claim_type": "EXPLICIT",
+      "source": "we recently reported crystal structures for both HIF-2\u03b1-ARNT and HIF-1\u03b1-ARNT heterodimers (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e92536c0-0524-455d-af30-f2069909cfee",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C30",
+      "claim": "No internal cavities were reported within the CLOCK-BMAL1 architecture in the original publication.",
+      "claim_type": "EXPLICIT",
+      "source": "While no internal cavities were reported within the CLOCK-BMAL1 architecture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what was reported in prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "fdf20903-ba91-47cd-85b2-d48747675844",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C31",
+      "claim": "Multiple hydrophobic pockets were identified within HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified multiple hydrophobic pockets within HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "aecfc910-8b85-44d2-93d2-e890c1066186",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C32",
+      "claim": "Discrete pockets were encapsulated within each of the four PAS domains of HIF-\u03b1-ARNT heterodimers (two within ARNT and two within each HIF-\u03b1 protein).",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete pockets were encapsulated within each of the four PAS domains of their heterodimers (two within ARNT and two within each HIF-\u03b1 protein) (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1e56d6a8-bd6c-49f4-8ab9-5ab1f878b597",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C33",
+      "claim": "The NPAS1-ARNT heterodimer crystal diffracted to 3.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NPAS1-ARNT heterodimer, we obtained crystals that diffracted to 3.2 \u00c5 resolution (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e9dc9063-78dc-4616-8ee5-c52170d864d4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C34",
+      "claim": "The bHLH, PAS-A and PAS-B domains of ARNT twist along the outside surface of the NPAS1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the bHLH, PAS-A and PAS-B domains of ARNT twist along the outside surface of the NPAS1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ab9b6a40-9ecc-4fc2-9875-f177628ebe4b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C35",
+      "claim": "NPAS1-ARNT and HIF-2\u03b1-ARNT heterodimers are very similar in overall architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1D shows that NPAS1-ARNT and HIF-2\u03b1-ARNT heterodimers are very similar in overall architectures",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison based on crystal structures and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "2673cdab-0a2a-4fb9-8df3-a44ffe68d885",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C36",
+      "claim": "The PAS-B domain of ARNT is slightly displaced in the NPAS1 heterodimeric complex compared to HIF-2\u03b1-ARNT.",
+      "claim_type": "EXPLICIT",
+      "source": "but the PAS-B domain of ARNT is slightly displaced in the NPAS1 heterodimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "482278b2-97b2-4022-bbd0-c17debaeb2bb",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C37",
+      "claim": "The ARNT architecture can display flexibility in accommodating its different class I partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the ARNT architecture can display flexibility in accommodating its different class I partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural observation of PAS-B displacement.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "3a335b0d-49c9-4545-aecb-9cbb73092ac6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C38",
+      "claim": "The response element for NPAS1-ARNT matches the consensus hypoxia response element (HRE).",
+      "claim_type": "EXPLICIT",
+      "source": "The response element for NPAS1-ARNT is known to match the consensus hypoxia response element (HRE) (Ohsawa et al., 2005; Teh et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0ff501e3-f2e8-4c24-ad34-dc5426d88686",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C39",
+      "claim": "The response element for NPAS3-ARNT was not previously characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "but the response element for NPAS3-ARNT was not previously characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e0d0b0fe-08d7-488f-b35a-64b2eae0cbbd",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C40",
+      "claim": "NPAS1 and NPAS3 closely share amino-acids within their bHLH domain (75% identity).",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS1 and NPAS3 closely share amino-acids within their bHLH domain (75% identity, see Figure 1B and Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4e37d217-bb12-42b8-8727-26ca551c7b81",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C41",
+      "claim": "Residues that recognize DNA base-pairs are conserved between NPAS1 and NPAS3.",
+      "claim_type": "EXPLICIT",
+      "source": "including conservation of residues that recognize DNA base-pairs based on our observations of the HIF-2\u03b1-ARNT-DNA complex (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "c26606ec-0ddb-42f4-8b41-8a5d803e1bef",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C42",
+      "claim": "The dissociation constant (Kd) of NPAS1-ARNT binding to HRE DNA is approximately 20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the dissociation constants (Kd) using a DNA duplex containing a central HRE sequence (5'-TACGTG-3') and found similar Kd values of ~20 nM for both NPAS1-ARNT and NPAS3-ARNT (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fluorescence anisotropy measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f64eba6d-21ea-490c-b667-b61cb266af3c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C43",
+      "claim": "The dissociation constant (Kd) of NPAS3-ARNT binding to HRE DNA is approximately 20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the dissociation constants (Kd) using a DNA duplex containing a central HRE sequence (5'-TACGTG-3') and found similar Kd values of ~20 nM for both NPAS1-ARNT and NPAS3-ARNT (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fluorescence anisotropy measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "7e4e7b03-337f-4987-93ed-4f5765b741e6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C44",
+      "claim": "NPAS1-ARNT and NPAS3-ARNT have relatively higher DNA-binding affinity than HIF-2\u03b1-ARNT (Kd~40 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "These binding constants indicate a relatively higher affinity than that of the HIF-2\u03b1-ARNT heterodimer (Kd~40 nM) (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measured binding constants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "edfcf01b-1407-419b-a07a-a634372b56a9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C45",
+      "claim": "The NPAS3-ARNT-DNA complex crystal structure was solved at 4.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We then obtained crystals for NPAS3-ARNT bound to this HRE element and solved the structure at 4.2 \u00c5 resolution (Figure 2B and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "2730525b-35eb-458a-8e7d-c63a5e1f61d9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C46",
+      "claim": "NPAS3-ARNT, NPAS1-ARNT, HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers share a similar overall architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these complexes share a similar overall architecture (Figure 2C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "268cd3a3-4ad9-4b83-a2c2-55ce3c6563b0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C47",
+      "claim": "NPAS3-ARNT, NPAS1-ARNT, HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers are stabilized by the same six domain-domain junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "stabilized by the same six domain-domain junctions (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0e565847-89ee-4374-a11e-d8a54853542f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C48",
+      "claim": "The cooperation between the two subunits of NPAS3-ARNT creates a DNA-reading head that is similar to that of the HIF-\u03b1-ARNT-DNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the cooperation between the two subunits of NPAS3-ARNT also creates a DNA-reading head that is similar to that of the HIF-\u03b1-ARNT-DNA complexes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "3df09cd3-a8fe-474f-b0c4-bf89b70b23e4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C49",
+      "claim": "The DNA-reading head of NPAS3-ARNT allows direct readout of the HRE site.",
+      "claim_type": "EXPLICIT",
+      "source": "allowing direct readout of the HRE site (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "35e467a0-60a1-41de-8378-184a4be0fccc",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C50",
+      "claim": "Mutations in interfaces 1\u20134 significantly destabilize ARNT's heterodimeric interactions with both NPAS1 and NPAS3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in interfaces 1\u20134 were found to significantly destabilize ARNT's heterodimeric interactions with both NPAS1 and NPAS3, as predicted from their crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "2106f04a-3739-4273-89c6-c7f9e51c6dde",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C51",
+      "claim": "Point mutations within NPAS1 at interfaces 5 and 6 destabilize heterodimerization with ARNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations within NPAS1 at interfaces 5 and 6 also destabilized heterodimerization with ARNT (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from co-IP experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "053ef1b7-02c4-4df8-8fe5-e8a250226033",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C52",
+      "claim": "NPAS1 functions as a transcriptional repressor on its target gene tyrosine hydroxylase (TH).",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS1 has been shown to function as a transcriptional repressor on its target gene tyrosine hydroxylase (TH), since it lacks a functional transactivation domain (Teh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b498a859-fd51-4239-94c0-5f4bbf6234d2",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C53",
+      "claim": "NPAS1 lacks a functional transactivation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "since it lacks a functional transactivation domain (Teh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "34c9ad8d-3557-46d6-9ca4-cc0501a1a850",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C54",
+      "claim": "Mutations that destabilize the NPAS1-ARNT heterodimer compromise transcriptional repression.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this repression activity in both HRE-driven and TH-driven reporter assays, and further found that mutations that destabilized the heterodimer also compromised the transcriptional repression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from luciferase reporter assays shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "72635a5c-0727-4016-8ae1-8bea107a250b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C55",
+      "claim": "The NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers utilize the same six domain-domain interfaces to create a shared quaternary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In discovering that the NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers utilize the same six domain-domain interfaces to create a shared quaternary structure (Figures 1D and 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "bc62184f-5ec6-4e41-bda5-b092358994db",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C56",
+      "claim": "The architecture of NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers is clearly distinct from that of CLOCK-BMAL1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "we also found that this type of architecture is clearly distinct from that of CLOCK-BMAL1 complex (Huang et al., 2012) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f403f712-7a5e-404a-abb3-fd95984654b0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C57",
+      "claim": "There are at least two distinct architectural forms within the mammalian bHLH-PAS family.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that there are at least two distinct architectural forms within the mammalian bHLH-PAS family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structural comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "d357fec0-cb36-41b0-8c81-1867a552c2f4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C58",
+      "claim": "The ARNT heterodimers form a larger group than the BMAL1 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ARNT heterodimers form a larger group than the BMAL1 heterodimers (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the classification shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0200f71d-64bd-4901-824f-967508a8c4b7",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C59",
+      "claim": "The SIM1-ARNT heterodimer shares the same overall architecture as NPAS1-ARNT, NPAS3-ARNT and the two HIF-\u03b1-ARNT heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The SIM1-ARNT heterodimer stability was indeed compromised by these ARNT mutations, indicating that this heterodimer shares the same overall architecture as NPAS1-ARNT, NPAS3-ARNT and the two HIF-\u03b1-ARNT heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from co-IP experiments showing similar effects of mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "832cf275-53a2-406e-8d02-72629670cf8c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C60",
+      "claim": "NPAS4-ARNT and AHR-ARNT heterodimer stabilities were not impacted in the same manner by ARNT mutations at interfaces 3 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NPAS4-ARNT and AHR-ARNT heterodimer stabilities were not impacted in the same manner by these ARNT mutations, particularly when the mutations were located to interfaces 3 and 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "42278f82-dca8-4d4d-9308-f14b8e208179",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C61",
+      "claim": "There is greater architectural variation within ARNT heterodimer group than what has been crystallographically observed to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we believe there is greater architectural variation within ARNT heterodimer group than what has been crystallographically observed to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the co-IP experiments showing differential effects of mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "26da1d48-6e8c-4d39-bd21-2b748dc7dbcd",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C62",
+      "claim": "Residues that stabilize domain-domain junctions in NPAS1/3-ARNT and HIF-\u03b1-ARNT heterodimers are much more conserved in SIM1 than in NPAS4 and AHR.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein amino-acid sequence alignment further indicates that residues observed to stabilize domain-domain junctions in the NPAS1/3-ARNT and HIF-\u03b1-ARNT heterodimers are much more conserved in SIM1 than in NPAS4 and AHR (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "34d35e94-2cc7-4bc4-85cf-75cd7b9dd42d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C63",
+      "claim": "ARNT protein is ubiquitously expressed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARNT protein is ubiquitously expressed in mammalian cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "416159dd-ee5c-4c45-aff2-9371f6ccc1fc",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C64",
+      "claim": "ARNT2 is more specifically enriched in brain and kidney tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "but its paralog ARNT2 is more specifically enriched in brain and kidney tissues (Hirose et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "63ea04e3-1101-46a4-bb90-7231bdc513e9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C65",
+      "claim": "ARNT and ARNT2 have both unique and overlapping cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "ARNT and ARNT2 have both unique and overlapping cellular functions (Keith et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "837195bb-6431-45db-9803-2ba9dc2a280b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C66",
+      "claim": "ARNT2 has been suggested as the preferred physiological partner for SIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "ARNT2 has been suggested as the preferred physiological partner for Class I members SIM1 (Michaud et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "d899fd32-4a57-4375-a282-8c2c743bbb3d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C67",
+      "claim": "ARNT2 has been suggested as the preferred physiological partner for NPAS4.",
+      "claim_type": "EXPLICIT",
+      "source": "and NPAS4 (Bersten et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a208cd5d-65cd-411e-b72f-ee8a27736f6f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C68",
+      "claim": "The amino-acid sequence identity at the bHLH-PAS region is nearly 80% between ARNT and ARNT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the amino-acid sequence identity at the bHLH-PAS region is nearly 80% between ARNT and ARNT2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6e5ff10d-167a-42ad-bf89-fa2b8d10365e",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C69",
+      "claim": "All the ARNT residues participating at dimerization interfaces are fully conserved in ARNT2.",
+      "claim_type": "EXPLICIT",
+      "source": "and since all the ARNT residues observed to be participating at dimerization interfaces are fully conserved in ARNT2 (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b4aad57f-41b1-4c05-95eb-e3a07b0df503",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C70",
+      "claim": "ARNT2 heterodimers will display similar overall quaternary architectures as their ARNT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "we predict that ARNT2 heterodimers will display similar overall quaternary architectures as their ARNT counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on sequence conservation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b603c765-1552-4f76-aec4-292fa638c1a0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C71",
+      "claim": "ARNT2 mutations corresponding to ARNT mutations had similar effects on dimerization with SIM1 and NPAS4.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the ARNT mutations (Figure 3B), these corresponding ARNT2 mutations (both single and double ones) indeed had similar effects on the dimerization with not only SIM1 but also NPAS4 (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from co-IP experiments shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "846983e9-9934-4bf4-9430-abed2ffd3f7e",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C72",
+      "claim": "ARNT2 dimerizes with SIM1 and NPAS4 in the same way as ARNT does.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that ARNT2 indeed dimerizes with SIM1 and NPAS4 in the same way as ARNT does.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the co-IP experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4569d44a-1a4c-4578-8b04-d941f8a3a05c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C73",
+      "claim": "NPAS1 protein's PAS-A domain contains an internal cavity with volume measuring 190 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that NPAS1 protein's PAS-A and PAS-B domains do contain internal cavities with volumes measuring 190 \u00c53 and 180 \u00c53, respectively (Figure 4A,B and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is structural data from the crystal structure shown in Figure 4 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "70cc57c2-fc21-4a39-b2ef-0ebe97989588",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C74",
+      "claim": "NPAS1 protein's PAS-B domain contains an internal cavity with volume measuring 180 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that NPAS1 protein's PAS-A and PAS-B domains do contain internal cavities with volumes measuring 190 \u00c53 and 180 \u00c53, respectively (Figure 4A,B and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is structural data from the crystal structure shown in Figure 4 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b116c703-8ca2-414a-8a68-af9dcb4197ea",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C75",
+      "claim": "NPAS3 protein's PAS-A domain contains an internal cavity with volume measuring 100 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly positioned pockets are seen in the NPAS3 protein, measuring 100 \u00c53 and 230 \u00c53, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f21e1d2f-4ffd-4781-8302-06dcd0919420",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C76",
+      "claim": "NPAS3 protein's PAS-B domain contains an internal cavity with volume measuring 230 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly positioned pockets are seen in the NPAS3 protein, measuring 100 \u00c53 and 230 \u00c53, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "775e1940-8d11-48a5-b01d-bad61667d732",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C77",
+      "claim": "Each PAS domain resembles a baseball catcher's mitt, with the beta strands forming the palm and short alpha-helices forming the opposing thumb to enclose a central pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these PAS domains resembles a baseball catcher's mitt, with the beta strands forming the palm and short alpha-helices forming the opposing thumb to enclose a central pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "697f4a14-2cd2-45ef-b85e-a8e963e0ddf9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C78",
+      "claim": "No major change in the cavity size or shape of ARNT's PAS-A and PAS-B pockets was detected when ARNT forms different heterodimeric complexes with HIF-2\u03b1 or NPAS1.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not detect any major change in the cavity size or shape of ARNT's PAS-A and PAS-B pockets, whether this protein was in a complex with HIF-2\u03b1 or NPAS1 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "48d9ad54-c336-48ca-999d-e96920fc045a",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C79",
+      "claim": "ARNT is predominantly nuclear.",
+      "claim_type": "EXPLICIT",
+      "source": "ARNT is ubiquitously expressed in many cell types and is predominantly nuclear (Reyes et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "20a3de78-bfb4-4b70-b342-2534e5b37efb",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C80",
+      "claim": "Class I heterodimerization partners of ARNT are signal activated and/or tissue restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas its class I heterodimerization partners are signal activated and/or tissue restricted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of bHLH-PAS proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8fa09954-0d05-4827-a655-e94408071e20",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C81",
+      "claim": "The pockets located in NPAS1, NPAS3, HIF-1\u03b1 and HIF-2\u03b1 should allow more selective actions of therapeutic drugs than the pockets within ARNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the pockets located in NPAS1, NPAS3, HIF-1\u03b1 and HIF-2\u03b1 should allow more selective actions of therapeutic drugs than the pockets within ARNT (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the tissue-specific expression patterns and structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "9d2cf4ff-209c-4f57-830c-98bb52b48418",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C82",
+      "claim": "Both CLOCK and BMAL1 proteins contain discrete pockets within each of their PAS-A and PAS-B domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we closely examined this structure and found that both CLOCK and BMAL1 proteins contained discrete pockets within each of their PAS-A and PAS-B domains (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from re-examining the published CLOCK-BMAL1 structure, shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a92bc51f-fa3c-4479-8af2-6405697fc497",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C83",
+      "claim": "BMAL1's PAS-A pocket measures 200 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The BMAL1's PAS-A and PAS-B pockets (measuring 200 \u00c53 and 220 \u00c53, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from analysis of the CLOCK-BMAL1 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "fb4073a2-37c5-4bf7-a290-0be8d61820f9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C84",
+      "claim": "BMAL1's PAS-B pocket measures 220 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The BMAL1's PAS-A and PAS-B pockets (measuring 200 \u00c53 and 220 \u00c53, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from analysis of the CLOCK-BMAL1 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "c43b53c3-27e1-47d9-8146-37155ac8f682",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C85",
+      "claim": "CLOCK's PAS-A pocket measures 120 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "are larger than those of CLOCK (measuring 120 \u00c53 and 140 \u00c53, respectively) (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from analysis of the CLOCK-BMAL1 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "3fd00a4a-ded7-454c-950a-0c13072c4092",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C86",
+      "claim": "CLOCK's PAS-B pocket measures 140 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "are larger than those of CLOCK (measuring 120 \u00c53 and 140 \u00c53, respectively) (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural data from analysis of the CLOCK-BMAL1 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "335a7fb4-fb67-4daa-b8a3-a9c476658233",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C87",
+      "claim": "Crystal structures are unavailable for SIM1 and SIM2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures are unavailable for SIM1 and SIM2 proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ba28bd87-1eee-4604-9fb2-4e14afb2df47",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C88",
+      "claim": "SIM1 and SIM2 have close evolutionary and amino-acid sequence similarity with NPAS1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the close evolutionary and amino-acid sequence similarity with the NPAS1 protein led us to generate plausible models for their PAS-A and PAS-B pockets (Figure 4H, Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8fef7369-0bae-4f42-9564-5efcd392bfa0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C89",
+      "claim": "Each PAS domain relies on a constellation of different amino-acids to form its interior cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, each PAS domain relies on a constellation of different amino-acids to form its interior cavity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing multiple PAS domain structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "476b1ae1-d7c7-4af5-a074-d9fb926dc8de",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C90",
+      "claim": "The different amino-acid compositions of PAS domain pockets allow them to bind selectively to different repertoires of endogenous ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "allowing the pockets to bind selectively to different repertoires of endogenous ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural diversity of the pockets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "82cbc7cb-d01a-474f-aaa6-1f380eb777c6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C91",
+      "claim": "Within subgroups such as HIF-1\u03b1/2\u03b1, NPAS1/3, and SIM1/2, the proteins share pocket residues more closely with each other than they do between subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, within subgroups such as HIF-1\u03b1/2\u03b1, NPAS1/3, and SIM1/2, the proteins share pocket residues more closely with each other than they do between subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence and structural comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "7b9e0f73-1e0d-4cb5-9c39-c2cced242b77",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C92",
+      "claim": "Proteins within subgroups could recognize similar metabolites or signaling molecules derived from the same biosynthetic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates close ligand preferences within subgroups, suggesting they could recognize similar metabolites or signaling molecules derived from the same biosynthetic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of pocket residues within subgroups.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6e19fa2a-28e5-43ba-9118-5a52d42ac8d5",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C93",
+      "claim": "In all the PAS-A and PAS-B pockets, the amino-acid residues lining interior cavities are predominantly hydrophobic.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in all the PAS-A and PAS-B pockets, the amino-acid residues lining interior cavities are predominantly hydrophobic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b63f5b88-c69c-4cd8-b111-9ff9021d43f1",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C94",
+      "claim": "The hydrophobic nature of PAS pocket residues would allow favorable van der Waals interactions with lipophilic ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "This property would allow favorable van der Waals interactions with lipophilic ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the chemical properties of hydrophobic residues.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "97c5b20e-e120-49c6-b846-75dc25d3eea3",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C95",
+      "claim": "The desolvation of hydrophobic ligands can contribute to favorable energetics of ligand-binding inside PAS domain cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "The desolvation of hydrophobic ligands can further contribute to favorable energetics of ligand-binding inside these cavities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established principles of ligand binding thermodynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "7f497545-6214-4b98-bd5f-ce79988e73fb",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C96",
+      "claim": "The internal pocket volumes in the bHLH-PAS family range from 100\u2013600 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal pocket volumes in the bHLH-PAS family (100\u2013600 \u00c53) (Table 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e8e74a92-aaad-423f-a2a2-8cc301f1987c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C97",
+      "claim": "The pocket volumes in bHLH-PAS proteins are in-line with pocket sizes observed in other classes of ligand-binding proteins (100\u20131000 \u00c53).",
+      "claim_type": "EXPLICIT",
+      "source": "are in-line with pocket sizes observed in other classes of ligand-binding proteins (100\u20131000 \u00c53) (Liang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with literature values for other ligand-binding proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "82a006ca-8d36-46f3-845d-2b63c7a30196",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C98",
+      "claim": "Ligand binding can increase the size of PAS domain pockets significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that ligand binding can increase the size of pocket significantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior observations with HIF-2\u03b1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "27a4cbd6-b92b-4eba-9272-6993bf52473f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C99",
+      "claim": "HIF-2\u03b1 specific inhibitor 0X3 enlarged its PAS-B pocket volume from 370 \u00c53 to 560 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HIF-2\u03b1 specific inhibitor 0X3 enlarged its PAS-B pocket volume from 370 \u00c53 to 560 \u00c53 (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the authors' prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8d811a60-3cca-44d9-bc6b-a3217f4c84d4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C100",
+      "claim": "PAS domain pockets display a high degree of adaptability.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest a high degree of adaptability in PAS domain pockets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that ligand binding can expand pocket size.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "d7c5c23e-e830-4dae-88fd-3ab869f5695b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C101",
+      "claim": "The adaptability of PAS domain pockets should encourage future drug-discovery efforts seeking multiple classes of synthetic modulators for bHLH-PAS proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and should encourage future drug-discovery efforts seeking multiple classes of synthetic modulators for bHLH-PAS proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications based on the structural findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ef6339f2-da17-4d27-90e6-ae3b2e9dc20b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C102",
+      "claim": "Diverse classes of small-molecules can bind to the same pocket in nuclear receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "An analogy can be made with the nuclear receptor family, where diverse classes of small-molecules can bind to the same pocket",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of nuclear receptors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "aa7cd9f9-6b91-468a-8908-5f935aae3124",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C103",
+      "claim": "Ligand binding can expand pocket sizes in nuclear receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "and ligand binding can expand pocket sizes (Huang et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "c2840dec-4fb3-4ec3-a19d-1adac14f07c7",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C104",
+      "claim": "Nuclear receptors were previously believed to form the only transcription factor family in higher eukaryotes with conserved ligand binding capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the nuclear receptors were believed to form the only transcription factor family in higher eukaryotes with conserved ligand binding capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a0627ce2-21ae-4a61-a479-e9512d5f1215",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C105",
+      "claim": "The mammalian bHLH-PAS proteins constitute a second independent family of transcription factors with the appropriate and conserved molecular frameworks required for multi-ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed here that the mammalian bHLH-PAS proteins constitute a second independent family of transcription factors with the appropriate and conserved molecular frameworks required for multi-ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study based on the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f4e6cad2-9bc8-4438-bb85-a28923a274f4",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C106",
+      "claim": "The findings are based on the direct crystallographic analysis of seven distinct bHLH family members (ARNT, HIF-1\u03b1, HIF-2\u03b1, NPAS1, NPAS3, CLOCK and BMAL1).",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are based on the direct crystallographic analysis of seven distinct bHLH family members (ARNT, HIF-1\u03b1, HIF-2\u03b1, NPAS1, NPAS3, CLOCK and BMAL1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the structural work presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "816239df-47f7-4292-9419-75434c17dc26",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C107",
+      "claim": "In all seven crystallographically examined bHLH-PAS proteins, internal hydrophobic cavities were clearly observed within both their PAS-A and PAS-B domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these proteins, internal hydrophobic cavities were clearly observed within both their PAS-A and PAS-B domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "233ca5a1-a9c7-477d-a1c2-e5031ca4d133",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C108",
+      "claim": "PAS domains become interweaved in bHLH-PAS heterodimers through at least two highly distinct forms of architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "These PAS domains become interweaved in bHLH-PAS heterodimers through at least two highly distinct forms of architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparisons showing differences between ARNT-based and BMAL1-based heterodimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1f29d538-b642-402c-bda3-15fa5235adc0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C109",
+      "claim": "AHR has ligand-binding capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the seven members we crystallographically examined, three additional members: AHR (Stejskalova et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "9a908f3c-7794-4d79-8dd2-bcc035ceee7d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C110",
+      "claim": "HIF-3\u03b1 has ligand-binding capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "HIF-3\u03b1 (Fala et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a7d6974b-4488-4ef7-b8f9-d893b4e0328e",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C111",
+      "claim": "NPAS2 has ligand-binding capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "and NPAS2 (Dioum et al., 2002) are known to have ligand-binding capabilities associated with at least one of their PAS domains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "219da443-0977-4bac-ad98-3e80d35fabd2",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C112",
+      "claim": "Ten bHLH-PAS family members have experimentally confirmed ligand-binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "bringing the experimentally confirmed number of ligand pocket containing members to ten.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a count based on the seven crystallographically examined proteins plus three with known ligand-binding capabilities.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "c2d5e265-82ae-45e9-8f35-31650c4388d5",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C113",
+      "claim": "ARNT2, SIM1 and SIM2 are likely to harbor pockets due to considerable amino-acid conservations with ARNT and NPAS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sequence-structure comparative analyses further implicate three more members: ARNT2, SIM1 and SIM2, as likely to harbor pockets due to considerable amino-acid conservations with ARNT and NPAS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "bc53ba62-4904-4122-89c2-d0f6ebc642e6",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C114",
+      "claim": "The discovery of ligand-binding cavities in bHLH-PAS proteins should fuel the future search for their physiological and endogenous ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Our unmasking of the wider bHLH-PAS protein family as a group of transcription factors with multi-ligand-binding capabilities should fuel the future search for their physiological and endogenous ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "fe4f4bac-534b-4c22-a9ea-ce279515d247",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C115",
+      "claim": "The protein pockets make bHLH-PAS factors ideally suited for applications of high-throughput screening campaigns to find small-molecule therapeutics for a variety of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein pockets, in each case, make these factors ideally suited for applications of high-throughput screening campaigns to find small-molecule therapeutics for a variety of human diseases, including psychiatric illnesses, cancers and metabolic diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about therapeutic applications based on the structural findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "972a4bc9-8f3d-4f86-9456-06de9e2e01c0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C116",
+      "claim": "The distinctive amino-acid residues inside bHLH-PAS pockets predict successful outcomes for screens seeking highly selective modulators for each protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinctive amino-acid residues inside their pockets predict successful outcomes for screens seeking highly selective modulators for each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural diversity of the pockets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "08bbcdf0-448b-4687-8532-b9564446c17a",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C117",
+      "claim": "bHLH-PAS pockets are highly pliable and can accommodate significantly larger ligands than their empty volumes alone suggest.",
+      "claim_type": "EXPLICIT",
+      "source": "These pockets are also highly pliable and can accommodate significantly larger ligands than their empty volumes alone suggest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that ligand binding can expand pocket size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6091dc82-14d9-4ce5-9111-5ba3d1607aed",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C118",
+      "claim": "The precise mechanism through which endogenous and/or pharmacologic ligands can modulate transcriptional activities of bHLH-PAS proteins has not yet been fully revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise mechanism through which endogenous and/or pharmacologic ligands can modulate transcriptional activities of bHLH-PAS proteins has not yet been fully revealed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "89643711-f445-4cae-bfb2-57f3edaacaf7",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C119",
+      "claim": "The mechanism of ligand modulation could differ for each bHLH-PAS family member.",
+      "claim_type": "EXPLICIT",
+      "source": "and could differ for each family member.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the diversity of the family.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "e4dfbb87-339e-4a4b-9994-4a2763c2e213",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C120",
+      "claim": "Ligand binding to AHR can displace heat shock protein 90 and initiate the nuclear translocation of AHR.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ligand binding to AHR can displace heat shock protein 90 and initiate the nuclear translocation of AHR (Soshilov and Denison, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "35e438cc-ed2f-4a81-a1ad-418c4555f79d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C121",
+      "claim": "Some small-molecule HIF-2\u03b1 antagonists that bind to the PAS-B domain can disrupt the dimerization between HIF-2\u03b1 and ARNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Some small-molecule HIF-2\u03b1 antagonists that bind to the PAS-B domain can disrupt the dimerization between HIF-2\u03b1 and ARNT (Scheuermann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "7783bc4a-0c41-4e65-b821-d1893d6d9097",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C122",
+      "claim": "The mechanistic links between ligand binding and transcriptional regulation in bHLH-PAS proteins remain to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond these initial observations to date, and without the availability of small-molecule tools to probe other bHLH-PAS proteins, the mechanistic links between ligand binding and transcriptional regulation remain to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "9433bf55-1de4-434f-8380-3e1ef6e5a0bc",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C123",
+      "claim": "Dimeric nuclear receptors harbor two pockets in their functional architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that while dimeric nuclear receptors harbor two pockets in their functional architectures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of nuclear receptor structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "020e6835-cba3-462e-be9b-389b3fcf09fd",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C124",
+      "claim": "bHLH-PAS proteins present four distinct pockets in their functional architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "the bHLH-PAS proteins present four distinct pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "cc640f97-9faf-408a-99c3-9528539cbe6a",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C125",
+      "claim": "A fifth pocket was observed in HIF-2\u03b1-ARNT heterodimers, located between two subunits, allowing proflavine to promote subunit dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably a fifth pocket was also observed in HIF-2\u03b1-ARNT heterodimers, located between two subunits, allowing proflavine to promote subunit dissociation (Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "69f6c599-ca9b-40a1-8f35-e5be7c9898c9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C126",
+      "claim": "Crevices formed between the PAS domains within the quaternary architectures of bHLH-PAS family members could form additional ligand binding and modulation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter finding further suggests that crevices formed between the PAS domains within the quaternary architectures of family members could form additional ligand binding and modulation sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of the fifth pocket in HIF-2\u03b1-ARNT.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "50a4ba5f-5616-4b7b-b0f6-9f3916861271",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C127",
+      "claim": "The availability of many distinctive pockets within bHLH-PAS proteins could allow a variety of biosynthetic or metabolic signals derived from cellular pathways to be integrated into a single unified functional response.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of so many distinctive pockets within bHLH-PAS proteins could allow a variety of biosynthetic or metabolic signals derived from cellular pathways to be integrated into a single unified functional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of multiple pockets.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "2a16d851-77b2-46d2-b87f-979952d2c05f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C128",
+      "claim": "Each pocket may allow a bHLH-PAS protein to be the site of unique ligand within each cell-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, each pocket may allow a bHLH-PAS protein to be the site of unique ligand within each cell-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of multiple pockets.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a7e90b6d-61db-4d6d-92c6-a3ca2c5db53f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C129",
+      "claim": "The identification and validation of endogenous ligands for bHLH-PAS proteins will help define the genetic programs controlled by each member.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification and validation of endogenous ligands for this family will help define the genetic programs controlled by each bHLH-PAS member.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8d93d3a5-cf04-4dcb-aa41-91ef99271016",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C130",
+      "claim": "Multiple classes of ligands, including halogenated aromatic hydrocarbons, tetrapyrroles and several tryptophan derivatives were previously identified as direct AHR binding ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, multiple classes of ligands, including halogenated aromatic hydrocarbons, tetrapyrroles and several tryptophan derivatives were previously identified as direct AHR binding ligands (Denison et al., 2011; Stejskalova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "88ba0c28-ff56-4049-bd1b-87332046262b",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C131",
+      "claim": "AHR ligands display significant variations in their chemical structures and sizes, but still bind with high affinities to AHR (Kd values of 0.1\u2013100 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "These molecules display significant variations in their chemical structures and sizes, but still bind with high affinities to AHR (Kd values of 0.1\u2013100 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior literature about AHR ligands.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f0a28057-3b5f-44eb-b172-b3ee962cb336",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C132",
+      "claim": "High-affinity, multi-ligand binding by AHR can best be accounted for by the use of four discrete pockets within AHR-ARNT.",
+      "claim_type": "EXPLICIT",
+      "source": "High-affinity, multi-ligand binding can best be accounted for by the use of four discrete pockets within AHR-ARNT, as shown here for other ARNT heterodimers, than just one pocket as suggested previously (Pandini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural findings and comparison with prior models.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "98d8b09c-4d25-4ae1-b0c1-94bdd231a36a",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C133",
+      "claim": "The Kd value of NPAS1-ARNT binding to HRE DNA was 16.3 \u00b1 1.1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd values of NPAS1-ARNT and NPAS3-ARNT binding to the same HRE element were 16.3 \u00b1 1.1 nM and 17.5 \u00b1 1.1 nM, as calculated from three technical replicates respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fluorescence anisotropy measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b6ca1db3-5f3a-4a36-ae03-026c44431d48",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C134",
+      "claim": "The Kd value of NPAS3-ARNT binding to HRE DNA was 17.5 \u00b1 1.1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd values of NPAS1-ARNT and NPAS3-ARNT binding to the same HRE element were 16.3 \u00b1 1.1 nM and 17.5 \u00b1 1.1 nM, as calculated from three technical replicates respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fluorescence anisotropy measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "904faa29-a246-4acf-b8cb-c8cfc4ac7cbe",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C135",
+      "claim": "NPAS1 and NPAS3 share 75% amino-acid identity in their bHLH domains.",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS1 and NPAS3 closely share amino-acids within their bHLH domain (75% identity, see Figure 1B and Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "8ff2823d-7b2d-471b-a0e2-a2043f6260e7",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C136",
+      "claim": "NPAS1 and NPAS3 share 61% amino-acid identity in their PAS-A domains.",
+      "claim_type": "IMPLICIT",
+      "source": "Percent amino-acid identities between corresponding domains of NPAS1 and NPAS3 are in red.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be inferred from Figure 1B which shows the percent identities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "842c1c6a-1353-40f5-a7eb-fcb0cfa4776c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "claim_id": "C137",
+      "claim": "NPAS1 and NPAS3 share 52% amino-acid identity in their PAS-B domains.",
+      "claim_type": "IMPLICIT",
+      "source": "Percent amino-acid identities between corresponding domains of NPAS1 and NPAS3 are in red.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be inferred from Figure 1B which shows the percent identities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acd068f4-56ef-4301-8a74-e700e022ba3c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of NPAS1-ARNT was solved at 3.2 \u00c5 resolution, revealing that ARNT domains twist along the NPAS1 surface with overall architecture similar to HIF-2\u03b1-ARNT, though with slight displacement of ARNT's PAS-B domain indicating flexibility in accommodating different class I partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are well-supported by crystallographic data presented in Table 1 and Figure 1. The 3.2 \u00c5 resolution structure provides sufficient detail for architectural comparisons, and the observed PAS-B displacement is a reasonable structural observation that supports the flexibility inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NPAS3-ARNT binds to the consensus HRE sequence with Kd ~20 nM (similar to NPAS1-ARNT), representing higher affinity than HIF-2\u03b1-ARNT (Kd ~40 nM). The NPAS3-ARNT-DNA complex was crystallized and solved at 4.2 \u00c5 resolution, with DNA-binding residues conserved between NPAS1 and NPAS3 (75% bHLH identity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 are supported by fluorescence anisotropy data (Figure 2A) showing Kd values with error bars from technical replicates, and crystallographic data (Table 1). The sequence conservation analysis and DNA-binding characterization provide converging evidence for NPAS3-ARNT's DNA recognition capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "c56078dd-ed3d-428d-a40d-718f51069ad2",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NPAS3-ARNT, NPAS1-ARNT, HIF-1\u03b1-ARNT and HIF-2\u03b1-ARNT heterodimers share similar overall architecture stabilized by six domain-domain junctions, with NPAS3-ARNT creating a DNA-reading head similar to HIF-\u03b1-ARNT complexes that allows direct HRE readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are supported by structural comparisons shown in Figures 2C-D and detailed interface analysis in Figure 3A. The 4.2 \u00c5 resolution of NPAS3-ARNT-DNA is sufficient for quaternary architecture comparison, though detailed DNA-protein interactions would benefit from higher resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "ba4c7c4c-10e9-4e4e-842a-758763fcb4c2",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations at interfaces 1-6 destabilize NPAS1/NPAS3-ARNT heterodimers and compromise NPAS1's transcriptional repression activity on HRE-driven and TH promoter-driven reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, C54 are supported by co-IP experiments (Figure 3B-C) and luciferase reporter assays (Figure 3D). The functional validation through reporter assays strengthens the structural predictions, showing that interface disruption has biological consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1d7d3112-479c-456b-ae59-6bb3823b7630",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NPAS1-ARNT, NPAS3-ARNT and HIF-\u03b1-ARNT heterodimers utilize the same six domain-domain interfaces creating a shared quaternary structure that is clearly distinct from CLOCK-BMAL1, indicating at least two distinct architectural forms within the mammalian bHLH-PAS family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by structural comparisons (Figures 1D, 2D, Figure 1\u2014supplement 3) and interface analysis (Figure 3A). The identification of two distinct architectural classes is a reasonable conclusion from the structural data, though more family members would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "4eeebb8b-1a6e-4c83-9643-31866c8bf530",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SIM1-ARNT shares the same architecture as NPAS1/3-ARNT and HIF-\u03b1-ARNT based on mutation sensitivity, while NPAS4-ARNT and AHR-ARNT show different responses to interface mutations, suggesting greater architectural variation within the ARNT heterodimer group than crystallographically observed. Sequence analysis shows interface residues are more conserved in SIM1 than in NPAS4 and AHR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by systematic co-IP experiments (Figure 3B) testing multiple heterodimers with the same ARNT mutations, and sequence alignments (Figure 1\u2014supplements 1-2). The differential mutation effects provide indirect but compelling evidence for architectural variation, though direct structural data would be ideal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "01245f64-a73f-46d7-a89d-6a48b1a3e477",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ARNT and ARNT2 share ~80% sequence identity in the bHLH-PAS region with full conservation of dimerization interface residues. Corresponding ARNT2 mutations have similar effects on dimerization with SIM1 and NPAS4 as ARNT mutations, indicating ARNT2 heterodimers display similar quaternary architectures as ARNT counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by sequence analysis (Figure 3\u2014supplement 1) and co-IP experiments (Figure 3E). The prediction of similar architectures based on sequence conservation is validated experimentally through parallel mutation studies, providing strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "5ca41a79-20b7-409d-b714-48be633b64dd",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NPAS1's PAS-A and PAS-B domains contain internal cavities measuring 190 \u00c5\u00b3 and 180 \u00c5\u00b3, while NPAS3 contains similarly positioned pockets of 100 \u00c5\u00b3 and 230 \u00c5\u00b3. Each PAS domain resembles a baseball catcher's mitt structure. ARNT's PAS-A and PAS-B pocket sizes remain unchanged when complexed with different partners (HIF-2\u03b1 or NPAS1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 are supported by crystallographic data (Figure 4A-C, Table 2) with pocket volumes calculated using CASTp. The structural description and pocket conservation across complexes are reasonable observations from the crystal structures, though pocket volume calculations can be sensitive to computational parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "08a8e266-2890-4188-8c8e-f9382eca8357",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Re-examination of the published CLOCK-BMAL1 structure reveals discrete pockets within each PAS-A and PAS-B domain: BMAL1's pockets measure 200 \u00c5\u00b3 (PAS-A) and 220 \u00c5\u00b3 (PAS-B), larger than CLOCK's 120 \u00c5\u00b3 (PAS-A) and 140 \u00c5\u00b3 (PAS-B).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 are supported by re-analysis of published structure (PDB: 4F3L) shown in Figure 4E-G and Table 2. This represents a novel finding from existing data, though it contradicts the original publication's analysis (C30). The pocket identification appears valid based on the structural data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "01af3494-0bbe-4846-89f2-9b9edfb313ac",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Crystal structures are unavailable for SIM1 and SIM2, but sequence-structure analysis indicates they likely harbor pockets due to considerable amino-acid conservation with NPAS1 and ARNT. Similarly, ARNT2 is predicted to harbor pockets based on sequence conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C88, C113 are supported by sequence alignments (Figure 1\u2014supplements 1-2) and homology modeling (Figure 4H). While these are predictions rather than direct observations, they are reasonable inferences based on high sequence conservation in pocket-forming regions. The claim is appropriately qualified as 'likely' rather than definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "38dbf134-be4f-4587-8f2d-eb8e87288e91",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Each PAS domain relies on different amino-acid constellations to form interior cavities, allowing selective binding to different ligand repertoires. Within subgroups (HIF-1\u03b1/2\u03b1, NPAS1/3, SIM1/2), proteins share pocket residues more closely than between subgroups, suggesting they could recognize similar metabolites from the same biosynthetic pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 are supported by structural comparisons (Figure 4) and sequence analysis. The observation of pocket diversity is well-documented, and the inference about ligand selectivity is reasonable. However, the speculation about biosynthetic pathway relationships (C92) is more tentative and would require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "b36adf94-9178-4dd1-88b8-08567f3ee648",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PAS pocket residues are predominantly hydrophobic across all examined proteins, allowing favorable van der Waals interactions and desolvation energetics for lipophilic ligand binding. Pocket volumes (100-600 \u00c5\u00b3) are consistent with other ligand-binding protein classes (100-1000 \u00c5\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97 are supported by structural analysis (Figure 4, Table 2) and comparison with literature values. The chemical reasoning about hydrophobic interactions and desolvation is sound and based on established thermodynamic principles. The volume comparison provides appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "07b4e5bc-1ff1-429f-b7af-ebdd078b1747",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PAS domain pockets display high adaptability, with ligand binding capable of significantly increasing pocket size (e.g., HIF-2\u03b1 inhibitor 0X3 enlarged PAS-B from 370 \u00c5\u00b3 to 560 \u00c5\u00b3). These pockets can accommodate larger ligands than empty volumes suggest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100, C117 are supported by prior work (Wu et al., 2015) showing ligand-induced pocket expansion. The inference about adaptability is reasonable based on this observation, though it relies on a single example from prior work rather than new data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mammalian bHLH-PAS proteins constitute a second independent family of transcription factors (beyond nuclear receptors) with conserved molecular frameworks for multi-ligand binding. This conclusion is based on crystallographic analysis of seven family members (ARNT, HIF-1\u03b1, HIF-2\u03b1, NPAS1, NPAS3, CLOCK, BMAL1) all showing internal hydrophobic cavities in PAS-A and PAS-B domains, with PAS domains interweaving through at least two distinct architectural forms. Ten family members now have experimentally confirmed ligand-binding pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108, C112 represent the major conclusion of the study, supported by comprehensive structural data from multiple family members. The count of ten members includes seven crystallographically examined plus three with known ligand-binding from literature. This is a well-supported major finding that significantly advances understanding of the bHLH-PAS family.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The bHLH-PAS family is capable of multi-ligand binding and presents as an ideal class for small-molecule drug targeting. The distinctive pocket residues and tissue-restricted expression of class I partners (vs. ubiquitous ARNT) should enable selective therapeutic targeting and successful high-throughput screening for modulators. The discovery should fuel searches for physiological ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C7, C81, C101, C114-C116 represent speculative therapeutic implications rather than demonstrated results. While the structural findings (pockets, diversity, adaptability) are well-supported, the claims about being 'ideal' drug targets and predictions of 'successful outcomes' are not experimentally validated. These are reasonable hypotheses for future work but not supported results. The tissue-specific expression argument (C81) is logical but also speculative regarding therapeutic selectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "087631e7-4c56-40f0-9925-022274c05bca",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "bHLH-PAS proteins present four distinct pockets in their functional architectures (vs. two in nuclear receptors). A fifth pocket was observed in HIF-2\u03b1-ARNT between subunits, suggesting crevices between PAS domains could form additional ligand binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C126 are supported by structural data from this work (four pockets) and prior work (fifth pocket, Wu et al., 2015). The inference about additional binding sites in interdomain crevices is reasonable based on the fifth pocket observation, though it remains speculative for other family members.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "403eeaad-0ad0-4d91-9164-ee83096a1035",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "High-affinity, multi-ligand binding by AHR can best be accounted for by four discrete pockets within AHR-ARNT (as shown for other ARNT heterodimers) rather than one pocket as previously suggested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C132 is an inference based on analogy to other ARNT heterodimers and known AHR ligand diversity (C130-C131). However, without direct structural data for AHR-ARNT or experimental validation, this remains speculative. The claim contradicts prior models (Pandini et al., 2007) but lacks direct evidence. The reasoning is logical but requires experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "NPAS1 and NPAS3 are bHLH-PAS family members whose genetic deficiencies are linked to psychiatric disorders. They must heterodimerize with ARNT for DNA binding and gene regulation. The bHLH-PAS family shares common architecture (bHLH, PAS-A, PAS-B domains) and can be grouped into Class I and Class II based on heterodimerization patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C12 represent established background knowledge supported by appropriate citations. These provide context for the study but are not novel findings. The classification and functional requirements are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "80fb58a4-289e-4fd8-8473-a245078b132e",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Various bHLH-PAS family members have established roles in disease: HIFs in cancer, AHR in immune regulation, SIM1/2 in obesity/cancer, CLOCK/BMAL1 in metabolic disease, and NPAS proteins in neuropsychiatric disorders and behavioral abnormalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C26 represent well-established prior knowledge supported by appropriate citations. These provide important disease context and motivation for the structural studies but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior to this study, no structural information was available for NPAS proteins. Previous structures included CLOCK-BMAL1 (without reported cavities) and HIF-\u03b1-ARNT heterodimers (with four pockets identified by the authors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 accurately describe the state of structural knowledge prior to this work, supported by appropriate citations. This establishes the novelty and significance of the current structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "0ac605fb-aa90-4140-b618-21e9e62249b9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "NPAS1 functions as a transcriptional repressor on tyrosine hydroxylase (TH) because it lacks a functional transactivation domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by citation to prior literature (Teh et al., 2006) and confirmed by reporter assays in this study (C54, Figure 3D). This provides functional context for the structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "6772aa24-e516-4f87-8e66-eff21c20c6da",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "ARNT is ubiquitously expressed and predominantly nuclear, while ARNT2 is enriched in brain/kidney. They have overlapping and unique functions, with ARNT2 suggested as preferred partner for SIM1 and NPAS4. Class I partners are signal-activated and/or tissue-restricted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67, C79-C80 represent established knowledge supported by appropriate citations. This provides important biological context for interpreting the structural findings and therapeutic implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "f917ec69-7c3b-4ada-b46e-54d0d1ce6a07",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "AHR, HIF-3\u03b1, and NPAS2 are known to have ligand-binding capabilities associated with at least one PAS domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C111 are supported by citations to prior literature. This information is used to count experimentally confirmed ligand-binding family members (C112) and contextualize the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "80238742-f09e-4e13-9393-f5141795678d",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Multiple ligand classes (halogenated aromatic hydrocarbons, tetrapyrroles, tryptophan derivatives) bind AHR with high affinity (Kd 0.1-100 nM) despite significant structural variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C130-C131 are supported by citations to prior literature. This information provides important context for understanding multi-ligand binding capabilities and is used to support the argument for four pockets in AHR-ARNT (C132).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The precise mechanism of ligand-mediated transcriptional modulation in bHLH-PAS proteins is not fully revealed and could differ for each member. Known examples include AHR's HSP90 displacement/nuclear translocation and HIF-2\u03b1 antagonist-mediated dimer disruption, but mechanistic links remain to be discovered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C122 accurately describe current knowledge gaps and limited mechanistic understanding, supported by appropriate citations. This identifies important future research directions while acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "a37717fb-398a-4ea3-996c-08d47b03030f",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The availability of multiple pockets could allow integration of diverse biosynthetic/metabolic signals into unified responses, or enable cell-type-specific ligand binding. Identifying endogenous ligands will help define genetic programs controlled by each member.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C127-C129 are speculative hypotheses about functional significance of multiple pockets. While these are reasonable possibilities based on the structural findings, they lack experimental support and represent future research directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "5caacd0e-4b44-4c83-a466-ca81e19753e0",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Nuclear receptors were previously believed to be the only transcription factor family in higher eukaryotes with conserved ligand-binding capabilities. They harbor two pockets in dimeric architectures, and diverse small molecules can bind with ligand-induced pocket expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104, C123 represent established knowledge about nuclear receptors supported by appropriate citations. This provides important comparative context for positioning bHLH-PAS proteins as a second ligand-binding transcription factor family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "863ce465-637e-4c5b-946e-b0498bf3b063",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Precise Kd values for NPAS1-ARNT (16.3 \u00b1 1.1 nM) and NPAS3-ARNT (17.5 \u00b1 1.1 nM) binding to HRE DNA were measured from three technical replicates. NPAS1 and NPAS3 share 75% identity in bHLH domains, 61% in PAS-A, and 52% in PAS-B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C133-C137 provide precise quantitative data from fluorescence anisotropy (Figure 2A) and sequence analysis (Figure 1B). The technical replicates and error bars support the measurements, though biological replicates would strengthen confidence. The sequence identities are directly observable from alignments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    },
+    {
+      "id": "82cfd5b9-fa56-4a41-b2d9-d885a47ed9b9",
+      "content_id": "a6adb9cc-8bec-4589-b6ac-7846ca183bb8",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Crystal structures of NPAS1-ARNT and NPAS3-ARNT-DNA each contain four putative ligand-binding pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 represent the primary structural discovery of the manuscript, supported by crystallographic data (Table 1, Figures 1, 2, 4). The identification of four pockets (two in each subunit) is well-documented and represents a major finding. This claim is also captured in the more comprehensive result about the broader family (C105-C108, C112).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:24:13.708108Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e56d6a8-bd6c-49f4-8ab9-5ab1f878b597",
+      "result_id": "acd068f4-56ef-4301-8a74-e700e022ba3c"
+    },
+    {
+      "claim_id": "e9dc9063-78dc-4616-8ee5-c52170d864d4",
+      "result_id": "acd068f4-56ef-4301-8a74-e700e022ba3c"
+    },
+    {
+      "claim_id": "ab9b6a40-9ecc-4fc2-9875-f177628ebe4b",
+      "result_id": "acd068f4-56ef-4301-8a74-e700e022ba3c"
+    },
+    {
+      "claim_id": "2673cdab-0a2a-4fb9-8df3-a44ffe68d885",
+      "result_id": "acd068f4-56ef-4301-8a74-e700e022ba3c"
+    },
+    {
+      "claim_id": "482278b2-97b2-4022-bbd0-c17debaeb2bb",
+      "result_id": "acd068f4-56ef-4301-8a74-e700e022ba3c"
+    },
+    {
+      "claim_id": "3a335b0d-49c9-4545-aecb-9cbb73092ac6",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "0ff501e3-f2e8-4c24-ad34-dc5426d88686",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "e0d0b0fe-08d7-488f-b35a-64b2eae0cbbd",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "4e37d217-bb12-42b8-8727-26ca551c7b81",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "c26606ec-0ddb-42f4-8b41-8a5d803e1bef",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "f64eba6d-21ea-490c-b667-b61cb266af3c",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "7e4e7b03-337f-4987-93ed-4f5765b741e6",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "edfcf01b-1407-419b-a07a-a634372b56a9",
+      "result_id": "4edafd32-8b7c-4d01-9a07-8437fa72e3e1"
+    },
+    {
+      "claim_id": "2730525b-35eb-458a-8e7d-c63a5e1f61d9",
+      "result_id": "c56078dd-ed3d-428d-a40d-718f51069ad2"
+    },
+    {
+      "claim_id": "268cd3a3-4ad9-4b83-a2c2-55ce3c6563b0",
+      "result_id": "c56078dd-ed3d-428d-a40d-718f51069ad2"
+    },
+    {
+      "claim_id": "0e565847-89ee-4374-a11e-d8a54853542f",
+      "result_id": "c56078dd-ed3d-428d-a40d-718f51069ad2"
+    },
+    {
+      "claim_id": "3df09cd3-a8fe-474f-b0c4-bf89b70b23e4",
+      "result_id": "c56078dd-ed3d-428d-a40d-718f51069ad2"
+    },
+    {
+      "claim_id": "35e467a0-60a1-41de-8378-184a4be0fccc",
+      "result_id": "ba4c7c4c-10e9-4e4e-842a-758763fcb4c2"
+    },
+    {
+      "claim_id": "2106f04a-3739-4273-89c6-c7f9e51c6dde",
+      "result_id": "ba4c7c4c-10e9-4e4e-842a-758763fcb4c2"
+    },
+    {
+      "claim_id": "34c9ad8d-3557-46d6-9ca4-cc0501a1a850",
+      "result_id": "ba4c7c4c-10e9-4e4e-842a-758763fcb4c2"
+    },
+    {
+      "claim_id": "72635a5c-0727-4016-8ae1-8bea107a250b",
+      "result_id": "1d7d3112-479c-456b-ae59-6bb3823b7630"
+    },
+    {
+      "claim_id": "bc62184f-5ec6-4e41-bda5-b092358994db",
+      "result_id": "1d7d3112-479c-456b-ae59-6bb3823b7630"
+    },
+    {
+      "claim_id": "f403f712-7a5e-404a-abb3-fd95984654b0",
+      "result_id": "1d7d3112-479c-456b-ae59-6bb3823b7630"
+    },
+    {
+      "claim_id": "0200f71d-64bd-4901-824f-967508a8c4b7",
+      "result_id": "4eeebb8b-1a6e-4c83-9643-31866c8bf530"
+    },
+    {
+      "claim_id": "832cf275-53a2-406e-8d02-72629670cf8c",
+      "result_id": "4eeebb8b-1a6e-4c83-9643-31866c8bf530"
+    },
+    {
+      "claim_id": "42278f82-dca8-4d4d-9308-f14b8e208179",
+      "result_id": "4eeebb8b-1a6e-4c83-9643-31866c8bf530"
+    },
+    {
+      "claim_id": "26da1d48-6e8c-4d39-bd21-2b748dc7dbcd",
+      "result_id": "4eeebb8b-1a6e-4c83-9643-31866c8bf530"
+    },
+    {
+      "claim_id": "a208cd5d-65cd-411e-b72f-ee8a27736f6f",
+      "result_id": "01245f64-a73f-46d7-a89d-6a48b1a3e477"
+    },
+    {
+      "claim_id": "6e5ff10d-167a-42ad-bf89-fa2b8d10365e",
+      "result_id": "01245f64-a73f-46d7-a89d-6a48b1a3e477"
+    },
+    {
+      "claim_id": "b4aad57f-41b1-4c05-95eb-e3a07b0df503",
+      "result_id": "01245f64-a73f-46d7-a89d-6a48b1a3e477"
+    },
+    {
+      "claim_id": "b603c765-1552-4f76-aec4-292fa638c1a0",
+      "result_id": "01245f64-a73f-46d7-a89d-6a48b1a3e477"
+    },
+    {
+      "claim_id": "846983e9-9934-4bf4-9430-abed2ffd3f7e",
+      "result_id": "01245f64-a73f-46d7-a89d-6a48b1a3e477"
+    },
+    {
+      "claim_id": "4569d44a-1a4c-4578-8b04-d941f8a3a05c",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "70cc57c2-fc21-4a39-b2ef-0ebe97989588",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "b116c703-8ca2-414a-8a68-af9dcb4197ea",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "f21e1d2f-4ffd-4781-8302-06dcd0919420",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "775e1940-8d11-48a5-b01d-bad61667d732",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "697f4a14-2cd2-45ef-b85e-a8e963e0ddf9",
+      "result_id": "5ca41a79-20b7-409d-b714-48be633b64dd"
+    },
+    {
+      "claim_id": "9d2cf4ff-209c-4f57-830c-98bb52b48418",
+      "result_id": "08a8e266-2890-4188-8c8e-f9382eca8357"
+    },
+    {
+      "claim_id": "a92bc51f-fa3c-4479-8af2-6405697fc497",
+      "result_id": "08a8e266-2890-4188-8c8e-f9382eca8357"
+    },
+    {
+      "claim_id": "fb4073a2-37c5-4bf7-a290-0be8d61820f9",
+      "result_id": "08a8e266-2890-4188-8c8e-f9382eca8357"
+    },
+    {
+      "claim_id": "c43b53c3-27e1-47d9-8146-37155ac8f682",
+      "result_id": "08a8e266-2890-4188-8c8e-f9382eca8357"
+    },
+    {
+      "claim_id": "3fd00a4a-ded7-454c-950a-0c13072c4092",
+      "result_id": "08a8e266-2890-4188-8c8e-f9382eca8357"
+    },
+    {
+      "claim_id": "335a7fb4-fb67-4daa-b8a3-a9c476658233",
+      "result_id": "01af3494-0bbe-4846-89f2-9b9edfb313ac"
+    },
+    {
+      "claim_id": "ba28bd87-1eee-4604-9fb2-4e14afb2df47",
+      "result_id": "01af3494-0bbe-4846-89f2-9b9edfb313ac"
+    },
+    {
+      "claim_id": "c2d5e265-82ae-45e9-8f35-31650c4388d5",
+      "result_id": "01af3494-0bbe-4846-89f2-9b9edfb313ac"
+    },
+    {
+      "claim_id": "8fef7369-0bae-4f42-9564-5efcd392bfa0",
+      "result_id": "38dbf134-be4f-4587-8f2d-eb8e87288e91"
+    },
+    {
+      "claim_id": "476b1ae1-d7c7-4af5-a074-d9fb926dc8de",
+      "result_id": "38dbf134-be4f-4587-8f2d-eb8e87288e91"
+    },
+    {
+      "claim_id": "82cbc7cb-d01a-474f-aaa6-1f380eb777c6",
+      "result_id": "38dbf134-be4f-4587-8f2d-eb8e87288e91"
+    },
+    {
+      "claim_id": "7b9e0f73-1e0d-4cb5-9c39-c2cced242b77",
+      "result_id": "38dbf134-be4f-4587-8f2d-eb8e87288e91"
+    },
+    {
+      "claim_id": "6e19fa2a-28e5-43ba-9118-5a52d42ac8d5",
+      "result_id": "b36adf94-9178-4dd1-88b8-08567f3ee648"
+    },
+    {
+      "claim_id": "b63f5b88-c69c-4cd8-b111-9ff9021d43f1",
+      "result_id": "b36adf94-9178-4dd1-88b8-08567f3ee648"
+    },
+    {
+      "claim_id": "97c5b20e-e120-49c6-b846-75dc25d3eea3",
+      "result_id": "b36adf94-9178-4dd1-88b8-08567f3ee648"
+    },
+    {
+      "claim_id": "7f497545-6214-4b98-bd5f-ce79988e73fb",
+      "result_id": "b36adf94-9178-4dd1-88b8-08567f3ee648"
+    },
+    {
+      "claim_id": "e8e74a92-aaad-423f-a2a2-8cc301f1987c",
+      "result_id": "b36adf94-9178-4dd1-88b8-08567f3ee648"
+    },
+    {
+      "claim_id": "82a006ca-8d36-46f3-845d-2b63c7a30196",
+      "result_id": "07b4e5bc-1ff1-429f-b7af-ebdd078b1747"
+    },
+    {
+      "claim_id": "27a4cbd6-b92b-4eba-9272-6993bf52473f",
+      "result_id": "07b4e5bc-1ff1-429f-b7af-ebdd078b1747"
+    },
+    {
+      "claim_id": "8d811a60-3cca-44d9-bc6b-a3217f4c84d4",
+      "result_id": "07b4e5bc-1ff1-429f-b7af-ebdd078b1747"
+    },
+    {
+      "claim_id": "08bbcdf0-448b-4687-8532-b9564446c17a",
+      "result_id": "07b4e5bc-1ff1-429f-b7af-ebdd078b1747"
+    },
+    {
+      "claim_id": "a0627ce2-21ae-4a61-a479-e9512d5f1215",
+      "result_id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5"
+    },
+    {
+      "claim_id": "f4e6cad2-9bc8-4438-bb85-a28923a274f4",
+      "result_id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5"
+    },
+    {
+      "claim_id": "816239df-47f7-4292-9419-75434c17dc26",
+      "result_id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5"
+    },
+    {
+      "claim_id": "233ca5a1-a9c7-477d-a1c2-e5031ca4d133",
+      "result_id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5"
+    },
+    {
+      "claim_id": "219da443-0977-4bac-ad98-3e80d35fabd2",
+      "result_id": "6c9e7b6d-0563-45fc-ba83-62ba95505dd5"
+    },
+    {
+      "claim_id": "eee96b4f-3c83-4cba-88a0-a7a360c824f6",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "a6619cf7-92f9-41ec-aa35-0fb49eef4220",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "8fa09954-0d05-4827-a655-e94408071e20",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "d7c5c23e-e830-4dae-88fd-3ab869f5695b",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "bc53ba62-4904-4122-89c2-d0f6ebc642e6",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "fe4f4bac-534b-4c22-a9ea-ce279515d247",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "972a4bc9-8f3d-4f86-9456-06de9e2e01c0",
+      "result_id": "19398435-3e5b-4404-bc25-1d4b1d1e7a7e"
+    },
+    {
+      "claim_id": "020e6835-cba3-462e-be9b-389b3fcf09fd",
+      "result_id": "087631e7-4c56-40f0-9925-022274c05bca"
+    },
+    {
+      "claim_id": "cc640f97-9faf-408a-99c3-9528539cbe6a",
+      "result_id": "087631e7-4c56-40f0-9925-022274c05bca"
+    },
+    {
+      "claim_id": "69f6c599-ca9b-40a1-8f35-e5be7c9898c9",
+      "result_id": "087631e7-4c56-40f0-9925-022274c05bca"
+    },
+    {
+      "claim_id": "f0a28057-3b5f-44eb-b172-b3ee962cb336",
+      "result_id": "403eeaad-0ad0-4d91-9164-ee83096a1035"
+    },
+    {
+      "claim_id": "090aab3b-55e8-486c-a754-a6ad5534af71",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "1b63d0c3-16f9-4b04-8b6c-2b4f20c20f9a",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "58efd173-5b85-40f6-950e-67c4b19d0799",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "1e52b093-e185-4f3b-8322-cfe9a98b9bc3",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "865c3399-0560-4834-a9af-a72544556736",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "eabe3abf-67de-44b2-804c-169cb7c72043",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "0b937595-0717-454e-a77e-0a89862accf8",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "27e1b328-1056-40b4-9017-b28e4c34c095",
+      "result_id": "eef0a22f-2493-411f-97df-b0faf8cf2c8d"
+    },
+    {
+      "claim_id": "e7c26c9f-5ef7-4ec1-afb3-f7792871b65f",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "b6208855-1d69-4649-99b7-b6de740fb1e3",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "3ded48c3-e4cf-4d63-af2a-38721072568c",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "7c63427a-50ae-4430-b2d4-1c4310d104ef",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "fc2b743f-2511-418a-8cb4-b4992f14b27f",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "6f70fc3a-956c-4e91-a5c0-fffdda0abac6",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "974a34a6-9798-4dc2-8286-becf10ce6406",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "0b1d7fdc-4e5a-4bf3-b6b0-e0008caffc9d",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "ea4cfacb-c84e-4697-a784-2fdccd06085f",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "9caefb44-ad26-422a-9189-834a1977598d",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "b6a2afc2-09bc-4742-a447-16943bc3c007",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "0b7a65ec-2a7c-4827-a965-70e58bc109ae",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "ce6575ed-80bd-49a6-be16-bd828f57a418",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "e79f30f3-f57b-4dd6-8695-78e5d607185c",
+      "result_id": "80fb58a4-289e-4fd8-8473-a245078b132e"
+    },
+    {
+      "claim_id": "4bba0682-2c1d-4dec-aa6b-fcbd28783a77",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "d4d9f42c-6c69-4e66-9d13-41e8172b3ea8",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "4c301684-588c-46eb-8a63-68c90cdea550",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "e92536c0-0524-455d-af30-f2069909cfee",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "fdf20903-ba91-47cd-85b2-d48747675844",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "aecfc910-8b85-44d2-93d2-e890c1066186",
+      "result_id": "1bc240b1-fcde-43d1-9bf4-c1f76d3cdd42"
+    },
+    {
+      "claim_id": "053ef1b7-02c4-4df8-8fe5-e8a250226033",
+      "result_id": "0ac605fb-aa90-4140-b618-21e9e62249b9"
+    },
+    {
+      "claim_id": "b498a859-fd51-4239-94c0-5f4bbf6234d2",
+      "result_id": "0ac605fb-aa90-4140-b618-21e9e62249b9"
+    },
+    {
+      "claim_id": "34d35e94-2cc7-4bc4-85cf-75cd7b9dd42d",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "416159dd-ee5c-4c45-aff2-9371f6ccc1fc",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "63ea04e3-1101-46a4-bb90-7231bdc513e9",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "837195bb-6431-45db-9803-2ba9dc2a280b",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "d899fd32-4a57-4375-a282-8c2c743bbb3d",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "48d9ad54-c336-48ca-999d-e96920fc045a",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "20a3de78-bfb4-4b70-b342-2534e5b37efb",
+      "result_id": "6772aa24-e516-4f87-8e66-eff21c20c6da"
+    },
+    {
+      "claim_id": "1f29d538-b642-402c-bda3-15fa5235adc0",
+      "result_id": "f917ec69-7c3b-4ada-b46e-54d0d1ce6a07"
+    },
+    {
+      "claim_id": "9a908f3c-7794-4d79-8dd2-bcc035ceee7d",
+      "result_id": "f917ec69-7c3b-4ada-b46e-54d0d1ce6a07"
+    },
+    {
+      "claim_id": "a7d6974b-4488-4ef7-b8f9-d893b4e0328e",
+      "result_id": "f917ec69-7c3b-4ada-b46e-54d0d1ce6a07"
+    },
+    {
+      "claim_id": "8d93d3a5-cf04-4dcb-aa41-91ef99271016",
+      "result_id": "80238742-f09e-4e13-9393-f5141795678d"
+    },
+    {
+      "claim_id": "88ba0c28-ff56-4049-bd1b-87332046262b",
+      "result_id": "80238742-f09e-4e13-9393-f5141795678d"
+    },
+    {
+      "claim_id": "6091dc82-14d9-4ce5-9111-5ba3d1607aed",
+      "result_id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c"
+    },
+    {
+      "claim_id": "89643711-f445-4cae-bfb2-57f3edaacaf7",
+      "result_id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c"
+    },
+    {
+      "claim_id": "e4dfbb87-339e-4a4b-9994-4a2763c2e213",
+      "result_id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c"
+    },
+    {
+      "claim_id": "35e438cc-ed2f-4a81-a1ad-418c4555f79d",
+      "result_id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c"
+    },
+    {
+      "claim_id": "7783bc4a-0c41-4e65-b821-d1893d6d9097",
+      "result_id": "853bf7b4-82e9-417c-98c4-ca9f3b85f29c"
+    },
+    {
+      "claim_id": "50a4ba5f-5616-4b7b-b0f6-9f3916861271",
+      "result_id": "a37717fb-398a-4ea3-996c-08d47b03030f"
+    },
+    {
+      "claim_id": "2a16d851-77b2-46d2-b87f-979952d2c05f",
+      "result_id": "a37717fb-398a-4ea3-996c-08d47b03030f"
+    },
+    {
+      "claim_id": "a7e90b6d-61db-4d6d-92c6-a3ca2c5db53f",
+      "result_id": "a37717fb-398a-4ea3-996c-08d47b03030f"
+    },
+    {
+      "claim_id": "ef6339f2-da17-4d27-90e6-ae3b2e9dc20b",
+      "result_id": "5caacd0e-4b44-4c83-a466-ca81e19753e0"
+    },
+    {
+      "claim_id": "aa7cd9f9-6b91-468a-8908-5f935aae3124",
+      "result_id": "5caacd0e-4b44-4c83-a466-ca81e19753e0"
+    },
+    {
+      "claim_id": "c2840dec-4fb3-4ec3-a19d-1adac14f07c7",
+      "result_id": "5caacd0e-4b44-4c83-a466-ca81e19753e0"
+    },
+    {
+      "claim_id": "9433bf55-1de4-434f-8380-3e1ef6e5a0bc",
+      "result_id": "5caacd0e-4b44-4c83-a466-ca81e19753e0"
+    },
+    {
+      "claim_id": "98d8b09c-4d25-4ae1-b0c1-94bdd231a36a",
+      "result_id": "863ce465-637e-4c5b-946e-b0498bf3b063"
+    },
+    {
+      "claim_id": "b6ca1db3-5f3a-4a36-ae03-026c44431d48",
+      "result_id": "863ce465-637e-4c5b-946e-b0498bf3b063"
+    },
+    {
+      "claim_id": "904faa29-a246-4acf-b8cb-c8cfc4ac7cbe",
+      "result_id": "863ce465-637e-4c5b-946e-b0498bf3b063"
+    },
+    {
+      "claim_id": "8ff2823d-7b2d-471b-a0e2-a2043f6260e7",
+      "result_id": "863ce465-637e-4c5b-946e-b0498bf3b063"
+    },
+    {
+      "claim_id": "842c1c6a-1353-40f5-a7eb-fcb0cfa4776c",
+      "result_id": "863ce465-637e-4c5b-946e-b0498bf3b063"
+    },
+    {
+      "claim_id": "3eb4f8db-b790-4e4d-947c-1d4a2383cced",
+      "result_id": "82cfd5b9-fa56-4a41-b2d9-d885a47ed9b9"
+    },
+    {
+      "claim_id": "b510c97c-1162-41b9-b180-4dac5af53cc4",
+      "result_id": "82cfd5b9-fa56-4a41-b2d9-d885a47ed9b9"
+    }
+  ],
+  "comparisons": []
+}

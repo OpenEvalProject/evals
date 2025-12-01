@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "LRP6 exhibits distinct stability profiles depending on the measurement method: mature LRP6 is stable (>20 hr half-life) in cycloheximide chase, but ~80% of newly synthesized LRP6 is degraded within 6 hours as measured by short metabolic pulse-chase. The apparent half-life following a 20 min pulse is ~3 hr and is consistent between endogenous LRP6 in RPE1 cells and transiently expressed myc-LRP6 in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 are well-supported by experimental data in Figures 1A-E. The cycloheximide chase (C51) and metabolic pulse-chase experiments (C52, C58) provide converging evidence for the biphasic degradation kinetics. The comparison between cell systems (C53-C54) validates the experimental approach. The inference about mature LRP6 stability (C57) and functional consequences (C59) logically follow from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Newly synthesized LRP6 is degraded by two distinct pathways: early degradation via ERAD (proteasome-dependent, blocked by MG132) and later degradation via lysosomes (blocked by Bafilomycin A). Palmitoylation-deficient LRP6 (LRP6CC-SS) is rescued by MG132 but insensitive to lysosomal inhibitors, indicating that lysosomal degradation requires ER exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 are supported by pharmacological inhibitor experiments shown in Figures 1F-H. The differential sensitivity of wild-type versus palmitoylation-deficient LRP6 to MG132 and Bafilomycin A provides strong evidence for two degradation pathways. The inference that lysosomal degradation requires ER exit (C68) is logically sound given that LRP6CC-SS does not exit the ER.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C35",
+      "C73",
+      "C74",
+      "C82",
+      "C83"
+    ],
+    "result": "Ubiquitination on Lys-1403 promotes LRP6 folding and prevents early degradation. The K1403R mutation accelerates LRP6 degradation more severely than silencing the dedicated chaperone Mesd, indicating that ubiquitination on this residue is critical for LRP6 biogenesis. Both ubiquitination and palmitoylation promote LRP6 biogenesis and ER exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C34, C35, C73, C74, C82, C83 are supported by metabolic pulse-chase experiments in Figure 2A-B showing accelerated degradation of K1403R mutant. The comparison to Mesd silencing (C74) provides important context for the magnitude of the effect. The conclusion that spontaneous folding is inefficient (C82) and that both modifications promote biogenesis (C83) is well-supported by the mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The K1403R mutation does not affect LRP6 degradation following a 20 min pulse compared to wild-type, but accelerated degradation occurs via ERAD (MG132-sensitive) rather than lysosomes (Bafilomycin A-insensitive). LRP6K1403R undergoes polyubiquitination on other lysines, indicating that ERAD targeting does not require Lys-1403 polyubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75-C79 are supported by data in Figures 2A, 2C, and 2D. The observation that K1403R shows similar degradation to wild-type after short pulse (C72) but is rescued by MG132 (C77) and shows polyubiquitination (C78) provides strong evidence. The inference that ERAD does not require K1403 polyubiquitination (C79) is logical given that K1403R still undergoes polyubiquitination and ERAD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "With longer pulse times (2-16 hr), palmitoylation becomes important for LRP6 stability. Even in the absence of Lys-1403 and/or palmitoylation, a small population of LRP6 molecules folds properly and exits the ER, forming a long-lived population at the plasma membrane that is detected by western blotting. This makes western blot analysis potentially misleading for assessing biogenesis efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84-C88 are supported by pulse-chase experiments with varying pulse durations (Figures 2E-F). The observation of biphasic decay curves (C85) and the inference about long-lived plasma membrane populations (C86-C87) are consistent with the data. The cautionary note about western blotting (C88) is a valid inference given that steady-state levels reflect only the long-lived population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "USP19 controls LRP6 cellular levels and biogenesis. USP19 and LRP6 co-immunoprecipitate, and USP19 silencing reveals LRP6 ubiquitination (normally undetectable) and causes drastic drops in LRP6 levels across multiple cell types (HeLa, RPE1, primary fibroblasts). USP19 knockout similarly reduces LRP6 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C46, C89-C95 are well-supported by data in Figures 3A-B and supplementary figures. The co-immunoprecipitation (C89), ubiquitination upon USP19 silencing (C90-C91), and consistent effects across cell types (C92-C94) and genetic manipulations (C95) provide strong converging evidence for USP19's role in controlling LRP6 levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "USP19 influences LRP6 ubiquitination in a manner dependent on its deubiquitinase (DUB) activity. USP19 silencing increases ubiquitination of palmitoylation-deficient LRP6CC-SS and decreases its expression. Wild-type USP19 overexpression, but not catalytically inactive USP19C506S, reduces LRP6CC-SS ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by data in Figure 3\u2014figure supplement 1D-E. The differential effects of wild-type versus catalytically inactive USP19 (C98-C99) provide strong evidence that the DUB activity is required (C100). This is critical for establishing the mechanism of USP19 action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The catalytic activity of USP19 is required for its effect on LRP6 stability, and USP19 does not act as a chaperone. Overexpression of catalytically inactive USP19C506S has no effect on LRP6 stability, indicating that USP19's role is strictly enzymatic rather than chaperone-like.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by metabolic pulse-chase experiments showing no rescue by catalytically inactive USP19. The inference that USP19 does not act as a chaperone (C106) is well-justified by the complete absence of rescue, contrasting with the MAPS pathway where USP19 was proposed to have chaperone activity. This is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Lys-1403 is the specific target site of USP19. Silencing or overexpression of USP19 has no effect on LRP6K1403R, indicating that USP19 cannot reverse the polyubiquitination on other lysines that targets LRP6K1403R to ERAD. This demonstrates both the specificity of USP19 for Lys-1403 and the crucial role of this residue in preventing early degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111-C114 are strongly supported by data in Figure 3E showing complete insensitivity of K1403R to USP19 manipulation. This is a critical control demonstrating site-specificity. The inferences about USP19 specificity (C111, C113-C114) and the role of K1403 (C112) are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "USP19 promotes LRP6 biogenesis: only 18% of newly synthesized LRP6 molecules survive beyond 6 hr in the absence of USP19, while 60% survive upon USP19 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by quantitative analysis of metabolic pulse-chase experiments. The specific percentages provide important quantitative context for the magnitude of USP19's effect on LRP6 biogenesis. These data directly support the conclusion that USP19 promotes biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "USP19 controls Wnt signaling capacity. USP19 overexpression increases Wnt signaling by 50%, while USP19 silencing (but not USP13 silencing) causes >80% drop in Wnt signaling and drastically reduces surface LRP6 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by TOPFLASH reporter assays (Figure 4A-B) and surface biotinylation (Figure 4\u2014figure supplement 1). The specificity control with USP13 (C120) strengthens the conclusion. These functional data demonstrate that USP19's effects on LRP6 biogenesis have physiological consequences for Wnt signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The ubiquitin-dependent folding system controlled by USP19 also regulates other membrane proteins. USP19 silencing decreases CMG2 and wild-type CFTR levels but does not affect TEM8, Transferrin receptor, or EGF receptor levels, indicating selectivity for certain poorly-folding membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C132, C134-C137 are supported by western blot data in Figure 4D-E. The selectivity (some proteins affected, others not) is important for establishing that this is not a general effect on all membrane proteins. However, the mechanism by which USP19 selects substrates remains unclear and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors propose a model where LRP6 undergoes cycles of ubiquitination on Lys-1403 (promoting folding via interaction with a putative ubiquitin-binding chaperone) and deubiquitination by USP19. Successfully folded LRP6 exits the ER (promoted by palmitoylation), while unsuccessfully folded LRP6 undergoes polyubiquitination on other lysines leading to ERAD. This is conceptually analogous to the glucosylation-deglucosylation cycle in the calnexin/calreticulin system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C122-C129 represent a mechanistic model that is partially speculative. While the role of USP19 in deubiquitinating K1403 (C124) is well-supported, the existence of a ubiquitin-binding chaperone (C123) is hypothetical. The analogy to the calnexin/calreticulin system (C5, C129) is conceptually reasonable but remains to be experimentally validated. The model requires identification of the proposed ubiquitin-binding chaperone and the E3 ligases involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims about membrane protein folding: Many membrane proteins fold inefficiently and require chaperones. Transmembrane proteins (30% of human proteome) are synthesized by ER-bound ribosomes and must fold in three environments (ER lumen, membrane, cytosol). Luminal chaperones are well-characterized, but less is known about cytosolic/membrane folding assistance. Failed folding leads to ERAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C23 are background knowledge supported by appropriate citations to prior work. These establish the context for the current study and are generally accepted in the field. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims about LRP6 and CFTR: LRP6 is a Wnt signaling coreceptor associated with human diseases. CFTR is a poorly-folding protein where <25% reaches the plasma membrane, and the \u0394F508 mutation causes Cystic Fibrosis by affecting folding and promoting ERAD. LRP6 structure and dependence on Mesd chaperone are established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C24-C28 are background knowledge supported by appropriate citations. These provide important context for why LRP6 and CFTR are relevant model systems for studying membrane protein folding. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C64",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prior work on LRP6 palmitoylation: LRP6 undergoes palmitoylation on Cys-1394 and Cys-1399, which is required for ER exit. Palmitoylation-deficient LRP6 is retained in the ER and undergoes ubiquitination on Lys-1403. Properly folded LRP6 transits through the Golgi (acquiring EndoH-resistant sugars) before reaching the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31-C33, C64, C69-C71 describe prior work from the same laboratory (Abrami et al., 2008b). These are appropriately cited and provide essential background for the current study. The current work builds directly on these prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C47"
+    ],
+    "result": "Speculative mechanistic claims: LRP6 palmitoylation may alleviate hydrophobic mismatch in the transmembrane domain. Upon K1403 ubiquitination, LRP6 presumably interacts with an ubiquitin-binding protein that acts as a chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30 and C47 are explicitly speculative (\"possibly,\" \"presumably\"). While these are reasonable hypotheses based on the data, they lack direct experimental support. The putative ubiquitin-binding chaperone (C47) is a key missing component of the proposed model that requires identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background on USP19: USP19 has an ER-localized isoform and plays roles in skeletal muscle atrophy, controls stability of several cytoplasmic proteins (c-IAP1/2, HIF-1\u03b1, Beclin1), is a UPR target gene, rescues CFTR \u0394F508 from ERAD, and participates in the MAPS pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide background on USP19 supported by appropriate citations. These establish why USP19 was a candidate for the deubiquitinase role. The citations appear accurate, though the relationship between the current findings and the MAPS pathway (C43) is later clarified as distinct (C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "Additional background claims: Palmitoylation promotes LRP6 ER exit. Impaired folding leads to polyubiquitination and ERAD. CMG2 loss-of-function causes Hyaline Fibromatosis Syndrome. The glycoprotein quality control system uses de-glucosidation (promoting folding) and de-mannosidation (targeting to ERAD) with different kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C130-C131, C133 are background knowledge supported by appropriate citations. The glycoprotein quality control system (C130-C131) provides an important conceptual framework for understanding the proposed ubiquitin-based system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "RPE1 USP19 knockout cell lines were generated using CRISPR/Cas9 technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is a methodological statement supported by description in the Materials and Methods section and data shown in Figure 1\u2014figure supplement 1B. This is a standard technique appropriately applied.",
+    "result_type": "MINOR"
+  }
+]

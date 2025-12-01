@@ -1,0 +1,2116 @@
+{
+  "submission": {
+    "id": "e2ccac48-c55d-4001-8e79-c07f001abecc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:56:52.188433Z",
+    "updated_at": "2025-11-30T23:56:52.188433Z"
+  },
+  "content": [
+    {
+      "id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "submission_id": "e2ccac48-c55d-4001-8e79-c07f001abecc",
+      "content_type": "manuscript",
+      "content_text": "# Dual interaction of scaffold protein Tim44 of mitochondrial import motor with channel-forming translocase subunit Tim23\n\n## Authors\n\n- See-Yeun Ting<sup>1</sup>\n- Nicholas L Yan<sup>1</sup>\n- Brenda A Schilke<sup>1</sup>\n- Elizabeth A Craig<sup>1</sup> ([ORCID: 0000-0002-9381-4307](https://orcid.org/0000-0002-9381-4307)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteins destined for the mitochondrial matrix are targeted to the inner membrane Tim17/23 translocon by their presequences. Inward movement is driven by the matrix-localized, Hsp70-based motor. The scaffold Tim44, interacting with the matrix face of the translocon, recruits other motor subunits and binds incoming presequence. The basis of these interactions and their functional relationships remains unclear. Using site-specific in vivo crosslinking and genetic approaches in Saccharomyces cerevisiae, we found that both domains of Tim44 interact with the major matrix-exposed loop of Tim23, with the C-terminal domain (CTD) binding Tim17 as well. Results of in vitro experiments showed that the N-terminal domain (NTD) is intrinsically disordered and binds presequence near a region important for interaction with Hsp70 and Tim23. Our data suggest a model in which the CTD serves primarily to anchor Tim44 to the translocon, whereas the NTD is a dynamic arm, interacting with multiple components to drive efficient translocation.\n\n## Introduction\n\nMitochondria are essential organelles necessary for a variety of critical metabolic functions. Since the vast majority of proteins in the mitochondria are encoded by nuclear DNA, efficient translocation of proteins from the cytoplasm is required for robust mitochondrial function (Sickmann et al., 2003). Proteins destined for the matrix initially enter mitochondria via the TOM complex of the outer membrane, and are then translocated across the inner membrane into the matrix through the Tim17/23 translocon (Endo and Yamano, 2009; Schmidt et al., 2010). Most matrix-bound proteins are synthesized as preproteins with a positively charged amino-terminal targeting sequence (presequence), which interacts sequentially with \u2018receptor\u2019 proteins in transit from the cytosol to the inner membrane translocon (Bajaj et al., 2014; Lytovchenko et al., 2013; Marom et al., 2011b; Shiota et al., 2011). Upon insertion of the presequence into the translocon, it is driven into the matrix by the membrane potential across the inner membrane. Translocation of the remainder of the preprotein requires action of the mitochondrial import motor, which resides on the matrix side of the inner membrane (Chacinska et al., 2009; Marom et al., 2011a; Neupert, 2015; Schulz et al., 2015).\n\nThe Tim17/23 translocon is composed of two essential and related integral membrane proteins. Both Tim17 and Tim23 have four membrane-spanning helices and two hydrophilic loops facing the matrix (Alder et al., 2008; Bauer et al., 1996). In addition, Tim23 has an N-terminal domain in the intermembrane space (IMS) that interacts with presequence (de la Cruz et al., 2010). The translocon maintains the potential across the inner membrane. Tim23 forms the protein-conducting pore itself, whereas Tim17 contributes to the structure and gating of the channel (Bauer et al., 1996; Martinez-Caballero et al., 2007; Meier et al., 2005; Ryan et al., 1998; Truscott et al., 2001). Upon interaction with a presequence, the channel opens to allow passage of the incoming polypeptide, driven by the membrane potential (Truscott et al., 2001). The driving force of the motor for translocation of the remainder of the protein is provided by the ATP-hydrolyzing 70 kDa heat shock protein (mtHsp70) (Gambill et al., 1993; Kang et al., 1990). Like all Hsp70s, mtHsp70\u2019s innate ATPase activity is weak and stimulated by a J-protein co-chaperone. This hydrolysis drives conformational changes in mtHsp70, serving to stabilize interaction with the translocating polypeptide. Pam18 (Tim14) is the J-protein co-chaperone that serves this function for the import motor (D'Silva et al., 2003; Truscott et al., 2003). It is a transmembrane protein that interacts with Tim17 in the IMS and with Pam16 (Tim16) in the matrix (Chacinska et al., 2005; Schilke et al., 2012). Neither mtHsp70, Pam18 nor Pam16 directly interact with the translocon in the matrix. Rather, the essential peripheral inner membrane protein, Tim44, serves as a scaffold, bridging the translocon and other motor components (Schiller et al., 2008; Ting et al., 2014). The motor also contains the nonessential, transmembrane protein, Pam17, thought to be involved in early steps of the translocation process (Hutu et al., 2008; Schiller, 2009). Pam17 does not interact with Tim44, but directly with matrix-exposed loop 1 of Tim17 (Ting et al., 2014).\n\nTim44 is a two-domain protein, consisting of the N-terminal (residues 43 to 209) and C- terminal (residues 210 to 431) domains, referred to as NTD and CTD, respectively, with the first 42 residues being the cleavable presequence. Structural information about the NTD is lacking. However, evidence indicates that it interacts with Tim23, mtHsp70 and Pam16 (Schilke et al., 2012; Schiller et al., 2008). The function of the CTD is less clear. However, structural information is available (Figure 1A) (Handa et al., 2007; Josyula et al., 2006). The CTD is composed of both \u03b1-helices and \u03b2-strands, with the core forming an \u03b1+\u03b2 barrel. Two N-terminal \u03b1-helices, suggested to be involved in membrane binding (Marom et al., 2009), protrude from the core. Although much progress has been made in understanding Tim44 function, large gaps remain. For example, although recent data indicates that the CTD interacts with Tim17 (Banerjee et al., 2015), the basis of the interaction and importance is unknown. Likewise, precursor proteins have been crosslinked to Tim44 in organellar (Blom et al., 1993; Gruhler et al., 1997; Kanamori et al., 1997; Scherer et al., 1992) and presequence peptides to purified Tim44 in vitro (Marom et al., 2011b), raising the possibility that Tim44 plays a regulatory role in transferring translocating polypeptides to mtHsp70, activating the motor. However, no information is available regarding where on Tim44 the presequence interaction occurs. Lack of such information impedes our understanding of the mechanism of this critical molecular machine. With a goal of overcoming these deficits, we utilized a variety of experimental approaches. We report three key findings regarding Tim44 function: the CTD specifically crosslinks to both Tim23 and Tim17; both the NTD and the CTD crosslink to the matrix exposed loop 1 of Tim23 in vivo; the NTD, which we found to be intrinsically disordered, but not the CTD, interacts with presequence. These new data allow presentation of a more comprehensive model of how the action of the translocon and import motor are coupled to drive import of proteins into the mitochondrial matrix.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of the CTD of Tim44; PDB entry 2FXT (Josyula et al., 2006). \u03b1-helices and \u03b2-strands are labeled. Residue D345 is indicated and shown in sphere representation. Right view of the structure, rotated 90\u00b0 along the horizontal axis from the orientation on the left. (B) Growth phenotype. Ten-fold serial dilutions of tim44-\u0394 cells expressing the indicated Tim44 variants were plated on minimal media and incubated at the indicated temperatures and times. (C) Sequence alignment of Tim44 from indicated eukaryotic species was done using Clustal Omega; residue D345 is indicated (*). (D) 5 and 15 \u03bcg of mitochondria isolated from Tim44 mutants were analyzed by SDS\u2013PAGE, followed by immunoblotting against Tim23-and Tim44-specific antibodies. (E) Precursor accumulation. Whole cell lysates of the indicated TIM44 mutants were prepared from cells grown at 30\u00b0C and shifted to 37\u00b0C for 6 hr. Proteins separated by SDS\u2013PAGE were subjected to immunoblot analysis using antibodies specifiic to Hsp60. The Hsp60 precursor form (pre-Hsp60) and mature form (mHsp60) are indicated. (F) 35S-labeled precursors of cytochrome b2-(167)\u039419-DHFR and cytochrome c1 were imported into wild-type (WT) and tim44D345K mutant mitochondria at 25\u00b0C. Where indicated, mitochondria were subsequently treated with proteinase K (Prot. K). Samples were analyzed by SDS-PAGE and autoradiography. p, precursor; I, intermediate; m, mature. (G) Co-immunoprecipitation with Tim23. Mitochondria were solubilized by treatment with digitonin. Solubilized material was subjected to immunoprecipitation using Tim23-specific antibodies crosslinked to protein A beads. Precipitates were analyzed by SDS-PAGE and immunoblotting using antibodies specific for the indicated proteins. 10% of input was used as a loading control. Signals were quantified by Image J software (RRID: SCR_003070) and plotted as percentages of the wt control reaction value. Data represent the mean \u00b1 standard deviation, with n\u00a0=\u00a03. The data of the figure can also be seen in Figure 1\u2014source data 1.\n\n## Results\n\n### Residue D345 in the Tim44 CTD is important for translocon association\n\nAs a first step in better defining the roles of the Tim44 CTD, we carried out a screen for temperature sensitive (ts) Tim44 mutants with a goal of identifying functionally important surface exposed residues. Screening an error-prone PCR library of TIM44, we identified an aspartic acid to glycine alteration at position 345 that met these criteria. tim44D345G grows poorly at 37\u00b0C (Figure 1B). D345 is surface exposed, located in the linker region between the first long \u03b2-strand (\u03b21a) of the CTD\u2019s antiparallel \u03b2-sheet and the adjacent, shorter \u03b2-strand (\u03b21b). Alignment of Tim44 sequences from a wide range of eukaryotes revealed that the aspartic acid is conserved (Figure 1C).\n\nWe further tested the functional importance of residue 345 by substituting alanine or lysine for aspartate. tim44D345A had no obvious growth phenotype at 37\u00b0C. tim44D345K had a significant growth defect even at 30\u00b0C, and did not form colonies at 37\u00b0C. All three Tim44 variants were expressed at a level similar to that of wild type (wt) protein (Figure 1D). To assess whether substitutions at position 345 caused a defect in mitochondrial protein import, accumulation of the precursor form of the mitochondrial matrix protein Hsp60 after transferring of cells to 37\u00b0C was monitored using immunoblotting analysis (Figure 1E). Hsp60 precursor accumulation was observed in tim44D345G and tim44D345K, consistent with the observed growth defects. Import of precursor proteins into mitochondria isolated from wt and tim44D345K cells was also tested (Figure 1F). Two radiolabeled precursors were used: cytochrome b2-(167)\u220619-DHFR, a precursor protein composed of mouse DHFR fused to the N-terminal 167 amino acids of cytochrome b2 with a deletion of 19 amino acids within the inner membrane sorting signal to ensure sorting to the matrix rather than the inner membrane and cytochrome c1 which is sorted to the inner membrane through the Tim23 translocon in a motor-independent manner (Hutu et al., 2008). While the accumulation of cleaved, protease-resistant cytochrome c1 were very similar in the two types of mitochondria, tim44D345K was severely defective in import of cytochrome b2-(167)\u220619-DHFR compared to wt (Figure 1F).\n\nTo test whether alteration of D345 affected interaction of Tim44 and other components of the motor with the Tim17/23 translocon, we carried out co-immunoprecipitation experiments using mitochondrial lysates and affinity-purified Tim23-specific antibody. As expected, the motor components, Tim44, Pam16 and Pam18, co-precipitated with Tim23 from wt lysates. However, these motor components, particularly Tim44, were reduced in co-precipitates from mitochondrial lysates of tim44D345G and tim44D345K, even though the amounts of Tim23 precipitated from the two extracts were similar. (Figure 1G). As previously reported, binding of Pam17 with the TIM23 complex increases when the association of Tim44 decreases (Hutu et al., 2008; Schilke et al., 2012). These results indicate that alteration of residue 345 of Tim44\u2019s CTD compromises the association of the motor components with the translocon.\n\n### Functional importance of conserved residues near D345\n\nWe extended our analysis to other conserved, surface exposed residues near D345 on \u03b21 strand, adjacent \u03b22 strand or \u03b14 helix, around which the \u03b2-sheet curves. Five residues (E295, E303, R342, E350, and R370) were individually changed to alanine (Figure 2A, Figure 2\u2014figure supplement 1). All mutants grew normally at the temperatures tested, even at 37\u00b0C (Figure 2A). Since tim44D345A also had no obvious phenotype, we decided to construct double substitution mutants, changing the D345 codon and one of the other five to alanine (Figure 2B). All variants were expressed at levels similar to wt Tim44 (Figure 2C). Two of the double alanine mutants, tim44D345A/R342A and tim44D345A/R370A, had no obvious growth defect. Two others, tim44D345A/E295A and tim44D345A/E350A, were ts, growing slowly at 37\u00b0C. The growth defect of tim44D345A/E303A was the most extreme. It did not form colonies at 30\u00b0C and grew very slowly at 23\u00b0C (Figure 2B). Hsp60 precursor accumulation was observed in all double alanine mutant strains that had growth defects (i.e. tim44D345A/E295A, tim44D345A/E303A, tim44D345A/E350A) (Figure 2D). In addition, motor components, particularly Tim44, were reduced in Tim23 co-precipitates from lysates of tim44D345A/E295A, tim44D345A/E350A, and tim44D345A/E303A mitochondria (Figure 2E). As tim44D345A/E303A had the most severe defect in association of motor components, we tested import functionality using in organellar import assays. Similar to tim44D345K, tim44D345A/E303A mitochondria were defective in import of cytochrome b2-(167)\u220619-DHFR (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structure of the CTD of Tim44; PDB entry 2FXT (Josyula et al., 2006). The five nearby charged residues analyzed (E295, E303, R342, E350, and R370) are indicated. (B) Growth phenotype. Ten-fold serial dilutions of tim44-\u0394 cells expressing the indicated Tim44 variants were plated on minimal media and incubated at the indicated temperatures and times. (C) 5 and 15 \u03bcg of mitochondria isolated from Tim44 mutants were analyzed by SDS\u2013PAGE, followed by immunoblotting against antibodies to Tim23 and Tim44. (D) Precursor accumulation. Whole cell lysates from indicated cells grown at 30\u00b0C and shifted to 37\u00b0C for 6 hr (left). tim44D345A/E303A was grown at 23\u00b0C and then shifted to 37\u00b0C for 6 hr, because it does not grow at 30\u00b0C (right). Proteins separated by SDS\u2013PAGE were subjected to immunoblot analysis using antibodies specific to Hsp60. The Hsp60 precursor form (pre-Hsp60) and mature form (mHsp60) are indicated. (E) Co-immunoprecipitation with Tim23. Mitochondria were solubilized by treatment with digitonin. Solubilized material was subjected to immunoprecipitation using Tim23-speci\ufb01c antibodies crosslinked to protein A beads. Precipitates were analyzed by SDS-PAGE and immunoblotting using antibodies speci\ufb01c for the indicated proteins. 10% of input for immunoprecipitation was used as a loading control. Signals were quantified by Image J (RRID: SCR_003070) software and plotted as percentages of the wild-type control reaction value. Data represent the mean \u00b1 standard deviation, with n\u00a0=\u00a03. The data of the figure can also be seen in Figure 2\u2014source data 1. (F) 35S-labeled precursors of cytochrome b2-(167)\u039419-DHFR and cytochrome c1 were imported into wild-type (WT) and tim44E303A/D345A mutant mitochondria at 25\u00b0C. Where indicated, mitochondria were subsequently treated with proteinase K (Prot. K). Samples were analyzed by SDS-PAGE and autoradiography. p, precursor; I, intermediate; m, mature. (G) Growth phenotype. Ten-fold serial dilutions of tim44-\u0394 cells expressing the indicated Tim44 variants were plated on minimal media and incubated at the indicated temperatures and times.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Residue E295, E303, R342, D345, E350, R370 are labeled in red, with the endpoint residue numbers indicated.\n\nFinally, to better understand the relative importance of the individual residues for the function of Tim44, we constructed additional TIM44 mutants: We individually substituted these five residues to ones of opposite charge (i.e. to lysine or glutamate). In agreement with the double alanine substitutions described above, E303K substitution resulted in the most severe growth defect of the cells, similar to the D345K substitution (Figure 2G). Together, these results suggest that D345 and the nearby, surface exposed charged amino acids, especially residue E303, are functionally important for Tim44 association with the translocon.\n\n### Crosslinking of Tim44 CTD residues to Tim23 or Tim17\n\nThe functional importance of D345 and nearby residues for association of Tim44 with the translocon led us to hypothesize that the \u03b14-\u03b21 surface of the CTD directly interacts with the Tim17/23 translocon. To test this idea, we carried out in vivo site-specific crosslinking, focusing on the Tim44 residues we found to be important for Tim17/23-motor association (i.e. D345, E295, E303, E350). We incorporated the photo-reactive amino acid p-benzoyl-L-phenylalanine (Bpa) in place of the endogenous amino acid using enhanced nonsense suppression\u00a0(Krishnamurthy et al., 2011). To covalently crosslink binding partners, cells expressing Tim44Bpa were exposed to UV irradiation. Tim44 and associated proteins were pulled down using the hexa-histidine tag at Tim44\u2019s N-terminus, and separated by electrophoresis. No obvious crosslinks were detected by immunoblotting when Bpa was incorporated at positions E295 and E303. However, in the case of D345Bpa, we observed a crosslinked product migrating at\u00a0~64 kDa that reacted with antibodies for Tim44 and Tim23 (Figure 3A). In the case of E350Bpa, we also observed a Tim44-reactive crosslinking species. But, it was detected by antibodies specific for Tim17, not those for Tim23. Taken together, these results suggested that the CTD of Tim44 interacts with both Tim23 and Tim17.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig3-v2.jpg)\n\n**Figure 3.:** (A,B,C). Yeast strains expressing variants of Tim44 with Bpa incorporated at the indicated positions. After UV irradiation (+), or as a control no irradiation (-), Tim44 was affinity purified via its N-terminal His6 tag, followed by SDS-PAGE and immunoblotting with the indicated antibodies. Migrations of size standard, in kDa, are indicted (left); Tim44 (44) and Tim23 (23) or Tim17 (17) reactive bands are indicated. The asterisks indicate non-specific cross-reactive bands. (D) The residues whose crosslinking was detected are shown in sphere representation (Red, Tim44-Tim23 crosslinks; yellow, Tim44-Tim17 crosslinks).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The residues whose crosslinking was detected are shown in sphere representation. Red, Tim44-Tim23 crosslinks (D345Bpa, I374Bpa, I385Bpa, A391Bpa); yellow, Tim44-Tim17 crosslinks (S271Bpa, R272Bpa, N286Bpa, E350Bpa). The residues whose crosslinking was not significant are shown in stick representation (blue): S270, Y274, S275, K278, E387, R291, E295, E303, L344, R342, R347, V352, K355, R370, Q372.\n\nWe expanded our analysis to include additional surface exposed residues near the sites of Tim23 and Tim17 crosslinking. Bpa was successfully incorporated at 19 positions (Figure 3\u2014figure supplement 1). After exposure of cells to UV, strong crosslink products migrating between 58 and 64 kDa were detected for six variants using Tim44-specific antibodies. Those having Bpa at positions I374, I385, and A391 reacted with antibodies for Tim23 (Figure 3B). On the other hand, lysates from cells expressing Tim44 variants having Bpa at positions S271, R272 and N286 reacted with Tim17-specific antibodies (Figure 3C). Taken together, these results are consistent with the idea that the CTD of Tim44 interacts with both Tim23 and Tim17, via two distinct binding interfaces (i.e. patches) (Figure 3D, Figure 3\u2014figure supplement 1).\n\n### Both domains of Tim44 crosslink to loop 1 of Tim23\n\nThe results described above indicate that the CTD interacts with Tim23. Previous results demonstrated that the NTD is also important for association of Tim44 with the translocon (Schiller et al., 2008) and can be crosslinked to Tim23 using the site-specific Bpa technique (Ting et al., 2014). The crosslinking of both the NTD and CTD of Tim44 to Tim23 raises the question as to the sites of interaction. Tim23 has two matrix-exposed loops (Figure 4A), 24-residue loop 1 (residues 122 to 145) which can be crosslinked to Tim44 (Ting et al., 2014) and 7-residue loop 3 (residues 191 to 197). There are two obvious possibilities: (1) One Tim44 domain interacts with Tim23\u2019s loop 1, the second with loop 3; (2) both domains interact with loop 1. We were not able to directly test whether loop 3 of Tim23 can crosslink to Tim44, because translation terminated at engineered stop codons in that loop, even when Bpa was present. As an alternative, we took advantage of the previous finding that cells expressing a C-terminal Tim23 truncation lacking TM3, loop 3, and TM4 segments (tim23\u0394176-222) are viable (Pareek et al., 2013). We reasoned that if both domains of Tim44 interact with loop 1 of Tim23, Bpa variants in either domain would likely crosslink to Tim23 in cells expressing only tim23\u0394176-222. However, if one domain interacted with loop 3, then no crosslink with that domain would occur. To carry out this test, we constructed strains expressing tim23\u0394176-222 and a variant Tim44 containing Bpa in either the NTD (Tim44D165Bpa), which was previously found to crosslink to wt Tim23 (Ting et al., 2014), or CTD (Tim44A391Bpa). In both cases, we observed a cross-reactive Tim44 crosslinking band after UV treatment (Figure 4B), which, as expected, migrated faster than those obtained when full length Tim23 was used. In both cases, the band also reacted with Tim23 antibodies, indicating that both domains of Tim44 interact with loop 1 of Tim23 in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram of Tim23 (left) and Tim23\u0394176-222 (right). Loops, transmembrane domains (TM), and residue 175 are indicated. (B) Yeast strains expressing Tim23 or Tim23\u0394176-222 and Tim44 with Bpa incorporated at position 165 in the NTD or 391 in the CTD were subjected to UV irradiation (+), or as a control not exposed (-). Tim44 was then affinity purified via its N-terminal His6 tag, followed by SDS-PAGE and immunoblotting with the indicated antibodies. Migration of size standards, in kDa, are indicted (left); Tim44 (44NTD or 44CTD) and Tim23 (23 or 23\u0394CTD) reactive bands are indicated. The asterisk indicates non-specific cross-reactive bands.\n\n### A Tim44 NTD alteration suppresses D345K CTD defects\n\nAs both domains of Tim44 can be crosslinked to loop 1 of Tim23, we carried out a suppressor analysis asking if a defect in translocon interaction in one domain could be compensated by an alteration in the other domain. We used the NTD R180K substitution, which destabilizes Tim44 association with the translocon (Schiller et al., 2008), and the CTD D345K substitution, described above, as starting mutations (Figure 5A). After constructing libraries using error-prone PCR, transformants were screened for the ability to grow at the non-permissive temperature of 34\u00b0C. No suppressors were found in the case of R180K. However, a suppressor encoding the single amino acid substitution G173V, which allowed tim44D345K cells to grow as well as wt cells at 34\u00b0C, was isolated (Figure 5B). We used co-immunoprecipitation to test the effect of the G173V substitution on association with the translocon. Association of Tim44 was partially restored in the double mutant; co-immunoprecipitation was 74% of wt in tim44G173V/D345K, rather than 45% found with tim44D345K extracts (Figure 5C). We next asked if the G173V change also suppressed the defect in import caused by the D345K substitution (Figure 1F). Consistent with the robust growth of tim44G173V/D345K at 30\u00b0C, tim44G173V/D345K mitochondria imported cytochrome b2-(167)\u220619-DHFR nearly as efficiently as wt mitochondria (Figure 5D). These results suggest that alteration of the NTD of Tim44 can partially overcome the effects of compromised association of Tim44 with the translocon due to alteration of the CTD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig5-v2.jpg)\n\n**Figure 5.:** (A) Diagram of Tim44 showing functional regions and interaction partners of the NTD. Residues from 156 to 184 are indicated in yellow. Residues crosslinked to Tim23 in our previous report\u00a0(Ting et al., 2014) are in red; residue G173, the suppressor reported here, and R180, the previously isolated ts mutant\u00a0(Schiller et al., 2008), which affects Tim23 and mtHsp70 association, are in green and blue, respectively. The N terminal segment of Tim44 (residues 51 to 82) implicated in interaction with Pam16 is indicated\u00a0(Schilke et al., 2012). The mutant D345A/E350A and residues D165Bpa, S271Bpa, A391Bpa used for crosslinking in combination the G173V suppressing substitution are indicated in orange and dark red, respectively. (B) Growth phenotype. Ten-fold serial dilutions of tim44-\u0394 cells expressing Tim44 variants were plated on minimal media and incubated at the indicated temperatures and times. For each temperature, all strains were plated on the same plate; strains not relevant to this report were cropped out (indicated by white space). (C) Co-immunoprecipitation with Tim23. Mitochondria were solubilized by treatment with digitonin. Solubilized material was subjected to immunoprecipitation using Tim23-speci\ufb01c antibodies crosslinked to protein A beads. Precipitates were analyzed by SDS-PAGE and immunoblotting using antibodies speci\ufb01c for the indicated proteins. 10% of input for co-immunoprecipitation was used as a loading control. Signals were quantified by Image J software (RRID: SCR_003070) and plotted as percentages of the wt control reaction value. Data represent the mean \u00b1 standard deviation, with n\u00a0=\u00a03. The data of the figure can also be seen in Figure 5\u2014source data 1. (D) 35S-labeled precursor of cytochrome b2-(167)\u039419-DHFR was imported into wild-type (WT), tim44D345AK, and tim44D345AK/G173V mitochondria at 25\u00b0C. Where indicated, mitochondria were subsequently treated with proteinase K (Prot. K). Samples were analyzed by SDS-PAGE and autoradiography. p, precursor; I, intermediate; m, mature. (E) Growth phenotype. Ten-fold serial dilutions of tim44-\u0394 cells expressing the indicated Tim44 variants were plated on minimal media and incubated at the temperatures and for the times indicated. (F) Yeast strains expressing tim44D345A/E350A with Bpa incorporated at position D165, S271 or A391 were subjected to UV irradiation (+), or as a control not exposed (-). Tim44 was then affinity purified via its N-terminal His6 tag, followed by SDS-PAGE and immunoblotting with the indicated antibodies. Migration of size standards, in kDa, are indicated (left); Tim44 (44NTD or 44CTD), Tim23 (23), and Tim17 (17) reactive bands are indicated. The asterisk indicates non-specific cross-reactive bands.\n\nTo obtain information as to how the G173V suppressing substitution acts, we carried out Bpa crosslinking. We started with the double alanine CTD substitution mutation, tim44D345A/E350A, whose 37\u00b0C growth defect is suppressed by the G173 substitution (Figure 5E). We started with this strain because its less severe phenotype allowed growth under conditions needed for Bpa incorporation. We constructed six strains. Each had the E350A/D345A mutations; three had the G173V suppressor substitution and three did not. Three different\u00a0\u00b1G173V suppressor pairs were then constructed, each having a stop codon for incorporation of Bpa at a different site: D165 of the Tim44 NTD and A391 of the Tim44 CTD, both of which crosslinks to Tim23; and S271, which crosslinks to Tim17 (Figure 5F). In all cases, we observed a cross-reactive Tim44 crosslinking band after UV treatment. The most obvious difference observed was an increase in crosslinking of D165Bpa to Tim23 when the suppressor mutation is present, suggesting that the G173V substitution alters the Tim44 NTD-Tim23 interaction.\n\n### Interaction of the Tim44 NTD with presequence\n\nPreviously, full-length Tim44 was shown to interact in vitro with the presequence of Hsp60, implicating Tim44 in signaling the entry of a translocating polypeptide into the matrix (Marom et al., 2011b). In the previous report, biotin-labeled Hsp60 presequence peptide and a nonspecific crosslinker were used. We confirmed this result using the same approach, and then extended the analysis to the isolated NTD (Tim4443-209) and CTD (Tim44210-431). Interaction of the Hsp60 presequence with the NTD, but not the CTD was detected (Figure 6A,B). This binding was concentration-dependent (Figure 6C). To further narrow down the site(s) of presequence interaction, we attempted to purify NTD truncations. N-terminal truncations were unstable. However, we were successful in obtaining the C-terminal truncation segments containing residues 43\u2013177, 43\u2013170 and 43\u2013164. While Tim4443-177 crosslinked to presequence similarly to the complete N-terminal domain (Tim4443-209), crosslinking between peptide and Tim4443-164 or Tim4443-170 were greatly reduced (Figure 6D). We also constructed three internal deletions in the NTD (Tim44NTD\u039468-82, Tim44NTD\u0394131-147, Tim44NTD\u0394166-185) to test whether these regions are important for presequence binding. While Tim44NTD\u039468-82, and Tim44NTD\u0394131-147 crosslinked to presequence similarly to the intact NTD, crosslinking of presequence to Tim44NTD\u0394166-185 was reduced (Figure 6E). These results point to the particular importance of residues between positions 170 and 177 for Tim44\u2019s interaction with presequence.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig6-v2.jpg)\n\n**Figure 6.:** (A) Diagram of Tim44 showing different constructs along with a summary of crosslinking efficiency to the presequence of Hsp60 (pHsp60). Endpoint residue numbers are indicated. (B,D,E left) Crosslinking was performed by incubating biotin-labeled pHsp60 with indicated Tim44 proteins in the absence (-) or presence (+) of disuccinimidyl glutarate (DSG), followed by SDS-PAGE and immunoblotting using antibodies speci\ufb01c for biotin (streptavidin-HRP). (B,D,E right) Equal molar amounts of indicated Tim44 proteins were separated by SDS-PAGE and stained with Coomassie brilliant blue. (B) WT, full length Tim44 (residues 43\u2013431); NTD (residues 43\u2013209); CTD (residues 210\u2013431). (C) Crosslinking of Tim4443-209 with indicated increasing concentration of pHsp60. The asterisk indicates higher crosslinking products of the Tim4443-209 -pHsp60 complex. (D) Crosslinking of NTD and indicated C-terminal truncations. (E) Crosslinking of NTD and indicated internal deletions.\n\n### Evidence that the Tim44 NTD is intrinsically disordered\n\nThe finding that presequence binds to the Tim44 NTD, coupled with previous data pointing to its interaction with Tim23, mtHsp70 and Pam16, points to functional complexity of this domain. Since lack of structural information hampers understanding of the NTD, we attempted to obtain crystals of Tim4443-209 for X-ray analysis. We were unsuccessful. We considered whether the NTD might be disordered, as it was well known to be very susceptible to proteolysis (Weiss et al., 1999). Indeed, the disorder prediction softwares, IUPred (Doszt\u00e1nyi et al., 2005), Metadisorder (Kozlowski and Bujnicki, 2012), and PrDOS (Ishida and Kinoshita, 2007), identified the NTD as having a high probability of being intrinsically disordered (Figure 7A). We decided to test this idea experimentally, by performing Heteronuclear Single Quantum Coherence (HSQC) and Circular Dichroism (CD) spectroscopy. The very limited chemical shift dispersion observed in the HSQC 1H dimension indicated that the segment is primarily disordered. In addition, the presence of different peak intensities in the HSQC is consistent with the idea that some regions of the NTD may dynamically exchange between multiple conformational states in the solution (Figure 7B). That the CD spectrum showed a minimum signal close to 200 nm, yet some signal at 222 nm, also suggests that the NTD is disordered and that it has some fractional transient helical propensity (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig7-v2.jpg)\n\n**Figure 7.:** (A) Prediction of disorder by indicated disorder predictors. The NTD and CTD of Tim44 are indicated at the top of the graph. Residues with a disorder tendency exceeding 0.5 were considered to be disordered. The data of the figure can also be seen in Figure 7\u2014source data 1. (B) 2D 1H,15N-Heteronuclear Single-Quantum Correlation (HSQC) NMR spectra of Tim4443-209. As described in the text, the low dispersion of 1HN chemical shifts is indicative of an unfolded protein in solution. (C) Far-UV CD spectra of Tim4443-209 as a function of temperature, recorded over the temperature range from 4\u00b0C to 80\u00b0C. After measuring the sample at 80\u00b0C, it was cooled down to 4\u00b0C to test the reversibility (4\u00b0C return). Smoothing spline model was used to fit the raw CD data. The data of the figure can also be seen in Figure 7\u2014source data 2.\n\n## Discussion\n\nResults presented here point to a three-pronged interaction of Tim44 with the translocon: two with Tim23 and one with Tim17 (Figure 8A). Overall our results point to the predominant role of one domain being tethering of Tim44 to the translocon, with the other serving as a dynamic arm, coordinating interactions amongst mtHsp70, J-protein co-chaperone Pam18 and the presequence of the incoming polypeptide.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig8-v2.jpg)\n\n**Figure 8.:** (A) Diagram of Tim44 (green) with the regions known to be important for interaction with other motor or translocon components indicated by dotted circles. The NTD is drawn to indicate its naturally disordered state. (B) Model of Tim44 interaction with loop 1 of two different Tim23 molecules (blue). Transmembrane domains 1 and 2 of Tim23 are indicated. Tim17 is indicated in orange. (C) Model of Tim44 NTD and CTD interacting with loop 1 of one Tim23 molecule, either the NTD (left) or CTD (right).\n\n### Interaction of CTD of Tim44 with the translocon\n\nAdjacent patches on one face of the Tim44 CTD crosslinked to the translocon: one to Tim17 and one to Tim23. The phenotypes of mutants encoding alterations on this face suggest that both interactions play a role in stabilizing overall interaction of Tim44 with the translocon. Such mutations resulted not only in accumulation of precursors, but also the destabilization of the interaction with the translocon. The more dramatic effect of mutations changing residues in the Tim23-interaction region suggests that this interaction may be more functionally important. Recently, interaction of the CTD of Tim44 with Tim17 was reported (Banerjee et al., 2015). However, interaction with Tim23 was not observed. Perhaps, the Tim44 CTD-Tim23 interaction has a more stringent conformational requirement than the Tim44 CTD-Tim17 interaction, as assays were performed in lysates of mitochondria disrupted by detergent. The crosslinking approach used here was performed using intact cells, and thus allows assessment of protein-protein interactions under native conditions. While this manuscript was under review, a report was published indicating the interaction of Tim44 with Tim17 occurs via loop 3 (Demishtein-Zohary et al., 2017), the smaller of the two matrix-exposed loops.\n\n### Complexity of Tim23-Tim44 interactions\n\nThe complexity of the interaction of Tim44 with Tim23 is evident from the results presented here. Not only do both domains crosslink to Tim23, our data strongly indicates that both interact with loop 1; a C-terminal truncation variant of Tim23 lacking transmembrane domains 3 and 4, and thus loop 3, crosslinked to Tim44 whether Tim44 had Bpa in the NTD or in the CTD. That alteration of residues at or near positions that crosslinked to Tim23 affects the stability of Tim44\u2019s interaction with the translocon, suggests that both interaction sites are functionally important. This idea is also supported by the ability of the G173V alteration in the NTD to suppress the deleterious effects of a mutation altering the Tim23 interaction site in the CTD. However, the exact interplay amongst these interactions remains elusive. In part, this lack of clarity is due to the fact that the overall architecture of the translocon is not known (Schulz et al., 2015) - neither the copy number of individual subunits, nor the exact positioning of their transmembrane domains relative to one another. There is consensus, however, that a translocon contains at least two molecules of Tim23 (Alder et al., 2008; Marom et al., 2011a). Thus, one Tim44 molecule could interact with loop 1 of two different Tim23 molecules simultaneously (Figure 8B). Alternatively, both the NTD and CTD of a Tim44 molecule could interact with a single Tim23 molecule (Figure 8C). If so, the interactions would likely occur sequentially, as the 24-residue size of loop 1 makes simultaneous interaction unlikely due to steric constraints.\n\n### The multifunctional NTD of Tim44\n\nData presented here cements the idea that the NTD of Tim44 is a platform for protein-protein interactions, and further points to the region between residues 160 and 180 as a critical portion of the NTD. This segment was previously shown to be important for association of Tim44 with the translocon, and for recruiting mtHsp70 (Schiller et al., 2008). Indeed, the apparent increase of interaction of the NTD with Tim23 in the suppressor strain having a substitution at position G173 underscores this idea. Here, we provide evidence that it also includes the presequence binding site, suggesting that this segment not only has tethering functions, but also serves as a regulatory center for import motor function. It should also be noted that Pam16, which forms a heterodimer with the J-protein cochaperone of mtHsp70, binds Tim44 at the extreme N-terminus of the NTD (Schilke et al., 2012). That Tim44\u2019s NTD is likely intrinsically disordered is also in line with the idea that this domain plays important regulatory functions. Intrinsic disorder is a common feature of hub proteins that serve as regulatory scaffolds. Often domains of such proteins not only gain structure when interacting with partners, but also undergo conformational changes upon interacting with different binding partners (Dyson and Wright, 2005; Oldfield and Dunker, 2014; Wright and Dyson, 2015).\n\n### Model of Tim44 action\n\nHow might the two domains of Tim44 work to coordinate activity of the import motor? We propose that Tim44 acts as a two-arm machine. One arm, the CTD, plays the major role in anchoring Tim44 to the translocase through interactions with both Tim17 and Tim23. The other, the NTD, is a dynamic arm. Although it also interacts with Tim23, this interaction plays a more regulatory role, with the NTD also interacting with Hsp70 and with Pam16, and thus indirectly with the J-protein co-chaperone Pam18, as well as presequence. Together the two domains control the inactive:active transition of the import motor. Key features of this working model include (Figure 9): (1) In the absence of a translocating polypeptide, the conformation of the Tim44 NTD maintains the import motor in an inactive state. Upon entering the matrix, presequence binds the Tim44 NTD in a region also important for interaction of the NTD with both Tim23 and Hsp70. (2) Presequence association initiates a conformational change in the Tim44 NTD reorienting Pam18 relative to Hsp70 such that it can perform its co-chaperone function of stimulating Hsp70\u2019s ATPase activity. (3) Hydrophobic residues of the presequence or adjacent regions of the preprotein interact, as a substrate, with Hsp70\u2019s peptide binding cleft. This interaction, coupled with that of Pam18, synergistically stimulates hydrolysis of ATP bound to Hsp70, stabilizing its interaction with the translocating polypeptide. (4) The resulting conformational change of Hsp70 (i.e. from the ATP- to the ADP-state) also results in release from Tim44 (Liu et al., 2003). This release of Hsp70 from Tim44 permits binding of another ATP-bound Hsp70 molecule primed to interact with the incoming polypeptide chain, and thus further translocation into the matrix.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/23609/elife-23609-fig9-v2.jpg)\n\n**Figure 9.:** As in Figure 8C, one Tim44 is drawn as interacting with one Tim23 molecule. Pam16 interacts with the extreme N-terminus of the Tim44 NTD, and also interacts with the J-protein co-chaperone Pam18 (\u2018J\u2019 indicates its J domain). Steps 1\u20134 are discussed in the discussion section of the text. Tim44 (green), with CTD (oval) and NTD (line); Tim 23 (blue); Tim17 (orange); Presequence (red line); remainder of translocating polypeptide chain (black line).\n\nAlthough the results presented here enlighten several aspects of the process of protein import into the mitochondrial matrix, several remain unresolved. For example, as mentioned above, whether the NTD and CTD of a Tim44 molecule interact with one or two Tim23 molecules is not clear. Interaction with two Tim23 molecules is the \u2018simplest\u2019 scenario; however, the alternative, that is toggling back and forth of the NTD and CTD between loop 1 of a single Tim23 molecule is appealing. Such toggling could provide an additional point of regulation or allow a major conformational change in the NTD. Apropos of this, it was recently reported that the Tim44 CTD could be crosslinked to a protein trapped in the translocon (Banerjee et al., 2015). The nature of such an interaction is not clear, as a nonspecific crosslinker was used and a substantial segment of the trapped polypeptide was present in the matrix. Nevertheless, such an interaction may help in maintaining the import motor in an active state during the entire translocation process. Also, it is possible that such toggling might control interactions of motor components, such as the proposed \u2018refreshing\u2019 of Pam18, at the translocon during the import process (Schulz and Rehling, 2014). Indeed, many aspects of the complex import system have dual and overlapping mechanisms that ensure the efficiency and robustness of the critical biological process of protein import into the mitochondrial matrix.\n\n## Materials and methods\n\n### Yeast strains, plasmids, and genetic techniques\n\nAll in vivo experiments were carried out in the W303 genetic background with derivatives of PJ53\u00a0(James et al., 1997). tim44-\u2206, tim23-\u2206, and tim17-\u2206 haploids were described previously (Schilke et al., 2012; Schiller et al., 2008; Ting et al., 2014). To create double deletion strains, the single deletion haploids were mated and the resulting diploids were transformed with the desired plasmids, sporulated and dissected. Screening for the correct deletion and plasmid marker genes identified the desired haploids. tim44 point mutations and tim23\u2206176-222 made in this study were constructed using the QuikChange protocol (Stratagene), starting with pRS314-TIM44 or pRS315-TIM23 as templates. pRS315-tim23\u2206176-222 was generated by removing the TIM23 DNA sequence from\u00a0+526 to+666. Plasmid systems were set up for the incorporation of Bpa into Tim44 and Tim17 as previously described (Krishnamurthy et al., 2011; Ting et al., 2014). For Tim44 fragment purifications, the DNA sequence coding for various Tim44\u2019s N terminal segments were cloned into bacterial expression vector pET-20b with 5\u2019 NdeI and 3\u2019 BamHI sites.\n\nTo obtain temperature sensitive (ts) mutations in TIM44, that altered a surfaced exposed CTD residue, plasmid libraries were generated that contained DNA randomly mutagenized by error prone PCR amplification. More specifically, a PstI-BglII (+206 to\u00a0+1253) fragment was amplified and used to replace the same fragment in pRS314-TIM44. tim44\u2206 cells carrying pRS316\u2010TIM44 (URA3-based plasmid) were transformed with the pRS314\u2010tim44 library, plated on tryptophan omission (Trp\u2010) plates and incubated at 30\u02daC. 1600 transformants obtained were patched onto 5-fluoroorotic acid (5-FOA) (Toronto Research Chemicals Inc.,\u00a0Toronto, Canada) plates and Trp- plates and then incubated at 37\u00b0C to identify those cells that could not grow at 37\u00b0C in the absence of the wt copy of TIM44. The pRS314-tim44 plasmids were recovered from patches on Trp- plates, and then transformed into the parent strain to verify the ts phenotype. After selection for loss of the wt TIM44 gene, the protein level of the Tim44 variants were determined by immunoblot analysis. 6 of 1600 transformants grew poorly at 37\u00b0C, yet expressed the Tim44 variant at a level similar to wt protein, and these plasmids were sequenced at the University of Wisconsin Biotechnology facility. Only one had alterations of surface-exposed CTD residues: glycine substitutions at residues D345 and R378. Single substitution analysis was carried out. R378G alteration caused no obvious phenotype, while D345G ts phenotype was indistinguishable from that of the original isolate.\n\nA similar strategy was used to isolate suppressors of the ts phenotypes of the D345K and R180K substitutions. tim44\u2206 cells carrying pRS316-TIM44 were transformed with pRS314-tim44D345K or pRS314-tim44R180K plasmids containing an N terminal (+206 to\u00a0+876) or C terminal (+877 to\u00a0+1253) mutation library. 1000 transformants of each were patched onto 5-FOA plates and incubated at 34\u00b0C. pRS314-tim44 plasmids were recovered from transformants that grew at 34\u00b0C. No suppressors were found in the case of the R180K. However, 11 of the 1000 transformants allowed tim44D345K cells to grow at 34\u00b0C. Among these, eight had a single substitution, G173V, and grew as well as wt at 34\u00b0C. Each of the other three suppressor strains, contained more than three substitutions in the NTD, and did not suppress as well as G173V.\n\n### Mitochondrial protein precursor accumulation test\n\nTo test for the accumulation of precursors in vivo, tim44 strains, except tim44D345A/E303A, were grown in minimal medium at 30\u00b0C to an OD600 of 0.5 at 30\u00b0C and then shifted to 37\u00b0C for 6 hr. Since tim44D345A/E303A only grows at 23\u00b0C, cells were grown at that temperature prior to the shift to 37\u00b0C. Cell extracts were prepared from equal numbers of cells and analyzed by SDS-PAGE as previously described (Schiller et al., 2008). Immunoblotting was carried out using antibodies specific for the mitochondrial matrix protein Hsp60. Similar results were obtained from three independent yeast strains.\n\n### Co-immunoprecipitation from mitochondrial lysates\n\nAs previously described (Schilke et al., 2012), association of Tim17, Tim44, Pam16, Pam18, and Pam17 with the Tim23 translocon was determined by co-immunoprecipitation. Antibodies against Tim23 were affinity purified prior to crosslinking to protein-A Sepharose beads (D'Silva et al., 2005). Mitochondria were isolated from Tim44 wt and mutant yeast strains grown at 30\u00b0C in rich media, as described previously (Liu et al., 2001), with the exception of tim44E303A/D345A which was grown at 23\u00b0C. Mitochondria were solubilized at 1 mg/ml in lysis buffer (25 mM Tris-HCl, pH\u00a0=\u00a07.5, 10% glycerol, 80 mM KCl, 5 mM EDTA, and 1 mM PMSF) containing 1% digitonin (Acros Organics) on ice for 40 min with gentle mixing (Mokranjac et al., 2003). After spinning at 20,800 x g at 4\u00b0C for 15 min, the lysates were added to 25 \u03bcl (bed volume) of Tim23 antibody beads and incubated for 1.5 hr with mixing at 4\u00b0C. The beads were washed with lysis buffer without digitonin before boiling in SDS sample buffer. The proteins were separated by SDS-PAGE and detected by immunoblotting. Signals were quantified by Image J software (RRID: SCR_003070) and plotted as percentages of the wt control reaction value. Data represent the mean \u00b1 standard deviation, obtained in a minimum of three independent experiments.\n\n#### In organellar import of 35S-labeled preproteins\n\nThe import assay was carried out as described previously (Hutu et al., 2008). 35S-labeled preproteins, cytochrome b2-(167)\u039419-DHFR and cytochrome c1, were synthesized by in vitro transcription and translation using the TNT SP6 Quick Coupled Transcription/Translation System (Promega) in the presence of [35S] methionine (PerkinElmer). Preproteins were subsequently imported into isolated mitochondria in import buffer (250 mM sucrose, 80 mM KCl, 3% [w/v] bovine serum albumin, 5 mM MgCl2, 5 mM methionine, 10 mM MOPS [morpholinepropanesulfonic acid]-KOH, pH\u00a0=\u00a07.2, 2 mM ATP and 2 mM NADH) for different time course intervals. The import reaction was stopped using 1 \u03bcM valinomycin, 8 \u03bcM antimycin, and 20 \u03bcM oligomycin. Protease treatment was performed by incubating the mitochondria with 50 \u03bcg/ml proteinase K (Prot. K) for 15 min. Prot. K was subsequently inhibited by the addition of 1 mM phenylmethylsulfonyl fluoride (PMSF). After Prot. K treatment, mitochondria were isolated by centrifugation and analyzed by SDS-PAGE, followed by soaking in gel fixing solution (10% glacial acetic acid, 25% isopropanol) for 30 min. The fixed gel was placed on a sheet of Whatman 3 MM filter paper, covered with plastic wrap and dried at 80\u00b0C for 1 hr under a vacuum using a conventional gel dryer (Bio-Rad). The gel was then exposed to a phosphor-imaging screen at room temperature overnight, and detected by a Typhoon FLA 9000 biomolecular imager (GE Healthcare).\n\n#### In vivo photo-crosslinking\n\nBpa crosslinking was carried out as described previously (Ting et al., 2014), with the plasmid ptRNA-Bpa, which encodes an engineered tRNA synthetase and tRNACUA for Bpa incorporation. An amber stop codon (TAG) was introduced into the open reading frames of TIM44 or TIM17 in the plasmids pRS314-His6-TIM44 or pRS414-TEF-His6-TIM17, respectively. Cells were grown in the presence of 2 mM Bpa in minimal medium overnight. 50 OD600 yeast cells were harvested, resuspended, and divided in two. One half was exposed to 365 nm UV (Stratalinker 1800 UV irradiator) for 1 hr at 4\u00b0C; the other half was kept on ice, as a control for no crosslinking. Cells were lysed via agitation with 0.5 mm glass beads in whole cell lysis buffer (20 mM HEPES-KOH, pH\u00a0=\u00a08.0, 10% glycerol, 500 mM NaCl, 20 mM imidazole, 0.2% Triton X-100, 1 mM DTT and 1 mM PMSF). Cell lysates were centrifuged for 20 min at 20,000 x g. Covalent protein adducts were isolated from the lysate via Ni-NTA purification system (Invitrogen), and analyzed by immunoblotting. Three independent yeast strains were analyzed for each Bpa variant, with similar results.\n\n### Antibodies\n\nImmunoblot analysis was carried out using standard techniques with protein detection by enhanced chemiluminescence (GE Healthcare), using polyclonal antibodies to Tim23 (D'Silva et al., 2008), Tim44 (Liu et al., 2001), Pam16 (D'Silva et al., 2005), Pam18 (D'Silva et al., 2003), Pam17 (Schilke et al., 2012), Hsp60 (Schilke et al., 2012), and Tim17 (gift from Nikolaus Pfanner) (Chacinska et al., 2005).\n\n### Protein purification\n\nPurification of Tim44, full length and CTD, were carried out as previously described (Schiller et al., 2008). For the NTD, the truncations and internal deletions, protein was expressed in E. coli Rosetta (DE3) at 37\u00b0C. Bacteria were grown in rich media to the 0.6 OD600. Following 5.5 hr induction with 1.0 mM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG), harvested cell pellets were resuspended in lysis buffer (20 mM HEPES/KOH, 20 mM NaCl, pH\u00a0=\u00a07.5), followed by sonication, and then centrifugation for 20 min at 15, 000 x g. The obtained supernatant was loaded onto a cation exchange (SP Sepharose) column. After washing with buffer (20 mM HEPES/KOH, 30 mM NaCl, pH\u00a0=\u00a07.5), the protein fractions were eluted with a NaCl gradient (30 to 600 mM). The collected fractions containing Tim44 were further purified by gel filtration on a Superdex 75 column (GE Healthcare). The purified proteins were stored at \u221280\u00b0C in 20 mM HEPES/KOH, 300 mM NaCl, pH\u00a0=\u00a07.5.\n\n#### In vitro chemical crosslinking\n\nCrosslinking of various Tim44 fragments was carried out as previously described (Marom et al., 2011b). In short, crosslinking was performed by incubating Tim44 fragments and biotin-labeled Hsp60 presequence (NH2-MLRSSVVRARATLRPLLRRK-biotin) with 50 \u03bcM disuccinimidyl glutarate (DSG) at 25\u00b0C for 30 min. The reaction was stopped by the addition of SDS-containing sample buffer, followed by 65\u00b0C incubation. The crosslinking adducts were analyzed by immunoblotting with streptavidin-HRP (RRID: AB_1087562) (Thermo Scientific). Similar crosslinking results were obtained from three independent experiments.\n\n### Heteronuclear Single Quantum Coherence and Circular Dichroism spectroscopy\n\nThe 2D 1H,15N Heteronuclear Single-Quantum Correlation spectra were recorded on a 7.6 mg/ml (~380 \u03bcM) protein sample at the National Magnetic Resonance Facility at Madison (RRID: SCR_001449) (NMRFAM; www.nmrfam.wisc.edu) using a Varian VNMRS spectrometer operating at 800 MHz and equipped with a cryogenic probe. The temperature of the sample was regulated at 25\u00b0C throughout the experiments. NMR data were processed using NMRPipe and analyzed using NMRFAM-Sparky (Lee et al., 2015). All NMR experiments were conducted in 20 mM sodium phosphate (pH 7.5), 15 mM NaCl, and 7% D2O. Similar spectra were obtained from three independent protein preparations.\n\nCD data were collected using an AVIV model 420 spectrometer at the UW Biophysics instrumentation facility (BIF; www.biochem.wisc.edu/bif). Samples were 0.18 mg/mL (~9 \u03bcm) in 20 mM sodium phosphate buffer, pH\u00a0=\u00a07.5, 15 mM NaCl. Spectra were recorded with a 1 nm band-pass and an averaging time of 5 s in 0.1 cm path-length quartz cuvette. Data were collected every 1 nm from 340 to 200 and at five different temperatures: 4\u00b0C, 20\u00b0C, 37\u00b0C, 50\u00b0C, 80\u00b0C, then back to 4\u00b0C. Spectra were corrected by subtraction of a buffer baseline and converted into molar ellipticity using a mean residue weight of 118 (degree.cm2/dmol of residues). Smoothing spline model was used to fit the raw CD data (Wood and Jennings, 1979). Similar spectra were obtained from two independent protein preparations.\n\n### Miscellaneous\n\nAll chemicals, unless noted otherwise, came from Sigma. Hsp60 presequence peptide was purchased from the University of Wisconsin Biotechnology Center. Protein sequence alignment for Tim44 was carried out using Clustal Omega (RRID: SCR_001591) (Sievers et al., 2011). Intrinsically disordered protein prediction for Tim44 was carried out using IUPred (RRID: SCR_014632) (Doszt\u00e1nyi et al., 2005), MetaDisorder (Kozlowski and Bujnicki, 2012), PrDOS (Ishida and Kinoshita, 2007). Structural images were prepared with the PyMOL Molecular Graphics System (RRID: SCR_000305), Version 1.5 Schr\u00f6dinger, LLC.\n",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e580dc14-dc90-44af-99ee-f8e5b252ea35",
+      "submission_id": "e2ccac48-c55d-4001-8e79-c07f001abecc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Agnieszka Chacinska, International Institute of Molecular and Cell Biology , Poland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23609.018](https://doi.org/10.7554/eLife.23609.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dual interaction of scaffold protein Tim44 of mitochondrial import motor with channel-forming translocase subunit Tim23\" for consideration by eLife. Your article has been favorably evaluated by Randy Schekman (Senior Editor) and three reviewers, one of whom, Agnieszka Chacinska (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe import of presequence-carrying proteins into the mitochondrial inner membrane and matrix is a process essential for eukaryotic life that is mediated by the TIM23 complex and its associated import motor. The study focuses on dissection of the mitochondrial protein translocase TIM23 architecture and dynamics. The conserved Tim44 protein is known as a central adapter component required for the cooperation between the transmembrane channel formed by Tim23 and the driving-force-generating matrix Hsp70 of the motor. In this work, Ting et al. present a detailed analysis of the interaction surfaces between Tim44 and the membrane-embedded core of the translocase using site-specific cross-linkers incorporated into Tim23, Tim17 or Tim44 in vivo. This detailed surface mapping together with the identification of the proposed presequence binding site in Tim44 considerably improves our understanding of preprotein import into mitochondria. The most important observations are: i) the Tim44 C-terminal domain binds both core components of the translocase, Tim17 and Tim23, and ii) binding to Tim23 is also mediated by the N-terminal domain of Tim44, which is intrinsically disordered.\n\nThe reviewers perceived the study as well presented and elegant. Furthermore, they appreciated its importance to progress the field. However, they agreed that several questions remain open. Addressing experimentally the points below is necessary to further advance the understanding of the mechanisms of the Tim44-mediated precursor translocation.\n\n1) The authors should provide data allowing conclusions concerning translocase dynamics upon substrate binding. Do the interactions/crosslinking of Tim44 with Tim23 or Tim17 change by the presence of presequence peptides? And/or does the interaction mapping of Tim44 change during the mtHsp70 reaction cycle? These questions can be addressed in the assay with chemically synthesized peptides or under different nucleotide triphosphate conditions. An additional experimental set-up to consider: in vitro import of large amount of precursors into BPA containing mitochondria and crosslinking.\n\n2) Figure 7; The purified recombinant NTD did not show any indication of folded structures in its NMR or CD spectra. However, this does not mean that NTD is unfolded in intact mitochondria. There are lots of examples that recombinant proteins expressed in E. coli cells cannot take correctly folded structures. Therefore the interpretation of Figure 7, \" the Tim44 NTD is intrinsically disordered\", should be more softened or substantiated by additional evidence. The model presented in this manuscript implies that Tim44 NTD undergoes substantial conformational rearrangements upon presequence binding. The authors should take the opportunity to test this idea in their established assay (Figure 7) using the pHsp60 peptide (Figure 6) to experimentally support their model.\n\n3) Earlier studies have shown that alterations of Tim44 can influence the overall conformation of the TIM23 complex (for example recently in Banerjee et al. 2015, eLife). The Tim23 and Tim44 steady state protein levels and pHsp60 accumulation experiments shown in Figure 1 and 2 are very general indicators. It is important to analyse critical mutants via in vitro import experiments, if the observed defects are caused by motor coupling to TIM23 or by a general defect of the import channel. This can be done by comparing the import behavior of well-established motor-dependent and -independent preproteins in vitro. Alternatively, the authors could confirm that the TIM23 core complex is not altered in the above mentioned mutants. The sentence in the Discussion tells that the interaction with Tim23 is functionally more important than Tim17, but it is unclear what is the data source for this statement. More thorough characteristic of the selected mutants in terms of import and translocase integrity should provide the answer.\n\n4) The suppression of Tim44-C Tim23 binding by the mutation in the N-terminal domain should be further developed by demonstrating this phenomenon at the level of translocase integrity and in vitro import experiments. How does the suppressor mutation really work: by strengthening the binding of Tim44 to Tim23, or maybe to Tim17? Addressing this point would add to Tim44 dynamics and its possible mechanistic implications. Interestingly the suppressor mutation exactly maps to the region of presequence binding. The suppression may therefore also be caused by altered (enhanced?) presequence interaction of Tim44. It would be very interesting to also consider this possibility.\n",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05a77323-1751-4bf9-b3eb-cbc15708867d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C1",
+      "claim": "The vast majority of proteins in the mitochondria are encoded by nuclear DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the vast majority of proteins in the mitochondria are encoded by nuclear DNA, efficient translocation of proteins from the cytoplasm is required for robust mitochondrial function (Sickmann et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sickmann et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "89be57b3-2b62-4db4-93ac-3765ab63b802",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C2",
+      "claim": "Proteins destined for the matrix initially enter mitochondria via the TOM complex of the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins destined for the matrix initially enter mitochondria via the TOM complex of the outer membrane, and are then translocated across the inner membrane into the matrix through the Tim17/23 translocon (Endo and Yamano, 2009; Schmidt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Endo and Yamano, 2009; Schmidt et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "26afa6d4-92ec-41c7-95cd-7407c90c4c7c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C3",
+      "claim": "Proteins destined for the matrix are translocated across the inner membrane into the matrix through the Tim17/23 translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins destined for the matrix initially enter mitochondria via the TOM complex of the outer membrane, and are then translocated across the inner membrane into the matrix through the Tim17/23 translocon (Endo and Yamano, 2009; Schmidt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Endo and Yamano, 2009; Schmidt et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "6da6cc8a-4982-4215-8922-6018230bed7a",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C4",
+      "claim": "Most matrix-bound proteins are synthesized as preproteins with a positively charged amino-terminal targeting sequence (presequence).",
+      "claim_type": "EXPLICIT",
+      "source": "Most matrix-bound proteins are synthesized as preproteins with a positively charged amino-terminal targeting sequence (presequence), which interacts sequentially with 'receptor' proteins in transit from the cytosol to the inner membrane translocon (Bajaj et al., 2014; Lytovchenko et al., 2013; Marom et al., 2011b; Shiota et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bajaj et al., 2014; Lytovchenko et al., 2013; Marom et al., 2011b; Shiota et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "c2bcb64f-595e-4746-9177-832100fcdad2",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C5",
+      "claim": "The presequence interacts sequentially with 'receptor' proteins in transit from the cytosol to the inner membrane translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Most matrix-bound proteins are synthesized as preproteins with a positively charged amino-terminal targeting sequence (presequence), which interacts sequentially with 'receptor' proteins in transit from the cytosol to the inner membrane translocon (Bajaj et al., 2014; Lytovchenko et al., 2013; Marom et al., 2011b; Shiota et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bajaj et al., 2014; Lytovchenko et al., 2013; Marom et al., 2011b; Shiota et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e0021d73-6470-4d44-8a91-613fc60780ef",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C6",
+      "claim": "Upon insertion of the presequence into the translocon, it is driven into the matrix by the membrane potential across the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon insertion of the presequence into the translocon, it is driven into the matrix by the membrane potential across the inner membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about mitochondrial protein import mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f97e288f-e862-4c89-8c23-2faa5de2607f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C7",
+      "claim": "Translocation of the remainder of the preprotein requires action of the mitochondrial import motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation of the remainder of the preprotein requires action of the mitochondrial import motor, which resides on the matrix side of the inner membrane (Chacinska et al., 2009; Marom et al., 2011a; Neupert, 2015; Schulz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chacinska et al., 2009; Marom et al., 2011a; Neupert, 2015; Schulz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "0a55e0dc-3711-47db-9671-bd2f88f5a722",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C8",
+      "claim": "The mitochondrial import motor resides on the matrix side of the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation of the remainder of the preprotein requires action of the mitochondrial import motor, which resides on the matrix side of the inner membrane (Chacinska et al., 2009; Marom et al., 2011a; Neupert, 2015; Schulz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chacinska et al., 2009; Marom et al., 2011a; Neupert, 2015; Schulz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "6d7b0566-341f-40e7-b3fb-9c4f3b127b95",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C9",
+      "claim": "The Tim17/23 translocon is composed of two essential and related integral membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tim17/23 translocon is composed of two essential and related integral membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about the translocon structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "caae150d-6fdc-4a0d-ad91-c072acc76f34",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C10",
+      "claim": "Both Tim17 and Tim23 have four membrane-spanning helices and two hydrophilic loops facing the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Tim17 and Tim23 have four membrane-spanning helices and two hydrophilic loops facing the matrix (Alder et al., 2008; Bauer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alder et al., 2008; Bauer et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "44fb0e72-c4da-449e-873c-d06f5ddcbd18",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C11",
+      "claim": "Tim23 has an N-terminal domain in the intermembrane space (IMS) that interacts with presequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Tim23 has an N-terminal domain in the intermembrane space (IMS) that interacts with presequence (de la Cruz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to de la Cruz et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e092db3c-68e3-4ba8-88d8-ec5a4d59126f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C12",
+      "claim": "The translocon maintains the potential across the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The translocon maintains the potential across the inner membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about translocon function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "aee60201-9437-43bc-81b2-70340a485c4d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C13",
+      "claim": "Tim23 forms the protein-conducting pore itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim23 forms the protein-conducting pore itself, whereas Tim17 contributes to the structure and gating of the channel (Bauer et al., 1996; Martinez-Caballero et al., 2007; Meier et al., 2005; Ryan et al., 1998; Truscott et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bauer et al., 1996; Martinez-Caballero et al., 2007; Meier et al., 2005; Ryan et al., 1998; Truscott et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "230b5245-7319-4a25-a488-16d6f6079048",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C14",
+      "claim": "Tim17 contributes to the structure and gating of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim23 forms the protein-conducting pore itself, whereas Tim17 contributes to the structure and gating of the channel (Bauer et al., 1996; Martinez-Caballero et al., 2007; Meier et al., 2005; Ryan et al., 1998; Truscott et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bauer et al., 1996; Martinez-Caballero et al., 2007; Meier et al., 2005; Ryan et al., 1998; Truscott et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "64f8d38d-d03a-4df8-9051-3c348f0a0cbc",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C15",
+      "claim": "Upon interaction with a presequence, the channel opens to allow passage of the incoming polypeptide, driven by the membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon interaction with a presequence, the channel opens to allow passage of the incoming polypeptide, driven by the membrane potential (Truscott et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Truscott et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b5babba0-6315-42cc-88f7-a7a1d768cc62",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C16",
+      "claim": "The driving force of the motor for translocation of the remainder of the protein is provided by the ATP-hydrolyzing 70 kDa heat shock protein (mtHsp70).",
+      "claim_type": "EXPLICIT",
+      "source": "The driving force of the motor for translocation of the remainder of the protein is provided by the ATP-hydrolyzing 70 kDa heat shock protein (mtHsp70) (Gambill et al., 1993; Kang et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gambill et al., 1993; Kang et al., 1990",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "c7ce8727-6bd8-4a4e-bd3b-bf922e56c6fd",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C17",
+      "claim": "mtHsp70's innate ATPase activity is weak and stimulated by a J-protein co-chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all Hsp70s, mtHsp70's innate ATPase activity is weak and stimulated by a J-protein co-chaperone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Hsp70 proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "ced4393e-39a8-452b-9b7a-056389c9f371",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C18",
+      "claim": "ATP hydrolysis by mtHsp70 drives conformational changes in mtHsp70, serving to stabilize interaction with the translocating polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "This hydrolysis drives conformational changes in mtHsp70, serving to stabilize interaction with the translocating polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Hsp70 mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "07378704-35d5-41c9-9863-8e6c5df452ae",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C19",
+      "claim": "Pam18 (Tim14) is the J-protein co-chaperone that serves this function for the import motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Pam18 (Tim14) is the J-protein co-chaperone that serves this function for the import motor (D'Silva et al., 2003; Truscott et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to D'Silva et al., 2003; Truscott et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "89473c4a-26a4-4981-b700-666e156b57c6",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C20",
+      "claim": "Pam18 is a transmembrane protein that interacts with Tim17 in the IMS and with Pam16 (Tim16) in the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a transmembrane protein that interacts with Tim17 in the IMS and with Pam16 (Tim16) in the matrix (Chacinska et al., 2005; Schilke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chacinska et al., 2005; Schilke et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "4d031fed-7dfa-4f3e-841b-2ad286fd3f9b",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C21",
+      "claim": "Neither mtHsp70, Pam18 nor Pam16 directly interact with the translocon in the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither mtHsp70, Pam18 nor Pam16 directly interact with the translocon in the matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about motor component interactions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b8ecee52-2899-42fd-9a79-45031ec1dd8e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C22",
+      "claim": "The essential peripheral inner membrane protein, Tim44, serves as a scaffold, bridging the translocon and other motor components.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the essential peripheral inner membrane protein, Tim44, serves as a scaffold, bridging the translocon and other motor components (Schiller et al., 2008; Ting et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schiller et al., 2008; Ting et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "255d17ca-70d4-4598-bfe1-352c4336a29c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C23",
+      "claim": "The motor contains the nonessential, transmembrane protein, Pam17, thought to be involved in early steps of the translocation process.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor also contains the nonessential, transmembrane protein, Pam17, thought to be involved in early steps of the translocation process (Hutu et al., 2008; Schiller, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hutu et al., 2008; Schiller, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "43fb7f0f-5a2b-4de8-9f20-8c54a71a43ca",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C24",
+      "claim": "Pam17 does not interact with Tim44, but directly with matrix-exposed loop 1 of Tim17.",
+      "claim_type": "EXPLICIT",
+      "source": "Pam17 does not interact with Tim44, but directly with matrix-exposed loop 1 of Tim17 (Ting et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ting et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b51abb69-1777-4440-ad3d-af6e3e2190d2",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C25",
+      "claim": "Tim44 is a two-domain protein, consisting of the N-terminal (residues 43 to 209) and C-terminal (residues 210 to 431) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim44 is a two-domain protein, consisting of the N-terminal (residues 43 to 209) and C- terminal (residues 210 to 431) domains, referred to as NTD and CTD, respectively, with the first 42 residues being the cleavable presequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Tim44 structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "af85ee3c-101d-4d43-bae3-eb8b666667d0",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C26",
+      "claim": "The first 42 residues of Tim44 are the cleavable presequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim44 is a two-domain protein, consisting of the N-terminal (residues 43 to 209) and C- terminal (residues 210 to 431) domains, referred to as NTD and CTD, respectively, with the first 42 residues being the cleavable presequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Tim44 structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "68ea2d0d-3719-4d85-967a-e1d07cc5a43c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C27",
+      "claim": "The NTD of Tim44 interacts with Tim23, mtHsp70 and Pam16.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evidence indicates that it interacts with Tim23, mtHsp70 and Pam16 (Schilke et al., 2012; Schiller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schilke et al., 2012; Schiller et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "3d573dbb-a3f6-40b0-aa0f-6f97a74fd1ec",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C28",
+      "claim": "The CTD of Tim44 is composed of both \u03b1-helices and \u03b2-strands, with the core forming an \u03b1+\u03b2 barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD is composed of both \u03b1-helices and \u03b2-strands, with the core forming an \u03b1+\u03b2 barrel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from structural information cited in Handa et al., 2007; Josyula et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "670ec537-78fe-485d-97b9-a3fd93b141ff",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C29",
+      "claim": "Two N-terminal \u03b1-helices of the CTD are suggested to be involved in membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Two N-terminal \u03b1-helices, suggested to be involved in membrane binding (Marom et al., 2009), protrude from the core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marom et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "dfdbb5e4-15b3-4a94-a71e-bdd4bd8cf272",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C30",
+      "claim": "The CTD of Tim44 interacts with Tim17.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although recent data indicates that the CTD interacts with Tim17 (Banerjee et al., 2015), the basis of the interaction and importance is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Banerjee et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "fee3135a-8adc-406d-9ac0-9094bd4d9765",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C31",
+      "claim": "Precursor proteins have been crosslinked to Tim44 in organellar experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, precursor proteins have been crosslinked to Tim44 in organellar (Blom et al., 1993; Gruhler et al., 1997; Kanamori et al., 1997; Scherer et al., 1992) and presequence peptides to purified Tim44 in vitro (Marom et al., 2011b), raising the possibility that Tim44 plays a regulatory role in transferring translocating polypeptides to mtHsp70, activating the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blom et al., 1993; Gruhler et al., 1997; Kanamori et al., 1997; Scherer et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "7b3a3f3d-8a42-4917-93a4-472b8176dfa9",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C32",
+      "claim": "Presequence peptides have been crosslinked to purified Tim44 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, precursor proteins have been crosslinked to Tim44 in organellar (Blom et al., 1993; Gruhler et al., 1997; Kanamori et al., 1997; Scherer et al., 1992) and presequence peptides to purified Tim44 in vitro (Marom et al., 2011b), raising the possibility that Tim44 plays a regulatory role in transferring translocating polypeptides to mtHsp70, activating the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marom et al., 2011b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "15f5a69f-3221-40c6-ab8d-cd29df5d0529",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C33",
+      "claim": "Tim44 may play a regulatory role in transferring translocating polypeptides to mtHsp70, activating the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, precursor proteins have been crosslinked to Tim44 in organellar (Blom et al., 1993; Gruhler et al., 1997; Kanamori et al., 1997; Scherer et al., 1992) and presequence peptides to purified Tim44 in vitro (Marom et al., 2011b), raising the possibility that Tim44 plays a regulatory role in transferring translocating polypeptides to mtHsp70, activating the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on crosslinking data",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "a82a4a80-6bd9-4226-9f29-13cd5c1ef235",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C34",
+      "claim": "The CTD of Tim44 crosslinks to both Tim23 and Tim17.",
+      "claim_type": "EXPLICIT",
+      "source": "We report three key findings regarding Tim44 function: the CTD specifically crosslinks to both Tim23 and Tim17",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vivo crosslinking experiments shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "0c894960-ae39-4f5e-99f3-5d312d336590",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C35",
+      "claim": "Both the NTD and the CTD of Tim44 crosslink to the matrix exposed loop 1 of Tim23 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "both the NTD and the CTD crosslink to the matrix exposed loop 1 of Tim23 in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vivo crosslinking experiments shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "1566e5a0-c697-45cd-9059-3fd264b28d05",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C36",
+      "claim": "The NTD of Tim44 is intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of in vitro experiments showed that the N-terminal domain (NTD) is intrinsically disordered",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from HSQC and CD spectroscopy shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "ecafa523-b6d8-4a3c-b52b-5333dd3200bf",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C37",
+      "claim": "The NTD of Tim44 binds presequence near a region important for interaction with Hsp70 and Tim23.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of in vitro experiments showed that the N-terminal domain (NTD) is intrinsically disordered and binds presequence near a region important for interaction with Hsp70 and Tim23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from crosslinking experiments shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "269760a2-692a-46ca-aab1-509e5ad754d9",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C38",
+      "claim": "The CTD of Tim44 serves primarily to anchor Tim44 to the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a model in which the CTD serves primarily to anchor Tim44 to the translocon, whereas the NTD is a dynamic arm, interacting with multiple components to drive efficient translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data on CTD interactions with Tim23 and Tim17",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "6a2dbbae-aca0-4080-b7ca-1674cb1d3fb0",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C39",
+      "claim": "The NTD of Tim44 is a dynamic arm, interacting with multiple components to drive efficient translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a model in which the CTD serves primarily to anchor Tim44 to the translocon, whereas the NTD is a dynamic arm, interacting with multiple components to drive efficient translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data on NTD interactions and its disordered nature",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "fd666215-965c-4ef2-99dd-7c67df9708f1",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C40",
+      "claim": "tim44D345G grows poorly at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "tim44D345G grows poorly at 37\u00b0C (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "a996af78-2839-45fa-b70c-aa620a2b7e81",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C41",
+      "claim": "D345 is surface exposed, located in the linker region between the first long \u03b2-strand (\u03b21a) of the CTD's antiparallel \u03b2-sheet and the adjacent, shorter \u03b2-strand (\u03b21b).",
+      "claim_type": "EXPLICIT",
+      "source": "D345 is surface exposed, located in the linker region between the first long \u03b2-strand (\u03b21a) of the CTD's antiparallel \u03b2-sheet and the adjacent, shorter \u03b2-strand (\u03b21b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural information from PDB entry 2FXT",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e77b13bf-4802-44bc-a8af-60333eccd26e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C42",
+      "claim": "The aspartic acid at position 345 is conserved across a wide range of eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment of Tim44 sequences from a wide range of eukaryotes revealed that the aspartic acid is conserved (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "35d0fe6a-4e35-420b-b59e-207f88dcfeac",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C43",
+      "claim": "tim44D345A has no obvious growth phenotype at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "tim44D345A had no obvious growth phenotype at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from growth assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "171bf343-2164-4733-8e80-5b4ca812194f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C44",
+      "claim": "tim44D345K has a significant growth defect even at 30\u00b0C, and does not form colonies at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "tim44D345K had a significant growth defect even at 30\u00b0C, and did not form colonies at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from growth assays shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "fb6eda8b-2de3-4016-a841-55a00c5bdc3d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C46",
+      "claim": "Hsp60 precursor accumulation is observed in tim44D345G and tim44D345K.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp60 precursor accumulation was observed in tim44D345G and tim44D345K, consistent with the observed growth defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoblot data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "86681961-7de5-4b22-9af3-fe3836a2109b",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C47",
+      "claim": "tim44D345K is severely defective in import of cytochrome b2-(167)\u220619-DHFR compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "tim44D345K was severely defective in import of cytochrome b2-(167)\u220619-DHFR compared to wt (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in organellar import assay data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "09d65030-eecf-4316-a31d-d54d9b9bab40",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C48",
+      "claim": "Motor components, particularly Tim44, are reduced in co-precipitates from mitochondrial lysates of tim44D345G and tim44D345K.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these motor components, particularly Tim44, were reduced in co-precipitates from mitochondrial lysates of tim44D345G and tim44D345K, even though the amounts of Tim23 precipitated from the two extracts were similar. (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e595a73c-4785-4b47-b294-1333f79cfd0e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C49",
+      "claim": "Binding of Pam17 with the TIM23 complex increases when the association of Tim44 decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, binding of Pam17 with the TIM23 complex increases when the association of Tim44 decreases (Hutu et al., 2008; Schilke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hutu et al., 2008; Schilke et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "a66f5d47-0978-4182-b6f9-b20e03f2827f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C50",
+      "claim": "Alteration of residue 345 of Tim44's CTD compromises the association of the motor components with the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that alteration of residue 345 of Tim44's CTD compromises the association of the motor components with the translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from co-immunoprecipitation data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "68318b63-ecb8-4266-a11f-ee3822f2ec7b",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C51",
+      "claim": "tim44D345A/R342A and tim44D345A/R370A have no obvious growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the double alanine mutants, tim44D345A/R342A and tim44D345A/R370A, had no obvious growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "82a6c6d0-601d-4abb-ac83-ccc660d269e5",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C52",
+      "claim": "tim44D345A/E295A and tim44D345A/E350A are temperature sensitive, growing slowly at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Two others, tim44D345A/E295A and tim44D345A/E350A, were ts, growing slowly at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "4c570a5b-58f7-437d-b22c-a7853353dece",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C53",
+      "claim": "tim44D345A/E303A does not form colonies at 30\u00b0C and grows very slowly at 23\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth defect of tim44D345A/E303A was the most extreme. It did not form colonies at 30\u00b0C and grew very slowly at 23\u00b0C (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth assay data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "cf289540-f288-4356-a6d7-58857b7e17ba",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C54",
+      "claim": "Hsp60 precursor accumulation is observed in all double alanine mutant strains that have growth defects (tim44D345A/E295A, tim44D345A/E303A, tim44D345A/E350A).",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp60 precursor accumulation was observed in all double alanine mutant strains that had growth defects (i.e. tim44D345A/E295A, tim44D345A/E303A, tim44D345A/E350A) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b97824af-cc6a-4468-b8b5-dd3b5eeef00d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C55",
+      "claim": "Motor components, particularly Tim44, are reduced in Tim23 co-precipitates from lysates of tim44D345A/E295A, tim44D345A/E350A, and tim44D345A/E303A mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, motor components, particularly Tim44, were reduced in Tim23 co-precipitates from lysates of tim44D345A/E295A, tim44D345A/E350A, and tim44D345A/E303A mitochondria (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "482d10d1-08c4-4e67-981f-edd261b98755",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C56",
+      "claim": "tim44D345A/E303A mitochondria are defective in import of cytochrome b2-(167)\u220619-DHFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to tim44D345K, tim44D345A/E303A mitochondria were defective in import of cytochrome b2-(167)\u220619-DHFR (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in organellar import assay data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "20227460-d751-49bc-b86f-582e46b0be7a",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C57",
+      "claim": "E303K substitution results in the most severe growth defect of the cells, similar to the D345K substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the double alanine substitutions described above, E303K substitution resulted in the most severe growth defect of the cells, similar to the D345K substitution (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth assay data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "080abd35-329e-4b54-980e-b73bbbd1fcc4",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C58",
+      "claim": "D345 and nearby surface exposed charged amino acids, especially residue E303, are functionally important for Tim44 association with the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that D345 and the nearby, surface exposed charged amino acids, especially residue E303, are functionally important for Tim44 association with the translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from growth, import, and co-immunoprecipitation data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "ab4b1257-0290-49ea-9b58-460551d94398",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C59",
+      "claim": "Tim44 with Bpa at position D345 crosslinks to Tim23 after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case of D345Bpa, we observed a crosslinked product migrating at ~64 kDa that reacted with antibodies for Tim44 and Tim23 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo crosslinking data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f2d7e8a9-44f8-4e91-94a5-dc81a4e0df39",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C60",
+      "claim": "Tim44 with Bpa at position E350 crosslinks to Tim17 after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of E350Bpa, we also observed a Tim44-reactive crosslinking species. But, it was detected by antibodies specific for Tim17, not those for Tim23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo crosslinking data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "ce46a24f-7b24-4d06-83bb-71225bdc1170",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C61",
+      "claim": "Tim44 variants with Bpa at positions I374, I385, and A391 crosslink to Tim23.",
+      "claim_type": "EXPLICIT",
+      "source": "Those having Bpa at positions I374, I385, and A391 reacted with antibodies for Tim23 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo crosslinking data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "700b8ef1-cfa6-4df2-a46d-0a22928d63e8",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C62",
+      "claim": "Tim44 variants with Bpa at positions S271, R272 and N286 crosslink to Tim17.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, lysates from cells expressing Tim44 variants having Bpa at positions S271, R272 and N286 reacted with Tim17-specific antibodies (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo crosslinking data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "57c17be3-3ee8-4c51-948e-2c46dc1aebef",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C63",
+      "claim": "The CTD of Tim44 interacts with both Tim23 and Tim17, via two distinct binding interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results are consistent with the idea that the CTD of Tim44 interacts with both Tim23 and Tim17, via two distinct binding interfaces (i.e. patches) (Figure 3D, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from crosslinking data shown in Figures 3A-C",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e380d469-cf02-47a9-b9c7-a95bcd584e78",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C64",
+      "claim": "Tim23 has two matrix-exposed loops: 24-residue loop 1 (residues 122 to 145) and 7-residue loop 3 (residues 191 to 197).",
+      "claim_type": "EXPLICIT",
+      "source": "Tim23 has two matrix-exposed loops (Figure 4A), 24-residue loop 1 (residues 122 to 145) which can be crosslinked to Tim44 (Ting et al., 2014) and 7-residue loop 3 (residues 191 to 197).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural knowledge and previous crosslinking data",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "bb223080-5d9c-4176-ad9a-0225f2742344",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C65",
+      "claim": "Loop 1 of Tim23 can be crosslinked to Tim44.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim23 has two matrix-exposed loops (Figure 4A), 24-residue loop 1 (residues 122 to 145) which can be crosslinked to Tim44 (Ting et al., 2014) and 7-residue loop 3 (residues 191 to 197).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ting et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f3dcfde4-b19b-4762-8302-42f6490fa4e8",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C66",
+      "claim": "Cells expressing a C-terminal Tim23 truncation lacking TM3, loop 3, and TM4 segments (tim23\u0394176-222) are viable.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative, we took advantage of the previous finding that cells expressing a C-terminal Tim23 truncation lacking TM3, loop 3, and TM4 segments (tim23\u0394176-222) are viable (Pareek et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pareek et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "ba061d3b-3901-4a46-8482-2905322ab475",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C67",
+      "claim": "Both Tim44D165Bpa (NTD) and Tim44A391Bpa (CTD) crosslink to Tim23\u0394176-222 after UV treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, we observed a cross-reactive Tim44 crosslinking band after UV treatment (Figure 4B), which, as expected, migrated faster than those obtained when full length Tim23 was used.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo crosslinking data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "78bdbe06-5a33-496d-a5dc-ee053ba5c4fd",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C68",
+      "claim": "Both domains of Tim44 interact with loop 1 of Tim23 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the band also reacted with Tim23 antibodies, indicating that both domains of Tim44 interact with loop 1 of Tim23 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data with Tim23\u0394176-222",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "c572f998-068a-4123-a791-816bfee2bb62",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C69",
+      "claim": "The G173V alteration in the NTD suppresses the deleterious effects of the D345K mutation in the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a suppressor encoding the single amino acid substitution G173V, which allowed tim44D345K cells to grow as well as wt cells at 34\u00b0C, was isolated (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "1cb107d6-2a04-4bde-aec3-de7aa9f862fa",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C70",
+      "claim": "Association of Tim44 is partially restored in the double mutant tim44G173V/D345K; co-immunoprecipitation is 74% of wild type compared to 45% in tim44D345K.",
+      "claim_type": "EXPLICIT",
+      "source": "Association of Tim44 was partially restored in the double mutant; co-immunoprecipitation was 74% of wt in tim44G173V/D345K, rather than 45% found with tim44D345K extracts (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "20032a22-a0d2-45ef-9295-090810e91840",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C71",
+      "claim": "tim44G173V/D345K mitochondria import cytochrome b2-(167)\u220619-DHFR nearly as efficiently as wild type mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the robust growth of tim44G173V/D345K at 30\u00b0C, tim44G173V/D345K mitochondria imported cytochrome b2-(167)\u220619-DHFR nearly as efficiently as wt mitochondria (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in organellar import assay data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "9b32480b-9ab8-41ff-b038-4edb49806b87",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C72",
+      "claim": "Alteration of the NTD of Tim44 can partially overcome the effects of compromised association of Tim44 with the translocon due to alteration of the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that alteration of the NTD of Tim44 can partially overcome the effects of compromised association of Tim44 with the translocon due to alteration of the CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from suppressor analysis data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "9287ee6d-3c6e-4df8-ad58-55bffa875d85",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C73",
+      "claim": "The G173V substitution increases crosslinking of D165Bpa to Tim23.",
+      "claim_type": "EXPLICIT",
+      "source": "The most obvious difference observed was an increase in crosslinking of D165Bpa to Tim23 when the suppressor mutation is present, suggesting that the G173V substitution alters the Tim44 NTD-Tim23 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crosslinking data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "643a2738-1a33-4b8c-ae45-47970ebd3e7e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C74",
+      "claim": "The G173V substitution alters the Tim44 NTD-Tim23 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The most obvious difference observed was an increase in crosslinking of D165Bpa to Tim23 when the suppressor mutation is present, suggesting that the G173V substitution alters the Tim44 NTD-Tim23 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from increased crosslinking observed in Figure 5F",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "79e95dc4-8199-4184-b623-54b06820efba",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C75",
+      "claim": "Full-length Tim44 interacts in vitro with the presequence of Hsp60.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, full-length Tim44 was shown to interact in vitro with the presequence of Hsp60, implicating Tim44 in signaling the entry of a translocating polypeptide into the matrix (Marom et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marom et al., 2011b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "c4b51278-10f7-4250-ab39-9785248bcd20",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C76",
+      "claim": "The NTD of Tim44, but not the CTD, interacts with the Hsp60 presequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this result using the same approach, and then extended the analysis to the isolated NTD (Tim4443-209) and CTD (Tim44210-431). Interaction of the Hsp60 presequence with the NTD, but not the CTD was detected (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "3c6e5fdb-2d36-4a79-aba2-c04a117a3a8e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C77",
+      "claim": "Binding of the NTD to the Hsp60 presequence is concentration-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding was concentration-dependent (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b2a707b4-87fd-47e5-995c-05605ebc07ea",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C78",
+      "claim": "Tim4443-177 crosslinks to presequence similarly to the complete N-terminal domain (Tim4443-209).",
+      "claim_type": "EXPLICIT",
+      "source": "While Tim4443-177 crosslinked to presequence similarly to the complete N-terminal domain (Tim4443-209), crosslinking between peptide and Tim4443-164 or Tim4443-170 were greatly reduced (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "c664ddd3-eb42-442d-8b02-6024b7a9e6f9",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C79",
+      "claim": "Crosslinking between presequence and Tim4443-164 or Tim4443-170 is greatly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tim4443-177 crosslinked to presequence similarly to the complete N-terminal domain (Tim4443-209), crosslinking between peptide and Tim4443-164 or Tim4443-170 were greatly reduced (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "9701da58-3c54-4fff-9c6f-aa378c48ea30",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C80",
+      "claim": "Tim44NTD\u039468-82 and Tim44NTD\u0394131-147 crosslink to presequence similarly to the intact NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tim44NTD\u039468-82, and Tim44NTD\u0394131-147 crosslinked to presequence similarly to the intact NTD, crosslinking of presequence to Tim44NTD\u0394166-185 was reduced (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "4a96d35a-ec75-44f0-9ef2-8e0ed7d73c07",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C81",
+      "claim": "Crosslinking of presequence to Tim44NTD\u0394166-185 is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tim44NTD\u039468-82, and Tim44NTD\u0394131-147 crosslinked to presequence similarly to the intact NTD, crosslinking of presequence to Tim44NTD\u0394166-185 was reduced (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro crosslinking data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "02e58b57-4c18-4aa3-975b-5bdb2e67660d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C82",
+      "claim": "Residues between positions 170 and 177 are particularly important for Tim44's interaction with presequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results point to the particular importance of residues between positions 170 and 177 for Tim44's interaction with presequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data with truncations and deletions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "fcd15522-9898-427f-bc2f-a096b45cb2e4",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C83",
+      "claim": "The disorder prediction softwares IUPred, Metadisorder, and PrDOS identify the NTD as having a high probability of being intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the disorder prediction softwares, IUPred (Doszt\u00e1nyi et al., 2005), Metadisorder (Kozlowski and Bujnicki, 2012), and PrDOS (Ishida and Kinoshita, 2007), identified the NTD as having a high probability of being intrinsically disordered (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational predictions shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "cef94167-7da2-4718-892d-fca077b59519",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C84",
+      "claim": "The very limited chemical shift dispersion observed in the HSQC 1H dimension indicates that the NTD is primarily disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "The very limited chemical shift dispersion observed in the HSQC 1H dimension indicated that the segment is primarily disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HSQC NMR data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "74211c9f-9b66-49bf-a8ab-7502b6551eeb",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C85",
+      "claim": "The presence of different peak intensities in the HSQC is consistent with the idea that some regions of the NTD may dynamically exchange between multiple conformational states in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence of different peak intensities in the HSQC is consistent with the idea that some regions of the NTD may dynamically exchange between multiple conformational states in the solution (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from HSQC NMR data shown in Figure 7B",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "86a2533e-df17-4ad4-b16f-2708611d3941",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C86",
+      "claim": "The CD spectrum showing a minimum signal close to 200 nm, yet some signal at 222 nm, suggests that the NTD is disordered and has some fractional transient helical propensity.",
+      "claim_type": "EXPLICIT",
+      "source": "That the CD spectrum showed a minimum signal close to 200 nm, yet some signal at 222 nm, also suggests that the NTD is disordered and that it has some fractional transient helical propensity (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "afd46f4c-1b02-4f6a-80a1-8f3afdae3f6e",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C87",
+      "claim": "Tim44 interacts with the translocon through three prongs: two with Tim23 and one with Tim17.",
+      "claim_type": "EXPLICIT",
+      "source": "Results presented here point to a three-pronged interaction of Tim44 with the translocon: two with Tim23 and one with Tim17 (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from crosslinking and functional data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "8be8e82e-81a6-4c75-830f-43b8de967be5",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C88",
+      "claim": "The phenotypes of mutants encoding alterations on the CTD face suggest that both Tim23 and Tim17 interactions play a role in stabilizing overall interaction of Tim44 with the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypes of mutants encoding alterations on this face suggest that both interactions play a role in stabilizing overall interaction of Tim44 with the translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutant phenotype data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "9c46177a-10d2-4f50-a2b4-8140bd7a604c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C89",
+      "claim": "The Tim44 CTD-Tim23 interaction may be more functionally important than the Tim44 CTD-Tim17 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The more dramatic effect of mutations changing residues in the Tim23-interaction region suggests that this interaction may be more functionally important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of mutant phenotypes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "29ff6170-d37e-497a-8960-5fd38d880caa",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C90",
+      "claim": "The interaction of Tim44 with Tim17 occurs via loop 3.",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was under review, a report was published indicating the interaction of Tim44 with Tim17 occurs via loop 3 (Demishtein-Zohary et al., 2017), the smaller of the two matrix-exposed loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Demishtein-Zohary et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "5a09f7fe-0afd-4767-b628-152f8f6c01a2",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C91",
+      "claim": "A translocon contains at least two molecules of Tim23.",
+      "claim_type": "EXPLICIT",
+      "source": "There is consensus, however, that a translocon contains at least two molecules of Tim23 (Alder et al., 2008; Marom et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alder et al., 2008; Marom et al., 2011a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "0dd59f00-ae10-4e24-83d7-9aced396b626",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C92",
+      "claim": "One Tim44 molecule could interact with loop 1 of two different Tim23 molecules simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, one Tim44 molecule could interact with loop 1 of two different Tim23 molecules simultaneously (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative model based on structural constraints",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b247dc87-2041-422d-9fba-57c578d1a899",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C93",
+      "claim": "Both the NTD and CTD of a Tim44 molecule could interact with a single Tim23 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, both the NTD and CTD of a Tim44 molecule could interact with a single Tim23 molecule (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative model based on structural constraints",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "1a37afe5-7c75-40b3-a19c-270d2d3bb3e9",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C94",
+      "claim": "If both NTD and CTD interact with a single Tim23 molecule, the interactions would likely occur sequentially due to steric constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, the interactions would likely occur sequentially, as the 24-residue size of loop 1 makes simultaneous interaction unlikely due to steric constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "40b3cebe-c4e1-4f2e-894b-fb97517e1b68",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C95",
+      "claim": "The region between residues 160 and 180 of the NTD is a critical portion of the NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Data presented here cements the idea that the NTD of Tim44 is a platform for protein-protein interactions, and further points to the region between residues 160 and 180 as a critical portion of the NTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking and suppressor data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "5c0c29d7-7d49-4f8a-821f-5ffcf2cee312",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C96",
+      "claim": "The segment between residues 160 and 180 was previously shown to be important for association of Tim44 with the translocon and for recruiting mtHsp70.",
+      "claim_type": "EXPLICIT",
+      "source": "This segment was previously shown to be important for association of Tim44 with the translocon, and for recruiting mtHsp70 (Schiller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schiller et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "a6a83823-d288-4682-8b2c-7f17f64f1e05",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C97",
+      "claim": "The segment between residues 160 and 180 includes the presequence binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide evidence that it also includes the presequence binding site, suggesting that this segment not only has tethering functions, but also serves as a regulatory center for import motor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by presequence crosslinking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "0832474b-035e-4911-8d86-4fd2da01b12f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C98",
+      "claim": "Pam16 binds Tim44 at the extreme N-terminus of the NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that Pam16, which forms a heterodimer with the J-protein cochaperone of mtHsp70, binds Tim44 at the extreme N-terminus of the NTD (Schilke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schilke et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "4a5e5f5f-b31c-4d7f-82a4-5039d131613a",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C99",
+      "claim": "Tim44's NTD being intrinsically disordered is in line with the idea that this domain plays important regulatory functions.",
+      "claim_type": "EXPLICIT",
+      "source": "That Tim44's NTD is likely intrinsically disordered is also in line with the idea that this domain plays important regulatory functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from disorder data and known properties of disordered proteins",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "13f8cc82-a478-42eb-aa94-7f81068f306f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C100",
+      "claim": "Intrinsic disorder is a common feature of hub proteins that serve as regulatory scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic disorder is a common feature of hub proteins that serve as regulatory scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about intrinsically disordered proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "3bbca481-7e29-466e-b2bf-421235369798",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C101",
+      "claim": "Domains of hub proteins often gain structure when interacting with partners and undergo conformational changes upon interacting with different binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Often domains of such proteins not only gain structure when interacting with partners, but also undergo conformational changes upon interacting with different binding partners (Dyson and Wright, 2005; Oldfield and Dunker, 2014; Wright and Dyson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dyson and Wright, 2005; Oldfield and Dunker, 2014; Wright and Dyson, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "afd926ca-bb7d-41c9-969f-37b67333d3e7",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C102",
+      "claim": "Tim44 acts as a two-arm machine with the CTD playing the major role in anchoring Tim44 to the translocase through interactions with both Tim17 and Tim23.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Tim44 acts as a two-arm machine. One arm, the CTD, plays the major role in anchoring Tim44 to the translocase through interactions with both Tim17 and Tim23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "fe3aae63-75d1-4ad5-9b5c-4faf012f91ec",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C104",
+      "claim": "The two domains of Tim44 together control the inactive:active transition of the import motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together the two domains control the inactive:active transition of the import motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "6e24dd55-d826-4ce7-9fe6-c4bd71142294",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C105",
+      "claim": "In the absence of a translocating polypeptide, the conformation of the Tim44 NTD maintains the import motor in an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Key features of this working model include (Figure 9): (1) In the absence of a translocating polypeptide, the conformation of the Tim44 NTD maintains the import motor in an inactive state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "a027cdb0-d833-4a28-958f-c4c494552343",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C106",
+      "claim": "Upon entering the matrix, presequence binds the Tim44 NTD in a region also important for interaction of the NTD with both Tim23 and Hsp70.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon entering the matrix, presequence binds the Tim44 NTD in a region also important for interaction of the NTD with both Tim23 and Hsp70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "e0ec6005-6ee7-4fae-8c13-264ce629ff76",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C107",
+      "claim": "Presequence association initiates a conformational change in the Tim44 NTD reorienting Pam18 relative to Hsp70 such that it can perform its co-chaperone function of stimulating Hsp70's ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Presequence association initiates a conformational change in the Tim44 NTD reorienting Pam18 relative to Hsp70 such that it can perform its co-chaperone function of stimulating Hsp70's ATPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "5e42bdaa-47c3-4bd1-bc21-f0fd07f9290d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C108",
+      "claim": "Hydrophobic residues of the presequence or adjacent regions of the preprotein interact as a substrate with Hsp70's peptide binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Hydrophobic residues of the presequence or adjacent regions of the preprotein interact, as a substrate, with Hsp70's peptide binding cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "da006b6f-eb15-45bd-bf5f-6debe47eaafc",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C109",
+      "claim": "The interaction of presequence with Hsp70, coupled with that of Pam18, synergistically stimulates hydrolysis of ATP bound to Hsp70, stabilizing its interaction with the translocating polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction, coupled with that of Pam18, synergistically stimulates hydrolysis of ATP bound to Hsp70, stabilizing its interaction with the translocating polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "393a3feb-d95d-434e-b76d-7d4a1c3332c9",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C110",
+      "claim": "The conformational change of Hsp70 from the ATP- to the ADP-state results in release from Tim44.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) The resulting conformational change of Hsp70 (i.e. from the ATP- to the ADP-state) also results in release from Tim44 (Liu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "bc1ee3eb-21c4-4457-abd2-849b3e9c0cfd",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C111",
+      "claim": "Release of Hsp70 from Tim44 permits binding of another ATP-bound Hsp70 molecule primed to interact with the incoming polypeptide chain, and thus further translocation into the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "This release of Hsp70 from Tim44 permits binding of another ATP-bound Hsp70 molecule primed to interact with the incoming polypeptide chain, and thus further translocation into the matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "b75bd877-531b-440c-b52d-842d51331bae",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "claim_id": "C112",
+      "claim": "The Tim44 CTD could be crosslinked to a protein trapped in the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Apropos of this, it was recently reported that the Tim44 CTD could be crosslinked to a protein trapped in the translocon (Banerjee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Banerjee et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on mitochondrial protein import machinery, describing the Tim17/23 translocon, the mitochondrial import motor components (mtHsp70, Pam18, Pam16, Pam17), and Tim44's role as a scaffold protein bridging the translocon and motor components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C33) establish the known background of mitochondrial protein import and are supported by appropriate citations to prior literature. They provide necessary context for the experimental work but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Residue D345 in the CTD of Tim44 is functionally important for Tim44 association with the translocon. The tim44D345G mutant grows poorly at 37\u00b0C, tim44D345K shows severe growth defects and import deficiencies, while tim44D345A has no obvious phenotype. Both mutants show reduced motor component association with the translocon and precursor accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C50 are well-supported by multiple complementary experimental approaches including growth assays (Figure 1B), sequence conservation analysis (Figure 1C), precursor accumulation assays (Figure 1E), in organellar import assays (Figure 1F), and co-immunoprecipitation experiments (Figure 1G). The data consistently demonstrate the functional importance of D345.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "72d3f140-1039-4f6e-9329-4af961d0092d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Additional surface-exposed charged residues near D345, particularly E303, are functionally important for Tim44 association with the translocon. Double alanine mutants combining D345A with E295A, E303A, or E350A show temperature-sensitive growth defects, precursor accumulation, reduced motor component association, and import defects, with E303A showing the most severe phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 are supported by systematic mutagenesis combined with growth assays (Figure 2B), protein expression analysis (Figure 2C), precursor accumulation assays (Figure 2D), co-immunoprecipitation (Figure 2E), import assays (Figure 2F), and charge-reversal mutations (Figure 2G). The convergent evidence from multiple assays strongly supports the functional importance of these residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The CTD of Tim44 directly interacts with both Tim23 and Tim17 via two distinct binding interfaces. Site-specific in vivo crosslinking with Bpa shows that positions D345, I374, I385, and A391 crosslink to Tim23, while positions S271, R272, N286, and E350 crosslink to Tim17.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C59-C63 are supported by systematic in vivo photo-crosslinking experiments using Bpa incorporation at multiple positions (Figure 3A-C). The crosslinking data directly demonstrate physical proximity between specific CTD residues and either Tim23 or Tim17, providing strong evidence for two distinct binding interfaces on the CTD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both the NTD and CTD of Tim44 interact with loop 1 of Tim23 in vivo. Crosslinking experiments using a Tim23 truncation lacking loop 3 (tim23\u0394176-222) show that both Tim44D165Bpa (NTD) and Tim44A391Bpa (CTD) crosslink to the truncated Tim23, indicating both domains interact with loop 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C64-C68 are supported by elegant crosslinking experiments using a Tim23 truncation mutant (Figure 4). The experimental design effectively addresses which Tim23 loop interacts with Tim44 domains by eliminating loop 3. The observation that both NTD and CTD crosslink to the truncated Tim23 provides strong evidence that both domains interact with loop 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The G173V substitution in the NTD suppresses the deleterious effects of the D345K mutation in the CTD. The double mutant tim44G173V/D345K shows restored growth, partially restored Tim44 association with the translocon (74% vs 45% in D345K alone), and nearly wild-type import efficiency. The suppressor increases crosslinking of D165Bpa to Tim23.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 are supported by genetic suppressor analysis combined with growth assays (Figure 5B), co-immunoprecipitation (Figure 5C), import assays (Figure 5D), and crosslinking experiments (Figure 5F). The multiple lines of evidence demonstrate that an NTD alteration can compensate for a CTD defect, suggesting functional interplay between the two domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "af63284f-e783-48fd-89ca-556d07689db4",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The NTD of Tim44, but not the CTD, interacts with the Hsp60 presequence in vitro. The binding is concentration-dependent and mapping with truncations and deletions identifies residues 170-177 as particularly important for presequence interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 are supported by systematic in vitro crosslinking experiments using purified Tim44 domains and fragments with biotin-labeled presequence peptide (Figure 6). The use of multiple truncations and internal deletions provides strong evidence for the location of the presequence binding site within the NTD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "94053b37-7b00-4d3b-b44d-2f33396abae0",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The NTD of Tim44 is intrinsically disordered. Multiple disorder prediction algorithms identify the NTD as having high probability of disorder. HSQC NMR spectroscopy shows limited chemical shift dispersion in the 1H dimension, and CD spectroscopy shows a minimum near 200 nm with some signal at 222 nm, both consistent with intrinsic disorder with some transient helical propensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C83-C86 are supported by convergent evidence from computational predictions (Figure 7A), HSQC NMR spectroscopy (Figure 7B), and CD spectroscopy (Figure 7C). The multiple independent biophysical approaches provide strong evidence for the intrinsically disordered nature of the NTD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "7ce4e7be-94fd-4491-b3f9-408a100b8d45",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NTD binds presequence near a region (residues 160-180) that is also important for interaction with Hsp70 and Tim23. This segment was previously shown to be important for translocon association and mtHsp70 recruitment, and the current work demonstrates it also includes the presequence binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C95-C97 integrate current findings (presequence binding from Figure 6) with prior work (C96 citing Schiller et al., 2008). The convergence of multiple interaction sites in this region supports its role as a regulatory center, though the exact spatial relationships and dynamics remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Tim44 functions as a two-arm machine where the CTD primarily anchors Tim44 to the translocon through interactions with both Tim17 and Tim23, while the NTD is a dynamic arm interacting with multiple components (Tim23, mtHsp70, Pam16, presequence) to drive efficient translocation. Together the two domains control the inactive-to-active transition of the import motor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C87-C89, C102, C104 represent the authors' integrative model based on their experimental findings. The model is well-supported by the crosslinking data showing CTD interactions with Tim23 and Tim17, NTD interactions with Tim23 and presequence, the intrinsically disordered nature of the NTD, and the genetic suppressor data showing functional interplay between domains. However, this remains a working model requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript discusses alternative models for how Tim44 domains interact with Tim23 molecules in the translocon. One possibility is that one Tim44 molecule interacts with loop 1 of two different Tim23 molecules simultaneously. Alternatively, both NTD and CTD could interact with a single Tim23 molecule, likely sequentially due to steric constraints from the 24-residue loop 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C94 represent speculative models (C92-C94 are explicitly labeled as speculation) about the architectural arrangement of Tim44-Tim23 interactions. While C90 and C91 cite supporting literature, the specific models in C92-C94 are not directly tested in this manuscript. The uncertainty stems from lack of structural information about the translocon architecture and the exact stoichiometry and geometry of interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f022883b-b81e-49dc-accf-b272653484eb",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The intrinsically disordered nature of Tim44's NTD is consistent with its role as a regulatory hub protein. Pam16 binds at the extreme N-terminus of the NTD. Intrinsic disorder is a common feature of hub proteins that serve as regulatory scaffolds, and such domains often gain structure when interacting with partners and undergo conformational changes with different binding partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C101 integrate the experimental finding of NTD disorder (C99) with prior work on Pam16 binding (C98, citing Schilke et al., 2012) and general principles about intrinsically disordered proteins (C100-C101, citing appropriate reviews). The interpretation is reasonable and well-supported by the literature on disordered proteins, though direct evidence for conformational changes upon partner binding is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "219aed24-9a2f-404d-844d-a8051972686d",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose a detailed mechanistic model for import motor activation: (1) In the absence of translocating polypeptide, the NTD conformation maintains the motor in an inactive state. (2) Presequence binding to the NTD initiates conformational changes that reorient Pam18 relative to Hsp70 for co-chaperone function. (3) Hydrophobic residues of the presequence/preprotein interact with Hsp70's peptide binding cleft. (4) This interaction, coupled with Pam18, synergistically stimulates ATP hydrolysis by Hsp70. (5) The resulting Hsp70 conformational change causes release from Tim44. (6) This permits binding of another ATP-bound Hsp70 for continued translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C105-C111 represent a detailed mechanistic model that integrates the current findings with prior knowledge. While C110 cites supporting evidence (Liu et al., 2003), most steps (C105-C109, C111) are speculative extrapolations from the data. The model is plausible and consistent with the findings, but key aspects (conformational changes, sequential events, synergistic stimulation) lack direct experimental validation in this study. This represents a working hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    },
+    {
+      "id": "f1b53552-ba17-484d-9d0f-844a7e5d8415",
+      "content_id": "7432248e-1bfd-4013-820e-d12eb0026669",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Additional observations: Binding of Pam17 with the TIM23 complex increases when Tim44 association decreases (prior work). The Tim44 CTD can be crosslinked to a protein trapped in the translocon (recent report).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C112 cite prior published work (Hutu et al., 2008; Schilke et al., 2012 for C49; Banerjee et al., 2015 for C112) and are included for context and discussion. These are appropriately cited observations from other studies that inform interpretation of the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:52.188433Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05a77323-1751-4bf9-b3eb-cbc15708867d",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "89be57b3-2b62-4db4-93ac-3765ab63b802",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "26afa6d4-92ec-41c7-95cd-7407c90c4c7c",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "6da6cc8a-4982-4215-8922-6018230bed7a",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "c2bcb64f-595e-4746-9177-832100fcdad2",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "e0021d73-6470-4d44-8a91-613fc60780ef",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "f97e288f-e862-4c89-8c23-2faa5de2607f",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "0a55e0dc-3711-47db-9671-bd2f88f5a722",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "6d7b0566-341f-40e7-b3fb-9c4f3b127b95",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "caae150d-6fdc-4a0d-ad91-c072acc76f34",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "44fb0e72-c4da-449e-873c-d06f5ddcbd18",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "e092db3c-68e3-4ba8-88d8-ec5a4d59126f",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "aee60201-9437-43bc-81b2-70340a485c4d",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "230b5245-7319-4a25-a488-16d6f6079048",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "64f8d38d-d03a-4df8-9051-3c348f0a0cbc",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "b5babba0-6315-42cc-88f7-a7a1d768cc62",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "c7ce8727-6bd8-4a4e-bd3b-bf922e56c6fd",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "ced4393e-39a8-452b-9b7a-056389c9f371",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "07378704-35d5-41c9-9863-8e6c5df452ae",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "89473c4a-26a4-4981-b700-666e156b57c6",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "4d031fed-7dfa-4f3e-841b-2ad286fd3f9b",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "b8ecee52-2899-42fd-9a79-45031ec1dd8e",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "255d17ca-70d4-4598-bfe1-352c4336a29c",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "43fb7f0f-5a2b-4de8-9f20-8c54a71a43ca",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "b51abb69-1777-4440-ad3d-af6e3e2190d2",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "af85ee3c-101d-4d43-bae3-eb8b666667d0",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "68ea2d0d-3719-4d85-967a-e1d07cc5a43c",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "3d573dbb-a3f6-40b0-aa0f-6f97a74fd1ec",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "670ec537-78fe-485d-97b9-a3fd93b141ff",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "dfdbb5e4-15b3-4a94-a71e-bdd4bd8cf272",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "fee3135a-8adc-406d-9ac0-9094bd4d9765",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "7b3a3f3d-8a42-4917-93a4-472b8176dfa9",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "15f5a69f-3221-40c6-ab8d-cd29df5d0529",
+      "result_id": "e78661aa-fbc4-49d0-b1b5-f6a5ed0cc27f"
+    },
+    {
+      "claim_id": "fd666215-965c-4ef2-99dd-7c67df9708f1",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "a996af78-2839-45fa-b70c-aa620a2b7e81",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "e77b13bf-4802-44bc-a8af-60333eccd26e",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "35d0fe6a-4e35-420b-b59e-207f88dcfeac",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "171bf343-2164-4733-8e80-5b4ca812194f",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "fb6eda8b-2de3-4016-a841-55a00c5bdc3d",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "86681961-7de5-4b22-9af3-fe3836a2109b",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "09d65030-eecf-4316-a31d-d54d9b9bab40",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "a66f5d47-0978-4182-b6f9-b20e03f2827f",
+      "result_id": "04107b58-fdad-4f9b-aea9-1654fbdebd8c"
+    },
+    {
+      "claim_id": "68318b63-ecb8-4266-a11f-ee3822f2ec7b",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "82a6c6d0-601d-4abb-ac83-ccc660d269e5",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "4c570a5b-58f7-437d-b22c-a7853353dece",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "cf289540-f288-4356-a6d7-58857b7e17ba",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "b97824af-cc6a-4468-b8b5-dd3b5eeef00d",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "482d10d1-08c4-4e67-981f-edd261b98755",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "20227460-d751-49bc-b86f-582e46b0be7a",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "080abd35-329e-4b54-980e-b73bbbd1fcc4",
+      "result_id": "72d3f140-1039-4f6e-9329-4af961d0092d"
+    },
+    {
+      "claim_id": "a82a4a80-6bd9-4226-9f29-13cd5c1ef235",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "ab4b1257-0290-49ea-9b58-460551d94398",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "f2d7e8a9-44f8-4e91-94a5-dc81a4e0df39",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "ce46a24f-7b24-4d06-83bb-71225bdc1170",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "700b8ef1-cfa6-4df2-a46d-0a22928d63e8",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "57c17be3-3ee8-4c51-948e-2c46dc1aebef",
+      "result_id": "d3ddfb2e-d6cc-4169-b21f-bd9244264607"
+    },
+    {
+      "claim_id": "0c894960-ae39-4f5e-99f3-5d312d336590",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "e380d469-cf02-47a9-b9c7-a95bcd584e78",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "bb223080-5d9c-4176-ad9a-0225f2742344",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "f3dcfde4-b19b-4762-8302-42f6490fa4e8",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "ba061d3b-3901-4a46-8482-2905322ab475",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "78bdbe06-5a33-496d-a5dc-ee053ba5c4fd",
+      "result_id": "5761afb6-cd40-43ac-8e8a-ef8dc33423c0"
+    },
+    {
+      "claim_id": "c572f998-068a-4123-a791-816bfee2bb62",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "1cb107d6-2a04-4bde-aec3-de7aa9f862fa",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "20032a22-a0d2-45ef-9295-090810e91840",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "9b32480b-9ab8-41ff-b038-4edb49806b87",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "9287ee6d-3c6e-4df8-ad58-55bffa875d85",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "643a2738-1a33-4b8c-ae45-47970ebd3e7e",
+      "result_id": "f5a52e2b-cbaa-49eb-b6d7-37f48a0b0a59"
+    },
+    {
+      "claim_id": "79e95dc4-8199-4184-b623-54b06820efba",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "c4b51278-10f7-4250-ab39-9785248bcd20",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "3c6e5fdb-2d36-4a79-aba2-c04a117a3a8e",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "b2a707b4-87fd-47e5-995c-05605ebc07ea",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "c664ddd3-eb42-442d-8b02-6024b7a9e6f9",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "9701da58-3c54-4fff-9c6f-aa378c48ea30",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "4a96d35a-ec75-44f0-9ef2-8e0ed7d73c07",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "02e58b57-4c18-4aa3-975b-5bdb2e67660d",
+      "result_id": "af63284f-e783-48fd-89ca-556d07689db4"
+    },
+    {
+      "claim_id": "1566e5a0-c697-45cd-9059-3fd264b28d05",
+      "result_id": "94053b37-7b00-4d3b-b44d-2f33396abae0"
+    },
+    {
+      "claim_id": "fcd15522-9898-427f-bc2f-a096b45cb2e4",
+      "result_id": "94053b37-7b00-4d3b-b44d-2f33396abae0"
+    },
+    {
+      "claim_id": "cef94167-7da2-4718-892d-fca077b59519",
+      "result_id": "94053b37-7b00-4d3b-b44d-2f33396abae0"
+    },
+    {
+      "claim_id": "74211c9f-9b66-49bf-a8ab-7502b6551eeb",
+      "result_id": "94053b37-7b00-4d3b-b44d-2f33396abae0"
+    },
+    {
+      "claim_id": "86a2533e-df17-4ad4-b16f-2708611d3941",
+      "result_id": "94053b37-7b00-4d3b-b44d-2f33396abae0"
+    },
+    {
+      "claim_id": "ecafa523-b6d8-4a3c-b52b-5333dd3200bf",
+      "result_id": "7ce4e7be-94fd-4491-b3f9-408a100b8d45"
+    },
+    {
+      "claim_id": "40b3cebe-c4e1-4f2e-894b-fb97517e1b68",
+      "result_id": "7ce4e7be-94fd-4491-b3f9-408a100b8d45"
+    },
+    {
+      "claim_id": "5c0c29d7-7d49-4f8a-821f-5ffcf2cee312",
+      "result_id": "7ce4e7be-94fd-4491-b3f9-408a100b8d45"
+    },
+    {
+      "claim_id": "a6a83823-d288-4682-8b2c-7f17f64f1e05",
+      "result_id": "7ce4e7be-94fd-4491-b3f9-408a100b8d45"
+    },
+    {
+      "claim_id": "269760a2-692a-46ca-aab1-509e5ad754d9",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "6a2dbbae-aca0-4080-b7ca-1674cb1d3fb0",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "afd46f4c-1b02-4f6a-80a1-8f3afdae3f6e",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "8be8e82e-81a6-4c75-830f-43b8de967be5",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "9c46177a-10d2-4f50-a2b4-8140bd7a604c",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "afd926ca-bb7d-41c9-969f-37b67333d3e7",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "fe3aae63-75d1-4ad5-9b5c-4faf012f91ec",
+      "result_id": "cb37d6e6-be2b-4e84-8650-04101e3fe4ef"
+    },
+    {
+      "claim_id": "29ff6170-d37e-497a-8960-5fd38d880caa",
+      "result_id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c"
+    },
+    {
+      "claim_id": "5a09f7fe-0afd-4767-b628-152f8f6c01a2",
+      "result_id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c"
+    },
+    {
+      "claim_id": "0dd59f00-ae10-4e24-83d7-9aced396b626",
+      "result_id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c"
+    },
+    {
+      "claim_id": "b247dc87-2041-422d-9fba-57c578d1a899",
+      "result_id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c"
+    },
+    {
+      "claim_id": "1a37afe5-7c75-40b3-a19c-270d2d3bb3e9",
+      "result_id": "2fcbb1d2-9411-4dee-8df3-58dec04f2b6c"
+    },
+    {
+      "claim_id": "0832474b-035e-4911-8d86-4fd2da01b12f",
+      "result_id": "f022883b-b81e-49dc-accf-b272653484eb"
+    },
+    {
+      "claim_id": "4a5e5f5f-b31c-4d7f-82a4-5039d131613a",
+      "result_id": "f022883b-b81e-49dc-accf-b272653484eb"
+    },
+    {
+      "claim_id": "13f8cc82-a478-42eb-aa94-7f81068f306f",
+      "result_id": "f022883b-b81e-49dc-accf-b272653484eb"
+    },
+    {
+      "claim_id": "3bbca481-7e29-466e-b2bf-421235369798",
+      "result_id": "f022883b-b81e-49dc-accf-b272653484eb"
+    },
+    {
+      "claim_id": "6e24dd55-d826-4ce7-9fe6-c4bd71142294",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "a027cdb0-d833-4a28-958f-c4c494552343",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "e0ec6005-6ee7-4fae-8c13-264ce629ff76",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "5e42bdaa-47c3-4bd1-bc21-f0fd07f9290d",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "da006b6f-eb15-45bd-bf5f-6debe47eaafc",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "393a3feb-d95d-434e-b76d-7d4a1c3332c9",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "bc1ee3eb-21c4-4457-abd2-849b3e9c0cfd",
+      "result_id": "219aed24-9a2f-404d-844d-a8051972686d"
+    },
+    {
+      "claim_id": "e595a73c-4785-4b47-b294-1333f79cfd0e",
+      "result_id": "f1b53552-ba17-484d-9d0f-844a7e5d8415"
+    },
+    {
+      "claim_id": "b75bd877-531b-440c-b52d-842d51331bae",
+      "result_id": "f1b53552-ba17-484d-9d0f-844a7e5d8415"
+    }
+  ],
+  "comparisons": []
+}

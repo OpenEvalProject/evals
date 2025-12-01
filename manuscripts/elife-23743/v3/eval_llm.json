@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Both monkeys performed the delayed conjunction matching task with high accuracy (>85% hits, <10% misses, <5% false alarms) and correctly ignored non-matching stimuli based on sample identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 are directly supported by behavioral performance data shown in Figure 2A and 2B. The high accuracy rates and selective false-alarm patterns demonstrate that monkeys understood and performed the task correctly, providing a solid foundation for interpreting neuronal data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "LIP neurons form a visuo-decision continuum: 147/201 neurons showed selectivity for stimulus identity and/or match status, with 92 showing identity selectivity, 103 showing match selectivity, and 48 showing both types of selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C22-C26 are well-supported by statistical analyses with appropriate corrections (Bonferroni, p<0.01) and clear presentation in Figure 4. The visuo-decision index (VDI) provides a quantitative framework for characterizing the continuum from purely identity-selective to purely match-selective neurons. Sample sizes are adequate and methods are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Individual LIP neurons exhibit diverse selectivity patterns including pure identity selectivity, pure match selectivity, mixed selectivity, and bilateral match selectivity, with distinct temporal dynamics for each type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by single-neuron examples shown in Figure 3 with appropriate statistical tests (Wilcoxon, Bonferroni corrected, p<0.01). The examples illustrate the diversity of response patterns in the population. However, these are illustrative examples rather than systematic population analyses, which are provided separately in other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Identity selectivity emerges significantly earlier (mean latency 101.0 ms) than match selectivity (mean latency 187.3 ms), suggesting LIP transforms sensory information into decision-related signals through sequential processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are strongly supported by multiple converging analyses: direct latency comparisons (t-test, p=2\u00d710\u207b\u00b9\u2075), paired comparisons controlling for firing rate (p=1\u00d710\u207b\u2077), and SVM decoding showing identity decoded at 0 ms vs match status at 93 ms. The sequential processing interpretation (C30) is a reasonable inference from the temporal dynamics, though causality is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Match selectivity, but not identity selectivity, correlates with behavioral reaction times, with the correlation strength varying with each neuron's visuo-decision index (correlation coefficient = 0.32, p=7\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by appropriate correlation analyses shown in Figure 5B. The authors appropriately controlled for a potential confound (C33) by removing first test period data where target over-presentation could create artifactual correlations. The interpretation that match selectivity reflects decision-related processes (C32) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C53"
+    ],
+    "result": "A subset of LIP neurons (20/41) showed bilateral match selectivity independent of stimulus location, but removing these neurons did not eliminate the correlation between match selectivity and reaction times, suggesting spatially-specific decision-related encoding exists independently of motor preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 and C53 attempt to distinguish decision-related from motor-related signals. While the decimation approach and permutation tests are methodologically sound, the authors acknowledge the task was not designed to definitively separate these processes. The interpretation that unilateral match selectivity reflects decision-making independent of motor preparation (C36, C53) remains speculative, as alternative explanations (attention-modulated motor signals) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Identity-selective neurons combine color and direction signals additively (additivity index ~0), while match-selective neurons show super-additive encoding (positive additivity index), with additivity index negatively correlated with VDI (correlation coefficient = -0.26, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by the additivity analysis shown in Figure 7A. The method appropriately subtracts responses to opposite-target stimuli to isolate relevant information encoding. However, the authors acknowledge this analysis involves non-linear normalization, so the term 'additivity' is somewhat misleading. The interpretation that identity-selective neurons linearly pool features (C40) while match-selective neurons involve additional computations (C41) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Feature-based attention effects on LIP neurons correlate with their position along the visuo-decision continuum, with stronger effects on match-selective neurons (color: r=0.63, p=1\u00d710\u207b\u00b9\u2077; direction: r=-0.26, p=0.001), suggesting match selectivity integrates bottom-up sensory information with additional extraretinal signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by correlation analyses between VDI and feature-tuning shifts. The authors note that separating data by monkey affects the direction tuning results, suggesting some variability. The interpretation that match selectivity is a composite signal (C47) is reasonable given the data, though the source of extraretinal signals (local computation vs. top-down input) remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C48",
+      "C58"
+    ],
+    "result": "LIP comprises a visuo-decision continuum involved in (1) integrating bottom-up sensory inputs, (2) linearly grouping disparate sensory signals, and (3) transforming them into decision-related signals by comparing bottom-up sensory inputs with top-down cognitive encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C48, and C58 represent the authors' integrative model synthesizing all findings. The model is well-supported by converging evidence: sequential processing (temporal dynamics), linear integration (additivity analysis), attention effects (FBA correlations), and decision-related encoding (RT correlations). However, the model remains partially inferential, particularly regarding the comparison mechanism between bottom-up and top-down signals, which is proposed but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LIP neuronal activity was strongly influenced by sample identity throughout the trial (sample, delay, and test periods), with 24/74 neurons showing sample-related activity that mimicked identity selectivity prior to test stimulus onset, requiring correction via decimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by data in Figure 7C and prior publications. The persistent sample encoding is interpreted as working memory representation (C63), which is reasonable. The authors appropriately recognized this as a confound for analyzing test stimulus selectivity dynamics and applied a decimation correction, though this methodological choice could affect results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior literature has established that attention modulates visual cortical areas (V4, MT), that LIP integrates attention-modulated inputs, and that LIP has been proposed to encode behavioral salience, transform sensory evidence into saccadic decisions, and encode cognitive signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 accurately summarize prior literature with appropriate citations. These provide necessary context for the current study. The claims are properly attributed to previous work and are not presented as novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors distinguish their approach from prior decision-making models by arguing that ramping activity in LIP during saccadic tasks likely reflects motor preparation rather than evidence accumulation, citing studies showing LIP inactivation does not impair sensorimotor transformation and that LIP multiplexes cognitive and motor signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 accurately represent cited literature and provide important conceptual framing. The distinction between perceptual and motor decision-making is well-supported by citations. However, this remains a matter of interpretation and ongoing debate in the field, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that match selectivity results from comparing stimulus identity with top-down signals from PFC representing internal models of behaviorally relevant features, consistent with Bayesian inference theory, though the mechanism (local computation vs. top-down integration) remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 present a theoretical framework integrating current findings with Bayesian inference theory. While the framework is conceptually coherent and consistent with the data, it remains largely speculative (C56, C57 explicitly noted as hypothetical/speculative). The proposed PFC involvement and comparison mechanism are not directly tested. This represents an important hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Stimuli were 6\u00b0 diameter patches of 476 colored dots moving at 10\u00b0/s with 100% coherence, generated in LAB color space with isoluminant colors, and eye position was tracked at 1.0 kHz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe methodological details that are clearly stated and appropriate. Isoluminance control is important for color experiments, and the eye tracking specifications are adequate for monitoring fixation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Decisions about behavioral significance of sensory stimuli require comparing sensory inference of what we are looking at to internal models of what we are looking for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general conceptual statement about decision-making that is well-established in cognitive neuroscience. It provides appropriate framing for the study but is not a novel empirical finding.",
+    "result_type": "MINOR"
+  }
+]

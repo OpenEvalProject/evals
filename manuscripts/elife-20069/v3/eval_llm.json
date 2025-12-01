@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "HAC1u mRNA is not associated with translating ribosomes despite its polysome-like sedimentation. Ribosome profiling shows HAC1 generates ~50-fold fewer ribosome-protected fragments than expected from polysome profiles. HAC1 mRNAs with premature stop codons sediment identically to wild-type, and heparin treatment shifts HAC1 mRNA to non-translating fractions while leaving ACT1 and overall polysomes unchanged. Upon DTT-induced splicing, HAC1 variants show expected differential sedimentation. The primary block to Hac1up production is at translation initiation, not elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide converging evidence from ribosome profiling (C21-C22), polysome profiling with premature stop codons (C26-C27), heparin treatment (C29-C31), and DTT-induced splicing controls (C32) that definitively demonstrate HAC1u mRNA is not translated. The experimental design is rigorous, with appropriate controls (ACT1, exogenous RNA, DTT treatment) and multiple orthogonal approaches. The conclusion that translation initiation rather than elongation is blocked (C34) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Base pairing between the 5\u2032-UTR and intron prevents ribosome loading on HAC1 mRNA, but an additional post-initiation silencing mechanism exists. GFP reporters with intact base pairing sediment in non-translating fractions and show no fluorescence, while intronless constructs are translated. However, base-pairing mutants that sediment with polysomes produce no detectable protein, revealing a second silencing layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 demonstrate two independent silencing mechanisms through GFP reporter experiments. The polysome profiling (C35-C36) and base-pairing mutant analysis (C37-C38) provide clear evidence for translational repression. The critical observation that base-pairing mutants load ribosomes but produce no protein (C38) strongly supports the existence of an additional silencing mechanism (C39). The experimental design with appropriate controls (intronless, base-pairing mutants, compensatory mutants) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The 10-amino-acid C-terminal tail encoded by the HAC1 intron acts as a degron that silences protein expression post-translationally. This tail is sufficient for complete silencing independently of other HAC1 sequences, requires translation to function, and acts through protein degradation rather than translational stalling. The amino acid sequence rather than nucleotide sequence is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 establish the degron function of the intron-encoded tail through systematic reporter experiments. The sufficiency of the tail alone (C41, C44), requirement for translation (C42), importance of amino acid sequence (C43), and post-translational mechanism (C46 via 2A peptide experiment) are all well-demonstrated. The 2A peptide experiment (C46) is particularly elegant in distinguishing co-translational from post-translational effects. The data consistently support the degron model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DUH1 (YJL149W) is the F-box protein adapter that recognizes the Hac1up degron and targets it for degradation. A genetic selection using HIS3 reporters identified DUH1 mutations in 17/20 sequenced strains. Disrupting DUH1 dramatically increases steady-state abundance of proteins containing the 10-amino-acid tail but has no effect on base-pairing-mediated silencing or proteins lacking the tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 describe a well-executed genetic selection that identified DUH1 as the degron-recognition factor. The high frequency of DUH1 mutations (17/20 strains, C51) with Sanger confirmation provides strong genetic evidence. The specificity of DUH1 effects (C54-C56) - affecting only tail-containing proteins and not base-pairing-mediated silencing - strongly supports its role as the degron adapter. The combination of genetic selection, whole-genome sequencing, and functional validation is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "DUH1 specifically regulates Hac1up protein turnover without affecting mRNA abundance or translation. Disrupting DUH1 increases Hac1up abundance ~5-fold without changing ribosome density. The half-life upper bound of Hac1up increases from 50 seconds to 2 minutes upon DUH1 deletion, demonstrating DUH1's role in rapid protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 demonstrate DUH1's specific effect on protein stability through multiple approaches: immunoblotting (C58), polysome profiling (C59), and cycloheximide shut-off experiments (C61-C62). The specificity for Hac1up over other Hac1 variants (C58) and the lack of effects on mRNA or translation (C59) support the post-translational mechanism. The half-life measurements (C61-C62) provide quantitative evidence, though the authors appropriately note these are upper bounds due to technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Base-pairing-mediated translational repression and DUH1-dependent degradation act synergistically. Disrupting base pairing produces detectable Hac1up that is greatly enhanced by DUH1 deletion. Even a single nucleotide change in the base-pairing region allows some Hac1up accumulation, suggesting the interaction is only marginally stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate the synergy between the two silencing mechanisms through systematic analysis of base-pairing mutants in DUH1 and duh1\u0394 backgrounds. The observation that base-pairing disruption produces detectable but limited Hac1up that is greatly enhanced by DUH1 deletion (C65) clearly shows both mechanisms contribute. The single nucleotide mutant experiment (C67) provides evidence for marginal stability, though the functional significance (C68) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both silencing mechanisms are functionally required to prevent ectopic UPR activation. Hac1up is continuously produced from HAC1u mRNA at low levels but is normally degraded by DUH1. In the absence of DUH1, this leaky Hac1up production is sufficient to activate the UPR and promote survival under ER stress, even without IRE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 demonstrate the physiological importance of the fail-safe mechanism through growth assays under ER stress. The differential growth of Hac1up-expressing strains depending on DUH1 status (C70) confirms Hac1up is an active transcription factor whose activity is masked by DUH1 (C71). The detection of Hac1up from wild-type HAC1u mRNA only in duh1\u0394 ire1\u0394 strains (C72) provides molecular evidence for leaky translation. The dose-dependent effects of tunicamycin (C73-C74) and enhanced survival in duh1\u0394 strains (C75) demonstrate functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "HAC1 silencing operates through a fail-safe mechanism with two layers: (1) base-pairing-mediated translational repression that blocks but does not eliminate translation initiation, and (2) DUH1-dependent degradation of any Hac1up produced by leaky translation. Splicing simultaneously inactivates both mechanisms by removing the intron, allowing rapid Hac1ip accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 synthesize the major findings into a coherent model. This conclusion is well-supported by the collective evidence from all previous results showing: (1) translational repression via base pairing (C78), (2) incomplete repression allowing leaky translation (C79), (3) DUH1-dependent degradation of leaky products (C80-C81), and (4) simultaneous inactivation by splicing (C82). The model is internally consistent and accounts for all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The polysome-like sedimentation of HAC1u mRNA is not due to translation but likely results from non-specific electrostatic interactions with polysomes. This finding suggests that ribosome profiling provides more accurate translation measurements than polysome profiling, and that the substrate for Ire1p splicing is untranslated mRNA requiring de novo translation initiation after splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 draw important mechanistic conclusions supported by the experimental data, particularly the premature stop codon and heparin experiments. The proposal about electrostatic interactions (C88) is reasonable speculation based on heparin disruption. However, C89 is explicitly speculative. The conclusion about ribosome profiling accuracy (C87) is supported by the discrepancy between methods for HAC1. The implications for Ire1p substrate specificity (C85) and translation initiation requirements (C86) are logical inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The marginal stability of the base-pairing interaction may be functionally important for reversibility after splicing, or may reflect a fundamental property that translational repression is inherently incomplete. This incompleteness may be due to RNA helicases constantly unwinding structures in vivo, similar to how uORF-mediated repression is incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C94 are primarily speculative discussions about why translational repression is incomplete. While the observation of marginal stability (C67-C68) is supported by data, the functional explanations (C90-C91) and general principles (C92, C94) are hypotheses without direct experimental support in this manuscript. The comparison to uORFs (C93) is cited from prior work but doesn't validate the speculation about HAC1. These are reasonable hypotheses for future work but are not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on HAC1 and the UPR: HAC1 encodes the central transcription factor effector of the yeast UPR. When the UPR is inactive, HAC1u mRNA is stored in the cytoplasm without producing detectable protein. The intron is removed by Ire1p-dependent cytoplasmic splicing upon ER stress, and the resulting HAC1i mRNA is translated into active Hac1ip that activates UPR target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide established background knowledge about HAC1 and the UPR, supported by appropriate citations to prior literature. These claims accurately represent the current understanding of the system and provide necessary context for the study. The authors correctly cite the relevant prior work establishing these facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The prior model proposed that HAC1u silencing occurs through ribosome stalling during elongation, mediated by base pairing between the 5\u2032-UTR and intron. This model was supported by polysome sedimentation of HAC1u mRNA and the assumption that Hac1up and Hac1ip have similar half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 accurately describe the prior model from the literature, particularly from R\u00fcegsegger et al., 2001. These claims correctly represent what was previously believed about HAC1 silencing, which the current manuscript challenges. The authors appropriately cite the relevant prior work and accurately describe its conclusions.",
+    "result_type": "MINOR"
+  }
+]

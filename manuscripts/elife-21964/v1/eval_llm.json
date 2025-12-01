@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C95"
+    ],
+    "result": "Re-analysis of published bio-Mbd2 and bio-Mbd3 ChIP-seq data from Baubec et al. reveals that both proteins strongly depend on DNA methylation for chromatin binding when examining all binding sites genome-wide, rather than restricted subsets of low-methylated regions (LMRs). The original study's conclusion of methylation-independence was an artifact of analyzing only a subset of LMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 and C95 provide consistent evidence from re-analysis showing ~75% reduction in bio-Mbd3a binding and near-background levels of bio-Mbd2 in TKO cells when examining all peaks. The high variation among bio-Mbd2 replicates (C55) and the difference between LMR subset vs. all peaks analysis (C52) are appropriately documented. The re-analysis methodology is sound and addresses the key limitation of the prior study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C96"
+    ],
+    "result": "New ChIP-seq experiments demonstrate that Dnmt1 and Tet1 are required for Mbd3 and Mbd2 binding throughout the genome of ES cells. Knockdown of either Dnmt1 or Tet1 results in dramatic reductions in both Mbd3 and Mbd2 occupancy at multiple genomic features including promoters, enhancers, and gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 and C70 present highly reproducible duplicate ChIP-seq data (C67) showing consistent reductions in Mbd2/Mbd3 binding upon Dnmt1 or Tet1 KD across multiple genomic features. The effects are not due to altered protein expression (C62). Multiple independent validation approaches including ChIP-qPCR, Dnmt1 KO cells, and FLAG-tagged endogenous proteins (C96) all confirm the findings, providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C97"
+    ],
+    "result": "The catalytic activity of Tet1 is required for proper chromatin localization of both Mbd3 and Mbd2 in ES cells, as demonstrated by ChIP-seq in catalytically inactive Tet1 mutant (Tet1c.i.) cells showing decreased occupancy of both proteins at multiple genomic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C97 present data from two independent Tet1 catalytically inactive mutant cell lines with validated point mutations (H1652Y and D1654A) that eliminate Tet1 enzymatic activity. The ChIP-seq results showing reduced Mbd2/Mbd3 binding in these mutants demonstrate that the requirement for Tet1 is specifically due to its DNA demethylase activity rather than potential scaffolding functions, and rules out RNAi off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C102",
+      "C103",
+      "C115"
+    ],
+    "result": "Mbd3 and Mbd2 are required for maintaining normal levels of both DNA methylation (5mC) and hydroxymethylation (5hmC) in ES cells. Knockdown of either Mbd3 or Mbd2 results in decreased 5mC and 5hmC levels genome-wide, as measured by MeDIP-seq, hMeDIP-seq, dot blotting, TLC, and restriction enzyme digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83, C102-C103, and C115 present convergent evidence from multiple orthogonal methods (MeDIP-seq, hMeDIP-seq, dot blots, TLC, HpaII digestion) all showing consistent reductions in both 5mC and 5hmC upon Mbd2 or Mbd3 depletion. The use of multiple independent validation techniques strengthens confidence in this unexpected finding that readers of methylation marks are also required for maintaining those marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C107",
+      "C108"
+    ],
+    "result": "Mbd2 and Mbd3 exhibit mutual interdependence for chromatin binding throughout the genome. Depletion of Mbd3 reduces Mbd2 occupancy and vice versa, despite these proteins being components of mutually exclusive NuRD complexes and without affecting each other's protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 and C107-C108 demonstrate reciprocal interdependence through ChIP-seq experiments showing reduced binding of each protein when the other is depleted. Western blots confirm protein levels are unchanged (C86-C87), ruling out indirect effects through altered expression. This unexpected finding is well-supported by the data, though the molecular mechanism underlying this interdependence remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C104",
+      "C116"
+    ],
+    "result": "Dnmt1 chromatin binding depends on Mbd3, as demonstrated by ChIP-seq showing general loss of Dnmt1 binding throughout the genome in Mbd3 KO cells. This provides a potential mechanism for how Mbd3 depletion leads to reduced DNA methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C104, and C116 present ChIP-seq data from Mbd3 KO cells showing reduced Dnmt1 occupancy at all genomic locations examined. This finding is consistent with prior observations in cancer cell lines and provides a mechanistic explanation for the reduced methylation observed upon Mbd3 depletion. However, the authors appropriately note that other mechanisms may also contribute (C91, C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C117"
+    ],
+    "result": "Dnmt1, Tet1, Mbd3, Mbd2, and Chd4 have overlapping roles in gene regulation in ES cells, as demonstrated by well-correlated gene expression profiles upon individual knockdown of these factors, though Tet1 and Mbd2 KD show weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C117 present microarray data showing correlated gene expression changes across multiple factors involved in DNA methylation/hydroxymethylation and chromatin remodeling. The correlation analysis is appropriate and the observation of weaker effects for Tet1 and Mbd2 KD is consistent with their less severe phenotypes in vivo. This functional overlap supports the proposed regulatory loop model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose a regulatory loop model in which Mbd2, Mbd3, DNA methylation, and hydroxymethylation are mutually interdependent. In this model, disruption of any component reduces binding of both NuRD complexes and alters gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 and C118-C119 synthesize the experimental findings into a coherent model. The model is well-supported by the data showing: (1) methylation/hydroxymethylation requirement for Mbd2/Mbd3 binding, (2) Mbd2/Mbd3 requirement for normal methylation/hydroxymethylation levels, (3) Mbd2/Mbd3 interdependence, (4) Dnmt1 dependence on Mbd3, and (5) overlapping gene regulatory functions. While the molecular mechanisms remain unclear, the model is consistent with all presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C105"
+    ],
+    "result": "Mbd2 and Mbd3 exhibit highly overlapping chromatin localization throughout the genome of ES cells, with enrichment particularly at promoter-proximal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C64, and C105 present ChIP-seq data showing co-occupancy of Mbd2 and Mbd3 at numerous genomic regions with particular enrichment at promoters. This is demonstrated through Venn diagram analysis and is consistent with prior studies (C105). The finding is well-supported and provides context for understanding their functional interdependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C94"
+    ],
+    "result": "Overexpression of Mbd3a results in reduced ChIP enrichment compared to endogenously expressed Mbd3, though overexpressed Mbd3a still shows decreased binding upon Dnmt1 or Tet1 depletion. Protein overexpression can promote promiscuous binding in ChIP assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C94 address a key methodological difference between studies. The observation that overexpressed Mbd3a shows reduced enrichment but still responds to Dnmt1/Tet1 depletion is important for reconciling conflicting prior results. The citation of literature showing overexpression artifacts (C94) appropriately contextualizes this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The findings demonstrating methylation-dependence of Mbd2 and Mbd3 binding are not artifacts of RNAi off-target effects, as confirmed by experiments in Dnmt1 KO cells and catalytically inactive Tet1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 address an important control concern. The use of genetic knockouts and catalytic mutants in addition to RNAi provides strong evidence against off-target effects. This multi-pronged validation approach strengthens confidence in the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Baubec et al. previously reported that Mbd2 and Mbd3 enrichment at LMRs was minimally altered in Dnmt1/Dnmt3a/Dnmt3b triple knockout ES cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 accurately describes the findings from the prior Baubec et al. study that motivated the current investigation. This is appropriately cited background information that sets up the controversy addressed in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Physical interactions between Mbd3 and DNA methylation/hydroxymethylation proteins have been previously observed, and predictive studies suggest interdependency between Mbd2 and Tet1 in ES cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 cite prior literature providing mechanistic context for the observed interdependencies. These are appropriately referenced supporting observations from other studies that are consistent with the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The differential phenotypes of Mbd2 and Mbd3 knockout mice (Mbd2 KO viable and fertile vs. Mbd3 KO lethal) may be explained by Mbd3 being sufficiently functional without Mbd2, stronger effects of Mbd3 on target genes, or loss of Mbd2/Mbd3 interdependence during differentiation or in specific lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C126 present established phenotypic differences (C122-C123) and speculative explanations (C124, C126). While C125 provides some supporting microarray data, the proposed explanations remain hypothetical and would require additional experiments in differentiated cells or specific lineages to test. The speculation is reasonable but not directly supported by the ES cell data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "There is no evidence for methylation-independent functions of Mbd2 or Mbd3 based on experimental approaches and re-analysis of published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 represents the overarching conclusion of the study. This is well-supported by the comprehensive re-analysis of published data (C49-C57) and extensive new experimental evidence (C58-C97) showing consistent methylation/hydroxymethylation-dependence across multiple approaches, cell lines, and genomic features. The conclusion is appropriately stated as finding 'no evidence' rather than proving impossibility.",
+    "result_type": "MAJOR"
+  }
+]

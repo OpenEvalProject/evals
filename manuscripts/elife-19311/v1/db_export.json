@@ -1,0 +1,2167 @@
+{
+  "submission": {
+    "id": "4f37d99d-0e8b-422c-9267-b880b327525b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:16:26.611353Z",
+    "updated_at": "2025-11-30T21:16:26.611353Z"
+  },
+  "content": [
+    {
+      "id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "submission_id": "4f37d99d-0e8b-422c-9267-b880b327525b",
+      "content_type": "manuscript",
+      "content_text": "# Neuronal cell fate diversification controlled by sub-temporal action of Kruppel\n\n## Authors\n\n- Johannes Stratmann<sup>1</sup>\n- Hugo Gabilondo<sup>1</sup>\n- Jonathan Benito-Sipos<sup>2</sup>\n- Stefan Thor<sup>1</sup> ([ORCID: 0000-0001-5095-541X](https://orcid.org/0000-0001-5095-541X)) \u2020\n\n### Affiliations\n\n1. Department of Clinical and Experimental Medicine Link\u00f6ping University Link\u00f6ping Sweden\n2. Departamento de Biolog\u00eda Universidad Aut\u00f3noma de Madrid Madrid Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring Drosophila embryonic nervous system development, neuroblasts express a programmed cascade of five temporal transcription factors that govern the identity of cells generated at different time-points. However, these five temporal genes fall short of accounting for the many distinct cell types generated in large lineages. Here, we find that the late temporal gene castor sub-divides its large window in neuroblast 5\u20136 by simultaneously activating two cell fate determination cascades and a sub-temporal regulatory program. The sub-temporal program acts both upon itself and upon the determination cascades to diversify the castor window. Surprisingly, the early temporal gene Kruppel acts as one of the sub-temporal genes within the late castor window. Intriguingly, while the temporal gene castor activates the two determination cascades and the sub-temporal program, spatial cues controlling cell fate in the latter part of the 5\u20136 lineage exclusively act upon the determination cascades.\n\n## Introduction\n\nDuring nervous system development, neural progenitor cells often undergo stereotyped changes in their competence, evident by the sequential and programmed generation of distinct neuronal and glial sub-types (Okano and Temple, 2009; Pearson and Doe, 2004). In the Drosophila embryonic central nervous system (CNS), neuroblasts (NBs) sequentially expresses the transcription factors, Hunchback (Hb) > Kruppel (Kr) > POU-homeodomain factors Nubbin and Pdm2 (Pdm) > Castor (Cas) > Grainy head (Grh) (Baumgardt et al., 2009; Brody and Odenwald, 2000; Isshiki et al., 2001; Novotny et al., 2002). These factors temporally alter NB competence to determine the types of neurons and glia born at each step of lineage progression (Kohwi and Doe, 2013; Li et al., 2013). However, because Drosophila NB lineages can generate an array of different cell types, the instructive capacity of five temporal genes falls short of explaining the diversity observed (Baumgardt et al., 2009; Tsuji et al., 2008). Studies suggest that this regulatory challenge is solved by the activity of the so-called sub-temporal genes, which act in cascades downstream of the temporal genes, do not feedback on the temporal genes, and play a role in sub-dividing larger temporal competence windows (Baumgardt et al., 2009; Benito-Sipos et al., 2011). Downstream of temporal cues, the specification of cell fate is subsequently controlled by determination genes, referred to as terminal selector genes, that activate repertoire(s) of terminal cell fate genes e.g., neurotransmitters and ion channels (Hobert, 2008; Wenick and Hobert, 2004). The terminal selectors have been found to often act in combinatorial codes to dictate final and unique cell fate (Allan and Thor, 2015; Baumgardt et al., 2007; Enriquez et al., 2015; Sharma et al., 1998; Thor et al., 1999). In addition, terminal selectors may act in cascades denoted coherent feedforward loops (FFLs) (Mangan and Alon, 2003; Mangan et al., 2003). FFLs are common in E.coli and yeast gene regulatory networks (Alon, 2007), but have also been identified in animals, including in both Drosophila and C.elegans (Baumgardt et al., 2009; Baumgardt et al., 2007; Etchberger et al., 2009; Johnston et al., 2006). However, how temporal and sub-temporal genes intersect with terminal selector FFLs to dictate cell fate is poorly understood.\n\nThe Apterous (Ap) neurons of the Drosophila ventral nerve cord (VNC) constitute a group of interneurons expressing the LIM-HD factor Apterous (Ap) (Lundgren et al., 1995). Because of a multitude of antibody markers and genetic tools available for Ap neurons, these cells have been subject to a number of studies of cell fate specification. Ap neurons can be subdivided into; (1) dorsal Ap neurons (dAp) that are a dorsal bi-lateral row of Ap neurons generated in abdominal and thoracic segments by NB4-3, and (2) the Ap cluster that are a bi-lateral group of four Ap neurons, denoted Tv1-Tv4, that are generated consecutively by NB5-6T in thoracic segments (Figure 1) (Baumgardt et al., 2007; Gabilondo et al., 2016; Park et al., 2004). Two out of four Ap cluster cells have a neuropeptidergic cell fate; the Tv1/Nplp1 and Tv4/FMRFa cells (Baumgardt et al., 2007; Benveniste et al., 1998; Park et al., 2004), while Tv2 and Tv3 are Ap interneurons. All four cells express Ap and the transcriptional co-factor Eyes absent (Eya) (Miguel-Aliaga et al., 2004). Two related terminal selector FFLs operate in Ap cluster cells to dictate Nplp1 or FMRFa cell fate, col>ap/eya>dimm>Nplp1 and ap/eya/dac>dimm/BMP>FMRFa (Allan et al., 2005, 2003; Baumgardt et al., 2007; Miguel-Aliaga et al., 2004). Each cell type-specific FFL cascade is triggered by specific temporal and spatial inputs established during lineage progression. The spatial input, conferred by body position, consists of the combinatorial action of the Hox homeotic gene Antennapedia (Antp), the Hox co-factors extradenticle (exd) and homothorax (hth), as well as the homeobox gene ladybird early (lbe) (Gabilondo et al., 2016; Karlsson et al., 2010). The temporal input is mediated by Cas and Grh; the last two factors in the Hb>Kr>Pdm>Cas>Grh temporal cascade (Baumgardt et al., 2009). Initially, these spatial and temporal inputs activate the two terminal FFL cascades in all four Ap cluster neurons. However, Cas triggers several additional genes in the neuroblast NB5-6T that act to sub-divide the broader Cas window. These genes were denoted sub-temporal genes, and consist of squeeze (sqz), nab and seven up (svp), which act to repress collier (col; Flybase knot) in the generic Tv2/3 neurons and the Tv4 cell (Baumgardt et al., 2009; Benito-Sipos et al., 2011). The repression of col in the Tv2/3 and Tv4 neurons prevents those cells from being specified into Tv1/Nplp1 neurons. However, in spite of the identification of the three sub-temporal genes sqz, nab and svp, the precision of Ap cluster cell specification clearly indicated the existence of additional players.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013B) Whole VNCs of control and Kr mutants, at AFT, reveal loss of Nplp1 expression in the dAp cells, but also in the Tv1 cells. (C\u2013D) Ap cell clusters at AFT, showing an\u00a0expression of Eya, Dimm, FMRFa and Nplp1, in control (C) and Kr mutants (D). In mutants, while Eya is normally expressed in four cells, Dimm and Nplp1 expression is lost in the Tv1 cell. Dimm and FMRFa expression in the Tv4 cell is not affected in Kr mutants compared to control. (E\u2013F) Nab and Col expression, in the NB5-6T at St14, is similar in control and Kr mutants. (G\u2013H) In Tv1 cells (dashed circles) at St14 (distinguishable from Tv2 cells by positive Eya but negative Nab expression) Col expression is similar in control and Kr mutants. (I\u2013J) At late St16, while Eya is un-affected, Col and Dimm expression is lost in the Tv1 cell in Kr mutants. (K\u2013L) While Dac is usually expressed in three out of four cells in the Ap clusters at AFT, we find that in Kr mutants Dac expression is observed in all four Ap cluster cells. (M) Dac is significantly upregulated in Kr mutants when compared to control (***p<0.001, nctrl\u00a0= 7 clusters, nKr\u00a0= 10 clusters, Chi-square test). (N\u2013Q) Timeline of Kr expression in control shows late onset of Kr expression specifically in the Tv1 cell. (N) Kr is not expressed in the NB5-6T or (O) the Tv1 cell at St14. (P) At St16, Kr expression commences in Tv1 (dashed circle), which is characterized by maintenance of strong Col expression. (Q) Variably, Kr expression in Tv1 is maintained into AFT, identifiable by co-staining for Eya and Nplp1. (R) Model of NB5-6T, showing the early Kr expression commencing at St9 and persisting until St11, together with the Eya positive postmitotic Ap cluster cells, out of which Tv1 starts to express Kr at St16, to ultimately specify into the Nplp1 positive Tv1 cells. Genotypes: (A, C, E, H, J, L, O, P, Q) OregonR. (B, D, F, I, K, M) Kr1, KrCD. (N) lbe(K)-EGFP.\n\nIn a recent study, we identified Kr as being important to trigger a final cell fate specification cascade in the neuropeptidergic dAp neurons. We found that Kr acts in a predicted and typical early temporal role in the NB4-3 lineage, to initiate the final dAp specification (Gabilondo et al., 2016). However, upon further analysis of Kr mutants we found that the neuropeptidergic cell fate of the Nplp1 cell in the Ap cluster generated by NB5-6T is also lost. Here, we find that Kr mutants show a specific loss of Col, Dimm and Nplp1 expression in the Tv1 cell, while specification of the other three Ap cluster neurons is unaffected. We find that Kr is expressed in a second phase in the NB5-6T lineage; postmitotically in the Tv1/Nplp1 cell. The late temporal gene cas activates Kr in Tv1, while the sub-temporal genes sqz and nab, which are also activated by cas, repress Kr. In contrast, Kr does not repress sqz or nab, but rather acts to suppress svp in the Tv1 cell, thereby preventing svp from repressing Col and Dimm. Hence, an initial generic Ap cluster cell fate, triggered by cas and spatial cues, is sub-divided by four sub-temporal genes, also activated by cas, that act on each other and on the two terminal selector FFLs.\n\nThis study reveals that the sub-division of a broader temporal competence window is controlled by an elaborate sub-temporal regulatory program triggered by one and the same temporal factor, which also triggers the terminal selector FFLs. It furthermore demonstrates that a member of the canonical Drosophila temporal cascade can act at two stages of a lineage. Finally, it shows that sub-temporal genes can act both on the terminal selector FFLs and on each other.\n\n## Results\n\n### Kruppel is expressed postmitotically in Tv1 neurons and controls their terminal specification\n\nWe recently identified Kruppel (Kr) as being important for the\u00a0development of the NB4-3 lineage, and for specification of the dAp/Nplp1 neurons generated in this lineage (Gabilondo et al., 2016). However, upon analyzing Kr mutants we noted that Kr not only affects Nplp1 expression in dAp cells, but also in the Tv1 cells of the Ap cluster (Figure 1A\u2013D). To begin addressing the role of Kr in Tv1 specification, we analyzed the\u00a0expression of several Tv1 specification factors: Collier (Col; an EBF/COE factor), Ap (LIM-HD), Eyes absent (Eya; nuclear phosphatase) and Dimmed (Dimm; bHLH) (Allan et al., 2005; Baumgardt et al., 2007; Hewes et al., 2003; Miguel-Aliaga et al., 2004; Park et al., 2004). While Ap and Eya were unaffected, Dimm expression was lost from Tv1 (Figure 1C\u2013D). In contrast, Dimm and FMRFa expression in the Ap4 cell was unaffected (Figure 1C\u2013D). With regards to Col, expression was unaffected at the onset of expression in the NB and in Tv1/Ap1 (Figure 1E\u2013H). However, by stage 16 (St16) we noted that Col was lost from the Tv1 cell (Figure 1I\u2013J). We also analyzed expression of the transcriptional co-factor Dachshund (Dac), important postmitotically for Tv4/FMRFa fate (Miguel-Aliaga et al., 2004). Dac is normally expressed in Tv2, Tv3 and Tv4, but in Kr mutants Dac expression expands into the Tv1 cell (Figure 1K\u2013L). The sub-temporal factor Nab (Baumgardt et al., 2009) was not affected in Kr mutants (Figure 1E\u2013H).\n\nKr acts at an early stage in the canonical temporal gene cascade (Isshiki et al., 2001; Kohwi and Doe, 2013), and was found to be expressed during St9-St11 in NB5-6T (Baumgardt et al., 2009) (Figure 1R). We were therefore intrigued by the late and restricted specification phenotype in the Tv1 cells observed in Kr mutants. These effects prompted us to analyze the expression of Kr in the NB5-6T neuroblast at St14 and in the Ap cluster at St14 onward to late embryonic stage (air-filled trachea stage; AFT). In agreement with previous Kr expression analysis (Baumgardt et al., 2009), we did not detect Kr expression in the NB5-6T or in the Tv1 cell at St14 (Figure 1N\u2013O). However, by St16 Kr expression was evident in the Tv1 cell (Figure 1P). With some variability, Kr expression is maintained into stage AFT, and overlaps with the onset of Nplp1 expression (Figure 1Q).\n\nIn summary, Kr shows two phases of expression in the NB5-6T lineage; an early phase, in line with its known role as an early temporal factor, and a postmitotic phase in the Tv1 neuron (Figure 1R). We observe highly selective effects on the\u00a0Ap cluster specification in Kr mutants, specifically affecting the Tv1 neuron; normal Nab and Col expression in the NB, normal Eya and Ap expression in the Ap cluster cells, ectopic Dac expression in Tv1, subsequent loss of Col expression in Tv1, and failure to turn on Dimm and Nplp1 expression in Tv1, while Dimm and FMRFa expression in Tv4 is unaffected.\n\n### Kr is sufficient to govern Tv1/Nplp1 cell fate\n\nThe selective expression of Kr in the postmitotic Tv1 neuron, and the importance of Kr for Tv1 specification, prompted us to ectopically express Kr, by crossing UAS-Kr to the late Ap neuron specific driver ap-Gal4 (Allan et al., 2005). Misexpression of Kr in all four postmitotic Ap neurons resulted in the ectopic expression of Col, Dimm and Nplp1 in other Tv neurons (Figure 2A\u2013D). This is in line with previous findings (Baumgardt et al., 2007), showing that maintained expression of Col in all four Ap cluster neurons results in ectopic Dimm and Nplp1 expression. The conversion of Ap cluster neurons to a Tv1 cell fate was accompanied by the loss of FMRFa expression (Figure 2E\u2013H), but not by the loss of Dac or Nab expression (Figure 2I\u2013L).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013D) Postmitotic misexpression of UAS-Kr driven by ap-Gal4 results in ectopic expression of Dimm, Col and Nplp1 in the Ap cluster cells. (C\u2013D) Quantification of Dimm and Col cells in the Ap cluster shows a significant increase when Kr is misexpressed (***p<0.001; n\u00a0\u2265\u00a012 clusters; Chi-square test +/- SEM). (E\u2013H) Kr misexpression triggers ectopic expression of Nplp1 in the Ap cluster, but loss of FMRFa expression. (G\u2013H) Quantification of FMRFa and Nplp1 expressing cells in the Ap cluster (***p<0.001; n\u00a0\u2265\u00a09 clusters; Chi-square test +/- SEM). (I\u2013L) Misexpression of Kr, does not affect Dac or Nab expression. (M\u2013O) Kr rescue by UAS-Kr driven from elav-Gal4 restores Dimm and Nplp1 specifically to Tv1. (P) Cross-rescue of Kr with UAS-col from elav-Gal4 rescues Kr mutants, evident by Dimm and Nplp1 expression in the Ap clusters. In both rescue and cross-rescue, driving each UAS transgene from elav-Gal4 triggers supernumerary Tv1 cells. (Q) Quantification of the number of cells expressing Nplp1 in the Ap cluster (***p<0.001; n\u00a0\u2265\u00a09 clusters; Chi-square test +/-SEM). Genotypes: (A, E, K, M) OregonR. (B, F, J, L) ap-Gal4/UAS-Kr; +/UAS-Kr. (I) UAS-GFP/ap-Gal4. (N) Kr1, KrCD. (O) elav-Gal4/+; Kr1, KrCD; UAS-Kr/+. (P) Kr1, KrCD; UAS-col/elav-Gal4.\n\nBecause Col is essential for activating Dimm and Nplp1, the loss of their expression in Kr mutants may be a direct consequence of the loss of Col expression. To test this idea, we attempted to 'cross-rescue' Kr with UAS-col. First, as a control experiment, we attempted to rescue Kr with UAS-Kr, using the elav-Gal4 driver line, which is expressed in the NB5-6T at St12 and onward (Karlsson et al., 2010). Indeed, we noted robust rescue of Dimm and Nplp1 in the Ap clusters, and as anticipated from the Kr misexpression experiments (above) there were supernumerary Tv1 neurons (Figure 2M\u2013O, 2Q). Next, we cross-rescued Kr with UAS-col, and observed rescue of Tv1 neurons, evident by the expression of Dimm and Nplp1 (Figure 2P,Q). As previously, described (Baumgardt et al., 2007), ectopic expression of col from elav-Gal4 resulted in supernumerary Eya, Dimm and Nplp1 cells (Figure 2P,Q).\n\nThese results suggest that the role of Kr in the Tv1 neuron is not to act directly upon Nplp1, but rather to ensure the maintenance of Col, and thereby ensure the propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade leading to Tv1/Nplp1 terminal differentiation.\n\n### Postmitotic Kr expression is activated by the late temporal gene castor\n\nThe selective expression of Kr in the Tv1 cell is key for the discriminated specification of the Tv1 cell fate from that of the other Ap cluster cells. But what activates Kr exclusively in the Tv1 neuron? To address this, we first analyzed Kr expression in ap, eya and col mutants, critical Tv1 cell fate determinants (Baumgardt et al., 2007), but did not observe any change in Kr expression in these mutant backgrounds (Figure 3\u2014figure supplement 1).\n\nNext, we analyzed ladybird early (lbe) and Antp mutants, both of which are critical for NB5-6 identity (lbe) and for Ap cluster development (both) (Gabilondo et al., 2016; Karlsson et al., 2010). Since Antp and lbe show a loss of the Ap cluster markers Eya, Ap, Col, Dimm and Nplp1, we identified the NB5-6T lineage based on the specific expression of reporter genes under the control of an enhancer fragment from the ladybird early gene (lbe(K)) (Figure 3\u2014figure supplement 1) (Baumgardt et al., 2007; De Graeve et al., 2004). In order to accurately monitor the Ap cluster cells in control, Antp and lbe mutant backgrounds, we used the non-affected Ap cluster markers Nab and Cas to thereby identify the Tv1 cells (Figure 3\u2014figure supplement 1). At St16, when Kr is robustly expressed in Tv1, Nab is expressed in three out of four Ap cells and overlaps with Cas expression in Tv2/3 (Baumgardt et al., 2009). The Tv1 cell resides in immediate proximity to the two Cas/Nab double positive Ap cluster cells, and is identifiable by Kr and lbe-GFP expression, combined with the lack of Nab and Cas. Analysis of Kr expression in the Tv1 cell in Antp and lbe mutants, using this marker combination, revealed that Kr is not affected in either mutant (Figure 3\u2014figure supplement 1).\n\nNext, we addressed Kr expression in mutants for the castor (cas) temporal gene. cas plays a key role during NB5-6T lineage development, and regulates col, and thereby a number of Tv1 determinants, including Ap, Dimm and Nplp1 (Baumgardt et al., 2009). However, in cas mutants Eya is still expressed in the Ap cluster cells (Baumgardt et al., 2009). This allowed us to assess Kr expression in the Ap cluster cells within the NB5-6T lineage. We found that cas mutants often displayed loss of Kr in the Tv1 cells (Figure 3A\u2013C). This was accompanied by a reduction in the number of Kr-expressing cells in the entire NB5-6T lineage (Figure 3D). The reduction of Kr expression in the entire NB5-6T lineage in cas mutants was mirrored by extensive overlap between Cas and Kr in the NB5-6T lineage in the wild type background (Figure 3F). Moreover, scanning the entire thoracic VNC we observed Cas/Kr overlap in a number of other cells (Figure 3E). Analyzing cas mutants in the entire thoracic segments, we observed striking reduction in Kr expression throughout these segments (Figure 3G\u2013H).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013B) Kr expression in the Ap cluster cells is frequently lost in cas mutants at St16. Ap cluster cells were identified using Eya as a\u00a0marker for the Ap cluster and lbe(K)-eGFP as a marker for the NB5-6T lineage. (C\u2013D) Quantification of Eya/Kr cells and Kr/GFP cells in the Ap cluster and NB5-6T lineage, respectively (***p<0.001, n\u00a0\u2265\u00a018 clusters, Chi-square test \u00b1 SEM, for (C), and Student's t-test \u00b1 SEM, for (D)). (E\u2013F) Kr expression overlaps with Cas in the NB5-6T (F), as well as in many cells in the entire thorax (arrowhead marks overlapping cells, asterisk marks non-overlapping cells). (G\u2013H) Kr expression is globally reduced in the thoracic region T1-T3 in cas mutants. Genotypes: (A, K) lbe(K)-EGFP. (B, L) lbe(K)-EGFP /+; cas\u03943/cas\u03941.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Staining for Eya, Col and Kr in ap mutants, at St16, has no effect on Eya, Col and Kr expression. (C\u2013D) Staining for Eya, GFP, Dimm and Kr in eya mutants, at St17, shows loss of Eya and Dimm expression, but Kr expression is unaffected in the Ap cluster. (E\u2013G) col mutants do not show any effects on Kr expression in the Ap cluster at St 16 (n\u00a0=\u00a018 lineages; Student's t-test \u00b1 SEM). (H\u2013J) Staining for GFP, Kr, Nab and Cas in control, Antp and lbe mutants, at St16, shows that Kr expression is not affected in the Tv1 cell. (K) Cartoon depicting the Ap cluster composition at St16, with the markers analyzed for control, Antp and lbe mutants. (L\u2013M) grh mutants show normal Dimm and Kr expression in Tv1 at St16. Genotypes: (A) OregonR. (B) apP44/apP44. (C) UAS-GFP/ap-Gal4. (D) eyaCli/eyaDf; ap-Gal4/UAS-nmEGFP. (E, H, L) lbe(K)-EGFP. (I) lbe(K)-EGFP/+; Antp12/Antp25. (J) lbe(K)-EGFP/+; lbDf/lbe12C005. (M) grhDf3064/grh370,lbe(K)-Gal4; UAS-nmEGFP.\n\nFinally, we analyzed Kr expression in mutants for the last gene in the temporal gene cascade; grainy head (grh), which is known to be expressed during the latter part of NB5-6T lineage development, and important for Tv4/FMRFa cell fate (Baumgardt et al., 2009). However, we did not observe any effect on Kr expression in grh mutants (Figure 3\u2014figure supplement 1).\n\nWe conclude that Kr is activated in Tv1 by cas, and strikingly, that this regulatory connection extends into many late postmitotic cells in the VNC. In contrast, neither Antp nor lbe regulate Kr in the Tv1 neuron.\n\n### Kr expression is suppressed by the sub-temporal genes squeeze and nab\n\nWe find that Kr is specifically expressed in the Tv1 cell, and that Kr is necessary and sufficient, within the Ap cluster to specify Tv1 cell fate. Kr acts by ensuring maintenance of Col expression, thus allowing for the col>ap/eya>dimm feedforward cascade to progress and finally activate Nplp1 expression. We find that cas activates Kr in the Tv1 cell. However, Cas expression spans the latter half of the NB5-6T lineage, covering all four Ap neurons (Baumgardt et al., 2009), and hence does not readily explain Kr expression specifically in Tv1. Previous studies revealed that down-regulation of Col in Tv2, Tv3 and Tv4 is under control of a cas>sqz>nab FFL cascade, where down-regulation of Col is controlled by sqz/nab (Baumgardt et al., 2009). Because of the timed delay in the cas>sqz>nab loop after an initial postmitotic phase (Baumgardt et al., 2009), this ensures that Col expression is only maintained in Tv1, and down-regulated in the other three Ap neurons. How does Kr relate to the cas>sqz>nab feedforward loop?\n\nAs described above, Nab is not affected in Kr mutants or by Kr misexpression (Figures 1E\u2013H, 2K\u2013L). Thus, the cas>sqz>nab feedforward loop is not affected by Kr. In contrast, in both sqz and nab mutants, we observed one extra Kr/Dimm expressing cell in the Ap cluster (Figure 4A\u2013E). While sqz is expressed by all four Ap cluster neurons, the timing-delay in the cas>sqz>nab loop results in Nab expression only in three latter born cells; Tv2, Tv3 and Tv4. Misexpression of nab suppresses the Col maintenance and results in loss of Dimm and Nplp1 from the Tv1 neuron (Baumgardt et al., 2009). In line with these findings, we addressed the effects of misexpressing nab in the Tv1 neuron, from elav-Gal4. We observed that Kr expression was absent from the Ap cluster in nab misexpression (Figure 4K\u2013M).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) At St16, both sqz and nab mutants show additional Dimm and Kr expressing cells in the Ap cluster. (D\u2013E) Quantification of Dimm and Kr expressing Ap cluster cells in sqz and nab mutants (***p<0.001; n\u00a0\u2265\u00a017 clusters; Student's t-test +/-SEM for (D) and between Ctrl and sqz in (E); Chi-square test for Ctrl and nab in (E)). (E\u2013H) Similar to St16, at AFT, both sqz and nab mutants show an increase in the numbers of Dimm expressing Ap cluster cells. (I\u2013J) Quantification of Dimm/Ap and Svp/Ap cells (***p<0.001; n\u00a0\u2265\u00a014 clusters; Chi-square test; +/-SEM). (K\u2013L) Misexpression of nab from elav-Gal4 results in a\u00a0significant decrease in Kr expressing Ap cluster cells, at St16. (M) Quantification of Kr/Eya Ap cluster cells (***p<0.001; n\u00a0\u2265\u00a016 clusters; Chi-square test). (N\u2013O) nab misexpression from elav-Gal4 at AFT shows a reduction of Dimm expressing and an increase in Svp expressing Ap cluster cells. (P\u2013Q) Quantification of Dimm/Ap and Svp/Ap cluster cells (***p<0.001; n\u00a0\u2265\u00a010 clusters; Chi-square test; \u00b1 SEM). (R) Cartoon showing the Ap cluster in control, sqz and nab mutants, as well as nab misexpression, at AFT. Control Ap clusters show stereotyped expression of Nplp1, Col and Kr in the Tv1 cell. Dimm is present in both neuropetidergic Tv1/Nplp1 and Tv4/FMRFa cells. While Tv2-Tv4 cells all express nab, svp expression is restricted to Tv2 and Tv3. In nab and sqz mutants one of the 'generic' Tv2/Tv3 Ap neurons is converted into a Tv1/Nplp1 cells, by expression of Kr, which in turn suppresses svp expression, which allows for col and dimm expression. The misexpression of nab shows the reciprocal phenotype of the mutants, with one extra Svp expressing cell, loss of Kr, Col, Dimm and Nplp1. Genotypes: (A, F, K, O) OregonR. (B, G) sqzie/sqzie. (C, H) nabR52/nabR52. (L, P) UAS-nab/+; elav-Gal4/+.\n\nWe conclude that the sub-temporal genes sqz and nab act to restrict the expression of Kr to the Tv1 neuron, while, Kr does not reciprocally regulate the cas>sqz>nab feedforward loop.\n\n### The main role of Kr is to suppress the sub-temporal gene svp\n\nKr does not repress the cas>sqz>nab feedforward loop, playing out in Tv2, Tv3 and Tv4. In addition, Kr can be cross-rescued by col, and hence is not critical for the col>ap/eya>dimm>Nplp1 feedforward cascade. What, then, is the mechanism by which Kr ensures maintenance of Col in Tv1 cells?\n\nPrevious studies found that svp mutants displayed ectopic Col, Dimm and Nplp1 expression in the Ap cluster, and that postmitotic misexpression of svp from ap-Gal4 could suppress expression of Col, Dimm and Nplp1 (Benito-Sipos et al., 2011). Svp is initially expressed by all four Ap cluster cells (St15-16), but is rapidly confined to Tv2 and Tv3, where it is maintained into AFT (Benito-Sipos et al., 2011). The reasons for the maintenance of Svp expression in Tv2 and Tv3 were previously not addressed. We find that in sqz and nab mutants, at stage AFT, there is loss of svp expression in one cell and also one extra Dimm expressing cell (Figure 4F\u2013J). Conversely, nab misexpression results in Svp expression in one extra cell coupled with loss of Dimm expression in one cell (Figure 4N\u2013Q). Hence, sqz and nab control Ap cluster diversification also by ensuring Svp expression in Tv2 and Tv3.\n\nWe next addressed the connection between Kr and svp. We found that in Kr mutants, Svp is expressed in one additional Ap cluster cell. The coincidental loss of Dimm and Nplp1 expression leads us to conclude Svp is activated\u00a0in the Tv1 cell (Figure 5A\u2013E). Conversely, Kr misexpression postmitotically in all four Ap neurons resulted in complete loss of Svp expression (Figure 5F\u2013H).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Kr mutants at AFT, reveals ectopic Svp expression in the Tv1 cell, accompanied by loss of Dimm expression. (C\u2013E) Quantification of Svp/Ap, Dimm/Ap and Nplp1/Ap expressing cells (***p<0.001; n\u00a0\u2265\u00a016 clusters; Chi-square test \u00b1 SEM). (F\u2013G) Misexpression of Kr from the late and Ap cluster specific driver ap-Gal4, results in loss of Svp expression from Ap2/3, at AFT. (H) Quantification of Svp/GFP or Svp/Kr expressing cells (***p<0.001, n\u00a0\u2265\u00a012 clusters, Chi-square test). (I\u2013J) svp mutants show increased number of Kr expressing cells in the Ap cluster. (K) Quantification of Kr/Eya expressing cells (***p<0.001, n\u00a0\u2265\u00a012 clusters, Student's t-test \u00b1 SEM). (L\u2013M) Misexpression of svp from elav-Gal4 suppresses Dimm expression, but has no effect on Kr. (N\u2013O) Quantification of Kr/Eya and Dimm/Eya expressing cells (***p<0.001; n\u00a0\u2265\u00a012 clusters; Chi-square test \u00b1 SEM). (P\u2013R) Both svp and svp,Kr double mutants show an increase of Dimm and Nplp1 expressing cells in the Ap cluster. (S\u2013T) Quantification of Dimm/Eya and Nplp1/Eya cells (***p<0.001, n\u00a0\u2265\u00a012 clusters, Student's t-test \u00b1 SEM in (S) and Chi-square test +/-SEM in (T)). Genotypes: (A, I, L, P) OregonR. (B) Kr1, KrCD/Kr1, KrCD. (F) ap-Gal4/+;UAS-nmEGFP/+. (G) ap-Gal4/UAS-Kr; UAS-Kr/+. (J, Q) svp1/svp1. (M) elav-Gal4/UAS-svp. (R) Kr1, KrCD/Kr1, KrCD; svp1/svp1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Staining for GFP and Gsb-n shows no overlap between the GFP signal from ham-Gal4 and Gsb-n, showing that ham-Gal4 is not expressed in NB5-6T. (B\u2013D, F\u2013G) Staining for GFP, Svp and Kr in (B, F) control, (C) Kr misexpression, and (D, G) Kr mutants. (C) Kr misexpression triggers loss of Svp expression in the lateral-most cells of the ham-Gal4 lineage. (D) In Kr mutants the number of Svp positive cells are slightly increased, however not significant. (E) Quantification of Svp positive cells in control, Kr misexpression and Kr mutants, at stage 16, shows a significant reduction of Svp positive cells when Kr is misexpressed from ham-gal4 (***p<0.0001, nCtrl\u00a0= 40 lineages, nUAS-Kr\u00a0= 18 lineages, students t-test, \u00b1 SEM). Quantification of Svp positive cells in the ham-Gal4 lineage in Kr mutants reveals no significant differences (p=0.14, nCtrl\u00a0= 40 lineages, nKr\u00a0= 18 lineages, students t-test, \u00b1 SEM). (F\u2013G) Comparison of the number of Svp positive cells in the intermediate region between the ham-Gal4 lineages (white dashed boxes), reveals additional Svp positive cells in Kr mutants. (H) Quantification of the number of Svp cells in the ham-Gal4 intermediate regions reveals significant increase in Svp expressing cells (***p<0.0001, nCtrl\u00a0= 11 segments, nKr\u00a0= 12 segments, students t-test, +/- SEM). Genotypes: (A, B, F) ham-Gal4,UAS-nm-GFP. (C) ham-Gal4,UAS-GFP/UAS-Kr. (D,G) Kr1, KrCD/Kr1, KrCD;ham-Gal4,UAS-GFP.\n\nThese findings prompted us to address if the role of Kr as a repressor of svp is a more general feature during VNC development. To this end, we utilized a ham-Gal4 driver (GMR80G10-GAL4). This driver expresses in several NBs of rows 3 and 4, and hence does not overlap with NBs of row 5 and 6, including NB5-6T, evident by its non-overlap with the row 5 and 6 marker Gsb-n (Figure 5\u2014figure supplement 1). The ham-Gal4 lineages contain Kr and Svp expressing cells, but similarly to NB5-6T, these are non-overlapping (Figure 5\u2014figure supplement 1). This provided a scenario to test for the repressive action of Kr onto Svp outside the NB5-6T lineage. Misexpression of Kr under the control of ham-Gal4 resulted in striking and significant loss of Svp expressing cells in ham-lineages (Figure 5\u2014figure supplement 1). To address if Kr is also necessary for Svp repression in these lineages, we placed the ham-Gal4 reporter line into a Kr mutant background. While we observed a trend of increased numbers of Svp expressing cells in Kr mutants, this was not significant (Figure 5\u2014figure supplement 1). However, we noted an apparent increase in Svp expressing cells in the region in between the ham-Gal4 lineages (Figure 5\u2014figure supplement 1), and quantification of this region did reveal a significant increase in Svp expressing cells in Kr mutants (Figure 5\u2014figure supplement 1). We conclude that the role of Kr as a repressor of svp extends into many, albeit not all, NB lineages in the developing VNC.\n\nAnalyzing svp mutants, we observed ectopic Kr expression within the Ap cluster (Figure 5I\u2013K). However, when we misexpressed svp from elav-Gal4, while we could reproduce the complete loss of Dimm expression from the Ap cluster, we found no loss of wildtype Kr expression in Tv1 (Figure 5L\u2013O). Prompted by these findings, we analyzed svp, Kr double mutants. We found that double mutants showed the typical extra expression of Dimm and Nplp1 observed in svp mutants (Figure 5P\u2013T).\n\nThese results demonstrate that sqz-nab ensures maintained expression of Svp in Tv2/3, by repressing Kr. svp in turn acts as a potent repressor of col and dimm expression, and is necessary but not sufficient to repress Kr. The key role Kr plays in the Tv1 cell is to suppress Svp expression, to safeguard the expression of col and dimm, and thereby ensure the propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade leading to Tv1/Nplp1 terminal differentiation.\n\n### Kr can act globally to refine the ladybird early and collier combinatorial code by repressing Svp\n\nWe find that the main role of Kr with regards to specifying Tv1 fate is to repress svp. Is this interaction restricted to NB5-6T and the Ap cluster, or is it a global phenomenon? To address this we misexpressed Kr pan-neuronally, using elav-Gal4. Intriguingly, we find that Kr strongly suppresses Svp expression broadly in the VNC (Figure 6A\u2013B, E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013B) Single misexpression of Kr results in reduced numbers of Svp positive cells in thoracic segments T1-T3 compared to control. (C) Combinatorial misexpression of col with lbe results in ectopic Ap and Svp expressing cells. (D) Triple misexpression of col, lbe and Kr still results in ectopic Ap cells, but the number of Svp expressing cells is significantly reduced when compared to control. (E) Quantification of Svp expressing cells (**p<0.01; ***p<0.001; Student's t-test; n\u00a0=\u00a03 thoracic regions per group; \u00b1SEM). (F\u2013M) Single, double and triple co-misexpression of col, lbe and Kr at AFT from elav-Gal4. (F\u2013H) Single misexpression of col or lbe results in ectopic Eya, Dimm and Nplp1 cells, when compared to control. (I\u2013J) Single misexpression of Kr or double misexpression with lbe results in ectopic Eya and Nplp1 expression, but not of Dimm, when compared to control. (K) Co-misexpression of col and Kr results in ectopic Eya, Dimm and Nplp1 cells. (L) Co-misexpression of col and lbe results in extensive ectopic Eya, Dimm and Nplp1 expression. (M) Triple co-misexpression of col, lbe and Kr results in ectopic Eya, Dimm and Nplp1 cells, with Dimm cell numbers increased in comparison to double misexpression. (N) Quantification of Dimm expressing cells in thoracic segments T1-T3 (*p<0.05; **p<0.01; ***p<0.001; n\u00a0=\u00a03 thoracic regions; Student's t-test +/- SEM). Genotypes: (A, F) OregonR. (B, I) elav-Gal4; UAS-Kr/+; UAS-Kr/+. (C, L) elav-Gal4/UAS-col, UAS-lbe. (D, M) UAS-Kr; UAS-col, UAS-lbe/elav-Gal4. (G) elav-Gal4/UAS-col. (H) elav-Gal4/UAS-lbe, (J) UAS-lbe/+, UAS-Kr/elav-Gal4. (K) UAS-Kr/+, UAS-col/elav-Gal4.\n\nWe recently found that lbe and col can act in a potent combinatorial code to activate Ap cluster cell fate throughout the VNC (Gabilondo et al., 2016). Indeed, co-misexpressing lbe and col together result in striking ectopic Ap and Eya expression (Figure 6C,L). However, only a subset of these ectopic Ap cluster cells express Dimm and Nplp1, and are bona fide Tv1 neurons (Figure 6L). This observation, together with previous studies (Baumgardt et al., 2009; Baumgardt et al., 2007; Gabilondo et al., 2016), indicate that while lbe and col are sufficient to activate an early 'generic' Ap cluster cell fate, with ectopic Ap and Eya, specification of the different Ap cluster cell fates i.e., Tv1/Nplp1, Tv2/3, Tv4/FMRFa requires several other inputs. On this note, col and lbe co-misexpression also triggered ectopic activation of Svp expression, corroborating the idea that col and lbe act together to trigger a mixture of Ap cluster cell fates (Figure 6C,E). Given the potency of Kr in repressing Svp, we speculated that co-misexpression of lbe and col together with Kr may act to suppress the ectopic Svp expression. Indeed, while triple co-misexpression of Kr, lbe and col still activates extensive ectopic Ap expression, as anticipated, the number of Svp expressing cells is dramatically reduced (Figure 6D,E). These results suggested that the generation of 'generic' Ap cluster cell fates triggered by lbe-col co-misexpression, could be refined by co-misexpression of Kr, and result in a more specific cell fate transformation towards exclusively Tv1/Nplp1 fate.\n\nTo test this idea, we misexpressed the three different factors alone or in all combinatorial mixes from elav-Gal4, and scored for Eya, Dimm and Nplp1 expression. To quantify the specification of Tv1 cells in contrast to 'generic' Ap cells, we counted the number of Dimm expressing cells. While single misexpression of lbe or col resulted in increased number of Dimm positive cells compared to control, Kr misexpression alone did not result in ectopic Dimm cells (Figure 6F\u2013I,N). Co-misexpression of lbe and Kr did not result in ectopic Dimm cells (Figure 6J,N). In contrast, combinatorial misexpression of col and Kr increased the number of Dimm cells (Figure 6K,N). As previously reported (Gabilondo et al., 2016), we find that col and lbe together are tremendously potent at activating ectopic Eya, Dimm and Nplp1 expression in the thoracic region of the VNC, and Dimm cell quantification shows a four-fold increase compared to control (Figure 6L,N). Finally, adding Kr to this cocktail refines the lbe-col effects, and 'generic' Ap neurons are now exclusively steered towards the Tv1/Nplp1 cell fate, evident by a\u00a0robust increase in the numbers of Dimm/Nplp1 cells (Figure 6M,N).\n\nWe conclude that lbe and col co-misexpression, as anticipated, triggers extensive generation of ectopic Ap cluster cells. However, due to the simultaneous activation of Svp in many ectopic Ap cluster cells, a mixture of Ap cluster cell fates is generated. Adding Kr to this misexpression cocktail ensures robust suppression of Svp, and thereby refines the effect of lbe-col into exclusively Tv1 cell fate.\n\n## Discussion\n\nCombining the findings presented in this study with previous studies, we find that the temporal gene cascade results in the expression of Cas in the latter part of NB5-6T (Figure 7A). cas acts together with spatial input, provided by Antp, hth, exd and lbe to activate col in the NB. col in turn activates ap and eya in the early postmitotic cells, which represents a transient and generic Ap cluster cell fate. col subsequently acts in a feedforward loop of col>ap/eya>dimm>Nplp1 to determine Tv1 cell fate. However, in addition to col, cas activates five other genes, including the last temporal gene grh, and the sub-temporal genes sqz, nab, svp and, as shown in this study, Kr. These five genes engage in a postmitotic cross-regulatory interplay, unique to each of the three cell types, which results in the propagation of the col>ap/eya>dimm>Nplp1 terminal selector cascade exclusively in Tv1, and the ap/eya/dac>dimm/BMP>FMRFa cascade in Tv4, while the Tv2/3 cells acquire a non-peptidergic interneuron identity. The role of Kr is to suppress the sub-temporal gene svp, in order to safeguard the expression of col and dimm, and thereby ensures the propagation of the col>ap/eya>dimm>Nplp1 terminal selector cascade, crucial for specification of the Tv1 cells. The other four genes (grh, sqz, nab, svp) each have unique roles, and act as sub-temporal micromanagers to ensure high fidelity and precision in the sub-division of the cas temporal window (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19311/elife-19311-fig7-v1.jpg)\n\n**Figure 7.:** (A) Cartoon outlining the temporal progression of the NB5-6T and the specification of the Ap cluster cells (based on this and previous studies; see text for references). In the NB, cas triggers the sub-temporal genes sqz, nab, svp (red) and the temporal factor grh (black), and together with spatial input from Antp, lbe, Hth/Exd (black), the terminal selector col. In the generic Ap cluster cells, the suppressive role of Kr on svp allows for the col>ap/eya>dim>Nplp1 FFL to progress. The suppressive roles of the sub-temporal genes sqz, nab and svp on Kr, allows for continued svp expression, which prevents the progression of the Nplp1 FFL. dac and grh expression in Tv4 ensures the final cell fate of the Tv4/FMRFa neuron. (B) Model of how spatial (black) and temporal (red) cues can act to initiate different FLLs (black). In addition, temporal cues can initiate a sub-temporal program (red), which controls the FLL progression (FFL1 and FLL2) in different cell types, by either activating or repressive roles on the terminal selectors (green or blue) crucial for the specification of a distinct cell fate 1 (green) or cell fate 2 (blue).\n\n### castor triggers two FFLs and a sub-temporal program\n\nThe temporal gene cas plays a pivotal role in the specification process of the different Ap cluster cells due to its activator role on a number of downstream regulators; col, a terminal selector in Tv1 specification, the sub-temporal genes sqz, nab, svp and Kr, as well as the temporal gene grh. Strikingly, cas thus activates both of the two terminal selector FFLs, and the genes required to refine both FFLs.\n\ncas activates Kr and svp, but how is Kr expression then restricted to only Tv1 and svp expression to Tv2/3? For Kr, restricted expression of sqz, nab and svp in Tv2-Tv4, all of which suppress Kr, can explain the confined expression pattern of Kr to Tv1. The gradually restricted expression of svp in Tv2-3 is in turn explained by Kr repressing svp in Tv1, and by grh repressing svp in Tv4. However, because grh misexpression is not sufficient to repress svp, it is tempting to speculate that there exists a similar factor to Kr, being exclusively expressed in the Tv4 cell, acting to suppress svp expression in a highly confined manner to ensure FMRFa/Tv4 specification.\n\n### Spatial cues trigger FFL, while temporal cues trigger both FFL and sub-temporal genes\n\nBesides its activation by cas, col activation requires additional spatial information, provided by lbe, Antp, hth and exd (Gabilondo et al., 2016; Karlsson et al., 2010), which subsequently initializes the generic Ap cluster program, by activating ap and eya. In contrast, cas alone activates grh and the sub-temporal factors, which are then important for the cell diversification, whether by activating or repressing each other\u2019s actions, or the FFLs, or partake in the FFL (grh), in order to allocate the correct cell fate to the four Ap cluster neurons. Remarkably, the four spatial inputs (lbe, Antp, hth and exd) act only on col, while the temporal input (cas) acts both on col, as well as the temporal and sub-temporal factors (sqz, nab, svp, Kr and grh). It is tempting to speculate that this may point to a general role for spatial versus temporal cues, and may be logically explained by the fact that spatial cues generally do not display the highly selective temporal expression profile necessary for sub-temporal cell diversification (Figure 7B).\n\n### Expanding roles of temporal genes\n\nAn unexpected finding in this study pertains to the dual role of Kr, first acting early in the canonical temporal cascade and subsequently late in the sub-temporal cascade, to ensure the\u00a0specification of the Tv1 cell. The main role of Kr in Tv1 cells is to suppress svp, hence allowing for the maintenance of Col, which itself is critical for the propagation of the terminal FFL, fundamental for Tv1 cell fate. Interestingly, dual expression of Kr, first in the neuroblast and subsequently in neurons, was previously observed in NB3-3, but the functional role of the second Kr expression pulse was not addressed (Tsuji et al., 2008). svp itself also displays a dual expression and function, being expressed early in many NB lineages to suppress hb (Kanai et al., 2005), then being re-expressed in several linages, and in NB5-6T it acts to suppress col and dimm (Benito-Sipos et al., 2011). With regards to postmitotic activity, another example of a temporal gene acting postmitotically applies to the role of the last temporal gene, grh, which is necessary and sufficient for FMRFa expression in Tv4 cells, and can trigger ectopic FMRFa in Ap neurons when misexpressed postmitotically (Baumgardt et al., 2009). Yet in contrast to Kr, grh does not experience a dual expression profile. Hence, with several examples of dual (Kr and svp) and progenitor versus postmitotic roles of temporal genes (Kr and grh), it is tempting to speculate that this type of temporal multi-tasking may indeed be a common feature for many temporal genes, both in Drosophila and in higher organisms.\n\n## Materials and methods\n\n### Fly stocks\n\nlbe(K)-Gal4 (Baumgardt et al., 2009). lbe(K)-EGFP (Ulvklo et al., 2012). elav-Gal4 (DiAntonio et al., 2001) (provided by A. DiAntonio). cas\u03941 and cas\u03943 (Mellerick et al., 1992) (provided by W. Odenwald). UAS-nls-myc-EGFP (referred to as UAS-nmEGFP) (Allan et al., 2003). UAS-col (Vervoort et al., 1999) (provided by A. Vincent). grh370 (Bray and Kafatos, 1991)\u00a0(provided by S. Bray). Kr1, KrCD (Isshiki et al., 2001) (provided by C.Q. Doe). nabR52 and UAS-nab (Terriente F\u00e9lix et al., 2007) (provided by F. Diaz Benjumea). Df(lbl-lbe)B44 and UAS-lbe (provided by K. Jagla). Antp12 (Abbott and Kaufman, 1986)\u00a0(provided by F. Hirth).\n\nFrom Bloomington Drosophila Stock Center: Antp25 (BL#3020). lbe12C005 (BL#59385). elavC155= elav-Gal4 (BL#458). Df(2L)BSC354 (eyaDf) (BL#24378). elav-Gal4 (BL#8765). sqzie(BL#36497). svp1 (BL#6190). apmd544 (referred to as apGal4) (BL#3041). grhDf3654=Df(2R)Pcl7B (BL#3064). sqzie (BL#36497). ham-Gal4 = GMR80G10-GAL4 (BL#40090).\n\nUAS-col-HA and UAS-myc-lbe were generated by the\u00a0codon optimization for expression in Drosophila (http://www.kazusa.or.jp/codon/). EcoRI site and consensus start codon (Cavener and Ray, 1991) was added to the 5\u2019 end. Three different stop codons (amb, och, opa) followed by an XbaI site were added to the 3\u2019 end (see Supplementary file 1 for both sequences). DNAs were generated by gene-synthesis (Genscript, New Jersey), and cloned into pUASattB (Bischof et al., 2007), as EcoRI/XbaI fragments. DNAs were injected into landing site strains BL#9736 (53B) and BL#9744 (89E), for UAS-myc-lbe, and BL#9750 (65B) for UAS-col-HA (BestGene, CA).\n\nMutants were maintained over GFP- or YFP-marked balancer chromosomes. As wild-type control OregonR was used. Staging of embryos was performed according to Campos-Ortega and Hartenstein (Campos-Ortega and Hartenstein, 1985).\n\n### Immunohistochemistry\n\nGuinea pig a-Cas antibodies were generated by inserting a DNA fragment coding for Cas amino acids 171\u2013793 in the Cas-PA protein into plasmid pET16b, followed by an\u00a0expression in bacteria, gel purification and injection into 4 guinea pigs (Davids Biotechnologie, Regensburg, Germany). The strongest sera was used at 1:500, and tested for loss of specific nuclear staining in the VNC in cas mutants. Other primary antibodies were: Guinea pig a-Deadpan (1:1000) and rat a-Dpn (1:200) (Ulvklo et al., 2012). Guinea pig a-Col (1:1000), guinea pig a-Dimm (1:1000), chicken a-proNplp1 (1:1000) and rabbit a-proFMRFa (1:1000) (Baumgardt et al., 2007). Rat a-Grh (1:1000) and rat a-Nab (1:500) (Baumgardt et al., 2009). Rabbit a-Cas (1:250) (provided by W. Odenwald). Mouse mAb a-Dac dac2\u20133 (1:25), mAb a-Eya 10H6 (1:250) (Developmental Studies Hybridoma Bank, Iowa City, IA, US). Rabbit a-Kr (1:500) (provided by Ralf Pflanz), mAb a-Svp (1:50) (provided by Y. Hiromi). Rabbit a-Ap (1:1000) (Bieli et al., 2015) (provided by D. Bieli and M. Affolter). Chicken a-GFP 1:1000 (Abcam, ab13970). Rat monoclonal \u03b1-Gsb-n (1:10)\u00a0(provided by R. Holmgren).\n\n### Confocal imaging and data acquisition\n\nZeiss LSM 700 Confocal microscopes were used for fluorescent images; confocal stacks were merged using LSM software or Adobe Photoshop. Statistic calculations were performed in Graphpad prism software (v4.03). Cell counts in Figure 6 were done manually on thoracic segments T1-T3 in 3 VNCs for each group, with ImageJ FIJI and numbers transferred to Graphpad prism. To address statistical significance Student's t-test or in the case of invariant cell numbers contingency tables together with Chi-Square test were used. Images and graphs were compiled in Adobe Illustrator.\n",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "315aa37a-6bd5-43d7-86d3-a7b458648981",
+      "submission_id": "4f37d99d-0e8b-422c-9267-b880b327525b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robb Krumlauf, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19311.014](https://doi.org/10.7554/eLife.19311.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Temporal Diversification of Neuronal Cell Fate by Sub-temporal Micromanagement\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Robb Krumlauf) and Marianne Bronner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tzumin Lee (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIt is the consensus opinion of the reviewers that this is a well written paper with clear experiments that continues detailed and elegant work by the group on the mechanisms generating neuronal diversity within the NB5-6 lineage of the Drosophila embryonic ventral nervous system. The identification of temporal transcription factors has allowed an understanding of how neuronal diversity is established during development. However, many lineages display broad temporal windows in which different cell types are produced. It is unclear how such specification can be achieved with so few temporal transcription factors (TTFs). In the current paper, the authors address this question and present three novel findings:\n\n1) the late temporal transcription factor (TTF) Castor activates two different cell determination feed forward loops (FFLs), plus one subtemporal regulatory module, to specify the Tv1 and Tv4 neurons\n\n2) the Kr early TTF is re-expressed in the postmitotic Tv1 neuron, where it is necessary and sufficient (roughly) to repress Svp, allowing expression of Col, and thus the specification of Tv1 identity.\n\n3) the spatial factors (lbe, hth, Antp) act on the cell determination FFLs and not on the subtemporal module.\n\nThese results are in line with the authors' previous findings and contribute to a deep understanding of how sub-temporal windows are regulated. However, there are two major comments that must be addressed before this work can be considered for publication:\n\n1) There is a need to better characterize the effects of Antp/lbe loss-of-function on Kr expression by performing NB5-6-specific RNAi for Antp to clarify the phenotype (which is messy in whole animal mutants). It would be valuable to see lbe-gal4 and ap-gal4 driving RNAi constructs for Antp and lbe to clarify their role in regulating Kr in the NB5-6 lineage. It would be possible to assay in L1 or even L2 if it takes time for the knockdown to occur.\n\n2) Test the role of Kr and Svp late expression through analysis in a second NB lineage to generalize the beautiful results found in the NB5-6 lineage.\n\nThe reviewers feel these experiments could both be done quickly and significantly strengthen the paper.\n",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9448425-f820-41b2-8fdb-facdbeb6f09d",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C1",
+      "claim": "During Drosophila embryonic nervous system development, neuroblasts express a programmed cascade of five temporal transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "During Drosophila embryonic nervous system development, neuroblasts express a programmed cascade of five temporal transcription factors that govern the identity of cells generated at different time-points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Drosophila neuroblast development, supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "aaef2152-ed21-4615-90b9-92f4cf150824",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C2",
+      "claim": "The five temporal transcription factors govern the identity of cells generated at different time-points.",
+      "claim_type": "EXPLICIT",
+      "source": "During Drosophila embryonic nervous system development, neuroblasts express a programmed cascade of five temporal transcription factors that govern the identity of cells generated at different time-points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of temporal transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "4ce572c1-2a92-425f-a0a0-af1577e3d7d6",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C3",
+      "claim": "The five temporal genes fall short of accounting for the many distinct cell types generated in large lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these five temporal genes fall short of accounting for the many distinct cell types generated in large lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the complexity of lineages versus the limited number of temporal genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "5072a08c-6019-464a-9f61-fe9d8cf74068",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C4",
+      "claim": "The late temporal gene castor sub-divides its large window in neuroblast 5\u20136 by simultaneously activating two cell fate determination cascades and a sub-temporal regulatory program.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that the late temporal gene castor sub-divides its large window in neuroblast 5\u20136 by simultaneously activating two cell fate determination cascades and a sub-temporal regulatory program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "87d8d6c9-3faa-4a5d-963e-bd87dc3670e9",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C5",
+      "claim": "The sub-temporal program acts both upon itself and upon the determination cascades to diversify the castor window.",
+      "claim_type": "EXPLICIT",
+      "source": "The sub-temporal program acts both upon itself and upon the determination cascades to diversify the castor window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing regulatory interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "da55a21d-4c87-45c3-af05-1193b14d51d0",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C6",
+      "claim": "The early temporal gene Kruppel acts as one of the sub-temporal genes within the late castor window.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the early temporal gene Kruppel acts as one of the sub-temporal genes within the late castor window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by expression and functional data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "a8e989f0-ae75-4524-a475-4182a7c21502",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C7",
+      "claim": "The temporal gene castor activates the two determination cascades and the sub-temporal program.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the temporal gene castor activates the two determination cascades and the sub-temporal program, spatial cues controlling cell fate in the latter part of the 5\u20136 lineage exclusively act upon the determination cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data on castor function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "4b7a8924-9966-4e3f-9934-b6df3c91384f",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C8",
+      "claim": "Spatial cues controlling cell fate in the latter part of the 5\u20136 lineage exclusively act upon the determination cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the temporal gene castor activates the two determination cascades and the sub-temporal program, spatial cues controlling cell fate in the latter part of the 5\u20136 lineage exclusively act upon the determination cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data on spatial cue function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "61955036-0644-4945-8d47-3e80947ab830",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C9",
+      "claim": "In the Drosophila embryonic CNS, neuroblasts sequentially express the transcription factors Hunchback > Kruppel > POU-homeodomain factors Nubbin and Pdm2 > Castor > Grainy head.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila embryonic central nervous system (CNS), neuroblasts (NBs) sequentially expresses the transcription factors, Hunchback (Hb) > Kruppel (Kr) > POU-homeodomain factors Nubbin and Pdm2 (Pdm) > Castor (Cas) > Grainy head (Grh) (Baumgardt et al., 2009; Brody and Odenwald, 2000; Isshiki et al., 2001; Novotny et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "398f450e-568b-4040-b71e-88a8a631c4ad",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C10",
+      "claim": "Temporal transcription factors temporally alter NB competence to determine the types of neurons and glia born at each step of lineage progression.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors temporally alter NB competence to determine the types of neurons and glia born at each step of lineage progression (Kohwi and Doe, 2013; Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "51db5841-689d-41ce-ad54-feca2aec815c",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C11",
+      "claim": "The instructive capacity of five temporal genes falls short of explaining the diversity observed in Drosophila NB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because Drosophila NB lineages can generate an array of different cell types, the instructive capacity of five temporal genes falls short of explaining the diversity observed (Baumgardt et al., 2009; Tsuji et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "5d59d970-d1c2-4ec9-97b6-df885e36e984",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C12",
+      "claim": "Sub-temporal genes act in cascades downstream of the temporal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that this regulatory challenge is solved by the activity of the so-called sub-temporal genes, which act in cascades downstream of the temporal genes, do not feedback on the temporal genes, and play a role in sub-dividing larger temporal competence windows (Baumgardt et al., 2009; Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "cdd65c35-5b00-46bd-ac0a-9460d8a9dbf3",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C13",
+      "claim": "Sub-temporal genes do not feedback on the temporal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that this regulatory challenge is solved by the activity of the so-called sub-temporal genes, which act in cascades downstream of the temporal genes, do not feedback on the temporal genes, and play a role in sub-dividing larger temporal competence windows (Baumgardt et al., 2009; Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "c144e0d1-375c-480c-9d0f-cdea3b3c8370",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C14",
+      "claim": "Sub-temporal genes play a role in sub-dividing larger temporal competence windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that this regulatory challenge is solved by the activity of the so-called sub-temporal genes, which act in cascades downstream of the temporal genes, do not feedback on the temporal genes, and play a role in sub-dividing larger temporal competence windows (Baumgardt et al., 2009; Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "c5d1fc87-874f-41d3-90e5-038a3372453b",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C15",
+      "claim": "Terminal selector genes activate repertoires of terminal cell fate genes such as neurotransmitters and ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of temporal cues, the specification of cell fate is subsequently controlled by determination genes, referred to as terminal selector genes, that activate repertoire(s) of terminal cell fate genes e.g., neurotransmitters and ion channels (Hobert, 2008; Wenick and Hobert, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "24cbcd2e-afaf-4fae-8db6-059b5887abd8",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C16",
+      "claim": "Terminal selectors often act in combinatorial codes to dictate final and unique cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminal selectors have been found to often act in combinatorial codes to dictate final and unique cell fate (Allan and Thor, 2015; Baumgardt et al., 2007; Enriquez et al., 2015; Sharma et al., 1998; Thor et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8a8f482c-c137-43ec-b28d-da9679a15fbb",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C17",
+      "claim": "Terminal selectors may act in cascades denoted coherent feedforward loops (FFLs).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, terminal selectors may act in cascades denoted coherent feedforward loops (FFLs) (Mangan and Alon, 2003; Mangan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "5dfe58f5-434d-48a8-b739-0e1e6a42313a",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C18",
+      "claim": "FFLs are common in E.coli and yeast gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "FFLs are common in E.coli and yeast gene regulatory networks (Alon, 2007), but have also been identified in animals, including in both Drosophila and C.elegans (Baumgardt et al., 2009; Baumgardt et al., 2007; Etchberger et al., 2009; Johnston et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "23f27e51-0f01-4444-bef9-f21eeacfa155",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C19",
+      "claim": "FFLs have been identified in animals, including in both Drosophila and C.elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "FFLs are common in E.coli and yeast gene regulatory networks (Alon, 2007), but have also been identified in animals, including in both Drosophila and C.elegans (Baumgardt et al., 2009; Baumgardt et al., 2007; Etchberger et al., 2009; Johnston et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "96884576-3701-402b-8c58-ee2b258c8dbe",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C20",
+      "claim": "The Apterous neurons of the Drosophila ventral nerve cord constitute a group of interneurons expressing the LIM-HD factor Apterous.",
+      "claim_type": "EXPLICIT",
+      "source": "The Apterous (Ap) neurons of the Drosophila ventral nerve cord (VNC) constitute a group of interneurons expressing the LIM-HD factor Apterous (Ap) (Lundgren et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "7f586d55-b00d-4c66-9a3d-a7e3431c9a76",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C21",
+      "claim": "Ap neurons can be subdivided into dorsal Ap neurons (dAp) and the Ap cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Ap neurons can be subdivided into; (1) dorsal Ap neurons (dAp) that are a dorsal bi-lateral row of Ap neurons generated in abdominal and thoracic segments by NB4-3, and (2) the Ap cluster that are a bi-lateral group of four Ap neurons, denoted Tv1-Tv4, that are generated consecutively by NB5-6T in thoracic segments (Figure 1) (Baumgardt et al., 2007; Gabilondo et al., 2016; Park et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "82a8d43d-f74c-49af-a44a-4121d94a17b3",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C22",
+      "claim": "Dorsal Ap neurons (dAp) are a dorsal bi-lateral row of Ap neurons generated in abdominal and thoracic segments by NB4-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Ap neurons can be subdivided into; (1) dorsal Ap neurons (dAp) that are a dorsal bi-lateral row of Ap neurons generated in abdominal and thoracic segments by NB4-3, and (2) the Ap cluster that are a bi-lateral group of four Ap neurons, denoted Tv1-Tv4, that are generated consecutively by NB5-6T in thoracic segments (Figure 1) (Baumgardt et al., 2007; Gabilondo et al., 2016; Park et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8162f228-27f0-43bf-8705-284e3f316380",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C23",
+      "claim": "The Ap cluster is a bi-lateral group of four Ap neurons, denoted Tv1-Tv4, that are generated consecutively by NB5-6T in thoracic segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Ap neurons can be subdivided into; (1) dorsal Ap neurons (dAp) that are a dorsal bi-lateral row of Ap neurons generated in abdominal and thoracic segments by NB4-3, and (2) the Ap cluster that are a bi-lateral group of four Ap neurons, denoted Tv1-Tv4, that are generated consecutively by NB5-6T in thoracic segments (Figure 1) (Baumgardt et al., 2007; Gabilondo et al., 2016; Park et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "88e05608-6487-4812-bf29-b0b84a23dcee",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C24",
+      "claim": "Two out of four Ap cluster cells have a neuropeptidergic cell fate: the Tv1/Nplp1 and Tv4/FMRFa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Two out of four Ap cluster cells have a neuropeptidergic cell fate; the Tv1/Nplp1 and Tv4/FMRFa cells (Baumgardt et al., 2007; Benveniste et al., 1998; Park et al., 2004), while Tv2 and Tv3 are Ap interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "397bc97c-10ce-4eed-8f00-5bbde29ba150",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C25",
+      "claim": "Tv2 and Tv3 are Ap interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Two out of four Ap cluster cells have a neuropeptidergic cell fate; the Tv1/Nplp1 and Tv4/FMRFa cells (Baumgardt et al., 2007; Benveniste et al., 1998; Park et al., 2004), while Tv2 and Tv3 are Ap interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "a3178008-2105-4211-b07f-e66c728ae326",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C26",
+      "claim": "All four Ap cluster cells express Ap and the transcriptional co-factor Eyes absent (Eya).",
+      "claim_type": "EXPLICIT",
+      "source": "All four cells express Ap and the transcriptional co-factor Eyes absent (Eya) (Miguel-Aliaga et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "fb5d970b-808b-4ff3-8523-3d40d639144d",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C27",
+      "claim": "Two related terminal selector FFLs operate in Ap cluster cells to dictate Nplp1 or FMRFa cell fate: col>ap/eya>dimm>Nplp1 and ap/eya/dac>dimm/BMP>FMRFa.",
+      "claim_type": "EXPLICIT",
+      "source": "Two related terminal selector FFLs operate in Ap cluster cells to dictate Nplp1 or FMRFa cell fate, col>ap/eya>dimm>Nplp1 and ap/eya/dac>dimm/BMP>FMRFa (Allan et al., 2005, 2003; Baumgardt et al., 2007; Miguel-Aliaga et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d969c345-6986-42e9-8400-6dd10057011e",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C28",
+      "claim": "Each cell type-specific FFL cascade is triggered by specific temporal and spatial inputs established during lineage progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cell type-specific FFL cascade is triggered by specific temporal and spatial inputs established during lineage progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the broader context of the study and previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "454b111a-3cbc-4e20-ba54-df5e0da4201c",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C29",
+      "claim": "The spatial input consists of the combinatorial action of the Hox homeotic gene Antennapedia (Antp), the Hox co-factors extradenticle (exd) and homothorax (hth), as well as the homeobox gene ladybird early (lbe).",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial input, conferred by body position, consists of the combinatorial action of the Hox homeotic gene Antennapedia (Antp), the Hox co-factors extradenticle (exd) and homothorax (hth), as well as the homeobox gene ladybird early (lbe) (Gabilondo et al., 2016; Karlsson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9c275953-e9da-401c-8ff1-4d46c86191e4",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C30",
+      "claim": "The temporal input is mediated by Cas and Grh, the last two factors in the Hb>Kr>Pdm>Cas>Grh temporal cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal input is mediated by Cas and Grh; the last two factors in the Hb>Kr>Pdm>Cas>Grh temporal cascade (Baumgardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "feb01211-1fe4-4372-a3f1-960c5e24bf32",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C31",
+      "claim": "Spatial and temporal inputs activate the two terminal FFL cascades in all four Ap cluster neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, these spatial and temporal inputs activate the two terminal FFL cascades in all four Ap cluster neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the broader context of the study and previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "103014de-9af0-4555-a52e-8434b52eba3c",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C32",
+      "claim": "Cas triggers several additional genes in the neuroblast NB5-6T that act to sub-divide the broader Cas window.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cas triggers several additional genes in the neuroblast NB5-6T that act to sub-divide the broader Cas window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the broader context of the study and previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9dc4b1a8-676a-4750-a076-f16b909b0440",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C33",
+      "claim": "The sub-temporal genes consist of squeeze (sqz), nab and seven up (svp).",
+      "claim_type": "EXPLICIT",
+      "source": "These genes were denoted sub-temporal genes, and consist of squeeze (sqz), nab and seven up (svp), which act to repress collier (col; Flybase knot) in the generic Tv2/3 neurons and the Tv4 cell (Baumgardt et al., 2009; Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9d63772e-55be-45d0-ab91-38026e31ece4",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C34",
+      "claim": "The sub-temporal genes sqz, nab and svp act to repress collier (col) in the generic Tv2/3 neurons and the Tv4 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes were denoted sub-temporal genes, and consist of squeeze (sqz), nab and seven up (svp), which act to repress collier (col; Flybase knot) in the generic Tv2/3 neurons and the Tv4 cell (Baumgardt et al., 2009; Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "176078e5-987b-4469-9e2c-6fe4874f3e48",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C35",
+      "claim": "The repression of col in the Tv2/3 and Tv4 neurons prevents those cells from being specified into Tv1/Nplp1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The repression of col in the Tv2/3 and Tv4 neurons prevents those cells from being specified into Tv1/Nplp1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the broader context of the study and previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "949f63bf-1e8e-4eaa-a51a-7e91a466137a",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C36",
+      "claim": "Kr mutants show loss of Nplp1 expression in the dAp cells and in the Tv1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole VNCs of control and Kr mutants, at AFT, reveal loss of Nplp1 expression in the dAp cells, but also in the Tv1 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e6a8698a-516d-416b-919f-249c4963c028",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C37",
+      "claim": "In Kr mutants, Eya is normally expressed in four cells of the Ap cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutants, while Eya is normally expressed in four cells, Dimm and Nplp1 expression is lost in the Tv1 cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e7bc13c8-9570-4b1f-8d02-13bee09fb8b7",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C38",
+      "claim": "In Kr mutants, Dimm and Nplp1 expression is lost in the Tv1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutants, while Eya is normally expressed in four cells, Dimm and Nplp1 expression is lost in the Tv1 cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "fed99f3b-9fb4-4a63-a064-b42a37b8c3db",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C39",
+      "claim": "In Kr mutants, Dimm and FMRFa expression in the Tv4 cell is not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimm and FMRFa expression in the Tv4 cell is not affected in Kr mutants compared to control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "0772d5c7-ae24-4a07-b81e-389861c5005e",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C40",
+      "claim": "Nab and Col expression in the NB5-6T at St14 is similar in control and Kr mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Nab and Col expression, in the NB5-6T at St14, is similar in control and Kr mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "6883b9af-b40a-4a20-8851-d67256f357eb",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C41",
+      "claim": "In Tv1 cells at St14, Col expression is similar in control and Kr mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In Tv1 cells (dashed circles) at St14 (distinguishable from Tv2 cells by positive Eya but negative Nab expression) Col expression is similar in control and Kr mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "b600a1c5-cdea-4ebc-a8bd-cd17320248b5",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C42",
+      "claim": "At late St16, Col and Dimm expression is lost in the Tv1 cell in Kr mutants while Eya is un-affected.",
+      "claim_type": "EXPLICIT",
+      "source": "At late St16, while Eya is un-affected, Col and Dimm expression is lost in the Tv1 cell in Kr mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ac2c9f4c-724f-4900-b3d5-7dfd78fdb6de",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C43",
+      "claim": "In Kr mutants, Dac expression is observed in all four Ap cluster cells at AFT.",
+      "claim_type": "EXPLICIT",
+      "source": "While Dac is usually expressed in three out of four cells in the Ap clusters at AFT, we find that in Kr mutants Dac expression is observed in all four Ap cluster cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "6f64734a-522f-4d22-9176-cd76ea069067",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C44",
+      "claim": "Dac is significantly upregulated in Kr mutants when compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Dac is significantly upregulated in Kr mutants when compared to control (***p<0.001, nctrl = 7 clusters, nKr = 10 clusters, Chi-square test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of data shown in Figure 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "a1cef936-bca6-4a02-9ba3-a951c35cb625",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C45",
+      "claim": "Kr is not expressed in the NB5-6T at St14.",
+      "claim_type": "EXPLICIT",
+      "source": "Kr is not expressed in the NB5-6T or (O) the Tv1 cell at St14.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "93146c53-845f-43e1-ac35-bb72d2c3ddd5",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C46",
+      "claim": "Kr is not expressed in the Tv1 cell at St14.",
+      "claim_type": "EXPLICIT",
+      "source": "Kr is not expressed in the NB5-6T or (O) the Tv1 cell at St14.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "83dee781-ab2d-49b2-b02e-e3223679df41",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C47",
+      "claim": "At St16, Kr expression commences in Tv1.",
+      "claim_type": "EXPLICIT",
+      "source": "At St16, Kr expression commences in Tv1 (dashed circle), which is characterized by maintenance of strong Col expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d3f81b9d-93d6-49a5-9ada-c2b0879c6c82",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C48",
+      "claim": "Kr expression in Tv1 is variably maintained into AFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Variably, Kr expression in Tv1 is maintained into AFT, identifiable by co-staining for Eya and Nplp1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "4bc2180c-a955-4c3f-9a71-0b76dd42f434",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C49",
+      "claim": "Kr shows two phases of expression in the NB5-6T lineage: an early phase and a postmitotic phase in the Tv1 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, Kr shows two phases of expression in the NB5-6T lineage; an early phase, in line with its known role as an early temporal factor, and a postmitotic phase in the Tv1 neuron (Figure 1R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of experimental observations shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ddf09c8b-8698-4ac8-9df3-fe34012c9dee",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C50",
+      "claim": "Postmitotic misexpression of Kr in all four Ap neurons results in ectopic expression of Col, Dimm and Nplp1 in other Tv neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Misexpression of Kr in all four postmitotic Ap neurons resulted in the ectopic expression of Col, Dimm and Nplp1 in other Tv neurons (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "72d21596-3bbd-4c10-80e8-ab1261584606",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C51",
+      "claim": "The conversion of Ap cluster neurons to a Tv1 cell fate by Kr misexpression is accompanied by the loss of FMRFa expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The conversion of Ap cluster neurons to a Tv1 cell fate was accompanied by the loss of FMRFa expression (Figure 2E\u2013H), but not by the loss of Dac or Nab expression (Figure 2I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "2ff625fe-d86c-4df0-ae13-f81cad518ee0",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C52",
+      "claim": "Kr misexpression does not result in loss of Dac or Nab expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The conversion of Ap cluster neurons to a Tv1 cell fate was accompanied by the loss of FMRFa expression (Figure 2E\u2013H), but not by the loss of Dac or Nab expression (Figure 2I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2I-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d76a5b11-778b-4d7f-a12e-f26db16bddad",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C53",
+      "claim": "Kr rescue by UAS-Kr driven from elav-Gal4 restores Dimm and Nplp1 specifically to Tv1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kr rescue by UAS-Kr driven from elav-Gal4 restores Dimm and Nplp1 specifically to Tv1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2M-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "38022842-4d86-4f3f-8981-fec1e0d03af3",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C54",
+      "claim": "Cross-rescue of Kr with UAS-col from elav-Gal4 rescues Kr mutants, evident by Dimm and Nplp1 expression in the Ap clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-rescue of Kr with UAS-col from elav-Gal4 rescues Kr mutants, evident by Dimm and Nplp1 expression in the Ap clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e0a9fbd7-bf60-47de-a2a5-79a0ad06e8c9",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C55",
+      "claim": "The role of Kr in the Tv1 neuron is to ensure the maintenance of Col, thereby ensuring the propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the role of Kr in the Tv1 neuron is not to act directly upon Nplp1, but rather to ensure the maintenance of Col, and thereby ensure the propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade leading to Tv1/Nplp1 terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the rescue experiments and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "434c2489-ccc4-4a82-be6f-10b90fe7088b",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C56",
+      "claim": "Kr expression in the Tv1 cell is not affected in ap, eya and col mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we first analyzed Kr expression in ap, eya and col mutants, critical Tv1 cell fate determinants (Baumgardt et al., 2007), but did not observe any change in Kr expression in these mutant backgrounds (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "02fb2d67-5d9d-4640-992b-805d0d28c7d0",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C57",
+      "claim": "Kr expression in the Tv1 cell is not affected in Antp and lbe mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Kr expression in the Tv1 cell in Antp and lbe mutants, using this marker combination, revealed that Kr is not affected in either mutant (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "405b3e66-749e-4c6e-b702-63fa87718386",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C58",
+      "claim": "cas mutants often display loss of Kr in the Tv1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cas mutants often displayed loss of Kr in the Tv1 cells (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e88cfcb8-abe0-447a-8515-08c37ae7442e",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C59",
+      "claim": "cas mutants show a reduction in the number of Kr-expressing cells in the entire NB5-6T lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This was accompanied by a reduction in the number of Kr-expressing cells in the entire NB5-6T lineage (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "5de2f59f-2708-47f3-815a-63288d4ac12d",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C60",
+      "claim": "Cas and Kr overlap extensively in the NB5-6T lineage in the wild type background.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of Kr expression in the entire NB5-6T lineage in cas mutants was mirrored by extensive overlap between Cas and Kr in the NB5-6T lineage in the wild type background (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "5256d025-dfde-4ccc-b902-3d2bf08b0835",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C61",
+      "claim": "Cas/Kr overlap is observed in a number of cells throughout the thoracic VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, scanning the entire thoracic VNC we observed Cas/Kr overlap in a number of other cells (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d53b8cc4-ecaa-4cb6-820b-4c278d985770",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C62",
+      "claim": "cas mutants show striking reduction in Kr expression throughout thoracic segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing cas mutants in the entire thoracic segments, we observed striking reduction in Kr expression throughout these segments (Figure 3G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "98b48c0f-26b1-4345-9fba-9a4264bd4e00",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C63",
+      "claim": "Kr expression is not affected in grh mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed Kr expression in mutants for the last gene in the temporal gene cascade; grainy head (grh), which is known to be expressed during the latter part of NB5-6T lineage development, and important for Tv4/FMRFa cell fate (Baumgardt et al., 2009). However, we did not observe any effect on Kr expression in grh mutants (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "3ae71def-3efc-49dc-82dc-10330c2db1bf",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C64",
+      "claim": "Kr is activated in Tv1 by cas.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Kr is activated in Tv1 by cas, and strikingly, that this regulatory connection extends into many late postmitotic cells in the VNC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the cas mutant analysis and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "76899907-42b7-4c7b-a7b3-4d4a0386a2df",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C65",
+      "claim": "The regulatory connection between cas and Kr extends into many late postmitotic cells in the VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Kr is activated in Tv1 by cas, and strikingly, that this regulatory connection extends into many late postmitotic cells in the VNC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the cas mutant analysis and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "c738cbf9-975d-4710-9a12-56d0493a84bc",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C66",
+      "claim": "Neither Antp nor lbe regulate Kr in the Tv1 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither Antp nor lbe regulate Kr in the Tv1 neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "67ac8abc-a792-4bf4-87bd-543e92ce13a9",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C67",
+      "claim": "Nab is not affected in Kr mutants or by Kr misexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "As described above, Nab is not affected in Kr mutants or by Kr misexpression (Figures 1E\u2013H, 2K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1E-H and 2K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "a24728c1-5833-496a-9ef6-c4693db1371b",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C68",
+      "claim": "In both sqz and nab mutants, there is one extra Kr/Dimm expressing cell in the Ap cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in both sqz and nab mutants, we observed one extra Kr/Dimm expressing cell in the Ap cluster (Figure 4A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "b353cfdb-6e98-4587-b884-fe2767f99007",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C69",
+      "claim": "Misexpression of nab suppresses Col maintenance and results in loss of Dimm and Nplp1 from the Tv1 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Misexpression of nab suppresses the Col maintenance and results in loss of Dimm and Nplp1 from the Tv1 neuron (Baumgardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "6965a8b9-d5a6-47cb-8040-27ec71d4a885",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C70",
+      "claim": "Kr expression is absent from the Ap cluster when nab is misexpressed from elav-Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these findings, we addressed the effects of misexpressing nab in the Tv1 neuron, from elav-Gal4. We observed that Kr expression was absent from the Ap cluster in nab misexpression (Figure 4K\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4K-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "73948033-528e-4c28-858a-53a94b7347f7",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C71",
+      "claim": "The sub-temporal genes sqz and nab act to restrict the expression of Kr to the Tv1 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the sub-temporal genes sqz and nab act to restrict the expression of Kr to the Tv1 neuron, while, Kr does not reciprocally regulate the cas>sqz>nab feedforward loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ec6e6153-9ddc-476d-8b1f-561bdb431b49",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C72",
+      "claim": "Kr does not reciprocally regulate the cas>sqz>nab feedforward loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the sub-temporal genes sqz and nab act to restrict the expression of Kr to the Tv1 neuron, while, Kr does not reciprocally regulate the cas>sqz>nab feedforward loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "65cd6b70-e583-420c-8c73-682e44755733",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C73",
+      "claim": "svp mutants display ectopic Col, Dimm and Nplp1 expression in the Ap cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that svp mutants displayed ectopic Col, Dimm and Nplp1 expression in the Ap cluster, and that postmitotic misexpression of svp from ap-Gal4 could suppress expression of Col, Dimm and Nplp1 (Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "832747ad-8d32-4539-94f3-31d5613ba449",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C74",
+      "claim": "Postmitotic misexpression of svp from ap-Gal4 suppresses expression of Col, Dimm and Nplp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that svp mutants displayed ectopic Col, Dimm and Nplp1 expression in the Ap cluster, and that postmitotic misexpression of svp from ap-Gal4 could suppress expression of Col, Dimm and Nplp1 (Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "39987ac3-08b0-4b03-b057-acf12ecce512",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C75",
+      "claim": "Svp is initially expressed by all four Ap cluster cells (St15-16), but is rapidly confined to Tv2 and Tv3, where it is maintained into AFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Svp is initially expressed by all four Ap cluster cells (St15-16), but is rapidly confined to Tv2 and Tv3, where it is maintained into AFT (Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "f21a1476-fb13-46c7-ade9-94722213edba",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C76",
+      "claim": "In sqz and nab mutants at stage AFT, there is loss of svp expression in one cell and one extra Dimm expressing cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in sqz and nab mutants, at stage AFT, there is loss of svp expression in one cell and also one extra Dimm expressing cell (Figure 4F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "f24207e1-5ea5-45f6-8c01-48b3a2fe2817",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C77",
+      "claim": "nab misexpression results in Svp expression in one extra cell coupled with loss of Dimm expression in one cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, nab misexpression results in Svp expression in one extra cell coupled with loss of Dimm expression in one cell (Figure 4N\u2013Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4N-Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "40ca2562-0596-4f1c-9105-e8f4c01ab494",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C78",
+      "claim": "sqz and nab control Ap cluster diversification by ensuring Svp expression in Tv2 and Tv3.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, sqz and nab control Ap cluster diversification also by ensuring Svp expression in Tv2 and Tv3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8b1dc78e-b4e3-4197-ae2d-d10ea12ea752",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C79",
+      "claim": "In Kr mutants, Svp is expressed in one additional Ap cluster cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in Kr mutants, Svp is expressed in one additional Ap cluster cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "af1f0ce0-089a-4bc7-a120-1051bb33d452",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C80",
+      "claim": "Kr misexpression postmitotically in all four Ap neurons results in complete loss of Svp expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Kr misexpression postmitotically in all four Ap neurons resulted in complete loss of Svp expression (Figure 5F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "7917a5fb-2309-40d3-a657-d1540c2d2152",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C81",
+      "claim": "svp mutants show increased number of Kr expressing cells in the Ap cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing svp mutants, we observed ectopic Kr expression within the Ap cluster (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "dccc0296-5130-4c12-81b2-c6ab76773c49",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C82",
+      "claim": "Misexpression of svp from elav-Gal4 results in complete loss of Dimm expression from the Ap cluster but no loss of wildtype Kr expression in Tv1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we misexpressed svp from elav-Gal4, while we could reproduce the complete loss of Dimm expression from the Ap cluster, we found no loss of wildtype Kr expression in Tv1 (Figure 5L\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5L-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9a4f9890-df1b-44dc-bcaa-30cc2eac6637",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C83",
+      "claim": "svp, Kr double mutants show the typical extra expression of Dimm and Nplp1 observed in svp mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Prompted by these findings, we analyzed svp, Kr double mutants. We found that double mutants showed the typical extra expression of Dimm and Nplp1 observed in svp mutants (Figure 5P\u2013T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5P-T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "3848ac12-6ef7-4f7d-ba63-b67b64e48673",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C84",
+      "claim": "sqz-nab ensures maintained expression of Svp in Tv2/3 by repressing Kr.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that sqz-nab ensures maintained expression of Svp in Tv2/3, by repressing Kr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e446ea10-00f1-4f3f-85c3-0791171d1288",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C85",
+      "claim": "svp acts as a potent repressor of col and dimm expression.",
+      "claim_type": "EXPLICIT",
+      "source": "svp in turn acts as a potent repressor of col and dimm expression, and is necessary but not sufficient to repress Kr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e2484b33-53d0-4cc0-badf-636f36500017",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C86",
+      "claim": "svp is necessary but not sufficient to repress Kr.",
+      "claim_type": "EXPLICIT",
+      "source": "svp in turn acts as a potent repressor of col and dimm expression, and is necessary but not sufficient to repress Kr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "2e821c50-8c46-49c3-82bd-22cdccdb53c5",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C87",
+      "claim": "The key role Kr plays in the Tv1 cell is to suppress Svp expression, to safeguard the expression of col and dimm.",
+      "claim_type": "EXPLICIT",
+      "source": "The key role Kr plays in the Tv1 cell is to suppress Svp expression, to safeguard the expression of col and dimm, and thereby ensure the propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade leading to Tv1/Nplp1 terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutant and misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "2113823c-2222-4cb1-905a-41f0a16bb511",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C88",
+      "claim": "Kr strongly suppresses Svp expression broadly in the VNC when misexpressed pan-neuronally using elav-Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this we misexpressed Kr pan-neuronally, using elav-Gal4. Intriguingly, we find that Kr strongly suppresses Svp expression broadly in the VNC (Figure 6A\u2013B, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6A-B, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "b8fdd176-c6ea-40d7-927d-0d774106208c",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C89",
+      "claim": "Combinatorial misexpression of col with lbe results in ectopic Ap and Svp expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, co-misexpressing lbe and col together result in striking ectopic Ap and Eya expression (Figure 6C,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6C, L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "16554c02-24a1-4a3b-9105-445a34994ecd",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C90",
+      "claim": "Only a subset of ectopic Ap cluster cells generated by lbe and col co-misexpression express Dimm and Nplp1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a subset of these ectopic Ap cluster cells express Dimm and Nplp1, and are bona fide Tv1 neurons (Figure 6L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9f9edae9-1785-4a68-98f5-7a958c6760f6",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C91",
+      "claim": "lbe and col are sufficient to activate an early 'generic' Ap cluster cell fate, with ectopic Ap and Eya.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, together with previous studies (Baumgardt et al., 2009; Baumgardt et al., 2007; Gabilondo et al., 2016), indicate that while lbe and col are sufficient to activate an early 'generic' Ap cluster cell fate, with ectopic Ap and Eya, specification of the different Ap cluster cell fates i.e., Tv1/Nplp1, Tv2/3, Tv4/FMRFa requires several other inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current data and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "04f071bf-6d2a-4c77-91e0-1a1eb26fe213",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C92",
+      "claim": "Specification of the different Ap cluster cell fates (Tv1/Nplp1, Tv2/3, Tv4/FMRFa) requires several other inputs beyond lbe and col.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, together with previous studies (Baumgardt et al., 2009; Baumgardt et al., 2007; Gabilondo et al., 2016), indicate that while lbe and col are sufficient to activate an early 'generic' Ap cluster cell fate, with ectopic Ap and Eya, specification of the different Ap cluster cell fates i.e., Tv1/Nplp1, Tv2/3, Tv4/FMRFa requires several other inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current data and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "de655367-4b6e-4c68-be58-70df711da289",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C93",
+      "claim": "col and lbe co-misexpression triggers ectopic activation of Svp expression.",
+      "claim_type": "EXPLICIT",
+      "source": "On this note, col and lbe co-misexpression also triggered ectopic activation of Svp expression, corroborating the idea that col and lbe act together to trigger a mixture of Ap cluster cell fates (Figure 6C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6C, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ee3f75cd-09a4-4794-879a-0b7b11f21240",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C94",
+      "claim": "Triple co-misexpression of Kr, lbe and col dramatically reduces the number of Svp expressing cells while still activating extensive ectopic Ap expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while triple co-misexpression of Kr, lbe and col still activates extensive ectopic Ap expression, as anticipated, the number of Svp expressing cells is dramatically reduced (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9a8d04e8-40ce-4f64-8ee1-3044707d6124",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C95",
+      "claim": "Adding Kr to lbe-col misexpression cocktail refines the effects and steers 'generic' Ap neurons exclusively towards the Tv1/Nplp1 cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, adding Kr to this cocktail refines the lbe-col effects, and 'generic' Ap neurons are now exclusively steered towards the Tv1/Nplp1 cell fate, evident by a robust increase in the numbers of Dimm/Nplp1 cells (Figure 6M,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6M, N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "0110c0ce-c0f1-4d4c-a894-d0e5c3422c43",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C96",
+      "claim": "lbe and col co-misexpression triggers extensive generation of ectopic Ap cluster cells, but due to simultaneous activation of Svp in many ectopic Ap cluster cells, a mixture of Ap cluster cell fates is generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that lbe and col co-misexpression, as anticipated, triggers extensive generation of ectopic Ap cluster cells. However, due to the simultaneous activation of Svp in many ectopic Ap cluster cells, a mixture of Ap cluster cell fates is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e96c1bed-3266-4d39-b1ab-c6cdd7eb71fc",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C97",
+      "claim": "Adding Kr to lbe-col misexpression ensures robust suppression of Svp, thereby refining the effect of lbe-col into exclusively Tv1 cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding Kr to this misexpression cocktail ensures robust suppression of Svp, and thereby refines the effect of lbe-col into exclusively Tv1 cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the misexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d91205e9-7d1a-4f5d-915b-230809be8dfd",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C98",
+      "claim": "The temporal gene cascade results in the expression of Cas in the latter part of NB5-6T.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the findings presented in this study with previous studies, we find that the temporal gene cascade results in the expression of Cas in the latter part of NB5-6T (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary combining current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "072c5d36-f3b3-4bd0-857c-b28ba016354b",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C99",
+      "claim": "cas acts together with spatial input provided by Antp, hth, exd and lbe to activate col in the NB.",
+      "claim_type": "EXPLICIT",
+      "source": "cas acts together with spatial input, provided by Antp, hth, exd and lbe to activate col in the NB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary combining current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "2c7ec493-f672-4cbc-9804-52fe4b373fc3",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C100",
+      "claim": "col activates ap and eya in the early postmitotic cells, which represents a transient and generic Ap cluster cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "col in turn activates ap and eya in the early postmitotic cells, which represents a transient and generic Ap cluster cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary combining current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8acc90d9-0d6c-4b6a-bc2f-b29fa0b3d1cb",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C101",
+      "claim": "In addition to col, cas activates five other genes: grh, sqz, nab, svp and Kr.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in addition to col, cas activates five other genes, including the last temporal gene grh, and the sub-temporal genes sqz, nab, svp and, as shown in this study, Kr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary combining current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "4978df68-19d6-4cf3-bb35-a25c70b39bda",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C102",
+      "claim": "The five genes activated by cas (grh, sqz, nab, svp, Kr) engage in a postmitotic cross-regulatory interplay unique to each of the three cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "These five genes engage in a postmitotic cross-regulatory interplay, unique to each of the three cell types, which results in the propagation of the col>ap/eya>dimm>Nplp1 terminal selector cascade exclusively in Tv1, and the ap/eya/dac>dimm/BMP>FMRFa cascade in Tv4, while the Tv2/3 cells acquire a non-peptidergic interneuron identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary combining current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "e7f9708e-5892-43c9-9abe-44f60d147827",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C103",
+      "claim": "cas activates Kr and svp, but restricted expression of sqz, nab and svp in Tv2-Tv4 (all of which suppress Kr) explains the confined expression pattern of Kr to Tv1.",
+      "claim_type": "EXPLICIT",
+      "source": "cas activates Kr and svp, but how is Kr expression then restricted to only Tv1 and svp expression to Tv2/3? For Kr, restricted expression of sqz, nab and svp in Tv2-Tv4, all of which suppress Kr, can explain the confined expression pattern of Kr to Tv1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "cd1d15df-31dd-4e83-85fd-ad9c58400896",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C104",
+      "claim": "The gradually restricted expression of svp in Tv2-3 is explained by Kr repressing svp in Tv1 and by grh repressing svp in Tv4.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradually restricted expression of svp in Tv2-3 is in turn explained by Kr repressing svp in Tv1, and by grh repressing svp in Tv4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "da6ba05e-a85b-47c0-a1e7-7a56a823758a",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C105",
+      "claim": "col activation requires additional spatial information provided by lbe, Antp, hth and exd.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides its activation by cas, col activation requires additional spatial information, provided by lbe, Antp, hth and exd (Gabilondo et al., 2016; Karlsson et al., 2010), which subsequently initializes the generic Ap cluster program, by activating ap and eya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "910544a3-7bc6-4a94-a33c-d8fab4bd7c55",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C106",
+      "claim": "cas alone activates grh and the sub-temporal factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cas alone activates grh and the sub-temporal factors, which are then important for the cell diversification, whether by activating or repressing each other's actions, or the FFLs, or partake in the FFL (grh), in order to allocate the correct cell fate to the four Ap cluster neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ff28a85f-2e82-4175-893a-0361568f2223",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C107",
+      "claim": "The four spatial inputs (lbe, Antp, hth and exd) act only on col, while the temporal input (cas) acts both on col and on the temporal and sub-temporal factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the four spatial inputs (lbe, Antp, hth and exd) act only on col, while the temporal input (cas) acts both on col, as well as the temporal and sub-temporal factors (sqz, nab, svp, Kr and grh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9a7864d9-c8d8-4889-9351-4ada0972acd7",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C108",
+      "claim": "Kr acts first early in the canonical temporal cascade and subsequently late in the sub-temporal cascade to ensure the specification of the Tv1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "An unexpected finding in this study pertains to the dual role of Kr, first acting early in the canonical temporal cascade and subsequently late in the sub-temporal cascade, to ensure the specification of the Tv1 cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "556d8e05-a00d-4910-aeb5-6037610b4e2b",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C109",
+      "claim": "Dual expression of Kr, first in the neuroblast and subsequently in neurons, was previously observed in NB3-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dual expression of Kr, first in the neuroblast and subsequently in neurons, was previously observed in NB3-3, but the functional role of the second Kr expression pulse was not addressed (Tsuji et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8eca68c0-a4d3-4b27-8c53-dfecaf44921d",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C110",
+      "claim": "svp displays a dual expression and function, being expressed early in many NB lineages to suppress hb, then being re-expressed in several lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "svp itself also displays a dual expression and function, being expressed early in many NB lineages to suppress hb (Kanai et al., 2005), then being re-expressed in several linages, and in NB5-6T it acts to suppress col and dimm (Benito-Sipos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "bc68f56c-4cfe-481c-b27c-71169b204994",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C111",
+      "claim": "grh is necessary and sufficient for FMRFa expression in Tv4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to postmitotic activity, another example of a temporal gene acting postmitotically applies to the role of the last temporal gene, grh, which is necessary and sufficient for FMRFa expression in Tv4 cells, and can trigger ectopic FMRFa in Ap neurons when misexpressed postmitotically (Baumgardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d338b790-c5e4-4027-afc8-cc0f6b921a8d",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C112",
+      "claim": "grh can trigger ectopic FMRFa in Ap neurons when misexpressed postmitotically.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to postmitotic activity, another example of a temporal gene acting postmitotically applies to the role of the last temporal gene, grh, which is necessary and sufficient for FMRFa expression in Tv4 cells, and can trigger ectopic FMRFa in Ap neurons when misexpressed postmitotically (Baumgardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "204251cd-c5f8-48ea-999d-495f5040ce98",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "claim_id": "C113",
+      "claim": "Temporal multi-tasking may be a common feature for many temporal genes, both in Drosophila and in higher organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, with several examples of dual (Kr and svp) and progenitor versus postmitotic roles of temporal genes (Kr and grh), it is tempting to speculate that this type of temporal multi-tasking may indeed be a common feature for many temporal genes, both in Drosophila and in higher organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "308df9cd-719a-4592-85b6-2e028929352e",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Kr is expressed in two phases in the NB5-6T lineage: an early phase in the neuroblast (St9-11) and a late postmitotic phase specifically in the Tv1 neuron (commencing at St16). In Kr mutants, Tv1 cells show specific loss of Dimm and Nplp1 expression, while Eya remains unaffected and other Ap cluster cells (Tv2-4) are normal. Col expression is initially normal but is lost by late St16 in Tv1 cells, and Dac is ectopically expressed in Tv1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C49 provide comprehensive temporal expression data and mutant phenotype analysis with appropriate controls and statistical validation (C44). The biphasic expression pattern is well-documented through multiple developmental stages, and the cell-type-specific effects in Kr mutants are clearly demonstrated with proper markers to distinguish different Ap cluster neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "49ec0330-19bf-4f7c-816a-f5de0406af1f",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Postmitotic misexpression of Kr in all four Ap neurons is sufficient to induce ectopic Col, Dimm, and Nplp1 expression in other Tv neurons, converting them to Tv1 fate. This conversion is accompanied by loss of FMRFa but not Dac or Nab. Kr can be rescued by UAS-Kr or cross-rescued by UAS-col, indicating Kr acts upstream of Col to maintain its expression and ensure propagation of the col>ap/eya>dimm>Nplp1 feedforward cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 demonstrate sufficiency through gain-of-function experiments and establish epistatic relationships through rescue experiments. The cross-rescue with col (C54) provides strong evidence that Kr acts through Col maintenance rather than directly on Nplp1, supporting the proposed mechanism in C55.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Kr expression in Tv1 is activated by the temporal gene castor (cas) but not by spatial cues (Antp, lbe) or other cell fate determinants (ap, eya, col, grh). In cas mutants, Kr expression is frequently lost in Tv1 cells and reduced throughout the NB5-6T lineage and thoracic VNC. Cas and Kr show extensive co-expression in the NB5-6T lineage and other thoracic cells, indicating this regulatory relationship extends beyond the Ap cluster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 systematically test multiple potential regulators of Kr through mutant analysis. The cas mutant phenotype (C58-C62) combined with co-expression data (C60-C61) provides strong evidence for cas activation of Kr. The negative results for other factors (C56-C57, C63, C66) appropriately rule out alternative regulatory inputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "f81d0cfb-ed5b-4b17-baf6-92641726b270",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The sub-temporal genes sqz and nab restrict Kr expression to the Tv1 neuron. In sqz and nab mutants, there is one extra Kr/Dimm expressing cell in the Ap cluster. Misexpression of nab suppresses Kr expression in the Ap cluster. However, Kr does not reciprocally regulate the cas>sqz>nab feedforward loop, as Nab expression is unaffected in Kr mutants or by Kr misexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 establish a unidirectional regulatory relationship through complementary loss-of-function (C68) and gain-of-function (C70) experiments. The lack of reciprocal regulation (C67, C72) is demonstrated through appropriate negative controls, supporting the hierarchical model where sqz/nab act downstream of cas but upstream of Kr.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "8bc28ff0-6f8b-4080-9bdc-060b4d7e7196",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The sub-temporal genes sqz and nab control Ap cluster diversification by ensuring Svp expression in Tv2 and Tv3. In sqz and nab mutants, there is loss of svp expression in one cell and one extra Dimm expressing cell. Conversely, nab misexpression results in Svp expression in one extra cell coupled with loss of Dimm expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 demonstrate the role of sqz/nab in regulating svp through complementary loss-of-function and gain-of-function experiments showing reciprocal phenotypes. This establishes sqz/nab as regulators of both Kr (previous result) and svp, positioning them as key sub-temporal coordinators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "3e00102c-103f-4a88-b786-3a914f749bcb",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Kr suppresses svp expression in Tv1 cells to safeguard col and dimm expression. In Kr mutants, Svp is expressed in one additional Ap cluster cell (Tv1), while Kr misexpression results in complete loss of Svp. In svp mutants, ectopic Kr expression is observed in the Ap cluster. However, svp misexpression does not suppress Kr in Tv1, and svp,Kr double mutants show the svp mutant phenotype, indicating svp is necessary but not sufficient to repress Kr. The sqz-nab pathway ensures Svp maintenance in Tv2/3 by repressing Kr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C87 establish a complex regulatory relationship between Kr and svp through extensive genetic analysis including single mutants, double mutants, and misexpression experiments. The epistasis analysis (C82-C83) and asymmetric regulatory relationship (C86) are well-supported by the data, establishing Kr as the primary repressor of svp in Tv1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Kr globally suppresses Svp expression throughout the VNC and refines the combinatorial effects of lbe and col. While lbe and col co-misexpression generates ectopic 'generic' Ap cluster cells with mixed fates (including ectopic Svp), adding Kr to this cocktail dramatically reduces Svp expression and steers cells exclusively toward Tv1/Nplp1 fate, as evidenced by robust increases in Dimm/Nplp1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C97 demonstrate Kr's role beyond NB5-6T through pan-neuronal misexpression and systematic combinatorial misexpression experiments. The progressive refinement of cell fate specification by adding Kr to lbe-col (C94-C95) provides strong functional evidence for Kr's role in suppressing Svp to promote Tv1 fate. Quantification of Dimm cells (referenced in figures) supports the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The late temporal gene castor sub-divides its large window in neuroblast 5-6 by simultaneously activating two cell fate determination cascades and a sub-temporal regulatory program. The sub-temporal program acts both upon itself and upon the determination cascades to diversify the castor window. The early temporal gene Kruppel acts as one of the sub-temporal genes within the late castor window. Spatial cues controlling cell fate exclusively act upon the determination cascades, while castor activates both cascades and the sub-temporal program.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 represent the main findings synthesized from the experimental results. These are well-supported by the detailed genetic and expression analyses presented in the manuscript (covered in other result groups). The dual role of Kr (C6) and the differential action of spatial vs temporal cues (C8) are novel findings supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "d8dbed01-12ef-4153-971e-a7ba278215c5",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The temporal cascade results in Cas expression in the latter part of NB5-6T, which acts with spatial inputs (Antp, hth, exd, lbe) to activate col. Col activates ap and eya, representing a generic Ap cluster fate. Cas additionally activates five other genes (grh, sqz, nab, svp, Kr) that engage in postmitotic cross-regulatory interactions unique to each cell type. The restricted expression of Kr to Tv1 is explained by sqz, nab, and svp repression in Tv2-4, while svp restriction to Tv2-3 results from Kr repression in Tv1 and grh repression in Tv4. Spatial inputs act only on col, while cas acts on both col and the temporal/sub-temporal factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C107 synthesize the regulatory model from current and previous findings. The model is well-supported by the experimental data presented throughout the manuscript, including mutant analyses, expression patterns, and epistasis experiments. The distinction between spatial and temporal input targets (C107) is a key insight supported by the mutant analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Kr displays dual temporal roles, acting first early in the canonical temporal cascade and subsequently late in the sub-temporal cascade to specify Tv1 cells. This dual expression pattern was previously observed for Kr in NB3-3 and for svp (early suppression of hb, later suppression of col/dimm). The temporal gene grh also acts postmitotically to regulate FMRFa in Tv4. This temporal multi-tasking may be a common feature for temporal genes in Drosophila and higher organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C113 place the findings in broader context. The dual role of Kr (C108) is well-established by the current data. The comparison to previous observations (C109-C112) is appropriately cited. The speculation about temporal multi-tasking being common (C113) is reasonable given the examples but is explicitly presented as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "During Drosophila embryonic nervous system development, neuroblasts express a programmed cascade of five temporal transcription factors (Hb>Kr>Pdm>Cas>Grh) that govern cell identity at different time-points. However, these five temporal genes fall short of accounting for the many distinct cell types generated in large lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C11 establish the background context for the study. These are well-established facts in the field, supported by appropriate citations (C9-C11) and general knowledge (C1-C2). The limitation of five temporal genes (C3, C11) provides the rationale for investigating sub-temporal mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sub-temporal genes act in cascades downstream of temporal genes, do not feedback on temporal genes, and sub-divide larger temporal competence windows. Terminal selector genes activate repertoires of terminal cell fate genes and often act in combinatorial codes or in feedforward loops (FFLs). FFLs are common in E.coli and yeast but have also been identified in Drosophila and C.elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 provide essential background on sub-temporal genes and terminal selectors, all supported by appropriate citations to previous work. This establishes the conceptual framework for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "a2c97475-073e-49bd-be29-9377e8ea3655",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Apterous (Ap) neurons of the Drosophila VNC include dorsal Ap neurons (dAp) generated by NB4-3 and the Ap cluster (Tv1-Tv4) generated by NB5-6T in thoracic segments. Two Ap cluster cells are neuropeptidergic (Tv1/Nplp1, Tv4/FMRFa) while Tv2/3 are interneurons. All four express Ap and Eya. Two terminal selector FFLs operate in these cells, triggered by temporal (Cas, Grh) and spatial (Antp, exd, hth, lbe) inputs. Cas activates sub-temporal genes (sqz, nab, svp) that repress col in Tv2/3 and Tv4, preventing Tv1/Nplp1 specification in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C35 provide detailed background on the Ap neuron system, all supported by appropriate citations to previous studies. This establishes the specific biological context and prior knowledge about the NB5-6T lineage that motivates the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    },
+    {
+      "id": "ee175f40-d08f-45d6-b9cc-7a499bf111c5",
+      "content_id": "780e4002-f151-454b-99a1-4694e8c30916",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous studies found that svp mutants display ectopic Col, Dimm and Nplp1 expression in the Ap cluster, and postmitotic misexpression of svp from ap-Gal4 suppresses these markers. Svp is initially expressed by all four Ap cluster cells (St15-16) but is rapidly confined to Tv2 and Tv3 where it is maintained into AFT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 summarize prior findings about svp from previous studies (appropriately cited to Benito-Sipos et al., 2011). This provides essential context for understanding the current findings about Kr-svp interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:16:26.611353Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "949f63bf-1e8e-4eaa-a51a-7e91a466137a",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "e6a8698a-516d-416b-919f-249c4963c028",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "e7bc13c8-9570-4b1f-8d02-13bee09fb8b7",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "fed99f3b-9fb4-4a63-a064-b42a37b8c3db",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "0772d5c7-ae24-4a07-b81e-389861c5005e",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "6883b9af-b40a-4a20-8851-d67256f357eb",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "b600a1c5-cdea-4ebc-a8bd-cd17320248b5",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "ac2c9f4c-724f-4900-b3d5-7dfd78fdb6de",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "6f64734a-522f-4d22-9176-cd76ea069067",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "a1cef936-bca6-4a02-9ba3-a951c35cb625",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "93146c53-845f-43e1-ac35-bb72d2c3ddd5",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "83dee781-ab2d-49b2-b02e-e3223679df41",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "d3f81b9d-93d6-49a5-9ada-c2b0879c6c82",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "4bc2180c-a955-4c3f-9a71-0b76dd42f434",
+      "result_id": "308df9cd-719a-4592-85b6-2e028929352e"
+    },
+    {
+      "claim_id": "ddf09c8b-8698-4ac8-9df3-fe34012c9dee",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "72d21596-3bbd-4c10-80e8-ab1261584606",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "2ff625fe-d86c-4df0-ae13-f81cad518ee0",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "d76a5b11-778b-4d7f-a12e-f26db16bddad",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "38022842-4d86-4f3f-8981-fec1e0d03af3",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "e0a9fbd7-bf60-47de-a2a5-79a0ad06e8c9",
+      "result_id": "49ec0330-19bf-4f7c-816a-f5de0406af1f"
+    },
+    {
+      "claim_id": "434c2489-ccc4-4a82-be6f-10b90fe7088b",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "02fb2d67-5d9d-4640-992b-805d0d28c7d0",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "405b3e66-749e-4c6e-b702-63fa87718386",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "e88cfcb8-abe0-447a-8515-08c37ae7442e",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "5de2f59f-2708-47f3-815a-63288d4ac12d",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "5256d025-dfde-4ccc-b902-3d2bf08b0835",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "d53b8cc4-ecaa-4cb6-820b-4c278d985770",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "98b48c0f-26b1-4345-9fba-9a4264bd4e00",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "3ae71def-3efc-49dc-82dc-10330c2db1bf",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "76899907-42b7-4c7b-a7b3-4d4a0386a2df",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "c738cbf9-975d-4710-9a12-56d0493a84bc",
+      "result_id": "7aea90c0-682b-4d8c-9fe3-f9d133fcb9ea"
+    },
+    {
+      "claim_id": "67ac8abc-a792-4bf4-87bd-543e92ce13a9",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "a24728c1-5833-496a-9ef6-c4693db1371b",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "b353cfdb-6e98-4587-b884-fe2767f99007",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "6965a8b9-d5a6-47cb-8040-27ec71d4a885",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "73948033-528e-4c28-858a-53a94b7347f7",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "ec6e6153-9ddc-476d-8b1f-561bdb431b49",
+      "result_id": "f81d0cfb-ed5b-4b17-baf6-92641726b270"
+    },
+    {
+      "claim_id": "f21a1476-fb13-46c7-ade9-94722213edba",
+      "result_id": "8bc28ff0-6f8b-4080-9bdc-060b4d7e7196"
+    },
+    {
+      "claim_id": "f24207e1-5ea5-45f6-8c01-48b3a2fe2817",
+      "result_id": "8bc28ff0-6f8b-4080-9bdc-060b4d7e7196"
+    },
+    {
+      "claim_id": "40ca2562-0596-4f1c-9105-e8f4c01ab494",
+      "result_id": "8bc28ff0-6f8b-4080-9bdc-060b4d7e7196"
+    },
+    {
+      "claim_id": "8b1dc78e-b4e3-4197-ae2d-d10ea12ea752",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "af1f0ce0-089a-4bc7-a120-1051bb33d452",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "7917a5fb-2309-40d3-a657-d1540c2d2152",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "dccc0296-5130-4c12-81b2-c6ab76773c49",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "9a4f9890-df1b-44dc-bcaa-30cc2eac6637",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "3848ac12-6ef7-4f7d-ba63-b67b64e48673",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "e446ea10-00f1-4f3f-85c3-0791171d1288",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "e2484b33-53d0-4cc0-badf-636f36500017",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "2e821c50-8c46-49c3-82bd-22cdccdb53c5",
+      "result_id": "3e00102c-103f-4a88-b786-3a914f749bcb"
+    },
+    {
+      "claim_id": "2113823c-2222-4cb1-905a-41f0a16bb511",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "b8fdd176-c6ea-40d7-927d-0d774106208c",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "16554c02-24a1-4a3b-9105-445a34994ecd",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "9f9edae9-1785-4a68-98f5-7a958c6760f6",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "04f071bf-6d2a-4c77-91e0-1a1eb26fe213",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "de655367-4b6e-4c68-be58-70df711da289",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "ee3f75cd-09a4-4794-879a-0b7b11f21240",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "9a8d04e8-40ce-4f64-8ee1-3044707d6124",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "0110c0ce-c0f1-4d4c-a894-d0e5c3422c43",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "e96c1bed-3266-4d39-b1ab-c6cdd7eb71fc",
+      "result_id": "18dc62f1-8ccc-460c-81f7-cacdac7473f6"
+    },
+    {
+      "claim_id": "5072a08c-6019-464a-9f61-fe9d8cf74068",
+      "result_id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00"
+    },
+    {
+      "claim_id": "87d8d6c9-3faa-4a5d-963e-bd87dc3670e9",
+      "result_id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00"
+    },
+    {
+      "claim_id": "da55a21d-4c87-45c3-af05-1193b14d51d0",
+      "result_id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00"
+    },
+    {
+      "claim_id": "a8e989f0-ae75-4524-a475-4182a7c21502",
+      "result_id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00"
+    },
+    {
+      "claim_id": "4b7a8924-9966-4e3f-9934-b6df3c91384f",
+      "result_id": "6c36c7f7-d382-4883-84f5-70aa7e35ad00"
+    },
+    {
+      "claim_id": "d91205e9-7d1a-4f5d-915b-230809be8dfd",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "072c5d36-f3b3-4bd0-857c-b28ba016354b",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "2c7ec493-f672-4cbc-9804-52fe4b373fc3",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "8acc90d9-0d6c-4b6a-bc2f-b29fa0b3d1cb",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "4978df68-19d6-4cf3-bb35-a25c70b39bda",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "e7f9708e-5892-43c9-9abe-44f60d147827",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "cd1d15df-31dd-4e83-85fd-ad9c58400896",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "da6ba05e-a85b-47c0-a1e7-7a56a823758a",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "910544a3-7bc6-4a94-a33c-d8fab4bd7c55",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "ff28a85f-2e82-4175-893a-0361568f2223",
+      "result_id": "d8dbed01-12ef-4153-971e-a7ba278215c5"
+    },
+    {
+      "claim_id": "9a7864d9-c8d8-4889-9351-4ada0972acd7",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "556d8e05-a00d-4910-aeb5-6037610b4e2b",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "8eca68c0-a4d3-4b27-8c53-dfecaf44921d",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "bc68f56c-4cfe-481c-b27c-71169b204994",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "d338b790-c5e4-4027-afc8-cc0f6b921a8d",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "204251cd-c5f8-48ea-999d-495f5040ce98",
+      "result_id": "eabd9e7b-8fc9-4910-9bd3-14450b6290fa"
+    },
+    {
+      "claim_id": "b9448425-f820-41b2-8fdb-facdbeb6f09d",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "aaef2152-ed21-4615-90b9-92f4cf150824",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "4ce572c1-2a92-425f-a0a0-af1577e3d7d6",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "61955036-0644-4945-8d47-3e80947ab830",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "398f450e-568b-4040-b71e-88a8a631c4ad",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "51db5841-689d-41ce-ad54-feca2aec815c",
+      "result_id": "1967ea38-ed6e-467d-92ce-c12f6c1eef5a"
+    },
+    {
+      "claim_id": "5d59d970-d1c2-4ec9-97b6-df885e36e984",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "cdd65c35-5b00-46bd-ac0a-9460d8a9dbf3",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "c144e0d1-375c-480c-9d0f-cdea3b3c8370",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "c5d1fc87-874f-41d3-90e5-038a3372453b",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "24cbcd2e-afaf-4fae-8db6-059b5887abd8",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "8a8f482c-c137-43ec-b28d-da9679a15fbb",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "5dfe58f5-434d-48a8-b739-0e1e6a42313a",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "23f27e51-0f01-4444-bef9-f21eeacfa155",
+      "result_id": "9b7e0cfb-1e22-47b1-b7d7-2d189aee4976"
+    },
+    {
+      "claim_id": "96884576-3701-402b-8c58-ee2b258c8dbe",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "7f586d55-b00d-4c66-9a3d-a7e3431c9a76",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "82a8d43d-f74c-49af-a44a-4121d94a17b3",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "8162f228-27f0-43bf-8705-284e3f316380",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "88e05608-6487-4812-bf29-b0b84a23dcee",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "397bc97c-10ce-4eed-8f00-5bbde29ba150",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "a3178008-2105-4211-b07f-e66c728ae326",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "fb5d970b-808b-4ff3-8523-3d40d639144d",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "d969c345-6986-42e9-8400-6dd10057011e",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "454b111a-3cbc-4e20-ba54-df5e0da4201c",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "9c275953-e9da-401c-8ff1-4d46c86191e4",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "feb01211-1fe4-4372-a3f1-960c5e24bf32",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "103014de-9af0-4555-a52e-8434b52eba3c",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "9dc4b1a8-676a-4750-a076-f16b909b0440",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "9d63772e-55be-45d0-ab91-38026e31ece4",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "176078e5-987b-4469-9e2c-6fe4874f3e48",
+      "result_id": "a2c97475-073e-49bd-be29-9377e8ea3655"
+    },
+    {
+      "claim_id": "65cd6b70-e583-420c-8c73-682e44755733",
+      "result_id": "ee175f40-d08f-45d6-b9cc-7a499bf111c5"
+    },
+    {
+      "claim_id": "832747ad-8d32-4539-94f3-31d5613ba449",
+      "result_id": "ee175f40-d08f-45d6-b9cc-7a499bf111c5"
+    },
+    {
+      "claim_id": "39987ac3-08b0-4b03-b057-acf12ecce512",
+      "result_id": "ee175f40-d08f-45d6-b9cc-7a499bf111c5"
+    }
+  ],
+  "comparisons": []
+}

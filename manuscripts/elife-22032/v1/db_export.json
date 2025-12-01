@@ -1,0 +1,1521 @@
+{
+  "submission": {
+    "id": "9e7d35b3-50e0-4787-ac30-fac849178c3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:16:45.598540Z",
+    "updated_at": "2025-11-30T22:16:45.598540Z"
+  },
+  "content": [
+    {
+      "id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "submission_id": "9e7d35b3-50e0-4787-ac30-fac849178c3b",
+      "content_type": "manuscript",
+      "content_text": "# Binocular matching of thalamocortical and intracortical circuits in the mouse visual cortex\n\n## Authors\n\n- Yu Gu<sup>1</sup>\n- Jianhua Cang<sup>1</sup> ([ORCID: 0000-0002-0760-7468](https://orcid.org/0000-0002-0760-7468)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVisual cortical neurons are tuned to similar orientations through the two eyes. The binocularly-matched orientation preference is established during a critical period in early life, but the underlying circuit mechanisms remain unknown. Here, we optogenetically isolated the thalamocortical and intracortical excitatory inputs to individual layer 4 neurons and studied their binocular matching. In adult mice, the thalamic and cortical inputs representing the same eyes are similarly tuned and both are matched binocularly. In mice before the critical period, the thalamic input is already slightly matched, but the weak matching is not manifested due to random connections in the cortex, especially those serving the ipsilateral eye. Binocular matching is thus mediated by orientation-specific changes in intracortical connections and further improvement of thalamic matching. Together, our results suggest that the feed-forward thalamic input may play a key role in initiating and guiding the functional refinement of cortical circuits in critical period development.\n\n## Introduction\n\nTwo major transformations take place when visual information from the dorsal lateral geniculate nucleus (dLGN) of the thalamus reaches layer 4 of the primary visual cortex (V1). In one, V1 neurons become selective for bars and edges of certain orientations (Ferster and Miller, 2000; Hubel and Wiesel, 1962). In the other, eye-specific thalamic inputs converge onto individual V1 neurons, making them binocularly responsive (Cang and Feldheim, 2013). Combining the two transformations together, V1 neurons are now tuned to similar orientations through the two eyes (Bridge and Cumming, 2001; Nelson et al., 1977; Wang et al., 2010), a property presumably required for normal binocular perception. Importantly, binocularly-matched orientation tuning is not a necessary consequence of simply combining the two eyes\u2019 inputs. Instead, its establishment requires an active and experience-dependent process that takes place during a critical period in early life (Wang et al., 2013, 2010). However, the circuit and synaptic mechanisms underlying the matching process are still unknown.\n\nThe mechanisms underlying monocular orientation selectivity in V1 have been extensively studied, providing a foundation for understanding its binocular matching. According to the \u2018feed-forward\u2019 model proposed by Hubel and Wiesel (Hubel and Wiesel, 1962), cortical orientation selectivity arises from the convergence of non-selective dLGN relay cells whose receptive fields are spatially aligned to generate larger peak excitation to the postsynaptic cell at its preferred orientation than at other orientations (Priebe and Ferster, 2012). This model is supported by a number of studies, especially in cats, including cross-correlation analysis of functional connectivity between dLGN and V1 neurons (Alonso et al., 2001; Reid and Alonso, 1995; Tanaka, 1983) and studies of visually\u00a0evoked synaptic inputs in layer 4 cells during cortical inactivation (Chung and Ferster, 1998; Ferster et al., 1996). The feed-forward model appears to apply to mice as well, even though more orientation-selective responses are seen in the mouse dLGN than in cats (Piscopo et al., 2013; Scholl et al., 2013; Zhao et al., 2013a). Two recent studies used optogenetic approaches to silence the visual cortex in order to isolate the thalamic excitation that could be recorded by in vivo whole-cell recording (Li et al., 2013; Lien and Scanziani, 2013). The thalamic input to layer 4 neurons was found to be tuned in a manner consistent with the feed-forward model, but not from orientation selective dLGN neurons (Lien and Scanziani, 2013). The tuned thalamic input is further amplified by similarly\u00a0tuned intracortical input, thereby preserving its orientation tuning (Li et al., 2013; Lien and Scanziani, 2013).\n\nConsequently, two different scenarios of thalamocortical transformation could underlie the binocularly\u00a0matched orientation tuning in layer 4 neurons. In one, the above feed-forward model could hold true for both contralateral and ipsilateral pathways, where the thalamic and cortical inputs representing the same eyes are similarly tuned and both are binocularly matched. To achieve this scenario, experience-dependent changes for both thalamocortical and intracortical circuits must take place during the critical period to ensure their binocular matching. Alternatively, critical period plasticity may only drive synaptic changes of the intracortical circuits. This would mean that the two eye\u2019s thalamic inputs to layer 4 neurons may still be mismatched in their orientation tuning in adult mice, and the mismatch would be \u2018corrected\u2019 by cortical circuits. In other words, the feed-forward model would not be true for one or both eyes\u2019 thalamocortical transformation for binocular V1 neurons.\n\nTo test which of the two scenarios is true, we apply whole-cell recording and optogenetic approaches to binocular neurons in mouse V1. We find that both thalamic and cortical inputs are indeed binocularly matched in adult mice, thereby supporting the aforementioned first scenario. Surprisingly, we find that the thalamic input is already slightly matched at the beginning of the critical period, but this weak matching is not manifested due to mismatched cortical inputs. Binocular matching in the critical period is thus mediated by orientation-specific changes in these cortical connections and further improvement of thalamic matching.\n\n## Results\n\nWe have previously discovered using extracellular recording that individual neurons in mouse V1 are initially tuned to different orientations through the two eyes until about postnatal day 21 (P21), and the difference declines progressively and reaches the adult level by P30 (Wang et al., 2013). To reveal the circuit mechanisms of this binocular orientation matching process, we have now performed in vivo whole-cell recording to examine the subthreshold membrane potential (Vm) responses and excitatory postsynaptic currents (EPSCs) underlying orientation tuning through the two eyes. We focused our experiments on the excitatory neurons in layer 4 because the synaptic mechanisms of their orientation tuning are better understood. We recorded at two developmental stages, P15-21 and P60-90, i.e., before and after the matching process, respectively.\n\n### Binocular matching of the subthreshold membrane potential responses in layer 4 neurons\n\nWe first recorded visually\u00a0evoked Vm responses under current clamp (Figure 1A\u2013C). In response to drifting gratings of different directions, layer 4 neurons in the binocular zone of visual cortex showed robust responses and orientation selectivity (Figure 1D). We then determined the orientation tuning of each cell\u2019s synaptic inputs, separately for the contralateral and ipsilateral eyes, by calculating the peak amplitude of cycle-averaged Vm response (Figure 1E, see Materials\u00a0and\u00a0methods for details of analysis). As expected, the subthreshold Vm were tuned to similar orientations through the two eyes in adult mice (Figure 1E\u2013F). The inter-ocular difference of the preferred orientation, which we referred to as \u2018\u0394O\u2019, was smaller than 30\u00b0 in the vast majority of the recorded cells (11/14 cells, Figure 1F), with a mean of 20.8\u00a0\u00b1 3.3\u00b0, similar to that for the spiking responses in mice after the critical period (Wang et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic of the experimental setup. (B) Histology of a recorded neuron. Red is the neuron stained with Streptavidin-Alex Fluor 547; green is ChR2 conjugated with YFP. Left, low magnification showing the neuron\u2019s depth. Cortical surface is to the top right of the image. Right, high magnification showing the neuron\u2019s morphology. (C) An example of membrane potential (Vm) trace in response to drifting gratings. The gray shadow indicates the period of visual stimulation (same below in all figures). The dashed line is \u2212 60 mV. Action potential traces are truncated at \u2212 10 mV. (D) Subthreshold Vm traces in response to the preferred (left) and orthogonal (right) directions. Top, stimulating contralateral eye only (\u2018contra\u2019, same below); bottom, stimulating ipsilateral eye only (\u2018ipsi\u2019). (E) Polar plots of Vm tuning curves. (F\u2013G) Distribution of the inter-ocular difference of Vm\u2019s preferred orientations (\u0394O) in adult (F) and young (G) mice. (H) Cumulative distribution of \u0394O between adult (black, n\u00a0= 14) and young (gray, n\u00a0= 25) mice (p = 0.003, K-S test).\n\nOn the other hand, in young mice prior to the onset of the critical period (P15-21), the orientation tuning of Vm responses were completely mismatched binocularly. The \u0394O distribution at this age group (Figure 1G, mean of 50.5\u00a0\u00b1 3.8\u00b0, n\u00a0= 25) was significantly skewed toward larger values compared to adults (p = 0.003; K-S test, Figure 1H), and it appeared to be largely random, which would have been a uniform distribution between 0 and 90 with a mean of 45\u00b0 (p = 0.11 compared to random distribution; K-S test, Figure 1H).\n\n### Optogenetic isolation of thalamic inputs to layer\u00a04 neurons in binocular V1\n\nLayer\u00a04 neurons receive several sources of synaptic inputs, including intracortical excitation from neighboring neurons and thalamocortical excitation from\u00a0dLGN. As previously revealed in the monocular visual cortex, the orientation tuning of layer\u00a04 cells is determined by the thalamic input, which is then linearly amplified by intracortical circuits (Li et al., 2013; Lien and Scanziani, 2013). To determine the thalamic contribution to binocular matching, we isolated layer\u00a04 cells\u2019 thalamic input by voltage clamp recording coupled with optogenetic silencing. These experiments were performed in transgenic mice that expressed Channelrhodopsin-2 (ChR2) in neurons that express the GABA synthesizing enzyme glutamic acid decarboxylase GAD2. Consequently, by illuminating the exposed visual cortex with blue LED light, we were able to activate the inhibitory neurons and consequently silence the excitatory neurons, thereby allowing us to isolate thalamic excitation (Li et al., 2013; Lien and Scanziani, 2013).\n\nThree control experiments were conducted to confirm the validity of this method. First, LED stimulation was able to completely silence the visually\u00a0evoked responses of neurons recorded as deep as 700 \u00b5m below cortical surface, more than 200 \u00b5m deeper than layer 4 (Figure 2A\u2013B and Figure 2\u2014figure supplement 1A\u2013C). Second, in addition to the inputs from dLGN and local excitatory neurons, layer\u00a04 neurons could potentially receive excitatory inputs from the other hemisphere via callosal projections, which would confound the interpretation of our results. We thus recorded layer\u00a04 spiking activity while silencing the other hemisphere with LED photoactivation. Visually\u00a0evoked responses were in fact unaffected by silencing the other hemisphere (Figure 2\u2014figure supplement 1D\u2013F), consistent with a previous report that callosal inputs are absent in layer 4 (Mizuno et al., 2007). Finally, to determine whether optogenetic activation of the inhibitory interneurons could influence thalamocortical transmission by potentially activating GABAB receptors on their axon terminals, we recorded visually\u00a0evoked local field potentials (VEPs) in the visual cortex and examined the effect of administrating GABAB receptor antagonist CGP54624. In one set of experiments, we first applied the GABAB receptor agonist Baclofen to reduce the VEP amplitude, which was then reversed by the subsequent administration of CGP (Figure 2\u2014figure supplement 1G\u2013H), indicating the effectiveness of the antagonist (Lien and Scanziani, 2013). In another set of experiments, we found that optogenetic silencing of the visual cortex reduced the VEP by\u00a0~ 60 %, and importantly, it was not affected by the administration of CGP (Figure 2\u2014figure supplement 1I\u2013J). This result thus indicates that thalamocortical transmission was not affected by optogenetic activation of the inhibitory neurons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig2-v1.jpg)\n\n**Figure 2.:** (A) A schematic of optogenetic photostimulation and recording in V1. (B) Summary plot of average spike rate of deep-layer neurons before, during and after LED activation. The spike rate was calculated by averaging responses across all 12 directions of gratings, and then averaged for all the neurons (p = 0.0007, paired t-test between No LED and LED; and p = 0.0003, paired t-test between LED and recovery, n\u00a0= 8). (C) Average EPSC traces in response to the preferred (left) and orthogonal (right) orientations of an example neuron. Top, stimulating contralateral eye; bottom, ipsilateral eye. Shadows indicate visual stimulation, blue bars indicate LED on. Red traces are responses without LED (\u2018total EPSCs\u2019) and blue traces are responses with LED (\u2018thalamic EPSCs\u2019). (D) EPSC tuning curves for contralateral (top) and ipsilateral eye. Left, total EPSCs; right, thalamic EPSCs. (E\u2013F) Correlation of orientation preference (\u2018pref O\u2019, same below in similar figures) between thalamic and total EPSCs in adult mice. The dotted lines bound the region in which the data points can lie, i.e., 90\u00b0 largest possible difference (same below in similar plots). (E) contralateral, (F) ipsilateral. (G) Cumulative distribution of orientation difference between thalamic and total EPSCs. No significant difference between contralateral (black) and ipsilateral (gray) responses (p = 0.89, K-S test, n\u00a0= 15).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Extracellular recording showing complete optogenetic silencing of the visual cortex. Shown are a deep-layer neuron\u2019s peri-stimulus timing histogram (PSTH) of spiking response to grating at the preferred direction in the absence (A) or presence (B) of LED illumination. Blue bar indicates LED illumination, and the gray shadow indicates period of visual stimulation. (C) Summary plot of spike rate before, during and after LED activation (same data as Figure 2B ). Note that the spike rate was calculated by averaging across all 12 directions of the drifting gratings, many of which did not evoke responses due to the neurons\u2019 selectivity. LED activation was able to silence all the recorded neurons at all directions (p = 0.0007, paired t-test between No LED and LED; and p = 0.0003, paired t-test between LED and recovery, n\u00a0= 8). Extracellular recording showing layer\u00a04 neurons do not receive callosal inputs. Shown are a layer\u00a04 neuron\u2019s PSTHs to grating at the preferred direction in the absence (D) or presence (E) of LED illumination of the visual cortex in other hemisphere. (F) Summary plot of spike rate before and during LED activation. No change of visually\u00a0evoked spiking response was seen (p = 0.37, paired t-test, n\u00a0= 9). (G\u2013J) Field potential recording showing optogenetic silencing of the visual cortex does not affect thalamocortical transmission by activating GABAB receptors. (G) Example traces of visually evoked potential (VEP) in control (red), with GABAB receptor agonist Baclofen (10 \u03bcM, Tocris, solid blue), and with Baclofen + CGP54626, a GABAB receptor antagonist (10 \u03bcM, Tocris, dashed blue). (H) Summary plots of VEP amplitudes. The decrease of VEP amplitude by Baclofen was reversed by CGP (p = 0.002, paired t-test, n\u00a0= 4). (I) Example traces of VEP in control (red), with LED illumination (solid blue), and with LED and 15 \u2013 45 min after (dashed blue) CGP54626 application. (J) Summary plots of VEP amplitudes. No difference is seen between LED and LED+CGP conditions (p = 0.73, paired t-test, n\u00a0= 6).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Scale factor for thalamo-cortical transformation from contralateral (A) and ipsilateral (B) inputs in adult mice. (C) Correlation of contralateral and ipsilateral scale factor in adult mice. (D\u2013F) Same plots as (A\u2013C), but in young mice between P15-21. Note that the scale factor was slightly higher (0.43\u00a0\u00b1 0.05 for contralateral pathway and 0.52\u00a0\u00b1 0.08 for ipsilateral, compared to 0.32\u00a0\u00b1 0.05 and 0.32\u00a0\u00b1 0.07, respectively), and less matched binocularly in the young mice, reflecting the immaturity of thalamocortical transformation at this age.\n\nAfter confirming the completeness and validity of the optogenetic silencing approach, we performed in vivo whole-cell voltage clamp recording of layer\u00a04 neurons in binocular V1 while presenting drifting gratings of different orientations. The recordings were done at the reversal potential of inhibition, which was determined by adjusting the holding potential to minimize the amplitude of the inhibitory postsynaptic currents evoked by LED photoactivation in the absence of visual stimulation (Lien and Scanziani, 2013). Consequently, the recorded currents were the total EPSCs (in the absence of LED photostimulation) or the thalamic EPSCs (in the presence of LED) received by individual layer\u00a04 neurons.\n\nAs expected, silencing the visual cortex reduced the visually\u00a0evoked EPSCs (e.g. Figure 2C and D). The degree of reduction, as measured by the ratio of mean thalamic EPSCs over mean total EPSCs during the visual stimulation across all directions (the \u2018scale factor\u2019), was similar between the responses evoked through contralateral (0.32\u00a0\u00b1 0.05) and ipsilateral eyes (0.32\u00a0\u00b1 0.07; Figure 2\u2014figure supplement 2A\u2013C). Importantly, the thalamic EPSCs and total EPSCs were tuned to similar orientations in adult mice ( Figure 2E\u2013F), which is reflected by the small values of orientation preference difference between thalamic and total EPSCs. Furthermore, this difference was similar between contralateral (15.2\u00a0\u00b1 3.4\u00b0) or ipsilateral eye (17.7\u00a0\u00b1 4.5\u00b0) responses (Figure 2G, p = 0.89, K-S test). The correlation between thalamic and total EPSCs was consistent with the previous results obtained in the monocular visual cortex, and we found here that it held true for binocular neurons through both eyes in adult mice.\n\n### Binocular matching of thalamic input precedes that of intracortical input\n\nWe next analyzed the binocular relationship of both thalamic and total EPSCs in adult mice. As expected from the matched spiking and Vm responses, the total EPSCs of layer\u00a04 cells were tuned to similar orientations through the two eyes (Figure 3A1), with its inter-ocular difference (i.e. \u0394O) of 20.6\u00a0\u00b1 4.3\u00b0 (n\u00a0= 15, Figure 3A2). The thalamic EPSCs were also tuned to similar orientations through the two eyes (Figure 3B1\u2013B2, \u0394O\u00a0= 19.6\u00a0\u00b1 5.5\u00b0, n\u00a0= 15), consistent with the fact that thalamic excitation determines cortical tuning for both contralateral and ipsilateral responses. Indeed, the \u0394O of thalamic EPSCs were significantly correlated with that of total EPSCs for individual neurons ( Figure 3E, r\u00a0= 0.57, p = 0.025). In other words, the thalamic inputs to layer\u00a04 neurons are tuned to similar orientations through the two eyes in adult mice, leading to binocularly-matched orientation preference in these cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013B) Binocular matching of total (A1 and A2, red) and thalamic (B1 and B2, blue) EPSCs in adult mice. (A1) and (B1) show correlations of the preferred orientation between the two eyes. (A2) and (B2) are the distributions of the inter-ocular difference (\u0394O). (C\u2013D) Same plots as (A\u2013B), but in young mice between P15-P21. (E\u2013F) Correlation of \u2018thalamic \u0394O\u2019 and \u2018total \u0394O\u2019 of individual cells in adult (E) and young mice (F). Cross indicates means of the data for the two axes. (G) Mean \u0394O of the total (red) and thalamic (blue) EPSCs from young and adult mice. Significant differences are seen between the two age groups and between the total and thalamic \u0394O in the young mice. p = 0.038, paired t-test between total and thalamic \u0394O in young mice, n\u00a0= 26; p = 0.83, paired t-test between total and thalamic \u0394O in adult mice, n\u00a0= 15; and p = 0.023, K-S test between young and adult mice for total \u0394O; p = 0.037, K-S test between young and adult mice for thalamic \u0394O. Error bars are S.E.M.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Correlation of orientation preference between thalamic and total EPSCs in young mice. (A) for contralateral and (B) for ipsilateral eye response. (C) Mean orientation difference between thalamic and total EPSCs from each eye in young and adult mice. The mean \u2018thalamic-total difference\u2019 in young mice is 30.8\u00a0\u00b1 5.1\u00b0 for contralateral pathway and 33.4\u00a0\u00b1 5.0\u00b0 for ipsilateral; compared to 15.2\u00a0\u00b1 3.4\u00b0 and 17.7\u00a0\u00b1 4.5\u00b0 in adults. Significant differences are seen between young (black, n\u00a0= 26) and adult (gray, n\u00a0= 15) mice for both eyes. p = 0.04, K-S test between young and adult for contralateral eye; p = 0.043, K-S test between young and adult for ipsilateral eye. Error bars are S.E.M.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Mean EPSC amplitude for total and thalamic input through contralateral (black) or ipsilateral eye (grey) in adult mice. (B) Same plot as (A), in young mice between P15\u00a0and\u00a0P21. (C) Contralateral/ipsilateral EPSC ratio for total (red) and thalamic (blue) inputs in adult and young mice. Note that all values were close to 2.0, indicating no gross changes in the ocular dominance of total and thalamic EPSCs during development.\n\nThe same whole-cell recording and optogenetic silencing were then performed in mice between P15\u00a0and\u00a0P21, before the binocular matching of spiking and Vm responses. First, we found that the ratio of thalamic over total EPSCs, i.e., the scale factor, was slightly higher and less matched binocularly in the young mice (0.43\u00a0\u00b1 0.05 for the contralateral pathway and 0.52\u00a0\u00b1 0.08 for ipsilateral, Figure 2\u2014figure supplement 2D\u2013F), suggesting the immaturity of thalamocortical transformation at this age. Second, we analyzed the correlation between the orientation preference of total EPSCs and that of the thalamic EPSCs, separately for contralateral and ipsilateral eyes (Figure 3\u2014figure supplement 1A\u2013B). For both eyes, many more data points deviated from the unity line (i.e., identical tuning between the two) in young mice than in adults (compared with Figure 2E and F). To quantify this, we calculated the difference between thalamic and total EPSCs tuning for individual cells and found that it was significantly larger in the young mice than in the adult, and for both eyes ( Figure 3\u2014figure supplement 1C , p = 0.040 for contralateral eye and p = 0.043 for ipsilateral eye, K-S test).\n\nNext, we examined the binocular relationship of total and thalamic EPSCs in the young mice. The total EPSCs were not yet matched in their orientation preference at this age (Figure 3C1), with their inter-ocular difference (\u0394O) quite randomly distributed within the entire range between 0 and 90 (Figure 3C2, \u0394O\u00a0= 41.4\u00a0\u00b1 5.5\u00b0, n\u00a0= 26, p = 0.023 compared to adult, p = 0.45 compared to random, K-S test). For the thalamic EPSCs, their orientation tuning was not as well matched as in adult mice either (Figure 3D1\u2013D2, \u0394O\u00a0= 30.9\u00a0\u00b1 4.0\u00b0, n\u00a0= 26, p = 0.037 compared to adult, K-S test). However, their \u0394O distribution was skewed toward 0 (Figure 3D2), indicating a certain degree of thalamic matching already present in these mice (p = 0.003 compared to random, K-S test). To better illustrate this, we plotted the \u0394O of total EPSCs against that of thalamic \u0394O for individual cells (Figure 3F, r\u00a0= 0.04, p = 0.84, i.e., no correlation between them). There were more cells above the unity line, i.e., smaller \u0394O values for thalamic EPSCs, indicating that the thalamic EPSCs were better matched than total EPSCs at this age (p = 0.038, paired t-test, Figure 3G). Finally, when analyzing the relative strength of the two eyes\u2019 inputs (i.e. ocular dominance), we found that the contralateral EPSCs were about twice stronger than the ipsilateral ones for both thalamic and total inputs, and this ratio remained consistent at both ages (Figure 3\u2014figure supplement 2). In other words, the ocular dominance of thalamic and total EPSCs does not undergo any gross change during development when they become binocularly matched.\n\nIn adult mice, intracortical excitation to layer\u00a04 cells is tuned to the same orientation as the thalamic excitation, thereby maintaining the orientation tuning of the thalamic input (Li et al., 2013; Lien and Scanziani, 2013). The lack of adult-level \u2018thalamic-total\u2019 correlation in the young mice suggests that the intracortical circuits are not yet organized in the same manner. To examine the tuning of intracortical excitatory input across development, we did a point-by-point subtraction between thalamic and total EPSCs (Figure 4\u2014figure supplement 1A). This was done for all 12 stimulus directions to determine the tuning curves and orientation preference of intracortical EPSCs ( Figure 4\u2014figure supplement 1B). As expected, the intracortical EPSCs were tuned to similar orientations as the thalamic EPSCs in adults, for both contralateral and ipsilateral eyes (Figure 4A\u2013C, \u2018thalamic-cortical difference\u2019: 17.0\u00a0\u00b1 4.4\u00b0 for contralateral pathway and 22.4\u00a0\u00b1 6.0\u00b0 for ipsilateral), thus binocularly matched (Figure 4\u2014figure supplement 1C). In contrast, in the young mice, the correlation between thalamic and cortical orientation preferences was weak for both eyes (Figure 4D\u2013E, 35.8\u00a0\u00b1 5.5\u00b0 for contralateral and 49.0\u00a0\u00b1 5.3\u00b0 for ipsilateral). Interestingly, for individual cells, the difference between thalamic and intracortical tuning was greater for the ipsilateral eye than for the contralateral eye (Figure 4F\u2013G, p = 0.041, paired t-test). As a result, the intracortical input was completely mismatched binocularly in the young mice (Figure 4\u2014figure supplement 1D), despite the weak matching of thalamic input. The mismatched intracortical input thus leads to a mismatch in its total excitation and the resulting Vm and spike responses in mice before the critical period.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Correlation of orientation preference between thalamic and cortical EPSCs in adult mice. (A) for contralateral and (B) for ipsilateral pathway. (C) Scatter plots of thalamic-cortical difference in orientation preference for the two eyes in adult mice. The cross indicates the mean of the distribution along the two axes. (D\u2013F) Same plots as (A\u2013C), but in young mice between P15\u00a0and\u00a0P21. (G) Mean thalamic-cortical difference in orientation preference from each eye in young and adult mice. Significant differences are seen between the two age groups and between the contralateral (black) and ipsilateral (gray) eyes in the young mice. p = 0.041, paired t-test between the eyes in young mice, n\u00a0= 26; p = 0.29, paired t-test between the eyes in adult mice, n\u00a0= 15; and p = 0.043, K-S test between young and adult for contralateral eye; p = 0.016, K-S test between young and adult for ipsilateral eye. Error bars are S.E.M. (H) A summary schematic of thalamic and cortical binocular matching and thalamo-cortical transformation over development. In mice before the critical period (left), the orientation tuning of the two eyes\u2019 thalamic inputs to layer\u00a04 neurons are already slightly matched (represented by the red and blue oriented bars). The slight matching is not manifested in the cell\u2019s tuning due to mismatched intracortical inputs. Further improvement of thalamic matching and rewiring of the intracortical circuits to follow the thalamic tuning give rise to binocularly\u00a0matched tuning in adult mice (right).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22032/elife-22032-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Example of cortical EPSC traces and tuning curves. (A) Example traces of cycle-averaged thalamic (blue) and total (red) EPSCs and their point-by-point subtraction (cortical). (B) This cell\u2019s tuning curves for thalamic (blue), total (red) and cortical (black) EPSCs. (C\u2013D) Binocular matching of cortical EPSCs in adult (C) and young (D) mice. (C1) and (D1) Correlations of the preferred orientation between the two eyes. (C2) and (D2) The distributions of intracortical \u0394O, with mean of 17.2\u00a0\u00b1 3.2\u00b0 in adult (n\u00a0= 15), and 44.9\u00a0\u00b1 5.1\u00b0 in young (n\u00a0= 26) mice (p = 0.0005, K-S test).\n\n## Discussion\n\nIn this study, we combined optogenetic silencing and whole-cell recording to isolate thalamic and cortical excitatory inputs to individual layer\u00a04 neurons and examined their binocular matching during development. Our results reveal two developmental profiles of these circuits. First, the binocular matching of thalamic inputs initiates before that of intracortical circuits. Second, the intracortical circuits serving the contralateral eye mature before those for the ipsilateral eye. In mice before the critical period, the slight binocular matching of thalamic input is not manifested due to random connections in the cortex, especially those serving the ipsilateral eye (Figure 4H). In adult mice, the thalamic and cortical inputs serving the same eyes are tuned to similar orientations and are both matched binocularly (Figure 4H), thereby giving rise to normal binocularity. Binocular matching is therefore mediated by further improvement of thalamic matching and orientation-specific changes of cortical circuits during the critical period.\n\n### Early binocular matching of thalamic inputs\n\nOur results demonstrate that the thalamic inputs to layer\u00a04 neurons initiate their binocular matching before intracortical circuits. This finding adds to the growing literature that the visual system develops in a hierarchical manner where neural circuits in earlier stages of visual pathway mature sooner than those in later stages (Daw, 1997; Lewis and Maurer, 2005). For example, we previously revealed a sequence of binocular matching during the critical period (Wang et al., 2013): simple cells match before complex cells, with the two classes of cells representing successive stages of visual processing in V1. Here, our new data indicate that this sequence can be extended to the \u2018pre-critical period\u2019 for the matching of thalamocortical projections, and very importantly, at the level of individual cells. Similarly, a developmental maturation sequence of synaptic plasticity has been shown by in vitro studies following the visual pathway, from LGN to layer\u00a04 and then from layer 4 to layer 2/3 (Jiang et al., 2007; Kirkwood and Bear, 1994), which may underlie some aspects of the functional maturation we observed in vivo.\n\nWhat mechanisms could give rise to the early binocular matching of the thalamic inputs? It is possible that the visual experience between eye opening (P12-14) and our recording time (P15-21) may contribute to this early thalamic binocular correspondence. Alternatively, previous studies have shown that many aspects of visual system organization and function can be established by experience-independent mechanisms, such as ocular dominance columns in cat visual cortex (Crowley and Katz, 2000), monocular orientation selectivity (Ko et al., 2014; Wang et al., 2010) and receptive field structures (Sarnaik et al., 2014) in mouse V1. The experience-independent mechanisms could include molecular guidance cues and activity-dependent processes driven by patterned spontaneous activity such as retinal waves (Cang and Feldheim, 2013). Structured spontaneous activities have been observed in the dLGN and visual cortex before vision onset (Ackman et al., 2012; Chiu and Weliky, 2001; Hanganu et al., 2006; Siegel et al., 2012; Weliky and Katz, 1999). A correlation-based computational study supports the notion that patterned activity could give rise to monocular receptive fields that are consistent with the feed-forward model (Miller, 1994). However, an activity-driven binocular matching of thalamic inputs requires some correlation between the two eye-specific pathways. Amazingly, certain degrees of binocular correlation may indeed exist in mice even at the level of retinal waves (Ackman et al., 2012), possibly via direct retino-retinal connections ( M\u00fcller and Holl\u00e4nder, 1988 ), retinopetal modulations (Gastinger et al., 2006), or light-driven activity in the intrinsic photosensitive retinal ganglion cells through the closed eye lids (Delwig et al., 2012; Renna et al., 2011). Future studies are needed to investigate whether such spontaneous activity is involved in the early binocular matching of thalamic inputs to cortical neurons.\n\n### Earlier maturation of contralateral intracortical circuits\n\nIn adult mice, the intracortical excitation that individual layer\u00a04 neurons receive prefers the same orientation as the thalamic input ([Li et al., 2013; Lien and Scanziani, 2013], and Figure 2), thereby preserving its orientation tuning. In other words, layer\u00a04 excitatory neurons must be preferentially connected with cortical neurons that prefer similar orientations. Here, we found that the correlation between thalamic and cortical tuning, and presumably the underlying neural circuits, have not been established in mice before the critical period, indicating that the classic \u2018Hubel and Wiesel\u2019 feed-forward model do not exist in animals right after eye opening. These results are consistent with the connectivity patterns of mouse layer 2/3 neurons and their developmental profile. The preferential connectivity among similarly\u00a0tuned layer 2/3 neurons seen in adult mice (Ko et al., 2011; Lee et al., 2016) does not exist right after eye opening (Ko et al., 2013), and it requires visual experience to establish (Ko et al., 2014). Our results thus indicate that the experience-dependent rewiring of intracortical circuits, together with the further improved matching of thalamic inputs, underlie binocular matching of orientation tuning in layer\u00a04 neurons.\n\nInterestingly, we found that the correlation between thalamic and cortical tuning is slightly better for the contralateral pathway in the young mice, indicating that the contralateral pathway starts to mature earlier than the ipsilateral one. A similar developmental sequence of the two pathways has been revealed in both cat and mouse visual cortices. In mouse ocular dominance plasticity, while both contralateral and ipsilateral circuits respond to imbalanced visual inputs in juveniles (Frenkel and Bear, 2004), only the ipsilateral circuits remain responsive in young adults (Sawtell et al., 2003), suggesting that the ipsilateral pathway reaches maturity later. In cats, visual cortical maps at vision onset are dominated by the contralateral eye and visual experience is needed for the other eye\u2019s response to strengthen (Crair et al., 1998). Given the strong contralateral dominance, it is possible that the contralateral pathway may be used as a \u2018guide\u2019 for ipsilateral development. Consistent with this idea, it has been shown that the refinement of the ipsilateral retinotopic map in the mouse visual cortex can be delayed or accelerated by manipulating the contralateral input (Smith and Trachtenberg, 2007). It is conceivable that a similar interaction between the two pathways exists in binocular matching, where the dominant input may guide the weaker one in rewiring the thalamocortical and intracortical circuits. Future experiments where the matching process can be followed chronically will be needed to test this hypothesis.\n\nFinally, it is important to note that, even though it has been widely used in neuroscience research, voltage clamp is normally incomplete in whole-cell recordings due to the so-called \u2018space clamp\u2019 issue (Williams and Mitchell, 2008). This problem is especially severe for dendritic neurons and for in vivo recording, where the series resistance is often higher than in slices. As a result, our measurement likely underestimated the amplitude of EPSCs that layer\u00a04 neurons receive from thalamic and intracortical inputs. Furthermore, the estimation of intracortical EPSCs by linear subtraction could be confounded by potential non-linear interactions between thalamic and cortical inputs. In other words, the exact EPSC amplitudes and their scale factor and ocular dominance ratio may not be accurately reflected in our study. On the other hand, the calculation of preferred directions should not be much affected by this issue, because the EPSC underestimation was likely similar across different directions. Therefore, the main discoveries in our study, i.e., the two developmental profiles which are entirely based on the preferred directions, should hold true despite the limitations of voltage clamp recordings.\n\nIn conclusion, we have discovered the thalamocortical and intracortical circuits underlying binocular matching and revealed their developmental profiles. Our results suggest that the feed-forward thalamocortical pathway may play an important role in the development of visual circuits, possibly through initiating and guiding the functional rewiring and refinement of cortical circuits in visual cortex. These findings provide an exciting foundation for future mechanistic studies of critical period plasticity and binocular matching.\n\n## Materials and methods\n\n### Mice and preparations\n\nWild type C57BL/6 and \u2018GAD2-ChR2\u2019 double heterozygous mice of different age groups (P15-21, P60-90) and both sexes were used in the experiments. The double heterozygous were obtained by crossing Gad2tm2(cre)Zjh and Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze homozygous mice originally from the Jackson Laboratory. Animals were raised on a 12 hr light/dark cycle, with food and water available ad libitum. All animals were used in accordance with protocols approved by Northwestern University Institutional Animal Care and Use Committee (IS00003509).\n\nFor recordings, mice were sedated with chlorprothixene (5 mg/kg in water, i.m.) and then anesthetized with urethane (1\u20131.25 g/kg in 10 % saline solution, i.p.). Atropine (0.3 mg/kg, in 10 % saline) and dexamethasone (2 mg/kg, in 10 % saline) were administrated subcutaneously, as described before (Wang et al., 2013, 2010). The scalp was shaved and skin removed to expose the skull. A metal head plate was implanted on top of the skull with Metabond (Parkell, Edgewood, NY), and the plate was then mounted to a stand on the vibration isolation table. A thin layer of silicone oil was applied on both eyes to prevent from drying. A small craniotomy (~1.5 mm2) was made on the left hemisphere to expose binocular V1. The center of the craniotomy was 3.0 mm lateral and 0.5 mm anterior from the Lambda point. Throughout recordings, toe-pinch reflex was monitored and additional urethane (0.2\u20130.3 g/kg) was supplemented as needed. The animal\u2019s temperature was monitored with a rectal thermoprobe and maintained at 37\u00b0C through a feedback heater (Frederick Haer Company, Bowdoinham, ME).\n\n### Whole-cell recording\n\nBlind whole-cell patch clamp was performed to record cortical cells intracellularly as described previously (Zhao et al., 2013b). Glass pipettes had tip openings of 1.5\u20132 \u03bcm (4\u20138 M\u03a9). The internal solution contained 135 mM K-gluconate, 4 mM KCl, 0.5 mM EGTA, 10 mM HEPES, 10 mM Na-phosphocreatine, 4 mM Mg-ATP and 0.4 mM GTP. The pH was adjusted to 7.2 with KOH, and the osmolarity was adjusted to 290\u2013300 mOsm/L. After inserting the pipette perpendicularly to the horizontal plane of the mouse head into the cortex, 2.0 % agarose in artificial cerebrospinal fluid (ACSF, containing 140 mM NaCl, 2.5 mM KCl, 11 mM Glucose, 20 mM HEPES, 2.5 mM CaCl2, 3 mM MgSO4, 1 mM NaH2PO4) was applied on top of the cortex to reduce pulsation. Signals were amplified using MultiClamp 700B (Molecular Devices, Sunnyvale, CA), sampled at 10 kHz, and then acquired with System three workstation (Tucker Davis Technologies, Alachua,\u00a0FL). Pipette capacitance and the open tip resistance were compensated initially. After the whole-cell configuration was achieved, the membrane potential was recorded under current-clamp mode with no current injected. For recording EPSCs, the cell was voltage clamped at ~ \u221263 mV (average reverse potential for inhibition, adjusted individually by minimize the amplitude of the inhibitory postsynaptic current evoked by photostimulation of GAD2+ neurons, consistent with (Li et al., 2013; Lien and Scanziani, 2013). Only cells with stable responses (< 15 % change in baseline) and low series resistant (< 50 M\u03a9 for voltage clamp, and\u00a0< 100 M\u03a9 for current clamp) were included in our analysis. Note that the reported values were not corrected for the junction potential. The depths of recorded cells were between 350 and 500 \u03bcm (reading from the micromanipulator) from the point where the pipette broke into the pia surface. The morphology of biocytin-stained cells further confirmed the accuracy of the manipulator readings and all stained\u00a0cells were in layer 4.\n\n### Extracellular recording\n\nTungsten electrodes (5\u201310 M\u03a9, FHC, Bowdoinham, ME) were inserted perpendicular to the pial surface. For single unit recordings to confirm complete silencing, signals were recorded between 600 \u03bcm and 700 \u03bcm in depth, corresponding to deep layers (layer 5 and 6). For single unit recordings to study the impact of callosal projections and for field recordings of visually\u00a0evoked potentials (VEPs), signals were recorded between 350 \u03bcm and 450 \u03bcm in depth, corresponding to layer 4. Electrical signals were filtered between 0.3 and 5 kHz for spikes, and 10 and 300 Hz for VEPs and sampled at 25 kHz using a System three workstation (Tucker Davis Technologies, FL). The spike waveforms were sorted offline in OpenSorter (Tucker Davis Technologies, Alachua,\u00a0FL) to isolate single units as described before (Wang et al., 2013, 2010).\n\n### Visual stimuli\n\nSinusoidal gratings drifting perpendicular to their orientations were generated with Matlab Psychophysics toolbox (Brainard, 1997), as described previously (Wang et al., 2010). Stimuli were presented using a CRT monitor (40\u00a0\u00d7 30 cm, 60 Hz refresh rate,\u00a0~35 cd/m2 luminance) placed 25 cm in front of the animal. The direction of the gratings varied between 0\u00b0 and 330\u00b0 (12 steps at 30\u00b0 spacing) in a pseudorandom sequence. Spatial frequency of the stimuli was 0.02 cycle/degree. Temporal frequency was fixed at two cycle/s. Each stimulus was presented for 1.5 s (three cycles), with 1.5 s inter-stimulus interval or 4.5 s interval when LED was used in order to allow the optogenetically\u00a0activated inhibitory cells to recover.\n\n### Photostimulation\n\nTo photostimulate ChR2-expressing cells, an optic fiber (0.2 mm core diameter) driven by a blue LED (470 nm, Doric Lenses, Quebec, Canada) was placed \u223c0.5 mm above the exposed cortex. The tip of the LED fiber was placed at a similar position in all mice. During recordings, it was buried in the agarose that was applied to reduce the pulsation of the brain and protect the tissue. To prevent direct photostimulation of eyes by the LED light, Metabond used for mounting the head plate was prepared with black ink, and a piece of thick black paper was carefully placed around the fiber to ensure no light could be seen from the front and lateral sides, as described before (Zhao et al., 2014). The LED was driven by a series of square waves (50 Hz) starting from 100 ms before the onset of each visual stimulus and ending at 100 ms after the offset of each visual stimulus. The intensity of LED light was \u223c160 mW/mm2 at the tip of the optic fiber in all recordings, which was confirmed to be reliably effective in silencing all excitatory neurons in visual cortex (Figure 2 and Figure 2\u2014figure supplement 1).\n\n### Histology\n\n2.0% biocytin was added in the internal solution to label recorded cells. After in vivo whole-cell recordings, mice were overdosed with euthanasia solution (150 mg/kg pentobarbital) and perfused with PBS and then 4 % paraformaldehyde (PFA) solution. The brain was fixed in 4 % PFA overnight. Coronal slices 150 \u03bcm thick were cut from the fixed brain using a vibratome (VT1000S, Leica Microsystems, Wetzlar, Germany). The labeled cells were revealed by visualizing biocytin with Streptavidin-Alex Fluor 547 conjugate (Invitrogen, Carlsbad, CA). Fluorescence images were captured using a Zeiss LSM5 Pascal confocal microscope (Carl Zeiss, Jena, Germany) in z-series scanning.\n\n### Data analysis\n\nWhole-cell recording data were first analyzed using a custom MATLAB program (originally written by a former lab member Dr. Xinyu Zhao). For current-clamp data, spikes were detected by calculating the first derivative of raw voltage traces (dV/dt), and the start of a spike was the time point when dV/dt reached a manually set positive threshold. Subthreshold Vm were extracted by removing spikes from the raw voltage traces by a 6 ms median filter. With each stimulus trial included three cycles of drifting gratings (1.5 s stimulus duration and 2 Hz temporal frequency), the subthreshold Vm traces were cycle-averaged for each stimulus condition (from 50 to 550 ms after each stimulus cycle onset). Note that only the first two cycles were used to cycle-average the responses if the cell showed adaptation in the third cycle (Lien and Scanziani, 2013). The averaged Vm trace for the blank stimulus (i.e. gray screen) was used to calculate the mean (Vm baseline) and standard deviation of spontaneous Vm fluctuations. The Vm baseline was then subtracted from the smoothed and cycle-averaged Vm trace for each visual stimulus condition, i.e., gratings of certain direction, and the peak amplitude of the resulting Vm trace was used as the response magnitude for that direction.\n\nFor voltage-clamp data, the current traces were firstly smoothed by a 40 ms mean filter (Li et al., 2013, 2015), and then cycle-averaged for each stimulus condition as described above. The Im baseline was calculated as the mean of the Im trace to the blank stimulus, separately for conditions with LED photoactivation (\u2018LED-on\u2019), and then subtracted from the cycle-averaged trace of each condition to obtain visually\u00a0evoked EPSC responses. The peak EPSC amplitude was used for plotting tuning curves and subsequent analysis. Finally, the intracortical EPSC traces were generated by a point-by-point subtraction of thalamic EPSCs (LED-on) from the total EPSCs (LED-off) traces (Figure 4). The scale factors were calculated as the mean thalamic EPSC amplitude of the tuning curve divided by mean total EPSC amplitude of the tuning curve for each recorded neuron.\n\nTo determine the preferred orientation and degree of selectivity, we calculated $\\frac{\u03a3R(\\theta)e^{2\u2217i\u2217\\theta}}{\u03a3R(\\theta)}$, where R(\u03b8) is the response magnitude of Vm or EPSC, at \u03b8 direction of gratings. Its amplitude was used as a global orientation selective index (gOSI). Half of its complex phase was calculated (Niell and Stryker, 2008) and then converted to the preferred orientation (pref_O) by subtracting 90\u00b0, to confine pref_O between \u221290\u00b0 to 90\u00b0. The difference in the preferred orientation between the two eyes was calculated by subtracting ipsilateral pref_O from contralateral pref_O along the 180\u00b0 cycle (\u221290\u00b0 to 90\u00b0). The absolute values of these differences (\u0394O) were used in all quantifications.\n\nNo statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in the field (Li et al., 2013; Lien and Scanziani, 2013). All values were presented as mean \u00b1 SEM. Differences between groups were tested for significance using the Kolmogorov-Smirnov test (K-S test) and paired t-test, as stated in the text. Statistical analyses and graphs were made with Matlab (Mathworks, Natick, MA).\n",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "424f5882-ef69-4a02-a4b8-f04b8c80bf4c",
+      "submission_id": "9e7d35b3-50e0-4787-ac30-fac849178c3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22032.011](https://doi.org/10.7554/eLife.22032.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Binocular Matching of Thalamocortical and Intracortical Circuits in the Mouse Visual Cortex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Sacha B Nelson (Reviewing Editor and Reviewer #1) and Huizhong Tao (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nVisual cortical neurons are selective for orientation and respond to stimulation through both eyes. The developmental process by which inputs through the two eyes become matched in their orientation tuning is incompletely understood. Here, the authors use optogenetics and in vivo whole cell recordings to show that this matching occurs at earlier ages for thalamic input than for cortical input.\n\nEssential revisions:\n\n1) The authors use CGP 55845 to block GABA-B receptors and find no effect on field potentials when intracortical inputs are silenced via the LED. An important positive control for the effectiveness of the antagonist would be to show that it does have an effect when the LED is not turned on. This, or some other control demonstrating the drug was effective should be included.\n\n2) The text should be revised so that the order in which the results are discussed is the same for the older and younger animals. The organization of the figures is fine but the order in the text was confusing.\n\nThe EPSC properties reported for adult mice are presented in the following order:\n\n1) The ipsilateral and contralateral scaling factor\n\n2) Individual eye matching of the thalamic and total EPSCs (both ipsi and contra)\n\n3) Inter-ocular difference of the total EPSC\n\n4) Inter-ocular difference of the thalamic EPSC\n\n5) Correlation of inter-ocular difference between total and thalamic EPSC\n\nThese properties should be presented in the exact same order also for young mice.\n\nFurthermore, the intracortical EPSC and its individual eye matching with the thalamic EPSC as well as the inter-ocular difference of the intracortical EPSC should be presented with the rest of the EPSC properties in the adult first and then in the young animal.\n\n3) These are difficult experiments and the authors should acknowledge somewhere the limitations of their approach, ideally in the Discussion.\n\nA) Voltage clamp in vivo may be incomplete due to space clamp issues. This could even have larger effects on intracortical than thalamic input since the latter are likely to occur more proximally.\n\nB) The authors should also acknowledge the limitation of linear subtraction as a method for estimating the cortical contribution. The interaction between thalamic and cortical input is likely not linear.\n\nC) The discussion of possible early matching mechanisms in the Discussion is fine, but the statement \"Amazingly, certain degrees of binocular correlation may indeed exist in mice even at the level of retinal waves (Ackman et al., 2012), possibly via direct retino-retinal connections (Muller and Hollander, 1988), retinopetal modulations (Gastinger et al., 2006), or light-driven activity in the intrinsic photosensitive retinal ganglion cells through the closed eye lids (Delwig et al., 2012; Renna et al., 2011)\" implies that all such correlation must have occurred before eye opening. However, the experience between eye opening and recording may also contribute.\n\nD) Finally, the following conclusion is not warranted, although it could be stated as a speculation: \"feed-forward thalamocortical pathway plays an important role in initiating and guiding the functional rewiring and refinement of cortical circuits in visual system development.\" Correlation does not equal causation.\n\n4) The scale factor was calculated as the maximal thalamic EPSC amplitude of the tuning curve divided by maximal total EPSC amplitude. Since preferred orientation often differed between thalamic EPSC and total EPSC, especially for young cells, the scale factor was often calculated from two responses evoked by different stimuli. To have a more accurate measurement of scale factor, the authors can select 4 o 5 best responses of the tuning curves for thalamic EPSC and total EPSC (evoked by the same stimuli), do some averaging and then calculate the ratio.\n",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75196085-9dc9-4ab5-85ac-696397270c27",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C1",
+      "claim": "Visual cortical neurons are tuned to similar orientations through the two eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual cortical neurons are tuned to similar orientations through the two eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract and is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "e0619a38-3421-4249-a1fb-c5cafa0ff73d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C2",
+      "claim": "The binocularly-matched orientation preference is established during a critical period in early life.",
+      "claim_type": "EXPLICIT",
+      "source": "The binocularly-matched orientation preference is established during a critical period in early life, but the underlying circuit mechanisms remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by previous work cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "0c99aecf-2281-4f72-b131-1c30aaea7d4a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C3",
+      "claim": "In adult mice, the thalamic and cortical inputs representing the same eyes are similarly tuned and both are matched binocularly.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult mice, the thalamic and cortical inputs representing the same eyes are similarly tuned and both are matched binocularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by whole-cell recording and optogenetic data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "35e85ef2-789f-4bdf-ad3f-8a07dfbc968a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C4",
+      "claim": "In mice before the critical period, the thalamic input is already slightly matched.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice before the critical period, the thalamic input is already slightly matched, but the weak matching is not manifested due to random connections in the cortex, especially those serving the ipsilateral eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in young mice (P15-21) shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ccc77e04-aa7a-4fdc-a744-72b1e2344144",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C5",
+      "claim": "The weak thalamic matching in young mice is not manifested due to random connections in the cortex, especially those serving the ipsilateral eye.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice before the critical period, the thalamic input is already slightly matched, but the weak matching is not manifested due to random connections in the cortex, especially those serving the ipsilateral eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing mismatched intracortical inputs in young mice, particularly for the ipsilateral eye (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "656c83ec-68fb-46ae-82c8-52730c2ca897",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C6",
+      "claim": "Binocular matching is mediated by orientation-specific changes in intracortical connections and further improvement of thalamic matching.",
+      "claim_type": "EXPLICIT",
+      "source": "Binocular matching is thus mediated by orientation-specific changes in intracortical connections and further improvement of thalamic matching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing developmental data between young and adult mice showing changes in both thalamic and cortical circuits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "15154b9f-c2e7-483c-92bb-aba28ae1138b",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C7",
+      "claim": "The feed-forward thalamic input may play a key role in initiating and guiding the functional refinement of cortical circuits in critical period development.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that the feed-forward thalamic input may play a key role in initiating and guiding the functional refinement of cortical circuits in critical period development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the finding that thalamic matching precedes cortical matching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "47e8d960-a65d-444d-8c1b-ce8bb3e705ac",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C8",
+      "claim": "V1 neurons become selective for bars and edges of certain orientations when visual information reaches layer 4 from the dLGN.",
+      "claim_type": "EXPLICIT",
+      "source": "In one, V1 neurons become selective for bars and edges of certain orientations (Ferster and Miller, 2000; Hubel and Wiesel, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "800f0ba7-f23a-4b1a-b139-a50f870884ab",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C9",
+      "claim": "Eye-specific thalamic inputs converge onto individual V1 neurons, making them binocularly responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other, eye-specific thalamic inputs converge onto individual V1 neurons, making them binocularly responsive (Cang and Feldheim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "a7a37b62-524a-456c-8322-b69b818a459f",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C10",
+      "claim": "V1 neurons are tuned to similar orientations through the two eyes, a property presumably required for normal binocular perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the two transformations together, V1 neurons are now tuned to similar orientations through the two eyes (Bridge and Cumming, 2001; Nelson et al., 1977; Wang et al., 2010), a property presumably required for normal binocular perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and includes a speculative element about its functional importance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "7c3a4772-4fe9-4da7-9bfd-06c95e520b84",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C11",
+      "claim": "Binocularly-matched orientation tuning is not a necessary consequence of simply combining the two eyes' inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, binocularly-matched orientation tuning is not a necessary consequence of simply combining the two eyes' inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the need for active developmental processes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "002fdd59-ad62-4506-b5d3-b0870f0aa1ca",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C12",
+      "claim": "The establishment of binocularly-matched orientation tuning requires an active and experience-dependent process that takes place during a critical period in early life.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, its establishment requires an active and experience-dependent process that takes place during a critical period in early life (Wang et al., 2013, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "35b3d4d0-9945-4bad-be0b-017c7f16438c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C13",
+      "claim": "According to the feed-forward model, cortical orientation selectivity arises from the convergence of non-selective dLGN relay cells whose receptive fields are spatially aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the 'feed-forward' model proposed by Hubel and Wiesel (Hubel and Wiesel, 1962), cortical orientation selectivity arises from the convergence of non-selective dLGN relay cells whose receptive fields are spatially aligned to generate larger peak excitation to the postsynaptic cell at its preferred orientation than at other orientations (Priebe and Ferster, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an established model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "6d3f141c-0d78-4998-89ee-61c2e83182a0",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C14",
+      "claim": "The feed-forward model is supported by cross-correlation analysis of functional connectivity between dLGN and V1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by a number of studies, especially in cats, including cross-correlation analysis of functional connectivity between dLGN and V1 neurons (Alonso et al., 2001; Reid and Alonso, 1995; Tanaka, 1983) and studies of visually evoked synaptic inputs in layer 4 cells during cortical inactivation (Chung and Ferster, 1998; Ferster et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "48ed4ddb-6fba-4380-bdf8-5567625a885c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C15",
+      "claim": "The feed-forward model appears to apply to mice as well, even though more orientation-selective responses are seen in the mouse dLGN than in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "The feed-forward model appears to apply to mice as well, even though more orientation-selective responses are seen in the mouse dLGN than in cats (Piscopo et al., 2013; Scholl et al., 2013; Zhao et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "a4bf034a-77eb-4f29-8150-15a39c68d9df",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C16",
+      "claim": "The thalamic input to layer 4 neurons was found to be tuned in a manner consistent with the feed-forward model, but not from orientation selective dLGN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The thalamic input to layer 4 neurons was found to be tuned in a manner consistent with the feed-forward model, but not from orientation selective dLGN neurons (Lien and Scanziani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4705a0e6-579a-4aaa-98c8-2ca319a0a38a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C17",
+      "claim": "The tuned thalamic input is further amplified by similarly tuned intracortical input, thereby preserving its orientation tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "The tuned thalamic input is further amplified by similarly tuned intracortical input, thereby preserving its orientation tuning (Li et al., 2013; Lien and Scanziani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "0e25bd98-c2b1-4308-af21-9cc66b672872",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C18",
+      "claim": "Individual neurons in mouse V1 are initially tuned to different orientations through the two eyes until about postnatal day 21 (P21).",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously discovered using extracellular recording that individual neurons in mouse V1 are initially tuned to different orientations through the two eyes until about postnatal day 21 (P21), and the difference declines progressively and reaches the adult level by P30 (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ccf644e5-422d-43fb-9fed-0e613a9c19f1",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C19",
+      "claim": "The difference in orientation tuning between the two eyes declines progressively and reaches the adult level by P30.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously discovered using extracellular recording that individual neurons in mouse V1 are initially tuned to different orientations through the two eyes until about postnatal day 21 (P21), and the difference declines progressively and reaches the adult level by P30 (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "216f03f6-b0f1-41d1-9011-9c5033aa8294",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C20",
+      "claim": "The subthreshold Vm were tuned to similar orientations through the two eyes in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the subthreshold Vm were tuned to similar orientations through the two eyes in adult mice (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "2b9d7ce6-276b-4584-8e73-804cfdd346b0",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C21",
+      "claim": "The inter-ocular difference of the preferred orientation (\u0394O) was smaller than 30\u00b0 in the vast majority of recorded cells in adult mice (11/14 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-ocular difference of the preferred orientation, which we referred to as '\u0394O', was smaller than 30\u00b0 in the vast majority of the recorded cells (11/14 cells, Figure 1F), with a mean of 20.8 \u00b1 3.3\u00b0, similar to that for the spiking responses in mice after the critical period (Wang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8579a259-4cea-4ed1-8506-790725e882a6",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C22",
+      "claim": "The mean \u0394O for Vm responses in adult mice was 20.8 \u00b1 3.3\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-ocular difference of the preferred orientation, which we referred to as '\u0394O', was smaller than 30\u00b0 in the vast majority of the recorded cells (11/14 cells, Figure 1F), with a mean of 20.8 \u00b1 3.3\u00b0, similar to that for the spiking responses in mice after the critical period (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "f6cfd5c5-8a78-421f-95b6-504d1f9a36d9",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C23",
+      "claim": "In young mice prior to the onset of the critical period (P15-21), the orientation tuning of Vm responses were completely mismatched binocularly.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in young mice prior to the onset of the critical period (P15-21), the orientation tuning of Vm responses were completely mismatched binocularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "98f000e5-d7cf-45ad-aca8-1d83ac405ace",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C24",
+      "claim": "The \u0394O distribution in young mice (P15-21) had a mean of 50.5 \u00b1 3.8\u00b0 (n = 25).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394O distribution at this age group (Figure 1G, mean of 50.5 \u00b1 3.8\u00b0, n = 25) was significantly skewed toward larger values compared to adults (p = 0.003; K-S test, Figure 1H), and it appeared to be largely random, which would have been a uniform distribution between 0 and 90 with a mean of 45\u00b0 (p = 0.11 compared to random distribution; K-S test, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "31725e68-e7a8-44b8-92fc-e7875eb2a5df",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C25",
+      "claim": "The \u0394O distribution in young mice was significantly skewed toward larger values compared to adults (p = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394O distribution at this age group (Figure 1G, mean of 50.5 \u00b1 3.8\u00b0, n = 25) was significantly skewed toward larger values compared to adults (p = 0.003; K-S test, Figure 1H), and it appeared to be largely random, which would have been a uniform distribution between 0 and 90 with a mean of 45\u00b0 (p = 0.11 compared to random distribution; K-S test, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "aa988b71-fdd2-4ade-888f-8e06d097dff6",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C26",
+      "claim": "The \u0394O distribution in young mice appeared to be largely random (p = 0.11 compared to random distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394O distribution at this age group (Figure 1G, mean of 50.5 \u00b1 3.8\u00b0, n = 25) was significantly skewed toward larger values compared to adults (p = 0.003; K-S test, Figure 1H), and it appeared to be largely random, which would have been a uniform distribution between 0 and 90 with a mean of 45\u00b0 (p = 0.11 compared to random distribution; K-S test, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "d31cd9f9-97e7-49d1-a221-df1fc62dd0c2",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C27",
+      "claim": "LED stimulation was able to completely silence the visually evoked responses of neurons recorded as deep as 700 \u00b5m below cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "First, LED stimulation was able to completely silence the visually evoked responses of neurons recorded as deep as 700 \u00b5m below cortical surface, more than 200 \u00b5m deeper than layer 4 (Figure 2A\u2013B and Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment validating the optogenetic silencing method, supported by data in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "6541517b-671d-4d6e-9954-7953d39c8779",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C28",
+      "claim": "Visually evoked responses in layer 4 were unaffected by silencing the other hemisphere with LED photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus recorded layer 4 spiking activity while silencing the other hemisphere with LED photoactivation. Visually evoked responses were in fact unaffected by silencing the other hemisphere (Figure 2\u2014figure supplement 1D\u2013F), consistent with a previous report that callosal inputs are absent in layer 4 (Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment supported by data in Figure 2\u2014figure supplement 1D-F and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "88b86f98-c4aa-4f1e-974f-e292959954b4",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C29",
+      "claim": "Callosal inputs are absent in layer 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Visually evoked responses were in fact unaffected by silencing the other hemisphere (Figure 2\u2014figure supplement 1D\u2013F), consistent with a previous report that callosal inputs are absent in layer 4 (Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and consistent with the authors' experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ed0fcf39-a5a6-46a7-bdd3-1ea6c7aa1c47",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C30",
+      "claim": "Optogenetic silencing of the visual cortex reduced the VEP by ~ 60 %, and this was not affected by the administration of GABAB receptor antagonist CGP54624.",
+      "claim_type": "EXPLICIT",
+      "source": "In another set of experiments, we found that optogenetic silencing of the visual cortex reduced the VEP by ~ 60 %, and importantly, it was not affected by the administration of CGP (Figure 2\u2014figure supplement 1I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment supported by data in Figure 2\u2014figure supplement 1I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "003709bf-cdfe-4446-8936-8fbbb6fd9804",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C31",
+      "claim": "Thalamocortical transmission was not affected by optogenetic activation of the inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This result thus indicates that thalamocortical transmission was not affected by optogenetic activation of the inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the control experiment with GABAB receptor antagonist.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ea2495de-929e-4b54-b057-dc36fa7cfd36",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C32",
+      "claim": "Silencing the visual cortex reduced the visually evoked EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, silencing the visual cortex reduced the visually evoked EPSCs (e.g. Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "702f7dd3-93b9-4bf3-9554-084441ab0714",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C33",
+      "claim": "The scale factor (ratio of mean thalamic EPSCs over mean total EPSCs) was similar between the responses evoked through contralateral (0.32 \u00b1 0.05) and ipsilateral eyes (0.32 \u00b1 0.07) in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of reduction, as measured by the ratio of mean thalamic EPSCs over mean total EPSCs during the visual stimulation across all directions (the 'scale factor'), was similar between the responses evoked through contralateral (0.32 \u00b1 0.05) and ipsilateral eyes (0.32 \u00b1 0.07; Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ff374492-a8ca-4ea3-83de-22a668aa368c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C34",
+      "claim": "The thalamic EPSCs and total EPSCs were tuned to similar orientations in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the thalamic EPSCs and total EPSCs were tuned to similar orientations in adult mice ( Figure 2E\u2013F), which is reflected by the small values of orientation preference difference between thalamic and total EPSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "b7088ab0-eb24-49eb-a892-864a8f415e33",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C35",
+      "claim": "The orientation preference difference between thalamic and total EPSCs was similar between contralateral (15.2 \u00b1 3.4\u00b0) and ipsilateral eye (17.7 \u00b1 4.5\u00b0) responses in adult mice (p = 0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this difference was similar between contralateral (15.2 \u00b1 3.4\u00b0) or ipsilateral eye (17.7 \u00b1 4.5\u00b0) responses (Figure 2G, p = 0.89, K-S test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result with statistical comparison from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "1c5cd9e8-7639-4ea0-9812-5cf179e8f51c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C36",
+      "claim": "The total EPSCs of layer 4 cells were tuned to similar orientations through the two eyes in adult mice, with an inter-ocular difference (\u0394O) of 20.6 \u00b1 4.3\u00b0 (n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the matched spiking and Vm responses, the total EPSCs of layer 4 cells were tuned to similar orientations through the two eyes (Figure 3A1), with its inter-ocular difference (i.e. \u0394O) of 20.6 \u00b1 4.3\u00b0 (n = 15, Figure 3A2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A1-A2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "d70c1b5c-b931-4bfb-8fa2-422e28cb47d2",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C37",
+      "claim": "The thalamic EPSCs were tuned to similar orientations through the two eyes in adult mice (\u0394O = 19.6 \u00b1 5.5\u00b0, n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "The thalamic EPSCs were also tuned to similar orientations through the two eyes (Figure 3B1\u2013B2, \u0394O = 19.6 \u00b1 5.5\u00b0, n = 15), consistent with the fact that thalamic excitation determines cortical tuning for both contralateral and ipsilateral responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B1-B2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "54861964-f808-4ff2-bf97-a3e546a7d364",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C38",
+      "claim": "The \u0394O of thalamic EPSCs were significantly correlated with that of total EPSCs for individual neurons in adult mice (r = 0.57, p = 0.025).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u0394O of thalamic EPSCs were significantly correlated with that of total EPSCs for individual neurons ( Figure 3E, r = 0.57, p = 0.025).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "96f425b5-2d30-4637-85ee-0b78f9db5030",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C39",
+      "claim": "The thalamic inputs to layer 4 neurons are tuned to similar orientations through the two eyes in adult mice, leading to binocularly-matched orientation preference in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the thalamic inputs to layer 4 neurons are tuned to similar orientations through the two eyes in adult mice, leading to binocularly-matched orientation preference in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on thalamic EPSCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "1fb15f38-b0a6-4c11-bf2e-a59a8ce357a6",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C40",
+      "claim": "The scale factor was slightly higher and less matched binocularly in young mice (0.43 \u00b1 0.05 for contralateral pathway and 0.52 \u00b1 0.08 for ipsilateral).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that the ratio of thalamic over total EPSCs, i.e., the scale factor, was slightly higher and less matched binocularly in the young mice (0.43 \u00b1 0.05 for the contralateral pathway and 0.52 \u00b1 0.08 for ipsilateral, Figure 2\u2014figure supplement 2D\u2013F), suggesting the immaturity of thalamocortical transformation at this age.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "12bc2ed1-0e15-493d-8bfe-f9f7f84efc4a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C41",
+      "claim": "The difference between thalamic and total EPSCs tuning was significantly larger in young mice than in adults for both eyes (p = 0.040 for contralateral eye and p = 0.043 for ipsilateral eye).",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify this, we calculated the difference between thalamic and total EPSCs tuning for individual cells and found that it was significantly larger in the young mice than in the adult, and for both eyes ( Figure 3\u2014figure supplement 1C , p = 0.040 for contralateral eye and p = 0.043 for ipsilateral eye, K-S test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "08c5b695-5b7b-45f3-8976-c1ad05ea3645",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C42",
+      "claim": "The total EPSCs were not yet matched in their orientation preference in young mice (P15-21), with \u0394O = 41.4 \u00b1 5.5\u00b0 (n = 26, p = 0.023 compared to adult).",
+      "claim_type": "EXPLICIT",
+      "source": "The total EPSCs were not yet matched in their orientation preference at this age (Figure 3C1), with their inter-ocular difference (\u0394O) quite randomly distributed within the entire range between 0 and 90 (Figure 3C2, \u0394O = 41.4 \u00b1 5.5\u00b0, n = 26, p = 0.023 compared to adult, p = 0.45 compared to random, K-S test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C1-C2 with statistical comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "49312c10-dc54-44e8-9cbd-752bc8bc223d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C43",
+      "claim": "The thalamic EPSCs orientation tuning was not as well matched as in adult mice in young mice (\u0394O = 30.9 \u00b1 4.0\u00b0, n = 26, p = 0.037 compared to adult).",
+      "claim_type": "EXPLICIT",
+      "source": "For the thalamic EPSCs, their orientation tuning was not as well matched as in adult mice either (Figure 3D1\u2013D2, \u0394O = 30.9 \u00b1 4.0\u00b0, n = 26, p = 0.037 compared to adult, K-S test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D1-D2 with statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "06d01739-9be4-4315-8add-9881ee77a3b2",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C44",
+      "claim": "The thalamic EPSCs \u0394O distribution in young mice was skewed toward 0, indicating a certain degree of thalamic matching already present (p = 0.003 compared to random).",
+      "claim_type": "EXPLICIT",
+      "source": "However, their \u0394O distribution was skewed toward 0 (Figure 3D2), indicating a certain degree of thalamic matching already present in these mice (p = 0.003 compared to random, K-S test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D2 with statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8cb2d312-9def-4c9c-a5ad-beac66de5b96",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C45",
+      "claim": "The thalamic EPSCs were better matched than total EPSCs in young mice (p = 0.038, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "There were more cells above the unity line, i.e., smaller \u0394O values for thalamic EPSCs, indicating that the thalamic EPSCs were better matched than total EPSCs at this age (p = 0.038, paired t-test, Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data shown in Figure 3F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8a7a930b-43be-4231-bf13-4cbdeb76f5b5",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C46",
+      "claim": "The ocular dominance of thalamic and total EPSCs does not undergo any gross change during development when they become binocularly matched.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the ocular dominance of thalamic and total EPSCs does not undergo any gross change during development when they become binocularly matched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of contralateral/ipsilateral EPSC ratios shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "9e96a7a0-918f-4477-9ad5-6354a24a0f6a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C47",
+      "claim": "The contralateral EPSCs were about twice stronger than the ipsilateral ones for both thalamic and total inputs, and this ratio remained consistent at both ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when analyzing the relative strength of the two eyes' inputs (i.e. ocular dominance), we found that the contralateral EPSCs were about twice stronger than the ipsilateral ones for both thalamic and total inputs, and this ratio remained consistent at both ages (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "c50836c2-d273-4deb-bfba-c8bced9324c0",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C48",
+      "claim": "In adult mice, intracortical excitation to layer 4 cells is tuned to the same orientation as the thalamic excitation, thereby maintaining the orientation tuning of the thalamic input.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult mice, intracortical excitation to layer 4 cells is tuned to the same orientation as the thalamic excitation, thereby maintaining the orientation tuning of the thalamic input (Li et al., 2013; Lien and Scanziani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and confirmed by the authors' data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4970ab83-0e93-4f36-96bf-8f11e7e8b57c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C49",
+      "claim": "The lack of adult-level 'thalamic-total' correlation in young mice suggests that the intracortical circuits are not yet organized in the same manner as in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of adult-level 'thalamic-total' correlation in the young mice suggests that the intracortical circuits are not yet organized in the same manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data comparing young and adult mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "a3a91e50-4527-4ab8-a641-eb24fa8c8b85",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C50",
+      "claim": "The intracortical EPSCs were tuned to similar orientations as the thalamic EPSCs in adults, for both contralateral and ipsilateral eyes ('thalamic-cortical difference': 17.0 \u00b1 4.4\u00b0 for contralateral pathway and 22.4 \u00b1 6.0\u00b0 for ipsilateral).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the intracortical EPSCs were tuned to similar orientations as the thalamic EPSCs in adults, for both contralateral and ipsilateral eyes (Figure 4A\u2013C, 'thalamic-cortical difference': 17.0 \u00b1 4.4\u00b0 for contralateral pathway and 22.4 \u00b1 6.0\u00b0 for ipsilateral), thus binocularly matched (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "5200b23b-ac6c-4f7c-992c-c1eb260ff698",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C51",
+      "claim": "In young mice, the correlation between thalamic and cortical orientation preferences was weak for both eyes (35.8 \u00b1 5.5\u00b0 for contralateral and 49.0 \u00b1 5.3\u00b0 for ipsilateral).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the young mice, the correlation between thalamic and cortical orientation preferences was weak for both eyes (Figure 4D\u2013E, 35.8 \u00b1 5.5\u00b0 for contralateral and 49.0 \u00b1 5.3\u00b0 for ipsilateral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4042bff8-f5a0-45aa-8c25-d20719eb3a5d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C52",
+      "claim": "For individual cells in young mice, the difference between thalamic and intracortical tuning was greater for the ipsilateral eye than for the contralateral eye (p = 0.041, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for individual cells, the difference between thalamic and intracortical tuning was greater for the ipsilateral eye than for the contralateral eye (Figure 4F\u2013G, p = 0.041, paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ad461b1d-2a76-47ff-b971-06c585f3cd4a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C53",
+      "claim": "The intracortical input was completely mismatched binocularly in young mice, despite the weak matching of thalamic input.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the intracortical input was completely mismatched binocularly in the young mice (Figure 4\u2014figure supplement 1D), despite the weak matching of thalamic input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "cb2f64f2-583c-4461-a625-91c7dfefe0ac",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C54",
+      "claim": "The mismatched intracortical input leads to a mismatch in total excitation and the resulting Vm and spike responses in mice before the critical period.",
+      "claim_type": "EXPLICIT",
+      "source": "The mismatched intracortical input thus leads to a mismatch in its total excitation and the resulting Vm and spike responses in mice before the critical period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on intracortical inputs in young mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "680f4a60-a174-4899-9503-5a41a470b652",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C55",
+      "claim": "The binocular matching of thalamic inputs initiates before that of intracortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the binocular matching of thalamic inputs initiates before that of intracortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the developmental comparison of thalamic and intracortical circuits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "7ab46ea8-b03a-4550-98d8-35852bb323ae",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C56",
+      "claim": "The intracortical circuits serving the contralateral eye mature before those for the ipsilateral eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the intracortical circuits serving the contralateral eye mature before those for the ipsilateral eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the developmental comparison showing greater thalamic-cortical difference for ipsilateral eye in young mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "e7b47f0c-e6fc-4ce5-a98f-70184fd176ce",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C57",
+      "claim": "The visual system develops in a hierarchical manner where neural circuits in earlier stages of visual pathway mature sooner than those in later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding adds to the growing literature that the visual system develops in a hierarchical manner where neural circuits in earlier stages of visual pathway mature sooner than those in later stages (Daw, 1997; Lewis and Maurer, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and consistent with the authors' findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "f81eb412-4707-4533-8078-2a37a065f3dc",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C58",
+      "claim": "Simple cells match before complex cells during the critical period, with the two classes of cells representing successive stages of visual processing in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we previously revealed a sequence of binocular matching during the critical period (Wang et al., 2013): simple cells match before complex cells, with the two classes of cells representing successive stages of visual processing in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8b391b48-2100-47f8-b58c-a048fbe40e8d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C59",
+      "claim": "A developmental maturation sequence of synaptic plasticity has been shown by in vitro studies following the visual pathway, from LGN to layer 4 and then from layer 4 to layer 2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a developmental maturation sequence of synaptic plasticity has been shown by in vitro studies following the visual pathway, from LGN to layer 4 and then from layer 4 to layer 2/3 (Jiang et al., 2007; Kirkwood and Bear, 1994), which may underlie some aspects of the functional maturation we observed in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "03ba1866-53e0-43ad-99b9-e43aebdf669b",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C60",
+      "claim": "Visual experience between eye opening (P12-14) and recording time (P15-21) may contribute to early thalamic binocular correspondence.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the visual experience between eye opening (P12-14) and our recording time (P15-21) may contribute to this early thalamic binocular correspondence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility discussed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "a7511b75-8d61-4e60-a0bd-ed2ec9a9618b",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C61",
+      "claim": "Many aspects of visual system organization and function can be established by experience-independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, previous studies have shown that many aspects of visual system organization and function can be established by experience-independent mechanisms, such as ocular dominance columns in cat visual cortex (Crowley and Katz, 2000), monocular orientation selectivity (Ko et al., 2014; Wang et al., 2010) and receptive field structures (Sarnaik et al., 2014) in mouse V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "983b84c9-8480-47e4-9459-e40b4946193a",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C62",
+      "claim": "Structured spontaneous activities have been observed in the dLGN and visual cortex before vision onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Structured spontaneous activities have been observed in the dLGN and visual cortex before vision onset (Ackman et al., 2012; Chiu and Weliky, 2001; Hanganu et al., 2006; Siegel et al., 2012; Weliky and Katz, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "1789ffdb-d0cd-49f7-bf63-2e6fcaa4327f",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C63",
+      "claim": "A correlation-based computational study supports the notion that patterned activity could give rise to monocular receptive fields that are consistent with the feed-forward model.",
+      "claim_type": "EXPLICIT",
+      "source": "A correlation-based computational study supports the notion that patterned activity could give rise to monocular receptive fields that are consistent with the feed-forward model (Miller, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "6fd5ff68-6187-4685-a04a-8e159a85da5f",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C64",
+      "claim": "Certain degrees of binocular correlation may exist in mice even at the level of retinal waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Amazingly, certain degrees of binocular correlation may indeed exist in mice even at the level of retinal waves (Ackman et al., 2012), possibly via direct retino-retinal connections ( M\u00fcller and Holl\u00e4nder, 1988 ), retinopetal modulations (Gastinger et al., 2006), or light-driven activity in the intrinsic photosensitive retinal ganglion cells through the closed eye lids (Delwig et al., 2012; Renna et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and includes speculation about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "a167db32-ffab-4795-bf61-025e913b7811",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C65",
+      "claim": "The preferential connectivity among similarly tuned layer 2/3 neurons seen in adult mice does not exist right after eye opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferential connectivity among similarly tuned layer 2/3 neurons seen in adult mice (Ko et al., 2011; Lee et al., 2016) does not exist right after eye opening (Ko et al., 2013), and it requires visual experience to establish (Ko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "29c140ec-54bb-4488-aa1c-6dd56d74f5f5",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C66",
+      "claim": "The experience-dependent rewiring of intracortical circuits, together with the further improved matching of thalamic inputs, underlie binocular matching of orientation tuning in layer 4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that the experience-dependent rewiring of intracortical circuits, together with the further improved matching of thalamic inputs, underlie binocular matching of orientation tuning in layer 4 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and comparison with previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4aa80742-9fd3-4b9d-aa72-32e6aa128688",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C67",
+      "claim": "In mouse ocular dominance plasticity, while both contralateral and ipsilateral circuits respond to imbalanced visual inputs in juveniles, only the ipsilateral circuits remain responsive in young adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse ocular dominance plasticity, while both contralateral and ipsilateral circuits respond to imbalanced visual inputs in juveniles (Frenkel and Bear, 2004), only the ipsilateral circuits remain responsive in young adults (Sawtell et al., 2003), suggesting that the ipsilateral pathway reaches maturity later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "80463969-6e25-465f-83ea-d3151f0e0a81",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C68",
+      "claim": "In cats, visual cortical maps at vision onset are dominated by the contralateral eye and visual experience is needed for the other eye's response to strengthen.",
+      "claim_type": "EXPLICIT",
+      "source": "In cats, visual cortical maps at vision onset are dominated by the contralateral eye and visual experience is needed for the other eye's response to strengthen (Crair et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4745669e-1c3a-4e25-bfb8-8a3d64bc752d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C69",
+      "claim": "The contralateral pathway may be used as a 'guide' for ipsilateral development.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the strong contralateral dominance, it is possible that the contralateral pathway may be used as a 'guide' for ipsilateral development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "8c085a3b-e05f-4578-8f76-b49a9aec6dd9",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C70",
+      "claim": "The refinement of the ipsilateral retinotopic map in the mouse visual cortex can be delayed or accelerated by manipulating the contralateral input.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, it has been shown that the refinement of the ipsilateral retinotopic map in the mouse visual cortex can be delayed or accelerated by manipulating the contralateral input (Smith and Trachtenberg, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "2865519b-dff0-4704-9bc7-84701635adc5",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C71",
+      "claim": "Voltage clamp is normally incomplete in whole-cell recordings due to the 'space clamp' issue.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to note that, even though it has been widely used in neuroscience research, voltage clamp is normally incomplete in whole-cell recordings due to the so-called 'space clamp' issue (Williams and Mitchell, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "06a5972c-3f11-44f3-a5a8-2dd0833080b3",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C72",
+      "claim": "The measurement likely underestimated the amplitude of EPSCs that layer 4 neurons receive from thalamic and intracortical inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, our measurement likely underestimated the amplitude of EPSCs that layer 4 neurons receive from thalamic and intracortical inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the voltage clamp method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4a9c6255-5ab3-4809-bebe-90b14dba77fa",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C73",
+      "claim": "The calculation of preferred directions should not be much affected by the space clamp issue, because the EPSC underestimation was likely similar across different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the calculation of preferred directions should not be much affected by this issue, because the EPSC underestimation was likely similar across different directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why the main findings remain valid despite technical limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "45555b8c-c6d4-4e9c-aba6-020f52a6f3d2",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C74",
+      "claim": "The main discoveries in the study, i.e., the two developmental profiles which are entirely based on the preferred directions, should hold true despite the limitations of voltage clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the main discoveries in our study, i.e., the two developmental profiles which are entirely based on the preferred directions, should hold true despite the limitations of voltage clamp recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the validity of the main findings despite technical limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "41f7aa06-2755-4f34-8dc1-7e0355616c69",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "claim_id": "C75",
+      "claim": "The feed-forward thalamocortical pathway may play an important role in the development of visual circuits, possibly through initiating and guiding the functional rewiring and refinement of cortical circuits in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have discovered the thalamocortical and intracortical circuits underlying binocular matching and revealed their developmental profiles. Our results suggest that the feed-forward thalamocortical pathway may play an important role in the development of visual circuits, possibly through initiating and guiding the functional rewiring and refinement of cortical circuits in visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In adult mice (P60-90), subthreshold membrane potential (Vm) responses show binocularly-matched orientation tuning (mean \u0394O = 20.8 \u00b1 3.3\u00b0), while young mice (P15-21) show mismatched tuning (mean \u0394O = 50.5 \u00b1 3.8\u00b0) that is statistically indistinguishable from random.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 provide converging evidence from whole-cell current-clamp recordings with appropriate statistical comparisons (K-S test, p=0.003). Sample sizes are adequate (n=14 adult, n=25 young), and the comparison to a theoretical random distribution (uniform 0-90\u00b0) is methodologically sound. The data directly support the developmental transition in binocular matching.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "36fbf769-7c2b-4d1f-94dd-25c12325e472",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic silencing via ChR2 activation in GAD2+ neurons completely silences cortical activity to depths >700 \u03bcm without affecting thalamocortical transmission or receiving callosal input in layer 4, as validated by control experiments with GABAB receptor antagonist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe essential methodological controls. The depth validation (C27), callosal input test (C28-C29), and GABAB receptor pharmacology (C30-C31) are appropriate controls. However, the claim that thalamocortical transmission is 'not affected' (C31) is an inference from the CGP experiment showing ~60% VEP reduction unchanged by CGP, which demonstrates lack of presynaptic GABAB effects but doesn't fully validate the method's specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "70734b26-3307-456c-9a5d-fec8d8db47f4",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In adult mice, both thalamic and total EPSCs show binocularly-matched orientation tuning (thalamic \u0394O = 19.6 \u00b1 5.5\u00b0, total \u0394O = 20.6 \u00b1 4.3\u00b0), with similar scale factors for both eyes (0.32 \u00b1 0.05 contralateral, 0.32 \u00b1 0.07 ipsilateral) and significant correlation between thalamic and total EPSC orientation preferences (r=0.57, p=0.025).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 present coherent data from voltage-clamp recordings with optogenetic isolation. The statistical analyses are appropriate, sample size is adequate (n=15), and the correlation analysis (C38) provides quantitative support. The similar scale factors (C33) and matched tuning (C34-C35) across eyes strengthen the conclusion. However, space-clamp limitations acknowledged later may affect absolute amplitude measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "c8874139-4303-405b-9aed-c7c5c715e361",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In young mice (P15-21), thalamic inputs show partial binocular matching (\u0394O = 30.9 \u00b1 4.0\u00b0, significantly different from random, p=0.003) that is better than total EPSC matching (\u0394O = 41.4 \u00b1 5.5\u00b0, p=0.038 paired t-test), despite immature thalamocortical transformation indicated by higher and less matched scale factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 demonstrate the key developmental finding with appropriate statistical tests. The paired comparison (C45, p=0.038) directly tests the hypothesis that thalamic matching precedes total matching. The comparison to random distribution (C44) and to adult values (C43) are methodologically sound. Sample size (n=26) is adequate. The conclusion that thalamic matching initiates before cortical matching is well-supported by this data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "deb18da3-4cab-4731-9b32-c54e11b649d3",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ocular dominance (contralateral/ipsilateral EPSC ratio of ~2:1) remains constant across development for both thalamic and total inputs, indicating that binocular matching occurs without gross changes in relative eye strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 address an important control showing that matching is not simply due to changes in ocular dominance. The data from Figure 3\u2014figure supplement 2 support this conclusion. This is a negative result that strengthens the interpretation that matching involves orientation-specific refinement rather than overall strength changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Intracortical EPSCs are matched to thalamic orientation tuning in adults (thalamic-cortical difference: 17.0 \u00b1 4.4\u00b0 contralateral, 22.4 \u00b1 6.0\u00b0 ipsilateral) but not in young mice (35.8 \u00b1 5.5\u00b0 contralateral, 49.0 \u00b1 5.3\u00b0 ipsilateral), with ipsilateral circuits showing greater immaturity (p=0.041).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 describe intracortical circuit development using subtraction analysis. The method (point-by-point subtraction) is standard but assumes linearity. The finding of eye-specific developmental differences (C52) is statistically supported and biologically plausible. However, the subtraction method could be confounded by non-linear interactions between thalamic and cortical inputs, which the authors acknowledge in the Discussion but don't fully address experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "5876eafd-989a-4816-8458-3c130b492798",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two developmental profiles emerge: (1) thalamic binocular matching initiates before intracortical matching, and (2) contralateral intracortical circuits mature before ipsilateral circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 synthesize the main findings. These conclusions are well-supported by the data in claims C40-C54, particularly the paired comparison showing better thalamic than total matching in young mice (C45) and the eye-specific difference in thalamic-cortical correlation (C52). The hierarchical developmental sequence is a logical inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "5b3852d1-bccc-40dc-b9ca-ba1aa856a37d",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings support hierarchical development of visual circuits where earlier pathway stages mature before later stages, consistent with previous observations of simple-before-complex cell matching and LGN-to-layer 4-to-layer 2/3 synaptic plasticity sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 place current findings in context of prior work through appropriate citations. The hierarchical interpretation is consistent with cited literature and the current data. This represents appropriate integration of new findings with established knowledge, though it is primarily confirmatory rather than novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Early thalamic binocular matching may arise from visual experience after eye opening (P12-14) or from experience-independent mechanisms including spontaneous activity patterns such as binocularly-correlated retinal waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C64 are speculative (C60, C64 explicitly marked as speculation) and cite relevant literature but provide no direct experimental evidence. The authors appropriately present these as possibilities requiring future investigation. The speculation is reasonable given cited evidence for retinal wave correlations, but the current study does not test these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "ba2a4aeb-fc1e-4e2b-935f-12b231a6ffc8",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Experience-dependent rewiring of intracortical circuits, together with further improvement of thalamic matching, underlies binocular matching of orientation tuning in layer 4 neurons, consistent with findings that preferential connectivity among similarly-tuned layer 2/3 neurons requires visual experience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 integrate current findings with cited work on layer 2/3 connectivity. The conclusion about experience-dependent rewiring is a reasonable inference from the developmental data showing immature cortical circuits in young mice, though the current study does not directly manipulate experience. The integration with prior literature (C65) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "270a8fc6-4afe-4a62-b7aa-e742701e507c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The earlier maturation of contralateral circuits is consistent with ocular dominance plasticity studies and may reflect a mechanism where the dominant contralateral pathway guides ipsilateral development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 appropriately cite relevant literature, but C69 is explicitly speculative. While C70 cites supporting evidence for contralateral-guided ipsilateral refinement in retinotopic mapping, the current study does not test this mechanism for binocular matching. The hypothesis is plausible but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "19631b38-0d6a-4321-94bf-0150d7363e72",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite space-clamp limitations that likely underestimate EPSC amplitudes, the main findings regarding developmental profiles of orientation preference are valid because preferred orientation calculations are minimally affected by uniform underestimation across directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 appropriately acknowledge technical limitations. The reasoning that orientation preference is preserved despite amplitude underestimation (C73) is sound, assuming the underestimation is indeed uniform across stimulus directions. This assumption is reasonable but not directly validated. The authors correctly distinguish between amplitude measurements (potentially affected) and orientation preferences (likely robust).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "209dba82-41f3-4332-bb96-b17ec87dbc5e",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The feed-forward thalamic pathway plays a key role in initiating and guiding functional refinement of cortical circuits during critical period development, as evidenced by early thalamic matching that precedes cortical matching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C75 represent the overarching conclusions. The core finding (C3-C6) is well-supported by the experimental data. However, C7 and C75 include speculative elements about the thalamic pathway 'initiating and guiding' cortical refinement. While the temporal sequence (thalamic before cortical) is demonstrated, the causal mechanism is inferred rather than directly tested. Perturbation experiments would be needed to establish causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    },
+    {
+      "id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c",
+      "content_id": "54bada55-2bda-494d-affb-a7827a8863b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishing that V1 orientation selectivity arises from thalamic convergence (feed-forward model), that binocular matching requires active critical period processes, and that previous work showed developmental progression of matching from P21 to P30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C19 provide literature context with appropriate citations. These are established facts from prior work that frame the current study. C11 makes a logical inference that matching is not automatic, which is supported by the cited evidence for critical period dependence (C12). This background appropriately motivates the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:16:45.598540Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "216f03f6-b0f1-41d1-9011-9c5033aa8294",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "2b9d7ce6-276b-4584-8e73-804cfdd346b0",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "8579a259-4cea-4ed1-8506-790725e882a6",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "f6cfd5c5-8a78-421f-95b6-504d1f9a36d9",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "98f000e5-d7cf-45ad-aca8-1d83ac405ace",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "31725e68-e7a8-44b8-92fc-e7875eb2a5df",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "aa988b71-fdd2-4ade-888f-8e06d097dff6",
+      "result_id": "6830bbe2-6c80-4b07-b6af-6dd60f80f5de"
+    },
+    {
+      "claim_id": "d31cd9f9-97e7-49d1-a221-df1fc62dd0c2",
+      "result_id": "36fbf769-7c2b-4d1f-94dd-25c12325e472"
+    },
+    {
+      "claim_id": "6541517b-671d-4d6e-9954-7953d39c8779",
+      "result_id": "36fbf769-7c2b-4d1f-94dd-25c12325e472"
+    },
+    {
+      "claim_id": "88b86f98-c4aa-4f1e-974f-e292959954b4",
+      "result_id": "36fbf769-7c2b-4d1f-94dd-25c12325e472"
+    },
+    {
+      "claim_id": "ed0fcf39-a5a6-46a7-bdd3-1ea6c7aa1c47",
+      "result_id": "36fbf769-7c2b-4d1f-94dd-25c12325e472"
+    },
+    {
+      "claim_id": "003709bf-cdfe-4446-8936-8fbbb6fd9804",
+      "result_id": "36fbf769-7c2b-4d1f-94dd-25c12325e472"
+    },
+    {
+      "claim_id": "ea2495de-929e-4b54-b057-dc36fa7cfd36",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "702f7dd3-93b9-4bf3-9554-084441ab0714",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "ff374492-a8ca-4ea3-83de-22a668aa368c",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "b7088ab0-eb24-49eb-a892-864a8f415e33",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "1c5cd9e8-7639-4ea0-9812-5cf179e8f51c",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "d70c1b5c-b931-4bfb-8fa2-422e28cb47d2",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "54861964-f808-4ff2-bf97-a3e546a7d364",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "96f425b5-2d30-4637-85ee-0b78f9db5030",
+      "result_id": "70734b26-3307-456c-9a5d-fec8d8db47f4"
+    },
+    {
+      "claim_id": "1fb15f38-b0a6-4c11-bf2e-a59a8ce357a6",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "12bc2ed1-0e15-493d-8bfe-f9f7f84efc4a",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "08c5b695-5b7b-45f3-8976-c1ad05ea3645",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "49312c10-dc54-44e8-9cbd-752bc8bc223d",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "06d01739-9be4-4315-8add-9881ee77a3b2",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "8cb2d312-9def-4c9c-a5ad-beac66de5b96",
+      "result_id": "c8874139-4303-405b-9aed-c7c5c715e361"
+    },
+    {
+      "claim_id": "8a7a930b-43be-4231-bf13-4cbdeb76f5b5",
+      "result_id": "deb18da3-4cab-4731-9b32-c54e11b649d3"
+    },
+    {
+      "claim_id": "9e96a7a0-918f-4477-9ad5-6354a24a0f6a",
+      "result_id": "deb18da3-4cab-4731-9b32-c54e11b649d3"
+    },
+    {
+      "claim_id": "c50836c2-d273-4deb-bfba-c8bced9324c0",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "4970ab83-0e93-4f36-96bf-8f11e7e8b57c",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "a3a91e50-4527-4ab8-a641-eb24fa8c8b85",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "5200b23b-ac6c-4f7c-992c-c1eb260ff698",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "4042bff8-f5a0-45aa-8c25-d20719eb3a5d",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "ad461b1d-2a76-47ff-b971-06c585f3cd4a",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "cb2f64f2-583c-4461-a625-91c7dfefe0ac",
+      "result_id": "4d750cb4-c894-4cf5-ab14-c8ac781cac05"
+    },
+    {
+      "claim_id": "680f4a60-a174-4899-9503-5a41a470b652",
+      "result_id": "5876eafd-989a-4816-8458-3c130b492798"
+    },
+    {
+      "claim_id": "7ab46ea8-b03a-4550-98d8-35852bb323ae",
+      "result_id": "5876eafd-989a-4816-8458-3c130b492798"
+    },
+    {
+      "claim_id": "e7b47f0c-e6fc-4ce5-a98f-70184fd176ce",
+      "result_id": "5b3852d1-bccc-40dc-b9ca-ba1aa856a37d"
+    },
+    {
+      "claim_id": "f81eb412-4707-4533-8078-2a37a065f3dc",
+      "result_id": "5b3852d1-bccc-40dc-b9ca-ba1aa856a37d"
+    },
+    {
+      "claim_id": "8b391b48-2100-47f8-b58c-a048fbe40e8d",
+      "result_id": "5b3852d1-bccc-40dc-b9ca-ba1aa856a37d"
+    },
+    {
+      "claim_id": "03ba1866-53e0-43ad-99b9-e43aebdf669b",
+      "result_id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34"
+    },
+    {
+      "claim_id": "a7511b75-8d61-4e60-a0bd-ed2ec9a9618b",
+      "result_id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34"
+    },
+    {
+      "claim_id": "983b84c9-8480-47e4-9459-e40b4946193a",
+      "result_id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34"
+    },
+    {
+      "claim_id": "1789ffdb-d0cd-49f7-bf63-2e6fcaa4327f",
+      "result_id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34"
+    },
+    {
+      "claim_id": "6fd5ff68-6187-4685-a04a-8e159a85da5f",
+      "result_id": "82962abe-8534-46cb-af7b-3bfd5a3d5f34"
+    },
+    {
+      "claim_id": "a167db32-ffab-4795-bf61-025e913b7811",
+      "result_id": "ba2a4aeb-fc1e-4e2b-935f-12b231a6ffc8"
+    },
+    {
+      "claim_id": "29c140ec-54bb-4488-aa1c-6dd56d74f5f5",
+      "result_id": "ba2a4aeb-fc1e-4e2b-935f-12b231a6ffc8"
+    },
+    {
+      "claim_id": "4aa80742-9fd3-4b9d-aa72-32e6aa128688",
+      "result_id": "270a8fc6-4afe-4a62-b7aa-e742701e507c"
+    },
+    {
+      "claim_id": "80463969-6e25-465f-83ea-d3151f0e0a81",
+      "result_id": "270a8fc6-4afe-4a62-b7aa-e742701e507c"
+    },
+    {
+      "claim_id": "4745669e-1c3a-4e25-bfb8-8a3d64bc752d",
+      "result_id": "270a8fc6-4afe-4a62-b7aa-e742701e507c"
+    },
+    {
+      "claim_id": "8c085a3b-e05f-4578-8f76-b49a9aec6dd9",
+      "result_id": "270a8fc6-4afe-4a62-b7aa-e742701e507c"
+    },
+    {
+      "claim_id": "2865519b-dff0-4704-9bc7-84701635adc5",
+      "result_id": "19631b38-0d6a-4321-94bf-0150d7363e72"
+    },
+    {
+      "claim_id": "06a5972c-3f11-44f3-a5a8-2dd0833080b3",
+      "result_id": "19631b38-0d6a-4321-94bf-0150d7363e72"
+    },
+    {
+      "claim_id": "4a9c6255-5ab3-4809-bebe-90b14dba77fa",
+      "result_id": "19631b38-0d6a-4321-94bf-0150d7363e72"
+    },
+    {
+      "claim_id": "45555b8c-c6d4-4e9c-aba6-020f52a6f3d2",
+      "result_id": "19631b38-0d6a-4321-94bf-0150d7363e72"
+    },
+    {
+      "claim_id": "75196085-9dc9-4ab5-85ac-696397270c27",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "e0619a38-3421-4249-a1fb-c5cafa0ff73d",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "0c99aecf-2281-4f72-b131-1c30aaea7d4a",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "35e85ef2-789f-4bdf-ad3f-8a07dfbc968a",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "ccc77e04-aa7a-4fdc-a744-72b1e2344144",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "656c83ec-68fb-46ae-82c8-52730c2ca897",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "15154b9f-c2e7-483c-92bb-aba28ae1138b",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "41f7aa06-2755-4f34-8dc1-7e0355616c69",
+      "result_id": "209dba82-41f3-4332-bb96-b17ec87dbc5e"
+    },
+    {
+      "claim_id": "47e8d960-a65d-444d-8c1b-ce8bb3e705ac",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "800f0ba7-f23a-4b1a-b139-a50f870884ab",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "a7a37b62-524a-456c-8322-b69b818a459f",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "7c3a4772-4fe9-4da7-9bfd-06c95e520b84",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "002fdd59-ad62-4506-b5d3-b0870f0aa1ca",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "35b3d4d0-9945-4bad-be0b-017c7f16438c",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "6d3f141c-0d78-4998-89ee-61c2e83182a0",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "48ed4ddb-6fba-4380-bdf8-5567625a885c",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "a4bf034a-77eb-4f29-8150-15a39c68d9df",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "4705a0e6-579a-4aaa-98c8-2ca319a0a38a",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "0e25bd98-c2b1-4308-af21-9cc66b672872",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    },
+    {
+      "claim_id": "ccf644e5-422d-43fb-9fed-0e613a9c19f1",
+      "result_id": "6a07a715-2f2c-4db8-b36c-3df30cbaf77c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors developed a full-scale, data-driven computational model of the rodent CA1 hippocampal region containing 338,740 cells (311,500 pyramidal cells and 27,240 interneurons of 8 types) with 5.19 billion synaptic connections. The model was implemented in parallel NEURON 7.4 and required 3-4 TB of RAM and 4 hours on ~3000 processors for a 4-second simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C35, and C152-C157 collectively describe the model architecture, scale, and computational requirements. The model specifications are clearly documented with specific numbers for cells, synapses, and computational resources. The connectivity data were taken from prior published work (C32), providing experimental grounding. The scale and implementation details are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C86",
+      "C87"
+    ],
+    "result": "The full-scale CA1 model spontaneously generated theta oscillations (7.8 Hz peak frequency) and phase-locked gamma oscillations (25-80 Hz) without rhythmic external inputs or deliberate parameter tuning. Theta emerged within one theta period and remained stable throughout simulations, with gamma amplitude maximal at theta trough (0\u00b0/360\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C36-C43, C86-C87 describe the spontaneous emergence of theta and gamma oscillations. The results are demonstrated in Figures 3 and 4 with multiple measures (LFP analog, spike density functions, spectrograms). The claim of novelty (C39) as the first data-driven full-scale model showing spontaneous theta is reasonable given the model's scale and constraints. Cross-frequency coupling between theta and gamma (C41-C42) is demonstrated quantitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Distinct interneuron types exhibited phase-preferential firing during theta oscillations, with 71% (5/7) of interneuron types showing similar phase preferences in the model and in vivo experimental data. The phase preferences emerged spontaneously without parameter tuning, suggesting they are largely determined by CA1 circuit wiring properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26, C47-C53 describe phase-preferential firing patterns. Figure 5 provides quantitative comparison between model and experimental data showing good agreement for most cell types (C49). The exceptions (PV+ basket and ivy cells, C50-C51) are acknowledged with plausible explanations involving CA3 inputs. The conclusion that wiring properties determine phase preferences (C52-C53) is reasonable given the model's architecture, though the inference is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model exhibited spontaneous theta oscillations only within a specific range of afferent excitation levels (0.65-0.80 Hz). Below 0.65 Hz, theta collapsed; above 0.80 Hz, oscillations shifted out of theta range into beta frequencies (12-20 Hz). This demonstrates that CA1 circuit organization enables intrinsic theta generation but only under particular input conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe the parameter sensitivity of theta generation, demonstrated in Figure 6A. The narrow range of excitation levels supporting theta (C54-C56) is clearly shown. The conclusion that CA1 organization enables but constrains theta generation (C57-C58) is well-supported by the data. The observation of beta oscillations at higher excitation (C59) is consistent with experimental findings (cited), providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C27",
+      "C110"
+    ],
+    "result": "Perturbation experiments identified specific cell types and connections critical for theta generation. Muting pyramidal cell outputs (C60-C61) or pyramidal-to-pyramidal connections alone (C62) abolished theta. Silencing PV+ basket, axo-axonic, bistratified, CCK+ basket, or neurogliaform cells strongly reduced theta (C66-C70), while muting S.C.-A, O-LM, or ivy cells had no effect (C71-C73). Partial muting of PV+ outputs had larger effects than SOM+ outputs (C74), consistent with experimental data (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C60-C75, C110 describe systematic perturbation experiments shown in Figure 6B-D. The differential effects of muting different cell types are clearly demonstrated. The finding that pyramidal-to-pyramidal connections are critical (C62) is particularly notable given their rarity (197 connections per cell, C63). The parameter sensitivity shown in C65 (doubling or halving connections disrupts theta) strengthens the conclusion. Agreement with experimental optogenetic data (C75) provides important validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C88",
+      "C89",
+      "C90",
+      "C104"
+    ],
+    "result": "Interneuronal diversity itself is necessary for theta generation. When all interneurons were given a single electrophysiological profile (regardless of which profile), theta oscillations disappeared (C76-C77). Even converting all interneurons to PV+ basket cells\u2014which are individually important for theta\u2014failed to produce theta (C77-C79), and adding variability in resting membrane potential did not restore theta (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76-C79, C88-C90, C104 describe a novel finding about the necessity of interneuronal diversity. Figure 6E-F demonstrates that homogenizing interneuron properties abolishes theta regardless of which profile is used. The systematic convergence experiment (C77) and the failure to restore theta with membrane potential variability (C78) strengthen the conclusion. This is an unexpected finding (C104) that goes beyond showing individual cell types are important to demonstrating that diversity itself is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C70"
+    ],
+    "result": "Neurogliaform cells are important for theta generation, with their muting strongly reducing theta power, while the closely related ivy cells showed no effect when muted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70, C80 identify neurogliaform cells as important for theta, demonstrated in Figure 6B. The differential effect compared to ivy cells (C80) is clearly shown in the same figure. However, the mechanistic explanation involving GABA_B receptors is addressed in a separate result below. The finding is well-supported by the perturbation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "GABA_B receptors play roles in setting spike timing during theta and in cortical oscillations and memory processes, as reported in prior experimental literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are statements about prior experimental work, supported by citations (Kohl and Paulsen, 2010; Craig and McBain, 2014). These are background claims that provide context for the model's findings about neurogliaform cells and GABA_B. The claims accurately represent cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model processes a biologically realistic number of afferent spikes per theta cycle. At 0.65 Hz excitation, the model receives ~37,900 spikes/cycle, closely matching the estimated ~37,750 spikes/cycle from ipsilateral CA3 (~32,750 spikes) and ECIII (~5,000 spikes) in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 provide a biological validation of the model's excitation levels through quantitative comparison with in vivo estimates. The calculations are clearly presented (Equations 1-3) and based on published experimental data (C96-C100). The close match between model input (37,900 spikes/cycle) and biological estimate (37,750 spikes/cycle) supports the physiological relevance of the 0.65 Hz excitation level used in the control simulations. The reasoning is sound and the calculations are verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model was capable of reproducing experimentally observed low pyramidal cell firing rates during theta. While pyramidal cells fired more than typical in the base model (C44), simulations with rationally scaled-up inhibition produced firing rates (1% active cells at 1.8 Hz) closely matching in vivo conditions (C45-C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 acknowledge a limitation of the base model and demonstrate that it can be addressed. The higher firing rates in the base model (C44) are attributed to missing interneuron types (not included due to insufficient data). The scaled inhibition simulations (C45) show the model can reproduce in vivo firing rates when inhibition is adjusted to match electron microscopy estimates. This demonstrates the model's flexibility and biological plausibility, though the base model results are used for most analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The model reveals a mechanistic sequence for theta generation: pyramidal cells fire at theta trough, recruiting PV+ basket and bistratified cells, which silence pyramidal cells for ~60\u00b0 of the theta cycle. Pyramidal cells then progressively re-recruit in a gamma-paced manner via intra-CA1 collaterals, culminating in peak firing at the next trough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 describe a proposed mechanism for theta generation based on the model's dynamics, illustrated in Figure 3C. The sequence is clearly observable in the raster plots showing cell type-specific firing patterns. The gamma-paced recruitment (C114) is visible in the pyramidal cell raster. The proposed role of intra-CA1 collaterals (C115) is consistent with the perturbation results showing these connections are necessary (C62). However, C115 is somewhat speculative ('likely') as it's an inference from the model dynamics rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Model results were compared to experimental data from isolated CA1 preparations when available, and to in vivo anesthetized data for phase-preferential firing (which provided the most complete dataset). Phase preferences for axo-axonic cells matched anesthetized data better (163\u00b0 vs 185\u00b0), while PV+ basket cells matched awake data better (357\u00b0 vs 289-310\u00b0). Bistratified and O-LM cells fired near trough in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 describe the rationale for comparing model results to different experimental conditions and document the specific comparisons. The approach is reasonable given data availability (C118). The quantitative comparisons (C119-C121) are clearly presented in Figure 5 and supplementary figures. The mixed agreement with awake vs. anesthetized data for different cell types is honestly reported and discussed. This transparency about model-experiment correspondence strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The model is fundamentally based on rat CA1 anatomy and connectivity, though some electrophysiology data came from mouse. Experimental data on isolated CA1 came from both rat and mouse. The authors did not separate rat and mouse data in comparisons, as there is no reported evidence for major systematic differences in key parameters between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 document the species sources for model data and justify the decision not to separate rat and mouse comparisons. The rationale (C125) that there are no reported major differences in key parameters is reasonable, though it would be stronger with explicit citations. The transparency about mixed species data sources (C122-C124) is appropriate. This is primarily methodological documentation rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The theta rhythm generated by the model most likely resembles the atropine-resistant form (associated with walking, not dependent on neuromodulatory inputs) rather than the atropine-sensitive form (requiring rhythmic cholinergic inputs), since the model did not explicitly represent neuromodulatory inputs. However, both forms may benefit from occurring in a network predisposed to oscillate at theta frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 discuss which form of in vivo theta the model represents. C126 accurately describes the two forms from literature. C127 is a reasonable inference given the model lacks neuromodulatory inputs, but remains speculative ('likely'). C128 is even more speculative ('plausible') about both forms benefiting from intrinsic theta predisposition. While the reasoning is sound, these claims are interpretive rather than directly tested, and the model cannot definitively distinguish between theta types without implementing neuromodulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that hippocampal theta rhythm plays important roles in information processing and cognitive tasks, but the mechanisms of its generation\u2014particularly the intra-CA1 mechanisms\u2014are not well understood. Recent reports show spontaneous theta in isolated CA1 preparations, suggesting intrinsic theta-generating ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C16 provide background context from the literature. These are well-supported by multiple citations to established experimental work. C14-C15 about isolated CA1 preparations are particularly important as they motivate the modeling approach. These background claims accurately represent the state of the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Full-scale models avoid the connectivity scaling tradeoff of reduced-scale models (which require artificially increased synaptic strengths) and can match in vivo processing capacity, though they require considerable computational resources and have large parameter spaces. CA1 is a logical choice for full-scale modeling due to abundant data and its role in diverse cognitive tasks requiring simultaneous processing of thousands of signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 provide rationale for the full-scale modeling approach. The advantages (C17, C24) and challenges (C19-C20) of full-scale models are accurately described with appropriate citations (C18, C20). The justification for choosing CA1 (C21-C23) is reasonable given data availability and functional importance. These are primarily methodological justifications rather than results, but they are well-reasoned and supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The intrinsic ability of CA1 to generate theta and support phase-preferential firing may serve to maintain stability and robustness of theta mechanisms in vivo across diverse behavioral states. Theta is thought to organize memory tasks, and a network predisposed to theta/gamma oscillations may enable more efficient processing of phasic inputs. Phase-preferential firing may aid information processing by providing order and enabling parallel processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are speculative interpretations about the functional significance of the findings. While C92-C94 are supported by citations to relevant literature, these are 'may' statements about potential functions rather than tested hypotheses. C91 is entirely speculative about the adaptive value of the observed properties. These interpretations are reasonable and well-grounded in theory, but they go beyond what the model directly demonstrates and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The full-scale CA1 model results are consistent with earlier models demonstrating emergent oscillations in microcircuits and small networks, and provide a full-scale option to advance studies of network activity propagation and information processing during theta. The model demonstrates that emergent theta, gamma, and phase-preferential firing are possible even when scaled up to full size with 5 billion synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 position the work relative to prior modeling studies. C129 and C130 appropriately cite relevant prior work and explain how the current model extends it. C131 summarizes the key achievement of demonstrating emergent oscillations at full scale. These claims accurately represent the relationship between this work and prior studies, and C131 is well-supported by the results described in other claim groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The CA1 model can be developed into a whole hippocampal/temporal lobe model by replacing artificial afferents with detailed CA3, ECIII, and septal networks. Previous dentate gyrus models have been used by multiple groups for diverse topics, demonstrating that resource-intensive model development is offset by broad utility. Future efforts will be needed to incorporate additional parameters (gap junctions, short-term plasticity, neuromodulators, pyramidal cell diversity, glia, cell-to-cell variability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 discuss future directions and the broader modeling strategy. C132 is a reasonable statement about model extensibility. C133-C134 provide evidence from prior work that detailed models have broad utility, supported by extensive citations. C135 appropriately acknowledges current limitations and areas for future development. These are forward-looking statements that are reasonable given the model's design and the authors' prior experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C158"
+    ],
+    "result": "The model is publicly accessible via the Neuroscience Gateway (requiring no supercomputing expertise), is well-documented and characterized in experimental terms, and all model configurations and simulation data are available online for reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138, C158 describe the accessibility and reproducibility provisions for the model. These are verifiable statements about data and code availability. The provision of multiple access points (ModelDB, Open Source Brain, Neuroscience Gateway) and comprehensive documentation demonstrates strong commitment to reproducibility and community use. These are important for scientific rigor but are methodological rather than scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "There is increasing recognition (highlighted by BRAIN Initiative) that collective experimental observations must be compiled into cohesive, functional models to fully benefit from produced knowledge. Large programs (Hippocampome, Human Brain Project, NeuroElectro) are organizing neuroscience data, creating opportunities to build full-scale models. Such models avoid scaling tradeoffs, enable investigations at multiple levels, and represent a new strategy complementary to focused models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 provide broader context about trends in neuroscience and computational modeling. C139 and C142 are supported by appropriate citations. C140-C141 and C143-C147 make reasonable arguments about the value and opportunities of full-scale modeling. These are primarily perspective/opinion statements about the field rather than results, but they are well-reasoned and appropriately supported. They provide important context for understanding the significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The CA1 model produces results in agreement with experimental data and extends them to probe mechanisms of spontaneous theta generation. It provides testable predictions for future experiments and is a relevant resource for exploring spatial and memory processing, including transformation of incoming information to mnemonic engrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 summarize the contributions and potential applications of the model. C148-C149 accurately summarize the validation and mechanistic insights demonstrated in other results. C150 is reasonable given the specific predictions about cell types, connections, and diversity requirements. C151 is somewhat speculative about future applications but reasonable given the model's scale and biological detail. These are appropriate summary statements of the work's significance.",
+    "result_type": "MINOR"
+  }
+]

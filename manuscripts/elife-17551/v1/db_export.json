@@ -1,0 +1,1339 @@
+{
+  "submission": {
+    "id": "b3add15c-05f3-48e0-b4f3-535467fa6c52",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:08:30.677857Z",
+    "updated_at": "2025-11-30T22:08:30.677857Z"
+  },
+  "content": [
+    {
+      "id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "submission_id": "b3add15c-05f3-48e0-b4f3-535467fa6c52",
+      "content_type": "manuscript",
+      "content_text": "# Prostaglandin signaling regulates nephron segment patterning of renal progenitors during zebrafish kidney development\n\n## Authors\n\n- Shahram Jevin Poureetezadi<sup>1</sup>\n- Christina N Cheng<sup>1</sup>\n- Joseph M Chambers<sup>1</sup>\n- Bridgette E Drummond<sup>1</sup>\n- Rebecca A Wingert<sup>1</sup> ([ORCID: 0000-0003-3133-7549](https://orcid.org/0000-0003-3133-7549)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences University of Notre Dame Notre Dame United States\n2. Center for Stem Cells and Regenerative Medicine, Center for Zebrafish Research University of Notre Dame Notre Dame United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nKidney formation involves patterning events that induce renal progenitors to form nephrons with an intricate composition of multiple segments. Here, we performed a chemical genetic screen using zebrafish and discovered that prostaglandins, lipid mediators involved in many physiological functions, influenced pronephros segmentation. Modulating levels of prostaglandin E2 (PGE2) or PGB2 restricted distal segment formation and expanded a proximal segment lineage. Perturbation of prostaglandin synthesis by manipulating Cox1 or Cox2 activity altered distal segment formation and was rescued by exogenous PGE2. Disruption of the PGE2 receptors Ptger2a and Ptger4a similarly affected the distal segments. Further, changes in Cox activity or PGE2 levels affected expression of the transcription factors irx3b and sim1a that mitigate pronephros segment patterning. These findings show for the first time that PGE2 is a regulator of nephron formation in the zebrafish embryonic kidney, thus revealing that prostaglandin signaling may have implications for renal birth defects and other diseases.\n\n## Introduction\n\nThe kidney serves central functions in metabolic waste excretion, osmoregulation, and electrolyte homeostasis. Vertebrate kidney organogenesis is a dynamic process involving the generation of up to three distinct structures that originate from the intermediate mesoderm (IM) (Saxen, 1987). In mammals, a pronephros, mesonephros, and metanephros develop in succession. Of these structures, the pronephros and mesonephros both eventually disintegrate, leaving the metanephros as the adult kidney. In contrast, lower vertebrates such as fish and amphibians only form a pronephros and mesonephros, which are active during embryogenesis and larval stages, respectively, and the mesonephros subsequently serves as the adult organ (Dressler, 2006).\n\nDuring the progression of vertebrate kidney ontogeny, composition of the basic renal functional unit, termed the nephron, remains largely similar across species (Desgrange and Cereghini, 2015). Nephrons contain a renal corpuscle that filters the blood, a tubule that modifies the filtrate solution, and a collecting duct (Romagnani et al., 2013). The tubule portion of the nephron is configured along its proximo-distal axis with specific groupings of cells, termed segments, which possess unique physiological roles in solute reabsorption and secretion. While the organization of proximal and distal nephron segments is broadly conserved (Romagnani et al., 2013), the genetic and molecular mechanisms that regulate formation of each segment lineage have yet to be fully described (Costantini and Kopan, 2010).\n\nThe zebrafish embryonic pronephros is a useful model to delineate the processes that regulate vertebrate nephron segmentation because it is anatomically simple, being comprised of only two nephrons (Gerlach and Wingert, 2013). Further, the transparent nature of zebrafish embryos, their ex utero development, and the ease at which large numbers can be obtained and managed, are all features that readily facilitate renal development and disease studies (Pickart and Klee, 2014; Poureetezadi and Wingert, 2016). The zebrafish pronephric tubule has four discrete tubule segments: a proximal convoluted tubule (PCT), proximal straight tubule (PST), distal early (DE), and distal late (DL) (Wingert et al., 2007) (Figure 1A). The proximal segments are homologous to the PCT and PST in mammals, while the distal segments are homologous to the mammalian thick ascending limb (TAL) and distal convoluted tubule (DCT), respectively (Wingert et al., 2007; Wingert and Davidson, 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig1-v1.jpg)\n\n**Figure 1.:** (A) A diagram detailing the segmentation of the pronephros in relation to somites within the zebrafish embryo. Arrows indicate the blood filter, duct, and cloaca. (B) A schematic of the chemical genetic screen used for evaluating small molecules. Embryos were arrayed in 96-well plates and then exposed to drugs diluted in E3 medium from 60% epiboly to 24 hpf, where the embryos were then fixed and underwent WISH using a riboprobe cocktail to detect the P (wt1b), PCT (slc20a1a), and DE (slc12a1). Black and blue bars are used to illustrate changes between the WT embryo and an embryo with a patterning phenotype, respectively. (C) A pie graph and table denoting the number and percentage of small molecules hits from the chemical screen that expanded or restricted the P (blue and teal), PCT (green and purple) or DE (red and yellow). (D) WISH in 24 hpf stage embryos to detect the P (wt1b), PCT (slc20a1a), and DE (slc12a1) in WTs and those treated with 4-HPR, PGD2, PGA1, PGJ2, and PGB2. A black or blue bar was used to notate the segment change between the WT and drug treated embryos, respectively. Red scale bar, 70 \u00b5m. (E) Schematic showing example components of prostaglandin production and signaling. The precursor arachidonic acid (AA) interacts with either the Ptgs1 or Ptgs2a enzyme to generate an intermediate moiety, with the example here being PGH2. The intermediate interacts with a subsequent enzyme to produce the bioactive prostanoid molecule. Here, we depict the prostaglandin E synthase, Ptges, creating the bioactive prostaglandin PGE2 that can transduce signals through binding several G-protein coupled receptors such as Ptger2a and Ptger4a. Other receptors work with other bioactive prostaglandins. Indomethacin is a nonselective Cox (Ptgs1/Ptgs2a) inhibitor that prevents prostaglandin biosynthesis.\n\nDuring zebrafish kidney development, renal progenitors arise rapidly from the IM and undergo a mesenchymal to epithelial transition (MET) to engender the tubule by 24 hr post fertilization (hpf) (McKee et al., 2014; Gerlach and Wingert, 2014). Prior to this, the renal progenitors undergo complex segment lineage patterning events, beginning with their segregation into rostral and caudal subdomains, a process that is orchestrated by the morphogen retinoic acid (RA) which is locally secreted by the adjacent paraxial mesoderm (PM) (Wingert et al., 2007; Wingert and Davidson, 2011). Modulating levels of RA affects the specification of renal progenitors, inducing proximal segment lineage formation over distal, which can be accentuated by the addition of exogenous all-trans RA, while distal fates are induced over proximal by inhibiting endogenous production of RA through the application of the biosynthesis inhibitor N,N-diethlyaminobenzaldehyde (DEAB) (Wingert et al., 2007; Wingert and Davidson, 2011). Through expression profiling and subsequent functional studies, several transcription factors have been mapped as acting downstream of RA signaling to regulate pronephros segmentation and epithelial fate choice, including hepatocyte nuclear factor-1 beta (paralogues hnf1ba and hnf1bb), iroquois homeobox 3b (irx3b), mds1/evi1 complex (mecom), single minded family bHLH transcription factor 1a (sim1a), and t-box 2 (paralogues tbx2a and tbx2b), among others (Wingert and Davidson, 2011; Naylor et al., 2013; Li et al., 2014; Kroeger and Wingert, 2014; Cheng and Wingert, 2015; Marra and Wingert, 2016;\u00a0Marra et al., 2016; Drummond et al., 2017). Despite these advances, the identity of the other essential signals that control renal progenitor fate decisions has remained elusive (Cheng et al., 2015).\n\nHistorically, prostaglandins have been defined as functionally diverse molecules that regulate an array of biological tasks, including inflammation and vasoregulation (Funk, 2001; Tootle, 2013). With regard to the adult kidney, prostaglandins regulate many aspects of renal physiology, ranging from tubular transport processes to hemodynamics (Nasrallah et al., 2007). Prostaglandins are lipid mediators produced by the sequential actions of a series of enzymes, and exert their effects by paracrine or autocrine signaling through distinct G-protein coupled receptors (Funk, 2001; Tootle, 2013). More specifically, there are five major prostaglandins produced from the precursor arachidonic acid (AA) by the enzymes Prostaglandin-endoperoxide synthase one or Prostaglandin-endoperoxide synthase 2a (Ptgs1 and Ptgs2a in zebrafish, also known as cyclooxygenases COX-1 and COX-2 in mammals) followed by subsequent processing by particular synthases (Funk, 2001; Tootle, 2013). Each bioactive prostanoid interacts with one or more G-protein\u00a0coupled membrane receptors (Funk, 2001; Tootle, 2013). For example, COX activity on AA can generate the intermediate PGH2, from which the PGE2 bioactive can be produced by the prostaglandin E synthase (Ptges) (Figure 1E). PGE2 will signal by subsequent interactions with Ptger G-protein coupled receptors including EP1, EP2, EP3 and EP4 (known as Ptger1-4 in zebrafish) on receiving cells (Figure 1E) (Funk, 2001; Tootle, 2013; Yang et al., 2013).\n\nWhile prostaglandin biosynthesis and signal transduction have been extensively studied in both healthy and diseased adult tissues (Matsuoka and Narumiya, 2007; Smyth et al., 2009), knowledge of their roles in development have been more challenging to ascertain for several reasons. Firstly, although it is thought that various factors that produce prostaglandins are broadly expressed during ontogeny, precise knowledge about the spatiotemporal progression of particular pathway components is incomplete. Secondly, there is a substantial void in our understanding due to the results of murine loss of function studies where genetic disruptions of components within the prostaglandin pathway was associated with observably normal development. This led to the hypothesis that maternal prostaglandin sources had rescued embryogenesis, thereby complicating the use of mammalian models to study prostaglandin requirements during ontogeny. The importance of reevaluating prostaglandin signaling in kidney formation has been emphasized by a recent report that COX-2 dosage is critical for murine metanephros development, though it is presently enigmatic whether there are requirement(s) for discrete stages of nephrogenesis (Slattery et al., 2016).\n\nIn lieu of the challenges of using mammalian systems to delineate the roles of prostaglandin signaling during development, considerable insights in vertebrates have nevertheless been achieved recently through research using the zebrafish model. Most notably, there have been transformative revelations regarding the conserved roles of prostaglandin signaling during definitive blood formation, where PGE2 was found to regulate hematopoietic stem cell (HSC) development and function (North et al., 2007). A chemical genetic screen in zebrafish also identified the prostaglandin pathway as a modifier of endoderm organogenesis, where in subsequent work it was found that PGE2 activity controls opposing cell fate decisions in the developing pancreas and liver through the ep4a receptor (also known as ptger4a), which derive from a bipotential endoderm progenitor (Garnaas et al., 2012; Nissim et al., 2014). Other than these studies, there is little known about how prostaglandin signaling may affect cell fate decisions during the emergence of other vertebrate tissues.\n\nHere, we report the discovery that PGE2 signaling has potent effects in regulating proximal and distal segment formation during nephrogenesis in the developing zebrafish kidney. Using the zebrafish embryo for gain and loss of function studies, in addition to whole mount in situ hybridization (WISH) to profile gene expression, we uncovered that the Cox enzymes Ptgs1 and Ptgs2a, as well as the PGE2 receptors Ptger2a and Ptger4a, are necessary to properly establish distal nephron segment boundaries during pronephros genesis. Further, we found that addition of PGE2 was sufficient to rescue distal segmentation in Ptgs1 and Ptgs2a deficient zebrafish. Interestingly, treatment with exogenous PGE2 or PGB2 during nephrogenesis induced a striking expansion of a proximal tubule segment lineage in a dosage-dependent manner. Taken together, this work reveals for the first time that alterations in PGE2 signaling, and possibly other prostaglandins as well, has important consequences for the developing nephron.\n\n## Results\n\n### Chemical genetic screen reveals that prostaglandin levels affect nephron development\n\nTo date, much remains unknown concerning the factors that control nephron segment development and cell fate decisions. The zebrafish pronephros is an experimentally tractable system to interrogate the genetic factors that regulate nephrogenesis because of its simple, conserved tubule structure, with two proximal segments and two distal segments (Figure 1A) (Ebarasi et al., 2011; Drummond and Wingert, 2016). The nephrons share a blood filter comprised of podocyte cells (P), followed by a neck (N) segment that transports fluid into the tubule, and finally a pronephric duct (PD) that drains caudally at the cloaca (C), a common exit for the kidney and gut in the embryo (Figure 1A, middle panel). Nephron segment fates are established by the 24 hpf stage, based on the expression of unique solute transporters, and each segment has been mapped to a precise axial location relative to the somites that comprise the embryonic trunk (Figure 1A, bottom panel), which facilitates the analysis of pattern formation within the renal progenitor field (Wingert et al., 2007).\n\nChemical genetics is a powerful approach to study developmental events in the context of the whole organism, and the application of chemical genetics in the zebrafish has led to a number of valuable discoveries about the mechanisms of organogenesis in diverse tissues, including derivatives of the mesoderm (Lessman, 2011; Poureetezadi and Wingert, 2013). Therefore, we hypothesized that a chemical genetic screen could provide new insights about the identity of nephrogenesis regulators. To this end, we performed a chemical genetic screen using the Screen-Well ICCB Known Bioactives Library (Enzo Life Sciences), a collection that includes 480 compounds with known biological activities. Zebrafish embryos were collected from timed matings of wild-type (WT) adults, and then arrayed in 96-well plates for control (dimethyl sulfoxide, DMSO) or experimental treatment between 4 and 24 hpf (Figure 1B). At the 24 hpf stage, embryos were fixed for multiplex WISH analysis, during which they were assessed for expression of a set of genetic markers that distinguished alternating nephron segments within the pronephros, namely wt1b to directly label the P, slc20a1a to label the PCT, and slc12a1 to label the DE (Figure 1B). Because these riboprobes stain alternating nephron segments, they enabled precise scoring as to whether exposure to each chemical led to an expansion or restriction of these distinct cell types (Figure 1C, Figure 1\u2014source data 1).\n\nIn total, 16.25% (78/480) of ICCB bioactives were associated with nephron phenotypes (Figure 1C, Figure 1\u2014source data 1). The effect of each compound was annotated as to whether the experimental dosage was associated with WT development, an expansion in segment(s) (P+, PCT+, DE+) or a restriction in segment(s) (P-, PCT-, DE-) (Figure 1C,\u00a0Figure 1\u2014source data 1). The compounds that led to alterations in nephrogenesis included numerous RA pathway agonists and antagonists, such as 4-hydroxyphenylretinamide (4-HPR), a synthetic analog of all-trans RA (Figure 1D) (Poureetezadi et al., 2014). Compared to WTs, exposure to 1 mM 4-HPR led to an expansion of the PCT, caudal shift of the DE, and a dramatic expansion of the interval between these segments where the PST normally emerges, suggestive of an expanded PST segment (Figure 1D) (Poureetezadi et al., 2014). The observation that molecules which impact the RA pathway were flagged as hits in the screen provided an important positive control for our experimental system, given the well-established effects of RA levels on renal progenitors (Wingert et al., 2007; Wingert and Davidson, 2011; Li et al., 2014; Cheng and Wingert, 2015; Marra and Wingert, 2016; Drummond et al., 2017).\n\nIn further surveying the identities and respective classifications of the small molecules that impacted nephrogenesis, we noted a striking trend with regard to prostaglandin pathway agonists and tubule segmentation. Among the screen hits, a series of prostaglandin cytokine moieties were independently flagged as modifiers of tubule segment formation, including PGD2, PGA1, PGJ2, and PGB2 (Figure 1D, Figure 1\u2014source data 1). Exposure to these bioactive prostaglandins was associated with changes in the pronephros whereby there was a reduced PCT segment length and a posterior shift in the position of the DE, such that there was a noticeably longer domain between these segment regions compared to WT control embryos (Figure 1D). The discovery that exposure to exogenous prostaglandins was linked with several segmentation changes was particularly fascinating to us because PGE2 signaling has been associated recently with the development of several tissues, including HSCs and fate choice in endoderm derivatives between the liver and pancreas (North et al., 2007; Nissim et al., 2014). Therefore, we next sought to further explore how elevated prostaglandin levels, including PGE2, affected nephron segment development.\n\n### Elevated PGE2 or PGB2 levels induce an expansion of the PST segment and DL reduction\n\nProstaglandins typically have a short half-life, and have been characterized as secreted molecules that activate receptors close to their site of production, thus inducing local effects in a paracrine or autocrine fashion (Smyth et al., 2009). Prostaglandins have also been shown to elicit dosage-specific effects, leading to their description as morphogens (Nissim et al., 2014). Therefore, to validate and further explore the screening results, we selected two prostanoids: one was a hit from our screen, PGB2, and the other was 16,16-dimethyl-PGE2 (dmPGE2), a long-acting derivative of PGE2 which has been extensively used to study the effects of PGE2 in zebrafish (North et al., 2007; Goessling et al., 2009; Nissim et al., 2014). WT embryos were collected and incubated in varying concentrations of drug (30 \u03bcM, 50 \u03bcM, 80 \u03bcM or 100 \u03bcM) from the 4\u00a0hpf stage to the 24 hpf stage. Double WISH was then performed to determine the resultant nephron segments alongside the trunk somites, and the absolute lengths of nephron segment domains were also measured (Figure 2, Figure 2\u2014figure supplements 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig2-v1.jpg)\n\n**Figure 2.:** (A) Embryos were exposed to 100 \u00b5M dmPGE2 between 4 hpf and 24 hpf. WISH was used to stain for the PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B,C) The PST and DL segments were measured in microns after incubation in 100 \u03bcM of dmPGE2 (n\u00a0=\u00a05 for each control and experimental group). (D) Summary depicting the nephron segments after exogenous dmPGE2 treatment. Data are represented as \u00b1 SD, significant by t test comparing each drug treatment to the DMSO control, *p<0.05, ***p<0.0005.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Embryos were treated with PGB2 at 100 \u03bcM from 4 hpf to 24 hpf. Using WISH, embryos were stained for the PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) Summary depicting the nephron segments after PGB2 treatment at 100 \u03bcM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013D) Embryos were incubated from 4 hpf to 24 hpf in 30 \u03bcM, 50 \u03bcM, 80 \u03bcM, and 100 \u03bcM solutions of dmPGE2 or PGB2. The PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) were then stained at the 24 hpf stage for using WISH and quantified in triplicate per phenotype. Increments of greater than (>) or less than (<) were used to categorize segment changes, where each (>) or (<) represents a difference in segment area of one somite. At least 15 embryos were used per each control and experimental group. (E, F) The PCT and DE segments were measured in microns after incubation in 100 \u03bcM of dmPGE2 (n\u00a0=\u00a05 for each control and experimental group). Data are represented as \u00b1 SD, significant by t test comparing each drug treatment to the DMSO control, *p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005, *****p<0.000005, where n.s. indicates not significant.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The pronephric domain (starting at the beginning somite five to the end of somite 18) was measured in microns for embryos treated with 1% DMSO, 100 \u03bcM dmPGE2, or 30 \u03bcM indomethacin from 4 hpf to 24 hpf (n\u00a0=\u00a05). (B) The body axis domain at the 24 hpf stage was measured for embryos exposed to 1% DMSO, 100 \u03bcM dmPGE2, and 30 \u03bcM indomethacin. (C) An image of a 24 hpf embryo stained for slc12a1 and smyhc1, where black bars label the pronephric domain and the body axis domain. Red scale bar, 70 \u00b5m. Data are represented as \u00b1 SD, ANOVA used to compare samples, where n.s. indicates not significant.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Embryos were treated with 1% DMSO, 30 \u03bcM indomethacin, or 100 \u03bcM dmPGE2 from 4 hpf to 24 hpf and WISH was performed to detect (A) vasculature (flk1) and (B) blood precursors (gata1) at the 24 hpf stage. (C) o-dianisidine staining was performed at the 55 hpf stage on embryos treated with 1% DMSO, 30 \u03bcM indomethacin, and 100 \u03bcM dmPGE2 from 4 hpf to 24 hpf in triplicate with at least 30 embryos. Red scale bar, 70 \u00b5m.\n\nExposure to dmPGE2 or PGB2 resulted in a dose-dependent increase in the domain length of the PST segment compared to WT embryos, visualized by WISH with the marker trpm7 (Figure 2A,B, Figure 2\u2014figure supplements 1,2). In conjunction with this change, the DL segment was significantly reduced in length, as visualized by WISH with the marker slc12a3 (Figure 2A,C, Figure 2\u2014figure supplements 1,2). Additionally, the rostral domain of the PCT was reduced in a dosage-dependent fashion, based on expression of slc20a1a (Figure 2A,D, Figure 2\u2014figure supplements 1,2). Further, there was a caudal shift in the position of the DE segment though its absolute length was unchanged, based on expression of the DE-specific marker slc12a1, which resides between the domains of the PST and DL segments (Figure 2A,D, Figure 2\u2014figure supplements 1,2). Overall, these results recapitulated the phenotypes observed following treatment with various bioactive prostaglandins during the chemical screen (Figure 1D). To determine if embryo dimensions were a factor in pronephros segment domain changes, we measured control and treated embryos from tip to tail as well as their pronephric domain (somite 3 to somite 18). We found no statistical differences in the body axis length or pronephric domain between WT controls and dmPGE2 treated embryos (Figure 2\u2014figure supplement 3). To further gauge the possible side effects of dmPGE2 treatment on surrounding tissues, we assessed development of specific tissues using WISH. We noted no significant changes in the vascular marker flk1 or primitive blood precursors using the marker gata1 between WT controls and 100 \u03bcM dmPGE2 treated\u00a0embryos (Figure 2\u2014figure supplement 4A,B). Furthermore, we performed o-dianisidine staining, which labels hemoglobinized erythrocytes and thereby provides a sensitive assessment of defects in circulation or vascular integrity that can be undetected by live imaging with stereomicroscopy. o-dianisidine staining showed that blood flow in WTs and 100 \u03bcM dmPGE2 treated embryos was equivalent through the 48\u201355 hpf stage, as we did not observe compromised vessel integrity or hematomas (e.g. bleeding, blood pooling) (Figure 2\u2014figure supplement 4C). This suggests that PGE2 exposure did not cause major aberrations in tissues surrounding the pronephros. In sum, these observations confirmed the finding from the chemical screen that exogenous PGB2 had profound effects on nephron segment formation, and revealed that alterations in PGE2 had similar consequences.\n\n### Expression of Ptges enzymes is required for normal distal pronephros segment development\n\nNext, we determined whether endogenous prostaglandin biosynthesis mediated by the Ptges (e.g. Cox1, Cox2) enzymes was necessary for normal nephron segmentation. To test this, we incubated WT embryos with the compound indomethacin, a nonselective Cox1 and Cox2 enzyme inhibitor, which inhibits the first stage of prostanoid biosynthesis, and has been shown to suppress PGE2 production in zebrafish by mass spectrometry (Figure 1E, Figure 3) (Grosser et al., 2002; Cha et al., 2005; North et al., 2007). Exposure of WT embryos to 30 \u03bcM indomethacin was associated with normal proximal segment locations along the embryonic trunk (Figure 3A, Figure 3\u2014figure supplement 1). However, the balance of distal segments was disrupted after indomethacin treatment, such that the majority of embryos developed an slc12a1-expressing DE segment that was significantly expanded in length and an slc12a3-expressing DL segment that was significantly reduced in length compared to wild-type controls (Figure 3A,B and C). Absolute segment length measurements of the proximal domains in indomethacin treated embryos compared to wild-types confirmed there was no significant change in the lengths of these segments (Figure 3D, Figure 3\u2014figure supplement 1). As with dmPGE2 treated embryos, we assessed the effect of indomethacin exposure at this dosage with various morphological dimensions and the formation of surrounding tissues such as the vasculature, and observed no differences compared to WT controls (Figure 2\u2014figure supplements 3,4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig3-v1.jpg)\n\n**Figure 3.:** (A) Embryos were treated with\u00a00.3% DMSO or the nonselective Cox inhibitor indomethacin at 30 \u03bcM from 4 hpf to 24 hpf. WISH was used to stain for the PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B,C) The DE and DL segments were measured in microns (n\u00a0=\u00a05 for each control and experimental group). (D) A summary depicting the nephron segments after indomethacin treatment. Data are represented as \u00b1 SD, significant by t test comparing each drug treatment to the DMSO control group, **p<0.005.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) were quantified at the 24 hpf stage in triplicate according to changes in domain size after 30 \u03bcM indomethacin incubation from 4 hpf to 24 hpf. Greater than (>) and less than (<) were used to categorize embryos, where each (>) or (<) represents the difference of a somite change in segmentation. At least 20 embryos were used per control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, where n.s. indicates not significant.\n\nTo further explore these results, we examined the effect of other small molecules that have been validated to interfere with Cox enzyme activity. Treatment with the Ptgs1 (Cox1) selective inhibitor SC-560 or the Ptgs2a (Cox2) selective inhibitor NS-398 (Grosser et al., 2002; Cha et al., 2005; North et al., 2007) induced an expansion of the DE segment and a restriction of the DL compared to wild-type embryos, while having no discernible effect on proximal segment development (Figure 4, Figure 4\u2014figure supplements 1 and 2). The DE and DL segment domain phenotypes following SC-560 or NS-398 treatment were statistically significant based on absolute length analysis compared to wild-type controls (Figure 4\u2014figure supplement 9).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-v1.jpg)\n\n**Figure 4.:** Embryos were treated with a (A) 1% DMSO control, the (B) Ptgs1 selective inhibitor SC-560 at 50 \u03bcM from 4 hpf to 24 hpf, microinjected with the ptgs1 MO alone, or microinjected with the ptgs1 MO and treated with dmPGE2 from 4 hpf to 24 hpf. Embryos were treated with the (C) Ptgs2a selective inhibitor NS-398 at 50 \u03bcM from 4 hpf to 24 hpf, microinjected with the ptgs2a MO or microinjected with the ptgs2a MO and then treated with dmPGE2 at 50 \u03bcM from 4 hpf to 24 hpf. (D) Embryos were microinjected with a combination of the ptgs1 MO and ptgs2a MO. Embryos were microinjected with (E) ptger2a MO1, ptger2a MO2, (F) ptger4a MO1 and ptger4a MO2. (A\u2013E) WISH was used to stain for the DE (slc12a1), DL (slc12a3) (purple), and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (G) Summary depicting the nephron segments after inducing deficiency of prostaglandin synthesis or receptor activity.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Embryos were treated with (A). 5% DMSO, (B) the selective Ptgs1 inhibitor SC-560 at 50 \u03bcM, and (E) the selective Ptgs2a inhibitor NS-398 at 50 \u03bcM from 4 hpf to 24 hpf. Embryos were microinjected with (C) ptgs1 MO, (F) ptgs2a MO or (H) both ptgs1 MO and ptgs2a MO together and grown until 24 hpf. Embryos were microinjected with (D) ptgs1 MO or (G) ptgs2a MO then exposed to 100 \u03bcM dmPGE2 from 4 hpf to 24 hpf. WISH was used to label the PCT (slc20a1a) and PST (trpm7) (purple) as well as the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The PCT, (B) PST, (C) DE, and (D) DL segment phenotypes were quantified in triplicate at the 24 hpf stage according to comparisons to the somites for ptgs1/2a double MO, ptgs1 MO, ptgs2a MO, ptgs1 splice MO, and ptgs2a splice MO microinjections, SC-560 and NS-398 at 50 \u03bcM from 4 hpf to 24 hpf, and for embryos microinjected with either ptgs1 MO or ptgs2a MO and treated with dmPGE2 at 50 \u03bcM from 4 hpf to 24 hpf. Greater than (>) and less than (<) were used to categorize embryos, where each (>) or (<) represents the difference of a somite change in segmentation. At least 15 embryos were used per control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) WT embryos were microinjected with either ptgs1 MO splice or ptgs2a MO splice and grown until 24 hpf. WISH was used to assay for the PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) A somite summary map depicting the changes induced by ptgs1 MO splice and ptgs2a MO splice microinjection.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** WT embryos from the 12 ss through 26 ss were stained for (A) ptger2a or (B) ptger4a transcript expression (purple) and the somites (red) using WISH. The ptger2a and ptger4a expression domains are framed in black boxes. WT embryos at the 14 ss and 18 ss were co-stained for (C) ptger2a and cdh17 (D) and ptger4a and cdh17, where transcripts encoding the latter mark the entire nephron. Asterisks demarcate co-localization between markers. Black bars indicate receptor gene expression domain. Red scale bar, 70 \u00b5m.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Embryos were microinjected with ptger2a MO1 or MO2 and grown until 24 hpf. WISH was used to visualize the PCT (slc20a1a) and PST (trpm7) (purple) and the somites (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) Segment areas for the PCT, PST, DE, and DL were quantified in triplicate using parallel somites. Greater than (>) and less than (<) were used to categorize embryos, where each (>) or (<) represents the difference of a somite in segment area. At least 20 embryos were used per control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Embryos were exposed to\u00a00.1% DMSO, 3 \u03bcM AH6809, or 3 \u03bcM PF04418948 from 4 hpf to 24 hpf. WISH was used to stain for the PCT (slc20a1a), PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) A somite summary schematic describing the changes in patterning caused by ptger2a antagonist treatment. (C) The PCT, PST, DE, and DL segments were quantified per phenotype in triplicate using juxtaposed somites. Greater than (>) and less than (<) were used to categorize embryos, where each (>) or (<) represents the difference of a somite in the pertinent segment area. At least 20 embryos were used for each control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A) Embryos were microinjected with ptger4a MO1 or ptger4a MO2 and grown until 24 hpf. Embryos were stained for the PCT (slc20a1a), PST (trpm7), (purple) and the somites (smyhc1) (red) using WISH at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) The PCT, PST, DE, and DL were quantified in triplicate using parallel somites to categorize phenotypes. Greater than (>) and less than (<) were used to categorize embryos, where each (>) or (<) represents the difference of a somite in the pertinent segment area. At least 20 embryos were used for each control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp8-v1.jpg)\n\n**Figure 4\u2014figure supplement 8.:** Embryos were microinjected with either (A) ptger2a MO1 or (B) ptger4a MO1 and treated with. 5% DMSO or 50 \u03bcM dmPGE2 from 4 hpf to 24 hpf. WISH was used to label the DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (C) The DE and DL were measured in microns for each control and experimental group (n\u00a0=\u00a05 for each). Data are represented as \u00b1 SD, ANOVA used to compare samples, *p<0.01, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp9-v1.jpg)\n\n**Figure 4\u2014figure supplement 9.:** Embryos were microinjected with ptsgs1/2a MO, ptgs1 MO, ptgs2a MO, ptger2a MO1, ptger2a MO2, ptger4a MO1, and ptger4a MO2 and were allowed to develop until 24 hpf. Embryos were also microinjected with ptgs1 MO and ptgs2a MO and treated with 50 \u03bcM dmPGE2 from 4 hpf to 24 hpf. Embryos were also subjected to 50 \u03bcM SC-560, 50 \u03bcM NS-398, 3 \u03bcM AH6809, and 3 \u03bcM PF04418948 from 4 hpf to 24 hpf. The (A) DE (slc12a1) and (B) DL (slc12a3) domains were measured in microns following WISH (n\u00a0=\u00a05 for each control an dexperimental group) at the 24 hpf stage. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005, where n.s. indicates not significant.\n\n![Figure 4\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig4-figsupp10-v1.jpg)\n\n**Figure 4\u2014figure supplement 10.:** Embryos were microinjected with morpholino and allowed develop until 24 hpf, where their RNA was then harvested for RT-PCR. Schematics illustrate each genetic locus, with the location targeted by the MO(s) and primers used for transcriptional analysis on 2% agarose gels. (A) ptgs1 knockdown targeted the exon one splice donor site, and caused inclusion of the 91 bp intron 1\u20132 that encodes a premature stop codon in ptgs1 transcripts in morpholino-injected zebrafish. (B) ptgs2a knockdown targeted the exon three splice donor site, and caused inclusion of the 111 bp intron 3\u20134 that encodes a premature stop codon in ptgs2a transcripts in morpholino-injected zebrafish. (C) ptger2a knockdown as well as (D) ptger4a knockdown targeted the exon one splice donor and exon two splice acceptor site in ptger2a and ptger4a, respectively. Green asterisks in these gel images indicate the complete absence of the WT PCR product in the morphant samples. We were unable to PCR across the entire intron of either gene due to their sizes. However, in contrast to WT samples, we detected ptger2a and ptger4a transcripts that included intronic sequence in the respective morphant samples. In each case, inclusion of the intron is predicted to encode a truncated peptide. (E) Embryos were microinjected at the 1-cell stage with either ptger2a MO splice (MO3/MO4 combination) or the ptger4a MO splice (MO3/MO4 combination) and allowed to developed until 24 hpf, where WISH was used to stain for the DL (slc12a3) segment. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (F) The DL domain was measured in WT controls, ptger2a MO splice (MO3/MO4 combination) or the ptger4a MO splice (MO3/MO4 combination) in microns (n\u00a0=\u00a05 for each control and experimental group). Data are represented as \u00b1 SD, ANOVA used to compare samples, *p<0.01, where n.s. indicates not significant.\n\nTo corroborate the effects we observed on zebrafish distal nephron segment development from Cox1/2 enzyme inhibition, we generated ptgs knockdowns through microinjection of previously described translation blocking morpholinos to target ptgs1, ptgs2a, or both ptgs1/2a into 1-cell stage WT embryos (Grosser et al., 2002; North et al., 2007). Nephron segmentation was analyzed at the 24 hpf stage by WISH with the panel of specific markers to delineate the domains of the PCT, PST, DE and DL (slc20a1a, trpm7, slc12a1 and slc12a3, respectively) as well as the somites (smyhc1). Single and double ptgs1/2a morphants developed a larger DE domain that was increased in length compared to WT control embryos (Figure 4B\u20134D, Figure 4\u2014figure supplements 1, 2 and 9). In addition, single and double ptgs1/2a morphants had a shortened DL segment compared to the DL in WT control embryos (Figure 4B\u20134D, Figure 4\u2014figure supplements 1, 2 and 9). These DE and DL segment domain phenotypes were all statistically significant based on absolute length analysis compared to WT controls (Figure 4\u2014figure supplement 9). In contrast, PCT and PST segment development was normal in ptgs1, ptgs2a, or ptgs1/2a deficient embryos at the 24 hpf stage (Figure 4\u2014figure supplements 1 and 2).\n\nTo further validate these findings, we conducted independent analysis of ptgs1 or ptgs2a morpholinos that were confirmed to interfere with mRNA splicing, by which inclusion of an intron was found to generate transcripts encoding prematurely truncated proteins (Figure 4\u2014figure supplement 10). Compared to wild-type controls, both of these ptgs1 and ptgs2a splice morpholinos similarly affected pronephros development by causing a DE expansion and a DL reduction, with no perceivable consequence to the proximal segments (Figure 4\u2014figure supplement 3). Again, the segment domain findings were statistically significant based on absolute segment length analysis with WT controls (Figure 4\u2014figure supplement 9). Taken together, these data provide independent validation that expression of both ptgs1 and ptgs2a are critical for normal formation of the DE and DL segments in the zebrafish pronephros.\n\n### PGE2 rescues nephron development in Ptgs-deficient zebrafish embryos\n\nNext, we tested whether distal nephron segmentation in ptgs1 and ptgs2a deficient embryos could be rescued by provision of a bioactive prostanoid. For these experiments, we selected dmPGE2 treatment, in part to test the hypothesis that PGE2 signaling is required for pronephros development. WT embryos were injected with ptgs1 and ptgs2a morpholinos and then subsequently treated with 50 \u03bcM dmPGE2 between the 4\u00a0hpf stage and the 24 hpf stage. Nephron segments were then assessed by WISH using our panel of segment-specific riboprobes. We observed that the alterations in DE and DL segments in ptgs1 and ptgs2a deficient embryos were indeed rescued by exposure to dmPGE2, a treatment combination that was again not associated with altered proximal segment domains (Figure 4B,C, Figure 4\u2014figure supplements 1, 2 and 9). Notably, the ptgs1 and ptgs2a morphants treated with dmPGE2 exhibited statistically similar DE and DL segment lengths compared to WT controls, in contrast to the longer DE and shortened DL in ptgs1 and ptgs2a morphants treated with DMSO vehicle (Figure 4\u2014figure supplement 9). These data indicate that the expansion of the DE segment and the restriction of the DL in ptgs1 and ptgs2a deficient embryos were caused specifically by diminished prostaglandin activity, and implicate PGE2 as the essential bioactive prostanoid because dmPGE2 was sufficient to rescue pronephros segmentation in the context of either Cox1 or Cox2 knockdown.\n\n### PGE2 regulates nephron segmentation via the ptger2a and ptger4a receptors\n\nPGE2 is known to signal to its target cells by binding with the G-protein\u00a0coupled receptor Prostaglandin E receptor 2a or the Prostaglandin E receptor 4a (Ptger2a, Ptger4a; also known as EP2 and EP4, respectively) (Cha et al., 2006). PGE2 signaling in zebrafish acts through both Ptger2a and Ptger4a to modulate HSC formation (North et al., 2007), and during endoderm specification, wherein the differential expression of these receptors mediates tissue development at discrete stages (Nissim et al., 2014). There has been some spatiotemporal expression analysis of these genes during zebrafish embryogenesis as well, which revealed that ptger2a transcripts were expressed at the six somite stage (ss) within bipotential endoderm progenitors and that ptger4a transcripts were expressed at 72 hpf within liver precursors (Nissim et al., 2014). However, further characterization of these genes\u2019 expression in relation to other organs, such as the kidney, has not been addressed.\n\nBased on this, we examined if Ptger2a and/or Ptger4a expression was associated with any stages of pronephros development. We utilized WISH to determine the spatiotemporal expression of ptger2a and ptger4a transcripts between the tailbud stage and 24 hpf to determine if they localized to the areas occupied by the nephron progenitors (Figure 4\u2014figure supplement 4). Interestingly, we found that ptger2a transcripts were expressed in a continuous stretch of IM renal progenitors between the 12 ss and 24 ss based on their location in bilateral stripes of cells situated adjacent to the paraxial mesoderm (Figure 4\u2014figure supplement 4A). ptger4a transcripts were similarly expressed in the IM renal fields between the 12 ss and 15 ss, where cells expressed varying levels of signal, suggesting patches of somewhat variable expression (Figure 4\u2014figure supplement 4B). ptger4a transcripts showed low levels of ubiquitous mesoderm expression at the 20 ss, and then were localized to the cloaca region at the 24 ss (Figure 4\u2014figure supplement 4B). We next performed double WISH in WT embryos at the 14 ss and 18 ss to label cadherin17 (cdh17) expressing renal progenitors along with either ptger2a or ptger4a (Figure 4\u2014figure supplement 4C). As expected, ptger2a expressing cells in the IM fully occupied the bilateral stripes of cdh17 expressing cells, as did ptger4a, though again we noted the slight variability of ptger4a transcript staining in cells residing within the cdh17 pronephros fields (Figure 4\u2014figure supplement 4C). These data were consistent with the notion that Ptger2a and/or Ptger4a may operate in renal progenitors to modulate their development.\n\nTo test the hypothesis that Ptger2a and/or Ptger4a function was necessary for pronephros segmentation, we next utilized previously published 5\u2019UTR or start site targeting morpholinos to abrogate expression of either ptger2a or ptger4a transcripts during embryogenesis (Cha et al., 2006; North et al., 2007), as well as independent pharmacological treatments with two different Ptger2a receptor antagonists to block its activity (Figure 4E,F, Figure 4\u2014figure supplements 2 and 5\u20139). Deficiency of ptger2a or ptger4a resulted in a statistically significant expansion of the DE segment and a reduction of the DL (Figure 4E,F, Figure 4\u2014figure supplements 2 and 5\u20139). These data recapitulate the phenotypic effects that resulted from treatment with the Ptgs1/2a small molecule inhibitors, as well as deficiency of Ptgs1, Ptgs2a, and the combination of Ptgs1/2a (Figure 4E). We also specifically evaluated whether ptger2a or ptger4a knockdown could be rescued by dmPGE2, and found that dmPGE2 was not sufficient to rescue either the DE segment expansion or DL reduction (Figure 4\u2014figure supplement 8). These findings are consistent with the notion that PGE2 acts specifically via Ptger2a and Ptger4a to mitigate DE-DL formation during pronephros ontogeny (Figure 4\u2014figure supplement 8).\n\nTo further validate these observations and conclusions, we next examined pronephros segment development following morpholino-mediated knockdowns that were confirmed to alter the normal splicing of either ptger2a or ptger4a transcripts, and were consequently predicted to disrupt normal protein expression (Figure 4\u2014figure supplement 10). We observed a statistically significant decrease in the length of the DL using these morpholinos, consistent with our previous observations with other knockdown reagents and pharmacological inhibitions, and thus lending further credence to\u00a0the conclusion that DE and DL segmentation is reliant on Ptger2a or Ptger4a expression (Figure 4\u2014figure supplement 10). Taken together, these data suggest that Ptger2a and Ptger4a have developmental roles in renal progenitors where they interact with PGE2 to regulate distal nephron segment formation.\n\n### Alterations in Ptgs activity or PGE2 levels influences nephron segmentation after gastrulation\n\nSince we found that ptger2a and ptger4a transcripts were expressed within renal progenitors beginning as early as the 12 ss, we hypothesized that prostaglandin signaling may begin to operate at that time period to influence pronephros segmentation. To test this, we treated WT embryos with either the nonselective Cox1/2 antagonist indomethacin (30 \u00b5M) to block Ptgs activity or the agonist dmPGE2 (100 \u00b5M) from the 12 ss\u00a0through to the 24 hpf time point, and then performed WISH to assess the pronephros segments. Indomethacin treatment during this time window elicited an expansion of the DE domain and a reduction of the DL similar to that seen from indomethacin treatments from 4 hpf to 24 hpf (Figure 5A). Further, dmPGE2 treatment from the\u00a012 ss to 24 hpf was sufficient to induce an expansion of the PST and a reduction of the DL (Figure 5B). Absolute measurements of these segments changes in indomethacin and dmPGE2 treated embryos revealed that they were significant compared to controls and were similar to pharmacological exposures performed between the 4 hpf and 24 hpf time period (Figure 5C). Interestingly, we also found that treatments with either of two different Ptger2 small molecule antagonists, PF04418948 or AH6809, from the 12 ss to 24 hpf was likewise sufficient to induce a statistically significant expansion of the DE segment and reduction of the DL segment compared to WT controls (Figure 5\u2014figure supplement 1). These data identify the 12 ss through the\u00a024 hpf time period as the critical interval when pronephros progenitors require PGE2 signaling for normal segment development.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig5-v1.jpg)\n\n**Figure 5.:** Embryos were treated with\u00a00.3% DMSO or 1% DMSO vehicle control, (A) 30 \u03bcM indomethacin, or (B) 100 \u03bcM dmPGE2 from the 12 ss to\u00a0the 28 ss and stained for the PST (trpm7), DE (slc12a1), and DL (slc12a3) (purple) using WISH at the 28\u00a0ss stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (C) The PST, DE, and DL domains were measured in microns (n\u00a0=\u00a05 for each control and experimental group). Data are represented as \u00b1 SD, ANOVA used to compare samples, *p<0.01, **p<0.05, where n.s. indicates not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Embryos were treated with\u00a00.3% DMSO, 3 \u03bcM AH6809, or 3 \u03bcM PF04418948 from the 12 ss to the 24 hpf, then fixed and stained for the DE (slc12a1) and DL (slc12a3) using WISH at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. The (B) DE and (C) DL domains were measured in microns (n\u00a0=\u00a05 for each control and experimental group). Data are represented as \u00b1 SD, ANOVA used to compare samples, *p<0.01, where n.s. indicates not significant.\n\n### Cox expression and PGE2 levels affect renal progenitor transcription factor domains\n\nSeveral transcription factors are known to be critical for proper tubule segment patterning during zebrafish pronephros development. Some of these include: sim1a, which is expressed throughout both the PCT and PST, and is\u00a0essential for PST fate (Cheng and Wingert, 2015); irx3b, which is expressed throughout both the PST and DE, and is\u00a0essential for DE segment fate (Wingert and Davidson, 2011;\u00a0Morales and Wingert, 2014); and mecom, which is expressed dynamically along the renal progenitor field, ultimately becoming restricted to the DL domain where it is essential for normal formation of this segment (Li et al., 2014). Given these genes\u2019 respective roles in segment ontogeny, we hypothesized that PGE2 signaling affects renal progenitor fate by modulating the expression domains of one or more of these crucial factors. To investigate this, WT embryos were treated with either a control vehicle DMSO, dmPGE2, or indomethacin between the 4\u00a0hpf stage and the\u00a020 ss, and then the spatial distribution of sim1a, irx3b, or mecom transcripts in the IM renal progenitors was assessed by WISH (Figure 6, Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig6-v1.jpg)\n\n**Figure 6.:** (A) Embryos were treated with a 1% DMSO control, dmPGE2 at 100 \u03bcM, or indomethacin at 30 \u03bcM from 4\u00a0hpf to the 20 ss. WISH was used to stain for the transcription factors sim1a, mecom, and irx3b (purple) and the somites (red) at the 20 ss stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) The sim1a, mecom and irx3b domains were measured in microns (n\u00a0=\u00a05 for each control and experimental group). Data are represented as \u00b1 SD, ANOVA used to compare samples, *p<0.01, where n.s. indicates not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Embryos were treated with 1% DMSO, 100 \u03bcM dmPGE2, and 30 \u03bcM indomethacin from 4\u00a0hpf to the 20 ss and then stained for sim1a, mecom, and irx3b using WISH. Embryos were categorized into phenotypes using the 1% DMSO treated embryo domains as a reference point, along with juxtaposed somites, to determine changes in expression. At least 15 embryos were used for each control and experimental group. Data are represented as \u00b1 SD significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, ****p<0.00005, *****p<0.000005, where n.s. indicates not significant.\n\nInterestingly, we found that dmPGE2 treatment led to a significant expansion of the sim1a and irx3b domains, along with a significant reduction of the mecom domain, in the majority of embryos (Figure 6A,B). These alterations are consistent with the observation that dmPGE2 expands the PST segment and restricts the DL (Figure 2). Further, we found that indomethacin treatment led to no significant change in the sim1a domain, while the irx3b domain was significantly increased in absolute length and the mecom domain was significantly reduced in length (Figure 6A,B). These alterations are in keeping with the prior observations that nonselective Cox inhibition with indomethacin, selective Cox1 or Cox2 inhibitors, as well as knockdown or inhibition of Ptger2a and Ptger4a expanded the DE segment and reduced the DL (Figures 3,4). In summary, these data suggest that PGE2 signaling influences segment programs in part by affecting the expression of sim1a, irx3b, and mecom, either directly or indirectly, to mediate nephron segmentation.\n\n### Cox activity and PGE2 act upstream of irx3b and sim1a\n\nNext, we tested the epistatic relationships between prostaglandin signaling and the essential transcription factors irx3b, mecom, and sim1a. As knockdown of irx3b results in loss of the DE segment (Wingert and Davidson, 2011), we exposed irx3b morphants to the Ptgs1 (Cox1) selective inhibitor SC-560 to test how the combined deficiency of irx3b and prostaglandin synthesis would impact the process of DE development during nephron segmentation. Embryos that were treated with SC-560 concomitant with irx3b deficiency failed to form a DE segment, similar to irx3b deficiency alone (Figure 7A,B). Taken together with the observation that indomethacin treatment was sufficient to expand the irx3b expression domain, this result is consistent with the conclusion that prostaglandin signaling occurs upstream of irx3b to regulate DE segment development.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig7-v1.jpg)\n\n**Figure 7.:** (A) Embryos were microinjected with the irx3b MO and treated with\u00a00.5% DMSO or 50 \u00b5M SC-560 from 4 hpf to 24 hpf and stained for the DE using WISH. WT control embryos were also treated with\u00a00.5% DMSO and 50 \u00b5M SC-560. (B) The DE (slc12a1) (purple) was stained for using WISH and quantified in triplicate, with at least 20 embryos per control and experimental group, by observing for the presence of the DE segment at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (C) Embryos were microinjected with the sim1a MO then treated with either 1% DMSO or 100 \u00b5M dmPGE2 from 4 hpf to 24 hpf. 1% DMSO and 100 \u00b5M dmPGE2 was also applied to WT control embryos from 4 hpf to 24 hpf. The PST (purple) and somites (red) were then stained for using WISH. (D) Quantification was undertaken in triplicate based on the presence of a PST or lack thereof, with at least 20 embryos per control and experimental group. Data are represented as \u00b1 SD, with t tests comparing each drug treatment to the corresponding DMSO control group, where n.s. indicates not significant.\n\n![Figure 7\u2014figure\u00a0supplement 1.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure\u00a0supplement 1.:** (A) Embryos were microinjected with 70 pg of mecom cRNA then treated with either\u00a00.3% DMSO or 30 \u00b5M indomethacin from 4 hpf to 24 hpf. Embryos were then stained for the DL (slc12a3) (purple) and the somites (red) using WISH at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) The DL was quantified in triplicate with at least 20 embryos per control and experimental group by categorizing embryos into phenotypes determined by somites parallel to segment expression. Data are represented as \u00b1 SD, significant by t test comparing each drug treatment to the corresponding DMSO control group, ***p<0.0005.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Embryos were microinjected with the sim1a MO and treated with 100 \u00b5M dmPGE2 or 1% DMSO from 4 hpf to 24 hpf. WISH was then used to label for the PCT (slc20a1a), DE (slc12a1), and DL (slc12a3) (purple) and the somites (smyhc1) (red) at the 24 hpf stage. Black bars indicate segment gene expression domain. Red scale bar, 70 \u00b5m. (B) Segments were quantified in triplicate with at least 20 embryos per control and experimental group. Data are represented as \u00b1 SD, significant by t test comparing each drug treatment to the corresponding DMSO control group, *p<0.05, **p<0.005, ***p<0.0005, where n.s. indicates not significant.\n\nAs we observed that the domain of mecom expression in renal progenitors is restricted when prostaglandin production was blocked with indomethacin (Figure 6), and that mecom deficiency in turn is associated with a reduced DL, we next explored whether restoration of mecom would be sufficient to rescue DL segment development in the absence of normal prostaglandin synthesis. To test this, mecom capped mRNA was synthesized and microinjected into 1-cell stage embryos, which were then treated with indomethacin or DMSO control as previously described (Figure 7\u2014figure supplement 1). Overexpression of mecom at dosages ranging from 14\u201370 pg, in either the experimental or vehicle control group, was not sufficient to alter DL segment fate (Figure 7\u2014figure supplement 1, data not shown). At higher dosages of mecom cRNA, embryos were dysmorphic, which has been reported previously (Li et al., 2014), precluding further examination with this approach. Despite these negative results, the alterations in the mecom expression domain in indomethacin treated embryos suggest that prostaglandin synthesis likely acts upstream of mecom to influence DL segment development.\n\nFinally, we explored the relationship between sim1a and PGE2 signaling. Previous work from our laboratory has demonstrated that sim1a overexpression is sufficient to expand the PST segment (Cheng and Wingert, 2015). In light of this, along with our present finding that exogenous PGE2 treatment induces both an expanded PST segment and expanded sim1a domain, we hypothesized that the gain of function prostaglandin phenotype was reliant on sim1a for the alteration in PST fate. To test this, embryos were microinjected at the 1-cell stage with a sim1a (Cheng and Wingert, 2015), then incubated in either DMSO control or treated with dmPGE2 between 4 and 24 hpf. We found that knockdown of sim1a concomitant with dmPGE2 treatment led to an abrogation of the PST segment, similar to sim1a deficiency alone (Figure 7C,D, Figure 7\u2014figure supplement 2). These results are consistent with the conclusion that sim1a acts downstream of PGE2 signaling in the context of exogenous treatment to drive expansion of the PST segment.\n\n## Discussion\n\nUnderstanding the genetic factors necessary to generate different cell types is an important aspect of developmental biology. Knowledge of these, along with an appreciation of the modulators that can impact the genesis of cell lineages, including their related morphogenetic processes, provides powerful insights relevant to congenital defects, disease pathology, regeneration and in vitro reprogramming (Morales and Wingert, 2014). Relevant to the present report, the kidney organ has many associated congenital diseases, and there is an escalating incidence of acute and chronic renal diseases for which a deeper understanding of mesodermal developmental processes has many possible applications (Nakanishi and Yoshikawa, 2003).\n\nIn this study, we uncovered evidence of a role for prostaglandin signaling in nephron segment formation during embryonic zebrafish development. Prostaglandins have diverse and potent biological actions (Funk, 2001), however, their effects on developing tissues including stem cells have only recently begun to be appreciated (North et al., 2007; Goessling et al., 2009; Nissim et al., 2014). By conducting a chemical genetic screen in zebrafish embryos to identify factors that affect nephron development, we found that several prostaglandin moieties were capable of modulating proximal-distal segmentation, first validating PGB2 and then subsequently identifying PGE2 as well (Figure 8). Specifically, we demonstrated that the addition of exogenous PGE2 or PGB2 was sufficient to increase PST segment size in a dosage-dependent manner. Using several chemical and genetic approaches, we demonstrated that abrogated prostaglandin activity alters formation of the DE and DL nephron tubule segments, where deficiencies in ptgs1, ptgs2a, or the PGE2 receptors encoded by ptger2a and ptger4a led to an expanded DE and reduced DL segment, and that PGE2 could specifically rescue the loss of Ptgs1 or Ptgs2a. We also determined that changes in Cox-mediated prostaglandin synthesis or PGE2 correlated with alterations in the expression domains of essential segmentation transcription factors in renal progenitors, suggesting some mechanisms by which prostaglandin signaling acts to influence segmentation (Figure 8). Understanding how these changes relate with morphogenesis involving cellular dynamics (e.g. proliferation, turnover) or even migration of the renal progenitors will be important aspects for future investigations.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/17551/elife-17551-fig8-v1.jpg)\n\n**Figure 8.:** (A) PGE2 is generated by the Ptgs1 and Ptgs2a enzymes, which interact with the Ptger2a and Ptger4a receptors to define the boundaries of the DE by negatively regulating the domain of irx3b expression and promoting DL identity. (B) Exogenous prostaglandin treatment promotes PST identity, partly by regulating sim1a expression, and these alterations occur at the expense of the DL segment. Not depicted: exogenous PGE2 is also associated with an increased irx3b domain, which correlates with the shifted posterior location of the DE in the context of PST expansion. Further, in both (A) and (B), the mecom expression domain is reduced in length, which is likely part of the mechanism underlying the DL segment size reduction in these cases.\n\nPrevious studies have shown that PGE2 is among the major prostanoids produced during the first day of zebrafish embryogenesis (Cha et al., 2005, 2006). Based on this and our ability to rescue Cox1/2 deficiency with dmPGE2 treatment alone, we theorize that PGE2 is the central endogenous signaling component that affects pronephros development. Further, the localization of ptger2a and ptger4a expression in renal progenitors suggests that these cells directly receive and respond to prostaglandin signals. Since prostaglandins are known to act in an autocrine or paracrine fashion with short half-lives, we speculate that the IM renal precursors themselves or nearby tissues like the paraxial mesoderm are the local source(s) of prostanoids. Based on the results of several epistasis experiments, we currently hypothesize that PGE2 signaling restricts the DE fate in part by negatively regulating irx3b, and that elevated PGE2 levels expand the PST segment through positive regulation of sim1a, though future studies are needed to delineate if these interactions are direct or indirect (Figure 8). Finally, our data repository of small molecules that affect pronephros ontogeny will provide a useful starting point for future studies by our lab and others to study nephrogenesis further in zebrafish or in other vertebrates (Figure 1\u2014source data 1).\n\n### Mechanisms of prostaglandin signaling during nephrogenesis\n\nEarly genetic studies that interrogated the effect of disrupting prostaglandin synthesis in homozygous mutant COX-1 or COX-2 mice did not report observing overt abnormalities at birth (Langenbach et al., 1995; Morham et al., 1995; Mahler et al., 1996). Similarly, knockouts of other biosynthesis enzymes and the prostaglandin receptors had normal neonatal phenotypes (Sugimoto et al., 2000; Kobayashi and Narumiya, 2002a,\u00a02002b). Intriguingly, however, mice lacking COX-2 exhibit postnatal kidney pathologies associated with neonatal fatality, including nephron hypoplasia and atrophy, impaired cortical growth, and even cyst formation in multiple nephron segments\u2014phenotypes suggestive of significant disruptions in renal ontogeny (Dinchuk et al., 1995; Morham et al., 1995; Mahler et al., 1996). These observations were not further explored until recently, however, where COX-2 gene dosage and pharmacological inhibition were linked to renal defects in glomerular size, such that COX-2+/- mice were found to exhibit kidney insufficiency (Slattery et al., 2016). In alignment with these data, exposure to COX inhibitors like indomethacin during human development is associated with renal failure, where the histological aspects include small glomeruli and microcystic lesions among other defects (Gloor et al., 1993; van der Heijden et al., 1994; Kaplan et al., 1994).\n\nIn light of these recent observations along with our findings, we propose that prostaglandin signaling, likely through PGE2, has critical roles in nephrogenesis, which warrant further investigation. However, there are significant challenges of studying nephron formation in mammalian models due to their in utero development, and while metanephric organ culture has been informative for branding morphogenesis studies, it is not conducive to studying nephrogenesis. Therefore, the zebrafish pronephric model provides an alternative for continued genetic dissection of the cellular and molecular effects in nephron development due to alterations in prostaglandin levels. Based on the requirement for PGE2 during pronephros development, it will be interesting to explore its effects on renal progenitors in other stages of zebrafish kidney ontogeny, and during new nephron formation and epithelial regeneration events in adults as well (McCampbell et al., 2015). In the near future, emergent organoid technologies will likely provide a complementary in vitro experimental system to probe the mechanisms of prostaglandin signaling in mammalian nephrogenesis (Chambers et al., 2016).\n\nFurther, while our report documents an essential role for PGE2 signaling during nephron formation, more work needs to be done to further understand the genetic networks that affect segment fate. For example, we have previously shown that RA acts as a morphogen in the zebrafish, and that a gradient of RA induces proximalization of the impending pronephros (Wingert et al., 2007; Wingert and Davidson, 2011). It is intriguing to speculate that a prostaglandin signaling gradient, where PGE2 acts as a morphogen, as recently proposed (Nissim et al., 2014), may articulate with RA to balance proximo-distal specification of the renal progenitors, though further studies are needed to interrogate this possibility. In addition, prostaglandins have been shown to initiate transcription through either interacting with cognate Ptger (EP) receptors or alternatively, passing through the cell membrane and binding with peroxisome proliferator-activated receptors (PPARs) (Guan and Breyer, 2001; Berger and Moller, 2002). Interestingly, PPARs can heterodimerize with Retinoid X Receptors (RXRs), a nuclear receptor for RA (Guan and Breyer, 2001; Berger and Moller, 2002). Also, it has been shown that different prostaglandins can interact interchangeably, at the right concentration, with the various Ptger receptors (Tootle, 2013). This might explain why different prostaglandins could induce an expansion of the PST.\n\n### Understanding the broader roles of PGE2 signaling in development\n\nProstaglandins have only just started to become recognized as important factors and determinants of cell fate decisions and growth during development. These new roles for prostaglandins have been revealed in part through a study showing that PGE2 activity has a conserved function to expand the domain of HSCs in development and enhance their ability to home to the bone marrow in transplants (North et al., 2007). PGE2 is currently in phase two clinical trials for increasing the efficiency of bone marrow transplants (Hagedorn et al., 2014). Furthermore, PGE2 was shown to be a regulator of bipotential endoderm cell fate decisions in development for zebrafish and mouse endodermal cells (Nissim et al., 2014). Curiously, it was also shown that PGE2 activity later in organ formation induced proliferation of both the liver and pancreas buds. This change in the function of PGE2 is explained by the spatial and temporal expression of ptger2a and ptger4a, where blocking ptger2a promoted liver versus pancreas specification and blocking ptger4a promoted the outgrowth of the liver and pancreas buds. These cornerstone studies, along with the present report, give credence to the notion that PGE2 is a key regulator of progenitor populations during embryogenesis and set the stage for further inquiry into how prostaglandin signaling affects developing cell populations. As more knowledge comes to light about how PGE2 and other prostaglandins influence ontogeny, they are likely to become an increasingly intriguing option for clinical therapeutic applications.\n\n## Materials and methods\n\n### Zebrafish husbandry\n\nZebrafish were cared for and maintained in the Center for Zebrafish Research at the University of Notre Dame using experiments approved under protocol 16\u2013025. Adult T\u00fcbingen strain fish were used for these studies, and their offspring were staged as described (Kimmel et al., 1995).\n\n### Chemical genetic screen and other chemical treatments\n\nZebrafish wild-type (WT) embryos were arrayed and treated with small molecules using the ICCB Known Bioactives Library as described (Poureetezadi et al., 2014). Zebrafish embryos were staged at 2\u00a0hpf, then at least 30 fertilized embryos were arrayed into the chambers of 24-well plates and incubated at 28\u00b0\u0421 in E3 media until just prior to 4\u00a0hpf. Working stocks of small molecules were stored at \u221280\u00b0\u0421, then dissolved in 100% DMSO to make 10 mM concentrations (Lengerke et al., 2011). For drug exposure, the E3 media was completely drawn off the embryos using a glass transfer pipet and the appropriate solution of DMSO, PGB2, dmPGE2, indomethacin, SC-560, NS-398, AH6809, or PF04418948 was applied at a discrete development time point (eg 4 hpf or 12 ss) (American Bioanalytical, Enzo Life Sciences, Santa Cruz) (North et al., 2007; Eisinger et al., 2007; Jin et al., 2014). Embryos were raised to the 20 ss or 24 hpf, washed three times with E3, then fixed in 4% paraformaldehyde. For rescue of prostaglandin activity, ptgs1 or ptgs2a deficient embryos were generated, and cohorts of approximately 30 embryos were arrayed in 24-well plates with E3, then placed in a 28\u00b0\u0421 incubator until 4\u00a0hpf. E3 was then completely drawn off the wells using a glass transfer pipet and a 50 \u00b5M concentration of dmPGE2 was applied. The embryos were placed into a 28\u00b0\u0421 incubator, raised until 24 hpf, washed three times with E3, and fixed as previously described.\n\n### Embryo staining for WISH, o-dianisidine, and image acquisition\n\nWISH was conducted as described (Cheng et al., 2014). RNA probes were digoxigenin or fluorescein labeled and generated by in vitro transcription using plasmid templates as described (Wingert et al., 2007; Wingert and Davidson, 2011; Lengerke et al., 2011; Li et al., 2014; Cheng and Wingert, 2015). For o-dianisidine staining, embryos were treated with 1% DMSO, 50 \u00b5M dmPGE2, or 30 \u00b5M, were allowed to develop until 48 hpf and o-dianisidine staining was performed (Wingert et al., 2004). Images were taken using a Nikon Eclipse Ni with a DS-Fi2 camera. Figures were assembled using Adobe Photoshop CS5.\n\n### Morpholino knockdown and RT-PCR\n\nAntisense morpholino oligonucleotides (MOs) were purchased from Gene Tools, LLC. MOs were solubilized in DNase/RNase free water to create 4 mM stocks and stored at \u221220\u00b0\u0421. WT embryos were collected after fertilization, injected with approximately 1 nl of diluted MO at the 1-cell stage and then placed in a 28\u00b0\u0421 incubator until the desired stage. MO sequences and dosages used were: irx3b 5'-ATAGCCTAGCTGCGGGAGAGACATG-3', 1 ng (Wingert and Davidson, 2011); ptger2a MO1 5'-GATGTTGGCATGTTTGAGAGCATGC-3', 3 ng (North et al., 2007); ptger2a MO2 5'-ACTGTCAATACAGGTCCCATTTTC-3', 1.6 ng (North et al., 2007); ptger2a MO3 splice 5'-CAATAAATCTTACTATTAACGGCAG-3', 3 ng; ptger2a MO4 splice 5'-ATGTACACACGGATCTG-AAGAGAAG-3', 3 ng; ptger4a MO1 5'-CGCGCTGGAGGTCTGGAG-ATCGCGC-3', 3 ng (North et al., 2007); ptger4a MO2 5'-CACGGTGGGCTCCATGCTGCTGCTG-3', 3 ng (Cha et al., 2006); ptger4a MO3 splice 5'-CCTGGAACTTACAACAAGCGGGATT-3', 3 ng; ptger4a MO4 splice 5'-TGAGAAACA-CCTGGACCTGCCAGAA-3', 3 ng; ptgs1 MO 5'-TCAGCAAAAAGTTACACTCTCTCAT-3\u2019, 3 ng (North et al., 2007); ptgs2a MO 5'-AACCAGTTTATTCATTCCAGAAGTG-3', 3 ng (Grosser et al., 2002); ptgs1 MO splice 5'-AACTTTCATTGCTC-ACCTCTCATTG-3', 2 ng; ptgs2a MO splice 5'-ATTCAACTTA-CACAACAGGATATAG-3', 2 ng (Yeh et al., 2009), sim1a MO 5'-TCGACTTCTCCTTCATGCTCTACGG-3', 1 ng (Cheng and Wingert, 2015). To assess knockdown efficacy, RT-PCR and sequence analysis was performed as previously described (Marra and Wingert, 2016) and using the following primers, where uppercase letters indicate location in an exon and lowercase indicates primer location in an intron: ptgs1-F1 5'-TTTATTTATTTGCAGCTTTTTCTT-3'; ptgs1-R1 5'-CAGTGTTTGATGAAGTCGGGCTTTC-3'; ptgs2a-F1 5'-CTGAGCTTCTCACACGCATCAAAT-3'; ptgs2a-R1 5'-GGCGAAGAAAGCAAACATGAGACT-3'; ptger2a-F1 5'-AGACCGAGCGTATGCCAATGT- 3'; ptger2a-R4 5'-caggagggctaataattcagactt-3'; ptger2a-F3 5'-ctgtttcagtgatcagtttgt-3'; ptger2a-R7 5'-CCGCAGAGCTATGAGATCAGTC-3'; ptger2a-R8 5'-GCTGAGGATGATGAACACCAAG-3'; ptger4a-F3 5'-ATGGTCATCCTGTTGATCGCC-3'; ptger4a-R2 5'-aatgagagtcctggaacttac-3'; ptger4a-F5 5'-gggtgtagtcatttatgttgagca-3'; ptger4a-R5 5'-CAGGACCGCTTTACGCAGTAAG-3'.\n\n### Quantification of phenotypes, segment measurements, imaging and statistical analysis\n\nGene domains were assessed with respect to somite boundaries to assess pattern formation (Wingert et al., 2007). Segment domains were analyzed and counted in triplicate with at least 15 embryos per replicate. To measure absolute segment lengths, images were taken of at least five representative embryos. Images were collected using a Nikon Eclipse Ni with a DS-Fi2 camera and measurements performed with Nikon Elements Software. The average was generated and standard deviation (\u00b1 SD) calculated, and unpaired (student) t-tests were performed to compare experimental groups with the corresponding wild-type control group. In cases where there were several percentage categories of phenotypes, the statistical comparison was performed between like categories, e.g. percentage increased were compared between control and each experimental treatment. In addition, ANOVA tests were performed to assess statistical significance in the context of comparing multiple samples.\n",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "fcfad592-ad85-4952-a5ab-cf49078fdbb7",
+      "submission_id": "b3add15c-05f3-48e0-b4f3-535467fa6c52",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Tanya T Whitfield, University of Sheffield , United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.17551.030](https://doi.org/10.7554/eLife.17551.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Prostaglandin signaling regulates nephron segment patterning of renal progenitors during vertebrate kidney development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Tanya Whitfield) and Sean Morrison as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dirk Meyer (Reviewer #1); Lilianna Solnica-Krezel (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting study on that addresses the factors that influence cell fate decisions in the developing vertebrate kidney, using the embryonic zebrafish pronephros as a model system. The authors have used a chemical genetic approach to identify prostaglandins as mediators that influence cell fate choice during development of the proximal and distal nephron segments. Results from the pharmacological screen have been validated through the use of morpholino-based gene knockdown to inhibit prostaglandin synthesis. The authors propose that the prostaglandin pathway acts upstream of the previously-identified transcriptional regulators Irx3b and Sim1a in the developing pronephros. The reviewers and editors agreed that the work was interesting and potentially significant. However, they also had some concerns that should be addressed to strengthen the manuscript, as outlined below.\n\nEssential revisions:\n\n1) Title: as suggested by reviewer 1, please change the word 'vertebrate' to 'zebrafish'. (Please note, however, that it is not essential to extend the work to other vertebrate species or different stages of kidney development.)\n\n2) Given the known interactions between prostaglandin and other pathways such as Wnt signalling, there are concerns over the relevance of the phenotypes resulting from long-term treatment (4-22 hpf) with PG agonists for a nephron-specific patterning role of prostaglandins. These concerns are exacerbated by the rather mild nephric phenotypes described for prostaglandin pathway morphants. The option of indirect phenotypes therefore needs further discussion. In addition, experiments with later onset of agonist treatment are also required to exclude interference with general early embryonic patterning, for example by Wnt signalling. See comments from reviewer 1.\n\n3) Following discussion between the reviewers, it was felt that a full analysis of any connection with Wnt signalling was not essential, but might be an interesting extension of the work in the future.\n\n4) Measurements. There were concerns over the measurements and quantitation of the data, in particular, in the way that the extent of expression domains was measured (by a horizontal bar in terms of somite length, vs the actual length of the curved domain of gene expression shown). It was felt that more accurate measurements should be provided. In addition, n numbers should always accompany percentage values, wherever shown.\n\n5) Effects on surrounding tissues. Please provide some assessment of the extent to which surrounding tissues are affected by the treatments shown.\n\n6) The text needs tightening up in places, especially with reference to the distinction between PGs in general and PGE2 (see comments from reviewer 2).\n\n7) For the experiments using morpholinos, it is important that these were done as rigorously as possible. Further supporting evidence is needed here (see comments from reviewer 3).\n\nReviewer #1:\n\nIn their manuscript Poureetezadi et al. use the zebrafish pronephros as a model to study functions of the prostaglandin pathway on nephron formation and patterning. Prostaglandins and in particular PGE2 have well documented functions in postnatal mammalian kidney development and renal physiology. In contrast, very little is known about activities in early kidney formation, mainly as genetic studies in mouse provided no major evidence for such requirements. In a screen for small compounds affecting zebrafish pronephron formation Poureetezadi et al. identified several prostaglandin agonists as agents causing caudally shifted or expanded tubule segments upon treatment of embryos between 4-24hpf. Detailed pharmacological analyses confirmed dose-dependent activities of PGE2 and the PGE2-derived PGB2 in tubule segmentation, and provided hints for a requirement of prostaglandin synthesizing enzymes COX1/2 and the PGE2 receptors Ptger2a/4a in the precise positioning of caudal segments. The pharmacological loss-of-function data were further confirmed by knockdown studies using morpholinos that supposedly prevent expression of COX1/2 and Ptger2a/4a proteins. Further, the authors show that nephric phenotypes seen after early embryonic interference with prostaglandin signaling correlate with changed expression of key transcriptional regulators of tubule segmentation and they provided evidence for a genetic role of prostaglandin signaling upstream of these factors. This interesting work is the first one demonstrating prostaglandin activities in nephric tubule patterning.\n\nUnfortunately, the authors had addressed neither the underlying molecular mechanism nor the relevance for other vertebrate model systems or the metanephric kidney.\n\nAs pointed out by the authors, prostaglandins only recently became recognized as developmentally import fate determinants. In this context interference with canonical wnt-signaling had been identified as one of the most critical prostaglandin activities. Considering the importance of Wnt-signaling in kidney formation and patterning it is surprising that this connection had not been further analyzed.\n\nThe word 'vertebrate' in the title is not justified as the zebrafish is the only vertebrate that had been analyzed. Slattery et al. (2016) recently suggested a role of COX2 not only in postnatal but also in embryonic metanephric kidney development. While these mouse data support a possibly conserved requirement for prostaglandins, it should be noted that the phenotypic analyses of COX2 mutants was restricted to the glomerulus and no tubule data were provided.\n\nThe authors suggest a direct connection between the proposed nephron specific expression of ptger2a/4a (Figure 4\u2014figure supplement.4) and the nephric loss and gain of function phenotypes. Expression of prostaglandin pathways components is not well documented and the experimental settings leave space for various alternative explanations. The images shown in Figure 4\u2014figure supplement.4 suggest a restricted expression of ptger2a/4a in proximal tubule of 12-24ss embryos. In case of a direct function, pharmacological treatments starting at 12ss rather than at 4hpf should be sufficient to induce relevant gain and loss of function phenotypes. Additional data should be provided to confirm nephron specificity and to give details on the posterior-anterior extent of ptger2a/4a expression (for example sections and co-stains with nephric markers). Further, studies should be performed to determine the critical time-window of prostaglandin responsiveness.\n\nReviewer #2:\n\nIn the manuscript entitled \"Prostaglandin signaling regulates nephron segment patterning of renal progenitors during vertebrate kidney development\" by Poureetezadi et al., stemming from a chemical screening approach, the authors uncover a role for prostaglandin activity which impacts distal vs. proximal segment development of the pronephric tubules in the kidney. Specifically they found that exposure to prostaglandin agonists expanded the proximal segment (slc20a1a+) lineage and inhibited distal fate (slc12a1a+). In contrast inhibition of PG synthesis altered the distribution of specific distal fates. The authors also identified downstream consequences on key segment associated genes (irx3b and sim1a) that appeared to be influenced, directly or indirectly by PG modulation. The data presented throughout the paper strongly support the authors claims, however, descriptions of prostaglandin synthesis and signaling cascades are over-simplified, and general claims are made for \"prostaglandins\" when only PGE2-specific components are thoroughly investigated. As several types of prostaglandins were isolated in the screen, which can act in methods different from that investigated here (thromboxane receptor and PPARg), more precise language and a rationale for selecting PGE2 (not hit in the screen) would aid the reader. Similarly, while the data is nicely presented and logically organized to support the authors conclusions, the paper would benefit from addition of quantitative evaluations to aid appreciation by those outside of the field.\n\n1) The authors over-simplify prostaglandin synthesis and signaling pathways, applying terminology and biological function relevant to PGE2 under the broad headline of \"prostaglandins\". This occurs as early as Figure 1, where they identify PGD2, PGA2, PGB2, and PGJ2 in the screen, which are known to stimulate thromboxane receptors (PGA2, B2) and PPARg (PGJ2), yet follow PGE2 (not a hit) and its relevant machinery. Similarly, Ptges is the enzyme for prostaglandin E2 synthesis (hence the \"e\" in its name, not general secondary processing), and Ptgers are the receptors for PGE2, not all of the PGs. While PTGS inhibition (Cox enzymes), could indeed broadly impact PG synthesis, the rest is quite specific to PGE2 and should not be generalized in the text, particularly when the screen hit several other potential modifiers as relevant to kidney biogenesis. This is not to say the data for PGE2 modification is wrong, it is just over generalized to \"prostaglandins\" and as such could cause issues for future investigations.\n\n2) Given the independent signaling cascades associated with PGB2 and PGE2, it is surprising that exposure to both enzymes elicited the same biological effect. While receptor modulation is examined for 2 of the 4 PGE2 receptors, similar studies should be done in the context of exogenous PGE2 and PGB2 addition, as well as with the thromboxane receptors to confirm that addition of exogenous levels of each prostanoid doesn't cause errant signaling.\n\n3) The doses utilized for dmPGE2 and Indomethacin are substantially higher than that found in other zebrafish or mouse papers, and well above physiological concentrations in humans. While the embryos appear grossly normal in whole mount images, it is important to document that alterations in kidney associated expression patterns are not simply due to gross morphological development issues or off target effects. Assessment of vascular markers by in situ or with a reporter line (Grosser et al) should be a quick way to test toxicity; receptor blocking analysis should confirm specificity.\n\n4) While the overall conclusions seem well supported by the data shown, to make the paper more accessible to a general audience, the authors should use a more precise way to quantify the alterations in expression observed, or at least confirm the relevant ones, using ImageJ and/or a reporter line. The assays are currently very observational (with straight bars correlated with expression drawn on curvy embryos) and it is unclear how definitive statements like \"50% reduction\" are made when no quantification is shown.\n\nReviewer #3:\n\nStarting with a chemical screen in developing zebrafish embryos, the Wingert and collaborators, identify components of prostaglandin signaling pathway as regulators of proximo-distal patterning of developing kidney. Using treatments with the pathway agonists (dmPGE2, PGB2) or inhibitors, and antisense morpholino oligonucleotides to impair expression of the PG synthetizing enzymes and their receptors (Ptger2a, Ptger4a), the authors provide evidence that prostaglandin signaling limits distal segment formation while promoting the proximal pronephric fates, acting upstream of Irx3b and Sim1a transcription factors, which have been previously implicated in this process. This is a very interesting work that expands our appreciation of the roles of prostaglandin signaling in cell fate specification during vertebrate embryogenesis. These roles were difficult to discern in the murine model, but recent studies in mouse and human point to PG involvement in kidney development and function. The authors leverage the experimental strengths of the zebrafish model, in which prostaglandin signaling can be easily manipulated during kidney development and the resulting effects can be monitored.\n\nWhereas the proposed conclusions are significant and would be of interest to the developmental biology and renal research communities, they are not sufficiently supported by the presented data. Addressing the following questions and concerns would significantly strengthen the manuscript and make it suitable for publication.\n\nOne of the major concerns about the current manuscript is that there are many quantifications presented but without sufficient experimental detail to evaluate their statistical or biological significance. For several experiments (e.g. treatment of antagonists), there is insufficient experimental detail to evaluate the results and their interpretation. The quantifications of the phenotypes (reduction or expansion) of segments in various experimental regimens is given throughout the manuscript as% of embryos with altered expression (expanded or reduced). This shows that the fraction of affected embryos increases in a dose dependent manner but does not address whether the expressivity (degree of reduction or expansion) of the phenotype is also dose dependent. This is important given the overall conclusion that prostaglandins regulate segment patterning.\n\nWere the measurements carried in a blinded fashion?\n\nThe number of embryos in individual experiments showing% of phenotype should be provided.\n\nFor Indomethacin treated embryos, the authors conclude that they \"developed a 50% larger DE segment domain and a 20% smaller DL segment domain\" referring to Figure 3 and its supplement. It is not clear where the data are presented on which this conclusion has been reached given that Figure 3 shows fractions of affected embryos and not dimensions of pronephric segments in control and treated embryos. Such conclusions need to be supported by clearly presented morphometric data, with the method of measurement clearly described, as well as the numbers of analyzed embryos.\n\nThe authors conclude that the changes in the dimensions of the pronephros proximo-distal segments represent the specific effects of prostaglandin signaling. However, the possibility of broader effects of prostaglandin signaling on embryonic dimensions and thus indirectly on pronephros is not sufficiently addressed. In the Methods the authors state \"Gene domains were measured with respect to somite boundaries to assess pattern formation\". However, the somitic staining that should provide such a reference is not clear in most of the figures. Given that earlier reports implicated prostaglandin signaling in morphogenetic movements of gastrulation (Gasser et al., PNAS, 2002; Cha et al., Genes & Dev, 2006; Speirs et al., Development, 2011), this needs to be carefully analyzed. Anteroposterior dimensions of the treated embryos should be measured as well as the relative size of pronephric segments to the neighboring somites for a reviewer/reader to evaluate.\n\nIn experiments in which PG signaling was inhibited with various agents, it is not clear at what developmental stages was this done? Given the previous work implicating PG signaling in gastrulation movements the timing of the treatment is important. It would be also of interest to identify when during embryogenesis PG signaling is required for segment patterning and when it can affect it.\n\nInjection into 1 cell stage embryos of translation and splicing morpholinos targeting ptgs1 (cox1) and ptgs2a (cox2) enzymes is reported to affect pronephros patterning. However, it has been previously reported that ptgs1 morpholino injections caused severe epiboly defects (Gasser et al., 2002). In this work the morpholino experiments are insufficiently described. There is no information on the dosage of morpholinos per embryos (only stock concentration is given in methods), no dose response, no experiments describing the degree of loss of function. Yet, the authors conclude \"these data indicate that endogenous levels of prostaglandins are critical for specification of the DE and DL segments\". This conclusion is given before dmPGE2 rescue experiments are described.\n\nSimilar lack of detail and controls is a concern for the experiments in which two genes encoding the prostaglandin receptors, ptger2a and ptger4a are targeted using morpholinos. There are no data on the effectiveness of these reagents to downregulate expression of these genes and encoded proteins, or to lower the levels of prostaglandins. Since in recent years, significant concerns have been raised about the specificity of morpholinos (e.g. Kok et al., Dev Cell, 2015), the sparse details and controls for the experiments presented raise concerns.\n\nIn epistasis experiments presented in Figure 6A, B it would be important to see the effect of SC-580 alone. From the perspective of the model of PG \u2013 irx3b pathway proposed in Figure 7A, the effect of dmPGE2 treatment that affect PST and DL but do not affect DE are confusing.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Prostaglandin signaling regulates nephron segment patterning of renal progenitors during zebrafish kidney development\" for further consideration at eLife. Your revised article has been favorably evaluated by Sean Morrison (Senior editor) and Tanya Whitfield (Reviewing editor).\n\nThe manuscript has been substantially improved and all reviewers' comments have been addressed well. The additional experimental data help to strengthen and support the findings, and the writing is now clear and precise. Overall, this is a very interesting study and should be of wide interest.\n\nOne concern remains: the quantification has been improved but there was very little information about the statistical tests used for analysis of the data. t-tests are mentioned in the Materials and methods section, but these will not be suitable for analysis of some of the datasets, where there are multiple conditions and comparisons. Here, a test such as ANOVA, with appropriate post-test correction for multiple samples, would be preferred. Alternatively, the authors should clarify and justify the tests they have used. The tests that are used should be stated in each of the figure legends where appropriate, in addition to the statement in the Materials and methods.\n",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2308506f-2951-4644-9d68-4226dca563fc",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C1",
+      "claim": "The zebrafish pronephric tubule has four discrete tubule segments: a proximal convoluted tubule (PCT), proximal straight tubule (PST), distal early (DE), and distal late (DL).",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish pronephric tubule has four discrete tubule segments: a proximal convoluted tubule (PCT), proximal straight tubule (PST), distal early (DE), and distal late (DL) (Wingert et al., 2007) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wingert et al., 2007, and is also illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "693b6e99-f12f-4041-8849-8deec8c6b43d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C2",
+      "claim": "The proximal segments of the zebrafish pronephros are homologous to the PCT and PST in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal segments are homologous to the PCT and PST in mammals, while the distal segments are homologous to the mammalian thick ascending limb (TAL) and distal convoluted tubule (DCT), respectively (Wingert et al., 2007; Wingert and Davidson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wingert et al., 2007 and Wingert and Davidson, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "79b78d06-ac87-4de5-8163-e869315a3a97",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C3",
+      "claim": "The distal segments of the zebrafish pronephros are homologous to the mammalian thick ascending limb (TAL) and distal convoluted tubule (DCT).",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal segments are homologous to the PCT and PST in mammals, while the distal segments are homologous to the mammalian thick ascending limb (TAL) and distal convoluted tubule (DCT), respectively (Wingert et al., 2007; Wingert and Davidson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wingert et al., 2007 and Wingert and Davidson, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7acd18c1-3b74-445f-8b7d-b0b0996f5e94",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C4",
+      "claim": "A chemical genetic screen using the Screen-Well ICCB Known Bioactives Library identified 78 out of 480 compounds (16.25%) that were associated with nephron phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 16.25% (78/480) of ICCB bioactives were associated with nephron phenotypes (Figure 1C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1C and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "aa14be7c-74f4-4b20-939c-4f8ef801b4af",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C5",
+      "claim": "Exposure to 1 mM 4-HPR led to an expansion of the PCT, caudal shift of the DE, and a dramatic expansion of the interval between these segments where the PST normally emerges.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WTs, exposure to 1 mM 4-HPR led to an expansion of the PCT, caudal shift of the DE, and a dramatic expansion of the interval between these segments where the PST normally emerges, suggestive of an expanded PST segment (Figure 1D) (Poureetezadi et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D and a citation to Poureetezadi et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a57d9e62-013b-4411-84db-9c6b7a917f49",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C6",
+      "claim": "Exposure to bioactive prostaglandins PGD2, PGA1, PGJ2, and PGB2 was associated with changes in the pronephros whereby there was a reduced PCT segment length and a posterior shift in the position of the DE.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to these bioactive prostaglandins was associated with changes in the pronephros whereby there was a reduced PCT segment length and a posterior shift in the position of the DE, such that there was a noticeably longer domain between these segment regions compared to WT control embryos (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "81e82a97-3f60-4056-8896-2a5ee58f8a9c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C7",
+      "claim": "Exposure to dmPGE2 or PGB2 resulted in a dose-dependent increase in the domain length of the PST segment compared to WT embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to dmPGE2 or PGB2 resulted in a dose-dependent increase in the domain length of the PST segment compared to WT embryos, visualized by WISH with the marker trpm7 (Figure 2A,B, Figure 2\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A,B and Figure 2\u2014figure supplements 1,2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "94dc2b81-28f8-4e61-b90b-bda9427f0f8c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C8",
+      "claim": "Exposure to dmPGE2 or PGB2 resulted in a significant reduction in the length of the DL segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In conjunction with this change, the DL segment was significantly reduced in length, as visualized by WISH with the marker slc12a3 (Figure 2A,C, Figure 2\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A,C and Figure 2\u2014figure supplements 1,2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7047cf70-d0b4-4e79-b209-527cfac90ab5",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C9",
+      "claim": "Exposure to dmPGE2 or PGB2 resulted in a dosage-dependent reduction of the rostral domain of the PCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the rostral domain of the PCT was reduced in a dosage-dependent fashion, based on expression of slc20a1a (Figure 2A,D, Figure 2\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A,D and Figure 2\u2014figure supplements 1,2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "3cf8dc8d-c2ea-4c82-b069-55d79a3048ac",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C10",
+      "claim": "There was a caudal shift in the position of the DE segment after dmPGE2 or PGB2 treatment, though its absolute length was unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there was a caudal shift in the position of the DE segment though its absolute length was unchanged, based on expression of the DE-specific marker slc12a1, which resides between the domains of the PST and DL segments (Figure 2A,D, Figure 2\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A,D and Figure 2\u2014figure supplements 1,2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "b05da5f4-d05f-4746-a9fb-107c9233fd03",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C11",
+      "claim": "There were no statistical differences in the body axis length or pronephric domain between WT controls and dmPGE2 treated embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no statistical differences in the body axis length or pronephric domain between WT controls and dmPGE2 treated embryos (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "dd8f47fc-a809-41bd-a234-3b1b00ca1c1d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C12",
+      "claim": "Exposure of WT embryos to 30 \u03bcM indomethacin was associated with normal proximal segment locations along the embryonic trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of WT embryos to 30 \u03bcM indomethacin was associated with normal proximal segment locations along the embryonic trunk (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "9c33eaac-a738-4776-adb3-d1e11b3119f6",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C13",
+      "claim": "The majority of embryos treated with 30 \u03bcM indomethacin developed an slc12a1-expressing DE segment that was significantly expanded in length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the balance of distal segments was disrupted after indomethacin treatment, such that the majority of embryos developed an slc12a1-expressing DE segment that was significantly expanded in length and an slc12a3-expressing DL segment that was significantly reduced in length compared to wild-type controls (Figure 3A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A,B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "f6621af7-4384-4c53-985e-9a0bb72cebf9",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C14",
+      "claim": "The majority of embryos treated with 30 \u03bcM indomethacin developed an slc12a3-expressing DL segment that was significantly reduced in length compared to wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the balance of distal segments was disrupted after indomethacin treatment, such that the majority of embryos developed an slc12a1-expressing DE segment that was significantly expanded in length and an slc12a3-expressing DL segment that was significantly reduced in length compared to wild-type controls (Figure 3A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A,B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "d3279559-d1b3-47db-a5c6-32ae4c2787e1",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C15",
+      "claim": "Treatment with the Ptgs1 (Cox1) selective inhibitor SC-560 induced an expansion of the DE segment and a restriction of the DL compared to wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with the Ptgs1 (Cox1) selective inhibitor SC-560 or the Ptgs2a (Cox2) selective inhibitor NS-398 (Grosser et al., 2002; Cha et al., 2005; North et al., 2007) induced an expansion of the DE segment and a restriction of the DL compared to wild-type embryos, while having no discernible effect on proximal segment development (Figure 4, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4 and Figure 4\u2014figure supplements 1 and 2, and by citations to Grosser et al., 2002; Cha et al., 2005; North et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "502a9cef-0a2c-43b9-9452-a849fa86dc4f",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C16",
+      "claim": "Treatment with the Ptgs2a (Cox2) selective inhibitor NS-398 induced an expansion of the DE segment and a restriction of the DL compared to wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with the Ptgs1 (Cox1) selective inhibitor SC-560 or the Ptgs2a (Cox2) selective inhibitor NS-398 (Grosser et al., 2002; Cha et al., 2005; North et al., 2007) induced an expansion of the DE segment and a restriction of the DL compared to wild-type embryos, while having no discernible effect on proximal segment development (Figure 4, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4 and Figure 4\u2014figure supplements 1 and 2, and by citations to Grosser et al., 2002; Cha et al., 2005; North et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "bf66ed96-078d-4ff7-b35c-31119df9661a",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C17",
+      "claim": "Single and double ptgs1/2a morphants developed a larger DE domain that was increased in length compared to WT control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Single and double ptgs1/2a morphants developed a larger DE domain that was increased in length compared to WT control embryos (Figure 4B\u20134D, Figure 4\u2014figure supplements 1, 2 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B\u20134D and Figure 4\u2014figure supplements 1, 2 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "b272224b-d731-4fb5-94da-2f36a023fd76",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C18",
+      "claim": "Single and double ptgs1/2a morphants had a shortened DL segment compared to the DL in WT control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, single and double ptgs1/2a morphants had a shortened DL segment compared to the DL in WT control embryos (Figure 4B\u20134D, Figure 4\u2014figure supplements 1, 2 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B\u20134D and Figure 4\u2014figure supplements 1, 2 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "1b645108-f4ac-411e-b0e8-0b001710e99e",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C19",
+      "claim": "PCT and PST segment development was normal in ptgs1, ptgs2a, or ptgs1/2a deficient embryos at the 24 hpf stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PCT and PST segment development was normal in ptgs1, ptgs2a, or ptgs1/2a deficient embryos at the 24 hpf stage (Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "2a6b9fcf-08b8-4f94-80ca-b109bc589b78",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C20",
+      "claim": "The alterations in DE and DL segments in ptgs1 and ptgs2a deficient embryos were rescued by exposure to dmPGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the alterations in DE and DL segments in ptgs1 and ptgs2a deficient embryos were indeed rescued by exposure to dmPGE2, a treatment combination that was again not associated with altered proximal segment domains (Figure 4B,C, Figure 4\u2014figure supplements 1, 2 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B,C and Figure 4\u2014figure supplements 1, 2 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a3fc829e-2282-4339-910c-5dc56f0ad68d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C21",
+      "claim": "ptger2a transcripts were expressed in a continuous stretch of IM renal progenitors between the 12 ss and 24 ss.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that ptger2a transcripts were expressed in a continuous stretch of IM renal progenitors between the 12 ss and 24 ss based on their location in bilateral stripes of cells situated adjacent to the paraxial mesoderm (Figure 4\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "ab91190b-c14a-4773-86c6-c3e6fbb761dc",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C22",
+      "claim": "ptger4a transcripts were expressed in the IM renal fields between the 12 ss and 15 ss.",
+      "claim_type": "EXPLICIT",
+      "source": "ptger4a transcripts were similarly expressed in the IM renal fields between the 12 ss and 15 ss, where cells expressed varying levels of signal, suggesting patches of somewhat variable expression (Figure 4\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "5dfa43cf-7049-4a46-92a1-ad4b1925baa3",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C23",
+      "claim": "ptger4a transcripts showed low levels of ubiquitous mesoderm expression at the 20 ss, and then were localized to the cloaca region at the 24 ss.",
+      "claim_type": "EXPLICIT",
+      "source": "ptger4a transcripts showed low levels of ubiquitous mesoderm expression at the 20 ss, and then were localized to the cloaca region at the 24 ss (Figure 4\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "ee21facc-f910-4b51-8f76-529189d1c2c2",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C24",
+      "claim": "Deficiency of ptger2a or ptger4a resulted in a statistically significant expansion of the DE segment and a reduction of the DL.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency of ptger2a or ptger4a resulted in a statistically significant expansion of the DE segment and a reduction of the DL (Figure 4E,F, Figure 4\u2014figure supplements 2 and 5\u20139).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4E,F and Figure 4\u2014figure supplements 2 and 5\u20139.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a151b58b-6891-4bf7-a5b4-34b133e35cba",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C25",
+      "claim": "dmPGE2 was not sufficient to rescue either the DE segment expansion or DL reduction in ptger2a or ptger4a knockdown embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We also specifically evaluated whether ptger2a or ptger4a knockdown could be rescued by dmPGE2, and found that dmPGE2 was not sufficient to rescue either the DE segment expansion or DL reduction (Figure 4\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7dbe9a61-38a3-4be5-b7c5-84145095abc9",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C26",
+      "claim": "Indomethacin treatment from the 12 ss through to the 24 hpf time point elicited an expansion of the DE domain and a reduction of the DL similar to that seen from indomethacin treatments from 4 hpf to 24 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Indomethacin treatment during this time window elicited an expansion of the DE domain and a reduction of the DL similar to that seen from indomethacin treatments from 4 hpf to 24 hpf (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a0f5a5af-213e-40c8-9dc3-1ee7d7f6c46e",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C27",
+      "claim": "dmPGE2 treatment from the 12 ss to 24 hpf was sufficient to induce an expansion of the PST and a reduction of the DL.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, dmPGE2 treatment from the 12 ss to 24 hpf was sufficient to induce an expansion of the PST and a reduction of the DL (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "3d6230ee-f35f-42f4-9a74-72229654a11f",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C28",
+      "claim": "Treatments with either of two different Ptger2 small molecule antagonists, PF04418948 or AH6809, from the 12 ss to 24 hpf was sufficient to induce a statistically significant expansion of the DE segment and reduction of the DL segment compared to WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found that treatments with either of two different Ptger2 small molecule antagonists, PF04418948 or AH6809, from the 12 ss to 24 hpf was likewise sufficient to induce a statistically significant expansion of the DE segment and reduction of the DL segment compared to WT controls (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "f77e235a-766b-4c0a-87e8-8b5289ed55bb",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C29",
+      "claim": "dmPGE2 treatment led to a significant expansion of the sim1a and irx3b domains, along with a significant reduction of the mecom domain, in the majority of embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that dmPGE2 treatment led to a significant expansion of the sim1a and irx3b domains, along with a significant reduction of the mecom domain, in the majority of embryos (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "33194179-9983-42c5-bf6f-2fa63922e15f",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C30",
+      "claim": "Indomethacin treatment led to no significant change in the sim1a domain, while the irx3b domain was significantly increased in absolute length and the mecom domain was significantly reduced in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that indomethacin treatment led to no significant change in the sim1a domain, while the irx3b domain was significantly increased in absolute length and the mecom domain was significantly reduced in length (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "84474229-c000-439d-a1b9-c7cd79ae4def",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C31",
+      "claim": "Embryos that were treated with SC-560 concomitant with irx3b deficiency failed to form a DE segment, similar to irx3b deficiency alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos that were treated with SC-560 concomitant with irx3b deficiency failed to form a DE segment, similar to irx3b deficiency alone (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "2002ac2d-0187-491e-b3ed-f8c555436505",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C32",
+      "claim": "Prostaglandin signaling occurs upstream of irx3b to regulate DE segment development.",
+      "claim_type": "IMPLICIT",
+      "source": "Taken together with the observation that indomethacin treatment was sufficient to expand the irx3b expression domain, this result is consistent with the conclusion that prostaglandin signaling occurs upstream of irx3b to regulate DE segment development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the epistasis experiment showing that SC-560 treatment does not rescue irx3b morphant phenotype, combined with the observation that indomethacin expands irx3b expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "888c17a8-f143-4eda-a73c-a6fc761035d2",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C33",
+      "claim": "Overexpression of mecom at dosages ranging from 14\u201370 pg was not sufficient to alter DL segment fate in indomethacin treated embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of mecom at dosages ranging from 14\u201370 pg, in either the experimental or vehicle control group, was not sufficient to alter DL segment fate (Figure 7\u2014figure supplement 1, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "047e07d4-80e7-40cd-b8e8-b76e21c524f6",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C34",
+      "claim": "Knockdown of sim1a concomitant with dmPGE2 treatment led to an abrogation of the PST segment, similar to sim1a deficiency alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knockdown of sim1a concomitant with dmPGE2 treatment led to an abrogation of the PST segment, similar to sim1a deficiency alone (Figure 7C,D, Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7C,D and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "74b99bec-7f4d-4236-9472-18b4b6ab6cf5",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C35",
+      "claim": "sim1a acts downstream of PGE2 signaling in the context of exogenous treatment to drive expansion of the PST segment.",
+      "claim_type": "IMPLICIT",
+      "source": "These results are consistent with the conclusion that sim1a acts downstream of PGE2 signaling in the context of exogenous treatment to drive expansion of the PST segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the epistasis experiment showing that sim1a knockdown prevents dmPGE2-induced PST expansion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "5ae5db85-206d-465e-9674-9a001fb10fa2",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C36",
+      "claim": "Vertebrate kidney organogenesis is a dynamic process involving the generation of up to three distinct structures that originate from the intermediate mesoderm (IM).",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate kidney organogenesis is a dynamic process involving the generation of up to three distinct structures that originate from the intermediate mesoderm (IM) (Saxen, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Saxen, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "d269d508-c01c-45ce-8d62-890b4317541c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C37",
+      "claim": "In mammals, a pronephros, mesonephros, and metanephros develop in succession.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, a pronephros, mesonephros, and metanephros develop in succession.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian kidney development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a105dbf4-76f2-4836-838a-e5a130c5b7aa",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C38",
+      "claim": "The pronephros and mesonephros both eventually disintegrate in mammals, leaving the metanephros as the adult kidney.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these structures, the pronephros and mesonephros both eventually disintegrate, leaving the metanephros as the adult kidney.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian kidney development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "64661fb8-44d9-4293-bd81-1105d3a1fdd9",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C39",
+      "claim": "Lower vertebrates such as fish and amphibians only form a pronephros and mesonephros.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lower vertebrates such as fish and amphibians only form a pronephros and mesonephros, which are active during embryogenesis and larval stages, respectively, and the mesonephros subsequently serves as the adult organ (Dressler, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dressler, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "3ec199fd-9cca-4b24-ad51-bd525adc0c7a",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C40",
+      "claim": "The mesonephros serves as the adult kidney organ in lower vertebrates such as fish and amphibians.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lower vertebrates such as fish and amphibians only form a pronephros and mesonephros, which are active during embryogenesis and larval stages, respectively, and the mesonephros subsequently serves as the adult organ (Dressler, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dressler, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "25121172-f179-4ab0-bce7-a20d2da3b751",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C41",
+      "claim": "Nephrons contain a renal corpuscle that filters the blood, a tubule that modifies the filtrate solution, and a collecting duct.",
+      "claim_type": "EXPLICIT",
+      "source": "Nephrons contain a renal corpuscle that filters the blood, a tubule that modifies the filtrate solution, and a collecting duct (Romagnani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Romagnani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "ba17667c-acc5-41a2-a1b7-09d472f57387",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C42",
+      "claim": "The zebrafish embryonic pronephros is comprised of only two nephrons.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish embryonic pronephros is a useful model to delineate the processes that regulate vertebrate nephron segmentation because it is anatomically simple, being comprised of only two nephrons (Gerlach and Wingert, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gerlach and Wingert, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "691f4481-a76f-4378-aa46-73698177784b",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C43",
+      "claim": "Renal progenitors arise rapidly from the IM and undergo a mesenchymal to epithelial transition (MET) to engender the tubule by 24 hr post fertilization (hpf) during zebrafish kidney development.",
+      "claim_type": "EXPLICIT",
+      "source": "During zebrafish kidney development, renal progenitors arise rapidly from the IM and undergo a mesenchymal to epithelial transition (MET) to engender the tubule by 24 hr post fertilization (hpf) (McKee et al., 2014; Gerlach and Wingert, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to McKee et al., 2014 and Gerlach and Wingert, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "bf038a32-3007-4c1c-a747-5bd66768739f",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C44",
+      "claim": "Renal progenitors undergo complex segment lineage patterning events, beginning with their segregation into rostral and caudal subdomains, a process that is orchestrated by the morphogen retinoic acid (RA) which is locally secreted by the adjacent paraxial mesoderm (PM).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to this, the renal progenitors undergo complex segment lineage patterning events, beginning with their segregation into rostral and caudal subdomains, a process that is orchestrated by the morphogen retinoic acid (RA) which is locally secreted by the adjacent paraxial mesoderm (PM) (Wingert et al., 2007; Wingert and Davidson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wingert et al., 2007 and Wingert and Davidson, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "61df1457-cb69-475e-b05b-ddd48c092487",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C45",
+      "claim": "Modulating levels of RA affects the specification of renal progenitors, inducing proximal segment lineage formation over distal.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulating levels of RA affects the specification of renal progenitors, inducing proximal segment lineage formation over distal, which can be accentuated by the addition of exogenous all-trans RA, while distal fates are induced over proximal by inhibiting endogenous production of RA through the application of the biosynthesis inhibitor N,N-diethlyaminobenzaldehyde (DEAB) (Wingert et al., 2007; Wingert and Davidson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wingert et al., 2007 and Wingert and Davidson, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "c1e6f234-505a-445d-adfa-37b69f81289a",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C46",
+      "claim": "Prostaglandins regulate many aspects of renal physiology in the adult kidney, ranging from tubular transport processes to hemodynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to the adult kidney, prostaglandins regulate many aspects of renal physiology, ranging from tubular transport processes to hemodynamics (Nasrallah et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nasrallah et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "1a4b08b2-d8e4-46f6-98cd-58da0fc034ce",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C47",
+      "claim": "There are five major prostaglandins produced from the precursor arachidonic acid (AA) by the enzymes Prostaglandin-endoperoxide synthase one or Prostaglandin-endoperoxide synthase 2a (Ptgs1 and Ptgs2a in zebrafish, also known as cyclooxygenases COX-1 and COX-2 in mammals) followed by subsequent processing by particular synthases.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, there are five major prostaglandins produced from the precursor arachidonic acid (AA) by the enzymes Prostaglandin-endoperoxide synthase one or Prostaglandin-endoperoxide synthase 2a (Ptgs1 and Ptgs2a in zebrafish, also known as cyclooxygenases COX-1 and COX-2 in mammals) followed by subsequent processing by particular synthases (Funk, 2001; Tootle, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Funk, 2001 and Tootle, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "ffbfeabe-ce79-4066-95f4-c3c22916b52c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C48",
+      "claim": "PGE2 signals by interactions with Ptger G-protein coupled receptors including EP1, EP2, EP3 and EP4 (known as Ptger1-4 in zebrafish) on receiving cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PGE2 will signal by subsequent interactions with Ptger G-protein coupled receptors including EP1, EP2, EP3 and EP4 (known as Ptger1-4 in zebrafish) on receiving cells (Figure 1E) (Funk, 2001; Tootle, 2013; Yang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to Funk, 2001; Tootle, 2013; Yang et al., 2013, and illustrated in Figure 1E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "4d3e3177-1c46-49df-b380-fa24d42ed412",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C49",
+      "claim": "Genetic disruptions of components within the prostaglandin pathway in mice was associated with observably normal development, leading to the hypothesis that maternal prostaglandin sources had rescued embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, there is a substantial void in our understanding due to the results of murine loss of function studies where genetic disruptions of components within the prostaglandin pathway was associated with observably normal development. This led to the hypothesis that maternal prostaglandin sources had rescued embryogenesis, thereby complicating the use of mammalian models to study prostaglandin requirements during ontogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of historical findings in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "30a1b488-30bd-4489-9d56-da2cee3e3856",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C50",
+      "claim": "COX-2 dosage is critical for murine metanephros development.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of reevaluating prostaglandin signaling in kidney formation has been emphasized by a recent report that COX-2 dosage is critical for murine metanephros development, though it is presently enigmatic whether there are requirement(s) for discrete stages of nephrogenesis (Slattery et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Slattery et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7c575cdb-2219-4311-b8c0-054328651583",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C51",
+      "claim": "PGE2 regulates hematopoietic stem cell (HSC) development and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, there have been transformative revelations regarding the conserved roles of prostaglandin signaling during definitive blood formation, where PGE2 was found to regulate hematopoietic stem cell (HSC) development and function (North et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to North et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "75adafa7-5ff4-4efe-90e0-79c0cc4c5110",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C52",
+      "claim": "PGE2 activity controls opposing cell fate decisions in the developing pancreas and liver through the ep4a receptor (also known as ptger4a).",
+      "claim_type": "EXPLICIT",
+      "source": "A chemical genetic screen in zebrafish also identified the prostaglandin pathway as a modifier of endoderm organogenesis, where in subsequent work it was found that PGE2 activity controls opposing cell fate decisions in the developing pancreas and liver through the ep4a receptor (also known as ptger4a), which derive from a bipotential endoderm progenitor (Garnaas et al., 2012; Nissim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Garnaas et al., 2012 and Nissim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "204ae8aa-6825-4280-99c7-e55a4bfeb76d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C53",
+      "claim": "Mice lacking COX-2 exhibit postnatal kidney pathologies associated with neonatal fatality, including nephron hypoplasia and atrophy, impaired cortical growth, and even cyst formation in multiple nephron segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, however, mice lacking COX-2 exhibit postnatal kidney pathologies associated with neonatal fatality, including nephron hypoplasia and atrophy, impaired cortical growth, and even cyst formation in multiple nephron segments\u2014phenotypes suggestive of significant disruptions in renal ontogeny (Dinchuk et al., 1995; Morham et al., 1995; Mahler et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dinchuk et al., 1995; Morham et al., 1995; Mahler et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "d0cf1e5b-bdae-49cb-b2e3-f81c9830a012",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C54",
+      "claim": "COX-2+/- mice exhibit kidney insufficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations were not further explored until recently, however, where COX-2 gene dosage and pharmacological inhibition were linked to renal defects in glomerular size, such that COX-2+/- mice were found to exhibit kidney insufficiency (Slattery et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Slattery et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "e621aeb2-c17b-4e8e-a374-8ff11862df81",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C55",
+      "claim": "Exposure to COX inhibitors like indomethacin during human development is associated with renal failure, where the histological aspects include small glomeruli and microcystic lesions among other defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In alignment with these data, exposure to COX inhibitors like indomethacin during human development is associated with renal failure, where the histological aspects include small glomeruli and microcystic lesions among other defects (Gloor et al., 1993; van der Heijden et al., 1994; Kaplan et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gloor et al., 1993; van der Heijden et al., 1994; Kaplan et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "2deffbe7-d975-45cc-9533-818d65acce41",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C56",
+      "claim": "Prostaglandin signaling, likely through PGE2, has critical roles in nephrogenesis.",
+      "claim_type": "IMPLICIT",
+      "source": "In light of these recent observations along with our findings, we propose that prostaglandin signaling, likely through PGE2, has critical roles in nephrogenesis, which warrant further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration of prior literature and the current study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "1f67c6ec-3fcb-47b9-9202-4d5856dc5b6c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C57",
+      "claim": "PGE2 is currently in phase two clinical trials for increasing the efficiency of bone marrow transplants.",
+      "claim_type": "EXPLICIT",
+      "source": "PGE2 is currently in phase two clinical trials for increasing the efficiency of bone marrow transplants (Hagedorn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hagedorn et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7f0d2d27-aa03-4763-8f8e-2aa40fc49bf3",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C58",
+      "claim": "PGE2 was shown to be a regulator of bipotential endoderm cell fate decisions in development for zebrafish and mouse endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PGE2 was shown to be a regulator of bipotential endoderm cell fate decisions in development for zebrafish and mouse endodermal cells (Nissim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nissim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "ba564fe9-93de-4a12-abc3-5d3057860eb7",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C59",
+      "claim": "PGE2 activity later in organ formation induced proliferation of both the liver and pancreas buds.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, it was also shown that PGE2 activity later in organ formation induced proliferation of both the liver and pancreas buds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "b6c8bbdf-228a-48c7-9c88-5b8e8f746299",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C60",
+      "claim": "Blocking ptger2a promoted liver versus pancreas specification.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in the function of PGE2 is explained by the spatial and temporal expression of ptger2a and ptger4a, where blocking ptger2a promoted liver versus pancreas specification and blocking ptger4a promoted the outgrowth of the liver and pancreas buds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "3044441f-d614-4271-a23b-51111c35c984",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "claim_id": "C61",
+      "claim": "Blocking ptger4a promoted the outgrowth of the liver and pancreas buds.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in the function of PGE2 is explained by the spatial and temporal expression of ptger2a and ptger4a, where blocking ptger2a promoted liver versus pancreas specification and blocking ptger4a promoted the outgrowth of the liver and pancreas buds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "525f7298-ce53-4df3-a92c-62cc0075f190",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The zebrafish pronephros has four discrete tubule segments (PCT, PST, DE, DL) that are homologous to mammalian nephron segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe established anatomical features of the zebrafish pronephros supported by prior literature (Wingert et al., 2007; Wingert and Davidson, 2008) and illustrated in Figure 1A. These are well-documented background claims providing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "aae2b658-f5cc-4e4c-a187-b992003bc74d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A chemical genetic screen identified 78 compounds (16.25%) affecting nephron development, including RA pathway modulators and prostaglandins that altered segment patterning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 describe the chemical screen results with data support from Figure 1C-D and source data. The screen identified known modulators (4-HPR) as positive controls and novel hits (prostaglandins), providing validation of the screening approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "0b68969c-3700-41e5-aac9-1eac594764c7",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Exogenous dmPGE2 or PGB2 treatment induced dose-dependent PST expansion, DL reduction, PCT reduction, and caudal DE shift without affecting overall embryo dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 are supported by extensive WISH data (Figure 2A-D, supplements 1-2) with statistical analysis showing significant segment length changes. Controls demonstrate specificity to nephron patterning rather than general developmental effects (C11, Figure 2-supplement 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "236b09dc-98eb-4a32-9c16-8ff0550e1445",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Indomethacin treatment (30 \u03bcM) caused DE expansion and DL reduction without affecting proximal segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are supported by WISH data (Figure 3A-C) with statistical significance. The selective effect on distal segments suggests specific prostaglandin involvement in DE/DL patterning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "fdac733e-165b-4981-a454-a6d0af2d135c",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Selective Cox1 (SC-560) and Cox2 (NS-398) inhibitors, as well as ptgs1/2a morpholino knockdowns, caused DE expansion and DL reduction without affecting proximal segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by pharmacological (Figure 4, supplements 1-2) and genetic (morpholino) approaches with statistical validation (Figure 4-supplement 9). Multiple independent methods converge on the same phenotype, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "804c6c99-d044-4331-b766-020137dfa311",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "dmPGE2 treatment rescued DE and DL segment defects in ptgs1 and ptgs2a morphants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by rescue experiments (Figure 4B-C, supplements) showing that exogenous PGE2 restores normal segmentation in Cox-deficient embryos, demonstrating that PGE2 is the critical downstream effector.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "2cc8fe03-ce6f-465f-ad89-cafd5200353d",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ptger2a and ptger4a transcripts are expressed in renal progenitors during nephron development (12-24 ss).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by WISH expression analysis (Figure 4-supplement 4A-B) showing spatiotemporal localization of PGE2 receptors in the intermediate mesoderm during the critical patterning window.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7840a664-2714-4cec-a5d1-39b26cab64b5",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Knockdown of ptger2a or ptger4a caused DE expansion and DL reduction that could not be rescued by dmPGE2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by morpholino experiments (Figure 4E-F, supplements 5-9) with statistical validation. The failure of dmPGE2 to rescue receptor knockdowns (C25, Figure 4-supplement 8) demonstrates epistatic relationship and receptor specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "f4dc2576-abab-48d0-95b3-1d76a7ef178e",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prostaglandin modulation during the 12 ss to 24 hpf window is sufficient to alter nephron segmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by time-restricted treatments (Figure 5A-B, supplement 1) showing that the critical period for prostaglandin action is post-gastrulation, coinciding with receptor expression (C21-C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "2502276a-3736-4730-a955-be34dbd04cf2",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "dmPGE2 and indomethacin treatments altered expression domains of transcription factors sim1a, irx3b, and mecom in renal progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by WISH analysis at 20 ss (Figure 6A-B, supplement 1) with statistical validation. The changes in transcription factor domains correlate with subsequent segment phenotypes, suggesting a mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "80fb3b44-3c17-43ab-985d-45b4189a76d2",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prostaglandin signaling acts upstream of irx3b to regulate DE segment development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by epistasis experiments (Figure 7A-B) showing that Cox inhibition cannot rescue irx3b morphant phenotype, combined with evidence that indomethacin expands irx3b expression (C30), establishing genetic hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "845a29a3-ac2f-4836-94b2-af73b7d5df29",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "mecom overexpression (14-70 pg) did not rescue DL segment defects in indomethacin-treated embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 reports negative results (Figure 7-supplement 1) but acknowledges that higher doses caused dysmorphology, preventing full dose-response analysis. The negative result is inconclusive regarding whether mecom acts downstream of prostaglandin signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "7a8aede4-cc5a-48d9-8c6f-48df32aedc70",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "sim1a acts downstream of PGE2 signaling to drive PST segment expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by epistasis experiments (Figure 7C-D, supplement 2) showing that sim1a knockdown prevents dmPGE2-induced PST expansion, establishing that sim1a is required for PGE2's effect on PST development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on vertebrate kidney development, nephron structure, and zebrafish pronephros as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 provide established background information supported by appropriate citations. These contextual claims are well-documented in the literature and provide necessary framework for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "38882e31-53b7-40ce-9113-6cdffab9de71",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prostaglandins regulate adult kidney physiology and are synthesized by Ptgs enzymes, with PGE2 signaling through Ptger receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 describe established prostaglandin biology supported by appropriate citations (Nasrallah et al., 2007; Funk, 2001; Tootle, 2013). These provide necessary biochemical context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work in mice and humans suggests prostaglandin signaling, particularly COX-2/PGE2, is important for kidney development, though maternal rescue complicated early genetic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 summarize prior literature on prostaglandin roles in mammalian kidney development, supported by appropriate citations. These establish the rationale for investigating prostaglandin function in zebrafish nephrogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "493b6220-04e6-4cca-8c0b-1b7a27bb7665",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prostaglandin signaling, likely through PGE2, has critical roles in nephrogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is a synthesis conclusion supported by the collective experimental evidence (C12-C35) demonstrating that PGE2 signaling through Ptger2a/4a regulates nephron segment patterning via transcription factors irx3b and sim1a.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    },
+    {
+      "id": "a2fd823a-b4da-4356-afde-fea97d12177e",
+      "content_id": "25090240-5e7c-4cd3-b8a5-f7312281d121",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PGE2 has established roles in HSC development, bone marrow transplantation, and endoderm cell fate decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe prior work on PGE2 in other developmental contexts, supported by appropriate citations (North et al., 2007; Hagedorn et al., 2014; Nissim et al., 2014). These provide comparative context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:08:30.677857Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2308506f-2951-4644-9d68-4226dca563fc",
+      "result_id": "525f7298-ce53-4df3-a92c-62cc0075f190"
+    },
+    {
+      "claim_id": "693b6e99-f12f-4041-8849-8deec8c6b43d",
+      "result_id": "525f7298-ce53-4df3-a92c-62cc0075f190"
+    },
+    {
+      "claim_id": "79b78d06-ac87-4de5-8163-e869315a3a97",
+      "result_id": "525f7298-ce53-4df3-a92c-62cc0075f190"
+    },
+    {
+      "claim_id": "7acd18c1-3b74-445f-8b7d-b0b0996f5e94",
+      "result_id": "aae2b658-f5cc-4e4c-a187-b992003bc74d"
+    },
+    {
+      "claim_id": "aa14be7c-74f4-4b20-939c-4f8ef801b4af",
+      "result_id": "aae2b658-f5cc-4e4c-a187-b992003bc74d"
+    },
+    {
+      "claim_id": "a57d9e62-013b-4411-84db-9c6b7a917f49",
+      "result_id": "aae2b658-f5cc-4e4c-a187-b992003bc74d"
+    },
+    {
+      "claim_id": "81e82a97-3f60-4056-8896-2a5ee58f8a9c",
+      "result_id": "0b68969c-3700-41e5-aac9-1eac594764c7"
+    },
+    {
+      "claim_id": "94dc2b81-28f8-4e61-b90b-bda9427f0f8c",
+      "result_id": "0b68969c-3700-41e5-aac9-1eac594764c7"
+    },
+    {
+      "claim_id": "7047cf70-d0b4-4e79-b209-527cfac90ab5",
+      "result_id": "0b68969c-3700-41e5-aac9-1eac594764c7"
+    },
+    {
+      "claim_id": "3cf8dc8d-c2ea-4c82-b069-55d79a3048ac",
+      "result_id": "0b68969c-3700-41e5-aac9-1eac594764c7"
+    },
+    {
+      "claim_id": "b05da5f4-d05f-4746-a9fb-107c9233fd03",
+      "result_id": "0b68969c-3700-41e5-aac9-1eac594764c7"
+    },
+    {
+      "claim_id": "dd8f47fc-a809-41bd-a234-3b1b00ca1c1d",
+      "result_id": "236b09dc-98eb-4a32-9c16-8ff0550e1445"
+    },
+    {
+      "claim_id": "9c33eaac-a738-4776-adb3-d1e11b3119f6",
+      "result_id": "236b09dc-98eb-4a32-9c16-8ff0550e1445"
+    },
+    {
+      "claim_id": "f6621af7-4384-4c53-985e-9a0bb72cebf9",
+      "result_id": "236b09dc-98eb-4a32-9c16-8ff0550e1445"
+    },
+    {
+      "claim_id": "d3279559-d1b3-47db-a5c6-32ae4c2787e1",
+      "result_id": "fdac733e-165b-4981-a454-a6d0af2d135c"
+    },
+    {
+      "claim_id": "502a9cef-0a2c-43b9-9452-a849fa86dc4f",
+      "result_id": "fdac733e-165b-4981-a454-a6d0af2d135c"
+    },
+    {
+      "claim_id": "bf66ed96-078d-4ff7-b35c-31119df9661a",
+      "result_id": "fdac733e-165b-4981-a454-a6d0af2d135c"
+    },
+    {
+      "claim_id": "b272224b-d731-4fb5-94da-2f36a023fd76",
+      "result_id": "fdac733e-165b-4981-a454-a6d0af2d135c"
+    },
+    {
+      "claim_id": "1b645108-f4ac-411e-b0e8-0b001710e99e",
+      "result_id": "fdac733e-165b-4981-a454-a6d0af2d135c"
+    },
+    {
+      "claim_id": "2a6b9fcf-08b8-4f94-80ca-b109bc589b78",
+      "result_id": "804c6c99-d044-4331-b766-020137dfa311"
+    },
+    {
+      "claim_id": "a3fc829e-2282-4339-910c-5dc56f0ad68d",
+      "result_id": "2cc8fe03-ce6f-465f-ad89-cafd5200353d"
+    },
+    {
+      "claim_id": "ab91190b-c14a-4773-86c6-c3e6fbb761dc",
+      "result_id": "2cc8fe03-ce6f-465f-ad89-cafd5200353d"
+    },
+    {
+      "claim_id": "5dfa43cf-7049-4a46-92a1-ad4b1925baa3",
+      "result_id": "2cc8fe03-ce6f-465f-ad89-cafd5200353d"
+    },
+    {
+      "claim_id": "ee21facc-f910-4b51-8f76-529189d1c2c2",
+      "result_id": "7840a664-2714-4cec-a5d1-39b26cab64b5"
+    },
+    {
+      "claim_id": "a151b58b-6891-4bf7-a5b4-34b133e35cba",
+      "result_id": "7840a664-2714-4cec-a5d1-39b26cab64b5"
+    },
+    {
+      "claim_id": "7dbe9a61-38a3-4be5-b7c5-84145095abc9",
+      "result_id": "f4dc2576-abab-48d0-95b3-1d76a7ef178e"
+    },
+    {
+      "claim_id": "a0f5a5af-213e-40c8-9dc3-1ee7d7f6c46e",
+      "result_id": "f4dc2576-abab-48d0-95b3-1d76a7ef178e"
+    },
+    {
+      "claim_id": "3d6230ee-f35f-42f4-9a74-72229654a11f",
+      "result_id": "f4dc2576-abab-48d0-95b3-1d76a7ef178e"
+    },
+    {
+      "claim_id": "f77e235a-766b-4c0a-87e8-8b5289ed55bb",
+      "result_id": "2502276a-3736-4730-a955-be34dbd04cf2"
+    },
+    {
+      "claim_id": "33194179-9983-42c5-bf6f-2fa63922e15f",
+      "result_id": "2502276a-3736-4730-a955-be34dbd04cf2"
+    },
+    {
+      "claim_id": "84474229-c000-439d-a1b9-c7cd79ae4def",
+      "result_id": "80fb3b44-3c17-43ab-985d-45b4189a76d2"
+    },
+    {
+      "claim_id": "2002ac2d-0187-491e-b3ed-f8c555436505",
+      "result_id": "80fb3b44-3c17-43ab-985d-45b4189a76d2"
+    },
+    {
+      "claim_id": "888c17a8-f143-4eda-a73c-a6fc761035d2",
+      "result_id": "845a29a3-ac2f-4836-94b2-af73b7d5df29"
+    },
+    {
+      "claim_id": "047e07d4-80e7-40cd-b8e8-b76e21c524f6",
+      "result_id": "7a8aede4-cc5a-48d9-8c6f-48df32aedc70"
+    },
+    {
+      "claim_id": "74b99bec-7f4d-4236-9472-18b4b6ab6cf5",
+      "result_id": "7a8aede4-cc5a-48d9-8c6f-48df32aedc70"
+    },
+    {
+      "claim_id": "5ae5db85-206d-465e-9674-9a001fb10fa2",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "d269d508-c01c-45ce-8d62-890b4317541c",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "a105dbf4-76f2-4836-838a-e5a130c5b7aa",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "64661fb8-44d9-4293-bd81-1105d3a1fdd9",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "3ec199fd-9cca-4b24-ad51-bd525adc0c7a",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "25121172-f179-4ab0-bce7-a20d2da3b751",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "ba17667c-acc5-41a2-a1b7-09d472f57387",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "691f4481-a76f-4378-aa46-73698177784b",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "bf038a32-3007-4c1c-a747-5bd66768739f",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "61df1457-cb69-475e-b05b-ddd48c092487",
+      "result_id": "1e14a7d3-f15d-499d-90d5-6675b4a927d0"
+    },
+    {
+      "claim_id": "c1e6f234-505a-445d-adfa-37b69f81289a",
+      "result_id": "38882e31-53b7-40ce-9113-6cdffab9de71"
+    },
+    {
+      "claim_id": "1a4b08b2-d8e4-46f6-98cd-58da0fc034ce",
+      "result_id": "38882e31-53b7-40ce-9113-6cdffab9de71"
+    },
+    {
+      "claim_id": "ffbfeabe-ce79-4066-95f4-c3c22916b52c",
+      "result_id": "38882e31-53b7-40ce-9113-6cdffab9de71"
+    },
+    {
+      "claim_id": "4d3e3177-1c46-49df-b380-fa24d42ed412",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "30a1b488-30bd-4489-9d56-da2cee3e3856",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "7c575cdb-2219-4311-b8c0-054328651583",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "75adafa7-5ff4-4efe-90e0-79c0cc4c5110",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "204ae8aa-6825-4280-99c7-e55a4bfeb76d",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "d0cf1e5b-bdae-49cb-b2e3-f81c9830a012",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "e621aeb2-c17b-4e8e-a374-8ff11862df81",
+      "result_id": "3c79f0a8-a943-4934-b5f7-d2b42b41099e"
+    },
+    {
+      "claim_id": "2deffbe7-d975-45cc-9533-818d65acce41",
+      "result_id": "493b6220-04e6-4cca-8c0b-1b7a27bb7665"
+    },
+    {
+      "claim_id": "1f67c6ec-3fcb-47b9-9202-4d5856dc5b6c",
+      "result_id": "a2fd823a-b4da-4356-afde-fea97d12177e"
+    },
+    {
+      "claim_id": "7f0d2d27-aa03-4763-8f8e-2aa40fc49bf3",
+      "result_id": "a2fd823a-b4da-4356-afde-fea97d12177e"
+    },
+    {
+      "claim_id": "ba564fe9-93de-4a12-abc3-5d3057860eb7",
+      "result_id": "a2fd823a-b4da-4356-afde-fea97d12177e"
+    },
+    {
+      "claim_id": "b6c8bbdf-228a-48c7-9c88-5b8e8f746299",
+      "result_id": "a2fd823a-b4da-4356-afde-fea97d12177e"
+    },
+    {
+      "claim_id": "3044441f-d614-4271-a23b-51111c35c984",
+      "result_id": "a2fd823a-b4da-4356-afde-fea97d12177e"
+    }
+  ],
+  "comparisons": []
+}

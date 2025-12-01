@@ -1,0 +1,439 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors developed a multimodal experimental approach combining wide-field GCaMP calcium imaging across a 9\u00d79 mm bilateral cranial window with simultaneous single-unit electrophysiology recordings using glass electrodes and laminar probes in transgenic GCaMP6f mice. This setup enabled spike-triggered averaging (STA) to map mesoscale cortical networks associated with individual neuron spiking across multiple cortical areas including somatosensory, motor, visual, retrosplenial, parietal association, and cingulate regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21-C22, C26-C28, C30, and C114-C121 collectively describe a well-documented experimental methodology. The approach is validated through control experiments (C34), sensitivity analysis (C35), and stability testing (C36). The combination of imaging parameters, electrode types, mouse lines, and surgical procedures is clearly specified with appropriate citations to prior work, providing strong methodological support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C106",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Spectral analysis revealed GCaMP6 signals contained information below 10 Hz distinct from non-specific reflectance. While deconvolution improved temporal dynamics of calcium signal decay, it had only marginal effects on spike-triggered analysis and was not used throughout the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C106-C107 describe signal processing approaches with supporting data (Figure 1\u2014figure supplement 1-2). The decision not to use deconvolution throughout is justified by its minimal impact on the main analysis (C25, C106), though this represents a methodological choice that could affect temporal precision of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Spike-triggered average maps (STMs) obtained under anesthetized and awake conditions were qualitatively similar, consistent with previous VSD imaging work. Awake recordings were performed following cessation of isoflurane anesthesia with appropriate analgesic protocols and behavioral monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C128-C133 describe the comparison between anesthetized and awake conditions with appropriate citations (C29). However, the claim of 'qualitative similarity' (C29) lacks quantitative statistical comparison, which would strengthen this conclusion. The awake recording procedures are well-documented with proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Static STMs were defined as the peak \u0394F/F0 response within a \u00b11 s window around each spike, with baseline calculated from -3 to 0 s pre-spike. This peak method was chosen as a better reflection of correlated activity than averaging, which would smooth out brief high-amplitude events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C137-C140 describe the core STM calculation methodology. The choice of peak over average (C32) is justified conceptually but lacks empirical validation comparing both approaches. The example result (C33) demonstrates the method's capability, though the rationale for the specific time windows is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Control experiments using Thy-1 GFP-M mice lacking calcium-dependent signals failed to produce functional maps, verifying calcium specificity. Stable STMs were achieved with 256 spikes, and high stability was confirmed by split-half and odd-even spike grouping analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide critical validation of the method through negative controls (C34) and convergence analysis (C35-C36). The control experiment with GFP mice (C34) is essential for ruling out non-calcium-dependent artifacts. The sensitivity analysis (C35) establishes minimum data requirements with quantitative metrics (Figure 2C-E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C50",
+      "C55"
+    ],
+    "result": "Spiking cortical neurons were linked to consensus local and long-range cortical networks that reflect major monosynaptic intra-cortical axonal projections. Cortical neurons in the same functional region exhibited substantial similarity in STMs, with minimal variation across cortical layers. STMs of cortical neurons corresponded with underlying structural axonal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C48, C50, and C55 describe cortical neuron STM characteristics with anatomical verification (C37) and comparison to known connectivity patterns (C39-C40, C55). The findings are supported by multiple citations to prior anatomical work and show internal consistency. However, the claim about 'consensus' networks (C39) relies on correlation analysis that may not fully capture polysynaptic or indirect connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C51",
+      "C87",
+      "C88"
+    ],
+    "result": "Thalamic neurons showed more variability and complexity in STMs than cortical neurons, with functional links to multiple primary sensorimotor and higher-order brain areas. Subcortical neurons exhibited greater diversity in STMs even within the same thalamic sub-nucleus, and neighboring subcortical neurons showed less similarity than cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C49, C51, C87-C88 describe increased diversity of thalamic STMs with quantitative comparison (C49, C51, Figure 3D). The statistical analysis (Mann-Whitney test, p<0.0001) supports the difference between cortical and subcortical map overlap. However, the interpretation of 'complexity' (C46) is somewhat subjective without a formal complexity metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "STMs computed from single unit activity or multi-unit activity (MUA) strongly resembled one another and did not vary greatly according to laminar depth. LFP-triggered STMs for delta band activity were similar to spike-triggered STMs, while higher frequency bands showed more unique patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 compare different triggering signals (single units, MUA, LFP bands) with supporting data in supplementary figures. The similarity between single-unit and MUA STMs (C41) validates the robustness of the approach. The focus on delta band (C44) is justified by citation to prior work showing this is where most mesoscale power resides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C88"
+    ],
+    "result": "Single cortical neuron STMs were largely predicted by seed pixel correlation maps (SPMs) reflecting consensus cortical connectivity patterns (high correlation). In contrast, thalamic STMs were more complex with significantly lower correlations to the cortical SPM library, potentially representing superpositions of multiple cortical networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C88 compare STMs to SPMs with quantitative analysis (Figure 4C, Mann-Whitney test p<0.0001). The statistical difference between cortical and subcortical correlations is well-supported. However, the hypothesis that subcortical STMs represent superpositions of multiple networks (C54) is speculative and lacks direct validation through decomposition analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Subcortical STMs cannot be predicted by direct monosynaptic projections from subcortical to cortical areas, as demonstrated by examples where HPF shows no strong direct link to RS area and CP is not directly linked to BCS1/HLS1 areas. This indicates subcortical STMs reflect apparently polysynaptic links to cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 compare functional STMs to anatomical connectivity from the Allen Brain Atlas with specific examples (C57-C58). The conclusion about polysynaptic pathways (C59) is reasonable given the mismatch between STMs and direct projections. However, this interpretation assumes the anatomical atlas is complete and that functional connectivity must reflect structural connectivity, which may not always hold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C73",
+      "C92"
+    ],
+    "result": "Cortical calcium dynamics associated with spiking cortical neurons were relatively homogeneous, with an initial peak within ~100-200 ms following spiking and return to baseline. Most spiking cortical neurons (~80%) were linked to a single phase of cortical excitation, though some cells (~20%) participated in multi-second depression dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C73, and C92 describe temporal dynamics of cortical STMs with quantitative percentages and time courses (Figures 6A, 7, 8A). The characterization is supported by aggregate data across multiple neurons. However, the ~100-200 ms time to peak (C60) is slower than direct synaptic responses, which is acknowledged but may reflect GCaMP kinetics rather than true network dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C74",
+      "C91"
+    ],
+    "result": "STM temporal dynamics (STMTDs) generated by thalamic cells were more varied and dominated by depression dynamics (~80% of cells) lasting up to 3 s. Subcortical neurons were linked to diverse cortical multi-phasic excitation/inhibition timing patterns reflected in dynamic STMTDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C74, and C91 describe thalamic temporal dynamics with quantitative data (Figures 6B, 7, 8B). The 80% figure for depression dynamics (C62) is supported by clustering analysis. However, the interpretation of 'depression' from decreased GCaMP signal requires careful consideration of potential hemodynamic contributions and the kinetics of the indicator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Using PCA and k-means clustering, STMTDs were classified into three temporal patterns: pattern #1 (spike-triggered-excitation), pattern #2 (spike-triggered inhibition), and pattern #3 (inhibition-triggered spiking followed by inhibition). Approximately 80% of cortical neurons showed pattern #1, while 80% of thalamic neurons showed inhibition patterns (45% pattern #2, 35% pattern #3). Pattern #3 was unique to subcortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe a clustering analysis with clear quantitative results (Figure 7). The three-cluster solution is data-driven using k-means, though the choice of k=3 is not explicitly justified. The stark difference between cortical (80% excitation) and thalamic (80% inhibition) neurons is striking and well-supported by the data, representing a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Neither cortical cell depth, subcortical cell location, nor cell-type classification revealed significant correlations between temporal dynamic clusters and cell-classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 reports negative findings but states results are 'not shown,' making it impossible to evaluate the rigor of the analysis, sample sizes, or statistical power. This is a significant limitation as understanding what factors do NOT predict STMTD patterns is important for interpretation. The claim should be supported by supplementary data or removed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C102",
+      "C103"
+    ],
+    "result": "STMs and STMTDs were similar across different spiking modes (bursting vs. tonic) to all-spike average STMs in both cortical and thalamic cells. Manual partitioning of motifs into subgroups revealed that sub-group STMs were the same as the overall average, confirming that the averaging method reveals stereotyped networks despite variability in ongoing cortical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C102-C103 address an important concern about whether different firing patterns yield different STMs. The analysis across firing modes (Figure 6\u2014figure supplements 1-3) and manual partitioning (Figure 6\u2014figure supplements 4-5) support the robustness of the averaging approach. However, the analysis of firing modes is limited by the observation that most cells did not show clear mode separation (C151-C152).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Spike-triggered variance maps revealed similar brain regions as spike-triggered average (STA) mapping when examined as a difference to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 describes an alternative analysis approach (variance vs. average) with supporting data (Figure 6\u2014figure supplement 6). This provides additional validation that the identified regions are robust. However, the analysis is limited and the potential for variance mapping to reveal different information under specific conditions is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "STAs generated from periods of quietness did not differ from those generated with all spikes, indicating that movement minimally contributed to the mapping. Periods of high movement were relatively rare in awake head-fixed mice, and brain imaging activity obtained in awake states is mostly indicative of a quiet awake state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 and C153-C155 address the important concern about movement artifacts in awake recordings. The analysis comparing quiet periods to all spikes (Figure 8\u2014figure supplement 1) provides evidence that movement does not substantially alter STMs. However, the criteria for defining 'quietness' (C153) are somewhat arbitrary, and the analysis does not address whether specific types of movements might be associated with particular STM patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128"
+    ],
+    "result": "Multi-wavelength correction strategies were implemented to account for hemodynamic artifacts, using short blue light as a reference signal that correlated with blood volume changes. However, corrections had minimal impact on cortical or thalamic STA maps (altering peak \u0394F/F0 by <1/10 of maximum), and thalamic spiking remained associated with cortical inhibition after correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 and C122-C128 describe hemodynamic correction procedures with validation data (Figure 7\u2014figure supplement 1). The finding that corrections had minimal impact (C80, C83) is important for interpreting the main results. However, the correction strategy is only applied to 'some experiments' (C122), raising questions about whether uncorrected data might contain artifacts. The validation using GFP mice is appropriate but limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C14",
+      "C15",
+      "C94"
+    ],
+    "result": "Thalamic neurons predicted and reported specific cycles of wide-scale cortical inhibition/excitation, firing both before and after these cycles. In contrast, cortical neuron firing was usually associated with excitation. Single thalamic neurons tend to fire when cortex is in more kinetically diverse states dominated by inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C14-C15, and C94 represent the central findings of the paper, supported by extensive data on temporal dynamics (Figures 6-8) and clustering analysis (Figure 7). The distinction between thalamic neurons (associated with inhibition) and cortical neurons (associated with excitation) is statistically robust. However, the interpretation of 'prediction' (firing before) requires careful consideration of causality vs. correlation, and the temporal resolution is limited by GCaMP kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C38",
+      "C86",
+      "C93"
+    ],
+    "result": "Spike-triggered maps from single cortical neurons yielded spatio-temporal maps expected for regional cortical consensus function. Spiking cortical neurons were largely associated with consensus cortical maps, and cortically recorded STMs reflect the cortical state when a neuron spikes in connected areas. The neocortex is divided into discrete subdivisions where individual spiking cortical neurons generally belong to spatial-temporal maps that follow a consensus function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C13, C38, C86, and C93 describe cortical neuron behavior with supporting data throughout the manuscript. The concept of 'consensus function' is defined (C39) and validated through comparison with SPMs (C52) and anatomical connectivity (C55). However, the term 'consensus' may oversimplify the diversity of cortical processing, and the ~20% of cortical neurons showing different patterns (C61, C69) are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C95",
+      "C112"
+    ],
+    "result": "These results are consistent with an active computational role of thalamus in sensory-motor processing, as opposed to merely serving a relay function, and support a diverse role of the thalamus in feedforward sensory processing. The diverse dynamics between thalamic neurons and cortical mesoscopic networks indicate that subcortical thalamic neurons play an instructive role with respect to cortical state, particularly regarding feedforward cortical inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C95, and C112 represent interpretations of the findings with supporting citations to prior work. The data showing thalamic neurons associated with cortical inhibition patterns (C70) and diverse temporal dynamics (C62) support these interpretations. However, these are correlational observations that do not directly demonstrate 'computational' or 'instructive' roles, which would require causal manipulations. The interpretations are reasonable but go beyond what the data strictly show.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "STMTDs indicate slower time to peak (~100 ms) than postsynaptic potentials evoked by single synaptic connections (time to peak ~20 ms). Slower dynamics are expected given GCaMP6 kinetics, though STMTD may already be accelerated relative to GCaMP6 kinetics by statistical convergence. Alternatively, slower STMTD dynamics may reflect sequences of spiking activity propagating through polysynaptic circuits, supported by similarity to time ranges of cue-triggered recall of learned temporal sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C109 address the temporal resolution of the method. The comparison to direct synaptic responses (C104) is appropriate, and the acknowledgment of GCaMP6 kinetics (C105) is important. However, the competing hypotheses about whether slow dynamics reflect indicator kinetics (C107) or true circuit dynamics (C108-C109) are not resolved. The speculation about polysynaptic propagation (C108-C109) is interesting but lacks direct supporting evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C89",
+      "C90"
+    ],
+    "result": "STMs can reveal functional cortical architecture related to the activity of individual cortical and subcortical neurons. Subcortical-neuron-derived STMs revealed multiple areas of activation and multimodal kinetic behavior, while intra-cortical spiking neuron networks were simpler in structure and kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C89-C90 summarize the main findings with support from the extensive data presented throughout the manuscript. The characterization of subcortical STMs as more complex (C89) and cortical STMs as simpler (C90) is supported by quantitative comparisons (Figures 3-4, 7-8). This represents a well-supported summary of the key results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C20",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The spike-triggered cortical mapping technique can be extended to any brain location where electrodes can be placed to identify functionally linked cortical mesoscale networks. During specific behaviors, more nuanced changes in weighting, timing, and frequency-dependence of STM networks are expected, though major shifts in area map boundaries are not anticipated. The presence of obligate long-range relationships in spontaneous activity may suggest new opportunities for brain stimulation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20, C110-C111, and C113 are speculative statements about future applications and extensions of the method. While the speculation is reasonable given the current results, these claims lack direct supporting evidence from the present study. The statement about extension to 'any brain location' (C20) may be overly broad, as technical challenges may vary by region. These represent reasonable hypotheses for future work rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Cortical neurons may serve as relay endpoints or amplifiers. The diversity in subcortical spiking-derived maps may reflect differing receptive field properties in thalamus and cortex based on varying types of functional convergence, including 'ensemble convergence' where thalamic input extends outside cortical receptive field boundaries. The larger diversity of thalamic maps may also arise from smaller thalamic nuclei size and diversity of thalamocortical impulse patterns (tonic vs. burst firing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C101 present multiple hypotheses about the mechanisms underlying observed differences between cortical and thalamic STMs. While these hypotheses are supported by citations to prior work (C96-C98, C100-C101), they are not directly tested in the current study. The analysis of firing modes (C102-C103, C151-C152) found minimal differences in STMs across modes, which somewhat contradicts the hypothesis about burst vs. tonic firing (C100). These represent reasonable speculation but lack direct empirical support from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C150",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Data analysis employed spike sorting with specific thresholds and inclusion criteria (\u226540 \u03bcV amplitude, \u2265200 spikes, \u22650.5% calcium response), k-means clustering for temporal dynamics, seed pixel correlation mapping for SPMs, and comparison with Allen Brain Atlas anatomical data. Statistical comparisons used Mann-Whitney non-parametric tests. Sample sizes were not pre-determined but were consistent with previous similar studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136, C141-C146, C150, and C156-C160 describe analysis procedures with appropriate detail and citations. The inclusion criteria (C136) are clearly specified and justified. The use of non-parametric statistics (C157) is appropriate given potential non-normal distributions. However, the lack of pre-determined sample sizes (C160) and reliance on consistency with prior work rather than power analysis is a limitation. The choice of k=3 for clustering (C141) is not explicitly justified.",
+    "result_type": "MINOR"
+  }
+]

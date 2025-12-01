@@ -1,0 +1,1835 @@
+{
+  "submission": {
+    "id": "b34fbd40-d6f5-42b9-9cc4-75c907cee19e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:25:29.032492Z",
+    "updated_at": "2025-11-30T23:25:29.032492Z"
+  },
+  "content": [
+    {
+      "id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "submission_id": "b34fbd40-d6f5-42b9-9cc4-75c907cee19e",
+      "content_type": "manuscript",
+      "content_text": "# Gender bias in scholarly peer review\n\n## Authors\n\n- Markus Helmer<sup>1</sup> ([ORCID: 0000-0001-9680-0595](https://orcid.org/0000-0001-9680-0595)) \u2020\n- Manuel Schottdorf<sup>2</sup> ([ORCID: 0000-0002-5468-4255](https://orcid.org/0000-0002-5468-4255))\n- Andreas Neef<sup>3</sup>\n- Demian Battaglia<sup>7</sup> ([ORCID: 0000-0003-2021-7920](https://orcid.org/0000-0003-2021-7920)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany\n2. Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany\n3. Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany\n4. Bernstein Center for Computational Neuroscience G\u00f6ttingen Germany\n5. Bernstein Center for Computational Neuroscience G\u00f6ttingen Germany\n6. Bernstein Center for Computational Neuroscience G\u00f6ttingen Germany\n7. Bernstein Center for Computational Neuroscience G\u00f6ttingen Germany\n8. Yale University New Haven United States\n9. Institute for Systems Neuroscience Aix-Marseille University Marseille France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeer review is the cornerstone of scholarly publishing and it is essential that peer reviewers are appointed on the basis of their expertise alone. However, it is difficult to check for any bias in the peer-review process because the identity of peer reviewers generally remains confidential. Here, using public information about the identities of 9000 editors and 43000 reviewers from the Frontiers series of journals, we show that women are underrepresented in the peer-review process, that editors of both genders operate with substantial same-gender preference (homophily), and that the mechanisms of this homophily are gender-dependent. We also show that homophily will persist even if numerical parity between genders is reached, highlighting the need for increased efforts to combat subtler forms of gender bias in scholarly publishing.\n\n## Introduction\n\nPeer review has an important role in improving the quality of research papers. It is the \u201clifeblood of research in academia [\u2026] the social structure that subjects research to the critical assessment of other researchers\u201d (Bourdieu, 1975). This structure relies on self-regulated interactions within the scientific community, in which a journal editor appoints peer reviewers with expertise in the subject of a particular manuscript to report on the quality of that manuscript and to provide recommendations for its improvement. Other attributes of the peer reviewer, such as their gender, should be irrelevant (Moss-Racusin et al., 2012; Nature, 2013). However the identities of peer reviewers and editors are usually confidential, so previous work on gender balance in the peer-review process has relied on small, monodisciplinary data sets and these studies have given partly contradictory reports (Lloyd, 1990; Gilbert et al., 1994; Budden et al., 2008; Borsuk et al., 2009; Knobloch-Westerwick et al., 2013; Larivi\u00e8re et al., 2013; Buckley et al., 2014; Demarest et al., 2014; Handley et al., 2015b; Fox et al., 2016).\n\nFrontiers journals (www.frontiersin.org) differ from most journals in that they generally disclose the identities of peer reviewers and associate editors alongside each published article in an attempt to increase the transparency and quality of the publication process (Poynder, 2016). This allowed us to extract the names of associate editors, peer reviewers and authors for articles published in Frontiers journals between 2007 (when the first Frontiers journal was published) and the end of 2015. This data set included the names of more than 9000 editors, 43,000 reviewers, and 126,000 authors for about 41,000 articles published in 142 journals in Science, Health, Engineering and the\u00a0Humanities and Social Sciences (see Materials and methods). This data set is one of the largest available to date, and contains at least an order of magnitude more information than most data sets used in previous studies of peer review (see Supplementary file 2 for comparison).\n\nAnalysis of this data set reveals that women are underrepresented in the peer-review process, and that editors of both genders operate with substantial same-gender preference (homophily) when appointing reviewers. Moreover, our analysis suggests that this homophilic tendency will persist even when men and women are fairly represented in the peer-review process. Our results confirm the need for increased efforts to fight against subtler forms of gender bias in scholarly publishing and not just focus on numerical under-representation alone.\n\n## Results\n\nTo assess whether our data set was representative of an active and mature research community, we created directed networks (Figure 1a1), in which individual scientists appeared as vertices, while arrows denoted interactions between them (\u201cis appointing\u201d in the editor-to-reviewer network, and \u201cis editing (reviewing) a manuscript of\u201d in the editor (reviewer)-to-author network). As a whole, the networks had an exponentially fast growth in time, with a large fraction of people participating in a connected component of the graph reaching 90% of the total network size. Furthermore, graph theoretical metrics such as shortest path length, small-world index as well as several other network properties have changed little in the 3-5\u00a0last considered\u00a0years (Figure 1\u2014figure supplement 1). Thus, peer-reviewing interactions in the Frontiers journal series gave rise to a mature, topologically stable and integrated community, even though its contributors constitute only a small subset of researchers worldwide.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig1-v1.jpg)\n\n**Figure 1.:** (a1) We represent peer-reviewing interactions as directed graphs, in which vertices denote scientists. In the editor-to-reviewer network every edge represents the act of an editor (source vertex) appointing a reviewer (target vertex) to review a manuscript (and the reviewer has accepted the invitation). Analogously, in the reviewer-to-author network edges represent a reviewer reviewing a manuscript of an author. (b) The development of the fraction of contributions for each gender are shown for editors, reviewers and authors. Since the start of the Frontiers journals in 2007 until 2015, women (circles) edit, review and author much less than 50% of manuscripts, as expected from their numeric underrepresentation. However, the actual numbers of reviewing and authoring contributions by women are even smaller than expected by chance, taking into account their numeric underrepresentation. This is revealed by comparison with a null hypothesis in which gender and number of contributions are assumed to be independent. To this end, we generated surrogate ensembles by shuffling the genders of scientists appearing in a given role in the network (a2). From the surrogate ensembles, we obtained 95% confidence intervals (CIs; shaded areas in b). *, **, *** over (under) the data symbols denote the data lying over (under) the 95%, 99%, 99.9% CIs. Note that for all three subnetworks, there is a noticeable, but extremely slow trend towards equity (dashed line) for the fraction of contributions. (c) The fraction of female contributors, ranked in increasing order of authoring contributions, for the 47 frontier journals, whose published articles were handled by at least 25 distinct editors. Women were underrepresented consistently across all fields and particularly severely in math-intensive disciplines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Number of articles (blue), as well as number of people (green) in the reviewer-to-author (left) and editor-to-reviewer (right) network grow approximately exponentially over the years. (b) At the same time, network connectivity also steadily gets denser, giving rise to a growing weak graph giant component (that is, the biggest connected component in the network, irrespective of edge directions) of socially interacting editors, reviewers and authors. The cluster sizes are normalized with the network sizes at each time point. The latest reviewer-to-author (editor-to-reviewer) network sampled at the cutoff date has a giant component reaching 95% (93%) of its global size. (c) The small-world-ness index (see methods) suggests that a small-world topology is robustly established. (d) Global undirected transitivity (see methods), (e) as well as average shortest path lengths (see methods) have stabilized in the 3-5 last\u00a0considered\u00a0years, despite the fact that the network keeps growing at an exponential pace.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Based on scientists' affiliations, we plot the fractions of (a) editors, (b) reviewers and (c) authors in each country. In case of multiple affiliations we counted one contribution for each distinct country. Dark gray color indicates a fraction of female contributions aligned to the overall median value. Countries providing less than seven contributions are excluded from this analysis (white color).\n\nWe then looked for signatures of gender bias and of its evolution across time in the structure of these large networks. We study first the fractions of assignments for reviewing or editing given to female or male scientists and, for comparison, we also show the fractions of author contributions. Figure 1b reveals that the fractions of authoring, reviewing and editing contributions by women \u2014\u00a0amounting to 37%, 28% and 26%, respectively, in the complete accumulated data until 2015\u00a0\u2014 are always significantly smaller than the corresponding fractions for men. The unbalance between male and female contributions thus worsens when gradually ascending through the peer-review hierarchy. Apart from a few outlier countries, this pattern was dominant worldwide (Figure 1\u2014figure supplement 2). It was also largely present in all the considered journals when looking at them individually (Figure 1c). Overall, the number of contributions by female authors varies between about 15% (Frontiers in Neurorobotics) and 50% (Public Health), by female reviewers between about 15% (Surgery) and 50% (Public Health), and by female editors from ca. 5% (Robotics AI) to 35% (Aging Neuroscience). Globally, we observed a trend towards gender parity across time. The rates of change were, however, very slow. Linear extrapolation based on the fractions observed from 2012 to 2015 would predict that exact parity could be achieved as late as 2027 for authoring, 2034 for reviewing and 2042 for editing.\n\nWe wondered whether these lower fractions of contributions to the different roles were just due to the fact that overall there are numerically less female than male authors, reviewers and editors (39%, 30% and 28% out of all available authors, reviewers and editors, respectively, were women, closely mirroring the observed fractions of assignments). To test this hypothesis, we took the exact same network of peer-review interactions in the Frontiers journals for given, and randomly permuted gender labels among scientists of a given role (Figure 1a2). This procedure maintained the ratio of female and male scientists acting in the different roles, but destroyed all direct correlations between gender and numbers of contributions. Repeatedly drawing random genders for the scientists in the network generated a surrogate ensemble that we used to estimate the expected number of contributions in a gender-blind control network. Author and reviewing contributions by women lay significantly below the confidence intervals obtained through this permutation testing procedure since 2009 and 2011, respectively. For female editing contributions we found the same, though non-significant, trend. Thus, the mere overall smaller number of female actors cannot explain the observed unbalanced fractions of female contributions to the peer-review chain.\n\nWe then looked for possible differences over the entire distributions of the number of peer-review tasks and authoring contributions for men and women. These distributions are fat-tailed (Figure 2a-c), indicating that some individuals provided a large number of contributions to the publication chain, while a majority of scientists authored, reviewed or edited only a small number of manuscripts. Moreover, comparing the observed degree distributions to the expectations derived from the same null hypothesis used above, women had a significantly smaller than chance probability to review (and author) more than one article, while their probability to act as single-time reviewer or author exceeded the expected chance level (Figure 2e-f). In the editing role, women underrepresentation was significant only for a high number of contributions. Furthermore, we found significant deviations from chance-level expectations across the entire studied time-span (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig2-v1.jpg)\n\n**Figure 2.:** A break-down of the number of individuals contributing a given number of times as editors, reviewers and authors (binned, x-axis is marking the bin edges) shows that the majority of scientists (a)\u00a0edited, (b)\u00a0reviewed or (c)\u00a0authored (corresponding zooms for small contribution numbers are shown in e-f)\u00a0only a small number of manuscripts. Chance levels (shaded) were derived from an ensemble of reference networks constructed as shown in Figure 1a. The underrepresentation of women in relation to these chance levels tends to increase towards the fat tail of the distribution, associated to the relatively few individuals that made many contributions. In the group of one-time authors or reviewers however, women are overrepresented. Time resolved distributions are shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For each year we calculate the histograms of contributions for men (a\u2013c) and (e\u2013f) women (see Figure 2 for the year 2015) and color code the normalized deviations from the expected median (i.e. the median of the shaded area in Figure 2). Bins for which less than 7 contributions were available in a given year are shown in white. In the course of time the network grows (Figure 1\u2014figure supplement 1) and higher contribution numbers become available, but the overall pattern of deviations from the expectation remains significant for reviewers (b,e) and authors (c,f). The tendency towards equity is weaker at the distribution\u2019s right tail. Data for editors (a,d) is more variable.\n\nThe differences in assignment numbers may reflect behavioral or psychological differences between the groups of male and female scientists \u2014\u00a0either intrinsic or due to sociocultural context (Moss-Racusin et al., 2012; Nature Neuroscience, 2006; Ceci et al., 2009; Ceci and Williams, 2010; Goulden et al., 2011; Ceci and Williams, 2011; Bloch, 2012; Raymond, 2013; Shen, 2013; Handley et al., 2015a). Nevertheless, assignment numbers are also ultimately influenced by the editors\u2019 active choices. To reveal whether any bias exists in the reviewer assignment relation, we first analyzed gender correlations between directly connected pairs of nodes in the editor-to-reviewer appointment network (Figure 3a) and found a marked gender homophily bias for both male and female editor nodes. Specifically, 73% of reviewers appointed by men were also men, 33% of reviewers appointed by women were women, but, importantly, both these numbers laid above the expectations drawn from the assumption that genders were randomly distributed in the given editor-to-reviewer network topology. Similarly, in the reviewer-to-author network (Figure 3b), male (female) reviewers assessed articles authored by male (female) authors significantly more often than expected.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21718/elife-21718-fig3-v1.jpg)\n\n**Figure 3.:** (a) Female editors (orange) appoint significantly more female reviewers than expected under the gender-blind assumption (shaded area). At the same time, male editors (green) appoint less women than expected. The development of this trend over time is shown, including articles cumulatively until the indicated year. (b) Likewise, female/male reviewers review significantly more female/male-authored articles than expected. (c) Homophily is widespread across scientific fields, including those with relatively mild underrepresentation of women. We here report four example disciplinary groupings, with large numbers of contributions (from left to right, respectively, 13416, 4721, 4020, 5680) and the propensity of appointing a female reviewer depending on the editor's gender for each of these groupings. Only assignments by female neuroscience editors were not homophilic, otherwise the occurrence of same-gender preferences was general, arguing against heterogeneity between subfields as a cause for homophily in assignments. (d) Plotted here are distributions of a measure of inbreeding homophily. To control for baseline homophily at the level of a narrow local neighborhood, we measure, for each editor node, the actual number of reviewer assignments given to women and subtract the expected number, which would be observed if the considered editor appointed women with the same frequency as in his/her local vicinity. For male editors (green) the distribution is skewed towards an underrepresentation of female assignments (left-leaning), while for female editors the distribution is skewed towards an overrepresentation of female assignments. This highlights that homophily bias is detectable even at the level of the reachable narrow surrounding of each editor. (e) Histogram of the probability that an editor assigns as least as many reviews to people of the same gender as he/she actually does reveals that there's an excess of strongly inbreeding-homophilic editors (small \u03a6hom -values) among both men and women compared to expectation (shaded area). Note that below \u03a6hom < 0.1 there are only\u00a0few strongly homophilic female editors. For male editors, significant homophily extends through many\u00a0more editors until \u03a6hom < 0.6. (f) Using all data until 2015, the probability that a women is appointed is above expectation (shaded areas) only for female editors and only when all or all but the most extremely\u00a0inbreeding-homophilic editors are included in the analysis.\n\nWhile these findings seem to point at homophily created by choices, they might also stem from \u201cbaseline\u201d homophily (McPherson et al., 2001), i.e. subtle but unavoidable bias caused by disproportions in the number of reachable male and female nodes due to heterogeneous network structure. We first checked for the influence of local subnetwork structure on apparent gender bias by looking at different scientific fields, including those with relatively mild underrepresentation of women, and found homophily widespread across disciplines (Figure 3c). Second, a more detailed analysis of inter-node gender correlations in the editor-to-reviewer appointment network detected a clear tendency to gender homophily already at the level of the narrow neighborhood of individual nodes (Figure 3d). Specifically, to control for baseline homophily at the level of a narrow local neighborhood, we measured, for each editor node, the actual number of reviewer assignments given to women. We then subtracted from this number its chance expectation, derived individually for every node from the frequency of locally reachable female reviewers, i.e. reviewers situated at most five links away (which is a short distance relative to the average shortest path length of 12 steps for the editor-to-reviewer network, cf Figure 1\u2014figure supplement 1e). Even at this local neighborhood level, we continued to find that male (female) editors generally appointed female reviewers at a lower (higher) rate than expected. Both independent analyses \u2013\u00a0by topic or localized\u00a0\u2013 validate the existence of a so-called \u201cinbreeding\u201d homophily, i.e. an active preference to connect with same-gender network nodes, on top of \u201cbaseline\u201d homophily (McPherson et al., 2001).\n\nFinally, we wondered whether the observed inbreeding homophily in the network was due to the presence of a few strongly homophilic editors or whether, alternatively, homophilic attachment was a feature shared by most editors. To that end, we defined an index of inbreeding\u00a0homophily at the local level of each editor node. For each considered editor node, we first evaluated the number k of connected same-gender reviewers. We then evaluated the probability 0 \u2264 \u03a6hom\u00a0\u2264 1 that k (or more) homophilic connections could arise by baseline homophily only, taking into account the editor-specific basin of locally reachable male and female reviewers (defined as for Figure 3d). Such \u03a6hom can serve as an index tracking the strength of inbreeding homophily in shaping the actual reviewer appointments by an editor. Large values of \u03a6hom approaching 1 indicate that the observed gender homophilic choices of a given editor are plausibly just due to \u201cpassive\u201d baseline homophily. In contrast, small values of \u03a6hom approaching 0 hint at a stronger tendency to \u201cactive\u201d \u2013\u00a0consciously or unconsciously, see Discussion\u00a0\u2013 inbreeding homophily. Figure 3e shows the histograms of the index \u03a6hom for male and female editors, compared with expectations from gender-shuffled networks. For male editors, most histogram bins for \u03a6hom < 0.6 displayed node counts significantly larger than gender-shuffled estimations. The histogram of \u03a6hom for female editors showed much\u00a0fewer significant overrepresentation and most of them at very low values of \u03a6hom, however it remained compatible with gender-shuffled estimations for most of the \u03a6hom range.\n\nThese different distributions of inbreeding homophilic tendencies resulted in a gender-dependent impact of the reviewer-appointment choices of male and female editors in determining the overall number of female reviewer appointments. To determine this impact we pruned links originating from editors with inbreeding homophily index \u03a6hom below a growing threshold \u03a6thr (retaining only editors whose \u03a6hom satisfies 0 \u2264 \u03a6thr \u2264 \u03a6hom \u2264 1) and we did so separately for male and female editors (Figure 3f). After pruning the most homophilic male or female editors, we evaluated the new resulting probabilities of appointing a female reviewer. On the one hand, we found that it was enough to remove the few most homophilic female editors with the lowest values of \u03a6hom from the network, to bring the probability for a female editor to appoint a female reviewer back to chance-level. On the other hand, the probability for a male editor to appoint a female reviewer increased only very slowly by pruning more and more male editors. In particular, it remained significantly below chance expectations for all the considered thresholds for inclusion, 0 \u2264 \u03a6thr \u2264 0.5. This means that the overall smaller-than-chance probability of appointing female reviewers for male editors is due to inbreeding homophilic tendencies that are widespread among male editors, although at varying degrees of strength. In contrast, the overall larger-than-chance probability to appoint female reviewers for female editors is driven by the action of just a small number of strongly homophilic female editors, with most other female editors showing only \u201cpassive\u201d baseline homophily.\n\n## Discussion\n\nIn this study, we found that apart from a few outliers depending on country and discipline, women are underrepresented in the scientific community with a very slow trend towards balance, which is consistent with earlier studies (Larivi\u00e8re et al., 2013; Fox et al., 2016; Topaz and Sen, 2016; Lerback and Hanson, 2017; Nature Neuroscience, 2006; Shen, 2013; Nature, 2012). In addition, we found that women contribute to the system-relevant peer-reviewing chain even less than expected by their numerical underrepresentation, revealing novel and subtler forms of bias than numeric disproportion alone. We reported clear evidence for homophily beyond the expected baseline levels in both genders (Figure 3) using a very large trans-disciplinary data set that allowed us to clarify a previously ambiguous picture (Lloyd, 1990; Gilbert et al., 1994; Borsuk et al., 2009; Buckley et al., 2014; Fox et al., 2016). This network-level inbreeding homophily is driven by a large fraction of male editors, together with only a few highly homophilic female editors.\n\n### Evolution of participation rates by gender and causes for remaining inequity\n\nTo start our discussion on a positive note, we found that the participation of women in science, at least in terms of their numerical representation, has increased during the last years, which is consistent with other studies. The number of female doctoral recipients at US institutions increased by, on average, 0.1% - 0.6% per year between 2005 and 2015, depending on broad field of study (National Science Foundation, 2016). Ley and Hamilton (2008) reported that the number of fraction of women in medical schools increased by, on average, 0.6% to 0.8% per year (depending on the scientists' rank) between 1996 and 2007. Percentages of women professors has increased at a rate of 0.5%-1% per year in the European Union (ETAN Expert Working Group on Women and Science,ETAN Expert Working Group on Women and Science,\u00a02000). The fraction of publishing female scientists in Germany increased by, on average 0.7% from 2010 to 2014, it is now 30.9% (Pan and Kalinaki, 2015). Fox et al. (2016) found that the number of selected female reviewers in Functional Ecology increased by, on average, 0.8% per year between 2004 and 2014, while, notably, the number of female editors increased by, on average, 3.8% per year. Caplar et al. (2016) noted that the number of female first authors of astronomy articles increased by about 0.4% per year between 1960 and 2015. In the Frontiers series of journals, we found that the number of contributions by female authors, reviewers and editors increased by, on average, 1.1% / year, 1.2% / year and 0.9% / year between 2012 and 2015, respectively, similar to the numbers above.\n\nWhat could be the reasons for the remaining inequity? It has been argued that underrepresentation of women in science may be due to conscious career choices by female researchers (Ceci et al., 2009; Ceci and Williams, 2010, 2011), even if it is not clear to which extent these choices are really free or rather constrained by society. Previous studies reported that, measured by their number of publications, women are generally less productive than men (Cole and Zuckerman, 1984; Zuckerman, 1991; Long and Fox, 1995; Xie and Shauman, 1998; Pan and Kalinaki, 2015; Caplar et al., 2016) and it has been suggested (Xie and Shauman, 1998) that this might be due to personal characteristics, structural positions, and marital status. Moreover, the fraction of female scientists decreases with rank or age (ETAN Expert Working Group on Women and Science,\u00a02000; Ley and Hamilton, 2008; Goulden et al., 2011) and this shorter career length might contribute to the drop of female-to-male ratio for a high number of contributions. Nevertheless, women who persevere longer in their career despite obstacles are highly performing. While the productivity of young publishing female scientists in Germany was 10% lower than that of their male counterparts, the discrepancy reduced to just 3% for more senior scientists (Pan and Kalinaki, 2015). Also, it has been reported that women with children are not less productive than those without (Hamovitch and Morgenstern, 1977; Cole, 1979; Cole and Zuckerman, 1987), although young children might decrease productivity (Kyvik, 1990; Kyvik and Teigen, 1996). The low number of women among senior scientists might be particularly detrimental for a gender-neutral evaluation of scientific work, as the implicit association of \u201cmale\u201d and \u201cscience\u201d is strongest in the group of 40-65 year olds (Nosek et al., 2007). Moreover, declining an invitation to review is often due to a lack of time (Tite and Schroter, 2007) and it is possible that female scientists spend more time with duties beyond research (e.g. teaching, mentoring, service;\u00a0ETAN Expert Working Group on Women and Science,\u00a02000; Knapp, 2005; Misra et al., 2011). On the other hand, a compensating factor seems to be that female editors, in contrast to authors, have been reported to be more productive than male editors (Gilbert et al., 1994). Interestingly, men and women who are invited to review a manuscript have very similar propensities to accept the invitation (Fox et al., 2016; Lerback and Hanson, 2017), suggesting: (1) that simply increasing the number of invitations to female reviewers would have a direct and proportional effect; and, (2) that the low number of female reviews in our data is caused in part by a lower number of invitations.\n\nThe underrepresentation and discrimination of women in the scientific community is a problem that will not solve by itself, given the pervasive, generally unconscious nature of gender bias. Women have been reported to be less likely to be hired (Moss-Racusin et al., 2012), to receive a grant (Wenner\u00e5s and Wold, 1997), and to receive higher salaries (Shen, 2013). Still today, most people implicitly associate science with men, and liberal arts with women more than the other way round (Nosek et al., 2007), and this tendency, for both men and women, is apparent from a very young age (del R\u00edo and Strasser, 2013; Bian et al., 2017) and possibly reinforced by social dynamics in school education (American Psychological association, 2007; Duru-Bellat, 2008). Beyond that, men are more reluctant than women to believe that such a bias exists (Handley et al., 2015a), manifesting lack of interest for the problem (\u201cnegligence\u201d) or, even, consciously assuming that gender discrimination cannot be avoided (\u201cphilosophical acceptance\u201d) more often than females (Parodi, 2011).\n\n### How representative are the Frontiers journals?\n\nThe data analyzed here comprises a wide spectrum of scientific topics and the findings should generalize. However, Frontiers articles are unusual insofar as they undergo open peer review, whereas the identity of reviewers is not revealed in most other journals. Ambiguous reports exist whether open-peer review (as opposed to single- or double-blind peer-review) affects potential reviewers' willingness to assess a paper (Nature Neuroscience, 1999, van Rooyen et al., 1999; Ware, 2008; Baggs et al., 2008). In particular, a primary concern in disclosing reviewer\u2019s identity is the possibility that a rejected author may also become a prospective employer for the reviewer and hence a possible reluctance of peers in more vulnerable positions to accept an invitation to review. While it is conceivable that assignment rejection due to non-anonymity is more likely for early career scientists, we do not see any reason for a direct effect of gender and such an effect has not been reported to the best of our knowledge.\n\nThen, how does the population of scientists contributing to the Frontiers series of journals compare to other scientometric populations? First, we compared our authorship data to that of Larivi\u00e8re et al. (2013) who analyzed gender bias in articles from a wide range of journals that were published between 2008 and 2012, comprising about 3 million authors. While no analysis of peer review is performed therein, this study comprises an order of magnitude more authors than in our study. It can therefore serve as a benchmark for gender-composition among authors. They reported that 42% of authors in their analyzed scientific articles were women, whereas we found that number to be 39% in the Frontiers journals. Given uncertainties in determining a person's gender these numbers are comparable. Broken down by country, we find overall similar fractions of female authors, although, for some countries, the relative deviations can rise up to 29% (Supplementary file 1). However, small sample sizes, together with, possibly, a varying popularity of the Frontiers journals in different countries, might contribute to such deviations.\n\nSecond, not much data was available concerning gender bias among reviewers and editors, until very recently. Many previous studies (cf. Supplementary file 2) were self-diagnoses performed by editorial boards of the corresponding journal and, as a consequence, tended to be based on mono-disciplinary data of relatively small sample size. Larger sample sizes, but limited to editors, were considered in an analysis of the composition of editorial boards of 435 mathematical journals (Topaz and Sen, 2016). Only 9% of editors were women. Other reported numbers for the fraction of women editors in journals of different disciplines range from 38% to 54% (cf. Supplementary file 2). These numbers lie at the lower and upper end of the female editor fractions across the Frontiers journals, ranging between 6% (Frontiers in Robotics and AI) and 37% (Frontiers in Aging Neuroscience), with an average of 28%. Concerning female reviewers or female reviewer appointments, fractions reported in the literature range between 16% and 48% (cf. Supplementary file 2), to be compared with the range between 11% and 48% for the Frontiers journals with an average of 30%. Concerning female authors, Pan and Kalinaki (2014) report fractions ranging from 15% in computer science to 57% in veterinary science. These numbers are once again comparable to female author fractions in Frontiers journals, ranging from 17% (Neurorobotics) to 48% (Public Health). Overall, our study provides thus a global account on the prevalence of women among editors and reviewers and ranks previous reports in a continuum of field-specific participation numbers. Importantly, our data is consistent with these diverse reports, highlighting that the Frontiers peer-review networks are well representative of widespread patterns.\n\nOur work calls for a detailed comparison with another recently published report about peer reviewer assignments in 20 journals of the American Geophysical Union (AGU), based on a slightly smaller sample size compared to ours (Lerback and Hanson, 2017). This\u00a0study reports information about aspects that our study could not have access to, breaking down women\u2019s underrepresentation by age and showing that the decline rate for invited reviews is only slightly smaller for women than men. Overall, relative fractions of female participation reported by this study are compatible with numbers we found for the journal Frontiers in Earth Science, with e.g. a matching female reviewer appointments fraction close to 20%, suggesting that women play a larger role in other fields compared to that report (cf. Figure 1c). For the AGU journals the authors conclude that editors, especially male ones, appoint too few female reviewers. Male editors\u2019 behavior in that study thus agrees with our findings for the entirety of Frontiers journals, while we find an opposite trend for female editors. We note here that Lerback and Hanson (2017) reached their conclusion of women\u2019s underrepresentation by comparing actual reviewer appointment numbers to the fraction of female first authors. This comparison, however, might be questionable, because reviewers in low age groups are rarely invited by editors (3% of times) whereas first authors tend to be young. To account for such differences, we determined expectation levels by gender shuffling among the reviewers and editors in the fixed network of actual reviewer-editor interactions and find that the fraction of female authors (the expectation value that Lerback and Hanson used) is much higher than the expected number of female reviewer contributions (our expectation value; cf. Figures 1b and 3a). For that reason, Lerback and Hanson may have quantitatively overestimated the female editors\u2019 bias against female reviewer appointments. Still, despite this overestimation, even Lerback and Hanson reported female editors\u2019 preference for female reviewers for certain age classes (although not commented upon).\n\n### Homophily in society and science\n\nThe phenomenon of gender homophily in peer-reviewing networks have already been described, but these previous reports have reached ambiguous conclusions. Lloyd (1990) found that female reviewers accepted female-authored papers at a higher rate than those of male authors, whereas male reviewers did not show such a bias. In contrast, Borsuk et al. (2009) reported that male and female reviewers were equally likely to reject a female-authored paper. The probability that a female editor appoints a female reviewer was reported to be 31%-33%, whereas male editors appointed female reviewers in 22%-27% of cases (Gilbert et al., 1994; Buckley et al., 2014; Fox et al., 2016). Here, for the whole spectrum of Frontiers journals we found these numbers to be similar: 33% and 27%, respectively. However, our study concludes for the existence of significant inbreeding homophily in the reviewer appointing behavior for both male and female editors, and does so based on a pluri- rather than mono-disciplinary data set, substantially larger than all previous accounts of homophily in peer review.\n\nSocrates, in Plato\u2019s Phaedrus, already asserted that: \u201csimilarity begets friendship\u201d. Homophily \u2013\u00a0or \u201cattraction for the similar\u201d, not only limited to the gender attribute\u00a0\u2013 is ubiquitous in social networks. Since the classic studies of Park and Burgess (1921) and Lazarsfeld and Merton (1954), gender homophily has been found in groups of playing children (Bott, 1928; Shrum et al., 1988) and adult friends (Verbrugge, 1977) and is also present in work environments (Brass, 1985; Bielby and Baron, 1986; Ibarra, 1992) and voluntary organizations (Popielarz, 1999). Since focused interactions between co-workers favor the formation of relations, operation in already homophilic environments will lead to an amplification of homophily (Feld, 1981; Feld,\u00a01984). In particular, homophilic styles of professional interaction with peers may persist since the time in which they were (un-)consciously learned in homophilic school environments (Vinsonneau, 1999).\n\nImportantly, even a slight homophily can influence and alter the way in which information spreads (Yava and Yucel, 2014) and opinions form through the social network of interactions, leading to the emergence of \u201cdead-end\u201d cultural niches (Mark, 2003). Homophilic groups indeed tend to vote together when asked to decide for something (Caldeira and Patterson, 1987) and have similar prospective evaluations, a same mindset (Galaskiewicz, 1985). While homophily can in principle be put to good use, as for instance in the education about good health practices (Centola, 2011), the uncontrolled effects of homophily may constitute a threat to the universalism of the peer-review system, and thus to science.\n\n### Gender-specific mechanisms of homophily\n\nWe observed very different patterns of homophily for male and female editors, with a widespread homophily across men, while dominated by very few highly homophilic editors for women. After removal of their contribution, homophily became insignificant (cf. Figure 3e,f). This suggests that there is only baseline homophily for the majority of female editors and most assignments are gender-blind (for instance in the neuroscience community, cf. Figure 3c). Differences between men\u2019s and women\u2019s homophily patterns are classically known, finding their root in different styles of social network construction. For instance, in situations where a mutual friendship exists between A and B a friendship initiation with C tends to be reciprocated by boys, but not by girls (Eder and Hallinan, 1978). Such differences in attachment strategies tend to generate gender-segregated worlds for children to preadolescents in which girls evolve in small homogeneous groups and boys form larger but more heterogeneous cliques, with boundaries made looser only later by romantic ties (Shrum et al., 1988). Professional social networks of men are more homophilic than women\u2019s, especially in work environments in which men are dominant (Brass, 1985; Ibarra, 1992). Another source of asymmetry may be that both men and women tend to form connection routes passing through a male node when reaching toward distant domains (Aldrich, 1989).\n\nOne could speculate that other factors might contribute, like friendship or (perceived) status, competency and reputation. These factors might, in turn, be partly depending on gender, e.g. through implicit biases (Nosek et al., 2007; Merton, 1968; Paludi and Bauer, 1983). Multiple categories of relationships were analyzed, for instance, by Ibarra (1992) who reported that, in a company setting, men named mostly men as points of contact for five different business-relationship categories, whereas for women the preferred gender was category-dependent. A similar situation could be at work here: one could speculate that a set of other, hidden, variables influence reviewer appointment decisions, and that these variables have a different importance for male and female editors. Determining which factors are most important for male and female editors in the choice of the reviewer and how these factors are or are not, in principle, related to gender, might thus aid in reducing homophily in the peer-review system.\n\nOur finding of strongly homophilic \u201ctopology-organizer\u201d female editors is reminiscent of the notion of \u201cfemocrat\u201d introduced in political studies, referring to the role played by isolated feminists who, after having managed to integrate inside men-dominated decisional organisms, provide a bridge to the spheres of power for the requests of activists outside of them (Yeatman, 1990). Now, while the active engagement of these femocrats is very useful in pushing forward technocratic (i.e. top-down) solutions aiming at reducing gender\u00a0discriminations, especially at an early stage, on the long-term, the effects of their action may be precarious. Indeed political experiences have shown that when an external event reduces the influence of these isolated driver women, the situation can quickly deteriorate again (Outshoorn, 2005), aggravated by the suspicious look toward femocrats held by formerly dominant men or, paradoxically, even women, finding them too prone to compromise or too aggressive (Outshoorn and Kantola, 2007). It is thus important to devise strategies \u2018healing\u2019 network topology in depth, and in a bottom-up fashion, via pervasive education campaigns targeted to the deciders (Sainsbury, 1994), in our case chiefly the editors. Such strategies are required to protect the acquirements of top-down actions against gender discriminations: increasing the number of women will not be enough to overcome gender bias (Isbell et al., 2012; Avin et al., 2015).\n\n## Conclusions\n\nIdeally, all scientific interactions are gender-blind. A scientist's status and the provision of resources to scientists should not be influenced by gender but solely depend on the value of the scientific contributions. Access to the publication systems is a critical determinant of a scientist\u2019s success. Accordingly, reviewers and editors, the gatekeepers of the scientific canon, should be particularly sensitive to base their judgment solely on the merit of scientific work. This merit, however, is difficult to determine and any assessment is necessarily influenced by the assessor's view of the field, including his or her personal position in the network of colleagues and the interactions with them (Mulkay, 1979; Cole, 1992).\n\nInbreeding homophily, an increased affinity between persons with similar attributes, appears to be a sociological, population-level trait of human societies. It is only natural, thus, that we find gender homophily in interactions between editors, reviewers and authors. Nonetheless, this inbreeding homophily is damaging to female scientists, whose work ends up being overlooked, due to unconscious negative bias. The phenomenon of inbreeding homophily is also likely not restricted to the peer\u00a0review of manuscripts, so it needs to be taken into account for grant evaluation, hiring, or when designing mentoring programs. Importantly, it is likely to persist even when numerical balance between genders is achieved (Isbell et al., 2012). Altogether, inbreeding homophily negatively affects science as a whole because a stronger involvement of women would increase the quality of scientific output (Merton, 1973; Woolley et al., 2010; Nature, 2013; Campbell et al., 2013). Consequently, all scientists should wholeheartedly support the endeavor to remove gender bias from science - but how could that be achieved?\n\nInitiatives to remove gender-based inequality can roughly be divided into two different categories. On the one hand, \u201cgender mainstreaming\u201d (Special Adviser on Gender Issues and Advancement of Women, 2002) promotes the consideration among actors at all levels of every action\u2019s and policy\u2019s implications on women and men and is geared towards creating long lasting \u201cbottom-up\u201d changes. On the other hand, fast progress could be attempted through \u201ctop-down\u201d implementation of technocratic instruments such as quota. This politically issued \u2018state feminism\u2019 (Mazur and McBride Stetson, 1995), is suboptimal in that it might even \u201cprovide an alibi\u201d for not modifying attitudes in depth (Squires, 2008). As inbreeding homophily is an expression of a state of mind it is likely little amenable to change by externally enforced measures. Raising awareness, in comparison, seems to be the most promising route. The goal should be to motivate all scientific actors to \u201cintegrate thinking about gender discrimination in every decisional process\u201d (translated from Woodward, 2008). Educative actions should be conducted with tact, not based uniquely on inducing feeling of guilt and shame, in order not to be perceived as annoying (Woodward, 2003). At the same time, existing formal actions to reduce bias should be upheld.\n\nIn the field of peer review two more specific strategies are available to reduce bias: blind review and automated editorial management. However, both strategies are of limited acceptance and use. First of all, removing the authors\u2019 names is often not sufficiently blinding. References to the authors\u2019 previous publications or to the approving ethics committee all but spell out the authors. Second, while removal of the authors\u2019 names does indeed blind the reviewers to all irrelevant attributes, it also blinds them to relevant meta-data, such as the scientific experience of the authors, which might be considered as relevant by many reviewers. In an attempt to assist editors of Frontiers journals, keyword-based reviewer suggestions are automatically provided to them but the editors remain free to make their own choices. While these gender-blind automated suggestions could already contribute to an assignment that is less influenced by homophily, an editorial management software is also the ideal platform to routinely direct the editor\u2019s attention to the issue of homophily. It could display statistics similar to our Figure 3 and encourage non-homophilic choices of reviewers. Such a strategy maintains full editorial freedom and could easily be evaluated, either internally or, in the case of open review as in the Frontiers journals, through analysis of the publicly available data.\n\nGiven how engrained homophily is in our nature, the path towards a gender-blind science will be arduous. Yet, with the joined effort of the scientific community to overcome partisanship and discrimination, a merit-based system with equal opportunities for all scientists might just be within reach. After all, which social enterprise would be more apt to follow ratio over instinct than science?\n\n## Materials and methods\n\n### Collection and parsing of data\n\nAll article data were exclusively obtained from the publicly available articles web pages from the Frontiers Journal Series (RRID:SCR_007214), which was listed (at the date of last data download in March 2016) on: http://www.frontiersin.org/SearchIndexFiles/Index_Articles.aspx,\u00a0as well as the associated XML file if the HTML code of the article web page contained a corresponding reference. Subsequently, articles' metadata (article id, authors, reviewers, editors, publication date, etc.) were extracted from the XML files and the web pages. All gathered personal identity information was deleted after inference of individual genders (see later), resulting thus in a fully anonymized data set. In total, we analyzed 41\u2019100 articles published before January 1st, 2016, covering 142 Frontiers journals from Science, Health, Engineering, and Humanities and Social Sciences. Our parsing routine was able to find information about authors in 41\u2019092 of these articles, about reviewers in 39\u2019788 articles (note that some articles, like editorial articles, might not have been reviewed), and about editors in 40\u2019405 articles. The anonymized network data is provided as Supplementary file 3.\n\nTo recognize and identify people re-occurring in more than one article, every person was assigned a unique identifier number (UID). When a contributor was found to be associated to an official profile identification number in the Frontiers database, then we relied on it, directly translating it into a UID (this happened for 71% of contributors). In the remaining cases, we decided whether a record matched another based on the names and affiliations of people. Specifically, for two names to be matched, we required that the surnames coincided and that each given name of the contributor with less given names needed to have a corresponding match in the other contributor's name (a match could also be an initial like \u201cJ\u201d with a fully specified name like \u201cJohn\u201d). In case both contributors' given names consisted of only initials, we required, in addition, that their affiliations were sufficiently similar. Newman (2001) found that name-matching in the absence of UIDs, and even abbreviating all given names to initials, resulted in errors on the order of few percent in a data set comprising more than a million people. Correspondingly, as we expect the UIDs to be correctly associated with a contributor in the vast majority of cases, erroneously matching or not matching people is likely relatively uncommon.\n\n### Determination of gender\n\nEach UID was assigned a gender based on their associated given names (note that after the steps described in the previous section, at least one first name was fully specified for 99.6% of the UIDs, while for the remaining 0.4% of UIDs all given names consisted of only initials so that no gender could be attributed). The extracted given names were compared with an extensive name list, assembled from public web-sources, such as:\n\nNote that some given names (like Andrea) are in use for both men and women. Gender-ambiguous given names present in the US census database were categorized to the gender to which they were more frequently attributed. When a name appeared as both male and female in one of the other sources, or when different sources did not agree on the gender for a name, we decided not to associate that given name with a gender.\n\nWe validated the gender assignment procedure by performing a web search for 1053 randomly selected people from our data set, and determining their gender based on a picture or the use of gender-specific pronouns in a biographical text. We were able to find such information for 924 out of the 1053 people (88%). The gender automatically assigned by our algorithm to those identified was correct in 96 % of cases. For comparison, we note that the name-gender algorithm used in Larivi\u00e8re et al. (2013) misclassified male and female names in 8% of cases.\n\nOur list thus comprised 66605 female and 43482 male names. In addition to the name list, we manually assigned the non-automatically-identified gender of 643 people with a high number of re-occurrences. In total, we were thereby able to assign gender to 131885, that is 87 % of UIDs. All further analyses were done ignoring the remaining 13% of scientists.\n\n### Network construction\n\nWe represented the available data in directed networks (Figure 1a), in which vertices were individual scientists and edges denoted peer-reviewing interactions: is appointing in the editor-to-reviewer network, and is editing (reviewing) a manuscript of in the editor (reviewer)-to-author network. Year-resolved graphs were constructed by deleting all links representing articles that were published later than the given year.\n\n### Graph analytics\n\nAll graph analyses (Figure 1\u2014figure supplement 1) were performed with the freely-available Python igraph package.\n\nIn graph theory, a connected component is a subgraph in which any two vertices are connected to each other by at least one path, and which is connected to no additional vertices in the full graph. The largest of all the connected components of a graph is called its giant component. One can distinguish between the weak giant component (in which the direction of edges is ignored when building inter-node paths) and the strong giant component (in which the direction is taken into account). All the following graph analyses have been performed on the weak giant component of the networks observed at each time.\n\nTransitivity undirected (clustering coefficient) is calculated as the ratio of triangles to connected triangles (triplets) in the graph, considering connections between nodes independent of their direction.\n\nAverage path length calculates the mean of the geodesic directed path lengths between all pairs of nodes in a connected component. The geodesic path length between a given pair of nodes is the minimum number of links needed to travel between the nodes along connected edges.\n\nSmall-worldness S is defined in Humphries and Gurney (2008), as S=\u03b3/\u03bb. \u03b3 is the undirected\u00a0transitivity of the graph divided by k/n, which is an approximation for the undirected\u00a0transitivity of an Erd\u00f6s-R\u00e9nyi random graph with n nodes and average degree (in+out) of k. \u03bb is the ratio of the average shortest path length of the graph to ln(n)/ln(k), which is the average shortest path length of an Erd\u00f6s-R\u00e9nyi graph with n nodes and average degree k.\n\n### Statistical testing\n\nStatistical significance was established by comparing a feature of the data to its confidence interval (CI). The graphic notations *, ** and *** denote that this feature lay outside the 95%, 99% and 99.9% CI, respectively. Confidence intervals were calculated by recalculating the given feature 10000 times, after permuting gender labels (with the exception of Figure 3e where, for computational reasons, only 100 recalculations were performed). Specifically, Figures 1 and 2 are derived from a table with a column given the number of contributions (up to a specified time point) in a given role for each person, and another column of each person's gender, and the latter column was permuted keeping the former constant. On the other hand, confidence intervals in Figure 3 were obtained by repeatedly permuting genders among all nodes in a given graph, independent of their associated roles. The underlying graph used for Figure 3a and Figure 3c-f\u00a0was a suitably pruned editor-to-reviewer graph, out of which: we first removed all self-loops (i.e. editor and reviewer are identical); second, we deleted all leaf nodes, i.e. scientist who never edited or reviewed anything and had therefore a null out-degree; third, for Figure 3c, we removed cross-disciplinary assignments from journals not belonging to the indicated category. Similarly, Figure 3b was derived from a deleafed reviewer-to-author graph.\n\n### Inbreeding homophily at a local level\n\nFigure 3d shows two histograms, one over all male editor nodes, the other over all female editor nodes. For each editor i who appointed at least 2 distinct reviewers we calculated a measure Hi of inbreeding homophily. To compute it, we first measured the actual number of reviewer assignments given to women nodes by the considered editor i, Wi. The next step was to subtract the expected number of reviewer assignments given to women, which would be observed if the given editor node appointed women with the average frequency pi they are appointed in its local vicinity. To evaluate pi we took the set of all editors (both males and females) at a distance of at most 5 directed edges from the considered editor node i. We counted the overall number Aall of reviewer assignments made by these editors (i.e. the total number of edges originating from editor nodes in the neighborhood shell), and neglected those editors for which Aall < 62\u00a0(i.e.\u00a0we required that, on average, at each of the 5 steps away from the considered editor at least 2 novel reviewers are encountered that could not have been reached in a shorter step count). We then determined the number Afemale \u2264 Aall of reviewer assignments made toward female nodes. We finally assumed pi = Afemale / Aall.\n\nWe could then compute the local inbreeding homophily measure Hi=Wi \u2013 Ai pi, where Ai was the total number of assignment made by each considered editor i.\n\nWe used a similar technique to assess the impact of the most homophilic editors on the overall network-homophily in the female editor-to-reviewer and male editor-to-reviewer networks. Let qi be the probability a person of the same gender is chosen by an editor i, where qi is calculated exactly as pi in the previous paragraph, i.e. by considering all people at most 5 directed edges away from editor i in the editor-to-reviewer network, counting the number of assignments these people gave to people of the same gender and dividing by the total number of assignments these people made. Next, let ki denote the number of assignments editor i gives to a person of the same gender and ni the total number of assignments editor i makes. Assuming editor i chooses the gender of a reviewer at random, the probability that i assigns ki out of the ni reviewers to have the same gender follows a binomial distribution binom (ki; ni, qi) and \u03a6hom =$\\sum\u03bd=k_{i}n_{i}binom(\u03bd;n_{i},q_{i})$ measures how likely it is that editor i assigns at least ki reviews to a person of the same gender.\n",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "e7d3aa11-6749-4a2a-a483-0f03f5ad1be7",
+      "submission_id": "b34fbd40-d6f5-42b9-9cc4-75c907cee19e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21718.011](https://doi.org/10.7554/eLife.21718.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Gender bias in scholarly peer review\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Senior/Reviewing Editor. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting and high quality manuscript on a topic that is important and timely. The manuscript (which is based on a novel data set) merits publication after revision to improve readability and replicability.\n\nEssential revisions:\n\n1) To maintain high standards of research reproducibility, and to promote the reuse of new findings, eLife requires all major data sets associated with an article to be made freely and widely available (unless there are strong reasons to restrict access, for example in the case of human subjects\u2019 data), in the most useful formats, and according to the relevant reporting standards. (See below for more details).\n\n2) How representative is the population studied by the authors? It would be interesting to compare the population studied by the authors with other large-scale studies to enhance the generalizeability of their findings. For example, it seems as if the authors could compare Figure 1\u2014figure supplement 2 to Lariviere et al. (2013) in order to determine whether the population they study is significantly different to traditional scientometric populations. Also, there are several studies that show that women are less productive than men. This might be useful for explaining Figure 2.\n\n3) The authors should more fully acknowledge the limitations of the data set. For example, the authors mention that the names are publicly disclosed (this is what allows this analysis). However, several studies have shown that open peer review significantly affects the willingness of certain populations to conduct reviews (e.g., by age, rank, gender, minority status). Could the fact that names are disclosed make this less generalizable? The limitations of this should be discussed.\n\n4) The analyses only included reviewers who agreed to review (understandably, as there is no publicly available data for reviewers who declined to review). However, women might be more likely to say no to requests to reviews for various reasons (e.g. they might have less time to review, or they might feel less qualified to comment on their peers' work). Hence, might their underrepresentation stem from self-selection rather than discrimination?\n\n5) It would be interesting to comment on the possible effect of age on gender discrepancies at different levels. Specifically, editors might (on average) be older than reviewers, who in turn might (on average) be older than authors (although with large variability). Is it possible that higher gender discrepancy among editors and reviewers is because women might be less represented in older age groups?\n\n6) There is sparse information on author name disambiguation (for those that lacked a UID). More information should be provided on this. The authors state that they cannot guarantee a \"completely error-free parsing\" \u2013 could they run a validation test to give an estimate of the error? And was any validation exercise conducted on the name-gender algorithm? How does this compare with other name-gender algorithms?\n\n7) Several seminal books on peer review and articles specifically focused on bias in peer review are omitted here. Furthermore, the article fails to engage with the previous literature in a substantial way. Given that this work is one of the largest peer-review studies to-date, it would be useful for the authors to establish how their work refutes or confirms previous work.\n\n8) Regarding the third paragraph in the Results section: please include a figure which shows that the gender gap in various contributions cannot be fully explained by population.\n\n9) There are many interesting results that warrant more explanation in the text. At present, some of the most interesting results are buried in the figure captions. It would be great to see the authors embed some of these results, in more detail, in the main text.\n\n10) Overall, the differences between observed and chance-level participation of women (for instance in Figure 2) are not that large, even though they are statistically significant. How concerned should we be about them in the first place?\n\n11) The authors advise that editors should be encouraged to make non-homophilic reviewer selection. But if the goal is to increase gender parity, shouldn't women editors be 'allowed' to be more homophilic, at least until the parity achieved? Might it be better to suggest that all editors should try to recruit more women reviewers?\n",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "469bb23d-0b38-419e-a6c2-8259ab28677a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C1",
+      "claim": "The data set included the names of more than 9000 editors, 43,000 reviewers, and 126,000 authors for about 41,000 articles published in 142 journals in Science, Health, Engineering and the Humanities and Social Sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "This data set included the names of more than 9000 editors, 43,000 reviewers, and 126,000 authors for about 41,000 articles published in 142 journals in Science, Health, Engineering and the Humanities and Social Sciences (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers extracted from the Frontiers journals dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "6d4ec784-b827-4d7e-872a-facca7e6f156",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C2",
+      "claim": "The data set is one of the largest available to date, containing at least an order of magnitude more information than most data sets used in previous studies of peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "This data set is one of the largest available to date, and contains at least an order of magnitude more information than most data sets used in previous studies of peer review (see Supplementary file 2 for comparison).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the dataset size to previous studies and references a supplementary file for detailed comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "ba897957-0deb-40d9-867c-8efb057ff82b",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C3",
+      "claim": "Women are underrepresented in the peer-review process.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using public information about the identities of 9000 editors and 43000 reviewers from the Frontiers series of journals, we show that women are underrepresented in the peer-review process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding based on analysis of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "eb62f4b9-d2f0-461e-9176-04c9bf105a45",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C4",
+      "claim": "Editors of both genders operate with substantial same-gender preference (homophily).",
+      "claim_type": "EXPLICIT",
+      "source": "that editors of both genders operate with substantial same-gender preference (homophily)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a key finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "42f76a8e-01b9-4338-94b7-186506e4b2cf",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C5",
+      "claim": "The mechanisms of homophily are gender-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the mechanisms of this homophily are gender-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a6f0a72a-d109-40f0-b197-a83833b6060e",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C6",
+      "claim": "Homophily will persist even if numerical parity between genders is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that homophily will persist even if numerical parity between genders is reached",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "55ec25cf-ec48-4f3e-bf2a-06ad82449c59",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C7",
+      "claim": "The peer-reviewing interactions in the Frontiers journal series gave rise to a mature, topologically stable and integrated community.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, peer-reviewing interactions in the Frontiers journal series gave rise to a mature, topologically stable and integrated community, even though its contributors constitute only a small subset of researchers worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents network analysis metrics showing stability over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a4ddb48c-b058-46ff-9c13-7bd1d88b91d0",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C8",
+      "claim": "The fractions of authoring, reviewing and editing contributions by women amounted to 37%, 28% and 26%, respectively, in the complete accumulated data until 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1b reveals that the fractions of authoring, reviewing and editing contributions by women \u2014 amounting to 37%, 28% and 26%, respectively, in the complete accumulated data until 2015",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "ce5a1aad-93de-47c5-b7b1-559e5ccebd24",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C9",
+      "claim": "The fractions of authoring, reviewing and editing contributions by women are always significantly smaller than the corresponding fractions for men.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1b reveals that the fractions of authoring, reviewing and editing contributions by women \u2014 amounting to 37%, 28% and 26%, respectively, in the complete accumulated data until 2015 \u2014 are always significantly smaller than the corresponding fractions for men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing gender disparities across all roles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "82e90367-6dde-4db7-bee9-919ffb8bf9cc",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C10",
+      "claim": "The unbalance between male and female contributions worsens when gradually ascending through the peer-review hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The unbalance between male and female contributions thus worsens when gradually ascending through the peer-review hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows decreasing percentages of women from authors (37%) to reviewers (28%) to editors (26%).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a01ea725-b7e1-40b6-af80-a3575bdcab1b",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C11",
+      "claim": "Linear extrapolation based on the fractions observed from 2012 to 2015 would predict that exact parity could be achieved as late as 2027 for authoring, 2034 for reviewing and 2042 for editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear extrapolation based on the fractions observed from 2012 to 2015 would predict that exact parity could be achieved as late as 2027 for authoring, 2034 for reviewing and 2042 for editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides projections based on trend analysis of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1df799c7-a7d8-4239-8149-72109f3a3fe4",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C12",
+      "claim": "Author and reviewing contributions by women lay significantly below the confidence intervals obtained through permutation testing since 2009 and 2011, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Author and reviewing contributions by women lay significantly below the confidence intervals obtained through this permutation testing procedure since 2009 and 2011, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes statistical testing results comparing actual data to gender-blind null hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "b04c8556-4501-4c0c-8a3d-c1d3cdc36573",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C13",
+      "claim": "The mere overall smaller number of female actors cannot explain the observed unbalanced fractions of female contributions to the peer-review chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mere overall smaller number of female actors cannot explain the observed unbalanced fractions of female contributions to the peer-review chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from permutation testing that controls for numerical representation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "f04cb822-8932-4331-843a-4be415bdfff0",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C14",
+      "claim": "Women had a significantly smaller than chance probability to review (and author) more than one article.",
+      "claim_type": "EXPLICIT",
+      "source": "women had a significantly smaller than chance probability to review (and author) more than one article, while their probability to act as single-time reviewer or author exceeded the expected chance level",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents distribution analysis comparing observed data to chance expectations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "dbafe352-8f9a-4af2-a483-c4ed1fef7850",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C15",
+      "claim": "Women's probability to act as single-time reviewer or author exceeded the expected chance level.",
+      "claim_type": "EXPLICIT",
+      "source": "women had a significantly smaller than chance probability to review (and author) more than one article, while their probability to act as single-time reviewer or author exceeded the expected chance level",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents distribution analysis comparing observed data to chance expectations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "27915b9d-066b-4d08-961a-dcd8925261a0",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C16",
+      "claim": "73% of reviewers appointed by men were also men.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 73% of reviewers appointed by men were also men",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "da458cf6-8dd9-429f-ab1c-0db423a9c46a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C17",
+      "claim": "33% of reviewers appointed by women were women.",
+      "claim_type": "EXPLICIT",
+      "source": "33% of reviewers appointed by women were women",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "8a2cfed7-b78f-4636-93ea-fc26b9cbd9e2",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C18",
+      "claim": "Both the percentages of same-gender appointments by male and female editors laid above the expectations drawn from the assumption that genders were randomly distributed in the given editor-to-reviewer network topology.",
+      "claim_type": "EXPLICIT",
+      "source": "but, importantly, both these numbers laid above the expectations drawn from the assumption that genders were randomly distributed in the given editor-to-reviewer network topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares observed percentages to statistical expectations from null hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "9857e6d7-b50f-4a28-914d-2646267a388d",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C19",
+      "claim": "Male (female) reviewers assessed articles authored by male (female) authors significantly more often than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the reviewer-to-author network (Figure 3b), male (female) reviewers assessed articles authored by male (female) authors significantly more often than expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents analysis of the reviewer-to-author network showing homophily.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2c582875-8408-42de-ab2e-28ea4cd562cf",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C20",
+      "claim": "Homophily is widespread across scientific fields, including those with relatively mild underrepresentation of women.",
+      "claim_type": "EXPLICIT",
+      "source": "We first checked for the influence of local subnetwork structure on apparent gender bias by looking at different scientific fields, including those with relatively mild underrepresentation of women, and found homophily widespread across disciplines (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript analyzes different disciplinary groupings and finds consistent patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "61101e26-a43a-4d89-a36c-ed070c6552b2",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C21",
+      "claim": "Male (female) editors generally appointed female reviewers at a lower (higher) rate than expected even at the local neighborhood level.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at this local neighborhood level, we continued to find that male (female) editors generally appointed female reviewers at a lower (higher) rate than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents analysis controlling for local network structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "ca2ab2d5-2af2-4db3-9869-112906559c23",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C22",
+      "claim": "For male editors, most histogram bins for \u03a6hom < 0.6 displayed node counts significantly larger than gender-shuffled estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "For male editors, most histogram bins for \u03a6hom < 0.6 displayed node counts significantly larger than gender-shuffled estimations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents analysis of inbreeding homophily index distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "55a1e62a-0616-47a9-9ae7-e77514df05e4",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C23",
+      "claim": "It was enough to remove the few most homophilic female editors with the lowest values of \u03a6hom from the network to bring the probability for a female editor to appoint a female reviewer back to chance-level.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, we found that it was enough to remove the few most homophilic female editors with the lowest values of \u03a6hom from the network, to bring the probability for a female editor to appoint a female reviewer back to chance-level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from pruning analysis of the network.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d19e7ecb-407b-4780-96a3-97b20b35bef7",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C24",
+      "claim": "The probability for a male editor to appoint a female reviewer remained significantly below chance expectations for all the considered thresholds for inclusion, 0 \u2264 \u03a6thr \u2264 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it remained significantly below chance expectations for all the considered thresholds for inclusion, 0 \u2264 \u03a6thr \u2264 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from pruning analysis showing persistent bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "12da22ed-68b6-456a-9e53-f4b0477c7901",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C25",
+      "claim": "The overall smaller-than-chance probability of appointing female reviewers for male editors is due to inbreeding homophilic tendencies that are widespread among male editors.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the overall smaller-than-chance probability of appointing female reviewers for male editors is due to inbreeding homophilic tendencies that are widespread among male editors, although at varying degrees of strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the pruning analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "8c24b2d9-46f2-4443-adb6-4188b818a409",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C26",
+      "claim": "The overall larger-than-chance probability to appoint female reviewers for female editors is driven by the action of just a small number of strongly homophilic female editors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the overall larger-than-chance probability to appoint female reviewers for female editors is driven by the action of just a small number of strongly homophilic female editors, with most other female editors showing only \"passive\" baseline homophily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the pruning analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "cbdbae92-31b5-491d-b636-e9f01530c86f",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C27",
+      "claim": "The number of female doctoral recipients at US institutions increased by, on average, 0.1% - 0.6% per year between 2005 and 2015, depending on broad field of study.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of female doctoral recipients at US institutions increased by, on average, 0.1% - 0.6% per year between 2005 and 2015, depending on broad field of study (National Science Foundation, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites external data from the National Science Foundation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "eb32f21c-986e-416a-9a3f-beedfdffabb3",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C28",
+      "claim": "The number of fraction of women in medical schools increased by, on average, 0.6% to 0.8% per year between 1996 and 2007.",
+      "claim_type": "EXPLICIT",
+      "source": "Ley and Hamilton (2008) reported that the number of fraction of women in medical schools increased by, on average, 0.6% to 0.8% per year (depending on the scientists' rank) between 1996 and 2007.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Ley and Hamilton (2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1c5df116-2fcd-469e-bd96-9d23c8f54f19",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C29",
+      "claim": "Percentages of women professors has increased at a rate of 0.5%-1% per year in the European Union.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of women professors has increased at a rate of 0.5%-1% per year in the European Union (ETAN Expert Working Group on Women and Science,ETAN Expert Working Group on Women and Science, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites data from the ETAN Expert Working Group report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1daf799c-870f-4326-a4a5-6e87fb6d0c7b",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C30",
+      "claim": "The fraction of publishing female scientists in Germany increased by, on average 0.7% from 2010 to 2014, it is now 30.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of publishing female scientists in Germany increased by, on average 0.7% from 2010 to 2014, it is now 30.9% (Pan and Kalinaki, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites data from Pan and Kalinaki (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "65ab9e36-8be0-40ca-8869-7578c30684ec",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C31",
+      "claim": "The number of female first authors of astronomy articles increased by about 0.4% per year between 1960 and 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Caplar et al. (2016) noted that the number of female first authors of astronomy articles increased by about 0.4% per year between 1960 and 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Caplar et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "7dc087ca-9666-422e-8d3b-56862d9643d6",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C32",
+      "claim": "In the Frontiers series of journals, the number of contributions by female authors, reviewers and editors increased by, on average, 1.1% / year, 1.2% / year and 0.9% / year between 2012 and 2015, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Frontiers series of journals, we found that the number of contributions by female authors, reviewers and editors increased by, on average, 1.1% / year, 1.2% / year and 0.9% / year between 2012 and 2015, respectively, similar to the numbers above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific rates of change from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "34cba3eb-451c-40c6-b8b7-5bcbbeba7b0a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C33",
+      "claim": "Women are generally less productive than men measured by their number of publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that, measured by their number of publications, women are generally less productive than men (Cole and Zuckerman, 1984; Zuckerman, 1991; Long and Fox, 1995; Xie and Shauman, 1998; Pan and Kalinaki, 2015; Caplar et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple previous studies reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2e625f65-8d91-4364-80ce-d70a487f9c97",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C34",
+      "claim": "The fraction of female scientists decreases with rank or age.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fraction of female scientists decreases with rank or age (ETAN Expert Working Group on Women and Science, 2000; Ley and Hamilton, 2008; Goulden et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies reporting this pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "18775f45-5062-4948-addd-dfcbf80e0a51",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C35",
+      "claim": "Women with children are not less productive than those without.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, it has been reported that women with children are not less productive than those without (Hamovitch and Morgenstern, 1977; Cole, 1979; Cole and Zuckerman, 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "b65ddd20-9071-4af6-a90d-801c8b9df84d",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C36",
+      "claim": "Young children might decrease productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "although young children might decrease productivity (Kyvik, 1990; Kyvik and Teigen, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "b197704c-3769-4189-aa58-fa6002df9e1b",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C37",
+      "claim": "The implicit association of \"male\" and \"science\" is strongest in the group of 40-65 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "as the implicit association of \"male\" and \"science\" is strongest in the group of 40-65 year olds (Nosek et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Nosek et al. (2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "7386159d-43d1-4a52-8f98-bfc12af78d72",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C38",
+      "claim": "Female editors have been reported to be more productive than male editors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a compensating factor seems to be that female editors, in contrast to authors, have been reported to be more productive than male editors (Gilbert et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Gilbert et al. (1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "cb749d75-f871-4f4c-b045-c16ed8167198",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C39",
+      "claim": "Men and women who are invited to review a manuscript have very similar propensities to accept the invitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, men and women who are invited to review a manuscript have very similar propensities to accept the invitation (Fox et al., 2016; Lerback and Hanson, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Fox et al. (2016) and Lerback and Hanson (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "8ab3d621-d7ef-42cc-ac76-089e993b58d6",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C40",
+      "claim": "Women have been reported to be less likely to be hired.",
+      "claim_type": "EXPLICIT",
+      "source": "Women have been reported to be less likely to be hired (Moss-Racusin et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Moss-Racusin et al. (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "195ecc31-a60c-4177-b9b0-f42ad4703236",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C41",
+      "claim": "Women have been reported to be less likely to receive a grant.",
+      "claim_type": "EXPLICIT",
+      "source": "to receive a grant (Wenner\u00e5s and Wold, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Wenner\u00e5s and Wold (1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "42700221-b932-45dd-b93f-17432b59b90f",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C42",
+      "claim": "Women have been reported to receive lower salaries.",
+      "claim_type": "EXPLICIT",
+      "source": "and to receive higher salaries (Shen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Shen (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "5bfc4364-d895-4e35-9966-2a388facfbec",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C43",
+      "claim": "Most people implicitly associate science with men, and liberal arts with women more than the other way round.",
+      "claim_type": "EXPLICIT",
+      "source": "Still today, most people implicitly associate science with men, and liberal arts with women more than the other way round (Nosek et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Nosek et al. (2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "6c08af0e-c511-44c8-8d56-8cb052262458",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C44",
+      "claim": "The tendency to associate science with men is apparent from a very young age.",
+      "claim_type": "EXPLICIT",
+      "source": "and this tendency, for both men and women, is apparent from a very young age (del R\u00edo and Strasser, 2013; Bian et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from del R\u00edo and Strasser (2013) and Bian et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "c97aa071-a4e3-4c0b-8716-683c7fb54bad",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C45",
+      "claim": "Men are more reluctant than women to believe that gender bias exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond that, men are more reluctant than women to believe that such a bias exists (Handley et al., 2015a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Handley et al. (2015a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2c95710a-ea57-48d0-a148-3b9fd52bf4ae",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C46",
+      "claim": "42% of authors in scientific articles analyzed by Larivi\u00e8re et al. (2013) were women.",
+      "claim_type": "EXPLICIT",
+      "source": "They reported that 42% of authors in their analyzed scientific articles were women, whereas we found that number to be 39% in the Frontiers journals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares their findings to those of Larivi\u00e8re et al. (2013).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "465fb4ad-b15a-4d07-89cc-91e855f1fe5a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C47",
+      "claim": "39% of authors in the Frontiers journals were women.",
+      "claim_type": "EXPLICIT",
+      "source": "They reported that 42% of authors in their analyzed scientific articles were women, whereas we found that number to be 39% in the Frontiers journals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "76d94798-3c42-43cc-b86d-69bf56027904",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C48",
+      "claim": "Only 9% of editors in 435 mathematical journals were women.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger sample sizes, but limited to editors, were considered in an analysis of the composition of editorial boards of 435 mathematical journals (Topaz and Sen, 2016). Only 9% of editors were women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Topaz and Sen (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "3bc0eb13-2ca6-45ce-ad35-d82d548d756d",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C49",
+      "claim": "The fraction of women editors across the Frontiers journals ranges between 6% (Frontiers in Robotics and AI) and 37% (Frontiers in Aging Neuroscience), with an average of 28%.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers lie at the lower and upper end of the female editor fractions across the Frontiers journals, ranging between 6% (Frontiers in Robotics and AI) and 37% (Frontiers in Aging Neuroscience), with an average of 28%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "5459c4b7-3027-41dc-8bc2-328248831b93",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C50",
+      "claim": "The fraction of female reviewers or female reviewer appointments across the Frontiers journals ranges between 11% and 48% with an average of 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning female reviewers or female reviewer appointments, fractions reported in the literature range between 16% and 48% (cf. Supplementary file 2), to be compared with the range between 11% and 48% for the Frontiers journals with an average of 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "769a6d62-30ed-4d26-91a3-06e097937d6c",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C51",
+      "claim": "Female author fractions in Frontiers journals range from 17% (Neurorobotics) to 48% (Public Health).",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers are once again comparable to female author fractions in Frontiers journals, ranging from 17% (Neurorobotics) to 48% (Public Health).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "86e7a816-8e51-4985-8479-770f85cdeb70",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C52",
+      "claim": "The probability that a female editor appoints a female reviewer was reported to be 31%-33%, whereas male editors appointed female reviewers in 22%-27% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability that a female editor appoints a female reviewer was reported to be 31%-33%, whereas male editors appointed female reviewers in 22%-27% of cases (Gilbert et al., 1994; Buckley et al., 2014; Fox et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "c13b7efb-930b-4fed-925d-8d0e94622256",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C53",
+      "claim": "For the whole spectrum of Frontiers journals, the probability that a female editor appoints a female reviewer is 33% and male editors appoint female reviewers in 27% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, for the whole spectrum of Frontiers journals we found these numbers to be similar: 33% and 27%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d5aceb9d-93bd-493a-9888-a3a12a1583d9",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C54",
+      "claim": "Gender homophily has been found in groups of playing children.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the classic studies of Park and Burgess (1921) and Lazarsfeld and Merton (1954), gender homophily has been found in groups of playing children (Bott, 1928; Shrum et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on homophily in social contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "7f411742-8f4e-45a8-b1d6-0ed628ddd2f6",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C55",
+      "claim": "Gender homophily has been found in adult friends.",
+      "claim_type": "EXPLICIT",
+      "source": "and adult friends (Verbrugge, 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on homophily in social contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "211a9829-e6ba-4852-a763-f747d6266b7a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C56",
+      "claim": "Gender homophily is present in work environments.",
+      "claim_type": "EXPLICIT",
+      "source": "and is also present in work environments (Brass, 1985; Bielby and Baron, 1986; Ibarra, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on homophily in social contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d96a5d72-3fa2-4dc9-ab8e-2c67d85fc4fa",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C57",
+      "claim": "Gender homophily is present in voluntary organizations.",
+      "claim_type": "EXPLICIT",
+      "source": "and voluntary organizations (Popielarz, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on homophily in social contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "68e87ea9-411d-4ba0-b370-7d1eb2af7dde",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C58",
+      "claim": "Professional social networks of men are more homophilic than women's, especially in work environments in which men are dominant.",
+      "claim_type": "EXPLICIT",
+      "source": "Professional social networks of men are more homophilic than women's, especially in work environments in which men are dominant (Brass, 1985; Ibarra, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies on gender differences in homophily.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "25a5efa5-5229-46bc-a190-6b49ab39e3bf",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C59",
+      "claim": "Both men and women tend to form connection routes passing through a male node when reaching toward distant domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Another source of asymmetry may be that both men and women tend to form connection routes passing through a male node when reaching toward distant domains (Aldrich, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Aldrich (1989).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "4ff6fe72-5de8-4d9c-bb15-2e5b3cf5a915",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C60",
+      "claim": "A stronger involvement of women would increase the quality of scientific output.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, inbreeding homophily negatively affects science as a whole because a stronger involvement of women would increase the quality of scientific output (Merton, 1973; Woolley et al., 2010; Nature, 2013; Campbell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2df1fe8c-92c0-4a76-840a-0dada21e49b9",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C61",
+      "claim": "The data set included information about authors in 41,092 articles, about reviewers in 39,788 articles, and about editors in 40,405 articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our parsing routine was able to find information about authors in 41'092 of these articles, about reviewers in 39'788 articles (note that some articles, like editorial articles, might not have been reviewed), and about editors in 40'405 articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers from their data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2483f164-bb86-4e30-81fe-001aa0c6a28a",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C62",
+      "claim": "71% of contributors were associated with an official profile identification number in the Frontiers database.",
+      "claim_type": "EXPLICIT",
+      "source": "When a contributor was found to be associated to an official profile identification number in the Frontiers database, then we relied on it, directly translating it into a UID (this happened for 71% of contributors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d0fba95d-10e9-4342-a9e2-ef509d199a38",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C63",
+      "claim": "At least one first name was fully specified for 99.6% of the UIDs.",
+      "claim_type": "EXPLICIT",
+      "source": "note that after the steps described in the previous section, at least one first name was fully specified for 99.6% of the UIDs, while for the remaining 0.4% of UIDs all given names consisted of only initials so that no gender could be attributed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "9b8f9bcb-1401-486c-95ea-522d647e9cfe",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C64",
+      "claim": "The gender automatically assigned by the algorithm was correct in 96% of cases based on validation of 924 randomly selected people.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to find such information for 924 out of the 1053 people (88%). The gender automatically assigned by our algorithm to those identified was correct in 96 % of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides validation results for their gender assignment method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "e0a8dbe4-8ad7-47b0-bcb0-6ce0d8b17364",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C65",
+      "claim": "The name-gender algorithm used in Larivi\u00e8re et al. (2013) misclassified male and female names in 8% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, we note that the name-gender algorithm used in Larivi\u00e8re et al. (2013) misclassified male and female names in 8% of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the error rate from Larivi\u00e8re et al. (2013) for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "6b41167c-031b-4249-b4b0-7c745f86ef13",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C66",
+      "claim": "The name list comprised 66605 female and 43482 male names.",
+      "claim_type": "EXPLICIT",
+      "source": "Our list thus comprised 66605 female and 43482 male names.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers from their name list compilation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "fae67daa-bcfd-41a0-96d8-d61087fbd576",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C67",
+      "claim": "Gender was assigned to 131885, that is 87% of UIDs.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we were thereby able to assign gender to 131885, that is 87 % of UIDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "9f161cca-2fc8-4fc7-8ddd-e30d3c003df2",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C68",
+      "claim": "The weak giant component of the latest reviewer-to-author network reaches 95% of its global size.",
+      "claim_type": "EXPLICIT",
+      "source": "The latest reviewer-to-author (editor-to-reviewer) network sampled at the cutoff date has a giant component reaching 95% (93%) of its global size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides network analysis metrics shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "74f66319-4a34-41d8-82bf-7e8042f479ed",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C69",
+      "claim": "The weak giant component of the latest editor-to-reviewer network reaches 93% of its global size.",
+      "claim_type": "EXPLICIT",
+      "source": "The latest reviewer-to-author (editor-to-reviewer) network sampled at the cutoff date has a giant component reaching 95% (93%) of its global size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides network analysis metrics shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "6f6f27b3-8c6e-429e-b8af-5fd4aec75d7f",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C70",
+      "claim": "39% of all available authors were women.",
+      "claim_type": "EXPLICIT",
+      "source": "overall there are numerically less female than male authors, reviewers and editors (39%, 30% and 28% out of all available authors, reviewers and editors, respectively, were women, closely mirroring the observed fractions of assignments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "73ce7060-9c1a-4b61-bc5d-adb27ff9e8b5",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C71",
+      "claim": "30% of all available reviewers were women.",
+      "claim_type": "EXPLICIT",
+      "source": "overall there are numerically less female than male authors, reviewers and editors (39%, 30% and 28% out of all available authors, reviewers and editors, respectively, were women, closely mirroring the observed fractions of assignments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "948532c8-4650-4c18-9503-034e985ad953",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C72",
+      "claim": "28% of all available editors were women.",
+      "claim_type": "EXPLICIT",
+      "source": "overall there are numerically less female than male authors, reviewers and editors (39%, 30% and 28% out of all available authors, reviewers and editors, respectively, were women, closely mirroring the observed fractions of assignments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this percentage from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d9527b64-320c-4cec-9703-4cdd6d571666",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C73",
+      "claim": "The number of contributions by female authors varies between about 15% (Frontiers in Neurorobotics) and 50% (Public Health).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the number of contributions by female authors varies between about 15% (Frontiers in Neurorobotics) and 50% (Public Health)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this range from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d3e09512-8646-4aa2-9cdc-00f6457a4ee4",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C74",
+      "claim": "The number of contributions by female reviewers varies between about 15% (Surgery) and 50% (Public Health).",
+      "claim_type": "EXPLICIT",
+      "source": "by female reviewers between about 15% (Surgery) and 50% (Public Health)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this range from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "ea458055-84a0-4049-9e25-f0e6e9285439",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C75",
+      "claim": "The number of contributions by female editors varies from ca. 5% (Robotics AI) to 35% (Aging Neuroscience).",
+      "claim_type": "EXPLICIT",
+      "source": "and by female editors from ca. 5% (Robotics AI) to 35% (Aging Neuroscience).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this range from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "0dd1884c-e377-4ed5-ab3c-d6249ccd7f34",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C76",
+      "claim": "Peer review is the cornerstone of scholarly publishing.",
+      "claim_type": "EXPLICIT",
+      "source": "Peer review is the cornerstone of scholarly publishing and it is essential that peer reviewers are appointed on the basis of their expertise alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as an established principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "090c50ad-ceee-46ad-86c9-ddd8aecd1ecb",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C77",
+      "claim": "It is essential that peer reviewers are appointed on the basis of their expertise alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Peer review is the cornerstone of scholarly publishing and it is essential that peer reviewers are appointed on the basis of their expertise alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a normative principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "f1c6e83e-6394-4eed-b2d1-6f87a13fa432",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C78",
+      "claim": "The identity of peer reviewers generally remains confidential.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is difficult to check for any bias in the peer-review process because the identity of peer reviewers generally remains confidential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a general practice in scholarly publishing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2a6be00e-133e-4f76-b73c-2d61998a0f40",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C79",
+      "claim": "Frontiers journals generally disclose the identities of peer reviewers and associate editors alongside each published article.",
+      "claim_type": "EXPLICIT",
+      "source": "Frontiers journals (www.frontiersin.org) differ from most journals in that they generally disclose the identities of peer reviewers and associate editors alongside each published article in an attempt to increase the transparency and quality of the publication process (Poynder, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the unique practice of Frontiers journals.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "d199ebf7-0b1a-4308-a23e-17285ec61336",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C80",
+      "claim": "Inbreeding homophily is an active preference to connect with same-gender network nodes, on top of baseline homophily.",
+      "claim_type": "EXPLICIT",
+      "source": "Both independent analyses \u2013 by topic or localized \u2013 validate the existence of a so-called \"inbreeding\" homophily, i.e. an active preference to connect with same-gender network nodes, on top of \"baseline\" homophily (McPherson et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines inbreeding homophily and cites McPherson et al. (2001).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "7b632c55-f875-44a5-8192-77052b50bdb7",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C81",
+      "claim": "Baseline homophily is subtle but unavoidable bias caused by disproportions in the number of reachable male and female nodes due to heterogeneous network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "While these findings seem to point at homophily created by choices, they might also stem from \"baseline\" homophily (McPherson et al., 2001), i.e. subtle but unavoidable bias caused by disproportions in the number of reachable male and female nodes due to heterogeneous network structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines baseline homophily and cites McPherson et al. (2001).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "fd39f0a3-0ed9-4193-89b1-cc0de0d03246",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C82",
+      "claim": "The average shortest path length for the editor-to-reviewer network is 12 steps.",
+      "claim_type": "EXPLICIT",
+      "source": "which is a short distance relative to the average shortest path length of 12 steps for the editor-to-reviewer network, cf Figure 1\u2014figure supplement 1e",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this network metric from their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "ec761e2d-7230-4927-89bd-2627551bd339",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C83",
+      "claim": "Simply increasing the number of invitations to female reviewers would have a direct and proportional effect on the number of female reviews.",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, men and women who are invited to review a manuscript have very similar propensities to accept the invitation (Fox et al., 2016; Lerback and Hanson, 2017), suggesting: (1) that simply increasing the number of invitations to female reviewers would have a direct and proportional effect",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this implication from the cited finding about similar acceptance rates.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "dc1884b3-feb7-4b55-8978-8f6cc43b10ab",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C84",
+      "claim": "The low number of female reviews in the data is caused in part by a lower number of invitations.",
+      "claim_type": "IMPLICIT",
+      "source": "and, (2) that the low number of female reviews in our data is caused in part by a lower number of invitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the finding that acceptance rates are similar between genders.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "5776593d-3fdf-49a6-a69f-e38e0041ab15",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C85",
+      "claim": "The underrepresentation and discrimination of women in the scientific community is a problem that will not solve by itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The underrepresentation and discrimination of women in the scientific community is a problem that will not solve by itself, given the pervasive, generally unconscious nature of gender bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a conclusion based on the evidence presented.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "292dc808-e432-49b7-9477-01886c97ac82",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C86",
+      "claim": "Gender bias is pervasive and generally unconscious.",
+      "claim_type": "EXPLICIT",
+      "source": "The underrepresentation and discrimination of women in the scientific community is a problem that will not solve by itself, given the pervasive, generally unconscious nature of gender bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript characterizes gender bias based on the literature and findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1046452b-4322-4ba7-a133-8df94d1375be",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C87",
+      "claim": "Inbreeding homophily is likely not restricted to the peer review of manuscripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenon of inbreeding homophily is also likely not restricted to the peer review of manuscripts, so it needs to be taken into account for grant evaluation, hiring, or when designing mentoring programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about broader implications of their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "4554a4d0-ab05-428a-9d52-4d4b2178c7a6",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C88",
+      "claim": "Inbreeding homophily needs to be taken into account for grant evaluation, hiring, or when designing mentoring programs.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenon of inbreeding homophily is also likely not restricted to the peer review of manuscripts, so it needs to be taken into account for grant evaluation, hiring, or when designing mentoring programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript recommends this based on their findings about homophily in peer review.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a68201e8-8af3-4b47-91b9-bae57e2d84d1",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C89",
+      "claim": "Raising awareness seems to be the most promising route to combat inbreeding homophily.",
+      "claim_type": "EXPLICIT",
+      "source": "As inbreeding homophily is an expression of a state of mind it is likely little amenable to change by externally enforced measures. Raising awareness, in comparison, seems to be the most promising route.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript argues for this approach based on the nature of homophily.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1c65d38c-b1d8-4d91-a4e3-9c0b10ea626e",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C90",
+      "claim": "Removing the authors' names is often not sufficiently blinding in peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, removing the authors' names is often not sufficiently blinding. References to the authors' previous publications or to the approving ethics committee all but spell out the authors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses limitations of blind review based on common knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a640ed01-cf1b-4b87-8ca8-cbd24e0410a5",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "claim_id": "C91",
+      "claim": "An editorial management software is the ideal platform to routinely direct the editor's attention to the issue of homophily.",
+      "claim_type": "EXPLICIT",
+      "source": "an editorial management software is also the ideal platform to routinely direct the editor's attention to the issue of homophily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this as a potential solution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "43cbd6c0-6675-4bbd-8768-78751b93eef4",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors compiled a large dataset from Frontiers journals containing information about 9000+ editors, 43,000+ reviewers, and 126,000+ authors across ~41,000 articles. Gender was successfully assigned to 87% of unique identifiers using a name-based algorithm with 96% accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C61-C63, C66-C67 provide comprehensive documentation of data collection and processing methods. The dataset size is well-documented, gender assignment methodology is validated (C64), and the scale comparison to prior work (C2) is supported by supplementary materials. The methods are transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "779d03e9-8479-4a1a-b514-761b151a1399",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Network analysis demonstrates that the Frontiers peer-review system forms a mature, topologically stable, and integrated community with giant components reaching 93-95% of network size and average path lengths of 12 steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C68-C69, C82 are supported by network metrics presented in Figure 1\u2014figure supplement 1. The giant component sizes, path lengths, and temporal stability metrics provide convergent evidence for network maturity. Standard graph-theoretic measures are appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "f40277f3-eb22-40bc-b765-9c6006287053",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Women are underrepresented across all roles in the peer-review process, with contributions of 37% for authors, 28% for reviewers, and 26% for editors. This underrepresentation worsens ascending the peer-review hierarchy and is consistent across most journals and countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8-C10, C70-C75 present consistent descriptive statistics showing gender disparities. The data is well-documented with specific percentages and ranges across journals. Figure 1b-c and supplementary figures provide visual evidence. The hierarchical pattern (37%\u219228%\u219226%) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "b9d1016c-4034-4853-b635-85feb5580146",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Linear extrapolation predicts gender parity would be achieved by 2027 for authoring, 2034 for reviewing, and 2042 for editing. These rates (0.9-1.2% per year) are consistent with trends reported in other scientific contexts (0.1-3.8% per year depending on field and role).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11, C27-C32 present projections based on linear extrapolation from 2012-2015 data. While the comparison to literature trends (C27-C31) provides context, linear extrapolation over 15-35 years is methodologically questionable given potential non-linear dynamics, changing policies, and limited baseline period. The projection should be treated as illustrative rather than predictive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "75fec22a-0ce3-4c2e-8e3e-4d06a24a369c",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Women's underrepresentation in peer review cannot be explained solely by their lower numerical representation. Permutation testing shows that women contribute significantly less than expected by chance, particularly for multiple contributions, while single-time contributions exceed chance levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 describe rigorous permutation testing that controls for numerical representation. The null hypothesis approach (gender-shuffling while preserving network structure) is appropriate. Figure 1b shows data falling outside 95% confidence intervals since 2009-2011, and Figure 2 demonstrates the distribution pattern. The statistical methodology is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "1b3f779c-becb-4e85-ad3d-fc614b55550f",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both male and female editors exhibit significant same-gender preference (homophily) in reviewer appointments. Male editors appoint male reviewers 73% of the time, while female editors appoint female reviewers 33% of the time\u2014both significantly above chance expectations. Similar patterns exist in reviewer-to-author networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C16-C19 present clear evidence of homophily using appropriate null hypothesis testing. The percentages (C16-C17) are compared to network-topology-based expectations (C18), demonstrating statistical significance. Figure 3a-b shows temporal consistency. The methodology properly accounts for baseline network structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a4f49502-9daf-49ed-8abd-1bd2d3b6bd13",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Homophily persists across scientific fields and at local neighborhood levels, demonstrating 'inbreeding homophily' (active same-gender preference) beyond 'baseline homophily' (structural bias from network heterogeneity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C80-C81 demonstrate homophily through multiple control analyses. Field-specific analysis (C20, Figure 3c) rules out disciplinary effects. Local neighborhood analysis (C21, Figure 3d) controls for network structure within 5 links. The distinction between inbreeding and baseline homophily is conceptually sound and empirically supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanisms of homophily are gender-dependent: male editors show widespread moderate homophily across most individuals, while female editors' homophily is driven by a small number of highly homophilic individuals. Removing the most homophilic female editors eliminates the effect, but male editor bias persists across all thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C22-C26 present sophisticated analysis using the \u03a6hom index to quantify individual-level homophily. Figure 3e-f demonstrates differential distributions and pruning effects. The statistical approach is rigorous, comparing to gender-shuffled networks. The interpretation that male homophily is widespread while female homophily is concentrated is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "25ffa87c-9b49-4683-964f-997f895ff856",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Homophily will persist even if numerical parity between genders is reached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 is a forward-looking prediction not directly tested by the data. While the analysis of inbreeding homophily (C23-C26) suggests mechanisms independent of numerical representation, the manuscript does not present simulations or analyses at gender parity. This conclusion is plausible but speculative given the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "59b14925-0dee-417a-80fc-fecb293e9fec",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Frontiers dataset is representative of broader scientific publishing patterns. Female participation rates (39% authors, 28% editors, 30% reviewers) and homophily patterns (33% female-to-female vs 27% male-to-female appointments) are consistent with other published studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 provide systematic comparison to literature. The Frontiers percentages fall within ranges reported by other studies (C48-C52), and the homophily patterns match previous reports (C52-C53). Supplementary file 2 provides detailed comparisons. This supports generalizability, though differences in open vs. blind review are acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within extensive prior literature on gender bias in science, including productivity differences, career trajectories, implicit associations, hiring and funding disparities, and acceptance of bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C45 appropriately cite relevant literature to contextualize findings. These are literature review claims that support the discussion but are not primary findings of this study. The citations appear appropriate and the characterizations of prior work are reasonable, though individual claims would require verification of source material.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gender homophily is a well-documented phenomenon across social contexts including children's play groups, adult friendships, work environments, and voluntary organizations, with documented gender differences in homophily patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 cite established sociological literature on homophily. These contextual claims appropriately ground the peer-review findings in broader social science theory. The citations to classic studies (Park & Burgess 1921, Lazarsfeld & Merton 1954) and more recent work are appropriate for establishing the ubiquity of homophily.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Inbreeding homophily negatively affects science because greater involvement of women would increase scientific quality. Gender bias is pervasive and unconscious, will not self-resolve, and likely extends beyond manuscript peer review to grant evaluation, hiring, and mentoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60, C85-C88 make normative and predictive statements that extend beyond the data. While C60 cites literature supporting diversity benefits, the causal claim about quality improvement requires stronger evidence. Claims C85-C88 about persistence and broader applicability are reasonable inferences but speculative. These are discussion points rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "039f7f91-164d-4462-8276-3b3d54d6d4db",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Since men and women have similar propensities to accept review invitations, increasing invitations to female reviewers would proportionally increase female reviews, and the low number of female reviews is partly caused by fewer invitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 make reasonable inferences from cited literature (C39: Fox et al. 2016, Lerback & Hanson 2017) showing similar acceptance rates. The logical inference that invitation rates drive review rates is sound given equal acceptance propensities. However, this is an inference from others' work rather than a direct finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "a7e3c815-b2c7-4354-8b4f-5de8df33b44e",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Raising awareness is the most promising route to combat homophily, as it is a state of mind not amenable to external enforcement. Blind review has limitations, and editorial management software could direct editors' attention to homophily patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C91 present recommendations and opinions about interventions. While C90 correctly notes limitations of blind review, claims about the effectiveness of awareness-raising (C89) and software interventions (C91) are speculative. These are reasonable suggestions but lack empirical support within this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "57d383d8-3a77-4f0c-a92e-4daa54dcca43",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The gender assignment algorithm achieved 96% accuracy on validation, comparing favorably to the 92% accuracy (8% error rate) reported by Larivi\u00e8re et al. (2013).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 provide methodological validation. The 96% accuracy is based on manual verification of 924 individuals (88% of 1053 sampled), which is a reasonable validation sample. The comparison to Larivi\u00e8re et al. provides appropriate context. The validation methodology is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    },
+    {
+      "id": "9e806d3d-81ef-4022-bc1e-55dfb51d6e93",
+      "content_id": "851f29f2-398b-4e8e-8d43-512364139de8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Peer review is the cornerstone of scholarly publishing where reviewers should be appointed based on expertise alone, but reviewer identities are typically confidential. Frontiers journals uniquely disclose reviewer and editor identities, enabling this analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 establish the context and rationale for the study. These are accurate characterizations of peer review principles (C76-C77), standard practices (C78), and Frontiers' unique approach (C79). The claims appropriately frame why this dataset enables novel analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:25:29.032492Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "469bb23d-0b38-419e-a6c2-8259ab28677a",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "6d4ec784-b827-4d7e-872a-facca7e6f156",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "2df1fe8c-92c0-4a76-840a-0dada21e49b9",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "2483f164-bb86-4e30-81fe-001aa0c6a28a",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "d0fba95d-10e9-4342-a9e2-ef509d199a38",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "6b41167c-031b-4249-b4b0-7c745f86ef13",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "fae67daa-bcfd-41a0-96d8-d61087fbd576",
+      "result_id": "43cbd6c0-6675-4bbd-8768-78751b93eef4"
+    },
+    {
+      "claim_id": "55ec25cf-ec48-4f3e-bf2a-06ad82449c59",
+      "result_id": "779d03e9-8479-4a1a-b514-761b151a1399"
+    },
+    {
+      "claim_id": "9f161cca-2fc8-4fc7-8ddd-e30d3c003df2",
+      "result_id": "779d03e9-8479-4a1a-b514-761b151a1399"
+    },
+    {
+      "claim_id": "74f66319-4a34-41d8-82bf-7e8042f479ed",
+      "result_id": "779d03e9-8479-4a1a-b514-761b151a1399"
+    },
+    {
+      "claim_id": "fd39f0a3-0ed9-4193-89b1-cc0de0d03246",
+      "result_id": "779d03e9-8479-4a1a-b514-761b151a1399"
+    },
+    {
+      "claim_id": "ba897957-0deb-40d9-867c-8efb057ff82b",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "a4ddb48c-b058-46ff-9c13-7bd1d88b91d0",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "ce5a1aad-93de-47c5-b7b1-559e5ccebd24",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "82e90367-6dde-4db7-bee9-919ffb8bf9cc",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "6f6f27b3-8c6e-429e-b8af-5fd4aec75d7f",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "73ce7060-9c1a-4b61-bc5d-adb27ff9e8b5",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "948532c8-4650-4c18-9503-034e985ad953",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "d9527b64-320c-4cec-9703-4cdd6d571666",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "d3e09512-8646-4aa2-9cdc-00f6457a4ee4",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "ea458055-84a0-4049-9e25-f0e6e9285439",
+      "result_id": "f40277f3-eb22-40bc-b765-9c6006287053"
+    },
+    {
+      "claim_id": "a01ea725-b7e1-40b6-af80-a3575bdcab1b",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "cbdbae92-31b5-491d-b636-e9f01530c86f",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "eb32f21c-986e-416a-9a3f-beedfdffabb3",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "1c5df116-2fcd-469e-bd96-9d23c8f54f19",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "1daf799c-870f-4326-a4a5-6e87fb6d0c7b",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "65ab9e36-8be0-40ca-8869-7578c30684ec",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "7dc087ca-9666-422e-8d3b-56862d9643d6",
+      "result_id": "b9d1016c-4034-4853-b635-85feb5580146"
+    },
+    {
+      "claim_id": "1df799c7-a7d8-4239-8149-72109f3a3fe4",
+      "result_id": "75fec22a-0ce3-4c2e-8e3e-4d06a24a369c"
+    },
+    {
+      "claim_id": "b04c8556-4501-4c0c-8a3d-c1d3cdc36573",
+      "result_id": "75fec22a-0ce3-4c2e-8e3e-4d06a24a369c"
+    },
+    {
+      "claim_id": "f04cb822-8932-4331-843a-4be415bdfff0",
+      "result_id": "75fec22a-0ce3-4c2e-8e3e-4d06a24a369c"
+    },
+    {
+      "claim_id": "dbafe352-8f9a-4af2-a483-c4ed1fef7850",
+      "result_id": "75fec22a-0ce3-4c2e-8e3e-4d06a24a369c"
+    },
+    {
+      "claim_id": "eb62f4b9-d2f0-461e-9176-04c9bf105a45",
+      "result_id": "1b3f779c-becb-4e85-ad3d-fc614b55550f"
+    },
+    {
+      "claim_id": "27915b9d-066b-4d08-961a-dcd8925261a0",
+      "result_id": "1b3f779c-becb-4e85-ad3d-fc614b55550f"
+    },
+    {
+      "claim_id": "da458cf6-8dd9-429f-ab1c-0db423a9c46a",
+      "result_id": "1b3f779c-becb-4e85-ad3d-fc614b55550f"
+    },
+    {
+      "claim_id": "8a2cfed7-b78f-4636-93ea-fc26b9cbd9e2",
+      "result_id": "1b3f779c-becb-4e85-ad3d-fc614b55550f"
+    },
+    {
+      "claim_id": "9857e6d7-b50f-4a28-914d-2646267a388d",
+      "result_id": "1b3f779c-becb-4e85-ad3d-fc614b55550f"
+    },
+    {
+      "claim_id": "2c582875-8408-42de-ab2e-28ea4cd562cf",
+      "result_id": "a4f49502-9daf-49ed-8abd-1bd2d3b6bd13"
+    },
+    {
+      "claim_id": "61101e26-a43a-4d89-a36c-ed070c6552b2",
+      "result_id": "a4f49502-9daf-49ed-8abd-1bd2d3b6bd13"
+    },
+    {
+      "claim_id": "d199ebf7-0b1a-4308-a23e-17285ec61336",
+      "result_id": "a4f49502-9daf-49ed-8abd-1bd2d3b6bd13"
+    },
+    {
+      "claim_id": "7b632c55-f875-44a5-8192-77052b50bdb7",
+      "result_id": "a4f49502-9daf-49ed-8abd-1bd2d3b6bd13"
+    },
+    {
+      "claim_id": "42f76a8e-01b9-4338-94b7-186506e4b2cf",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "ca2ab2d5-2af2-4db3-9869-112906559c23",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "55a1e62a-0616-47a9-9ae7-e77514df05e4",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "d19e7ecb-407b-4780-96a3-97b20b35bef7",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "12da22ed-68b6-456a-9e53-f4b0477c7901",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "8c24b2d9-46f2-4443-adb6-4188b818a409",
+      "result_id": "2bc83108-dd4a-43ad-a32f-5ceb7daae4b0"
+    },
+    {
+      "claim_id": "a6f0a72a-d109-40f0-b197-a83833b6060e",
+      "result_id": "25ffa87c-9b49-4683-964f-997f895ff856"
+    },
+    {
+      "claim_id": "2c95710a-ea57-48d0-a148-3b9fd52bf4ae",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "465fb4ad-b15a-4d07-89cc-91e855f1fe5a",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "76d94798-3c42-43cc-b86d-69bf56027904",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "3bc0eb13-2ca6-45ce-ad35-d82d548d756d",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "5459c4b7-3027-41dc-8bc2-328248831b93",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "769a6d62-30ed-4d26-91a3-06e097937d6c",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "86e7a816-8e51-4985-8479-770f85cdeb70",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "c13b7efb-930b-4fed-925d-8d0e94622256",
+      "result_id": "59b14925-0dee-417a-80fc-fecb293e9fec"
+    },
+    {
+      "claim_id": "34cba3eb-451c-40c6-b8b7-5bcbbeba7b0a",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "2e625f65-8d91-4364-80ce-d70a487f9c97",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "18775f45-5062-4948-addd-dfcbf80e0a51",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "b65ddd20-9071-4af6-a90d-801c8b9df84d",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "b197704c-3769-4189-aa58-fa6002df9e1b",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "7386159d-43d1-4a52-8f98-bfc12af78d72",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "cb749d75-f871-4f4c-b045-c16ed8167198",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "8ab3d621-d7ef-42cc-ac76-089e993b58d6",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "195ecc31-a60c-4177-b9b0-f42ad4703236",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "42700221-b932-45dd-b93f-17432b59b90f",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "5bfc4364-d895-4e35-9966-2a388facfbec",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "6c08af0e-c511-44c8-8d56-8cb052262458",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "c97aa071-a4e3-4c0b-8716-683c7fb54bad",
+      "result_id": "b0aa90f4-9fb0-4e64-9abd-2c3e2dc9f382"
+    },
+    {
+      "claim_id": "d5aceb9d-93bd-493a-9888-a3a12a1583d9",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "7f411742-8f4e-45a8-b1d6-0ed628ddd2f6",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "211a9829-e6ba-4852-a763-f747d6266b7a",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "d96a5d72-3fa2-4dc9-ab8e-2c67d85fc4fa",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "68e87ea9-411d-4ba0-b370-7d1eb2af7dde",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "25a5efa5-5229-46bc-a190-6b49ab39e3bf",
+      "result_id": "7641fe0d-87b7-4e18-bcd3-b4052c348f74"
+    },
+    {
+      "claim_id": "4ff6fe72-5de8-4d9c-bb15-2e5b3cf5a915",
+      "result_id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3"
+    },
+    {
+      "claim_id": "5776593d-3fdf-49a6-a69f-e38e0041ab15",
+      "result_id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3"
+    },
+    {
+      "claim_id": "292dc808-e432-49b7-9477-01886c97ac82",
+      "result_id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3"
+    },
+    {
+      "claim_id": "1046452b-4322-4ba7-a133-8df94d1375be",
+      "result_id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3"
+    },
+    {
+      "claim_id": "4554a4d0-ab05-428a-9d52-4d4b2178c7a6",
+      "result_id": "3e8244e1-0aa2-4196-9939-c4a584e81dc3"
+    },
+    {
+      "claim_id": "ec761e2d-7230-4927-89bd-2627551bd339",
+      "result_id": "039f7f91-164d-4462-8276-3b3d54d6d4db"
+    },
+    {
+      "claim_id": "dc1884b3-feb7-4b55-8978-8f6cc43b10ab",
+      "result_id": "039f7f91-164d-4462-8276-3b3d54d6d4db"
+    },
+    {
+      "claim_id": "a68201e8-8af3-4b47-91b9-bae57e2d84d1",
+      "result_id": "a7e3c815-b2c7-4354-8b4f-5de8df33b44e"
+    },
+    {
+      "claim_id": "1c65d38c-b1d8-4d91-a4e3-9c0b10ea626e",
+      "result_id": "a7e3c815-b2c7-4354-8b4f-5de8df33b44e"
+    },
+    {
+      "claim_id": "a640ed01-cf1b-4b87-8ca8-cbd24e0410a5",
+      "result_id": "a7e3c815-b2c7-4354-8b4f-5de8df33b44e"
+    },
+    {
+      "claim_id": "9b8f9bcb-1401-486c-95ea-522d647e9cfe",
+      "result_id": "57d383d8-3a77-4f0c-a92e-4daa54dcca43"
+    },
+    {
+      "claim_id": "e0a8dbe4-8ad7-47b0-bcb0-6ce0d8b17364",
+      "result_id": "57d383d8-3a77-4f0c-a92e-4daa54dcca43"
+    },
+    {
+      "claim_id": "0dd1884c-e377-4ed5-ab3c-d6249ccd7f34",
+      "result_id": "9e806d3d-81ef-4022-bc1e-55dfb51d6e93"
+    },
+    {
+      "claim_id": "090c50ad-ceee-46ad-86c9-ddd8aecd1ecb",
+      "result_id": "9e806d3d-81ef-4022-bc1e-55dfb51d6e93"
+    },
+    {
+      "claim_id": "f1c6e83e-6394-4eed-b2d1-6f87a13fa432",
+      "result_id": "9e806d3d-81ef-4022-bc1e-55dfb51d6e93"
+    },
+    {
+      "claim_id": "2a6be00e-133e-4f76-b73c-2d61998a0f40",
+      "result_id": "9e806d3d-81ef-4022-bc1e-55dfb51d6e93"
+    }
+  ],
+  "comparisons": []
+}

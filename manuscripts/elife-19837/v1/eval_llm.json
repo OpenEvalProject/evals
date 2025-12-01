@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes background knowledge about stress-induced sleep (SIS) across species, including that SIS is beneficial, occurs in response to various stressors, and in C. elegans is regulated by cytokine activation of the ALA neuron which releases FLP-13 neuropeptides. C. elegans SIS is distinct from developmentally timed sleep and adult C. elegans lack circadian sleep rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C9-C16) establish the scientific context through citations to prior work and established knowledge about C. elegans biology. The claims are appropriately attributed to prior research and provide necessary background for understanding the current study. The distinction between SIS and DTS is well-established in the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work has established that cytokine signaling, particularly EGF and RFamide neuropeptides, regulates sleep across phylogeny. In C. elegans, EGF activates the ALA neuron which releases FLP-13 neuropeptides to promote sleep. The ALA neuron shares developmental similarities with mammalian neuroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C17-C23, C25-C27) are appropriately attributed to prior research through citations. They establish the evolutionary conservation of sleep signaling mechanisms and the specific role of the ALA neuron in C. elegans, providing essential context for the identification of DMSR-1 as a FLP-13 receptor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior work established that flp-13 mediates quiescence through the nervous system by inhibiting motor neurons, requires the G-protein alpha subunit GOA-1, and likely signals through a GPCR. FRPR-4 can be activated by FLP-13 in vitro but is not required for flp-13-induced quiescence in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C28-C35) accurately summarize prior research that motivated the current genetic screen. The exclusion of FRPR-4 as the relevant receptor (C33-C35) is properly attributed to prior work and justifies the need for an unbiased genetic approach to identify the FLP-13 receptor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Through an unbiased genetic screen for mutants defective in flp-13-induced quiescence, the authors identified dmsr-1, which encodes a GPCR in the RFamide receptor family. Multiple independent alleles were isolated, including premature stop codons, a complex deletion/insertion, and a missense mutation. DMSR-1 is orthologous to Drosophila receptors for dromyosuppressin and FMRFamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic screen approach is sound (C4, C37), and the identification of multiple independent alleles with loss-of-function mutations (C38-C42) provides strong genetic evidence that dmsr-1 is required for flp-13-induced quiescence. The phylogenetic analysis (C43-C45) appropriately places DMSR-1 in the context of known RFamide receptors. The molecular characterization is thorough and well-documented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "dmsr-1 mutants show reduced feeding and body movement quiescence in response to flp-13 overexpression compared to wild-type animals. In the absence of flp-13 overexpression, dmsr-1 mutants behave normally, indicating dmsr-1 is specifically required for the response to FLP-13 peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data in Figure 2 clearly demonstrate that dmsr-1 mutations suppress both feeding quiescence (C46-C49) and body movement quiescence (C50) induced by flp-13 overexpression. The control experiments showing normal behavior without flp-13 overexpression (C48-C49) are critical for establishing specificity. Statistical analyses appear appropriate with multiple alleles tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "dmsr-1 mutants show wild-type feeding quiescence but have a small yet significant defect in body movement quiescence in response to EGF overexpression, suggesting dmsr-1 acts downstream of or in parallel to EGF and that other ALA-regulated pathways work in parallel to dmsr-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EGF overexpression experiments (Figure 3A-B) provide important epistasis data. The partial suppression of EGF-induced quiescence by dmsr-1 mutations (C51-C52) supports the pathway position (C53) and suggests pathway complexity (C54). However, the differential effects on feeding versus movement quiescence warrant further investigation. The statistical significance is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "dmsr-1 is required for stress-induced sleep (SIS) in response to heat shock at multiple temperatures (34-37\u00b0C) and UV radiation, affecting both feeding and body movement quiescence. The phenotype can be partially rescued by a genomic dmsr-1 fragment. dmsr-1 mutants show normal developmentally timed sleep (DTS), indicating SIS and DTS are regulated differently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SIS experiments (Figure 3C-D and supplements) demonstrate that dmsr-1 is required for physiological stress responses, not just artificial flp-13 overexpression. Testing multiple stressors (C55-C57) strengthens the conclusion. The partial rescue (C58) validates the genetic identification, though incomplete rescue suggests either incomplete expression or missing regulatory elements. The normal DTS in dmsr-1 mutants (C59-C60) is an important control showing specificity for SIS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "All seven FLP-13 peptides, characterized by an RFamide C-terminal motif, can activate DMSR-1 in cell culture with varying potencies. FLP-13-5 is the most potent with an EC50 of 2.3 nM. This supports DMSR-1 as an in vivo receptor for FLP-13 peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell culture activation assays (Figure 4) provide direct biochemical evidence that FLP-13 peptides activate DMSR-1. Testing all seven peptides (C61) is thorough, and the nanomolar EC50 values (C62) are physiologically relevant. The use of a heterologous expression system with promiscuous G\u03b116 is appropriate for receptor deorphanization. The inference that DMSR-1 is an in vivo receptor (C63) is reasonable given the combined genetic and biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "dmsr-1 is expressed in multiple neurons including RID, AIY, PHA, PHB, and others, but not in AVE or AVA (the only synaptic partners of ALA). DMSR-1 localizes diffusely to neuronal membranes rather than synapses. This expression pattern suggests ALA signals via neuroendocrine release of FLP-13 to activate DMSR-1 in non-synaptic target neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression analysis (Figure 5) is comprehensive, using multiple approaches including reporter colocalization and DiO staining to identify dmsr-1-expressing neurons (C65-C69). The critical observation that dmsr-1 is not expressed in ALA's synaptic partners (C70-C71) strongly supports neuroendocrine signaling (C72). The diffuse membrane localization of GFP-tagged DMSR-1 (C73) and its functionality in rescue experiments (C74) further support this model. The prior work on non-synaptic ALA signaling (C75) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell-specific rescue experiments show that dmsr-1 expression in PHA neurons does not rescue flp-13-induced quiescence defects. Expression in AIY neurons provides small but significant rescue of body movement quiescence during flp-13 overexpression but does not rescue feeding quiescence or SIS defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-specific rescue experiments (Figure 5 supplement 2) attempt to identify which neurons require dmsr-1 function. The negative result for PHA (C76) and partial rescue in AIY (C77-C78) suggest either that dmsr-1 functions in multiple neurons or that the rescue constructs don't fully recapitulate endogenous expression. The authors appropriately acknowledge these limitations in their discussion. The statistical analyses are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Silencing dmsr-1-expressing neurons using histamine-gated chloride channels has no effect on behavior in the absence of stress but enhances sleep after UV stress. This suggests DMSR-1 promotes sleep by inhibiting wake-promoting neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HisCl experiments (Figure 6) provide elegant functional evidence for the role of dmsr-1-expressing neurons. The lack of effect without stress (C79-C80) shows these neurons are not constitutively required for normal behavior. The enhanced sleep when these neurons are silenced during stress (C81-C82) strongly supports the model that DMSR-1 inhibits wake-promoting neurons (C83). The experimental design with appropriate controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "flp-13; dmsr-1 double mutants show greater defects in SIS than either single mutant, suggesting FLP-13 peptides activate additional receptors beyond DMSR-1, and DMSR-1 may be activated by additional ligands or has ligand-independent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The double mutant analysis (Figure 7) provides important genetic evidence for pathway complexity. The additive phenotype (C84) clearly demonstrates that flp-13 and dmsr-1 have partially independent functions, supporting both conclusions (C85-C86). This is a standard genetic approach and the interpretation is sound. However, the alternative explanation of ligand-independent DMSR-1 activity (C86) is speculative and would require additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose a model where cellular stress leads to EGF release, which activates and depolarizes the ALA neuron through the EGF receptor LET-23. ALA releases FLP-13 and other neuropeptides that act neuroendocrinally to activate DMSR-1 on wake-promoting neurons. DMSR-1 likely couples to Gi/o (GOA-1) to inhibit these neurons, possibly by downregulating Gq (EGL-30) signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model integrates the current findings with prior work. The upstream components (C87-C90) are well-established from prior research. The neuroendocrine FLP-13/DMSR-1 signaling (C91) is strongly supported by the current data. The proposed G-protein coupling (C92-C96) is reasonable based on prior genetic studies showing goa-1 and egl-30 mutant phenotypes, though direct biochemical evidence for DMSR-1/GOA-1 coupling is not provided. The model is presented appropriately as integrating multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors speculate that additional FLP-13 receptors may include other DMSR family members in C. elegans, and additional DMSR-1 ligands may include other neuropeptides released from ALA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C97-C98) are explicitly speculative, as indicated by the use of \"may include\" and the evidence type labeled as speculation. While the speculation is reasonable given the double mutant data and the existence of other DMSR proteins and ALA neuropeptides, no direct experimental evidence is provided to test these hypotheses. These represent logical directions for future research rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors draw parallels between the C. elegans sleep system and mammalian sleep architecture, noting that AIY and RID are wake-promoting neurons in C. elegans, and proposing that C. elegans may have a diffuse wake-promoting circuit inhibited by the central ALA sleep-promoting neuron, similar to mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to mammalian sleep systems (C101-C102) is appropriately cited. The identification of AIY and RID as wake-promoting (C99-C100) is supported by prior literature. The proposed parallel between C. elegans and mammalian sleep architecture (C103) is reasonable speculation based on the data, though it is explicitly presented as a possibility rather than a proven conclusion. This comparative analysis provides useful context for understanding the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The authors suggest that RFamide and EGF signaling regulates sleep in arthropods, raising the possibility that the molecular mechanisms identified in C. elegans may be conserved across phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C104) appropriately references prior work on arthropod sleep regulation and suggests evolutionary conservation as a reasonable hypothesis. The claim is appropriately tentative (\"it would not be unreasonable to propose\") and is supported by the cited literature on RFamide and EGF signaling in other species discussed earlier in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C30",
+      "C31",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DMSR-1 likely couples to the Gi/o G-protein alpha subunit GOA-1, which is expressed widely in the nervous system and whose mutation causes defects in SIS and flp-13-induced sleep. GOA-1 may downregulate Gq (EGL-30) signaling, as gain-of-function EGL-30 mutations suppress flp-13-induced sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the genetic evidence from prior work (C30, C93-C94, C96) supports roles for GOA-1 and EGL-30 in the pathway, the direct coupling of DMSR-1 to GOA-1 (C8, C92) is inferred rather than demonstrated biochemically. The manuscript appropriately uses tentative language (\"likely,\" \"may\") for these claims. Direct biochemical evidence such as co-immunoprecipitation, reconstitution experiments, or functional assays in cells expressing specific G-proteins would be needed to definitively establish DMSR-1/GOA-1 coupling. The pathway relationship between GOA-1 and EGL-30 (C95) is also inferred from genetic epistasis rather than direct demonstration.",
+    "result_type": "MAJOR"
+  }
+]

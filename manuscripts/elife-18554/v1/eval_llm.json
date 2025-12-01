@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "BCIs have potential to restore communication for people with paralysis, but current clinical systems have not yet achieved performance levels sufficient for widespread adoption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10 establish the motivation and context for the study. These are well-supported general statements about the need for BCIs and current limitations, backed by extensive citations and established medical knowledge about conditions causing paralysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Three participants with paralysis (T6 with ALS, T7 with ALS, T5 with spinal cord injury) were enrolled in a clinical trial and tested with an intracortical BCI system that used ReFIT Kalman Filter for continuous control and HMM-based decoder for discrete selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C17-C20, and C50-C62 describe the study design, participants, and technical approach. These are well-documented with detailed participant demographics, implantation procedures, regulatory approvals (C106-C108), and clear descriptions of the neural recording and decoding methods with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Participant T6 achieved a mean free typing rate of 24.4 \u00b1 3.3 ccpm over 96 minutes across three days using the OPTI-II keyboard layout, representing the highest typing rate to date for a person with physical disability using a BCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 report T6's free typing performance with specific quantitative data (24.4 \u00b1 3.3 ccpm) and appropriate context. The data are presented with standard deviations and supported by figures and supplementary materials showing the actual typed text. The comparative claim (C24) is appropriately qualified with 'to our knowledge.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C43"
+    ],
+    "result": "In copy typing tasks, participants achieved typing rates of 31.6 \u00b1 8.7 ccpm (T6, OPTI-II), 39.2 \u00b1 1.2 ccpm (T5, OPTI-II), and 13.5 \u00b1 1.9 ccpm (T7, ABCDEF), representing 1.4-4.2x improvements over previous best BCI performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 and C43 report copy typing performance with detailed quantitative data, standard deviations, and statistical comparisons to prior work (p<0.01, Mann-Whitney U tests). The comparisons are appropriate and the statistical tests are correctly applied. Performance differences across keyboard layouts and participants are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In grid tasks, participants achieved information throughput of 2.2 \u00b1 0.4 bps (T6), 3.7 \u00b1 0.4 bps (T5), and 1.4 \u00b1 0.1 bps (T7), representing 2.2-4.0x improvements over previous highest BCI bitrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 report grid task performance using achieved bitrate metrics with appropriate statistical comparisons (p<0.01, Mann-Whitney U tests). The comparisons to prior work are valid, including direct comparisons to the same participants' previous performance (C38-C39), which strengthens the evidence for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Participant T5 achieved 4.16 \u00b1 0.39 bps on a 9\u00d79 grid task, significantly higher than 6\u00d76 performance (p<0.01) and representing the highest documented BCI communication rate for a person with motor impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 report T5's performance on the more challenging 9\u00d79 grid with appropriate statistical comparison (Student's t test, p<0.01) to the 6\u00d76 grid performance. The claim of highest documented rate (C42) is appropriately qualified with 'to our knowledge' and supported by the comprehensive literature comparison in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The achieved typing rates (2.7-7.8 wpm) would likely satisfy many people with ALS based on survey data, though they still fall short of able-bodied communication rates (12-170 wpm depending on modality).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 appropriately contextualize the performance by comparing to user satisfaction surveys (C44-C45, properly cited) and able-bodied performance benchmarks (C47-C49, properly cited). The inference about user satisfaction (C46) is reasonable given the survey data showing 59-72% satisfaction at lower rates than achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Data from T6 and T7 were collected 1.5 years post-implantation, demonstrating that intracortical BCIs may remain useful for years after implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 document the timing of data collection and draw an appropriate inference supported by multiple citations to prior work showing long-term functionality. The claim is appropriately qualified as 'may be useful' rather than making a definitive statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "For T6, thumb and index finger imagery provided robust control and ipsilateral hand squeeze enabled discrete selection; for T5, whole arm imagery combined with ipsilateral hand squeeze achieved high performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe the control strategies identified for each participant. These findings are supported by the reported performance data and represent important methodological insights. The claims about robustness (C66) are supported by the demonstrated performance stability across sessions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "T7 experienced control instabilities on short timescales, which were addressed by implementing a bias correction method that continuously estimated and corrected velocity biases during closed-loop control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 describe a technical challenge and solution for T7. The bias correction method is described in detail in Materials and Methods with appropriate citations to prior work. The effectiveness is demonstrated by T7's achieved performance despite these challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C104"
+    ],
+    "result": "All three participants achieved the highest BCI communication rates for people with motor impairment reported to date, though T6 and T5 performed substantially better than T7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C104 make comparative statements supported by the comprehensive literature review in Table 1 and the quantitative performance data. The within-study comparison (C73) is clearly supported by the reported typing rates (39.2, 31.6, vs 13.5 ccpm) and bitrates (3.7, 2.2, vs 1.4 bps).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "T7 showed increased response latency (>100 ms longer) compared to T6 in the center-out-and-back task, potentially related to differences in disease effects or prior experience with computing devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 report an observed difference in response latency with a specific quantitative measure (>100 ms) and offer plausible explanations. The speculation about causes (C76) is appropriately presented as possibilities ('may have played a role') rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "When T6 suppressed her movements (7.2-12.6x reduction), BCI performance remained similar to freely moving conditions (within 0-20%, p>0.2 for all comparisons), demonstrating that physical movement is not necessary for high-performance BCI control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C87 address a critical control experiment. Movement suppression is quantified (C82, 7.2-12.6x reduction with p<0.01), and performance comparisons are provided with appropriate statistics (C87, p>0.2, Student's t test). This is further supported by citations to prior work (C78-C81) showing similar findings. The data in Figure 4 and supplements provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "T6 and T5 used the HMM decoder for discrete selection, while T7 did not use the HMM before passing away, though he still achieved performance double that of previous best approaches using continuous control alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 clearly document which participants used which decoders and explain why T7 did not use the HMM (C89). T7's performance achievement (C90, 'double that of previous') is supported by the bitrate comparisons showing 1.4 bps vs 0.64 bps previously (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The point-and-click approach was chosen over discrete classification approaches because it provides a flexible interface applicable to diverse computing devices, enabling general-purpose computing use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 explain the rationale for the chosen approach. While C91-C92 are supported by citations and logical reasoning, C93 is speculative ('could be integrated') without demonstration, and C94 makes a broad claim about being a 'key step' that is more opinion than demonstrated fact. The reasoning is sound but not all aspects are empirically validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Participants reported positive subjective experiences with the BCI, including finding it intuitive (T6), feeling good when control was successful (T7), finding it faster than existing assistive technology (T5), and experiencing it as a 'joystick' during control (T6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 report direct participant quotes about their subjective experiences. These are appropriately documented as qualitative data and provide valuable user perspective on the system. The quotes are clearly attributed and provide insight into the user experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Survey data indicate that people with paralysis show willingness to adopt intracortical BCI systems and undergo implant surgery if it provides significant functional improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 cite survey data (properly referenced) showing user preferences and willingness to undergo surgery. The inference (C102) is reasonable based on the cited survey data. This provides important context for the clinical relevance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C105"
+    ],
+    "result": "The study demonstrates that intracortical BCIs offer a promising approach to assistive communication systems for people with paralysis, achieving high performance in both free and copy typing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C105 provide summary conclusions appropriately supported by the comprehensive performance data presented throughout the manuscript. The conclusion is appropriately qualified as 'promising' and 'suggest' rather than making definitive claims about clinical readiness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The HMM-based click decoder achieved high accuracy, with T6 clicking correctly 92.6% of the time (1007/1087 clicks) and T5 clicking correctly 97.7% of the time (2325/2379 clicks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 report specific performance metrics for the HMM decoder with exact counts. These data are supported by Figure 3\u2014figure supplement 1, which shows the spatial distribution of clicks and demonstrates that most errors occurred near target boundaries, indicating high precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The BCI system exceeded previous iBCI performance by factors of 1.4-4.2 for typing rate and 2.2-4.0 for information throughput, demonstrating potential utility as assistive communication devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the main performance improvements with specific quantitative comparisons to prior work. These are well-supported by the detailed performance data (C26-C42) and statistical comparisons throughout the manuscript. The interpretation (C7) is appropriately qualified and supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

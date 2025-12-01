@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34"
+    ],
+    "result": "A conserved RNA structural element termed the 5\u2032-UAR-flanking stem (UFS) was identified in the 5\u2032 terminus of flavivirus genomes through bioinformatics analysis. The UFS forms a duplex that locks the 5\u2032 UAR/SLB element between its two strands and is predicted to unwind during genome cyclization. The UFS is present in MBFVs (except YFV clade), two clades of NKVs, and ISFVs, but absent in TBFVs and Yokose virus clade of NKVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C25, C27-C30, C33-C34 are supported by computational RNA structure predictions using mfold (C27-C29) and comparative sequence analysis across flavivirus species (C28, C30, C33). Figure 1 provides structural models demonstrating the UFS duplex and its predicted unwinding during genome cyclization. The bioinformatics approach is appropriate for identifying conserved structural elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "SHAPE analysis confirmed that the UFS duplex exists in vitro for JEV, DENV1, DENV3, DENV4, and ZIKV, showing low SHAPE reactivity in the UFS region. However, the DENV2 UFS duplex is highly unstable in vitro. Mutational analysis of DENV3 5\u2032 end RNA confirmed that disrupting UFS base-pairing increases SHAPE reactivity while restoring base-pairing reduces it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are well-supported by SHAPE data presented in Figure 2 and Figure 2\u2014figure supplement 1. The experimental approach is appropriate for probing RNA secondary structure. The mutational analysis (C38-C40) provides strong validation that the observed SHAPE patterns reflect the predicted UFS structure. Two biological replicates were performed, providing adequate reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Functional analysis using DENV4 replicons demonstrated that disrupting UFS base-pairing (M1A, M1B, M3A, M3B) greatly reduced vRNA replication, while reconstituting base-pairing (M1C, M3C) restored replication. SHAPE analysis confirmed that mutations altered UFS structure as intended without affecting overall 5\u2032 end secondary structure. The UFS duplex conformation is critical for efficient vRNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by replicon assays (Figure 3D) showing reduced replication for UFS-disrupted mutants and rescue by compensatory mutations, and SHAPE analysis (Figure 4) confirming structural changes. The complementation approach provides strong evidence for structure-function relationship. Computational predictions (C45, C49) support that mutations specifically affect UFS without major effects on genome cyclization or overall structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "UFS mutations in DENV4 and ZIKV infectious clones demonstrated that UFS-disrupted mutants (M1A, M3A, M5A) showed significantly reduced vRNA replication and viral propagation in BHK-21 cells, while UFS-restored mutants (M1C, M3C, M5C) recovered replication levels. The differences were not due to RNA stability changes, confirming the UFS is required for virus propagation through its function in vRNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 are supported by multiple lines of evidence: qRT-PCR showing reduced vRNA copies (C52-C53, Figure 5B-D), IFA showing reduced DENV-positive cells (C54, Figure 5E), virus titration showing reduced titers (C55, Figure 5F), and RNA stability assays showing minimal differences (C56-C57, Figure 5G-I). The ZIKV data (C59, Figure 5\u2014figure supplement 1) extends findings to another flavivirus. Statistical analysis was performed (two-way ANOVA with Tukey's test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The UFS duplex is required for efficient NS5Pol binding and RdRp activity. EMSA assays showed that UFS-disrupted mutants (M1A, M1B, M3A, M3B) bound NS5Pol much more weakly than wild-type or UFS-restored mutants (M1C, M3C) for both DENV4 and JEV. In vitro RdRp assays demonstrated that disrupting the UFS reduced de novo RNA synthesis products, while restoring the UFS increased product levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 are supported by EMSA data (Figure 6C, 6E, Figure 6\u2014figure supplement 1) showing differential NS5Pol binding and RdRp activity assays (Figure 6D) showing reduced product formation for UFS-disrupted mutants. The conservation of UFS function in JEV (C65-C66) strengthens the conclusion. The experiments use appropriate biochemical approaches with purified recombinant NS5Pol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The stability of the UFS duplex is critical for its function. Progressive UA-to-GC substitutions in the DENV4 UFS showed that single substitutions (M2C1, M2C2) had little effect, but two or more substitutions (M2C, M4C) greatly reduced vRNA replication. Deletion of the internal loop between UFS and SLB (L1D, L2D, L3D) also significantly reduced replication. Over-stabilized UFS mutants maintained NS5Pol binding, indicating the replication defect is not due to altered NS5Pol affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 are supported by replicon assays (Figure 7B, Figure 7\u2014figure supplement 1) showing that over-stabilizing the UFS impairs replication, and EMSA data (Figure 7\u2014figure supplement 2) showing M2C maintains NS5Pol binding. The systematic mutagenesis approach provides strong evidence that UFS stability must be balanced. The internal loop deletion experiments (C76-C77) and purine composition analysis (C78) provide additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Over-stabilization of the UFS hinders genome cyclization. RNA binding assays showed that M1 and M3 series mutations had little effect on 5\u2032-3\u2032 complex formation, but the over-stabilized M2C mutant showed greatly reduced complex formation with approximately 10-fold higher Kd. The L3D mutant (internal loop deletion) also showed poor 3\u2032 UTR interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 are supported by RNA binding assays (Figure 8B, Figure 8\u2014figure supplement 1) showing differential 5\u2032-3\u2032 complex formation and Kd estimation (C87, Figure 8\u2014figure supplement 2) quantifying the binding defect. The data demonstrate that while the UFS doesn't directly participate in 5\u2032-3\u2032 hybridization, its stability affects the ability of the 5\u2032 UAR/SLB to engage in genome cyclization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SHAPE analysis demonstrated that the UFS duplex unwinds when the 3\u2032 UTR binds to 5\u2032 end RNA. For wild-type RNA, UFS SHAPE reactivity increased significantly at 1:1 5\u2032:3\u2032 ratio and the SLB loop showed no reactivity at 1:5 ratio, indicating complete transition to UAR duplex. In contrast, the over-stabilized M2C mutant showed only minor changes at 1:1 ratio and moderate SLB loop reactivity at 1:5 ratio, demonstrating resistance to unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by SHAPE analysis with varying 5\u2032:3\u2032 ratios (Figure 9) showing differential structural changes for wild-type versus M2C RNA. The data provide direct evidence that the UFS unwinds during genome cyclization and that over-stabilization prevents this conformational change. Two biological replicates were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Using mini-genome constructs, genome cyclization was shown to disable UFS function in NS5Pol recruitment. Native PAGE showed that WT and most UFS mutant mini-genomes existed in circularized conformation, while CS-M and M2C mutants remained linear. Circularized mini-genomes (WT, M1A-C, M3A-C) showed low NS5Pol binding, while linear CS-M showed high binding. RdRp assays showed reduced de novo products for M1 and M3 series mini-genomes compared to WT, suggesting UFS is disabled when unwound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 are supported by native PAGE (Figure 10B) showing genome conformation, EMSA (Figure 10C) showing differential NS5Pol binding, and RdRp assays (Figure 10D) showing reduced activity. The mini-genome approach effectively demonstrates that genome cyclization, which unwinds the UFS, reduces NS5Pol binding. However, C107's interpretation that sequence differences account for activity differences is somewhat speculative, though supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose a mechanistic model where the UFS functions as an RNA switch controlled by genome cyclization to regulate dynamic NS5 recruitment during vRNA replication. In the 'ON' state (linear genome), the UFS duplex facilitates NS5 recruitment to the 5\u2032 end. Upon genome cyclization, the UFS switches to 'OFF' state (unwound), decreasing NS5 affinity for the 5\u2032 end and promoting translocation to the 3\u2032 end for negative-strand synthesis. This dynamic modulation maintains appropriate levels of negative-strand synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6-C7, C118-C123, C126-C128 represent the integrated mechanistic model supported by the combined experimental data: UFS is critical for NS5 recruitment (EMSA, RdRp assays), UFS unwinds during genome cyclization (SHAPE with 3\u2032 UTR), over-stabilized UFS impairs both cyclization and replication, and circularized genomes show reduced NS5 binding. The model logically integrates all findings, though some aspects (C119, C121-C123) involve inference beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C124",
+      "C125",
+      "C130"
+    ],
+    "result": "UFS switching is proposed as a general replication strategy in flaviviruses with vertebrate hosts. Comparative structural analysis showed that 5\u2032 local structures immediately following SLA elements are consistently melted during genome cyclization across different flavivirus groups (MBFVs, TBFVs, NKVs), suggesting these structures may possess similar regulatory functions as the UFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C124-C125, C130 are supported by comparative structural analysis (Figure 12 and Figure 12\u2014figure supplements 1-4) showing consistent melting of 5\u2032 structures downstream of SLA during genome cyclization across flavivirus groups. The experimental validation in DENV4, JEV, and ZIKV (C129) provides direct evidence for conservation. However, the claim that structures in other groups have the same function (C125) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C31",
+      "C32",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors propose an evolutionary model where UFS-like structures originated in ancestral ISFVs as replication enhancers with RdRp-recruiting functions. Upon introduction into vertebrates, selection pressure promoted evolution of efficient genome cyclization, and UFS-like elements evolved into RNA switches in modern flaviviruses. In TBFVs, the UFS structure was lost but its functional mechanism was inherited through elements like 5\u2032-SL2/CS-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21, C31-C32, C134-C141 present an evolutionary hypothesis based on phylogenetic relationships (C136, supported by citations) and structural comparisons (C21, C134-C135, supported by Figure 1B and supplementary data). However, the evolutionary narrative (C137-C141) is highly speculative without direct experimental evidence or phylogenetic reconstruction. The claims about ancestral functions and evolutionary trajectories cannot be tested with the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on flaviviruses, their genome organization, protein functions, and known cis-acting regulatory elements including genome cyclization mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C23 provide established background knowledge about flaviviruses, supported by appropriate citations to previous literature. These claims accurately represent the current understanding of flavivirus biology and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Discussion of genome conformation equilibrium and co-transcriptional folding. The authors propose that circular conformations dominate in equilibrium due to high affinity between genome termini and that the UFS duplex folds co-transcriptionally during nascent positive-strand RNA synthesis as the 5\u2032 end is released from the dsRNA replication form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C117 combine established knowledge (C110, C112, C114-C115, C117 supported by citations) with speculative inferences (C111, C113, C116). The proposal about co-transcriptional UFS folding (C116) is reasonable but lacks direct experimental evidence. The claim about circular states being dominant (C111) is inferred from theoretical considerations and mini-genome data but not directly demonstrated for full-length genomes in cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Discussion of DENV2 as a potential exception where the UFS may not be functional, supported by SHAPE data showing high instability of the DENV2 UFS in vitro and a previous report suggesting lack of functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by SHAPE data (Figure 2C) showing high UFS reactivity for DENV2 and citation to previous work (C131). The interpretation that DENV2 is an exception is reasonable given the structural data, though functional validation in DENV2 was not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Speculation about additional potential functions of the UFS, including possible roles in translation regulation and anchoring parental RNA to membrane structures during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C146 are explicitly speculative (C142, C144, C146) or cite established knowledge (C143, C145). These represent hypotheses for future investigation rather than conclusions supported by the current study. The speculation is reasonable given the UFS location and known biology, but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Discussion of the broader significance of the findings in the context of positive-strand RNA virus biology, claiming this is the first report of an RNA switch triggered by genome cyclization that integrates RdRp recruitment and translocation into nascent RNA synthesis dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 cite established knowledge about long-range interactions in RNA viruses. Claim C150 asserts novelty, which appears justified based on the unique mechanism described. Claim C151 is speculative about broader applicability but reasonable given the demonstrated mechanism. The novelty claim is supported by the experimental evidence presented.",
+    "result_type": "MINOR"
+  }
+]

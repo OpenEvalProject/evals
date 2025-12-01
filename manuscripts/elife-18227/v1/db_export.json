@@ -1,0 +1,1941 @@
+{
+  "submission": {
+    "id": "cd1de460-838d-47b2-abdd-2decfa096bd9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:50:04.047464Z",
+    "updated_at": "2025-11-30T20:50:04.047464Z"
+  },
+  "content": [
+    {
+      "id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "submission_id": "cd1de460-838d-47b2-abdd-2decfa096bd9",
+      "content_type": "manuscript",
+      "content_text": "# Mechanism for nuclease regulation in RecBCD\n\n## Authors\n\n- Martin Wilkinson<sup>1</sup>\n- Yuriy Chaban<sup>1</sup>\n- Dale B Wigley<sup>1</sup> ([ORCID: 0000-0002-0786-6726](https://orcid.org/0000-0002-0786-6726)) \u2020\n\n### Affiliations\n\n1. Section of Structural Biology, Department of Medicine Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn bacterial cells, processing of double-stranded DNA breaks for repair by homologous recombination is catalysed by AddAB, AdnAB or RecBCD-type helicase-nucleases. These enzyme complexes are highly processive, duplex unwinding and degrading machines that require tight regulation. Here, we report the structure of E.coli RecBCD, determined by cryoEM at 3.8 \u00c5 resolution, with a DNA substrate that reveals how the nuclease activity of the complex is activated once unwinding progresses. Extension of the 5\u2019-tail of the unwound duplex induces a large conformational change in the RecD subunit, that is transferred through the RecC subunit to activate the nuclease domain of the RecB subunit. The process involves a SH3 domain that binds to a region of the RecB subunit in a binding mode that is distinct from others observed previously in SH3 domains and, to our knowledge, this is the first example of peptide-binding of an SH3 domain in a bacterial system.\n\n## Introduction\n\nThe repair of double-strand DNA breaks is a critical process in all organisms. In bacteria, one of the major pathways for high fidelity repair of breaks is homologous recombination initiated by RecBCD, AdnAB or AddAB complexes (Dillingham and Kowalczykowski, 2008; Wigley, 2013) that process the broken ends via a number of steps to eventually produce a RecA-coated 3\u2019-tailed filament that initiates strand invasion.\n\nIn addition to a role in repair of double-strand DNA breaks, RecBCD is an important player in controlling infection by bacteriophages, the significance of which is exemplified by proteins produced by phages that specifically target RecBCD. The phage lambda protein Gam, works by competing with DNA binding to RecBCD (Murphy, 2007; Court et al., 2007), while the phage P22 protein Abc2, works by inducing a \u2018Chi-like state\u2019 for RecBCD (Murphy, 2000). Most recently, a role for RecBCD in providing DNA fragments for CRISPR arrays demonstrates a connection to the other major pathway known to provide resistance to phage infections (Levy et al., 2015).\n\nThe RecBCD/AddAB complexes are highly processive helicase/nuclease machines that digest DNA from the broken end until they encounter a crossover hotspot instigator (Chi) sequence. At this point their activities are modulated to produce a 3-tailed duplex onto which RecA is loaded (Wigley, 2013). Crystal structures of a variety of intermediates on the AddAB-mediated pathway (Saikrishnan et al., 2012; Krajewski et al., 2014), together with biochemical and single molecule experiments (Gilhooley and Dillingham, 2014; Gilhooley et al., 2016; Carrasco et al., 2013), now provide a reasonable understanding of the molecular details of this process.\n\nAlthough there has been considerable study of RecBCD at the biochemical and single molecule level (Wright et al., 1971; Taylor and Smith, 1992, 2003; Dillingham and Kowalczykowski, 2008; Spies et al., 2003, 2007), our understanding of the molecular details for the RecBCD mechanism are less advanced due to a lack of high resolution structural information. To date, this has been limited to the initiation complex, with the protein interacting with a broken DNA end (Singleton et al., 2004), and some DNA substrates representing partially unwound substrates that represent the very initial stages of the pathway (Saikrishnan et al., 2008). The nuclease activity of RecBC is very much lower than that of RecBCD (Anderson et al., 1997) so it was initially presumed that the nuclease must be a part of the RecD subunit. However, it was shown instead that the nuclease domain is actually a C-terminal domain of the RecB subunit, the activity of which is regulated by RecD (Yu et al., 1998). The structure of the initiation complex revealed this is due to an \u03b1-helix that sits in the nuclease active site, thus blocking access to DNA (Singleton et al., 2004). It is evident that this helix must be displaced to activate the nuclease, but the mechanism and trigger for this release was unknown.\n\nIn order to understand how the RecD subunit is able to activate the nuclease domain of RecB, we have now determined the cryo-electron microscopy (cryoEM) structure of RecBCD bound to a forked DNA substrate with an extended 5\u2019-tail that spans the entire RecD subunit. This interaction induces a series of conformational changes that eventually result in release of the nuclease-blocking linker helix, which then re-docks at an alternative location thus opening the nuclease active site for access by the ssDNA tails of the unwound fork. A critical role for a rare bacterial SH3 domain in the RecD subunit is also revealed in the structure, and raises possibilities for a mechanism of further regulation after recognition of Chi.\n\n## Results and discussion\n\n### Structure determination by cryoEM\n\nFork DNA substrates containing ten residues on the 5\u2019-tail could be crystallised in the same crystal form as the blunt hairpin substrate used for the initiation complex reported previously (Singleton et al., 2004; Saikrishnan et al., 2008), and the structures of the protein components were essentially the same. However, just a single base addition on the 5\u2019-tail beyond ten residues resulted in loss of crystallisation and we were unable to obtain suitable crystals despite extensive screening. This was the first indication that the additional base on the 5\u2019-tail induces a conformational change in the protein. Consequently, despite the relatively small size of the RecBCD/DNA complex (350KDa), we turned instead to cryoEM to determine a high resolution structure of the complex. Data were collected on a Titan Krios microscope with Gatan K2 detector at the UK EM facility at Diamond. EM processing statistics are presented in the Materials\u00a0and\u00a0methods section, Table 1, Figure 1 and Figure 1\u2014figure supplement 1. Electron density corresponding to the most important areas described in this manuscript is shown in Figure 1\u2014figure\u00a0supplement 2. Data processing revealed a major class that constituted about half of the particles and this is what is described in detail below. We utilised a DNA fork substrate with a 25 base pair duplex region, capped at one end with a five base hairpin and at the other with unpaired 3\u2019 and 5\u2019-tails (3 and 12 thymidine residues, respectively). The DNA and all domains of the three proteins were accounted for in the reconstruction derived from this major class (Figure 1). In one of the other classes, density corresponding to the RecB nuclease domain was missing (18%), although other features for the rest of the protein were very similar to the main class. This class may constitute some proportion of the complex in which the flexible linker connecting the nuclease domain to the helicase domains of the RecB subunit has been cleaved or, alternatively, may be due to release of the nuclease domain from its usual binding surface observed in the initiation complex. In the latter instance, we do not see any evidence for a potential docking site for the nuclease domain anywhere else on the complex such as that proposed from SAXS studies (Taylor et al., 2014). This second class was therefore of limited interest so we confine the discussion of the results to the dominant class of particles that appears to represent an intermediate on the catalytic pathway.\n\n**Table 1.**\n Refinement of the final model.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Final particles</td>\n      <td>74656</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.8</td>\n    </tr>\n    <tr>\n      <td>CC (whole map)</td>\n      <td>0.838</td>\n    </tr>\n    <tr>\n      <td>CC (around atoms)</td>\n      <td>0.875</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.04</td>\n    </tr>\n    <tr>\n      <td>Ramachandran</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favoured (%)</td>\n      <td>94.1</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>8/2874</td>\n    </tr>\n    <tr>\n      <td>Rotamers</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favoured (%)</td>\n      <td>99.1</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>1/2426</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon representation of the RecBCD complex within a transparent surface showing the electron density. The RecB subunit is in orange, RecC in cyan, RecD is in green, and the DNA is in pink, (B) \u2018Road map\u2019 for colour scheme used in subsequent figures using the colour scheme shown in (C), (C) Linear representation of the sequences, with labelling of relevant domains, of the three subunits showing the colour scheme used in subsequent figures. Further information about the quality of the CryoEM structure is presented in Figure 1\u2014figure supplement 1. Examples of the quality of the electron density are shown in Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) An example of an aligned and summed image stack showing particle distribution. (B) Selection of 2D class averages representing different particle views. (C) Final map coloured by local resolution as estimated by ResMap (Kucukelbir et al., 2014). Scale bar shows colour scale with resolution in \u00c5. (D) \u2018Gold standard\u2019 FSC curve showing estimated global resolution of 3.83 \u00c5.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Electron density corresponding to the bound DNA fork substrate, (B) Representative regions at the centre of the RecBCD complex to illustrate the quality of the maps, (C) The 2B/SH3 domain of the RecD subunit.\n\n### The RecB subunit\n\nElectron density for bound ADPNP is visible in the ATP-binding site of the RecB subunit (Figure 2\u2014figure supplement 1). The adenine ring is sandwiched between two aromatic residues (F31 and W447), but otherwise the contacts with active site residues are very similar to those observed in other Superfamily 1 (SF1) helicases (Singleton et al., 2007). In response to nucleotide binding, the helicase domains undergo a conformational change (Figure 2\u2014figure supplement 1) as expected from studies of a variety of other SF1 helicases including PcrA and AddAB (Singleton et al., 2007; Velankar et al., 1999; Krajewski et al., 2014). The short 3\u2019-tail we used for this structure (to permit extension of the duplex and 5\u2019-tail) interacts with the 2A domain of the RecB subunit as seen in the initiation complex (Singleton et al., 2004). Although RecBCD is able to unwind up to six base pairs from a blunt end in the absence of ATP (Singleton et al., 2004; Wong et al., 2005), it was unable to further unwind the fork substrate used here.\n\nAs seen in previous crystal structures, the \u2018arm\u2019 domain of the RecB subunit extends from the protein core and contacts the incoming duplex across the minor groove (Supplementary Figure 2\u2014figure supplement 1; Singleton et al., 2004; Saikrishnan et al., 2008). This contrasts with the duplex:arm contacts in AddAB which are across the major groove (Figure 2\u2014figure supplement 1) (Saikrishnan et al., 2012). However, conformational changes observed when nucleotide binds to the RecB subunit (Figure 2\u2014figure supplement 1) are very similar to those seen in the AddA subunit within AddAB, suggesting a similar mechanism for unwinding and translocation once the arm has engaged the DNA substrate (Krajewski et al., 2014).\n\n### Interactions with the 5\u2019-tail and ADPNP within the RecD subunit\n\nElectron density corresponding to all twelve bases of the 5\u2019-tail could be traced from the fork junction, across and through the RecC subunit, and along a groove on the RecD subunit (Figure 2). The first nine bases were essentially the same as the first nine (of ten) in the extended fork complexes (Saikrishnan et al., 2008). In addition to these contacts, we were able to pick out the remaining three bases that extended across the 2A domain of RecD (Figure 2). The ssDNA bound across the RecD subunit is very similar to that observed in the RecD2 complex and the contacts also involve similar conserved residues (Saikrishnan et al., 2009).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig2-v1.jpg)\n\n**Figure 2.:** Inset: location of the close ups shown in this figure relative to Figure 1. (A) Binding of the 5\u2019-tail of the DNA fork across the RecD subunit, (B) Close up of the electron density (contoured at 4\u00a0\u03c3) for the bound 5\u2019-tail of the DNA fork showing details of the contacts between the protein and bound DNA. Further details about interactions within the RecD subunit are presented in Figure 1\u2014figure supplement 1, and details about interactions within the RecB subunit are presented in Figure 2\u2014figure supplement 2\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Insets show location of the zoomed in regions. (A) Conformational changes of the 1A and 2A domains of RecB associated with nucleotide binding (initiation complex (Singleton et al., 2004) shown in grey, ADPNP bound structure in orange), (B) Electron density (contoured at 4\u00a0\u03c3) at the ATP-binding site of the RecB subunit showing the unusual arrangement of adenine binding with the base sandwiched between two aromatic residues, (C) Interaction of the \u2018arm\u2019 domain with the minor groove (RecB, left) or the major groove (AddA, right) of the DNA duplex.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Surprisingly, only very weak electron density for bound nucleotide is visible at the ATP-binding site of RecD even though ADPNP is bound at the ATP-binding site of the RecB subunit. However, the conformation of the conserved helicase motif IV is in a conformation that suggests nucleotide is bound to the subunit, albeit at low occupancy (Panel A). Comparison with the RecD2 structures (Panel B) reveals the 1A and 2A domains to be most similar in conformation to that of the protein without bound nucleotide (Saikrishnan et al., 2009). Indeed, these structures also suggest that a steric clash with the RecB subunit would prevent the RecD subunit from sliding along the ssDNA in response to ATP-binding as seen for RecD2. This suggests that the DNA substrate we used here is still at least one base too short on the 5\u2019-tail to permit this final conformational change. As a consequence, the nucleotide binds less tightly to the RecD subunit when this conformational change is prevented. (A) Helicase motif IV of RecD (red) adopts a conformation more similar to that seen in the nucleotide-bound state of RecD2 (right, grey) (Saikrishnan et al., 2009) than to the binary complex (left, grey), (B) By contrast, the ssDNA contacts through the 2A/SH3 domains most resemble those seen in the nucleotide free RecD2 structure (left, grey) than the nucleotide-bound state (right, grey).\n\nSurprisingly, only very weak electron density for bound nucleotide is visible at the ATP-binding site of RecD even though ADPNP is bound at the ATP-binding site of the RecB subunit (see Figure 2\u2014figure supplement 2 and discussion in the figure legend).\n\n### Structure of the SH3-fold RecD 2B domain\n\nThe 2B domain of the RecD subunit was disordered in the crystal structure of the initiation complex reported previously (Singleton et al., 2004). However, the crystal structure of the related D. radiodurans RecD2 protein (Saikrishnan et al., 2009), and more recently of the related SF1B family helicases Dda (He et al., 2012) and Pif1 (Zhou et al., 2016; Chen et al., 2016), revealed an SH3 fold for this domain, which is rare in prokaryotic systems. These structures also revealed that the SH3 domain interacts with the ssDNA tail in a location different to that normally occupied by a peptide in canonical eukaryotic SH3 domains (Saikrishnan et al., 2009; Saksela and Permi, 2012), thus retaining the potential to bind peptide at the same time as the ssDNA tail. The 2B domain of the RecD subunit is visible in our current EM structure and confirms the fold of this domain is similar to that of the SH3 fold observed for RecD2. It also confirms the location and mode of DNA binding observed in RecD2. However, the domain also contacts a helix within the 2B domain of RecB (Figure 3A). This interaction utilises a surface that is in a similar location to that used by other SH3 domains (Saksela and Permi, 2012) but the mode of interaction is very different to other SH3 domains. Most SH3 domains bind an extended peptide (usually a sequence rich in proline residues) across a groove on the protein surface. By contrast, the SH3 domain of RecD binds an \u03b1-helix in this region. In addition, some of the regions that constitute the contact surfaces in canonical eukaryotic SH3 domains, such as in Abl kinase, are utilised in a different manner in the RecD SH3 domain (Figure 3B). The RT and N-Src loops are pulled back from their usual locations through interactions with the ssDNA tail and a part of the RecD 2A domain, respectively. This opens up the typical narrow peptide-binding groove that opens up the surface to interact with an \u03b1-helix in the RecB subunit. Therefore, this appears to represent a novel interaction mode for a SH3 domain.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig3-v1.jpg)\n\n**Figure 3.:** Inset: location of the close ups shown in this figure relative to Figure 1. (A) Contact regions of the SH3 domain (blue) with DNA (pink) and peptide (RecB, orange), (B) Cartoon representation of the SH3 domain of Abl kinase (right) with bound peptide (magenta). The key contact regions (Saksela and Permi, 2012) are highlighted in different colours. The equivalent view of the RecD SH3 domain is shown on the left.\n\nFinally, a short extension in the region immediately preceding the SH3 domain also binds a polypeptide linker that connects the RecB helicase and nuclease domains (see below). Consequently, this small domain, that is disordered in the initiation complex, becomes the focal point of three separate interaction interfaces that together coordinate a series of conformational changes during nuclease activation (see below).\n\nGenetic and biochemical data show that the RecD subunit is not required after Chi recognition (Stahl et al., 1990; Dixon et al., 1994). This led to the so-called RecD ejection hypothesis (Stahl et al., 1990). However, subsequent single molecule data have shown instead that RecD becomes inactivated rather than being lost from the complex (Handa et al., 2005). If it were to act in a conventional SH3 mode (i.e. canonical peptide binding) then it is plausible that conformational changes in response to Chi recognition might cause this domain to relocate and bind to another part of the protein complex to lock RecD in a conformation that can no longer function as a helicase/translocase, without being lost from the complex. This could either involve a similar region to that we observe in the current structure or a different one following another conformational change.\n\n### Conformational changes in response to extension of the 5\u2019-tail\n\nIn previous structures of RecBCD, the RecD subunit adopted an open conformation but in the current structure the protein closes around and clamps the 5\u2019 ssDNA tail. The closing of the RecD clamp brings the SH3 domain of RecD into contact with the 2B domain of the RecB subunit that appears to act as a catch to stabilise the closed conformation of RecD (Figure 4, Figure 4\u2014figure supplement 1, and Videos 1\u20133). The N-terminal domain of RecD contacts the 2B domain of RecC and the conformational change in RecD has significant effects on the conformation of the RecC subunit. The RecB nuclease domain bridges a gap between the 1A and 2B domains of RecC and the conformational changes cause a significant shift in position of the RecB nuclease relative to these domains that reveals the mechanism for nuclease activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig4-v1.jpg)\n\n**Figure 4.:** Inset: location of the close ups shown in this figure. The series of conformational changes from the initiation complex (grey) begins in the top left corner. Supplementary Videos 1\u20133 show these conformational changes. (A) Overall changes in the structure in the RecD subunit. Note that the SH3 domain is disordered in the initiation complex (see also Videos\u00a01\u00a0and\u00a02), (B) Overall changes in the structure in the RecC subunit (see also Video 2), (C) Overall changes in the structure in the RecB nuclease domain (see also Video 2), (D) The linker polypeptide region, including the \u03b1-helix (black) that blocks the active site, relocates to a new position (see also Video 3). Electron density for this region is shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Inset shows location of the zoomed in region. (A) Electron density (contoured at 2.5\u00a0\u03c3) showing lack of density for the nuclease blocking helix in the position seen in the initiation complex (grey). The electron density is too weak to build the structure with confidence but shows an alternative path for the connecting linker peptide and blocking helix (shown in black). The nuclease active site can be located by the yellow sphere which represents a calcium ion in the initiation complex structure, (B) the same region but rotated by 90 degrees.\n\n![Video 1.](https://cdn.elifesciences.org/articles/18227/elife-18227-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/18227/elife-18227-media2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/18227/elife-18227-media3.mp4.jpg)\n\n### Mechanism of nuclease activation\n\nThe nuclease activity of the RecBCD complex is attenuated in the initiation complex prior to binding ATP (Wright et al., 1971). The crystal structure of the initiation complex of RecBCD suggested why this is the case because the nuclease requires ssDNA to be fed into it by the helicase activities of the complex. Furthermore, the structure revealed a mechanism for inhibition of the nuclease activity in which an \u03b1-helix (residues 913\u2013922) within the linker region (residues 870\u2013940) of RecB, that connects the C-terminal nuclease domain to the N-terminal helicase domains, sits in the nuclease active site thus blocking access (Singleton et al., 2004). This suggested an obvious mechanism for activation in which this helix would be displaced to allow access of the ssDNA tails to the nuclease site although how this might be brought about was not evident from the structure. The EM structure now reveals the details of this process (Figure 4 and Videos 1\u20133).\n\nInteraction between the 2B domain of RecD and the RecB subunit has a number of consequences. First, several domains of the RecC subunit also undergo a change in conformation. This change alters the interaction between the 1A domain of RecC and the nuclease domain of RecB. In the initiation complex, the \u03b1-helix that blocks the nuclease active site is stabilised by stacking contacts with another \u03b1-helix (residues 602\u2013627) from the 2B domain of RecC. This interaction is altered as a consequence of the conformational changes in the RecC subunit that shift the position of the RecC helix, breaking the contacts with the nuclease-blocking helix of the RecB linker, resulting in release of this helix from the nuclease active site, for which there is now no electron density (Figure 4\u2014figure supplement 1). This change opens up the nuclease site and allows access of DNA. Furthermore, weak electron density suggested an alternate path for the linker region compared to the crystal structure (Figure 4\u2014figure supplement 1). Although the density was too weak to build the loop accurately, it was modelled as poly-alanine to define the overall pathway for this re-docked polypeptide. The path takes the linker along the edge of the RecD 2A domain including a short region that precedes the SH3 domain. Thus the entire linker is relocated away from the nuclease domain, relieving the block and providing access to the nuclease active site. The conformational changes are illustrated by movies created by morphing from one structure to the other (Videos 1\u20133). A cartoon representing the steps on the RecBCD activation pathway is shown in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18227/elife-18227-fig5-v1.jpg)\n\nThe activity of a highly processive helicase/nuclease could be very deleterious to a cell if unchecked. Consequently, RecBCD has evolved regulatory mechanisms that suppress activity unless the enzyme complex is bound to a bona fide DNA substrate (i.e. a broken DNA end). The structure we present here demonstrates the molecular basis for one such regulatory mechanism and, together with our previous structural studies, describes a pathway for this activation process. Initial binding of RecBCD to a broken end induces unwinding of up to six base pairs of DNA in the absence of ATP (Singleton et al., 2004, Wong et al., 2005). The function of this unwinding is to fill up the ssDNA-binding site on the RecB subunit. ATP binding and hydrolysis now allow unwinding of the DNA duplex to begin, at first driven by just the RecB subunit. At this stage the nuclease active site is blocked by the linker helix and activity of the domain is attenuated (Saikrishnan et al., 2008). As the RecB subunit begins to unwind the duplex, the 5\u2019-ssDNA tail that is produced passes along a channel through the RecC subunit towards the motor domains of the RecD subunit. Once the tail exceeds ten bases, the RecD subunit responds with a large conformational change that converts it to an active helicase/translocase conformation and in this process also transmits this change to the nuclease active site via the RecC and RecB subunits. At this point the enzyme is bound to a DNA substrate that it recognises as being initiated from a broken DNA end (or restriction enzyme digested phage genome) so can proceed to processively and rapidly digest the DNA and search for a Chi sequence. If the enzyme encounters a Chi sequence then it pauses and alters its activities to prepare the DNA end for RecA loading. RecBCD then loads the RecA protein so that homologous recombination can initiate and the repair process proceeds. For phage DNA that lacks Chi sequences, the DNA degrading machine is unregulated and continues to digest the phage genome, thereby eliminating the phage from the cell, but also at the same time providing a molecular memory of the infection via the CRISPR system to further evade future infections (Levy et al., 2015).\n\n## Materials and methods\n\n### Protein and DNA preparation\n\nA nuclease-dead E.coli RecBCD mutant (D1080A in RecB) was used in this work to prevent digestion of the single-stranded tails of the DNA substrate. The complex was produced from three plasmids, pETduet-His6-TEVsite-recBD1080A, pRSFduet-recC and pCDFduet-recD in a \u0394recBD E.coli strain as described previously (Saikrishnan et al., 2008). Purification of RecBCD was as described previously (Singleton et al., 2004) but modified to include a HisTrap Ni-Sepharose (GE Life Sciences) step after ammonium sulphate precipitation. The HisTrap elute was further purified using HiTrap heparin-Sepharose (GE) then dialysed overnight with TEV protease to remove the His-tag. The sample was then passed back through HisTrap Ni-Sepharose before continuing with MonoQ (GE) anion exchange. The protein was flash-frozen after supplemention with 15% glycerol. The hairpin DNA substrate that was used had the sequence 5\u2019- TTTTTTTTTTTTtctaatgcgagcactgctacagcatTTCCCatgctgtagcagtgctcgcattagaTTT-3\u2019, where lower case denotes paired bases in the hairpin stem, with twelve unpaired thymidine nucleotides on the 5\u2019 end and three on the 3\u2019 end. The substrate was prepared as described previously (Singleton et al., 2004; Saikrishnan et al., 2008).\n\n### Cryo-electron microscopy grid preparation and data collection\n\nPrior to preparing grids, RecBCD was thawed and desalted into 20 mM Tris-HCl pH 7.5, 50 mM NaCl, 1 mM TCEP using Sephadex G25 spintrap columns (GE) and concentrated to 5 mg/ml. The protein was mixed with a 1.75 fold excess of DNA substrate for 20 min at room temperature before 2 mM ADPNP and 4 mM MgCl2 were added and the complex placed on ice for immediate use.\n\nSamples for cryo-EM were frozen using C-flat advanced holey carbon film grids (Protochips). Grids with 1 and 2 \u03bcM round holes were used. In order to obtain larger areas of thin ice inside the holes, the carbon film was thinned by subjecting grids to 2\u20133 min of glow discharge (10\u00a0mA, 0.2 mbar). Thinned grids were kept for at least two weeks prior to use to allow charge dissipation. To make the carbon surface hydrophilic, prior to the sample preparation, grids were treated with the detergent n-Dodecyl \u03b2-D-maltoside (DDM) (Sigma-Aldrich) using a procedure described in (Cheung et al., 2013) with some modifications. Grids were incubated on 30 \u03bcL drops of 0.1% solution of DDM overnight (or for at least 4 hr) at 4\u00b0C. Grids were edge-blotted and washed eight times in 10 \u03bcL drops of water (the tips of the tweezers for grid handling were wiped each time to improve reproducibility). Washed grids were kept on damp filter paper and used for freezing within two hours of preparation. Sample (3 \u03bcL) was applied to the grid and evenly spread with the pipet tip before blotting and freezing in liquid ethane (Vitrobot Mark III (FEI)). This grid treatment allowed us to obtain a significant area of thin ice to provide sufficient numbers of the thinner 'flat' views of the particles, which were harder to find in thicker ice on glow discharged grids. Similar results were achieved by treating grids with a 1\u00a0mM solution of Amphipol A8-35 (Anatrace,\u00a0Maumee, Ohio). Five washes were required to ensure removal of unbound amphipol while providing sufficient grid hydrophilicity.\n\nData were collected using a Titan Krios microscope operated at 300\u00a0KV at eBIC, Diamond, U.K. Zero loss energy images were collected automatically using the EPU software (FEI) on a Gatan K2-Summit detector in counting mode with a pixel size corresponding to 1.34\u00a0\u00c5 at the specimen. A total of 1674 micrographs were collected in movie mode with a nominal defocus range of \u22121.2 to \u22123.2 \u00b5m. Each movie consisted of a stack of 30 frames, collected with a total dose of 36 electrons/\u00c52 over 12 s corresponding to a dose rate of 5.4 electrons/pixel/s.\n\n### Data processing\n\nAll 30 movie frames for each image stack were aligned and summed using Motioncorr (Li et al., 2013). Subsequent image processing used Relion1.4 (Scheres, 2012) unless stated otherwise. The actual defocus and other contrast transfer function (CTF) parameters for each summed movie stack were estimated using CTFFIND4 (Rohou and Grigorieff, 2015). Outlying micrographs were removed, based on a number of criteria, leaving 1426 images with an estimated resolution range from 7.9\u20132.8\u00a0\u00c5 (mean of 3.9\u00a0\u00c5) and defocus range between \u22120.5 to \u22123.8 \u00b5m. Manually picked particles from a small subset of micrographs were used to generate initial 2D classes which were used as references for autopicking. Initially, reference-free 2D classification was used to remove poor particles from autopicking, leaving 153,334 particles judged to represent RecBCD complexes. These were subjected to 3D classification using the RecBCD:DNA crystal structure (Singleton et al., 2004) (PDB 1W36), low-pass filtered to 50\u00a0\u00c5, as a starting model. From five initial classes of particles, two appeared identical and contained the full RecBCD:DNA complex (combined total, 49% of dataset) so were pooled and selected for further refinement. Of the remaining classes, one contained RecBCD:DNA apparently lacking the entire RecB nuclease domain (18%), one contained a mixture of molecular species (25%), and one was featureless, containing poorly aligned particles (8%). Particles from these latter three classes were discarded.\n\n3D refinement of the remaining 74,656 particles, using the same starting model as the 3D classification step, yielded a map with a resolution of 4.6\u00a0\u00c5 before masking (as estimated by the \u2018gold-standard\u2019 Fourier Shell Correlation (FSC) at the 0.143 cut-off criterion). After application of an auto-generated mask in Relion, the resolution of the map was 4.0\u00a0\u00c5. Further filtering of the particle dataset by a variety of selection criteria did not improve the final map. Movie processing, using particle polishing to correct for individual particle movement and apply per-frame weighting before re-running 3D refinement, improved the resolution to 3.9\u00a0\u00c5. A final resolution of 3.8\u00a0\u00c5 was obtained by re-refining the 3D model after local CTF parameters for the particles were determined using the program Gctf (Zhang, 2016). The final applied b-factor for sharpening used in post-processing was \u221260 \u00c52. The final map was deposited at the EM databank with EMD code 4038.\n\n### Model building and refinement\n\nScripts for map conversion, cell matching and refinement in Refmac were kindly provided by Garib Murshudov (MRC-LMB). The crystal structure of RecBCD in complex with an extended DNA fork (Saikrishnan et al., 2008) (PDB 3K70), was used as a template for building in Coot (Emsley et al., 2010) after initial global docking in chimera (Petterson et al., 2004). There were significant conformational changes apparent, so the jiggle-fit and morph, with positional restraints, tools in Coot were used to obtain a better starting fit. The SH3 domain of RecD, that was absent from the crystal structure, was built manually from a homology model generated using the Phyre2 server (Kelley et al., 2015) and based on the structure of Deinococcus radiodurans RecD2 (Saikrishnan et al., 2008). One molecule of ADPNP and a magnesium atom were modelled into strong density in the RecB helicase domains and positionally-restrained based on bond distances from similar helicases such as in the AddAB crystal structures (Krajewski et al., 2014). There was insufficient density to confidently place a molecule of ADPNP in the RecD helicase domains. Weak electron density suggested an alternate path for residues 913\u2013938 in RecB compared to the crystal structure. The density was too weak to accurately build the loop and was modelled in as poly-alanine, with occupancy set to 0 and with atom B-factors set to 100. The entire model was carefully edited and fitted using real-space refinement in coot with occasional jelly-body, and at later stages later reciprocal-space, refinement with Refmac to maintain sensible geometry. Near the end, phenix.real_space_refine (Afonine et al., 2013) was used to tightly regulate geometry and correct ramachandran and rotamer outliers. After manually checking the corrected model, Phenix was run a final time in ADP mode to assign atom B-factors and generate the final model statistics (Table 1). Coordinates were deposited with PDB ID code 5LD2.\n",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "55c222fe-d2ac-4444-85ae-17f49f7c6631",
+      "submission_id": "cd1de460-838d-47b2-abdd-2decfa096bd9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Sherratt, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18227.016](https://doi.org/10.7554/eLife.18227.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanism for nuclease regulation in RecBCD\" for consideration by eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Stewart Shuman (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this work, Wigley and colleagues extend their highly informative structural studies of bacterial helicase-nucleases by reporting the cryo-EM structure of RecBCD engaged with a forked DNA substrate in which the 5' single strand tail is long enough to traverse the RecD subunit. This new structure reveals conformational changes underlying the requirement for RecD to activate the nuclease activity inherent to the C-terminal domain of the RecB subunit. This entails the movement of a nuclease-occluding protein helix observed in an earlier crystal structure of RecBCD. The EM structure highlights a key role for an SH3 domain in the RecD subunit in this transition, whereby SH3 (which was disordered in the RecBCD initiation complex crystal structure) interacts with the 5' ssDNA and RecB. This is an important addition to our specific understanding of RecBCD function and its regulation, and more generally an excellent example of the sophisticated internal dynamics of a DNA-processing machine.\n\nI summarize below the relatively minor comments that you need to take into account in your revision. Also note that eLife expects papers to refer to the organism system in either the title or Abstract so I would propose you add an appropriate statement in the Abstract stating that is E. coli RecBCD that is under study.\n\n1) The simulations in the videos are very informative, but please check them carefully since one reviewer had the opinion that the Video 2 file was corrupted, although I was not aware of a problem. Could the nuclease active site be indicated in the videos, such as by overlaying one of the metal ions?\n\n2) In our opinion, the figures could be improved, not least because the difficulty in distinguishing colors and relating one figure to another. In Figure 1A,B the green (1A) domain is either hidden or difficult to distinguish from the yellow.\n\nFrom the way the figures are presented, it is difficult to understand the conformational changes that lead from the binding of the RecD-SH3 domain to the 5'-tail, to the exposure of the nuclease active site. This is in part due to the changes in orientation used for the close-up views (such as in Figure 5), which are difficult to relate back to the starting view (Figure 1B). The videos show these changes very well, but many readers will just look at the figures. I am not sure what the best solution is, but one could consider having two full structures shown side by side for the two complexes (present structure and previous \"pre-initiation\" structure), in the orientation of Figure 1B. It would be helpful if all of the key parts that participate in the conformational changes (nuclease active site, RecB linker, etc.) could be labeled or indicated on each figure. At a minimum, it would be helpful if the nuclease active site could be indicated on Figure 1B \u2013 one should be able to see that it is buried in the pre-initiation complex and exposed in the present structure, which is the main point of the paper, but is not clearly shown anywhere. It would be better if the close-up views that show the detailed interactions, could be in a similar orientation as Figure 1B, if at all possible, ideally on the same panel with boxes on the full structure indicating each expanded region. I realize that this is difficult however, and I like how the overlays with the gray structure show the actual domain movements.\n\nFigure 5 \u2013 please indicate the location of the nuclease active site. Furthermore, it would be nice if the domain structure of each subunit could be defined in a linear sequence cartoon (color coded like the structural figures). With so many different domains and subdomains, it would be nice to have a legend to show where the different domains are in the linear sequence.\n\nSince much of the text and figures (Figures 2 and 3) have to do with the ATP sites. It would be helpful if the previous structures that were determined were described more fully (such as in the introduction), with regard to the occupancy of the two ATP sites. It wasn't clear if the occupancy of the ATP sites, and the conformational changes around them, had anything to do with the nuclease activation, or if this was just a side note of the paper. Since the main point of the paper has to do with nuclease activation, are the parts about the ATP sites a bit off-track, although I understand that they are still informative? If there is in fact a connection between the ATP sites and nuclease activation, it should be made clearly.\n\nThe authors might also consider the value of introducing a cartoon of the pathway from DNA loading to nuclease action, chi recognition etc. that takes into account the structural work here and previously; this could be very useful for the general reader.\n\n3) Correct and check for typos (some of which include 'These' to 'This' [end of subsection \u201cStructure determination by cryoEM\u201d]; insert 'the' before 'overall' [subsection \u201cMechanism of nuclease activation\u201d, second paragraph]; 'collected' not coleted' [subsection \u201cCryo-electron microscopy grid preparation and data collection\u201d, last paragraph]; no title on He et al. ref in citations. Also the authors should carefully examine their revised manuscript for accuracy, particularly the Methods section.\n\n4) In the Abstract and first paragraph of the Introduction, it would be appropriate to cite AdnAB (the mycobacterial helicase-nuclease) along with AddAB and RecBCD as exemplary bacterial DSB-processing machines.\n\n5) In the second paragraph of the Introduction. The authors cite both RecCD and AddAB as antagonists of bacteriophage infection, and then cite several cases in which phages encode proteins that neutralize RecBCD. Yet, they cite no example of AddAB having an antiviral effect. is there such evidence? If not, then AddAB ought to be deleted from the sentence.\n\n6) In the second paragraph of the subsection \u201cMechanism of nuclease activation\u201d, please find better phrasing than \"activates activity\".\n",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "87606c2a-aa9e-428d-8350-0277c90bbbe7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C1",
+      "claim": "Processing of double-stranded DNA breaks for repair by homologous recombination in bacterial cells is catalysed by AddAB, AdnAB or RecBCD-type helicase-nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacterial cells, processing of double-stranded DNA breaks for repair by homologous recombination is catalysed by AddAB, AdnAB or RecBCD-type helicase-nucleases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established biological processes supported by the citation context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "9ff884c6-a5ce-4ca0-95db-fbd2213989eb",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C2",
+      "claim": "AddAB, AdnAB or RecBCD-type helicase-nucleases are highly processive duplex unwinding and degrading machines that require tight regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzyme complexes are highly processive, duplex unwinding and degrading machines that require tight regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about these enzyme complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "3454ddf9-fa01-4a18-992f-b10487dfd569",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C3",
+      "claim": "The structure of E.coli RecBCD was determined by cryoEM at 3.8 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the structure of E.coli RecBCD, determined by cryoEM at 3.8 \u00c5 resolution, with a DNA substrate that reveals how the nuclease activity of the complex is activated once unwinding progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is reported in the abstract and confirmed in Table 1 and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "24083a7d-427a-46b1-ab57-fbfcabfcde8b",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C4",
+      "claim": "Extension of the 5'-tail of the unwound duplex induces a large conformational change in the RecD subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Extension of the 5'-tail of the unwound duplex induces a large conformational change in the RecD subunit, that is transferred through the RecC subunit to activate the nuclease domain of the RecB subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data from the cryoEM structure and comparison with previous structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "42cf4182-08ff-4861-b0a2-041a8fb96720",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C5",
+      "claim": "The conformational change in RecD is transferred through the RecC subunit to activate the nuclease domain of the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Extension of the 5'-tail of the unwound duplex induces a large conformational change in the RecD subunit, that is transferred through the RecC subunit to activate the nuclease domain of the RecB subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is revealed by the structural data showing conformational changes across subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "f3f92a16-13c2-43de-8e1e-51b8be957684",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C6",
+      "claim": "The nuclease activation process involves a SH3 domain that binds to a region of the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The process involves a SH3 domain that binds to a region of the RecB subunit in a binding mode that is distinct from others observed previously in SH3 domains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryoEM structure and described in detail in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "125c7cb5-df38-4880-b79b-60a78b148da7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C7",
+      "claim": "The SH3 domain binding mode in RecBCD is distinct from others observed previously in SH3 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The process involves a SH3 domain that binds to a region of the RecB subunit in a binding mode that is distinct from others observed previously in SH3 domains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison with canonical SH3 domains shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "6f153837-a7c7-441e-96e4-7d89c914614e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C8",
+      "claim": "This is the first example of peptide-binding of an SH3 domain in a bacterial system.",
+      "claim_type": "EXPLICIT",
+      "source": "to our knowledge, this is the first example of peptide-binding of an SH3 domain in a bacterial system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about novelty based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "6c7d5525-8bcd-4c6b-a76a-ed287e587cd2",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C9",
+      "claim": "RecBCD, AdnAB or AddAB complexes process broken DNA ends via a number of steps to eventually produce a RecA-coated 3'-tailed filament that initiates strand invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, one of the major pathways for high fidelity repair of breaks is homologous recombination initiated by RecBCD, AdnAB or AddAB complexes (Dillingham and Kowalczykowski, 2008; Wigley, 2013) that process the broken ends via a number of steps to eventually produce a RecA-coated 3'-tailed filament that initiates strand invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "4f68fba8-aecf-4d1f-8cd6-23a4d815bb66",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C10",
+      "claim": "RecBCD is an important player in controlling infection by bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a role in repair of double-strand DNA breaks, RecBCD is an important player in controlling infection by bacteriophages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent discussion of phage proteins targeting RecBCD.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "1f2b53f9-345b-471f-ada1-35a3d2d10ef0",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C11",
+      "claim": "The phage lambda protein Gam works by competing with DNA binding to RecBCD.",
+      "claim_type": "EXPLICIT",
+      "source": "The phage lambda protein Gam, works by competing with DNA binding to RecBCD (Murphy, 2007; Court et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "14eace78-fa95-424d-aa19-d73694e0b022",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C12",
+      "claim": "The phage P22 protein Abc2 works by inducing a 'Chi-like state' for RecBCD.",
+      "claim_type": "EXPLICIT",
+      "source": "while the phage P22 protein Abc2, works by inducing a 'Chi-like state' for RecBCD (Murphy, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "6d2ddf7f-247c-4e9e-b4b1-83b2bf705cd7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C13",
+      "claim": "RecBCD has a role in providing DNA fragments for CRISPR arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, a role for RecBCD in providing DNA fragments for CRISPR arrays demonstrates a connection to the other major pathway known to provide resistance to phage infections (Levy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Levy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "03dcea0f-73dd-4c08-ba74-58d4f17f587a",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C14",
+      "claim": "RecBCD/AddAB complexes are highly processive helicase/nuclease machines that digest DNA from the broken end until they encounter a Chi sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecBCD/AddAB complexes are highly processive helicase/nuclease machines that digest DNA from the broken end until they encounter a crossover hotspot instigator (Chi) sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecBCD/AddAB function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "76842377-2c14-4d6c-a817-eb1ed1f86dfc",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C15",
+      "claim": "At the Chi sequence, RecBCD/AddAB activities are modulated to produce a 3-tailed duplex onto which RecA is loaded.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point their activities are modulated to produce a 3-tailed duplex onto which RecA is loaded (Wigley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "b4d86d23-2445-4463-a09d-dd492b74924e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C16",
+      "claim": "Crystal structures of AddAB intermediates together with biochemical and single molecule experiments provide a reasonable understanding of the molecular details of the AddAB-mediated pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of a variety of intermediates on the AddAB-mediated pathway (Saikrishnan et al., 2012; Krajewski et al., 2014), together with biochemical and single molecule experiments (Gilhooley and Dillingham, 2014; Gilhooley et al., 2016; Carrasco et al., 2013), now provide a reasonable understanding of the molecular details of this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "70075677-7a3a-4929-baca-2281321c9067",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C17",
+      "claim": "Understanding of the molecular details for the RecBCD mechanism are less advanced than for AddAB due to a lack of high resolution structural information.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there has been considerable study of RecBCD at the biochemical and single molecule level (Wright et al., 1971; Taylor and Smith, 1992, 2003; Dillingham and Kowalczykowski, 2008; Spies et al., 2003, 2007), our understanding of the molecular details for the RecBCD mechanism are less advanced due to a lack of high resolution structural information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of available structural data for RecBCD vs AddAB.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "af07dc93-84cd-47d3-913f-ad3734777cdf",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C18",
+      "claim": "High resolution structural information for RecBCD has been limited to the initiation complex and some DNA substrates representing the very initial stages of the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, this has been limited to the initiation complex, with the protein interacting with a broken DNA end (Singleton et al., 2004), and some DNA substrates representing partially unwound substrates that represent the very initial stages of the pathway (Saikrishnan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "f73da467-530f-4308-b19e-a13bd337f43c",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C19",
+      "claim": "The nuclease activity of RecBC is very much lower than that of RecBCD.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclease activity of RecBC is very much lower than that of RecBCD (Anderson et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Anderson et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "0e9cfd64-b941-4207-afa3-83f1e2761951",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C20",
+      "claim": "The nuclease domain is a C-terminal domain of the RecB subunit, the activity of which is regulated by RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was shown instead that the nuclease domain is actually a C-terminal domain of the RecB subunit, the activity of which is regulated by RecD (Yu et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "254299c9-53d6-42c3-bc6a-103b0e6aea93",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C21",
+      "claim": "The structure of the initiation complex revealed that nuclease inhibition is due to an \u03b1-helix that sits in the nuclease active site, thus blocking access to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the initiation complex revealed this is due to an \u03b1-helix that sits in the nuclease active site, thus blocking access to DNA (Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the initiation complex structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "33bc9900-75aa-4205-95e2-7de3622f3feb",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C22",
+      "claim": "Fork DNA substrates containing ten residues on the 5'-tail could be crystallised in the same crystal form as the blunt hairpin substrate used for the initiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Fork DNA substrates containing ten residues on the 5'-tail could be crystallised in the same crystal form as the blunt hairpin substrate used for the initiation complex reported previously (Singleton et al., 2004; Saikrishnan et al., 2008), and the structures of the protein components were essentially the same.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from crystallization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "89213ab8-90ae-4863-bb6a-a6df7b6359f7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C23",
+      "claim": "A single base addition on the 5'-tail beyond ten residues resulted in loss of crystallisation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, just a single base addition on the 5'-tail beyond ten residues resulted in loss of crystallisation and we were unable to obtain suitable crystals despite extensive screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from crystallization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "94bb4ef3-7ea8-48a8-bfdd-f274e7f13146",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C24",
+      "claim": "The additional base on the 5'-tail induces a conformational change in the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the first indication that the additional base on the 5'-tail induces a conformational change in the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the loss of crystallization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "29fe4ce4-aedc-46ac-b30b-8141990616be",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C25",
+      "claim": "Data processing revealed a major class that constituted about half of the particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Data processing revealed a major class that constituted about half of the particles and this is what is described in detail below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from cryoEM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2e43dd9c-c3c4-4ea6-8782-c462711a4169",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C26",
+      "claim": "The DNA fork substrate used had a 25 base pair duplex region, capped at one end with a five base hairpin and at the other with unpaired 3' and 5'-tails (3 and 12 thymidine residues, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We utilised a DNA fork substrate with a 25 base pair duplex region, capped at one end with a five base hairpin and at the other with unpaired 3' and 5'-tails (3 and 12 thymidine residues, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the DNA substrate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "07935f33-0ad3-4554-aee9-45fa166e81f4",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C27",
+      "claim": "The DNA and all domains of the three proteins were accounted for in the reconstruction derived from the major class.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA and all domains of the three proteins were accounted for in the reconstruction derived from this major class (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryoEM reconstruction shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "15f53dbd-fb6a-4e20-84b2-64ef220b4934",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C28",
+      "claim": "In one of the other classes, density corresponding to the RecB nuclease domain was missing (18%).",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the other classes, density corresponding to the RecB nuclease domain was missing (18%), although other features for the rest of the protein were very similar to the main class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from cryoEM data classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "b552d1f8-0826-458e-8985-8c02ba9c0d18",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C29",
+      "claim": "Electron density for bound ADPNP is visible in the ATP-binding site of the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron density for bound ADPNP is visible in the ATP-binding site of the RecB subunit (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron density map shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "198de7fa-550e-453e-adbb-8d4e5dd78d93",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C30",
+      "claim": "The adenine ring of ADPNP is sandwiched between two aromatic residues (F31 and W447) in the RecB ATP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The adenine ring is sandwiched between two aromatic residues (F31 and W447), but otherwise the contacts with active site residues are very similar to those observed in other Superfamily 1 (SF1) helicases (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "7b3ae21c-20de-41a2-be02-d70b3a5295d5",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C31",
+      "claim": "In response to nucleotide binding, the helicase domains of RecB undergo a conformational change as expected from studies of other SF1 helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to nucleotide binding, the helicase domains undergo a conformational change (Figure 2\u2014figure supplement 1) as expected from studies of a variety of other SF1 helicases including PcrA and AddAB (Singleton et al., 2007; Velankar et al., 1999; Krajewski et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data and comparison with other helicases cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "3ce40c3a-0566-4de1-8128-2c39de8dd4c1",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C32",
+      "claim": "The short 3'-tail interacts with the 2A domain of the RecB subunit as seen in the initiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The short 3'-tail we used for this structure (to permit extension of the duplex and 5'-tail) interacts with the 2A domain of the RecB subunit as seen in the initiation complex (Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and compared to the initiation complex.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "93cb4818-66bf-464b-9ab6-b3faf052fc4e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C33",
+      "claim": "RecBCD is able to unwind up to six base pairs from a blunt end in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RecBCD is able to unwind up to six base pairs from a blunt end in the absence of ATP (Singleton et al., 2004; Wong et al., 2005), it was unable to further unwind the fork substrate used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "a42e14cf-6611-480b-9da0-af26824d8328",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C34",
+      "claim": "RecBCD was unable to further unwind the fork substrate used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RecBCD is able to unwind up to six base pairs from a blunt end in the absence of ATP (Singleton et al., 2004; Wong et al., 2005), it was unable to further unwind the fork substrate used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "d1087c77-d4bb-4ab9-b098-24f722493dcf",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C35",
+      "claim": "The 'arm' domain of the RecB subunit extends from the protein core and contacts the incoming duplex across the minor groove.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in previous crystal structures, the 'arm' domain of the RecB subunit extends from the protein core and contacts the incoming duplex across the minor groove (Supplementary Figure 2\u2014figure supplement 1; Singleton et al., 2004; Saikrishnan et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the current structure and consistent with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "df453b3b-3d13-40ff-8f1a-b2ce5583578e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C36",
+      "claim": "The duplex:arm contacts in RecBCD are across the minor groove, which contrasts with AddAB where contacts are across the major groove.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with the duplex:arm contacts in AddAB which are across the major groove (Figure 2\u2014figure supplement 1) (Saikrishnan et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between the current structure and the AddAB structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "d17effbd-95ed-44ba-8086-9792ad7b0a72",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C37",
+      "claim": "Conformational changes observed when nucleotide binds to the RecB subunit are very similar to those seen in the AddA subunit within AddAB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, conformational changes observed when nucleotide binds to the RecB subunit (Figure 2\u2014figure supplement 1) are very similar to those seen in the AddA subunit within AddAB, suggesting a similar mechanism for unwinding and translocation once the arm has engaged the DNA substrate (Krajewski et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison with AddAB.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "19dd6667-9b3a-482c-8c5f-194b83fec1b0",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C38",
+      "claim": "Electron density corresponding to all twelve bases of the 5'-tail could be traced from the fork junction, across and through the RecC subunit, and along a groove on the RecD subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron density corresponding to all twelve bases of the 5'-tail could be traced from the fork junction, across and through the RecC subunit, and along a groove on the RecD subunit (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "5ed2023f-f2a4-4c4c-8784-678d2ea9aa75",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C39",
+      "claim": "The first nine bases of the 5'-tail were essentially the same as the first nine (of ten) in the extended fork complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first nine bases were essentially the same as the first nine (of ten) in the extended fork complexes (Saikrishnan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "ebecb435-5182-4c39-8654-d0f08a95883c",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C40",
+      "claim": "The remaining three bases of the 5'-tail extended across the 2A domain of RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these contacts, we were able to pick out the remaining three bases that extended across the 2A domain of RecD (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "b14e5cf5-ffbd-4914-adf2-d71c02f46922",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C41",
+      "claim": "The ssDNA bound across the RecD subunit is very similar to that observed in the RecD2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ssDNA bound across the RecD subunit is very similar to that observed in the RecD2 complex and the contacts also involve similar conserved residues (Saikrishnan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with the RecD2 structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "ffab5223-11ea-4281-80f1-1b4e0b72abf9",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C42",
+      "claim": "Only very weak electron density for bound nucleotide is visible at the ATP-binding site of RecD even though ADPNP is bound at the ATP-binding site of the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only very weak electron density for bound nucleotide is visible at the ATP-binding site of RecD even though ADPNP is bound at the ATP-binding site of the RecB subunit (see Figure 2\u2014figure supplement 2 and discussion in the figure legend).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the electron density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "cebe0411-033f-4483-b3e4-27cedfd51657",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C43",
+      "claim": "The 2B domain of the RecD subunit was disordered in the crystal structure of the initiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2B domain of the RecD subunit was disordered in the crystal structure of the initiation complex reported previously (Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the previous crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "6e2be61a-e593-454f-9a3e-40e829af3987",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C44",
+      "claim": "The crystal structure of D. radiodurans RecD2 protein revealed an SH3 fold for the 2B domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the crystal structure of the related D. radiodurans RecD2 protein (Saikrishnan et al., 2009), and more recently of the related SF1B family helicases Dda (He et al., 2012) and Pif1 (Zhou et al., 2016; Chen et al., 2016), revealed an SH3 fold for this domain, which is rare in prokaryotic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to RecD2 and related helicase structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "8a61f56d-a8b6-43fc-95bc-83bcbd2b2275",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C45",
+      "claim": "The SH3 fold is rare in prokaryotic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the crystal structure of the related D. radiodurans RecD2 protein (Saikrishnan et al., 2009), and more recently of the related SF1B family helicases Dda (He et al., 2012) and Pif1 (Zhou et al., 2016; Chen et al., 2016), revealed an SH3 fold for this domain, which is rare in prokaryotic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SH3 domain distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2071a4e2-fc73-4106-97ee-f55848fee16b",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C46",
+      "claim": "The SH3 domain in RecD2 and related helicases interacts with the ssDNA tail in a location different to that normally occupied by a peptide in canonical eukaryotic SH3 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures also revealed that the SH3 domain interacts with the ssDNA tail in a location different to that normally occupied by a peptide in canonical eukaryotic SH3 domains (Saikrishnan et al., 2009; Saksela and Permi, 2012), thus retaining the potential to bind peptide at the same time as the ssDNA tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to RecD2 structure and SH3 domain reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "63b639ce-93b3-431c-8447-d9297e3f0600",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C47",
+      "claim": "The SH3 domain retains the potential to bind peptide at the same time as the ssDNA tail.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures also revealed that the SH3 domain interacts with the ssDNA tail in a location different to that normally occupied by a peptide in canonical eukaryotic SH3 domains (Saikrishnan et al., 2009; Saksela and Permi, 2012), thus retaining the potential to bind peptide at the same time as the ssDNA tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observation that the canonical peptide-binding site is not occupied by DNA.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "067e69d3-c574-4ce2-b5e7-cdb9e795c948",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C48",
+      "claim": "The 2B domain of the RecD subunit is visible in the current EM structure and confirms the fold of this domain is similar to that of the SH3 fold observed for RecD2.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2B domain of the RecD subunit is visible in our current EM structure and confirms the fold of this domain is similar to that of the SH3 fold observed for RecD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the current structure with RecD2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "e99daee3-bdad-48c8-bc3e-49e7cedc33f6",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C49",
+      "claim": "The current structure confirms the location and mode of DNA binding observed in RecD2.",
+      "claim_type": "EXPLICIT",
+      "source": "It also confirms the location and mode of DNA binding observed in RecD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with the RecD2 structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "38fa5689-8e83-446c-aee4-a624b2a140ad",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C50",
+      "claim": "The SH3 domain of RecD contacts a helix within the 2B domain of RecB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the domain also contacts a helix within the 2B domain of RecB (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the structure shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2fed86cf-3842-4165-9797-e5b1dfd0d2d1",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C51",
+      "claim": "The SH3 domain of RecD utilises a surface in a similar location to that used by other SH3 domains but the mode of interaction is very different.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction utilises a surface that is in a similar location to that used by other SH3 domains (Saksela and Permi, 2012) but the mode of interaction is very different to other SH3 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with canonical SH3 domains.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "053fe0fd-891b-4ad2-92eb-ab3817db7220",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C52",
+      "claim": "Most SH3 domains bind an extended peptide (usually a sequence rich in proline residues) across a groove on the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Most SH3 domains bind an extended peptide (usually a sequence rich in proline residues) across a groove on the protein surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about canonical SH3 domain function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "0e204157-2560-41c1-8d28-43f3a45eeb74",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C53",
+      "claim": "The SH3 domain of RecD binds an \u03b1-helix rather than an extended peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the SH3 domain of RecD binds an \u03b1-helix in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "4fc01ad3-ed93-4c88-ad5e-8074b4b3bf22",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C54",
+      "claim": "Some of the regions that constitute the contact surfaces in canonical eukaryotic SH3 domains are utilised in a different manner in the RecD SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, some of the regions that constitute the contact surfaces in canonical eukaryotic SH3 domains, such as in Abl kinase, are utilised in a different manner in the RecD SH3 domain (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2618a8c9-e751-4252-bc1c-b26a2c766a1e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C55",
+      "claim": "The RT and N-Src loops in the RecD SH3 domain are pulled back from their usual locations through interactions with the ssDNA tail and a part of the RecD 2A domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The RT and N-Src loops are pulled back from their usual locations through interactions with the ssDNA tail and a part of the RecD 2A domain, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and compared to canonical SH3 domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "a59fa442-b4ec-457c-bc7d-dca6b4d354c0",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C56",
+      "claim": "The altered loop positions open up the typical narrow peptide-binding groove to interact with an \u03b1-helix in the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "This opens up the typical narrow peptide-binding groove that opens up the surface to interact with an \u03b1-helix in the RecB subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "42fd4d54-997f-43ac-9f57-8e41fa1a33e3",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C57",
+      "claim": "The RecD SH3 domain represents a novel interaction mode for a SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this appears to represent a novel interaction mode for a SH3 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with known SH3 domain structures and binding modes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "daa09a3c-b734-44e3-9823-0f2f718333c4",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C58",
+      "claim": "A short extension in the region immediately preceding the SH3 domain binds a polypeptide linker that connects the RecB helicase and nuclease domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a short extension in the region immediately preceding the SH3 domain also binds a polypeptide linker that connects the RecB helicase and nuclease domains (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "cf4bb4c1-854e-43af-9da1-be4861953e83",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C59",
+      "claim": "The SH3 domain becomes the focal point of three separate interaction interfaces that together coordinate a series of conformational changes during nuclease activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this small domain, that is disordered in the initiation complex, becomes the focal point of three separate interaction interfaces that together coordinate a series of conformational changes during nuclease activation (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural observations showing multiple interactions involving the SH3 domain.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "4473d62e-9f6b-440d-aeb1-12dc2e37749f",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C60",
+      "claim": "Genetic and biochemical data show that the RecD subunit is not required after Chi recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic and biochemical data show that the RecD subunit is not required after Chi recognition (Stahl et al., 1990; Dixon et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous genetic and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "4e13b662-28df-4c22-a6b3-9f53bdffcb91",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C61",
+      "claim": "The observation that RecD is not required after Chi recognition led to the RecD ejection hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the so-called RecD ejection hypothesis (Stahl et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical hypothesis cited from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "a4f845b8-e230-4b8b-9376-5dff7825b935",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C62",
+      "claim": "Single molecule data have shown that RecD becomes inactivated rather than being lost from the complex after Chi recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subsequent single molecule data have shown instead that RecD becomes inactivated rather than being lost from the complex (Handa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to single molecule studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "8bb933c3-c369-4a61-aca8-17890c87d4bf",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C63",
+      "claim": "If the SH3 domain were to act in a conventional mode, conformational changes in response to Chi recognition might cause this domain to relocate and bind to another part of the protein complex to lock RecD in a conformation that can no longer function as a helicase/translocase.",
+      "claim_type": "EXPLICIT",
+      "source": "If it were to act in a conventional SH3 mode (i.e. canonical peptide binding) then it is plausible that conformational changes in response to Chi recognition might cause this domain to relocate and bind to another part of the protein complex to lock RecD in a conformation that can no longer function as a helicase/translocase, without being lost from the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a possible mechanism based on the structural findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "be1ebf5d-a9d8-403a-8e2d-d5bac1680cef",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C64",
+      "claim": "In previous structures of RecBCD, the RecD subunit adopted an open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous structures of RecBCD, the RecD subunit adopted an open conformation but in the current structure the protein closes around and clamps the 5' ssDNA tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "d291878f-3614-40e4-8091-2bdbbf7c52c9",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C65",
+      "claim": "In the current structure the RecD protein closes around and clamps the 5' ssDNA tail.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous structures of RecBCD, the RecD subunit adopted an open conformation but in the current structure the protein closes around and clamps the 5' ssDNA tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the current structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "4b775d8f-8d84-47d9-bbfb-136b63d00add",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C66",
+      "claim": "The closing of the RecD clamp brings the SH3 domain of RecD into contact with the 2B domain of the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The closing of the RecD clamp brings the SH3 domain of RecD into contact with the 2B domain of the RecB subunit that appears to act as a catch to stabilise the closed conformation of RecD (Figure 4, Figure 4\u2014figure supplement 1, and Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure and illustrated in Figure 4 and Videos 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "9de0f30a-ecdd-42e1-8d35-564c03655c17",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C67",
+      "claim": "The 2B domain of RecB appears to act as a catch to stabilise the closed conformation of RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "The closing of the RecD clamp brings the SH3 domain of RecD into contact with the 2B domain of the RecB subunit that appears to act as a catch to stabilise the closed conformation of RecD (Figure 4, Figure 4\u2014figure supplement 1, and Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "55da67e4-0238-4f7e-b382-b0f53927c395",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C68",
+      "claim": "The N-terminal domain of RecD contacts the 2B domain of RecC.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal domain of RecD contacts the 2B domain of RecC and the conformational change in RecD has significant effects on the conformation of the RecC subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "f2109a3a-c69c-4657-8f2b-fe2ed9fa47cb",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C69",
+      "claim": "The conformational change in RecD has significant effects on the conformation of the RecC subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal domain of RecD contacts the 2B domain of RecC and the conformational change in RecD has significant effects on the conformation of the RecC subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing structures and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "111ee97a-0961-4c1a-b6b0-436601dd6daa",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C70",
+      "claim": "The RecB nuclease domain bridges a gap between the 1A and 2B domains of RecC.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecB nuclease domain bridges a gap between the 1A and 2B domains of RecC and the conformational changes cause a significant shift in position of the RecB nuclease relative to these domains that reveals the mechanism for nuclease activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "76169475-75ac-405b-b54b-d91a014dd626",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C71",
+      "claim": "The conformational changes cause a significant shift in position of the RecB nuclease relative to the RecC domains that reveals the mechanism for nuclease activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecB nuclease domain bridges a gap between the 1A and 2B domains of RecC and the conformational changes cause a significant shift in position of the RecB nuclease relative to these domains that reveals the mechanism for nuclease activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing structures and provides mechanistic insight.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "e3fb15f3-ce73-4bd4-9b39-a2c023ca771c",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C72",
+      "claim": "The nuclease activity of the RecBCD complex is attenuated in the initiation complex prior to binding ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclease activity of the RecBCD complex is attenuated in the initiation complex prior to binding ATP (Wright et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "587f6a8d-fdc6-4cba-9a53-033a04b3e7a2",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C73",
+      "claim": "The nuclease requires ssDNA to be fed into it by the helicase activities of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the initiation complex of RecBCD suggested why this is the case because the nuclease requires ssDNA to be fed into it by the helicase activities of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the initiation complex structure.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "ad9f6148-e6a8-463e-b54a-4afc6bb38b76",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C74",
+      "claim": "An \u03b1-helix (residues 913\u2013922) within the linker region (residues 870\u2013940) of RecB sits in the nuclease active site thus blocking access in the initiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the structure revealed a mechanism for inhibition of the nuclease activity in which an \u03b1-helix (residues 913\u2013922) within the linker region (residues 870\u2013940) of RecB, that connects the C-terminal nuclease domain to the N-terminal helicase domains, sits in the nuclease active site thus blocking access (Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the initiation complex structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "38189c56-33c5-4746-9f42-20e9d1a34fe7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C75",
+      "claim": "Interaction between the 2B domain of RecD and the RecB subunit causes several domains of the RecC subunit to undergo a change in conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction between the 2B domain of RecD and the RecB subunit has a number of consequences. First, several domains of the RecC subunit also undergo a change in conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure by comparison with the initiation complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "1a50ac2c-107b-4cfd-b7b5-c5365d1ddda2",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C76",
+      "claim": "The conformational change in RecC alters the interaction between the 1A domain of RecC and the nuclease domain of RecB.",
+      "claim_type": "EXPLICIT",
+      "source": "This change alters the interaction between the 1A domain of RecC and the nuclease domain of RecB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "9a41676e-0982-4b64-a066-5ecb655f638e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C77",
+      "claim": "In the initiation complex, the \u03b1-helix that blocks the nuclease active site is stabilised by stacking contacts with another \u03b1-helix (residues 602\u2013627) from the 2B domain of RecC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initiation complex, the \u03b1-helix that blocks the nuclease active site is stabilised by stacking contacts with another \u03b1-helix (residues 602\u2013627) from the 2B domain of RecC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the initiation complex structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "d06ab67d-7df8-4db3-8023-cae954225efe",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C78",
+      "claim": "The conformational changes in the RecC subunit shift the position of the RecC helix, breaking the contacts with the nuclease-blocking helix of the RecB linker.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is altered as a consequence of the conformational changes in the RecC subunit that shift the position of the RecC helix, breaking the contacts with the nuclease-blocking helix of the RecB linker, resulting in release of this helix from the nuclease active site, for which there is now no electron density (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing structures and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "def46e50-c5df-4686-a8f7-e572b2d58207",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C79",
+      "claim": "Breaking the contacts between RecC and the nuclease-blocking helix results in release of this helix from the nuclease active site.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is altered as a consequence of the conformational changes in the RecC subunit that shift the position of the RecC helix, breaking the contacts with the nuclease-blocking helix of the RecB linker, resulting in release of this helix from the nuclease active site, for which there is now no electron density (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure - the helix is no longer visible in the active site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2ec53387-e373-44b7-8f59-1030a203186f",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C80",
+      "claim": "The release of the nuclease-blocking helix opens up the nuclease site and allows access of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This change opens up the nuclease site and allows access of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "b63641c3-395a-4bb4-869d-9e7e341183bd",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C81",
+      "claim": "Weak electron density suggested an alternate path for the linker region compared to the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, weak electron density suggested an alternate path for the linker region compared to the crystal structure (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the electron density map shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "95d7ded6-c28b-4a1b-9a63-bc2e6301f2ab",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C82",
+      "claim": "The path of the relocated linker takes it along the edge of the RecD 2A domain including a short region that precedes the SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The path takes the linker along the edge of the RecD 2A domain including a short region that precedes the SH3 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is modeled based on weak electron density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "b7a5757f-977b-4964-8919-ded9ac816df3",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C83",
+      "claim": "The entire linker is relocated away from the nuclease domain, relieving the block and providing access to the nuclease active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the entire linker is relocated away from the nuclease domain, relieving the block and providing access to the nuclease active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "fd4542e0-d73c-469f-8405-991ab83f843e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C84",
+      "claim": "The activity of a highly processive helicase/nuclease could be very deleterious to a cell if unchecked.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of a highly processive helicase/nuclease could be very deleterious to a cell if unchecked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about enzyme regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "3f670869-19d2-4ea1-a2b5-be185386b327",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C85",
+      "claim": "RecBCD has evolved regulatory mechanisms that suppress activity unless the enzyme complex is bound to a bona fide DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, RecBCD has evolved regulatory mechanisms that suppress activity unless the enzyme complex is bound to a bona fide DNA substrate (i.e. a broken DNA end).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural and biochemical data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "2ec95467-b3e7-4900-aacf-40b071d55476",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C86",
+      "claim": "Initial binding of RecBCD to a broken end induces unwinding of up to six base pairs of DNA in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial binding of RecBCD to a broken end induces unwinding of up to six base pairs of DNA in the absence of ATP (Singleton et al., 2004, Wong et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "a1cecdde-451f-4af5-b75c-08ada64a25c3",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C87",
+      "claim": "The function of the ATP-independent unwinding is to fill up the ssDNA-binding site on the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of this unwinding is to fill up the ssDNA-binding site on the RecB subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural observations and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "1bb5763a-9148-4c0d-87b3-799d5cd09612",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C88",
+      "claim": "ATP binding and hydrolysis allow unwinding of the DNA duplex to begin, at first driven by just the RecB subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding and hydrolysis now allow unwinding of the DNA duplex to begin, at first driven by just the RecB subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural and biochemical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "965bf216-6091-4a4a-8576-2d8fa29a26dd",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C89",
+      "claim": "At the initial stage of unwinding, the nuclease active site is blocked by the linker helix and activity of the domain is attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage the nuclease active site is blocked by the linker helix and activity of the domain is attenuated (Saikrishnan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "7f2decd7-e877-477e-b187-5c60dcd808f8",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C90",
+      "claim": "As the RecB subunit begins to unwind the duplex, the 5'-ssDNA tail that is produced passes along a channel through the RecC subunit towards the motor domains of the RecD subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "As the RecB subunit begins to unwind the duplex, the 5'-ssDNA tail that is produced passes along a channel through the RecC subunit towards the motor domains of the RecD subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and inferred from the pathway.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "62294255-7a0b-4110-897d-3d6126a4b919",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C91",
+      "claim": "Once the 5'-tail exceeds ten bases, the RecD subunit responds with a large conformational change that converts it to an active helicase/translocase conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the tail exceeds ten bases, the RecD subunit responds with a large conformational change that converts it to an active helicase/translocase conformation and in this process also transmits this change to the nuclease active site via the RecC and RecB subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and comparison with shorter tail substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "bdb8857b-a52b-4e85-8130-2943ef8faf5f",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C92",
+      "claim": "The conformational change in RecD transmits the change to the nuclease active site via the RecC and RecB subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the tail exceeds ten bases, the RecD subunit responds with a large conformational change that converts it to an active helicase/translocase conformation and in this process also transmits this change to the nuclease active site via the RecC and RecB subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure showing the series of conformational changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "afae1423-bc45-4cfb-800c-d4ab81b5d4ef",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C93",
+      "claim": "When the enzyme is bound to a DNA substrate initiated from a broken DNA end, it can proceed to processively and rapidly digest the DNA and search for a Chi sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point the enzyme is bound to a DNA substrate that it recognises as being initiated from a broken DNA end (or restriction enzyme digested phage genome) so can proceed to processively and rapidly digest the DNA and search for a Chi sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural mechanism and known RecBCD function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "08c86cc1-420e-43f7-bce3-fda53eef3fd0",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C94",
+      "claim": "If the enzyme encounters a Chi sequence then it pauses and alters its activities to prepare the DNA end for RecA loading.",
+      "claim_type": "EXPLICIT",
+      "source": "If the enzyme encounters a Chi sequence then it pauses and alters its activities to prepare the DNA end for RecA loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecBCD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "9449da1f-10c4-4e5c-bf6f-e7a534cffd28",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C95",
+      "claim": "RecBCD loads the RecA protein so that homologous recombination can initiate and the repair process proceeds.",
+      "claim_type": "EXPLICIT",
+      "source": "RecBCD then loads the RecA protein so that homologous recombination can initiate and the repair process proceeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecBCD function in homologous recombination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "abef5644-df80-4bc0-bd76-0bbb63f52002",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C96",
+      "claim": "For phage DNA that lacks Chi sequences, the DNA degrading machine is unregulated and continues to digest the phage genome.",
+      "claim_type": "EXPLICIT",
+      "source": "For phage DNA that lacks Chi sequences, the DNA degrading machine is unregulated and continues to digest the phage genome, thereby eliminating the phage from the cell, but also at the same time providing a molecular memory of the infection via the CRISPR system to further evade future infections (Levy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecBCD function in phage defense.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "83aa45c8-f704-48bd-96d9-695b22586b15",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C97",
+      "claim": "Digestion of phage DNA by RecBCD provides a molecular memory of the infection via the CRISPR system.",
+      "claim_type": "EXPLICIT",
+      "source": "For phage DNA that lacks Chi sequences, the DNA degrading machine is unregulated and continues to digest the phage genome, thereby eliminating the phage from the cell, but also at the same time providing a molecular memory of the infection via the CRISPR system to further evade future infections (Levy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Levy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "60d57546-5f36-4eaf-9fa1-f389ad4e6307",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C98",
+      "claim": "A nuclease-dead E.coli RecBCD mutant (D1080A in RecB) was used to prevent digestion of the single-stranded tails of the DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "A nuclease-dead E.coli RecBCD mutant (D1080A in RecB) was used in this work to prevent digestion of the single-stranded tails of the DNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "02592d3b-ae05-4dd1-b3d9-778794630b84",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C99",
+      "claim": "The final resolution of the cryoEM map was 3.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A final resolution of 3.8 \u00c5 was obtained by re-refining the 3D model after local CTF parameters for the particles were determined using the program Gctf (Zhang, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the methods section and confirmed in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "ae1b42ae-4a9b-4c9c-976f-d2bf37fa128f",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C100",
+      "claim": "The final map was deposited at the EM databank with EMD code 4038.",
+      "claim_type": "EXPLICIT",
+      "source": "The final map was deposited at the EM databank with EMD code 4038.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "60e08727-2c11-445e-9db6-86d7296c7fb9",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "claim_id": "C101",
+      "claim": "Coordinates were deposited with PDB ID code 5LD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinates were deposited with PDB ID code 5LD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a1554685-cb7b-4683-b2da-5c526e60af25",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a 3.8 \u00c5 resolution cryoEM structure of E. coli RecBCD bound to a DNA fork substrate with a 12-nucleotide 5'-tail using a nuclease-dead mutant. The structure accounts for all protein domains and DNA, representing approximately half of the particles analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C27, C98-C101 collectively establish the successful structure determination with appropriate resolution (3.8 \u00c5), proper experimental design (nuclease-dead mutant to preserve substrate), and complete structural coverage. The methods, data processing statistics (Table 1), and figures provide converging evidence for this technical achievement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "46d36d7e-0892-4724-9c5b-370a983b9545",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Extension of the 5'-tail beyond 10 nucleotides induces a large conformational change in RecD, causing it to close around the DNA and bringing the RecD SH3 domain into contact with the RecB 2B domain, which stabilizes the closed conformation. This conformational change propagates through RecC to affect RecB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C64-C69 are well-supported by structural comparisons between the current structure and previous crystal structures (C22-C24). The conformational changes are directly observed in the cryoEM density and illustrated in Figure 4 and Videos 1-3, providing strong visual and structural evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The RecD SH3 domain adopts a novel binding mode, interacting with an \u03b1-helix in RecB rather than the extended proline-rich peptide typical of canonical SH3 domains. This domain becomes a focal point coordinating three interaction interfaces (DNA, RecB helix, and RecB linker) during nuclease activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C43-C59 are supported by direct structural observations (Figure 3) and comparisons with canonical SH3 domains and RecD2 structures. The structural data clearly show the \u03b1-helix binding mode and altered loop positions (C55) that distinguish this from typical SH3-peptide interactions. The novelty claim (C57) is appropriately qualified as an inference based on structural comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "823d2f65-c51e-494a-9a85-7eb7a13d900b",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "This represents the first example of peptide-binding by an SH3 domain in a bacterial system, with SH3 domains being rare in prokaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8 and C45 rely on the authors' knowledge of the literature rather than systematic analysis. While C45 (rarity in prokaryotes) is supported by general knowledge, C8 (first bacterial example) is qualified with 'to our knowledge,' indicating potential incompleteness of the literature survey. The novelty claim cannot be definitively verified without comprehensive database searches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "263feda9-9298-4890-8482-3535266f01ef",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Conformational changes in RecC shift the position of the RecB nuclease domain, breaking stabilizing contacts between a RecC helix and the nuclease-blocking helix in the RecB linker. This releases the blocking helix from the active site, which relocates to the RecD 2A domain, opening the nuclease site for DNA access.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71, C74-C83 describe the nuclease activation mechanism supported by structural comparisons with the initiation complex (C21, C74, C77). The absence of electron density for the blocking helix in its original position (C79) and weak density suggesting an alternate path (C81-C82) provide direct evidence. However, the weak density for the relocated linker (C81) introduces some uncertainty about the precise path, though the overall mechanism is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "67288b2f-3de7-4205-bec0-08a30f4014e7",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ADPNP binds to the RecB ATP-binding site with the adenine sandwiched between aromatic residues, inducing conformational changes in the helicase domains similar to other SF1 helicases. The RecB arm domain contacts the duplex DNA across the minor groove, contrasting with AddAB's major groove contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 are supported by direct structural observations (electron density in Figure 2\u2014figure supplement 1) and comparisons with other SF1 helicases and AddAB structures. The unusual adenine binding mode (C30) and conformational changes (C31) are well-documented, and the comparison with AddAB (C36) is based on published structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All twelve bases of the 5'-tail are visible in the electron density, extending from the fork junction through RecC and along RecD. The first nine bases match previous structures, while the last three extend across RecD's 2A domain. Surprisingly, only weak nucleotide density is visible at RecD's ATP-binding site despite ADPNP binding to RecB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by direct observation of electron density (Figure 2) and comparison with previous structures (C39, C41). The weak nucleotide density at RecD (C42) is acknowledged and discussed in Figure 2\u2014figure supplement 2, with a plausible explanation provided. The structural observations are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "f9fb57d1-b185-4884-97fd-08ae03f7a5a4",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA substrates with 10-nucleotide 5'-tails crystallize similarly to the initiation complex, but adding a single base beyond 10 nucleotides prevents crystallization, indicating a conformational change in the protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe direct experimental observations from crystallization trials. The inference of conformational change (C24) from loss of crystallization is reasonable and subsequently validated by the cryoEM structure showing large conformational changes with the 12-nucleotide tail. This provides strong support for the length-dependent conformational switch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "d7f84028-bccb-4b94-bd15-c8c062f87ee3",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A minor class of particles (18%) lacks electron density for the RecB nuclease domain, though other structural features are similar to the main class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is a direct observation from cryoEM data classification. The authors appropriately note this class but focus on the dominant class (C25) for detailed analysis. This represents a minor observation about sample heterogeneity that does not affect the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "04b9ac90-3d5a-45ef-9cba-7929ff9cac2a",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RecD is not required after Chi recognition and becomes inactivated rather than ejected from the complex. The SH3 domain might relocate to lock RecD in an inactive conformation following Chi recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C62 cite established findings from previous studies. However, C63 is explicitly speculative ('it is plausible,' 'might cause'), proposing a possible mechanism for RecD inactivation based on the current structural findings. This speculation is reasonable but lacks direct experimental support and is appropriately qualified by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "3d8959c9-d28c-4d34-8952-fba76305216c",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RecBCD employs a multi-step activation pathway: initial ATP-independent unwinding fills the RecB ssDNA-binding site, ATP-dependent unwinding by RecB begins with the nuclease blocked, extension of the 5'-tail beyond 10 bases triggers RecD conformational changes that activate the nuclease, enabling processive DNA digestion until Chi recognition or complete phage genome degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C97 integrate the current structural findings with established knowledge about RecBCD function. The proposed pathway (C85-C93) is well-supported by the structural data showing the activation mechanism, previous biochemical studies (C86, C89), and the current structure. The functional consequences (C94-C97) are established knowledge appropriately cited. This represents a comprehensive mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "64517667-fe38-4ee5-a9e7-fa438bba41fb",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RecBCD, AddAB, and AdnAB are highly processive helicase-nucleases that process DNA breaks for homologous recombination and phage defense. Previous structural studies of AddAB provided detailed mechanistic understanding, while RecBCD structural knowledge was limited to the initiation complex showing nuclease inhibition by an \u03b1-helix blocking the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C21 provide background context supported by appropriate citations to previous work. These establish the biological importance of RecBCD (C1-C2, C9-C13), the state of knowledge for AddAB (C16) versus RecBCD (C17-C18), and the known nuclease regulation mechanism from the initiation complex (C19-C21). This background appropriately frames the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    },
+    {
+      "id": "018ac825-5c79-42a2-9fee-bad19bdd2c60",
+      "content_id": "d1483f2f-04a7-4219-89f4-9c9fa51e8730",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The SH3 domain in RecD2 and related helicases binds ssDNA in a location different from the canonical peptide-binding site, potentially allowing simultaneous binding of both DNA and peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 describe findings from previous RecD2 structures (cited appropriately). The inference that the domain retains potential for peptide binding (C47) is reasonable based on the structural observation that the canonical binding site is not occupied by DNA. This provides important context for understanding the RecBCD SH3 domain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:04.047464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3454ddf9-fa01-4a18-992f-b10487dfd569",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "29fe4ce4-aedc-46ac-b30b-8141990616be",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "2e43dd9c-c3c4-4ea6-8782-c462711a4169",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "07935f33-0ad3-4554-aee9-45fa166e81f4",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "60d57546-5f36-4eaf-9fa1-f389ad4e6307",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "02592d3b-ae05-4dd1-b3d9-778794630b84",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "ae1b42ae-4a9b-4c9c-976f-d2bf37fa128f",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "60e08727-2c11-445e-9db6-86d7296c7fb9",
+      "result_id": "a1554685-cb7b-4683-b2da-5c526e60af25"
+    },
+    {
+      "claim_id": "24083a7d-427a-46b1-ab57-fbfcabfcde8b",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "42cf4182-08ff-4861-b0a2-041a8fb96720",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "be1ebf5d-a9d8-403a-8e2d-d5bac1680cef",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "d291878f-3614-40e4-8091-2bdbbf7c52c9",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "4b775d8f-8d84-47d9-bbfb-136b63d00add",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "9de0f30a-ecdd-42e1-8d35-564c03655c17",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "55da67e4-0238-4f7e-b382-b0f53927c395",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "f2109a3a-c69c-4657-8f2b-fe2ed9fa47cb",
+      "result_id": "46d36d7e-0892-4724-9c5b-370a983b9545"
+    },
+    {
+      "claim_id": "f3f92a16-13c2-43de-8e1e-51b8be957684",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "125c7cb5-df38-4880-b79b-60a78b148da7",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "cebe0411-033f-4483-b3e4-27cedfd51657",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "6e2be61a-e593-454f-9a3e-40e829af3987",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "067e69d3-c574-4ce2-b5e7-cdb9e795c948",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "e99daee3-bdad-48c8-bc3e-49e7cedc33f6",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "38fa5689-8e83-446c-aee4-a624b2a140ad",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "2fed86cf-3842-4165-9797-e5b1dfd0d2d1",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "053fe0fd-891b-4ad2-92eb-ab3817db7220",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "0e204157-2560-41c1-8d28-43f3a45eeb74",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "4fc01ad3-ed93-4c88-ad5e-8074b4b3bf22",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "2618a8c9-e751-4252-bc1c-b26a2c766a1e",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "a59fa442-b4ec-457c-bc7d-dca6b4d354c0",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "42fd4d54-997f-43ac-9f57-8e41fa1a33e3",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "daa09a3c-b734-44e3-9823-0f2f718333c4",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "cf4bb4c1-854e-43af-9da1-be4861953e83",
+      "result_id": "5e4b5ed9-7380-43d1-be78-41c05e91cdba"
+    },
+    {
+      "claim_id": "6f153837-a7c7-441e-96e4-7d89c914614e",
+      "result_id": "823d2f65-c51e-494a-9a85-7eb7a13d900b"
+    },
+    {
+      "claim_id": "8a61f56d-a8b6-43fc-95bc-83bcbd2b2275",
+      "result_id": "823d2f65-c51e-494a-9a85-7eb7a13d900b"
+    },
+    {
+      "claim_id": "111ee97a-0961-4c1a-b6b0-436601dd6daa",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "76169475-75ac-405b-b54b-d91a014dd626",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "ad9f6148-e6a8-463e-b54a-4afc6bb38b76",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "38189c56-33c5-4746-9f42-20e9d1a34fe7",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "1a50ac2c-107b-4cfd-b7b5-c5365d1ddda2",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "9a41676e-0982-4b64-a066-5ecb655f638e",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "d06ab67d-7df8-4db3-8023-cae954225efe",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "def46e50-c5df-4686-a8f7-e572b2d58207",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "2ec53387-e373-44b7-8f59-1030a203186f",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "b63641c3-395a-4bb4-869d-9e7e341183bd",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "95d7ded6-c28b-4a1b-9a63-bc2e6301f2ab",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "b7a5757f-977b-4964-8919-ded9ac816df3",
+      "result_id": "263feda9-9298-4890-8482-3535266f01ef"
+    },
+    {
+      "claim_id": "b552d1f8-0826-458e-8985-8c02ba9c0d18",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "198de7fa-550e-453e-adbb-8d4e5dd78d93",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "7b3ae21c-20de-41a2-be02-d70b3a5295d5",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "3ce40c3a-0566-4de1-8128-2c39de8dd4c1",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "93cb4818-66bf-464b-9ab6-b3faf052fc4e",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "a42e14cf-6611-480b-9da0-af26824d8328",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "d1087c77-d4bb-4ab9-b098-24f722493dcf",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "df453b3b-3d13-40ff-8f1a-b2ce5583578e",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "d17effbd-95ed-44ba-8086-9792ad7b0a72",
+      "result_id": "67288b2f-3de7-4205-bec0-08a30f4014e7"
+    },
+    {
+      "claim_id": "19dd6667-9b3a-482c-8c5f-194b83fec1b0",
+      "result_id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e"
+    },
+    {
+      "claim_id": "5ed2023f-f2a4-4c4c-8784-678d2ea9aa75",
+      "result_id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e"
+    },
+    {
+      "claim_id": "ebecb435-5182-4c39-8654-d0f08a95883c",
+      "result_id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e"
+    },
+    {
+      "claim_id": "b14e5cf5-ffbd-4914-adf2-d71c02f46922",
+      "result_id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e"
+    },
+    {
+      "claim_id": "ffab5223-11ea-4281-80f1-1b4e0b72abf9",
+      "result_id": "8ef9e5cd-b914-442c-ba28-837fbfc1656e"
+    },
+    {
+      "claim_id": "33bc9900-75aa-4205-95e2-7de3622f3feb",
+      "result_id": "f9fb57d1-b185-4884-97fd-08ae03f7a5a4"
+    },
+    {
+      "claim_id": "89213ab8-90ae-4863-bb6a-a6df7b6359f7",
+      "result_id": "f9fb57d1-b185-4884-97fd-08ae03f7a5a4"
+    },
+    {
+      "claim_id": "94bb4ef3-7ea8-48a8-bfdd-f274e7f13146",
+      "result_id": "f9fb57d1-b185-4884-97fd-08ae03f7a5a4"
+    },
+    {
+      "claim_id": "15f53dbd-fb6a-4e20-84b2-64ef220b4934",
+      "result_id": "d7f84028-bccb-4b94-bd15-c8c062f87ee3"
+    },
+    {
+      "claim_id": "4473d62e-9f6b-440d-aeb1-12dc2e37749f",
+      "result_id": "04b9ac90-3d5a-45ef-9cba-7929ff9cac2a"
+    },
+    {
+      "claim_id": "4e13b662-28df-4c22-a6b3-9f53bdffcb91",
+      "result_id": "04b9ac90-3d5a-45ef-9cba-7929ff9cac2a"
+    },
+    {
+      "claim_id": "a4f845b8-e230-4b8b-9376-5dff7825b935",
+      "result_id": "04b9ac90-3d5a-45ef-9cba-7929ff9cac2a"
+    },
+    {
+      "claim_id": "8bb933c3-c369-4a61-aca8-17890c87d4bf",
+      "result_id": "04b9ac90-3d5a-45ef-9cba-7929ff9cac2a"
+    },
+    {
+      "claim_id": "fd4542e0-d73c-469f-8405-991ab83f843e",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "3f670869-19d2-4ea1-a2b5-be185386b327",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "2ec95467-b3e7-4900-aacf-40b071d55476",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "a1cecdde-451f-4af5-b75c-08ada64a25c3",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "1bb5763a-9148-4c0d-87b3-799d5cd09612",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "965bf216-6091-4a4a-8576-2d8fa29a26dd",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "7f2decd7-e877-477e-b187-5c60dcd808f8",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "62294255-7a0b-4110-897d-3d6126a4b919",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "bdb8857b-a52b-4e85-8130-2943ef8faf5f",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "afae1423-bc45-4cfb-800c-d4ab81b5d4ef",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "08c86cc1-420e-43f7-bce3-fda53eef3fd0",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "9449da1f-10c4-4e5c-bf6f-e7a534cffd28",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "abef5644-df80-4bc0-bd76-0bbb63f52002",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "83aa45c8-f704-48bd-96d9-695b22586b15",
+      "result_id": "3d8959c9-d28c-4d34-8952-fba76305216c"
+    },
+    {
+      "claim_id": "87606c2a-aa9e-428d-8350-0277c90bbbe7",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "9ff884c6-a5ce-4ca0-95db-fbd2213989eb",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "6c7d5525-8bcd-4c6b-a76a-ed287e587cd2",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "4f68fba8-aecf-4d1f-8cd6-23a4d815bb66",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "1f2b53f9-345b-471f-ada1-35a3d2d10ef0",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "14eace78-fa95-424d-aa19-d73694e0b022",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "6d2ddf7f-247c-4e9e-b4b1-83b2bf705cd7",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "03dcea0f-73dd-4c08-ba74-58d4f17f587a",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "76842377-2c14-4d6c-a817-eb1ed1f86dfc",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "b4d86d23-2445-4463-a09d-dd492b74924e",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "70075677-7a3a-4929-baca-2281321c9067",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "af07dc93-84cd-47d3-913f-ad3734777cdf",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "f73da467-530f-4308-b19e-a13bd337f43c",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "0e9cfd64-b941-4207-afa3-83f1e2761951",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "254299c9-53d6-42c3-bc6a-103b0e6aea93",
+      "result_id": "64517667-fe38-4ee5-a9e7-fa438bba41fb"
+    },
+    {
+      "claim_id": "2071a4e2-fc73-4106-97ee-f55848fee16b",
+      "result_id": "018ac825-5c79-42a2-9fee-bad19bdd2c60"
+    },
+    {
+      "claim_id": "63b639ce-93b3-431c-8447-d9297e3f0600",
+      "result_id": "018ac825-5c79-42a2-9fee-bad19bdd2c60"
+    }
+  ],
+  "comparisons": []
+}

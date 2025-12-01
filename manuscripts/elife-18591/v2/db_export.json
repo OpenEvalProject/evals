@@ -1,0 +1,1337 @@
+{
+  "submission": {
+    "id": "415d2148-c3e6-4914-9ea9-bff7d4a602fe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:07:09.883223Z",
+    "updated_at": "2025-11-30T21:07:09.883223Z"
+  },
+  "content": [
+    {
+      "id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "submission_id": "415d2148-c3e6-4914-9ea9-bff7d4a602fe",
+      "content_type": "manuscript",
+      "content_text": "# RYBP stimulates PRC1 to shape chromatin-based communication between Polycomb repressive complexes\n\n## Authors\n\n- Nathan R Rose<sup>1</sup>\n- Hamish W King<sup>1</sup>\n- Neil P Blackledge<sup>1</sup>\n- Nadezda A Fursova<sup>1</sup>\n- Katherine JI Ember<sup>1</sup>\n- Roman Fischer<sup>2</sup> ([ORCID: 0000-0002-9715-5951](https://orcid.org/0000-0002-9715-5951))\n- Benedikt M Kessler<sup>2</sup>\n- Robert J Klose<sup>1</sup> ([ORCID: 0000-0002-8726-7888](https://orcid.org/0000-0002-8726-7888)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Oxford Oxford United Kingdom\n2. TDI Mass Spectrometry Laboratory, Target Discovery Institute University of Oxford Oxford United Kingdom\n3. Nuffield Department of Medicine University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPolycomb group (PcG) proteins function as chromatin-based transcriptional repressors that are essential for normal gene regulation during development. However, how these systems function to achieve transcriptional regulation remains very poorly understood. Here, we discover that the histone H2AK119 E3 ubiquitin ligase activity of Polycomb repressive complex 1 (PRC1) is defined by the composition of its catalytic subunits and is highly regulated by RYBP/YAF2-dependent stimulation. In mouse embryonic stem cells, RYBP plays a central role in shaping H2AK119 mono-ubiquitylation at PcG targets and underpins an activity-based communication between PRC1 and Polycomb repressive complex 2 (PRC2) which is required for normal histone H3 lysine 27 trimethylation (H3K27me3). Without normal histone modification-dependent communication between PRC1 and PRC2, repressive Polycomb chromatin domains can erode, rendering target genes susceptible to inappropriate gene expression signals. This suggests that activity-based communication and histone modification-dependent thresholds create a localized form of epigenetic memory required for normal PcG chromatin domain function in gene regulation.\n\n## Introduction\n\nIn multicellular eukaryotes the capacity to express defined subsets of genes at the correct time and place underpins normal development. While genetically encoded regulatory pathways define the nature of these gene expression patterns in individual cell types and tissues, these systems must ultimately converge on a DNA substrate that is not unadorned, but instead wrapped around histone proteins to form nucleosomes and chromatin. Through studying chromatin function in the context of gene regulatory networks it is now clear that modification of DNA and histones is essential for controlling normal regulation of gene expression (Bannister and Kouzarides, 2011).\n\nIn animals, Polycomb group (PcG) proteins play central roles in gene regulation through their chromatin modifying activities. First identified in Drosophila as important regulators of body plan specification, orthologous PcG systems were subsequently identified in vertebrates and also shown to be essential for developmental gene regulation (Lewis, 1978; Schwartz and Pirrotta, 2013). Biochemical characterization of PcG proteins has revealed that they form large multiprotein complexes that function as chromatin-modifying or -remodelling enzymes (M\u00fcller and Verrijzer, 2009; Simon and Kingston, 2013). PcG proteins generally fall into one of two multiprotein complexes, called Polycomb repressive complex 1 and 2 (PRC1 and PRC2). PRC1 functions as a histone E3 ubiquitin ligase that mono-ubiquitylates histone H2A at position 119 (H2AK119ub1) (Cao et al., 2005; de Napoles et al., 2004; Wang et al., 2004a) and PRC2 is a histone H3 lysine 27 (H3K27) methyltransferase (Cao et al., 2002; Czermin et al., 2002; M\u00fcller et al., 2002; Margueron and Reinberg, 2011). Together, the activities of these two PcG protein complexes play important roles in maintaining repressive chromatin states and controlling gene expression during cell fate transitions (Xie et al., 2013; Arnold et al., 2013; Boyer et al., 2006; Leeb and Wutz, 2007; Endoh et al., 2008; Terranova et al., 2008; Koche et al., 2008; Bracken et al., 2006).\n\nThe defined molecular mechanisms that underpin how PcG complexes regulate transcription still remain poorly understood. However, it has been proposed that the occupancy of PRC1 and PRC2 at genomic target sites and their capacity to modify histones may function to create structurally compacted chromatin which is inhibitory to transcription (Eskeland et al., 2010; Francis et al., 2004; Wani et al., 2016; Boettiger et al., 2016). To achieve this, the function of PRC1 and PRC2 appear to be intimately linked. For example, some PRC1 complexes are able to recognise and bind PRC2-dependent H3K27me3, recruiting those PRC1 complexes to sites occupied by PRC2 (Min\u00a0et\u00a0al., 2003; Wang et al., 2004b). Similarly, PRC2 can recognize PRC1-deposited H2AK119ub1, regulating PRC2 occupancy on chromatin (Blackledge et al., 2014; Cooper et al., 2014). Furthermore, in vitro assays have suggested that H2AK119ub1 may also stimulate the enzymatic activity of PRC2 (Kalb et al., 2014). Based on these observations it has been proposed that feedback mechanisms, whereby one Polycomb repressive complex supports the recruitment and possibly activity of the other complex, may in part underpin chromatin-based transcriptional repression (Blackledge et al., 2015; Steffen and Ringrose, 2014; Voigt et al., 2013). In other scenarios the relevance of histone modifications to gene repression, particularly the role of H2AK119ub1, has remained unclear, with the repressive nature of PRC1 being proposed to reside within its capacity to alter chromatin structure and compaction independently of its H2A ubiquitylating activity (Pengelly et al., 2015; Illingworth et al., 2015; Francis et al., 2004; Eskeland et al., 2010). However in most cases, the defined contribution of H2AK119ub1-dependent and \u2013independent pathways, and their relevance to Polycomb chromatin domain function in vivo have remained incompletely defined.\n\nIn order to understand the mechanisms by which the PcG systems function together in vivo, it will be critical to discover how, if at all, their enzymatic activities contribute to chromatin structure and gene regulation. While significant effort has been placed on understanding in vitro how the H3K27 methyltransferase activity of PRC2 is controlled (Margueron et al., 2009; Jiao and Liu, 2015; Cao and Zhang, 2004), far less is known about how PRC1 complexes catalyse H2AK119ub1 and how this relates to the function of PRC1 in vivo. This paucity in our understanding of PRC1 activity is in part due to the diverse nature of individual PRC1 complexes. At the simplest level, PRC1 complexes are formed by their catalytic subunit, RING1A or RING1B, which dimerises with a PCGF protein to form an active E3 ubiquitin ligase that targets histone H2A (Levine et al., 2002; Satijn et al., 1997). In mammals, there are six PCGF proteins (PCGF1\u20136), and the identity of the PCGF protein incorporated into PRC1 appears to direct interaction with a specific complement of auxiliary proteins, giving rise to an array of diverse PRC1 complexes (Blackledge et al., 2014; Gao et al., 2012; Tavares et al., 2012). Based on the protein subunit composition of these individual PRC1 complexes, they are often then divided into \u2018canonical\u2019 or \u2018variant\u2019 complexes. Canonical PRC1 complexes form around either PCGF2 or 4, and incorporate a chromobox (CBX) protein, which can directly bind to PRC2-catalysed H3K27me3 (Fischle et al., 2003; Bernstein et al., 2006; Min et al., 2003). In contrast, variant PRC1 complexes can form around all six PCGF proteins, but these complexes engage with RYBP or YAF2, two proteins that bind to a site on RING1B that is mutually exclusive with CBX protein binding (Garc\u00eda et al., 1999; Wang et al., 2010).\n\nDespite the diversity of PRC1 complexes, biochemical characterization of their catalytic activity has largely been focused on canonical PCGF2/PCGF4-containing complexes (Li et al., 2006; Gao et al., 2012; Elderkin et al., 2007; Cao et al., 2005; Buchwald et al., 2006; Ben-saadon et al., 2006). For example, in vitro ubiquitylation assays using reconstituted complexes and nucleosome substrates demonstrated that RING1(A/B) could form an active E3 ligase in the presence of either PCGF2 or PCGF4 (Elderkin et al., 2007; Buchwald et al., 2006). Furthermore, a minimal complex comprised of a dimer between the N-terminal RING finger domains of PCGF4 and RING1B was sufficient to deposit H2AK119ub1 (Buchwald et al., 2006). Importantly, the RING finger domains of individual PCGF proteins are highly similar, suggesting that they will likely all support formation of an active E3 ligase complex. However, more recent work examining PCGF(1\u20136)/RING1(A/B) catalytic RING-RING dimers revealed that PCGF(2/4)/RING1(A/B) were less active than PCGF(1/3/5/6)/RING1(A/B) in autoubiquitylation and E2 lysine discharge assays (Taherbhoy et al., 2015). Surprisingly, when these same assemblies were challenged with physiologically relevant nucleosome substrates, complex-specific activities were no longer apparent. Nevertheless, consistent with the possibility that individual PRC1 complexes may have distinct activities related to protein complex composition, in vivo studies in both mammals and Drosophila have suggested that less-well characterized variant PRC1 complexes may contribute more significantly to H2A mono-ubiquitylation than canonical PRC1 (Tavares et al., 2012; Lee et al., 2015; Lagarou et al., 2008; Blackledge et al., 2014). For example, the Drosophila dRAF complex, which appears to have similarities to mammalian variant PRC1 complexes, is a highly active H2A ubiquitin ligase in vitro and appears to be the predominant H2A ubiquitin ligase in Drosophila S2 cells (Lagarou et al., 2008). Furthermore, a PCGF3 orthologue contributes widely to H2AK119ub1 in cultured Drosophila cells (Lee et al., 2015). This raises the possibility that individual PCGF proteins might confer differing E3 ligase activities on PRC1, either directly, or via interaction with complex-specific regulatory subunits. Indeed, incorporation of the auxiliary subunits RYBP, PHC2 or CBX2/8 into a PCGF4/RING1B complex has been reported to affect its E3 ligase activity in different ways (Gao et al., 2012), though this was not the case for PCGF2/RING1B, in which auxiliary subunits had little impact on catalytic activity (Tavares et al., 2012). Therefore a more detailed understanding of how H2AK119 ubiquitin ligase activity is shaped by different PRC1 assemblies, both in vitro and in vivo, is required to better understand PRC1 involvement in polycomb chromatin domain function and gene regulation.\n\nTo address these important questions we have exploited biochemical and genomic approaches to interrogate PRC1 enzymatic activity in vitro and in cells. This revealed that PRC1 complexes are highly modular, and that the enzymatic activity of PRC1 is defined by the choice of PCGF protein combined with the influence of RYBP/YAF2, uncovering an enzymatic logic within the assembly of individual PRC1 complexes. Building on these discoveries, genetic ablation and genomic approaches uncover a widespread role for RYBP in stimulating H2AK119 E3 ligase activity in vivo, and we demonstrate that the absence of this activity leads to defects in the deposition of H3K27me3 by PRC2. Importantly, in the absence of RYBP, loss of PRC1 stimulation and subsequent defects in PRC2 activity can lead to erosion of Polycomb chromatin domains and susceptibility to inappropriate gene activation signals. Together, these observations identify an activity-based communication between PRC1 and PRC2 in vivo, and suggest that histone modification-dependent thresholding mechanisms sustain Polycomb chromatin domains, connecting the activity of PcG systems to their occupancy on chromatin and transcriptional repression.\n\n## Results\n\n### PCGF1-PRC1 is a highly modular protein complex\n\nIn embryonic cells and tissues where the PcG system is thought to play a pivotal role in developmental gene regulation, the PCGF1-PRC1 complex is highly abundant (Kloet et al., 2016), and is required for H2AK119ub1 and normal development (Farcas et al., 2012; Blackledge et al., 2014; Gao et al., 2012; He et al., 2013; Wu et al., 2013; Gearhart et al., 2006; Boulard et al., 2015). Furthermore, tethering experiments had previously suggested that the variant PCGF1 complex might be more active than PCGF2/4 complexes in vivo (Blackledge et al., 2014). Given the essential nature of this PRC1 complex and its apparent elevated activity in vivo, we sought to use it as a model system to understand the biochemical mechanisms that underpin the assembly and catalytic activity of PRC1. To achieve this, we used a baculovirus co-expression system (Bieniossek et al., 2012) to assemble and affinity-purify the five component PCGF1-PRC1 holocomplex containing RING1B, PCGF1, RYBP, KDM2B and BCOR (Figure 1A and\u00a0B). To understand in more detail the topology of the PCGF1-PRC1 complex we subjected it to crosslinking followed by tandem mass spectrometry analysis, which identifies the relative proximity of proteins within large protein complex assemblies (Leitner et al., 2014). This revealed clear spatial relationships between individual components of the complex (Figure 1C). For example, RING1B was in close proximity to PCGF1 and RYBP. Importantly RING1B and RYBP crosslinks were consistent with atomic resolution information detailing their physical interaction (Figure 1\u2014figure supplement 1) (Wang et al., 2010). BCOR and KDM2B crosslinked extensively with each other suggesting they are in close proximity and also displayed additional crosslinks with PCGF1 and RYBP. However, there was no evidence for significant crosslinks between either BCOR or KDM2B and RING1B, suggesting they are not in close proximity within the complex. This suggests a high degree of modularity within the PCGF1-PRC1 complex, where individual combinations of proteins engage extensively with each other, while others exhibit little or no clear proximity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of the PCGF1-PRC1 complex indicating the core catalytic dimer of RING1B and PCGF1 and auxiliary components RYBP, KDM2B, and BCOR. (B) A Coomassie-stained gel of PCGF1-PRC1 affinity-purified via RING1B. Individual subunits are labelled and * denotes contaminants HSP70 and \u03b2-tubulin. (C) A Circos plot illustrating crosslinking mass spectrometry analysis of the PCGF1-PRC1 complex reveals extensive interactions between PCGF1-PRC1 subunits. Blue and orange lines indicate intermolecular and intramolecular crosslinks respectively. Lines are weighted by the statistical confidence of their interaction. (D) Coomassie-stained gels of affinity-purified PCGF1-PRC1 sub-complexes demonstrating the modularity of PCGF1-PRC1 complex. Complexes were affinity-purified via RING1B. Above each lane (i-vi) the co-expressed factors are illustrated and * denotes contaminants HSP70 and \u03b2-tubulin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A ribbon diagram of the crystal structure of the RING1B Ubiquitin-like (UbL) domain bound to the RYBP RING1B Interaction Domain (RID) (PDB ID: 3IXS). Experimentally identified high-confidence BS3 crosslinks are mapped onto the structure. Distances between lysine \u03b1-carbons are indicated in Angstroms. Black dotted lines indicate crosslinks identified in both the PCGF1-PRC1 holocomplex and the RING1B-RYBP-PCGF1 trimer, while blue dotted lines indicate crosslinks identified only in the RING1B-RYBP-PCGF1 trimer.\n\nBased on the apparent modularity of PCGF1-PRC1, we set out to dissect the requirement for individual components in its assembly. To achieve this we generated a series of co-expression vectors in which individual proteins were iteratively omitted (Figure 1D). This revealed that KDM2B and BCOR, which appear to interact with the complex through PCGF1 (Figure 1C), can be completely removed, either individually or in combination, to leave an intact PCGF1-RING1B-RYBP sub-complex (Figure 1D(i\u2013iii)). Similarly, when RYBP was removed from the PCGF1-PRC1 complex, BCOR and KDM2B were still able to independently interact with the PCGF1-RING1B dimer (Figure 1D(iv\u2013v)). This indicates that inclusion of BCOR and KDM2B in the PCGF1-PRC1 complex does not require RYBP, or an interaction with each other. Finally, in agreement with analysis of other PCGF/RING1 interactions, PCGF1/RING1B formed dimers in the absence of other PCGF1-PRC1 components (Figure 1D(vi)). Therefore, the PCGF1-PRC1 holocomplex assembles around a core PCGF1-RING1B dimer, and does so in a highly modular fashion. Interestingly, in Drosophila, the related dRAF complex exhibits similar modularity (Lagarou et al., 2008). This contrasts the assembly of the PRC2 holocomplex, which appears to rely on extensive and highly integrated protein-protein interactions for its efficient formation (Ciferri et al., 2012; Jiao and Liu, 2015).\n\n### RYBP/YAF2 stimulates H2A ubiquitylation by PCGF1-PRC1\n\nWithin multiprotein enzyme complexes, non-catalytic components can function to regulate enzymatic activity, substrate recognition, or targeting. Our understanding of how PRC1 complexes function in these regards remains very poorly defined. However, the inherent modularity of the PCGF1-PRC1 complex provided a unique opportunity to examine if individual components of the complex contribute to the H2AK119 E3 ligase activity of PRC1. To address this important question, we first established a quantitative in vitro E3 ligase activity assay using nucleosome substrates and confirmed that reconstituted PCGF1-PRC1 was active by detecting the conversion of H2A to mono-ubiquitylated H2A (Figure 2A). We then compared the relative E3 ligase activity of the PCGF1-RING1B core dimer to the five component PCGF1-PRC1 holocomplex (Figure 2B). Surprisingly, the PCGF1-PRC1 holocomplex was substantially more active than the PCGF1-RING1B core (Figure 2B). To understand the molecular determinants controlling this activity, we then iteratively measured the H2AK119 E3 ligase activities of individual PCGF1-PRC1 sub-complexes (Figure 2C). This revealed that interaction of RYBP with the RING1B-PCGF1 core dimer was responsible for elevated enzymatic activity of the PCGF1-PRC1 holocomplex. In contrast, KDM2B and BCOR appeared to contribute little or nothing to this activity, suggesting that they confer alternative, non-enzymatic functions to the PRC1 complex. Variant PRC1 complexes can contain either RYBP or YAF2, and their inclusion appears to be mutually exclusive, presumably because they bind to the same region of RING1B (Gao et al., 2012; Wang et al., 2010; Tavares et al., 2012). Given the stimulatory activity of RYBP on PRC1, we wanted to determine whether YAF2 was also capable of stimulating PCGF1-RING1B. Therefore, we purified recombinant YAF2 and RYBP and added them to PCGF1-RINGB E3 ligase reactions (Figure 2\u2014figure supplement 1A). Importantly, this revealed that YAF2 also stimulated PCFG1-RING1B activity (Figure 2\u2014figure supplement 1B). Together these observations reveal that RYBP and YAF2 regulate PCGF1-PRC1 activity in vitro, where they act to stimulate the PCGF1-RING1B core dimer and enhance H2AK119ub1 deposition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig2-v2.jpg)\n\n**Figure 2.:** (A) A histone H2AK119 E3 ligase assay monitoring the conversion of H2A to mono-ubiquitylated H2A by western blotting, which demonstrates that the activity of PCGF1-PRC1 requires E1 (UBE1), E2 (UBCH5C), Ubiquitin and ATP. The top panel monitors H2A mono-ubiquitylation with an antibody against total H2A that detects both mono-ubiquitylated and non-ubiquitylated H2A. The bottom panel monitors production of mono-ubiquitylated H2A with an antibody that specifically recognizes H2AK119ub1. (B) An E3 ligase activity assay directly comparing the PCGF1-RING1B catalytic core and the PCGF1-PRC1 holocomplex over increasing enzyme concentrations (two\u00a0fold dilution series) as examined by western blotting. (C) An E3 ligase activity assay comparing the PCGF1-PRC1 holocomplex and various sub-complexes in which individual and combinations of PCGF1-PRC1 subunits have been omitted (see Figure 1D). This demonstrates that RYBP is the central determinant of E3 ligase activity for the PCGF1-PRC1 complex. The error bars correspond to the S.E.M. of at least two independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Coomassie-stained gels showing the recombinant PCGF1-RING1B catalytic core affinity-purified via RING1B supplemented with recombinant RYBP or YAF2. (B) An H2AK119 E3 ubiquitin ligase activity assay comparing the relative activity of PCGF1-RING1B in the presence or absence of RYBP or YAF2. The error bars correspond to the S.E.M. of at least two independent experiments.\n\n### The activity of PRC1 complexes is defined by their PCGF component and RYBP-dependent stimulation\n\nEctopic targeting of PRC1 complexes to chromatin in vivo had suggested that PCGF1-PRC1 is more efficient at depositing H2AK119ub1 on chromatin than PCGF4-PRC1 (Blackledge et al., 2014). Therefore, we sought to understand whether differences in E3 ligase activity between individual PRC1 complexes are inherent to the PCGF-RING1B catalytic core, or whether RYBP may have selective stimulatory activity. This was important as previous in vitro work had only directly compared the H2AK119ub1 E3 ligase activity of differing PCGF/RING1 assemblies in the context of minimal RING-RING catalytic dimers (Taherbhoy et al., 2015). Furthermore, when intact PCGF(2/4)/RING1 dimers had been examined, differing conclusions were made as to whether RYBP stimulated E3 ligase activity (Tavares et al., 2012; Gao et al., 2012). Therefore to examine these points in more detail, we expressed and purified intact PCGF1-RING1B and PCGF4-RING1B dimers and compared their relative activities in H2AK119 E3 ligase assays (Figure 3A). Interestingly, this revealed that PCGF1-RING1B was significantly more active than PCGF4-RING1B (Figure 3B), indicating that the enzymatic activity of a given PRC1 complex is inherently defined by the PCGF-RING dimer which forms its catalytic core. Given that PCGF1-RING1B is robustly stimulated by RYBP, we were then curious to understand whether RYBP stimulated PCGF4-RING1B. This was an important question as previous studies examining the effect of RYBP on PCGF4-RING1B and the related PCGF2-RING1B dimer had come to differing conclusions, with one study observing no effect on activity and the other claiming elevated H2AK119 E3 ligase activity (Gao et al., 2012; Tavares et al., 2012). In the context of our experiments, we observe a small stimulatory effect when RYBP was added to PCGF4-RING1B (Figure 3B). Despite this low level of stimulation, PCGF4-RING1B-RYBP was still much less active than PCGF1-RING1B-RYBP. Together these observations indicate that the PCGF component of the PRC1 complexes defines the inherent H2AK119 E3 ligase activity of individual PRC1 dimers and that inclusion of RYBP/YAF2 further matures these assemblies into robust enzymes that can efficiently modify chromatin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig3-v2.jpg)\n\n**Figure 3.:** (A) Coomassie-stained gels showing the recombinant PCGF1-RING1B or PCGF4-RING1B catalytic cores with or without the addition of RYBP. Complexes were affinity-purified via RING1B. PCGF4 and RING1B migrate at the same position on the gel (Figure 3\u2014figure supplement 1). (B) An E3 ligase activity assay comparing PCGF1-RING1B or PCGF4-RING1B in the presence or absence of RYBP. The error bars correspond to the S.E.M. of at least two independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The affinity purified RING1B-PCGF4 dimer was separated by 4\u201312% SDS-PAGE (lane 1) and compared to RING1B alone (lane 2). Coomassie staining demonstrated the presence of two distinct protein species in the RING1B-PCGF4 dimer which correspond to RING1B and PCGF4.\n\n### RYBP-dependent stimulation of PCGF1-PRC1 is associated with changes in the PCGF1-RING1B dimer but not with ubiquitin binding\n\nOur in vitro reconstitution reactions demonstrated that RYBP can control how PRC1 deposits H2AK119ub1. We were therefore interested to understand the molecular nature of this stimulatory activity, as it could have profound implications for how PRC1 functions in vivo. Interestingly, RYBP has been shown to function as an ubiquitin-binding protein via its zinc finger NZF domain (Arrigoni et al., 2006; Fereres et al., 2014). We therefore reasoned that the capacity of RYBP to recognize ubiquitin, perhaps in the form of H2AK119ub1, could account for its stimulatory activity on PRC1. To examine this possibility we generated recombinant RYBP, and RYBP with mutations in the NZF domain that abrogate ubiquitin binding (Arrigoni et al., 2006), and added them to E3 ligase reaction containing PCGF1-RING1B (Figure 4A and\u00a0B). Importantly, both forms of RYBP stimulated the activity of PCGF1-RING1B to a similar extent (Figure 4B). Given that the ability of RYBP to recognise ubiquitin did not account for its stimulation of PRC1, we wondered whether RYBP may instead affect how the core dimer assembles to function as an H2AK119 E3 ligase. We therefore turned to crosslinking mass spectrometric analyses to examine whether inclusion of RYBP in the complex resulted in any gross alterations in the proximity of individual domains. To address this possibility we directly compared the PCGF1-RING1B dimer (Figure 4C) and the RYBP-PCGF1-RING1B trimer (Figure 4D). Within the PCGF1-RING1B dimer, we observed multiple high-confidence crosslinks between the RING domain of RING1B and its C-terminal ubiquitin-like (UBL) domain, suggesting that there are likely significant intramolecular interactions occurring between these regions (Figure 4C). Intriguingly, most of the RING domain/RING-UBL domain crosslinks within RING1B were lost in the trimeric complex (PCGF1-RING1B-RYBP) (Figure 4D), suggesting that RYBP causes an alteration in PCGF1-RING1B which limits association between its N- and C-terminal domains, possibly to stabilize the formation of an optimally assembled and active E3 ligase. Interestingly, upon closer inspection of our reconstituted complexes (Figure 1D), it was noticed that the level of PCGF1 was reduced in complexes lacking RYBP (Figure 4\u2014figure supplement 1). This is in agreement with our crosslinking mass spectrometry analysis, and suggests that RYBP helps to reconfigure and stabilize the PCGF1-RING1B dimer. Importantly however, reduced PCGF1 inclusion does not explain the effect that RYBP has on the activity of PCGF1/PRC1 complexes, as the presence of RYBP stimulated the relative activity of PRC1 to a much larger extent than can be simply explained by PCGF1 levels alone (Figure 2B and\u00a0C). Furthermore, RYBP and YAF2 were able to significantly stimulate the activity of pre-existing PCGF1-RING1B assemblies (Figure 2\u2014figure supplement 1B). Future structural work will be imperative to understand the defined biochemical nature of this RYBP-dependent stimulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig4-v2.jpg)\n\n**Figure 4.:** (A) Coomassie-stained gels showing the recombinant PCGF1-RING1B affinity purified via RING1B with wildtype RYBP or a ubiquitin-binding mutant (RYBP TFAA). (B) An E3 ligase activity assay comparing the activity of PCGF1-RING1B with addition of RYBP or RYBP with mutations in the NZF domain (TF-AA) that abrogate ubiquitin binding. Error bars correspond to the S.E.M. of at least two independent experiments. (C\u2013D) Circos plots illustrating crosslinking mass spectrometry analysis of PCGF1-RING1B in presence or absence of RYBP. In (C) extensive intramolecular crosslinks are observed between the RING1B RING and UBL domains. In (D) these intramolecular crosslinks are largely ablated in the presence of RYBP which makes extensive crosslinks with these regions of RING1B. Blue and orange lines indicate intermolecular and intramolecular crosslinks respectively. Lines are weighted by the statistical confidence of their interaction.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Coomassie-stained gels of affinity-purified PCGF1-PRC1 complexes (see Figure 1D) were subjected to semi-quantitative densitometry analysis to examine the levels of PCGF1 in different PCGF1-PRC1 assemblies. This revealed a reduction in the relative amount of PCGF1 in complexes lacking RYBP.\n\n### RYBP is required for H2AK119ub1 at PRC1 targets in vivo\n\nThe mechanisms that drive and shape H2AK119ub1 in vivo remain very poorly understood. Given our observation that RYBP and YAF2 play a central role in controlling PRC1 complex activity in vitro, we sought to understand whether this activity defines H2AK119ub1 in vivo. To address this possibility, we took advantage of a mouse embryonic stem cell system in which the Rybp gene is flanked by loxP sites and which also expresses a tamoxifen-inducible form of Cre recombinase (Hisada et al., 2012). However, this cell line also expresses the RYBP paralogue YAF2, which appears to stimulate PRC1 in a manner similar to RYBP (Figure 2\u2014figure supplement 1), suggesting they could have redundant or overlapping functions in vivo. To circumvent this limitation, we exploited CRISPR/Cas9-based genome editing to delete two essential coding exons in Yaf2 and create a homozygous Yaf2\u2212/\u2212 cell line that lacked Yaf2 mRNA and protein (Figure 5\u2014figure supplement 1A\u2013C and Figure 5A). Treatment of the Rybpfl/fl;Yaf2\u2212/\u2212 cell line with tamoxifen resulted in a complete loss of RYBP by 96 hr as assessed by western blot (Figure 5B) and at PcG targets as assessed by ChIP-seq (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig5-v2.jpg)\n\n**Figure 5.:** (A) A schematic illustrating the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cell model in which the addition of tamoxifen (OHT) leads to deletion of RYBP. (B) Western blot analysis demonstrating that treatment of Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells with tamoxifen for 96 hr results in loss of RYBP protein. The levels of the PRC1 component, RING1B, and the PRC2 component, SUZ12, are unchanged. TATA Box Binding Protein (TBP) is included as a loading control. (C) A genomic snapshot from RYBP ChIP-seq analysis in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells before (UNT) and after 96 hr of tamoxifen treatment (OHT) showing that RYBP occupancy on chromatin is lost. (D) Western blot analysis of H2AK119ub1 in Rybpfl/fl ESCs, compared with Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells before (UNT) and after 96 hr tamoxifen treatment (OHT). Western blot with a histone H3-specific antibody is shown as a loading control. (E) A quantitation of western blot analysis for H2AK119ub1 relative to histone H3 in Rybpfl/fl ESCs, compared with RYBP/YAF2 deletion indicating no global reduction in H2AK119ub1. Errors bars indicate standard deviation for three biological replicate experiments. (F) Genome-wide correlation of wildtype H2AK119ub1, RYBP, RING1B and H3K4me3 ChIP-seq using 10 kb windows. H2AK119ub1 ChIP-seq correlates well with RYBP and RING1B genome-wide. (G) A genomic snapshot of calibrated H2AK119ub1 ChIP-seq in the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment at two polycomb-occupied target sites indicating significant reductions in H2AK119ub1 in the absence of RYBP. (H) A metaplot illustrating calibrated H2AK119ub1 ChIP-seq read density at peaks of H2AK119ub1 (n\u00a0=\u00a02407) before (UNT-solid line) and after (OHT- dotted line) tamoxifen treatment. Removal of RYBP has a broad effect on H2AK119ub1. (I) A scatter plot of normalised read densities for calibrated H2AK119ub1 ChIP-seq illustrates reduced H2AK119ub1 signal at nearly all H2AK119ub1 peaks in OHT-treated Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells (OHT) when compared to untreated cells (UNT). Red dots correspond to statistically significant reductions in H2AK119ub1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) A schematic depicting CRISPR-Cas9 guides used to delete Yaf2 and generate Rybpfl/fl;Yaf2\u2212/\u2212 mouse embryonic stem cells. Cas9 guides were designed to make an approximately 680 bp deletion which removes exons 1 and 2 of Yaf2. This results in a loss of the Yaf2 translation start site, and the 5\u2019 portion of the coding sequence. (B) Quantitative RT-PCR confirms deletion of Yaf2 mRNA in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells. (C) Western blot analysis of Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells confirms loss of YAF2 protein. Western blot with an RYBP-specific antibody is shown as a control.\n\nHaving established the Rybpfl/fl;Yaf2\u2212/\u2212 cell line we then set out to understand if the capacity of RYBP to stimulate PRC1 in vitro would also translate into effects on cellular H2AK119ub1 following RYBP removal. Studying this in a cellular context could however be complicated by previous conflicting observations suggesting that RING1B may, or may not, be destabilised when RYBP is removed in ESCs (Tavares et al., 2012; Morey et al., 2013). To examine this possibility we first determined whether loss of RYBP affected the level of RING1B. In the context or our new Rybpfl/fl;Yaf2\u2212/\u2212conditional system, deletion of RYBP did not lead to an appreciable reduction in total RING1B (Figure 5B), in agreement with our observation that PRC1 complex assembly in vitro is modular (Figure 1D). The stability of the PRC1 complex in the absence of RYBP allowed us to then examine the direct contribution of RYBP to H2AK119ub1 in vivo. Somewhat surprisingly, despite the dramatic affects that RYBP has on H2AK119 E3 ligase activity in vitro, removal of RYBP did not significantly affect total H2AK119ub1 as measured by western blot (Figure 5D and\u00a0E). Again this contrasts previous observations in which shRNA-mediated knockdown of RYBP led to global reductions in H2AK119ub1 (Tavares et al., 2012; Gao et al., 2012), and suggests that these affects may have been the indirect result of decreased RING1B levels.\n\nGiven these observations, we reasoned that RYBP may play a more defined or locus-specific role in regulating H2AK119ub1 as had previously been suggested from single gene analysis following RYBP depletion in ESCs (Morey et al., 2013). To address this possibility we exploited a calibrated ChIP-seq approach (Bonhoure et al., 2014; Hu et al., 2015; Orlando et al., 2014) to measure H2AK119ub1 genome-wide in the Rybpfl/fl;Yaf2\u2212/\u2212 cells, before and after RYBP ablation. Importantly, H2AK119ub1 signal in wild-type cells was highly correlated with both RING1B and RYBP occupancy genome-wide (Figure 5F). Furthermore, a visual inspection of these data revealed enrichment of H2AK119ub1 at genes associated with Polycomb-mediated repression in embryonic stem cells (Figure 5G). When we compared the levels of H2AK119ub1 before and after RYBP removal at individual Polycomb target sites, we observed clear reductions in H2AK119ub1 (Figure 5G), suggesting that RYBP supports deposition of H2AK119ub1 at these genomic locations. To explore the breadth of these affects, we identified a set of 2407 genomic regions that were enriched for H2AK119ub1. Quantitation of H2AK119ub1 after removal of RYBP revealed widespread effects on H2AK119ub1 (Figure 5H), with approximately 45% of regions showing significant reductions in the levels of H2AK119ub1 (1091/2407; p<0.05). However, this appeared to be an underestimation of the effect, as nearly all PRC1 targets displayed reductions in H2AK119ub1, albeit below the significance threshold (Figure 5I). These effects are consistent with our in vitro\u00a0observations demonstrating that RYBP shapes the E3 ligase activity of PRC1 complexes. Given the widespread reductions in H2AK119ub1 observed in ChIP-seq, it is perhaps surprising that we did not detect global alterations in H2AK119ub1 by western blot. This is likely due to a proportion of total cellular H2AK119ub1 residing outside of classical polycomb target sites as has been proposed previously in other systems (Lee et al., 2015; Goldknopf et al., 1975).\n\n### RYBP regulates the activity, not chromatin occupancy, of PRC1 in vivo\n\nAlthough our in vitro studies provide compelling evidence that RYBP regulates PRC1 activity, previous work has suggested that RYBP may also contribute to PRC1 function through regulating its stability or targeting (Tavares et al., 2012; Gao et al., 2012). Conversely, single gene studies had suggested that following depletion of RYBP, RING1B targeting to polycomb sites may not be overtly affected (Hisada et al., 2012; Morey et al., 2013). Therefore, having demonstrated that the stability of PRC1 is unaffected following RYBP deletion in the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells (Figure 5B), we set out to test at the genome-scale whether H2AK119ub1 losses following RYBP deletion in vivo were the result of defective PRC1 targeting or supressed E3 ligase activity. To achieve this, we carried out RING1B ChIP-seq before and after tamoxifen treatment of Rybpfl/fl;Yaf2-\u2212/\u2212\u00a0cells (Figure 6). Initially, we considered RING1B occupancy at PRC1 target sites where H2AK119ub1 was dependent upon RYBP, to examine whether H2AK119ub1 reductions were coincident with reduced chromatin occupancy of PRC1. However, visual inspection of several of these sites revealed that despite displaying large decreases in H2AK119ub1, RING1B occupancy was often unaffected (Figure 6A). We extended this analysis genome-wide (Figure 6B), and found that the majority of PRC1 target sites (78%; 1870/2407) failed to show a significant change in RING1B occupancy (Figure 6B) and we validated these observations at a number of sites using ChIP quantitative PCR analysis (Figure 6\u2014figure supplement 1). Indeed, there were only a modest number of sites showing decreases in RING1B binding (20%; 487/2407) (Figure 6C). Importantly, following RYBP deletion we observed clear and widespread reductions in H2AK119ub1 at PRC1 target sites where RING1B occupancy remained unchanged. These observations are in agreement previous observations at selected target sites following shRNA-mediated knockdown of RYBP which also appeared to show loss of H2AK119ub1 in the absence of perturbed RING1B binding (Morey et al., 2013). Interestingly, the subset of PRC1 targets which lost RING1B appeared on average to exhibit a unique depletion of H2AK119ub1 in the centre of the peak when compared to other PRC1 targets (Figure 6C). This was coincident with a more highly positioned TSS at the centre of the peak but did not appear to correspond with a depletion of nucleosomes (Figure 6\u2014figure supplement 2A and\u00a0B). Furthermore, these sites tended to be more enriched for variant PRC1 (RYBP), as opposed to canonical PRC1 (CBX7) occupancy, suggesting that these PRC1 targets might depend more on RYBP for normal H2AK119ub1 and RING1B occupancy than canonical targets (Figure 6\u2014figure supplement 2C) as suggested previously (Morey et al., 2013). Together, these genome-wide observations strongly support our in vitro\u00a0conclusions that RYBP stimulates the E3 ligase activity of PRC1, and reveal that decreases in H2AK119ub1 at PRC1 target sites are not due to defects in targeting PRC1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig6-v2.jpg)\n\n**Figure 6.:** (A) A genomic snapshot of RING1B and H2AK119ub1 ChIP-seq in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment demonstrates that decreases in H2AK119ub1 occur in the absence of altered RING1B occupancy. (B\u2013C) Metaplots illustrating H2AK119ub1 and RING1B ChIP-seq read density at H2AK119ub1 peaks with (n\u00a0=\u00a0487) or without (n\u00a0=\u00a01870) significant reductions in RING1B occupancy before (UNT-solid line) and after tamoxifen treatment (OHT-dotted line). RYBP loss affects the levels of H2AK119ub1 (B-bottom panel) even though RING1B occupancy is unaffected (B-upper panel) indicating RYBP stimulates PRC1 activity at target sites in vivo.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) ChIP-qPCR based analysis validating the reductions in H2AK119ub1 observed by calibrated ChIP-seq in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment at a series of PcG target genes. n.c. corresponds to a non-target control region. ChIP experiments were performed in biological triplicate and error bars represent S.E.M. (B) ChIP-qPCR based analysis validating the retention of PRC1 (RING1B) at sites that show reductions in H2AK119ub1 in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment. n.c. corresponds to a non-target control region. ChIP experiments were performed in biological triplicate and error bars represent S.E.M.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013B) Metaplots illustrating a series of genomic features at H2AK119ub1 peaks with (n\u00a0=\u00a0487) or without (n\u00a0=\u00a01870) significant reductions in RING1B occupancy in the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells, as depicted in Figure 6. The features profiled include TSS position (TSS), RNA polymerase II (POLII), H3K4me3, CpG density, and nucleosome positioning by MNase-seq. (C) Pie charts indicating whether sites examined in A and B were variant-enriched or shared PRC1 target sites.\n\n### RYBP-dependent stimulation is essential for H2AK119ub1 at sites with low PRC1 occupancy\n\nRYBP plays a central role in stimulating PRC1 in vivo, and virtually all H2AK119ub1-enriched regions show some dependency on RYBP for normal H2AK119ub1 (Figure 5I). Nevertheless it was clear that at individual sites the magnitude of H2AK119ub1 loss often differed greatly, perhaps suggesting that features inherent to individual Polycomb target sites could dictate their reliance on the stimulatory activity of RYBP. To examine this possibility we divided PRC1 target sites into quartiles based on their relative loss of H2AK119ub1 (Figure 7A). Initially, we examined the levels of RYBP at these different groups to determine whether the effect on H2AK119ub1 following loss of RYBP was not simply related to the absolute amount of RYBP at a given target site (Figure 7B). Interestingly, RYBP enrichment was similar across groups of RYBP-dependency, and counterintuitively more lowly occupied sites often exhibited more profound reductions in H2AK119ub1. We then examined the occupancy of the PRC1 catalytic core component RING1B at these same sites, and observed that the sites which were most dependent upon RYBP for H2AK119ub1 had the lowest occupancy of RING1B (Figure 7C). This suggests that sites with limiting amounts of PRC1 have a more defined requirement for RYBP-dependent stimulation to achieve normal H2AK119ub1. To explore this possibility, we calculated the ratio of RYBP relative to RING1B at PRC1 target sites over the range of H2AK119ub1 dependencies (Figure 7D). This revealed that the sites where loss of RYBP most profoundly affected H2AK119ub1 exhibited the highest ratios of RYBP to RING1B (Figure 7D and\u00a0E). At these PRC1 target sites it appears that the inherent activity of the core catalytic complex is insufficient to sustain H2AK119ub1, and that RYBP-dependent stimulation is required to define normal H2AK119ub1 levels. We then wondered whether dependency on RYBP might also be related to the occupancy of canonical PRC1 at these sites. Indeed, PRC1 targets that were occupied by RYBP but displayed reduced levels of CBX7 (i.e. \u2018variant-enriched\u2019) tended to show the largest reductions in H2AK119ub1 following RYBP removal (Figure 7F and\u00a0G), whereas variant and canonical PRC1 occupied sites (i.e. \u2018shared\u2019) appeared to rely on RYBP to a lesser extent. Intriguingly, shared-PRC1 targets, tended have the largest polycomb domains, and were enriched for genes related to sequence-specific transcription factor binding (Figure 7\u2014figure supplement 1), perhaps reflecting a contribution of both variant and canonical PRC1 in shaping H2AK119ub1 at these regulatory genes. Interestingly, and in contrast to previous reports (Morey et al., 2013), our ChIP-seq based analysis of RYBP binding did not reveal a class of PcG target sites that were enriched for canonical PRC1 (CBX7) but lacked variant PRC1 (RYBP). This suggests that canonical PRC1 binding occurs at PcG target sites that are also occupied by variant PRC1. Together, our detailed genome-wide analysis in vivo establishes a clear role for RYBP in stimulating the H2AK119ub1 E3 ligase activity of PRC1, particularly at variant PRC1-enriched sites with low levels of RING1B.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig7-v2.jpg)\n\n**Figure 7.:** (A) A box plot illustrating the separation of H2AK119u1 peaks into quartiles based on their relative reduction in H2AK119ub1 upon deletion of RYBP. This indicates that all H2AK119ub1 peaks experience a decrease in H2AK119ub1 following RYBP removal, but some sites (e.g. Q1) are more dependent upon RYBP than others (e.g. Q4) (B\u2013C) Metaplots illustrating the RYBP and RING1B ChIP-seq read density over the H2AK119ub1 quartiles identified in (A). Quartiles that are most dependent on RYBP for H2AK119ub1 (i.e. Q1 and Q2) have lower RYBP and RING1B occupancy. (D) A box plot illustrating that the quartiles which are most dependent on RYBP have the largest enrichment of RYBP relative to RING1B. (E) A genomic snapshot depicting three polycomb target sites which display varying dependencies on RYBP for their H2AK119ub1. The Gm6116 gene (highlighted in grey) has low occupancy of RING1B and CBX7, and is almost completely reliant on RYBP for H2AK119ub1. In contrast the Gsx2 and Pdgfra genes have high RING1B and CBX7 occupancy and are less dependent on RYBP for their H2AK119ub1. This indicates that RYBP plays a more pronounced role stimulating PRC1 activity at sites with limiting levels of RING1B. Furthermore, sites that are highly dependent on RYBP appear to be depleted of canonical PRC1. (F) A heatmap illustrating H2AK119ub1 peaks clustered into variant-enriched PRC1 and variant and canonical PRC1 (shared) sites based on RYBP (variant PRC1) and CBX7 (canonical PRC1) levels. Both variant-enriched and shared PRC1 target sites show a reduction in H2AK119ub1 following deletion of RYBP. (G) A box plot indicating the alterations in H2AK119ub1 at shared or variant-enriched PRC1 target sites. The p value denotes statistical significance calculated by a Wilcoxon signed rank test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Gene ontology (GO) analysis of Molecular Function term enrichment at genes associated with shared or variant-enriched PRC1 target sites. (B) GO analysis as in (A) but using Biological Process term enrichments.\n\n### RYBP-dependent H2AK119ub1 shapes PRC2 activity\n\nWe and others have recently discovered that PRC1 can regulate the targeting of PRC2 through its capacity to recognize H2AK119ub1 (Blackledge et al., 2014; Cooper et al., 2014; Kalb et al., 2014). This, coupled with CBX-dependent recognition of H3K27me3 by canonical PRC1 complexes (Bernstein et al., 2006; Fischle et al., 2003; Min\u00a0et\u00a0al., 2003), could effectively create a feedback mechanism sufficient to help sustain Polycomb chromatin domains in a histone modification-dependent manner. Given that RYBP stimulates the E3 ligase activity of PRC1, we wondered whether this activity may play a role in these proposed feedback mechanisms. To address this we performed ChIP-seq for SUZ12, a core component of PRC2, and H3K27me3 in the Rybpfl/fl;Yaf2\u2212/\u2212 cells before and after tamoxifen treatment (Figure 8A). Strikingly, deletion of RYBP resulted in genome-wide reductions in H3K27me3 at Polycomb target sites (Figure 8A and\u00a0B). However, like H2AK119ub1, H3K27me3 reductions were not evident from western blot analysis of total histones, suggesting that H3K27me3 is affected most profoundly at classical Polycomb target sites and not the larger pool of H3K27me3 which is proposed to exist elsewhere in the genome (Figure 8\u2014figure supplement 1) (Grzybowski et al., 2015). Importantly, H3K27me3 reductions at Polycomb target sites occurred without any apparent loss in the chromatin occupancy of the PRC2 component SUZ12 (Figure 8A and\u00a0C, Figure 8\u2014figure supplement 2), suggesting that the observed decreases in H3K27me3 likely arise as a result of reduced activity of the PRC2 complex. Like the observed changes in H2AK119ub1 (Figure 7F and\u00a0G), the largest reductions in H3K27me3 were evident at variant-enriched PRC1 target sites (Figure 8D), consistent with a more defined role for RYBP in maintaining PcG-associated histone marks at these regions. Importantly, reductions in H3K27me3 across all PRC1 target sites correlated closely with reductions in H2AK119ub1 (Figure 8E), indicating that the effects on H2AK119ub1 and H3K27me3 are linked and directly related to the activity of RYBP. These important observations demonstrate that RYBP-dependent H2AK119ub1 shapes the activity of PRC2 in depositing H3K27me3, and suggests that the observed stimulation of PRC2 by nucleosomes containing H2A mono-ubiquitylation in vitro is also relevant in vivo (Kalb et al., 2014).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig8-v2.jpg)\n\n**Figure 8.:** (A) A genomic snapshot of H3K27me3, SUZ12 and H2AK119ub1 ChIP-seq in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after tamoxifen (OHT) treatment. At these target sites there are reductions in H3K27me3 in the absence of changes in SUZ12 occupancy following RYBP deletion. (B-C) Metaplots illustrating ChIP-seq read density for H3K27me3 (B) and SUZ12 (C) in the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT-solid line) and after tamoxifen (OHT-dotted line) treatment. Removal of RYBP results in widespread loss of H3K27me3 despite largely unaffected occupancy of SUZ12. (D) A box plot indicating the alterations in H3K27me3 at shared or variant-enriched PRC1 target sites. The p value denotes statistical significance calculated by a Wilcoxon signed rank test. (E) A scatter plot showing changes in H2AK119ub1 and H3K27me3 normalised read densities at H2AK119ub1 peaks after deletion of RYBP. This illustrates that the fold change in H2AK119ub1 and H3K27me3 are related to each other at individual sites following loss of RYBP. R2 and cor denote coefficient of determination for linear regression model and the pearson correlation coefficient respectively. (F) A box plot illustrating the changes in H2AK119ub1 and H3K27me3 at H2AK119ub1 peaks divided into groups based on whether RYBP deletion resulted in no significant loss of RING1B or SUZ12 (No Sig Loss, n\u00a0=\u00a01947), loss of RING1B only (\u25b3RING1B, n\u00a0=\u00a0319), loss of SUZ12 only (\u25b3SUZ12, n\u00a0=\u00a038) or loss of both RING1B and SUZ12 (\u25b3RING1B \u25b3SUZ12, n\u00a0=\u00a0103). This indicates that sites susceptible to loss of RING1B and/or SUZ12 experience the greatest relative reductions in H2AK119ub1 and H3K37me3.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Western blot analysis of H3K27me3 in Rybpfl/fl ESCs, and Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells before (UNT) and after 96 hr tamoxifen treatment (OHT). An H3-specific antibody was used as a loading control. (B) A quantitation of western blot analysis for H3K27me3 relative to histone H3 following RYBP/YAF2 deletion. Errors bars indicate S.E.M. from four biological replicate experiments.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) ChIP-qPCR based analysis validating the reductions in H3K27me3 observed by calibrated ChIP-seq in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment at a series of PcG target genes. n.c. corresponds to a non-target control region. ChIP experiments were performed in biological triplicate and error bars represent S.E.M. (B) ChIP-qPCR based analysis validating the retention of PRC2 (SUZ12) at sites that show reductions in H3K27me3 in Rybpfl/fl;Yaf2\u2212/\u2212 mouse embryonic stem cells before (UNT) and after 96 hr tamoxifen (OHT) treatment. n.c. corresponds to a non-target control region. ChIP experiments were performed in biological triplicate and error bars represent S.E.M.\n\nGiven that PRC1 and PRC2 complexes recognize and bind to the histone modifications that they place, it was somewhat surprising to us that the reductions in H2AK119ub1 and H3K27me3 following RYBP/YAF2 deletion did not result in more widespread effects on PRC1 and PRC2 occupancy. One possible explanation is that normal PcG protein occupancy can only be effectively maintained as long as histone modifications remain above a certain level or threshold. Conversely, if this threshold is crossed, effective Polycomb chromatin occupancy may no longer be maintained, and the Polycomb chromatin domain could begin to erode. If this were the case, one might predict that thresholds for Polycomb domain erosion would differ between individual target sites. We therefore hypothesized that in the context of our experiments, erosion of Polycomb chromatin domains following RYBP deletion might occur at the sites that experienced the greatest relative reductions in their Polycomb-associated histone modifications. To examine whether this was the case, we examined the subset of Polycomb target sites that experienced significant losses in PRC1 and PRC2 occupancy following RYBP deletion, and compared these to target sites at which occupancy was unaffected. Interestingly, we observed that the sites with the most profound losses of H2AK119ub1 and H3K27me3 were the same sites that showed reductions in PRC1 and PRC2 (Figure 8F). Together these observations reveal two important and fundamental features associated with the function of Polycomb chromatin domains. Firstly, there is an intimate relationship between the histone-modifying activities of PRC1 and PRC2 at target sites, which is regulated by auxiliary PcG complex subunits and not simply dictated by occupancy of PRC1/PRC2 core catalytic subunits. This is evident in instances where RYBP removal leads to reductions in both H2AK119ub1 and H3K27me3, without major alterations in PcG complex occupancy. Secondly, the occupancy of PcG complexes at target sites is not driven in a linear fashion by H2AK119ub1 and H3K27me3 levels. However, if activity-based communication between the PcG complexes is compromised there appears to be a modification threshold below which complex occupancy can no longer be sustained. Again this is evident following RYBP removal, where sites displaying the greatest loss of H2AK119ub1 and H3K27me3 also show reductions in PcG complex occupancy.\n\n### Loss of RYBP culminates in gene reactivation at sites where Polycomb chromatin domains are compromised\n\nStudies in mice have demonstrated that RYBP plays a fundamental role in early development (Pirity et al., 2005), and that it is also important at later developmental stages including haematopoiesis (Cal\u00e9s et al., 2016), presumably due to its involvement in PcG-mediated gene regulation (Tavares et al., 2012). Furthermore, RYBP-deficient Drosophila die at varying stages during development and RYBP can function as an enhancer of PcG phenotypes (Gonzalez et al., 2008). Given the widespread effects that RYBP has on shaping H2AK119ub1 and H3K27me3, and the erosion of normal Polycomb chromatin domains that ensues at some target sites following RYBP removal, we wondered whether genes associated with these target sites were aberrantly transcribed. To this end, we isolated nuclear RNA from cells before and after RYBP deletion and carried out RNA-seq analysis. This revealed that loss of RYBP resulted in a limited number of robust and statistically significant transcriptional changes (Figure 9A), in agreement with previous studies examining gene expression by microarray analysis in RYBP deleted cells (Hisada et al., 2012). Consistent with a role for RYBP in shaping PRC1-dependent gene repression, more genes were significantly upregulated (n\u00a0=\u00a0230) than downregulated (n\u00a0=\u00a037), and these tended to be lowly expressed genes (Figure 9A). Furthermore, when we compared these gene expression changes to those observed in the complete absence of PRC1 activity (RING1A\u2212/\u2212;RING1B\u2212/\u2212) (Schoenfelder et al., 2015), most RYBP-repressed genes fell within the set of genes that are also regulated by RING1A/B (Figure 9B). In addition, when we compared the expression of genes that were upregulated following RYBP loss to the gene expression changes in cells where RING1B was catalytically inactivated (RING1B I53A) (Illingworth et al., 2015), RYBP-dependent genes were also partially upregulated, although the effects in this context were modest (Figure 9\u2014figure supplement 1). The extent of gene reactivation at Polycomb target genes following RYBP removalwas generally of lower magnitude than gene reactivation following deletion of RING1A/RING1B (Figure 9C), in agreement with our observations that RYBP stimulates, but is not absolutely required for, PRC1 activity and occupancy. Furthermore, both shared and variant-enriched PRC1 target sites were subject to reactivation following removal of RYBP (Figure 9\u2014figure supplement 2).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig9-v2.jpg)\n\n**Figure 9.:** (A) An MA plot illustrating differential gene expression analysis based on nuclear RNA (nucRNA)-seq in the Rybpfl/fl;Yaf2\u2212/\u2212 mouse embryonic stem cells before and after tamoxifen treatment. Log2 fold change of nucRNA is plotted against mean transcriptional level in wildtype cells. Significance values represent adjusted p values calculated by DESeq2. (B) A Venn diagram illustrating that genes upregulated after deletion of RYBP are a subset of genes upregulated upon deletion of the PRC1 catalytic core proteins RING1A/RING1B. (C) A box plot comparing the log2 fold change in nucRNA levels following loss of RYBP or RING1A/RING1B at TSS marked by H2AK119ub1 peaks (PcG; n\u00a0=\u00a01490) or TSS without H2AK119ub1 (Non-PcG; n\u00a0=\u00a012,911). This reveals that Polycomb target TSS are the most affected genes, and that the average level of upregulation after loss of RYBP is less than the upregulation following deletion of RING1A/RING1B. p values denote statistical significance calculated with Wilcoxon signed rank test. (D) A genomic snapshot of two genes upregulated following loss of RYBP. RNA-seq reads are separated by strand. Following RYBP deletion, both genes exhibit reductions in TSS-associated RING1B and SUZ12, as illustrated by ChIP-seq for RING1B and SUZ12 before (UNT) and after tamoxifen (OHT) treatment. (E) Metaplots illustrating that TSS occupancy of RING1B and SUZ12 are reduced after deletion of RYBP/YAF2 at upregulated genes (n\u00a0=\u00a0230). (F) A scatter plot illustrating that increases in gene expression broadly correlate with decreases in RING1B occupancy at the TSS (\u00b1500 bp). Significant reductions in RING1B are depicted as red dots.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) A Venn diagram illustrating the overlap between significant increases in gene expression that result from RYBP deletion in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells and significant increases in gene expression that occur in mouse ESCs expressing a catalytically inactive form of RING1B (Ring1bI53A) ( Illingworth et al., 2015). (B) A quantitation of gene expression changes that occur in the Rybpfl/fl;Yaf2\u2212/\u2212, Ring1bI53Aand Ring1a\u2212/\u2212;Ring1bfl/fl lines at genes which are unaffected (\u2212) or significantly increase in expression (+) following removal of RYBP in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells. p denotes statistical significance calculated using Wilcoxon Rank Sum test.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Genes up-regulated following removal of RYBP in Rybpfl/fl;Yaf2\u2212/\u2212\u00a0cells were classified as either PcG target sites or non-PcG target sites. These sites were further segregated into shared or variant-enriched PcG target sites and active or inactive non-PcG target sites. This revealed that genes upregulated following RYBP removal were not unique to either shared or variant-enriched PcG target sites.\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18591/elife-18591-fig9-figsupp3-v2.jpg)\n\n**Figure 9\u2014figure supplement 3.:** (A) A panel of genes which exhibited significant increases in transcription in response to RYBP removal were identified and their reads per kilobase per million (RPKM) values for tamoxifen-treated (OHT) relative to untreated (UNT) cells were examined. The bar graphs represent read information from three biological replicate RNA-seq experiments and error bars represent S.E.M. (B-E) ChIP-qPCR based analysis was carried out to examine the effects on (B) H2AK119ub1, (C) H3K27me3, (D) RING1B, and (E) SUZ12 which occurred at the target genes identified in (A) following RYBP removal (OHT) in the Rybpfl/fl;Yaf2\u2212/\u2212\u00a0mouse embryonic stem cells. In all cases upregulated genes displayed a loss of H2AK119ub1 and H3K27me3. In agreement with the ChIP-seq analysis for RING1B and SUZ12 at this class of reactivated genes (Figure 9D and\u00a0E), our single gene ChIP quantitative PCR analysis validated that these sites usually also display reductions PRC1 (RING1B) and PRC2 (SUZ12) binding, albeit with losses of RING1B being more apparent than SUZ12. n.c. corresponds to a non-target control region. ChIP experiments were performed in biological triplicate and error bars represent S.E.M.\n\nHaving identified the genes that were most dependent on RYBP for transcriptional repression, we were keen to examine how these effects on transcription were related to any associated Polycomb chromatin domains. We reasoned that if the integrity of a Polycomb chromatin domain was required for normal transcriptional repression, one might expect that gene reactivation following RYBP loss would correspond to sites where there was a loss of PcG complex occupancy. Indeed, when we examined individual RYBP-dependent genes, increased transcription was often coincident with TSS-associated decreases in PcG complex occupancy (Figure 9D), although this was more apparent for PRC1 than PRC2 (Figure 9E; Figure 9\u2014figure supplement 3). When we extended this analysis genome-wide there was a very clear relationship, albeit not perfectly linear, between reduction of PRC1 occupancy at TSSs and increased gene expression (Figure 9F). Consistent with a role for PcG systems in helping to maintain genes in a repressed state in tissues where they should not normally be expressed (Klose et al., 2013; Riising et al., 2014; Voigt et al., 2013), the magnitude of gene reactivation events was often modest. This likely reflects genes that are in a very lowly transcribed or off state, transitioning to a more transcribed but not fully activated state. This is presumably because the signals necessary to drive transcriptional activation of these genes are low or absent in embryonic stem cells.\n\nTogether, our transcription and Polycomb chromatin domain analyses reveal an activity-based communication between PcG complexes regulated by RYBP-dependent stimulation of PRC1. Furthermore it provides clear evidence that the histone modifying activities of PRC1 and PRC2 underpin feedback mechanisms that are important for maintaining Polycomb chromatin domains (Blackledge et al., 2015), counteracting inappropriate gene activation signals, and shaping normal gene repression, at least at a subset of polycomb target sites.\n\n## Discussion\n\nPcG proteins play an important chromatin-based role in controlling gene expression. The PRC1 and PRC2 complexes work together to achieve this, and in vertebrates both their occupancy on chromatin and functionality appear to rely, at least in part, on their capacity to modify histones. However, mechanisms controlling the activity of PRC1, and its relationship with PRC2, remain poorly understood. Here we reveal a defined requirement for specific PCGF components and the auxiliary subunits RYBP/YAF2 in regulating the H2AK119 E3 ligase activity of PRC1 in vitro\u00a0(Figures 1\u20134). In vivo, RYBP plays a central role in shaping normal H2AK119ub1 at Polycomb target sites (Figure 5) where it functions to stimulate the E3 ligase activity of PRC1 (Figures 6 and 7) and regulate PRC2-dependent H3K27me3 (Figure 8). At a subset of Polycomb target sites, the absence of RYBP leads to a more profound effect on histone modifications leading to Polycomb chromatin domain erosion (Figure 8) and inappropriate reactivation of gene expression (Figure 9). Together this extends our understanding of the interesting and important activity-based communication between PcG complexes that has been\u00a0previously proposed from in vitro studies (Kalb et al., 2014), and demonstrates that the enzymatic activity of PcG complexes can communicate through chromatin in vivo in order to maintain normal PcG function in gene regulation.\n\nA striking and central conclusion from our enzymatic analysis of PRC1 complexes in vitro was that the enzymatic activity of PRC1 is determined not only by its interaction with auxiliary factors like RYBP/YAF2 but also the PCGF protein that forms the PCGF/RING1 catalytic core. This therefore suggests that the activity of individual PRC1 complexes is likely to depend upon the inclusion of specific PCGF proteins and to be highly regulated in vivo. An important focus for future work will be to directly compare the E3 ligase activities of other less well-characterized PRC1 complexes, to understand how widespread these regulatory mechanisms are amongst distinct PRC1 assemblies, including those PRC1 complexes formed by PCGF3/5/6. In an important first step towards achieving this, a recent study examined PCGF1\u20136/RING1 catalytic dimers and concluded that they displayed little inherent difference in their H2AK119 E3 ligase activity on nucleosome substrates in vitro\u00a0(Taherbhoy et al., 2015). However, these experiments relied on truncated proteins which lack important domains, including the C-terminus of RING1 which is the interaction site for RYBP/YAF2 (Wang et al., 2010). In contrast our observations using full length proteins demonstrate that PRC1 activity is governed by the nature of the catalytic dimer and the stimulatory activity of auxiliary factors like RYBP/YAF2. An important focus of future work will also rely on understanding the relative contribution of individual PRC1 complexes in placing H2AK119ub1 in vivo, given that RYBP/YAF2 appears to interact with diverse PRC1 complexes.\n\nAs we begin to learn more about the mechanisms that shape PRC1-dependent E3 ligase activity, our understanding of how this contributes towards PcG system function in gene regulation and development remains an important and outstanding question. Indeed, it still remains incompletely defined how the H2AK119ub1-dependent and independent activities of PRC1 are leveraged by the PcG systems to regulate gene expression, particularly in mammals. However, early biochemical work very clearly demonstrated a structural role for PRC1 in chromatin compaction and counteracting chromatin remodelling in vitro, independently of H2AK119ub1 (Grau et al., 2011; Francis et al., 2004). Furthermore, RING1B null cells which display transcriptional reactivation and chromatin decompaction of the PcG-occupied Hox loci, are rescued of these deficiencies with a form or RING1B lacking catalytic activity, suggesting a structural role on chromatin for PRC1 in this context (Eskeland et al., 2010). In agreement with a role for canonical PRC1 in shaping chromatin structure at PcG target sites, the PHC component of canonical PRC1 can polymerize in vitro and this activity appears to be import for the formation of cytologically identifiable structures referred to as \u2018polycomb bodies\u2019 (Kim et al., 2002; Isono et al., 2013). Similar studies in Drosophila have also provided evidence via super resolution imaging that Polycomb body formation relies on Ph (orthologous to mammalian PHC) to shape chromatin domains (Boettiger et al., 2016; Wani et al., 2016) and perturbation of Ph in Drosophila leads to widespread effects on normal gene repression (Lagarou et al., 2008). This abundance of work clearly indicates that PRC1 has essential structure-based effects on chromatin that are related to normal PcG-dependent gene regulation and in some cases this appears to be independent of the E3 ligase activity of PRC1. Consistent with H2AK119ub1-independent roles for PRC1 in normal Drosophila development, a catalytic mutant of the Drosophila RING1 orthologue (Sce1) is less phenotypically severe than that of Sce1 null animals (Pengelly et al., 2015). Furthermore, mutation of histone H2A such that it is no longer a target for PRC1-dependent mono-ubiquitylation did not lead to Hox gene misregulation in Drosophila imaginal disc clones, suggesting that H2A ubiquitylation is not required to maintain repression of these PcG target genes (Pengelly et al., 2015). Similarly a Ring1bI53A/I53A mouse model, in which the E3 ligase activity of RING1B-containing PRC1 complexes is perturbed, indicated that the catalytic activity of RING1B is also not essential for early mouse development, with Ring1bI53A/I53A mice succumbing to embryonic lethality at a later embryonic stage than Ring1b-null mice (Illingworth et al., 2015; Voncken et al., 2003). Because these Ring1b mouse models do not completely phenocopy each other it would suggest that RING1B may contribute functions during mammalian development that are independent of H2A mono-ubiquitylation, possibly related to its role in chromatin compaction (Eskeland et al., 2010; Francis et al., 2004). However, it still remains unclear whether early mammalian development and normal polycomb mediated repression can be sustained in the absence of PRC1 E3 ligase activity, as this requires the generation of a mouse model that lacks the enzymatic activity of RING1A and RING1B, both of which are expressed in early development and contribute to deposition of H2AK119ub1 and gene repression (de Napoles et al., 2004; Endoh et al., 2008). Interestingly, however, Ring1bI53A/I53A embryonic stem cells have dramatically reduced levels of H2AK119ub1, show reductions in H3K27me3 and reactivate a subset of PcG target genes (Illingworth et al., 2015). This scenario is reminiscent of the reductions in H2AK119ub1 and H3K27me3 that occur following loss of RYBP-dependent stimulation of PRC1. Together these observations support the general argument that in mammals H2AK119ub1 helps to shape communication between PRC1 and PRC2 in order to sustain normal Polycomb chromatin domain function in gene regulation. However it is clear that a more detailed analysis of both RING1A and RING1B activity will be imperative in defining how important H2AK119ub1 is for mammalian development and gene regulation by the PcG system.\n\nPRC1 and PRC2 complexes have the capacity to recognise H2AK119ub1 and H3K27me3, and it has been proposed that this supports PcG protein binding to chromatin (Blackledge et al., 2015; Kalb et al., 2014; Margueron et al., 2009; Min\u00a0et\u00a0al., 2003; Wang et al., 2004b; Simon and Kingston, 2013). Here we show that RYBP deletion causes reductions in H2AK119ub1 and H3K27me3 yet PRC1 and PRC2 occupancy remains largely intact. However, a subset of PcG target sites exhibit larger reductions in H2AK119ub1 and H3K27me3 and have pronounced losses of PcG complex occupancy. Based on these observations we speculate that activity-based communication between PRC1 and PRC2 may support PcG complex occupancy through a histone modification-dependent thresholding mechanism. In the context of such a mechanism we speculate that the majority of PcG target genes have H2AK119ub1 and H3K27me3 levels that are in excess of that required to support normal PRC1 and PRC2 binding. However, if H2AK119ub1 and H3K27me3 levels fall below a given threshold, as some sites do in the absence of RYBP, normal activity-based communication between PRC1 and PRC2 can no longer be maintained, leading to a reduction in PcG protein occupancy and an increased propensity for gene reactivation.\n\nIf histone modification-dependent thresholding mechanisms contribute at least at some sites to the function of the Polycomb system, how or why might this be beneficial to the control of gene expression? Given the highly dynamic nature of PRC1 and PRC2 interactions with chromatin (Fonseca et al., 2012), histone modifications could provide a form of local epigenetic memory to bridge the intervening time between individual engagement events to reinforce PcG protein occupancy. Assuming that PcG protein occupancy is important for gene repression and that histone modifications can stabilize PcG protein binding, it would seem sensible that some fluctuation in histone modification levels would need to be tolerated in order to\u00a0protect the stability of the PcG system at individual sites. However, this hysteresis could be rapidly counteracted by altering the activity of individual PcG complexes, or by removing their associated histone modifications. In both scenarios this would impair PcG complex occupancy and render these normally inactive states reversible and responsive to strong gene activation signals during cell lineage commitment. In combination with chromatin-modifying activities of the Trithorax group systems that are associated with gene activation, this could support a form of chromatin bistability at gene regulatory elements, as we and others have previously proposed, to allow switch-like activation of gene expression (Deaton and Bird, 2011; Klose et al., 2013; Steffen and Ringrose, 2014; Voigt et al., 2013). Interestingly, alterations in the histone modifying activities of PcG complexes are key molecular defects associated with various cancers, suggesting that perturbing PcG-associated histone modifications, or potentially altering histone modification thresholds, may be important in the pathological adaptation of gene expression in cancer (Scelfo et al., 2015). Clearly more work is required to understand the relative contributions of the histone modification-dependent and -independent activities of PcG complexes to both chromatin structure and gene repression at polycomb chromatin domains.\n\nIn conclusion, our enzymatic analysis of PRC1 in vitro and genomic dissection of how RYBP shapes its activity in vivo, reveal an interesting activity-based communication between Polycomb repressive complexes on chromatin. Furthermore, they indicate that histone modification thresholds could play an important and previously unrealized role in shaping Polycomb chromatin domain function in the context of gene regulation.\n\n## Materials and methods\n\n### Protein expression and purification\n\nMouse Ring1b, Pcgf1, Rybp, Bcor and Kdm2b (short isoform) were cloned into the Multibac plasmid set. Acceptor and donor plasmids were recombined using Cre recombinase (NEB, Ipswich, MA) as previously described (Bieniossek et al., 2012) and transfected into SF21 cells to make infectious baculovirus particles. Baculoviruses were then used to express proteins in SF21 cells. Baculovirus expressed proteins were then extracted and affinity purified via a FLAG-tagged RING1B subunit on FLAG affinity resin (Sigma, St Louis, MO) and eluted under native conditions using a 1x FLAG peptide (GL Biochem, Shanghai, China) with the lysis buffer containing 10 mM Tris (pH 8.0), 500 mM NaCl, 4 mM MgCl2, 2 mM DTT, 20% glycerol (v/v), cOmplete Protease Inhibitor Cocktail (Roche, UK), wash buffer containing 20 mM HEPES (pH 7.9), 150 mM NaCl, 2 mM MgCl2, 1 mM DTT, 15% glycerol (v/v), cOmplete Protease Inhibitor Cocktail, dilution buffer containing 10 mM Tris (pH 8.0), 10% glycerol (v/v), 0.02 % NP-40, and elution buffer consisting of wash buffer with 0.2 mg/mL 1x FLAG peptide. Mouse Rybp and Yaf2 were cloned into pNIC28 and transformed into E. coli Rosetta2 cells; mutagenesis of Rybp was carried out using the QuikChange II mutagenesis kit (Agilent). His-tagged proteins were purified on Co-Talon resin using the same buffers as for FLAG purification, but with the exception of DTT and the addition of 10 mM imidazole to the wash buffer, and 150 mM imidazole to the elution buffer instead of FLAG peptide. This was followed by anion exchange chromatography (HiTrap Q FF; GE Healthcare, UK).\n\n### Crosslinking mass spectrometry\n\nProtein crosslinking was carried out as previously described (Leitner et al., 2014). 30 \u00b5g of PRC1 protein complex was crosslinked with BS3 (Creative Molecules) for 30 min at 37\u00b0C. The concentration of BS3 was optimised for each complex to prevent over-crosslinking as analysed by SDS-PAGE. Crosslinking reactions were quenched with 1 M NH4HCO3 to a final concentration of 50 mM and incubated at 37\u00b0C for 20 min. Crosslinking reactions were then evaporated to near-dryness in a vacuum centrifuge, and urea was then added to a final concentration of 6 M. Disulfide bonds were reduced with TCEP for 30 min at 37\u00b0C, followed by iodoacetamide treatment for 30 min at room temperature in the dark, and the reaction mixture was then diluted with 50 mM NH4HCO3 to a final concentration of 1 M urea. Samples were then digested overnight with trypsin (Promega, Madison, WI) at a 1:50 enzyme:substrate ratio, desalted using a C18 Sep-pak cartridge (Waters, UK) and evaporated to dryness before being resuspended in 70% H2O/30% ACN/0.1% TFA and subjected to gel filtration using a Superdex Peptide 10/300 GL column (GE Healthcare). Peak fractions corresponding to crosslinked peptides were then combined and analysed by liquid chromatography tandem mass spectrometry (LC-MS/MS) using an Orbitrap Elite (ThermoScientific, Waltham, MA) as described previously (Adam et al., 2011). MZXML data files were analysed using the XQuest software package as described (Leltner et al., 2014). Data were represented using Circos with crosslinks weighted by confidence score (generated by XQuest). A confidence score cut-off\u00a0>\u00a015 was chosen by a combination of FDR\u00a0<\u00a010% and validation of crosslinks wherever possible using known proximities from crystal structures (lysine \u03b1-carbons separated by\u00a0<27 \u00c5).\n\n### Reconstitution of nucleosomes\n\nNucleosomes were reconstituted as previously described (Dyer et al., 2004). Recombinant Xenopus histones were expressed in E. coli BL21(DE3) pLysS and purified from inclusion bodies via Sephacryl S-200 gel filtration (GE Healthcare). Stoichiometric amounts of each core histone were incubated together under high salt conditions (2 M NaCl) and the resulting histone octamer purified using a Superdex 200 gel filtration column (GE Healthcare). 216 bp DNA carrying the nucleosome-positioning 601 sequence was PCR amplified from the pGEM-3Z 601 plasmid and purified using a Resource Q anion exchange column (GE Healthcare). Purified DNA, in slight excess to octamers, was mixed together in 2 M NaCl and diluted stepwise with 10 mM Tris (pH 7.5) to reach a final concentration of 100 mM NaCl. The reconstituted nucleosomes were then analysed on a 0.8% Tris-borate agarose gel, and concentrated using a 5000 MWCO spin concentrator (GE Healthcare).\n\n### E3 ligase assays\n\nE3 ligase assays were performed in the presence of reconstituted PRC1 and nucleosomes, with the addition of UBE1 (Boston Biochem), UbcH5c (Boston Biochem), methylated ubiquitin (Boston Biochem) and ATP (Life Technologies). Concentrations of E1, E2 and ubiquitin were pre-optimised such that reactions were pseudo-first order with respect to PRC1. Ubiquitylation reactions were carried out in 50 mM Tris (pH 7.5), 2.5 mM MgCl2 and 0.5 mM DTT. E1, E2, ubiquitin and ATP were pre-incubated for 20 min at 37\u00b0C, followed by addition of PRC1 and nucleosomes (0.35 \u00b5M final concentration), and then incubated at 37\u00b0C for 1 hr. Reactions were quenched with 5 mM EDTA and SDS-PAGE loading buffer (2% SDS, 100 mM Tris-HCl (pH 6.8), 100 mM DTT, 10% glycerol, 1 mg/mL bromophenol blue), boiled for 5 min, and loaded onto SDS-PAGE gels for western blot analysis. Western blots were probed with antibodies specific for histone H2AK119ub1 (Farcas et al., 2012) or histone H2A (Millipore 07\u2013146), followed by incubation with LiCOR IRDye secondary antibodies (800CW goat anti-rabbit and goat anti-mouse). Westerns were imaged using the LiCOR Odyssey Fc imaging system, and the fraction of H2AK119ub1 relative to total H2A (non-ubiquitylated H2A plus H2AK119ub1) was quantified. Data were visualised and dose-response curves fitted using GraphPad Prism 6.0.\n\n### Generation of Rybpfl/fl;Yaf2\u2212/\u2212 conditional KO embryonic stem cells\n\nRybpfl/fl\u00a0mouse embryonic stem cells, which were previously described and validated (Hisada et al., 2012), were grown in DMEM (Gibco, Carlsbad, CA) supplemented with 15% FBS, 10 ng/mL leukemia-inhibitory factor, penicillin/streptomycin, beta-mercaptoethanol, L-glutamine and non-essential amino-acids. Within our laboratory, cells were regularly tested to ensure the absence of mycoplasma contamination. sgRNAs for Yaf2 (Guide 1: TCTGATCGAGGGGCGACTTT; Guide 2: CGCATGGAACGGCACGGCAC) were cloned into pSpCas9(BB)-2A-Puro (plasmid 48139; Addgene, Cambridge, MA) using a previously described protocol (Ran et al., 2013). Cells were transfected with Cas9-sgRNA plasmids using Lipofectamine 3000 (Life Technologies), followed by puromycin selection (1 \u00b5g/mL) for 48 hr. Individual colonies were isolated after approximately 10 days, expanded and screened by PCR for the deletion of Yaf2 exons 1 and 2. Deletion of Yaf2 mRNA and protein was confirmed by qRT-PCR and Western Blot, using a YAF2-specific antibody (Park et al., 2015). Rybpfl/fl;Yaf2-/- cells were treated with 800 nM 4-hydroxytamoxifen (OHT) for 96 hr to conditionally delete RYBP, which was verified by Western Blot (Millipore AB3637).\n\n### Chromatin immunoprecipitation\n\nChromatin immunoprecipitation was performed as described previously (Farcas et al., 2012), with minor modifications. For non-histone ChIP experiments, cells were fixed for 1 hr in 2 mM EGS, followed by 15 min in 1 % formaldehyde. Reactions were quenched by the addition of glycine to a final concentration of 125 \u00b5M. After cell lysis and chromatin extraction, chromatin was sonicated using a BioRuptor sonicator (Diagenode), followed by centrifugation at 16,000 \u00d7 g for 20 min at 4\u00b0C. For histone ChIP experiments we used a native ChIP protocol combined with a calibrated ChIP-seq approach, as previously described (Bonhoure et al., 2014; Hu et al., 2015; Orlando et al., 2014). To achieve this, 1.25 \u00d7 107 Drosophila melanogaster S2 cells were spiked in to 5 \u00d7\u00a0107\u00a0Rybpfl/fl;Yaf2-/-\u00a0mouse embryonic stem cells with or without OHT treatment. Nuclei were then isolated with RSB buffer (10 mM Tris-HCl (pH 8), 10 mM NaCl, 3 mM MgCl2) supplemented with 0.1 % NP-40 and 5 mM N-ethylmaleimide, followed by MNase digestion for 5 min with 150 U MNase (Fermentas, Waltham, MA) in 1 ml RSB supplemented with 0.25 M sucrose, 3 mM CaCl2 and 10 mM N-ethylmaleimide. Digestions were stopped with EDTA, before nuclei were pelleted by centrifugation at 1500 x g and the soluble S1 fraction collected. Pelleted nuclei were then resuspended in 300 \u00b5l nucleosome release buffer (10 mM Tris-HCl (pH 7.5), 10 mM NaCl, 0.2 mM EDTA, 10 mM N-ethylmaleimide), incubated at 4\u00b0C for 1 hr with gentle rotation, and then gently passed through a 27G syringe needle five times. Following centrifugation to pellet the insoluble material, the soluble S2 fraction was collected and combined with the S1 fraction.\n\nImmunoprecipitations were performed overnight at 4\u00b0C using chromatin corresponding to 5\u00a0\u00d7 106 cells. For non-histone ChIP experiments, chromatin was diluted in ChIP dilution buffer (1% Triton-X100, 1 mM EDTA, 20 mM Tris-HCl (pH 8), 150 mM NaCl), while for histone ChIPs, combined S1/S2 fractions were diluted in native ChIP incubation buffer (70 mM NaCl, 10 mM Tris (pH 7.5), 2 mM MgCl2, 2 mM EDTA, 0.1% Triton). Immunoprecipitations were carried out in a total volume of 1 ml using approximately 3 \u00b5g of antibody. Antibodies used for ChIP experiments were anti-H2AK119ub1 (Cell Signalling D27C4), anti-H3K27me3 (generated in-house), anti-RYBP (Millipore AB3637), anti-RING1B (Cell Signalling D22F2) and anti-SUZ12 (Cell Signalling D39F6). Antibody-bound chromatin was isolated on protein A agarose beads (RepliGen, Waltham, CA) or protein A magnetic Dynabeads (Invitrogen, Carlsbad, CA). For non-histone ChIPs, washes were performed with low salt buffer (0.1% SDS, 1% Triton, 2 mM EDTA, 20 mM Tris-HCl (pH 8.1), 150 mM NaCl), high salt buffer (0.1% SDS, 1% Triton, 2 mM EDTA, 20 mM Tris-HCl (pH 8.1), 500 mM NaCl), LiCl buffer (0.25 M LiCl, 1% NP40, 1% sodium deoxycholate, 1 mM EDTA, 10 mM Tris-HCl (pH 8.1)) and TE buffer (x2 washes) (10 mM Tris-HCl (pH 8.0), 1 mM EDTA). Native histone ChIPs were instead washed four times with native ChIP wash buffer (20 mM Tris-HCl (pH 7.5), 2 mM EDTA, 125 mM NaCl and 0.1% Triton), followed by a final TE buffer wash. To prepare ChIP-seq material, ChIP DNA was eluted, and cross-links reversed at 65\u00b0C in the presence of 200 mM NaCl where required. Samples were then treated with RNase and proteinase K before being purified with ChIP DNA Clean and Concentrator kit (Zymo, Irvine, CA). For calibrated ChIP-seq experiments, an input control was prepared for each individual sample, to allow the quantitation of spike-in consistency.\n\n### Massively parallel sequencing, data processing and normalisation\n\nChIP-seq libraries were prepared using the NEBNext Ultra DNA Library Prep Kit, and sequenced as 40 bp paired-end reads on Illumina NextSeq500 platform. All ChIP-seq experiments were carried out in biological triplicate. To analyse the ChIP-seq experiments, reads were aligned to the mouse mm10 genome using bowtie2 (Langmead and Salzberg, 2012) with the '-no-mixed' and '-no-discordant' options, and non-uniquely mapping reads were discarded. ChIP-seq experiments which contained a spike-in genome (D. melanogaster) were aligned against a concatenated genome of the two genome sequences (mm10+dm6), and reads which mapped more than once were discarded. PCR duplicates were removed using SAMtools (Li et al., 2009).\n\nSpiking an identical concentration of D. melanogaster cells into our quantitative ChIP-seq experiments allows for calibration of each sample for IP efficiency and total mouse cell number. When comparing ChIP-seq for untreated and OHT-treated cell lines using an internal calibration, the number of mm10 reads were randomly downsampled to reflect the total number of dm6 reads in that sample. Furthermore, to adjust for variation in the dm6/mm10 ratio between biological replicates, each sample was adjusted using the percentage of dm6 reads relative to mm10 reads in each sample's input DNA. Biological replicates for ChIP-seq samples without internal spike-in were randomly downsampled to contain the same number of reads for each individual replicate. Genome coverage tracks were made using the pileup function of MACS2 (Zhang et al., 2008) and visualised using the UCSC genome browser.\n\n### Peak calling, read count quantitation and analysis\n\nWe identified regions of H2AK119ub1 enrichment using the dpeak function of DANPOS2 (-q 40 \u2013kw 750 \u2013kd 1500, height_logP\u00a0>\u00a0100) (Chen et al., 2013) and peaks closer than 5 kilobases were merged. RING1B, SUZ12 and H3K27me3 peaksets were generated using MACS2 (-broad), and peaks closer than 2 kilobases were merged. Read counts within intervals were generated using custom script GFF.ReadCountFromList.pl. For non-calibrated ChIP-seq, reads per kilobase per million (RPKM) were calculated, while for calibrated ChIP-seq, normalised reads per kilobase (NRPK) were calculated (after normalisation to calibration genome). For each interval, biological triplicate NRPK or RPKM values were compared between untreated and OHT-treated samples using a two-sample T-Test, with a p value threshold of\u00a0<0.05 being used to identify significant difference. Log2 fold change values were visualised using R (v 3.2.1), with scatterplots coloured by density using stat_density2d. Regression and correlation analyses were also performed in R using standard linear models and Pearson correlation respectively. Metaplots were made using HOMER (version 2) (Heinz et al., 2010), Heatmaps and genome-wide correlation analyses were generated using deepTools2.\n\n### Identification of variant-enriched and shared PRC1 target sites\n\nA\u00a0\u00b110 kb window centred on H2AK119ub1 intervals was provided to deepTools2 for k-means clustering based on RYBP (this study) and CBX7 (Morey et al., 2013) ChIP-seq (Ryan et al., 2016). This generated two clusters, variant-enriched (RYBP-enriched but CBX7-depleted) and shared (RYBP- and CBX7-enriched).\n\n### Nuclear RNA-seq sample generation and analysis\n\n1\u00a0\u00d7 107 Rybpfl/fl;Yaf2\u2212/\u2212 cells with or without OHT were resuspended in 1 mL HS Lysis buffer (50 mM KCl, 10 mM MgSO4.7H20, 5 mM HEPES, 0.05% NP40 (IGEPAL CA630)), 1 mM PMSF, 3 mM DTT) for 1 min at room temperature to isolate nuclei. Nuclei were centrifuged at 1000 \u00d7 g for 5 min at 4\u00b0C, followed by a total of three washes with ice-cold RSB buffer. Nuclei were then resuspended in 1 mL of TriZOL reagent (ThermoScientific) according to the manufacturer\u2019s protocol. Nuclear RNA was treated with the TURBO DNA-free Kit (ThermoScientific) and depleted for rRNA using the RiboMinus kit and protocol (ThermoScientific). RNA-seq libraries were prepared using the NEBNext Ultra Directional RNA-seq kit (NEB) and libraries were sequenced on the Illumina NextSeq500 with 40 bp paired-end reads.\n\nRNA-seq reads were initially aligned against the rRNA genomic sequence (GenBank: BK000964.3) using bowtie2 to filter out rRNA fragments, prior to alignment against the mm10 genome using the STAR RNA-seq aligner (Dobin et al., 2013). To improve mapping of nascent, intronic sequences, reads which failed to map using STAR were aligned against the genome using bowtie2. Biological triplicate read counts were determined using a custom script (GFF_PairedEndRNA.ReadCount.pl) for a custom-built, non-redundant mm10 gene set. Briefly, mm10 refGene genes were filtered on size (>200 bp), gene body and TSS mappability, unique TSS and TTS, in order to remove poorly mappable and highly similar transcripts. The final set of 20,633 genes were used for differential analysis using DESeq2 (Love et al., 2014), with default settings and a significance threshold of padj\u00a0<\u00a00.05. Previously published nuclear RNA-seq from RING1Bfl/fl;RING1A-/- was aligned and processed in an identical manner (Schoenfelder et al., 2015). Statistical significance between Polycomb target TSS and non-Polycomb TSS was assessed using Wilcoxon signed rank test. Venn diagram overlap of significantly increased genes was performed using BioVenn (Hulsen et al., 2008).\n\n### Accession numbers\n\nChIP-seq and RNA-seq data from the present study are available for download at GSE83135. Previously published datasets used for analysis include wildtype embryonic stem cell (E14) H3K4me3 from the ENCODE project (GSE31039), CBX7 ChIP-seq (GSE42466; Morey et al., 2013), RNA polymerase II ChIP-seq (GSE34520; Brookes et al., 2012), MNase-seq (GSE59064; Anderson and Slotkin, 1975); RING1A-/-;RING1Bfl/fl nuclear RNA-seq (E-MTAB-3125; Schoenfelder et al., 2015) and RING1BI53A mutant (GSE69978; Illingworth et al., 2015).\n",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "69bc8ba4-4e2b-423f-9d7e-22c501f4eefd",
+      "submission_id": "415d2148-c3e6-4914-9ea9-bff7d4a602fe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Verrijzer, Erasmus University Medical Center , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18591.029](https://doi.org/10.7554/eLife.18591.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"RYBP stimulates PRC1 to shape chromatin-based communication between Polycomb repressive complexes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Wendy A Bickmore (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Rose and colleagues use biochemical and genetic approaches to address how the RYBP subunit of non-canonical PRC1 (ncPRC1) complexes contribute to transcriptional regulation and if they also contribute to PRC2 complex activity. This is in the context of recent studies reporting that the ubiquitination of H2A (mediated by ncPRC1 complexes) is both capable of recruiting the PRC2 complex to an artificial gene locus (Blackledge et al., 2014, Cell; Cooper et al., 2014) and increasing the activity of PRC2 in vitro (Kalb et al., 2014, Nature Structural Molecular Biology). However, more recent genetic evidence in Ring1a/b double knockout cells have shown that a complete ablation of ncPRC1 activity did not affect global H3K27me3 levels in gut tissues (Chiacchiera et al., Cell Stem Cell, 2016). Furthermore, while the loss of PRC2 mediated H3K27me3 leads to HOX gene derepression in Drosophila (Pengelly et al., Science, 2013), the complete loss of H2A ubiquitination did not phenocopy this (Pengelly et al., Genes & Development 2015). Likewise, recent genetic studies questioned the importance of H2A ubiquitination for Polycomb silencing in mice (Illingworth et al., Genes Dev. 2015). Despite this, we know from these studies and others, that ncPRC1 and indeed H2Aub are essential for embryonic development. Finally, that RYBP can stimulate H2Aub1 by a subset of PRC1 complexes is already established in ES cells and in flies (Gao et al., 2012; Fereres et al., 2014, PLoS One). Moreover, cross-talk between PRC1/H2Aub1 and PRC2/H3K27me3 has been examined previously (Tavares et al., 2012; Blackledge et al., 2014; Cooper et al., 2014; Kalb et al., 2014; Illingworth et al., Genes Dev. 2015; Pengelly et al., Genes Dev 2015; Fereres et al., 2014, PLoS One; Morey et al., Cell Reports 3, 2013), but these studies resulted in rather diverse conclusions.\n\nIn this overall well-done study, the authors firstly establish an in vitro ubiquitination assay for ncPRC1, and use it to explore the role of the RYBP subunit (Figures 1\u20134). They discover that RYBP is capable of considerably boosting H2A ubiquitination in vitro. In Figures 5\u20139, they use knockout mouse embryonic stem (ES) cells to explore the roles of RYBP in vivo. They compare a Yaf2 knockout ES cells and Rybp/Yaf2 double knockout ES cells to examine the effect on the global levels of H2AK119ub1 (Western blot) and at selected Polycomb target genes (ChIP-seq). While surprisingly, they observe that the overall global levels of H2AK119ub1 are apparently unchanged in the RYBP/Yaf2 double knockout ES cells, they detect moderate local reductions of H2AK119ub1 at sites normally occupied by Rybp and Ring1b. Taken together with their in vitro observations, these results suggest that Rybp and Yaf2 are not essential for the H2AK119ub1 activity of ncPRC1 complexes and rather are co-factors that can augment activity, perhaps at more weakly bound sites. They then go on to correlate local reductions in H2AK119ub1 with moderate reductions in H3K27me3 and slight increases in transcription at some of the affected Polycomb target genes. However, they report that this reduced H3K27me3 does not correlate with reduced PRC2 complex occupancy, as measured by ChIP-seq analysis of Suz12 in their Rybp/Yaf2 double knockout ES cells. The authors use these observations to propose a model for the communication between PRC1 and PRC2, at least on a number of gene regulatory loci.\n\nWhereas the reviewers found the manuscript potentially interesting for the readership of eLife, because it shed light on the function of RYBP and the communication between PRC1 and PRC2, several major concerns were raised that will need to be addressed experimentally.\n\nEssential revisions:\n\n1) The authors should avoid making quantitative conclusions about Ring1b (Figure 6) and Suz12 (Figure 8) in the wild-type versus Rybp/Yaf2 double knockout ES cells. They rightly point out that the ChIP-RX method (Orlando et al., Cell Reports, 2014,) is the correct approach to quantify potential changes in the H2AK119ub1 and H3K27me3 histone marks. However, they employ non-quantitative ChIP-seq to look at the Ring1b and Suz12 binding profiles. They should instead employ a careful, quantitative ChIP-qPCR approach, checking multiple representative sites, in order to properly evaluate if Ring1B and Suz12 occupancy change in the Rybp/Yaf2 double knockout ES cells (Figure 6 and 8). This is especially important for both their model that RYBP primarily influences ncPRC1 activity (and not level, or localization of the complex, as published by others see e.g. Gao et al., 2012; Tavares et al., 2012; Morey et al., Cell Reports 3, 2013) and the open question whether the presence of H2AK119ub1 might either lead to increased recruitment of PRC2 or increase its activity (again, the authors should content with the already published work). Based on ChIP data the authors conclude that H2A ubiquitination is required for normal H3K27 methylation and proposed an \"activity-based communication between PRC1 and PRC2\". While this conclusion is likely to be correct (this point has basically been made in earlier publications), this cannot be concluded solely from ChIP data in this manuscript. In fact, Kalb et al. (2014) already did an experiment that allows such a mechanistic interpretation by showing that nucleosomes containing H2Aub1 are a better substrate for H3K27 methylation by PRC2.\n\n2) The authors should carry out gene ontology (GO) analysis of the genes that lose both H2AK119ub1 and H3K27me3 at their promoters in the Rybp/Yaf2 double knockout ES cells in a bid to identify ncPRC1 specific sets of target genes and compare to similar work in previous studies. It would be interesting to further delineate those H3K27me3 positive genes that do and don't have reduced H3K27me3 in the Rybp/Yaf2 double knockout ES cells. This would be important for the readers in light of previous work delineating the biological roles of cPRC1 and ncPRC1 (Pengelley et al., 2015 and Illingworth et al., 2015). These studies found that H2A ubiquitination appears to be dispensable for Polycomb dependent repression of the Hox genes. However, since H2Aub is required for both fly and mouse viability, it becomes interesting to begin to determine which genes are dependent on ncPRC1 mediated H2AK119ub1 for their regulation.\n\n3) To better report the genome-wide binding profiles of cPRC1 and ncPRC1 in ES cells, the authors should include heat maps of their ChIP-seq data for all transcription start sites (+/- 5kb) for Cbx7 (Morey et al., 2013, Cell Reports), Ring1b (+/-OHT), Rybp (+/-OHT), H2AK119ub1 (+/-OHT) and H3K27me3 (+/-OHT). This would help delineate the cPRC1 and ncPRC1 unique target genes and it may shed light on whether loss of Rybp affects H3K27me3 levels at shared ncPRC1 and cPRC1 target genes or on ncPRC1 specific target genes only.\n\n4) Following this heat map analysis, the authors should investigate whether the 230 Polycomb target genes that have an increase in transcription in their Rybp/Yaf2 double knockout cells (Figure 9) are ncPRC1 specific, cPRC1 specific or ncPRC1 and cPRC1 shared target genes. They should provide ChIP-qPCRs of Suz12, H3K27me3 and Ring1b at a representative set of these gene promoters.\n\n5) In Figures 1\u20134 reconstituted histone H2A ubiquitination assays are used in which different recombinant PRC1 assemblages are compared by titrating increasing amounts of enzyme with a fixed substrate and the% conversion at the end of the reaction is determined. The correct way to compare enzymatic activities is to determine reaction rates. I.e. measure conversion over time using a fixed amount of enzyme and substrate! This experiment should be included for a few key complexes. Another critical issue is that the ratio enzyme vs substrate (nucleosomes) is not clear. It is essential that the substrate is in excess over the enzyme (this should be shown). Finally, a better analysis of the nucleosomes used in the assays need to be provided. E.g. are there free histones in the prep? An additional nucleosome purification step (e.g. glycerol centrifugation or size exclusion chromatography) would give more confidence. This is also important because the results in this manuscript are at odds with published work from other groups (e.g. Gao et al. 2012; Tavares et al., 2012). Finally, subsection \u201cPCGF1-PRC1 is a highly modular protein complex\u201d \u2013 and Figure 1D. It appears that the absence of RYBP leads to consistently reduced levels of PCGF1 (lanes 4 to 6) and possibly a slight reduction in BCOR (lane 5). This suggests that RYBP may help to stabilize these interactions. Quantitation of this blot should be performed and these result discussed in the text.\n\n6) The Introduction, and actually most of the manuscript, does not give a clear overview of what has already been published on this topic. It is not that many major references were missing (although e.g. the work of the Sixma lab (Buchwald et al., 2006) should be included), rather the Introduction does not clearly summarized the work already done. In addition, somewhat more attention to work in the fly would be helpful to the reader as well. E.g. ncPRC1 complexes and there role in histone ubiquitylation were first described in the fly (Lagarou et al., 2008). Finally, in the Results and DDiscussion sections, findings by others with similar experiments should be mentioned and where appropriated differences should be discussed. The whole manuscript strongly emphasizes the catalytic functions of PRC1/2 but this needs to be much better balanced by a discussion of the substantial evidence \u2013 both in vitro and in vivo, and in flies and mammals \u2013 that PRC1 executes many of its functions through a structural change in the underlying chromatin and that is independent of its catalytic activity.\n",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5793de1f-7ac4-4f10-8229-1b60537ab394",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C1",
+      "claim": "PCGF1-PRC1 is a highly abundant complex in embryonic cells and tissues where the PcG system plays a pivotal role in developmental gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic cells and tissues where the PcG system is thought to play a pivotal role in developmental gene regulation, the PCGF1-PRC1 complex is highly abundant (Kloet et al., 2016), and is required for H2AK119ub1 and normal development (Farcas et al., 2012; Blackledge et al., 2014; Gao et al., 2012; He et al., 2013; Wu et al., 2013; Gearhart et al., 2006; Boulard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "fb340181-adec-458d-b46b-40df6e340e0d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C2",
+      "claim": "PCGF1-PRC1 is required for H2AK119ub1 and normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic cells and tissues where the PcG system is thought to play a pivotal role in developmental gene regulation, the PCGF1-PRC1 complex is highly abundant (Kloet et al., 2016), and is required for H2AK119ub1 and normal development (Farcas et al., 2012; Blackledge et al., 2014; Gao et al., 2012; He et al., 2013; Wu et al., 2013; Gearhart et al., 2006; Boulard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "349a95ec-4df8-410a-9d5b-de099a5ceadb",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C3",
+      "claim": "The PCGF1-PRC1 holocomplex contains five components: RING1B, PCGF1, RYBP, KDM2B and BCOR.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we used a baculovirus co-expression system (Bieniossek et al., 2012) to assemble and affinity-purify the five component PCGF1-PRC1 holocomplex containing RING1B, PCGF1, RYBP, KDM2B and BCOR (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through protein purification and visualization in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "636fd91f-41cb-4c33-b885-352dbcf23a77",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C4",
+      "claim": "RING1B is in close proximity to PCGF1 and RYBP within the PCGF1-PRC1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RING1B was in close proximity to PCGF1 and RYBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by crosslinking mass spectrometry analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "99b97227-0b12-4371-b236-bc8f9000073a",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C5",
+      "claim": "RING1B and RYBP crosslinks are consistent with atomic resolution information detailing their physical interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly RING1B and RYBP crosslinks were consistent with atomic resolution information detailing their physical interaction (Figure 1\u2014figure supplement 1) (Wang et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Crosslinking data validated against known crystal structure and published literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "080bd49a-2337-4f56-a973-9421193d3e2e",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C6",
+      "claim": "BCOR and KDM2B crosslink extensively with each other, suggesting they are in close proximity within the PCGF1-PRC1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "BCOR and KDM2B crosslinked extensively with each other suggesting they are in close proximity and also displayed additional crosslinks with PCGF1 and RYBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by crosslinking mass spectrometry analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "7e0b8aa7-2737-4bbd-abe1-434f302cda51",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C7",
+      "claim": "There is no evidence for significant crosslinks between either BCOR or KDM2B and RING1B, suggesting they are not in close proximity within the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no evidence for significant crosslinks between either BCOR or KDM2B and RING1B, suggesting they are not in close proximity within the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on absence of crosslinks in mass spectrometry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "a8e08d92-6ab6-4456-8d73-f0a4e4081179",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C8",
+      "claim": "The PCGF1-PRC1 complex exhibits a high degree of modularity where individual combinations of proteins engage extensively with each other, while others exhibit little or no clear proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a high degree of modularity within the PCGF1-PRC1 complex, where individual combinations of proteins engage extensively with each other, while others exhibit little or no clear proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking mass spectrometry data showing differential protein proximities",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "c3858793-a1df-47f8-bc80-0e5c0145034d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C9",
+      "claim": "KDM2B and BCOR can be completely removed from the PCGF1-PRC1 complex, either individually or in combination, to leave an intact PCGF1-RING1B-RYBP sub-complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that KDM2B and BCOR, which appear to interact with the complex through PCGF1 (Figure 1C), can be completely removed, either individually or in combination, to leave an intact PCGF1-RING1B-RYBP sub-complex (Figure 1D(i\u2013iii)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by co-expression experiments shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "244b2d55-da0b-423b-8983-6c5af0a74984",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C10",
+      "claim": "When RYBP is removed from the PCGF1-PRC1 complex, BCOR and KDM2B are still able to independently interact with the PCGF1-RING1B dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when RYBP was removed from the PCGF1-PRC1 complex, BCOR and KDM2B were still able to independently interact with the PCGF1-RING1B dimer (Figure 1D(iv\u2013v)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by co-expression experiments shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "af12f30f-de28-4c58-827a-4a7c4202414d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C11",
+      "claim": "The inclusion of BCOR and KDM2B in the PCGF1-PRC1 complex does not require RYBP or an interaction with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that inclusion of BCOR and KDM2B in the PCGF1-PRC1 complex does not require RYBP, or an interaction with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from co-expression experiments showing independent interactions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "42d0829c-b0ea-49c2-b143-f80e62c43b27",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C12",
+      "claim": "PCGF1 and RING1B form dimers in the absence of other PCGF1-PRC1 components.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in agreement with analysis of other PCGF/RING1 interactions, PCGF1/RING1B formed dimers in the absence of other PCGF1-PRC1 components (Figure 1D(vi)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by co-expression experiments and consistent with published literature on other PCGF/RING1 interactions",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "d009fa95-3c54-4194-bbdb-042e46165a1f",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C13",
+      "claim": "The PCGF1-PRC1 holocomplex assembles around a core PCGF1-RING1B dimer in a highly modular fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the PCGF1-PRC1 holocomplex assembles around a core PCGF1-RING1B dimer, and does so in a highly modular fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from the series of co-expression experiments showing independent assembly of subunits",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "6f1301f3-17d0-47b1-9255-69fd27b9ad27",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C14",
+      "claim": "The Drosophila dRAF complex exhibits similar modularity to PCGF1-PRC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Drosophila, the related dRAF complex exhibits similar modularity (Lagarou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "a27611a0-9bd7-41b0-ae8b-45ff28bec609",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C15",
+      "claim": "The assembly of PCGF1-PRC1 contrasts with the assembly of the PRC2 holocomplex, which relies on extensive and highly integrated protein-protein interactions for its efficient formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts the assembly of the PRC2 holocomplex, which appears to rely on extensive and highly integrated protein-protein interactions for its efficient formation (Ciferri et al., 2012; Jiao and Liu, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison based on published literature about PRC2 assembly",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "5f23e90f-60fa-4c23-9c37-62e0f95e8da9",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C16",
+      "claim": "Reconstituted PCGF1-PRC1 is active in converting H2A to mono-ubiquitylated H2A.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this important question, we first established a quantitative in vitro E3 ligase activity assay using nucleosome substrates and confirmed that reconstituted PCGF1-PRC1 was active by detecting the conversion of H2A to mono-ubiquitylated H2A (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in vitro E3 ligase assay shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "d35b6fec-2bc8-423f-b298-6f8440529638",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C17",
+      "claim": "The PCGF1-PRC1 holocomplex is substantially more active than the PCGF1-RING1B core dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the PCGF1-PRC1 holocomplex was substantially more active than the PCGF1-RING1B core (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparative E3 ligase activity assay shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "f80f26c0-3b65-4948-a509-394240fa6e76",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C18",
+      "claim": "Interaction of RYBP with the RING1B-PCGF1 core dimer is responsible for elevated enzymatic activity of the PCGF1-PRC1 holocomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that interaction of RYBP with the RING1B-PCGF1 core dimer was responsible for elevated enzymatic activity of the PCGF1-PRC1 holocomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by testing individual PCGF1-PRC1 sub-complexes in E3 ligase assays shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "b480b5c3-398b-4047-9b3f-6620b3582bcf",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C19",
+      "claim": "KDM2B and BCOR contribute little or nothing to the E3 ligase activity of PCGF1-PRC1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, KDM2B and BCOR appeared to contribute little or nothing to this activity, suggesting that they confer alternative, non-enzymatic functions to the PRC1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by testing sub-complexes lacking these components in E3 ligase assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "4135af45-96a6-49ac-93c0-52cbe13bfcf3",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C20",
+      "claim": "YAF2 stimulates PCGF1-RING1B activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this revealed that YAF2 also stimulated PCFG1-RING1B activity (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by E3 ligase assay with recombinant YAF2 shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "838a74e7-ace7-491a-a2c3-2cb6eb167b15",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C21",
+      "claim": "RYBP and YAF2 regulate PCGF1-PRC1 activity in vitro by stimulating the PCGF1-RING1B core dimer and enhancing H2AK119ub1 deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations reveal that RYBP and YAF2 regulate PCGF1-PRC1 activity in vitro, where they act to stimulate the PCGF1-RING1B core dimer and enhance H2AK119ub1 deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from E3 ligase assays with RYBP and YAF2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "5f12e98a-8e18-499f-a429-e5ece24546c8",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C22",
+      "claim": "PCGF1-RING1B is significantly more active than PCGF4-RING1B.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this revealed that PCGF1-RING1B was significantly more active than PCGF4-RING1B (Figure 3B), indicating that the enzymatic activity of a given PRC1 complex is inherently defined by the PCGF-RING dimer which forms its catalytic core.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparative E3 ligase assay shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "f80151eb-072b-4dfc-8a74-95a4893f7d1c",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C23",
+      "claim": "The enzymatic activity of a given PRC1 complex is inherently defined by the PCGF-RING dimer which forms its catalytic core.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this revealed that PCGF1-RING1B was significantly more active than PCGF4-RING1B (Figure 3B), indicating that the enzymatic activity of a given PRC1 complex is inherently defined by the PCGF-RING dimer which forms its catalytic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative activity data between PCGF1-RING1B and PCGF4-RING1B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "1ab852a8-7747-48eb-a118-934a288fc77a",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C24",
+      "claim": "RYBP has a small stimulatory effect on PCGF4-RING1B activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of our experiments, we observe a small stimulatory effect when RYBP was added to PCGF4-RING1B (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by E3 ligase assay shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "2a11fb6b-4254-4314-827b-bae636ea03a2",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C25",
+      "claim": "PCGF4-RING1B-RYBP is much less active than PCGF1-RING1B-RYBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this low level of stimulation, PCGF4-RING1B-RYBP was still much less active than PCGF1-RING1B-RYBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparative E3 ligase assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "7e55d405-1cea-48a2-b1d5-1beef173c139",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C26",
+      "claim": "The PCGF component of PRC1 complexes defines the inherent H2AK119 E3 ligase activity of individual PRC1 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations indicate that the PCGF component of the PRC1 complexes defines the inherent H2AK119 E3 ligase activity of individual PRC1 dimers and that inclusion of RYBP/YAF2 further matures these assemblies into robust enzymes that can efficiently modify chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from comparative activity assays of different PCGF-containing complexes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "230db9ad-94dc-4ba1-ae35-a5e30d8ba9c1",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C27",
+      "claim": "Inclusion of RYBP/YAF2 matures PRC1 assemblies into robust enzymes that can efficiently modify chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations indicate that the PCGF component of the PRC1 complexes defines the inherent H2AK119 E3 ligase activity of individual PRC1 dimers and that inclusion of RYBP/YAF2 further matures these assemblies into robust enzymes that can efficiently modify chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from E3 ligase assays showing RYBP/YAF2 stimulation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "4aa7d20e-1aac-4914-83ba-7783c9b47048",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C28",
+      "claim": "Both wildtype RYBP and RYBP with mutations in the NZF domain that abrogate ubiquitin binding stimulate the activity of PCGF1-RING1B to a similar extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both forms of RYBP stimulated the activity of PCGF1-RING1B to a similar extent (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by E3 ligase assay comparing wildtype and mutant RYBP shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "63299e5a-1181-4b9b-b660-c15cf1c4fbc4",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C29",
+      "claim": "The ability of RYBP to recognise ubiquitin does not account for its stimulation of PRC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the ability of RYBP to recognise ubiquitin did not account for its stimulation of PRC1, we wondered whether RYBP may instead affect how the core dimer assembles to function as an H2AK119 E3 ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing ubiquitin-binding mutant RYBP retains stimulatory activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "044464f9-98aa-47f6-9e4d-3ad257b4c45b",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C30",
+      "claim": "Within the PCGF1-RING1B dimer, there are multiple high-confidence crosslinks between the RING domain of RING1B and its C-terminal ubiquitin-like (UBL) domain, suggesting significant intramolecular interactions between these regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the PCGF1-RING1B dimer, we observed multiple high-confidence crosslinks between the RING domain of RING1B and its C-terminal ubiquitin-like (UBL) domain, suggesting that there are likely significant intramolecular interactions occurring between these regions (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined by crosslinking mass spectrometry shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "7ff164fe-0a6b-4cb1-9e32-a2e1a55245bd",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C31",
+      "claim": "Most of the RING domain/RING-UBL domain crosslinks within RING1B are lost in the trimeric complex (PCGF1-RING1B-RYBP).",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, most of the RING domain/RING-UBL domain crosslinks within RING1B were lost in the trimeric complex (PCGF1-RING1B-RYBP) (Figure 4D), suggesting that RYBP causes an alteration in PCGF1-RING1B which limits association between its N- and C-terminal domains, possibly to stabilize the formation of an optimally assembled and active E3 ligase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined by crosslinking mass spectrometry comparing dimer and trimer shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "0c6a59ec-d856-4568-a052-2e36726cceb3",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C32",
+      "claim": "RYBP causes an alteration in PCGF1-RING1B which limits association between its N- and C-terminal domains, possibly to stabilize the formation of an optimally assembled and active E3 ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, most of the RING domain/RING-UBL domain crosslinks within RING1B were lost in the trimeric complex (PCGF1-RING1B-RYBP) (Figure 4D), suggesting that RYBP causes an alteration in PCGF1-RING1B which limits association between its N- and C-terminal domains, possibly to stabilize the formation of an optimally assembled and active E3 ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking mass spectrometry data showing loss of intramolecular crosslinks upon RYBP binding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "e322cde8-0d79-4608-9b5e-caf54c186ba4",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C34",
+      "claim": "RYBP helps to reconfigure and stabilize the PCGF1-RING1B dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with our crosslinking mass spectrometry analysis, and suggests that RYBP helps to reconfigure and stabilize the PCGF1-RING1B dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data and reduced PCGF1 levels in absence of RYBP",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "829f4a39-269c-4755-b348-8b4dcffc867f",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C35",
+      "claim": "Reduced PCGF1 inclusion does not explain the effect that RYBP has on the activity of PCGF1/PRC1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly however, reduced PCGF1 inclusion does not explain the effect that RYBP has on the activity of PCGF1/PRC1 complexes, as the presence of RYBP stimulated the relative activity of PRC1 to a much larger extent than can be simply explained by PCGF1 levels alone (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of activity data with PCGF1 levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "c21d6968-d03d-44d4-8f25-00513577abd1",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C36",
+      "claim": "RYBP and YAF2 can significantly stimulate the activity of pre-existing PCGF1-RING1B assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RYBP and YAF2 were able to significantly stimulate the activity of pre-existing PCGF1-RING1B assemblies (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by E3 ligase assay with recombinant RYBP/YAF2 added to purified PCGF1-RING1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "36707a91-10bb-4cea-9a20-faee6302de20",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C37",
+      "claim": "Treatment of Rybpfl/fl;Yaf2\u2212/\u2212 cells with tamoxifen for 96 hr results in a complete loss of RYBP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the Rybpfl/fl;Yaf2\u2212/\u2212 cell line with tamoxifen resulted in a complete loss of RYBP by 96 hr as assessed by western blot (Figure 5B) and at PcG targets as assessed by ChIP-seq (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot and ChIP-seq shown in Figures 5B and 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "af2c71ce-823a-4d41-8ea9-7095c96b5f47",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C38",
+      "claim": "Deletion of RYBP in Rybpfl/fl;Yaf2\u2212/\u2212 cells does not lead to an appreciable reduction in total RING1B.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context or our new Rybpfl/fl;Yaf2\u2212/\u2212conditional system, deletion of RYBP did not lead to an appreciable reduction in total RING1B (Figure 5B), in agreement with our observation that PRC1 complex assembly in vitro is modular (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "ae678e4d-c34f-4650-8719-c8a49c2ec59f",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C39",
+      "claim": "Removal of RYBP in Rybpfl/fl;Yaf2\u2212/\u2212 cells does not significantly affect total H2AK119ub1 as measured by western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat surprisingly, despite the dramatic affects that RYBP has on H2AK119 E3 ligase activity in vitro, removal of RYBP did not significantly affect total H2AK119ub1 as measured by western blot (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot quantitation shown in Figures 5D and 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "43b0184b-667f-4453-999f-183608fa54fe",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C40",
+      "claim": "H2AK119ub1 signal in wild-type cells is highly correlated with both RING1B and RYBP occupancy genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, H2AK119ub1 signal in wild-type cells was highly correlated with both RING1B and RYBP occupancy genome-wide (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genome-wide correlation analysis shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "bf09e2cd-c801-4915-98ac-dbfcd7690c51",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C41",
+      "claim": "Removal of RYBP results in clear reductions in H2AK119ub1 at individual Polycomb target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the levels of H2AK119ub1 before and after RYBP removal at individual Polycomb target sites, we observed clear reductions in H2AK119ub1 (Figure 5G), suggesting that RYBP supports deposition of H2AK119ub1 at these genomic locations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by calibrated ChIP-seq shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "7ecfe1f9-425d-44e1-8987-1db6323814e8",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C42",
+      "claim": "Approximately 45% of H2AK119ub1-enriched regions show significant reductions in H2AK119ub1 following RYBP removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of H2AK119ub1 after removal of RYBP revealed widespread effects on H2AK119ub1 (Figure 5H), with approximately 45% of regions showing significant reductions in the levels of H2AK119ub1 (1091/2407; p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from calibrated ChIP-seq data shown in Figure 5H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "d822fc43-be3f-496e-8290-970e99cd7fff",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C43",
+      "claim": "Nearly all PRC1 targets display reductions in H2AK119ub1 following RYBP removal, albeit many below the significance threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this appeared to be an underestimation of the effect, as nearly all PRC1 targets displayed reductions in H2AK119ub1, albeit below the significance threshold (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in scatter plot analysis shown in Figure 5I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "9d78b05c-9560-4d00-aed3-7c7b41c2a4b6",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C44",
+      "claim": "A proportion of total cellular H2AK119ub1 resides outside of classical polycomb target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to a proportion of total cellular H2AK119ub1 residing outside of classical polycomb target sites as has been proposed previously in other systems (Lee et al., 2015; Goldknopf et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from discrepancy between ChIP-seq and western blot results, supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "cff8269e-aa5c-47b0-bb04-2c3546efcd66",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C45",
+      "claim": "The majority of PRC1 target sites (78%; 1870/2407) fail to show a significant change in RING1B occupancy following RYBP deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended this analysis genome-wide (Figure 6B), and found that the majority of PRC1 target sites (78%; 1870/2407) failed to show a significant change in RING1B occupancy (Figure 6B) and we validated these observations at a number of sites using ChIP quantitative PCR analysis (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from RING1B ChIP-seq data shown in Figure 6B and validated by ChIP-qPCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "3cce4bc2-44b4-4be1-b319-41114bd19f53",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C46",
+      "claim": "Following RYBP deletion, clear and widespread reductions in H2AK119ub1 occur at PRC1 target sites where RING1B occupancy remains unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, following RYBP deletion we observed clear and widespread reductions in H2AK119ub1 at PRC1 target sites where RING1B occupancy remained unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing H2AK119ub1 and RING1B ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "29daeadd-1092-4098-8ba8-1b33a9be0a8f",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C47",
+      "claim": "RYBP stimulates the E3 ligase activity of PRC1 in vivo, and decreases in H2AK119ub1 at PRC1 target sites are not due to defects in targeting PRC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these genome-wide observations strongly support our in vitro conclusions that RYBP stimulates the E3 ligase activity of PRC1, and reveal that decreases in H2AK119ub1 at PRC1 target sites are not due to defects in targeting PRC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from genome-wide ChIP-seq analysis showing H2AK119ub1 loss without RING1B loss",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "da381d5d-5931-41b3-8373-cf726e412086",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C48",
+      "claim": "Sites with limiting amounts of PRC1 have a more defined requirement for RYBP-dependent stimulation to achieve normal H2AK119ub1.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that sites with limiting amounts of PRC1 have a more defined requirement for RYBP-dependent stimulation to achieve normal H2AK119ub1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analysis showing sites with lowest RING1B have highest dependency on RYBP",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "b2ece631-8c81-4726-86ee-9caabd44c775",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C49",
+      "claim": "Sites where loss of RYBP most profoundly affects H2AK119ub1 exhibit the highest ratios of RYBP to RING1B.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the sites where loss of RYBP most profoundly affected H2AK119ub1 exhibited the highest ratios of RYBP to RING1B (Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by analysis of RYBP/RING1B ratios shown in Figures 7D and 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "a27941e3-9a7f-4551-a4f1-6c903841f7de",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C50",
+      "claim": "Variant-enriched PRC1 targets tend to show the largest reductions in H2AK119ub1 following RYBP removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, PRC1 targets that were occupied by RYBP but displayed reduced levels of CBX7 (i.e. 'variant-enriched') tended to show the largest reductions in H2AK119ub1 following RYBP removal (Figure 7F and G), whereas variant and canonical PRC1 occupied sites (i.e. 'shared') appeared to rely on RYBP to a lesser extent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by clustering analysis shown in Figures 7F and 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "13e9a01d-040d-45f8-b16a-c6433561b16e",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C51",
+      "claim": "Deletion of RYBP results in genome-wide reductions in H3K27me3 at Polycomb target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, deletion of RYBP resulted in genome-wide reductions in H3K27me3 at Polycomb target sites (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by H3K27me3 ChIP-seq shown in Figures 8A and 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "131fd92d-f23c-478f-b780-6d5edcd5b426",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C52",
+      "claim": "H3K27me3 reductions at Polycomb target sites following RYBP deletion occur without any apparent loss in the chromatin occupancy of the PRC2 component SUZ12.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, H3K27me3 reductions at Polycomb target sites occurred without any apparent loss in the chromatin occupancy of the PRC2 component SUZ12 (Figure 8A and C, Figure 8\u2014figure supplement 2), suggesting that the observed decreases in H3K27me3 likely arise as a result of reduced activity of the PRC2 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by SUZ12 ChIP-seq shown in Figures 8A, 8C, and Figure 8\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "f21915aa-f87e-49f5-a2e7-2f5b3c099be5",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C53",
+      "claim": "The largest reductions in H3K27me3 following RYBP deletion are evident at variant-enriched PRC1 target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the observed changes in H2AK119ub1 (Figure 7F and G), the largest reductions in H3K27me3 were evident at variant-enriched PRC1 target sites (Figure 8D), consistent with a more defined role for RYBP in maintaining PcG-associated histone marks at these regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by analysis shown in Figure 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "85e5bb2d-3433-4806-9504-7b955eab6f6d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C54",
+      "claim": "Reductions in H3K27me3 across all PRC1 target sites correlate closely with reductions in H2AK119ub1 following RYBP deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, reductions in H3K27me3 across all PRC1 target sites correlated closely with reductions in H2AK119ub1 (Figure 8E), indicating that the effects on H2AK119ub1 and H3K27me3 are linked and directly related to the activity of RYBP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by correlation analysis shown in Figure 8E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "da355181-4622-48bf-bc05-0403e57462af",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C55",
+      "claim": "RYBP-dependent H2AK119ub1 shapes the activity of PRC2 in depositing H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "These important observations demonstrate that RYBP-dependent H2AK119ub1 shapes the activity of PRC2 in depositing H3K27me3, and suggests that the observed stimulation of PRC2 by nucleosomes containing H2A mono-ubiquitylation in vitro is also relevant in vivo (Kalb et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from correlation between H2AK119ub1 and H3K27me3 changes, supported by citation to in vitro work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "155867f3-a4b8-420a-81eb-bca0c7f5930b",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C56",
+      "claim": "Sites with the most profound losses of H2AK119ub1 and H3K27me3 following RYBP deletion are the same sites that show reductions in PRC1 and PRC2 occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the sites with the most profound losses of H2AK119ub1 and H3K27me3 were the same sites that showed reductions in PRC1 and PRC2 (Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by analysis shown in Figure 8F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "57d25cd6-be70-4bb1-86c8-21a37d204692",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C57",
+      "claim": "There is an intimate relationship between the histone-modifying activities of PRC1 and PRC2 at target sites, which is regulated by auxiliary PcG complex subunits and not simply dictated by occupancy of PRC1/PRC2 core catalytic subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, there is an intimate relationship between the histone-modifying activities of PRC1 and PRC2 at target sites, which is regulated by auxiliary PcG complex subunits and not simply dictated by occupancy of PRC1/PRC2 core catalytic subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from observations that RYBP removal affects histone modifications without affecting core complex occupancy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "3d477fac-c92c-420e-9fa8-ddd773f9a8ed",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C58",
+      "claim": "The occupancy of PcG complexes at target sites is not driven in a linear fashion by H2AK119ub1 and H3K27me3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the occupancy of PcG complexes at target sites is not driven in a linear fashion by H2AK119ub1 and H3K27me3 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that most sites retain PcG occupancy despite reduced histone modifications",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "fad7f35e-c29e-4895-96e3-6afe306ddcbe",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C59",
+      "claim": "If activity-based communication between PcG complexes is compromised, there appears to be a modification threshold below which complex occupancy can no longer be sustained.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if activity-based communication between the PcG complexes is compromised there appears to be a modification threshold below which complex occupancy can no longer be sustained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that sites with greatest histone modification loss also lose PcG occupancy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "14ee0cea-083f-4cef-94b6-de5eedce267b",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C60",
+      "claim": "Loss of RYBP results in a limited number of robust and statistically significant transcriptional changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that loss of RYBP resulted in a limited number of robust and statistically significant transcriptional changes (Figure 9A), in agreement with previous studies examining gene expression by microarray analysis in RYBP deleted cells (Hisada et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNA-seq analysis shown in Figure 9A and consistent with published literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "2a5b7f6a-1df8-461f-9db2-6a4a1b89b9bb",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C61",
+      "claim": "More genes are significantly upregulated (n = 230) than downregulated (n = 37) following RYBP deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for RYBP in shaping PRC1-dependent gene repression, more genes were significantly upregulated (n = 230) than downregulated (n = 37), and these tended to be lowly expressed genes (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from RNA-seq data shown in Figure 9A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "be5abc39-a878-43ed-a691-723bb30002a8",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C62",
+      "claim": "Most RYBP-repressed genes fall within the set of genes that are also regulated by RING1A/B.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we compared these gene expression changes to those observed in the complete absence of PRC1 activity (RING1A\u2212/\u2212;RING1B\u2212/\u2212) (Schoenfelder et al., 2015), most RYBP-repressed genes fell within the set of genes that are also regulated by RING1A/B (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparison with published RING1A/B deletion data shown in Figure 9B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "f4beaa79-dee4-4e08-ad77-e3e5036f9d99",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C63",
+      "claim": "The extent of gene reactivation at Polycomb target genes following RYBP removal is generally of lower magnitude than gene reactivation following deletion of RING1A/RING1B.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of gene reactivation at Polycomb target genes following RYBP removalwas generally of lower magnitude than gene reactivation following deletion of RING1A/RING1B (Figure 9C), in agreement with our observations that RYBP stimulates, but is not absolutely required for, PRC1 activity and occupancy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparison shown in Figure 9C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "9abd1749-6b50-4c28-97b9-1d8ead08d778",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C64",
+      "claim": "Increased transcription following RYBP loss is often coincident with TSS-associated decreases in PcG complex occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we examined individual RYBP-dependent genes, increased transcription was often coincident with TSS-associated decreases in PcG complex occupancy (Figure 9D), although this was more apparent for PRC1 than PRC2 (Figure 9E; Figure 9\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genomic snapshots and metaplots shown in Figures 9D and 9E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "cc32d2ea-60d3-4899-95ce-6e3719f0b379",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C65",
+      "claim": "There is a clear relationship between reduction of PRC1 occupancy at TSSs and increased gene expression following RYBP deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "When we extended this analysis genome-wide there was a very clear relationship, albeit not perfectly linear, between reduction of PRC1 occupancy at TSSs and increased gene expression (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by scatter plot analysis shown in Figure 9F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "e09ae0b1-e892-43ea-b39c-606bf1e5fdec",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "claim_id": "C66",
+      "claim": "The histone modifying activities of PRC1 and PRC2 underpin feedback mechanisms that are important for maintaining Polycomb chromatin domains, counteracting inappropriate gene activation signals, and shaping normal gene repression at a subset of polycomb target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore it provides clear evidence that the histone modifying activities of PRC1 and PRC2 underpin feedback mechanisms that are important for maintaining Polycomb chromatin domains (Blackledge et al., 2015), counteracting inappropriate gene activation signals, and shaping normal gene repression, at least at a subset of polycomb target sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from combined analysis of histone modifications, PcG occupancy, and gene expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The PCGF1-PRC1 holocomplex is highly modular, assembling around a core PCGF1-RING1B dimer. KDM2B and BCOR can be removed individually or together without disrupting the PCGF1-RING1B-RYBP sub-complex, and RYBP is not required for KDM2B/BCOR interaction with the core dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C13 provide converging evidence from protein purification (C3), crosslinking mass spectrometry (C4-C7), and systematic co-expression experiments (C9-C12) that collectively demonstrate the modular assembly of PCGF1-PRC1. The crosslinking data validates known structural interactions (C5) and the co-expression experiments systematically test assembly requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RYBP and YAF2 stimulate the E3 ligase activity of PCGF1-PRC1 in vitro. The PCGF1-PRC1 holocomplex is substantially more active than the PCGF1-RING1B core dimer, and this elevated activity is specifically due to RYBP interaction, while KDM2B and BCOR contribute little to enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 present systematic in vitro E3 ligase assays comparing different PRC1 sub-complexes. The data clearly demonstrate RYBP/YAF2-dependent stimulation through iterative testing of complexes with and without specific components (C17-C19), with appropriate controls and quantitative measurements shown in Figures 2 and 2\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "55e216fb-9c6c-49d5-b30c-c307389c59cc",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The enzymatic activity of PRC1 complexes is inherently defined by the PCGF component of the catalytic core, with PCGF1-RING1B being significantly more active than PCGF4-RING1B. RYBP/YAF2 inclusion further enhances activity to create robust chromatin-modifying enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 demonstrate differential activities between PCGF1 and PCGF4-containing complexes through direct comparative assays (C22, Figure 3B). The conclusion that PCGF identity defines inherent activity (C23, C26) is well-supported by the data, though it relies on comparison of only two PCGF variants. The small stimulatory effect of RYBP on PCGF4-RING1B (C24) is acknowledged as modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "548087fb-4013-49a9-bee2-6134d67035bb",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RYBP stimulates PRC1 activity through a mechanism independent of ubiquitin binding. RYBP binding causes conformational changes in PCGF1-RING1B, reducing intramolecular crosslinks between RING1B domains, and helps stabilize the dimer, though this stabilization alone does not fully explain the activity enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 combine mutational analysis (C28-C29) with crosslinking mass spectrometry (C30-C32) to investigate mechanism. The ubiquitin-binding mutant experiment (C28) clearly rules out one mechanism. The crosslinking data (C30-C31) provide structural evidence for conformational changes, though the mechanistic interpretation (C32) is appropriately qualified as speculative. The distinction between stabilization and activity enhancement (C35) is supported by quantitative comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In Rybpfl/fl;Yaf2\u2212/\u2212 cells, RYBP deletion does not affect total RING1B levels or global H2AK119ub1 by western blot, but causes widespread reductions in H2AK119ub1 at Polycomb target sites as measured by calibrated ChIP-seq, with approximately 45% of regions showing significant decreases and nearly all sites showing some reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 present a comprehensive in vivo analysis using a well-characterized conditional knockout system. The apparent contradiction between western blot (C39) and ChIP-seq results (C41-C43) is appropriately explained by H2AK119ub1 existing outside classical Polycomb sites (C44). The calibrated ChIP-seq approach with spike-in controls strengthens the quantitative conclusions. Statistical thresholds and biological replicates are clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "1a780ab4-6efc-4158-96f2-8c893f30f8b3",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Following RYBP deletion, the majority of PRC1 target sites (78%) retain RING1B occupancy despite showing clear reductions in H2AK119ub1, demonstrating that RYBP stimulates PRC1 E3 ligase activity in vivo rather than affecting PRC1 targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 provide critical evidence distinguishing between targeting and activity effects through genome-wide RING1B ChIP-seq analysis. The data are validated by ChIP-qPCR (Figure 6\u2014figure supplement 1) and directly support the in vitro conclusions. The quantification is clear (78% of sites unaffected) and the logic connecting unchanged RING1B with decreased H2AK119ub1 to conclude activity regulation is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "faf26b2b-3ad9-4421-990f-60e7b7482e9a",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sites with limiting amounts of PRC1 (low RING1B occupancy) have greater dependency on RYBP for normal H2AK119ub1 levels, as evidenced by higher RYBP/RING1B ratios at RYBP-dependent sites. Variant-enriched PRC1 targets show the largest reductions in H2AK119ub1 following RYBP removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 present quantitative analysis of the relationship between PRC1 occupancy, RYBP levels, and H2AK119ub1 dependency across the genome. The quartile analysis (Figure 7A-D) and clustering approach (Figure 7F-G) provide systematic evidence. The interpretation that limiting PRC1 requires more RYBP stimulation (C48) is a reasonable inference from the inverse correlation between RING1B levels and RYBP dependency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "75044e06-0f83-444a-ad06-59b00bff1e99",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RYBP deletion causes genome-wide reductions in H3K27me3 at Polycomb target sites without loss of PRC2 component SUZ12 occupancy, indicating reduced PRC2 activity. H3K27me3 reductions correlate closely with H2AK119ub1 reductions, demonstrating that RYBP-dependent H2AK119ub1 shapes PRC2 activity in depositing H3K27me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 establish activity-based communication between PRC1 and PRC2 through comprehensive ChIP-seq analysis. The key evidence is that H3K27me3 decreases (C51) occur without SUZ12 loss (C52), ruling out targeting defects. The correlation analysis (C54, Figure 8E) provides quantitative support for the mechanistic link. The conclusion is appropriately supported by citation to in vitro work (C55, Kalb et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "ecda2c7b-76ba-4442-845b-57d36d1241fa",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sites with the most profound losses of H2AK119ub1 and H3K27me3 following RYBP deletion also show reductions in PRC1 and PRC2 occupancy, suggesting a histone modification threshold below which complex occupancy cannot be sustained. The relationship between histone-modifying activities and complex occupancy is regulated by auxiliary subunits and is not linear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 present an important mechanistic model supported by genome-wide analysis (Figure 8F). The observation that most sites retain PcG occupancy despite reduced modifications (C58) while sites with greatest modification loss also lose occupancy (C56) supports a threshold model. However, the threshold concept (C59) is appropriately qualified as speculative, as the exact threshold values and mechanisms are not directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RYBP deletion results in limited but significant transcriptional changes, with more genes upregulated (230) than downregulated (37). Most RYBP-repressed genes overlap with RING1A/B-regulated genes, though the magnitude of reactivation is lower than in complete PRC1 loss. Gene reactivation correlates with TSS-associated decreases in PRC1 occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 present RNA-seq analysis with appropriate statistical methods (DESeq2) and biological replicates. The comparison to RING1A/B deletion data (C62-C63) provides important context. The correlation between gene expression changes and PRC1 occupancy loss (C64-C65) is demonstrated both at individual genes and genome-wide. The modest magnitude of effects (C63) is consistent with RYBP being a stimulator rather than essential component.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "9a9f9bf5-0830-4b44-8356-5c42bfecbd81",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The histone modifying activities of PRC1 and PRC2 underpin feedback mechanisms important for maintaining Polycomb chromatin domains, counteracting inappropriate gene activation signals, and shaping normal gene repression at a subset of polycomb target sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 represents an integrative conclusion synthesizing results from multiple experiments (histone modifications, PcG occupancy, and gene expression). This conclusion is well-supported by the collective evidence showing: (1) activity-based effects on histone modifications without loss of core complex occupancy, (2) correlation between H2AK119ub1 and H3K27me3 changes, and (3) gene reactivation at sites where Polycomb domains are compromised. The qualification 'at least at a subset' appropriately acknowledges limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "e95a16d7-cd50-4d79-9c58-989c5c3e859d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PCGF1-PRC1 is highly abundant in embryonic cells and tissues and is required for H2AK119ub1 and normal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 are background claims supported by multiple published citations. These establish the biological importance of PCGF1-PRC1 and provide rationale for the study, though they do not represent new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    },
+    {
+      "id": "0642bdb4-5e7b-4b56-986a-4793493f9b4d",
+      "content_id": "e0e6d94b-a5da-402e-ba47-e0e45038dbfb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Drosophila dRAF complex exhibits similar modularity to PCGF1-PRC1, contrasting with PRC2 holocomplex assembly which relies on extensive integrated protein-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 provide comparative context from published literature. These comparisons are appropriately cited and help interpret the significance of PCGF1-PRC1 modularity, but represent synthesis of prior work rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:07:09.883223Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "349a95ec-4df8-410a-9d5b-de099a5ceadb",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "636fd91f-41cb-4c33-b885-352dbcf23a77",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "99b97227-0b12-4371-b236-bc8f9000073a",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "080bd49a-2337-4f56-a973-9421193d3e2e",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "7e0b8aa7-2737-4bbd-abe1-434f302cda51",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "a8e08d92-6ab6-4456-8d73-f0a4e4081179",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "c3858793-a1df-47f8-bc80-0e5c0145034d",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "244b2d55-da0b-423b-8983-6c5af0a74984",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "af12f30f-de28-4c58-827a-4a7c4202414d",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "42d0829c-b0ea-49c2-b143-f80e62c43b27",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "d009fa95-3c54-4194-bbdb-042e46165a1f",
+      "result_id": "5374b9bb-d22e-48b9-8dbc-db516159f9fb"
+    },
+    {
+      "claim_id": "5f23e90f-60fa-4c23-9c37-62e0f95e8da9",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "d35b6fec-2bc8-423f-b298-6f8440529638",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "f80f26c0-3b65-4948-a509-394240fa6e76",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "b480b5c3-398b-4047-9b3f-6620b3582bcf",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "4135af45-96a6-49ac-93c0-52cbe13bfcf3",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "838a74e7-ace7-491a-a2c3-2cb6eb167b15",
+      "result_id": "6b825f2a-40d9-4e46-8fe4-377e3b643dbd"
+    },
+    {
+      "claim_id": "5f12e98a-8e18-499f-a429-e5ece24546c8",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "f80151eb-072b-4dfc-8a74-95a4893f7d1c",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "1ab852a8-7747-48eb-a118-934a288fc77a",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "2a11fb6b-4254-4314-827b-bae636ea03a2",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "7e55d405-1cea-48a2-b1d5-1beef173c139",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "230db9ad-94dc-4ba1-ae35-a5e30d8ba9c1",
+      "result_id": "55e216fb-9c6c-49d5-b30c-c307389c59cc"
+    },
+    {
+      "claim_id": "4aa7d20e-1aac-4914-83ba-7783c9b47048",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "63299e5a-1181-4b9b-b660-c15cf1c4fbc4",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "044464f9-98aa-47f6-9e4d-3ad257b4c45b",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "7ff164fe-0a6b-4cb1-9e32-a2e1a55245bd",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "0c6a59ec-d856-4568-a052-2e36726cceb3",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "e322cde8-0d79-4608-9b5e-caf54c186ba4",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "829f4a39-269c-4755-b348-8b4dcffc867f",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "c21d6968-d03d-44d4-8f25-00513577abd1",
+      "result_id": "548087fb-4013-49a9-bee2-6134d67035bb"
+    },
+    {
+      "claim_id": "36707a91-10bb-4cea-9a20-faee6302de20",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "af2c71ce-823a-4d41-8ea9-7095c96b5f47",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "ae678e4d-c34f-4650-8719-c8a49c2ec59f",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "43b0184b-667f-4453-999f-183608fa54fe",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "bf09e2cd-c801-4915-98ac-dbfcd7690c51",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "7ecfe1f9-425d-44e1-8987-1db6323814e8",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "d822fc43-be3f-496e-8290-970e99cd7fff",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "9d78b05c-9560-4d00-aed3-7c7b41c2a4b6",
+      "result_id": "c1a3cd8f-b713-48b8-a705-0dd5aef17353"
+    },
+    {
+      "claim_id": "cff8269e-aa5c-47b0-bb04-2c3546efcd66",
+      "result_id": "1a780ab4-6efc-4158-96f2-8c893f30f8b3"
+    },
+    {
+      "claim_id": "3cce4bc2-44b4-4be1-b319-41114bd19f53",
+      "result_id": "1a780ab4-6efc-4158-96f2-8c893f30f8b3"
+    },
+    {
+      "claim_id": "29daeadd-1092-4098-8ba8-1b33a9be0a8f",
+      "result_id": "1a780ab4-6efc-4158-96f2-8c893f30f8b3"
+    },
+    {
+      "claim_id": "da381d5d-5931-41b3-8373-cf726e412086",
+      "result_id": "faf26b2b-3ad9-4421-990f-60e7b7482e9a"
+    },
+    {
+      "claim_id": "b2ece631-8c81-4726-86ee-9caabd44c775",
+      "result_id": "faf26b2b-3ad9-4421-990f-60e7b7482e9a"
+    },
+    {
+      "claim_id": "a27941e3-9a7f-4551-a4f1-6c903841f7de",
+      "result_id": "faf26b2b-3ad9-4421-990f-60e7b7482e9a"
+    },
+    {
+      "claim_id": "13e9a01d-040d-45f8-b16a-c6433561b16e",
+      "result_id": "75044e06-0f83-444a-ad06-59b00bff1e99"
+    },
+    {
+      "claim_id": "131fd92d-f23c-478f-b780-6d5edcd5b426",
+      "result_id": "75044e06-0f83-444a-ad06-59b00bff1e99"
+    },
+    {
+      "claim_id": "f21915aa-f87e-49f5-a2e7-2f5b3c099be5",
+      "result_id": "75044e06-0f83-444a-ad06-59b00bff1e99"
+    },
+    {
+      "claim_id": "85e5bb2d-3433-4806-9504-7b955eab6f6d",
+      "result_id": "75044e06-0f83-444a-ad06-59b00bff1e99"
+    },
+    {
+      "claim_id": "da355181-4622-48bf-bc05-0403e57462af",
+      "result_id": "75044e06-0f83-444a-ad06-59b00bff1e99"
+    },
+    {
+      "claim_id": "155867f3-a4b8-420a-81eb-bca0c7f5930b",
+      "result_id": "ecda2c7b-76ba-4442-845b-57d36d1241fa"
+    },
+    {
+      "claim_id": "57d25cd6-be70-4bb1-86c8-21a37d204692",
+      "result_id": "ecda2c7b-76ba-4442-845b-57d36d1241fa"
+    },
+    {
+      "claim_id": "3d477fac-c92c-420e-9fa8-ddd773f9a8ed",
+      "result_id": "ecda2c7b-76ba-4442-845b-57d36d1241fa"
+    },
+    {
+      "claim_id": "fad7f35e-c29e-4895-96e3-6afe306ddcbe",
+      "result_id": "ecda2c7b-76ba-4442-845b-57d36d1241fa"
+    },
+    {
+      "claim_id": "14ee0cea-083f-4cef-94b6-de5eedce267b",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "2a5b7f6a-1df8-461f-9db2-6a4a1b89b9bb",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "be5abc39-a878-43ed-a691-723bb30002a8",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "f4beaa79-dee4-4e08-ad77-e3e5036f9d99",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "9abd1749-6b50-4c28-97b9-1d8ead08d778",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "cc32d2ea-60d3-4899-95ce-6e3719f0b379",
+      "result_id": "a841bfae-5f85-4b8e-8bbf-92f07fce03fa"
+    },
+    {
+      "claim_id": "e09ae0b1-e892-43ea-b39c-606bf1e5fdec",
+      "result_id": "9a9f9bf5-0830-4b44-8356-5c42bfecbd81"
+    },
+    {
+      "claim_id": "5793de1f-7ac4-4f10-8229-1b60537ab394",
+      "result_id": "e95a16d7-cd50-4d79-9c58-989c5c3e859d"
+    },
+    {
+      "claim_id": "fb340181-adec-458d-b46b-40df6e340e0d",
+      "result_id": "e95a16d7-cd50-4d79-9c58-989c5c3e859d"
+    },
+    {
+      "claim_id": "6f1301f3-17d0-47b1-9255-69fd27b9ad27",
+      "result_id": "0642bdb4-5e7b-4b56-986a-4793493f9b4d"
+    },
+    {
+      "claim_id": "a27611a0-9bd7-41b0-ae8b-45ff28bec609",
+      "result_id": "0642bdb4-5e7b-4b56-986a-4793493f9b4d"
+    }
+  ],
+  "comparisons": []
+}

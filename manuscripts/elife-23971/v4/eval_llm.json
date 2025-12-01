@@ -1,0 +1,499 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A custom microfluidic device was developed to monitor individual yeast cell divisions while maintaining precise control of external H2O2 concentrations through continuous medium replenishment. The device was validated to ensure that diffusion was not impaired by cell crowding and that cell growth was unaffected by confinement during typical experiments lasting up to 1000 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe the development and validation of the microfluidic methodology. The experimental data in Figures 1B-C and supplementary figures demonstrate that the device maintains proper diffusion and does not artificially constrain cell growth, providing strong methodological support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Yap1 functions as a transcription factor that shuttles between cytoplasm and nucleus, and upon H2O2 exposure becomes oxidized, accumulates in the nucleus, and activates expression of genes involved in redox homeostasis and H2O2 scavenging, forming a negative feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe established knowledge about Yap1 function supported by multiple citations to prior work (Azevedo et al., 2003; Kuge et al., 1997; Lee et al., 1999; Toledano et al., 2004; Gasch et al., 2000; Godon et al., 1998). This provides the biological context for using Yap1-GFP as a reporter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cells exposed to 0-0.4 mM H2O2 experienced transient, stress-dependent growth rate reduction followed by complete recovery. Yap1-GFP showed rapid nuclear relocation (120 seconds) that saturated above 0.2 mM, followed by partial recovery to a steady-state level. Yap1 deletion strongly impaired adaptation, and Yap1 signaling was more sensitive to H2O2 than overall cellular physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are well-supported by experimental data in Figure 1D-G and supplementary figures. The temporal dynamics of Yap1 nuclear localization and growth rate recovery are quantitatively documented, and the genetic requirement for Yap1 is demonstrated. The inference that Yap1 is set by membrane diffusion rather than device limitations is supported by comparing relevant timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Cells adapted to 0.3 mM H2O2 with complete growth rate recovery, but exposure to 0.6 mM H2O2 induced full growth arrest, revealing that cell fate is controlled by a sharp threshold in external H2O2 level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by experimental data in Figure 1E showing the sharp transition between adaptation and arrest. The inference of a threshold-based control (C32) is reasonable given the abrupt change in phenotype, though the molecular basis of this threshold is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "At 0.5 mM H2O2, cells displayed three distinct phenotypes: 22% adapted with normal growth/division, 36% showed prolonged cell cycle arrest with continued size increase, and 42% experienced permanent growth arrest. The cell cycle arrest phenotype emerged at lower H2O2 concentrations (~0.2 mM) than the growth arrest phenotype (~0.5 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by quantitative phenotypic analysis shown in Figure 2A-C. The identification of three distinct phenotypes and their H2O2 concentration dependencies is well-documented. However, the study would benefit from larger sample sizes to better characterize the boundaries between phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cells displaying prolonged cell cycle arrest showed increased Rnr3-GFP levels and bright Ddc2-GFP foci, unlike adapted cells, indicating that H2O2-induced DNA damage and DDR checkpoint activation were responsible for prolonged cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by experimental data in Figure 2D-E showing differential expression of DNA damage markers. The inference that DDR checkpoint activation causes cell cycle arrest (C39) is reasonable given the established roles of Rnr3 and Ddc2, though direct causal demonstration would require checkpoint mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All cells exposed to 0.6 mM H2O2 eventually underwent cell lysis as shown by propidium iodide staining. However, removal of stress within 4 hours allowed recovery of growth rate and Yap1 regulon reactivation, indicating that several hours of exposure were necessary to induce irreversible growth arrest leading to cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by experimental data in Figure 2\u2014figure supplement 2A-C. The propidium iodide assay provides direct evidence of cell lysis (C40), and the reversibility experiments demonstrate time-dependent commitment to cell death. The inference about irreversibility (C42) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Permanently arrested cells at both 0.4 mM and 0.6 mM H2O2 showed very low TRX2-GFP levels and displayed bright, large vacuole phenotypes, indicating that permanent growth arrest reflects the inability of cells to defend against the stressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by experimental data in Figure 2\u2014figure supplement 3A-C. The consistent phenotype across different H2O2 concentrations and the low expression of a Yap1-regulated gene support the inference that these cells have failed to mount an effective defense response (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A linear mathematical model successfully recapitulated the limited accuracy of the homeostatic system, where internal H2O2 at steady-state increases with external H2O2 magnitude. This property results from antioxidant dilution in growing cells, though growth rate does not affect the kinetics of the internal H2O2 burst during transient responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by model simulations in Figure 3B and supplementary figures compared with experimental data in Figure 1E-F. The mathematical analysis clearly demonstrates that antioxidant dilution (\u03bc'\u22600) is necessary to explain the non-zero steady-state internal H2O2 levels, ruling out the integral feedback model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The linear model predicted that slow stress ramps allow adaptation to much higher H2O2 levels than steep ramps. Experimentally, no growth decline was observed up to >4 mM H2O2 at ramp slopes \u22644.4 \u03bcM/min, while growth decreased at \u22658.8 \u03bcM/min. The adaptation limit during slow ramping (7.2 mM) represented a >10-fold increase compared to step experiments (0.6 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are strongly supported by experimental data in Figure 3D-E and supplementary figures. The model predictions are quantitatively validated by the ramp experiments, demonstrating stress-rate dependent adaptation. The >10-fold increase in adaptation limit is a major finding that validates the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Pretreatment with 0.2 mM H2O2 shifted the adaptation threshold from 0.6 mM to 1.0 mM, and this increased resistance was dependent on the Yap1 regulon as yap1\u0394 mutants did not display acquisition of tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by experimental data in Figure 4A-B and supplementary figures. The shift in adaptation threshold is clearly demonstrated, and the genetic requirement for Yap1 establishes that this is a regulated response rather than a passive effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The linear feedback model could not explain stress tolerance, as it predicted similar internal peak stress for pretreated and naive cells. However, experiments showed that pretreated cells had lower TRX2 transcription rates and reduced Yap1 nuclear relocation bursts during challenge, indicating they perceive lower internal stress levels than naive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by model predictions in Figure 4C and experimental data in Figure 4D-F. The discrepancy between linear model predictions and experimental observations motivates the development of the nonlinear model. The experimental evidence for reduced transcriptional activation in pretreated cells is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A nonlinear model incorporating H2O2-dependent scavenging rates quantitatively recapitulated the reduction in peak internal H2O2 in pretreated cells. Phase diagram analysis revealed that buffering of slow fluctuations (training) is a generic property of negative feedback systems, while adaptation to fast fluctuations (stress tolerance) requires specific nonlinear scavenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by model simulations in Figure 4\u2014figure supplement 1E-F and phase diagrams in Figure 4G. The nonlinear model successfully explains the experimental observations that the linear model could not, and the phase diagram analysis provides important theoretical insight distinguishing training from tolerance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Genetic analysis during stress ramps revealed that Yap1 deletion abolished adaptation, while msn2\u0394msn4\u0394 and membrane lipid biosynthesis mutants (erg3\u0394, erg6\u0394) adapted efficiently. Deletion of known H2O2 scavengers Ccp1, Ctt1, or Cta1 did not prevent adaptation during ramps, though ccp1\u0394 showed delayed recovery in step experiments, indicating some scavengers contribute to transient but not steady-state responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by experimental data in Figure 5B-E. The differential requirements for various genes in ramp versus step experiments provide important mechanistic insights. The inference that some scavengers contribute only to transient responses (C69) is well-supported by the contrasting phenotypes in different experimental paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Simultaneous deletion of peroxiredoxin genes TSA1, TSA2, and AHP1 abolished cell growth during H2O2 exposure (ramps or steps), and adaptation extent was proportional to the number of cytosolic Prxs present. Constitutive Tsa1 expression did not complement function, demonstrating that peroxiredoxins are the essential antioxidants ensuring H2O2 homeostasis and that H2O2-dependent transcriptional induction is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are strongly supported by experimental data in Figure 5D-F and supplementary figures. The complete loss of adaptation in the triple deletion and the dose-dependent effect of Prx number provide compelling evidence. The failure of constitutive expression to rescue demonstrates the importance of regulated expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genetic analysis of Prx function revealed that adaptation was severely compromised in trx1\u0394trx2\u0394 and tsa1C171Stsa2\u0394 strains (defective in peroxidatic cycle), but normal in tsa1\u0394YFtsa2\u0394 (defective in chaperone function) and \u0394srx1 strains. This indicates that the peroxidatic, not chaperone, function of 2-Cys Prxs is required for adaptation, and that ramp protocols maintain low enough internal H2O2 to prevent Prx hyperoxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by experimental data in Figure 5H and citations to prior work characterizing these mutants. The genetic dissection using separation-of-function mutants provides strong evidence for the specific role of the peroxidatic cycle. The inference about preventing hyperoxidation (C79) is reasonable given the Srx1 dispensability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Tsa1-GFP levels increased sustainably upon H2O2 exposure with formation of fluorescent foci. Quantitative analysis revealed that steady-state Tsa1 levels scaled nonlinearly (sublinearly) with H2O2 concentration, especially at low concentrations, during both step and ramp experiments. The nonlinear model provided better fits than the linear model, suggesting the H2O2 scavenging capacity becomes increasingly efficient with Prx accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by experimental data in Figure 6A-D and supplementary figures. The nonlinear scaling is clearly demonstrated in the data, and the superior fit of the nonlinear model is evident. The inference about increasing efficiency (C85) is reasonable given the sublinear scaling, though the molecular mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Cells challenged 400 min after pretreatment showed transcriptional responses identical to naive cells, while cells challenged at 100 min showed reduced transcription. Tsa1-GFP levels returned to basal after 400 min but not 100 min, suggesting Prx levels are tightly associated with H2O2 buffering efficiency and stress tolerance is lost as Prx levels decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by experimental data in Figure 6E-F. The time-dependent loss of stress tolerance correlating with Prx level decline provides strong support for the mechanistic link between Prx abundance and buffering capacity. The inference (C89) is well-supported by the temporal correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "H2O2 had a biphasic (hormetic) effect on replicative lifespan: exposure to 10-25 \u03bcM increased RLS by ~25%, while concentrations >50 \u03bcM decreased RLS. Deletion of Yap1 or Tsa1 abolished the longevity increase at low H2O2 doses, implicating the H2O2 homeostatic machinery in the hormetic effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by experimental data in Figure 7C-E. The biphasic dose-response is clearly demonstrated with appropriate statistical analysis. The genetic requirement for Yap1 and Tsa1 establishes that this is mediated by the homeostatic machinery rather than being a passive effect of low-level oxidative stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "At low H2O2 concentrations (\u226425 \u03bcM), damage markers (Ddc2-GFP, Hsp104-GFP foci) remained at control levels while Tsa1 increased ~25%. Above 25 \u03bcM, damage marker increases outpaced Tsa1 expression increases. This suggests nonlinear activation of the homeostatic machinery leads to a biphasic effect on replicative longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by experimental data in Figure 7F-G and Figure 6B-C. The differential scaling of protective (Tsa1) versus damage markers provides a mechanistic explanation for the hormetic effect. The inference (C99) is well-supported by the data, though the exact quantitative relationship could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Acquisition of stress tolerance is a systems-level property resulting from nonlinearity of H2O2 scavenging by peroxiredoxins, and this nonlinear regulatory scheme induces a hormetic effect of extracellular H2O2 stress on replicative longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 represent the main conclusions stated in the abstract. These are well-supported by the comprehensive experimental and modeling work throughout the manuscript, including the demonstration of nonlinear Prx scavenging kinetics, the mechanistic basis of stress tolerance, and the hormetic effect on longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Homeostatic systems relying on genetic regulatory networks are intrinsically limited by transcriptional response time, but cells have evolved mechanisms where mild stress exposure increases resistance to subsequent threats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent general principles stated in the abstract that are supported by the literature (C1 is supported by citations C8) and by the experimental demonstration of stress tolerance in this study (C2). These provide the conceptual framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Several biological systems including bacterial chemotaxis, calcium signaling, and yeast hyperosmolarity response are perfectly adapting systems based on integral feedback. Most stress regulatory pathways feature transcriptional responses which are slower than other biochemical effects of stress exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe prior work supported by appropriate citations. These establish the theoretical context for homeostatic control and the limitations of transcriptional responses, providing background for the current study's focus on response time limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Due to limiting response time, a transient peak in internal stress level may occur during stepwise stress exposure, and the rate of stress application should control this peak and determine cellular resistance. However, this hypothesis has neither been formally addressed theoretically nor tested experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 present the theoretical motivation for the study. The predictions (C9-C10) are reasonable based on control theory principles, and the statement about the gap in the literature (C11) is supported by the lack of prior work on this specific question. The study then proceeds to test these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Acquired stress resistance has been broadly observed across species and is considered an anticipation strategy. Standard H2O2 adaptation assays have the limitation that cells rapidly degrade H2O2 in the medium, confounding interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by multiple citations establishing the phenomenon of acquired stress resistance. Claim C14 identifies a methodological limitation of standard assays that motivates the development of the microfluidic approach. These provide important context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Many discrepancies in studies of cellular H2O2 resistance using classical bulk techniques likely originate from lack of environmental control and population-dependent stressor consumption. The methodology developed here demonstrates that final H2O2 concentration and its rate of increase share equal importance in determining cell fate, and customized temporal stress patterns provide a unique approach for unraveling gene function in H2O2 homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 represent methodological insights from the study. While C100 is speculative, it is reasonable given the demonstrated importance of precise temporal control. Claims C101-C102 are well-supported by the experimental results showing stress-rate dependence and the successful genetic dissection using different temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Prx activity is the major determinant of H2O2 homeostasis and is essential regardless of temporal stress pattern, whereas CCP1 may only contribute to detoxification during high transient H2O2 peaks accompanying acute stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by the genetic analysis in Figure 5. The essential role of Prxs in all conditions contrasts with the context-dependent role of Ccp1, providing important mechanistic insights into the division of labor among H2O2 scavengers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Trainability is an essential functional property linked to response time of the regulatory mechanism. Cells can be acclimated to >10-fold higher stress levels when the rate of increase is low compared to acute exposure, and there is an optimal stress pattern for driving a homeostatic system to maximal stress-buffering capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 represent key conceptual insights from the study. The >10-fold increase in adaptation limit (C106) is directly demonstrated experimentally. The concept of optimal stress patterns (C107) is supported by the phase diagram analysis, though experimental validation of the optimal trajectory would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The ability to resist progressively increasing environmental insults resembles the concept of mithridatism, and this study identifies a new form of mithridatism at the cellular scale that can be quantitatively explained by a mathematical description of a generic negative feedback-based regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 connect the experimental findings to the historical concept of mithridatism. While the connection is conceptually interesting and supported by citation, the term 'mithridatism' is not standard in the field. The quantitative explanation through mathematical modeling is well-supported by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Training enables increased adaptation to slow stress fluctuations, while acquired stress resistance elicits improved survival of preconditioned cells to rapid environmental changes. These are distinct mechanisms with different functional properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 represent an important conceptual distinction established by the study. The experimental data in Figures 3 and 4 clearly demonstrate these are distinct phenomena with different underlying mechanisms (linear vs. nonlinear feedback), and the phase diagram analysis formalizes this distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Prxs are very abundant proteins (~1% of cellular mass in mammals) that increase up to fivefold upon H2O2 exposure. The cellular concentration of reduced Prxs likely always surpasses internal H2O2 concentration, leading to the hypothesis that H2O2 scavenging rate is limited by internal H2O2 concentration. This nonlinearity may explain why redox homeostasis relies on abundant stoichiometric enzymes rather than catalases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 are supported by citation and experimental data. However, C114-C116 are speculative (marked as speculation in evidence_type). While the hypothesis is reasonable and consistent with the nonlinear model, direct biochemical measurements of Prx and H2O2 concentrations in vivo would be needed to definitively support these claims. The speculation about why cells use Prxs rather than catalases (C116) is interesting but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The phenomenon of acquired stress resistance illustrates plasticity of the homeostatic machinery following principles of adaptive homeostasis. Since Prx genes are also regulated by general stress response factors Msn2/Msn4, induction of H2O2 tolerance by other stressors may be mediated by the same principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is an inference supported by the experimental results and citation to the adaptive homeostasis concept. Claim C118 is established knowledge. Claim C119 is speculation about generalizability, which is reasonable given the shared regulation but would require experimental testing with other stressors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The effect of H2O2 on longevity provides a model of lifespan extension by environmental perturbation similar to caloric restriction. This complements previously described hormesis-like effects on chronological aging and suggests the H2O2 homeostatic machinery plays a central role. Complex functional properties like stress tolerance and hormetic lifespan effects can only be understood by bridging molecular architecture to quantitative dynamical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 connect the findings to broader concepts in aging biology, supported by the experimental data in Figure 7 and citations to prior work. Claim C123 represents a general conclusion about the importance of quantitative approaches, which is well-supported by the success of the integrated experimental-modeling approach used throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Extension of chronological and replicative longevity by caloric restriction has been shown to be mediated by activation of H2O2-dependent genes, and Tsa1 plays a role in processing age-related protein aggregates with overexpression increasing longevity through PQC machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe prior work supported by appropriate citations (Mesquita et al., 2010; Molin et al., 2011; Hanz\u00e9n et al., 2016). These provide important context for interpreting the hormetic effects on longevity observed in the current study.",
+    "result_type": "MINOR"
+  }
+]

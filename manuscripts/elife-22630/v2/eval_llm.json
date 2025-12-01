@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors recorded from 459 layer II piriform cortex neurons across 9 experiments in 5 mice, with simultaneous olfactory bulb recordings in 6/9 experiments. Neurons exhibited low spontaneous firing rates with log-normal distribution, weak phase preferences uniformly distributed across the sniff cycle, and ~93% were estimated to be principal neurons. Respiration barely changed during odor presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive characterization of the dataset including sample sizes, recording quality metrics, and basic physiological properties. The data are well-documented with specific statistical measures and appropriate comparisons to prior work. The estimate that 93% are principal neurons (C5) is supported by optogenetic identification experiments described later (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Using strict statistical criteria (p<0.05), 23% of cells were activated and 33% were suppressed by at least one of six odors. Only 4% of cells showed mixed responses (both activation and suppression to different odors), significantly less than the 14% predicted from independent ensembles, suggesting functionally distinct subclasses of piriform neurons that encode odor stimuli exclusively through either activation or suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 establish the existence of functionally distinct cell populations based on response polarity. The comparison to a shuffled prediction (C12-C13) provides statistical support for non-random organization. However, the manuscript notes that no other distinguishing features (waveforms, laminar position) were found between activated and suppressed cells, limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Trial-to-trial correlations within repeated presentations of the same odorant were 0.48 \u00b1 0.12, while inter-odorant correlations were significantly lower but still much higher than chance (0.38 \u00b1 0.09, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 quantify trial-to-trial variability and demonstrate that responses to different odors are more similar than expected by chance. The statistical testing is appropriate (paired t-test) and the finding motivates the subsequent analysis of ensemble overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Trial-to-trial correlations were lower in piriform cortex than olfactory bulb, and in both structures correlations decreased systematically with concentration differences, becoming as dissimilar over a 30-fold concentration range as responses to different odorants. This reveals that odor representations defined by spike counts are not concentration invariant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 establish that spike count-based representations change with concentration in both bulb and cortex. The systematic decrease in correlation with concentration difference is well-documented. However, the conclusion about concentration invariance (C17) is limited to spike count representations and does not exclude other coding strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Total spiking output from olfactory bulb remained unchanged across concentrations (0.1-1%), indicating substantial normalization. In piriform cortex, total spiking decreased slightly at higher concentrations, the number of activated neurons did not change with concentration, but more cells were suppressed at higher concentrations. Spiking in individual activated cells showed no systematic relationship to concentration, although suppression was weakly concentration-dependent. Therefore, a simple rate code cannot represent odor intensity in piriform cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 systematically rule out rate coding for intensity through multiple complementary analyses. The statistical testing is appropriate (repeated measures ANOVA) and the conclusion (C25) logically follows from the data. The finding of normalization in bulb (C19) is consistent with cited recent studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Population spiking peaked within 50-100 ms after inhalation, with the peak increasing slightly at higher concentrations (0.03%: 4.39 \u00b1 1.33 Hz; 1%: 5.14 \u00b1 2.16 Hz; p=0.0159). Together with the small decrease in total spiking, this indicates a systematic, concentration-dependent redistribution of spike times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe temporal dynamics of population responses. The statistical testing (repeated measures ANOVA) is appropriate and the inference of spike time redistribution (C28) logically follows from the combination of increased peak and decreased total spiking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Response latencies decreased systematically at higher concentrations across the population, but the earliest responses were largely concentration-invariant while concentration-dependent effects were greatest for cells responding >100 ms later. The distributions of response latencies at all four concentrations were well fit by a mixture of Gaussian functions, with the first Gaussian peak barely changing across concentrations while the second shifted from 206 ms at 0.03% to 136 ms at 1%. Thus, the cortical odor response is composed of two phases that become more synchronous at higher concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 establish biphasic response dynamics with differential concentration dependence. The Gaussian mixture modeling is appropriate and well-documented (Figure 4\u2014figure supplement 1). The conclusion of two phases (C35) is well-supported by the data, though the mechanistic interpretation requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Odor identity can be decoded simply by knowing which cells respond, with no additional information provided by spike count, spike time, or suppression (90% accuracy with 145 cells using membership code). By contrast, accurate odor intensity decoding requires spike time information but is not improved by spike counts (90% accuracy with 210 cells using binned vectors vs. 425 cells using spike counts). Differences in classifier performance for identity were not statistically significant across coding schemes, but binned vectors significantly improved concentration classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 establish complementary coding strategies for identity and intensity through systematic decoding analyses. The statistical comparisons are appropriate (Figure 5\u2014figure supplement 2) and the conclusion (C44) is well-supported. However, the lack of statistical significance for identity decoding (C39) somewhat weakens the claim that spike time is truly redundant for identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Lifetime sparseness was 0.34 \u00b1 0.21 and population sparseness was 0.68 \u00b1 0.10, lower than in anesthetized rats. Randomly selected subpopulations of only 10 neurons had average accuracy >50% for odorant classification, with accuracy above chance 98% of the time. The distribution of classifier performances was normally distributed rather than skewed. Therefore, cortical odor representations are not especially sparse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 challenge the prevailing view of sparse coding in piriform cortex using both traditional sparseness metrics and a novel decoding-based approach. The logic is sound: if representations were sparse, small random populations would rarely contain informative neurons, producing skewed performance distributions. The normal distribution of performances (C49) strongly supports dense coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Odor identity could be accurately classified within ~100 ms after inhalation, while intensity decoding accuracy remained poor during the initial ~100 ms and then increased steadily over the next ~100 ms. This supports a model in which the earliest inputs generate a concentration-invariant representation of odor identity and odor intensity is encoded by the relative timing of later responses. As concentration decoding improved, the ability to generalize across concentrations decreased, consistent with a trade-off between identity and intensity representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 establish temporal dissociation of identity and intensity coding through time-resolved decoding analysis. The trade-off between generalization and concentration decoding (C54) provides strong support for the proposed model (C53). The analysis is well-designed and the conclusions are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Trained mice take longer to discriminate differences in odor concentrations than distinct odors (cited from Abraham et al., 2004). The differences in the amount of time required to represent identity vs. intensity could underlie this difference in reaction times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 accurately cites prior behavioral work, but C56 is speculative. While the temporal dissociation in neural coding is consistent with behavioral reaction time differences, no causal link is established. The manuscript appropriately qualifies this as a possibility ('could underlie, at least in part').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In olfactory bulb, response latency distributions were well fit with Gaussian mixtures. Latencies of first responses were rapid and barely changed with concentration, overlapping with the first phase of piriform responses, consistent with early bulb cells driving fast piriform responses. The second peak decreased with concentration. At low concentrations (0.03%), the second peak occurred earlier in bulb (192 ms) than piriform (206 ms), but at high concentrations (1%) it appeared earlier in piriform (136 ms) than bulb (151 ms), though confidence intervals overlapped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 characterize bulb response dynamics and compare them to piriform. The Gaussian mixture modeling is consistent with the piriform analysis. The inference that early bulb cells drive fast piriform responses (C59) is reasonable but not definitively proven. The overlapping confidence intervals at high concentration (C62) appropriately acknowledge statistical uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The second phase of responses is more prominent in bulb than piriform cortex at all but the highest concentration, indicating that later bulb input is actively suppressed within piriform cortex. Piriform cortex is preferentially responsive to the earliest-active bulb inputs. The shift in response latencies is more pronounced in piriform cortex than olfactory bulb. Together, these data indicate an active transformation of bulb input within piriform cortex in which later inputs are suppressed and the population response is temporally sharpened with concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 establish active cortical transformation of bulb input through comparison of response dynamics. The inference of active suppression (C64) is well-supported by the difference in second phase prominence. The steeper concentration-dependence in piriform (C66) is statistically demonstrated (Figure 8D,E). The overall conclusion (C67) integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Approximately 7% of cells (35/512) were optogenetically identified as inhibitory interneurons, which responded to most odors with increased spiking (lifetime sparseness: 0.11), consistent with widespread suppression across the population. Inhibitory population PSTHs revealed a sharp peak that rapidly decayed, with peak amplitude increasing systematically with concentration. Onset time was ~25 ms at all concentrations, but latency to peak decreased from 91 ms at 0.03% to 65 ms at 1%, and the peak became narrower (FWHM: 89 ms to 50 ms), indicating that cortical inhibition occurs earlier and sharpens at higher concentrations. The first peak of the population response immediately preceded the increase in inhibition, and the second phase occurs immediately after the initial sharp increase in inhibition has ended, suggesting that inhibition shapes the onset of the second phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 establish the role of inhibition in shaping cortical dynamics through optogenetic identification and temporal analysis. The identification of inhibitory neurons (C68) is rigorous. The temporal relationship between inhibition and the second phase (C77-C79) is well-documented, though the causal inference (C79) is appropriately qualified as a suggestion. The concentration-dependent sharpening of inhibition (C76) provides a plausible mechanism for the observed cortical transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Odor identity and odor intensity are represented using distinct and non-interfering coding strategies in piriform cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is the central conclusion of the manuscript, integrating findings from multiple analyses: identity is encoded by ensemble membership (C36), intensity by spike timing (C37), with temporal dissociation (C51-C54) and distinct optimal coding schemes (C38-C44). The evidence is comprehensive and the conclusion is well-supported, though 'non-interfering' is somewhat overstated given that ensembles are not fully concentration-invariant (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript provides extensive background on olfactory system organization, prior findings on odor coding in piriform cortex and olfactory bulb, concentration-dependent responses, and proposes hypotheses about how spatial and temporal patterns of bulb input could independently represent identity and intensity. Analogies are drawn to multiplexed coding in hippocampus, suggesting this may be a general cortical strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C97 accurately summarize prior work and provide appropriate context for the current study. The citations appear accurate and the hypotheses (C93, C95) are reasonable based on prior work. The analogy to hippocampus (C96) is appropriate. The speculation about general principles (C97) is appropriately qualified. These claims provide essential background but are not primary results of the current work.",
+    "result_type": "MINOR"
+  }
+]

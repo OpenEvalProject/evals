@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47"
+    ],
+    "result": "Hsp70 (specifically Ssa1/2) basally associates with Hsf1 in budding yeast and this association is transiently disrupted during heat shock, then re-established at later time points. This dynamic interaction was demonstrated through IP/MS, Western blots, and in vitro binding assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C36-C43, and C47 collectively provide strong converging evidence from multiple experimental approaches (IP/MS showing Ssa1/2 as the only co-precipitating proteins in basal conditions, Western blots showing transient dissociation during heat shock, in vitro binding assays with recombinant proteins, and appropriate controls). The data directly demonstrate the dynamic Hsf1-Hsp70 interaction cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "A mathematical model based on competition between unfolded proteins and Hsf1 for Hsp70 binding recapitulates heat shock response dynamics. This was validated experimentally using A\u03b242 peptide competition assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45, C46, and C48 are supported by the mathematical modeling framework and experimental validation showing that A\u03b242 peptide reduces Hsf1-Hsp70 interaction (C45), supporting the competition model (C4, C46). The model successfully recapitulates experimental dynamics (C48), though the model's predictive power would benefit from additional validation beyond the A\u03b242 experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The mathematical model correctly predicted that an Hsf1 'decoy' construct (lacking DNA binding and trimerization domains) would activate endogenous Hsf1 via Hsp70 titration. The C-terminal activation domain is necessary and sufficient for this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide strong support through model predictions validated by experimental data. The decoy activates HSE-YFP in a dose-dependent manner (C50), binds Hsp70 and disrupts endogenous Hsf1-Hsp70 interaction (C53), and domain analysis shows the C-terminal activation domain is necessary and sufficient (C54). The decoy remains soluble (C52), ruling out aggregation as a mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Hsp70 and Hsp40, but not Hsp90, suppress Hsf1 overexpression toxicity. Overexpression of Hsp70 and Hsp40 reduces both growth inhibition and HSE-YFP induction caused by Hsf1 or decoy overexpression, while Hsp90 overexpression has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C65-C68 are well-supported by genetic suppression experiments showing Hsp70/Hsp40 rescue growth defects while Hsp90 does not. Claims C60-C61 provide supporting context from prior literature. Claims C62-C64 address Hsp40's role, though C64 notes complications in interpretation due to elevated basal Hsf1 activity in ydj1\u0394 cells. The overall conclusion that Hsp70/Hsp40, not Hsp90, repress Hsf1 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Hsf1 phosphorylation is not required for heat shock activation. A mutant lacking 152 of 153 S/T residues (Hsf1\u0394po4) retains heat shock inducibility at 75% of wild-type levels, supports growth at elevated temperature, and shows normal localization and DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C76 are strongly supported by comprehensive mutational analysis. The Hsf1\u0394po4 mutant lacks 32P incorporation (C73), yet retains essential function (C71, C75), heat shock inducibility (C76), and normal localization/DNA binding (C74). The 75% activity level (C76) and growth deficit at elevated temperature (C75) indicate phosphorylation contributes quantitatively but is not required for activation, supporting C5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Hsf1 phosphorylation positively tunes transcriptional activity. Hsf1\u0394po4 shows reduced transcriptional output (75% of WT), while phospho-mimetic Hsf1PO4* shows 7-fold higher basal activity. Transcriptional output correlates directly with the number of negative charges (aspartate residues).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C85 are well-supported by RNA-seq data showing reduced HDG expression in Hsf1\u0394po4 (C78-C79) and increased expression in Hsf1PO4* (C80-C81). The direct correlation between negative charge and transcriptional output (C84-C85) provides strong mechanistic insight. However, C82-C83 show that hyperactivation impairs growth at elevated temperature, indicating optimal activity levels exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Hsf1 phosphorylation does not affect Hsp70 binding. Decoys with different phosphorylation states (WT, \u0394po4, PO4*) show identical HSE-YFP induction profiles, and in vitro phosphorylation by CKII does not prevent Hsp70 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C86-C89 are supported by two independent lines of evidence: decoy experiments showing superimposable induction curves regardless of phosphorylation state (C86-C87), and in vitro IP showing CKII-phosphorylated Hsf1 still binds Hsp70 (C88-C89). This demonstrates phosphorylation and Hsp70 binding are uncoupled regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C104"
+    ],
+    "result": "Phosphorylation enhances Hsf1 transcriptional activity by increasing recruitment of the Mediator complex. ChIP-seq shows Med4 recruitment to HDG promoters is proportional to phosphorylation state (PO4* > WT > \u0394po4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are strongly supported by ChIP-seq data showing phosphorylation-dependent Mediator recruitment at multiple HDG loci. Claim C104 proposes a mechanism (increased negative charge enhances Mediator recruitment), which is reasonable given the data but remains somewhat speculative as direct causation is not definitively established. The overall result is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C106",
+      "C107"
+    ],
+    "result": "Hsf1 phosphorylation kinetics are delayed relative to Hsp70 dissociation, peaking at 20 minutes and correlating with sustained transcriptional activity. Hsf1\u0394po4 lacks this sustained activity, and incorporating phosphorylation as a 'positive gain' in the model recapitulates both WT and \u0394po4 dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98, C106-C107 are well-supported by Western blot data showing delayed phosphorylation kinetics (C94), flow cytometry showing Hsf1\u0394po4 lacks sustained activity (C97), and mathematical modeling that recapitulates both WT and \u0394po4 dynamics when phosphorylation is included (C98). The temporal separation between Hsp70 dissociation and phosphorylation (C94, C106) supports the uncoupled regulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C103",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Hsf1 uses two largely uncoupled regulatory modes: an ON/OFF chaperone switch (Hsp70 binding) and tunable phosphorylation gain. This allows Hsf1 to integrate signals from the proteostasis network and diverse kinase pathways without disrupting its direct readout of protein folding status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C99, C103 synthesize the major findings and are well-supported by the collective evidence showing Hsp70 binding controls activation (ON/OFF switch) while phosphorylation tunes output (gain control) without affecting Hsp70 binding. Claims C108-C110 are more speculative interpretations about functional significance and potential for independent activation, but are reasonable extrapolations from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Overexpression of full-length Hsf1 or the decoy inhibits cell growth in a dose-dependent manner. Full-length Hsf1 impairs growth 20-fold more than the decoy, and the decoy impairs growth 3-fold more than mKate2 alone. The growth impairment is not due to specific cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by flow cytometry growth measurements (C56-C57) and cell cycle analysis showing asynchronous stages (C58). The data demonstrate that both Hsp70 sequestration and transcriptional activation contribute to growth impairment, with transcriptional activation being more toxic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The results are inconsistent with reports implicating Hsp90 as a major repressor of Hsf1. The lack of biochemical evidence for Hsp90-Hsf1 interaction and failure of Hsp90 overexpression to suppress Hsf1 overexpression suggest Hsp90 does not directly repress yeast Hsf1. Prior genetic studies showing Hsp90 loss activates Hsf1 can be explained by increased unfolded proteins titrating Hsp70 away from Hsf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by the absence of Hsp90 in IP/MS experiments (C39) and genetic suppression data (C59, C67). Claim C102 is a speculative but reasonable explanation for reconciling prior literature with current findings. The conclusion that Hsp90 does not directly repress yeast Hsf1 is well-supported, though this may differ in other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C30"
+    ],
+    "result": "This work provides the first direct evidence that a chaperone repressor directly regulates Hsf1 activity through a complete cycle of dynamic dissociation and re-association during heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C30 are supported by the comprehensive demonstration of the Hsf1-Hsp70 interaction cycle. Claim C30 correctly identifies the gap in prior literature, and C3's claim of novelty is justified by the direct biochemical evidence, in vitro validation, and demonstration of the complete cycle (basal binding, heat shock dissociation, re-association).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C111"
+    ],
+    "result": "The uncoupled regulation allows Hsf1 to integrate diverse signaling information without disrupting its direct readout of the proteostasis network. Hsf1 regulation has the potential to be rewired in different organisms given poor conservation of regulatory domains and ease of gaining/losing phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C111 are speculative interpretations about functional significance and evolutionary potential. While the uncoupled regulation is well-established, the specific functional advantages (C9) and evolutionary implications (C111) are reasonable hypotheses but lack direct experimental support in this work. These represent interesting predictions for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about the heat shock response, Hsf1 function and conservation, roles in disease, and prior understanding of regulation mechanisms including the chaperone titration model and phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C35 are background/context claims supported by citations to established literature. These provide the scientific context for the current work and accurately represent prior knowledge and gaps in understanding. These are not novel findings from this study but establish the rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C44"
+    ],
+    "result": "Minor technical observations: Ssa1 and Ssa2 share 98% sequence identity, and ATP neither enhances nor disrupts the Hsf1-Ssa2 interaction in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is a statement of known sequence similarity. Claim C44 is supported by in vitro IP data. These are minor technical details that support the main findings but are not major results themselves.",
+    "result_type": "MINOR"
+  }
+]

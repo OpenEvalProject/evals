@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C62"
+    ],
+    "result": "Mass spectrometry analysis of \u03b2-arrestin1 identified only one phosphorylated site (Thr374) with low phosphorylation index, which was not affected by 5-HT exposure, and achieved 88% sequence coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C62 are directly supported by mass spectrometry data (Figure 1\u2014source data 1, Figure 1\u2014figure supplement 3). The identification of a single phosphorylation site with quantification showing no change upon stimulation is well-documented with appropriate controls and technical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mass spectrometry analysis of \u03b2-arrestin2 identified six phosphorylated residues (Thr178, Ser194, Ser267/268, Ser281, Ser361, and Thr383), including three novel sites, with 85% sequence coverage, suggesting \u03b2-arrestin2 is phosphorylated at higher stoichiometry than \u03b2-arrestin1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C62-C66 are supported by comprehensive mass spectrometry data with fragmentation spectra (Figures 1A, 1\u2014figure supplements 3-5, Figure 1\u2014source data 1). The identification of phosphorylation sites is validated with appropriate p-value thresholds (0.01) and comparison to previous literature. The inference about higher stoichiometry (C66) is reasonable based on the number of sites detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "5-HT2C receptor stimulation induces marked elevation of \u03b2-arrestin2 Thr383 phosphorylation (both ectopic and endogenous) after 5-30 min, while 5-HT4 receptor stimulation produces minimal, non-significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by both mass spectrometry quantification (Figure 1B) and Western blot validation using a phospho-specific antibody (Figure 1C). The differential response between the two receptors is demonstrated across three independent experiments with appropriate statistical analysis. The generation and validation of the phospho-specific antibody strengthens the endogenous protein findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Computational prediction identified Thr383 as a consensus site for both CK2 and MEK1 phosphorylation, but pharmacological CK2 inhibition did not affect Thr383 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by GPS algorithm predictions (with specific scores provided) and experimental validation using the CK2 inhibitor TBCA (Figure 2\u2014figure supplement 1). The negative result with CK2 inhibition is appropriately controlled and quantified, ruling out CK2 as the major kinase despite computational prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MEK is the major kinase responsible for \u03b2-arrestin2 Thr383 phosphorylation upon 5-HT2C receptor stimulation, as demonstrated by abolishment of phosphorylation with MEK inhibitor U0126 and MEK1 dominant-negative mutant, but not with Erk1/2 inhibitor FR180204.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are well-supported by multiple complementary approaches: pharmacological MEK inhibition (U0126), genetic inhibition (MEK1DN), and demonstration that Erk1/2 inhibition does not affect Thr383 phosphorylation (Figure 2B, Figure 2\u2014figure supplement 2). The controls showing effective MEK and Erk inhibition via Erk1/2 and Elk1 phosphorylation strengthen the conclusions. Three independent experiments support the quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In vitro kinase assays demonstrate that MEK1 directly phosphorylates \u03b2-arrestin2 at Thr383 with comparable efficacy to its canonical substrate Erk2, and this phosphorylation is abolished by U0126 and by T383A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by both immunoblot-based (Figure 2C) and radioactive kinase assays (Figure 2\u2014figure supplement 3). The use of purified proteins, the T383A negative control validating antibody specificity, and quantitative comparison to Erk2 phosphorylation provide strong evidence for direct MEK1-mediated phosphorylation. The in vitro data complement the cellular studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Thr383 phosphorylation does not affect \u03b2-arrestin2 translocation to 5-HT2C or 5-HT4 receptors, nor does it affect agonist-induced internalization of these receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by BRET assays measuring \u03b2-arrestin2 recruitment (Figures 3A, 3B) and ELISA measuring receptor internalization (Figures 3C, 3D). The use of both T383A and T383D mutants provides appropriate controls for loss and gain of phosphorylation. Results are consistent across three independent experiments with proper statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "\u03b2-arrestin2 conformational change elicited by 5-HT2C receptor stimulation depends on Thr383 phosphorylation, while conformational change induced by 5-HT4 receptor stimulation does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by intramolecular BRET biosensor data (Figures 3E, 3F). The T383A mutation abolishes the 5-HT2C-induced BRET change, while T383D mimics it, demonstrating phosphorylation-dependence. The lack of effect with 5-HT4 receptor is consistent with the differential \u03b2-arrestin dependency of these receptors. Three independent experiments support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Thr383 phosphorylation by MEK is essential for Erk1/2 recruitment to the 5-HT2C receptor/\u03b2-arrestin2 complex, as T383A mutation abolishes recruitment while T383D mutation constitutively increases it; this mechanism is specific to 5-HT2C and not observed with 5-HT4 receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by co-immunoprecipitation experiments (Figure 4A, 4B, Figure 4\u2014figure supplement 1). The use of both T383A and T383D mutants provides strong evidence for the role of phosphorylation. MEK inhibition with U0126 preventing Erk recruitment further validates the mechanism. The receptor-specific effects align with the differential \u03b2-arrestin dependency. Three independent experiments with quantification support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Thr383 phosphorylation is essential for basal and 5-HT2C receptor-operated Erk1/2 activation, as T383A mutation strongly reduces Erk1/2 phosphorylation while T383D mutation increases basal activation; this mechanism does not affect \u03b2-arrestin-independent 5-HT4 receptor-operated Erk1/2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by Western blot analysis of Erk1/2 phosphorylation (Figures 4C, 4D). The differential effects of T383A and T383D mutations at both 5 and 30 min time points, combined with the lack of effect on 5-HT4 signaling, provide strong evidence. Three independent experiments with appropriate statistical analysis support the conclusions. The results are consistent with the Erk recruitment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Thr383 phosphorylation is a general mechanism underlying \u03b2-arrestin-dependent Erk1/2 activation by multiple GPCRs (FSH, \u03b22-adrenergic, CXCR4 receptors), as both \u03b2-arrestin2 knockdown and T383A mutation produce similar inhibitory effects on sustained (30 min) Erk1/2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by parallel experiments using siRNA knockdown and T383A mutation across three different GPCRs (Figure 5A-F, Figure 5\u2014figure supplement 1). The consistency of effects across multiple receptor systems strengthens the generalizability. The preferential effect on sustained (30 min) versus early (5 min) Erk activation is consistent with \u03b2-arrestin-dependent signaling kinetics. Three independent experiments with statistical analysis support each receptor system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C75",
+      "C76",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A mechanistic model proposes that Thr383 phosphorylation by MEK occurs within the receptor/\u03b2-arrestin/Raf/MEK complex and triggers conformational change of the 350-393 region, allowing receptor C-terminal domain interaction and subsequent Erk recruitment and activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C75-C76, C83-C87 present a mechanistic model based on computational docking (PRIOR algorithm) and structural analysis of crystal structures. While the model is consistent with experimental data (Erk recruitment, conformational changes, phosphorylation), it remains a proposed mechanism. The docking predictions have not been independently validated through structural biology approaches (e.g., crystallography, cryo-EM). The model is plausible and well-reasoned but requires additional structural validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "\u03b2-arrestin2 phosphorylation at Thr383 has minor influence on GPCR trafficking, as single Thr383 mutations do not affect receptor internalization, while other phosphorylation sites (Ser361, Thr276, Ser14) may be more critical for trafficking regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by current experimental data (receptor internalization assays, Figures 3C-D) and appropriate citations to previous literature. The discussion appropriately distinguishes between effects on trafficking versus signaling, and acknowledges that different phosphorylation sites may have distinct functional roles. The conclusions are appropriately cautious (using 'might' and 'suggest') given the reliance on both current and cited data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Receptor and \u03b2-arrestin expression levels in transfected HEK-293 cells were quantified: 5-HT2C receptor (0.29 pmol/mg), 5-HT4 receptor (0.90 pmol/mg), \u03b2-arrestin1 (~1600 pmol/mg), and \u03b2-arrestin2 (~300 pmol/mg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by radioligand binding experiments for receptors and Western blotting for \u03b2-arrestins. The \u03b2-arrestin quantification is based on comparison to published endogenous levels with appropriate citation. These measurements provide important context for interpreting the functional studies, though the \u03b2-arrestin estimates are indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C74",
+      "C77"
+    ],
+    "result": "Background context on \u03b2-arrestin function in GPCR signaling, including their role as scaffolds for Erk1/2 signaling, differential kinetics of G protein versus \u03b2-arrestin-mediated Erk activation, and receptor-specific \u03b2-arrestin dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C20, C74, C77 provide established background knowledge supported by appropriate citations to previous literature. These claims set the context for the current study and are well-documented in the field. The citations are appropriate and the statements accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9"
+    ],
+    "result": "The central finding that activation of 5-HT2C receptors promotes MEK-dependent \u03b2-arrestin2 phosphorylation at Thr383, which is necessary for Erk recruitment and activation, and that this mechanism underlies \u03b2-arrestin-dependent Erk1/2 activation by GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C9 represent the main conclusions of the manuscript and are supported by the comprehensive experimental evidence from multiple result groups above. The integration of phosphorylation identification, kinase determination, functional consequences (Erk recruitment and activation), and generalization across multiple GPCRs provides strong support for these central claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Thr383 phosphorylation is involved in \u03b2-arrestin-dependent Erk1/2 stimulation by \u03b22-adrenergic, FSH, and CXCR4 receptors, but does not affect \u03b2-arrestin-independent Erk1/2 activation by 5-HT4 receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 summarize the generalizability findings and are directly supported by the experimental data in Figure 5 and Figure 4D. The consistency across multiple receptor systems and the specificity for \u03b2-arrestin-dependent pathways strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "\u03b2-arrestin2 can integrate upstream signals through a complex phosphorylation pattern that dictates downstream signaling events and physiological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 represents a broader conclusion integrating the current findings with the overall understanding of \u03b2-arrestin regulation. It is supported by the demonstration that Thr383 phosphorylation specifically regulates signaling but not trafficking, combined with literature showing other phosphorylation sites have different functional roles. This represents a well-supported synthesis of the findings.",
+    "result_type": "MAJOR"
+  }
+]

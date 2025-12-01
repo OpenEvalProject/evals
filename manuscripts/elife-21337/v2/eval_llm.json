@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C5"
+    ],
+    "result": "During C. elegans zygote polarization, MEX-5 and MEG-3 redistribute into opposing anterior-posterior gradients, while PGL-1 and GLH-1 remain uniformly distributed until after polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 and C5 provide consistent microscopy evidence from Figure 1A-B showing the temporal dynamics of protein localization during polarization. The data demonstrate that MEX-5 and MEG-3 form opposing gradients during polarization while PGL-1/GLH-1 remain uniform, with quantification confirming MEG-3 redistribution without changes in total levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MEX-5/6 regulate P granule asymmetry by localizing MEG-3/4 to the posterior, which in turn recruit PGL-1/3, establishing a genetic hierarchy where MEG proteins are essential for granule asymmetry but PGL proteins are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present a clear genetic hierarchy supported by systematic analysis of mutant phenotypes in Figure 1C. The data show that loss of MEX-5/6 disrupts MEG-3 localization, loss of MEG-3/4 disrupts PGL localization, but loss of PGL-1/3 does not affect MEG-3/4 localization, establishing the regulatory hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The MEX-5 gradient requires PAR-1 phosphorylation at S404, and uniform MEX-5(S404A) is sufficient to suppress MEG-3 granule formation throughout the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by CRISPR-generated MEX-5(S404A) mutants showing loss of gradient formation (Figure 2A) and uniform MEG-3 distribution (Figure 2B). The genetic evidence clearly demonstrates that preventing MEX-5 gradient formation through S404A mutation results in loss of MEG-3 asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MEX-5's RNA-binding activity is required for suppressing MEG-3 granule assembly, as zinc finger mutations (ZF-) that reduce RNA binding affinity abolish MEX-5's ability to suppress granules when MEX-6 is also depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 demonstrate through genetic analysis that MEX-5(ZF-) mutants with impaired RNA binding (C49-C50) fail to suppress MEG-3 granules when combined with mex-6 RNAi (C54), while maintaining normal expression levels (C56). The double mutant analysis (C57-C58) confirms this is a loss-of-function phenotype specifically related to RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MEG-3 binds RNA with high affinity (Kd,app ~32 nM) through its intrinsically disordered region (IDR), with the C-terminus contributing to high-affinity binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by EMSA and fluorescence polarization data (Figure 3) showing MEG-3 binds poly-U30 with nanomolar affinity. The domain mapping experiments demonstrate the IDR is necessary but the C-terminus is required for high-affinity binding, as MEG-3IDR alone shows 15-fold reduced affinity while MEG-3Cterm shows no significant binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "MEG-3 shows sequence-specific RNA binding, preferring poly-U and poly-A over poly-C and poly-G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by RNA competition EMSA data (Figure 3\u2014figure supplement 1) showing differential competition by different RNA homopolymers. This demonstrates that MEG-3 RNA binding involves more than simple electrostatic interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C79"
+    ],
+    "result": "MEG-3 and MEG-3IDR spontaneously phase separate in vitro when diluted from urea into aqueous buffer, forming condensates in a concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 and C79 are supported by phase separation assays (Figure 4\u2014figure supplement 1) showing MEG-3 forms condensates across a range of concentrations (0.5-5 \u03bcM) while control proteins do not. The data demonstrate intrinsic phase separation properties of MEG-3 and its IDR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RNA stimulates MEG-3 phase separation in vitro, with poly-U30 increasing condensate formation especially at low protein concentrations, and RNA co-localizing with MEG-3 in condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by phase separation assays with added RNA (Figure 4A, Figure 4\u2014figure supplement 1-2) showing dose-dependent enhancement of condensate formation by poly-U30, with fluorescently labeled RNA demonstrating co-localization in condensates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MEX-5 inhibits RNA-induced MEG-3 phase separation in vitro by interfering with RNA's ability to promote phase separation, and this inhibition can be overcome by excess RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by in vitro phase separation assays (Figure 4B-C) showing MEX-5 blocks RNA-induced MEG-3 condensation, excess RNA restores condensation in MEX-5's presence, and MEX-5 has no effect on MEG-3 phase separation without RNA. This demonstrates MEX-5 acts by sequestering RNA rather than directly inhibiting MEG-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MEG-3IDR forms a posterior gradient in vivo but is defective in granule formation in zygotes, while remaining sensitive to MEX-5/6 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by analysis of CRISPR-generated MEG-3IDR mutants (Figure 5A-B) showing gradient formation but reduced granule assembly in zygotes, with granules appearing in later stages. The mex-5/6(RNAi) experiments confirm MEX-5/6 dependence, and Western blots rule out expression level issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Blocking mRNA turnover by depleting LET-711 deadenylase stimulates MEG-3IDR granule formation and anterior expansion, suggesting excess RNA can overcome MEX-5 inhibition in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by let-711(RNAi) experiments (Figure 5B) showing MEG-3IDR forms numerous granules that extend anteriorly when mRNA turnover is blocked. This provides in vivo support for the model that RNA availability regulates MEG-3 phase separation, consistent with in vitro observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C113",
+      "C118"
+    ],
+    "result": "P granule asymmetry depends on RNA-induced phase separation of MEG-3, regulated by MEX-5 limiting MEG-3's access to RNA to create an anterior-posterior gradient in RNA availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C96-C99, C113, and C118 represent the central model of the paper, supported by the convergence of in vivo genetic data (Figures 1-2, 5) and in vitro biochemical data (Figures 3-4). The model is well-supported by multiple lines of evidence showing MEG-3 binds and phase separates with RNA, MEX-5 inhibits this through RNA binding, and this mechanism drives granule asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "MEX-5 and MEG-3 bind RNA with similar nanomolar affinities, but MEX-5 is 10-fold more abundant, allowing it to outcompete MEG-3 for RNA binding both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101, C114-C117 are supported by fluorescence polarization data showing similar Kd values for MEX-5 and MEG-3 (Figure 3B), Western blot quantification showing MEX-5 abundance (Figure 2\u2014figure supplement 1), and functional data from phase separation and genetic experiments demonstrating MEX-5's competitive advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The MEG-3 IDR confers an intrinsic tendency for phase separation that is tunable by RNA, with MEG-3 showing preference for U-rich sequences suggesting involvement of non-electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 synthesize findings from RNA binding specificity (Figure 3\u2014figure supplement 1) and phase separation assays (Figure 4) to conclude that the IDR provides phase separation capacity that is modulated by RNA. The sequence preference data support involvement of specific interactions beyond simple charge-based binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "While MEX-5 prevents MEG-3 condensate formation in vitro, it cannot dissolve preformed condensates, suggesting that in vivo granule dissolution requires additional mechanisms such as phosphorylation-driven disassembly cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C129 identify a discrepancy between in vitro and in vivo observations but rely heavily on speculation (C128-C129) about phosphorylation cycles. While C123-C125 present clear observations, the mechanistic explanation remains uncertain as the proposed phosphorylation-based mechanism is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors critique the Saha et al. (2016) model proposing PGL-3 as the primary target of MEX-5 regulation, demonstrating that PGL-3 is not essential for granule asymmetry and does not directly sense the MEX-5 gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C147 present a systematic critique of an alternative model, supported by the authors' genetic data (Figure 1C, Figure 1\u2014figure supplement 1) showing PGL-1/3 are not required for MEG-3/4 localization or granule asymmetry, and that PGL-3 lacking its RGG domain still localizes asymmetrically (C141). The critique is well-supported by experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "P granules comprise multiple phases with distinct properties, with MEG-3/4 forming the main RNA-dependent phase that scaffolds recruitment of other components like PGL proteins and LAF-1 helicase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 synthesize the genetic hierarchy data with prior knowledge about P granule organization to propose a multi-phase model. The model is supported by the demonstration that MEG-3/4 are required for PGL localization (C41-C42), evidence of incomplete co-localization (C150), and integration with published LAF-1 data (C151).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Regulated access to RNA combined with RNA-induced phase separation may be a general mechanism for controlling RNA granule formation, as MEX-5 may function as a general mRNA sink and similar principles regulate other granule systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C130-C133 propose broad generalizations beyond the specific P granule system studied. While C131 cites supporting evidence for MEX-5 regulating other proteins and C133 cites similar principles in other systems, the generalization remains speculative as it extends beyond the data presented. The proposal is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "The mechanism by which MEX-5 regulates MEG-3 access to RNA may involve direct competition for RNA binding or indirect recruitment of factors that reduce MEG-3's RNA affinity, potentially regulated by PAR-1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119, C120, and C122 are explicitly speculative (marked as SPECULATION in evidence_type), proposing alternative mechanisms that are not directly tested. While the speculation is reasonable given the data, these specific mechanistic details remain unresolved and require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The MEG-3 C-terminal region may extend the IDR beyond IUPRED predictions and contribute to RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is speculative, proposing that the C-terminus may be part of an extended IDR based on borderline IUPRED scores. While the data show the C-terminus contributes to high-affinity RNA binding (C66), the structural nature of this region remains unclear and requires additional characterization.",
+    "result_type": "MINOR"
+  }
+]

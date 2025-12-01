@@ -1,0 +1,1629 @@
+{
+  "submission": {
+    "id": "0e801b7f-cead-4a2a-8b68-ea52df1dad18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:49:59.629471Z",
+    "updated_at": "2025-11-30T21:49:59.629471Z"
+  },
+  "content": [
+    {
+      "id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "submission_id": "0e801b7f-cead-4a2a-8b68-ea52df1dad18",
+      "content_type": "manuscript",
+      "content_text": "# Structure in the variability of the basic reproductive number (R0) for Zika epidemics in the Pacific islands\n\n## Authors\n\n- Clara Champagne<sup>1</sup> ([ORCID: 0000-0002-0369-6758](https://orcid.org/0000-0002-0369-6758)) \u2020\n- David Georges Salthouse<sup>1</sup>\n- Richard Paul<sup>3</sup>\n- Van-Mai Cao-Lormeau<sup>5</sup>\n- Benjamin Roche<sup>6</sup>\n- Bernard Cazelles<sup>1</sup> ([ORCID: 0000-0002-7972-361X](https://orcid.org/0000-0002-7972-361X)) \u2020\n\n### Affiliations\n\n1. IBENS, UMR 8197 CNRS-ENS Ecole Normale Sup\u00e9rieure Paris France\n2. CREST, ENSAE, Universit\u00e9 Paris Saclay France\n3. Department of Genomes and Genetics Institut Pasteur, Unit\u00e9 de G\u00e9n\u00e9tique Fonctionnelle des Maladies Infectieuses Paris France\n4. Centre National de la Recherche Scientifique URA 3012 Paris France\n5. Unit of Emerging Infectious Diseases Institut Louis Malard\u00e9 Tahiti France\n6. International Center for Mathematical and Computational Modeling of Complex Systems (UMMISCO) UPMC/IRD Bondy cedex France\n\n\u2020 Corresponding author\n\n## Abstract\n\nBefore the outbreak that reached the Americas in 2015, Zika virus (ZIKV) circulated in Asia and the Pacific: these past epidemics can be highly informative on the key parameters driving virus transmission, such as the basic reproduction number (R0). We compare two compartmental models with different mosquito representations, using surveillance and seroprevalence data for several ZIKV outbreaks in Pacific islands (Yap, Micronesia 2007, Tahiti and Moorea, French Polynesia 2013-2014, New Caledonia 2014). Models are estimated in a stochastic framework with recent Bayesian techniques. R0 for the Pacific ZIKV epidemics is estimated between 1.5 and 4.1, the smallest islands displaying higher and more variable values. This relatively low range of R0 suggests that intervention strategies developed for other flaviviruses should enable as, if not more effective control of ZIKV. Our study also highlights the importance of seroprevalence data for precise quantitative analysis of pathogen propagation, to design prevention and control strategies.\n\n## Introduction\n\nIn May 2015, the first local cases of Zika were recorded in Brazil and by December of the same year the number of cases had surpassed 1.5 million. On February 2016, the World Health Organization declared Zika as a public health emergency of international concern (Who, 2016) and in March 2016, local transmission of Zika was recognized in 34 countries. Previously the Zika virus had circulated in Africa and Asia but only sporadic human cases had been reported. In 2007 the outbreak on Yap (Micronesia) was the first Zika outbreak outside Africa and Asia (Duffy et al., 2009). Since, Zika outbreaks have been also reported in French Polynesia and in New Caledonia (Cao-Lormeau et al., 2014; Dupont-Rouzeyrol et al., 2015) between 2013 and 2014 and subsequently, there have been cases of Zika disease in the Cook Islands, the Solomon Islands, Samoa, Vanuatu, and Easter Island (Chile) (see Figure 1 in Petersen et al. [2016]).\n\nZika virus (ZIKV) is a flavivirus, mostly transmitted via the bites of infected Aedes mosquitoes, although non-vector-borne transmission has been documented (sexual and maternofoetal transmission, laboratory contamination, transmission through transfusion) (Musso and Gubler, 2016). The most common clinical manifestations include rash, fever, arthralgia, and conjunctivitis (Musso and Gubler, 2016) but a large proportion of infections are asymptomatic or trigger mild symptoms that can remain unnoticed. Nevertheless, the virus may be involved in many severe neurological complications, including Guillain-Barre syndrome (Cao-Lormeau et al., 2016) and microcephaly in newborns (Schuler-Faccini et al., 2015). These complications and the impressive speed of its geographically propagation make the Zika pandemic a public health threat (Who, 2016). This reinforces the urgent need to characterize the different facets of virus transmission and to evaluate its dispersal capacity. We address this here by estimating the key parameters of ZIKV transmission, including the basic reproduction number ($R_{0}$), based on previous epidemics in the Pacific islands.\n\nDefined as the average number of secondary cases caused by one typical infected individual in an entirely susceptible population, the basic reproduction number ($R_{0}$) is a central parameter in epidemiology used to quantify the magnitude of ongoing outbreaks and it provides insight when designing control interventions (Diekmann et al., 2010). It is nevertheless complex to estimate (Diekmann et al., 2010; van den Driessche and Watmough, 2002), and therefore, care must be taken when extrapolating the results obtained in a specific setting, using a specific mathematical model. In the present study, we explore the variability of $R_{0}$ using two models in several settings that had Zika epidemics in different years and that vary in population size (Yap, Micronesia 2007, Tahiti and Moorea, French Polynesia 2013\u20132014, and New Caledonia 2014). These three countries were successively affected by the virus, resulting in the first significant human outbreaks and they differ in several ways, including population size and location specific features. Hence, the comparison of their parameter estimates can be highly informative on the intrinsic variability of $R_{0}$. For each setting, we compare two compartmental models using different parameters defining the mosquito populations. Both models are considered in a stochastic framework, a necessary layer of complexity given the small population size and recent Bayesian inference techniques (Andrieu et al., 2010) are used for parameter estimation.\n\n## Results\n\nWe use mathematical transmission models and data from surveillance systems and seroprevalence surveys for several ZIKV outbreaks in Pacific islands (Yap, Micronesia 2007 (Duffy et al., 2009), Tahiti and Moorea, French Polynesia 2013\u20132014 (CHSP, 2014; Mallet et al., 2015; Aubry et al., 2015b), New Caledonia 2014 [DASS, 2014]) to quantify the ZIKV transmission variability.\n\nTwo compartmental models with vector-borne transmission are compared (cf. Figure 1). Both models use a Susceptible-Exposed-Infected-Resistant (SEIR) framework to describe the virus transmission in the human population, but differ in their representation of the mosquito population. Figure 1a is a schematic representation derived from Pandey et al. (2013) and formulates explicitly the mosquito population, with a Susceptible-Exposed-Infected (SEI) dynamic to account for the extrinsic incubation period (time taken for viral dissemination within the mosquito).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig1-v2.jpg)\n\n**Figure 1.:** Squared boxes and circles correspond respectively to human and vector compartments. Plain arrows represent transitions from one state to the next. Dashed arrows indicate interactions between humans and vectors. (a) Pandey model (Pandey et al., 2013). $H_{S}$ susceptible individuals; $H_{E}$ infected (not yet infectious) individuals; $H_{I}$ infectious individuals; $H_{R}$ recovered individuals; $\\sigma$ is the rate at which $H_{E}$-individuals move to infectious class $H_{I}$; infectious individuals ($H_{I}$) then recover at rate $\\gamma$; $V_{S}$ susceptible vectors; $V_{E}$ infected (not yet infectious) vectors; $V_{I}$ infectious vectors; $V$ constant size of total mosquito population; $\\tau$ is the rate at which $V_{E}$-vectors move to infectious class $V_{I}$; vectors die at rate $\\mu$. (b) Laneri model (Laneri et al., 2010). $H_{S}$ susceptible individuals; $H_{E}$ infected (not yet infectious) individuals; $H_{I}$ infectious individuals; $H_{R}$ recovered individuals; $\\sigma$ is the rate at which $H_{E}$-individuals move to infectious class $H_{I}$; infectious individuals ($H_{I}$) then recover at rate $\\gamma$; implicit vector-borne transmission is modeled with the compartments $\u03ba$ and $\\lambda$; $\\lambda$ current force of infection; $\u03ba$ latent force of infection reflecting the exposed state for mosquitoes during the extrinsic incubation period; $\\tau$ is the transition rate associated to the extrinsic incubation period.\n\nBy contrast, in the second model (Figure 1b) based on Laneri et al. (2010) the vector is modeled implicitly: the two compartments $\u03ba$ and $\\lambda$ do not represent the mosquito population but the force of infection for vector to human transmission. This force of infection passes through two successive stages in order to include the delay associated with the extrinsic incubation period: $\u03ba$ stands for this latent phase of the force of infection whereas $\\lambda$ corresponds directly to the rate at which susceptible humans become infected.\n\nThe basic reproduction number of the models ($R_{0}$) is calculated using the next Generation Matrix method (Diekmann et al., 2010):\n\n$$\nR_{0}^{Pandey}=\\sqrt{\\frac{\\beta_{H}\\beta_{V}\\tau}{\\gamma\\mu(\\mu+\\tau)}}\n$$\n\n\n\n$$\nR_{0}^{Laneri}=\\sqrt{\\frac{\\beta}{\\gamma}}\n$$\n\nIn addition, we consider that only a fraction $\u03c1$ of the total population is involved in the epidemic, due to spatial heterogeneity, immuno-resistance, or cross-immunity. For both models we define $N=\u03c1\u22c5H$ with H the total size of the population reported by census.\n\nThe dynamics of ZIKV transmission in these islands is highly influenced by several sources of uncertainties. In particular, the small population size (less than 7000 inhabitants in Yap) leads to high variability in transmission rates. Therefore all these models are simulated in a discrete stochastic framework (Poisson with stochastic rates [Bret\u00f3 et al., 2009]), to take this phenomenon into account. Stochasticity requires specific inference techniques: thus estimations are performed with PMCMC algorithm (particle Markov Chain Monte Carlo [Andrieu et al., 2010]).\n\nUsing declared Zika cases from different settings, the two stochastic models (Figure 1) were fitted (Figures 2\u20133). These models allow us to describe the course of the observed number of cases and estimate the number of secondary cases generated, R0. Our estimates of R0 lie between 1.6 (1.5\u20131.7) and 3.2 (2.4\u20134.1) and vary notably with respect to settings and models (Figures 2\u20133 and Tables 1\u20132). Strikingly, Yap displays consistently higher values of R0 in both models and in general, there is an inverse relationship between island size and both the value and variability of R0. This phenomenon may be explained by the higher stochasticity and extinction probability associated with smaller populations and can also reflect the information contained in the available data. However, the two highly connected islands in French Polynesia, Tahiti and Moorea, display similar values despite their differing sizes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig2-v2.jpg)\n\n**Figure 2.:** Posterior median number of observed Zika cases (solid line), 95% credible intervals (shaded blue area) and data points (black dots). First column: particle filter fit. Second column: Simulations from the posterior density. Third column: $R_{0}$ posterior distribution. (a) Yap. (b) Moorea. (c) Tahiti. (d) New Caledonia. The estimated seroprevalences at the end of the epidemic (with 95% credibility intervals) are: (a) 73% (CI95: 68\u201377, observed 73%); (b) 49% (CI95: 45\u201353, observed 49%); (c) 49% (CI95: 45\u201353, observed 49%); (d) 39% (CI95: 8\u201392). See\u00a0Figure 4.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig3-v2.jpg)\n\n**Figure 3.:** Posterior median number of observed Zika cases (solid line), 95% credible intervals (shaded blue area) and data points (black dots). First column: particle filter fit. Second column: Simulations from the posterior density. Third column: $R_{0}$ posterior distribution. (a) Yap. (b) Moorea. (c) Tahiti. (d) New Caledonia. The estimated seroprevalences at the end of the epidemic (with 95% credibility intervals) are: (a) 72% (CI95: 68\u201377, observed 73%); (b) 49% (CI95: 45\u201353, observed 49%); c) 49% (CI95: 45\u201353, observed 49%); d) 65% (CI95: 24\u201391). See Figure 5.\n\n**Table 1.**\n Parameter estimations for the Pandey model. Posterior median (95% credible intervals). All the posterior parameter distributions are presented in\u00a0Figures 6\u20139 .\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Pandey model</th>\n      <th></th>\n      <th>Yap</th>\n      <th>Moorea</th>\n      <th>Tahiti</th>\n      <th>New Caledonia</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Population size</td>\n      <td>H</td>\n      <td>6892</td>\n      <td>16,200</td>\n      <td>178,100</td>\n      <td>268,767</td>\n    </tr>\n    <tr>\n      <td>Basic reproduction number</td>\n      <td>R0</td>\n      <td>3.2\u00a0(2.4\u20134.1)</td>\n      <td>2.6\u00a0(2.2\u20133.3)</td>\n      <td>2.4\u00a0(2.0\u20133.2)</td>\n      <td>2.0\u00a0(1.8\u20132.2)</td>\n    </tr>\n    <tr>\n      <td>Observation rate</td>\n      <td>r</td>\n      <td>0.024\u00a0(0.019-0.032)</td>\n      <td>0.058\u00a0(0.048-0.073)</td>\n      <td>0.060\u00a0(0.050-0.073)</td>\n      <td>0.024\u00a0(0.010-0.111)</td>\n    </tr>\n    <tr>\n      <td>Fraction of population involved</td>\n      <td>\u03c1</td>\n      <td>74% (69\u201381)</td>\n      <td>50% (48\u201354)</td>\n      <td>50% (46\u201354)</td>\n      <td>40% (9\u201396)</td>\n    </tr>\n    <tr>\n      <td>Initial number of infected individuals</td>\n      <td>HI(0)</td>\n      <td>2 (1\u20138)</td>\n      <td>5 (0\u201321)</td>\n      <td>329 (16\u20131047)</td>\n      <td>37 (1\u2013386)</td>\n    </tr>\n    <tr>\n      <td>Infectious period in human (days)</td>\n      <td>\u03b3-1</td>\n      <td>5.2 (4.1\u20136.7)</td>\n      <td>5.2\u00a0(4.1\u20136.8)</td>\n      <td>5.2 (4.1\u20136.7)</td>\n      <td>5.5 (4.2\u20136.8)</td>\n    </tr>\n    <tr>\n      <td>Extrinsic incubation period in mosquito (days)</td>\n      <td>\u03c4-1</td>\n      <td>10.6 (8.7\u201312.5)</td>\n      <td>10.5 (8.6\u201312.4)</td>\n      <td>10.5\u00a0(8.6\u201312.6)</td>\n      <td>10.7\u00a0(8.9\u201312.5)</td>\n    </tr>\n    <tr>\n      <td>Mosquito lifespan (days)</td>\n      <td>\u03bc-1</td>\n      <td>15.6\u00a0(11.7\u201319.3)</td>\n      <td>15.3 (11.4\u201319.1)</td>\n      <td>15.1 (11.2\u201319.0)</td>\n      <td>15.4 (11.6\u201319.4)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Parameter estimations for the Laneri model. Posterior median (95% credible intervals). All the posterior parameter distributions are presented in\u00a0Figures 10\u201313.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Laneri model</th>\n      <th></th>\n      <th>Yap</th>\n      <th>Moorea</th>\n      <th>Tahiti</th>\n      <th>New Caledonia</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Population size</td>\n      <td>H</td>\n      <td>6892</td>\n      <td>16,200</td>\n      <td>178,100</td>\n      <td>268,767</td>\n    </tr>\n    <tr>\n      <td>Basic reproduction number</td>\n      <td>R0</td>\n      <td>2.2 (1.9\u20132.6)</td>\n      <td>1.8 (1.6\u20132.0)</td>\n      <td>1.6\u00a0(1.5\u20131.7)</td>\n      <td>1.6 (1.5\u20131.7)</td>\n    </tr>\n    <tr>\n      <td>Observation rate</td>\n      <td>r</td>\n      <td>0.024\u00a0(0.019\u20130.033)</td>\n      <td>0.057\u00a0(0.047\u20130.07)</td>\n      <td>0.057\u00a0(0.049\u20130.069)</td>\n      <td>0.014\u00a0(0.010\u20130.037)</td>\n    </tr>\n    <tr>\n      <td>Fraction of population involved</td>\n      <td>\u03c1</td>\n      <td>73% (69\u201378)</td>\n      <td>51% (47\u201355)</td>\n      <td>54% (49\u201359)</td>\n      <td>71% (27\u201398)</td>\n    </tr>\n    <tr>\n      <td>Initial number of infected individuals</td>\n      <td>HI(0)</td>\n      <td>2 (1\u201310)</td>\n      <td>9 (1\u201328)</td>\n      <td>667 (22\u20131570)</td>\n      <td>82 (2\u2013336)</td>\n    </tr>\n    <tr>\n      <td>Infectious period in human (days)</td>\n      <td>\u03b3-1</td>\n      <td>5.3 (4.1\u20136.6)</td>\n      <td>5.3 (4.1\u20136.7)</td>\n      <td>5.2\u00a0(4.1\u20136.7)</td>\n      <td>5.4 (4.1\u20136.8)</td>\n    </tr>\n    <tr>\n      <td>Extrinsic incubation period in mosquito (days)</td>\n      <td>\u03c4-1</td>\n      <td>10.7 (8.8\u201312.7)</td>\n      <td>10.6 (8.6\u201312.6)</td>\n      <td>10.5\u00a0(8.5\u201312.5)</td>\n      <td>10.8\u00a0(8.9\u201312.8)</td>\n    </tr>\n  </tbody>\n</table>\n\nRegarding model variability, $R_{0}$ estimates are always higher and coarser with the Pandey model than with the Laneri model (cf. Tables 1\u20132). The Pandey model has two additional estimated parameters (in particular, the mosquito lifespan), which can explain the higher variability of the output. It is worth noting that these parameters are very sensitive (see Materials and methods). The difference in $R_{0}$ may also be linked to the difference in the estimated initial number of infected individuals ($H_{I}(0)$), which is higher in the Laneri model than in the Pandey model. Because of the high proportion of asymptomatic cases (the ratio of asymptomatic:symptomatic is estimated to be 1:1.3, V.-M Cao-Lormeau personal communication), it is hard to determine which scenario is more realistic, the time between introduction of the disease into the island and the first reported symptomatic case being unknown in most settings.\n\nFor the durations of infectious and intrinsic incubation (in human) and extrinsic incubation (in mosquito) periods, the posterior density ressembles the informative prior (cf. Figures 6\u201313), indicating the models\u2019 incapacity to identify properly these parameters without more informative data. Moreover, these parameters have a clear sensitivity (see Materials and methods) and precise field measures are therefore crucial for reliable model predictions.\n\nThe fraction $\u03c1$ of the population involved in the epidemic is well estimated when the seroprevalence is known (in Yap and French Polynesia). In these cases, the proportion of the population involved is slightly greater than the seroprevalence rate, indicating a very high infection rate among involved individuals. In New Caledonia, as no information on seroprevalence was available, the fraction of population involved displays very large confidence intervals (cf. Tables 1 and 2), indicating that the model did not manage to identify properly this parameter with the available data. In this case, this parameter is highly correlated to the observation rate $r$ (cf Figures 17 and 21): $r$ and $\u03c1$ seem unidentifiable without precise information on seroprevalence.\n\n## Discussion\n\nThe reproduction number $R_{0}$ is a key parameter in epidemiology that characterizes the epidemic dynamics and the initial spread of the pathogen at the start of an outbreak in a susceptible population. $R_{0}$ can be used to inform public health authorities on the level of risk posed by an infectious disease, vaccination strategy, and the potential effects of control interventions (Anderson and May, 1982). In the light of the potential public health crisis generated by the international propagation of ZIKV, characterization of the potential transmissibility of this pathogen is crucial for predicting epidemic size, rate of spread and efficacy of intervention.\n\nUsing data from both surveillance systems and seroprevalence surveys in four different geographical settings across the Pacific (Duffy et al., 2009; CHSP, 2014; Mallet et al., 2015; DASS, 2014; Aubry et al., 2015b), we have estimated the basic reproductive number $R_{0}$ (see Figures 2\u20133 and Tables 1\u20132). Our estimate of $R_{0}$ obtained by inference based on Particle MCMC (Andrieu et al., 2010) has values in the range 1.6 (1.5\u20131.7) \u2013 3.2 (2.4\u20134.1). Our $R_{0}$ estimates vary notably across settings. Lower and finer $R_{0}$ values are found in larger islands. This phenomenon can at least in part be explained by large spatial heterogeneities and higher demographic stochasticity for islands with smaller populations, as well as the influence of stochasticity on biological and epidemiological processes linked to virus transmission. This phenomenon can also be specific to the selection of the studied islands or can reflect a highly clustered geographical pattern, the global incidence curve being the smoothed overview of a collection of more explosive small size outbreaks. However, it is notable that the two French Polynesian islands yield similar estimates of $R_{0}$ despite differing population sizes. Indeed, other important factors differ among French Polynesia, New Caledonia and Yap, such as the human genetic background and their immunological history linked to the circulation of others arboviruses. Moreover, whilst both New Caledonia and French Polynesia populations were infected by the same ZIKV lineage and transmitted by the same principle vector species, Aedes aegypti, the epidemic in Yap occurred much earlier with a different ZIKV lineage (Wang et al., 2016) and vectored by a different mosquito species Aedes hensilli (Ledermann et al., 2014). In French Polynesia, the vector Aedes polynesiensis is also present and dominates in Moorea with higher densities than in Tahiti. Finally, different vector control measures have been conducted in the three countries.\n\nTo date, studies investigating Zika outbreaks in the Pacific have always estimated $R_{0}$ using a deterministic framework. Using a similar version of the Pandey model in French Polynesia, Kucharski et al. (Kucharski et al., 2016) estimated $R_{0}$ between 1.6 and 2.3 (after scaling to square root for comparison) for Tahiti and between 1.8 and 2.9 in Moorea. These estimates are slightly lower and less variable than ours. This difference can be explained firstly by the chosen priors on mosquito parameters and secondly because our model includes demographic stochasticity. Moreover, they predicted a seroprevalence rate at the end of the epidemic of 95\u201397%, far from the 49% measured. In Yap island, a study (Funk et al., 2016) used a very detailed deterministic mosquito model, and estimated an $R_{0}$ for Zika between 2.9 and 8. In this case, our lower and less variable estimates may come from the fact that our model is more parsimonious in the number of uncertain parameters, especially concerning the mosquito population. Finally, a third study (Nishiura et al., 2016a) relied on another method for $R_{0}$ calculation (based on the early exponential growth rate of the epidemic) in French Polynesia as a whole and in Yap. Again, the obtained parameters are lower than ours in French Polynesia and higher in Yap. The first estimations for South America using a similar methodology (Nishiura et al., 2016b; Towers et al., 2016; Gao et al., 2016) lead to similar $R_{0}$ values. In all these studies a deterministic framework is used excluding the possibility of accounting for the high variability of biological and epidemiological processes exacerbated by the small size of the population. In these three studies, like in ours, it is worth noting that little insight is obtained regarding mosquito parameters. Posterior distribution mimics the chosen prior (cf. Figures 6\u201313). Both the simulation of the epidemics and the estimated $R_{0}$ are highly sensitive to the choice of priors on mosquito parameters, for which precise field measures are rare.\n\nIn the absence of sufficient data, the modeling of mosquito-borne pathogen transmission is a difficult task due to non-linearity and non-stationarity of the involved processes (Cazelles and Hales, 2006). This work has then several limitations. First, our study is limited by the completeness and quality of the data, with regard to both incidence and seroprevalence, but, above all, by the scarcity of information available on mosquitoes. Incidence data is aggregated at the island scale and cannot disentangle the effects of geography and observation noise to explain bimodal curves observed in Yap and New Caledonia. Moreover, although all data came from national surveillance systems, we had very little information about the potential degree of under-reporting, especially due to the high proportion of mildly symptomatic cases, at a time when the dangerous complications associated with the virus were unknown. Moreover, some cases might have been misdiagnosed as other flaviviruses, due to similarity in clinical manifestations or cross-reactivity in assays. Seroprevalence data were gathered from small sample sizes and were also sensitive to cross reactivity in populations non naive to dengue. In addition, they were missing in New Caledonia, which leads to strong correlation between our estimation of the observation rate and the fraction of the population involved in the epidemic. Because of the high proportion of asymptomatic or mildly symptomatic cases, the magnitude of the outbreaks is difficult to evaluate without precise seroprevalence data (Metcalf et al., 2016) or detection of mild, asymptomatic or pre-symptomatic infections (Thompson et al., 2016). Considering vectors, no demographic data were available and this partly explains the large variability of our $R_{0}$ estimations. Secondly, incidence and seroprevalence data were difficult to reconcile; the use of incidence data led to higher infection rates than those observed in the seroprevalence data. This difficulty has been overcome by considering that only a fraction of the population ($\u03c1$) is involved in the epidemic and then our model manages to reproduce the observed seroprevalence rate. This exposed fraction could be the result of spatial heterogeneity and high clustering of cases and transmission, as observed for dengue. The small dispersal of the mosquito and the limited population inter-mingling likely leads to considerable spatial variation in the extent of exposure to the virus and pockets of refugia in Tahiti as elsewhere (Telle et al., 2016). For instance, previous dengue infection rates in French Polynesia display large spatial variations even within islands (Daudens et al., 2009). Finer scale incidence and seroprevalence data would be useful to explore this. Another explanation for higher predicted than observed infection rates could be due to interaction with other flaviviruses. The Zika outbreak was concomitant with dengue outbreaks in French Polynesia (CHSP, 2014; Mallet et al., 2015) and New Caledonia (DASS, 2014). Examples of coinfection have been reported (Dupont-Rouzeyrol et al., 2015) but competition between these close pathogens may also have occurred. Finally, mathematical models with vectorial transmission may tend to estimate high attack rates, sometimes leading to a contradiction between observed incidence and observed seroprevalence. Assumptions on the proportionality between infected mosquitoes and the force of infection, as well as the density-dependence assumption in these models could be questioned. Indeed even if these assumptions are at the heart of the mathematical models of mosquito-borne pathogen transmission (Reiner et al., 2013; Smith et al., 2014), a recent review (Halstead, 2008) and recent experimental results (Bowman et al., 2014; Harrington et al., 2014) question these important points.\n\nOn a final note, the estimates of $R_{0}$ for ZIKV are similar to but generally on the lower side of estimates made for two other flaviviruses of medical importance, dengue and Yellow Fever viruses (Favier et al., 2006; Imai et al., 2015; Massad et al., 2003), even though caution is needed in the comparison of studies with differing models, methods and data sources. Interventions strategies developed for dengue should thus enable as, if not more effective control of ZIKV, with the caveat that ZIKV remains principally a mosquito-borne pathogen with little epidemiological significance of the sexual transmission route. Even though further work and data are needed to support this hypothesis (Brauer et al., 2016), two recent studies indicated that sexual transmission alone is not sufficient to sustain an epidemic (Gao et al., 2016; Towers et al., 2016).\n\nIn conclusion, using recent stochastic modeling methods, we have been able to determine estimates of $R_{0}$ for ZIKV with an unexpected relationship with population size. Further data from the current Zika epidemic in South America that is caused by the same lineage as French Polynesia lead to estimates in the same range of values (Nishiura et al., 2016b; Towers et al., 2016; Gao et al., 2016). Our study highlights the importance of gathering seroprevalence data, especially for a virus that often leads to an asymptomatic outcome and it would provide a key component for precise quantitative analysis of pathogen propagation to enable improved planning and implementation of prevention and control strategies.\n\n## Materials and methods\n\n### Data\n\nDuring the 2007 outbreak that struck Yap, 108 suspected or confirmed Zika cases (16 per 1000 inhabitants) were reported by reviewing medical records and conducting prospective surveillance between April 1st and July 29th 2007 (Duffy et al., 2009). In French Polynesia, sentinel surveillance recorded more than 8700 suspected cases (32 per 1000 inhabitants) across the whole territory between October 2013 and April 2014 (CHSP, 2014; Mallet et al., 2015). In New Caledonia, the first Zika case was imported from French Polynesia on 2013 November 12th. Approximately 2500 cases (9 per 1000 inhabitants) were reported through surveillance between January (first autochtonous case) and August 2014 (DASS, 2014).\n\nFor Yap and French Polynesia, the post-epidemic seroprevalence was assessed. In Yap, a household survey was conducted after the epidemic, yielding an infection rate in the island of 73% (Duffy et al., 2009). In French Polynesia, three seroprevalence studies were conducted. The first one took place before the Zika outbreak, and concluded that most of the population was naive for Zika virus (Aubry et al., 2015a). The second seroprevalence survey was conducted between February and March 2014, at the end of the outbreak, and reported a seroprevalence rate around 49% (Aubry et al., 2015b). The third one concerned only schoolchildren in Tahiti and was therefore not included in the present study.\n\nDemographic data on population size were based on censuses from Yap (Duffy et al., 2009), French Polynesia (Insee, 2012), and New Caledonia (Insee, 2014).\n\n### Models and inference\n\n#### Model equations\n\nAlthough the models are simulated in a stochastic framework, we present them with ordinary differential equations for clarity. The reactions involved in the stochastic models are the same as those governed by the deterministic equations, but the simulation process differs through the use of discrete compartments. It is described in the next section.\n\nThe equations describing Pandey model are:\n\n$$\n\\frac{dH_{S}}{dt}=\u2212\\beta_{H}v_{I}H_{S}\\frac{dH_{E}}{dt}=\\beta_{H}v_{I}H_{S}\u2212\\sigmaH_{E}\\frac{dH_{I}}{dt}=\\sigmaH_{E}\u2212\\gammaH_{I}\\frac{dH_{R}}{dt}=\\gammaH_{I}\\frac{dv_{S}}{dt}=\\mu\u2212\\frac{\\beta_{V}H_{I}}{N}v_{S}\u2212\\muv_{S}\\frac{dv_{E}}{dt}=\\frac{\\beta_{V}H_{I}}{N}v_{S}\u2212\\tauv_{E}\u2212\\muv_{E}\\frac{dv_{I}}{dt}=\\tauv_{E}\u2212\\muv_{I}\n$$\n\nwhere $v_{s}=\\frac{V_{S}}{V}$ is the proportion of susceptible mosquitoes, $v_{E}=\\frac{V_{E}}{V}$ the proportion of exposed mosquitoes, and $v_{I}=\\frac{V_{I}}{V}$ the proportion of infected mosquitoes. Since we are using a discrete model, we cannot use directly the proportions $v_{S}$, $v_{E}$ and $v_{I}$ whose values are smaller than one. Therefore, we rescale using $V=H$, which leads to $V_{S}^{\u2032}=v_{S}\u22c5H$, $V_{E}^{\u2032}=v_{E}\u22c5H$, and $V_{I}^{\u2032}=v_{I}\u22c5H$. In this model, the force of infection for humans is $\\lambda_{H}=\\beta_{H}\u2062v_{I}$, and the force of infection for mosquitoes is $\\lambda_{V}=\\beta_{V}\u2062\\frac{H_{I}}{N}$\n\nThe equations describing Laneri model are:\n\n$$\n\\frac{dH_{S}}{dt}=\u2212\\lambdaH_{S}\\frac{dH_{E}}{dt}=\\lambdaH_{S}\u2212\\sigmaH_{E}\\frac{dH_{I}}{dt}=\\sigmaH_{E}\u2212\\gammaH_{I}\\frac{dH_{R}}{dt}=\\gammaH_{I}\\frac{d\u03ba}{dt}=\\frac{2\\betaH_{I}\\tau}{N}\u22122\\tau\u03ba\\frac{d\\lambda}{dt}=2\\tau\u03ba\u22122\\tau\\lambda\n$$\n\nIn this model, the role of mosquitoes in transmission is represented only through the delay they introduce during the extrinsic incubation period (EIP, incubation period in the mosquito). For modeling reasons, this delay is included by representing the force of infection from infected humans to susceptible humans with two compartments $\u03ba$ and $\\lambda$: in this formalism, the duration between the moment when an exposed individual becomes infectious and the moment when another susceptible individual acquires the infection has a gamma distribution of mean $\\tau^{-1}$(Laneri et al., 2010; Roy et al., 2013; Lloyd, 2001). Therefore, $\\lambda$ represents the current force of infection for humans $\\lambda_{H}=\\lambda$ . The compartment $\u03ba$ represents the same force of infection but at a previous stage, reflecting the exposed phase for mosquitoes during the extrinsic incubation period. As an analogy to Pandey model, the force of infection for mosquitoes is $\\lambda_{V}=\\frac{\\beta\u2062H_{I}\u2062\\tau}{v_{s}\u2062N}$, and therefore, the parameter $\\beta$ can be interpreted as the product of a transmission parameter $\\beta^{\u2032}$ by the proportion of susceptible mosquitoes: $\\beta=v_{s}\u2062\\beta^{\u2032}$. The force of infection for mosquitoes is then similar to Pandey\u2019s : $\\lambda_{V}=\\beta^{\u2032}\u2062\\tau\u2062\\frac{H_{I}}{N}$.\n\nAgain, since we are using a discrete model, we cannot use directly the proportions $\\lambda$ and $\u03ba$ whose values are smaller than one. Therefore, we rescale up to a factor $N$, which leads to $L=\\lambda\u2062N$ and $K=\u03ba\u2062N$.\n\nIn both models, following the dominant paradigm that diseases transmitted by Aedes mosquitoes are highly clustered, we restricted the total population $H$ measured by census to a fraction $N=\u03c1.H$, in which the parameter $\u03c1$ is estimated. This formulation makes the hypothesis that a fraction of the total population is not at risk from the epidemic, because of individual factors or because the individuals remain in areas where the virus is not present. Moreover as the vector\u2019s flying range is small, the clustering of ZIKV infection may be reinforced. This may result in escapees from infection within the population, even at a single island scale. The available data does not allow further exploration of the mechanisms underlying these phenomena, which seem fundamental to understand ZIKV propagation. At the very least, the restriction to a fraction $\u03c1$ enables the model to reproduce the observed seroprevalence rates, and to provide coherent results with respect to both data sources (seroprevalence and surveillance data).\n\n#### Stochastic framework\n\nBoth models are simulated in a stochastic and discrete framework, the Poisson with stochastic rates formulation (Bret\u00f3 et al., 2009), to include the uncertainties related to small population size. In this framework, the number of reactions occurring in a time interval $d\u2062t$ is approximated by a multinomial distribution. In a model with $m$ possible reactions and $c$ compartments, $z_{t}$ being the state of the system at time $t$ and $\\theta$ the model parameters, the probability that each reaction with\u00a0rate\u00a0$r^{k}$ occurs $n_{k}$ times in $d\u2062t$ is calculated as follows (Dureau et al., 2013):\n\n$$\np(n_{1},...n_{m}|z_{t},\\theta)=\\prodi=1c{M_{i}(1\u2212\\sumX(k)=ip_{k})^{n_{i}\u00af}\\prodX(k)=i(p_{k})^{n_{k}}}+o(dt)\n$$\n\nwith, $z_{t}^{(i)}$ being the number of individual in compartment $i$ at time $t$,\n\n#### Observation models\n\nThe only observed compartments are the infected humans (incidence measured every week) and the recovered humans (seroprevalence at the end of the outbreak when data is available). In order to link the model to the data, two observation models, for both incidence and seroprevalence data, are needed.\n\n#### Observation model on incidence data\n\nThe observed weekly incidence is assumed to follow a negative binomial distribution (Bret\u00f3 et al., 2009) whose mean equals the number of new cases predicted by the model times an estimated observation rate $r$.\n\nThe observation rate $r$ accounts for non observed cases, due to non reporting from medical centers, mild symptoms unseen by health system, and asymptomatic infections. Without additional data, it is not possible to make a distinction between these three categories of cases. We also implicitely make the assumption that these cases transmit the disease as much as reported symptomatic cases.\n\nThe observation model for incidence data is therefore :\n\n$$\nI\u2062n\u2062c_{o\u2062b\u2062s}=N\u2062e\u2062g\u2062B\u2062i\u2062n\u2062(\u03d5^{-1},\\frac{1}{1+\u03d5\u2062r\u2062I\u2062n\u2062c})\n$$\n\n$I\u2062n\u2062c_{o\u2062b\u2062s}$ being the observed incidence, and $I\u2062n\u2062c$ the incidence predicted by the model. The dispersion parameter (Bret\u00f3 et al., 2009) $\u03d5$ is fixed at 0.1.\n\n#### Observation model on seroprevalence data\n\nSeroprevalence data is fitted for Tahiti, Moorea, and Yap settings. It is assumed that the observed seroprevalence at the end of the epidemic follows a normal distribution with fixed standard deviation, whose mean equals the number of individuals in the $H_{R}$ compartment predicted by the model.\n\nThe observation model for seroprevalence data is therefore :\n\n$$\nH_{R}^{o\u2062b\u2062s}=N\u2062o\u2062r\u2062m\u2062a\u2062l\u2062(H_{R},\u039b)\n$$\n\nat the last time step, with notations detailed for each model in Table 3.\n\n**Table 3.**\n Details of the observation models for seroprevalence\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Island</th>\n      <th>Date</th>\n      <th>Standard deviation</th>\n      <th>Observed seroprevalence</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>\u039b</th>\n      <th>HRo\u2062b\u2062s</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Yap</td>\n      <td>2007-07-29</td>\n      <td>150</td>\n      <td>5005 (Duffy et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>Moorea</td>\n      <td>2014-03-28</td>\n      <td>325</td>\n      <td>0.49 \u00d7 16200 = 7938\u00a0(Aubry et al., 2015b)</td>\n    </tr>\n    <tr>\n      <td>Tahiti</td>\n      <td>2014-03-28</td>\n      <td>3562</td>\n      <td>0.49 \u00d7 178100 = 87269\u00a0(Aubry et al., 2015b)</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Prior distributions\n\nInformative prior distributions are assumed for the mosquito lifespan, the duration of infectious period, and both intrinsic and extrinsic incubation periods. The initial numbers of infected mosquitoes and humans are estimated, and the initial number of exposed individuals is set to the initial number of infected to reduce parameter space. We assume that involved populations are naive to Zika virus prior to the epidemic and set the initial number of recovered humans to zero. The other priors and associated references are listed in Table 4.\n\n**Table 4.**\n Prior distributions of parameters. 'Uniform[0,20]' indicates a uniform distribution in the range [0,20]. 'Normal(5,1) in [4,7]' indicates a normal distribution with mean five and standard deviation 1, restricted to the range [4,7].\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th></th>\n      <th colspan=\"2\">Pandey model</th>\n      <th colspan=\"2\">Laneri model</th>\n      <th>References</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>R02</td>\n      <td>squared basic reproduction number</td>\n      <td colspan=\"2\">Uniform[0, 20]</td>\n      <td colspan=\"2\">Uniform[0, 20]</td>\n      <td>assumed</td>\n    </tr>\n    <tr>\n      <td>\u03b2V</td>\n      <td>transmission from human to mosquito</td>\n      <td colspan=\"2\">Uniform[0,10]</td>\n      <td colspan=\"2\">.</td>\n      <td>assumed</td>\n    </tr>\n    <tr>\n      <td>\u03b3-1</td>\n      <td>infectious period (days)</td>\n      <td colspan=\"2\">Normal(5,1) in [4,7]</td>\n      <td colspan=\"2\">Normal(5,1) in [4,7]</td>\n      <td>(Mallet et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>\u03c3-1</td>\n      <td>intrinsic incubation period (days)</td>\n      <td colspan=\"2\">Normal(4,1) in [2,7]</td>\n      <td colspan=\"2\">Normal(4,1) in [2,7]</td>\n      <td>(Nishiura et al., 2016b; Bearcroft, 1956; Lessler et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>\u03c4-1</td>\n      <td>extrinsic incubation period (days)</td>\n      <td colspan=\"2\">Normal(10.5,1) in [4,20]</td>\n      <td colspan=\"2\">Normal(10.5,1) in [4,20]</td>\n      <td>(Hayes, 2009; Chouin-Carneiro et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>\u03bc-1</td>\n      <td>mosquito lifespan (days)</td>\n      <td colspan=\"2\">Normal(15,2) in [4,30]</td>\n      <td colspan=\"2\">.</td>\n      <td>(Brady et al., 2013; Liu-Helmersson et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>fraction of population involved</td>\n      <td colspan=\"2\">Uniform[0,1]</td>\n      <td colspan=\"2\">Uniform[0,1]</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe range for the prior on observation rate is reduced for Tahiti and New Caledonia, in order to reduce the parameter space and facilitate convergence. In both cases, we use the information provided with the data source. In French Polynesia, 8750 cases we reported, but according to local health authorities, more than 32,000 people would have attended health facilities for Zika (Mallet et al., 2015) (8750/32000\u00a0\u2264\u00a00.3). In New Caledonia, approximately 2500 cases were reported but more than 11,000 cases were estimated by heath authorities (DASS, 2014) (2500/11000\u00a0\u2264\u00a00.23). In both cases, these extrapolations are lower bounds on the real number of cases (in particular, they do not estimate the number of asymptomatic infections), and therefore can be used as upper bounds on the observation rate.\n\n### Estimations\n\n#### Inference with PMCMC\n\nThe complete model is represented using the state space framework, with two equation systems: the transition equations refer to the transmission models, and the measurement equations are given by the observation models.\n\nIn a deterministic framework, this model could be directly estimated using MCMC, with a Metropolis-Hastings algorithm targeting the posterior distribution of the parameters. This algorithm would require the calculation of the model likelihood at each iteration.\n\nIn our stochastic framework, the model output is given only through simulations and the likelihood is intractable. In consequence, estimations are performed with the PMCMC algorithm (particle Markov Chain Monte Carlo (Andrieu et al., 2010)), in the PMMH version (particle marginal Metropolis-Hastings). This algorithm uses the Metropolis-Hastings structure, but replaces the real likelihood by its estimation with Sequential Monte Carlo (SMC).\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 1 PMCMC (Andrieu et al., 2010) (PMMH version, as in SSM (Dureau et al., 2013))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>In a model with n observations and J particles. q(.|\u03b8(i)) is the transition kernel.</td>\n    </tr>\n    <tr>\n      <td>1:\u00a0Initialize \u03b8(0). 2:\u00a0Using SMC algorithm, compute p^(y1:n|\u03b8(0)) and sample x0:n\u2217 from p^(x0:n|y1:n,\u03b8(0)). 3:\u00a0for i=1...N\u00a0do 4: \u2003Sample \u03b8\u2217 from q(.|\u03b8(i)) 5: \u2003Using SMC algorithm, compute L(\u03b8\u2217)=p^(y1:n|\u03b8\u2217) and sample x0:n\u2217 from p^(x0:n|y1:n,\u03b8\u2217) 6: \u2003Accept \u03b8* (et x0:n\u2217) with probability 1\u2227L(\u03b8(i))q(|\u03b8\u2217)L(\u03b8\u2217)q(\u03b8\u2217|\u03b8(i)) 7: \u2003If accepted, \u03b8(i+1)=\u03b8\u2217 and x0:n(i+1)=x0:n\u2217. Otherwise \u03b8(i+1)=\u03b8(i) and x0:n(i+1)=x0:n(i). 8:\u00a0end for</td>\n    </tr>\n  </tbody>\n</table>\n\nSMC (Doucet et al., 2001) is a filtering method that enables to recover the latent variables and estimate the likelihood for a given set of parameters. The data is treated sequentially, by adding one more data point at each iteration. The initial distribution of the state variables is approximated by a sample a particles, and from one iteration to the next, all the particles are projected according to the dynamic given by the model. The particles receive a weight according to the quality of their prediction regarding the observations. Before the next iteration, all the particles are resampled using these weights, in order to eliminate low weight particles and concentrate the computational effort in high probability regions. Model likelihood is also computed sequentially at each iteration (Dureau et al., 2013; Doucet and Johansen, 2011).\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 2 SMC (Sequential Monte Carlo, as implemented in SSM [Dureau et al., 2013])</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>In a model with n observations and J particles.</td>\n    </tr>\n    <tr>\n      <td>L is the model likelihood p(y1:T|\u03b8). Wk(j)\u00a0is the weight and xk(j) is the state associated to particle j at iteration k.</td>\n    </tr>\n    <tr>\n      <td>1:\u00a0Set L=1, W0(j)=1/J. 2:\u00a0Sample (x0(j))j=1:J from p(x|\u03b80). 3:\u00a0for k=0:n-1j=0:Jdo 4: \u2003for j=0:jdo 5: \u2003\u2003Sample (xk+1(j))j=1:J from p(xk+1|xk,\u03b8) 6: \u2003\u2003Set \u03b1(j)=p(yk+1|xk+1(j),\u03b8) 7: \u2003end for 8: \u2003Set Wk+1(j)=\u03b1(j)\u2211l=1J\u03b1(l) and L=L\u20621J\u2062\u2211j\u03b1(l) 9: \u2003Resample (x0:k+1(j))j=1:J from Wk+1(j) 10:\u00a0end for</td>\n    </tr>\n  </tbody>\n</table>\n\nA gaussian kernel $q(.|\\theta^{(i)})$ is used in the PMCMC algorithm, with mean $\\theta^{(i)}$ and fixed variance $\u03a3^{q}$ (random walk Metropolis Hastings).\n\n#### Initialization\n\nPMCMC algorithm is very sensitive to initialization of both the parameter values $\\theta^{(0)}$ and the covariance matrix $\u03a3^{q}$. Several steps of initialization are therefore used.\n\nFirstly, parameter values are initialized by maximum likelihood through simplex algorithm on a deterministic version of the model. We apply the simplex algorithm to a set of 1000 points sampled in the prior distributions and we select the parameter set with the highest likelihood.\n\nSecondly, in order to initialise the covariance matrix, an adaptative MCMC (Metropolis Hastings) framework is used (Roberts and Rosenthal, 2009; Dureau et al., 2013). It uses the empirical covariance of the chain $\u03a3^{(i)}$, and aims to calibrate the acceptance rate of the algorithm to an optimal value. The transition kernel is also mixed (with a probability $\\alpha=0.05$) with another gaussian using the identity matrix to improve mixing properties.\n\n$$\nq^{A}(.|x^{(i)})=\\alphaN(x^{(i)},\\lambda\\frac{2.38^{2}}{d}Id)+(1\u2212\\alpha)N(x^{(i)},\\lambda\\frac{2.38^{2}}{d}\u03a3^{(i)})\n$$\n\nThe parameter $\\lambda$ is approximated by successive iterations using the empirical acceptance rate of the chain.\n\n$$\n\\lambda_{i+1}=\\lambda_{i}\u2062a^{i}\u2062(A\u2062c\u2062c\u2062R\u2062a\u2062t\u2062e_{i}-0.234)\n$$\n\nThe adaptative PMCMC algorithm itself may have poor mixing properties without initialization. A first estimation of the covariance matrix is computed using KMCMC algorithm (Dureau et al., 2013). In the KMCMC algorithm, the model is simulated with stochastic differential equations (intermediate between deterministic and Poisson with stochastic rates frameworks) and the SMC part of the adaptative PMCMC is replaced by the extended Kalman filter. When convergence is reached with KMCMC, then, adaptative PMCMC is used.\n\nThe PMCMC algorithm is finally applied on the output of the adaptative PMCMC, using 50,000 iterations and 10,000 particles. Calculations are performed with SSM software (Dureau et al., 2013) and R version 3.2.2.\n\n### R0\u00a0Calculation\n\n$R_{0}$ is calculated using the Next Generation Matrix approach (NGM) (19).\n\n#### R0\u00a0Calculation in Pandey model\n\n$$\nF=(000\\beta_{H}00000\\beta_{v}000000)v=(\u2212\\sigma0000\u2212\\gamma0000\u2212(\\mu+\\tau)0000\u2212\\mu)\n$$\n\nThen we have,\n\n$$\nV^{\u22121}=(\u22121/\\sigma000\u22121/\\gamma\u22121/\\gamma0000\u22121/(\\mu+\\tau)000\u2212\\tau/[\\mu(\\tau+\\mu)]\u22121/\\mu)\n$$\n\nand\n\n$$\nFV^{\u22121}=(00\u2212\\beta_{H}\\tau/[\\mu(\\tau+\\mu)]\u2212\\beta_{H}/\\mu0000\u2212\\beta_{v}/\\gamma\u2212\\beta_{v}/\\gamma000000)\n$$\n\nWe calculate the eigen values $\\alpha$ of $-F\u2062V^{-1}$ :\n\n$$\n|\u2212\\alpha0\\beta_{H}\\tau/[\\mu(\\tau+\\mu)]\\beta_{H}/\\mu0\u2212\\alpha00\\beta_{v}/\\gamma\\beta_{v}/\\gamma\u2212\\alpha0000\u2212\\alpha|=\\alpha^{2}(\\alpha^{2}\u2212\\frac{\\beta_{H}\\beta_{V}\\tau}{\\gamma\\mu(\\tau+\\mu)})=0\n$$\n\nThen $\\alpha=0$ or $\\alpha=\\pm\\sqrt{\\frac{\\beta_{H}\\beta_{V}\\tau}{\\gamma\\mu(\\tau+\\mu)}}$ and the highest eigenvalue is $R_{0}=\\sqrt{\\frac{\\beta_{H}\u2062\\beta_{V}\u2062\\tau}{\\gamma\u2062\\mu\u2062(\\tau+\\mu)}}$.\n\nThis formula defines $R_{0}$ as \"the number of secondary cases per generation\" (Dietz, 1993): i.e $R_{0}$ can be written as the geometric mean $R_{0}=\\sqrt{R_{0}^{v}\u2062R_{0}^{h}}$, where $R_{0}^{v}$ is the number of infected mosquitoes after the introduction of one infected human in a naive population, and $R_{0}^{h}$ is the number of infected humans after the introduction of one infected mosquito in a naive population. With this definition, herd immunity is reached when $(1-R_{0}^{-2})$ of the population is vaccinated (Dietz, 1993).\n\n#### R0\u00a0Calculation in Laneri model\n\nFollowing the analogy with Pandey model, we compute the spectral radius of the NGM for the Laneri model.\n\n$$\nF=(000100000\\beta\\tau000000)V=(\u2212\\sigma0000\u2212\\gamma0000\u2212\\tau000\\tau\u2212\\tau)\n$$\n\nThen we have,\n\n$$\nV^{\u22121}=(\u22121/\\sigma000\u22121/\\gamma\u22121/\\gamma0000\u22121/\\tau000\u22121/\\tau\u22121/\\tau)\n$$\n\nand\n\n$$\nFV^{\u22121}=(00\u22121/\\tau\u22121/\\tau0000\u2212\\beta\\tau/\\gamma\u2212\\beta\\tau/\\gamma000000)\n$$\n\nWe calculate the eigen values $\\alpha$ of $-F\u2062V^{-1}$ :\n\n$$\n|\u2212\\alpha01/\\tau1/\\tau0\u2212\\alpha00\\beta\\tau/\\gamma\\beta\\tau/\\gamma\u2212\\alpha0000\u2212\\alpha|=\\alpha^{2}(\\alpha^{2}\u2212\\frac{\\beta\\tau}{\\gamma\\tau})=0\n$$\n\nThen $\\alpha=0$ or $\\alpha=\\pm\\sqrt{\\frac{\\beta}{\\gamma}}$ and the highest eigenvalue is $\\alpha_{R}=\\sqrt{\\frac{\\beta}{\\gamma}}$.\n\nBecause \u03bb and \u03ba can be seen as parameters rather than state variables, the interpretation of the spectral radius as the R0 of the model is not straightforward. Therefore, we computed the R0 of the model through simulations, by counting the number of secondary infections after the introduction of a single infected individual in a naive population. Since Laneri model is considered here as a vector model, the number of infected humans after the introduction of a single infected is considered as R02. We simulated 1000 deterministic trajectories, using parameter values sampled in the posterior distributions for all parameters except initial conditions. With this method, the confidence intervals for number of infected humans (R02) are similar to the ones of \u03b1R2 estimated by the model. As a consequence, R0 was approximated by the spectral radius of the NGM in our results with our stochastic framework (cf. Table 5).\n\n**Table 5.**\n Square root of the number of secondary cases after the introduction of a single infected individual in a naive population. Median and 95% credible intervals of 1000 deterministic simulations using parameters from the posterior distribution.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Pandey model</th>\n      <th>Laneri model</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Yap</td>\n      <td>3.1 (2.5\u20134.3)</td>\n      <td>2.2 (1.9\u20132.6)</td>\n    </tr>\n    <tr>\n      <td>Moorea</td>\n      <td>2.6 (2.2\u20133.3)</td>\n      <td>1.8 (1.6\u20132.0)</td>\n    </tr>\n    <tr>\n      <td>Tahiti</td>\n      <td>2.4 (2.0\u20133.2)</td>\n      <td>1.6 (1.5\u20131.7)</td>\n    </tr>\n    <tr>\n      <td>New Caledonia</td>\n      <td>2.0 (1.8\u20132.2)</td>\n      <td>1.6 (1.5\u20131.7)</td>\n    </tr>\n  </tbody>\n</table>\n\nAs a robustness check, the same method was applied to Pandey model : the confidence intervals for the number of secondary cases in simulations are very similar to the ones of $R_{0}^{2}$ (cf. Table 5).\n\n### Sensitivity analysis\n\nIn order to analyse the influence of parameter values on the model\u2019s outputs, a sensitivity analysis was performed, using LHS/PRCC technique (Blower and Dowlatabadi, 1994), on Tahiti example. Similar results were obtained for the other settings. Three criteria were retained as outputs for the analysis: the seroprevalence at the last time point, the intensity of the peak of the outbreak and the date of the peak. We used uniform distributions for all parameters, which are listed in Tables 6 and 7. For model parameters, we used the same range as for the prior distribution. For initial conditions, the observation rate r and the fraction involved in the epidemic \u03c1, we used the 95% confidence interval obtained by PMCMC, in order to avoid unrealistic scenarios.\n\n**Table 6.**\n Sensitivity analysis in Pandey model. Tahiti island. 1000 parameter sets were sampled with latin hypercube sampling (LHS), using 'lhs' R package (Carnell, 2016). On each parameter set, the model was simulated deterministically in order to explore variability in parameters without interference with variations due to stochasticity. PRCC were computed using the 'sensitivity' R package (Pujol et al., 2016).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Distribution</th>\n      <th>Seroprevalence</th>\n      <th>Peak intensity</th>\n      <th>Peak date</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Model parameters</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R02</td>\n      <td>Uniform[0,20]</td>\n      <td>0.87</td>\n      <td>0.90</td>\n      <td>\u22120.55</td>\n    </tr>\n    <tr>\n      <td>\u03b2V</td>\n      <td>Uniform[0,10]</td>\n      <td>\u22120.66</td>\n      <td>\u22120.73</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>\u03b3-1</td>\n      <td>Uniform[4,7]</td>\n      <td>\u22120.25</td>\n      <td>0.10</td>\n      <td>0.20</td>\n    </tr>\n    <tr>\n      <td>\u03c3-1</td>\n      <td>Uniform[2,7]</td>\n      <td>\u22120.03</td>\n      <td>\u22120.10</td>\n      <td>0.15</td>\n    </tr>\n    <tr>\n      <td>\u03c4-1</td>\n      <td>Uniform[4,20]</td>\n      <td>\u22120.05</td>\n      <td>\u22120.07</td>\n      <td>0.06</td>\n    </tr>\n    <tr>\n      <td>\u03bc-1</td>\n      <td>Uniform[4,30]</td>\n      <td>\u22120.56</td>\n      <td>\u22120.70</td>\n      <td>0.49</td>\n    </tr>\n    <tr>\n      <td>Initial conditions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HI(0)</td>\n      <td>Uniform[2.10-5,0.011]</td>\n      <td>0.05</td>\n      <td>\u22120.02</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>VI(0)</td>\n      <td>Uniform[10-4,0.034]</td>\n      <td>0.11</td>\n      <td>\u22120.00</td>\n      <td>\u22120.26</td>\n    </tr>\n    <tr>\n      <td>Fraction involved and observation model</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>Uniform[0.46,0.54]</td>\n      <td>0.47</td>\n      <td>0.15</td>\n      <td>\u22120.03</td>\n    </tr>\n    <tr>\n      <td>r</td>\n      <td>Uniform[0.048,0.072]</td>\n      <td>\u22120.04</td>\n      <td>0.03</td>\n      <td>0.05</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 7.**\n Sensitivity analysis in Laneri model. Tahiti island. 1000 parameter sets were sampled with latin hypercube sampling (LHS), using 'lhs' R package (Carnell, 2016). On each parameter set, the model was simulated deterministically in order to explore variability in parameters without interference with variations due to stochasticity. PRCC were computed using the 'sensitivity' R package (Pujol et al., 2016).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Distribution</th>\n      <th>Seroprevalence</th>\n      <th>Peak intensity</th>\n      <th>Peak date</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Model parameters</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R02</td>\n      <td>Uniform[0,20]</td>\n      <td>0.62</td>\n      <td>0.93</td>\n      <td>\u22120.50</td>\n    </tr>\n    <tr>\n      <td>\u03b3-1</td>\n      <td>Uniform[4,7]</td>\n      <td>0.01</td>\n      <td>0.62</td>\n      <td>0.15</td>\n    </tr>\n    <tr>\n      <td>\u03c3-1</td>\n      <td>Uniform[2,7]</td>\n      <td>\u22120.03</td>\n      <td>\u22120.54</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>\u03c4-1</td>\n      <td>Uniform[4,20]</td>\n      <td>\u22120.03</td>\n      <td>\u22120.70</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td>Initial conditions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HI(0)</td>\n      <td>Uniform[10-5,0.015]</td>\n      <td>0.05</td>\n      <td>0.02</td>\n      <td>\u22120.32</td>\n    </tr>\n    <tr>\n      <td>L(0)</td>\n      <td>Uniform[2.10-5,0.004]</td>\n      <td>0.05</td>\n      <td>0.00</td>\n      <td>\u22120.16</td>\n    </tr>\n    <tr>\n      <td>Fraction involved and observation model</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>Uniform[0.49,0.59]</td>\n      <td>0.80</td>\n      <td>0.34</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>r</td>\n      <td>Uniform[0.048,0.068]</td>\n      <td>\u22120.01</td>\n      <td>0.01</td>\n      <td>\u22120.02</td>\n    </tr>\n  </tbody>\n</table>\n\nFor all criteria, the key parameters in both models are transmission parameters ($R_{0}$ and $\\beta_{V}$). High values for $R_{0}$ are positively correlated with a large seroprevalence and a high and early peak. On the contrary, high values for the parameters introducing a delay in the model, the incubation periods in human ($\\sigma^{-1}$) and in mosquito ($\\tau^{-1}$), are associated with a lower and later peak, and have no significant effect on seroprevalence. Moreover, the simulations are clearly sensitive to the other model parameters, in particular the mosquito lifespan ($\\mu^{-1}$) in Pandey model.\n\nConcerning other parameters, the initial conditions have a noticeable effect on the date of the peak only. As expected, the fraction involved in the epidemic ($\u03c1$) influences the magnitude of the outbreak, by calibrating the proportion of people than can be infected, but it has no significant effect on the timing of the peak.\n\n### Complementary results\n\nThese complementary results include PMCMC results for both models in the four settings: the epidemic trajectories regarding the human compartments for infected and recovered individuals\u00a0(Figures 4,5), the detailed posterior distributions for all parameters (Figures 6\u201313) and correlation plots for all models (Figures 14\u201321).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig4-v2.jpg)\n\n**Figure 4.:** Simulations from the posterior density: posterior median (solid line), 95% and 50% credible intervals (shaded blue areas) and observed seroprevalence (black dots). First column: Infected humans ($H_{I}$). Second column: Recovered humans ($H_{R}$). (a) Yap. (b) Moorea. (c) Tahiti. (d) New Caledonia.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig5-v2.jpg)\n\n**Figure 5.:** Simulations from the posterior density: posterior median (solid line), 95% and 50% credible intervals (shaded blue areas) and observed seroprevalence (black dots). First column: Infected humans ($H_{I}$). Second column: Recovered humans ($H_{R}$). (a) Yap. (b) Moorea. (c) Tahiti. (d) New Caledonia.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig6-v2.jpg)\n\n**Figure 6.:** Pandey model, Yap island.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig7-v2.jpg)\n\n**Figure 7.:** Pandey model, Moorea island.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig8-v2.jpg)\n\n**Figure 8.:** Pandey model, Tahiti island.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig9-v2.jpg)\n\n**Figure 9.:** Pandey model, New Caledonia.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig10-v2.jpg)\n\n**Figure 10.:** Laneri model, Yap island.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig11-v2.jpg)\n\n**Figure 11.:** Laneri model, Moorea island.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig12-v2.jpg)\n\n**Figure 12.:** Laneri model, Tahiti island.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig13-v2.jpg)\n\n**Figure 13.:** Laneri model, New Caledonia.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig14-v2.jpg)\n\n**Figure 14.:** Pandey model, Yap island.\n\n![Figure 15.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig15-v2.jpg)\n\n**Figure 15.:** Pandey model, Moorea island.\n\n![Figure 16.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig16-v2.jpg)\n\n**Figure 16.:** Pandey model, Tahiti island.\n\n![Figure 17.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig17-v2.jpg)\n\n**Figure 17.:** Pandey model, New Caledonia.\n\n![Figure 18.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig18-v2.jpg)\n\n**Figure 18.:** Laneri model, Yap island.\n\n![Figure 19.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig19-v2.jpg)\n\n**Figure 19.:** Laneri model, Moorea island.\n\n![Figure 20.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig20-v2.jpg)\n\n**Figure 20.:** Laneri model, Tahiti island.\n\n![Figure 21.](https://cdn.elifesciences.org/articles/19874/elife-19874-fig21-v2.jpg)\n\n**Figure 21.:** Laneri model, New Caledonia.\n\n#### Correlation between estimated parameters\n\nThe inference technique may fail to estimate some parameters due to identifiability issues. In particular, when two parameters are highly correlated to one another, the model manages to estimate the pair of parameters but not each one separately. The analysis of correlation between parameters\u2019 posterior distributions can reveal such cases. The following graphics display for each model the correlation coefficients between all pairs of parameters across the MCMC chain. For example, in models for New Caledonia, the observation rate and the fraction of the population involved in the epidemic are strongly negatively correlated (Figures 17,21): the inference technique does not manage to estimate properly these two parameters, due to the lack of information on seroprevalence.\n\n### Code and source data files\n\nThe estimation tools are provided by the open source software SSM (Dureau et al., 2013) (State Space Models, RRID:SCR_014647), available at https://github.com/JDureau/ssm and https://github.com/sballesteros/ssm-predict. The codes for the implementation of each model are provided as supplementary file.\n",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "0a80d054-5f87-4014-8b07-043dc680d69e",
+      "submission_id": "0e801b7f-cead-4a2a-8b68-ea52df1dad18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19874.036](https://doi.org/10.7554/eLife.19874.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structure in the variability of the basic reproductive number (R0) for Zika epidemics in the Pacific islands\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Prabhat Jha as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOn the whole, the reviewers and the Reviewing Editor appreciated the work. Although there have been a number of previous attempts to estimate R0 for Zika using Pacific Island data, they see the importance in the use of a stochastic model in order to obtain more precise values for both point estimates and uncertainty bounds, as well as the efforts to capture some degree of the structural uncertainty in model design. Making the source data available was particularly appreciated as this enhances the transparency and reproducibility of the analysis.\n\nThe reviewers and Reviewing Editor had only two requirements, although both of them are important:\n\n1) Despite a better effort than many to explain the methods used, the details were still unclear to the reviewers. Hence we would like to see the full model code used for the analysis made available alongside the source data.\n\n2) There was some concern over the estimation and interpretation of the parameter \u03c1, which appears to be a key parameter in the model but is poorly defined. This reduces the population actually involved in the epidemic dynamics as a result of \"spatial heterogeneity, immuno-resistance or cross-immunity\". It ranges between 34% to 74% across models and islands, and is especially variable in New Caledonia between the two models (34% \u2013 70%). It seems particularly strange that \u03c1 is actually smaller than final seroprevalence rate in the outbreak (73% in Yap and 94% in French Polynesia), when most of the population was na\u00efve prior to the outbreak. How do people seroconvert if they are not involved in the epidemic? And if part of the population was actually protected from infection, is there any evidence to support the mechanism (eg. genetic links to Zika susceptibility, or spatial data showing that part of the islands were unaffected)?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structure in the variability of the basic reproductive number (R0) for Zika epidemics in the Pacific islands\" for further consideration at eLife. Your revised article has been favorably evaluated by Prabhat Jha as the Senior editor and the previous reviewers.\n\nFirstly, we would like to apologise for the time it has taken to respond to your resubmission. We wanted to consult further about the issue of model code availability stated below, but unfortunately this process took far longer than anticipated.\n\nOverall we are happy with the revised article and are almost ready to proceed to acceptance. The one outstanding issue is the availability of the model code. We do understand that you have provided a link to the code to the algorithm used for parameter inference. However, the editors and reviewer were unable to understand how to reproduce your numerical findings using the code in the repository plus the data included in the Appendix. As far as we can tell, all you have provided is a link to code written by other developers that was used in your model, not the actual compartmental model itself.\n\nWe would like you to provide either (i) an explanation that we are wrong and that your results (including all the figures behind all the tables and graphs) can be fully regenerated using this code, or (ii) the actual code itself. Once you are able to provide this, we should be able to proceed very rapidly to a final decision\n",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e1a51d4b-5298-4fe6-b4c4-a39bc29986fe",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C1",
+      "claim": "Before the outbreak that reached the Americas in 2015, Zika virus (ZIKV) circulated in Asia and the Pacific.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the outbreak that reached the Americas in 2015, Zika virus (ZIKV) circulated in Asia and the Pacific: these past epidemics can be highly informative on the key parameters driving virus transmission, such as the basic reproduction number (R0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by references to historical outbreaks in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "22a9908a-0ef8-4b79-99c6-43ddb827ec11",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C2",
+      "claim": "R0 for the Pacific ZIKV epidemics is estimated between 1.5 and 4.1.",
+      "claim_type": "EXPLICIT",
+      "source": "R0 for the Pacific ZIKV epidemics is estimated between 1.5 and 4.1, the smallest islands displaying higher and more variable values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This estimate is derived from the modeling analysis presented in the results section, with specific values shown in Tables 1-2 and Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "76598fe0-c4d3-47d3-8c6b-63623e916d39",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C3",
+      "claim": "The smallest islands display higher and more variable R0 values.",
+      "claim_type": "EXPLICIT",
+      "source": "R0 for the Pacific ZIKV epidemics is estimated between 1.5 and 4.1, the smallest islands displaying higher and more variable values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by the data in Tables 1-2 showing Yap (smallest population) has the highest R0 estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "6a6a96b6-2100-4784-9dc3-8504bc33c652",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C4",
+      "claim": "This relatively low range of R0 suggests that intervention strategies developed for other flaviviruses should enable as, if not more effective control of ZIKV.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively low range of R0 suggests that intervention strategies developed for other flaviviruses should enable as, if not more effective control of ZIKV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the comparison of estimated R0 values with other flaviviruses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "6c369013-db0d-4042-8a03-d2dfe6c92ca7",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C5",
+      "claim": "In May 2015, the first local cases of Zika were recorded in Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "In May 2015, the first local cases of Zika were recorded in Brazil and by December of the same year the number of cases had surpassed 1.5 million.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the timeline of the Zika outbreak in Brazil.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "4bc4bc64-28a1-4834-824b-ce9623b84e52",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C6",
+      "claim": "By December 2015, the number of Zika cases in Brazil had surpassed 1.5 million.",
+      "claim_type": "EXPLICIT",
+      "source": "In May 2015, the first local cases of Zika were recorded in Brazil and by December of the same year the number of cases had surpassed 1.5 million.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the scale of the outbreak.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "80e4f278-5af8-4d90-b045-66072019047c",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C7",
+      "claim": "On February 2016, the World Health Organization declared Zika as a public health emergency of international concern.",
+      "claim_type": "EXPLICIT",
+      "source": "On February 2016, the World Health Organization declared Zika as a public health emergency of international concern (Who, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "a44811e5-40ef-450c-aa91-aea33bdfa216",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C8",
+      "claim": "In March 2016, local transmission of Zika was recognized in 34 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "in March 2016, local transmission of Zika was recognized in 34 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the geographic spread of Zika.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "270c1f96-76c4-4603-bda3-597926ad3fa0",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C9",
+      "claim": "In 2007 the outbreak on Yap (Micronesia) was the first Zika outbreak outside Africa and Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2007 the outbreak on Yap (Micronesia) was the first Zika outbreak outside Africa and Asia (Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "3b99938c-44a8-43d7-bc14-843592b07d7d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C10",
+      "claim": "Zika outbreaks have been reported in French Polynesia and in New Caledonia between 2013 and 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Since, Zika outbreaks have been also reported in French Polynesia and in New Caledonia (Cao-Lormeau et al., 2014; Dupont-Rouzeyrol et al., 2015) between 2013 and 2014",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cao-Lormeau et al., 2014 and Dupont-Rouzeyrol et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f8d11379-48f8-4527-be64-f2cfae387c25",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C11",
+      "claim": "Zika virus (ZIKV) is a flavivirus, mostly transmitted via the bites of infected Aedes mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Zika virus (ZIKV) is a flavivirus, mostly transmitted via the bites of infected Aedes mosquitoes, although non-vector-borne transmission has been documented (sexual and maternofoetal transmission, laboratory contamination, transmission through transfusion) (Musso and Gubler, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Musso and Gubler, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "a6ca7c03-4b57-44b5-8111-43e9d2de6e3a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C12",
+      "claim": "Non-vector-borne transmission of ZIKV has been documented, including sexual and maternofoetal transmission, laboratory contamination, and transmission through transfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Zika virus (ZIKV) is a flavivirus, mostly transmitted via the bites of infected Aedes mosquitoes, although non-vector-borne transmission has been documented (sexual and maternofoetal transmission, laboratory contamination, transmission through transfusion) (Musso and Gubler, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Musso and Gubler, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "747adb90-6c0a-4286-bae4-7860fe06287c",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C13",
+      "claim": "The most common clinical manifestations of ZIKV include rash, fever, arthralgia, and conjunctivitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common clinical manifestations include rash, fever, arthralgia, and conjunctivitis (Musso and Gubler, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Musso and Gubler, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "34d46618-00d4-4e63-8e8d-7bf2f1e32118",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C14",
+      "claim": "A large proportion of ZIKV infections are asymptomatic or trigger mild symptoms that can remain unnoticed.",
+      "claim_type": "EXPLICIT",
+      "source": "but a large proportion of infections are asymptomatic or trigger mild symptoms that can remain unnoticed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ZIKV infection characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "471968fc-45cc-4cfb-9cc3-1c61463723b1",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C15",
+      "claim": "ZIKV may be involved in Guillain-Barre syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the virus may be involved in many severe neurological complications, including Guillain-Barre syndrome (Cao-Lormeau et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cao-Lormeau et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "7d63fccd-727d-4a7e-816d-4bbf9ca3e0fd",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C16",
+      "claim": "ZIKV may be involved in microcephaly in newborns.",
+      "claim_type": "EXPLICIT",
+      "source": "and microcephaly in newborns (Schuler-Faccini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schuler-Faccini et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "892ee9a6-04ea-4f08-9a94-2e9d86d19491",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C17",
+      "claim": "The basic reproduction number (R0) is defined as the average number of secondary cases caused by one typical infected individual in an entirely susceptible population.",
+      "claim_type": "EXPLICIT",
+      "source": "Defined as the average number of secondary cases caused by one typical infected individual in an entirely susceptible population, the basic reproduction number (R0) is a central parameter in epidemiology used to quantify the magnitude of ongoing outbreaks and it provides insight when designing control interventions (Diekmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition supported by citation to Diekmann et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "35b115b9-7233-458b-ab5d-7e4ddf80fc05",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C18",
+      "claim": "R0 is a central parameter in epidemiology used to quantify the magnitude of ongoing outbreaks and provides insight when designing control interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Defined as the average number of secondary cases caused by one typical infected individual in an entirely susceptible population, the basic reproduction number (R0) is a central parameter in epidemiology used to quantify the magnitude of ongoing outbreaks and it provides insight when designing control interventions (Diekmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Diekmann et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "186754b2-38f0-4c3b-a0ca-6d7556416b53",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C19",
+      "claim": "R0 is complex to estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is nevertheless complex to estimate (Diekmann et al., 2010; van den Driessche and Watmough, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Diekmann et al., 2010 and van den Driessche and Watmough, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "325c4009-2ad9-42a4-a5c2-55f05521527a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C20",
+      "claim": "Two compartmental models with vector-borne transmission are compared in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Two compartmental models with vector-borne transmission are compared (cf. Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "7133f5f5-42ac-4841-b8e0-b14966559192",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C21",
+      "claim": "Both models use a Susceptible-Exposed-Infected-Resistant (SEIR) framework to describe the virus transmission in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models use a Susceptible-Exposed-Infected-Resistant (SEIR) framework to describe the virus transmission in the human population, but differ in their representation of the mosquito population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the description of the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "2bb01a5b-9254-461d-8965-18c6928640fe",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C22",
+      "claim": "The Pandey model formulates explicitly the mosquito population, with a Susceptible-Exposed-Infected (SEI) dynamic to account for the extrinsic incubation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1a is a schematic representation derived from Pandey et al. (2013) and formulates explicitly the mosquito population, with a Susceptible-Exposed-Infected (SEI) dynamic to account for the extrinsic incubation period (time taken for viral dissemination within the mosquito).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and shown in Figure 1a, with citation to Pandey et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "9e38b2b3-9afa-4227-bf0d-b746bab4b088",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C23",
+      "claim": "In the Laneri model, the vector is modeled implicitly using compartments \u03ba and \u03bb representing the force of infection for vector to human transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the second model (Figure 1b) based on Laneri et al. (2010) the vector is modeled implicitly: the two compartments \u03ba and \u03bb do not represent the mosquito population but the force of infection for vector to human transmission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and shown in Figure 1b, with citation to Laneri et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "50de99ee-ba7a-4c32-9b3b-e1889c0ddba9",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C24",
+      "claim": "During the 2007 outbreak in Yap, 108 suspected or confirmed Zika cases (16 per 1000 inhabitants) were reported.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 2007 outbreak that struck Yap, 108 suspected or confirmed Zika cases (16 per 1000 inhabitants) were reported by reviewing medical records and conducting prospective surveillance between April 1st and July 29th 2007 (Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "1137f6d0-86c9-4925-8429-8eb475dde948",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C25",
+      "claim": "In French Polynesia, sentinel surveillance recorded more than 8700 suspected cases (32 per 1000 inhabitants) across the whole territory between October 2013 and April 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "In French Polynesia, sentinel surveillance recorded more than 8700 suspected cases (32 per 1000 inhabitants) across the whole territory between October 2013 and April 2014 (CHSP, 2014; Mallet et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CHSP, 2014 and Mallet et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "139c34f4-3a60-4887-b8a5-db04fd29414b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C26",
+      "claim": "In New Caledonia, approximately 2500 cases (9 per 1000 inhabitants) were reported through surveillance between January and August 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "In New Caledonia, the first Zika case was imported from French Polynesia on 2013 November 12th. Approximately 2500 cases (9 per 1000 inhabitants) were reported through surveillance between January (first autochtonous case) and August 2014 (DASS, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to DASS, 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "aef47c51-d5ff-4618-93a1-73bc063a4eb8",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C27",
+      "claim": "In Yap, a household survey conducted after the epidemic yielded an infection rate of 73%.",
+      "claim_type": "EXPLICIT",
+      "source": "In Yap, a household survey was conducted after the epidemic, yielding an infection rate in the island of 73% (Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "b9c566c5-3d88-4cc5-9322-58841fea2c70",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C28",
+      "claim": "In French Polynesia, a seroprevalence study conducted before the Zika outbreak concluded that most of the population was naive for Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In French Polynesia, three seroprevalence studies were conducted. The first one took place before the Zika outbreak, and concluded that most of the population was naive for Zika virus (Aubry et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aubry et al., 2015a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f3c5a1a8-57c6-48b1-96a3-68580035901e",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C29",
+      "claim": "A seroprevalence survey conducted in French Polynesia between February and March 2014 reported a seroprevalence rate around 49%.",
+      "claim_type": "EXPLICIT",
+      "source": "The second seroprevalence survey was conducted between February and March 2014, at the end of the outbreak, and reported a seroprevalence rate around 49% (Aubry et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aubry et al., 2015b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "d1f7d45a-784e-4260-b693-ad88ef1d3217",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C30",
+      "claim": "All models are simulated in a discrete stochastic framework to take into account the high variability in transmission rates due to small population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore all these models are simulated in a discrete stochastic framework (Poisson with stochastic rates [Bret\u00f3 et al., 2009]), to take this phenomenon into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation to Bret\u00f3 et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "ba7c5378-b00a-4c5d-a35d-70972a17b642",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C31",
+      "claim": "Estimations are performed with PMCMC algorithm (particle Markov Chain Monte Carlo).",
+      "claim_type": "EXPLICIT",
+      "source": "Stochasticity requires specific inference techniques: thus estimations are performed with PMCMC algorithm (particle Markov Chain Monte Carlo [Andrieu et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation to Andrieu et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "4219532a-4e35-44bc-916b-c9fce925eb0d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C32",
+      "claim": "The estimates of R0 lie between 1.6 (1.5\u20131.7) and 3.2 (2.4\u20134.1) and vary notably with respect to settings and models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of R0 lie between 1.6 (1.5\u20131.7) and 3.2 (2.4\u20134.1) and vary notably with respect to settings and models (Figures 2\u20133 and Tables 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figures 2-3 and Tables 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "cda10457-cf07-4a29-bbcb-e1bee76d0ffd",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C33",
+      "claim": "Yap displays consistently higher values of R0 in both models.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Yap displays consistently higher values of R0 in both models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Tables 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "5e5017b0-5c78-48e8-bbf9-9d1e03ab00a5",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C34",
+      "claim": "There is an inverse relationship between island size and both the value and variability of R0.",
+      "claim_type": "EXPLICIT",
+      "source": "and in general, there is an inverse relationship between island size and both the value and variability of R0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pattern observed in the data across different islands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "80835e6f-5cad-4fd7-af7c-40fb95f3587d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C35",
+      "claim": "The two highly connected islands in French Polynesia, Tahiti and Moorea, display similar R0 values despite their differing sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the two highly connected islands in French Polynesia, Tahiti and Moorea, display similar values despite their differing sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Tables 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "ccd2f5ab-18f8-44da-b207-175a1ce1d80b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C36",
+      "claim": "R0 estimates are always higher and coarser with the Pandey model than with the Laneri model.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding model variability, R0 estimates are always higher and coarser with the Pandey model than with the Laneri model (cf. Tables 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the data in Tables 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e6854a75-4cef-40a1-bb14-959f4ea79339",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C37",
+      "claim": "The Pandey model has two additional estimated parameters compared to the Laneri model, including the mosquito lifespan, which can explain the higher variability of the output.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pandey model has two additional estimated parameters (in particular, the mosquito lifespan), which can explain the higher variability of the output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structure and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "18d81347-5daf-483c-a0e9-35f540c86170",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C38",
+      "claim": "The mosquito lifespan parameter is very sensitive in the Pandey model.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that these parameters are very sensitive (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the sensitivity analysis presented in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "31310400-130f-4e58-b30e-d726e801cda1",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C39",
+      "claim": "The initial number of infected individuals (HI(0)) is higher in the Laneri model than in the Pandey model.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in R0 may also be linked to the difference in the estimated initial number of infected individuals (HI(0)), which is higher in the Laneri model than in the Pandey model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Tables 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "cadea4db-704d-4f53-811b-3b7824365118",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C40",
+      "claim": "The ratio of asymptomatic to symptomatic ZIKV cases is estimated to be 1:1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the high proportion of asymptomatic cases (the ratio of asymptomatic:symptomatic is estimated to be 1:1.3, V.-M Cao-Lormeau personal communication)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on personal communication from V.-M Cao-Lormeau.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f9995811-2466-40ec-a546-c9b14d86a49d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C41",
+      "claim": "For the durations of infectious and intrinsic incubation (in human) and extrinsic incubation (in mosquito) periods, the posterior density resembles the informative prior.",
+      "claim_type": "EXPLICIT",
+      "source": "For the durations of infectious and intrinsic incubation (in human) and extrinsic incubation (in mosquito) periods, the posterior density ressembles the informative prior (cf. Figures 6\u201313), indicating the models' incapacity to identify properly these parameters without more informative data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the posterior distributions shown in Figures 6-13.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e128c8c8-4fea-4249-9718-54d3029bd3f8",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C42",
+      "claim": "The fraction \u03c1 of the population involved in the epidemic is well estimated when the seroprevalence is known (in Yap and French Polynesia).",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction \u03c1 of the population involved in the epidemic is well estimated when the seroprevalence is known (in Yap and French Polynesia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the narrow confidence intervals for \u03c1 in these settings as shown in Tables 1-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "ae9d1736-ca12-4c83-aee1-7b10328ad4e0",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C43",
+      "claim": "In Yap and French Polynesia, the proportion of the population involved is slightly greater than the seroprevalence rate, indicating a very high infection rate among involved individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the proportion of the population involved is slightly greater than the seroprevalence rate, indicating a very high infection rate among involved individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of estimated \u03c1 values with observed seroprevalence rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f42513e9-9af9-4535-b92b-f493ed871880",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C44",
+      "claim": "In New Caledonia, the fraction of population involved displays very large confidence intervals, indicating that the model did not manage to identify properly this parameter with the available data.",
+      "claim_type": "EXPLICIT",
+      "source": "In New Caledonia, as no information on seroprevalence was available, the fraction of population involved displays very large confidence intervals (cf. Tables 1 and 2), indicating that the model did not manage to identify properly this parameter with the available data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the wide confidence intervals shown in Tables 1-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "d71a01fd-7cff-4210-9371-6ffa8d7fde3b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C45",
+      "claim": "In New Caledonia, the observation rate r and the fraction of population involved \u03c1 are highly correlated and seem unidentifiable without precise information on seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, this parameter is highly correlated to the observation rate r (cf Figures 17 and 21): r and \u03c1 seem unidentifiable without precise information on seroprevalence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation plots in Figures 17 and 21.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "3fb75a83-afa0-4fc7-9dc9-b5f9d55cae6b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C46",
+      "claim": "R0 can be used to inform public health authorities on the level of risk posed by an infectious disease, vaccination strategy, and the potential effects of control interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "R0 can be used to inform public health authorities on the level of risk posed by an infectious disease, vaccination strategy, and the potential effects of control interventions (Anderson and May, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Anderson and May, 1982.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "5f79300c-84df-432e-9936-d5b2202e6837",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C47",
+      "claim": "Using a similar version of the Pandey model in French Polynesia, Kucharski et al. estimated R0 between 1.6 and 2.3 for Tahiti and between 1.8 and 2.9 in Moorea.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a similar version of the Pandey model in French Polynesia, Kucharski et al. (Kucharski et al., 2016) estimated R0 between 1.6 and 2.3 (after scaling to square root for comparison) for Tahiti and between 1.8 and 2.9 in Moorea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kucharski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "19e4a3ab-19b1-4cb3-a8f6-a31b70186546",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C48",
+      "claim": "Kucharski et al. predicted a seroprevalence rate at the end of the epidemic of 95\u201397%, far from the 49% measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they predicted a seroprevalence rate at the end of the epidemic of 95\u201397%, far from the 49% measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with results from Kucharski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "a0409eb5-f997-45e8-97e9-5976e6bd4b3a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C49",
+      "claim": "A study by Funk et al. used a very detailed deterministic mosquito model and estimated an R0 for Zika in Yap island between 2.9 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "In Yap island, a study (Funk et al., 2016) used a very detailed deterministic mosquito model, and estimated an R0 for Zika between 2.9 and 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Funk et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "fced1aea-e345-4cfc-ad7a-aa3dd3b7a7eb",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C50",
+      "claim": "A study by Nishiura et al. relied on a method for R0 calculation based on the early exponential growth rate of the epidemic in French Polynesia and Yap.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a third study (Nishiura et al., 2016a) relied on another method for R0 calculation (based on the early exponential growth rate of the epidemic) in French Polynesia as a whole and in Yap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nishiura et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "40eba7f1-c874-4e6e-8bae-14ea23d9f595",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C51",
+      "claim": "The estimates of R0 for ZIKV are similar to but generally on the lower side of estimates made for dengue and Yellow Fever viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "On a final note, the estimates of R0 for ZIKV are similar to but generally on the lower side of estimates made for two other flaviviruses of medical importance, dengue and Yellow Fever viruses (Favier et al., 2006; Imai et al., 2015; Massad et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Favier et al., 2006; Imai et al., 2015; Massad et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "74e582dc-ef48-40aa-9893-4ab85c855fff",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C52",
+      "claim": "Two recent studies indicated that sexual transmission alone is not sufficient to sustain a ZIKV epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though further work and data are needed to support this hypothesis (Brauer et al., 2016), two recent studies indicated that sexual transmission alone is not sufficient to sustain an epidemic (Gao et al., 2016; Towers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gao et al., 2016 and Towers et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "75513f8b-b5be-4a74-be33-7567aa676c91",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C53",
+      "claim": "The Zika outbreak in Yap occurred with a different ZIKV lineage than in French Polynesia and New Caledonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, whilst both New Caledonia and French Polynesia populations were infected by the same ZIKV lineage and transmitted by the same principle vector species, Aedes aegypti, the epidemic in Yap occurred much earlier with a different ZIKV lineage (Wang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "062073f3-304a-4be9-97e5-03ac72a74315",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C54",
+      "claim": "The Zika outbreak in Yap was vectored by Aedes hensilli.",
+      "claim_type": "EXPLICIT",
+      "source": "and vectored by a different mosquito species Aedes hensilli (Ledermann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ledermann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "5a945320-34a2-467a-a5da-7d86158eac3b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C55",
+      "claim": "Both New Caledonia and French Polynesia populations were infected by the same ZIKV lineage and transmitted by the same principle vector species, Aedes aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, whilst both New Caledonia and French Polynesia populations were infected by the same ZIKV lineage and transmitted by the same principle vector species, Aedes aegypti",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact comparing the outbreaks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "56e983ac-5853-45dd-9708-b911e2fdf8bb",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C56",
+      "claim": "In French Polynesia, the vector Aedes polynesiensis is also present and dominates in Moorea with higher densities than in Tahiti.",
+      "claim_type": "EXPLICIT",
+      "source": "In French Polynesia, the vector Aedes polynesiensis is also present and dominates in Moorea with higher densities than in Tahiti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about vector distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "911b493a-8a87-4c40-ae8d-682b0b8e55ed",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C57",
+      "claim": "The first Zika case in New Caledonia was imported from French Polynesia on November 12th, 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "In New Caledonia, the first Zika case was imported from French Polynesia on 2013 November 12th.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the timeline of the outbreak.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "1f56dfb0-83d7-4c66-bd48-36b55d61dab3",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C60",
+      "claim": "Only a fraction \u03c1 of the total population is involved in the epidemic, due to spatial heterogeneity, immuno-resistance, or cross-immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we consider that only a fraction \u03c1 of the total population is involved in the epidemic, due to spatial heterogeneity, immuno-resistance, or cross-immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption to account for observed patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "436c8a4b-3063-4d49-8ce8-26cdb5645f8a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C61",
+      "claim": "For both models, N=\u03c1\u22c5H with H the total size of the population reported by census.",
+      "claim_type": "EXPLICIT",
+      "source": "For both models we define N=\u03c1\u22c5H with H the total size of the population reported by census.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit definition used in the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "8a403ace-fe46-4c01-a070-4c3ed238ed32",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C62",
+      "claim": "The estimated seroprevalence at the end of the epidemic in Yap using the Pandey model is 73% (CI95: 68\u201377), compared to the observed 73%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated seroprevalences at the end of the epidemic (with 95% credibility intervals) are: (a) 73% (CI95: 68\u201377, observed 73%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "80184360-9fc7-4c54-8fc2-d21cdb52b809",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C63",
+      "claim": "The estimated seroprevalence at the end of the epidemic in Moorea using the Pandey model is 49% (CI95: 45\u201353), compared to the observed 49%.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) 49% (CI95: 45\u201353, observed 49%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "808bab1d-4118-4e3e-9b96-396e98deedcb",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C64",
+      "claim": "The estimated seroprevalence at the end of the epidemic in Tahiti using the Pandey model is 49% (CI95: 45\u201353), compared to the observed 49%.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) 49% (CI95: 45\u201353, observed 49%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "5bbd1024-3fc9-4d21-972c-65efec8a1051",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C65",
+      "claim": "The estimated seroprevalence at the end of the epidemic in New Caledonia using the Pandey model is 39% (CI95: 8\u201392).",
+      "claim_type": "EXPLICIT",
+      "source": "(d) 39% (CI95: 8\u201392).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "fc6922a8-cff5-4a9e-b97f-62ada39a5876",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C66",
+      "claim": "The estimated seroprevalence at the end of the epidemic in Yap using the Laneri model is 72% (CI95: 68\u201377), compared to the observed 73%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated seroprevalences at the end of the epidemic (with 95% credibility intervals) are: (a) 72% (CI95: 68\u201377, observed 73%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "64be3ccf-7a7d-4061-b3bb-b4b7207e0652",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C67",
+      "claim": "The estimated seroprevalence at the end of the epidemic in New Caledonia using the Laneri model is 65% (CI95: 24\u201391).",
+      "claim_type": "EXPLICIT",
+      "source": "d) 65% (CI95: 24\u201391).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "b7d028d2-861a-4a46-b6ea-92c5a4b34e92",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C68",
+      "claim": "For the Pandey model in Yap, the basic reproduction number R0 is estimated as 3.2 (2.4\u20134.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Basic reproduction number R0 3.2 (2.4\u20134.1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e2693cc4-582a-47cd-a0d6-e5e82bc7c84b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C72",
+      "claim": "For the Laneri model in Yap, the basic reproduction number R0 is estimated as 2.2 (1.9\u20132.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Basic reproduction number R0 2.2 (1.9\u20132.6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "85d9fd78-b9e8-4c2e-a2b8-c1cc762080c6",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C76",
+      "claim": "The study highlights the importance of seroprevalence data for precise quantitative analysis of pathogen propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also highlights the importance of seroprevalence data for precise quantitative analysis of pathogen propagation, to design prevention and control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis, particularly regarding parameter identifiability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "eef49229-f3bd-4b74-ab4e-b13fea4c2ea1",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C77",
+      "claim": "The Zika outbreak was concomitant with dengue outbreaks in French Polynesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The Zika outbreak was concomitant with dengue outbreaks in French Polynesia (CHSP, 2014; Mallet et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CHSP, 2014 and Mallet et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "c0347a18-fc2c-4651-acc8-5381a49cae75",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C78",
+      "claim": "The Zika outbreak was concomitant with dengue outbreaks in New Caledonia.",
+      "claim_type": "EXPLICIT",
+      "source": "and New Caledonia (DASS, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to DASS, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "d08f5c48-a370-4106-96e3-41d172762f3a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C79",
+      "claim": "Examples of coinfection between Zika and dengue have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of coinfection have been reported (Dupont-Rouzeyrol et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dupont-Rouzeyrol et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "28251af7-40a7-4346-be9b-cb58eda4b346",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C80",
+      "claim": "For all criteria in the sensitivity analysis, the key parameters in both models are transmission parameters (R0 and \u03b2V).",
+      "claim_type": "EXPLICIT",
+      "source": "For all criteria, the key parameters in both models are transmission parameters (R0 and \u03b2V).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sensitivity analysis results presented in Tables 6-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "b4ed96ab-51b8-4d1b-be41-eae55f77be62",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C81",
+      "claim": "High values for R0 are positively correlated with a large seroprevalence and a high and early peak.",
+      "claim_type": "EXPLICIT",
+      "source": "High values for R0 are positively correlated with a large seroprevalence and a high and early peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "1a0b6ebd-549d-4d44-9eb0-3ca1b2d9c6af",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C83",
+      "claim": "The fraction involved in the epidemic (\u03c1) influences the magnitude of the outbreak but has no significant effect on the timing of the peak.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the fraction involved in the epidemic (\u03c1) influences the magnitude of the outbreak, by calibrating the proportion of people than can be infected, but it has no significant effect on the timing of the peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sensitivity analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "6c8f82fa-ceb6-4a6b-ab73-2c328ff9c669",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "claim_id": "C84",
+      "claim": "The estimation tools are provided by the open source software SSM (State Space Models).",
+      "claim_type": "EXPLICIT",
+      "source": "The estimation tools are provided by the open source software SSM (Dureau et al., 2013) (State Space Models, RRID:SCR_014647), available at https://github.com/JDureau/ssm and https://github.com/sballesteros/ssm-predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation to Dureau et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8dd60718-67e9-4b60-92eb-24769dc34b5a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides historical context for Zika virus (ZIKV) outbreaks, documenting that ZIKV circulated in Asia and the Pacific before reaching the Americas in 2015, with the first local cases in Brazil in May 2015 reaching 1.5 million by December 2015, leading to WHO declaring it a public health emergency in February 2016.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C10 provide well-documented historical context supported by appropriate citations and established knowledge. These factual statements about outbreak timelines and geographic spread are consistent with the scientific literature and provide necessary background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "82f1f449-8536-4d42-a01b-96ccdbf72a08",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ZIKV is characterized as a flavivirus primarily transmitted by Aedes mosquitoes with both vector-borne and non-vector-borne transmission routes, presenting with common symptoms including rash, fever, arthralgia, and conjunctivitis, though many infections are asymptomatic, and the virus is associated with severe complications including Guillain-Barr\u00e9 syndrome and microcephaly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 accurately describe established characteristics of ZIKV transmission, clinical presentation, and complications, all supported by appropriate citations to the scientific literature (Musso and Gubler 2016, Cao-Lormeau et al. 2016, Schuler-Faccini et al. 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "d5328da5-495c-43ee-85b0-eca5c1679c6d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The basic reproduction number (R0) is defined as the average number of secondary cases caused by one infected individual in a susceptible population, serving as a central epidemiological parameter for quantifying outbreak magnitude and informing control interventions, though it is complex to estimate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 and C46 provide standard epidemiological definitions and concepts about R0, appropriately supported by citations to foundational literature (Diekmann et al. 2010, Anderson and May 1982). These are well-established concepts in infectious disease epidemiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e337e7a1-ccd2-40fc-b0b4-09a28a49e96d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two compartmental models with vector-borne transmission are compared: the Pandey model with explicit mosquito population dynamics (SEI framework) and the Laneri model with implicit vector representation using force of infection compartments, both using SEIR framework for human transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 accurately describe the two modeling approaches used in the study, supported by Figure 1 and appropriate citations to Pandey et al. 2013 and Laneri et al. 2010. The model structures are clearly presented and mathematically defined in the methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "4a53f4fa-9315-42bf-8471-647ea590affa",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Surveillance and seroprevalence data from Pacific island outbreaks show: Yap 2007 had 108 cases (73% seroprevalence), French Polynesia 2013-2014 had >8700 cases (49% seroprevalence), and New Caledonia 2014 had ~2500 cases (no seroprevalence data available).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 present the empirical data used in the study, all supported by appropriate citations to surveillance reports and seroprevalence studies (Duffy et al. 2009, CHSP 2014, Mallet et al. 2015, Aubry et al. 2015a,b, DASS 2014). These data form the basis for model fitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "1edccb6d-3db7-4bf7-81d3-f2f6150ca6e1",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All models are simulated in a discrete stochastic framework using Poisson with stochastic rates to account for high variability in small populations, with parameter estimation performed using PMCMC (particle Markov Chain Monte Carlo) algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe the computational methodology, appropriately supported by citations to Bret\u00f3 et al. 2009 and Andrieu et al. 2010. The stochastic framework is justified by small population sizes and is a methodologically sound approach for this application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "088dd21e-4148-431d-96de-623cde91436a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "R0 estimates for Pacific ZIKV epidemics range from 1.6 (1.5-1.7) to 3.2 (2.4-4.1), varying notably across settings and models, with Yap consistently displaying higher values (Pandey: 3.2 [2.4-4.1]; Laneri: 2.2 [1.9-2.6]).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C32, C33, C68, C72 present the main R0 estimates derived from the modeling analysis. These are supported by data in Tables 1-2 and Figures 2-3, with credible intervals provided. The estimates are obtained through rigorous Bayesian inference methods described in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "b3f72873-bd1a-4e5e-a0fd-ce84ab43decc",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "There is an inverse relationship between island population size and both R0 value and variability, with smallest islands displaying higher and more variable R0 values, though the highly connected French Polynesian islands (Tahiti and Moorea) show similar R0 despite differing sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34, C35 describe patterns in R0 estimates across settings, supported by data in Tables 1-2. The inverse relationship with population size is a reasonable inference from the data, though the authors appropriately note the exception for Tahiti/Moorea and discuss potential explanations including stochasticity and connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "ad506d3b-5699-475d-861c-ec014cdba5f7",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "R0 estimates are consistently higher and more variable with the Pandey model compared to the Laneri model, potentially explained by two additional estimated parameters (including sensitive mosquito lifespan parameter) and differences in estimated initial infected individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 compare model outputs and provide mechanistic explanations for differences. The comparison is supported by Tables 1-2 and sensitivity analysis (Tables 6-7). The explanations regarding additional parameters and sensitivity are reasonable and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "ca240c1e-a864-4935-ab67-4ed0edaf524d",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For infectious period, intrinsic incubation, and extrinsic incubation period parameters, posterior distributions resemble informative priors, indicating the models cannot properly identify these parameters without more informative data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 identifies a limitation in parameter identifiability, supported by posterior distributions in Figures 6-13 showing minimal updating from priors. This is an honest assessment of model limitations and highlights the need for better empirical data on these parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "cf09dc50-8970-4bbc-8b5e-551f786cba46",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The fraction \u03c1 of population involved in the epidemic is well-estimated when seroprevalence data are available (Yap, French Polynesia), with estimated values slightly exceeding observed seroprevalence, but in New Caledonia without seroprevalence data, \u03c1 shows large confidence intervals and high correlation with observation rate r.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe parameter identifiability for \u03c1, supported by narrow vs. wide confidence intervals in Tables 1-2 and correlation plots in Figures 17 and 21. This demonstrates the critical importance of seroprevalence data for model identifiability, a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "7ba67e24-e938-4885-b79d-6d836921167e",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Model-estimated seroprevalence at epidemic end closely matches observed values for Yap (73% estimated vs 73% observed) and French Polynesia (49% estimated vs 49% observed) in both models, but shows wide uncertainty for New Caledonia (39% [8-92%] Pandey; 65% [24-91%] Laneri) where no seroprevalence data were available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 demonstrate model validation through comparison of estimated vs. observed seroprevalence, shown in Figure 2-3 captions. The close agreement for Yap and French Polynesia supports model validity, while wide intervals for New Caledonia reflect lack of constraining data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e7f7a8e7-ada7-4189-82de-36eba71fc523",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The relatively low R0 range (1.5-4.1) for ZIKV, similar to but generally lower than dengue and Yellow Fever estimates, suggests that intervention strategies developed for other flaviviruses should enable equally or more effective control of ZIKV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4 and C51 make comparative inferences about control strategies based on R0 estimates. While the R0 comparison is supported by citations (Favier et al. 2006, Imai et al. 2015, Massad et al. 2003), the inference about intervention effectiveness is speculative and not directly tested. The conclusion requires assumptions about similarity of transmission dynamics and intervention mechanisms that may not hold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "e24564e4-7135-4981-a8f2-c141fdad100c",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Comparison with prior studies shows: Kucharski et al. estimated R0 1.6-2.3 (Tahiti) and 1.8-2.9 (Moorea) but predicted 95-97% seroprevalence vs. 49% observed; Funk et al. estimated R0 2.9-8 for Yap; Nishiura et al. used exponential growth rate methods for French Polynesia and Yap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 provide context by comparing results to prior studies, all appropriately cited (Kucharski et al. 2016, Funk et al. 2016, Nishiura et al. 2016a). The comparison highlights differences in methodology (deterministic vs. stochastic) and demonstrates that this study's estimates are generally lower and better match observed seroprevalence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f75bacee-959f-444e-84ab-fbd229764be7",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Two recent studies indicated that sexual transmission alone is not sufficient to sustain a ZIKV epidemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by citations to Gao et al. 2016 and Towers et al. 2016, though the authors appropriately note that further work is needed. This supports the focus on vector-borne transmission in the models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "50844100-3083-4ba7-8dab-f35b3446b9e7",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Pacific island outbreaks differed in viral lineage and vector species: Yap had a different ZIKV lineage vectored by Aedes hensilli, while French Polynesia and New Caledonia shared the same lineage transmitted by Aedes aegypti (with A. polynesiensis also present in French Polynesia, dominating in Moorea).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 describe important epidemiological differences between settings, supported by citations to Wang et al. 2016 and Ledermann et al. 2014. These differences are relevant for interpreting variation in R0 estimates across islands.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "33e182eb-54bc-491e-8049-dc979d97f7a8",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The models assume only a fraction \u03c1 of the total population is involved in the epidemic due to spatial heterogeneity, immuno-resistance, or cross-immunity, with N=\u03c1\u00b7H where H is census population size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 describe a modeling assumption introduced to reconcile incidence and seroprevalence data. While mathematically defined (C61), the biological interpretation (C60) is speculative. The authors acknowledge this is necessary to match observed seroprevalence but don't provide direct evidence for the proposed mechanisms. This represents a model limitation rather than a validated finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "b6fef70f-17cd-4cb0-b21e-7ab19afeb310",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study highlights the importance of seroprevalence data for precise quantitative analysis of pathogen propagation to design prevention and control strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a well-supported conclusion based on the demonstrated differences in parameter identifiability between settings with (Yap, French Polynesia) and without (New Caledonia) seroprevalence data, as shown in the wide confidence intervals and parameter correlations for New Caledonia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "61b0ee95-561f-49a0-8f23-07b4b306a86b",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Zika outbreaks were concomitant with dengue outbreaks in French Polynesia and New Caledonia, with documented cases of coinfection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by appropriate citations (CHSP 2014, Mallet et al. 2015, DASS 2014, Dupont-Rouzeyrol et al. 2015). This context is relevant for discussing potential cross-immunity and competition between flaviviruses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "1f71ee90-1d4a-4f23-86ca-66de9a8ffdc8",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Sensitivity analysis shows transmission parameters (R0 and \u03b2V) are key parameters affecting all criteria, with high R0 positively correlated with large seroprevalence and high/early peak, while fraction involved (\u03c1) influences outbreak magnitude but not peak timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C81, C83 summarize sensitivity analysis results presented in Tables 6-7. The analysis appropriately uses LHS/PRCC methods and provides important insights into which parameters most influence model outputs, supporting the focus on estimating R0.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "f42810b9-22cf-488d-837e-9e2833e4fe0a",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The ratio of asymptomatic to symptomatic ZIKV cases is estimated to be 1:1.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C40 is based on personal communication rather than published data. While the authors are transparent about the source (V.-M Cao-Lormeau), this estimate lacks the verifiability of peer-reviewed published data and its uncertainty is not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    },
+    {
+      "id": "7ef531c9-f1eb-4551-9186-e700f2c0e628",
+      "content_id": "4da4c41a-ba57-4bb7-b229-0689ba6a1fb6",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The estimation tools are provided by the open source software SSM (State Space Models).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is explicitly stated with appropriate citation (Dureau et al. 2013) and GitHub links provided. This supports reproducibility of the computational analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:59.629471Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e1a51d4b-5298-4fe6-b4c4-a39bc29986fe",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "6c369013-db0d-4042-8a03-d2dfe6c92ca7",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "4bc4bc64-28a1-4834-824b-ce9623b84e52",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "80e4f278-5af8-4d90-b045-66072019047c",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "a44811e5-40ef-450c-aa91-aea33bdfa216",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "270c1f96-76c4-4603-bda3-597926ad3fa0",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "3b99938c-44a8-43d7-bc14-843592b07d7d",
+      "result_id": "8dd60718-67e9-4b60-92eb-24769dc34b5a"
+    },
+    {
+      "claim_id": "f8d11379-48f8-4527-be64-f2cfae387c25",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "a6ca7c03-4b57-44b5-8111-43e9d2de6e3a",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "747adb90-6c0a-4286-bae4-7860fe06287c",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "34d46618-00d4-4e63-8e8d-7bf2f1e32118",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "471968fc-45cc-4cfb-9cc3-1c61463723b1",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "7d63fccd-727d-4a7e-816d-4bbf9ca3e0fd",
+      "result_id": "82f1f449-8536-4d42-a01b-96ccdbf72a08"
+    },
+    {
+      "claim_id": "892ee9a6-04ea-4f08-9a94-2e9d86d19491",
+      "result_id": "d5328da5-495c-43ee-85b0-eca5c1679c6d"
+    },
+    {
+      "claim_id": "35b115b9-7233-458b-ab5d-7e4ddf80fc05",
+      "result_id": "d5328da5-495c-43ee-85b0-eca5c1679c6d"
+    },
+    {
+      "claim_id": "186754b2-38f0-4c3b-a0ca-6d7556416b53",
+      "result_id": "d5328da5-495c-43ee-85b0-eca5c1679c6d"
+    },
+    {
+      "claim_id": "3fb75a83-afa0-4fc7-9dc9-b5f9d55cae6b",
+      "result_id": "d5328da5-495c-43ee-85b0-eca5c1679c6d"
+    },
+    {
+      "claim_id": "325c4009-2ad9-42a4-a5c2-55f05521527a",
+      "result_id": "e337e7a1-ccd2-40fc-b0b4-09a28a49e96d"
+    },
+    {
+      "claim_id": "7133f5f5-42ac-4841-b8e0-b14966559192",
+      "result_id": "e337e7a1-ccd2-40fc-b0b4-09a28a49e96d"
+    },
+    {
+      "claim_id": "2bb01a5b-9254-461d-8965-18c6928640fe",
+      "result_id": "e337e7a1-ccd2-40fc-b0b4-09a28a49e96d"
+    },
+    {
+      "claim_id": "9e38b2b3-9afa-4227-bf0d-b746bab4b088",
+      "result_id": "e337e7a1-ccd2-40fc-b0b4-09a28a49e96d"
+    },
+    {
+      "claim_id": "50de99ee-ba7a-4c32-9b3b-e1889c0ddba9",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "1137f6d0-86c9-4925-8429-8eb475dde948",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "139c34f4-3a60-4887-b8a5-db04fd29414b",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "aef47c51-d5ff-4618-93a1-73bc063a4eb8",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "b9c566c5-3d88-4cc5-9322-58841fea2c70",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "f3c5a1a8-57c6-48b1-96a3-68580035901e",
+      "result_id": "4a53f4fa-9315-42bf-8471-647ea590affa"
+    },
+    {
+      "claim_id": "d1f7d45a-784e-4260-b693-ad88ef1d3217",
+      "result_id": "1edccb6d-3db7-4bf7-81d3-f2f6150ca6e1"
+    },
+    {
+      "claim_id": "ba7c5378-b00a-4c5d-a35d-70972a17b642",
+      "result_id": "1edccb6d-3db7-4bf7-81d3-f2f6150ca6e1"
+    },
+    {
+      "claim_id": "22a9908a-0ef8-4b79-99c6-43ddb827ec11",
+      "result_id": "088dd21e-4148-431d-96de-623cde91436a"
+    },
+    {
+      "claim_id": "4219532a-4e35-44bc-916b-c9fce925eb0d",
+      "result_id": "088dd21e-4148-431d-96de-623cde91436a"
+    },
+    {
+      "claim_id": "cda10457-cf07-4a29-bbcb-e1bee76d0ffd",
+      "result_id": "088dd21e-4148-431d-96de-623cde91436a"
+    },
+    {
+      "claim_id": "b7d028d2-861a-4a46-b6ea-92c5a4b34e92",
+      "result_id": "088dd21e-4148-431d-96de-623cde91436a"
+    },
+    {
+      "claim_id": "e2693cc4-582a-47cd-a0d6-e5e82bc7c84b",
+      "result_id": "088dd21e-4148-431d-96de-623cde91436a"
+    },
+    {
+      "claim_id": "76598fe0-c4d3-47d3-8c6b-63623e916d39",
+      "result_id": "b3f72873-bd1a-4e5e-a0fd-ce84ab43decc"
+    },
+    {
+      "claim_id": "5e5017b0-5c78-48e8-bbf9-9d1e03ab00a5",
+      "result_id": "b3f72873-bd1a-4e5e-a0fd-ce84ab43decc"
+    },
+    {
+      "claim_id": "80835e6f-5cad-4fd7-af7c-40fb95f3587d",
+      "result_id": "b3f72873-bd1a-4e5e-a0fd-ce84ab43decc"
+    },
+    {
+      "claim_id": "ccd2f5ab-18f8-44da-b207-175a1ce1d80b",
+      "result_id": "ad506d3b-5699-475d-861c-ec014cdba5f7"
+    },
+    {
+      "claim_id": "e6854a75-4cef-40a1-bb14-959f4ea79339",
+      "result_id": "ad506d3b-5699-475d-861c-ec014cdba5f7"
+    },
+    {
+      "claim_id": "18d81347-5daf-483c-a0e9-35f540c86170",
+      "result_id": "ad506d3b-5699-475d-861c-ec014cdba5f7"
+    },
+    {
+      "claim_id": "31310400-130f-4e58-b30e-d726e801cda1",
+      "result_id": "ad506d3b-5699-475d-861c-ec014cdba5f7"
+    },
+    {
+      "claim_id": "f9995811-2466-40ec-a546-c9b14d86a49d",
+      "result_id": "ca240c1e-a864-4935-ab67-4ed0edaf524d"
+    },
+    {
+      "claim_id": "e128c8c8-4fea-4249-9718-54d3029bd3f8",
+      "result_id": "cf09dc50-8970-4bbc-8b5e-551f786cba46"
+    },
+    {
+      "claim_id": "ae9d1736-ca12-4c83-aee1-7b10328ad4e0",
+      "result_id": "cf09dc50-8970-4bbc-8b5e-551f786cba46"
+    },
+    {
+      "claim_id": "f42513e9-9af9-4535-b92b-f493ed871880",
+      "result_id": "cf09dc50-8970-4bbc-8b5e-551f786cba46"
+    },
+    {
+      "claim_id": "d71a01fd-7cff-4210-9371-6ffa8d7fde3b",
+      "result_id": "cf09dc50-8970-4bbc-8b5e-551f786cba46"
+    },
+    {
+      "claim_id": "8a403ace-fe46-4c01-a070-4c3ed238ed32",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "80184360-9fc7-4c54-8fc2-d21cdb52b809",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "808bab1d-4118-4e3e-9b96-396e98deedcb",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "5bbd1024-3fc9-4d21-972c-65efec8a1051",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "fc6922a8-cff5-4a9e-b97f-62ada39a5876",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "64be3ccf-7a7d-4061-b3bb-b4b7207e0652",
+      "result_id": "7ba67e24-e938-4885-b79d-6d836921167e"
+    },
+    {
+      "claim_id": "6a6a96b6-2100-4784-9dc3-8504bc33c652",
+      "result_id": "e7f7a8e7-ada7-4189-82de-36eba71fc523"
+    },
+    {
+      "claim_id": "40eba7f1-c874-4e6e-8bae-14ea23d9f595",
+      "result_id": "e7f7a8e7-ada7-4189-82de-36eba71fc523"
+    },
+    {
+      "claim_id": "5f79300c-84df-432e-9936-d5b2202e6837",
+      "result_id": "e24564e4-7135-4981-a8f2-c141fdad100c"
+    },
+    {
+      "claim_id": "19e4a3ab-19b1-4cb3-a8f6-a31b70186546",
+      "result_id": "e24564e4-7135-4981-a8f2-c141fdad100c"
+    },
+    {
+      "claim_id": "a0409eb5-f997-45e8-97e9-5976e6bd4b3a",
+      "result_id": "e24564e4-7135-4981-a8f2-c141fdad100c"
+    },
+    {
+      "claim_id": "fced1aea-e345-4cfc-ad7a-aa3dd3b7a7eb",
+      "result_id": "e24564e4-7135-4981-a8f2-c141fdad100c"
+    },
+    {
+      "claim_id": "74e582dc-ef48-40aa-9893-4ab85c855fff",
+      "result_id": "f75bacee-959f-444e-84ab-fbd229764be7"
+    },
+    {
+      "claim_id": "75513f8b-b5be-4a74-be33-7567aa676c91",
+      "result_id": "50844100-3083-4ba7-8dab-f35b3446b9e7"
+    },
+    {
+      "claim_id": "062073f3-304a-4be9-97e5-03ac72a74315",
+      "result_id": "50844100-3083-4ba7-8dab-f35b3446b9e7"
+    },
+    {
+      "claim_id": "5a945320-34a2-467a-a5da-7d86158eac3b",
+      "result_id": "50844100-3083-4ba7-8dab-f35b3446b9e7"
+    },
+    {
+      "claim_id": "56e983ac-5853-45dd-9708-b911e2fdf8bb",
+      "result_id": "50844100-3083-4ba7-8dab-f35b3446b9e7"
+    },
+    {
+      "claim_id": "1f56dfb0-83d7-4c66-bd48-36b55d61dab3",
+      "result_id": "33e182eb-54bc-491e-8049-dc979d97f7a8"
+    },
+    {
+      "claim_id": "436c8a4b-3063-4d49-8ce8-26cdb5645f8a",
+      "result_id": "33e182eb-54bc-491e-8049-dc979d97f7a8"
+    },
+    {
+      "claim_id": "85d9fd78-b9e8-4c2e-a2b8-c1cc762080c6",
+      "result_id": "b6fef70f-17cd-4cb0-b21e-7ab19afeb310"
+    },
+    {
+      "claim_id": "eef49229-f3bd-4b74-ab4e-b13fea4c2ea1",
+      "result_id": "61b0ee95-561f-49a0-8f23-07b4b306a86b"
+    },
+    {
+      "claim_id": "c0347a18-fc2c-4651-acc8-5381a49cae75",
+      "result_id": "61b0ee95-561f-49a0-8f23-07b4b306a86b"
+    },
+    {
+      "claim_id": "d08f5c48-a370-4106-96e3-41d172762f3a",
+      "result_id": "61b0ee95-561f-49a0-8f23-07b4b306a86b"
+    },
+    {
+      "claim_id": "28251af7-40a7-4346-be9b-cb58eda4b346",
+      "result_id": "1f71ee90-1d4a-4f23-86ca-66de9a8ffdc8"
+    },
+    {
+      "claim_id": "b4ed96ab-51b8-4d1b-be41-eae55f77be62",
+      "result_id": "1f71ee90-1d4a-4f23-86ca-66de9a8ffdc8"
+    },
+    {
+      "claim_id": "1a0b6ebd-549d-4d44-9eb0-3ca1b2d9c6af",
+      "result_id": "1f71ee90-1d4a-4f23-86ca-66de9a8ffdc8"
+    },
+    {
+      "claim_id": "cadea4db-704d-4f53-811b-3b7824365118",
+      "result_id": "f42810b9-22cf-488d-837e-9e2833e4fe0a"
+    },
+    {
+      "claim_id": "6c8f82fa-ceb6-4a6b-ab73-2c328ff9c669",
+      "result_id": "7ef531c9-f1eb-4551-9186-e700f2c0e628"
+    }
+  ],
+  "comparisons": []
+}

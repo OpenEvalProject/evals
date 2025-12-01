@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10"
+    ],
+    "result": "Hybrid F1 seeds from reciprocal crosses between Arabidopsis accessions with different dormancy levels (Cvi, C24, Col) tend to inherit dormancy levels more similar to the maternal parent. After intermediate after-ripening (25 days), C24xCvi F1 seeds germinated nearly fully while CvixC24 F1 seeds remained dormant, indicating maternal inheritance of dormancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide consistent germination data across multiple reciprocal crosses (Cvi\u00d7C24, C24\u00d7Cvi, Cvi\u00d7Col, Col\u00d7Cvi) showing that F1 seeds consistently exhibit dormancy levels resembling the maternal parent. The data include appropriate controls (short, intermediate, and long after-ripening periods) and embryo dissection experiments confirming endosperm involvement (C8). Statistical significance is reported (C6, Figure 1A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Tetraploid crosses producing F1 seeds with balanced 2:2 maternal:paternal genome ratios in the endosperm still show maternal inheritance of dormancy, indicating that the natural 2:1 maternal genome imbalance in triploid endosperm does not readily account for maternal dormancy inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 demonstrate that even when the endosperm genome ratio is experimentally balanced (2:2 instead of 2:1), maternal inheritance of dormancy persists (CvixC24tet more dormant than C24xCvitet). This genetic manipulation provides strong evidence against a simple dosage effect and supports alternative mechanisms like genomic imprinting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C40",
+      "C41",
+      "C84",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The endosperm is essential for repressing germination of dormant Arabidopsis seeds, including those with maternally imposed and cold-induced dormancy. Removal of both testa and endosperm triggers embryonic growth in dormant seeds, while removal of testa alone does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11, C40-C41, C84, C99-C103 consistently demonstrate through embryo dissection experiments that the endosperm is necessary for dormancy maintenance. The claims are supported by direct experimental evidence (Figure 1A, Figure 2\u2014figure supplement 6, Figure 5A) and citations to prior work (Bethke et al., 2007; Lee et al., 2010). The mechanism involves ABA synthesis and release by the endosperm (C102-C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The mature testa contains negligible amounts of mRNA relative to the endosperm, validating the use of partially dissected endosperm (with testa attached) as a source of endospermic mRNA without significant maternal contamination. RNA-seq reads from testa were ~1% of endosperm reads, and only 14 genes differed between partially and fully dissected endosperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20, C24-C26 provide multiple lines of evidence: electron microscopy showing no cellular structures in testa (C14), undetectable RNA concentrations from testa (C15), minimal sequencing reads from testa (C16, Table 1), and minimal differential expression between partial and full endosperm dissection (C17-C18). Among 107 MEGs, only 2 had any testa reads, representing <1-2% of endosperm levels (C24-C25). This thorough validation supports the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Distinct sets of maternally expressed genes (MEGs) and paternally expressed genes (PEGs) are identified in dormant versus non-dormant mature seed endosperm upon imbibition. In dormant seeds, 71 MEGs and 5 PEGs were identified; in non-dormant seeds, 50 MEGs and 8 PEGs, with only 14 MEGs and 2 PEGs shared between conditions, indicating dormancy-specific genomic imprinting programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 are supported by RNA-seq data (Figure 2B, Figure 2\u2014source data 3) and validated by RT-PCR and Sanger/MiSeq sequencing on 17 MEGs and 2 PEGs (C27). The FWA transgene experiment provides additional validation (C28). The minimal overlap between dormant and non-dormant imprinted genes (C23) and comparison with early embryogenesis data (C29) strongly support the conclusion of dormancy-specific imprinting programs (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C46"
+    ],
+    "result": "Among dormancy-specific MEGs, at least one-third are involved or potentially involved in regulating seed germination, and about half (26/57) have expression levels that negatively correlate with seed dormancy levels. The majority (12/16) of germination-regulating MEGs belong to this negatively-correlated cluster, a pattern enriched compared to genome-wide expression (~7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38, C45-C46 are supported by clustering analysis (Figure 2D), functional annotation (Supplementary file 1), and genome-wide comparison (Figure 2\u2014figure supplement 5). The enrichment of germination-related genes in cluster 1 (12/16 genes, C36) compared to the genome-wide baseline (~7%, C37) provides statistical support for functional significance. However, the claim about \"potential\" involvement (C33) relies on inference from current knowledge rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C96",
+      "C97"
+    ],
+    "result": "Cold temperature (10\u00b0C) during seed development increases seed dormancy and downregulates expression of about half (33/57) of dormancy-specific MEGs upon seed imbibition, with the majority (23/33) belonging to the cluster whose expression negatively correlates with dormancy. This suggests imprinted gene expression is adapted to environmental cues perceived during seed development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C42-C44, C47, C96-C97 are supported by experimental data (Figure 2E, Figure 2\u2014source data 5) showing cold-induced dormancy and corresponding gene expression changes. The selective downregulation of dormancy-specific MEGs (33/57) versus non-dormant MEGs (1/36) (C42-C43) and enrichment in cluster 1 (23/33) (C44) provide strong evidence. However, C97's claim about adaptation to environmental cues is somewhat speculative, though reasonably inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C93"
+    ],
+    "result": "CP1 (CYSTEINE PROTEASE1) expression is stringently regulated according to seed dormancy levels and after-ripening time. In dormant seeds, CP1 shows preferential maternal allele expression that is low and correlates negatively with dormancy levels. As seeds lose dormancy through after-ripening, CP1 maternal allele expression is lost and total expression increases, with evidence of de novo maternal allele transcription upon imbibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C61, C93 are supported by detailed time-course expression analysis (Figure 3) using qPCR and Sanger sequencing across multiple after-ripening periods. The data show clear transitions from undetectable (C51) to preferentially maternal (C53-C54) to biallelic expression (C57-C58) correlating with dormancy loss. The increase in maternal allelic mRNA over time after imbibition (C93, Figure 4\u2014figure supplement 8) provides evidence for de novo transcription rather than stored mRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Endospermic abundance of cruciferin (CRU) storage proteins upon seed imbibition reflects seed dormancy levels. In non-after-ripened dormant seeds, CRU levels remain constant; in fully after-ripened seeds, CRUs rapidly decay prior to germination; in partially after-ripened seeds, CRU decay is delayed relative to fully after-ripened seeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by western blot and coomassie staining data (Figure 4A, Figure 4\u2014figure supplement 2) showing differential CRU protein dynamics across after-ripening conditions. The correlation between CRU persistence and dormancy levels (C66) is clearly demonstrated. The use of the cruabc mutant as a specificity control (Figure 4\u2014figure supplement 1) strengthens the antibody validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CP1 is necessary to promote the decay of endosperm CRU proteins prior to germination. In cp1 mutants, CRU decay is delayed by at least 12 hours in fully after-ripened seeds and also delayed in shortly after-ripened seeds, without affecting germination timing itself. CP1 specifically affects endosperm CRU decay, not embryo CRU levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by analysis of three independent cp1 mutant alleles (cp1-1, cp1-2, cp1-3) showing consistent CRU decay delays (Figure 4A, Figure 4\u2014figure supplements 2-3). The demonstration that germination timing is unaffected (C68-C69, Figure 4\u2014figure supplement 4) distinguishes CP1's role in protein storage mobilization from germination sensu stricto. The lack of embryo CRU differences (C71, Figure 4\u2014figure supplement 5) confirms endosperm-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The maternal control of CRU protein decay operates through CP1 maternal gametophytic alleles rather than maternal sporophytic effects. In shortly after-ripened seeds, CRU levels are higher in cp1\u00d7WT F1 endosperm than WT\u00d7cp1 F1 endosperm. Seeds from heterozygous cp1/CP1 mothers show delayed CRU decay in cp1/cp1/CP1 endosperms relative to CP1/CP1/CP1 endosperms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by reciprocal cross experiments (Figure 4B, Figure 4\u2014figure supplement 2B) and critically, by the heterozygous mother experiment (C76-C77) which distinguishes gametophytic from sporophytic maternal effects. The observation that CRU differences only occur in shortly after-ripened seeds where CP1 is preferentially maternally expressed (C75) provides internal consistency with the expression data (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ALN (ALLANTOINASE) is a negative regulator of seed dormancy that requires the endosperm for its function. The aln mutant displays high dormancy relative to wild-type, and this dormancy requires an intact endosperm. ALN participates in purine catabolism and its loss leads to increased ABA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by germination assays (Figure 5A) and embryo dissection experiments (C84). The biochemical function (C78-C79) and connection to ABA (C80-C81) are supported by citations to prior work (Watanabe et al., 2014). The identification of ALN as a dormancy regulator (C82-C83) is novel and well-supported by the phenotypic data, though the mechanistic link through ABA relies on cited work rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ALN negatively regulates dormancy at least in part through maternal gametophytic alleles. After short after-ripening, aln\u00d7WT F1 seeds show low germination similar to aln mutants, while WT\u00d7aln F1 seeds show high germination similar to wild-type. ALN shows preferential maternal allele expression in shortly after-ripened seeds. Seeds from heterozygous aln/ALN mothers with aln/aln/ALN endosperm are more dormant than those with ALN/ALN/ALN endosperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by reciprocal cross experiments (Figure 5B) and Sanger sequencing showing dormancy-dependent maternal expression (C88, Figure 5C). The heterozygous mother experiment (C89) provides evidence for gametophytic effects, though the authors note the differences are less pronounced than with reciprocal crosses (C89). The temporal correlation between preferential maternal expression and dormancy-dependent phenotypes (C87-C88) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C106",
+      "C107"
+    ],
+    "result": "Maternal dormancy inheritance involves preferential maternal allele expression of dormancy regulators upon seed imbibition, such that dormancy levels in hybrid seeds reflect the maternal genotype through maternal expression levels or product activities of genes regulating dormancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C106-C107 represent the central model/conclusion of the manuscript, synthesizing evidence from CP1 and ALN studies. The model is well-supported by: (1) demonstration of maternal dormancy inheritance (C1-C13), (2) identification of dormancy-specific imprinted genes (C21-C31), (3) functional validation of CP1 and ALN as dormancy regulators (C67-C72, C82-C84), and (4) demonstration of gametophytic maternal effects for both genes (C73-C77, C85-C90). The convergence of genetic, molecular, and biochemical evidence provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "A dedicated parental-specific allele transcription program operates upon mature seed imbibition, as evidenced by MEGs and PEGs identified in non-dormant seeds that were not detected in dormant seeds, suggesting de novo transcription rather than stored mRNA from seed development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by the distinct sets of imprinted genes in dormant versus non-dormant conditions (C21-C23) and the time-course data showing increasing CP1 maternal allelic mRNA after imbibition (C93). However, the evidence is somewhat indirect\u2014the authors infer de novo transcription from the appearance of new imprinted genes and increasing mRNA levels, but do not directly measure transcription rates or rule out differential mRNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The number of PEGs identified in dormant mature seeds (5 PEGs) is markedly lower than that reported during early embryogenesis (49 PEGs), suggesting reduced paternal gene expression in the context of dormancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by direct comparison with published data (Pignatta et al., 2014) shown in Figure 2B. The dramatic reduction in PEG number (5 vs 49) is clear, though the functional significance and mechanism remain speculative. The comparison is valid as it uses the same F1 seed material (CvixCol and ColxCvi), though different developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Background and context: Seed dormancy is a vital trait preventing out-of-season germination. Arabidopsis seeds consist of a diploid embryo, triploid endosperm (2 maternal:1 paternal genomes), and dead maternal testa. Dormancy is influenced by maternal environmental conditions including cold temperature, involves ABA signaling, and genomic imprinting has been studied during seed development but not previously in mature seeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C108-C120 provide established background knowledge supported by appropriate citations. These are well-established facts in the field (seed structure C108-C110, dormancy definition C111-C112, environmental effects C113-C115, ABA function C116-C118, prior imprinting studies C119) and accurately identify the knowledge gap (C120) that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Programs of imprinted gene expression are adapted according to the dormancy status of the seed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 summarizes a major finding supported by the identification of distinct MEG/PEG sets in dormant versus non-dormant seeds (C21-C23, C30-C31) and the cold-responsiveness of dormancy-specific MEGs (C42-C44). This is essentially a restatement of the combined evidence from multiple result groups and is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2180 @@
+{
+  "submission": {
+    "id": "b88845bf-1156-4102-b91c-a88e0cc24943",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:37:58.169548Z",
+    "updated_at": "2025-11-30T23:37:58.169548Z"
+  },
+  "content": [
+    {
+      "id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "submission_id": "b88845bf-1156-4102-b91c-a88e0cc24943",
+      "content_type": "manuscript",
+      "content_text": "# Ribonuclease L mediates the cell-lethal phenotype of double-stranded RNA editing enzyme ADAR1 deficiency in a human cell line\n\n## Authors\n\n- Yize Li<sup>1</sup> ([ORCID: 0000-0003-1721-741X](https://orcid.org/0000-0003-1721-741X))\n- Shuvojit Banerjee<sup>2</sup>\n- Stephen A Goldstein<sup>1</sup>\n- Beihua Dong<sup>2</sup>\n- Christina Gaughan<sup>2</sup>\n- Sneha Rath<sup>3</sup>\n- Jesse Donovan<sup>3</sup>\n- Alexei Korennykh<sup>3</sup>\n- Robert H Silverman<sup>2</sup> \u2020\n- Susan R Weiss<sup>1</sup> ([ORCID: 0000-0002-8155-4528](https://orcid.org/0000-0002-8155-4528)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n2. Department of Cancer Biology, Lerner Research Institute Cleveland Clinic Cleveland United States\n3. Department of Molecular Biology Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nADAR1 isoforms are adenosine deaminases that edit and destabilize double-stranded RNA reducing its immunostimulatory activities. Mutation of ADAR1 leads to a severe neurodevelopmental and inflammatory disease of children, Aicardi-Gouti\u00e9res syndrome. In mice, Adar1 mutations are embryonic lethal but are rescued by mutation of the Mda5 or Mavs genes, which function in IFN induction. However, the specific IFN regulated proteins responsible for the pathogenic effects of ADAR1 mutation are unknown. We show that the cell-lethal phenotype of ADAR1 deletion in human lung adenocarcinoma A549 cells is rescued by CRISPR/Cas9 mutagenesis of the RNASEL gene or by expression of the RNase L antagonist, murine coronavirus NS2 accessory protein. Our result demonstrate that ablation of RNase L activity promotes survival of ADAR1 deficient cells even in the presence of MDA5 and MAVS, suggesting that the RNase L system is the primary sensor pathway for endogenous dsRNA that leads to cell death.\n\n## Introduction\n\nAdenosine deaminase acting on dsRNA (ADAR1) isoforms neutralize the immunostimulatory activity of double-stranded RNA (dsRNA) by converting adenosine to inosine (i.e., A-to-I editing) (George et al., 2014; Tomaselli et al., 2015; Patterson and Samuel, 1995). ADAR1 alters the RNA coding sequence, because I is read as G, and it also destabilizes dsRNA because A:U base pairs are disrupted than I:U mismatches. These modifications by ADAR1 suppress the cellular responses to dsRNA and prevent to type I IFN production. There are three mammalian ADAR genes (ADAR1-3), but only ADAR1 isoforms p110 and p150 and ADAR2 have deaminase activity (Tomaselli et al., 2015). The IFN inducible ADAR1 p150 isoform (subsequently \u2018p150\u2019) is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear. Mutations of ADAR1 result in the severe, sometimes lethal, childhood neurodevelopmental disease, Aicardi-Gouti\u00e9res syndrome (Rice et al., 2012).\n\nInterestingly, ADAR1 can be either pro-viral or anti-viral depending on the virus-host cell context (reviewed in [George et al., 2014]). The antiviral effects are due to hyper-editing and mutagenesis of viral RNAs (Samuel, 2011). Proviral effects are due in part to editing of viral RNAs (Wong and Lazinski, 2002) and/or to destabilizing dsRNA resulting in suppression of dsRNA-signaling through MDA5 and MAVS to type I IFN genes (Figure 1). Accordingly, mutation of either MDA5 or MAVS rescues the embryonic lethal phenotype of Adar1 knockout (KO) mice (Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014). ADAR1 also antagonizes the IFN-inducible dsRNA-dependent serine/threonine protein kinase, PKR, presumably by altering the structure of dsRNA and thereby preventing both PKR activation and phosphorylation of its substrate protein, eIF2\u03b1 (Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004). However, whereas effects of ADAR1 on PKR activity have been extensively studied, ADAR1 effects on another IFN-regulated dsRNA-activated antiviral pathway, the oligoadenylate-synthetase (OAS-RNase L) system, have not been described. OAS isoforms (OAS1, OAS2, OAS3) are IFN inducible enzymes that sense dsRNA and produce 2\u2019,5\u2019-oligoadenylates (2-5A) which activate RNase L to degrade viral and host single-stranded RNAs leading to apoptosis and inhibition of virus growth (Silverman and Weiss, 2014). Here we report that whereas ADAR1 single gene KO A549 cells were not viable, it was possible to rescue ADAR1 deficient cells by knockout (KO) of either RNASEL or MAVS or by expression of a viral antagonist of the OAS/RNase L system (Silverman and Weiss, 2014). Our results suggest that the RNase L activation is the primary mode of cell death induced by either endogenous or exogenous dsRNA.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig1-v3.jpg)\n\n**Figure 1.:** DsRNA can be destabilized by ADAR1 activity. In the absence of ADAR1 dsRNA can be recognized by (1) MDA5 leading to IFN production; (2) OAS leading to activation of RNase L and eventually translational inhibition and apoptosis and (3) PKR leading to inhibition of translation.\n\n## Results\n\n### RNase L activity is the major pathway leading to dsRNA-induced cell death\n\nBefore assessing the role of ADAR in regulating the RNase L pathway we compared the roles of MAVS, RNase L and PKR in mediating dsRNA induced cell death in A549 cells. Thus we used lentivirus delivered CRISPR/Cas9 and single-guide (sg)RNA (Table 1) to construct A549 cell lines with disruption of genes encoding each of these proteins, RNASEL KO, MAVS KO, PKR KO cells as well as MAVS-RNASEL double knockout (DKO). Disruption of each gene and protein expression in the absence or presence of IFN-\u03b1 was confirmed by sequence analysis and Western immunoblot (Figure 2a\u2013c; Table 2). The various A549 mutant cell lines were characterized for their sensitivity or resistance to exogenous dsRNA by poly(rI):poly(rC) (pIC) transfection as compared to wild type (WT) A549 (Figure 3). We initially transfected WT A549 and KO with a range of concentrations of pIC and at 48 hr post treatment cells were fixed and stained with crystal violet. Cells lacking RNase L expression were resistant to cell death at treatment with up to 5 \u00b5g/ml of pIC while treatment of WT A549 as well as PKR KO or MAVS KO cells with 0.5 \u00b5g/ml of pIC promoted cell death (Figure 3a). To obtain a more quantitative measure of cell death as well as to assess the effects of ADAR1 ablation on cell death, we compared the kinetics of pIC-induced cell death with the same set of cells in real time with an IncuCyte Live Cell Imaging System and software (Figure 3b). We also observed markers of apoptosis (caspase 3/7 activity) in real time (Figure 3c). While cells expressing RNase L died by 24\u201330 hr post treatment, cells ablated for RNase L expression (RNASEL KO and RNASEL-MAVS DKO) were resistant to pIC induced cell death (Figure 3b&c). Similarly, RNASEL KO or RNASEL-MAVS DKO showed accelerated wound healing in monolayer scratch assays compared with MAVS KO and WT cells, all of which retained RNase L (Figure 3d). RNase L was previously reported to impair cell migration in these assays (Banerjee et al., 2015; Rath et al., 2015) as well as to promote apoptosis (Zhou et al., 1997). Finally, the protective effect of RNASEL KO was not restricted to A549 cells as human mammary epithelial (HME) cells were also protected from pIC-induced cell death by ablation of RNase L expression (Figure 3e).\n\n**Table 1.**\n Construction of the plasmids for knockout of human ADAR1, MAVS and PKR using CRISPR/Cas9.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genes</th>\n      <th>Primers</th>\n      <th></th>\n      <th>Nucleotide sequences (5\u2019\u22123\u2019)*</th>\n      <th>Targeting Region</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ADAR1</td>\n      <td>sgADAR1-4</td>\n      <td>Forward</td>\n      <td>CACCGTCTGTCAAATGCCATATGGG</td>\n      <td>Exon2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Reverse</td>\n      <td>AAACCCCATATGGCATTTGACAGAC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sgADAR1-6</td>\n      <td>Forward</td>\n      <td>CACCGACTCAGTTCCTGGAAATGTG</td>\n      <td>Exon2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Reverse</td>\n      <td>AAACCACATTTCCAGGAACTGAGTC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MAVS</td>\n      <td>sgMAVS-1</td>\n      <td>Forward</td>\n      <td>CACCGGAGGGCTGCCAGGTCAGAGG</td>\n      <td>Exon4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Reverse</td>\n      <td>AAACCCTCTGACCTGGCAGCCCTC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PKR</td>\n      <td>sgPKR-1</td>\n      <td>Forward</td>\n      <td>CACCGTAATACATACCGTCAGAAGC</td>\n      <td>Exon1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Reverse</td>\n      <td>AAACGCTTCTGACGGTATGTATTAC</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Nucleotides sequences which were used for targeting gene are indicated as bold and italic._\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig2-v3.jpg)\n\n**Figure 2.:** (a) WT, WT-p150 KO, RNASEL KO, RNASEL-ADAR DKO, MAVS KO, MAVS-p150 DKO, MAVS-ADAR1 DKO; (PKR expression was induced 1.6\u20131.9 fold following IFN treatment in cells expressing ADAR1 and reduced 0.3\u20130.6 fold in cells deleted for ADAR1 or ADAR1 p150; Figure 2\u2014source data 1.) (b) WT or RNASEL-MAVS DKO or (c) WT or PKR KO cells were treated or mock treated with 1000 U/ml IFN-\u03b1 overnight, lysed and proteins analyzed by Western immunoblotting with antibodies as indicated. (d) WT and PKR KO cells were transfected with pIC (1 \u00b5g/ml). After 2 hr, proteins in cell lysates were separated by 12% SDS/PAGE, transferred to PVDF-membranes, and probed with antibodies to detect total eIF2\u03b1 or phosphorylated eIF2\u03b1. Immunoblots (in a\u2013c) were performed at least two times and one representative blot is shown. See Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The mRNA encoding the IFN inducible p150 isoform and constitutively expressed p110 isoform are indicated. The sgRNA6 targeting exon1 of p150 and the sgRNA4 targeting exon1 of p110 were used to knockout expression of p150 or both p150 and p110 respectively.\n\n**Table 2.**\n Primers for genotyping ADAR1, MAVS, and PKR knockout cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genes</th>\n      <th>Primers*</th>\n      <th>Nucleotide sequences (5\u2019\u22123\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ADAR1</td>\n      <td>Forward-1</td>\n      <td>ACCTTCCCTCCCAGGACTCCGGCC</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse-1</td>\n      <td>CCTGAGTGGAGACCGCGATTTTCC</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Forward-2</td>\n      <td>ATGGCCGAGATCAAGGAGAAAATC</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse-2</td>\n      <td>GTTCTGGTCTGGCCTCTTGCCTG</td>\n    </tr>\n    <tr>\n      <td>MAVS</td>\n      <td>Forward</td>\n      <td>CTCCCCTGGCTCCTGTGCTCC</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse</td>\n      <td>AACTCCCTTTATTCCCACCTTG</td>\n    </tr>\n    <tr>\n      <td>PKR</td>\n      <td>Forward</td>\n      <td>AGACTGAGATGAGTCCTATAAAG</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse</td>\n      <td>TCACCTATGAGTGAGAACATGC</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Forward and Reverse-1 or -2 were used for sequencing of target region by sgADAR1-6 or sgADAR1-4 respectively._\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig3-v3.jpg)\n\n**Figure 3.:** (a) WT and RNase L, MAVS, PKR KO and RNASEL-MAVS DKO A549 cells were treated with pIC (0 to 5 \u03bcg/ml as indicated) and 48 hr later fixed and stained with crystal violet. Data are from one representative experiment of three. (b) WT and KO A549 cells as indicated were transfected with 20 ng/ml pIC and assessed for dead cells and total cells using an IncuCyte system calculated as describe in Methods. Four separate wells were treated with each experimental condition and a minimum of 4 image fields (>10000 cells per well) were analyzed per well. (c) Cells were transfected with 20 ng/ml of pIC and caspase-3/7 activity was determined using an IncuCyte system. Four separate wells were treated with each experimental condition and a minimum of 4 image fields (>10000 cells per well) were analyzed per well. Data represent the means\u00b1SD from a minimum of four independent replicates. Similar data were obtained from two additional independent experiments. (d) Cell monolayers were scratched and wound healing was assayed in the IncuCyte system. Wound closure was observed every hour at the indicated times by comparing the mean relative wound density of at least eight technical replicates and a minimum of 2 image fields (>1000 cells per well total) were analyzed per well. Error bars represent standard deviation (SD) from the mean of a minimum of eight. Similar data were obtained from two independent experiments. (e) WT or RNASEL KO HME cells were transfected with 0(mock) or 20, 50, 100 or 250 ng/ml pIC and cell viability was quantified in the IncuCyte system. Four biological replicate wells were treated with each experimental condition and a minimum of 4 image fields (>1000 cells per well total) were analyzed per well. Data is representative of four replicates.\n\n### Rescue of ADAR1 KO cells by KO of RNASEL or MAVS\n\nMouse studies had shown that the embryonic lethal phenotype of Adar1 KO could be rescued by KO of Mavs or Mda5 presumably by reducing the downstream IFN signaling effects of dsRNA produced in the absence of ADAR1 editing (Pestal et al., 2015). We found that ADAR1 KO is also lethal in A549 cells (Table 3 and described below). Since activation of RNase L by exogenously provided pIC accelerated cell death so dramatically in A549 cells, we investigated whether KO of RNASEL, as well as dsRNA sensors MAVS and PKR, could rescue A549 ADAR1 KO cells from lethal the effects of dsRNA. Using lentivirus delivered CRISPR/Cas9 and sgRNA4 directed at Exon 1 of ADAR1 within the coding regions of p110 and p150 (Table 1; Figure 2\u2014figure supplement 1) we screened more than 40 clones derived from WT A549 cells or PKR KO A549 and were unable to recover cells with a KO of ADAR1 (Table 3). The WT or PKR KO clones in which ADAR1 remained intact were apparently derived from cells in which the CRISRP/Cas9 targeting vector failed to mutate ADAR1. However using RNASEL KO or MAVS KO A549 cells and similar lentivirus delivery of sgRNA4 we were able to recover both RNASEL-ADAR1 and MAVS-ADAR1 double KO (DKO) cells (Table 3, Figure 2). We compared the kinetics of cell death in response to pIC transfection of these DKO cells using the IncuCyte system (Figure 4a). While MAVS-ADAR1 DKO cells died more slowly than WT cells, RNase L-ADAR1 DKO cells were almost completely protected from cell death further supporting the finding that RNase L is the major pathway leading to cell death in the absence of ADAR1 editing. As might be expected, the kinetics of cell death following treatment with exogenous pIC (not a substrate of ADAR1) are similar in RNASEL KO and RNASEL-ADAR1 DKO or MAVS KO and MAVS-ADAR1 DKO (compare Figure 3b and Figure 4a).\n\n**Table 3.**\n Knockout of ADAR1 or ADAR1p150 from WT, MAVS KO, RNASEL KO, PKR KO, NS2-WT or NS2H126R \u2013WT cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype of parent cells</th>\n      <th>sgRNA</th>\n      <th colspan=\"3\">Resulting KO cells</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Name</th>\n      <th>Number of clones screened</th>\n      <th>Number of KO clones obtained</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>sgADAR1-6</td>\n      <td>p150 KO</td>\n      <td>24</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sgADAR1-4</td>\n      <td>NA*</td>\n      <td>17</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MAVS KO</td>\n      <td>sgADAR1-6</td>\n      <td>MAVS-p150 KO</td>\n      <td>24</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sgADAR1-4</td>\n      <td>MAVS-ADAR1 DKO</td>\n      <td>23</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>RNASEL KO</td>\n      <td>sgADAR1-4</td>\n      <td>RNASEL-ADAR1 DKO</td>\n      <td>24</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>PKR KO</td>\n      <td>sgADAR1-4</td>\n      <td>NA</td>\n      <td>24</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>WT NS2</td>\n      <td>sgADAR1-4</td>\n      <td>NS2-ADAR1 KO</td>\n      <td>56</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>WT NS2H126R</td>\n      <td>sgADAR1-4</td>\n      <td>NA</td>\n      <td>54</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*NA, Not available._\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig4-v3.jpg)\n\n**Figure 4.:** (a) WT and KO A549 cells as indicated were transfected with 20 ng/ml of pIC and assessed for dead cells and total cells. Four separate wells were treated with each experimental condition and a minimum of 4 image fields (>10000 cells per well) were analyzed per well. Data represent the means SD from a minimum of four independent replicates. Similar data were obtained from two additional independent experiments. (The data for WT cells are the same as shown in Figure 3b). (b) RNASEL KO or RNASEL-ADAR1 DKO cells transduced with lentiviruses expressing either WT RNase L or inactive mutant (R667A) RNase L, lysed and proteins analyzed by Western immunoblotting with anti-Flag M2 monoclonal antibody (upper) or with anti-\u03b2-actin antibody (lower). (c) RNASEL KO or RNASE L-ADAR1 DKO cells were transduced with lentiviruses expressing either WT RNase L or inactive mutant (R667A) RNase L and dead and total cells assessed in the IncuCyte system. A minimum of four separate wells was treated with each experimental condition and a minimum of 9 image fields were analyzed per well. Data represent the means SD and are from one of two representative experiments. Movies showing cells from 0\u201372 hr post transduction are shown in Videos 1\u20134. See Figure 4\u2014source data 1.\n\n### RNase L promotes lethality of ADAR1 KO cells in the absence of exogenous dsRNA\n\nIn order to directly demonstrate that activation of RNase L leads to the cell-lethal phenotype of ADAR1 KO cells, we transduced RNASEL KO and RNASEL-ADAR1 DKO cells with lentiviruses expressing either WT RNase L or inactive mutant RNase LR667A (Dong et al., 2001). (Expression of RNase L and RNase LR667A by Western immunoblot is shown in Figure 4b.) Transduced cells were incubated and analyzed for total and dead cells over a period of time using the IncuCyte system (Figure 4c). WT RNase L expression in RNASEL-ADAR1 DKO caused massive cell death while expression of inactive mutant RNase L did not. Also, expression of WT or mutant RNase L had no effect on RNASE L KO cells with intact ADAR1. The kinetics of cell death or lack thereof can be observed in the movies shown in Videos 1\u20134.\n\n![Video 1.](https://cdn.elifesciences.org/articles/25687/elife-25687-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/25687/elife-25687-media2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/25687/elife-25687-media3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/25687/elife-25687-media4.mp4.jpg)\n\nTo further demonstrate that endogenous dsRNA leads to RNase L activation thus accelerating cell death and that RNase L precludes recovery of ADAR1 KO cells, we constructed an A549 cell line expressing murine coronavirus accessory protein NS2 (NS2-WT), which has a 2\u2019,5\u2019-phosphodiesterase (PDE) activity that cleaves 2-5A thereby antagonizing activation of RNase L. As a control, we also constructed a cell line expressing an inactive mutant NS2H126R, unable to antagonize RNase L due to loss of its ability to cleave 2-5A (Zhao et al., 2012). Using CRISPR/Cas9 engineering (sgRNAs 4) we were able to recover ADAR1 KO cells expressing functional NS2 PDE (NS2-ADAR1 KO) but not the inactive mutant PDE (Table 3, Figure 5a) indicating that antagonism of RNase L by NS2 mediated cleavage of 2-5A as well as RNASEL KO promotes recovery of ADAR1 KO cells. Transfection of NS2-ADAR1 KO cells (clone C12) with siRNA against NS2 but not against control GFP reversed the NS2 phenotype, activated RNase L and promoted cell death by two days post-transfection while NS2-WT cells remained alive following siRNA mediated depletion of NS2 (Figure 5b and c). A second clone (C7) of NS2-ADAR1 KO cells showed similar phenotype (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig5-v3.jpg)\n\n**Figure 5.:** (a) WT A549, WT A549 NS2 expressing cells or ADAR1 KO NS2 (clone C12) cells were mock treated or treated with 1000 U/ml of IFN-\u03b1 overnight, lysed and proteins analyzed by Western immunoblotting with antibodies as indicated (PKR expression was induced 3.5\u20134.0 fold following IFN treatment in cells expressing ADAR1 and reduced 0.6 fold in cells deleted for ADAR1; Figure 5\u2014source data 1.) (b and c) ADAR1 KO or WT A549 NS2 expressing cells were transfected with siRNAs against NS2 (siNS2-1 and siNS2-2) or siRNA against GFP (siGFP) and (b) 96 hr later cells were fixed and stained with crystal violet or (c) 72 hr later lysed and analyzed by Western immunoblotting. The siRNA knockdown data (b) is from one representative experiment of three. Similar data were obtained with another ADAR1 KO NS2 clone (C7) as shown in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** ADAR1 KO NS2 expressing cells (clone C7) or WT NS2 expressing cells were transfected with siRNA targeting NS2 (siNS2-1, siNS2-2) or GFP(siGFP). At 48 hr post treatment cells were fixed and stained with crystal violet. Data are from one representative experiment of three.\n\n### Endogenous dsRNA leads to RNase L activation in ADAR1 KO cells\n\nWe have shown that RNase L expression rescues ADAR1 KO cells and ectopic expression of active RNase L in RNASEL-ADAR1 DKO cells or knockdown of the NS2 RNase L antagonist in NS2 expressing ADAR1 KO cells leads to cell death. These findings suggest that in the absence of ADAR1 expression, OAS is activated by endogenous dsRNA leading to RNase L activation, thus impairing cell proliferation and survival. In order to directly demonstrate OAS activation and RNase L activity by endogenous dsRNA, we quantified 2-5A, the product of OAS, and RNA degradation by RNase L in several types of ADAR1 KO cells in the absence of exogenously added dsRNA. For these experiments we used the RNASEL-ADAR1 and MAVS-ADAR1 DKO cells described above. In addition, for some of the assays we used ADAR1 p150 KO and MAVS-ADAR p150 DKO cells, derived using CRISPR/Cas9 editing and sgRNA6 (Table 3; Figure 2\u2014figure supplement 1). Both of the these cell lines are deficient in expression of the ADAR1 p150 isoform (Figure 2a) previously reported in the mouse system to be responsible for the editing of RNA that activates MAVS or MDA5 (Pestal et al., 2015).\n\nBecause basal levels of 2-5A are minimal in the absence of exogenously added dsRNA, and the consequent RNase L activity very low (Knight et al., 1980) we pre-treated cells with IFN to increase OAS protein levels prior to quantifying 2-5A accumulation and RNA degradation. Indeed IFN treatment of ADAR1 KO cells upregulated ISG expression and further induced IFN by endogenous dsRNA in cells lacking expression of both isoforms of ADAR1 (p110 and p150) or ADAR1 p150 only (Figure 6). This was most evident in RNASEL-ADAR1 DKO cells, which retained MAVS. Using an indirect FRET based assay (Thakur et al., 2005) we observed IFN-induced accumulation of 2-5A in RNASEL-ADAR1 DKO and MAVS-ADAR1 DKO cells (although the latter not to a statistically significant extent) but not in WT, RNASEL KO or MAVS KO cells (Figure 7a). Furthermore, while rRNA remained intact in WT, RNASEL KO or MAVS KO cells, highly specific and characteristic RNase L-mediated rRNA degradation products (Silverman et al., 1983) identical to the pattern induced by Sindbis infection of WT A549 (Figure 7b) were observed by Bioanaylzer in IFN treated ADAR1 p150 KO, MAVS-ADAR1 p150 DKO, or MAVS-ADAR1 DKO cells. (It is important to note that the RNA degradation products observed in IFN-treated RNASE L-ADAR1 DKO cells are not the characteristic specific RNase L mediated pattern. The nuclease(s) responsible for these non-specific rRNA cleavage products is unknown.) Thus 2-5A was produced and RNase L activated by endogenous RNA even in the absence of MAVS. In addition to cleaving rRNA, RNase L was recently reported to strongly and site-specifically cleave tRNA-His at position 36 located in the anti-codon loop. The site-specific tRNA-His cleavage was readily observed using a quantitative RT-PCR assay in IFN-treated MAVS-ADAR1 DKO, but not in IFN-treated cells, which lack RNase L activity in the above assays: MAVS KO andRNASEL-ADAR1 DKO cells (Figure 7c) (Donovan et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig6-v3.jpg)\n\n**Figure 6.:** Cells were treated or mock treated with 10 U/ml of IFN-\u03b1 and 24 hr post treatment, lysed and RNA extracted. Relative mRNA levels for (a) IFN-\u03b2, (b) IFN-\u03bb, (c) OAS2 and (d) IFIT1 were quantified by RT-qPCR, using primers listed in Table 4, and expressed as 2\u2212\u0394CT where \u0394CT = CT(gene of interest)\u2212CT(\u03b2-actin). The data are the average of three independent biological replicates (each with three technical replicates) expressed as means \u00b1 SD; *p<0.05, **p<0.01, ***p<0.001. See Figure 6\u2014source data 1 (includes exact P values).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25687/elife-25687-fig7-v3.jpg)\n\n**Figure 7.:** (a) Cells were mock treated or treated with 200 U/ml of IFN- and cells were lysed and 2-5A quantified using a FRET based assay. The data are the average of three independent biological replicates, expressed as means SD, **p=0.014; ns, p=0.1. (b) Cells were treated with 200 U/ml of IFN-\u03b1 or infected with Sindbis virus (SINV) (Frolova et al., 2002) at MOI\u00a0=\u00a01, and at 48 hr post treatment or 24 hr post infection, cells were harvested, total RNA was extracted and resolved on RNA chips on a Bioanalyzer. The position of 28S and 18S rRNA and indicated. Data shown are from one representative experiment of two. (c) Cells were treated or mock treated with 10 U/ml of IFN-\u03b1 and 24 hr post treatment and lysed. RNA was extracted and specific cleavages at tRNA-His-36 were quantified. The data are the average of three independent biological replicates, expressed mean SD; ***p=0.00019. See Figure 7\u2014source data 1.\n\n## Discussion\n\nAblation of ADAR1 was previously shown to be lethal during mouse embryogenesis (Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014). Adar1 KO embryos show increased levels of IFN production and ISG expression relative to WT and die by E12.5, implicating ADAR1 editing of dsRNA in regulating cell and animal survival. However, deletion of MDA5 or MAVS, components of the canonical type I IFN production pathway (Figure 1), was shown to overcome the ADAR1 deficiency and allow the viability of mouse embryos, although most of the surviving mice died within the first few days after birth and there were abnormalities in organ development as well as excess IFN signaling (Pestal et al., 2015). MDA5/MAVS dependent IFN production and signaling involves many pathways and IFN stimulated gene products and it remained unclear which of the these are primary contributors to the death of these embryos, although it has been shown that PKR ablation was unable to rescue either Adar1 KO mouse embryo lethality (Wang et al., 2004).\n\nWhile our finding that MAVS KO rescued the lethality of ADAR1 in a human cell system is consistent with the literature on Adar1 KO in murine systems in vivo and expected, the finding that RNase L ablation rescues the ADAR1 lethality even in the presence of MAVS and normal IFN response (Figure 2; Table 3) is unexpected. It is possible that, in the mouse embryo system, RNase L, activated downstream of MDA5-MAVS also contributes to embryonic lethality. However, rescue of lethality due to Adar1 KO by Mda5 or Mavs KO in the mouse embryo may be due to one or more other MAVS dependent activities. It should be noted that mouse embryo fibroblasts (mef) (Mannion et al., 2014) and HEK293T cells (Pestal et al., 2015) can survive ADAR1 KO. This is likely due to the low levels of OAS expression in these cell types (Banerjee et al., 2014) (and data not shown) and in the case of mefs, also a low level of RNase L (Banerjee et al., 2014).\n\nThe observation that ectopic expression of active RNase L, but not mutant inactive RNase L, promotes death of ADAR1 deficient cells supports the central role of RNase L activation in dsRNA-mediated cell death (Figure 4c, Videos 1\u20134). Further supporting this conclusion, expression of the MHV PDE, NS2, a potent RNase L antagonist (Zhao et al., 2012), but not its inactive mutant, enables recovery of viable ADAR1 KO cells while knockdown of NS2 in ADAR1 KO cells leads to cell death (Figure 5). Based on these results, we propose that RNase L has a predominant role in promoting cell death by dsRNA (Figure 1). It has been shown recently that RNase L site-specifically cleaves tRNAs and Y-RNAs, and that depletion of the Y-RNA RNY1 contributes to apoptosis (Donovan et al., 2016).\n\nIn contrast to RNase L, and consistent with mouse embryo studies (Wang et al., 2004), deletion of PKR did not allow recovery of ADAR1 KO cells and single PKR KO did not change the kinetics of pIC-induced death in cells that contained ADAR1 (Table 3, Figure 3). Apparently, PKR (a dsRNA-activated protein kinase that inhibits translation) does not substantially contribute to ADAR1 KO cell lethality. [PKR was activated by pIC in WT A549 cells resulting in phosphorylation of eIF2\u03b1, whereas pIC treatment of PKR KO cells did not result in phosphorylated eIF2\u03b1,\u00a0(Figure 2d).] However, it is noted that IFN treatment of ADAR1 deficient cells did not induce PKR expression, in contrast to ADAR1 expressing cells (Figure 2a, Figure 5a, Figure 2\u2014source data 2\u2013source data1; Figure 5\u2014source data 5\u2013source data1). We do not currently know why this occurs.\n\nEndogenous cellular dsRNA activates OAS leading to RNase L activity in MAVS-ADAR1 KO cells as evidenced by rRNA degradation, site-specific tRNA-His cleavage following IFN stimulation, and accumulation of 2-5A in RNASEL KO cells, even in the absence of exogenous dsRNA (Figure 7). It should be noted that dsRNA is the only well-established activator of OAS enzymatic activity [ Silverman and Weiss, 2014 and references therein]. While IFN treatment of RNASEL-ADAR1 DKO cells produces enhanced expression of IFN-\u03b2 and -\u03bb, and ISGs, these effects of IFN were reduced in MAVS-ADAR1 DKO cells. Our findings suggest that MAVS is likely to augment RNase L activation through the upregulation of IFNs and OASs (which are ISGs), effects that do not require exogenous dsRNA when ADAR1 is deficient (Figure 6). Indeed, although not statistically significant, the accumulation of 2-5A was greater in MAVS-ADAR1 DKO cells compared to MAVS (Figure 7). Moreover, deletion of MAVS promotes the viability of A549 cells engineered to lack ADAR1 and upon pIC treatment, the MAVS KO cells exhibit a slower rate of cell death than WT A549 (Figure 3). Nevertheless, MAVS-ADAR1 DKO cells die faster than RNASEL-ADAR1 DKO cells most likely because RNase L can be activated in the former cells (Figure 4a; Figure 7b and c). Thus, while the MDA5/MAVS pathway plays a central role in IFN induction and signaling and can upregulate both OAS and PKR (Figure 1), these data indicate that RNase L can be activated in the absence of MAVS expression in MAVS-ADAR1 DKO cells by pIC. These results are consistent with our previous findings that activation of RNase L during virus infections does not depend on IFN induction (Birdwell et al., 2016; Li et al., 2016).\n\nSince RNase L is activated in the absence of ADAR1 editing contributing to cell death, RNase L-induced cell death could potentially contribute to symptoms of the neurodegenerative and inflammatory disease Aicardi-Gouti\u00e9res syndrome (AGS) in cases with mutation of ADAR1 (Rice et al., 2012). In mouse models, mutations of genes responsible for AGS, such as RNase H2 (Pokatayev et al., 2016) and Trex1 (Gray et al., 2015), led to self-DNA-mediated activation of cGAS, a protein functionally and structurally similar to OASs (Hornung et al., 2014). Our findings show that mutation of ADAR1 leads to self-dsRNA activation of one or more OAS isoform resulting in RNase L activity and cell death. We suggest that mutations affecting homologous nucleic acid sensors in the IFN system, cGAS and OAS, both of which produce unusual 2\u2019\u22125\u2019 internucleotide linkages, lead to AGS although through different signaling pathways. In vivo evidence for the pro-inflammatory role of RNase L was obtained in virus-infected mice where presence of RNase L contributed to secretion of the pro-inflammatory cytokine IL-1\u03b2 (Chakrabarti et al., 2015). Therefore, an RNase L inhibitor drug could potentially reduce tissue damage and alleviate inflammation in some circumstances.\n\n## Materials and methods\n\n### Cell lines and viruses\n\nHuman A549 cells, obtained from Dr. George Stark (Cleveland Clinic) authenticated by STR analysis by ATCC (compared to ATCC CCL-185) were cultured in RPMI 1640 medium (Gibco) supplemented with 10% fetal bovine serum (FBS), 100 U/ml penicillin and 100 \u00b5g/ml streptomycin. Human HEK 293 T cells, authenticated by STR analysis by ATCC (compared to ATCC CRL-1573), were cultured in DMEM supplemented with 10% FBS and 1 mM sodium pyruvate. hTERT-HME1 cells (HME), obtained from Clonetech, authenticated by STR analysis at Genetica DNA Labs (compared to ATCC CRL-4010), were cultured with mammary epithelial cell growth medium (MEGM, Lonza CC-3150). Cell lines tested negative for mycoplasma at University of Pennsylvania (A549 or 293 T cells) or the Cleveland Clinic (HME cells). The RNase L knockout A549 cells were constructed using CRISPR-cas9 gene editing technology as we described previously (Li et al., 2016).\n\n### Antibodies\n\nRabbit anti-ADAR1 D7E2M antibody (1:1000, Cell Signaling), mouse monoclonal anti-MAVS E3 (1:250, Santa Cruz), mouse monoclonal anti-RNase L (1:1000) (Dong and Silverman, 1995), mouse monoclonal anti-PKR B-10 antibody (1:200, Santa Cruz), mouse monoclonal anti-GAPDH GA1R (1:1000, Thermo-Fisher), mouse monoclonal anti-NS2 (1:600) (provided by Stuart Siddell, University of Bristol, United Kingdom (Gusho et al., 2014) were used to detect ADAR1, MAVS, RNase L, PKR, GAPDH and NS2 respectively. Mouse monoclonal anti-Flag M2-antibody (1:5000)\u00a0and mouse monoclonal anti-\u00df-actin (1:50000)\u00a0were from Sigma-Aldrich. Rabbit anti-eIF2\u03b1 (1:1000) or anti-Ser-51-phosphorylated eIF2\u03b1 (1:1000) were from Cell Signaling Technology. Secondary antibodies were goat anti-mouse antibody (1:5000, Santa Cruz) and goat anti-rabbit antibody (1:3000, Cell Signaling) conjugated with HRP(Horseradish peroxidase).\n\n### Construction of plasmids and pseudolentivirus\n\nThe oligonucleotide sequences to be used for generation of single guide RNAs (sgRNA) are listed in Table 1 and their positions of sgRNA4 and sgRNA6 in the ADAR1 gene are shown in Figure 2\u2014figure supplement 1. A pair of forward and reverse oligonucleotides for generation of each sgRNA (Table 1), synthesized by IDT) were annealed by published methods (Ran et al., 2013) and were inserted into plasmid vectors pLenti-CRISPR(Addgene) between BsmBI restriction sites. The resulting plasmids were pLenti-sgADAR1-4 and pLenti-sgADAR1-6 (targeting the ADAR1 gene), pLenti-sgMAVS-1(targeting the MAVS gene) pLenti-sgPKR-1 (targeting the PKR gene). The cDNAs encoding murine coronavirus mouse hepatitis virus (MHV) NS2 and mutant NS2H126R were cloned into a pLenti vectors using SalI/XhoI restriction sites. The packaging of pseudo lentiviruses was described previously (Li et al., 2016).\n\n### Construction of MAVS, PKR, ADAR1 gene knockout cells\n\nThe methods for construction of single gene knockout (KO) A549 cells using Lenti-CRIPSR were described previously (Li et al., 2016). For the double gene knockout (DKO), RNaseL-KO or MAVS-KO cells were transduced with Lenti-sgADAR1-4 to generate RNaseL-ADAR1 DKO or MAVS/ADAR1 DKO cells. For knocking out ADAR1 p150 expression, A549 or MAVS-KO cells were transduced with Lenti-sgADAR1-6, the cells were selected for puromycin resistance and cloned by previous described methods (Li et al., 2016). Mutations in the cells were verified by PCR using primers listed in Table 2.\n\n### Construction of NS2 or NS2H126R expressing cells and NS2 knockdown\n\nA549 cells were transduced with Lenti-NS2 or Lenti-NS2H126R and 48 hr post transduction, medium containing 1 mg/ml of hygromycin was added, after 72 hr selection the cells were plated into a new flask and 24 hr later cloned by limited dilution by previous methods (Li et al., 2016). For NS2 knockdown, 3 \u00d7 105 cells were plated in one well of a 24-well plate, and transfected with 100 pmol siRNA in Lipofectatimine 2000; cells were harvested for western blotting (72 hr post transfection) to determine the expression level of NS2 or fixed with 4% PFA (96 hr post transfection) and stained with crystal violet. siNS2-1 (5' rArUrGrArArGrArUrArUrUrGrUrUrGrArArArUrUrCrUrCCG 3') and siNS2-2 (5' rGrGrArArUrGrCrArArUrUrCrUrArUrCrArUrArArArGrAAC 3') targetting NS2 were designed and synthesized by IDT and the siGFP was purchased from SantaCruz.\n\n### Western immunoblotting\n\nConfluent cells in 12-well plates were treated or mock treated with 1000 U of human IFN-\u03b1 (PBL) overnight, harvested, washed in PBS and lysed with NP40 buffer with protease inhibitor cocktail (Roche). Cell lysates, containing equal amounts of protein, were mixed with 4X Laemmli buffer and boiled at 95\u00b0C for 5 min and analyzed by electrophoresis on 4\u201315% gradient SDS gels. Proteins were transferred to polyvinylidene difluoride membranes, which were treated with 5% nonfat milk in TBST (Tris-HCl buffer saline with 0.5% Tween-20) blocking buffer for 1 hr, followed by incubation overnight at 4\u00b0C with antibodies diluted into TBST. Membranes were then washed three times with TBST and incubated with secondary antibodies for 1 hr at room temperature, washed three times with TBST and then incubated with SuperSignal West Dura Extended Duration substrate (Thermo Fisher) and the signal was detected using an Amersham Imager 600(GE). The expression level of PKR (Figure 2a and Figure 5a) was quantified by ImageJ software and the fold change between IFN-\u03b1 treated and mock treated samples was calculated.\n\n### Crystal violet cell death assay\n\nCells were transfected with pIC (0.4 kb, Millipore), amounts as indicated, as previously described (Li et al., 2016). At 48 hr post transfection cells were fix with 4% paraformaldehyde and stained with 1% crystal violet.\n\n### IncuCyte system assays\n\n#### Cell death Assay\n\nCells (1 \u00d7 105) were seeded in 24-well plates and after 12 hr were transfected with 20 ng/ml of pIC (high molecular weight (1.5\u20138 kb, InvivoGen) with Lipofectamine 2000 (Invitrogen) according to manufacturer\u2019s protocol. The cells were incubated with 250 nM Sytox-Green dye (Thermo Fisher), a nucleic acid stain that is an indicator of dead cells and which is impermeant to live cells, and 250 nM of cell permeable dye Syto 60-Red (ThermoFisher), which allows quantification of the total number of cells present in each field, using an IncuCyte Live-Cell Imaging System and software (Essen Instruments 2015A) for 36 hr. Cell death was measured by counting the green objects per mm2 (dead cells, green) and then normalizing to the total number of cells per mm2 (red objects) at each time point using IncuCyte software. The WT and RNASEL KO HME (2 \u00d7 105) cells were grown in 12-well plates and transfected with different concentration of pIC (250 ng/ml, 100 ng/ml, 50 ng/ml and 20 ng/ml). Cell death was measured with the IncuCyte system with Sytox-Green dye (250 nM) for 20 hr.\n\n### Apoptosis assay (caspase 3/7)\n\nCells were seeded and transfected with pIC as above. The cells were incubated with IncuCyte Kinetic Caspase-3/7 Apoptosis Assay Reagent (green)\u00a0(Essen\u00a0Bioscience) according to manufacturer\u2019s protocol and with 250 nM of Syto Red dye (ThermoFisher) for 24 hr. The apoptotic index was determined by counting the green object count/mm2 and then normalized by red object count/mm2 using IncuCyte software.\n\n### Cell migration assay\n\nThe wound healing assays were done by seeding cells in 96-well plates (Essen Image-Lock plates, Essen Instruments), and incubating in serum-free medium for 24 hr as described previously (Banerjee et al., 2015). The wounds were made with a wound scratcher (Essen Instruments). Cells were stimulated with 10% serum immediately after wound scratching, and wound confluence was monitored with IncuCyte Live-Cell Imaging System and software (Essen Instruments 2015 A). Wound closure was observed every hour at the indicated times by comparing the mean relative wound density of at least eight biological replicates in each experiments.\n\n### Re-constitution of RNase L KO cells with lentivirus encoding flag RNase L (WT and R667A mutant)\n\nThe 3X FLAG-human RNase L DNA or human mutant 3X FLAG-RNase L R667A DNA (Chakrabarti et al., 2015) were PCR amplified and inserted in lentiviral vector pCMV-PL4-Neo (Addgene, Principal Investigator Eric Campeau) as described previously (Chakrabarti et al., 2015; Banerjee et al., 2015). The lentiviruses were produced in HEK293T cells as described (Banerjee et al., 2015). Virus-containing medium was collected 48 hr after transfection and stored at \u221280\u00b0C. ADAR1-RNase L DKO or RNase L KO cells were infected at a density of 105 cells ml\u22121 in the presence of 8 \u03bcg\u00a0ml\u22121 polybrene, in 24-well plates. Cell survival was monitored with the IncuCyte System by staining with Sytox-Green and Syto-Red as described above.\n\n### Quantification of 2-5A\n\nIntracellular 2-5A was quantified by an indirect assay in which activation of RNase L activity is measured (Elbahesh et al., 2011). In brief, IFN treated (200 U/ml human IFN-\u03b2) for 48 hr or mock treated cells were washed with PBS, and lysed in preheated (95\u00b0C) Nonidet P-40 lysis buffer (50 mM Tris-HCl, pH 7.2, 0.15 M NaCl, 1% Nonidet P-40, 200 \u00b5M sodium orthovanadate, 2 mM EDTA, 5 mM MgCl2, 5 mM DTT) and heated to 95\u00b0C for another 7 min. The cell extracts were centrifuged for 10 min at 14,000 \u00d7 g at room temperature, and the cleared supernatants collected. Levels of 2-5A were determined by RNase L-based FRET assays in comparison to a standard curve of authentic (2\u2032\u22125\u2032)\u00a0p3A3 as described earlier (Thakur et al., 2005). Briefly, recombinant human RNase L was incubated with purified authentic (2\u2032\u22125\u2032)p3A3 or cell extract (normalized for protein concentration prior to centrifugation). The FRET RNA probe was added and the reaction mixtures incubated at 20\u00b0C for 2 hr. Fluorescence was measured with a Wallac 1420 fluorimeter (Perkin-Elmer) as described previously (Thakur et al., 2005).\n\n### Ribosomal RNA (rRNA) cleavage assay\n\nCells were treated with 200 U/ml of IFN-\u03b1 or infected with Sindbis virus (SINV) (Frolova et al., 2002) at MOI\u00a0=\u00a01, and at 48 hr post treatment or 24 hr post infection, cells were harvested in RLT cell lysis buffer (RNeasy mini kit, Qiagen). Total RNA was extracted and was resolved on RNA chips using an Agilent 2100 BioAnalyzer to determine the integrity of 28S and 18S rRNA.\n\n### RtcB-ligase assisted qPCR\n\nRNA fragments generated by RNase L were detected as described (Donovan et al., 2016). Briefly, cells were treated with 10U of IFN-\u03b1 and 24 hr post treatment, total RNA was purified by Trizol and RNAs with 2\u2019\u22123\u2019 cyclic phosphate were ligated to the adapter 5\u2019 rGrArUrCrGrUCGGACTGTAGAACTCTGAAC 3\u2019 using RtcB RNA ligase. EDTA-quenched ligation reactions were reverse transcribed using Multiscribe reverse transcriptase (ThermoFisher) and the primer 5\u2019 TCCCTATCAGTGATAGAGAGTTCAGAGTTCTACAGTCCG 3\u2019. The resulting cDNAs were assessed for RNase L cleavage products by qPCR for specific cleavage sites and normalized to U6, which has a naturally occurring 2\u2019\u22123\u2019 cyclic phosphate. The qPCR primers for tRNA-His-36 cleavage are 5\u2019 GTTAGTACTCTGCGTTGTGGA 3\u2019 (Forward) and 5\u2019 TCCCTATCAGTGATAGAGAG 3\u2019 (reverse). U6 primers for normalization are 5\u2019 GCTTCGGCAGCACATATACTA 3\u2019 (forward) and 5\u2019 CGAATTTGCGTGTCATCCTTG 3\u2019 (reverse).\n\n### mRNA quantification by quantitative reverse transcriptase-PCR (qRT-PCR)\n\nCells were treated with 10 U/ml of IFN-\u03b1 (PBL) and 24 hr post treatment, cells were lysed in RLT Plus RNA lysis buffer (Qiagen), and RNA was isolated using the RNeasy Plus Mini Kit (Qiagen) as previously described (Zhao et al., 2012). Relative IFN-\u03b1, IFN-\u03bb, OAS2, IFIT2 mRNA expression levels were quantified as \u0394CT values relative to actin mRNA [\u0394CT = CT(gene of interest) \u2212 CT(\u03b2-actin)] and expressed using the formula 2\u2212\u0394CT. Primer sequences are listed in Table 4.\n\n**Table 4.**\n qRT-PCR primers for human actin, IFN, OAS2 and IFIT1 genes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genes</th>\n      <th>Forward (5\u2019\u22123\u2019)</th>\n      <th>Reverse (5\u2019\u22123\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ACTIN</td>\n      <td>ACTGGAACGGTGAAGGTGAC</td>\n      <td>GTGGACTTGGGAGAGGACTG</td>\n    </tr>\n    <tr>\n      <td>IFN-\u03b2</td>\n      <td>GTCAGAGTGGAAATCCTAAG</td>\n      <td>ACAGCATCTGCTGGTTGAAG</td>\n    </tr>\n    <tr>\n      <td>IFN-\u03bb</td>\n      <td>CGCCTTGGAAGAGTCACTCA</td>\n      <td>GAAGCCTCAGGTCCCAATTC</td>\n    </tr>\n    <tr>\n      <td>OAS2</td>\n      <td>TTCTGCCTGCACCACTCTTCAACGA</td>\n      <td>GCCAGTCTTCAGAGCTGTGCCTTTG</td>\n    </tr>\n    <tr>\n      <td>IFIT1</td>\n      <td>TGGTGACCTGGGGCAACTTT</td>\n      <td>AGGCCTTGGCCCGTTCATAA</td>\n    </tr>\n  </tbody>\n</table>\n\n### eIF2\u03b1 phosphorylation\n\nWT and PKR-KO A549 cells were seeded at a density 5 \u00d7 105 cells/well of in six-well plates. After 16 hr the cells were transfected with 1 \u03bcg/ml pIC using Lipofectamine 2000 and incubated for 2 hr. The cells were harvested in NP-40 lysis buffer as above. The lysates were centrifuged at 1000Xg for 12 min at 4\u00b0C. The total protein amounts in the cleared supernatants were determined by the Bradford method (Bio-Rad), and 30 \u03bcg of total protein was separated on 12% SDS-PAGE, transferred onto polyvinylidene difluoride(PVDF)membranes (0.45 \u03bcm) (BioRad), and probed with either antibody against total anti-eIF2\u03b1 or Ser-51-phosphorylated eIF2\u03b1(Cell signaling Technology).\n\n### Statistics\n\nPlotting of data was performed using GraphPad Prism software (GraphPad Software, Inc., CA). Statistical analysis were performed using Excel software (Microsoft Office). Statistical significance was determined by an unpaired two-tailed Student t test.\n",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "7380db6e-8a4e-442a-89f0-a2f54ca4e304",
+      "submission_id": "b88845bf-1156-4102-b91c-a88e0cc24943",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25687.025](https://doi.org/10.7554/eLife.25687.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ribonuclease L Mediates the Cell-Lethal Phenotype of Adenosine Deaminase 1 Deficiency in Human Cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Brenda Bass (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe have now received comments on your manuscript from three experts in the specific area of ADAR1 biology. All agreed that the work was interesting, well done and in principle suitable for eLife. Nevertheless the following fairly minor points should be thoroughly addressed via revision.\n\n1) Because ADAR1 technically belongs to the cytosine deaminase family of enzymes, a more appropriate title would be to substitute adenosine deaminase with the \"double stranded RNA editing enzyme ADAR1 in a human cell line\".\n\n2) ADAR1 activity does not separate dsRNA into single stranded RNA but rather creates partially dsRNA. Please correct in the text and figure.\n\n3) Please remove the word partially from \"partially rescues\" in the Abstract and also in the Introduction.\n\n4) Indicate the source and size of poly IC used.\n\n5) Please quantify the Western blots in Figures 2 and 3 and comment on the levels of PKR seen in interferon treated cells.\n\n6) The reviewers agreed that the conclusions derived from this work should be tempered somewhat because results obtained primarily in a single cell line cannot necessary be extrapolated to the intact organism. Because mouse data indicates that the RIG-I/MDA5 is perhaps the primary pathway you could modify your conclusion to indicate that the OAS/RNase L pathway is an important contributor at least in the cell line tested.\n\n7) Finally, can it be distinguished from the data whether accumulated dsRNA in ADAR1 deficient cells directly activates basal OAS or perhaps a sensed by MDA5 to induce interferon causing a subsequent induction of OAS?\n",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c201f4d3-d8e4-4808-97f5-abf825330093",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C1",
+      "claim": "ADAR1 isoforms are adenosine deaminases that edit and destabilize double-stranded RNA reducing its immunostimulatory activities.",
+      "claim_type": "EXPLICIT",
+      "source": "ADAR1 isoforms are adenosine deaminases that edit and destabilize double-stranded RNA reducing its immunostimulatory activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about ADAR1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "5ae189b8-290e-4d80-8a82-61e8b9c59dcb",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C2",
+      "claim": "Mutation of ADAR1 leads to Aicardi-Gouti\u00e9res syndrome, a severe neurodevelopmental and inflammatory disease of children.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of ADAR1 leads to a severe neurodevelopmental and inflammatory disease of children, Aicardi-Gouti\u00e9res syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Rice et al., 2012 in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2c87d318-f838-462b-97af-066e50903e6f",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C3",
+      "claim": "Adar1 mutations are embryonic lethal in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, Adar1 mutations are embryonic lethal but are rescued by mutation of the Mda5 or Mavs genes, which function in IFN induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014 in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "059835eb-9d48-4f74-93cb-c72aefd44de1",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C4",
+      "claim": "Adar1 embryonic lethality in mice is rescued by mutation of the Mda5 or Mavs genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, Adar1 mutations are embryonic lethal but are rescued by mutation of the Mda5 or Mavs genes, which function in IFN induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "5c26e762-5df2-452c-bef8-84ab47a27299",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C5",
+      "claim": "The cell-lethal phenotype of ADAR1 deletion in human lung adenocarcinoma A549 cells is rescued by CRISPR/Cas9 mutagenesis of the RNASEL gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the cell-lethal phenotype of ADAR1 deletion in human lung adenocarcinoma A549 cells is rescued by CRISPR/Cas9 mutagenesis of the RNASEL gene or by expression of the RNase L antagonist, murine coronavirus NS2 accessory protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f2605f7d-574f-420f-b2bd-a1f6097688b3",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C6",
+      "claim": "The cell-lethal phenotype of ADAR1 deletion in A549 cells is rescued by expression of the RNase L antagonist, murine coronavirus NS2 accessory protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the cell-lethal phenotype of ADAR1 deletion in human lung adenocarcinoma A549 cells is rescued by CRISPR/Cas9 mutagenesis of the RNASEL gene or by expression of the RNase L antagonist, murine coronavirus NS2 accessory protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "96f728ce-2831-4e14-ac5d-1a99f1b99cbf",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C7",
+      "claim": "Ablation of RNase L activity promotes survival of ADAR1 deficient cells even in the presence of MDA5 and MAVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result demonstrate that ablation of RNase L activity promotes survival of ADAR1 deficient cells even in the presence of MDA5 and MAVS, suggesting that the RNase L system is the primary sensor pathway for endogenous dsRNA that leads to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that RNASEL-ADAR1 DKO cells are viable while maintaining MAVS expression (Table 3, Figure 2, Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "e777d4f7-138b-43df-9d0a-d68715bbc337",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C8",
+      "claim": "The RNase L system is the primary sensor pathway for endogenous dsRNA that leads to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result demonstrate that ablation of RNase L activity promotes survival of ADAR1 deficient cells even in the presence of MDA5 and MAVS, suggesting that the RNase L system is the primary sensor pathway for endogenous dsRNA that leads to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that RNase L ablation rescues ADAR1 deficiency even when MAVS is present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "317fab7e-b6f4-4e76-b8ca-af8989d578f7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C9",
+      "claim": "ADAR1 converts adenosine to inosine (A-to-I editing) in dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Adenosine deaminase acting on dsRNA (ADAR1) isoforms neutralize the immunostimulatory activity of double-stranded RNA (dsRNA) by converting adenosine to inosine (i.e., A-to-I editing) (George et al., 2014; Tomaselli et al., 2015; Patterson and Samuel, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to George et al., 2014; Tomaselli et al., 2015; Patterson and Samuel, 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d60912c2-f35e-4f4c-b3ad-018675605b08",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C10",
+      "claim": "ADAR1 destabilizes dsRNA because A:U base pairs are stronger than I:U mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "ADAR1 alters the RNA coding sequence, because I is read as G, and it also destabilizes dsRNA because A:U base pairs are disrupted than I:U mismatches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of RNA base pairing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "30a14cc6-0d19-493c-a6f0-52a39c6e250d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C11",
+      "claim": "ADAR1 modifications suppress cellular responses to dsRNA and prevent type I IFN production.",
+      "claim_type": "EXPLICIT",
+      "source": "These modifications by ADAR1 suppress the cellular responses to dsRNA and prevent to type I IFN production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of ADAR1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c48c5d99-f011-4e46-a0b1-8f452530d713",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C12",
+      "claim": "There are three mammalian ADAR genes (ADAR1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "There are three mammalian ADAR genes (ADAR1-3), but only ADAR1 isoforms p110 and p150 and ADAR2 have deaminase activity (Tomaselli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tomaselli et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d4143bed-9193-4a8a-abb3-929ee8b90c06",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C13",
+      "claim": "Only ADAR1 isoforms p110 and p150 and ADAR2 have deaminase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three mammalian ADAR genes (ADAR1-3), but only ADAR1 isoforms p110 and p150 and ADAR2 have deaminase activity (Tomaselli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tomaselli et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8d62c9c1-8b82-4ed8-8824-d95d95959763",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C14",
+      "claim": "ADAR1 p150 isoform is IFN inducible.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFN inducible ADAR1 p150 isoform (subsequently 'p150') is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ADAR1 isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8a51f4c7-7097-42d8-853c-4354cae9e97b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C15",
+      "claim": "ADAR1 p150 is present in both the cytoplasm and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFN inducible ADAR1 p150 isoform (subsequently 'p150') is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ADAR1 subcellular localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "a18d3e62-ce4a-4f91-a6d0-afc6078df934",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C16",
+      "claim": "ADAR1 p110 is constitutively expressed and mostly nuclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFN inducible ADAR1 p150 isoform (subsequently 'p150') is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ADAR1 p110.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "be7b51e9-b6d7-464b-8feb-eda4aef0f775",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C17",
+      "claim": "ADAR1 p110 is an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFN inducible ADAR1 p150 isoform (subsequently 'p150') is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ADAR1 p110 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "096fff6c-055a-4426-a9c3-63acaf8fa3df",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C18",
+      "claim": "ADAR2 is mostly nuclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFN inducible ADAR1 p150 isoform (subsequently 'p150') is present in both the cytoplasm and nucleus, while the constitutive ADAR1 p110 (an N-terminal truncated isoform translated from a shorter mRNA initiated at a downstream promoter in ADAR1) and ADAR2 are mostly nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ADAR2 localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "848e7f73-7393-4a29-a123-683f7aab22f4",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C19",
+      "claim": "Mutations of ADAR1 result in Aicardi-Gouti\u00e9res syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of ADAR1 result in the severe, sometimes lethal, childhood neurodevelopmental disease, Aicardi-Gouti\u00e9res syndrome (Rice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rice et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "be7af770-43b9-410c-832c-91b8e55640eb",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C20",
+      "claim": "ADAR1 can be either pro-viral or anti-viral depending on the virus-host cell context.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ADAR1 can be either pro-viral or anti-viral depending on the virus-host cell context (reviewed in [George et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to George et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "0af0c198-7552-4c6e-8708-5c6e652f031e",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C21",
+      "claim": "The antiviral effects of ADAR1 are due to hyper-editing and mutagenesis of viral RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The antiviral effects are due to hyper-editing and mutagenesis of viral RNAs (Samuel, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Samuel, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "80018d09-3538-4a8b-8d80-35f241c56ce4",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C22",
+      "claim": "Proviral effects of ADAR1 are due in part to editing of viral RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Proviral effects are due in part to editing of viral RNAs (Wong and Lazinski, 2002) and/or to destabilizing dsRNA resulting in suppression of dsRNA-signaling through MDA5 and MAVS to type I IFN genes (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wong and Lazinski, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d76fcbac-fcf3-425b-8864-fd7730af4590",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C23",
+      "claim": "Proviral effects of ADAR1 are due to destabilizing dsRNA resulting in suppression of dsRNA-signaling through MDA5 and MAVS to type I IFN genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Proviral effects are due in part to editing of viral RNAs (Wong and Lazinski, 2002) and/or to destabilizing dsRNA resulting in suppression of dsRNA-signaling through MDA5 and MAVS to type I IFN genes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by inference from the mechanism shown in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "284e60cd-cee1-4912-9cad-7000a58ca5f7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C24",
+      "claim": "Mutation of either MDA5 or MAVS rescues the embryonic lethal phenotype of Adar1 knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mutation of either MDA5 or MAVS rescues the embryonic lethal phenotype of Adar1 knockout (KO) mice (Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "ad8005bd-7310-45d1-b166-177398f26695",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C25",
+      "claim": "ADAR1 antagonizes the IFN-inducible dsRNA-dependent serine/threonine protein kinase, PKR.",
+      "claim_type": "EXPLICIT",
+      "source": "ADAR1 also antagonizes the IFN-inducible dsRNA-dependent serine/threonine protein kinase, PKR, presumably by altering the structure of dsRNA and thereby preventing both PKR activation and phosphorylation of its substrate protein, eIF2\u03b1 (Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8e76b272-dbd7-43f9-8118-cc2d3053450d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C26",
+      "claim": "ADAR1 prevents PKR activation by altering the structure of dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ADAR1 also antagonizes the IFN-inducible dsRNA-dependent serine/threonine protein kinase, PKR, presumably by altering the structure of dsRNA and thereby preventing both PKR activation and phosphorylation of its substrate protein, eIF2\u03b1 (Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "9eba0707-0ce7-40e1-86a8-f49a0248977d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C27",
+      "claim": "OAS isoforms (OAS1, OAS2, OAS3) are IFN inducible enzymes that sense dsRNA and produce 2',5'-oligoadenylates (2-5A).",
+      "claim_type": "EXPLICIT",
+      "source": "OAS isoforms (OAS1, OAS2, OAS3) are IFN inducible enzymes that sense dsRNA and produce 2',5'-oligoadenylates (2-5A) which activate RNase L to degrade viral and host single-stranded RNAs leading to apoptosis and inhibition of virus growth (Silverman and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silverman and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "550d0ba5-95ce-4c96-af13-6fdd73b9a9f3",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C28",
+      "claim": "2-5A activates RNase L to degrade viral and host single-stranded RNAs leading to apoptosis and inhibition of virus growth.",
+      "claim_type": "EXPLICIT",
+      "source": "OAS isoforms (OAS1, OAS2, OAS3) are IFN inducible enzymes that sense dsRNA and produce 2',5'-oligoadenylates (2-5A) which activate RNase L to degrade viral and host single-stranded RNAs leading to apoptosis and inhibition of virus growth (Silverman and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silverman and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d9f436b7-005e-4626-a51a-3c0e52dd0a25",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C29",
+      "claim": "ADAR1 single gene KO A549 cells were not viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that whereas ADAR1 single gene KO A549 cells were not viable, it was possible to rescue ADAR1 deficient cells by knockout (KO) of either RNASEL or MAVS or by expression of a viral antagonist of the OAS/RNase L system (Silverman and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "1c5c711e-ab55-4001-a0cb-cd58c941284a",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C30",
+      "claim": "It was possible to rescue ADAR1 deficient cells by knockout of either RNASEL or MAVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that whereas ADAR1 single gene KO A549 cells were not viable, it was possible to rescue ADAR1 deficient cells by knockout (KO) of either RNASEL or MAVS or by expression of a viral antagonist of the OAS/RNase L system (Silverman and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "19a687b4-8368-452f-95f0-13c81c43e8c7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C31",
+      "claim": "It was possible to rescue ADAR1 deficient cells by expression of a viral antagonist of the OAS/RNase L system.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that whereas ADAR1 single gene KO A549 cells were not viable, it was possible to rescue ADAR1 deficient cells by knockout (KO) of either RNASEL or MAVS or by expression of a viral antagonist of the OAS/RNase L system (Silverman and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "53d82cc3-3ea6-4be7-898f-64c8faf7b043",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C32",
+      "claim": "RNase L activation is the primary mode of cell death induced by either endogenous or exogenous dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the RNase L activation is the primary mode of cell death induced by either endogenous or exogenous dsRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that RNase L ablation protects cells from dsRNA-induced death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "ebcb27f1-a735-4f9a-94e1-8b4f4ad25727",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C33",
+      "claim": "Cells lacking RNase L expression were resistant to cell death at treatment with up to 5 \u00b5g/ml of pIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells lacking RNase L expression were resistant to cell death at treatment with up to 5 \u00b5g/ml of pIC while treatment of WT A549 as well as PKR KO or MAVS KO cells with 0.5 \u00b5g/ml of pIC promoted cell death (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "bd3c594b-ea13-4991-9cea-bc0712102ca6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C34",
+      "claim": "Treatment of WT A549 as well as PKR KO or MAVS KO cells with 0.5 \u00b5g/ml of pIC promoted cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells lacking RNase L expression were resistant to cell death at treatment with up to 5 \u00b5g/ml of pIC while treatment of WT A549 as well as PKR KO or MAVS KO cells with 0.5 \u00b5g/ml of pIC promoted cell death (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "44f2d412-8ac6-4409-9a70-40cbb98ef73f",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C35",
+      "claim": "Cells expressing RNase L died by 24\u201330 hr post treatment with pIC.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells expressing RNase L died by 24\u201330 hr post treatment, cells ablated for RNase L expression (RNASEL KO and RNASEL-MAVS DKO) were resistant to pIC induced cell death (Figure 3b&c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "fffea68c-cdec-4460-a1c2-79c06e3d5740",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C36",
+      "claim": "Cells ablated for RNase L expression (RNASEL KO and RNASEL-MAVS DKO) were resistant to pIC induced cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells expressing RNase L died by 24\u201330 hr post treatment, cells ablated for RNase L expression (RNASEL KO and RNASEL-MAVS DKO) were resistant to pIC induced cell death (Figure 3b&c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c56603e6-7977-4bc6-bff0-7595da9ae97b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C37",
+      "claim": "RNASEL KO or RNASEL-MAVS DKO showed accelerated wound healing in monolayer scratch assays compared with MAVS KO and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RNASEL KO or RNASEL-MAVS DKO showed accelerated wound healing in monolayer scratch assays compared with MAVS KO and WT cells, all of which retained RNase L (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "43682041-4f60-435c-a310-756753d266b1",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C38",
+      "claim": "RNase L impairs cell migration in monolayer scratch assays.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase L was previously reported to impair cell migration in these assays (Banerjee et al., 2015; Rath et al., 2015) as well as to promote apoptosis (Zhou et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Banerjee et al., 2015; Rath et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "87b04c60-b5fc-426a-aa51-1f4ddab9df5c",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C39",
+      "claim": "RNase L promotes apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase L was previously reported to impair cell migration in these assays (Banerjee et al., 2015; Rath et al., 2015) as well as to promote apoptosis (Zhou et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhou et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "40bbafca-b788-4830-86ce-e0abc75799d6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C40",
+      "claim": "The protective effect of RNASEL KO was not restricted to A549 cells as human mammary epithelial (HME) cells were also protected from pIC-induced cell death by ablation of RNase L expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the protective effect of RNASEL KO was not restricted to A549 cells as human mammary epithelial (HME) cells were also protected from pIC-induced cell death by ablation of RNase L expression (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "84b559e5-37ec-4f18-8358-90ab233e7dec",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C41",
+      "claim": "More than 40 clones derived from WT A549 cells or PKR KO A549 were screened and none had a KO of ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using lentivirus delivered CRISPR/Cas9 and sgRNA4 directed at Exon 1 of ADAR1 within the coding regions of p110 and p150 (Table 1; Figure 2\u2014figure supplement 1) we screened more than 40 clones derived from WT A549 cells or PKR KO A549 and were unable to recover cells with a KO of ADAR1 (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "b8291f2b-8be2-4488-8d41-c6873915043f",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C42",
+      "claim": "Using RNASEL KO or MAVS KO A549 cells and lentivirus delivery of sgRNA4, both RNASEL-ADAR1 and MAVS-ADAR1 double KO cells were recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "However using RNASEL KO or MAVS KO A549 cells and similar lentivirus delivery of sgRNA4 we were able to recover both RNASEL-ADAR1 and MAVS-ADAR1 double KO (DKO) cells (Table 3, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "e3c4afea-f802-4feb-bc0f-907b5e366a8b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C43",
+      "claim": "MAVS-ADAR1 DKO cells died more slowly than WT cells following pIC transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "While MAVS-ADAR1 DKO cells died more slowly than WT cells, RNase L-ADAR1 DKO cells were almost completely protected from cell death further supporting the finding that RNase L is the major pathway leading to cell death in the absence of ADAR1 editing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "1001015e-9ec1-4dfd-9727-5c3ebe081ef9",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C44",
+      "claim": "RNase L-ADAR1 DKO cells were almost completely protected from cell death following pIC transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "While MAVS-ADAR1 DKO cells died more slowly than WT cells, RNase L-ADAR1 DKO cells were almost completely protected from cell death further supporting the finding that RNase L is the major pathway leading to cell death in the absence of ADAR1 editing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "81f219f6-ab38-4e73-9e8a-184ff91da4ca",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C45",
+      "claim": "RNase L is the major pathway leading to cell death in the absence of ADAR1 editing.",
+      "claim_type": "EXPLICIT",
+      "source": "While MAVS-ADAR1 DKO cells died more slowly than WT cells, RNase L-ADAR1 DKO cells were almost completely protected from cell death further supporting the finding that RNase L is the major pathway leading to cell death in the absence of ADAR1 editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential protection in MAVS-ADAR1 DKO vs RNASEL-ADAR1 DKO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "5d1abe18-7c99-40fc-8d05-0cd57bd9d89e",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C46",
+      "claim": "WT RNase L expression in RNASEL-ADAR1 DKO caused massive cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "WT RNase L expression in RNASEL-ADAR1 DKO caused massive cell death while expression of inactive mutant RNase L did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4c and Videos 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c5261d1c-aa08-4f59-b710-8b4538fe882c",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C47",
+      "claim": "Expression of inactive mutant RNase L did not cause cell death in RNASEL-ADAR1 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "WT RNase L expression in RNASEL-ADAR1 DKO caused massive cell death while expression of inactive mutant RNase L did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4c and Videos 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2d5e1950-c6b0-4e8a-804f-19e17023c299",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C48",
+      "claim": "Expression of WT or mutant RNase L had no effect on RNASE L KO cells with intact ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, expression of WT or mutant RNase L had no effect on RNASE L KO cells with intact ADAR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4c and Videos 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "9c973da7-e994-419d-8082-71c1bfd4aca3",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C49",
+      "claim": "Murine coronavirus accessory protein NS2 has a 2',5'-phosphodiesterase (PDE) activity that cleaves 2-5A thereby antagonizing activation of RNase L.",
+      "claim_type": "EXPLICIT",
+      "source": "To further demonstrate that endogenous dsRNA leads to RNase L activation thus accelerating cell death and that RNase L precludes recovery of ADAR1 KO cells, we constructed an A549 cell line expressing murine coronavirus accessory protein NS2 (NS2-WT), which has a 2',5'-phosphodiesterase (PDE) activity that cleaves 2-5A thereby antagonizing activation of RNase L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhao et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "545e03ae-a395-4c14-a3d3-7cf58ce37066",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C50",
+      "claim": "NS2H126R is an inactive mutant unable to antagonize RNase L due to loss of its ability to cleave 2-5A.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we also constructed a cell line expressing an inactive mutant NS2H126R, unable to antagonize RNase L due to loss of its ability to cleave 2-5A (Zhao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhao et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8bd37653-4f79-4b44-845c-a602eff5f57a",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C51",
+      "claim": "ADAR1 KO cells expressing functional NS2 PDE (NS2-ADAR1 KO) but not the inactive mutant PDE were recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CRISPR/Cas9 engineering (sgRNAs 4) we were able to recover ADAR1 KO cells expressing functional NS2 PDE (NS2-ADAR1 KO) but not the inactive mutant PDE (Table 3, Figure 5a) indicating that antagonism of RNase L by NS2 mediated cleavage of 2-5A as well as RNASEL KO promotes recovery of ADAR1 KO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "dd07c332-c094-460c-8432-d1b717faedd9",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C52",
+      "claim": "Antagonism of RNase L by NS2 mediated cleavage of 2-5A promotes recovery of ADAR1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CRISPR/Cas9 engineering (sgRNAs 4) we were able to recover ADAR1 KO cells expressing functional NS2 PDE (NS2-ADAR1 KO) but not the inactive mutant PDE (Table 3, Figure 5a) indicating that antagonism of RNase L by NS2 mediated cleavage of 2-5A as well as RNASEL KO promotes recovery of ADAR1 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that only functional NS2 allows recovery of ADAR1 KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "77ea3ca3-97ab-4c17-8455-e3f010ca6fa1",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C53",
+      "claim": "Transfection of NS2-ADAR1 KO cells with siRNA against NS2 reversed the NS2 phenotype, activated RNase L and promoted cell death by two days post-transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of NS2-ADAR1 KO cells (clone C12) with siRNA against NS2 but not against control GFP reversed the NS2 phenotype, activated RNase L and promoted cell death by two days post-transfection while NS2-WT cells remained alive following siRNA mediated depletion of NS2 (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5b and 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "bc5ee36f-585d-4e35-8540-21f89866995f",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C54",
+      "claim": "NS2-WT cells remained alive following siRNA mediated depletion of NS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of NS2-ADAR1 KO cells (clone C12) with siRNA against NS2 but not against control GFP reversed the NS2 phenotype, activated RNase L and promoted cell death by two days post-transfection while NS2-WT cells remained alive following siRNA mediated depletion of NS2 (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5b and 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "fb867f28-39fb-4c96-8df9-008b82b1e510",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C55",
+      "claim": "ADAR1 p150 isoform is responsible for the editing of RNA that activates MAVS or MDA5 in the mouse system.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of the these cell lines are deficient in expression of the ADAR1 p150 isoform (Figure 2a) previously reported in the mouse system to be responsible for the editing of RNA that activates MAVS or MDA5 (Pestal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pestal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "16b4fb5b-9375-4bae-9499-344593c10c46",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C56",
+      "claim": "Basal levels of 2-5A are minimal in the absence of exogenously added dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because basal levels of 2-5A are minimal in the absence of exogenously added dsRNA, and the consequent RNase L activity very low (Knight et al., 1980) we pre-treated cells with IFN to increase OAS protein levels prior to quantifying 2-5A accumulation and RNA degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Knight et al., 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "6ecab608-4bdc-4a8b-a871-4f5957647066",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C57",
+      "claim": "IFN treatment of ADAR1 KO cells upregulated ISG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed IFN treatment of ADAR1 KO cells upregulated ISG expression and further induced IFN by endogenous dsRNA in cells lacking expression of both isoforms of ADAR1 (p110 and p150) or ADAR1 p150 only (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "14bf74a6-37e3-4632-ba7e-afc08786b0a9",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C58",
+      "claim": "IFN treatment of ADAR1 KO cells further induced IFN by endogenous dsRNA in cells lacking expression of both isoforms of ADAR1 (p110 and p150) or ADAR1 p150 only.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed IFN treatment of ADAR1 KO cells upregulated ISG expression and further induced IFN by endogenous dsRNA in cells lacking expression of both isoforms of ADAR1 (p110 and p150) or ADAR1 p150 only (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "eaa85c82-77e5-4c15-a325-814cbea9f8f5",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C59",
+      "claim": "IFN-induced accumulation of 2-5A was observed in RNASEL-ADAR1 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an indirect FRET based assay (Thakur et al., 2005) we observed IFN-induced accumulation of 2-5A in RNASEL-ADAR1 DKO and MAVS-ADAR1 DKO cells (although the latter not to a statistically significant extent) but not in WT, RNASEL KO or MAVS KO cells (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "3f778b2d-eee2-4411-a335-50b4f8d90692",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C60",
+      "claim": "IFN-induced accumulation of 2-5A was observed in MAVS-ADAR1 DKO cells (although not to a statistically significant extent).",
+      "claim_type": "EXPLICIT",
+      "source": "Using an indirect FRET based assay (Thakur et al., 2005) we observed IFN-induced accumulation of 2-5A in RNASEL-ADAR1 DKO and MAVS-ADAR1 DKO cells (although the latter not to a statistically significant extent) but not in WT, RNASEL KO or MAVS KO cells (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "46d7010a-d0db-4846-800f-d5d06b7863b7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C61",
+      "claim": "IFN-induced accumulation of 2-5A was not observed in WT, RNASEL KO or MAVS KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an indirect FRET based assay (Thakur et al., 2005) we observed IFN-induced accumulation of 2-5A in RNASEL-ADAR1 DKO and MAVS-ADAR1 DKO cells (although the latter not to a statistically significant extent) but not in WT, RNASEL KO or MAVS KO cells (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c90b4b25-525d-401d-a77f-84d6403f7ed8",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C62",
+      "claim": "Highly specific and characteristic RNase L-mediated rRNA degradation products were observed in IFN treated ADAR1 p150 KO, MAVS-ADAR1 p150 DKO, or MAVS-ADAR1 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while rRNA remained intact in WT, RNASEL KO or MAVS KO cells, highly specific and characteristic RNase L-mediated rRNA degradation products (Silverman et al., 1983) identical to the pattern induced by Sindbis infection of WT A549 (Figure 7b) were observed by Bioanaylzer in IFN treated ADAR1 p150 KO, MAVS-ADAR1 p150 DKO, or MAVS-ADAR1 DKO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7b and citation to Silverman et al., 1983.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "84181aa1-d892-4da6-a3c3-2f85dff2780c",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C63",
+      "claim": "rRNA remained intact in WT, RNASEL KO or MAVS KO cells following IFN treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while rRNA remained intact in WT, RNASEL KO or MAVS KO cells, highly specific and characteristic RNase L-mediated rRNA degradation products (Silverman et al., 1983) identical to the pattern induced by Sindbis infection of WT A549 (Figure 7b) were observed by Bioanaylzer in IFN treated ADAR1 p150 KO, MAVS-ADAR1 p150 DKO, or MAVS-ADAR1 DKO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "b56a2ad1-7922-47f5-8104-a7b09cf65c63",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C64",
+      "claim": "2-5A was produced and RNase L activated by endogenous RNA even in the absence of MAVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus 2-5A was produced and RNase L activated by endogenous RNA even in the absence of MAVS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing 2-5A accumulation and rRNA degradation in MAVS-ADAR1 DKO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "12ed1dd2-7c3b-4cb9-bb0e-515151f5728d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C65",
+      "claim": "RNase L strongly and site-specifically cleaves tRNA-His at position 36 located in the anti-codon loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cleaving rRNA, RNase L was recently reported to strongly and site-specifically cleave tRNA-His at position 36 located in the anti-codon loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Donovan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2aedb12d-2a67-4835-9814-71197c18bb35",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C66",
+      "claim": "Site-specific tRNA-His cleavage was readily observed in IFN-treated MAVS-ADAR1 DKO, but not in IFN-treated MAVS KO and RNASEL-ADAR1 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The site-specific tRNA-His cleavage was readily observed using a quantitative RT-PCR assay in IFN-treated MAVS-ADAR1 DKO, but not in IFN-treated cells, which lack RNase L activity in the above assays: MAVS KO andRNASEL-ADAR1 DKO cells (Figure 7c) (Donovan et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7c and citation to Donovan et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "28876de2-9f17-4508-b57a-5fdb45dbbf48",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C67",
+      "claim": "Ablation of ADAR1 was previously shown to be lethal during mouse embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of ADAR1 was previously shown to be lethal during mouse embryogenesis (Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f4d8da86-2588-44c2-b9f0-e51196ea657d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C68",
+      "claim": "Adar1 KO embryos show increased levels of IFN production and ISG expression relative to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Adar1 KO embryos show increased levels of IFN production and ISG expression relative to WT and die by E12.5, implicating ADAR1 editing of dsRNA in regulating cell and animal survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Adar1 KO mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2152ae62-da3a-4fbe-bbc6-ce915ba4e440",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C69",
+      "claim": "Adar1 KO embryos die by E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Adar1 KO embryos show increased levels of IFN production and ISG expression relative to WT and die by E12.5, implicating ADAR1 editing of dsRNA in regulating cell and animal survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Adar1 KO mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "66c41439-57cb-4683-bcf9-cac1111a11a5",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C70",
+      "claim": "Deletion of MDA5 or MAVS overcomes ADAR1 deficiency and allows viability of mouse embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deletion of MDA5 or MAVS, components of the canonical type I IFN production pathway (Figure 1), was shown to overcome the ADAR1 deficiency and allow the viability of mouse embryos, although most of the surviving mice died within the first few days after birth and there were abnormalities in organ development as well as excess IFN signaling (Pestal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pestal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "b0790b77-46c2-414a-bb75-006814772ad2",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C71",
+      "claim": "Most of the surviving Adar1/Mda5 or Adar1/Mavs double KO mice died within the first few days after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deletion of MDA5 or MAVS, components of the canonical type I IFN production pathway (Figure 1), was shown to overcome the ADAR1 deficiency and allow the viability of mouse embryos, although most of the surviving mice died within the first few days after birth and there were abnormalities in organ development as well as excess IFN signaling (Pestal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pestal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "10bb3666-7dac-4166-b419-c01034942bdd",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C72",
+      "claim": "Adar1/Mda5 or Adar1/Mavs double KO mice had abnormalities in organ development as well as excess IFN signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deletion of MDA5 or MAVS, components of the canonical type I IFN production pathway (Figure 1), was shown to overcome the ADAR1 deficiency and allow the viability of mouse embryos, although most of the surviving mice died within the first few days after birth and there were abnormalities in organ development as well as excess IFN signaling (Pestal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pestal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "ac1779fe-b745-4799-8572-58858b80ed39",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C73",
+      "claim": "PKR ablation was unable to rescue Adar1 KO mouse embryo lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "While our finding that MAVS KO rescued the lethality of ADAR1 in a human cell system is consistent with the literature on Adar1 KO in murine systems in vivo and expected, the finding that RNase L ablation rescues the ADAR1 lethality even in the presence of MAVS and normal IFN response (Figure 2; Table 3) is unexpected. It is possible that, in the mouse embryo system, RNase L, activated downstream of MDA5-MAVS also contributes to embryonic lethality. However, rescue of lethality due to Adar1 KO by Mda5 or Mavs KO in the mouse embryo may be due to one or more other MAVS dependent activities. It should be noted that mouse embryo fibroblasts (mef) (Mannion et al., 2014) and HEK293T cells (Pestal et al., 2015) can survive ADAR1 KO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "b7c9b903-1edb-4ffc-8578-7ec4dc197ef6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C74",
+      "claim": "Mouse embryo fibroblasts (mef) can survive ADAR1 KO.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that mouse embryo fibroblasts (mef) (Mannion et al., 2014) and HEK293T cells (Pestal et al., 2015) can survive ADAR1 KO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mannion et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "ee09a11a-a4b8-45cc-ba0e-d205d7743dd0",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C75",
+      "claim": "HEK293T cells can survive ADAR1 KO.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that mouse embryo fibroblasts (mef) (Mannion et al., 2014) and HEK293T cells (Pestal et al., 2015) can survive ADAR1 KO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pestal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2ac354f2-6f6d-49e8-aa18-6515748dcab0",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C76",
+      "claim": "Mouse embryo fibroblasts and HEK293T cells can survive ADAR1 KO likely due to low levels of OAS expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the low levels of OAS expression in these cell types (Banerjee et al., 2014) (and data not shown) and in the case of mefs, also a low level of RNase L (Banerjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Banerjee et al., 2014 and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "336fdc87-5c0e-4c83-bef4-2213629e65b3",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C77",
+      "claim": "Mouse embryo fibroblasts have low levels of RNase L.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the low levels of OAS expression in these cell types (Banerjee et al., 2014) (and data not shown) and in the case of mefs, also a low level of RNase L (Banerjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Banerjee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d9fe1d1e-7dda-47c0-8922-203cb1fd4d79",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C78",
+      "claim": "Ectopic expression of active RNase L, but not mutant inactive RNase L, promotes death of ADAR1 deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that ectopic expression of active RNase L, but not mutant inactive RNase L, promotes death of ADAR1 deficient cells supports the central role of RNase L activation in dsRNA-mediated cell death (Figure 4c, Videos 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4c and Videos 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "6ef8253f-1ed2-47bd-aeab-8f807445633c",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C79",
+      "claim": "Expression of the MHV PDE, NS2, a potent RNase L antagonist, but not its inactive mutant, enables recovery of viable ADAR1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting this conclusion, expression of the MHV PDE, NS2, a potent RNase L antagonist (Zhao et al., 2012), but not its inactive mutant, enables recovery of viable ADAR1 KO cells while knockdown of NS2 in ADAR1 KO cells leads to cell death (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and citation to Zhao et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "aef98331-9e34-41d6-850f-f67f771faf21",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C80",
+      "claim": "Knockdown of NS2 in ADAR1 KO cells leads to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting this conclusion, expression of the MHV PDE, NS2, a potent RNase L antagonist (Zhao et al., 2012), but not its inactive mutant, enables recovery of viable ADAR1 KO cells while knockdown of NS2 in ADAR1 KO cells leads to cell death (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "0a356400-ec1c-4600-827f-bc90a375cd36",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C81",
+      "claim": "RNase L has a predominant role in promoting cell death by dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we propose that RNase L has a predominant role in promoting cell death by dsRNA (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results showing that RNase L ablation provides the strongest protection against dsRNA-induced cell death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "baf6bcb8-7789-41b6-b923-4663b091e8e6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C82",
+      "claim": "RNase L site-specifically cleaves tRNAs and Y-RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown recently that RNase L site-specifically cleaves tRNAs and Y-RNAs, and that depletion of the Y-RNA RNY1 contributes to apoptosis (Donovan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Donovan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "9f37b5aa-cf26-4d2e-a3d3-b8636c0f0b09",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C83",
+      "claim": "Depletion of the Y-RNA RNY1 contributes to apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown recently that RNase L site-specifically cleaves tRNAs and Y-RNAs, and that depletion of the Y-RNA RNY1 contributes to apoptosis (Donovan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Donovan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "dca6a908-e261-4bff-a447-9ceeafbea4d6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C84",
+      "claim": "Deletion of PKR did not allow recovery of ADAR1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to RNase L, and consistent with mouse embryo studies (Wang et al., 2004), deletion of PKR did not allow recovery of ADAR1 KO cells and single PKR KO did not change the kinetics of pIC-induced death in cells that contained ADAR1 (Table 3, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 3, and citation to Wang et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "22c2133b-c3d7-41ee-8d74-ed1f38a66b74",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C85",
+      "claim": "Single PKR KO did not change the kinetics of pIC-induced death in cells that contained ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to RNase L, and consistent with mouse embryo studies (Wang et al., 2004), deletion of PKR did not allow recovery of ADAR1 KO cells and single PKR KO did not change the kinetics of pIC-induced death in cells that contained ADAR1 (Table 3, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 3 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "e3dad898-5866-44f1-89f7-24acb890bf3a",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C86",
+      "claim": "PKR does not substantially contribute to ADAR1 KO cell lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, PKR (a dsRNA-activated protein kinase that inhibits translation) does not substantially contribute to ADAR1 KO cell lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that PKR KO does not rescue ADAR1 deficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "ebe432b1-d5ab-4991-b9cf-c197c8dab11b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C87",
+      "claim": "PKR was activated by pIC in WT A549 cells resulting in phosphorylation of eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "[PKR was activated by pIC in WT A549 cells resulting in phosphorylation of eIF2\u03b1, whereas pIC treatment of PKR KO cells did not result in phosphorylated eIF2\u03b1, (Figure 2d).]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8020ad14-8451-4317-82a9-6efead71a1b9",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C88",
+      "claim": "pIC treatment of PKR KO cells did not result in phosphorylated eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "[PKR was activated by pIC in WT A549 cells resulting in phosphorylation of eIF2\u03b1, whereas pIC treatment of PKR KO cells did not result in phosphorylated eIF2\u03b1, (Figure 2d).]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "6d0b5090-e673-4555-93c9-3bcd5a70c5ca",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C89",
+      "claim": "IFN treatment of ADAR1 deficient cells did not induce PKR expression, in contrast to ADAR1 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is noted that IFN treatment of ADAR1 deficient cells did not induce PKR expression, in contrast to ADAR1 expressing cells (Figure 2a, Figure 5a, Figure 2\u2014source data 2\u2013source data1; Figure 5\u2014source data 5\u2013source data1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a and Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "2acb2774-c0f7-4d69-b807-4727f5755df7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C90",
+      "claim": "Endogenous cellular dsRNA activates OAS leading to RNase L activity in MAVS-ADAR1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous cellular dsRNA activates OAS leading to RNase L activity in MAVS-ADAR1 KO cells as evidenced by rRNA degradation, site-specific tRNA-His cleavage following IFN stimulation, and accumulation of 2-5A in RNASEL KO cells, even in the absence of exogenous dsRNA (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "1c63804c-72f9-4243-8e44-51acda6a45fa",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C91",
+      "claim": "dsRNA is the only well-established activator of OAS enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that dsRNA is the only well-established activator of OAS enzymatic activity [ Silverman and Weiss, 2014 and references therein].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silverman and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "1cb8b05a-5c8b-4615-a8f9-2b6f739e3269",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C92",
+      "claim": "IFN treatment of RNASEL-ADAR1 DKO cells produces enhanced expression of IFN-\u03b2 and -\u03bb, and ISGs.",
+      "claim_type": "EXPLICIT",
+      "source": "While IFN treatment of RNASEL-ADAR1 DKO cells produces enhanced expression of IFN-\u03b2 and -\u03bb, and ISGs, these effects of IFN were reduced in MAVS-ADAR1 DKO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "23c66059-ab74-457a-aacf-cb4298349a7b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C93",
+      "claim": "The effects of IFN on expression of IFN-\u03b2 and -\u03bb, and ISGs were reduced in MAVS-ADAR1 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While IFN treatment of RNASEL-ADAR1 DKO cells produces enhanced expression of IFN-\u03b2 and -\u03bb, and ISGs, these effects of IFN were reduced in MAVS-ADAR1 DKO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "b711d928-c685-4fcd-9230-2f5376c25a08",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C94",
+      "claim": "MAVS is likely to augment RNase L activation through the upregulation of IFNs and OASs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that MAVS is likely to augment RNase L activation through the upregulation of IFNs and OASs (which are ISGs), effects that do not require exogenous dsRNA when ADAR1 is deficient (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing enhanced ISG expression in RNASEL-ADAR1 DKO vs MAVS-ADAR1 DKO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "4ace11fc-9ea9-4488-a0c5-037ff084f26a",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C95",
+      "claim": "The accumulation of 2-5A was greater in MAVS-ADAR1 DKO cells compared to MAVS (although not statistically significant).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although not statistically significant, the accumulation of 2-5A was greater in MAVS-ADAR1 DKO cells compared to MAVS (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "3c8249d0-fe7a-4af2-9655-8cdaa750acde",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C96",
+      "claim": "Deletion of MAVS promotes the viability of A549 cells engineered to lack ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of MAVS promotes the viability of A549 cells engineered to lack ADAR1 and upon pIC treatment, the MAVS KO cells exhibit a slower rate of cell death than WT A549 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "4fbcff33-2800-4ee0-8678-e2b1bc773c06",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C97",
+      "claim": "Upon pIC treatment, MAVS KO cells exhibit a slower rate of cell death than WT A549.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of MAVS promotes the viability of A549 cells engineered to lack ADAR1 and upon pIC treatment, the MAVS KO cells exhibit a slower rate of cell death than WT A549 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "0f932be5-eaa5-48ff-b6a3-100d0d120980",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C98",
+      "claim": "MAVS-ADAR1 DKO cells die faster than RNASEL-ADAR1 DKO cells most likely because RNase L can be activated in the former cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, MAVS-ADAR1 DKO cells die faster than RNASEL-ADAR1 DKO cells most likely because RNase L can be activated in the former cells (Figure 4a; Figure 7b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing RNase L activity in MAVS-ADAR1 DKO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "99b91d64-6b72-49c8-aba6-60fac63002e6",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C99",
+      "claim": "RNase L can be activated in the absence of MAVS expression in MAVS-ADAR1 DKO cells by pIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the MDA5/MAVS pathway plays a central role in IFN induction and signaling and can upregulate both OAS and PKR (Figure 1), these data indicate that RNase L can be activated in the absence of MAVS expression in MAVS-ADAR1 DKO cells by pIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing RNase L activation in MAVS-ADAR1 DKO cells treated with pIC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "029c62cd-9f54-432b-985e-0e0ef40f251b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C100",
+      "claim": "Activation of RNase L during virus infections does not depend on IFN induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with our previous findings that activation of RNase L during virus infections does not depend on IFN induction (Birdwell et al., 2016; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Birdwell et al., 2016; Li et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "0e25fd9d-5df9-4008-9c0c-caacd399ce3c",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C101",
+      "claim": "RNase L-induced cell death could potentially contribute to symptoms of Aicardi-Gouti\u00e9res syndrome in cases with mutation of ADAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since RNase L is activated in the absence of ADAR1 editing contributing to cell death, RNase L-induced cell death could potentially contribute to symptoms of the neurodegenerative and inflammatory disease Aicardi-Gouti\u00e9res syndrome (AGS) in cases with mutation of ADAR1 (Rice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental findings and citation to Rice et al., 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "3f698e59-dd8e-4ff0-abf3-91fb3f8735f5",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C102",
+      "claim": "Mutations of genes responsible for AGS, such as RNase H2, led to self-DNA-mediated activation of cGAS in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models, mutations of genes responsible for AGS, such as RNase H2 (Pokatayev et al., 2016) and Trex1 (Gray et al., 2015), led to self-DNA-mediated activation of cGAS, a protein functionally and structurally similar to OASs (Hornung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pokatayev et al., 2016; Gray et al., 2015; Hornung et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f16c2e7a-b5f1-4b42-a784-e322ddbaf32d",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C103",
+      "claim": "Mutations of Trex1 led to self-DNA-mediated activation of cGAS in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models, mutations of genes responsible for AGS, such as RNase H2 (Pokatayev et al., 2016) and Trex1 (Gray et al., 2015), led to self-DNA-mediated activation of cGAS, a protein functionally and structurally similar to OASs (Hornung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gray et al., 2015; Hornung et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f213b500-83e1-4e8a-b391-a69e5c69ce26",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C104",
+      "claim": "cGAS is a protein functionally and structurally similar to OASs.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models, mutations of genes responsible for AGS, such as RNase H2 (Pokatayev et al., 2016) and Trex1 (Gray et al., 2015), led to self-DNA-mediated activation of cGAS, a protein functionally and structurally similar to OASs (Hornung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hornung et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "4cb44654-ae0b-4563-b012-a3d7a48e8f9b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C105",
+      "claim": "Mutation of ADAR1 leads to self-dsRNA activation of one or more OAS isoform resulting in RNase L activity and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that mutation of ADAR1 leads to self-dsRNA activation of one or more OAS isoform resulting in RNase L activity and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing OAS activation and RNase L activity in ADAR1 deficient cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f99295e6-c68e-4335-8a5a-5efa9f34fca1",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C106",
+      "claim": "Mutations affecting homologous nucleic acid sensors in the IFN system, cGAS and OAS, both of which produce unusual 2'\u22125' internucleotide linkages, lead to AGS although through different signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that mutations affecting homologous nucleic acid sensors in the IFN system, cGAS and OAS, both of which produce unusual 2'\u22125' internucleotide linkages, lead to AGS although through different signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental findings and comparison with other AGS-causing mutations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "cc60f4dc-f9f0-4bc6-b688-e92cc50ae568",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C107",
+      "claim": "Presence of RNase L contributed to secretion of the pro-inflammatory cytokine IL-1\u03b2 in virus-infected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo evidence for the pro-inflammatory role of RNase L was obtained in virus-infected mice where presence of RNase L contributed to secretion of the pro-inflammatory cytokine IL-1\u03b2 (Chakrabarti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chakrabarti et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "7ef54e28-e7c9-4d18-9c46-8ef2a54119e4",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "claim_id": "C108",
+      "claim": "An RNase L inhibitor drug could potentially reduce tissue damage and alleviate inflammation in some circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an RNase L inhibitor drug could potentially reduce tissue damage and alleviate inflammation in some circumstances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the findings about RNase L's role in cell death and inflammation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f5e0faaf-11d2-4679-809a-5df11210df6b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ADAR1 isoforms (p110 and p150) and ADAR2 are adenosine deaminases that convert adenosine to inosine in dsRNA, destabilizing dsRNA structure and suppressing cellular responses to dsRNA including type I IFN production. The p150 isoform is IFN-inducible and localized to both cytoplasm and nucleus, while p110 is constitutively expressed and primarily nuclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established knowledge about ADAR1 function, isoforms, and localization, supported by multiple citations to the literature (George et al., 2014; Tomaselli et al., 2015; Patterson and Samuel, 1995). The biochemical mechanism and subcellular distribution are consistent with current understanding of ADAR1 biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "8732c8e1-e0b1-458a-999f-123466a628ea",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutations of ADAR1 result in Aicardi-Gouti\u00e8res syndrome, a severe neurodevelopmental and inflammatory disease of children.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by citation to Rice et al., 2012, and represents established clinical knowledge linking ADAR1 mutations to this specific disease phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adar1 mutations are embryonic lethal in mice (death by E12.5), with increased IFN production and ISG expression. This lethality is rescued by deletion of MDA5 or MAVS, though most surviving double knockout mice die within days after birth with organ abnormalities and excess IFN signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by multiple citations to prior mouse studies (Pestal et al., 2015; Liddicoat et al., 2015; Mannion et al., 2014). The phenotypic descriptions are consistent across studies and represent established findings in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "fcaf390f-b40c-49cd-a39f-8449484b403b",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ADAR1 can be either pro-viral or anti-viral depending on virus-host context. Antiviral effects result from hyper-editing and mutagenesis of viral RNAs, while proviral effects result from editing of viral RNAs and/or destabilizing dsRNA to suppress MDA5/MAVS signaling to type I IFN genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to established literature (George et al., 2014; Samuel, 2011; Wong and Lazinski, 2002) and represent well-documented dual roles of ADAR1 in viral infections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ADAR1 antagonizes PKR by altering dsRNA structure, preventing PKR activation and eIF2\u03b1 phosphorylation. However, PKR ablation does not rescue Adar1 KO mouse embryo lethality or allow recovery of ADAR1 KO A549 cells, and PKR KO does not change kinetics of pIC-induced death in ADAR1-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The antagonism of PKR by ADAR1 is supported by citations (Samuel, 2011; G\u00e9linas et al., 2011; Wang et al., 2004). The lack of rescue by PKR deletion is supported by experimental data (Table 3, Figure 3) and citation to Wang et al., 2004, demonstrating that PKR does not substantially contribute to ADAR1 KO lethality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "6cc39220-2af5-4576-b461-9a39ba9d47e5",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "OAS isoforms (OAS1, OAS2, OAS3) are IFN-inducible enzymes that sense dsRNA and produce 2',5'-oligoadenylates (2-5A), which activate RNase L to degrade viral and host single-stranded RNAs leading to apoptosis and inhibition of virus growth. dsRNA is the only well-established activator of OAS enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge about the OAS/RNase L pathway, supported by citation to Silverman and Weiss, 2014, a comprehensive review of this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "a647b08d-736d-435f-9206-690124edf887",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ADAR1 single gene KO A549 cells are not viable. However, ADAR1 deficient cells can be rescued by knockout of either RNASEL or MAVS, or by expression of the viral RNase L antagonist NS2. Screening of >40 clones from WT or PKR KO A549 cells yielded no ADAR1 KO cells, but RNASEL-ADAR1 and MAVS-ADAR1 double KO cells were successfully recovered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by experimental data shown in Table 3, Figure 2, and Figure 5. The inability to recover ADAR1 single KO cells and successful recovery of double KO cells provides strong evidence for the rescue phenotype. The use of appropriate controls (PKR KO) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ablation of RNase L activity promotes survival of ADAR1 deficient cells even in the presence of MDA5 and MAVS, suggesting that the RNase L system is the primary sensor pathway for endogenous dsRNA that leads to cell death. RNase L is the major pathway leading to cell death in the absence of ADAR1 editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This major conclusion is supported by multiple lines of evidence: (1) RNASEL-ADAR1 DKO cells are viable while maintaining MAVS expression (Table 3, Figure 2, Figure 4); (2) RNASEL-ADAR1 DKO cells are almost completely protected from pIC-induced death while MAVS-ADAR1 DKO cells die more slowly (Figure 4a); (3) The differential protection demonstrates RNase L's predominant role even when MAVS-mediated IFN signaling is intact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cells lacking RNase L expression are resistant to pIC-induced cell death at concentrations up to 5 \u00b5g/ml, while WT, PKR KO, and MAVS KO cells (all expressing RNase L) die at 0.5 \u00b5g/ml pIC by 24-30 hr. RNASEL KO cells show accelerated wound healing and this protective effect extends to human mammary epithelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by experimental data in Figure 3a-e, demonstrating consistent protection from dsRNA-induced death across multiple assays (crystal violet staining, IncuCyte live-cell imaging, wound healing) and cell types (A549 and HME cells). The dose-response and kinetic data are clearly presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MAVS-ADAR1 DKO cells die more slowly than WT cells but faster than RNASEL-ADAR1 DKO cells following pIC treatment. Deletion of MAVS promotes viability of ADAR1-deficient A549 cells, and MAVS KO cells exhibit slower death than WT upon pIC treatment. MAVS-ADAR1 DKO cells die faster than RNASEL-ADAR1 DKO cells because RNase L can still be activated in the former.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by experimental data in Figure 3, Figure 4a, and Table 3. The differential kinetics of cell death between MAVS-ADAR1 DKO and RNASEL-ADAR1 DKO cells provide evidence that RNase L activation contributes to death even in the absence of MAVS, though MAVS augments the response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "80a27bca-510c-436a-97b2-571bc3e89c78",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ectopic expression of WT RNase L in RNASEL-ADAR1 DKO cells causes massive cell death, while expression of inactive mutant RNase L (R667A) does not. Expression of either WT or mutant RNase L has no effect on RNASEL KO cells with intact ADAR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is strongly supported by experimental data in Figure 4b-c and Videos 1-4. The use of an inactive mutant as a control is appropriate and demonstrates that RNase L enzymatic activity is required for the lethal phenotype. The lack of effect in cells with intact ADAR1 provides an important control showing specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Murine coronavirus NS2 protein has 2',5'-phosphodiesterase activity that cleaves 2-5A and antagonizes RNase L. ADAR1 KO cells expressing functional NS2 (but not inactive mutant NS2H126R) can be recovered. siRNA knockdown of NS2 in NS2-ADAR1 KO cells activates RNase L and promotes cell death, while NS2-WT cells survive NS2 depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by experimental data in Table 3, Figure 5a-c, and Figure 5\u2014figure supplement 1. The use of an inactive mutant control (NS2H126R) and the reversibility of the phenotype by siRNA knockdown provide strong evidence that NS2-mediated antagonism of RNase L rescues ADAR1 KO cells. The citation to Zhao et al., 2012 supports the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "d7653fe1-150f-494c-b745-97b16544e4e4",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ADAR1 p150 isoform is responsible for editing RNA that activates MAVS or MDA5 in the mouse system. Basal 2-5A levels are minimal without exogenous dsRNA. IFN treatment of ADAR1 KO cells (lacking both p110/p150 or p150 only) upregulated ISG expression and further induced IFN by endogenous dsRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The role of p150 is supported by citation to Pestal et al., 2015. The basal 2-5A levels are supported by citation to Knight et al., 1980. The IFN-induced ISG expression in ADAR1 KO cells is supported by experimental data in Figure 6, demonstrating that endogenous dsRNA can activate innate immune responses in the absence of ADAR1 editing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "fa6c15f5-a769-48a4-adcc-242862da7662",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IFN treatment induces accumulation of 2-5A in RNASEL-ADAR1 DKO cells (and MAVS-ADAR1 DKO cells, though not statistically significant), but not in WT, RNASEL KO, or MAVS KO cells. Characteristic RNase L-mediated rRNA degradation products are observed in IFN-treated ADAR1 p150 KO, MAVS-ADAR1 p150 DKO, and MAVS-ADAR1 DKO cells, but rRNA remains intact in WT, RNASEL KO, or MAVS KO cells. This demonstrates that endogenous cellular dsRNA activates OAS leading to RNase L activity even in the absence of exogenous dsRNA and MAVS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are strongly supported by experimental data in Figure 7a-b using two independent assays (FRET-based 2-5A quantification and Bioanalyzer rRNA analysis). The observation of 2-5A accumulation and characteristic RNase L-mediated rRNA cleavage patterns in ADAR1-deficient cells (including MAVS-ADAR1 DKO) provides direct biochemical evidence for OAS/RNase L activation by endogenous dsRNA. However, the lack of statistical significance for 2-5A accumulation in MAVS-ADAR1 DKO cells (C60) is a limitation that should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "4928e10d-3e24-431d-9823-1ba24ef9b0a0",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RNase L strongly and site-specifically cleaves tRNA-His at position 36 in the anti-codon loop, and also cleaves Y-RNAs. Site-specific tRNA-His cleavage was observed in IFN-treated MAVS-ADAR1 DKO cells but not in MAVS KO or RNASEL-ADAR1 DKO cells. Depletion of Y-RNA RNY1 contributes to apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tRNA-His cleavage specificity and Y-RNA cleavage are supported by citation to Donovan et al., 2016. The experimental observation of tRNA-His cleavage in MAVS-ADAR1 DKO cells is supported by data in Figure 7c using quantitative RT-PCR. The appropriate negative controls (MAVS KO and RNASEL-ADAR1 DKO) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "c84edba0-6925-4642-a38e-af2a762c6860",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PKR is activated by pIC in WT A549 cells resulting in eIF2\u03b1 phosphorylation, whereas pIC treatment of PKR KO cells does not result in phosphorylated eIF2\u03b1. However, IFN treatment of ADAR1 deficient cells does not induce PKR expression, in contrast to ADAR1 expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "PKR activation and eIF2\u03b1 phosphorylation are supported by experimental data in Figure 2d. The lack of PKR induction in ADAR1-deficient cells is supported by data in Figure 2a and Figure 5a. This unexpected observation is noted by the authors but not explained, representing an interesting finding that warrants further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "dfecc97a-465c-4640-b56c-2acf3aa13d9f",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "IFN treatment of RNASEL-ADAR1 DKO cells produces enhanced expression of IFN-\u03b2, IFN-\u03bb, and ISGs, while these effects are reduced in MAVS-ADAR1 DKO cells. MAVS likely augments RNase L activation through upregulation of IFNs and OASs (ISGs), effects that do not require exogenous dsRNA when ADAR1 is deficient. The accumulation of 2-5A was greater in MAVS-ADAR1 DKO cells compared to MAVS KO (although not statistically significant).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The differential ISG expression between RNASEL-ADAR1 DKO and MAVS-ADAR1 DKO cells is supported by data in Figure 6. However, the claim that MAVS augments RNase L activation is inferred rather than directly demonstrated. The 2-5A accumulation data (Figure 7a) shows a trend but lacks statistical significance (C95), weakening this conclusion. Additional experiments directly measuring OAS protein levels or RNase L activity in the presence/absence of MAVS would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "32c2f75c-7dda-4bd6-af9b-ee417ac2ab7e",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RNase L can be activated in the absence of MAVS expression in MAVS-ADAR1 DKO cells by pIC. This is consistent with previous findings that activation of RNase L during virus infections does not depend on IFN induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The activation of RNase L in MAVS-ADAR1 DKO cells is supported by experimental data showing RNase L activity (Figure 7b-c) and cell death kinetics (Figure 4a). The consistency with prior findings is supported by citations to Birdwell et al., 2016 and Li et al., 2016. This demonstrates that RNase L can function independently of the MDA5/MAVS/IFN axis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "524e8502-19e8-471b-bb33-4ec7b5dfeb66",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Mouse embryo fibroblasts (MEFs) and HEK293T cells can survive ADAR1 KO, likely due to low levels of OAS expression in these cell types. MEFs also have low levels of RNase L.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The survival of MEFs and HEK293T cells with ADAR1 KO is supported by citations to Mannion et al., 2014 and Pestal et al., 2015. The explanation regarding low OAS and RNase L levels is supported by citation to Banerjee et al., 2014 and inference from the data. This provides important context for understanding cell-type-specific differences in ADAR1 requirement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "94567f95-30aa-412d-b2da-3e91273619b7",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "RNase L impairs cell migration in monolayer scratch assays and promotes apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to prior work (Banerjee et al., 2015; Rath et al., 2015 for migration; Zhou et al., 1997 for apoptosis) and are consistent with the wound healing data presented in Figure 3d.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    },
+    {
+      "id": "4f33e183-d2fb-4a7b-957d-cd886308658a",
+      "content_id": "f1ab8157-7b2c-418e-8c69-3046d22e0b80",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "RNase L-induced cell death could potentially contribute to symptoms of Aicardi-Gouti\u00e8res syndrome (AGS) in cases with ADAR1 mutation. Similar to how mutations in RNase H2 and Trex1 lead to AGS through self-DNA-mediated activation of cGAS (a protein functionally and structurally similar to OASs), mutations affecting ADAR1 lead to self-dsRNA activation of OAS resulting in RNase L activity and cell death. RNase L contributes to secretion of pro-inflammatory cytokine IL-1\u03b2 in virus-infected mice. An RNase L inhibitor drug could potentially reduce tissue damage and alleviate inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are largely speculative, extending the experimental findings to potential clinical implications. While the experimental data demonstrate RNase L activation in ADAR1-deficient cells, the connection to AGS pathology is inferred rather than demonstrated. The comparison to cGAS/STING pathway mutations (supported by citations to Pokatayev et al., 2016; Gray et al., 2015; Hornung et al., 2014) is conceptually interesting but requires validation in relevant disease models. The pro-inflammatory role of RNase L is supported by citation to Chakrabarti et al., 2015, but the therapeutic speculation (C108) is not supported by experimental data. These hypotheses would require testing in AGS patient cells or animal models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:37:58.169548Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c201f4d3-d8e4-4808-97f5-abf825330093",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "317fab7e-b6f4-4e76-b8ca-af8989d578f7",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "d60912c2-f35e-4f4c-b3ad-018675605b08",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "30a14cc6-0d19-493c-a6f0-52a39c6e250d",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "c48c5d99-f011-4e46-a0b1-8f452530d713",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "d4143bed-9193-4a8a-abb3-929ee8b90c06",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "8d62c9c1-8b82-4ed8-8824-d95d95959763",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "8a51f4c7-7097-42d8-853c-4354cae9e97b",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "a18d3e62-ce4a-4f91-a6d0-afc6078df934",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "be7b51e9-b6d7-464b-8feb-eda4aef0f775",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "096fff6c-055a-4426-a9c3-63acaf8fa3df",
+      "result_id": "f5e0faaf-11d2-4679-809a-5df11210df6b"
+    },
+    {
+      "claim_id": "5ae189b8-290e-4d80-8a82-61e8b9c59dcb",
+      "result_id": "8732c8e1-e0b1-458a-999f-123466a628ea"
+    },
+    {
+      "claim_id": "848e7f73-7393-4a29-a123-683f7aab22f4",
+      "result_id": "8732c8e1-e0b1-458a-999f-123466a628ea"
+    },
+    {
+      "claim_id": "2c87d318-f838-462b-97af-066e50903e6f",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "059835eb-9d48-4f74-93cb-c72aefd44de1",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "284e60cd-cee1-4912-9cad-7000a58ca5f7",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "28876de2-9f17-4508-b57a-5fdb45dbbf48",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "f4d8da86-2588-44c2-b9f0-e51196ea657d",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "2152ae62-da3a-4fbe-bbc6-ce915ba4e440",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "66c41439-57cb-4683-bcf9-cac1111a11a5",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "b0790b77-46c2-414a-bb75-006814772ad2",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "10bb3666-7dac-4166-b419-c01034942bdd",
+      "result_id": "cf71eca3-aa6b-4931-ad30-4e36f5e558f7"
+    },
+    {
+      "claim_id": "be7af770-43b9-410c-832c-91b8e55640eb",
+      "result_id": "fcaf390f-b40c-49cd-a39f-8449484b403b"
+    },
+    {
+      "claim_id": "0af0c198-7552-4c6e-8708-5c6e652f031e",
+      "result_id": "fcaf390f-b40c-49cd-a39f-8449484b403b"
+    },
+    {
+      "claim_id": "80018d09-3538-4a8b-8d80-35f241c56ce4",
+      "result_id": "fcaf390f-b40c-49cd-a39f-8449484b403b"
+    },
+    {
+      "claim_id": "d76fcbac-fcf3-425b-8864-fd7730af4590",
+      "result_id": "fcaf390f-b40c-49cd-a39f-8449484b403b"
+    },
+    {
+      "claim_id": "ad8005bd-7310-45d1-b166-177398f26695",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "8e76b272-dbd7-43f9-8118-cc2d3053450d",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "ac1779fe-b745-4799-8572-58858b80ed39",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "dca6a908-e261-4bff-a447-9ceeafbea4d6",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "22c2133b-c3d7-41ee-8d74-ed1f38a66b74",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "e3dad898-5866-44f1-89f7-24acb890bf3a",
+      "result_id": "9d23bf96-4f8c-4b2d-b137-d626a870ed06"
+    },
+    {
+      "claim_id": "9eba0707-0ce7-40e1-86a8-f49a0248977d",
+      "result_id": "6cc39220-2af5-4576-b461-9a39ba9d47e5"
+    },
+    {
+      "claim_id": "550d0ba5-95ce-4c96-af13-6fdd73b9a9f3",
+      "result_id": "6cc39220-2af5-4576-b461-9a39ba9d47e5"
+    },
+    {
+      "claim_id": "1c63804c-72f9-4243-8e44-51acda6a45fa",
+      "result_id": "6cc39220-2af5-4576-b461-9a39ba9d47e5"
+    },
+    {
+      "claim_id": "d9f436b7-005e-4626-a51a-3c0e52dd0a25",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "1c5c711e-ab55-4001-a0cb-cd58c941284a",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "19a687b4-8368-452f-95f0-13c81c43e8c7",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "5c26e762-5df2-452c-bef8-84ab47a27299",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "f2605f7d-574f-420f-b2bd-a1f6097688b3",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "84b559e5-37ec-4f18-8358-90ab233e7dec",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "b8291f2b-8be2-4488-8d41-c6873915043f",
+      "result_id": "a647b08d-736d-435f-9206-690124edf887"
+    },
+    {
+      "claim_id": "96f728ce-2831-4e14-ac5d-1a99f1b99cbf",
+      "result_id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca"
+    },
+    {
+      "claim_id": "e777d4f7-138b-43df-9d0a-d68715bbc337",
+      "result_id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca"
+    },
+    {
+      "claim_id": "53d82cc3-3ea6-4be7-898f-64c8faf7b043",
+      "result_id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca"
+    },
+    {
+      "claim_id": "81f219f6-ab38-4e73-9e8a-184ff91da4ca",
+      "result_id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca"
+    },
+    {
+      "claim_id": "0a356400-ec1c-4600-827f-bc90a375cd36",
+      "result_id": "3b432313-8e4d-40d5-8cc7-e438f5d9b9ca"
+    },
+    {
+      "claim_id": "ebcb27f1-a735-4f9a-94e1-8b4f4ad25727",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "bd3c594b-ea13-4991-9cea-bc0712102ca6",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "44f2d412-8ac6-4409-9a70-40cbb98ef73f",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "fffea68c-cdec-4460-a1c2-79c06e3d5740",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "c56603e6-7977-4bc6-bff0-7595da9ae97b",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "40bbafca-b788-4830-86ce-e0abc75799d6",
+      "result_id": "0b678b79-0b72-44b5-a725-1d2f0d2b1785"
+    },
+    {
+      "claim_id": "e3c4afea-f802-4feb-bc0f-907b5e366a8b",
+      "result_id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418"
+    },
+    {
+      "claim_id": "1001015e-9ec1-4dfd-9727-5c3ebe081ef9",
+      "result_id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418"
+    },
+    {
+      "claim_id": "3c8249d0-fe7a-4af2-9655-8cdaa750acde",
+      "result_id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418"
+    },
+    {
+      "claim_id": "4fbcff33-2800-4ee0-8678-e2b1bc773c06",
+      "result_id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418"
+    },
+    {
+      "claim_id": "0f932be5-eaa5-48ff-b6a3-100d0d120980",
+      "result_id": "c1ef076a-d2f2-4d3b-bb7a-789747cf3418"
+    },
+    {
+      "claim_id": "5d1abe18-7c99-40fc-8d05-0cd57bd9d89e",
+      "result_id": "80a27bca-510c-436a-97b2-571bc3e89c78"
+    },
+    {
+      "claim_id": "c5261d1c-aa08-4f59-b710-8b4538fe882c",
+      "result_id": "80a27bca-510c-436a-97b2-571bc3e89c78"
+    },
+    {
+      "claim_id": "2d5e1950-c6b0-4e8a-804f-19e17023c299",
+      "result_id": "80a27bca-510c-436a-97b2-571bc3e89c78"
+    },
+    {
+      "claim_id": "d9fe1d1e-7dda-47c0-8922-203cb1fd4d79",
+      "result_id": "80a27bca-510c-436a-97b2-571bc3e89c78"
+    },
+    {
+      "claim_id": "9c973da7-e994-419d-8082-71c1bfd4aca3",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "545e03ae-a395-4c14-a3d3-7cf58ce37066",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "8bd37653-4f79-4b44-845c-a602eff5f57a",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "dd07c332-c094-460c-8432-d1b717faedd9",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "77ea3ca3-97ab-4c17-8455-e3f010ca6fa1",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "bc5ee36f-585d-4e35-8540-21f89866995f",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "6ef8253f-1ed2-47bd-aeab-8f807445633c",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "aef98331-9e34-41d6-850f-f67f771faf21",
+      "result_id": "f72e655b-4001-4dd4-a957-47b8ef6b32d2"
+    },
+    {
+      "claim_id": "fb867f28-39fb-4c96-8df9-008b82b1e510",
+      "result_id": "d7653fe1-150f-494c-b745-97b16544e4e4"
+    },
+    {
+      "claim_id": "16b4fb5b-9375-4bae-9499-344593c10c46",
+      "result_id": "d7653fe1-150f-494c-b745-97b16544e4e4"
+    },
+    {
+      "claim_id": "6ecab608-4bdc-4a8b-a871-4f5957647066",
+      "result_id": "d7653fe1-150f-494c-b745-97b16544e4e4"
+    },
+    {
+      "claim_id": "14bf74a6-37e3-4632-ba7e-afc08786b0a9",
+      "result_id": "d7653fe1-150f-494c-b745-97b16544e4e4"
+    },
+    {
+      "claim_id": "eaa85c82-77e5-4c15-a325-814cbea9f8f5",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "3f778b2d-eee2-4411-a335-50b4f8d90692",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "46d7010a-d0db-4846-800f-d5d06b7863b7",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "c90b4b25-525d-401d-a77f-84d6403f7ed8",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "84181aa1-d892-4da6-a3c3-2f85dff2780c",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "b56a2ad1-7922-47f5-8104-a7b09cf65c63",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "2acb2774-c0f7-4d69-b807-4727f5755df7",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "4cb44654-ae0b-4563-b012-a3d7a48e8f9b",
+      "result_id": "fa6c15f5-a769-48a4-adcc-242862da7662"
+    },
+    {
+      "claim_id": "12ed1dd2-7c3b-4cb9-bb0e-515151f5728d",
+      "result_id": "4928e10d-3e24-431d-9823-1ba24ef9b0a0"
+    },
+    {
+      "claim_id": "2aedb12d-2a67-4835-9814-71197c18bb35",
+      "result_id": "4928e10d-3e24-431d-9823-1ba24ef9b0a0"
+    },
+    {
+      "claim_id": "baf6bcb8-7789-41b6-b923-4663b091e8e6",
+      "result_id": "4928e10d-3e24-431d-9823-1ba24ef9b0a0"
+    },
+    {
+      "claim_id": "9f37b5aa-cf26-4d2e-a3d3-b8636c0f0b09",
+      "result_id": "4928e10d-3e24-431d-9823-1ba24ef9b0a0"
+    },
+    {
+      "claim_id": "ebe432b1-d5ab-4991-b9cf-c197c8dab11b",
+      "result_id": "c84edba0-6925-4642-a38e-af2a762c6860"
+    },
+    {
+      "claim_id": "8020ad14-8451-4317-82a9-6efead71a1b9",
+      "result_id": "c84edba0-6925-4642-a38e-af2a762c6860"
+    },
+    {
+      "claim_id": "6d0b5090-e673-4555-93c9-3bcd5a70c5ca",
+      "result_id": "c84edba0-6925-4642-a38e-af2a762c6860"
+    },
+    {
+      "claim_id": "1cb8b05a-5c8b-4615-a8f9-2b6f739e3269",
+      "result_id": "dfecc97a-465c-4640-b56c-2acf3aa13d9f"
+    },
+    {
+      "claim_id": "23c66059-ab74-457a-aacf-cb4298349a7b",
+      "result_id": "dfecc97a-465c-4640-b56c-2acf3aa13d9f"
+    },
+    {
+      "claim_id": "b711d928-c685-4fcd-9230-2f5376c25a08",
+      "result_id": "dfecc97a-465c-4640-b56c-2acf3aa13d9f"
+    },
+    {
+      "claim_id": "4ace11fc-9ea9-4488-a0c5-037ff084f26a",
+      "result_id": "dfecc97a-465c-4640-b56c-2acf3aa13d9f"
+    },
+    {
+      "claim_id": "99b91d64-6b72-49c8-aba6-60fac63002e6",
+      "result_id": "32c2f75c-7dda-4bd6-af9b-ee417ac2ab7e"
+    },
+    {
+      "claim_id": "029c62cd-9f54-432b-985e-0e0ef40f251b",
+      "result_id": "32c2f75c-7dda-4bd6-af9b-ee417ac2ab7e"
+    },
+    {
+      "claim_id": "b7c9b903-1edb-4ffc-8578-7ec4dc197ef6",
+      "result_id": "524e8502-19e8-471b-bb33-4ec7b5dfeb66"
+    },
+    {
+      "claim_id": "ee09a11a-a4b8-45cc-ba0e-d205d7743dd0",
+      "result_id": "524e8502-19e8-471b-bb33-4ec7b5dfeb66"
+    },
+    {
+      "claim_id": "2ac354f2-6f6d-49e8-aa18-6515748dcab0",
+      "result_id": "524e8502-19e8-471b-bb33-4ec7b5dfeb66"
+    },
+    {
+      "claim_id": "336fdc87-5c0e-4c83-bef4-2213629e65b3",
+      "result_id": "524e8502-19e8-471b-bb33-4ec7b5dfeb66"
+    },
+    {
+      "claim_id": "43682041-4f60-435c-a310-756753d266b1",
+      "result_id": "94567f95-30aa-412d-b2da-3e91273619b7"
+    },
+    {
+      "claim_id": "87b04c60-b5fc-426a-aa51-1f4ddab9df5c",
+      "result_id": "94567f95-30aa-412d-b2da-3e91273619b7"
+    },
+    {
+      "claim_id": "0e25fd9d-5df9-4008-9c0c-caacd399ce3c",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "3f698e59-dd8e-4ff0-abf3-91fb3f8735f5",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "f16c2e7a-b5f1-4b42-a784-e322ddbaf32d",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "f213b500-83e1-4e8a-b391-a69e5c69ce26",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "f99295e6-c68e-4335-8a5a-5efa9f34fca1",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "cc60f4dc-f9f0-4bc6-b688-e92cc50ae568",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    },
+    {
+      "claim_id": "7ef54e28-e7c9-4d18-9c46-8ef2a54119e4",
+      "result_id": "4f33e183-d2fb-4a7b-957d-cd886308658a"
+    }
+  ],
+  "comparisons": []
+}

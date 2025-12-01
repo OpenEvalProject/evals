@@ -1,0 +1,452 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C53",
+      "C54",
+      "C92",
+      "C93"
+    ],
+    "result": "APEX2 is a 27 kDa engineered monomeric peroxidase that catalyzes proximity biotinylation within a few nanometers over a one-minute labeling window in intact cells, bypassing biochemical fractionation and preserving spatial relationships between proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C53, C54, C92, and C93 collectively describe the APEX2 method and its key properties. These claims are well-supported by citations to prior work (C1, C54, C93) and are consistent with established knowledge about the APEX2 proximity labeling technique (C53, C92). The method's advantages are clearly stated and referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The APEX2-generated biotin-phenoxyl radical does not cross cellular membranes but can pass through OMM porins to enter the intermembrane space, while being excluded from the mitochondrial matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C55, C56, and C57 describe the membrane permeability properties of the biotin-phenoxyl radical. C2 is supported by citation to prior work. C55-C57 are consistent with known properties of mitochondrial membranes and the expected behavior of the labeling reagent. These claims form a coherent picture of the spatial specificity of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "APEX2 constructs were successfully targeted to the ER membrane and outer mitochondrial membrane using specific targeting sequences, with correct localization confirmed by electron microscopy showing ERM-APEX2 staining the ER membrane facing the cytosol and APEX2-OMM staining the outer mitochondrial membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, C61, C62, and C63 describe the targeting strategy and validation of APEX2 localization. The targeting sequences are cited (C58, C59), and EM data in Figure 1C directly demonstrates correct localization (C61, C62, C63). The observation that ERM-APEX2 density is excluded from the ER lumen confirms proper topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C15"
+    ],
+    "result": "The OMM proteome contains 137 proteins with 84% having prior mitochondrial annotation, 58% having prior OMM annotation, and 53% coverage of known OMM proteins. The proteome identifies 22 potentially novel mitochondrial proteins and excludes mitochondrial matrix proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C6, C8, C9, and C15 characterize the OMM proteome. The protein count (C3) and specificity metrics (C5, C8) are directly stated and shown in Figure 2C. The coverage metric (C15) is calculated against a curated list. The exclusion of matrix proteins (C9) is consistent with the expected impermeability of the inner mitochondrial membrane. The identification of 22 novel proteins (C6) follows logically from the 16% lacking prior annotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C16"
+    ],
+    "result": "The ERM proteome contains 634 proteins with 89% having prior secretory pathway annotation, 46% having ER annotation, and 44% coverage of known ERM proteins. Only 13 ER lumen proteins were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C10, C11, C12, and C16 characterize the ERM proteome. The protein count (C4) and specificity metrics (C10, C11) are directly stated and shown in Figure 2C. The coverage metric (C16) is calculated against a curated list. The low number of ER lumen proteins (C12) is consistent with the expected topology of ERM-APEX2 facing the cytosol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "C2CD3, identified as a mitochondrial orphan in the OMM proteome, was validated to localize to mitochondria by immunofluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is directly supported by immunofluorescence data shown in Figure 2D. This provides experimental validation of one of the novel mitochondrial proteins identified in the OMM proteome, demonstrating the utility of the proteomic approach for discovering new mitochondrial proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The log2(H/L) and log2(H/M) SILAC ratios were well-correlated across independent replicates with R\u00b2 \u2265 0.74.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is directly stated and shown in Figure 2\u2014figure supplement 1A. This correlation demonstrates good reproducibility of the proteomic measurements across biological replicates, supporting the reliability of the quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "68 proteins were enriched by both APEX2-OMM and ERM-APEX2, including known mitochondria-ER contact site proteins MFN2, PTPIP51, MFF, TMX1, and ATAD3A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 describe the intersection of the OMM and ERM proteomes. The number of overlapping proteins (C17) is stated directly. The presence of known mitochondria-ER contact proteins (C18) is supported by citations and provides validation that the intersection strategy can identify relevant proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C77"
+    ],
+    "result": "SYNJ2BP was the only protein in an overexpression screen that increased mitochondria-ER overlap. SYNJ2BP overexpression causes mitochondria and ER to reorganize and strongly colocalize, with ER membranes forming extended contacts along mitochondrial surfaces. The median percentage of mitochondrial surface in contact with ER increased from 6% to 25%, and the induced contacts are approximately 45 nm wide and nearly all filled with ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C77 describe the SYNJ2BP overexpression phenotype. The fluorescence microscopy data (C19, Figure 3A) and EM data (C20-C23, Figure 3B) provide strong visual and quantitative evidence. The statement that SYNJ2BP was the only protein producing this phenotype (C77) is based on the overexpression screen of 38 proteins. The ribosome-filled contacts are a striking and well-documented observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C76"
+    ],
+    "result": "SYNJ2BP is a 16 kDa tail-anchored OMM protein with a cytosol-facing PDZ domain that was the most highly enriched protein in both OMM and ERM proteomes. Immunoprecipitation of SYNJ2BP enriched 56 proteins including the known binding partner E-SYT1 and the entire MARS complex of 11 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C76 characterize SYNJ2BP and its interacting proteins. The protein structure (C24) is stated as known information. The enrichment in both proteomes (C76) is stated directly. The IP-MS data (C25-C27, Figure 3C) identify binding partners with appropriate statistical thresholds (FDR p<0.02). The enrichment of known interactor E-SYT1 validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RRBP1 is a 166 kDa single-pass transmembrane ER protein containing a PDZ-binding domain with consensus sequence TSV at its C-terminus. Anti-V5 immunoprecipitation of SYNJ2BP-V5 enriches endogenous RRBP1, which appears as multiple bands due to various splice isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 characterize RRBP1 and its interaction with SYNJ2BP. The protein structure (C28, C29) is stated as known information and shown in Figure 3D. The interaction is demonstrated by Western blot in Figure 4A (C30). The multiple bands (C31) are explained by known splice isoforms, which is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "SYNJ2BP overexpression-induced mitochondria-ER contacts are absent in RRBP1 knockout cells, demonstrating that RRBP1 is essential for SYNJ2BP's ability to increase mitochondria-ER contacts upon overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 describe the RRBP1 knockout phenotype. The EM data in Figure 4B clearly show the absence of induced contacts in RRBP1 knockout cells overexpressing SYNJ2BP. This is a strong loss-of-function result that supports the conclusion that RRBP1 is essential for the gain-of-function phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Puromycin treatment reduces SYNJ2BP-V5 interaction with endogenous RRBP1 and abolishes SYNJ2BP-induced mitochondria-ER contacts, while cycloheximide has no effect. Puromycin selectively disrupts mitochondria-rough ER contacts but not mitochondria-smooth ER contacts in SYNJ2BP-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe the effects of translation inhibitors. The Western blot data (C34, C35, Figure 4A) and EM data (C36, C37, Figure 4C-E) provide consistent evidence. The differential effects of puromycin (which disassembles polysomes) versus cycloheximide (which preserves polysomes) support a link to active translation. The selective disruption of rough ER contacts is well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Protein translation inhibitors have no significant effect on mitochondria-rough ER contacts in wild-type cells not overexpressing SYNJ2BP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 reports a negative result in wild-type cells. The authors acknowledge that mitochondria-rough ER contacts are scarce in wild-type HEK 293T cells (C86, only 1.3% of mitochondrial perimeter) and that greater statistical power may be needed. The lack of effect could be due to insufficient sensitivity rather than true absence of an effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SYNJ2BP and RRBP1 knockout cells show no clear reduction in mitochondria-ER overlap by fluorescence microscopy and no significant differences in cell growth rates, glucose versus galactose utilization, or protein synthesis rates compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 describe loss-of-function phenotypes. The data are shown in Figure 4\u2014figure supplement 3. These are negative results that are clearly stated and appropriately documented. However, the authors acknowledge that these negative results do not rule out a physiological role for SYNJ2BP-RRBP1, as redundant tethers or cell-type-specific effects could mask phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Endogenous SYNJ2BP and RRBP1 proteins do not appear enriched at sites of mitochondria-ER overlap by immunofluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 describe the localization of endogenous proteins. The immunofluorescence data in Figure 3\u2014figure supplement 1A and Figure 4\u2014figure supplement 1C show that both proteins are distributed throughout their respective organelles without clear enrichment at contact sites. This observation is important for interpreting the overexpression results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Existing proteomic approaches have limitations: MitoCarta 2.0 under-represents OMM proteins likely due to outer membrane depletion during organelle purification, mammalian OMMs have never been mapped, ER-derived microsomes co-centrifuge with other cellular compartments leading to poor overlap between whole-ER datasets, and previous ERM-specific datasets are limited to 25 abundant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe limitations of prior work. These claims are supported by citations (C47, C50, C51, C52) and provide context for the novelty and importance of the current study. The statement that mammalian OMMs have never been mapped (C49) is a strong claim about the literature that appears to be accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Mitochondria-ER contacts have been observed by EM and biochemically as MAMs. These contact sites are functionally important for calcium homeostasis, lipid biosynthesis, cellular apoptosis, and regulation of mitochondrial fission. The ERMES complex was discovered in yeast but mammalian cells lack homologs, and only a handful of proteins at mammalian mitochondria-ER contact sites have been identified with confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 provide background on mitochondria-ER contacts. All claims are supported by citations to prior work. This background establishes the biological importance of the contact sites and the gap in knowledge that the current study addresses. The lack of ERMES homologs in mammals (C74) and limited identification of contact site proteins (C75) justify the need for new approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "RRBP1 was originally proposed to be a ribosome receptor but has also been reported to have mRNA binding, microtubule binding and bundling functions, bind to kinesin, and be enriched in sheet-like ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe prior knowledge about RRBP1 functions. All claims are supported by citations to previous studies. This background information is relevant for interpreting RRBP1's potential role at mitochondria-ER contacts and its enrichment in the SYNJ2BP IP-MS experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Puromycin disassembles polysomes while cycloheximide keeps polysomes intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 describes known properties of translation inhibitors and is supported by citations to classic studies. This knowledge is essential for interpreting the differential effects of these drugs on SYNJ2BP-RRBP1 interaction and mitochondria-ER contacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Mitochondria-rough ER contacts are scarce in wild-type HEK 293T cells, representing only 1.3% of total mitochondrial perimeter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is stated in the text and quantified in Figure 4E. This observation is important for understanding why loss-of-function experiments in wild-type cells may not show clear phenotypes and why the SYNJ2BP overexpression system is useful for studying these contacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C6"
+    ],
+    "result": "The OMM and ERM proteomes together identified 94 potentially novel mitochondrially- or ER-localized proteins, comprising 22 novel mitochondrial proteins and 72 novel ER proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95, and C6 describe the total number of novel proteins identified. C94 is stated in the abstract. C6 identifies 22 novel mitochondrial proteins (16% of 137). C95 is inferred by subtraction (94-22=72), which is consistent with the data. This represents a significant contribution to organellar proteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mammalian cells cultured in galactose are forced to rely on mitochondrial OXPHOS to generate ATP, causing cells with impaired OXPHOS to be at a growth disadvantage. Calcium signaling at mitochondria-ER contacts has been associated with stimulation of mitochondrial tricarboxylic acid cycle dehydrogenases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe biological background relevant to the functional assays performed on knockout cells. All claims are supported by citations. This background justifies the choice of assays (glucose/galactose utilization) for testing potential OXPHOS defects in SYNJ2BP and RRBP1 knockout cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MAM proteomic studies have generated lists up to 1212 proteins long, but most are populated with contaminants including mitochondrial matrix and ER lumen proteins. SYNJ2BP has not been enriched in any MS-based MAM proteomic study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 critique existing MAM proteomics approaches. C99 and C101 are supported by citations to multiple MAM studies. C100 is stated as a criticism based on the authors' knowledge of organellar protein localization. The fact that SYNJ2BP was not identified in previous MAM studies (C101) supports the authors' argument that their approach identifies proteins missed by traditional methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "No specific function has been assigned to mitochondria-rough ER contacts to date. Lipid shuttling and calcium signaling would be expected at smooth ER contacts due to closer membrane proximity and specialized role of smooth ER. BCL2 is a dual-targeted protein destined for both mitochondria and ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 provide context for the significance of the SYNJ2BP-RRBP1 findings. C102 identifies a gap in knowledge. C103 is a reasonable inference based on known ER biology. C104 is supported by citation and provides a speculative hypothesis about potential functions of rough ER contacts. These claims help frame the discussion of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The term 'mitochondria-associated membranes' (MAMs) historically referred to ER microsomes that co-purify with mitochondria, and initial studies found MAMs more closely resembled smooth ER than rough ER. There is no direct evidence that purified MAMs encompass all mitochondria-ER contact sites including both rough and smooth ER. Mitochondrial contacts with rough or smooth ER likely create distinct subdomains with unique specialized functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide historical context and critique of the MAM literature. C105 and C106 are supported by citations. C107 identifies a gap in the literature. C108 is a hypothesis based on the authors' findings. These claims are important for the discussion and help explain why SYNJ2BP-RRBP1 may represent a distinct type of mitochondria-ER contact not captured by traditional MAM purification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "DRP1, a predominantly cytosolic protein that localizes to mitochondria-ER contact sites during mitochondrial fission, did not give enough unique MS-detected peptides to enter the datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 describe a limitation of the proteomic approach. C110 is supported by citation. C109 acknowledges that a known contact site protein was not detected, which is an honest assessment of the method's limitations. This is likely due to DRP1's predominantly cytosolic localization and transient association with contact sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The OMM and ERM proteomes feature high specificity paired with moderate coverage and should be valuable resources for biologists studying signaling processes on mitochondrial and ER membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a summary characterization of the datasets. The high specificity is demonstrated by the metrics in Figure 2C (84% and 89% for OMM and ERM respectively). The moderate coverage is shown by the 53% and 44% coverage of known proteins. This is an accurate and balanced assessment of the proteomes' strengths and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "ERO1L and HSP90B1, two ER lumen proteins detected in the ERM proteome, have been shown to have protease-accessible regions on the outer surface of ER-derived microsomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by citations to previous studies. This information helps explain why some ER lumen proteins were detected in the ERM proteome and suggests that current annotations may not fully capture the topology of these proteins. This is a reasonable interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "SYNJ2BP has been reported as a negative regulator of angiogenesis and an inhibitor of tumor growth and metastasis. A splice variant called ARIP2 was reported to localize to the cytoplasm and bind ACTRIIA and ACTRIIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, and C91 describe prior knowledge about SYNJ2BP from the literature. All claims are supported by citations. This background information provides context for SYNJ2BP's potential biological functions beyond mitochondria-ER contacts, though the connection to the current findings is not clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "APEX2 has a weak dimerization tendency, and high expression levels on organellar membranes can cause undesired aggregation or morphological perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 describe a known limitation of APEX2 and are supported by citations. This information justifies the use of low expression levels via lentiviral transduction in the proteomic experiments. This is an important methodological consideration.",
+    "result_type": "MINOR"
+  }
+]

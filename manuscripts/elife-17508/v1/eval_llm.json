@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PTRF undergoes insulin-stimulated nuclear translocation in adipocytes and binds to TTF1 at the rDNA transcription termination region. This translocation is specific to PTRF, as other caveolae proteins (caveolin-1, Cavin-2, Cavin-3) do not show nuclear localization, and PTRF occupancy at the termination complex is regulated by nutrient availability and insulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are well-supported by multiple complementary experimental approaches including immunofluorescence (Figures 1A-B), subcellular fractionation (Figure 1C), co-immunoprecipitation (Figure 1D), and ChIP-qPCR (Figure 1E). The specificity of PTRF nuclear translocation is demonstrated by negative controls showing other caveolae proteins do not translocate. The data converge to establish PTRF's insulin-dependent nuclear function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ribosomal transcription (47S pre-rRNA levels) is acutely regulated by metabolic challenges in adipocytes, with a 2-fold higher response compared to fibroblasts. PTRF is required for this regulation, as PTRF null cells show dramatically impaired rDNA transcription upregulation in response to nutrient/insulin stimulation. Rescue experiments demonstrate this is a caveolae-independent function of PTRF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are strongly supported by RT-qPCR data from multiple cell types (3T3-L1 fibroblasts/adipocytes, primary adipocytes, MEFs) shown in Figures 2A-D. The rescue experiments (C50-C51) provide critical evidence that PTRF but not caveolin-1 can restore function, establishing caveolae-independence. Time-course data (C48) and multiple genetic models strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Long-term loss of PTRF-dependent rDNA transcriptional regulation leads to ribosome degeneration. In 6-month-old PTRF null mice, total protein, RNA, and basal 47S levels are significantly reduced in primary adipocytes, and PTRF null MEFs show slower growth rates. This supports a ribosome degeneration phenomenon that may explain the dystrophic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by measurements in aged mice (Figure 2E) and cell proliferation assays (Figure 2\u2014figure supplement 2). The age-dependent phenotype (no differences at 6-8 weeks, significant at 6 months) is consistent with progressive degeneration. However, the mechanistic link between reduced ribosomal content and dystrophy (C55) is inferential and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CRISPR/Cas9-generated PTRF null 3T3-L1 adipocytes differentiate normally but show impaired rDNA transcriptional responses to metabolic challenges. Repeated feeding/fasting cycles for 7 days cause PTRF null adipocytes to develop dramatically lower lipid content, protein, and RNA levels, recapitulating the lipodystrophy phenotype observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are well-supported by the CRISPR/Cas9 model data in Figures 3A-E. The normal differentiation (C56) establishes that the phenotype is not due to developmental defects. The repeated feeding/fasting experiment (C59-C60) is particularly compelling as it mimics physiological conditions and recapitulates the in vivo phenotype. The causal inference (C61) is reasonable but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "During adipocyte differentiation, PolR1A levels dramatically decrease while PTRF and TTF1 levels increase, suggesting a shift from Pol-I-dependent transcriptional number regulation (predominant in proliferating pre-adipocytes) to PTRF-dependent transcriptional efficiency regulation (predominant in mature adipocytes). This represents two distinct mechanisms for ribosomal transcription control in different cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C121-C127 are supported by western blot data in Figure 3C showing reciprocal changes in PolR1A vs. PTRF/TTF1 during differentiation. The proposed model of two distinct regulatory mechanisms (C125-C127) is a reasonable inference from the data and prior literature. However, direct functional evidence linking these expression changes to the proposed mechanisms would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Loss of PTRF leads to dysregulated p53 pathway activation. Under feeding conditions, PTRF null cells show poor rRNA response, elevated RPL5, reduced MDM2, and increased p53 accumulation, indicating nuclear stress. Under fasting, wild-type cells show transient p53 activation at cell arrest levels, while PTRF null cells lose this response. In PTRF null mouse adipose tissue, full p53 activation including apoptosis markers is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by RT-qPCR and western blot data in Figures 4A-G. The differential p53 responses under feeding vs. fasting conditions are well-documented. The progression from cell arrest markers in acute fasting (C70) to full apoptosis markers in chronic deficiency (C71-C72) is logical. The nuclear stress mechanism (C68) is a reasonable inference based on established knowledge and the observed RPL5 accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Insulin stimulates PTRF tyrosine phosphorylation, and the Y158 residue is critical for this modification and for PTRF's role in rDNA transcription regulation. The Y158F mutant shows significantly decreased phosphotyrosine levels and cannot rescue rDNA transcription activity in PTRF null cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C78 are well-supported by immunoprecipitation/western blot data (Figures 5A-B) and functional rescue experiments (Figure 5C). The mutagenesis approach provides strong evidence for Y158's critical role. However, the claim that Y158 phosphorylation is the sole or primary mechanism (C78) may be overstated, as other tyrosine residues also show some phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PTRF is regulated by serine/threonine phosphorylation under catabolic conditions. PKA activation by isoproterenol causes PTRF phosphorylation (shown by gel shift) and downregulation of rDNA transcription. This phosphorylation is reversible by insulin. PTRF thus functions as a bidirectional metabolism-dependent transcriptional regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by western blot data showing PKA-dependent gel shifts (Figure 5D), RT-qPCR showing decreased 47S levels (Figure 5E), and reversibility by insulin (Figure 5F). The bidirectional regulation model (C84) is a reasonable synthesis of the data. However, direct identification of specific phosphorylation sites and their functional roles would strengthen the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "PTRF contains a nuclear export signal (NES) at residues 54-64. Deletion of this NES causes exclusive nuclear localization and prevents rescue of feeding-induced 47S upregulation, indicating that nuclear export and recycling are required for PTRF's ribosomal transcription regulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by sequence analysis (Figure 6A), fractionation data showing nuclear accumulation of the NES deletion mutant (Figure 6B), and functional rescue experiments (Figure 6C). The requirement for nuclear export/recycling (C89) is a reasonable inference from the inability of the constitutively nuclear mutant to function properly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PTRF is mono-ubiquitinated at two sites, with regions 166-192aa and 193-249aa each responsible for one mono-ubiquitination event. This was determined by immunoprecipitation showing ubiquitin modification and mapping with truncation constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by immunoprecipitation/western blot data (Figures 6D-E) and systematic mapping with truncation constructs (Figures 6F-G). The inference of two mono-ubiquitination sites (C91) is reasonable based on the ~16 kDa size shift. However, the precise ubiquitination sites within the identified regions are not determined, and functional consequences are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The localization of PTRF between caveolae and nucleus is coordinated by monoubiquitination, NLS, and NES motifs, integrating post-translational modifications with localization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is a synthesis of multiple observations (Figures 5-6) but lacks direct experimental evidence linking monoubiquitination to nuclear/caveolar localization. While the individual components (ubiquitination, NLS, NES) are demonstrated, their coordinated function in regulating localization is inferred rather than directly tested. Experiments manipulating ubiquitination sites and measuring localization would be needed to support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Intact caveolae are required for PTRF's ribosomal function. Beta-cyclodextrin treatment disrupts caveolae, blocks insulin-stimulated PTRF nuclear translocation and tyrosine phosphorylation (without affecting upstream insulin signaling), and diminishes PTRF-mediated ribosomal transcription regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are well-supported by multiple experiments in Figure 7 showing caveolae disruption (7A), blocked nuclear translocation (7B), selective inhibition of PTRF phosphorylation (7C), and loss of transcriptional regulation (7D). The specificity is demonstrated by preserved insulin receptor/IRS phosphorylation. This establishes that caveolae provide a platform for PTRF activation, though the precise mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C120"
+    ],
+    "result": "PTRF plays an essential role in forming the active rDNA transcription loop between initiation and termination regions. Chromosome conformation capture (3C) assays show that the PCR product indicating loop formation is almost completely absent in PTRF null cells compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C120 are supported by 3C assay data in Figure 8B showing dramatic reduction in loop formation in PTRF null cells. The experimental approach is appropriate for detecting chromatin looping. However, the 3C assay has limitations in resolution and specificity, and the near-complete absence of signal in knockout cells raises questions about whether this reflects loss of loop formation or reduced transcriptional activity overall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C110"
+    ],
+    "result": "The data support the hypothesis that inefficient rRNA transcription underlies the lipodystrophy observed in PTRF-deficient mice and humans. PTRF's rRNA transcription function provides an explanation for the progressive adipocyte loss, as decreased rRNA transcription over time would lead to inability to maintain adequate protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C112-C113 represent the central hypothesis of the paper, synthesizing data from Figures 1-4. The progressive nature of the phenotype, age-dependent ribosome degeneration, p53 activation, and in vitro recapitulation of lipodystrophy all support this model. However, this remains correlative; definitive proof would require demonstrating that restoring ribosomal function rescues the lipodystrophy phenotype in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "PTRF null and wild-type adipocytes show no differences in protein and fat content under basal conditions, but repeated fasting/refeeding cycles cause PTRF null cells to show dramatic reductions in triglyceride, RNA, and protein content, recapitulating the in vivo lipodystrophy phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by the repeated feeding/fasting experiment data in Figure 3E. This is a key result demonstrating that the phenotype emerges under metabolic stress rather than being a developmental defect. The experimental design effectively mimics physiological conditions and provides strong support for the metabolic challenge hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "PTRF nuclear localization is dynamically regulated by insulin-dependent tyrosine phosphorylation under anabolic conditions and serine/threonine phosphorylation under catabolic conditions. The Y158F mutation abrogates rRNA transcription regulation, and isoproterenol causes ser/thr phosphorylation and decreased 47S transcription, adjusting ribosomal activity to nutritional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 synthesize data from Figure 5 showing bidirectional regulation. The physiological logic (C117) is sound. However, the direct link between phosphorylation state and nuclear localization dynamics is not fully established - the data show phosphorylation correlates with function but don't definitively prove phosphorylation controls localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing that ribosomal RNA transcription by RNA polymerase I is the rate-limiting step in ribosome biogenesis, producing 47S precursor from multiple rDNA gene copies, and that this process is regulated by nutrients and growth factors through both the number of active genes and transcription rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C19 are background knowledge claims supported by established literature and review citations. These provide appropriate context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C33"
+    ],
+    "result": "Prior studies on ribosomal transcription regulation were performed mainly in cancer cell lines coupled to proliferation, leaving unclear how ribosomal transcription is regulated in mature non-proliferating cells. The physiological relevance of PTRF's rRNA transcription activity was never established in cells or in vivo prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C33 accurately characterize gaps in the existing literature that motivate the current study. These are appropriate framing claims supported by the authors' literature review. The identification of this gap provides clear rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior work established that PTRF plays a critical role in caveolae formation (abundant in adipocytes), that PTRF null mice and humans with PTRF mutations show lipodystrophy and muscular dystrophy, and that PTRF was originally characterized for its Pol-I regulatory function in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 accurately summarize prior published work with appropriate citations. These background claims establish the dual nature of PTRF (caveolae and transcription functions) and the clinical phenotypes, providing essential context for the current study's hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C73",
+      "C79",
+      "C85",
+      "C93",
+      "C94",
+      "C95",
+      "C103",
+      "C104",
+      "C119"
+    ],
+    "result": "Background claims about p53 pathway activation by ribosomal stress, prior observations of PTRF phosphorylation, protein monoubiquitination functions, and rDNA transcription loop formation, all supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C73, C79, C85, C93-C95, C103-C104, and C119 are background knowledge claims appropriately supported by citations. These provide necessary context for interpreting the experimental results but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C132",
+      "C135"
+    ],
+    "result": "Speculative claims about broader implications: PTRF's role in ribosomal transcriptional efficiency may be relevant to many physiological situations of cell growth and metabolism; variations in PTRF expression may have phenotypic consequences in response to overnutrition; and the capacity of adaptational ribosomal DNA transcription may determine the maximal limit of adipocyte homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C132, and C135 are explicitly speculative statements about broader implications and future directions. While these are reasonable hypotheses based on the presented data, they lack direct experimental support in this study. These represent testable predictions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C133",
+      "C134",
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion claims synthesizing the field context, limitations of prior explanations for lipodystrophy, and integration with prior observations about PTRF nuclear localization and adipose tissue expansion correlating with PTRF expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C111, C133-C134, C136-C137 are discussion/synthesis claims that appropriately contextualize the findings within the broader literature. C136-C137 cite supporting evidence from prior work. These claims provide appropriate interpretation but are not primary experimental findings.",
+    "result_type": "MINOR"
+  }
+]

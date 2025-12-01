@@ -1,0 +1,1925 @@
+{
+  "submission": {
+    "id": "cc4cc510-e958-49a7-a5d0-19dfdc250580",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:27:53.957514Z",
+    "updated_at": "2025-11-30T22:27:53.957514Z"
+  },
+  "content": [
+    {
+      "id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "submission_id": "cc4cc510-e958-49a7-a5d0-19dfdc250580",
+      "content_type": "manuscript",
+      "content_text": "# Myogenic regulatory transcription factors regulate growth in rhabdomyosarcoma\n\n## Authors\n\n- In\u00eas M Tenente<sup>1</sup>\n- Madeline N Hayes<sup>1</sup>\n- Myron S Ignatius<sup>1</sup>\n- Karin McCarthy<sup>1</sup>\n- Marielle Yohe<sup>5</sup>\n- Sivasish Sindiri<sup>5</sup> ([ORCID: 0000-0003-2516-969X](https://orcid.org/0000-0003-2516-969X))\n- Berkley Gryder<sup>5</sup>\n- Mariana L Oliveira<sup>1</sup>\n- Ashwin Ramakrishnan<sup>1</sup>\n- Qin Tang<sup>1</sup> ([ORCID: 0000-0002-9487-570X](https://orcid.org/0000-0002-9487-570X))\n- Eleanor Y Chen<sup>7</sup>\n- G Petur Nielsen<sup>8</sup>\n- Javed Khan<sup>5</sup>\n- David M Langenau<sup>1</sup> ([ORCID: 0000-0001-6664-8318](https://orcid.org/0000-0001-6664-8318)) \u2020\n\n### Affiliations\n\n1. Molecular Pathology Cancer Center, and Regenerative Medicine, Massachusetts General Hospital Boston United States\n2. Harvard Stem Cell Institute Cambridge United States\n3. GABBA Program Abel Salazar Biomedical Sciences Institute, University of Porto Porto Portugal\n4. Molecular Medicine Greehey Children's Cancer Research Institute San Antonio United States\n5. Oncogenomics Section Pediatric Oncology Branch, Advanced Technology Center, National Cancer Institute Gaithersburg United States\n6. Instituto de Medicina Molecular Faculdade de Medicina, Universidade de Lisboa Lisbon Portugal\n7. Department of Pathology University of Washington Seattle United States\n8. Department of Pathology Massachusetts General Hospital Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRhabdomyosarcoma (RMS) is a pediatric malignacy of muscle with myogenic regulatory transcription factors MYOD and MYF5 being expressed in this disease. Consensus in the field has been that expression of these factors likely reflects the target cell of transformation rather than being required for continued tumor growth. Here, we used a transgenic zebrafish model to show that Myf5 is sufficient to confer tumor-propagating potential to RMS cells and caused tumors to initiate earlier and have higher penetrance. Analysis of human RMS revealed that MYF5 and MYOD are mutually-exclusively expressed and each is required for sustained tumor growth. ChIP-seq and mechanistic studies in human RMS uncovered that MYF5 and MYOD bind common DNA regulatory elements to alter transcription of genes that regulate muscle development and cell cycle progression. Our data support unappreciated and dominant oncogenic roles for MYF5 and MYOD convergence on common transcriptional targets to regulate human RMS growth.\n\n## Introduction\n\nContinued tumor growth and relapse are driven by molecularly defined tumor propagating cells (TPCs). These TPCs share molecular and functional properties with non-transformed stem cells. For example, molecularly defined TPCs can divide to produce daughter cells with similar functional characteristics as the parental TPC, akin to the process of self-renewal found in normal stem cells. TPCs can also divide to produce mature, specialized cells that have specific functions within the developing cancer. Given that TPCs drive continued tumor growth, it is not surprising that these cells are often retained following treatment and ultimately drive refractory, metastatic, and relapse disease (Reya et al., 2001). TPCs have been identified in a wide range of cancers, including both zebrafish and human rhabdomyosarcoma (RMS), a devastating pediatric cancer of muscle (Langenau et al., 2007; Chen et al., 2014; Ignatius et al., 2012). Yet, to date, the molecular mechanisms driving TPC frequency and sustained tumor growth in RMS have not been fully defined. Moreover, it is unknown the extent to which normal muscle stem cell programs play a role in regulating RMS growth.\n\nRhabdomyosarcoma is a common sarcoma characterized by impaired muscle differentiation. These tumors express myogenic regulatory transcription factors (MRFs) including Myogenic factor 5 (MYF5) and Myoblast determination protein D (MYOD) (Clark et al., 1991; Kumar et al., 2000; Parham, 2001; Sebire and Malone, 2003) and are used in the clinical diagnosis of RMS. RMS is comprised of two molecular subtypes. Alveolar RMS (ARMS) harbor Pax7-FOXO and Pax3-FOXO genomic fusions (Sorensen et al., 2002) and have few additional recurrent genomic changes (Chen et al., 2013b; Shern et al., 2014). By contrast, 90% of human embryonal rhabdomyosarcoma (ERMS) have RAS pathway activation and a higher mutation burden when compared with ARMS (Chen et al., 2013b; Langenau et al., 2007; Shern et al., 2014). Common mutations found in ERMS include inactivation of Tp53 and activating mutations of FGFR4, PDGFA, and NOTCH1 (Chen et al., 2013b; Shern et al., 2014). Yet, roles for these pathways in regulating TPC number and proliferation have not been reported. In fact, to date, only the Sonic-Hedgehog and canonical WNT/B-catenin signaling pathways have been shown to regulate TPC function in a subset of human RMS (Chen et al., 2014; Satheesha et al., 2016). Understanding additional underlying mechanisms of TPC growth and function will be important for defining new therapies to treat pediatric RMS.\n\nDespite the similarity of RMS cells with embryonic and regenerating muscle and well-known roles for the myogenic regulatory transcription factors MYF5 and MYOD in regulating these processes, their role in driving RMS growth has yet to be reported. Rather, it has been suggested that activation of the myogenic gene regulatory programs likely reflect the target cell of transformation and may not be required for continued RMS growth (Keller and Guttridge, 2013; Kikuchi et al., 2011; Macquarrie et al., 2013b; Rubin et al., 2011). Despite MYF5 and MYOD being highly expressed in human and animal models of RMS (Langenau et al., 2007; Rubin et al., 2011), exerting important roles in muscle development and stem cell self-renewal in regeneration (Buckingham and Rigby, 2014), and being able to reprogram fibroblasts into proliferating myoblasts (Braun et al., 1989; Tapscott et al., 1988); a functional requirement for these transcription factors in regulating RMS growth has gone unexplored since their discovery over two decades ago.\n\nTransgenic zebrafish models have become a powerful tool to uncover new biological insights into human cancer (Langenau et al., 2003, 2007; Le et al., 2007; Park et al., 2008; Patton et al., 2005; Sabaawy et al., 2006; Yang et al., 2004; Zhuravleva et al., 2008). In the setting of ERMS, we have developed a mosaic transgenic zebrafish that express human kRASG12D under control of the rag2 minimal promoter, which is expressed in lymphoid cells (Jessen et al., 2001; Langenau et al., 2003) and muscle progenitor cells (Langenau et al., 2007). Thus, when kRASG12D was expressed under control of this promoter, 20\u201340% mosaic injected fish developed ERMS (Langenau et al., 2007). Because 10\u201320 transgene copies are commonly integrated into the genome (Langenau et al., 2008), one can inject multiple transgenes into one-cell stage embryos with stable integration and expression being observed in developing tumors. Using this mosaic transgenic approach, we can deliver transgenic expression of kRASG12D, a fluorescent\u00a0label to mark ERMS cells, and a modifying gene to assess synergies in regulating tumor initiation (Langenau et al., 2008). Importantly, the zebrafish model accurately mimics many of the molecular underpinnings of the human disease and has been used to uncover important genes and pathways relevant to human cancer (Chen et al., 2013a, 2014; Ignatius et al., 2012; Langenau et al., 2007; Le et al., 2013). The model has also been used to identify functional heterogeneity in molecularly defined cell types, including isolation of myf5:GFP+ TPCs (Ignatius et al., 2012). In total, the zebrafish kRASG12D ERMS model has emerged as one of the most relevant for discovering pathways that drive cancer growth in human RMS (Chen et al., 2013a, 2014; Ignatius et al., 2012; Kashi et al., 2015; Langenau et al., 2007, 2008; Le et al., 2013; Storer et al., 2013; Tang et al., 2016)\n\nHere we show that Myf5 is not only a marker of TPCs in the zebrafish ERMS model (Ignatius et al., 2012), but was sufficient to impart tumor propagating potential to differentiated ERMS cells in vivo. Myf5 re-expression also lead to tumors that initiated earlier, had higher penetrance, and were larger than kRASG12D-alone expressing ERMS. Experiments in human RMS uncovered significant inter-tumoral heterogeneity of MRF expression with high MYF5 or MYOD defining largely mutually exclusive groups of tumors. Functional studies showed that both MYF5 and MYOD are required for continued RMS proliferation, likely acting redundantly with one another to regulate common molecular programs found in normal muscle development and regeneration. Consistent with this interpretation, ChIP-seq analysis identified common binding sites of MYF5 and MYOD in promoter and enhancer regions of genes that regulate cell cycle and muscle differentiation. A subset of these same genes were confirmed to be downregulated upon MYF5 or MYOD knockdown. Finally, we show that MYF5 and MYOD are also required for efficient human RMS tumor growth in vivo. Our data supports a previously unappreciated role for MYF5 and MYOD in regulating growth, proliferation, and TPC activity in rhabdomyosarcoma.\n\n## Results\n\n### Re-expression of myf5 in zebrafish ERMS cells accelerated tumor onset and increased penetrance\n\nWe have uncovered that myf5 is highly expressed in undifferentiated, molecularly defined TPCs in zebrafish kRASG12D-induced ERMS (Langenau et al., 2007; Ignatius et al., 2012). Remarkably, this TPC fraction shares molecular and functional properties with non-transformed muscle satellite stem cells. For example, cell transplantation and direct live cell imaging has revealed that myf5:GFP+/myosin-negative progenitor cells drive tumor growth and specifically label TPCs in this animal model (Ignatius et al., 2012; Chen et al., 2014). To assess roles for myf5 in regulating ERMS growth, we transgenically expressed myf5 under control of the differentiated myosin light chain muscle promoter (mylpfa). This transgene faithfully drives expression in terminally-differentiated muscle cells in both transient and stable transgenic fish (Xu et al., 1999; Langenau et al., 2007; Ignatius et al., 2012; Storer et al., 2013; Chen et al., 2014) and has been used to identify zebrafish ERMS cell subfractions that lack myf5, have low proliferative capacity, cannot self-renew, and do not sustain ERMS growth in vivo (Ignatius et al., 2012). Here, rag:kRASG12D was co-injected with mylpfa:myf5 into one-cell-stage zebrafish and analyzed for tumor onset.\n\nHistological analysis was performed on ERMS tumors arising in rag2-kRASG12D;mylpfa-myf5 AB-strain transgenic fish and compared with those that express only kRASG12D (Figure 1A\u2013F, Figure 1\u2014figure supplement 1). Tumors were histologically staged based on differentiation (Storer et al., 2013; Figure 1\u2014figure supplement 2). As reported previously, primary kRASG12D-induced ERMS were comprised of 50% undifferentiated stage 1 ERMS (N\u00a0=\u00a05 of 10, Figure 1B,C and Figure 1\u2014figure supplement 2), which harbored mostly small round blue cells. By contrast, mylpfa:myf5 expressing primary ERMS contained only 7.7% stage 1 ERMS (N\u00a0=\u00a02 of 26, p=0.015, Chi-square test, Figure 1E\u2013F), with the remaining tumors being highly differentiated stage 2 and 3 ERMS (Figure 1F and Figure 1\u2014figure supplement 2). These tumors had large numbers of rhabdomyoblasts and cells with fibrous and spindle cell morphology. Transcriptional profiling of bulk tumor cells by qRT-PCR confirmed that mylpfa:myf5 expressing ERMS cells had high myf5 transgene expression, were more differentiated, and yet also had elevated expression of TPC-associated markers including c-met and cadherin 15 (Figure 1G, Langenau et al., 2007; Ignatius et al., 2012). These gene markers are also commonly expressed in zebrafish muscle progenitor and satellite cells (Siegel et al., 2013; Gurevich et al., 2016). Collectively, these data show that re-expression of myf5 in myosin-expressing ERMS cells leads to tumors with differentiated morphology and are consistent with the re-activation of muscle stem cell programs in differentiated cell types.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013F) Primary ERMS developing in myf5:GFP/mylpfa:mCherry AB-strain zebrafish. Transgenic kRASG12D-expressing ERMS (A\u2013C) compared with those that express both kRASG12Dand mylpfa:myf5 (D\u2013F). Animals imaged at 35 dpf (A,D). Hematoxylin and Eosin-stained sections of representative tumors (B,E) and quantification of differentiation within individual tumors (C,F; 1-less differentiated and 3-most differentiated). Asterisk denotes p=0.015 by Chi-square test. (G) Quantitative real-time PCR gene expression performed on bulk ERMS cells, confirming high myf5 expression, increased differentiation, and high expression of TPC associated genes in ERMS that co-express kRASG12Dand mylpfa:myf5 (K+M, N\u00a0=\u00a05). Endogenous myf5 was assessed using primers specific to the 3\u2019UTR and total myf5 assessed by primers that amplify the coding sequence (cds). cadherin 15 (cdh15) and myogenin (myog). kRASG12D alone expressing ERMS (K, N\u00a0=\u00a04). Average gene expression with 50% confidence intervals denoted by box. Mean, maximum, and minimum also denoted. (H) Relative tumor size of primary ERMS at 30 days post fertilization (dpf). Box shows 50% confidence interval. Mean, maximum, and minimum denoted. Asterisk denotes p=0.0108, Student\u2019s t-test. (I) Kaplan-Meijer analysis denoting time-to-tumor onset (p<0.001, Log-rank Statistic, N\u00a0=\u00a0494 fish analyzed for K and N\u00a0=\u00a0470 for K+M). Scale bars equal 2 mm (A,D) and 50 \u03bcm (B,E). Asterisks in panels G-H denote *p<0.05; **p<0.01; ***p<0.001 by Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Images of the same representative rag2:kRASG12D \u2013alone (A\u2013C) and rag2:kRASG12D; mylpfa:myf5 (D\u2013F) zebrafish shown in Figure 1A and D, respectively. (A,D) merged (brightfield, GFP and mCherry) image. (B,E) mCherry image. (C,F) GFP image. Scale bars equal 2 mm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative H and E-stained sections of zebrafish ERMS assigned to each differentiation category. Scale bars equal 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative H and E-stained sections and immunohistochemistry for phospho-H3 (pH3) and cleaved caspase-3 (CC3). (B) Quantification of the total number of pH3-positive cells per 400x imaging field. (n=average of 3 fields/tumor section). (C) Quantification of the total number of CC3-positive cells per 400x imaging field (n=average of 3 fields/tumor). Boxes in B\u2013C denote 50% confidence interval and mean, maximum, and minimum shown. kRASG12D[K] (N\u00a0=\u00a05) and kRASG12D; mylpfa:myf5 [K+M] (N\u00a0=\u00a011). (D) Quantification of total number of EdU+ cells per area (n=average of 3 fields/tumor. N\u00a0=\u00a03 tumors per genotype). *p<0.05 or **p<0.01 in comparison to each kRASG12D-alone expressing ERMS (Student\u2019s t-test). Error bars denote +/- STD. Scale bars equal 100 \u03bcm (A). Not significant by Student\u2019s t-test (n.s.).\n\nTumors arising in double transgenic rag2:kRASG12D; mylpfa:myf5 expressing ERMS were also larger by 30 days postfertilization than those that expressed only kRASG12D (Figure 1H, p=0.0108, Student\u2019s t-test). However, apoptosis was not altered following re-expression of myf5 (Figure 1\u2014figure supplement 3). Proliferation was assessed by both phospho-histone H3 staining and EDU incorporation following intra-peritoneal injection and assessed at 6 hr. From this analysis, we uncovered wide variation in proliferation between tumors, with a trend toward increased proliferation in mylpfa:myf5 expressing ERMS when assessed by EDU incorporation (Figure 1\u2014figure supplement 3D). Together, our data support a model where mylpfa:myf5 expressing ERMS initiate earlier and with higher penetrance than those that express only kRASG12D (Figure 1I, p<0.001, log-rank Mantel-Cox test), likely reflecting a dominant role for transgenic myf5 in transforming a wider range of cell types and to a lesser degree on elevating proliferation.\n\nTo confirm that differentiation changes were confined to fully transformed ERMS cells, we next assessed the histology of ERMS following transplantation into immune-deficient rag2E450fsrecipient fish (Figure 2A\u2013F; Tang et al., 2014). kRASG12D-expressing ERMS were comprised exclusively of undifferentiated stage one tumors (Figure 2B,C and Figure 2\u2014figure supplement 1, n=10 transplanted fish arising from four independent tumors). By contrast, ERMS that re-expressed myf5 had differentiated histology and were comprised exclusively of stage 2 and 3 tumors (Figure 2E,F and Figure 2\u2014figure supplement 1, n=15 transplanted fish from four independent tumors, p<,0.001, Chi-square test). Consistent with our histological evaluation, flow cytometric analysis revealed that differentiated, mylpfa:mCherry-positive (R+) tumor cells were greatly expanded in ERMS that aberrantly express myf5 (Figure 2G\u2013I, p=0.006, Student\u2019s t-test). These same tumors had reduced numbers of myf5:GFP (G+) and double-positive (G+R+) cells. As was seen in primary ERMS, mylpfa:myf5 expressing ERMS also initiated earlier and with higher penetrance when engrafted into rag2e450fsrecipient animals (Figure 2J, 2.5 \u00d7 105 cells/animal, p=0.046, Mantel-Cox log-rank statistic). These tumors also had a trend toward being larger when assessed at 30 days post-transplantation (Figure 2K). Effects on ERMS differentiation were confirmed in transplanted CG1 strain syngeneic animals, showing that mylpfa-myf5 expressing ERMS were more differentiated based on morphology (Figure 3\u2014figure supplement 1A\u2013F, p<0.01, Chi-square test) and contained larger numbers of differentiated, mylpfa-mCherry-positive (R+) ERMS cells (Figure 2L, p<0.001, Student\u2019s t-test). These transplanted tumors also had significant reductions in myf5-GFP (G+) and double-positive (G+R+) ERMS cells. Together, these data confirm that mylpfa:myf5 expressing ERMS were fully transformed and exhibited a more differentiated cellular phenotype when compared with kRASG12D alone expressing ERMS (Figure 2E,F and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013F) Analysis of ERMS arising in transplanted fish. kRASG12D expressing ERMS arising in rag2E450fs transplant recipient fish (A\u2013C) compared with those that express both kRASG12D and mylpfa:myf5 (D\u2013F). Tumors were created in stable transgenic myf5:GFP/mylpfa:mCherry transgenic, AB-strain zebrafish and imaged following engraftment into recipient fish at 30 days post transplantation (dpt). Hematoxylin and eosin stained sections of representative tumors (B,E) and quantification of differentiation within individual ERMS (C,F; 1-less differentiated and 3-most differentiated). Asterisks denote p<0.001 by Chi-square test. (G,H) Representative flow cytometry analysis of fluorescently-labeled ERMS cells isolated from transplanted rag2E450fs zebrafish. (I) Graphical summary of ERMS cell sub-fractions that grow following engraftment into immune-deficient rag2E450fs recipients. Individual tumors are represented as separate bars with the proportion of G+ (green), G+R+ (yellow) and R+ (red) sub-populations denoted. **p=0.006. (J) Kaplan-Meijer analysis showing time-to-tumor onset in transplanted ERMS arising in rag2E450fs zebrafish (p=0.046, Log-rank Statistic, 2 \u00d7 105 cells/fish, N\u00a0>\u00a012 animals per arm, representing\u00a0\u22653 independently-arising primary ERMS). (K) Relative tumor size at 30 days post engraftment (same animals analyzed as in J). (L) ERMS cells were also more differentiated following engraftment of myf5:GFP/mylpfa:mCherry ERMS cells into syngeneic recipient fish (p<0.001, Student\u2019s T-test, N\u00a0\u2265\u00a03 independently arising primary ERMS and assessed in n\u00a0\u2265\u00a02 animals per transplanted tumor). Scale bars equal 2 mm (A,D) and 50 \u03bcm (B,E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative H and E-stained sections of zebrafish ERMS assigned to each differentiation category. Scale bars equal 100 \u03bcm.\n\n### Myf5 reprograms differentiated ERMS cells into TPCs\n\nBecause endogenous myf5 expression labels molecularly defined TPCs in zebrafish kRASG12D-induced ERMS (Ignatius et al., 2012; Chen et al., 2014), we next questioned if TPC frequency might be altered in mylpfa:myf5 expressing ERMS. Specifically, rag2:kRASG12D was co-injected with or without mylpfa:myf5 into one-cell stage, CG1 syngeneic myf5:GFP/mylpfa:mCherry transgenic animals (Mizgireuv and Revskoy, 2006; Ignatius et al., 2012). Following tumor growth in primary transplant recipients (Figure 3A\u2013C), cell subpopulations were isolated by FACS and transplanted into secondary syngeneic recipient fish at limiting dilution (Figure 3D\u2013I, Figure 3\u2014figure supplement 1G\u2013P, 1x103\u221210 cells/animal, purity\u00a0>85%, and\u00a0>95% viability). As previously reported (Ignatius et al., 2012), only the myf5:GFP+ (G+) single-positive ERMS cells from kRASG12D-alone expressing ERMS could efficiently engraft tumors into CG1-strain syngeneic recipient animals (Figure 3J and Table 1; N\u00a0=\u00a03 independent tumors). By contrast, both the myf5:GFP+ single-positive (G+) and differentiated myf5:GFP+; mylpfa:mCherry+ double positive (G+R+) ERMS cells could engraft disease when isolated from mylpfa:myf5 expressing ERMS (N\u00a0=\u00a03 tumors analyzed, Table 1 and Figure 3L; p=0.0002, ELDA analysis). Importantly, engrafted tumors displayed similar differentiated histology following engraftment with sorted cells when compared with primary tumors (Figure 3B,E,H). Quantitative real-time PCR of sorted cell fractions also showed largely similar myogenic gene expression in ERMS cell subfractions isolated from either kRASG12D-expressing or kRASG12D+ myf5 expressing ERMS, confirming that our cell lineage labeling approach identified similar molecularly-defined subpopulations of ERMS cells in these tumors. One notable exception was myf5, which was also highly expressed in the G+R+ population of mylpfa:myf5 transgenic tumor as expected (Figure 3K,M). Taken together, these data show that re-expression of myf5 can lead to acquisition of tumor propagating potential in differentiated mylpfa-expressing ERMS cells in the zebrafish model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig3-v1.jpg)\n\n**Figure 3.:** Tumors were generated in myf5:GFP/mylpfa:mCherry CG1-strain syngeneic zebrafish. Representative tumors arising in primary transplanted fish (1\u00b0T, A\u2013C) or secondary transplanted fish following engraftment with highly purified myf5:GFP+, mylpfa:mCherry-negative (2\u00b0T G+, D\u2013F) or myf5:GFP+, mylpfa:mCherry+ ERMS cells (2\u00b0T G+R+, G\u2013I). Sort purity following FACS is noted in the lower left panels of D and G and was\u00a0>92% for each population. These cells were used for cell transplantations and data provided in D-I. Cell viability was\u00a0>95%. (J,L) Graphical summary of tumor engraftment following limiting dilution cell transplantation using highly purified sorted ERMS cells. Data is combined from all tumors shown in Table 1. ***p<0.0002 by ELDA analysis. (K,M) Relative gene expression analysis of sorted G+ or G+R+ ERMS cells from representative kRASG12D (K) or kRASG12D; mylpfa:myf5 (M) expressing ERMS (Standard Deviation, n\u00a0=\u00a03 technical replicates per PCR condition). *p<0.05; **p<0.01 and ***p<0.001 by Student\u2019s t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,D) Representative images of transplanted fish. ERMS were created in myf5-GFP/mylpfa-mCherry transgenic, CG1-strain syngeneic zebrafish and imaged following 30 days of engraftment. Genotypes denoted to the left. (B,E) Representative histology of transplanted tumors. (C,F) Quantification of differentiation based on histological review (1-less differentiated and 3-most differentiated). **p<0.01 by Chi-square test. (G\u2013P) Representative examples of sort purity following FACS for cells used in limiting dilution cell transplantation experiments. (G\u2013K) Sort purity following FACS for a representative kRASG12D-alone expressing ERMS and (L\u2013P) kRASG12D+ mylpfa:myf5 expressing ERMS (data is reproduced in lower left panels of Figure 3D and G). Scale bars equal 2 mm (A,D) and 100 \u03bcm (B,E).\n\n**Table 1.**\n myf5 confers tumor-propagating ability to differentiated myf5-GFP+/mylpfa-mCherry+ ERMS cells. Engrafted animals per cell dose are noted. Experiments for three independent tumors are shown. G+ (myf5-GFP+/mylpfa-mCherry-), G+R+ (myf5-GFP+/mylpfa-mCherry+), R+ (myf5-GFP-/mylpfa-mCherry+), DN (myf5-GFP-/mylpfa-mCherry-). Not applicable (NA); tumor-propagating cell frequency (TPC Freq.); 95% confidence interval (95% CI). Lower panel denotes cumulative TPC frequency for all three ERMS analyzed per genotype. Asterisk denotes p=0.0002 by ELDA analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">kRASG12D Tumor #1</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">kRASG12D + mylpfa:myf5 Tumor #1</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>6 of 6</td>\n      <td>2 of 7</td>\n      <td>0 of 6</td>\n      <td>0 of 7</td>\n      <td>1000</td>\n      <td>2 of 3</td>\n      <td>4 of 5</td>\n      <td>0 of 6</td>\n      <td>0 of 6</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>5 of 9</td>\n      <td>0 of 9</td>\n      <td>0 of 8</td>\n      <td>0 of 10</td>\n      <td>100</td>\n      <td>6 of 10</td>\n      <td>2 of 10</td>\n      <td>0 of 8</td>\n      <td>0 of 7</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>0 of 8</td>\n      <td>0 of 8</td>\n      <td>0 of 9</td>\n      <td>0 of 7</td>\n      <td>10</td>\n      <td>3 of 10</td>\n      <td>1 of 10</td>\n      <td>0 of 10</td>\n      <td>0 of 8</td>\n    </tr>\n    <tr>\n      <td>TPC Freq.</td>\n      <td>1 in 140</td>\n      <td>1 in 3561</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>TPC Freq.</td>\n      <td>1 in 81</td>\n      <td>1 in 477</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>95% CI</td>\n      <td>59\u2013329</td>\n      <td>872\u201313740</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>95% CI</td>\n      <td>40\u2013165</td>\n      <td>201\u20131129</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">kRASG12D Tumor #2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"4\">kRASG12D + mylpfa:myf5 Tumor #2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>6 of 6</td>\n      <td>0 of 6</td>\n      <td>0 of 6</td>\n      <td>0 of 6</td>\n      <td>1000</td>\n      <td>2 of 3</td>\n      <td>1 of 2</td>\n      <td>0 of 7</td>\n      <td>0 of 7</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>4 of 7</td>\n      <td>2 of 10</td>\n      <td>0 of 10</td>\n      <td>0 of 10</td>\n      <td>100</td>\n      <td>1 of 6</td>\n      <td>3 of 6</td>\n      <td>0 of 7</td>\n      <td>0 of 10</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>1 of 8</td>\n      <td>0 of 9</td>\n      <td>0 of 10</td>\n      <td>0 of 8</td>\n      <td>10</td>\n      <td>0 of 8</td>\n      <td>0 of 9</td>\n      <td>0 of 10</td>\n      <td>0 of 8</td>\n    </tr>\n    <tr>\n      <td>TPC Freq.</td>\n      <td>1 in 109</td>\n      <td>1 in 3495</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>TPC Freq.</td>\n      <td>1 in 809</td>\n      <td>1 in 467</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>95% CI</td>\n      <td>44\u2013270</td>\n      <td>808\u201315120</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>95% CI</td>\n      <td>244\u20132685</td>\n      <td>137\u20131589</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">kRASG12D Tumor #3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"4\">kRASG12D + mylpfa:myf5 Tumor #3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>2 of 3</td>\n      <td>0 of 2</td>\n      <td>0 of 3</td>\n      <td>0 of 4</td>\n      <td>1000</td>\n      <td>2 of 3</td>\n      <td>3 of 5</td>\n      <td>0 of 3</td>\n      <td>0 of 3</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>8 of 9</td>\n      <td>0 of 8</td>\n      <td>0 of 8</td>\n      <td>1 of 8</td>\n      <td>100</td>\n      <td>3 of 10</td>\n      <td>1 of 10</td>\n      <td>0 of 9</td>\n      <td>0 of 10</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>1 of 8</td>\n      <td>0 of 9</td>\n      <td>0 of 9</td>\n      <td>0 of 9</td>\n      <td>10</td>\n      <td>0 of 10</td>\n      <td>0 of 10</td>\n      <td>0 of 10</td>\n      <td>0 of 10</td>\n    </tr>\n    <tr>\n      <td>TPC Freq.</td>\n      <td>1 in 159</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>1 in 4840</td>\n      <td>TPC Freq.</td>\n      <td>1 in 530</td>\n      <td>1 in 1080</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>95% CI</td>\n      <td>63\u2013401</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>632\u201337094</td>\n      <td>95% CI</td>\n      <td>194\u20131445</td>\n      <td>395\u20132957</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Cumulative TPC frequency kRASG12D</td>\n      <td></td>\n      <td colspan=\"5\">Cumulative TPC frequency kRASG12D + mylpfa:myf5</td>\n    </tr>\n    <tr>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n      <td>Cell #</td>\n      <td>G+</td>\n      <td>G+R+</td>\n      <td>R+</td>\n      <td>DN</td>\n    </tr>\n    <tr>\n      <td>TPC Freq.</td>\n      <td>1 in 146</td>\n      <td>1 in 4206</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>TPC Freq.</td>\n      <td>1 in 377</td>\n      <td>1 in 639*</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>95% CI</td>\n      <td>87\u2013245</td>\n      <td>1550\u201311409</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>95% CI</td>\n      <td>212\u2013670</td>\n      <td>363\u20131125</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n### MYF5 and MYOD are required for continued tumor growth in human RMS\n\nTo explore the role of MRFs in human RMS, we next assessed MYF5 and MYOD transcript expression in human primary tumor samples. Analysis of microarray gene expression (N\u00a0=\u00a0133 samples) (Davicioni et al., 2009) and RNA-sequencing (RNA-seq) data sets (N\u00a0=\u00a098 samples) (Shern et al., 2014) uncovered that MYOD and MYF5 were expressed along with specific muscle genes and defined two distinct gene regulatory modules in human RMS. One gene module included the co-expression of MYF5, MYF6 and PAX7 while the other expressed MYOD and higher levels of CDH15, and MYOG (Figure 4A,B). This correlation in gene expression was seen in comparison of all human RMS (Figure 4A,B) or within specific RMS subtypes (Figure 4\u2014figure supplement 1), suggesting that MYF5 and MYOD likely sit atop a transcriptional hierarchy to regulate muscle-specific gene programs in RMS. We next assessed a panel of human RMS cell lines for expression of MYF5 and MYOD following Western blot analysis. Remarkably, we found that the expression of these proteins was largely mutually exclusive in human RMS cell lines (N\u00a0=\u00a07, Figure 4C), suggesting that these proteins may act redundantly to regulate human RMS growth. This analysis also uncovered that only the Rh18 ERMS cells expressed MYF5 in our panel of human cell lines. MYF5 and MYOD expression were also assessed at the single cell level through immunofluorescence and verified that MYF5 and MYOD were mutually exclusively expressed in Rh18 and RD cells (Figure 4\u2014figure supplement 2). Collectively, our data show significant inter-tumoral heterogeneity in the expression of myogenic factors in human RMS and suggests convergence of these transcription factors on regulating a common set of genes that are likely required for RMS growth.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Pearson correlation for gene expression of myogenic genes in primary human RMS as assessed by microarray (A) or RNA-sequencing (B). Heatmap represents correlation coefficients. (C) Western blot analysis for MYF5 and MYOD in human RMS cell lines. (D\u2013I) Rh18 ERMS cells following MYF5 knockdown with siRNA (D\u2013F) or shRNA (G\u2013I). (J\u2013O) RD ERMS cells following MYOD knockdown with siRNA (J\u2013L) or shRNA (M\u2013O). Western blot analysis following knockdown at 48 hr (D,J) and 72 hr (G,M). EdU and Propidium Iodide (PI) cell cycle analysis assessed by flow cytometry at 48 hr (E,F,K,L) and 72 hr (H,I,N,O). Standard Deviation denoted in FACS plots and graphs. Analysis shown in D-O was completed as technical replicates and completed\u00a0\u22653 independent times with similar results. ***p<0.001 by Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analysis of RNA-seq data from primary fusion-negative RMS (FN-RMS, N\u00a0=\u00a070) and (B) fusion-positive RMS (FP-RMS; N\u00a0=\u00a033 samples).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Confocal microscopy images of DAPI and antibody immunofluorescence-staining of Rh18 cells treated with control siRNA or si-MYF5 for 72 hr. (B) Confocal microscopy images of DAPI and antibody immunofluorescence staining of RD cells treated with control siRNA or si-MYOD. Anti-MYOD (green) and anti-MYF5 (red) and counterstained with DAPI (blue). Merged image shown to right. Scale bar equals 100 \u03bcm. Arrows denote representative examples of MYF5+/MYOD-negative RH18 cells in (A) and MYF5-negative/MYOD+ RD cells in (B).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013E) Rh18 ERMS cells following MYF5 knockdown and (F\u2013J) RD ERMS cells following MYOD knockdown. EdU/PI Flow cytometry analysis performed at 72 hr post transfection with shRNAs (A,F). AnnV Flow cytometry quantification performed at 96 hr post siRNA transfection (B,G) or shRNA transfection (C\u2013D). Quantitation of nuclei counts performed on shRNA treated cells at 96 hr post infection (E,H). (I,J) Sphere colony formation assays performed in RD ERMS cells. Representative images of sh-SCR, sh-MYOD #1 and sh-MYOD #2 treated cells (I), images denote growth when seeding at 1 \u00d7 104 cells/well). Quantification of total spheres formed following seeding with different numbers of cells/well (J). Analysis was completed as technical replicates and completed\u00a0\u22653 independent times with similar results. *p<0.05; **p<0.01; ***p<0.001 by Student\u2019s t-test. Scale bar equals 50 um.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013L) siMYOD knockdown effects in human RMS cell lines. (A\u2013D) 381T ERMS; (E\u2013H) RMS559 ERMS; (I\u2013L) Rh3 ARMS/FP-RMS cells. (A,E,I) Western Blot analysis performed at 48 hr post siRNA transfection. (B,F,J) FACS plots for EdU/PI staining of cells at 48 hr after si-RNA transfection. (C,G,K) Quantification of EDU results. (D,H,L) AnnexinV Flow Cytometric analysis performed at 96 hr post transfection with si-SCR control, si-MYF5 or si-MYOD. (M\u2013T) MRF knockdown is specific to each expressed transcription factor. Western blot analysis of Rh18 (M), RMS559 (N), Rh3 (O) and 381T (P) cells following 48 hr of siRNA treatment. Quantitation of Edu/PI flow cytometric analysis for Rh18 (Q), RMS559 (R), Rh3 (S) and RD (T) cells following 48 hr of siRNA treatment. Knockdown effects for RD cells are shown in Figure 6E. Error bars denote +/-STD from three technical replicates. Experiments were replicated three times on different days, showing similar results. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 by Student\u2019s t-test. Not significant (n.s.).\n\nHuman Rh18 ERMS cells express high levels of MYF5 and were utilized in loss-of-function studies to assess roles in regulating proliferation, growth, and apoptosis. MYF5 protein expression was effectively reduced following si-MYF5 mediated knockdown (Figure 4D) and resulted in significant impairment of cell proliferation as assessed by EdU-incorporation and flow cytometry (Figure 4E\u2013F, p<0.001, Student\u2019s t-test). For example, si-MYF5 treated cells showed a remarkable 70% reduction in S-phase cycling cells following 48 hr of treatment (p<0.001, Student\u2019s t-test, Figure 4E\u2013F). Apoptosis was not increased in si-MYF5 treated cells at 72 hr but lead to increased numbers of apoptotic cells by 96 hr (Figure 4\u2014figure supplement 3B). These results were independently confirmed using stable knockdown with three independent lentiviral shRNAs specific to MYF5 (Figure 4G\u2013I, protein knockdown ranged from 50\u201395%). All sh-MYF5 knockdown cells showed a remarkable cell cycle arrest with a virtual abrogation of S-phase cycling cells (Figure 4H\u2013I and Figure 4\u2014figure supplement 3A; p<0.001, Student\u2019s t-test). This phenotype was not associated with an overall increase in apoptosis (Figure 4\u2014figure supplement 3C,D) and yet lead to a significant 60% decrease in cell number as assessed by manual nuclei counts performed at 96 hr and compared with shRNA control treated cells (Figure 4\u2014figure supplement 3E). We conclude that MYF5 loss results in impaired cell cycle and secondarily elevates apoptosis.\n\nTo assess if MYOD can also drive continued tumor growth and proliferation in human RMS, we next performed MYOD knockdown in human RD ERMS cells. siRNA knockdown resulted in reduced proliferation and a striking reduction in S-phase cycling cells (Figure 4J\u2013O; p<0.001, Student\u2019s t-test). In keeping with our model that apoptotic cell death was induced secondary to cell cycle defects, we found that si-MYOD treatment had no effect on viability after 72 hr of knockdown, while analysis at 96 hr post-treatment resulted in elevated cell death of RD knockdown cells (Figure 4\u2014figure supplement 3G). shRNA knockdown showed similar effects on suppressing cell cycle progression and growth (Figure 4M\u2013O and Figure 4\u2014figure supplement 3F,H). In fact, RD cell number was reduced\u00a0>30% following stable sh-MYOD knockdown (Figure 4\u2014figure supplement 3H). In support of MYOD having important roles in regulating TPC number, sphere colony formation was also greatly reduced in RD cells following shRNA knockdown (p<0.01, Figure 4\u2014figure supplement 3I,J). Sphere colony formation is an in vitro surrogate for quantifying TPC number and correlates well with in vivo limiting dilution cell transplantation experiments (Walter et al., 2011; Satheesha et al., 2016). Finally, MYOD knockdown also impaired cell cycle and growth in additional RMS cell lines including ERMS cell lines 381T and RMS559 and the ARMS cell line Rh3. These cells lines all had significant reductions in S-phase cycling cells following siRNA treatment with variable effects on apoptosis at the time points analyzed (Figure 4\u2014figure supplement 4A\u2013L). Importantly, specificity of MYF5 and MYOD knockdown was confirmed in multiple cells lines, showing that siRNA knockdown effects were specific to each MRF and that myogenic factors were not redundantly re-expressed following knockdown (Figure 4\u2014figure supplement 4M\u2013T). In total, our data show that MYF5 and MYOD are individually expressed in different RMS tumor cells and yet have similar roles in regulating cell cycle progression and proliferation in RMS.\n\n### Myogenic transcription factors are required for continued xenograft growth\n\nGiven the prominent role MYF5 had in regulating cell growth in human ERMS cells in vitro and imparting tumor propagating potential to differentiated zebrafish ERMS cells, we next wanted to assess if MYF5 was required for ERMS maintenance and growth in vivo. Rh18 cells were infected with shRNAs and harvested at 72 hr post-infection. MYF5 knockdown was confirmed by Western blot analysis (Figure 5A). Luciferase-mKate expressing Rh18 shRNA cells were transplanted into the flanks of NOD/SCID/IL2rg null mice (1 \u00d7 106 viable cells in matrigel per site). Non-targeting control shRNA cells were implanted subcutaneously into the left flank and MYF5 knockdown cells into the right (N\u00a0=\u00a06 animals, two independent shRNAs). 5 hr after injection, mice were injected with luciferin and bioluminescence was measured, confirming that the same amount of control and knockdown cells had been injected into recipient mice (Figure 5B). Serial bioluminescence imaging showed that tumor volume was reduced in MYF5 knockdown cells while control cells continued to grow (p<0.05, Student\u2019s t-test; Figure 5\u2014figure supplement 1A). MYF5 knockdown cells were largely undetected at late time points (p<0.05, Student\u2019s t-Test; Figure 5B,C). Analysis of mice at necropsy revealed that only 2 of 12 mice had tumors derived from MYF5-deficient Rh18 cells and that overall tumor weight was greatly reduced when compared with control Rh18 knockdown cells (p<0.01; Student\u2019s t-test; Figure 5D\u2013E). For these rare ERMS that developed from MYF5 knockdown Rh18 cells, they retained ERMS histology (Figure 5\u2014figure supplement 1D,E). Taken together, these data show that MYF5 is required for efficient xenograft tumor cell growth in vivo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig5-v1.jpg)\n\n**Figure 5.:** Xenograft growth in Rh18 (A\u2013E), RD (F\u2013J), and RMS559 (K\u2013O) following knockdown with scramble control shRNA (sh-SCR) or shRNAs specific to MYF5 or MYOD. (A,F,K) Western blot analysis of shRNA expressing cells harvested for transplantation at 72 hr after lenti-viral shRNA knockdown. Percent knockdown compared to shRNA control is shown. (B,G,L) Luciferase bioluminescent imaging of a representative animal at the time of implantation (left panel) or at later time points (right panel). Control shRNA cells were implanted into left flank and knockdown cells into the right (N\u00a0=\u00a06 mice per shRNA). Intensity represents total luminescence units measured per region of interest (L.U.) (C,H,M) Quantification tumor volume when assessed by luciferase imaging. Relative luminescence units (R.L.U). (D,I,N) Representative images of mice at the time of necropsy, with excised tumors shown in lower panels. (E,J,O) Quantification of tumor weight at the time of necropsy. Tumors that could not be identified at time of necropsy were assigned a value of zero for this analysis. Standard Error of the Mean are denoted in graphs. **p<0.01; ***p<0.001 by Mann-Whitney non-parametric test. Scale bar equals 1 cm in D,I, and N.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Quantification of tumor growth when assessed by luciferase bioluminescence imaging over time. Rh18 (A), RD (B), and RMS559 (C). N\u00a0=\u00a06 animals per analysis. Error bars denote Standard Error of the Mean (SEM). *p<0.05; **p<0.01; ***p<0.001 by Student\u2019s t-test. (D\u2013I) Hematoxylin Eosin stained sections of representative tumors isolated from mice engrafted with shRNA expressing Rh18 (D\u2013E), RD (F\u2013G), and RMS559 (H\u2013I). Scale bars equal 50 um.\n\nNext, we assessed if MYOD was also important for continued xenograft growth of human ERMS cells. Using the same approach outlined above, we found that shRNA knockdown of MYOD resulted in efficient knockdown prior to tumor cell implantation (Figure 5F,K) and reduced xenograft growth of both RD and RMS559 cells when assessed by total body luciferase imaging completed overtime (p<0.01; Figure 5F\u2013H,K\u2013M and Figure 5\u2014figure supplement 1B,C). MYOD knockdown tumors were also smaller at the time of necropsy (Figure 5I,N) and weighed significantly less than control shRNA expressing tumors (p<0.01, Student\u2019s t-test; Figure 5J,O). Unlike our Rh18 experiments, MYOD knockdown cells continued to grow in transplant recipient animals, albeit at greatly reduced levels. These data suggest both important similarities for MRF factors in driving proliferation and growth and yet, also suggest that additional molecular mechanisms likely contribute to continued tumor growth in MYOD-expressing ERMS. As with the Rh18 experiments, tumors that formed following shMYOD knockdown retained similar RMS morphology when compared with control treated cells (Figure 5\u2014figure supplement 1F\u2013I).\n\n### MYF5 and MYOD control common transcriptional targets to regulate proliferation and myogenic state in human RMS\n\nOur work uncovered that MYF5 and MYOD are largely mutually exclusively expressed in RMS and that each is required for proliferation. MYF5 and MYOD also bind directly to enhancers of well-known muscle regulated genes in development, including myogenin and CDH15 (m-cadherin) (Conerly et al., 2016). These data suggest that these transcription factors likely regulate a common set of transcriptional targets that lock RMS cells in a proliferative myogenic state. To further explore this hypothesis, we next performed ChIP-seq for MYF5 in Rh18 cells and compared these results with ChIP-seq data performed for MYOD in RD cells (MacQuarrie et al., 2013a) (Figure 6 and Figure 6\u2014figure supplement 1). This analysis uncovered a common set of promoter and enhancer regions bound by both MYOD and MYF5 (Figure 6A). 86% of commonly bound genomic DNA regions were confined to enhancer regions as defined by H3K27-acetylation occupancy (Figure 6A,B). Unbiased analysis of commonly bound target genes using GREAT (McLean et al., 2010), Supplementary file 2) revealed an enrichment of genes that regulate cell cycle and myogenic cell fate (Figure 6C). Enrichment of GO terms included \u2018cyclin-dependent protein kinase holoenzyme complex\u2019 (Supplementary file 3), \u2018skeletal muscle tissue development\u2019 and \u2018embryonic skeletal system development\u2019 (Supplementary file 4; binomial, p<1x10\u22129). Signal tracks of ChIP-seq and RNA-seq independently confirmed common binding of MYF5 and MYOD to genes that regulate cell cycle and myogenic cell fate (Figure 6D), including cyclin-dependent kinase cyclin D2 (CCND2), myogenin (MYOG), and cadherin 15 (m-Cadherin, CDH15, Figure 6D and Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013B) ChIP-seq analysis showing genomic regions bound by both MYOD in RD cells and MYF5 in RH18 cells. H3K27 acetylation (H3K27ac). (C) Gene ontology enrichment of gene regions bound by both MYOD in RD cells and MYF5 in RH18 cells. GO Biological Processes, GO Cellular Component predictions, and binomial p-values denoted. (D) Signal tracks for ChIP-seq and RNA-seq surrounding MYOG (top) and CCND2 (bottom). Numbers to the right indicate reads per million mapped reads. (E) Quantitative real-time PCR gene expression analysis of RH18 (top) and RD cells (bottom). Cells were assessed following siRNA-mediated knockdown at 2 days (2dpt, blue bars) or 3 days post-transfection (three dpt, red bars). Error bars denote standard deviation. Student\u2019s t-test; *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) ChIP-seq identified genomic locations bound by MYOD in RD cells, MYF5 in RH18 cells, and H3K27 acetylation (H3K27ac). Common binding sites are denoted by boxed region at the top and reproduced in Figure 6. (B) Signal tracks for ChIP-seq and RNA-seq surrounding CDH15. Numbers to the right indicate reads per million mapped reads.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19214/elife-19214-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Quantitative real-time PCR gene expression performed on bulk zebrafish ERMS cells, comparing ccnd2a expression in zebrafish ERMS that express kRASG12D alone (K, N\u00a0=\u00a04) or co-express mylpfa:myf5 (K+M, N\u00a0=\u00a05). Average gene expression with 50% confidence intervals denoted by box. Mean, maximum, and minimum also denoted. Three independent primer pairs confirm a trend toward higher ccnd2a expression in mylpfa:myf5 expressing ERMS.\n\nIn order to show that MYF5 and MYOD are regulators of cell fate, we next performed qRT-PCR gene expression analysis for muscle differentiation genes following si-MYF5 or si-MYOD knockdown in Rh18 and RD cells, respectively (Figure 6E). As expected if myogenic transcription factors regulate muscle cell fate, both Myogenin and CDH15 were downregulated following MYF5 or MYOD knockdown at either 48 or 72 hr (Figure 6E). Additionally, the cell cycle regulatory gene, CCND2 was also reduced following MYF5 or MYOD knockdown (Figure 6E). Moreover, the zebrafish orthologue ccnd2a transcript showed a trend toward higher expression in mylpfa:myf5 expressing zebrafish ERMS (Figure 6\u2014figure supplement 2), correlating well with elevated myf5 expression in these tumors. CCND2 is a CDK4/6-associated cyclin that is amplified in a subset of human RMS and is required for cell proliferation and viability in human RMS (Chen et al., 2013a). Importantly, CCND2 is a predicted direct target of MYF5 and MYOD binding (Conerly et al., 2016). Together, our data show that MYF5 and MYOD regulate common gene programs that lock cells in an arrested myogenic fate and are required for sustained proliferation of RMS cells.\n\n## Discussion\n\nRhabdomyosarcomas express b-Helix-loop-Helix (bHLH) myogenic regulatory transcription factors (MRFs), including MYF5 and MYOD (Clark et al., 1991; Kumar et al., 2000; Sebire and Malone, 2003) but fail to activate terminal muscle differentiation programs. Several mechanisms have been shown to play a role in this differentiation arrest. These include disruption of the balance of MRF-E12 heterodimers and inhibitor complexes (Macquarrie et al., 2013b; Yang et al., 2009), presence of inhibitory miRNAs (Macquarrie et al., 2012), and deregulation of cell cycle (Fiddler et al., 1996). These data have therefore led to the suggestion that MRFs do not have a role in RMS transformation or in sustained tumor growth, but are merely retained from the target cell of transformation (Keller and Guttridge, 2013). While MYOD overexpression fails to differentiate ERMS cells (Yang et al., 2009), both MYF5 and MYOD potently reprogram fibroblasts into proliferating muscle cells (Braun et al., 1989; Tapscott et al., 1988). Moreover, MYF5 and MYOD are commonly re-expressed in experimental animal models of RMS irrespective of the cell of origin (Hettmer et al., 2011, 2015; Ignatius et al., 2012; Langenau et al., 2007; Rubin et al., 2011; Storer et al., 2013) suggesting roles for these transcription factors in driving tumor growth and TPC function. Our experiments have shown that Myf5 can impart tumor-propagating potential to ERMS cells in the zebrafish model, suggesting important roles for myogenic regulatory transcription factors in regulating growth. These data were confirmed by loss-of-function studies in human RMS where MYF5 or MYOD knockdown suppressed RMS proliferation and reduced viability in vitro. Similar effects were also observed in xenograft studies, where MYF5- and MYOD-knockdown ERMS cells failed to grow efficiently in vivo. Remarkably, despite over 25 years of study into MYOD and MYF5, loss-of-function studies in RMS have not been reported and thus roles for these factors in regulating RMS growth have gone unappreciated.\n\nIt is becoming increasingly noted that developmental transcription factors and pathways are commonly co-opted by cancer to regulate growth and tumor-propagating activity. For example, the TAL1/SCL bHLH transcription factor is required for hematopoietic stem cell specification and self-renewal during development. TAL1/SCL is overexpressed in 60% of T-cell acute lymphoblastic leukemia (T-ALL) (Ferrando et al., 2002) and can reprogram thymocytes into self-renewing, pre-leukemic cells (Gerby et al., 2014). This same paradigm has also been seen in brain tumors. For example, the bHLH transcription factor OLIG2 is required for self-renewal of normal neural progenitor cells (Imayoshi and Kageyama, 2014) and is also a marker of glioblastoma TPCs (Beyeler et al., 2014; Ligon et al., 2007; Suv\u00e0 et al., 2014; Tr\u00e9pant et al., 2015). Our results in RMS parallel those outlined for T-ALL and glioblastoma, showing that MRFs are capable of reprogramming differentiated RMS cells into TPCs and are required for sustained proliferation and viability of human RMS. Our data also suggests, that like T-ALL and glioblastoma, the MYF5 and MYOD bHLH proteins regulate common molecular pathways in self-renewal and growth of both normal and malignant muscle. Importantly, transcription factors have recently been therapeutically targeted (Bhagwat and Vakoc, 2015; Roe et al., 2015), raising hope that developing drugs that inhibit MYF5 and MYOD cancer cell dependencies could be efficacious in treating RMS patients in the future.\n\nOur molecular analysis also uncovered that MYF5 and MYOD are mutually-exclusively expressed in human RMS. Loss-of-function studies uncovered important roles for either MYF5 or MYOD in regulating RMS growth and muscle cell fate. This data contrasts starkly with co-expression of these factors and functionally overlapping roles in development. For example, MYF5 and MYOD are well-known to act redundantly in muscle development to regulate muscle specification and differentiation (Rudnicki et al., 1993). This same redundancy of Myf5 and MyoD in development and muscle injury has now been reported in zebrafish (Hinits et al., 2009; Siegel et al., 2013), Drosophila (Abmayr and Keller, 1998) and Xenopus (Chanoine and Hardy, 2003), showing a high conservation of the MYOD/MYF5 transcriptional machinery in regulating muscle specification and development throughout evolution. These same MRFs are also required for self-renewal of adult muscle satellite cells (Cooper et al., 1999; Ustanina et al., 2007; Yablonka-Reuveni et al., 1999), yet roles for these factors in individually regulating muscle fate and self-renewal are now just emerging in the literature. For example, a subset of muscle progenitors are specified by MYOD without the contribution of MYF5 (Haldar et al., 2008, 2014). Moreover, a subset of adult muscle progenitors express MYF5 and then MYOD sequentially during their specification with both being required for muscle regeneration following injury (Comai et al., 2014). Our data suggest that either MYOD or MYF5 are uniquely expressed within human RMS and are each individually sufficient to drive tumor growth. These data are consistent with similar roles for either Myf5 or MyoD to reprogram fibroblasts into muscle cell fates (Braun et al., 1989; Tapscott et al., 1988) and a high degree of overlap in binding of common enhancer and promoter targets with normal myoblasts (Conerly et al., 2016).\n\nFinally, our work uncovered downstream pathways required for RMS growth that were regulated by MYOD and MYF5, including muscle specification programs and cell cycle. For example, m-cadherin (CDH15) and myogenin (MYOG) were transcriptionally regulated by MYF5 and MYOD in human RMS, consistent with regulation of these same factors by MYF5 and MYOD in myoblasts (Conerly et al., 2016). Our work also uncovered roles for MRFs in regulating cyclin D2 (CCND2) in human RMS. Importantly, the CDK4/6-associated cyclin D2 (CCND2) complex is required for both myoblast proliferation and human RMS growth, is highly expressed in primary human RMS and is amplified in a subset of human and zebrafish RMS (Chen et al., 2013a; Saab et al., 2006; Webster and Fan, 2013). Collectively, our data suggest that MYOD and MYF5 likely exert import roles in regulating muscle cell identity and cell cycle regulation, both of which are required for sustained tumor growth and likely shared with normal muscle to regulate stem cell self-renewal.\n\n## Materials and methods\n\n### Animals and protocol approvals\n\nStudies were approved by the Massachusetts General Hospital Subcommittee on Research Animal Care under the protocol #2011 N000127 (zebrafish) and #2013 N000038 (mouse). Biosafety lentiviral work was approved by the Partners IBC under protocol #2013B000039. Zebrafish used in this work include: CG1 strain (Mizgireuv and Revskoy, 2006), myf5-GFP\u00a0(Chen et al., 2007) and mylpfa-mCherry (previously mylz2-mCherry)(Xu et al., 1999) transgenic zebrafish lines and ragE450fs (ZFIN IND rag2fb101) homozygous fish (Tang et al., 2014; Tenente et al., 2014). myf5-GFP/mylpfa-mCherry double transgenic fish (AB strain) were outcrossed 10 times into CG1-strain zebrafish to generate compound syngeneic transgenic zebrafish (Ignatius et al., 2012). 6-week-old NOD/SCID/Il2rg null female mice were used in this work.\n\n### Micro-injection and ERMS generation in transgenic zebrafish\n\nrag2-kRASG12D and mylpfa-mCherry constructs were described previously (Langenau et al., 2007; Smith et al., 2010). The mylpfa-myf5 construct was obtained by gateway cloning using a zebrafish myf5 ORF from 24hpf zebrafish embryo cDNA (http://tol2kit.genetics.utah.edu). rag2-kRASG12D and mylpfa-myf5 constructs were linearized with XhoI, phenol:chloroform-extracted, ethanol-precipitated, re-suspended in 0.5\u00d7 Tris-EDTA\u00a0+\u00a00.1 M KCl, and injected into one-cell stage embryos of the respective backgrounds, as previously described (Langenau et al., 2007; Tenente et al., 2014). We and others have used the mylpfa promoter to drive transgene expression in differentiated muscle cells both in the stable and mosaic transgenic setting (Ju et al., 2003; Ignatius et al., 2012; Storer et al., 2013; Tang et al., 2016) confirming that mylpfa transgene expression is confined to differentiated ERMS cells.\n\n### Quantification of zebrafish RMS size, tumor onset, and penetrance\n\nZebrafish were monitored every 3\u20134 days for time-to-tumor onset using an epi-fluorescent stereomicroscope. Animals were imaged at 10 days postfertilization until 55 days postfertilization. Primary tumor size was quantified from 6.3x or 10x photomicrographs taken at 30 postfertilization and calculated by multiplying fluorescence intensity by 2D pixel area using the ImageJ software package as previously described (Chen et al., 2014). Kaplan-Meier tumor onset and penetrance analysis was performed using Graphpad Prism Software and statistically analyzed using the Log-rank statistic.\n\n### Zebrafish histology, immunohistochemistry and EdU incorporation\n\nParaffin embedding, sectioning and immunohistochemical analysis of zebrafish sections were performed as described (Chen et al., 2013a, 2014; Ignatius et al., 2012). Antibodies used for immunohistochemistry included: phospho-H3 (1:6000, Santa Cruz Biotechnology, Dallas, Texas) and cleaved-caspase3 (CC3, 1:250, Cell Signaling Technology, Danvers, MA). All histopathology procedures were performed at the MGH and BWH DF/HCC Research Pathology Cores. Slides were imaged using a transmitted light Olympus BX41 microscope. Pathology review and staging were completed by G.P.N. Tumor histology classification was assigned as described in Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 1 with stage one being the least differentiated with tumors being comprised of only small round blue cells. Stage 2 and 3 ERMS were assigned based on the preponderance of rhabdomyoblast cells, fibrous and spindle cell morphology, with a low proportion of interspersed smaller round blue cells. EdU was injected intraperitoneally into live tumor-bearing zebrafish and incubated for 6 hr prior to fixation as described previously (Ignatius et al., 2012). Animals were cryosectioned and stained using the Click-iT Alexa Fluor 647 imaging kit (Invitrogen,\u00a0Carlsbad,\u00a0CA). Images were acquired using a Zeiss 710 Confocal microscope(Zeiss,\u00a0Oberkochen,\u00a0Germany).\n\n### Zebrafish ERMS cell transplantation and FACS\n\nFACS analysis and RMS cell transplantation by intra-peritoneal injection were completed essentially as described (Chen et al., 2014; Ignatius et al., 2012; Langenau et al., 2007; Smith et al., 2010). Freshly isolated RMS tumor cells were stained with DAPI to exclude dead cells and sorted twice using a Laser BD FACSAria II Cell Sorter. Sort purity and viability were assessed after two rounds of sorting when possible, exceeding 85% and 95% respectively. Fish were monitored for tumor engraftment from 10 to 120 days post transplantation. Tumor-propagating cell frequency was quantified following transplantation into CG1 syngeneic recipient fish using the Extreme Limiting Dilution Analysis software (http://bioinf.wehi.edu.au/software/elda/). A subset of transplanted fish were fixed in 4% PFA in PBS, sectioned, stained with Hematoxylin and Eosin (H and E), and staged for differentiation score.\n\n### Gene expression analysis\n\nTotal RNA was isolated from AB-strain embryos 6 and 24 hr postfertilization, FAC-sorted ERMS cell subpopulations, bulk unsorted primary zebrafish ERMS or human RMS samples. Quantitative real-time PCR utilized gene-specific PCR primers (Supplementary file 1), and expression was normalized to 18S controls (zebrafish samples) or GAPDH (human samples) to obtain relative transcript levels using the 2-ddCT method. Technical triplicates were completed for all qRT-PCR reactions and data presented as average expression\u00a0\u00b11 standard deviation. For zebrafish RMS sub-populations, relative gene expression was normalized within individual samples, and cumulative transcript expression across the two ERMS cell subpopulations was set to 50. Samples were assessed in relation to 24 hr postfertilization embryos to ensure that results for 2-ddCT results for any given gene were not lower than 10-fold expression found in normal development, as previously described (Ignatius et al., 2012). For zebrafish bulk primary ERMS gene expression analysis, samples were also assessed in relation to 24 hr postfertilization embryos. For human RMS gene expression analysis, knockdown samples were assessed in relation to si-SCR controls.\n\n### Human RMS cell lines\n\nThe human RD cell line was obtained from ATCC\u2019s cell biology collection (Manassas, Virginia). SMS-CTR, 381T, Rh3, Rh5 and Rh30 cell lines were kindly provided by Dr. Corrine Linardic (Duke University, North Carolina), the Rh18 cell line (fusion-negative) by Dr. Peter Houghton (Ohio State University, now at UTHSCSA) and RMS559 by Dr. Jonathan Fletcher (Brigham and Women\u2019s Hospital, Massachusetts). All RMS cell lines were authenticated by STR profiling and were mycoplasma tested. Cell lines used in this work are not commonly misidentified based on the International Cell Line Authentication Committee. The human MB1208-1 human skeletal myoblast cell line was kindly provided by Dr. Louis Kunkel (Boston Children\u2019s Hospital, Massachusetts). Characteristics of these human RMS (Hinson et al., 2013; Sokolowski et al., 2014) and skeletal myoblast (Alexander et al., 2011) cell lines have been reported previously.\n\n### Western blot analysis\n\nTotal cell lysates from human RMS cell lines were obtained following lysis in 2%SDS lysis buffer supplemented with protease inhibitors (Santa Cruz Biotechnology,\u00a0Dallas,\u00a0Texas). Samples were boiled, vortexed and homogenized through a 28G syringe. 20\u201340 \u03bcg of protein was loaded in 4\u201320% Mini-Protean TGX gels (Biorad,\u00a0Hercules,\u00a0CA) and transferred onto PVDF membranes. Western blot analysis used primary antibodies: rabbit a-MYF5 (1:5000, Abcam ab125078,\u00a0Cambridge,\u00a0MA), mouse a-MYOD1 (1:1000, Abcam ab16148,\u00a0Danvers,\u00a0MA), rabbit a-MYOD1 (1:1000, Abcam ab133627), rabbit a-GAPDH (1:2000, Cell Signaling 2118), mouse a-TUBULIN (1:2500, Abcam ab4074) and secondary antibodies: HRP anti-rabbit (1:2000, Cell Signaling 7074) or HRP anti-mouse (1:3000, GE Healthcare NA93IV,\u00a0Marlborough,\u00a0MA). Blocking was completed using 5% skim milk/TBST. Membranes were developed using an ECL reagent (Western Lightening Plus-ECL, Perkin Elmer,\u00a0Waltham,\u00a0MA or sensitive SuperSignal West phemto Maximum Sensitivity Substrate, Thermo Scientific,\u00a0Waltham,\u00a0MA).\n\n### MYF5 and MYOD siRNA knockdown and immunofluorescence\n\nGene-specific smart-pool or control siRNAs (Dharmacon, GE Life Sciences,\u00a0Marlborough,\u00a0MA) (0.01 \u03bcM) were reverse-transfected into cells using RNAiMax lipofectamine transfection reagent (Life Technologies,\u00a0Waltham,\u00a0MA) in flat clear bottom 96 well plates. Cells were then fixed at 72 hr post transfection in 4% PFA/PBS, washed in x1 PBS and permeabilized in 0.5% TritonX-100/PBS. Antibodies used were rabbit a-Myf5 (1:400, Abcam ab125078) and mouse a-MyoD (1:200, Abcam ab16148) in 2% goat serum/PBS, Alexa 488 goat anti-mouse (1:1000, Invitrogen A11029) and Alexa 594 goat anti-rabbit (1:1000 Invitrogen A11037). Cells were incubated with DAPI (1 \u03bcg/ml), and imaged at 200x using a LSM710 Zeiss Laser scanning confocal microscope. Images were processed in ImageJ and Adobe Photoshop.\n\nFor EdU and AnnexinV assays, gene-specific smart-pool or control siRNAs (Dharmacon, GE Life Sciences) (5 \u03bcM) were added to Rh18, RD, 381T, RMS559 and Rh3 cells in a 6-well plate and incubated for 48\u201396 hr prior to analysis.\n\n### MYF5 and MYOD lentiviral shRNA knockdown\n\nNon-targeting scrambled (SCR) control shRNA and MYF5 or MYOD specific shRNAs were delivered on the pLKO.1-background vector (from MGH Molecular Profiling Laboratory) and packaged using 293T cells (Supplementary file 1). RMS cells were infected with viral particles for 24 hr at 37\u00b0C with 8 \u03bcg/ml of polybrene (EMD Millipore,\u00a0Billerica,\u00a0MA).\n\n### Human RMS in vitro assays\n\nNuclei counts were performed following incubation with NucBlue Live ReadyProbes Reagent (Life Technologies). Cells were imaged at 100X and 400X magnification using an inverted fluorescent microscope. Manual cell counts were performed using the ImageJ software. Three fields were counted per well and completed in triplicate. Cell cycle analysis was performed using the EdU Click-iT plus EdU Flow Cytometry-AlexaFluor 647 picol azide assay (Life Technologies) following 2 hr (RD, 381T, Rh3, RMS559) or 6 hr incubation (Rh18) with 10 \u03bcM EdU. Apoptosis was assessed using the AnnexinV-AlexaFluor 647/PI or 7AAD assays (Life Technologies\u00a0and BD Biosciences, San Jose, CA). Flow cytometric analysis was performed using the SORP4 Laser BD LSRII Flow Cytometer and processed with the FlowJo Software. All experiments were run as technical triplicates and repeated\u00a0\u22653 independent times. Sphere formation assays using RD cells were completed essentially as previously described (Walter et al., 2011).\n\n### Primary human RMS gene expression and correlation analysis\n\nPreviously published microarray gene expression data were processed and normalized using Robust Multichip Average (RMA) normalization (Davicioni et al., 2006) (raw data was obtained from the NCI Cancer Array Database). Previously published RNA-seq gene expression data from human RMS were processed and normalized using a standard Tuxedo pipeline (Shern et al., 2014; Trapnell et al., 2012). The resulting expression values from the microarray and RNA-seq datasets were then log2 transformed. Pearson correlation was determined for the following genes: CDH15, MYF5, MYF6, MYOD1, MYOG, PAX3, and PAX7. The correlation heatmap was plotted using the R package \u2018fheatmap\u2019 (Fantastic Heatmap. R package version 1.0.1. http://CRAN.R-project.org/package=fheatmap) and processed using Adobe Photoshop.\n\n### ChIP-seq of human RMS cell lines\n\nChromatin immunoprecipitations were performed on Rh18 cells using the Chip-IT High sensitivity kit (Active Motif,\u00a0Carlsbad,\u00a0CA) and anti-H3K27ac (Active Motif) or anti-MYF5 (C-20, Santa Cruz) antibodies. Resultant purified immune-precipitated DNA was used for library preparation using the TruSeq ChIP sample preparation kit (Illumina, San Diego ,CA) without modifications. 11\u201318 library preps were mixed for multiplexed single read sequencing using the NextSeq500 (Illumina).Previously published MYOD ChIP-seq data from RD was downloaded and processed in parallel with the newly generated sequencing data (GSE50415, GSE84630) (MacQuarrie et al., 2013a). Reads were aligned to the hg19 reference using BWA. ChIP-seq peaks were identified using MACS 2.1 (Zhang et al., 2008). Gene ontology was performed using GREAT (McLean et al., 2010). Differential peak calling between RD and Rh18 was performed using bedtools v2.25.0 and visualized using NGS plot (Shen et al., 2014). Genomic regions were visualized using IGV v2.3.40.\n\n### Mouse xenografts, luciferase imaging, necropsy and histological analysis\n\nRh18, RD and RMS559 ERMS cells were co-infected with pLKO.1-shRNA lentivirus and pLKO.1-luc-mKate (gift from Drs. Matthijssens and Van Vlierberghe, Ghent University, Belgium). At 3 days post-infection, cells were collected and counted. An aliquot of cells was analyzed using the SORP4 Laser BD LSRII Flow Cytometer to determine viability following DAPI staining. Separate aliquots of cells were harvested and used for Western blot analysis. Equal numbers of viable cells were then embedded into Matrigel (Corning Life Sciences, Tewksburg ,MA) at a final concentration of 1 \u00d7 106 of viable cells per 200 \u03bcl. Six-week-old NOD/SCID/IL2rg null female mice were anesthetized by isofluorane and transplanted with scramble-shRNA/mKate-luc cells subcutaneously into the left flank (N\u00a0=\u00a06 animals/shRNA construct) whereas sh-MYF5 or sh-MYOD/mKate-luc cells were injected on the right (200 \u03bcl/flank injection). Tumor growth was monitored by bioluminescence imaging following subcutaneous injection into the loose tissue over the neck of 75 mg/kg D-luciferin (Perkin Elmer,\u00a0Waltham,\u00a0MA) in 100 \u03bcl of PBS. Imaging was completed and analyzed using the IVIS Lumina II (Caliper Life Science,\u00a0Hopkinton,\u00a0MA). At time of necropsy, mouse brightfield images were acquired using a regular camera and tumors were excised, weighed, processed and stained using Hematoxylin and Eosin. Comparisons of tumor size and weight between groups used the Student\u2019s t-test after a normality test was performed, otherwise a Mann-Whitney analysis was performed, as indicated in the figure legends.\n",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "10f0c0f1-3be1-4459-bd67-aa51a6bcf70c",
+      "submission_id": "cc4cc510-e958-49a7-a5d0-19dfdc250580",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chi Van Dang, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19214.025](https://doi.org/10.7554/eLife.19214.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Myogenic Regulatory Transcription Factors Induce Self-renewal and Growth in Rhabdomyosarcoma\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior editor), Chi Dang (Reviewing editor) and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor, Chi Dang, has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by Tenete et al. reports on a role for Myf5 and MyoD in the self renewal of the cancer stem cell that generate rhabdomyosarcoma (ERMS). Using a combination of zebrafish models, human primary tumour samples and syngeneic mouse engraftment models the authors implicate the myogenic regulators in the propagation of tumours. The authors focused on Myf5 in ERMS initiation and propagation. Using a kRASG12D driven in vivo zebrafish ERMS model, the authors demonstrated that enforced expression of myf5 in mylpfa+ cells cooperated with kRASG12D to induce differentiated ERMS, with earlier tumor onset and higher tumor penetrance comparing to kRASG12D-only undifferentiated ERMS. These differentiated ERMS cells are transplantable, confirming full-transformation of the cells. Interestingly, the ectopic expression of mylpfa:myf5 transformed differentiated (myf5+, mylpfa+) ERMS cells into self-renewable tumor propagating cells (TPCs), whereas only the undifferentiated (myf5+, mylpfa-) cells were TPCs in the kRASG12D-only tumors. They then studied Myf5 and MyoD in RMS tumor cell growth using human RMS tumor cell lines (for MYF5 or MYOD) and mouse xenografts (for Myf5). The authors showed that either Myf5 or MyoD, but not both, are expressed in human tumors and cell lines. Knocking-down of MYF5 or MYOD in cell lines reduced cell growth and proliferation. MYF5 knockdown also suppressed growth of mouse xenografts. The authors performed ChIP-seq and showed a few examples of commonly bound target genes of MYF5 and MYOD.\n\nEssential revisions:\n\n1) The implication of self-renewal seems a bit of a stretch. We would like to see a better structured argument that this is the case. Is not most of the data also consistent with myogenic regulators being involved in enhanced tumour propagation, a very interesting fact in its own right?\n\n2) The authors take for granted that we know their system. It is not that intuitive that the rag2-kRAS model drives expression in muscle stem cells. While this is of course published, the reader is owed an explanatory sentence or two on this before diving into the main results of the paper.\n\n3) There is confusion about the transgenic approach where rag2-kRas and mylpa-myf5 are co injected into the early embryo leading to the gain of tumour properties described. If these are mosaic injected G0 animals that are analysed then the chances of co-expression of these two plasmids together in the same cell will be very small? How then does it work? Can every tumour in a rag2-kRas and mylpa-myf5 injected animal will be transgenic for both transgenes? This needs more explanation as the experimental approach is not clear and there is not enough detail in the Methods. A discussion of exactly when the mylpa promoter is active during muscle differentiation (or a characterisation of it in the context shown) is also missing. Is it really restricted to terminally differentiated cells in the micro-injection mosaic assay used?\n\n4) It would have been better to work out if the upregulation of the myogenic regulators that is evident in transgenic tumours is the exogenously supplied myf5 or the endogenous gene. We assume that it is not a GFP fusion, but it\u2019s not clear. Can the transgenically supplied myf5 be tagged to distinguish it? This would also help with point 3.\n\n5) Is there a technical reason why siRNA knockdown and not Crisper CAS9 deletion of MYF5 and MYOD was performed in the human ERMS cells. It would seem if you can transfect siRNA you can make the mutant cells which would be far more convincing.\n\n6) The obvious controls are to knockdown either MYF5 and MYOD in the Human tumour cells not over expressing that specific MRF and see no effect? This would be a great control to guard against non specific effects of RNAi on cell cycle progression (i.e. you just made the cells sick).\n\nFigure 1A and D: rag2:kRASG12 induced myf5:GFP+, mylpfa:mCherry+ (yellow) RMS tumor in zebrafish, whereas rag2:kRASG12 and mylpfa:myf5 co-expression induced myf5:GFP+, mylpfa:mCherry- (green) tumor. The loss of mylpfa:mCherry suggests that the tumor in panel D is more undifferentiated comparing to the tumor in panel A, which conflicts with panel E and F which indicate that the tumors were more differentiated. The green tumor in panel D also conflicts with the data presented in Figures 2 and 3, that the myf5-overexpressing tumors contained >80% red cells. The authors should clarify these points and possible show images that illustrate the findings.\n\n7) Issues with the figures:\n\nFigure 1G: The gene expression data in Figure 1G suggested a positive correlation of myf5, cdh15 and myog expression in zebrafish ERMS. In contrast, Figure 4 (panels A and B, and subsection \u201cMYF5 and MYOD are required for continued tumor growth in human RMS\u201d) clearly showed that high myf5 expression and high myod1/cdh15/myog were separable in human RMS tumors, in that tumors with high myf5 have relative low levels of cdh15/myog. The authors should provide explanation for this difference between the human and zebrafish RMS. What is the expression level of myod in these zebrafish ERMS tumors? Are myod and myf5 exclusive in zebrafish kRASG12D-tumors?\n\nFigures 2: panels G, H, I and L showed that mylpfa:myf5-expressing zebrafish ERMS tumors had significantly reduced proportions of G+ and G+R+ cells compared to kRASG12D-only tumors. According to Figure 3, these populations are the TPCs in mylpfa:myf5-expressing tumors (G+ and G+R+). Based on the cumulative TPC frequencies in Table 1 and the data in Figure 2G/H, there are much less TPCs in mylpfa:myf5-expressing tumors (1/377 in the 0.1% G+ plus 1/639 in the 1.1% G+R+, panel H) than in kRASG12D-only tumors (1/146 in the 3.2% G+, panel G). Given panel J and K showing that the mylpfa:myf5-expressing tumors arose earlier and grew bigger after transplantation, it suggests that the mylpfa:myf5-expressing tumors need less recovery after transplantation or grow faster.\n\nSince Figure 1\u2014figure supplement 2 shows similar fractions of cells in mitosis and similar levels of apoptosis, how do the kRASG12D tumors with mylpfa:myf5-expression grow faster? In primary kRASG12D tumors with or without mylpfa:myf5-expression, it would be important to show and compare the growth/proliferation rate in the transplanted secondary tumors. Do the mylpfa:myf5-expressing tumors divide faster in transplants? Can the red cells still divide? Do the G+/G+R+ cells show a high level of asymmetric division?\n\nFigure 3: panels K and M, and subsection \u201cMyf5 reprograms differentiated ERMS cells into self-renewing TPCs\u201d showed similar levels of c-met, cdh15 and mylpfa in zebrafish ERMS regardless the mylpfa:myf5-expression. This data conflicts with Figure 1G and subsection \u201cRe-expression of myf5 in zebrafish ERMS cells leads to accelerated tumor onset and increased penetrance\u201d, first paragraph, which showed significantly higher c-met/cdh15 in the mylpfa:myf5-expressing tumors. The authors should explain the difference. The expression of myod should be included in panels K and M.\n\nFigure 4: siRNA and shRNAs were used to knockdown MYF5 and MYOD. Western blots showed that the siRNAs showed slightly better knockdown at protein level. But the EDU labeling and nuclei counts showed that siRNAs resulted in less impaired cell growth. In this case, the authors should perform cDNA rescue experiments to prove the specificity of the siRNA/shRNAs. Also, panel 4K showed si-MYOD significantly reduced EDU+ RD cells, but panel L showed that si-MYOD did not impair nuclei counts. This point should be discussed, as Figure 4\u2014figure supplement 3 showed that si-MYOD didn't affect apoptosis in RD cells.\n\nFigure 4: The authors showed that MYF5 and MYOD are differentially expressed in human tumors and cell lines. How does knocking-down of one affect the expression of the other in the cell lines?\n\nFigure 4\u2014figure supplement 3: \"Apoptosis was not increased in si-MYF5 treated cells (Figure 4\u2014figure supplement 3)\". But there is no si-MYF5 in Figure 4 \u2014figure supplement 3 at all. Panel D showed some apoptosis reduction by sh-MYF #1 but not by sh-MYF #2. Data of sh-MYF #3 and si-MYF should be shown. Also, panel C showed that si-MYOD in Rh18 cells significantly reduced apoptosis, which needs to be explained because i) Rh18 cells express low MYOD, ii) si-MYOD did not significantly impair apoptosis in the MYOD-expressing RD cells (panel G). In addition, apoptosis analysis should be provided for 381T, RMS559 and Rh3 cells.\n\nFigure 5: the session is subtitled as 'Myogenic transcription factors are requited for continued xenograft growth'. However, the provided xenograft data was solely about MYF5 in Rh18 cells. How about MYOD? The authors should either provide MYOD data to keep the subtitle, or change the subtitle to 'MYF5 is required\". The same applies to the title. The authors should either show the self-renewal data of myod, or modify the title.\n\nFigure 6: panel E and Results, last paragraph, suggested that MYOG, MYHC1, CDH15 and CCND2 are commonly bound target genes of MYF5 and MYOD. However, only the binding of MYF5/MYOD to MYOG and CCND2 was shown in panel D. Binding of MYF5/MYOD to MYHC1 and CDH15 should also be shown, either in the same panel or as the figure supplement. Expression levels of MYOD in Rh18 cells and MYF5 in RD cells after si-SCR and si-MYF5 should be included in panel E. In addition, were myhc1 and ccnd2 upregulated in mylpfa:myf5-expressing zebrafish ERMS tumors (myog and cdh15 were upregulated in Figure 1G)?\n\nFigure 6: Results, last paragraph and Discussion, last paragraph suggested that CCND2 is an important common target of MYF5/MYOD. Could CCND2 (partially) rescue the RMS cell growth defect following MYF5/MYOD as shown in Figure 4?\n\nFigure 6 and last sentence of the Abstract. The authors emphasize the shared targets of MYF5 and MYOD. Is there any difference between them, or do they do the same thing? Human tumors express one or the other. Is it the same in kRASG12D induced zebrafish tumors? myod levels should at least be measured in the zebrafish tumors to tie the zebrafish and human data together. When myf5 is overexpressed in the zebrafish, inducing earlier onset and faster growth, do the myod levels fall?\n",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "25b07002-da68-47f6-82a1-bd621dbe2d69",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C1",
+      "claim": "Rhabdomyosarcoma (RMS) is a pediatric malignancy of muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomyosarcoma (RMS) is a pediatric malignacy of muscle with myogenic regulatory transcription factors MYOD and MYF5 being expressed in this disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about RMS presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a0b34986-8bba-406b-8be9-c15edb16f4a9",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C2",
+      "claim": "Myogenic regulatory transcription factors MYOD and MYF5 are expressed in rhabdomyosarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomyosarcoma (RMS) is a pediatric malignacy of muscle with myogenic regulatory transcription factors MYOD and MYF5 being expressed in this disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction and data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "abe10dcd-2f72-4741-82d8-6e942d9c563a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C3",
+      "claim": "Consensus in the field has been that expression of MRFs likely reflects the target cell of transformation rather than being required for continued tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus in the field has been that expression of these factors likely reflects the target cell of transformation rather than being required for continued tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "06dc8b9b-3aaa-46f3-b6cf-a5b50dd0fa38",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C4",
+      "claim": "Myf5 is sufficient to confer tumor-propagating potential to RMS cells in a transgenic zebrafish model.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a transgenic zebrafish model to show that Myf5 is sufficient to confer tumor-propagating potential to RMS cells and caused tumors to initiate earlier and have higher penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from limiting dilution transplantation experiments shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "de0029ce-8447-408a-b71d-ee010760ac2a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C5",
+      "claim": "Myf5 expression caused tumors to initiate earlier in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a transgenic zebrafish model to show that Myf5 is sufficient to confer tumor-propagating potential to RMS cells and caused tumors to initiate earlier and have higher penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Kaplan-Meier analysis shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c0eca91e-582d-4496-b889-db03a21e34e3",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C6",
+      "claim": "Myf5 expression caused tumors to have higher penetrance in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a transgenic zebrafish model to show that Myf5 is sufficient to confer tumor-propagating potential to RMS cells and caused tumors to initiate earlier and have higher penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Kaplan-Meier analysis shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "2d6fd857-bd5d-49a6-bcf3-d412b40de193",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C7",
+      "claim": "MYF5 and MYOD are mutually-exclusively expressed in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of human RMS revealed that MYF5 and MYOD are mutually-exclusively expressed and each is required for sustained tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data in Figure 4C and immunofluorescence in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "1d34eee2-4a7a-4765-a6d9-1a8084ca9f1e",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C8",
+      "claim": "MYF5 is required for sustained tumor growth in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of human RMS revealed that MYF5 and MYOD are mutually-exclusively expressed and each is required for sustained tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knockdown experiments shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "4682548b-af85-4cf2-9535-54c17fc172b0",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C9",
+      "claim": "MYOD is required for sustained tumor growth in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of human RMS revealed that MYF5 and MYOD are mutually-exclusively expressed and each is required for sustained tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knockdown experiments shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a5f8adb4-919a-439a-ac3d-eb6760f31c8d",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C10",
+      "claim": "MYF5 and MYOD bind common DNA regulatory elements in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq and mechanistic studies in human RMS uncovered that MYF5 and MYOD bind common DNA regulatory elements to alter transcription of genes that regulate muscle development and cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "8152f3fc-fb33-404a-b7f6-41ddacfd8ebc",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C11",
+      "claim": "MYF5 and MYOD alter transcription of genes that regulate muscle development.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq and mechanistic studies in human RMS uncovered that MYF5 and MYOD bind common DNA regulatory elements to alter transcription of genes that regulate muscle development and cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and qRT-PCR data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "327fa24e-6061-4d07-820f-50bb2cfed70c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C12",
+      "claim": "MYF5 and MYOD alter transcription of genes that regulate cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq and mechanistic studies in human RMS uncovered that MYF5 and MYOD bind common DNA regulatory elements to alter transcription of genes that regulate muscle development and cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and qRT-PCR data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "396c61d0-ae43-4f03-97a4-73104808f688",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C13",
+      "claim": "Tumor propagating cells (TPCs) drive continued tumor growth and relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that TPCs drive continued tumor growth, it is not surprising that these cells are often retained following treatment and ultimately drive refractory, metastatic, and relapse disease (Reya et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Reya et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c7f38203-2ce1-4d0c-ae5e-30374b312ffb",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C14",
+      "claim": "TPCs have been identified in zebrafish rhabdomyosarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "TPCs have been identified in a wide range of cancers, including both zebrafish and human rhabdomyosarcoma (RMS), a devastating pediatric cancer of muscle (Langenau et al., 2007; Chen et al., 2014; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Langenau et al., 2007; Chen et al., 2014; Ignatius et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "2e2310b8-4079-4146-ac97-4dcb63ee53ea",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C15",
+      "claim": "TPCs have been identified in human rhabdomyosarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "TPCs have been identified in a wide range of cancers, including both zebrafish and human rhabdomyosarcoma (RMS), a devastating pediatric cancer of muscle (Langenau et al., 2007; Chen et al., 2014; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Langenau et al., 2007; Chen et al., 2014; Ignatius et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "12463b7c-37bf-4323-85a4-f74f66da6bae",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C16",
+      "claim": "Rhabdomyosarcoma is characterized by impaired muscle differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomyosarcoma is a common sarcoma characterized by impaired muscle differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of RMS supported by general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "4eccc126-5159-45b0-a044-27cf0dcc90af",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C17",
+      "claim": "RMS tumors express myogenic regulatory transcription factors including MYF5 and MYOD.",
+      "claim_type": "EXPLICIT",
+      "source": "These tumors express myogenic regulatory transcription factors (MRFs) including Myogenic factor 5 (MYF5) and Myoblast determination protein D (MYOD) (Clark et al., 1991; Kumar et al., 2000; Parham, 2001; Sebire and Malone, 2003) and are used in the clinical diagnosis of RMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark et al., 1991; Kumar et al., 2000; Parham, 2001; Sebire and Malone, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "edef1dc4-1267-4afd-8b84-a542d30dc291",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C18",
+      "claim": "MRFs are used in the clinical diagnosis of RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "These tumors express myogenic regulatory transcription factors (MRFs) including Myogenic factor 5 (MYF5) and Myoblast determination protein D (MYOD) (Clark et al., 1991; Kumar et al., 2000; Parham, 2001; Sebire and Malone, 2003) and are used in the clinical diagnosis of RMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark et al., 1991; Kumar et al., 2000; Parham, 2001; Sebire and Malone, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "3e3967a2-f20e-4977-b74d-5ac6773b3cbb",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C19",
+      "claim": "Alveolar RMS (ARMS) harbor Pax7-FOXO and Pax3-FOXO genomic fusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alveolar RMS (ARMS) harbor Pax7-FOXO and Pax3-FOXO genomic fusions (Sorensen et al., 2002) and have few additional recurrent genomic changes (Chen et al., 2013b; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sorensen et al., 2002; Chen et al., 2013b; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "94297fe6-3714-4bbd-963f-33984f11d136",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C20",
+      "claim": "ARMS have few additional recurrent genomic changes beyond PAX-FOXO fusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alveolar RMS (ARMS) harbor Pax7-FOXO and Pax3-FOXO genomic fusions (Sorensen et al., 2002) and have few additional recurrent genomic changes (Chen et al., 2013b; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013b; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "07afbefa-6e05-4bb9-967f-146a7705e61c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C21",
+      "claim": "90% of human embryonal rhabdomyosarcoma (ERMS) have RAS pathway activation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 90% of human embryonal rhabdomyosarcoma (ERMS) have RAS pathway activation and a higher mutation burden when compared with ARMS (Chen et al., 2013b; Langenau et al., 2007; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013b; Langenau et al., 2007; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "85400768-7cad-4acd-acbb-652e7f690a70",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C22",
+      "claim": "ERMS have a higher mutation burden when compared with ARMS.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 90% of human embryonal rhabdomyosarcoma (ERMS) have RAS pathway activation and a higher mutation burden when compared with ARMS (Chen et al., 2013b; Langenau et al., 2007; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013b; Langenau et al., 2007; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "221fe59e-9d09-4906-8979-93d798db3e2f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C23",
+      "claim": "Common mutations found in ERMS include inactivation of Tp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Common mutations found in ERMS include inactivation of Tp53 and activating mutations of FGFR4, PDGFA, and NOTCH1 (Chen et al., 2013b; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013b; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "6a1c661c-f9ea-4265-92dd-e85544d6b3c7",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C24",
+      "claim": "Common mutations found in ERMS include activating mutations of FGFR4, PDGFA, and NOTCH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Common mutations found in ERMS include inactivation of Tp53 and activating mutations of FGFR4, PDGFA, and NOTCH1 (Chen et al., 2013b; Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013b; Shern et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "9fa19daa-a5e9-43a5-8baf-ab28f9e567f1",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C25",
+      "claim": "The Sonic-Hedgehog signaling pathway has been shown to regulate TPC function in a subset of human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, to date, only the Sonic-Hedgehog and canonical WNT/B-catenin signaling pathways have been shown to regulate TPC function in a subset of human RMS (Chen et al., 2014; Satheesha et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2014; Satheesha et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a465d6f2-65c5-475a-bc73-68a5b3c788bd",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C26",
+      "claim": "The canonical WNT/B-catenin signaling pathway has been shown to regulate TPC function in a subset of human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, to date, only the Sonic-Hedgehog and canonical WNT/B-catenin signaling pathways have been shown to regulate TPC function in a subset of human RMS (Chen et al., 2014; Satheesha et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2014; Satheesha et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "f311f1dc-fc0f-4ec8-86c3-03f92ba7068c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C27",
+      "claim": "MYF5 and MYOD are highly expressed in human and animal models of RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite MYF5 and MYOD being highly expressed in human and animal models of RMS (Langenau et al., 2007; Rubin et al., 2011), exerting important roles in muscle development and stem cell self-renewal in regeneration (Buckingham and Rigby, 2014), and being able to reprogram fibroblasts into proliferating myoblasts (Braun et al., 1989; Tapscott et al., 1988); a functional requirement for these transcription factors in regulating RMS growth has gone unexplored since their discovery over two decades ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Langenau et al., 2007; Rubin et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "6be50060-7796-4e79-9426-2d31afef9e33",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C28",
+      "claim": "MYF5 and MYOD exert important roles in muscle development and stem cell self-renewal in regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite MYF5 and MYOD being highly expressed in human and animal models of RMS (Langenau et al., 2007; Rubin et al., 2011), exerting important roles in muscle development and stem cell self-renewal in regeneration (Buckingham and Rigby, 2014), and being able to reprogram fibroblasts into proliferating myoblasts (Braun et al., 1989; Tapscott et al., 1988); a functional requirement for these transcription factors in regulating RMS growth has gone unexplored since their discovery over two decades ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Buckingham and Rigby, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "9eb2141d-20a9-4b36-8bc3-abf9f1cd0e6d",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C29",
+      "claim": "MYF5 and MYOD are able to reprogram fibroblasts into proliferating myoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite MYF5 and MYOD being highly expressed in human and animal models of RMS (Langenau et al., 2007; Rubin et al., 2011), exerting important roles in muscle development and stem cell self-renewal in regeneration (Buckingham and Rigby, 2014), and being able to reprogram fibroblasts into proliferating myoblasts (Braun et al., 1989; Tapscott et al., 1988); a functional requirement for these transcription factors in regulating RMS growth has gone unexplored since their discovery over two decades ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Braun et al., 1989; Tapscott et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "36cb3fa4-712e-46e6-98b5-3d63c384296b",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C30",
+      "claim": "A functional requirement for MYF5 and MYOD in regulating RMS growth has gone unexplored since their discovery over two decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite MYF5 and MYOD being highly expressed in human and animal models of RMS (Langenau et al., 2007; Rubin et al., 2011), exerting important roles in muscle development and stem cell self-renewal in regeneration (Buckingham and Rigby, 2014), and being able to reprogram fibroblasts into proliferating myoblasts (Braun et al., 1989; Tapscott et al., 1988); a functional requirement for these transcription factors in regulating RMS growth has gone unexplored since their discovery over two decades ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a8d3d8ff-65f9-4f95-bc42-6c06107be720",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C31",
+      "claim": "Transgenic zebrafish models have become a powerful tool to uncover new biological insights into human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic zebrafish models have become a powerful tool to uncover new biological insights into human cancer (Langenau et al., 2003, 2007; Le et al., 2007; Park et al., 2008; Patton et al., 2005; Sabaawy et al., 2006; Yang et al., 2004; Zhuravleva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d4d1b5d0-eff4-4a2c-9d24-4b08b07b22bb",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C32",
+      "claim": "A mosaic transgenic zebrafish expressing human kRASG12D under control of the rag2 minimal promoter has been developed for ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the setting of ERMS, we have developed a mosaic transgenic zebrafish that express human kRASG12D under control of the rag2 minimal promoter, which is expressed in lymphoid cells (Jessen et al., 2001; Langenau et al., 2003) and muscle progenitor cells (Langenau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jessen et al., 2001; Langenau et al., 2003; Langenau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c17b95a3-bcb7-44d8-b9de-e7dd44390d90",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C33",
+      "claim": "The rag2 minimal promoter is expressed in lymphoid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the setting of ERMS, we have developed a mosaic transgenic zebrafish that express human kRASG12D under control of the rag2 minimal promoter, which is expressed in lymphoid cells (Jessen et al., 2001; Langenau et al., 2003) and muscle progenitor cells (Langenau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jessen et al., 2001; Langenau et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "3ea65e96-c493-4f22-b1c2-37d33b7664e6",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C34",
+      "claim": "The rag2 minimal promoter is expressed in muscle progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the setting of ERMS, we have developed a mosaic transgenic zebrafish that express human kRASG12D under control of the rag2 minimal promoter, which is expressed in lymphoid cells (Jessen et al., 2001; Langenau et al., 2003) and muscle progenitor cells (Langenau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Langenau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "f7c911ea-4770-43ab-a432-f7b915f3865e",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C35",
+      "claim": "20\u201340% of mosaic injected fish expressing kRASG12D under the rag2 promoter developed ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when kRASG12D was expressed under control of this promoter, 20\u201340% mosaic injected fish developed ERMS (Langenau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Langenau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "2bd8bfaa-6011-435e-b592-2ec1ad488d43",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C36",
+      "claim": "10\u201320 transgene copies are commonly integrated into the zebrafish genome in mosaic transgenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because 10\u201320 transgene copies are commonly integrated into the genome (Langenau et al., 2008), one can inject multiple transgenes into one-cell stage embryos with stable integration and expression being observed in developing tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Langenau et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "303d1be0-5d75-4b0e-bb3f-8ae9b167049c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C37",
+      "claim": "The zebrafish ERMS model accurately mimics many of the molecular underpinnings of the human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the zebrafish model accurately mimics many of the molecular underpinnings of the human disease and has been used to uncover important genes and pathways relevant to human cancer (Chen et al., 2013a, 2014; Ignatius et al., 2012; Langenau et al., 2007; Le et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013a, 2014; Ignatius et al., 2012; Langenau et al., 2007; Le et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "7c8c42df-1088-4f04-95d8-35c1640ded5c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C38",
+      "claim": "The zebrafish model has been used to identify functional heterogeneity in molecularly defined cell types, including isolation of myf5:GFP+ TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The model has also been used to identify functional heterogeneity in molecularly defined cell types, including isolation of myf5:GFP+ TPCs (Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ignatius et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d323e1ff-c455-44ea-9c93-399dbc601a03",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C39",
+      "claim": "myf5 is highly expressed in undifferentiated, molecularly defined TPCs in zebrafish kRASG12D-induced ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "We have uncovered that myf5 is highly expressed in undifferentiated, molecularly defined TPCs in zebrafish kRASG12D-induced ERMS (Langenau et al., 2007; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Langenau et al., 2007; Ignatius et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "5032ae8f-5777-46ed-99a2-5c50de55c7a0",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C40",
+      "claim": "The TPC fraction in zebrafish ERMS shares molecular and functional properties with non-transformed muscle satellite stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this TPC fraction shares molecular and functional properties with non-transformed muscle satellite stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data and citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "1bf3e85d-0733-481d-921f-e47749640127",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C41",
+      "claim": "myf5:GFP+/myosin-negative progenitor cells drive tumor growth in the zebrafish ERMS model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cell transplantation and direct live cell imaging has revealed that myf5:GFP+/myosin-negative progenitor cells drive tumor growth and specifically label TPCs in this animal model (Ignatius et al., 2012; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ignatius et al., 2012; Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "98689c8d-f204-4ea1-8224-d8ff95ecea57",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C42",
+      "claim": "myf5:GFP+/myosin-negative progenitor cells specifically label TPCs in the zebrafish ERMS model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cell transplantation and direct live cell imaging has revealed that myf5:GFP+/myosin-negative progenitor cells drive tumor growth and specifically label TPCs in this animal model (Ignatius et al., 2012; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ignatius et al., 2012; Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "e79a178f-25b6-4671-8172-886490846682",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C43",
+      "claim": "The mylpfa promoter faithfully drives expression in terminally-differentiated muscle cells in both transient and stable transgenic fish.",
+      "claim_type": "EXPLICIT",
+      "source": "This transgene faithfully drives expression in terminally-differentiated muscle cells in both transient and stable transgenic fish (Xu et al., 1999; Langenau et al., 2007; Ignatius et al., 2012; Storer et al., 2013; Chen et al., 2014) and has been used to identify zebrafish ERMS cell subfractions that lack myf5, have low proliferative capacity, cannot self-renew, and do not sustain ERMS growth in vivo (Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Xu et al., 1999; Langenau et al., 2007; Ignatius et al., 2012; Storer et al., 2013; Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "7e7085df-212b-4e2b-a612-814ab7c8cd64",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C44",
+      "claim": "Primary kRASG12D-induced ERMS were comprised of 50% undifferentiated stage 1 ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously, primary kRASG12D-induced ERMS were comprised of 50% undifferentiated stage 1 ERMS (N = 5 of 10, Figure 1B,C and Figure 1\u2014figure supplement 2), which harbored mostly small round blue cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 1B,C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "cc8f0bc4-0414-420f-b470-9290466d75f1",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C45",
+      "claim": "mylpfa:myf5 expressing primary ERMS contained only 7.7% stage 1 ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mylpfa:myf5 expressing primary ERMS contained only 7.7% stage 1 ERMS (N = 2 of 26, p=0.015, Chi-square test, Figure 1E\u2013F), with the remaining tumors being highly differentiated stage 2 and 3 ERMS (Figure 1F and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 1E\u2013F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "14ffd545-7abe-4935-8545-8adb3d635868",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C46",
+      "claim": "mylpfa:myf5 expressing ERMS cells had high myf5 transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional profiling of bulk tumor cells by qRT-PCR confirmed that mylpfa:myf5 expressing ERMS cells had high myf5 transgene expression, were more differentiated, and yet also had elevated expression of TPC-associated markers including c-met and cadherin 15 (Figure 1G, Langenau et al., 2007; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "01eca0fb-ae75-49dc-acb4-ab1b81bffd43",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C47",
+      "claim": "mylpfa:myf5 expressing ERMS cells were more differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional profiling of bulk tumor cells by qRT-PCR confirmed that mylpfa:myf5 expressing ERMS cells had high myf5 transgene expression, were more differentiated, and yet also had elevated expression of TPC-associated markers including c-met and cadherin 15 (Figure 1G, Langenau et al., 2007; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "403f0f4a-627a-455d-8d35-af36be8e4b16",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C48",
+      "claim": "mylpfa:myf5 expressing ERMS cells had elevated expression of TPC-associated markers including c-met and cadherin 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional profiling of bulk tumor cells by qRT-PCR confirmed that mylpfa:myf5 expressing ERMS cells had high myf5 transgene expression, were more differentiated, and yet also had elevated expression of TPC-associated markers including c-met and cadherin 15 (Figure 1G, Langenau et al., 2007; Ignatius et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1G and citations to Langenau et al., 2007; Ignatius et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "50529ea5-581c-4344-833b-916fd44a1ff6",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C49",
+      "claim": "c-met and cadherin 15 are commonly expressed in zebrafish muscle progenitor and satellite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These gene markers are also commonly expressed in zebrafish muscle progenitor and satellite cells (Siegel et al., 2013; Gurevich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Siegel et al., 2013; Gurevich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "5b0e1ace-8cd9-429a-9b91-d155f16e8564",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C50",
+      "claim": "Tumors arising in double transgenic rag2:kRASG12D; mylpfa:myf5 expressing ERMS were larger by 30 days postfertilization than those that expressed only kRASG12D.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors arising in double transgenic rag2:kRASG12D; mylpfa:myf5 expressing ERMS were also larger by 30 days postfertilization than those that expressed only kRASG12D (Figure 1H, p=0.0108, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor size quantification shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "9349bbd9-35ed-47f7-96c9-8a61c7794312",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C51",
+      "claim": "Apoptosis was not altered following re-expression of myf5 in zebrafish ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, apoptosis was not altered following re-expression of myf5 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cleaved caspase-3 staining shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "15589629-0a87-4dcb-bdba-4246b3b828f4",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C52",
+      "claim": "kRASG12D-expressing ERMS were comprised exclusively of undifferentiated stage one tumors following transplantation into immune-deficient rag2E450fs recipient fish.",
+      "claim_type": "EXPLICIT",
+      "source": "kRASG12D-expressing ERMS were comprised exclusively of undifferentiated stage one tumors (Figure 2B,C and Figure 2\u2014figure supplement 1, n=10 transplanted fish arising from four independent tumors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 2B,C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "79cf6162-944e-4c97-8f88-7eb19821a228",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C53",
+      "claim": "ERMS that re-expressed myf5 had differentiated histology and were comprised exclusively of stage 2 and 3 tumors following transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ERMS that re-expressed myf5 had differentiated histology and were comprised exclusively of stage 2 and 3 tumors (Figure 2E,F and Figure 2\u2014figure supplement 1, n=15 transplanted fish from four independent tumors, p<,0.001, Chi-square test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 2E,F and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "39d38c17-0106-4eb9-b037-9c5973c10655",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C54",
+      "claim": "Differentiated, mylpfa:mCherry-positive (R+) tumor cells were greatly expanded in ERMS that aberrantly express myf5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our histological evaluation, flow cytometric analysis revealed that differentiated, mylpfa:mCherry-positive (R+) tumor cells were greatly expanded in ERMS that aberrantly express myf5 (Figure 2G\u2013I, p=0.006, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "423832fe-df4b-4de8-b44f-9cf39d36dee2",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C56",
+      "claim": "Only the myf5:GFP+ (G+) single-positive ERMS cells from kRASG12D-alone expressing ERMS could efficiently engraft tumors into CG1-strain syngeneic recipient animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Ignatius et al., 2012), only the myf5:GFP+ (G+) single-positive ERMS cells from kRASG12D-alone expressing ERMS could efficiently engraft tumors into CG1-strain syngeneic recipient animals (Figure 3J and Table 1; N = 3 independent tumors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by limiting dilution transplantation data shown in Figure 3J and Table 1, and citation to Ignatius et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a12079ff-94a7-4df3-8524-7222b5e6cd13",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C57",
+      "claim": "Both the myf5:GFP+ single-positive (G+) and differentiated myf5:GFP+; mylpfa:mCherry+ double positive (G+R+) ERMS cells could engraft disease when isolated from mylpfa:myf5 expressing ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, both the myf5:GFP+ single-positive (G+) and differentiated myf5:GFP+; mylpfa:mCherry+ double positive (G+R+) ERMS cells could engraft disease when isolated from mylpfa:myf5 expressing ERMS (N = 3 tumors analyzed, Table 1 and Figure 3L; p=0.0002, ELDA analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by limiting dilution transplantation data shown in Table 1 and Figure 3L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "6f594d3d-631d-4e9b-8121-311aeeb7cf7e",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C58",
+      "claim": "MYOD and MYF5 were expressed along with specific muscle genes and defined two distinct gene regulatory modules in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of microarray gene expression (N = 133 samples) (Davicioni et al., 2009) and RNA-sequencing (RNA-seq) data sets (N = 98 samples) (Shern et al., 2014) uncovered that MYOD and MYF5 were expressed along with specific muscle genes and defined two distinct gene regulatory modules in human RMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of microarray and RNA-seq data shown in Figure 4A,B and citations to Davicioni et al., 2009; Shern et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "943248d7-efe4-4380-a3de-dc23a2e9293d",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C59",
+      "claim": "One gene module in human RMS included the co-expression of MYF5, MYF6 and PAX7.",
+      "claim_type": "EXPLICIT",
+      "source": "One gene module included the co-expression of MYF5, MYF6 and PAX7 while the other expressed MYOD and higher levels of CDH15, and MYOG (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c1fae28c-cd55-4782-acd9-d378977d342e",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C60",
+      "claim": "One gene module in human RMS expressed MYOD and higher levels of CDH15, and MYOG.",
+      "claim_type": "EXPLICIT",
+      "source": "One gene module included the co-expression of MYF5, MYF6 and PAX7 while the other expressed MYOD and higher levels of CDH15, and MYOG (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "e29ede09-bf55-4d21-8701-50d867b43da3",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C61",
+      "claim": "The expression of MYF5 and MYOD proteins was largely mutually exclusive in human RMS cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that the expression of these proteins was largely mutually exclusive in human RMS cell lines (N = 7, Figure 4C), suggesting that these proteins may act redundantly to regulate human RMS growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "f752c330-8fa2-4504-94af-18cc85ca1f04",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C62",
+      "claim": "Only the Rh18 ERMS cells expressed MYF5 in the panel of human cell lines analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis also uncovered that only the Rh18 ERMS cells expressed MYF5 in our panel of human cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "81b4500e-e140-4633-861f-dd10f61fdc5f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C63",
+      "claim": "MYF5 and MYOD were mutually exclusively expressed in Rh18 and RD cells at the single cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "MYF5 and MYOD expression were also assessed at the single cell level through immunofluorescence and verified that MYF5 and MYOD were mutually exclusively expressed in Rh18 and RD cells (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "7bf55a64-e252-42c4-b207-f4a055024f38",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C64",
+      "claim": "si-MYF5 treated Rh18 cells showed a 70% reduction in S-phase cycling cells following 48 hr of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, si-MYF5 treated cells showed a remarkable 70% reduction in S-phase cycling cells following 48 hr of treatment (p<0.001, Student's t-test, Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU/PI flow cytometry data shown in Figure 4E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "0dc36c19-900f-4e5e-b423-92e09844cf9b",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C65",
+      "claim": "All sh-MYF5 knockdown Rh18 cells showed a remarkable cell cycle arrest with a virtual abrogation of S-phase cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All sh-MYF5 knockdown cells showed a remarkable cell cycle arrest with a virtual abrogation of S-phase cycling cells (Figure 4H\u2013I and Figure 4\u2014figure supplement 3A; p<0.001, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU/PI flow cytometry data shown in Figure 4H\u2013I and Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "353ae08c-43df-4e91-bb75-0475a724ca62",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C66",
+      "claim": "sh-MYF5 knockdown in Rh18 cells led to a significant 60% decrease in cell number as assessed by manual nuclei counts performed at 96 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was not associated with an overall increase in apoptosis (Figure 4\u2014figure supplement 3C,D) and yet lead to a significant 60% decrease in cell number as assessed by manual nuclei counts performed at 96 hr and compared with shRNA control treated cells (Figure 4\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nuclei count data shown in Figure 4\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "e5e4267e-d1dd-4c06-a55e-914f33b89be3",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C67",
+      "claim": "siRNA knockdown of MYOD in RD cells resulted in reduced proliferation and a striking reduction in S-phase cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA knockdown resulted in reduced proliferation and a striking reduction in S-phase cycling cells (Figure 4J\u2013O; p<0.001, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU/PI flow cytometry data shown in Figure 4J\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "70a19063-5d6c-490c-9300-0e27e7fe0dbb",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C68",
+      "claim": "RD cell number was reduced >30% following stable sh-MYOD knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, RD cell number was reduced >30% following stable sh-MYOD knockdown (Figure 4\u2014figure supplement 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nuclei count data shown in Figure 4\u2014figure supplement 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d7d1256b-dfc7-4fee-b5db-fb52f74810ee",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C69",
+      "claim": "Sphere colony formation was greatly reduced in RD cells following shRNA knockdown of MYOD.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of MYOD having important roles in regulating TPC number, sphere colony formation was also greatly reduced in RD cells following shRNA knockdown (p<0.01, Figure 4\u2014figure supplement 3I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sphere colony formation assay data shown in Figure 4\u2014figure supplement 3I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "bacc2ed2-755c-4798-83e8-bca11a18ef7a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C70",
+      "claim": "MYOD knockdown impaired cell cycle and growth in ERMS cell lines 381T and RMS559 and the ARMS cell line Rh3.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, MYOD knockdown also impaired cell cycle and growth in additional RMS cell lines including ERMS cell lines 381T and RMS559 and the ARMS cell line Rh3. These cells lines all had significant reductions in S-phase cycling cells following siRNA treatment with variable effects on apoptosis at the time points analyzed (Figure 4\u2014figure supplement 4A\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU/PI flow cytometry and apoptosis data shown in Figure 4\u2014figure supplement 4A\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d50ab2ef-c5f2-4cda-8146-501c2500600a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C71",
+      "claim": "Tumor volume was reduced in MYF5 knockdown Rh18 cells in xenograft experiments while control cells continued to grow.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial bioluminescence imaging showed that tumor volume was reduced in MYF5 knockdown cells while control cells continued to grow (p<0.05, Student's t-test; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioluminescence imaging data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "e0cc9cb6-a045-4982-af2c-abfc3787dfc1",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C72",
+      "claim": "MYF5 knockdown Rh18 cells were largely undetected at late time points in xenograft experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "MYF5 knockdown cells were largely undetected at late time points (p<0.05, Student's t-Test; Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioluminescence imaging data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "7ac298d8-c8fe-433b-ba14-f47238ee48f2",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C73",
+      "claim": "Only 2 of 12 mice had tumors derived from MYF5-deficient Rh18 cells at necropsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of mice at necropsy revealed that only 2 of 12 mice had tumors derived from MYF5-deficient Rh18 cells and that overall tumor weight was greatly reduced when compared with control Rh18 knockdown cells (p<0.01; Student's t-test; Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by necropsy data shown in Figure 5D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "e39e341e-c843-4291-8f4b-80dab2f2f7ff",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C74",
+      "claim": "Overall tumor weight was greatly reduced in MYF5 knockdown Rh18 xenografts when compared with control Rh18 knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of mice at necropsy revealed that only 2 of 12 mice had tumors derived from MYF5-deficient Rh18 cells and that overall tumor weight was greatly reduced when compared with control Rh18 knockdown cells (p<0.01; Student's t-test; Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by necropsy data shown in Figure 5D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "b7cd869b-62a2-4899-8735-63bbc810649a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C75",
+      "claim": "shRNA knockdown of MYOD resulted in reduced xenograft growth of both RD and RMS559 cells when assessed by total body luciferase imaging completed overtime.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same approach outlined above, we found that shRNA knockdown of MYOD resulted in efficient knockdown prior to tumor cell implantation (Figure 5F,K) and reduced xenograft growth of both RD and RMS559 cells when assessed by total body luciferase imaging completed overtime (p<0.01; Figure 5F\u2013H,K\u2013M and Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioluminescence imaging data shown in Figure 5F\u2013H,K\u2013M and Figure 5\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "cae82d99-f449-4f63-a712-bc4f17f17789",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C76",
+      "claim": "MYOD knockdown tumors were smaller at the time of necropsy and weighed significantly less than control shRNA expressing tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "MYOD knockdown tumors were also smaller at the time of necropsy (Figure 5I,N) and weighed significantly less than control shRNA expressing tumors (p<0.01, Student's t-test; Figure 5J,O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by necropsy data shown in Figure 5I,J,N,O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "668e3de8-15a5-4b55-854c-4353843aa288",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C77",
+      "claim": "86% of commonly bound genomic DNA regions by MYOD and MYF5 were confined to enhancer regions as defined by H3K27-acetylation occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "86% of commonly bound genomic DNA regions were confined to enhancer regions as defined by H3K27-acetylation occupancy (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq analysis shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d6cfc3eb-ab17-48fa-aece-081ee33f1f1a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C78",
+      "claim": "Unbiased analysis of commonly bound target genes by MYF5 and MYOD revealed an enrichment of genes that regulate cell cycle and myogenic cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Unbiased analysis of commonly bound target genes using GREAT (McLean et al., 2010), Supplementary file 2) revealed an enrichment of genes that regulate cell cycle and myogenic cell fate (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GREAT analysis shown in Figure 6C and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a0299e38-ac81-4f4a-80f6-3a6b616cd8bd",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C79",
+      "claim": "Both Myogenin and CDH15 were downregulated following MYF5 or MYOD knockdown at either 48 or 72 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected if myogenic transcription factors regulate muscle cell fate, both Myogenin and CDH15 were downregulated following MYF5 or MYOD knockdown at either 48 or 72 hr (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "81f6c862-5f76-4983-9a34-10beeeb9e415",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C80",
+      "claim": "CCND2 was reduced following MYF5 or MYOD knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cell cycle regulatory gene, CCND2 was also reduced following MYF5 or MYOD knockdown (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "bb01f589-993f-48cb-aa70-3f0b4aae6c42",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C81",
+      "claim": "The zebrafish orthologue ccnd2a transcript showed a trend toward higher expression in mylpfa:myf5 expressing zebrafish ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the zebrafish orthologue ccnd2a transcript showed a trend toward higher expression in mylpfa:myf5 expressing zebrafish ERMS (Figure 6\u2014figure supplement 2), correlating well with elevated myf5 expression in these tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "111c42ab-aebd-4106-aa86-611be213c6b2",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C82",
+      "claim": "CCND2 is amplified in a subset of human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "CCND2 is a CDK4/6-associated cyclin that is amplified in a subset of human RMS and is required for cell proliferation and viability in human RMS (Chen et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "fd806efd-3ba6-478c-afaf-876946e043d4",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C83",
+      "claim": "CCND2 is required for cell proliferation and viability in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "CCND2 is a CDK4/6-associated cyclin that is amplified in a subset of human RMS and is required for cell proliferation and viability in human RMS (Chen et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "b86f6014-384f-429a-a879-525d6097fa78",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C84",
+      "claim": "CCND2 is a predicted direct target of MYF5 and MYOD binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CCND2 is a predicted direct target of MYF5 and MYOD binding (Conerly et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Conerly et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "678e119f-4dd6-43aa-b22c-5d91cd1429ac",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C85",
+      "claim": "MYF5 and MYOD act redundantly in muscle development to regulate muscle specification and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MYF5 and MYOD are well-known to act redundantly in muscle development to regulate muscle specification and differentiation (Rudnicki et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rudnicki et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "a5c39b55-a430-4284-af70-f79ab6c12a2f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C86",
+      "claim": "Redundancy of Myf5 and MyoD in development and muscle injury has been reported in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "This same redundancy of Myf5 and MyoD in development and muscle injury has now been reported in zebrafish (Hinits et al., 2009; Siegel et al., 2013), Drosophila (Abmayr and Keller, 1998) and Xenopus (Chanoine and Hardy, 2003), showing a high conservation of the MYOD/MYF5 transcriptional machinery in regulating muscle specification and development throughout evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hinits et al., 2009; Siegel et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "cb4dd938-1ba2-4425-aacd-615138e8cb7c",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C87",
+      "claim": "Redundancy of Myf5 and MyoD in development and muscle injury has been reported in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This same redundancy of Myf5 and MyoD in development and muscle injury has now been reported in zebrafish (Hinits et al., 2009; Siegel et al., 2013), Drosophila (Abmayr and Keller, 1998) and Xenopus (Chanoine and Hardy, 2003), showing a high conservation of the MYOD/MYF5 transcriptional machinery in regulating muscle specification and development throughout evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abmayr and Keller, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "bbc02f27-096f-4e75-b649-f4ef0d80e117",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C88",
+      "claim": "Redundancy of Myf5 and MyoD in development and muscle injury has been reported in Xenopus.",
+      "claim_type": "EXPLICIT",
+      "source": "This same redundancy of Myf5 and MyoD in development and muscle injury has now been reported in zebrafish (Hinits et al., 2009; Siegel et al., 2013), Drosophila (Abmayr and Keller, 1998) and Xenopus (Chanoine and Hardy, 2003), showing a high conservation of the MYOD/MYF5 transcriptional machinery in regulating muscle specification and development throughout evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chanoine and Hardy, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "5d801eae-4bcf-4043-a69c-34d6d099efa6",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C89",
+      "claim": "MRFs are required for self-renewal of adult muscle satellite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These same MRFs are also required for self-renewal of adult muscle satellite cells (Cooper et al., 1999; Ustanina et al., 2007; Yablonka-Reuveni et al., 1999), yet roles for these factors in individually regulating muscle fate and self-renewal are now just emerging in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cooper et al., 1999; Ustanina et al., 2007; Yablonka-Reuveni et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "945cf8db-0dd0-44db-9bb4-0b8e14fe28b7",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C90",
+      "claim": "A subset of muscle progenitors are specified by MYOD without the contribution of MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a subset of muscle progenitors are specified by MYOD without the contribution of MYF5 (Haldar et al., 2008, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haldar et al., 2008, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "4f21de02-e63e-4c35-849c-50c4de1642c2",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C91",
+      "claim": "A subset of adult muscle progenitors express MYF5 and then MYOD sequentially during their specification with both being required for muscle regeneration following injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a subset of adult muscle progenitors express MYF5 and then MYOD sequentially during their specification with both being required for muscle regeneration following injury (Comai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Comai et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c64c977f-dcd1-439b-9ec4-d28d7fb87b55",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C92",
+      "claim": "m-cadherin (CDH15) and myogenin (MYOG) were transcriptionally regulated by MYF5 and MYOD in human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, m-cadherin (CDH15) and myogenin (MYOG) were transcriptionally regulated by MYF5 and MYOD in human RMS, consistent with regulation of these same factors by MYF5 and MYOD in myoblasts (Conerly et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR data in Figure 6E and citation to Conerly et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "fd0495d2-d775-4f93-9be9-e368e4e4340f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C93",
+      "claim": "The CDK4/6-associated cyclin D2 (CCND2) complex is required for myoblast proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the CDK4/6-associated cyclin D2 (CCND2) complex is required for both myoblast proliferation and human RMS growth, is highly expressed in primary human RMS and is amplified in a subset of human and zebrafish RMS (Chen et al., 2013a; Saab et al., 2006; Webster and Fan, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013a; Saab et al., 2006; Webster and Fan, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "0d3063bb-b814-4375-861c-364b77aa408d",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "claim_id": "C94",
+      "claim": "The CDK4/6-associated cyclin D2 (CCND2) complex is highly expressed in primary human RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the CDK4/6-associated cyclin D2 (CCND2) complex is required for both myoblast proliferation and human RMS growth, is highly expressed in primary human RMS and is amplified in a subset of human and zebrafish RMS (Chen et al., 2013a; Saab et al., 2006; Webster and Fan, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2013a; Saab et al., 2006; Webster and Fan, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3d4311ac-b618-40ef-a920-427c9d655bb0",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RMS is a pediatric muscle malignancy characterized by impaired differentiation and expression of myogenic regulatory transcription factors MYF5 and MYOD, which are used clinically for diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C16, C17, and C18 establish the basic characteristics of RMS. These are well-supported by citations to established literature and represent accepted knowledge in the field. The claims are consistent and mutually reinforcing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "207b5107-627c-40e9-bed1-1f8da6e5e996",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ARMS and ERMS represent distinct molecular subtypes with different genomic characteristics: ARMS harbor PAX-FOXO fusions with few additional changes, while ERMS have RAS pathway activation, higher mutation burden, and mutations in TP53, FGFR4, PDGFA, and NOTCH1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe established molecular differences between RMS subtypes. All claims are supported by appropriate citations to prior genomic studies. This represents background knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior to this work, the field consensus was that MRF expression reflected the cell of transformation rather than being required for tumor growth, despite MYF5 and MYOD being highly expressed in RMS models and having known roles in muscle development and cellular reprogramming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C30 establish the prior state of knowledge and the gap this study addresses. These are well-supported by citations and provide important context for the novelty of the functional studies presented. C30 appropriately frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The zebrafish kRASG12D-induced ERMS model, using the rag2 promoter expressed in lymphoid and muscle progenitor cells, accurately mimics human disease and has been validated for studying RMS biology and identifying TPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 describe the zebrafish model system used in this study. All claims are supported by appropriate citations to prior work establishing and validating this model. This provides essential methodological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "26ae6d34-fd52-41dc-84c8-836ee19d898f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In zebrafish ERMS, myf5 is highly expressed in undifferentiated TPCs that share properties with muscle satellite stem cells, with myf5:GFP+/myosin-negative cells specifically labeling and driving tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 establish prior characterization of the zebrafish model relevant to this study. These are supported by citations to previous work and provide the foundation for the myf5 overexpression experiments. The mylpfa promoter specificity (C43) is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "ba58c915-030b-48ab-b04e-de3e768970a4",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Re-expression of myf5 under the mylpfa promoter in zebrafish ERMS resulted in more differentiated tumors (7.7% vs 50% stage 1), elevated TPC markers (c-met, cadherin 15), larger tumor size at 30 dpf, without changes in apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 are supported by histological analysis (Figure 1B-F), qRT-PCR data (Figure 1G), tumor size measurements (Figure 1H), and apoptosis assays (Figure 1\u2014supplement 3). The statistical significance (p=0.015, Chi-square) for differentiation changes is appropriate. However, the proliferation data shows high variability and only a trend (C51, Figure 1\u2014supplement 3D), which appropriately tempers conclusions about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "d60c8347-e950-42ae-abc3-df2f3430c847",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Myf5 expression caused tumors to initiate earlier and have higher penetrance in zebrafish ERMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C6 are supported by Kaplan-Meier analysis (Figure 1I, p<0.001, log-rank test). The data clearly show accelerated tumor onset and increased penetrance with mylpfa:myf5 expression. Statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "5b6665f2-0f29-44d4-a582-17a0a7d31833",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Following transplantation into immune-deficient recipients, kRASG12D-alone ERMS remained undifferentiated (stage 1), while mylpfa:myf5 expressing ERMS showed differentiated histology (stage 2-3) with expanded mylpfa:mCherry+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by histological analysis (Figure 2B-F, p<0.001 Chi-square) and flow cytometry (Figure 2G-I, p=0.006). The transplantation experiments confirm that differentiation effects are maintained in fully transformed cells, strengthening the primary tumor findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "7fa1285b-8007-4d6e-bd66-5f736d103281",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Myf5 is sufficient to confer tumor-propagating potential to differentiated ERMS cells: in limiting dilution transplantation, both G+ and G+R+ cells from mylpfa:myf5 ERMS could engraft tumors, while only G+ cells from kRASG12D-alone ERMS were tumorigenic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C56, and C57 are supported by limiting dilution transplantation data (Figure 3, Table 1, p=0.0002 ELDA analysis). The experiments used appropriate controls, high sort purity (>85%), and multiple independent tumors (N=3). This is a key finding demonstrating that myf5 can reprogram differentiated cells to acquire TPC properties. The ELDA statistical analysis is appropriate for this type of data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "efbfa411-cee5-45b9-9e12-f7e6bfd03bf2",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of human RMS revealed two distinct gene regulatory modules: one with MYF5, MYF6, and PAX7 co-expression, and another with MYOD and higher CDH15 and MYOG expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by correlation analysis of microarray (N=133) and RNA-seq (N=98) datasets (Figure 4A-B). The analysis appropriately uses Pearson correlation and is consistent across both datasets and RMS subtypes (Figure 4\u2014supplement 1). This establishes inter-tumoral heterogeneity in MRF expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "5700ecf8-1feb-4269-9c45-1b491cb0f466",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MYF5 and MYOD proteins are mutually exclusively expressed in human RMS cell lines at both bulk and single-cell levels, with only Rh18 cells expressing MYF5 among the panel tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C61-C63 are supported by Western blot (Figure 4C, N=7 cell lines) and immunofluorescence (Figure 4\u2014supplement 2). The mutual exclusivity is clearly demonstrated. However, the sample size is limited to 7 cell lines, and only one (Rh18) expresses MYF5, which limits generalizability but is appropriate given the rarity of MYF5-expressing lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "03498b9f-ee3b-4a0b-98b7-6acc13d205cd",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MYF5 is required for sustained growth of Rh18 human RMS cells: knockdown resulted in 70% reduction in S-phase cells (siRNA, 48hr) and virtual abrogation of S-phase (shRNA, 72hr), with 60% decrease in cell number without initial apoptosis increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C64-C66 are supported by EdU/PI flow cytometry (Figure 4E-I, p<0.001), nuclei counts (Figure 4\u2014supplement 3E), and apoptosis assays (Figure 4\u2014supplement 3B-D). Multiple independent shRNAs (N=3) show consistent effects. The temporal sequence (cell cycle arrest preceding apoptosis) is well-documented. Statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MYOD is required for sustained growth of human RMS cells: knockdown in RD, 381T, RMS559, and Rh3 cells resulted in reduced S-phase cells, decreased cell number (>30% in RD), reduced sphere formation, with variable effects on apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C67-C70 are supported by EdU/PI flow cytometry (Figure 4J-O, Figure 4\u2014supplement 4, p<0.001), nuclei counts (Figure 4\u2014supplement 3H), and sphere assays (Figure 4\u2014supplement 3I-J, p<0.01). Effects are demonstrated across multiple cell lines (RD, 381T, RMS559, Rh3) representing both ERMS and ARMS. Specificity controls (Figure 4\u2014supplement 4M-T) confirm knockdown specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "28dbafb3-8631-4e46-8388-0f4f5b2f8fec",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MYF5 knockdown in Rh18 cells severely impaired xenograft growth: tumor volume was reduced over time, cells were largely undetected at late timepoints, with only 2/12 mice having detectable tumors at necropsy and greatly reduced tumor weight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by bioluminescence imaging (Figure 5B-C, Figure 5\u2014supplement 1A, p<0.05) and necropsy data (Figure 5D-E, p<0.01). The in vivo requirement for MYF5 is clearly demonstrated. N=6 mice per condition with bilateral implantation (control vs knockdown) provides good experimental design. Rare escaper tumors retained RMS histology (Figure 5\u2014supplement 1D-E).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "13032952-1e7a-4498-8065-0889d378f2ea",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "MYOD knockdown reduced xenograft growth of RD and RMS559 cells: tumors were smaller and weighed significantly less than controls, though knockdown cells continued to grow at reduced levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by bioluminescence imaging (Figure 5F-M, Figure 5\u2014supplement 1B-C, p<0.01) and necropsy data (Figure 5I-J, N-O, p<0.01). Unlike MYF5 knockdown in Rh18, MYOD knockdown cells continued to grow albeit at reduced levels, suggesting additional mechanisms may contribute to growth in these cells. This difference is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "460f8155-879d-4974-97e5-9e2daa107eea",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ChIP-seq analysis revealed that MYF5 and MYOD bind common DNA regulatory elements in human RMS, with 86% of commonly bound regions in enhancers (H3K27ac+), enriched for genes regulating cell cycle and myogenic cell fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C77-C78 are supported by ChIP-seq analysis (Figure 6A-C). The analysis appropriately uses H3K27ac to define enhancers and GREAT for gene ontology analysis. However, the ChIP-seq compares different cell lines (MYF5 in Rh18 vs MYOD in RD), which is a limitation but reasonable given mutual exclusivity. Binomial p<1\u00d710\u207b\u2079 for GO terms is highly significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MYF5 and MYOD regulate transcription of genes controlling muscle development (Myogenin, CDH15) and cell cycle progression (CCND2), with downregulation observed following knockdown at 48-72hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C79-C80, and C92 are supported by qRT-PCR data (Figure 6E) and ChIP-seq signal tracks (Figure 6D, Figure 6\u2014supplement 1B). The functional validation of ChIP-seq targets strengthens the mechanistic model. Citation to Conerly et al. 2016 for myoblast regulation provides appropriate context. Statistical significance is shown for knockdown effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "96912456-639f-4433-a56d-e55894fd3192",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "CCND2, a CDK4/6-associated cyclin amplified in RMS and required for proliferation, is a predicted direct target of MYF5/MYOD binding, with zebrafish ccnd2a showing trend toward higher expression in mylpfa:myf5 ERMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 are well-supported by citations. However, C81 shows only a trend (not statistically significant) in zebrafish ccnd2a expression (Figure 6\u2014supplement 2). While the human data for CCND2 regulation is clear (C80), the zebrafish correlation is suggestive but not definitive. The connection between MYF5/MYOD and CCND2 regulation is supported but would benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TPCs drive tumor growth and relapse, have been identified in zebrafish and human RMS, with only Sonic-Hedgehog and WNT/\u03b2-catenin pathways previously shown to regulate TPC function in RMS subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C25-C26 establish background on TPCs in RMS. All claims are supported by appropriate citations to prior literature. This provides context for the novelty of identifying MRF regulation of TPC function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "1e53788c-d062-4484-b28a-c1ee47cff1ae",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "MYF5 and MYOD act redundantly in muscle development across species (mouse, zebrafish, Drosophila, Xenopus) and are required for satellite cell self-renewal, though recent work shows individual roles for each factor in specific muscle progenitor subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 provide important biological context from developmental biology literature. All claims are supported by appropriate citations. This background establishes the biological plausibility of MRF roles in RMS and highlights the novelty of finding mutual exclusivity in cancer versus co-expression in development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    },
+    {
+      "id": "176990c9-1d03-4445-be18-166f0f5fa72a",
+      "content_id": "32099342-bbd8-415c-86de-17b2c331b8be",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The CCND2 complex is required for myoblast proliferation and RMS growth, is highly expressed in primary human RMS, and is amplified in subsets of human and zebrafish RMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 are supported by citations to Chen et al. 2013a, Saab et al. 2006, and Webster and Fan 2013. This establishes CCND2 as a relevant downstream target of MRF regulation with known importance in RMS biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:53.957514Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "25b07002-da68-47f6-82a1-bd621dbe2d69",
+      "result_id": "3d4311ac-b618-40ef-a920-427c9d655bb0"
+    },
+    {
+      "claim_id": "a0b34986-8bba-406b-8be9-c15edb16f4a9",
+      "result_id": "3d4311ac-b618-40ef-a920-427c9d655bb0"
+    },
+    {
+      "claim_id": "12463b7c-37bf-4323-85a4-f74f66da6bae",
+      "result_id": "3d4311ac-b618-40ef-a920-427c9d655bb0"
+    },
+    {
+      "claim_id": "4eccc126-5159-45b0-a044-27cf0dcc90af",
+      "result_id": "3d4311ac-b618-40ef-a920-427c9d655bb0"
+    },
+    {
+      "claim_id": "edef1dc4-1267-4afd-8b84-a542d30dc291",
+      "result_id": "3d4311ac-b618-40ef-a920-427c9d655bb0"
+    },
+    {
+      "claim_id": "3e3967a2-f20e-4977-b74d-5ac6773b3cbb",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "94297fe6-3714-4bbd-963f-33984f11d136",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "07afbefa-6e05-4bb9-967f-146a7705e61c",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "85400768-7cad-4acd-acbb-652e7f690a70",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "221fe59e-9d09-4906-8979-93d798db3e2f",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "6a1c661c-f9ea-4265-92dd-e85544d6b3c7",
+      "result_id": "207b5107-627c-40e9-bed1-1f8da6e5e996"
+    },
+    {
+      "claim_id": "abe10dcd-2f72-4741-82d8-6e942d9c563a",
+      "result_id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95"
+    },
+    {
+      "claim_id": "f311f1dc-fc0f-4ec8-86c3-03f92ba7068c",
+      "result_id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95"
+    },
+    {
+      "claim_id": "6be50060-7796-4e79-9426-2d31afef9e33",
+      "result_id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95"
+    },
+    {
+      "claim_id": "9eb2141d-20a9-4b36-8bc3-abf9f1cd0e6d",
+      "result_id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95"
+    },
+    {
+      "claim_id": "36cb3fa4-712e-46e6-98b5-3d63c384296b",
+      "result_id": "2a34cd67-f420-441e-8f0e-5a71aa1a6f95"
+    },
+    {
+      "claim_id": "a8d3d8ff-65f9-4f95-bc42-6c06107be720",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "d4d1b5d0-eff4-4a2c-9d24-4b08b07b22bb",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "c17b95a3-bcb7-44d8-b9de-e7dd44390d90",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "3ea65e96-c493-4f22-b1c2-37d33b7664e6",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "f7c911ea-4770-43ab-a432-f7b915f3865e",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "2bd8bfaa-6011-435e-b592-2ec1ad488d43",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "303d1be0-5d75-4b0e-bb3f-8ae9b167049c",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "7c8c42df-1088-4f04-95d8-35c1640ded5c",
+      "result_id": "c28d25cc-3e6d-4da4-a0af-bed8ae024f41"
+    },
+    {
+      "claim_id": "d323e1ff-c455-44ea-9c93-399dbc601a03",
+      "result_id": "26ae6d34-fd52-41dc-84c8-836ee19d898f"
+    },
+    {
+      "claim_id": "5032ae8f-5777-46ed-99a2-5c50de55c7a0",
+      "result_id": "26ae6d34-fd52-41dc-84c8-836ee19d898f"
+    },
+    {
+      "claim_id": "1bf3e85d-0733-481d-921f-e47749640127",
+      "result_id": "26ae6d34-fd52-41dc-84c8-836ee19d898f"
+    },
+    {
+      "claim_id": "98689c8d-f204-4ea1-8224-d8ff95ecea57",
+      "result_id": "26ae6d34-fd52-41dc-84c8-836ee19d898f"
+    },
+    {
+      "claim_id": "e79a178f-25b6-4671-8172-886490846682",
+      "result_id": "26ae6d34-fd52-41dc-84c8-836ee19d898f"
+    },
+    {
+      "claim_id": "7e7085df-212b-4e2b-a612-814ab7c8cd64",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "cc8f0bc4-0414-420f-b470-9290466d75f1",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "14ffd545-7abe-4935-8545-8adb3d635868",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "01eca0fb-ae75-49dc-acb4-ab1b81bffd43",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "403f0f4a-627a-455d-8d35-af36be8e4b16",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "50529ea5-581c-4344-833b-916fd44a1ff6",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "5b0e1ace-8cd9-429a-9b91-d155f16e8564",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "9349bbd9-35ed-47f7-96c9-8a61c7794312",
+      "result_id": "ba58c915-030b-48ab-b04e-de3e768970a4"
+    },
+    {
+      "claim_id": "de0029ce-8447-408a-b71d-ee010760ac2a",
+      "result_id": "d60c8347-e950-42ae-abc3-df2f3430c847"
+    },
+    {
+      "claim_id": "c0eca91e-582d-4496-b889-db03a21e34e3",
+      "result_id": "d60c8347-e950-42ae-abc3-df2f3430c847"
+    },
+    {
+      "claim_id": "15589629-0a87-4dcb-bdba-4246b3b828f4",
+      "result_id": "5b6665f2-0f29-44d4-a582-17a0a7d31833"
+    },
+    {
+      "claim_id": "79cf6162-944e-4c97-8f88-7eb19821a228",
+      "result_id": "5b6665f2-0f29-44d4-a582-17a0a7d31833"
+    },
+    {
+      "claim_id": "39d38c17-0106-4eb9-b037-9c5973c10655",
+      "result_id": "5b6665f2-0f29-44d4-a582-17a0a7d31833"
+    },
+    {
+      "claim_id": "06dc8b9b-3aaa-46f3-b6cf-a5b50dd0fa38",
+      "result_id": "7fa1285b-8007-4d6e-bd66-5f736d103281"
+    },
+    {
+      "claim_id": "423832fe-df4b-4de8-b44f-9cf39d36dee2",
+      "result_id": "7fa1285b-8007-4d6e-bd66-5f736d103281"
+    },
+    {
+      "claim_id": "a12079ff-94a7-4df3-8524-7222b5e6cd13",
+      "result_id": "7fa1285b-8007-4d6e-bd66-5f736d103281"
+    },
+    {
+      "claim_id": "6f594d3d-631d-4e9b-8121-311aeeb7cf7e",
+      "result_id": "efbfa411-cee5-45b9-9e12-f7e6bfd03bf2"
+    },
+    {
+      "claim_id": "943248d7-efe4-4380-a3de-dc23a2e9293d",
+      "result_id": "efbfa411-cee5-45b9-9e12-f7e6bfd03bf2"
+    },
+    {
+      "claim_id": "c1fae28c-cd55-4782-acd9-d378977d342e",
+      "result_id": "efbfa411-cee5-45b9-9e12-f7e6bfd03bf2"
+    },
+    {
+      "claim_id": "2d6fd857-bd5d-49a6-bcf3-d412b40de193",
+      "result_id": "5700ecf8-1feb-4269-9c45-1b491cb0f466"
+    },
+    {
+      "claim_id": "e29ede09-bf55-4d21-8701-50d867b43da3",
+      "result_id": "5700ecf8-1feb-4269-9c45-1b491cb0f466"
+    },
+    {
+      "claim_id": "f752c330-8fa2-4504-94af-18cc85ca1f04",
+      "result_id": "5700ecf8-1feb-4269-9c45-1b491cb0f466"
+    },
+    {
+      "claim_id": "81b4500e-e140-4633-861f-dd10f61fdc5f",
+      "result_id": "5700ecf8-1feb-4269-9c45-1b491cb0f466"
+    },
+    {
+      "claim_id": "1d34eee2-4a7a-4765-a6d9-1a8084ca9f1e",
+      "result_id": "03498b9f-ee3b-4a0b-98b7-6acc13d205cd"
+    },
+    {
+      "claim_id": "7bf55a64-e252-42c4-b207-f4a055024f38",
+      "result_id": "03498b9f-ee3b-4a0b-98b7-6acc13d205cd"
+    },
+    {
+      "claim_id": "0dc36c19-900f-4e5e-b423-92e09844cf9b",
+      "result_id": "03498b9f-ee3b-4a0b-98b7-6acc13d205cd"
+    },
+    {
+      "claim_id": "353ae08c-43df-4e91-bb75-0475a724ca62",
+      "result_id": "03498b9f-ee3b-4a0b-98b7-6acc13d205cd"
+    },
+    {
+      "claim_id": "4682548b-af85-4cf2-9535-54c17fc172b0",
+      "result_id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f"
+    },
+    {
+      "claim_id": "e5e4267e-d1dd-4c06-a55e-914f33b89be3",
+      "result_id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f"
+    },
+    {
+      "claim_id": "70a19063-5d6c-490c-9300-0e27e7fe0dbb",
+      "result_id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f"
+    },
+    {
+      "claim_id": "d7d1256b-dfc7-4fee-b5db-fb52f74810ee",
+      "result_id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f"
+    },
+    {
+      "claim_id": "bacc2ed2-755c-4798-83e8-bca11a18ef7a",
+      "result_id": "146fd7c0-1c3c-4d45-8bd8-39a70ea2e05f"
+    },
+    {
+      "claim_id": "d50ab2ef-c5f2-4cda-8146-501c2500600a",
+      "result_id": "28dbafb3-8631-4e46-8388-0f4f5b2f8fec"
+    },
+    {
+      "claim_id": "e0cc9cb6-a045-4982-af2c-abfc3787dfc1",
+      "result_id": "28dbafb3-8631-4e46-8388-0f4f5b2f8fec"
+    },
+    {
+      "claim_id": "7ac298d8-c8fe-433b-ba14-f47238ee48f2",
+      "result_id": "28dbafb3-8631-4e46-8388-0f4f5b2f8fec"
+    },
+    {
+      "claim_id": "e39e341e-c843-4291-8f4b-80dab2f2f7ff",
+      "result_id": "28dbafb3-8631-4e46-8388-0f4f5b2f8fec"
+    },
+    {
+      "claim_id": "b7cd869b-62a2-4899-8735-63bbc810649a",
+      "result_id": "13032952-1e7a-4498-8065-0889d378f2ea"
+    },
+    {
+      "claim_id": "cae82d99-f449-4f63-a712-bc4f17f17789",
+      "result_id": "13032952-1e7a-4498-8065-0889d378f2ea"
+    },
+    {
+      "claim_id": "a5f8adb4-919a-439a-ac3d-eb6760f31c8d",
+      "result_id": "460f8155-879d-4974-97e5-9e2daa107eea"
+    },
+    {
+      "claim_id": "668e3de8-15a5-4b55-854c-4353843aa288",
+      "result_id": "460f8155-879d-4974-97e5-9e2daa107eea"
+    },
+    {
+      "claim_id": "d6cfc3eb-ab17-48fa-aece-081ee33f1f1a",
+      "result_id": "460f8155-879d-4974-97e5-9e2daa107eea"
+    },
+    {
+      "claim_id": "8152f3fc-fb33-404a-b7f6-41ddacfd8ebc",
+      "result_id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d"
+    },
+    {
+      "claim_id": "327fa24e-6061-4d07-820f-50bb2cfed70c",
+      "result_id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d"
+    },
+    {
+      "claim_id": "a0299e38-ac81-4f4a-80f6-3a6b616cd8bd",
+      "result_id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d"
+    },
+    {
+      "claim_id": "81f6c862-5f76-4983-9a34-10beeeb9e415",
+      "result_id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d"
+    },
+    {
+      "claim_id": "c64c977f-dcd1-439b-9ec4-d28d7fb87b55",
+      "result_id": "77f7ca6f-4f98-4ba4-8e6a-5fc0a5405f6d"
+    },
+    {
+      "claim_id": "bb01f589-993f-48cb-aa70-3f0b4aae6c42",
+      "result_id": "96912456-639f-4433-a56d-e55894fd3192"
+    },
+    {
+      "claim_id": "111c42ab-aebd-4106-aa86-611be213c6b2",
+      "result_id": "96912456-639f-4433-a56d-e55894fd3192"
+    },
+    {
+      "claim_id": "fd806efd-3ba6-478c-afaf-876946e043d4",
+      "result_id": "96912456-639f-4433-a56d-e55894fd3192"
+    },
+    {
+      "claim_id": "b86f6014-384f-429a-a879-525d6097fa78",
+      "result_id": "96912456-639f-4433-a56d-e55894fd3192"
+    },
+    {
+      "claim_id": "396c61d0-ae43-4f03-97a4-73104808f688",
+      "result_id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6"
+    },
+    {
+      "claim_id": "c7f38203-2ce1-4d0c-ae5e-30374b312ffb",
+      "result_id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6"
+    },
+    {
+      "claim_id": "2e2310b8-4079-4146-ac97-4dcb63ee53ea",
+      "result_id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6"
+    },
+    {
+      "claim_id": "9fa19daa-a5e9-43a5-8baf-ab28f9e567f1",
+      "result_id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6"
+    },
+    {
+      "claim_id": "a465d6f2-65c5-475a-bc73-68a5b3c788bd",
+      "result_id": "addc5a77-43c4-4bfb-b535-42f4c8b23ba6"
+    },
+    {
+      "claim_id": "678e119f-4dd6-43aa-b22c-5d91cd1429ac",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "a5c39b55-a430-4284-af70-f79ab6c12a2f",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "cb4dd938-1ba2-4425-aacd-615138e8cb7c",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "bbc02f27-096f-4e75-b649-f4ef0d80e117",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "5d801eae-4bcf-4043-a69c-34d6d099efa6",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "945cf8db-0dd0-44db-9bb4-0b8e14fe28b7",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "4f21de02-e63e-4c35-849c-50c4de1642c2",
+      "result_id": "1e53788c-d062-4484-b28a-c1ee47cff1ae"
+    },
+    {
+      "claim_id": "fd0495d2-d775-4f93-9be9-e368e4e4340f",
+      "result_id": "176990c9-1d03-4445-be18-166f0f5fa72a"
+    },
+    {
+      "claim_id": "0d3063bb-b814-4375-861c-364b77aa408d",
+      "result_id": "176990c9-1d03-4445-be18-166f0f5fa72a"
+    }
+  ],
+  "comparisons": []
+}

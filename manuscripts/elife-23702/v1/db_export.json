@@ -1,0 +1,2174 @@
+{
+  "submission": {
+    "id": "9f1e7e7b-38f0-41b3-bf04-6c1b97b7d8a3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:46:27.736008Z",
+    "updated_at": "2025-11-30T23:46:27.736008Z"
+  },
+  "content": [
+    {
+      "id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "submission_id": "9f1e7e7b-38f0-41b3-bf04-6c1b97b7d8a3",
+      "content_type": "manuscript",
+      "content_text": "# Engineering of a synthetic quadrastable gene network to approach Waddington landscape and cell fate determination\n\n## Authors\n\n- Fuqing Wu<sup>1</sup> ([ORCID: 0000-0002-2820-3550](https://orcid.org/0000-0002-2820-3550))\n- Ri-Qi Su<sup>1</sup> ([ORCID: 0000-0002-1311-7596](https://orcid.org/0000-0002-1311-7596))\n- Ying-Cheng Lai<sup>2</sup>\n- Xiao Wang<sup>1</sup> ([ORCID: 0000-0002-4056-0155](https://orcid.org/0000-0002-4056-0155)) \u2020\n\n### Affiliations\n\n1. School of Biological and Health Systems Engineering Arizona State University Tempe United States\n2. School of Electrical, Computer and Energy Engineering Arizona State University Tempe United States\n3. Institute for Complex Systems and Mathematical Biology King\u2019s College, University of Aberdeen Aberdeen United Kingdom\n4. Department of Physics Arizona State University Tempe United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe process of cell fate determination has been depicted intuitively as cells travelling and resting on a rugged landscape, which has been probed by various theoretical studies. However, few studies have experimentally demonstrated how underlying gene regulatory networks shape the landscape and hence orchestrate cellular decision-making in the presence of both signal and noise. Here we tested different topologies and verified a synthetic gene circuit with mutual inhibition and auto-activations to be quadrastable, which enables direct study of quadruple cell fate determination on an engineered landscape. We show that cells indeed gravitate towards local minima and signal inductions dictate cell fates through modulating the shape of the multistable landscape. Experiments, guided by model predictions, reveal that sequential inductions generate distinct cell fates by changing landscape in sequence and hence navigating cells to different final states. This work provides a synthetic biology framework to approach cell fate determination and suggests a landscape-based explanation of fixed induction sequences for targeted differentiation.\n\n## Introduction\n\nMultistability is a mechanism that cells use to achieve a discrete number of mutually exclusive states in response to environmental inputs, such as the lysis/lysogeny switch of phage lambda (Arkin et al, 1998; Oppenheim et al., 2005) and sporulation/competence in Bacillus subtilis (S\u00fcel et al., 2006; Schultz et al., 2009). In multicellular organisms, multistable switches are also common in the cellular decision-making including the regulation of cell-cycle oscillator during cell mitosis (Pomerening et al., 2003), Epithelial-to-Mesenchymal transition and cancer metastasis (Jolly et al., 2016; Lee et al., 2014a), and the well-known cell differentiation process, which is a manifestation of cellular state determination in a multistable system (Laurent and Kellershohn, 1999; Guantes and Poyatos, 2008). However, loss of multistability can drive cells to acquire metastatic characteristics and stabilize highly proliferative, pathogenic cellular states in cancer (Lee et al., 2014b).\n\nC.H. Waddington hypothesized the \u2018epigenetic landscape\u2019 to explain canalization and fate determination mechanism during cell differentiation (Waddington, 1957). In this hypothesis, differentiation is depicted as a marble rolling down a landscape with multiple bifurcating valleys and eventually settles at one of the local minima, corresponding to terminally differentiated cells. More recent theoretical studies further proposed the local minima to be modeled as steady states or attractors of dynamical systems, which can be mathematically described using differential equations (Zhang and Wolynes, 2014; Li and Wang, 2013a). As such, cell differentiation can be interpreted as a state transition process on a multistable dynamic system. A myriad of theoretical analysis have investigated the functioning of such systems and quantified the Waddington landscape and developmental paths through computation of the probability landscape for the underlying gene regulatory networks (Li and Wang, 2013a; Wang et al., 2011; Li and Wang, 2013b; Ferrell, 2012; Bhattacharya et al., 2011; Macarthur et al., 2009; Huang et al., 2007). Recent studies also revealed that the potential landscape and the corresponding curl flux are crucial for determining the robustness and global dynamics of non-equilibrium biological networks (Wang, 2015; Xu et al., 2014; Wang et al., 2008). Furthermore, the multiple stable steady states have been predicted beyond the bistable switches with or without epigenetic effects, which is reflected in slow timescales (Wang, 2015; Xu et al., 2014; Li and Wang, 2013b; Feng and Wang, 2012; Wang et al., 2011; Feng et al., 2011). Experimental researches, however, mostly focus on bistable switches, involving transitions between only two states. And demonstrations, from a combination of experiments and computational modeling, for the existence and operation of such a landscape in a higher dimensional multistable system are still lacking. Moreover, it remains unknown how gene regulatory networks (GRNs), gene expression noise, and signal induction together shape the attractor landscape and determine a cell\u2019s developmental trajectory to its final fates (Schmiedel et al., 2015; Tanouchi et al., 2015; Prindle et al., 2014; Chalancon et al., 2012; Murphy et al., 2010; Bal\u00e1zsi et al., 2011; Kramer and Fussenegger, 2005; Bennett et al., 2008; Maamar et al., 2007).\n\nComplex contextual connections of GRNs have impeded experimentally establishing the shape and function of the cell fate landscape. Rationally designed and tunable synthetic multistable gene networks in E. coli, however, could form well-characterized attractor landscapes to enable close experimental investigations of general principles of GRN regulated cellular state transitions. Since the functioning of these principles only requires the most fundamental aspects of gene expression regulation, they would also be applicable for cell differentiation regulations in mammalian cells. Here, we combine mathematical theory, numerical simulations, and synthetic biology to probe all possible sub-networks of mutually inhibitory network with positive autoregulations (MINPA, Figure 1A), which has been hypothesized to have multistability potentials (Guantes and Poyatos, 2008; Huang et al., 2007). Moreover, MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development (Gata1-Pu.1, [Graf and Enver, 2009]), trophectoderm differentiation (Oct3/4-Cdx2, [Niwa et al., 2005]), endoderm formation (Gata6-Nanog, [Bessonnard et al., 2014; Li and Wang, 2013a]), and bone, cartilage, and fat differentiation (RUNX2-SOX9-PPAR-\u03b3, [MacArthur et al., 2008; Rabajante and Babierra, 2015]).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig1-v1.jpg)\n\n**Figure 1.:** (A) Abstract diagram of MINPA topology, where X and Y mutually inhibit (T-bars) each other and auto-activate (arrowheads) itself. Four inducers to regulate the four color-coded regulatory edges are also listed. (B) Molecular implementation of the MINPA network. Para/lac (purple arrow) is activated by AraC (yellow) and repressed by LacI (light green), while Plux/tet (cyan arrow) is activated by LuxR (blue) and repressed by TetR (red). Arabinose and AHL (oval) can induce AraC and LuxR activation, respectively. IPTG and aTc (hexagon) can respectively relieve LacI and TetR inhibition. GFP and mCherry serve as the readout of Para/lac and Plux/tet, respectively. Therefore, TetR and AraC collectively form the node X in (A), color-coded as purple rectangle. Similarly, LuxR and LacI collectively form the node Y in (A), color-coded as cyan rectangle. Genes, promoters and regulations are color-coded corresponding to the topology in (A). (C) List of MINPA and its 14 sub-networks. Numbering of indices is converted from topologies\u2019 binary name (see Figure 1\u2014figure supplement 1E for more details). T represents \u2018topology\u2019. R represents \u2018repression\u2019, and A represents \u2018autoactivation\u2019. Superscript is used to describe the number of such types of edges. Topologies with shaded background were later constructed and analyzed experimentally. (D\u2013E) Dynamic responses for Para/lac (D) and Plux/tet (E) through induction with Arabinose (Ara) and IPTG, and AHL and aTc, respectively. Presented data was the mean value of three replicates. mCherry and GFP serves as the readout of the two promoters.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Abstract diagrams and molecular implementation of the eight MINPA sub-network topologies, including tunable positive feedbacks (T6 and T9), mutual inhibition (T5), dual-positive feedbacks (T10), and their combinations (T7, T11, T13, and T14). Genes, promoters, and regulations are color-coded corresponding to the topology on the left side. (B\u2013C) Biological devices for testing promoter Para/lac (B) and Plux/tet (C), respectively. Fluorescence was measured by flow cytometry at 12 hr and 24 hr (not shown) after adding the inducers. All the data points were averaged from three repeated experiments. Grey arrows represent constitutive promoters (BBa_K176009). (D) Principle components and optimal Hill functions fitted for hybrid promoter Para/lac and Plux/tet. (E) List of MINPA and its 14 sub-networks, which are named, and color-coded, as binary numbers based on the existence of regulatory edges. (F) Topological hierarchy of the 15 motifs. (G) Probability of multistability (tristability and quadrastability) for the nine experimentally constructed networks. SSS: stable steady states. The range for activation/repression strength is [0.3, 0.8], and the probability was calculated from the number of parameter sets giving rise to multistability over 2000-repeated computational simulations. (H) Histograms for parameter combination that have multistability in sub-networks of T10, T13, T14 and T15 (MINPA). For each sub-network, the network activation and inhibition strength Sa, Su, St and Sl are randomly selected from given ranges and the number of corresponding SSS is recorded. We repeat this procedure for all sub-networks for 2000 times and calculate the probabilities of bistability (blue lines), tristability (black lines) and quadrastability (red lines). (I) Scatter plots for all parameter combinations that have multistability in MINPA. We generate parameters using the same approach as (H) and select the parameter combinations that can generate three or four SSS in MINPA.\n\n## Results\n\n### MINPA circuit construction and multistability analysis\n\nEngineered circuits of MINPA (Figure 1B) and its sub-networks (Figure 1\u2014figure supplement 1A) are designed to use two hybrid promoters, Para/lac and Plux/tet, which are characterized experimentally to show small leakage and high nonlinearity (Figure 1D\u2013E and Figure 1\u2014figure supplement 1B\u2013D). For MINPA topology, hybrid promoter Para/lac drives AraC and TetR expression, representing the node X in Figure 1A, whereas Plux/tet controls LuxR and LacI transcription, representing the node Y. AraC and LuxR activate Para/lac and Plux/tet in the presence of Arabinose and AHL (3oxo-C6-HSL) respectively, forming positive autoregulations. IPTG inhibits the repressive effect of LacI on TetR expression, while aTc counteracts TetR repression on LacI. Hence, the two nodes form the topology presented in the conceptual design shown in Figure 1A. Green fluorescent protein (GFP) and mCherry serve as the corresponding readouts of Plux/tet and Para/lac activities in living cells (Figure 1B).\n\nTopologies of MINPA and all its subnetworks can be divided into four layers, from one- to four-dimensional networks based on the number of regulatory edges (Figure 1C and Figure 1\u2014figure supplement 1E\u2013F) and further categorized into nine groups based on the configurations of activation and inhibition. By computationally searching a large parameter range for each of the nontrivial networks (Faucon et al., 2014), we found that networks with two auto-activations, including A2, RA2, R2A2, have high probability of tristability or quadrastability (Figure 1\u2014figure supplement 1G), defined as having three or four stable steady sates (SSS) under a common induction condition. However, MINPA has broader parameter distributions than the other two (Figure 1\u2014figure supplement 1H\u2013I), which suggests it is more resistant to parameter change and thus likely to achieve multistability in experimental settings.\n\n### Systematical multistability evaluation of MINPA and its sub-networks\n\nIn order to experimentally evaluate dynamic properties of these networks, we constructed nine circuits including tunable positive feedbacks (T6 and T9), mutual inhibition (T5), dual-positive feedbacks (T10), and their combinations (T7, T11, T13, T14 and T15). One-dimensional networks (T1, T4, T2 and T8) and trivial two-dimensional networks (T3 and T12) are excluded for their low multistability probability. All motifs were constructed using the same set of components (Figure 1).\n\nProbing a circuit\u2019s multistability typically requires thorough hysteresis experiments covering wide ranges of doses for all inducers (Acar et al., 2005; Angeli et al., 2004; Gardner et al., 2000), which becomes infeasible for nine complex networks with four inducers. To improve the efficiency of probing multistability and tunability, we designed a \u2018sequential induction\u2019 method to accelerate exploration of unknown high dimensional bifurcation spaces (see Appendix text for details), instead of conventional \u2018back and forth\u2019 hysteresis on one parameter dimension. The main concept relies on the fact that multistable gene networks could exhibit discontinuous jump from one state to another in response to changing parameter (inducer) combinations. Taking the classic \u2018toggle switch\u2019 as an example (Gardner et al., 2000), the circuit can be tuned by two external inducers and its two-parameter bifurcation diagram has a stretched S shape (Figure 2A). Initialized at an arbitrary state A, the cells could reach State C in the bistable region directly when induced with both inducers simultaneously. If the cells are first induced by Inducer I to go to state B, they will also reach State C after Inducer II is added. However, if the same dose of Inducer II is applied first, cells will cross the bifurcation plane to state D on the low-Response surface and then reach state E with addition of Inducer I (Figure 2A). State C and E are two different steady states with the same induction dosages, illustrating hysteresis and verifying multistability.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic illustration of rationale for sequential induction. This two-parameter bifurcation diagram of a bistable toggle-switch depicts all steady state values of response (Z-axis) with combinations of inducer I and II (X and Y axes). Arrows illustrate order and direction of inductions and consequent steady state value changes. Solid lines on the X-Y plane are the boundaries of bistability. Dashed lines on the X-Y plane are projections of solid white arrowheads. (B) Arabinose (Ara) and IPTG were sequentially (left and middle columns) or simultaneously (right column) applied to induce T9, T13, T11, and T15. T: topology. The concentration of Arabinose and IPTG is 2.5*10\u22125m/v, and 5*10\u22125 M, respectively. To indicate the effects of inducers, we used the same color for applied inducers and its regulated connections, which were also shown in bold lines. The other non-regulated connections are represented by thin lines. (C) AHL and aTc were sequentially (left and middle) or simultaneously (right) applied to induce T6, T7, T14, and T15. The concentration of AHL and aTc is 1*10\u22124 M, and 200 ng/ml, respectively. (D) Ara and AHL were sequentially (left and middle) or simultaneously (right) applied to induce T10, T14, T11, and T15. The concentration of Arabinose and AHL is 2.5*10\u22125m/v, and 1*10\u22128 M, respectively. Samples were treated with the first inducer till OD600 is about 0.15 and then the second inducer was added. Cells were grown for another 24 hr before measured by flow cytometry. The experiments were performed in triplicate and repeated two times, and representative results are presented. The inducers are color-coded as visual assistance to indicate which edge of inset diagram it regulates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Abstract diagram and molecular implementation of the toggle switch circuit. TetR (R) and LacI (I) mutually inhibit each other through binding to Ptet and Plac promoter, respectively. IPTG and aTc (hexagon) can respectively relieve LacI and TetR inhibition. GFP serves as the readout of Ptet. (B) Time course results of the sequential induction. The y-axis represents forward scatter (FSC-A), and the x-axis indicates GFP fluorescence. IPTG and aTc were sequentially (left and middle columns) or simultaneously (right column) applied to induce the toggle circuit. The first inducer was added to the media for 5 hr, and then the second inducer was added. Fluorescence was measured by flow cytometry at 0 hr, 5 hr, 12 hr, and 24 hr after the second inducer was added into the cultures. The concentration of IPTG and aTc is 8*10\u22125 M, and 100 ng/ml, respectively. Experiments were repeated for at least three times, and representative results were shown.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Arabinose (Ara) and IPTG were sequentially (left and middle columns) or simultaneously (right column) applied to induce T15. The first inducer was applied for 5 hr, and then the second inducer was added into the culture. Fluorescence was measured by flow cytometry at 0 hr, 12 hr, and 24 hr after the second inducer was added into the culture. The concentration of Ara and IPTG is 2.5*10\u22125m/v, and 5*10\u22125 M, respectively. (B) AHL and aTc were sequentially (left and middle) or simultaneously (right) applied to induce T15. The first inducer was applied for 6.5 hr, and then the second inducer was added into the culture. The concentration of AHL and aTc is 1*10\u22124 M, and 200 ng/ml, respectively. (C) Ara and AHL were sequentially (left and middle) or simultaneously (right) applied to induce T15. The first inducer was applied for 5 hr, and then the second inducer was added into the culture. The concentration of Arabinose and AHL is 2.5*10\u22125m/v, and 1*10\u22128 M, respectively. (D) IPTG and aTc were sequentially (left and middle) or simultaneously (right) applied to induce T15. The first inducer was applied for 6.5 hr, and then the second inducer was added into the culture. The concentration of IPTG and aTc is 1*10\u22124 M, and 200 ng/ml, respectively. Fluorescence was measured by flow cytometry at 0 hr, 12 hr, and 24 hr after the second inducer was added into the culture. The inducers are color-coded as visual assistance to indicate which edge of inset diagram it regulates.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Left: IPTG was first applied to induce the circuits, and then aTc was added; Middle: aTc was first applied to induce the circuits, and then IPTG was added; Right: IPTG and aTc were added simultaneously into the medium. The concentration of IPTG and aTc is 1*10\u22124 M and 200 ng/ml, respectively. Samples were treated with the first inducer for 6.5 hr and then the second inducer was added. Fluorescence was measured at 24 hr by flow cytometry.\n\nTo test our theoretical analysis, a synthetic toggle switch circuit was constructed (Figure 2\u2014figure supplement 1A). Following experimental design principles (see Appendix text for details), we designed a protocol to show the sequential induction effects. We first employed IPTG to induce the circuit for 5 hr, and then aTc was added. Time course results showed that cells stayed at low-GFP state till 24 hr (Figure 2\u2014figure supplement 1B). However, cells induced with aTc first, and then IPTG mainly stayed at high-GFP state, another stable steady state under this condition. Simultaneous aTc and IPTG induction produced similar cell distributions. These results show that sequential induction can be used as a strategy to quickly explore a multistable potential landscape for complex non-equilibrium systems.\n\nWithout knowing the exact bifurcation range beforehand, such ordered sequential inductions could help quickly explore the irregular bifurcation space to reveal multistability for systems with complicated bifurcations, which is typically caused by interfering parameters. Similar sequential induction techniques have been shown to enable access of otherwise hard-to-reach cell death states in breast cancer cells (Lee et al., 2012). This strategy has also been widely employed in directed differentiation of stem cells to specific lineages (Pa\u015fca et al., 2015; Pagliuca et al., 2014; Kroon et al., 2008) and reprogramming somatic cells to induced pluripotent stem cells (Liu et al., 2013). Although specific inducer concentrations are required to observe the effects of this strategy in synthetic circuits, sequential induction with pre-selected inducer combinations can help perform a coarse-grained exploration from different directions in the parameter space. Furthermore, stochastic gene expression of the circuits also contributes to cellular population distribution thus leads to pronounced sequential induction effects, given experimentally feasible amount of time, when the system is entering its multistable region from different directions. Therefore, distinct final states, or even different population distributions, under sequential induction strongly suggests the existence of nonlinear dynamics, including multistability (see Appendix text for details).\n\nUsing the sequential induction approach, we tested the nine circuits using flow cytometry. Cells were first induced by inducer I, inducer II was then added into the media for another 24 hr. Depending on the network configuration, four different dual-inducer combinations were used. For example, Arabinose and IPTG were applied sequentially and simultaneously to T9, T13, T11 and T15, respectively (Figure 2B). It can be seen only T15 exhibits significant expression difference between three induction patterns, while the others show little change (Figure 2B and Figure 2\u2014figure supplement 2A). It should be noted that T15 also exhibits tri-modality of fluorescence expression, suggesting multistability given the presence of gene expression noise, which is partially consistent with our computational predictions. Similarly, AHL and aTc were applied to T6, T7, T14, and T15, respectively (Figure 2C and Figure 2\u2014figure supplement 2B). Results show that only T15 exhibits significant fluorescence pattern change with different inductions, whereas T6 and T7 exhibit minor uniform shifts of expression. T14, although exhibiting bimodality, only shows a ratio change of two populations between three inductions and no sign of bifurcation. Sequential induction by Arabinose and AHL combinations has little effect on T10, T14 and T11, but T15 displays three notable populations for AHL-then-Arabinose induction (Figure 2D and Figure 2\u2014figure supplement 2C). IPTG and aTc were also tested on T5, T7, T13 and T15, but no notable dynamics were observed (Figure 2\u2014figure supplement 2D and Figure 2\u2014figure supplement 3). Taken together, T15, the full MINPA topology, shows the most variety and complexity in population heterogeneity under sequential inductions, suggesting this circuit has the highest potential to generate complex multistability within our induction range and hence enable us to approach the Waddington landscape.\n\n### Bifurcation and hysteresis verification of multistability\n\nNext, operating principles and full tunability of T15 (MINPA) were further examined by using four inducers (Arabinose, AHL, aTc, and IPTG) to fine tune the strength of regulations and perturb the system (Figure 3A). Uninduced cells showed low GFP and low mCherry expression (low-low state, LL). In the presence of AHL and aTc, high GFP and low mCherry (GFP state) is observed; low GFP and high mCherry (mCherry state) emerged with induction of Arabinose; and high GFP and high mCherry (high-high state, HH) was achieved when induced with Arabinose and AHL. These results verify that our engineered MINPA circuit is functioning as designed and fully controllable with four distinct states reachable through appropriate inductions, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig3-v1.jpg)\n\n**Figure 3.:** (A) Engineered MINPA is tunable to reach four individual states: low-low, GFP, mCherry, and high-high, under no induction, 1*10\u22124 M AHL and 100 ng/ml aTc, 2.5*10\u22125 (m/v) Arabinose, 1*10\u22124 M AHL and 2.5*10\u22123 (m/v) Arabinose, and respectively. To indicate the effects of inducers, we used the same color for applied inducer and its regulated connection (bolder lines) in the MINPA topology. The other non-regulated connections are represented by thin lines. (B) 3-D bifurcation diagram of MINPA. AR/AL is a lumped parameter composed of increasing concentrations of Arabinose and AHL, but the ratio of Arabinose and AHL is fixed, i.e., [Arabinose]/[AHL] is a constant. GFP and mCherry represent the states of node X and Y. Blue lines represent stable steady states, while red ones are unstable steady states. Grey, green, rose, and golden spheres represent low-low, GFP, mCherry, and high-high state, respectively. And the size of spheres correlates with the attractiveness of each state. C1, C2, C3, and C4 are four increasing concentrations of Arabinose and AHL used for experimental probing. (C\u2013D) Hysteresis results of MINPA under induction of AR/AL. C1LL-C4LL: cells with low-low initial state (C) are induced with AR/AL at C1 to C4; C1HH-C4HH: cells with high-high initial state (D) are induced with AR/AL for 24 hr at C1 to C4. C1: no inducers; C2: 2.5*10\u22126m/v Arabinose and 1*10\u22127 M AHL; C3: 2.5*10\u22125m/v Arabinose and 1*10\u22126 M AHL; C4: 2.5*10\u22123m/v Arabinose and 1*10\u22124 M AHL. Arabinose and AHL were added at the same time to induce the cells. 100,000 cells were recorded for each sample by flow cytometry.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The circuit\u2019s quadrastability is illustrated as four similar-sized colored spheres on the same gray plane, which represents the low-low, GFP, mCherry, and high-high state, respectively. Blue lines represent stable steady states, while red ones are unstable steady states. Grey, green, rose, and golden spheres represent low-low, GFP, mCherry, and high-high state, respectively. And the size of spheres correlates with the attractiveness of each state. C2: 2.5*10\u22126m/v Arabinose and 1*10\u22127 M AHL.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013D) One-dimensional bifurcation analysis for all four inducers in MINPA. We perform bifurcation analysis for each inducer while setting the concentration of other inducers to be very small (10\u221210). The blue curves are branches of stable steady states (SSS), while the red curves are branches of unstable steady states (USS). The bifurcation analyses are performed using Matlab. (E\u2013H) Dual induction bifurcation analysis for Arabinose and AHL in MINPA. We perform bifurcation analysis for dual induction of different \u03b2 (see Appendix for details). The blue curves are branches of SSS, while the red curves are branches of unstable steady states. (I) Hysteresis of MINPA for initial low-low state cells with induction of Arabinose and AHL. Cells with initial low-low state were induced with a series of concentrations of Arabinose (from 2.5*10\u22126m/v to 2.5*10\u22125m/v to 2.5*10\u22123m/v) and AHL (from 1*10\u22127 M to 1*10\u22126 M to 1*10\u22124 M). Data circled by red rectangles are shown in Figure 3C. Cells were grown for 24 hr before measured by flow cytometry. 10,000 events were recorded. (J) Hysteresis of MINPA for initial high-high state cells with induction of Arabinose and AHL. Initial high-high state cells were collected from the initial low-low state cells induced with 2.5*10\u22123m/v Arabinose and 1*10\u22124 M AHL for 12 hr. Cellular states were then monitored by flow cytometry to ensure its high-high state profile. The high-high state cells were washed and then inoculated into fresh medium with the same concentrations of Arabinose and AHL (from 2.5*10\u22126m/v to 2.5*10\u22125m/v to 2.5*10\u22123m/v) and AHL (from 1*10\u22127 M to 1*10\u22126 M to 1*10\u22124 M). Data circled by red rectangles are shown in Figure 3D. Cells were grown for 24 hr before measured by flow cytometry. 10,000 events were recorded.\n\nTo help design experiments to further investigate the circuit\u2019s quadrastability, a detailed mathematical model was developed to describe the system (see Appendix for details). Using parameters derived from hybrid promoter testing experiments, bifurcation analysis was carried out to systematically quantify MINPA\u2019s dynamic behavior (Figure 3B, Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2A\u2013H). Figure 3B is the three-dimensional bifurcation diagram, where levels of GFP and mCherry represent the states of node X and Y, and \u2018AR/AL\u2019 is a lumped parameter composed of a fixed ratio of the concentrations of Arabinose and AHL. Overall, it can be seen that the system, initialized without induction, is predicted to be quadrastable (shown as four colored spheres, representing LL (grey), GFP (green), mCherry (rose), and HH (golden) state, respectively) but with the low-low state to have dominant attractiveness (shown as the big gray sphere) when AR/AL is low (C1). However, when AR/AL level is within an intermediate range, relative stabilities between different states become comparable. When AR/AL level increased from C1 to C2, the circuit\u2019s quadrastability becomes well pronounced, illustrated as four similar-sized colored spheres on the same gray plane, which represents the low-low, GFP, mCherry, and high-high state, respectively (Figure 3\u2014figure supplement 1). As AR/AL continues to increase from C2 to C3, while the other three SSS remain stable, the stability of the GFP branch disappears. Further increase of AR/AL results in only one stable state-the high-high state, shown as the orange sphere with biggest size.\n\nTo establish MINPA\u2019s quadrastability and tristability as predicted, hysteresis, a hallmark of multistability (Acar et al., 2005; Wu et al., 2014, 2013), of the network was tested. Initialized at the low-low state, cells were induced by increasing doses of AR/AL corresponding to C1 to C4 and measured by flow cytometry (Figure 3C and Figure 3\u2014figure supplement 2I). As predicted, C1LL (cells with initial Low-Low state grown at C1 condition) experiment demonstrates uniform low-low fluorescence profile, due to the low-low state\u2019s dominant attractiveness, and C4LL shows a uniform high-high profile. Interestingly, C3LL indeed illustrates tri-modality, which is the result of predicted tristability. C2LL experiment, on the other hand, exhibits enough heterogeneity to signal high-high, low-low, and mCherry state, but does not illustrate significant trace of GFP state. Given that GFP state is achieved through combinational induction of AHL and aTc (Figure 3A), we hypothesize that the GFP state here is not easily accessible with AHL induction only. Next, cells initialized at high-high states were collected and diluted into fresh media with the same concentrations of AR/AL (Figure 3D and Figure 3\u2014figure supplement 2J). As predicted, these cells keep high-high expression profile even with inductions as low as C1, another demonstration that the system is already multistable at C1. Taken together, the two sets of experiments demonstrated clear hysteresis and verified the existence of three of the four predicted SSS.\n\n### Experimental demonstration of model-guided quadrastability of MINPA\n\nTo further investigate what determines the accessibility of certain SSS in this quadrastable system and how cells navigate this attractor landscape, we take into account gene expression stochasticity (Wu et al., 2013) to sketch out MINPA\u2019s quasi-potential attractor landscape (Figure 4A and Appendix), which is calculated as the negative logarithmic function of stationary distribution density in the phase space of GFP and mCherry. Using the weighted ensemble random walk algorithm (Appendix), the stationary density distribution can be efficiently calculated from the initial uniform distribution. It can be seen that when there is no inducer, MINPA is already quadrastable with four local minima, which is consistent with bifurcation analysis for C1 condition. Furthermore, the much stronger stability of the low-low state (deepest well, Top landscape) and high state-transition barrier explain homogeneous low-low population (C1 experiment in Figure 3C) when cells were initialized with no inductions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dynamic evolution of computed energy landscapes of MINPA under sequential/simultaneous inductions of Arabinose, and/or AHL and aTc. Center route: simultaneous induction with three inducers; Left route: sequential induction with AHL and aTc first, and then Arabinose. Right route: sequential induction with Arabinose, and then AHL and aTc. Deeper wells represent the higher stability of corresponding states. For each three-dimensional landscape, corresponding two-dimensional state-potential plots were also shown. Red line sketches the potentials from mCherry state to high-high to GFP state while green one represents the potentials from mCherry state to low-low to GFP states. mC: mCherry; HH: high-high; LL: low-low. GFP* and mCherry* is the computed GFP and mCherry abundance from the model. To indicate the effects of inducers, we used the same color for applied inducers and its regulated connections, which were also shown in bolder lines. (B\u2013D) Experimental validations of model-predicted quadrastability using flow cytometry. Quadrastable steady states were observed when Arabinose, AHL, and aTc were simultaneously added into the media (B), corresponding to the Center route in A). Four populations were also observed when AHL and aTc were first added to growth media for 6.5 hr and then Arabinose was added, and cells were grown for another 24 hr before measurement (C), corresponding to the Left route in A). Bimodality (low-low and mCherry states) was generated when Arabinose was first applied and then AHL and aTc were added (D), corresponding to the Right route in A). Concentrations for Arabinose, AHL and aTc are 2.5*10\u22125m/v, 1*10\u22124 M, and 400 ng/ml, respectively. Representative results from three replicates are showed and 100,000 cells were recorded for each sample by flow cytometry.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23702/elife-23702-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Up left: Flow cytometry result for cells simultaneously induced with 2.5*10\u22125m/v Arabinose, 1*10\u22124 M AHL and 200 ng/ml aTc for 6.5 hr. Up right: Cells were first induced with 1*10\u22124 M and 400 ng/ml aTc for 6.5 hr, and then measured by flow cytometry. About 12% cells were moving from low-low state to GFP state at 6.5 hr. Bottom left: Cells were first induced with 2.5*10\u22125m/v Arabinose and no obvious state transition was observed at 6.5 hr. However, at 9.5 hr, most cells (84.6%) were transitioned to mCherry state (Bottom right). (B) Microfluidic setup and device design (adopted from Dr. Hasty lab (Ferry et al., 2011). (C) Images showing E.coli growing in the device. White arrows indicate the flow direction. (D) Time course of the cells growing and fluorescence state change with 2*10\u22124 M IPTG and 200 ng/ml aTc induction in the trap. The red flow is medium without inducer for 6 hr, and then cells switch to medium with inducers for 18 hr. Small white arrows show single cells with state change from GFP to mCherry. Magnification: 40x. (E) Time-course sequential induction with AHL, aTc first and then Arabinose (corresponding to the Left route in Figure 4A). The indicated time point is the time after Arabinose added into the culture. 10,000 events were recorded. The low-low state cells changed from 21.2% (12 h) to 24.6% (24 h) to 30.6% (36 h).\n\nSince Arabinose and AHL combination is not sufficient to enable the cells to reach all four SSS, we chose to add aTc to the mix to further facilitate cell transitions among these four SSS. Using our expanded model, we simulated simultaneous and sequential inductions and computed corresponding quasi-potential landscape (Figure 4A), showing cells harboring the same MINPA network exhibiting distinct landscapes under different inductions. AHL and aTc promote a more stable GFP state (Left center), while Arabinose induction modulates the landscape to be biased toward mCherry state (Right center). When the three inducers were applied simultaneously, the landscape changes and the four states show comparable stabilities (Bottom), suggesting a higher possibility of quadramodal cell population experimentally. Experimental validation is shown as flow cytometry measurements of cells treated with Arabinose, AHL, and aTc simultaneously for 24 hr (Figure 4B, and Figure 4\u2014figure supplement 1A). Such a hybrid induction greatly facilitates the cells\u2019 transition from low-low state to the other three states so that a quadramodal distribution emerges. Single-cell time lapse microscopy results also showed that the initial low-low state cells could differentiate into GFP, mCherry and high-high state cells (Figure 4\u2014figure supplement 1B\u2013D and Appendix 1\u2014Video 1). This also finally verifies predicted quadrastability of MINPA.\n\nThere are two other strategies to reach this condition: sequential inductions with AHL-and-aTc and then Arabinose (Figure 4A, Left route) or Arabinose and then AHL-and-aTc (Right route). Even though the initial and final landscapes are the same, the dynamics for each route are quite different, which could lead to distinct outcomes. By comparing state barrier heights (Figure 4A), we hypothesize that cells walking through the left route would start transitioning from low-low state to GFP state upon induction of AHL and aTc. Following Arabinose induction would then make the mCherry state accessible. So some cells with GFP state would transition to high-high state while some low-low state cells transition to mCherry state, resulting in cells in all four states. Experimental testing indeed shows four stable populations (Figure 4C). At 6.5 hrs of AHL and aTc induction, about 12% cells were moving to GFP state while the rest of them still stay \u2018undecided\u2019 at low-low state (Figure 4\u2014figure supplement 1A and E). This is consistent with the simulated landscape as these two states are more stable and accessible to each other (Figure 4A, Left). Arabinose induction promoted some cells to transition into mCherry state while some cells continued moving into GFP state, of which some further transitioned to high-high state.\n\nInterestingly, the right route is predicted to generate different results. When first induced with Arabinose, the mCherry valley is so deep that it would be difficult for cells to jump out to high-high state, and low-low state cells are also hardly transit to GFP state due to its low attractiveness, and thus most cells would stay at mCherry and low-low state even with AHL and aTc inductions (Figure 4A, Right). Experimental testing of the right route indeed only produces two populations with low-low and mCherry state (Figure 4D). With 5 hrs of Arabinose induction, most cells still stay at low-low state because of slow transition to the mCherry state (Figure 4\u2014figure supplement 1A), but 84.6% cells transitioned to mCherry state with 15.3% cells at low-low state at 9.5 hr (Figure 4\u2014figure supplement 1A). This is consistent with our model predictions. The high barrier between the mCherry state and high-high state blocks the transition from mCherry state to high-high state, while the low attractiveness and relatively high barrier of the GFP state also decreases the probability of cells transitioning from low-low to GFP state. Hence, when AHL and aTc are applied, cells are predominantly in the mCherry state with a small portion in low-low state with low probability of transitioning out, resulting in a bimodal distribution.\n\n## Discussion\n\nMultistability and the resulting landscape has long been proposed as an underlying mechanism that cells use to maintain pluripotency and guide differentiation (Kauffman, 1993; Laurent and Kellershohn, 1999; Huang et al., 2007; Guantes and Poyatos, 2008; Palani and Sarkar, 2009; Narula et al., 2010; Faucon et al., 2014). Theoretical frameworks have also been established to quantify the Waddington landscape and biological paths for cell development (Li and Wang, 2013a, 2013b; Wang et al., 2011). Experimental validation of this hypothesis and a full understanding of this mechanism will help reveal differentiation dynamics and routes for all cell types, which remains an outstanding problem in biology.\n\nIn this study, we engineered the quadrastable MINPA circuit and show that it can guide cell fate choices, represented by fluorescence expression, through shaping the potential landscape. MINPA represents one of the most complicated two-node network topologies and includes four genes to implement a web of regulations. Biological complexity correlates with the number of regulatory connections (Szathm\u00e1ry et al., 2001), not the number of genes. Hence, dense connectivity and complex dynamics of MINPA may provide a framework to understand similarly densely connected gene regulatory networks.\n\nCombining mathematical modeling and experimental investigation, this study serves as a proof-of-principle demonstration of the Waddington landscape. Furthermore, we used this circuit to demonstrate how different sequential inductions can change the landscape in a specific order and navigate cells to different final states. Such illustrations suggest mechanistic explanations of the need for fixed induction sequences for targeted differentiation to desired cell lineage. Overall, this study helps reveal fundamental mechanisms of cell-fate determination and provide a theoretical foundation for systematic understanding of the cell differentiation process, which will lead to development of new strategies to program cell fate.\n\n## Materials and methods\n\n### Strains, Media, and Chemicals\n\nAll the molecular cloning experiments were performed in E.coli DH10B (Invitrogen, USA), and measurements of MINPA and sub-networks were conducted in E.coli K-12 MG1655\u0394lacI\u0394araCBAD strain as previously described (from Dr. Collins Lab [Litcofsky et al., 2012]). The sequential induction for the toggle circuit was conducted in E.coli MG1655\u0394lacI strain as previously described (Litcofsky et al., 2012). Cells were grown at 37\u00b0C in liquid and/or solid Luria-Bertani broth medium with 100 \u00b5g/mL ampicillin or kanamycin. Chemicals AHL (3oxo-C6-HSL, Sigma-Aldrich), Arabinose (Sigma-Aldrich, USA), isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG, Sigma-Aldrich), and anhydrotetracycline (aTc, Sigma-Aldrich) were dissolved in ddH2O and diluted into indicated working concentrations. Chemical aTc solution was stocked in brown vials, and experiments involving aTc were performed in cabinet without light, and cell cultures were grown in darken incubator at 37\u00b0C. Cultures were shaken in 5 mL and/or 15 mL tubes at 220 rotations per minute (r.p.m).\n\n### Plasmids construction\n\nAll the plasmids (MINPA and its nine sub-networks) in this study were constructed using standard molecular cloning protocols and assembled by standardized BioBricks methods based on primary modules (Table 1) from the iGEM Registry (www.parts.igem.org). Hybrid promoter Para/lac was from Dr. Collins lab and amplified using forward primer: CGGAATTCGCTTCTAGAGAATTGTGAGCGGATAAC; and reverse primer: CGCTGCAGGCACTAGTTTGTGTGAAATTGTTATCCG. PCR product was purified using GenElute PCR Clean-Up Kit (Sigma-Aldrich), and then cut by restriction enzymes EcoRI and PstI. The purified product was inserted into pSB1K3 backbone, and finally verified by DNA sequencing. The MINPA circuit was constructed from promoter Para/lac and nine other Biobrick standard biological parts: BBa_B0034 (ribosome binding site, RBS), BBa_C0080 (AraC gene), BBa_C0040 (tetR gene), BBa_K176000 (Plux/tet hybrid promoter), BBa_C0062 (luxR gene), BBa_C0012 (lacI gene), BBa_B0015 (transcriptional terminator), BBa_E0240 (GFP generator), and BBa_J06702 (mCherry generator). The fragment and vector were separated by gel electrophoresis (1% TAE agarose) and purified using GenElute Gel Extraction Kit (Sigma-Aldrich). Then, fragment and vector were ligated together using T4 DNA ligase, and the ligation products were transformed into E. coli DH10B and clones were screened by plating on 100 \u03bcg/ml ampicillin LB agar plates. Finally, their plasmids were extracted and verified by double digestion (EcoRI and PstI). The detailed procedures of assembling DNA constructs were described in our previous study (Wu et al., 2014). Restriction enzymes (EcoRI, XbaI, SpeI, and PstI) and T4 DNA ligase were purchased from New England Biolabs. All the constructs were inserted into high copy number plasmid pSB1A3 and pSB1K3. All the constructs were verified by DNA sequencing (Biodesign sequencing lab in ASU) step by step.\n\n**Table 1.**\n Components from the Registry of standard biological parts\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Biobrick number</th>\n      <th>Abbreviation in the paper</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BBa_C0080</td>\n      <td>AraC</td>\n      <td>AraC arabinose operon regulatory protein from E. coli</td>\n    </tr>\n    <tr>\n      <td>BBa_C0040</td>\n      <td>TetR</td>\n      <td>Tetracycline repressor from transposon Tn10</td>\n    </tr>\n    <tr>\n      <td>BBa_C0062</td>\n      <td>LuxR</td>\n      <td>LuxR activator from Aliivibrio fischeri</td>\n    </tr>\n    <tr>\n      <td>BBa_C0012</td>\n      <td>LacI</td>\n      <td>LacI repressor from E. coli</td>\n    </tr>\n    <tr>\n      <td>BBa_E0240</td>\n      <td>GFP</td>\n      <td>GFP generator</td>\n    </tr>\n    <tr>\n      <td>BBa_J06702</td>\n      <td>mCherry</td>\n      <td>RFP generator</td>\n    </tr>\n    <tr>\n      <td>BBa_K176002</td>\n      <td>Plux/tet</td>\n      <td>Hybrid promoter with LuxR/HSL- and TetR-binding sites</td>\n    </tr>\n    <tr>\n      <td>BBa_B0034</td>\n      <td>RBS</td>\n      <td>Ribosome binding site</td>\n    </tr>\n    <tr>\n      <td>BBa_B0015</td>\n      <td>Terminator</td>\n      <td>Transcriptional terminator (double)</td>\n    </tr>\n    <tr>\n      <td>BBa_K176009</td>\n      <td>CP</td>\n      <td>Constitutive promoter</td>\n    </tr>\n    <tr>\n      <td>pSB1K3</td>\n      <td>pSB1K3</td>\n      <td>High copy BioBrick assembly plasmid with kanamycin resistance</td>\n    </tr>\n    <tr>\n      <td>pSB1A3</td>\n      <td>pSB1A3</td>\n      <td>High copy BioBrick assembly plasmid with ampicillin resistance</td>\n    </tr>\n  </tbody>\n</table>\n\n### Flow cytometry\n\nAll the samples were analyzed at the indicated time points on an Accuri C6 flow cytometer (Becton Dickinson, USA) with excitation/emission filters (488/530 nm for GFP, and 610 LP for mCherry). The data were collected in a linear scale and non-cellular low-scatter noise was removed by thresholding. All measurements of gene expression were obtained from at least three independent experiments. For each culture, 100,000 events were collected at a slow flow rate. Data files were analyzed using MATLAB (MathWorks).\n\n### Sequential induction and hysteresis\n\nFor sequential induction, initially uninduced overnight cell culture was diluted into fresh media without or with inducer I, grown at 37\u00b0C and 220 r.p.m till OD600 is 0.15\u00a0~\u00a00.25 (the time usually takes 5\u00a0~\u00a06.5 hr, depends on the inducers and concentrations). For samples induced individually by Ara, or AHL, or IPTG, it is\u00a0~5 hr; for samples induced with aTc, it takes\u00a0~6.5 hr. According to our experience, gene (GFP) is starting to be partially expressed while steady states are not yet stable. Then inducer II was added into the culture, and grown for another 24 hr. Flow cytometry was performed at 0 hr, 12 hr, and 24 hr after the second inducer was added into the culture. For each set of sequential induction, the first scenario: add inducer I first, then add inducer II; the second scenario: add inducer II first, then add inducer I; the third scenario: add inducers I and II at the same time. As a control, cells without any inducer were also prepared and measured. Inducer I and II were the two of four commercial chemicals: AHL, Arabinose, IPTG, and aTc. All the experiments were repeated for at least three times and only representative results were showed.\n\nFor hysteresis experiments, initially uninduced cells were diluted into fresh media and distributed into new 5 ml tubes. Various amounts of Arabinose and AHL (3oxo-C6-HSL) were added into the media, and cells were then grown at 37\u00b0C shaker. The initially high-high state cells induced with 2.5 *10\u22123 m/v Arabinose and 1*10\u22124 M AHL were collected with low-speed centrifugation, washed twice, resuspended with fresh medium, and at last inoculated into fresh medium at a 1:100 ratio with the same series of inducer (Arabinose and AHL) concentrations. C1, C2, C3, and C4 (Figure 3B\u2013D) are four increasing concentrations of Arabinose and AHL used for experimental probing, but the ratio of Arabinose and AHL is fixed. Specifically, cells were induced with the Arabinose and AHL at the same time (the third scenario), at concentrations from C1 to C4. C1: no inducers; C2: 2.5*10\u22126m/v Arabinose and 1*10\u22127 M AHL; C3: 2.5*10\u22125m/v Arabinose and 1*10\u22126 M AHL; C4: 2.5*10\u22123m/v Arabinose and 1*10\u22124 M AHL. Flow cytometry analyses were performed at 12 hr and 24 hr to monitor the fluorescence levels. Experiments were repeated two times with three replicates.\n\n### Microfludics and microscopy\n\nCells with MINPA circuit were grown overnight, which was then re-diluted into 5 mL fresh LB medium with Kanamycin the next day. When OD600 of the cells reached about 0.2, cells were spun down with low speed and resuspended in 5 ml of fresh medium and loaded into the device. Detailed description of chip design and device setup could be found from Hasty Lab (Ferry et al., 2011). Two media were prepared: one with inducers and the other without. Cells in the trap were first supplied by the medium without inducer for 6 hr, and then switched to medium with inducers for anther 18 hr, which was controlled by adjusting the heights of the medium syringes relative to one another. Images were taken by using Nikon Eclipse Ti inverted microscope (Nikon, Japan) equipped with an LED-based Lumencor SOLA SE. Phase and fluorescence images were taken every 5 min for 24 hr in total under the magnification 40x. Perfect focus was maintained automatically using Nikon Elements software. Experimental detail can also be found in Appendix.\n\n### Mathematical modeling\n\nOrdinary differential equation models were developed to describe and analyze the MINPA system. Details are provided in the Appendix.\n",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "c9095219-148f-4a74-a2f4-32b508d17267",
+      "submission_id": "9f1e7e7b-38f0-41b3-bf04-6c1b97b7d8a3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, Fred Hutchinson Cancer Research Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23702.020](https://doi.org/10.7554/eLife.23702.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Engineering of a synthetic quadrastable gene network to approach Waddington landscape and cell fate determination\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom, Wenying Shou (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Gabor Balazsi (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTo quantitatively and experimentally understand Waddington's landscape analogy commonly used to depict multiple cell fates, authors constructed a genetic network called MINPA (mutual inhibition and positive autoactivation). By analyzing various sub-networks of MINPA and the full MINPA network, authors find that the full MINPA is capable of achieving the most fate states of mCherry/GFP expression patterns. A total of four states can be achieved, with low or high mCherry and GFP. Aided by modeling, the authors charted how the \"energy\" landscape of cell fates changes in the presence of various chemicals, and was able to \"guide\" cells to transit from one state to another by applying chemicals at the correct orders.\n\nAll three reviewers thought that your work was important and interesting. However, there are issues that will need to be clarified and addressed before acceptance. Details are provided in the reviewers' comments below. Please note that depending on your response, reviewers might conclude that additional major experiments could be necessary. To help us assess the likelihood of such an outcome, it would help if you responded to the critiques with a plan of action and a timetable for completion of the work recommended by the reviewers. The editor and reviewers will assess your response and provide a recommendation to assist you in preparing a revised submission.\n\nReviewer #1:\n\nI enjoyed reading it as someone with an informal interest in landscape.\n\nFigure 3B: Not clear to me that at C2, the mCherry state (red dot) has low GFP. Need to make the 3-dimensional illustration more clear.\n\nFigure 3D: How long can the HH state be maintained? Does your model also predict the time scale of decay?\n\nNeeds to better describe how \"potential\" in Figure 4 is calculated.\n\nReviewer #2:\n\nThis is an important and interesting manuscript that investigates experimentally the possibility of multistability in a library of two-gene networks with increasingly complex connectivity consisting of mutual inhibition and positive autoregulation. This topology has counterparts in mammalian cell fate-regulatory networks. The library consists of several synthetic networks, with a number of regulatory links that systematically increases from 2 to 4. Analyzing the dynamics of these networks reveals that the one with all 4 links present has the highest chance for multistability, with more than 2 stable steady states for a broad range of parameters. These findings are experimentally validated with clever sequential induction experiments and hysteresis using 4 different inducers.\n\nThe manuscript represents an important step forward in synthetic biology and beyond, having relevance to many cell fate determination networks, including in higher organisms. Nonetheless, some details are clarifications are still needed.\n\nTherefore, I recommend publication once the following comments can be addressed:\n\n1) Synthetic biology often measures its progress by the number of genes in synthetic gene circuits. However, this view ignores the fact that biological complexity does not really correlate with gene number. In fact, biological complexity correlates with the number of regulatory connections. Some plants have more genes than us, humans. In fact, a 10-gene network may be much simpler from a dynamical or an information-processing perspective than a two-gene network \u2013 provided that the latter has more complex connectivity. The arguments on network complexity resulting from links rather than nodes may be a nice addition to the Discussion. See Science 292(5520):1315-6 (2001).\n\n2) From the Methods it seems like these networks are on high-copy plasmids rather than integrated. What is the effect of plasmid copy number variation on the results? Could the plasmid be lost from some cells, generating the impression of multistability? Flow cytometry at multiple time points will provide at least a partial answer.\n\n3) The sequential induction method is quite interesting and important for revealing multistability. However, its application to the T15 network (or other networks) could be explained better. I guess the sequence in which inducers are added determines how the network's dynamics changes from monostable to multistable \u2013 but the details may be important. If bistable, tristable, quadristable regions are small in the 4-dimensional space then the goal is to \"hit\" these regions as inducers are sequentially added. While this is shown for the toggle switch, it is unclear how was this done for the more complex networks. This should be much more clearly described, especially for T15 and possibly for some simpler networks. Overall, going from the toggle switch to T15 and even to simpler networks is a big step, which requires more explanation and investigation. In addition, to toggle switch would be worth adding to the experimentally measured networks as control, considering that its behavior is computationally predictable. Do the experiments validate the predictions in Figure 2A for the toggle switch?\n\nReviewer #3:\n\nIn this work, the authors quantified the cell fate decision making landscape through engineering the synthetic circuits. They have identified multiple states. They also considered the cell fate decision at different conditions. The results are interesting and I recommend its publication after revisions upon the following comments.\n\n1) Recently, the theoretical advances have been able to identify the landscape and flux as the driving force of the global dynamics of the biological circuits (Proc. Natl. Acad. Sci. USA, 105: 12271-12276. (2008).). The quantification of the Waddington landscape has been achieved and is directly related to the underlying gene regulatory network for cell fate decision of stem cell differentiation and development (Proc. Natl. Acad. Sci. USA. 108(20):8257-8262(2011).). These should be reflected in the revision.\n\n2) Furthermore, the multiple states have been predicted beyond the bistable states/switches without and with the epigenetic effects (Proc. Natl. Acad. Sci. USA. 108(20):8257-8262(2011); J. Phys. Chem. B, 115, 1254 (2011); Sci. Rep., 2,550 (2012); J R Soc Interface 10: 20130787 (2013); PLoS ONE. 9(8): e105216 (2014); Advances in Physics, 64:1, 1-137. (2015).). These should be reflected in the revision.\n\n3) The authors should explain more clearly the physical and biological origins of the quadrastable states. Why the triple stable states are less likely than the quadrastable states? What is the origin of the LL state?\n",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a3b3cf6b-e3e2-4ed2-990f-187648cc5038",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C1",
+      "claim": "Multistability is a mechanism that cells use to achieve a discrete number of mutually exclusive states in response to environmental inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Multistability is a mechanism that cells use to achieve a discrete number of mutually exclusive states in response to environmental inputs, such as the lysis/lysogeny switch of phage lambda (Arkin et al, 1998; Oppenheim et al., 2005) and sporulation/competence in Bacillus subtilis (S\u00fcel et al., 2006; Schultz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work on phage lambda and Bacillus subtilis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "5e69de47-631b-4027-9034-ff44b5e60dd5",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C2",
+      "claim": "The lysis/lysogeny switch of phage lambda is an example of multistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Multistability is a mechanism that cells use to achieve a discrete number of mutually exclusive states in response to environmental inputs, such as the lysis/lysogeny switch of phage lambda (Arkin et al, 1998; Oppenheim et al., 2005) and sporulation/competence in Bacillus subtilis (S\u00fcel et al., 2006; Schultz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Arkin et al, 1998 and Oppenheim et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "045c10d4-a97d-471c-ad18-e601bb080f7d",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C3",
+      "claim": "Sporulation/competence in Bacillus subtilis is an example of multistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Multistability is a mechanism that cells use to achieve a discrete number of mutually exclusive states in response to environmental inputs, such as the lysis/lysogeny switch of phage lambda (Arkin et al, 1998; Oppenheim et al., 2005) and sporulation/competence in Bacillus subtilis (S\u00fcel et al., 2006; Schultz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to S\u00fcel et al., 2006 and Schultz et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "ea881c0d-d236-4331-ad7e-e1225752b8c0",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C4",
+      "claim": "Multistable switches are common in cellular decision-making in multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In multicellular organisms, multistable switches are also common in the cellular decision-making including the regulation of cell-cycle oscillator during cell mitosis (Pomerening et al., 2003), Epithelial-to-Mesenchymal transition and cancer metastasis (Jolly et al., 2016; Lee et al., 2014a), and the well-known cell differentiation process, which is a manifestation of cellular state determination in a multistable system (Laurent and Kellershohn, 1999; Guantes and Poyatos, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies on cell-cycle regulation, EMT, cancer metastasis, and cell differentiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9cc98c07-d243-4f4d-b4b2-d1e6f4c7ede2",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C5",
+      "claim": "Cell differentiation is a manifestation of cellular state determination in a multistable system.",
+      "claim_type": "EXPLICIT",
+      "source": "In multicellular organisms, multistable switches are also common in the cellular decision-making including the regulation of cell-cycle oscillator during cell mitosis (Pomerening et al., 2003), Epithelial-to-Mesenchymal transition and cancer metastasis (Jolly et al., 2016; Lee et al., 2014a), and the well-known cell differentiation process, which is a manifestation of cellular state determination in a multistable system (Laurent and Kellershohn, 1999; Guantes and Poyatos, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Laurent and Kellershohn, 1999 and Guantes and Poyatos, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "cb682a22-ac41-4768-a85d-93fd9a4f5d2c",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C6",
+      "claim": "Loss of multistability can drive cells to acquire metastatic characteristics and stabilize highly proliferative, pathogenic cellular states in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loss of multistability can drive cells to acquire metastatic characteristics and stabilize highly proliferative, pathogenic cellular states in cancer (Lee et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lee et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "0ce8bee5-9d86-4149-8a8e-6b8319d5ed35",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C7",
+      "claim": "C.H. Waddington hypothesized the 'epigenetic landscape' to explain canalization and fate determination mechanism during cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "C.H. Waddington hypothesized the 'epigenetic landscape' to explain canalization and fate determination mechanism during cell differentiation (Waddington, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Waddington, 1957.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "7be88ffb-cb29-43d9-b5f0-ec74d89b5191",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C8",
+      "claim": "In Waddington's hypothesis, differentiation is depicted as a marble rolling down a landscape with multiple bifurcating valleys and eventually settling at one of the local minima, corresponding to terminally differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this hypothesis, differentiation is depicted as a marble rolling down a landscape with multiple bifurcating valleys and eventually settles at one of the local minima, corresponding to terminally differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the conceptual framework of Waddington's hypothesis as presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "c58e7ea1-c097-4a3a-adac-beffd4efa549",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C9",
+      "claim": "Local minima in the epigenetic landscape can be modeled as steady states or attractors of dynamical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent theoretical studies further proposed the local minima to be modeled as steady states or attractors of dynamical systems, which can be mathematically described using differential equations (Zhang and Wolynes, 2014; Li and Wang, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhang and Wolynes, 2014 and Li and Wang, 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "22229ff8-870b-4430-82a5-eb031903a3b3",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C10",
+      "claim": "Cell differentiation can be interpreted as a state transition process on a multistable dynamic system.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, cell differentiation can be interpreted as a state transition process on a multistable dynamic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the modeling of local minima as steady states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "716efcc6-70ab-4b59-a5da-073adaec94dd",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C11",
+      "claim": "The potential landscape and the corresponding curl flux are crucial for determining the robustness and global dynamics of non-equilibrium biological networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also revealed that the potential landscape and the corresponding curl flux are crucial for determining the robustness and global dynamics of non-equilibrium biological networks (Wang, 2015; Xu et al., 2014; Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang, 2015; Xu et al., 2014; and Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "75a653dc-dcab-4857-b4ef-82447233ba36",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C12",
+      "claim": "Multiple stable steady states have been predicted beyond bistable switches with or without epigenetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the multiple stable steady states have been predicted beyond the bistable switches with or without epigenetic effects, which is reflected in slow timescales (Wang, 2015; Xu et al., 2014; Li and Wang, 2013b; Feng and Wang, 2012; Wang et al., 2011; Feng et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "68e4d4d5-e4c5-410c-8a45-8eeea70d9654",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C13",
+      "claim": "Experimental research mostly focuses on bistable switches, involving transitions between only two states.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental researches, however, mostly focus on bistable switches, involving transitions between only two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the state of experimental research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9d253613-29c7-42e0-82a1-42220189466d",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C14",
+      "claim": "Demonstrations for the existence and operation of the Waddington landscape in a higher dimensional multistable system are still lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "And demonstrations, from a combination of experiments and computational modeling, for the existence and operation of such a landscape in a higher dimensional multistable system are still lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies a gap in the current research literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "17ad8a2e-a272-4d2f-8b38-f4dcb6fe86a4",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C15",
+      "claim": "It remains unknown how gene regulatory networks, gene expression noise, and signal induction together shape the attractor landscape and determine a cell's developmental trajectory to its final fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it remains unknown how gene regulatory networks (GRNs), gene expression noise, and signal induction together shape the attractor landscape and determine a cell's developmental trajectory to its final fates (Schmiedel et al., 2015; Tanouchi et al., 2015; Prindle et al., 2014; Chalancon et al., 2012; Murphy et al., 2010; Bal\u00e1zsi et al., 2011; Kramer and Fussenegger, 2005; Bennett et al., 2008; Maamar et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies an open question in the field, supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "7e08b904-b4cc-4245-9673-5e23513b6960",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C16",
+      "claim": "Complex contextual connections of GRNs have impeded experimentally establishing the shape and function of the cell fate landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex contextual connections of GRNs have impeded experimentally establishing the shape and function of the cell fate landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains a challenge in the field based on the complexity of GRNs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "dc1af413-9b33-48ff-b1d7-1f3ebb18102b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C17",
+      "claim": "Rationally designed and tunable synthetic multistable gene networks in E. coli could form well-characterized attractor landscapes to enable close experimental investigations of general principles of GRN regulated cellular state transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rationally designed and tunable synthetic multistable gene networks in E. coli, however, could form well-characterized attractor landscapes to enable close experimental investigations of general principles of GRN regulated cellular state transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim proposes a synthetic biology approach to address the experimental challenges.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "e94adfa3-75d2-4eca-8e32-fc4226bf39ed",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C18",
+      "claim": "The functioning principles of synthetic gene networks only require the most fundamental aspects of gene expression regulation and would be applicable for cell differentiation regulations in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the functioning of these principles only requires the most fundamental aspects of gene expression regulation, they would also be applicable for cell differentiation regulations in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about the applicability of findings from E. coli to mammalian systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9c095028-5254-4756-93bb-4d1adaf04e3c",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C19",
+      "claim": "The study combines mathematical theory, numerical simulations, and synthetic biology to probe all possible sub-networks of mutually inhibitory network with positive autoregulations (MINPA).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we combine mathematical theory, numerical simulations, and synthetic biology to probe all possible sub-networks of mutually inhibitory network with positive autoregulations (MINPA, Figure 1A), which has been hypothesized to have multistability potentials (Guantes and Poyatos, 2008; Huang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological approach of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "adc572dc-03fe-4ba2-b0ea-3f7a65f994b6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C20",
+      "claim": "MINPA has been hypothesized to have multistability potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we combine mathematical theory, numerical simulations, and synthetic biology to probe all possible sub-networks of mutually inhibitory network with positive autoregulations (MINPA, Figure 1A), which has been hypothesized to have multistability potentials (Guantes and Poyatos, 2008; Huang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guantes and Poyatos, 2008 and Huang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "650c9b05-75b0-40c2-b820-d48ea1d551ac",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C21",
+      "claim": "MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development (Gata1-Pu.1, [Graf and Enver, 2009]), trophectoderm differentiation (Oct3/4-Cdx2, [Niwa et al., 2005]), endoderm formation (Gata6-Nanog, [Bessonnard et al., 2014; Li and Wang, 2013a]), and bone, cartilage, and fat differentiation (RUNX2-SOX9-PPAR-\u03b3, [MacArthur et al., 2008; Rabajante and Babierra, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Graf and Enver, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "5dea0fee-ce9a-4961-84a6-c235eb114e77",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C22",
+      "claim": "MINPA and its sub-networks are recurring motifs enriched in GRNs regulating trophectoderm differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development (Gata1-Pu.1, [Graf and Enver, 2009]), trophectoderm differentiation (Oct3/4-Cdx2, [Niwa et al., 2005]), endoderm formation (Gata6-Nanog, [Bessonnard et al., 2014; Li and Wang, 2013a]), and bone, cartilage, and fat differentiation (RUNX2-SOX9-PPAR-\u03b3, [MacArthur et al., 2008; Rabajante and Babierra, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Niwa et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "849f683d-de88-458d-9207-5a28515ad0b8",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C23",
+      "claim": "MINPA and its sub-networks are recurring motifs enriched in GRNs regulating endoderm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development (Gata1-Pu.1, [Graf and Enver, 2009]), trophectoderm differentiation (Oct3/4-Cdx2, [Niwa et al., 2005]), endoderm formation (Gata6-Nanog, [Bessonnard et al., 2014; Li and Wang, 2013a]), and bone, cartilage, and fat differentiation (RUNX2-SOX9-PPAR-\u03b3, [MacArthur et al., 2008; Rabajante and Babierra, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bessonnard et al., 2014 and Li and Wang, 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d33377c8-5949-48f0-a0bd-6a97768b2b91",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C24",
+      "claim": "MINPA and its sub-networks are recurring motifs enriched in GRNs regulating bone, cartilage, and fat differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MINPA and its sub-networks are recurring motifs enriched in GRNs regulating hematopoietic development (Gata1-Pu.1, [Graf and Enver, 2009]), trophectoderm differentiation (Oct3/4-Cdx2, [Niwa et al., 2005]), endoderm formation (Gata6-Nanog, [Bessonnard et al., 2014; Li and Wang, 2013a]), and bone, cartilage, and fat differentiation (RUNX2-SOX9-PPAR-\u03b3, [MacArthur et al., 2008; Rabajante and Babierra, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to MacArthur et al., 2008 and Rabajante and Babierra, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "1f23bcca-b05a-42a6-8bbe-9cb60ce2449b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C25",
+      "claim": "The engineered MINPA circuit uses two hybrid promoters, Para/lac and Plux/tet.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered circuits of MINPA (Figure 1B) and its sub-networks (Figure 1\u2014figure supplement 1A) are designed to use two hybrid promoters, Para/lac and Plux/tet, which are characterized experimentally to show small leakage and high nonlinearity (Figure 1D\u2013E and Figure 1\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental characterization data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9fa25919-214f-4194-81ba-82650e482476",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C26",
+      "claim": "The hybrid promoters Para/lac and Plux/tet show small leakage and high nonlinearity.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered circuits of MINPA (Figure 1B) and its sub-networks (Figure 1\u2014figure supplement 1A) are designed to use two hybrid promoters, Para/lac and Plux/tet, which are characterized experimentally to show small leakage and high nonlinearity (Figure 1D\u2013E and Figure 1\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D-E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "251fb337-4250-4138-9c6c-2502c370d1bd",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C27",
+      "claim": "In the MINPA topology, hybrid promoter Para/lac drives AraC and TetR expression, representing node X.",
+      "claim_type": "EXPLICIT",
+      "source": "For MINPA topology, hybrid promoter Para/lac drives AraC and TetR expression, representing the node X in Figure 1A, whereas Plux/tet controls LuxR and LacI transcription, representing the node Y.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the molecular implementation of the MINPA circuit as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "0c0cf99a-7f27-41a9-af25-0c174787a8ce",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C28",
+      "claim": "In the MINPA topology, Plux/tet controls LuxR and LacI transcription, representing node Y.",
+      "claim_type": "EXPLICIT",
+      "source": "For MINPA topology, hybrid promoter Para/lac drives AraC and TetR expression, representing the node X in Figure 1A, whereas Plux/tet controls LuxR and LacI transcription, representing the node Y.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the molecular implementation of the MINPA circuit as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "8302a7c7-d10c-4d02-92e8-5cfda8064da6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C29",
+      "claim": "AraC activates Para/lac in the presence of Arabinose, forming positive autoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "AraC and LuxR activate Para/lac and Plux/tet in the presence of Arabinose and AHL (3oxo-C6-HSL) respectively, forming positive autoregulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the regulatory mechanism of the MINPA circuit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "02a8c4dd-f932-4328-a15c-c4cb380b4309",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C30",
+      "claim": "LuxR activates Plux/tet in the presence of AHL, forming positive autoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "AraC and LuxR activate Para/lac and Plux/tet in the presence of Arabinose and AHL (3oxo-C6-HSL) respectively, forming positive autoregulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the regulatory mechanism of the MINPA circuit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "dcf4032f-4c8b-4d7f-bcc5-86cbe94b69d1",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C31",
+      "claim": "IPTG inhibits the repressive effect of LacI on TetR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "IPTG inhibits the repressive effect of LacI on TetR expression, while aTc counteracts TetR repression on LacI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the regulatory mechanism of the MINPA circuit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "864275f1-87f3-43d1-b177-1e153383ea14",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C32",
+      "claim": "aTc counteracts TetR repression on LacI.",
+      "claim_type": "EXPLICIT",
+      "source": "IPTG inhibits the repressive effect of LacI on TetR expression, while aTc counteracts TetR repression on LacI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the regulatory mechanism of the MINPA circuit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "b5a21656-830d-4165-8771-9eeaf8d2127a",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C33",
+      "claim": "Green fluorescent protein (GFP) and mCherry serve as the corresponding readouts of Plux/tet and Para/lac activities in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Green fluorescent protein (GFP) and mCherry serve as the corresponding readouts of Plux/tet and Para/lac activities in living cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the reporter system used in the MINPA circuit as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "20460023-aadb-4fe3-9434-6cc05d4b24de",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C34",
+      "claim": "Networks with two auto-activations, including A2, RA2, R2A2, have high probability of tristability or quadrastability.",
+      "claim_type": "EXPLICIT",
+      "source": "By computationally searching a large parameter range for each of the nontrivial networks (Faucon et al., 2014), we found that networks with two auto-activations, including A2, RA2, R2A2, have high probability of tristability or quadrastability (Figure 1\u2014figure supplement 1G), defined as having three or four stable steady sates (SSS) under a common induction condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "6acd546b-9c1b-451a-b74f-7a4411b6fc4c",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C35",
+      "claim": "Tristability is defined as having three stable steady states under a common induction condition.",
+      "claim_type": "EXPLICIT",
+      "source": "By computationally searching a large parameter range for each of the nontrivial networks (Faucon et al., 2014), we found that networks with two auto-activations, including A2, RA2, R2A2, have high probability of tristability or quadrastability (Figure 1\u2014figure supplement 1G), defined as having three or four stable steady sates (SSS) under a common induction condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "34465561-ebca-4c2a-bcb7-ed43451029e4",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C36",
+      "claim": "Quadrastability is defined as having four stable steady states under a common induction condition.",
+      "claim_type": "EXPLICIT",
+      "source": "By computationally searching a large parameter range for each of the nontrivial networks (Faucon et al., 2014), we found that networks with two auto-activations, including A2, RA2, R2A2, have high probability of tristability or quadrastability (Figure 1\u2014figure supplement 1G), defined as having three or four stable steady sates (SSS) under a common induction condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "4d464e10-7325-42f5-a92d-656295ff1c4c",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C37",
+      "claim": "MINPA has broader parameter distributions than A2 and RA2 networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MINPA has broader parameter distributions than the other two (Figure 1\u2014figure supplement 1H\u2013I), which suggests it is more resistant to parameter change and thus likely to achieve multistability in experimental settings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 1\u2014figure supplement 1H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "a98e335d-66ee-410b-8cdc-85dfae60a0e8",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C38",
+      "claim": "MINPA is more resistant to parameter change than A2 and RA2 networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MINPA has broader parameter distributions than the other two (Figure 1\u2014figure supplement 1H\u2013I), which suggests it is more resistant to parameter change and thus likely to achieve multistability in experimental settings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference from the broader parameter distributions observed in computational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "defb173e-0213-46ff-9614-fd4a1b83e967",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C39",
+      "claim": "MINPA is likely to achieve multistability in experimental settings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MINPA has broader parameter distributions than the other two (Figure 1\u2014figure supplement 1H\u2013I), which suggests it is more resistant to parameter change and thus likely to achieve multistability in experimental settings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a prediction based on computational analysis of parameter distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "79cf8177-b853-4dbe-8649-7b7bbff6d125",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C40",
+      "claim": "Nine circuits were constructed including tunable positive feedbacks (T6 and T9), mutual inhibition (T5), dual-positive feedbacks (T10), and their combinations (T7, T11, T13, T14 and T15).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to experimentally evaluate dynamic properties of these networks, we constructed nine circuits including tunable positive feedbacks (T6 and T9), mutual inhibition (T5), dual-positive feedbacks (T10), and their combinations (T7, T11, T13, T14 and T15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental construction of circuits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9441b3e5-67b3-4a43-b719-d63f3a3a7fe6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C41",
+      "claim": "One-dimensional networks (T1, T4, T2 and T8) and trivial two-dimensional networks (T3 and T12) were excluded for their low multistability probability.",
+      "claim_type": "EXPLICIT",
+      "source": "One-dimensional networks (T1, T4, T2 and T8) and trivial two-dimensional networks (T3 and T12) are excluded for their low multistability probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains the rationale for excluding certain network topologies from experimental construction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "40201d07-fe3f-454b-9d11-6f0165b2b8ed",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C42",
+      "claim": "All motifs were constructed using the same set of components.",
+      "claim_type": "EXPLICIT",
+      "source": "All motifs were constructed using the same set of components (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental design approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d9a92cec-01f4-4319-810f-860d7b8b01ce",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C43",
+      "claim": "Probing a circuit's multistability typically requires thorough hysteresis experiments covering wide ranges of doses for all inducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Probing a circuit's multistability typically requires thorough hysteresis experiments covering wide ranges of doses for all inducers (Acar et al., 2005; Angeli et al., 2004; Gardner et al., 2000), which becomes infeasible for nine complex networks with four inducers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work on hysteresis experiments.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "96eca6d7-1696-4875-a64c-66f4758a7970",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C44",
+      "claim": "Thorough hysteresis experiments become infeasible for nine complex networks with four inducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Probing a circuit's multistability typically requires thorough hysteresis experiments covering wide ranges of doses for all inducers (Acar et al., 2005; Angeli et al., 2004; Gardner et al., 2000), which becomes infeasible for nine complex networks with four inducers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies a practical limitation of conventional experimental approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "be9ff6b2-e918-4743-96aa-0e3b11e09d28",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C45",
+      "claim": "A 'sequential induction' method was designed to accelerate exploration of unknown high dimensional bifurcation spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the efficiency of probing multistability and tunability, we designed a 'sequential induction' method to accelerate exploration of unknown high dimensional bifurcation spaces (see Appendix text for details), instead of conventional 'back and forth' hysteresis on one parameter dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological innovation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "efd94bc5-0163-424a-b09d-5e9dc10c51a6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C46",
+      "claim": "Multistable gene networks could exhibit discontinuous jump from one state to another in response to changing parameter (inducer) combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The main concept relies on the fact that multistable gene networks could exhibit discontinuous jump from one state to another in response to changing parameter (inducer) combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a fundamental property of multistable systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d1ac75d4-339b-48b6-a54c-aa6f6a556557",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C47",
+      "claim": "A synthetic toggle switch circuit was constructed to test the sequential induction approach.",
+      "claim_type": "EXPLICIT",
+      "source": "To test our theoretical analysis, a synthetic toggle switch circuit was constructed (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes an experimental validation approach shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "3c93f316-3296-4c2b-b161-73b25063ce68",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C48",
+      "claim": "Cells induced with IPTG first and then aTc stayed at low-GFP state till 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We first employed IPTG to induce the circuit for 5 hr, and then aTc was added. Time course results showed that cells stayed at low-GFP state till 24 hr (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "6311f276-d134-4ac4-8442-7629ae198704",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C49",
+      "claim": "Cells induced with aTc first and then IPTG mainly stayed at high-GFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cells induced with aTc first, and then IPTG mainly stayed at high-GFP state, another stable steady state under this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the toggle switch experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "b57d18a2-7e82-4ce3-b4bb-d484d727439f",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C50",
+      "claim": "Sequential induction can be used as a strategy to quickly explore a multistable potential landscape for complex non-equilibrium systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that sequential induction can be used as a strategy to quickly explore a multistable potential landscape for complex non-equilibrium systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the toggle switch experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "b93f7c42-0437-463d-b51c-93c0b64e2e6e",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C51",
+      "claim": "Sequential induction techniques have been shown to enable access of otherwise hard-to-reach cell death states in breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar sequential induction techniques have been shown to enable access of otherwise hard-to-reach cell death states in breast cancer cells (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "4186d43e-d11f-40e4-9af2-e93928b73f4b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C52",
+      "claim": "Sequential induction strategy has been widely employed in directed differentiation of stem cells to specific lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has also been widely employed in directed differentiation of stem cells to specific lineages (Pa\u015fca et al., 2015; Pagliuca et al., 2014; Kroon et al., 2008) and reprogramming somatic cells to induced pluripotent stem cells (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies on stem cell differentiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d6d72384-2647-4839-8ecb-a238b7a8950f",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C53",
+      "claim": "Sequential induction strategy has been employed in reprogramming somatic cells to induced pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has also been widely employed in directed differentiation of stem cells to specific lineages (Pa\u015fca et al., 2015; Pagliuca et al., 2014; Kroon et al., 2008) and reprogramming somatic cells to induced pluripotent stem cells (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "ec350035-1855-4dcd-ac34-96210a3d4406",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C54",
+      "claim": "Only T15 exhibits significant expression difference between three induction patterns when tested with Arabinose and IPTG.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Arabinose and IPTG were applied sequentially and simultaneously to T9, T13, T11 and T15, respectively (Figure 2B). It can be seen only T15 exhibits significant expression difference between three induction patterns, while the others show little change (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "e1ed393b-2e24-4db2-96b4-4ee61126164a",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C55",
+      "claim": "T15 exhibits tri-modality of fluorescence expression, suggesting multistability given the presence of gene expression noise.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that T15 also exhibits tri-modality of fluorescence expression, suggesting multistability given the presence of gene expression noise, which is partially consistent with our computational predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from experimental observations of fluorescence patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "bb6add65-7c30-4864-98d7-fbd21c4a421f",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C56",
+      "claim": "Only T15 exhibits significant fluorescence pattern change with different inductions when tested with AHL and aTc.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, AHL and aTc were applied to T6, T7, T14, and T15, respectively (Figure 2C and Figure 2\u2014figure supplement 2B). Results show that only T15 exhibits significant fluorescence pattern change with different inductions, whereas T6 and T7 exhibit minor uniform shifts of expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "b3e274e0-9105-4e73-93a6-dddf413b6764",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C57",
+      "claim": "T14, although exhibiting bimodality, only shows a ratio change of two populations between three inductions and no sign of bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "T14, although exhibiting bimodality, only shows a ratio change of two populations between three inductions and no sign of bifurcation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations of T14 circuit behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "54adced1-92bf-460a-ba10-e2e31aa504c3",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C58",
+      "claim": "T15 displays three notable populations for AHL-then-Arabinose induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential induction by Arabinose and AHL combinations has little effect on T10, T14 and T11, but T15 displays three notable populations for AHL-then-Arabinose induction (Figure 2D and Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "7b8e4c29-046a-4cca-8622-726bbdb8cd4c",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C59",
+      "claim": "T15, the full MINPA topology, shows the most variety and complexity in population heterogeneity under sequential inductions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, T15, the full MINPA topology, shows the most variety and complexity in population heterogeneity under sequential inductions, suggesting this circuit has the highest potential to generate complex multistability within our induction range and hence enable us to approach the Waddington landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from comparing all tested circuits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "40ffd71d-9bb0-4bc5-8149-629092f5f5ee",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C60",
+      "claim": "T15 has the highest potential to generate complex multistability within the tested induction range.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, T15, the full MINPA topology, shows the most variety and complexity in population heterogeneity under sequential inductions, suggesting this circuit has the highest potential to generate complex multistability within our induction range and hence enable us to approach the Waddington landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from experimental observations of T15 behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "13b80986-f2c1-44e1-a44c-2c04db535262",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C61",
+      "claim": "Uninduced cells showed low GFP and low mCherry expression (low-low state).",
+      "claim_type": "EXPLICIT",
+      "source": "Uninduced cells showed low GFP and low mCherry expression (low-low state, LL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations of uninduced cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "08c885f0-7e62-458e-942b-9a50a3b73bcb",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C62",
+      "claim": "In the presence of AHL and aTc, high GFP and low mCherry (GFP state) is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of AHL and aTc, high GFP and low mCherry (GFP state) is observed; low GFP and high mCherry (mCherry state) emerged with induction of Arabinose; and high GFP and high mCherry (high-high state, HH) was achieved when induced with Arabinose and AHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "f67223e3-462e-4e71-a799-5dcecf6da8e5",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C63",
+      "claim": "Low GFP and high mCherry (mCherry state) emerged with induction of Arabinose.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of AHL and aTc, high GFP and low mCherry (GFP state) is observed; low GFP and high mCherry (mCherry state) emerged with induction of Arabinose; and high GFP and high mCherry (high-high state, HH) was achieved when induced with Arabinose and AHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "9b2cc8ab-f367-4dba-b849-915a69dc64f9",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C64",
+      "claim": "High GFP and high mCherry (high-high state) was achieved when induced with Arabinose and AHL.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of AHL and aTc, high GFP and low mCherry (GFP state) is observed; low GFP and high mCherry (mCherry state) emerged with induction of Arabinose; and high GFP and high mCherry (high-high state, HH) was achieved when induced with Arabinose and AHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "f235efb5-66dd-4158-9da3-35e7344dab95",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C65",
+      "claim": "The engineered MINPA circuit is functioning as designed and fully controllable with four distinct states reachable through appropriate inductions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results verify that our engineered MINPA circuit is functioning as designed and fully controllable with four distinct states reachable through appropriate inductions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from experimental observations of the four states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "0a6705d4-a199-4052-8557-87485978b2d3",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C66",
+      "claim": "A detailed mathematical model was developed to describe the MINPA system.",
+      "claim_type": "EXPLICIT",
+      "source": "To help design experiments to further investigate the circuit's quadrastability, a detailed mathematical model was developed to describe the system (see Appendix for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "e62cd476-0eed-419a-8506-40882a9055ba",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C67",
+      "claim": "Bifurcation analysis was carried out to systematically quantify MINPA's dynamic behavior using parameters derived from hybrid promoter testing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Using parameters derived from hybrid promoter testing experiments, bifurcation analysis was carried out to systematically quantify MINPA's dynamic behavior (Figure 3B, Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the computational analysis approach shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d4525321-5f13-4dbb-b63c-0d0f653e3376",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C68",
+      "claim": "The MINPA system, initialized without induction, is predicted to be quadrastable but with the low-low state having dominant attractiveness when AR/AL is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, it can be seen that the system, initialized without induction, is predicted to be quadrastable (shown as four colored spheres, representing LL (grey), GFP (green), mCherry (rose), and HH (golden) state, respectively) but with the low-low state to have dominant attractiveness (shown as the big gray sphere) when AR/AL is low (C1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on bifurcation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "2a72ecf4-2470-42ca-88c6-c41004c28180",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C69",
+      "claim": "When AR/AL level increased from C1 to C2, the circuit's quadrastability becomes well pronounced, illustrated as four similar-sized colored spheres.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when AR/AL level is within an intermediate range, relative stabilities between different states become comparable. When AR/AL level increased from C1 to C2, the circuit's quadrastability becomes well pronounced, illustrated as four similar-sized colored spheres on the same gray plane, which represents the low-low, GFP, mCherry, and high-high state, respectively (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on bifurcation analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d2722bf9-244e-4f32-a69d-171e4b43daa3",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C70",
+      "claim": "As AR/AL continues to increase from C2 to C3, the stability of the GFP branch disappears while the other three SSS remain stable.",
+      "claim_type": "EXPLICIT",
+      "source": "As AR/AL continues to increase from C2 to C3, while the other three SSS remain stable, the stability of the GFP branch disappears.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on bifurcation analysis predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "e688efb1-6e58-44ff-85b6-391d75dd7632",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C71",
+      "claim": "Further increase of AR/AL results in only one stable state - the high-high state.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increase of AR/AL results in only one stable state-the high-high state, shown as the orange sphere with biggest size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on bifurcation analysis predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "45e86d86-ccc0-4e16-91c9-c077eb1ce39b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C72",
+      "claim": "C1LL experiment demonstrates uniform low-low fluorescence profile, due to the low-low state's dominant attractiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, C1LL (cells with initial Low-Low state grown at C1 condition) experiment demonstrates uniform low-low fluorescence profile, due to the low-low state's dominant attractiveness, and C4LL shows a uniform high-high profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C and is consistent with model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "403f5bfc-7555-405e-a4b5-6e8296c42e48",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C73",
+      "claim": "C4LL shows a uniform high-high profile.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, C1LL (cells with initial Low-Low state grown at C1 condition) experiment demonstrates uniform low-low fluorescence profile, due to the low-low state's dominant attractiveness, and C4LL shows a uniform high-high profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "3ae46679-a90a-4073-9463-80e104433483",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C74",
+      "claim": "C3LL indeed illustrates tri-modality, which is the result of predicted tristability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, C3LL indeed illustrates tri-modality, which is the result of predicted tristability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data that confirms model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "ff58f375-f623-4744-b4bd-76902bd5c204",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C75",
+      "claim": "C2LL experiment exhibits enough heterogeneity to signal high-high, low-low, and mCherry state, but does not illustrate significant trace of GFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "C2LL experiment, on the other hand, exhibits enough heterogeneity to signal high-high, low-low, and mCherry state, but does not illustrate significant trace of GFP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations from Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "0922c7f5-1b5c-4b53-9b07-eb5cb97e39ce",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C76",
+      "claim": "The GFP state is not easily accessible with AHL induction only.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that GFP state is achieved through combinational induction of AHL and aTc (Figure 3A), we hypothesize that the GFP state here is not easily accessible with AHL induction only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "a664f861-8c3e-4f33-a83f-b32c14be65c9",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C77",
+      "claim": "Cells initialized at high-high states keep high-high expression profile even with inductions as low as C1.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, cells initialized at high-high states were collected and diluted into fresh media with the same concentrations of AR/AL (Figure 3D and Figure 3\u2014figure supplement 2J). As predicted, these cells keep high-high expression profile even with inductions as low as C1, another demonstration that the system is already multistable at C1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D and Figure 3\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "28b3dc46-ef8a-4a26-8a0d-fdd61047bfa6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C78",
+      "claim": "The two sets of hysteresis experiments demonstrated clear hysteresis and verified the existence of three of the four predicted SSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the two sets of experiments demonstrated clear hysteresis and verified the existence of three of the four predicted SSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the hysteresis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "202a9cba-d7e0-4f7c-b49b-4a4344cb6696",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C79",
+      "claim": "When there is no inducer, MINPA is already quadrastable with four local minima.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the weighted ensemble random walk algorithm (Appendix), the stationary density distribution can be efficiently calculated from the initial uniform distribution. It can be seen that when there is no inducer, MINPA is already quadrastable with four local minima, which is consistent with bifurcation analysis for C1 condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quasi-potential landscape calculations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "cb1e838a-4879-4f88-a5c7-6937e468f9dd",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C80",
+      "claim": "The much stronger stability of the low-low state and high state-transition barrier explain homogeneous low-low population when cells were initialized with no inductions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the much stronger stability of the low-low state (deepest well, Top landscape) and high state-transition barrier explain homogeneous low-low population (C1 experiment in Figure 3C) when cells were initialized with no inductions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference from landscape analysis that explains experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "c93c33c6-e15e-4e2b-b046-37cfe22aaac6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C81",
+      "claim": "Quadrastable steady states were observed when Arabinose, AHL, and aTc were simultaneously added into the media.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental validation is shown as flow cytometry measurements of cells treated with Arabinose, AHL, and aTc simultaneously for 24 hr (Figure 4B, and Figure 4\u2014figure supplement 1A). Such a hybrid induction greatly facilitates the cells' transition from low-low state to the other three states so that a quadramodal distribution emerges.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "a0b0f388-ae44-4393-bc94-4e2960396771",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C82",
+      "claim": "Single-cell time lapse microscopy results showed that the initial low-low state cells could differentiate into GFP, mCherry and high-high state cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell time lapse microscopy results also showed that the initial low-low state cells could differentiate into GFP, mCherry and high-high state cells (Figure 4\u2014figure supplement 1B\u2013D and Appendix 1\u2014Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4\u2014figure supplement 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "41fc8e82-ca75-44f1-a511-b138aaa35dc2",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C83",
+      "claim": "The microscopy results finally verify predicted quadrastability of MINPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell time lapse microscopy results also showed that the initial low-low state cells could differentiate into GFP, mCherry and high-high state cells (Figure 4\u2014figure supplement 1B\u2013D and Appendix 1\u2014Video 1). This also finally verifies predicted quadrastability of MINPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from microscopy experiments that confirm model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "86046ddf-9b4f-4786-b1a2-531a3c3feaa8",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C84",
+      "claim": "Cells walking through the left route would start transitioning from low-low state to GFP state upon induction of AHL and aTc.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing state barrier heights (Figure 4A), we hypothesize that cells walking through the left route would start transitioning from low-low state to GFP state upon induction of AHL and aTc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a hypothesis based on landscape analysis shown in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "75d0c84c-ca9e-4a47-bfa0-f7cacf916573",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C85",
+      "claim": "Experimental testing of the left route indeed shows four stable populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental testing indeed shows four stable populations (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "cede3197-b3d0-46e1-9d55-f39a0620c162",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C86",
+      "claim": "At 6.5 hrs of AHL and aTc induction, about 12% cells were moving to GFP state while the rest of them still stay 'undecided' at low-low state.",
+      "claim_type": "EXPLICIT",
+      "source": "At 6.5 hrs of AHL and aTc induction, about 12% cells were moving to GFP state while the rest of them still stay 'undecided' at low-low state (Figure 4\u2014figure supplement 1A and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "3bd442ac-7147-4337-9b44-57b49a389bec",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C87",
+      "claim": "The right route is predicted to generate different results from the left route.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the right route is predicted to generate different results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on landscape analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "741280f9-8757-4cb6-86b0-64cc5032f0ed",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C88",
+      "claim": "When first induced with Arabinose, the mCherry valley is so deep that it would be difficult for cells to jump out to high-high state.",
+      "claim_type": "EXPLICIT",
+      "source": "When first induced with Arabinose, the mCherry valley is so deep that it would be difficult for cells to jump out to high-high state, and low-low state cells are also hardly transit to GFP state due to its low attractiveness, and thus most cells would stay at mCherry and low-low state even with AHL and aTc inductions (Figure 4A, Right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a prediction based on landscape analysis shown in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "a04e45a8-57f2-44c9-be69-576fab323e30",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C89",
+      "claim": "Experimental testing of the right route indeed only produces two populations with low-low and mCherry state.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental testing of the right route indeed only produces two populations with low-low and mCherry state (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D that confirms model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "48c86f3c-3be1-4207-8cc5-9aaf48804566",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C90",
+      "claim": "With 5 hrs of Arabinose induction, most cells still stay at low-low state because of slow transition to the mCherry state.",
+      "claim_type": "EXPLICIT",
+      "source": "With 5 hrs of Arabinose induction, most cells still stay at low-low state because of slow transition to the mCherry state (Figure 4\u2014figure supplement 1A), but 84.6% cells transitioned to mCherry state with 15.3% cells at low-low state at 9.5 hr (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "52a4a815-123a-46a8-b99b-49e1b9b0cabb",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C91",
+      "claim": "84.6% cells transitioned to mCherry state with 15.3% cells at low-low state at 9.5 hr of Arabinose induction.",
+      "claim_type": "EXPLICIT",
+      "source": "With 5 hrs of Arabinose induction, most cells still stay at low-low state because of slow transition to the mCherry state (Figure 4\u2014figure supplement 1A), but 84.6% cells transitioned to mCherry state with 15.3% cells at low-low state at 9.5 hr (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "29ffce06-2d0e-47c9-b5db-59a4c6a78d9a",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C92",
+      "claim": "The high barrier between the mCherry state and high-high state blocks the transition from mCherry state to high-high state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our model predictions. The high barrier between the mCherry state and high-high state blocks the transition from mCherry state to high-high state, while the low attractiveness and relatively high barrier of the GFP state also decreases the probability of cells transitioning from low-low to GFP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an explanation based on landscape analysis that is consistent with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "5d94f3d2-fa02-4875-aca8-7b237ab82a01",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C93",
+      "claim": "The low attractiveness and relatively high barrier of the GFP state decreases the probability of cells transitioning from low-low to GFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our model predictions. The high barrier between the mCherry state and high-high state blocks the transition from mCherry state to high-high state, while the low attractiveness and relatively high barrier of the GFP state also decreases the probability of cells transitioning from low-low to GFP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an explanation based on landscape analysis that is consistent with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "14fde032-7a85-4544-a9e4-e416c7d6f624",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C94",
+      "claim": "The engineered quadrastable MINPA circuit can guide cell fate choices through shaping the potential landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we engineered the quadrastable MINPA circuit and show that it can guide cell fate choices, represented by fluorescence expression, through shaping the potential landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a main conclusion of the study based on experimental and computational results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "88424758-cb8d-4b7a-8a4d-df03efbd3568",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C95",
+      "claim": "MINPA represents one of the most complicated two-node network topologies and includes four genes to implement a web of regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "MINPA represents one of the most complicated two-node network topologies and includes four genes to implement a web of regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the complexity of the MINPA network.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "f37fbd4f-ead5-41d2-b2d9-9ed384cb049a",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C96",
+      "claim": "Biological complexity correlates with the number of regulatory connections, not the number of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological complexity correlates with the number of regulatory connections (Szathm\u00e1ry et al., 2001), not the number of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Szathm\u00e1ry et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "993251c7-b2a5-4de7-b83e-eea60dfcfe02",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C97",
+      "claim": "Dense connectivity and complex dynamics of MINPA may provide a framework to understand similarly densely connected gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, dense connectivity and complex dynamics of MINPA may provide a framework to understand similarly densely connected gene regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the broader applicability of the MINPA framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "10a59393-b2e2-4470-921d-3e1b9420642e",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C98",
+      "claim": "This study serves as a proof-of-principle demonstration of the Waddington landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining mathematical modeling and experimental investigation, this study serves as a proof-of-principle demonstration of the Waddington landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a main conclusion about the significance of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "36cdc95a-aa93-4692-ad9a-6663fe20f693",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C99",
+      "claim": "The study demonstrates how different sequential inductions can change the landscape in a specific order and navigate cells to different final states.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we used this circuit to demonstrate how different sequential inductions can change the landscape in a specific order and navigate cells to different final states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a main finding of the study based on experimental and computational results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "55748ab9-c4f1-4c0a-8e57-57f66e7b2e09",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C100",
+      "claim": "The study suggests mechanistic explanations of the need for fixed induction sequences for targeted differentiation to desired cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Such illustrations suggest mechanistic explanations of the need for fixed induction sequences for targeted differentiation to desired cell lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "0ebea9af-0ae2-476a-ac33-0ade663e206d",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C101",
+      "claim": "This study helps reveal fundamental mechanisms of cell-fate determination and provide a theoretical foundation for systematic understanding of the cell differentiation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study helps reveal fundamental mechanisms of cell-fate determination and provide a theoretical foundation for systematic understanding of the cell differentiation process, which will lead to development of new strategies to program cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the broader significance and impact of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "903c582e-b880-4e7a-84e9-672f394aba9e",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C102",
+      "claim": "All molecular cloning experiments were performed in E.coli DH10B.",
+      "claim_type": "EXPLICIT",
+      "source": "All the molecular cloning experiments were performed in E.coli DH10B (Invitrogen, USA), and measurements of MINPA and sub-networks were conducted in E.coli K-12 MG1655\u0394lacI\u0394araCBAD strain as previously described (from Dr. Collins Lab [Litcofsky et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "c3fcbc19-75e8-4f64-9fa3-2d5aa6da68f3",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C103",
+      "claim": "Measurements of MINPA and sub-networks were conducted in E.coli K-12 MG1655\u0394lacI\u0394araCBAD strain.",
+      "claim_type": "EXPLICIT",
+      "source": "All the molecular cloning experiments were performed in E.coli DH10B (Invitrogen, USA), and measurements of MINPA and sub-networks were conducted in E.coli K-12 MG1655\u0394lacI\u0394araCBAD strain as previously described (from Dr. Collins Lab [Litcofsky et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study, with citation to Litcofsky et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "775cfeae-b86f-4e15-8200-4a209c3bd115",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C104",
+      "claim": "Cells were grown at 37\u00b0C in liquid and/or solid Luria-Bertani broth medium with 100 \u00b5g/mL ampicillin or kanamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were grown at 37\u00b0C in liquid and/or solid Luria-Bertani broth medium with 100 \u00b5g/mL ampicillin or kanamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "aa1b459e-604e-4682-9b47-3e25f57ac418",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C105",
+      "claim": "All samples were analyzed on an Accuri C6 flow cytometer with excitation/emission filters (488/530 nm for GFP, and 610 LP for mCherry).",
+      "claim_type": "EXPLICIT",
+      "source": "All the samples were analyzed at the indicated time points on an Accuri C6 flow cytometer (Becton Dickinson, USA) with excitation/emission filters (488/530 nm for GFP, and 610 LP for mCherry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "625bb74b-f0c5-4ecc-a78d-7dc08dd98fce",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "claim_id": "C106",
+      "claim": "For each culture, 100,000 events were collected at a slow flow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For each culture, 100,000 events were collected at a slow flow rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "43d205b2-4df2-4628-b580-2774d27c1010",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Multistability is a mechanism used by cells to achieve discrete mutually exclusive states in response to environmental inputs, with examples in both prokaryotic and eukaryotic systems including cell differentiation and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are all supported by appropriate citations to prior work. These claims establish the biological context and motivation for the study by reviewing established knowledge about multistability in cellular systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "31b5cbfc-e8e6-4af0-aa9f-0b2e0ddc37d0",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Waddington's epigenetic landscape hypothesis can be mathematically modeled using dynamical systems where local minima represent steady states or attractors, allowing cell differentiation to be interpreted as state transitions in a multistable system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are supported by citations to Waddington's original work and subsequent theoretical studies. These claims establish the theoretical framework connecting Waddington's conceptual model to mathematical dynamical systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d9577f65-1347-481a-ab4d-e42cbb6296e8",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "While theoretical studies have predicted multistability beyond bistable switches and characterized potential landscapes, experimental demonstrations of higher-dimensional multistable systems are lacking, and it remains unknown how GRNs, noise, and signals together shape landscapes and determine cell fates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 identify a gap in the literature that motivates the current study. These claims are supported by citations to relevant theoretical work and accurately characterize the state of experimental research in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "58a48ee5-00f0-4bc9-85fa-a2c94042a956",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Synthetic multistable gene networks in E. coli could enable experimental investigation of GRN-regulated cellular state transitions, with principles applicable to mammalian cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C18 are speculative proposals about the potential of synthetic biology approaches. While the logic is reasonable, C18's claim about applicability to mammalian systems is not validated in this study and remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "a50b979d-0011-46d7-b93d-a9a5fd462172",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study investigates MINPA (mutually inhibitory network with positive autoregulations) and its sub-networks, which are recurring motifs in GRNs regulating various differentiation processes including hematopoietic, trophectoderm, endoderm, and bone/cartilage/fat differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the study's approach and biological relevance of MINPA. The claims are supported by appropriate citations showing that MINPA motifs appear in natural developmental systems, providing biological justification for studying this network topology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The engineered MINPA circuit uses two hybrid promoters (Para/lac and Plux/tet) with small leakage and high nonlinearity, implementing mutual inhibition and positive autoregulation through AraC/TetR and LuxR/LacI, with GFP and mCherry as readouts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 describe the molecular implementation of MINPA and are supported by experimental characterization data shown in Figure 1D-E and supplementary figures. The circuit design is clearly documented with appropriate experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Computational analysis shows that networks with two auto-activations (A2, RA2, R2A2) have high probability of tristability or quadrastability, with MINPA having broader parameter distributions suggesting greater robustness and likelihood of achieving multistability experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by computational analysis shown in Figure 1\u2014figure supplement 1G-I. The parameter space exploration provides quantitative evidence for MINPA's predicted multistability and robustness, though experimental validation is still required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "d6bdfdfc-854b-424c-b09e-f9f1f6f6aab0",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nine circuits were constructed representing different MINPA sub-networks, excluding one-dimensional and trivial two-dimensional networks with low multistability probability, all using the same set of components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 describe the experimental construction strategy. The rationale for circuit selection is logical based on computational predictions, and the use of common components enables fair comparison across topologies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "6520a207-2809-4697-b268-95e1aeaf7892",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A 'sequential induction' method was designed to efficiently probe multistability in high-dimensional bifurcation spaces, based on the principle that multistable networks exhibit discontinuous jumps between states in response to changing inducer combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe a methodological innovation. The approach is well-justified by citations to prior work on hysteresis experiments and the practical limitations of conventional approaches for complex networks with multiple inducers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "481b806d-a0a7-4ed0-82ec-90234c2f76ae",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A synthetic toggle switch circuit validated the sequential induction approach, showing that cells induced with IPTG then aTc stayed at low-GFP state while cells induced with aTc then IPTG stayed at high-GFP state, demonstrating that sequential induction can explore multistable landscapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by experimental data in Figure 2\u2014figure supplement 1. The toggle switch validation provides proof-of-concept for the sequential induction methodology before applying it to more complex networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "03c30dff-ae3d-4785-a276-17065bb00498",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sequential induction strategies have been employed in other biological contexts including accessing cell death states in cancer cells, directed differentiation of stem cells, and reprogramming to induced pluripotent stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by appropriate citations and provide biological context for the sequential induction approach, showing its relevance beyond synthetic circuits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "fa722194-59e6-42f9-9837-67aff82f42a0",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sequential induction experiments with different inducer combinations showed that T15 (full MINPA topology) exhibits the most variety and complexity in population heterogeneity, including tri-modality, suggesting it has the highest potential for complex multistability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 are supported by experimental data in Figure 2B-D and supplementary figures. The systematic comparison across different topologies and induction conditions provides strong evidence that T15 exhibits the most complex dynamics among tested circuits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The engineered MINPA circuit can reach four distinct states through appropriate inductions: low-low (uninduced), GFP state (AHL+aTc), mCherry state (Arabinose), and high-high state (Arabinose+AHL), demonstrating full controllability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by experimental data in Figure 3A. The demonstration of four controllable states is a key result showing that the circuit functions as designed and can access multiple stable states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A mathematical model with bifurcation analysis predicts that MINPA is quadrastable at low AR/AL with dominant low-low state attractiveness, becomes well-balanced quadrastable at intermediate AR/AL, transitions to tristable at higher AR/AL (losing GFP state), and becomes monostable (high-high only) at very high AR/AL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 describe model predictions shown in Figure 3B and supplementary figures. The bifurcation analysis provides quantitative predictions about how the landscape changes with inducer concentrations, guiding experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Hysteresis experiments validated model predictions, showing uniform low-low at C1, tri-modality at C3, uniform high-high at C4, and that cells initialized at high-high state maintain that state even at low induction (C1), demonstrating clear hysteresis and verifying three of four predicted stable states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 are supported by experimental data in Figure 3C-D and supplementary figures. The hysteresis experiments provide strong evidence for multistability, though the GFP state was not easily accessible in these conditions (C75-C76), which is acknowledged and explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "98352253-b39d-4f07-8d94-7e170cece590",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Quasi-potential landscape calculations show that MINPA is quadrastable with four local minima even without inducers, with the low-low state having much stronger stability and high transition barriers explaining the homogeneous low-low population observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are supported by landscape calculations shown in Figure 4A. The quasi-potential landscape provides mechanistic explanation for experimental observations and connects the mathematical model to the Waddington landscape concept.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "8a0d6e94-df91-44f7-b7cc-461c73663300",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Simultaneous induction with Arabinose, AHL, and aTc produced quadramodal distributions in flow cytometry, and single-cell microscopy showed low-low state cells differentiating into GFP, mCherry, and high-high states, finally verifying predicted quadrastability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 are supported by experimental data in Figure 4B and Figure 4\u2014figure supplement 1B-D. The combination of flow cytometry and single-cell microscopy provides strong evidence for quadrastability, representing a key validation of the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "8f3e359c-58e5-4169-82ba-1759eda1a9b6",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The 'left route' (AHL+aTc then Arabinose) was predicted to enable transitions through GFP state to reach all four states, and experimental testing confirmed four stable populations with ~12% cells moving to GFP state at 6.5 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by landscape analysis (Figure 4A) and experimental data (Figure 4C and supplementary figures). The agreement between model predictions and experimental observations demonstrates the predictive power of the landscape framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "7d90a003-e7db-4e5d-a432-1c2168b73807",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The 'right route' (Arabinose then AHL+aTc) was predicted to produce only low-low and mCherry states due to deep mCherry valley and low GFP attractiveness, and experimental testing confirmed bimodal distribution with most cells transitioning to mCherry state by 9.5 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C93 are supported by landscape analysis and experimental data in Figure 4A, D and supplementary figures. The route-dependent outcomes demonstrate how sequential induction order shapes the accessible landscape and determines final cell fates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "ea36f031-579b-4b6b-a935-d899e8d788ea",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The engineered quadrastable MINPA circuit demonstrates that cell fate choices can be guided by shaping the potential landscape through sequential inductions, serving as proof-of-principle for the Waddington landscape and suggesting mechanistic explanations for fixed induction sequences in targeted differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94, C98-C100 represent the main conclusions of the study. These are well-supported by the combination of computational modeling, landscape analysis, and experimental validation showing route-dependent cell fate determination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "52e7b75c-ff08-4dac-a913-3c2d567f202b",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "MINPA represents one of the most complicated two-node network topologies with four genes implementing a web of regulations, and since biological complexity correlates with regulatory connections rather than gene number, MINPA may provide a framework for understanding densely connected GRNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 discuss the complexity and potential broader applicability of MINPA. C96 is supported by citation, while C97 is speculative but reasonable given the demonstrated complexity of MINPA dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "c075ff81-124c-4e8d-9a5f-45bf7fe36e70",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "This study helps reveal fundamental mechanisms of cell-fate determination and provides a theoretical foundation for systematic understanding of cell differentiation, which will lead to development of new strategies to program cell fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C101 makes broad statements about impact and future applications. While the study does provide insights into cell fate determination mechanisms, the claim about leading to new strategies for programming cell fate is speculative and not directly validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    },
+    {
+      "id": "6bc9ef8f-af71-4611-a869-936b68ffbc07",
+      "content_id": "8dd15501-4445-455b-bc3c-a1e16a57efa9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Experimental methods included molecular cloning in E. coli DH10B, measurements in E. coli K-12 MG1655\u0394lacI\u0394araCBAD strain, growth at 37\u00b0C in LB medium with antibiotics, and flow cytometry analysis collecting 100,000 events per sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 describe standard experimental methods that are clearly documented in the Materials and Methods section. These methodological details are appropriate and sufficient for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:46:27.736008Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a3b3cf6b-e3e2-4ed2-990f-187648cc5038",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "5e69de47-631b-4027-9034-ff44b5e60dd5",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "045c10d4-a97d-471c-ad18-e601bb080f7d",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "ea881c0d-d236-4331-ad7e-e1225752b8c0",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "9cc98c07-d243-4f4d-b4b2-d1e6f4c7ede2",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "cb682a22-ac41-4768-a85d-93fd9a4f5d2c",
+      "result_id": "43d205b2-4df2-4628-b580-2774d27c1010"
+    },
+    {
+      "claim_id": "0ce8bee5-9d86-4149-8a8e-6b8319d5ed35",
+      "result_id": "31b5cbfc-e8e6-4af0-aa9f-0b2e0ddc37d0"
+    },
+    {
+      "claim_id": "7be88ffb-cb29-43d9-b5f0-ec74d89b5191",
+      "result_id": "31b5cbfc-e8e6-4af0-aa9f-0b2e0ddc37d0"
+    },
+    {
+      "claim_id": "c58e7ea1-c097-4a3a-adac-beffd4efa549",
+      "result_id": "31b5cbfc-e8e6-4af0-aa9f-0b2e0ddc37d0"
+    },
+    {
+      "claim_id": "22229ff8-870b-4430-82a5-eb031903a3b3",
+      "result_id": "31b5cbfc-e8e6-4af0-aa9f-0b2e0ddc37d0"
+    },
+    {
+      "claim_id": "716efcc6-70ab-4b59-a5da-073adaec94dd",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "75a653dc-dcab-4857-b4ef-82447233ba36",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "68e4d4d5-e4c5-410c-8a45-8eeea70d9654",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "9d253613-29c7-42e0-82a1-42220189466d",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "17ad8a2e-a272-4d2f-8b38-f4dcb6fe86a4",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "7e08b904-b4cc-4245-9673-5e23513b6960",
+      "result_id": "d9577f65-1347-481a-ab4d-e42cbb6296e8"
+    },
+    {
+      "claim_id": "dc1af413-9b33-48ff-b1d7-1f3ebb18102b",
+      "result_id": "58a48ee5-00f0-4bc9-85fa-a2c94042a956"
+    },
+    {
+      "claim_id": "e94adfa3-75d2-4eca-8e32-fc4226bf39ed",
+      "result_id": "58a48ee5-00f0-4bc9-85fa-a2c94042a956"
+    },
+    {
+      "claim_id": "9c095028-5254-4756-93bb-4d1adaf04e3c",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "adc572dc-03fe-4ba2-b0ea-3f7a65f994b6",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "650c9b05-75b0-40c2-b820-d48ea1d551ac",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "5dea0fee-ce9a-4961-84a6-c235eb114e77",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "849f683d-de88-458d-9207-5a28515ad0b8",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "d33377c8-5949-48f0-a0bd-6a97768b2b91",
+      "result_id": "a50b979d-0011-46d7-b93d-a9a5fd462172"
+    },
+    {
+      "claim_id": "1f23bcca-b05a-42a6-8bbe-9cb60ce2449b",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "9fa25919-214f-4194-81ba-82650e482476",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "251fb337-4250-4138-9c6c-2502c370d1bd",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "0c0cf99a-7f27-41a9-af25-0c174787a8ce",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "8302a7c7-d10c-4d02-92e8-5cfda8064da6",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "02a8c4dd-f932-4328-a15c-c4cb380b4309",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "dcf4032f-4c8b-4d7f-bcc5-86cbe94b69d1",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "864275f1-87f3-43d1-b177-1e153383ea14",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "b5a21656-830d-4165-8771-9eeaf8d2127a",
+      "result_id": "94f1cabb-4bd8-40b7-a772-d4f7bf76f7a6"
+    },
+    {
+      "claim_id": "20460023-aadb-4fe3-9434-6cc05d4b24de",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "6acd546b-9c1b-451a-b74f-7a4411b6fc4c",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "34465561-ebca-4c2a-bcb7-ed43451029e4",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "4d464e10-7325-42f5-a92d-656295ff1c4c",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "a98e335d-66ee-410b-8cdc-85dfae60a0e8",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "defb173e-0213-46ff-9614-fd4a1b83e967",
+      "result_id": "1eeb7304-5f10-44a2-aa1e-8e36e2a7807a"
+    },
+    {
+      "claim_id": "79cf8177-b853-4dbe-8649-7b7bbff6d125",
+      "result_id": "d6bdfdfc-854b-424c-b09e-f9f1f6f6aab0"
+    },
+    {
+      "claim_id": "9441b3e5-67b3-4a43-b719-d63f3a3a7fe6",
+      "result_id": "d6bdfdfc-854b-424c-b09e-f9f1f6f6aab0"
+    },
+    {
+      "claim_id": "40201d07-fe3f-454b-9d11-6f0165b2b8ed",
+      "result_id": "d6bdfdfc-854b-424c-b09e-f9f1f6f6aab0"
+    },
+    {
+      "claim_id": "d9a92cec-01f4-4319-810f-860d7b8b01ce",
+      "result_id": "6520a207-2809-4697-b268-95e1aeaf7892"
+    },
+    {
+      "claim_id": "96eca6d7-1696-4875-a64c-66f4758a7970",
+      "result_id": "6520a207-2809-4697-b268-95e1aeaf7892"
+    },
+    {
+      "claim_id": "be9ff6b2-e918-4743-96aa-0e3b11e09d28",
+      "result_id": "6520a207-2809-4697-b268-95e1aeaf7892"
+    },
+    {
+      "claim_id": "efd94bc5-0163-424a-b09d-5e9dc10c51a6",
+      "result_id": "6520a207-2809-4697-b268-95e1aeaf7892"
+    },
+    {
+      "claim_id": "d1ac75d4-339b-48b6-a54c-aa6f6a556557",
+      "result_id": "481b806d-a0a7-4ed0-82ec-90234c2f76ae"
+    },
+    {
+      "claim_id": "3c93f316-3296-4c2b-b161-73b25063ce68",
+      "result_id": "481b806d-a0a7-4ed0-82ec-90234c2f76ae"
+    },
+    {
+      "claim_id": "6311f276-d134-4ac4-8442-7629ae198704",
+      "result_id": "481b806d-a0a7-4ed0-82ec-90234c2f76ae"
+    },
+    {
+      "claim_id": "b57d18a2-7e82-4ce3-b4bb-d484d727439f",
+      "result_id": "481b806d-a0a7-4ed0-82ec-90234c2f76ae"
+    },
+    {
+      "claim_id": "b93f7c42-0437-463d-b51c-93c0b64e2e6e",
+      "result_id": "03c30dff-ae3d-4785-a276-17065bb00498"
+    },
+    {
+      "claim_id": "4186d43e-d11f-40e4-9af2-e93928b73f4b",
+      "result_id": "03c30dff-ae3d-4785-a276-17065bb00498"
+    },
+    {
+      "claim_id": "d6d72384-2647-4839-8ecb-a238b7a8950f",
+      "result_id": "03c30dff-ae3d-4785-a276-17065bb00498"
+    },
+    {
+      "claim_id": "ec350035-1855-4dcd-ac34-96210a3d4406",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "e1ed393b-2e24-4db2-96b4-4ee61126164a",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "bb6add65-7c30-4864-98d7-fbd21c4a421f",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "b3e274e0-9105-4e73-93a6-dddf413b6764",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "54adced1-92bf-460a-ba10-e2e31aa504c3",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "7b8e4c29-046a-4cca-8622-726bbdb8cd4c",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "40ffd71d-9bb0-4bc5-8149-629092f5f5ee",
+      "result_id": "fa722194-59e6-42f9-9837-67aff82f42a0"
+    },
+    {
+      "claim_id": "13b80986-f2c1-44e1-a44c-2c04db535262",
+      "result_id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f"
+    },
+    {
+      "claim_id": "08c885f0-7e62-458e-942b-9a50a3b73bcb",
+      "result_id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f"
+    },
+    {
+      "claim_id": "f67223e3-462e-4e71-a799-5dcecf6da8e5",
+      "result_id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f"
+    },
+    {
+      "claim_id": "9b2cc8ab-f367-4dba-b849-915a69dc64f9",
+      "result_id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f"
+    },
+    {
+      "claim_id": "f235efb5-66dd-4158-9da3-35e7344dab95",
+      "result_id": "ec32d66e-2fa8-4e97-a6bc-a76e343a5b5f"
+    },
+    {
+      "claim_id": "0a6705d4-a199-4052-8557-87485978b2d3",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "e62cd476-0eed-419a-8506-40882a9055ba",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "d4525321-5f13-4dbb-b63c-0d0f653e3376",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "2a72ecf4-2470-42ca-88c6-c41004c28180",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "d2722bf9-244e-4f32-a69d-171e4b43daa3",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "e688efb1-6e58-44ff-85b6-391d75dd7632",
+      "result_id": "06ee44d2-1421-47e2-ab6d-5ab0ec0ce523"
+    },
+    {
+      "claim_id": "45e86d86-ccc0-4e16-91c9-c077eb1ce39b",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "403f5bfc-7555-405e-a4b5-6e8296c42e48",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "3ae46679-a90a-4073-9463-80e104433483",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "ff58f375-f623-4744-b4bd-76902bd5c204",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "0922c7f5-1b5c-4b53-9b07-eb5cb97e39ce",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "a664f861-8c3e-4f33-a83f-b32c14be65c9",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "28b3dc46-ef8a-4a26-8a0d-fdd61047bfa6",
+      "result_id": "12a213b8-7907-4e7f-b5d7-f8917f054e2b"
+    },
+    {
+      "claim_id": "202a9cba-d7e0-4f7c-b49b-4a4344cb6696",
+      "result_id": "98352253-b39d-4f07-8d94-7e170cece590"
+    },
+    {
+      "claim_id": "cb1e838a-4879-4f88-a5c7-6937e468f9dd",
+      "result_id": "98352253-b39d-4f07-8d94-7e170cece590"
+    },
+    {
+      "claim_id": "c93c33c6-e15e-4e2b-b046-37cfe22aaac6",
+      "result_id": "8a0d6e94-df91-44f7-b7cc-461c73663300"
+    },
+    {
+      "claim_id": "a0b0f388-ae44-4393-bc94-4e2960396771",
+      "result_id": "8a0d6e94-df91-44f7-b7cc-461c73663300"
+    },
+    {
+      "claim_id": "41fc8e82-ca75-44f1-a511-b138aaa35dc2",
+      "result_id": "8a0d6e94-df91-44f7-b7cc-461c73663300"
+    },
+    {
+      "claim_id": "86046ddf-9b4f-4786-b1a2-531a3c3feaa8",
+      "result_id": "8f3e359c-58e5-4169-82ba-1759eda1a9b6"
+    },
+    {
+      "claim_id": "75d0c84c-ca9e-4a47-bfa0-f7cacf916573",
+      "result_id": "8f3e359c-58e5-4169-82ba-1759eda1a9b6"
+    },
+    {
+      "claim_id": "cede3197-b3d0-46e1-9d55-f39a0620c162",
+      "result_id": "8f3e359c-58e5-4169-82ba-1759eda1a9b6"
+    },
+    {
+      "claim_id": "3bd442ac-7147-4337-9b44-57b49a389bec",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "741280f9-8757-4cb6-86b0-64cc5032f0ed",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "a04e45a8-57f2-44c9-be69-576fab323e30",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "48c86f3c-3be1-4207-8cc5-9aaf48804566",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "52a4a815-123a-46a8-b99b-49e1b9b0cabb",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "29ffce06-2d0e-47c9-b5db-59a4c6a78d9a",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "5d94f3d2-fa02-4875-aca8-7b237ab82a01",
+      "result_id": "7d90a003-e7db-4e5d-a432-1c2168b73807"
+    },
+    {
+      "claim_id": "14fde032-7a85-4544-a9e4-e416c7d6f624",
+      "result_id": "ea36f031-579b-4b6b-a935-d899e8d788ea"
+    },
+    {
+      "claim_id": "10a59393-b2e2-4470-921d-3e1b9420642e",
+      "result_id": "ea36f031-579b-4b6b-a935-d899e8d788ea"
+    },
+    {
+      "claim_id": "36cdc95a-aa93-4692-ad9a-6663fe20f693",
+      "result_id": "ea36f031-579b-4b6b-a935-d899e8d788ea"
+    },
+    {
+      "claim_id": "55748ab9-c4f1-4c0a-8e57-57f66e7b2e09",
+      "result_id": "ea36f031-579b-4b6b-a935-d899e8d788ea"
+    },
+    {
+      "claim_id": "88424758-cb8d-4b7a-8a4d-df03efbd3568",
+      "result_id": "52e7b75c-ff08-4dac-a913-3c2d567f202b"
+    },
+    {
+      "claim_id": "f37fbd4f-ead5-41d2-b2d9-9ed384cb049a",
+      "result_id": "52e7b75c-ff08-4dac-a913-3c2d567f202b"
+    },
+    {
+      "claim_id": "993251c7-b2a5-4de7-b83e-eea60dfcfe02",
+      "result_id": "52e7b75c-ff08-4dac-a913-3c2d567f202b"
+    },
+    {
+      "claim_id": "0ebea9af-0ae2-476a-ac33-0ade663e206d",
+      "result_id": "c075ff81-124c-4e8d-9a5f-45bf7fe36e70"
+    },
+    {
+      "claim_id": "903c582e-b880-4e7a-84e9-672f394aba9e",
+      "result_id": "6bc9ef8f-af71-4611-a869-936b68ffbc07"
+    },
+    {
+      "claim_id": "c3fcbc19-75e8-4f64-9fa3-2d5aa6da68f3",
+      "result_id": "6bc9ef8f-af71-4611-a869-936b68ffbc07"
+    },
+    {
+      "claim_id": "775cfeae-b86f-4e15-8200-4a209c3bd115",
+      "result_id": "6bc9ef8f-af71-4611-a869-936b68ffbc07"
+    },
+    {
+      "claim_id": "aa1b459e-604e-4682-9b47-3e25f57ac418",
+      "result_id": "6bc9ef8f-af71-4611-a869-936b68ffbc07"
+    },
+    {
+      "claim_id": "625bb74b-f0c5-4ecc-a78d-7dc08dd98fce",
+      "result_id": "6bc9ef8f-af71-4611-a869-936b68ffbc07"
+    }
+  ],
+  "comparisons": []
+}

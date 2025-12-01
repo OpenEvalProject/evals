@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Tadpoles exhibit behavioral inverse effectiveness: multisensory enhancement (acoustic + visual stimuli) occurs only for low-contrast (25%, 50%) visual stimuli, not high-contrast (100%) stimuli, demonstrating that multisensory integration preferentially enhances responses to low-saliency inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide converging behavioral evidence with appropriate statistical tests (two-way ANOVA) showing significant multisensory enhancement at 25% contrast (p=0.0013) and 50% contrast (p=0.0345) but not at 100% contrast (p=0.4994). The MSIn analysis (C19) further confirms this pattern with significant differences at low contrasts. Sample size (n=37 tadpoles) is adequate for the statistical approach used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "At the network level, inverse effectiveness is observed across populations of tectal cells responding to the same stimulus strength, with cells showing smaller unisensory responses exhibiting greater multisensory enhancement. This demonstrates that inverse effectiveness is a property of individual cell response magnitude rather than stimulus strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by calcium imaging data from 11 tadpoles with 231 responsive ROIs (C49). Figure 1F shows an exponential decay relationship between unisensory response size and MSIn (R\u00b2=0.575), providing quantitative support. The interpretation in C23 is logical given that all cells received identical stimuli yet showed variable inverse effectiveness based on their individual response properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C50"
+    ],
+    "result": "Inverse effectiveness does not depend on GABAergic inhibition. While blocking GABAA receptors with picrotoxin shifts response magnitudes upward, the inverse relationship between unisensory response size and multisensory enhancement persists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by cell-attached recording data (Figure 2A) comparing control (n=40) and picrotoxin conditions (n=22). Both conditions show exponential decay curves characteristic of inverse effectiveness, though shifted vertically. This effectively rules out the alternative hypothesis (C50) that inhibition mediates inverse effectiveness, distinguishing it from the temporal properties of MSI shown previously (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Tectal cells exhibit non-linear summation of multisensory inputs: cells with subthreshold unisensory responses show large multisensory enhancement (MSIn=4.34\u00b11.18), while cells with suprathreshold responses show minimal enhancement (MSIn=0.12\u00b10.035).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by whole-cell current clamp recordings with appropriate statistical analysis (Mann-Whitney U=0, p=0.0002). The stark difference between subthreshold (n=10) and suprathreshold (n=6) conditions provides strong evidence for non-linear integration. However, the sample sizes are relatively small, particularly for suprathreshold responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "NMDA receptors mediate the non-linear summation underlying inverse effectiveness at the cellular level. Blocking NMDARs with APV reduces multisensory enhancement in subthreshold responses (from MSIn=4.34\u00b11.18 to 1.11\u00b10.43, p=0.016) and shifts responses toward linear summation in both voltage-clamp and spike output measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide converging evidence from whole-cell recordings (n=6 control, n=10 APV-treated) and cell-attached recordings (n=33 control, n=11 APV-treated) with appropriate non-parametric statistics (Mann-Whitney U test). Figure 3E shows responses approach the unity line (linear summation) with NMDAR blockade. The mechanistic rationale (C30-C31) is well-supported by prior literature. However, the relatively small sample sizes, particularly for control subthreshold responses (n=6), warrant some caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "NMDA receptor blockade with MK-801 eliminates behavioral inverse effectiveness. Control tadpoles show significant MSI for low-contrast stimuli (94\u00b1109%, p=0.005) but not high-contrast stimuli (-82\u00b1250%), while MK-801-treated tadpoles show no significant MSI for low-contrast stimuli (29\u00b1174%, p>0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by behavioral experiments with appropriate statistical analysis (ANCOVA adjusting for acoustic responsiveness, p=0.02; post-hoc Tukey HSD). Sample sizes are adequate (control n=15 low-contrast, n=23 high-contrast; MK-801 n=15). The ANCOVA approach appropriately controls for individual variability in acoustic responsiveness. This provides critical evidence linking cellular NMDAR function to behavioral inverse effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study demonstrates that NMDAR-mediated non-linear summation of subthreshold crossmodal inputs forms the cellular basis for inverse effectiveness across behavioral, network, and cellular levels in the vertebrate brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 represent the integrated conclusion supported by converging evidence from behavioral (C17-C20, C35-C37), network (C21-C23), and cellular (C27-C34) levels. The multi-level approach strengthens the conclusions. However, C41's claim of being 'the first' to show cellular mechanisms is difficult to verify without comprehensive literature review, and C42 appropriately acknowledges this as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C51"
+    ],
+    "result": "The acoustic stimulus likely activates multiple sensory systems (ear, skin, lateral line), and skin stimulation is treated as functionally equivalent to acoustic stimulation in calcium imaging experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46 and C51 represent methodological assumptions that are not directly validated. While the authors acknowledge these as inferences (C46) and justify the substitution for practical reasons (C51), no direct evidence is provided that skin stimulation and acoustic stimulation activate equivalent neural circuits or produce equivalent multisensory integration. This assumption could affect interpretation of the calcium imaging results (C21-C23) if the two stimulus types engage different mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Data analysis employed specific threshold criteria: calcium imaging responses below \u0394F/F\u2080=0.1 were excluded, and electrophysiology trials were classified as subthreshold (<12 pA/ms) or suprathreshold (\u226512 pA/ms) based on current area over 1.5s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C54-C55 describe analysis criteria, but the rationale for these specific thresholds is not provided. The 12 pA/ms threshold for sub/suprathreshold classification (C54-C55) appears arbitrary and could significantly impact the results in C27-C28. The \u0394F/F\u2080=0.1 threshold (C52) excluded 810 of 1041 ROIs (78%), which is a very high exclusion rate that could introduce selection bias. Sensitivity analysis with different thresholds would strengthen confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior work established that temporal properties of MSI depend on inhibitory network dynamics, that inverse effectiveness is a well-characterized property of MSI in superior colliculus, and that cellular mechanisms underlying MSI remain poorly understood despite existing computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C4-C8 accurately represent the state of prior knowledge based on appropriate citations. These claims establish the context and rationale for the current study. The characterization of the knowledge gap (C6, C8) is reasonable and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The Xenopus tadpole optic tectum is an established model system for studying MSI at multiple levels of analysis, receiving multisensory inputs and showing MSI properties homologous to mammalian superior colliculus, with well-characterized behavioral responses suitable for testing MSI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are well-supported by multiple citations to prior work establishing the model system. These claims provide appropriate justification for the experimental approach and are consistent with the established literature on this preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study employed standard methods for Xenopus tadpole husbandry (stage 48-49), behavioral testing with calibrated visual and acoustic stimuli, calcium imaging with OGB1-AM, and electrophysiology with defined inclusion/exclusion criteria, all conducted under approved animal care protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C62 describe methodological procedures that are generally well-documented and cite appropriate prior work where applicable. The methods appear technically sound and include appropriate controls and exclusion criteria. Ethical approval is documented (C62). However, some methodological details could be more thoroughly justified (see C52, C54-C55 evaluation).",
+    "result_type": "MINOR"
+  }
+]

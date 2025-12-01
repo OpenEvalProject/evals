@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TP53 exon-6 nonsense mutations occur at significantly higher than expected frequencies in both TCGA and MSKCC cohorts. Statistical analysis shows exon-6 nonsense mutations occur 4-5 fold more frequently than expected, nearly 5 times more frequently than all TP53 mutations (p=3.869e-11), and 2-3 times more frequently than missense mutations or other nonsense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide convergent statistical evidence from two independent large cohorts (TCGA and MSKCC) with appropriate p-values and fold-change calculations. The analysis compares observed versus expected frequencies based on theoretical mutation possibilities, and the findings are replicated across datasets. The statistical methodology appears sound with significant p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The distribution and frequency of TP53 mutations, including exon-6 truncating mutations, varies substantially across different tumor types. Exon-6 truncating mutations are enriched in certain cancers (>6% in PAAD, ESAD, ESCC, HNSC, COAD, SKCM) but absent in others (lung small cell carcinoma).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe tumor type-specific patterns supported by data analysis across multiple cancer types. The observations are descriptive and based on frequency calculations from the datasets. The absence of exon-6 truncations in LUSCC despite high overall TP53 mutation frequency (C25) is particularly notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "TP53 exon-6 truncating mutations show statistically significant enrichment in colorectal cancer metastatic tumors compared to primary tumors in the MSKCC cohort, consistent with a previous study showing increased representation in liver metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports a statistically significant finding from the MSKCC cohort with supporting data in Figure 1G and Supplementary file 3. Claim C27 provides independent validation from prior literature (Miyaki et al., 2002). The convergence of current and prior findings strengthens the conclusion about metastatic enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ectopic expression of TP53 exon-6 truncating mutations (R196*, R213*) in A549 cells induces epithelial-to-mesenchymal transition (EMT) features including morphological changes, stress fiber formation, decreased E-cadherin, increased vimentin, and increased expression of EMT master regulators (Slug, Snail, Zeb1), along with enhanced cell motility and invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe a coherent set of EMT-related phenotypes supported by multiple experimental approaches (immunofluorescence, RT-qPCR, wound healing, invasion assays) shown in Figure 2. The phenotypes are internally consistent and characteristic of EMT. Controls include p53-WT and other truncation mutants. The lack of tumor suppressor activity (C28) is consistent with the pro-metastatic phenotypes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "B16-F1 melanoma cells expressing the p53 R213* exon-6 truncating mutant show dramatically increased lung colonization in mice at day 14 post-injection compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by in vivo tail vein injection experiments with quantification shown in Figures 2H, 2I, and histological validation in supplementary figures. The dramatic increase in lung colonies provides functional evidence for pro-metastatic activity. However, only one exon-6 mutant (R213*) was tested in this model, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TP53 exon-6 truncating mutations partially escape nonsense-mediated decay (NMD) and are expressed at detectable levels in tumor samples and cell lines. Analysis of TCGA data shows comparable though slightly decreased expression of truncating mutation transcripts, and western blot confirms protein expression in multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 address the critical question of whether truncating mutations produce stable proteins. C39 shows mRNA expression data from TCGA, while C40-C41 provide protein-level validation by western blot with shRNA knockdown controls. The convergence of mRNA and protein data, along with validation controls, supports the conclusion that these mutants escape NMD sufficiently to be functionally relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Cells harboring TP53 exon-6 truncating mutations (R213*, R196*) exhibit a unique dependency on these mutants for survival. Acute p53 knockdown reverses EMT markers, while prolonged knockdown causes dramatic cell death specifically in exon-6 truncating mutant cells but not in cells with p53-WT, missense mutants, other truncations, or p53-null genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate a unique functional dependency using multiple approaches (shRNA knockdown, CRISPR-Cas9) with appropriate controls across multiple cell lines. The temporal distinction between acute (EMT reversal) and prolonged (cell death) effects is well-documented. The specificity to exon-6 truncations is validated by testing multiple control genotypes. Cleaved-PARP data (C44) confirms apoptotic cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "TP53 exon-6 truncating mutants structurally and functionally resemble the naturally occurring p53-psi isoform, lacking nuclear localization sequences, oligomerization domains, and DNA-binding domains. These mutants are excluded from the nucleus and lack transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 establish the structural similarity to p53-psi and demonstrate loss of canonical p53 functions. C50 is supported by immunofluorescence (Figure 4B), and C51 by RT-qPCR of p53 target genes (Figure 4C). The structural inference (C49) is reasonable based on the truncation positions. This distinguishes exon-6 mutants from missense gain-of-function mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Background on p53-WT and p53-psi mitochondrial localization and interaction with Cyclophilin D (CypD), and the pharmacological properties of Cyclosporin A (CsA) as a CypD inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 provide established background knowledge from prior literature with appropriate citations. These are not novel findings but necessary context for understanding the subsequent mechanistic experiments. All claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TP53 exon-6 truncating mutants partially localize to mitochondria and bind to CypD in mitochondrial fractions. This binding is not due to changes in CypD expression or localization, and CypD knockdown does not affect p53 mutant mitochondrial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 establish the molecular interaction between exon-6 mutants and CypD. C60 is supported by subcellular fractionation (Figure 4D), C61 by co-immunoprecipitation (Figure 4E), and C62-C63 by western blots showing CypD levels are unchanged. The bidirectional independence (p53 doesn't affect CypD localization, CypD doesn't affect p53 localization) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "TP53 exon-6 truncating mutants (R196*, R213*) and p53-psi increase mitochondrial permeability transition pore (MPTP) opening in a CypD-dependent manner. This is demonstrated by calcein retention assays showing increased permeability that is abolished by CsA treatment or CypD/p53 knockdown, and by JC-1 assays showing mitochondrial hyperpolarization upon knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide convergent functional evidence using complementary assays (calcein fluorescence for permeability, JC-1 for membrane potential). The pharmacological (CsA) and genetic (knockdown) interventions both reverse the phenotype, supporting causality. The specificity to exon-6 mutants and p53-psi is demonstrated by testing multiple mutants. The W146* mutant showing opposite effects (C65) provides important structure-function information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CypD activity is required for the pro-metastatic phenotypes and survival of cells expressing TP53 exon-6 truncating mutations. Short-term CypD inactivation decreases mesenchymal markers, while long-term knockdown or pharmacological inhibition (C-9) reduces cell viability in vitro. In vivo, CRISPR-Cas9 mediated CypD inactivation decreases tumor volume in exon-6 mutant xenografts but not p53-WT xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 demonstrate functional dependency on CypD using genetic (shRNA, CRISPR-Cas9) and pharmacological (C-9 inhibitor) approaches in both in vitro and in vivo models. The temporal distinction (short-term vs. long-term) parallels the p53 knockdown results. The specificity is demonstrated by comparing exon-6 mutant cells (Calu-6) to p53-WT cells (A549) in xenografts. The convergence of multiple approaches strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TP53 mutations produce diverse alleles with distinct activities that contribute differently to tumorigenesis. TP53 exon-6 truncating mutants lack transcriptional activity but uniquely activate pro-tumorigenic programs, and their high abundance and enrichment in certain tumors is consistent with promoting rather than halting tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 synthesize the study's findings into broader conclusions about TP53 mutation diversity. These are supported by the combined evidence from frequency analysis (C76 references Figure 1), functional characterization (C75), and comparison to other mutant types. The conclusions are well-supported by the data presented, though C74 also relies on inference and integration with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The higher than expected frequency of TP53 exon-6 truncating mutations could alternatively be explained by specific etiology or mutagenic modality rather than selective advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 acknowledges an alternative explanation for the observed mutation frequency. The authors appropriately note this limitation but do not provide data to distinguish between selective advantage and mutational bias. This represents an important caveat to the interpretation but does not undermine the functional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C83",
+      "C84"
+    ],
+    "result": "TP53 exon-6 truncating mutations are distinguished from other p53 gain-of-function mutants by their requirement for mitochondrial localization, CypD interaction, and lack of transcriptional activity, whereas canonical gain-of-function mutants depend on nuclear localization and transcriptional activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C83, and C84 establish the mechanistic distinction between exon-6 truncating mutations and canonical gain-of-function mutants. This is supported by the functional data showing lack of transcriptional activity (Figure 4C), mitochondrial localization (Figure 4D), and CypD-dependent phenotypes. The comparison to canonical GOF mutants is based on established knowledge (C84) and the study's own data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The p53 W146* mutant, despite localizing to mitochondria, cannot interact with CypD and shows opposite effects on E-cadherin expression and MPTP permeability compared to exon-6 truncating mutants. This may indicate interaction with other MPTP components that antagonize CypD function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85 and C86 are supported by experimental data (inability to bind CypD, increased E-cadherin, decreased MPTP permeability). However, C87 is explicitly speculative ('tempting to speculate') and lacks experimental validation. The W146* data provide important structure-function information but the mechanistic explanation remains hypothetical and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Cancer cells harboring exon-6 TP53 truncating mutations have selective dependencies on CypD activity, and the high prevalence of these mutations in certain tumors suggests they represent strong precision medicine candidate targets comparable to EGFR, ROS, and ALK mutations in NSCLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is well-supported by the functional dependency data in Figures 5B-F showing selective vulnerability to CypD inhibition. Claim C89 is an inference based on the prevalence data and the demonstrated dependency, with comparison to established precision medicine targets. While the therapeutic potential is promising, actual clinical validation would be required to fully support this as a precision medicine target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "TP53 exon-6 truncating mutations reprogram cellular signaling networks and cell state despite lacking transcriptional and canonical tumor suppressor activities. These mutations are best described as 'separation of function' rather than 'gain of function' or 'loss of function' because they mimic the naturally occurring p53-psi isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 provide a conceptual framework for understanding exon-6 truncating mutations. C90 is supported by the extensive functional characterization throughout the study. C91 is a reasonable inference based on the structural and functional similarity to p53-psi, though the 'separation of function' terminology is a proposed classification rather than an empirically tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Approximately one-third of human genetic disorders are caused by premature stop codon mutations, and TP53 exon-6 truncating mutations could represent a paradigm for other diseases driven by separation of function isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is supported by citation to established literature. Claim C93 is speculative ('could represent a paradigm') and extends beyond the data presented. While the concept is interesting and the TP53 findings may inform understanding of other truncating mutations, no evidence is provided for other diseases. This represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background on TP53 as the most frequently mutated gene in cancer, its role as a tumor suppressor, the existence of hotspot missense mutations with gain-of-function activities, and the mechanisms of these gain-of-function mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background knowledge from prior literature with appropriate citations. These are not novel findings from this study but necessary context. All claims are well-supported by the cited literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Summary of the study's main findings: TP53 exon-6 truncating mutations occur at higher than expected frequencies, induce pro-metastatic features when ectopically expressed, are necessary for cell survival in normal conditions, lack transcriptional activity, and have phenotypes dependent on interactions with Cyclophilin D in mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 summarize the key findings that are detailed and supported throughout the manuscript. These summary claims in the introduction are validated by the extensive experimental evidence presented in the results section. Each component is supported by specific experiments and data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background on CypD inhibition effects and the role of MPTP in both cell death under stress and in physiological processes including pro-metastatic phenotypes. Cells expressing TP53 exon-6 truncating mutations proliferate normally and depend on CypD for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81, and C82 provide background from literature with appropriate citations. Claim C80 is a novel finding from this study supported by the viability and dependency experiments. The integration of established knowledge (C79, C81, C82) with new findings (C80) is appropriate and well-supported.",
+    "result_type": "MINOR"
+  }
+]

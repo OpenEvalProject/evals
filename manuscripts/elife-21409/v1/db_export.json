@@ -1,0 +1,1801 @@
+{
+  "submission": {
+    "id": "b63d23e0-195d-499b-9667-e012dfbbad65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:48:27.242099Z",
+    "updated_at": "2025-11-30T23:48:27.242099Z"
+  },
+  "content": [
+    {
+      "id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "submission_id": "b63d23e0-195d-499b-9667-e012dfbbad65",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic range adaptation in primary motor cortical populations\n\n## Authors\n\n- Robert G Rasmussen<sup>1</sup> ([ORCID: 0000-0002-7845-2088](https://orcid.org/0000-0002-7845-2088))\n- Andrew Schwartz<sup>1</sup>\n- Steven M Chase<sup>2</sup> ([ORCID: 0000-0003-4450-6313](https://orcid.org/0000-0003-4450-6313)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering University of Pittsburgh Pittsburgh United States\n2. Center for the Neural Basis of Cognition Carnegie Mellon University Pittsburgh United States\n3. Department of Neurobiology University of Pittsburgh Pittsburgh United States\n4. Department of Biomedical Engineering Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural populations from various sensory regions demonstrate dynamic range adaptation in response to changes in the statistical distribution of their input stimuli. These adaptations help optimize the transmission of information about sensory inputs. Here, we show a similar effect in the firing rates of primary motor cortical cells. We trained monkeys to operate a brain-computer interface in both two- and three-dimensional virtual environments. We found that neurons in primary motor cortex exhibited a change in the amplitude of their directional tuning curves between the two tasks. We then leveraged the simultaneous nature of the recordings to test several hypotheses about the population-based mechanisms driving these changes and found that the results are most consistent with dynamic range adaptation. Our results demonstrate that dynamic range adaptation is neither limited to sensory regions nor to rescaling of monotonic stimulus intensity tuning curves, but may rather represent a canonical feature of neural encoding.\n\n## Introduction\n\nThe range of natural stimuli a person or animal encounters in a single day is constantly changing. A common example is walking out of a dark movie theater and into a brightly lit lobby. Although the illuminance of light may change over three orders of magnitude between these two rooms, within seconds we are able to see clearly. This ability can be explained by the behavior of neurons that encode information about light intensity. Neurons in primary visual cortex and the retina encode the intensity of light with their firing rates (Kuffler, 1953; Hubel and Wiesel, 1962). These tuning relationships typically follow monotonic curves between firing rates of zero and the maximum firing rates of the neurons (i.e. the dynamic range of the neurons). The resolution in the relationship is determined by how many steps in the firing rate can be distinguished. The resolution is an information metric and is a function of both the slope of the curve and the amount of noise in the firing rate. When the level of light intensity changes from the dark theater to the bright lobby, the neural tuning curves shift and adjust their slopes to provide resolution over the new range of light intensity (Shapley and Enroth-Cugell, 1984; Ohzawa et al., 1985; Smirnakis et al., 1997; Ohzawa et al., 1982; Harris et al., 2000). This phenomenon is commonly referred to as dynamic range adaptation. In addition to this example in the visual system, dynamic range adaptation has also been documented in other sensory areas, including the auditory (Kvale and Schreiner, 2004; Ulanovsky et al., 2004; Dean et al., 2005; Nagel and Doupe, 2006; Rabinowitz et al., 2011) and somatosensory (Maravall et al., 2007; Katz et al., 2006) systems. This phenomenon has been described as optimizing the transmission of information about input stimuli within the limited tuning ranges of the neurons (Brenner et al., 2000; Fairhall et al., 2001; Wark et al., 2007; Atick, 2011).\n\nIn sensory systems, meaningful input variables can be described concretely. In motor systems, controlled parameters are still being debated. Force was one of the earliest output variables described, and many studies have demonstrated that firing rates of neurons in primary motor cortex (M1) modulate with output force levels in monotonic relationships (Evarts, 1966, 1968; Humphrey et al., 1970; Hepp-Reymond et al., 1978; Georgopoulos et al., 1992). Humphrey et al. briefly noted in their work that the value of regression coefficients relating motor neuronal activity to force scaled with the range of forces in their task (Humphrey et al., 1970). This finding could be explained by dynamic range adaptation. As the range of stimuli (output forces) changes, the slope of the tuning curve changes to encode the range of forces within a limited range of firing rates. Hepp-Reymond et al. later explored this phenomenon in greater detail (Hepp-Reymond et al., 1999). They demonstrated that motor cortical neurons encoding force during an isometric pinching task undergo dynamic range adaptation with changes in the task context and cued expectation of the task context.\n\nIn later work, the direction of arm movement received attention as a controlled variable (Georgopoulos et al., 1982, 1988; Schwartz et al., 1988). These studies demonstrated a cosine-tuning relationship between movement direction and neuronal firing rates. Each unit was described as having a preferred direction where the firing rate was maximal for movements in that direction and minimal for movements in the opposite direction. In this classical model, the firing rates linearly modulate between the minimum and maximum rates with the cosine of the angle between the movement direction and preferred direction. This tuning model has been demonstrated for movements in both two- and three-dimensional arm reaches. Notably, the model predicts a lower range in firing rates for 2D movements than 3D movements when the preferred direction is not coplanar with the 2D movement space. This raises the unique question of whether changing the output movement statistics from 3D movements to purely 2D movements would lead to dynamic range adaptation.\n\nStudying these differences with actual arm movements is difficult. Regardless of a 2D or 3D context, arm movements are still within a dynamic environment subject to many external factors including gravity, inertia, and arm kinematics to which neurons may modulate. In an effort to enforce a direct relationship between firing rates and movement direction, we investigated this question using a brain-computer interface (BCI). Essentially, the BCI task allowed us to null out those external factors and purely investigate the differences in tuning between 3D and 2D movements. We trained monkeys to move a cursor on a 3D computer screen under brain control, using either a population vector algorithm (PVA) or an\u00a0optimal linear estimator (OLE) decoder (Chase et al., 2009). The monkeys controlled the cursor by modulating the firing rates of neurons recorded in the motor cortex as they performed a classic center-out task in both 2D and 3D environments. We found that neurons within M1 undergo a change in tuning between the 2D and 3D contexts. We then leveraged the simultaneity of the recordings to test several hypotheses about population-based mechanisms of these changes. We found that the results are consistent with dynamic range adaptation.\n\n## Results\n\nTwo male Rhesus macaques implanted with Utah arrays were trained to perform 2D and 3D center-out tasks in virtual reality, under brain control (Figure 1A,B). To map the neural activity to movement of the cursor, the activity of each unit was assumed to follow a 3D cosine tuning model. With the fitted models of neural activity, cursor movement was updated online every 33 ms with outputs from the decoders as described in more detail in the Materials\u00a0and\u00a0methods section. For the 2D task, the z-component of the decoded movement was zeroed to constrain movement to the xy-plane. There were 26 targets in the 3D context and 16 targets in the 2D context. The two target sets included eight common targets, allowing for direct comparison of tuning between the two task contexts (Figure 1C,D). We analyzed 18 sessions from Monkey A and 11 from Monkey C. Our analysis was focused on the units that contributed to cursor movement for both contexts. The average size of this overlapping population was 26.4 units for Monkey A (min: 13; max: 32) and 37.2 units for Monkey C (min: 30; max: 45). For five recording sessions from Monkey A and 4 from Monkey C, the entire population of units controlling the cursor movement was identical between the two contexts. The average population size for these sessions was 28.6 units for Monkey A (min: 26; max: 32) and 39.5 units for Monkey C (min: 33; max: 45). Six units that appeared to lose signal during the recording session were removed from these analyses (Figure 2\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig1-v1.jpg)\n\n**Figure 1.:** (A) The monkey controlled a computer cursor on a stereoscopic monitor viewed through a mirror, using neural signals. (B) Each recording session began with a brief calibration session to build the decoder. The decoder was used for a block of 3D trials (between 9\u00a0and\u00a013 trials per target), followed by a block of 2D trials (between 15\u00a0and\u00a027 trials per target). In some sessions, an additional block of 2D trials would proceed the blocks of 3D and 2D trials, or an additional block of 3D trails would follow the blocks of 3D and 2D trials. We focused our analyses on the first block of 3D trials and the block of 2D trials immediately following it (the gray boxes). In the supplementary materials, we demonstrate that our findings are invariant to the order of the blocks of trials. (C) Locations of the 26 targets in the 3D context. (D) Locations of the 16 targets in the 2D context. The eight targets that were common to the 2D and 3D contexts are shown in pink. The red, yellow, and light blue hoops represent the xy-plane, xz-plane, and yz-plane, respectively. Data of the target locations are available in Figure 1\u2014source data 1.\n\n### Firing rates change with context\n\nOur first finding is that firing rates during the virtual reaches depend on whether the task context is 2D or 3D. Firing rates for each successful trial were calculated in time windows from target presentation until target acquisition. The rates were averaged across repeated trials to each target, to compute the trial-averaged firing rates. For the set of common targets between contexts, we calculated the average firing rates separately for each context. In Figure 2AB, we plot the average firing rates to the targets that lay in the xy-plane for both contexts. The blue lines show the trial-averaged firing rates of the neurons to all targets from the 2D context, plotted as a function of target direction (azimuth). The pink lines show the trial-averaged firing rates of the neurons for the eight targets in the xy-plane during the 3D context, again as a function of azimuth. The horizontal dotted lines show the minimum and maximum trial-averaged firing rates amongst the entire set of 26 targets during the 3D context. As expected, the azimuthal preferred directions are nearly the same between the two contexts (Figure 2C). The changes in azimuthal preferred directions are insignificant under the Moore test of paired samples of angles for both monkeys (Moore, 1980; Zar, 2010). However, the ranges in the tuning curves are not identical between the two contexts. Instead, the range of firing rates for all 16 targets during the 2D context approaches, and occasionally exceeds, the range observed for all 26 targets during the 3D context. This finding is even more striking when considering the firing rates for the set of eight targets that were identical between contexts. The units show greater maximal firing rates and lower minimal firing rates in the 2D context compared to the 3D context for the BCI task.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Selected tuning curves for the targets in the xy-plane during the 3D (pink) and 2D (dark blue) contexts from Monkey A (panel\u00a0A) and Monkey C (panel\u00a0B). Firing rates show the mean $\\pm$ SE for each target. There were 10 trials per target in the 3D task for all units shown with the exception of the last unit in (B) where there were 12 trials per target. There were 15 trials per target in the 2D task for all units shown with the exception of the first two units in (panel\u00a0A) where there were 27 trials per target. The dashed horizontal lines show the minimum and maximum target-averaged firing rates for all 26 targets in the 3D context. (C) Changes in azimuthal preferred direction for Monkey A (top) and Monkey C (bottom). Firing rates were used to fit log-linear tuning models independently for the 2D and 3D contexts to calculate the preferred directions of the units. The preferred direction from the 2D context was compared to the $x$ and $y$-components of the preferred direction from the 3D context to calculate the change in the azimuthal preferred direction. The changes are insignificant under the Moore test of paired samples of angles for both Monkey A ($R^{\u2032}=0.817$, $n=471$, $P>0.1$) and Monkey C ($R^{\u2032}=0.887$, $n=409$, $P>0.05$). (D) Histograms of the differences in tuning ranges for the set of eight identical targets between the 2D and 3D contexts for Monkey A (top) and Monkey C (bottom). For both panels: solid vertical lines, means of distributions; solid horizontal lines, mean $\\pm$ SE; dashed vertical lines, point of equality between the two tuning ranges. In both subjects, the 2D planar dynamic range was larger than the 3D planar dynamic range (Monkey A: ***$P\u226a10^{-20}$, Wilcoxon signed-rank test, $W=88059$, $\u25ca\u25ca\u25caP<10^{\u221218}$, sign test, $S=334$, $n=471$ units; Monkey C: **$P=0.0032$, $W=48975$, $\u25caP=0.0134$, $S=230$, $n=409$ units). (E) Histograms of the differences in tuning ranges for the full set of targets between the 2D and 3D contexts for Monkey A (top) and Monkey C (bottom). The full tuning range was greater in the 2D context for Monkey A (**$P=0.0081$, $W=63402$, $\u25caP=0.0426$, $S=258$, $n=471$) and in the 3D context for Monkey C (***$P<10^{-5}$, $W=31208$, $\u25ca\u25caP=0.0011$, $S=171$, $n=409$). Data to recreate the tuning curves and histograms are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013E) Five units from Monkey A. (F) One unit from Monkey C. Tuning curves from the first, second, and third block of trials are shown as the curves from dark to light orange. Firing rates are drawn as the mean $\\pm$ SE across the trials in the block. Blocks from the 3D context are drawn as dashed lines and those from the 2D context are drawn as solid lines. Data to recreate these plots are\u00a0available in Figure 2\u2014figure supplement 1\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Histograms comparing the tuning ranges from both monkeys for the set of identical targets in the 2D and 3D contexts when blocks of 2D trials preceded blocks of 3D trials (left) and when blocks of 3D trials preceded blocks of 2D trials (right). $W_{l}$ = 178635, ***$P<\u226a10^{-38}$, $S_{l}$ = 477, $\u25ca\u25ca\u25caP<10^{\u221226}$, $n_{l}$ = 671, $W_{r}$ = 273191, ***$P<10^{-25}$, $S_{r}$ = 564, $\u25ca\u25ca\u25caP<10^{\u221216}$, $n_{r}$ = 880. $W$, Wilcoxon signed-rank tests, $S$, sign tests, $n$, number of analyzed units. (B) Histograms comparing the tuning ranges for the set of identical targets in the 2D and 3D contexts for all recording sessions from both monkeys that used the PVA decoder (left) and those that used the OLE decoder (right). $W_{PVA}$ = 144603, ***$P<10^{-15}$, $S_{PVA}$ = 404, $\u25ca\u25ca\u25caP<10^{\u22129}$, $n_{PVA}$ = 649, $W_{OLE}$ = 20273, ***$P<10^{-10}$, $S_{OLE}$ = 160, $\u25ca\u25ca\u25caP<10^{\u22128}$, $n_{OLE}$ = 231. (C) Histograms comparing the tuning ranges from both monkeys for the set of identical targets in the 2D and 3D contexts for the subset of recording sessions where the population used for BCI control was identical between the two contexts (left) and those where the population changed (right). $W_{l}$ = 34298, ***$P<10^{-14}$, $S_{l}$ = 212, $\u25ca\u25ca\u25caP<10^{\u221211}$, $n_{l}$ = 300, $W_{r}$ = 114164, ***$P<10^{-12}$, $S_{r}$ = 352, $\u25ca\u25ca\u25caP<10^{\u22126}$, $n_{r}$ = 580. (D) Histograms comparing the tuning ranges for both monkeys for the set of identical targets in the 2D and 3D contexts for the subset of recording sessions where the decoder was re-adapted between the 3D and 2D contexts (left) and those were the decoder was identical with the $z$-dimension zeroed out in the 2D context (right). $W_{l}$ = 58688, ***$P<10^{-6}$, $S_{l}$ = 251, $\u25ca\u25ca\u25caP<10^{\u22123}$, $n_{l}$ = 425, $W_{r}$ = 78290, ***$P<10^{-20}$, $S_{r}=313$, $\u25ca\u25ca\u25caP<10^{\u221214}$, $n_{r}$ = 455. For all panels: solid vertical lines, means of distributions; solid horizontal lines, mean $\\pm$ SE; dashed vertical lines, point of equality between the two tuning ranges. Data to recreate these plots are available in Figure 2\u2014figure supplement 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The plots show the tuning curves for the targets lying on the xy-plane in the 2D (dark blue) and 3D (pink) contexts. The firing rates are shown as the mean $\\pm$ SE ($n_{2D}=24;\u00a0n_{3D}=10$). The minimum and maximum average firing rates amongst the set of all 26 targets from the 3D context are drawn as the dotted horizontal lines. The titles above each plot show the elevation angle, $\u03d5$, that the unit\u2019s preferred direction vector estimated from the 3D data makes with the xy-plane. Units that showed a greater tuning range amongst the set of identical targets in the 2D context than the 3D context are marked with a red asterisk at the top-left corner of the plot. Data to recreate these plots are available in Figure 2\u2014figure supplement 3\u2014source data 1.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A,B) The plots show the histograms for the difference tuning ranges for the set of eight identical targets between the 2D and 3D contexts for Monkey A (panel\u00a0A) and Monkey C (panel\u00a0B) for the single recording session corresponding to the data shown in Figure 2\u2014figure supplement 3 and a similar single recording session from Monkey C. For both panels: solid vertical lines, means of distributions; solid horizontal lines, mean $\\pm$ SE; dashed vertical lines, point of equality between the two tuning ranges. $W_{A}$ = 333, **$P=0.0031$, $S_{A}$ = 22, $\u25ca\u25caP=0.0037$, $n_{A}$ = 28, $W_{C}$ = 731, **$P=0.0018$, $S_{C}$ = 31, $\u25ca\u25caP$ = 0.0054, $n_{C}$ = 43. $W$, Wilcoxon signed-rank tests, $S$, sign tests, $n$, number of analyzed units. Data to recreate these plots are available in Figure 2\u2014figure supplement 4\u2014source data 1.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) The plots show the histograms of the tuning range difference between repeats of the 2D context for Monkey A (left) and Monkey C (right). (B) The plots show the histograms of the tuning range difference between repeats of the 3D context for Monkey A (left) and Monkey C (right). In all plots, the difference is calculated where positive values represent increases in tuning range for the repeated context relative to the initial set of trials. For Monkey A, there is some significant difference in tuning ranges between repeats of the 2D context (2D context: *$P=0.0047$, $W=2233$, n.s.$P=0.0904$, $S=47$, $n=113$ units; 3D context: n.s.$P=0.1189$, $W=3829$, n.s.$P=0.6396$, $S=60$, $n=114$ units). For Monkey C, there is a significant difference in tuning ranges between repeats of the 3D context (2D context: n.s.$P=0.2525$, $W=3946$, n.s.$P=0.0829$, $S=56$, $n=176$ units; ***$P<10^{-12}$, $W=10952$, $\u25ca\u25ca\u25caP<10^{\u221210}$, $S=88$, $n=291$ units). Notably, for all cases where there is a significant difference between repeat of the same context, the means lie to the left of zero. For all panels: solid vertical lines, means of distributions; solid horizontal lines, mean $\\pm$ SE; dashed vertical lines, point of equality between the two tuning ranges. Data to recreate these plots are available in Figure 2\u2014figure supplement 5\u2014source data 1.\n\nTo quantify this change, we computed the planar tuning ranges as the difference between the minimum and maximum average firing rate amongst the set of eight identical targets for the two contexts. We found that 334 of 471 units in Monkey A and 230 of 409 units in Monkey C exhibited an increase in planar tuning range in the 2D context relative to the 3D context. The mean $\\pm$standard error (SE) increase in tuning range was 4.02 $\\pm$\u00a00.33 Hz for Monkey A and 0.81 $\\pm$\u00a00.25 Hz for Monkey C (Figure 2D). The range in firing rates for a set of identical stimuli changes with the context of the task. For the purposes of comparison, the differences in the tuning ranges for the set of all targets between each context are shown in Figure 2E.\n\nIn our investigation, we varied the experimental conditions to analyze the stability of the tuning changes. While Figure 2D shows the tuning difference when the 2D context follows the 3D context, we found that similar tuning changes occur when the order is reversed (Figure 2\u2014figure supplement 2A). We also explored the effect that a different choice in decoder might have on the result. This is important, because the PVA explicitly normalizes every neuron by its modulation depth, while the OLE does not. The findings reported above are results inclusive of all recording sessions regardless of decoders. When we separately looked at sessions using either the PVA decoder or the OLE decoder, we found that the results were individually significant for both decoder types (Figure 2\u2014figure supplement 2B). Additionally, in a subset of the recording sessions, the entire population used to control cursor movement was identical between the two contexts. When we looked at the population response from these sessions, we again found similar changes in tuning range (Figure 2\u2014figure supplement 2C). Additionally, to test the effects of zeroing out the $z$-dimension, we conducted a series of recording sessions in which we simply re-adapted the decoder for the 2D context rather than use the decoder from the 3D context with the $z$-dimension zeroed out. When we separately looked at sessions using either re-adapted decoders or identical decoders with the $z$-dimension zeroed out in the 2D context, we found that the results were individually significant for both types of sessions (Figure 2\u2014figure supplement 2D). The changes in tuning ranges are also apparent when looking at firing rates from a single recording session from Monkey A (Figure 2\u2014figure supplement 3). The 2D and 3D planar tuning ranges for this recording session and a similar single recording session from Monkey C are compared in Figure 2\u2014figure supplement 4.\n\nAs shown in Figure 1B, there was a subset of recording sessions where a task context was repeated after the alternative context. These sessions allowed us to investigate the stability of the tuning ranges for identical contexts across the duration of a recording session (Figure 2\u2014figure supplement 5). We found a slight decrease in the tuning ranges for repeats of the 2D context for Monkey A and repeats of the 3D context for Monkey C: the second presentation tended to have decreased tuning relative to the first. This may be due to fatigue or satiation. Notably, this decrease in tuning on repeated presentations is in the opposite direction as the increase in tuning we observe when moving from the 3D to the 2D context. This suggests that our results from Figure 2D may be a slight underestimate of the actual tuning increase.\n\n### Tuning range increases are driven by dynamic range adaptation\n\nWe next investigated several mechanisms that might be driving the context-dependent firing rate changes we observed during the BCI task. We considered three possible mechanisms: (1) a re-aiming mechanism, in which subjects aim at points other than the targets (Jarosiewicz et al., 2008; Chase et al., 2010), (2) a speed gain mechanism, in which subjects change intended speed between the two contexts (Moran and Schwartz, 1999), and (3) a dynamic range adaptation mechanism, in which units adapt to utilize their available dynamic range in both contexts (Brenner et al., 2000). These strategies each make different predictions about how tuning changes will correlate across populations of simultaneously recorded cells. Below we discuss each of these mechanisms in turn.\n\n#### Re-aiming mechanism\n\nThis mechanism refers to the process of aiming at a virtual target rather than the one that is presented (Jarosiewicz et al., 2008; Chase et al., 2010). Under re-aiming, tuning curves are assumed to remain fixed, but firing rates to identical targets can change if their re-aiming points are different across contexts. Re-aiming processes have been found to explain the majority of short-term adaptation to visuomotor rotations experienced under BCI control (Chase et al., 2012). Why might re-aiming occur between the 3D and 2D contexts? Under the 3D context, re-aiming would likely result in movement of the cursor away from the target, and thus would not be beneficial. In the 2D context, however, aiming points anywhere in the $z$-dimension that maintain a constant projection in the xy-plane would all result in a straight movement. If the preferred directions of the population are evenly distributed, there would be no speed benefit by either mentally \u2018pushing\u2019 or \u2018pulling\u2019 the cursor above or below the $z$-plane during the 2D task: increased firing rates for the population of neurons on one side of the plane would be balanced by decreased firing rates for the population of neurons on the other side of the plane such that speed stays constant. However, if there are biases in the distributions of preferred directions in depth, re-aiming in depth could increase firing rates more than they decrease, allowing the subject to push the cursor faster toward the displayed target. With this mechanism, units would undergo either an increase or decrease in tuning range, depending on the elevation of the unit\u2019s preferred direction relative to the elevation of the re-aiming point.\n\nWe illustrate these tuning-dependent changes for an example scenario in Figure 3A. The color on the sphere indicates the relative tuning range change for a unit with a preferred direction at that point. The preferred directions of three example units are shown as the light green points on the sphere. Although the three units have nearly the same azimuthal preferred directions (near 45\u2218), the elevation angle of the preferred direction vectors are positive for the first two units and negative for the third. Under the re-aiming mechanism, the re-aiming point for the target with an azimuthal direction of 45\u2218 in the 2D context would be above that target, closer to the preferred directions of the first two units and farther from the preferred direction of the third unit. The re-aiming point would lie above the xy-plane because of the bias in the distribution of the three units. With this re-aiming point, the first two units would have an increased firing rate and the third unit would decrease its firing rate in the 2D context to the target with an azimuthal direction of 45\u2218. The increased firing of the two units would outweigh the decreased firing rate of the third unit, subsequently pushing the cursor to the target faster. The tuning curves for these three units for the 3D and 2D contexts under the re-aiming mechanism are drawn under the re-aiming sphere. In this hypothetical example, the first two units demonstrate an increased tuning range in the 2D context, whereas the third unit demonstrates a decreased tuning range.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of the re-aiming strategy hypothesis. (B) Illustration of the speed hypothesis. (C) Illustration of the dynamic range adaptation hypothesis. For each hypothesis, the first row shows heat maps of the relative change in tuning range as a function of preferred direction. For illustrative purposes, the heat map in (panel\u00a0A) is shown as $\\frac{2D\u00a0Range\u00a0\u2212\u00a03D\u00a0Planar\u00a0Range}{3D\u00a0Range}$ and scaled in the range $[-0.25,0.25]$. The other heat maps are shown as $1\u2212\\frac{3D\u00a0Planar\u00a0Range}{2D\u00a0Range}$ and scaled in the range $[-1,1]$. The bottom three rows show example changes in tuning functions for three units with preferred directions drawn as the light green points on the heat maps.\n\n#### Speed gain mechanism\n\nThis mechanism refers to the process of encoding different speeds in the firing rates between the two contexts. Moran and Schwartz demonstrated that movement speed can have both additive and multiplicative effects on the firing rate of individual neurons (Moran and Schwartz, 1999). They modeled the relationship between movement velocity, $\ud835\udc2f$, and neural firing rate, $r_{i}$, with the following equation:\n\n$$\nr_{i}=b_{0,i}+||\ud835\udc2f||\u2062b_{s,i}+m_{i}\u2062\ud835\udc2f\u22c5\ud835\udc29_{i}\n$$\n\nwhere $||\ud835\udc2f||$ is the movement speed and $b_{s,i}$ scales the additive effect of the speed. Unlike the traditional linear tuning model (Georgopoulos et al., 1982), the modulation depth, $m_{i}$, scales not only the directional tuning effects but also the multiplicative effect of speed. The decoding algorithms used in these studies convert the firing rates of the population into cursor velocity. A more detailed description of the decoding algorithms is provided in the Materials\u00a0and\u00a0methods section. Briefly, more extreme firing rates (i.e. very low and high firing rates relative to baseline) would increase the speed of the cursor. Thus, increases in intended cursor speed during the 2D context would increase the tuning range of the units. We illustrate the relative change in tuning range as a function of preferred direction predicted by a change in intended speed in Figure 3B. Unlike the re-aiming mechanism, the relative change in tuning range expected does not vary with preferred direction. Instead, the relative change in tuning range is identical for all units. Following Equation 1, the tuning range for a unit, $\u03c1_{i}$, is the difference between the maximum and minimum firing rate, $r_{i}$, over the range of targets, $\ud835\udc1d$, in the xy-plane. Because the tuning range is the difference in rates across targets, the additive effect cancels and only the multiplicative effects of speed remain in the tuning range, $\u03c1_{i}=2\u2062m_{i}\u2062||\ud835\udc2f||\u2062cos\u2061(\u03d5_{i})$. Thus, if the intended speed during the 2D context is 20% greater than that in the 3D context, the 2D tuning range will be 20% greater than the 3D planar tuning range.\n\n#### Dynamic range adaptation mechanism\n\nThis mechanism refers to the process of the units adjusting their tuning curves to utilize their full tuning range in the given task context. This process is akin to the dynamic range adaptation observed in sensory cortices, where neurons adjust their tuning functions to optimally encode the range of input stimuli. In the 2D context, the $z$-dimension is no longer relevant. Subsequently, the portion of the 3D tuning range allocated to encoding the $z$-dimension may be utilized to encode targets in the xy-plane during the 2D context. We illustrate the relative change in tuning range as a function of preferred direction predicted by dynamic range adaptation in Figure 3C. Unlike a change in intended speed, the relative change in tuning range expected due to dynamic range adaptation varies with the elevation angle, $\u03d5$, of the preferred direction. Under dynamic range adaptation, the 2D tuning range would be equal to the full tuning range ($2\u2062m_{i}$ from Equation 1), whereas the 3D planar tuning range is scaled by the cosine of the elevation angle, $2\u2062m_{i}\u2062cos\u2061(\u03d5_{i})$. We refer to this as a \u2018dose-response\u2019 effect. Increasing the \u2018dose\u2019 of the elevation angle leads to an increased response of tuning range change.\n\nWe find our data to be most consistent with the dynamic range adaptation mechanism. Two pieces of evidence suggest this. First, our data exhibit the dose-response effect predicted only by dynamic range adaptation. Second, we find no evidence of coordinated, opposing changes in dynamic range for neurons whose 3D preferred directions were mirrored across the xy-plane, as predicted by the re-aiming mechanism. We explain these analyses in full below.\n\nTo investigate whether the data exhibit a dose-response effect, we plotted the ratio of the 3D planar to 2D ranges against the absolute value of the elevation angle (Figure 4A,B). When we fit a weighted linear regression to these data, we found significant, negative slopes, indicating that neurons tuned to larger elevation angles show larger dynamic range changes between 2D and 3D (Monkey A: P<10-12, F-test; Monkey C, P=0.00125). Notably, the ratio of the tuning ranges would be expected to follow a cosine relationship with the elevation angle rather than a linear one. However, when we repeated this analysis using the cosine of the elevation angle rather than the absolute value, the results did not change (Figure 4\u2014figure supplement 1A). These results are only predicted by the dynamic range adaptation hypothesis: units appear to increase their range of modulation to include the portion of the tuning range that encoded and controlled the z-dimension in the 3D context. Thus, this changes their contribution to the encoding and control of the x and y-dimensions relevant in the 2D context of the BCI task. When we compared the full tuning ranges from the 2D and 3D contexts, we found that more than half of the units (54.8%) had greater full tuning range in 2D than 3D for Monkey A, whereas less than half of the units (41.8%) had greater full tuning range in 2D than 3D for Monkey C (Figure 2E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dose-response effects in the tuning changes for Monkey A. (B) Dose-response effects in the tuning changes for Monkey C. The ratio of 3D planar to 2D dynamic ranges are plotted against the absolute value of the elevation angle ($\u03d5$) of the PD vectors. The weighted linear fits for the data points are shown in black. The fits have negative slopes. $b_{A}=\u22120.0033$, $F_{A}=53.9$, $P<10^{-12}$, $n_{A}=471$, $b_{C}=\u22120.0015$, $F_{C}=10.6$, $P=0.00125$, $n_{C}=409.\u00a0b$, slope, $F$, $F$-test versus constant model, $n$, number of analyzed units. The darkness of the points corresponds to the weights used for the linear fits with the legend shown to the right. To provide contrast, the upper threshold of colormap for the weights was set at 40. The tuning curves for the two points that lie significantly off the trend line in (B) are shown in Figure 4\u2014figure supplement 1B. (C,D) Firing rates from Monkey A for the first two units from Figure 2A. Both units have an azimuthal PD near $-135^{\u2218}$. The first three bars show the firing rates in the 3D context for the target that lay at $-135^{\u2218}$ on the xy-plane (pink) and the two targets immediately above (dark pink), and below (light pink) that target (E). The firing rate in the 2D context to the target at $-135^{\u2218}$ is shown in the fourth bar (F). Unit 1 had a preferred direction below the xy-plane ($U_{1;Z}=61$, **$P=0.001$). Unit 2 had a preferred direction above the xy-plane ($U_{2;Z}=154$, ***$P<10^{-3}$). Despite this difference, both units showed an increased firing rate to the planar target in the 2D context compared to the 3D context ($U_{1;2D,3D}=114$, **$P=0.0098$, $U_{2;2D,3D}=126$, *$P=0.0299$). (G,H) Similar set of firing rates from Monkey C for the first two units from Figure 2B. The corresponding targets are shown in (I and J). Both units had an azimuthal PD near $-45^{\u2218}$. Unit 1 had a preferred direction below the xy-plane $U_{1;Z}=69$, ***$P<10^{-3}$). Unit 2 had a preferred direction above the xy-plane ($U_{2;Z}=164$, **$P=0.0028$). Despite this difference, both units showed an increased firing rate to the planar target in the 2D context compared to the 3D context ($U_{1;2D,3D}=89$, *$P=0.0165$, $U_{2;2D,3D}=95$, *$P=0.0374$). The firing rates are plotted as the mean $\\pm$ SE ($U$, Mann-Whitney $U$ tests, $n_{2D}$ and $n_{3D}$ trials are the same from Figure 2A,B). Data to recreate these plots are available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Dose-response effects in the tuning changes are shown for Monkey A (left) and Monkey C (right). The ratio of 3D planar to 2D dynamic ranges are plotted against the cosine of the elevation angle ($\u03d5$) of the PD vectors. The weighted linear fits for the data points are shown in black. The fits have positive slopes. $b_{A}=0.397$, $F_{A}=63.6$, $P<10^{-13}$, $n_{A}=471$, $b_{C}=0.152$, $F_{C}=8.92$, $P=0.00299$, $n_{C}=409.b$, slope, $F$, $F$-test versus constant model, $n$, number of analyzed units. The darkness of the points corresponds to the weights used for the linear fits with the legend shown to the right. To provide contrast, the upper threshold of colormap for the weights was set at 40. (B) The tuning curves for the two points that lie significantly off the trend line for Monkey C. The plots show the tuning curves for the targets lying on the xy-plane in the 2D (solid line) and 3D (dashed line) contexts. The firing rates are shown as the mean $\\pm$ SE. The minimum and maximum average firing rates amongst the set of all 26 targets from the 3D context are drawn as the dotted horizontal lines. The tuning curves and the minimum and maximum lines are colored (dark to light orange) according to the block order of the data (first to third block). The tuning curves show a noisy response to targets in the xy-plane with decreased estimated ranges in the 2D context. Data to recreate these plots are available in Figure 4\u2014figure supplement 1\u2014source data 1.\n\nWe also searched for evidence of coordinated, opposing changes in dynamic range for scenarios like Units 1 and 3 illustrated in Figure 3A, in which a pair of units with nearly identical 2D preferred directions had 3D preferred directions that were mirrored across the xy-plane. As explained above, the re-aiming strategy predicts that one unit would show an increased firing rate to the planar target in the 2D context compared to the 3D context, while the other unit would show a decreased firing rate. In the alternative hypotheses, both units would show increased firing rates to the planar target in the 2D context. Results from a pair of units matching this scenario are shown for Monkey A (Figure 4C,D) and Monkey C (Figure 4G,H). Activity for these example pairs of units is inconsistent with the re-aiming strategy. Both units demonstrate maximal firing rates to the planar target in the 2D context. To study whether the results were consistent with the re-aiming strategy at the population level, we developed an algorithm to predict the optimal aiming points for the population in the 2D context, based upon the firing rates in the 3D context. This algorithm allows us to predict which neurons would show increases in dynamic range under the re-aiming mechanism, and which neurons would show decreases in dynamic range. Note that under both the speed gain and dynamic range adaptation mechanisms, no neurons are predicted to decrease their dynamic range. We applied this analysis to the recording sessions where the entire population was identical between the two contexts. For Monkey A, of the 87 units predicted to increase tuning range, 66 were observed to increase. Of the 55 units predicted to decrease tuning range, only eight were observed to do so. For Monkey C, of the 86 units predicted to increase tuning range, 57 were observed to increase. Of the 72 units predicted to decrease tuning range, only 30 were observed to do so. In both monkeys, more than half of the neurons predicted to show decreases in dynamic range from the 3D context to the 2D under the re-aiming mechanism actually showed increases in dynamic range, as predicted by the dynamic range adaptation mechanism.\n\n### Other properties of this effect\n\nThe adaptation process appeared to occur rapidly with the switch from the 3D to 2D context. In order to investigate the timecourse of this process, we devised a method to estimate changes in dynamic range on a trial-by-trial basis (see Materials and methods). Briefly, we fit cosine tuning models from trials in both the 2D and 3D contexts. These models represent a prediction of the expected population response for each context that can be assessed on a trial-by-trial basis. By investigating the error in the fit of each model when the subject experiences a transition between 3D and 2D, we can assess how quickly the population switches from its expected 3D response to its expected 2D response. To mitigate noise, we normalized the expected error for each neuron by the average residual error for the 2D and 3D contexts, and we averaged across all neurons and across the multiple recording sessions for each monkey. Note that all errors were cross-validated: we fit separate models for even and odd trials, and used them to predict the results on odd and even trials, respectively. We estimated the error for the first 120 trials in the 2D context as well as the last 60 planar target trials from the preceding 3D context. These normalized, averaged errors are shown in Figure 5. The plots demonstrate a very rapid shift in the tuning of the population as the context changes from 3D to 2D. Immediately on transition from 3D to 2D (on trial 1), the 3D model error grows considerably. Presumably, the lack of movement in the z-dimension cues the subject to the context change. The 2D model error then reduces. We fit exponential models to the reduction in 2D model error for each monkey, and found exponential decay coefficients (with 95% confidence bounds) of 5.3 (3.2, 16.7) trials for Monkey A and 4.6 (3.2, 10.5) trials for Monkey C. Because each trial takes approximately 1\u00a0s to perform, the retuning effect nears completion within seconds. The 2D model error is immediately lower than the 3D model error on the first 2D trial and rapidly reduces to a baseline state within the first few trials.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig5-v1.jpg)\n\n**Figure 5.:** The two panels show the time courses of adaptation for Monkey A (A) and Monkey B (B). The ordinate axes in the plots show the standardized error between the firing rates in the population and the expected response from tuning fits. Each plot shows two different errors: the error based on tuning models from the 2D context (dark blue) and from the 3D context (pink). These standardized errors are averaged across multiple recording sessions for Monkey A (18) and Monkey C (11). The abscissa in the plots show the trial number before and after the change from the 3D context to the 2D context. The data points to the right of zero represent the standardized error for the first 120 trials in the 2D context. The data points to the left of zero represent the last 60 planar target trials of the the 3D context. The dashed black vertical line at zero represents the system down-time while the context was switched. We also plotted exponential fits (black) to the 2D tuning model error for the first 120 trials of the 2D context. The data were fit to the equation: $y=a+b\u2062exp\u2061c\u2062x$. For Monkey A, the fit parameters (with 95% confidence bounds) were: a = 0.815(0.807, 0.8233); b = 0.176(0.087, 0.264); c = \u22120.189(\u22120.317, \u22120.060); r2 = 0.229. For Monkey C, the fit parameters were: a\u00a0=\u00a00.809(0.800,0.818); b = 0.250(0.150, 0.348); c = \u22120.202(\u22120.309, \u22120.095); r2 = 0.328. Data to recreate these plots is available in Figure 5\u2014source data 1.\n\nWe also assessed the completeness of the dynamic range adaptation. To be complete, the dynamic range in the 2D context should equal the full dynamic range in the 3D context, when all targets are taken into account. We developed the following metric to quantify the completeness of the adaptation:\n\n$$\nAdaptation=\\frac{\u03c1_{2D}\u2212\u03c1_{3D}}{\u03c1_{3D}^{full}\u2212\u03c1_{3D}}\n$$\n\nHere, \u03c1 represents the tuning range under a specified context and target set. The subscript denotes the context. The superscript \u2018full\u2019 denotes the entire set of targets for a given context, whereas the lack of a superscript represents the set of targets identical between contexts. The terms used in computing this metric are described in greater detail in the Tuning Range Analysis subsection of the Methods. This metric normalizes the change in tuning range such that no adaptation would lie at zero and complete adaptation would lie at one. This metric is problematic for neurons where the elevation angle is near the xy-plane and the difference between the full and planar tuning ranges approaches zero. In order to avoid this possible complication, we limited our analysis to those neurons where both the elevation angle was greater than 30\u2218 and the denominator was greater than 2 Hz. The resulting histograms from the metrics for Monkeys A and C are shown in Figure 6. For both monkeys, the histograms are distributed significantly away from zero under both a sign test and a Wilcoxon signed-rank test. Furthermore, the means (\u00b1SE) of the metrics are 0.5157 (\u00b10.1121) for Monkey A and 0.6793 (\u00b10.1233) for Monkey C. These results suggest that the dynamic range adaptation is more than halfway complete for both monkeys. It is worthwhile to note that dynamic range adaptation is not always complete, even in sensory systems. In the auditory system, Dean and colleagues showed a range of retuning abilities in their example neurons (cf. Figure 1 of Dean et al. (2005)). Ohzawa developed an adaptability index to characterize the contrast gain adaptation of cells in visual cortex, and reported values in line with our results (cf. Figure 5 of Ohzawa et al. (1985)).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig6-v1.jpg)\n\n**Figure 6.:** The two panels show histograms of the completeness metric for Monkey A (A) and Monkey C (B). For both panels: solid vertical lines, means of distributions; solid horizontal lines, mean $\\pm$ SE; dashed vertical lines, zero point representing no dynamic range adaptation. For both monkeys, histograms were distributed significantly away from the zero point (Monkey A: ***$P<10^{-5}$, Wilcoxon signed-rank test, $W=3580$, $\u25ca\u25ca\u25caP<10^{\u22123}$, sign test, $S=68$, $n=95$ units; Monkey C: ***$P<10^{-4}$, $W=570$, $\u25ca\u25ca\u25caP<10^{\u22123}$, $S=29$, $n=35$ units). The means ($\\pm$ SE) of the metrics were 0.5157 ($\\pm$ 0.1121) for Monkey A and 0.6793 ($\\pm$ 0.1233) for Monkey C. Data to recreate these plots is available in Figure 6\u2014source data 1.\n\n### No adaptation with hand-control task\n\nBCI provides a powerful framework for addressing basic scientific questions about motor control, including the dynamic range adaptation effects observed here, because the effect each neuron has on cursor movement is fully specified by the experimenter, and because we can obviate complicating factors such as gravity and inertia (Golub et al., 2016). However, it is interesting to compare the BCI results to a similar task performed in hand-control. We had a third monkey (Monkey N) perform a center-out reaching task with the cursor controlled by the position of a 3D tracking marker placed on the monkey\u2019s hand. For the 2D movements, the z-position of the marker was zeroed out so that the depth of the marker had no effect on the cursor. We computed the tuning ranges for the directionally\u00a0tuned neurons amongst the set of identical targets for each context (Figure 7). Unlike with the BCI task, we see no evidence of dynamic range adaptation in the hand-control version of this task. We speculate on the reasons for this in the Discussion section.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21409/elife-21409-fig7-v1.jpg)\n\n**Figure 7.:** The plot shows the histogram of the tuning range difference between the 2D and 3D contexts for the planar targets in the hand-control task. For the plot: solid vertical line, mean of distribution; solid horizontal line, mean $\\pm$ SE; dashed vertical line, point of equality between the two tuning ranges. For Monkey N, the tuning ranges were not significantly different between the 2D and 3D contexts (n.s.$P=0.6349$, Wilcoxon signed-rank test, $W=969$, n.s.$P=0.9007$, $S=31$, $n=64$ units). Data to recreate these plots are available in Figure 7\u2014source data 1.\n\n## Discussion\n\nNeurons in sensory regions encode and transmit information about the external environment (Borst and Theunissen, 1999). Sensory neurons also undergo dynamic range adaptation with contextual changes in the environment (Ohzawa et al., 1985; Dean et al., 2005). In our study, M1 neurons demonstrate significant changes in their firing rates to identical targets, when the task context switches from 3D to 2D. These changes are widespread across the recorded population. The observed changes are not consistent with a re-aiming strategy during the 2D context. Furthermore, the observed changes are not consistent with changes in intended speed between the two contexts. Instead, the observed changes appear to be consistent with dynamic range adaptation.\n\nDuring the 2D context, the $z$-dimension gets added to the task-irrelevant null space. Without the observed adaptation, the portion of the dynamic range encoding the $z$-dimension during the 3D context would not be utilized during the 2D context. Our results showed that units begin to utilize that portion of the dynamic range to encode targets in the xy-plane as the task context switches from 3D to 2D. These results are markedly similar to the dynamic range adaptations that occur in sensory regions. Just as neurons in the retina and visual cortex adjust their tuning to encode the current range of light intensities, the recorded units adjusted their tuning to encode the current range of targets in the given context of the BCI task.\n\nResearchers have described dynamic range adaptation in sensory systems as functioning to optimize information throughput of the neural populations (Brenner et al., 2000; Fairhall et al., 2001; Wark et al., 2007). The same process appears to be functioning here. Just as the slopes of tuning curves in the visual system increase to transmit more information about a narrower range of light intensities, the slopes of the tuning curves of the M1 units increase to transmit more information about a narrower range of target directions.\n\nOther studies have noted tuning changes of individual neurons during BCI learning tasks (Jarosiewicz et al., 2008; Ganguly and Carmena, 2009; Ganguly et al., 2011; Chase et al., 2012). However, the dynamic range adaptation we see appears to be fundamentally different from the effects shown in those studies. First, the time scale of dynamic range adaptation is on the order of seconds (Figure 5). The time scale of BCI-learning-related changes in neural tuning is on the order of tens of minutes (Jarosiewicz et al., 2008; Chase et al., 2012) to days (Ganguly and Carmena, 2009; Ganguly et al., 2011). Second, the dynamic range adaptation is restricted to changes in tuning depth; changes in preferred direction are minimal. In BCI learning studies, preferred directions typically change as well. Third, dynamic range adaptation occurs without any overt learning pressure. In studies of BCI learning, the mapping between neural activity and cursor movements is changed in such a way to impair task performance. That was not the case here: if the subject continued using the same firing rates in the 3D and 2D contexts, performance would have been unaffected. For these reasons, we speculate that dynamic range adaptation represents an additional degree of flexibility in the responses of neurons in the motor system.\n\nWhile we observed consistent dynamic range adaptation between the 2D and 3D contexts in the BCI task, we did not observe it in the hand-control version of this task. There are a number of possible reasons for this. In hand control, hundreds of thousands of neurons likely contribute to arm movements, and the overall change in dynamic range might be distributed over all of them, making them difficult to observe. In BCI, only the recorded neurons contribute to cursor movement, which could potentially make the effect easier to see. Another possibility is that the number of movement parameters that an individual neuron tunes for in hand control is quite large, and when moving from 3D to 2D, the percentage change in number of control parameters is small. In BCI, each neuron contributes to only 3D or 2D movements of the cursor, which could also make the effect easier to observe. A third intriguing possibility is that hand control and BCI movements invoke fundamentally different control schemes. The Hepp-Reymond study noted a rescaling of tuning when the output range of required forces was changed (Hepp-Reymond et al., 1999). That study was performed under isometric conditions, that is, movements were not physically required. Humphrey and colleagues had subjects perform flexion/extension movements of the wrist (Humphrey et al., 1970) under various load conditions, and noted that regression coefficients for decoding scaled with the load. Here, we used a BCI task in which subjects were not physically required to move, and our subjects tend to exhibit very little physical movement during these tasks. In contrast, the hand-control version of this task required physical arm movements, but not variations in output force. It is possible that dynamic range adaptation in the motor system only occurs under conditions of changing force. If this is true, it suggests that isometric force production is a closer analog to BCI than the overt reaching movements to which it is typically compared.\n\nDirection as an important component of the control signal is undeniable. Although directional tuning has been shown to change in a context-dependent manner, it should be emphasized that directional tuning is stable across repetitions within the same condition. Tuning function changes of preferred direction and modulation depth have been observed between brain control and hand control (Taylor et al., 2002; Carmena et al., 2003; Lebedev et al., 2005), between movements in different speed ranges (Moran and Schwartz, 1999; Churchland and Shenoy, 2007), and between movements in different postures (Scott and Kalaska, 1995; Sergio and Kalaska, 2003). Tuning can change during learning, when adapting to visuomotor perturbations (Wise et al., 1998; Paz et al., 2003; Mandelblat-Cerf et al., 2009), force field perturbations (Gandolfo et al., 2000; Arce et al., 2010), BCI decoder changes (Jarosiewicz et al., 2008; Ganguly and Carmena, 2009; Hwang et al., 2013), or even the consistent coupling of sensory cues with rewarded actions (Zach et al., 2008). Here, we find another example of tuning change: dynamic range adaptation. One feature that distinguishes dynamic range adaptation from these other sorts of tuning changes is that, using a principle of information processing (namely, that the total range of firing is rescaled according to the output statistics), the tuning curves from the 2D context may be predicted from the 3D context. Certain types of dynamic range adaptation, such as contrast gain normalization in the visual system, have been linked to a divisive normalization mechanism (Carandini et al., 1997). By better defining which aspects of behavior lead to tuning changes and from more complete descriptions of the factors driving these changes, we will gain a deeper understanding of the neural operations taking place during the control of movement.\n\nThese results support the hypothesis that neurons in M1 serve to efficiently transmit contextually encoded information. Motor learning in dynamic environments can be viewed as learning efficient ways to encode information. Changes in the environmental context, such as tool use, can lead to changes in the association between M1 activity and motor output (Quallo et al., 2012). Even during typical reaches in a static environment, M1 neurons efficiently encode information about the task. The common linear tuning function (Georgopoulos et al., 1982) maximizes the output entropy for a uniform distribution of target directions in a 3D environment. This \u2018histogram equalization\u2019 maximizes the information transmission in the low-noise limit (Nadal and Parga, 1994; Laughlin, 1981). In our studies, the units in M1 have limited dynamic ranges with which to encode cursor movement under the different contexts. Rather than using a subset of the available tuning ranges, the population adaptively displays new coding schemes that fully utilize the ranges of the units comprising the population. This adaptive learning of the M1 population allows for the efficient encoding of task relevant information in changing environments.\n\n## Materials and methods\n\n### Behavioral paradigm and recording\n\nThe behavioral training and decoding methods closely followed those described by Jarosiewicz et al. (2008). Briefly, two male Rhesus monkeys were trained to perform a center-out reaching task in a 3D virtual environment. The monkeys sat in a primate chair facing a mirror that reflects a 3D image from a stereoscopic computer monitor. Before electrode implantation, the monkey was trained to move its hand, fitted with an optical marker, to move a cursor from the center of an imaginary cube to targets at lying at one of the eight corners for a liquid reward (Reina et al., 2001).\n\nOnce the monkeys became proficient at the 3D center-out reaching task, they were implanted with chronic recording arrays. Both monkeys were implanted with a 96-channel array (Cyberkinetics Neurotechnology Systems, Inc.). The implantations were visually placed in the proximal arm area of primary motor cortex. Recordings were amplified, filtered, and sorted on-line with a 96-channel Plexon MAP system (Plexon Inc.). Each monkey was trained to perform the center-out task with both arms restrained by modulating the spiking activity of the recorded units to control cursor velocity. Both monkeys became proficient at the brain-control center-out task in both the 2D and 3D contexts from training sessions prior to starting this study.\n\nEach trial began with the monkey holding the cursor at the task space origin for a randomized period (50\u2013160 ms). The target was presented after this period. The task required the monkey to reach the target within the 2\u00a0s reach period and hold the cursor at the target position for a randomized period (0\u2013100 ms). The cursor was then automatically returned to the home position for the start of the next trial. A water reward was delivered for successful trials. The targets were placed at a distance of 85 mm from the center. The cursor and targets\u2019 radii were 8 mm each. All procedures were performed in accordance with the guidelines of the University of Pittsburgh\u2019s Institutional Animal Care and Use Committee.\n\n### Decoding algorithm\n\nEach recording session began with a calibration brain control session. The calibration session followed the methods described by Chase et al. (2009). The decoding parameters were initially randomized. Eight targets from the 3D context (those lying on the corners of a cube) were then presented, individually in random order, and remained until the end of the movement period. Although the cursor did not move much during the movement period due to the randomized parameters, the firing rates were still modulated to target presentation. Once a cycle set comprising one presentation of each of the eight targets was completed, the firing rates were regressed using the regress function in Matlab (Mathworks, Inc.,\u00a0Natick,\u00a0MA) against the target direction according to the linear tuning model:\n\n$$\nr_{i}=b_{0,i}+m_{i}\u2062\ud835\udc1d\u22c5\ud835\udc29_{i}\n$$\n\nIn a subset of recording sessions, separate calibration sessions were conducted for the 2D and 3D trials. These calibration sessions were conducted immediately prior to the start of the respective context block. The calibration session for the 2D trials differed from the previously described calibration methods only in that the target set comprised 8 targets spaced equally around a circle centered in the xy-plane. For all other recording sessions, the decoding parameters derived from the initial calibration session were used for the entirety of the recording session.\n\nLinear decoders (PVA and OLE) were used to decode neural signals into cursor movement. The recorded population was assumed to follow the linear tuning function described in Equation 3 For each unit, $i$, spike counts were measured at 30 Hz and converted into firing rates, $r_{i}$, by dividing by the sampling interval. Rates were averaged across the last five time bins and normalized by subtracting the fit baseline firing rate and dividing by the fit modulation depth:\n\n$$\nu_{i}=\\frac{r_{i}-b_{0,i}}{m_{i}}\n$$\n\nThe normalized rates of the $N$ units comprising the population were grouped in the vector $u=[u_{1},u_{2},\u2026,u_{N}]^{\u22ba}$. Similarly, the preferred direction vectors of the $N$ units were grouped in the matrix $P=[\ud835\udc29_{1},\ud835\udc29_{2},\u2026,\ud835\udc29_{N}]$. For the PVA decoder, normalized rates, $\ud835\udc2e$, were converted to cursor velocity, $\ud835\udc2f$, as:\n\n$$\nv=k_{s}\\frac{n_{D}}{N}P^{\u22ba}u\n$$\n\nwhere $n_{D}$ is the number of movement dimensions (either 2 or 3) and $k_{s}$ is the speed factor to convert the normalized speed to a physical speed in mm/s (values used in our study ranged from 65 to 120). For the OLE decoders, the normalized rates were converted to cursor velocity as:\n\n$$\nv=k_{s}(B^{\u22ba}B)^{\u22121}B^{\u22ba}(r_{i}\u2212b_{0,i})\n$$\n\nwhere\u00a0$B=[m_{1}p_{1},m_{2}p_{2},\u2026,m_{N}p_{N}]$.\u00a0Cursor position, $\ud835\udc1c$, was updated every sampling interval as:\n\n$$\n\ud835\udc1c\u2062(t)=\ud835\udc1c\u2062(t-\u0394\u2062t)+\u0394\u2062t\u2062\ud835\udc2f\u2062(t)\n$$\n\nFor trials in the 2D context, the $z$-component of the decoded velocity was set to zero to constrain movement to the xy-plane.\n\n### Tuning range analysis\n\nThe analyses in this work focuses on the firing rates of the recorded units, $r_{i}$. These rates are functions of many different variables: the task context (i.e. number of movement dimensions, $n_{D}$), the target direction ($\ud835\udc1d$), the trial number for the target ($j$), and the time points within the trial ($t$). For a given monkey and recording session, the rates of the $N$ units comprising the population were grouped in the vector $r=[r_{1},r_{2},\u2026,r_{N}]^{\u22ba}$. In this work, we analyzed the average firing rate over the trial duration, $\u27e8\ud835\udc2b\u27e9_{t}$. These time-averaged firing rates were also averaged over the trials for a given context and target, $\u27e8\ud835\udc2b\u27e9_{t,j}$. These trial- and time-averaged firing rates remain a function of the task context and target, $\ud835\udc1f\u2062(n_{D},\ud835\udc1d)=\u27e8\ud835\udc2b\u27e9_{t,j}$. We defined the target set, $A$, as the target set in the 3D context, $A={d:n_{D}=3}$. This set comprised 26 targets, $|A|=26$. We defined the target set, $B$, as the target set in the 2D context, $B={d:n_{D}=2}$. This set comprised 16 targets, $|B|=16$. There were eight targets which were common to the two sets, $|A\u2229B|=8$. We defined that set intersection as the set of common targets, $C=A\u2229B$. The 3D planar range for the units in the population was defined as:\n\n$$\n\u03c1_{3D}=max{f(n_{D},d):n_{D}=3,d\\inC}\u2212min{f(n_{D},d):n_{D}=3,d\\inC}\n$$\n\nAlthough all targets in the 2D context lie in the xy-plane, we calculated the 2D range over the set of common targets to directly compare the ranges:\n\n$$\n\u03c1_{2D}=max{f(n_{D},d):n_{D}=2,d\\inC}\u2212min{f(n_{D},d):n_{D}=2,d\\inC}\n$$\n\nOur analysis compared the difference between the 3D planar range ($\u03c1_{3D}$) and the 2D range ($\u03c1_{2D}$) for the units comprising the population. For comparisons of the full tuning ranges, the 2D full range was calculated over the entire set of 16 2D targets, $d\\inB$:\n\n$$\n\u03c1_{2D}^{full}=max{f(n_{D},d):n_{D}=2,d\\inB}\u2212min{f(n_{D},d):n_{D}=2,d\\inB}\n$$\n\nSimilarly, the 3D full range was calculated over the entire set of 26 3D targets, $d\\in(A)$:\n\n$$\n\u03c1_{3D}^{full}=max{f(n_{D},d):n_{D}=3,d\\inA}\u2212min{f(n_{D},d):n_{D}=3,d\\inA}\n$$\n\n### Optimal re-aiming points\n\nIn order to test a re-aiming hypothesis that would explain the change in observed tuning ranges, we devised a method to estimate the optimal re-aiming points for that hypothesis. For each recording session that used the identical set of units to control the BCI task between contexts, the firing rate data from brain control in the 3D context between target presentation and acquisition was used to fit a log-linear tuning model (Koyama et al., 2010) to each unit in the population. The log-linear tuning model is similar to the linear tuning model in Equation 3 with the exception of the exponential relationship in the log-linear model:\n\n$$\nr_{l\u2062l,i}\u2062(\ud835\udc1d)=exp\u2061(b_{l\u2062l,0,i}+m_{l\u2062l,i}\u2062\ud835\udc1d\u22c5\ud835\udc29_{l\u2062l,i})\n$$\n\nThe subscripts, $l\u2062l$, are used to distinguish the equation and its tuning parameters from those used in the linear tuning model. The tuning parameters were fit for each neuron using the glmfit function in Matlab with the distribution and link parameters set as Poisson and log, respectively. For each of the eight shared targets, an optimal re-aiming point for the 2D context was estimated using the log-linear tuning models and the decoders from each recording session. The optimization was run in Matlab as a constrained minimization to move the cursor closest to the target after one time-step. The optimization was constrained to ensure that the single re-aiming point for each target and recording session lies in $S^{2}$, the space of unit vectors in $R^{3}$. The constrained minimization could be written as:\n\n$$\nmin{\u201685d\u2212\\frac{\u0394tk_{s}n_{D}}{N}\\sumi=1Np_{i}\\frac{r_{ll,i}(d^{\u2217})\u2212b_{0,i}}{m_{i}}\u2016:d^{\u2217}\\inS^{2}}\n$$\n\nThe scalar, 85, is used to scale the target direction to the target distance of 85 mm used in the studies. Also, note that the predicted firing rates, $r_{l\u2062l,i}$, are derived from the log-linear tuning model in Equation 12 and decoded using the tuning parameters used in the original decoder. Thus, for all target directions, $\ud835\udc1d$, in the set of common targets, $C$, we derived optimal re-aiming points, $\ud835\udc1d^{*}$, which we grouped into the set, $D$. The optimal re-aiming ranges were calculated as:\n\n$$\n\u03c1_{re\u2212aim}=max{r_{ll}(d^{\u2217}):d^{\u2217}\\inD}\u2212min{r_{ll}(d^{\u2217}):d^{\u2217}\\inD}\n$$\n\nSimilarly, the tuning range predicted by the log-linear model was calculated as:\n\n$$\n\u03c1_{ll}=max{r_{ll}(d):d\\inC}\u2212min{r_{ll}(d):d\\inC}\n$$\n\nFor each unit and recording session, we calculated the sign of the difference in tuning ranges predicted by re-aiming, $sgn(\u03c1_{re\u2212aim,i}\u2212\u03c1_{ll,i})$, and the sign of the observed difference in tuning ranges, $sgn(\u03c1_{2D,i}\u2212\u03c1_{3D,i})$, summing the results in a contingency table.\n\n### Time course of adaptation\n\nIn order to evaluate the speed at which the neural population adapted with changes in context, we created a normalized error metric based upon tuning models from each context. In building the tuning models, we considered only the firing rates for trials where the target was in the set of common targets. For each session and context, the trials were split into two separate groups: even and odd numbered trials. We fit separate linear tuning models for each group. The error for each trial was calculated as the difference between the population response for that trial and the expected response based upon the tuning model fit from the opposite group as that trial. The errors were calculated using both the tuning models created from the 2D context and that from the 3D context. These errors were normalized by dividing by the standardized noise of the neurons from the tuning fits. The noises were estimated as the dispersion parameter from the Matlab glmfit function used to fit the tuning models. In order to standardize the normalization between the 2D and 3D contexts, we used the square root of the product of the dispersion parameters estimated from each context. The absolute value of the normalized errors were averaged over the neurons in the population. For each monkey, the trial-ordered errors were averaged across multiple recording sessions to create the final normalized error metrics displayed in Figure 5. For the 3D context, the errors could only be estimated for the planar targets. Subsequently, all trials for non-planar targets were removed from the analysis. The remaining planar target trials were ordered as the last planar target trial, the second to last, and so on for the purposes of averaging across recording sessions.\n\nWhile plotting these normalized errors, we noticed a trend for a rapid decrease in the 2D tuning model error in the first few trials of the 2D context. In order to model that drop in the error, we fit an exponential function to the session-averaged data. The exponential function followed the equation: $y=a+b\u2062exp\u2061(c\u2062x)$, where $y$ was the error metric and $x$ was the trial number. In our work, we use the fit parameter $c$ to describe the rapid decrease in the error metric. These fits are displayed in Figure 5.\n\n### Hand-control task\n\nIn order to study whether dynamic range adaptation occurs under a hand-control paradigm, we conducted a similar experiment where the cursor movement was controlled directly via the hand of a monkey. A third monkey (Monkey N) was trained to use its hand to control the movement of a computer cursor in a center-out reaching task (Velliste et al., 2014). An infrared marker was placed on the back of the monkey\u2019s hand and tracked using an Optotrak 3020 optical tracking system (Northern Digital,\u00a0Waterloo,\u00a0Canada). The marker position was used in real time to update the position of the cursor on the stereoscopic computer monitor. The cursor and targets in the hand control paradigm were identical to those used in the brain-control study. We investigated the neural response for trials from both the 3D and 2D contexts, where the 3D context preceded the 2D context. During the trials in the 2D context, the cursor position was fixed in the xy-plane. In other words, the cursor would remain stationary if the monkey moved its hand closer or farther from its body while maintaining the same lateral and vertical position.\n\nNeural firing rates were calculated in the time windows between target presentation and acquisition. These rates were averaged across trials of the same target and used to estimate the tuning ranges in each context. This analysis was limited to neurons that were directionally tuned. For each context, we fit a cosine tuning model to the firing rate responses to the set of all targets. Neurons that had a fit modulation depth less than 4 Hz in both the 2D and 3D contexts were excluded from the analysis. In Figure 7, we compare the difference in tuning ranges for the set of common targets between the 2D and 3D contexts in a similar manner as Figure 2D. This additional study and all associated procedures were performed in accordance with the guidelines of the University of Pittsburgh\u2019s Institutional Animal Care and Use Committee.\n",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "317db81b-d112-4217-a42a-16fe97b68a4f",
+      "submission_id": "b63d23e0-195d-499b-9667-e012dfbbad65",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eilon Vaadia, The Hebrew University of Jerusalem , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21409.028](https://doi.org/10.7554/eLife.21409.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dynamic range adaptation in primary motor cortical populations\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Eilon Vaadia (Reviewer #3) as the Reviewing Editor and Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ad Aertsen (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOverall, we found the paper well written and addressing an interesting issue in motor neurophysiology. The experimental techniques and data analysis are sound and well described, and overall the results are valid. Additional analysis that will address the comments below may be essential.\n\nIn their manuscript, the authors set out to demonstrate that neurons in the primary motor cortex of macaques share a property that has previously been described for sensory systems, namely that, depending on context, neurons may exhibit a different firing rate range for a given action (here: a 2D vs. a 3D motor task in a virtual reality design using a BCI-decoding approach). They compare the monitored firing rates of a population of single units to the ranges predicted by three different possible scenarios: 1) a re-aiming mechanism, 2) a speed gain mechanism, 3) a dynamic range adaptation mechanism. They demonstrate that the differences between the two contexts observed are best described by a dynamic range adaptation mechanism.\n\nThe reviewers agree that they found the paper addresses an interesting issue of neuronal directional tuning in motor cortex during control of movements and its dynamic changes (under BCI, but see comments below). The authors draw an interesting conclusion, suggesting that \"dynamic range adaptation\" may represent a canonical feature of neural encoding of motor as well as sensory systems.\n\nNevertheless, the three referees have several questions, and would like to hear the authors' responses and read a revised version of the manuscript, before making a final recommendation.\n\nComments:\n\n1) The question about the stability of motor encoding follows up on a somewhat obscure observation by Hepp-Reymond about the scaling of a small percentage of M1 neurons on the range of forces a monkey is asked to perform in a given context. The authors should also consider a relevant result of Humphrey DR (Science, 1970, 170(3959):758-62): When making predictions of force from multiple neurons across different loading contexts, they, \"\u2026found it necessary to scale the values of the regression coefficients in a directly proportional manner.\" Thus, one may wonder why the current study was performed under \"BMI\" conditions. We think similar observations would have greater impact if the authors addressed the normal function of the motor system. A partial answer does not come until near the end of the Discussion, when they note, in passing, \"Initial, preliminary studies of a reaching version of the same task did not show the same effect as in the BCI version.\" The apparent difference between these two sets of results is itself important, and should affect the manner in which the BMI results are interpreted.\n\n2) There are now a number of studies (including from this group) that address the question of the specificity with which the motor system can learn to modulate the activity of individual neurons that are used for BMI control. The typical observation is that \"control\" neurons tend to increase their depth of modulation and typically also change the direction of their peak tuning. It is not clear that this result is fundamentally different. These changes presumably reflect an optimal retuning of the network's activity, given the altered dynamics of the plant. The geometric arguments for a dynamic range adaptation make equally good sense in this context. The relatively weak effects for monkey C, and the fact the slope even for monkey A in Figure 4A falls well short of -1/90 (which would seem to be the prediction) further weakens the authors' argument for their specific dynamic range adaptation model. It is not clear that the depth of modulation changes represents a mechanism analogous to that of the sensory systems the authors review, or the observations of Hepp-Reymond or Humphrey. As such, the impact of the paper is somewhat reduced.\n\n3) It is not clear that the information and manifold analyses add much. The former seems to follow pretty directly from the main result, and the latter is a questionably small effect. The authors are advised to reconsider if the information-result and Figure 6 should be introduced in the Discussion.\n\n4) Are the authors arguing that the rather small principal angles they measure between the 2D and 3D manifolds are functionally significant, thereby requiring the monkeys to learn an \"out of manifold\" (see Sadtler et al.)?\n\n5) The authors should explain better why the section on \"Change in population structure\" is relevant in the present context. In this context the authors are also advised to define more precisely what they mean by \"the patterns of correlations that the population naturally exhibits\". Are these signal correlations? Or noise correlations? Or precise spike-timing correlations? Or even something else?\n\n6) It is stated in the Discussion that \"The adaptation occurred so quickly that we could not measure its time-course. Future studies could measure the time-course of the adaptation in naive monkeys across multiple recording sessions.\" While appreciating this suggestion, we nevertheless feel that the authors could have found out more about the dynamics of the presumed adaptation by comparing the firing rate ranges in successive trials, after switching from one context to the next. In fact, it is hard to imagine that after the very first trial in a new context, the monkey was already able to figure out the new context. Hence, one would expect some time, that is, trials, to proceed before the monkey figures this out and, hence, is able to adjust its units' firing rate ranges. Therefore, a trial-by-trial analysis might show signs of the dynamics of the range adaptation.\n\n7) According to Figure 1B, either the 2D task (second line) or the 3D task (third line) was repeated twice, alternating with the other context. How similar were the firing rate range distributions in these repeats of the same contexts, and how dissimilar was each of these from the other context?\n\n8) It would be interesting to hear the authors' response to the notion that the canonical mechanism is not just \"dynamic range adaptation\". Instead, the canonical mechanism of sensory motor computation may not be about dynamic range adaptation of a \"fixed tuning\", but about more general forms of additivity, based on the system state (context and more). The classical tuning of single neurons in sensory and motor areas of the brain cannot predict how a neuron is activated when the stimulus (movement) is presented (executed) in conditions that were not tested in the limited experimental condition (for example: using pure-tone or 2-D movements to test tuning of neurons etc.). It is quite possible that tuning reflects only a part of a complex network activity and may change continuously. It is possible that the dynamic range adaptation of the directional tuning is just a simple case of \"tuning\" changes. The authors could relate many previous examples showing that tuning in motor and sensory systems changes with learning, context, memories etc. Some non-tuned neurons can become tuned and vice versa. In sum, there may be some doubt as to whether the results and the seemingly attractive closing statement of the abstract really represent a new concept (quoting: Dynamic range adaptation \"may represent a canonical feature of neural encoding of motor as well as sensory systems\".)\n",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7149cee-9756-43b5-89eb-0c065862f967",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C1",
+      "claim": "Neural populations from various sensory regions demonstrate dynamic range adaptation in response to changes in the statistical distribution of their input stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural populations from various sensory regions demonstrate dynamic range adaptation in response to changes in the statistical distribution of their input stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about sensory systems supported by the broader literature context and citations provided later in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "ce4fc21a-a319-4f99-83ae-23134fe4a8da",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C2",
+      "claim": "Dynamic range adaptations in sensory regions help optimize the transmission of information about sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These adaptations help optimize the transmission of information about sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "b267feeb-18a7-4c73-aa01-633f25fe4c14",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C3",
+      "claim": "Neurons in primary motor cortex exhibited a change in the amplitude of their directional tuning curves between two- and three-dimensional tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neurons in primary motor cortex exhibited a change in the amplitude of their directional tuning curves between the two tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "af0b2dcc-e97b-428e-8b05-7c6e925793cb",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C4",
+      "claim": "The tuning changes in primary motor cortex are most consistent with dynamic range adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We then leveraged the simultaneous nature of the recordings to test several hypotheses about the population-based mechanisms driving these changes and found that the results are most consistent with dynamic range adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on data analysis comparing multiple hypotheses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "f99a0b14-a882-43cb-9b80-a3eea532f044",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C5",
+      "claim": "Dynamic range adaptation is not limited to sensory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that dynamic range adaptation is neither limited to sensory regions nor to rescaling of monotonic stimulus intensity tuning curves, but may rather represent a canonical feature of neural encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings in motor cortex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8a9f0ce7-52e0-49be-9d86-40d3e75947bc",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C6",
+      "claim": "Dynamic range adaptation is not limited to rescaling of monotonic stimulus intensity tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that dynamic range adaptation is neither limited to sensory regions nor to rescaling of monotonic stimulus intensity tuning curves, but may rather represent a canonical feature of neural encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing adaptation in directional tuning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "ab3feff6-ad8d-428a-a832-219c1d99aee3",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C7",
+      "claim": "Dynamic range adaptation may represent a canonical feature of neural encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that dynamic range adaptation is neither limited to sensory regions nor to rescaling of monotonic stimulus intensity tuning curves, but may rather represent a canonical feature of neural encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "67555f21-f6fd-4ce9-a569-d693055b50e4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C8",
+      "claim": "Neurons in primary visual cortex and the retina encode the intensity of light with their firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in primary visual cortex and the retina encode the intensity of light with their firing rates (Kuffler, 1953; Hubel and Wiesel, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "3840a2e7-9032-4e8f-9b19-b190adc1eb64",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C9",
+      "claim": "Neural tuning curves in visual cortex shift and adjust their slopes when light intensity changes to provide resolution over the new range of light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the level of light intensity changes from the dark theater to the bright lobby, the neural tuning curves shift and adjust their slopes to provide resolution over the new range of light intensity (Shapley and Enroth-Cugell, 1984; Ohzawa et al., 1985; Smirnakis et al., 1997; Ohzawa et al., 1982; Harris et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "f2596afa-aac5-4e70-94d0-46a7c0b27144",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C10",
+      "claim": "Dynamic range adaptation has been documented in auditory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this example in the visual system, dynamic range adaptation has also been documented in other sensory areas, including the auditory (Kvale and Schreiner, 2004; Ulanovsky et al., 2004; Dean et al., 2005; Nagel and Doupe, 2006; Rabinowitz et al., 2011) and somatosensory (Maravall et al., 2007; Katz et al., 2006) systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "77bce746-09d5-4f06-9010-299062ef4b75",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C11",
+      "claim": "Dynamic range adaptation has been documented in somatosensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this example in the visual system, dynamic range adaptation has also been documented in other sensory areas, including the auditory (Kvale and Schreiner, 2004; Ulanovsky et al., 2004; Dean et al., 2005; Nagel and Doupe, 2006; Rabinowitz et al., 2011) and somatosensory (Maravall et al., 2007; Katz et al., 2006) systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "30f4e6c6-a75a-4a50-8cf2-56bd1ead8107",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C12",
+      "claim": "Dynamic range adaptation optimizes the transmission of information about input stimuli within the limited tuning ranges of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been described as optimizing the transmission of information about input stimuli within the limited tuning ranges of the neurons (Brenner et al., 2000; Fairhall et al., 2001; Wark et al., 2007; Atick, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "a3e4b636-b3d6-4675-9b83-3c509f1e0ae1",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C13",
+      "claim": "Firing rates of neurons in primary motor cortex modulate with output force levels in monotonic relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Force was one of the earliest output variables described, and many studies have demonstrated that firing rates of neurons in primary motor cortex (M1) modulate with output force levels in monotonic relationships (Evarts, 1966, 1968; Humphrey et al., 1970; Hepp-Reymond et al., 1978; Georgopoulos et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "4ae527dc-8699-466b-a31e-fa3690a9c397",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C14",
+      "claim": "Humphrey et al. noted that regression coefficients relating motor neuronal activity to force scaled with the range of forces in their task.",
+      "claim_type": "EXPLICIT",
+      "source": "Humphrey et al. briefly noted in their work that the value of regression coefficients relating motor neuronal activity to force scaled with the range of forces in their task (Humphrey et al., 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "bb072cd5-1770-4e59-9c42-732351fe3653",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C15",
+      "claim": "Motor cortical neurons encoding force during an isometric pinching task undergo dynamic range adaptation with changes in task context and cued expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "They demonstrated that motor cortical neurons encoding force during an isometric pinching task undergo dynamic range adaptation with changes in the task context and cued expectation of the task context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to work by Hepp-Reymond et al. and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "a3c8e292-ae1e-4e1f-a958-255c3d219e1d",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C16",
+      "claim": "Motor cortical neurons demonstrate a cosine-tuning relationship between movement direction and neuronal firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrated a cosine-tuning relationship between movement direction and neuronal firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to studies by Georgopoulos et al. and others, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8bc37509-45b9-4d38-bf37-52911f79b6aa",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C17",
+      "claim": "Each motor cortical unit has a preferred direction where the firing rate is maximal for movements in that direction and minimal for movements in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each unit was described as having a preferred direction where the firing rate was maximal for movements in that direction and minimal for movements in the opposite direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the classical cosine tuning model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "0ea0540b-2890-425f-b016-f16ed4bf3edc",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C18",
+      "claim": "The classical cosine tuning model predicts a lower range in firing rates for 2D movements than 3D movements when the preferred direction is not coplanar with the 2D movement space.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the model predicts a lower range in firing rates for 2D movements than 3D movements when the preferred direction is not coplanar with the 2D movement space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the cosine tuning model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "fbbe581a-98a1-4b6f-a675-26c04099b8f1",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C19",
+      "claim": "The average size of the overlapping population of units contributing to cursor movement in both contexts was 26.4 units for Monkey A and 37.2 units for Monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "The average size of this overlapping population was 26.4 units for Monkey A (min: 13; max: 32) and 37.2 units for Monkey C (min: 30; max: 45).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "38a6cf5a-aa05-4a2e-8be2-0a8246e6d574",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C20",
+      "claim": "For five recording sessions from Monkey A and 4 from Monkey C, the entire population of units controlling cursor movement was identical between the two contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "For five recording sessions from Monkey A and 4 from Monkey C, the entire population of units controlling the cursor movement was identical between the two contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "afadf7bd-e46f-4bd4-ab39-3f78c9d5b3ed",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C21",
+      "claim": "Six units that appeared to lose signal during the recording session were removed from analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Six units that appeared to lose signal during the recording session were removed from these analyses (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail supported by reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "254b31d6-b0a5-4194-bf82-60e7eddc12f9",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C22",
+      "claim": "The range of firing rates for all 16 targets during the 2D context approaches, and occasionally exceeds, the range observed for all 26 targets during the 3D context.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the range of firing rates for all 16 targets during the 2D context approaches, and occasionally exceeds, the range observed for all 26 targets during the 3D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "4cdf88b6-0448-4b26-bf42-b03804ebecd4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C23",
+      "claim": "Units show greater maximal firing rates and lower minimal firing rates in the 2D context compared to the 3D context for the BCI task.",
+      "claim_type": "EXPLICIT",
+      "source": "The units show greater maximal firing rates and lower minimal firing rates in the 2D context compared to the 3D context for the BCI task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8acca07a-ab69-43f3-9039-2410397c473f",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C24",
+      "claim": "The azimuthal preferred directions are nearly the same between the 2D and 3D contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the azimuthal preferred directions are nearly the same between the two contexts (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "0e24ad1e-e894-489e-9a88-76dc9b0140fa",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C25",
+      "claim": "The changes in azimuthal preferred directions are insignificant under the Moore test of paired samples of angles for both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in azimuthal preferred directions are insignificant under the Moore test of paired samples of angles for both monkeys (Moore, 1980; Zar, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "c94285e8-0004-46ec-9bca-cf7c84b08378",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C26",
+      "claim": "334 of 471 units in Monkey A exhibited an increase in planar tuning range in the 2D context relative to the 3D context.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 334 of 471 units in Monkey A and 230 of 409 units in Monkey C exhibited an increase in planar tuning range in the 2D context relative to the 3D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "f7a0ef69-44a4-4d4b-ae0b-c5c9b1341eac",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C27",
+      "claim": "230 of 409 units in Monkey C exhibited an increase in planar tuning range in the 2D context relative to the 3D context.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 334 of 471 units in Monkey A and 230 of 409 units in Monkey C exhibited an increase in planar tuning range in the 2D context relative to the 3D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "42d1b543-b69b-4102-b751-1363a1a3905f",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C30",
+      "claim": "Similar tuning changes occur when the order of 2D and 3D contexts is reversed.",
+      "claim_type": "EXPLICIT",
+      "source": "While Figure 2D shows the tuning difference when the 2D context follows the 3D context, we found that similar tuning changes occur when the order is reversed (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "1f069d98-e93c-45f5-a2f3-77bfcde01790",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C31",
+      "claim": "The tuning range changes are individually significant for both PVA and OLE decoder types.",
+      "claim_type": "EXPLICIT",
+      "source": "When we separately looked at sessions using either the PVA decoder or the OLE decoder, we found that the results were individually significant for both decoder types (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "49b280ef-dc27-462e-9be5-9fecb53eeda9",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C32",
+      "claim": "Similar changes in tuning range occur when the entire population used to control cursor movement was identical between the two contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "When we looked at the population response from these sessions, we again found similar changes in tuning range (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "61207fe4-f21c-43ca-aef4-86d3f13f4fdd",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C34",
+      "claim": "There was a slight decrease in tuning ranges for repeats of the 2D context for Monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a slight decrease in the tuning ranges for repeats of the 2D context for Monkey A and repeats of the 3D context for Monkey C: the second presentation tended to have decreased tuning relative to the first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "f9387455-645c-458c-b50e-91efdbfe7c57",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C35",
+      "claim": "There was a slight decrease in tuning ranges for repeats of the 3D context for Monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a slight decrease in the tuning ranges for repeats of the 2D context for Monkey A and repeats of the 3D context for Monkey C: the second presentation tended to have decreased tuning relative to the first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "ca190351-cc24-42fb-bedd-56f36a094609",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C36",
+      "claim": "The decrease in tuning on repeated presentations may be due to fatigue or satiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to fatigue or satiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed decrease.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "105f589b-68d2-42a2-8ac0-5c6788cd865d",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C37",
+      "claim": "Under the re-aiming mechanism, units would undergo either an increase or decrease in tuning range, depending on the elevation of the unit's preferred direction relative to the elevation of the re-aiming point.",
+      "claim_type": "EXPLICIT",
+      "source": "With this mechanism, units would undergo either an increase or decrease in tuning range, depending on the elevation of the unit's preferred direction relative to the elevation of the re-aiming point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction of the re-aiming hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "9dda828c-0fda-43dd-a2b0-e66d4e734fa0",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C38",
+      "claim": "Under the speed gain mechanism, the relative change in tuning range is identical for all units.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the re-aiming mechanism, the relative change in tuning range expected does not vary with preferred direction. Instead, the relative change in tuning range is identical for all units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction of the speed gain hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "48486bf0-ebdc-40ef-8617-4d19abde1e34",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C40",
+      "claim": "The data exhibit a dose-response effect predicted by dynamic range adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find our data to be most consistent with the dynamic range adaptation mechanism. Two pieces of evidence suggest this. First, our data exhibit the dose-response effect predicted only by dynamic range adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on data analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "cb39a211-dfe6-4df1-b0d9-f01a938b7214",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C41",
+      "claim": "There is no evidence of coordinated, opposing changes in dynamic range for neurons whose 3D preferred directions were mirrored across the xy-plane, as predicted by the re-aiming mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we find no evidence of coordinated, opposing changes in dynamic range for neurons whose 3D preferred directions were mirrored across the xy-plane, as predicted by the re-aiming mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "3397ddb7-5550-4ee1-925f-e12a5887473e",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C42",
+      "claim": "When fitting a weighted linear regression to the ratio of 3D planar to 2D ranges against the absolute value of the elevation angle, significant negative slopes were found for both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "When we fit a weighted linear regression to these data, we found significant, negative slopes, indicating that neurons tuned to larger elevation angles show larger dynamic range changes between 2D and 3D (Monkey A: P<10-12, F-test; Monkey C, P=0.00125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from data analysis shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "72c946d3-d192-4301-ba4d-9879cfaf1a79",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C43",
+      "claim": "Neurons tuned to larger elevation angles show larger dynamic range changes between 2D and 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "When we fit a weighted linear regression to these data, we found significant, negative slopes, indicating that neurons tuned to larger elevation angles show larger dynamic range changes between 2D and 3D (Monkey A: P<10-12, F-test; Monkey C, P=0.00125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on statistical analysis of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "38446e8c-b60c-466a-9945-f5657e64432d",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C44",
+      "claim": "More than half of the units (54.8%) had greater full tuning range in 2D than 3D for Monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the full tuning ranges from the 2D and 3D contexts, we found that more than half of the units (54.8%) had greater full tuning range in 2D than 3D for Monkey A, whereas less than half of the units (41.8%) had greater full tuning range in 2D than 3D for Monkey C (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of experimental results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8f472b8b-6d39-4d01-96d0-11f03f64a8c4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C45",
+      "claim": "Less than half of the units (41.8%) had greater full tuning range in 2D than 3D for Monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the full tuning ranges from the 2D and 3D contexts, we found that more than half of the units (54.8%) had greater full tuning range in 2D than 3D for Monkey A, whereas less than half of the units (41.8%) had greater full tuning range in 2D than 3D for Monkey C (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of experimental results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "9676ee90-2383-4406-af41-03f31f5ac592",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C46",
+      "claim": "For Monkey A, of the 87 units predicted to increase tuning range under re-aiming, 66 were observed to increase.",
+      "claim_type": "EXPLICIT",
+      "source": "For Monkey A, of the 87 units predicted to increase tuning range, 66 were observed to increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of results from the re-aiming analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "126490b1-623c-4932-aab8-72f50dcad619",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C47",
+      "claim": "For Monkey A, of the 55 units predicted to decrease tuning range under re-aiming, only eight were observed to do so.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 55 units predicted to decrease tuning range, only eight were observed to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of results from the re-aiming analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "210e9516-9411-405f-9f27-84e06c30d2f5",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C48",
+      "claim": "For Monkey C, of the 86 units predicted to increase tuning range under re-aiming, 57 were observed to increase.",
+      "claim_type": "EXPLICIT",
+      "source": "For Monkey C, of the 86 units predicted to increase tuning range, 57 were observed to increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of results from the re-aiming analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "9d6caf3c-0a1f-47bc-b409-2c16b3e9fdb4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C49",
+      "claim": "For Monkey C, of the 72 units predicted to decrease tuning range under re-aiming, only 30 were observed to do so.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 72 units predicted to decrease tuning range, only 30 were observed to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of results from the re-aiming analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "065a42bb-49a9-4d25-9589-06c1cca3dcbb",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C50",
+      "claim": "In both monkeys, more than half of the neurons predicted to show decreases in dynamic range under re-aiming actually showed increases in dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "In both monkeys, more than half of the neurons predicted to show decreases in dynamic range from the 3D context to the 2D under the re-aiming mechanism actually showed increases in dynamic range, as predicted by the dynamic range adaptation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the re-aiming analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "c6de5bc7-567b-4c0e-b8ae-4c0732c789eb",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C51",
+      "claim": "The adaptation process appeared to occur rapidly with the switch from the 3D to 2D context.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptation process appeared to occur rapidly with the switch from the 3D to 2D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the timecourse analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "c8f401c5-1d23-426a-aa12-611429b0d37b",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C52",
+      "claim": "The exponential decay coefficient for the reduction in 2D model error was 5.3 (3.2, 16.7) trials for Monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit exponential models to the reduction in 2D model error for each monkey, and found exponential decay coefficients (with 95% confidence bounds) of 5.3 (3.2, 16.7) trials for Monkey A and 4.6 (3.2, 10.5) trials for Monkey C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical modeling results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "d62e6d7c-ebe9-4748-aa23-753811d315fc",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C53",
+      "claim": "The exponential decay coefficient for the reduction in 2D model error was 4.6 (3.2, 10.5) trials for Monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit exponential models to the reduction in 2D model error for each monkey, and found exponential decay coefficients (with 95% confidence bounds) of 5.3 (3.2, 16.7) trials for Monkey A and 4.6 (3.2, 10.5) trials for Monkey C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical modeling results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "9d7505e0-e41c-44f0-a520-5a7b6559bda9",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C54",
+      "claim": "The retuning effect nears completion within seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each trial takes approximately 1 s to perform, the retuning effect nears completion within seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the exponential decay coefficients and trial duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "6c5f9e7b-30d9-4e19-92c9-c52c730bfecd",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C55",
+      "claim": "The means of the adaptation completeness metrics are 0.5157 (\u00b10.1121) for Monkey A and 0.6793 (\u00b10.1233) for Monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the means (\u00b1SE) of the metrics are 0.5157 (\u00b10.1121) for Monkey A and 0.6793 (\u00b10.1233) for Monkey C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "b8bdfbd7-df5e-42a6-a535-8bc3381af3ab",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C56",
+      "claim": "The dynamic range adaptation is more than halfway complete for both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the dynamic range adaptation is more than halfway complete for both monkeys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the adaptation completeness metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "eb99b0ea-2592-4810-837c-35f409d0f2c4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C57",
+      "claim": "Dynamic range adaptation is not always complete, even in sensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worthwhile to note that dynamic range adaptation is not always complete, even in sensory systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to work in auditory and visual systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8f0aa93e-45ad-4b47-9f1b-6d849866674e",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C58",
+      "claim": "No evidence of dynamic range adaptation was observed in the hand-control version of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike with the BCI task, we see no evidence of dynamic range adaptation in the hand-control version of this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "8a6023f3-906b-4f33-a124-bef9613cb52b",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C59",
+      "claim": "BCI provides a powerful framework for addressing basic scientific questions about motor control because the effect each neuron has on cursor movement is fully specified by the experimenter.",
+      "claim_type": "EXPLICIT",
+      "source": "BCI provides a powerful framework for addressing basic scientific questions about motor control, including the dynamic range adaptation effects observed here, because the effect each neuron has on cursor movement is fully specified by the experimenter, and because we can obviate complicating factors such as gravity and inertia (Golub et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of BCI for research, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "959c27a0-4b1a-4823-b63b-bcc723ef61bc",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C60",
+      "claim": "BCI allows researchers to obviate complicating factors such as gravity and inertia.",
+      "claim_type": "EXPLICIT",
+      "source": "BCI provides a powerful framework for addressing basic scientific questions about motor control, including the dynamic range adaptation effects observed here, because the effect each neuron has on cursor movement is fully specified by the experimenter, and because we can obviate complicating factors such as gravity and inertia (Golub et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of BCI for research, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "cb95aa9a-c8f9-4170-ba88-45f442e301cd",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C61",
+      "claim": "The time scale of dynamic range adaptation is on the order of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the time scale of dynamic range adaptation is on the order of seconds (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "ec84fdff-70fa-4539-9c97-edce024f03f4",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C62",
+      "claim": "The time scale of BCI-learning-related changes in neural tuning is on the order of tens of minutes to days.",
+      "claim_type": "EXPLICIT",
+      "source": "The time scale of BCI-learning-related changes in neural tuning is on the order of tens of minutes (Jarosiewicz et al., 2008; Chase et al., 2012) to days (Ganguly and Carmena, 2009; Ganguly et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "b6cb039a-aae7-4b1a-b2ba-600631e1572d",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C63",
+      "claim": "Dynamic range adaptation is restricted to changes in tuning depth; changes in preferred direction are minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the dynamic range adaptation is restricted to changes in tuning depth; changes in preferred direction are minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "b6762236-5c5c-4f6c-a6ba-51568c298fd2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C64",
+      "claim": "In BCI learning studies, preferred directions typically change as well.",
+      "claim_type": "EXPLICIT",
+      "source": "In BCI learning studies, preferred directions typically change as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about BCI learning studies, supported by general knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "1e5a630a-0ca8-4d5d-b7a8-efcdcb9a114e",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C65",
+      "claim": "Dynamic range adaptation occurs without any overt learning pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, dynamic range adaptation occurs without any overt learning pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "ccd4d195-014a-417b-abd1-91fdf3b1000b",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C66",
+      "claim": "If the subject continued using the same firing rates in the 3D and 2D contexts, performance would have been unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In studies of BCI learning, the mapping between neural activity and cursor movements is changed in such a way to impair task performance. That was not the case here: if the subject continued using the same firing rates in the 3D and 2D contexts, performance would have been unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "3f140947-d675-40f2-87cb-1b8a4eb24ec9",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C67",
+      "claim": "Dynamic range adaptation represents an additional degree of flexibility in the responses of neurons in the motor system.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, we speculate that dynamic range adaptation represents an additional degree of flexibility in the responses of neurons in the motor system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "5be770f9-859d-4ca1-81ad-07337b9ca105",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C68",
+      "claim": "In hand control, hundreds of thousands of neurons likely contribute to arm movements, and the overall change in dynamic range might be distributed over all of them, making them difficult to observe.",
+      "claim_type": "EXPLICIT",
+      "source": "In hand control, hundreds of thousands of neurons likely contribute to arm movements, and the overall change in dynamic range might be distributed over all of them, making them difficult to observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of observed adaptation in hand control.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "87f9eee3-39a1-41e4-aec7-7828bf5ceee8",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C69",
+      "claim": "In BCI, only the recorded neurons contribute to cursor movement, which could potentially make the effect easier to see.",
+      "claim_type": "EXPLICIT",
+      "source": "In BCI, only the recorded neurons contribute to cursor movement, which could potentially make the effect easier to see.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for why adaptation is observed in BCI.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "732d291b-6271-49ca-9bad-29265306ca2d",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C70",
+      "claim": "The number of movement parameters that an individual neuron tunes for in hand control is quite large, and when moving from 3D to 2D, the percentage change in number of control parameters is small.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that the number of movement parameters that an individual neuron tunes for in hand control is quite large, and when moving from 3D to 2D, the percentage change in number of control parameters is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of observed adaptation in hand control.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "790d7944-8d18-43f3-b654-c093caaf5c0e",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C71",
+      "claim": "Hand control and BCI movements may invoke fundamentally different control schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "A third intriguing possibility is that hand control and BCI movements invoke fundamentally different control schemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "1bbd4c66-aeb9-4920-8a08-d771b500bd2c",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C72",
+      "claim": "It is possible that dynamic range adaptation in the motor system only occurs under conditions of changing force.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that dynamic range adaptation in the motor system only occurs under conditions of changing force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on comparison with previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "e7d74917-d9fb-458c-b987-d559625d0d21",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C73",
+      "claim": "Isometric force production may be a closer analog to BCI than overt reaching movements.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is true, it suggests that isometric force production is a closer analog to BCI than the overt reaching movements to which it is typically compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the comparison of results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "77398c87-33e0-45c3-a441-a6e1c72eeec1",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C74",
+      "claim": "Directional tuning is stable across repetitions within the same condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Although directional tuning has been shown to change in a context-dependent manner, it should be emphasized that directional tuning is stable across repetitions within the same condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the stability of directional tuning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "6e9ae142-e705-4042-b55f-f5a8ccdb545b",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C75",
+      "claim": "Tuning function changes of preferred direction and modulation depth have been observed between brain control and hand control.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning function changes of preferred direction and modulation depth have been observed between brain control and hand control (Taylor et al., 2002; Carmena et al., 2003; Lebedev et al., 2005), between movements in different speed ranges (Moran and Schwartz, 1999; Churchland and Shenoy, 2007), and between movements in different postures (Scott and Kalaska, 1995; Sergio and Kalaska, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "6c866353-d17c-4d65-b8ea-da9899583b93",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C76",
+      "claim": "Tuning can change during learning when adapting to visuomotor perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning can change during learning, when adapting to visuomotor perturbations (Wise et al., 1998; Paz et al., 2003; Mandelblat-Cerf et al., 2009), force field perturbations (Gandolfo et al., 2000; Arce et al., 2010), BCI decoder changes (Jarosiewicz et al., 2008; Ganguly and Carmena, 2009; Hwang et al., 2013), or even the consistent coupling of sensory cues with rewarded actions (Zach et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "3e730918-8745-44d4-aea0-6d0912bff561",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C77",
+      "claim": "Using a principle of information processing, the tuning curves from the 2D context may be predicted from the 3D context.",
+      "claim_type": "EXPLICIT",
+      "source": "One feature that distinguishes dynamic range adaptation from these other sorts of tuning changes is that, using a principle of information processing (namely, that the total range of firing is rescaled according to the output statistics), the tuning curves from the 2D context may be predicted from the 3D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the predictability of dynamic range adaptation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "a630f750-c18c-4983-b52e-23c15c9d06c2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C78",
+      "claim": "Certain types of dynamic range adaptation, such as contrast gain normalization in the visual system, have been linked to a divisive normalization mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain types of dynamic range adaptation, such as contrast gain normalization in the visual system, have been linked to a divisive normalization mechanism (Carandini et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "534840d5-57ba-4ba9-8bbf-b3ca7e497e95",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C79",
+      "claim": "Neurons in M1 serve to efficiently transmit contextually encoded information.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the hypothesis that neurons in M1 serve to efficiently transmit contextually encoded information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "32ec9415-cec0-4059-b14d-b3f8e51a5879",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C80",
+      "claim": "Motor learning in dynamic environments can be viewed as learning efficient ways to encode information.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor learning in dynamic environments can be viewed as learning efficient ways to encode information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about motor learning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "512b7aa0-523b-4871-b258-4136913c2a71",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C81",
+      "claim": "Changes in environmental context, such as tool use, can lead to changes in the association between M1 activity and motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the environmental context, such as tool use, can lead to changes in the association between M1 activity and motor output (Quallo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "e4853a4b-9403-43f2-bf9e-1e63564d5f23",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C82",
+      "claim": "The common linear tuning function maximizes the output entropy for a uniform distribution of target directions in a 3D environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The common linear tuning function (Georgopoulos et al., 1982) maximizes the output entropy for a uniform distribution of target directions in a 3D environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about information theory applied to neural tuning, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "f241a136-8b3d-4fd4-a32e-09c87bd2fcfa",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C83",
+      "claim": "Histogram equalization maximizes the information transmission in the low-noise limit.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'histogram equalization' maximizes the information transmission in the low-noise limit (Nadal and Parga, 1994; Laughlin, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "a64513d7-35b6-4eaf-b6bf-9e6796a61512",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C84",
+      "claim": "The population adaptively displays new coding schemes that fully utilize the ranges of the units comprising the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than using a subset of the available tuning ranges, the population adaptively displays new coding schemes that fully utilize the ranges of the units comprising the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "fbb2ee86-fe97-43de-a372-ef54d52fd39a",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C85",
+      "claim": "Adaptive learning of the M1 population allows for the efficient encoding of task relevant information in changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This adaptive learning of the M1 population allows for the efficient encoding of task relevant information in changing environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "5ae1aae8-b69c-484c-872b-34538eec3fce",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C86",
+      "claim": "Two male Rhesus macaques were trained to perform a center-out reaching task in a 3D virtual environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, two male Rhesus monkeys were trained to perform a center-out reaching task in a 3D virtual environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "a3714cf2-94dd-4d9d-86fc-0d97c5414e1f",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C87",
+      "claim": "Both monkeys were implanted with a 96-channel array.",
+      "claim_type": "EXPLICIT",
+      "source": "Both monkeys were implanted with a 96-channel array (Cyberkinetics Neurotechnology Systems, Inc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "bbf47b2f-936a-4b7f-827f-bea3a93290de",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C88",
+      "claim": "The implantations were visually placed in the proximal arm area of primary motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The implantations were visually placed in the proximal arm area of primary motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "cbc7a94b-b3f5-4e7a-bd3a-6d6f3e2534e2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C89",
+      "claim": "There were 26 targets in the 3D context and 16 targets in the 2D context.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 26 targets in the 3D context and 16 targets in the 2D context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "89728764-01a7-41b8-a59a-941b52987019",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C90",
+      "claim": "The two target sets included eight common targets, allowing for direct comparison of tuning between the two task contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The two target sets included eight common targets, allowing for direct comparison of tuning between the two task contexts (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental design shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "7db968c8-6dac-4ffd-8cf0-060334dec661",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C91",
+      "claim": "18 sessions from Monkey A and 11 from Monkey C were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed 18 sessions from Monkey A and 11 from Monkey C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "45140521-db05-4849-9e0e-d55182b9c567",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C92",
+      "claim": "Cursor movement was updated online every 33 ms with outputs from the decoders.",
+      "claim_type": "EXPLICIT",
+      "source": "With the fitted models of neural activity, cursor movement was updated online every 33 ms with outputs from the decoders as described in more detail in the Materials and methods section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "67fade4d-8038-436a-b7d0-e894fab78c5e",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "claim_id": "C93",
+      "claim": "For the 2D task, the z-component of the decoded movement was zeroed to constrain movement to the xy-plane.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 2D task, the z-component of the decoded movement was zeroed to constrain movement to the xy-plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dynamic range adaptation has been documented in sensory systems (visual, auditory, somatosensory) where neural tuning curves adjust to optimize information transmission about input stimuli within limited firing rate ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8-C12 establish the background knowledge about dynamic range adaptation in sensory systems, supported by multiple citations to established literature. These claims provide the foundational context for the study but do not represent novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "63fba324-13c8-4910-ab5c-92f5c8502ae6",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has shown that motor cortical neurons encode force and direction with specific tuning properties, including cosine-tuning relationships and force-dependent scaling of regression coefficients. The classical cosine tuning model predicts lower firing rate ranges for 2D versus 3D movements when preferred directions are not coplanar with the 2D space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 summarize prior literature on motor cortical encoding and make theoretical predictions based on established models. These are well-supported by citations and provide necessary background, but represent prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "2b253bf9-2821-4e0e-aa85-e67762be7fec",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Motor cortical neurons exhibited changes in tuning curve amplitude between 2D and 3D BCI tasks, with firing rate ranges in 2D approaching or exceeding those in 3D despite fewer targets. Azimuthal preferred directions remained stable, while 334/471 units (Monkey A) and 230/409 units (Monkey C) showed increased planar tuning range in 2D versus 3D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C27 present the core experimental observation with specific quantitative data from both subjects. The findings are supported by statistical tests (Moore test for preferred directions, Wilcoxon signed-rank and sign tests for tuning ranges) and visualized in Figure 2. The consistency across subjects and statistical significance support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "337f24f8-9dd2-4e17-b654-d2ecbe6b120b",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The tuning range changes between 2D and 3D contexts are robust across experimental variations, including reversed task order, different decoder types (PVA and OLE), and sessions with identical neural populations controlling the cursor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 demonstrate experimental rigor through control analyses shown in Figure 2 supplements. The consistency of results across these variations strengthens the main finding, though these are supporting rather than primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "5ebb19c0-72f0-4e5d-8b69-24d614efb453",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Repeated presentations of the same context showed slight decreases in tuning ranges (opposite direction to the 3D-to-2D increase), possibly due to fatigue or satiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 report a control observation from Figure 2 supplement 5. While C36 is speculative about the mechanism, the observation itself is data-supported and helps rule out alternative explanations for the main effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The tuning changes are most consistent with dynamic range adaptation rather than re-aiming or speed gain mechanisms. The data exhibit a dose-response effect where neurons with larger elevation angles show larger dynamic range changes (significant negative slopes: Monkey A P<10^-12, Monkey C P=0.00125), and lack the coordinated opposing changes predicted by re-aiming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 present the mechanistic analysis comparing three hypotheses. The dose-response relationship (C42-C43) is statistically significant and shown in Figure 4A-B. The absence of coordinated opposing changes (C41) is supported by the re-aiming analysis. However, the weighted linear regression approach could be better justified, and alternative explanations for the dose-response could be more thoroughly excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of full tuning ranges and re-aiming predictions shows that the majority of neurons behaved inconsistently with the re-aiming hypothesis. In both monkeys, more than half of neurons predicted to decrease dynamic range under re-aiming actually showed increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 provide additional evidence against the re-aiming mechanism through quantitative predictions and observations. The contingency analysis is clearly reported with specific numbers. However, the re-aiming analysis relies on optimization methods that could have multiple solutions, and the manuscript does not fully address this limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "c8a93f4b-169a-4024-94cb-2e7347890d61",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The adaptation process occurs rapidly, with exponential decay coefficients of 5.3 (3.2, 16.7) trials for Monkey A and 4.6 (3.2, 10.5) trials for Monkey C, corresponding to completion within seconds given ~1s trial duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 report the timecourse analysis from Figure 5 with specific quantitative results and confidence intervals. The exponential modeling is appropriate and the rapid timescale is well-documented. This distinguishes the effect from slower BCI learning processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "95ff7604-37bc-4f83-837e-56f536de06e2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dynamic range adaptation was more than halfway complete in both monkeys (adaptation metrics: 0.52\u00b10.11 for Monkey A, 0.68\u00b10.12 for Monkey C), though incomplete adaptation is not unusual even in sensory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 quantify the completeness of adaptation using a defined metric (Figure 6). The analysis appropriately excludes neurons with small denominators. The comparison to sensory systems (C57) provides useful context, though the metric itself has limitations acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "bafb2f67-37e5-4009-a2be-2d91a22b3205",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No evidence of dynamic range adaptation was observed in a hand-control version of the task with a third monkey.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 reports a negative result from Figure 7 comparing hand control to BCI. The statistical tests show no significant difference. However, this is a single subject with potentially different experimental conditions, limiting the strength of this comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "662b9ed5-4865-42ef-b7fd-3107ed789578",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The tuning changes in primary motor cortex are most consistent with dynamic range adaptation, demonstrating that this phenomenon is not limited to sensory regions or monotonic stimulus tuning curves, and may represent a canonical feature of neural encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 present the main conclusions of the study. C4-C6 are well-supported by the mechanistic analyses and data. C7 is more speculative ('may represent') but is appropriately qualified. The conclusion extends dynamic range adaptation to motor cortex with directional tuning, which is novel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "3f511a31-3f9e-4c87-ab23-515e00b44f76",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dynamic range adaptation in motor cortex differs from BCI learning in timescale (seconds vs. minutes-to-days), type of change (tuning depth only vs. including preferred direction), and learning pressure (none vs. performance impairment), suggesting it represents an additional degree of flexibility in motor system responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 distinguish the observed effect from BCI learning through multiple criteria. The distinctions are well-supported by data (C61, C63) and literature (C62, C64). C67 is speculative but appropriately framed. This analysis strengthens the interpretation of the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "7a2582a3-c1b2-4e63-8411-c139a397b410",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Several speculative explanations are proposed for why dynamic range adaptation was observed in BCI but not hand control, including differences in the number of contributing neurons, the proportion of control parameters changing, or fundamentally different control schemes. It is suggested that isometric force production may be a closer analog to BCI than overt reaching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C73 are explicitly speculative hypotheses about the BCI vs. hand control difference. While these are reasonable possibilities, they lack direct experimental support. The comparison to isometric force studies (C72-C73) is interesting but requires further testing. These represent discussion points rather than supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "18b240ba-facb-4f1c-9282-57b575b463f2",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dynamic range adaptation is distinguished from other context-dependent tuning changes by its predictability from information processing principles. Prior work has documented various forms of tuning changes in motor cortex, and some forms of dynamic range adaptation in sensory systems have been linked to divisive normalization mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 provide context from prior literature and distinguish the current findings. These are well-supported by citations and help position the work, but represent background knowledge and discussion rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "7d29738b-b5f7-4080-a95a-e7d238e579c6",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The results support the hypothesis that M1 neurons efficiently transmit contextually encoded information by adaptively utilizing their full dynamic range rather than a subset, allowing efficient encoding of task-relevant information in changing environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 present the broader interpretation of the findings in terms of information theory and efficient coding. While the connection to information theory is conceptually sound and supported by citations (C82-C83), the direct demonstration of information maximization is not provided. The interpretation is reasonable but goes beyond what is directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "91ea3587-69f9-4521-b149-62b816ad63ed",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The experimental methods involved two rhesus macaques with 96-channel arrays in motor cortex performing center-out tasks in 2D (16 targets) and 3D (26 targets) contexts with 8 common targets, analyzed across 18 sessions (Monkey A) and 11 sessions (Monkey C), with cursor updates every 33ms and z-dimension zeroed in 2D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21, C86-C93 describe the experimental methods and basic data characteristics. These are clearly reported and provide necessary methodological details. The methods appear sound, though some details about decoder adaptation and population stability could be clearer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    },
+    {
+      "id": "6d693a43-e250-4b24-b23e-ee0258554fea",
+      "content_id": "45893b0c-79d1-4fe0-91a2-7f4309f146d5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "BCI provides a powerful framework for studying motor control by fully specifying each neuron's effect on movement and obviating complicating factors like gravity and inertia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 describe advantages of the BCI approach, supported by citation. This is a valid methodological point but represents a general statement about BCI rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:48:27.242099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7149cee-9756-43b5-89eb-0c065862f967",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "ce4fc21a-a319-4f99-83ae-23134fe4a8da",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "67555f21-f6fd-4ce9-a569-d693055b50e4",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "3840a2e7-9032-4e8f-9b19-b190adc1eb64",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "f2596afa-aac5-4e70-94d0-46a7c0b27144",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "77bce746-09d5-4f06-9010-299062ef4b75",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "30f4e6c6-a75a-4a50-8cf2-56bd1ead8107",
+      "result_id": "e2ad90cd-291f-4215-a7b5-6fb4bf193fa6"
+    },
+    {
+      "claim_id": "a3e4b636-b3d6-4675-9b83-3c509f1e0ae1",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "4ae527dc-8699-466b-a31e-fa3690a9c397",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "bb072cd5-1770-4e59-9c42-732351fe3653",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "a3c8e292-ae1e-4e1f-a958-255c3d219e1d",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "8bc37509-45b9-4d38-bf37-52911f79b6aa",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "0ea0540b-2890-425f-b016-f16ed4bf3edc",
+      "result_id": "63fba324-13c8-4910-ab5c-92f5c8502ae6"
+    },
+    {
+      "claim_id": "b267feeb-18a7-4c73-aa01-633f25fe4c14",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "254b31d6-b0a5-4194-bf82-60e7eddc12f9",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "4cdf88b6-0448-4b26-bf42-b03804ebecd4",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "8acca07a-ab69-43f3-9039-2410397c473f",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "0e24ad1e-e894-489e-9a88-76dc9b0140fa",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "c94285e8-0004-46ec-9bca-cf7c84b08378",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "f7a0ef69-44a4-4d4b-ae0b-c5c9b1341eac",
+      "result_id": "2b253bf9-2821-4e0e-aa85-e67762be7fec"
+    },
+    {
+      "claim_id": "42d1b543-b69b-4102-b751-1363a1a3905f",
+      "result_id": "337f24f8-9dd2-4e17-b654-d2ecbe6b120b"
+    },
+    {
+      "claim_id": "1f069d98-e93c-45f5-a2f3-77bfcde01790",
+      "result_id": "337f24f8-9dd2-4e17-b654-d2ecbe6b120b"
+    },
+    {
+      "claim_id": "49b280ef-dc27-462e-9be5-9fecb53eeda9",
+      "result_id": "337f24f8-9dd2-4e17-b654-d2ecbe6b120b"
+    },
+    {
+      "claim_id": "61207fe4-f21c-43ca-aef4-86d3f13f4fdd",
+      "result_id": "5ebb19c0-72f0-4e5d-8b69-24d614efb453"
+    },
+    {
+      "claim_id": "f9387455-645c-458c-b50e-91efdbfe7c57",
+      "result_id": "5ebb19c0-72f0-4e5d-8b69-24d614efb453"
+    },
+    {
+      "claim_id": "ca190351-cc24-42fb-bedd-56f36a094609",
+      "result_id": "5ebb19c0-72f0-4e5d-8b69-24d614efb453"
+    },
+    {
+      "claim_id": "105f589b-68d2-42a2-8ac0-5c6788cd865d",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "9dda828c-0fda-43dd-a2b0-e66d4e734fa0",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "48486bf0-ebdc-40ef-8617-4d19abde1e34",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "cb39a211-dfe6-4df1-b0d9-f01a938b7214",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "3397ddb7-5550-4ee1-925f-e12a5887473e",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "72c946d3-d192-4301-ba4d-9879cfaf1a79",
+      "result_id": "106dc3b7-f18b-405b-9c56-7e2cef59cc55"
+    },
+    {
+      "claim_id": "38446e8c-b60c-466a-9945-f5657e64432d",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "8f472b8b-6d39-4d01-96d0-11f03f64a8c4",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "9676ee90-2383-4406-af41-03f31f5ac592",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "126490b1-623c-4932-aab8-72f50dcad619",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "210e9516-9411-405f-9f27-84e06c30d2f5",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "9d6caf3c-0a1f-47bc-b409-2c16b3e9fdb4",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "065a42bb-49a9-4d25-9589-06c1cca3dcbb",
+      "result_id": "da2ebe5e-7591-4dad-8dfb-48094359ffd2"
+    },
+    {
+      "claim_id": "c6de5bc7-567b-4c0e-b8ae-4c0732c789eb",
+      "result_id": "c8a93f4b-169a-4024-94cb-2e7347890d61"
+    },
+    {
+      "claim_id": "c8f401c5-1d23-426a-aa12-611429b0d37b",
+      "result_id": "c8a93f4b-169a-4024-94cb-2e7347890d61"
+    },
+    {
+      "claim_id": "d62e6d7c-ebe9-4748-aa23-753811d315fc",
+      "result_id": "c8a93f4b-169a-4024-94cb-2e7347890d61"
+    },
+    {
+      "claim_id": "9d7505e0-e41c-44f0-a520-5a7b6559bda9",
+      "result_id": "c8a93f4b-169a-4024-94cb-2e7347890d61"
+    },
+    {
+      "claim_id": "6c5f9e7b-30d9-4e19-92c9-c52c730bfecd",
+      "result_id": "95ff7604-37bc-4f83-837e-56f536de06e2"
+    },
+    {
+      "claim_id": "b8bdfbd7-df5e-42a6-a535-8bc3381af3ab",
+      "result_id": "95ff7604-37bc-4f83-837e-56f536de06e2"
+    },
+    {
+      "claim_id": "eb99b0ea-2592-4810-837c-35f409d0f2c4",
+      "result_id": "95ff7604-37bc-4f83-837e-56f536de06e2"
+    },
+    {
+      "claim_id": "8f0aa93e-45ad-4b47-9f1b-6d849866674e",
+      "result_id": "bafb2f67-37e5-4009-a2be-2d91a22b3205"
+    },
+    {
+      "claim_id": "af0b2dcc-e97b-428e-8b05-7c6e925793cb",
+      "result_id": "662b9ed5-4865-42ef-b7fd-3107ed789578"
+    },
+    {
+      "claim_id": "f99a0b14-a882-43cb-9b80-a3eea532f044",
+      "result_id": "662b9ed5-4865-42ef-b7fd-3107ed789578"
+    },
+    {
+      "claim_id": "8a9f0ce7-52e0-49be-9d86-40d3e75947bc",
+      "result_id": "662b9ed5-4865-42ef-b7fd-3107ed789578"
+    },
+    {
+      "claim_id": "ab3feff6-ad8d-428a-a832-219c1d99aee3",
+      "result_id": "662b9ed5-4865-42ef-b7fd-3107ed789578"
+    },
+    {
+      "claim_id": "cb95aa9a-c8f9-4170-ba88-45f442e301cd",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "ec84fdff-70fa-4539-9c97-edce024f03f4",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "b6cb039a-aae7-4b1a-b2ba-600631e1572d",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "b6762236-5c5c-4f6c-a6ba-51568c298fd2",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "1e5a630a-0ca8-4d5d-b7a8-efcdcb9a114e",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "ccd4d195-014a-417b-abd1-91fdf3b1000b",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "3f140947-d675-40f2-87cb-1b8a4eb24ec9",
+      "result_id": "3f511a31-3f9e-4c87-ab23-515e00b44f76"
+    },
+    {
+      "claim_id": "5be770f9-859d-4ca1-81ad-07337b9ca105",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "87f9eee3-39a1-41e4-aec7-7828bf5ceee8",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "732d291b-6271-49ca-9bad-29265306ca2d",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "790d7944-8d18-43f3-b654-c093caaf5c0e",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "1bbd4c66-aeb9-4920-8a08-d771b500bd2c",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "e7d74917-d9fb-458c-b987-d559625d0d21",
+      "result_id": "7a2582a3-c1b2-4e63-8411-c139a397b410"
+    },
+    {
+      "claim_id": "77398c87-33e0-45c3-a441-a6e1c72eeec1",
+      "result_id": "18b240ba-facb-4f1c-9282-57b575b463f2"
+    },
+    {
+      "claim_id": "6e9ae142-e705-4042-b55f-f5a8ccdb545b",
+      "result_id": "18b240ba-facb-4f1c-9282-57b575b463f2"
+    },
+    {
+      "claim_id": "6c866353-d17c-4d65-b8ea-da9899583b93",
+      "result_id": "18b240ba-facb-4f1c-9282-57b575b463f2"
+    },
+    {
+      "claim_id": "3e730918-8745-44d4-aea0-6d0912bff561",
+      "result_id": "18b240ba-facb-4f1c-9282-57b575b463f2"
+    },
+    {
+      "claim_id": "a630f750-c18c-4983-b52e-23c15c9d06c2",
+      "result_id": "18b240ba-facb-4f1c-9282-57b575b463f2"
+    },
+    {
+      "claim_id": "534840d5-57ba-4ba9-8bbf-b3ca7e497e95",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "32ec9415-cec0-4059-b14d-b3f8e51a5879",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "512b7aa0-523b-4871-b258-4136913c2a71",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "e4853a4b-9403-43f2-bf9e-1e63564d5f23",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "f241a136-8b3d-4fd4-a32e-09c87bd2fcfa",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "a64513d7-35b6-4eaf-b6bf-9e6796a61512",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "fbb2ee86-fe97-43de-a372-ef54d52fd39a",
+      "result_id": "7d29738b-b5f7-4080-a95a-e7d238e579c6"
+    },
+    {
+      "claim_id": "fbbe581a-98a1-4b6f-a675-26c04099b8f1",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "38a6cf5a-aa05-4a2e-8be2-0a8246e6d574",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "afadf7bd-e46f-4bd4-ab39-3f78c9d5b3ed",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "5ae1aae8-b69c-484c-872b-34538eec3fce",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "a3714cf2-94dd-4d9d-86fc-0d97c5414e1f",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "bbf47b2f-936a-4b7f-827f-bea3a93290de",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "cbc7a94b-b3f5-4e7a-bd3a-6d6f3e2534e2",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "89728764-01a7-41b8-a59a-941b52987019",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "7db968c8-6dac-4ffd-8cf0-060334dec661",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "45140521-db05-4849-9e0e-d55182b9c567",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "67fade4d-8038-436a-b7d0-e894fab78c5e",
+      "result_id": "91ea3587-69f9-4521-b149-62b816ad63ed"
+    },
+    {
+      "claim_id": "8a6023f3-906b-4f33-a124-bef9613cb52b",
+      "result_id": "6d693a43-e250-4b24-b23e-ee0258554fea"
+    },
+    {
+      "claim_id": "959c27a0-4b1a-4823-b63b-bcc723ef61bc",
+      "result_id": "6d693a43-e250-4b24-b23e-ee0258554fea"
+    }
+  ],
+  "comparisons": []
+}

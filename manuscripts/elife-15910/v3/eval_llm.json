@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C106",
+      "C107",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The crystal structure of the TAR:Tat:SEC complex was determined at 5.9 \u00c5 resolution using molecular replacement and DEN refinement, with final R/Rfree values of 0.211/0.311.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C50-C53 describe the structure determination at 5.9 \u00c5 resolution with appropriate refinement statistics. Claims C106-C120 provide detailed crystallographic methods including data collection, processing, and refinement procedures. The inclusion of weak reflections is justified by CC1/2 values (C116), and the absence of twinning is documented (C118). The methodology is sound and the resolution is appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C83"
+    ],
+    "result": "The TAR central loop (nucleotides 29-33, particularly G32 and G33) directly contacts the CycT1 TRM and the second Tat Zn2+-binding loop (residues 24-29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C54, C55, C57, C58, and C83 consistently describe specific interactions between the TAR loop and the protein complex surface. These claims are based on the crystal structure (C54-C58) and are consistent with SHAPE data showing protection of loop nucleotides C30-G34 (C39-C40, C43). The 5.9 \u00c5 resolution is sufficient to identify these contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C73",
+      "C84"
+    ],
+    "result": "AFF4 helix \u03b12 is stabilized upon TAR binding despite having no direct contacts with TAR, instead stabilizing the TAR-binding interface through interactions with CycT1 TRM and Tat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C34 show HDX protection of AFF4 helix \u03b12 upon TAR binding. Claims C56, C61-C63 demonstrate from the crystal structure that AFF4 does not directly contact TAR but interacts with CycT1 TRM and Tat. Claims C73, C84 provide mechanistic interpretation supported by mutagenesis data (C70-C77). The convergence of HDX, structural, and functional data strongly supports this indirect stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C72",
+      "C80"
+    ],
+    "result": "AFF4 enhances TAR binding to the SEC by 50-fold, increasing affinity from Kd = 19 nM (without AFF4) to Kd = 0.2-0.26 nM (with AFF4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C72, and C80 consistently report a 50-fold enhancement in TAR binding affinity in the presence of AFF4. This is supported by EMSA data (C72, C80) with specific Kd values. The quantitative measurements are consistent across multiple experiments and support the functional importance of AFF4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The Tat ARM (residues 49-57) was modeled to enter the TAR major groove between the bulge and central loop using integrative modeling constrained by the crystal structure, SHAPE, SAXS, and NMR data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C64-C69 describe computational modeling of the Tat ARM region that is not visible in the crystal structure (C60). The modeling uses appropriate restraints from NMR data (C152) and produces models with reasonable precision (2.5-6.3 \u00c5, C64) that fit SAXS data (\u03c7=0.86, C65). However, the lack of direct structural evidence for the ARM and the acknowledged limitations of the 5.9 \u00c5 resolution (C91) mean this remains a model rather than a directly observed structure. The model is plausible but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C82",
+      "C85"
+    ],
+    "result": "TAR binding to the SEC follows a bipartite model: the TAR central loop engages the CycT1 TRM and compact Tat core, while the TAR major groove (including the bulge) interacts with the extended Tat ARM and C-terminal CycT1 TRM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 state the bipartite binding model, which is supported by the crystal structure showing loop-protein contacts (C2-C3, C54-C58), the modeled ARM-bulge interactions (C68-C69, C85), and functional data showing AFF4 can rescue bulge mutants (C81-C82). The convergence of structural, modeling, and functional evidence supports this model, though the ARM interactions remain modeled rather than directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The Tat ARM showed no significant HDX protection upon TAR binding, indicating that ARM-TAR interactions are mediated primarily by side chains without extensive main-chain hydrogen bonding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report the lack of HDX protection for the Tat ARM and provide a mechanistic interpretation. This observation is consistent with the lack of electron density for the ARM in the crystal structure (C60) and with the known role of arginine side chains in RNA binding. The interpretation that side-chain interactions dominate is reasonable and consistent with prior NMR studies of Tat-TAR interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C46",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SHAPE analysis of the HIV-1 5'UTR with Tat:AFF4:P-TEFb shows significant reactivity changes in the TAR region (bulge A17, A22-U25, loop C30-A35), indicating stabilization of these regions upon SEC binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42-C43 report specific SHAPE changes in the TAR region upon protein binding. Claims C133-C139 describe the SHAPE methodology in detail. Claim C46 interprets reduced SHAPE reactivity as stabilization through direct contacts, which is a standard interpretation supported by citation C45. The SHAPE data are consistent with the crystal structure showing contacts in the loop region and provide complementary information about RNA flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "SAXS analysis shows that the TAR complex has an increased radius of gyration (RG increases by 2.8 \u00c5) and is slightly less compact than the apo complex, with the modeled structure fitting the experimental SAXS data (\u03c7=0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 report SAXS-derived parameters showing expansion upon TAR binding. Claims C140-C150 provide detailed SAXS methodology, including appropriate controls for concentration-dependent effects (C147-C149). The fit of the modeled structure to SAXS data (\u03c7=0.86, C65, C150) is reasonable. The SAXS data provide independent validation of the overall complex architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Mutagenesis of AFF4 helix \u03b12 surface residues (E61A, K63A) shows modest 2-3-fold reductions in TAR binding, and corresponding AFF1 mutations reduce HIV-1 LTR activation by 4-6-fold, supporting an indirect stabilization role rather than direct TAR contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 report mutagenesis data from EMSAs and luciferase assays showing that AFF4/AFF1 helix \u03b12 mutations have modest effects on TAR binding and transcription. Claims C155-C157 describe the EMSA methodology. The small effects of surface mutations (C73) are consistent with the structural observation that AFF4 does not directly contact TAR (C56, C61). The functional data support the proposed indirect stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TAR bulge mutants (G21-C41\u2192AU, A22-U40\u2192UA, U23\u2192C) show strongly reduced binding to Tat:P-TEFb alone, but AFF4 rescues binding to within 2-10-fold of wild-type TAR affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 report EMSA data showing that AFF4 can rescue binding of TAR bulge mutants. Claim C82 interprets this as consistent with the bulge being distal to the well-ordered Tat-SEC epitope. This functional data supports the bipartite binding model and the proposed role of AFF4 in stabilizing the core TAR-binding interface. The rescue effect is substantial and reproducible (experiments in triplicate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The HIV-1 TAR:Tat:AFF4:P-TEFb structure differs significantly from the EIAV TAR:CycT1-Tat fusion structure, with differences potentially reflecting biological variation or structural artifacts in the EIAV structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 compare the HIV-1 structure with a published EIAV structure and note significant differences, particularly in the Tat ARM conformation and the absence of AFF4 in the EIAV structure. Claim C89 notes that the EIAV structure is difficult to reconcile with the HDX and functional data presented here. Claim C90 offers speculation about the reasons for differences. The comparison is appropriate and highlights important differences between the systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The 5.9 \u00c5 resolution structure has limitations in defining side-chain conformations and extended main-chain segments, but provides a useful starting model for understanding the TAR:Tat:SEC complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 acknowledge the limitations of the 5.9 \u00c5 resolution structure and the complementary techniques (SAXS, HDX, SHAPE). This is an appropriate and honest assessment of the data quality and the need for future high-resolution structures. The authors correctly position their work as providing important insights while recognizing its limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background and significance: HIV-1 latency is a major obstacle to eradication, and understanding the Tat:SEC:TAR complex is important for developing therapeutic strategies targeting HIV-1 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29 provide established background on HIV-1 biology, transcription, and the SEC complex, all supported by appropriate citations. Claims C94-C97 discuss the therapeutic implications. These claims establish the context and significance of the work and are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Detailed methods for protein expression, RNA preparation, crystallization, HDX-MS, SHAPE, SAXS, and EMSA are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C132 provide comprehensive methodological details for all experimental approaches. The methods are described in sufficient detail for reproducibility and follow standard protocols with appropriate citations. The quality controls (e.g., RNA purity C105, HDX controls C131-C132) are appropriate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1319 @@
+{
+  "submission": {
+    "id": "0ef7ae39-60b2-4f97-9835-d7853741ac78",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:21:34.427070Z",
+    "updated_at": "2025-11-30T23:21:34.427070Z"
+  },
+  "content": [
+    {
+      "id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "submission_id": "0ef7ae39-60b2-4f97-9835-d7853741ac78",
+      "content_type": "manuscript",
+      "content_text": "# DNA-mediated association of two histone-bound complexes of yeast Chromatin Assembly Factor-1 (CAF-1) drives tetrasome assembly in the wake of DNA replication\n\n## Authors\n\n- Francesca Mattiroli<sup>1</sup> ([ORCID: 0000-0002-1574-7217](https://orcid.org/0000-0002-1574-7217)) \u2020\n- Yajie Gu<sup>1</sup> ([ORCID: 0000-0002-1514-1477](https://orcid.org/0000-0002-1514-1477))\n- Tejas Yadav<sup>3</sup>\n- Jeremy L Balsbaugh<sup>5</sup>\n- Michael R Harris<sup>4</sup>\n- Eileen S Findlay<sup>1</sup>\n- Yang Liu<sup>1</sup>\n- Catherine A Radebaugh<sup>2</sup>\n- Laurie A Stargell<sup>2</sup>\n- Natalie G Ahn<sup>7</sup>\n- Iestyn Whitehouse<sup>4</sup> ([ORCID: 0000-0003-0385-3116](https://orcid.org/0000-0003-0385-3116))\n- Karolin Luger<sup>1</sup> ([ORCID: 0000-0001-5136-5331](https://orcid.org/0000-0001-5136-5331)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Biochemistry Howard Hughes Medical Institute, University of Colorado Boulder Boulder United States\n2. Department of Biochemistry and Molecular Biology Colorado State University Fort Collins United States\n3. Weill Cornell Graduate School of Medical Sciences New York United States\n4. Molecular Biology Program Memorial Sloan Kettering Cancer Center New York United States\n5. Department of Chemistry and Biochemistry University of Colorado Boulder Boulder United States\n6. Institute for Genome Architecture and Function Colorado State University Fort Collins United States\n7. Biofrontiers Institute University of Colorado Boulder Boulder United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNucleosome assembly in the wake of DNA replication is a key process that regulates cell identity and survival. Chromatin assembly factor 1 (CAF-1) is a H3-H4 histone chaperone that associates with the replisome and orchestrates chromatin assembly following DNA synthesis. Little is known about the mechanism and structure of this key complex. Here we investigate the CAF-1\u2022H3-H4 binding mode and the mechanism of nucleosome assembly. We show that yeast CAF-1 binding to a H3-H4 dimer activates the Cac1 winged helix domain interaction with DNA. This drives the formation of a transient CAF-1\u2022histone\u2022DNA intermediate containing two CAF-1 complexes, each associated with one H3-H4 dimer. Here, the (H3-H4)2 tetramer is formed and deposited onto DNA. Our work elucidates the molecular mechanism for histone deposition by CAF-1, a reaction that has remained elusive for other histone chaperones, and it advances our understanding of how nucleosomes and their epigenetic information are maintained through DNA replication.\n\n## Introduction\n\nDynamic assembly and disassembly of nucleosomes regulates accessibility to the genome during the processes of DNA transcription, replication and repair. DNA replication constitutes a particularly challenging context, as nucleosomes and the epigenetic information they encode need to be reestablished and duplicated onto daughter strands (Alabert and Groth, 2012). This process involves a number of histone chaperones that operate through a network of sequential interactions (Groth et al., 2007; Huang et al., 2015; Jasencakova et al., 2010; Richet et al., 2015; Saredi et al., 2016; Smith and Stillman, 1989; Tyler et al., 1999). Histone chaperones bind histones (Elsasser and D'Arcy, 2013), and are responsible for the maintenance of nucleosome density and the faithful inheritance of the epigenetic information.\n\nWhile knowledge of how histone chaperones bind histones is steadily increasing (Huang et al., 2015; Mattiroli et al., 2015; Richet et al., 2015; Ricketts et al., 2015; Saredi et al., 2016), the mechanism and structural transitions required for histone deposition onto DNA remain unknown. This is a non-trivial process in light of the complex architecture of the histone octamer in the nucleosome, requiring the ordered deposition of histone pairs. This is particularly relevant for the first step of nucleosome assembly, the deposition of the (H3-H4)2 tetramer (tetrasome formation).\n\nParental and newly-synthesized H3-H4 transition between a dimeric and a tetrameric state, while replication-coupled histone chaperones distribute them onto the daughter strands during DNA replication (Campos et al., 2010; Clement and Almouzni, 2015; English et al., 2006; Huang et al., 2015; Richet et al., 2015). Current evidence favors a conservative model for H3-H4 inheritance, where parental (H3-H4)2 tetramers are not split and distributed onto the daughter strands but rather deposited as one unit (Xu et al., 2010), but alternative models have also been proposed (Tagami et al., 2004).\n\nCAF-1 is the key nucleosome assembly factor associated with DNA replication (Smith and Stillman, 1989). CAF-1 directly interacts with the replisome via the processivity factor PCNA (Krawitz et al., 2002; Moggs et al., 2000; Rolef Ben-Shahar et al., 2009; Shibahara and Stillman, 1999; Zhang et al., 2000) and bridges interactions with epigenetic factors (Loyola et al., 2009; Murzina et al., 1999; Quivy et al., 2008). The unique role of CAF-1 in integrating chromatin assembly with DNA synthesis and epigenetic signaling makes it indispensable for the maintenance of cell identity and for life in multicellular organisms (Barbieri et al., 2014; Cheloufi et al., 2015; Houlard et al., 2006; Ishiuchi et al., 2015; Nakano et al., 2011; Song et al., 2007). In yeast, CAF-1 deletion is viable but results in aberrant transcriptional silencing programs and sensitivity to DNA damage (Kaufman et al., 1998).\n\nCAF-1 is a histone H3-H4 chaperone, composed of three distinct subunits, all of which are conserved from yeast (named Cac1, Cac2 and Cac3) to humans (Almouzni and M\u00e9chali, 1988; Kaufman et al., 1995, 1997; Smith and Stillman, 1989; Tyler et al., 1999; Verreault et al., 1996). Previous biochemical studies have suggested that one CAF-1 complex can bind more than one H3-H4 dimer (Liu et al., 2012), and other studies have proposed models where CAF-1 dimerization may be important for its function in vivo (Nakano et al., 2011; Quivy et al., 2001). To date, the mechanism by which CAF-1, and indeed any histone chaperone, assembles the (H3-H4)2 tetramer onto DNA is unknown. Understanding how CAF-1 deposits H3-H4 is essential for our understanding of the mechanisms that govern the inheritance of epigenetic modifications and epigenome maintenance.\n\nHere, we describe the mechanism by which CAF-1-mediates deposition of the (H3-H4)2 tetramer onto DNA. A coordinated sequence of events is set in motion by H3-H4 binding to CAF-1, and promoted by CAF-1\u2022DNA interaction. The mechanism culminates in the DNA-mediated association of two CAF-1\u2022H3-H4 complexes to form the (H3-H4)2 tetramer, which is then transferred to DNA. These findings elucidate the histone deposition mechanism by this key histone chaperone complex, with significant implications on our understanding of chromatin propagation in DNA replication.\n\n## Results\n\n### tCAF-1 is sufficient for nucleosome assembly in vitro\n\nWhether recombinant CAF-1 assembles nucleosomes in vitro in absence of the replication machinery or other nuclear proteins remains an open question (Gaillard et al., 1996; Kadyrova et al., 2013; Kaufman et al., 1995; Smith and Stillman, 1991), which we set out to resolve in a purified in vitro system. We developed a quantitative nucleosome assembly assay (NAQ). Commonly used nucleosome assembly assays rely on native gel-based readouts, where the formation of the canonical nucleosome band is monitored over a range of histone chaperone concentrations. This readout is not suitable for proteins that bind DNA or the histone\u2022DNA products, such as FL CAF-1 (Figure 1a, lanes 3\u20136, and Figure 1\u2014figure supplement 1a). Therefore, we added a Micrococcal Nuclease (MNase) digestion step that allows us to monitor the DNA protection pattern induced by histone deposition. A further DNA purification step and addition of a DNA loading control allows accurate size determination and quantification of the recovered DNA fragments, hence the formation of nucleosomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig1-v3.jpg)\n\n**Figure 1.:** (a) Products from the nucleosome assembly assay on 207 bp DNA, with FL CAF-1 or tCAF-1. DNA is 200 nM, (H3\u2013H4)2\u00a0200 nM and H2A-H2B-AttoN647 400 nM; 100-200-400-800 nM CAF-1 is titrated. Assemblies were analyzed by native PAGE. (b) Products of MNase digestion performed on samples shown in panel a, after DNA purification. The 207 bp band in lane 1 results from nonproductive association of histones with DNA that renders it MNase-resistant. The disappearance of the 207 bp protection as CAF-1 is titrated demonstrates the ability of CAF-1 to relieve non-specific histone-DNA complexes, as observed for other chaperones. (c) Quantification of protected nucleosomal DNA (126\u2013160 bp) obtained from the samples shown in panel\u00a0a and b. The reference DNA is used to normalize amounts in each lane. Mean \u00b1 SD is shown for at least three repeats. The data used for this panel is included in Figure 1\u2014source data 1. (d) Bioanalyzer electropherograms of protected DNA fragments from nucleosome assembly with 400 nM FL CAF-1 and tCAF-1 shown in b, with controls from salt-assembled nucleosomes (Nuc) and a no-chaperone sample.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) FL CAF-1 binds DNA that is not assembled into nucleosomes. DNA and salt-assembled nucleosomes (Nuc) are 50 nM; CAF-1 was titrated from 50-100-200-400 nM. (b) DNA protection at 126\u2013160 bp from the NAQ assay is specific for nucleosomes and hexasomes. Left panel: 6% PAGE of NAQ control reactions on 207 bp of DNA. Right panel: products of the MNase digestion performed on the same samples, after DNA purification. The black box highlights the control for the FL CAF-1\u2022DNA and tCAF-1\u2022DNA complexes, which show no significant protection after MNase treatment. These controls (lanes 5\u20136 on the left gel and 6\u20137 on the right gel) demonstrate that DNA protection from MNase treatment is a result of nucleosome formation. The other controls confirm that deposition of either H3-H4 (lanes 10\u201312 on the left gel) or H2A-H2B (lanes 8\u20139 and 13 on the left gel) do not lead to significant DNA protection pattern. (c) In addition to nucleosomes, no significant products are made by CAF-1 in the NAQ assay. NAQ assay quantification of protected bands below 126 bp (left panel) and above 160 bp (right panel), from the data shown in Figure 1c. The dashed line indicates the amount of nucleosome bands (i.e. 120\u2013160 bp protection) assembled by CAF-1. The data shown\u00a0in this panel is included in Figure 1\u2014source data 1. Error bars show the SD from at least three replicates. (d) H2A-H2B do not require histone chaperones to be incorporated into pre-assembled tetrasomes to form hexasome and nucleosomes. tCAF-1 has no additional effect on H2A-H2B association with the tetrasome. (e) CAF-1 does not distinguish between yeast and Xenopus laevis histones, but has significantly lower affinity for H2A-H2B compared to H3-H4. Competition assays were performed with 10 nM of FL CAF-1\u2022DMH3-H4 complex as a probe, where H4 was labeled with Alexa488 on T71C. Unlabeled Xenopus laevis or yeast histones were titrated to follow competition of the labeled H3-H4 dimer. Fluorescence quenching was monitored. Error bars show the S.E.M. from three independent measurements.\n\nWe used the NAQ assay to study the in vitro nucleosome assembly activity of FL CAF-1 and of a truncated tCAF-1 complex lacking the first 233 amino acids in Cac1, but containing all the determinants for CAF-1 subunit assembly and histone binding (Mattiroli et al., 2017). The nucleosome assembly reactions on 207 bp DNA (Figure 1a) suggested efficient nucleosome formation by both FL and tCAF-1. Notably, tCAF-1 doesn\u2019t bind DNA or its products (Figure 1a, lanes 7\u201310), suggesting that the N-terminal portion of Cac1 mediates DNA binding observed with FL CAF-1. The assembly reactions were subjected to MNase digestion, and the purified DNA was analyzed by native PAGE (Figure 1b) and quantified using a Bioanalyzer (Agilent) (Figure 1c\u2013d). DNA fragments of about 125\u2013160 bp accumulated with both CAF-1 constructs, similar to what was obtained with salt-assembled nucleosomes (Nuc, Figure 1b\u2013d). To validate that these DNA fragments are representative of nucleosomes and not of other DNA\u2022protein complexes, we performed a number of control reactions, including analysis of the CAF-1\u2022DNA complexes, none of which result in significant DNA protection under these conditions (Figure 1\u2014figure supplement 1b, box).\n\nThese experiments demonstrate that tCAF-1 and FL CAF-1 are both active and efficient nucleosome assembly factors in absence of other nuclear proteins. Our results also indicate that the N-terminal portion of Cac1, which in vivo is associated with PCNA, is not required for the nucleosome assembly activity, and that tCAF-1 contains all the requisite components for histone deposition. Nucleosome assembly activity increases in a CAF-1 dose dependent manner, and reaches its maximum at a two-fold excess of CAF-1 complex per (H3-H4)2 tetramer (Figure 1c). No protected bands were detected above or below the nucleosomal DNA fragments (Figure 1\u2014figure supplement 1c), confirming that the primary product of CAF-1 are nucleosomes and hexasomes. Because H2A-H2B can spontaneously associate with tetrasomes in vitro (Figure 1\u2014figure supplement 1d), and because CAF-1 itself has significantly lower affinity for H2A-H2B compared to H3-H4 (Figure 1\u2014figure supplement 1e), it appears that the primary role of CAF-1 is to promote the formation of an ordered (H3-H4)2\u2022DNA complex, the tetrasome, as noted previously (Smith and Stillman, 1991).\n\n### CAF-1 has one binding site for a H3-H4 dimer\n\nTo understand the mechanism of CAF-1 mediated nucleosome assembly, we first investigated how it binds histones. On CAF-1, the H3-H4 binding site is formed by the acidic region of Cac1 (Liu et al., 2016), in conjunction with Cac1-bound Cac2 (Mattiroli et al., 2017). Published data suggest that CAF-1 facilitates the formation of a (H3-H4)2 tetramer (Liu et al., 2012, 2016). H3-H4 exists in an equilibrium between dimeric and tetrameric states in absence of DNA or a histone chaperone. The estimated dissociation constant for tetramerization of the H3-H4 dimer is considerably weaker than the affinity of H3-H4 for DNA or for the histone chaperones (Donham et al., 2011). We therefore tested whether CAF-1 binds H3-H4 in its dimeric or tetrameric form. We used sedimentation velocity analytical ultracentrifugation (SV-AUC) to characterize the complexes formed between CAF-1 and histone H3-H4 combined at different molar ratios (1:1 or 1:2 CAF-1 to H3-H4 dimer), comparing wild type H3-H4 (WTH3-H4) with a constitutively dimeric H3-H4 mutant (DMH3-H4) that binds CAF-1 with the same affinity as WTH3-H4 (Figure 2\u2014figure supplement 1a\u2013b). Adding a 1:1 ratio of WTH3-H4 or DMH3-H4 dimer to CAF-1 resulted in the same homogenous shifts in S20,w value, seen both with FL and tCAF-1 (Figure 2a and Figure 2\u2014figure supplement 1c). Adding two WTH3-H4 dimers per CAF-1 molecule results in further apparent increase in size, possibly representing binding of a WT(H3-H4)2 to one CAF-1. On the contrary, with DMH3-H4, which is unable to form a tetramer, we observed no additional increase (Figure 2a and Figure 2\u2014figure supplement 1c). These experiments were performed at 4 \u00b5M concentration where WTH3-H4 is expected to be primarily tetrameric, while DMH3-H4 remains a dimer. These data suggest that CAF-1 has a single binding site for H3-H4 and that this interaction may not affect tetramerization of (H3-H4)2, as a shift to higher S20,w value is not observed with a dimeric DMH3-H4.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig2-v3.jpg)\n\n**Figure 2.:** (a) van Holde-Weischet analysis of SV-AUC runs performed with tCAF-1 and WTH3-H4, titrated in a 1:1 or 1:2 molar ratio of CAF-1 to H3-H4 dimer (orange and purple). A constitutively dimeric form of H3-H4, DMH3-H4 (green) was analyzed likewise. (b) FRET-based Job plot assay with tCAF-1 and H3-H4 shows a single binding event with WT or DMH3-H4 dimers, while with XL(H3-H4)2 a stoichiometry of two CAF-1 complexes per tetramer is observed (total protein concentration was kept at 150 nM, where WT H3-H4 is dimeric). Two independent measurements are depicted; the data points are mostly overlapping. (c) SEC-MALS experiment of tCAF-1 alone or in complex with WT or XL(H3-H4)2. The sample containing XL(H3-H4)2 shows an additional peak at\u00a0~300 kDa. The protein elution traces (refractive index, RI) refer to the right y axis, the calculated molar masses refer to the left y axis. Validation that tCAF-1 binds WTH3-H4 on SEC is shown in Figure 2\u2014figure supplement 1g. (d) Protection of regions on the H3-H4 dimer (from PDB: 1AOI) upon interaction with tCAF-1, based on HX-MS experiments (Figure 2\u2014figure supplement 2). Red areas: regions with complete protection on both WT and DMH3 upon interaction with tCAF-1 (near 0% uptake upon binding); orange regions: sites of intermediate HX protection upon interaction with tCAF-1. Blue indicate s\u00a0regions with no significant protection in H3, upon binding to tCAF-1. H3 \u03b1N is displayed with transparency because it is likely in a different conformation in the free H3-H4 dimer; no peptide coverage was observed for this region.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) DMH3-H4 is primarily a dimer, even under conditions that favor the tetrameric state of WTH3-H4. Gel filtration of WTH3-H4 and DMH3-H4 in refolding buffer (2M NaCl). (b) tCAF-1 binds equally well to WT or DMH3-H4, determined by fluorescence polarization (Kd\u00a0~0.5\u20130.7 nM). Error bars show the S.E.M. from three independent measurements. (c) van Holde-Weischet analysis of SV-AUC experiments performed with FL CAF-1 and H3-H4 (wild type and DMH3-H4), combined in a 1:1 or 1:2 molar ratio of CAF-1 to H3-H4 dimer. An increased S-value upon addition of a second equivalent of H3-H4 dimer (but not with a second DM-H3H4) indicates that a (H3\u2013H4)2 tetramer may\u00a0form on CAF-1. (d) SDS PAGE of histones before and after the chemical crosslinking to form XL(H3-H4)2. (e) tCAF-1 binds equally well to WT or XL(H3-H4)2, as determined by fluorescence polarization (Kd\u00a0~0.5\u20130.9 nM). Error bars show the S.E.M. from three independent measurements. (f) FRET-based Job plot experiment, using FL CAF-1 and either WT or DMH3-H4, shows a single binding event for both histone complexes (protein concentration was kept at 150 nM, where WT histones are dimeric). With XL(H3-H4)2, we observed a stoichiometry of two CAF-1 complexes per tetramer. Error bars show the SEM of two independent titrations. (g) Size-exclusion chromatography (S200 10/300 GL) and SDS PAGE of tCAF-1\u2022WTH3-H4 complex. The buffer contained 30 mM Tris pH 7.5, 100 mM NaCl, 1 mM EDTA, 1 mM TCEP. (h) Schematics to show the binding stoichiometry of CAF-1 to different H3-H4 isoforms.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) HX-MS heatmap of the differences in deuterium uptake per H3 (top) or H4 (bottom) peptide when binding to tCAF-1 (60 min). The difference was calculated as percent uptake in free H3-H4 (unbound form) minus the percent uptake in tCAF-1\u2022H3-H4 (bound form). Data related to WTH3-H4 histones are shown in the upper row; DMH3-H4 is shown below. The differences in uptake observed between WT and DMH3-H4 originate primarily from the fact that DMH3-H4 histones start less stably folded than the WTH3-H4 (DeNizio et al., 2014). CAF-1-bound DM or WTH3-H4 display highly similar deuterium uptake, although few peptides show differences, suggesting the possibility for minor dynamic changes on the histones upon CAF-1 binding (Supplementary file 1). (b) Competition assay to measure the binding properties of H3-H4 mutants designed to interfere with the CAF-1 interaction. The probe was 10 nM tCAF-1\u2022DMH3-H4 complex. The biggest difference was observed with DM H3 RFQ83AFA \u2013 H4 D68A (mutant residues mapped in dark red on the H3-H4 dimer structure on the right), which reduced the affinity 5-fold. Error bars show the SEM from three experiments. (c) Heatmap showing the differences in deuterium uptake at 60 min for Cac1, Cac2 and Cac3 peptides analyzed in HX-MS experiments upon addition of either WT (top) or DM (bottom) H3-H4. The difference was calculated as percent uptake in tCAF-1 (unbound form) minus percent uptake in tCAF-1\u2022H3-H4 (bound form). Supplementary file 1 contains the data used to generate the HX-MS heatmaps. The deuterium uptake was not significantly different at shorter time points.\n\nTo further test this hypothesis, we used FRET-based Job plot experiments. Here, we used wild-type histones, constitutively dimeric DMH3-H4 and constitutively tetrameric XL(H3-H4)2 prepared by cross-linking two H3-H4 dimers via a single cysteine residue on H3K115C (D'Arcy et al., 2013). This reaction yields a XL(H3-H4)2 preparation where about 80% of the histones are tetramers (Figure 2\u2014figure supplement 1d), in a conformation that is compatible with the (H3-H4)2 observed in the nucleosome structure. Notably, XL(H3-H4)2 binds to FL or tCAF-1 with the same affinity as WTH3-H4 (Figure 2\u2014figure supplement 1e). In stoichiometry experiments, performed under conditions where WTH3-H4 is primarily in its dimeric form, we observe one CAF-1 complex binding to one WT or DMH3-H4 dimer, while two CAF-1 complexes are bound to one XL(H3-H4)2 tetramer. This is observed for both FL and tCAF-1 (Figure 2b and Figure 2\u2014figure supplement 1f), supporting the idea that each CAF-1 complex has a single binding site for one H3-H4 dimer and confirming that the Cac1 N-terminus has no role in H3-H4 binding. Further confirmation for this stoichiometry comes from SEC-MALS (size exclusion chromatography coupled to multi-angle light scattering) experiments with tCAF-1, where significant increases in apparent molar mass are observed with XL(H3-H4)2 but not with WTH3-H4, compatible with two tCAF-1 complexes binding to the XL(H3-H4)2 tetramer (Figure 2c and Figure 2\u2014figure supplement 1g).\n\nAltogether, these experiments indicate that each CAF-1 complex has a single binding site for one H3-H4 dimer, and that CAF-bound H3-H4 is still able to tetramerize, either with or without its own bound CAF-1 complex (Figure 2\u2014figure supplement 1h). These assemblies are not stable enough to be isolated using WTH3-H4, but are observed with XL(H3-H4)2. This suggests that the four-helix bundle formed by two H3 molecules in the (H3-H4)2 tetramer is important for this complex formation and perhaps the only point of contact between the two CAF-1 moieties.\n\nTo further characterize the tCAF-1\u2022H3-H4 complex, we used hydrogen-deuterium exchange coupled to mass spectrometry (HX-MS). CAF-1 binding to H3-H4 induces protection from exchange of an extended area on both WT and DMH3-H4, as opposed to a distinct region of protection. This suggests that CAF-1 binding to histones elicits a global conformational effect, which was also observed for other chaperone-histone complexes (D'Arcy et al., 2013; DeNizio et al., 2014) (Figure 2d and Figure 2\u2014figure supplement 2a). The most significant changes are clustered at the \u03b11-\u03b12 region of both histones (Figure 2d and Figure 2\u2014figure supplement 2a). This global conformational effect makes it difficult to identify the direct binding interfaces on H3-H4 (Figure 2\u2014figure supplement 2b). Importantly, no significant changes in HX were detected in the H3 region mediating H3-H4 tetramerization through a four-helix bundle (\u03b13; aa 111\u2013126) (Figure 2d and Figure 2\u2014figure supplement 2a), confirming our interpretation that this region is exposed and available for tetramer formation in the CAF-1\u2022H3-H4 complex. Together, these data indicate that CAF-1 binds to one H3-H4 dimer that results in its overall stabilization, and that permits tetramerization in its CAF-1 bound form.\n\n### H3-H4 binding activates DNA binding by the Cac1 winged helix domain (WHD)\n\nIn our HX-MS experiments we observed HX changes distributed throughout all three CAF-1 subunits upon H3-H4 binding, with no direct evidence pointing towards a specific interface (Figure 2\u2014figure supplement 2c). The observed HX changes are in agreement with recently published data from similar HX-MS experiments using the FL CAF-1 complex (Liu et al., 2016), confirming that deleting the N-terminal portion of Cac1 has no significant effect on histone binding. Moreover, by using both WT and DMH3-H4, we further support the idea that the mutations in DMH3-H4 do not affect its interaction with CAF-1 (Figure 2\u2014figure supplement 2c). The broadly distributed HX changes suggest extensive structural rearrangements in the CAF-1 complex upon histone binding, with likely implications for the mechanism of histone deposition. In particular, we noticed that the C-terminal Cac1 WHD, recently identified as a DNA\u00a0binding domain (Zhang et al., 2016), showed deprotection upon histone binding in the HX-MS analysis (Figure 2\u2014figure supplement 2c), also seen when FL CAF-1 was used (Liu et al., 2016). Interestingly, tCAF-1 does not bind DNA in absence of histones, despite containing a functional WHD domain (Figure 1\u2014figure supplement 1b and below).\n\nWe therefore asked if an intramolecular interaction between the histone binding region and the WHD may be masking the DNA\u00a0binding activity of tCAF-1 in absence of histones. The acidic region, which constitutes part of the histone binding interface (Mattiroli et al., 2017; Liu et al., 2016), is a likely candidate for mediating this intramolecular interaction due to its complementary charges to the basic WHD. Indeed, mutant tCAF-1 complexes in which the Cac1 acidic region was neutralized or deleted, namely tCAF_Nac and tCAF_\u2206ac respectively, gained DNA\u00a0binding activity (Figure 3a\u2013b, lanes 5\u201310). This indicates that in absence of histones the WHD may be inhibited by an intramolecular interaction with the acidic region on Cac1, a component of the histone binding module (Liu et al., 2016) together with Cac2 (Mattiroli et al., 2017) (histone binding module is referred to as HBM, Figure 3a and Figure 3\u2014figure supplement 1a). We therefore performed a competition experiment by adding the HBM of CAF-1, or only Cac2 as control, to DNA-bound isolated WHD. Strikingly, the HBM could compete the WHD away from DNA, while Cac2 alone could not (Figure 3c). Moreover, using in solution cross-linking experiments we were able to trap the complex between the WHD and the HBM, a complex that contains the acidic region and Cac2, but not between the WHD and Cac2 (Figure 3\u2014figure supplement 1b). Together, these data suggest that the Cac1 acidic domain engages in an inhibitory intramolecular interaction with the WHD, thereby masking its DNA binding capacity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig3-v3.jpg)\n\n**Figure 3.:** (a) Schematic of the constructs and complexes used in this and subsequent figures. Cac1 domains that are combined with full length Cac2 and/or Cac3 as indicated, are depicted. PIP stands for PCNA binding peptide; tCAF_WHD** contains mutations at K564E and K568E. tCAF_\u2206ac contains a deletion of residues 397\u2013431 in Cac1, while in tCAF_Nac aa 397\u2013431 were replaced with a Gly-Ser-Leu linker. KER identifies a Lys-Arg-Glu rich region. The Cac2 and Cac3 binding regions were mapped using HX-MS. Gel filtration profiles and SDS PAGE of these complexes are shown in Figure 3\u2014figure supplement 1a. (b) The acidic domain of Cac1 inhibits DNA binding by tCAF-1. 100 nM 33 bp DNA (33DNA) was mixed with tCAF-1, isolated WHD, or the tCAF-1 complexes mutated in the acidic region (depicted in a). CAF-1 complexes are titrated as 1\u20130.5-0.25\u20130.125 \u00b5M. (c) The acidic domain competes WHD away from DNA. The WHD was kept constant at 1 \u00b5M and DNA at 100 nM. Cac2 and HBM were titrated as 4-2-1-0.5\u20130.25 \u00b5M. (d) Histone binding releases the DNA\u00a0binding activity of tCAF-1. EMSA performed with 100 nM 18 bp DNA (18DNA). tCAF-1 is titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and was added either alone (in control lanes) or as a 1:1 complex with WTH3-H4 (H3-H4 dimer concentration) to the DNA. Alexa488-labeled tCAF-1 was used in lanes 1\u20135, while Alexa488-labeled H3-H4 were used in lanes 6\u201318).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Gel filtration profiles (S200 10/300 GL column) for the complexes described in Figure 3a. SDS PAGE analysis of the purified samples. The HBM sample is also shown on SDS PAGE in panel b) lane 11. All the complexes do not show any aggregation and elute from gel-filtration at the expected volume for their size, indicating that the stoichiometry of the subunits is not altered. (b) In solution cross-linking experiments with 5 \u00b5M of either HBM [Cac1(380-483)\u2022Cac2] or Cac2 alone and variable amounts of WHD (0-5-10-20 \u00b5M). DSS was added at 2 mM and incubated for 30 min, before quenching and analysis by SDS PAGE. (c\u2013d) WHD mutation or deletion does not alter the affinity for H3-H4. Affinity measurements (FP) of the tCAF-1 complexes mutated or deleted in the WHD, to WT (c) or XL(H3-H4)2 (d) show no changes in Kd (Kd between 0.5\u20130.9 nM). Error bars depicts the SEM from three measurements. (e) WHD deletion does not affect the stoichiometry of the CAF-1 interaction with histones. van Holde-Weischet analysis of SV-AUC experiments performed with tCAF_\u2206WHDa and either WT (top panel) or DMH3-H4 (bottom panel) titrated as 1:1 or 1:2 ratio of CAF-1 to H3-H4 dimer. The curves also shown in Figure 2a obtained with the tCAF-1 complex are shown in gray as reference.\n\nTo directly test if H3-H4 binding can unmask the DNA\u00a0binding activity of the WHD, we established a gel-based DNA binding assay with tCAF-1 and histones. Here, pre-mixed stoichiometric tCAF-1\u2022H3-H4 complexes were combined with limiting amounts of DNA and then analyzed on native gels to evaluate the formation of ternary tCAF-1\u2022H3-H4\u2022DNA complexes. We used an 18 bp DNA (18DNA) fragment, which represents the minimal substrate for binding to the WHD domain (Gajiwala et al., 2000), but is of insufficient length for wrapping the (H3-H4)2 tetramer. This is important, as using longer DNA promotes rapid histone deposition and would therefore not allow us to demonstrate the DNA binding activity of histone-bound tCAF-1. As expected, tCAF-1 did not bind to 18DNA in absence of histones (Figure 3d, lane 2). However, when tCAF-1 was pre-incubated with histones, we observed a distinct high molecular weight complex, migrating slower than the tCAF-1\u2022H3-H4 complex without DNA, and containing DNA, H3-H4, and tCAF-1 (Figure 3d, lanes 3\u20135 and 11\u201314). To confirm that DNA binding in this ternary tCAF-1\u2022H3-H4\u202218DNA complex is mediated through the Cac1 WHD, we tested tCAF-1 complexes with a mutated WHD (tCAF_WHD**, containing Cac1 K564E K568E, Figure 3a). This mutant complex does not form the DNA-bound intermediate (Figure 3d, lanes 15\u201318), even though it still binds H3-H4 (Figure 3d, lane 10) with the same affinity and stoichiometry as tCAF-1 (Figure 3\u2014figure supplement 1c\u2013e). These data strongly suggest that H3-H4 triggers DNA binding by the WHD, by releasing it from an inhibitory intramolecular interaction with the histone binding region.\n\n### DNA promotes the association of two CAF-1 complexes to form the (H3-H4)2 tetramer\n\nThis ternary complex may well represent a relevant intermediate in the histone deposition mechanism of CAF-1. To determine the structural organization of the tCAF-1\u2022H3-H4\u202218DNA complex, we investigated the effect of using a constitutively dimeric DMH3-H4 or a constitutively tetrameric XL(H3-H4)2 in this context. First, we wondered if a dimeric DMH3-H4 could form this ternary intermediate. Indeed, tCAF-1\u2022DMH3-H4 assembles a similar complex with 18DNA to what observed with tCAF-1\u2022WTH3-H4 (Figure 4a, lanes 11\u201314) indicating that histone tetramerization is not required for the formation of this intermediate. This in turn also supports the idea that CAF-1 binds an H3-H4 dimer, and that binding to a histone H3-H4 dimer is sufficient to release the WHD and engage it in DNA binding. In addition, we wondered whether a constitutively tetrameric XL(H3-H4)2 was still capable to assemble this intermediate. As shown in Figure 4b, tCAF-1\u2022XL(H3-H4)2 interacts with 18DNA forming the ternary tCAF-1\u2022XL(H3-H4)2\u202218DNA complex, hence XL(H3-H4)2 binding is also able to displace the Cac1 WHD.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig4-v3.jpg)\n\n**Figure 4.:** (a\u2013b) A ternary tCAF-1\u2022histone\u202218DNA complex can be formed with DMH3-H4(a) or with XL(H3-H4)2 (b). EMSA was performed with 100 nM 18 bp DNA (18DNA). tCAF-1 is titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and is added at a 1:1 ratio to either DMH3-H4 (a) or XL(H3-H4)2 (b). H3-H4 was calculated as a dimer, even with XL(H3-H4)2 to the DNA. WTH3-H4 is shown as a control in both panels. (c) Both H3-H4 moieties in the XL(H3-H4)2 are shielded from DNA binding in complex with tCAF-1. EMSA performed with 100 nM 18 bp DNA (18DNA). tCAF-1 or tCAF_WHD** in complex with XL(H3-H4)2 [1 CAF-1 complex per 1 H3-H4 dimer] is at 1 and 3 \u00b5M. (d) In solution cross-linking experiments with 2 \u00b5M of either FL CAF-1 alone, FL CAF-1\u2022H3-H4 complex, or FL CAF_WHD**\u2022H3-H4 complex, and variable amounts of DNA (0-1-2-4 \u00b5M). DSS was added at 1 mM and incubated for 30 min, before quenching and analysis by SDS PAGE. Full gel image shown in Figure 4\u2014figure supplement 1a. (e) In solution cross-linking experiments with DSS as in panel (d), but here FL CAF-1 was premixed with either WT, DMH3-H4 or XLH3-H4. DNA is at 4 \u00b5M. Full gel image shown in Figure 4\u2014figure supplement 1c. (f) SEC-MALS experiment of the isolated WHD alone or in complex with 18DNA. In buffer containing 150 mM NaCl, the WHD is monomeric in absence of DNA, but on 18DNA it favors binding in a 2:1 stoichiometry (WHD to 18DNA). The protein/DNA elution traces (refractive index, RI) refer to the right y axis, the calculated molar masses refer to the left y axis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) In solution cross-linking experiments with 2 \u00b5M of either FL CAF-1 alone, FL CAF-1\u2022H3-H4 complex, or FL CAF_WHD**\u2022H3-H4 complex, and variable amounts of DNA (0-1-2-4 \u00b5M). DSS was added at 1 mM and incubated for 30 min, before quenching and analysis by SDS PAGE. Top part of this gel is shown in main Figure 4d. (b) SEC-MALS experiment of FL CAF-1 or FL CAF_WHD** in complex with WTH3-H4 after DSS crosslinking treatment, as shown in Figure 4d. With an intact WHD, the main species in solution appear to have a molar mass consistent with two CAF-1\u2022H3-H4 moieties. The protein elution traces (refractive index, RI) refer to the right y axis, the calculated molar masses refer to the left y axis. Note that DNA is not chemically cross-linked by DSS. (c) In solution cross-linking experiments with DSS as in panel a, but here FL CAF-1 was premixed with either WT, DMH3-H4 or XLH3-H4. DNA is at 4 \u00b5M. Top part of this gel is shown in main Figure 4e. (d) In solution cross-linking experiments using WTH3-H4 at 2 \u00b5M and 18DNA titration at 0.5-1-2-4 \u00b5M. (e) DNA\u00a0binding assay of the isolated WHD (titrated 8-4-2-1-0.5\u20130.25 \u00b5M) to 18 or 33 bp DNA (1 \u00b5M) (left panel). X denotes a skipped lane. Right panel depicts WHD binding to 147 bp DNA (100 nM), the WHD was titrated (1\u20130.5-0.25\u20130.125 \u00b5M).\n\nBecause we have reported that two tCAF-1 complexes can bind to XL(H3-H4)2 in absence of DNA (Figure 2b and Figure 2\u2014figure supplement 1f), we wanted to test whether this stoichiometry was maintained after DNA binding. To this end, we used tCAF-1 mutated in the WHD, in complex with XL(H3-H4)2 (Figure 4c). We saw no interaction of (tCAF_WHD**)2\u2022XL(H3-H4)2 with 18DNA, confirming that the Cac1 WHD is the primary point of contact to DNA and that both dimers in tetrameric XL(H3-H4)2 are shielded from DNA binding. As 18DNA can interact with XL(H3-H4)2 (Figure 4b, lane 4, demonstrated by disappearance of the free DNA band into the well), this strongly suggests that two CAF-1 moieties remain bound to the XL(H3-H4)2 tetramer, otherwise the exposed H3-H4 dimer in the constitutive tetramer XL(H3-H4)2 would remain free to mediate DNA binding even with a complex with a mutated WHD. Because the tCAF-1\u2022WTH3-H4\u202218DNA and the tCAF-1\u2022DMH3-H4\u202218DNA complexes migrate similarly to the complex formed with XL(H3-H4)2, which we know contains two tCAF-1 moieties (Figure 2b\u2013c), and considerably slower than the tCAF-1\u2022WTH3-H4 complexes without DNA (Figure 4b, lane 5\u20139, 488-H3-H4 red signal), we postulated that 18DNA promotes the association of two tCAF-1\u2022WTH3-H4 moieties, and in this assembly histone tetramerization is not a requirement for complex formation.\n\nTo test this hypothesis, we performed in solution cross-linking studies. This allowed us to trap the assemblies without the potential artifact of the gel or column media, and also provided us with an opportunity to test our model with the FL CAF-1 complex, as the readout does not depend on DNA binding. Strikingly, titrating 18DNA into a FL CAF-1\u2022WTH3-H4 complex strongly promoted the formation of a discrete high molecular weight assembly, which did not accumulate when the histones were omitted or when the Cac1 WHD was mutated (Figure 4d \u2013 Figure 4\u2014figure supplement 1a). By analyzing these reactions through SEC-MALS, we confirmed that this species has a molar mass consistent with the assembly of (CAF-1)2\u2022(H3-H4)2\u202218DNA (Figure 4\u2014figure supplement 1b). In line with the cross-linking data, this species was not favored when the WHD was mutated, and the most abundant assembly was composed of a single CAF-1\u2022H3-H4\u202218DNA complex (Figure 4\u2014figure supplement 1b). This association was further supported by monitoring the formation of this band with XL(H3-H4)2 and DMH3-H4, where a (CAF-1)2\u2022(H3-H4)2 species is formed with XL(H3-H4)2 even in absence of 18DNA (Figure 4e \u2013 Figure 4\u2014figure supplement 1c), as predicted by our binding stoichiometry data (Figure 2c and Figure 2\u2014figure supplement 1f and h). Importantly, titrating 18DNA into H3-H4 in absence of CAF-1 did not significantly stimulate the formation of (H3-H4)2 tetramer, confirming that the association of two H3-H4 dimers under these conditions requires the presence of the CAF-1 chaperone (Figure 4\u2014figure supplement 1d). Together, these data demonstrate that two FL CAF-1 complexes associate on a 18DNA via their WHD domains, but only do so when bound to histones.\n\nTo conclusively confirm that an 18DNA is sufficient to bridge two CAF-1 moieties, we measured the stoichiometry of the isolated Cac1 WHD when binding to 18DNA. In EMSA, we noticed that titration of an isolated WHD on longer DNA results in an alternate binding pattern that suggests a cooperative binding mode, while on 18DNA we only observed a single species (Figure 4\u2014figure supplement 1e). SEC-MALS experiments demonstrate that this species contains two WHD domains, and that the binding of two WHDs to a 18DNA is preferred even at a 1:1 WHD to DNA stoichiometry (Figure 4f). Importantly, the Cac1 WHD elutes as a monomer on SEC-MALS in absence of DNA (Liu et al., 2016; Zhang et al., 2016) (Figure 4f). This indicates that two Cac1 WHDs cooperatively bind DNA, as observed for other WHDs (Cornille et al., 1998; Gajiwala et al., 2000; Zheng et al., 1999) and suggest that this can bring together two CAF-1\u2022H3-H4 complexes on 18DNA.\n\nOverall, our data support a model in which the interaction between DNA and the WHD is triggered by histone binding to CAF-1, and this promotes the juxtaposition of two CAF-1 complexes, each pre-loaded with an H3-H4 dimer. Thus, the DNA-mediated association of two histone-bound CAF-1 complexes may promote the formation of the (H3-H4)2 tetramer on DNA.\n\n### DNA length promotes (H3-H4)2 deposition\n\nHow then is the (H3-H4)2 tetramer deposited onto DNA? Our data indicate that the H3 \u03b13 helix in the H3-H4 dimers bound to CAF-1 is available for tetramerization with another H3-H4 dimer (Figure 2). Moreover, we show that two CAF-1 complexes bind on either side of a (H3-H4)2 tetramer, and that an obligate H3-H3\u2019 interaction is sufficient to stabilize their association (Figure 2b), suggesting no additional significant contacts between the two CAF-1 moieties. Because of its limiting length, 18DNA only accommodates WHD binding, but cannot fully wrap the histone tetramer, which allowed us to trap the ternary complex. Because this complex can also be formed with dimeric DMH3-H4 (Figure 4a, lanes 11\u201314), we concluded that histone tetramerization is not required for the formation of the 18DNA-containing intermediate.\n\nWe next used longer DNAs to see if we could monitor subsequent steps in tetrasome formation, to understand how the two H3-H4 dimers are joined and to demonstrate that the (tCAF-1)2\u2022(H3-H4)2\u202218DNA complex is relevant in the nucleosome assembly reaction. We used a 33 bp DNA (33DNA) which is longer than required for WHD binding, but still shorter than the\u00a0~70 bp necessary for complete wrapping of the (H3-H4)2. tCAF-1 forms a ternary intermediate with WTH3-H4 and DNA, shown by EMSA (Figure 5a, lanes 1\u20136). As observed with 18DNA, its formation is dependent on the integrity of the Cac1 WHD (Figure 5a lanes 7\u201310 and Figure 5\u2014figure supplement 1a), supporting the idea that this domain mediates the primary interaction with DNA. Strikingly, the ternary complex containing 33DNA could not be stabilized with the constitutively dimeric DMH3-H4 (Figure 5b). This is surprising, as this histone mutant is sufficient to activate DNA binding by the WHD, as seen with the 18DNA (Figure 4a). These results demonstrate that histone tetramerization is required in this context. Hence, after the initial interaction via the Cac1 WHD, the formation of the ternary intermediate becomes dependent on the assembly of the (H3-H4)2 tetramer with DNA of increasing length. This indicates that we are monitoring the step where the two H3-H4 dimers are joined to form the (H3-H4)2 tetramer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig5-v3.jpg)\n\n**Figure 5.:** (a) EMSA performed with 100 nM 33mer DNA. tCAF-1 or tCAF-1_WHD** were titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and were added with WTH3-H4 to the DNA. (b) EMSA performed with 100 nM 33 bp DNA (33DNA). tCAF-1 was titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and was added with WT or DMH3-H4 (calculated as a H3-H4 dimer) to the DNA. (c) EMSA performed with 100 nM 33 bp DNA (33DNA). tCAF-1 was titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and was added with WT or XL(H3-H4)2 (calculated as a H3-H4 dimer) to the DNA. (d) In solution cross-linking experiments with 2 \u00b5M of FL CAF-1 premixed with either WT, DMH3-H4 or XL(H3-H4)2, in presence of 4 \u00b5M of DNA. DSS was added at 1 mM and incubated for 30 min, before quenching and running of SDS PAGE. Full gel image is shown in Figure 5\u2014figure supplement 1c.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) EMSA performed with 100 nM 33mer DNA. tCAF-1_\u2206WHDa or tCAF-1__\u2206WHDb were titrated 0.37\u20130.75-1.5\u20133 \u00b5M, and were added with WTH3-H4 to the DNA. (b) SEC-MALS experiment titrating 33DNA into a tCAF-1 in complex with XL(H3-H4)2 (mixed as 1 CAF-1 per histone dimer). The sample with 18DNA is used as a\u00a0control. The protein/DNA elution traces (refractive index, RI) refer to the right y axis, the calculated molar masses refer to the left y axis. (c) In solution cross-linking experiments with 2 \u00b5M of FL CAF-1 premixed with either WT, DMH3-H4 or XLH3-H4, in presence of 4 \u00b5M of DNA. DSS was added at 1 mM and incubated for 30 min, before quenching and running of SDS PAGE. Top part of the gel is shown in main Figure 5d. (d) EMSA performed with 100 nM 79 bp DNA (79DNA). tCAF-1\u2022WTH3-H4 is titrated 0.37\u20130.75-1.5\u20133 \u00b5M, to the DNA. (e) EMSA performed with 200 nM tCAF-1\u2022WTH3-H4 or tCAF_WHD**\u2022WTH3-H4, 79 bp DNA (79DNA) is titrated at 25-50-100-200-400 nM.\n\nConsistent with the requirement for a histone tetramer, the ternary complex could be formed with XL(H3-H4)2 (Figure 5c). With this histone isoform, we noticed that the 33DNA ternary complex migrated faster on the native gel than the previously identified (tCAF-1)2\u2022XL(H3-H4)2\u202218DNA intermediate, suggesting a significant change in molar mass (Figure 5c). Consistent with this, when using 33DNA with tCAF-1\u2022XL(H3-H4)2, we saw a depletion of the peak corresponding to the (tCAF-1)2\u2022XL(H3-H4)2 complex in SEC-MALS experiments (Figure 5\u2014figure supplement 1b). Moreover, in cross-linking experiments with FL CAF-1 we noticed a similar trend, wherein the formation of a (FL CAF-1)2\u2022XL(H3-H4)2\u2022DNA complex was disfavored with 33DNA (Figure 5d, lane 5 - Figure 5\u2014figure supplement 1c). These observations support the idea that DNA of sufficient length partially destabilizes the CAF-1\u2022histone interaction.\n\nIndeed, with a longer DNA (79 bp, 79DNA), suitable for complete tetramer wrapping, no intermediate could be formed and only the final assembly products, i.e. (H3-H4)2\u2022DNA complexes, are detected (Figure 5\u2014figure supplement 1d). In this context, the Cac1 WHD is still required for efficient histone discharge from the histone chaperone, even in presence of excess DNA (Figure 5\u2014figure supplement 1e).\n\nOverall, our data point to a model for CAF-1-mediated tetrasome formation in which H3-H4 dimer interaction with the CAF-1 complex releases and activates the Cac1 WHD to allow its interaction with DNA (Figure 6a). This interaction promotes the association of two histone-bound CAF-1 complexes, via cooperative DNA binding of the Cac1 WHDs (Figure 6b). Here, the two CAF-1 complexes join their H3-H4 dimers to form a (H3-H4)2 tetramer that can then be sequestered by the DNA tethered by the WHD (Figure 6c). The exact mechanism by which DNA promotes histone unloading from CAF-1 remains yet to be determined. We propose two hypotheses. In one case, the DNA remains partially bound to one WHD as it begins to wrap around the tetrasome, in another scenario the DNA dissociates from the WHD as it becomes bound to the (H3-H4)2 in proximity to the H3-H3\u2019 region, where it begins to pry the histones off CAF-1 (Figure 6c). The restoration of the inhibitory intramolecular interaction between the Cac1 WHD and the histone binding region, which likely occurs as the histones are unloaded from CAF-1, may also contribute to their transfer to the DNA molecule (Figure 6d). Together, our data suggest that the Cac1 WHD not only contributes to the mechanism by merely binding DNA, but by actively bridging together two CAF-1 bound H3-H4 dimers. Furthermore, by directly competing with the histone binding region, the WHD may facilitate the transfer of (H3-H4)2 from the chaperone to DNA.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig6-v3.jpg)\n\n**Figure 6.:** (a) The nucleosome assembly mechanism of CAF-1 is activated by H3-H4 binding, which releases the WHD domain from an intramolecular interaction with the acidic region on Cac1. (b) DNA binding promotes the association of two CAF-1\u2022H3-H4 complexes to join the histones into a (H3\u2013H4)2 tetramer\u00a0(c). In the presence of DNA of sufficient length, the (H3\u2013H4)2 histones are directly sequestered from CAF-1. (d) (H3\u2013H4)2 are transferred to the DNA to form the tetrasome, and the WHD re-binds to the now free acidic region, resulting in its dissociation from DNA.\n\n### The WHD dictates nucleosome assembly\n\nOur model predicts that the integrity of DNA binding by the WHD is a pre-requisite for tetrasome formation and hence nucleosome assembly. Indeed, in the NAQ assay, tCAF-1 complexes with a mutated or deleted WHD exhibit reduced nucleosome assembly activity (blue bars in Figure 7a). Notably, with these mutant tCAF-1 complexes we also observed a dose-dependent increase in protected DNA fragments around 100 bp rather than the 126\u2013160 bp fragments observed with tCAF-1 and wild type CAF-1, indicative of the formation of subnucleosomal particles (Figure 7b). Similarly, in a native gel-based tetrasome assembly assay on either 147 or 79 bp DNA fragments, the WHD mutant complexes preferentially promoted formation of a band that migrates faster than the tetrasome (Figure 7c and Figure 7\u2014figure supplement 1a, disome). This band corresponds to the deposition of a single H3-H4 dimer onto DNA, as seen using the constitutively dimeric DMH3-H4 (Figure 7c). This finding indicates that either abrogating WHD-dependent DNA binding, or preventing H3-H4 tetramerization, result in the same deposition product in vitro, a single H3-H4 dimer bound to DNA. This fully supports our model in which (H3-H4)2 tetramerization or deposition cannot occur in absence of CAF-1 DNA binding (Figure 6) and indicates a direct role for the WHD in regulating the fidelity of the nucleosome assembly reaction.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig7-v3.jpg)\n\n**Figure 7.:** (a) Quantification of the nucleosome bands (126\u2013160 bp) from the NAQ assays. Mean \u00b1 SD is shown from two or more independent measurements. For simplicity, we only show results from experiments with a 2-fold chaperone to histone ratio. The trends are identical for the 0.5-1-4 fold chaperone to histone ratio. The data use for this panel is included in Figure 7\u2014source data 1. (b) Quantification of bands below 126 bp (sub-nucleosomal species) from the NAQ assays. The error bars indicate SD from at least three repeats. The data use for this panel is included in Figure 7\u2014source data 2. (c) Tetrasome assembly assay on 147 bp (top panel) or 79 bp DNA (bottom panel) with tCAF-1 and the tCAF_\u2206WHDa mutant, comparing WT and DMH3-H4 deposition. Assembly for the other WHD mutants is shown in Figure 7\u2014figure supplement 1a. (d) Epigenetic silencing of a telomere-proximal URA3 reporter performed with yeast strains expressing the Cac1 mutation or deletion of the WHD. Samples were spotted at 0-101-102-103-104 dilutions from a OD600\u00a0=\u00a01 stock. (e) Okazaki fragment ends isolated from WT yeast strains, WHD mutant strains, and the acidic region mutant strain (Cac1_Nac, residues 397\u2013431 were replaced with a Gly-Ser-Leu linker), as indicated, were radiolabeled and separated on a denaturing agarose gel. The right-hand panel depicts a normalized trace of signal intensity for each lane; DNA ladder is shown in light gray. Red arrows highlight the nucleosome-dependent length of the fragments in the positive control lanes (lane 1 and 2).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22799/elife-22799-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Cac1 WHD mutation or deletion result in the deposition of a H3-H4 dimer onto DNA. Tetrasome assembly assay with tCAF-1 WHD mutants on 79 (top) or 147 bp DNA (bottom). (b) Cac1 mutants used in Figure 7d are expressed, as shown by immunoblot using anti-HA antibodies.\n\nSurprisingly, when testing the effect of WHD mutation and deletion in FL CAF-1, we observed no difference in activity in the NAQ assay (Figure 7a). A possible explanation for this observation is that in vitro in absence of PCNA, the DNA\u00a0binding property of the N-terminal part of Cac1 may compensate for the mutation of the WHD. We therefore moved to an in vivo system to address if the WHD is required for FL CAF-1 activity in the cell. We first used a previously described assay that monitors epigenetic silencing of a telomere-proximal URA3 reporter, a phenomenon which is dependent on the integrity of the Cac1 subunit (Kaufman et al., 1997). While WT Cac1 protein could completely rescue the growth phenotype on FOA plates, FL Cac1 WHD\u00a0mutants did not, reflected by delayed growth (Figure 7d and Figure 7\u2014figure supplement 1b). This indicates that the WHD domain is indeed important for Cac1 functions in the context of full-length Cac1 in vivo, in agreement with previous work (Zhang et al., 2016).\n\nTo specifically demonstrate that the phenotype observed with CAF-1 complex that is mutated in the WHD is due to an aberrant nucleosome assembly function of Cac1 in vivo, we took advantage of the fact that the length of Okazaki fragments generated during replication depends on proper nucleosome assembly by CAF-1 (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016). We analyzed Okazaki fragment length in yeast strains that carry mutations or deletions in the Cac1 WHD domain. Strikingly, Okazaki fragments purified from these strains do not exhibit the periodicity characteristic of a proficient replication-coupled nucleosome assembly pathway, but rather peak at length above 400 bp (Figure 7e). This phenotype is not as drastic as the one observed when we mutated the histone binding region (HA-Cac1_Nac, where the Cac1 acidic region is neutralized by a Gly-Ser-Leu peptide substitution;\u00a0Mattiroli et al., 2017). Yeast strains harboring this mutant CAF-1 complex produced an Okazaki fragment pattern that resembled that of the Cac1 knock-out (Figure 7e). Unlike mutation of the Cac1 acidic region, Cac1 WHD deletion and mutation do not affect histone binding (Figure 3\u2014figure supplement 1c\u2013e) and hence these mutant complexes, unlike HA-Cac1_Nac, are still able to recruit H3-H4 at the replication fork. We speculate that passive histone diffusion from these CAF-1 constructs to the DNA may occur, resulting in residual and inefficient histone deposition. The clear difference in Okazaki fragment formation between the WT and the WHD mutations confirms a deficiency in timely and accurate replication-coupled nucleosome assembly in vivo. These experiments show that the integrity of the Cac1 WHD is required for proper nucleosome formation on the lagging strand during DNA replication, fully supporting our model that places this domain at the heart of the CAF-1 nucleosome assembly mechanism (Figure 6).\n\n## Discussion\n\nCombined, our data suggest a complex mechanism for the nucleosome assembly function of CAF-1 (Figure 6). We propose a model that involves DNA binding of two histone-bound CAF-1 complexes, thereby joining two H3-H4 dimers which are then transferred to adjacent DNA, resulting in tetrasome assembly. Our data identifies the central role of the Cac1 WHD in orchestrating the assembly reaction through its histone-triggered DNA\u00a0binding activity, and through promoting the association of two CAF-1 complexes, which culminates in (H3-H4)2 tetramer and ultimately tetrasome formation.\n\nOur work reveals that two CAF-1 complexes are needed for the formation of one tetrasome, with each complex contributing a single H3-H4 dimer. This provides direct evidence for previously proposed models based on in vivo observations (Nakano et al., 2011; Tagami et al., 2004). Nonetheless, previous studies have suggested that one CAF-1 promotes (H3-H4)2 tetramer formation, based on FRET measurements (Liu et al., 2012, 2016). Here, we have studied the CAF-1\u2022H3-H4 stoichiometry using a variety of techniques, including label-free methods such as AUC, SEC-MALS and HX-MS. Our data indicate that CAF-1 has a single histone binding site that interacts with a H3-H4 dimer, although a second H3-H4 dimer (either with or without its own CAF-1 complex) can associate with the CAF-1-bound dimer. We propose that this mode of binding is essential in the nucleosome assembly mechanism to allow the juxtaposition of the histone dimers to form (H3-H4)2 prior to deposition onto the DNA. This ability of CAF-1 to form different complexes with histones, depending on their concentration and conditions, may be responsible for the apparent differences in the literature (Liu et al., 2012, 2016).\n\nWe demonstrate the central importance of the WHD in the histone deposition process. A recent study has identified cross-links between the Cac1 WHD and histones (Liu et al., 2016). While this was interpreted as a direct interaction between the DNA\u00a0binding domain and the histones, our data suggest that this may be due to the physical proximity between the WHD and the histone binding region (Figure 3b\u2013d). This interpretation is also corroborated by a different study, where the WHD was found to cross-link with Cac2 (Kim et al., 2016), another important component of the histone binding interface on CAF-1 (Mattiroli et al., 2017). Together, these findings suggest that the WHD remains in close proximity to H3-H4 on CAF-1. This could be an important structural aspect of the last step of the nucleosome assembly mechanism, where WHD-bound DNA sequesters the histones from the chaperone.\n\nOur proposed model also demands that two CAF-1 complexes must be located in close proximity to be able to function together in tetrasome assembly. This implies that at least two CAF-1 complexes may simultaneously bind to one PCNA trimer. This is possible considering the presence of three potential binding sites for CAF-1 on a PCNA trimer, but will require further investigations. We cannot exclude that the interaction with PCNA may elicit additional structural rearrangement in CAF-1 that could control the nucleosome assembly mechanism. The importance of the cross-talk between the CAF-1 nucleosome assembly function and PCNA is supported by the finding that Cac1 WHD and PCNA binding mutants exhibit a synergistic effect in vivo (Zhang et al., 2016).\n\nOverall, our data suggest that a combination of relatively low affinity interactions (WHD\u2022DNA, and H3\u2022H3\u2019 in the H3-H4 tetramerization interface) work together to drive (H3-H4)2 tetramer deposition onto DNA. This combinatorial effect ensures timely and accurate assembly reactions by bringing together chaperoned histones and DNA. Furthermore, on Cac1, the WHD is separated from the histone binding module by a flexible region (Mattiroli et al., 2017) which is post-translationally modified in a cell cycle dependent manner (Holt et al., 2009; Jeffery et al., 2015). These modifications may well play additional roles in fine-tuning the dynamic interactions of the WHD.\n\nThis study describes the mechanism of histone deposition by CAF-1, a reaction that has remained elusive for other histone chaperones. We demonstrate that an inhibitory intramolecular interaction poises CAF-1 for histone binding and deposition. H3-H4 dimer binding to CAF-1 activates the cascade of events required for its deposition, by unmasking the Cac1 WHD to bind DNA. This mechanism ensures that only histone-bound CAF-1 complexes are able to participate in the deposition process, thus optimizing the efficiency of tetrasome assembly and excluding inefficient participation of empty CAF-1 complexes. By mutating the WHD, we uncouple histone binding and deposition, and demonstrate that high affinity histone binding is not sufficient to sustain efficient nucleosome assembly. This suggests that not all proteins that bind histones (i.e. histone chaperones) are in fact efficient nucleosome assembly factors.\n\nFinally, the observation that two CAF-1\u2022H3-H4 complexes associate to form a tetrasome suggests that two independently chaperoned H3-H4 dimers are joined at the very last step of the deposition process, when the DNA is in proximity and available for sequestering the histones from CAF-1. While convincing evidence supports the conservative model, where parental (H3-H4)2 are deposited in the same nucleosome following DNA replication (Xu et al., 2010), our proposed mechanism does not exclude the possibility of a semiconservative model for chromatin assembly coupled with DNA replication (Tagami et al., 2004). Further experiments are required to fully elucidate how CAF-1 complexes are paired in cells to understand the mechanisms underlying histone inheritance during cell division.\n\n## Materials and methods\n\n### Cloning and reagents\n\ncDNA for the yeast CAF-1 complex were received from Paul Kaufman. These were cloned into the MultiBac vector for expression in insect cells. Cac1 was cloned into pACEBac1, Cac3 in pIDC, Cac2 in pIDS and these were recombined by Cre-Lox as described (Bieniossek et al., 2008). A His-tag was inserted at the C-terminal end of Cac2 for purification purposes. All complexes are prepared with a short C-terminal deletion of Cac2 (1\u2013449), predicted to be disordered. Bacmids for expression in SF21 cells were prepared as previously described (Bieniossek et al., 2008). Mutations were introduced using Turbo Pfu polymerase (Roche) in a standard mutagenesis protocol. The Cac1 WHD cDNA was adjusted from the expression construct previously published (Zhang et al., 2016). The DNA used in the assembly and EMSA assays were based on the 601 Widom sequence and were prepared as previously described (Dyer et al., 2004).\n\n### Protein preparations\n\nXenopus laevis histones were purified from E.coli cells as previously described (Dyer et al., 2004), and stored in 2 M NaCl at \u221280\u00b0C. Labeling of histone proteins was performed as previously described (Muthurajan et al., 2016). Specifically, we labeled H4 with Alexa-488 on T71C, and H2B with AttoN-647 on T112C prior refolding with the histone partner. Constitutive dimeric DMH3-H4 is prepared as WT histones and contains H3 C110E L126A I130A. Constitutive XL(H3-H4)2 tetramers were prepared by incubating 25 \u03bcM histone (H3 C110A K115C \u2013 H4 WT) in 20 mM HEPES pH 7.5, 1 M NaCl, 1 mM EDTA with 50 \u03bcM BMOE (bismaleimidoethane) for 1 hr at room temperature. Cross-linking was quenched with a 5x stock of DTT (final concentration 10 mM DTT and 10 \u00b5M XL(H3-H4)2). Cross-linking was assayed using a gel (samples were not boiled prior loading onto the gel).\n\nCAF-1 was expressed in Sf21 cells and puri\ufb01ed using a HisTrap column (GE) in buffer containing 50 mM TRIS 8.0, 600 mM NaCl, 5% glycerol, 10 mM imidazole, 5 mM BME (beta-mercaptoethanol), in presence of COMPLETE EDTA-free protease inhibitor (Roche), DNase I, 3 mM CaCl2 and 3 mM MgCl2. The complex was then loaded on a MonoQ column in buffer A (50 mM TRIS 8.0, 200 mM NaCl, 1 mM EDTA, 1 mM TCEP) and eluted with buffer B containing 1M NaCl. The protein was then injected into a size exclusion column (Superdex 200) in 30 mM Tris pH 7.5, 300 mM NaCl, 1 mM EDTA, 1 mM TCEP. For HX-MS studies, buffer containing 50 mM KPO4, 150 mM NaCl, 5 mM DTT at pH 7.4 was used for the gel filtration step. Proteins were concentrated to 1\u201320 mg/ml and stored at \u221280\u00b0C in gel-\ufb01ltration buffer. Mutants were puri\ufb01ed as wild-type proteins; they behaved identically to wild type proteins during the purification procedure. CAF-1 complexes containing deletion or mutation of the acidic region in tCac1 were purified over a MonoS, instead of the MonoQ column with buffer A and B at pH 6.8. The WHD domain was expressed as a GST fusion and purified according to published protocols (Zhang et al., 2016).\n\n### Hydrogen deuterium exchange coupled with mass spectrometry (HX-MS)\n\nCAF-1 complexes and/or histones to be analyzed by HX-MS were prepared at 4 \u03bcM in HX buffer (50 KPO4, 150 mM NaCl, 5 mM DTT pH 7.4). The CAF-1 complexes were gel filtered into the HX buffer, the histones were dialyzed overnight in the HX buffer to ensure that the final samples would not contain any additional buffer components that may result in buffer variability between proteins. HX reactions were set up by mixing 5 \u03bcl of the 4 \u03bcM stocks with 45 \u03bcl of deuterated HX buffer (prepared by dissolving in 99.9% D2O the lyophilized HX buffer) to result in a final 90% D2O concentration. Exchange was allowed to occur for 30 s, 1, 10, 30, or 60 min at 10\u00b0C. Exchange was quenched by adding 50 \u03bcl of ice cold quench buffer (25 mM succinic acid, 25 mM citric acid at pH 2), that brought the sample to pH 2.4. Pre-quenched control reactions were prepared by adding quench buffer prior to D2O buffer. The samples were immediately injected into a temperature controlled (0\u00b0C) Waters HDX Manager for online proteolysis at 12\u00b0C using an Poroszyme immobilized pepsin column (Life Technologies), followed immediately by a 3 min simultaneous peptide trapping and desalting step at 0\u00b0C using a Waters BEH UPLC C18 trap column, all with 100% solvent A (0.1% formic acid in water) flow at 100 \u00b5L/min. Peptides were then separated at 0\u00b0C using a Waters 100 mm BEH C18 analytical UPLC column and a linear 8% to 40% solvent B (0.1% formic acid in acetonitrile) gradient over 6 min, followed by a 1 min 40% B hold and subsequent ramp to 85% solvent B in 0.5 min using a Waters nanoAcquity UPLC and 40 \u00b5l/min flow rate. The UPLC was coupled directly with a Waters Synapt G2 HDMS q-TOF mass spectrometer operating in positive, MSe data acquisition mode. Samples were incubated and analyzed in a random order. Non deuterated, prequenched, 1 and 60 min samples were taken in triplicate.\n\nPLGS 3.0 (Waters) was used to create an identified peptide list from non-deuterated datasets and DynamX 3.0 (Waters) performed the search for deuterated peptide ion assignments. All isotope assignments for each peptide in each charge state were manually verified. The weighted average mass of each peptide determined by DynamX was then used to calculate deuteron uptake which was converted to % of deuteration based on the number of maximum exchangeable amide protons (number of total amino acids \u2013 Pro). Data were corrected for artefactual in-exchange using the quenched experiment as previously reported (Sours and Ahn, 2010). No corrections for back-exchange were conducted due to the comparison of relative uptake amounts between bound and unbound states, which would remain unaffected by the back-exchange correction. Graph bars and uptake plots were prepared using Microsoft Excel and GraphPad prism. The HX-MS uptake values of all the peptides analyzed aresummarized in Supplementary file 1.\n\n### Tetrasome assembly assays\n\nThe assays were carried out in buffer containing 25 mM TRIS pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.02% Tween-20, 0.5 mM TCEP. CAF-1 was first diluted at different concentrations, normally a chaperone-histone ratio between 0.5 to 4 fold was used. Histones H3-H4 (100 nM tetramer concentration) were added, and the chaperone-histone mix was incubated at room temperature for 10 min. DNA was then added at 100 nM concentration. The reactions were incubated for 10\u201330 min (no differences were observed when incubating for longer time). Glycerol was added to a final concentration of 10% v/v prior loading of the samples on a 6% PAGE gel, pre-run in 0.2x TBE buffer at 4\u00b0C. The gels were run for 70 min at 150 V at 4\u00b0C. Gels were stained with SybrGOLD for 10 min and imaged on a Typhoon FLA 9500 at 488 nm.\n\n### NAQ assay (Nucleosome assembly and quantification)\n\nThe procedure for\u00a0measuring nucleosome assembly activity\u00a0in vitro\u00a0with the nucleosome\u00a0assembly and quantification (NAQ) assay\u00a0is described in more detail at Bio-protocol\u00a0(Mattiroli et al., 2018b).\u00a0The assembly assay was carried out as described above containing 200 nM of 207 bp DNA, 200 nM (H3-H4)2, 400 nM H2A-H2B and titration of CAF-1 (100-200-400-800 nM). After the assembly reaction, the samples were diluted to a DNA concentration of 50 nM in 100 \u00b5l digestion reactions. 25U of MNase enzyme was added in a final buffer containing 50 mM TRIS pH 7.9, 5 mM CaCl2. After incubation at 37\u00b0C for 10 min, the reactions were quenched with 10 \u00b5l of 500 mM EDTA, pH 8. The DNA was then purified using a modified protocol of the MinElute kit from QIAGEN. 550 \u00b5l of PB buffer and 10 \u00b5l of 3\u00a0M sodium acetate were added to each sample and they were incubated at room temperature for 10 min. At this point, 50 ng of DNA loading control (or reference band, a 621 bp DNA fragment) was added to each tube. The samples were applied to the MinElute spin column and washed as prescribed by QIAGEN. The DNA was eluted with 10 \u00b5l of water. 1 \u00b5L of the eluate was used to load a DNA 1000 chip on the Bioanalyzer machine (Agilent), and 2.5 \u00b5l were loaded on a 10% PAGE gel. The gel was run for 45 min at 200 V in 0.5x TBE buffer at room temperature. Gels were stained with SybrGOLD for DNA and imaged on a Typhoon FLA 9500 (GE). The Bioanalyzer data were analyzed using the Agilent Expert 2100 software. The reference band was corrected for the proper size (621 bp) and the calculated molarity values were used to normalize all other bands present in the lane. The normalized values were used in the quantification and comparison. The signal threshold was set at 20 RFU. Nucleosome signal was calculated from bands ranging between 126\u2013160 bp in length, based on the digestion of salt-reconstituted nucleosomes. Bands above or below this range were quantified separately. At least three independent repeats were performed per experimental condition.\n\n### Fluorescence polarization experiments\n\nFluorescence Polarization assays were carried out in 25 mM TRIS pH 7.5, 300 mM NaCl, 5% glycerol, 1 mM EDTA, 0.01% NP-40, 0.01% CHAPS, 1 mM DTT (added fresh). Binding reactions were prepared by mixing 5 nM of Alexa488-labeled H3-H4 dimer and increasing amounts of CAF-1. Binding data were measured using a BioTek Synergy H2 plate reader. The data was analyzed and plotted using Microsoft Excel and GraphPad Prism. The competition assay shown in Figure 1\u2014figure supplement 1e was done using fluorescence quenching rather than polarization. Representative curves are shown from one experiment (three independent measurement). The same conclusions were drawn from at least two other replicates, each containing three independent measurement per data point.\n\n### FRET-based stoichiometry experiments (Job plot)\n\nFRET-based stoichiometry measurements of protein complexes\u00a0in vitro\u00a0are described in more detail at Bio-protocol\u00a0(Mattiroli et al., 2018a).\u00a0FL or tCAF-1 were freshly labeled with an equimolar amount of AttoN-647 dye for 1 hr at 4\u00b0C. The reactions were quenched with 10 mM DTT. The protein was purified from the free dye on a PD-10 desalting column in buffer 20 mM TRIS pH 7.5, 300 mM NaCl, 1 mM EDTA, 1 mM TCEP. CAF-1 complexes were concentrated and mixed with Alexa488-labeled H3-H4 at constant total protein concentration of 150 nM, by inverse titrations of either species. Titrations containing only one labeled protein were used to correct the FRET signal. These were measured on a Typhoon or on a BMG ClarioStar plate reader. Dimer concentration was used for WT and DMH3-H4, while tetramer concentration was used for XL(H3-H4)2. Representative curves are shown from one experiment (two independent measurement). The same conclusions were drawn from at least one other replicate, containing two independent measurement per data point.\n\n### Sedimentation velocity analytical UltraCentrifugation (SV-AUC)\n\nSV-AUC experiments were carried out in a final buffer containing 20 mM TRIS pH 7.5, 300 mM NaCl, 1.6% glycerol, 1 mM EDTA, 1 mM TCEP. Samples were prepared at 4\u00b0C at a concentration of 4 \u03bcM CAF-1 (4 or 8 \u03bcM H3-H4 dimers) and run in a Beckman XL-A or XL-I centrifuges at 37,000 rpm at 20\u00b0C. Absorbance at 280 nm was monitored. The data were analyzed using UltraScan III.\n\n### Size exclusion chromatography in line with multi-angle light scattering (SEC-MALS)\n\nA Superdex 200 10/300 GL (GE) was mounted in line with a Optilab DSP and a DAWN Eos detectors (Wyatt). The runs were performed in 20 mM TRIS pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM TCEP at room temperature. 100 \u00b5L of protein sample at 15 or 100 \u00b5M (CAF-1 or WHD samples respectively) were injected at 0.4 ml/min, after being spun down at highest speed for 10 min. Data analysis was done using the ASTRA software (Wyatt) and GraphPad Prism was used to prepare figures. The WHD-18DNA experiments were run on a Superdex 75 10/300 column in line with a DAWN HELEOS II light scattering and a Optilab rEX refractive index detectors (Wyatt).\n\n### EMSA experiments\n\nTernary complex formation was set up in 25 mM TRIS pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.02% Tween-20, 0.5 mM TCEP. Proteins were incubated 10 min (3 \u00b5M of a 1:1 ratio of tCAF-1 and H3-H4 dimer concentration, or titration as described in figure legend) before addition of DNA (100 nM, titration of DNA to higher concentration didn\u2019t result in higher amount of ternary complex). Histone concentrations refer to histone dimers, even in the case of XL(H3-H4)2. 10% final concentration of glycerol was added before loading the samples into a 6% PAGE, pre-run in 0.2x TBE buffer at 150V. Gels were either scanned for fluorescence directly (AttoN647-labeled 18 or 33 bp and labeled histones) or first stained with SybrGOLD and then scanned on a Typhoon FLA 9500.\n\n### In solution cross-linking\n\n2 \u00b5M of a 1:1 ratio of CAF-1 and H3-H4 dimer were incubated for 30 min in 20 mM HEPES pH 7.5, 75 mM NaCl, 1 mM DTT. Histone concentrations refer to histone dimers, even in the case of XL(H3-H4)2. Then, DNA or buffer control was titrated at 1-2-4 \u00b5M (or just 4 \u00b5M for the single concentration reaction). After 10 min, 1 mM DSS (disuccinimidyl suberate) was added and the reaction was left for 30 min at room temperature. The reactions were quenched with a final concentration of 70 mM TRIS pH 7.5. SDS loading buffer was immediately added and the samples were run on a NUPAGE 4\u201312% gel in MES buffer.\n\n### Yeast heterochromatin maintenance in vivo assay\n\nThe endogenous CAC1 locus was cloned into a pRS313 vector (the fragment contained 659 bp upstream and 731 bp downstream the Cac1 ORF). An HA-tag was introduced in the 5\u2019 end of the ORF. This construct was used to transform the PKY106 strain obtained from PD Kaufman (Kaufman et al., 1997). Mutants were generated using site-directed mutagenesis and were treated as the WT sample. The empty pRS313 vector was used as a\u00a0control. Transformed PKY106 strains were grown in synthetic media lacking histidine (-His). Clones were amplified overnight and then diluted in the morning and grown to an OD600\u00a0=\u00a00.7\u20130.8. After washing the cells with water and then resuspending them to an OD600\u00a0=\u00a01, four 10-fold dilutions from the initial stock were prepared. The undiluted sample and these dilutions were spotted on plates containing -His or -His-Ura media as controls, and -His supplemented with 1 mg/ml 5-Fluoroorotic Acid (FOA) for growth selection. Plates were left at 30\u00b0C for 2 days and then left at room temperature for up to the seventh day. To validate HA-Cac1 expression, 7 ml of cultures were harvested at OD600\u00a0=\u00a00.7\u20130.8 and washed in water. The pellet was boiled for 3 min. 50 \u00b5l of PBS buffer containing 1 mM TCEP and COMPLETE EDTA-free protease inhibitors was added to the pellet. Cells were lysed using glass beads and the lysate was then spun down. The supernatant was loaded on a SDS PAGE gel and transfer to a PVDF membrane. The blot was probed with anti-HA antibodies (Abcam ab9110 RRID:AB_307019).\n\n### Okazaki fragment assay\n\nBudding yeast strains yIW347 (wild-type, WT) and yIW397 (\u0394cac1) (Yadav and Whitehouse, 2016) carrying degron-tagged doxycycline-repressible alleles of CDC9 were transformed with empty vector pRS313. yIW397 was also transformed with pRS313,HA-Cac1 construct described above. All transformants were verified and maintained by growth on YC-HIS minimal media. For the Okazaki fragment preparation, all strains were grown at 30\u00b0C in YC -HIS liquid medium supplemented with 2% glucose. 50 ml cultures were used for labeling experiments. At OD600 \u223c0.3, cells were harvested and re-suspended into 50 ml YEP medium and doxycycline was added to final concentrations of 40 mg/l and the culture shaken at 30\u00b0C for 2.5 hr. Genomic DNA was prepared from spheroplasts, radio-labeled, and visualized as described previously (Smith et al., 2015).\n",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "7166858a-742f-4d53-a699-9c2de2ae8f8c",
+      "submission_id": "0ef7ae39-60b2-4f97-9835-d7853741ac78",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul D Kaufman, U. Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22799.021](https://doi.org/10.7554/eLife.22799.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"DNA-mediated association of two histone-bound CAF-1 complexes drives tetrasome assembly in the wake of DNA replication\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers find that the paper describes an interesting study of the mechanism of histone (H3/H4)2 tetrasome deposition by Chromatin Assembly Factor-1, illuminating dependency relationships among protein domains involved in binding histones and DNA.\n\nCentral conclusions:\n\n1) In the absence of the N-terminal region of the large Cac1 subunit, yeast CAF-1 displays little affinity for DNA, but instead binds histones H3/H4.\n\n2) Histone binding stimulates DNA binding by the winged-helix domain (WHD) of the large CAF-1 subunit.\n\n3) Binding of the WHD of CAF-1 to short DNA fragments facilitates H3/H4 tetramerization (while still bound to two CAF-1 proteins).\n\n4) Different lengths of DNA lead to different requirements for complex formation, with longer DNAs requiring tetramerization of H3/H4 and favoring the release of CAF-1.\n\n5) Deletion of the WHD domain causes defects in Okazaki fragment length and heterochromatic gene silencing, indirect measures of nucleosome deposition. In vitro, WHD mutations cause modest defects in nucleosome deposition, but only if the N-terminal DNA binding domain of the large CAF-1 subunit is missing.\n\nEssential revisions:\n\nA) The following points describe concerns or questions raised by the reviewers, where additional experiments would be helpful. Please consider whether these experiments can be done. If not, please explain why and clarify the issues in the revised manuscript.\n\n1) The authors should address whether the deletion of the WHD alters the kinetics or fidelity of the nucleosomes assembly reaction. Currently, it is unclear whether this DNA binding is only involved in localization of CAF-1 to the substrate DNA or whether binding to the DNA also involves a facilitated transfer of the DNA from CAF-1 to the newly formed nucleosome/tetrasome. Would binding to PCNA substitute for the role of the WHD?\n\n2) The complex with tCAF-1, H3/H4, and DNA reported in Figure 4B is particularly intriguing. Some structural or dynamic data, perhaps from HX, using this complex would add substantial insight into the authors' model for the mechanism of tetrasome assembly by CAF-1.\n\n3) Figure 4E, Lane 3. XL-H3-H4 seems to have the same effect as DNA in promoting (FL CAF-1)2.(H3-H4)2 formation. This suggests that the formation of this species requires cross-linking between H3-H4 dimers by DSS that may be promoted by the 18-mer of DNA. DSS cross-linking assays with H3-H4 +/- 18mer-DNA would be a good control for this.\n\n4) Figure 7E. The WHD mutants seem to work very differently than the empty vector control. Why is this? The authors should compare to other mutants (e.g. in the acidic region required for histone binding and/or in the PCNA interaction domain). Also, Figure 7E \u2013 a different color should be used to illustrate the WT sample and the DNA ladder.\n\nB) The following points should be clarified in the revised manuscript, and additional experimental work is not essential.\n\n1) The text should be amended according to the concerns in sections a-d below.\n\na) The main claims of the paper are stated with a strong tendency for hyperbole and these claims should be toned down. For example:\n\nThe authors claim their study is the \"\u2026first direct mechanism for histone deposition by a histone chaperone\u2026\". \"Direct\" seems too 'user-defined' in this instance. And \"first\" will certainly be contested by others in the field.\n\nIn the Abstract: \"here we elucidate the CAF1:H3-H4 binding mode and mechanism of nucleosome assembly.\" This work provides insight to the process, but the matter is far from solved, and Figure 7A indicates that there may be multiple H3/4 binding modes and assembly mechanisms.\n\nDiscussion: \"This suggests that not all proteins that bind histones (i.e. histone chaperones) are in fact nucleosome assembly factors.\" This is already well appreciated in the field and not addressed in the current work.\n\nb) There are a number of statements that should be better referenced. For example:\n\nIn several places the authors refer to H3-H4 binding sites in CAF-1 (Cac1 acidic domain and Cac2) and refer to their own related but unpublished manuscript. It would be more appropriate to cite Liu et al., 2016 and Kim et al., 2016 unless their data do not agree with those reported in the related manuscript by the authors.\n\nResults: \"it appears that the primary role of CAF-1 is to promote the formation of an ordered (H3-H4)2-DNA complex, the tetrasome.\" This statement corroborates previous work that should be referenced.\n\nc) The authors need to do a better job of explaining/synthesizing earlier results/conclusions from others (e.g. eLife paper from Liu et al. 2016). Likewise, the conclusions of this paper seem to contradict those of Winkler et al. 2012 from the same laboratory. Yet this paper is not cited in the places where the authors refer to previous studies showing CAF-1 promoting H3-H4 tetramer formation (Liu et al. 2012, 2016) (e.g., Introduction, fifth paragraph). The authors should clarify how the new work differs from previous results both their own and other labs, and discuss potential reasons (different assays, buffers, etc.) why different conclusions have been reached previously. This discussion may become quite technical, but it is essential to clarify the advances made here and distinguish them from previous studies. The current discussion misses the opportunity to clarify how the authors think previous experiments 'got it wrong' on issues of stoichiometry and/or to synthesize the findings coming from other studies.\n\nd) The highly speculative discussion of the authors' ideas on how stoichiometry might yield inheritance of histones at replication should be shortened/eliminated as it is not clear that the current studies provide new insights into this process. Indeed, it is not clear that CAF-1 functions in this process at all (CAF-1 may only function during new histone deposition).\n\n2) The authors use HX-MS experiments to probe changes in CAF-1 conformation upon H3-H4 binding. Similar experiments were carried out by Liu et al. 2016. The authors should compare the data sets and highlight potential differences or, if there is not substantial new information, remove the figure.\n\n3) The model presented in Figure 6 predicts that the WHD interacts with the acidic region. Can the authors confirm this with direct binding assays or is there already evidence for this in the recent crosslinking studies of CAF-1 (Liu et al., 2016; Kim et al., 2016)?\n\n4) As mentioned by the authors, crosslinking experiments showed contacts between the WHD and histones. This seems at odds with the model predicted in this paper. Could it be that the WHD aids histone binding for non-chromatin bound CAF-1, and in vivo only switches to bind DNA once the N-terminal region has recruited CAF-1 to PCNA and new DNA? The authors should consider this possibility.\n",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0fd10d61-e3e2-42a2-9ab7-e836081f0b6e",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C1",
+      "claim": "Recombinant CAF-1 assembles nucleosomes in vitro in the absence of the replication machinery or other nuclear proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether recombinant CAF-1 assembles nucleosomes in vitro in absence of the replication machinery or other nuclear proteins remains an open question (Gaillard et al., 1996; Kadyrova et al., 2013; Kaufman et al., 1995; Smith and Stillman, 1991), which we set out to resolve in a purified in vitro system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes experiments demonstrating nucleosome assembly by recombinant CAF-1 in a purified system, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ed115ebc-53de-4d29-901e-f9d78d968a58",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C2",
+      "claim": "tCAF-1 is sufficient for nucleosome assembly in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that tCAF-1 and FL CAF-1 are both active and efficient nucleosome assembly factors in absence of other nuclear proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through NAQ assay results shown in Figure 1, where tCAF-1 produces nucleosomal DNA fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "94fed2a5-23d5-43fa-8d5a-41db90084646",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C3",
+      "claim": "The N-terminal portion of Cac1 is not required for nucleosome assembly activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also indicate that the N-terminal portion of Cac1, which in vivo is associated with PCNA, is not required for the nucleosome assembly activity, and that tCAF-1 contains all the requisite components for histone deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of FL CAF-1 and tCAF-1 activities in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "5357188a-e876-4a6e-8536-dab751b0da6a",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C4",
+      "claim": "Nucleosome assembly activity increases in a CAF-1 dose dependent manner and reaches its maximum at a two-fold excess of CAF-1 complex per (H3-H4)2 tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome assembly activity increases in a CAF-1 dose dependent manner, and reaches its maximum at a two-fold excess of CAF-1 complex per (H3-H4)2 tetramer (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from NAQ assay shown in Figure 1c demonstrates dose-dependent activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "2b44f5aa-6398-4251-8594-cdef514dbb78",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C5",
+      "claim": "The primary role of CAF-1 is to promote the formation of an ordered (H3-H4)2\u2022DNA complex, the tetrasome.",
+      "claim_type": "EXPLICIT",
+      "source": "it appears that the primary role of CAF-1 is to promote the formation of an ordered (H3-H4)2\u2022DNA complex, the tetrasome, as noted previously (Smith and Stillman, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observations that H2A-H2B can spontaneously associate with tetrasomes and CAF-1 has lower affinity for H2A-H2B compared to H3-H4.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "5d272699-92af-4f21-8c19-c9937898daec",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C7",
+      "claim": "Each CAF-1 complex has a single binding site for one H3-H4 dimer, and CAF-bound H3-H4 is still able to tetramerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these experiments indicate that each CAF-1 complex has a single binding site for one H3-H4 dimer, and that CAF-bound H3-H4 is still able to tetramerize, either with or without its own bound CAF-1 complex (Figure 2\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple biophysical techniques including SV-AUC, Job plot, and SEC-MALS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "03204c7b-4eef-49a0-89d4-47c4bb035c3e",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C8",
+      "claim": "The four-helix bundle formed by two H3 molecules in the (H3-H4)2 tetramer is important for CAF-1 complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the four-helix bundle formed by two H3 molecules in the (H3-H4)2 tetramer is important for this complex formation and perhaps the only point of contact between the two CAF-1 moieties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that complexes are stable with XL(H3-H4)2 but not with WTH3-H4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "23c5eab6-d323-457e-9010-97e63193e3f7",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C9",
+      "claim": "CAF-1 binding to H3-H4 induces protection from exchange of an extended area on both WT and DMH3-H4.",
+      "claim_type": "EXPLICIT",
+      "source": "CAF-1 binding to H3-H4 induces protection from exchange of an extended area on both WT and DMH3-H4, as opposed to a distinct region of protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through HX-MS experiments shown in Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "0dea597d-509b-43a2-8fe9-7f402720ce01",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C10",
+      "claim": "CAF-1 binding to histones elicits a global conformational effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that CAF-1 binding to histones elicits a global conformational effect, which was also observed for other chaperone-histone complexes (D'Arcy et al., 2013; DeNizio et al., 2014) (Figure 2d and Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HX-MS data and comparison with published studies on other chaperones.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "676face2-d8d9-44de-beb6-beb5f822cf0b",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C11",
+      "claim": "The H3 region mediating H3-H4 tetramerization through a four-helix bundle (\u03b13; aa 111\u2013126) shows no significant changes in HX upon CAF-1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no significant changes in HX were detected in the H3 region mediating H3-H4 tetramerization through a four-helix bundle (\u03b13; aa 111\u2013126) (Figure 2d and Figure 2\u2014figure supplement 2a), confirming our interpretation that this region is exposed and available for tetramer formation in the CAF-1\u2022H3-H4 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "HX-MS data shown in Figure 2d and Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "529a4b7e-f153-492b-8fd5-39aa95163e95",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C12",
+      "claim": "CAF-1 binds to one H3-H4 dimer that results in its overall stabilization and permits tetramerization in its CAF-1 bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that CAF-1 binds to one H3-H4 dimer that results in its overall stabilization, and that permits tetramerization in its CAF-1 bound form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experiments including HX-MS, SV-AUC, and binding studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "3c258d1f-4ec8-49b3-bfc7-d4705b19b268",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C13",
+      "claim": "The C-terminal Cac1 WHD is a DNA binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we noticed that the C-terminal Cac1 WHD, recently identified as a DNA binding domain (Zhang et al., 2016), showed deprotection upon histone binding in the HX-MS analysis (Figure 2\u2014figure supplement 2c), also seen when FL CAF-1 was used (Liu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from published work and confirmed by HX-MS data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "8eb1ca50-acef-4f4a-b0fe-00411906339c",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C14",
+      "claim": "tCAF-1 does not bind DNA in absence of histones, despite containing a functional WHD domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, tCAF-1 does not bind DNA in absence of histones, despite containing a functional WHD domain (Figure 1\u2014figure supplement 1b and below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through EMSA experiments shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "d02e7fde-607d-426c-871b-1eaebb4193f7",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C15",
+      "claim": "In absence of histones, the WHD may be inhibited by an intramolecular interaction with the acidic region on Cac1.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that in absence of histones the WHD may be inhibited by an intramolecular interaction with the acidic region on Cac1, a component of the histone binding module (Liu et al., 2016) together with Cac2 (Mattiroli et al., 2017) (histone binding module is referred to as HBM, Figure 3a and Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experiments with mutant tCAF-1 complexes shown in Figure 3a-b.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "1aa15966-16b7-4e53-b172-e677d2668812",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C16",
+      "claim": "The Cac1 acidic domain engages in an inhibitory intramolecular interaction with the WHD, thereby masking its DNA binding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the Cac1 acidic domain engages in an inhibitory intramolecular interaction with the WHD, thereby masking its DNA binding capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by competition experiments and cross-linking data shown in Figure 3c and Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "009cec4d-a680-43bb-b100-2fee0ce2c962",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C17",
+      "claim": "H3-H4 binding releases the DNA binding activity of tCAF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly test if H3-H4 binding can unmask the DNA binding activity of the WHD, we established a gel-based DNA binding assay with tCAF-1 and histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through EMSA experiments shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "a66a1e7e-986a-403d-9eec-9e6fb4aef8f1",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C18",
+      "claim": "H3-H4 triggers DNA binding by the WHD, by releasing it from an inhibitory intramolecular interaction with the histone binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggest that H3-H4 triggers DNA binding by the WHD, by releasing it from an inhibitory intramolecular interaction with the histone binding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments with WHD mutants shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "df401dd2-e0db-4a65-a942-a09bd99d174a",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C19",
+      "claim": "Histone tetramerization is not required for the formation of the tCAF-1\u2022H3-H4\u202218DNA ternary intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "As 18DNA can interact with XL(H3-H4)2 (Figure 4b, lane 4, demonstrated by disappearance of the free DNA band into the well), this strongly suggests that two CAF-1 moieties remain bound to the XL(H3-H4)2 tetramer, otherwise the exposed H3-H4 dimer in the constitutive tetramer XL(H3-H4)2 would remain free to mediate DNA binding even with a complex with a mutated WHD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through EMSA experiments with DMH3-H4 shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "c5e19359-97fa-496e-bd8c-3e41448d57c7",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C20",
+      "claim": "18DNA promotes the association of two tCAF-1\u2022WTH3-H4 moieties.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the tCAF-1\u2022WTH3-H4\u202218DNA and the tCAF-1\u2022DMH3-H4\u202218DNA complexes migrate similarly to the complex formed with XL(H3-H4)2, which we know contains two tCAF-1 moieties (Figure 2b\u2013c), and considerably slower than the tCAF-1\u2022WTH3-H4 complexes without DNA (Figure 4b, lane 5\u20139, 488-H3-H4 red signal), we postulated that 18DNA promotes the association of two tCAF-1\u2022WTH3-H4 moieties, and in this assembly histone tetramerization is not a requirement for complex formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from EMSA migration patterns and comparison with XL(H3-H4)2 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "38c9e1f6-66d2-492c-847b-70fc00e218b6",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C21",
+      "claim": "Titrating 18DNA into a FL CAF-1\u2022WTH3-H4 complex strongly promotes the formation of a discrete high molecular weight assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, titrating 18DNA into a FL CAF-1\u2022WTH3-H4 complex strongly promoted the formation of a discrete high molecular weight assembly, which did not accumulate when the histones were omitted or when the Cac1 WHD was mutated (Figure 4d \u2013 Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through in solution cross-linking experiments shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ef90fbf9-9c78-47cc-9ae1-47f429995a9f",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C22",
+      "claim": "The high molecular weight assembly formed by FL CAF-1\u2022WTH3-H4 with 18DNA has a molar mass consistent with (CAF-1)2\u2022(H3-H4)2\u202218DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing these reactions through SEC-MALS, we confirmed that this species has a molar mass consistent with the assembly of (CAF-1)2\u2022(H3-H4)2\u202218DNA (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "SEC-MALS data shown in Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "2938dffb-d271-491d-b790-f89b79668435",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C23",
+      "claim": "Titrating 18DNA into H3-H4 in absence of CAF-1 does not significantly stimulate the formation of (H3-H4)2 tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, titrating 18DNA into H3-H4 in absence of CAF-1 did not significantly stimulate the formation of (H3-H4)2 tetramer, confirming that the association of two H3-H4 dimers under these conditions requires the presence of the CAF-1 chaperone (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment shown in Figure 4\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "1180861a-3fdc-4318-958e-99d49b4e8227",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C24",
+      "claim": "Two FL CAF-1 complexes associate on 18DNA via their WHD domains when bound to histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that two FL CAF-1 complexes associate on a 18DNA via their WHD domains, but only do so when bound to histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from cross-linking and SEC-MALS experiments shown in Figure 4d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "4f46a6d1-1287-425c-a43f-d47f2323b171",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C25",
+      "claim": "Two Cac1 WHDs cooperatively bind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "SEC-MALS experiments demonstrate that this species contains two WHD domains, and that the binding of two WHDs to a 18DNA is preferred even at a 1:1 WHD to DNA stoichiometry (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "SEC-MALS data shown in Figure 4f demonstrates 2:1 WHD:DNA stoichiometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "a8f07c43-f6a5-42f1-87f1-612c9f50e25a",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C26",
+      "claim": "The Cac1 WHD elutes as a monomer on SEC-MALS in absence of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the Cac1 WHD elutes as a monomer on SEC-MALS in absence of DNA (Liu et al., 2016; Zhang et al., 2016) (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "SEC-MALS data shown in Figure 4f and cited from published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "22ee1ef1-f644-4eef-8ff2-5be82592d24e",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C27",
+      "claim": "The interaction between DNA and the WHD is triggered by histone binding to CAF-1 and promotes the juxtaposition of two CAF-1 complexes, each pre-loaded with an H3-H4 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data support a model in which the interaction between DNA and the WHD is triggered by histone binding to CAF-1, and this promotes the juxtaposition of two CAF-1 complexes, each pre-loaded with an H3-H4 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple experiments including EMSA, cross-linking, and SEC-MALS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "454e33f2-b221-49a6-94f0-19b19a1f36f8",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C28",
+      "claim": "The DNA-mediated association of two histone-bound CAF-1 complexes may promote the formation of the (H3-H4)2 tetramer on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the DNA-mediated association of two histone-bound CAF-1 complexes may promote the formation of the (H3-H4)2 tetramer on DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ada2d7ce-a45a-4954-af40-3c2e509f1662",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C29",
+      "claim": "After the initial interaction via the Cac1 WHD, the formation of the ternary intermediate becomes dependent on the assembly of the (H3-H4)2 tetramer with DNA of increasing length.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, after the initial interaction via the Cac1 WHD, the formation of the ternary intermediate becomes dependent on the assembly of the (H3-H4)2 tetramer with DNA of increasing length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experiments with 33DNA showing requirement for tetramerization (Figure 5b).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "9e99a3fc-de1c-4320-ab15-41adaa02e9b7",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C30",
+      "claim": "Histone tetramerization is required for the formation of the ternary complex with 33DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the ternary complex containing 33DNA could not be stabilized with the constitutively dimeric DMH3-H4 (Figure 5b). This is surprising, as this histone mutant is sufficient to activate DNA binding by the WHD, as seen with the 18DNA (Figure 4a). These results demonstrate that histone tetramerization is required in this context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EMSA experiments shown in Figure 5b demonstrate inability of DMH3-H4 to form complex with 33DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "31c629cb-9325-407b-8a93-7ac9e12ccbd1",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C31",
+      "claim": "DNA of sufficient length partially destabilizes the CAF-1\u2022histone interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in cross-linking experiments with FL CAF-1 we noticed a similar trend, wherein the formation of a (FL CAF-1)2\u2022XL(H3-H4)2\u2022DNA complex was disfavored with 33DNA (Figure 5d, lane 5 - Figure 5\u2014figure supplement 1c). These observations support the idea that DNA of sufficient length partially destabilizes the CAF-1\u2022histone interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cross-linking and SEC-MALS experiments shown in Figure 5d and Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "88ee00cb-caa6-42e6-8d75-358012f1331b",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C32",
+      "claim": "With 79 bp DNA, no intermediate could be formed and only the final assembly products, i.e. (H3-H4)2\u2022DNA complexes, are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, with a longer DNA (79 bp, 79DNA), suitable for complete tetramer wrapping, no intermediate could be formed and only the final assembly products, i.e. (H3-H4)2\u2022DNA complexes, are detected (Figure 5\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EMSA experiments shown in Figure 5\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "e25d2db0-f449-4cca-a7da-7663f0ecc18f",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C34",
+      "claim": "H3-H4 dimer interaction with the CAF-1 complex releases and activates the Cac1 WHD to allow its interaction with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data point to a model for CAF-1-mediated tetrasome formation in which H3-H4 dimer interaction with the CAF-1 complex releases and activates the Cac1 WHD to allow its interaction with DNA (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of mechanism based on multiple experiments, illustrated in Figure 6a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "66384bae-2e3f-4f47-a6dc-bb9112a4a947",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C35",
+      "claim": "DNA interaction promotes the association of two histone-bound CAF-1 complexes via cooperative DNA binding of the Cac1 WHDs.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction promotes the association of two histone-bound CAF-1 complexes, via cooperative DNA binding of the Cac1 WHDs (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mechanism illustrated in Figure 6b, supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "bacc766f-a3d5-408e-96e1-041aa90d4344",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C37",
+      "claim": "The integrity of DNA binding by the WHD is a pre-requisite for tetrasome formation and nucleosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that the integrity of DNA binding by the WHD is a pre-requisite for tetrasome formation and hence nucleosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Tested through NAQ assay with WHD mutants shown in Figure 7a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "75d35aa2-7e79-491c-a5bd-820ac06727e6",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C38",
+      "claim": "tCAF-1 complexes with a mutated or deleted WHD exhibit reduced nucleosome assembly activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the NAQ assay, tCAF-1 complexes with a mutated or deleted WHD exhibit reduced nucleosome assembly activity (blue bars in Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative NAQ assay data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "d22ca044-0d7d-4fb7-8a27-466a8a6e971c",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C39",
+      "claim": "WHD mutant complexes preferentially form subnucleosomal particles with protected DNA fragments around 100 bp rather than 126\u2013160 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, with these mutant tCAF-1 complexes we also observed a dose-dependent increase in protected DNA fragments around 100 bp rather than the 126\u2013160 bp fragments observed with tCAF-1 and wild type CAF-1, indicative of the formation of subnucleosomal particles (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NAQ assay data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "470e42a0-4fdc-4a46-b8ec-599dad70aa2f",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C40",
+      "claim": "Abrogating WHD-dependent DNA binding or preventing H3-H4 tetramerization result in the same deposition product in vitro: a single H3-H4 dimer bound to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that either abrogating WHD-dependent DNA binding, or preventing H3-H4 tetramerization, result in the same deposition product in vitro, a single H3-H4 dimer bound to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through tetrasome assembly assays shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "6ca778cf-e592-4665-85d7-b7a1dc23ef1d",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C41",
+      "claim": "The WHD domain is important for Cac1 functions in the context of full-length Cac1 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While WT Cac1 protein could completely rescue the growth phenotype on FOA plates, FL Cac1 WHD mutants did not, reflected by delayed growth (Figure 7d and Figure 7\u2014figure supplement 1b). This indicates that the WHD domain is indeed important for Cac1 functions in the context of full-length Cac1 in vivo, in agreement with previous work (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Yeast heterochromatin maintenance assay shown in Figure 7d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "9fc3f569-ce3c-4f14-84bb-1c2de0ed0986",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C42",
+      "claim": "Okazaki fragments purified from yeast strains carrying mutations or deletions in the Cac1 WHD domain do not exhibit the periodicity characteristic of a proficient replication-coupled nucleosome assembly pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Okazaki fragments purified from these strains do not exhibit the periodicity characteristic of a proficient replication-coupled nucleosome assembly pathway, but rather peak at length above 400 bp (Figure 7e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Okazaki fragment analysis shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "adc31751-ffa0-4b14-9624-25c806cf276a",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C43",
+      "claim": "The integrity of the Cac1 WHD is required for proper nucleosome formation on the lagging strand during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear difference in Okazaki fragment formation between the WT and the WHD mutations confirms a deficiency in timely and accurate replication-coupled nucleosome assembly in vivo. These experiments show that the integrity of the Cac1 WHD is required for proper nucleosome formation on the lagging strand during DNA replication, fully supporting our model that places this domain at the heart of the CAF-1 nucleosome assembly mechanism (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Okazaki fragment data shown in Figure 7e supports the proposed mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "11a03575-96eb-4a0d-91f2-db2df0e363e7",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C44",
+      "claim": "Two CAF-1 complexes are needed for the formation of one tetrasome, with each complex contributing a single H3-H4 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work reveals that two CAF-1 complexes are needed for the formation of one tetrasome, with each complex contributing a single H3-H4 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from stoichiometry and assembly experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "dc521796-e055-473d-a611-74e677b98745",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C45",
+      "claim": "The proposed mechanism provides direct evidence for previously proposed models based on in vivo observations.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides direct evidence for previously proposed models based on in vivo observations (Nakano et al., 2011; Tagami et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The experimental findings support previously published models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "a33a0c75-e9dd-4e8e-b3a0-1e6573afa4c0",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C46",
+      "claim": "The WHD remains in close proximity to H3-H4 on CAF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that the WHD remains in close proximity to H3-H4 on CAF-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cross-linking studies cited from Liu et al., 2016 and Kim et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "90ff704a-577e-46f6-b9f9-335c1939ec47",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C47",
+      "claim": "At least two CAF-1 complexes may simultaneously bind to one PCNA trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposed model also demands that two CAF-1 complexes must be located in close proximity to be able to function together in tetrasome assembly. This implies that at least two CAF-1 complexes may simultaneously bind to one PCNA trimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the proposed mechanism requiring two CAF-1 complexes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "cba3e4ca-67c3-4ad3-b336-edcc93acdf03",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C48",
+      "claim": "A combination of relatively low affinity interactions (WHD\u2022DNA, and H3\u2022H3' in the H3-H4 tetramerization interface) work together to drive (H3-H4)2 tetramer deposition onto DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data suggest that a combination of relatively low affinity interactions (WHD\u2022DNA, and H3\u2022H3' in the H3-H4 tetramerization interface) work together to drive (H3-H4)2 tetramer deposition onto DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "31a1b4e3-1103-4d95-bb79-3ce74438d175",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C49",
+      "claim": "An inhibitory intramolecular interaction poises CAF-1 for histone binding and deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "This study describes the mechanism of histone deposition by CAF-1, a reaction that has remained elusive for other histone chaperones. We demonstrate that an inhibitory intramolecular interaction poises CAF-1 for histone binding and deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experiments with acidic region mutants shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "1bfa900d-97c6-4f65-8968-fe359d9d4ad3",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C50",
+      "claim": "H3-H4 dimer binding to CAF-1 activates the cascade of events required for its deposition by unmasking the Cac1 WHD to bind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "H3-H4 dimer binding to CAF-1 activates the cascade of events required for its deposition, by unmasking the Cac1 WHD to bind DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through EMSA experiments shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "47e55818-a994-4605-a8da-4096810a2239",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C51",
+      "claim": "This mechanism ensures that only histone-bound CAF-1 complexes are able to participate in the deposition process.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism ensures that only histone-bound CAF-1 complexes are able to participate in the deposition process, thus optimizing the efficiency of tetrasome assembly and excluding inefficient participation of empty CAF-1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the demonstrated histone-dependent activation of WHD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "d3504fec-432c-4455-9524-17121bd7640c",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C52",
+      "claim": "High affinity histone binding is not sufficient to sustain efficient nucleosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "By mutating the WHD, we uncouple histone binding and deposition, and demonstrate that high affinity histone binding is not sufficient to sustain efficient nucleosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experiments with WHD mutants that retain histone binding but show reduced assembly activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ff758b0b-1d1d-4eb9-a1a9-06a1e5f40da3",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C53",
+      "claim": "Not all proteins that bind histones (i.e. histone chaperones) are efficient nucleosome assembly factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that not all proteins that bind histones (i.e. histone chaperones) are in fact efficient nucleosome assembly factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that histone binding alone is insufficient for assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "e57070e9-f7b1-4a19-8e0a-09f2649f8710",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C54",
+      "claim": "Two independently chaperoned H3-H4 dimers are joined at the very last step of the deposition process, when the DNA is in proximity and available for sequestering the histones from CAF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the observation that two CAF-1\u2022H3-H4 complexes associate to form a tetrasome suggests that two independently chaperoned H3-H4 dimers are joined at the very last step of the deposition process, when the DNA is in proximity and available for sequestering the histones from CAF-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the demonstrated mechanism of tetrasome formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "c6d76bae-9563-43bf-ba7c-45971c064a70",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C55",
+      "claim": "The proposed mechanism does not exclude the possibility of a semiconservative model for chromatin assembly coupled with DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "While convincing evidence supports the conservative model, where parental (H3-H4)2 are deposited in the same nucleosome following DNA replication (Xu et al., 2010), our proposed mechanism does not exclude the possibility of a semiconservative model for chromatin assembly coupled with DNA replication (Tagami et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of implications of the mechanism in relation to published models.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "5c157dfa-c031-4d15-b1a4-29b3ac144b9b",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C56",
+      "claim": "CAF-1 is a histone H3-H4 chaperone composed of three distinct subunits, all of which are conserved from yeast to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "CAF-1 is a histone H3-H4 chaperone, composed of three distinct subunits, all of which are conserved from yeast (named Cac1, Cac2 and Cac3) to humans (Almouzni and M\u00e9chali, 1988; Kaufman et al., 1995, 1997; Smith and Stillman, 1989; Tyler et al., 1999; Verreault et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from multiple published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "06ef13c2-6ac6-4f95-a22e-e48ba13aa4aa",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C57",
+      "claim": "CAF-1 directly interacts with the replisome via the processivity factor PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "CAF-1 directly interacts with the replisome via the processivity factor PCNA (Krawitz et al., 2002; Moggs et al., 2000; Rolef Ben-Shahar et al., 2009; Shibahara and Stillman, 1999; Zhang et al., 2000) and bridges interactions with epigenetic factors (Loyola et al., 2009; Murzina et al., 1999; Quivy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from multiple published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ff7df680-0ab9-4f75-b9f9-706ec49f452f",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C58",
+      "claim": "CAF-1 is indispensable for the maintenance of cell identity and for life in multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique role of CAF-1 in integrating chromatin assembly with DNA synthesis and epigenetic signaling makes it indispensable for the maintenance of cell identity and for life in multicellular organisms (Barbieri et al., 2014; Cheloufi et al., 2015; Houlard et al., 2006; Ishiuchi et al., 2015; Nakano et al., 2011; Song et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from multiple published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "dabcdb37-19ea-4442-af5e-951796b3ad6a",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C59",
+      "claim": "In yeast, CAF-1 deletion is viable but results in aberrant transcriptional silencing programs and sensitivity to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, CAF-1 deletion is viable but results in aberrant transcriptional silencing programs and sensitivity to DNA damage (Kaufman et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from published source.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "7219960d-4dbf-404c-a0c2-ee3b806d9b83",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C60",
+      "claim": "Current evidence favors a conservative model for H3-H4 inheritance, where parental (H3-H4)2 tetramers are not split and distributed onto the daughter strands but rather deposited as one unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Current evidence favors a conservative model for H3-H4 inheritance, where parental (H3-H4)2 tetramers are not split and distributed onto the daughter strands but rather deposited as one unit (Xu et al., 2010), but alternative models have also been proposed (Tagami et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of published evidence and models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "8175445c-d982-427f-943c-bc9a4519572e",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C61",
+      "claim": "The estimated dissociation constant for tetramerization of the H3-H4 dimer is considerably weaker than the affinity of H3-H4 for DNA or for histone chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated dissociation constant for tetramerization of the H3-H4 dimer is considerably weaker than the affinity of H3-H4 for DNA or for the histone chaperones (Donham et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from published source.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "3389048b-7c18-41e2-999c-aed7eb765dcb",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "claim_id": "C62",
+      "claim": "The length of Okazaki fragments generated during replication depends on proper nucleosome assembly by CAF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically demonstrate that the phenotype observed with CAF-1 complex that is mutated in the WHD is due to an aberrant nucleosome assembly function of Cac1 in vivo, we took advantage of the fact that the length of Okazaki fragments generated during replication depends on proper nucleosome assembly by CAF-1 (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5c41776d-2645-4702-a40f-2a3ec5027207",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Recombinant CAF-1 (both full-length and truncated tCAF-1) assembles nucleosomes in vitro without the replication machinery or other nuclear proteins. The N-terminal portion of Cac1 is not required for nucleosome assembly activity, and nucleosome assembly increases in a dose-dependent manner, reaching maximum at a two-fold excess of CAF-1 per (H3-H4)2 tetramer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by the NAQ assay data shown in Figure 1, which demonstrates nucleosome assembly by both FL and tCAF-1 in a purified system. The dose-dependent activity and stoichiometry are quantitatively demonstrated. Multiple controls validate that the DNA protection pattern is specific to nucleosome formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "15181ea7-1323-46c6-abfd-864ebc414de9",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The primary role of CAF-1 is to promote the formation of an ordered (H3-H4)2\u2022DNA complex, the tetrasome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by observations that H2A-H2B can spontaneously associate with tetrasomes (Figure 1\u2014figure supplement 1d) and that CAF-1 has significantly lower affinity for H2A-H2B compared to H3-H4 (Figure 1\u2014figure supplement 1e). The NAQ assay shows primarily nucleosomal/hexasomal products, consistent with tetrasome formation as the primary CAF-1 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "fe7b9898-b84b-45c8-8e0f-0f69c9cccf3b",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Each CAF-1 complex has a single binding site for one H3-H4 dimer, and CAF-bound H3-H4 can still tetramerize. The four-helix bundle formed by two H3 molecules in the (H3-H4)2 tetramer is important for CAF-1 complex formation and remains exposed in the CAF-1\u2022H3-H4 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C11, and C12 are strongly supported by multiple orthogonal biophysical techniques including SV-AUC (Figure 2a), FRET-based Job plot (Figure 2b), SEC-MALS (Figure 2c), and HX-MS (Figure 2d). The data consistently show 1:1 stoichiometry with H3-H4 dimers and 2:1 stoichiometry with XL(H3-H4)2 tetramers. HX-MS data confirm that the H3 \u03b13 helix (aa 111-126) shows no significant changes upon CAF-1 binding, supporting the availability of this region for tetramerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "08b1dff3-f73d-4392-a87e-1cb1c8a35dbe",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CAF-1 binding to H3-H4 induces protection from exchange of an extended area on both WT and DMH3-H4, eliciting a global conformational effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 are supported by HX-MS data (Figure 2\u2014figure supplement 2a) showing widespread protection rather than discrete regions. This global conformational effect is consistent with observations for other chaperone-histone complexes cited in the manuscript (D'Arcy et al., 2013; DeNizio et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "edd6ffbd-3b1c-4aa3-9ed6-4a1010525b99",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The C-terminal Cac1 WHD is a DNA binding domain that is inhibited by an intramolecular interaction with the acidic region on Cac1 in the absence of histones. tCAF-1 does not bind DNA without histones despite containing a functional WHD domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by multiple lines of evidence: HX-MS data showing WHD deprotection upon histone binding (Figure 2\u2014figure supplement 2c), EMSA experiments demonstrating lack of DNA binding by tCAF-1 alone (Figure 1\u2014figure supplement 1b), and experiments with acidic region mutants (tCAF_Nac and tCAF_\u2206ac) that gain DNA binding activity (Figure 3a-b). Competition experiments (Figure 3c) and cross-linking data (Figure 3\u2014figure supplement 1b) further support the inhibitory intramolecular interaction model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "a85463e7-fb0a-4309-808d-cf2ab0a988cd",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "H3-H4 binding releases the DNA binding activity of tCAF-1 by triggering DNA binding by the WHD, releasing it from an inhibitory intramolecular interaction with the histone binding region. This activates the cascade of events required for histone deposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, and C50 are strongly supported by EMSA experiments (Figure 3d) showing that tCAF-1 gains DNA binding activity only when pre-incubated with histones, and that WHD mutants (tCAF_WHD**) fail to form the ternary complex despite retaining histone binding. The mechanism is validated through multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "3b064114-ddf7-47fc-b651-610619f0bcdd",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "18DNA promotes the association of two tCAF-1\u2022WTH3-H4 moieties, forming a discrete high molecular weight assembly with molar mass consistent with (CAF-1)2\u2022(H3-H4)2\u202218DNA. Histone tetramerization is not required for formation of this ternary intermediate, and the association requires the presence of CAF-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are well-supported by converging evidence from EMSA experiments with DMH3-H4 and XL(H3-H4)2 (Figure 4a-c), in solution cross-linking experiments (Figure 4d-e), and SEC-MALS analysis (Figure 4\u2014figure supplement 1b). The control experiment showing that 18DNA does not stimulate (H3-H4)2 tetramer formation in the absence of CAF-1 (Figure 4\u2014figure supplement 1d) is critical for establishing CAF-1's role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "f00d99af-97dc-41f7-9f96-7364e3b10096",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two Cac1 WHDs cooperatively bind DNA. The Cac1 WHD elutes as a monomer on SEC-MALS in absence of DNA, but forms a 2:1 complex with 18DNA even at 1:1 stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 are supported by SEC-MALS data (Figure 4f) demonstrating that the WHD is monomeric without DNA but preferentially binds DNA in a 2:1 stoichiometry. This cooperative binding is consistent with observations for other WHD domains cited in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The interaction between DNA and the WHD is triggered by histone binding to CAF-1 and promotes the juxtaposition of two CAF-1 complexes, each pre-loaded with an H3-H4 dimer. This DNA-mediated association may promote the formation of the (H3-H4)2 tetramer on DNA through a combination of relatively low affinity interactions (WHD\u2022DNA and H3\u2022H3' in the tetramerization interface).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, C34, C35, and C48 represent the core mechanistic model supported by the cumulative evidence from EMSA, cross-linking, SEC-MALS, and HX-MS experiments throughout the manuscript. The model is illustrated in Figure 6 and is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "e351c226-0cd4-4984-9c8b-e03419504faf",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "After the initial interaction via the Cac1 WHD, the formation of the ternary intermediate becomes dependent on the assembly of the (H3-H4)2 tetramer with DNA of increasing length. With 33DNA, histone tetramerization is required, and DNA of sufficient length partially destabilizes the CAF-1\u2022histone interaction. With 79 bp DNA, only final assembly products are detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by EMSA experiments with different DNA lengths (Figure 5a-b, Figure 5\u2014figure supplement 1d). The inability of DMH3-H4 to form the ternary complex with 33DNA (Figure 5b) despite activating WHD with 18DNA (Figure 4a) demonstrates the requirement for tetramerization. Cross-linking and SEC-MALS data (Figure 5d, Figure 5\u2014figure supplement 1b-c) support the destabilization of CAF-1\u2022histone interaction with longer DNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "196d565e-0a77-472b-b96f-6c72be8e9608",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The integrity of DNA binding by the WHD is a pre-requisite for tetrasome formation and nucleosome assembly. tCAF-1 complexes with mutated or deleted WHD exhibit reduced nucleosome assembly activity and preferentially form subnucleosomal particles. Abrogating WHD-dependent DNA binding or preventing H3-H4 tetramerization result in the same deposition product: a single H3-H4 dimer bound to DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are strongly supported by NAQ assay data (Figure 7a-b) showing reduced nucleosome assembly and increased subnucleosomal particles with WHD mutants. Tetrasome assembly assays (Figure 7c, Figure 7\u2014figure supplement 1a) demonstrate that WHD mutants and DMH3-H4 produce the same disome product, directly supporting the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "b9f0e9e3-9c27-493c-8ca8-8c39933641d5",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The WHD domain is important for Cac1 functions in vivo. Yeast strains carrying mutations or deletions in the Cac1 WHD domain show defects in heterochromatin maintenance and produce Okazaki fragments that do not exhibit the periodicity characteristic of proficient replication-coupled nucleosome assembly. The integrity of the Cac1 WHD is required for proper nucleosome formation on the lagging strand during DNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by in vivo experiments: the heterochromatin maintenance assay (Figure 7d) shows delayed growth with WHD mutants, and Okazaki fragment analysis (Figure 7e) demonstrates aberrant fragment length distribution. These in vivo results validate the in vitro mechanistic findings and demonstrate the physiological importance of the WHD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "953f0bae-d383-4187-b574-455afa014fe4",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two CAF-1 complexes are needed for the formation of one tetrasome, with each complex contributing a single H3-H4 dimer. This provides direct evidence for previously proposed models based on in vivo observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 are supported by the cumulative stoichiometry and assembly data throughout the manuscript. The conclusion is consistent with all experimental observations and provides mechanistic support for models proposed by Nakano et al., 2011 and Tagami et al., 2004.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "ecb21521-3a91-4634-86ce-59cdf080cdb9",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The WHD remains in close proximity to H3-H4 on CAF-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by cross-linking studies cited from Liu et al., 2016 and Kim et al., 2016, which found cross-links between the WHD and histones, and between the WHD and Cac2. The authors' interpretation that this reflects physical proximity rather than direct interaction is reasonable given their experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "0e70f8b9-5f01-4752-88f7-6db77e9a0b10",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "At least two CAF-1 complexes may simultaneously bind to one PCNA trimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 is a logical inference from the proposed mechanism requiring two CAF-1 complexes for tetrasome assembly, but it is explicitly stated as speculation requiring further investigation. No direct experimental evidence is provided for CAF-1-PCNA stoichiometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "25609134-6ad7-42a7-9948-654437f85288",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "An inhibitory intramolecular interaction poises CAF-1 for histone binding and deposition, ensuring that only histone-bound CAF-1 complexes participate in the deposition process. High affinity histone binding is not sufficient to sustain efficient nucleosome assembly, suggesting that not all histone chaperones are efficient nucleosome assembly factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C51, C52, and C53 are supported by experiments with acidic region mutants (Figure 3) and WHD mutants that retain histone binding but show reduced assembly activity (Figure 7a). The uncoupling of histone binding and deposition through WHD mutation provides strong evidence for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "67206067-b322-4395-8f85-d2a088507210",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Two independently chaperoned H3-H4 dimers are joined at the very last step of the deposition process, when the DNA is in proximity and available for sequestering the histones from CAF-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by the demonstrated mechanism showing that two CAF-1\u2022H3-H4 complexes associate on DNA and that DNA of sufficient length promotes histone transfer. The conclusion follows logically from the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "1117bb35-f80c-4649-a726-029b7175ae33",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The proposed mechanism does not exclude the possibility of a semiconservative model for chromatin assembly coupled with DNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is explicitly stated as speculation in the Discussion. While the mechanism is compatible with both conservative and semiconservative models, no experiments directly address histone inheritance patterns during replication. The authors acknowledge that further experiments are required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    },
+    {
+      "id": "5ad287cc-9349-401b-ad0f-d7481c716e6e",
+      "content_id": "fe3bbb7a-42b9-453d-9b96-dd934c9da6f7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background knowledge claims about CAF-1 structure, function, and biological importance, including its conservation, interaction with PCNA, role in cell identity, effects of deletion in yeast, models of H3-H4 inheritance, and relationship to Okazaki fragment length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 represent established knowledge from the literature, appropriately cited from multiple published sources. These provide necessary context for the current work and are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:21:34.427070Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fd10d61-e3e2-42a2-9ab7-e836081f0b6e",
+      "result_id": "5c41776d-2645-4702-a40f-2a3ec5027207"
+    },
+    {
+      "claim_id": "ed115ebc-53de-4d29-901e-f9d78d968a58",
+      "result_id": "5c41776d-2645-4702-a40f-2a3ec5027207"
+    },
+    {
+      "claim_id": "94fed2a5-23d5-43fa-8d5a-41db90084646",
+      "result_id": "5c41776d-2645-4702-a40f-2a3ec5027207"
+    },
+    {
+      "claim_id": "5357188a-e876-4a6e-8536-dab751b0da6a",
+      "result_id": "5c41776d-2645-4702-a40f-2a3ec5027207"
+    },
+    {
+      "claim_id": "2b44f5aa-6398-4251-8594-cdef514dbb78",
+      "result_id": "15181ea7-1323-46c6-abfd-864ebc414de9"
+    },
+    {
+      "claim_id": "5d272699-92af-4f21-8c19-c9937898daec",
+      "result_id": "fe7b9898-b84b-45c8-8e0f-0f69c9cccf3b"
+    },
+    {
+      "claim_id": "03204c7b-4eef-49a0-89d4-47c4bb035c3e",
+      "result_id": "fe7b9898-b84b-45c8-8e0f-0f69c9cccf3b"
+    },
+    {
+      "claim_id": "676face2-d8d9-44de-beb6-beb5f822cf0b",
+      "result_id": "fe7b9898-b84b-45c8-8e0f-0f69c9cccf3b"
+    },
+    {
+      "claim_id": "529a4b7e-f153-492b-8fd5-39aa95163e95",
+      "result_id": "fe7b9898-b84b-45c8-8e0f-0f69c9cccf3b"
+    },
+    {
+      "claim_id": "23c5eab6-d323-457e-9010-97e63193e3f7",
+      "result_id": "08b1dff3-f73d-4392-a87e-1cb1c8a35dbe"
+    },
+    {
+      "claim_id": "0dea597d-509b-43a2-8fe9-7f402720ce01",
+      "result_id": "08b1dff3-f73d-4392-a87e-1cb1c8a35dbe"
+    },
+    {
+      "claim_id": "3c258d1f-4ec8-49b3-bfc7-d4705b19b268",
+      "result_id": "edd6ffbd-3b1c-4aa3-9ed6-4a1010525b99"
+    },
+    {
+      "claim_id": "8eb1ca50-acef-4f4a-b0fe-00411906339c",
+      "result_id": "edd6ffbd-3b1c-4aa3-9ed6-4a1010525b99"
+    },
+    {
+      "claim_id": "d02e7fde-607d-426c-871b-1eaebb4193f7",
+      "result_id": "edd6ffbd-3b1c-4aa3-9ed6-4a1010525b99"
+    },
+    {
+      "claim_id": "1aa15966-16b7-4e53-b172-e677d2668812",
+      "result_id": "edd6ffbd-3b1c-4aa3-9ed6-4a1010525b99"
+    },
+    {
+      "claim_id": "009cec4d-a680-43bb-b100-2fee0ce2c962",
+      "result_id": "a85463e7-fb0a-4309-808d-cf2ab0a988cd"
+    },
+    {
+      "claim_id": "a66a1e7e-986a-403d-9eec-9e6fb4aef8f1",
+      "result_id": "a85463e7-fb0a-4309-808d-cf2ab0a988cd"
+    },
+    {
+      "claim_id": "1bfa900d-97c6-4f65-8968-fe359d9d4ad3",
+      "result_id": "a85463e7-fb0a-4309-808d-cf2ab0a988cd"
+    },
+    {
+      "claim_id": "df401dd2-e0db-4a65-a942-a09bd99d174a",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "c5e19359-97fa-496e-bd8c-3e41448d57c7",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "38c9e1f6-66d2-492c-847b-70fc00e218b6",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "ef90fbf9-9c78-47cc-9ae1-47f429995a9f",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "2938dffb-d271-491d-b790-f89b79668435",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "1180861a-3fdc-4318-958e-99d49b4e8227",
+      "result_id": "3b064114-ddf7-47fc-b651-610619f0bcdd"
+    },
+    {
+      "claim_id": "4f46a6d1-1287-425c-a43f-d47f2323b171",
+      "result_id": "f00d99af-97dc-41f7-9f96-7364e3b10096"
+    },
+    {
+      "claim_id": "a8f07c43-f6a5-42f1-87f1-612c9f50e25a",
+      "result_id": "f00d99af-97dc-41f7-9f96-7364e3b10096"
+    },
+    {
+      "claim_id": "22ee1ef1-f644-4eef-8ff2-5be82592d24e",
+      "result_id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58"
+    },
+    {
+      "claim_id": "454e33f2-b221-49a6-94f0-19b19a1f36f8",
+      "result_id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58"
+    },
+    {
+      "claim_id": "e25d2db0-f449-4cca-a7da-7663f0ecc18f",
+      "result_id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58"
+    },
+    {
+      "claim_id": "66384bae-2e3f-4f47-a6dc-bb9112a4a947",
+      "result_id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58"
+    },
+    {
+      "claim_id": "cba3e4ca-67c3-4ad3-b336-edcc93acdf03",
+      "result_id": "03d83a0e-dcdf-4f86-b957-fbef992a7f58"
+    },
+    {
+      "claim_id": "ada2d7ce-a45a-4954-af40-3c2e509f1662",
+      "result_id": "e351c226-0cd4-4984-9c8b-e03419504faf"
+    },
+    {
+      "claim_id": "9e99a3fc-de1c-4320-ab15-41adaa02e9b7",
+      "result_id": "e351c226-0cd4-4984-9c8b-e03419504faf"
+    },
+    {
+      "claim_id": "31c629cb-9325-407b-8a93-7ac9e12ccbd1",
+      "result_id": "e351c226-0cd4-4984-9c8b-e03419504faf"
+    },
+    {
+      "claim_id": "88ee00cb-caa6-42e6-8d75-358012f1331b",
+      "result_id": "e351c226-0cd4-4984-9c8b-e03419504faf"
+    },
+    {
+      "claim_id": "bacc766f-a3d5-408e-96e1-041aa90d4344",
+      "result_id": "196d565e-0a77-472b-b96f-6c72be8e9608"
+    },
+    {
+      "claim_id": "75d35aa2-7e79-491c-a5bd-820ac06727e6",
+      "result_id": "196d565e-0a77-472b-b96f-6c72be8e9608"
+    },
+    {
+      "claim_id": "d22ca044-0d7d-4fb7-8a27-466a8a6e971c",
+      "result_id": "196d565e-0a77-472b-b96f-6c72be8e9608"
+    },
+    {
+      "claim_id": "470e42a0-4fdc-4a46-b8ec-599dad70aa2f",
+      "result_id": "196d565e-0a77-472b-b96f-6c72be8e9608"
+    },
+    {
+      "claim_id": "6ca778cf-e592-4665-85d7-b7a1dc23ef1d",
+      "result_id": "b9f0e9e3-9c27-493c-8ca8-8c39933641d5"
+    },
+    {
+      "claim_id": "9fc3f569-ce3c-4f14-84bb-1c2de0ed0986",
+      "result_id": "b9f0e9e3-9c27-493c-8ca8-8c39933641d5"
+    },
+    {
+      "claim_id": "adc31751-ffa0-4b14-9624-25c806cf276a",
+      "result_id": "b9f0e9e3-9c27-493c-8ca8-8c39933641d5"
+    },
+    {
+      "claim_id": "11a03575-96eb-4a0d-91f2-db2df0e363e7",
+      "result_id": "953f0bae-d383-4187-b574-455afa014fe4"
+    },
+    {
+      "claim_id": "dc521796-e055-473d-a611-74e677b98745",
+      "result_id": "953f0bae-d383-4187-b574-455afa014fe4"
+    },
+    {
+      "claim_id": "a33a0c75-e9dd-4e8e-b3a0-1e6573afa4c0",
+      "result_id": "ecb21521-3a91-4634-86ce-59cdf080cdb9"
+    },
+    {
+      "claim_id": "90ff704a-577e-46f6-b9f9-335c1939ec47",
+      "result_id": "0e70f8b9-5f01-4752-88f7-6db77e9a0b10"
+    },
+    {
+      "claim_id": "31a1b4e3-1103-4d95-bb79-3ce74438d175",
+      "result_id": "25609134-6ad7-42a7-9948-654437f85288"
+    },
+    {
+      "claim_id": "47e55818-a994-4605-a8da-4096810a2239",
+      "result_id": "25609134-6ad7-42a7-9948-654437f85288"
+    },
+    {
+      "claim_id": "d3504fec-432c-4455-9524-17121bd7640c",
+      "result_id": "25609134-6ad7-42a7-9948-654437f85288"
+    },
+    {
+      "claim_id": "ff758b0b-1d1d-4eb9-a1a9-06a1e5f40da3",
+      "result_id": "25609134-6ad7-42a7-9948-654437f85288"
+    },
+    {
+      "claim_id": "e57070e9-f7b1-4a19-8e0a-09f2649f8710",
+      "result_id": "67206067-b322-4395-8f85-d2a088507210"
+    },
+    {
+      "claim_id": "c6d76bae-9563-43bf-ba7c-45971c064a70",
+      "result_id": "1117bb35-f80c-4649-a726-029b7175ae33"
+    },
+    {
+      "claim_id": "5c157dfa-c031-4d15-b1a4-29b3ac144b9b",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "06ef13c2-6ac6-4f95-a22e-e48ba13aa4aa",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "ff7df680-0ab9-4f75-b9f9-706ec49f452f",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "dabcdb37-19ea-4442-af5e-951796b3ad6a",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "7219960d-4dbf-404c-a0c2-ee3b806d9b83",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "8175445c-d982-427f-943c-bc9a4519572e",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    },
+    {
+      "claim_id": "3389048b-7c18-41e2-999c-aed7eb765dcb",
+      "result_id": "5ad287cc-9349-401b-ad0f-d7481c716e6e"
+    }
+  ],
+  "comparisons": []
+}

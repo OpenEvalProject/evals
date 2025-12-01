@@ -1,0 +1,1965 @@
+{
+  "submission": {
+    "id": "b006f7af-56a7-4868-8d29-cda21f41bcf5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:47:49.526017Z",
+    "updated_at": "2025-11-30T23:47:49.526017Z"
+  },
+  "content": [
+    {
+      "id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "submission_id": "b006f7af-56a7-4868-8d29-cda21f41bcf5",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of mitochondria-dynactin interaction and mitochondrial retrograde transport in axons\n\n## Authors\n\n- Catherine M Drerup<sup>1</sup> ([ORCID: 0000-0002-0219-3075](https://orcid.org/0000-0002-0219-3075)) \u2020\n- Amy L Herbert<sup>3</sup>\n- Kelly R Monk<sup>3</sup>\n- Alex V Nechiporuk<sup>1</sup> ([ORCID: 0000-0002-8295-8188](https://orcid.org/0000-0002-8295-8188)) \u2020\n\n### Affiliations\n\n1. Department of Cell, Developmental and Cancer Biology Oregon Health & Science University Portland United States\n2. National Institute of Child Health and Human Development National Institutes of Health Bethesda United States\n3. Department of Developmental Biology Washington University School of Medicine St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMitochondrial transport in axons is critical for neural circuit health and function. While several proteins have been found that modulate bidirectional mitochondrial motility, factors that regulate unidirectional mitochondrial transport have been harder to identify. In a genetic screen, we found a zebrafish strain in which mitochondria fail to attach to the dynein retrograde motor. This strain carries a loss-of-function mutation in actr10, a member of the dynein-associated complex dynactin. The abnormal axon morphology and mitochondrial retrograde transport defects observed in actr10 mutants are distinct from dynein and dynactin mutant axonal phenotypes. In addition, Actr10 lacking the dynactin binding domain maintains its ability to bind mitochondria, arguing for a role for Actr10 in dynactin-mitochondria interaction. Finally, genetic interaction studies implicated Drp1 as a partner in Actr10-dependent mitochondrial retrograde transport. Together, this work identifies Actr10 as a factor necessary for dynactin-mitochondria interaction, enhancing our understanding of how mitochondria properly localize in axons.\n\n## Introduction\n\nMitochondrial transport in axons is critical for the formation and function of the nervous system. This organelle generates the ATP necessary for energy demanding functions in all cells, but neurons are especially reliant on mitochondria to maintain their electrically polarized state. After depolarization, ATP-dependent ion pumps are employed to repolarize the cell and prepare it for another action potential. It is estimated that at rest alone, neurons use 4.7 billion molecules of ATP per second (Zhu et al., 2012). Because of this large ATP requirement, mitochondria need to be properly localized to regions of high ion influx, such as at synapses (reviewed in Schwarz, 2013). In addition to their critical role in cellular metabolism, mitochondria also regulate local calcium ion levels (Werth and Thayer, 1994). Calcium efflux from intracellular stores mediates synaptic activity. During inactivity, this ion needs to be contained in intracellular compartments as high cytoplasmic calcium levels correlate with axonal degeneration (Avery et al., 2012; Vargas et al., 2015; Yang et al., 2013). The proper localization of mitochondria to sites of high ATP consumption and calcium ion flux requires active transport.\n\nIn addition to maintaining axon health, mitochondrial motility is also necessary to maintain mitochondrial health and function. Mitochondria undergo fission-fusion dynamics that facilitate both the replenishment of proteins in this organelle and the maintenance of mitochondrial DNA quantity and integrity (reviewed in Scheibye-Knudsen et al., 2015). Interrupted mitochondrial fission or fusion has been linked to loss of mitochondrial DNA, loss of oxidative potential, and mitophagy. Axonal transport of mitochondria is tightly linked to mitochondrial dynamics as mitochondrial fusion requires the coalescence of mitochondria and fission requires the active separation of dividing organelles. The relationship between mitochondrial dynamics and transport is also apparent at the molecular level: Mitofusin, an essential protein for mitochondrial fusion, participates in the anterograde transport of this organelle as well (Misko et al., 2010). Furthermore, manipulation of the dynamin-like protein Drp1, necessary for mitochondrial fission, impacts the localization of mitochondria (Smirnova et al., 2001; Varadi et al., 2004). The mechanistic bases for these relationships are still largely unclear.\n\nElegant work in Drosophila, C. elegans, and cultured neurons has begun to elucidate the mechanisms of mitochondrial axonal transport. The primary anterograde mitochondrial motor, Kinesin-1, attaches to mitochondria via the proteins Miro (RhoT1/2; Guo et al., 2005) and Milton (TRAK1/2; Glater et al., 2006; Stowers et al., 2002). Miro contains calcium sensitive EF hands that, when exposed to high levels of this ion, change their confirmation, resulting in the uncoupling of the Kinesin-1 motor from microtubules (Saotome et al., 2008; Wang and Schwarz, 2009). This mechanism, in conjunction with mitochondrial tethering factors (Kang et al., 2008), allows mitochondrial congregation at sites of high synaptic activity. The Miro/Milton transport machinery is not specific for anterograde transport, however, as loss of either protein impacts anterograde and retrograde mitochondrial movement (Guo et al., 2005; Saotome et al., 2008). Therefore, how mitochondria are specifically moved in a unidirectional manner by either the Kinesin or Dynein motor protein complex is not well understood.\n\nRetrograde mitochondrial transport is known to depend on the cytoplasmic dynein complex (Pilling et al., 2006; Schnapp and Reese, 1989). The core dynein motor (reviewed in Holzbaur and Vallee, 1994) is oftentimes associated with dynactin, itself a multi-protein complex, during retrograde axonal transport. Dynactin, specifically its p150 subunit, has been shown to facilitate dynein processivity and also serves as an anchor for dynein at microtubule plus ends, facilitating cargo loading (Lloyd et al., 2012; Moughamian and Holzbaur, 2012; Schroer, 2004). The dynactin accessory complex is attached to dynein through interaction of p150 with the tails of the dynein intermediate chains (Vaughan and Vallee, 1995). In addition to p150, dynactin contains two actin-related proteins, Arp1 and Actr10 (also known as Arp11; Eckley et al., 1999; Eckley and Schroer, 2003). Together with p25, p62 and p27, Actr10 is a part of the dynactin pointed end complex which is predicted to be in an ideal location for cargo binding (Yeh et al., 2012). Structural work suggests that one key function for Actr10 is capping the actin-like Arp1 filament, to regulate filament length and facilitate attachment of other pointed end proteins (Urnavicius et al., 2015); however, this does not preclude an additional role for Actr10 in cargo attachment to the dynein complex, a function which has not been explored.\n\nIn a forward genetic screen for mediators of retrograde axonal transport, we identified a strain with a loss-of-function mutation in Actr10. actr10nl15 mutants (hereafter referred to as actr10) display axon terminal swellings in the central and peripheral nervous systems indicative of retrograde transport abnormalities. Analysis of cargo localization and movement in the actr10 mutant revealed clustering of mitochondria, but not other cargos analyzed, at microtubule plus ends due to failed retrograde mitochondrial movement. This phenotype was vastly different from loss of either Dynein heavy chain or p150, potentially indicating a unique function for Actr10 in mitochondrial retrograde movement. Furthermore, we demonstrated that abnormal mitochondrial movement in actr10 mutants is due to failed attachment of mitochondria to the dynein-dynactin complex in the absence of Actr10. Importantly, Actr10 engineered to lack the dynactin binding domain maintains mitochondrial interaction, hinting at a specific role for Actr10 in mediating dynactin-mitochondria interaction. Finally, we provide biochemical and genetic evidence that Drp1, a Dynamin-related protein previously implicated in microtubule minus end-directed mitochondrial movement (Smirnova et al., 1998), partners with Actr10 in mitochondrial retrograde transport. Together our data support a model in which Actr10 functions to scaffold mitochondria to the dynein-dynactin complex for retrograde transport in axons.\n\n## Results\n\n### Mitochondria accumulate in actr10 mutant axon terminals due to failed retrograde transport\n\nWe used the zebrafish posterior lateral line (pLL) system to identify novel mediators of retrograde cargo transport in axons (Drerup and Nechiporuk, 2013). pLL axons develop early (axon extension is complete by 2 days post-fertilization (dpf) and synapse formation occurs by 4 dpf), are superficially localized and are largely planar, making them an ideal system for in vivo observations and manipulations (Figure 1A; Ghysen and Dambly-Chaudi\u00e8re, 2004; Metcalfe, 1985; Metcalfe et al., 1985). Using an ENU-based forward genetic screen, we isolated a larval-lethal, recessive mutant strain with large swellings in pLL axon terminals (Figure 1B). RNAmapper analysis (Miller et al., 2013) identified the causal mutation as a single nucleotide change (T to G) in the start codon of actr10. We confirmed actr10 as the affected gene using RNA-mediated rescue of axon terminal swellings and by performing TALEN- (Transcription Activator Like Effector Nuclease) mediated disruption of the first exon of actr10, which phenocopied the mutant axon terminal swellings (Figure 1C\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig1-v2.jpg)\n\n**Figure 1.:** (A) Wild-type larva (pigment free) at 4 dpf carrying the neurod:egfp BAC transgene. By 4 dpf, pLL axons are fully extended and functional synapses have formed with hair cells of primary neuromasts. (B) actr10 mutant axons fully extend but terminals display large swellings. Posterior lateral line ganglion (pLLg) and innervation of the third neuromast (NM3) are indicated. Insets in (A) and (B) show magnified NM3 axon terminals. Arrows in inset point to swellings. Asterisks label areas of the pLL nerve obscured by pigment in the mutant. (C) The mutant axon terminal swelling phenotype can be suppressed by exogenous expression of mRFP-Actr10 in a dose-dependent manner. Proportion of mutants with axon terminal swellings is depicted. (D\u2013F) Injection of TALENS targeting exon 1 of the actr10 genomic locus phenocopies the actr10 mutant axon terminal swelling phenotype in F0 injected larvae\u00a0(arrows). Axons are labeled by the neurod:egfp BAC transgene (white). Scale bars in A,B\u00a0=\u00a0100 \u00b5m.\n\nAxonal swellings, like those observed in actr10 mutants, can arise due to a number of intracellular abnormalities, including disruptions in retrograde cargo transport (Drerup and Nechiporuk, 2013; Martin et al., 1999). To determine if a particular cargo was accumulating in actr10 mutant axon terminals, indicative of impaired retrograde movement, we performed immunolabeling on mutants and wildtype siblings at 4 dpf with antibodies against various axonal cargos. This revealed an accumulation of Cytochrome c, a mitochondrial protein, in actr10 axon terminals (Figure 2A,B,E). To confirm mitochondrial accumulation in mutant axon terminals, mitochondria were labeled in neurons with TagRFP by zygotic injection of a plasmid containing a mitochondrial targeting sequence tagged with this fluorescent protein (5kbneurod:mito-TagRFP). actr10 mutants displayed mitochondrial accumulation in pLL axon terminals (Figure 2C,D). Other known pLL axon retrograde cargos, including those labeled by Lamp1 (Lysosome associated membrane protein-1; late endosome/lysosome marker) and phosphorylated c-Jun N-Terminal Kinase (pJNK) did not accumulate (Figure 2F\u2013K; Drerup and Nechiporuk, 2013). Expression of wildtype Actr10 using zygotic injection of in vitro synthesized mRNA rescued mitochondrial accumulation in actr10 mutants (Figure 2L\u2013O), confirming that Actr10 is necessary for proper mitochondrial positioning.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) At 4 dpf, swollen axon terminals in actr10 mutants (B) have high levels of Cytochrome c immunolabeling (arrow; NM3 shown) relative to a wildtype sibling (A). (C,D) TagRFP-labeled mitochondria accumulate in actr10 mutant (arrow), but not wildtype, axon terminals at 4 dpf. (E) Mean fluorescence intensity (background subtracted) of Cytochrome C in axon terminals of A and B. (F,G) Mean fluorescence intensity (background subtracted) in axon terminals of H-K show comparable levels of Lamp1 and pJNK fluorescence intensity between wildtype and actr10 mutant terminals (ANOVA; mean \u00b1 SEM shown). (H\u2013K) Lamp1 and pJNK immunolabeling in NM3 axon terminals (arrows). Lamp1 and pJNK are in red in (H\u2013K) and white in H`-K`. (L\u2013O) Mitochondrial accumulation in mutant axon terminals, assayed using Cytochrome c immunolabeling (white), can be suppressed by mRNA-mediated expression of mRFP-Actr10. Arrows point to axon terminal regions for comparison. Scale bars\u00a0=\u00a010 \u00b5m.\n\nAs our immunolabeling experiments were not exhaustive for every possible cargo in axons, we undertook transmission electron microscopy (TEM) analyses of pLL axon terminals to determine if mitochondria are the predominant cargo mislocalized in actr10 mutants. This experiment demonstrated mitochondria are highly enriched in the axon terminal swellings of actr10 mutants compared to other intracellular structures (Figure 3A,B; n\u00a0=\u00a03 wildtypes, n\u00a0=\u00a04 mutants). Together, our immunolabeling and TEM analyses showing mitochondrial accumulation in axon terminals could indicate interrupted retrograde mitochondrial transport in actr10 mutants.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig3-v2.jpg)\n\n**Figure 3.:** (A) Wild-type axon terminals innervating lateral line neuromasts showed no swellings (N\u00a0=\u00a03). (B) All neuromasts assayed in actr10 mutants had mitochondrial laden axon terminal swellings (N\u00a0=\u00a04). A` and B` are higher magnification views of the areas outlined in A and B. Arrowheads in B` point to mitochondria.\n\nTo determine if mitochondrial retrograde transport was disrupted in actr10 mutants, mitochondria in single pLL axons were tagged with TagRFP using 5kbneurod:mito-TagRFP plasmid injection and organelle movement was visualized by confocal microscopy (Figure 4A,B; Videos 1 and 2). Kymograph analysis demonstrated a 37% and 39% reduction in the distance moved by mitochondria in the anterograde and retrograde directions respectively in actr10 mutants but no change in mitochondrial transport velocity (Figure 4C\u2013F). Despite the decrease in anterograde transport distance, the frequency of anterograde mitochondrial transport was unchanged in actr10 mutants. We also analyzed reversal frequency to determine if there was a defect in directional persistence of mitochondrial transport in actr10 mutants but found no difference in the proportion of mitochondria that reversed direction during our imaging sessions (wildtype: 0.011\u00a0\u00b1\u00a00.008; actr10 mutants: 0.000\u00a0\u00b1\u00a00.009; ANOVA; p=0.4003). In contrast, both the frequency of retrograde mitochondrial transport and the proportion of mitochondria moving in the retrograde direction were dramatically decreased in actr10 mutants (Figure 4G,H). As velocity of movement was largely normal, these data suggest a role for Actr10 in the attachment of mitochondria to the retrograde motor for transport.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) Stills from Videos 1 and 2 of mitochondrial transport in single pLL axons of a wildtype (A) and actr10 mutant (B). Yellow and red arrowheads point to mitochondria moving in the anterograde and retrograde directions respectively. (C,D) Kymograph analyses of mitochondrial transport in wildtype (C) and actr10 mutants (D). (E,F) Distance and velocity of mitochondrial transport in actr10 mutants (Ant-anterograde; Ret-retrograde; ANOVA). (G) The number of mitochondria moving in the retrograde direction is significantly reduced in actr10 mutants (ANOVA; p<0001). (H) The proportion of mitochondria moving in the retrograde, but not anterograde, direction is reduced in actr10 mutants (ANOVA with post-hoc contrasts; p<0.01). Scale bars\u00a0=\u00a010 \u00b5m. Error bars represent mean \u00b1 SEM. Number of larvae assayed (biological replicates) is indicated on graphs.\n\n![Video 1.](https://cdn.elifesciences.org/articles/22234/elife-22234-media1.mp4.jpg)\n\n**Video 1.:** Yellow arrowheads indicate mitochondria moving in the anterograde direction. Red arrowhead marks retrograde mitochondrial movement. Scale bar\u00a0=\u00a010 \u00b5m\n\n![Video 2.](https://cdn.elifesciences.org/articles/22234/elife-22234-media2.mp4.jpg)\n\n**Video 2.:** Yellow arrowheads indicate mitochondria moving in the anterograde direction. Scale bar\u00a0=\u00a010 \u00b5m\n\n### Actr10\u00a0functions autonomously in neurons to regulate axon morphology and mitochondrial localization\n\nactr10 is ubiquitously expressed, albeit enriched in the nervous system during larval stages (Figure 5A\u2013C). As neuronal activity and the presence of growth factors can modulate mitochondrial transport (Chada and Hollenbeck, 2004; Chen and Sheng, 2013), it was possible that changes in the axonal environment in actr10 mutants could alter mitochondrial movement. This led us to ask if Actr10 functions autonomously in axons to regulate mitochondrial transport. To test for a neuron-specific function for Actr10 in mitochondrial localization, we expressed monomeric red fluorescent protein (mRFP) tagged Actr10 in individual pLL neurons using zygotic injection of a 5kbneurod:mRFP-actr10 DNA plasmid and assessed axon terminals. While mRFP-Actr10 expression in wildtype axons had no apparent effects (Figure 5D; n\u00a0=\u00a06 in 3 biological replicates), it rescued axon terminal morphology and mitochondrial localization in all mutants analyzed (Figure 5E\u2013G; n\u00a0=\u00a05 mutants in 3 biological replicates). These experiments confirmed a neuron-specific function for Actr10 in mitochondrial localization in axons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Expression of actr10 mRNA was assayed using in situ hybridization with DIG-labeled riboprobes and alkaline phosphatase-mediated NBT/BCIP precipitation. actr10 is ubiquitously expressed at all time points tested, with elevated expression in the nervous system at later stages (3 and 5 dpf). Arrows point to the pLL ganglion in B and C. (D) Neuronal mRFP-Actr10 expression does not alter axon morphology or mitochondrial localization in wildtype larvae at 4 dpf. Mitochondria were visualized by Cytochrome c immunolabeling in NM3 axon terminals. (E) Uninjected actr10 mutants have high levels of Cytochrome c immunolabling in NM3 axon terminals at 4 dpf. (F) mRFP-Actr10 expression in actr10 mutant neurons suppressed axon terminal swellings and mitochondrial accumulation. Yellow arrowhead points to the region of the axon terminal expressing mRFP-Actr10. Note that mRFP-Actr10 negative axon terminals (red arrowhead) display axonal swelling and high levels of Cytochrome c labeling. Lines in D``, E`` and F`` indicate regions used for line scan analysis. (G) Line scans show that mRFP-Actr10 expression rescues Cytochrome c levels in actr10 mutant axons (compare pink/red and yellow lines). Pigment cells (*) obscure some nerves. Scale bars\u00a0=\u00a010 \u00b5m.\n\n### Dynein localization and motility does not rely on Actr10\n\nPrevious work on Actr10 function assayed mitotic spindle positioning during cell division in cultured fibroblasts and nuclear positioning in fungi to show that Actr10 depletion phenocopied dynein loss of function (Lee et al., 2001; Yeh et al., 2012; Zhang et al., 2008). In association with structural work implicating Actr10 in Arp1 filament capping (Urnavicius et al., 2015), these data could imply that loss of Actr10 impacts dynactin integrity and, subsequently, all dynein function. However, the aforementioned work could also be interpreted to mean that appropriate dynactin-nuclear membrane interaction requires Actr10 function. Supporting this possibility, Actr10 has been shown to regulate dynactin-membrane association (Clark and Rose, 2006). With this data in mind, we next wanted to determine if loss of Actr10 phenocopied dynein or dynactin loss of function in mature neurons, the cell type that displayed specific defects in mitochondrial retrograde transport in our studies. First, we analyzed the localization of dynein and dynactin in actr10 mutant axons at 4 dpf. Neither Dynein heavy chain (DHC) nor p150 were significantly mislocalized in actr10 mutants, though we did observe a trend of increased DHC in actr10 mutant axon terminals (Figure 6A\u2013F). Next, to determine if dynein was able to move in the retrograde direction, we assayed dynein motility by tagging the core motor complex using expression of an mRFP tagged variant of dynein light intermediate chain (5kbneurod:dync1li1V2-mRFP; Figure 6G,H; Videos 3 and 4). Kymograph analysis revealed no change in the parameters of retrograde dynein movement, though we did note a 42% reduction in the distance and a 26% reduction in the velocity of anterograde dynein transport. Despite these defects in anterograde dynein transport, there was no change in the proportion of dynein-positive puncta moving in the anterograde or retrograde direction in actr10 mutants at 4 dpf (Figure 6I\u2013M). Additionally, we analyzed reversal frequency to determine if there was a defect in persistence of dynein movement in actr10 mutants but found no difference in the average number of puncta that reversed direction during our imaging sessions (wildtype: 1.62/100 \u00b5m*min\u00a0\u00b10.37; actr10 mutants: 1.74/100 \u00b5m*min\u00a0\u00b10.44; ANOVA; p=0.844). These experiments demonstrated that loss of Actr10 does not impede dynein-dynactin complex localization or dynein retrograde movement in axons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig6-v2.jpg)\n\n**Figure 6.:** (A,B) Dynein heavy chain (DHC) immunolabeling demonstrates normal DHC localization in NM3 axon terminals of actr10 mutants at 4 dpf. (C,D) p150 is normally localized in NM3 axon terminals of actr10 mutants at 4 dpf. (E,F) Analyses of mean fluorescence intensity in axon terminals (background subtracted) showed comparable fluorescence intensity between mutant and wildtype siblings (ANOVA; mean \u00b1 SEM shown). (G,H) Stills from dynein time-lapse imaging sessions (Videos 3 and 4) in wildtype and actr10 mutant pLL axons at 4 dpf. Arrowheads indicate retrograde dynein movement. (I,J) Kymograph analyses of dynein transport in wildtype (I) and actr10 mutants (J). (K\u2013M) Retrograde dynein transport parameters, including the proportion of dynein-labeled vesicles (K), distance moved by vesicles (L) and velocity of movement (M) are unaffected in actr10 mutants (ANOVA; mean \u00b1 SEM shown). A reduction of anterograde dynein-positive puncta distance and velocity was noted (ANOVA; mean \u00b1 SEM shown). (N) Dynein intermediated chain 2b fused to GFP (i2b-GFP) interacts with the core dynein complex. Immunoprecipitation of i2b-GFP from whole embryo extracts followed by DHC western (top). Whole embryo lysate controls for i2b-GFP (middle; top band not present in wildtype) and DHC (bottom). Bead only (no 1\u00b0) immunoprecipitation controls shown. (O) The core dynein complex labeled by i2b-GFP can immunoprecipitate p150 from whole larval lysates derived from wildtype and actr10 mutant larvae at 4\u00a0dpf (top). Whole larval lysate control for i2b-GFP (middle) and p150 (bottom). Bead only (no 1\u00b0) and un-injected wildtype immunoprecipitation controls shown. Scale bars\u00a0=\u00a010 \u00b5m. Number of larvae assayed is indicated on graphs.\n\n![Video 3.](https://cdn.elifesciences.org/articles/22234/elife-22234-media3.mp4.jpg)\n\n**Video 3.:** Red arrowheads indicate dynein positive cargo moving in the retrograde direction. Scale bar\u00a0=\u00a010 \u00b5m\n\n![Video 4.](https://cdn.elifesciences.org/articles/22234/elife-22234-media4.mp4.jpg)\n\n**Video 4.:** Yellow arrowhead indicates dynein positive puncta being passively carried in the anterograde direction. Red arrowheads mark dynein positive cargo moving in the retrograde direction. Scale bar\u00a0=\u00a010 \u00b5m\n\nWe then analyzed the stability of dynein-dynactin interaction using co-immunoprecipitation from whole larval extracts. Immunoprecipitation of endogenous proteins was not possible due to lack of zebrafish-specific antibodies, so we turned to overexpression of tagged dynein components using zygotic injection of in vitro synthesized mRNA. First, we confirmed that a GFP tagged version of dynein intermediate chain 2b (i2b), a core dynein protein, could integrate into the motor complex. mRNA encoding i2b-GFP was injected into zygotes and anti-GFP antibodies were used to immunoprecipitate the complex. Extracts were subjected to western blot analysis and probed with anti-DHC antibodies. i2b-GFP can integrate into the core dynein complex (Figure 6N). We then used this approach to determine if loss of Actr10 impacts dynein-dynactin interaction. i2b-GFP was expressed in actr10 mutants and wild-type siblings and larval extracts were subjected to GFP-based immunoprecipitation at 4 dpf. Western blot of larval extracts revealed no change in p150 interaction with the core dynein motor (Figure 6O). Together, these experiments confirmed that loss of Actr10 does not impact dynein-dynactin interaction.\n\nTo further explore the effect of loss of Actr10 on retrograde cargo transport, we analyzed the movement of additional dynein cargos in axons. First, we visualized peroxisome transport in lateral line axons (Videos 5 and 6). Kymograph analysis of peroxisome transport at 4 dpf demonstrated small changes in anterograde transport velocity and distance of retrograde transport bouts (Figure 7A\u2013G). A slight, but not significant decrease in the proportion of peroxisomes moving in the retrograde was apparent as well (Figure 7G; ANOVA; p=0.07). Upon further investigation, we found that previous studies revealed a surprising relationship between mitochondria and peroxisomes, including a large number of shared membrane proteins, such as Drp1 (reviewed in Schrader, 2006). Our work implicates Drp1 in Actr10-dependent mitochondrial localization (see Figure 12), making the impact of Actr10 loss of function on peroxisome transport complex. Therefore, we analyzed the transport of a third cargo, Lamp1-labeled vesicles, which are composed of late endosomes and lysosomes. Analysis of Lamp1-positive vesicle movement at 4 dpf demonstrated that this cargo is transported normally in actr10 mutant axons (Figure 7H\u2013L). These live imaging experiments, in conjunction with the immunolabeling of known retrograde cargos (Figure 2) and our TEM studies (Figure 3), argue that loss of Actr10 does not hinder the transport of all dynein-dependent, retrograde cargos in axons.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig7-v2.jpg)\n\n**Figure 7.:** (A,B) Stills from peroxisome imaging sessions at 4 dpf from Videos 5 and 6. Yellow and red arrowheads point to anterograde and retrograde peroxisome movement respectively. (C,D) Kymographs analyses of peroxisome transport in wildtype (C) and actr10 mutants (D). (E\u2013G) Peroxisome transport parameters were similar between actr10 mutants and wildtype siblings, though a slight reduction in retrograde distance and anterograde velocity were noted (ANOVA; mean \u00b1 SEM shown). The proportion of peroxisomes moving in the retrograde direction was reduced as well, though not significantly (ANOVA; mean \u00b1 SEM shown; p=0.07). (H,I) Kymographs of Lamp1-labeled vesicle movement at 4dpf. (J\u2013L) Lamp1 vesicles were transported similarly between wildtype and actr10 mutants. An increase in the proportion of these vesicles in mutants that were stationary during imaging was noted (p<0.01; ANOVA; mean \u00b1 SEM shown). Number of larvae assayed is indicated on graphs. Scale bars\u00a0=\u00a010 \u00b5m.\n\n![Video 5.](https://cdn.elifesciences.org/articles/22234/elife-22234-media5.mp4.jpg)\n\n**Video 5.:** Yellow arrowhead points to a peroxisome moving in the anterograde direction. Red arrowhead indicates a peroxisome moving in the retrograde direction. Scale bar\u00a0=\u00a010 \u00b5m\n\n![Video 6.](https://cdn.elifesciences.org/articles/22234/elife-22234-media6.mp4.jpg)\n\n**Video 6.:** Yellow arrowheads indicate peroxisomes moving in the anterograde direction. Red arrowhead marks peroxisome moving in the retrograde direction. Scale bar\u00a0=\u00a010 \u00b5m\n\nSince we observed small changes in retrograde peroxisome transport, we wanted to further investigate the relationship between loss of Actr10 and loss of dynein/dynactin. To do this, we analyzed the ability of DHC and p150 null mutants to phenocopy actr10 mutants. First, we compared actr10 mutants to a previously isolated zebrafish DHC mutant, dync1h1mw20 (hereafter referred to as dync1h1; Insinna et al., 2010). Unlike actr10 mutants (see Figure 1), dync1h1 mutants displayed rapid degeneration of pLL axons by 4 dpf, with pLL nerves extending less than half-way to the tail at this time-point (Figure 8A,B). Mitochondria do accumulate in distal axons of dync1h1 mutants, as expected with global disruption of retrograde transport (Figure 8F,G). The disparity between actr10 and dync1h1 mutant axonal phenotypes argues that loss of Actr10 does not impact all dynein function in axons.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig8-v2.jpg)\n\n**Figure 8.:** (A) Wildtype larva at 4 dpf with full pLL axon extension into the tail. End of pLL nerve indicated by arrowhead. (B) Loss of DHC in dync1h1 mutants results in pLL axon degeneration, leading to a truncated pLL nerve at 4 dpf. Small eyes are also apparent (red dotted line), as has been reported previously. (C) p150a mutants have small eyes (red outline) but pLL nerves are identical to wildtype siblings. (D) p150b mutants at 4 dpf with normal pLL nerves and no change in eye diameter. (E) p150a/b double mutants have truncated, thin pLL nerves with swellings along the length of axons and in terminals and are indistinguishable from dync1h1 mutants. p150a/b mutants also show small eyes similar to dync1h1 and p150a mutants. (F,G) dync1h1 mutants display axon terminal swellings and mitochondrial accumulation compared to wildtype controls at 4 dpf. Arrows point to mitochondria rich, axonal swellings. Mitochondria are labeled by expression of mito-TagRFP (red on top F-J, white below F`-J`). (H,I) p150a and p150b single mutants have axon terminal morphology and mitochondrial localization in axon terminals similar to wildtype siblings. (J) Loss of both p150 paralogues (p150a/b; J) results in swollen axon terminals with increased mitochondrial density similar to dync1h1 mutants (G). (K\u2013N) Kymograph analyses of mitochondrial transport in p150 mutants. (O) The proportion of mitochondria moving in both the anterograde and retrograde direction in pLL axons is significantly decreased in p150a/b double mutants (ANOVA with Tukey HSD post-hoc contrasts). (P) The number of mitochondria in pLL axons is decreased in p150a mutants compared to wildtype siblings (ANOVA with Tukey HSD post-hoc contrasts; *p<0.05). The number of mitochondria in pLL axons of p150a/b double mutants is dramatically reduced compared to wildtype siblings (ANOVA with Tukey HSD post-hoc contrasts; mean\u00b1SEM shown). (Q,R) Distance and velocity of limited residual mitochondrial movement is not significantly altered in p150a/b mutants compared to wildtype siblings (ANOVA with Tukey HSD post-hoc contrasts; mean \u00b1 SEM shown). Scale bars in A-E\u00a0=\u00a0100 \u00b5m. Scale bars in F-J\u00a0=\u00a010 \u00b5m. Number of larvae assayed is indicated on graphs.\n\nWe then compared the actr10 mutant phenotype to loss of dynein-dynactin interaction using zebrafish p150 mutants. There are two orthologs of p150 in zebrafish, p150a and p150b. These paralogues are highly similar at the amino acid level but have slightly different expression patterns: while both are ubiquitously expressed, p150b is enriched in developing (1 and 2 dpf) and mature (4 dpf) neurons while p150a is enriched only in mature neurons 4 dpf (Figure 9A\u2013F). To determine whether loss of p150 phenocopies the actr10 mutant, we assayed single and double p150 mutants using a p150a mutant described previously (Del Bene et al., 2008; Wehman et al., 2005) and a novel p150b mutant we engineered (p150bnl16). Loss of p150a alone has no discernable effect on axons or mitochondrial localization (Figure 8C,H). We used CRISPR-Cas9 technology (Hwang et al., 2013) to create a deletion in exon 3 of p150b, which resulted in a frame-shift and premature stop site. p150b single mutants are indistinguishable from wild-type siblings at 4 dpf, with normal axon terminals and no abnormalities in mitochondrial localization (Figure 8D,I). This strain does not have the small eye phenotype observed in dync1h1 and p150a mutants (Figure 8A\u2013D; Del Bene et al., 2008; Insinna et al., 2010; Wehman et al., 2005). Unlike single p150 mutants, p150a/b mutants are phenotypically similar to dync1h1 mutants, with truncated pLL axons and mitochondrial accumulation at axon ends (Figure 8E,J). This confirms the reliance of mitochondria on the dynein-dynactin complex for retrograde movement and demonstrates that actr10 mutants do not phenocopy the axon truncation phenotype of dynein or dynactin loss of function mutants.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig9-v2.jpg)\n\n**Figure 9.:** (A,C,E,E`) p150a in situ hybridization shows ubiquitous expression at 1 and 2 dpf, with a slight enrichment in neurons of the pLL ganglion at 4 dpf. (B,D,F,F`) p150b is enriched in developing neurons with low level expression ubiquitously at all stages assayed. pLL and anterior lateral line ganglia are indicated by an arrowhead or arrow respectively in all. *=ear. Higher magnification views of the ear, pLL ganglia, and anterior lateral line ganglia shown in insets in B`, D`, E`, and F`. Scale bars in A-F\u00a0=\u00a0100 \u00b5m. Scale bars in B` and D`-F`=20 \u00b5m.\n\nWe then analyzed the effect of p150 loss of function on mitochondrial transport in pLL axons. Mitochondria were tagged with TagRFP using zygotic injection of the 5kbneurod:mito-TagRFP plasmid and kymograph analysis was performed on videos acquired through live imaging (Figure 8K\u2013N). Unlike loss of Actr10, p150a/b double mutants had an almost complete cessation of mitochondrial movement in the anterograde and retrograde directions (Figure 8N,O). In addition, we noted a dramatic loss of mitochondria from the central portion of axons in p150a/b double mutants, likely because of the strong defect in anterograde mitochondrial transport (Figure 8P). Analyses of transport parameters revealed no change in the distance or velocity of the residual mitochondrial movement in either direction (Figure 8Q,R). The dramatic loss of all mitochondrial movement in p150a/b mutants, specifically reductions in both the anterograde and retrograde pools, is not observed in actr10 mutants, which have only a reduction in the retrograde mitochondrial pool (see Figure 4). Furthermore, two cargos known to localize normally in actr10 mutants, pJNK and Lamp1 (see Figure 2), accumulate in in p150a/b mutant axon terminals (Figure 10A\u2013D), indicating that the retrograde transport of these cargos is perturbed by loss of dynein-dynactin interaction. Therefore, our phenotypic, in vivo transport, immunolabeling and biochemical data fail to support the argument that loss of Actr10 impacts all dynein-dynactin function in axons and, instead, supports a specific requirement for Actr10 in mitochondrial retrograde transport in this neuronal compartment.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig10-v2.jpg)\n\n**Figure 10.:** (A,B) pJNK accumulates in axon terminals at 4 dpf in p150a/b double mutants. NM3 shown. (C,D) Lamp1 accumulates in NM4 axon terminals at 5 dpf in p150a/b double mutants. Arrows point to axon terminals in wildtype and p150a/b double mutants in all. Axons are labeled by the neurod:egfp BAC transgene (green). Lamp1 and pJNK are show in red in A-D and white in A`-D`. Scale bars\u00a0=\u00a010 \u00b5m.\n\n### Mitochondria fail to attach to the dynein-dynactin complex in actr10 mutants\n\nThe specific effect of Actr10 depletion on retrograde mitochondrial transport frequency led us to ask if Actr10 is necessary to attach this organelle to the dynein motor complex. We addressed this question using mitochondrial fractionation from whole larvae (Figure 11A; Prudent et al., 2013). Analysis of fractions revealed equal levels of p150 in the input and heavy fractions between wildtype and actr10 mutants. Strikingly, in actr10 mutants, p150 was largely lost from the mitochondrial fraction with a concomitant increase of p150 to the light fraction, which contains all cellular components not pelleted under low centrifugation speeds (Figure 11B,C). This result demonstrates the necessity of Actr10 for mitochondrial attachment to dynactin.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig11-v2.jpg)\n\n**Figure 11.:** (A) Schematic of whole embryo mitochondrial fractionation. (B) While the level of p150 in the input and heavy fractions are comparable between wildtype and actr10 mutants, p150 is shifted from the mitochondrial to light fraction in actr10 mutants. ATP\u03b2 western blot from the same extracts (bottom) serves as a mitochondrial loading control. (C) Quantification of p150 intensity (normalized to mitochondrial loading) in actr10 mutants relative to wildtype. (D) Quantification of p150 intensity (normalized to mitochondrial loading) in mRFP-Actr10\u25b37 expressing embryos relative to those expressing mRFP-Actr10. (E) Schematic and sequence of the \u25b37 region in Actr10. (F) Immunoprecipitation of EGFP-Actr10 deletion constructs from HEK293T cells identified the \u25b37 region as critical for Actr10\u2019s interaction with the dynactin complex (n\u00a0=\u00a04 replicates). (G) In zebrafish embryos, mRFP-Actr10\u25b37, expressed by zygotic injection of in vitro synthesized mRNA, was unable to interact with dynactin (top). mRFP-Actr10 and mRFP-Actr10\u25b37 (middle) and p150 (bottom) are all present at similar levels. Bead only (no 1\u00b0) immunoprecipitation controls shown. (H) Actr10\u25b37 is able to interact with mitochondria in zebrafish embryos as assayed by mitochondrial fractionation. ATP\u03b2 mitochondrial loading control (bottom).\n\nTo better define the mechanism of dynactin-Actr10-mitochondrial interaction, we identified the domain in Actr10 necessary for association with the dynactin complex using immunoprecipitation of deletion constructs (overlapping deletion of 40 amino acid regions) from HEK293T cells. Whereas Actr10\u25b37\u2013\u25b310 deletions showed reduced binding to dynactin, Actr10\u25b37 most consistently failed to immunoprecipitate dynactin in all experiments (Figure 11E,F; n\u00a0=\u00a04). As this result was somewhat variable in HEK cells, we confirmed the necessity of this domain for Actr10-dynactin interaction in vivo using immunoprecipitation of Actr10 and Actr10\u25b37 from embryo lysates. This revealed a loss of interaction between Actr10\u25b37 and dynactin, demonstrating the reliance of Actr10 on this region for interaction with dynactin (Figure 11G; n\u00a0=\u00a03). Finally, if Actr10 is a part of the scaffold necessary for mitochondria-dynactin interaction, a separate mitochondrial binding domain likely exists in Actr10. If this is the case, Actr10 lacking the dynactin binding domain should maintain its interaction with mitochondria. To address this, we assayed the ability of Actr10\u25b37 to bind mitochondria using mitochondrial fractionation. mRFP-Actr10 and mRFP-Actr10\u25b37, expressed using zygotic microinjection of respective mRNAs, were both present in the mitochondrial fractionation (Figure 11D,H; n\u00a0=\u00a02), arguing that separate protein domains exist in Actr10 which are necessary for interaction with dynactin and mitochondria. This data supports a role for Actr10 in binding mitochondria to dynactin for retrograde mitochondrial transport.\n\n### Drp1 functions with Actr10 in mitochondrial retrograde transport\n\nIt is unlikely that Actr10 binds directly to mitochondria as it does not have predicted transmembrane or other membrane-associated domains. Rather, similar to Kinesin-1-mitochondrial attachment, there are likely partner proteins that facilitate this interaction (Glater et al., 2006; Guo et al., 2005). Literature searches revealed a particularly strong association between Drp1 (Dynamin related protein 1), a GTPase associated with mitochondrial fission, and mitochondrial localization. Specifically, a lysine to alanine mutation at amino acid 38 in Drp1 (mimicking a constitutively GDP-bound form) causes clustering of mitochondria in the perinuclear region of fibroblasts in a microtubule-dependent manner (Smirnova et al., 2001; Varadi et al., 2004). Using immunoprecipitation, we demonstrated that Drp1 interacts with Actr10, with strongly enhanced interaction between Actr10 and the Drp1K38A variant (Figure 12A; n\u00a0=\u00a03 replicates in independent experiments; (Smirnova et al., 2001, 1998).\n\n![Figure 12.](https://cdn.elifesciences.org/articles/22234/elife-22234-fig12-v2.jpg)\n\n**Figure 12.:** (A) EGFP-Actr10 interacts with myc-Drp1 in HEK293T cells. The K38A mutation in Drp1 strengthens this interaction (n\u00a0=\u00a03 replicates). (B,C) Expression of Drp1K38A-mRFP causes mitochondrial clustering in wildtype pLL neuron cell bodies at 4 dpf compared to an mRFP only control (B). (D,E) Though mitochondrial morphology is abnormal in actr10 mutant pLL neuron cell bodies (D), expression of Drp1K38A-mRFP does not cause clustering of this organelle (E). (F\u2013I) While expression of Drp1K38A-mRFP in wildtype larvae causes loss of mitochondria from the proximal axon compared to mRFP only controls (F,G), mitochondrial number is unaffected by Drp1K38A-mRFP expression in actr10 mutants (H,I). Arrowheads point to mitochondria in mRFP-expressing axons. Mitochondria are labeled by expression of a mitochondrial targeting sequence tagged with EGFP (5kbneurod:mito-EGFP; green in B-I, white in B`-I`). (J) Quantification of mitochondrial number normalized to mitochondrial size in the proximal axon (ANOVA with post-hoc contrasts; mean \u00b1 SEM shown). Scale bars\u00a0=\u00a010 \u00b5m. Number of larvae assayed is indicated on graphs.\n\nNext, we asked whether Drp1 works with Actr10 to regulate mitochondrial retrograde transport in vivo. To address this, we examined the genetic interaction between Drp1 and Actr10 in mitochondrial localization in pLL neurons. We reasoned that if Drp1 and Actr10 function in the same pathway, Drp1 manipulation would impact the location of mitochondria in wildtype but not actr10 mutant axons. We expressed Drp1-mRFP, Drp1K38A-mRFP, and cytoplasmic mRFP (control) in pLL neurons using injection of a plasmid encoding the respective open reading frame under an inducible promotor. Mitochondria were labeled by 5kbneurod:mito-EGFP co-injection. In wild-type larvae, expression of Drp1K38A-mRFP caused mitochondrial clustering in the perinuclear region, phenotypically similar to the results observed in cultured fibroblasts (Figure 12B,C; Smirnova et al., 2001; Varadi et al., 2004). In contrast, Drp1K38A-mRFP expression did not alter mitochondrial localization in actr10 mutant pLL neurons (Figure 12D,E). If Drp1K38A mediates retrograde mitochondrial movement, we predicted its expression would induce movement of mitochondria from the proximal axon into the cell body, leading to loss of mitochondrial occupation of the axon. Indeed, expression of Drp1K38A caused a substantial decrease in the number of mitochondria per micron in wildtype but not actr10 mutant axons (Figure 12F\u2013J). Notably, actr10 mutants already have reduced mitochondrial occupation of pLL axons which could impact the fraction of mitochondria capable of motility in this assay. More definitive analyses of Drp1\u2019s role in Actr10-dependent mitochondrial motility will be the subject of continued investigation. Together, the biochemical and genetic interaction between Actr10 and Drp1K38A support a model in which Drp1, in its GDP-bound state, modulates dynein-based mitochondrial localization via an Actr10-dependent mechanism.\n\n## Discussion\n\nUsing genetics, immunolabeling, biochemistry, and in vivo imaging of cargo movement, we have identified Actr10 as a mediator of retrograde mitochondrial transport. In the absence of this dynactin pointed end protein, mitochondrial retrograde transport frequency is selectively disrupted, leading to accumulation of this organelle in axon terminals. Importantly, the anterograde transport of mitochondria, the localization and transport of other cargos assayed, the localization of dynein-dynactin components as well as dynein retrograde movement are all largely intact in the absence of Actr10, arguing for a role for Actr10 in mitochondrial retrograde transport in axons. Additionally, Actr10 maintains its ability to interact with mitochondria without being incorporated into the dynactin complex, suggesting a specific role for this protein in linking this organelle to the retrograde motor. Finally, we demonstrated that Actr10, perhaps through interaction with Drp1, links mitochondria to the dynactin complex. Our study brings us a step closer to understanding how unidirectional mitochondrial transport is mediated in axons to maintain a functional neural circuit.\n\n### Actr10s role in mitochondrial retrograde transport\n\nWe provide multiple pieces of evidence supporting a function for Actr10 in mitochondrial transport. First, mitochondria are the only cargo analyzed whose localization or retrograde transport is significantly perturbed with loss of Actr10. If dynein-mediated cargo movement was generally disrupted, other cargos, including lysosomes and dynein itself, would fail to move in the retrograde direction as well. Second, the axonal phenotype of dynactin and dynein loss-of-function mutants is vastly different from actr10 mutants: dync1h1 and p150a/b mutants display pLL nerve degeneration at 4 dpf while actr10 mutants do not. Third, loss of dynactin-dynein interaction in p150a/b mutants impedes all mitochondrial transport, a phenotype that is not observed in actr10 mutants. Fourth, neither the localization of dynein and dynactin nor the retrograde movement of dynein are perturbed with loss of Actr10. Lastly, we identified a domain in Actr10 (\u25b37) that is essential for interaction with the dynactin complex but inconsequential for interaction with mitochondria. This piece of data is critical as it demonstrates that Actr10 can interact with this organelle independently of dynactin, arguing for a direct role for this protein in mitochondria-dynactin interaction. Together, our data argue that Actr10 is necessary for dynactin-dependent, retrograde transport of mitochondria in axons.\n\nActr10 could directly link mitochondria to dynactin or potentially facilitate this interaction through other dynactin pointed end proteins, such as p62. p62 is of particular interest in this regard as it is predicted to rely on Actr10 for binding to the dynactin complex (Urnavicius et al., 2015). Based on our current data, we cannot rule out a role for this protein in mitochondrial transport. Furthermore, Actr10 interacting proteins, including p62, could have additional impacts on mitochondrial transport parameters, including transport distance. As noted above, actr10 mutants have slight deficits in the distance moved by mitochondria in both the anterograde and retrograde directions. While we cannot definitively ascertain the underlying mechanism of this disruption, at least three possibilities exist. First, bidirectional transport distance could be affected by the abnormal localization of mitochondria. Mitochondrial localization directly affects local levels of ATP, which in turn could compromise the processive activity of ATP-dependent motors necessary for long distance transport. Another possibility is local deficits in mitochondrial activity: if mitochondrial health is compromised, this could account for the bidirectional transport deficits of mitochondria. Finally, it is possible that Actr10 or its interacting proteins, such as p62, regulate motor engagement. It is largely thought that cargos typically have anterograde and retrograde motors attached simultaneously and direction of transport is attributed to regulation of motor engagement. More frequent oscillations in motor engagement due to loss of Actr10 or Actr10 interactors could account for the shortened distances moved by mitochondria in both directions. At this point, we do not have a full explanation for these transport parameter alterations but they are a topic of continued interest.\n\n### Multiple roles for Actr10 in the cell\n\nOur data does not preclude a function for Actr10 in the retrograde transport of additional cargos in axons or other roles for Actr10, which could vary based on a number of factors including cell type and developmental stage. Of particular interest is a potential role for Actr10 in peroxisome transport through interaction with Drp1. While we did not find a statistically significant difference in the proportion of peroxisomes moving in the retrograde direction, there was a trend towards a decrease in this population. As Drp1 is known to localize to peroxisome membranes as well (Schrader, 2006), it will be interesting to further explore the interplay between these proteins and the transport of these highly related organelles. In addition to cargo transport, one predicted function for Actr10, based on structural and biochemical data, is in capping the Arp1 filament (Urnavicius et al., 2015). In support of this role, knockdown of Actr10 using siRNA in Cos7 cells resulted in dissociation of the dynactin complex pointed end (Yeh et al., 2012). Additionally, studies in the fungi neurospora and aspergillus demonstrated that loss of Actr10 phenocopies the abnormal nuclear positioning observed with loss of dynein (Lee et al., 2001; Zhang et al., 2008). Similarly, zebrafish actr10 mutants display the small eye phenotype observed in dync1h1 and p150a mutants (see Figure 8 and Del Bene et al., 2008; Insinna et al., 2010). Finally, similar to loss of p150, knockdown of Actr10 resulted in multipolar spindle formation in Cos7 cells (Yeh et al., 2012). Together, these data could imply that Actr10 is in fact necessary for all dynein-dynactin activity through stabilizing the Arp1 filament; however, they could also be interpreted to mean that Actr10 is necessary for regulation of Arp1-membrane interaction. Indeed, Actr10 has been shown to regulate Arp1-membrane interaction (Clark and Rose, 2006) and the zebrafish eye phenotype in the p150a mutant is due to a defect in interkinetic nuclear migration (Del Bene et al., 2008). This type of function for Actr10 could also explain the nuclear positioning defect in the actr10 loss of function studies in fungi (Lee et al., 2001; Zhang et al., 2008). Therefore, rather than purely serving a stabilizing role for the dynactin complex, Actr10 may modulate both Arp1 interaction with the nuclear membrane and mitochondria-dynactin binding in axons. How these functions are disparately regulated in different cell types, in different cellular compartments and/or at varying developmental stages is still unclear.\n\nGiven the previous data implicating Actr10 in Arp1 capping and subsequent dynactin stability and dynein function (Urnavicius et al., 2015; Yeh et al., 2012; Zhang et al., 2008), we were presented with the challenge of confirming that Actr10 has a specific function in mitochondrial retrograde transport and reconciling our work with these previous studies. As outlined above, our evidence for a role for Actr10 in mitochondrial transport specifically includes: (1) actr10 mutant axons are not phenotypically identical to dync1h1 or p150 mutants; (2) mitochondrial retrograde, but not anterograde, transport is disrupted in actr10 mutants while all mitochondrial movement is inhibited in p150a/b mutants; and (3) localization and transport of all other cargos are not disrupted in actr10 mutants. Together, these results argue that loss of Actr10 does not impact all dynein-dynactin function. In addition, a variant of Actr10 lacking the dynactin binding domain retains its ability to interact with mitochondria, further substantiating a direct role for this protein in mitochondria-dynactin interaction. Together, our data argue that Actr10 participates in mitochondrial attachment to the retrograde motor protein complex in neurons in addition to potentially facilitating Arp1 capping and nuclear positioning in other contexts.\n\n### Drp1 and Actr10 function together to regulate mitochondrial retrograde transport\n\nThe interaction between Drp1 and Actr10 in mitochondrial retrograde transport may provide a link between mitochondrial movement and mitochondrial fission. Originally, we investigated the role of Drp1 in retrograde mitochondrial transport as previous\u00a0studies revealed the unique ability of this GTPase to elicit mitochondrial localization to microtubule minus ends (Smirnova et al., 2001, 1998). Upon further investigation, it became apparent that a select number of proteins implicated in mitochondrial fission and fusion, including Drp1, have been shown to be essential for mitochondrial transport. Specifically, the fusion-related protein Mitofusin binds to the Miro-Milton complex and is necessary for mitochondrial movement (Misko et al., 2010). Similar to Miro and Milton, loss of Mitofusin results in decreased anterograde and retrograde mitochondrial transport in cultured neurons (Misko et al., 2010). Interestingly, the inner mitochondrial membrane protein Opa1, also necessary for mitochondrial fusion, does not participate in transport (Misko et al., 2010). Thus, eliminating mitochondrial fusion itself does not impact mitochondrial movement; rather mitochondrial outer membrane proteins may have dual roles in fusion-fission dynamics and transport.\n\nSimilarly, our work in conjunction with other studies supports the argument that Drp1 participates in both mitochondrial fission and retrograde mitochondrial transport. Drp1 translocates to mitochondria where it can bind to receptors Fis1 and Mff (LosonLos\u00f3n et al., 2013). In its GTP-bound form, it then oligomerizes, forming a constrictable collar necessary for fission during which GTP is exchanged for GDP (Ingerman et al., 2005). We found that a Drp1 variant incapable of binding GTP stimulates mitochondrial accumulation at the nuclear periphery, linking fission with transport. Our genetic interaction data suggest that Actr10 functions with Drp1 in this process, though further experiments are necessary to confirm this. Rather than Actr10 working with Drp1 to regulate mitochondrial localization, it is also possible that loss of Actr10 results a decrease in the motile pool of mitochondria in axons upon which Drp1K38A could work. We cannot differentiate between these possibilities at this point. Nevertheless, given the intriguing data generated here, it is tempting to speculate that, upon the GTP-GDP transition, not only do mitochondria undergo fission but Drp1 also recruits the retrograde motor protein complex through interaction with Actr10 to facilitate separation of these daughter mitochondria. The precise nature of Drp1-Actr10 interaction and the role of this interaction in mitochondrial retrograde transport is a subject of current investigation.\n\n### Conclusions\n\nThe coordinated regulation of mitochondrial transport is necessary for the formation and maintenance of active neural circuits. Our work identifies Actr10 as a crucial protein for mitochondrial interaction with the dynein-dynactin complex, regulating retrograde transport. In addition, we argue that the role of Actr10 is specific and not due to a general loss of dynactin stability or dynein function. The strongest pieces of evidence supporting this assertion are the ability of Actr10 to bind mitochondria in the absence of dynactin and the disparate nature of the actr10-dync1h1 and actr10-p150a/b mutant phenotypes in axons. In addition, we identified Drp1, a GTPase implicated in mitochondrial fission, as an Actr10 interactor with a potential role in mitochondrial retrograde transport. Together with previous studies on mitochondrial motility, a complex picture is emerging in which mitochondrial transport and fission/fusion are dependent on a core group of proteins, with an independent set of proteins regulating mitochondrial docking. In conclusion, further work is crucial to understanding how mitochondrial transport and dynamics are orchestrated in axons, which will ultimately allow us to better understand how this critical organelle is positioned and maintained. As mitochondrial transport and dynamics have been implicated in neurological disorders, a more complete mechanistic understanding of their regulation will provide insight into disease pathology.\n\n## Materials and methods\n\n### Zebrafish husbandry and strains\n\nAdult *AB and WIK strains were maintained at 28.5\u00b0C and spawned according to standard protocols (Westerfield, 2000). ENU mutagenesis and mutant screening were performed as described previously (Mullins et al., 1994). Additional strains used include: TgBAC(neurod:egfp)nl1 (Obholzer et al., 2008), actr10nl15, dync1h1mw20 (Insinna et al., 2010), p150a (also known as moks309; (Del Bene et al., 2008; Wehman et al., 2005), and p150bnl16.\n\n### RNA-seq based identification of the actr10nl15 mutation and genotyping\n\nRNAseq-based mapping was performed according to established protocols (Miller et al., 2013). actr10 heterozygotes (*AB background) were crossed to WIKs to generate a mapping strain. Heterozygous F1 hybrids were identified using pair wise crosses. Eighty wildtypes/heterozygotes and 80 actr10 mutants were obtained from a single mapping pair. These larvae were lysed at 4 dpf in Trizol according to the manufacturer\u2019s protocol. mRNA was extracted in phenol:chloroform:isoamyl alcohol and twice in chloroform before the pellet was redissolved in 20 \u00b5L of RNase/DNase free water. Sequencing was performed by the OHSU Massively parallel sequencing core on an Illumina HiSeq2000, generating approximately 30 million reads per condition. From this RNAseq data, RNAmapper identified a single nucleotide change in the start codon of the actr10 gene in the actr10nl15 mutant pool. The mutation (validated by sequencing and restriction digest of individual samples) completely segregated with the mutant phenotype. For experiments, actr10 mutants were identified by genotyping according to the following protocol: PCR amplification of the region around exon 1 of the actr10 locus resulted in a 374 bp product (forward primer: 5\u2019-CTGTTTTCGGATGAACTGCCTG; reverse primer: 5\u2019-AGATGCTCTTCGTCTTCTGGCTA. The actr10 mutation inserts a HaeIII cut site. Digestion with HaeIII generates wildtype (209 bp) and actr10 mutant (195 bp) bands.\n\n### Cloning the zebrafish ortholog of actr10, plasmid production, TALEN synthesis, and mRNA synthesis\n\nThe full-length open reading frame of actr10 was cloned from a 2 dpf zebrafish cDNA library and ligated into the pSC-A-amp/kan vector (Agilent Technologies; forward primer: 5\u2019-AAATGCCCTTGTTTGAA; reverse primer: 5\u2019-TTTCTCAGTGGAGAAGG). All expression and mRNA synthesis vectors were constructed using Gateway compatible cloning as described (Kwan et al., 2007). For Actr10 expression, the Actr10 open reading frame was PCR amplified with BP arms and inserted into the Gateway compatible 3\u2019-entry vector pDONRP2R-P3 (forward primer: 5\u2019-ggggacaagtttgtacaaaaaagcaggctAAATGCCCTTGTTTGAA; reverse primer: 5\u2019-ggggaccactttgtacaagaaagctgggtaTTTCTCAGTGGAGAAGG). Other constructs used included: 5kbneurod:mito-TagRFP (modified from (Fang et al., 2012); 5kbneurod:mRFP-dync1li1V2 (Drerup and Nechiporuk, 2013); Hsp701:mRFP-polyA; Hsp701:Drp1-mRFP; Hsp701:Drp1K38A-mRFP; and CMV/SP6:EGFP-dync1i2b. They were constructed as described here. The zebrafish dync1i2b ortholog was cloned into the pDONRP2P3 3\u2019 entry vector using BP-competent primers (forward primer: 5\u2019-ggggacagctttcttgtacaaagtggAGATGGCTCCCGTTTTAGAGAAG; reverse primer: 5\u2019-ggggacaactttgtataataaagttgtTCATGCCTCGTTCTCTGTC) and a 2 dpf zebrafish cDNA library. The zebrafish Drp1 ortholog was cloned from 2 dpf cDNA, sequence verified, and cloned into the pDONR221 middle entry vector using BP cloning (forward primer: 5\u2019-GGGGACAAGTTTGTACAAAAAAGCAGGCTTCAACGCGATGGAGGCTCTTA; reverse primer: 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTACCACAAGTGCGTC). To generate Drp1K38A, the middle entry vector was mutated to change Lysine 38 to Alanine (forward primer: 5\u2019-CGCAGAGTAGCGGGGCGAGTTCAG; reverse primer: 5\u2019-CCAAAACTGAACTCGCCCCGCTAC). All expression plasmids were constructed by LR cloning using the 5kbneurod (Mo and Nicolson, 2011), CMV/SP6, or Hsp701 5\u2019 entry vectors and the pDestTol2pA2 destination vector. mRNA was synthesized using the SP6 mMessage Machine kit (Life Technologies). TALENs targeting exon 1 of actr10 were designed using freeware (http://www.talendesign.org) and synthesized as described (Dahlem et al., 2012); Tal1 target: AATTTCTGCTGATAAAATGC; Tal2 target: GGGCAGCGGAGGAGA).\n\n### Generation of the p150nl16 mutant and genotyping\n\nThe p150bnl16 mutant was generated using CRISPR/Cas9-mediated genome editing as described (Hwang et al., 2013; Shah et al., 2015). Guide RNA targeting exon 3 (GGCGAGGGCAGCGCTCCCAC) of the p150b locus was produced using a PCR-mediated scaffold method as described (Gagnon et al., 2014). Cas9 mRNA (Chang et al., 2013) was produced using the SP6 mMessage machine kit. Zygotes derived from p150a (moks309) heterozygous outcrosses were injected with 10 pg guide RNA and 100 pg Cas9 mRNA at the one cell stage. Progeny were raised until adulthood and outcrossed to wildtypes to generate larvae. Larvae were genotyped using PCR amplification of the exon 3 locus (forward primer: 5\u2019-CGTGAGTGAGCTCTTGGTCTG; reverse primer: 5\u2019-GCGTCTATAACCATGTTTGACCTTG) and cut with MwoI to identify insertions/deletions. Changes to the guide RNA target result in loss of the MwoI cut site in p150b mutants: wildtype (164 bp\u00a0+\u00a064 bp) from p150b mutants (224 bp).\n\n### In situ hybridization and antibody labeling\n\nIn situ hybridization and antibody labeling were done according to established protocols (Drerup and Nechiporuk, 2013). The actr10 open reading frame was used for in situ hybridization. An\u00a0~800 base pair portion the 3\u2019UTR of p150a and p150b were used for in situ hybridization of these paralogues. Antibodies used were: \u03b1-Dynein heavy chain (Protein Tech; #12345\u20131-AP); \u03b1-p150 (BD Transduction Laboratories; #610473); \u03b1-Lamp1 (Iowa Hybridoma Bank, #1D4B); \u03b1-pJNK (Cell Signaling Technology, #9251S); \u03b1-GFP (Aves Labs Inc., #GFP-1020); \u03b1-DsRed (Clontech, #632496); \u03b1-Cytochrome c (BD Biosciences, #556432); \u03b1-GFP (Fisher Scientific, #A-11122); \u03b1-c-myc (Santa Cruz, #sc-40); and \u03b1-ATP\u03b2 (Abcam; #ab128743).\n\n### Cell culture, immunoprecipitation and mitochondrial fractionation\n\nHEK293T cells (Sigma Aldrich; #12022001; identity authenticated by STR-PCR) were cultured according to standard protocols in DMEM with 50 U/mL Pen-Strep. Cells tested mycoplasma free (MycoAlert Mycoplasma Detection Kit; Lonza; L07-218). This human cell line was used for its transfection ease and results were confirmed in vivo. Transfection was done in a 6-well plate using 2.5 \u00b5g total DNA and 5 \u00b5L of Lipofectamine2000 per well according to manufacturer\u2019s protocols (Thermo Fisher; #11668027). The mammalian GFP-Actr10 clone was used previously (Yeh et al., 2012) and obtained from Addgene (plasmid #51398). Drp1-myc and Drp1K38A-myc expression constructs were previously described (Smirnova et al., 2001). GFP-Actr10 deletion constructs were made using the QuikChange II XL Site-Directed Mutagenesis kit (Agilent, #200521).\n\nMitochondrial fractionation was performed according to established protocols (Prudent et al., 2013). Briefly, for each biological replicate 100 wildtype/heterozygous or actr10nl15 mutant larvae were disrupted in 700 \u00b5L MB buffer (210 mM mannitol, 70 mM sucrose, 1 mM EDTA, 10 mM HEPES pH\u00a0=\u00a07.5 and protease inhibitors) using a 26 gauge needle. After removal of the input fraction, lysates were subjected to increasing centrifugation speeds to fractionate mitochondria from a heavy and light fractions. The mitochondrial fraction was washed once in fresh MB buffer prior to addition of Laemmli buffer to the pellet and heat denaturation. Extracts were run on a 10% acrylamide gel, transferred to PVDF membrane, and incubated with antibodies prior to developing with the West Pico Substrate (Thermo Fisher; #34080). After initial development, membranes were washed in water and PBS/0.1% Tween prior to incubation with the \u03b1-ATP\u03b2 antibody.\n\n### In vivo analysis of axonal transport\n\nAxonal transport analyses were done as described (Drerup and Nechiporuk, 2013). Briefly, zygotes were injected with plasmids to express cargos of interest tagged with fluorescent proteins. At 4 dpf, larvae (each a biological replicate) were screened for pLL ganglion expression of cargo fusions and imaged using a 63X/NA1.2 water objective on an FV1000 confocal microscope (Olympus). All imaging was done in a single z-plane, allowing acquisition at 2\u20134 frames per second, as required by the Nyquist sampling theorem (Nyquist, 1928). Kymograph analyses of cargo movement were performed using Metamorph (Molecular Devices).\n\n### Transmission electron microscopy\n\nZebrafish larvae at 5 dpf were fixed and prepared for TEM analysis using standard protocols (Czopka and Lyons, 2011). Samples were embedded and sectioned from the tail of the larvae. An ultramicrotome was used to cut 1000 nm sections, which were then stained with Toluidine Blue to ensure the presence of neuromasts. Subsequently, 70 nm sections were cut and placed on copper mesh grids. Grids were stained with uranyl acetate for one hour and then each grid was cleaned with milliQ water for 45 s. The next day, grids were stained with Sato\u2019s lead stain for 15 min and again cleaned with milliQ water. The Washington University Center for Cellular Imaging Jeol JEM-1400 (Jeol USA) electron microscope was used to observe samples and an AMT V601 camera captured images.\n\n### Image and statistical analyses\n\nVolumetric analyses to determine mean fluorescence intensity of immunolabeling was done using Imaris (Bitplane). For this analysis, a surface rendering was done using expression of the neurod:egfp transgene in axon terminals and the mean fluorescence intensity was determined. Background from the same channel was subtracted prior to analysis. For quantification of western blots, mean intensity of was determined for signal and background using ImageJ. Statistical analyses were done in JMP. Prior to parametric analyses, data normality and variance were determined. Parametric data was analyzed using ANOVAs with Tukey-Kramer HSD contrasts for multiple comparisons. Non-parametric data was analyzed using Wilcoxon/Kruskal Wallis Tests. Image analyses and figure preparation was done using ImageJ, Adobe Photoshop, and Adobe Illustrator.\n",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e7fb2d8b-507c-479c-b694-beba633775be",
+      "submission_id": "b006f7af-56a7-4868-8d29-cda21f41bcf5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tanya T Whitfield, University of Sheffield , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22234.020](https://doi.org/10.7554/eLife.22234.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Regulation of mitochondria-dynactin interaction and mitochondrial retrograde transport in axons\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Tanya Whitfield as Reviewing Editor and Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis interesting study describes a forward screen in zebrafish that identifies a component of the retrograde transport machinery. The authors propose that the Actr10 protein acts as a linker between mitochondria and the dynein/dynactin complex. Specifically, the authors set out to show that in Actr10 mutant zebrafish, retrograde transport of mitochondria, but not other cargo, is specifically compromised. Dynein transport is apparently normal in actr10 mutants, and mutants in dynein and dynactin components have more severe and widespread phenotypes than actr10, supporting the notion that Actr10 functions specifically in transport of mitochondria. The authors suggest that Acrt10 interacts physically with the dynactin complex and brings it to mitochondria. Furthermore, the authors identify a region of the Actr10 protein that is required for physically interacting with the dynactin complex, but not mitochondria. Finally, biochemical and genetic experiments demonstrate that Actr10 interacts with the mitochondrial protein Drp1 and that a putative gain-of-function Drp1 mutant requires Actr10 to increase retrograde transport, supporting the idea that Drp1 recruits Actr10 to mitochondria.\n\nEssential revisions:\n\n1) The results showing that the trafficking effects are specific to mitochondria are not completely convincing, and require further experiments and controls. It is not clear that mitochondria accumulate more than other cargoes in axon swellings. The images should be analysed more quantitatively, avoiding potential effects of swelling size by normalising to area/volume. Anterograde and retrograde traffic should be quantified. (After discussion, it was felt that kymograph analysis would be very suitable here; if there were no comparable deficit in retrograde transport of other cargoes, the conclusion about specificity would be supported further. EM analysis might be useful but is not essential.)\n\n2) Critical controls are absent from several figures. Please see the specific comments from Reviewer 2.\n\nPlease see the individual reviews, which are appended below, for further information.\n\nReviewer #1:\n\nThe conclusion about mitochondrial specificity would be even stronger if the authors analyzed more cargo using kymograph analysis-not just lysosomes and JNK. In a previous paper, the authors looked at a wide variety of cargo (Drerup and Nechiporuk, 2013, PLoS Genetics), so this should be technically feasible.\n\nIn addition to the kymograph analysis, the authors could quantify enrichment in an alternative, less biased way. For example, perhaps they could outline the entire neuromast and determine the average pixel intensity for each marker over the entire structure in actr10 and wt. Another good way to do it would be to normalize the intensity of each marker by taking a ratio to a volume-filling reporter, such as cytoplasmic GFP. If they are correct, the cyt10 to GFP ratio should be higher in actr10 mutants relative to wt, but the other markers should be the same in both genotypes.\n\nOne issue that the authors may wish to address a bit more, either through discussion or experiments, is the generalizability of these results. Is mitochondrial transport also affected in other neurons in the Actr10 mutant fish? What is the ultimate consequence of these defects to the neuron? Do they eventually degenerate? What is the ultimate fate of these fish? Is the Actr10 locus associated with any human diseases?\n\nReviewer #2:\n\nI have raised a few queries into methodological and interpretative issues below. One particular issue is the \"mitochondria specific\" effect that is not supported by the Lamp1 and pJNK staining. I suggest the authors reconsider this.\n\nResults section and Figure 2. I think it is problematic to say that accumulations don't contain other cargoes. 2I and 2K both show labeling that colocalises with the axonal swelling. Indeed comparing the pJNK and Lamp1 staining in actr10 embryos (Figure 2) with the same staining in p150a/b (Figure 8) seems to show exactly the same effect (although the opposite conclusion is drawn).\n\nThe analysis shown in the graphs in Figure 2 seems to have selected regions outside of swellings for LAMP and pJNK, but inside a swelling for Mitochondria. Is this a strange choice?\n\nIn my opinion the swelling doesn't just contain mitochondria. This is true for other genetic mutations that give rise to axonal swelling in the literature.\n\nIn relation to the specificity of actr10 mutation for mitochondria in comparison to pJNK and LAMP it would be necessary to demonstrate that transport of these cargoes is not affected in actr10 mutant axons. This could be achieved using kymograph analysis.\n\nEM could also be used to identify the contents of these swellings. Alternatively, the authors should remove the claim that these swellings are purely a consequence of mitochondrial accumulation.\n\nResults section and Figure 3D. Ideally Figure 3D should show at least one retrograde mitochondrion to allow us to see the rate of retrograde transport. This is potentially important in relation to the point about reversals below.\n\nResults section and Figure 4F. To be more certain of the result, the rescue of axonal swelling in a cell specific fashion in neuromasts should be quantified. A single example is given. It would be appropriate to determine the efficiency of rescue in at least 10 neuromasts from 10 embryos.\n\nResults section and Figure 5D. This panel shows the swollen axon phenotype, and these swollen axons contain high levels of p150. I would say that this suggests that p150 is mislocalised.\n\nFigure 5J. Studying the transport parameters and looking at the kymograph suggests that the effect of actr10 mutation is to increase the number of reversals of direction in puncta undergoing retrograde movement. Looking at retrograde puncta in I and J, they both show pauses, but in I these are brief and only include small reversals in direction. However in J the retrograde puncta seem to frequently reverse direction. To investigate this it would be appropriate to measure the number of reversals per mito/minute for both anterograde and retrograde cargoes. If correct, this observation would suggest that actr10 is needed for the \"tug of war\" between kinesin and dynein motors, and loss of actr10 leads to more kinesin mediated movement of cargoes that would normally be transported by dynein. This is consistent with the idea that the dynactin complex regulates co-ordinated movement of cargoes in vivo (e.g. Gross JCB 2002).\n\nFigure 5N and O. Immunoprecipitations using \"beads only\" i.e. omitting the primary antibody are an essential control. GFP is notoriously \"sticky\" in these types of experiment.\n\nFigure 5O. In the co-IP of p150 with exogenous i2b it is critical to include the relevant control. i.e. western blot showing that the p150 signal is only present when i2b is pulled down. (co-IP of uninjected actr10 extracts performed at the same time as co-IP from i2b injected embryos.) This is in addition to the comment above.\n\nFigure 9. This is an important figure, using biochemistry to address localization of p150 in mutants.\n\nA&B: I am confused by the fact that the heavy fraction is strongly enriched for mitochondria. This suggests incomplete lysis of embryos. Probably just a technical issue, because 9F does not show the same enrichment?\n\nThere appears to be less p150 in actr10 lysate. This in itself might affect transport and needs to be investigated.\n\nThe loss of p150 from the mito fraction is striking, but the appearance in the supernatant cannot be correctly interpreted without using non-mitochondrial loading controls. I would suggest probing these blots with the following antibodies to ensure these fractions are \"pure\". (i) a nuclear protein that should label the heavy fraction (ii) another mito protein to confirm ATP\u03b2. (iii) tubulin (DM1A) to confirm supernatant and mito fractions.\n\nThese controls will also confirm equal loading for WT and actr10, particularly important in the case of the light fraction.\n\nC-D: control IPs are not presented to show how much p150 is immunoprecipitated using \"beads only\". This needs to be shown for each experiment. Also the level of GFP immunoprecipitated in \u03947 to \u039413 is much lower, so it is difficult to compare the efficiency of p150 IP.\n\nE: Again controls are missing. Is this specific?\n\nFigure 10A. To interpret the K38A result correctly there needs to be a panel showing WCE for GFP-actr10. Beads only controls (no primary antibody) are also important here.\n\nFigure 10J. I find interpretation of this difficult. It shows that K38A impairs mito transport in WT cells, but since there are already less mitos in the actr10 axons it is less compelling to say that there is no effect of K38A because of a loss of interaction. i.e. if the effect of mutant actr10 on mitos is independent of the effect of DRP1 won't we still get the same result?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Regulation of mitochondria-dynactin interaction and mitochondrial retrograde transport in axons\" for further consideration at eLife. Your revised article has been favorably evaluated by Jonathan Cooper (Senior editor), Tanya Whitfield (Reviewing editor), and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below (see comments from Reviewer 2). In particular, it is essential that the immunoprecipitation experiments shown in Figures 6N and O are shown with all the controls. Please add the necessary controls and label the blots as has been done for Figure 11G, i.e. indicate which antibodies have been used for the immunoprecipitation and which for the immunoblot.\n\nReviewer #1:\n\nThe authors have been responsive to reviewers and improved the manuscript in several notable ways: First, they have performed electron microscopy to demonstrate that mitochondria accumulate in terminals of actr10 mutants; second, they have re-analyzed image data with quantification methods that are more convincing and added new measures of transport that support their conclusions; third, they have added critical controls for biochemical experiments; finally, they have revised the text to emphasize alternative interpretations of key conclusions. This is now a thorough and convincing manuscript that identifies a key protein regulating the transport of specific axonal cargoes to maintain healthy axons, making this work of interest to both cell biologists and neuroscientists.\n\nReviewer #2:\n\nThe authors have modified the manuscript, and it shows considerable improvement.\n\nI find 2 areas that require further explanation\n\n1) Reversals:\n\nResults section paragraph four, \u2013 Unclear- 0/100 micron in mutants?\n\nNeeds to be only in moving mitochondria not per 100 micron, since there are less moving in mutants there is less chance for reversal?\n\n2) IP:\n\nMy request: \"it is critical to include the relevant control. i.e. western blot showing that the p150 signal is only present when i2b is pulled down. (co-IP of uninjected actr10 extracts performed at the same time as co-IP from i2b injected embryos.)\"\n\nAs far as I can tell the new data presented in Figure 6 currently shows no p150 blot data for the additional controls?\n",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4facde5d-b7e4-4598-81d2-ce2d949eada8",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C1",
+      "claim": "Mitochondrial transport in axons is critical for neural circuit health and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial transport in axons is critical for neural circuit health and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific knowledge about mitochondrial function in neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a8cd4a84-f9e5-448d-ab0c-8fed963d0492",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C2",
+      "claim": "actr10nl15 mutants carry a loss-of-function mutation in actr10, a member of the dynein-associated complex dynactin.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain carries a loss-of-function mutation in actr10, a member of the dynein-associated complex dynactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The mutation was identified through RNAmapper analysis and confirmed through rescue experiments and TALEN-mediated disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "b729d6cd-a3f6-4c4d-9a70-99b755ddedb5",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C3",
+      "claim": "Mitochondria fail to attach to the dynein retrograde motor in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In a genetic screen, we found a zebrafish strain in which mitochondria fail to attach to the dynein retrograde motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mitochondrial fractionation experiments showing loss of p150 from the mitochondrial fraction in actr10 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "9232b247-23c7-4df0-a792-8b627b6dd97a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C4",
+      "claim": "The abnormal axon morphology and mitochondrial retrograde transport defects observed in actr10 mutants are distinct from dynein and dynactin mutant axonal phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The abnormal axon morphology and mitochondrial retrograde transport defects observed in actr10 mutants are distinct from dynein and dynactin mutant axonal phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of actr10, dync1h1, and p150a/b mutants showing different axonal phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "459ef39a-1ff6-4c0b-bd48-0a1612c1a24c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C5",
+      "claim": "Actr10 lacking the dynactin binding domain maintains its ability to bind mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Actr10 lacking the dynactin binding domain maintains its ability to bind mitochondria, arguing for a role for Actr10 in dynactin-mitochondria interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mitochondrial fractionation experiments showing Actr10\u03947 in the mitochondrial fraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "acfd7965-f891-4cb6-b833-e71709993d3b",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C6",
+      "claim": "Drp1 is implicated as a partner in Actr10-dependent mitochondrial retrograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, genetic interaction studies implicated Drp1 as a partner in Actr10-dependent mitochondrial retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoprecipitation showing Actr10-Drp1 interaction and genetic interaction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "5a929c3b-0953-43e1-b3a4-dd6b8866f3b5",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C7",
+      "claim": "Neurons use 4.7 billion molecules of ATP per second at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that at rest alone, neurons use 4.7 billion molecules of ATP per second (Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study (Zhu et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "4c7b4b8d-53d6-4025-a5f2-8d66bbe6899a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C8",
+      "claim": "Mitochondria regulate local calcium ion levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their critical role in cellular metabolism, mitochondria also regulate local calcium ion levels (Werth and Thayer, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study (Werth and Thayer, 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "7dd7b1f3-e72b-482c-8707-32d09096d501",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C9",
+      "claim": "High cytoplasmic calcium levels correlate with axonal degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "During inactivity, this ion needs to be contained in intracellular compartments as high cytoplasmic calcium levels correlate with axonal degeneration (Avery et al., 2012; Vargas et al., 2015; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e3da231b-3eff-4255-99a5-e21775fb3e78",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C10",
+      "claim": "Mitochondrial motility is necessary to maintain mitochondrial health and function.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to maintaining axon health, mitochondrial motility is also necessary to maintain mitochondrial health and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about mitochondrial dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "769e2346-1017-41c3-9d3d-7bacbf3a837d",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C11",
+      "claim": "Interrupted mitochondrial fission or fusion has been linked to loss of mitochondrial DNA, loss of oxidative potential, and mitophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrupted mitochondrial fission or fusion has been linked to loss of mitochondrial DNA, loss of oxidative potential, and mitophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a review (Scheibye-Knudsen et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "1ef9b638-4c52-448f-b818-86280bedfb47",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C12",
+      "claim": "Mitofusin participates in the anterograde transport of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitofusin, an essential protein for mitochondrial fusion, participates in the anterograde transport of this organelle as well (Misko et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study (Misko et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "7f10b1b2-09e4-4cdb-9fe0-87e861a001b7",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C13",
+      "claim": "Manipulation of Drp1 impacts the localization of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, manipulation of the dynamin-like protein Drp1, necessary for mitochondrial fission, impacts the localization of mitochondria (Smirnova et al., 2001; Varadi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "46d3b519-7ada-49c6-9d81-3ac2507e6953",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C14",
+      "claim": "Kinesin-1 attaches to mitochondria via the proteins Miro and Milton.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary anterograde mitochondrial motor, Kinesin-1, attaches to mitochondria via the proteins Miro (RhoT1/2; Guo et al., 2005) and Milton (TRAK1/2; Glater et al., 2006; Stowers et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "940c2528-c37f-465e-be28-db2e602da705",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C15",
+      "claim": "Miro contains calcium sensitive EF hands that change conformation when exposed to high levels of calcium, resulting in the uncoupling of the Kinesin-1 motor from microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Miro contains calcium sensitive EF hands that, when exposed to high levels of this ion, change their confirmation, resulting in the uncoupling of the Kinesin-1 motor from microtubules (Saotome et al., 2008; Wang and Schwarz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e5263cd0-5f49-4a5d-8a19-585cf4bd4cd4",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C16",
+      "claim": "Loss of Miro or Milton impacts anterograde and retrograde mitochondrial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The Miro/Milton transport machinery is not specific for anterograde transport, however, as loss of either protein impacts anterograde and retrograde mitochondrial movement (Guo et al., 2005; Saotome et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "1533a70c-2b2e-4fde-8777-d2034eff2661",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C17",
+      "claim": "Retrograde mitochondrial transport depends on the cytoplasmic dynein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde mitochondrial transport is known to depend on the cytoplasmic dynein complex (Pilling et al., 2006; Schnapp and Reese, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "c328b977-0a58-453e-944d-063ee4605559",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C18",
+      "claim": "Dynactin's p150 subunit facilitates dynein processivity and serves as an anchor for dynein at microtubule plus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynactin, specifically its p150 subunit, has been shown to facilitate dynein processivity and also serves as an anchor for dynein at microtubule plus ends, facilitating cargo loading (Lloyd et al., 2012; Moughamian and Holzbaur, 2012; Schroer, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a8d8d052-5c84-4f81-91f4-1c91f49b0dee",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C19",
+      "claim": "The dynactin accessory complex is attached to dynein through interaction of p150 with the tails of the dynein intermediate chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynactin accessory complex is attached to dynein through interaction of p150 with the tails of the dynein intermediate chains (Vaughan and Vallee, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "cd60003d-88cc-4c43-bc7e-bdcf9eef26b4",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C20",
+      "claim": "Actr10 is part of the dynactin pointed end complex which is predicted to be in an ideal location for cargo binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with p25, p62 and p27, Actr10 is a part of the dynactin pointed end complex which is predicted to be in an ideal location for cargo binding (Yeh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "5ab7a358-0ce5-463f-b62e-fde95d783de9",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C21",
+      "claim": "One key function for Actr10 is capping the actin-like Arp1 filament to regulate filament length and facilitate attachment of other pointed end proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural work suggests that one key function for Actr10 is capping the actin-like Arp1 filament, to regulate filament length and facilitate attachment of other pointed end proteins (Urnavicius et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "bd3f4a51-6101-4fde-b679-01c18f610669",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C22",
+      "claim": "actr10nl15 mutants display axon terminal swellings in the central and peripheral nervous systems indicative of retrograde transport abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "actr10nl15 mutants (hereafter referred to as actr10) display axon terminal swellings in the central and peripheral nervous systems indicative of retrograde transport abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through imaging of pLL axons in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "8275318e-7648-4d8c-ab89-be10823eeede",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C23",
+      "claim": "Mitochondria cluster at microtubule plus ends in actr10 mutants due to failed retrograde mitochondrial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cargo localization and movement in the actr10 mutant revealed clustering of mitochondria, but not other cargos analyzed, at microtubule plus ends due to failed retrograde mitochondrial movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live imaging and kymograph analysis of mitochondrial transport.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "41c8ae7a-937b-4895-9e37-a7a6ffc79db6",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C24",
+      "claim": "Abnormal mitochondrial movement in actr10 mutants is due to failed attachment of mitochondria to the dynein-dynactin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrated that abnormal mitochondrial movement in actr10 mutants is due to failed attachment of mitochondria to the dynein-dynactin complex in the absence of Actr10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mitochondrial fractionation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e829f9cd-b43d-49b1-bc51-5f10c0e5eace",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C25",
+      "claim": "pLL axons develop early with axon extension complete by 2 days post-fertilization and synapse formation occurring by 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "pLL axons develop early (axon extension is complete by 2 days post-fertilization (dpf) and synapse formation occurs by 4 dpf)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on the zebrafish lateral line system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "718bf457-3f67-464c-bf7a-5438e2f6989e",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C26",
+      "claim": "RNAmapper analysis identified the causal mutation as a single nucleotide change (T to G) in the start codon of actr10.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAmapper analysis (Miller et al., 2013) identified the causal mutation as a single nucleotide change (T to G) in the start codon of actr10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA sequencing and mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "1ceb7abe-0e51-491a-96e6-233dfd0af513",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C27",
+      "claim": "TALEN-mediated disruption of the first exon of actr10 phenocopied the mutant axon terminal swellings.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed actr10 as the affected gene using RNA-mediated rescue of axon terminal swellings and by performing TALEN- (Transcription Activator Like Effector Nuclease) mediated disruption of the first exon of actr10, which phenocopied the mutant axon terminal swellings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through TALEN injection experiments and phenotypic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "f4d65d9a-bdf8-44f5-a3cf-b3ee0f0714c0",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C28",
+      "claim": "Cytochrome c accumulates in actr10 mutant axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed an accumulation of Cytochrome c, a mitochondrial protein, in actr10 axon terminals (Figure 2A,B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunolabeling experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "4fee1f8c-f158-451e-933f-ba6b22af1989",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C29",
+      "claim": "actr10 mutants display mitochondrial accumulation in pLL axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "actr10 mutants displayed mitochondrial accumulation in pLL axon terminals (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through live imaging of mitochondria labeled with TagRFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "094b9e02-ac86-4004-9b14-45cc53defdb7",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C30",
+      "claim": "Lamp1 and pJNK do not accumulate in actr10 mutant axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Other known pLL axon retrograde cargos, including those labeled by Lamp1 (Lysosome associated membrane protein-1; late endosome/lysosome marker) and phosphorylated c-Jun N-Terminal Kinase (pJNK) did not accumulate (Figure 2F\u2013K; Drerup and Nechiporuk, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunolabeling experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "ed88cc01-8e00-4a9a-8639-d4a7d4077caf",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C31",
+      "claim": "Expression of wildtype Actr10 rescues mitochondrial accumulation in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of wildtype Actr10 using zygotic injection of in vitro synthesized mRNA rescued mitochondrial accumulation in actr10 mutants (Figure 2L\u2013O), confirming that Actr10 is necessary for proper mitochondrial positioning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through rescue experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "f8605c2b-a007-4de1-aaa5-9114e55ebd28",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C32",
+      "claim": "Mitochondria are highly enriched in the axon terminal swellings of actr10 mutants compared to other intracellular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment demonstrated mitochondria are highly enriched in the axon terminal swellings of actr10 mutants compared to other intracellular structures (Figure 3A,B; n = 3 wildtypes, n = 4 mutants).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through TEM analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6139a09a-98cc-4e06-b1ce-be0237cb3236",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C33",
+      "claim": "There is a 37% reduction in the distance moved by mitochondria in the anterograde direction in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis demonstrated a 37% and 39% reduction in the distance moved by mitochondria in the anterograde and retrograde directions respectively in actr10 mutants but no change in mitochondrial transport velocity (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through kymograph analysis of live imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "d2a37e2e-159b-420a-8015-86feb5ae4fce",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C34",
+      "claim": "There is a 39% reduction in the distance moved by mitochondria in the retrograde direction in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis demonstrated a 37% and 39% reduction in the distance moved by mitochondria in the anterograde and retrograde directions respectively in actr10 mutants but no change in mitochondrial transport velocity (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through kymograph analysis of live imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "89e4e5f7-51e8-4574-a61f-58f7710fd88b",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C35",
+      "claim": "The frequency of anterograde mitochondrial transport is unchanged in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the decrease in anterograde transport distance, the frequency of anterograde mitochondrial transport was unchanged in actr10 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of mitochondrial transport data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "83824491-8862-4147-a35d-009c37fa243e",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C36",
+      "claim": "The frequency of retrograde mitochondrial transport is dramatically decreased in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both the frequency of retrograde mitochondrial transport and the proportion of mitochondria moving in the retrograde direction were dramatically decreased in actr10 mutants (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of mitochondrial transport data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "b5cf2dd4-be2b-4b3b-b5de-6661d934d2e6",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C37",
+      "claim": "The proportion of mitochondria moving in the retrograde direction is dramatically decreased in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both the frequency of retrograde mitochondrial transport and the proportion of mitochondria moving in the retrograde direction were dramatically decreased in actr10 mutants (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of mitochondrial transport data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "8e5bf06f-3687-4dbf-8fb3-7462f04fe56a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C38",
+      "claim": "actr10 is ubiquitously expressed, albeit enriched in the nervous system during larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "actr10 is ubiquitously expressed, albeit enriched in the nervous system during larval stages (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through in situ hybridization shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e43eb545-995b-4dd7-86fe-3949f55f6e20",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C39",
+      "claim": "Neuronal expression of mRFP-Actr10 rescues axon terminal morphology and mitochondrial localization in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While mRFP-Actr10 expression in wildtype axons had no apparent effects (Figure 5D; n = 6 in 3 biological replicates), it rescued axon terminal morphology and mitochondrial localization in all mutants analyzed (Figure 5E\u2013G; n = 5 mutants in 3 biological replicates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through rescue experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "32f72366-2c7e-4504-8c8e-eb59fd22550f",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C40",
+      "claim": "Actr10 functions autonomously in neurons to regulate axon morphology and mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments confirmed a neuron-specific function for Actr10 in mitochondrial localization in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through neuron-specific rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "cd69e252-a8bb-4e7c-96dd-265996a19756",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C41",
+      "claim": "Neither Dynein heavy chain nor p150 are significantly mislocalized in actr10 mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Dynein heavy chain (DHC) nor p150 were significantly mislocalized in actr10 mutants, though we did observe a trend of increased DHC in actr10 mutant axon terminals (Figure 6A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunolabeling experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "25144e1e-b9dc-42c7-9096-c746eb70357c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C42",
+      "claim": "There is no change in the parameters of retrograde dynein movement in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis revealed no change in the parameters of retrograde dynein movement, though we did note a 42% reduction in the distance and a 26% reduction in the velocity of anterograde dynein transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through kymograph analysis of dynein transport.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "97b58ba9-0b68-4e7f-92f6-ce7c448ce5bc",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C43",
+      "claim": "There is a 42% reduction in the distance of anterograde dynein transport in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis revealed no change in the parameters of retrograde dynein movement, though we did note a 42% reduction in the distance and a 26% reduction in the velocity of anterograde dynein transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through kymograph analysis of dynein transport.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "15d8254d-4b75-4bcd-afef-86232fc9e55f",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C44",
+      "claim": "There is a 26% reduction in the velocity of anterograde dynein transport in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis revealed no change in the parameters of retrograde dynein movement, though we did note a 42% reduction in the distance and a 26% reduction in the velocity of anterograde dynein transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through kymograph analysis of dynein transport.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "d1c038ae-f9ee-4d86-a6cc-dba759a8d9be",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C45",
+      "claim": "There is no change in the proportion of dynein-positive puncta moving in the anterograde or retrograde direction in actr10 mutants at 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these defects in anterograde dynein transport, there was no change in the proportion of dynein-positive puncta moving in the anterograde or retrograde direction in actr10 mutants at 4 dpf (Figure 6I\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of dynein transport data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "af139b82-ba5f-4555-8a99-4409adbb5e29",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C46",
+      "claim": "Loss of Actr10 does not impede dynein-dynactin complex localization or dynein retrograde movement in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrated that loss of Actr10 does not impede dynein-dynactin complex localization or dynein retrograde movement in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through immunolabeling and live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a2c30e04-d710-45dd-89db-db7c152e9da4",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C47",
+      "claim": "i2b-GFP can integrate into the core dynein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "i2b-GFP can integrate into the core dynein complex (Figure 6N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoprecipitation experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "078e96fe-5da6-43d8-81d3-018df9643956",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C48",
+      "claim": "Loss of Actr10 does not impact dynein-dynactin interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot of larval extracts revealed no change in p150 interaction with the core dynein motor (Figure 6O). Together, these experiments confirmed that loss of Actr10 does not impact dynein-dynactin interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through co-immunoprecipitation experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "79f9269d-39a2-4a31-99d8-fb87aa3a4178",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C49",
+      "claim": "There are small changes in anterograde transport velocity and distance of retrograde transport bouts of peroxisomes in actr10 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymograph analysis of peroxisome transport at 4 dpf demonstrated small changes in anterograde transport velocity and distance of retrograde transport bouts (Figure 7A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through kymograph analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6f878f36-a490-4732-bd94-087bf949b9c3",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C50",
+      "claim": "Lamp1-labeled vesicles are transported normally in actr10 mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Lamp1-positive vesicle movement at 4 dpf demonstrated that this cargo is transported normally in actr10 mutant axons (Figure 7H\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through live imaging and kymograph analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "bd2f530c-e4e6-455e-bd7a-786a96736e1d",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C51",
+      "claim": "Loss of Actr10 does not hinder the transport of all dynein-dependent, retrograde cargos in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These live imaging experiments, in conjunction with the immunolabeling of known retrograde cargos (Figure 2) and our TEM studies (Figure 3), argue that loss of Actr10 does not hinder the transport of all dynein-dependent, retrograde cargos in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "f83e2485-1abc-4709-a71f-543590a12522",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C52",
+      "claim": "dync1h1 mutants display rapid degeneration of pLL axons by 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike actr10 mutants (see Figure 1), dync1h1 mutants displayed rapid degeneration of pLL axons by 4 dpf, with pLL nerves extending less than half-way to the tail at this time-point (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging of dync1h1 mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "fdb1c35c-3e48-4788-8dcc-1abc21d19497",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C53",
+      "claim": "Mitochondria accumulate in distal axons of dync1h1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria do accumulate in distal axons of dync1h1 mutants, as expected with global disruption of retrograde transport (Figure 8F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "06209fe3-f2c9-4c0e-9169-0721e5721097",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C54",
+      "claim": "The disparity between actr10 and dync1h1 mutant axonal phenotypes argues that loss of Actr10 does not impact all dynein function in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The disparity between actr10 and dync1h1 mutant axonal phenotypes argues that loss of Actr10 does not impact all dynein function in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparative phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "f5c6c6da-d76f-4cb9-b3c4-4844330d5d45",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C55",
+      "claim": "There are two orthologs of p150 in zebrafish, p150a and p150b.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two orthologs of p150 in zebrafish, p150a and p150b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of zebrafish.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a0b61d5d-e35a-4611-9034-5f6b55d50609",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C56",
+      "claim": "p150b is enriched in developing and mature neurons while p150a is enriched only in mature neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These paralogues are highly similar at the amino acid level but have slightly different expression patterns: while both are ubiquitously expressed, p150b is enriched in developing (1 and 2 dpf) and mature (4 dpf) neurons while p150a is enriched only in mature neurons 4 dpf (Figure 9A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through in situ hybridization shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "4c9432a7-4e30-44b9-844f-e0728a8dbbe6",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C57",
+      "claim": "Loss of p150a alone has no discernable effect on axons or mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of p150a alone has no discernable effect on axons or mitochondrial localization (Figure 8C,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging of p150a mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "8d5f7dfe-015c-4ab2-b2f4-f6cc59863723",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C58",
+      "claim": "p150b single mutants are indistinguishable from wild-type siblings at 4 dpf, with normal axon terminals and no abnormalities in mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "p150b single mutants are indistinguishable from wild-type siblings at 4 dpf, with normal axon terminals and no abnormalities in mitochondrial localization (Figure 8D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging of p150b mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "cf6087e0-1d6b-45f0-8494-74119f95b879",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C59",
+      "claim": "p150a/b mutants are phenotypically similar to dync1h1 mutants, with truncated pLL axons and mitochondrial accumulation at axon ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike single p150 mutants, p150a/b mutants are phenotypically similar to dync1h1 mutants, with truncated pLL axons and mitochondrial accumulation at axon ends (Figure 8E,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging of p150a/b mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "17d2760e-56be-435d-8594-a87fcfc87310",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C60",
+      "claim": "actr10 mutants do not phenocopy the axon truncation phenotype of dynein or dynactin loss of function mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the reliance of mitochondria on the dynein-dynactin complex for retrograde movement and demonstrates that actr10 mutants do not phenocopy the axon truncation phenotype of dynein or dynactin loss of function mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparative phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "041e386c-2c4f-4c37-bdfe-f7d57645b1a7",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C61",
+      "claim": "p150a/b double mutants have an almost complete cessation of mitochondrial movement in the anterograde and retrograde directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike loss of Actr10, p150a/b double mutants had an almost complete cessation of mitochondrial movement in the anterograde and retrograde directions (Figure 8N,O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through kymograph analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a5ec204c-358a-4e45-829d-89ae9351b104",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C62",
+      "claim": "There is a dramatic loss of mitochondria from the central portion of axons in p150a/b double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we noted a dramatic loss of mitochondria from the central portion of axons in p150a/b double mutants, likely because of the strong defect in anterograde mitochondrial transport (Figure 8P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through quantification shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "37c4d65a-3ed3-48d4-9a99-98f17cd8aaec",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C63",
+      "claim": "pJNK accumulates in p150a/b mutant axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two cargos known to localize normally in actr10 mutants, pJNK and Lamp1 (see Figure 2), accumulate in in p150a/b mutant axon terminals (Figure 10A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunolabeling shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "227a66f2-7338-4649-b51d-f8945db0ec4c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C64",
+      "claim": "Lamp1 accumulates in p150a/b mutant axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two cargos known to localize normally in actr10 mutants, pJNK and Lamp1 (see Figure 2), accumulate in in p150a/b mutant axon terminals (Figure 10A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunolabeling shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "54947dc1-9ccf-42ca-8977-8efb019b4c58",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C65",
+      "claim": "In actr10 mutants, p150 is largely lost from the mitochondrial fraction with a concomitant increase of p150 to the light fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in actr10 mutants, p150 was largely lost from the mitochondrial fraction with a concomitant increase of p150 to the light fraction, which contains all cellular components not pelleted under low centrifugation speeds (Figure 11B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through mitochondrial fractionation experiments shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "915b45de-01f1-41cc-9010-5e9557138762",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C66",
+      "claim": "Actr10 is necessary for mitochondrial attachment to dynactin.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates the necessity of Actr10 for mitochondrial attachment to dynactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from mitochondrial fractionation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6c4f6843-31cc-4e60-bae3-03c75d124c99",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C70",
+      "claim": "Separate protein domains exist in Actr10 which are necessary for interaction with dynactin and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "mRFP-Actr10 and mRFP-Actr10\u25b37, expressed using zygotic microinjection of respective mRNAs, were both present in the mitochondrial fractionation (Figure 11D,H; n = 2), arguing that separate protein domains exist in Actr10 which are necessary for interaction with dynactin and mitochondria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from mitochondrial fractionation experiments shown in Figure 11.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "c066c2bc-566e-4c35-a804-6ff56dbdd700",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C71",
+      "claim": "Actr10 participates in mitochondrial attachment to the retrograde motor protein complex in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This data supports a role for Actr10 in binding mitochondria to dynactin for retrograde mitochondrial transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "c99b78db-c82d-433b-ba07-89794de363f9",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C72",
+      "claim": "A lysine to alanine mutation at amino acid 38 in Drp1 causes clustering of mitochondria in the perinuclear region of fibroblasts in a microtubule-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a lysine to alanine mutation at amino acid 38 in Drp1 (mimicking a constitutively GDP-bound form) causes clustering of mitochondria in the perinuclear region of fibroblasts in a microtubule-dependent manner (Smirnova et al., 2001; Varadi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "98fb5d4d-0bd4-4795-936b-edd25ac6fa5c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C73",
+      "claim": "Drp1 interacts with Actr10.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunoprecipitation, we demonstrated that Drp1 interacts with Actr10, with strongly enhanced interaction between Actr10 and the Drp1K38A variant (Figure 12A; n = 3 replicates in independent experiments; (Smirnova et al., 2001, 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoprecipitation experiments shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "288b7697-be25-4386-bdb2-eceeaea7e33a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C74",
+      "claim": "The K38A mutation in Drp1 strengthens the interaction between Drp1 and Actr10.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunoprecipitation, we demonstrated that Drp1 interacts with Actr10, with strongly enhanced interaction between Actr10 and the Drp1K38A variant (Figure 12A; n = 3 replicates in independent experiments; (Smirnova et al., 2001, 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoprecipitation experiments shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "78ea26ff-587d-4c5d-aaa7-28c6600c9712",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C75",
+      "claim": "Expression of Drp1K38A-mRFP causes mitochondrial clustering in wildtype pLL neuron cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type larvae, expression of Drp1K38A-mRFP caused mitochondrial clustering in the perinuclear region, phenotypically similar to the results observed in cultured fibroblasts (Figure 12B,C; Smirnova et al., 2001; Varadi et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging experiments shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "deab7eb2-fb57-466c-b345-1ca8ec46bea7",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C76",
+      "claim": "Drp1K38A-mRFP expression does not alter mitochondrial localization in actr10 mutant pLL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Drp1K38A-mRFP expression did not alter mitochondrial localization in actr10 mutant pLL neurons (Figure 12D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging experiments shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "41b9b62f-8e38-4214-9c70-62700ba1388d",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C77",
+      "claim": "Expression of Drp1K38A causes a substantial decrease in the number of mitochondria per micron in wildtype but not actr10 mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, expression of Drp1K38A caused a substantial decrease in the number of mitochondria per micron in wildtype but not actr10 mutant axons (Figure 12F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through quantification shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "d0f044eb-6614-453c-ab62-af687a48c7f0",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C78",
+      "claim": "The biochemical and genetic interaction between Actr10 and Drp1K38A support a model in which Drp1, in its GDP-bound state, modulates dynein-based mitochondrial localization via an Actr10-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the biochemical and genetic interaction between Actr10 and Drp1K38A support a model in which Drp1, in its GDP-bound state, modulates dynein-based mitochondrial localization via an Actr10-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from biochemical and genetic interaction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "48c27836-81df-4990-b108-9406ddd49bdf",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C79",
+      "claim": "Actr10 is a mediator of retrograde mitochondrial transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetics, immunolabeling, biochemistry, and in vivo imaging of cargo movement, we have identified Actr10 as a mediator of retrograde mitochondrial transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "95d3102f-6946-455f-84f5-4a7bf790f597",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C80",
+      "claim": "In the absence of Actr10, mitochondrial retrograde transport frequency is selectively disrupted, leading to accumulation of this organelle in axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of this dynactin pointed end protein, mitochondrial retrograde transport frequency is selectively disrupted, leading to accumulation of this organelle in axon terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "2db6a423-52bd-444c-9dbe-ccc5e7ed818b",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C81",
+      "claim": "Actr10 is necessary for dynactin-dependent, retrograde transport of mitochondria in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data argue that Actr10 is necessary for dynactin-dependent, retrograde transport of mitochondria in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "3b467c0b-3577-4d07-a35e-f7303f2daccb",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C82",
+      "claim": "Actr10 could directly link mitochondria to dynactin or potentially facilitate this interaction through other dynactin pointed end proteins, such as p62.",
+      "claim_type": "EXPLICIT",
+      "source": "Actr10 could directly link mitochondria to dynactin or potentially facilitate this interaction through other dynactin pointed end proteins, such as p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "d1dc5f9a-c3ec-4250-9ca6-1eaebbbf8411",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C83",
+      "claim": "p62 is predicted to rely on Actr10 for binding to the dynactin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "p62 is of particular interest in this regard as it is predicted to rely on Actr10 for binding to the dynactin complex (Urnavicius et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "02e87aca-3d04-4a7b-b12f-9751c0057af0",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C84",
+      "claim": "Knockdown of Actr10 using siRNA in Cos7 cells resulted in dissociation of the dynactin complex pointed end.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this role, knockdown of Actr10 using siRNA in Cos7 cells resulted in dissociation of the dynactin complex pointed end (Yeh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "0782bb81-32e3-42fc-9cd7-5ba3348e5bf9",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C85",
+      "claim": "Loss of Actr10 in fungi phenocopies the abnormal nuclear positioning observed with loss of dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, studies in the fungi neurospora and aspergillus demonstrated that loss of Actr10 phenocopies the abnormal nuclear positioning observed with loss of dynein (Lee et al., 2001; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6a37c340-581a-46d1-bbdf-875ea68819c1",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C86",
+      "claim": "Zebrafish actr10 mutants display the small eye phenotype observed in dync1h1 and p150a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, zebrafish actr10 mutants display the small eye phenotype observed in dync1h1 and p150a mutants (see Figure 8 and Del Bene et al., 2008; Insinna et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through imaging and cited from published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e769579a-d8ce-43a6-90a4-d3fd1c97561a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C87",
+      "claim": "Knockdown of Actr10 resulted in multipolar spindle formation in Cos7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, similar to loss of p150, knockdown of Actr10 resulted in multipolar spindle formation in Cos7 cells (Yeh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "476fba33-796b-4f65-b5c7-1c64bffb8abc",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C88",
+      "claim": "Actr10 has been shown to regulate Arp1-membrane interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Actr10 has been shown to regulate Arp1-membrane interaction (Clark and Rose, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "4fdb430a-1a58-424e-8b30-b9ef0595d340",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C89",
+      "claim": "The zebrafish eye phenotype in the p150a mutant is due to a defect in interkinetic nuclear migration.",
+      "claim_type": "EXPLICIT",
+      "source": "and the zebrafish eye phenotype in the p150a mutant is due to a defect in interkinetic nuclear migration (Del Bene et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a10a948d-4160-4feb-9cc1-d7f6775d0a04",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C90",
+      "claim": "Actr10 may modulate both Arp1 interaction with the nuclear membrane and mitochondria-dynactin binding in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, rather than purely serving a stabilizing role for the dynactin complex, Actr10 may modulate both Arp1 interaction with the nuclear membrane and mitochondria-dynactin binding in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data and literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6a47d620-22fd-4f24-9cc7-87cb90284c40",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C91",
+      "claim": "A variant of Actr10 lacking the dynactin binding domain retains its ability to interact with mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a variant of Actr10 lacking the dynactin binding domain retains its ability to interact with mitochondria, further substantiating a direct role for this protein in mitochondria-dynactin interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mitochondrial fractionation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "b7a2fa84-67d9-459d-afa0-0d277b3f3c9f",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C92",
+      "claim": "Actr10 participates in mitochondrial attachment to the retrograde motor protein complex in neurons in addition to potentially facilitating Arp1 capping and nuclear positioning in other contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data argue that Actr10 participates in mitochondrial attachment to the retrograde motor protein complex in neurons in addition to potentially facilitating Arp1 capping and nuclear positioning in other contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6d6b729c-f561-4a63-8f44-44d2a901ce94",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C93",
+      "claim": "The interaction between Drp1 and Actr10 in mitochondrial retrograde transport may provide a link between mitochondrial movement and mitochondrial fission.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between Drp1 and Actr10 in mitochondrial retrograde transport may provide a link between mitochondrial movement and mitochondrial fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e339a08e-cbc6-4e10-be2d-3a201e4ba832",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C94",
+      "claim": "Drp1 has the unique ability to elicit mitochondrial localization to microtubule minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally, we investigated the role of Drp1 in retrograde mitochondrial transport as previous studies revealed the unique ability of this GTPase to elicit mitochondrial localization to microtubule minus ends (Smirnova et al., 2001, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "5b7f9f89-84cf-43fe-8314-9c5f6170095f",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C95",
+      "claim": "Mitofusin binds to the Miro-Milton complex and is necessary for mitochondrial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the fusion-related protein Mitofusin binds to the Miro-Milton complex and is necessary for mitochondrial movement (Misko et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "75d6e580-518c-4fe9-afdd-40c85019c3b8",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C96",
+      "claim": "Loss of Mitofusin results in decreased anterograde and retrograde mitochondrial transport in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Miro and Milton, loss of Mitofusin results in decreased anterograde and retrograde mitochondrial transport in cultured neurons (Misko et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "7755ebe3-f305-46a0-848a-c2d7ba85ddeb",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C97",
+      "claim": "The inner mitochondrial membrane protein Opa1 does not participate in transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the inner mitochondrial membrane protein Opa1, also necessary for mitochondrial fusion, does not participate in transport (Misko et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "6d53cd3d-f03e-41e4-953c-56e9342264d0",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C98",
+      "claim": "Eliminating mitochondrial fusion itself does not impact mitochondrial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, eliminating mitochondrial fusion itself does not impact mitochondrial movement; rather mitochondrial outer membrane proteins may have dual roles in fusion-fission dynamics and transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited study on Opa1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "2765c71b-24fe-4f4b-856d-aba62c25befc",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C99",
+      "claim": "Drp1 translocates to mitochondria where it can bind to receptors Fis1 and Mff.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1 translocates to mitochondria where it can bind to receptors Fis1 and Mff (LosonLos\u00f3n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "4697e578-fe66-4aff-83ac-a505edc5335c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C100",
+      "claim": "In its GTP-bound form, Drp1 oligomerizes, forming a constrictable collar necessary for fission during which GTP is exchanged for GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "In its GTP-bound form, it then oligomerizes, forming a constrictable collar necessary for fission during which GTP is exchanged for GDP (Ingerman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "e59db1a4-3631-466e-9449-71f0a4de3191",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C101",
+      "claim": "A Drp1 variant incapable of binding GTP stimulates mitochondrial accumulation at the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a Drp1 variant incapable of binding GTP stimulates mitochondrial accumulation at the nuclear periphery, linking fission with transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "dbe3c3c4-ca85-4f8a-a127-2f7fdf12c5f2",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C102",
+      "claim": "Upon the GTP-GDP transition, mitochondria undergo fission and Drp1 recruits the retrograde motor protein complex through interaction with Actr10 to facilitate separation of daughter mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, given the intriguing data generated here, it is tempting to speculate that, upon the GTP-GDP transition, not only do mitochondria undergo fission but Drp1 also recruits the retrograde motor protein complex through interaction with Actr10 to facilitate separation of these daughter mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "d517a24d-1c0d-478d-ba39-2adf6b1415a9",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C103",
+      "claim": "Actr10 is a crucial protein for mitochondrial interaction with the dynein-dynactin complex, regulating retrograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work identifies Actr10 as a crucial protein for mitochondrial interaction with the dynein-dynactin complex, regulating retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "7d7264bc-614a-47a8-bd88-178a2af3974a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C104",
+      "claim": "The role of Actr10 is specific and not due to a general loss of dynactin stability or dynein function.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we argue that the role of Actr10 is specific and not due to a general loss of dynactin stability or dynein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "99b44d8d-8d9f-43e8-acb5-f9d1d2fd0aa7",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C105",
+      "claim": "The ability of Actr10 to bind mitochondria in the absence of dynactin and the disparate nature of the actr10-dync1h1 and actr10-p150a/b mutant phenotypes in axons are the strongest pieces of evidence supporting a specific role for Actr10.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest pieces of evidence supporting this assertion are the ability of Actr10 to bind mitochondria in the absence of dynactin and the disparate nature of the actr10-dync1h1 and actr10-p150a/b mutant phenotypes in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "116c4cc7-be9e-4c81-8eb9-497d1d34a196",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "claim_id": "C106",
+      "claim": "Mitochondrial transport and dynamics have been implicated in neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "As mitochondrial transport and dynamics have been implicated in neurological disorders, a more complete mechanistic understanding of their regulation will provide insight into disease pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0920161-df7a-4246-afdd-efa2d7726374",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The actr10nl15 mutation was identified as a T to G single nucleotide change in the start codon of actr10 through RNAmapper analysis, and confirmed through RNA-mediated rescue and TALEN-mediated disruption experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26, and C27 provide converging evidence for the identification and validation of the actr10 mutation. RNAmapper analysis identified the mutation (C26), and both rescue experiments and TALEN-mediated disruption confirmed the gene identity (C27), supporting the loss-of-function nature of the mutation (C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "actr10 mutants display axon terminal swellings with specific accumulation of mitochondria but not other retrograde cargos (Lamp1, pJNK), and this phenotype is rescued by wildtype Actr10 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C28-C32 collectively demonstrate that actr10 mutants have axon terminal swellings enriched in mitochondria (confirmed by Cytochrome c immunolabeling, live imaging, and TEM), while other retrograde cargos localize normally. The rescue by wildtype Actr10 (C31) confirms specificity. The data are internally consistent and well-supported by multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "96c7fb26-110b-4120-89ab-470298bbc30c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mitochondrial retrograde transport is specifically disrupted in actr10 mutants, with dramatic decreases in retrograde transport frequency and proportion, while anterograde transport frequency remains unchanged despite modest reductions in transport distance in both directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by kymograph analysis of live imaging data (Figure 4). The specific reduction in retrograde transport frequency and proportion (C36, C37) with unchanged anterograde frequency (C35) supports a selective role for Actr10 in retrograde transport. The modest bidirectional distance reductions (C33, C34) are acknowledged but do not undermine the primary finding of selective retrograde transport defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "b4661c19-a677-472b-8396-384d61ee5b1c",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Actr10 functions cell-autonomously in neurons to regulate axon morphology and mitochondrial localization, as demonstrated by neuron-specific rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by in situ hybridization showing actr10 expression (C38) and neuron-specific rescue experiments (C39). The rescue of both axon terminal morphology and mitochondrial localization by neuronal expression of mRFP-Actr10 in mutants (C39) demonstrates cell-autonomous function (C40). The experimental design is appropriate for testing cell autonomy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of Actr10 does not significantly affect dynein-dynactin complex localization, dynein retrograde movement, or dynein-dynactin interaction, though modest defects in anterograde dynein transport are observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 are supported by immunolabeling (C41), live imaging and kymograph analysis (C42-C45), and co-immunoprecipitation experiments (C47, C48). The data demonstrate that core dynein-dynactin function is largely intact in actr10 mutants, supporting the argument that Actr10 has a specific role in mitochondrial transport rather than general dynein function. The modest anterograde dynein transport defects (C43, C44) are noted but do not contradict the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "02aa83f9-6ece-4fb4-8cca-40ecb2fe6718",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Loss of Actr10 does not significantly impair the transport of all dynein-dependent retrograde cargos, as Lamp1-labeled vesicles are transported normally and only small changes in peroxisome transport are observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by live imaging and kymograph analysis of peroxisome and Lamp1 vesicle transport (Figures 7). The normal transport of Lamp1 vesicles (C50) and only modest changes in peroxisome transport (C49) support the conclusion that Actr10 loss does not globally disrupt retrograde transport (C51). This is consistent with the specific mitochondrial transport defect observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The axonal phenotypes of actr10 mutants are distinct from dynein (dync1h1) and dynactin (p150a/b) loss-of-function mutants, which show more severe axon degeneration, complete cessation of mitochondrial movement, and accumulation of additional retrograde cargos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C64 provide comprehensive comparative analysis of actr10, dync1h1, and p150a/b mutants through imaging, transport analysis, and immunolabeling. The distinct phenotypes\u2014actr10 mutants have intact axons with selective mitochondrial transport defects (C60), while dync1h1 and p150a/b mutants show axon degeneration (C52, C59), complete loss of mitochondrial movement (C61), and accumulation of multiple cargos (C63, C64)\u2014strongly support the conclusion that Actr10 has a specific function distinct from general dynein-dynactin activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "86e0409a-47ad-4601-920a-f2f80f4d4ae3",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Actr10 is necessary for mitochondrial attachment to dynactin, as demonstrated by mitochondrial fractionation showing loss of p150 from the mitochondrial fraction in actr10 mutants, and Actr10 contains separate domains for dynactin and mitochondrial interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C66, C70, and C71 are supported by mitochondrial fractionation experiments (Figure 11). The loss of p150 from the mitochondrial fraction in actr10 mutants (C65) directly demonstrates the necessity of Actr10 for mitochondrial-dynactin attachment (C66). The finding that Actr10\u03947 (lacking the dynactin binding domain) still binds mitochondria (C70) provides strong evidence for separate binding domains and a scaffolding role for Actr10 (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "54aa264f-dc48-4143-a6cc-8538373e0848",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Drp1 interacts with Actr10, with enhanced interaction for the GDP-bound Drp1K38A variant, and genetic interaction studies show that Drp1K38A-mediated mitochondrial clustering and axonal depletion require Actr10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 are supported by immunoprecipitation experiments showing Actr10-Drp1 interaction (C73, C74) and genetic interaction studies (C75-C77). The finding that Drp1K38A causes mitochondrial clustering in wildtype but not actr10 mutant neurons (C75, C76) and reduces axonal mitochondria in wildtype but not mutants (C77) provides strong genetic evidence for functional interaction. However, the authors acknowledge that alternative interpretations exist (reduced motile pool in mutants), and further validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "2c5f15e2-e247-4514-9008-6b569b461899",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Actr10 is a crucial mediator of retrograde mitochondrial transport through its specific role in mitochondrial-dynactin interaction, distinct from general dynactin stability or dynein function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 and C103-C105 represent the main conclusions of the study, supported by the collective evidence from multiple experimental approaches including genetics, immunolabeling, biochemistry, and live imaging. The strongest evidence includes: (1) selective mitochondrial transport defects without global retrograde transport disruption, (2) distinct phenotypes from dynein/dynactin mutants, (3) Actr10's ability to bind mitochondria independently of dynactin, and (4) loss of p150 from mitochondrial fractions in actr10 mutants. The convergence of multiple lines of evidence strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "f957922c-fe5b-4f18-bb13-161f81d3b6fa",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that Actr10 may directly link mitochondria to dynactin or work through other pointed end proteins like p62, and that Drp1-Actr10 interaction may link mitochondrial fission with retrograde transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82, C90, C93, and C102 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are reasonable based on the presented data and prior literature, they require additional experimental validation. The authors appropriately present these as speculative models rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish the importance of mitochondrial transport in neurons, the known mechanisms of mitochondrial transport, and the components of the dynein-dynactin complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C21, C25, and C106 provide background context from established literature (marked as KNOWLEDGE or CITATION). These claims are appropriately cited and represent accepted knowledge in the field. They provide necessary context for interpreting the novel findings but are not primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "7a53ad0d-183c-47ae-931c-b4369ebde54d",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work on Actr10 and related proteins in various systems provides context for interpreting the current findings, including roles in nuclear positioning, spindle formation, and mitochondrial dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C83-C89, and C94-C100 summarize prior work from the literature (marked as CITATION). These claims are appropriately cited and provide important context for discussing the novel findings in relation to previous studies. The authors use this prior work to support their interpretation that Actr10 may have multiple context-dependent functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    },
+    {
+      "id": "411e58cc-cefb-4e30-aa3e-01c168ec8242",
+      "content_id": "3edea2f0-d7a2-4849-bcd8-b270797b3551",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Actr10 participates in mitochondrial attachment to the retrograde motor complex in neurons and may also facilitate Arp1 capping and nuclear positioning in other contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 represents an integrative conclusion that reconciles the current findings (mitochondrial transport in neurons) with prior work (nuclear positioning, spindle formation). The mitochondrial transport function is well-supported by the current data, while the additional functions in other contexts are supported by cited literature. This represents a reasonable synthesis of the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:47:49.526017Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a8cd4a84-f9e5-448d-ab0c-8fed963d0492",
+      "result_id": "e0920161-df7a-4246-afdd-efa2d7726374"
+    },
+    {
+      "claim_id": "718bf457-3f67-464c-bf7a-5438e2f6989e",
+      "result_id": "e0920161-df7a-4246-afdd-efa2d7726374"
+    },
+    {
+      "claim_id": "1ceb7abe-0e51-491a-96e6-233dfd0af513",
+      "result_id": "e0920161-df7a-4246-afdd-efa2d7726374"
+    },
+    {
+      "claim_id": "bd3f4a51-6101-4fde-b679-01c18f610669",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "f4d65d9a-bdf8-44f5-a3cf-b3ee0f0714c0",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "4fee1f8c-f158-451e-933f-ba6b22af1989",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "094b9e02-ac86-4004-9b14-45cc53defdb7",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "ed88cc01-8e00-4a9a-8639-d4a7d4077caf",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "f8605c2b-a007-4de1-aaa5-9114e55ebd28",
+      "result_id": "dbd35e9d-762c-46ad-a6e1-338a7cd75def"
+    },
+    {
+      "claim_id": "6139a09a-98cc-4e06-b1ce-be0237cb3236",
+      "result_id": "96c7fb26-110b-4120-89ab-470298bbc30c"
+    },
+    {
+      "claim_id": "d2a37e2e-159b-420a-8015-86feb5ae4fce",
+      "result_id": "96c7fb26-110b-4120-89ab-470298bbc30c"
+    },
+    {
+      "claim_id": "89e4e5f7-51e8-4574-a61f-58f7710fd88b",
+      "result_id": "96c7fb26-110b-4120-89ab-470298bbc30c"
+    },
+    {
+      "claim_id": "83824491-8862-4147-a35d-009c37fa243e",
+      "result_id": "96c7fb26-110b-4120-89ab-470298bbc30c"
+    },
+    {
+      "claim_id": "b5cf2dd4-be2b-4b3b-b5de-6661d934d2e6",
+      "result_id": "96c7fb26-110b-4120-89ab-470298bbc30c"
+    },
+    {
+      "claim_id": "8e5bf06f-3687-4dbf-8fb3-7462f04fe56a",
+      "result_id": "b4661c19-a677-472b-8396-384d61ee5b1c"
+    },
+    {
+      "claim_id": "e43eb545-995b-4dd7-86fe-3949f55f6e20",
+      "result_id": "b4661c19-a677-472b-8396-384d61ee5b1c"
+    },
+    {
+      "claim_id": "32f72366-2c7e-4504-8c8e-eb59fd22550f",
+      "result_id": "b4661c19-a677-472b-8396-384d61ee5b1c"
+    },
+    {
+      "claim_id": "cd69e252-a8bb-4e7c-96dd-265996a19756",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "25144e1e-b9dc-42c7-9096-c746eb70357c",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "97b58ba9-0b68-4e7f-92f6-ce7c448ce5bc",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "15d8254d-4b75-4bcd-afef-86232fc9e55f",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "d1c038ae-f9ee-4d86-a6cc-dba759a8d9be",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "af139b82-ba5f-4555-8a99-4409adbb5e29",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "a2c30e04-d710-45dd-89db-db7c152e9da4",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "078e96fe-5da6-43d8-81d3-018df9643956",
+      "result_id": "34e9c72a-0053-42a9-b8b2-2182a3d812c6"
+    },
+    {
+      "claim_id": "79f9269d-39a2-4a31-99d8-fb87aa3a4178",
+      "result_id": "02aa83f9-6ece-4fb4-8cca-40ecb2fe6718"
+    },
+    {
+      "claim_id": "6f878f36-a490-4732-bd94-087bf949b9c3",
+      "result_id": "02aa83f9-6ece-4fb4-8cca-40ecb2fe6718"
+    },
+    {
+      "claim_id": "bd2f530c-e4e6-455e-bd7a-786a96736e1d",
+      "result_id": "02aa83f9-6ece-4fb4-8cca-40ecb2fe6718"
+    },
+    {
+      "claim_id": "f83e2485-1abc-4709-a71f-543590a12522",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "fdb1c35c-3e48-4788-8dcc-1abc21d19497",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "06209fe3-f2c9-4c0e-9169-0721e5721097",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "f5c6c6da-d76f-4cb9-b3c4-4844330d5d45",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "a0b61d5d-e35a-4611-9034-5f6b55d50609",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "4c9432a7-4e30-44b9-844f-e0728a8dbbe6",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "8d5f7dfe-015c-4ab2-b2f4-f6cc59863723",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "cf6087e0-1d6b-45f0-8494-74119f95b879",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "17d2760e-56be-435d-8594-a87fcfc87310",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "041e386c-2c4f-4c37-bdfe-f7d57645b1a7",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "a5ec204c-358a-4e45-829d-89ae9351b104",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "37c4d65a-3ed3-48d4-9a99-98f17cd8aaec",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "227a66f2-7338-4649-b51d-f8945db0ec4c",
+      "result_id": "a02d2acd-c248-403a-a4cf-e96fcf4412e6"
+    },
+    {
+      "claim_id": "54947dc1-9ccf-42ca-8977-8efb019b4c58",
+      "result_id": "86e0409a-47ad-4601-920a-f2f80f4d4ae3"
+    },
+    {
+      "claim_id": "915b45de-01f1-41cc-9010-5e9557138762",
+      "result_id": "86e0409a-47ad-4601-920a-f2f80f4d4ae3"
+    },
+    {
+      "claim_id": "6c4f6843-31cc-4e60-bae3-03c75d124c99",
+      "result_id": "86e0409a-47ad-4601-920a-f2f80f4d4ae3"
+    },
+    {
+      "claim_id": "c066c2bc-566e-4c35-a804-6ff56dbdd700",
+      "result_id": "86e0409a-47ad-4601-920a-f2f80f4d4ae3"
+    },
+    {
+      "claim_id": "98fb5d4d-0bd4-4795-936b-edd25ac6fa5c",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "288b7697-be25-4386-bdb2-eceeaea7e33a",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "78ea26ff-587d-4c5d-aaa7-28c6600c9712",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "deab7eb2-fb57-466c-b345-1ca8ec46bea7",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "41b9b62f-8e38-4214-9c70-62700ba1388d",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "d0f044eb-6614-453c-ab62-af687a48c7f0",
+      "result_id": "54aa264f-dc48-4143-a6cc-8538373e0848"
+    },
+    {
+      "claim_id": "48c27836-81df-4990-b108-9406ddd49bdf",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "95d3102f-6946-455f-84f5-4a7bf790f597",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "2db6a423-52bd-444c-9dbe-ccc5e7ed818b",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "d517a24d-1c0d-478d-ba39-2adf6b1415a9",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "7d7264bc-614a-47a8-bd88-178a2af3974a",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "99b44d8d-8d9f-43e8-acb5-f9d1d2fd0aa7",
+      "result_id": "2c5f15e2-e247-4514-9008-6b569b461899"
+    },
+    {
+      "claim_id": "3b467c0b-3577-4d07-a35e-f7303f2daccb",
+      "result_id": "f957922c-fe5b-4f18-bb13-161f81d3b6fa"
+    },
+    {
+      "claim_id": "a10a948d-4160-4feb-9cc1-d7f6775d0a04",
+      "result_id": "f957922c-fe5b-4f18-bb13-161f81d3b6fa"
+    },
+    {
+      "claim_id": "6d6b729c-f561-4a63-8f44-44d2a901ce94",
+      "result_id": "f957922c-fe5b-4f18-bb13-161f81d3b6fa"
+    },
+    {
+      "claim_id": "dbe3c3c4-ca85-4f8a-a127-2f7fdf12c5f2",
+      "result_id": "f957922c-fe5b-4f18-bb13-161f81d3b6fa"
+    },
+    {
+      "claim_id": "4facde5d-b7e4-4598-81d2-ce2d949eada8",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "5a929c3b-0953-43e1-b3a4-dd6b8866f3b5",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "4c7b4b8d-53d6-4025-a5f2-8d66bbe6899a",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "7dd7b1f3-e72b-482c-8707-32d09096d501",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "e3da231b-3eff-4255-99a5-e21775fb3e78",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "769e2346-1017-41c3-9d3d-7bacbf3a837d",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "1ef9b638-4c52-448f-b818-86280bedfb47",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "7f10b1b2-09e4-4cdb-9fe0-87e861a001b7",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "46d3b519-7ada-49c6-9d81-3ac2507e6953",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "940c2528-c37f-465e-be28-db2e602da705",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "e5263cd0-5f49-4a5d-8a19-585cf4bd4cd4",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "1533a70c-2b2e-4fde-8777-d2034eff2661",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "c328b977-0a58-453e-944d-063ee4605559",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "a8d8d052-5c84-4f81-91f4-1c91f49b0dee",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "cd60003d-88cc-4c43-bc7e-bdcf9eef26b4",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "5ab7a358-0ce5-463f-b62e-fde95d783de9",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "e829f9cd-b43d-49b1-bc51-5f10c0e5eace",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "116c4cc7-be9e-4c81-8eb9-497d1d34a196",
+      "result_id": "23dcaf0b-29a0-4dde-a544-38e7e52fe22a"
+    },
+    {
+      "claim_id": "c99b78db-c82d-433b-ba07-89794de363f9",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "d1dc5f9a-c3ec-4250-9ca6-1eaebbbf8411",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "02e87aca-3d04-4a7b-b12f-9751c0057af0",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "0782bb81-32e3-42fc-9cd7-5ba3348e5bf9",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "6a37c340-581a-46d1-bbdf-875ea68819c1",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "e769579a-d8ce-43a6-90a4-d3fd1c97561a",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "476fba33-796b-4f65-b5c7-1c64bffb8abc",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "4fdb430a-1a58-424e-8b30-b9ef0595d340",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "e339a08e-cbc6-4e10-be2d-3a201e4ba832",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "5b7f9f89-84cf-43fe-8314-9c5f6170095f",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "75d6e580-518c-4fe9-afdd-40c85019c3b8",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "7755ebe3-f305-46a0-848a-c2d7ba85ddeb",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "6d53cd3d-f03e-41e4-953c-56e9342264d0",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "2765c71b-24fe-4f4b-856d-aba62c25befc",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "4697e578-fe66-4aff-83ac-a505edc5335c",
+      "result_id": "7a53ad0d-183c-47ae-931c-b4369ebde54d"
+    },
+    {
+      "claim_id": "b7a2fa84-67d9-459d-afa0-0d277b3f3c9f",
+      "result_id": "411e58cc-cefb-4e30-aa3e-01c168ec8242"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2205 @@
+{
+  "submission": {
+    "id": "73b9a9c2-6927-45f8-8025-15e51fa6e7b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:24:29.785343Z",
+    "updated_at": "2025-11-30T20:24:29.785343Z"
+  },
+  "content": [
+    {
+      "id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "submission_id": "73b9a9c2-6927-45f8-8025-15e51fa6e7b8",
+      "content_type": "manuscript",
+      "content_text": "# A systematic view on influenza induced host shutoff\n\n## Authors\n\n- Adi Bercovich-Kinori<sup>1</sup>\n- Julie Tai<sup>1</sup>\n- Idit Anna Gelbart<sup>1</sup>\n- Alina Shitrit<sup>1</sup>\n- Shani Ben-Moshe<sup>2</sup>\n- Yaron Drori<sup>3</sup>\n- Shalev Itzkovitz<sup>2</sup> ([ORCID: 0000-0003-0685-2522](https://orcid.org/0000-0003-0685-2522))\n- Michal Mandelboim<sup>3</sup>\n- Noam Stern-Ginossar<sup>1</sup> ([ORCID: 0000-0003-3583-5932](https://orcid.org/0000-0003-3583-5932)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics Weizmann Institute of Science Rehovot Israel\n2. Department of Molecular Cell Biology Weizmann Institute of Science Rehovot Israel\n3. Central Virology Laboratory Chaim Sheba Medical Center, Ministry of Health Rehovot Israel\n4. Department of Epidemiology and Preventive Medicine Tel-Aviv University Tel-Aviv Israel\n5. School of Public Health Tel-Aviv University Tel-Aviv Israel\n6. Sackler Faculty of Medicine Tel-Aviv University Tel-Aviv Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nHost shutoff is a common strategy used by viruses to repress cellular mRNA translation and concomitantly allow the efficient translation of viral mRNAs. Here we use RNA-sequencing and ribosome profiling to explore the mechanisms that are being utilized by the Influenza A virus (IAV) to induce host shutoff. We show that viral transcripts are not preferentially translated and instead the decline in cellular protein synthesis is mediated by viral takeover on the mRNA pool. Our measurements also uncover strong variability in the levels of cellular transcripts reduction, revealing that short transcripts are less affected by IAV. Interestingly, these mRNAs that are refractory to IAV infection are enriched in cell maintenance processes such as oxidative phosphorylation. Furthermore, we show that the continuous oxidative phosphorylation activity is important for viral propagation. Our results advance our understanding of IAV-induced shutoff, and suggest a mechanism that facilitates the translation of genes with important housekeeping functions.\n\n## Introduction\n\nInfluenza A viruses (IAV) are included among the Orthomyxoviridae family of negative single-stranded, segmented RNA viruses. These viruses cause an infectious disease that constitutes an important public health problem and remains today an important cause of morbidity and mortality (Fields , 2007). Like all viruses, IAV is absolutely dependent on the host-cell protein synthesis machinery to produce its proteins. To ensure priority access to host translation machinery, many viruses utilize host shutoff mechanisms that eliminate competition from cellular transcripts (Walsh et al., 2012). Host shutoff could be achieved by two complementary mechanisms: 1. Direct co-opting of the translation machinery by mechanisms that force better translation of viral mRNAs compared to their host counterparts. A classic example for this strategy is employed by poliovirus. It cleaves an essential host cap- binding protein, eIF4G, therefore preventing cap-dependent translation of host mRNAs while viral RNA translation stays unperturbed through the use of an internal ribosome entry site (Ventoso et al., 1998). 2. Viral-induced degradation of host mRNAs. This strategy is employed by several herpesviruses that express endonucleases which cleave host mRNAs, thereby eliminating the competition with host mRNA for the translation apparatus and ensuring efficient cap-dependent translation of viral mRNAs (Glaunsinger and Ganem, 2006).\n\nIAV has long been known to significantly shutoff host gene expression. Interestingly, it is one of the few viruses for which both direct translation co-opting and host mRNA degradation were suggested to play a prominent role in host shutoff (Yanguez and Nieto, 2011; Jagger et al., 2012). Although IAV mRNAs share the basic features with host mRNAs like a 5\u2019 7-methyl guanosine (m7G) cap and a 3\u2019 poly-adenylate (poly(A)) tail, previous research suggested that influenza mRNAs are preferably translated due to features found in the 5\u2019UTR of viral mRNAs (Garfinkel and Katze, 1993; Katze et al., 1986; Park and Katze, 1995). In addition host mRNA degradation has long been acknowledged (Beloso et al., 1992). The 5\u2019 m7G caps on viral transcripts are acquired by \u201ccap-snatching\u201d\u00a0(Plotch et al., 1981), this snatching allows the priming of viral mRNA synthesis but also leads to nascent host transcripts degradation. In addition, inhibition of polyadenylation of host pre-mRNA by IAV Nonstructural protein 1 (NS1) protein (Nemeroff et al., 1998), and degradation of the host RNA polymerase II complex (Rodriguez and P\u00e9rez-Gonz\u00e1lez, 2007) could contribute to the reduction in host transcripts in infected cells. Recently, a highly conserved IAV protein PA-X, possessing the PA endonuclease domain, was shown to selectively degrade host mRNAs (Jagger et al., 2012), strongly suggesting that PA-X is a general influenza host shutoff endonuclease.\n\nAlthough the discovery of PA-X has prompted new examination of the mechanisms that drive host shutoff during IAV infection (Khaperskyy\u00a0and\u00a0McCormick, 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015), several fundamental questions remain unanswered: (a) To what extent does IAV change host mRNAs expression and translation?, (b) what is the relative contribution of host mRNA degradation versus direct manipulation of translation to host shutoff? (c) to what extent does the virus possess mechanisms to ensure more effective translation of its own mRNAs?\n\nHere, we took a systemic approach to explore the relative contribution of direct co-opting of the translation machinery, and reduction of host RNA levels to the reduction in host protein synthesis. To this end, we have used RNA sequencing (RNA-seq) and ribosome profiling (deep sequencing of ribosomes-protected fragments) to globally map the changes in host genes RNA and translation levels during IAV infection. These comprehensive and simultaneous measurements complemented with Single molecule Fluorescence in-situ Hybridization (smFISH) revealed that host shutoff is mainly achieved by reduction in cellular mRNAs levels, and that IAV transcripts are not preferably translated. Our systematic analysis also reveals that host transcripts are affected differently by IAV infection and that the extent of mRNAs reduction is related to their length and GC content. Interestingly, we noticed that transcripts encoding oxidative phosphorylation related proteins are less affected by IAV infection, their protein levels remain stable throughout infection and their continuous expression supports the energetic demands that are essential for virus replication.\n\n## Results\n\n### Simultaneous monitoring of RNA levels and translation during IAV infection\n\nTo gain a detailed view of the changes that occur in viral and host transcripts abundance and translation over the course of IAV infection, we infected A549 cells with the A/Puerto Rico/8/1934 H1N1 (PR8) strain at MOI\u00a0=\u00a05 and harvested cells at 2, 4, and 8 hr post infection (hpi). We designed our experiment to simultaneously monitor both RNA levels and translation (Figure 1A). Deep sequencing of mRNA (RNA-seq) allows a detailed mapping of transcript levels during infection and these were paired with ribosome footprints, which allow accurate measurement of protein synthesis by capturing the overall in vivo distribution of ribosomes on a given message (Ingolia et al., 2011). In order to assess the reproducibility of our experiments we prepared two independent biological replicates for each of these time points. Both the mRNA and footprints read density measurements were reproducible (Figure 1B). We quantitatively assessed the expression pattern of 7211 human transcripts and the 8 viral transcripts that are expressed from the 8 genomic segments of influenza. Metagene analysis, in which gene profiles are aligned and then averaged, revealed the expected profiles of footprints along mRNAs; ribosome density accumulates along the gene body ending at the first in-frame stop codon with pronounced accumulation of ribosomes at the initiation and termination sites (Figure 2A). Unexpectedly, examination of the ribosome profiling data obtained from influenza transcripts revealed reads that align to the IAV minus strand (vRNA) that is non-coding (Figure 2B). These reads were not correlated with any sequence feature related to translation and were specific for the virus as individual human transcripts presented the expected profiles precluding any general problem in the sample preparation (Figure 2C). To test if the footprints we obtained from viral mRNAs indeed originate from the ribosome protected fragments we generated an additional set of ribosome profiling libraries in which cells were pre-treated with harringtonine, a drug which leads to a strong accumulation of ribosomes precisely at translation initiation sites (Ingolia et al., 2011). As expected harringtonine treatment led to strong accumulation of ribosome protected fragments at the first AUG and to the\u00a0depletion of ribosome density from the body of the viral and host mRNAs. Thus, this indicates that the protected fragments we captured from both cellular and viral mRNAs originate from ribosome protected fragments of transcripts that were engaged in active translation elongation (Figure 2A,B and D). In contrast, the protected fragments that mapped to the IAV minus strand were not affected by harringtonine treatment (Figure 2B and Figure 2\u2014figure supplement 1) indicating that the protection of these fragments is probably not mediated by translating ribosomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experiment set up of Ribosome profiling and RNA-seq along IAV infection. (B) Reproducibility of the ribosome footprints and mRNA measurements of host genes at 4 hpi. The correlation in footprints and mRNA measurements between biological replicates is presented.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig2-v2.jpg)\n\n**Figure 2.:** (A) Metagene analysis of ribosome profiling data. Average ribosome read density profiles over well-expressed genes, aligned at their start codon and stop codons. Data from uninfected, 2, 4 and 8 hpi samples, and harringtonine pretreated 8 hpi sample. (B) Ribosome occupancies following treatments (illustrated on the left) with cycloheximide (CHX, top panels), and harringtonine (Harr, bottom panels) of the Influenza NS1 genomic locus at 8 hpi. Data from the plus strand (dark blue) and the minus strand (light blue) is presented. (C) Ribosome footprints profile of one human gene (ISG15) at 8 hpi. (D) Meta gene analysis from start codon for footprints originating from viral mRNAs. Data from 2, 4 and 8 hr of IAV infected and 8 hpi-harringtonine treated cells. (E) Fragment length organization similarity score (FLOSS) analysis for human mRNAs and for viral reads originating from the plus and minus strands.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Average ribosome read density profiles from IAV minus strand, aligned to the highest peak found in each viral minus strand segment. Data from cycloheximide (CHX) or harringtonine (Harr) pre-treatment from 8 hpi samples.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig2-figsupp2-v2.jpg)\n\nTo further illustrate that the footprints we obtained from viral mRNA reflect ribosome-protected fragments we applied a recently developed metric that distinguishes between 80S footprints and non-ribosomal sources using footprint size distributions (Ingolia et al., 2014). In ribosome-profiling data, the overall size distribution of fragments derived from protein-coding sequences, differs from the lengths of contaminating fragments found in profiling samples (Ingolia et al., 2014). We used a fragment length organization similarity score (FLOSS) that measures the magnitude of disagreement between the footprints distribution on a given transcript and the footprints distribution on canonical CDS. As expected thousands of well-expressed protein-coding transcripts scored well, and the similarity improved with increasing read counts ([Ingolia et al., 2014] and Figure 2E). IAV mRNAs scored well in these matrixes and they did not differ from well-expressed human transcripts (Figure 2E, blue). However, reads from IAV minus strand could be clearly distinguished from annotated coding sequences (Figure 2E, red). We conclude that the protected fragments originating from minus strand viral RNA are not generated by ribosome protection. These fragments could originate from protection by the viral nucleoprotein (NP) that associates with viral genomes and was shown to sediment with viral RNAs (Duesberg, 1969). This possibility is supported by the observation that the numbers of protected reads originating from the IAV genome increases as the infection progresses (Figure 2\u2014figure supplement 2).\n\n### IAV host shutoff is driven by reduced levels of host RNA but not reduced translation\n\nIn order to quantitatively evaluate if IAV evolved mechanisms to co-opt the cells' ribosomes we calculated the translation efficiency (TE) across our time course. TE is defined as the ratio of footprints to total mRNAs for a given gene and reflects how well a gene is being translated. We then compared the TE of human genes to that of viral genes at each of the time points along infection (Figure 3A). The analysis shows that the viral genes translation efficiencies fall within the general range of host gene translation indicating that viral transcripts are not preferentially translated during IAV infection and that direct co-opting of the translation machinery does not play a dominant role in cellular gene shutoff. Instead, our systematic analysis demonstrates that host shutoff stems from the\u00a0viral dominance over the mRNA pool. At 8 hpi viral mRNAs take over 53.8% of the translation activity in the cells as 57.3% of the mRNAs in the cells are viral (Figure 3B). These findings show that the relative reduction in cellular mRNA expression is the main cause for host shutoff during infection. Our analysis concurs with the finding that PA-X endonuclease activity plays a dominant role in host shutoff during IAV infection (Jagger et al., 2012; Khaperskyy and McCormick, 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cumulative TE distribution among well-expressed human and viral genes shows that viral genes are translated at the same efficiency as cellular genes at 2, 4 and 8 hpi. (B) Percent of reads that aligned to the human or viral genome from the sum of aligned reads shown for ribosome profiling (footprints) and RNA-seq (mRNA) at 2, 4, and 8 hpi. (C) Ribosome footprints and mRNA read densities (reads per kilobase million, RPKM) of well-expressed human transcripts across three time points during Influenza infection were calculated relative to expression of uninfected cells (mock). Shown is a heat map of log2 expression ratios after partitioning clustering. Four main clusters are marked and for each of these clusters the pathway enrichment is labeled on the left. (D) Validation of mRNA measurements by real time qPCR for example genes. A representative analysis of two independent experiments is shown\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig3-figsupp1-v2.jpg)\n\nTo confirm that our system indeed recapitulates the previous observations that IAV induces host shutoff (Katze et al., 1986; Skehel, 1972), we monitored protein synthesis in IAV infected A549 cells by metabolic labelling. As was previously reported, also in our system IAV infection produced abundant quantities of virus polypeptides from 4 hpi and this was accompanied by reduced cellular protein synthesis (Figure 3\u2014figure supplement 1).\n\n### Host transcripts are differently affected by IAV infection\n\nNext we quantitatively assessed the expression pattern of cellular genes along IAV infection. Interestingly, 74% of host transcripts were reduced by more than three-fold in their footprints densities along infection, reflecting the drastic shutoff in host protein synthesis (Supplementary file 1). We compared the expression of the\u00a0infected samples to mock sample and clustered the mRNA and footprint ratios using partitioning clustering. This approach allowed clustering of the cellular transcripts into 4 distinct classes based on similarities in temporal expression profiles in the RNA-seq and ribosome profiling data. Overall, we found that changes in ribosome footprints tracked the changes in transcripts abundance (Figure 3C), which is in line with host protein synthesis shutoff being driven by the in reduction cellular RNA levels and not by direct interference with the translation machinery. Interestingly, although the majority of host transcripts were significantly reduced during influenza infection, (cluster 1 and cluster 4, Figure 3C) we identified numerous genes that were significantly elevated (cluster 2, Figure 3C) and genes that were not significantly changed during influenza infection (cluster 3, Figure 3C).\n\nWe next carried out GO term enrichment analysis for each of these four clusters. As expected the small group of upregulated mRNAs was significantly enriched with genes related to antiviral defense (cluster 2, Pval\u00a0=\u00a06.9E-13), including Viperin and IDO1 that were previously shown to be elevated during IAV infection (Ranaware et al., 2016; Wang et al., 2007; Huang et al., 2013). Interestingly, cluster 1 which is composed of mRNAs that are most drastically downregulated is enriched with genes related to DNA repair and cell cycle (Pval\u00a0=\u00a01.7E-17 and Pval\u00a0=\u00a04.3E-18 respectively) whereas cellular mRNAs that are barely affected by IAV infection (cluster 3) are enriched with genes related to oxidative phosphorylation and for transcripts encoding ribosomal proteins (Pval\u00a0=\u00a03.4E-10 and Pval\u00a0=\u00a03.9E-8, respectively). These measurements and analysis reveal that the shutoff in host protein synthesis is mainly driven by reduction in cellular mRNA levels, and that host mRNAs sensitivity to influenza is not uniform and certain mRNAs are more resistant to viral interference.\n\nOne limitation of global deep-sequencing measurements is that these measurements provide relative but not absolute quantification of RNA and translation levels. To address this issue we confirmed that there are no significant changes in the overall levels of translation (Figure 4B and Katze et al., 1986) and in total RNA (Supplementary file 2) along IAV infection. We also extracted RNA from an\u00a0equal number of cells along infection and performed real-time PCR analysis for cellular mRNAs from each of these clusters. These independent measurements were in strong agreement with our RNA-seq measurements (Figure 3D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig4-v2.jpg)\n\n**Figure 4.:** (A) Western blot analysis of eIF2\u03b1 and its phosphorylated form (phos- eIF2\u03b1) along IAV infection. A representative blot of two independent experiments is shown. (B) Polysomal profiling of uninfected and IAV infected cells at 4 hpi. (C) Real time qPCR analysis of the relative levels of the indicated human mRNAs in the polysome-free fractions of the gradient (F), light polysomal fractions (L), and heavy polysomal fractions (H) of uninfected and IAV infected cells at 4 hpi. A representative analysis of two independent experiments is shown\n\n### Genes responsive to eIF2\u03b1 phosphorylation are translationally induced after IAV infection\n\nTo quantitatively evaluate if there are genes that are differently translated along IAV infection, we used a computational framework named Babel (Olshen et al., 2013). This analysis quantifies levels of ribosome occupancy higher or lower than those predicted from transcript abundance. In total, this approach allowed us to identify 210 cellular mRNAs that are differentially translated following IAV infection (Pval<0.01, Supplementary file 3). Among these, 125 genes were translationally upregulated whereas 85 genes were translationally down regulated. While Go enrichment analysis did not reveal any significant functional category, we noticed that within the group of translationally upregulated genes at 4 hpi, there was an enrichment for genes that were previously shown as translationally induced in conditions in which eukaryotic initiation factor 2\u03b1 (eIF2\u03b1) is phosphorylated (pval<0.002, [Andreev et al., 2015; Sidrauski et al., 2015]). eIF2\u03b1 phosphorylation is a stress response that reduces overall protein synthesis while enhancing the\u00a0translation of specific transcripts whose products support adaptive stress responses. By performing western blot analysis, we show that at 4 hpi eIF2\u03b1 phosphorylation is apparent and only at 8 hpi it is drastically reduced (Figure 4A). By analyzing polysome profiles prepared from uninfected and IAV infected cells at 4 hpi, we confirmed that IAV infection indeed induce the translation of UCP2 and RALGDS (two genes that are also translationally induced following stress induced eIF2\u03b1 phosphorylation [Andreev et al., 2015]), but not that of control genes SOX4 and SF3B5 for which no change in translation was observed (Figure 4C and Supplementary file 3). These results demonstrate that although IAV blocks eIF2\u03b1 phosphorylation (Goodman et al., 2007), at 4 hpi eIF2\u03b1 phosphorylation affects the\u00a0cellular translation. In addition, these findings provide another confirmation for the accuracy of our translation measurements.\n\n### smFISH measurements validate the RNA-seq quantification and reveal that cellular mRNA down regulation occurs in the nucleus\n\nOur global measurements implied that host shutoff is driven by the high levels of IAV mRNAs that outnumber cellular transcripts, and that some cellular mRNAs are less affected by IAV. We wanted to preclude normalization issues and to validate these observations using an independent quantification method that provides absolute measurements. To this end, we used the smFISH technique that enables visualization of single mRNA molecules in fixed cells (Raj et al., 2008). This technique relies on the specific hybridization of short DNA libraries that are coupled to a fluorophore and are complementary to a specific target mRNA sequence. Binding of multiple probes to the same transcript yields a bright dot, indicative of a single mRNA molecule. This method has been used in various systems allowing accurate quantification of mRNA molecules per cell (Itzkovitz, 2011).\n\nWe quantified the expression of four human mRNAs, two mRNAs that are significantly reduced during influenza infection (CHML and KIF18A, cluster 1) and two mRNAs that were less affected by infection (MYC and CDKN1B, cluster 3). We also tested the expression of one viral transcript,\u00a0Hemagglutinin (HA). We designed a panel of fluorescently labeled probes, each composed of 48 20-base oligos complementary to the coding sequences of each of these genes. We used A549 cells that were left uninfected or IAV infected and then fixed at 2, 4, and 8 hpi. Hybridization of these cells with the fluorescently labeled probes libraries yielded bright diffraction-limited dots, representing single transcripts. These were automatically counted using a custom image-processing software (Bahar Halpern, 2016). Importantly, when we examined HA expression in uninfected cells we did not detect any diffraction-limited dots demonstrating the specificity of this approach (Figure 5A). Following infection with IAV, HA transcript levels were drastically elevated and at 8 hpi the intensity of the smFISH signal was too high to measure single dots (Figure 5A). The expression levels of the four cellular transcripts we measured by smFISH were highly correlated with our RNA-seq measurements (Figure 5A and B). These absolute quantifications of viral and host transcripts along IAV infection strongly support the notion that host shutoff is mainly driven by differences in mRNA levels. Furthermore, this data illustrates the variability in the levels of cellular transcripts reduction during IAV infection, suggesting that IAV-mediated degradation might act differently on different cellular transcripts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig5-v2.jpg)\n\n**Figure 5.:** (A) mRNA detection by Single molecule FISH (smFISH) was performed on A549 cells, either mock infected or 8 hpi. DNA oligomer probes coupled with fluorescent dyes (cy5/Alexa549) were targeted against viral hemagglutinin (HA), human MYC and CHML mRNAs. Spots corresponding to single mRNA molecules were detectable. DAPI was used for nuclear staining. Scale bar is 20 \u03bcm. Representative images of at least two biological replicates are shown. (B) The numbers of mRNA molecules per cell from at least 45 cells were quantified along Influenza infection (mock infection, 2, 4, 8 hpi) using smFISH. The values obtained from both smFISH and RNA-seq measurements were normalized to mock and plotted on the same graph. (C) For CHML, KIF18a and MYC nuclear and cytoplasmic mRNA molecules were quantified using smFISH. p-values are derived from a Student's t-test, *p<0.05. (D\u2013F) Various features were compared between transcripts composing the clusters presented in Fig. 3C (representing differential response to IAV infection). (D) mRNA half-lives measurements in A549 cells (33) (E) Transcripts length distribution. (F) Transcripts GC content distribution.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig5-figsupp2-v2.jpg)\n\nMultiple mechanisms for IAV interference with cellular RNA expression have been described (Nemeroff et al., 1998;\u00a0Fortes et al., 1994;\u00a0Rodriguez et al., 2007; Plotch et al., 1981), all of which involve interference with processes occurring in the nucleus. The discovery of the highly conserved RNA endonuclease, PA-X, implied for the existence of cytoplasmic degradation machinery, since viral RNAses from other viruses were proposed to act in the cytoplasm (Abernathy, 2015). However, recent work presented evidence that PA-X activity might be restricted to the nucleus (Khaperskyy et al., 2016). On top of absolute quantification, smFISH also provides spatial information about mRNA molecule distribution in the cell. This allowed us to test the levels of endogenous cellular transcripts in the nucleus and cytoplasm along influenza infection. We quantified the cytoplasmic and nuclear levels of CHML and KIF8A, which showed a\u00a0drastic reduction in their levels, and of MYC that showed subtler but still a\u00a0significant reduction (Figure 5B). Interestingly, the nuclear and cytoplasmic levels of CHML, KIF18A and MYC were downregulated to the same extent (Figure 5C). These results strongly suggest that interference in cellular RNA expression along IAV infection occurs mainly in the nucleus.\n\n### Cellular transcripts reduction along IAV infection is correlated with transcripts\u2019 length and GC content\n\nWe noticed that cellular genes respond differently to IAV infection and can be divided based on the level of reduction they present during infection (Figure 3C, clusters 1, 3 and 4). Hence, we were interested in the features differentiating between these cellular mRNA groups. If IAV interference with cellular transcript expression occurs mainly in the nucleus and there is no selectivity in this process then the decline in mRNA levels should be correlated with the cytoplasmic half-lives of mRNAs. Using recent measurements of mRNA half-lives in A549 cells (Maekawa et al., 2015) we identified a significant enrichment in mRNAs with long half-lives in cluster 3, which includes genes that were only mildly affected by IAV infection (Figure 5D, Pval\u00a0=\u00a00.005), but this cluster contained also many genes with short half-life. These results suggest that there are additional features that govern the differences between these clusters, and that the differences in the levels of reduction might stem from differences in IAV-interference with host genes expression.\n\nSince our measurements suggested that most of the\u00a0IAV-mediated reduction occurs in the nucleus and a recent study connected PA-X activity to the 3\u2019 end processing (Khaperskyy et al., 2016), we tested whether the length of the poly-A tail affects the extent to which mRNAs are reduced after IAV infection. Using genome wide measurements of poly-A tail length (Chang et al., 2014) we did not observe any significant differences between the different clusters (Figure 5\u2014figure supplement 1). We next examined specific characteristics of the corresponding transcripts, including their length and GC content. Interestingly, both mRNA length and GC content showed a significant difference between the clusters, and the transcripts that were less affected by IAV were significantly shorter and had higher GC content (Figure 5E and 5F, Pval\u22641.49e-63 and Pval\u22643.636e-06, respectively). Since cluster 3 (composed of genes that were less affected by IAV) is also significantly enriched in transcripts related to oxidative phosphorylation and ribosomal proteins, and these functional categories are composed of genes that tend to be short (Figure 5\u2014figure supplement 2), we wanted to exclude the possibility that the reduced length we observed is indirectly driven by the enrichment in these functional categories. Indeed, also after omitting transcripts related to these functional categories cluster 3 transcripts were significantly shorter (Figure 5\u2014figure supplement 2). Taken together, these results strongly suggest that shorter and more structured transcripts (transcripts with higher GC content) tend to be less affected by IAV infection and therefore it is likely that the extent to which cellular mRNAs are degraded is at least partially governed by the quantity of exposed single stranded RNA in the nucleus.\n\n### The oxidative phosphorylation capacity is maintained late in IAV infection\n\nHost shutoff mechanisms clearly provide advantages for viruses as they hamper the cellular response to infection and limit competition for cellular ribosomes. However, dampening cellular gene expression also poses a big challenge, as viruses are fully dependent on cellular resources such as macromolecules\u2019 building blocks, energy production and the host translational machinery. Therefore, the observation that transcripts coding for ribosomal and oxidative phosphorylation proteins, are less reduced following IAV infection, implies that the translation maintenance of these cellular pathways might be important for IAV infection. To validate this notion we conducted western blot analysis on cell extracts along IAV infection and could confirm the stable expression of components of the respiratory complex (Figure 6A, upper panel), whereas other proteins were reduced following IAV infection (Figure 6A, lower panel). In accordance with these results, by staining infected cells with the potential sensitive mitochondrial stain Tetramethylrhodamine (TMRM), we show that the mitochondria membrane potential is not affected by IAV infection (Figure 6B). Next we tested if continuous oxidative phosphorylation is important for IAV propagation by employing drugs that interfere with the function of the\u00a0respiratory chain. We used either the ionophore Carbonyl cyanide m-chlorophenyl hydrazone (CCCP) or Valinomycin that chelates potassium ions, both causing a collapses of the mitochondria membrane potential. When cells were infected for 2 hr and then treated with CCCP or Valinomycin in concentrations that did not affect cell viability (Figure 6\u2014figure supplement 1), IAV titers were significantly reduced (Figure 6C and D). Overall, these results indicate that mRNAs involved in oxidative phosphorylation are less perturbed by IAV infection, and that maintenance of intact oxidative phosphorylation activity during IAV infection is important for viral replication.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig6-v2.jpg)\n\n**Figure 6.:** (A) Western blot analysis of components of the respiratory complex UQCRC2, SDHB, COXII, and control genes PKN2 and ACTIN along IAV infection. A representative blot of three independent experiments is shown. (B) FACS analysis of TMRM staining for active mitochondria in A549 cells, either mock infected, untreated, infected for 12 and (left panel) or 24 hr (right panel). A representative analysis of two independent experiments is shown. (C and D) A549 cells infected with IAV were treated with either CCCP (untreated control, 10 \u00b5M and 20 \u00b5M) or Valinomycin (untreated control, 1 \u00b5M and 2.5 \u00b5M). Supernatants were collected at 24 and 48 hpi. (C) Viral copy numbers were estimated by qPCR\u00a0and (D) viral titers were measured by plaque assay. Representative results of two independent experiments are shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18311/elife-18311-fig6-figsupp1-v2.jpg)\n\n## Discussion\n\nMany viruses have developed varied and sophisticated mechanisms to specifically repress cellular mRNA translation and concomitantly allow the selective translation of viral mRNA. In the case of IAV many mechanisms were suggested to contribute to the observed host shutoff. These include: 1. Cap-snatching of cellular pre-mRNAs (Plotch et al., 1981), 2. Inhibition of cellular pre-mRNAs polyadenylation (Nemeroff et al., 1998), 3. Degradation of RNA Polymerase II (Rodriguez and P\u00e9rez-Gonz\u00e1lez, 2007), 4. Nuclear retention of cellular mRNAs (Fortes and Beloso, 1994), 5. Cellular mRNAs degradation (Khaperskyy et al., 2016; Beloso et al., 1992; Inglis, 1982) and 6. Preferential translation of viral mRNAs (Yanguez and So similar, 2011; Garfinkel and Katze, 1993; Katze et al., 1986). Our systematic and unbiased analysis surprisingly demonstrates that viral mRNAs are not preferentially translated compared to their host counterparts and that the extensive translation of viral proteins is the result of viral takeover of the mRNA pool in the cell. These results are consistent with the notion that NS1 is not required for the shutoff of host cell protein production(Salvatore et al., 2002) and that PA-X endonuclease activity is a dominant factor in mediating host shutoff activity (Jagger et al., 2012; Khaperskyy\u00a0and\u00a0McCormick , 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015).\n\nIt should be noted that at 8 hpi there is already extensive viral replication (evident from the strong increase in reads originating from the viral minus strand). Therefore, at this time point a portion of the viral RNA plus strand we measured are used as a\u00a0template for replication (cRNA) and not as mRNAs. Since our calculation of viral transcripts TE is based on dividing the number of footprints by the number of corresponding RNA reads it is possible that we underestimate the TE of viral genes at this time point. However, using our smFISH measurements for viral transcript we could show that >90% of the plus strand viral RNA is located in the cytoplasm. Therefore, this potential bias could result in a\u00a0maximum of 10% effect that does not hamper our conclusions.\n\nPrevious studies demonstrated inhibition of eIF2a phosphorylation during influenza infection and it was proposed that this inhibition is mediated by the activation of the cellular inhibitor of PKR, P58-IPK (Goodman et al., 2007). Our analysis supports the observation that IAV infection inhibit eIF2a phosphorylation but we show that this inhibition is not immediate. In our experimental system eIF2a was phosphorylated at 4 hpi and this stress response affects the expression of cellular genes (Figure 4). Since our measurements suggest the P58-IPK (DNAJC3) expression is reduced during IAV infection (by three-fold) it is possible that other mechanisms also contribute to the inhibition of eIF2a phosphorylation.\n\nDue to library normalization, it is challenging to assess from the\u00a0ribosome profiling and RNA-Seq measurements on overall virus-induced host shutoff. To address this inherent limitation, we used smFISH, which allows absolute quantification of transcript levels in single cells. Our smFISH measurements correlated well with our global RNA quantification confirming our data and findings. In addition, our smFISH measurements show that after IAV infection RNA levels of endogenous cellular transcripts are reduced to a similar extent in the nucleus and the cytoplasm. This observation suggests that cellular mRNAs degradation occurs in the nucleus but it could also be explained by blockage of transcription in conjunction to cytoplasmic degradation that reduces cytoplasmic mRNA levels. The recent observation that PA-X activity is mostly nuclear (Khaperskyy et al., 2016) together with limited correlation with a cytoplasmic half-life strongly points to the former possibility.\n\nOur analysis also allowed us to quantify the reduction in cellular mRNAs along IAV infection, revealing that the extent of reduction varies between different transcripts. The magnitude of reduction could only be partially explained by cytoplasmic half-life and interestingly the extent of reduction was significantly correlated with transcript\u2019s length and GC content. Since cap-snatching activity was shown to target mostly small nuclear RNAs (Koppstein et al., 2015), it is likely that the majority of the observed differential reduction in cellular mRNAs is driven by PA-X degradation activity. Therefore, the relation to the\u00a0length and GC content strongly points to a non-selective process of degradation, where the chances of a transcript to be degraded are influenced by the quantity of exposed ssRNA. This notion is consistent with existing in-vitro data showing PA-X preference to ssRNA (Bavagnoli et al., 2015) and with the findings that PA-X lacks obvious sequence or location specificity (Khaperskyy et al., 2016). However, the notion that IAV induced degradation significantly depends on the length of the transcript does not easily reconcile with the evidence that PA-X specifically targets Pol II transcripts and that this specificity is connected to 3\u2019 end processing (Khaperskyy et al., 2016). One way these results could be rationalized is if Pol II transcription and processing is physically limited to specific sub-nuclear compartments (Mitchell, 2008; Ghamari et al., 2013). In this case, the specificity of PA-X to Pol II transcripts could originate from physical proximity, while the recognition itself could be random and depends on the length and GC content, which will govern the amount of exposed ssRNA. Another possibility is that degradation activity is coupled to mRNA splicing. This can explain the specificity to Pol II transcripts and the relative resistance of short transcripts which intrinsically also tend to have less exons. However, this possibility seems less favorable as at least by over expression PA-X did not affect the expression of cellular nascent transcripts (Khaperskyy et al., 2016). Future work focused on PA-X activity can help shed light on the exact mechanism.\n\nHost shutoff is a common phenomenon, employed by diverse viruses and it is thought to contribute to the\u00a0viral progression in two main ways: by redirecting the translation machinery towards viral gene expression and by inhibiting cellular anti-viral responses. However, shutting off cellular protein production could also have adverse effects. Viruses are completely dependent on cellular resources and inhibiting cellular protein production can dampen processes that are indispensable for the virus. Interestingly, we noticed that transcripts that are less affected by IAV infection are enriched for genes involved in pathways that the virus potentially depends on, such as oxidative phosphorylation components and ribosomal proteins. In contrast, genes that were most significantly reduced are related to cell cycle, a cellular activity that is often blocked by viruses. Indeed, we were able to show that the levels of mitochondrial proteins are not affected by IAV even at 16 hpi, a time point in which other proteins were reduced. Further experiments demonstrated that inhibition of oxidative phosphorylation to levels that do not affect cell\u2019s viability severely impairs viral replication. These results suggest that continuous expression of proteins involved in oxidative phosphorylation is important for viral propagation. Since viruses mostly interfere with protein synthesis, the level of protein reduction during infection is also tightly connected to the half-life of these proteins. In this regard, the observation that many of the proteins that perform basic cellular functions like translation and cellular respiration have long half-lives (Schwanhausser et al., 2011) could also assist viruses to avoid detrimental damage from shutting-off cellular protein synthesis. The inherent difficulties in blocking host protein production should be common to other viruses inducing host shutoff, particularly viruses with long infection cycle. It will therefore be interesting to see whether other viruses that interfere with cellular protein synthesis will also do this in a differential manner, facilitating the maintenance of cellular functions that are important for viral propagation.\n\nIt is well acknowledged that ribosome profiling is an emerging technique that allows probing of translation systematically and with increased sensitivity. This method in conjunction with RNA-seq was previously used to map the changes that occur in host gene expression during herpes simplex virus and cytomegalovirus infections (Rutkowski et al., 2015; Tirosh et al., 2015) and to probe the complexity of several viruses (Stern-Ginossar et al., 2012; Arias et al., 2014; Yang et al., 2015; Irigoyen et al., 2016). Here we show how these methods in conjunction with smFISH could be used to accurately quantify host shutoff along viral infection. These unbiased and systematic quantification methods can advance our understanding of viral interference with host protein production and are applicable to infection with any virus.\n\n## Materials and methods\n\n### Cells and viruses\n\nThe cells used in this study were the human lung adenocarcinoma epithelial cell line A549. The human influenza viruses A/Puerto Rico/8/34 H1N1 used in this study were generated as previously described (Achdout et al., 2003). Cells were grown on 10\u00a0cm2 plates and were infected at a multiplicity of infection (MOI) of 5. Efficiency of infection was determined by immunofluorescence with Influenza A antibody FITC Reagent (LIGHT DIAGNOSTIC) followed by DAPI dye for nuclear staining, and confirmed that >95% of cells were infected.\n\nViral genomic RNA was quantified by extracting RNA from the\u00a0supernatant by using the NucliSENS easyMAG (BioMerieux, France). Detection of influenza A virus infection was performed by real-time reverse transcription-PCR (rRT-PCR),using TaqMan Chemistry on the ABI 7500 instrument as previously described (Hindiyeh et al., 2005).\n\n### Ribosome profiling and RNA-Seq samples preparation\n\nCycloheximide treatments were carried out as previously described (Stern-Ginossar et al., 2012). Cells were lysed in lysis buffer (20\u00a0mM Tris 7.5, 150\u00a0mM NaCl, 5\u00a0mM MgCl2, 1\u00a0mM dithiothreitol, 8% glycerol) supplemented with 0.5% triton, 30 U/ml Turbo DNase (Ambion) and 100\u00a0\u03bcg/ml cycloheximide, ribosome protected fragments were then generated as previously described (Stern-Ginossar et al., 2012). Total RNA was isolated from infected cells using Tri-Reagent (Sigma). Polyadenylated RNA was purified from total RNA sample using an\u00a0Oligotex mRNA mini kit (Qiagen). The resulting mRNA was modestly fragmented by partial hydrolysis in bicarbonate buffer so that the average size of fragments would be ~80\u00a0bp. The fragmented mRNA was separated by denaturating PAGE and fragments 50\u201380 nt were selected and sequencing libraries were made as previously described (Stern-Ginossar et al., 2012).\n\n### Sequence alignments, normalization and clustering\n\nPrior to alignment, linker and polyA sequences were removed from the 3\u2019 ends of reads. Bowtie v0.12.7 (allowing up to 2 mismatches) was used to perform the alignments. First, reads that aligned to human rRNA sequences were discarded. All remaining reads were aligned to the concatenated viral (EF467817 - EF467824) and human (hg19) genomes. Finally, still-unaligned reads were aligned to the human known canonical transcriptome that includes splice junctions. Reads with unique alignments were used to compute the total number of reads at each position. Footprints and mRNA densities were calculated in units of reads per kilobase per million (RPKM) in order to normalize for gene length and total reads per sequencing run.\n\nThe expression patterns were examined for genes that had more than 150 uniquely aligned reads of mRNA and footprints. Partitioning clustering was performed using Partek Genomic suits across mRNA and footprint data. GO enrichment analysis was done using DAVID database (Huang et al., 2009). The Babel computational framework was used to quantitatively evaluate if there are genes that are differently translated along the\u00a0IAV infection (Olshen et al., 2013).\n\n### 35S-labelling of nascent proteins\n\nInfected A549 cells (mock, 2 hpi, 4 hpi, 8 hpi) were incubated in methionine depleted DMEM for 30 min. Subsequently, 50 \u00b5Ci/mL [35S]-methionine was added and incubated for 30 min. Cells were harvested using RIPA buffer. Lysates were run on a polyacrylamide (PAA) gradient gel (4\u201312%). The PAA gel was fixed overnight in a fixation solution (3% glycerol, 20% methanol, 7% acetic acid). Typhoon FLA 7000 from GE Healthcare Life Sciences was used for acquisition.\n\n### Polysome profiling\n\nFour hours post infection A549 cells were treated with 100 \u00b5g/ml Cycloheximide for 1 min and then washed twice with cold PBS containing 100 \u00b5g/ml Cycloheximide. The cells were collected and lyzed with 400 \u00b5l lysis buffer (20\u00a0mM Tris 7.5, 150\u00a0mM NaCl, 5\u00a0mM MgCl2, 1mM dithiothereitol) supplemented with 0.5% triton, 30\u00a0U/ml Turbo DNase (Ambion) and 100 \u00b5g/ml Cycloheximide. The lyzed samples were centrifuged at 12,000\u00a0g at 4\u00b0C for 10 min. The cleared lysates were loaded onto 10\u201350% sucrose gradient and centrifuged at 35,000 RPM in a SW41 rotor for 3 hr at 4\u00b0C. Gradients were fractionated and the optical density at 254 nm was continuously recorded using Biocomp gradient station.\n\n### Real-time PCR\n\nRNA was isolated using Tri-Reagent (Sigma) and Direc-Zol RNA mini-prep kits (Zymo Research). cDNA was prepared from 1\u00b5g RNA except for polysomes profiling experiments in which 255\u00a0ng RNA was used with High-Capacity cDNA Reverse Transcription Kit (ABI). Real time PCR was performed using the SYBR Green PCR master-mix (ABI) on a real-time PCR system StepOnePlus (life technologies) with the following primers:\n\n### smFISH\n\nProbe library constructions, hybridization procedures, and imaging conditions were described previously (Itzkovitz, 2011). In short, probe libraries consisted of 48 probes of length 20 bases, were coupled to cy5 (for MYC, and KIF18A) or Alexa594 (for CDKN1B, HA and CHML). Hybridizations were performed overnight in 30\u00b0C. DAPI dye for nuclear staining was added during the washes. Images were taken with a Nikon Ti-E inverted fluorescence microscope equipped with a \u00d7100 oilimmersion objective and a Photometrics Pixis 1024 CCD camera using MetaMorph software (Molecular Devices, Downington, PA). Quantification was done on stacks of 10\u201315 optical sections, with Z spacing of 0.2 \u03bcm.\n\n### Fragment length organization similarity score (FLOSS)\n\nThe FLOSS score was computed as previously described (Ingolia et al., 2014). Briefly, a histogram of read lengths for all footprints that aligned to a specific transcript or reading frame was calculated and compared to a reference histogram produced by summing individual raw counts (without normalization) for annotated nuclear transcripts.\n\n### Examination of various features of cellular transcripts\n\nThe transcripts composing the clusters presented in Figure 3C were analyzed. For each cluster, we examined recently published data of RNA half-life in A549 cells (Maekawa et al., 2015). In addition, we examined the mean poly(A) tail length from measurements that were performed in HeLa and NIH3T3 cells (Chang et al., 2014). Transcripts length and GC content were calculated excluding introns. For each feature, pairs of clusters were compared using a two-sided t-test except for RNA half-life in which the clusters were compared using the Mann-Whitney test. Presented is the largest p-value of the three comparisons.\n\n### Western blot analysis and drug treatments\n\nInfected A549 cells and the mock control were harvested 2 hpi, 4 hpi 8 hpi, 12 hpi\u00a0and 16 hpi using RIPA Buffer. The\u00a0membrane was blocked for 1 hr in 5% skim milk TBST. Primary antibodies UQCRC2, SDHB, COXII (ab110413, Abcam), PKN2 (ab32395, Abcam), ACTIN (A4700, Sigma Aldrich), eIF2\u03b1 (sc-11386, Santa Cruz) and phosphorylated (S52) eIF2\u03b1 (447286, Invitrogen) were diluted 1:1000 in 5% BSA TBST and incubated for 1 hr at RT or over night at 4\u00b0C. Secondary antibodies IRDye 680RD goat anti-rabbit (LIC-92668071) and IRDye 680RD goat anti-mouse (LIC-92668070) were diluted 1:10000 in 5% skim milk TBST and incubated for 1 hr at RT. Acquisition was performed using, Odyssey CLx from LI-COR. A549 cells were treated after 2 hpi (IAV) with CCCP (untreated, 10 \u00b5M or 20 \u00b5M) or Valinomycin (untreated, 1 \u00b5M, 2.5 \u00b5M). For Tetramethylrhodamine (TMRM) staining A549 cells were incubated with 20 nM TMRM in 1ml of DMEM for 30 min at 37\u00b0C, prior analysis in the flow cytometer. For PI (propidium iodide) staining, target cells were resuspended in 100 \u00b5L PBS and 10 \u00b5L staining solution (10 \u00b5g/mL PI in PBS) was added for 1 min prior to acquisition in the flow cytometer.\n\n### Plaque assay\n\nConfluent MDCK cells were incubated for 1 hr at 37\u00b0C with 0.5 ml 10-fold serial dilutions of virus in 6-well plates, present in DMEM medium supplemented with 3\u00a0\u00b5g/mL IX-S trypsin (sigma T-0303). The cells were then washed and overlaid with freshly prepared DMEM containing 1.5% agarose. The plaques were visualized after incubation at 37\u00b0C for 3 days by staining with 0.3% crystal violet solution containing 20% ethanol.\n",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "2c881f43-ca22-4e99-a5c8-6d8fc4189bf1",
+      "submission_id": "73b9a9c2-6927-45f8-8025-15e51fa6e7b8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18311.020](https://doi.org/10.7554/eLife.18311.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A systematic view on Influenza induced host shutoff\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Wenhui Li as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKino et al. use RNA seq and ribosome profile to investigate mechanisms underlying the control of viral and host mRNA translation in cells infected with Influenza A virus (IAV). Significantly, they elegantly show that the potent suppression of host protein synthesis observed in IAV-infected cells does not result from preferentially IAV mRNA translation. Instead, declining host protein synthesis reflects virus-induced alterations to the composition of the underlying infected cell mRNA pool where viral mRNAs become the predominate species. For the first time, the variable impact of IAV infection on the host mRNA population is revealed and host transcripts able to sustain translation in IAV-infected cells are identified. Host transcripts that were less affected by IAV infection were significantly shorter in length and had higher GC content. Furthermore, IAV infection stimulated translation of host mRNAs responsive to eIF2\u03b1 phosphorylation, which reduces overall protein synthesis while enhancing translation of specific transcripts whose products support adaptive stress responses. In particular, host mRNAs refractory to IAV-induced host shut off are involved in cell maintenance processes such as oxidative phosphorylation, which the authors show is continuously required throughout the viral replication program for optimal viral genome replication. This work is important to our understanding of virus-host interactions in IAV-infected cells not only because it addresses a fundamental biological problem, but also as it conclusively overturns incorrect ideas in the older literature that proclaimed preferential translation of IAV mRNAs (often without the rigorous evidence to warrant such a conclusion). The experiments are superbly and expertly executed, the data are clearly presented and the manuscript is well written.\n\nEssential revisions:\n\n1) It is desirable to illustrate the occurrence of \"host shut off\" in their particular system by pulse-labeling of proteins with [35]-Met at different times after infection followed by SDS-PAGE.\n\n2) Detection of reads that align to the IAV minus strand RNA is puzzling. The authors speculate that these RNA fragments are not generated by translating ribosomes but are due to the formation of viral nucleoprotein particles. Could they prove this using puromycin (which dissociates polysomes but not RNP)?\n\n3) Goodman et al., 2007 as referenced used mouse cells in their study of eIF2\u03b1 phosphorylation in IAV-infected cells. This work by Kino et al. utilizes human A549 lung carcinoma cells. Isn't it possible that the capacity of these different cells (human transformed, tumorigenic vs mouse non-transformed, non-tumorigenic MEFs) might vary in their capacity to buffer against accumulation of phospho-eIF2\u03b1? The authors should consider blotting for total and phosphor eIF2\u03b1 in IAV infected A549 cells under the experimental conditions utilized herein to verify that they can or cannot detect changes in phospho-eIF2\u03b1 abundance.\n\n4) Were any signatures of the integrated stress response or unfolded protein response (UPR) noted among eIF2\u03b1 phosphorylation-responsive genes? Also --activation of host p58 IPK has been proposed to prevent accumulation of phospho-eIF2\u03b1 in IAV infected cells. Were any changes in the abundance of the cellular p58-IPK noted in the overall infected cell mRNA population and/or in ribosome-protected fragments? The authors might consider mentioning these examples specifically at some point in the text or discussion regardless of the findings given the attention they have received in the earlier literature\n\n5) In the Results, subsection \u201cCellular transcripts reduction along IAV injectionis correlated with transcripts\u2019 length and GC content\u201d, the authors conclude that the shorter, more GC rich host mRNAs, are less effected by IAV infection. The authors might wish to include one or two sentences in the Discussion section addressing why this is the case. For example, could this reflect the substrate specificity of endo PA-X or cap-stealing enzymes or some other mechanism?\n\n6) Figure 6C. The authors refer to a significant reduction in IAV \"titers.\" The term \"titer\" usually refers to infectious virus units \u2013 here genome copy number is being measured. Granted that while genome copy number most certainly has some relationship to infectious virus production and pfu, it is not clear how a 5-fold reduction in genome copy number impacts titer. Probably the simplest solution is to just change the wording here to better reflect what is actually being measured experimentally.\n",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba124973-75f9-4857-902a-3bfe2a7c46ec",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C1",
+      "claim": "A549 cells were infected with the A/Puerto Rico/8/1934 H1N1 (PR8) strain at MOI = 5 and harvested at 2, 4, and 8 hr post infection (hpi).",
+      "claim_type": "EXPLICIT",
+      "source": "To gain a detailed view of the changes that occur in viral and host transcripts abundance and translation over the course of IAV infection, we infected A549 cells with the A/Puerto Rico/8/1934 H1N1 (PR8) strain at MOI = 5 and harvested cells at 2, 4, and 8 hr post infection (hpi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the experimental procedure used, including cell type, virus strain, MOI, and time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a124ef3c-7a23-4ae7-a4ac-99f9e8d48d1b",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C2",
+      "claim": "The mRNA and footprints read density measurements were reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the mRNA and footprints read density measurements were reproducible (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states reproducibility and references Figure 1B showing correlation between biological replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "fbfe3e67-cdac-4298-af45-64ca09c46947",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C3",
+      "claim": "7211 human transcripts and 8 viral transcripts were quantitatively assessed for expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantitatively assessed the expression pattern of 7211 human transcripts and the 8 viral transcripts that are expressed from the 8 genomic segments of influenza.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of transcripts analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "33ce1355-b475-42fc-bb97-5dd9b07a8c1b",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C4",
+      "claim": "Ribosome density accumulates along the gene body ending at the first in-frame stop codon with pronounced accumulation of ribosomes at the initiation and termination sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene analysis, in which gene profiles are aligned and then averaged, revealed the expected profiles of footprints along mRNAs; ribosome density accumulates along the gene body ending at the first in-frame stop codon with pronounced accumulation of ribosomes at the initiation and termination sites (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the metagene analysis results and references Figure 2A showing the ribosome density profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d66c898d-21b9-4aef-a508-9684621c972c",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C5",
+      "claim": "Ribosome profiling data from influenza transcripts revealed reads that align to the IAV minus strand (vRNA) that is non-coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, examination of the ribosome profiling data obtained from influenza transcripts revealed reads that align to the IAV minus strand (vRNA) that is non-coding (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this unexpected finding and references Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "9a9925ed-717a-4510-b9a5-8039275d86fb",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C6",
+      "claim": "The reads from IAV minus strand were not correlated with any sequence feature related to translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These reads were not correlated with any sequence feature related to translation and were specific for the virus as individual human transcripts presented the expected profiles precluding any general problem in the sample preparation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the lack of correlation with translation features and references Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "876fc769-1dcf-46b3-812f-1d5bc7a743a0",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C7",
+      "claim": "Harringtonine treatment led to strong accumulation of ribosome protected fragments at the first AUG and to the depletion of ribosome density from the body of the viral and host mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected harringtonine treatment led to strong accumulation of ribosome protected fragments at the first AUG and to the depletion of ribosome density from the body of the viral and host mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the results of harringtonine treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "f2e1b83a-f3a6-48ae-8efd-45c35326a049",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C8",
+      "claim": "The protected fragments captured from both cellular and viral mRNAs originate from ribosome protected fragments of transcripts that were engaged in active translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this indicates that the protected fragments we captured from both cellular and viral mRNAs originate from ribosome protected fragments of transcripts that were engaged in active translation elongation (Figure 2A,B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript draws this conclusion from the harringtonine treatment results and references multiple figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "2cbad183-27f2-4dc2-8673-419afc30e70d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C9",
+      "claim": "The protected fragments that mapped to the IAV minus strand were not affected by harringtonine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the protected fragments that mapped to the IAV minus strand were not affected by harringtonine treatment (Figure 2B and Figure 2\u2014figure supplement 1) indicating that the protection of these fragments is probably not mediated by translating ribosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the lack of effect of harringtonine on minus strand reads and references figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "763a08a6-8ae5-4a2e-a20b-54e84bf22004",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C10",
+      "claim": "IAV mRNAs scored well in FLOSS analysis and did not differ from well-expressed human transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "IAV mRNAs scored well in these matrixes and they did not differ from well-expressed human transcripts (Figure 2E, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the FLOSS analysis results for IAV mRNAs and references Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "ab3873c5-e08d-455f-9084-4e0ea4e87bba",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C11",
+      "claim": "Reads from IAV minus strand could be clearly distinguished from annotated coding sequences in FLOSS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reads from IAV minus strand could be clearly distinguished from annotated coding sequences (Figure 2E, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the FLOSS analysis results for IAV minus strand reads and references Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "43651c72-2771-47d1-9077-abf4176ae10f",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C12",
+      "claim": "The protected fragments originating from minus strand viral RNA are not generated by ribosome protection.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the protected fragments originating from minus strand viral RNA are not generated by ribosome protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on the FLOSS and harringtonine treatment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "58f0c426-1f96-4c60-b2b5-f595d7dc06ea",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C13",
+      "claim": "The protected fragments from minus strand viral RNA could originate from protection by the viral nucleoprotein (NP) that associates with viral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These fragments could originate from protection by the viral nucleoprotein (NP) that associates with viral genomes and was shown to sediment with viral RNAs (Duesberg, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this mechanism and cites a reference supporting NP association with viral RNAs.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "11e8fdf8-f856-446d-8868-2567a4c6afac",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C14",
+      "claim": "The numbers of protected reads originating from the IAV genome increases as the infection progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is supported by the observation that the numbers of protected reads originating from the IAV genome increases as the infection progresses (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this observation and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "1ee1ea2d-6570-4ebe-86a4-549f8b558719",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C15",
+      "claim": "Viral genes translation efficiencies fall within the general range of host gene translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis shows that the viral genes translation efficiencies fall within the general range of host gene translation indicating that viral transcripts are not preferentially translated during IAV infection and that direct co-opting of the translation machinery does not play a dominant role in cellular gene shutoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding from the translation efficiency analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "09dd2bf5-3df6-4964-b05e-b732f2a3d8c0",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C16",
+      "claim": "Viral transcripts are not preferentially translated during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis shows that the viral genes translation efficiencies fall within the general range of host gene translation indicating that viral transcripts are not preferentially translated during IAV infection and that direct co-opting of the translation machinery does not play a dominant role in cellular gene shutoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on translation efficiency analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e6642260-11a5-4bbb-b531-d9f184737400",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C17",
+      "claim": "Direct co-opting of the translation machinery does not play a dominant role in cellular gene shutoff during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis shows that the viral genes translation efficiencies fall within the general range of host gene translation indicating that viral transcripts are not preferentially translated during IAV infection and that direct co-opting of the translation machinery does not play a dominant role in cellular gene shutoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on translation efficiency analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "105cd2e5-ee9d-4448-919b-6746f78a81cf",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C18",
+      "claim": "At 8 hpi viral mRNAs take over 53.8% of the translation activity in the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 8 hpi viral mRNAs take over 53.8% of the translation activity in the cells as 57.3% of the mRNAs in the cells are viral (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages from the analysis and references Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "835c48b5-f7f8-4fb6-af78-bc1ba7816452",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C19",
+      "claim": "At 8 hpi, 57.3% of the mRNAs in the cells are viral.",
+      "claim_type": "EXPLICIT",
+      "source": "At 8 hpi viral mRNAs take over 53.8% of the translation activity in the cells as 57.3% of the mRNAs in the cells are viral (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages from the analysis and references Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "02ad5698-93e6-4469-badc-a55304052f69",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C20",
+      "claim": "The relative reduction in cellular mRNA expression is the main cause for host shutoff during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that the relative reduction in cellular mRNA expression is the main cause for host shutoff during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on the analysis of viral and host mRNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "91565089-8aa5-46b4-a216-ab3b1df43244",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C21",
+      "claim": "PA-X endonuclease activity plays a dominant role in host shutoff during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis concurs with the finding that PA-X endonuclease activity plays a dominant role in host shutoff during IAV infection (Jagger et al., 2012; Khaperskyy and McCormick, 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states agreement with previous findings and cites multiple references.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "66bc0b5a-7f73-45c8-b746-ded37690c885",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C22",
+      "claim": "74% of host transcripts were reduced by more than three-fold in their footprints densities along infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 74% of host transcripts were reduced by more than three-fold in their footprints densities along infection, reflecting the drastic shutoff in host protein synthesis (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific percentage from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "ecc3f015-6d65-4580-84c9-b97f9f2fc225",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C23",
+      "claim": "Changes in ribosome footprints tracked the changes in transcripts abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that changes in ribosome footprints tracked the changes in transcripts abundance (Figure 3C), which is in line with host protein synthesis shutoff being driven by the in reduction cellular RNA levels and not by direct interference with the translation machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding from the clustering analysis and references Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "59d140dc-8dbc-430c-bdfd-2a5d8277b644",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C24",
+      "claim": "Host protein synthesis shutoff is driven by the reduction in cellular RNA levels and not by direct interference with the translation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that changes in ribosome footprints tracked the changes in transcripts abundance (Figure 3C), which is in line with host protein synthesis shutoff being driven by the in reduction cellular RNA levels and not by direct interference with the translation machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on the correlation between footprints and mRNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b57aa7fc-69d2-4030-89ca-bc6a9d431806",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C25",
+      "claim": "The small group of upregulated mRNAs was significantly enriched with genes related to antiviral defense (Pval = 6.9E-13).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected the small group of upregulated mRNAs was significantly enriched with genes related to antiviral defense (cluster 2, Pval = 6.9E-13), including Viperin and IDO1 that were previously shown to be elevated during IAV infection (Ranaware et al., 2016; Wang et al., 2007; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO term enrichment analysis results with a p-value and cites references for specific genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "0252a61d-1029-4a3a-9d50-cc3e204a83bc",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C26",
+      "claim": "Viperin and IDO1 were previously shown to be elevated during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected the small group of upregulated mRNAs was significantly enriched with genes related to antiviral defense (cluster 2, Pval = 6.9E-13), including Viperin and IDO1 that were previously shown to be elevated during IAV infection (Ranaware et al., 2016; Wang et al., 2007; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting the elevation of these genes during IAV infection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "cd9a00d8-4764-4f0b-8ea0-fce6f975b0b3",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C27",
+      "claim": "Cluster 1, composed of mRNAs that are most drastically downregulated, is enriched with genes related to DNA repair (Pval = 1.7E-17).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster 1 which is composed of mRNAs that are most drastically downregulated is enriched with genes related to DNA repair and cell cycle (Pval = 1.7E-17 and Pval = 4.3E-18 respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO term enrichment analysis results with a p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "5d2d1fc4-35a0-4e80-ac6b-5a577b65b1f0",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C28",
+      "claim": "Cluster 1, composed of mRNAs that are most drastically downregulated, is enriched with genes related to cell cycle (Pval = 4.3E-18).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster 1 which is composed of mRNAs that are most drastically downregulated is enriched with genes related to DNA repair and cell cycle (Pval = 1.7E-17 and Pval = 4.3E-18 respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO term enrichment analysis results with a p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "2512d7c8-505c-4abb-a8f6-b04bc3ed00f8",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C29",
+      "claim": "Cellular mRNAs that are barely affected by IAV infection (cluster 3) are enriched with genes related to oxidative phosphorylation (Pval = 3.4E-10).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas cellular mRNAs that are barely affected by IAV infection (cluster 3) are enriched with genes related to oxidative phosphorylation and for transcripts encoding ribosomal proteins (Pval = 3.4E-10 and Pval = 3.9E-8, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO term enrichment analysis results with a p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "4a8cc9a1-7b5a-46fc-89dd-a50e0fdaf275",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C30",
+      "claim": "Cellular mRNAs that are barely affected by IAV infection (cluster 3) are enriched for transcripts encoding ribosomal proteins (Pval = 3.9E-8).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas cellular mRNAs that are barely affected by IAV infection (cluster 3) are enriched with genes related to oxidative phosphorylation and for transcripts encoding ribosomal proteins (Pval = 3.4E-10 and Pval = 3.9E-8, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO term enrichment analysis results with a p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b7bd850b-0b60-4d67-bb2d-f776685e2c47",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C31",
+      "claim": "Host mRNAs sensitivity to influenza is not uniform and certain mRNAs are more resistant to viral interference.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements and analysis reveal that the shutoff in host protein synthesis is mainly driven by reduction in cellular mRNA levels, and that host mRNAs sensitivity to influenza is not uniform and certain mRNAs are more resistant to viral interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on the clustering analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "41066be6-2dad-44be-ae4c-1cf024466d98",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C32",
+      "claim": "There are no significant changes in the overall levels of translation along IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue we confirmed that there are no significant changes in the overall levels of translation (Figure 4B and Katze et al., 1986) and in total RNA (Supplementary file 2) along IAV infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this confirmation and references a figure and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "ce1d6d80-fdd0-4983-a868-88e45546a41d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C33",
+      "claim": "There are no significant changes in total RNA along IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue we confirmed that there are no significant changes in the overall levels of translation (Figure 4B and Katze et al., 1986) and in total RNA (Supplementary file 2) along IAV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this confirmation and references a supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b245bb39-2a1a-414a-8fb7-846fb203f64a",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C34",
+      "claim": "Real-time PCR analysis for cellular mRNAs from each cluster were in strong agreement with RNA-seq measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We also extracted RNA from an equal number of cells along infection and performed real-time PCR analysis for cellular mRNAs from each of these clusters. These independent measurements were in strong agreement with our RNA-seq measurements (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the agreement between qPCR and RNA-seq and references Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "8d55ac7f-7e54-4c2a-a72d-634ed71b5d01",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C35",
+      "claim": "210 cellular mRNAs are differentially translated following IAV infection (Pval<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, this approach allowed us to identify 210 cellular mRNAs that are differentially translated following IAV infection (Pval<0.01, Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of differentially translated mRNAs identified by Babel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "5e10e60c-699c-4d48-8b1e-aca2ccb640f1",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C36",
+      "claim": "125 genes were translationally upregulated following IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 125 genes were translationally upregulated whereas 85 genes were translationally down regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers from the Babel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "bf913b95-7465-486b-ad8a-0f616a3aace4",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C37",
+      "claim": "85 genes were translationally downregulated following IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 125 genes were translationally upregulated whereas 85 genes were translationally down regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers from the Babel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "acb89e22-0b21-4599-8c97-4e331d8d34f6",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C38",
+      "claim": "Within the group of translationally upregulated genes at 4 hpi, there was an enrichment for genes that were previously shown as translationally induced in conditions in which eIF2\u03b1 is phosphorylated (pval<0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "While Go enrichment analysis did not reveal any significant functional category, we noticed that within the group of translationally upregulated genes at 4 hpi, there was an enrichment for genes that were previously shown as translationally induced in conditions in which eukaryotic initiation factor 2\u03b1 (eIF2\u03b1) is phosphorylated (pval<0.002, [Andreev et al., 2015; Sidrauski et al., 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this enrichment with a p-value and cites references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "521ac2ab-3acf-4a4d-a360-df225364d306",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C39",
+      "claim": "At 4 hpi eIF2\u03b1 phosphorylation is apparent and only at 8 hpi it is drastically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing western blot analysis, we show that at 4 hpi eIF2\u03b1 phosphorylation is apparent and only at 8 hpi it is drastically reduced (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports western blot results and references Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a895ff39-71f7-4164-9be5-853086a247a8",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C40",
+      "claim": "IAV infection induces the translation of UCP2 and RALGDS at 4 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing polysome profiles prepared from uninfected and IAV infected cells at 4 hpi, we confirmed that IAV infection indeed induce the translation of UCP2 and RALGDS (two genes that are also translationally induced following stress induced eIF2\u03b1 phosphorylation [Andreev et al., 2015]), but not that of control genes SOX4 and SF3B5 for which no change in translation was observed (Figure 4C and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports polysome profiling results and references a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "5c977e5e-14d5-4315-91c0-9bb539f984e1",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C41",
+      "claim": "No change in translation was observed for control genes SOX4 and SF3B5 at 4 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing polysome profiles prepared from uninfected and IAV infected cells at 4 hpi, we confirmed that IAV infection indeed induce the translation of UCP2 and RALGDS (two genes that are also translationally induced following stress induced eIF2\u03b1 phosphorylation [Andreev et al., 2015]), but not that of control genes SOX4 and SF3B5 for which no change in translation was observed (Figure 4C and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports polysome profiling results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "f70ed5ce-d1c5-4c16-9c05-b77e081ad3fd",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C42",
+      "claim": "At 4 hpi eIF2\u03b1 phosphorylation affects the cellular translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that although IAV blocks eIF2\u03b1 phosphorylation (Goodman et al., 2007), at 4 hpi eIF2\u03b1 phosphorylation affects the cellular translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the polysome profiling and western blot results, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "274af361-41dd-438d-87c3-71ef925722a5",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C43",
+      "claim": "IAV blocks eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that although IAV blocks eIF2\u03b1 phosphorylation (Goodman et al., 2007), at 4 hpi eIF2\u03b1 phosphorylation affects the cellular translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "43934d2a-a2dd-4c3f-96f7-3fb4fa19e7e0",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C44",
+      "claim": "The expression levels of the four cellular transcripts measured by smFISH were highly correlated with RNA-seq measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels of the four cellular transcripts we measured by smFISH were highly correlated with our RNA-seq measurements (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the correlation between smFISH and RNA-seq and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "938ec54d-bed9-4818-8fde-aeb4f5b112f3",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C45",
+      "claim": "Absolute quantifications of viral and host transcripts along IAV infection strongly support the notion that host shutoff is mainly driven by differences in mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These absolute quantifications of viral and host transcripts along IAV infection strongly support the notion that host shutoff is mainly driven by differences in mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on smFISH measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "10f2556c-7db0-4484-990c-aa82ae5debe3",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C46",
+      "claim": "There is variability in the levels of cellular transcripts reduction during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this data illustrates the variability in the levels of cellular transcripts reduction during IAV infection, suggesting that IAV-mediated degradation might act differently on different cellular transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this observation from smFISH data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "6a767583-ca1f-411f-b796-c9561f6ac0c8",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C47",
+      "claim": "IAV-mediated degradation might act differently on different cellular transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this data illustrates the variability in the levels of cellular transcripts reduction during IAV infection, suggesting that IAV-mediated degradation might act differently on different cellular transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this possibility based on the observed variability.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "3f482d44-6f47-48d1-8ec7-3b5679805188",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C48",
+      "claim": "The nuclear and cytoplasmic levels of CHML, KIF18A and MYC were downregulated to the same extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the nuclear and cytoplasmic levels of CHML, KIF18A and MYC were downregulated to the same extent (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports smFISH quantification results and references Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "f548f598-db2a-405b-a64c-10f361891c3a",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C49",
+      "claim": "Interference in cellular RNA expression along IAV infection occurs mainly in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that interference in cellular RNA expression along IAV infection occurs mainly in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the smFISH spatial analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "aa1632c2-2dfa-4037-9936-29a2f9f2b7ed",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C50",
+      "claim": "There is a significant enrichment in mRNAs with long half-lives in cluster 3 (Pval = 0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Using recent measurements of mRNA half-lives in A549 cells (Maekawa et al., 2015) we identified a significant enrichment in mRNAs with long half-lives in cluster 3, which includes genes that were only mildly affected by IAV infection (Figure 5D, Pval = 0.005), but this cluster contained also many genes with short half-life.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the analysis of mRNA half-lives with a p-value and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e8da8ee4-2552-4742-b63e-2dff468ecc1a",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C51",
+      "claim": "Cluster 3 contained also many genes with short half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Using recent measurements of mRNA half-lives in A549 cells (Maekawa et al., 2015) we identified a significant enrichment in mRNAs with long half-lives in cluster 3, which includes genes that were only mildly affected by IAV infection (Figure 5D, Pval = 0.005), but this cluster contained also many genes with short half-life.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this observation from the half-life analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "65a0f794-eed1-4bed-8ac9-7be19fcc612d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C52",
+      "claim": "There are additional features beyond half-life that govern the differences between clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that there are additional features that govern the differences between these clusters, and that the differences in the levels of reduction might stem from differences in IAV-interference with host genes expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this based on the observation that cluster 3 contains genes with short half-lives.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "63fe127c-051b-4db1-89d1-4ddd93d4af07",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C53",
+      "claim": "The differences in the levels of reduction might stem from differences in IAV-interference with host genes expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that there are additional features that govern the differences between these clusters, and that the differences in the levels of reduction might stem from differences in IAV-interference with host genes expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this possibility based on the analysis.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a0189c75-b5b6-46cf-b0e8-eff376e4353a",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C54",
+      "claim": "Poly-A tail length does not show significant differences between the different clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome wide measurements of poly-A tail length (Chang et al., 2014) we did not observe any significant differences between the different clusters (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the analysis of poly-A tail length and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "3a959751-976c-49dc-8b84-f2930354f931",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C55",
+      "claim": "Both mRNA length and GC content showed a significant difference between the clusters (Pval\u22641.49e-63 and Pval\u22643.636e-06, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both mRNA length and GC content showed a significant difference between the clusters, and the transcripts that were less affected by IAV were significantly shorter and had higher GC content (Figure 5E and 5F, Pval\u22641.49e-63 and Pval\u22643.636e-06, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the analysis results with p-values and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "89307199-fcd7-4947-894e-233b4e558812",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C56",
+      "claim": "The transcripts that were less affected by IAV were significantly shorter and had higher GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both mRNA length and GC content showed a significant difference between the clusters, and the transcripts that were less affected by IAV were significantly shorter and had higher GC content (Figure 5E and 5F, Pval\u22641.49e-63 and Pval\u22643.636e-06, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the analysis results with p-values and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "80c0572b-c415-42dc-8f19-6408e625ccf5",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C57",
+      "claim": "After omitting transcripts related to oxidative phosphorylation and ribosomal proteins, cluster 3 transcripts were significantly shorter.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, also after omitting transcripts related to these functional categories cluster 3 transcripts were significantly shorter (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of this control analysis and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "4058772b-c484-4d56-b5eb-f5fd4cde9e6f",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C58",
+      "claim": "Shorter and more structured transcripts (transcripts with higher GC content) tend to be less affected by IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly suggest that shorter and more structured transcripts (transcripts with higher GC content) tend to be less affected by IAV infection and therefore it is likely that the extent to which cellular mRNAs are degraded is at least partially governed by the quantity of exposed single stranded RNA in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the length and GC content analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "dfe12f9b-9019-4b5e-97fa-b88c7fdb32b8",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C59",
+      "claim": "The extent to which cellular mRNAs are degraded is at least partially governed by the quantity of exposed single stranded RNA in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly suggest that shorter and more structured transcripts (transcripts with higher GC content) tend to be less affected by IAV infection and therefore it is likely that the extent to which cellular mRNAs are degraded is at least partially governed by the quantity of exposed single stranded RNA in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the length and GC content analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d9a3df09-a279-49a5-bac2-1ac260b3cca6",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C60",
+      "claim": "Western blot analysis confirmed the stable expression of components of the respiratory complex following IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this notion we conducted western blot analysis on cell extracts along IAV infection and could confirm the stable expression of components of the respiratory complex (Figure 6A, upper panel), whereas other proteins were reduced following IAV infection (Figure 6A, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports western blot results and references Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "8d1d2dc1-000c-4f40-b015-c54abe6fb31f",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C61",
+      "claim": "Other proteins were reduced following IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this notion we conducted western blot analysis on cell extracts along IAV infection and could confirm the stable expression of components of the respiratory complex (Figure 6A, upper panel), whereas other proteins were reduced following IAV infection (Figure 6A, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports western blot results and references Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "96d5dc1f-2a97-4d6f-9cc9-4a5099a4abdc",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C62",
+      "claim": "The mitochondria membrane potential is not affected by IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with these results, by staining infected cells with the potential sensitive mitochondrial stain Tetramethylrhodamine (TMRM), we show that the mitochondria membrane potential is not affected by IAV infection (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports TMRM staining results and references Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "fbf31bcd-c6bd-44b3-8711-a23decc7f09e",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C63",
+      "claim": "When cells were infected for 2 hr and then treated with CCCP or Valinomycin in concentrations that did not affect cell viability, IAV titers were significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were infected for 2 hr and then treated with CCCP or Valinomycin in concentrations that did not affect cell viability (Figure 6\u2014figure supplement 1), IAV titers were significantly reduced (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the results of drug treatment experiments and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "52572502-0e1c-4439-8e59-0cf13486d961",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C64",
+      "claim": "mRNAs involved in oxidative phosphorylation are less perturbed by IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that mRNAs involved in oxidative phosphorylation are less perturbed by IAV infection, and that maintenance of intact oxidative phosphorylation activity during IAV infection is important for viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the clustering, western blot, and drug treatment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "5dc5d86b-da13-48f4-a0b5-b6f357a532a7",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C65",
+      "claim": "Maintenance of intact oxidative phosphorylation activity during IAV infection is important for viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that mRNAs involved in oxidative phosphorylation are less perturbed by IAV infection, and that maintenance of intact oxidative phosphorylation activity during IAV infection is important for viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the drug treatment experiments showing reduced viral titers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "752deace-0b49-4040-9316-ec0cdd236ad4",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C66",
+      "claim": "Viral mRNAs are not preferentially translated compared to their host counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systematic and unbiased analysis surprisingly demonstrates that viral mRNAs are not preferentially translated compared to their host counterparts and that the extensive translation of viral proteins is the result of viral takeover of the mRNA pool in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b3c17b7a-4745-4c1f-93bc-6d989e1a2e96",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C67",
+      "claim": "The extensive translation of viral proteins is the result of viral takeover of the mRNA pool in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systematic and unbiased analysis surprisingly demonstrates that viral mRNAs are not preferentially translated compared to their host counterparts and that the extensive translation of viral proteins is the result of viral takeover of the mRNA pool in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "8a636043-a42c-4b4c-8a2f-80b073ed0834",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C68",
+      "claim": "NS1 is not required for the shutoff of host cell protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the notion that NS1 is not required for the shutoff of host cell protein production(Salvatore et al., 2002) and that PA-X endonuclease activity is a dominant factor in mediating host shutoff activity (Jagger et al., 2012; Khaperskyy and McCormick , 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "fbdbb9c8-1639-42d5-be35-c8ec09ccbcb2",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C69",
+      "claim": "PA-X endonuclease activity is a dominant factor in mediating host shutoff activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the notion that NS1 is not required for the shutoff of host cell protein production(Salvatore et al., 2002) and that PA-X endonuclease activity is a dominant factor in mediating host shutoff activity (Jagger et al., 2012; Khaperskyy and McCormick , 2015; Khaperskyy et al., 2016, 2014; Bavagnoli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "42585cd1-9243-451b-8cf0-d8b27cd3881d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C70",
+      "claim": ">90% of the plus strand viral RNA is located in the cytoplasm at 8 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using our smFISH measurements for viral transcript we could show that >90% of the plus strand viral RNA is located in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports smFISH measurements of viral RNA localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "c528cf5d-fd06-4cfb-9c0c-e80944c523d5",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C71",
+      "claim": "P58-IPK (DNAJC3) expression is reduced during IAV infection (by three-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Since our measurements suggest the P58-IPK (DNAJC3) expression is reduced during IAV infection (by three-fold) it is possible that other mechanisms also contribute to the inhibition of eIF2a phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the fold-change in P58-IPK expression from their measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "2b6804dc-4e38-49ff-a63d-4654c99566f7",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C72",
+      "claim": "Other mechanisms may also contribute to the inhibition of eIF2\u03b1 phosphorylation during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our measurements suggest the P58-IPK (DNAJC3) expression is reduced during IAV infection (by three-fold) it is possible that other mechanisms also contribute to the inhibition of eIF2a phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this possibility based on the observed reduction in P58-IPK.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d0ef47bb-6ffd-4d1f-89f5-da652692046b",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C73",
+      "claim": "PA-X activity is mostly nuclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent observation that PA-X activity is mostly nuclear (Khaperskyy et al., 2016) together with limited correlation with a cytoplasmic half-life strongly points to the former possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b90c18df-598c-48b4-abc8-186c4f7bce71",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C74",
+      "claim": "Cap-snatching activity was shown to target mostly small nuclear RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since cap-snatching activity was shown to target mostly small nuclear RNAs (Koppstein et al., 2015), it is likely that the majority of the observed differential reduction in cellular mRNAs is driven by PA-X degradation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "67ab6a08-e314-481e-80a4-67324469809d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C75",
+      "claim": "The majority of the observed differential reduction in cellular mRNAs is likely driven by PA-X degradation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since cap-snatching activity was shown to target mostly small nuclear RNAs (Koppstein et al., 2015), it is likely that the majority of the observed differential reduction in cellular mRNAs is driven by PA-X degradation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the cap-snatching target specificity and the observed correlation with length and GC content.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a80f0f57-7518-40d6-b136-7f6092a32c22",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C76",
+      "claim": "The relation to the length and GC content strongly points to a non-selective process of degradation, where the chances of a transcript to be degraded are influenced by the quantity of exposed ssRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the relation to the length and GC content strongly points to a non-selective process of degradation, where the chances of a transcript to be degraded are influenced by the quantity of exposed ssRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the observed correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "9227959c-551f-4964-8654-8c24e748f15a",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C77",
+      "claim": "PA-X shows preference to ssRNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is consistent with existing in-vitro data showing PA-X preference to ssRNA (Bavagnoli et al., 2015) and with the findings that PA-X lacks obvious sequence or location specificity (Khaperskyy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "dbebfae3-bfbe-4d45-b7f4-f29eca803619",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C78",
+      "claim": "PA-X lacks obvious sequence or location specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is consistent with existing in-vitro data showing PA-X preference to ssRNA (Bavagnoli et al., 2015) and with the findings that PA-X lacks obvious sequence or location specificity (Khaperskyy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "cb9eb83a-4153-433e-ac22-f6402a888e88",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C79",
+      "claim": "PA-X specifically targets Pol II transcripts and this specificity is connected to 3' end processing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the notion that IAV induced degradation significantly depends on the length of the transcript does not easily reconcile with the evidence that PA-X specifically targets Pol II transcripts and that this specificity is connected to 3' end processing (Khaperskyy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "c1b4a0e5-16d8-4044-a96a-d77f97a7389e",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C80",
+      "claim": "Pol II transcription and processing may be physically limited to specific sub-nuclear compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "One way these results could be rationalized is if Pol II transcription and processing is physically limited to specific sub-nuclear compartments (Mitchell, 2008; Ghamari et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting this possibility.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "97640567-f472-4149-9cb6-caa9347bc777",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C81",
+      "claim": "The specificity of PA-X to Pol II transcripts could originate from physical proximity, while the recognition itself could be random and depends on the length and GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the specificity of PA-X to Pol II transcripts could originate from physical proximity, while the recognition itself could be random and depends on the length and GC content, which will govern the amount of exposed ssRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this mechanism to reconcile the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "0670e8df-337d-41e5-9e55-ff1c46e16b72",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C82",
+      "claim": "Degradation activity could be coupled to mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that degradation activity is coupled to mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this as an alternative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a6da3d2e-309c-4e49-94e3-4ef9b3f1fd36",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C83",
+      "claim": "Coupling degradation to splicing can explain the specificity to Pol II transcripts and the relative resistance of short transcripts which intrinsically also tend to have less exons.",
+      "claim_type": "EXPLICIT",
+      "source": "This can explain the specificity to Pol II transcripts and the relative resistance of short transcripts which intrinsically also tend to have less exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this explanation for the observed patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "85381053-bf91-47a1-bd51-076704d4d0a3",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C84",
+      "claim": "By over expression PA-X did not affect the expression of cellular nascent transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this possibility seems less favorable as at least by over expression PA-X did not affect the expression of cellular nascent transcripts (Khaperskyy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b7f7fb66-fcbb-46ac-bb3a-6ecae9d2740c",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C85",
+      "claim": "Transcripts that are less affected by IAV infection are enriched for genes involved in pathways that the virus potentially depends on, such as oxidative phosphorylation components and ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that transcripts that are less affected by IAV infection are enriched for genes involved in pathways that the virus potentially depends on, such as oxidative phosphorylation components and ribosomal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this observation from the GO enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "8fb82727-7ea1-4740-adce-cbc8ec0daccb",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C86",
+      "claim": "Genes that were most significantly reduced are related to cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genes that were most significantly reduced are related to cell cycle, a cellular activity that is often blocked by viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this observation from the GO enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e2af586c-d5f3-4f24-a381-f8560760e3da",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C87",
+      "claim": "Cell cycle is a cellular activity that is often blocked by viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genes that were most significantly reduced are related to cell cycle, a cellular activity that is often blocked by viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as general knowledge about viral infections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "1087fb6a-5d35-4eec-ad0c-dee19048b1fc",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C88",
+      "claim": "The levels of mitochondrial proteins are not affected by IAV even at 16 hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we were able to show that the levels of mitochondrial proteins are not affected by IAV even at 16 hpi, a time point in which other proteins were reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports western blot results showing stable mitochondrial protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "aa2722be-f06b-49e1-8f64-9a271a0e085b",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C89",
+      "claim": "Inhibition of oxidative phosphorylation to levels that do not affect cell's viability severely impairs viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experiments demonstrated that inhibition of oxidative phosphorylation to levels that do not affect cell's viability severely impairs viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of drug treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e0599183-126d-4121-89d4-25480b23afe1",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C90",
+      "claim": "Continuous expression of proteins involved in oxidative phosphorylation is important for viral propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that continuous expression of proteins involved in oxidative phosphorylation is important for viral propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the drug treatment experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "53c2764f-3f94-4d46-8b15-1154423cf958",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C91",
+      "claim": "Many of the proteins that perform basic cellular functions like translation and cellular respiration have long half-lives.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the observation that many of the proteins that perform basic cellular functions like translation and cellular respiration have long half-lives (Schwanhausser et al., 2011) could also assist viruses to avoid detrimental damage from shutting-off cellular protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e070048a-1691-4e6e-a7e0-6619729fb2be",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C92",
+      "claim": "The long half-lives of proteins performing basic cellular functions could assist viruses to avoid detrimental damage from shutting-off cellular protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the observation that many of the proteins that perform basic cellular functions like translation and cellular respiration have long half-lives (Schwanhausser et al., 2011) could also assist viruses to avoid detrimental damage from shutting-off cellular protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this mechanism based on cited protein half-life data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d88660dd-189b-4d5e-9906-2867bce61ed4",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C93",
+      "claim": "The inherent difficulties in blocking host protein production should be common to other viruses inducing host shutoff, particularly viruses with long infection cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherent difficulties in blocking host protein production should be common to other viruses inducing host shutoff, particularly viruses with long infection cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this generalization based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "bf308e1a-dec4-41e0-a253-f60369281593",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C94",
+      "claim": "Ribosome profiling was previously used to map the changes that occur in host gene expression during herpes simplex virus and cytomegalovirus infections.",
+      "claim_type": "EXPLICIT",
+      "source": "This method in conjunction with RNA-seq was previously used to map the changes that occur in host gene expression during herpes simplex virus and cytomegalovirus infections (Rutkowski et al., 2015; Tirosh et al., 2015) and to probe the complexity of several viruses (Stern-Ginossar et al., 2012; Arias et al., 2014; Yang et al., 2015; Irigoyen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "94de0f7e-dc50-4958-8499-3bfa2b7055de",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C95",
+      "claim": "Ribosome profiling was previously used to probe the complexity of several viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This method in conjunction with RNA-seq was previously used to map the changes that occur in host gene expression during herpes simplex virus and cytomegalovirus infections (Rutkowski et al., 2015; Tirosh et al., 2015) and to probe the complexity of several viruses (Stern-Ginossar et al., 2012; Arias et al., 2014; Yang et al., 2015; Irigoyen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "43ce38c8-1740-445e-8aea-9c613b76487d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C96",
+      "claim": "These unbiased and systematic quantification methods can advance our understanding of viral interference with host protein production and are applicable to infection with any virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show how these methods in conjunction with smFISH could be used to accurately quantify host shutoff along viral infection. These unbiased and systematic quantification methods can advance our understanding of viral interference with host protein production and are applicable to infection with any virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion about the applicability of the methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e29553f1-7901-4560-bb3d-245de303bc65",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C97",
+      "claim": "The cells used in this study were the human lung adenocarcinoma epithelial cell line A549.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells used in this study were the human lung adenocarcinoma epithelial cell line A549.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the cell line used in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "7a9d42f4-6f33-41d6-876b-e15698344c0d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C98",
+      "claim": "The human influenza viruses A/Puerto Rico/8/34 H1N1 used in this study were generated as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "The human influenza viruses A/Puerto Rico/8/34 H1N1 used in this study were generated as previously described (Achdout et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the virus generation method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "060b59c5-b4fe-4124-95e8-55a27ba846aa",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C99",
+      "claim": ">95% of cells were infected as confirmed by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficiency of infection was determined by immunofluorescence with Influenza A antibody FITC Reagent (LIGHT DIAGNOSTIC) followed by DAPI dye for nuclear staining, and confirmed that >95% of cells were infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the infection efficiency measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "bd386b92-f9c4-432d-9460-95ba995a8319",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C100",
+      "claim": "Host shutoff is a common strategy used by viruses to repress cellular mRNA translation and concomitantly allow the efficient translation of viral mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Host shutoff is a common strategy used by viruses to repress cellular mRNA translation and concomitantly allow the efficient translation of viral mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge in the Abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "c5905dfd-240d-4ea2-a55b-79b235c38f01",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C101",
+      "claim": "The decline in cellular protein synthesis is mediated by viral takeover on the mRNA pool.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that viral transcripts are not preferentially translated and instead the decline in cellular protein synthesis is mediated by viral takeover on the mRNA pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main finding in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "6ab9088c-0faf-4393-b3ce-4a0a6d0cfc43",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C102",
+      "claim": "Short transcripts are less affected by IAV.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements also uncover strong variability in the levels of cellular transcripts reduction, revealing that short transcripts are less affected by IAV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "ea981f46-d652-4433-8b7b-37b3c9235c84",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C103",
+      "claim": "mRNAs that are refractory to IAV infection are enriched in cell maintenance processes such as oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these mRNAs that are refractory to IAV infection are enriched in cell maintenance processes such as oxidative phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "e7a978b5-adab-4d6b-a1ee-41a390881c2f",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C104",
+      "claim": "The continuous oxidative phosphorylation activity is important for viral propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that the continuous oxidative phosphorylation activity is important for viral propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "c76bf026-4b28-439b-a531-d875326e4337",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C105",
+      "claim": "IAV is absolutely dependent on the host-cell protein synthesis machinery to produce its proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all viruses, IAV is absolutely dependent on the host-cell protein synthesis machinery to produce its proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "dd78019f-7836-498a-acda-93d6f4e08a64",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C106",
+      "claim": "Many viruses utilize host shutoff mechanisms that eliminate competition from cellular transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure priority access to host translation machinery, many viruses utilize host shutoff mechanisms that eliminate competition from cellular transcripts (Walsh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "da08737b-9be0-4771-9714-76a7a514c1ad",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C107",
+      "claim": "Poliovirus cleaves an essential host cap-binding protein, eIF4G, therefore preventing cap-dependent translation of host mRNAs while viral RNA translation stays unperturbed through the use of an internal ribosome entry site.",
+      "claim_type": "EXPLICIT",
+      "source": "A classic example for this strategy is employed by poliovirus. It cleaves an essential host cap- binding protein, eIF4G, therefore preventing cap-dependent translation of host mRNAs while viral RNA translation stays unperturbed through the use of an internal ribosome entry site (Ventoso et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement about poliovirus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d032b59d-0653-4647-a8b6-1dcdf9ca7153",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C108",
+      "claim": "Several herpesviruses express endonucleases which cleave host mRNAs, thereby eliminating the competition with host mRNA for the translation apparatus and ensuring efficient cap-dependent translation of viral mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy is employed by several herpesviruses that express endonucleases which cleave host mRNAs, thereby eliminating the competition with host mRNA for the translation apparatus and ensuring efficient cap-dependent translation of viral mRNAs (Glaunsinger and Ganem, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement about herpesviruses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a709f77c-6eb8-4cc9-85ef-f29f5adbd5ac",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C109",
+      "claim": "IAV has long been known to significantly shutoff host gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "IAV has long been known to significantly shutoff host gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "0187214d-d010-43c6-b72b-ef264826438d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C110",
+      "claim": "IAV is one of the few viruses for which both direct translation co-opting and host mRNA degradation were suggested to play a prominent role in host shutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it is one of the few viruses for which both direct translation co-opting and host mRNA degradation were suggested to play a prominent role in host shutoff (Yanguez and Nieto, 2011; Jagger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "622e2594-4be3-497c-b4fd-627e1a00a75e",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C111",
+      "claim": "IAV mRNAs share the basic features with host mRNAs like a 5' 7-methyl guanosine (m7G) cap and a 3' poly-adenylate (poly(A)) tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Although IAV mRNAs share the basic features with host mRNAs like a 5' 7-methyl guanosine (m7G) cap and a 3' poly-adenylate (poly(A)) tail, previous research suggested that influenza mRNAs are preferably translated due to features found in the 5'UTR of viral mRNAs (Garfinkel and Katze, 1993; Katze et al., 1986; Park and Katze, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "a5581228-8f5c-4190-b13c-e1378857b57d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C112",
+      "claim": "Previous research suggested that influenza mRNAs are preferably translated due to features found in the 5'UTR of viral mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although IAV mRNAs share the basic features with host mRNAs like a 5' 7-methyl guanosine (m7G) cap and a 3' poly-adenylate (poly(A)) tail, previous research suggested that influenza mRNAs are preferably translated due to features found in the 5'UTR of viral mRNAs (Garfinkel and Katze, 1993; Katze et al., 1986; Park and Katze, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references supporting this previous suggestion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "1cba0dec-3d33-45df-b482-3bfe2208afb5",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C113",
+      "claim": "Host mRNA degradation has long been acknowledged during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition host mRNA degradation has long been acknowledged (Beloso et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b7003af3-0f26-49d3-90f8-6945046e3541",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C114",
+      "claim": "The 5' m7G caps on viral transcripts are acquired by 'cap-snatching'.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5' m7G caps on viral transcripts are acquired by \"cap-snatching\" (Plotch et al., 1981), this snatching allows the priming of viral mRNA synthesis but also leads to nascent host transcripts degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "980e33fb-3e18-4049-a534-b1f9d18679b8",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C115",
+      "claim": "Cap-snatching allows the priming of viral mRNA synthesis but also leads to nascent host transcripts degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5' m7G caps on viral transcripts are acquired by \"cap-snatching\" (Plotch et al., 1981), this snatching allows the priming of viral mRNA synthesis but also leads to nascent host transcripts degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this mechanism and cites a reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "62f70b19-c3ca-4b33-9583-6c65149db621",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C116",
+      "claim": "IAV Nonstructural protein 1 (NS1) protein inhibits polyadenylation of host pre-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, inhibition of polyadenylation of host pre-mRNA by IAV Nonstructural protein 1 (NS1) protein (Nemeroff et al., 1998), and degradation of the host RNA polymerase II complex (Rodriguez and P\u00e9rez-Gonz\u00e1lez, 2007) could contribute to the reduction in host transcripts in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "2c949eeb-a78e-4629-a5fb-fc568659fc42",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C117",
+      "claim": "Degradation of the host RNA polymerase II complex could contribute to the reduction in host transcripts in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, inhibition of polyadenylation of host pre-mRNA by IAV Nonstructural protein 1 (NS1) protein (Nemeroff et al., 1998), and degradation of the host RNA polymerase II complex (Rodriguez and P\u00e9rez-Gonz\u00e1lez, 2007) could contribute to the reduction in host transcripts in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d457be72-ded9-4470-bce5-788df06a3341",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C118",
+      "claim": "A highly conserved IAV protein PA-X, possessing the PA endonuclease domain, was shown to selectively degrade host mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a highly conserved IAV protein PA-X, possessing the PA endonuclease domain, was shown to selectively degrade host mRNAs (Jagger et al., 2012), strongly suggesting that PA-X is a general influenza host shutoff endonuclease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "6a054e9f-a568-4db0-88fe-94bb9912d658",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "claim_id": "C119",
+      "claim": "PA-X is a general influenza host shutoff endonuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a highly conserved IAV protein PA-X, possessing the PA endonuclease domain, was shown to selectively degrade host mRNAs (Jagger et al., 2012), strongly suggesting that PA-X is a general influenza host shutoff endonuclease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on cited evidence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a ribosome profiling and RNA-seq experimental system to study IAV infection in A549 cells at multiple time points (2, 4, and 8 hpi) with high infection efficiency (>95%) and reproducible measurements across biological replicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C97-C99 collectively establish the experimental design and quality controls. The high correlation between biological replicates (C2, Figure 1B), proper metagene profiles (C4, Figure 2A), high infection efficiency (C99), and appropriate cell line and virus strain selection (C1, C97, C98) provide strong methodological foundation. The measurements are reproducible and technically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "de579d69-b9b9-4b64-8f30-41705516da36",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ribosome profiling revealed unexpected reads mapping to the IAV minus strand (non-coding vRNA) that are not generated by ribosome protection but likely originate from viral nucleoprotein (NP) protection, as evidenced by their insensitivity to harringtonine treatment and distinct FLOSS scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C14 provide converging evidence through multiple orthogonal approaches: harringtonine treatment (C7-C9), FLOSS analysis (C10-C11), and temporal dynamics (C14). The minus strand reads show distinct characteristics from ribosome-protected fragments, supporting the conclusion that they arise from NP protection (C12-C13). The evidence is internally consistent and well-controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "34592134-803c-4409-ba3b-b80fa3d80f5d",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Viral transcripts are not preferentially translated compared to host mRNAs during IAV infection; instead, host shutoff is driven by viral takeover of the mRNA pool, with viral mRNAs comprising 57.3% of total mRNA and 53.8% of translation activity at 8 hpi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20, C66-C67, and C101 provide strong quantitative evidence that viral translation efficiency falls within the normal range of host genes (C15-C16, Figure 3A) and that the reduction in host protein synthesis correlates with mRNA abundance rather than preferential viral translation (C18-C20, Figure 3B). This challenges previous models and is supported by multiple independent measurements including smFISH validation (C44-C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "f151406c-07d6-49a6-b212-c37283ec6e61",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study confirms that PA-X endonuclease activity, rather than NS1, plays a dominant role in mediating host shutoff during IAV infection, consistent with recent literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C68-C69, and C118-C119 are primarily based on agreement with cited literature rather than direct experimental evidence in this study. However, the authors' findings (particularly the lack of preferential viral translation) are consistent with a PA-X-mediated degradation model. The claims are well-supported by citations but represent confirmation rather than novel discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Host protein synthesis shutoff is driven primarily by reduction in cellular mRNA levels rather than direct interference with translation machinery, with 74% of host transcripts reduced >3-fold and changes in ribosome footprints tracking changes in transcript abundance. This was validated by qPCR and smFISH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C31-C34, C44-C45 provide strong convergent evidence through multiple independent methods (RNA-seq, ribosome profiling, qPCR, smFISH). The correlation between footprints and mRNA levels (C23, Figure 3C), validation by orthogonal methods (C34, C44), and controls for total RNA and translation levels (C32-C33) provide robust support. The smFISH absolute quantification (C44-C45) addresses potential normalization concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cellular mRNAs show differential sensitivity to IAV infection, with distinct clusters showing enrichment for specific functional categories: upregulated genes are enriched for antiviral defense (p=6.9E-13), drastically downregulated genes are enriched for DNA repair (p=1.7E-17) and cell cycle (p=4.3E-18), while minimally affected genes are enriched for oxidative phosphorylation (p=3.4E-10) and ribosomal proteins (p=3.9E-8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C85-C86 report statistically significant GO term enrichments with very low p-values. The clustering analysis (Figure 3C) shows clear separation of gene groups, and the functional enrichments are biologically coherent. The observation that genes important for viral replication (oxidative phosphorylation, ribosomes) are less affected is particularly interesting and well-supported by subsequent functional experiments (C60-C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "582368ce-f92c-460f-b023-b99a93269ab3",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "210 cellular mRNAs are differentially translated during IAV infection (125 upregulated, 85 downregulated), with translationally upregulated genes at 4 hpi enriched for eIF2\u03b1 phosphorylation-responsive genes (p<0.002). Western blot and polysome profiling confirm that eIF2\u03b1 phosphorylation affects cellular translation at 4 hpi despite IAV's known ability to block this pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42 are supported by multiple complementary approaches: Babel computational analysis (C35-C37), enrichment analysis (C38), western blot (C39, Figure 4A), and polysome profiling validation (C40-C41, Figure 4C). The finding that eIF2\u03b1 phosphorylation affects translation at 4 hpi despite IAV blocking mechanisms (C42-C43) is well-supported and represents a temporal nuance in the host-virus interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "smFISH spatial analysis reveals that nuclear and cytoplasmic mRNA levels are downregulated to the same extent during IAV infection, strongly suggesting that interference with cellular RNA expression occurs mainly in the nucleus, consistent with nuclear PA-X activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide direct spatial evidence through smFISH (Figure 5C) showing equivalent reduction in nuclear and cytoplasmic compartments. This is supported by cited evidence that PA-X activity is mostly nuclear (C73). The observation that >90% of viral plus-strand RNA is cytoplasmic (C70) helps rule out alternative explanations. The evidence is internally consistent and addresses a key mechanistic question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "bc0d4204-6390-40dd-86f9-abc987d364b0",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The extent of cellular mRNA degradation during IAV infection correlates significantly with transcript length (p\u22641.49e-63) and GC content (p\u22643.636e-06), with shorter and more structured transcripts being less affected. This suggests a non-selective degradation process where the quantity of exposed single-stranded RNA governs susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C59 and C76 provide strong statistical evidence for length and GC content correlations (C55-C56, Figure 5E-F), with appropriate controls excluding confounding by functional enrichments (C57). The lack of correlation with poly(A) tail length (C54) and limited correlation with mRNA half-life (C50-C51) support the interpretation that nuclear degradation characteristics dominate. The mechanistic interpretation (C58-C59, C76) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "bcb09891-1c78-4dea-957a-068c657e4951",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mRNAs encoding oxidative phosphorylation components are less affected by IAV infection, their protein levels remain stable through 16 hpi, mitochondrial membrane potential is maintained, and pharmacological inhibition of oxidative phosphorylation significantly reduces viral replication without affecting cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65, C88-C90, C103-C104 provide convergent evidence through multiple approaches: western blot showing stable respiratory complex proteins (C60, C88, Figure 6A), TMRM staining showing maintained membrane potential (C62, Figure 6B), and functional validation with CCCP and Valinomycin showing reduced viral titers (C63, C89, Figure 6C-D). The drug concentrations used did not affect cell viability (Figure 6\u2014supplement 1), strengthening the conclusion that oxidative phosphorylation is specifically important for viral replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that PA-X-mediated degradation, rather than cap-snatching, drives the differential reduction in cellular mRNAs, with PA-X showing preference for ssRNA and lack of sequence specificity. They discuss potential mechanisms reconciling PA-X's Pol II specificity with length-dependent degradation, including sub-nuclear compartmentalization or coupling to splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C84 are primarily interpretive and speculative, drawing on cited literature (C74, C77-C79, C84) to propose mechanisms. While the reasoning is logical and the proposed models are plausible (C80-C83), these remain hypotheses without direct experimental validation in this study. The authors appropriately acknowledge uncertainty and present alternative models, but the mechanistic details require future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "d14cfef7-20f0-4f35-a754-2b1985d84e66",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that long protein half-lives of housekeeping proteins and the inherent difficulties in blocking host protein production may be common features helping viruses avoid detrimental effects of host shutoff, particularly for viruses with long infection cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 are speculative extrapolations based on cited protein half-life data (C91) and the findings of this study. While the reasoning is logical, these claims lack direct experimental support and represent hypotheses for future investigation. The generalization to other viruses (C93) is particularly speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "724cb35f-426f-49a9-8d46-bba5fce71454",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "P58-IPK (DNAJC3) expression is reduced three-fold during IAV infection, suggesting that mechanisms beyond P58-IPK may contribute to inhibition of eIF2\u03b1 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 report a measured three-fold reduction in P58-IPK expression from the RNA-seq data. The suggestion that other mechanisms may contribute (C72) is reasonable speculation based on this observation, though it remains to be experimentally validated. The claim is appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    },
+    {
+      "id": "3a693a7e-fcaf-4366-bcf9-0005c1849ac6",
+      "content_id": "11c7c350-b50e-444b-a7c9-432857fdf55d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors position their work within the context of previous ribosome profiling studies of viral infections and propose that their combined approach (ribosome profiling, RNA-seq, and smFISH) provides unbiased systematic methods applicable to any viral infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 appropriately cite previous work (C94-C95) and make a reasonable claim about methodological applicability (C96). The study demonstrates the utility of combining these approaches, and the methods are indeed generalizable. This represents a valid methodological contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:24:29.785343Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba124973-75f9-4857-902a-3bfe2a7c46ec",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "a124ef3c-7a23-4ae7-a4ac-99f9e8d48d1b",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "fbfe3e67-cdac-4298-af45-64ca09c46947",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "33ce1355-b475-42fc-bb97-5dd9b07a8c1b",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "e29553f1-7901-4560-bb3d-245de303bc65",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "7a9d42f4-6f33-41d6-876b-e15698344c0d",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "060b59c5-b4fe-4124-95e8-55a27ba846aa",
+      "result_id": "5b21c6bf-fe4f-49f1-81ae-650a757ac716"
+    },
+    {
+      "claim_id": "d66c898d-21b9-4aef-a508-9684621c972c",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "9a9925ed-717a-4510-b9a5-8039275d86fb",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "876fc769-1dcf-46b3-812f-1d5bc7a743a0",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "f2e1b83a-f3a6-48ae-8efd-45c35326a049",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "2cbad183-27f2-4dc2-8673-419afc30e70d",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "763a08a6-8ae5-4a2e-a20b-54e84bf22004",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "ab3873c5-e08d-455f-9084-4e0ea4e87bba",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "43651c72-2771-47d1-9077-abf4176ae10f",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "58f0c426-1f96-4c60-b2b5-f595d7dc06ea",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "11e8fdf8-f856-446d-8868-2567a4c6afac",
+      "result_id": "de579d69-b9b9-4b64-8f30-41705516da36"
+    },
+    {
+      "claim_id": "1ee1ea2d-6570-4ebe-86a4-549f8b558719",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "09dd2bf5-3df6-4964-b05e-b732f2a3d8c0",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "e6642260-11a5-4bbb-b531-d9f184737400",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "105cd2e5-ee9d-4448-919b-6746f78a81cf",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "835c48b5-f7f8-4fb6-af78-bc1ba7816452",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "02ad5698-93e6-4469-badc-a55304052f69",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "752deace-0b49-4040-9316-ec0cdd236ad4",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "b3c17b7a-4745-4c1f-93bc-6d989e1a2e96",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "c5905dfd-240d-4ea2-a55b-79b235c38f01",
+      "result_id": "34592134-803c-4409-ba3b-b80fa3d80f5d"
+    },
+    {
+      "claim_id": "91565089-8aa5-46b4-a216-ab3b1df43244",
+      "result_id": "f151406c-07d6-49a6-b212-c37283ec6e61"
+    },
+    {
+      "claim_id": "8a636043-a42c-4b4c-8a2f-80b073ed0834",
+      "result_id": "f151406c-07d6-49a6-b212-c37283ec6e61"
+    },
+    {
+      "claim_id": "fbdbb9c8-1639-42d5-be35-c8ec09ccbcb2",
+      "result_id": "f151406c-07d6-49a6-b212-c37283ec6e61"
+    },
+    {
+      "claim_id": "d457be72-ded9-4470-bce5-788df06a3341",
+      "result_id": "f151406c-07d6-49a6-b212-c37283ec6e61"
+    },
+    {
+      "claim_id": "6a054e9f-a568-4db0-88fe-94bb9912d658",
+      "result_id": "f151406c-07d6-49a6-b212-c37283ec6e61"
+    },
+    {
+      "claim_id": "66bc0b5a-7f73-45c8-b746-ded37690c885",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "ecc3f015-6d65-4580-84c9-b97f9f2fc225",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "59d140dc-8dbc-430c-bdfd-2a5d8277b644",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "b7bd850b-0b60-4d67-bb2d-f776685e2c47",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "41066be6-2dad-44be-ae4c-1cf024466d98",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "ce1d6d80-fdd0-4983-a868-88e45546a41d",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "b245bb39-2a1a-414a-8fb7-846fb203f64a",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "43934d2a-a2dd-4c3f-96f7-3fb4fa19e7e0",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "938ec54d-bed9-4818-8fde-aeb4f5b112f3",
+      "result_id": "f7dcb355-c9d4-41f2-8e56-eae83f8d74d6"
+    },
+    {
+      "claim_id": "b57aa7fc-69d2-4030-89ca-bc6a9d431806",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "0252a61d-1029-4a3a-9d50-cc3e204a83bc",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "cd9a00d8-4764-4f0b-8ea0-fce6f975b0b3",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "5d2d1fc4-35a0-4e80-ac6b-5a577b65b1f0",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "2512d7c8-505c-4abb-a8f6-b04bc3ed00f8",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "4a8cc9a1-7b5a-46fc-89dd-a50e0fdaf275",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "b7f7fb66-fcbb-46ac-bb3a-6ecae9d2740c",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "8fb82727-7ea1-4740-adce-cbc8ec0daccb",
+      "result_id": "75254145-1ab0-4b2c-93f4-a88d5389bdf6"
+    },
+    {
+      "claim_id": "8d55ac7f-7e54-4c2a-a72d-634ed71b5d01",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "5e10e60c-699c-4d48-8b1e-aca2ccb640f1",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "bf913b95-7465-486b-ad8a-0f616a3aace4",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "acb89e22-0b21-4599-8c97-4e331d8d34f6",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "521ac2ab-3acf-4a4d-a360-df225364d306",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "a895ff39-71f7-4164-9be5-853086a247a8",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "5c977e5e-14d5-4315-91c0-9bb539f984e1",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "f70ed5ce-d1c5-4c16-9c05-b77e081ad3fd",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "274af361-41dd-438d-87c3-71ef925722a5",
+      "result_id": "582368ce-f92c-460f-b023-b99a93269ab3"
+    },
+    {
+      "claim_id": "10f2556c-7db0-4484-990c-aa82ae5debe3",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "6a767583-ca1f-411f-b796-c9561f6ac0c8",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "3f482d44-6f47-48d1-8ec7-3b5679805188",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "f548f598-db2a-405b-a64c-10f361891c3a",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "42585cd1-9243-451b-8cf0-d8b27cd3881d",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "d0ef47bb-6ffd-4d1f-89f5-da652692046b",
+      "result_id": "b21c7d7c-abc2-4af6-a17b-d0bdda523f31"
+    },
+    {
+      "claim_id": "aa1632c2-2dfa-4037-9936-29a2f9f2b7ed",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "e8da8ee4-2552-4742-b63e-2dff468ecc1a",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "65a0f794-eed1-4bed-8ac9-7be19fcc612d",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "63fe127c-051b-4db1-89d1-4ddd93d4af07",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "a0189c75-b5b6-46cf-b0e8-eff376e4353a",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "3a959751-976c-49dc-8b84-f2930354f931",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "89307199-fcd7-4947-894e-233b4e558812",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "80c0572b-c415-42dc-8f19-6408e625ccf5",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "4058772b-c484-4d56-b5eb-f5fd4cde9e6f",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "dfe12f9b-9019-4b5e-97fa-b88c7fdb32b8",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "a80f0f57-7518-40d6-b136-7f6092a32c22",
+      "result_id": "bc0d4204-6390-40dd-86f9-abc987d364b0"
+    },
+    {
+      "claim_id": "d9a3df09-a279-49a5-bac2-1ac260b3cca6",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "8d1d2dc1-000c-4f40-b015-c54abe6fb31f",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "96d5dc1f-2a97-4d6f-9cc9-4a5099a4abdc",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "fbf31bcd-c6bd-44b3-8711-a23decc7f09e",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "52572502-0e1c-4439-8e59-0cf13486d961",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "5dc5d86b-da13-48f4-a0b5-b6f357a532a7",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "1087fb6a-5d35-4eec-ad0c-dee19048b1fc",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "aa2722be-f06b-49e1-8f64-9a271a0e085b",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "e0599183-126d-4121-89d4-25480b23afe1",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "ea981f46-d652-4433-8b7b-37b3c9235c84",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "e7a978b5-adab-4d6b-a1ee-41a390881c2f",
+      "result_id": "bcb09891-1c78-4dea-957a-068c657e4951"
+    },
+    {
+      "claim_id": "b90c18df-598c-48b4-abc8-186c4f7bce71",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "67ab6a08-e314-481e-80a4-67324469809d",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "9227959c-551f-4964-8654-8c24e748f15a",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "dbebfae3-bfbe-4d45-b7f4-f29eca803619",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "cb9eb83a-4153-433e-ac22-f6402a888e88",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "c1b4a0e5-16d8-4044-a96a-d77f97a7389e",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "97640567-f472-4149-9cb6-caa9347bc777",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "0670e8df-337d-41e5-9e55-ff1c46e16b72",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "a6da3d2e-309c-4e49-94e3-4ef9b3f1fd36",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "85381053-bf91-47a1-bd51-076704d4d0a3",
+      "result_id": "5ecf526a-e954-4c50-9c99-2f5e78c84f1c"
+    },
+    {
+      "claim_id": "53c2764f-3f94-4d46-8b15-1154423cf958",
+      "result_id": "d14cfef7-20f0-4f35-a754-2b1985d84e66"
+    },
+    {
+      "claim_id": "e070048a-1691-4e6e-a7e0-6619729fb2be",
+      "result_id": "d14cfef7-20f0-4f35-a754-2b1985d84e66"
+    },
+    {
+      "claim_id": "d88660dd-189b-4d5e-9906-2867bce61ed4",
+      "result_id": "d14cfef7-20f0-4f35-a754-2b1985d84e66"
+    },
+    {
+      "claim_id": "c528cf5d-fd06-4cfb-9c0c-e80944c523d5",
+      "result_id": "724cb35f-426f-49a9-8d46-bba5fce71454"
+    },
+    {
+      "claim_id": "2b6804dc-4e38-49ff-a63d-4654c99566f7",
+      "result_id": "724cb35f-426f-49a9-8d46-bba5fce71454"
+    },
+    {
+      "claim_id": "bf308e1a-dec4-41e0-a253-f60369281593",
+      "result_id": "3a693a7e-fcaf-4366-bcf9-0005c1849ac6"
+    },
+    {
+      "claim_id": "94de0f7e-dc50-4958-8499-3bfa2b7055de",
+      "result_id": "3a693a7e-fcaf-4366-bcf9-0005c1849ac6"
+    },
+    {
+      "claim_id": "43ce38c8-1740-445e-8aea-9c613b76487d",
+      "result_id": "3a693a7e-fcaf-4366-bcf9-0005c1849ac6"
+    }
+  ],
+  "comparisons": []
+}

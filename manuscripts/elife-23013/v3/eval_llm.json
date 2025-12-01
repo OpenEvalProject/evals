@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The busulfan chimera model successfully ablates hematopoietic stem cells while preserving peripheral T cell compartments, resulting in stable thymic chimerism by 6 weeks post-BMT and normal lymphocyte homeostasis in chimeric mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 collectively establish that the busulfan chimera model is valid for studying T cell dynamics. The data in Figures 1B-C demonstrate normal cell numbers and proliferation rates, supported by prior work (Hogan et al., 2015; Vezys et al., 2006). The model's validity is critical for interpreting subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Donor-derived cells appear in memory compartments by 8 weeks post-BMT, demonstrating that naive T cells continue to differentiate into memory in adult mice. This replacement is steady but incomplete over one year, while total memory compartment size remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are well-supported by the chimerism data in Figures 1D-E showing donor cell infiltration into memory and stable compartment sizes. This directly demonstrates ongoing naive-to-memory differentiation in healthy adult mice, a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16"
+    ],
+    "result": "CD4 TEM appearance lags behind both naive and TCM cells in busulfan chimeras, suggesting TCM are sourced from naive precursors while TEM may derive from naive and/or TCM. Statistical modeling favors naive T cells as the strongest predictor of TEM accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are supported by kinetic data (Figure 2C, supplement 1) and model comparisons (\u0394AIC=11 favoring naive source). However, the authors acknowledge uncertainty about TEM sourcing pathways, noting both models fit visually similarly despite statistical differences. The conclusion is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mathematical modeling estimates that 6-10% of CD4 memory cells are replaced weekly in 14-week-old mice through influx from naive sources. The resistant memory model is favored, predicting age-dependent changes in replacement rates and the existence of resistant host-derived subpopulations comprising 16-96% of memory depending on subset and age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 present quantitative estimates from mathematical models fitted to chimerism data (Figure 2C-D, Table 1). The models are well-described with confidence intervals provided. While model selection shows comparable support for some alternatives (\u0394AIC=0.16 for TEM), the parameter estimates are robust and the resistant memory model is appropriately favored for parsimony.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Ki67 is a nuclear protein expressed during division and lost over days post-mitosis. During BrdU experiments, memory subset sizes and Ki67 expression fractions remained stable, establishing steady-state conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish methodological foundations. C28 is well-supported by multiple citations. C29 is supported by data in Appendix 1-figure 1 showing stability over experimental timecourses, which is essential for the steady-state modeling assumptions used throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BrdU/Ki67 timecourse data strongly support kinetic heterogeneity over temporal heterogeneity (\u0394AIC=110-251), revealing two subpopulations in both CD4 TEM and TCM with highly divergent kinetics. Fast subpopulations divide every 3-6 days while slow subpopulations divide every 140-170 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 present the central finding from BrdU/Ki67 modeling (Figure 4, Table 2). The statistical support is unequivocal (\u0394AIC>100), and parameter estimates are provided with confidence intervals. The kinetic heterogeneity model fits the data far better than temporal heterogeneity, representing a major advance in understanding memory T cell dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neglecting the source of new memory cells from naive precursors leads to substantial errors: 25-50% overestimation of cell lifetimes and 2-3 fold underestimation of interdivision times. The influx predominantly feeds slower subpopulations at best-fit parameter estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 demonstrate the importance of accounting for naive influx in parameter estimation (Figure 5A). The comparison of models with/without source terms (\u0394AIC=9-20 favoring source inclusion) quantitatively shows the impact on estimates. However, C39's conclusion about source allocation is noted as uncertain by the authors themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Model comparisons found no strong evidence for differential death rates between recently-divided (Ki67high) and quiescent (Ki67low) memory CD4 T cells, with only CD4 TCM showing marginal support for 10-fold higher death in Ki67high cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 address temporal heterogeneity in death rates. The analysis is appropriate, testing models with different death rate ratios. For TEM, no improvement was found (\u0394AIC>4); for TCM, support was equivocal. The conclusion of no strong evidence for temporal heterogeneity in death is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The mean post-mitotic duration of Ki67 expression is estimated at 3.1-3.7 days, consistent with prior literature. This estimate is model-independent, insensitive to source magnitude, and comparable between CD4 TEM and TCM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide a methodologically important parameter estimate (Figure 5B). The consistency with prior work (Pitcher et al., 2002; Younes et al., 2011; De Boer and Perelson, 2013) and robustness across models strengthens confidence. This validates the Ki67 measurement approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The kinetic heterogeneity model predicts fast subpopulations express Ki67 at 65-85% while slow subpopulations are <10% Ki67high, indicating Ki67high cells are highly enriched for the fast-dividing subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present model predictions about Ki67 expression patterns (Figure 5C). These predictions are internally consistent with the model structure and parameter estimates. The prediction that Ki67high cells are enriched for fast-dividing cells is logical given the kinetic parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The relative sizes of fast/slow subsets are similar to donor/host splits in chimeras, but Ki67 expression analysis shows both donor and host cells exhibit substantial Ki67 expression, indicating both newly-recruited and established memory cells are kinetically heterogeneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 test whether donor/host corresponds to fast/slow subpopulations. Figure 5D data show both populations express Ki67 substantially, refuting the simple correspondence. This is an important negative result that strengthens the conclusion that kinetic heterogeneity exists within both new and established memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "There is strong evidence for kinetically heterogeneous subpopulations within CD4 memory subsets but no strong evidence for temporal heterogeneity in death susceptibility. Accounting for constitutive influx significantly improves model fits and strongly impacts turnover rate estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 summarize key findings from the BrdU/Ki67 analysis. The evidence for kinetic heterogeneity is strong (\u0394AIC>100), evidence against temporal heterogeneity in death is appropriate (C43), and the impact of source inclusion is quantified (\u0394AIC=9-20, Figure 5A). These are well-supported summary conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Estimated average lifetimes are 21 days (TCM) and 29 days (TEM), slightly higher than previous studies (14-22 days). Studies assuming self-renewing memory without influx tend to overestimate lifetimes and underestimate interdivision times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 compare current estimates to prior literature. The comparison is appropriate and the explanation for discrepancies (neglecting source terms) is supported by the modeling results (C37-C38). The citations to De Boer and Perelson, 2013 and Westera et al., 2013 are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Prior work recognized heterogeneity in CD4 memory with slow cytokine-driven and fast TCR-driven subpopulations. Current findings show both TEM and TCM comprise fast and slow subpopulations with ~9-11% Ki67 in slow populations, suggesting similar homeostatic dynamics and structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 contextualize findings within prior literature. C60 is well-supported by multiple citations. C61's estimate of 9-11% Ki67 in slow populations (Figure 5C) is consistent with cited observations of antigen-specific memory. The conclusion that TEM and TCM have similar structure (C62-C63) follows from the kinetic heterogeneity findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Fast subpopulations divide every 3 days (TCM) or 6 days (TEM), while slow subpopulations divide every \u2265140 days. Over half of fast TCM cells will re-enter division before losing Ki67 expression, making Ki67 primarily a post-mitotic marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 present key kinetic parameters from the model (Table 2). The interdivision times are well-estimated with confidence intervals. C67's inference about re-division before Ki67 loss is mathematically sound given the 3-day interdivision time and 3.5-day Ki67 lifetime. These parameters are central to understanding memory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Memory compartments exhibit complex regulation with substantial tonic generation of memory cells feeding into highly dynamic, kinetically heterogeneous subpopulations with diverse age structure. Despite this complexity, compartment sizes remain remarkably stable, indicating tight homeostatic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide high-level synthesis of all findings. The complexity (kinetic heterogeneity, ongoing influx, age structure) is well-documented throughout. The stability of compartment sizes despite dynamic turnover (Figures 1B, 2C) demonstrates homeostatic control. This is an appropriate integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Both CD4 TEM and TCM comprise subpopulations with highly divergent turnover rates. Inflows from the naive pool strongly impact estimates of memory cell kinetics. Memory subset maintenance in healthy mice is unexpectedly reliant on replenishment from naive T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 summarize the paper's main conclusions. C72 is supported by kinetic heterogeneity findings (C30-C35). C73 is demonstrated by source inclusion analysis (C37-C38, C54-C55). C74 is supported by substantial replacement rates (C19-C20, 6-10%/week) shown in chimera experiments. These represent the paper's core contributions.",
+    "result_type": "MAJOR"
+  }
+]

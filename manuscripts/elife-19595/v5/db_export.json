@@ -1,0 +1,2011 @@
+{
+  "submission": {
+    "id": "9dd8a2e3-8ffc-4901-b91a-ae08102e8286",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:41:28.000357Z",
+    "updated_at": "2025-11-30T22:41:28.000357Z"
+  },
+  "content": [
+    {
+      "id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "submission_id": "9dd8a2e3-8ffc-4901-b91a-ae08102e8286",
+      "content_type": "manuscript",
+      "content_text": "# Controlling contractile instabilities in the actomyosin cortex\n\n## Authors\n\n- Masatoshi Nishikawa<sup>1</sup> ([ORCID: 0000-0001-6502-7907](https://orcid.org/0000-0001-6502-7907))\n- Sundar Ram Naganathan<sup>1</sup>\n- Frank J\u00fclicher<sup>2</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185))\n- Stephan W Grill<sup>1</sup> ([ORCID: 0000-0002-2290-5826](https://orcid.org/0000-0002-2290-5826)) \u2020\n\n### Affiliations\n\n1. Biotechnology Center Technical University Dresden Dresden Germany\n2. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n3. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe actomyosin cell cortex is an active contractile material for driving cell- and tissue morphogenesis. The cortex has a tendency to form a pattern of myosin foci, which is a signature of potentially unstable behavior. How a system that is prone to such instabilities can rveliably drive morphogenesis remains an outstanding question. Here, we report that in the Caenorhabditis elegans zygote, feedback between active RhoA and myosin induces a contractile instability in the cortex. We discover that an independent RhoA pacemaking oscillator controls this instability, generating a pulsatory pattern of myosin foci and preventing the collapse of cortical material into a few dynamic contracting regions. Our work reveals how contractile instabilities that are natural to occur in mechanically active media can be biochemically controlled to robustly drive morphogenetic events.\n\n## Introduction\n\nAlan Turing described in his seminal 1952 paper the ability of an initially homogeneous spatial system that contains diffusing and chemically interacting species to form a self-organized pattern\u00a0(Turing, 1952). Turing\u2019s original conjecture was that such processes contribute to the patterning of developing organisms. While many examples have been found that are compatible with this idea\u00a0(Kondo and Asal, 1995; M\u00fcller et al., 2012; Sheth et al., 2012; Raspopovic et al., 2014), self-organized patterning in morphogenesis, however, is known to not only rely on biochemical regulation but also depend on cell-and tissue scale active mechanical processes\u00a0(Turing, 1952; Howard et al., 2011). General physical mechanisms by which the interplay between regulatory and mechanical processes endows active biological materials to form self-organized spatiotemporal patterns have remained largely unexplored.\n\nActomyosin contractility\u00a0(Bray and White, 1988; Salbreux et al., 2012) is an essential cellular mechanical process, responsible for driving many cell- and tissue scale morphogenetic events\u00a0(Murrell et al., 2015; Levayer and Lecuit, 2012). The cortex consists to a large extent of actin filaments and myosin motor proteins, forming a thin layer underneath the cell membrane that can be thought of as a thin film of an active gel\u00a0(Salbreux et al., 2012; J\u00fclicher et al., 2007). Contractility by myosin motor proteins generates active tension in the gel, and gradients in active tension are known to generate cortical flows of this layer\u00a0(Mayer et al., 2010). Cortical flow participates in forming the cytokinetic furrow\u00a0(Bray and White, 1988; Benink et al., 2000; Yumura, 2001; Eggert et al., 2006), and drives polarization of the one-cell stage C. elegans embryo (Hird and White, 1993; Guo and Kemphues, 1996; Cheeks et al., 2004; Munro et al., 2004; Goehring et al., 2011). Highly contractile cortices, like the one driving polarization in C. elegans, tend to exhibit transient accumulations of myosin that form a pulsatile pattern. Pulsatile actomyosin patterns are ubiquitous in development\u00a0(Munro et al., 2004; Martin et al., 2009; Solon et al., 2009; Rauzi et al., 2010; Roh-Johnson et al., 2012; Ma\u00eetre et al., 2015), and it has been suggested that they result from positive feedback and contractile instabilities\u00a0(Kruse and J\u00fclicher, 2000; Bois et al., 2011; Gowrishankar et al., 2012; Kumar et al., 2014; Munjal et al., 2015; Hannezo et al., 2015). A contractile instability causes the cortex to become inhomogeneous over space, with cortical material collapsing into contracting regions (Bois et al., 2011; Alvarado et al., 2013). Theoretical work has shown that contractile instabilities are inevitable when contractility is high enough (Bois et al., 2011), raising the question of how a system that is prone to such instabilities can reliably drive morphogenesis. Here we show that there indeed exists a contractile instability in the actomyosin cortical layer of the C. elegans zygote, and we discover that this instability is controlled by a RhoA oscillator.\n\n## Results and discussion\n\nIn order to investigate spatiotemporal patterns in the C. elegans cortex, we first sought to see whether non-muscle myosin II (NMY-2) in the C. elegans zygote displays pulsatile dynamics\u00a0(Munro et al., 2004). For this, we determined the temporal derivative of the average NMY-2 intensity (Figure 1A, averaging over a region in the posterior indicated by a white box), as a proxy of myosin foci assembly and disassembly behavior (Figure 1A\u2013C). We also quantified the time-dependence of the average speed of cortical flow in this region as determined by Particle Image Velocimetry (PIV, see Appendix for detail) (Figure 1B,C). Notably, both quantities exhibited signs of oscillatory behavior (Figure 1C) and an auto-correlation analysis revealed periodic changes in both quantities with a time constant of approximately 30 s (Figure 1D,E). To conclude, the myosin foci pattern in the C. elegans zygote exhibits pulsatile, oscillatory dynamics.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig1-v5.jpg)\n\n**Figure 1.:** (A) A representative image of NMY-2::GFP showing the NMY-2 foci pattern (magenta) in the C. elegans zygote. Anterior is to the left throughout, white box denotes region shown in B. (B) Myosin focus assembly and disassembly time-course from A in inverted contrast; dashed circle indicates a myosin focus. Arrows denote the velocity field determined by PIV; thick green line: velocity scale bar 0.4 $\\mu\u2062m/s$. (C) The\u00a0temporal dynamics of NMY-2 fluorescence intensity time-rate change (magenta) and cortical flow speed (blue, obtained by PIV) for the region in (B), arrowheads indicate the time interval shown in (B). (D) Normalized autocorrelation of NMY-2 intensity change and flow speed timecourses in (C) and (E) respective oscillation periods. (F) NMY-2::RFP (magenta) and AHPH::GFP (green), a probe for active RhoA, co-localize at myosin foci. (G) COMBI analysis schematic. (H) Effective reaction terms of NMY-2 and active RhoA in the phase plane of normalized NMY-2 and active RhoA concentrations (N\u00a0=\u00a025 embryos). Arrows represent concentration changes, colors indicate the magnitude of change. Thin solid magenta (NMY-2) and green (RhoA) lines, numerically determined nullclines. Thick dashed lines, linearized nullclines (see Appendix). Scale bars; $5\u00a0\\mum$.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig1-figsupp1-v5.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The\u00a0temporal dynamics of AHPH (green) and NMY-2 (magenta) foci intensities (n\u00a0=\u00a016). (B) Normalized spatiotemporal cross-correlation function of AHPH and NMY2 intensities. For visualization purpose, only the contours of the cross-correlation values are plotted (n\u00a0=\u00a025 embryos). (C) A plot of the normalized cross-correlation peak value, obtained from (B) at different time offsets. Note that the peak value is highest at $\\tau=0$, indicating that active RhoA and myosin tend to come together at foci at the same time. Note also that the graph is asymmetric, indicating distinct dynamics in the assembly and disassembly phase.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig1-figsupp2-v5.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Effective reaction terms of NMY-2 and active RhoA obtained by COMBI (man text Figure 1H). Arrows represent concentration changes, colors indicate the magnitude of change. Black lines indicate the integrated trajectories, the solid black line with arrows highlights a trajectory that states with high active RhoA and low myosin, and overshoots in its level of myosion prior reaching the fixpoint. (B) Trajectories (black lines) are obtained from linearized reaction kinetics shown in (C) and (D). (C,D) Linearization of (C) $R_{r}\u2062(c_{r},c_{m})$ and (D) $R_{m}\u2062(c_{r},c_{m})$.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig1-figsupp3-v5.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Effective reaction terms of active RhoA and actin in the phase plane of normalized active RhoA and LifeAct concentrations (N\u00a0=\u00a014 embryos). Arrows represent concentration changes, colors indicate the magnitude of change. Thin solid green (active RhoA) and blue (actin) lines, numerically determined nullclines. Thick dashed lines, linearized nullclines (see Appendix). (B) A plot of peak value of the normalized , spatiotemporal cross-correlation function between LifeAct and AHPH fluorescence. (C) A representative image of AHPH::GFP (green) and LifeAct::tagRFP-T (magenta) in the non-RNAi condition. Scale bar; $5\u2062\\mu\u2062m$.\n\nWe next sought to understand where this oscillatory behavior comes from. One possibility is that positive feedback mediated by RhoA (RHO-1 in C. elegans)\u00a0(Bement et al., 2015), a key activator of myosin\u00a0(Jenkins et al., 2006; Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006), plays a role in generating this pulsatile pattern\u00a0(Munjal et al., 2015). We investigated the dynamics of active RhoA by use of a GFP fused anillin homology domain (AHPH) probe, to image the GTP-bound active form of RhoA\u00a0(Tse et al., 2012). We find that active RhoA forms a dynamic, pulsatile pattern that is similar to that of myosin, with both active RhoA and myosin co-localizing in pulsatile foci (Figure 1F, Figure 1\u2014figure supplement 1, and Video 1). We speculated that flow-based transport of an activator of myosin could give rise to positive feedback and a contractile instability\u00a0(Bois et al., 2011), favouring the spontaneous formation of self-organized pulsatory patterns\u00a0(Munjal et al., 2015). However, testing for this possibility requires knowledge of the kinetics of active RhoA mediated myosin recruitment coupled with a hydrodynamic description of active cortical mechanics, for evaluating if the full mechanochemically coupled system indeed is unstable.\n\n![Video 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-media1.mp4.jpg)\n\n**Video 1.:** Time lapse movie shows the cortical plane of embryo that expresses both AHPH::GFP (green) and NMY-2::tagRFP-T (magenta) in non-RNAi condition. Scale bar, 5 $\\mu\u2062m$.\n\nWe set out to test if coupling RhoA mediated myosin recruitment to gel flow and advection results in an intrinsically unstable cortex (Figure 2A). To this end, we sought to determine the effective reaction kinetics of the regulatory interaction between active RhoA and myosin in vivo. We developed a method of measuring the kinetic diagram of active RhoA mediated myosin recruitment (CO-moving Mass Balance Imaging; COMBI): We investigated the mass balance of both species in the comoving frame of reference of the flowing cortex, under consideration of the effects of dilution/enrichment by divergent/convergent gel flow (Figure 1G)\u00a0(Vallotton et al., 2004). In the frame of reference of the embryo, concentrations of myosin and active RhoA can change due to transport by flow (advective fluxes) or due to association/dissociation (chemical fluxes). The chemical fluxes Rr and Rm, where r denote active RhoA and m denotes myosin, correspond to reaction terms that capture turnover and biochemically regulated recruitment effects. They can depend on the concentrations of both species.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig2-v5.jpg)\n\n**Figure 2.:** (A) Schematic of the full mechanochemical patterning system. (B) Stability diagram of the homogeneous state in the plane of hydrodynamic length $\\lambda$ and active tension\u00a0measure $\\sigma\u00af$ (see Appendix). The homogeneous state is unstable within the red region. Blue dot represents the parameter values of the non-RNAi C. elegans cortex; error bars denote 95% confidence intervals. (C) Stability diagram for a partial model without NMY-2 recruitment by RhoA; inset: corresponding schematic. The homogeneous state is unstable within the blue region. (D) Dispersion relations of the full mechanochemical patterning system with (red) and without (blue) RhoA mediated NMY-2 recruitment. Lighter shared areas represent 95% confidence intervals. (E) let-502 RNAi suppresses RhoA mediated recruitment of NMY-2. (F) COMBI diagram for let-502 RNAi (30 hr), N\u00a0=\u00a012 embryos. Thin solid magenta (NMY-2) and green (RhoA) lines; numerically determined nullclines. Thick solid dashed lines, linearized nullclines. Light dashed lines, linearized nullclines for the non-RNAi condition (Figure 1H) for comparison. (G) Dispersion relation for let-502 RNAi, lighter blue area indicates the 95% confidence interval. (H) NMY-2 distribution under let-502 RNAi. Scale bar; $5\u00a0\\mum$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig2-figsupp1-v5.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dispersion relations for measured diffusion coefficients (blue) and for a ten-fold increase (red) and a ten-fold decrease (green).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig2-figsupp2-v5.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Stability of the homogeneous state with a linear form of $f\u2062(c_{m})=c_{m}$.(A) Stability diagram of the homogeneous state in the plane of hydrodynamic length $\\lambda$ and active tension measure $\\sigma\u00af$. The homogeneous state is unstable for the full system within the red region, and unstable for the partial system without myosin recruitment by active RhoA within the blue region. (B) Corresponding dispersion relations, shaded regions indicate 95% confidence.\n\nCOMBI determines the average changes of per area myosin concentration ($c_{m}$) and of\u00a0active RhoA concentration\u00a0($c_{r})$ due to turnover/regulation and as a function of the concentrations of both species. This provides us with information of the reaction kinetics of RhoA $(R_{r}\u2062(c_{r},c_{m}))$ and myosin $(R_{m}\u2062(c_{r},c_{m}))$ in the myosin and active RhoA concentration phase space (Figure 1G). We determined $c_{m}$ and $c_{r}$ every 5\u00a0s by spinning-disk confocal microscopy (Materials and methods). Advective fluxes account for the effects of dilution/enrichment by divergent/convergent gel flow, and these were determined by measuring the velocity field of cortical flow by particle image velocimetry (PIV), an image-based crosscorrelation analysis\u00a0(Mayer et al., 2010; Raffel et al., 2007) that quantifies the movement of interrogation areas between two sequential timelapse images (Materials and methods). The spatial resolution of the velocity field is determined by the spacing of the interrogation areas which we choose\u00a0as $1.26\u00a0\\mum$. This is sufficiently smaller than the correlation length of cortical flow (the hydrodynamic length is \u223c14\u00a0\u03bcm\u00a0[Mayer et al., 2010; Saha et al., 2016]), hence, COMBI can provide information on actomyosin homeostasis by determining the average reaction kinetics on a timescale of seconds and a length scale of microns.\n\nWe visualize the reaction terms determined by COMBI in a vector field that illustrates the average evolution of concentrations of both species (Figure 1H). This reveals interesting features, for example a trajectory that starts with high active RhoA and low myosin levels will overshoot in its level of myosin prior to approaching the single stable fixed point (thick black line in Figure 1\u2014figure supplement 2A). Key aspects of these dynamics can be captured by a nullcline analysis (Izhikevich, 2007). Reaction terms are zero on a nullcline ($R_{r}=0$ for active RhoA, Figure 1H, solid green line; and $R_{m}=0$ for myosin, Figure 1H, solid magenta line), which describes the concentration that a species would achieve when the concentration of the other species is fixed. This reveals that active RhoA recruits myosin (Figure 1H, solid magenta line)\u00a0(Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006) while RhoA activation kinetics is essentially independent of myosin levels (Figure 1H, solid green line). The full kinetic landscape can be linearized over its entire range (Figure 1H, dashed lines; Figure 1\u2014figure supplement 2B\u2013D), capturing global aspects of RhoA-based myosin recruitment. To conclude, COMBI can provide insight into the\u00a0cortical kinetics over a broad range of myosin and active RhoA concentrations.\n\nGiven our kinetic analysis, we next sought to test if the full mechanochemically coupled system is indeed unstable. We describe the actomyosin cortex as a thin film of an active gel\u00a0(Simha and Ramaswamy, 2002; Kruse et al., 2004; Ahmadi et al., 2006; Salbreux et al., 2009), with active tension generation by myosin under control of RhoA (Figure 2A; see Appendix for details). We measured the relevant material parameters of the gel in vivo directly from laser ablation experiments (hydrodynamic length: $\\lambda=14.3\u00a0\\mum$, and a conversion factor from NMY-2 intensity to active tension, $\u03b6^{\u2032}=24.9\u00a0\\mum^{2}/s$)(Saha et al., 2016). This allowed us to perform a linear stability analysis of the homogeneous state for the full model of the mechanochemical patterning system, with the above determined and linearized reaction kinetics between active RhoA and NMY-2 (Figure 1H). Figure 2B shows the corresponding stability diagram as a function of both the hydrodynamic length of the cortex $\\lambda$ and the active tension measure $\\sigma\u00af$ (see Appendix for detail). Notably, the homogeneous state, in which all concentrations are constant in space, always becomes unstable above a critical value of the active tension. Furthermore, we find that the parameter values of the C. elegans cortex are such that the system is close to the transition line between stable and unstable, but placed within the unstable regime (Figure 2B). Hence, our analysis is consistent with the actomyosin cortex in C. elegans being unstable and poised to form a spatial pattern.\n\nOur theory predicts that the contractile instability depends on the strength of positive feedback, and thus the amount of recruitment of myosin by active RhoA (Figure 2C,D). Hence, we asked if suppression of RhoA mediated recruitment of myosin in the C. elegans zygote prevents the instability and results in a homogeneous NMY-2 distribution. LET-502 is the Rho-associated protein kinase that phosphorylates the regulatory myosin light chain, MLC-4, to activate NMY-2\u00a0(Piekny and Mains, 2002). Hence, reducing the concentration of LET-502 by RNAi should suppress RhoA mediated recruitment of myosin to the cortex. Indeed, COMBI analysis of let-502 RNAi embryos (30 hr) revealed that RhoA mediated recruitment of NMY-2 to the cortex is reduced, since the myosin nullcline displays a significantly decreased slope as compared to the non-RNAi condition (Figure 2E,F; see Table 1). Using the non-RNAi values of \u03bb and \u03b6\u2032 and the linearized reaction kinetics between active RhoA and NMY-2 measured by COMBI in let-502 RNAi (dark dashed lines in Figure 2F), we find that the cortex is predicted to be stable because all eigenvalues are negative (Figure 2G, compare to D; see Appendix for detail). Consistent with this prediction, we observed that let-502 RNAi embryos display a homogeneous NMY-2 distribution without pulsatory myosin foci (Figure 2H, compare to Figure 1A; Video 2). We conclude that, consistent with COMBI and theory, the actomyosin cortex can be brought into a stable regime by reducing positive feedback via suppressing myosin recruitment by active RhoA.\n\n**Table 1.**\n Parameter values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters*,\u2020</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Determined in this study</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kinetic parameter for non RNAi</td>\n    </tr>\n    <tr>\n      <td>3.96\u00b10.21\u2062[10-2/s]</td>\n      <td>konr</td>\n    </tr>\n    <tr>\n      <td>4.54\u00b10.244\u2062[10-2/s]</td>\n      <td>koffr</td>\n    </tr>\n    <tr>\n      <td>0.0576\u00b10.0934\u2062[10-2/s]</td>\n      <td>konmr</td>\n    </tr>\n    <tr>\n      <td>0.126\u00b10.389\u2062[10-2/s]</td>\n      <td>konm</td>\n    </tr>\n    <tr>\n      <td>9.94\u00b10.435\u2062[10-2/s]</td>\n      <td>konrm</td>\n    </tr>\n    <tr>\n      <td>10.1\u00b10.269\u2062[10-2/s]</td>\n      <td>koffm</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kinetic parameter for let-502 RNAi</td>\n    </tr>\n    <tr>\n      <td>2.87\u00b10.105\u2062[10-2/s]</td>\n      <td>konr</td>\n    </tr>\n    <tr>\n      <td>4.39\u00b10.0979\u2062[10-2/s]</td>\n      <td>koffr</td>\n    </tr>\n    <tr>\n      <td>0.178\u00b10.178\u2062[10-2/s]</td>\n      <td>konmr</td>\n    </tr>\n    <tr>\n      <td>3.56\u00b10.165\u2062[10-2/s]</td>\n      <td>konm</td>\n    </tr>\n    <tr>\n      <td>1.81\u00b10.0938\u2062[10-2/s]</td>\n      <td>konrm</td>\n    </tr>\n    <tr>\n      <td>7.49\u00b10.106\u2062[10-2/s]</td>\n      <td>koffm</td>\n    </tr>\n    <tr>\n      <td>0.01\u2062[\u03bc\u2062m2/s]</td>\n      <td>Dr,Dm</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Determined in Saha et al.,</td>\n    </tr>\n    <tr>\n      <td>14.3\u00b12.94\u2062[\u03bc\u2062m]</td>\n      <td>\u03bb</td>\n    </tr>\n    <tr>\n      <td>24.8\u00b18.62\u2062[\u03bc\u2062m2/s]</td>\n      <td>\u03b6/\u03b3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Parameter values for complex Swift-Hohenberg equation</td>\n    </tr>\n    <tr>\n      <td>0.25</td>\n      <td>a</td>\n    </tr>\n    <tr>\n      <td>0.0000490</td>\n      <td>b</td>\n    </tr>\n    <tr>\n      <td>1.00+0.2\u2062i</td>\n      <td>d1</td>\n    </tr>\n    <tr>\n      <td>0.0297+0.00400\u2062i</td>\n      <td>d2</td>\n    </tr>\n    <tr>\n      <td>0.4</td>\n      <td>f0</td>\n    </tr>\n    <tr>\n      <td>0.00247</td>\n      <td>f1</td>\n    </tr>\n    <tr>\n      <td>10.1</td>\n      <td>q0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Parameter values are shown with 95 % confidence intervals.\u2020Active RhoA and NMY-2 densities are normalized by their average concentrations, and reported in dimensionless units of fluorescence intensities per unit area of 1\u2062[pixel]2, corresponding to 0.0110\u2062\u03bc\u2062m2._\n\n![Video 2.](https://cdn.elifesciences.org/articles/19595/elife-19595-media2.mp4.jpg)\n\n**Video 2.:** Time lapse movies show the cortical planes of the embryo that expresses NMY-2::tagRFP-T in let-502 RNAi embryo (upper) and in non-RNAi embryo (lower). Scale bar, 5 $\\mu\u2062m$.\n\nWe next asked if the patterns that are formed in the unstable regime in our theory correspond to the pattern of myosin foci observed in the embryo. Earlier work that considers a cortical gel with a diffusible activator of myosin\u00a0(Bois et al., 2011; Kumar et al., 2014) suggests that a contractile instability results in a myosin foci pattern with a spacing that is determined by the hydrodynamic length \u03bb. Indeed, a numerical solution of the full mechanochemical patterning system (Figure 2A) reveals the formation of a few dynamic contracting regions which travel and are spaced about 2\u2062\u03bb apart (Figure 3\u2014figure supplement 1, Video 3). These traveling peaks have rapid flows converging upon them (peak flow speed: 0.7\u00a0\u03bcm/s), and they persist and are not pulsatile. This pattern is different from the myosin foci pattern observed in the C. elegans zygote, which is pulsatile and exhibits a shorter spacing between foci (\u223c5\u00a0\u03bcm, compare to \u03bb=14.3\u00a0\u03bcm; see Figure 3\u2014figure supplement 1) (Munro et al., 2004; Mayer et al., 2010). This suggests that our model is missing an essential feature, which is responsible for determining the myosin pattern beyond the contractile instability.\n\n![Video 3.](https://cdn.elifesciences.org/articles/19595/elife-19595-media3.mp4.jpg)\n\n**Video 3.:** Time evolution of the myosin pattern, obtained by the numerical integration of the mechanochemical patterning system without an active RhoA pacemaking oscillator.\n\nTo identify the element missing in our model, we note that our theory predicts that reducing myosin recruitment by let-502 RNAi should cause both myosin and RhoA to be homogeneous and non-pulsatile (all eigenvalues are negative, see Figure 2G). However, imaging active RhoA under let-502 RNAi revealed that while the pulsatile myosin pattern is lost, the pulsatile active RhoA pattern is still present (Figure 3A,C; Video 4). Similarly, we find that 16 hr of RNAi of nmy-2 led to an almost complete loss of cortical myosin with, however, active RhoA still forming pulsatile foci (Figure 3B,D; Video 5). We conclude that, in contrast to the scenario in Drosophila germband extension\u00a0(Munjal et al., 2015), active RhoA in C. elegans exhibits pulsatile foci dynamics independently of NMY-2 function. Importantly, both the characteristic spacing of the myosin-independent active RhoA pattern and its characteristic timescale were similar between nmy-2 RNAi, let-502 RNAi, and the non-RNAi condition (Figure 3E,F). Given that active RhoA in the wild-type acts to recruit myosin (Figure 1H), this raises the possibility that the myosin-independent dynamic active RhoA pattern is responsible for setting the myosin spatiotemporal pattern beyond the contractile instability. We conclude that the dynamic active RhoA pattern is generated in a manner that is independent of the myosin foci pattern, possibly through an independent RhoA spatiotemporal oscillator.\n\nOscillatory activities of Rho GTPases have previously been observed\u00a0(Hwang et al., 2005; Miller and Bement, 2009; Das et al., 2012; Antoine-Bertrand et al., 2016). We next asked if this spatiotemporal oscillator requires ect-2, a RhoGEF, responsible in the early morphogenesis\u00a0(Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006). Indeed, RNAi of ect-2 leads to a complete absence of RhoA pulsation (Video 6). Furthermore, it is interesting to speculate if the myosin-independent active RhoA oscillator that we identify here is related to the RhoA/actin-based excitable oscillatory system reported previously\u00a0(Bement et al., 2015; Westendorf et al., 2013). To test if the underlying mechanism to generate myosin-independent active RhoA oscillator is shared between C. elegans single-cell embryo and Xenopus embryo, we used COMBI to investigate the effective kinetic regulation between active RhoA and actin. We used LifeAct tagRFP-T as a probe for filamentous actin in the cortex (Riedl et al., 2008; Reymann et al., 2016). We determined the kinetic diagram in the active RhoA and actin concentration phase plane, to quantitatively evaluate the rate constants in the effective kinetic equations (Figure 1\u2014figure supplement 3A). We find that the active RhoA nullcline is nearly vertical and inconsistent with actin behaving as a negative regulator of RhoA. Note that this does not exclude the general possibility of negative feedback between actin and RhoA\u00a0(Robin et al., 2016), but suggests that the C. elegans cortex is normally operating in a regime where no such negative feedback is accessed. While the detailed mechanism as well as the kinetic interactions that underlie RhoA pulsation in C. elegans remain to be determined, the RhoGEF ect-2 is involved and the system appears to undergo spatiotemporal oscillations in the\u00a0absence of negative feedback between actin and RhoA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig3-v5.jpg)\n\n**Figure 3.:** (A,B) AHPH::GFP (green) and NMY-2::RFP (magenta) in (A) a representative let-502 RNAi and (B) a representative nmy-2 RNAi embryo. (C,D) Normalized AHPH::GFP intensity change autocorrelation (C) for (A) and (D) for B, obtained within the posterior. (E,F) Characteristic (E) spacing of AHPH patterns and (F) period of AHPH intensity change in non-RNAi, nmy-2 RNAi, and let-502 RNAi embryos. Scale bars, $5\u00a0\\mum$.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig3-figsupp1-v5.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Myosin forms traveling peaks that are spaced approximately $2\u2062\\lambda$ apart.Space time plot of the myosin distribution obtained by numerical integration the full mechanochemical system (no active RhoA pacemaer). The system forms a single traveling peak with rapid flows impinging upon it.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig3-figsupp2-v5.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A,B) A representative example of a preprocessed GFP-AHPH image by (A) background subtraction and (B) contrast enhancement (contrast limited adaptive histogram equalization method, Matlab) prior to computing the spatial autocorrelation function of the intensity. Scale bar, 5 $\\mu\u2062m$. (C) Corresponding spatial autocorrelation function. (D) Corresponding radially averaged correlation function. The position of the first peak at $\u223c4\u2062\\mu\u2062m$ indicates the characteristic spacing of AHPH foci in this embryo.\n\n![Video 4.](https://cdn.elifesciences.org/articles/19595/elife-19595-media4.mp4.jpg)\n\n**Video 4.:** Time lapse movie shows the cortical plane of the embryo that expresses both AHPH::GFP (green) and NMY-2::tagRFP-T (magenta) in let-502 RNAi embryo. Scale bar, 5 $\\mu\u2062m$.\n\n![Video 5.](https://cdn.elifesciences.org/articles/19595/elife-19595-media5.mp4.jpg)\n\n**Video 5.:** Time lapse movie shows the cortical plane of the embryo that expresses both AHPH::GFP (green) and NMY-2::tagRFP-T (magenta) in nmy-2 RNAi embryo. Scale bar, 5 $\\mu\u2062m$.\n\n![Video 6.](https://cdn.elifesciences.org/articles/19595/elife-19595-media6.mp4.jpg)\n\n**Video 6.:** Time lapse movies show the cortical planes of the embryos that expresses AHPH::GFP (green) in nmy-2 RNAi embryo (upper), and in ect-2 RNAi embryo (lower). Scale bar, 5 $\\mu\u2062m$.\n\nWe next sought to test in our theory if it is possible that an active RhoA spatiotemporal oscillator sets the myosin pattern beyond the contractile instability (Figure 4A, left). To this end, we described the dynamical behavior of an active RhoA pacemaker by use of a generic model of spatiotemporal oscillating patterns, the complex Swift-Hohenberg Equation (Figure 4\u2014figure supplement 1A)\u00a0(Sakaguchi, 1997). Importantly, coupling in our model this generic spatiotemporal oscillator (30\u2062s characteristic timescale, 5\u00a0\u03bcm characteristic length scale, Figure 3E,F; see Appendix for detail) to the full mechanochemical patterning system does not destroy the active RhoA spatiotemporal oscillator pattern. Instead our model predicts that the myosin pattern (which in the absence of the generic oscillator formed a single traveling peak, see Figure 3\u2014figure supplement 1) now follows that of the active RhoA spatiotemporal oscillator (Figure 4B left). Hence, the active RhoA oscillator can determine the myosin pattern in the unstable regime (Video 7). As a consequence, controlling the myosin pattern also results in reduced cortical flow speeds (peak flow speed: 0.17\u00a0\u03bcm/s) as compared to the case where the RhoA oscillator is absent (0.7\u00a0\u03bcm/s, see above). However, we find that the ability of the RhoA oscillator to control the myosin pattern critically depends on the level of mechanochemical feedback. We demonstrate this by reducing the hydrodynamic length in our model, which increases overall flow speeds and advection, and thereby increases the mechanochemical feedback strength. We find in our model that this change destroys the pattern of the active RhoA spatiotemporal oscillator. Both the myosin and active RhoA pattern no longer form a regular spatiotemporal oscillation (Figure 4\u2014figure supplement 1, \u03bb is reduced by 5\u00a0\u03bcm to 9\u00a0\u03bcm). Instead, the system displays a dynamical state that is characterized by an irregular spatiotemporal pattern of dynamic contracting regions that move rapidly (Figure 4B right; Figure 4\u2014figure supplement 1; Video 8). In this state, the pattern of active RhoA now depends on myosin and flows and is essentially under control of the contractile instability. Finally, flow speeds are again increased and comparable to the case when the RhoA oscillator is absent (peak flow speed: 0.94\u00a0\u03bcm/s). In conclusion, theory indicates that the active RhoA oscillator can act as a pacemaker for the system, to control the contractile instability and to prevent the formation of large and irregularly moving contracting regions of myosin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig4-v5.jpg)\n\n**Figure 4.:** (A) Schematic of a mechanochemical patterning system under control of a RhoA pacemaker, with (left) normal conditions and (right) with increased mechanochemical feedback and with faster flows. (B) Numerically obtained space time plots of the myosin distribution, for normal conditions ($\\lambda=14.3\u00a0\\mum$; left) and for a weakened cortex with increased mechanochemical feedback ($\\lambda=9\u00a0\\mum$; right); see Appendix. (C) Kymographs of NMY-2 intensity under normal conditions (spd-5 RNAi; left) and under conditions of a weakened cortex (pfn-1 RNAi; right) obtained in mid-plane images and from the yellow region illustrated in the inset image on the right. (D,E) Representative cortical plane images of (D) NMY-2::tagRFP-T and (E) RhoA::GFP, dotted circles indicate foci. (F) Average cortical flow speed as a function of direction under conditions of a normal cortex (dark blue: non-RNAi; light blue: spd-5 RNAi) as well as for a weakened cortex (red: pfn-1 RNAi). (G) Radially averaged velocity orientation correlation function (Materials and methods) for the same three conditions, note that the pfn-1 RNAi embryo cannot drive coherent flow over large distances. Scale bars, $5\u00a0\\mum$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19595/elife-19595-fig4-figsupp1-v5.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Spatiotemporal plot of the active RhoA pacemaker in the absence of myosin and cortical flow, by utilizing a generic spatiotemporal oscillator for active RhoA dynamics (the complex Swift-Hohenberg equation, see Appendix). (B) Spatiotemporal plot of this active RhoA pacemaker coupled of the full mechanochemical system with $\\lambda=14.3\u00a0\\mum$, describing the normal state the cortex (non-RNAi or spd-5 RNAi). Left (green) shows the active RhoA pattern; right (magenta) shows myosin. Compared to (A), the full mechanochemical system displays a slightly longer time-scale, and the active RhoA foci appear slighlty more \u2019condensed\u2019. Note also that in our experiments, active RhoA foci appear more condensed when myosin is active (main text Figure 4E, left) as compared to when myosin function is reduced or when myosin is absent (main text Figure 3A,B). (C) Spatiotemporal plot of the active RhoA pacemaker coupled of the full mechanochemical system with reduced mechanochemical feedback and $\\lambda=9\u00a0\\mum$, mimicking pfn-1 RNAi. Now the dynamical pattern is characterized by irregular movements.\n\n![Video 7.](https://cdn.elifesciences.org/articles/19595/elife-19595-media7.mp4.jpg)\n\n**Video 7.:** Time evolution of the myosin pattern, obtained by the numerical integration of the mechanochemical patterning system, coupled with the active RhoA pacemaking oscillator.\n\n![Video 8.](https://cdn.elifesciences.org/articles/19595/elife-19595-media8.mp4.jpg)\n\n**Video 8.:** Time evolution of the myosin pattern, obtained by the numerical integration of the mechanochemical patterning system with the reduced hydrodynamic length by 5 $\\mu\u2062m$ to 9 $\\mu\u2062m$, and coupled with the active RhoA pacemaking oscillator.\n\nWe next sought to seek experimental evidence that the myosin pattern in the C. elegans zygote is under control of the RhoA pacemaker. To this end, we tested if increasing the level of mechanical feedback in C. elegans destroys the pattern of the active RhoA spatiotemporal oscillator as predicted from theory. For this we recorded space-time patterns of myosin in a midplane section under conditions of spd-5 RNAi. SPD-5 is a centriole constituent that is essential for centriole maturation (Hamill et al., 2002), and its RNAi leads to a delay of polarizing flows which gives us more time for an analysis of the pulsatory dynamics. To increase mechanochemical feedback we recorded space-time patterns of myosin under RNAi of the actin nucleator pfn-1 (Severson et al., 2002) for which the cortex is weakened and flow speeds are increased by a factor of three to five (Figure 4F) and for which the hydrodynamic length is decreased by 5\u00a0\u03bcm to 9\u00a0\u03bcm (Severson et al., 2002; Naganathan,\u00a0unpublished). For spd-5 RNAi, we observed the \u2019normal\u2019 pulsating pattern of myosin foci (Figure 4C left; Video 9 and Video 10). In contrast, for pfn-1 RNAi we observed large contracting regions of myosin that rapidly move in an irregular fashion (Figure 4C right, D right; Videos 9 and 11). Importantly, in pfn-1 RNAi active RhoA assembles in large and irregularly moving foci structures (Figure 4E right, compare to Figure 4E left and Figure 3A,C; Video 11). This suggests that the normal pattern of the active RhoA spatiotemporal oscillator is destroyed, and the distribution of active RhoA is now governed by the irregular dynamics of myosin. Note that pfn-1 RNAi does not destroy the general ability of RhoA to generate a pulsating pacemaker pattern, as revealed by double RNAi of pfn-1 and nmy-2 (Video 12). We conclude that reducing the hydrodynamic length increases mechanochemical feedback and advection. This causes the RhoA pacemaker to lose the ability to control the contractile instability. Consistent with the\u00a0predictions of our theory, this destroys the RhoA pacemaker pattern and causes the system to undergo a transition to irregular behavior with large and rapidly moving contracting regions (Figure 4C\u2013E). Interestingly, the uncontrolled gel is no longer capable to drive coherent flows of the cortex over large distances (Figure 4G), and the embryo fails to polarize (Severson et al., 2002). Taken together, our quantitative analysis is consistent with the interpretation that the spatiotemporal RhoA oscillator acts as a pacemaker in C. elegans, controlling the contractile instability of the actomyosin cortex.\n\n![Video 9.](https://cdn.elifesciences.org/articles/19595/elife-19595-media9.mp4.jpg)\n\n**Video 9.:** Time lapse movies show the midplane sections of the embryos that express NMY-2::GFP (magenta) in spd-5 RNAi embryo (upper) and pfn-1 RNAi embryo (lower). Scale bar, 5 $\\mu\u2062m$.\n\n![Video 10.](https://cdn.elifesciences.org/articles/19595/elife-19595-media10.mp4.jpg)\n\n**Video 10.:** Time lapse movies show the cortical planes of the embryo that expresses both AHPH::GFP (green) and NMY-2::tagRFP-T (magenta) in spd-5 RNAi embryo. Scale bar, 5 $\\mu\u2062m$.\n\n![Video 11.](https://cdn.elifesciences.org/articles/19595/elife-19595-media11.mp4.jpg)\n\n**Video 11.:** Time lapse movies show the cortical planes of the embryo that expresses both AHPH::GFP (green) and NMY-2::tagRFP-T (magenta) in pfn-1 RNAi embryo. Scale bar, 5 $\\mu\u2062m$.\n\n![Video 12.](https://cdn.elifesciences.org/articles/19595/elife-19595-media12.mp4.jpg)\n\n**Video 12.:** Time lapse movies show the cortical planes of the embryos that expresses AHPH::GFP (green) in nmy-2 RNAi embryo (upper), and in pfn-1;nmy-2 RNAi embryo (lower). Scale bar, 5 $\\mu\u2062m$.\n\nWe have here investigated the\u00a0mechanisms of pattern formation in an active system that combines the\u00a0contractile force generation and flow with regulation and advection. For this, we introduced the COMBI method to directly infer reaction kinetics without relying for example on photobleaching (Sprague et al., 2004). We determined the effective reaction kinetics of myosin and active RhoA in the actomyosin cortex with COMBI. This allowed us to build a quantitative model of mechanochemical patterning in the actomyosin layer. By use of linear stability analysis, we found that the actomyosin cortex is unstable and spontaneously forms a self-organized pattern. We speculate that during embryogenesis cells need high cortical contractility to drive morphological changes. This can lead them near or beyond contractile instabilities, leading to dynamics characterized by strong fluctuations and irregular behavior, possibly exhibiting active turbulence (Giomi, 2015). We suggest that such instabilities are inevitable in dynamic systems that are highly contractile. We discovered a spatiotemporal RhoA oscillator that determines the myosin pattern even beyond the contractile instability, thereby controlling the contractile instability. The independent biochemical RhoA oscillator endows the cell with the ability to use an intrinsically unstable active contractile medium for driving morphogenetic processes such as polarization. To conclude, our work paves the way for understanding pattern formation in active biological materials that utilize potentially unstable contractile processes.\n\n## Materials and methods\n\n### Worm strains, maintenance, and sample preparation\n\nThe following transgenic lines were used in this study. SWG003: nmy-2(cp8[nmy-2::GFP + unc-119(+)]) I; unc-119(ed3) III; gesIs002[Ppie-1::Lifeact::tagRFP-T::pie-1UTR + unc-119(+)], for imaging of GFP labelled NMY-2 (the images shown in Figure 1A and B and in Figure 4C). SWG012: nmy-2(ges6[nmy-2::tagRFP-T + unc-119(+)]) I; xsSi5[cb-UNC-119 (+) GFP:: ANI-1 (AH+PH)] II; unc-119(ed3) III, for imaging of tagRFP-T labelled NMY-2 and GFP labelled AHPH for a probe of active RhoA in the cortex (the images shown in Figure 1F, in Figure 2H, and in Figure 3A and B).\n\nWorm strains were maintained at 20\u00b0C, and shifted to 24\u00b0C for 24 hr before imaging. Embryos were dissected in M9 buffer and mounted onto agar pads (2% agarose in water) to squish the embryos gently. All experiments were performed at 23\u201324\u00b0C. RNA interference experiments were performed by feeding as described in Naganathan et al. (2014). Feeding times for RNAi experiments were 16\u201318 hr for nmy-2, 23\u201325 hr for spd-5, 19\u201321 hr for pfn-1, 19\u201321 hr for pfn-1;nmy-2 double knockdown and 29\u201331 hr for let-502. Feeding clones were obtained from the\u00a0Hyman lab (MPI-CBG, Dresden, Germany).\n\n### Imaging\n\nOne-cell stage embryos were observed under the inverted fluorescence microscope (Axio Observer Z1, Zeiss) using a Zeiss C-Apochromat 63$\\times$ water immersion lens, equipped with a spinning disc confocal unit (Yokogawa, CSU-X1) and AOTF laser combiner (Andor, ALC). Fluorescence images were acquired by a sCMOS camera (Hamamatsu, ORCA flash 4.0) at 5 s time intervals for non-RNAi, let-502 RNAi, nmy-2 RNAi, and pfn-1;nmy-2 RNAi embryos. For pfn-1 RNAi embryos, images were taken every 3 s. Pixel size was 0.105 $\\times$ 0.105 $\\mu\u2062m^{2}$, all devices were controlled through $\\mu-$manager(Edelstein et al., 2014). Fluorescence images of GFP and tagRFT-T labeled proteins in the embryos were excited by 488 and 561 nm lasers, respectively.\n\n### Image analysis\n\nPrior to COMBI analysis, images were filtered using the nonlocal means method (Buades et al., 2005), reducing spatially uncorrelated noise while preserving finer structures. Filtering was performed by averaging fluorescence intensities on the basis of the similarity between the fluorescence intensity profile in the interrogation area and the intensity profile in the neighboring region, i.e., a searching window. We set the size of the interrogation area and the searching window, to be $5\\times5$ pixels and $25\\times25$ pixels, corresponding to 0.525 $\\times$ 0.525 $\\mu\u2062m^{2}$ and 2.625 $\\times$ 2.625 $\\mu\u2062m^{2}$, respectively. A filtering parameter, $h$, was set to be $0.1\u00a0s$ for NMY-2 images, $0.3\u00a0s$ for AHPH images, where $s$ denotes the standard deviation of the fluorescence intensity in each image. We performed the filtering using a freely available code from MATLAB central (Fast Non-Local Means 1D, 2D Color and 3D by Kroon). Note that it is important to remove spatially uncorrelated noise prior to the computation of the spatial derivatives, since differential value is affected by spatially uncorrelated noises.\n\nTo perform COMBI, we first determined the cortical flow velocity, $\ud835\udc2f\u2062(x,y)$, by Particle Image Velocimetry (PIV) using a\u00a0freely available PIV algorithm, PIVlab 1.32 (available from http://pivlab.blogspot.de/). PIV was performed on NMY-2 images by setting the interrogation area as 24 pixels with a step of 12 pixels. Velocity vectors were then interpolated to single pixel resolution for determining $R_{r}$ and $R_{m}.$$\u2202_{t}C_{i},\u00a0C_{i}\u2207v$ and $\ud835\udc2f\u2062\\nabla\u2061C_{i}$ for both the background subtracted, active RhoA and myosin intensities (denoted by $C_{r}$ and $C_{m}$, respectively). Intensity background levels were obtained by averaging the intensity in the region outside the embryo. $R_{r}$ and $R_{m}$ were then determined for each pixel throughout the cortical plane, by the use of the mass balance equations given in Figure 1G. We obtained a kinetic diagram (Figure 1H) by averaging $R_{r}$ and $R_{m}$ in $10\\times10\u00a0\\mum^{2}$ boxes located in the anterior region. We determined average values for each embryo by averaging over the first 36 frames after the start of polarizing flow. For the non-RNAi case (Figure 1H), we report the average kinetic diagram from $N=25$ embryos, for let-502 RNAi (Figure 2F) we averaged over $N=12$ embryos. Note that the active RhoA and NMY-2 concentrations were normalized by the respective mean intensities of active RhoA and NMY-2 under non-RNAi conditions.\n\n### Correlation analysis\n\nTo characterize the myosin intensity change, $\u0394\u2062I\u2062(t)$ and the cortical flow speed $v_{r}\u2062(t)$ in a box of size $10\\times10\u00a0\\mum^{2}$ in the posterior region, we determined the spatial average over the box. We then computed the autocorrelation function\n\n$$\nC_{t}(\\tau)=\\frac{\u27e8[f(t)^{2}\u2212f\u00af][f(t+\\tau)^{2}\u2212f\u00af]\u27e9_{t}}{\\sigma_{f}^{2}},\n$$\n\nwhere $f\u2062(t)=\u0394\u2062I\u2062(t)$ or $v_{r}\u2062(t)$, $\\sigma_{f}$ denote the standard deviation of $f\u2062(t)$, and $f\u00af$ denotes the mean of $f\u2062(t)$, averaged over time $t$, where $\u27e8\u27e9_{t}$ represents an average over time. $C_{t}$ is mean-subtracted and normalized by the variance of $f\u2062(t)$. The period of oscillation was determined by the peak position in the autocorrelation function. For a precise detection of oscillatory behavior, we removed from our analysis embryos in which the second peak in the autocorrelation function of the time course was undetectable (12 out of 25 cases for non-RNAi embryos, 5 out of 12 cases in let-502 embryos, 4 out of 12 embryos for nmy-2 RNAi embryos, respectively).\n\nWe obtained the characteristic length of the spatial pattern of myosin and RhoA by detecting the location of the first peak in the radial spatial intensity correlation function. The spatial intensity autocorrelation function of intensity, $f\u2062(x,y,t)$, was obtained by\n\n$$\nC_{sp}(\u03be,\u03b7,t)=\\frac{\u27e8[f(x,y,t)^{2}\u2212f\u00af(t)][f(x+\u03be,y+\u03b7,t)^{2}\u2212f\u00af]\u27e9_{x,y}}{\\sigma_{f}^{2}},\n$$\n\nwhere $f\u00af\u2062(t)$ denotes the spatial average of $f\u2062(x,y,t)$, see Figure 3\u2014figure supplement 2C. This function was radially averaged, and the first peak was detected (Figure 3\u2014figure supplement 2D) in each time point. The radii of first peak were then averaged over time in each embryo. For the determination of the spacing in AHPH foci, the contrast of the fluorescence images was enhanced using the Contrast Limited Adaptive Histogram Equalization method using Matlab (Mathworks)(see Figure 3\u2014figure supplement 2).\n\nTo characterize the spatial coherence of the velocity field, we evaluated the spatial correlation of the normalized velocity vectors, $n(x,y,t)=v(x,y,t)/||v(x,y,t)||$. The spatial correlation function was computed by,\n\n$$\nC_{ori}(\u03be,\u03b7)=\u27e8n(x,y,t)\u22c5n(x+\u03be,y+\u03b7,t)\u27e9_{x,y,t},\n$$\n\nwhere $\u22c5$ represents scalar product, and $\u27e8\u27e9_{x,y}$ denotes the spatial average. Note that the coordinate transformation from Cartesian to polar coordinates of the orientation vectors, $\ud835\udc27\u2062(x,y,t)$, provides a simpler representation of $C_{ori}\u2062(\u03be,\u03b7)$ as,\n\n$$\nC_{ori}(\u03be,\u03b7)=\u27e8cos\u2061[\\theta(x,y,t)\u2212\\theta(x+\u03be,y+\u03b7,t)]\u27e9,\n$$\n\nwhere $\\theta\u2062(x,y,t)$ denotes the anti-clockwise angle from x-axis of $\ud835\udc27\u2062(x,y,t)$. The above expression shows that the $C_{ori}\u2062(\u03be,\u03b7)$ provides spatial correlation of the cosine similarity between $\\theta\u2062(x,y,t)$ and $\\theta\u2062(x+\u03be,y+\u03b7,t)$. Therefore, the characteristic length of the decay of $C_{ori}\u2062(\u03be,\u03b7)$ represents the loss of correlation between the directions of velocity vectors, $(\u03be,\u03b7)$ away. Larger characteristic length of the decay demonstrates the large-scale flow of the cortex.\n\nFor visualizing purpose, we transformed the coordinate system from $(\u03be,\u03b7)$ to polar $(r,\u03d5)$ and then determined the average over the angle, $\u03d5$, to plot $C_{ori}$ as a function of the radius, $r$, e.g. Figure 4G.\n",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "56bc21fa-abaf-4afe-9aea-f351332bba90",
+      "submission_id": "9dd8a2e3-8ffc-4901-b91a-ae08102e8286",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthieu Piel, Institut Curie , France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19595.027](https://doi.org/10.7554/eLife.19595.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Controlling contractile instabilities in the actomyosin cortex\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Matthieu Piel (Reviewer #2); Jean-Francois Joanny (Reviewer #3).\n\nThe reviewers have discussed the reviews (see below) with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this article, Masatochi and colleagues combine quantitative imaging, advanced image analysis and modeling to study the formation of patterns in the acto-myosin cortex of a C. elegans zygote during the initial polarization event. They show that the observed Myosin II oscillatory patterns are driven by a RhoA oscillator that does not depend on the contractility of the cortex. They propose that this RhoA 'pacemaker' driving the acto-myosin patterns could be important to prevent large contractility occurring during polarization of whole cells, to lead to an instability of the cortex that would prevent it to exert the large forces needed, or to produce a cell-scale pattern. This is a very original and interesting idea.\n\nAs can be seen in the attached reviews, the reviewers have very different points of view on this paper. While all agree that the notion that contractile oscillations in the cortex \"dampen\" large instabilities is a new idea and the data analysis and modelling are novel and well done, reviewer 1 has concerns about the biological significance and the lack of new mechanistic insight into phenomenon of study, and reviewer 2 is not convinced, with the data provided, that the parameters measured in the experiments can really be used to fit the model.\n\nThe consensus of the reviewers, after discussion of their dissenting points of view, is that the manuscript could in principle be acceptable for publication in eLife, pending major revisions specifically addressing the following major points.\n\nWith regard to biological significance and/or mechanism, the authors would either need to provide some demonstration that RhoA oscillations mediating the damping of large contractile instabilities are a general phenomenon underlying other biological processes in which contractile pulses are known to occur, or provide some mechanistic dissection of the driver of Rho pulses. Other biological systems in which contractile pulses occur include several tissues in developing Drosophila as wells as Xenopus and mouse. Demonstration of myosin II-independent Rho activity oscillations in these systems would provide evidence of generality. The candidates for mechanistic insight into the Rho pulse driver/terminator include actin (see Nat Cell Biol. 2015; 17:1471-83. Bement WM. et al), or perhaps whatever lies between actin polymerization and Rho, likely some Rho-Gef. As noted by both reviewers, imaging and analysis of actin dynamics and application of drugs or mutants that stabilize the actin and thus inhibit its assembly/disassembly cycle are needed both to determine if the oscillations are driven by the same mechanism seen in the previous publication and to also better inform the parameters used in their model. The authors alternatively could screen known RhoGef mutants to determine their involvement in driving Rho oscillations.\n\nWith regard to better delineating the model parameters, results and interpretations, the authors need to rewrite the descriptions of the approaches, results and reasoning behind the conclusions more explicitly and in more detail.\n\nReviewer 1:\n\nIn this manuscript, the authors describe the regulation of actomyosin activity in the cortex of C. elegans zygotes. They use fluorescence microscopy, advanced image analysis, and theoretical modelling to try to understand the mechanism of the localized, pulsed assembly and movement of myosin 2 foci that occurs prior to and during establishment of embryonic polarity at the 1-cell stage. In the past several years, this pulsed activity of myosin 2 has been observed during developmental morphogenesis in worms, flies, frogs, and mice.\n\nThe authors show that the pulsed assembly of myosin 2 is driven by localized cortical pulses of RhoA activity, as reported by the Bement biosensor, and that RhoA pulses occur independently of myosin 2. Using previously characterized mutants, they show that the Rho kinase let-502, the centrosome-associated protein spd-5, and the profilin pfn1 all regulate the ability of myosin 2 to pulse or form its normal pattern of pulsing, but have little effect on the pulsing of RhoA. The authors develop a theoretical model of the mechanochemical feedback between myosin 2 and RhoA based on a thin active gel, utilizing parameters for the temporal relationship between myosin 2 and RhoA pulses that they measure here, together with their previous measurements of cortical mechanical properties. This model predicts that in its wild type state, the zygote cortex verges just over the line between stability and instability. They predict that the rate of myosin 2 recruitment by RhoA and the hydrodynamic length of the cortex material determine the transition from stable and homogenous to unstable and pulsing. They show that perturbing the ability of RhoA pulses to recruit myosin 2 to the cortex with the let-502 mutant abolishes myosin 2 pulses and makes the cortex homogeneous, while perturbing the integrity of the cortex with the pfn-1 mutant induces greater instability and increases the dynamics of the myosin 2 pulses.\n\nThe phenomenon of pulsed or wave-like patterns of cortical activity has begun to be studied in depth. Previous studies by the Bement, Martin and Zallen labs have shown that Rho GTPases and their downstream effectors exhibit pulsed or wave-like dynamics in other embryonic systems, and that pulsing requires formin-mediated actin assembly, cortical integrity, and Rho-mediated myosin 2 phosphoregulation. The Bement lab has also demonstrated that Rho waves occur independent of myosin 2 activity, but their termination requires Rho-mediated actin assembly, thus placing actin at the hub of a mechanochemical negative feedback driving pulses. Whether actin assembly or some other mechanism is required for driving or terminating RhoA pulses in the C. elegans zygote was not explored in the current paper. Thus, the main contribution of the current study is the development of analysis methods and a theoretical model of cortical mechanics and dynamics that agrees with the notion that cortical integrity is a key driver of cytoskeletal pulses, and the finding from this model that the natural state of the cortical cytoskeleton in the C. elegans zygote verges on instability.\n\nIn spite of the flurry of studies of pulsed/wave-like cortical cytoskeleton behavior in the past several years, it is unclear whether the behavior is actually required for biological function, or is an epiphenomenon that occurs at a certain level of cortical contractility. The current paper suggests the latter. Indeed, they show here that C. elegans zygotes can undergo polarization in the absence of myosin 2 pulses, i.e. when the myosin 2 is homogeneously distributed in the cortex in the let-502 mutant (although this mutant has other major defects in later stages of development). In addition, work from the Martin lab shows that in embryos that express a phosphomimetic myosin (with the endogenous myosin strongly reduced but not eliminated), apical constriction during mesoderm invagination in Drosophila occurs continuously (not in pulses), and yet the cells apically constrict and internalize just fine. Thus, the lack of advance into understanding the upstream regulation of the RhoA pulses together with the questionable biological significance of the pulses, unfortunately precludes publication of the paper in eLife.\n\nReviewer 2:\n\nIn this article, Masatoshi and colleagues combine quantitative imaging, advanced image analysis and modeling to study the formation of patterns in the acto-myosin cortex of a C. elegans zygote during the initial polarization event. They show that the observed Myosin II oscillatory patterns are driven by a RhoA oscillator that does not depend on the contractility of the cortex. They propose that this RhoA 'pacemaker' driving the acto-myosin patterns could be important to prevent large contractility occurring during polarization of whole cells, to lead to an instability of the cortex that would prevent it to exert the large forces needed, or to produce a cell-scale pattern. This is a very original and interesting idea. Experimentally estimated parameters are used in the frame of a mechanochemical model of the acto-myosin cortex which predicts an instability and formation of a spatial pattern. While the initial model proposed predicts the instability, it fails to predict the correct pattern and the pulsatile behavior. This behavior can be obtained by adding a driving pulsatile pattern in the modeling, which would correspond to the observed Myosin II independent pulsatile pattern of active RhoA. The origin of this RhoA pacemaker is not addressed in the paper, neither experimentally nor theoretically. Some perturbation experiments are performed to test predictions of the driven mechanochemical model. They suggest that the RhoA pacemaker might be essential to control the instability of the actomyosin cortex and form the observed pulsatile pattern instead of large clusters and flows. The final conclusion is new and represents an important step in the understanding of how the acto-myosin cortex works and contributes to morphogenesis. The experiments are well done and analysed, and there is no issue with the modeling proposed, which builds upon a large body of theoretical work and experiments \u2013 the modeling part was reviewed by my colleague Raphael Voituriez, who found no issue in the modeling proposed and commented that the part on the driving by the RhoA pacemaker, although leading to expected results, is new and well done. As a conclusion, the article should be published and will be an important contribution to the field.\n\nI have a main concern, which might be solved mostly by a major effort in rewriting the article, if the authors are willing to do so. Indeed, my general feeling after many hours of work on this article, is that, despite all its qualities listed above, it does not convey its central message in a very convincing manner. The general feeling is that the authors tend to rush to the conclusions and leave the reader unsatisfied or feeling 'dumb' \u2013 asking the reader to be a believer rather than a critical thinker. The article is using a large number of sophisticated methods, from a number of different fields \u2013 developmental biology, imaging, physics \u2013 and if the authors want to be understood and trusted by scientists beyond the 'biophysicists of the acto-myosin cortex in C. elegans', they have to make a special effort in the presentation of their work.\n\nReviewer 3:\n\nThe manuscript of Nishikawa et al. studies both experimentally and theoreticallythe pulsatile contractile instability of the C. elegans actin cortex. The strength of this paper is the combination an original experimental technique to measure the kinetics of the actin cortex \u2013 that they call COMBI \u2013 to a theoretical analysis based on active gel theory. Each step of the theory is carefully checked experimentally and the authors get this way a very precise description of the cortical kinetics from which they describe the cortical instability. The instability is explained by an interplay between myosin molecular motors and the G protein RhoA. In order to explain the experimental results, the authors describe the dynamics of RhoA by introducing a RhoA pacemaker oscillator through the very generic Swift-Hohenberg equation.\n\nThis is a beautiful and very original manuscript and I certainly recommend its publication in eLife. The authors should consider the following comments prior to publication.\n\nThroughout the manuscript the authors switch between RhoA and Rho1,which are if I understand well the same protein. It would be clearer for the reader if they were always using the same name.\n\nThe authors introduce a pacemaker dynamics of RhoA via the very general Swift-Hohenberg equation. This explains well the experimental results. However, they do not discuss the origin of this dynamics. Is there any information on that, which proteins are involved for instance?\n\nThe model proposed is only one-dimensional, it ignores the thickness of the cortex and restricts the description to one dimension along the cortex. It would of course be useful to extend the model to two dimensions to compare the observed patterns of each components with the prediction of the theory. That probably could be done numerically and would provide a stronger test of the theory.\n\nOne of the simplifications that the model makes is that it considers only an isotropic cortex. However, the active stress is not isotropic and depend on actin polarization. Does actin polarization play any role? What would it change to the theory?\n\nOne could also worry whether the instability described in this manuscript is generic. The main ingredient is the regulation of the myosin motors by Rho A, which to my knowledge is a very general feature and the pacemaking oscillations of RhoA. Would a similar instability be observed in any cortex?\n",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6030a5f3-c538-448a-81ce-fc9a376e8c11",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C1",
+      "claim": "The actomyosin cell cortex is an active contractile material for driving cell- and tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The actomyosin cell cortex is an active contractile material for driving cell- and tissue morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the actomyosin cortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "a8110c26-37df-4932-94de-3a3cb90ac220",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C2",
+      "claim": "The cortex has a tendency to form a pattern of myosin foci, which is a signature of potentially unstable behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex has a tendency to form a pattern of myosin foci, which is a signature of potentially unstable behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observations and theoretical understanding presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "7230cec9-ad3a-4cb3-bfe7-8ac13b8e193c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C3",
+      "claim": "In the Caenorhabditis elegans zygote, feedback between active RhoA and myosin induces a contractile instability in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that in the Caenorhabditis elegans zygote, feedback between active RhoA and myosin induces a contractile instability in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by COMBI analysis and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "82da500a-bab3-48b8-b985-b55919e8ba88",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C4",
+      "claim": "An independent RhoA pacemaking oscillator controls the contractile instability, generating a pulsatory pattern of myosin foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that an independent RhoA pacemaking oscillator controls this instability, generating a pulsatory pattern of myosin foci and preventing the collapse of cortical material into a few dynamic contracting regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental observations and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e2ff5867-be59-4ad0-a3fc-071b63dfe3fb",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C5",
+      "claim": "The RhoA pacemaking oscillator prevents the collapse of cortical material into a few dynamic contracting regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that an independent RhoA pacemaking oscillator controls this instability, generating a pulsatory pattern of myosin foci and preventing the collapse of cortical material into a few dynamic contracting regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by theoretical predictions and experimental observations comparing different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "44a871c5-a82e-4c85-b409-ba2472206084",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C6",
+      "claim": "Alan Turing described in his seminal 1952 paper the ability of an initially homogeneous spatial system that contains diffusing and chemically interacting species to form a self-organized pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Alan Turing described in his seminal 1952 paper the ability of an initially homogeneous spatial system that contains diffusing and chemically interacting species to form a self-organized pattern (Turing, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Turing's 1952 work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "7f68832a-cfc0-40fd-a7d1-3109ecdb4f6d",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C7",
+      "claim": "Turing's original conjecture was that self-organized pattern formation processes contribute to the patterning of developing organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Turing's original conjecture was that such processes contribute to the patterning of developing organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Turing's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "539f355e-988f-4d2a-9600-be2543ae65bd",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C8",
+      "claim": "Many examples have been found that are compatible with Turing's idea of self-organized patterning in development.",
+      "claim_type": "EXPLICIT",
+      "source": "While many examples have been found that are compatible with this idea (Kondo and Asal, 1995; M\u00fcller et al., 2012; Sheth et al., 2012; Raspopovic et al., 2014), self-organized patterning in morphogenesis, however, is known to not only rely on biochemical regulation but also depend on cell-and tissue scale active mechanical processes (Turing, 1952; Howard et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "d2a0892f-166a-4198-b415-94ceab25b238",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C9",
+      "claim": "Self-organized patterning in morphogenesis is known to not only rely on biochemical regulation but also depend on cell- and tissue scale active mechanical processes.",
+      "claim_type": "EXPLICIT",
+      "source": "While many examples have been found that are compatible with this idea (Kondo and Asal, 1995; M\u00fcller et al., 2012; Sheth et al., 2012; Raspopovic et al., 2014), self-organized patterning in morphogenesis, however, is known to not only rely on biochemical regulation but also depend on cell-and tissue scale active mechanical processes (Turing, 1952; Howard et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "4460bbce-a776-4cd6-9ce4-e0567dc08897",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C10",
+      "claim": "Actomyosin contractility is an essential cellular mechanical process, responsible for driving many cell- and tissue scale morphogenetic events.",
+      "claim_type": "EXPLICIT",
+      "source": "Actomyosin contractility (Bray and White, 1988; Salbreux et al., 2012) is an essential cellular mechanical process, responsible for driving many cell- and tissue scale morphogenetic events (Murrell et al., 2015; Levayer and Lecuit, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "565af377-b0e3-46e9-8970-758cd4b0ac83",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C11",
+      "claim": "The cortex consists to a large extent of actin filaments and myosin motor proteins, forming a thin layer underneath the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex consists to a large extent of actin filaments and myosin motor proteins, forming a thin layer underneath the cell membrane that can be thought of as a thin film of an active gel (Salbreux et al., 2012; J\u00fclicher et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "596da2a6-f5e1-4005-8a8e-e57c43e76082",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C12",
+      "claim": "The cortex can be thought of as a thin film of an active gel.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex consists to a large extent of actin filaments and myosin motor proteins, forming a thin layer underneath the cell membrane that can be thought of as a thin film of an active gel (Salbreux et al., 2012; J\u00fclicher et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "090ac861-0341-42ec-ab1b-661c320debd1",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C13",
+      "claim": "Contractility by myosin motor proteins generates active tension in the gel.",
+      "claim_type": "EXPLICIT",
+      "source": "Contractility by myosin motor proteins generates active tension in the gel, and gradients in active tension are known to generate cortical flows of this layer (Mayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "276125cc-1f00-4f8d-90f6-4b46bebfc54d",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C14",
+      "claim": "Gradients in active tension are known to generate cortical flows of the cortical layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Contractility by myosin motor proteins generates active tension in the gel, and gradients in active tension are known to generate cortical flows of this layer (Mayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "aa41ea82-e0a1-4630-990e-b66284ffa347",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C15",
+      "claim": "Cortical flow participates in forming the cytokinetic furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical flow participates in forming the cytokinetic furrow (Bray and White, 1988; Benink et al., 2000; Yumura, 2001; Eggert et al., 2006), and drives polarization of the one-cell stage C. elegans embryo (Hird and White, 1993; Guo and Kemphues, 1996; Cheeks et al., 2004; Munro et al., 2004; Goehring et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1f6ea933-75fc-4dd0-baa1-c70c86a1731b",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C16",
+      "claim": "Cortical flow drives polarization of the one-cell stage C. elegans embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical flow participates in forming the cytokinetic furrow (Bray and White, 1988; Benink et al., 2000; Yumura, 2001; Eggert et al., 2006), and drives polarization of the one-cell stage C. elegans embryo (Hird and White, 1993; Guo and Kemphues, 1996; Cheeks et al., 2004; Munro et al., 2004; Goehring et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "81e29db0-1eb1-4eae-a45b-c5e4cc4fae64",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C17",
+      "claim": "Highly contractile cortices tend to exhibit transient accumulations of myosin that form a pulsatile pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly contractile cortices, like the one driving polarization in C. elegans, tend to exhibit transient accumulations of myosin that form a pulsatile pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observations in the manuscript and established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "130d9c6d-55ff-429d-a85b-5fcecf0e2d6a",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C18",
+      "claim": "Pulsatile actomyosin patterns are ubiquitous in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulsatile actomyosin patterns are ubiquitous in development (Munro et al., 2004; Martin et al., 2009; Solon et al., 2009; Rauzi et al., 2010; Roh-Johnson et al., 2012; Ma\u00eetre et al., 2015), and it has been suggested that they result from positive feedback and contractile instabilities (Kruse and J\u00fclicher, 2000; Bois et al., 2011; Gowrishankar et al., 2012; Kumar et al., 2014; Munjal et al., 2015; Hannezo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1f65cd2a-61f5-4efa-8afd-d5d2322f5f88",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C19",
+      "claim": "It has been suggested that pulsatile actomyosin patterns result from positive feedback and contractile instabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulsatile actomyosin patterns are ubiquitous in development (Munro et al., 2004; Martin et al., 2009; Solon et al., 2009; Rauzi et al., 2010; Roh-Johnson et al., 2012; Ma\u00eetre et al., 2015), and it has been suggested that they result from positive feedback and contractile instabilities (Kruse and J\u00fclicher, 2000; Bois et al., 2011; Gowrishankar et al., 2012; Kumar et al., 2014; Munjal et al., 2015; Hannezo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "0e370b0b-1039-4939-b139-73f34a78e299",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C20",
+      "claim": "A contractile instability causes the cortex to become inhomogeneous over space, with cortical material collapsing into contracting regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A contractile instability causes the cortex to become inhomogeneous over space, with cortical material collapsing into contracting regions (Bois et al., 2011; Alvarado et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "61f71dd5-0ac9-4707-9769-fb9254f463d9",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C21",
+      "claim": "Theoretical work has shown that contractile instabilities are inevitable when contractility is high enough.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical work has shown that contractile instabilities are inevitable when contractility is high enough (Bois et al., 2011), raising the question of how a system that is prone to such instabilities can reliably drive morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e79d4b5d-1b3e-4a17-939b-86ab853f5e8a",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C22",
+      "claim": "There exists a contractile instability in the actomyosin cortical layer of the C. elegans zygote.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that there indeed exists a contractile instability in the actomyosin cortical layer of the C. elegans zygote, and we discover that this instability is controlled by a RhoA oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data and theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "f2261a47-0f16-4541-b56d-8ddfbcc151fc",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C23",
+      "claim": "The contractile instability in the C. elegans zygote is controlled by a RhoA oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that there indeed exists a contractile instability in the actomyosin cortical layer of the C. elegans zygote, and we discover that this instability is controlled by a RhoA oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data and theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "3d3ece9e-7d5e-4681-bc7a-5ebe9798437d",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C24",
+      "claim": "Non-muscle myosin II (NMY-2) in the C. elegans zygote displays pulsatile dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate spatiotemporal patterns in the C. elegans cortex, we first sought to see whether non-muscle myosin II (NMY-2) in the C. elegans zygote displays pulsatile dynamics (Munro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e8018273-a560-4297-ba07-5681f1309e97",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C25",
+      "claim": "Both NMY-2 intensity change and cortical flow speed exhibited signs of oscillatory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both quantities exhibited signs of oscillatory behavior (Figure 1C) and an auto-correlation analysis revealed periodic changes in both quantities with a time constant of approximately 30 s (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "46644f42-b52a-4c80-83f7-2e3112525726",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C26",
+      "claim": "Auto-correlation analysis revealed periodic changes in NMY-2 intensity change and cortical flow speed with a time constant of approximately 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both quantities exhibited signs of oscillatory behavior (Figure 1C) and an auto-correlation analysis revealed periodic changes in both quantities with a time constant of approximately 30 s (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ae2aae19-c1db-4930-9c05-49c99ed3930c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C27",
+      "claim": "The myosin foci pattern in the C. elegans zygote exhibits pulsatile, oscillatory dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the myosin foci pattern in the C. elegans zygote exhibits pulsatile, oscillatory dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "bae9c0dd-8995-4969-89dd-ccfecb219da9",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C28",
+      "claim": "RhoA is a key activator of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that positive feedback mediated by RhoA (RHO-1 in C. elegans) (Bement et al., 2015), a key activator of myosin (Jenkins et al., 2006; Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006), plays a role in generating this pulsatile pattern (Munjal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "c322dadc-0332-4c1a-afc3-0e6ce08c3279",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C29",
+      "claim": "Active RhoA forms a dynamic, pulsatile pattern that is similar to that of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that active RhoA forms a dynamic, pulsatile pattern that is similar to that of myosin, with both active RhoA and myosin co-localizing in pulsatile foci (Figure 1F, Figure 1\u2014figure supplement 1, and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5d964a95-a97a-4239-aafc-ab8c7e233673",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C30",
+      "claim": "Both active RhoA and myosin co-localize in pulsatile foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that active RhoA forms a dynamic, pulsatile pattern that is similar to that of myosin, with both active RhoA and myosin co-localizing in pulsatile foci (Figure 1F, Figure 1\u2014figure supplement 1, and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "445edba1-a35a-4247-8bd7-93db9e1a860f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C31",
+      "claim": "COMBI can provide insight into the cortical kinetics over a broad range of myosin and active RhoA concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, COMBI can provide insight into the cortical kinetics over a broad range of myosin and active RhoA concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the application of the COMBI method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "9e08ee4a-09b0-487f-b82f-e4dbbb3a2471",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C32",
+      "claim": "Active RhoA recruits myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that active RhoA recruits myosin (Figure 1H, solid magenta line) (Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006) while RhoA activation kinetics is essentially independent of myosin levels (Figure 1H, solid green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by COMBI analysis shown in Figure 1H and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "97484850-e0e4-4193-92d0-9328e2912f1f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C33",
+      "claim": "RhoA activation kinetics is essentially independent of myosin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that active RhoA recruits myosin (Figure 1H, solid magenta line) (Motegi and Sugimoto, 2006; Schonegg and Hyman, 2006) while RhoA activation kinetics is essentially independent of myosin levels (Figure 1H, solid green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by COMBI analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "707c7066-c19f-4b22-898b-428c73612449",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C34",
+      "claim": "The homogeneous state of the actomyosin cortex always becomes unstable above a critical value of the active tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the homogeneous state, in which all concentrations are constant in space, always becomes unstable above a critical value of the active tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from linear stability analysis of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e80755dc-035b-4359-b2d0-7be584bfb1c3",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C35",
+      "claim": "The parameter values of the C. elegans cortex are such that the system is close to the transition line between stable and unstable, but placed within the unstable regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that the parameter values of the C. elegans cortex are such that the system is close to the transition line between stable and unstable, but placed within the unstable regime (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the stability diagram shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "edd0d9ca-e949-4735-8353-6216f9fd6519",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C36",
+      "claim": "The analysis is consistent with the actomyosin cortex in C. elegans being unstable and poised to form a spatial pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our analysis is consistent with the actomyosin cortex in C. elegans being unstable and poised to form a spatial pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis and experimental measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "2eb95e78-cb56-48bb-a391-eb4995a3f3a1",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C37",
+      "claim": "The contractile instability depends on the strength of positive feedback, and thus the amount of recruitment of myosin by active RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory predicts that the contractile instability depends on the strength of positive feedback, and thus the amount of recruitment of myosin by active RhoA (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the theoretical model shown in Figure 2C and D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5dd7eb20-c1fd-46ec-8556-3abb86c6c6a3",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C38",
+      "claim": "LET-502 is the Rho-associated protein kinase that phosphorylates the regulatory myosin light chain, MLC-4, to activate NMY-2.",
+      "claim_type": "EXPLICIT",
+      "source": "LET-502 is the Rho-associated protein kinase that phosphorylates the regulatory myosin light chain, MLC-4, to activate NMY-2 (Piekny and Mains, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "3ec40b38-ad34-45e5-9cb6-b6ba51f55bed",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C39",
+      "claim": "Reducing the concentration of LET-502 by RNAi should suppress RhoA mediated recruitment of myosin to the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, reducing the concentration of LET-502 by RNAi should suppress RhoA mediated recruitment of myosin to the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the known function of LET-502.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "8e2480ef-ef3a-4b80-b01e-6ec90d17f7c0",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C40",
+      "claim": "COMBI analysis of let-502 RNAi embryos revealed that RhoA mediated recruitment of NMY-2 to the cortex is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, COMBI analysis of let-502 RNAi embryos (30 hr) revealed that RhoA mediated recruitment of NMY-2 to the cortex is reduced, since the myosin nullcline displays a significantly decreased slope as compared to the non-RNAi condition (Figure 2E,F; see Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by COMBI analysis shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "10f706b5-c71f-4873-a76d-39f67f576d49",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C41",
+      "claim": "The cortex is predicted to be stable in let-502 RNAi because all eigenvalues are negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the non-RNAi values of \u03bb and \u03b6\u2032 and the linearized reaction kinetics between active RhoA and NMY-2 measured by COMBI in let-502 RNAi (dark dashed lines in Figure 2F), we find that the cortex is predicted to be stable because all eigenvalues are negative (Figure 2G, compare to D; see Appendix for detail).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from linear stability analysis shown in Figure 2G.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ee303865-e709-4842-9fee-2d0e0ba4204f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C42",
+      "claim": "let-502 RNAi embryos display a homogeneous NMY-2 distribution without pulsatory myosin foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, we observed that let-502 RNAi embryos display a homogeneous NMY-2 distribution without pulsatory myosin foci (Figure 2H, compare to Figure 1A; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2H and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "9e868b34-c101-48fb-880e-e28640b52b68",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C43",
+      "claim": "The actomyosin cortex can be brought into a stable regime by reducing positive feedback via suppressing myosin recruitment by active RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, consistent with COMBI and theory, the actomyosin cortex can be brought into a stable regime by reducing positive feedback via suppressing myosin recruitment by active RhoA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the let-502 RNAi experiments and theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ecd1aa58-2268-41e0-b8be-44c9bfed3778",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C44",
+      "claim": "A numerical solution of the full mechanochemical patterning system reveals the formation of a few dynamic contracting regions which travel and are spaced about 2\u03bb apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a numerical solution of the full mechanochemical patterning system (Figure 2A) reveals the formation of a few dynamic contracting regions which travel and are spaced about 2\u2062\u03bb apart (Figure 3\u2014figure supplement 1, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulations shown in Figure 3\u2014figure supplement 1 and Video 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "b0cfa943-0e9c-4683-b66b-1c286cd05ed4",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C45",
+      "claim": "The traveling peaks in the numerical solution have rapid flows converging upon them with peak flow speed of 0.7 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "These traveling peaks have rapid flows converging upon them (peak flow speed: 0.7 \u03bcm/s), and they persist and are not pulsatile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "54778a56-531b-4897-958d-19e6ca9404ed",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C46",
+      "claim": "The traveling peaks in the numerical solution persist and are not pulsatile.",
+      "claim_type": "EXPLICIT",
+      "source": "These traveling peaks have rapid flows converging upon them (peak flow speed: 0.7 \u03bcm/s), and they persist and are not pulsatile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "71fbe83b-5e7d-4404-a1c5-61a4a3047c51",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C47",
+      "claim": "The pattern from the numerical solution is different from the myosin foci pattern observed in the C. elegans zygote, which is pulsatile and exhibits a shorter spacing between foci.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is different from the myosin foci pattern observed in the C. elegans zygote, which is pulsatile and exhibits a shorter spacing between foci (\u223c5 \u03bcm, compare to \u03bb=14.3 \u03bcm; see Figure 3\u2014figure supplement 1) (Munro et al., 2004; Mayer et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of simulation results with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5003f1c3-431d-4ceb-b61c-91d0840c5bb4",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C48",
+      "claim": "The model is missing an essential feature, which is responsible for determining the myosin pattern beyond the contractile instability.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that our model is missing an essential feature, which is responsible for determining the myosin pattern beyond the contractile instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the discrepancy between model predictions and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ba31c07c-c38c-4f48-98e4-2f1503cbfb1a",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C49",
+      "claim": "While the pulsatile myosin pattern is lost under let-502 RNAi, the pulsatile active RhoA pattern is still present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, imaging active RhoA under let-502 RNAi revealed that while the pulsatile myosin pattern is lost, the pulsatile active RhoA pattern is still present (Figure 3A,C; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3A, C and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "6e5c9ba8-e1d8-46e5-b46b-38ed6fbcd8df",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C50",
+      "claim": "16 hr of RNAi of nmy-2 led to an almost complete loss of cortical myosin with active RhoA still forming pulsatile foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we find that 16 hr of RNAi of nmy-2 led to an almost complete loss of cortical myosin with, however, active RhoA still forming pulsatile foci (Figure 3B,D; Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3B, D and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ff775301-5f86-4374-b5e4-c1cc239aa6bd",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C51",
+      "claim": "Active RhoA in C. elegans exhibits pulsatile foci dynamics independently of NMY-2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, in contrast to the scenario in Drosophila germband extension (Munjal et al., 2015), active RhoA in C. elegans exhibits pulsatile foci dynamics independently of NMY-2 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the nmy-2 and let-502 RNAi experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "98aa2a82-dd9a-4ba2-8955-13253819663c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C52",
+      "claim": "Both the characteristic spacing of the myosin-independent active RhoA pattern and its characteristic timescale were similar between nmy-2 RNAi, let-502 RNAi, and the non-RNAi condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both the characteristic spacing of the myosin-independent active RhoA pattern and its characteristic timescale were similar between nmy-2 RNAi, let-502 RNAi, and the non-RNAi condition (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "7b682c0b-866d-48a8-a827-b8dd83593d4c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C53",
+      "claim": "The myosin-independent dynamic active RhoA pattern is responsible for setting the myosin spatiotemporal pattern beyond the contractile instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that active RhoA in the wild-type acts to recruit myosin (Figure 1H), this raises the possibility that the myosin-independent dynamic active RhoA pattern is responsible for setting the myosin spatiotemporal pattern beyond the contractile instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "4f48301b-95a3-4bbe-a2bc-9f8172910681",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C54",
+      "claim": "The dynamic active RhoA pattern is generated in a manner that is independent of the myosin foci pattern, possibly through an independent RhoA spatiotemporal oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the dynamic active RhoA pattern is generated in a manner that is independent of the myosin foci pattern, possibly through an independent RhoA spatiotemporal oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations, with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "d0602689-0a35-418f-87fc-1adc45c253cc",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C55",
+      "claim": "Oscillatory activities of Rho GTPases have previously been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillatory activities of Rho GTPases have previously been observed (Hwang et al., 2005; Miller and Bement, 2009; Das et al., 2012; Antoine-Bertrand et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "f25aa1ca-6ed3-4699-b528-76abce7b8e9f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C56",
+      "claim": "RNAi of ect-2 leads to a complete absence of RhoA pulsation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAi of ect-2 leads to a complete absence of RhoA pulsation (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "a128c293-2ed3-4c4b-9d33-7da9c763dcd6",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C57",
+      "claim": "The active RhoA nullcline is nearly vertical and inconsistent with actin behaving as a negative regulator of RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the active RhoA nullcline is nearly vertical and inconsistent with actin behaving as a negative regulator of RhoA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by COMBI analysis shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "6aa91ceb-0bc5-42e2-a2de-83d2529529f7",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C58",
+      "claim": "The C. elegans cortex is normally operating in a regime where no negative feedback between actin and RhoA is accessed.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this does not exclude the general possibility of negative feedback between actin and RhoA (Robin et al., 2016), but suggests that the C. elegans cortex is normally operating in a regime where no such negative feedback is accessed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the COMBI analysis of actin and RhoA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1e90a84e-b32d-4dc5-93a9-62fc902cb6e7",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C59",
+      "claim": "The RhoGEF ect-2 is involved in RhoA pulsation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed mechanism as well as the kinetic interactions that underlie RhoA pulsation in C. elegans remain to be determined, the RhoGEF ect-2 is involved and the system appears to undergo spatiotemporal oscillations in the absence of negative feedback between actin and RhoA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ect-2 RNAi experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "3ce24813-59d4-465c-9cc4-27836f5fd414",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C60",
+      "claim": "The system appears to undergo spatiotemporal oscillations in the absence of negative feedback between actin and RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed mechanism as well as the kinetic interactions that underlie RhoA pulsation in C. elegans remain to be determined, the RhoGEF ect-2 is involved and the system appears to undergo spatiotemporal oscillations in the absence of negative feedback between actin and RhoA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "22cb6696-4fee-4edf-9ae4-7bd58ecf8366",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C61",
+      "claim": "Coupling the generic spatiotemporal oscillator to the full mechanochemical patterning system does not destroy the active RhoA spatiotemporal oscillator pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, coupling in our model this generic spatiotemporal oscillator (30\u2062s characteristic timescale, 5 \u03bcm characteristic length scale, Figure 3E,F; see Appendix for detail) to the full mechanochemical patterning system does not destroy the active RhoA spatiotemporal oscillator pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations of the coupled model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "cbbdabe6-7b66-4a23-8f1e-1594765d1115",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C62",
+      "claim": "The model predicts that the myosin pattern follows that of the active RhoA spatiotemporal oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead our model predicts that the myosin pattern (which in the absence of the generic oscillator formed a single traveling peak, see Figure 3\u2014figure supplement 1) now follows that of the active RhoA spatiotemporal oscillator (Figure 4B left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the coupled model shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "3bfbd712-fc49-4e5c-8e31-981e3940924b",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C63",
+      "claim": "The active RhoA oscillator can determine the myosin pattern in the unstable regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the active RhoA oscillator can determine the myosin pattern in the unstable regime (Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the numerical simulations shown in Video 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "f3de43eb-6563-429f-a227-07b7508129f0",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C64",
+      "claim": "Controlling the myosin pattern results in reduced cortical flow speeds (peak flow speed: 0.17 \u03bcm/s) as compared to the case where the RhoA oscillator is absent (0.7 \u03bcm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, controlling the myosin pattern also results in reduced cortical flow speeds (peak flow speed: 0.17 \u03bcm/s) as compared to the case where the RhoA oscillator is absent (0.7 \u03bcm/s, see above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "b9fe32cd-43f2-4fde-b37a-78ac04f296a4",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C65",
+      "claim": "The ability of the RhoA oscillator to control the myosin pattern critically depends on the level of mechanochemical feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that the ability of the RhoA oscillator to control the myosin pattern critically depends on the level of mechanochemical feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from numerical simulations with varying parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "f0543dea-94ba-4468-8a52-0627625b5cd9",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C66",
+      "claim": "Reducing the hydrodynamic length in the model increases overall flow speeds and advection, and thereby increases the mechanochemical feedback strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate this by reducing the hydrodynamic length in our model, which increases overall flow speeds and advection, and thereby increases the mechanochemical feedback strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the theoretical understanding of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1bea99d6-6e7d-4421-8e93-09f63f66b8a5",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C67",
+      "claim": "Reducing the hydrodynamic length by 5 \u03bcm to 9 \u03bcm destroys the pattern of the active RhoA spatiotemporal oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "We find in our model that this change destroys the pattern of the active RhoA spatiotemporal oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations with reduced hydrodynamic length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "139c2f93-6a53-429b-acd7-cc80884c4735",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C68",
+      "claim": "With reduced hydrodynamic length, both the myosin and active RhoA pattern no longer form a regular spatiotemporal oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the myosin and active RhoA pattern no longer form a regular spatiotemporal oscillation (Figure 4\u2014figure supplement 1, \u03bb is reduced by 5 \u03bcm to 9 \u03bcm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from numerical simulations shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ee265e4b-1d54-483a-9aa6-2e34b4dd8f7f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C69",
+      "claim": "With reduced hydrodynamic length, the system displays a dynamical state characterized by an irregular spatiotemporal pattern of dynamic contracting regions that move rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the system displays a dynamical state that is characterized by an irregular spatiotemporal pattern of dynamic contracting regions that move rapidly (Figure 4B right; Figure 4\u2014figure supplement 1; Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from numerical simulations shown in Figure 4B and Video 8.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "093300b2-5f60-4bda-a412-4c4b8b9398f0",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C70",
+      "claim": "In the state with reduced hydrodynamic length, the pattern of active RhoA now depends on myosin and flows and is essentially under control of the contractile instability.",
+      "claim_type": "EXPLICIT",
+      "source": "In this state, the pattern of active RhoA now depends on myosin and flows and is essentially under control of the contractile instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the numerical simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "2514d0d0-b30c-439a-8c50-a4032eb8ddd6",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C71",
+      "claim": "With reduced hydrodynamic length, flow speeds are again increased and comparable to the case when the RhoA oscillator is absent (peak flow speed: 0.94 \u03bcm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, flow speeds are again increased and comparable to the case when the RhoA oscillator is absent (peak flow speed: 0.94 \u03bcm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from numerical simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "6388badb-61a2-4e13-a086-453e0be724b6",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C72",
+      "claim": "Theory indicates that the active RhoA oscillator can act as a pacemaker for the system, to control the contractile instability and to prevent the formation of large and irregularly moving contracting regions of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, theory indicates that the active RhoA oscillator can act as a pacemaker for the system, to control the contractile instability and to prevent the formation of large and irregularly moving contracting regions of myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis and numerical simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e3da5026-7e60-4cf0-b000-6009f3c606bc",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C73",
+      "claim": "For spd-5 RNAi, the 'normal' pulsating pattern of myosin foci was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For spd-5 RNAi, we observed the 'normal' pulsating pattern of myosin foci (Figure 4C left; Video 9 and Video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4C and Videos 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "bbe8a92f-48c2-4110-8ea6-2d830f01cd63",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C74",
+      "claim": "For pfn-1 RNAi, large contracting regions of myosin that rapidly move in an irregular fashion were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for pfn-1 RNAi we observed large contracting regions of myosin that rapidly move in an irregular fashion (Figure 4C right, D right; Videos 9 and 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4C, D and Videos 9 and 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1ee08844-277a-4c9c-8540-c34488391767",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C75",
+      "claim": "In pfn-1 RNAi, active RhoA assembles in large and irregularly moving foci structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in pfn-1 RNAi active RhoA assembles in large and irregularly moving foci structures (Figure 4E right, compare to Figure 4E left and Figure 3A,C; Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4E and Video 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "3103400c-a1d5-404c-b7ad-62f506ef86f5",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C76",
+      "claim": "The normal pattern of the active RhoA spatiotemporal oscillator is destroyed in pfn-1 RNAi, and the distribution of active RhoA is now governed by the irregular dynamics of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the normal pattern of the active RhoA spatiotemporal oscillator is destroyed, and the distribution of active RhoA is now governed by the irregular dynamics of myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pfn-1 RNAi imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "475a26d5-e810-418e-8a7d-7c1510c26b88",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C77",
+      "claim": "pfn-1 RNAi does not destroy the general ability of RhoA to generate a pulsating pacemaker pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that pfn-1 RNAi does not destroy the general ability of RhoA to generate a pulsating pacemaker pattern, as revealed by double RNAi of pfn-1 and nmy-2 (Video 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Video 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "a2c6e6a4-5dad-4891-97dc-48c5175b4094",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C78",
+      "claim": "Reducing the hydrodynamic length increases mechanochemical feedback and advection, causing the RhoA pacemaker to lose the ability to control the contractile instability.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that reducing the hydrodynamic length increases mechanochemical feedback and advection. This causes the RhoA pacemaker to lose the ability to control the contractile instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pfn-1 RNAi experiments and comparison with theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "770a78ff-5fce-4bd3-9e31-b44546d2f26a",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C79",
+      "claim": "Loss of RhoA pacemaker control destroys the RhoA pacemaker pattern and causes the system to undergo a transition to irregular behavior with large and rapidly moving contracting regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the predictions of our theory, this destroys the RhoA pacemaker pattern and causes the system to undergo a transition to irregular behavior with large and rapidly moving contracting regions (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the pfn-1 RNAi experiments and comparison with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "699be3dc-6210-422a-9e7a-29749ad345bf",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C80",
+      "claim": "The uncontrolled gel is no longer capable to drive coherent flows of the cortex over large distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the uncontrolled gel is no longer capable to drive coherent flows of the cortex over large distances (Figure 4G), and the embryo fails to polarize (Severson et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow analysis shown in Figure 4G and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "655d83f1-97bb-45da-b6e6-dba003c7363a",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C81",
+      "claim": "The embryo fails to polarize under pfn-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the uncontrolled gel is no longer capable to drive coherent flows of the cortex over large distances (Figure 4G), and the embryo fails to polarize (Severson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "d5863a1b-2a82-418e-9166-4778a67de375",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C82",
+      "claim": "The quantitative analysis is consistent with the interpretation that the spatiotemporal RhoA oscillator acts as a pacemaker in C. elegans, controlling the contractile instability of the actomyosin cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our quantitative analysis is consistent with the interpretation that the spatiotemporal RhoA oscillator acts as a pacemaker in C. elegans, controlling the contractile instability of the actomyosin cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental and theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "34fd8759-aec7-442e-88e1-15f1b424a324",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C83",
+      "claim": "COMBI is a method to directly infer reaction kinetics without relying on photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "We have here investigated the mechanisms of pattern formation in an active system that combines the contractile force generation and flow with regulation and advection. For this, we introduced the COMBI method to directly infer reaction kinetics without relying for example on photobleaching (Sprague et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the COMBI method developed in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e7c84989-2888-4abb-9082-fe58d8392ee2",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C84",
+      "claim": "COMBI was used to determine the effective reaction kinetics of myosin and active RhoA in the actomyosin cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the effective reaction kinetics of myosin and active RhoA in the actomyosin cortex with COMBI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of COMBI in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "9eee9a8c-8b18-44a2-8b95-52e0b1a59fed",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C85",
+      "claim": "COMBI allowed building a quantitative model of mechanochemical patterning in the actomyosin layer.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to build a quantitative model of mechanochemical patterning in the actomyosin layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how COMBI data was used to construct the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e9fdcb3f-ebe6-4947-9ac3-214fd4b2a548",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C86",
+      "claim": "By use of linear stability analysis, the actomyosin cortex was found to be unstable and spontaneously forms a self-organized pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "By use of linear stability analysis, we found that the actomyosin cortex is unstable and spontaneously forms a self-organized pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5c0d20b0-a367-43c4-916e-20d2e3696233",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C87",
+      "claim": "During embryogenesis cells need high cortical contractility to drive morphological changes, which can lead them near or beyond contractile instabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that during embryogenesis cells need high cortical contractility to drive morphological changes. This can lead them near or beyond contractile instabilities, leading to dynamics characterized by strong fluctuations and irregular behavior, possibly exhibiting active turbulence (Giomi, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "54b751f2-e667-415e-bda0-86b06bfa036f",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C88",
+      "claim": "High cortical contractility can lead to dynamics characterized by strong fluctuations and irregular behavior, possibly exhibiting active turbulence.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that during embryogenesis cells need high cortical contractility to drive morphological changes. This can lead them near or beyond contractile instabilities, leading to dynamics characterized by strong fluctuations and irregular behavior, possibly exhibiting active turbulence (Giomi, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to relevant theoretical work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5dff20c4-c724-452a-a42c-e41b4c78dc34",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C89",
+      "claim": "Such instabilities are inevitable in dynamic systems that are highly contractile.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that such instabilities are inevitable in dynamic systems that are highly contractile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the theoretical understanding developed in the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "029e9998-7776-46a7-b237-805730408464",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C90",
+      "claim": "A spatiotemporal RhoA oscillator was discovered that determines the myosin pattern even beyond the contractile instability, thereby controlling the contractile instability.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered a spatiotemporal RhoA oscillator that determines the myosin pattern even beyond the contractile instability, thereby controlling the contractile instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "9278a4fd-5fcb-4b77-abc3-7706897febf3",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C91",
+      "claim": "The independent biochemical RhoA oscillator endows the cell with the ability to use an intrinsically unstable active contractile medium for driving morphogenetic processes such as polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The independent biochemical RhoA oscillator endows the cell with the ability to use an intrinsically unstable active contractile medium for driving morphogenetic processes such as polarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "7c5930e9-82ca-4597-84b6-79cf6176ced0",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C92",
+      "claim": "This work paves the way for understanding pattern formation in active biological materials that utilize potentially unstable contractile processes.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, our work paves the way for understanding pattern formation in active biological materials that utilize potentially unstable contractile processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "b21050f8-999f-4d32-a8bc-8b64dd5d10d4",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C95",
+      "claim": "The myosin foci pattern exhibits a spacing of approximately 5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is different from the myosin foci pattern observed in the C. elegans zygote, which is pulsatile and exhibits a shorter spacing between foci (\u223c5 \u03bcm, compare to \u03bb=14.3 \u03bcm; see Figure 3\u2014figure supplement 1) (Munro et al., 2004; Mayer et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured characteristic from experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "b9a5df1e-8886-4b39-997a-398ee947a86d",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C96",
+      "claim": "For pfn-1 RNAi, the cortex is weakened and flow speeds are increased by a factor of three to five.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase mechanochemical feedback we recorded space-time patterns of myosin under RNAi of the actin nucleator pfn-1 (Severson et al., 2002) for which the cortex is weakened and flow speeds are increased by a factor of three to five (Figure 4F) and for which the hydrodynamic length is decreased by 5 \u03bcm to 9 \u03bcm (Severson et al., 2002; Naganathan, unpublished).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 4F and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e61c2d6c-01cd-49b4-b7de-caea152221bd",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C97",
+      "claim": "For pfn-1 RNAi, the hydrodynamic length is decreased by 5 \u03bcm to 9 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase mechanochemical feedback we recorded space-time patterns of myosin under RNAi of the actin nucleator pfn-1 (Severson et al., 2002) for which the cortex is weakened and flow speeds are increased by a factor of three to five (Figure 4F) and for which the hydrodynamic length is decreased by 5 \u03bcm to 9 \u03bcm (Severson et al., 2002; Naganathan, unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and unpublished data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "661d672c-da7d-472e-a427-04132f616718",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C98",
+      "claim": "SPD-5 is a centriole constituent that is essential for centriole maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "SPD-5 is a centriole constituent that is essential for centriole maturation (Hamill et al., 2002), and its RNAi leads to a delay of polarizing flows which gives us more time for an analysis of the pulsatory dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "1062dca3-1db0-4483-a3d0-937dc9c9069d",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "claim_id": "C99",
+      "claim": "RNAi of SPD-5 leads to a delay of polarizing flows.",
+      "claim_type": "EXPLICIT",
+      "source": "SPD-5 is a centriole constituent that is essential for centriole maturation (Hamill et al., 2002), and its RNAi leads to a delay of polarizing flows which gives us more time for an analysis of the pulsatory dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8217bd96-9db9-4912-aa62-4b9cf94376b9",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NMY-2 in the C. elegans zygote displays pulsatile, oscillatory dynamics with a characteristic period of approximately 30 seconds. Both myosin intensity changes and cortical flow speed exhibit periodic oscillatory behavior as revealed by autocorrelation analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are well-supported by experimental data shown in Figure 1A-E. The autocorrelation analysis provides quantitative evidence for the ~30s periodicity, and the oscillatory behavior is clearly demonstrated in the time-course data. The methodology is appropriate and the conclusion is directly supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "140312e6-eee9-48c6-a860-ab9aa0168730",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Active RhoA forms a dynamic, pulsatile pattern similar to myosin, with both proteins co-localizing in pulsatile foci in the C. elegans cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by imaging data in Figure 1F and supplementary figures showing co-localization of AHPH (active RhoA probe) and NMY-2. The spatial and temporal correlation between the two proteins is demonstrated through imaging, though quantitative co-localization metrics would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5e800d2e-f922-471a-810b-f95027d4a6d3",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "COMBI analysis reveals that active RhoA recruits myosin to the cortex, while RhoA activation kinetics is essentially independent of myosin levels. This method provides insight into cortical kinetics over a broad range of concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by the COMBI analysis shown in Figure 1H. The nullcline analysis clearly shows RhoA-dependent myosin recruitment (magenta line with positive slope) and myosin-independent RhoA activation (nearly vertical green line). The method is novel and appropriately applied, though validation against independent measurements would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "70a85430-6369-46e4-9c1e-3b27b5bc0307",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Linear stability analysis reveals that the actomyosin cortex in C. elegans is unstable above a critical active tension value. The measured parameter values place the C. elegans cortex within the unstable regime, close to the stability transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by theoretical analysis shown in Figure 2B. The stability diagram is derived from the mechanochemical model with experimentally measured parameters. The placement of the system in the unstable regime is consistent with observed myosin foci formation. However, the analysis relies on linearization and several modeling assumptions that may not fully capture nonlinear dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Reducing RhoA-mediated myosin recruitment through let-502 RNAi suppresses the contractile instability, resulting in a homogeneous NMY-2 distribution without pulsatory foci. This demonstrates that the instability depends on the strength of positive feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 form a coherent experimental test of the theoretical prediction. COMBI analysis (Figure 2E-F) shows reduced myosin recruitment slope in let-502 RNAi, stability analysis predicts stable regime (Figure 2G), and imaging confirms homogeneous myosin distribution (Figure 2H). The experimental design appropriately tests the model prediction, though the RNAi is partial (30hr) which may complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "88541cfb-84fe-457c-af77-cdf22d8e225c",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Numerical simulations of the mechanochemical model without a RhoA oscillator predict formation of a few traveling contracting regions spaced ~2\u03bb apart with persistent, non-pulsatile dynamics. This pattern differs from the observed pulsatile myosin foci with ~5 \u03bcm spacing, suggesting the model is missing an essential feature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by numerical simulations (Figure 3\u2014figure supplement 1, Video 3) and comparison with experimental observations. The discrepancy between model predictions and experimental data is clearly identified and appropriately interpreted as indicating missing model components. This sets up the motivation for investigating the RhoA oscillator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "cb4ea066-683f-4247-ab6a-d2b530131e35",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Active RhoA exhibits pulsatile foci dynamics independently of myosin function, as demonstrated by persistent RhoA pulsation in both let-502 and nmy-2 RNAi conditions. The RhoA pattern maintains similar spacing and timescale across conditions, suggesting an independent RhoA spatiotemporal oscillator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C54 are well-supported by imaging data (Figure 3A-F, Videos 4-5) showing RhoA pulsation persists when myosin is depleted or its recruitment is blocked. Quantitative analysis (Figure 3E-F) confirms similar spatiotemporal characteristics across conditions. This is a key discovery, though the mechanism of the RhoA oscillator remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "b0648bd0-6ef6-46b7-b66d-503155ccfff7",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The RhoGEF ect-2 is required for RhoA pulsation in C. elegans, as demonstrated by complete absence of RhoA pulsation upon ect-2 RNAi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C59 are supported by imaging data (Video 6) showing loss of RhoA pulsation in ect-2 RNAi. This identifies a key molecular component of the RhoA oscillator, though the complete mechanism remains unclear. The experiment is straightforward and the conclusion is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "50d0800c-586b-4cfb-94e5-67d57f82b329",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "COMBI analysis of actin and RhoA shows a nearly vertical RhoA nullcline, indicating the C. elegans cortex operates in a regime without negative feedback between actin and RhoA. The system undergoes spatiotemporal oscillations in the absence of this negative feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C60 are supported by COMBI analysis (Figure 1\u2014figure supplement 3A). The nearly vertical nullcline indicates lack of actin-dependent RhoA regulation under normal conditions. This distinguishes the C. elegans system from other reported RhoA oscillators and is important for understanding the mechanism, though it doesn't exclude the possibility of such feedback under different conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "f97f0bfd-a308-4514-9247-e4e94a1677fa",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Theoretical modeling shows that coupling a generic RhoA spatiotemporal oscillator to the mechanochemical system allows the RhoA oscillator to determine the myosin pattern in the unstable regime, controlling the contractile instability and reducing flow speeds compared to the uncontrolled case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64, C72 are supported by numerical simulations (Figure 4B left, Video 7) using a complex Swift-Hohenberg equation to model the RhoA oscillator. The simulations show the oscillator can control the instability with appropriate parameters. However, the use of a 'generic' oscillator model rather than a mechanistic RhoA model is a limitation, and the specific parameter choices require justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Theoretical analysis predicts that reducing the hydrodynamic length (increasing mechanochemical feedback) destroys the RhoA oscillator's ability to control the myosin pattern, resulting in irregular spatiotemporal dynamics with increased flow speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 are supported by numerical simulations with reduced hydrodynamic length (Figure 4B right, Figure 4\u2014figure supplement 1, Video 8). The model predicts a transition to irregular behavior when mechanochemical feedback is too strong. This prediction is testable and sets up the experimental validation with pfn-1 RNAi.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimental manipulation of cortical mechanics through pfn-1 RNAi (which weakens the cortex and increases flow speeds 3-5 fold) results in large, irregularly moving myosin and RhoA structures, consistent with loss of pacemaker control. In contrast, spd-5 RNAi maintains normal pulsating patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79, C96-C97 are supported by imaging data (Figure 4C-E, Videos 9-11) and flow measurements (Figure 4F). The pfn-1 RNAi phenotype matches theoretical predictions for increased mechanochemical feedback. The spd-5 RNAi serves as an appropriate control. The hydrodynamic length measurement relies partly on unpublished data (Naganathan), which is a limitation. Video 12 shows RhoA can still oscillate in pfn-1;nmy-2 double RNAi, supporting the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "07fdbb86-be08-478e-aeac-f5c53c8bb075",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Under pfn-1 RNAi conditions with loss of pacemaker control, the cortex cannot drive coherent flows over large distances and the embryo fails to polarize.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by flow correlation analysis (Figure 4G) and citation to prior work on pfn-1 RNAi phenotype. The loss of long-range flow coherence is quantitatively demonstrated and connects the mechanistic findings to the biological function of polarization. The polarization failure is cited rather than directly shown, which is acceptable given it's established knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "ba78e051-cafe-48c3-aaee-b167e075d6ac",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrates that feedback between active RhoA and myosin induces a contractile instability in the C. elegans cortex, and discovers that an independent RhoA pacemaking oscillator controls this instability, generating pulsatory myosin foci and preventing collapse into irregular contracting regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C22-C23, C82, C90 represent the main conclusions of the study. These are well-supported by the combination of COMBI analysis, theoretical modeling, stability analysis, and experimental perturbations (let-502, nmy-2, pfn-1 RNAi). The integration of theory and experiment is strong, though some aspects rely on a generic oscillator model rather than a complete mechanistic understanding of RhoA dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "49c2e71c-391a-400d-a3a6-6bf4910e26fd",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The COMBI method was developed to directly infer reaction kinetics from imaging data without photobleaching, and was used to determine effective reaction kinetics of myosin and active RhoA, enabling construction of a quantitative mechanochemical model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 describe the methodological contribution. COMBI is clearly described and appropriately applied to extract kinetic information from imaging and flow data. The method accounts for advection and compression/dilution effects. However, the method assumes the system can be described by effective reaction-diffusion-advection equations and that PIV accurately captures cortical flows. Validation against independent kinetic measurements would strengthen confidence in the extracted parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "bad3685d-157e-4d62-92dc-0811d6cf81db",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Linear stability analysis of the mechanochemical model reveals that the actomyosin cortex is unstable and spontaneously forms self-organized patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is supported by the theoretical analysis presented in Figure 2B and related dispersion relations. The stability analysis is mathematically sound given the model assumptions. However, linear stability analysis only predicts the onset of instability and initial pattern wavelength, not the full nonlinear dynamics, which require numerical simulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5c26737a-2668-4476-b429-d58ffaaa0f25",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The myosin-independent dynamic active RhoA pattern is hypothesized to be responsible for setting the myosin spatiotemporal pattern beyond the contractile instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is marked as speculation in the evidence, but is actually well-supported by the subsequent theoretical and experimental results. The hypothesis is directly tested through modeling (showing RhoA oscillator can control myosin pattern) and experiment (pfn-1 RNAi disrupts this control). This should be considered a supported result rather than mere speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "e7943476-9d40-4fb2-b459-c3570a089d28",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate that cells need high cortical contractility during embryogenesis to drive morphological changes, which can lead them near or beyond contractile instabilities, and that such instabilities are inevitable in highly contractile systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 are explicitly marked as speculation. While the findings support the idea that the C. elegans cortex operates near an instability, the generalization to all embryogenesis and the claim that instabilities are 'inevitable' in highly contractile systems goes beyond what is demonstrated. These are reasonable hypotheses for future work but not established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "39725ad2-96a4-46e3-b853-0b5b8c186ecb",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The independent RhoA oscillator enables cells to use an intrinsically unstable contractile medium for morphogenesis, and this work provides a framework for understanding pattern formation in active biological materials with unstable contractile processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 represent appropriate conclusions from the work. The study demonstrates how a biochemical oscillator can control a mechanical instability to enable robust function. The broader significance for understanding active materials is justified, though the generality to other systems remains to be tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "5b78730c-4991-4d34-afae-e17f0f5cde36",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on actomyosin contractility, cortical mechanics, Turing patterns, and prior observations of pulsatile actomyosin patterns in development, establishing the context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C21, C28, C38, C55, C98 represent background knowledge and literature context. These are appropriately cited and accurately represent the state of the field. The background establishes the biological importance of actomyosin contractility, the theoretical framework of pattern formation, and prior observations of instabilities and pulsatile patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "9e1fb98e-aebb-4d2e-a0fb-629881a76be0",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The myosin foci pattern in C. elegans exhibits a characteristic spacing of approximately 5 \u03bcm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is supported by experimental measurements and comparison with the hydrodynamic length (14.3 \u03bcm). This quantitative characterization is important for comparing with model predictions and is clearly demonstrated in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    },
+    {
+      "id": "095e6be2-6707-495b-aa6f-c61008455978",
+      "content_id": "065b7e29-d7a7-4d23-93ea-20e1a4dd1225",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "RNAi of SPD-5 leads to a delay of polarizing flows, providing more time for analysis of pulsatory dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 describes a practical experimental consideration. The spd-5 RNAi is used as a control condition that maintains normal pulsatory patterns while delaying polarization. This is a minor methodological point but is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:41:28.000357Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3d3ece9e-7d5e-4681-bc7a-5ebe9798437d",
+      "result_id": "8217bd96-9db9-4912-aa62-4b9cf94376b9"
+    },
+    {
+      "claim_id": "e8018273-a560-4297-ba07-5681f1309e97",
+      "result_id": "8217bd96-9db9-4912-aa62-4b9cf94376b9"
+    },
+    {
+      "claim_id": "46644f42-b52a-4c80-83f7-2e3112525726",
+      "result_id": "8217bd96-9db9-4912-aa62-4b9cf94376b9"
+    },
+    {
+      "claim_id": "ae2aae19-c1db-4930-9c05-49c99ed3930c",
+      "result_id": "8217bd96-9db9-4912-aa62-4b9cf94376b9"
+    },
+    {
+      "claim_id": "c322dadc-0332-4c1a-afc3-0e6ce08c3279",
+      "result_id": "140312e6-eee9-48c6-a860-ab9aa0168730"
+    },
+    {
+      "claim_id": "5d964a95-a97a-4239-aafc-ab8c7e233673",
+      "result_id": "140312e6-eee9-48c6-a860-ab9aa0168730"
+    },
+    {
+      "claim_id": "9e08ee4a-09b0-487f-b82f-e4dbbb3a2471",
+      "result_id": "5e800d2e-f922-471a-810b-f95027d4a6d3"
+    },
+    {
+      "claim_id": "97484850-e0e4-4193-92d0-9328e2912f1f",
+      "result_id": "5e800d2e-f922-471a-810b-f95027d4a6d3"
+    },
+    {
+      "claim_id": "445edba1-a35a-4247-8bd7-93db9e1a860f",
+      "result_id": "5e800d2e-f922-471a-810b-f95027d4a6d3"
+    },
+    {
+      "claim_id": "707c7066-c19f-4b22-898b-428c73612449",
+      "result_id": "70a85430-6369-46e4-9c1e-3b27b5bc0307"
+    },
+    {
+      "claim_id": "e80755dc-035b-4359-b2d0-7be584bfb1c3",
+      "result_id": "70a85430-6369-46e4-9c1e-3b27b5bc0307"
+    },
+    {
+      "claim_id": "edd0d9ca-e949-4735-8353-6216f9fd6519",
+      "result_id": "70a85430-6369-46e4-9c1e-3b27b5bc0307"
+    },
+    {
+      "claim_id": "2eb95e78-cb56-48bb-a391-eb4995a3f3a1",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "5dd7eb20-c1fd-46ec-8556-3abb86c6c6a3",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "3ec40b38-ad34-45e5-9cb6-b6ba51f55bed",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "8e2480ef-ef3a-4b80-b01e-6ec90d17f7c0",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "10f706b5-c71f-4873-a76d-39f67f576d49",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "ee303865-e709-4842-9fee-2d0e0ba4204f",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "9e868b34-c101-48fb-880e-e28640b52b68",
+      "result_id": "a12349cf-cd20-43c7-a5a2-62ed066abd6c"
+    },
+    {
+      "claim_id": "ecd1aa58-2268-41e0-b8be-44c9bfed3778",
+      "result_id": "88541cfb-84fe-457c-af77-cdf22d8e225c"
+    },
+    {
+      "claim_id": "b0cfa943-0e9c-4683-b66b-1c286cd05ed4",
+      "result_id": "88541cfb-84fe-457c-af77-cdf22d8e225c"
+    },
+    {
+      "claim_id": "54778a56-531b-4897-958d-19e6ca9404ed",
+      "result_id": "88541cfb-84fe-457c-af77-cdf22d8e225c"
+    },
+    {
+      "claim_id": "71fbe83b-5e7d-4404-a1c5-61a4a3047c51",
+      "result_id": "88541cfb-84fe-457c-af77-cdf22d8e225c"
+    },
+    {
+      "claim_id": "5003f1c3-431d-4ceb-b61c-91d0840c5bb4",
+      "result_id": "88541cfb-84fe-457c-af77-cdf22d8e225c"
+    },
+    {
+      "claim_id": "ba31c07c-c38c-4f48-98e4-2f1503cbfb1a",
+      "result_id": "cb4ea066-683f-4247-ab6a-d2b530131e35"
+    },
+    {
+      "claim_id": "6e5c9ba8-e1d8-46e5-b46b-38ed6fbcd8df",
+      "result_id": "cb4ea066-683f-4247-ab6a-d2b530131e35"
+    },
+    {
+      "claim_id": "ff775301-5f86-4374-b5e4-c1cc239aa6bd",
+      "result_id": "cb4ea066-683f-4247-ab6a-d2b530131e35"
+    },
+    {
+      "claim_id": "98aa2a82-dd9a-4ba2-8955-13253819663c",
+      "result_id": "cb4ea066-683f-4247-ab6a-d2b530131e35"
+    },
+    {
+      "claim_id": "4f48301b-95a3-4bbe-a2bc-9f8172910681",
+      "result_id": "cb4ea066-683f-4247-ab6a-d2b530131e35"
+    },
+    {
+      "claim_id": "f25aa1ca-6ed3-4699-b528-76abce7b8e9f",
+      "result_id": "b0648bd0-6ef6-46b7-b66d-503155ccfff7"
+    },
+    {
+      "claim_id": "1e90a84e-b32d-4dc5-93a9-62fc902cb6e7",
+      "result_id": "b0648bd0-6ef6-46b7-b66d-503155ccfff7"
+    },
+    {
+      "claim_id": "a128c293-2ed3-4c4b-9d33-7da9c763dcd6",
+      "result_id": "50d0800c-586b-4cfb-94e5-67d57f82b329"
+    },
+    {
+      "claim_id": "6aa91ceb-0bc5-42e2-a2de-83d2529529f7",
+      "result_id": "50d0800c-586b-4cfb-94e5-67d57f82b329"
+    },
+    {
+      "claim_id": "3ce24813-59d4-465c-9cc4-27836f5fd414",
+      "result_id": "50d0800c-586b-4cfb-94e5-67d57f82b329"
+    },
+    {
+      "claim_id": "22cb6696-4fee-4edf-9ae4-7bd58ecf8366",
+      "result_id": "f97f0bfd-a308-4514-9247-e4e94a1677fa"
+    },
+    {
+      "claim_id": "cbbdabe6-7b66-4a23-8f1e-1594765d1115",
+      "result_id": "f97f0bfd-a308-4514-9247-e4e94a1677fa"
+    },
+    {
+      "claim_id": "3bfbd712-fc49-4e5c-8e31-981e3940924b",
+      "result_id": "f97f0bfd-a308-4514-9247-e4e94a1677fa"
+    },
+    {
+      "claim_id": "f3de43eb-6563-429f-a227-07b7508129f0",
+      "result_id": "f97f0bfd-a308-4514-9247-e4e94a1677fa"
+    },
+    {
+      "claim_id": "6388badb-61a2-4e13-a086-453e0be724b6",
+      "result_id": "f97f0bfd-a308-4514-9247-e4e94a1677fa"
+    },
+    {
+      "claim_id": "b9fe32cd-43f2-4fde-b37a-78ac04f296a4",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "f0543dea-94ba-4468-8a52-0627625b5cd9",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "1bea99d6-6e7d-4421-8e93-09f63f66b8a5",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "139c2f93-6a53-429b-acd7-cc80884c4735",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "ee265e4b-1d54-483a-9aa6-2e34b4dd8f7f",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "093300b2-5f60-4bda-a412-4c4b8b9398f0",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "2514d0d0-b30c-439a-8c50-a4032eb8ddd6",
+      "result_id": "ba4af0f8-f1a2-40f9-8286-2ff8a5688920"
+    },
+    {
+      "claim_id": "e3da5026-7e60-4cf0-b000-6009f3c606bc",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "bbe8a92f-48c2-4110-8ea6-2d830f01cd63",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "1ee08844-277a-4c9c-8540-c34488391767",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "3103400c-a1d5-404c-b7ad-62f506ef86f5",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "475a26d5-e810-418e-8a7d-7c1510c26b88",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "a2c6e6a4-5dad-4891-97dc-48c5175b4094",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "770a78ff-5fce-4bd3-9e31-b44546d2f26a",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "b9a5df1e-8886-4b39-997a-398ee947a86d",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "e61c2d6c-01cd-49b4-b7de-caea152221bd",
+      "result_id": "e97a6999-560f-44cd-b9a3-6a8cfacba85e"
+    },
+    {
+      "claim_id": "699be3dc-6210-422a-9e7a-29749ad345bf",
+      "result_id": "07fdbb86-be08-478e-aeac-f5c53c8bb075"
+    },
+    {
+      "claim_id": "655d83f1-97bb-45da-b6e6-dba003c7363a",
+      "result_id": "07fdbb86-be08-478e-aeac-f5c53c8bb075"
+    },
+    {
+      "claim_id": "7230cec9-ad3a-4cb3-bfe7-8ac13b8e193c",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "82da500a-bab3-48b8-b985-b55919e8ba88",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "e2ff5867-be59-4ad0-a3fc-071b63dfe3fb",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "e79d4b5d-1b3e-4a17-939b-86ab853f5e8a",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "f2261a47-0f16-4541-b56d-8ddfbcc151fc",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "d5863a1b-2a82-418e-9166-4778a67de375",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "029e9998-7776-46a7-b237-805730408464",
+      "result_id": "ba78e051-cafe-48c3-aaee-b167e075d6ac"
+    },
+    {
+      "claim_id": "34fd8759-aec7-442e-88e1-15f1b424a324",
+      "result_id": "49c2e71c-391a-400d-a3a6-6bf4910e26fd"
+    },
+    {
+      "claim_id": "e7c84989-2888-4abb-9082-fe58d8392ee2",
+      "result_id": "49c2e71c-391a-400d-a3a6-6bf4910e26fd"
+    },
+    {
+      "claim_id": "9eee9a8c-8b18-44a2-8b95-52e0b1a59fed",
+      "result_id": "49c2e71c-391a-400d-a3a6-6bf4910e26fd"
+    },
+    {
+      "claim_id": "e9fdcb3f-ebe6-4947-9ac3-214fd4b2a548",
+      "result_id": "bad3685d-157e-4d62-92dc-0811d6cf81db"
+    },
+    {
+      "claim_id": "7b682c0b-866d-48a8-a827-b8dd83593d4c",
+      "result_id": "5c26737a-2668-4476-b429-d58ffaaa0f25"
+    },
+    {
+      "claim_id": "5c0d20b0-a367-43c4-916e-20d2e3696233",
+      "result_id": "e7943476-9d40-4fb2-b459-c3570a089d28"
+    },
+    {
+      "claim_id": "54b751f2-e667-415e-bda0-86b06bfa036f",
+      "result_id": "e7943476-9d40-4fb2-b459-c3570a089d28"
+    },
+    {
+      "claim_id": "5dff20c4-c724-452a-a42c-e41b4c78dc34",
+      "result_id": "e7943476-9d40-4fb2-b459-c3570a089d28"
+    },
+    {
+      "claim_id": "9278a4fd-5fcb-4b77-abc3-7706897febf3",
+      "result_id": "39725ad2-96a4-46e3-b853-0b5b8c186ecb"
+    },
+    {
+      "claim_id": "7c5930e9-82ca-4597-84b6-79cf6176ced0",
+      "result_id": "39725ad2-96a4-46e3-b853-0b5b8c186ecb"
+    },
+    {
+      "claim_id": "6030a5f3-c538-448a-81ce-fc9a376e8c11",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "a8110c26-37df-4932-94de-3a3cb90ac220",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "44a871c5-a82e-4c85-b409-ba2472206084",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "7f68832a-cfc0-40fd-a7d1-3109ecdb4f6d",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "539f355e-988f-4d2a-9600-be2543ae65bd",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "d2a0892f-166a-4198-b415-94ceab25b238",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "4460bbce-a776-4cd6-9ce4-e0567dc08897",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "565af377-b0e3-46e9-8970-758cd4b0ac83",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "596da2a6-f5e1-4005-8a8e-e57c43e76082",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "090ac861-0341-42ec-ab1b-661c320debd1",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "276125cc-1f00-4f8d-90f6-4b46bebfc54d",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "aa41ea82-e0a1-4630-990e-b66284ffa347",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "1f6ea933-75fc-4dd0-baa1-c70c86a1731b",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "81e29db0-1eb1-4eae-a45b-c5e4cc4fae64",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "130d9c6d-55ff-429d-a85b-5fcecf0e2d6a",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "1f65cd2a-61f5-4efa-8afd-d5d2322f5f88",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "0e370b0b-1039-4939-b139-73f34a78e299",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "61f71dd5-0ac9-4707-9769-fb9254f463d9",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "bae9c0dd-8995-4969-89dd-ccfecb219da9",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "5dd7eb20-c1fd-46ec-8556-3abb86c6c6a3",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "d0602689-0a35-418f-87fc-1adc45c253cc",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "661d672c-da7d-472e-a427-04132f616718",
+      "result_id": "5b78730c-4991-4d34-afae-e17f0f5cde36"
+    },
+    {
+      "claim_id": "b21050f8-999f-4d32-a8bc-8b64dd5d10d4",
+      "result_id": "9e1fb98e-aebb-4d2e-a0fb-629881a76be0"
+    },
+    {
+      "claim_id": "1062dca3-1db0-4483-a3d0-937dc9c9069d",
+      "result_id": "095e6be2-6707-495b-aa6f-c61008455978"
+    }
+  ],
+  "comparisons": []
+}

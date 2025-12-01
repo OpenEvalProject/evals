@@ -1,0 +1,1870 @@
+{
+  "submission": {
+    "id": "948c3bac-9698-4776-9323-bbda1ebd6475",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:46:25.610322Z",
+    "updated_at": "2025-11-30T22:46:25.610322Z"
+  },
+  "content": [
+    {
+      "id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "submission_id": "948c3bac-9698-4776-9323-bbda1ebd6475",
+      "content_type": "manuscript",
+      "content_text": "# Codon optimization underpins generalist parasitism in fungi\n\n## Authors\n\n- Thomas Badet<sup>1</sup>\n- Remi Peyraud<sup>1</sup>\n- Malick Mbengue<sup>1</sup>\n- Olivier Navaud<sup>1</sup>\n- Mark Derbyshire<sup>2</sup>\n- Richard P Oliver<sup>2</sup>\n- Adelin Barbacci<sup>1</sup> ([ORCID: 0000-0003-3156-272X](https://orcid.org/0000-0003-3156-272X))\n- Sylvain Raffaele<sup>1</sup> ([ORCID: 0000-0002-2442-9632](https://orcid.org/0000-0002-2442-9632)) \u2020\n\n### Affiliations\n\n1. LIPM, Universit\u00e9 de Toulouse, INRA, CNRS Castanet-Tolosan France\n2. Centre for Crop and Disease Management, Department of Environment and Agriculture Curtin University Perth Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe range of hosts that parasites can infect is a key determinant of the emergence and spread of disease. Yet, the impact of host range variation on the evolution of parasite genomes remains unknown. Here, we show that codon optimization underlies genome adaptation in broad host range parasites. We found that the longer proteins encoded by broad host range fungi likely increase natural selection on codon optimization in these species. Accordingly, codon optimization correlates with host range across the fungal kingdom. At the species level, biased patterns of synonymous substitutions underpin increased codon optimization in a generalist but not a specialist fungal pathogen. Virulence genes were consistently enriched in highly codon-optimized genes of generalist but not specialist species. We conclude that codon optimization is related to the capacity of parasites to colonize multiple hosts. Our results link genome evolution and translational regulation to the long-term persistence of generalist parasitism.\n\n## Introduction\n\nThe host range of a parasite has a central influence on the emergence and spread of disease (Woolhouse and Gowtage-Sequeria, 2005). There is a clear demarcation between specialist parasites that can only infect one or a few closely related host species and generalists that can infect more than a hundred unrelated host species (Woolhouse et al., 2001; Barrett et al., 2009). The host range is a trait constrained by ecological and physiological factors and determined by the evolutionary history of a parasite and its potential hosts (Poulin and Keeney, 2008). Host specialization is a frequent pattern in living systems that was proposed to result from tradeoffs in performance on multiple hosts (Joshi and Thompson, 1995). At the molecular level, optimization by natural selection of parasite proteins functioning in the interaction with a given host may be detrimental to their function in another species (Dodds and Rathjen, 2010; Dong et al., 2014). Nevertheless, generalists able to thrive on a broad range of hosts are found in most parasite lineages. The molecular mechanisms associated with the evolution of generalist parasitism remain, however, elusive. Notably, the extent to which interaction with multiple hosts affects the evolution of parasite genomes remains unknown.\n\nGenomic analyses of obligate specialist parasites revealed massive losses of enzymes unnecessary for growth and reproduction on living hosts (Schirawski et al., 2010; Spanu et al., 2010). Instead, such specialists rely largely on a sets of small secreted protein (SSPs) subverting host cell function. For instance, the genome of the powdery mildew pathogen Blumeria graminis f. sp. hordei harbors 180 SSPs of about 100\u2013150 amino acids (Pedersen et al., 2012). SSPs of specialist fungi often show evidence of diversifying-selection leading to extensive changes in their protein sequence (Stukenbrock et al., 2011; Pedersen et al., 2012; Hacquard et al., 2013). By contrast, the secretion of a battery of degrading enzymes is crucial for the parasitic success of generalists (Hu et al., 2014; Kubicek et al., 2014). The genomes of generalist fungi notably contain in average\u00a0~3 times more carbohydrate activity enzymes (CAZYmes) than specialist fungi (Zhao et al., 2013). For instance, Rhizoctonia solani AG2-2IIIB contains over 1000 CAZYme genes (Wibberg et al., 2016). Protein translation is the largest consumer of energy during cellular proliferation, and because secreted proteins are not recycled like other cellular proteins, strong constraints exist to reduce the synthetic cost of secreted proteins in microbes (Smith and Chapman, 2010). Considering the distinct properties of secreted proteins in specialist and generalist parasites, the impact of protein translation efficiency on the cost of secreted protein synthesis likely differ in these organisms.\n\nThe differential use of synonymous codons in a genome, or codon usage bias, affects gene expression level, protein folding, translation efficiency and accuracy (Plotkin and Kudla, 2011). In particular, the co-evolution of codons with the genomic tRNA complement, leading to codon optimization, results from the combination of neutral processes and selection for the optimization of protein translation (Hershberg and Petrov, 2008; Shah and Gilchrist, 2011). Natural selection for the optimization of protein translation, through ribosome pausing time, translation error rates and co-translational protein folding, has been widely associated with codon usage biases (Drummond and Wilke, 2008; Tuller et al., 2010; Shah and Gilchrist, 2011). Because the probability of protein translation error increases with protein length, selection for translation accuracy can be higher in genes encoding long proteins, as was observed in E. coli (Eyre-Walker, 1996). Codon usage bias also increases with the evolutionary age of genes, the frequency of codons optimal for translation being significantly higher at codons for conserved amino acids (Marais and Duret, 2001; Prat et al., 2009). Considering that highly expressed secreted proteins are often longer and more conserved in generalist than in specialist parasites, we expect natural selection on the optimization of codons to be stronger in generalist parasites than in host specialists.\n\nThe cost of protein translation leads to a tradeoff between protein production and cell growth rate (Scott et al., 2010; Shah et al., 2013; Kafri et al., 2016). Codon optimization therefore impacts cell growth in selective environments (Botzman and Margalit, 2011; Krisko et al., 2014), and could positively impact on the performances of parasites regardless of the host they encounter. This hypothesis would be consistent with generalist lineages performing better on average on their set of available hosts than co-occurring specialist competitors to persist in the biota, as predicted by the 'jack of all trades, master of none' theoretical model (Futuyma and Moreno, 1988). Here, we have examined the strength of natural selection on the optimization of codons in parasites with contrasted host range across the fungal kingdom. Because the genomes of broad host range parasites generally encode longer proteins, an in silico model of the cell translation machinery predicts that natural selection on codon optimization should be stronger in these species. Consistent with this prediction, we found that codon optimization at the genome scale correlates with fungal parasites host range. High codon optimization and broad host ranges co-evolved multiple times independently through fungal phylogeny. To document the molecular bases of codon optimization at the species level in generalist fungi, we compared single-nucleotide polymorphism\u00a0(SNP) patterns in natural populations of a generalist and a specialist fungal parasite. We detected signatures of purifying natural selection acting on optimal codons in the generalist parasite only. Finally, we show that genes associated with virulence are better codon-optimized in generalist than in specialist parasite genomes supporting codon optimization as an adaptation to the colonization of multiple hosts. Together, our results reveal patterns of adaptive genome evolution associated with generalism that are conserved through the fungal Kingdom. Furthermore, we establish a link between translational regulation and host range variation through genomic patterns of codon optimization, contributing to our understanding of the dynamics of disease epidemics.\n\n## Results\n\n### Long proteins encoded by the genome of generalist fungi likely increase natural selection on codon optimization\n\nThe efficiency and accuracy of protein translation constrains cell growth rate and depends on sequence properties of expressed proteins (Ingolia et al., 2009; Kafri et al., 2016). To evaluate the impact of translation efficiency on cell growth during host colonization, we calculated theoretical maximal growth rates for cells of generalist and specialist fungal parasites. For this, we designed an in silico model of the cell translation machinery describing the accumulation over time of ribosomal proteins, other intracellular proteins and secreted proteins from which the maximal cell growth rate can be deduced (see \u2018Materials and methods\u2019, Figure 1\u2014source data 1). To calculate the typical protein synthesis rate, the model uses the median length of ribosomal, intracellular and secreted proteins as input. We determined these values in the complete predicted proteomes of 13 host-specialist fungi (less than four host genera) and 15 generalist fungi (over 10 host genera) all belonging to different genera and covering most major fungal clades (Figure 1A, Figure 1\u2014source data 1). In average, secreted proteins were\u00a0~14.8% longer in generalists than in specialists (365 and 318 codons respectively; Welch\u2019s t-test p<10\u221208). Intracellular proteins were also longer in average in generalists than in specialists (~10.1% longer with 381 and 346 codons respectively; Welch\u2019s t-test p<10\u221208), whereas ribosomal proteins were slightly shorter in average in generalists than in specialists (~1.2% shorter with 189 and 192 codons respectively; Welch\u2019s t-test p<10\u221204). In yeast, codon decoding rate varies from 10 to 28 codons per second, with an average of 20 codons per second (Gardin et al., 2014). We tested the impact of varying the average codon decoding rate from 10 to 28 codons per second on the maximal cell growth rate predicted by our model for generalist and specialist fungal cells (Figure 1B). Cells of specialists achieved higher maximal growth rates than cells of generalists at a given codon decoding rate. Reciprocally, cells of generalists require higher codon decoding rate to reach maximal growth rates similar to cells of specialists. For instance, in order to achieve a growth rate of 4000 cells per 24 hr, the codon decoding rate should be 21.7 codons per second in generalists but only 19.9 codons per second in specialists.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig1-v3.jpg)\n\n**Figure 1.:** (A) Distribution of length (number of codons) in the ribosomal, intracellular and predicted secreted proteomes of 13 specialist fungal parasites and 15 generalist fungal parasites. (B) Relationship between codon decoding rate (number of codons translated per second) and cell growth rate of typical specialist and generalist fungi predicted by a cellular model of protein translation. Dotted lines highlight the higher codon decoding rate required in generalist fungi compared to specialist fungi to achieve a growth rate of 4000 cells produced per day. (C) Distribution of length in the proteomes (left) and relationship between codon decoding rate and cell growth rate (right) in related specialist and generalist fungi from the Basidiomycetes, Ascomycetes and Basal Fungi. The width of boxplots is proportional to the number of values. Spe., specialist (green); Gen., generalist (brown). Welch\u2019s t-test p: *<10\u221201, **<10\u221204, ***<10\u221208.\n\nTo test the robustness of these observations across the fungal phylogeny, we compared related specialist and generalist species from three major fungal groups: Basidiomycetes, Ascomycetes and Basal Fungi (Figure 1C). In all three groups, secreted proteins were longer in average in generalist species than in specialist species. For instance, secreted proteins of the generalist Botrytis cinerea were in average\u00a0~73% longer (394 amino acids) than secreted proteins of the specialist Blumeria graminis f. sp. tritici (228 amino acids; Welch\u2019s t-test p<10\u221208). Length differences in ribosomal and other intracellular proteins were not consistent through all three clades. Overall, our cell translation machinery model showed in all three cases that generalist species require higher codon decoding rates to achieve similar growth rates as their specialist relatives.\n\nThe in silico cell model used here suggests that longer proteins, especially secreted proteins, encoded in the genome of generalist fungi limits maximal cell growth rates compared to specialist fungi. It also shows that codon optimization, leading to higher codon decoding rates, can support the secretion of more complex proteins with limited growth penalty. Although additional factors may contribute, we show that longer protein pools are sufficient to increase the constraints on codon optimization in generalist fungi. We therefore expect natural selection on the optimization of codons to be stronger in generalist parasites than in host specialists.\n\n### Codon optimization correlates with fungal parasites host range\n\nTo test this hypothesis, we analyzed patterns of codon optimization in the genomes of 36 fungal parasite species, including the 15 generalist parasites and 13 specialists analyzed previously, as well as 8 species with intermediate host range (between 4 and 10 host genera) (Table 1). For this, we first used a model that infers the degree \u2018S\u2019 of coadaptation between codon usage and the genomic tRNA complement at the whole genome scale (dos Reis et al., 2004). S values ranged from \u22120.032 (Puccinia graminis) to 0.843 (Cryptococcus neoformans), with an average of 0.374. We performed a correlation analysis and found that codon optimization at the whole genome scale increased with host range (Spearman rho\u00a0=\u00a00.82, p=7.1 10\u221210, Figure 2A). Generalist species had an average S of 0.58, whereas the average S was 0.23 for specialists. We verified the significance of the correlation between host range and genome scale codon optimization using Felsenstein\u2019s phylogenetic independent contrasts, and obtained Spearman rho of 0.6 (p=1.5 10\u221205).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig2-v3.jpg)\n\n**Figure 2.:** Genome-scale codon optimization correlates with host range in 36 parasites across the kingdom Fungi. Species considered as specialists (less than four host genera) are shown in green, species considered as generalists (over 10 host genera) are shown in brown. Error bars show 95% confidence interval, dotted line shows logarithmic regression of the data. Codon optimization calculated based on knowledge on the tRNA pool (A), on codon usage in ribosomal protein genes (B) and on self-consistent relative codon adaptation (C) correlated with host range at Spearman \u03c1\u22650.59 (p\u22642.7 10\u221205) under phylogenetic independent contrasts. (D) Codon optimization is stronger in core orthologs from generalist fungal parasites than in core orthologs from specialist fungal parasites. Left: Distribution of tRNA adaptation indices in 1620 core ortholog genes show significantly higher values in generalist fungi (**, Welch\u2019s t-test p<0.01). Right: Codon optimization calculated as the degree of coadaptation of core ortholog genes to the genomic tRNA pool is significantly higher in generalist fungi (***, Welch\u2019s t-test p<10\u221204).\n\n**Table 1.**\n List of fungal species analyzed in this work, their host range and genome-scale codon optimization values. Genome-scale codon optimization was calculated using tRNA adaptation indiced (S), codon adaptation indices (SCAI) or self-consistent normalized relative codon adaptation indices (SscnRCA).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Host range</th>\n      <th>Class*</th>\n      <th>S</th>\n      <th>SCAI</th>\n      <th>SscnRCA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cryptococcus neoformans</td>\n      <td>800</td>\n      <td>Gen.</td>\n      <td>0.843</td>\n      <td>0.870</td>\n      <td>0.860</td>\n    </tr>\n    <tr>\n      <td>Rhizoctonia solani</td>\n      <td>690</td>\n      <td>Gen.</td>\n      <td>0.432</td>\n      <td>0.624</td>\n      <td>0.583</td>\n    </tr>\n    <tr>\n      <td>Botrytis cinerea</td>\n      <td>556</td>\n      <td>Gen.</td>\n      <td>0.597</td>\n      <td>0.675</td>\n      <td>0.653</td>\n    </tr>\n    <tr>\n      <td>sclerotinia sclerotiorum</td>\n      <td>332</td>\n      <td>Gen.</td>\n      <td>0.524</td>\n      <td>0.583</td>\n      <td>0.553</td>\n    </tr>\n    <tr>\n      <td>Beauveria bassiana</td>\n      <td>269</td>\n      <td>Gen.</td>\n      <td>0.616</td>\n      <td>0.619</td>\n      <td>0.747</td>\n    </tr>\n    <tr>\n      <td>Metarhizium acridum</td>\n      <td>228</td>\n      <td>Gen.</td>\n      <td>0.647</td>\n      <td>0.595</td>\n      <td>0.712</td>\n    </tr>\n    <tr>\n      <td>Aspergillus fumigatus</td>\n      <td>175</td>\n      <td>Gen.</td>\n      <td>0.609</td>\n      <td>0.643</td>\n      <td>0.684</td>\n    </tr>\n    <tr>\n      <td>Batrachochytrium dendrobatidis</td>\n      <td>153</td>\n      <td>Gen.</td>\n      <td>0.545</td>\n      <td>0.521</td>\n      <td>0.602</td>\n    </tr>\n    <tr>\n      <td>Verticilium dahliae</td>\n      <td>78</td>\n      <td>Gen.</td>\n      <td>0.537</td>\n      <td>0.426</td>\n      <td>0.627</td>\n    </tr>\n    <tr>\n      <td>Fusarium graminearum</td>\n      <td>72</td>\n      <td>Gen.</td>\n      <td>0.788</td>\n      <td>0.818</td>\n      <td>0.819</td>\n    </tr>\n    <tr>\n      <td>Colletotrichum graminicola</td>\n      <td>59</td>\n      <td>Gen.</td>\n      <td>0.572</td>\n      <td>0.444</td>\n      <td>0.644</td>\n    </tr>\n    <tr>\n      <td>Rhizopus oryzae</td>\n      <td>28</td>\n      <td>Gen.</td>\n      <td>0.625</td>\n      <td>0.563</td>\n      <td>0.691</td>\n    </tr>\n    <tr>\n      <td>Penicillium digitatum</td>\n      <td>17</td>\n      <td>Gen.</td>\n      <td>0.545</td>\n      <td>0.602</td>\n      <td>0.630</td>\n    </tr>\n    <tr>\n      <td>Alternaria brassicicola</td>\n      <td>16</td>\n      <td>Gen.</td>\n      <td>0.400</td>\n      <td>0.592</td>\n      <td>0.628</td>\n    </tr>\n    <tr>\n      <td>Pyrenophora tritici-repentis</td>\n      <td>11</td>\n      <td>Gen.</td>\n      <td>0.419</td>\n      <td>0.569</td>\n      <td>0.570</td>\n    </tr>\n    <tr>\n      <td>Pseudogymnoascus destructans</td>\n      <td>8</td>\n      <td></td>\n      <td>0.484</td>\n      <td>0.513</td>\n      <td>0.505</td>\n    </tr>\n    <tr>\n      <td>Encephalitozoon intestinalis</td>\n      <td>7</td>\n      <td></td>\n      <td>0.313</td>\n      <td>0.558</td>\n      <td>0.528</td>\n    </tr>\n    <tr>\n      <td>Melampsora larici-populina</td>\n      <td>7</td>\n      <td></td>\n      <td>0.194</td>\n      <td>0.142</td>\n      <td>0.055</td>\n    </tr>\n    <tr>\n      <td>Stagonospora nodorum</td>\n      <td>7</td>\n      <td></td>\n      <td>0.155</td>\n      <td>0.431</td>\n      <td>0.462</td>\n    </tr>\n    <tr>\n      <td>Colletotrichum higginsianum</td>\n      <td>6</td>\n      <td></td>\n      <td>0.393</td>\n      <td>0.295</td>\n      <td>0.480</td>\n    </tr>\n    <tr>\n      <td>Sporisorium reilianum</td>\n      <td>5</td>\n      <td></td>\n      <td>0.476</td>\n      <td>0.200</td>\n      <td>0.429</td>\n    </tr>\n    <tr>\n      <td>Taphrina deformans</td>\n      <td>4</td>\n      <td></td>\n      <td>0.403</td>\n      <td>0.679</td>\n      <td>0.671</td>\n    </tr>\n    <tr>\n      <td>Magnaporthe oryzae</td>\n      <td>4</td>\n      <td></td>\n      <td>0.437</td>\n      <td>0.424</td>\n      <td>0.575</td>\n    </tr>\n    <tr>\n      <td>Puccinia graminis</td>\n      <td>2</td>\n      <td>Spe.</td>\n      <td>\u22120.032</td>\n      <td>0.344</td>\n      <td>0.249</td>\n    </tr>\n    <tr>\n      <td>Wolfiporia cocos</td>\n      <td>2</td>\n      <td>Spe.</td>\n      <td>0.217</td>\n      <td>0.266</td>\n      <td>0.316</td>\n    </tr>\n    <tr>\n      <td>Moniliophthora roreri</td>\n      <td>2</td>\n      <td>Spe.</td>\n      <td>0.406</td>\n      <td>0.530</td>\n      <td>0.551</td>\n    </tr>\n    <tr>\n      <td>Passalora fulva</td>\n      <td>2</td>\n      <td>Spe.</td>\n      <td>\u22120.011</td>\n      <td>0.513</td>\n      <td>0.514</td>\n    </tr>\n    <tr>\n      <td>Rozella allomycis</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.236</td>\n      <td>0.096</td>\n      <td>0.259</td>\n    </tr>\n    <tr>\n      <td>Nosema ceranae</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.021</td>\n      <td>\u22120.155</td>\n      <td>\u22120.085</td>\n    </tr>\n    <tr>\n      <td>Puccinia triticina</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.204</td>\n      <td>0.501</td>\n      <td>0.472</td>\n    </tr>\n    <tr>\n      <td>Dothistroma septosporum</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.211</td>\n      <td>0.447</td>\n      <td>0.354</td>\n    </tr>\n    <tr>\n      <td>Pseudocercospora fijiensis</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.227</td>\n      <td>0.495</td>\n      <td>0.490</td>\n    </tr>\n    <tr>\n      <td>Zymoseptoria tritici</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>\u22120.019</td>\n      <td>0.355</td>\n      <td>0.248</td>\n    </tr>\n    <tr>\n      <td>Blumeria graminis</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.116</td>\n      <td>\u22120.187</td>\n      <td>0.164</td>\n    </tr>\n    <tr>\n      <td>Erysiphe necator</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.174</td>\n      <td>\u22120.092</td>\n      <td>0.117</td>\n    </tr>\n    <tr>\n      <td>Ophiocordyceps unilateralis</td>\n      <td>1</td>\n      <td>Spe.</td>\n      <td>0.166</td>\n      <td>0.268</td>\n      <td>0.458</td>\n    </tr>\n    <tr>\n      <td>Gonapodya prolifera</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.115</td>\n      <td>0.311</td>\n      <td>0.363</td>\n    </tr>\n    <tr>\n      <td>Rhodotorula toruloides</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.344</td>\n      <td>0.385</td>\n      <td>0.470</td>\n    </tr>\n    <tr>\n      <td>Serpula lacrymans</td>\n      <td>0</td>\n      <td>np</td>\n      <td>\u22120.001</td>\n      <td>0.379</td>\n      <td>0.395</td>\n    </tr>\n    <tr>\n      <td>Laccaria bicolor</td>\n      <td>0</td>\n      <td>np</td>\n      <td>\u22120.026</td>\n      <td>0.237</td>\n      <td>0.155</td>\n    </tr>\n    <tr>\n      <td>Agaricus bisporus</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.361</td>\n      <td>0.432</td>\n      <td>0.400</td>\n    </tr>\n    <tr>\n      <td>Tuber melanosporum</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.230</td>\n      <td>0.319</td>\n      <td>0.349</td>\n    </tr>\n    <tr>\n      <td>Oidiodendron maius</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.147</td>\n      <td>0.442</td>\n      <td>0.388</td>\n    </tr>\n    <tr>\n      <td>Myceliophthora thermophila</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.246</td>\n      <td>0.123</td>\n      <td>0.323</td>\n    </tr>\n    <tr>\n      <td>Chaetomium globosum</td>\n      <td>0</td>\n      <td>np</td>\n      <td>0.148</td>\n      <td>0.204</td>\n      <td>0.342</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The class column indicates whether species were considered as generalist (Gen.), specialist (Spe.) or non-parasitic (np)._\n\nComparing genes codon usage with codon usage for a reference set of highly expressed genes is a classical approach for estimating codon usage bias independently of knowledge of the tRNA repertoire. We determined the codon adaptation index (CAI) (Sharp and Li, 1987) using ribosomal protein genes as a reference set. To allow comparisons of codon optimization across species, we calculated for each species the degree \u2018SCAI\u2019 of correlation between codon usage and CAI at the whole genome scale. SCAI ranged from \u22120.187 (Blumeria graminis f. sp. tritici) to 0.87 (Cryptococcus neoformans), with an average of 0.438 (Figure 2B). SCAI increased with host range (Spearman rho\u00a0=\u00a00.61, p=9.0 10\u221206 under phylogenetic independent contrasts) and generalist species had an average SCAI of 0.61, whereas the average SCAI was 0.26 for specialists. O\u2019Neill et al. recently developed the self-consistent normalized Relative Codon Adaptation index (scnRCA) as a measure of codon usage bias that does not rely on a reference gene set and corrects for mutational biases (O'Neill et al., 2013). We calculated for each species the degree \u2018SscnRCA\u2019 of correlation between codon usage and scnRCA at the whole genome scale. SscnRCA ranged from \u22120.085 (Nosema ceranae) to 0.853 (Cryptococcus neoformans), with an average of 0.495 (Figure 2C). SscnRCA increased with host range (Spearman rho\u00a0=\u00a00.59, p=2.7 10\u221205 under phylogenetic independent contrasts) and generalist species had an average SscnRCA of 0.67, whereas the average SscnRCA was 0.32 for specialists.\n\nTo control for the confounding effects of heterogeneity in the completeness of genome assemblies, we first verified that codon optimization was related to the number of hosts but not genome assembly parameters at ANOVA p<0.01 (Figure 2\u2014source data 1). Comparing codon usage bias for gene sets conserved across species is another established method to compare codon optimization across species independent of genome completeness. We identified a set of 1620 core ortholog genes (COGs) conserved across all the 36 fungal parasite species (Figure 2\u2014source data 2). The tRNA adaptation indices (tAIs) were significantly higher in the orthologs of generalist genomes (median value is 0.361) than in orthologs of specialist genomes (median value is 0.337; Welch\u2019s t-test p<0.01) (Figure 2D). We calculated S for COGs in each genome and found that S is significantly higher for COGs in generalist genomes (median is 0.774) than in specialist genomes (median is 0.167; Welch\u2019s t-test p=9.9 10\u221206) (Figure 2D). These different analyses converge toward the conclusion that codon optimization at the whole genome scale correlates with fungal parasites host range.\n\n### Codon optimization and host range co-evolved multiple times across fungal phylogeny\n\nTo document the evolution of codon optimization in fungi, we reconstructed the ancestral state of codon optimization in fungal phylogeny. To this end, we built a phylogeny of our 36 fungal parasites and 9 non-parasitic fungi distributed among all major clades covered in our study (Figure 3A, Figure 3\u2014source data 1 and 2). We determined the degree of codon optimization in non-parasitic fungal genomes and found that codon optimization was generally lower in non-parasitic fungi than in their generalist relatives (average values for non parasitic fungi were S\u00a0=\u00a00.157, SCAI\u00a0=\u00a00.315 and SscnRCA\u00a0=\u00a00.354). This does not exclude that some lineages of non-parasitic fungi could have evolved high codon optimization, but supports the view that codon optimization increased after the divergence of generalist parasites. To support this conclusion, we inferred the ancestral degree of codon optimization at internal nodes of fungal phylogeny using ML ancestral state estimation (Revell, 2012) (Figure 3A). The fungal parasites species used in this work represented four independent evolutionary paths to extreme generalism (over 100 host genera) with non-parasitic or specialists in the same clade, in the Chytridiomycota, the Agaricomycotina, the Leotiomycetes and the Sordariomycetes (Figure 3A). In all four clades, generalism was associated with an increase in genomic codon adaptation compared to related non-parasitic or specialist species and to the reconstructed ancestral state. For instance, in the Leotiomycetes, the generalist parasites Botrytis cinerea and Sclerotinia sclerotiorum (>300 host genera) both had S\u00a0>\u00a00.5, whereas the non-parasitic Oidiodendron maius and the host specialists Erysiphe necator and Blumeria graminis f. sp. tritici had S\u00a0<\u00a00.2. The reconstructed ancestral state for this clade was S\u00a0=\u00a00.37.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig3-v3.jpg)\n\n**Figure 3.:** (A) Phylogeny, genome-scale codon optimization and host range in 36 parasites across the kingdom Fungi. Nine non-pathogenic species belonging to the major branches of Fungi are shown for comparison. The phylogenetic tree was generated using the TimeTree database (Hedges et al., 2015) and PATHd8 (Britton et al., 2007). Codon optimization shown as the size of terminal nodes corresponds to the degree S of coadaptation of all genes to the genomic tRNA pool (dos Reis et al., 2004). Terminal nodes are sized according to genome-scale codon optimization and colored according to host range (grey was used for non pathogen species). Internal nodes are sized according to reconstructed ancestral genome-scale codon optimization, with ancestral S value indicated as a blue label. (B) Correlogram of genome-scale codon optimization and phylogenetic distance along the tree shown in A. Dotted lines delimit 95% confidence interval.\n\nTo test for the robustness of the association between host range and codon optimization across fungal phylogeny, we tested whether it could be detected at the sub-Kingdom level. The correlation coefficient between genome-scale codon optimization and host range were between 0.64 and 0.84 for S, SCAI and SscnRCA at the Phylum level in Basidiomycetes and Ascomycetes, and across phyla in non-Dikarya fungi. To unambiguously exclude the impact of phylogeny on the correlation between host range and codon optimization, we calculated Blomberg\u2019s K and Pagel\u2019s \u03bb as two quantitative measures of phylogenetic signal in genome scale codon optimization along the fungal tree (Pagel, 1999; Blomberg et al., 2003). We obtained Blomberg\u2019s K\u00a0=\u00a00.28 and Pagel\u2019s \u03bb\u00a0=\u00a00.62. Both measures indicated that evolution of codon optimization is not correlated with the phylogeny along the tree at p<0.01. Then, we used phylosignal (Keck et al., 2016) to build a correlogram between phylogenetic distance and codon optimization (Figure 3B). Correlations were insignificant (in the range \u22120.05 to 0.1) along the whole tree. These results support the view that codon optimization is associated with host range in fungal parasites.\n\n### Biased SNP patterns underpin with codon optimization in the generalist parasite Sclerotinia sclerotiorum\n\nTo get insights into the molecular bases of codon optimization in generalists, we searched for patterns of genome evolution associated with codon optimization at the species level in natural populations of generalist parasites. To this end, we generated genome-wide SNPs data by sequencing five field isolates of the plant pathogenic fungus Sclerotinia sclerotiorum (24,344 coding SNPs). S. sclerotiorum is the causal agent of Sclerotinia rot disease, is notorious for its broad host range encompassing several hundreds of plant genera, and shows strong signatures of codon optimization (S\u00a0=\u00a00.52). As expected under strong codon optimization, tRNA concentrations determined by small RNA sequencing strongly correlated with the number of tRNA genomic copies, tRNA adaptive values (calculated according to [dos Reis et al., 2004]) and codon usage in S. sclerotiorum (Figure 4\u2014figure supplement 1). We used 131,138 genome-wide coding SNPs of nine isolates of the host-specific plant pathogenic fungus Zymoseptoria tritici (Croll et al., 2013) as a reference species with weak codon optimization (S\u00a0=\u00a0\u22120.02). Overall, the SNP frequency was higher in the Z. tritici population (1.196 SNP.Kb\u22121.isolate\u22121) compared to S. sclerotiorum (0.416 SNP.kb\u22121.isolate\u22121). To search for signatures of codon optimization in these populations, we determined the frequency of variants for each codon type. We compared frequency of codon variants to the number of cognate tRNA genomic copies, allowing for wobble pairing (Crick, 1966). Frequency of codon variants negatively correlated with the number of tRNA genomic copies in S. sclerotiorum (Pearson\u00a0=\u00a0\u22120.60, p\u00a0=\u00a04.6 10\u221207) but not in Z. tritici (Pearson\u00a0=\u00a00.06, p\u00a0=\u00a00.62) (Figure 4A, Figure 4\u2014source data 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig4-v3.jpg)\n\n**Figure 4.:** (A) Genome-wide frequencies of variant codons in local populations of the host generalist Sclerotinia sclerotiorum and the host specialist Zymoseptoria tritici, according to the number of genomic copies of cognate tRNAs. The number of cognate tRNAs for each codon type was determined using wobble rules for codon-anticodon pairing. Dotted lines show linear regression of the data (Z. tritici: Pearson \u03c1\u00a0=\u00a00.06; p=0.62; S. sclerotiorum \u03c1\u00a0=\u00a0\u22120.60; p=4.6 10\u221207). (B) Adjusted variant frequencies for intergenic nucleotide triplets, optimal and non-optimal codons. Synonymous and non-synonymous SNPs are shown separately. Differences between optimal and non-optimal codon rates were assessed by Welch\u2019s t-test (***p<0.001). (C) Predicted evolution of genome-wide content in optimal codons in S. sclerotiorum and Z. tritici based on observed and random mutation patterns.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The accumulation of tRNA transcripts was determined by sequencing small RNAs of S. sclerotiorum grown in vitro and in\u00a0planta. (A) Normalized read depth correlated exponentially with tRNA copy number for each tRNA species both in vitro and in\u00a0planta. (B) A comparison of tRNA transcripts accumulation in vitro and in planta. Correlation of tRNA transcripts accumulation with codon usage (C) and tRNA adaptive value (D) calculated as described in dos Reis et al. (2004). The exponential regression of the data is shown as a dotted line. The Spearman rank correlation coefficient \u03c1\u00a0and the p-value for Spearman\u2019s test are given.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) IGS-based phylogeny of the S. sclerotiorum isolates re-sequenced in this work. (B) Frequency of SNPs according to codon position and SNP type. (C) SNPs in coding regions do not show significant bias toward enrichment in A or T nucleotides as shown by the rate of AT conversion. (D) Frequency of each substitution type among synonymous, non-synonymous and intergenic SNPs shows higher transition rate among synonymous substitutions. (E) Transition/transversion ratio per SNP type shows\u00a0~threefold increase in synonymous substitutions. (B\u2013E) Error bars show the standard deviation of means for each isolate. Distribution of non-synonymous (F) and synonymous (G) SNPs among the five re-sequenced isolates.\n\nTo further document the molecular bases of codon optimization at the species level, we compared SNP patterns in optimal, intermediate, and non-optimal codons for each amino acid in S. sclerotiorum and Z. tritici populations. In the Z. tritici population, SNP frequencies were not significantly different between optimal and non-optimal codons. By contrast, synonymous SNP frequencies were on average\u00a0~1.7-fold lower in optimal codons than in non-optimal codons in S. sclerotiorum (Welch\u2019s t-test p=1.3 10\u221203) (Figure 4B). These findings identify biased synonymous substitutions as a link between generalism and codon optimization. This analysis is independent of codon usage indices and shows that selection for average performances on multiple hosts is reflected in global trends of genome evolution.\n\n### Natural selection drives codon optimization in generalist fungal parasites\n\nCodon bias in a genome can be selectively neutral due to non-randomness in the mutation process. For instance, the identity of favored codons tracks the GC content of the genomes (Chen et al., 2004; Hershberg and Petrov, 2009). Although S. sclerotiorum genome is AT-rich (41.8% GC), synonymous SNPs showed no bias toward AT conversion, suggesting that synonymous SNPs deviated from neutral patterns (Figure 4\u2014figure supplement 2). Furthermore, adjusted variant frequencies in S. sclerotiorum were similar in intergenic nucleotide triplets and in non-optimal codons but significantly lower in optimal codons (~1.53-fold lower, Welch\u2019s t-test p=\u00a01.0 10\u221211) (Figure 4B), suggesting that synonymous SNPs in optimal codons may be counter-selected in this species, providing evidence of purifying selection acting on optimal codons. To unambiguously demonstrate that observed SNP patterns lead to codon optimization in S. sclerotiorum and are unlikely to result from neutral processes, we simulated the evolution of optimal codon frequencies in S. sclerotiorum and Z. tritici genomes over 1000 generations (Figure 4C). In these simulations, we used either random SNP patterns, or the SNP patterns determined experimentally (Figure 4\u2014source data 2). This demonstrated that the codon SNP patterns determined experimentally converge toward increased codon optimality in S. sclerotiorum genome, whereas SNP patterns observed in Z. tritici genome and random mutation patterns do not. Thus, patterns of evolution toward increased codon optimality were detected in S. sclerotiorum but not in Z. tritici populations, and deviate significantly from neutral evolution.\n\nTo estimate the likelihood that observed codon biases result from selective rather than neutral processes in other fungal genomes, we used permutation tests on the number of genomic tRNA copies to calculate probability distribution of S under no selection (dos Reis et al., 2004). A total of 14 species showed signatures of selection for codon optimization with a p<0.1, among which one was a specialist (M. roreri) and one had eight host genera (P. destructans). Twelve out of 15 (80%) generalist species showed selection for codon optimization with a p<0.1, confirming that adaptive translation is stronger in generalist species. We conclude that natural selection on protein translation efficiency or accuracy drives evolution toward codon optimization in generalist parasites through biased synonymous SNPs. These evolutionary patterns are consistent with an improvement of average performances on multiple hosts for generalist parasites.\n\n### Codon optimization signatures associate with host colonization\n\nTo further support the link between codon optimization and the ability to colonize multiple hosts, we analyzed signatures of codon optimization in host-induced genes of 15 fungal parasite species from multiple families of the Ascomycetes and Basidiomycetes (Figure 5\u2014source data 1) (Amselem et al., 2011; Duplessis et al., 2011a, 2011b; Gao et al., 2011; Morton et al., 2011; O'Connell et al., 2012; Xiao et al., 2012; Zhang et al., 2012; Hacquard et al., 2013; Bailey et al., 2014; Chen et al., 2014; Kellner et al., 2014; de Bekker et al., 2015; Bradshaw et al., 2016). We found that host-induced genes were enriched\u00a0~3.1-fold among the top 10% codon-adapted genes in generalist parasites but not in specialists. Overall, genes induced during host colonization distributed predominantly among genes with high codon adaptation indices in generalist but not in specialist parasites (Figure 5A, Figure 5\u2014source data 2). Parasites use secreted proteins to facilitate infection of their hosts. We therefore analyzed codon optimization in secretome genes of 45 fungal species (Figure 5\u2014source data 3). We found that secretome genes were enriched over 1.6-fold among the top 10% codon-adapted genes in generalist parasites but only\u00a0~1.2-fold in specialists and non-parasitic fungi. Overall, predicted secretome genes distributed predominantly among genes with high codon adaptation indices in generalist parasites but not in specialist and non parasitic fungi (Figure 5B). We calculated S in each genome for secreted and non-secreted protein genes (Figure 5C, Figure 5\u2014source data 4). In our genome set, non-parasitic fungi had similar S for secreted and non-secreted proteins. The average S for secreted proteins (0.212) was slightly higher than for non-secreted proteins (0.137) in specialists (Student\u2019s paired t-test p=0.054). In generalists, the average S for secreted proteins (0.661) was significantly higher than for non secreted proteins (0.558, Student\u2019s paired t-test p=1.12 10\u221203). Increased codon optimization in generalists was not only clear for genes encoding secreted proteins and host-induced genes, but also across their entire genome (\u2018other genes\u2019 in Figure 5C). To get a global overview of cellular functions enriched in codon optimized genes in generalists, we analyzed normalized tRNA adaptation indices for genes annotated with Gene Ontologies (GO) in generalist and specialist genomes (Figure 5D, Figure 5\u2014source data 5). Together with secreted enzymes, GOs related to translation and central metabolism showed higher codon optimization in generalists than in specialists. Conversely, GOs related to transcription, transposable elements and phosphorelay signal transduction were better optimized in specialists than in generalists. These results suggest that high codon optimization is an adaptation to host colonization and particularly to the colonization of multiple hosts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22472/elife-22472-fig5-v3.jpg)\n\n**Figure 5.:** (A) Genes induced during host infection are enriched among high tRNA adaptation index genes in generalist but not specialist parasite genomes. Error bars show standard error of the mean. (B) Genes encoding predicted secreted proteins are more strongly enriched among high tRNA adaptation index genes in generalist parasite genomes compared to specialist and non-parasitic fungi genomes. Error bars show standard error of the mean. (C) Degree of coadaptation of secreted protein genes and other genes to the genomic tRNA pool in non parasitic, specialist and generalist fungi (*** Student\u2019s paired t-test p<0.002). (D) Distribution of tRNA adaptation indices according to gene functions in generalist and specialist fungal parasites. For each Gene Ontology (GO), the average normalized tRNA adaptation indices in all genes from generalist and specialist genomes are shown. Bubbles are sized according to the total number of genes, and colored according to the percentage of predicted secreted proteins when values for generalists and specialists differ by over 10%. Selected GOs are labeled.\n\n## Discussion\n\nOur study reveals that codon optimization through biased synonymous substitutions is a common feature in the evolution of generalist parasites and is associated with the colonization of multiple hosts. Because host colonization by generalist often requires diverse and relatively complex secreted proteins, these organisms are expected to require higher protein translation efficiency to compete with co-occuring specialist microbes. In agreement with this model, we found that natural selection for codon optimization correlates with host range in fungal parasites. We describe patterns of purifying selection acting on optimal codons in generalist parasites, providing a molecular basis for genome scale adaptation to the colonization of multiple hosts.\n\nThe increasing amount of genome sequences available for specialist fungal parasites revealed massive losses of enzymes associated with the ability to thrive and reproduce on living hosts (Schirawski et al., 2010; Spanu et al., 2010). Specialists rely largely on SSPs subverting host cell functions. Functional analyses have shown that SSPs from filamentous pathogens can function as effectors, facilitating the colonization of susceptible hosts while triggering resistance in some host genotypes by activating resistance (R) proteins (Dodds and Rathjen, 2010). In specialist species, the one-to-one relationship, either direct or indirect, between effectors and R proteins favors evolution through non-synonymous mutations, to increase effector diversity and escape R protein recognition (Raffaele and Kamoun, 2012). By contrast, pathogen populations exposed to weaker host selection, caused by quantitative resistance genes, or disruptive selection due to heterogeneity in the host population, are expected to evolve adapted genetic variants less rapidly (McDonald and Linde, 2002; Roux et al., 2014). Our analyses indeed support the view that selection driven by multiple hosts is associated with relatively low rates of evolution of protein variants but instead associates with the directional evolution of synonymous genetic variants. Translational selection may, nevertheless, be active in the genome of specialists but on limited gene sets only, resulting in a low signal in genome-scale analyses (dos Reis et al., 2004).\n\nWe noted a trend toward longer proteins encoded in the genome of generalist fungi, notably secreted proteins, consistent with the abundance of SSPs in specialists (Spanu et al., 2010) and previous comparative analyses (Kim et al., 2016). We associated longer proteomes in generalists with higher selection on codon optimization at the whole genome scale. The relative strength of translational selection on individual genes may, however, vary significantly within a given genome. Gene length increases in relation to evolutionary age, with conserved genes under purifying selection generally being longer and harboring higher frequency of optimal codons (Prat et al., 2009; Wolf et al., 2009). Neofunctionalization in duplicated genes has also been associated with increased gene length (He and Zhang, 2005). Duplications frequently underlie domain loss and gain in eukaryotic proteins, which is an important mechanism for the evolution of new functions (Buljan et al., 2010; Peisajovich et al., 2010). Natural selection may promote protein domains recombination to increase the versatility of fungal proteins functions, and thereby contribute to host range expansion.\n\nThe adaptive evolution of effectors that increase the colonization of one host species also increases the risk of detection in other host species by triggering their immune system. Furthermore, natural selection that maximizes parasite fitness on one particular host species might result in decreased fitness on an alternative host, leading to specialization (reduced host range) or host shift (Dong et al., 2014). The evolution of generalism has been associated to hybridization events (McMullan et al., 2015; Menardo et al., 2016), horizontal transfer of genetic elements (Ma et al., 2010; Hu et al., 2014), and an overall increase in the repertoire of protein-coding genes (Hu et al., 2014). This observation is consistent with the prominent role in pathogenic success of large repertoires of host-degrading enzymes encoded by the genome of generalist parasites (King et al., 2011; Zhao et al., 2013). Catalytic efficiency of these enzymes is crucial to perform in host environment. Although the catalytic activity of enzymes is typically modulated by adaptation of protein sequences, high reaction rates for efficient host colonization may be reached by modulating the amount of protein synthesized during colonization. However, an increase in proteins production may lead to a metabolic or structural burden of the translation machinery. For instance, the massive production of virulence factors by the generalist bacterial pathogen Ralstonia solanacearum reduces its metabolic versatility and thus its host colonization capacity (Perrier et al., 2016; Peyraud et al., 2016). Natural selection for the optimization of protein translation, through ribosome pausing time, translation error rates and co-translational protein folding, has been widely associated with codon usage biases (Drummond and Wilke, 2008; Tuller et al., 2010; Shah and Gilchrist, 2011). The adaptive evolution of the translation machinery described here is predicted to favor generalists\u2019 performances in heterogeneous host populations, by reducing the cost of large and diverse sets of secreted enzymes production on proliferation. The mitigation of the tradeoff between cell proliferation and protein synthesis (Li et al., 2014) by codon optimization could explain how generalist lineages have maintained or gained the ability to produce diverse sets of secreted enzymes, allowing the colonization of genetically diverse hosts. Codon optimization may affect the expression of effectors and other virulence factors, modifying the degree of infection or enabling the colonization of new hosts opposing quantitative disease resistance mechanisms. These findings reveal that parasite host range variation is a prime example of an adaptive phenotype related to codon optimality and translational regulation.\n\n## Materials and methods\n\n### Simulation of codon optimization effect on protein biosynthesis\n\nWe designed a mathematical model of the cell translation machinery in order to undertake the analysis of the impact of codon optimization parameters on the cell physiology (Figure 1\u2014source data 1). The model describes the variation of intracellular concentration, P(i), of three proteins sets (i): the free ribosomal proteins P(r), the proteins destined to be secreted P(s) and intracellular non-secreted proteins P(n), depending on their synthesis rate and the dilution rate due to cell growth. Crowding effect (Beg et al., 2007), that\u00a0is the maximal number of proteins that a finite cell can contain, was modeled by adding a limitation function to the elongation rate which is asymptotic to the maximal proteins content. The ordinary differential equations were solved numerically using the COPASI software (RRID:SCR_014260) (Hoops et al., 2006) until a steady-state was reached. mRNA(i) concentrations were assumed to be stable with no dilution due to cell growth. The initiation constants between mRNA and ribosomes were set to a non-limiting value, similar for the three kinds of proteins sets (r, n and\u00a0s). A stoichiometric constrain of 79 ribosomal proteins bound per mRNA(i) was added in the COPASI model. The initial parameters used for the different analysis are listed in Figure 1\u2014source data 1. These parameters were set to be in the physiological range of a cell accordingly to data from Bremer and Dennis (2008). The concentrations of the biomolecules in the model are in mmol\u2219ml\u22121. The maximal growth rate was defined as the dilution rate (\u00b5) above which the rate of the proteins biosynthesis is lower than the dilution rate, leading to the collapse of the proteins concentration. We considered situations in which 14.5% of total mRNAs corresponded to mRNAs for secreted proteins and 12% corresponded to mRNAs for ribosomal proteins, and analyzed the impact of varying codon decoding rate on protein production under our cellular model.\n\n### Codon optimization across the kingdom fungi\n\nGenome assemblies and CDS files for 45 fungal species were downloaded from the repositories given in Figure 2\u2014source data 1. For every species, the repertoire of tRNA genes was determined using the tRNAscan-SE 1.21 server (RRID:SCR_010835) (Schattner et al., 2005) with the \u2018Source\u2019 parameter set as \u2018Eukaryotic\u2019 and \u2018Search Mode\u2019 set as \u2018Default\u2019. For 42 species, only predicted full length CDS were considered for codon optimization analysis. For this, CDS lacking a start and a stop codon were filtered out. For Puccinia graminis, Serpula lacrymans and Colletotrichum higginsianum, since\u00a0>15% of CDS lacked a predicted stop codon in these genomes, we filtered out CDS lacking a start codon only. tRNA adaptation indices (tAIs)\u00a0were calculated for a total of 569,744 genes using the get.tai function in R (dos Reis et al., 2004) with the \u2018sking\u2019 parameter set to \u20180\u2019 (Eukaryote) for the get.ws function. The degree of codon optimization in each genome was determined using the get.s function in R (dos Reis et al., 2004). Confidence intervals were determined using the CI function from the package \u2018psychometric\u2019 in R. For each genome, the probability of selection acting on codon optimization was determined using the ts.test function in R (dos Reis et al., 2004) with sample size\u00a0=\u00a0500 and n\u00a0=\u00a01000 and p\u00a0values were adjusted using Bonferroni correction. The repertoire of ribosomal proteins was identified based on interproscan annotation or de novo gene annotation performed with Blast2GO version 3.3 (RRID:SCR_005828) (Conesa et al., 2005). For each genome, the CDS of full length ribosomal proteins were used to compute a codon usage table with the CUSP function in EMBOSS (RRID:SCR_008493) (Rice et al., 2000) to calculate codon adaptation indices (CAI) for every gene in the corresponding genome, using the CAI function in EMBOSS. The degree of codon optimization at the whole genome scale was determined using the get.s function in R with gene CAI or scnRCA instead of tAI. Host range was determined according to sources listed in Figure 2\u2014source data 2. For most plant pathogens, the Systematic Mycology and Microbiology Laboratory Fungus-Host Database of the United States Department of Agriculture was used (Farr and Rossman, 2016). For Cryptococcus neoformans, Aspergillus fumigatus, Beauveria bassiana, and Metarhizium acridum, a list of infected Orders were retrieved. We collected the list of Genera recorded in these Orders through various sources (Figure 2\u2014source data 2). The likelihood that a parasite can infect two host species decreases continuously with phylogenetic distance between the hosts (Gilbert and Webb, 2007). In their study, Gilbert and Webb reported that the proportion of hosts colonized was about\u00a0~20% at a 300 Mya phylogenetic distance, decreasing logarithmically. We considered that 8% of Genera in a given Order were likely to be host for the above-mentioned pathogens to reach a conservative estimate. Core orthologous genes were identified through a BlastP search against a database of 36 complete fungal proteomes, using the CEGMA set downloaded from http://korflab.ucdavis.edu as a query. Only orthologous groups containing a single hit in all fungal species were selected for further analysis. tRNA adaptation indices for each genome were median-normalized before analyzing their\u00a0distribution in COGs. We used the TimeTree database (Hedges et al., 2015) to obtain ages for a maximum of nodes of the tree (calibration points). Then, we ultrametricized the tree using PATHd8 (Britton et al., 2007). We tested for a potential presence of a phylogenetic signal estimated by Blomberg's K, Pagel's \u03bb and autocorrelogram with the phylosignal R-package (Keck et al., 2016). We calculated phylogenetic independent contrasts (Felsenstein, 1985) and verified the significance of trait correlations using the pic function from the ape package in R.\n\n### Sequencing of S. sclerotiorum isolates\n\nIsolates C014, P163, P314 and C104 were provided by Bruno Grezes-Besset (Biogemma, Mondonville, France) and were collected from infected rapeseed fields near Blois (France) in 2010. Isolate FrB5, collected from clover seed lot in Dijon (France) in 2010, was obtained from Vleugels et al. (2013). Isolate 1980 (ATCC18683) was collected in prior 1970 on bean pods near New York (Maxwell and Lumsden, 1970) and was provided by Martin Dickman (Texas A and M University, USA). For IGS phylogeny, Intergenic sequences (IGS) were retrieved on sequenced genomes with the Blast tool of CLC Genomics software (RRID:SCR_011853). The sequences were aligned with MAFFT v7 (RRID:SCR_011811) (Katoh and Standley, 2013), and the phylogenetic tree was build with PhyML 3 (Guindon et al., 2010) with SH-like approximate likelihood ratio test (aLRT) as support statistics. The tree was mid-point rooted using MEGA6 software (RRID:SCR_000667) (Tamura et al., 2013). Sclerotinia sclerotiorum isolates were grown in liquid potato dextrose medium (P6685 - Sigma) for 4 days at 24\u00b0C under shaking at 180 rpm. Cultures were filtered using vacuum and a fritted glass column protected with a doubled miracloth membrane and ground in liquid nitrogen. One gram of mycelium powder was used for DNA extraction using a DNA Maxi Kit (Quiagen) and following manufacturer\u2019s instructions. DNA sequencing was outsourced to Fasteris SA (Switzerland) to produce Illumina paired-end reads (2 \u00d7 100 bp) using a HiSeq 2500 instrument. Paired-end reads for each S. sclerotiorum isolate were mapped to version 2 of the S. sclerotiorum 1980 reference strain genome (Derbyshire et al., 2017) using the mapping function of the CLC Genomics software. Variant call was performed on mapped reads with the Fixed Ploidy Variant Detection function of the CLC Genomics software. The resulting total variants for each strain were further filtered for homozygous single nucleotide variants.\n\n### Analysis of codon polymorphisms in plant pathogen populations\n\nSNPs in gene coding sequences were extracted and mapped to the corresponding codons using R scripts to calculate the percentage of polymorphic codons of each type. The number of tRNAs able to decode each codon type is given as a percentage of the genomic tRNA pool that was determined based on tRNA gene predictions obtained through tRNAscan-SE. Whenever isoacceptor codons had no cognate tRNA predicted, the number of tRNA copies was divided evenly among isoacceptor codons according to general codon-anticodon wobble rules as described in dos Reis et al. (2004). We considered that the 11 codons that did not have isodecoder tRNAs in Zymoseptoria tritici were decoded evenly by the four tRNA genes that had no accepting codons identified by tRNAscan-SE. Codons with the highest percentage of decoding tRNAs were considered as optimal. In cases where the highest percentage of decoding tRNA was shared among several synonymous codons, codons having the highest number of cognate tRNA copies in the genome or codons with the highest usage in the genome were optimal. Codons with the lowest percentage of decoding tRNAs were considered as non-optimal. In cases where the lowest percentage of decoding tRNA was shared among several synonymous codons, codons with the lowest usage in the genome were considered non-optimal. Other codons were considered as intermediate.\n\nVariant frequencies (in % of codons) were calculated by counting the number of codons harboring a SNP divided by the total number of this codon type in the genome. These raw variant frequencies were used in simulation of the evolution of codon optimality. A random base change within a codon is more likely to result in a nonsynonymous or stop-gain mutation than a synonymous mutation, hence we expect the frequency of non-synonymous codon variants to be higher than the frequency of synonymous codon variants under neutral selection. Therefore, to compare synonymous and non-synonymous variant frequencies, we adjusted non-synonymous variant frequencies dividing them by their likelihood to occur if changes were random. Variant frequencies in intergenic nucleotide triplets were used as an estimate for neutral patterns of evolution. For this, we extracted for each intergenic SNP the corresponding triplets. Variant frequencies (% of nucleotide triplets) were calculated by counting the number of triplets of a given type harboring a SNP divided by the total number of this triplet type in intergenic regions of the genome, determined using the COMPSEQ function in EMBOSS. Frequencies of variants in intergenic triplets were adjusted to compare to synonymous and non-synonymous variant frequencies. For this, we use as a correction factor the ratio between the adjusted total codon variant rate (synonymous variant rate + adjusted non-synonymous variant rate) over the unadjusted total codon variant rate (synonymous variant rate + non-synonymous variant rate). SNP frequencies in genes (in Kbp\u22121) were calculated counting the number of SNPs per genes and divided by the length of gene coding sequence in Kbp.\n\n### Determination of tRNA genes expression\n\nSmall RNAs were obtained from samples of Arabidopsis thaliana Col-0 ecotype plants infected by S. sclerotiotum strain 1980 and samples of S. Sclerotiorum strain 1980 grown in Potato Dextrose Broth as previously described. Small RNA were prepared using the NucleoSpin miRNA kit (Macherey-Nagel) following instructions of the manufacturer. Small RNAs sequencing was outsourced to Fasteris SA (Switzerland) to produce Illumina reads using a HiSeq 2500 instrument (small RNA libraries with expected insert size from 18 to 30 bp). Reads were imported into CLC Genomics Workbench 8.5 (QUIAGEN), and sequences were mapped on version 2 of the S. sclerotiorum strain 1980 genome (Derbyshire et al., 2017). Read counts at predicted tRNA loci were obtained using the Small RNA Analysis toolkit of the CLC Genomics Workbench 8.5 software. Only perfect matches to the S. sclerotiorum tRNA genomic loci on the correct strand were accepted, and inserts less than 15pb were discarded. Reads collected in\u00a0planta or in vitro and aligned to the different copies of a given tRNA type in the genome were summed up and compared to tRNA gene copy numbers, codon usage or tRNA adaptive values.\n\n### Simulations of the evolution of codon optimality\n\nCodons were classified as optimal, intermediate and non-optimal as described previously, unadjusted variant frequencies were used. The initial state in simulations corresponded to codon usage measured in S. sclerotiorum and Z. tritici reference genomes. To simulate the long-term evolution of codon optimality in S. sclerotiorum and Z. tritici, we developed two python scripts. The \u2018observed\u2019 simulator uses the frequencies of all 64x64\u00a0=\u00a04096 possible codon substitutions measured in S. sclerotiorum and Z. tritici natural populations, kept constant over the simulation. At each evolutionary step, the frequencies of the 64 codons in each genome are mutated according to the codon substitution frequencies table. The total proportion of optimal, intermediate and non-optimal codons in each genome is computed after all measured codon substitutions have been accounted for (designated as one \u2018generation\u2019). To test if the observed long-term evolution of codon optimality deviated significantly from random mutation patterns, a \u2018random\u2019 simulator was implemented. In these simulations, bulk frequencies of triplets toward synonymous and not synonymous mutations were kept constant, whereas the outcome of mutations was determined randomly at each iteration. The number of mutations at each generation also varied randomly in order to obtain an uneven distribution. Simulations were repeated until an asymptotic behavior was apparent. The Python source code for these two simulators is provided in\u00a0Figure 4\u2014source code 1.\n\n### Codon optimization and genes function\n\nTo normalize tAIs across multiple genomes, tAI values were ordered in ascending order in each genome, and their rank given as a percentage (0 for lowest rank corresponding to the lowest tAI in a given genome up to 1 for the highest rank corresponding to the highest tAI in this genome). The source of data and pipelines used to identify genes significantly induced are listed in (Figure 5\u2014source data 1). The predicted secreted protein genes were determined using SignalP 4.0 (Petersen et al., 2011) with default parameters. For each genome, genes were classified into secreted protein genes (signal peptide identified by SignalP 4.0) and non-secreted protein genes (all other genes). The degree of codon optimization in these two gene subsets were computed for each genome using the get.s function in R (dos Reis et al., 2004). The average normalized tAI for all genes annotated with a given Gene Ontology was computed for generalist and specialist genomes. GO mapping was retrieved from the repositories given in Figure 2\u2014source data 1 or performed de novo with Blast2GO software. Only GOs associated with 200 genes or more were analyzed.\n",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c0fa0b80-b24c-42b0-ad79-94a8e08ab640",
+      "submission_id": "948c3bac-9698-4776-9323-bbda1ebd6475",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Claus O Wilke, The University of Texas at Austin , United States\n\n## Review text\n\nDOI: [10.7554/eLife.22472.119](https://doi.org/10.7554/eLife.22472.119)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Codon optimization underpins generalist parasitism in fungi\" for consideration by eLife. Your article has been favorably evaluated by Detlef Weigel (Senior Editor) and three reviewers, one of whom, Claus Wilke, is a member of our Board of Reviewing Editors.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. There were three key issues that prompted us to reach this conclusion:\n\n1) The manuscript is lacking a convincing \"why\". No convincing theory is presented for why codon bias should differ between generalists and specialists.\n\n2) The main finding of the paper is a correlation between codon bias and host breadth. However, this correlation is confounded by the phylogenetic relationship between species, and whether the correlation would remain after this relationship is controlled for is unclear.\n\n3) The manuscript is not well conceived and structured. A lot of potentially interesting material is presented in supporting information, while some of the information in the main manuscript seems tangential to the overall story. For example, the material in Figure 2 only establishes that codon bias is caused by selection pressure (an observation that is already widely accepted) but does not actually support the main story of the paper (that generalists experience different selection pressures than specialists).\n\nReviewer #1:\n\n1) I am missing a clear, overarching hypothesis. Why do the authors think that codon bias should differ between specialist and generalist species? What is driving this effect?\n\n2) I am not sure that the work of Figure 2 speaks to the overall hypothesis of the paper. Figure 2 demonstrates that two genomes with different codon biases likely experience different synonymous selection pressures. I think it is widely accepted these days that codon bias is often caused by selection, so we haven't learned much new from this analysis. Importantly, this work does not explain why codon bias patterns might be different in a generalist vs. a specialist.\n\nTechnical comments:\n\n3) Results and Discussion, first paragraph: \"A total of 22 species showed signatures\u2026\" Was this corrected for multiple testing?\n\n4) Results and Discussion, second paragraph, Figure 1B: Spearman correlation assumes that the points are independent. However, they are confounded by phylogeny. The authors should calculate the correlation on phylogenetic independent contrasts. Looking at the figure, I would expect the effect to be much weaker under independent contrasts.\n\n5) Subsection \u201cCodon optimization across the kingdom Fungi\u201d: I don't understand this: \"taking the average p value from 100 tests of sample size=500 and n=1000.\" More explanation is needed. Normally, one would do only one test. How is an average p value from multiple tests to be interpreted?\n\n6) What is the point of Figure 2B? I don't understand what this is meant to show.\n\n7) It is unclear what is shown in Figure 3A. I don't think the quantity shown on the y axis is defined.\n\nReviewer #2:\n\nThe manuscript by Badet et al. aims to describe patterns of codon adaptation in parasitic fungi and how they vary as a function of their host ranges. In addition to performing comparative genomic analyses across 45 species, they generate transcriptomic datasets to measure changes in mRNA and tRNA abundances depending on the host for a subset of species as well as perform simulation studies to estimate elongation times of codons across these species.\n\nOverall it is quite a compelling piece of work and I highly recommend its publication. My primary concern is that the bulk of analyses that the authors have performed is tucked away in the supplement and barely described in the main text. In fact, some supplementary figures are not even cited. I feel the authors are shortchanging themselves by submitting this manuscript as a Short report. I would recommend they elaborate their explanations of the analyses already presented in the supplement and discuss them in more detail.\n\nIn terms of specific concerns \u2013 I was particularly struck by their Figure 2\u2014figure \u2013 supplement 1B. A large number of synonymous mutations are derived from mutations in the first codon position. Only Leu and Arg are capable of such mutations. Does this mean that over half the synonymous mutations were occurring at these two amino acids?\n\nReviewer #3:\n\nIn this study, the authors examine the relationship between gene codon optimization and host range variations in parasitic fungi. The study raised the hypothesis that the degree of gene codon optimization in parasitic fungi is related to the host range variation. Parasitic fungi with high degrees of gene codon optimization are usually generalists while genes in specialist fungi are usually less codon-optimized.\n\nAlthough this is a very interesting hypothesis, the conclusions, however, are not convincing due to a very problematic methodology used and are not consistent with the known mechanisms of host specificity determination of parasitic fungi.\n\nThe conclusions of this paper are heavily dependent on a previously developed method (dos Reis et al., 2004) to determine the degree of codon tRNA coadapation. Such a value called 'S' was assumed to reflect the translation selection of genes by codon usage biases. Such a model, however, is very problematic and its analysis results are not consistent with many known experimental results. For example, in the original 2004 study, among the 126 genomes analyzed by this model, the S values of only 36 genomes were found to be statistically different from zero, suggesting that for most genomes, there is no sign of translational selection by codon usage acting on their genomes. Obviously, this is very different from known experimental. For example, while S values of human and Drosophila indicating lack of selection, there are now very strong experimental evidence demonstrating a role for translation selection by codon usage biases. Same for Bacillus. As acknowledged by the authors of the 2004 paper, their model has severe limitations and cannot explain much of the variation observed. In the case of human and mouse genome, which should exhibit a very similar degree of translation selection by codon biases, has quite a big difference in S values. In the context of this paper, three of the non-parasitic fungi analyzed by the 2004 study, S. cerevisiae, S. pombe, and N. crassa, all have very high S values, which are not consistent with the conclusion of this paper. All these indicate that the S value model used is very problematic and do not reflect much of the known experimental results.\n\nA brief reading of the original 2004 method calculating the optimized s-values show that although adenosine deamination was taken into account when calculating base pairing between tRNA and codons, the I:U base pairing was set to be more preferred than I:C based pairing. Obviously, this is not consistent with current knowledge that inosine preferentially base pairs with cytosine. On the other hand, the simple assumption that tRNA copy number will truthfully reflect tRNA expression will certainly introduce additional variations of the model (human vs. mice for example). Current tRNA sequencing methods do not help here due to cloning and sequencing biases. Obviously, there can be more issues with the model.\n\nThe host specificity determination of parasitic fungi is mostly known to be determined by expression of different effectors, which frequently are not conserved. Although the codon optimization of genes related to infection was examined in two species, effector genes was not studied. Even if codon optimization may affect the expression of effectors, it should only affect the degree of infection but not the host range. Based on my knowledge, the expression levels of many known effectors are usually low.\n\nBecause of these two major deficiencies, I feel that the current study is premature for publication.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Codon optimization underpins generalist parasitism in fungi\" for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Our major remaining concern with the manuscript lies in the \"why\" question brought up during the previous review. The arguments made are weak and hand-wavy. You claim that since generalists have longer genes than specialists and as a result might take longer to translate, there is stronger selection to improve their codon usage. This begs the question, what evolutionary forces are influencing gene lengths? Are gene-lengths in specialists under stronger selection to reduce in size or in generalists to increase their sizes and why?\n\nFurther, the results in Figure 5 suggest that codon optimization of secreted proteins may explain the host range of fungal parasites. However, the host range can simply be determined by robustness of overall cell metabolism/growth. To strengthen your conclusions, we suggest that you perform pathway-specific analysis and compare to that of the secreted proteins.\n\n2) We appreciate that you have pursued several different approaches to correct for phylogeny, and we consider your results now reliable. However, throughout the manuscript there remain several places where you provide standard correlations, with uncorrected p values. All these should be replaced with correlations over phylogenetic contrasts. Specifically, these are in subsection \u201cCodon optimization correlates with fungal parasites host range\u201d, first paragraph and second paragraphs.\n\n3) In several places throughout the manuscript, you list p values but don't state the test that was performed. Please state the test every time. Also, you are inconsistent in when you do and don't run a test. For example, in the first paragraph of the subsection \u201cLong proteins encoded by the genome of generalist fungi likely increase natural selection on codon optimization\u201d you list a p value but you don't do so in any of the other length comparisons in the following lines.\n",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0abe623f-2ff9-4a30-88dd-958be5bc681a",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C1",
+      "claim": "Codon optimization underlies genome adaptation in broad host range parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that codon optimization underlies genome adaptation in broad host range parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by multiple analyses throughout the manuscript including genome-scale correlations, phylogenetic analyses, and population genetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "0a3eb895-517a-46b1-96b4-11218479cf5f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C2",
+      "claim": "Longer proteins encoded by broad host range fungi likely increase natural selection on codon optimization in these species.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the longer proteins encoded by broad host range fungi likely increase natural selection on codon optimization in these species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling showing that longer proteins in generalists require higher codon decoding rates to achieve similar growth rates as specialists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "ce1836fa-5e9f-4dcc-af57-1470bfefb83f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C3",
+      "claim": "Codon optimization correlates with host range across the fungal kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, codon optimization correlates with host range across the fungal kingdom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through statistical correlation analysis of 36 fungal species showing Spearman rho = 0.82, p=7.1 10\u221210.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "47fa4d45-ce33-4b6f-90d0-42c323c2c907",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C4",
+      "claim": "Biased patterns of synonymous substitutions underpin increased codon optimization in a generalist but not a specialist fungal pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "At the species level, biased patterns of synonymous substitutions underpin increased codon optimization in a generalist but not a specialist fungal pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SNP analysis in S. sclerotiorum and Z. tritici populations showing differential patterns of synonymous substitutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a6af1155-0263-4bbb-af99-bacdce776320",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C5",
+      "claim": "Virulence genes were consistently enriched in highly codon-optimized genes of generalist but not specialist species.",
+      "claim_type": "EXPLICIT",
+      "source": "Virulence genes were consistently enriched in highly codon-optimized genes of generalist but not specialist species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through analysis of host-induced genes and secretome genes across multiple fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5ab83ee2-e87d-411b-9753-4b91f64ab853",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C6",
+      "claim": "Codon optimization is related to the capacity of parasites to colonize multiple hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that codon optimization is related to the capacity of parasites to colonize multiple hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple lines of evidence including genome-scale correlations, phylogenetic patterns, and functional gene enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5128826f-c72e-4971-be00-8540459d4137",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C7",
+      "claim": "Secreted proteins were ~14.8% longer in generalists than in specialists (365 and 318 codons respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In average, secreted proteins were ~14.8% longer in generalists than in specialists (365 and 318 codons respectively; Welch's t-test p<10\u221208).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of protein lengths across 13 specialist and 15 generalist fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7d9f75d8-1369-4468-8bf1-45a7b662f9b3",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C8",
+      "claim": "Intracellular proteins were ~10.1% longer in average in generalists than in specialists (381 and 346 codons respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular proteins were also longer in average in generalists than in specialists (~10.1% longer with 381 and 346 codons respectively; Welch's t-test p<10\u221208)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of protein lengths across 13 specialist and 15 generalist fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a6187d75-9ca3-433b-8b2d-409bdb6d01c2",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C9",
+      "claim": "Ribosomal proteins were slightly shorter in average in generalists than in specialists (~1.2% shorter with 189 and 192 codons respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas ribosomal proteins were slightly shorter in average in generalists than in specialists (~1.2% shorter with 189 and 192 codons respectively; Welch's t-test p<10\u221204).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of protein lengths across 13 specialist and 15 generalist fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a49a2373-13f4-4c95-b58d-74cdfa8377f9",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C10",
+      "claim": "In yeast, codon decoding rate varies from 10 to 28 codons per second, with an average of 20 codons per second.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, codon decoding rate varies from 10 to 28 codons per second, with an average of 20 codons per second (Gardin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Gardin et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "fd9de4ea-231d-4ce5-b1ce-2199fe77829e",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C11",
+      "claim": "Cells of specialists achieved higher maximal growth rates than cells of generalists at a given codon decoding rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of specialists achieved higher maximal growth rates than cells of generalists at a given codon decoding rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by computational modeling results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "9182e472-9cd4-4de7-a696-b216c3088380",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C12",
+      "claim": "To achieve a growth rate of 4000 cells per 24 hr, the codon decoding rate should be 21.7 codons per second in generalists but only 19.9 codons per second in specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in order to achieve a growth rate of 4000 cells per 24 hr, the codon decoding rate should be 21.7 codons per second in generalists but only 19.9 codons per second in specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the computational model of cell translation machinery.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a9bfa099-8d78-45fa-86e6-352cbf53dfd0",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C13",
+      "claim": "Secreted proteins of the generalist Botrytis cinerea were in average ~73% longer (394 amino acids) than secreted proteins of the specialist Blumeria graminis f. sp. tritici (228 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, secreted proteins of the generalist Botrytis cinerea were in average ~73% longer (394 amino acids) than secreted proteins of the specialist Blumeria graminis f. sp. tritici (228 amino acids; Welch's t-test p<10\u221208).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of protein lengths between specific generalist and specialist species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "f2d31441-ae77-4cb4-933b-b73af8475070",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C14",
+      "claim": "S values ranged from \u22120.032 (Puccinia graminis) to 0.843 (Cryptococcus neoformans), with an average of 0.374.",
+      "claim_type": "EXPLICIT",
+      "source": "S values ranged from \u22120.032 (Puccinia graminis) to 0.843 (Cryptococcus neoformans), with an average of 0.374.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated S values for codon optimization across 36 fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5ee90860-d8e8-451a-9466-d57db8bd4266",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C15",
+      "claim": "Codon optimization at the whole genome scale increased with host range (Spearman rho = 0.82, p=7.1 10\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a correlation analysis and found that codon optimization at the whole genome scale increased with host range (Spearman rho = 0.82, p=7.1 10\u221210, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis across 36 fungal species, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "6d3aeeb1-9add-49f7-87e4-2e8006cda6d0",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C16",
+      "claim": "Generalist species had an average S of 0.58, whereas the average S was 0.23 for specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalist species had an average S of 0.58, whereas the average S was 0.23 for specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from S values across generalist and specialist species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "34d200d2-0964-4a5f-9a21-45ba2c1d15ec",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C17",
+      "claim": "The significance of the correlation between host range and genome scale codon optimization using Felsenstein's phylogenetic independent contrasts yielded Spearman rho of 0.6 (p=1.5 10\u221205).",
+      "claim_type": "EXPLICIT",
+      "source": "We verified the significance of the correlation between host range and genome scale codon optimization using Felsenstein's phylogenetic independent contrasts, and obtained Spearman rho of 0.6 (p=1.5 10\u221205).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phylogenetic independent contrasts analysis to control for phylogenetic relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "cf84cf1a-27a6-45a6-95f5-96a6c71fd830",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C18",
+      "claim": "SCAI increased with host range (Spearman rho = 0.61, p=9.0 10\u221206 under phylogenetic independent contrasts).",
+      "claim_type": "EXPLICIT",
+      "source": "SCAI increased with host range (Spearman rho = 0.61, p=9.0 10\u221206 under phylogenetic independent contrasts)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis using codon adaptation index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "85fc139d-0ff0-4393-a883-06967dea952a",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C19",
+      "claim": "Generalist species had an average SCAI of 0.61, whereas the average SCAI was 0.26 for specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "and generalist species had an average SCAI of 0.61, whereas the average SCAI was 0.26 for specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from SCAI values across generalist and specialist species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "75507f34-b268-4d51-8ca4-f2b036760cee",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C20",
+      "claim": "SscnRCA increased with host range (Spearman rho = 0.59, p=2.7 10\u221205 under phylogenetic independent contrasts).",
+      "claim_type": "EXPLICIT",
+      "source": "SscnRCA increased with host range (Spearman rho = 0.59, p=2.7 10\u221205 under phylogenetic independent contrasts)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis using self-consistent normalized Relative Codon Adaptation index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "242752f2-07a6-4ea6-b77d-2c9502bd88b1",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C21",
+      "claim": "Generalist species had an average SscnRCA of 0.67, whereas the average SscnRCA was 0.32 for specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "and generalist species had an average SscnRCA of 0.67, whereas the average SscnRCA was 0.32 for specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from SscnRCA values across generalist and specialist species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a31e0f55-51cd-45ec-821d-b75d41228133",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C22",
+      "claim": "The tRNA adaptation indices (tAIs) were significantly higher in the orthologs of generalist genomes (median value is 0.361) than in orthologs of specialist genomes (median value is 0.337).",
+      "claim_type": "EXPLICIT",
+      "source": "The tRNA adaptation indices (tAIs) were significantly higher in the orthologs of generalist genomes (median value is 0.361) than in orthologs of specialist genomes (median value is 0.337; Welch's t-test p<0.01) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of tAIs in 1620 core ortholog genes, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "feb753d9-ecb1-4b59-8ac6-aba61c3207f8",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C23",
+      "claim": "S is significantly higher for COGs in generalist genomes (median is 0.774) than in specialist genomes (median is 0.167).",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated S for COGs in each genome and found that S is significantly higher for COGs in generalist genomes (median is 0.774) than in specialist genomes (median is 0.167; Welch's t-test p=9.9 10\u221206) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of S values for core ortholog genes, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "9f2250fe-19bc-4dea-97f4-14c3e2b40240",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C24",
+      "claim": "Codon optimization was generally lower in non-parasitic fungi than in their generalist relatives (average values for non parasitic fungi were S = 0.157, SCAI = 0.315 and SscnRCA = 0.354).",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the degree of codon optimization in non-parasitic fungal genomes and found that codon optimization was generally lower in non-parasitic fungi than in their generalist relatives (average values for non parasitic fungi were S = 0.157, SCAI = 0.315 and SscnRCA = 0.354).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated codon optimization values for 9 non-parasitic fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "2d7b0a6d-8e9f-419c-8ca5-b7b41111b58f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C25",
+      "claim": "The fungal parasites species used in this work represented four independent evolutionary paths to extreme generalism (over 100 host genera) with non-parasitic or specialists in the same clade, in the Chytridiomycota, the Agaricomycotina, the Leotiomycetes and the Sordariomycetes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal parasites species used in this work represented four independent evolutionary paths to extreme generalism (over 100 host genera) with non-parasitic or specialists in the same clade, in the Chytridiomycota, the Agaricomycotina, the Leotiomycetes and the Sordariomycetes (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phylogenetic analysis shown in Figure 3A identifying independent evolutionary origins of generalism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "322d883e-f16c-4527-a98f-615e314723e3",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C26",
+      "claim": "In all four clades, generalism was associated with an increase in genomic codon adaptation compared to related non-parasitic or specialist species and to the reconstructed ancestral state.",
+      "claim_type": "EXPLICIT",
+      "source": "In all four clades, generalism was associated with an increase in genomic codon adaptation compared to related non-parasitic or specialist species and to the reconstructed ancestral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phylogenetic reconstruction of ancestral states and comparison with extant species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "04ee69c4-d382-4a9b-8d2b-8c1bc2879bec",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C27",
+      "claim": "In the Leotiomycetes, the generalist parasites Botrytis cinerea and Sclerotinia sclerotiorum (>300 host genera) both had S > 0.5, whereas the non-parasitic Oidiodendron maius and the host specialists Erysiphe necator and Blumeria graminis f. sp. tritici had S < 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the Leotiomycetes, the generalist parasites Botrytis cinerea and Sclerotinia sclerotiorum (>300 host genera) both had S > 0.5, whereas the non-parasitic Oidiodendron maius and the host specialists Erysiphe necator and Blumeria graminis f. sp. tritici had S < 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific example from phylogenetic analysis showing codon optimization differences within a clade.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c94fbab6-8cbe-46ec-bd7e-ce5e3698adad",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C28",
+      "claim": "The reconstructed ancestral state for the Leotiomycetes clade was S = 0.37.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed ancestral state for this clade was S = 0.37.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ancestral state reconstruction using ML estimation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "d1343e8d-567a-47fd-b9cc-c92578ecb3e8",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C29",
+      "claim": "The correlation coefficient between genome-scale codon optimization and host range were between 0.64 and 0.84 for S, SCAI and SscnRCA at the Phylum level in Basidiomycetes and Ascomycetes, and across phyla in non-Dikarya fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation coefficient between genome-scale codon optimization and host range were between 0.64 and 0.84 for S, SCAI and SscnRCA at the Phylum level in Basidiomycetes and Ascomycetes, and across phyla in non-Dikarya fungi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sub-Kingdom level correlation analyses to test robustness across phylogeny.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "22c28448-39e0-4786-a7ae-11ff1698c060",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C30",
+      "claim": "Blomberg's K = 0.28 and Pagel's \u03bb = 0.62 for phylogenetic signal in genome scale codon optimization along the fungal tree.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained Blomberg's K = 0.28 and Pagel's \u03bb = 0.62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measures of phylogenetic signal calculated from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "1b07ab61-2775-41de-9212-9172f1b59cc3",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C31",
+      "claim": "Both measures indicated that evolution of codon optimization is not correlated with the phylogeny along the tree at p<0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Both measures indicated that evolution of codon optimization is not correlated with the phylogeny along the tree at p<0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical interpretation of Blomberg's K and Pagel's \u03bb values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "f5dbea31-ff69-4801-ab52-37b16b3530e4",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C32",
+      "claim": "Correlations between phylogenetic distance and codon optimization were insignificant (in the range \u22120.05 to 0.1) along the whole tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations were insignificant (in the range \u22120.05 to 0.1) along the whole tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlogram analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5bcbe2c6-c7a6-439a-b79c-fdb0194c366b",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C33",
+      "claim": "S. sclerotiorum is the causal agent of Sclerotinia rot disease, is notorious for its broad host range encompassing several hundreds of plant genera, and shows strong signatures of codon optimization (S = 0.52).",
+      "claim_type": "EXPLICIT",
+      "source": "S. sclerotiorum is the causal agent of Sclerotinia rot disease, is notorious for its broad host range encompassing several hundreds of plant genera, and shows strong signatures of codon optimization (S = 0.52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Background information on S. sclerotiorum and its calculated S value.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7fbead82-9d29-4667-86df-aaa452fff7b9",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C34",
+      "claim": "tRNA concentrations determined by small RNA sequencing strongly correlated with the number of tRNA genomic copies, tRNA adaptive values and codon usage in S. sclerotiorum.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected under strong codon optimization, tRNA concentrations determined by small RNA sequencing strongly correlated with the number of tRNA genomic copies, tRNA adaptive values (calculated according to [dos Reis et al., 2004]) and codon usage in S. sclerotiorum (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Small RNA sequencing data showing correlations, presented in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "383dd7b3-31c9-44cb-a5c5-a82aac675fa5",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C35",
+      "claim": "Z. tritici is a host-specific plant pathogenic fungus with weak codon optimization (S = \u22120.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We used 131,138 genome-wide coding SNPs of nine isolates of the host-specific plant pathogenic fungus Zymoseptoria tritici (Croll et al., 2013) as a reference species with weak codon optimization (S = \u22120.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Background information on Z. tritici and its calculated S value, with citation to SNP data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7f80e89f-543e-4f21-939b-ea90c5b604dc",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C36",
+      "claim": "The SNP frequency was higher in the Z. tritici population (1.196 SNP.Kb\u22121.isolate\u22121) compared to S. sclerotiorum (0.416 SNP.kb\u22121.isolate\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the SNP frequency was higher in the Z. tritici population (1.196 SNP.Kb\u22121.isolate\u22121) compared to S. sclerotiorum (0.416 SNP.kb\u22121.isolate\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from genome-wide SNP data in both species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a76cb89a-3630-49e9-a042-355c872513a7",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C37",
+      "claim": "Frequency of codon variants negatively correlated with the number of tRNA genomic copies in S. sclerotiorum (Pearson = \u22120.60, p = 4.6 10\u221207) but not in Z. tritici (Pearson = 0.06, p = 0.62).",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency of codon variants negatively correlated with the number of tRNA genomic copies in S. sclerotiorum (Pearson = \u22120.60, p = 4.6 10\u221207) but not in Z. tritici (Pearson = 0.06, p = 0.62) (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis of SNP patterns with tRNA gene copies, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "e23f87fc-8c17-4f12-a71f-8680579985bb",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C38",
+      "claim": "In the Z. tritici population, SNP frequencies were not significantly different between optimal and non-optimal codons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Z. tritici population, SNP frequencies were not significantly different between optimal and non-optimal codons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of SNP patterns in optimal vs non-optimal codons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "4bd82ca4-e097-459d-b967-ae9d6d3b8ab1",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C39",
+      "claim": "Synonymous SNP frequencies were on average ~1.7-fold lower in optimal codons than in non-optimal codons in S. sclerotiorum (Welch's t-test p=1.3 10\u221203).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, synonymous SNP frequencies were on average ~1.7-fold lower in optimal codons than in non-optimal codons in S. sclerotiorum (Welch's t-test p=1.3 10\u221203) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of SNP frequencies in optimal vs non-optimal codons, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "053d5bc3-993f-4c47-bf28-740650f25f7a",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C40",
+      "claim": "S. sclerotiorum genome is AT-rich (41.8% GC).",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. sclerotiorum genome is AT-rich (41.8% GC), synonymous SNPs showed no bias toward AT conversion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated GC content of the S. sclerotiorum genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7041c58e-27cf-4d23-a459-6beeb21084f2",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C41",
+      "claim": "Synonymous SNPs in S. sclerotiorum showed no bias toward AT conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. sclerotiorum genome is AT-rich (41.8% GC), synonymous SNPs showed no bias toward AT conversion, suggesting that synonymous SNPs deviated from neutral patterns (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of SNP patterns shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "36661204-2f51-4994-aadd-c60c311e44ea",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C42",
+      "claim": "Adjusted variant frequencies in S. sclerotiorum were similar in intergenic nucleotide triplets and in non-optimal codons but significantly lower in optimal codons (~1.53-fold lower, Welch's t-test p= 1.0 10\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, adjusted variant frequencies in S. sclerotiorum were similar in intergenic nucleotide triplets and in non-optimal codons but significantly lower in optimal codons (~1.53-fold lower, Welch's t-test p= 1.0 10\u221211) (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of variant frequencies across different genomic contexts, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "1a1f4131-d6bf-409b-9613-8b984f42b0bb",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C43",
+      "claim": "The codon SNP patterns determined experimentally converge toward increased codon optimality in S. sclerotiorum genome, whereas SNP patterns observed in Z. tritici genome and random mutation patterns do not.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that the codon SNP patterns determined experimentally converge toward increased codon optimality in S. sclerotiorum genome, whereas SNP patterns observed in Z. tritici genome and random mutation patterns do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 4C demonstrating evolutionary trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "779f4c0f-bab1-4ce3-b34b-a2e3a078f614",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C44",
+      "claim": "Patterns of evolution toward increased codon optimality were detected in S. sclerotiorum but not in Z. tritici populations, and deviate significantly from neutral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, patterns of evolution toward increased codon optimality were detected in S. sclerotiorum but not in Z. tritici populations, and deviate significantly from neutral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from simulation analysis comparing observed vs random mutation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "87f5cf94-18a2-41be-8e80-bb727ab26461",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C45",
+      "claim": "A total of 14 species showed signatures of selection for codon optimization with a p<0.1, among which one was a specialist (M. roreri) and one had eight host genera (P. destructans).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 14 species showed signatures of selection for codon optimization with a p<0.1, among which one was a specialist (M. roreri) and one had eight host genera (P. destructans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Permutation test results across fungal genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "e79adc3e-b6fe-4874-9836-90f701034fca",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C46",
+      "claim": "Twelve out of 15 (80%) generalist species showed selection for codon optimization with a p<0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve out of 15 (80%) generalist species showed selection for codon optimization with a p<0.1, confirming that adaptive translation is stronger in generalist species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Permutation test results for generalist species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "22b5b8a4-00d5-4fa8-9e43-955e54246858",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C47",
+      "claim": "Natural selection on protein translation efficiency or accuracy drives evolution toward codon optimization in generalist parasites through biased synonymous SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that natural selection on protein translation efficiency or accuracy drives evolution toward codon optimization in generalist parasites through biased synonymous SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SNP analysis and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "cef4325f-2c8f-4a76-b183-506e32cb4ea1",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C48",
+      "claim": "Host-induced genes were enriched ~3.1-fold among the top 10% codon-adapted genes in generalist parasites but not in specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that host-induced genes were enriched ~3.1-fold among the top 10% codon-adapted genes in generalist parasites but not in specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of host-induced genes across 15 fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "2154d060-cb5d-4892-b179-62510e83e627",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C49",
+      "claim": "Genes induced during host colonization distributed predominantly among genes with high codon adaptation indices in generalist but not in specialist parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, genes induced during host colonization distributed predominantly among genes with high codon adaptation indices in generalist but not in specialist parasites (Figure 5A, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Distribution analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "87648993-b63e-4f0b-b0a2-974d1e791869",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C50",
+      "claim": "Secretome genes were enriched over 1.6-fold among the top 10% codon-adapted genes in generalist parasites but only ~1.2-fold in specialists and non-parasitic fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that secretome genes were enriched over 1.6-fold among the top 10% codon-adapted genes in generalist parasites but only ~1.2-fold in specialists and non-parasitic fungi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of secretome genes across 45 fungal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "e21cda13-622c-4915-a89c-d6e7e2ec5553",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C51",
+      "claim": "Predicted secretome genes distributed predominantly among genes with high codon adaptation indices in generalist parasites but not in specialist and non parasitic fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, predicted secretome genes distributed predominantly among genes with high codon adaptation indices in generalist parasites but not in specialist and non parasitic fungi (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Distribution analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "291ef82e-a0e9-44ec-97d8-228a92902f43",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C52",
+      "claim": "In non-parasitic fungi, S was similar for secreted and non-secreted proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In our genome set, non-parasitic fungi had similar S for secreted and non-secreted proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of S values for different protein categories in non-parasitic fungi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "2e00f7e5-afa6-44a0-8e50-bfc69f88be5f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C53",
+      "claim": "The average S for secreted proteins (0.212) was slightly higher than for non-secreted proteins (0.137) in specialists (Student's paired t-test p=0.054).",
+      "claim_type": "EXPLICIT",
+      "source": "The average S for secreted proteins (0.212) was slightly higher than for non-secreted proteins (0.137) in specialists (Student's paired t-test p=0.054).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of S values for secreted vs non-secreted proteins in specialists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "d6be4543-d0d6-45dc-91a3-160ff8a702ac",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C54",
+      "claim": "In generalists, the average S for secreted proteins (0.661) was significantly higher than for non secreted proteins (0.558, Student's paired t-test p=1.12 10\u221203).",
+      "claim_type": "EXPLICIT",
+      "source": "In generalists, the average S for secreted proteins (0.661) was significantly higher than for non secreted proteins (0.558, Student's paired t-test p=1.12 10\u221203).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of S values for secreted vs non-secreted proteins in generalists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7f205662-4b04-4b1e-9bf3-94de4d200844",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C55",
+      "claim": "GOs related to translation and central metabolism showed higher codon optimization in generalists than in specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with secreted enzymes, GOs related to translation and central metabolism showed higher codon optimization in generalists than in specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene Ontology analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "d6be0676-9159-414f-a725-b70b2f1b8627",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C56",
+      "claim": "GOs related to transcription, transposable elements and phosphorelay signal transduction were better optimized in specialists than in generalists.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, GOs related to transcription, transposable elements and phosphorelay signal transduction were better optimized in specialists than in generalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene Ontology analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5e787bd1-0bca-4337-9194-39b88d061e57",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C57",
+      "claim": "High codon optimization is an adaptation to host colonization and particularly to the colonization of multiple hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that high codon optimization is an adaptation to host colonization and particularly to the colonization of multiple hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple analyses of host-induced genes, secretome genes, and functional enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "3b6c97fd-2d71-48c0-83fc-76ec91e1186c",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C58",
+      "claim": "The host range of a parasite has a central influence on the emergence and spread of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The host range of a parasite has a central influence on the emergence and spread of disease (Woolhouse and Gowtage-Sequeria, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Woolhouse and Gowtage-Sequeria, 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7244a9f4-e5cb-4b5e-ac6f-e2dcae50acaf",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C59",
+      "claim": "There is a clear demarcation between specialist parasites that can only infect one or a few closely related host species and generalists that can infect more than a hundred unrelated host species.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a clear demarcation between specialist parasites that can only infect one or a few closely related host species and generalists that can infect more than a hundred unrelated host species (Woolhouse et al., 2001; Barrett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Woolhouse et al., 2001; Barrett et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "26ecdb27-7197-4bf3-90df-fe8ad8316752",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C60",
+      "claim": "The host range is a trait constrained by ecological and physiological factors and determined by the evolutionary history of a parasite and its potential hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The host range is a trait constrained by ecological and physiological factors and determined by the evolutionary history of a parasite and its potential hosts (Poulin and Keeney, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Poulin and Keeney, 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "87c9f2b4-970e-46eb-be6f-a5bccd9ccbef",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C61",
+      "claim": "Host specialization is a frequent pattern in living systems that was proposed to result from tradeoffs in performance on multiple hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Host specialization is a frequent pattern in living systems that was proposed to result from tradeoffs in performance on multiple hosts (Joshi and Thompson, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Joshi and Thompson, 1995).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "caef2b07-97a6-4563-bc09-65d827e57276",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C62",
+      "claim": "Optimization by natural selection of parasite proteins functioning in the interaction with a given host may be detrimental to their function in another species.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, optimization by natural selection of parasite proteins functioning in the interaction with a given host may be detrimental to their function in another species (Dodds and Rathjen, 2010; Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Dodds and Rathjen, 2010; Dong et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c2d0328f-9a57-4aff-a11f-db20d1781467",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C63",
+      "claim": "Genomic analyses of obligate specialist parasites revealed massive losses of enzymes unnecessary for growth and reproduction on living hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic analyses of obligate specialist parasites revealed massive losses of enzymes unnecessary for growth and reproduction on living hosts (Schirawski et al., 2010; Spanu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Schirawski et al., 2010; Spanu et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "4aafc924-ac9b-4683-a768-4cd9437788ce",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C64",
+      "claim": "The genome of the powdery mildew pathogen Blumeria graminis f. sp. hordei harbors 180 SSPs of about 100\u2013150 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the genome of the powdery mildew pathogen Blumeria graminis f. sp. hordei harbors 180 SSPs of about 100\u2013150 amino acids (Pedersen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Pedersen et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "f2fedd0e-42f3-4d01-bc0f-20e03eeb2966",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C65",
+      "claim": "SSPs of specialist fungi often show evidence of diversifying-selection leading to extensive changes in their protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "SSPs of specialist fungi often show evidence of diversifying-selection leading to extensive changes in their protein sequence (Stukenbrock et al., 2011; Pedersen et al., 2012; Hacquard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Stukenbrock et al., 2011; Pedersen et al., 2012; Hacquard et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "9b32f7ee-1348-4b16-b057-9bf8a7a24f5f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C66",
+      "claim": "The secretion of a battery of degrading enzymes is crucial for the parasitic success of generalists.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the secretion of a battery of degrading enzymes is crucial for the parasitic success of generalists (Hu et al., 2014; Kubicek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Hu et al., 2014; Kubicek et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "d74ddbfa-329c-459e-ac9d-5989b56e7bb9",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C67",
+      "claim": "The genomes of generalist fungi contain in average ~3 times more carbohydrate activity enzymes (CAZYmes) than specialist fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes of generalist fungi notably contain in average ~3 times more carbohydrate activity enzymes (CAZYmes) than specialist fungi (Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Zhao et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "7c52099c-278a-4bc0-914c-dc8a260f1625",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C68",
+      "claim": "Rhizoctonia solani AG2-2IIIB contains over 1000 CAZYme genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Rhizoctonia solani AG2-2IIIB contains over 1000 CAZYme genes (Wibberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Wibberg et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c0930876-2f13-45c2-bacf-070db012dd3a",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C69",
+      "claim": "Protein translation is the largest consumer of energy during cellular proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein translation is the largest consumer of energy during cellular proliferation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about cellular metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "099d77c3-2d11-4ae9-b2ee-17b0b222e20c",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C70",
+      "claim": "Secreted proteins are not recycled like other cellular proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and because secreted proteins are not recycled like other cellular proteins, strong constraints exist to reduce the synthetic cost of secreted proteins in microbes (Smith and Chapman, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Smith and Chapman, 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "2b22fc8d-d11e-45cc-ac50-a24a8c52bf64",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C71",
+      "claim": "The differential use of synonymous codons in a genome, or codon usage bias, affects gene expression level, protein folding, translation efficiency and accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential use of synonymous codons in a genome, or codon usage bias, affects gene expression level, protein folding, translation efficiency and accuracy (Plotkin and Kudla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Plotkin and Kudla, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "1176bfe0-4d74-4a8f-bd0e-9a72bd101075",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C72",
+      "claim": "The co-evolution of codons with the genomic tRNA complement, leading to codon optimization, results from the combination of neutral processes and selection for the optimization of protein translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the co-evolution of codons with the genomic tRNA complement, leading to codon optimization, results from the combination of neutral processes and selection for the optimization of protein translation (Hershberg and Petrov, 2008; Shah and Gilchrist, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Hershberg and Petrov, 2008; Shah and Gilchrist, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "d9081a58-3135-47f5-9a63-42b235911897",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C73",
+      "claim": "Natural selection for the optimization of protein translation, through ribosome pausing time, translation error rates and co-translational protein folding, has been widely associated with codon usage biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural selection for the optimization of protein translation, through ribosome pausing time, translation error rates and co-translational protein folding, has been widely associated with codon usage biases (Drummond and Wilke, 2008; Tuller et al., 2010; Shah and Gilchrist, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Drummond and Wilke, 2008; Tuller et al., 2010; Shah and Gilchrist, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "56abdd93-63b2-4b0a-84fe-5c2f9db96370",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C74",
+      "claim": "The probability of protein translation error increases with protein length.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the probability of protein translation error increases with protein length, selection for translation accuracy can be higher in genes encoding long proteins, as was observed in E. coli (Eyre-Walker, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Eyre-Walker, 1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "2304a334-fbda-4345-8411-4a303f11d0c5",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C75",
+      "claim": "Selection for translation accuracy can be higher in genes encoding long proteins, as was observed in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the probability of protein translation error increases with protein length, selection for translation accuracy can be higher in genes encoding long proteins, as was observed in E. coli (Eyre-Walker, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Eyre-Walker, 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "fd29a1ad-2653-4e35-9a1e-5a9b8114654f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C76",
+      "claim": "Codon usage bias increases with the evolutionary age of genes, the frequency of codons optimal for translation being significantly higher at codons for conserved amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Codon usage bias also increases with the evolutionary age of genes, the frequency of codons optimal for translation being significantly higher at codons for conserved amino acids (Marais and Duret, 2001; Prat et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Marais and Duret, 2001; Prat et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "a976bb39-14c9-497d-98b1-5b211d62f93f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C77",
+      "claim": "The cost of protein translation leads to a tradeoff between protein production and cell growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost of protein translation leads to a tradeoff between protein production and cell growth rate (Scott et al., 2010; Shah et al., 2013; Kafri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Scott et al., 2010; Shah et al., 2013; Kafri et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c7110381-1efb-47ca-961c-4336a578a79f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C78",
+      "claim": "Codon optimization impacts cell growth in selective environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Codon optimization therefore impacts cell growth in selective environments (Botzman and Margalit, 2011; Krisko et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Botzman and Margalit, 2011; Krisko et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "83e1320b-c6cb-420c-ba10-9c103cfedab6",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C79",
+      "claim": "Codon optimization could positively impact on the performances of parasites regardless of the host they encounter.",
+      "claim_type": "EXPLICIT",
+      "source": "and could positively impact on the performances of parasites regardless of the host they encounter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the relationship between codon optimization and cell growth.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "80489e1f-341f-44f5-847b-0389d8675505",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C80",
+      "claim": "Generalist lineages performing better on average on their set of available hosts than co-occurring specialist competitors is predicted by the 'jack of all trades, master of none' theoretical model.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis would be consistent with generalist lineages performing better on average on their set of available hosts than co-occurring specialist competitors to persist in the biota, as predicted by the 'jack of all trades, master of none' theoretical model (Futuyma and Moreno, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Futuyma and Moreno, 1988).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "3176e5a9-fa61-4a76-b24d-805bdeadf206",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C81",
+      "claim": "High codon optimization and broad host ranges co-evolved multiple times independently through fungal phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "High codon optimization and broad host ranges co-evolved multiple times independently through fungal phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from phylogenetic analysis showing independent evolutionary origins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "6d290495-2e97-46c7-a2f6-c6531a38e7f8",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C82",
+      "claim": "Signatures of purifying natural selection acting on optimal codons were detected in the generalist parasite only.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected signatures of purifying natural selection acting on optimal codons in the generalist parasite only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from SNP pattern analysis comparing S. sclerotiorum and Z. tritici.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "961e7f83-8731-45ed-8a0e-234846ba0c76",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C83",
+      "claim": "The efficiency and accuracy of protein translation constrains cell growth rate and depends on sequence properties of expressed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency and accuracy of protein translation constrains cell growth rate and depends on sequence properties of expressed proteins (Ingolia et al., 2009; Kafri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Ingolia et al., 2009; Kafri et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "0108c3b6-c127-4ad7-b278-89f41048eadf",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C84",
+      "claim": "The likelihood that a parasite can infect two host species decreases continuously with phylogenetic distance between the hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood that a parasite can infect two host species decreases continuously with phylogenetic distance between the hosts (Gilbert and Webb, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Gilbert and Webb, 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "9c50d8a9-c5e0-4c7c-b0d2-42b72c2b444c",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C85",
+      "claim": "Gilbert and Webb reported that the proportion of hosts colonized was about ~20% at a 300 Mya phylogenetic distance, decreasing logarithmically.",
+      "claim_type": "EXPLICIT",
+      "source": "In their study, Gilbert and Webb reported that the proportion of hosts colonized was about ~20% at a 300 Mya phylogenetic distance, decreasing logarithmically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Gilbert and Webb, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "6acf0be8-c703-42a9-a4b9-df65502f95c3",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C86",
+      "claim": "The adaptive evolution of effectors that increase the colonization of one host species also increases the risk of detection in other host species by triggering their immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive evolution of effectors that increase the colonization of one host species also increases the risk of detection in other host species by triggering their immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about tradeoffs in effector evolution.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "3141f553-b4d6-4792-8a76-6e4e015218e4",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C87",
+      "claim": "Natural selection that maximizes parasite fitness on one particular host species might result in decreased fitness on an alternative host, leading to specialization (reduced host range) or host shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, natural selection that maximizes parasite fitness on one particular host species might result in decreased fitness on an alternative host, leading to specialization (reduced host range) or host shift (Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Dong et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "808aa9e8-5312-44d4-94c8-0ca93e19d70d",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C88",
+      "claim": "The evolution of generalism has been associated to hybridization events.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of generalism has been associated to hybridization events (McMullan et al., 2015; Menardo et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (McMullan et al., 2015; Menardo et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "050efd7e-bb1c-426b-ad1e-81382312d68d",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C89",
+      "claim": "The evolution of generalism has been associated to horizontal transfer of genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "horizontal transfer of genetic elements (Ma et al., 2010; Hu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Ma et al., 2010; Hu et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "e8ae32b0-6174-4ced-aa23-d47a5281af5b",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C90",
+      "claim": "The evolution of generalism has been associated to an overall increase in the repertoire of protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and an overall increase in the repertoire of protein-coding genes (Hu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Hu et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "91fab1ea-bd43-4fcb-bf5b-c0787bed893b",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C91",
+      "claim": "Large repertoires of host-degrading enzymes encoded by the genome of generalist parasites play a prominent role in pathogenic success.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the prominent role in pathogenic success of large repertoires of host-degrading enzymes encoded by the genome of generalist parasites (King et al., 2011; Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (King et al., 2011; Zhao et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "97ba6ad0-0665-41cb-a5c4-553f33ef0e5f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C92",
+      "claim": "The massive production of virulence factors by the generalist bacterial pathogen Ralstonia solanacearum reduces its metabolic versatility and thus its host colonization capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the massive production of virulence factors by the generalist bacterial pathogen Ralstonia solanacearum reduces its metabolic versatility and thus its host colonization capacity (Perrier et al., 2016; Peyraud et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature (Perrier et al., 2016; Peyraud et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "26bd8a88-b3e1-4cb0-af84-cd1eddeea324",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C93",
+      "claim": "The adaptive evolution of the translation machinery is predicted to favor generalists' performances in heterogeneous host populations, by reducing the cost of large and diverse sets of secreted enzymes production on proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive evolution of the translation machinery described here is predicted to favor generalists' performances in heterogeneous host populations, by reducing the cost of large and diverse sets of secreted enzymes production on proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the findings about codon optimization and its effects on translation efficiency.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "27257640-014e-463a-b5c3-64b365d91215",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C94",
+      "claim": "The mitigation of the tradeoff between cell proliferation and protein synthesis by codon optimization could explain how generalist lineages have maintained or gained the ability to produce diverse sets of secreted enzymes, allowing the colonization of genetically diverse hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitigation of the tradeoff between cell proliferation and protein synthesis (Li et al., 2014) by codon optimization could explain how generalist lineages have maintained or gained the ability to produce diverse sets of secreted enzymes, allowing the colonization of genetically diverse hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference combining citation (Li et al., 2014) with the study's findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "829b8a8a-a035-4daf-98da-fdf7c9f857a1",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C95",
+      "claim": "Codon optimization may affect the expression of effectors and other virulence factors, modifying the degree of infection or enabling the colonization of new hosts opposing quantitative disease resistance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Codon optimization may affect the expression of effectors and other virulence factors, modifying the degree of infection or enabling the colonization of new hosts opposing quantitative disease resistance mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "78a383c0-a610-484b-97e9-4866294140fb",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "claim_id": "C96",
+      "claim": "Parasite host range variation is a prime example of an adaptive phenotype related to codon optimality and translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that parasite host range variation is a prime example of an adaptive phenotype related to codon optimality and translational regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from all findings in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "509d8813-b49d-430f-8097-c7eb361f4597",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Generalist fungi encode longer proteins than specialists, particularly secreted proteins (~14.8% longer) and intracellular proteins (~10.1% longer), while ribosomal proteins are slightly shorter. Computational modeling predicts that these longer proteins require higher codon decoding rates in generalists to achieve growth rates similar to specialists (21.7 vs 19.9 codons/sec for 4000 cells/day).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 provide statistically significant protein length differences across 13 specialist and 15 generalist species (p<10^-8 for secreted and intracellular proteins). The computational model (C11-C12) logically connects these length differences to translational demands. However, the model relies on simplified assumptions about cellular translation machinery and uses parameters from yeast (C10), which may not fully represent fungal diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Codon optimization at the genome scale strongly correlates with host range across 36 fungal species using multiple independent metrics (S, SCAI, SscnRCA), with correlations ranging from Spearman rho=0.59-0.82 (p<10^-5) even after phylogenetic correction. Generalists show significantly higher codon optimization than specialists across all metrics, including in conserved core ortholog genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent codon optimization metrics (C15, C18, C20) all show strong, statistically significant correlations with host range. Phylogenetic independent contrasts (C17) control for phylogenetic non-independence. Analysis of 1620 core ortholog genes (C22-C23) addresses concerns about genome assembly quality. The convergence of multiple analytical approaches strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High codon optimization and broad host range co-evolved independently at least four times across fungal phylogeny (Chytridiomycota, Agaricomycotina, Leotiomycetes, Sordariomycetes). Phylogenetic signal analyses (Blomberg's K=0.28, Pagel's \u03bb=0.62) indicate codon optimization evolution is not strongly correlated with phylogeny, supporting independent evolutionary origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 document four independent evolutionary transitions with ancestral state reconstruction. Phylogenetic signal tests (C30-C32) appropriately demonstrate that the trait is not simply inherited from common ancestry. The correlation holds within major fungal groups (C29), strengthening the case for convergent evolution. However, ancestral state reconstruction accuracy depends on model assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "4f20b513-ae5d-49a8-a147-a163d5fe9917",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Population genomic analysis reveals biased synonymous substitution patterns consistent with purifying selection on optimal codons in the generalist S. sclerotiorum but not the specialist Z. tritici. Synonymous SNP frequencies are ~1.7-fold lower in optimal codons in S. sclerotiorum (p=1.3\u00d710^-3), and simulations show observed SNP patterns drive evolution toward increased codon optimality only in the generalist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 provide direct population genetic evidence with appropriate statistical tests. The simulation approach (C43-C44) effectively demonstrates that observed patterns deviate from neutral evolution. However, the analysis compares only two species with different overall SNP frequencies (C36), and alternative explanations for reduced variation in optimal codons (e.g., linked selection) are not fully excluded. The lack of AT bias (C41) strengthens the selection argument.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "0f4ba905-8548-41d1-9cce-f19b27ee2c6e",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Permutation tests across fungal genomes show that 12 out of 15 (80%) generalist species exhibit signatures of selection for codon optimization (p<0.1), compared to only 1 specialist and 1 intermediate species, confirming stronger adaptive translation in generalists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The permutation test approach (C45-C46) provides appropriate statistical framework for detecting selection. The strong enrichment in generalists (80% vs minimal in specialists) supports the main hypothesis. However, the p<0.1 threshold is relatively permissive, and multiple testing correction across 36 species is not explicitly mentioned. The method tests deviation from neutral expectations but does not directly measure selection strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Virulence-associated genes (host-induced genes and secretome genes) are significantly enriched among highly codon-optimized genes in generalist parasites (~3.1-fold and ~1.6-fold enrichment respectively) but not in specialists, suggesting codon optimization is an adaptation to multi-host colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 demonstrate consistent enrichment patterns across multiple species and gene categories. The functional connection between virulence genes and codon optimization in generalists specifically (C5) supports the adaptive hypothesis. However, the analysis relies on predicted secretomes and transcriptomic data from various sources, which may have variable quality. The enrichment is clear but the mechanistic link to host range requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "f9a58ef2-abbc-4f8d-9560-51dbc9f70956",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Secreted proteins show significantly higher codon optimization than non-secreted proteins in generalists (S=0.661 vs 0.558, p=1.12\u00d710^-3) but not in specialists (S=0.212 vs 0.137, p=0.054) or non-parasitic fungi, indicating differential selection pressure on secreted protein translation in generalists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The paired t-test approach (C53-C54) appropriately compares within-genome differences across species categories. The significant difference in generalists but marginal in specialists supports the hypothesis. However, the sample sizes (15 generalists, 13 specialists, 9 non-parasitic) are modest, and the biological significance of the S value differences could be better contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c48c0c09-73b4-4518-8aa0-8fb89b5e789a",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene Ontology analysis reveals that genes related to translation, central metabolism, and secreted enzymes show higher codon optimization in generalists than specialists, while genes related to transcription, transposable elements, and signal transduction are better optimized in specialists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 identify functional categories with differential codon optimization patterns. The results are consistent with the overall hypothesis that generalists optimize translation-related functions. However, the analysis lacks statistical testing for GO enrichment, and the biological interpretation of why certain functions are better optimized in specialists (C56) is not fully developed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "57bc506b-39d2-42f8-a855-adbb68dcb38c",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In S. sclerotiorum, tRNA concentrations measured by small RNA sequencing strongly correlate with tRNA genomic copy numbers, tRNA adaptive values, and codon usage, validating the assumption that tRNA gene copy number reflects tRNA abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 provides important validation of a key assumption underlying the codon optimization analyses. The correlation between tRNA gene copies and expression is well-established but species-specific validation strengthens the study. However, correlations are shown in supplementary figures without quantitative statistics reported in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "5cb23ffc-3c7b-4e53-815a-8cd27d86f08f",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Non-parasitic fungi show generally lower codon optimization than their generalist relatives (average S=0.157, SCAI=0.315, SscnRCA=0.354), supporting the view that codon optimization increased after divergence of generalist parasites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 provides comparative context with 9 non-parasitic species. The lower values in non-parasitic fungi support the evolutionary interpretation. However, the sample size is small (n=9), and the claim acknowledges that some non-parasitic lineages could have high codon optimization, limiting the generality of this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "1e5d2255-42bf-48e8-a8bd-fe2b51bfed13",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "S. sclerotiorum (generalist, S=0.52) and Z. tritici (specialist, S=-0.02) serve as appropriate model species for population genomic analysis, with S. sclerotiorum showing strong codon optimization signatures and lower overall SNP frequency (0.416 vs 1.196 SNP/Kb/isolate) despite being AT-rich (41.8% GC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 establish the characteristics of the two focal species. The species choice is well-justified based on their contrasting host ranges and codon optimization levels. The GC content information (C40) is relevant for interpreting mutation patterns. However, the different SNP frequencies could reflect demographic history rather than selection, which is partially addressed by subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "0819e1ca-d40c-4a77-8612-ee9559d137fa",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study concludes that codon optimization underlies genome adaptation in broad host range parasites and is related to the capacity to colonize multiple hosts, representing an adaptive phenotype related to codon optimality and translational regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C1, C6, C96) integrate findings from multiple analyses. The conclusion is well-supported by convergent evidence from comparative genomics, phylogenetics, population genetics, and functional analyses. However, the causal relationship between codon optimization and host range capacity remains correlative rather than experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction and discussion establish the biological context through extensive citation of prior work on host range evolution, specialist vs generalist strategies, codon usage bias, translational selection, and genomic features of fungal parasites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C58-C92) appropriately cite relevant literature to establish context. The citations appear accurate and relevant. However, as these are primarily literature-based knowledge claims rather than novel findings, they serve to frame the study rather than constitute results requiring evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    },
+    {
+      "id": "c8d5471a-3326-45ea-8a3c-73d9b9f8e277",
+      "content_id": "4bfb0c1b-36bb-411b-b71a-5787b2664422",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that codon optimization could positively impact parasite performance across hosts, favor generalist performance by reducing costs of secreted enzyme production, and potentially affect virulence factor expression to enable colonization of new hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79, C93-C95 are explicitly speculative inferences about mechanisms and implications. While logically consistent with the findings, these represent hypotheses for future testing rather than demonstrated results. The speculation is appropriately qualified in the text but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:25.610322Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5128826f-c72e-4971-be00-8540459d4137",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "7d9f75d8-1369-4468-8bf1-45a7b662f9b3",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "a6187d75-9ca3-433b-8b2d-409bdb6d01c2",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "a9bfa099-8d78-45fa-86e6-352cbf53dfd0",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "0a3eb895-517a-46b1-96b4-11218479cf5f",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "fd9de4ea-231d-4ce5-b1ce-2199fe77829e",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "9182e472-9cd4-4de7-a696-b216c3088380",
+      "result_id": "509d8813-b49d-430f-8097-c7eb361f4597"
+    },
+    {
+      "claim_id": "ce1836fa-5e9f-4dcc-af57-1470bfefb83f",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "5ee90860-d8e8-451a-9466-d57db8bd4266",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "6d3aeeb1-9add-49f7-87e4-2e8006cda6d0",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "34d200d2-0964-4a5f-9a21-45ba2c1d15ec",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "cf84cf1a-27a6-45a6-95f5-96a6c71fd830",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "85fc139d-0ff0-4393-a883-06967dea952a",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "75507f34-b268-4d51-8ca4-f2b036760cee",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "242752f2-07a6-4ea6-b77d-2c9502bd88b1",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "a31e0f55-51cd-45ec-821d-b75d41228133",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "feb753d9-ecb1-4b59-8ac6-aba61c3207f8",
+      "result_id": "f9490d2c-7d8c-43fc-aa7f-9d37356fe6c8"
+    },
+    {
+      "claim_id": "2d7b0a6d-8e9f-419c-8ca5-b7b41111b58f",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "322d883e-f16c-4527-a98f-615e314723e3",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "04ee69c4-d382-4a9b-8d2b-8c1bc2879bec",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "c94fbab6-8cbe-46ec-bd7e-ce5e3698adad",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "3176e5a9-fa61-4a76-b24d-805bdeadf206",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "d1343e8d-567a-47fd-b9cc-c92578ecb3e8",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "22c28448-39e0-4786-a7ae-11ff1698c060",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "1b07ab61-2775-41de-9212-9172f1b59cc3",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "f5dbea31-ff69-4801-ab52-37b16b3530e4",
+      "result_id": "65cc3fcc-62ae-4888-9f27-62cb59c4394e"
+    },
+    {
+      "claim_id": "a76cb89a-3630-49e9-a042-355c872513a7",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "e23f87fc-8c17-4f12-a71f-8680579985bb",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "4bd82ca4-e097-459d-b967-ae9d6d3b8ab1",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "7041c58e-27cf-4d23-a459-6beeb21084f2",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "36661204-2f51-4994-aadd-c60c311e44ea",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "1a1f4131-d6bf-409b-9613-8b984f42b0bb",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "779f4c0f-bab1-4ce3-b34b-a2e3a078f614",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "47fa4d45-ce33-4b6f-90d0-42c323c2c907",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "22b5b8a4-00d5-4fa8-9e43-955e54246858",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "6d290495-2e97-46c7-a2f6-c6531a38e7f8",
+      "result_id": "4f20b513-ae5d-49a8-a147-a163d5fe9917"
+    },
+    {
+      "claim_id": "87f5cf94-18a2-41be-8e80-bb727ab26461",
+      "result_id": "0f4ba905-8548-41d1-9cce-f19b27ee2c6e"
+    },
+    {
+      "claim_id": "e79adc3e-b6fe-4874-9836-90f701034fca",
+      "result_id": "0f4ba905-8548-41d1-9cce-f19b27ee2c6e"
+    },
+    {
+      "claim_id": "cef4325f-2c8f-4a76-b183-506e32cb4ea1",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "2154d060-cb5d-4892-b179-62510e83e627",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "87648993-b63e-4f0b-b0a2-974d1e791869",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "e21cda13-622c-4915-a89c-d6e7e2ec5553",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "a6af1155-0263-4bbb-af99-bacdce776320",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "5e787bd1-0bca-4337-9194-39b88d061e57",
+      "result_id": "99194423-1ec1-42a6-9f8c-3934ab51c7ea"
+    },
+    {
+      "claim_id": "291ef82e-a0e9-44ec-97d8-228a92902f43",
+      "result_id": "f9a58ef2-abbc-4f8d-9560-51dbc9f70956"
+    },
+    {
+      "claim_id": "2e00f7e5-afa6-44a0-8e50-bfc69f88be5f",
+      "result_id": "f9a58ef2-abbc-4f8d-9560-51dbc9f70956"
+    },
+    {
+      "claim_id": "d6be4543-d0d6-45dc-91a3-160ff8a702ac",
+      "result_id": "f9a58ef2-abbc-4f8d-9560-51dbc9f70956"
+    },
+    {
+      "claim_id": "7f205662-4b04-4b1e-9bf3-94de4d200844",
+      "result_id": "c48c0c09-73b4-4518-8aa0-8fb89b5e789a"
+    },
+    {
+      "claim_id": "d6be0676-9159-414f-a725-b70b2f1b8627",
+      "result_id": "c48c0c09-73b4-4518-8aa0-8fb89b5e789a"
+    },
+    {
+      "claim_id": "7fbead82-9d29-4667-86df-aaa452fff7b9",
+      "result_id": "57bc506b-39d2-42f8-a855-adbb68dcb38c"
+    },
+    {
+      "claim_id": "9f2250fe-19bc-4dea-97f4-14c3e2b40240",
+      "result_id": "5cb23ffc-3c7b-4e53-815a-8cd27d86f08f"
+    },
+    {
+      "claim_id": "5bcbe2c6-c7a6-439a-b79c-fdb0194c366b",
+      "result_id": "1e5d2255-42bf-48e8-a8bd-fe2b51bfed13"
+    },
+    {
+      "claim_id": "383dd7b3-31c9-44cb-a5c5-a82aac675fa5",
+      "result_id": "1e5d2255-42bf-48e8-a8bd-fe2b51bfed13"
+    },
+    {
+      "claim_id": "7f80e89f-543e-4f21-939b-ea90c5b604dc",
+      "result_id": "1e5d2255-42bf-48e8-a8bd-fe2b51bfed13"
+    },
+    {
+      "claim_id": "053d5bc3-993f-4c47-bf28-740650f25f7a",
+      "result_id": "1e5d2255-42bf-48e8-a8bd-fe2b51bfed13"
+    },
+    {
+      "claim_id": "0abe623f-2ff9-4a30-88dd-958be5bc681a",
+      "result_id": "0819e1ca-d40c-4a77-8612-ee9559d137fa"
+    },
+    {
+      "claim_id": "5ab83ee2-e87d-411b-9753-4b91f64ab853",
+      "result_id": "0819e1ca-d40c-4a77-8612-ee9559d137fa"
+    },
+    {
+      "claim_id": "78a383c0-a610-484b-97e9-4866294140fb",
+      "result_id": "0819e1ca-d40c-4a77-8612-ee9559d137fa"
+    },
+    {
+      "claim_id": "3b6c97fd-2d71-48c0-83fc-76ec91e1186c",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "7244a9f4-e5cb-4b5e-ac6f-e2dcae50acaf",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "26ecdb27-7197-4bf3-90df-fe8ad8316752",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "87c9f2b4-970e-46eb-be6f-a5bccd9ccbef",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "caef2b07-97a6-4563-bc09-65d827e57276",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "c2d0328f-9a57-4aff-a11f-db20d1781467",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "4aafc924-ac9b-4683-a768-4cd9437788ce",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "f2fedd0e-42f3-4d01-bc0f-20e03eeb2966",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "9b32f7ee-1348-4b16-b057-9bf8a7a24f5f",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "d74ddbfa-329c-459e-ac9d-5989b56e7bb9",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "7c52099c-278a-4bc0-914c-dc8a260f1625",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "c0930876-2f13-45c2-bacf-070db012dd3a",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "099d77c3-2d11-4ae9-b2ee-17b0b222e20c",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "2b22fc8d-d11e-45cc-ac50-a24a8c52bf64",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "1176bfe0-4d74-4a8f-bd0e-9a72bd101075",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "d9081a58-3135-47f5-9a63-42b235911897",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "56abdd93-63b2-4b0a-84fe-5c2f9db96370",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "2304a334-fbda-4345-8411-4a303f11d0c5",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "fd29a1ad-2653-4e35-9a1e-5a9b8114654f",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "a976bb39-14c9-497d-98b1-5b211d62f93f",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "c7110381-1efb-47ca-961c-4336a578a79f",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "80489e1f-341f-44f5-847b-0389d8675505",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "961e7f83-8731-45ed-8a0e-234846ba0c76",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "0108c3b6-c127-4ad7-b278-89f41048eadf",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "9c50d8a9-c5e0-4c7c-b0d2-42b72c2b444c",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "6acf0be8-c703-42a9-a4b9-df65502f95c3",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "3141f553-b4d6-4792-8a76-6e4e015218e4",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "808aa9e8-5312-44d4-94c8-0ca93e19d70d",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "050efd7e-bb1c-426b-ad1e-81382312d68d",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "e8ae32b0-6174-4ced-aa23-d47a5281af5b",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "91fab1ea-bd43-4fcb-bf5b-c0787bed893b",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "97ba6ad0-0665-41cb-a5c4-553f33ef0e5f",
+      "result_id": "8e8f4689-9766-4fa2-916f-7c66ca3f4335"
+    },
+    {
+      "claim_id": "83e1320b-c6cb-420c-ba10-9c103cfedab6",
+      "result_id": "c8d5471a-3326-45ea-8a3c-73d9b9f8e277"
+    },
+    {
+      "claim_id": "26bd8a88-b3e1-4cb0-af84-cd1eddeea324",
+      "result_id": "c8d5471a-3326-45ea-8a3c-73d9b9f8e277"
+    },
+    {
+      "claim_id": "27257640-014e-463a-b5c3-64b365d91215",
+      "result_id": "c8d5471a-3326-45ea-8a3c-73d9b9f8e277"
+    },
+    {
+      "claim_id": "829b8a8a-a035-4daf-98da-fdf7c9f857a1",
+      "result_id": "c8d5471a-3326-45ea-8a3c-73d9b9f8e277"
+    }
+  ],
+  "comparisons": []
+}

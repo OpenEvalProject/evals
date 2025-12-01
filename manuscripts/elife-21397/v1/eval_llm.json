@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "fMRI has significant technical and methodological limitations including temporal lag, spatial imprecision, vascular confounds, motion artifacts, and data smoothing that constrain what can be measured about neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish well-documented limitations of fMRI through multiple citations to established literature. These are background claims about known technical constraints that set up the paper's central question about why fMRI succeeds despite these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Despite fMRI's limitations, multivariate analysis methods (MVPA and RSA) have successfully revealed distributed cognitive processes and enabled decoding of brain states and similarity structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 document the empirical success of fMRI through extensive citations to published studies. These establish the paradox that motivates the paper: fMRI works well despite its limitations, suggesting constraints on neural coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "For fMRI to successfully recover neural similarity spaces given its limitations, the neural code must satisfy two requirements: it cannot be too fine-grained relative to fMRI resolution, and voxel responses must be inhomogeneous across space and time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 present logical inferences from fMRI's spatial/temporal summation properties. The argument that BOLD summation requires inhomogeneity to preserve representational differences is sound and follows from basic sampling theory principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Simulated fMRI analysis demonstrates that smoothly varying neural activity patterns preserve similarity structure after voxel summation, while non-smooth patterns with rapid spatial changes are obliterated, producing homogeneous voxel responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by Figure 1 demonstrations showing that smooth gradients survive voxel summation while checkerboard patterns do not. This visual proof-of-concept effectively illustrates the spatial smoothness requirement, though it uses simplified 2D analogies rather than realistic neural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "fMRI's success is consistent with population coding schemes where neurons with similar tunings spatially cluster, and empirical evidence from macaque studies confirms that poorly clustered stimulus features are harder to decode from BOLD responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 connect the theoretical requirements to established neural coding schemes and cite empirical validation (Dubois et al. 2015). The convergence of theory and empirical evidence strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Temporal summation properties of BOLD responses make fMRI blind to coding schemes that rely on precise spike timing (like burstiness coding), but compatible with rate coding schemes where firing frequency reflects stimulus intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 extend the smoothness argument to the temporal domain with sound logic. The argument that temporal summation destroys timing-based codes while preserving rate codes is well-reasoned and supported by citations about BOLD temporal properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45"
+    ],
+    "result": "The neural code must be spatially and temporally smooth at the sub-voxel level for fMRI success. Functional smoothness (similar stimuli \u2192 similar representations) is distinct from and more critical than super-voxel smoothness (neighboring voxels having similar activity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C45 synthesize the spatial and temporal arguments and introduce the key distinction between functional and super-voxel smoothness. This conceptual clarification is logically sound and important for the paper's framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Factorial design coding schemes, where all representations are mutually orthogonal, would be incompatible with fMRI success because they violate functional smoothness\u2014all stimulus pairs would have identical (zero) neural similarity regardless of input similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide a mathematical proof using properties of orthogonal matrices. The logic is sound: if all representations are orthogonal, similarity structure cannot be recovered. This serves as a clear negative example of what neural codes cannot be like.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Hash function coding schemes are incompatible with fMRI because they intentionally destroy input similarity structure by mapping similar inputs to dissimilar outputs. The paper predicts that deep neural network layers approximate hash functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 present another negative example based on established properties of cryptographic hash functions. The logic is sound, and C60 provides a testable prediction that is later confirmed in the deep learning simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "Simulations of vector space coding and gain control coding show that these schemes preserve similarity structure as distortion increases, making them compatible with fMRI's ability to recover representational spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C65 are supported by simulation results in Figure 2. These simple models demonstrate functional smoothness preservation. However, the simulations use artificial stimuli (Gaussian noise-distorted prototypes) rather than realistic inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Matrix multiplication coding (one-layer neural networks) preserves functional smoothness despite producing internal representations that are not super-voxel smooth, demonstrating that functional smoothness is the critical property for fMRI success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by Figures 2 and 3 showing that matrix multiplication preserves similarity despite creating visually nonsensical representations. This effectively demonstrates the distinction between functional and super-voxel smoothness, though C70 is labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C101",
+      "C102",
+      "C113",
+      "C121"
+    ],
+    "result": "Simulations of multi-layer neural networks (2-8 layers) with random weights show progressive breakdown of functional smoothness with increasing depth, with deeper networks producing increasingly orthogonal representations for similar inputs while still preserving some similarity structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77, C101-C102, C113, C121 are supported by Figure 2 showing declining similarity preservation across network depths. The quantified functional smoothness decline (0.86 to 0.22 from layer 1 to 8) provides concrete evidence, though these are untrained random networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "Deep learning networks, particularly CNNs like Inception-v3 GoogLeNet, achieve human-level performance on object recognition through hierarchical processing inspired by the ventral stream, with convolutional and pooling layers creating increasingly abstract representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C87-C90, C92 provide background on deep learning networks supported by extensive citations. These establish the architecture and performance of the networks analyzed, providing context for the subsequent simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C100",
+      "C103",
+      "C104",
+      "C114",
+      "C120",
+      "C122"
+    ],
+    "result": "Analysis of trained Inception-v3 GoogLeNet shows that middle layers preserve cross-category similarity structure, but later layers break down to symbol-like representations where only within-category similarity is preserved and between-category representations become orthogonal, approximating a hash function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C100, C103-C104, C114, C120, C122 are supported by Figure 4 showing the transition from structured to category-specific similarity. The sparseness analysis (Gini coefficients) rules out simple explanations. This is a key empirical finding, though limited to one network architecture and 40 stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112"
+    ],
+    "result": "The success of fMRI in recovering neural similarity structures constrains the neural code: it must be functionally smooth (similar inputs \u2192 similar representations) and cannot rely solely on schemes like factorial or hash coding that destroy similarity structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108, C111-C112 synthesize the paper's main theoretical conclusion. The logic follows from the established limitations of fMRI and its empirical successes, though this remains an inference about biological neural codes based on computational models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Factorial and hash coding schemes have inverse functions allowing recovery of inputs from representations, but if the brain used only these schemes, a robin would be no more similar to a sparrow than to a car.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 correctly describe properties of these coding schemes and draw logical conclusions about their implications for similarity structure. This serves as a clear illustration of incompatible coding schemes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123",
+      "C124"
+    ],
+    "result": "If deep learning network layers correspond to ventral stream regions, then neural representations should become progressively less functionally smooth and more abstract along the ventral stream, making later regions less amenable to fMRI analysis\u2014a prediction supported by empirical findings of declining correlation ceilings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119, C123-C124 connect the simulation results to neuroscience through the DLN-ventral stream correspondence hypothesis. The prediction is logical given the simulation results, and C124 cites supporting empirical evidence (Bracci & Op de Beeck 2016), though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Functional smoothness is critical not only for RSA but also for MVPA classifier generalization and univariate cluster identification, as these methods require similar stimuli to produce similar neural activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 extend the functional smoothness concept to other fMRI analysis methods through logical inference. The reasoning is sound: if similar stimuli don't produce similar representations, classifiers won't generalize and clusters won't be robust.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The success of fMRI suggests that Marr's implementation level should be subdivided, as fMRI operates at a more abstract scale than cellular/molecular neuroscience, and this intermediate level may be the appropriate one for understanding brain computations relevant to behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C134 propose a theoretical framework revision based on the paper's findings. While the observation about fMRI's intermediate scale is valid, the claim that this level 'may be preferred' (C134) is speculative and not directly tested. The argument is thought-provoking but lacks empirical validation.",
+    "result_type": "MINOR"
+  }
+]

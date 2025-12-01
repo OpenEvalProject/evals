@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Widom 601 nucleosome positioning sequence produces hexasomes with sequence-specific orientation, where the H2A/H2B dimer preferentially occupies the TA-rich side of the 601 sequence. This orientation is independent of flanking DNA position and likely arises from asymmetric distribution of TA steps flanking the nucleosome dyad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8, and C34 provide converging experimental evidence from native PAGE, SDS-PAGE, ExoIII digestion, and histone mapping demonstrating sequence-specific hexasome orientation. Claims C35-C36 provide mechanistic context based on known properties of the Widom 601 sequence. The data consistently show that hexasomes lack H2A/H2B on the TA-poor side regardless of flanking DNA position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C19",
+      "C24"
+    ],
+    "result": "Addition of H2A/H2B dimer to oriented hexasomes generates nucleosomes that are indistinguishable from or more homogeneous than those produced by salt dialysis reconstitution, as demonstrated by ExoIII protection, histone mapping, and stopped-flow experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 demonstrate through ExoIII and histone mapping that dimer addition fully restores nucleosome-like properties. Claims C19 and C24 show through FRET and stopped-flow that these nucleosomes behave similarly to or better than salt-dialyzed nucleosomes. The convergence of multiple orthogonal techniques supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C37"
+    ],
+    "result": "Chd1 requires H2A/H2B on the entry side for robust nucleosome sliding. Hexasomes lacking the entry-side dimer show >300-fold reduced sliding rates compared to nucleosomes, while hexasomes with entry-side H2A/H2B slide robustly but unidirectionally toward the dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C17, C22-C23, and C37 provide extensive evidence from histone mapping and stopped-flow experiments demonstrating the requirement for entry-side H2A/H2B. The quantitative rate measurements (C22: 0.0017 s\u207b\u00b9 vs 0.57 s\u207b\u00b9) and directional bias observations are well-supported by multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C17"
+    ],
+    "result": "Chd1 shifts hexasomes unidirectionally, contrasting with the back-and-forth sliding observed for nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C17 are directly supported by histone mapping experiments (C13-C16) showing that 80-601-0 hexasomes slide predominantly toward the entry-side dimer, even shifting farther than nucleosomes. This directional bias is clearly demonstrated and contrasts with bidirectional nucleosome sliding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C38"
+    ],
+    "result": "The absence of one H2A/H2B dimer does not diminish Chd1 ATPase motor binding to hexasomes at SHL2 sites, indicating the sliding defect is catalytic rather than a binding defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C38 are supported by cross-linking experiments showing equivalent binding patterns for both Chd1 lobes (N459C and V721C) to nucleosomes and hexasomes. Claim C21 correctly infers a catalytic defect from these binding data combined with the sliding deficiency. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Chd1 does not require specific H2B residues (Y39/M56), the H2A C-terminus, or the H2A acidic patch as critical epitopes for sliding. Acidic patch mutations cause modest (~2-fold) rate decreases suggesting a catalytic rather than binding defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by stopped-flow experiments with various H2A/H2B variants performed at saturating Chd1 concentrations. The H2B variant showed no effect (C25), H2A C-terminal truncation increased rates 2.5-fold (C26), and acidic patch mutations decreased rates ~2-fold (C28). The interpretation that these are catalytic effects (C30) is appropriate given saturating conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C50"
+    ],
+    "result": "Ubiquitin-conjugated H2B on the entry side stimulates nucleosome sliding by Chd1, increasing catalytic turnover rather than merely improving binding, as demonstrated by faster sliding rates even at saturating Chd1 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C33, and C50 are supported by stopped-flow experiments (Cy3-Cy3 and Cy3B-Dabcyl) showing consistently faster rates with entry-side H2B-Ub. The experiments were performed at saturating Chd1 (400 nM), ruling out a binding effect and supporting increased catalytic turnover. The use of oriented hexasomes to generate asymmetric nucleosomes strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Oriented hexasomes provide a useful tool for generating homogeneously labeled nucleosomes for single-molecule FRET experiments, yielding a single high-FRET population that greatly facilitates analysis compared to the multiple labeling configurations typical of symmetric nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C46, and C49 are directly supported by smFRET experiments showing oriented hexasomes yield a single FRET population. Claims C47-C48 provide appropriate context from prior work about the challenges of nucleosome labeling. The demonstration that oriented hexasomes solve this problem is clear and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Chd1 may respond to DNA unwrapping rather than specific H2A/H2B interactions, which would be consistent with slower sliding when transcription factors are bound on the entry side and could influence chromatin organization in vivo through directional hexasome sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39 and C41 are explicitly speculative (C39: \"One explanation...\", C41: \"likely influences\"). While C40 provides supporting evidence from prior work, the mechanism by which Chd1 senses entry-side H2A/H2B remains unresolved. The speculation is reasonable but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Multiple lines of prior work establish biological context: hexasomes exist in vivo and can be generated by Pol II transcription and RSC remodeling; Pol II specifically displaces the promoter-distal H2A/H2B dimer; Chd1 and ISWI are required for nucleosome array packing; and Chd1 is linked to transcription through multiple protein interactions and H2B ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C59-C66 accurately cite and represent prior work from the literature. These claims provide appropriate biological context for the current study and are supported by the cited references. This is background information rather than new findings from the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Nucleosomes are often asymmetric in biological contexts through post-translational modifications, histone variants, and H2A/H2B dimer loss. Examples include bivalent H3K4me3/H3K27me3 marks and asymmetric modifications of the +1 nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 provide accurate background on nucleosome asymmetry supported by appropriate citations. These claims establish the biological relevance and motivation for the study but represent prior knowledge rather than new findings. The statements are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

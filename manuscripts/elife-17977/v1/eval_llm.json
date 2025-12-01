@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Single unitary mossy fiber EPSPs have a mean latency of 1.06 \u00b1 0.09 ms, peak amplitude of 9.6 \u00b1 2.4 mV, 20-80% rise time of 3.6 \u00b1 0.7 ms, and decay time constant of 134 \u00b1 10 ms (n=6-8 pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide comprehensive characterization of single unitary EPSP properties with appropriate sample sizes (6-8 pairs) and are directly supported by experimental measurements shown in Figure 1. The measurements are internally consistent and represent standard electrophysiological parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32"
+    ],
+    "result": "Single unitary mossy fiber EPSPs fail to reliably trigger action potentials in CA3 pyramidal neurons under control conditions, with a spike probability of only 0.12 \u00b1 0.08.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, and C32 consistently demonstrate that single EPSPs are insufficient for reliable spike initiation under control conditions. The low spike probability (0.12 \u00b1 0.08) is directly measured and supports the conclusion that mossy fiber synapses operate as subdetonators under baseline conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Burst stimulation at 50 Hz increases spike probability to 0.82 \u00b1 0.09 for the third EPSP, primarily through presynaptic facilitation (EPSC3/EPSC1 = 3.12 \u00b1 0.62) rather than postsynaptic temporal summation (simulated EPSP3/EPSP1 = 2.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C40 provide converging evidence that presynaptic facilitation is the major mechanism underlying conditional detonation. The comparison between experimentally measured EPSC ratios and simulated temporal summation ratios provides a logical basis for distinguishing presynaptic from postsynaptic contributions. The data support the conditional detonator hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "High-frequency stimulation (HFS) induces post-tetanic potentiation (PTP) that converts mossy fiber synapses from subdetonators to full detonators, increasing spike probability from 0.14 \u00b1 0.09 to 0.71 \u00b1 0.18 at peak and 0.51 \u00b1 0.16 over 100 s (p=0.03), with decay time constants of 67-89 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52 collectively demonstrate PTP-induced conversion to full detonation mode with appropriate statistical testing (p=0.03, n=7 pairs). The parallel measurements of EPSP slope enhancement (442% peak, \u03c4=89s) and spike probability enhancement (\u03c4=67s) provide mechanistic consistency. The rapid detonation latencies (1.5-3.1 ms) support the functional significance of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C40"
+    ],
+    "result": "Mossy fiber synapses operate as 'conditional detonators' where presynaptic facilitation is the major mechanism enabling reliable discharge of postsynaptic targets during burst activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24, and C40 are supported by the experimental data showing that single EPSPs fail under control conditions but burst stimulation succeeds, with presynaptic facilitation contributing more than temporal summation. This confirms and extends the conditional detonator hypothesis from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PTP switches mossy fiber synapses into full detonators for tens of seconds, producing a computational switch that enables single unitary EPSPs to reliably trigger CA3 pyramidal neuron firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C50-C52 are directly supported by the experimental data showing sustained enhancement of spike probability lasting tens of seconds after HFS. The decay time constants (67-89 s) and statistical significance (p=0.03) support the conclusion of a prolonged computational switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The switch from subdetonation to full detonation mode changes network computations from requiring multiple granule cell inputs (AND operation) to enabling single granule cell activation to trigger ensembles of ~15 CA3 pyramidal cells (OR operation), providing a new mechanism for neuronal ensemble formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 and C84-C86 present logical inferences about network-level implications based on the experimental findings combined with anatomical connectivity data (C64-C65). However, these remain computational hypotheses that are not directly tested in the current study. The proposed ensemble formation mechanism requires validation through network-level experiments or computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C57"
+    ],
+    "result": "Plasticity-dependent detonation may be critical for efficient coding, storage, and recall of information in the granule cell-CA3 network, with potential relevance for hippocampal function in vivo given the bursting nature of granule cell firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C53, and C57 are speculative about functional implications. While the large extent and long duration of PTP are well-documented (C47-C49), and in vivo bursting activity is supported by citations (C54-C56), the direct relevance to information coding, storage, and recall remains hypothetical without behavioral or in vivo validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C26"
+    ],
+    "result": "Mossy fiber synapses exhibit pronounced short-term facilitation and uniquely large, prolonged post-tetanic potentiation (PTP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22, and C26 are supported by both the current experimental data (Figures 2-3) and extensive citations to prior literature. The facilitation ratios (C34-C35) and PTP magnitude (C47-C48) confirm these properties at the single synapse level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The bouton-attached stimulation method enables precise, noninvasive control of single presynaptic mossy fiber terminals in hippocampal slices from 21-23 day old rats at near-physiological temperature, with recordings stable for up to 30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe the methodological approach with appropriate technical details. The bouton diameters (3-5 \u03bcm, C74) and capacitance measurements (C75) are consistent with prior anatomical studies. The tight correlation between presynaptic action currents and postsynaptic responses (C77) validates the method's specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Individual synapses in neocortical and hippocampal circuits are generally thought to be weak and require summation to reach firing threshold, whereas detonator synapses are abundant in the peripheral nervous system and brainstem, but their existence in higher brain regions is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 accurately represent the state of knowledge in the field based on appropriate citations. These claims establish the context and motivation for the study by contrasting weak cortical synapses with strong detonator synapses in peripheral systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C25"
+    ],
+    "result": "The hippocampal mossy fiber synapse is a candidate detonator synapse with conflicting structural (proximal location, multiple release sites, large vesicular pool) and functional (low release probability, insufficient single EPSP) properties, and its efficacy has not been quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 and C25 accurately summarize prior literature on mossy fiber synapses, establishing the knowledge gap that motivates the current study. The citations support both the structural features suggesting high efficacy and functional data suggesting low efficacy under baseline conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In vivo recordings and imaging suggest that granule cells occasionally fire bursts of >10-20 action potentials with spatial tuning, potentially inducing substantial PTP during specific behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by appropriate citations to in vivo studies. However, C57 is speculative about PTP induction during behavior. While the inference is reasonable given the documented bursting activity, direct evidence for PTP induction in vivo is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The dentate gyrus elicits strong feedforward inhibition onto CA3 pyramidal neurons through GABAergic interneurons, which is too slow to affect single action potential generation but likely prevents excessive depolarization and burst firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by citations to prior studies. The inference that disynaptic inhibition is too slow to affect rapid detonation (C60) is reasonable given the measured latencies (C43-C44), though this was not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Current models suggest the dentate gyrus performs pattern separation and sparse coding, with single CA3 pyramidal cells receiving convergent input from ~50 granule cells and single granule cells providing divergent output to ~15 CA3 pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 accurately represent current models of hippocampal function and anatomical connectivity based on appropriate citations. These claims provide the network context for interpreting the functional significance of the synaptic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Experimental observations confirm tight correlation between presynaptic action currents and postsynaptic responses, slow EPSP decay promoting temporal summation, failure of first stimulus but success of third stimulus under control conditions, and conversion to reliable single-stimulus firing after HFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe key observations from the figures that support the main conclusions. These are directly supported by the experimental data and provide the empirical foundation for the major results.",
+    "result_type": "MINOR"
+  }
+]

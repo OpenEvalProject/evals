@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "hnRNP H is identified as the predominant protein binding to GGGGCC repeat RNA in vitro, with binding linked to G-quadruplex formation. UV-crosslinking experiments show two predominant bands (~60-65 kDa and ~75 kDa) that are RNAse-resistant, representing hnRNP H bound to different G-Q conformations. The interaction is confirmed through immunoprecipitation, purified protein crosslinking, siRNA knockdown, and gel shift assays showing KD values of 75.5\u00b114 nM for 4R and 13.5\u00b13.0 nM for 4R-7dG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary experimental approaches (C23-C43). UV-crosslinking, immunoprecipitation with hnRNP H antibodies, experiments with purified hnRNP H1, siRNA knockdown, and gel shift assays all converge to identify hnRNP H as the major binding protein. The use of 7-deaza GTP to destabilize G-Q structures and BG4 antibody IP provides strong evidence linking binding to G-Q formation (C3, C26-C31). The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "C9ALS patient fibroblasts and astrocytes contain significantly more G-Q RNA foci than control cells. Patient fibroblasts have 1.8-fold more foci and 2.8-fold more BG4-stained area, while patient astrocytes have 2.0-fold more foci and 2.3-fold more area. RNAse A treatment reduces BG4 foci by 76% in C9ALS astrocytes versus 27% in controls, demonstrating that the excess foci are RNA G-Qs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification using the BG4 Count program provides systematic analysis across multiple cell lines and experiments (C44-C47). Statistical significance is reported with appropriate false discovery rates (<0.1-5%). The RNAse A experiment (C48-C50) provides critical validation that the excess BG4 signal in patient cells is RNA-based, as treatment reduces both patient and control cells to nearly equivalent foci numbers. Sample sizes appear adequate (~1860 C9ALS and ~1350 control fibroblasts; 210 and 227 astrocytes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "hnRNP H colocalizes with G-Q foci more frequently in C9ALS patient cells than controls. In astrocytes, nuclear colocalization occurs in 6.2% of C9ALS cells versus 0.4% of controls; cytoplasmic colocalization in 8.1% versus 2.6%. In fibroblasts, nuclear colocalization is 0.9% in C9ALS versus 0% in controls. RNAse A treatment increases nuclear colocalization detection from 6.2% to 20% in C9ALS astrocytes. In C9ALS motor neurons, 46 large hnRNP H foci were detected in 36 cells versus only 3 foci in 19 nonALS motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The colocalization data (C51-C63) show consistent patterns across multiple cell types with clear differences between patient and control cells. The RNAse A experiment (C59) provides important mechanistic insight that RNA G-Q structures may mask hnRNP H epitopes. The motor neuron data (C64-C66) extends findings to disease-relevant tissue, though sample sizes are modest. The low absolute percentages of colocalization events may reflect technical challenges in detecting overlapping foci, but the relative differences between patient and control are substantial and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Multiple hnRNP H-target transcripts show dysregulated splicing in C9ALS patient brains. In U87 cells, 12/15 hnRNP H targets showed decreased exon inclusion upon knockdown. In patient cerebellum samples, 11/12 of these targets showed similar changes compared to controls. CLIP-seq analysis confirmed hnRNP H binding within 200 bp of 17/18 affected exons. Shorter disease duration correlated with greater splicing changes, suggesting hnRNP H dysregulation is a marker of clinical progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The splicing analysis is comprehensive, examining multiple targets across cell culture and patient samples (C67-C70). The concordance between knockdown effects in U87 cells and patient brain changes supports a causal role for hnRNP H depletion. CLIP-seq validation (C71) provides strong evidence for direct binding. The correlation with disease duration (C73-C74) is intriguing but based on a small cohort (n=7 C9ALS patients) and should be interpreted cautiously. The analysis of hnRNP A1 targets as a control (C72) strengthens the specificity of findings. Statistical testing appears appropriate with p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "C9ALS patient motor cortex shows elevated insoluble hnRNP H that forms aggregates with G-Qs. The percentage of insoluble hnRNP H is 56.1% in C9ALS versus 30.0% in controls (p=0.013), representing 1.9-fold more insoluble hnRNP H. BG4 co-immunoprecipitation from insoluble fractions shows 2.7-fold more hnRNP H in C9ALS samples (p=0.0007), while no SR proteins were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical fractionation data (C75-C77) provide quantitative evidence for hnRNP H sequestration with appropriate statistical testing. The BG4 co-IP experiment (C78) directly demonstrates association between insoluble hnRNP H and G-Q structures in patient brains. The negative result for SR proteins (C79) supports specificity. Sample sizes (n=7 per group for fractionation, n=5 per group for co-IP) are reasonable for postmortem brain studies. The use of motor cortex (Brodmann Area 4) is appropriate as a disease-relevant region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose that C9 expansion-mediated sequestration of hnRNP H is a significant contributor to neurodegeneration in C9 ALS/FTD. They hypothesize that C9 repeat RNA accumulates over time to titrate cellular hnRNP H, leading to splicing defects. Postmitotic neurons cannot clear RNA-protein aggregates, explaining the age-dependent nature of disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the main interpretive conclusion (C8) based on the experimental findings, but it remains a hypothesis rather than definitively proven causality. The proposed mechanism (C95-C97) is speculative and based on inference from the data rather than direct experimental demonstration. While the correlation between splicing dysregulation and disease severity (C73-C74) is suggestive, causality is not established. The model is plausible and consistent with the data, but would require additional experiments (e.g., rescue experiments, longitudinal studies, functional validation of specific splicing changes) to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establish that C9ORF72 GGGGCC expansion is the most common known cause of ALS/FTD, that the sequence forms stable G-quadruplex structures, and that RNA sequestration and DPR toxicity are proposed pathogenic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, appropriately cited from foundational studies (C1, C9-C15, C20-C22). The descriptions of G-quadruplex structure and properties (C16-C19) are accurate based on cited literature. These claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Prior work has identified multiple potential C9 repeat binding proteins, but hnRNP H has emerged as a consistent candidate. Previous studies showed that hnRNP H knockdown affects exon inclusion in a manner dependent on G-runs downstream of 5' splice sites, and that C9ALS patient brains show global splicing changes enriched for hnRNP H binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature (C81-C87) with appropriate citations. The meta-analysis identifying hnRNP H (C84) and the RNA-seq studies (C85-C87) provide important context for the current findings. The authors correctly note inconsistencies in prior work regarding other proposed binding proteins (C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Several hnRNP H target genes identified in this study have potential disease relevance. ATXN2 is associated with spinocerebellar ataxia 2 and confers ALS susceptibility. GABBR1 encodes a GABA receptor subunit, and its exon skipping would reduce protein levels, potentially contributing to excitotoxicity through reduced GABA-mediated inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disease relevance of ATXN2 (C88-C89) is well-established with appropriate citations. The functional consequences of GABBR1 exon skipping (C90-C91) are reasonably inferred from the frameshift. The connection to excitotoxicity (C92-C93) is speculative but plausible and appropriately cited. These claims provide biological context for the splicing findings but do not demonstrate that these specific changes are pathogenic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The extent of splicing dysregulation is inversely correlated with disease duration, suggesting correlation with disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This correlation (C94) is based on a small cohort (n=7 C9ALS patients) and relies on disease duration as a proxy for severity, which is imperfect. The linear regression analysis (Figure 5m) shows the trend, but the small sample size and lack of independent validation limit confidence. The claim is appropriately hedged as 'suggesting' rather than definitively establishing the relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study provides the first evidence that G-Q expansions bound to hnRNP H form insoluble aggregates in disease-relevant brain regions. This contrasts with DPR aggregates, which are enriched in non-vulnerable regions and largely absent from spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of 'first evidence' (C102) for G-Q/hnRNP H aggregates in patient brains is supported by the biochemical fractionation and co-IP data (Figure 6). The context regarding DPR aggregates (C99-C101) is accurately cited. The distinction between different types of aggregates in C9ALS is important for understanding disease mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "RhopH2, RhopH3, and CLAG3 are membrane-associated proteins that can be partially extracted by Na2CO3 at pH 11, suggesting they exist as distinct pools that are peripheral and integral to membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are supported by biochemical extraction data in Figure 1A showing partial extraction with Na2CO3. The inference about distinct peripheral and integral membrane pools is reasonable given the partial extraction pattern observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "CLAG3 is cleaved by pronase E at a surface-exposed loop, while RhopH2 and RhopH3 are not cleaved, indicating they are not exposed at the host membrane. This pattern is consistent with polymorphism at surface-exposed epitopes selected by immune pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are supported by protease susceptibility data in Figure 1A and cited references. The inference about immune selection (C9) is reasonable given the differential protease susceptibility and known polymorphism patterns, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "RhopH proteins are synthesized in schizonts, packaged into rhoptries, and approximately half are transferred to invaded erythrocytes where they traffic to the host membrane. The proteins remain stable throughout ring and trophozoite stages without further synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 are well-supported by immunofluorescence (Figures 1B-C) and immunoblotting data (Figure 1D), along with cited references on stage-specific expression. The quantification of protein transfer and stability is directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Neither rhoph2 nor rhoph3 genes could be disrupted by CRISPR-Cas9, despite effective sgRNA targeting demonstrated by successful integration of codon-optimized sequences, indicating both proteins serve essential functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by PCR data in Figure 1F showing retention of wild-type sequence in knockout attempts but successful integration of control constructs. The inference of essentiality (C20) is reasonable but could benefit from additional validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "GlcN treatment of R2glmS and R3glmS parasites carrying glmS riboswitches reduces targeted proteins to undetectable levels and remarkably also abolishes CLAG3, while having no effect on the unrelated rhoptry protein RAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are strongly supported by immunoblotting data in Figure 2C showing specific knockdown of targeted proteins and co-depletion of CLAG3. The specificity is confirmed by preserved RAP1 levels and lack of effect in untransfected parasites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "RhopH2, RhopH3, and CLAG3 assemble into a complex during or immediately after translation. RhopH3 can traffic to rhoptries independently, but CLAG3 and RhopH2 require the full complex for proper trafficking. The complex does not affect trafficking of unrelated proteins or rhoptry formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by immunofluorescence data in Figure 2D showing differential trafficking patterns in knockdowns. The inference about cotranslational assembly (C31) is reasonable given the co-depletion patterns, though direct evidence of assembly timing is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RhopH3 is the sole RhopH complex member contributing to erythrocyte invasion, with R3glmS showing a 52% reduction in invasion while R2glmS (lacking RhopH2 and CLAG3) shows no invasion defect. The R3glmS invasion defect is not due to failed maturation or egress, restricting RhopH3's role to host cell interaction or parasite internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are strongly supported by invasion assay data in Figure 2E and microscopy in Figure 2F. The experimental design cleverly uses the differential knockdown patterns to definitively exclude roles for RhopH2 and CLAG3 in invasion (C37-C38), making this a particularly well-supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "GlcN-treated knockdown parasites progress to trophozoite stage but show complete loss of all three RhopH complex members, including RhopH3 in R2glmS despite its retained rhoptry trafficking. This demonstrates that intact complex formation is required for successful transfer during invasion, arguing against simple entrapment in the parasitophorous vacuole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by immunoblotting (Figure 3B) and immunofluorescence (Figure 3C) data showing complete loss of all complex members in trophozoites. The inference about requirement for intact complex (C47) and argument against entrapment (C48) are well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The parasitophorous vacuole forms normally in RhopH knockdowns, with preserved morphology, normal export of KAHRP and SBP1, and intact PVM channel activity. This excludes proposed roles for RhopH members in PV biogenesis and suggests they only transit through this compartment. The PVM channel has a molecular composition distinct from PSAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are supported by normal parasite morphology, immunofluorescence data (Figure 3C), and patch-clamp recordings (Figure 3D and supplements). The inference that RhopH proteins only transit through the PV (C56) is reasonable but somewhat speculative. The distinction between PVM channel and PSAC (C54) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Sorbitol uptake is drastically reduced in both R2glmS and R3glmS knockdowns but unaffected in wild-type parasites, with EC50 values of 0.26 and 0.40 mM for GlcN. The knockdowns show uniform reduction in permeabilities across different solute classes, suggesting reduced channel number with unaltered selectivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are strongly supported by osmotic lysis kinetics (Figures 4A-D) and permeability measurements (Figure 4\u2014figure supplement 1A). The interpretation of reduced channel number with preserved selectivity (C61) is well-reasoned from the uniform reduction pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Whole-cell patch-clamp reveals that GlcN treatment abolishes measurable PSAC-mediated currents in knockdown parasites but not wild-type. Residual activity in some knockdown cells corresponds to a 250-400-fold reduction in functional PSAC copy number, with preserved inward-rectifying behavior indicating unmodified unitary properties of remaining channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 are strongly supported by comprehensive electrophysiology data in Figures 4F-H and Figure 4\u2014figure supplement 1B. The detection of single-channel transitions in whole-cell configuration (C68) is particularly compelling evidence for the dramatic reduction in channel number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "GlcN exposure significantly inhibits growth of R2glmS and R3glmS in standard media, with greater inhibition in nutrient-restricted PGIM, while having no effect on wild-type parasites. This provides molecular validation of PSAC's role in nutrient uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by growth assay data in Figure 4I. The differential effect in PGIM versus standard medium (C72) strengthens the interpretation that PSAC mediates nutrient uptake (C74), though the inference remains somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "DDD tags were successfully integrated at the C-terminus but not N-terminus of rhoph2 and rhoph3. TMP removal before gene transcription yielded maximal reductions in channel activity of 87% for R2-DDD and 35% for R3-DDD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by integration data (Figure 5A) and osmotic lysis kinetics (Figures 5B-C). The differential knockdown efficiency between R2-DDD and R3-DDD (C77-C78) is later explained by RhopH3 proteolytic processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Stage-specific TMP removal in R2-DDD reveals that RhopH complex integrity is important for transfer during invasion. TMP removal after invasion preserves protein levels but still reduces permeability, indicating RhopH2 serves a role in channel formation beyond simply delivering other components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by immunoblotting (Figure 5F) and osmotic lysis data (Figures 5D-E). The inference that RhopH2 has a direct role in channel formation (C83) is well-reasoned from the preserved protein delivery but reduced permeability in the ER knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "66% of CLAG3 successfully inserts into the host membrane in control cultures. TMP removal in early rings or late schizonts reduces CLAG3 protease susceptibility, indicating RhopH2 destabilization interferes with both CLAG3 membrane insertion and PSAC activity induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by protease susceptibility data in Figures 5G-H. The quantification of CLAG3 insertion (C84) and the inference about RhopH2's role in membrane insertion (C86) are well-supported by the stage-specific knockdown experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Cultivation of R2-DDD without TMP adversely affects parasite expansion within a single cycle, with no resistant parasites emerging after two months, revealing that other nutrient uptake mechanisms cannot compensate for loss of the RhopH-associated channel. TMP restoration permits recovery with increasing lag periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by growth data in Figure 5I. The long-term cultivation experiment (C89) provides strong evidence for essentiality and the inability of compensatory mechanisms to rescue the phenotype (C90), making this a particularly compelling result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RhopH3 undergoes proteolytic processing near its C-terminus at 8-10 kDa upstream of the native terminus, producing a 100 kDa processed form and a ~30 kDa soluble fragment. Processing occurs soon after synthesis, likely in rhoptries, and the cleaved fragment is rapidly degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by immunoblotting data in Figures 6B-C and immunofluorescence in Figure 6D. The localization of processing to rhoptries (C97) is inferred from anti-HA signal and cited protease activity, which is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "TMP removal renders all RhopH proteins undetectable in R2-DDD but preserves them in R3-DDD due to proteolytic processing that removes the C-terminal DDD tag. The processed 100 kDa form is TMP-insensitive while the unprocessed 130 kDa form is degraded. Processing may facilitate RhopH3 export to host cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by immunofluorescence (Figure 6E) and immunoblotting (Figure 6F) data. The speculation about processing facilitating export (C105) is reasonable given the differential localization patterns but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PTEX knockdown abolishes PSAC-mediated uptake and fully blocks export of RhopH2, RhopH3, and CLAG3, trapping them in the parasitophorous vacuole. CLAG3 fails to reach the host membrane upon PTEX block, demonstrating that RhopH proteins require PTEX for export at the PVM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by osmotic lysis data (Figure 7A), immunofluorescence (Figure 7B), and protease susceptibility (Figure 7C). The result contradicts a prior study regarding CLAG3 export, but the authors provide multiple lines of evidence supporting PTEX dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Both R2-DDD and 13F10 knockdown parasites complete their intracellular cycle and invade normally but arrest development after invasion, with 13F10 arresting earlier than R2-DDD. The earlier arrest may reflect loss of other exported activities or lower residual PSAC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by microscopy data in Figures 7D-E. The speculation about causes of differential arrest timing (C116) is reasonable but remains unproven. The result demonstrates the essentiality of both RhopH2 and PTEX-mediated export.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Both RhopH2 and RhopH3 are essential for parasite survival. RhopH3, but not RhopH2 or CLAG3, contributes to erythrocyte invasion. The proteins do not serve long-assumed roles in vacuole biogenesis but are required for PSAC formation, with loss of channel activity leading to rapid parasite demise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 synthesize major findings from multiple experiments. Essentiality (C128) is supported by knockout failures and growth defects. The invasion role of RhopH3 alone (C129) is definitively shown. Exclusion of PV biogenesis roles (C130-C131) and requirement for PSAC (C132-C133) are well-supported by comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The RhopH complex undergoes cotranslational assembly enabling rhoptry trafficking. After egress, only RhopH3 contributes to invasion. The complex is then deposited into the PV, exported via PTEX, trafficked via Maurer's clefts to the host RBC membrane, where it determines nutrient uptake via PSAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 represent the integrated model shown in Figure 8, synthesizing all major findings. Most steps are well-supported by experimental data, though trafficking via Maurer's clefts (C142) is inferred from known biology rather than directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C148"
+    ],
+    "result": "The unexpectedly early synthesis and complicated trafficking of RhopH proteins evolved to enable two distinct functions at separate points in the parasite cycle. The complex presumably acquired both functions early in adaptation to erythrocytes as both are essential for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146 and C148 are evolutionary speculations based on the dual functions identified in this study. While the dual functions are well-demonstrated, the evolutionary history and timing of function acquisition remain speculative without comparative or phylogenetic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "Quantitative loss of host cell permeability in RhopH knockdowns provides evidence against induced upregulation of human channels by the parasite, as near-complete removal of RhopH-associated channels failed to uncover unrelated currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is supported by patch-clamp data in Figure 4H showing only residual PSAC activity without detection of other currents. However, the authors acknowledge that non-conductive transporters or inactive channels could have been missed, limiting the strength of this negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "CLAG3's paucity of predicted transmembrane domains raised doubts about whether it could form a pore in isolation. Stable association with RhopH2 and RhopH3 and their requirement for channel activity makes direct pore formation by the RhopH complex more plausible, supported by genetic mapping and mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 synthesize structural considerations with functional data from this study and cited references. The inference that the complex directly forms the pore (C153) is reasonable given the co-requirement of all three proteins, though direct structural evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C134",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The RhopH complex is an attractive therapeutic target. PSAC activity is an established drug target, validated with inhibitors and molecular approaches. Inhibitors targeting the RhopH complex may disrupt disease progression by inhibiting both parasite invasion and nutrient acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C157 represent therapeutic implications of the findings. The essentiality and dual functions demonstrated in this study (C134, C157) combined with prior validation of PSAC as a drug target (C155-C156) provide reasonable support, though actual therapeutic development remains future work.",
+    "result_type": "MINOR"
+  }
+]

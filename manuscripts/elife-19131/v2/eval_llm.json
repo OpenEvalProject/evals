@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Arabidopsis sepal epidermis develops a pattern of giant cells interspersed with small cells, where giant cells form through endoreduplication and the correct proportion is functionally important for sepal curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the biological context with strong support from prior publications (Roeder et al., 2010, 2012; Tauriello et al., 2015) and imaging data (Figure 1). The functional importance is demonstrated through mutant phenotypes affecting sepal closure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "ATML1 is required for giant cell formation in sepals and can promote epidermal cell identity when ectopically expressed, though it has broader roles in embryonic epidermis establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are well-supported by multiple prior studies (Lu et al., 1996; Roeder et al., 2012; Peterson et al., 2013; Takada et al., 2013) showing loss-of-function and gain-of-function phenotypes. The inference in C9 logically follows from the ectopic expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ATML1 overexpression produces sepals almost entirely covered in giant cells with increased endoreduplication (16-32C, occasionally 64C), and estradiol-inducible ATML1 confirms sufficiency for giant cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are strongly supported by multiple lines of evidence: SEM imaging (Figure 2A), flow cytometry showing increased ploidy (Figure 2I), molecular markers (Figure 2J-K), and inducible expression (Figure 2\u2014supplement 1). The conclusion of sufficiency (C15) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "ATML1 influences giant cell formation in a dosage-dependent manner, where the amount of ATML1 expressed determines the proportion of giant cells in the sepal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by a comprehensive genetic dosage series (Figure 2A-H) with qPCR validation (Figure 2G), flow cytometry (Figure 2I), and quantitative image analysis. The graded response across multiple genotypes provides strong evidence for dosage dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The mCitrine-ATML1 fusion protein is functional and reveals that ATML1 concentrations vary significantly between individual nuclei in developing sepals (CV ~0.2) compared to floral meristems (CV ~0.1), with this variability being specific to ATML1 rather than a general property of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are well-supported by rescue experiments (Figure 3A-D), quantitative imaging with custom analysis pipeline (Figure 3G-J), and comparison with three control reporters (VIP1, AP2, SEC24A) showing lower CVs (Figure 3I, supplement 1). The specificity of ATML1 variability is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Live imaging reveals that ATML1 levels fluctuate dynamically within individual cells over time, with cells becoming giant generally exhibiting higher peak ATML1 concentrations than dividing cells, achieving predictive power with average AUC of 0.74.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by extensive live imaging data (Figure 4, supplements 1-3) with rigorous ROC analysis across four independent datasets (AUC = 0.76, 0.69, 0.73, 0.78). The cell tracking and quantification pipeline is well-described, and the statistical approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ATML1 concentration peaks during G2 (4C) phase are strongly predictive of giant cell fate (AUC ~0.8), while G1 (2C) peaks are not predictive (AUC ~0.4-0.5), indicating cells are competent to respond to ATML1 mainly during G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are strongly supported by cell cycle-specific ROC analysis across four datasets (Figure 4F-I, supplements). The consistent pattern of high AUC in 4C and low AUC in 2C across replicates provides robust evidence for G2-specific competence. The ploidy determination method using nuclear size is validated (Figure 4\u2014supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "In ATML1 overexpression lines, almost all endoreduplicating cells exhibit high GFP-ATML1 levels in G2 above a common threshold, consistent with the same threshold-based fluctuation mechanism operating at elevated basal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by live imaging of pPDF1::GFP-ATML1 lines (Figure 5, supplements 1-2) and application of a common threshold derived from wild-type data. The inference that the same mechanism operates at different expression levels is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LGO acts genetically downstream of ATML1, as ATML1 overexpression cannot rescue lgo mutants. ATML1 fluctuations persist in lgo mutants with the same predicted number of cells crossing the threshold, indicating ATML1 dynamics are independent of LGO and endoreduplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by genetic epistasis (Figure 6C), live imaging of lgo mutants showing persistent fluctuations (Figure 6, supplements 1-2), and quantitative comparison showing no significant difference in predicted giant cell numbers (Figure 6D-F). The logic of pathway ordering is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A computational model with stochastic ATML1 fluctuations, a downstream target with a hard threshold in G2, and no/weak feedback qualitatively reproduces experimental observations including scattered giant cell patterns, ATML1 distributions, and G2-specific predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by detailed computational modeling (Figure 7, supplements 1-4) that recapitulates key experimental features: scattered patterns, CV values, ROC curves with low AUC in 2C and high AUC in 4C. Parameter exploration shows the model requires stochastic fluctuations and is robust to feedback strength variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The model matches experimental data with no or weak ATML1 feedback, while strong feedback leads to bistability inconsistent with observations. Experimental qPCR shows ATML1 induction increases endogenous ATML1 only 1.5-fold, similar to other targets, supporting weak feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by parameter exploration (Figure 7\u2014supplements 3-4) and qPCR experiments (Figure 7\u2014supplement 4E-F) with appropriate controls. The experimental validation of weak feedback strengthens the modeling conclusions, though longer time courses might reveal additional dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Computational modeling shows that changing basal ATML1 production rate gradually increases the fraction of giant cells, consistent with experimental dosage series, demonstrating a positive relationship between ATML1 levels and giant cell proportion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by parameter scans in the model (Figure 8) that recapitulate the experimental dosage series (Figure 2). The agreement between computational and experimental results validates the model's ability to explain dosage-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The model demonstrates that fast, relatively small stochastic fluctuations of ATML1 are sufficient to pattern giant and small cells through activation of a downstream target that induces endoreduplication when activated in G2, creating a soft ATML1 threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 synthesize the modeling results, showing that the proposed mechanism is sufficient to explain the observed patterns. The concept of a 'soft threshold' arising from stochastic dynamics of ATML1 and its target is well-supported by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study identifies a cell-autonomous fluctuation patterning mechanism where ATML1 fluctuations initiate giant/small cell patterning, with cells surpassing a soft threshold during G2 having high probability of giant cell fate, and competence restricted to G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 represent the main conclusions, well-supported by the comprehensive integration of live imaging (Figure 4), quantitative analysis (ROC with AUC ~0.8 in G2), genetic manipulation (dosage series, epistasis), and computational modeling. The evidence converges on this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The fluctuation-patterning model resembles Wolpert's French flag model in using concentration-based autonomous cell fate decisions but differs by using internal fluctuations rather than a diffusible morphogen gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 appropriately contextualize the findings within developmental biology theory. The comparison to the French flag model is conceptually sound and highlights the novelty of the mechanism while acknowledging similarities in threshold-based decision making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Giant cell formation is highly responsive to ATML1 basal production changes, yet wild-type sepals show consistent giant cell numbers (10-30), suggesting fluctuations and threshold are tuned for robustness with the cell cycle acting as a stabilizing factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by the dosage series showing sensitivity (Figure 2) and observations of consistent proportions in wild-type. The inference about tuning and cell cycle stabilization (C62-C63) is logical though somewhat speculative, as direct evidence for 'tuning' mechanisms is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "LGO, a Siamese-related CDK inhibitor, acts genetically downstream of ATML1 to promote endoreduplication once giant cell identity is acquired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by genetic epistasis data (Figure 6C) and prior work (Roeder et al., 2012). The epistasis experiment clearly demonstrates LGO acts downstream, though the precise molecular mechanism of how LGO promotes endoreduplication remains to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Epistasis analysis reveals ACR4 acts upstream of ATML1 while DEK1 acts downstream during giant cell formation, differing from their reported roles in embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by genetic epistasis data (Figure 9\u2014supplement 1). The observation that pathway order differs from embryogenesis is interesting, though the authors note this contradicts prior work, suggesting context-dependent regulation or potential feedback loops requiring further investigation.",
+    "result_type": "MINOR"
+  }
+]

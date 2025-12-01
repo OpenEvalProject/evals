@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript provides historical context for Zika virus (ZIKV) outbreaks, documenting that ZIKV circulated in Asia and the Pacific before reaching the Americas in 2015, with the first local cases in Brazil in May 2015 reaching 1.5 million by December 2015, leading to WHO declaring it a public health emergency in February 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C10 provide well-documented historical context supported by appropriate citations and established knowledge. These factual statements about outbreak timelines and geographic spread are consistent with the scientific literature and provide necessary background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "ZIKV is characterized as a flavivirus primarily transmitted by Aedes mosquitoes with both vector-borne and non-vector-borne transmission routes, presenting with common symptoms including rash, fever, arthralgia, and conjunctivitis, though many infections are asymptomatic, and the virus is associated with severe complications including Guillain-Barr\u00e9 syndrome and microcephaly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 accurately describe established characteristics of ZIKV transmission, clinical presentation, and complications, all supported by appropriate citations to the scientific literature (Musso and Gubler 2016, Cao-Lormeau et al. 2016, Schuler-Faccini et al. 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C46"
+    ],
+    "result": "The basic reproduction number (R0) is defined as the average number of secondary cases caused by one infected individual in a susceptible population, serving as a central epidemiological parameter for quantifying outbreak magnitude and informing control interventions, though it is complex to estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C46 provide standard epidemiological definitions and concepts about R0, appropriately supported by citations to foundational literature (Diekmann et al. 2010, Anderson and May 1982). These are well-established concepts in infectious disease epidemiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Two compartmental models with vector-borne transmission are compared: the Pandey model with explicit mosquito population dynamics (SEI framework) and the Laneri model with implicit vector representation using force of infection compartments, both using SEIR framework for human transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 accurately describe the two modeling approaches used in the study, supported by Figure 1 and appropriate citations to Pandey et al. 2013 and Laneri et al. 2010. The model structures are clearly presented and mathematically defined in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Surveillance and seroprevalence data from Pacific island outbreaks show: Yap 2007 had 108 cases (73% seroprevalence), French Polynesia 2013-2014 had >8700 cases (49% seroprevalence), and New Caledonia 2014 had ~2500 cases (no seroprevalence data available).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 present the empirical data used in the study, all supported by appropriate citations to surveillance reports and seroprevalence studies (Duffy et al. 2009, CHSP 2014, Mallet et al. 2015, Aubry et al. 2015a,b, DASS 2014). These data form the basis for model fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "All models are simulated in a discrete stochastic framework using Poisson with stochastic rates to account for high variability in small populations, with parameter estimation performed using PMCMC (particle Markov Chain Monte Carlo) algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe the computational methodology, appropriately supported by citations to Bret\u00f3 et al. 2009 and Andrieu et al. 2010. The stochastic framework is justified by small population sizes and is a methodologically sound approach for this application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C68",
+      "C72"
+    ],
+    "result": "R0 estimates for Pacific ZIKV epidemics range from 1.6 (1.5-1.7) to 3.2 (2.4-4.1), varying notably across settings and models, with Yap consistently displaying higher values (Pandey: 3.2 [2.4-4.1]; Laneri: 2.2 [1.9-2.6]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32, C33, C68, C72 present the main R0 estimates derived from the modeling analysis. These are supported by data in Tables 1-2 and Figures 2-3, with credible intervals provided. The estimates are obtained through rigorous Bayesian inference methods described in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35"
+    ],
+    "result": "There is an inverse relationship between island population size and both R0 value and variability, with smallest islands displaying higher and more variable R0 values, though the highly connected French Polynesian islands (Tahiti and Moorea) show similar R0 despite differing sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C35 describe patterns in R0 estimates across settings, supported by data in Tables 1-2. The inverse relationship with population size is a reasonable inference from the data, though the authors appropriately note the exception for Tahiti/Moorea and discuss potential explanations including stochasticity and connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "R0 estimates are consistently higher and more variable with the Pandey model compared to the Laneri model, potentially explained by two additional estimated parameters (including sensitive mosquito lifespan parameter) and differences in estimated initial infected individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 compare model outputs and provide mechanistic explanations for differences. The comparison is supported by Tables 1-2 and sensitivity analysis (Tables 6-7). The explanations regarding additional parameters and sensitivity are reasonable and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "For infectious period, intrinsic incubation, and extrinsic incubation period parameters, posterior distributions resemble informative priors, indicating the models cannot properly identify these parameters without more informative data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 identifies a limitation in parameter identifiability, supported by posterior distributions in Figures 6-13 showing minimal updating from priors. This is an honest assessment of model limitations and highlights the need for better empirical data on these parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The fraction \u03c1 of population involved in the epidemic is well-estimated when seroprevalence data are available (Yap, French Polynesia), with estimated values slightly exceeding observed seroprevalence, but in New Caledonia without seroprevalence data, \u03c1 shows large confidence intervals and high correlation with observation rate r.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 describe parameter identifiability for \u03c1, supported by narrow vs. wide confidence intervals in Tables 1-2 and correlation plots in Figures 17 and 21. This demonstrates the critical importance of seroprevalence data for model identifiability, a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Model-estimated seroprevalence at epidemic end closely matches observed values for Yap (73% estimated vs 73% observed) and French Polynesia (49% estimated vs 49% observed) in both models, but shows wide uncertainty for New Caledonia (39% [8-92%] Pandey; 65% [24-91%] Laneri) where no seroprevalence data were available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 demonstrate model validation through comparison of estimated vs. observed seroprevalence, shown in Figure 2-3 captions. The close agreement for Yap and French Polynesia supports model validity, while wide intervals for New Caledonia reflect lack of constraining data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C51"
+    ],
+    "result": "The relatively low R0 range (1.5-4.1) for ZIKV, similar to but generally lower than dengue and Yellow Fever estimates, suggests that intervention strategies developed for other flaviviruses should enable equally or more effective control of ZIKV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C51 make comparative inferences about control strategies based on R0 estimates. While the R0 comparison is supported by citations (Favier et al. 2006, Imai et al. 2015, Massad et al. 2003), the inference about intervention effectiveness is speculative and not directly tested. The conclusion requires assumptions about similarity of transmission dynamics and intervention mechanisms that may not hold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Comparison with prior studies shows: Kucharski et al. estimated R0 1.6-2.3 (Tahiti) and 1.8-2.9 (Moorea) but predicted 95-97% seroprevalence vs. 49% observed; Funk et al. estimated R0 2.9-8 for Yap; Nishiura et al. used exponential growth rate methods for French Polynesia and Yap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide context by comparing results to prior studies, all appropriately cited (Kucharski et al. 2016, Funk et al. 2016, Nishiura et al. 2016a). The comparison highlights differences in methodology (deterministic vs. stochastic) and demonstrates that this study's estimates are generally lower and better match observed seroprevalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Two recent studies indicated that sexual transmission alone is not sufficient to sustain a ZIKV epidemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by citations to Gao et al. 2016 and Towers et al. 2016, though the authors appropriately note that further work is needed. This supports the focus on vector-borne transmission in the models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Pacific island outbreaks differed in viral lineage and vector species: Yap had a different ZIKV lineage vectored by Aedes hensilli, while French Polynesia and New Caledonia shared the same lineage transmitted by Aedes aegypti (with A. polynesiensis also present in French Polynesia, dominating in Moorea).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe important epidemiological differences between settings, supported by citations to Wang et al. 2016 and Ledermann et al. 2014. These differences are relevant for interpreting variation in R0 estimates across islands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The models assume only a fraction \u03c1 of the total population is involved in the epidemic due to spatial heterogeneity, immuno-resistance, or cross-immunity, with N=\u03c1\u00b7H where H is census population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 describe a modeling assumption introduced to reconcile incidence and seroprevalence data. While mathematically defined (C61), the biological interpretation (C60) is speculative. The authors acknowledge this is necessary to match observed seroprevalence but don't provide direct evidence for the proposed mechanisms. This represents a model limitation rather than a validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The study highlights the importance of seroprevalence data for precise quantitative analysis of pathogen propagation to design prevention and control strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a well-supported conclusion based on the demonstrated differences in parameter identifiability between settings with (Yap, French Polynesia) and without (New Caledonia) seroprevalence data, as shown in the wide confidence intervals and parameter correlations for New Caledonia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Zika outbreaks were concomitant with dengue outbreaks in French Polynesia and New Caledonia, with documented cases of coinfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by appropriate citations (CHSP 2014, Mallet et al. 2015, DASS 2014, Dupont-Rouzeyrol et al. 2015). This context is relevant for discussing potential cross-immunity and competition between flaviviruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Sensitivity analysis shows transmission parameters (R0 and \u03b2V) are key parameters affecting all criteria, with high R0 positively correlated with large seroprevalence and high/early peak, while fraction involved (\u03c1) influences outbreak magnitude but not peak timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, C83 summarize sensitivity analysis results presented in Tables 6-7. The analysis appropriately uses LHS/PRCC methods and provides important insights into which parameters most influence model outputs, supporting the focus on estimating R0.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The ratio of asymptomatic to symptomatic ZIKV cases is estimated to be 1:1.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is based on personal communication rather than published data. While the authors are transparent about the source (V.-M Cao-Lormeau), this estimate lacks the verifiability of peer-reviewed published data and its uncertainty is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The estimation tools are provided by the open source software SSM (State Space Models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is explicitly stated with appropriate citation (Dureau et al. 2013) and GitHub links provided. This supports reproducibility of the computational analysis.",
+    "result_type": "MINOR"
+  }
+]

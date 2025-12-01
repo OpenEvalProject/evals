@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors recorded from 200-300 single units in the lumbar spinal cord of turtles using custom high-density silicon electrodes during motor behaviors. The electrode locations were verified histologically, and site-specific scratching behaviors were reliably induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C38, C39, and C40 describe the experimental methodology and are supported by Figure 2 and supplementary figures showing electrode placement, histological verification, and recorded neural activity during motor behaviors. The methods are clearly documented and the data quality is demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C97",
+      "C98",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The population firing rate distribution is lognormal and skewed, covering two orders of magnitude (0.1-10 Hz), and this distribution is preserved across different motor behaviors and animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C97, C98, C101, C102, C104, and C105 are supported by Figures 2F and 9, which show consistent lognormal distributions across behaviors and animals (n=5). The skewness is quantified and shown to be near zero on log-scale, confirming lognormality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A novel metric called the return map ratio (RMR) was developed to quantify fluctuation-driven versus mean-driven spiking, with RMR <0.7 defining fluctuation-driven neurons. Using this metric, 50 out of 68 intracellularly recorded neurons were classified as fluctuation-driven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe a novel methodological contribution supported by Figure 3\u2014figure supplement 1. The RMR metric is validated by correlations with other regime indicators (skewness, CV2, LTBT). The classification threshold of 0.7 is justified and applied consistently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The subthreshold membrane potential (Vm) distributions are symmetrical and Gaussian-like, not skewed, suggesting that synaptic currents are also normally distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, and C57 are supported by Figure 3E showing skewness values scattered around zero for the population. The inference that normally distributed Vm implies normally distributed synaptic currents (C57) is reasonable under the stated assumptions of Ohmic relationships in high-conductance states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "The neuronal input-output function in the subthreshold domain is strongly nonlinear (supralinear), with curvature weakly anti-correlated with Vm fluctuations. This supralinear transformation converts normally-distributed synaptic inputs into lognormally-distributed firing rates in the fluctuation-driven regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C62, C63, and C65 are supported by Figure 4, which shows nonlinear IO-functions fitted with power-law and exponential functions across n=68 neurons. The weak negative correlation with SD (R=-0.34, p<0.01 for power-law) is documented, and the mechanism linking Gaussian inputs to lognormal outputs via supralinear transformation is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Individual neurons show firing rate distributions ranging from strongly positively skewed (lognormal) to zero skewness, suggesting a spectrum between fluctuation-driven and mean-driven regimes. More negative log-skewness correlates with higher mean firing rates (R=-0.5, p<0.001), indicating greater occupancy of the mean-driven regime at higher rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 and C72 are supported by Figure 5, showing the distribution of skewness across n=68 neurons and the negative correlation between log-skewness and mean firing rate. The interpretation that skewness indicates regime participation is consistent with the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Intracellular recordings show that fluctuation-driven neurons spend 96% of time below threshold compared to 35% for mean-driven neurons. Half of the population spent at least 84% of time below threshold, indicating prominent fluctuation-driven regime occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C75 are supported by Figure 6D-E showing cumulative time below threshold for individual neurons and the population distribution. The 84% value for half the population is clearly demonstrated in Figure 6E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Current injection experiments demonstrate that negative current increases irregularity while positive current decreases it (R=-0.84, p<<0.001, n=18 trials). The firing rate distribution shifts from lognormal (control) to negatively skewed (positive current), confirming that irregularity and skewness are indicators of spiking regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by Figure 7, which shows systematic changes in irregularity and firing rate distributions with current injection. The strong negative correlation between CV2 and injected current validates the use of these metrics as regime indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Blocking inhibition with strychnine shifts neurons toward the mean-driven regime, resulting in depolarized Vm above threshold, higher firing rates, lower irregularity, and reduced time below threshold (78% control vs 56% strychnine). These observations support the consensus view that fluctuation-driven spiking requires balanced excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by Figure 8, showing the effects of strychnine on Vm, firing rate, irregularity, and time below threshold. The results are consistent with the balanced E/I hypothesis and provide experimental validation of the role of inhibition in maintaining the fluctuation-driven regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C112"
+    ],
+    "result": "Half of the neurons spend at least 50-58% of time in the fluctuation-driven regime regardless of behavior, as quantified by the TIF50 metric using CV2 thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C112 are supported by Figure 10D-E showing TIF50 values of 58% for ipsilateral and 50% for contralateral scratching, with consistency across animals. The metric is well-defined and the results are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "As population firing rate increases, the distribution becomes less lognormal and more Gaussian (negative log-skewness), indicating more neurons occupy the mean-driven regime during higher activity. This is confirmed by negative correlation between mean firing rate and log-skewness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C107, and C108 are supported by Figure 10A-B showing the time-dependent relationship between population firing rate and skewness. The negative correlation is clearly demonstrated, supporting the interpretation of activity-dependent regime transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Neurons are active during both ipsilateral and contralateral scratching behaviors, with most units showing rhythmic relationships with nerve signals and higher firing rates for ipsilateral compared to contralateral scratching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 are supported by Figure 9A-D and Videos 1-2, showing neural activity during both behaviors. The differential participation in ipsilateral vs contralateral movements is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The distribution of firing rates and CV2 shows no dependence on dorsoventral depth, suggesting that fluctuation-driven spiking is equally prominent in motoneurons (ventral) and interneurons (medial/dorsal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C119, and C120 are supported by Figure 11E showing CV2 distributions across depth with no significant differences (KS-test). The interpretation that fluctuation-driven regime is present in both cell types is reasonable given the spatial organization of the spinal cord.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C32"
+    ],
+    "result": "Fluctuation-driven neurons have supralinear input-output curves that enhance sensitivity, while mean-driven neurons have linear/sublinear transformations that reduce sensitivity and curb network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C6, C30, and C32 are supported by the theoretical framework (Figure 1, Table 1) and experimental data (Figure 4). The supralinear IO-function in the fluctuation-driven regime is demonstrated, and the functional implications for sensitivity are supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C33"
+    ],
+    "result": "The disparity in input-output properties between fluctuation-driven and mean-driven regimes may reflect a trade-off between stability and sensitivity to maintain flexibility across behaviors, with the two regimes working together to form an S-shaped IO-curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C33 propose an interpretation of the functional significance of the two regimes. While the S-shaped IO-curve is illustrated (Figure 1C) and the disparity in properties is demonstrated, the claim that this represents a 'fine trade-off' for maintaining flexibility is speculative and not directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The prominent presence of the fluctuation-driven regime implies that most spikes are driven by synaptic communication rather than intrinsic pacemaker properties, suggesting either a small pacemaker core or that motor rhythms are generated by emergent network processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C124, and C125 present interpretations about rhythm generation mechanisms. While the prominence of fluctuation-driven spiking is well-established, the implications for pacemaker versus network-based rhythm generation are speculative. The study does not directly test for pacemaker neurons or emergent network mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C128"
+    ],
+    "result": "This is the first report to quantify occupation within spiking regimes of a neuronal population in the nervous system, and the first investigation of spinal motor circuits from an ensemble viewpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121 and C128 assert novelty but are difficult to verify without comprehensive literature review. While the approach is innovative, the claim of being 'first' in the entire nervous system is strong and may overlook prior work in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Intracellularly recorded neurons showed more regular spiking than extracellularly recorded neurons, likely due to experimental bias toward high firing rates in intracellular recordings and spike sorting errors in extracellular recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C90, and C91 identify a methodological concern but the explanations are speculative. The data supporting this observation is not shown ('data not shown'), making it difficult to evaluate the magnitude of the effect or the validity of the proposed explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Threshold variability has little effect on spiking irregularity compared to synaptic input variability, with threshold variance (0.8 mV\u00b2) being 17-fold lower than Vm variance (14.0 mV\u00b2) for first spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by quantitative comparison of threshold and Vm variances. However, this analysis is limited to first spikes in cycles (n=51 from one neuron), which may not be representative of all spiking. The conclusion is reasonable but based on limited sampling.",
+    "result_type": "MINOR"
+  }
+]

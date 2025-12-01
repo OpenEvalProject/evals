@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study recorded neural activity from 12 sessions across three macaque monkeys performing a delayed grasping task, obtaining an average of 88 single units per session from areas F5, AIP, and M1 using floating microelectrode arrays. All recorded units were task-modulated with stable firing rates following log-normal distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C33, C82-C85 provide comprehensive methodological details including animal numbers, recording locations, trial counts, unit counts, and task design. The data are explicitly stated with specific numerical values and standard deviations, supported by figures and citations. The experimental design is clearly described and ethically compliant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The fronto-parietal single neuron network exhibits modular and small-world topology, with modules predominantly composed of units from single areas (81.4%) but 84% including cross-area units, significantly higher clustering coefficients than surrogate networks, and similar path lengths yielding significant small-world coefficients across all datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present a coherent picture of network topology with appropriate statistical testing (permutation tests, Kruskal-Wallis test) and distance-dependent controls. The modularity index Q (mean: 0.405), clustering coefficient C (mean: 0.266), and SW-coefficient (mean: 3.05) are all reported with significance levels and compared to surrogate networks, providing strong evidence for the claimed topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The network exhibits heavy-tailed degree and betweenness centrality distributions with heterogeneous hub neurons distributed across all areas. The degree distribution follows an exponential truncated power law (\u03b3=0.6839, kc=8.657, R\u00b2=0.9891), while betweenness follows a power law (\u03b3=2.212, R\u00b2=0.9753), both significantly different from surrogate networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide detailed statistical evidence for hub topology including model fitting parameters, goodness-of-fit measures, and comparisons to multiple alternative models (power law, exponential, Gaussian). The correlation between degree and betweenness centrality (r=0.75, p<0.001) and lack of area-specific hub concentration support the distributed hub interpretation. Statistical tests are appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Hub neurons form a rich-club topology with significantly higher interconnectivity (up to 15% more connections) than surrogate networks, containing neurons from all areas (mean 27% of neurons). Validation using simulated networks confirmed accurate detection of directed connections (62-69% hits, >99% correct rejections) with bidirectional connections distinguishable from common drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C86-C88 demonstrate rich-club topology with appropriate statistical testing and methodological validation. The modeling studies (C86-C88) provide crucial validation that the method can distinguish true connections from artifacts, with bidirectional CCH peaks 24 times higher than common drive peaks. The rich-club coefficient is properly normalized and tested against surrogate networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Beta (18-35 Hz) and low frequency (3-7 Hz) oscillations are predominantly present in the network, with oscillating neurons having significantly higher degree and betweenness centrality than non-oscillators. The rich-club significantly overlaps with oscillating units, with area-specific frequency preferences (AIP and M1 more beta, F5 more low frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 establish the relationship between oscillatory synchrony and network topology with appropriate statistical tests (Tukey-Kramer tests, permutation tests). The frequency-specific analyses are supported by spectral methods, and the area-specific differences are consistent with prior literature (C59 cites Brovelli et al., 2004). The overlap between rich-club and oscillators is statistically significant (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C75"
+    ],
+    "result": "The functional network topology allows prediction of single unit firing rates, with 99% of predictions positively correlated with actual firing rates, 45% significantly predicted, and 9% of condition-specific differences significantly predicted using only network inputs without parameter fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C75 demonstrate functional validity of the network representation through firing rate prediction. The use of CCHs as transfer functions is methodologically sound, and the three different permutation tests (trials, CCH outputs, input units) provide rigorous statistical validation. The prediction accuracy, while modest for condition differences (9%), is remarkable given the simple linear integration model without parameter fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The majority of functional connections have short time lags (45.67% <10ms, 85.12% <100ms) with exponential decay, and for oscillatory connections, most phase lags are within half a cycle of zero (beta: 77.70%, low frequency: 87.66%), indicating predominantly direct influences and accurate directionality determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide important characterization of connection properties. The exponential decay of time lags and phase distributions supports the interpretation of direct functional influences. The high percentage of phase lags within half a cycle validates the directionality inference for oscillatory connections. These analyses strengthen the interpretation of the connectivity matrix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The connectivity detection method corrects for common drive from stimulus/movement-locked inputs and trial-wise fluctuations. Validation using simulated networks showed only ~1% false detection of common drive pairs, and 43% of neurons on the same electrode were not connected, arguing against spurious connectivity from common drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 address a critical methodological concern about common drive artifacts. The surrogate subtraction method is well-designed, and the validation using the equal rate model (C78) provides quantitative evidence that common drive is not a major confound. The observation that 43% of same-electrode neurons are not connected (C79) provides empirical evidence against column-wide common drive artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Subsampling from a large network with the same distance-dependent connectivity density as the data did not affect the shape of the degree distribution, validating that the observed heavy-tailed distribution is not an artifact of subsampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 addresses an important potential artifact (subsampling bias) through modeling. The simulation of a 32,000 neuron network with subsequent subsampling to match experimental conditions provides strong evidence that the heavy-tailed degree distribution is not artifactual. This is supported by Figure 4\u2014figure supplement 2 showing that the Gaussian distribution is preserved under subsampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Rich-club topology is state-dependent: networks during high oscillatory synchrony trials show clear rich-club topology, while low oscillatory synchrony networks show minimal rich-club effects, despite similar degree distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide compelling evidence for a causal relationship between oscillatory synchrony and rich-club topology through state-dependent analysis. The preservation of degree distribution while rich-club topology changes between high and low oscillatory states is a strong control. However, this analysis is limited to two datasets with >900 trials, which somewhat limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C30"
+    ],
+    "result": "The functional single neuron network across three fronto-parietal areas is highly complex, exhibiting small-world topology, functional modules spanning areas, heterogeneous neuron importance with hub neurons forming a rich-club.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C30 summarize the main topological findings. These are well-supported by the detailed analyses in other claim groups (C35-C50). The characterization as 'highly complex' is justified by the combination of modular, small-world, and rich-club properties. These summary claims accurately reflect the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C31",
+      "C32"
+    ],
+    "result": "The rich-club consists of neurons synchronized in beta or low frequency ranges, while non-rich-club neurons are mostly non-oscillatory synchronized, suggesting oscillatory synchrony as a central coordination mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C31-C32 present the key finding linking network topology to oscillatory synchrony. This is strongly supported by the statistical analyses showing significant overlap between rich-club and oscillators (C56), higher centrality for oscillators (C53-C54), and state-dependent rich-club effects (C93-C94). The interpretation as a 'central coordination mechanism' is well-justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "Oscillatory synchrony may be a central communication mechanism for functional spiking networks, potentially acting as a global coordination mechanism across cortex through scale-invariant topological properties and feed-forward coincidence detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C63-C67, C80-C81 present interpretive conclusions about the role of oscillatory synchrony. While the data support the association between oscillatory synchrony and network topology, the mechanistic claims about 'central communication mechanism' and 'global coordination' are inferences that extend beyond the direct evidence. The scale-invariance claim (C63-C64) is based on similarity to regional networks but lacks direct multi-scale measurements. These are reasonable interpretations but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The functional roles of different frequency bands are discussed: beta as a stabilizing signal for state maintenance, low frequencies for global coordination and movement generation, with potential anatomical origins in parietal lobe (beta) and prefrontal cortex (low frequency), and possible cross-frequency coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C74 present interpretations about frequency-specific functions and anatomical origins. While these are supported by citations to prior work (C68-C70) and consistent with the area-specific frequency distributions observed (C58-C59), the specific functional roles and anatomical origins are speculative (C71-C74 are explicitly marked as speculation). These interpretations are plausible but require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript reviews prior work on graph theoretical approaches to brain networks, network topology at regional and cellular scales, oscillatory synchrony in different frequency bands, and identifies the knowledge gap regarding how functional network topology relates to oscillatory and non-oscillatory synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C29 accurately summarize established knowledge from the literature with appropriate citations. These claims provide context for the study and correctly identify the knowledge gap (C29) that the study addresses. The citations appear appropriate and the characterizations of prior work are consistent with the cited literature.",
+    "result_type": "MINOR"
+  }
+]

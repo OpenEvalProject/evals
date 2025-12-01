@@ -1,0 +1,1881 @@
+{
+  "submission": {
+    "id": "dd725e44-8797-4f0e-a0cc-dabb45097fba",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:32:45.943205Z",
+    "updated_at": "2025-11-30T20:32:45.943205Z"
+  },
+  "content": [
+    {
+      "id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "submission_id": "dd725e44-8797-4f0e-a0cc-dabb45097fba",
+      "content_type": "manuscript",
+      "content_text": "# Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex\n\n## Authors\n\n- Janelle MP Pakan<sup>1</sup> ([ORCID: 0000-0001-9384-8067](https://orcid.org/0000-0001-9384-8067))\n- Scott C Lowe<sup>2</sup>\n- Evelyn Dylda<sup>1</sup> ([ORCID: 0000-0002-1883-4498](https://orcid.org/0000-0002-1883-4498))\n- Sander W Keemink<sup>2</sup>\n- Stephen P Currie<sup>1</sup>\n- Christopher A Coutts<sup>1</sup>\n- Nathalie L Rochefort<sup>1</sup> ([ORCID: 0000-0002-3498-6221](https://orcid.org/0000-0002-3498-6221)) \u2020\n\n### Affiliations\n\n1. Centre for Integrative Physiology, School of Biomedical Sciences University of Edinburgh Edinburgh United Kingdom\n2. Institute for Adaptive and Neural Computation, School of Informatics University of Edinburgh Edinburgh United Kingdom\n3. Bernstein Center Freiburg, Faculty of Biology University of Freiburg Freiburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCortical responses to sensory stimuli are modulated by behavioral state. In the primary visual cortex (V1), visual responses of pyramidal neurons increase during locomotion. This response gain was suggested to be mediated through inhibitory neurons, resulting in the disinhibition of pyramidal neurons. Using in vivo two-photon calcium imaging in layers 2/3 and 4 in mouse V1, we reveal that locomotion increases the activity of vasoactive intestinal peptide (VIP), somatostatin (SST) and parvalbumin (PV)-positive interneurons during visual stimulation, challenging the disinhibition model. In darkness, while most VIP and PV neurons remained locomotion responsive, SST and excitatory neurons were largely non-responsive. Context-dependent locomotion responses were found in each cell type, with the highest proportion among SST neurons. These findings establish that modulation of neuronal activity by locomotion is context-dependent and contest the generality of a disinhibitory circuit for gain control of sensory responses by behavioral state.\n\n## Introduction\n\nSensory perceptions are modulated by the context in which they are experienced. In primary sensory areas, neuronal responses to sensory inputs are also modulated by behavioral states, including level of arousal, attention and locomotion (Iriki et al., 1996; Petersen and Crochet, 2013; Bennett et al., 2014; McGinley et al., 2015). In vivo recordings in awake mice have shown that locomotion modulates the response properties of neurons in the primary visual cortex (V1), resulting in an increased gain of excitatory neuron responses to visual stimuli (Niell and Stryker, 2010; Keller et al., 2012; Bennett et al., 2013; Polack et al., 2013; Saleem et al., 2013; Erisken et al., 2014; Reimer et al., 2014). However, the neuronal circuits underlying this response modulation are unclear.\n\nRecent studies have revealed that a specific subclass of inhibitory neurons, expressing vasoactive intestinal peptide (VIP), strongly increase their activity during locomotion (Fu et al., 2014; Reimer et al., 2014; Jackson et al., 2016). VIP neurons mainly inhibit a second class of inhibitory neurons, expressing somatostatin (SST; Figure 1A; Pfeffer et al., 2013; Jiang et al., 2015; Urban-Ciecko and Barth, 2016). It has been proposed that cholinergic activation of VIP neurons during locomotion would inhibit SST neurons, alleviating inhibition onto excitatory neurons and, as a consequence, increase the gain of excitatory neuron visual responses (Figure 1B; Fu et al., 2014). However, a previous study has reported an increase of SST spiking activity in layer 2/3 during locomotion (Polack et al., 2013), an observation that challenges the hypothesis of an SST-cell mediated disinhibitory circuit. The aforementioned recordings of SST neuronal activity were acquired in different sensory contexts, either in darkness or during the presentation of visual stimuli. One hypothesis that would explain the discrepancies between these results is that V1 neuronal responses to locomotion are context-dependent.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig1-v5.jpg)\n\n**Figure 1.:** (A) Schematic of the connectivity between pyramidal neurons (Pyr) and subtypes of inhibitory neurons, vasoactive intestinal peptide (VIP), somatostatin (SST) and parvalbumin (PV) expressing neurons, established from in vitro studies in V1 (Pfeffer et al., 2013; Jiang et al., 2015). (B) Proposed disinhibition model: locomotion activates VIP neurons through cholinergic (ACh) inputs, SST neurons are inhibited, which leads to a disinhibition of Pyr neurons and an increase in the gain of visual responses during locomotion (Fu et al., 2014). (C) Experimental set-up for two-photon calcium imaging in V1 of awake-behaving mice. Mice are head-fixed and can run freely on a cylindrical treadmill either during the presentation of a visual stimulus (oriented gratings) or in darkness. (D) Confocal images of 50 \u00b5m thick coronal sections showing cell type specific GCaMP6f expression in VIP, SST and PV-positive inhibitory neurons as well as in CaMKII-positive excitatory populations. Boundaries between cortical layers are indicated. (E) Left panel, in vivo two-photon images of VIP, SST and PV neurons labelled with GCaMP6f; cortical depth of imaging is indicated. Right panel, example calcium transients (\u0394F/F0, coloed traces) of single VIP, SST and PV neurons, imaged in darkness and during visual stimulation with oriented gratings (grey bar above trace), and aligned with the corresponding running speed (cm/s, black traces). Scale bars on images, 50 \u00b5m.\n\nIn this study, we tested this hypothesis by directly comparing the locomotion responses of excitatory and inhibitory neurons in darkness and during visual stimulation. We used two-photon calcium imaging to monitor the activity of excitatory neurons as well as of three non-overlapping populations of inhibitory neurons (VIP, SST and parvalbumin [PV] neurons) in layer 2/3 and layer 4 of V1 in awake behaving mice. Our results show that during visual stimulation these three classes of interneurons increase their activity with locomotion, challenging the model of a disinhibitory circuit mediated through SST neurons. We found that locomotion affects the activity of inhibitory circuits differently in darkness and during visual stimulation, revealing a context-dependent, cell type specific response to locomotion in V1. The highest proportion of context-dependent responses to locomotion was found among SST neurons, which play a central role in V1 microcircuits. We suggest alternative mechanisms of how locomotion modulates the neuronal activity in V1, highlighting the dynamic nature of\u00a0interneurons function that strongly depends on the behavioral context of the animal.\n\n## Results\n\nWe compared the modulation of neuronal activity by locomotion in the mouse primary visual cortex (V1), between two different sensory contexts: darkness and visual stimulation. To do this, we used two-photon calcium imaging in head-fixed mice that ran freely on a cylindrical treadmill (Figure 1C). The relative changes in somatic fluorescence of the genetically-encoded calcium indicator GCaMP6f were used as a non-linear readout of the neuronal spiking activity (Chen et al., 2013). Inhibitory neuronal subtypes were labeled by injecting adeno-associated viruses (AAVs) into V1 of Cre-recombinase transgenic mice (PV-, SST-, or VIP-Cre mice) for the Cre-inducible expression of the genetically-encoded calcium indicator GCaMP6f (Figure 1D\u2013E; Chen et al., 2013). To image excitatory neurons, we co-injected a floxed version of GCaMP6f and an AAV where Cre expression is driven by a CaMKII promoter, into C57/BL6 mice. After 2\u20133 weeks of expression, we recorded the running speed and GCaMP6f signals simultaneously, both in total darkness and during visual stimulation (Figure 1E).\n\n### Layer 2/3 celltype-specific responses to locomotion differ in darkness and during visual stimulation\n\n#### Excitatory neurons\n\nWe quantified, for each excitatory neuron (n\u00a0=\u00a01124 in 12 mice), the mean amplitude of calcium transients during locomotion periods and stationary periods, both during visual stimulation (drifting gratings) and in darkness (Figure 2A(i),B(i)). In agreement with previous electrophysiological observations (Niell and Stryker, 2010; Keller et al., 2012; Bennett et al., 2013; Polack et al., 2013; Saleem et al., 2013; Erisken et al., 2014; Reimer et al., 2014), we observed that, on average, locomotion increased the amplitude of calcium transients in excitatory neurons during visual stimulation (Figure 2B(i), Figure 2\u2014figure supplement 1B(i) mean change in fluorescence [\u2206F/F0] =\u00a00.12 \u00b1 0.02 locomotion versus 0.07 \u00b1 0.01 stationary; p<0.001, n\u00a0=\u00a012, Wilcoxon signed rank test). We quantified the effect of locomotion by calculating a locomotion modulation index (LMI) for each neuron, corresponding to the difference between the mean \u2206F/F0 during locomotion (RL) and stationary (Rs) periods, normalized by the sum of the mean \u2206F/F0 during both behavioral states (LMI = (RL \u2013 Rs)/(RL + Rs)). An LMI equal to 0 indicates no difference between locomotion and stationary periods, while an LMI equal to 0.5 indicates that the average amplitude of calcium transients was three times higher during locomotion than during stationary periods. Comparing the distribution of LMIs between the two sensory contexts, we found that the modulation of the\u00a0activity of excitatory neurons by locomotion was significantly different in darkness compared to visual stimulation (Figure 2C(i),D(i); mean of median LMI: 0.07 \u00b1 0.02 darkness versus 0.19 \u00b1 0.02 visual stimulation; p=0.001, n\u00a0=\u00a012, Kruskal\u2013Wallis test). During visual stimulation, 47 \u00b1 4% of excitatory neurons were significantly locomotion responsive (see Materials and methods for locomotion responsive criteria), compared with 28 \u00b1 4% in darkness. Additionally, in the dark, a small proportion of neurons were inhibited by locomotion, decreasing their activity during locomotion periods relative to stationary periods (10 \u00b1 1% of neurons).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig2-v5.jpg)\n\n**Figure 2.:** (A\u2013B) Scatter plots of the mean amplitude of fluorescence changes (\u0394F/F0) of each neuron for locomotion periods versus stationary periods, in darkness (A) and during visual stimulation (oriented gratings) (B); (i) excitatory cells (Exc), n\u00a0=\u00a01124; (ii) VIP, n\u00a0=\u00a0210; (iii) SST, n\u00a0=\u00a079; (iv) PV, n\u00a0=\u00a0199 neurons. (C) Histograms of the distribution of locomotion modulation indices (LMI\u00a0= (RL \u2013 RS)/(RL + RS), where RL and RS are the mean \u2206F/F0 during locomotion and stationary periods, respectively), for each cell type, in darkness (Dark, black) and during visual stimulation (Stim, coloed). An LMI equal to 0 indicates no difference between locomotion and stationary periods, while an LMI equal to 0.5 indicates that the average amplitude of calcium transients was three times higher during locomotion than during stationary periods. (D) Mean of the median LMI per animal and s.e.m. **p<0.01, n.s., not significant (p>0.05); n\u00a0= 12\u00a0(i), 12\u00a0(ii), 11\u00a0(iii), 13\u00a0(iv) mice; Kruskal\u2013Wallis test. (E) Schematic representation of the results. Size and direction of the\u00a0arrows indicate the average response per cell type during locomotion (increasing or decreasing activity). In darkness, SST and excitatory neurons were largely non-responsive to locomotion while VIP and PV neurons were strongly activated by locomotion. However, during visual stimulation, locomotion increases the responses of excitatory neurons as well as of the three classes of inhibitory neurons (VIP, SST and PV).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig2-figsupp1-v5.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatter plots of the mean amplitude of fluorescence changes (mean \u0394F/F0) of each neuron for locomotion periods versus stationary periods, during grey screen presentation; (i) excitatory cells (Exc), n\u00a0=\u00a01124; (ii) VIP, n\u00a0=\u00a0210; (iii) SST, n\u00a0=\u00a079; (iv) PV, n\u00a0=\u00a0199 neurons. (B) Mean \u0394F/F0 per animal and s.e.m. for stationary (open bars) and locomotion (solid bars) periods in darkness (Dark), during a\u00a0grey screen presentation, and during the presentation of oriented gratings (Stim); statistics based on the\u00a0Wilcoxon signed rank test. (C) Mean of the median LMI per animal and s.e.m.; statistics based on the\u00a0Kruskal\u2013Wallis test. For (B\u2013C), n\u00a0= 12\u00a0(i), 12\u00a0(ii), 11\u00a0(iii), 13\u00a0(iv) mice; *p<0.05, **p<0.01 and ***p<0.001, n.s., not significant (p>0.05).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig2-figsupp2-v5.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Scatter plots of the mean amplitude of fluorescence changes (\u0394F/F0) of each neuron during visual stimulation (oriented gratings) versus darkness, during stationary (A) and locomotion (B) periods. (C) Mean \u0394F/F0\u00a0per animal and s.e.m. in darkness (Dark, black bars) versus during the presentation of visual stimulation (oriented gratings; Stim, coloed bars) during stationary and locomotion periods; statistics based on Wilcoxon signed rank test; n\u00a0= 12\u00a0(i), 12\u00a0(ii), 11\u00a0(iii), 13\u00a0(iv) mice; *p<0.05, **p<0.01 and ***p<0.001, n.s., not significant (p>0.05).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig2-figsupp3-v5.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Cross-correlation between \u0394F/F0\u00a0and running speed during darkness (left) and visual stimulation (right) for each neuronal subtype. Thin grey lines represent individual neurons and thick lines represent the mean cross-correlation across all neurons within a subtype. (B) Histograms of the zero-time correlation values per neuron in darkness (dark bars) and during visual stimulation (coloed bars). (C) Mean zero-time correlation and s.e.m. for each neuronal subtype across animals, in darkness (left) and during visual stimulation (middle). Right panel shows the difference between darkness and visual stimulation conditions (mean zero-time values, Stim-Dark). Note that SST neurons show significantly higher zero-time correlation values during visual stimulation (p=0.001), as do excitatory neurons (p=0.024). In contrast, VIP neurons have lower zero-time correlation values during visual stimulation, however this difference is not significant across animals (p=0.225). PV neurons show no significant change between darkness and visual stimulation conditions (p=0.778).\n\n#### VIP neurons\n\nAs reported in previous studies (Fu et al., 2014; Reimer et al., 2014; Jackson et al., 2016), we found that VIP neurons (n\u00a0=\u00a0210 in 12 mice) strongly responded to locomotion (Figure 1E and Figure 2A(ii),B(ii)). This was true both in darkness (mean \u2206F/F0 =\u00a00.51 \u00b1 0.12 locomotion versus 0.10 \u00b1 0.03 stationary; p<0.001, n\u00a0=\u00a012, Wilcoxon signed rank test) as well as during visual stimulation (mean \u2206F/F0 =\u00a00.42 \u00b1 0.14 locomotion versus 0.09 \u00b1 0.02 stationary; p<0.001, n\u00a0=\u00a012) with no significant difference in the average LMI between sensory contexts (Figure 2C(ii),D(ii), mean of median LMI: 0.60 \u00b1 0.05 darkness versus 0.49 \u00b1 0.06 visual stimulation; p=0.106, n\u00a0=\u00a012, Kruskal\u2013Wallis test; see also Figure 2\u2014figure supplement 1B(ii)). A high proportion of VIP neurons were significantly locomotion responsive in both sensory contexts (85 \u00b1 7% in darkness and 79 \u00b1 6% during visual stimulation).\n\nIn order to compare our results directly with previous findings (Fu et al., 2014), we calculated the cross-correlation between VIP calcium signals and running speed. We confirmed the presence of a single positive peak around time zero, both in darkness and during visual stimulation (Figure 2\u2014figure supplement 2A(ii)). We also observed a lower amplitude during visual stimulation but this decrease was not significant (mean zero-time correlation: 0.26 \u00b1 0.04 in darkness versus 0.20 \u00b1 0.02 during visual stimulation; p=0.225, n\u00a0=\u00a012, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 2C). Similarly, the mean \u2206F/F0 (Figure 2\u2014figure supplement 3C(ii) and the mean LMI (Figure 2D(ii)) of VIP neurons also decreased during visual stimulation, without reaching significance (mean \u2206F/F0 = 0.51 \u00b1 0.12 in darkness versus 0.42 \u00b1 0.14 during visual stimulation; p=0.151, n\u00a0=\u00a012, Wilcoxon signed rank test).\n\n#### SST neurons\n\nIn contrast to VIP neurons, responses of SST neurons (n\u00a0=\u00a079 in 11 mice) to locomotion were found to be highly context-dependent. During visual stimulation, the mean \u2206F/F0 during locomotion periods was significantly higher than during stationary periods (Figure 2B(iii), Figure 2\u2014figure supplement 1B(iii); mean \u2206F/F0 =\u00a00.25 \u00b1 0.05 locomotion versus 0.10 \u00b1 0.03 stationary; p=0.001, n\u00a0=\u00a011, Wilcoxon signed rank test). However, in darkness, SST neurons were either non-responsive, increased or even decreased their activity during locomotion with, on average, no significant difference between locomotion and stationary periods (Figure 2A(iii), Figure 2\u2014figure supplement 1B(iii); mean \u2206F/F0 =\u00a00.06 \u00b1 0.02 locomotion versus 0.06 \u00b1 0.01 stationary; p=0.102, n\u00a0=\u00a011, Wilcoxon signed rank test). As a result, the modulation of SST neuron responses by locomotion was found to be significantly different across sensory contexts (Figure 2C(iii),D(iii), mean of median LMI: 0.06 \u00b1 0.04 darkness versus 0.33 \u00b1 0.06 visual stimulation; p=0.002, n\u00a0=\u00a011, Kruskal\u2013Wallis test). During visual stimulation, 63 \u00b1 7% of SST neurons were significantly locomotion responsive (increasing their activity) and only 4 \u00b1 3% were decreasing their activity during locomotion. In darkness, the percentage of neurons increasing their activity dropped to 24 \u00b1 6% with an additional 11 \u00b1 5% of SST neurons decreasing their activity during locomotion.\n\nIn line with these results, the cross-correlation between SST calcium transients and running speed significantly increased during visual stimulation compared to darkness (mean zero-time correlation = 0.04 \u00b1 0.01 in darkness versus 0.13 \u00b1 0.01 during visual stimulation; p=0.001, n\u00a0=\u00a011, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 2C). Notably, SST neurons were strongly responsive to visual stimulation (Figure 2\u2014figure supplement 3(iii; mean \u2206F/F0 during locomotion = 0.06 \u00b1 0.02 darkness versus 0.25 \u00b1 0.05 visual stimulation; p=0.001, n\u00a0=\u00a011, Wilcoxon signed rank test). These results indicate that most SST neurons respond to visual stimuli and, in addition to this visual response, they become responsive to locomotion. In darkness, however, they have low spontaneous activity and are largely non-responsive to locomotion (Figure 2E).\n\n#### PV neurons\n\nFinally, PV neurons (n\u00a0=\u00a0199 in 13 mice) were strongly responsive to locomotion in both sensory contexts (Figure 2A(iv),B(iv), Figure 2\u2014figure supplement 1B(iv); dark: mean \u2206F/F0 =\u00a00.33 \u00b1 0.07 locomotion versus 0.13 \u00b1 0.02 stationary; p=0.001;, visual stimulation: mean \u2206F/F0 =\u00a00.41 \u00b1 0.08 locomotion versus 0.16 \u00b1 0.03 stationary; p<0.0001; n\u00a0=\u00a013 Wilcoxon signed rank test), with no significant difference between sensory conditions (Figure 1E, Figure 2C(iv),D(iv); mean of median LMI: 0.32 \u00b1 0.06 darkness versus 0.35 \u00b1 0.04 visual stimulation; p=0.663, n\u00a0=\u00a013, Kruskal\u2013Wallis test). Similarly, the cross-correlation between running speed and calcium transients showed a positive peak around time zero both in darkness and during visual stimulation, with no significant difference (p=0.778; n\u00a0=\u00a013, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 2).\n\n### Modulation of neuronal responses by locomotion during patterned and non-patterned visual stimuli\n\nIsoluminant grey screen stimulation is commonly used to record so called \u2018spontaneous activity\u2019 of neurons in the visual cortex. Since our results showed different locomotion responses in the dark and during the presentation of drifting gratings, we tested whether this difference was due to the presence of patterned visual stimuli or, more simply, to the presence of light (Figure 2\u2014figure supplement 1). We quantified the amplitude of fluorescence changes during stationary and locomotion periods in all three contexts: darkness, grey screen and drifting gratings. We did not find any significant difference for any of the inhibitory populations (VIP, SST and PV neurons) between the two types of visual stimulation (gratings vs grey screen; Figure 2\u2014figure supplement 1C). For excitatory neurons, we found a lower LMI during the presentation of a grey screen than during drifting grating presentation (mean of median LMI: 0.17 \u00b1 0.02 grey versus 0.19 \u00b1 0.02 visual stimulation; p=0.033, n\u00a0=\u00a012, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 1C(i)). Locomotion responses for each type of visual stimulus (gratings vs grey screen) were still significantly higher than during darkness (mean of median LMI: 0.07 \u00b1 0.02 dark versus 0.17 \u00b1 0.02 grey; p=0.007, n\u00a0=\u00a012, Kruskal\u2013Wallis test) (Figure 2\u2014figure supplement 1C(i)). These results indicate that, during visual stimulation and independently of the presence of patterned visual stimuli, excitatory, VIP, SST and PV neurons show increased activity during locomotion.\n\n### Diversity of context-dependent locomotion responses within cell types\n\nWhile comparisons of a neuronal population\u2019s LMI distribution (Figure 2C) indicates how, on average, that cell type is modulated by locomotion in different sensory contexts, it does not provide information about the context-dependent responses of single neurons. For instance, the average LMI could be the same in darkness and during visual stimulation even though individual neurons may have large changes in their LMI, which cancel out when considering the population as a whole.\n\nIn order to show the diversity of locomotion responses within each neuronal subtype, we examined the LMI value in darkness versus during visual stimulation for each neuron (Figure 3A). Neurons near the identity line show context-independent locomotion responses (similar LMI in darkness and during visual stimulation), while the other neurons changed their response to locomotion from one context to another (context-dependent responses). We first quantified this diversity by calculating the difference between the LMI value during visual stimulation and the LMI value in darkness for each neuron (Figure 3B). These results confirmed that VIP neurons displayed mainly context-independent locomotion responses (Figure 3B(ii), narrow distribution, centered around 0), while locomotion responses of SST neurons were mainly context dependent (Figure 3B(iii), broad distribution shifted towards positive values). Both excitatory and PV neuronal populations included a diversity of locomotion responses (broad distributions). To quantify the proportions of context-independent and context-dependent neurons in each cell type, we first determined the variability of the locomotion responses for each context by comparing neuronal responses across odd and even locomotion periods (Figure 3\u2014figure supplement 1; see Materials and methods). We found high correlation values for all neuronal populations, both in darkness and during visual stimulation (0.676\u00a0< R < 0.944; p<0.0001), indicating a general low variability of the responses across different locomotion periods in both contexts. We determined the proportion of context-dependent neurons meeting two criteria: i) with a response that was significantly different across contexts (neurons distance from the identity line in Figure 3A, to estimate the error on the LMI in both dark and stimulated conditions for each neuron, bootstrapping was employed (see Materials and methods)), and ii) with low variability of locomotion responses (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig3-v5.jpg)\n\n**Figure 3.:** (A) Left panels, scatter plots of the locomotion modulation index (LMI) of individual neurons in darkness versus during visual stimulation (gratings) with an\u00a0associated Pearson correlation coefficient (R-values). Context-dependent (CD; red) and context-independent (CI; blue) locomotion responsive neurons are highlighted. Context dependency was defined for each neuron by its distance from the identity line and the variability of its locomotion responses (see Materials and methods and Figure\u00a03\u2014figure supplement 1). Neurons that were either non-responsive to locomotion or responded unreliably are shown as open circles. Right panels, percentages of context-dependent (CD) and context-independent (CI) neurons for each neuronal subtype. Note the high proportion of CI VIP neurons (66%), the high proportion of CD SST neurons (49%), and the diversity of both PV and excitatory (Exc) neurons. (B) Histograms of the difference between the LMI value in darkness and during visual stimulation (LMIStim-LMIDark) for each neuronal population. Negative values indicate increased responses to locomotion in darkness compared with visual stimulation, positive numbers indicate increased responses to locomotion during visual stimulation, and numbers close to 0 (within red lines; \u20130.2\u00a0<\u00a0LMIStim-LMIDark\u00a0<\u00a00.2) indicate context-independent responses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig3-figsupp1-v5.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Scatter plots of LMI values calculated for each neuron from their responses during even and odd locomotion and stationary periods, in darkness (A) and during visual stimulation (oriented gratings) (B). Individual periods of locomotion separated by stationary periods (epochs) were divided into odd and even epochs and mean LMIs were calculated for each context (darkness and visual stimulation). Pearson correlation coefficient R-values are shown for each scatter plot. Note the high correlation values for all neuronal populations both in darkness and during visual stimulation (p<0.001). Red lines delineate 5% of the neurons with the highest variability, as measured by the difference in LMI during odd and even epochs. Context-dependent (red) and context-independent (blue) locomotion responsive neurons identified in Figure 3A are highlighted.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig3-figsupp2-v5.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The corresponding running speed is shown below each trace (cm/s, black). Exc, excitatory neuron.\n\nThese results confirm that most VIP neurons were context-independent, remaining locomotion-responsive in both sensory contexts (66%), with only 17% of neurons showing context-dependent responses (Figure 3A(ii), Figure 3\u2014figure supplement 2). The proportion of context-dependent neurons was the highest among SST neurons, with 49% of neurons showing context-dependent responses to locomotion (Figure 3A(iii), Figure 3\u2014figure supplement 2). Both excitatory and PV neurons had approximately the same proportion of context-dependent neurons (22% for excitatory and 25% for PV neurons) (Figure 3A(i), (iv)).\n\nFinally, we tested whether context-dependent neurons differ from context-independent ones with regard to the following characteristics: percentage of visually responsive neurons, orientation selectivity and direction selectivity. We did not find any significant difference in any neuronal population (comparisons between context-dependent and context independent neurons for each cell type, OSI, p>0.261; DSI p>0.093, Kruskal\u2013Wallis test), suggesting that the mechanisms underlying the modulation of locomotion responses differ from those determining the selectivity of visual responses.\n\n### Layer 4 excitatory and inhibitory responses to locomotion are similar to layer 2/3\n\nLayer 2/3 neurons receive sensory information from excitatory neurons in layer 4, the main thalamo-recipient layer, as well as top-down information from higher cortical areas (Niell, 2015). In addition, these neurons receive subcortical inputs from the dorsal lateral geniculate nucleus as well as neuromodulatory inputs (Polack et al., 2013; Fu et al., 2014; Lee et al., 2014). Context-dependent locomotion responses of layer 2/3 neurons may thus come from one of these distinct inputs or from a combination of them. By using the same approach as for layer 2/3 neurons, we recorded locomotion responses in layer 4 neurons (excitatory n\u00a0=\u00a0331; VIP n\u00a0=\u00a057; SST n\u00a0=\u00a074; PV n\u00a0=\u00a0109; in 6, 4, 6 and 6 mice, respectively). As in layer 2/3, we used local injections of AAVs into V1 for the Cre-inducible expression of the genetically-encoded calcium indicator GCaMP6f. However, we observed that on average the GCaMP6f labelling in layer 4 was sparser than in layer 2/3 (Figure 1D). Thus, we cannot exclude that we preferentially labelled subtypes of layer 4 neurons in which transduction efficiency with these AAV vectors would be higher. The quantification of locomotion responses showed no significant difference between layer 2/3 and layer 4 neurons, in any cell type, both in darkness and during visual stimulation (Figure 4B,C). The results showed a higher mean LMI value for PV neurons in layer 4 (0.45 \u00b1 0.04) compared to layer 2/3 (0.35 \u00b1 0.04) during visual stimulation. However, this did not reach significance; p=0.058, Mann-Whitney U-test). In addition, the results showed similar proportions of context-dependent responses in layer 4 as described in layer 2/3 (Figure 4A, see also Figure 3A; context-dependent neurons: Exc, L2/3: 22%, L4: 17%; VIP, L2/3: 17%, L4: 26%; SST, L2/3: 49%, L4: 42%; PV, L2/3: 25%, L4: 23%).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14985/elife-14985-fig4-v5.jpg)\n\n**Figure 4.:** (A) Scatter plots of locomotion modulation index (LMI) of individual neurons in darkness versus during visual stimulation (oriented gratings), with associated Pearson correlation coefficient (R-values) for excitatory (Exc; n\u00a0= 331), VIP (n = 57), SST (n = 74), and PV (n\u00a0=\u00a0109) neurons. Context-dependent (red) and context-independent (blue) locomotion responsive neurons are highlighted. Context dependency per neuron was defined by its distance from the identity line and its variability to locomotion periods (see Materials and methods). Neurons that were either non-responsive to locomotion or responded unreliably are shown as open circles. (B) Mean of the median LMI per animal and s.e.m. for layer 2/3 (L2/3) as well as layer 4 (L4), in darkness (Dark, black bars) and during visual stimulation (Stim, coloed bars) for Exc (L2/3, n\u00a0=\u00a012; L4, n\u00a0= 6), VIP (L2/3, n\u00a0= 12; L4, n = 4), SST (L2/3, n\u00a0= 11; L4, n = 6), and PV (L2/3, n\u00a0=13; L4, n\u00a0=6) mice. Within each cell type, there was no significant difference (n.s., p>0.05, Mann-Whitney U test) between the median LMI across layers in either context (darkness: Exc, p=0.151; VIP, p=0.521; SST, p=0.350; PV, p=0.966; visual stimulation: Exc, p=0.750; VIP, p=0.133; SST, p=0.961; PV, p=0.058; (C) Histograms of the difference between the LMI value in darkness and during visual stimulation (LMIStim-LMIDark) for each cell type. Negative values indicate increased responses to locomotion in the dark compared with visual stimulation, positive numbers indicate increased responses to locomotion during visual stimulation, and numbers close to 0 (within red lines; \u20130.2\u00a0<\u00a0LMIStim-LMIDark\u00a0<\u00a00.2) indicate context-independent responses.\n\n## Discussion\n\nThe increased gain of visual responses during locomotion provides a model to elucidate the circuit mechanisms underlying behavioral-state dependent changes of sensory responses. In this study, we found that the modulation of neuronal activity by locomotion is context-dependent and cell type specific, in layer 2/3 and layer 4 of mouse V1. During periods of visual stimulation, locomotion increases the activity of excitatory neurons as well as of three classes of inhibitory neurons (VIP, SST, PV; Figure 2E). These results indicate that the enhancement of excitatory neuron visual responses during locomotion does not result from the inhibition of SST neurons, in mouse V1. Our findings thus challenge the generality of a disinhibitory circuit involving VIP, SST and pyramidal neurons for the gain control of sensory responses by behavioral state.\n\n### Relationship between somatic fluorescence changes and spiking activity in different neuronal types and behavioral contexts\n\nIn this study, we used the relative changes in fluorescence of the genetically-encoded calcium indicator GCaMP6f as a reporter of the spiking activity of cortical neurons (Chen et al., 2013). For a given fluorescent calcium indicator, the relationship between the amplitude of somatic fluorescence changes and the number of spikes can be affected by a number of factors including the concentration of calcium buffers in the soma, the balance between calcium influx and efflux as well as calcium release from internal stores (Grienberger et al., 2012). Consequently, potential confounding factors in the present study would be (1) different intracellular calcium dynamics in different types of inhibitory neurons as well as (2) a higher increase of cytosolic free calcium concentration for the same number of spikes during locomotion compared to stationary periods. Considering that neuromodulators can regulate calcium influx (Fucile, 2004; Shen and Yakel, 2009), this second possibility may result from the action of neuromodulators released during locomotion that would increase the amount of calcium entering the neuron in response to each spike. In that case, for the same number of spikes, the increase in fluorescence of our calcium indicator would be higher during locomotion than during stationary periods.\n\nWithout an independent readout of the spiking activity for each neuronal type in each behavioral context, we cannot exclude that the relationship between fluorescence transients and the\u00a0number of spikes differ between different neurons and different contexts. However, the comparison of our results (mean \u0394F/F0, Figure 2\u2014figure supplement 1B, \u2018stim\u2019 column) with spiking frequencies published in a previous study (see Supplementary Table 3 of Polack et al., 2013) in mouse V1 strongly suggests that somatic GCaMP6f fluorescence changes do reflect changes in spiking activity related to locomotion. For the same neuronal populations (layer 2/3 Excitatory, SST and PV neurons; layer 4 Excitatory neurons) and visual stimulation condition (drifting gratings), both data sets show the same relative change in signal during locomotion compared to stationary periods (corresponding to an approximate doubling of activity during locomotion for all three cell types). This similarity suggests that somatic GCaMP6 fluorescence changes during locomotion do reflect changes in spiking activity, at least in these cell types during visual stimulation.\n\n### Comparison with previous findings: locomotion responses differ in darkness and during visual stimulation\n\nIn this study, we found that SST activity increased with locomotion during visual stimulation. This is in line with previous electrophysiological recordings of SST neurons (Polack et al., 2013) but in contradiction with the current disinhibitory model that relies on the inhibition of SST neurons during locomotion (Figure 1B; Fu et al., 2014). Our results provide an explanation for these discrepancies since the aforementioned electrophysiological recordings were acquired during visual stimulation whereas imaging of SST activity was done in the dark (Fu et al., 2014). The disinhibitory model was based on the assumption that the locomotion-driven response of SST neurons would be similar in the dark and during visual stimulation (Fu et al., 2014). The same assumption was made in the interpretation of membrane potential fluctuations of VIP and SST neurons recorded during the presentation of a blank screen (Reimer et al., 2014). While VIP neurons were reliably depolarized during running, the SST population was heterogeneous. The authors distinguished two populations of SST interneurons (see Supplementary Figure 5C of Reimer et al., 2014): Type I cells were inhibited by running while Type II cells were depolarized. Importantly, spiking activity of SST neurons was not reported and it is thus not clear how the membrane potential fluctuations relate to spiking activity.\n\nOur findings regarding the locomotion responses of SST neurons in darkness are consistent with the previous imaging study performed in similar conditions (Figure 2\u2014figure supplement 2 of the present study compared to Figure 3 and Figure S3 of Fu et al., 2014) as well as with the heterogeneity of membrane potential fluctuations of SST neurons during locomotion (Reimer et al., 2014). We cannot exclude the possibility that a disinhibitory circuit may underlie the activity of a small fraction of neurons in darkness: the majority of VIP neurons increase their activity with locomotion, while a small proportion of SST neurons are inhibited during locomotion, potentially leading to the increase in activity of some pyramidal neurons. However, the results obtained in darkness show that the majority of SST neurons are not responsive to locomotion at all, challenging the generality of a disinhibitory circuit acting through the inhibition of SST neurons. With visual stimulation, the inconsistency of the disinhibitory model is even stronger since the vast majority of SST neurons increase their activity with locomotion (see Figure 2B(iii)). Consequently, the results obtained during visual stimulation (present study and Polack et al., 2013) are incompatible with a model in which VIP neurons disinhibit excitatory neurons by inhibiting SST neurons. Additionally, while the vast majority of VIP neurons are context-independent with regard to their locomotion response, excitatory neurons show significantly increased locomotion responses during visual stimulation compared to darkness conditions. Therefore, the context-dependent responses of excitatory neurons do not result from a disinhibitory circuit initiated by VIP neurons.\n\nAn appealing aspect of the disinhibitory model was the idea of a canonical circuit for gain modulation of sensory responses (Pi et al., 2013). While the connectivity may be canonical, we show that the circuit activity can strongly differ depending on the behavioral context. Therefore, functional properties of inhibitory neurons should not be generalized from one context to the next, and caution should be taken when inferring connectivity from functional recordings obtained in a specific behavioral context.\n\n### Alternative circuit mechanisms for behavioral-state modulation of visual responses in V1\n\nOur results indicate that, in addition to the activation of VIP neurons during locomotion, other pathways are involved in linking locomotion and visual responses in V1. We suggest that neuromodulatory inputs triggered by locomotion would not only activate VIP neurons through nicotinic acetylcholine receptors as previously shown (Alitto and Dan, 2012; Arroyo et al., 2014; Fu et al., 2014), but would also directly activate PV, SST, and excitatory neurons. Previous work has demonstrated cholinergic facilitation of cortical inhibitory neurons (Kawaguchi, 1997; Xiang et al., 1998; Arroyo et al., 2012; Alitto and Dan, 2012), including SST neurons (Kawaguchi, 1997; Fanselow et al., 2008; Xu et al., 2013; Chen et al., 2015). Similarly, in vitro studies have shown that norepinephrine can depolarize both excitatory (McCormick et al., 1993; Kirkwood et al., 1999) and inhibitory\u00a0(Kawaguchi and Shindou, 1998) cortical neurons. Finally, in vivo studies have shown that neuromodulatory inputs, cholinergic and noradrenergic, can control the gain and signal-to-noise ratio of V1 excitatory neurons during locomotion (Pinto et al., 2013; Polack et al., 2013; Bennett et al., 2014; Lee et al., 2014). We suggest that in darkness, the effect of neuromodulatory inputs remains subthreshold in SST neurons. During visual stimulation, SST neurons are strongly activated and the effect of neuromodulatory inputs becomes suprathreshold. In agreement with the known intra-cortical connectivity in mouse V1 (Figure 1A; Pfeffer et al., 2013; Jiang et al., 2015), our findings support this neuromodulatory hypothesis. In darkness, VIP and PV neurons are activated by locomotion and inhibit SST and excitatory neurons, preventing their activation by locomotion-dependent inputs. During visual stimulation, SST and excitatory neurons are activated: they overcome the intra-cortical inhibition by VIP and PV neurons and become responsive to direct locomotion-dependent inputs. Since SST neurons provide the main intra-cortical input to VIP neurons (Pfeffer et al., 2013) and are strongly visually-responsive, they likely inhibit VIP neurons (or a subpopulation of VIP neurons) during visual stimulation. This is consistent with the decrease in activity of a portion of VIP neurons that was observed during visual stimulation (Fu et al., 2014; see also Figure 2\u2014figure supplement 3B(ii).\n\nAn alternative or complementary hypothesis to the neuromodulatory pathway is that the modulation of visual inputs by locomotion already takes place in subcortical nuclei, such that the thalamo-cortical inputs received by excitatory neurons, and potentially SST neurons, would convey the increased gain of visual responses during locomotion. Indeed, recent studies have shown that projections from the dorsal lateral geniculate nucleus (Erisken et al., 2014; Roth et al., 2016) and from the thalamic latero-posterior nucleus (Roth et al., 2016) to V1 both convey locomotion signals.\n\nThe diversity of context-dependent responses to locomotion within SST, PV and, to a lesser extent, VIP populations indicates that there are functional sub-types within each of these interneuron populations. Based on a comprehensive analysis of morphological and electrophysiological properties of inhibitory neurons, a recent in vitro study has identified seven distinct types of cortical interneurons in layer 2/3 (Jiang et al., 2015). Further, in vivo characterization of the activity of these sub-types will be necessary to identify how these populations relate to the different context-dependent responses identified in the present study.\n\n## Materials and methods\n\n### Animals\n\nThree Cre-driver transgenic mice lines were used to label inhibitory interneurons: Sst<tm2.1(cre)Zjh> (SST-Cre) [RRID:IMSR_JAX:013044], Pvalb<tm1(cre)Arbr> (PV-Cre) [RRID:IMSR_JAX:008069], Vip<tm1(cre)Zjh> (VIP-Cre) [RRID:IMSR_JAX:010908], all originally obtained from Jackson Laboratory, ME, USA. These lines were cross-bred with Rosa-CAG-LSL-tdTomato [RRID:IMSR_JAX:007914] mice. C57Bl/6 wild type mice (Jackson Laboratory, ME) were used for virus injections targeting the expression of GCaMP6 in CaMKII-expressing neurons. Mice were group housed (typically 2\u20134 mice) and both male and female mice were used for the experiments. All procedures were approved by the University of Edinburgh animal welfare committee, and were performed under a UK Home Office project license.\n\n### Surgical procedures\n\n#### Virus injections\n\nFor virus injections, 8- to 10-week-old mice were anesthetized with isoflurane (4% for induction and 1\u20132% maintenance during surgery) and mounted on a stereotaxic frame (David Kopf Instruments, CA). Eye cream was applied to protect the eyes (Bepanthen, Bayer, Germany) and analgesics were injected subcutaneously (Vetergesic, buprenorphine, 0.1 mg/kg of body weight). After an incision was made in the scalp, the bone surface was cleaned and a small craniotomy was performed over the left V1 (3.5\u2009mm lateral and 1\u2009mm anterior to lambda with an injection pipette inserted 70\u00b0 from vertical and 30\u00b0 from midline). Adeno-associated viruses (AAVs) were injected using a pipette with 20\u2009\u03bcm tip diameter (Nanoject, Drummond Scientific, PA) at a speed of 10 nl min\u22121 at three different depths (around 250, 400, and 600\u2009\u03bcm deep; 50 nl per site). AAVs used in this study include: AAV1.Syn.Flex.GCaMP6f.WPRE.SV40 to label SST, PV, and VIP cells in Cre-driver transgenic mice as well as AAV1.Syn.GCaMP6f.WPRE.SV40 in tdTomato crosses (see above) and AAV1.CaMKII0.4.Cre.SV40 with AAV1.Syn.Flex.GCaMP6f.WPRE.SV40 in C57Bl/6 wild type mice (all AAVs acquired from the University of Pennsylvania Vector Core, PA). After each injection, pipettes were left in situ for an additional 5\u2009min to prevent backflow. The skin was then sutured and mice were monitored until they recovered from anesthesia. The\u00a0animals were returned to their home cage for 2\u20133 weeks.\n\n#### Head-plate and imaging window\n\nMice were anesthetized with isoflurane (4% for induction and 1\u20132% maintenance during surgery) and mounted in a stereotaxic frame. Eye cream was applied to protect the eyes (Bepanthen, Bayer, Germany), analgesics and anti-inflammatory drugs were injected subcutaneously (Vetergesic, buprenorphine, 0.1 mg/kg of body weight, carprofen, 0.15\u00a0mg, and dexamethasone, 2\u00a0\u00b5g). A section of scalp was removed and the underlying bone was cleaned before a craniotomy (around 2\u00a0\u00d7\u00a02\u2009mm) was made over the left V1 (centered around 2.5\u2009mm lateral and 0.5\u2009mm anterior to lambda). The craniotomy was then sealed with a glass cover slip and fixed with cyano-acrylic glue. A custom-built head-post was implanted on the exposed skull with glue and cemented with dental acrylic (Paladur, Heraeus Kulzer, Germany).\n\n### Two-photon calcium imaging\n\nImaging was performed using a custom-built resonant scanning two-photon microscope with a Ti:Sapphire pulsing laser (Chameleon Vision-S, Coherent, CA, USA; < 70 fs pulse width, 80 MHz repetition rate) tuned to 920 nm. Using a 40X objective (0.8 NA, Nikon), 600\u00d7600 pixel images with a field-of-view of 250\u00a0\u00d7\u00a0250\u2009\u03bcm were acquired at 40\u2009Hz with custom-programmed LabVIEW based software (version 8.2; National Instruments, UK).\n\nWe used two-photon calcium imaging in head-fixed mice that ran freely on a cylindrical treadmill (Figure 1C; Dombeck et al., 2007). Habituation and imaging started 2\u20133 weeks after AAV injection. Mice were habituated to head-fixation in the dark for 45\u2009min and began to run freely on a polystyrene cylinder (20 cm diameter, on a ball-bearing mounted axis). The mice\u2019s running speed on the circular treadmill was continuously monitored using an optical encoder (E7P, 250cpr, Pewatron, Switzerland) connected to a data acquisition device (National Instrument, UK) with custom-written software in LabView (National Instrument, UK) and analyzed in MATLAB (Mathworks, MA). Mice could run freely and spent on average 26 \u00b1 2% of the time running in the dark and 41 \u00b1 2% during visual stimulation (n = 48 mice, 51 sessions).\n\nTwo-photon imaging was performed at 2\u20133 focal planes per mouse, at cortical depths between 130 and\u00a0350\u2009\u03bcm for L2/3 neurons and 350\u2013500\u2009\u03bcm for L4 neurons (cortical layers were confirmed on histological sections, see below). Laser power at the brain surface was kept below 50 mW. Mice with excessive brain movement artifacts were excluded. At each focal plane (n = 100 fields of view), 8\u201312 trials (60\u2009s duration) were acquired in total darkness and 12\u201320 trials acquired during visual stimulation, with dark and visual stimulation trials randomly interleaved.\n\nVisual stimuli were generated using the Psychophysics Toolbox package (Brainard, 1997) for MATLAB (Mathworks, MA) and displayed on an LCD monitor (51\u00a0\u00d7\u00a029 cm, Dell, UK) placed 20 cm from the right eye, covering 104\u00b0\u00a0\u00d7\u00a072\u00b0 of the visual field. Visual stimulation trials consisted of stationary full-field square-wave gratings for 4\u20135\u2009s and the corresponding drifting phase for 2\u2009s (0.03 cpd, 1\u2009Hz, 8 equally spaced directions in randomized order, contrast 80%, mean luminance 37\u2009cd/m2). Each trial started and ended with a grey screen (isoluminance). Additional grey screen data were obtained during the presentation of an isoluminant grey screen for 5\u201315\u2009s preceding the presentation of each oriented grating for 5\u2009s (0.03 cpd, 1\u2009Hz, 4 equally spaced orientations in randomized order, contrast 80%, mean luminance 37\u2009cd/m2).\n\nAt the end of the imaging session, red retrograde beads (Lumafluor, USA) were injected either at the surface or at 2 different focal planes at which neurons had been imaged. This red labelling was used as a structural landmark in histological sections to confirm which cortical layers had been imaged.\n\n### Histology\n\nAnimals were transcardially perfused with 0.9% saline and 4% PFA in phosphate buffer (0.1\u00a0M). Brains were sliced with a vibratome (50 \u00b5m thick) and rinsed in phosphate buffered saline (PBS). The slices were then mounted and counterstained with either DAPI (Vectashield mounting medium, Vector Labs, UK) or NeuroTrace 640/660 fluorescent Nissl stain (1:2000; RRID:nlx_152414, Life Technologies, NY) and coverslipped. Sections were imaged with a confocal microscope (Nikon A1R, Nikon Instruments, UK) to define the boundaries of cortical layers and localize the retrograde beads injected at the imaged focal planes in vivo.\n\n### Data analysis\n\n#### Image analysis\n\nTo correct for brain motion after image acquisition, we used 2D plane translation-based image alignment (SIMA 1.2.0, sequential image analysis; Kaifosh et al., 2014). Regions of interest (ROIs) corresponding to neuronal cell bodies were selected manually by inspecting down-sampled frames (2\u2009Hz), as well as the maximum intensity projection of each imaging stack (60\u2009s trial). The\u00a0pixel intensity within each ROI was averaged to create a raw fluorescence time series F(t). Baseline fluorescence F0 was computed for each neuron by taking the fifth percentile of the smoothed F(t) (1\u00a0Hz lowpass, zero-phase, 60th-order FIR filter) over each trial (F0(t)), averaged across all trials. As a consequence, the same baseline F0 was used for computing the changes in fluorescence in darkness and during visual stimulation. The change in fluorescence relative to baseline, \u0394F/F0 was computed by taking the difference between F and F0(t) and dividing by F0. In order to remove neuropil contamination, we used nonnegative matrix factorization (NMF), which is a low rank matrix decomposition method used for demixing spatially overlapping signal sources (Kim and Park, 2007; Langville et al., 2014), as implemented in NIMFA 1.2.1 (\u017ditnik and Zupan, 2012). The Python toolboxes were run with WinPython 2.7.10.3. All further analyses were performed using custom-written scripts in MATLAB (MathWorks, MA).\n\n#### Analysis of locomotion responses\n\nChanges in the position of the cylindrical treadmill (sampled at 12,000\u2009Hz) were interpolated onto a downsampled rate of 40\u2009Hz, matching the sampling rate of the two-photon imaging. To define stationary and locomotion periods we used the following criteria. Stationary corresponded to periods where the\u00a0instantaneous speed (as measured at the 40\u2009Hz sampling rate) was less than 0.1 cm/s. Locomotion corresponded to periods meeting three criteria: instantaneous speed \u2265 0.1 cm/s, 0.25\u00a0Hz lowpass filtered speed \u2265 0.1\u00a0cm/s, and an average speed \u2265\u00a00.1\u00a0cm/s over a 2 s window centered at this point in time. Any inter-locomotion interval shorter than 500 ms was also labelled as locomotion. Stationary periods less than 3\u2009s after or 0.2\u2009s before a period of locomotion were removed from the analysis. The locomotion modulation index (LMI) was defined as the difference between the mean \u2206F/F0 during locomotion (RL) and stationary (Rs) periods, normalized by the sum of both values: LMI = (RL \u2013 Rs)/(RL + Rs).\n\nTo estimate the error on the LMI in both dark and stimulated conditions for each neuron, bootstrapping with sample replacement was employed. We binned the signal into 1\u2009s bins, each of which had only one visual stimulus and one behavioral activity (locomotion or stationary) throughout its duration. For each 1\u2009s bin, we took the mean \u0394F/F0 and regarded this value as a single sample. For periods of time which had a single stimulus and behavioral activity persisted for longer than 1\u2009s, additional samples were drawn with intervals of no less than 2\u2009s. This interval duration was selected based on the autocorrelation of the calcium fluorescence signal, which took approximately 2\u2009s to fall to 0.5. The average correlation between consecutive samples of the same stimulus and activity condition was computed as a weighted average over all conditions, and was found to be R = 0.35. We then randomly selected samples of \u0394F/F0 with replacement from our original set of samples. The number of samples selected in each bootstrap resample (65% = 1-R) was reduced from the total number of samples available to reflect the fact that our samples were not completely independent. This process was repeated 10000 times to obtain 95% confidence intervals for significance tests for each neuron individually. A neuron was considered significantly locomotion responsive if its 95% confidence interval was significantly different from an LMI of 0 and its value exceeded an LMI of 0.2 (at least 50% change in \u2206F/F0 between locomotion and stationary).\n\nTo evaluate the variability of locomotion responses in a given context (dark or visual stimulation) for each neuron, we divided the data in two halves: we calculated separate LMI values for all odd and for all even locomotion periods (Figure 3\u2014figure supplement 1). Neurons with the highest variability of locomotion responses were identified based on the difference between odd and even LMI values for each neuronal population. The 5% most variable neurons (i.e. neurons that fall outside the red dashed lines Figure 3\u2014figure supplement 1 for either dark or visual stimulation) were excluded from being defined as context-dependent.\n\n#### Statistics\n\nThe\u00a0error bars in all graphs indicate standard error of the mean (s.e.m.) and statistics were performed with two-tailed tests. Unless otherwise stated, for statistical tests comparing the average \u0394F/F0 of neurons between two contexts or behavioral states (in darkness versus during visual stimulation, or stationary versus locomotion periods) we used Wilcoxon signed-rank tests. For statistical tests comparing the distribution of LMIs and cross-correlations between visual stimulation contexts we used the Kruskal\u2013Wallis test (one-way ANOVA on ranks). For statistical tests comparing \u0394F/F0 values across different layers, Mann-Whitney U tests were used.\n\nFor statistical tests we used the number of animals as our sample size because neuronal responses from the same mouse may be correlated and not represent independent samples. Therefore, comparing measures across neurons, rather than across animals, would incorrectly inflate the degrees of freedom with the risk of false positive results for detecting significant differences (Galbraith et al., 2010). This is especially relevant for 2-photon imaging studies where data from a large number of neurons are collected from a small number of animals.\n",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6c29251d-eb62-4638-8bee-2451277e0d0f",
+      "submission_id": "dd725e44-8797-4f0e-a0cc-dabb45097fba",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas D Mrsic-Flogel, University of Basel , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14985.012](https://doi.org/10.7554/eLife.14985.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Behavioural state modulation of inhibitory activity is context-dependent and cell-type specific in mouse V1\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study compares the modulation of neuronal activity in mouse visual cortex by locomotion between two conditions (contexts): in darkness and during visual stimulation. To monitor activity the authors use calcium indicators conditionally expressed in distinct neuron types in layer 2/3 and 4. During visual stimulation all cell types (VIP, SST, PV and Excitatory neurons) showed increased activity during locomotion. In darkness the response to locomotion was essentially restricted to VIP and PV cells. These interesting results challenge the generality of some recent publication and are discussed in the context of state dependent neuromodulation. The mechanisms by which visual processing is affected by locomotion has captured the curiosity of many labs. Clearly, determining how distinct types of cortical inhibitory neurons are modulated by locomotion is an important step towards this goal. The observations challenge the notion that all running-based modulations can be accounted for by a disinhibitory circuit involving VIP \u2013 SOM \u2013 pyramidal cells.\n\nEssential revisions:\n\nAll reviewers felt the authors could get much more out of the data with more analysis. For example, the variability analysis in Figures 3 and 4 is very hard to interpret without a quantification of measurement variability, i.e. how variable is the LMI between two sessions of dark and two session of visual stimulation. To estimate this, the authors could split the data in two and look at the variability between the first and second half (e.g. calculate an LMI on the first half the dark data and compare that to LMI from the second half of the dark data). Without this it is very hard to interpret what the variability means. The argument can be applied to data in Figure 3C, and corresponding parts of Figure 4.\n\nTo provide stronger visual support for the hypothesis that locomotion effects differ between darkness and visual stimulation conditions, can the authors please show a scatter plot of the LMI during visual stimulation vs. darkness for the neurons?\n\nTherefore, for Figures 3 and 4, the reviewers strongly advise to choose a different format of presentation. For example, the reader might expect scatter plots where each dot is the LMI of a neuron measured during darkness and during visual stimulation. Adding mean differences across neurons and sem for the relevant comparisons could help convey the results of the statistical analyses. To address these criticisms, the authors should choose the most appropriate format and statistics for data presented in Figures 3 & 4.\n\nOther reports have shown that the locomotion-based modulation of an (indiscriminative) population of V1 neurons is stronger during visual stimulation than during gray screen conditions (e.g. Erisken et al., 2014). Does the presence of light that make a difference or is it rather the visual stimulation with gratings? New experiments should be conducted using a gray screen (without patterned visual stimulation) to address this question.\n\nAlso, more analyses should be provided to address the following questions: Is there any characteristic feature of a cell that is locomotion responsive during stim only? Are the visual responses different of these cells than of cells that are locomotion responsive during darkness only? There is quite a bit of straightforward analysis that could be included that would significantly increase the value of the study.\n\nBy using the amplitude of calcium transients as a proxy for neuronal firing rates and comparing these transients across context and behavioral state, the authors make the assumption that both context and behavioral state will not impact the amount of calcium entering the cell in response to each spike. However if context and/or behavioral state modifies the level of neuromodulators in the cortex this assumption may be incorrect. Neuromodulators (e.g. acetylcholine) can regulate calcium influx through voltage gated calcium channels. This issue needs to be explicitly stated and thoroughly discussed in the Discussion.\n\nThe authors have correctly noticed several contradictions between previously published stories and have identified one factor (i.e. darkness vs. visual stimulation) that might explain at least some of these contradictions. While this is an important observation, the authors should be more precise and complete in their review of the existing literature. Here are a few examples: (1) Did Adesnik et al., 2012 indeed show higher responses of SOM for running vs. stationary? To my knowledge, they only show that activity of SOM interneurons is very low during anaesthesia, and much higher during running (2) Reimer et al., 2014 observed more hyperpolarized Vm of SOM interneurons during running with a blank screen (which is possibly a gray screen condition), but again this is not treated in the manuscript. (3) Contrary to the citation in l. 226, to my knowledge neither Ayaz et al. 2013 nor Saleem et al. 2013 performed targeted electrophysiological recordings of SOM interneurons. (4) Fu et al., 2014 already reported that the magnitude of VIP activation during locomotion is stronger during darkness than visual stimulation, but this is nowhere explicitly stated. (5) Most importantly, please explain which conditions and findings are replications of and agree with Fu et al. (2014) and which do not.\n\nInterpretation of the layer 4 data is difficult for two reasons: a) layer 4 cells seem to be inherently resistant to transfection by AAVs using the standard promoters used (hsyn, camkII, ef1a). Transgene expression is typically weaker and sparser in layer 4 than in layer 2/3 and layer 5 pyramidal cells. Given the sparse expression in layer 4, it is more than likely that the expression system preferentially targets a specific subtype of layer 4 pyramidal cell. Thus it is hard to extrapolate to layer 4 in general. Note, this is not something the authors should address experimentally, but it is a caveat that should probably be discussed. b) Layer 4 could of course receives input from all other layers, thus it becomes a chicken and egg problem as to where the locomotion modulation in layer 4 comes from. The authors' data may therefore not support the conclusion of a \"prominent role of subcortical inputs in both layers for the modulation of neuronal activity by locomotion\" (Results section, subsection \u201cLayer 4 excitatory and inhibitory responses to locomotion are similar to layer 2/3\u201d). These issues should be discussed comprehensively in the revised manuscript.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Behavioral-state modulation of inhibition is context-dependent and cell type specific in mouse visual cortex\" for further consideration at eLife. Your revised article has been favorably evaluated by a Senior editor, a Reviewing editor, and three reviewers.\n\nThe manuscript has been much improved but there is one remaining issue that need to be addressed before acceptance. During the consultation session, the reviewers thought that the Discussion needs a little more detail about how the disinhibitory circuit model fails. Specifically, compared to the previous version, there is the impression that the data became even more complicated. Specifically, based on the LMI, you concluded that the VIP modulation by locomotion is context-independent (i.e. probably consistent with the disinhibitory scheme), while the SST modulation during visual stimulation is probably breaking the scheme. The addition of the cross-correlation analysis, however, suggests that part of the observations look more in line with the disinhibitory model: in darkness, where VIP have higher cross-correlation peaks, SST have lower ones; during visual stimulation, where VIP have lower cross-correlation peaks, SST have higher ones. A similar trend is visible for the LMI but not significant.\n\nThe reviewers thought that while your primary message is clear (that the proposed disinhibitory circuit cannot explain the data), you could try to point out and discuss a bit more in which way the circuit fails. E.g. is it maybe already a failure that neither the SST LMI nor the SST cross-correlation are negative in the data, even during darkness? Why are the results different for the LMI and the cross-correlation analysis?\n\nThe manuscript will be accepted once you extend your discussion to include these suggestions.\n",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88ebca26-60a9-4f64-a04d-1e6c8e51f1d9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C1",
+      "claim": "In the primary visual cortex (V1), visual responses of pyramidal neurons increase during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primary visual cortex (V1), visual responses of pyramidal neurons increase during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established finding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "07fdcc4e-7887-4caf-a9a4-d539a90da653",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C2",
+      "claim": "Response gain of pyramidal neurons during locomotion was suggested to be mediated through inhibitory neurons, resulting in the disinhibition of pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This response gain was suggested to be mediated through inhibitory neurons, resulting in the disinhibition of pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a previously proposed model in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "660f5b7a-f1a4-4005-9602-e3cb28e8b92d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C3",
+      "claim": "Locomotion increases the activity of VIP, SST, and PV-positive interneurons during visual stimulation in layers 2/3 and 4 of mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vivo two-photon calcium imaging in layers 2/3 and 4 in mouse V1, we reveal that locomotion increases the activity of vasoactive intestinal peptide (VIP), somatostatin (SST) and parvalbumin (PV)-positive interneurons during visual stimulation, challenging the disinhibition model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "159e5235-72e4-4275-9867-35852983d545",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C4",
+      "claim": "The finding that locomotion increases activity of VIP, SST, and PV interneurons during visual stimulation challenges the disinhibition model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vivo two-photon calcium imaging in layers 2/3 and 4 in mouse V1, we reveal that locomotion increases the activity of vasoactive intestinal peptide (VIP), somatostatin (SST) and parvalbumin (PV)-positive interneurons during visual stimulation, challenging the disinhibition model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "c868911b-c025-48e0-8bd6-4d2f5e326497",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C5",
+      "claim": "In darkness, most VIP and PV neurons remained locomotion responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, while most VIP and PV neurons remained locomotion responsive, SST and excitatory neurons were largely non-responsive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "942e5fa8-b2d8-47bf-8963-7139100482e5",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C6",
+      "claim": "In darkness, SST and excitatory neurons were largely non-responsive to locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, while most VIP and PV neurons remained locomotion responsive, SST and excitatory neurons were largely non-responsive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7101e43e-0542-45ae-bbff-2de7285807fa",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C7",
+      "claim": "Context-dependent locomotion responses were found in each cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Context-dependent locomotion responses were found in each cell type, with the highest proportion among SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "b300cd2f-6432-497a-bd10-e3cc5aa67844",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C8",
+      "claim": "The highest proportion of context-dependent locomotion responses was found among SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Context-dependent locomotion responses were found in each cell type, with the highest proportion among SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6dd479dd-1326-471a-b4df-5d02f7719c8b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C9",
+      "claim": "Modulation of neuronal activity by locomotion is context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings establish that modulation of neuronal activity by locomotion is context-dependent and contest the generality of a disinhibitory circuit for gain control of sensory responses by behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d43d1dd0-5e58-4ecd-b996-14c44bc5acb5",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C10",
+      "claim": "The findings contest the generality of a disinhibitory circuit for gain control of sensory responses by behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings establish that modulation of neuronal activity by locomotion is context-dependent and contest the generality of a disinhibitory circuit for gain control of sensory responses by behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "60bfc41e-da2c-410c-8dba-87838b24ad2a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C11",
+      "claim": "Sensory perceptions are modulated by the context in which they are experienced.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory perceptions are modulated by the context in which they are experienced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about sensory processing based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "fe1d566a-6b55-4e70-bf29-8d5fc47c23c0",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C12",
+      "claim": "In primary sensory areas, neuronal responses to sensory inputs are modulated by behavioral states, including level of arousal, attention and locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary sensory areas, neuronal responses to sensory inputs are also modulated by behavioral states, including level of arousal, attention and locomotion (Iriki et al., 1996; Petersen and Crochet, 2013; Bennett et al., 2014; McGinley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "782e37e6-0e07-4986-b734-aead02732a31",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C13",
+      "claim": "In vivo recordings in awake mice have shown that locomotion modulates the response properties of neurons in the primary visual cortex (V1), resulting in an increased gain of excitatory neuron responses to visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo recordings in awake mice have shown that locomotion modulates the response properties of neurons in the primary visual cortex (V1), resulting in an increased gain of excitatory neuron responses to visual stimuli (Niell and Stryker, 2010; Keller et al., 2012; Bennett et al., 2013; Polack et al., 2013; Saleem et al., 2013; Erisken et al., 2014; Reimer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "9c80203e-4253-466a-8766-b2e4d410887e",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C14",
+      "claim": "VIP neurons strongly increase their activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that a specific subclass of inhibitory neurons, expressing vasoactive intestinal peptide (VIP), strongly increase their activity during locomotion (Fu et al., 2014; Reimer et al., 2014; Jackson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "45408bf5-9f27-4840-8d31-037253fb2234",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C15",
+      "claim": "VIP neurons mainly inhibit SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP neurons mainly inhibit a second class of inhibitory neurons, expressing somatostatin (SST; Figure 1A; Pfeffer et al., 2013; Jiang et al., 2015; Urban-Ciecko and Barth, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to previous research and reference to Figure 1A showing connectivity.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "56884f00-72c2-48a4-be9f-b0d7fd3fc1df",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C16",
+      "claim": "It has been proposed that cholinergic activation of VIP neurons during locomotion would inhibit SST neurons, alleviating inhibition onto excitatory neurons and increasing the gain of excitatory neuron visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that cholinergic activation of VIP neurons during locomotion would inhibit SST neurons, alleviating inhibition onto excitatory neurons and, as a consequence, increase the gain of excitatory neuron visual responses (Figure 1B; Fu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a previously proposed model supported by citation and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "0ec70581-bb91-43ee-8094-5e0d9388527a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C17",
+      "claim": "A previous study has reported an increase of SST spiking activity in layer 2/3 during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous study has reported an increase of SST spiking activity in layer 2/3 during locomotion (Polack et al., 2013), an observation that challenges the hypothesis of an SST-cell mediated disinhibitory circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "aaa8914d-a78a-4f6b-a39d-552ad26c5ae6",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C18",
+      "claim": "The observation of increased SST spiking activity during locomotion challenges the hypothesis of an SST-cell mediated disinhibitory circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous study has reported an increase of SST spiking activity in layer 2/3 during locomotion (Polack et al., 2013), an observation that challenges the hypothesis of an SST-cell mediated disinhibitory circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing previous findings with the disinhibitory model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "beac7733-77c4-4f96-9323-c602559d994f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C19",
+      "claim": "V1 neuronal responses to locomotion are context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis that would explain the discrepancies between these results is that V1 neuronal responses to locomotion are context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis being tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "721e9c79-1a9b-4dd3-8ff1-0a22235585e5",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C20",
+      "claim": "During visual stimulation, the three classes of interneurons (VIP, SST, PV) increase their activity with locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that during visual stimulation these three classes of interneurons increase their activity with locomotion, challenging the model of a disinhibitory circuit mediated through SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "5d2fbe57-e64e-4856-b7bc-b22982affb7f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C21",
+      "claim": "The finding that VIP, SST, and PV interneurons increase their activity with locomotion during visual stimulation challenges the model of a disinhibitory circuit mediated through SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that during visual stimulation these three classes of interneurons increase their activity with locomotion, challenging the model of a disinhibitory circuit mediated through SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "631ac706-c5aa-4969-85ab-eda196efbf36",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C22",
+      "claim": "Locomotion affects the activity of inhibitory circuits differently in darkness and during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that locomotion affects the activity of inhibitory circuits differently in darkness and during visual stimulation, revealing a context-dependent, cell type specific response to locomotion in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "1e1d6a3a-ddd4-4ee9-b3c9-e4341791a9c9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C23",
+      "claim": "SST neurons play a central role in V1 microcircuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest proportion of context-dependent responses to locomotion was found among SST neurons, which play a central role in V1 microcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement combines experimental findings with established knowledge about SST neuron connectivity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "3671b48d-1a08-4604-b03f-c9fbdc465809",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C24",
+      "claim": "Locomotion increased the amplitude of calcium transients in excitatory neurons during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous electrophysiological observations (Niell and Stryker, 2010; Keller et al., 2012; Bennett et al., 2013; Polack et al., 2013; Saleem et al., 2013; Erisken et al., 2014; Reimer et al., 2014), we observed that, on average, locomotion increased the amplitude of calcium transients in excitatory neurons during visual stimulation (Figure 2B(i), Figure 2\u2014figure supplement 1B(i) mean change in fluorescence [\u2206F/F0] = 0.12 \u00b1 0.02 locomotion versus 0.07 \u00b1 0.01 stationary; p<0.001, n = 12, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis, consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "a50eff08-6b70-4acb-bfcf-644cf868169f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C25",
+      "claim": "The modulation of the activity of excitatory neurons by locomotion was significantly different in darkness compared to visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the distribution of LMIs between the two sensory contexts, we found that the modulation of the activity of excitatory neurons by locomotion was significantly different in darkness compared to visual stimulation (Figure 2C(i),D(i); mean of median LMI: 0.07 \u00b1 0.02 darkness versus 0.19 \u00b1 0.02 visual stimulation; p=0.001, n = 12, Kruskal\u2013Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "49db5122-e9c2-4cb3-8f32-07fd8ad0f7b4",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C26",
+      "claim": "During visual stimulation, 47 \u00b1 4% of excitatory neurons were significantly locomotion responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, 47 \u00b1 4% of excitatory neurons were significantly locomotion responsive (see Materials and methods for locomotion responsive criteria), compared with 28 \u00b1 4% in darkness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "8ab436ae-4ff0-451b-83af-5404b57f0b3d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C27",
+      "claim": "In darkness, 28 \u00b1 4% of excitatory neurons were significantly locomotion responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, 47 \u00b1 4% of excitatory neurons were significantly locomotion responsive (see Materials and methods for locomotion responsive criteria), compared with 28 \u00b1 4% in darkness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d2f3fa13-8178-4bfe-b52b-20d37dfbc555",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C28",
+      "claim": "In darkness, 10 \u00b1 1% of excitatory neurons were inhibited by locomotion, decreasing their activity during locomotion periods relative to stationary periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the dark, a small proportion of neurons were inhibited by locomotion, decreasing their activity during locomotion periods relative to stationary periods (10 \u00b1 1% of neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "1ff1769b-cc7a-4fab-a545-82333fc0f140",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C29",
+      "claim": "VIP neurons strongly responded to locomotion both in darkness and during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in previous studies (Fu et al., 2014; Reimer et al., 2014; Jackson et al., 2016), we found that VIP neurons (n = 210 in 12 mice) strongly responded to locomotion (Figure 1E and Figure 2A(ii),B(ii)). This was true both in darkness (mean \u2206F/F0 = 0.51 \u00b1 0.12 locomotion versus 0.10 \u00b1 0.03 stationary; p<0.001, n = 12, Wilcoxon signed rank test) as well as during visual stimulation (mean \u2206F/F0 = 0.42 \u00b1 0.14 locomotion versus 0.09 \u00b1 0.02 stationary; p<0.001, n = 12)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data, statistical analysis, and consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "dfb2e913-c218-484d-8ed2-e335d48b5cea",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C30",
+      "claim": "There was no significant difference in the average LMI of VIP neurons between darkness and visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "with no significant difference in the average LMI between sensory contexts (Figure 2C(ii),D(ii), mean of median LMI: 0.60 \u00b1 0.05 darkness versus 0.49 \u00b1 0.06 visual stimulation; p=0.106, n = 12, Kruskal\u2013Wallis test; see also Figure 2\u2014figure supplement 1B(ii)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "426b1f96-6f4a-45b8-8d71-9e8eaa76695a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C31",
+      "claim": "85 \u00b1 7% of VIP neurons were significantly locomotion responsive in darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "A high proportion of VIP neurons were significantly locomotion responsive in both sensory contexts (85 \u00b1 7% in darkness and 79 \u00b1 6% during visual stimulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "b805a357-7f9d-4803-99b8-17468b386650",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C32",
+      "claim": "79 \u00b1 6% of VIP neurons were significantly locomotion responsive during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A high proportion of VIP neurons were significantly locomotion responsive in both sensory contexts (85 \u00b1 7% in darkness and 79 \u00b1 6% during visual stimulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6b6f93fb-3542-4bc9-8dea-4986aac0f352",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C33",
+      "claim": "VIP calcium signals show a single positive peak around time zero in cross-correlation with running speed, both in darkness and during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the presence of a single positive peak around time zero, both in darkness and during visual stimulation (Figure 2\u2014figure supplement 2A(ii)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "42573082-7ffe-4207-99e1-cea0ba3bd672",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C34",
+      "claim": "During visual stimulation, the mean \u2206F/F0 of SST neurons during locomotion periods was significantly higher than during stationary periods.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, the mean \u2206F/F0 during locomotion periods was significantly higher than during stationary periods (Figure 2B(iii), Figure 2\u2014figure supplement 1B(iii); mean \u2206F/F0 = 0.25 \u00b1 0.05 locomotion versus 0.10 \u00b1 0.03 stationary; p=0.001, n = 11, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "4a56ed6f-3748-491f-a1c5-6842a110d967",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C35",
+      "claim": "In darkness, SST neurons were either non-responsive, increased or decreased their activity during locomotion with, on average, no significant difference between locomotion and stationary periods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in darkness, SST neurons were either non-responsive, increased or even decreased their activity during locomotion with, on average, no significant difference between locomotion and stationary periods (Figure 2A(iii), Figure 2\u2014figure supplement 1B(iii); mean \u2206F/F0 = 0.06 \u00b1 0.02 locomotion versus 0.06 \u00b1 0.01 stationary; p=0.102, n = 11, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "14d2daa4-8b8a-4b6a-bb42-8197ffe122ff",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C36",
+      "claim": "The modulation of SST neuron responses by locomotion was significantly different across sensory contexts (darkness vs visual stimulation).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the modulation of SST neuron responses by locomotion was found to be significantly different across sensory contexts (Figure 2C(iii),D(iii), mean of median LMI: 0.06 \u00b1 0.04 darkness versus 0.33 \u00b1 0.06 visual stimulation; p=0.002, n = 11, Kruskal\u2013Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7e826f5b-74d8-46cc-bb49-4ffcf2058014",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C37",
+      "claim": "During visual stimulation, 63 \u00b1 7% of SST neurons were significantly locomotion responsive (increasing their activity).",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, 63 \u00b1 7% of SST neurons were significantly locomotion responsive (increasing their activity) and only 4 \u00b1 3% were decreasing their activity during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "dbecffb3-5a98-4e92-b56e-264abcadf44b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C38",
+      "claim": "During visual stimulation, only 4 \u00b1 3% of SST neurons were decreasing their activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, 63 \u00b1 7% of SST neurons were significantly locomotion responsive (increasing their activity) and only 4 \u00b1 3% were decreasing their activity during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "581843da-85b5-41ec-8428-c626a33e6e15",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C39",
+      "claim": "In darkness, 24 \u00b1 6% of SST neurons increased their activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, the percentage of neurons increasing their activity dropped to 24 \u00b1 6% with an additional 11 \u00b1 5% of SST neurons decreasing their activity during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "2ea3f8cf-521e-49f6-8459-b864ad04be2b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C40",
+      "claim": "In darkness, 11 \u00b1 5% of SST neurons decreased their activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, the percentage of neurons increasing their activity dropped to 24 \u00b1 6% with an additional 11 \u00b1 5% of SST neurons decreasing their activity during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "66a97178-cc22-43ce-a63e-b60814579009",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C41",
+      "claim": "The cross-correlation between SST calcium transients and running speed significantly increased during visual stimulation compared to darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, the cross-correlation between SST calcium transients and running speed significantly increased during visual stimulation compared to darkness (mean zero-time correlation = 0.04 \u00b1 0.01 in darkness versus 0.13 \u00b1 0.01 during visual stimulation; p=0.001, n = 11, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7f119fed-8586-4501-8cb6-3e9429e58fd8",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C42",
+      "claim": "SST neurons were strongly responsive to visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, SST neurons were strongly responsive to visual stimulation (Figure 2\u2014figure supplement 3(iii; mean \u2206F/F0 during locomotion = 0.06 \u00b1 0.02 darkness versus 0.25 \u00b1 0.05 visual stimulation; p=0.001, n = 11, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "e02c24ea-905f-4d37-a7fd-b21938c4ecf8",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C43",
+      "claim": "Most SST neurons respond to visual stimuli and, in addition to this visual response, they become responsive to locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that most SST neurons respond to visual stimuli and, in addition to this visual response, they become responsive to locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "59fa7f54-0084-475e-8ae5-402bf7690774",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C44",
+      "claim": "In darkness, SST neurons have low spontaneous activity and are largely non-responsive to locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, however, they have low spontaneous activity and are largely non-responsive to locomotion (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "ea430662-26f8-4263-b796-2d8187c4ec8a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C45",
+      "claim": "PV neurons were strongly responsive to locomotion in both darkness and visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PV neurons (n = 199 in 13 mice) were strongly responsive to locomotion in both sensory contexts (Figure 2A(iv),B(iv), Figure 2\u2014figure supplement 1B(iv); dark: mean \u2206F/F0 = 0.33 \u00b1 0.07 locomotion versus 0.13 \u00b1 0.02 stationary; p=0.001;, visual stimulation: mean \u2206F/F0 = 0.41 \u00b1 0.08 locomotion versus 0.16 \u00b1 0.03 stationary; p<0.0001; n = 13 Wilcoxon signed rank test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "8b47e246-a182-4d4e-a658-0687514b1a72",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C46",
+      "claim": "There was no significant difference in PV neuron locomotion responses between darkness and visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "with no significant difference between sensory conditions (Figure 1E, Figure 2C(iv),D(iv); mean of median LMI: 0.32 \u00b1 0.06 darkness versus 0.35 \u00b1 0.04 visual stimulation; p=0.663, n = 13, Kruskal\u2013Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "051ef396-2201-47d5-b9d7-9d82b624a19c",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C47",
+      "claim": "The cross-correlation between running speed and PV calcium transients showed a positive peak around time zero both in darkness and during visual stimulation, with no significant difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the cross-correlation between running speed and calcium transients showed a positive peak around time zero both in darkness and during visual stimulation, with no significant difference (p=0.778; n = 13, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "5443b50c-a5e2-4fff-aea6-6a8c5dadc64f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C48",
+      "claim": "There was no significant difference for any of the inhibitory populations (VIP, SST and PV neurons) in locomotion modulation between drifting gratings and grey screen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any significant difference for any of the inhibitory populations (VIP, SST and PV neurons) between the two types of visual stimulation (gratings vs grey screen; Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "50d6b722-6b98-4324-8aad-841ba6aa991e",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C49",
+      "claim": "For excitatory neurons, the LMI during grey screen presentation was lower than during drifting grating presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "For excitatory neurons, we found a lower LMI during the presentation of a grey screen than during drifting grating presentation (mean of median LMI: 0.17 \u00b1 0.02 grey versus 0.19 \u00b1 0.02 visual stimulation; p=0.033, n = 12, Kruskal\u2013Wallis test; Figure 2\u2014figure supplement 1C(i)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "de16d23a-b971-4c7a-bb64-1e0bd670d11d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C50",
+      "claim": "Locomotion responses for each type of visual stimulus (gratings vs grey screen) were significantly higher than during darkness for excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Locomotion responses for each type of visual stimulus (gratings vs grey screen) were still significantly higher than during darkness (mean of median LMI: 0.07 \u00b1 0.02 dark versus 0.17 \u00b1 0.02 grey; p=0.007, n = 12, Kruskal\u2013Wallis test) (Figure 2\u2014figure supplement 1C(i)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6659a0f2-d2fd-469b-b1da-adabeb801345",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C51",
+      "claim": "During visual stimulation and independently of the presence of patterned visual stimuli, excitatory, VIP, SST and PV neurons show increased activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, during visual stimulation and independently of the presence of patterned visual stimuli, excitatory, VIP, SST and PV neurons show increased activity during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "9a931c2e-022e-4947-b300-61ae873edad0",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C52",
+      "claim": "VIP neurons displayed mainly context-independent locomotion responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that VIP neurons displayed mainly context-independent locomotion responses (Figure 3B(ii), narrow distribution, centered around 0), while locomotion responses of SST neurons were mainly context dependent (Figure 3B(iii), broad distribution shifted towards positive values).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "23ac77b5-8ebb-419e-b3c4-187f0a3f03bf",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C53",
+      "claim": "Locomotion responses of SST neurons were mainly context dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that VIP neurons displayed mainly context-independent locomotion responses (Figure 3B(ii), narrow distribution, centered around 0), while locomotion responses of SST neurons were mainly context dependent (Figure 3B(iii), broad distribution shifted towards positive values).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "a8bf5163-90bc-44de-b455-ac3dc28c012e",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C54",
+      "claim": "Both excitatory and PV neuronal populations included a diversity of locomotion responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both excitatory and PV neuronal populations included a diversity of locomotion responses (broad distributions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "bbab1789-3723-4483-867e-5595a48787d9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C55",
+      "claim": "High correlation values were found for all neuronal populations when comparing neuronal responses across odd and even locomotion periods, both in darkness and during visual stimulation (0.676 < R < 0.944; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found high correlation values for all neuronal populations, both in darkness and during visual stimulation (0.676 < R < 0.944; p<0.0001), indicating a general low variability of the responses across different locomotion periods in both contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "0df6a935-0f89-42b2-82c6-cebd668549b9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C56",
+      "claim": "High correlation values across odd and even locomotion periods indicate a general low variability of the responses across different locomotion periods in both contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found high correlation values for all neuronal populations, both in darkness and during visual stimulation (0.676 < R < 0.944; p<0.0001), indicating a general low variability of the responses across different locomotion periods in both contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "4db9886c-7b6d-415a-a6ed-ed871112e566",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C57",
+      "claim": "66% of VIP neurons were context-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that most VIP neurons were context-independent, remaining locomotion-responsive in both sensory contexts (66%), with only 17% of neurons showing context-dependent responses (Figure 3A(ii), Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "f53265df-03ee-4490-b302-3d3f572987f1",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C58",
+      "claim": "17% of VIP neurons showed context-dependent responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that most VIP neurons were context-independent, remaining locomotion-responsive in both sensory contexts (66%), with only 17% of neurons showing context-dependent responses (Figure 3A(ii), Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "8e02d59f-463a-4cad-b486-a735db0e9731",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C59",
+      "claim": "49% of SST neurons showed context-dependent responses to locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of context-dependent neurons was the highest among SST neurons, with 49% of neurons showing context-dependent responses to locomotion (Figure 3A(iii), Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6b8adf04-a1af-4110-a925-99fdbcbe1eab",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C60",
+      "claim": "22% of excitatory neurons showed context-dependent responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both excitatory and PV neurons had approximately the same proportion of context-dependent neurons (22% for excitatory and 25% for PV neurons) (Figure 3A(i), (iv)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "f50626d0-94a0-4dac-96d1-fc32c7f482f5",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C61",
+      "claim": "25% of PV neurons showed context-dependent responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both excitatory and PV neurons had approximately the same proportion of context-dependent neurons (22% for excitatory and 25% for PV neurons) (Figure 3A(i), (iv)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6e947366-fd8b-48de-b4a9-21cf6fe75e90",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C62",
+      "claim": "Context-dependent neurons do not differ from context-independent neurons with regard to percentage of visually responsive neurons, orientation selectivity, and direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any significant difference in any neuronal population (comparisons between context-dependent and context independent neurons for each cell type, OSI, p>0.261; DSI p>0.093, Kruskal\u2013Wallis test), suggesting that the mechanisms underlying the modulation of locomotion responses differ from those determining the selectivity of visual responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d8f176c1-e9b3-45f6-ab25-19c92dd58cb9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C63",
+      "claim": "The mechanisms underlying the modulation of locomotion responses differ from those determining the selectivity of visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any significant difference in any neuronal population (comparisons between context-dependent and context independent neurons for each cell type, OSI, p>0.261; DSI p>0.093, Kruskal\u2013Wallis test), suggesting that the mechanisms underlying the modulation of locomotion responses differ from those determining the selectivity of visual responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "63b16744-f1f8-4c51-8b95-f43625c91c60",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C64",
+      "claim": "Layer 2/3 neurons receive sensory information from excitatory neurons in layer 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer 2/3 neurons receive sensory information from excitatory neurons in layer 4, the main thalamo-recipient layer, as well as top-down information from higher cortical areas (Niell, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about cortical circuitry supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "690dd248-ce7e-4b55-a13a-7bd345cd5bc2",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C65",
+      "claim": "Layer 4 is the main thalamo-recipient layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer 2/3 neurons receive sensory information from excitatory neurons in layer 4, the main thalamo-recipient layer, as well as top-down information from higher cortical areas (Niell, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cortical organization supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "bb57a7f5-8450-4763-9ad8-511298302a34",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C66",
+      "claim": "Layer 2/3 neurons receive top-down information from higher cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer 2/3 neurons receive sensory information from excitatory neurons in layer 4, the main thalamo-recipient layer, as well as top-down information from higher cortical areas (Niell, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cortical organization supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d30b55b9-32a4-42f7-a664-fb7ff77b379f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C67",
+      "claim": "Layer 2/3 neurons receive subcortical inputs from the dorsal lateral geniculate nucleus as well as neuromodulatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these neurons receive subcortical inputs from the dorsal lateral geniculate nucleus as well as neuromodulatory inputs (Polack et al., 2013; Fu et al., 2014; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about cortical circuitry supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "dd97b13e-438c-4c98-83f1-2ed41419c9b6",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C68",
+      "claim": "There was no significant difference in locomotion responses between layer 2/3 and layer 4 neurons in any cell type, both in darkness and during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantification of locomotion responses showed no significant difference between layer 2/3 and layer 4 neurons, in any cell type, both in darkness and during visual stimulation (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "641d13d6-6283-4559-a7c6-dfcc2256d95b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C69",
+      "claim": "Layer 4 showed similar proportions of context-dependent responses as layer 2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the results showed similar proportions of context-dependent responses in layer 4 as described in layer 2/3 (Figure 4A, see also Figure 3A; context-dependent neurons: Exc, L2/3: 22%, L4: 17%; VIP, L2/3: 17%, L4: 26%; SST, L2/3: 49%, L4: 42%; PV, L2/3: 25%, L4: 23%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "26075c4a-dd4c-445e-9e7b-dda18a0350ed",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C70",
+      "claim": "The enhancement of excitatory neuron visual responses during locomotion does not result from the inhibition of SST neurons in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "During periods of visual stimulation, locomotion increases the activity of excitatory neurons as well as of three classes of inhibitory neurons (VIP, SST, PV; Figure 2E). These results indicate that the enhancement of excitatory neuron visual responses during locomotion does not result from the inhibition of SST neurons, in mouse V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "a75663f5-d6a3-4e8f-afd4-229578d87e3e",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C71",
+      "claim": "The findings challenge the generality of a disinhibitory circuit involving VIP, SST and pyramidal neurons for the gain control of sensory responses by behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings thus challenge the generality of a disinhibitory circuit involving VIP, SST and pyramidal neurons for the gain control of sensory responses by behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "135fd531-08fd-4add-a64c-9082c8eb2146",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C72",
+      "claim": "The comparison of GCaMP6f fluorescence data with spiking frequencies from a previous study suggests that somatic GCaMP6f fluorescence changes reflect changes in spiking activity related to locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the comparison of our results (mean \u0394F/F0, Figure 2\u2014figure supplement 1B, 'stim' column) with spiking frequencies published in a previous study (see Supplementary Table 3 of Polack et al., 2013) in mouse V1 strongly suggests that somatic GCaMP6f fluorescence changes do reflect changes in spiking activity related to locomotion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from comparing the current data with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "2b3c9755-4bcc-4f9f-b9ab-444574ff3514",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C73",
+      "claim": "The finding that SST activity increased with locomotion during visual stimulation is in line with previous electrophysiological recordings of SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that SST activity increased with locomotion during visual stimulation. This is in line with previous electrophysiological recordings of SST neurons (Polack et al., 2013) but in contradiction with the current disinhibitory model that relies on the inhibition of SST neurons during locomotion (Figure 1B; Fu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the current findings with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "5cc0dac0-c198-4eed-8f0b-88861382e4cb",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C74",
+      "claim": "The finding that SST activity increased with locomotion during visual stimulation is in contradiction with the current disinhibitory model that relies on the inhibition of SST neurons during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that SST activity increased with locomotion during visual stimulation. This is in line with previous electrophysiological recordings of SST neurons (Polack et al., 2013) but in contradiction with the current disinhibitory model that relies on the inhibition of SST neurons during locomotion (Figure 1B; Fu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "746a538c-ffa2-47be-82d1-9710b8ab18db",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C75",
+      "claim": "The disinhibitory model was based on the assumption that the locomotion-driven response of SST neurons would be similar in the dark and during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The disinhibitory model was based on the assumption that the locomotion-driven response of SST neurons would be similar in the dark and during visual stimulation (Fu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the assumptions underlying a previous model, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "c5ed1ce1-b143-445f-b7e3-197a0a88c024",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C76",
+      "claim": "The findings regarding the locomotion responses of SST neurons in darkness are consistent with a previous imaging study performed in similar conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings regarding the locomotion responses of SST neurons in darkness are consistent with the previous imaging study performed in similar conditions (Figure 2\u2014figure supplement 2 of the present study compared to Figure 3 and Figure S3 of Fu et al., 2014) as well as with the heterogeneity of membrane potential fluctuations of SST neurons during locomotion (Reimer et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the current findings with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "25133f7c-e69e-41e5-afcb-de934025f2e1",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C77",
+      "claim": "The findings regarding the locomotion responses of SST neurons in darkness are consistent with the heterogeneity of membrane potential fluctuations of SST neurons during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings regarding the locomotion responses of SST neurons in darkness are consistent with the previous imaging study performed in similar conditions (Figure 2\u2014figure supplement 2 of the present study compared to Figure 3 and Figure S3 of Fu et al., 2014) as well as with the heterogeneity of membrane potential fluctuations of SST neurons during locomotion (Reimer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current findings with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "da1bc325-2102-4628-bfa6-8f77d695d434",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C78",
+      "claim": "The results obtained in darkness show that the majority of SST neurons are not responsive to locomotion at all, challenging the generality of a disinhibitory circuit acting through the inhibition of SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the results obtained in darkness show that the majority of SST neurons are not responsive to locomotion at all, challenging the generality of a disinhibitory circuit acting through the inhibition of SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "f458ce3c-0258-4eec-85ff-b0b53dcfddc0",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C79",
+      "claim": "The results obtained during visual stimulation are incompatible with a model in which VIP neurons disinhibit excitatory neurons by inhibiting SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "With visual stimulation, the inconsistency of the disinhibitory model is even stronger since the vast majority of SST neurons increase their activity with locomotion (see Figure 2B(iii)). Consequently, the results obtained during visual stimulation (present study and Polack et al., 2013) are incompatible with a model in which VIP neurons disinhibit excitatory neurons by inhibiting SST neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental findings in relation to existing models.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "203c4d76-336c-4aa0-9bf5-9294e5afebbc",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C80",
+      "claim": "The context-dependent responses of excitatory neurons do not result from a disinhibitory circuit initiated by VIP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while the vast majority of VIP neurons are context-independent with regard to their locomotion response, excitatory neurons show significantly increased locomotion responses during visual stimulation compared to darkness conditions. Therefore, the context-dependent responses of excitatory neurons do not result from a disinhibitory circuit initiated by VIP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "11f0211d-6389-4a95-a225-68fda8fa8df6",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C81",
+      "claim": "While the connectivity may be canonical, the circuit activity can strongly differ depending on the behavioral context.",
+      "claim_type": "EXPLICIT",
+      "source": "While the connectivity may be canonical, we show that the circuit activity can strongly differ depending on the behavioral context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "bef1f00a-ca88-4e40-a894-005428b960a6",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C82",
+      "claim": "Functional properties of inhibitory neurons should not be generalized from one context to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, functional properties of inhibitory neurons should not be generalized from one context to the next, and caution should be taken when inferring connectivity from functional recordings obtained in a specific behavioral context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "dc9c5f13-df38-4319-969e-12ab0247d822",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C83",
+      "claim": "Caution should be taken when inferring connectivity from functional recordings obtained in a specific behavioral context.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, functional properties of inhibitory neurons should not be generalized from one context to the next, and caution should be taken when inferring connectivity from functional recordings obtained in a specific behavioral context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "e1b0aa4d-3cd5-4789-a67c-bdb2edab3f83",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C84",
+      "claim": "In addition to the activation of VIP neurons during locomotion, other pathways are involved in linking locomotion and visual responses in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that, in addition to the activation of VIP neurons during locomotion, other pathways are involved in linking locomotion and visual responses in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d9b2fc93-c476-4dd9-8c52-e1836d61f3ff",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C85",
+      "claim": "Neuromodulatory inputs triggered by locomotion would not only activate VIP neurons through nicotinic acetylcholine receptors but would also directly activate PV, SST, and excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that neuromodulatory inputs triggered by locomotion would not only activate VIP neurons through nicotinic acetylcholine receptors as previously shown (Alitto and Dan, 2012; Arroyo et al., 2014; Fu et al., 2014), but would also directly activate PV, SST, and excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental findings and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "b1473eca-8989-49c0-813d-c1c8f4a011cd",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C86",
+      "claim": "Previous work has demonstrated cholinergic facilitation of cortical inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated cholinergic facilitation of cortical inhibitory neurons (Kawaguchi, 1997; Xiang et al., 1998; Arroyo et al., 2012; Alitto and Dan, 2012), including SST neurons (Kawaguchi, 1997; Fanselow et al., 2008; Xu et al., 2013; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "38e57efe-4f92-409f-b0c7-bb8dd8c955b9",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C87",
+      "claim": "In vitro studies have shown that norepinephrine can depolarize both excitatory and inhibitory cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in vitro studies have shown that norepinephrine can depolarize both excitatory (McCormick et al., 1993; Kirkwood et al., 1999) and inhibitory (Kawaguchi and Shindou, 1998) cortical neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7498b422-16e0-489b-864e-40f4e15e7f99",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C88",
+      "claim": "In vivo studies have shown that neuromodulatory inputs, cholinergic and noradrenergic, can control the gain and signal-to-noise ratio of V1 excitatory neurons during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in vivo studies have shown that neuromodulatory inputs, cholinergic and noradrenergic, can control the gain and signal-to-noise ratio of V1 excitatory neurons during locomotion (Pinto et al., 2013; Polack et al., 2013; Bennett et al., 2014; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "cba49e41-7738-4042-ba7d-10b42938e3eb",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C89",
+      "claim": "In darkness, the effect of neuromodulatory inputs remains subthreshold in SST neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that in darkness, the effect of neuromodulatory inputs remains subthreshold in SST neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "989b02d4-db0e-409a-857d-5ed3b2bbd1da",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C90",
+      "claim": "During visual stimulation, SST neurons are strongly activated and the effect of neuromodulatory inputs becomes suprathreshold.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, SST neurons are strongly activated and the effect of neuromodulatory inputs becomes suprathreshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "c34deef4-6f0a-4a70-bb71-27b3c0bfdbbf",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C91",
+      "claim": "In darkness, VIP and PV neurons are activated by locomotion and inhibit SST and excitatory neurons, preventing their activation by locomotion-dependent inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, VIP and PV neurons are activated by locomotion and inhibit SST and excitatory neurons, preventing their activation by locomotion-dependent inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental findings and known connectivity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "829d2007-e7db-4d9f-a202-b2387d88633d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C92",
+      "claim": "During visual stimulation, SST and excitatory neurons are activated and overcome the intra-cortical inhibition by VIP and PV neurons and become responsive to direct locomotion-dependent inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "During visual stimulation, SST and excitatory neurons are activated: they overcome the intra-cortical inhibition by VIP and PV neurons and become responsive to direct locomotion-dependent inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental findings and known connectivity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "f19c393d-c563-474b-897b-26d44afd8350",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C93",
+      "claim": "SST neurons provide the main intra-cortical input to VIP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SST neurons provide the main intra-cortical input to VIP neurons (Pfeffer et al., 2013) and are strongly visually-responsive, they likely inhibit VIP neurons (or a subpopulation of VIP neurons) during visual stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about cortical connectivity supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "ffd1375c-8107-413e-b944-565f3cdd2c5d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C94",
+      "claim": "SST neurons likely inhibit VIP neurons (or a subpopulation of VIP neurons) during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SST neurons provide the main intra-cortical input to VIP neurons (Pfeffer et al., 2013) and are strongly visually-responsive, they likely inhibit VIP neurons (or a subpopulation of VIP neurons) during visual stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and known connectivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "bb9dc5d7-381d-455d-873c-263e14be6388",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C95",
+      "claim": "A decrease in activity of a portion of VIP neurons was observed during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the decrease in activity of a portion of VIP neurons that was observed during visual stimulation (Fu et al., 2014; see also Figure 2\u2014figure supplement 3B(ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about previous findings and current data, supported by citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "8cbcf682-2969-42cd-8089-ee694e114e4a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C96",
+      "claim": "The modulation of visual inputs by locomotion may already take place in subcortical nuclei, such that the thalamo-cortical inputs received by excitatory neurons, and potentially SST neurons, would convey the increased gain of visual responses during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative or complementary hypothesis to the neuromodulatory pathway is that the modulation of visual inputs by locomotion already takes place in subcortical nuclei, such that the thalamo-cortical inputs received by excitatory neurons, and potentially SST neurons, would convey the increased gain of visual responses during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed alternative mechanism to explain the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "fe9693bc-f085-4d9c-9af9-f16c9698d2cb",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C97",
+      "claim": "Recent studies have shown that projections from the dorsal lateral geniculate nucleus to V1 convey locomotion signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies have shown that projections from the dorsal lateral geniculate nucleus (Erisken et al., 2014; Roth et al., 2016) and from the thalamic latero-posterior nucleus (Roth et al., 2016) to V1 both convey locomotion signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d1925b60-5ef4-4784-bae3-334e653b3c26",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C98",
+      "claim": "Projections from the thalamic latero-posterior nucleus to V1 convey locomotion signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies have shown that projections from the dorsal lateral geniculate nucleus (Erisken et al., 2014; Roth et al., 2016) and from the thalamic latero-posterior nucleus (Roth et al., 2016) to V1 both convey locomotion signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d5febb71-1f62-46e4-81e3-14e3c9a3c709",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C99",
+      "claim": "The diversity of context-dependent responses to locomotion within SST, PV and VIP populations indicates that there are functional sub-types within each of these interneuron populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of context-dependent responses to locomotion within SST, PV and, to a lesser extent, VIP populations indicates that there are functional sub-types within each of these interneuron populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "656af411-d286-4b09-887a-511db609935d",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C100",
+      "claim": "A recent in vitro study has identified seven distinct types of cortical interneurons in layer 2/3 based on morphological and electrophysiological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a comprehensive analysis of morphological and electrophysiological properties of inhibitory neurons, a recent in vitro study has identified seven distinct types of cortical interneurons in layer 2/3 (Jiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "ea54f658-a14f-45ef-aff3-5b5cb235156a",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C101",
+      "claim": "Mice spent on average 26 \u00b1 2% of the time running in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice could run freely and spent on average 26 \u00b1 2% of the time running in the dark and 41 \u00b1 2% during visual stimulation (n = 48 mice, 51 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "10941e95-b7d3-469f-91f5-c151532e8f01",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C102",
+      "claim": "Mice spent on average 41 \u00b1 2% of the time running during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice could run freely and spent on average 26 \u00b1 2% of the time running in the dark and 41 \u00b1 2% during visual stimulation (n = 48 mice, 51 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "618b6359-4bc9-48c4-a494-7ea5a9fb8a58",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C103",
+      "claim": "GCaMP6f was used as a genetically-encoded calcium indicator in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative changes in somatic fluorescence of the genetically-encoded calcium indicator GCaMP6f were used as a non-linear readout of the neuronal spiking activity (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "48c80ff8-c402-45e1-b9e4-d74539dad0e1",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C104",
+      "claim": "The relative changes in somatic fluorescence of GCaMP6f were used as a non-linear readout of the neuronal spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative changes in somatic fluorescence of the genetically-encoded calcium indicator GCaMP6f were used as a non-linear readout of the neuronal spiking activity (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6d7e7d25-665f-4963-88b1-a50b30feded2",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C105",
+      "claim": "Adeno-associated viruses (AAVs) were injected into V1 of Cre-recombinase transgenic mice for the Cre-inducible expression of GCaMP6f.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neuronal subtypes were labeled by injecting adeno-associated viruses (AAVs) into V1 of Cre-recombinase transgenic mice (PV-, SST-, or VIP-Cre mice) for the Cre-inducible expression of the genetically-encoded calcium indicator GCaMP6f (Figure 1D\u2013E; Chen et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7cd98943-c7c7-4f3a-9dd4-9bb3838bc70c",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C106",
+      "claim": "To image excitatory neurons, a floxed version of GCaMP6f and an AAV where Cre expression is driven by a CaMKII promoter were co-injected into C57/BL6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To image excitatory neurons, we co-injected a floxed version of GCaMP6f and an AAV where Cre expression is driven by a CaMKII promoter, into C57/BL6 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "299dc6b3-24de-4b17-9f25-f21b08fd3aa0",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C107",
+      "claim": "A locomotion modulation index (LMI) was calculated for each neuron, corresponding to the difference between the mean \u2206F/F0 during locomotion and stationary periods, normalized by the sum of the mean \u2206F/F0 during both behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the effect of locomotion by calculating a locomotion modulation index (LMI) for each neuron, corresponding to the difference between the mean \u2206F/F0 during locomotion (RL) and stationary (Rs) periods, normalized by the sum of the mean \u2206F/F0 during both behavioral states (LMI = (RL \u2013 Rs)/(RL + Rs)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "ed8cf50b-1de2-4beb-9f01-e05d8ad50136",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C108",
+      "claim": "An LMI equal to 0 indicates no difference between locomotion and stationary periods.",
+      "claim_type": "EXPLICIT",
+      "source": "An LMI equal to 0 indicates no difference between locomotion and stationary periods, while an LMI equal to 0.5 indicates that the average amplitude of calcium transients was three times higher during locomotion than during stationary periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the LMI metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "29c2d7bc-cd25-4021-866c-c921dda2450f",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "claim_id": "C109",
+      "claim": "An LMI equal to 0.5 indicates that the average amplitude of calcium transients was three times higher during locomotion than during stationary periods.",
+      "claim_type": "EXPLICIT",
+      "source": "An LMI equal to 0 indicates no difference between locomotion and stationary periods, while an LMI equal to 0.5 indicates that the average amplitude of calcium transients was three times higher during locomotion than during stationary periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the LMI metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ff09b01-8fa8-433e-987b-581a14dfaf76",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During visual stimulation, locomotion increases the activity of VIP, SST, and PV interneurons as well as excitatory neurons in mouse V1 layers 2/3 and 4. This was demonstrated using two-photon calcium imaging with statistically significant increases in calcium transient amplitudes during locomotion compared to stationary periods for all cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20, C24, C29, C34, and C45 provide converging evidence from calcium imaging experiments with appropriate statistical tests (Wilcoxon signed rank tests, p<0.001 for most comparisons). The findings are consistent across multiple cell types and supported by quantitative data including mean \u0394F/F0 values and sample sizes (n=12-13 mice). The methodology using GCaMP6f as a calcium indicator is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "fb7e748a-b839-4bce-8f7f-b5b99631510b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The findings challenge the disinhibitory model of locomotion-mediated gain control in V1. The observation that SST neurons increase their activity during locomotion with visual stimulation contradicts the model's prediction that SST neurons should be inhibited to disinhibit excitatory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C10, C21, C70, C71, C74, C78, and C79 collectively establish that the experimental findings are incompatible with the disinhibitory circuit model. The data showing increased SST activity during locomotion with visual stimulation (C34, C36) directly contradicts the model's core prediction. The argument is logically sound and supported by comparison with previous literature (C73, C74).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "2001fa66-b3a5-421f-b922-d527bf946770",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In darkness, SST and excitatory neurons were largely non-responsive to locomotion, while VIP and PV neurons remained locomotion responsive. SST neurons showed heterogeneous responses with no significant average difference between locomotion and stationary periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C35, and C44 are supported by statistical analysis showing no significant difference in SST neuron activity between locomotion and stationary periods in darkness (p=0.102, n=11). The quantitative data shows only 24\u00b16% of SST neurons increased activity and 11\u00b15% decreased activity during locomotion in darkness, supporting the claim of heterogeneity and overall non-responsiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "98bfb8af-c746-43d6-86e7-5f4db40658af",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Context-dependent locomotion responses were found in all cell types, with SST neurons showing the highest proportion (49%) of context-dependent responses. SST neurons' locomotion responses differed significantly between darkness and visual stimulation contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C22, C53, and C59 are supported by quantitative analysis showing 49% of SST neurons exhibited context-dependent responses compared to 17% for VIP, 22% for excitatory, and 25% for PV neurons. The statistical comparison (C36) shows significant differences in SST LMI between contexts (p=0.002, n=11). The methodology for defining context-dependence using bootstrapping and variability analysis is described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "5c258302-99a0-4f0e-aae4-33fe36a2b963",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The modulation of neuronal activity by locomotion differs significantly between darkness and visual stimulation contexts for excitatory and SST neurons. During visual stimulation, 47\u00b14% of excitatory neurons and 63\u00b17% of SST neurons were locomotion responsive, compared to 28\u00b14% and 24\u00b16% respectively in darkness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C26, C27, C36, C37, C38, C39, and C40 provide quantitative evidence with appropriate statistical tests (Kruskal-Wallis test, p=0.001 for excitatory, p=0.002 for SST). The sample sizes are adequate (n=12 for excitatory, n=11 for SST mice) and the differences are substantial and statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "2bf8a5be-7476-452b-975f-aec6c7882390",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VIP and PV neurons showed context-independent locomotion responses, remaining strongly responsive to locomotion in both darkness and during visual stimulation with no significant difference in LMI between contexts. The majority (66%) of VIP neurons were context-independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, C32, C46, C52, C57, and C58 are supported by statistical analysis showing no significant difference in LMI between contexts for VIP (p=0.106, n=12) and PV (p=0.663, n=13) neurons. High proportions of neurons were locomotion responsive in both contexts (VIP: 85\u00b17% dark, 79\u00b16% stim; PV similar). The quantitative data on context-independence (66% for VIP) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "787c2222-5f56-400c-960c-6bcd738037ea",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "During visual stimulation, locomotion responses were similar between patterned (drifting gratings) and non-patterned (grey screen) visual stimuli for all inhibitory neuron types. For excitatory neurons, grey screen presentation showed slightly lower but still significantly elevated LMI compared to darkness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C49, C50, and C51 are supported by statistical comparisons showing no significant difference for inhibitory populations between gratings and grey screen. For excitatory neurons, the difference between grey screen and gratings was small (LMI 0.17\u00b10.02 vs 0.19\u00b10.02, p=0.033) but both were significantly higher than darkness (p=0.007), supporting the conclusion that light presence, not pattern, is key.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "d4f88d54-dd03-420b-9680-0744dd90bb84",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Locomotion responses in layer 4 neurons were similar to layer 2/3 neurons for all cell types in both darkness and visual stimulation, with similar proportions of context-dependent responses across layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C69 are supported by statistical comparisons showing no significant differences between layers 2/3 and 4 for any cell type in either context. The proportions of context-dependent neurons were similar across layers (e.g., SST: L2/3 49%, L4 42%). However, the authors note sparser labeling in layer 4, which could introduce sampling bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "c7ac2ba3-2f01-4df5-9f6c-fa617db9f5c0",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GCaMP6f fluorescence changes reflect changes in spiking activity related to locomotion. Comparison with previous electrophysiological data from Polack et al. 2013 shows similar relative changes in activity during locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 relies on comparison with a single previous study's supplementary data. While the comparison shows similar relative changes, the authors acknowledge potential confounds including different calcium dynamics across cell types and contexts, and possible neuromodulator effects on calcium influx independent of spiking. Without direct simultaneous electrophysiology, the relationship remains uncertain, though plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "6ae6b301-053d-4348-9bda-ebc503ad8747",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that neuromodulatory inputs triggered by locomotion directly activate VIP, PV, SST, and excitatory neurons. In darkness, these inputs remain subthreshold in SST neurons, but during visual stimulation, SST neurons are activated and overcome inhibition to become responsive to locomotion-dependent inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C89, C90, C91, and C92 are speculative mechanistic proposals based on the experimental findings and previous literature. While the proposed mechanism is consistent with the data and supported by citations to previous work on neuromodulation (C86, C87, C88), it lacks direct experimental validation in this study. The mechanism remains a hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "ac69bc04-879e-4980-ab39-3b28d50d1fad",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "An alternative hypothesis is that modulation of visual inputs by locomotion occurs in subcortical nuclei, with thalamo-cortical inputs conveying the increased gain. Recent studies show that projections from dorsal lateral geniculate nucleus and thalamic latero-posterior nucleus to V1 convey locomotion signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96, C97, and C98 present an alternative hypothesis supported by citations to recent studies (Erisken et al. 2014, Roth et al. 2016). However, this mechanism is not directly tested in the current study and remains speculative. The hypothesis is plausible and consistent with the data but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "06e5e69e-6e85-4231-8723-ad216478475b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Context-dependent and context-independent neurons do not differ in visual response properties (orientation selectivity, direction selectivity, percentage visually responsive). This suggests that mechanisms underlying locomotion response modulation differ from those determining visual response selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 are supported by statistical analysis showing no significant differences in OSI (p>0.261) or DSI (p>0.093) between context-dependent and context-independent neurons using Kruskal-Wallis tests. The inference that different mechanisms underlie these properties is reasonable given the lack of correlation, though the conclusion is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    },
+    {
+      "id": "7884c30a-e0a8-4ed3-830b-0f86c6dd0b3b",
+      "content_id": "458af6c1-bef2-4e05-a2aa-6eddee3d5473",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The diversity of context-dependent responses within SST, PV, and VIP populations indicates functional sub-types exist within each interneuron population. Previous in vitro work has identified seven distinct types of cortical interneurons in layer 2/3 based on morphological and electrophysiological properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is a reasonable inference from the observed diversity in locomotion responses within each cell type. Claim C100 provides supporting context from previous literature (Jiang et al. 2015). However, the current study does not directly characterize these sub-types or link functional responses to morphological/electrophysiological classifications, limiting the strength of this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:45.943205Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "660f5b7a-f1a4-4005-9602-e3cb28e8b92d",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "721e9c79-1a9b-4dd3-8ff1-0a22235585e5",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "3671b48d-1a08-4604-b03f-c9fbdc465809",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "1ff1769b-cc7a-4fab-a545-82333fc0f140",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "42573082-7ffe-4207-99e1-cea0ba3bd672",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "ea430662-26f8-4263-b796-2d8187c4ec8a",
+      "result_id": "1ff09b01-8fa8-433e-987b-581a14dfaf76"
+    },
+    {
+      "claim_id": "159e5235-72e4-4275-9867-35852983d545",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "d43d1dd0-5e58-4ecd-b996-14c44bc5acb5",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "5d2fbe57-e64e-4856-b7bc-b22982affb7f",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "26075c4a-dd4c-445e-9e7b-dda18a0350ed",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "a75663f5-d6a3-4e8f-afd4-229578d87e3e",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "5cc0dac0-c198-4eed-8f0b-88861382e4cb",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "da1bc325-2102-4628-bfa6-8f77d695d434",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "f458ce3c-0258-4eec-85ff-b0b53dcfddc0",
+      "result_id": "fb7e748a-b839-4bce-8f7f-b5b99631510b"
+    },
+    {
+      "claim_id": "c868911b-c025-48e0-8bd6-4d2f5e326497",
+      "result_id": "2001fa66-b3a5-421f-b922-d527bf946770"
+    },
+    {
+      "claim_id": "942e5fa8-b2d8-47bf-8963-7139100482e5",
+      "result_id": "2001fa66-b3a5-421f-b922-d527bf946770"
+    },
+    {
+      "claim_id": "4a56ed6f-3748-491f-a1c5-6842a110d967",
+      "result_id": "2001fa66-b3a5-421f-b922-d527bf946770"
+    },
+    {
+      "claim_id": "59fa7f54-0084-475e-8ae5-402bf7690774",
+      "result_id": "2001fa66-b3a5-421f-b922-d527bf946770"
+    },
+    {
+      "claim_id": "7101e43e-0542-45ae-bbff-2de7285807fa",
+      "result_id": "98bfb8af-c746-43d6-86e7-5f4db40658af"
+    },
+    {
+      "claim_id": "b300cd2f-6432-497a-bd10-e3cc5aa67844",
+      "result_id": "98bfb8af-c746-43d6-86e7-5f4db40658af"
+    },
+    {
+      "claim_id": "631ac706-c5aa-4969-85ab-eda196efbf36",
+      "result_id": "98bfb8af-c746-43d6-86e7-5f4db40658af"
+    },
+    {
+      "claim_id": "23ac77b5-8ebb-419e-b3c4-187f0a3f03bf",
+      "result_id": "98bfb8af-c746-43d6-86e7-5f4db40658af"
+    },
+    {
+      "claim_id": "8e02d59f-463a-4cad-b486-a735db0e9731",
+      "result_id": "98bfb8af-c746-43d6-86e7-5f4db40658af"
+    },
+    {
+      "claim_id": "a50eff08-6b70-4acb-bfcf-644cf868169f",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "49db5122-e9c2-4cb3-8f32-07fd8ad0f7b4",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "8ab436ae-4ff0-451b-83af-5404b57f0b3d",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "14d2daa4-8b8a-4b6a-bb42-8197ffe122ff",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "7e826f5b-74d8-46cc-bb49-4ffcf2058014",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "dbecffb3-5a98-4e92-b56e-264abcadf44b",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "581843da-85b5-41ec-8428-c626a33e6e15",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "2ea3f8cf-521e-49f6-8459-b864ad04be2b",
+      "result_id": "5c258302-99a0-4f0e-aae4-33fe36a2b963"
+    },
+    {
+      "claim_id": "dfb2e913-c218-484d-8ed2-e335d48b5cea",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "426b1f96-6f4a-45b8-8d71-9e8eaa76695a",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "b805a357-7f9d-4803-99b8-17468b386650",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "8b47e246-a182-4d4e-a658-0687514b1a72",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "9a931c2e-022e-4947-b300-61ae873edad0",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "4db9886c-7b6d-415a-a6ed-ed871112e566",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "f53265df-03ee-4490-b302-3d3f572987f1",
+      "result_id": "2bf8a5be-7476-452b-975f-aec6c7882390"
+    },
+    {
+      "claim_id": "5443b50c-a5e2-4fff-aea6-6a8c5dadc64f",
+      "result_id": "787c2222-5f56-400c-960c-6bcd738037ea"
+    },
+    {
+      "claim_id": "50d6b722-6b98-4324-8aad-841ba6aa991e",
+      "result_id": "787c2222-5f56-400c-960c-6bcd738037ea"
+    },
+    {
+      "claim_id": "de16d23a-b971-4c7a-bb64-1e0bd670d11d",
+      "result_id": "787c2222-5f56-400c-960c-6bcd738037ea"
+    },
+    {
+      "claim_id": "6659a0f2-d2fd-469b-b1da-adabeb801345",
+      "result_id": "787c2222-5f56-400c-960c-6bcd738037ea"
+    },
+    {
+      "claim_id": "dd97b13e-438c-4c98-83f1-2ed41419c9b6",
+      "result_id": "d4f88d54-dd03-420b-9680-0744dd90bb84"
+    },
+    {
+      "claim_id": "641d13d6-6283-4559-a7c6-dfcc2256d95b",
+      "result_id": "d4f88d54-dd03-420b-9680-0744dd90bb84"
+    },
+    {
+      "claim_id": "135fd531-08fd-4add-a64c-9082c8eb2146",
+      "result_id": "c7ac2ba3-2f01-4df5-9f6c-fa617db9f5c0"
+    },
+    {
+      "claim_id": "48c80ff8-c402-45e1-b9e4-d74539dad0e1",
+      "result_id": "c7ac2ba3-2f01-4df5-9f6c-fa617db9f5c0"
+    },
+    {
+      "claim_id": "d9b2fc93-c476-4dd9-8c52-e1836d61f3ff",
+      "result_id": "6ae6b301-053d-4348-9bda-ebc503ad8747"
+    },
+    {
+      "claim_id": "cba49e41-7738-4042-ba7d-10b42938e3eb",
+      "result_id": "6ae6b301-053d-4348-9bda-ebc503ad8747"
+    },
+    {
+      "claim_id": "989b02d4-db0e-409a-857d-5ed3b2bbd1da",
+      "result_id": "6ae6b301-053d-4348-9bda-ebc503ad8747"
+    },
+    {
+      "claim_id": "c34deef4-6f0a-4a70-bb71-27b3c0bfdbbf",
+      "result_id": "6ae6b301-053d-4348-9bda-ebc503ad8747"
+    },
+    {
+      "claim_id": "829d2007-e7db-4d9f-a202-b2387d88633d",
+      "result_id": "6ae6b301-053d-4348-9bda-ebc503ad8747"
+    },
+    {
+      "claim_id": "8cbcf682-2969-42cd-8089-ee694e114e4a",
+      "result_id": "ac69bc04-879e-4980-ab39-3b28d50d1fad"
+    },
+    {
+      "claim_id": "fe9693bc-f085-4d9c-9af9-f16c9698d2cb",
+      "result_id": "ac69bc04-879e-4980-ab39-3b28d50d1fad"
+    },
+    {
+      "claim_id": "d1925b60-5ef4-4784-bae3-334e653b3c26",
+      "result_id": "ac69bc04-879e-4980-ab39-3b28d50d1fad"
+    },
+    {
+      "claim_id": "6e947366-fd8b-48de-b4a9-21cf6fe75e90",
+      "result_id": "06e5e69e-6e85-4231-8723-ad216478475b"
+    },
+    {
+      "claim_id": "d8f176c1-e9b3-45f6-ab25-19c92dd58cb9",
+      "result_id": "06e5e69e-6e85-4231-8723-ad216478475b"
+    },
+    {
+      "claim_id": "d5febb71-1f62-46e4-81e3-14e3c9a3c709",
+      "result_id": "7884c30a-e0a8-4ed3-830b-0f86c6dd0b3b"
+    },
+    {
+      "claim_id": "656af411-d286-4b09-887a-511db609935d",
+      "result_id": "7884c30a-e0a8-4ed3-830b-0f86c6dd0b3b"
+    }
+  ],
+  "comparisons": []
+}

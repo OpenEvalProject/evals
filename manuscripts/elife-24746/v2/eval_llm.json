@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C59",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "KIF21B is a processive dimeric motor protein that moves along microtubules. The motor domain construct (KIF21B-MD-CC1) is a dimer that displays processive movement with an average velocity of 0.6 \u00b1 0.3 \u00b5m/s and run length of 0.34 \u00b1 0.01 \u00b5m in vitro. Full-length KIF21B shows high processivity with runs up to 8.5 \u00b5m and accumulates at MT plus ends in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support this result: single molecule fluorescence intensity analysis confirms dimeric stoichiometry (C42, C43, C74-C77), photobleaching profiles show two-step bleaching consistent with dimers (C43), and velocity/run length measurements are quantified from in vitro tracking experiments (C35, C39, C45, C46, C59). The processivity is directly demonstrated by long run lengths and accumulation at MT plus ends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C112"
+    ],
+    "result": "Full-length KIF21B induces potent microtubule pausing at plus ends. A few KIF21B molecules (often single dimers) are sufficient to induce stable pauses with an average duration of ~20 s. The protein shows strong preference for GMPCPP-stabilized MT seeds and accumulates at their tips in a length-dependent manner, where it can prevent MT outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pausing activity is well-documented through quantitative in vitro experiments showing that 71% of pauses are induced by single kinesin arrivals with average duration of 21.0 \u00b1 5.9 s (C61, C62). The length-dependent accumulation on GMPCPP seeds (C52-C56) and the ability of few molecules to block growth (C4, C56) are directly demonstrated. The ~40% frequency of pausing upon arrival at MT tips (C60) provides statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C37",
+      "C41",
+      "C106"
+    ],
+    "result": "The dimeric motor domain of KIF21B (KIF21B-MD-CC1) is sufficient to reduce MT plus-end growth rate in a concentration-dependent manner without accumulating at MT tips. This effect is plus-end specific and causes irregular EB3 signal at growing MT ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration-dependent reduction in MT growth rate is demonstrated across multiple tubulin concentrations (C47, C48), with quantitative measurements showing ~1.5-1.6 fold reduction in cells (C37, C41) and similar effects in vitro (C106). The plus-end specificity is confirmed by lack of effect on minus end growth (C49). The irregular EB3 signal provides mechanistic insight into transient perturbation of MT tip structure (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C111"
+    ],
+    "result": "KIF21B contains multiple microtubule-binding domains in its tail region that contribute to pause-inducing activity. Two separate regions bind MTs: the CC2 region in the stalk and the L-WD40 region (linker plus WD40 domain) at the C-terminus. The full-length protein adopts a folded, globular conformation when bound to MTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence of multiple MT-binding domains is established through systematic deletion mapping in cells (C82-C84) and confirmed by electron microscopy showing globular appearance (C86). The functional importance is demonstrated by comparing pause-inducing activity of full-length versus deletion mutants (C111). The requirement for both linker and WD40 together (C84) indicates cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C102",
+      "C103",
+      "C99",
+      "C100"
+    ],
+    "result": "The WD40-containing tail of KIF21B displays strong preference for GMPCPP-stabilized (GTP-like) microtubules over taxol-stabilized (GDP-like) microtubules. This preference contributes to slower motility on GMPCPP seeds compared to fresh GDP lattices for full-length KIF21B, but the WD40 domain alone is not sufficient for plus-end tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lattice preference is directly demonstrated by in vitro binding experiments showing L-WD40 binds GMPCPP seeds but not taxol seeds (C101, C102). The functional consequence is shown by velocity measurements comparing seed versus lattice motility (C99, C100). The lack of plus-end tracking by L-WD40 alone (C103) indicates additional factors are required beyond nucleotide state recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "KIF21B contains an autoinhibitory regulatory region (rCC) that is conserved with KIF21A but exhibits attenuated autoinhibition. This region forms an intramolecular antiparallel coiled coil and enhances pause-inducing activity by preventing motor detachment from MT tips rather than fully blocking motor activity. Deletion of rCC reduces pause duration and increases detachment frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization of rCC by CD spectroscopy and sedimentation velocity (C90, C91) confirms it forms an antiparallel coiled coil. The autoinhibitory function is demonstrated by restoration of MT binding upon rCC deletion (C92) and detection of intramolecular interactions by co-IP (C93). The attenuated nature compared to KIF21A is shown by weaker binding (C94) and constitutive MT association of KIF21B (C95). The functional role in pause enhancement is quantified by comparing pause durations and detachment frequencies between full-length and deletion mutants (C108-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "When KIF21B stalls at MT tips without immediately detaching, it causes strong perturbation of MT growth including short repeated growth/shortening excursions and MT bending. This suggests KIF21B blocks growth of a few protofilaments while preventing their depolymerization, leading to extension of an incomplete, flexible tube prone to catastrophe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The growth perturbations are directly observed in multiple in vitro experiments showing repeated excursions (C69) and MT bending (C71). The interpretation that KIF21B blocks both elongation and depolymerization of specific protofilaments (C70, C72) is a reasonable inference from the observed behavior patterns. The comparison to Eribulin mechanism (C113, C114) provides supporting context. The frequent catastrophe following pausing (C115) is consistent with incomplete MT structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Full-length KIF21B motors frequently cannot transfer from GMPCPP seeds to freshly grown GDP lattice, but those that do transfer exhibit approximately two-fold faster motility on the GDP lattice. Single molecule intensity analysis indicates that 1-2 KIF21B dimers are sufficient to induce pausing, and photobleaching measurements confirm the imaging conditions allow tracking of single molecules for sufficient duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transfer difficulty is directly observed in kymographs (C57), and the velocity difference is quantified (C58). The stoichiometry of pause-inducing molecules is determined by careful intensity ratio analysis accounting for evanescent field decay (C73). The photobleaching time measurements (C78, C79) validate that the ~20 s pause duration is not limited by photobleaching. The MT pulling observation (C80, C81) provides additional evidence for simultaneous binding to multiple MTs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C65",
+      "C66",
+      "C67",
+      "C105",
+      "C107"
+    ],
+    "result": "At high expression levels in cells, KIF21B causes MT network retraction. In vitro, KIF21B reduces MT growth rate and increases catastrophe frequency at both 15 and 30 \u00b5M tubulin, with concentration-dependent effects. KIF21B typically detaches from shrinking MT ends without affecting depolymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular MT network retraction is directly observed by microscopy (C38). The effects on MT dynamics parameters are quantified at multiple tubulin concentrations (C66, C67). The lack of effect on depolymerization is consistently observed for both full-length and deletion mutants (C65, C105). These observations are internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The velocity of KIF21B in COS-7 cells is three times faster than reported in neurons, suggesting cell-type specific regulation. The in vitro results are partly consistent with cellular studies showing reduced MT growth processivity upon KIF21B loss. KIF21B may require additional factors for MT loading in cells and could play roles in length-dependent MT regulation and MT array organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The velocity difference between cell types (C36) is a factual observation, but the interpretation of cell-type specific regulation is speculative. The comparison with cellular knockout/depletion studies (C116) shows partial consistency but also unexplained discrepancies in growth rate effects. The proposed roles in MT length regulation (C118, C119) and array organization (C120) are reasonable speculations based on observed properties but lack direct experimental support. The suggestion of additional cellular factors (C117) is plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background information on MT dynamics regulation and kinesin families, particularly kinesin-4 family members including KIF21A and KIF21B. This includes prior knowledge about MT pausing in cells, properties of other kinesin families (kinesin-13, kinesin-8, kinesin-4), KIF21A disease associations, and previous KIF21B studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, properly cited throughout. They provide necessary context for understanding the significance of the current work. The citations appear appropriate and the statements are consistent with the referenced literature. This is standard background material that frames the research questions.",
+    "result_type": "MINOR"
+  }
+]

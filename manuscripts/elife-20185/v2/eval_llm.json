@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C62"
+    ],
+    "result": "P. longicornis recruiter ants deposit pheromone marks (primarily undecane) along the entire path from food to nest (6 meters, 2000\u00d7 body length) using a characteristic gaster-touching behavior that can be detected via speed profile analysis with 93% true positive rate and 13.1% false detection rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 provide converging evidence from behavioral observation (speed profiles, gaster touching), chemical analysis (undecane detection), and video validation. The detection method validation (C10, C62) demonstrates methodological rigor with dual-camera verification. The N=12/12 ants spanning full distance (C3) provides adequate sample size for this behavioral characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C23"
+    ],
+    "result": "Undecane, the primary trail pheromone used by P. longicornis during cooperative transport, has extremely short lifetime due to fast evaporation, eliciting attractive responses lasting only ~1 minute, which is consistent with the observed short-range trail abandonment behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are well-supported by multiple citations to prior chemical and behavioral studies. C23 appropriately connects these chemical properties to the observed behavioral pattern of trail abandonment, though this connection is inferential rather than directly tested. The logic is sound and the inference is reasonable given the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "During cooperative transport, accompanying ants collectively deposit scent marks at 1.4 marks/second near the load, and this marking rate drops significantly to 0.001 marks/second (p<10^-4) when ants lack nest location information, indicating that scent marks convey navigational information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental manipulation (C13) provides strong evidence for the navigational function of marks through a >1000-fold reduction in marking rate when directional information is absent. The statistical significance is robust (p<10^-4), and the inference (C14) is well-justified. However, the manuscript does not fully describe the manipulation method, referring only to Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Scent marks contain accurate directional information (1.39\u00b10.02 bits per mark, N=1395) toward the nest, and each mark transfers 0.35\u00b10.02 bits of directional information to carriers, causing the group to divert the load toward the mark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The information-theoretic analysis is quantitative and based on substantial data (N=1395 marks). The methodology for calculating information content is described in Materials and methods. The claim that marks cause load diversion (C16) is supported by Figure 2B-C showing directional changes following marking events, though causation is inferred from correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Near obstacles, directionally accurate scent marks can form misleading trails inaccessible to large loads due to the gap between individual ant perspective and group-level navigational requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C17 is supported by field observations (Figure 2D) and Video 6 demonstrating ants passing through spaces inaccessible to loads. C18 appropriately invokes the Umwelt concept (Von Uexkull, 1957) to explain the mechanistic basis. The visual evidence is compelling, though quantitative analysis of misleading trail frequency would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The ant-load system readily abandons scent trails at distances as short as 10 cm, which significantly deviates from classical trail following where at most 10% of ants lose stable trails, with approach probability continuously diminishing with distance in the locally-blazed trail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis (C20, C21) with classical trails provides strong context. Figure 3B quantitatively demonstrates the distance-dependent abandonment pattern. The 10 cm scale (C19) is consistently observed across multiple experiments. The comparison with classical trails (Figure 3\u2014figure supplement 1) strengthens the claim of behavioral distinctiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "When encountering obstacles with misleading scent marks, the transported load leaves these marks and commences perpendicular motion along and eventually around the obstacle, avoiding deadlock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 3C provides clear visual evidence of this behavior. The experimental design with a slit obstacle creates a controlled scenario where marks would lead to deadlock if strictly followed. The observation that loads successfully navigate around obstacles despite misleading marks is well-documented, though the sample size and statistical analysis are not explicitly provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C63"
+    ],
+    "result": "Individual ants deposit markings in short bouts originating near the load, directed toward the nest, with median bout length <10 cm (95% CI: [8.6, 10.3] cm, N=735), which contrasts starkly with the 600 cm trail of the first recruiter (p<10^-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is rigorous with large sample size (N=735 bouts) and appropriate confidence interval estimation using non-parametric methods. The comparison with first recruiter behavior (C27, C63) is statistically robust (p<10^-6). Supporting figures (2A, 3D, 3\u2014figure supplement 2) provide visual confirmation. The binomial calculation in C63 is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The locally-blazed trail is segmented and continuously formed near the object, implying only the next step rather than the full route, with trails dynamically reforming as the load deviates, and both deviation and bout length scales matching at ~10 cm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figures 3A, 3C, 3B, and 3D showing the dynamic, local nature of trail formation. The matching of length scales (C30) is an interesting observation, though the speculation about evolutionary dependency is appropriately qualified. The comparison with classical trails (citations in C28) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The Probabilistic-Following algorithm achieves asymptotically optimal (linear speed) travel times in 2D graphs when advice error rates are sufficiently small, demonstrating that adding noise to advice-following rules is both necessary and sufficient for efficient navigation with occasionally misleading advice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical proof adapts established results from Random Walks in Random Environments theory (Drewitz et al., 2014; Sznitman, 2002). The mathematical rigor is appropriate, with detailed proofs in Supplementary files 1-3 and 1-4. The authors appropriately note that extension to general graphs remains an open question, showing awareness of the limitations of their theoretical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Probabilistic-Following achieves very low stretch (<3) over a large parameter space (following probabilities 0.5-0.9) and is highly robust, achieving near-optimal performance without requiring fine-tuning to environmental statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Simulation results in Figure 4B-D demonstrate robustness across parameter space. The Monte Carlo simulations use appropriate sample sizes (1000 graphs \u00d7 50 source nodes for grids; 10^4-10^6 configurations for lines). The stretch metric is well-defined and appropriate for evaluating path quality. The robustness claim is well-supported by the shallow minimum in Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Loads travel nearly ballistically without obstacles and exhibit partial responsiveness to scent marks when navigating around obstacles, with mean passage time scaling linearly with obstacle width as predicted by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C35 is supported by citation to prior work (Gelblum et al., 2015). C36 is demonstrated in Figure 5B showing trajectory responsiveness to marks. C37 provides experimental validation of the key model prediction with linear scaling shown in Figure 5C. The convergence of theoretical prediction and experimental observation strongly supports the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "In enclosed configurations where all scent marks mislead carriers toward a slit, travel time scales exponentially with distance, demonstrating that scent marking and following are crucial for efficient obstacle circumvention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design (enclosed vs. open configuration) provides a strong test of the model's predictions. Figure 5C and Figure 5\u2014figure supplement 2 clearly show exponential scaling in the enclosed condition versus linear in the open condition. This stark contrast (C39) provides compelling evidence for the importance of scent communication, though alternative explanations involving physical interactions are appropriately considered and dismissed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Ants turn against pheromonal advice once per 37.5 cm on average (15 trials, 636 cm total), and the relationship between turning rate and exponential scaling holds for a persistence length of 7 cm and 80% following probability, consistent with the model's high-efficiency zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical measurement (C40) is based on adequate data (15 trials, 636 cm). The quantitative model fitting (C41) using calculations in Supplementary file 1-5 shows good agreement between theory and experiment. The 7 cm persistence length is reasonably close to the 10 cm scale observed elsewhere, and the 80% following probability falls within the predicted efficient range (Figure 4B). This provides strong quantitative validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The locally-blazed trail is morphologically distinct from classical ant trails: it consists of short local segments rather than long-distance marks, and lacks well-defined boundaries due to collective trail loss rather than individual wandering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis with classical trails is well-supported by citations (C47, C48) and empirical data (C49, Figure 3B). The distinction between individual stochastic wandering (classical trails) and collective simultaneous trail loss (locally-blazed trail) is clearly demonstrated. The morphological distinctiveness claim (C46) is justified by the convergence of multiple lines of evidence throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During small-item transport, marking and carrying ants traverse the same paths between stationary locations, but during cooperative transport of large items, passages accessible to marking ants may be inaccessible to the load, requiring scent marks to bridge between the nest and a dynamically moving object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C42 and C44 are supported by citations to extensive prior literature on ant foraging. C43 and C45 are logical inferences from the scale differences and dynamic nature of cooperative transport. While these claims are largely conceptual framing rather than novel empirical findings, they are well-supported and provide important context for understanding the unique challenges of cooperative transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Stochastic components can help search algorithms escape local minima, a principle utilized by ants on classic foraging trails to resolve deadlocks, though noise addition is not universally beneficial across all search algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three claims are well-supported by appropriate citations to theoretical (C50, C52) and empirical (C51) literature. These claims provide important theoretical context for understanding the locally-blazed trail but represent prior knowledge rather than novel findings. The balanced presentation acknowledging both benefits and limitations of stochasticity (C52) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Collective decision-making in animal groups commonly involves following the majority, which helps reach accurate decisions despite individual noise and even in conflict situations, but groups also demonstrate capacity for innovation that contradicts majority conformity across diverse taxa, with the locally-blazed trail representing such a collective phenomenon that may extend beyond short-term decisions to long-term navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C53-C57 are well-supported by extensive citations to the collective behavior literature. C58 appropriately positions the locally-blazed trail within this broader context. C59 is explicitly presented as speculation ('suggests,' 'may') and represents an appropriate extension of the findings. While these claims provide valuable discussion context, they largely synthesize prior work rather than present novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Paratrechina longicornis is an invasive species with broad worldwide distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citation to Wetterer, 2008, which is appropriate for establishing the species' biogeographic status. This is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Data was collected from six ant nests in Rehovot, Israel, during summer field tests when P. longicornis displays cooperative transport behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and appropriate. The seasonal timing is justified by the species' behavioral ecology. While essential for reproducibility, these are methodological details rather than results.",
+    "result_type": "MINOR"
+  }
+]

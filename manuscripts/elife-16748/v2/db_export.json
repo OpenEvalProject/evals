@@ -1,0 +1,1530 @@
+{
+  "submission": {
+    "id": "6b1572d8-d3d7-46a3-9032-3b4ae249f20f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:45:09.772992Z",
+    "updated_at": "2025-11-30T21:45:09.772992Z"
+  },
+  "content": [
+    {
+      "id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "submission_id": "6b1572d8-d3d7-46a3-9032-3b4ae249f20f",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying \u03b2-catenin subcellular dynamics and cyclin D1 mRNA transcription during Wnt signaling in single living cells\n\n## Authors\n\n- Pinhas Kafri<sup>1</sup>\n- Sarah E Hasenson<sup>1</sup>\n- Itamar Kanter<sup>1</sup>\n- Jonathan Sheinberger<sup>1</sup>\n- Noa Kinor<sup>1</sup>\n- Sharon Yunger<sup>1</sup>\n- Yaron Shav-Tal<sup>1</sup> ([ORCID: 0000-0002-8017-948X](https://orcid.org/0000-0002-8017-948X)) \u2020\n\n### Affiliations\n\n1. The Mina and Everard Goodman Faculty of Life Sciences Bar-Ilan University Ramat Gan Israel\n2. Institute of Nanotechnology Bar-Ilan University Ramat Gan Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nSignal propagation from the cell membrane to a promoter can induce gene expression. To examine signal transmission through sub-cellular compartments and its effect on transcription levels in individual cells within a population, we used the Wnt/\u03b2-catenin signaling pathway as a model system. Wnt signaling orchestrates a response through nuclear accumulation of \u03b2-catenin in the cell population. However, quantitative live-cell measurements in individual cells showed variability in nuclear \u03b2-catenin accumulation, which could occur in two waves, followed by slow clearance. Nuclear accumulation dynamics were initially rapid, cell cycle independent and differed substantially from LiCl stimulation, presumed to mimic Wnt signaling. \u03b2-catenin levels increased simultaneously at adherens junctions and the centrosome, and a membrane-centrosome transport system was revealed. Correlating \u03b2-catenin nuclear dynamics to cyclin D1 transcriptional activation showed that the nuclear accumulation rate of change of the signaling factor, and not actual protein levels, correlated with the transcriptional output of the pathway.\n\n## Introduction\n\nImaging of gene expression in individual cells using quantitative microscopy has become a central experimental approach for unraveling the dynamic aspects of mRNA transcription (Darzacq et al., 2009; Coulon et al., 2013; Hager et al., 2009), and for examining various events of gene expression in real time (Darzacq et al., 2007; Huranov\u00e1 et al., 2010; Brody et al., 2011; Martins et al., 2011; Yao et al., 2006; Mueller et al., 2010). Cells govern specific transcriptional responses to various stimuli by use of signaling pathways and transducing factors that relay the signal to the promoters of induced target genes (Purvis and Lahav, 2013; Carmo-Fonseca et al., 2002). Studies of transcription factor dynamics in single cells in response to signaling have revealed dynamic aspects of transcription factor nuclear translocation and modulation (Kalo and Shav-Tal, 2013; Yissachar et al., 2013; Lahav et al., 2004; Loewer et al., 2010; Nelson et al., 2004; Vartiainen et al., 2007). This study centers on the dynamics of the Wnt/\u03b2-catenin signaling pathway and its control of cyclin D1 gene expression, as a model system for examining the dissemination of a signal in the cell and the transcriptional response it elicits.\n\nThe Wnt/\u03b2-catenin canonical signaling pathway is activated by the binding of the Wnt ligand to plasma membrane receptors, thereby triggering downstream events that culminate in the accumulation of \u03b2-catenin in the cytoplasm and its translocation into the nucleus (Clevers and Nusse, 2012; Krieghoff et al., 2006; Jamieson et al., 2011). The interaction of \u03b2-catenin with transcription factors of the TCF/LEF family in the nucleus modifies gene expression of crucial genes, thus leading to changes in key cellular pathways, such as proliferation, migration and cell fate (Cadigan and Waterman, 2012). Mechanistically, in the absence of Wnt, cytoplasmic \u03b2-catenin protein is constantly degraded (Stamos and Weis, 2013) via the \u2018destruction complex\u2019 and proteosomal degradation (Aberle et al., 1997; Salomon et al., 1997; Orford et al., 1997), thus preventing \u03b2-catenin nuclear targeting. In many pathological cases \u03b2-catenin is not degraded but accumulates in the nucleus and activates genes, some of which are associated with cell proliferation, such as MYC and cyclin D1 (Shtutman et al., 1999; Tetsu and McCormick, 1999). The cyclin D1 protein is a major player in the regulation of the cell cycle (Johnson and Walker, 1999; Sherr, 1994) and its expression is regulated at several levels, including mRNA transcription (Hosokawa and Arnold, 1998) via an elaborate promoter region (Klein and Assoian, 2008). Cyclin D1 levels were shown to be induced by the Wnt/\u03b2-catenin canonical signaling pathway (Shtutman et al., 1999; Tetsu and McCormick, 1999; Chocarro-Calvo et al., 2013; Willert et al., 2002; Lin et al., 2000; Porfiri et al., 1997; Yun et al., 2005; Torre et al., 2011).\n\nThe Wnt/\u03b2-catenin signaling pathway has received much experimental attention due to its centrality in gene expression patterning, and its involvement in many cancer types (Klaus and Birchmeier, 2008). While the endpoint of \u03b2-catenin protein stabilization by Wnt signaling has been well studied biochemically, the kinetic aspects of this signaling pathway in living cells, for the \u03b2-catenin protein and the target mRNA, remain under-studied. To address this topic we used a cell system for the in vivo visualization and analysis of the\u00a0mammalian mRNA transcriptional kinetics of single alleles (Yunger et al., 2010, 2013). Whereas, we had previously followed transcription from a single cyclin D1 (CCND1) gene in living human cells, we now set out to examine the real-time behavior of \u03b2-catenin during active signaling in a population of living cells, and the effect of signaling on the activity pattern of the target gene.\n\n## Results\n\n### System for studying Wnt/\u03b2-catenin signaling and gene activation in single living cells\n\nWe previously generated a cell system in which a CCND1 gene was integrated as a single copy allele into human HEK293 cells using Flp-In recombination (Yunger et al., 2010). Transcription kinetics on this gene were visualized and quantified using RNA FISH and live-cell imaging techniques. RNA tagging was achieved using a series of MS2 sequence repeats (Bertrand et al., 1998) inserted into the long 3\u2019UTR of CCND1. The MS2 repeats form stem-loop structures in the transcribed mRNA. By co-expressing a fluorescent coat protein termed MS2-CP-GFP that binds to the MS2 stem-loops, we obtained fluorescent tagging of the mRNAs produced from this gene, designated CCND1-MS2 (Yunger et al., 2010, 2013). This CCND1-MS2 allele is under the regulation of the endogenous cyclin D1 promoter (Albanese et al., 1995) and therefore serves as a candidate gene for activation by Wnt/\u03b2-catenin signaling (Fu et al., 2004).\n\nStudying individual living cells, we found that the CCND1-MS2 gene transits between transcriptionally active and non-active states under steady-state conditions (Yunger et al., 2010). At steady state, only around 40\u201350% of the\u00a0cells were actively transcribing CCND1-MS2. In order to verify that the Wnt signaling pathway activates the CCND1-MS2 gene we added Wnt3a conditioned medium to the cells and imaged the cells over time. Indeed, on the population level, after 75 min over 80% of cells had shown an actively transcribing CCND1-MS2 gene (Figure 1a,b, Supplementary file 1a, Video 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig1-v2.jpg)\n\n**Figure 1.:** (a) CCND1-MS2 HEK293 cells stably expressing MS2-GFP-CP were treated with Wnt3a and followed for 6 hr (every 15 min). Several frames from Video 1 are presented. The number of cells exhibiting transcriptionally active CCND1-MS2 genes (green dot in the\u00a0nucleus, white arrow) was counted over time. Scale bar, 10 \u00b5m. (b) Plots showing the percentage of cells in the population with actively transcribing CCND1-MS2 genes in Wnt3a-treated (red, n\u00a0=\u00a098) and mock treated (blue, n\u00a0=\u00a0128) cells. Mean\u00a0\u00b1\u00a0sd from three fields imaged on different days\u2014see Supplementary file 1a for statistics. (c) Immunofluorescence showing that endogenous \u03b2-catenin (green) is prominent at the cell membrane in untreated HEK293 cells (top) and accumulates in the cytoplasm and nucleus following activation by Wnt3a for 2 hr (bottom). Hoechst DNA stain is in blue. (d) Similar changes in the\u00a0subcellular distribution following activation are seen in the YFP-\u03b2-catenin low-expressing clone. Bar\u00a0=\u00a010 \u03bcm. (e) Western blot time course of endogenous \u03b2-catenin and YFP-\u03b2-catenin protein accumulation following either Wnt3a (top) or LiCl (bottom) stimulation. Anti-\u03b2-catenin antibody was used for the detection of both \u03b2-catenin proteins. Tubulin was used as a loading control. Time 0 is the time point of activator addition. Blots are representative of 3 repeated experiments. The average quantification of 3 repeated experiments is presented in the plots below (mean\u00a0\u00b1\u00a0sd). There is no statistical difference between the endogenous and exogenous levels of \u03b2-catenin in the two plots.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Luciferase assay showing the levels of cyclin D1 promoter activation following the transient transfection of YFP-\u03b2-catenin into HEK293 cells. p=0.003. (b) Overexpression of YFP-\u03b2-catenin shows that overexpressed protein localization does not resemble endogenous \u03b2-catenin under non-activated conditions, since it is highly present in the nucleus prior to Wnt activation, and does not appear at the membrane. Bar\u00a0=\u00a010 \u00b5m. (c) Cell cycle analysis of HEK293 CCND1-MS2 cells with and without YFP-\u03b2-catenin. (d) Quantification of CCND1-MS2 nascent mRNAs (left) (p=0.8) and cellular mRNAs (right) (p=0.16) levels by RNA FISH in HEK293 CCND1-MS2 cell clones with or without YFP-\u03b2-catenin (n\u00a0=\u00a018, n\u00a0=\u00a026 respectively). **p<0.01, n.s. = p>0.05. (e\u2013h) Example of single molecule mRNA FISH quantification procedure with a probe that hybridizes to the MS2 region in the 3\u2019UTR of the CCND1-MS2 mRNA. (e) Raw 3D image (76 planes in z stack) showing the active transcription site (red) and single mRNA molecules. Hoechst DNA stain is in blue. (f) Deconvolved 3D image. Boxes show the transcription site (bottom) and single cellular mRNAs (top). (g) Identification of \u2018spots\u2019 of single mRNAs and transcription site (green dots) by Imaris. (h) Generation of a 3D shell for each spot to be taken for intensity measurements. Bar\u00a0=\u00a010 \u00b5m. Then the sum of intensity at the transcription site was divided by the frequent intensity value of a single mRNA. This ratio provided the number of mRNAs associated with the transcription unit, as explained in the Materials\u00a0and\u00a0methods section.\n\n![Video 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-media1.mp4.jpg)\n\n**Video 1.:** HEK293 CCND1-MS2 cells stably expressing MS2-GFP (green) were treated with Wnt3a. The transcribed CCND1 mRNA on the active gene is seen as a bright green dot. The fluorescent signal on the active genes was enhanced using ImageJ 'Spot Enhancing Filter 2D' in order to clearly present the active sites in the movie. Cells were imaged every 15 min for 6 hr.\n\nSince an imaging-based approach for studying signaling dynamics requires that relevant molecules be fluorescently tagged, we verified using a luciferase assay, that a YFP-tagged version of \u03b2-catenin (Krieghoff et al., 2006) activates the CCND1 promoter, and observed 2.3 fold activation after transient transfection of the protein into the HEK293 CCND1-MS2 cells (Figure 1\u2014figure supplement 1a). We note that HEK293 cells are known to have a low background of \u03b2-catenin activity (Kang et al., 2012), and are not known to have mutations in proteins associated with Wnt signaling (Tan et al., 2012). Immunofluorescence with an antibody to the endogenous \u03b2-catenin protein showed normal \u03b2-catenin localization at the cell membrane region (a portion of \u03b2-catenin is located in adherens junctions and functions in cell adhesion [Harris and Tepass, 2010]), as well as low cytoplasmic levels under non-induced conditions, compared to a predominant increase in cytoplasmic and nuclear distribution after the addition of Wnt3a (Figure 1c). In summary, this cell system enables the measurement of CCND1 transcription activation kinetics in single cells following Wnt signaling.\n\nTo mimic endogenous \u03b2-catenin distribution using YFP-\u03b2-catenin, we generated a HEK293 CCND1-MS2 cell clone that stably expressed YFP-\u03b2-catenin. Since high overexpression conditions of YFP-\u03b2-catenin typically result in increased subcellular distribution and high accumulation in the nucleus prior to any signal (Figure 1\u2014figure supplement 1b), which is in stark contrast to the endogenous \u03b2-catenin protein that is observed mainly at the membrane (Figure 1c), we screened and identified a clone that stably expressed low levels of YFP-\u03b2-catenin. The clone phenotypically resembled endogenous protein localization and distribution, namely, membrane localization in the non-induced state, and enhanced nuclear localization following Wnt stimulation (Figure 1d). Characterization of endogenous \u03b2-catenin and YFP-\u03b2-catenin accumulation levels by Western blotting showed that YFP-\u03b2-catenin expression levels were\u00a0~80% of the endogenous \u03b2-catenin, thus doubling \u03b2-catenin levels in the cell, and that the accumulation dynamics of both proteins were identical (Figure 1e). The time-scale of \u03b2-catenin induction is in agreement with other studies (Hern\u00e1ndez et al., 2012; Lustig et al., 2002). The addition of YFP-\u03b2-catenin to the cell clone did not influence the cell cycle or CCND1 expression at steady state as quantified by single molecule RNA FISH (Yunger et al., 2010,2013) (Figure 1\u2014figure supplement 1c\u2013h).\n\n### Real-time \u03b2-catenin dynamics in a cell population in response to Wnt signaling\n\nTo understand the intra-cellular dynamics of \u03b2-catenin in a cell population under living cell conditions, cells were imaged for over 12 hr. Rapid nuclear accumulation of \u03b2-catenin was observed in most cells that were stimulated with Wnt3a, compared to no change in \u03b2-catenin levels in control cells that received mock conditioned medium without Wnt3a (Figure 2a,b, Video 2). Rising levels of \u03b2-catenin in the cytoplasm and the nucleus were detected 15 min after Wnt3a addition, and the accumulation peak was observed 2\u20133 hr later (Figure 2c), during which \u03b2-catenin levels increased 3-fold compared to the initial state. Recombinant Wnt3a (200 ng/ml) showed the same dynamics (data not shown). The rate at which \u03b2-catenin levels increased in the nucleus was faster than in the cytoplasm, leading to a higher nucleus/cytoplasm (N/C) protein ratio, whereas in the control cells there was no change (Figure 2d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig2-v2.jpg)\n\n**Figure 2.:** Frames from live-cell movies (Video 2) showing YFP-\u03b2-catenin dynamics in cells treated with (a) mock conditioned medium or (b) Wnt3a for\u00a012\u00a0hr. Red bordered frames compare between the 0 min and 120 min time points. Bar\u00a0=\u00a020 \u03bcm. (c) The relative average intensity of \u03b2-catenin measured in the cytoplasm (n\u00a0=\u00a024) and nucleus (n\u00a0=\u00a031) of cells treated with Wnt3a for 12 hr, compared to mock-treated control cells (n\u00a0=\u00a013). (d) Nucleus to cytoplasm ratio (N/C) of fluorescence intensities over 12 hr from c. The initial ratio was designated as 1. Inset plot shows the statistical significance p values (t test) at each time point between the two treatments over the experiment time course. (e) The rate of change in \u03b2-catenin levels (\u0394I/\u0394t), during accumulation or degradation, in the cytoplasm and nucleus over time in cells from c.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Frames showing one pre-bleach frame, the bleach of the YFP-\u03b2-catenin in the nucleus (top) or cytoplasm (bottom) of a Wnt3a-treated cell (2 hr, arrows point to bleached region), and frames following the recovery of signal over time (frame every 1.5 s for 8 min). Bar\u00a0=\u00a010 \u03bcm. (b) Averaged data plot of FRAP recovery import curves from Wnt3a-treated cells (n\u00a0=\u00a027, red curve), and transiently overexpressing YFP-\u03b2-catenin cells (n\u00a0=\u00a033, blue curve). Pink curve shows the decline in YFP-\u03b2-catenin in the cytoplasm of Wnt3-treated cells concurrent with nuclear import (red curve). (c) Averaged data plot of FRAP recovery export curves (green) from Wnt3a-treated cells (n\u00a0=\u00a014), compared to the import curve (red). (d) FLIP curves for Wnt3a-treated cells photobleached continuously in the nucleus to show import rates from the cytoplasm (n\u00a0=\u00a015, red curve) compared with cells photobleached continuously in the cytoplasm to show export rates from the nucleus (n\u00a0=\u00a016, blue curve). Statistics can be found in Supplementary file 1. (e) Data from Figure 2c (blue dots) of nuclear YFP-\u03b2-catenin accumulation were fit with a two-phase exponential (red curve).\n\n![Video 2.](https://cdn.elifesciences.org/articles/16748/elife-16748-media2.mp4.jpg)\n\n**Video 2.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a (top) and showed nuclear and cytoplasmic accumulation of YFP-\u03b2-catenin, followed by slow egress. No change in YFP-\u03b2-catenin levels was seen in mock-treated cells (bottom). Right \u2013 The YFP signal is pseudo-colored using ImageJ \u2018Royal\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 510 min.\n\nAnalyzing the rate of change in \u03b2-catenin levels in the nucleus and cytoplasm over time (\u0394I/\u0394t) showed that the accumulation was comprised of two phases; an initial rapid one, in which the peak of the change in accumulation was reached 60 min after induction, and a second accumulation phase in which cellular \u03b2-catenin continued to amass but at a declining rate up until 180 min (Figure 2e). Subsequently, the rate of change turned negative, meaning that \u03b2-catenin levels were declining, probably due to degradation. In control cells, the rate of change in \u03b2-catenin remained unaltered.\n\nTo examine whether the dynamics of nuclear entry of \u03b2-catenin were modified during Wnt activation and how they compared to \u03b2-catenin shuttling out of the nucleus, we used fluorescence recovery after photobleaching (FRAP). Nuclei of cells showing nuclear \u03b2-catenin, either after 2 hr of Wnt3a activation or transiently overexpressing \u03b2-catenin, were photobleached, and nuclear import of \u03b2-catenin was monitored over time (Figure 2\u2014figure supplement 1a top). The dynamics were relatively slow, however, the import rate under Wnt3a conditions was more rapid than transient overexpression, showing the advantage of measurements performed at low expression conditions (Figure 2\u2014figure supplement 1a,b, Supplementary file 1b). The incomplete recovery of YFP-\u03b2-catenin during the FRAP time-course meant that a significant population of \u03b2-catenin molecules had already accumulated and had been retained in the nucleus prior to photobleaching. Next, we photobleached the cytoplasm and found that the rate of \u03b2-catenin shuttling out from the nucleus was slower than the import rate (Figure 2\u2014figure supplement 1a bottom, c, Supplementary file 1c). Similarly, fluorescence loss in photobleaching (FLIP), either in the nucleus or in the cytoplasm, showed that \u03b2-catenin shuttling out of the nucleus was slower than its nuclear entry (Figure 2\u2014figure supplement 1d, Supplementary file 1d). Altogether, the data suggest that Wnt signaling causes a transient shift in the dynamic interplay between \u03b2-catenin stabilization and degradation processes, towards protein stabilization and accumulation.\n\n### Individual cells in the population present a variable response of \u03b2-catenin dynamics\n\nThe averaged population data obtained from living cells presented above (Figure 2) are in agreement with biochemical data as seen by Western blotting of protein extracts from large cell populations, showing the accumulation of \u03b2-catenin beginning from around 30 min after Wnt and peaking at 3 hrs (Hern\u00e1ndez et al., 2012; Li et al., 2012). However, the averaged behavior of a population does not necessarily represent the actual dynamics in individual cells. Examining the dynamic behavior of \u03b2-catenin accumulation in the nucleus and cytoplasm of individual cells after Wnt3a showed that although an increase in \u03b2-catenin levels was initiated in most cells, the subsequent dynamics were variable (Figure 3a,b, Video 3). For instance, comparing cells 1,2 and 4 (Figure 3a) showed a major and rapid wave of \u03b2-catenin nuclear accumulation in cell 1 (30\u2013165 min) that subsided and then mildly rose again (465\u2013585 min); a similar range of events occurred in cell 2 but the two waves were less intense and the second wave occurred earlier compared to cell 1 (first wave 30\u2013150 min, second wave 330\u2013435 min); in contrast, cell four showed a longer accumulation period (30\u2013240 min). Cells 3 and 6 showed slow nuclear accumulation, peaking late only after 825 min and 525 min, respectively, from Wnt3a stimulation. This analysis showed that the dynamic behavior of \u03b2-catenin in the cytoplasm and the nucleus was highly similar within the same cell, but that the time-frames of accumulation could be quite different between individual cells, some showing two cycles of nuclear accumulation. In these cases, the first cycle of accumulation lasted 360 min on average and the second cycle 180 min on average.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig3-v2.jpg)\n\n**Figure 3.:** (a) Frames from time-lapse Video 3 showing YFP-\u03b2-catenin accumulation in a population of cells. The YFP signal is pseudo-coloured using ImageJ \u2018Green Fire Blue\u2019 look-up table. White and yellow arrows point to cells in which \u03b2-catenin levels increase and decrease twice during the movie. The pink arrow points to centrosomal accumulation. Bar\u00a0=\u00a010 \u03bcm. (b) \u03b2-catenin levels in the nucleus (left) and cytoplasm (right) in individual cells (as numbered in a) are plotted in different colors. The grey background plots show the complete set of plots from all the cells. Maximum \u03b2-catenin intensity in each cell was normalized to 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Frames from time-lapse Video 4 showing YFP-\u03b2-catenin accumulation in a population of cells. The YFP signal is pseudo-colored using the ImageJ \u2018Green Fire Blue\u2019 look-up table. Bar\u00a0=\u00a010 \u03bcm. (b) \u03b2-catenin levels in the nucleus (top) and cytoplasm (bottom) of individual cells (as numbered in a) are plotted in different colors. The grey background plots show the complete set of plots from all the cells. The maximum intensity of \u03b2-catenin in each cell was normalized to 1. (c) The relative average intensity of \u03b2-catenin measured in the cytoplasm (n\u00a0=\u00a017) and nucleus (n\u00a0=\u00a018) of individual cells treated with LiCl for 12 hr, compared to Wnt3a-treated cells (from Figure 2). (d) The rate of change in \u03b2-catenin levels (\u0394I/\u0394t) accumulation or degradation in the cytoplasm and nucleus over time in cells from c. (e) Frames from a time-lapse movie showing YFP-\u03b2-catenin accumulation in a population of Wnt3a+MG132-treated cells. The YFP signal is pseudo-colored using the ImageJ \u2018Green Fire Blue\u2019 look-up table. Bar\u00a0=\u00a010 \u03bcm. (f) The relative average intensity of \u03b2-catenin measured in the centrosome, membrane, cytoplasm and nucleus of LiCl-treated cells.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Frames from a time-lapse movie showing YFP-\u03b2-catenin accumulation in a population of cells in the field. The YFP signal is pseudo-colored using the ImageJ \u2018Royal\u2019 look-up table. Red arrows point to cells with very high \u03b2-catenin levels. Bar\u00a0=\u00a010 \u03bcm. Plots showing the relative maximal levels of \u03b2-catenin measured in the\u00a0nuclei of (b) Wnt3a-treated (n\u00a0=\u00a031) or (c) LiCl-treated cells (n\u00a0=\u00a018). Order of cells is according to increasing relative intensities. Plots showing the time from the addition of the activator until reaching the maximal levels of \u03b2-catenin in the same set of (d) Wnt3a-treated or (e) LiCl-treated cells. (f,g) The respective correlation plots and scores for a Pearson correlation analysis between the maximum intensity in each cell and the time to reach the highest accumulation. (h) The integral of the fluorescence values in the six cells (from Figure 3) showing the total accumulation levels over time during the whole observation period (left). The right-hand plot shows the differences between accumulation in the cells at earlier times.\n\n![Video 3.](https://cdn.elifesciences.org/articles/16748/elife-16748-media3.mp4.jpg)\n\n**Video 3.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a, and the dynamics of the protein were observed in individual cells. The YFP signal is pseudo-colored using ImageJ \u2018Green Fire Blue\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 825 min.\n\nThe similar dynamics of decline in \u03b2-catenin levels in the nucleus and the cytoplasm suggests that \u03b2-catenin is not simply shuttling in and out of the nucleus, but rather reflects an enhanced activity of the degradation arm controlling \u03b2-catenin levels. To test this, we added lithium chloride (LiCl, 20 mM), a glycogen synthase kinase-3\u03b2 (GSK3\u03b2) inhibitor that mimics Wnt signaling (Klein and Melton, 1996; Hedgepeth et al., 1997). Indeed, LiCl caused \u03b2-catenin nuclear and cytoplasmic accumulation, but the dynamics were completely different than Wnt3a (Figure 3\u2014figure supplement 1a,b, and Video 4). \u03b2-catenin accumulation occurred synchronously and continuously throughout 10\u201311 hr in all cells, and only then did the accumulation cease. The increasing accumulation rate of change (\u0394I/\u0394t) in the nucleus and cytoplasm continued for 10 hr, compared to 3 hr, in response to Wnt3a (Figure 3\u2014figure supplement 1c,d). The levels of \u03b2-catenin were 4-fold higher in LiCl treated cells compared to Wnt3a. Since LiCl prevents \u03b2-catenin degradation, we hypothesized that Wnt3a treatment together with the proteasome inhibitor MG132, which stabilizes \u03b2-catenin, but not through GSK3\u03b2 phosphorylation, should have a similar effect on \u03b2-catenin dynamics. Indeed, accumulation dynamics under Wnt3a+MG132 were similar to LiCl treatment (Figure 3\u2014figure supplement 1e). Treatment with MG132 without Wnt3a showed the same dynamics (data not shown). When the curve describing the dynamics of \u03b2-catenin in response to Wnt3a (Figure 2c) was fitted with a two-phase exponential fit that describes production and degradation (Figure 2\u2014figure supplement 1e), we found linear accumulation in the first phase, showing that degradation was very low, as expected (Hern\u00e1ndez et al., 2012). \u03b2-catenin production rates did not change significantly during the accumulation and clearance phases, whereas, the degradation rate became predominant during the clearance phase. \u03b2-catenin degradation had a characteristic time of 2.75 hr. These data exemplify the difference between a signaling molecule and a chemical that target the same signaling pathway. While drug action is less influenced by endogenous molecules, a signaling molecule will relay a transient signaling effect, depending on the level of other signaling molecules that are present in the cell at the time of induction.\n\n![Video 4.](https://cdn.elifesciences.org/articles/16748/elife-16748-media4.mp4.jpg)\n\n**Video 4.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with LiCl and increased accumulation of the protein was observed. The YFP signal is pseudo-colored using ImageJ \u2018Green Fire Blue\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 825 min.\n\nSince the maximum levels of \u03b2-catenin accumulation differed between cells in the population (Figure 3\u2014figure supplement 2a\u2013e), and we could identify intense and prolonged accumulation in some Wnt3a-treated cells, we examined whether there was a correlation between the time to reach the maximum level and the peak of the response. However, a low correlation score (0.28) was observed for the Wnt3a-treated cells, and a more prominent correlation score (0.53) in LiCl-treated cells (Figure 3\u2014figure supplement 2f,g). The latter was expected due to the continuous accumulation over time. But for Wnt3a treatment, this meant that a longer Wnt3a signaling response did not necessarily result in higher levels of \u03b2-catenin accumulation. Moreover, calculating the integral of the fluorescence signal that accumulated over the whole observation period in a cell population (from Figure 3), showed that the total accumulation in most cells was similar (Figure 3\u2014figure supplement 2h), and that differences between single cells were pronounced mainly at earlier time points of the response.\n\n### The response of cells to Wnt3a is not cell cycle dependent\n\nCluster analysis of the dynamic behavior of \u03b2-catenin in individual living cells, shows the dramatic difference between Wnt signaling activation by Wnt3a compared to LiCl (Figure 4a; membrane and centrosome will be discussed below).\u00a0~80% of the cells showed similar dynamics (e.g. Figure 2c) and\u00a0~20% portrayed different behavior patterns (e.g. Figure 3). In order to determine whether the variabilities in \u03b2-catenin dynamics in the cell population in response to Wnt3a, may be due to the cell cycle stage, we examined time-lapse movies in which cells had undergone mitosis, and in which daughter cells could be identified. For example, in the population of cells seen accumulating \u03b2-catenin in response to Wnt3a in Figure 4b (Video 5), there were two dividing cells at the beginning of the movie, both with low \u03b2-catenin levels prior to mitosis. In the daughter cells originating from the top dividing cell there was low \u03b2-catenin accumulation, whereas in the bottom dividing cell, one daughter cell responded rapidly and accumulated very high levels of \u03b2-catenin, while the other daughter cell responded later and accumulated to low levels (Figure 4b\u2013e). In summary, we could not detect a pattern of \u03b2-catenin accumulation in daughter cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig4-v2.jpg)\n\n**Figure 4.:** (a) Heat map and cluster analysis of normalized \u03b2-catenin accumulation dynamics in sub-cellular compartments following Wnt3a (top, n(nucleus)\u00a0=\u00a031, n(cytoplasm)\u00a0=\u00a024, n(membrane)\u00a0=\u00a021, n(centrosome)\u00a0=\u00a011) or LiCl (bottom, n(nucleus)\u00a0=\u00a018, n(cytoplasm)\u00a0=\u00a017, n(membrane)\u00a0=\u00a09, n(centrosome)\u00a0=\u00a014) treatments. Data were taken from live-cell movies with each column representing one cell, and rows representing time from Wnt addition. Relative levels of \u03b2-catenin are depicted from low (green) to high (red). Hierarchical cluster analysis depicted above the plots shows the\u00a0homogenous behavior in LiCl-treated cells and heterogenous behavior in Wnt3a-treated cells. Most cells reach maximal levels of \u03b2-catenin within 2\u20133 hr. (b) (Top) Frames from time-lapse Video 5 showing YFP-\u03b2-catenin accumulation in a population of cells. The YFP signal is pseudo-colored using the ImageJ \u2018Fire\u2019 look-up table. Boxes denote cells that go through mitosis, and enlargements are shown below. Green arrows point to mother cells, and yellow and white arrows point to the daughter cells. Bar\u00a0=\u00a010 \u03bcm. Plots showing the relative intensity levels of YFP-\u03b2-catenin in the cytoplasm and nucleus of the (c) top and (d) bottom daughter cells of each cell division. (e) Plot comparing the relative intensity levels in the nuclei of the four daughter cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** HEK293 CCND1-MS2 YFP-\u03b2-catenin cells were stably infected with the Fucci system (mCherry-Cdt1 and AmCyan1-Geminin). Cdt1 levels peak during G1 (red cells), and as cells transition into S, Cdt1 levels decline and Geminin levels rise (cyan cells), remaining high from G2 onwards. (a) Frames from Video 6. Before Wnt3a treatment (time 0 min), \u03b2-catenin levels are low in the cytoplasm and the\u00a0nucleus of all cells marked by arrowheads (cells in G1 or G2). At time 255 min after Wnt3a, the cells marked with blue, green and pink arrowheads show an increase in the \u03b2-catenin levels in response to Wnt signaling. The cell marked with a white arrowhead has not responded yet. At time 780 min, the cell marked with a pink arrowhead has gone through mitosis and the three cells marked by blue, green and white arrowheads have similar \u03b2-catenin levels. At time 1065 min, the\u00a0cells marked by white and blue arrowheads are increasing further, while the cell marked with the green arrowhead is not changing. (b) Frames from Video 7. Before Wnt3a treatment (time 0 min), all the cells marked with arrowheads (green, blue, white and pink) are in G2. At time 240 min after Wnt3a, the cell marked by a green arrowhead has gone through mitosis and the daughter cells have similar \u03b2-catenin levels. At time 420 min, all four cells have gone through mitosis. \u03b2-catenin levels in each of the two daughter cells in all four cases are similar to each other. At time 705 min, the daughter cells marked by blue, green and pink arrowheads are different from each other. The cells marked with white arrowheads have similar levels. Bottom rows are the same frames without Fucci labels. Bar\u00a0=\u00a010 \u03bcm.\n\n![Video 5.](https://cdn.elifesciences.org/articles/16748/elife-16748-media5.mp4.jpg)\n\n**Video 5.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a, and the dynamics of the protein in the nucleus were followed over time. Two cells that undergo mitosis were observed in the field. The levels of the protein in the daughter cells formed from the upper cell were low (also note the appearance and division of the centrosome detected via YFP-\u03b2-catenin). In comparison, in the bottom mitotic cell, one daughter cell accumulated high YFP-\u03b2-catenin levels very rapidly, while the other responded slowly and had very low levels. The YFP signal is pseudo-colored using ImageJ \u2018Fire\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 225 min.\n\nTo examine the cell cycle and Wnt response more closely in a large population of living cells we used the Fucci system (Videos 6 and 7), which uses two fluorescent cell cycle markers to identify cell cycle phases (Sakaue-Sawano et al., 2008). We introduced the Fucci molecules into the CCND1-MS2 cells containing YFP-\u03b2-catenin. The\u00a0cells did not show any special pattern of YFP-\u03b2-catenin accumulation relative to the cell cycle stage (Figure 4\u2014figure supplement 1a), and cells passing through mitosis also exhibited different accumulation levels in the mother cell and between daughter cells (Figure 4\u2014figure supplement 1b). In summary, we did not identify a cell cycle dependent pattern of YFP-\u03b2-catenin levels in response to Wnt.\n\n![Video 6.](https://cdn.elifesciences.org/articles/16748/elife-16748-media6.mp4.jpg)\n\n**Video 6.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin (yellow) and the Fucci markers for G1 (red) and G2 (cyan), were treated with Wnt3a, and the dynamics of the protein were followed over time.\u00a0Cells were imaged every 15 min for 1065 min.\n\n![Video 7.](https://cdn.elifesciences.org/articles/16748/elife-16748-media7.mp4.jpg)\n\n**Video 7.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin (yellow) and the Fucci markers for G1 (red) and G2 (cyan), were treated with Wnt3a, and the dynamics of the protein were followed over time in four cells that undergo mitosis.\u00a0Cells were imaged every 15 min for 705 min.\n\n### Wnt signaling induces \u03b2-catenin accumulation at the cell membrane and the centrosome\n\n\u03b2-catenin is normally present in the\u00a0adherens junctions proximal to the cell membrane, and is bound to E-cadherin in the membrane and to \u03b1-catenin, which mediates the connection between the adherens junction and the actin cytoskeleton (Yap et al., 1997; Brembeck et al., 2006). Not much is known about the subcellular localization of this \u03b2-catenin population in response to Wnt. Before treatment, \u03b2-catenin was observed as a string of punctate sub-regions distributed along the cell outline only at cell-cell contacts (Figure 3a, Video 3). Since we could detect changes in the intensity of the puncta after Wnt, we followed the intensity of \u03b2-catenin at the membrane during Wnt activation and found an increase with similar dynamics to the cytoplasmic and nuclear sub-populations (Figure 5a, Video 8). There was no obvious reduction in the membrane levels even after many hours (Figure 5b). However, the relative increase at the membrane was lower than the nucleus and the cytoplasm, and the rate of \u03b2-catenin accumulation (\u0394I/\u0394t) at the membrane was less rapid than the nuclear accumulation rates (Figure 5b,c). LiCl caused longer \u03b2-catenin accumulation times and significantly higher accumulation at the membrane (Figure 5c,d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig5-v2.jpg)\n\n**Figure 5.:** (a) Frames from time-lapse Video 8 showing YFP-\u03b2-catenin accumulation at the cell membrane. The YFP signal is pseudo-colored using the ImageJ \u2018Green Fire Blue\u2019 look-up table. Bar\u00a0=\u00a010 \u03bcm. (b) The relative average intensity of \u03b2-catenin measured in the membrane (n\u00a0=\u00a021), cytoplasm and nucleus (from Figure 2) of Wnt3a-treated cells. (c) The rate of change in \u03b2-catenin levels (\u0394I/\u0394t) accumulation or degradation in the membrane, cytoplasm and nucleus over time in Wnt3a- and LiCl-treated cells. (d) The relative average intensity of \u03b2-catenin measured in the membrane, cytoplasm and nucleus of LiCl-treated cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Frames showing one pre-bleach frame, the bleach of the YFP-\u03b2-catenin in the membrane region of a Wnt3a-treated cell, and frames following the recovery of the\u00a0signal over time. Circle denotes the bleached region. Bar\u00a0=\u00a010 \u03bcm. (b) Averaged data plot of FRAP recovery curves from mock-treated (control, n\u00a0=\u00a021), Wnt3a-treated (n\u00a0=\u00a032) and LiCl-treated cells (n\u00a0=\u00a018). Statistics can be found in Supplementary file 1e,f.\n\n![Video 8.](https://cdn.elifesciences.org/articles/16748/elife-16748-media8.mp4.jpg)\n\n**Video 8.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a, and the dynamics of the protein at the membrane were followed over time, and were similar to the nucleus and cytoplasm accumulation. The YFP signal is pseudo-colored using ImageJ \u2018Green Fire Blue\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 1065 min.\n\nTo examine if Wnt signaling changed the dynamics of \u03b2-catenin at the membrane we performed FRAP experiments on this region and found that the recovery dynamics were slow and indicative of slow exchange of \u03b2-catenin molecules at the membrane. Yet, similar recovery in unactivated, Wnt3a-treated and LiCl-treated cells was observed, meaning that there was no change in the dynamics of protein exchange but rather an increase in the number of \u03b2-catenin molecules in the membrane-bound fraction (Figure 5\u2014figure supplement 1, Supplementary file 1e,f).\n\nIn many of the Wnt-induced cells that were followed in the live-cell movies we noticed the appearance of \u03b2-catenin in a single prominent dot (Figure 3a, Video 3). \u03b2-catenin can localize at the centrosome during interphase and mitosis, and functions in centriolar cohesion (Kaplan et al., 2004; Hadjihannas et al., 2010; Bahmanyar et al., 2008). Since the \u03b2-catenin dot was in proximity to the nucleus, and since the centrosome is juxtaposed to the nucleus, we examined if\u00a0centrosomal accumulation of \u03b2-catenin was occurring. Indeed, movies of dividing cells demonstrated that each daughter cell received one \u03b2-catenin-labeled body after division, reminiscent of\u00a0centrosome behavior (Figure 6a, Video 5 and 9). Immunofluorescence of pericentrin (a centrosome marker), together with either endogenous \u03b2-catenin or YFP-\u03b2-catenin, showed accumulation of \u03b2-catenin at the centrosome following activation (Figure 6b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig6-v2.jpg)\n\n**Figure 6.:** (a) Frames from time-lapse Video 9 showing YFP-\u03b2-catenin accumulation at the centrosome (white arrowheads) and after cell division. Bar\u00a0=\u00a010 \u03bcm. (b) The colocalization (white arrowheads) of YFP-\u03b2-catenin (top) or endogenous \u03b2-catenin (bottom) with the centrosomal marker pericentrin (red immunofluorescence) in untreated and LiCl-treated cells. Hoechst DNA stain is in blue, and DIC in grey. Boxes show enlarged centrosomal areas. Bar\u00a0=\u00a010 \u03bcm. (c) The relative average intensity of YFP-\u03b2-catenin measured in the centrosome (n\u00a0=\u00a011), membrane, cytoplasm and nucleus (from Figure 2 and 5) of Wnt3a-treated cells. Correlation scores (r) between the nucleus (n), cytoplasm (c), membrane (m) and centrosome (ce) YFP-\u03b2-catenin levels are presented at the bottom. (d) The rate of change in YFP-\u03b2-catenin levels (\u0394I/\u0394t) accumulation or degradation in the centrosome, membrane, cytoplasm and nucleus over time in Wnt3a- and LiCl-treated cells. (e) Plots of YFP-\u03b2-catenin levels in the sub-cellular compartments of individual cells (from Figure 3). Boxes show the correlation scores (r) between the nucleus (n), cytoplasm (c), membrane (m) and centrosome (ce).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Frames from Video 10 showing the tracks of several YFP-\u03b2-catenin membranal puncta (colored tracks) moving from the membrane region towards the centrosome area (red circle). Time is minutes after addition of Wnt3a. YFP signal is shown in negative greyscale colors. Bar\u00a0=\u00a010 \u03bcm. (b) Maximum time projections of movements of membranal YFP-\u03b2-catenin puncta (arrows) towards the centrosome region (circles) in four different cells. The YFP signal is pseudo-colored using the ImageJ \u2018Green Fire Blue\u2019 look-up table. Top row are Wnt3a-treated cells. Bottom row are Wnt3a + MG132-treated cells. Bar\u00a0=\u00a010 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Frames showing one pre-bleach frame, the bleach of the YFP-\u03b2-catenin in the centrosome of a Wnt3a-treated cell, and frames following the recovery of signal over time. Circle denotes the bleached region. Bar\u00a0=\u00a010 \u03bcm. (b) Averaged data plot of FRAP recovery curves in the cytoplasm (n\u00a0=\u00a024), nucleus (n\u00a0=\u00a025), membrane (n\u00a0=\u00a032) and centrosome (n\u00a0=\u00a013). Membrane recovery from Figure 5\u2014figure supplement 1 and the\u00a0import rate to nucleus from Figure 2\u2014figure supplement 1 are also plotted.\n\n![Video 9.](https://cdn.elifesciences.org/articles/16748/elife-16748-media9.mp4.jpg)\n\n**Video 9.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a, and the dynamics of the protein at the centrosome were observed in parallel to the accumulation in the nucleus and cytoplasm. The separation of the centrosome in a cell during division can be seen after the 960 time point. Cells were imaged every 15 min for 1005 min.\n\nThe accumulation dynamics of \u03b2-catenin at the centrosome occurred in parallel to the accumulation seen in the nucleus, cytoplasm and adherens junctions. However, centrosomal levels were significantly higher, five-fold higher compared to the initial state (Figure 6c). The rates of change were the highest and most rapid of all measured cell compartments (Figure 6d). LiCl also led to \u03b2-catenin localization at the centrosome, but here too with very different dynamics from Wnt3a (Figure 6d; Figure 3\u2014figure supplement 1f). To obtain a more general outlook of the changes in \u03b2-catenin levels in all four compartments, we performed a correlation analysis (Figure 6c,e). As was seen in individual cells, the highest correlation in accumulation dynamics following Wnt3a, was observed between the cytoplasm and the nucleus, whereas the lowest correlation was between the centrosome and the membrane.\n\nInterestingly, in some cells we observed \u03b2-catenin puncta detaching from the membrane and traveling in the cell (Videos 10 and 11). When these structures were tracked during movement in the cell, they usually ended up at the centrosome (Figure 6\u2014figure supplement 1). This phenomenon was frequently seen in cells treated with Wnt3a, LiCl and MG132, and less frequently in unactivated cells. We did not observe a correlation with the timing of Wnt addition, and perhaps detection was easier after Wnt due to the increase of \u03b2-catenin at the membrane following stimulation. Tracking of the detached \u03b2-catenin puncta showed that they reached the centrosome between 30 to 90 min after detachment. To examine whether the residence times of \u03b2-catenin molecules at the centrosome resembled the membrane region, we performed FRAP analysis, which showed very rapid recovery kinetics at the centrosome, in comparison to all other cell regions (Figure 6\u2014figure supplement 2). This implied that \u03b2-catenin duration at the centrosome is short-lived, with a half-time of fluorescence recovery (t1/2) of 1.9 s, similar to other centrosomal components (Hames et al., 2005). Altogether, this suggests that the molecular interactions of \u03b2-catenin at the membrane in adherens junctions are significantly more stable than at the centrosome, where the exchange of \u03b2-catenin molecules is highly rapid.\n\n![Video 10.](https://cdn.elifesciences.org/articles/16748/elife-16748-media10.mp4.jpg)\n\n**Video 10.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a. At the 300 min time point, a series of YFP-\u03b2-catenin puncta can be tracked (track colors) moving from the membrane to the centrosome. An inverted presentation of the movie shows the movie puncta (black dots). Cell was imaged every 15 min for 1005 min.\n\n![Video 11.](https://cdn.elifesciences.org/articles/16748/elife-16748-media11.mp4.jpg)\n\n**Video 11.:** HEK293 CCND1-MS2 cells stably expressing YFP-\u03b2-catenin were treated with Wnt3a and MG132. At the 165 min time point, a series of YFP-\u03b2-catenin puncta can be tracked (track colors) moving from the membrane to the centrosome. The YFP signal is pseudo-colored using ImageJ \u2018Green Fire Blue\u2019 look-up table to show YFP-\u03b2-catenin levels. Cells were imaged every 15 min for 1065 min.\n\n### Wnt signaling modulates the transcriptional output of the cyclin D1 gene\n\nWe next examined the influence of Wnt signaling dynamics on CCND1 gene activity. As shown (Figure 1a), a significant increase in the percentage of cells actively transcribing CCND1-MS2 could be seen starting 15 min post-activation, and peaking after 75\u201390 min. Cells returned to steady state activity levels after 6 hr. We examined several parameters of the transcriptional response. First, we measured the time for an active CCND1-MS2 transcribing gene to appear in the population. In the control unstimulated population (mock conditioned medium), after 120 min most cells had activated the gene once, whereas in Wnt3a-induced cells, gene activation in the population was reached more quickly, already after 60 min. The response time for CCND1 activation following Wnt3a was also short, ranging at 15 min (Figure 7a\u2013b). This meant that Wnt signaling increased the probability of CCND1 to initiate transcription.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig7-v2.jpg)\n\n**Figure 7.:** (a) The percentage of cells in a population of either mock-treated (blue) or Wnt3a-activated cells (red) showing an active CCND1-MS2 transcribing gene, over time. (b) The promoter response time of CCND1-MS2 activation from the addition of Wnt3a (n\u00a0=\u00a027) or in mock-treated conditions (n\u00a0=\u00a022). In the boxplots, the median is indicated by a red line, the box represents the interquartile range, the whiskers represent the maximum and minimum values, and red dots represent outliers. (p=0.01). (c,d) Periods of gene activity measured in mock-treated and Wnt3a-treated cells. The\u00a0population was divided into cases where the gene was either not transcribing before the\u00a0addition of Wnt3a or mock-treatment (\u2018off\u2019, n(Wnt3a)\u00a0=\u00a027, n(Con)\u00a0=\u00a022, p=0.01) or if the gene was already active (\u2018on\u2019, n(Wnt3a)\u00a0=\u00a037, n(Con)\u00a0=\u00a052, p=0.77). *p<0.05, n.s. = p>0.05. (e) Frames from Video 12 showing the activation of the CCND1-MS2 gene detected by MS2-GFP mRNA tagging (arrow) following Wnt3a treatment. Bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Plots of single cells demonstrate the active (blue) and inactive (red) state of CCND1-MS2 transcribing gene along 6 hr in (a) mock-treated cells (Control, n\u00a0=\u00a074) and (b) Wnt3a-treated cells (n\u00a0=\u00a064). Data were taken from live-cell movies with each column representing one cell along 6 hr. Histograms showing the distribution of (c) active and (d) inactive state durations in Wnt3a-treated and mock-treated (Control) cells (p=0.02, p=0.0004 respectively). The curves are a fit to exponential distribution\u00a0(Golding et al., 2005).\n\nWe next examined whether the periods of gene activity were altered after Wnt activation. When CCND1 was at first non-active and began to transcribe after Wnt3a, there was prolonged transcriptional activation for a time-frame of 180 min, compared to a shorter activity period of 65 min in unactivated cells (Figure 7c,e, Video 12). This meant that Wnt signaling increased the time-frame of CCND1 promoter activity. Surprisingly, if the gene was detected in an already active state, and Wnt3a was then added, there was no difference in the activity period compared to that in unactivated cells. Under both conditions, activation persisted for an average of 130 min (Figure 7d), meaning that if the promoter was already activated then there was no Wnt-induced change in this time-frame.\n\n![Video 12.](https://cdn.elifesciences.org/articles/16748/elife-16748-media12.mp4.jpg)\n\n**Video 12.:** HEK293 CCND1-MS2 cells stably expressing MS2-GFP (green) were treated with Wnt3a. CCND1 mRNA transcription could be detected 15 min after Wnt3a (green dot, transcription site) and continued for 4 hr. Cells were imaged every 15 min for 270 min.\n\nWhen we examined the levels of CCND1-MS2 activity after Wnt activation in living cells (Figure 8\u2014figure supplement 1a\u2013c), we found that even if the gene was active before Wnt3a addition, the intensity of MS2-GFP fluorescence on the gene showed higher levels, indicative of higher expression levels due to signaling, meaning that the promoter could integrate additional signals (Figure 8\u2014figure supplement 1b). We measured a 1.5\u20131.7 increase in the maximum MS2-GFP intensity levels, and observed that the maximum intensity distribution for Wnt3a-treated cells shifted such that many more cells displayed higher levels of gene activity (Figure 8a,b, and Figure 8\u2014figure supplement 1d). The time required to reach the maximum point of activity did not seem to change when examining the whole population (Figure 8\u2014figure supplement 1e). However, this time was actually shortened from 170 min to 120 min in cells where the gene was initially inactive, and the distribution of cells shifted to shorter times to reach maximum levels of transcription (Figure 8c). This time did not change in cells where the gene was initially active (Figure 8d). When gene activity and gene inactivity patterns were further examined, not only was an expected increase in the duration of gene activity found, but also a reduction in the rest duration. This means that Wnt activation not only increases the duration time for gene activity, but also reduces periods of inactivity by increasing the frequency of promoter firing events (Figure 7\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig8-v2.jpg)\n\n**Figure 8.:** (a,b) Boxplots showing the maximal MS2-GFP intensity levels reached on actively transcribing CCND1-MS2 genes during 6 hr in Wnt3a-treated and mock-treated (Con) cells, when (a) the gene was either not transcribing before the\u00a0addition of Wnt3a or mock-treatment (\u2018off\u2019, n(Wnt3a)\u00a0=\u00a027, n(Con)\u00a0=\u00a022, p=0.0001) or (b) if the gene was already active (\u2018on\u2019, n(Wnt3a)\u00a0=\u00a037, n(Con)\u00a0=\u00a052, p=0.0006). The median is indicated by a red line, the box represents the interquartile range, the whiskers represent the maximum and minimum values, and red dots represent outliers. (c,d) Boxplots showing the time required to reach the maximal intensity levels when (c) the gene was either not transcribing before the\u00a0addition of Wnt3a (\u2018off\u2019, p=0.03) or (d) if the gene was already active (\u2018on\u2019, p=0.42). (e) YFP-\u03b2-catenin (yellow) together with RNA FISH images obtained with a probe hybridizing to the MS2 region in the 3\u2019UTR of the CCND1-MS2 mRNA (cyan), showing CCND1 nascent mRNAs on active genes (large dots) and cellular mRNAs (small dots) in Wnt3a-treated cells (2 hr), in comparison to YFP-\u03b2-catenin levels. Nuclei are stained with Hoechst (pseudo-colored red). Bottom row is the pseudo-colored YFP signal using the ImageJ \u2018Royal\u2019 look-up table. Cells are numbered. Bar\u00a0=\u00a010 \u03bcm. (f) Quantification of the number of cellular CCND1-MS2 mRNAs (ordered from low to high) compared to YFP-\u03b2-catenin levels. (g) Quantification of the number of nascent CCND1-MS2 mRNAs compared to YFP-\u03b2-catenin levels. (h,i) Correlation analysis between (h) the number of cellular CCND1-MS2 mRNAs and YFP-\u03b2-catenin levels and (i) between the number of nascent CCND1-MS2 mRNAs and YFP-\u03b2-catenin levels. Blue dots \u2013 subpopulation with low nuclear YFP-\u03b2-catenin levels and low numbers of cellular/nascent CCND1-MS2 mRNAs. Red dots \u2013 subpopulation with high nuclear YFP-\u03b2-catenin levels and high numbers of cellular/nascent CCND1-MS2 mRNAs. Total correlation score between the number of cellular/nascent CCND1-MS2 mRNAs and YFP-\u03b2-catenin levels is 0.88 and 0.59, respectively. (j) The field from panel e demonstrating higher intensity of active CCND1-MS2 genes in cells with high nuclear YFP-\u03b2-catenin levels (red arrows) compared to cells with low nuclear YFP-\u03b2-catenin levels (yellow arrows). Active genes are pseudo-colored using the ImageJ \u2018Red Hot\u2019 look-up table. The fluorescent signal of the active genes was enhanced using ImageJ 'Spot Enhancing Filter 2D'. This enhancement led to the\u00a0reduced detectability of single mRNAs in this presentation of the image, in order to emphasize the difference in transcriptional activity between low and high levels of nuclear YFP-\u03b2-catenin. Bar\u00a0=\u00a010 \u03bcm.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Plots showing the MS2-GFP average intensity levels measured on active CCND1-MS2 transcription sites during 6 hr in Wnt3a-treated and in mock-treated cells, when (a) the gene was either not transcribing before addition of Wnt3a or mock-treatment (\u2018off\u2019, n(Wnt3a)\u00a0=\u00a027, n(Con)\u00a0=\u00a022) (y axis is \u2018relative intensity\u2019 going from an \u2018off\u2019 state to an \u2018on\u2019 state') or (b) if the gene was already active to begin with (\u2018on\u2019, n(Wnt3a)\u00a0=\u00a037, n(Con)\u00a0=\u00a052) (y axis is the fold change compared to the beginning of the movie). Results were normalized to the intensity at time 0. (c) Combined data from a and b. (d) Boxplot (left) showing the MS2-GFP maximal intensity levels reached on active CCND1-MS2 transcription sites during 6 hr in Wnt3a-treated and in mock-treated cells. In the boxplots, the median is indicated by a red line, the box represents the interquartile range, the whiskers represent the maximum and minimum values, and red dots represent outliers. The histograms (right) show the distribution of maximal intensity levels in these cells (combined data from Figure 8a and Figure 8b [p=2.13e-06]). The histograms show normalized data such that the area of each bar is relative to the number of observations (i.e. graph height is the probability density of the bar value, and graph area is equal to the probability of obtaining the bar value). The sum area of all bars is 1. The data were fitted with a Gaussian curve. (e) Boxplot (left) showing the time required to reach the maximal intensity in Wnt3a-treated and in mock-treated cells. The histograms showing the distribution of this time in these cells (combined data from Figure 8c and Figure 8d\u00a0p=0.69). ***p<0.001, ns = p>0.05.\n\nThese measurements suggested that Wnt3a signaling increases promoter firing events so that more CCND1 mRNAs are transcribed. To further examine this on the single mRNA level, we performed quantitative RNA FISH on CCND1-MS2 mRNA molecules in parallel to measuring \u03b2-catenin nuclear levels within the same single cell (fixed cells). We counted the number of cellular and nascent CCND1-MS2 mRNAs in Wnt3a-treated cells (Figure 8e) and compared this value to the accumulation levels of nuclear \u03b2-catenin in the different cells. Cells that had accumulated \u03b2-catenin had significantly higher numbers of cellular CCND1-MS2 mRNAs (3-fold; Figure 8e,f) and nascent CCND1-MS2 mRNAs (3.8-fold; Figure 8e,g,j), which correlated well with the transcription measurements in living cells (Figure 8\u2014figure supplement 1c). Correlating between cellular and nascent CCND1-MS2 mRNA numbers and \u03b2-catenin levels showed two sub-populations of high- and low-expressing CCND1-MS2 cells, in correlation with nuclear \u03b2-catenin accumulation, respectively (Figure 8h,i). Regarding gene activation, altogether we find that Wnt signaling leads to increased promoter firing frequency, increased gene activity duration time, reduced gene rest time, and significantly higher numbers of mRNAs in the cell.\n\n## Discussion\n\nSignaling factors that translocate into the nucleus following signal transduction do so via different modes of shuttling. For instance, some factors display continuous nucleo-cytoplasmic oscillations (p53, mdm2, NF-\u03baB, ERK) (Purvis and Lahav, 2013; Kalo and Shav-Tal, 2013; Lahav et al., 2004; Shankaran et al., 2009), while some show a rapid and limited pulse of nuclear build-up (NFAT) (Yissachar et al., 2013), or a prolonged presence in the nucleus (MAL) (Cui et al., 2015). These dynamics have been characterized using microscopy studies performed in single cells. Biochemical examination of these dynamics can give a true sense of the time-scales of the accumulation as seen by studying protein levels in Western blots (Hern\u00e1ndez et al., 2012; Lustig et al., 2002). However, such approaches cannot provide an accurate temporal dynamic profile of the response as it unfolds within the cell, since they represent an average picture of the behavior of the whole cell population from which the proteins were extracted (Levsky and Singer, 2003). By characterizing \u03b2-catenin accumulation dynamics in several subcellular compartments within individual living cells, we could examine how varying responses in individual cells translate into a well-timed response of the cell population.\n\nUsing a cell system we previously generated to follow CCND1 transcription in real-time on the single gene level (Yunger et al., 2010), we now measured \u03b2-catenin sub-cellular dynamics, as well as characterized the transcriptional response of CCND1 to Wnt. Even though Wnt/\u03b2-catenin signaling has been highly studied, the basic propagation dynamics of this signal in single living cells have not been characterized. This is due to the lack of an appropriate system that would allow analysis of the behavior of a fluorescent \u03b2-catenin protein that resembles the endogenous protein (Tan et al., 2014). Previous studies using transiently overexpressed \u03b2-catenin and photobleaching methods were important in establishing the characteristics of its intra-cellular mobility (Krieghoff et al., 2006; Jamieson et al., 2011). However, the subcellular distribution of transiently overexpressed fluorescent \u03b2-catenin is different than the endogenous protein, since the overexpressed protein is found throughout the whole cell including the nucleus (even without a signal), membrane staining is lacking, and cytoskeletal organization is disrupted (Krieghoff et al., 2006; Jamieson et al., 2011; Ligon et al., 2001). Even the use of nanobodies targeting endogenous \u03b2-catenin in living cells did not mimic the membrane localization of non-induced cells (Traenkle et al., 2015). Hence, using our cell system in which YFP-\u03b2-catenin was stably expressed at relatively low levels (80% over the endogenous protein) and was distributed similarly to the endogenous protein, we were able to follow the subcellular dynamics of \u03b2-catenin in real-time.\n\nUpon Wnt activation, \u03b2-catenin levels in the cell population portrayed a relatively rapid increase in the cells. The general time-scale of hours of \u03b2-catenin accumulation concurred with Western blotting experiments (Hern\u00e1ndez et al., 2012; Lustig et al., 2002), and altogether portrayed an orchestrated response of the cell population to the Wnt signal. However, examination of the accumulation profiles in single cells showed response patterns deviating from the average behavior in at least 20% of the population; accumulation rates and levels varied, and in some cells additional but less intense waves of \u03b2-catenin nuclear accumulation were observed. We suggest that the balance between accumulation and degradation affects the outcome in \u03b2-catenin build-up in each cell. The Kirschner group has shown (Hern\u00e1ndez et al., 2012) that Wnt does not completely abolish the activity of the destruction complex. We therefore suggest that if the total levels of accumulation are similar in most cells (e.g. integral analysis), then the level of inhibition of the destruction complex is expected to vary in each cell and to determine the response.\n\nHowever, the fact that CCND1 transcriptional activation occurs within the same time frame as the main initial phase of \u03b2-catenin nuclear accumulation means that in most cells in the population, the CCND1 gene will become activated shortly after Wnt activation. Possibly, later phases of \u03b2-catenin nuclear accumulation could have an influence on prolonging CCND1 activity (steady state activity levels return after 6 hr). Indeed, measurements of CCND1 activity in living cells following Wnt activation showed a positive change in several parameters relating to gene activation; not only did the frequency of CCND1 activation in the cell population rise and the time to activate CCND1 shorten, but the levels of CCND1 transcriptional output increased, the timeframe of gene activity became substantially longer, and gene resting periods were shortened. Overall, this means that Wnt signaling increases the number of CCND1 mRNAs generated, by increasing the frequency of RNA polymerase II recruitment to the promoter and by lengthening the time of promoter responsiveness. Interestingly, even when an already active CCND1 gene received the Wnt signal, the levels of gene activity increased.\n\nAlthough we were unable to examine YFP-\u03b2-catenin dynamics and CCND1-MS2 transcription activity simultaneously in living cells, by integrating the measurements of CCND1 transcriptional activity with the measured dynamics of \u03b2-catenin nuclear accumulation from the separate experiments, we found that the rate of change of nuclear \u03b2-catenin correlated well with transcription induction (Figure 9a), specifically during the first rapid phase of nuclear \u03b2-catenin accumulation. This fits in well with a previous study demonstrating that the fold change in \u03b2-catenin nuclear levels is the element affecting target gene activity (Goentoro and Kirschner, 2009), and that the transcriptional machinery is capable of computing the fold change in \u03b2-catenin, thereby determining the transcriptional response (Goentoro and Kirschner, 2009). Similar behavior was observed for the ERK signaling pathway (Cohen-Saidon et al., 2009). Hence, it is not the absolute number of \u03b2-catenin molecules in the nucleus that correlates with transcription rates, but the rate of change of \u03b2-catenin levels over time, and particularly the rapid change during the first phase of induction that elicits the transcriptional effect (Figure 9b). The advantage of such a sensing mechanism would be its ability to buffer out cellular noise and variability in the cell population.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/16748/elife-16748-fig9-v2.jpg)\n\n**Figure 9.:** (a) Plots of the average transcriptional activation kinetics of CCND1-MS2 (red) following Wnt3a activation, compared to the plot of rate of change in \u03b2-catenin nuclear accumulation (green). (b) Scheme of the dynamic changes occurring in the studied cell system following Wnt signaling. Top - from left to right: Levels of \u03b2-catenin (yellow) in the nucleus are normally low but after the\u00a0addition of Wnt3a to the medium a significant and rapid increase in the nucleus is observed, peaking after 2\u20133 hr. \u03b2-catenin levels later decline in the nucleus and cytoplasm due to degradation. While this is the average behavior in the population (e.g. cells 1 and 2), when examining individual cells, different dynamics such as multiple pulsations (e.g. cell 3) and rapid initial accumulation (e.g. cell 4) are observed. \u03b2-catenin levels increase simultaneously at the membrane and at the centrosome. Bottom- \u03b2-catenin induces cyclin D1 transcriptional activity (green dot), and modulation of the\u00a0transcriptional reaction can be observed as the gene reaches higher levels of activity, for longer periods of time. The rate of change in \u03b2-catenin accumulation (blue curve, top), rather than the actual levels of \u03b2-catenin in the nucleus, correlate with the kinetics of transcriptional activation.\n\nConcurrent \u03b2-catenin accumulation the cell membrane and the centrosome were quantified. \u03b2-catenin demarcates the cell outline when there are cell-cell contacts due to its presence in adherens junctions (Harris and Tepass, 2010). Generally, while the nuclear accumulation of \u03b2-catenin has been the focus of Wnt signaling studies, the membrane region has not been considered a major target of the response. However, one study has shown localization of unphosphorylated \u03b2-catenin to the membrane upon Wnt activation within 30 min, in cells lacking E-cadherin, although the function was unclear (Hendriksen et al., 2008). We found increased \u03b2-catenin levels in the membrane following Wnt activation. The punctate membranal pattern persisted during activation, suggesting that Wnt increases the recruitment of \u03b2-catenin to existing adherens junctions. Indeed, \u03b2-catenin dynamics in the membrane showed a relatively slow exchange both before and after Wnt activation, similar to a study conducted in LiCl induced cells (Johnson et al., 2009). This implies long residence times of \u03b2-catenin in the membrane and that potential binding sites for \u03b2-catenin molecules at adherens junctions exist constantly, and only when the protein becomes abundant, do they fill up.\n\nCentrosomal localization of \u03b2-catenin is known (Kaplan et al., 2004; Hadjihannas et al., 2010; Bahmanyar et al., 2008, 2010; Mbom et al., 2014; Huang et al., 2007; Vora and Phillips, 2015). The exact function is not clear and it probably plays a role in regulation of cell separation. It has been suggested that Wnt signaling abolishes the phosphorylation of \u03b2-catenin and leads to centrosome splitting (Hadjihannas et al., 2010). Our study shows for the first time, the highly rapid accumulation rates of \u03b2-catenin at the centrosome in real-time, following Wnt signaling. \u03b2-catenin at the centrosome is highly mobile as seen in our FRAP study and in another (Bahmanyar et al., 2008). Interestingly, we identified a connection between the membranal and centrosomal \u03b2-catenin fractions. Puncta of membranal \u03b2-catenin were detected moving relatively slowly from the membrane region and ending up at the centrosome, sometimes several in parallel in the same cell. Since unphosphorylated \u03b2-catenin is found in the membrane after Wnt (Hendriksen et al., 2008), we can postulate that the \u03b2-catenin fraction moving to the centrosome is unphosporylated, and may be involved in driving cell division.\n\nNotably, our study also provides a temporal view of \u03b2-catenin dynamics in single cells under conditions of LiCl activation. Although LiCl is considered a chemical that mimics Wnt activation and increases \u03b2-catenin levels in the nucleus, it is obvious that the dynamics, build-up rates and levels of \u03b2-catenin in all subcellular compartments were dramatically exaggerated and unregulated in comparison to Wnt activation. This should be taken into account when inferring information regarding Wnt signaling and \u03b2-catenin from LiCl treatment.\n\nThe Wnt pathway has been implicated in cell cycle regulation, and levels of phosporylated \u03b2-catenin oscillate and increase towards mitosis (Davidson and Niehrs, 2010; Hadjihannas et al., 2012). Examining cells that had undergone mitosis after Wnt activation, did not show a pattern of \u03b2-catenin levels in daughter cells, nor did Fucci labeling uncover a cell cycle pattern of \u03b2-catenin accumulation following Wnt. This suggests that Wnt-induced nuclear accumulation is not cell cycle dependent.\n\nThe propagation of a signal from a membrane receptor to the gene promoter can follow different types of kinetics. Single-cell analysis revealed significant variability in the dynamics of \u03b2-catenin nuclear buildup, but also that most cells did finally accumulate the same total level of \u03b2-catenin over time. This behavior is quite different than the serum activation pathway that activates \u03b2-actin via MAL shuttling (Kalo et al., 2015). \u03b2-actin transcriptional activation begins less than 5 min after serum addition, and \u03b2-actin alleles respond in the same manner and same time-frame; i.e. variability of the response in single cells is low. Hence, some signaling cascades must relay the information rapidly and tightly since this will lead to the translation of a highly required protein, e.g. \u03b2-actin, to generate a protein that is required for cell motility in response to environmental sensing (Kislauskis et al., 1994; Latham et al., 1994). Other pathways such as Wnt/\u03b2-catenin may also signal to activate gene expression, but their response emerges much later, probably since the required biological outcomes, such as cell proliferation, require more regulation points. The changes in \u03b2-catenin levels in response to Wnt, in several subcellular compartments, indicate that the signaling pathway does not only activate gene expression but is involved in additional processes. Further studies should reveal the exact roles of these subpopulations of \u03b2-catenin in response to signal transduction.\n\n## Materials\u00a0and\u00a0methods\n\n### Cells and transfections\n\nHEK293 Flp-in CCND1-MS2 cells (Yunger et al., 2010) were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Biological Industries, Israel) containing 10% FBS (HyClone Laboratories,\u00a0Logan,\u00a0UT) and hygromycin selection (100 \u00b5g/ml; Sigma,\u00a0Israel). Stable expression of MS2-GFP was obtained by co-transfection of the cells with MS2-GFP (10 \u00b5g) and puromycin resistance (300 ng) plasmids using calcium phosphate transfection, and selection with puromycin (1 \u03bcg/ml; Invivogen, San Diego, CA) and hygromycin (100 \u00b5g/ml). Stable expression of YFP-\u03b2-catenin (Krieghoff et al., 2006) (10 \u00b5g) was performed by calcium phosphate transfection, and selection with neomycin (500 \u03bcg/ml; Sigma) and hygromycin (100 \u00b5g/ml). Cells with very low expression levels were collected by FACS (FACSAria III, BD Biosciences). Transient expression of YFP-\u03b2-catenin was performed using PolyJET (SignaGen,\u00a0Israel).\n\nFor generating Wnt3a conditioned medium (CM) and mock CM, L-Wnt-3A and L- mouse fibroblast cells were grown in DMEM and 10% FBS, and CM was prepared according to the\u00a0American Tissue Culture Collection (ATCC) instructions (Shibamoto et al., 1998). Wnt activation was performed with either Wnt3a-CM or with recombinant human Wnt3a (200 ng/ml; R& D Systems,\u00a0Minneapolis, MN). Wnt3a-CM or mock-CM were added 1:1 to the volume of the cells medium. Cells were also treated with LiCl (20 mM; Sigma) and MG132 (20 \u00b5M; Sigma).\n\nThe Fucci system (Clontech, Mountain View, CA) was used for cell cycle phase detection. For G1 phase detection, the pRetroX-G1-Red vector (mCherry-hCdt1) was used, and for S/G2/M phase the pRetroX-SG2M-Cyan vector (AmCyan-hGeminin). The Fucci system, being a viral-based system first required the introduction of the mouse ecotropic retroviral receptor on the membrane surface of HEK293 CCND1-MS2 cells expressing YFP-\u03b2-catenin. Transient transfection was performed 24 hr prior to infection using PolyJet transfection with the pBABE ecotropic receptor plasmid (Addgene #10687, Cambridge,\u00a0MA). This step was performed twice for each infection. After mCherry-hCdt1 infection, mCherry positive cells were collected by FACS and maintained in medium containing puromycin (1 \u03bcg/ml; Invivogen). Cells were then transfected with the pBABE ecotropic receptor plasmid and 24 hr post-transfection, the cells infected with AmCyan-hGeminin. Positive cells were collected by FACS and maintained in medium containing neomycin (500 \u03bcg/ml) and puromycin (1 \u03bcg/ml). For infections, HEK293T cells were maintained in DMEM containing 10% FBS and used to package the Fucci retroviruses, which were collected over a period of three days before infecting the ecotropic HEK293 cells.\n\n### Western blotting\n\nSDS-PAGE and Western blotting were performed as previously described (Aizer et al., 2008). Primary antibodies used were mouse anti-\u03b2-catenin (BD Transduction Laboratories, cat# 610154,\u00a0San Jose, CA) and rabbit anti-tubulin (Abcam,\u00a0Cambridge,\u00a0MA). The secondary antibody was an HRP-conjugated goat anti-rabbit or anti-mouse IgG (Sigma). Immunoreactive bands were detected by the Enhanced Chemiluminescence kit (ECL, PierceThermo scientific,\u00a0Waltham, MA). Experiments were performed three times.\n\n### Luciferase assay\n\nHEK293 CCND1-MS2 cells were co-transfected with the cyclin D1 promoter \u22121745CD1LUC Firefly luciefarse construct (Albanese et al., 1995) and either YFP-\u03b2-catenin or eYFP-C1 (mock), together with a Renilla luciferase construct using PolyJet transfection. 50 ng of each plasmid were used. A luciferase assay was performed after 24 hr using the Dual-Glo Luciferase assay system (Promega,\u00a0Madison,\u00a0WI). After standardization with Renilla luciferase activity, a relative luciferase activity was obtained and the mean and standard deviation from triplicate wells was calculated. Each experiment was performed three times. YFP-\u03b2-catenin (Krieghoff et al., 2006) was obtained from\u00a0J\u00fcrgen Behrens (University of Erlangen-N\u00fcrnberg).\n\n### Flow cytometry\n\nCells were harvested and DNA quantification was performed using 5 \u03bcg/ml DAPI solution (Sigma). The BD FACSAria III cell sorter was used. For quantifying DNA in fixed cells, we used a 405 nm laser for excitation and a 450/40 nm bandpass filter for detection. Data were processed and analyzed using FlowJo software. The average quantification of 3 repeated experiments is presented (mean\u00a0\u00b1\u00a0sd).\n\n### Immunofluorescence\n\nCells were grown on coverslips coated by Cell-Tak (BD Biosciences), washed with PBS and fixed for 20 min in 4% PFA. Cells were then permeabilized in 0.5% Triton X-100 for 3 min. After blocking, cells were immunostained for 1 hr with a primary antibody, and after subsequent washes the cells were incubated for 1 hr with secondary fluorescent antibodies. Primary antibodies: mouse anti-\u03b2-catenin and rabbit anti-pericentrin (Abcam, cat# ab4448). Secondary antibodies: Alexa488-labeled goat anti-mouse IgG and Alexa594-labeled goat anti-rabbit (Invitrogen,\u00a0Carlsbad, CA). Nuclei were counterstained with Hoechst 33342 (Sigma) and coverslips were mounted in mounting medium.\n\n### Fluorescence in situ hybridization\n\nCCND1-MS2 cells were grown on coverslips coated by Cell-Tak (BD Biosciences) and fixed for 20 min in 4% paraformaldehyde, and overnight with 70% ethanol at 4\u00b0C. The next day cells were washed with 1x PBS and treated for 2.5 min with 0.5% Triton X-100. Cells were washed with 1x PBS and incubated for 10 min in 40% formamide (4% SSC; Sigma). Cells were hybridized overnight at 37\u00b0C in 40% formamide with a specific fluorescently-labeled Cy3 DNA probe (~10 ng probe, 50 mer). The next day, cells were washed twice with 40% formamide for 15 min and then washed for two hours with 1X PBS. Nuclei were counterstained with Hoechst 33342 and coverslips were mounted in mounting medium. The probe for the MS2 binding site was:\n\nCTAGGCAATTAGGTACCTTAGGATCTAATGAACCCGGGAATACTGCAGAC.\n\n### mRNA quantification\n\n3D stacks (0.2 \u00b5m steps, 76 or 51 planes) of the total volume of the cells were collected from fixed CCND1-MS2 cells. The 3D stacks were deconvolved and the specific signals of mRNAs were identified (Imaris, Bitplane). mRNA identification was performed in comparison to deconvolved stacks from cells not containing the MS2 integration, which therefore served as background levels of nonspecific fluorescence. No mRNAs were identified in control cells. The sum of intensity for each mRNA particle and active alleles was measured in the same cells using Imaris, as previously described (Yunger et al., 2010, 2013). The single mRNA intensities were pooled and the frequent value was calculated. The sum of intensity at the transcription site was divided by the frequent value of a single mRNA. This ratio provided the number of mRNAs associated with the transcription unit from the point of the MS2-region and onwards. As mRNAs should be associated with a polymerase, this number should reflect the maximum number of polymerases engaged with this region. Quantification and counting experiments were applied to experiments performed on different days.\n\n### Fluorescence microscopy, live-cell imaging and data analysis\n\nWide-field fluorescence images were obtained using the Cell^R system based on an Olympus IX81 fully motorized inverted microscope (60X PlanApo objective, 1.42 NA) fitted with an Orca-AG CCD camera (Hamamatsu) driven by the Cell^R software. Live-cell imaging was carried out using the Cell^R system with rapid wavelength switching. For time-lapse imaging, cells were plated on glass-bottomed tissue culture plates (MatTek, Ashland, MA) coated by Cell-Tak (BD Biosciences) in medium containing 10% FBS at 37\u00b0C. The microscope is equipped with an incubator that includes temperature and CO2 control (Life Imaging Services, Reinach, Switzerland). For long-term imaging, several cell positions were chosen and recorded by a motorized stage (Scan IM, M\u00e4rzh\u00e4user, Wetzlar-Steindorf, Germany). In these experiments, HEK293 Flp-in CCND1-MS2 expressing MS2-GFP cells were imaged in 3D (26 planes per time point) every 15 min, at 0.26 \u00b5m steps for 6 hr. HEK293 Flp-in CCND1-MS2 cells expressing YFP-\u03b2-catenin were imaged in 3D (15 planes per time point) at 0.7 \u00b5m steps, every 15 min, up to 18 hr. For presentation of the movies, the 4D image sequences were transformed into a time sequence using the maximum or sum projection options or manually selecting the in-focus plane using the ImageJ software. Time-lapse data were collected from single cells in several fields and on several days until reaching an appropriate sample size, and then all single-cell data were pooled and either averaged and presented as plots, or presented as single cell data.\n\n### Tracking and data analysis\n\nThe intensity of the active transcription sites labeled with MS2-GFP fluorescence in time-lapse movies was corrected for photobleaching using ImageJ, and the 3D movies were transformed to 2D by choosing the in-focus plane in which the intensity of the transcription site is the highest. Movies were manually tracked and the intensity measured for each frame (Is). Background from another location in the nucleus (In) was subtracted for each frame, and the final intensity was calculated using: I = Is(t) \u2212 In(t) and then normalized to the initial intensity.\n\nMeasuring the intensity of the YFP-\u03b2-catenin signal in the subcellular compartments was performed manually using ImageJ, and background was subtracted from all measurements. When YFP-\u03b2-catenin levels were low, DIC images that were acquired in parallel were used for nucleus detection. For measurements of centrosome intensity, the intensity of the centrosome in each frame (Ic) was multiplied by the area occupied by the centrosome (Ac): I = Ic(t) *Ac(t). For membrane intensity, a sum projection of the 3D movies was used.\n\nIntensity was normalized either to the initial frame or to the highest intensity measured. The\u00a0values of the nucleus/cytoplasm (N/C) ratio of YFP-\u03b2-catenin were obtained by division of the YFP-\u03b2-catenin intensity levels measured. Correlation coefficient values were calculated by comparing the intensity of \u03b2-catenin over time between all possible pairs of sub-cellular compartments, from\u00a0Wnt activation onset. Values of rate of change ($\u0394I/\u0394t$) in YFP-\u03b2-catenin in the sub-cellular compartments over time were obtained by measuring the intensity difference ($\u0394I$) between two consecutive time points divided by the time difference ($\u0394t$) between the two time points:\n\n$$\n\\frac{\u0394I}{\u0394t\u00a0_{(t)n+\\frac{1}{2}}}=\\frac{I_{(t)n+1}\u2212I_{(t)n}}{t_{n+1}\u2212t_{n}}\n$$\n\n### FRAP and FLIP\n\nFRAP and FLIP experiments were performed using a 3D-FRAP system (Photometrics) built on an Olympus IX81 microscope (636 Plan-Apo, 1.4 NA) equipped with an EM-CCD (Quant-EM, Roper), 491 nm laser, Lambda DG-4 light source (Sutter), XY and Z stages (Prior), and driven by MetaMorph (Molecular Devices). Experiments were performed at 37\u00b0C with 5% CO2 using a live-cell chamber system (Tokai). For each acquisition, YFP-\u03b2-catenin was bleached using the 491 nm laser. Six pre-bleach images were acquired. In FRAP, post-bleach images were acquired every 0.8 s for 80 s in the cytoplasm and the nucleus, every 1 s for 2 min in adherens junctions, every 0.4 s for 40 s at the centrosome, and every 1.5 s for 8 min to measure nuclear import and export rates. In FLIP, images were acquired every 1.9 s for 280 s in the cytoplasm and the nucleus. The experiments were analyzed using ImageJ macros previously described (Aizer et al., 2008). Data from at least 10 experiments for each cell line were collected and the averaged FRAP and FLIP measurements were fitted by Matlab with a double exponential model:\n\n$$\n\u00a0\u00a0I(t)=\\alpha_{1}*exp(\u2212\\tau_{1}*t)+\\alpha_{2}*exp(\u2212\\tau_{2}*t)+c\n$$\n\nWhere\u00a0$t$\u00a0=\u00a00 is the time immediately after photobleaching.\n\n$t_{0.5}$ was defined as time where $I(t=t_{0.5})=\\frac{I(t=\u221e)}{2}.$\n\n### Modeling \u03b2-catenin dynamics\n\nWe used a simple model for describing \u03b2-catenin concentration ($C$) dynamics in the nucleus based on the data presented in the plot from Figure 2c:\n\n$$\n\\frac{dC}{dt}=P(t)\u2212\\alpha(t)C\n$$\n\nWhere $\\alpha$ is the time dependent degradation rate, and $P$ is the time dependent production rate. Both rates are allowed to change when $t=T$:\n\n$$\n\\alpha(t)={\\alpha_{1};fort\\leqT\\alpha_{2};fort>T\n$$\n\n\n\n$$\nP(t)={P_{1};fort\\leqTP_{2};fort>T\n$$\n\nThe solution is:\n\n$$\nC(t)={[C(0)\u2212\\frac{P_{1}}{\\alpha_{1}}]\u2217e^{\u2212\\alpha_{1}\u2217t}+\\frac{P_{1}}{\\alpha_{1}};\u00a0for\u00a0t\\leqT\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0[C(T)\u2212\\frac{P_{2}}{\\alpha_{2}}]\u2217e^{\u2212\\alpha_{2}\u2217(t\u2212T)}+\\frac{P_{2}}{\\alpha_{2}};\u00a0for\u00a0t>T\n$$\n\nWhere:\n\n$$\nC(T)=[C(0)\u2212\\frac{P_{2}}{\\alpha_{1}}]*e^{\u2212\\alpha_{1}*t}+\\frac{P_{2}}{\\alpha_{1}}\n$$\n\nWe fit the model by minimizing the sum of the squares of the residuals with the function \u2018fmincon\u2019 in MATLAB using the \u2018active-set\u2019 algorithm.\n\n### Statistical analysis\n\nTwo tailed t-test was performed in the following experiments: Quantitative FISH, Luciferase assay, the\u00a0N/C ratio of YFP-\u03b2-catenin and live cell analysis. A Mann\u2013Whitney test was performed in FRAP and FLIP experiments (Supplementary file 1).\n",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "13c64a1f-4939-4d1c-aca4-177d446f085a",
+      "submission_id": "6b1572d8-d3d7-46a3-9032-3b4ae249f20f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robert H Singer, Albert Einstein College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16748.035](https://doi.org/10.7554/eLife.16748.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Signaling to gene induction dynamics yield varying reactions in single cells forming a coordinated population response\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. There agree a considerable number of requirements for revisions. If you are not able to submit the revised version within about two months, we will consider the manuscript as a resubmission rather than a revision.\n\nSummary:\n\nThe authors investigate the intracellular dynamics of \u03b2-catenin, and the transcriptional response of a downstream promoter, following Wnt signaling. Both aspects are studied in individual live cells, using a YFP\u2010tagged version of the protein and an MS2-GFP labeled version of the RNA. Mapping the \"signaling-to-gene-induction dynamics\" (as promised in the title) is indeed an important goal.\n\nEssential revisions:\n\n1) Combine the two reporter systems in the same cell. This is essential because there is no single-cell measurement of how \u03b2-catenin dynamics and transcription are related, which is the whole premise of the paper.\n\n2) Quantify the kinetics of nuclear import/export e.g. by measuring the rate of change in nuclear-to-cytoplasmic ratio (or difference).\n\n3) Simplify the title to better reflect the main findings of the manuscript.\n\n4) The manuscript should be simplified, especially the Introduction.\n\n5) Demonstrate at the single cell level whether in a cell nucleus accumulating YFP-\u03b2-catenin, an increased CCND1 transcription can be observed at the same time and to same extent.\n\n6) Use a cell line in which the FP tag is knocked in to the wild type \u03b2-catenin locus. At minimum, the two-fold total amount of \u03b2-catenin in the cells has to be clearly stated.\n\n7) Figure 2\u2014\u2014figure supplement 1: Plot normalized fluorescence intensity in the cytoplasm for the same period as for the recovery time in the nucleus. If there is no import, it should be a flat line.\n\nReviewer #1:\n\nThe authors investigate the intracellular dynamics of \u03b2-catenin, and the transcriptional response of a downstream promoter, following Wnt signaling. Both aspects are studied in individual live cells, using a YFP\u2010tagged version of the protein and an MS2-GFP labeled version of the RNA. Mapping the \"signaling-to-gene-induction dynamics\" (as promised in the title) is indeed an important goal. I was therefore excited about reading the paper. Unfortunately, I ended up rather disappointed, since I felt that the promise was not fulfilled:\n\n1) Most conspicuously, the authors never actually combine the two reporter systems in the same cell. Thus, there is no single-cell measurement of how \u03b2-catenin dynamics and transcription are related, which a-priori seemed like the whole premise of the paper. Even in the Discussion, the authors still state that their approach \"combines the real\u2010time measurements of the signaling protein factor together with gene activity readout in individual living cells\". How so?\n\n2) There are other instances where the data doesn't match up to the verbal statements. For example, the authors repeatedly mention \"the kinetics of nuclear clearance\", \"shuttling in and out of the nucleus\", or the \"very slow egress\" of the protein, but the kinetics of nuclear import/export are never quantified, e.g. by measuring the rate of change in nuclear-to-cytoplasmic ratio (or difference). Why is that?\n\n3) The manuscript is also overly long. The Introduction, for example, reads like part of a review article-it broadly surveys the field rather than leading the narrative to the specific questions that will be addressed in the work. Elsewhere, there are multiple occurrences of ambiguous statements. Even the title, to me, is ambiguous unless some hyphens and commas are added. Thus, significant re-writing should be done if the manuscript is accepted.\n\nReviewer #2:\n\n1) The title needs to be simplified and it should better reflect the main findings of the manuscript.\n\n2) The manuscript would benefit from simplification. It contains too much data that will prevent the general reader from following the flow of the results and their importance. For example is Figure 8 absolutely necessary?\n\n3) The authors aim is to understand by which mechanism a signalling pathway acting at the cell population level is creating variability in responses at the single cell level. However, this question is not fully answered in this manuscript (see also comment 7).\n\n4) Figure 1E: The authors carry out experiments to verify whether the YFP-\u03b2-catenin behaves and is localised similarly to the endogenous protein. Their assays seem to indicate that the addition of Wnt3a has the same effect on the expression of YFP-\u03b2-catenin as it has on the endogenous \u03b2-catenin. In contrast, the addition of LiCl seems to induce a higher expression of YFP-\u03b2-catenin than that of the endogenous \u03b2-catenin. (The error bars in the quantification histogram of the LiCl WB are quite big, are these significant?). Following these experiments the authors conclude that the exogenously expressed YFP-\u03b2-catenin can be used in the further experiments as it behaves similarly to the endogenous protein. Nevertheless, in these YFP-\u03b2-catenin cells the total amount of \u03b2-catenin is the double than that in wild type cells and this \u03b2-catenin overexpression could lead to misinterpretations.\n\n5) Along the same lines the authors write, \"YFP-catenin is equal to endogenous levels\". As mentioned above, this means that there is a 2x fold increase in the total amount of \u03b2-catenin protein that can influence the results obtained with YFP-\u03b2-catenin and especially by those studying the target gene activation. At present the authors give the impression that the study is performed in a system in which the total \u03b2-catenin is at endogenous levels. It would be better to use a cell line in which the FP tag is knocked in to the wild type \u03b2-catenin locus. At minimum, the two-fold total amount of \u03b2-catenin in the cells has to be clearly stated.\n\n6) Figure 2\u2014figure supplement 1: Normalized fluorescence intensity in the cytoplasm should be plotted for the same period as for the recovery time in the nucleus. If there is no import, it should be a flat line.\n\n7) Figure 9: In this last figure the authors present a model that is supposed to summarize their findings. While in a cell population they can show that CCND1 transcription is lasting longer than YFP-\u03b2-catenin accumulation in the nuclei of the cells, they fail to demonstrate at the single cell level whether in a YFP-\u03b2-catenin accumulating cell nucleus an increased CCND1 transcription can be observed at the same time and to same extent. This is a potential weakness of the manuscript that is also reflected in the model, where one does not know in which \u03b2-catenin-containing/expressing nucleus the CCND1 transcription is increased, when comparing the cells drawn in the upper row and in the lower row. Would it be possible to quantify the CCND1 transcription in the YFP-\u03b2-catenin containing nuclei and correlate the CCND1 expression with the YFP-\u03b2-catenin signal in a single cell based measurement series?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Quantifying \u03b2-catenin subcellular dynamics and gene expression kinetics during Wnt signaling in single living cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWhile both reviewers agree that the manuscript is improved, in the ensuing discussion they both also agree that the two reporters in the same cell is a requirement not met. One raises the possibility to modify your conclusions to accommodate this omitted data, the other feels that it is necessary but would agree to oversee a modified manuscript that does not depend on this experiment.\n\nWe all feel the manuscript would be much stronger with the experiment than without, but it's up to you how you want to handle this revision.\n\nReviewer #1:\n\nI do not think that the authors have improved the paper sufficiently to warrant publication. Specifically:\n\n1) The main request, to \"combine the two reporter systems in the same cell\", was not fully met. What the authors did was simultaneously measure \u03b2-catenin (protein) and CCND1 (RNA) in FIXED cells. While this measurement can potentially provide useful information, it falls short of the goal of detecting, and correlating, both species in real-time in live cells.\n\nThe way the authors analyze the protein/RNA data also seems strange. They count the total number of CCND1-MS2 RNA molecules per cell and correlate it with the nuclear level of \u03b2-catenin (Figure 8E, F, G). However, the total cellular count represents the accumulation of RNA over the lifetime of RNA molecules, which could be hours. To probe the regulatory relation between protein concentration and transcriptional activity, the authors should have instead examined the probability of active transcription, or the amount of nascent RNA, just as they did earlier in Figure 1.\n\n2) The text needs to be edited and proofread. Proofreading by an English speaker would have helped in some instances (single/plural, misuse of verbs, etc.), but in other instances this is a matter of ambiguous and confusing statements. The editorial team will have to address this problem if the manuscript is chosen for publication. To give just one example, the title, \"Quantifying \u03b2-catenin subcellular dynamics and gene expression kinetics\" implies that both the subcellular dynamics and the gene expression kinetics are those of \u03b2-catenin, but this is not actually the case.\n\nReviewer #2:\n\nThe authors answered (more or less) my comments and made most of the suggested improvements. The manuscript is considerably improved.\n",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d72c586-4462-44de-b6da-cbc161d5acf0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C1",
+      "claim": "Wnt signaling orchestrates a response through nuclear accumulation of \u03b2-catenin in the cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signaling orchestrates a response through nuclear accumulation of \u03b2-catenin in the cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general characterization of Wnt signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "1f9e87ed-f9cf-4fcb-a742-0ee8ee570adf",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C2",
+      "claim": "Quantitative live-cell measurements in individual cells showed variability in nuclear \u03b2-catenin accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, quantitative live-cell measurements in individual cells showed variability in nuclear \u03b2-catenin accumulation, which could occur in two waves, followed by slow clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the live-cell imaging experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "0a76ba20-e530-45db-844f-6acdc90843ab",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C3",
+      "claim": "Nuclear \u03b2-catenin accumulation could occur in two waves, followed by slow clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, quantitative live-cell measurements in individual cells showed variability in nuclear \u03b2-catenin accumulation, which could occur in two waves, followed by slow clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the live-cell imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bcee55d9-360d-4c47-978a-b136c7eb2df0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C4",
+      "claim": "Nuclear accumulation dynamics were initially rapid.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear accumulation dynamics were initially rapid, cell cycle independent and differed substantially from LiCl stimulation, presumed to mimic Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the quantitative analysis of \u03b2-catenin dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "48097971-1459-42cf-af9c-779754d85e9d",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C5",
+      "claim": "Nuclear accumulation dynamics were cell cycle independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear accumulation dynamics were initially rapid, cell cycle independent and differed substantially from LiCl stimulation, presumed to mimic Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments using the Fucci cell cycle markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "db924c65-3afd-469e-97db-9f58bc2e1222",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C6",
+      "claim": "Nuclear accumulation dynamics differed substantially from LiCl stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear accumulation dynamics were initially rapid, cell cycle independent and differed substantially from LiCl stimulation, presumed to mimic Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through comparative experiments between Wnt3a and LiCl treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "8d0d34b4-463d-457f-89cd-ef03e54f0360",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C7",
+      "claim": "LiCl stimulation is presumed to mimic Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear accumulation dynamics were initially rapid, cell cycle independent and differed substantially from LiCl stimulation, presumed to mimic Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a commonly held assumption in the field, referenced in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "db6f066e-ba4d-45d6-acbc-cac5193d7aa7",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C8",
+      "claim": "\u03b2-catenin levels increased simultaneously at adherens junctions and the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin levels increased simultaneously at adherens junctions and the centrosome, and a membrane-centrosome transport system was revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed through live-cell imaging and quantification of \u03b2-catenin in different subcellular compartments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "7c168129-46bb-41ad-808c-924068a63ba0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C9",
+      "claim": "A membrane-centrosome transport system was revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin levels increased simultaneously at adherens junctions and the centrosome, and a membrane-centrosome transport system was revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through tracking of \u03b2-catenin puncta moving from membrane to centrosome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "b93e10db-1e18-4567-a83e-7d1ee45e0588",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C10",
+      "claim": "The nuclear accumulation rate of change of \u03b2-catenin, and not actual protein levels, correlated with the transcriptional output of the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlating \u03b2-catenin nuclear dynamics to cyclin D1 transcriptional activation showed that the nuclear accumulation rate of change of the signaling factor, and not actual protein levels, correlated with the transcriptional output of the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from correlating \u03b2-catenin dynamics with CCND1 transcription measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "b7cd4f57-9151-4902-bc90-7f390bbd96a1",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C11",
+      "claim": "After 75 min of Wnt3a treatment, over 80% of cells showed an actively transcribing CCND1-MS2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, on the population level, after 75 min over 80% of cells had shown an actively transcribing CCND1-MS2 gene (Figure 1a,b, Supplementary file 1a, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from live-cell imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "c5f00702-0118-4584-9baf-101a870509c4",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C12",
+      "claim": "At steady state, only around 40\u201350% of cells were actively transcribing CCND1-MS2.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, only around 40\u201350% of the cells were actively transcribing CCND1-MS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cell system under non-stimulated conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "08959221-de2c-480e-b5b5-497c356ad19a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C13",
+      "claim": "Endogenous \u03b2-catenin is prominent at the cell membrane in untreated HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence showing that endogenous \u03b2-catenin (green) is prominent at the cell membrane in untreated HEK293 cells (top) and accumulates in the cytoplasm and nucleus following activation by Wnt3a for 2 hr (bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through immunofluorescence imaging in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "50a7886c-313f-4089-b5f7-1a733fc0f398",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C14",
+      "claim": "Endogenous \u03b2-catenin accumulates in the cytoplasm and nucleus following activation by Wnt3a for 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence showing that endogenous \u03b2-catenin (green) is prominent at the cell membrane in untreated HEK293 cells (top) and accumulates in the cytoplasm and nucleus following activation by Wnt3a for 2 hr (bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunofluorescence in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bac7cada-e37a-4459-af35-8c1f87130510",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C15",
+      "claim": "YFP-\u03b2-catenin expression levels were ~80% of the endogenous \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of endogenous \u03b2-catenin and YFP-\u03b2-catenin accumulation levels by Western blotting showed that YFP-\u03b2-catenin expression levels were ~80% of the endogenous \u03b2-catenin, thus doubling \u03b2-catenin levels in the cell, and that the accumulation dynamics of both proteins were identical (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from Western blot analysis shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "fc0ef233-2b7c-4dde-932a-0f32ed315951",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C16",
+      "claim": "The accumulation dynamics of endogenous \u03b2-catenin and YFP-\u03b2-catenin were identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of endogenous \u03b2-catenin and YFP-\u03b2-catenin accumulation levels by Western blotting showed that YFP-\u03b2-catenin expression levels were ~80% of the endogenous \u03b2-catenin, thus doubling \u03b2-catenin levels in the cell, and that the accumulation dynamics of both proteins were identical (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Western blot time course analysis in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "e89c8814-1884-47cc-a35d-10aa2df1248d",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C17",
+      "claim": "Rising levels of \u03b2-catenin in the cytoplasm and the nucleus were detected 15 min after Wnt3a addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Rising levels of \u03b2-catenin in the cytoplasm and the nucleus were detected 15 min after Wnt3a addition, and the accumulation peak was observed 2\u20133 hr later (Figure 2c), during which \u03b2-catenin levels increased 3-fold compared to the initial state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from live-cell imaging data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "c84758b4-3221-4076-9d4c-5455062b343a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C18",
+      "claim": "The accumulation peak of \u03b2-catenin was observed 2\u20133 hr after Wnt3a addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Rising levels of \u03b2-catenin in the cytoplasm and the nucleus were detected 15 min after Wnt3a addition, and the accumulation peak was observed 2\u20133 hr later (Figure 2c), during which \u03b2-catenin levels increased 3-fold compared to the initial state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the time course data in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "002be65a-3820-4b98-bcb3-e908fa9fc35a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C19",
+      "claim": "\u03b2-catenin levels increased 3-fold compared to the initial state during the accumulation peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Rising levels of \u03b2-catenin in the cytoplasm and the nucleus were detected 15 min after Wnt3a addition, and the accumulation peak was observed 2\u20133 hr later (Figure 2c), during which \u03b2-catenin levels increased 3-fold compared to the initial state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the live-cell imaging measurements in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "0c2dd25c-34ae-404b-844b-c70f996fe65e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C20",
+      "claim": "The rate at which \u03b2-catenin levels increased in the nucleus was faster than in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate at which \u03b2-catenin levels increased in the nucleus was faster than in the cytoplasm, leading to a higher nucleus/cytoplasm (N/C) protein ratio, whereas in the control cells there was no change (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the rate of change analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ca37b17e-1cae-4caa-a5a8-263fb7cf1f6a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C21",
+      "claim": "\u03b2-catenin accumulation was comprised of two phases: an initial rapid phase and a second accumulation phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the rate of change in \u03b2-catenin levels in the nucleus and cytoplasm over time (\u0394I/\u0394t) showed that the accumulation was comprised of two phases; an initial rapid one, in which the peak of the change in accumulation was reached 60 min after induction, and a second accumulation phase in which cellular \u03b2-catenin continued to amass but at a declining rate up until 180 min (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from the rate of change analysis in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "8198a083-68b4-45c9-8077-507bcb7bbc43",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C22",
+      "claim": "The peak of the change in \u03b2-catenin accumulation was reached 60 min after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the rate of change in \u03b2-catenin levels in the nucleus and cytoplasm over time (\u0394I/\u0394t) showed that the accumulation was comprised of two phases; an initial rapid one, in which the peak of the change in accumulation was reached 60 min after induction, and a second accumulation phase in which cellular \u03b2-catenin continued to amass but at a declining rate up until 180 min (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the rate of change data in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "8269a685-86ed-4bbb-97db-472cebda00aa",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C23",
+      "claim": "The import rate of \u03b2-catenin under Wnt3a conditions was more rapid than transient overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics were relatively slow, however, the import rate under Wnt3a conditions was more rapid than transient overexpression, showing the advantage of measurements performed at low expression conditions (Figure 2\u2014figure supplement 1a,b, Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through FRAP experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "3860b025-ef01-439f-b657-200d1097d26a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C24",
+      "claim": "The rate of \u03b2-catenin shuttling out from the nucleus was slower than the import rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we photobleached the cytoplasm and found that the rate of \u03b2-catenin shuttling out from the nucleus was slower than the import rate (Figure 2\u2014figure supplement 1a bottom, c, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured through FRAP experiments in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ca3fc8a2-a13c-4b48-94da-b332a2bc7675",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C25",
+      "claim": "LiCl caused \u03b2-catenin nuclear and cytoplasmic accumulation with completely different dynamics than Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, LiCl caused \u03b2-catenin nuclear and cytoplasmic accumulation, but the dynamics were completely different than Wnt3a (Figure 3\u2014figure supplement 1a,b, and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through comparative live-cell imaging experiments in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "09263e33-ca1d-4502-8e4d-c279f6d89449",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C26",
+      "claim": "\u03b2-catenin accumulation occurred synchronously and continuously throughout 10\u201311 hr in all cells treated with LiCl.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin accumulation occurred synchronously and continuously throughout 10\u201311 hr in all cells, and only then did the accumulation cease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the LiCl treatment time course experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "cc7e0d79-0bb3-4f19-aaa6-173c717f374b",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C27",
+      "claim": "The levels of \u03b2-catenin were 4-fold higher in LiCl treated cells compared to Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of \u03b2-catenin were 4-fold higher in LiCl treated cells compared to Wnt3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from the comparative analysis of LiCl and Wnt3a treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "d016b039-8e5a-4c2c-aa95-6f2520de8e9e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C28",
+      "claim": "\u03b2-catenin degradation had a characteristic time of 2.75 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin degradation had a characteristic time of 2.75 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the mathematical modeling of \u03b2-catenin dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bf216f86-a4e3-460b-b8e8-81454fbcbbcf",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C29",
+      "claim": "~80% of the cells showed similar \u03b2-catenin dynamics in response to Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster analysis of the dynamic behavior of \u03b2-catenin in individual living cells, shows the dramatic difference between Wnt signaling activation by Wnt3a compared to LiCl (Figure 4a; membrane and centrosome will be discussed below). ~80% of the cells showed similar dynamics (e.g. Figure 2c) and ~20% portrayed different behavior patterns (e.g. Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from cluster analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "c32e7cc4-f536-4691-ba25-03f5bb1c9a78",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C30",
+      "claim": "~20% of cells portrayed different \u03b2-catenin behavior patterns in response to Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster analysis of the dynamic behavior of \u03b2-catenin in individual living cells, shows the dramatic difference between Wnt signaling activation by Wnt3a compared to LiCl (Figure 4a; membrane and centrosome will be discussed below). ~80% of the cells showed similar dynamics (e.g. Figure 2c) and ~20% portrayed different behavior patterns (e.g. Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from cluster analysis in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "22fbda55-1622-4b6f-8489-63d312cc523f",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C31",
+      "claim": "The first cycle of \u03b2-catenin accumulation lasted 360 min on average.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the first cycle of accumulation lasted 360 min on average and the second cycle 180 min on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from cells showing two cycles of nuclear accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "6621d54b-4333-4c45-ac64-cf5bdcbfdc17",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C32",
+      "claim": "The second cycle of \u03b2-catenin accumulation lasted 180 min on average.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the first cycle of accumulation lasted 360 min on average and the second cycle 180 min on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from cells showing two cycles of nuclear accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "026111d2-7ffc-4212-add8-e9e61f85ef19",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C33",
+      "claim": "Wnt-induced nuclear accumulation of \u03b2-catenin is not cell cycle dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we did not identify a cell cycle dependent pattern of YFP-\u03b2-catenin levels in response to Wnt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments using Fucci cell cycle markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "5676ffdf-00f9-41e3-91c0-8f7f752cbff6",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C34",
+      "claim": "\u03b2-catenin was observed as a string of punctate sub-regions distributed along the cell outline only at cell-cell contacts before Wnt treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Before treatment, \u03b2-catenin was observed as a string of punctate sub-regions distributed along the cell outline only at cell-cell contacts (Figure 3a, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the live-cell imaging before Wnt treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "5b2c2c91-4e80-4722-a81e-946c3eedc3b0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C35",
+      "claim": "\u03b2-catenin levels at the membrane increased with similar dynamics to the cytoplasmic and nuclear sub-populations during Wnt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we could detect changes in the intensity of the puncta after Wnt, we followed the intensity of \u03b2-catenin at the membrane during Wnt activation and found an increase with similar dynamics to the cytoplasmic and nuclear sub-populations (Figure 5a, Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from live-cell imaging of membrane \u03b2-catenin in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "f530dfbb-7b8c-4a77-9aee-07b0c6f14770",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C36",
+      "claim": "The relative increase of \u03b2-catenin at the membrane was lower than the nucleus and the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative increase at the membrane was lower than the nucleus and the cytoplasm, and the rate of \u03b2-catenin accumulation (\u0394I/\u0394t) at the membrane was less rapid than the nuclear accumulation rates (Figure 5b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the rate of change analysis in Figure 5b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "827f656c-a86b-437b-adb4-8a8c582ec5f2",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C38",
+      "claim": "There was no change in the dynamics of \u03b2-catenin exchange at the membrane after Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, similar recovery in unactivated, Wnt3a-treated and LiCl-treated cells was observed, meaning that there was no change in the dynamics of protein exchange but rather an increase in the number of \u03b2-catenin molecules in the membrane-bound fraction (Figure 5\u2014figure supplement 1, Supplementary file 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through FRAP analysis in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "0eb5de61-98a7-47f0-9765-d58dbcc477e7",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C39",
+      "claim": "\u03b2-catenin can localize at the centrosome during interphase and mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin can localize at the centrosome during interphase and mitosis, and functions in centriolar cohesion (Kaplan et al., 2004; Hadjihannas et al., 2010; Bahmanyar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "b14078bd-3b40-4b8c-b54f-8aa2cc10f6dd",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C40",
+      "claim": "Each daughter cell received one \u03b2-catenin-labeled body after division.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, movies of dividing cells demonstrated that each daughter cell received one \u03b2-catenin-labeled body after division, reminiscent of centrosome behavior (Figure 6a, Video 5 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live-cell imaging of dividing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bd03e772-c95d-4298-bed6-d3360462cad2",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C41",
+      "claim": "\u03b2-catenin accumulates at the centrosome following Wnt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence of pericentrin (a centrosome marker), together with either endogenous \u03b2-catenin or YFP-\u03b2-catenin, showed accumulation of \u03b2-catenin at the centrosome following activation (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunofluorescence colocalization in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "26ddf0af-9674-40fe-b58b-ff6849584b4d",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C42",
+      "claim": "Centrosomal \u03b2-catenin levels were five-fold higher compared to the initial state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, centrosomal levels were significantly higher, five-fold higher compared to the initial state (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from live-cell imaging measurements in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "2b891301-e712-4df6-8bf3-73262dd26016",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C43",
+      "claim": "The rates of change of \u03b2-catenin at the centrosome were the highest and most rapid of all measured cell compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The rates of change were the highest and most rapid of all measured cell compartments (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the rate of change analysis in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "644c3c05-597f-41f5-9eda-45841172fff9",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C44",
+      "claim": "\u03b2-catenin puncta detaching from the membrane usually ended up at the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "When these structures were tracked during movement in the cell, they usually ended up at the centrosome (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through tracking analysis in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "98e71e03-c380-4668-a3d1-1b60d701d760",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C45",
+      "claim": "Tracked \u03b2-catenin puncta reached the centrosome between 30 to 90 min after detachment from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking of the detached \u03b2-catenin puncta showed that they reached the centrosome between 30 to 90 min after detachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from tracking analysis of membrane-to-centrosome movement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "d5de961b-8efb-425e-8992-dfc84942c8c7",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C46",
+      "claim": "\u03b2-catenin at the centrosome has very rapid recovery kinetics with a half-time of fluorescence recovery (t1/2) of 1.9 s.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether the residence times of \u03b2-catenin molecules at the centrosome resembled the membrane region, we performed FRAP analysis, which showed very rapid recovery kinetics at the centrosome, in comparison to all other cell regions (Figure 6\u2014figure supplement 2). This implied that \u03b2-catenin duration at the centrosome is short-lived, with a half-time of fluorescence recovery (t1/2) of 1.9 s, similar to other centrosomal components (Hames et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured through FRAP experiments in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "a16ecd93-2f7d-4a26-b281-a63168073e62",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C47",
+      "claim": "The molecular interactions of \u03b2-catenin at the membrane in adherens junctions are significantly more stable than at the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that the molecular interactions of \u03b2-catenin at the membrane in adherens junctions are significantly more stable than at the centrosome, where the exchange of \u03b2-catenin molecules is highly rapid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparative FRAP analysis of membrane and centrosome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "46bd6252-bdb8-471d-a6a2-89d0d45f993d",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C48",
+      "claim": "In Wnt3a-induced cells, gene activation in the population was reached after 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control unstimulated population (mock conditioned medium), after 120 min most cells had activated the gene once, whereas in Wnt3a-induced cells, gene activation in the population was reached more quickly, already after 60 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from live-cell imaging of CCND1 transcription.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "3a246c13-a528-45dc-84aa-c3e6440f1dcc",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C49",
+      "claim": "The response time for CCND1 activation following Wnt3a was 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The response time for CCND1 activation following Wnt3a was also short, ranging at 15 min (Figure 7a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the promoter response time analysis in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "77aa918d-4302-420d-a60d-cf94cc87c863",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C50",
+      "claim": "Wnt signaling increased the probability of CCND1 to initiate transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This meant that Wnt signaling increased the probability of CCND1 to initiate transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shortened time to gene activation in the population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "1532af2c-debd-4bcd-97f3-d4da36c94b3b",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C51",
+      "claim": "When CCND1 was initially non-active and began to transcribe after Wnt3a, there was prolonged transcriptional activation for 180 min.",
+      "claim_type": "EXPLICIT",
+      "source": "When CCND1 was at first non-active and began to transcribe after Wnt3a, there was prolonged transcriptional activation for a time-frame of 180 min, compared to a shorter activity period of 65 min in unactivated cells (Figure 7c,e, Video 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from live-cell imaging of CCND1 transcription in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "d6b87b7b-ad6f-40ca-ad4e-c798fd172bac",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C52",
+      "claim": "If the CCND1 gene was already active when Wnt3a was added, there was no difference in the activity period compared to unactivated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, if the gene was detected in an already active state, and Wnt3a was then added, there was no difference in the activity period compared to that in unactivated cells. Under both conditions, activation persisted for an average of 130 min (Figure 7d), meaning that if the promoter was already activated then there was no Wnt-induced change in this time-frame.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from live-cell imaging analysis in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "aec68909-21a1-40b5-af10-d762c0f73ba2",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C53",
+      "claim": "Even if the CCND1 gene was active before Wnt3a addition, the intensity of MS2-GFP fluorescence on the gene showed higher levels after Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, measurements of CCND1 activity in living cells following Wnt activation showed a positive change in several parameters relating to gene activation; not only did the frequency of CCND1 activation in the cell population rise and the time to activate CCND1 shorten, but the levels of CCND1 transcriptional output increased, the timeframe of gene activity became substantially longer, and gene resting periods were shortened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the live-cell imaging measurements of gene activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "85b07737-c250-438e-b66c-2899761c1500",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C54",
+      "claim": "Wnt activation increases the duration of gene activity and reduces periods of inactivity by increasing the frequency of promoter firing events.",
+      "claim_type": "EXPLICIT",
+      "source": "When gene activity and gene inactivity patterns were further examined, not only was an expected increase in the duration of gene activity found, but also a reduction in the rest duration. This means that Wnt activation not only increases the duration time for gene activity, but also reduces periods of inactivity by increasing the frequency of promoter firing events (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of gene activity patterns in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "eea7f37c-bd8a-4528-a9cd-50bbc6a7dbc3",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C55",
+      "claim": "Cells that had accumulated \u03b2-catenin had significantly higher numbers of cellular CCND1-MS2 mRNAs (3-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that had accumulated \u03b2-catenin had significantly higher numbers of cellular CCND1-MS2 mRNAs (3-fold; Figure 8e,f) and nascent CCND1-MS2 mRNAs (3.8-fold; Figure 8e,g,j), which correlated well with the transcription measurements in living cells (Figure 8\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from RNA FISH measurements in Figure 8e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "89be45bb-cfbd-45df-865b-f57365542017",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C56",
+      "claim": "Cells that had accumulated \u03b2-catenin had significantly higher numbers of nascent CCND1-MS2 mRNAs (3.8-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that had accumulated \u03b2-catenin had significantly higher numbers of cellular CCND1-MS2 mRNAs (3-fold; Figure 8e,f) and nascent CCND1-MS2 mRNAs (3.8-fold; Figure 8e,g,j), which correlated well with the transcription measurements in living cells (Figure 8\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from RNA FISH measurements in Figure 8e,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "1f34fb1d-2222-44c4-9834-bc56d3b47af2",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C57",
+      "claim": "The rate of change in \u03b2-catenin nuclear levels correlated with transcription induction, specifically during the first rapid phase of nuclear \u03b2-catenin accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By integrating the measurements of CCND1 transcriptional activity with the measured dynamics of \u03b2-catenin nuclear accumulation from the separate experiments, we found that the rate of change of nuclear \u03b2-catenin correlated well with transcription induction (Figure 9a), specifically during the first rapid phase of nuclear \u03b2-catenin accumulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through correlation analysis shown in Figure 9a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "f893bc5e-ef44-4610-b247-8b88969e9fa3",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C58",
+      "claim": "It is not the absolute number of \u03b2-catenin molecules in the nucleus that correlates with transcription rates, but the rate of change of \u03b2-catenin levels over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is not the absolute number of \u03b2-catenin molecules in the nucleus that correlates with transcription rates, but the rate of change of \u03b2-catenin levels over time, and particularly the rapid change during the first phase of induction that elicits the transcriptional effect (Figure 9b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key conclusion drawn from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "93659d72-f842-410d-82ca-d1990eb2396c",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C59",
+      "claim": "The Wnt/\u03b2-catenin canonical signaling pathway is activated by the binding of the Wnt ligand to plasma membrane receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wnt/\u03b2-catenin canonical signaling pathway is activated by the binding of the Wnt ligand to plasma membrane receptors, thereby triggering downstream events that culminate in the accumulation of \u03b2-catenin in the cytoplasm and its translocation into the nucleus (Clevers and Nusse, 2012; Krieghoff et al., 2006; Jamieson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ce967fa6-6516-4c72-be20-12965b165a9c",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C60",
+      "claim": "The interaction of \u03b2-catenin with transcription factors of the TCF/LEF family in the nucleus modifies gene expression of crucial genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of \u03b2-catenin with transcription factors of the TCF/LEF family in the nucleus modifies gene expression of crucial genes, thus leading to changes in key cellular pathways, such as proliferation, migration and cell fate (Cadigan and Waterman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bc581ce6-7e7b-45ad-9432-5dcc11b5586e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C61",
+      "claim": "In the absence of Wnt, cytoplasmic \u03b2-catenin protein is constantly degraded via the 'destruction complex' and proteosomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, in the absence of Wnt, cytoplasmic \u03b2-catenin protein is constantly degraded (Stamos and Weis, 2013) via the 'destruction complex' and proteosomal degradation (Aberle et al., 1997; Salomon et al., 1997; Orford et al., 1997), thus preventing \u03b2-catenin nuclear targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "951c6fb7-2b6c-41f8-b09f-28992652e696",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C62",
+      "claim": "In many pathological cases \u03b2-catenin is not degraded but accumulates in the nucleus and activates genes associated with cell proliferation, such as MYC and cyclin D1.",
+      "claim_type": "EXPLICIT",
+      "source": "In many pathological cases \u03b2-catenin is not degraded but accumulates in the nucleus and activates genes, some of which are associated with cell proliferation, such as MYC and cyclin D1 (Shtutman et al., 1999; Tetsu and McCormick, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "7430b3cf-faf4-41c4-add4-cad3276b5ea8",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C63",
+      "claim": "Cyclin D1 levels were shown to be induced by the Wnt/\u03b2-catenin canonical signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin D1 levels were shown to be induced by the Wnt/\u03b2-catenin canonical signaling pathway (Shtutman et al., 1999; Tetsu and McCormick, 1999; Chocarro-Calvo et al., 2013; Willert et al., 2002; Lin et al., 2000; Porfiri et al., 1997; Yun et al., 2005; Torre et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "f3c7610a-0f60-4155-b5ea-1d619cdf9909",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C64",
+      "claim": "HEK293 cells have a low background of \u03b2-catenin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that HEK293 cells are known to have a low background of \u03b2-catenin activity (Kang et al., 2012), and are not known to have mutations in proteins associated with Wnt signaling (Tan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cell line, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "0410337e-f31a-4211-ae7f-acac8cc69d88",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C65",
+      "claim": "HEK293 cells are not known to have mutations in proteins associated with Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that HEK293 cells are known to have a low background of \u03b2-catenin activity (Kang et al., 2012), and are not known to have mutations in proteins associated with Wnt signaling (Tan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cell line, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "2c89427e-1958-4bdf-aeb7-dc3cb3e26a6a",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C66",
+      "claim": "YFP-\u03b2-catenin activates the CCND1 promoter with 2.3 fold activation after transient transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified using a luciferase assay, that a YFP-tagged version of \u03b2-catenin (Krieghoff et al., 2006) activates the CCND1 promoter, and observed 2.3 fold activation after transient transfection of the protein into the HEK293 CCND1-MS2 cells (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured through luciferase assay in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "575c11be-e602-478f-b634-a274c4f0f10e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C67",
+      "claim": "The addition of YFP-\u03b2-catenin to the cell clone did not influence the cell cycle at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of YFP-\u03b2-catenin to the cell clone did not influence the cell cycle or CCND1 expression at steady state as quantified by single molecule RNA FISH (Yunger et al., 2010,2013) (Figure 1\u2014figure supplement 1c\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through cell cycle analysis and RNA FISH in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "8a34b33a-8051-40f7-abc8-3d36293aec0e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C68",
+      "claim": "The addition of YFP-\u03b2-catenin to the cell clone did not influence CCND1 expression at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of YFP-\u03b2-catenin to the cell clone did not influence the cell cycle or CCND1 expression at steady state as quantified by single molecule RNA FISH (Yunger et al., 2010,2013) (Figure 1\u2014figure supplement 1c\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA FISH quantification in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "6cb2adea-2cf4-4e59-97c1-e8a2bc2efb09",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C69",
+      "claim": "The fold change in \u03b2-catenin nuclear levels is the element affecting target gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits in well with a previous study demonstrating that the fold change in \u03b2-catenin nuclear levels is the element affecting target gene activity (Goentoro and Kirschner, 2009), and that the transcriptional machinery is capable of computing the fold change in \u03b2-catenin, thereby determining the transcriptional response (Goentoro and Kirschner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "f417dba9-8133-43fe-a435-3455f4c290b0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C70",
+      "claim": "The transcriptional machinery is capable of computing the fold change in \u03b2-catenin, thereby determining the transcriptional response.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits in well with a previous study demonstrating that the fold change in \u03b2-catenin nuclear levels is the element affecting target gene activity (Goentoro and Kirschner, 2009), and that the transcriptional machinery is capable of computing the fold change in \u03b2-catenin, thereby determining the transcriptional response (Goentoro and Kirschner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "c0c14be0-a312-4743-bd22-c20aa95fdb63",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C71",
+      "claim": "Wnt does not completely abolish the activity of the destruction complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kirschner group has shown (Hern\u00e1ndez et al., 2012) that Wnt does not completely abolish the activity of the destruction complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ec49aee1-6237-4705-b67a-b507d13304c2",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C72",
+      "claim": "A portion of \u03b2-catenin is located in adherens junctions and functions in cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence with an antibody to the endogenous \u03b2-catenin protein showed normal \u03b2-catenin localization at the cell membrane region (a portion of \u03b2-catenin is located in adherens junctions and functions in cell adhesion [Harris and Tepass, 2010]), as well as low cytoplasmic levels under non-induced conditions, compared to a predominant increase in cytoplasmic and nuclear distribution after the addition of Wnt3a (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "205f7413-1a3a-4af8-a6ae-48a781bcaeaf",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C73",
+      "claim": "\u03b2-catenin is bound to E-cadherin in the membrane and to \u03b1-catenin in adherens junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin is normally present in the adherens junctions proximal to the cell membrane, and is bound to E-cadherin in the membrane and to \u03b1-catenin, which mediates the connection between the adherens junction and the actin cytoskeleton (Yap et al., 1997; Brembeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "5c6a2fc9-d07b-4a93-abd5-e7df613c0705",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C74",
+      "claim": "\u03b1-catenin mediates the connection between the adherens junction and the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin is normally present in the adherens junctions proximal to the cell membrane, and is bound to E-cadherin in the membrane and to \u03b1-catenin, which mediates the connection between the adherens junction and the actin cytoskeleton (Yap et al., 1997; Brembeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "53605eb8-afdf-4219-98fd-2a8fd98837b8",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C75",
+      "claim": "Unphosphorylated \u03b2-catenin localizes to the membrane upon Wnt activation within 30 min in cells lacking E-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, while the nuclear accumulation of \u03b2-catenin has been the focus of Wnt signaling studies, the membrane region has not been considered a major target of the response. However, one study has shown localization of unphosphorylated \u03b2-catenin to the membrane upon Wnt activation within 30 min, in cells lacking E-cadherin, although the function was unclear (Hendriksen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "66d49985-689e-47bc-bc15-d8140641a5e0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C76",
+      "claim": "Wnt signaling abolishes the phosphorylation of \u03b2-catenin and leads to centrosome splitting.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that Wnt signaling abolishes the phosphorylation of \u03b2-catenin and leads to centrosome splitting (Hadjihannas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "fa305335-7708-4416-ac72-8517dbff26d0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "claim_id": "C77",
+      "claim": "Levels of phosphorylated \u03b2-catenin oscillate and increase towards mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wnt pathway has been implicated in cell cycle regulation, and levels of phosporylated \u03b2-catenin oscillate and increase towards mitosis (Davidson and Niehrs, 2010; Hadjihannas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Wnt3a signaling rapidly increases CCND1 transcriptional activation in the cell population. After 75 min of Wnt3a treatment, over 80% of cells showed active CCND1-MS2 transcription (compared to 40-50% at steady state). The response time for CCND1 activation was 15 min, and Wnt signaling increased the probability of transcription initiation, prolonged gene activity duration (180 min vs 65 min for initially inactive genes), increased transcriptional output levels, and reduced gene rest periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C48-C54 collectively demonstrate robust transcriptional activation of CCND1 by Wnt3a through multiple converging lines of evidence from live-cell imaging. The data show increased frequency of activation, shortened response time, prolonged activity duration, and increased output levels. These measurements are internally consistent and supported by quantitative imaging data presented in Figures 1, 7, and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "bf5e31c2-9923-435b-9990-8519783bc9c8",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "\u03b2-catenin nuclear accumulation in response to Wnt3a shows cell-to-cell variability with biphasic dynamics. Nuclear accumulation begins 15 min after Wnt3a addition, peaks at 2-3 hr with a 3-fold increase, and occurs in two phases: an initial rapid phase peaking at 60 min and a second declining phase up to 180 min. Approximately 80% of cells showed similar dynamics while 20% displayed different patterns including two waves of accumulation (first cycle ~360 min, second cycle ~180 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C17-C22, C29-C32 are well-supported by quantitative live-cell imaging data shown in Figures 2 and 3. The biphasic accumulation dynamics are clearly demonstrated through rate of change analysis (\u0394I/\u0394t), and cluster analysis confirms the heterogeneity in the population. The temporal measurements are consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "86fef257-b86f-4820-a52f-3eb53a16e079",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LiCl-induced \u03b2-catenin accumulation differs substantially from Wnt3a stimulation. LiCl caused synchronous and continuous accumulation for 10-11 hr in all cells, with \u03b2-catenin levels 4-fold higher than Wnt3a treatment, demonstrating that LiCl does not accurately mimic physiological Wnt signaling dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C25-C27 are supported by comparative live-cell imaging and Western blot data (Figures 1e, 3-figure supplement 1). The dramatic differences in accumulation kinetics, duration, and magnitude between LiCl and Wnt3a are clearly demonstrated. This is an important control showing that chemical inhibition of GSK3\u03b2 produces non-physiological dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "66b6cdf6-b40d-49bf-a833-4cf5dae5940c",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b2-catenin levels increased simultaneously at adherens junctions (membrane) during Wnt activation with similar dynamics to cytoplasmic and nuclear accumulation, though the relative increase was lower at the membrane. FRAP analysis showed no change in the dynamics of \u03b2-catenin exchange at the membrane after Wnt signaling, indicating increased molecule numbers rather than altered binding kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C35-C36, and C38 are supported by live-cell imaging and FRAP data (Figures 5 and 5-figure supplement 1). The simultaneous accumulation across compartments is demonstrated through parallel quantification, and FRAP experiments provide mechanistic insight showing that Wnt increases the number of membrane-bound \u03b2-catenin molecules without changing exchange dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A membrane-centrosome transport system for \u03b2-catenin was revealed during Wnt signaling. \u03b2-catenin accumulated at the centrosome with 5-fold higher levels than initial state and the highest/most rapid rates of change of all compartments. Tracking showed \u03b2-catenin puncta detaching from the membrane and reaching the centrosome in 30-90 min. FRAP analysis revealed very rapid recovery kinetics at the centrosome (t1/2 = 1.9 s), indicating short-lived residence compared to stable membrane interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C41-C47 are supported by multiple complementary approaches: immunofluorescence colocalization with pericentrin (Figure 6b), live-cell imaging quantification (Figure 6c-d), particle tracking (Figure 6-figure supplement 1), and FRAP analysis (Figure 6-figure supplement 2). The convergence of these different experimental approaches provides strong evidence for this novel transport system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "6b9b5c7b-67ad-4610-a28a-bca7b876efb7",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The rate of change in \u03b2-catenin nuclear accumulation, rather than absolute protein levels, correlated with CCND1 transcriptional output. Integration of \u03b2-catenin dynamics with CCND1 transcriptional activity measurements showed that the rate of change (\u0394I/\u0394t) during the first rapid phase of nuclear accumulation correlated with transcription induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C57-C58 are supported by correlation analysis integrating separate measurements of \u03b2-catenin dynamics and CCND1 transcription (Figure 9a). This key finding is consistent with prior work cited (Goentoro and Kirschner, 2009) showing fold-change detection. However, the correlation is based on integrating data from separate experiments rather than simultaneous measurements in the same cells, which introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ab7561e5-cdba-465e-bca0-a0da920e4ae7",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cells with accumulated \u03b2-catenin showed significantly higher numbers of CCND1-MS2 mRNAs. RNA FISH quantification revealed 3-fold higher cellular mRNAs and 3.8-fold higher nascent mRNAs in cells with high nuclear \u03b2-catenin levels compared to cells with low levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by quantitative single-molecule RNA FISH data (Figure 8e-j). The correlation between \u03b2-catenin levels and mRNA numbers is demonstrated at the single-cell level, and the measurements are consistent with the live-cell transcription data. The methodology for mRNA quantification is well-described and validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "0c28c138-9960-4e80-94d3-5a2afab9a32b",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Wnt-induced nuclear accumulation of \u03b2-catenin is not cell cycle dependent. Experiments using Fucci cell cycle markers and analysis of dividing cells showed no cell cycle-dependent pattern of \u03b2-catenin accumulation in response to Wnt3a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C33 are supported by live-cell imaging with Fucci markers (Figure 4-figure supplement 1, Videos 6-7) and analysis of daughter cells from dividing cells (Figure 4b-e). Multiple lines of evidence consistently show no correlation between cell cycle phase and \u03b2-catenin response to Wnt3a. This addresses an important potential confounding variable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "dc51538b-b1b4-41d5-856b-444f768ed6a0",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The YFP-\u03b2-catenin reporter system faithfully recapitulates endogenous \u03b2-catenin dynamics. YFP-\u03b2-catenin expression levels were ~80% of endogenous \u03b2-catenin (doubling total \u03b2-catenin), and accumulation dynamics of both proteins were identical as shown by Western blotting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by Western blot analysis (Figure 1e) showing parallel accumulation kinetics. This validation is critical for the study since all live-cell imaging relies on the YFP-tagged protein. The characterization shows the tagged protein behaves like the endogenous protein, though it does double total \u03b2-catenin levels in the cell.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "a747e193-f521-43a3-a065-2c14c25dce08",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental system was validated for studying Wnt/\u03b2-catenin signaling. Endogenous \u03b2-catenin showed expected membrane localization in untreated cells and nuclear/cytoplasmic accumulation after Wnt3a treatment. YFP-\u03b2-catenin activated the CCND1 promoter 2.3-fold in luciferase assays, and its addition did not influence cell cycle or CCND1 expression at steady state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C66-C68 provide essential validation of the experimental system through immunofluorescence (Figure 1c), luciferase assays (Figure 1-figure supplement 1a), cell cycle analysis, and RNA FISH (Figure 1-figure supplement 1c-h). These controls demonstrate that the reporter system is functional and does not perturb the biology being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "d5a121e5-eaef-415e-bc33-742ff5b5e6d9",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FRAP analysis revealed that \u03b2-catenin import rate under Wnt3a conditions was more rapid than transient overexpression, and nuclear export was slower than import. These measurements demonstrate the advantage of studying signaling at physiological expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by FRAP experiments (Figure 2-figure supplement 1). The comparison between Wnt3a-treated cells and transiently overexpressing cells validates the approach of using stable low-level expression. The incomplete recovery during FRAP indicates significant nuclear retention, consistent with signaling function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "ea6e8afc-d3d3-4e9d-afb6-8b6719d59f29",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mathematical modeling of \u03b2-catenin dynamics determined that \u03b2-catenin degradation had a characteristic time of 2.75 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by fitting experimental data to a two-phase exponential model (Figure 2-figure supplement 1e, Materials and methods). The model appropriately describes production and degradation phases, and the degradation time constant is consistent with the observed clearance kinetics. However, the model is relatively simple and makes assumptions about linear production rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "dd6a778d-b03f-4678-88fb-70bd0d5993d9",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript cites prior work establishing that LiCl is presumed to mimic Wnt signaling, that fold-change in \u03b2-catenin levels affects target gene activity, and that Wnt does not completely abolish destruction complex activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C69-C71 accurately represent cited prior work. The citations are appropriate and the claims are used to contextualize the current findings. The comparison with LiCl (C7) is particularly important as it demonstrates that the presumed mimicry is not accurate for dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    },
+    {
+      "id": "9f92d289-72df-4066-9bfa-22309a21e92e",
+      "content_id": "b5bd4e47-bbbf-4ba9-af83-7383a010441a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides accurate background knowledge about Wnt/\u03b2-catenin signaling, including pathway activation, \u03b2-catenin's role in transcription, degradation mechanisms, involvement in cancer, cyclin D1 regulation, HEK293 cell characteristics, \u03b2-catenin localization in adherens junctions, and centrosomal functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C39, and C59-C77 accurately represent established knowledge in the field, supported by appropriate citations. These claims provide necessary context for interpreting the experimental results. The characterization of HEK293 cells (C64-C65) is particularly important for validating the choice of cell system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:09.772992Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b7cd4f57-9151-4902-bc90-7f390bbd96a1",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "c5f00702-0118-4584-9baf-101a870509c4",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "46bd6252-bdb8-471d-a6a2-89d0d45f993d",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "3a246c13-a528-45dc-84aa-c3e6440f1dcc",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "77aa918d-4302-420d-a60d-cf94cc87c863",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "1532af2c-debd-4bcd-97f3-d4da36c94b3b",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "d6b87b7b-ad6f-40ca-ad4e-c798fd172bac",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "aec68909-21a1-40b5-af10-d762c0f73ba2",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "85b07737-c250-438e-b66c-2899761c1500",
+      "result_id": "2832822a-d30a-4c49-89ae-fa8cdc7f060b"
+    },
+    {
+      "claim_id": "1f9e87ed-f9cf-4fcb-a742-0ee8ee570adf",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "0a76ba20-e530-45db-844f-6acdc90843ab",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "bcee55d9-360d-4c47-978a-b136c7eb2df0",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "e89c8814-1884-47cc-a35d-10aa2df1248d",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "c84758b4-3221-4076-9d4c-5455062b343a",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "002be65a-3820-4b98-bcb3-e908fa9fc35a",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "0c2dd25c-34ae-404b-844b-c70f996fe65e",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "ca37b17e-1cae-4caa-a5a8-263fb7cf1f6a",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "8198a083-68b4-45c9-8077-507bcb7bbc43",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "bf216f86-a4e3-460b-b8e8-81454fbcbbcf",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "c32e7cc4-f536-4691-ba25-03f5bb1c9a78",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "22fbda55-1622-4b6f-8489-63d312cc523f",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "6621d54b-4333-4c45-ac64-cf5bdcbfdc17",
+      "result_id": "bf5e31c2-9923-435b-9990-8519783bc9c8"
+    },
+    {
+      "claim_id": "db924c65-3afd-469e-97db-9f58bc2e1222",
+      "result_id": "86fef257-b86f-4820-a52f-3eb53a16e079"
+    },
+    {
+      "claim_id": "ca3fc8a2-a13c-4b48-94da-b332a2bc7675",
+      "result_id": "86fef257-b86f-4820-a52f-3eb53a16e079"
+    },
+    {
+      "claim_id": "09263e33-ca1d-4502-8e4d-c279f6d89449",
+      "result_id": "86fef257-b86f-4820-a52f-3eb53a16e079"
+    },
+    {
+      "claim_id": "cc7e0d79-0bb3-4f19-aaa6-173c717f374b",
+      "result_id": "86fef257-b86f-4820-a52f-3eb53a16e079"
+    },
+    {
+      "claim_id": "db6f066e-ba4d-45d6-acbc-cac5193d7aa7",
+      "result_id": "66b6cdf6-b40d-49bf-a833-4cf5dae5940c"
+    },
+    {
+      "claim_id": "5b2c2c91-4e80-4722-a81e-946c3eedc3b0",
+      "result_id": "66b6cdf6-b40d-49bf-a833-4cf5dae5940c"
+    },
+    {
+      "claim_id": "f530dfbb-7b8c-4a77-9aee-07b0c6f14770",
+      "result_id": "66b6cdf6-b40d-49bf-a833-4cf5dae5940c"
+    },
+    {
+      "claim_id": "827f656c-a86b-437b-adb4-8a8c582ec5f2",
+      "result_id": "66b6cdf6-b40d-49bf-a833-4cf5dae5940c"
+    },
+    {
+      "claim_id": "7c168129-46bb-41ad-808c-924068a63ba0",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "bd03e772-c95d-4298-bed6-d3360462cad2",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "26ddf0af-9674-40fe-b58b-ff6849584b4d",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "2b891301-e712-4df6-8bf3-73262dd26016",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "644c3c05-597f-41f5-9eda-45841172fff9",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "98e71e03-c380-4668-a3d1-1b60d701d760",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "d5de961b-8efb-425e-8992-dfc84942c8c7",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "a16ecd93-2f7d-4a26-b281-a63168073e62",
+      "result_id": "51edf1c1-4e62-46de-92f4-d9e44b7a1359"
+    },
+    {
+      "claim_id": "b93e10db-1e18-4567-a83e-7d1ee45e0588",
+      "result_id": "6b9b5c7b-67ad-4610-a28a-bca7b876efb7"
+    },
+    {
+      "claim_id": "1f34fb1d-2222-44c4-9834-bc56d3b47af2",
+      "result_id": "6b9b5c7b-67ad-4610-a28a-bca7b876efb7"
+    },
+    {
+      "claim_id": "f893bc5e-ef44-4610-b247-8b88969e9fa3",
+      "result_id": "6b9b5c7b-67ad-4610-a28a-bca7b876efb7"
+    },
+    {
+      "claim_id": "eea7f37c-bd8a-4528-a9cd-50bbc6a7dbc3",
+      "result_id": "ab7561e5-cdba-465e-bca0-a0da920e4ae7"
+    },
+    {
+      "claim_id": "89be45bb-cfbd-45df-865b-f57365542017",
+      "result_id": "ab7561e5-cdba-465e-bca0-a0da920e4ae7"
+    },
+    {
+      "claim_id": "48097971-1459-42cf-af9c-779754d85e9d",
+      "result_id": "0c28c138-9960-4e80-94d3-5a2afab9a32b"
+    },
+    {
+      "claim_id": "026111d2-7ffc-4212-add8-e9e61f85ef19",
+      "result_id": "0c28c138-9960-4e80-94d3-5a2afab9a32b"
+    },
+    {
+      "claim_id": "bac7cada-e37a-4459-af35-8c1f87130510",
+      "result_id": "dc51538b-b1b4-41d5-856b-444f768ed6a0"
+    },
+    {
+      "claim_id": "fc0ef233-2b7c-4dde-932a-0f32ed315951",
+      "result_id": "dc51538b-b1b4-41d5-856b-444f768ed6a0"
+    },
+    {
+      "claim_id": "08959221-de2c-480e-b5b5-497c356ad19a",
+      "result_id": "a747e193-f521-43a3-a065-2c14c25dce08"
+    },
+    {
+      "claim_id": "50a7886c-313f-4089-b5f7-1a733fc0f398",
+      "result_id": "a747e193-f521-43a3-a065-2c14c25dce08"
+    },
+    {
+      "claim_id": "2c89427e-1958-4bdf-aeb7-dc3cb3e26a6a",
+      "result_id": "a747e193-f521-43a3-a065-2c14c25dce08"
+    },
+    {
+      "claim_id": "575c11be-e602-478f-b634-a274c4f0f10e",
+      "result_id": "a747e193-f521-43a3-a065-2c14c25dce08"
+    },
+    {
+      "claim_id": "8a34b33a-8051-40f7-abc8-3d36293aec0e",
+      "result_id": "a747e193-f521-43a3-a065-2c14c25dce08"
+    },
+    {
+      "claim_id": "8269a685-86ed-4bbb-97db-472cebda00aa",
+      "result_id": "d5a121e5-eaef-415e-bc33-742ff5b5e6d9"
+    },
+    {
+      "claim_id": "3860b025-ef01-439f-b657-200d1097d26a",
+      "result_id": "d5a121e5-eaef-415e-bc33-742ff5b5e6d9"
+    },
+    {
+      "claim_id": "d016b039-8e5a-4c2c-aa95-6f2520de8e9e",
+      "result_id": "ea6e8afc-d3d3-4e9d-afb6-8b6719d59f29"
+    },
+    {
+      "claim_id": "8d0d34b4-463d-457f-89cd-ef03e54f0360",
+      "result_id": "dd6a778d-b03f-4678-88fb-70bd0d5993d9"
+    },
+    {
+      "claim_id": "6cb2adea-2cf4-4e59-97c1-e8a2bc2efb09",
+      "result_id": "dd6a778d-b03f-4678-88fb-70bd0d5993d9"
+    },
+    {
+      "claim_id": "f417dba9-8133-43fe-a435-3455f4c290b0",
+      "result_id": "dd6a778d-b03f-4678-88fb-70bd0d5993d9"
+    },
+    {
+      "claim_id": "c0c14be0-a312-4743-bd22-c20aa95fdb63",
+      "result_id": "dd6a778d-b03f-4678-88fb-70bd0d5993d9"
+    },
+    {
+      "claim_id": "8d72c586-4462-44de-b6da-cbc161d5acf0",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "93659d72-f842-410d-82ca-d1990eb2396c",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "ce967fa6-6516-4c72-be20-12965b165a9c",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "bc581ce6-7e7b-45ad-9432-5dcc11b5586e",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "951c6fb7-2b6c-41f8-b09f-28992652e696",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "7430b3cf-faf4-41c4-add4-cad3276b5ea8",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "f3c7610a-0f60-4155-b5ea-1d619cdf9909",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "0410337e-f31a-4211-ae7f-acac8cc69d88",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "ec49aee1-6237-4705-b67a-b507d13304c2",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "205f7413-1a3a-4af8-a6ae-48a781bcaeaf",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "5c6a2fc9-d07b-4a93-abd5-e7df613c0705",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "53605eb8-afdf-4219-98fd-2a8fd98837b8",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "66d49985-689e-47bc-bc15-d8140641a5e0",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "fa305335-7708-4416-ac72-8517dbff26d0",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    },
+    {
+      "claim_id": "0eb5de61-98a7-47f0-9765-d58dbcc477e7",
+      "result_id": "9f92d289-72df-4066-9bfa-22309a21e92e"
+    }
+  ],
+  "comparisons": []
+}

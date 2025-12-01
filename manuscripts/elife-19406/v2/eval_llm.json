@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A prospective clinical study (NCT01338441) enrolled 92 healthy Caucasian subjects (aged 18-40 years, BMI 19-29 kg/m\u00b2) who received a single 80 mg oral dose of sotalol. Twenty subjects with extreme responses (10 high-sensitivity with \u0394QTcf 48.5\u00b17.1 ms vs. 10 low-sensitivity with \u0394QTcf 0.2\u00b14.8 ms, p<0.0002) underwent skin biopsy. High-sensitivity subjects were predominantly female (90%) while low-sensitivity subjects were predominantly male (80%), though baseline ECG characteristics were similar between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical study design and execution are well-documented with appropriate ethical approvals (C87, C88), clear inclusion/exclusion criteria (C20-C22, C106-C108), and standardized ECG measurements (C89, C90). The extreme phenotype selection strategy successfully identified subjects with highly contrasted responses to sotalol (C28, p<0.0002), though the gender imbalance (C29) represents a potential confounding factor that is acknowledged and addressed in subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "iPSCs were successfully generated from 17 of 20 subjects using retroviral reprogramming with OCT4, SOX2, c-MYC, and KLF4. All clones expressed pluripotency markers, showed transgene silencing and endogenous gene reactivation, and 16 had normal karyotypes. iPSCs were differentiated into cardiomyocytes using a Wnt-modulated protocol, yielding spontaneously beating cells expressing cardiac markers (cTnT, \u03b1-actinin, Cx43) with 47.8\u00b119.9% efficiency. Final analyses included 14 lines (7 high-sensitivity, 7 low-sensitivity) after excluding one line with chromosomal translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iPSC generation and characterization follow established protocols with appropriate quality controls (C32-C34, C94). The differentiation protocol is well-validated (C96, citing Karakikes et al., 2014) and produces functional cardiomyocytes with cardiac-specific markers (C98, C99). The exclusion of the line with chromosomal abnormality (C95, C101) is appropriate, and the authors demonstrate this exclusion does not affect statistical significance (C102). The differentiation efficiency was similar between groups (C36, p=0.42), eliminating this as a confounding variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "iPSC-derived cardiomyocytes showed an average differentiation efficiency of 47.8\u00b119.9% cTNT-positive cells, with no significant difference between high-sensitivity (49.2\u00b124.4%) and low-sensitivity (46.7\u00b117.3%) groups (p=0.42). Quantitative PCR confirmed expression of major cardiac ion channel genes including KCNH2 (hERG), consistent with adult left ventricular tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differentiation efficiency data (C35, C36) demonstrate that the two groups have comparable cardiomyocyte populations, eliminating differentiation efficiency as a confounding variable in subsequent drug response studies. The expression of cardiac ion channel genes including KCNH2 (C37) is critical for validating the relevance of these cells for studying drug-induced QT prolongation, as KCNH2 encodes the hERG channel targeted by sotalol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Genetic profiling identified 25 SNPs in LQTS-related genes (ANK2, SCN5A, KCNQ1, CACNA1C, CALM1, KCNE2, KCNH2, KCNJ5) that were significantly imbalanced between groups. Notably, the CALM1 c.*1952C allele (rs3814843, associated with sudden cardiac death) showed 22.2% frequency in high-sensitivity subjects versus 1.8% expected in Europeans. The KCNH2:c.307+1932G>C variant (rs3778873) was significantly more frequent in high-sensitivity subjects (44.4% vs. 6.2%, p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic profiling provides important mechanistic insights into the predisposing genetic background for drug-induced QT prolongation. The identification of 25 imbalanced SNPs (C38) supports a polygenic model. The CALM1 variant enrichment (C40) is particularly striking given its rarity in Europeans and association with sudden cardiac death (C39). The KCNH2 variant (C41) is mechanistically relevant as it affects the gene encoding the hERG channel targeted by sotalol and was previously identified in GWAS studies (C42). However, the small sample size (n=17) limits statistical power for genetic association studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C62"
+    ],
+    "result": "E4031, a specific hERG blocker, induced dose-dependent FPD prolongation in 15 of 17 iPSC-CM lines. There was no significant difference in E4031 sensitivity between high-sensitivity and low-sensitivity groups (EC50: 2.4\u00b10.7\u00d710\u207b\u2078 vs 6.6\u00b13.0\u00d710\u207b\u2078 M, p=0.59; Emax: 49\u00b120% vs 30\u00b12%, p=0.76). Two lines showed no E4031 response and had the lowest hERG expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E4031 experiments serve as an important validation that iPSC-CMs express functional hERG channels (C43, C62). The lack of difference between groups in E4031 response (C44, C45) is significant because it demonstrates that the differential sotalol sensitivity is not simply due to differences in hERG expression or function. This supports the hypothesis that susceptibility to drug-induced QT prolongation involves more complex mechanisms beyond direct hERG inhibition. The correlation between lack of E4031 response and low hERG expression (C46) provides internal validation of the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C103"
+    ],
+    "result": "In blinded experiments, iPSC-CMs from high-sensitivity subjects showed significantly greater FPD prolongation in response to sotalol compared to low-sensitivity subjects. This effect was significant at clinically relevant concentrations (10 \u03bcM, p=0.03) and increased with dose (two-way ANOVA: sotalol concentration p<0.0005, sensitivity group p<0.02). Maximal FPD prolongation was 52\u00b16% in high-sensitivity vs. 27\u00b16% in low-sensitivity cells (p=0.02). Arrhythmias occurred in 5/7 high-sensitivity lines vs. 1/8 low-sensitivity lines. A 25% threshold in FPD change correctly classified 12/14 lines according to clinical phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the study and is well-supported by multiple lines of evidence. The blinded experimental design (C78) eliminates observer bias. The dose-response relationship (C48, C103) and statistical significance at clinically relevant concentrations (C49) strengthen the findings. The correlation between in vitro FPD changes and in vivo QTcf changes (C52, C83, C84) demonstrates that iPSC-CMs can recapitulate individual susceptibility to drug-induced QT prolongation. The arrhythmia data (C51) provides additional functional validation. However, two discrepant lines (C83) suggest the model is not perfect, which the authors acknowledge may reflect inter-line variability (C80, C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C85"
+    ],
+    "result": "Patch-clamp recordings confirmed differential sotalol sensitivity: high-sensitivity iPSC-CMs (P11029) showed significant APD90 prolongation at 100 and 300 \u03bcM sotalol (289\u00b122 ms baseline vs. 492\u00b166 and 435\u00b192 ms), while low-sensitivity iPSC-CMs (P11009) showed no significant prolongation even at 300 \u03bcM (339\u00b163 vs. 450\u00b177 ms). Baseline action potential parameters were similar between lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The patch-clamp data provide important validation of the MEA findings using a different electrophysiological technique. The similar baseline parameters (C85) confirm that the differential drug response is not due to baseline electrophysiological differences. However, the patch-clamp experiments were performed on only one representative line from each group (C53, C54), which limits generalizability. The experimenter was blinded to the drug sensitivity classification but not to the clinical phenotype, which could introduce some bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNA-sequencing identified five differentially expressed genes in the direct neighborhood of LQTS genes: four up-regulated (DLG2, KCNE4, PTRF, HTR2C) and one down-regulated (CAMKV) in high-sensitivity iPSC-CMs. Expression of known LQTS genes was similar between groups. Each high-sensitivity subject showed risk-associated expression of at least one gene. These genes are involved in downstream regulation of cardiac ion channels: CAMKV interacts with calmodulin (CALM1), PTRF is involved in caveolae formation critical for ion channel trafficking, and DLG2/KCNE4 regulate potassium channel scaffolding and gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic analysis provides novel mechanistic insights into drug-induced QT susceptibility. The network-based approach focusing on direct neighbors of LQTS genes (C55) is innovative and biologically motivated. The finding that known LQTS genes show similar expression (C56) while their regulators differ (C55) supports the hypothesis that susceptibility involves downstream regulation rather than primary ion channel defects (C67). The biological relevance of the identified genes is well-supported by literature (C63-C66). The observation that each subject has risk-associated expression of at least one gene (C58) supports a polygenic model. However, the study would benefit from functional validation of these candidates and larger sample sizes for RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gender-specific analyses and transcription factor predictions suggest that differential gene expression between high-sensitivity and low-sensitivity iPSC-CMs reflects drug sensitivity rather than gender effects. Sex hormone-related transcription factors ranked low (AR: 16, ESR1: 20/180, ESR2: 24). Susceptibility was reproduced in vitro in a hormone-free environment, suggesting identified genes work as predisposing factors in both genders despite the gender imbalance in the clinical cohort (90% female in high-sensitivity vs. 80% male in low-sensitivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The gender analysis attempts to address an important confounding factor (C29, C71, C72). The approach of creating gender-matched comparisons and analyzing transcription factor predictions is methodologically sound (C59). However, the evidence is not entirely conclusive. While sex hormone-related transcription factors ranked relatively low, they were still present in the top 25 (C59, Figure 5\u2014figure supplement 1). The in vitro reproduction in a hormone-free environment (C73) is compelling but does not rule out that the genetic predisposition itself may have gender-specific penetrance in vivo. The small sample size (particularly only 1 male in high-sensitivity group) limits the power of gender-specific analyses. Additional studies with balanced gender representation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study employed extreme phenotype selection methodology to enrich for predisposing alleles and used a larger sample size (17 iPSC lines) than typical monogenic disease modeling studies. The iPSC platform detected significant differences at clinically relevant sotalol concentrations (10 \u03bcM). Only one iPSC clone per patient was evaluated, and discrepant results in two lines likely reflect inter-line variability, though this did not systematically bias results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design choices are well-justified. Extreme phenotype selection is an established methodology for complex traits (C77), and its application to iPSC modeling is innovative. The larger sample size (C79) compared to typical iPSC studies (usually 2-5 lines per group) increases confidence in the findings. The detection of differences at clinically relevant concentrations (C75, C76) is important for translational relevance. The limitation of using only one clone per patient (C80) is acknowledged, and the authors appropriately note that inter-line variability could explain discrepant results (C81). However, the low p-values for group comparisons (C28, C47, C50) suggest systematic effects beyond random variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C60",
+      "C61"
+    ],
+    "result": "Background literature establishes that drug-induced long QT (diLQT) is typically caused by hERG inhibition, affects <10% of exposed patients, has genetic determinism, and is difficult to predict because it develops in individuals with predisposing genetic makeup that does not affect baseline cardiac repolarization. Current hERG screening in animal models or heterologous systems has poor positive predictive value. Sotalol is a \u03b2-blocker with Class III antiarrhythmic properties and is a classical QT-prolonging drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are well-supported by appropriate citations to the literature (C2-C14, C60-C61). The claims accurately represent the current understanding of drug-induced QT prolongation and establish the rationale for the study. No critical evaluation of these background claims is needed as they serve to contextualize the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has shown that iPSCs can model monogenic disorders including congenital LQTS, with patient-specific iPSC-derived cardiomyocytes exhibiting electrophysiological abnormalities, increased arrhythmogenicity, and responses to QT-prolonging drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior iPSC work in cardiac disease modeling and are supported by appropriate citations (C15-C18). They establish the precedent for using iPSCs to study cardiac electrophysiology and drug responses, providing justification for extending this approach to the more complex phenotype of drug-induced QT prolongation.",
+    "result_type": "MINOR"
+  }
+]

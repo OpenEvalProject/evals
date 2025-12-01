@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C121"
+    ],
+    "result": "The study generated a comprehensive transcriptomic atlas of human organogenesis by RNA-seq of 15 embryonic organs/tissues, producing 28 strand-specific datasets with 44-90 million uniquely mapped reads per replicate, covering >90% of annotated protein-coding genes with high dynamic range (C3, C15-C18, C121). The material was ethically collected and staged by Carnegie classification (C101-C102), sequenced in three batches using TruSeq Stranded mRNA assay (C103-C104), with biological replicates clustering together despite batch effects (C105), and mapped using TopHat 2.0.9 to hg19 with GENCODE 18 annotation (C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and data generation are well-documented with appropriate technical details, quality metrics, and ethical compliance. The clustering of biological replicates across batches (C105, Figure 1\u2014figure supplement 4) validates data quality. The high coverage of protein-coding genes (C121) and read depth (C17-C18) support the comprehensiveness claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C122"
+    ],
+    "result": "Human embryonic datasets showed a distinctive transcriptome compared to fetal datasets from NIH Roadmap, with three-fold fewer differentially expressed genes but equivalent enrichment of gene ontology terms (C19-C20, C122). Embryonic datasets were enriched for early developmental processes (morphogenesis of epithelial bud, anterior/posterior pattern specification, embryonic morphogenesis) while fetal datasets showed enrichment for homeostatic processes (C21-C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with NIH Roadmap fetal data using edgeR (FDR < 0.05) is methodologically sound (C122). The GO term enrichment analysis using Fisher's exact test with the elimination algorithm (C114) appropriately identifies biological differences. Figure 1c and Supplementary files 1B-C provide supporting data for the differential enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Transcription factor expression patterns showed that ZNF and ZSCAN family members were broadly expressed across embryonic tissues, while other transcription factor families (exemplified by HOX gene clusters) showed discrete site-specific expression (C23-C25). User-defined sets of up to five developmental transcription factors displayed very high tissue specificity (C26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heatmap analysis in Figure 1\u2014figure supplement 1 clearly demonstrates broad vs. site-specific expression patterns. The HOX gene cluster data in Figure 1d provides a well-established example. The validation in Figure 1\u2014figure supplement 2 using known tissue-specific transcription factors confirms the ability to detect tissue-specific signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Standard PCA and clustering grouped biological replicates but failed to resolve relationships between organs/tissues beyond brain and liver distinctiveness (C27). Non-negative matrix factorization (NMF) identified 11 non-overlapping metagenes with clear tissue-specific signals for thyroid, liver, RPE, brain, heart, and adrenal gland (C28-C29). Metagene 2 (39 genes indicative of embryonic liver) showed enrichment in stem cell-derived hepatocytes and primary hepatocytes but not fibroblasts (C30-C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of standard PCA are clearly demonstrated in Figure 1\u2014figure supplements 3-4. The NMF analysis (Figure 1\u2014figure supplement 5) successfully identifies tissue-specific signatures. The validation using external hepatocyte differentiation data (C31-C32, Figure 1\u2014figure supplement 5b) provides independent support for the biological relevance of metagene 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study developed Lineage-guided Principal Components Analysis (LgPCA) by adapting phylogenetic PCA methods to constrain analysis by imposing a hierarchical developmental lineage (C33-C34, C110). Including human ESC data to represent pre-gastrulation biology (C35), LgPCA generated 31 PCs (C36), with the first 15 identifying patterns across related tissues and organ-specific signatures (C37), while PCs 16-31 sampled within-organ heterogeneity (C38). Early PCs (1-4) ordered samples by developmental events: pluripotency (PC1 high), early brain formation (PC2 low), foregut endoderm (PC4 low), and intermediate mesoderm (PC4 high) (C39-C42). PCs 5-15 resolved individual organs/tissues, e.g., PC5 low discriminated liver from other foregut endoderm derivatives (C43-C44). The method used the ppca function from adephylo R package with Abouheif distance, weighting PCs by lineage auto-correlation (C111-C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LgPCA methodology is well-documented with appropriate citations to the original phylogenetic methods (C110, Jombart et al. 2010a,b). The biological interpretations of PC loadings (C39-C44) are supported by Figure 2b and the inclusion of ESC data provides an appropriate developmental reference point. The distinction between global patterns (PCs 1-15) and local heterogeneity (PCs 16-31) shown in Figure 2\u2014figure supplement 1 validates the approach. However, the biological interpretations of PC loadings rely on inference and the user-defined lineage tree introduces subjective elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Analysis of the 1000 genes with most extreme loadings in PCs 1-15 using iRegulon identified master regulators of organogenesis (C45-C46). Known pluripotency regulators (NANOG, OCT4, MYC) were identified at PC1 extreme as proof-of-principle (C47-C48). In several instances, approaching half of the 1000 most extreme genes were predicted to be co-regulated by single transcription factors, such as HNF4A in liver (~50%) and SRF in heart (~43%) (C49-C51). The analysis predicted RUNX and BAD as novel regulators of human adrenal and gonadal development alongside NR5A1 (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iRegulon analysis is methodologically appropriate for identifying transcriptional regulatory networks from co-expressed genes. The recovery of known pluripotency factors (C47-C48) provides validation. The high percentages of genes predicted to be co-regulated by single factors (C49-C51, Figure 3a) are striking and biologically plausible for master regulators. However, the prediction of RUNX and BAD as novel regulators (C52) is speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Transcription factors comprised typically <5% of the 1000 most extreme genes in PCs 1-15 (C53). Of 594 transcription factors identified, 309 (52%) had relevant mouse mutation phenotypes supporting their role as key regulators of human organogenesis (C54). At PC5 low (liver), 22 transcription factors included all three required for reprogramming fibroblasts to hepatocytes (C55). Extreme PC loadings prioritized transcription factors responsible for major congenital disorders (C56), including the ability to predict multisystem abnormalities such as Holt-Oram syndrome (TBX5 at PC13 low, C57-C59) and TP63-associated palate and limb abnormalities (PC3 high, C60-C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation using mouse phenotype data from MGI (C54) and known reprogramming factors (C55, Huang et al. 2014) provides strong support. The identification of known disease-causing transcription factors at appropriate PC extremes (C57-C61) demonstrates biological validity. However, the 52% validation rate with mouse phenotypes (C54) indicates that not all predictions may be correct, and the multisystem abnormality predictions rely on inference from co-expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "To validate LgPCA's predictive power, 53 congenital disorders with defined critical regions (average 13.7 Mb, 111 genes) were assessed (C64). LgPCA uniquely selected the correct transcription factor in 37/53 cases (73%) and narrowed to \u22643 candidates in 48/53 cases (91%) (C65-C66). For 13 unresolved syndromes, LgPCA predicted causative genes including DLX5, DLX6, LHX8, FOXF2 for cleft palate (C67), ZIC1 and ZIC4 for cerebellar disorders (C68), CASZ1 for cardiac malformations in Chr1p36 deletion syndrome (C69), and SOX10 for 46,XX disorder of sex differentiation linked to Chr22 duplication (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation using known disease-causing genes is rigorous and shows impressive predictive accuracy (73% unique identification, 91% within top 3 candidates, C65-C66). The methodology of testing against early critical region mapping data (Supplementary file 1H) is appropriate. However, the predictions for unresolved syndromes (C67-C70) remain speculative until experimentally validated. The supporting mouse phenotype data for some predictions (C69-C70, Figure 3b) strengthens but does not prove causality in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study identified >6000 novel transcripts (6251 unique loci) accounting for >9 Mb of novel polyadenylated transcription (C7, C74). Over 90% fulfilled criteria as long non-coding RNAs (lncRNAs) based on CPAT score <0.2, length >200 bp, and absence of reads spanning splice junctions to annotated genes (C8, C75-C77). Among embryonic-enriched genes, 81/1571 were annotated LINC transcripts (C71). Novel transcripts were assembled using Cufflinks, systematically named following recommended criteria (C72-C73, C116), classified as bidirectional (TSS within 1 Kb of annotated gene TSS), antisense, overlapping, or intergenic (C78, C117), with sizes typically 500-1,500 bp but extending to >600 Kb (C79). Quality control confirmed no same-strand intronic mapping (C118), CPAT threshold >0.2 defined TUCPs (C119), and the longest transcript was retained per locus (C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcript assembly methodology using Cufflinks is standard and appropriate (C116). The classification criteria follow established guidelines (Mattick and Rinn 2015) with clear adaptations (C117). The CPAT analysis (Figure 4b) clearly shows >90% of transcripts have coding probability <0.2 (C75). Quality control measures (C118-C120) are appropriate to avoid false positives. The size distribution (Figure 4c) and classification breakdown (Figure 4a) support the claims. However, low coding potential alone does not definitively prove non-coding function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Novel lncRNAs showed high tissue-specificity (median Tau = 0.86) compared to protein-coding genes (0.63) but consistent with previously annotated non-coding genes (0.89) (C80-C82) and were correlated with the protein-coding genome over megabase distances (C9). Reduced physical distance to expressed annotated genes markedly increased co-expression likelihood (C83), though best correlations were not always with the closest gene (C84). Median distance to closest annotated gene was 7.7 Kb, while average best correlation was at 188 Kb (vs. 476 Kb random prediction) (C85-C87). Over half (3634) were classified as LINC RNAs (C88). Examples include HE-LINC-C7T121 showing correlation with TBX20 (a cardiac transcription factor mutated in congenital heart disease) over a 2 Mb window on chromosome 7 (C89-C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tissue-specificity analysis using Tau values (C80-C82, Figure 4d) is appropriate and shows lncRNAs have expected high specificity. The correlation analysis with genomic distance (C83-C87, Figure 4e-g) is well-executed and shows clear distance-dependent effects. The random prediction baseline (C87) provides appropriate context. The specific examples (C89-C90, Figure 4h) illustrate complex long-range correlations. However, correlation does not prove functional relationships, and the biological significance of these associations requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "This is the first comprehensive transcriptomic atlas during human organogenesis (C91). The lineage-guided analysis deciphered novel genetic signatures (C92), predicted causality in developmental disorders (C93), and associated novel non-coding transcription with the protein-coding genome (C94). Limitations include a relatively narrow developmental window (C95) and pooling across Carnegie stages for some sites due to tissue scarcity (C96), though pooling had no impact on LgPCA signatures (C97). The data are expected to be valuable for assessing PSC differentiation fidelity (C98) and identifying reprogramming factors (C99). The discovery of a major non-coding transcription program adds detail on spatiotemporal genome regulation (C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C91) is supported by comparison with existing resources (NIH Roadmap, etc.). The summary of achievements (C92-C94) is supported by the results presented. The acknowledged limitations (C95-C96) are appropriate, and the claim that pooling didn't affect LgPCA (C97) is supported by the successful tissue-specific signatures obtained. The potential applications (C98-C99) are reasonable extrapolations supported by the hepatocyte reprogramming validation (C55). The significance statement (C100) is justified by the discovery of >6000 novel transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C114",
+      "C115"
+    ],
+    "result": "Quantile normalization was used because highly distinct tissues differed on the scale of thousands of genes, violating TMM assumptions of few differentially expressed genes (C107). Quantile normalization gave lower median coefficient of variation than no normalization or TMM (C108). NMF was performed using the nmf R package to extract tissue-specific metagenes (C109). GO term enrichment used Fisher's exact test with the elimination algorithm in topGO (C114). iRegulon tests for enrichment in precomputed motif datasets to identify transcriptional regulatory networks (C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for quantile normalization (C107) is reasonable given the extreme tissue differences, though this choice could be debated. The empirical comparison showing lower coefficient of variation (C108) supports the choice. The use of established methods and packages (C109, C114, C115) with appropriate citations is methodologically sound. However, quantile normalization assumes all samples should have identical distributions, which may not be biologically appropriate for highly distinct tissues.",
+    "result_type": "MINOR"
+  }
+]

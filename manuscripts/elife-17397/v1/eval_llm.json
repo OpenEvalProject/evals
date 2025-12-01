@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Intracranial EEG was recorded from 11 epilepsy patients at the University of Bonn, with electrodes implanted stereotactically in the hippocampus. Data were recorded from the hemisphere contralateral to the seizure onset zone, resulting in 8 right hemisphere and 3 left hemisphere hippocampal datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40-C46, and C121-C124 provide comprehensive methodological details about patient recruitment, electrode implantation, recording parameters, and data selection criteria. The exclusion criteria are clearly stated and the final sample composition is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C95",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The experimental paradigm involved encoding German nouns paired with colors or scenes, followed by a retrieval test where participants indicated whether words were old/new and whether they remembered the associated detail. Encoding trials lasted 3s with plausibility judgments, while retrieval trials were self-paced (max 5s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53, C95, and C125-C127 provide detailed and consistent descriptions of the experimental design, timing parameters, and task structure. The paradigm is clearly operationalized to distinguish associative recognition (AR) from item recognition (IR).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Behavioral performance showed hit rates of 0.76 and correct rejection rates of 0.79. Response latencies were significantly shorter for AR (1.91s) than IR (2.14s). Performance was balanced across color and scene blocks with no significant differences in encoding responses or retrieval proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C96-C103 provide comprehensive behavioral results with appropriate statistical tests. The data demonstrate adequate task performance and confirm that collapsing across color/scene conditions is justified, supporting the validity of the experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C94",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "One anterior hippocampal electrode contact per participant was selected based on anatomical localization (MNI coordinates \u00b128, -17, -18 mm) and functional criteria including signal quality and coherence analysis. Anterior hippocampus was favored based on prior evidence for its role in associative memory and pattern completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C94, and C128-C135 describe a rigorous electrode selection procedure combining anatomical, functional, and quality criteria. The rationale for anterior hippocampus selection is well-justified by citations, and robustness checks (C135) confirm results are not dependent on specific electrode choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C58",
+      "C59",
+      "C141",
+      "C142",
+      "C62",
+      "C63"
+    ],
+    "result": "Data preprocessing involved automated and manual artifact rejection (excluding 12% of trials), followed by time-frequency decomposition using Hanning tapers for 2-29 Hz and multitapers for 30-100 Hz. Statistical comparisons used cluster-based permutation tests with \u03b1=0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 and C136-C142 provide detailed preprocessing and analysis methods. The approach is standard for intracranial EEG analysis, uses appropriate statistical corrections for multiple comparisons, and includes robustness checks showing results hold across different parameter settings (C141).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Successful associative recognition (AR) showed enhanced event-specific reinstatement of encoding patterns (0.5-1s) during retrieval (1-1.5s) compared to item recognition (IR) and surrogate controls. Reinstatement began at ~0.5s post-stimulus and reached maximum at ~1-1.5s. Results were robust to different analysis parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C104-C111 demonstrate hippocampal pattern completion with appropriate controls. The surrogate analysis (C107-C109) effectively rules out non-specific effects, and robustness analyses (C106) confirm findings across different time windows and frequency representations. The temporal dynamics are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C118",
+      "C117"
+    ],
+    "result": "Response-locked analysis showed that reinstatement reaches its maximum ~0.5s prior to the behavioral response, with the ~0.5-1s encoding pattern reinstated from -0.8 to -0.2s before the button press. Gamma power showed striking temporal overlap with this reinstatement time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C117-C118 provide converging evidence for the timing of pattern completion relative to memory decisions. The response-locked analysis controls for differences in response latencies between conditions and shows that reinstatement precedes the behavioral output, supporting a causal role in recollection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C112"
+    ],
+    "result": "Gamma power (50-90 Hz) showed a relative increase for AR compared to IR from ~0.5 to 1.3s post-stimulus. This effect was not driven by baseline differences, as confirmed by window \u00d7 condition interaction analysis showing significant post-stimulus but not pre-stimulus differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C112 demonstrate gamma power increases during successful associative recognition with appropriate baseline controls. The statistical analysis (C112) confirms the effect emerges after stimulus onset, ruling out pre-existing differences between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C113",
+      "C114"
+    ],
+    "result": "Alpha power (8-12 Hz) showed a relative increase for IR compared to AR from ~1 to 2s post-stimulus. This reflected a significant increase from baseline for IR but not AR, confirmed by window \u00d7 condition interaction analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C113-C114 demonstrate alpha power differences between conditions with proper baseline controls. The pattern suggests alpha increases specifically for unsuccessful associative retrieval rather than decreases for successful retrieval, which is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C24",
+      "C78"
+    ],
+    "result": "Gamma power increases correlated with the level of hippocampal reinstatement. Median-split analysis showed AR trials with higher gamma power had greater reinstatement (0.050 vs 0.031), with a significant power \u00d7 frequency band interaction on reinstatement values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22, C24, C78 establish a functional link between gamma oscillations and pattern completion. The median-split analysis provides within-condition evidence that gamma power tracks reinstatement strength, extending beyond simple between-condition differences. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C23"
+    ],
+    "result": "Alpha power decreases showed a trend toward correlation with hippocampal reinstatement, with lower alpha power associated with greater reinstatement (0.031 vs 0.052, p=0.079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C23 report a trend-level effect (p=0.079) for the relationship between alpha power and reinstatement. While the direction is consistent with the gamma findings, the lack of statistical significance means this relationship remains uncertain and requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Gamma power from ~0.5 to 1.3s correlated negatively with alpha power from ~1 to 2s both on a trial-by-trial level and across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by Figure 3\u2014figure supplement 2 showing both within-participant trial-by-trial correlations and across-participant correlations. This temporal dissociation suggests gamma and alpha effects reflect distinct but related processes during memory retrieval.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "No single frequency band alone was sufficient to drive reinstatement across all participants and trials, suggesting event-specific hippocampal reinstatement capitalizes on information across a wider range of frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by systematic frequency band exclusion analysis (Figure 2\u2014figure supplement 1). While reinstatement persists when excluding any single band, no individual band drives the effect alone, indicating distributed frequency contributions to pattern completion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Gamma power increases prior to behavioral response were highly specific to AR trials and did not distinguish between IR, misses, and correct rejections. AR trials showed significantly greater gamma power than all other conditions, pointing to a selective role in recollection-based associative recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide strong evidence for specificity of gamma effects to recollection. The omnibus ANOVA comparing four conditions (AR, IR, M, CR) shows gamma selectively tracks successful associative memory rather than familiarity or general recognition processes. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "During encoding, the same alpha band cluster (8-12 Hz) showed greater power for IR relative to AR, but with markedly earlier timing (~0.2 to 0.9s) than during retrieval (~1 to 2s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Figure 3\u2014figure supplement 3 showing alpha effects during encoding. The temporal shift between encoding and retrieval alpha effects suggests different functional roles at different memory stages, though the interpretation requires caution given the exploratory nature of this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Reinstatement results were robust to different analysis parameters: using only 43 frequency values at each time point, extending time windows from 400ms to 500ms, or averaging across 500ms all yielded significant effects for all four key comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 demonstrate robustness through systematic parameter variations. All pairwise comparisons (AR vs IR, AR vs surrogate, stimulus-locked and response-locked) remained significant across different analysis choices, strengthening confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Condition differences during retrieval unfolded after stimulus onset, and the timing of gamma/alpha differences (~0.5 to 2s) overlaps with the time window showing pattern completion for AR trials (1 to 1.5s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 establish temporal relationships between oscillatory dynamics and pattern completion. The baseline-corrected analyses confirm effects emerge post-stimulus, and the temporal overlap suggests functional coupling between oscillations and reinstatement processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The comparison with IR trials rules out that reinstatement merely reflects seeing the same noun, while the surrogate analysis controls for non-specific features and ensures event-specificity by factoring out similarities with other trials sharing the same association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe the logic of the experimental controls. The IR comparison controls for item-level processing, while the surrogate analysis controls for category-level reinstatement, together supporting the interpretation of event-specific pattern completion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study provides empirical evidence for pattern completion in the human hippocampus that reinstates event-specific encoding patterns during recollection, linked to gamma power fluctuations hypothesized to coordinate neuron selection, and time-shifted alpha power showing inverse relationship to gamma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 summarize the main conclusions. These are well-supported by the convergent evidence from reinstatement analyses, oscillatory dynamics, and their correlations. However, the mechanistic interpretations (C92-C93) remain somewhat speculative as they go beyond what can be directly observed in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior work establishes the hippocampus as key for episodic memory, with computational models proposing pattern completion via CA3 recurrent connections. Animal studies support this with NMDA receptor knockouts and optogenetic manipulations. However, direct empirical evidence for pattern completion in human hippocampus after single-shot learning has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 and C67-C72 accurately summarize prior literature with appropriate citations. The characterization of the gap in the literature (C68-C69) is reasonable, though somewhat overstated given prior fMRI and single-unit studies. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C84",
+      "C85"
+    ],
+    "result": "Increased gamma power during retrieval may reflect temporal alignment of pyramidal cells through inhibitory interneuron networks, potentially corresponding to a selective recruitment mechanism prioritizing neurons representing the target association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C33 and C84-C85 present speculative mechanistic interpretations. While grounded in cited literature about interneuron networks (C85), the specific interpretation of gamma increases as selective recruitment (C33) goes beyond what can be directly inferred from the LFP recordings. These remain plausible hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C89",
+      "C90"
+    ],
+    "result": "Alpha oscillations have been linked to idling or suppression in sensory cortices. The relative alpha increase for IR may reflect disengagement of retrieval operations, while the decrease for AR may reflect increased information content. This suggests a relationship between gamma-mediated retrieval processes and alpha-reflected information availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C38 and C89-C90 present competing interpretations of alpha effects (disengagement vs information content) without clearly distinguishing between them or providing decisive evidence. While both interpretations are grounded in cited literature, the data do not definitively support one over the other. The predictions about encoding (C89-C90) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Earlier encoding patterns are reinstated later during retrieval, with peak reinstatement occurring ~0.5s prior to behavioral response, consistent with prior electrocorticography studies of paired-associate recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe temporal dynamics of reinstatement with appropriate comparison to prior work (Yaffe et al., 2014). The response-locked timing is particularly important as it links reinstatement to memory decisions and shows consistency across recording modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior work challenges selective recollection accounts of hippocampal gamma, showing it also scales with familiarity. Single-unit studies show only ~50% of human hippocampal neurons increase firing to repeated stimuli, with twice as many showing decreases, suggesting inhibition plays a major role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 accurately summarize prior findings that complicate interpretation of gamma effects. The citations to Merkow et al. (2015) and single-unit studies (Viskontas et al., 2006; Jutras & Buffalo, 2010) are appropriately used to contextualize the current findings and motivate mechanistic interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Alpha power decreases during successful recognition have been observed in scalp EEG/MEG and ECoG studies. In hippocampus, broadband low-frequency decreases support encoding, but hippocampal low-frequency decreases during retrieval are rarely reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 accurately characterize the literature on alpha/low-frequency effects with appropriate citations. The observation that hippocampal alpha decreases are rare during retrieval (C88) provides important context for interpreting the current finding of alpha increases for IR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Field potentials from single intracranial electrodes reflect contributions from all active cellular processes in the underlying tissue volume. Time-frequency decomposition may be well-suited to capture local hippocampal pattern completion as firing patterns of distributed neurons differentially bias field potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C143-C145 provide appropriate justification for the analytical approach, grounded in comprehensive reviews (Buzs\u00e1ki et al., 2012) and rodent studies. The argument that time-frequency patterns can capture pattern completion is reasonable, though the interpretation remains somewhat speculative (C61).",
+    "result_type": "MINOR"
+  }
+]

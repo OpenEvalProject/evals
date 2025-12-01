@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C91",
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "Eleven Parkinson's disease patients who underwent bilateral STN DBS surgery 2-5 days prior were enrolled. All patients were tested on their normal dopaminergic medication and had good dopamine response (mean UPDRS-III improvement 61.9% \u00b1 12.6). The study was approved by the local ethics committee and participants gave written informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C91, C92, C95, and C96 provide clear documentation of participant characteristics, medication status, clinical response, and ethical approval. These methodological details are well-supported and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Behavioral analysis showed that participants were significantly faster during high vs. low coherence trials (974\u00b1302 ms vs. 1478\u00b1298 ms, p<0.001) and during speed vs. accuracy instructions (1146\u00b1322 ms vs. 1306\u00b1259 ms, p=0.002). There was a significant instruction\u00d7coherence interaction (p=0.011). Accuracy rates were lower during low vs. high coherence (73.9%\u00b19% vs. 95.7%\u00b15.6%, p<0.001), but instruction had no significant effect on overall accuracy (p=0.268). However, participants made significantly more errors during slow vs. fast trials after accuracy instructions (16.6%\u00b110.4% decrease, p=0.002) but not during speed instructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 present behavioral results with appropriate statistical tests (ANOVA, t-tests) and clear reporting of effect sizes and p-values. The pattern of results is internally consistent and the analysis of error distributions (C7) provides additional support for threshold modulation. Sample size (n=11) is modest but adequate for within-subjects design with multiple trials per condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Drift diffusion modeling showed that the model fitted the data well (Figure 2B). Low coherence trials had significantly lower drift rates than high coherence trials (100% posterior probability). Decision thresholds were significantly lower after speed vs. accuracy instructions (>99% posterior probability). Instruction had no effect on drift rates (67% posterior probability) or non-decision time (75% posterior probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 demonstrate appropriate application of hierarchical Bayesian drift diffusion modeling with clear reporting of posterior probabilities. The selective effects of coherence on drift rates and instruction on thresholds align with theoretical predictions and support the experimental manipulation. Model fit assessment via quantile probability plots (C8) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Eighteen healthy age-matched controls were recruited. There was no significant age difference between groups (t(27)=-0.675, p=0.505). In healthy participants, RT were faster in high vs. low coherence trials (652\u00b1124 ms vs. 1238\u00b1334 ms, p<0.001) and after speed vs. accuracy instructions (879\u00b1194 ms vs. 1011\u00b1219 ms, p<0.001). Neither the effect of coherence nor instruction on RT differed between patients and controls (both p>0.4). There were no differences between groups in decision threshold adjustments (51% posterior probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 provide important validation that PD patients on medication show comparable behavioral patterns and threshold adjustments to healthy controls. The statistical comparisons are appropriate and the lack of group differences in threshold adjustments (C18) supports the validity of studying speed-accuracy mechanisms in this patient population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "STN power showed a well-known decrease in 13-30 Hz beta power around the motor response (from ~250 ms before until 250 ms after), followed by an increase from ~500 ms until 1000 ms after the response. STN LFO power (2-8 Hz) showed an inverse pattern with a pronounced increase around the time of the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe basic STN oscillatory patterns that are well-established in the literature (C19 explicitly notes this). The observations are clearly documented with reference to Figure 3A and provide the foundation for subsequent analyses of task-related modulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "STN LFO power was significantly stronger after speed vs. accuracy instructions in the pre-response period (p<0.05), with no difference between coherence levels (p>0.05). This effect was also observed when aligning to cue onset with a significant cluster starting ~500 ms after dots onset (p<0.001). There was no significant intertrial phase clustering in either alignment (all p>0.05), indicating the LFO differences did not have strong evoked components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 demonstrate task-related LFO modulation using appropriate cluster-based permutation testing. The analysis of intertrial phase clustering (C25) provides important control evidence that effects reflect induced rather than evoked activity. The consistency across response- and cue-aligned analyses strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The cue-induced beta decrease was more pronounced after speed vs. accuracy instructions (11.8%\u00b15.8% vs. 6.9%\u00b13.3%, F(1,10)=6.619, p=0.028), with no effect of coherence (F(1,10)=0.177, p=0.683).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 identify a second neural correlate of speed-accuracy adjustments in the beta band. The analysis appropriately addresses RT confounds by focusing on early cue-induced changes. Statistical testing with ANOVA is appropriate and the selective effect of instruction supports specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Single trial changes in STN LFO and beta band were not statistically related to each other (mean rho=-0.006\u00b10.042, t(10)=-0.45, p=0.662).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 demonstrates statistical independence of the two neural correlates using appropriate correlation analysis. This finding is critical for establishing that LFO and beta represent distinct mechanisms, though the analysis is limited to linear relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "STN LFO power had a significant effect on decision thresholds (99% posterior probability) with a significant LFO\u00d7instruction interaction (95% posterior probability). Post-hoc tests showed LFO predicted elevated thresholds only after accuracy instructions (96% posterior probability), but not after speed instructions (63% posterior probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate a context-dependent relationship between LFO and thresholds using hierarchical Bayesian regression within the DDM framework. The interaction effect and post-hoc analyses are appropriately conducted. However, the interpretation that LFO 'predicts' thresholds should be understood as correlational rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cue-induced beta power decreases predicted lower decision thresholds (95% posterior probability) with no interaction with instruction (59% posterior probability). This relationship was specific to early cue-induced beta decrease, as pre-response beta power did not predict thresholds (54% posterior probability). Neither LFO nor beta power changes were related to trial-by-trial fluctuations in drift rates (all <75% posterior probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 establish the functional relationship between beta and thresholds, demonstrating temporal specificity (C35) and parameter specificity (C36). The lack of relationship with drift rates provides important control evidence. The analysis appropriately uses hierarchical Bayesian regression with neural data as trial-wise predictors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The HDDM incorporating STN power changes improved model performance compared to the HDDM without neural data (difference in deviance information criterion: 485).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 demonstrates substantial model improvement (DIC difference of 485 far exceeds the traditional threshold of 10 for significance). This provides strong quantitative evidence that STN activity contributes meaningful information about decision processes beyond behavioral data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Pre-response STN LFO power predicted increased RT only after accuracy instructions (slope: 0.038, p=0.022), but not after speed instructions (slope: -0.006, p=0.366). Stronger cue-induced decreases in STN beta power predicted shorter RT across instructions (slope: -0.022, p=0.035).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 demonstrate that relationships between STN activity and decision thresholds are also reflected in simple RT measures. This provides convergent evidence using a more accessible analysis approach, though RT conflates multiple decision processes unlike the DDM parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "EEG activity at Fz showed a stronger pre-response LFO increase compared to C3/C4 (2.7%\u00b14.4% vs. -1.1\u00b11.3%, p<0.05). Conversely, C3/C4 displayed a more pronounced cue-induced beta decrease compared to Fz (12%\u00b18% vs. 4.3%\u00b11.8%, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 establish spatial dissociation of LFO and beta modulations at the cortical level using appropriate permutation testing. This provides important evidence for distinct cortical networks, though the spatial resolution of scalp EEG is limited and electrode locations may not exclusively reflect the intended cortical areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Fz-STN ISPC in the LFO band was not significantly different between speed and accuracy instructions (p>0.1). However, correlations between Fz-STN ISPC and STN LFO power were significantly different between instructions (z(7)=-2.33, p=0.04). There was no relationship after speed instructions (rho=-0.301, p=0.938), but a significant positive correlation after accuracy instructions (rho=0.823, p=0.024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate context-dependent coupling between Fz and STN in the LFO band. The analysis appropriately examines both mean differences in coupling and correlations with power. The finding that coupling relates to power only during accuracy instructions parallels the threshold results. However, sample size for correlation analysis is small (n=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "C3/C4-STN ISPC in the beta band showed a pronounced decrease after cue onset only after speed instructions, leading to a significant difference between conditions (p<0.01). The relationship between C3/C4-STN beta ISPC and STN beta power was significantly different between instructions (z(7)=-2.65, p=0.016), driven by a significant positive correlation after speed instructions (rho=0.832, p=0.02) but not after accuracy instructions (rho=-0.447, p=0.534).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 establish context-dependent modulation of motor cortex-STN beta coupling. The authors acknowledge that power changes can affect phase coupling measures, though they provide control analysis showing differences persist when power is matched. The pattern complements the LFO findings but with opposite context-dependence. Small sample size (n=8) for correlations is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Two distinct, statistically-uncorrelated mechanisms were found comprising modulations of a Fz-STN network in the LFO band and a C3/C4-STN network in the beta band. These networks differed in cortical topography, timing of recruitment, spectral characteristics, and their relationship with decision thresholds. The Fz-STN network predicted increased thresholds only after accuracy instructions, while the C3/C4-STN network predicted decreased thresholds irrespective of instructions but was more strongly modulated during speed emphasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 synthesize the main findings into a coherent framework. The evidence from multiple analyses (power, connectivity, DDM regression) converges to support distinct mechanisms. However, these are summary/interpretive claims that integrate results rather than presenting new data. The causal language ('predicted') should be understood as correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The task was presented using PsychoPy v1.8 on a MacBook Pro. Instruction cue duration was jittered between 0.75-1.25s. Dot coherence was either 50% (high) or 8% (low). Speed and accuracy trials alternated in blocks of 20 trials, repeated six times for 240 total trials lasting ~10 minutes. After exclusions (3.1% of trials for behavioral criteria), an average of 201 trials (83.4%) remained per patient, totaling 2209 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 provide clear documentation of experimental parameters and data quality. The trial retention rate of 83.4% is reasonable. These methodological details are well-documented and support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Bilateral STN LFPs were recorded from implanted DBS electrodes. In 8 of 11 patients, EEG was recorded from Fz (dorsomedial PFC) and C3/C4 (motor cortex). Data were sampled at 2048 Hz, band-pass filtered 0.5-500 Hz, and amplified. Eye movement artifacts were removed by subtracting filtered and adaptively scaled EOG data. Data were downsampled to 200 Hz and filtered 1-100 Hz. Power and phase were computed using continuous wavelet transform with 2-5 cycles per frequency for 2-30 Hz in 1 Hz steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 document electrophysiological recording and preprocessing methods in appropriate detail. The methods are standard for LFP/EEG analysis. The adaptive EOG artifact removal approach is reasonable though not as robust as ICA. Time-frequency parameters are appropriate for the frequency ranges of interest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "In 53% of hemispheres, the bipolar channel showing the strongest beta modulation was identical to the channel showing the strongest LFO modulation. In 47% of hemispheres, the best LFO channel was localized ventrally to the best beta channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 document the spatial relationship between beta and LFO modulation within STN. This provides transparency about channel selection and suggests some spatial overlap but also dissociation. The description is clear and supported by Figure 3\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Cluster-based permutation testing was applied with 1000 permutations using p=0.05 as cluster-building and statistical threshold. There were no significant differences between error and correct trials for the low coherence condition (Figure 3\u2014figure supplement 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 document statistical methods and an important control analysis. Cluster-based permutation testing is appropriate for time-frequency data. The lack of differences between correct and error trials (C114) provides control evidence that effects are not driven by accuracy differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The hierarchical HDDM assumes parameters are drawn from group distributions while allowing individual variations. Priors were informed by 23 previous studies. The bias parameter z was fixed to 0.5 because leftward and rightward movements were equally likely. MCMC sampling generated 20,000 samples with 10,000 burn-in. Model convergence was ensured by inspecting traces, autocorrelation, and R-hat statistics. Trials with RT<425 ms (1.7%) were excluded to ensure the beta decrease did not overlap with motor response. Regression coefficients for trial-wise regressors were estimated only at the group level to address collinearity and prevent parameter explosion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 provide detailed documentation of HDDM implementation following established best practices. The methodological choices are well-justified with appropriate citations. The constraint on the bias parameter (C117) is appropriate given the balanced design. The exclusion criterion (C120) is reasonable though somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "DIC is mainly used for comparisons of hierarchical models where other measures like BIC are not appropriate. DIC differences >10 are traditionally considered significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 accurately describe the use and interpretation of DIC for hierarchical model comparison, with appropriate citations. This provides context for interpreting the model comparison result in C37.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ISPC is a phase-based connectivity measure reflecting phase-locking between areas at specific time points. ISPC is independent of power changes as it only considers phase information, though it can be affected when power is very low or zero. Single subject estimates of decision thresholds were not used for correlation analyses because the hierarchical design of HDDM violates the assumption of independence of observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 accurately describe the ISPC measure and its properties, with appropriate citations. The acknowledgment of power effects on ISPC (C125) is important given the interpretation of connectivity results. The constraint on using individual threshold estimates (C126) is methodologically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript provides extensive background on speed-accuracy trade-offs, drift diffusion models, basal ganglia circuitry, and prior neurophysiological findings. This includes discussion of theoretical frameworks, anatomical connectivity, prior fMRI and electrophysiology studies, and proposed mechanisms. The authors note that decision thresholds are not modulated by dopamine in healthy people or PD patients, justifying testing patients on medication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C94 represent background knowledge, literature review, and theoretical context with appropriate citations throughout. These claims accurately represent prior work and provide necessary context for the current study. The statement about dopamine not affecting thresholds (C93-C94) is important for justifying the medication status of patients.",
+    "result_type": "MINOR"
+  }
+]

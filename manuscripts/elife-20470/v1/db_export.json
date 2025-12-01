@@ -1,0 +1,1875 @@
+{
+  "submission": {
+    "id": "525f0794-0071-425c-93c0-a447a71283f4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:17:58.314704Z",
+    "updated_at": "2025-11-30T23:17:58.314704Z"
+  },
+  "content": [
+    {
+      "id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "submission_id": "525f0794-0071-425c-93c0-a447a71283f4",
+      "content_type": "manuscript",
+      "content_text": "# A molecular mechanism for the topographic alignment of convergent neural maps\n\n## Authors\n\n- Elise Savier<sup>1</sup> ([ORCID: 0000-0001-7512-1630](https://orcid.org/0000-0001-7512-1630))\n- Stephen J Eglen<sup>2</sup> ([ORCID: 0000-0001-8607-8025](https://orcid.org/0000-0001-8607-8025))\n- Am\u00e9lie Bath\u00e9l\u00e9my<sup>1</sup>\n- Martine Perraut<sup>1</sup>\n- Frank W Pfrieger<sup>1</sup>\n- Greg Lemke<sup>4</sup>\n- Michael Reber<sup>1</sup> ([ORCID: 0000-0001-8842-7276](https://orcid.org/0000-0001-8842-7276)) \u2020\n\n### Affiliations\n\n1. CNRS UPR3212 \u2013 Institute of Cellular and Integrative Neuroscience University of Strasbourg Strasbourg France\n2. Department of Applied Mathematics and Theoretical Physics Cambridge Computational Biology Institute, University of Cambridge Cambridge United Kingdom\n3. University of Strasbourg Institute of Advanced Study Strasbourg France\n4. Molecular Neurobiology Laboratory The Salk Institute for Biological Studies San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSensory processing requires proper alignment of neural maps throughout the brain. In the superficial layers of the superior colliculus of the midbrain, converging projections from retinal ganglion cells and neurons in visual cortex must be aligned to form a visuotopic map, but the basic mechanisms mediating this alignment remain elusive. In a new mouse model, ectopic expression of ephrin-A3 (Efna3) in a subset of retinal ganglion cells, quantitatively altering the retinal EFNAs gradient, disrupts cortico-collicular map alignment onto the retino-collicular map, creating a visuotopic mismatch. Genetic inactivation of ectopic EFNA3 restores a wild-type cortico-collicular map. Theoretical analyses using a new mapping algorithm model both map formation and alignment, and recapitulate our experimental observations. The algorithm is based on an initial sensory map, the retino-collicular map, which carries intrinsic topographic information, the retinal EFNAs, to the superior colliculus. These EFNAs subsequently topographically align ingrowing visual cortical axons to the retino-collicular map.\n\n## Introduction\n\nBrain function relies on the\u00a0efficient processing of sensory information, which in turn requires the proper formation and interaction of multiple sensory maps of the world. The superior colliculus (SC) of the midbrain is a major hub for sensory processing, as it receives organized inputs from visual, auditory, and somatosensory modalities (May, 2006). The SC is a laminated structure controlling visuo-spatial orientation and attention (May, 2006; Krauzlis et al., 2013). As such, defective visual processing in the SC has been associated with psychiatric conditions (Mathis et al., 2015). Visual information reaches the superficial layers of the SC, which are innervated both by retinal ganglion cells (RGCs - the retino-collicular projection) and by layer V neurons of the primary visual cortex V1 (the cortico-collicular projection). During development in the mouse, the retino-collicular map forms during the first post-natal week, and is followed by the cortico-collicular map, which develops between P6 and P12 (Triplett et al., 2009). These visuotopic maps must be aligned to ensure efficient modulation of the SC\u2019s retinal response by V1 inputs (Zhao et al., 2014; Liang et al., 2015). It has been suggested that the formation of the visuotopy is a stochastic process instructed by a balanced contribution of molecular cues and correlated neuronal activity (Chandrasekaran et al., 2005; Tsigankov and Koulakov, 2006; 2010; Triplett et al., 2009; Ackman and Crair, 2014; Owens et al., 2015). However the basic principles and underlying molecular mechanisms governing the alignment of converging maps have not been fully described.\n\nPotential candidates are gradients of Eph receptor tyrosine kinases (EPHs) and their membrane-bound ligands, the ephrins (EFNs), already known to control retino-collicular map formation. In the mouse, EPHA4/A5/A6 receptors are present on projecting RGCs in a low-nasal to high-temporal gradient. RGC axons are repelled when their EPHAs contact and are activated by collicular EFNA2/A3/A5, expressed in a low-rostral to high-caudal gradient in the SC (Lemke and Reber, 2005; Cang and Feldheim, 2013). Counter-gradients of ligands (EFNA2/A3/A5) and receptors (EPHA3/A4/A7) are also present in the RGCs and the SC respectively, but their role remains controversial (Feldheim et al., 2010; Triplett and Feldheim, 2012; Suetterlin et al., 2012; Weth et al., 2014). In V1, gradients of EPHA4/A7, running from high-lateral to low-medial have also been observed, and evidence from genetic analyses suggests their involvement in the development of cortico-collicular projections (Cang et al., 2005; Wilks et al., 2010). Moreover, the formation of the cortico-collicular map requires retinal input (Khachab and Bruce, 1999; Triplett et al., 2009), but again, the underlying molecular mechanisms remain elusive.\n\nThe complex expression patterns of Epha/Efna gradients in both projecting and target structures require the development of incisive in vivo approaches to address, in a selective and quantitative manner, the function of these gradients in specific neuronal projections. Here, we analyzed the role of retinal Efna gradients in visuotopic map formation in the SC. We generated a unique mouse model in which EFNA3 is ectopically expressed only in Isl2(+) RGCs, therefore quantitatively disrupting the EFNA gradients exclusively in the retina without affecting Ephas/Efnas expression in other visually-related structures. Surprisingly, Isl2-ires-Efna3 knock-in mice (referred as Efna3 KI) exhibited normal retino-collicular/geniculate maps and normal ipsi/contra-lateral projections. In marked contrast, the formation of the cortico-collicular map was severely disrupted, leading to a mix of single and duplicated projections and generating a mismatch with the retino-collicular map. The causal role of EFNA3 ectopic expression was further confirmed when in vivo inactivation by co-expressed EPHA3 receptor in the same Isl2(+) RGCs restored a wild-type map. Theoretical modelling recapitulated our experimental observations in normal and aberrant conditions induced by EFNA3 ectopic expression, therefore validating the basic principle and mechanism of map alignment. This mechanism suggests that a leading sensory map carries positional information cues for further sensory projections, within the same modality, to align and adjust.\n\n## Results\n\n### Knock-in mice for Efna3 ectopic expression in Isl2(+) RGCs show normal retino-collicular and retino-geniculate projections\n\nTo test the role of retinal EFNA ligands in visuotopic map formation, we generated knock-in mice in which a full length Efna3 cDNA was inserted, flanked by an internal ribosome entry site (ires), into the 3'-UTR region of the Islet-2 (Isl2) gene (Figure 1\u2014figure supplement 1), similar to a previous approach (Brown et al., 2000). Immunohistochemical staining confirmed ectopic expression of EFNA3 in somata and proximal axons of Isl2(+) RGCs in postnatal day 1 (P1) and P8 Efna3 homozygous knock-in (Efna3KI/KI) mice compared to wild-type (WT) littermates (Figure 1A\u2013F) without affecting Isl2 expression at P1 (Figure 1G,H). Efna3KI/KI mice present two intermixed sub-populations of RGCs: Isl2(\u2212) cells, expressing wild-type levels of Efna3, and Isl2(+) cells expressing additional Efna3 (Figure 1E\u2013F,I\u2013N). EFNA3 is observed on RGC axons in vitro (Figure 1O,Q\u2019). Ectopic expression of EFNA in Isl2(+) RGCs did not induce perceptible changes in synaptic layers or retinal organization (Figure 2A,B). Quantitative transcript (mRNA) measurement on RGC cell bodies, performed and standardized as described previously (Reber et al., 2004; Claudepierre et al., 2008) confirmed a two-fold increase of Efna3 mRNA and normal levels of Efna2/a5 mRNA in nasal, central and temporal Efna3KI/KI mutant retinas when compared to WT littermates (Figure 2C). Together, these data confirm a two-fold ectopic expression of Efna3 in Isl2(+) Efna3KI/KI RGCs, which generates an oscillating high-nasal to low-temporal gradient in Efnas expression in the Efna3 KI mouse, very similar to the oscillating Ephas gradient we previously described for Isl2-Epha3 knock-in mice (Reber et al., 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013F) Immunochemical staining using anti-EFNA3 (LS-C6547, LS-Bio) in P1 (A, B) and P8 (C) WT (n\u00a0=\u00a03 animals) and P1 (D, E) and P8 (F) Efna3KI/KI (n\u00a0=\u00a05 animals) RGCs. In (E, F) arrows indicate EFNA3 WT expression level in RGCs, arrowheads indicate putative ectopic (knock-in) EFNA3 expression in RGCs. The asterisk highlights strong EFNA3 labelling in the RGC fiber layer. Scale bars represent 200 \u03bcm (A, D), 20 \u03bcm (B\u2013F). (G\u2013H) Immunostaining of ISL2 in P1 WT (n\u00a0=\u00a03 animals) (G) and Efna3KI/KI (n\u00a0=\u00a05 animals) (H) RGCs in the ganglion cell layer. Arrowheads indicate ISL2(+) RGCs. Scale bars represent 20 \u03bcm. (I\u2013N) Immunostaining of ISL2 (I, L), EFNA3 (LS-C6547, LS-Bio) (J, M) and merged (K, N) in P1 and P7 Efna3KI/KI (n\u00a0=\u00a05 animals) RGCs. Arrowheads indicate ISL2(+) RGCs with high EFNA3. Arrows indicate ISL2(-) RGCs with wild-type EFNA3 level. Scale bars represent 10 \u00b5m. (O, Q\u2019) EFNA3 (LS-C6547, LS-Bio) (O, Q, Q\u2019) and axonal marker TAU (P, Q, Q\u2019) co-immunostaining on P6 RGC in culture (DIV 5) (n\u00a0=\u00a03 animals). (Q\u2019) shows an EFNA3/TAU co-labelled RGC axon at higher magnification. Scale bars represent 10 \u00b5m. GCL, ganglion cell layer; RGC, retinal ganglion cell; DIV, days in vitro; WT, wild-type.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig1-figsupp1-v1.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Synaptophysin (red) and DAPI (blue) staining in P34 WT (n\u00a0=\u00a04 animals) (A) and Efna3KI/KI (n\u00a0=\u00a04 animals) (B) retinas. Scale bars represent 50 \u00b5m. (C) Efna mRNAs relative to nasal WT quantified in acutely isolated RGCs from nasal (N), central (C) and temporal (T) retinas and normalized against Gapdh and Hprt in P3 WT and Efna3KI/KI (WT, n\u00a0=\u00a06 animals/12 retinas; Efna3KI/KI, n\u00a0=\u00a08 animals/16 retinas, variables are normally distributed, two-way ANOVA: Efna2 genotype F11,3\u00a0=\u00a01.79, p\u00a0=\u00a00.11; Efna5 genotype F11,3\u00a0=\u00a02.08, p\u00a0=\u00a00.07; Efna3 genotype F11,3\u00a0=\u00a08.11, ***p<0.001). WT, wild-type; GCL, ganglion cell layer; IPL, inner plexiform layer; INL, inner nuclear layer; OPL, outer plexiform layer; ONL, outer nuclear layer; OS, outer and inner segments; RGCs, retinal ganglion cells.\n\nTo study retino-collicular map formation, we performed focal anterograde DiI labelling in the retina of P7 mice and analyzed the termination zones (TZs) in the SC at P8, as described previously (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011). For quantitative analysis, we measured the locations of the termination zones (TZs) along the rostral-caudal axis of the SC and the location of the focal DiI injections along the nasal-temporal axis of the retina (Figure 3\u2014figure supplement 1). Plotting these values in Cartesian coordinates, as described previously (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011), revealed normal linear retino-collicular maps in Efna3KI/KI and Efna3KI/+ mice, equivalent to those of WT littermates (Figure 3A). Detailed analysis showed that the size and the layering of the retinal TZs are similar between Efna3KI/KI and WT littermates (Figure 3\u2014figure supplement 2). Retrograde labelling confirmed that axons from both Isl2(\u2212) and Isl2(+) RGCs project to the SC (Figure 3B\u2013G). Anterograde focal injections show normal retino-geniculate mapping (Figure 3H\u2013K) and labelling by full-eye fills showed normal retino-collicular/geniculate eye-specific segregation (Figure 3L\u2013Q) in Efna3KI/KI similarly to WT littermates. These results demonstrated that a two-fold increase of ectopic retinal Efna3 expression in Isl2(+) RGCs does not disturb the formation of the retino-collicular/geniculate mapping nor eye-specific segregation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig3-v1.jpg)\n\n**Figure 3.:** (A) Retino-collicular maps generated by the Leave-One-Out method at P8 in WT (n\u00a0=\u00a038 animals), Efna3KI/+ (n\u00a0=\u00a015 animals) and Efna3KI/KI (n\u00a0=\u00a043 animals) mutants. Grey lines represent each map for each leave-one-out run. Each dot represents an individual mouse. (B\u2013G) P8 DiI retrograde labelling (red) coupled to immuno-staining (green) of EFNA3 (B\u2013D) and ISL2 (E\u2013G) in Efna3KI/KI (n\u00a0=\u00a04 animals) mutant retinas. Arrowheads indicate ISL2(+) / high EFNA3 DiI labelled RGCs. Scale bars represent 10 \u00b5m. (H\u2013K) Anterograde labelling after focal DiI injections in the retina showing retino-geniculate projections from the temporal-ventral (T\u2013V) (H, I) and nasal-ventral (N\u2013V) (J, K) retinal quadrants between Efna3KI/KI (H, J), (n\u00a0=\u00a04 animals) and WT (I), (K), (n\u00a0=\u00a04 animals) P8 littermates. Scale bars represent 400 \u00b5m. (L\u2013Q) Anterograde labelling after full-eye injections showing eye-segregation in P8 WT (n\u00a0=\u00a03 animals) SCs (whole-mount top view: L); coronal sections: M, (M\u2019) and dLGN (N) and in Efna3KI/KI (n\u00a0=\u00a04 animals) SCs (whole-mount top view: O); coronal sections: P, (P\u2019) and dLGN (Q). Scale bars represent 250 \u00b5m (L\u2013P\u2019), 100 \u03bcm (N, Q). WT, wild-type; GCL, ganglion cell layer; T, temporal; N, nasal; R, rostral; C, caudal; dLGN, dorsal lateral geniculate nuclei; SC, superior colliculus.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scale bars represent 400 \u00b5m. D, dorsal; N, nasal; T, temporal, V, ventral; R, rostral; C, caudal; SC, superior colliculus.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Insets show the corresponding retinal DiI injection indicated by a white arrow. Scales bars represent 400 \u00b5m. N, nasal; T, temporal; R, rostral, C, caudal; SC, superior colliculus; WT, wild-type.\n\n### Cortico-collicular maps are duplicated in Isl2-Efna3KI mutants\n\nTo test whether retinal EFNA guidance cues influence the formation of the V1 cortico-collicular map, we traced cortico-collicular projections from V1 cortex by focal DiI injection in P14 mice and analyzed the location of the TZs in the SC at P15. Quantitative analyses using ImageJ revealed a remarkable duplication of the cortico-collicular map for single injections along the lateral-medial axis of the V1 in 47% of Efna3KI/KI (n\u00a0=\u00a09/19, Figure 4A, Figure 4\u2014figure supplement 1A, Figure 4\u2014figure supplement 2A) and 43% of Efna3KI/+ (n\u00a0=\u00a07/16, Figure 4B, Figure 4\u2014figure supplement 1B) animals when compared to WT littermates (n\u00a0=\u00a09, Figure 4C, Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 2B) demonstrating heterogeneity of the phenotype in Efna3 KI mutants. If this heterogeneity is caused by genetic variations between animals, the same type of projections (either single or duplicated) should be observed in both colliculi of a given animal. This was not observed in 60% of Efna3KI/KI (n\u00a0=\u00a03/5) and 57% of Efna3KI/+ (n\u00a0=\u00a04/7) animals when we traced the cortico-collicular projections in both left and right colliculi (Figure 4D,D\u2019). Therefore, genetic variation is unlikely to contribute to the map heterogeneity between animals of the same genotype. This heterogeneity is most likely the consequence of a stochastic process of map formation, as suggested previously (Owens et al., 2015). In Efna3KI/KI animals showing the same type of projections between colliculi, (40% of the mice) all of these projections were duplicated whereas in the Efna3KI/+ animals, the remaining 43% presented only single projections in both left and right colliculi, suggesting an effect of the level of Efna3 ectopic expression onto cortico-collicular map duplication. As expected, all WT animals tested (n\u00a0=\u00a04) showed single projections in both colliculi (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Cortico-collicular maps generated by the Leave-One-Out method at P15 in Efna3KI/KI (n\u00a0=\u00a019 animals) (A), Efna3KI/+ (n\u00a0=\u00a016 animals) (B) and WT (n\u00a0=\u00a09 animals) (C) mutant littermates. Grey lines represent each map for each leave-one-out run for duplicated and single maps. Each dot represent an individual mouse. (A\u2019\u2013C\u2019) show examples of single (A\u2019, B\u2019, C\u2019) and duplicated (A\u2019\u2019, B\u2019\u2019) cortical TZs in collicular sagittal sections from different genotype together with the corresponding injections in V1 (lower panels in A\u2019\u2013C\u2019). The corresponding coordinates are labelled by red arrows (duplicated) or a black arrow (single). Scale bars represent 400 \u00b5m (A\u2019\u2013C\u2019), 1 mm (insets in A\u2019\u2013C\u2019). (D\u2013D\u2019) Percentage of heterogeneous duplicated/single (D/S) or homogeneous single/single (S/S) or duplicated/duplicated (D/D) projections in both colliculi of the same animal (D) (Efna3KI/KI, n\u00a0=\u00a05 animals; Efna3KI/+, n\u00a0=\u00a07 animals; WT, n\u00a0=\u00a04 animals). (D\u2019) shows an example of cortico-collicular TZs from left and right colliculi and corresponding V1 injections in a P15 Efna3KI/+ animal. Scale bars represent 400 \u00b5m (for colliculi), 1 mm (for V1). (E) Mean separation between duplicated maps measured experimentally (\u0394Sexp) in Efna3KI/KI (median\u00a0=\u00a013%, 1stquartile\u00a0=\u00a010%, third quartile\u00a0=\u00a013%, n\u00a0=\u00a09 animals) and Efna3KI/+ (median\u00a0=\u00a07%, 1stquartile\u00a0=\u00a06%, third quartile\u00a0=\u00a09.5 % n\u00a0=\u00a07 animals) (non-parametric Mann and Whitney test, **p=0.020). (F) Sagittal section of P15 Efna3KI/KI (n\u00a0=\u00a04 animals) DiI labelled cortical projection (left) and merged image of CTB-488 full-eye fill and cortical DiI projection (right). Scale bars represent 200 \u00b5m. L, lateral; M, medial; R, rostral; C, caudal; S, single; D, duplicated; TZ, termination zone; WT, wild-type.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** White panels show the termination zones analyses using ImageJ. Scale bars represent 1 mm (V1 whole-mount), 500 \u03bcm (SC), R: rostral, C: caudal, L: lateral, M: medial; WT, wild-type.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** White panels show the corresponding ImageJ termination zones analyses. Scale bars represent 1 mm (V1) SC, 500 \u00b5m (SC). R, rostral; C, caudal; L, lateral; M, medial; SC, superior colliculus; WT, wild-type.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Scale bars represent 30 \u00b5m (A, D), 10 \u03bcm (B - F).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013F) Immunohistochemical staining revealing EFNA3 expression (green) in P3 and P8 Efna3KI/KI and WT SC parasagittal sections after retinal anterograde DiI injection (red fibers).\u00a0Scale bars represent 30 \u03bcm (A, D), 10 \u03bcm (B - F). (H) Absence of EFNA3 in P8 Efna3-/- proximal optic nerve. Scale bar represents 20 \u00b5m. (I\u2013J\u2019) Co-immunostaining of EFNA3 (green) (I\u2013J\u2019) and NF200 (red) (J, J\u2019) on P8 Efna3+/- proximal optic nerves validating the specificity of the antibody staining. Insets in (I) and (J) correspond to (I\u2019) and (J\u2019) respectively. Arrowhead in (I\u2019) and (J\u2019) show co-stained fibers. Scale bars represent 20 \u00b5m.\n\nNext, we calculated the average distance of separation (\u0394Sexp) between the duplicated maps in Efna3 KI mutants as a percentage of the rostral-caudal axis of the SC (Figure 4A,B). This revealed a significant two-fold difference in map separation between Efna3KI/KI (\u0394Sexp\u00a0median\u00a0=\u00a013%, n\u00a0=\u00a09) and Efna3KI/+ (\u0394Sexp\u00a0median\u00a0=\u00a07%, n\u00a0=\u00a07) animals, which correlates with the presence of one or two copies of the Isl2-ires-Efna3 allele (Figure 4E). Since Isl2 is not expressed in the cortex (see Figure 5B), these results suggest that Efna3 ectopic expression in Isl2(+) RGC axons/TZs destabilizes the stochastic process of cortico-collicular mapping, leading to map duplication in Efna3 KI animals. This in turn implies that V1 EphA-positive cortical axons sense varying EFNA3 levels on RGCs terminals by direct contact with these terminals in the SC (Cang et al., 2005) and anterograde labelling from retina and V1 cortex showed that both cortical and retinal axons terminals overlap in the superficial layers of the SC (Figure 4F) (Phillips et al., 2011; Owens et al., 2015). To further analyze the presence of EFNA3 of retinal origin in the SC, we performed EFNA3 immunohistochemistry coupled to retinal DiI injections on collicular sections. DiI labelled RGC axons were observed in the SC, as well as a strong collicular EFNA3 staining (Figure 4\u2014figure supplement 3A\u2013F, Figure 5\u2014figure supplement 1A\u2013D\u2019). However, no EFNA3 staining on single DiI-labelled RGC axons could be detected in neither Efna3KI/KI nor WT littermates (Figure 4\u2014figure supplement 3A\u2013F). EFNA3 immunohistochemistry on P3 Efna3KI/KI and WT optic nerve (ON) longitudinal sections (proximal, middle and distal to the optic cup) showed the presence of EFNA3 on fibers within the proximal part of the ON in Efna3KI/KI and WT littermates (Figure 4\u2014figure supplements 4A,A\u2019, D,D\u2019) but not on the proximal part of Efna3\u2212/\u2212 ON (Figure 4\u2014figure supplement 4H). EFNA3 signal was also detected in the middle part of the ON in Efna3KI/KI but not in WT (Figure 4\u2014figure supplements 4B,B\u2019, E,E\u2019) and was nearly impossible to discern in the distal part of Efna3KI/KI ON (Figure 4\u2014figure supplements 4C,C\u2019, F,F\u2019), indicating that EFNA3 is present on RGC axons. This was further confirmed by co-localization of EFNA3 with NF200 on fibers (Figure 4\u2014figure supplement 4I\u2013J\u2019 and Figure 1B\u2013F,O\u2013Q\u2019). Retrograde labelling confirmed that the cortico-collicular projections originate from layer V neurons in V1 cortex in P14 Efna3KI/KI animals (Figure 5A). No bi-cistronic expression of Isl2-ires-Efna3 in either SC or V1 cortex of WT and Efna3KI/KI animals could be detected (Figure 5B), ruling out any indirect effects of Efna3 ectopic expression. Transcript analyses in colliculi and V1 cortices revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Efna3KI/KI compared to WT littermates at P7 (Figure 5C) excluding indirect effects due to local changes of Ephas/Efnas gene expression. Similar level of EFNA3 between Efna3KI/KI and WT littermates was further confirmed by immunostaining of EFNA3 (Figure 5\u2014figure supplement 1A\u2013E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig5-v1.jpg)\n\n**Figure 5.:** (A) Retrograde labelling by collicular DiI injection in P14 Efna3KI/KI (n\u00a0=\u00a04 animals) and WT (n\u00a0=\u00a03 animals) showing the localization of the projecting V1 cortical neurons in layer V (DiI, red; DAPI, bue). Scale bars\u00a0represent 100 \u00b5m. (B) PCR amplification products from P7 RNA (35 cycles) in Efna3KI/KI (n\u00a0=\u00a03 animals per genotype). A single amplicon of 90 bp, corresponding to an amplified sequence located in the ires cassette of the targeted construct, is observed only in Efna3KI/KI retina. (C) Box-plot of Efna2/a3/a5 and Epha4/a7 mRNA fold-expression levels relative to wild-type (WT) at P7 in the superior colliculus and V1 cortex of Efna3KI/KI mutants (n\u00a0=\u00a04 animals for each genotype, two colliculi/V1 per animal, variables are normally distributed, one sample t-test: superior colliculus: Efna2, p\u00a0=\u00a00.17; Efna3, p\u00a0=\u00a00.48; Efna5, p\u00a0=\u00a00.50; Epha4, p\u00a0=\u00a00.09; Epha7, p\u00a0=\u00a00.26 \u2013 V1 cortex: Efna2, p\u00a0=\u00a00.09; Efna3, p\u00a0=\u00a00.61; Efna5, p\u00a0=\u00a00.84; Epha4, p\u00a0=\u00a00.07; Epha7, p\u00a0=\u00a00.58).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** R, rostral; C, caudal. Scale bars represent 200 \u00b5m (A\u2013D\u2019), 100 \u00b5m (E).\n\n### Genetic cis-inactivation of ectopic EFNA3 expression in RGCs restores a wild-type cortico-collicular map\n\nIf the defective cortico-collicular maps in the Efna3 KI animals were solely due to Efna3 ectopic expression in Isl2(+) RGCs, then inactivation of this ectopic expression should rescue the phenotype and restore a wild-type map. Previous work showed that co-expression of EFNA3 ligand and EPHA3 receptor in the same cell leads to their mutual inactivation through cis-masking (Falivelli et al., 2013). To accomplish this in vivo, we generated double heterozygous mice carrying Epha3 on one allele of the Isl2 gene and Efna3 on the second allele (Epha3KI/Efna3KI). Immunohistochemical staining confirmed co-expression of EFNA3 and EPHA3 in acutely isolated double heterozygous RGCs (Figure 6A). Importantly, previous studies demonstrated that ectopic expression of the EPHA3 receptor in Isl2(+) RGCs in heterozygous Epha3KI/+ animals results in a duplicated retino-collicular map (Figure 6\u2014figure supplement 1, Brown et al., 2000). Remarkably, co-expression of Epha3 and Efna3 in Epha3KI/Efna3KI double-mutant mice reverted the duplications, leading to normal retino- and cortico-collicular maps (Figure 6B,C). This double rescue of both maps indicates that cortico-collicular defects in Efna3 KI animals were caused by ectopic expression of EFNA3 in Isl2(+) RGCs and were restored by concomitant expression of EPHA3. The cis-inactivation mechanism was cross-validated by the presence of a normal retino-collicular map in the Efna3KI/Epha3KI double mutant mice, indicating EPHA3 inactivation (Figure 6C). To further evaluate any residual EFNA3 or EPHA3 signaling activity, we generated Epha3KI/Efna3KIxEpha4 knock-in/out compound mutants. In these mice, decreasing the overall level of retinal EPHA receptors by eliminating EPHA4 expression would reveal subtle changes in retinal EPHA signaling strength (Reber et al., 2004; Bevins et al., 2011). According to the Relative Signaling model in the Epha3KI/+::Epha4+/\u2212 and Epha3KI/+::Epha4\u2212/\u2212 compound mutant animals analyzed previously (Reber et al., 2004) any residual EPHA3 signaling on map formation would generate duplicated retinal TZs, particularly in the caudal part of the SC where nasal RGCs axons, expressing low levels of EPHA receptors, project. Retinal DiI anterograde tracing revealed no retino-collicular duplications, even in the caudal-most pole of the SC, in Epha3KI/Efna3KI::Epha4+/- and Epha3KI/Efna3KI::Epha4\u2212/\u2212 compound mutants, confirming inactivation of EPHA3 and EFNA3 in Isl2(+) RGCs (Figure 6D,E). Altogether, these results suggest that EPHA3 and EFNA3 ectopic expression in the same RGCs lead to their mutual inactivation and confirm that cortico-collicular mapping duplications observed in Efna3 KI animals are the consequence of retinal EFNA3 ectopic expression.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig6-v1.jpg)\n\n**Figure 6.:** (A) Co-immunostaining of EFNA3 (LS-C6547, LS-Bio; green) and EPHA3 (red) in P4 acutely isolated Epha3KI/Efna3KI (n\u00a0=\u00a08 animals/15 retinas) RGCs. Arrowheads indicate EPHA3/EFNA3 co-expression in the same RGCs. Scale bars represent 10 \u00b5m. (B, C) Cortico-collicular (n\u00a0=\u00a011 animals) (B) and retino-collicular (n\u00a0=\u00a018 animals) (C) maps generated by the Leave-One-Out method at P15 and P8 respectively in Epha3KI/Efna3KI double mutants. (D, E) Examples of retino-collicular projections for nasal and temporal retinal injections in P8 Epha3KI/Efna3KI::Epha4+/- (n\u00a0=\u00a06 animals) (D) and Epha3KI/Efna3KI::Epha4-/- (n\u00a0=\u00a06 animals) (E) mutants. Scale bars represent 200 \u00b5m. T, temporal; N, nasal; R, rostral; C, caudal; L, lateral; M, medial; RGCs, retinal ganglion cells.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** T, temporal; N, nasal; R, rostral; C, caudal.\n\n### In silico modelling and theoretical analysis of cortico-collicular map alignment\n\nOur results indicate that the level of EFNA3 on RGC projections innervating the SC influences the mapping and alignment of cortico-collicular projections. To simulate and explore the mechanism of map alignment, we created a 3-step map alignment model based on an algorithm originally developed to model retino-collicular mapping (Tsigankov and Koulakov, 2006; 2010; Owens et al., 2015). Our version generates first the retino-collicular map based on retinal Epha receptors and collicular Efna ligands graded expression. The second step transposes the retinal Efna gradients onto the rostral-caudal axis of the SC according to the layout of the retino-collicular map generated in step one. In the third step, the cortico-collicular map is generated based on cortical Epha receptors expression and the transposed retinal Efnas in the SC. Each map is generated by a stochastic process based on balanced forces between repellent EPHA forward signaling and associating correlated neuronal activity (Tsigankov and Koulakov, 2006; 2010; Owens et al., 2015) (see Experimental Procedures). To improve the validity of our model, we replaced the theoretical values of the retinal EPHA and EFNA gradients previously used (Tsigankov and Koulakov, 2006; 2010; Pfeiffenberger et al., 2006; Owens et al., 2015) by our experimental quantification of retinal Epha mRNAs (Reber et al., 2004) (RA(x)retina) and Efna mRNAs (LA(x)retina) (Figure 7A,B) reasonably assuming, as made previously (Reber et al., 2004), that the measurement of mRNA differences translates linearly into differences in protein expression. LA(x)retina best fit equations are:(1)LA5(x)retina=(1/0.56)\u2217exp(\u22120.014x)R2=0.97(2)LA2(x)retina=(1/0.54)\u2217exp(\u22120.008x)R2=0.93(3)LA3(x)retina=0.44R2=0.97\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig7-v1.jpg)\n\n**Figure 7.:** (A) Section of P2 mouse retina (n\u00a0=\u00a06 retinas from three animals from different litters) hybridized with Efna5, Efna2 and Efna3 probes. Quantification was performed for 10 segments of the RGC layer along the nasal-temporal axis. Scale bar represent 100 \u00b5m. (B) Efna2/a3/a5 expression profiles (dots) fitted by the equations (lines) corresponding to equations (1), (2) and (3) respectively.\n\nThe total Efna gradients in the WT retina is:\n\n$$\nL_{A}(x)^{retina\u00a0WT}=L_{A5}(x)^{retina}+L_{A2}(x)^{retina}+L_{A3}(x)^{retina}L_{A}(x)^{retina\u00a0WT}=(1/0.56)^{\u2217}exp(\u22120.014x)+(1/0.54)^{\u2217}exp(\u22120.008x)+0.44\n$$\n\nThe total Efna gradients in the mutant retinas are:\n\n$$\nL_{A}(x)^{retina\u00a0KI}=L_{A}(x)^{retina\u00a0WT}+\u0394L_{A3}with\u00a0\u0394L_{A3}=0.22\u00a0in\u00a0Efna3KI/+and\u00a0\u0394L_{A3}=0.44\u00a0in\u00a0Efna3KI/KIL_{A}(x)^{retinaKI/+}=(1/0.56)^{\u2217}exp(\u22120.014x)+(1/0.54)^{\u2217}exp(\u22120.008x)+0.44+0.22\n$$\n\n\n\n$$\nL_{A}(x)^{retina\u00a0KI/KI}=(1/0.56)^{\u2217}exp(\u22120.014x)+(1/0.54)^{\u2217}exp(\u22120.008x)+0.44+0.44\n$$\n\nEquations were derived from semi-quantitative in situ hybridization as performed previously (Reber et al., 2004) (Figure 7A,B) and from our transcripts analyses measuring the relative expression levels of Efnas in acutely isolated RGCs (Figure 2C). We observed graded expression of Efna2 and Efna5 along the nasal-temporal axis of the retina, whereas Efna3 is homogeneously expressed in WT animals (Figure 7A,B). Curve fitting analysis using MATLAB revealed the equation LA(x)retina WT modelling WT retinal Efna ligands expression along the nasal-temporal axis (Equations 1-4). The two-fold increase of Efna3 in Efna3KI/KI RGCs compared to WT (Figure 2C) was included into the model by adding a constant \u0394LA3 to LA(x)retina WT thus generating the LA(x)retina KI alternating ectopic expression in the Efna3 KI retinas (Equation 5, 6). The 3-step map alignment model simulates the sequential mapping of 100 RGCs onto a 1D array of 100 SC neurons along the rostral-caudal axis, followed by 100 V1 cortical neurons innervating the SC. We made two assumptions: (1) endogenous collicular EFNAs are no longer active for incoming V1 axons as they have been engaged previously in RGCs axon guidance by binding to retinal EPHAs (forward signaling) which leads to the cleavage of their extracellular domains (Janes et al., 2005), (2) retinal EFNA3 alone cannot provide positional information in the SC as its expression is not graded in the RGCs. Consequently, a proportion of graded retinal EFNA2/A5 acts together with retinal EFNA3 to provide positional information in the SC. After 107 iterations per run (n\u00a0=\u00a020 runs) for each genotype, stable and organized retino-collicular maps were formed (Figure 8A,D,G). Thereafter, a proportion of retinal Efna gradients were transposed in the SC (Figure 8B,E,H) following to the retinal projections layout and then the cortico-collicular maps are generated in a similar fashion (Figure 8C,F,I). To account for map heterogeneity observed experimentally, we further analyzed the maps generated using a linear regression (Figure 8C,F,I, red lines) and an exclusion parameter (EP) (Figure 8F,I, dashed grey lines), which corresponds to the variability of the WT single map (Figure 8C, dashed grey lines, \u03c3WT= 2.18 %) added to the genotype-specific average map separation (\u0394Sexp) calculated in Efna3 KI animals (Figure 4E, EPKI/KI\u00a0=\u00a015.18%; EPKI/+ = 9.18 %; Figure 8F,I). The points, simulating the position of the cortico-collicular TZs along the rostral-caudal axis of the SC, located outside EP correspond to duplicated projections whereas the points located within EP correspond to single projections (Figure 8F,I). The percentages of duplicated projections generated by the model were similar to the percentages of experimentally measured duplications (Figure 4A,B) for both Efna3KI/KI and Efna3KI/+ animals (one sample t-test, Efna3KI/KI, p\u00a0=\u00a00.17; Efna3KI/+, p\u00a0=\u00a00.22; Figure 8J).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig8-v1.jpg)\n\n**Figure 8.:** (A\u2013I) Retino- (A, D, G) and cortico- (C, F, I) collicular maps generated by the 3-step Map alignment model in WT (A, C), Efna3KI/KI (D, F) and Efna3KI/+ (G, I) after n\u00a0=\u00a020 runs and 107 iteration/run. The parameters used for the retino-collicular modelling in the three genotypes are identical. Translated retinal Efn-As gradients (% of retinal expression: Efna2\u00a0=\u00a0100%, Efna3\u00a0=\u00a0100% and Efna5\u00a0=\u00a080%) into the SC in WT (B), Efna3KI/KI (E) and Efna3KI/+ (H). Red lines in (C, F, I) represent the linear regression. Variability of the WT map in (C) is calculated by \u03c3WT = 2.18% (n\u00a0=\u00a020 runs). Grey lines in (F, I) represent the exclusion parameter (EP) corresponding to EP = \u03c3WT + \u0394Sexp: EPKI/KI\u00a0=\u00a015.18%, EPKI/+ = 9.18%. (J) Dot plot representation of the percentage of duplicated cortico-collicular projections (observed versus theoretical) for n\u00a0=\u00a020 runs in Efna3KI/KI (experimental\u00a0=\u00a047%, n\u00a0=\u00a09 animals; theoretical mean\u00a0=\u00a046.1%,\u00a0\u00b195 %CI\u00a0=\u00a01.2%, one sample t-test, t\u00a0=\u00a01.42, 19 d.f., p\u00a0=\u00a00.17) and Efna3KI/+ (experimental\u00a0=\u00a043%, n\u00a0=\u00a07 animals; theoretical mean\u00a0=\u00a041.4%,\u00a0\u00b195 %CI\u00a0=\u00a02.4%, variables are normally distributed, one sample t-test, t\u00a0=\u00a01.28, 19 d.f., p\u00a0=\u00a00.22) (theoretical Efna3KI/+ vs Efna3KI/KI, two-sample t-test, t\u00a0=\u00a03.4, 38 d.f., ***p\u00a0=\u00a00.0016). N, nasal; T, temporal; L, lateral; M, medial; R, rostral; C, caudal.\n\nThese results indicated that the 3-step map alignment model simulates both the retino- and cortico-collicular mapping and accurately recapitulates the normal and defective visual maps. It predicts the stochastic nature of the mapping abnormalities in Efna3KI/+ and Efna3KI/KI animals due to the Efna3 ectopic expression in a subset of RGCs. Hence the model provides further evidence that retinal EFNA3 contributes to the alignment of the cortico-collicular map by providing positional information in the SC for ingrowing V1 axons carrying EPHAs.\n\n## Discussion\n\nEPHAs and EFNAs are present in opposed gradients within visual areas and in corresponding gradients between connected areas. These features preclude the identification of basic molecular mechanisms using full knock-out approaches. We therefore generated a unique and powerful mouse model in which gradients of EFNAs are quantitatively perturbed in the RGCs only. Together with theoretical modelling, we describe a molecular mechanism and associated principles governing the alignment of converging topographic neural maps in the brain.\n\n### Retinal EFNA3 in cortico-collicular mapping\n\nWe showed that modestly elevated expression of EFNA3 exclusively in a subset of RGCs disturbed cortico-collicular map alignment in the SC, pointing to a mechanism where retinal EFNA3 provides positional information to ingrowing V1 cortico-collicular axons. Further confirmation came from the genetic inactivation of ectopic EFNA3 using co-expressed EPHA3 receptor. EPHA3/EFNA3 coexpression in the same cell, including RGCs, abolishes their trans-binding to EFNAs and EPHAs (Connor et al., 1998; Hornberger et al., 1999; Menzel et al., 2001; Carvalho et al., 2006; Falivelli et al., 2013; Klein and Kania, 2014). We therefore generated double heterozygous mutants, Efna3KI/Epha3KI. The power of this approach resides in the fact that each individual Efna3KI/+ and Epha3KI/+ mutant shows robust visuotopic map abnormalities (Brown et al., 2000; Triplett et al., 2009). The presence of WT retino- and cortico-collicular maps in the Efna3KI/Epha3KI double heterozygous mutants provides compelling evidence that both EFNA3 and EPHA3 were inactivated in Isl2(+) RGCs. Further evidence of EFNA3/EPHA3 inactivation came from the presence of normal retino-collicular maps in compound mutants Efna3KI/Epha3KI::Epha4 knock-in/out mutants. Although we cannot rule out the occurrence of an altered expression/function of other yet unidentified molecules involved in mapping (e.g., semaphorins, L1) by ectopic EFNA3 expression, our results confirm the causal role of retinal EFNA3 ectopic expression on cortico-collicular alignment defects. They suggest that retinal projections play an instructive role in cortico-collicular map formation.\n\nThe heterogeneity of the cortico-collicular phenotype in the Efna3 KI mutants, revealed by a mix of single and duplicated projections, is in accordance with previous data showing a variable penetrance of the retinotopic mapping abnormalities in constitutive or conditional Efnas knock-outs (Feldheim et al., 2000; Cang et al., 2008; Suetterlin and Drescher, 2014; Owens et al., 2015). Such variable penetrance of the mutant phenotype can be explained by the stochastic nature of map formation driven by opposing forces resulting from EPHA signaling, which tends to separate neighboring RGCs through repulsion, and correlated neuronal activity, which tends to reinforce neighboring RGCs projections on adjacent target cells (Cang et al., 2008; Triplett et al., 2009; Owens et al., 2015). The general pattern of V1 collicular projections is consistent with the involvement of cortical EPHA receptor gradients (high-lateral to low-medial) (Cang et al., 2005) repelled by low-rostral to high-caudal EFNA gradients of retinal origin in the SC (forward signaling). In the Efna3 KI animals, retinal EFNA3 oscillation in the SC organizes neighbor-neighbor relationships of V1 and RGC TZs locally through repulsion inducing a small distance of map duplication. Our model is consistent with a retinal-matching model, suggesting that retinal inputs are required for proper cortico-collicular mapping (Khachab and Bruce, 1999; Triplett et al., 2009; Cang and Feldheim, 2013).\n\nIn our model, retinal inputs carry molecular cues, EFNA3 and likely other retinal EFNAs present at the level of the TZs to provide positional information for ingrowing V1 axons (Figure 9). EFNA3 could be detected on RGC axons by immunohistochemical staining on proximal and middle parts of the optic nerve but fell below detection limit in the distal part and in the SC. We cannot exclude that a proportion of collicular EFNAs also contributes to the cortico-collicular mapping process. Altogether, our data suggest that transposed retinal EFNAs in the SC instruct cortico-collicular map alignment and act together with correlated neuronal activity pattern shared between RGCs and V1 axons (Triplett et al., 2009; Cang and Feldheim, 2013). Triplett and collaborators (Triplett et al., 2012) suggested a gradient-matching model which posits that collicular EFNAs are required for the mapping of somatosensory inputs to the SC. These inputs behave similarly to the retino-collicular projections as they also require collicular EFNAs, although in different layers. In contrast, the requirement of SC-produced EFNAs for cortico-collicular mapping is unlikely. As mentioned by Triplett and colleagues, in this particular scenario, cortico-collicular projections in previously characterized Epha3KI/KI mutants would have led to a single TZ in the SC, leading to a mismatch between cortico- and retino-collicular maps. However, this was not observed (Triplett et al., 2009).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/20470/elife-20470-fig9-v1.jpg)\n\n**Figure 9.:** RGCs axons in WT and Efna3 KI animals project to the SC during the first postnatal week and form the retino-collicular map through forward signaling activated by collicular EFNAs and fiber-fiber interactions (left side). In both WT and Efna3 KI animals, the retino-collicular map is single and coherent. In WT and Efna3 KI, each RGCs axon is loaded with a different concentration of retinal EFNAs (high-nasal, low-temporal) carried to the SC. Due to the coherence of the retino-collicular map, a smooth retinal EFNAs gradient is formed in the SC in WT, whereas in Efna3 KI animals, Isl2(+) RGC axons carry extra EFNA3 (in red) which creates an oscillatory retinal EFNAs gradient once transposed in the SC (right side). During cortico-collicular mapping, V1 axons carrying EPHA receptors are facing a smooth gradient of retinal EFNAs in the SC, leading to a single coherent map in WT. In Efna3 KI animals, V1 axons carrying EPHA receptors are facing an oscillatory gradient of retinal EFNAs (due to ectopic expression of EFNA3 in Isl2(+) RGCs) which leads to the duplication of the cortico-collicular map (43% in Efna3KI/+ and 47% in Efna3KI/KI) through local neighbor\u2013neighbor relationships of V1/RGCs TZs via repulsion. C, caudal; R, rostral; WT, wild-type; TZ, termination zone; RGCs, retinal ganglion cells.\n\n### Retinal EFNA3 in retino-collicular mapping\n\nThe presence of non-duplicated retino-collicular maps in both Efna3KI/+ and Efna3KI/KI mutants, as revealed by DiI tracing, suggests that retinal EFNA3 does not play a significant role in the formation of this map, consistent with previous work on Efna3-null mutants (Pfeiffenberger et al., 2006). Several hypotheses have been raised as to how retinal EFNAs may participate in retino-collicular map formation using in vitro, ex vivo and in vivo approaches in mouse and chick. For example, EFNAs on RGC axons are activated by collicular EPHAs (reverse signaling), leading to axon repulsion (Rashid et al., 2005; Lim et al., 2008; Yoo et al., 2011) or branch inhibition in the SC (Yates et al., 2001). In our mouse model, this mechanism would generate a segregation between Isl2(\u2212) and Isl2(+) RGC axons in the SC, the latter being more repelled by collicular EPHAs. However, such a segregation did not occur, suggesting that retinal EFNA3 is not involved in such a repulsive mechanism by collicular EPHAs. In vitro and in vivo transfection in chick neurons suggested that retinal EFNAs bind to co-expressed retinal EPHAs in the same RGCs leading to inactivation/masking of the EPHA receptors rendering those axons less sensitive to EFNAs binding in the target tissue (Connor et al., 1998; Hornberger et al., 1999; McLaughlin and O'Leary, 1999; Menzel et al., 2001; Yin et al., 2004; Carvalho et al., 2006). In our model, this mechanism would lead to a stronger inactivation of the EPHA4/A5/A6 receptors in the Isl2(+) RGCs expressing high levels of EFNA3, compared to RGCs with normal EFNA3 expression level. This would create two population of RGCs with different EPHA signaling strength, similarly to the EphA3KI mutants (Brown et al., 2000; Reber et al., 2004; Triplett et al., 2009; Bevins et al., 2011). In this context, according to the Relative Signaling model (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011), duplicated retino-collicular maps (partial or full) should be observed. Our results rather indicate that EFNA3 ectopic expression does not inactivate endogenous co-expressed EPHA4/A5/A6 receptors in RGCs. Nevertheless, we showed specific inactivation of EPHA3 by ectopic EFNA3, suggesting distinctive interactions in cis between EFNA/EPHA pairs as previously observed (Yin et al., 2004; Falivelli et al., 2013; Klein and Kania, 2014). Conditional ablation revealed that high retinal EFNA5 on nasal RGCs axons prevents temporal RGC axons from targeting the caudal SC through fiber-fiber interaction (Suetterlin and Drescher, 2014). In our mice, such a mechanism would have generated a local duplication between Isl2(+) and Isl2(-) RGCs or an extension of the TZs in the SC which was not observed, suggesting that retinal EFNA3 is not involved in fiber-fiber interaction. However, our results do not exclude the contribution of the fiber-fiber interaction mechanism to retino-collicular map development. Together with recent results (Suetterlin and Drescher, 2014), our data further suggest that retinal EFNA3 and EFNA5 present distinct effects on visuotopic mapping and imply a member-specific role of retinal EFNAs in map formation. This is in contrast with retinal EPHA receptors which are considered to be functionally interchangeable (Reber et al., 2004; Bevins et al., 2011).\n\n### Theoretical modelling further confirms mapping mechanism\n\nPrevious work modelled the stochastic nature of retino-collicular map formation based on the Koulakov model (Tsigankov and Koulakov, 2006; 2010; Owens et al., 2015). Here, we have substantially modified and expanded this algorithm using our measured Efna expression data instead of theoretical values and simulated the retino- and cortico-collicular mapping process sequentially. We assumed that retinal Efna3 expression alone cannot provide positional information, due to its homogeneous expression profile in WT RGCs. Therefore other EFNAs or other guidance molecules, either retinal or collicular, must participate in the regulation of map alignment. Retinal EFNA5 has been recently shown to participate in RGCs fiber-fiber interactions (Suetterlin and Drescher, 2014) but a given proportion may contribute to map alignment. We chose to retain 80% of the retinal EFNA5 level and 100% of retinal EFNA2/A3 levels in the algorithm. Moreover, contribution of endogenous collicular EFNAs to cortico-collicular map alignment seems unlikely as these mediated previous RGCs axons guidance (Janes et al., 2005), therefore collicular EFNA levels were not included in the V1 projection step of the model. The 3-step map alignment model replicates experimental features of both retino- and cortico-collicular maps observed in WT and Efna3 KI animals. It validates a stochastic mechanism of retinal-dependent molecular cues, involving EFNA3, providing positional information in the SC for V1 axons which then coordinate with correlated neuronal activity (Triplett et al., 2009) to align visuotopic maps.\n\nThese data raise important new questions as to the function of the different endogenous EFNAs in the formation of topographic maps, requiring additional development of cell-specific gene targeting approaches. From a functional standpoint, this new principle may serve as a general framework for sensory map alignment, where positional information, carried by a leading map, acts together with correlated activity, enabling precise adjustments of subsequent projection alignment.\n\n## Materials and methods\n\n### Generation of the Isl2-Efna3KI mice, animals and housing\n\nThe targeting construct containing a ribosomal entry site (IRES) followed by the mouse Efna3 ORF-SV40polyA and the selection cassette PGK-Neo was inserted by homologous recombination into the 3' untranslated region of the Islet-2 gene locus as previously performed (Brown et al., 2000). The mouse line was generated by the Mouse Clinic Institute, project IR3483 (Illkirch-France) in a C57/Bl6J background. Mice were hosted in a 12 hr/12 hr light-dark condition, fed ad lib. at the CNRS UMS3415 Chronobiotron (Strasbourg \u2013 France). All procedures were in accordance with national (council directive 87/848, October 1987) and European community (2010/63/EU) guidelines. Official agreement number for animal experimentation is A67-395, protocol number 01831.01 (M.R). Male and female C57/Bl6J Efna3KI, Epha3KI and Epha4KO mice and pups were genotyped by PCR from genomic DNA from tail biopsies as described previously (Dottori et al., 1998; Reber et al., 2004). Primers are available in Supplementary Files. Immunohistochemistry and mapping analyses were made blind to genotype.\n\n### Projections analysis/mapping\n\nAnterograde and retrograde DiI (1,1-dioctadecyl-3,3,3,3-tetramethylindocarbocyanine perchlorate), DiD (1,1'--dioctadecyl-3,3,3',3'- tetramethylindodicarbocyanine, 4-chlorobenzenesulfonate) and/or retrograde CTB-488 (Cholera Toxin B subunit-Alexa 488) labelling were performed as described (Reber et al., 2004; Triplett et al., 2009). Whole-mount SC were processed as described and TZs were plotted along the rostral-caudal axis on Cartesian coordinates (y axis) (Reber et al., 2004). For cortico-collicular map analyses, sagittal vibratome sections were performed on P14 SC and TZs were plotted along the rostral-caudal axis on Cartesian coordinates (y axis). Retinas were dissected and imaged using Zeiss Axioscope two and Axiovision software. Retinal coordinates of the DiI injections were calculated using IntactEye algorithm (Hjorth et al., 2015), confirmed using the projection method (Reber et al., 2004) and plotted on Cartesian coordinates (x axis). V1 cortices were photographed as whole-mount and focal injections plotted along the V1 lateral-medial axis (x axis) (Triplett et al., 2009). Retino-collicular and cortico-collicular maps were generated using non-parametric smoothing technique, termed LOESS smoothing (Efron and Tibshirani, 1991), to estimate the profile of the one-dimensional mapping either from retina to SC, or from V1 to SC. To estimate the variability in a mapping containing N data points, we repeated the procedure N times with N-1 datapoints, each time dropping a different datapoint. This is termed a \u2018leave-one-out\u2019 method and was used in the R Project for Statistical Computing (RRID:SCR_001905). The script is available in Source code 1 file. Retino-geniculate and binocular tracings were performed as described (Pfeiffenberger et al., 2006) on Efna3KI/KI (n\u00a0=\u00a04) and WT (n\u00a0=\u00a03) P7 animals. Analyses of the cortico-collicular projections were performed using the thresholding function in ImageJ (RRID:SCR_003070).\n\n### Immunohistochemistry\n\nRetinas, ONs, SCs and V1 cortices were dissected after animal perfusion with PFA4% in PBS1X, post-fixed O/N in PFA4%/PBS1X, cryoprotected in PFA4%/sucrose 30%/PBS1X for several hours at 4\u00b0C. Retinas and ONs were cryostat-sectioned (14\u201318 \u03bcm), SCs and V1 cortices were vibratome-sectioned (40 \u03bcm) and processed for immunohistochemistry. Experiments were performed at least three times. Briefly, sections were incubated in blocking solution (PBS 1X/BSA 1%/normal goat serum 10%) for 1 hr at RT then incubated with primary antibody O/N at 4\u00b0C in PBS 1X/BSA 1%/normal goat serum 1%. The following day, sections were washed (3 \u00d7 5' in PBS 1X at RT) and incubated for 1 hr at RT with secondary Alexa-labelled antibodies in PBS1X/BSA 1%/normal goat serum 1%. After three washes at RT (3 \u00d7 5' PBS 1X), slides were mounted in Aqua-Polymount (Polysciences Europe GmbH, Eppelheim, Germany) and visualized under a confocal microscope (Leica SP5 II, Leica Microsystems, Wetzlar, Germany). Sections were imaged using Leica LASAF software. Antibodies: anti-Isl2 (1/400, ref. LS-C165303, LifeSpan Biosciences Inc., RRID:AB_2126601), anti-Efna3 (1/300, ref. LS-C6547, LifeSpan Biosciences Inc., RRID:AB_797145), anti-EphA3 (1/100, ref. LS-C150188, LifeSpan Biosciences Inc., RRID:AB_11187174), anti-Efna3 (ref. 36\u20137500, 1/200, Invitrogen, Invitrogen Co. RRID:AB_2533278), anti-synaptophysin (1/200, ref. S5768, Sigma-Aldrich), anti-Tau (1/200, MAB3420, Merck Millipore), anti-NF200 (1/200, ref. N5389, Sigma-Aldrich), anti-rabbit Alexa 488 (RRID:AB_10373124), anti-goat Alexa 594 (RRID:AB_10562717), anti-mouse Alexa 555 (RRID:AB_10561552) (1/500, Invitrogen, Invitrogen Co.).\n\n### Quantitative RT-PCR\n\nV1 cortices, superficial layers of the SC and retinas were freshly dissected. Retinas were cut in three equal pieces along the NT axis (Nasal, Central, Temporal RGCs) and RGCs acutely isolated (Steinmetz et al., 2006; Claudepierre et al., 2008). Total RNA was extracted and quantified as previously described (Mathis et al., 2015). Briefly, relative quantification was performed using the comparative Delta Ct method. Triplicates were run for each sample and concentration for the target gene and for two housekeeping genes (hypoxanthine-guanine phosphoribosyl transferase - Hprt and glyceraldehyde 3-phosphate dehydrogenase \u2013 Gapdh) were computed. Primers are listed in Supplementary File.\n\n### Retinal ganglion cell isolation\n\nP3/P4 retinas were freshly dissected and RGCs were isolated and purified (>99%). For details see Steinmetz et al. (2006); Claudepierre et al., 2008). Briefly, cells were cultured in Neurobasal medium (Gibco/Invitrogen) supplemented with (all from Sigma, except where indicated) pyruvate (1 mM), glutamine (2 mM; Gibco/Invitrogen), N-acetyl-l-cysteine (60 \u03bcg ml\u22121), putrescine (16 \u03bcg ml\u22121), selenite (40 ng ml\u22121), bovine serum albumin (100 \u03bcg ml\u22121; fraction V, crystalline grade), streptomycin (100 \u03bcg ml\u22121), penicillin (100 U ml\u22121), triiodothyronine (40 ng ml\u22121), holotransferrin (100 \u03bcg ml\u22121), insulin (5 \u03bcg ml\u22121) and progesterone (62 ng ml\u22121), B27 (1:50, Gibco/Invitrogen), brain-derived neurotrophic factor (BDNF; 25 ng ml\u22121; PeproTech, London, UK), ciliary neurotrophic factor (CNTF; 10 ng ml\u22121; PeproTech) and forskolin (10 \u03bcm; Sigma). After isolation, RGCs were either treated for RNA extraction or fixed with PFA4% 15' at RT and processed for immunohistochemistry. Stainings were performed and cells were visualized as described above.\n\n### Semi-quantitative in situ hybridization and gradient fitting of retinal Efnas expression\n\nAnalysis of the expression of the Efnas was performed as previously described (Reber et al., 2004) on nasal-temporal 20 \u03bcm thick sections of P1/P2 WT retinas. Probes used were: mouse Efna2 (NM007909.3, 879 bp, pos. 387\u20131266), mouse Efna3 (NM010108, 791 bp, pos. 208\u2013999) and Efna5 (NM207654, 696 bp, pos. 189\u2013885). Experimental values (mean +SD, Efna2/a3/a5, for each Efnas, n\u00a0=\u00a018 sections total, 3 sections/retina, from 6 retinas \u22122 left, 2 right- from 3 animals) were plotted along the nasal-temporal axis and fitted using MATLAB (RRID:SCR_001622).\n\n### In silico replication of the duplication of the cortico-collicular map\n\nThe Koulakov model in MATLAB (RRID:SCR_001622) (Tsigankov and Koulakov, 2006; 2010) was used to simulate the formation of both the retino- and cortico-collicular maps in the presence of an oscillatory Efna gradients in the target structure. Each brain structure (retina, SC, V1) is modelled as a 1-d array of 100 neurons (N) in each network. Two maps are generated: first, the map from retina to SC; second, the map from V1 to SC. Each map is modelled sequentially in the same way. This model consists in the minimization of affinity potential (E) which is computed as follows:\n\n$$\nE=E_{act}+E_{chem}\n$$\n\nAt each step, this potential is minimized by switching two randomly chosen axons probabilistically according to the degree such a switch reduces the energy in the system by Delta E (\u0394E). The probability of switching, p, is given by: p=1/(1 + exp(4\u0394E)).\n\nEchem is expressed as follows:\n\n$$\nE_{chem}=\\sum_{i\\inTZS}\\alpha[R_{A}(i)\u2212R_{A}(j)][L_{A}(i^{\u2032})\u2212L_{A}(j^{\u2032})]\n$$\n\nwhere \u03b1 is the strength (\u03b1\u00a0=\u00a0200), RA(i) and RA(j) the receptor concentration in the retina and V1 at location (i) and (j) and LA(i\u2019) and LA(j\u2019) the ligand concentration at the corresponding position (i\u2019) and (j\u2019) in the SC. The contribution of activity-dependent process is modelled as:\n\n$$\nE_{act}=\u2212\\gamma/2\\sum_{ij\\insynapses}C_{ij}U(r^{\u2032})\n$$\n\nwhere \u03b3\u00a0=\u00a01 is the strength parameter, Cij is the cross-correlation of neuronal activity between two RGCs (or V1) neurons during spontaneous activity located in (i) and (j), and U simulates the overlap between two SC cells. Here, we use Cij = exp(\u2212r/R), where r is the retinal distance between RGC (i) and (j), R\u00a0=\u00a00.11\u00a0\u00d7\u00a0N, and U(r\u2019) = exp(\u2212r\u20192/2d2), where r\u2019 is the distance between two SC points (i\u2019, j\u2019), d\u00a0=\u00a03 and N\u00a0=\u00a01 to 100 neurons.\n\nReceptor and ligand gradients were modelled as follows:\n\nRetinal Epha gradients (Reber et al., 2004):\n\n$$\nR_{A}(x)^{retina}=0.26^{\u2217}exp(0.023x)+1.05\n$$\n\nCortical V1 EphA gradients (Tsigankov and Koulakov, 2006; 2010):\n\n$$\nR_{A}(x)^{V1}=exp(\u2212x/N)\u2212exp((x\u22122N/(N))+1)\n$$\n\nCollicular Efna gradients (Tsigankov and Koulakov, 2006; 2010):\n\n$$\nL_{A}(x)^{SC}=exp((x\u2212N)/N)\u2212exp((\u2212x\u2212N)/N)\n$$\n\nLA(x)retina is the Efna gradient which was modelled by an exponential fitting of the in situ hybridization data. These retinal Efna gradients (80% of Efna5 expression and 100% of Efna2 and Efna3) are transposed to the SC for the simulation of the cortico-collicular map.\n\nRetinal Efna gradients equation along the nasal (0) \u2013 temporal (100) axis (see Results):\n\n$$\nL_{A}(x)^{retina\u00a0WT}=L_{A5}(x)^{retina}+L_{A2}(x)^{retina}+L_{A3}^{retina}\n$$\n\n\n\n$$\nL_{A}(x)^{retina\u00a0WT}=(1/0.56)\u2217exp(\u22120.014x)+(1/0.54)\u2217exp(\u22120.008x)+0.44\n$$\n\n(Figure 7) where x\u00a0=\u00a01 to N and N\u00a0=\u00a0100 representing the neurons along each axes (L-M in V1, N-T in retina). When transposed along the rostral-caudal axis in the SC (retina \u2192 SC), retinal Efna gradients are flipped along the x axis and become:\n\n$$\nL_{A}(x)^{retina\u2192SC}=(1/0.56)^{\u2217}exp(\u22120.014(100\u2212x))+(1/0.54)^{\u2217}exp(\u22120.008(100\u2212x))+0.44=0.56^{\u2217}exp(0.014x)+0.54^{\u2217}exp(0.008x)+0.44\n$$\n\nThe oscillatory gradient was generated by randomly attributing to 50% of collicular TZs an overexpression of Efna3 (\u0394LA3) with \u0394LA3\u00a0=\u00a00.44 for homozygotes and \u0394LA3\u00a0=\u00a00.22 for heterozygotes. Iterations were ran for 107 epochs. 3-step map alignment model scripts can be found in Source Code two file.\n\n### Quantitative analysis of theoretical maps\n\nTo determine the amount of duplication that could be found in heterozygotes and homozygotes mutants a linear regression was calculated using implemented functions in Matlab. The residuals were then used to calculate the percentage of duplication. Duplications were considered when values were outside EP\u00a0=\u00a09.18% for Efna3KI/+ and EP\u00a0=\u00a015.18% for Efna3KI/KI, which corresponds to the averaged experimental distances measured between duplicated termination zones (\u0394Sexp) to which was added the wild-type map variability (average of residuals, \u03c3WT = 2.18 %, n\u00a0=\u00a020 runs). Twenty runs were performed and averaged to find the proportion of duplicated termination zones for Efna3 KI.\n\n### Data/codes availability\n\nSoftware package IntactEye can be found at: http://github.com/hjorthmedh/IntactEye. \u2018Leave-one-out\u2019 script in R and 3-step Map Alignment Model provided as a source code files (Source code 1 and 2). Model also available\u00a0at\u00a0Reber, 2017\u00a0(with a copy archived at https://github.com/elifesciences-publications/3-step-Map-Aligment-Model).\n",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "308437cb-ad68-45e7-bf1e-cf19a37cdd2d",
+      "submission_id": "525f0794-0071-425c-93c0-a447a71283f4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carol A Mason, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20470.028](https://doi.org/10.7554/eLife.20470.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"A Molecular Mechanism for the Topographic Alignment of Convergent Neural Maps\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and by Andrew King as Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation with the reviewers. Based on these discussions among the reviewers and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife at this time.\n\nAll three reviewers considered your study important and felt it would be a valuable addition to the field. They described your finding that expression of ectopic ephrin-A3 in Isl2(+) RGCs creates a discontinuous gradient of ephrin-A3 on RGC axons, and that this provides repellent cues to guide V1 axons to topographically correct locations in the SC, as novel and potentially exciting.\n\nThe reviewers nonetheless had several suggestions for improvements that would strengthen the study, some of which will likely involve additional and somewhat lengthy experiments:\n\n1) Demonstration of the discontinuous gradient of ephrin-A3 protein in the SC. This may be understandably difficult to do if the antibodies are not good.\n\n2) In line with the discontinuity demonstration: a two-color V1 injection that would enable visualization of interdigitated red and green termination zones (TZs) in the SC. This would fortify your conclusions.\n\n3) The figure/micrograph quality is sub-par. One suggestion for getting a better read on duplication of the cortical maps would be to section the SC and to show the results at higher magnification than used in the current version, rather than showing surface images.\n\n4) in vitro assays as an alternative for demonstrating ki-ephrin-A3 on axons by checking for altered sensitivity of ephrin-A3 KI/KI axons to EphA3-Fc, using a collapse or similar assay.\n\n5) Revision of the assumptions and other aspects of the modeling, as indicated in reviewer 3's comments.\n\nReviewer #1:\n\nSavier et al. describe the changes in retinocollicular and V1-collicular maps when ectopic ephrin-A3 is expressed in Isl2(+) RGCs, creating a discontinuous gradient of ephrin-A3 on RGC axons. This is a similar approach to that used by Brown et al. 2000 and Triplett et al. 2009 that showed that to ectopically expressed EphA3 in Isl2(+) RGCs leads to map duplications in the retinocollicular and V1-SC projections. Unlike when EphA3 is ectopically expressed in the retina, the authors find that ectopic expression of ephrin-A3 does not affect the topography of the retinocollicular projection. Interestingly, retinal expressed ephrin-A3 leads to changes in the V1-SC topographic map. These results lead the authors to a computational model whereby RGC axons in the SC provide repellent cues to guide V1-SC axons to topographically correct locations.\n\nThis work is very interesting and timely and the authors propose a compelling model to explain the data in the context of topographic map alignment.\n\n1) I am confused why ectopic expression of ephrin-A3 in Isl2(+) RGCs does not lower the effective concentration of EphAs in these cells. The experiments in Figure 6 show that extra EphA3 can mask the ectopic ephrin-A3. So why doesn't the ectopic ephrin-A3 mask the available EphA, especially in the nasal half of the retina where EphA levels are graded and low?\n\nThe authors address this in the Discussion \"However, we did not observe any retino collicular mapping defects regardless of the mutant genotypes, suggesting that ephrin-A3 ectopic expression does not inactivate endogenous co-expressed EphA4/A5/A6 receptors in RGCs, although we showed specific inactivation of EphA3, suggesting distinctive interactions in cis between ephrin-A/EphA pairs as previously observed (Yin et al., 2004; Falivelli et al., 2013; Klein and Kania, 2014).\" But this explanation is somewhat unsatisfying based on the current knowledge of ephrin-A binding affinities for EphA receptors.\n\nIt would be nice if the authors can address the specificity of masking more directly, perhaps by showing ectopic ephrin-A3 does not change the sensitivity of RGC axons to ephrin-A5 in trans, although I understand that this may be beyond the scope of the paper.\n\n2) It would be nice to directly visualize the discontinuity of ephrin-A3 expression on RGC axons in the SC using immunocytochemistry.\n\n3) The duplication of the V1-SC projection is not very pronounced. It seems possible that the termination zones are just a bit blurry. Two color DiI, DiO injections in V1 would unambiguously demonstrate that the TZs are duplicated (see Triplett et al. 2009 Figure 6).\n\n4) The SC s of the anterograde DiI retinal injections should be sectioned as done for the V1-SC projection. It is possible that ectopic termination zones in deeper SC lamina may not be revealed in a whole mount view.\n\nReviewer #2:\n\nThe manuscript by Savier et al. describes a novel ephrinA3-based mechanism that guides the alignment of convergent topographic maps in the mouse superior colliculus. These findings add to a rich literature of how gradients of Eph Receptors and their ligands in the retina and brain lead to topographic maps. An interesting twist on the studies presented here is that retinal ganglion cells generate ephrin A3, and its presence on retinal terminals (or arbors) in the SC contribute to the mapping of cortical projections from V1 that converge on target cells in the SC. Several other sets of studies have now shown how one class of axons in a given visual target, dictate how other classes or types of axons innervate that same target (Triplett et al. 2009; Seabrook et al. 2013; Brooks et al. 2013; Grant et al. 2016; Shanks et al. 2016). That being said, little is known about what molecular cues on an axon may dictate this and for this reason this paper will be of interest to the field.\n\nThere are several strengths to this manuscript, including the generation of a novel mouse mutant in which ephrinA3 is over expressed in a subset of RGCs. This approach was previously used to misexpress EphA3, which led to the discovery that EphA3 overexpression leads to a duplication of retinocollicular maps. Interestingly, perturbing ephrinA3 expression in RGCs had little affect on retinocollicular or retinogeniculate circuits. Another strength of the manuscript is that the authors use a clever trick to inactivate ephrins and EphA3 by co-expressing a single allele each under the Islet2 promoter and they develop a novel computation model to support their experimental data.\n\nThere are, however, some weaknesses in the manuscript that require additional data and analyses. Without these changes this reviewer does not think this work is suitable for publication in eLife.\n\nThese major concerns include:\n\nIs there an alteration of ephrinA3 distribution in the SC of the Isl2(-) ephrin-A3KI mice? EphrinA3 IHC was performed in this manuscript, but only in retina. For the model proposed to be valid (really the crux of the manuscript) one would expect to see fluctuations in ephrin A3 distribution in SC in mutants (associated with retinal arbors). This is an essential piece of data that is missing. And it should be done on WT, single copy mutants, and double copy mutants.\n\nThe duplications of cortical maps are quite subtle in these mutants, compared to those of previous studies. In fact, they are so subtle they are difficult to discern in some cases in the manuscript \u2013 the images in Figure 4B both look like double maps compared to WT controls. How were double maps quantified and identified? It seems critical to show the injection sites in V1 for each case (like is done for retinocollicular maps) to ensure that double maps are not the result of wider injection sites. Likewise, an important part of the manuscript was that retinal maps are unaffected. But the analysis of those maps seems less detailed than the cortical maps. Perhaps subtle changes in retinal maps would be observed if sections of SC were analyzed at high magnification, rather than surface images. Again, consistency in analysis methods for both sets of maps and data is important for the conclusions of the manuscript.\n\nWhile the inactivation of ephrinA3 overexpression by co-expression of EphA3 was viewed as a strength of the manuscript, some of the data demonstrating the validity of this approach was dumped into the supplemental material. It seems too important to be \"supplemental\" as it is a critical component of this manuscript. Likewise more data needs to be presented to convince this reviewer that this result is not the result of the lack of penetrance in single copy of EphA3 mutant, since it has been previously reported that duplicated maps are observed in only some single copy mutants.\n\nIn addition to major concerns described above, there are also concerns in the presentation of the manuscript:\n\n1) In some cases, images appear to be poorly selected to make the authors point. For example see Figure 2A, B which are described as being similar but are not of equal quality. Other examples include 3H-K, Figure 4, and Figure 6D, E.\n\n2) In several cases proper labeling is missing or inappropriate on the figures. In Figure 1G, H labels are missing. In Figure 3N-O what are the arrows? (And the figures in Figure 3L-O are insufficient to claim normal eye-specific segregation in this mutant). It\u2019s unclear what Figure 5B is amplifying? (And if its ephrinA3 why isn't it in WT retina?). More care should be paid to all figures and legends.\n\nReviewer #3:\n\nThe formation of topographic axonal maps is a key element of brain wiring. Visuotopic mapping is mainly instructed by the ephrin/Eph system, enabling forward, reverse, axon/target, axon/axon and cis signals. The actual contribution of each of these signals and their integration, has remained highly controversial. The authors specifically address the role of axonally located ephrin-As by a knock-in (KI) of ephrin-A3 into a random half-population of retinal ganglion cells (RGCs). Therefore, their paper is of major importance to the field. Their approach is valid, the experiments are thoroughly performed, carefully evaluated and lucidly presented in the paper. I have, however, two (somewhat) major issues that should be clarified before publication.\n\nBased on our current understanding, a duplicated retinocollicular map in the KI/KI animals would be expected. Ki axons should grow to the posterior superior colliculus (SC) due to axon/target reverse signaling (Rashid T., et al. 2005). Wildtype axons should be anteriorly displaced due to axon/axon forward signaling (Suetterin P., et al., 2015). Intriguingly, the retinocollicular map is unaffected by the ki. In contrast, however, the V1-corticocollicular map is split up, notably indicating a role of ephrin-A3 on retinal axons in the chemotopic guidance of V1 cortical axons. The same projection has previously been claimed to be aligned by activity-dependent mechanisms (Triplett J., et al., 2009). Although very exciting, the new results are to some degree in conflict with previous observations, necessitating thorough control. Thus, I'm still not fully convinced, that an amount of KI ephrin-A3 arrives in the SC that could be functionally relevant to retinocollicular mapping. Maybe the pioneering retinocollicular mapping is more robust to changes than the following corticocollicular map. Immunostainings of isolated kiRGCs display labeling on the neurites (Figure 1O, O'), but this is after 6 DIV and it remains unclear whether the shown neurites are axons or dendrites. The authors show that concomitant KI of EphA3 rescues the mapping effects of both knock-ins, but the mutual neutralization of ephrin-A3 and EphA3 might already occur in the retina. Therefore, the authors should provide some additional evidence for the axonal localization of the KI ephrin-a3 in the SC (e.g., Western blots, immunostainings on the SC or in-vitro assays).\n\nMy second major issue relates to the modeling. The presented model principally aids the understanding of the corticocollicular effects. In its present state, however, it has some deficiencies. First, either the key equation of the model, given in subsection \u201cIn silico replication of the duplication of the cortico-collicular map\u201d, referring to two gradients on both, the target and the field of origin is wrong, or not all gradients used are specified. Second, I can't see how the fitting equations given for the ephrin gradients relate to the actual measurements. And third, for modeling corticocollicular mapping, the authors arbitrarily reduce the ephrin-A5 gradient to 80%. This is neither well motivated, nor has it been evaluated, how this affects the outcome. When the mentioned issues have been clarified, I will cordially support the publication of this nice piece of work in eLife.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"A Molecular Mechanism for the Topographic Alignment of Convergent Neural Maps\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Andrew King as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll three reviewers agree that you and your co-authors have nicely addressed the criticisms and revised the figures, including demonstration of duplicated maps, appropriately and made other requested revisions. The reviewers reiterated that they consider this an important study for the field.\n\nIn their appraisal of the initial manuscript, the reviewers called for a demonstration of RGC-expressed ephrin A3 to support the main tenet of the study \u2013 that RGC axon-derived ephrin A3 plays a role in shaping corticocollicular (CC) maps. For the revised manuscript, the reviewers appreciated the new data showing localization with the commercial antibody from LSBio, with good staining of RGCs and expression on axon-like profiles in the optic nerve in the proximal and middle (erroneously termed \"medial\") sectors, albeit not in the distal sector. We acknowledge that immunohistochemistry was the most expedient action to take for the demonstration of ephrin A3, even though most in the field have failed to reveal Ephs and ephrins by this method. Nonetheless, we wish to see additional revisions for the ephrin A3 expression as listed below, first and foremost, to demonstrate antibody specificity.\n\nEssential revisions:\n\n1) Confirm antibody specificity by staining WT vs. ephrin-A3 KO retinal and SC tissue, if possible testing tissue from the same litter (or source/background). This would validate the results, especially for the expression in the retina and optic nerve.\n\n2) Include results of the expression as shown in the rebuttal in the manuscript itself, in Supplemental Data.\n\n3) More thoroughly address the \"dissonance\" in ephrin-A3 expression along RGC axons in the Discussion.\n\n4) Ephrin-A3 is present on axons, but below the detection limit; thus, there cannot be 100% transfer of the retinal ephrin-A3 into the axons. You should include this finding in your model.\n",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bfce55de-3265-4b42-abf4-93cccb9b25d0",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C1",
+      "claim": "The superior colliculus (SC) of the midbrain is a major hub for sensory processing, as it receives organized inputs from visual, auditory, and somatosensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The superior colliculus (SC) of the midbrain is a major hub for sensory processing, as it receives organized inputs from visual, auditory, and somatosensory modalities (May, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to May, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "c1f2c1d4-f56e-4359-9660-59171fde8e19",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C2",
+      "claim": "The SC is a laminated structure controlling visuo-spatial orientation and attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The SC is a laminated structure controlling visuo-spatial orientation and attention (May, 2006; Krauzlis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to May, 2006 and Krauzlis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "f4174d24-0a2e-4310-ad08-5c023967e3f3",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C3",
+      "claim": "Defective visual processing in the SC has been associated with psychiatric conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, defective visual processing in the SC has been associated with psychiatric conditions (Mathis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mathis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b904a755-9eda-43e0-9bed-1d2e1c8af138",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C4",
+      "claim": "Visual information reaches the superficial layers of the SC, which are innervated both by retinal ganglion cells (RGCs - the retino-collicular projection) and by layer V neurons of the primary visual cortex V1 (the cortico-collicular projection).",
+      "claim_type": "EXPLICIT",
+      "source": "Visual information reaches the superficial layers of the SC, which are innervated both by retinal ganglion cells (RGCs - the retino-collicular projection) and by layer V neurons of the primary visual cortex V1 (the cortico-collicular projection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the anatomy of the visual system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "8354e143-c064-4ca0-b27a-ec82ffe03cad",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C5",
+      "claim": "During development in the mouse, the retino-collicular map forms during the first post-natal week.",
+      "claim_type": "EXPLICIT",
+      "source": "During development in the mouse, the retino-collicular map forms during the first post-natal week, and is followed by the cortico-collicular map, which develops between P6 and P12 (Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Triplett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "7669cbf9-8005-41e1-af02-cb60c584daa3",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C6",
+      "claim": "The cortico-collicular map develops between P6 and P12.",
+      "claim_type": "EXPLICIT",
+      "source": "During development in the mouse, the retino-collicular map forms during the first post-natal week, and is followed by the cortico-collicular map, which develops between P6 and P12 (Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Triplett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "4dbf3e3c-c841-4fa4-ad90-e5189fe1bb9b",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C7",
+      "claim": "Visuotopic maps must be aligned to ensure efficient modulation of the SC's retinal response by V1 inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These visuotopic maps must be aligned to ensure efficient modulation of the SC's retinal response by V1 inputs (Zhao et al., 2014; Liang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zhao et al., 2014 and Liang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "dca5b65b-0019-4fa7-8683-1b1ba2a699c0",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C8",
+      "claim": "The formation of the visuotopy is a stochastic process instructed by a balanced contribution of molecular cues and correlated neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the formation of the visuotopy is a stochastic process instructed by a balanced contribution of molecular cues and correlated neuronal activity (Chandrasekaran et al., 2005; Tsigankov and Koulakov, 2006; 2010; Triplett et al., 2009; Ackman and Crair, 2014; Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "2e577b2c-4eb8-4cca-a62b-fc8de6a938c5",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C9",
+      "claim": "The basic principles and underlying molecular mechanisms governing the alignment of converging maps have not been fully described.",
+      "claim_type": "EXPLICIT",
+      "source": "However the basic principles and underlying molecular mechanisms governing the alignment of converging maps have not been fully described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "99b89fec-f07a-400d-b1ae-fb1d6218c38c",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C10",
+      "claim": "In the mouse, EPHA4/A5/A6 receptors are present on projecting RGCs in a low-nasal to high-temporal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse, EPHA4/A5/A6 receptors are present on projecting RGCs in a low-nasal to high-temporal gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Eph receptor expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "490c76c8-a7fc-4026-bac5-79f3b1e4896f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C11",
+      "claim": "RGC axons are repelled when their EPHAs contact and are activated by collicular EFNA2/A3/A5, expressed in a low-rostral to high-caudal gradient in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "RGC axons are repelled when their EPHAs contact and are activated by collicular EFNA2/A3/A5, expressed in a low-rostral to high-caudal gradient in the SC (Lemke and Reber, 2005; Cang and Feldheim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lemke and Reber, 2005 and Cang and Feldheim, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "eb5be379-5ab5-4850-aa99-2d920ab48685",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C12",
+      "claim": "Counter-gradients of ligands (EFNA2/A3/A5) and receptors (EPHA3/A4/A7) are also present in the RGCs and the SC respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Counter-gradients of ligands (EFNA2/A3/A5) and receptors (EPHA3/A4/A7) are also present in the RGCs and the SC respectively, but their role remains controversial (Feldheim et al., 2010; Triplett and Feldheim, 2012; Suetterlin et al., 2012; Weth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "0f0a4db2-2cc8-4069-8eb9-24b71c814a02",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C13",
+      "claim": "In V1, gradients of EPHA4/A7, running from high-lateral to low-medial have been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, gradients of EPHA4/A7, running from high-lateral to low-medial have also been observed, and evidence from genetic analyses suggests their involvement in the development of cortico-collicular projections (Cang et al., 2005; Wilks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cang et al., 2005 and Wilks et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "49ec06c4-0b62-44e6-bad4-22706b5f6783",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C14",
+      "claim": "Evidence from genetic analyses suggests EPHA4/A7 involvement in the development of cortico-collicular projections.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, gradients of EPHA4/A7, running from high-lateral to low-medial have also been observed, and evidence from genetic analyses suggests their involvement in the development of cortico-collicular projections (Cang et al., 2005; Wilks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cang et al., 2005 and Wilks et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "56b5711b-8b45-4ebf-8b7f-e3feb9a152ab",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C15",
+      "claim": "The formation of the cortico-collicular map requires retinal input.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the formation of the cortico-collicular map requires retinal input (Khachab and Bruce, 1999; Triplett et al., 2009), but again, the underlying molecular mechanisms remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Khachab and Bruce, 1999 and Triplett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "beff5576-1d82-44bf-b9ac-753ef8c89ab0",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C16",
+      "claim": "Immunohistochemical staining confirmed ectopic expression of EFNA3 in somata and proximal axons of Isl2(+) RGCs in postnatal day 1 (P1) and P8 Efna3 homozygous knock-in (Efna3KI/KI) mice compared to wild-type (WT) littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical staining confirmed ectopic expression of EFNA3 in somata and proximal axons of Isl2(+) RGCs in postnatal day 1 (P1) and P8 Efna3 homozygous knock-in (Efna3KI/KI) mice compared to wild-type (WT) littermates (Figure 1A\u2013F) without affecting Isl2 expression at P1 (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 1A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "9cef3be4-67ae-4cf0-8a52-d30984428726",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C17",
+      "claim": "Ectopic EFNA3 expression does not affect Isl2 expression at P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical staining confirmed ectopic expression of EFNA3 in somata and proximal axons of Isl2(+) RGCs in postnatal day 1 (P1) and P8 Efna3 homozygous knock-in (Efna3KI/KI) mice compared to wild-type (WT) littermates (Figure 1A\u2013F) without affecting Isl2 expression at P1 (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "6594d193-49da-41fc-8b23-8fc26fd49037",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C18",
+      "claim": "Efna3KI/KI mice present two intermixed sub-populations of RGCs: Isl2(\u2212) cells, expressing wild-type levels of Efna3, and Isl2(+) cells expressing additional Efna3.",
+      "claim_type": "EXPLICIT",
+      "source": "Efna3KI/KI mice present two intermixed sub-populations of RGCs: Isl2(\u2212) cells, expressing wild-type levels of Efna3, and Isl2(+) cells expressing additional Efna3 (Figure 1E\u2013F,I\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1E-F, I-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "99de9af4-fed9-4276-99f8-b5b1ed9e8c63",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C19",
+      "claim": "EFNA3 is observed on RGC axons in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "EFNA3 is observed on RGC axons in vitro (Figure 1O,Q').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1O, Q'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "797adf26-7ffe-4020-a5e1-8e353e7a99d4",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C20",
+      "claim": "Ectopic expression of EFNA in Isl2(+) RGCs did not induce perceptible changes in synaptic layers or retinal organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of EFNA in Isl2(+) RGCs did not induce perceptible changes in synaptic layers or retinal organization (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "37d7a166-f36a-4863-b6c9-fb4f5bcbaaf1",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C21",
+      "claim": "Quantitative transcript (mRNA) measurement confirmed a two-fold increase of Efna3 mRNA in nasal, central and temporal Efna3KI/KI mutant retinas when compared to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative transcript (mRNA) measurement on RGC cell bodies, performed and standardized as described previously (Reber et al., 2004; Claudepierre et al., 2008) confirmed a two-fold increase of Efna3 mRNA and normal levels of Efna2/a5 mRNA in nasal, central and temporal Efna3KI/KI mutant retinas when compared to WT littermates (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative RT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "18fe5179-e31f-4d7d-b11c-3776641cc978",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C22",
+      "claim": "Efna3KI/KI mutant retinas show normal levels of Efna2/a5 mRNA when compared to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative transcript (mRNA) measurement on RGC cell bodies, performed and standardized as described previously (Reber et al., 2004; Claudepierre et al., 2008) confirmed a two-fold increase of Efna3 mRNA and normal levels of Efna2/a5 mRNA in nasal, central and temporal Efna3KI/KI mutant retinas when compared to WT littermates (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative RT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "a9c0e91b-7d28-4d66-b457-aeb9cff4c85e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C23",
+      "claim": "Efna3KI/KI and Efna3KI/+ mice show normal linear retino-collicular maps, equivalent to those of WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting these values in Cartesian coordinates, as described previously (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011), revealed normal linear retino-collicular maps in Efna3KI/KI and Efna3KI/+ mice, equivalent to those of WT littermates (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mapping data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "2bded8f4-bf2d-4fca-98fb-6a71ddd65a65",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C24",
+      "claim": "The size and the layering of the retinal TZs are similar between Efna3KI/KI and WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis showed that the size and the layering of the retinal TZs are similar between Efna3KI/KI and WT littermates (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "099fee0c-e2dd-4162-82b2-2b51cf74011b",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C25",
+      "claim": "Retrograde labelling confirmed that axons from both Isl2(\u2212) and Isl2(+) RGCs project to the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde labelling confirmed that axons from both Isl2(\u2212) and Isl2(+) RGCs project to the SC (Figure 3B\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by retrograde labelling data shown in Figure 3B-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "84446af9-f36c-49b9-8936-ae55d23ff167",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C26",
+      "claim": "Anterograde focal injections show normal retino-geniculate mapping in Efna3KI/KI similarly to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterograde focal injections show normal retino-geniculate mapping (Figure 3H\u2013K) and labelling by full-eye fills showed normal retino-collicular/geniculate eye-specific segregation (Figure 3L\u2013Q) in Efna3KI/KI similarly to WT littermates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by anterograde labelling data shown in Figure 3H-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "73a4adeb-eaab-4692-8540-018e2b1d40f5",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C27",
+      "claim": "Labelling by full-eye fills showed normal retino-collicular/geniculate eye-specific segregation in Efna3KI/KI similarly to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterograde focal injections show normal retino-geniculate mapping (Figure 3H\u2013K) and labelling by full-eye fills showed normal retino-collicular/geniculate eye-specific segregation (Figure 3L\u2013Q) in Efna3KI/KI similarly to WT littermates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by full-eye fill data shown in Figure 3L-Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "d253de2f-f91e-4c65-98bf-ddf924540ccc",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C28",
+      "claim": "A two-fold increase of ectopic retinal Efna3 expression in Isl2(+) RGCs does not disturb the formation of the retino-collicular/geniculate mapping nor eye-specific segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that a two-fold increase of ectopic retinal Efna3 expression in Isl2(+) RGCs does not disturb the formation of the retino-collicular/geniculate mapping nor eye-specific segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "733ef876-b5c1-4dfa-96ab-9caf3da1c693",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C29",
+      "claim": "Quantitative analyses revealed a remarkable duplication of the cortico-collicular map for single injections along the lateral-medial axis of the V1 in 47% of Efna3KI/KI animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses using ImageJ revealed a remarkable duplication of the cortico-collicular map for single injections along the lateral-medial axis of the V1 in 47% of Efna3KI/KI (n = 9/19, Figure 4A, Figure 4\u2014figure supplement 1A, Figure 4\u2014figure supplement 2A) and 43% of Efna3KI/+ (n = 7/16, Figure 4B, Figure 4\u2014figure supplement 1B) animals when compared to WT littermates (n = 9, Figure 4C, Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 2B) demonstrating heterogeneity of the phenotype in Efna3 KI mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative mapping data shown in Figure 4A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "caae8d53-712c-4468-a3cf-a484e394cba2",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C30",
+      "claim": "Quantitative analyses revealed a remarkable duplication of the cortico-collicular map for single injections along the lateral-medial axis of the V1 in 43% of Efna3KI/+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses using ImageJ revealed a remarkable duplication of the cortico-collicular map for single injections along the lateral-medial axis of the V1 in 47% of Efna3KI/KI (n = 9/19, Figure 4A, Figure 4\u2014figure supplement 1A, Figure 4\u2014figure supplement 2A) and 43% of Efna3KI/+ (n = 7/16, Figure 4B, Figure 4\u2014figure supplement 1B) animals when compared to WT littermates (n = 9, Figure 4C, Figure 4\u2014figure supplement 1C, Figure 4\u2014figure supplement 2B) demonstrating heterogeneity of the phenotype in Efna3 KI mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative mapping data shown in Figure 4B and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "ea891d87-6901-4857-98fd-e99c79e12ed9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C31",
+      "claim": "In 60% of Efna3KI/KI animals, different types of projections (either single or duplicated) were observed in both colliculi of a given animal.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not observed in 60% of Efna3KI/KI (n = 3/5) and 57% of Efna3KI/+ (n = 4/7) animals when we traced the cortico-collicular projections in both left and right colliculi (Figure 4D,D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bilateral mapping data shown in Figure 4D, D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "972880ae-3a9c-497a-9342-548e3d4f4b4a",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C32",
+      "claim": "In 57% of Efna3KI/+ animals, different types of projections (either single or duplicated) were observed in both colliculi of a given animal.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not observed in 60% of Efna3KI/KI (n = 3/5) and 57% of Efna3KI/+ (n = 4/7) animals when we traced the cortico-collicular projections in both left and right colliculi (Figure 4D,D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bilateral mapping data shown in Figure 4D, D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "863375b3-0e4e-4ce5-982e-210eddaab41e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C33",
+      "claim": "Genetic variation is unlikely to contribute to the map heterogeneity between animals of the same genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, genetic variation is unlikely to contribute to the map heterogeneity between animals of the same genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the same animal can show different projection types in left and right colliculi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "fd823145-3324-4860-988e-7f1ac54bfc08",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C34",
+      "claim": "The heterogeneity is most likely the consequence of a stochastic process of map formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterogeneity is most likely the consequence of a stochastic process of map formation, as suggested previously (Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to Owens et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "0e1cfb76-a705-4e0a-bcfa-521cf78e0a78",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C35",
+      "claim": "In Efna3KI/KI animals showing the same type of projections between colliculi (40% of the mice), all of these projections were duplicated.",
+      "claim_type": "EXPLICIT",
+      "source": "In Efna3KI/KI animals showing the same type of projections between colliculi, (40% of the mice) all of these projections were duplicated whereas in the Efna3KI/+ animals, the remaining 43% presented only single projections in both left and right colliculi, suggesting an effect of the level of Efna3 ectopic expression onto cortico-collicular map duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental observations of bilateral projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "8023385f-c330-4204-ad28-8c463c0b31d3",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C36",
+      "claim": "In Efna3KI/+ animals, the remaining 43% presented only single projections in both left and right colliculi.",
+      "claim_type": "EXPLICIT",
+      "source": "In Efna3KI/KI animals showing the same type of projections between colliculi, (40% of the mice) all of these projections were duplicated whereas in the Efna3KI/+ animals, the remaining 43% presented only single projections in both left and right colliculi, suggesting an effect of the level of Efna3 ectopic expression onto cortico-collicular map duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental observations of bilateral projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "80372e3d-d6f1-4fed-9600-84cd7ef86f9b",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C37",
+      "claim": "All WT animals tested (n = 4) showed single projections in both colliculi.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all WT animals tested (n = 4) showed single projections in both colliculi (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "cc0ba1ac-a393-407a-8403-0ed290b0daf1",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C38",
+      "claim": "There is a significant two-fold difference in map separation between Efna3KI/KI (\u0394Sexp median = 13%, n = 9) and Efna3KI/+ (\u0394Sexp median = 7%, n = 7) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a significant two-fold difference in map separation between Efna3KI/KI (\u0394Sexp median = 13%, n = 9) and Efna3KI/+ (\u0394Sexp median = 7%, n = 7) animals, which correlates with the presence of one or two copies of the Isl2-ires-Efna3 allele (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "20197c2d-e89b-4f42-af62-ce40659fd9d3",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C39",
+      "claim": "The map separation correlates with the presence of one or two copies of the Isl2-ires-Efna3 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a significant two-fold difference in map separation between Efna3KI/KI (\u0394Sexp median = 13%, n = 9) and Efna3KI/+ (\u0394Sexp median = 7%, n = 7) animals, which correlates with the presence of one or two copies of the Isl2-ires-Efna3 allele (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the correlation between genotype and map separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "2a995599-f041-4044-b396-7cba423fe3dc",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C40",
+      "claim": "Efna3 ectopic expression in Isl2(+) RGC axons/TZs destabilizes the stochastic process of cortico-collicular mapping, leading to map duplication in Efna3 KI animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Isl2 is not expressed in the cortex (see Figure 5B), these results suggest that Efna3 ectopic expression in Isl2(+) RGC axons/TZs destabilizes the stochastic process of cortico-collicular mapping, leading to map duplication in Efna3 KI animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental observations and the fact that Isl2 is not expressed in cortex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "4c7fc5da-f3b1-4ccd-b5d5-c122e46bd194",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C41",
+      "claim": "V1 EphA-positive cortical axons sense varying EFNA3 levels on RGCs terminals by direct contact with these terminals in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn implies that V1 EphA-positive cortical axons sense varying EFNA3 levels on RGCs terminals by direct contact with these terminals in the SC (Cang et al., 2005) and anterograde labelling from retina and V1 cortex showed that both cortical and retinal axons terminals overlap in the superficial layers of the SC (Figure 4F) (Phillips et al., 2011; Owens et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference supported by citations and data shown in Figure 4F.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "7fe2e0d4-c3df-47e0-80c7-87490988328a",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C42",
+      "claim": "Both cortical and retinal axons terminals overlap in the superficial layers of the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn implies that V1 EphA-positive cortical axons sense varying EFNA3 levels on RGCs terminals by direct contact with these terminals in the SC (Cang et al., 2005) and anterograde labelling from retina and V1 cortex showed that both cortical and retinal axons terminals overlap in the superficial layers of the SC (Figure 4F) (Phillips et al., 2011; Owens et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by anterograde labelling data shown in Figure 4F and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b0470088-417a-48bd-8302-a0b3aec4825f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C43",
+      "claim": "DiI labelled RGC axons were observed in the SC, as well as a strong collicular EFNA3 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "DiI labelled RGC axons were observed in the SC, as well as a strong collicular EFNA3 staining (Figure 4\u2014figure supplement 3A\u2013F, Figure 5\u2014figure supplement 1A\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 4\u2014figure supplement 3A\u2013F and Figure 5\u2014figure supplement 1A\u2013D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "70421d92-8bb6-410b-b004-b14c1c914c3f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C44",
+      "claim": "No EFNA3 staining on single DiI-labelled RGC axons could be detected in neither Efna3KI/KI nor WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no EFNA3 staining on single DiI-labelled RGC axons could be detected in neither Efna3KI/KI nor WT littermates (Figure 4\u2014figure supplement 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 4\u2014figure supplement 3A\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "2823ffc7-3f19-4950-8aac-cb1b3be565f7",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C45",
+      "claim": "EFNA3 immunohistochemistry on P3 Efna3KI/KI and WT optic nerve (ON) longitudinal sections showed the presence of EFNA3 on fibers within the proximal part of the ON in Efna3KI/KI and WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "EFNA3 immunohistochemistry on P3 Efna3KI/KI and WT optic nerve (ON) longitudinal sections (proximal, middle and distal to the optic cup) showed the presence of EFNA3 on fibers within the proximal part of the ON in Efna3KI/KI and WT littermates (Figure 4\u2014figure supplements 4A,A', D,D') but not on the proximal part of Efna3\u2212/\u2212 ON (Figure 4\u2014figure supplement 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 4\u2014figure supplements 4A,A', D,D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "faf63189-11e5-47c7-8492-4d3aea451f47",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C46",
+      "claim": "EFNA3 signal was detected in the middle part of the ON in Efna3KI/KI but not in WT.",
+      "claim_type": "EXPLICIT",
+      "source": "EFNA3 signal was also detected in the middle part of the ON in Efna3KI/KI but not in WT (Figure 4\u2014figure supplements 4B,B', E,E') and was nearly impossible to discern in the distal part of Efna3KI/KI ON (Figure 4\u2014figure supplements 4C,C', F,F'), indicating that EFNA3 is present on RGC axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 4\u2014figure supplements 4B,B', E,E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "e8388f72-035e-4710-8074-363ad3b04c00",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C47",
+      "claim": "EFNA3 was nearly impossible to discern in the distal part of Efna3KI/KI ON.",
+      "claim_type": "EXPLICIT",
+      "source": "EFNA3 signal was also detected in the middle part of the ON in Efna3KI/KI but not in WT (Figure 4\u2014figure supplements 4B,B', E,E') and was nearly impossible to discern in the distal part of Efna3KI/KI ON (Figure 4\u2014figure supplements 4C,C', F,F'), indicating that EFNA3 is present on RGC axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 4\u2014figure supplements 4C,C', F,F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "55cf2e87-8c34-410d-b9e8-0a1315d7d12f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C48",
+      "claim": "EFNA3 is present on RGC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "EFNA3 signal was also detected in the middle part of the ON in Efna3KI/KI but not in WT (Figure 4\u2014figure supplements 4B,B', E,E') and was nearly impossible to discern in the distal part of Efna3KI/KI ON (Figure 4\u2014figure supplements 4C,C', F,F'), indicating that EFNA3 is present on RGC axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the immunohistochemical data from the optic nerve.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "7e921529-171c-44d7-a265-83c82533ea95",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C49",
+      "claim": "Co-localization of EFNA3 with NF200 on fibers confirmed that EFNA3 is present on RGC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed by co-localization of EFNA3 with NF200 on fibers (Figure 4\u2014figure supplement 4I\u2013J' and Figure 1B\u2013F,O\u2013Q').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-localization data shown in Figure 4\u2014figure supplement 4I\u2013J' and Figure 1B\u2013F,O\u2013Q'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "cecfc7d9-951c-42dc-b291-827612bf3f57",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C50",
+      "claim": "Retrograde labelling confirmed that the cortico-collicular projections originate from layer V neurons in V1 cortex in P14 Efna3KI/KI animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde labelling confirmed that the cortico-collicular projections originate from layer V neurons in V1 cortex in P14 Efna3KI/KI animals (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by retrograde labelling data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "c80fa774-2c5c-4257-829b-17738b4d656d",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C51",
+      "claim": "No bi-cistronic expression of Isl2-ires-Efna3 in either SC or V1 cortex of WT and Efna3KI/KI animals could be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "No bi-cistronic expression of Isl2-ires-Efna3 in either SC or V1 cortex of WT and Efna3KI/KI animals could be detected (Figure 5B), ruling out any indirect effects of Efna3 ectopic expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "034b3778-8ee9-428b-90ad-0788a68189e8",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C52",
+      "claim": "Transcript analyses in colliculi and V1 cortices revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Efna3KI/KI compared to WT littermates at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript analyses in colliculi and V1 cortices revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Efna3KI/KI compared to WT littermates at P7 (Figure 5C) excluding indirect effects due to local changes of Ephas/Efnas gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcript analysis data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "a854d2cb-ac0e-44ee-8c43-d211fb62366c",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C53",
+      "claim": "Similar level of EFNA3 between Efna3KI/KI and WT littermates was confirmed by immunostaining of EFNA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar level of EFNA3 between Efna3KI/KI and WT littermates was further confirmed by immunostaining of EFNA3 (Figure 5\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 5\u2014figure supplement 1A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "fd9f2e36-0b45-4f38-95a8-304307ac3c71",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C54",
+      "claim": "If the defective cortico-collicular maps in the Efna3 KI animals were solely due to Efna3 ectopic expression in Isl2(+) RGCs, then inactivation of this ectopic expression should rescue the phenotype and restore a wild-type map.",
+      "claim_type": "EXPLICIT",
+      "source": "If the defective cortico-collicular maps in the Efna3 KI animals were solely due to Efna3 ectopic expression in Isl2(+) RGCs, then inactivation of this ectopic expression should rescue the phenotype and restore a wild-type map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical hypothesis based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "d6fa3709-30d2-4e1e-ba02-0d72dd480b6f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C55",
+      "claim": "Co-expression of EFNA3 ligand and EPHA3 receptor in the same cell leads to their mutual inactivation through cis-masking.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that co-expression of EFNA3 ligand and EPHA3 receptor in the same cell leads to their mutual inactivation through cis-masking (Falivelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Falivelli et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b736a930-207f-40bf-9051-d90f80bbe334",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C56",
+      "claim": "Immunohistochemical staining confirmed co-expression of EFNA3 and EPHA3 in acutely isolated double heterozygous RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical staining confirmed co-expression of EFNA3 and EPHA3 in acutely isolated double heterozygous RGCs (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "16ecead3-a4ba-46e4-8721-64eaebfe7353",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C57",
+      "claim": "Ectopic expression of the EPHA3 receptor in Isl2(+) RGCs in heterozygous Epha3KI/+ animals results in a duplicated retino-collicular map.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, previous studies demonstrated that ectopic expression of the EPHA3 receptor in Isl2(+) RGCs in heterozygous Epha3KI/+ animals results in a duplicated retino-collicular map (Figure 6\u2014figure supplement 1, Brown et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Brown et al., 2000 and data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "35f025a8-ad51-4563-b4a5-114c3a3b1f59",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C58",
+      "claim": "Co-expression of Epha3 and Efna3 in Epha3KI/Efna3KI double-mutant mice reverted the duplications, leading to normal retino- and cortico-collicular maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, co-expression of Epha3 and Efna3 in Epha3KI/Efna3KI double-mutant mice reverted the duplications, leading to normal retino- and cortico-collicular maps (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mapping data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "bd4be10c-dfce-4661-b314-ecb9227dd91a",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C59",
+      "claim": "The double rescue of both maps indicates that cortico-collicular defects in Efna3 KI animals were caused by ectopic expression of EFNA3 in Isl2(+) RGCs and were restored by concomitant expression of EPHA3.",
+      "claim_type": "EXPLICIT",
+      "source": "This double rescue of both maps indicates that cortico-collicular defects in Efna3 KI animals were caused by ectopic expression of EFNA3 in Isl2(+) RGCs and were restored by concomitant expression of EPHA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the rescue experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "47eadc93-5af1-4066-861b-addf495a15bb",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C60",
+      "claim": "The cis-inactivation mechanism was cross-validated by the presence of a normal retino-collicular map in the Efna3KI/Epha3KI double mutant mice, indicating EPHA3 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The cis-inactivation mechanism was cross-validated by the presence of a normal retino-collicular map in the Efna3KI/Epha3KI double mutant mice, indicating EPHA3 inactivation (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the mapping data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "86ecc260-5850-4bae-be22-25093e38c49d",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C61",
+      "claim": "Retinal DiI anterograde tracing revealed no retino-collicular duplications, even in the caudal-most pole of the SC, in Epha3KI/Efna3KI::Epha4+/- and Epha3KI/Efna3KI::Epha4\u2212/\u2212 compound mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal DiI anterograde tracing revealed no retino-collicular duplications, even in the caudal-most pole of the SC, in Epha3KI/Efna3KI::Epha4+/- and Epha3KI/Efna3KI::Epha4\u2212/\u2212 compound mutants, confirming inactivation of EPHA3 and EFNA3 in Isl2(+) RGCs (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by anterograde tracing data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "952d63ec-96cd-4aee-9377-1afa8a5211db",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C62",
+      "claim": "EPHA3 and EFNA3 ectopic expression in the same RGCs lead to their mutual inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that EPHA3 and EFNA3 ectopic expression in the same RGCs lead to their mutual inactivation and confirm that cortico-collicular mapping duplications observed in Efna3 KI animals are the consequence of retinal EFNA3 ectopic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the compound mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "dfc6fc15-ef20-4e0d-962c-e1ba2e0444a9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C63",
+      "claim": "Cortico-collicular mapping duplications observed in Efna3 KI animals are the consequence of retinal EFNA3 ectopic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that EPHA3 and EFNA3 ectopic expression in the same RGCs lead to their mutual inactivation and confirm that cortico-collicular mapping duplications observed in Efna3 KI animals are the consequence of retinal EFNA3 ectopic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the genetic rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "38a1c437-798e-4a2e-8769-73d09d2321b9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C64",
+      "claim": "Modestly elevated expression of EFNA3 exclusively in a subset of RGCs disturbed cortico-collicular map alignment in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that modestly elevated expression of EFNA3 exclusively in a subset of RGCs disturbed cortico-collicular map alignment in the SC, pointing to a mechanism where retinal EFNA3 provides positional information to ingrowing V1 cortico-collicular axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "3a537db2-dbb7-4c64-9f12-565ef7e504f9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C65",
+      "claim": "Retinal EFNA3 provides positional information to ingrowing V1 cortico-collicular axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that modestly elevated expression of EFNA3 exclusively in a subset of RGCs disturbed cortico-collicular map alignment in the SC, pointing to a mechanism where retinal EFNA3 provides positional information to ingrowing V1 cortico-collicular axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "bed81b6c-849d-4bef-b74a-8e97a23223f1",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C66",
+      "claim": "EPHA3/EFNA3 coexpression in the same cell, including RGCs, abolishes their trans-binding to EFNAs and EPHAs.",
+      "claim_type": "EXPLICIT",
+      "source": "EPHA3/EFNA3 coexpression in the same cell, including RGCs, abolishes their trans-binding to EFNAs and EPHAs (Connor et al., 1998; Hornberger et al., 1999; Menzel et al., 2001; Carvalho et al., 2006; Falivelli et al., 2013; Klein and Kania, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "6567a81b-1e87-4ee6-9494-2e01129f82e5",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C67",
+      "claim": "Each individual Efna3KI/+ and Epha3KI/+ mutant shows robust visuotopic map abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The power of this approach resides in the fact that each individual Efna3KI/+ and Epha3KI/+ mutant shows robust visuotopic map abnormalities (Brown et al., 2000; Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brown et al., 2000 and Triplett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "579a2f4c-323c-4ff5-bfec-58098e67ab1e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C68",
+      "claim": "The presence of WT retino- and cortico-collicular maps in the Efna3KI/Epha3KI double heterozygous mutants provides compelling evidence that both EFNA3 and EPHA3 were inactivated in Isl2(+) RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of WT retino- and cortico-collicular maps in the Efna3KI/Epha3KI double heterozygous mutants provides compelling evidence that both EFNA3 and EPHA3 were inactivated in Isl2(+) RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the double mutant mapping results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "48a47868-7945-4047-b28c-1c6843ef26d6",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C69",
+      "claim": "The results confirm the causal role of retinal EFNA3 ectopic expression on cortico-collicular alignment defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot rule out the occurrence of an altered expression/function of other yet unidentified molecules involved in mapping (e.g., semaphorins, L1) by ectopic EFNA3 expression, our results confirm the causal role of retinal EFNA3 ectopic expression on cortico-collicular alignment defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the genetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "43028407-88d6-470d-b476-98f8d96e4496",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C70",
+      "claim": "Retinal projections play an instructive role in cortico-collicular map formation.",
+      "claim_type": "EXPLICIT",
+      "source": "They suggest that retinal projections play an instructive role in cortico-collicular map formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "ab095491-77a7-482a-b6c1-16b31902691d",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C71",
+      "claim": "The heterogeneity of the cortico-collicular phenotype in the Efna3 KI mutants is in accordance with previous data showing a variable penetrance of the retinotopic mapping abnormalities in constitutive or conditional Efnas knock-outs.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity of the cortico-collicular phenotype in the Efna3 KI mutants, revealed by a mix of single and duplicated projections, is in accordance with previous data showing a variable penetrance of the retinotopic mapping abnormalities in constitutive or conditional Efnas knock-outs (Feldheim et al., 2000; Cang et al., 2008; Suetterlin and Drescher, 2014; Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "ed9eb7a9-3de5-462e-8bcf-e4885988beef",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C72",
+      "claim": "Variable penetrance of the mutant phenotype can be explained by the stochastic nature of map formation driven by opposing forces resulting from EPHA signaling and correlated neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variable penetrance of the mutant phenotype can be explained by the stochastic nature of map formation driven by opposing forces resulting from EPHA signaling, which tends to separate neighboring RGCs through repulsion, and correlated neuronal activity, which tends to reinforce neighboring RGCs projections on adjacent target cells (Cang et al., 2008; Triplett et al., 2009; Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cang et al., 2008, Triplett et al., 2009, and Owens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "063f738f-8784-4a1c-ae68-ecc74f473ddb",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C73",
+      "claim": "The general pattern of V1 collicular projections is consistent with the involvement of cortical EPHA receptor gradients (high-lateral to low-medial).",
+      "claim_type": "EXPLICIT",
+      "source": "The general pattern of V1 collicular projections is consistent with the involvement of cortical EPHA receptor gradients (high-lateral to low-medial) (Cang et al., 2005) repelled by low-rostral to high-caudal EFNA gradients of retinal origin in the SC (forward signaling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cang et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "e6730a3c-c25b-44eb-8bdb-5c622a189487",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C74",
+      "claim": "In the Efna3 KI animals, retinal EFNA3 oscillation in the SC organizes neighbor-neighbor relationships of V1 and RGC TZs locally through repulsion inducing a small distance of map duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Efna3 KI animals, retinal EFNA3 oscillation in the SC organizes neighbor-neighbor relationships of V1 and RGC TZs locally through repulsion inducing a small distance of map duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "6f51af44-37a0-4bea-9525-b95c012f8366",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C75",
+      "claim": "The model is consistent with a retinal-matching model, suggesting that retinal inputs are required for proper cortico-collicular mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is consistent with a retinal-matching model, suggesting that retinal inputs are required for proper cortico-collicular mapping (Khachab and Bruce, 1999; Triplett et al., 2009; Cang and Feldheim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Khachab and Bruce, 1999, Triplett et al., 2009, and Cang and Feldheim, 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "83d1260b-b444-461b-b12f-b9ab8bb56fd0",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C76",
+      "claim": "Retinal inputs carry molecular cues, EFNA3 and likely other retinal EFNAs present at the level of the TZs to provide positional information for ingrowing V1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, retinal inputs carry molecular cues, EFNA3 and likely other retinal EFNAs present at the level of the TZs to provide positional information for ingrowing V1 axons (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the proposed model based on the experimental findings, illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b5775262-5d3a-4f78-8e31-ac330d239b62",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C77",
+      "claim": "Transposed retinal EFNAs in the SC instruct cortico-collicular map alignment and act together with correlated neuronal activity pattern shared between RGCs and V1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data suggest that transposed retinal EFNAs in the SC instruct cortico-collicular map alignment and act together with correlated neuronal activity pattern shared between RGCs and V1 axons (Triplett et al., 2009; Cang and Feldheim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "0e6ded4d-af99-40d9-84be-328c1ab9760a",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C78",
+      "claim": "Triplett and collaborators suggested a gradient-matching model which posits that collicular EFNAs are required for the mapping of somatosensory inputs to the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Triplett and collaborators (Triplett et al., 2012) suggested a gradient-matching model which posits that collicular EFNAs are required for the mapping of somatosensory inputs to the SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Triplett et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "56f4b08d-d4bc-4022-9122-f33f6affd959",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C79",
+      "claim": "The requirement of SC-produced EFNAs for cortico-collicular mapping is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the requirement of SC-produced EFNAs for cortico-collicular mapping is unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations and previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "869caf2c-7a43-4727-88a9-6189506523b3",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C80",
+      "claim": "The presence of non-duplicated retino-collicular maps in both Efna3KI/+ and Efna3KI/KI mutants suggests that retinal EFNA3 does not play a significant role in the formation of this map.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of non-duplicated retino-collicular maps in both Efna3KI/+ and Efna3KI/KI mutants, as revealed by DiI tracing, suggests that retinal EFNA3 does not play a significant role in the formation of this map, consistent with previous work on Efna3-null mutants (Pfeiffenberger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations, supported by a citation to Pfeiffenberger et al., 2006.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "bfcd4a75-d294-4d8b-acfd-dbae42025e87",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C81",
+      "claim": "EFNAs on RGC axons are activated by collicular EPHAs (reverse signaling), leading to axon repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EFNAs on RGC axons are activated by collicular EPHAs (reverse signaling), leading to axon repulsion (Rashid et al., 2005; Lim et al., 2008; Yoo et al., 2011) or branch inhibition in the SC (Yates et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "3515cb3c-5d70-446b-ac8a-05bfe2717d7b",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C82",
+      "claim": "Retinal EFNAs bind to co-expressed retinal EPHAs in the same RGCs leading to inactivation/masking of the EPHA receptors rendering those axons less sensitive to EFNAs binding in the target tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro and in vivo transfection in chick neurons suggested that retinal EFNAs bind to co-expressed retinal EPHAs in the same RGCs leading to inactivation/masking of the EPHA receptors rendering those axons less sensitive to EFNAs binding in the target tissue (Connor et al., 1998; Hornberger et al., 1999; McLaughlin and O'Leary, 1999; Menzel et al., 2001; Yin et al., 2004; Carvalho et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "42ab5983-e4d9-4338-b0c1-a3d445436cf5",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C83",
+      "claim": "The results indicate that EFNA3 ectopic expression does not inactivate endogenous co-expressed EPHA4/A5/A6 receptors in RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results rather indicate that EFNA3 ectopic expression does not inactivate endogenous co-expressed EPHA4/A5/A6 receptors in RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of retino-collicular map duplications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "776fb15a-bad6-447c-a6d8-974cc2b85f22",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C84",
+      "claim": "Specific inactivation of EPHA3 by ectopic EFNA3 was shown, suggesting distinctive interactions in cis between EFNA/EPHA pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we showed specific inactivation of EPHA3 by ectopic EFNA3, suggesting distinctive interactions in cis between EFNA/EPHA pairs as previously observed (Yin et al., 2004; Falivelli et al., 2013; Klein and Kania, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental results, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "ab2a2348-9ed3-4cfe-ad59-1038a236f8c4",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C85",
+      "claim": "Conditional ablation revealed that high retinal EFNA5 on nasal RGCs axons prevents temporal RGC axons from targeting the caudal SC through fiber-fiber interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional ablation revealed that high retinal EFNA5 on nasal RGCs axons prevents temporal RGC axons from targeting the caudal SC through fiber-fiber interaction (Suetterlin and Drescher, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suetterlin and Drescher, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "8fc5c38a-c6c1-43f6-ae74-d5a954e6e74f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C86",
+      "claim": "The results suggest that retinal EFNA3 is not involved in fiber-fiber interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In our mice, such a mechanism would have generated a local duplication between Isl2(+) and Isl2(-) RGCs or an extension of the TZs in the SC which was not observed, suggesting that retinal EFNA3 is not involved in fiber-fiber interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of expected phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "cf9ce15b-128c-4760-9b1a-920a60ded804",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C87",
+      "claim": "The data suggest that retinal EFNA3 and EFNA5 present distinct effects on visuotopic mapping and imply a member-specific role of retinal EFNAs in map formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with recent results (Suetterlin and Drescher, 2014), our data further suggest that retinal EFNA3 and EFNA5 present distinct effects on visuotopic mapping and imply a member-specific role of retinal EFNAs in map formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "cbf9b3c0-6774-4078-8447-f3bb2d1dd0da",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C88",
+      "claim": "Retinal EPHA receptors are considered to be functionally interchangeable.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast with retinal EPHA receptors which are considered to be functionally interchangeable (Reber et al., 2004; Bevins et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Reber et al., 2004 and Bevins et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "d4abe7d9-6d79-4f22-a96d-5ee8ab5bb0c2",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C89",
+      "claim": "Previous work modelled the stochastic nature of retino-collicular map formation based on the Koulakov model.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work modelled the stochastic nature of retino-collicular map formation based on the Koulakov model (Tsigankov and Koulakov, 2006; 2010; Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tsigankov and Koulakov, 2006, 2010, and Owens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "bf82a266-52e8-4606-9638-06cac4a25c06",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C90",
+      "claim": "The 3-step map alignment model substantially modified and expanded the Koulakov algorithm using measured Efna expression data instead of theoretical values.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have substantially modified and expanded this algorithm using our measured Efna expression data instead of theoretical values and simulated the retino- and cortico-collicular mapping process sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "a7e74bba-bd48-431d-86fb-407fe7629492",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C91",
+      "claim": "Retinal Efna3 expression alone cannot provide positional information, due to its homogeneous expression profile in WT RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that retinal Efna3 expression alone cannot provide positional information, due to its homogeneous expression profile in WT RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "5d6dbdf2-c848-42ca-842f-a774c3478733",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C92",
+      "claim": "Other EFNAs or other guidance molecules, either retinal or collicular, must participate in the regulation of map alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore other EFNAs or other guidance molecules, either retinal or collicular, must participate in the regulation of map alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the modeling assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b8162b07-0fcc-48cc-918c-20429dfd8033",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C93",
+      "claim": "Retinal EFNA5 has been recently shown to participate in RGCs fiber-fiber interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal EFNA5 has been recently shown to participate in RGCs fiber-fiber interactions (Suetterlin and Drescher, 2014) but a given proportion may contribute to map alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suetterlin and Drescher, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "ceedf12a-fb14-444f-8827-0f0c46f8eb9c",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C94",
+      "claim": "The model retained 80% of the retinal EFNA5 level and 100% of retinal EFNA2/A3 levels in the algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to retain 80% of the retinal EFNA5 level and 100% of retinal EFNA2/A3 levels in the algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a parameter choice in the modeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "93052721-c27b-4ce0-b020-ead78aba202e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C95",
+      "claim": "Contribution of endogenous collicular EFNAs to cortico-collicular map alignment seems unlikely as these mediated previous RGCs axons guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, contribution of endogenous collicular EFNAs to cortico-collicular map alignment seems unlikely as these mediated previous RGCs axons guidance (Janes et al., 2005), therefore collicular EFNA levels were not included in the V1 projection step of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous work cited (Janes et al., 2005).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "4ea2f870-e1cb-44ae-aee5-30e5d3f765ed",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C96",
+      "claim": "The 3-step map alignment model replicates experimental features of both retino- and cortico-collicular maps observed in WT and Efna3 KI animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3-step map alignment model replicates experimental features of both retino- and cortico-collicular maps observed in WT and Efna3 KI animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "b2d239d5-c879-49bf-8bc1-bebb38540efd",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C97",
+      "claim": "The model validates a stochastic mechanism of retinal-dependent molecular cues, involving EFNA3, providing positional information in the SC for V1 axons which then coordinate with correlated neuronal activity to align visuotopic maps.",
+      "claim_type": "EXPLICIT",
+      "source": "It validates a stochastic mechanism of retinal-dependent molecular cues, involving EFNA3, providing positional information in the SC for V1 axons which then coordinate with correlated neuronal activity (Triplett et al., 2009) to align visuotopic maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "55a0fa93-280c-4989-82e9-6059243c1590",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C98",
+      "claim": "The percentages of duplicated projections generated by the model were similar to the percentages of experimentally measured duplications for both Efna3KI/KI and Efna3KI/+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentages of duplicated projections generated by the model were similar to the percentages of experimentally measured duplications (Figure 4A,B) for both Efna3KI/KI and Efna3KI/+ animals (one sample t-test, Efna3KI/KI, p = 0.17; Efna3KI/+, p = 0.22; Figure 8J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison shown in Figure 8J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "bcfb464d-250b-4095-91c3-136157f4ceb1",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C99",
+      "claim": "This new principle may serve as a general framework for sensory map alignment, where positional information, carried by a leading map, acts together with correlated activity, enabling precise adjustments of subsequent projection alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "From a functional standpoint, this new principle may serve as a general framework for sensory map alignment, where positional information, carried by a leading map, acts together with correlated activity, enabling precise adjustments of subsequent projection alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "e118c52e-7f97-40b0-92e3-f204bc70d3d1",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C100",
+      "claim": "Graded expression of Efna2 and Efna5 was observed along the nasal-temporal axis of the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed graded expression of Efna2 and Efna5 along the nasal-temporal axis of the retina, whereas Efna3 is homogeneously expressed in WT animals (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "49613b5b-3ff0-4bdf-a7ff-2b138d628c1e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "claim_id": "C101",
+      "claim": "Efna3 is homogeneously expressed in WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed graded expression of Efna2 and Efna5 along the nasal-temporal axis of the retina, whereas Efna3 is homogeneously expressed in WT animals (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Efna3KI/KI mouse model successfully expresses ectopic EFNA3 in Isl2(+) RGCs, resulting in a two-fold increase in Efna3 mRNA without affecting retinal organization or other Efna expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 provide converging evidence from immunohistochemistry (C16-C19), retinal organization analysis (C20), and quantitative RT-PCR (C21-C22) that the knock-in model achieves the intended molecular manipulation. The data demonstrate specificity (only Efna3 increased, not Efna2/5) and lack of gross developmental defects, establishing a valid experimental model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ectopic EFNA3 expression in Isl2(+) RGCs does not disrupt retino-collicular or retino-geniculate mapping, with normal map topology, termination zone characteristics, and eye-specific segregation in Efna3KI/KI mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 demonstrate through multiple mapping techniques (anterograde/retrograde labeling, focal injections, full-eye fills) that retinal projections remain normal despite altered EFNA3 expression. The quantitative mapping data (C23), anatomical analyses (C24), and functional segregation studies (C26-C27) provide robust evidence that EFNA3 does not significantly affect retino-collicular map formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "0a82c5d9-1487-49e6-a752-036b1366729e",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ectopic EFNA3 expression causes cortico-collicular map duplication in 47% of Efna3KI/KI and 43% of Efna3KI/+ animals, with heterogeneity between hemispheres suggesting a stochastic mechanism, and map separation correlating with gene dosage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C39 provide comprehensive quantitative evidence for the primary phenotype. The bilateral analysis (C31-C32) demonstrating within-animal heterogeneity strongly supports the stochastic interpretation (C33-C34). The gene dosage effect (C38-C39) provides additional mechanistic insight. Sample sizes are adequate (n=9-19 per genotype) and statistical analysis is appropriate (Mann-Whitney test, p=0.020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ectopic retinal EFNA3 destabilizes cortico-collicular mapping through direct contact between V1 axons and RGC terminals in the SC, with EFNA3 detected on RGC axons in the optic nerve but below detection limits in the SC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C40-C42 provide strong evidence for the mechanism and C42 demonstrates axonal overlap, the immunohistochemical detection of EFNA3 is problematic. Claims C44 and C47 indicate EFNA3 falls below detection limits in the SC where the proposed mechanism operates. This creates uncertainty about whether sufficient EFNA3 protein reaches the target site to mediate the observed effects, though the genetic rescue experiments (discussed separately) support the causal role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "27b9a95b-8a75-45ec-a193-84945ddfb5b9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The cortico-collicular mapping defects are not due to indirect effects of the knock-in construct, as Isl2-ires-Efna3 is not expressed in SC or V1, and Epha/Efna expression levels in these structures remain normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 provide appropriate controls ruling out alternative explanations. The PCR analysis (C51), transcript quantification (C52), and immunostaining (C53) demonstrate that the phenotype is not due to ectopic expression in target tissues or compensatory changes in related guidance molecules. These controls strengthen the conclusion that the effect is specifically due to retinal EFNA3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genetic rescue experiments demonstrate that co-expression of EPHA3 and EFNA3 in Isl2(+) RGCs through cis-inactivation restores normal retino- and cortico-collicular maps, confirming the causal role of ectopic retinal EFNA3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C63 describe an elegant genetic rescue experiment. The double mutant analysis (C58-C60) and compound mutant studies with Epha4 (C61) provide strong evidence for cis-inactivation. The restoration of both map types in double mutants (C58) is particularly compelling. The logic is sound: if ectopic EFNA3 causes the phenotype, inactivating it should rescue, which is observed. The Epha4 compound mutant analysis (C61) provides additional validation of complete inactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Retinal EFNA3 provides positional information to ingrowing V1 axons, with retinal projections playing an instructive role in cortico-collicular map formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 synthesize the experimental findings into a mechanistic model. The genetic rescue data (C68-C69) provide compelling evidence for causality. The interpretation is well-supported by the combination of mapping defects (C64), rescue experiments (C68), and prior literature on cis-inactivation (C66-C67). The conclusion about instructive roles (C70) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "6f77e79b-933c-485b-995f-ebedd8da2648",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The heterogeneous cortico-collicular phenotype reflects stochastic map formation driven by opposing forces of EPHA signaling and correlated neuronal activity, with retinal EFNAs transposed to the SC providing positional information for V1 axon alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 integrate the findings with prior literature to propose a comprehensive model. The stochastic interpretation (C71-C72) is well-supported by the within-animal heterogeneity data. The proposed mechanism (C73-C77) is consistent with known EPHA/EFNA signaling and is supported by multiple citations. The model provides a coherent framework explaining both the experimental observations and their relationship to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "43dcbe1e-0dd9-42b9-8575-df5c44222993",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Retinal EFNA3 does not play a significant role in retino-collicular map formation and does not participate in fiber-fiber interactions, suggesting member-specific roles for retinal EFNAs distinct from the functionally interchangeable retinal EPHAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C88 provide important negative results and mechanistic distinctions. The absence of retino-collicular defects (C80, C83) despite ectopic EFNA3 rules out several potential mechanisms (C81-C82, C85-C86). The comparison with EFNA5 (C85-C87) and EPHAs (C88) highlights functional specificity. These claims are well-supported by the experimental data and appropriate citations, though they rely partly on absence of expected phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "cf375afa-886e-4362-8b07-fcd83954de18",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A modified 3-step computational model using experimentally measured Efna expression data successfully replicates both normal and aberrant retino- and cortico-collicular maps, validating the proposed stochastic mechanism of map alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C98 describe computational modeling that recapitulates experimental observations. The model improvements (C90) using measured rather than theoretical values strengthen validity. The key assumptions (C91-C95) are explicitly stated and justified. The model successfully predicts duplication frequencies (C98: p=0.17 for KI/KI, p=0.22 for KI/+), providing independent validation of the proposed mechanism. The statistical agreement between model and experiment is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "47629b18-41d7-4ebc-a14c-74ed7a4aac1c",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In situ hybridization reveals graded expression of Efna2 and Efna5 along the nasal-temporal retinal axis, while Efna3 is homogeneously expressed in wild-type animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 provide essential baseline data for the computational model. The in situ hybridization data (Figure 7A,B) clearly demonstrate the expression patterns. These measurements are critical for the modeling approach and are appropriately quantified and fitted to equations. The homogeneous Efna3 expression (C101) is important for understanding why ectopic expression creates an oscillatory gradient.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    },
+    {
+      "id": "d09df2a7-89b2-4608-9d55-2e9ffaa04b35",
+      "content_id": "4f3cc190-3077-4b22-a852-8b4ef6942b52",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings may provide a general framework for sensory map alignment where positional information from a leading map acts with correlated activity to align subsequent projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C99 is explicitly speculative about broader implications. While the proposed principle is plausible and the visual system data are compelling, generalization to other sensory modalities requires additional experimental validation. The claim appropriately uses tentative language ('may serve'), but remains speculative rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:58.314704Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "beff5576-1d82-44bf-b9ac-753ef8c89ab0",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "9cef3be4-67ae-4cf0-8a52-d30984428726",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "6594d193-49da-41fc-8b23-8fc26fd49037",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "99de9af4-fed9-4276-99f8-b5b1ed9e8c63",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "797adf26-7ffe-4020-a5e1-8e353e7a99d4",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "37d7a166-f36a-4863-b6c9-fb4f5bcbaaf1",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "18fe5179-e31f-4d7d-b11c-3776641cc978",
+      "result_id": "08df3a52-5ea7-48b7-ac37-69e08ad6b895"
+    },
+    {
+      "claim_id": "a9c0e91b-7d28-4d66-b457-aeb9cff4c85e",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "2bded8f4-bf2d-4fca-98fb-6a71ddd65a65",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "099fee0c-e2dd-4162-82b2-2b51cf74011b",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "84446af9-f36c-49b9-8936-ae55d23ff167",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "73a4adeb-eaab-4692-8540-018e2b1d40f5",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "d253de2f-f91e-4c65-98bf-ddf924540ccc",
+      "result_id": "48e32ee1-4544-4c3e-af9d-bba1cad45ec8"
+    },
+    {
+      "claim_id": "733ef876-b5c1-4dfa-96ab-9caf3da1c693",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "caae8d53-712c-4468-a3cf-a484e394cba2",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "ea891d87-6901-4857-98fd-e99c79e12ed9",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "972880ae-3a9c-497a-9342-548e3d4f4b4a",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "863375b3-0e4e-4ce5-982e-210eddaab41e",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "fd823145-3324-4860-988e-7f1ac54bfc08",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "0e1cfb76-a705-4e0a-bcfa-521cf78e0a78",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "8023385f-c330-4204-ad28-8c463c0b31d3",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "80372e3d-d6f1-4fed-9600-84cd7ef86f9b",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "cc0ba1ac-a393-407a-8403-0ed290b0daf1",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "20197c2d-e89b-4f42-af62-ce40659fd9d3",
+      "result_id": "0a82c5d9-1487-49e6-a752-036b1366729e"
+    },
+    {
+      "claim_id": "2a995599-f041-4044-b396-7cba423fe3dc",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "4c7fc5da-f3b1-4ccd-b5d5-c122e46bd194",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "7fe2e0d4-c3df-47e0-80c7-87490988328a",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "b0470088-417a-48bd-8302-a0b3aec4825f",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "70421d92-8bb6-410b-b004-b14c1c914c3f",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "2823ffc7-3f19-4950-8aac-cb1b3be565f7",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "faf63189-11e5-47c7-8492-4d3aea451f47",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "e8388f72-035e-4710-8074-363ad3b04c00",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "55cf2e87-8c34-410d-b9e8-0a1315d7d12f",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "7e921529-171c-44d7-a265-83c82533ea95",
+      "result_id": "5246cabc-890b-46ad-9ad6-c6ed25e7ea1c"
+    },
+    {
+      "claim_id": "cecfc7d9-951c-42dc-b291-827612bf3f57",
+      "result_id": "27b9a95b-8a75-45ec-a193-84945ddfb5b9"
+    },
+    {
+      "claim_id": "c80fa774-2c5c-4257-829b-17738b4d656d",
+      "result_id": "27b9a95b-8a75-45ec-a193-84945ddfb5b9"
+    },
+    {
+      "claim_id": "034b3778-8ee9-428b-90ad-0788a68189e8",
+      "result_id": "27b9a95b-8a75-45ec-a193-84945ddfb5b9"
+    },
+    {
+      "claim_id": "a854d2cb-ac0e-44ee-8c43-d211fb62366c",
+      "result_id": "27b9a95b-8a75-45ec-a193-84945ddfb5b9"
+    },
+    {
+      "claim_id": "fd9f2e36-0b45-4f38-95a8-304307ac3c71",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "d6fa3709-30d2-4e1e-ba02-0d72dd480b6f",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "b736a930-207f-40bf-9051-d90f80bbe334",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "16ecead3-a4ba-46e4-8721-64eaebfe7353",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "35f025a8-ad51-4563-b4a5-114c3a3b1f59",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "bd4be10c-dfce-4661-b314-ecb9227dd91a",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "47eadc93-5af1-4066-861b-addf495a15bb",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "86ecc260-5850-4bae-be22-25093e38c49d",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "952d63ec-96cd-4aee-9377-1afa8a5211db",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "dfc6fc15-ef20-4e0d-962c-e1ba2e0444a9",
+      "result_id": "a2e6fabf-86e2-4e2b-bba1-a19fdf731ed9"
+    },
+    {
+      "claim_id": "38a1c437-798e-4a2e-8769-73d09d2321b9",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "3a537db2-dbb7-4c64-9f12-565ef7e504f9",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "bed81b6c-849d-4bef-b74a-8e97a23223f1",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "6567a81b-1e87-4ee6-9494-2e01129f82e5",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "579a2f4c-323c-4ff5-bfec-58098e67ab1e",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "48a47868-7945-4047-b28c-1c6843ef26d6",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "43028407-88d6-470d-b476-98f8d96e4496",
+      "result_id": "7ac677ac-0c80-496a-836f-dfd6bf6adc3f"
+    },
+    {
+      "claim_id": "ab095491-77a7-482a-b6c1-16b31902691d",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "ed9eb7a9-3de5-462e-8bcf-e4885988beef",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "063f738f-8784-4a1c-ae68-ecc74f473ddb",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "e6730a3c-c25b-44eb-8bdb-5c622a189487",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "6f51af44-37a0-4bea-9525-b95c012f8366",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "83d1260b-b444-461b-b12f-b9ab8bb56fd0",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "b5775262-5d3a-4f78-8e31-ac330d239b62",
+      "result_id": "6f77e79b-933c-485b-995f-ebedd8da2648"
+    },
+    {
+      "claim_id": "0e6ded4d-af99-40d9-84be-328c1ab9760a",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "56f4b08d-d4bc-4022-9122-f33f6affd959",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "869caf2c-7a43-4727-88a9-6189506523b3",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "bfcd4a75-d294-4d8b-acfd-dbae42025e87",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "3515cb3c-5d70-446b-ac8a-05bfe2717d7b",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "42ab5983-e4d9-4338-b0c1-a3d445436cf5",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "776fb15a-bad6-447c-a6d8-974cc2b85f22",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "ab2a2348-9ed3-4cfe-ad59-1038a236f8c4",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "8fc5c38a-c6c1-43f6-ae74-d5a954e6e74f",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "cf9ce15b-128c-4760-9b1a-920a60ded804",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "cbf9b3c0-6774-4078-8447-f3bb2d1dd0da",
+      "result_id": "43dcbe1e-0dd9-42b9-8575-df5c44222993"
+    },
+    {
+      "claim_id": "d4abe7d9-6d79-4f22-a96d-5ee8ab5bb0c2",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "bf82a266-52e8-4606-9638-06cac4a25c06",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "a7e74bba-bd48-431d-86fb-407fe7629492",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "5d6dbdf2-c848-42ca-842f-a774c3478733",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "b8162b07-0fcc-48cc-918c-20429dfd8033",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "ceedf12a-fb14-444f-8827-0f0c46f8eb9c",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "93052721-c27b-4ce0-b020-ead78aba202e",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "4ea2f870-e1cb-44ae-aee5-30e5d3f765ed",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "b2d239d5-c879-49bf-8bc1-bebb38540efd",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "55a0fa93-280c-4989-82e9-6059243c1590",
+      "result_id": "cf375afa-886e-4362-8b07-fcd83954de18"
+    },
+    {
+      "claim_id": "e118c52e-7f97-40b0-92e3-f204bc70d3d1",
+      "result_id": "47629b18-41d7-4ebc-a14c-74ed7a4aac1c"
+    },
+    {
+      "claim_id": "49613b5b-3ff0-4bdf-a7ff-2b138d628c1e",
+      "result_id": "47629b18-41d7-4ebc-a14c-74ed7a4aac1c"
+    },
+    {
+      "claim_id": "bcfb464d-250b-4095-91c3-136157f4ceb1",
+      "result_id": "d09df2a7-89b2-4608-9d55-2e9ffaa04b35"
+    }
+  ],
+  "comparisons": []
+}

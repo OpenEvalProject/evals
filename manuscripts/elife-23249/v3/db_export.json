@@ -1,0 +1,1748 @@
+{
+  "submission": {
+    "id": "3dedc62e-5194-4e6a-afc4-23867ff46d94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:31:54.869735Z",
+    "updated_at": "2025-11-30T23:31:54.869735Z"
+  },
+  "content": [
+    {
+      "id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "submission_id": "3dedc62e-5194-4e6a-afc4-23867ff46d94",
+      "content_type": "manuscript",
+      "content_text": "# Histone gene replacement reveals a post-transcriptional role for H3K36 in maintaining metazoan transcriptome fidelity\n\n## Authors\n\n- Michael P Meers<sup>1</sup> ([ORCID: 0000-0003-3438-3938](https://orcid.org/0000-0003-3438-3938))\n- Telmo Henriques<sup>3</sup>\n- Christopher A Lavender<sup>4</sup>\n- Daniel J McKay<sup>1</sup>\n- Brian D Strahl<sup>7</sup>\n- Robert J Duronio<sup>1</sup>\n- Karen Adelman<sup>3</sup> ([ORCID: 0000-0001-5364-334X](https://orcid.org/0000-0001-5364-334X))\n- A Gregory Matera<sup>1</sup> ([ORCID: 0000-0002-6406-0630](https://orcid.org/0000-0002-6406-0630)) \u2020\n\n### Affiliations\n\n1. Curriculum in Genetics and Molecular Biology The University of North Carolina at Chapel Hill Chapel Hill United States\n2. Integrative Program for Biological and Genome Sciences The University of North Carolina at Chapel Hill Chapel Hill United States\n3. Epigenetics and Stem Cell Biology Laboratory National Institute of Environmental Health Science Durham United States\n4. Integrative Bioinformatics Support Group National Institute of Environmental Health Science Durham United States\n5. Department of Genetics The University of North Carolina at Chapel Hill Chapel Hill United States\n6. Department of Biology The University of North Carolina at Chapel Hill Chapel Hill United States\n7. Department of Biochemistry and Biophysics The University of North Carolina at Chapel Hill Chapel Hill United States\n8. Lineberger Comprehensive Cancer Center The University of North Carolina at Chapel Hill Chapel Hill United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistone H3 lysine 36 methylation (H3K36me) is thought to participate in a host of co-transcriptional regulatory events. To study the function of this residue independent from the enzymes that modify it, we used a \u2018histone replacement\u2019 system in Drosophila to generate a non-modifiable H3K36 lysine-to-arginine (H3K36R) mutant. We observed global dysregulation of mRNA levels in H3K36R animals that correlates with the incidence of H3K36me3. Similar to previous studies, we found that mutation of H3K36 also resulted in H4 hyperacetylation. However, neither cryptic transcription initiation, nor alternative pre-mRNA splicing, contributed to the observed changes in expression, in contrast with previously reported roles for H3K36me. Interestingly, knockdown of the RNA surveillance nuclease, Xrn1, and members of the CCR4-Not deadenylase complex, restored mRNA levels for a class of downregulated, H3K36me3-rich genes. We propose a post-transcriptional role for modification of replication-dependent H3K36 in the control of metazoan gene expression.\n\n## Introduction\n\nEukaryotic genomes function within the context of chromatin fibers composed of nucleosome units, each of which contains roughly 147 bp of DNA wrapped around a single histone octamer composed of two pairs of heterodimers (histone H2A-H2B, and H3-H4) (Luger et al., 1997). Histones are decorated with an array of covalent post-translational modifications (PTMs) that have been proposed to demarcate distinct chromatin domains in the genome (Kharchenko et al., 2011; Rice et al., 2003; Schneider et al., 2004; Sullivan and Karpen, 2004). The \u2018histone code\u2019 hypothesis posits that PTMs play crucial roles in controlling gene expression by adapting the local chromatin packaging environment and recruiting structural or catalytic binding partners to confer or deny access to transcriptional machinery (Bannister and Kouzarides, 2011; Jenuwein and Allis, 2001; Rothbart and Strahl, 2014; Strahl and Allis, 2000; Taverna et al., 2007). Partly on the basis of this model, PTMs have been considered strong candidates for primary carriers of epigenetic information that contribute to cell fate specification during development (Margueron and Reinberg, 2010). This concept has been extended to suggest PTM dysregulation as a likely contributor to diseases characterized by altered gene expression and cell identity (Chi et al., 2010; Lewis et al., 2013).\n\nIn multicellular eukaryotes, support for the histone code hypothesis is largely based on phenotypes observed from studies in which the \u2018writer\u2019 enzymes responsible for catalyzing histone PTMs were inhibited or ablated. However, such experiments cannot rule out the possibility that these enzymes have other non-histone substrates, or play other non-catalytic (e.g., structural) roles, that confound analysis and assignment of observed phenotypes to the PTMs themselves. Several recent studies have employed a direct replacement of the endogenous, replication-dependent histone gene cluster in Drosophila melanogaster with transgenic clusters encoding non-modifiable mutant histones (Graves et al., 2016; G\u00fcnesdogan et al., 2010; H\u00f6dl and Basler, 2012; McKay et al., 2015; Pengelly et al., 2013; Penke et al., 2016). This approach has enabled the deconvolution of phenotypes specific to histone PTMs from those specific to their writers. These studies have elucidated the relationship between PTMs and their writers, both confirming (Pengelly et al., 2013) and refuting (McKay et al., 2015) previously reported roles for certain residues on the basis of their corresponding writer mutant phenotypes. The approach also affords an opportunity to directly interrogate the function of other well-characterized histone PTMs for which a variety of functional roles have been described.\n\nIn contrast with many PTMs whose spatial distribution is skewed towards promoters and the 5\u2019 regions of genes, H3K36 di- and tri-methylation (H3K36me2/3) are enriched in coding regions and toward the 3\u2019 end of actively transcribed genes (Bannister et al., 2005). These marks are also preferentially enriched over exons as opposed to introns (Kolasinska-Zwierz et al., 2009). This distribution pattern suggests that H3K36me interfaces with RNA polymerase and contributes to transcription elongation and/or RNA processing, rather than affecting gene expression via chromatin packaging at promoters. Indeed, H3K36me2/3 is known to suppress cryptic transcription initiation from coding regions in Saccharomyces cerevisiae by recruiting a repressive Rpd3 deacetylase complex to sites of active elongation (Carrozza et al., 2005; Keogh et al., 2005). It is also implicated in suppressing active incorporation of acetylated histones via histone exchange (Venkatesh et al., 2012). In cultured cells, ablation of human SETD2, which catalyzes H3K36 trimethylation, is suggested to alter a number of exon inclusion events by recruiting RNA binding proteins (Luco et al., 2010; Pradeepa et al., 2012). Conversely, H3K36me3 distribution across gene bodies is itself sensitive to perturbations in splicing (de Almeida et al., 2011; Kim et al., 2011). In addition to its role in transcription and RNA processing, a range of other activities have been attributed to H3K36me, including X-chromosome dosage compensation (Larschan et al., 2007), DNA damage response (Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; Pfister et al., 2014), and three dimensional chromosome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016). However, to date, none of these putative roles for H3K36me have been evaluated directly in an H3K36 mutant animal.\n\nHere, we report a comprehensive analysis of H3K36 function, focused on differential gene expression, transcription initiation, and chromatin accessibility phenotypes in transgenic Drosophila whose entire complement of replication-dependent H3 genes has been mutated to arginine at lysine 36 (H3K36R). Arginine approximates the charge and steric conformation of lysine, but cannot be targeted by lysine methyltransferases, and therefore represents an appropriate mutation with which to study the PTM-specific functions of H3K36. Although arginine is a conservative amino acid change, it also enables hydrogen bonding modalities that are distinct from those of lysine. In principle, in addition to phenotypes resulting from loss of H3K36 methylation, such a change could also result in other hypomorphic (partial loss of function) or neomorphic (gain of function) phenotypes.\n\nIn H3K36R mutants, we observed a decrease in the steady-state levels of highly expressed RNAs concomitant with increased transcription and productive expression from a variety of low-usage promoters. Though mutants exhibited bulk increases in histone acetylation, chromatin accessibility did not appreciably change at promoters. Surprisingly, we found that previously reported roles for H3K36 methylation, including suppression of transcription initiation in coding regions and regulation of alternative splicing, are not supported in Drosophila by transcription start-site (TSS) and poly-A RNA-seq analyses, respectively. Intriguingly, we found that certain genes are downregulated in H3K36R mutants but are rescued to wild-type levels by depletion of the Xrn1 exonuclease pacman, or the CCR4-Not deadenylase subunits, twin and Pop2. We posit a model whereby H3K36 methylation contributes to transcript fitness in order to maintain global transcriptome fidelity.\n\n## Results\n\n### H3K36R mutation causes widespread dysregulation of the transcriptome\n\nWe utilized a bacterial artificial chromosome (BAC)-based histone gene replacement platform (McKay et al., 2015) to generate Drosophila bearing a K36R substitution mutation in each of its replication-dependent histone H3 genes. Using this system, the endogenous histone gene cluster was deleted and complemented by a transgenic array of 12 copies of the native 5 kb histone gene repeat (Figure 1). As previously reported, H3K36R (K36R) mutants pupate at significantly reduced frequency compared to histone wild type (HWT) control animals, and fail to eclose into adults with 100% penetrance, despite exhibiting no obvious cell proliferation defects (McKay et al., 2015). Given the postulated role for H3K36 modification in co-transcriptional gene regulation, we sought to comprehensively compare the transcriptomic landscapes of HWT and K36R animals. We sequenced poly-A selected RNA, rRNA-depleted nuclear RNA, nucleosome depleted DNA (via ATAC-seq [Buenrostro et al., 2013]), and short, nascent, capped RNAs (Henriques et al., 2013; Nechaev et al., 2010) from third instar larvae. Collectively these methods interrogate the major steps in mRNA biogenesis (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of experimental high-throughput sequencing methods applied to H3K36R animals. Twelve tandem copies of the histone repeat unit were cloned into a custom BAC vector and site-specifically integrated into the D. melanogaster genome as described in McKay et al. (2015). Poly-A-selected RNA was sequenced from whole third instar larvae, ATAC-seq and rRNA-depleted nuclear RNA-seq were carried out from nuclei isolated from third instar larvae, and short, nascent, capped RNAs were selected from nuclei and subjected to \u2018Start-seq\u2019 (Henriques et al., 2013).\n\nWe hypothesized that the K36R mutation would conform to a \u2018cis-acting,' direct model, wherein effects are confined primarily to genes containing high levels of H3K36me3. However, when we analyzed genome-wide differential expression from poly-A RNA and stratified genes by the chromatin \u2018states\u2019 in which they reside (as defined in Kharchenko et al., 2011), gene expression changes were not confined to states characterized by high levels of H3K36 methylation (Figure 2\u2014figure supplement 1A, states 1\u20134). Instead, when we stratified genes by H3K36me3 density (www.modencode.org), the mark was anticorrelated with gene expression change across the entire spectrum of H3K36me3 density, and largely uncorrelated with other methyl-states of H3K36 (Figure 2A, Figure 2B). Genes with high H3K36me3 density tended to decrease expression in K36R animals, whereas genes with low H3K36me3 density tended to increase expression in K36R animals. This finding suggests a global role for H3K36me in regulating gene expression, but one that is not confined to H3K36me3-rich loci, and therefore argues against an exclusively direct, local effect.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig2-v3.jpg)\n\n**Figure 2.:** (A) Metagene plot describing the density of H3K36me3 (top), H3K36me2 (middle), and H3K36me1 (bottom) ChIP-seq across genes that are upregulated (purple), unchanged (blue), or downregulated (yellow) in H3K36R mutants as compared with HWT controls. (B) Boxplot of differential expression of gene cohorts stratified by density of H3K36me3 signal in the 3\u2019 UTR (1=lowest density decile, 10=highest decile). (C) MA plot with accompanying LOESS regression line plotting log2 fold change (y-axis) vs. HWT FPKM (x-axis) interpreted from poly-A RNA-seq data.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Boxplot depicting log2 fold expression change for genes whose start sites reside in each of the nine different chromatin states defined in Kharchenko et al., 2011. (B) Histogram of mean FPKM for genes significantly upregulated (blue) or downregulated (red) in K36R animals (p<0.05). (C) Left: Boxplot of comparison of estimated cell content from five third instar larvae between HWT and K36R, based on normalizing by either quantitated RNA (left) or band intensity from histone H3 western blot signal (right). Given that K36R larvae are expected to have higher cell content based on histone normalization, total RNA per cell is likely overestimated in K36R, and therefore log2 fold change gene expression values are not expected to be overestimated based on bias from higher RNA per cell in K36R. Right: This interpretation is confirmed by lower log2 fold expression change in histone- vs. RNA-normalized RT-qPCR for select differentially expressed genes.\n\nBecause H3K36me3 is catalyzed co-transcriptionally (Kizer et al., 2005), and should therefore track roughly with gene expression, we also took the alternate approach of determining whether gene expression changes in K36R were correlated with the amount of expression normally observed in HWT. When we plotted differential expression against a specific transcript\u2019s HWT level, we found that the effects of the K36R mutation were consistently anticorrelated with a gene\u2019s HWT expression level. That is, genes that were normally silent or lowly-expressed in HWT larvae experienced the largest relative increases in expression in K36R mutants, and highly expressed genes were preferentially reduced in K36R (Figure 2C, Figure 2\u2014figure supplement 1B). RT-qPCR validation of select transcripts confirmed this observation, arguing against the likelihood of bias due to normalized RNA input (Figure 2\u2014figure supplement 1C). These results indicate that H3K36me-dependent expression changes could be caused by both direct (locus-specific) and indirect (locus-independent) effects.\n\n### H3K36 mutants exhibit increased histone acetylation, but unchanged global chromatin accessibility\n\nH3K36 methylation status has the potential to affect other histone PTMs, most notably H4 acetylation (H4ac) (Carrozza et al., 2005; Keogh et al., 2005) and H3K27 trimethylation (H3K27me3) (Lu et al., 2016; Yuan et al., 2011). This form of histone \u2018crosstalk\u2019 might contribute to the observed gene expression phenotypes. To formally evaluate this possibility, we assayed bulk levels of H4ac and H3K27me3 by western blotting. H3K27me3 levels were slightly reduced in H3K36 mutants (Figure 3A, Figure 3\u2014figure supplement 1A), however characteristic polycomb target genes were largely unaffected (Figure 2\u2014figure supplement 1A, Figure 3\u2014figure supplement 1B). In contrast, H4ac levels were robustly increased (Figure 3A, Figure 3\u2014figure supplement 1A), confirming the previously identified link between H3K36me and H4ac (Carrozza et al., 2005; Keogh et al., 2005).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig3-v3.jpg)\n\n**Figure 3.:** (A) Western blots measuring enrichment of histone H3, H3K36me3, H3K27me3, and pan H4 acetylation (H4ac) in H3K36R mutants and HWT controls. Signal relative to first lane is denoted below each band. (B) Scatterplot of ATAC-seq signal mapping in a 200 nt window (as denoted at top) around obsTSSs, with R2 value indicated. (C) Scatterplot of log2 fold change of poly-A RNA-seq (x-axis) vs. that of ATAC-seq (y-axis) signal in a window around the corresponding gene\u2019s transcription start site (as identified by start-seq). Genes with codirectional, statistically significant changes in both RNA-seq and ATAC-seq are indicated in red. Example browser shot of a gene differentially expressed in mutants in the absence of changes in chromatin accessibility at its start site is shown at right.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Barplot displaying the fold change in western blot signal intensity quantified from two biological replicates of whole larval nuclear lysate for the antibodies indicated. Asterisk indicates T-test p-value between H3 and indicated PTM is\u00a0<0.05. (B) Boxplot of normalized poly-A RNA-seq counts mapping to genes that co-occur with a strong polycomb regulatory region (Schwartz et al., 2006) in HWT and K36R. (C) Polytene chromosome salivary gland squash and immunofluorescent stain for H4K12ac from HWT and K36R third instar larvae. H4K12ac-bright (yellow arrowheads), and transcriptionally silent DAPI bright (orange arrowheads) regions, are anticorrelated in both genotypes, suggesting H4K12ac accumulates to transcriptionally active regions in K36R mutants D) Boxplot of differential expression of gene cohorts stratified by density of H4K16ac ChIP-seq signal in a 400 nt window surrounding the annotated gene start site (1=lowest density decile, 10=highest decile).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Metaplot of Start-seq signal aligned in a 100 nt window around all annotated TSSs in the dm3 reference gene model. (B) Metaplot of HWT and K36R nuclear RNA-seq signal aligned in a 1 kb window around all obsTSSs identified in Start-seq data. (C) Representative browser shot of Start-seq signal pileup at annotated gene promoter (obsTSS). Direction of transcription denoted by arrow. (D) Metaplot of ATAC-seq signal in a 4 kb window surrounding obsTSSs identified by Start-seq. obsTSSs are binned by the average normalized signal across the window (denoted in the legend).\n\nTo assay the spatial distribution of H4ac, we stained polytene chromosomes with an H4K12ac antibody. In both HWT and K36R mutants, we found that H4K12ac intensity was anticorrelated with DAPI bright bands (Figure 3\u2014figure supplement 1C). The DAPI bright regions are thought to correspond to more transcriptionally silent chromatin. Therefore, the observed hyperacetylation in K36R mutants occurs in the more actively transcribed (DAPI dark) regions, consistent with previous observations (Carrozza et al., 2005; Keogh et al., 2005). Given these findings, we initially hypothesized that H4 hyperacetylation might contribute positively to chromatin accessibility in promoter proximal regions of genes that are upregulated in H3K36 mutants. To investigate this possibility, we carried out open chromatin profiling (ATAC-seq) and correlated these data with our differential expression (RNA-seq) analysis. Wild-type H4 acetylation density was also calculated using H4K16ac ChIP-seq datasets obtained from the modEncode consortium. As shown in Figure 3\u2014figure supplement 1D, genes with the lowest levels of H4K16ac at their predicted promoters increased their expression levels in K36R mutants.\n\nTo localize open chromatin changes specifically to bona-fide sites of transcription initiation, we performed \u2018Start-seq\u2019, which precisely determines transcription initiation events by capturing nascent RNAs associated with early elongation complexes (Henriques et al., 2013; Nechaev et al., 2010). We adapted the protocol to isolate short, nascent, capped RNA from nuclei purified from third instar larvae (see Materials and methods). As shown in Figure 3\u2014figure supplement 2A\u2013C, Start-seq signal maps faithfully and robustly, with base-pair resolution, to annotated (observed) transcription start sites (obsTSSs), and demarcates sites of high nuclear RNA-seq. ATAC-seq signal accumulates most robustly in a window spanning roughly 150 nt upstream, and 50 nt downstream, of obsTSSs (Figure 3\u2014figure supplement 2D). When we quantified HWT and K36R ATAC-seq signal from such a window surrounding all obsTSSs, we found that global changes in open chromatin were minimal between HWT and H3K36R animals (Figure 3B). Furthermore, changes in ATAC-seq at obsTSSs and differential expression in their corresponding genes was largely uncorrelated, with a large proportion of genes exhibiting differential expression changes independent of increased chromatin accessibility (Figure 3C). These results indicate that chromatin remodeling at promoters is not a major contributor to the observed global gene expression changes.\n\n### Cryptic transcription initiation does not contribute to gene expression changes in H3K36 mutants\n\nGiven that increases in H4 acetylation in response to loss of H3K36me were thought to promote cryptic transcription in S. cerevisiae (Carrozza et al., 2005; Keogh et al., 2005), we evaluated potential cryptic initiation phenotypes in Drosophila H3K36 mutants. The consistent accumulation of Start-seq signal at bona-fide transcription initiation sites (Figure 3\u2014figure supplement 2A) shows that this method is particularly ideal for identifying novel initiation elsewhere in the genome. By quantifying Start-seq signal at loci outside of annotated start-sites (obsTSSs), we identified thousands of novel unannotated TSSs (nuTSSs) spread throughout the HWT genome, including a large proportion located within H3K36me3-enriched exons (Figure 4A\u2013B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig4-v3.jpg)\n\n**Figure 4.:** (A) Representative browser shot of gene containing novel unannotated transcription start sites (nuTSSs, highlighted in red). Direction of transcription denoted by arrow, and read counts denoted on Y-axis. (B) Boxplot describing the fold change in Start-seq signal for nuTSSs classified by their genomic localization and strand of origin relative to the resident gene if applicable. Lower boxplot describes H3K36me3 ChIP-seq signal (ChIP/input) for the same gene cohorts. (C) Scatterplot of normalized nuclear RNA-seq reads mapping antisense to genes in the dm3 reference gene model in HWT (x-axis) or K36R (y-axis). Genes containing or within 1 kb of a local H3K36me3-ChIP-seq peak are denoted by red dots. (D) Hex-plot heatmap plotting nuTSSs by their location relative to the gene boundaries of the nearest gene, and the absolute change in their Start-seq signal (K36R \u2013 HWT).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Metaplot of ATAC-seq signal mapping in a 1 kb window around nuTSSs, classified as in Figure 4B. (B) Metaplots of H3 (left) and H3K36me3 (right) ChIP-seq signal mapping to a 4 kb window around nuTSSs, separated by quartiles of absolute Start-seq signal change between K36R and HWT. (C) Metaplots of HWT ATAC-seq signal mapping to a 4 kb window around nuTSSs, separated by log2 fold change in Start-seq signal. \u2018Up\u2019 denoted increased by more than two fold in K36R, \u2018Down\u2019 denotes decreased by more than two fold in K36R, and \u2018Unchanged\u2019 denotes all other nuTSSs. (D) Heatmaps displaying H3 (left) and H3K36me3 (right) ChIP-seq signal mapping to a 4 kb window around nuTSSs representing the catergories listed in B. (E) Heatmaps displaying H3 (left) and H3K36me3 (right) ChIP-seq signal mapping to a 4 kb window around nuTSSs representing the catergories listed in C.\n\nWe examined whether the position of a nuTSS relative to its closest annotated gene had any bearing upon changes in nuTSS usage in K36R mutants. Because exons are characterized by higher overall H3K36me3 signal than introns, they might be more sensitive to pervasive initiation. Furthermore, antisense initiation might also be more prevalent in the absence of H3K36me, as has been observed in budding yeast (Carrozza et al., 2005; Keogh et al., 2005). To test these ideas, we sorted nuTSSs by their position (exonic or intronic) and orientation (sense or antisense) relative to the resident gene. Analysis of modEncode ChIP-seq read density in 400 bp windows around each nuTSS confirmed that exonic nuTSSs are enriched for H3K36me3 relative to intronic ones (Figure 4B). Similarly, exonic nuTSSs are depleted of ATAC-seq open chromatin signal (Figure 4\u2014figure supplement 1A).\n\nContrary to expectation, exonic and antisense nuTSS usage was not dramatically increased in K36R mutants (Figure 4B). Across all nuTSSs, we found that H3K36me3 density was anticorrelated with change in nuTSS \u2018usage,' that is, nuTSSs with lower signal in K36R than in HWT tended to have high H3K36me3 density, and vice-versa (Figure 4\u2014figure supplement 1B\u2013E). When we analyzed sense and antisense Start-seq reads mapping to annotated coding regions as a proxy for cryptic transcription in annotated genes, we found that antisense initiation did not globally accumulate in an H3K36me3-dependent manner (Figure 4C). These results show that modification of replication-dependent H3K36 is not required to suppress cryptic transcription in gene bodies. Instead, we found that pervasive initiation in gene bodies is widespread throughout the Drosophila genome, even in the presence of H3K36me.\n\nWe also studied the change in nuTSS usage relative to gene boundaries. When absolute change in Start-seq signal at each nuTSS is scaled to gene length, increased nuTSS usage occurs almost exclusively in intergenic regions (Figure 4D). Decreased usage is most prominent in the gene body, proximal to the 3' end (Figure 4D). Metagene analysis shows that these regions correlate with H3K36me3 ChIP-seq density (Figure 2A). Importantly, these findings do not support a role in Drosophila for H3K36me in suppressing cryptic antisense transcription, as described in yeast.\n\n### H3K36 mutation does not affect alternative splicing\n\nThe H3K36me3 methyltransferase, SETD2, is reported to play a role in regulating alternative splice site choice (Luco et al., 2010; Pradeepa et al., 2012). To determine whether changes in pre-mRNA splicing contribute to gene expression differences between HWT and K36R, we used the MISO analysis package (Katz et al., 2010), which utilizes an annotated list of alternative splicing events, and quantitates changes between RNA-seq datasets. We found that very few annotated exon skipping events or retained intron events were significantly different between K36R and HWT, and there was no discernable bias toward inclusion or exclusion (Figure 5A). Additionally, the majority of high-confidence differential splicing events we detected were mild changes at best (\u2206PSI\u00a0<\u00a00.25), indicating that a lack of K36 modification had little effect on alternative splicing regulation in K36R mutants (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig5-v3.jpg)\n\n**Figure 5.:** (A) Density plots reflecting the distributions of change in percent spliced in (\u2206PSI) values for skipped exon (red) or retained intron (blue) alternative splicing events manually classified as significant based on MISO parameters (see Materials and methods). (B) Volcano plots for skipped exon (left) and retained intron (right) events, with a local regression line (blue line) reflecting the skew in \u2206PSI values (x-axis) based on Bayes factor (y-axis). (C) Global analysis of splice junction usage, where R denotes the \u2018retention ratio\u2019 in one condition, and \u2206R denotes the difference in R between K36R and HWT.\n\nInappropriate intron retention is another class of splicing defect observed in SETD2 mutants (Simon et al., 2014). To examine intron retention events, we quantitated junction (j) and non-junction (n) reads mapping to every exon-exon boundary represented in our RNA-seq dataset. As shown in Figure 5C, we generated a retention ratio score (R) that measures the number of non-junction reads as a proportion of total reads (j+n). For junctions meeting statistical power requirements (>20 total reads), we observed no changes in the retention ratio, meaning that splice junction usage was unchanged in K36R (Figure 5C). Taken together, these results support an H3K36me-dependent role for transcriptome regulation that is independent of alternative splicing.\n\n### A class of highly expressed genes is under-represented in poly-A vs. nuclear RNA fractions due to sensitivity to exonuclease degradation\n\nWhen comparing our poly-A and nuclear RNA-seq results, we identified a group of highly-expressed genes whose transcripts were reduced in the mutant poly-A RNA fraction but not in the corresponding nuclear RNA fraction (Figure 6A, see full RNA-seq results in Supplementary file 1). Transcripts identified in the nuclear RNA-seq data represent populations of newly transcribed as well as nuclear-retained RNAs, whereas poly-A selected RNA is thought to be comprised primarily of \u2018mature\u2019 mRNAs. We deduced that the observed differences between the two sequencing datasets could reflect a role for H3K36 in post-transcriptional, rather than co-transcriptional, mRNA maturation steps (e.g. nuclear RNA surveillance and export). Therefore, we selected a handful of mRNAs with large discrepancies between their nuclear and poly-A RNA-seq expression values (Figure 6B) for validation and testing by RT-PCR. Fractionation of nuclear and cytoplasmic RNA from HWT and K36R larvae prior to reverse transcription revealed no significant changes in subcellular localization of the targets (Figure 6\u2014figure supplement 1A), suggesting that a global block to mRNA export due to H3K36R mutation is unlikely.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig6-v3.jpg)\n\n**Figure 6.:** (A) LOESS regression lines generated from MA plots of either nuclear or poly-A RNA-seq, plotting gene log2 fold change (y-axis) vs. normalized read counts in HWT (x-axis). (B) Log2 fold change values between K36R and HWT in nuclear (left) and poly-A (right) RNA-seq, plotted for genes selected for further RT-PCR analysis. (C) RT-qPCR quantification of differential expression between HWT and K36R for select genes in a no RNAi, pacman RNAi, twin RNAi, or Pop2 RNAi background, using the -\u2206\u2206Ct method. (D) LM-PAT assay results for the YFP transcript in HWT and K36R, in a no RNAi, pcm RNAi, twin RNAi, or Pop2 RNAi background. Sanger sequencing trace confirming the poly-A site (leftmost panel) and differential tail lengths (right two panels) is shown below.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23249/elife-23249-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) RT-PCR for select genes from cytoplasmic (lanes 1 and 2) or nuclear (lanes 3 and 4) RNA from HWT (lanes 1 and 3) or K36R (lanes 2 and 4) animals. 7SK RNA is a control for nuclear enrichment. (B) RT-qPCR for select genes from Figure 6B measuring normalized Log2 fold change (HWT/K36R) in no RNAi or Dcp2 RNAi background. P-value obtained via t-test. (C) Schematic of modified LM-PAT assay, in which an adenylated oligonucleotide anchor is ligated to the 3\u2019 end of total RNA, cDNA is generated using an anchor-specific RT primer, and genes of interest are amplified using a gene-specific forward primer and an anchor specific reverse primer that contains either an oligo-T sequence at its 3\u2019 end (tail-anchored) so as to extend from the ends of poly-A tails, or an oligo-T-N sequence (UTR-anchored) in order to extend from the terminus of the 3\u2019 UTR. (D) RT-qPCR for YFP measuring normalized Log2 fold change (HWT/K36R) in no RNAi, pcm RNAi, or twin RNAi backgrounds. P-value obtained via t-test. (E) Genome wide analysis of alternative polyadenylation using DaPars (Xia et al., 2014), with percentage of distal poly-A site usage (PDUI) for each gene in HWT and K36R plotted on the x- and y-axes, respectively.\n\nIn the absence of a transport block, we surmised that mRNA surveillance and degradation pathways might contribute to the reduced transcript levels observed in the poly-A fraction. We therefore hypothesized that perturbation of RNA exonuclease activity might rescue target transcript levels by preserving immature mRNAs that would otherwise be degraded. We analyzed the effect on target mRNAs of depleting Rrp6 and Xrn1/pacman (pcm in flies) by RNA interference (RNAi), utilizing the Gal4-UAS expression system (Brand and Perrimon, 1993). Flies sourced from the Transgenic RNAi Project (Ni et al., 2011) expressing short-hairpin (sh)RNA constructs and Gal4-drivers were crossed into the HWT and K36R genetic backgrounds. Unfortunately, RNAi for Rrp6 caused early larval lethality and animals of the appropriate genotype could not be obtained. However, we were able to introgress the Xrn1/pcm RNAi transgene into the HWT and K36R backgrounds and total RNA was prepared from whole third instar larvae. As shown in Figure 6C, the observed expression differences in poly-A RNA for a handful of highly expressed genes were restored to levels more similar to HWT in the K36R background by RNAi-mediated depletion of pcm. These results suggest that H3K36 contributes to post-transcriptional mRNA maturation in a manner that preserves target transcripts from exonuclease-mediated degradation.\n\n### Defects in post-transcriptional processing contribute to gene expression changes in K36R mutants\n\nmRNA degradation by Xrn1/pcm is preceded by two major surveillance steps: deadenylation by the CCR4-NOT complex, and decapping of the 7-methylguanosine (m7G) cap, primarily by the Dcp2 decapping enzyme (Sheth and Parker, 2003). We therefore carried out RNAi against CCR4/twin, CNOT7/Pop2, and Dcp2 in comparison with Xrn1/pcm. Across a panel of K36R downregulated genes, expression levels were rescued by depletion of pcm, twin, and Pop2 (Figure 6C), but not by RNAi against Dcp2 (Figure 6\u2014figure supplement 1B). Given the known redundancies in decapping enzymes (e.g. see Chang et al., 2012), the negative results for the Dcp2 RNAi are inconclusive. Indeed, previous studies in S2 cells showed that depletion of Dcp2 alone is insufficient to effectively inhibit decapping (Eulalio et al., 2007). However, the positive results we obtained by depleting deadenylase factors led us to focus on polyadenylation.\n\nChanges in 3\u2019 end formation and polyadenylation, which occur proximal to the H3K36me3-rich chromatin at the 3\u2019 ends of genes, might render mRNAs more sensitive to surveillance and degradation. To investigate this possibility, we analyzed poly-A tail length in the CCR4/twin RNAi background for a YFP reporter transgene using a modified LM-PAT assay (Sall\u00e9s et al., 1999), as illustrated in Figure 6\u2014figure supplement 1C. It is important to note that expression of the UAS:YFP transgene is directly tied to Gal4 expression and thus YFP is the only transcript that is guaranteed to be expressed in the same cells as the UAS:RNAi transgene. UAS:YFP is similarly sensitive to pcm and twin as our cohort of endogenous genes (Figure 6\u2014figure supplement 1D), making it an ideal reporter. As shown in Figure 6D, we found that the YFP transcript displayed reduced poly-A tail length in K36R mutants, indicative of a role for H3K36 methylation over terminal exons in recruitment or functioning of the polyadenylation machinery. Importantly, the shorter poly-A tail in K36R mutants was independent of deadenylation activity (Figure 6D), demonstrating that the defect is in polyadenylation, not in the subsequent CCR4/twin- or CNOT7/Pop2-dependent deadenylation. Additional experiments will be needed to determine the prevalence of poly-A tail length changes in the K36R mutants transcriptome wide. Computational analysis of differential poly-A site usage demonstrated no change (Figure 6\u2014figure supplement 1E), indicating that poly-A site specification was largely unaffected by mutation of H3K36. In summary, these data uncover a post-transcriptional role for H3K36 in the regulation of metazoan gene expression.\n\n## Discussion\n\nIn this study, we focus on the role of H3K36 in transcriptome fidelity, assayed at the levels of transcription initiation, elongation, pre-mRNA splicing and maturation. Crucially, most of the studies on the roles of H3K36me3 in animal cells deplete SETD2 or its orthologue, making it difficult to discern the specific role of the histone residue itself. Enzymes that catalyze histone PTMs often have numerous non-histone substrates or non-catalytic structural roles that can confound analysis (Biggar and Li, 2015; Huang and Berger, 2008; Sims and Reinberg, 2008; Zhang et al., 2015). Notably, alpha-tubulin was recently identified as a non-histone substrate of SETD2 (Park et al., 2016). Perhaps more importantly, SETD2 catalyzes trimethylation of lysine 36 in both the \u2018canonical\u2019 replication-dependent H3 and in the replication-independent histone variant, H3.3. H3.3 is thought to play a particularly important role in transcriptionally active regions where H3K36 methylation is enriched (Ahmad and Henikoff, 2002). Indeed, a protein with specific affinity for SETD2-catalyzed trimethylation of lysine 36 of the histone H3.3 variant was shown to serve as a regulator of RNA pol II elongation (Wen et al., 2014) and to associate with components of spliceosomal snRNPs to regulate co-transcriptional alternative mRNA splicing (Guo et al., 2014). Beyond its other substrates, SETD2\u2019s prominent association with the C-terminal domain of RNA pol II (Kizer et al., 2005) makes it likely that ablating this protein will result in transcriptional consequences that are unrelated to its catalytic activity. In view of these complications, the direct analysis of histone residue function enabled by our BAC-based gene replacement system is particularly well suited to the study of H3K36me in the context of transcriptional regulation.\n\nIn budding yeast, H3K36me2/3 has been shown to negatively regulate histone acetylation within actively transcribed genes, both by recruiting a repressive Rpd3S deacetylase complex (Carrozza et al., 2005; Keogh et al., 2005) and by suppressing incorporation of acetylated nucleosomes at sites of RNA polymerase II-initiated nucleosome displacement (Venkatesh et al., 2012). However, a similar role has not yet been elucidated for H3K36me in animals, and studies that have correlated cryptic transcription with H3K36 methylation in metazoan systems have done so only through perturbation of the SETD2 writer enzyme (Carvalho et al., 2013; Xie et al., 2011). Furthermore, studies have implicated H3K36me3 in alternative splicing in human cell culture (Luco et al., 2010; Pradeepa et al., 2012) and inefficient intron splicing in clear cell renal cell carcinomas (Simon et al., 2014), again via SETD2 mutation. In this study, we used histone replacement to define whether modification of canonical H3K36 is responsible for these functions.\n\nWe demonstrate that H3K36 is neither a significant contributor to the regulation of alternative splice site choice, nor the efficiency of canonical intron removal. We also present evidence that methylation of H3K36 does not suppress cryptic transcription in coding regions. Given the unprecedented depth of our Start-seq dataset (>200\u00a0M reads per genotype), even very rare events would have been detected. To the contrary, we found evidence for pervasive initiation (both sense and anti-sense) events that largely fail to appear in the steady-state RNA population under wild type conditions. Interestingly, we confirm that H4 acetylation is strongly suppressed by H3K36 modification, despite the fact that cryptic transcripts do not appear. This finding argues for an uncoupling of H4ac levels from cryptic initiation in coding regions in metazoans, and suggests that the suppression of cryptic transcription initiation in multicellular organisms may be more complex than previously appreciated.\n\nOne potential explanation for the discrepancy between our results and previous studies of SETD2 could be that modification of the aforementioned histone variant, H3.3, is the primary functional contributor to the cryptic initiation or splicing phenotypes. Elucidating the effects of H3.3K36 methylation is outside the scope of this work, and thus phenotypes that have been reported in the literature as being sensitive to H3K36 methylation might plausibly respond specifically to H3.3K36 methylation. In fact, this serves as a useful feature of histone replacement in this context, since a functional separation of H3 and H3.3 lysine 36 methylation cannot be otherwise achieved. However, this possibility should be tempered by the fact that we observed very low levels of H3K36me3 signal in both western blots from H3K36R mutant larvae (Figure 3A) and immunofluorescent staining of salivary gland polytene chromosomes (McKay et al., 2015). Thus H3.3 is, at best, a minor contributor to total H3K36me3. Future experiments testing the transcriptional consequences of direct mutation of H3.3K36, both on its own and in combination with mutation of replication-dependent H3K36, will better define their contributions.\n\nFinally, we present evidence that H3K36 is required for proper mRNA maturation, providing a post-transcriptional benefit across a range of highly expressed genes. Additional studies will be required in order to elucidate a detailed molecular mechanism for this process. Our genetic suppression data suggest that this mRNA \u2018fitness\u2019 benefit is somehow linked to the efficiency of 3' end formation or polyadenylation (Figure 6B\u2013D). Interestingly, H3K36me3 depletion in SETD2-mutant renal cell carcinoma has been correlated with defects in transcriptional termination and readthrough into neighboring genes (Grosso et al., 2015), suggesting that H3K36 methylation might influence termination and polyadenylation. Indeed, the enrichment of H3K36me3 at the 3' ends of genes makes it a likely candidate to interface with these activities. Another possibility is that H3K36 modification might recruit some type of RNA modifying enzyme. For example, Jaffrey and colleagues recently showed that dimethylation (N6,2'-O-dimethyladenosine, or m6Am) of the nucleotide adjacent to the m7G cap enhances transcript stability (Mauer et al., 2017). Moreover, H3K36 might contribute to mRNA maturation across multiple processing steps, with the combined effect of protecting target mRNAs from surveillance and eventual degradation.\n\nThe prevailing model for histone PTM modulation of gene expression, reinforced by recent direct evidence (Hilton et al., 2015), suggests that it occurs directly proximal to the site of histone modification. However, the fact that genomic regions largely lacking H3K36me exhibit differential expression in K36R mutants argues against this idea. For that reason, a model for H3K36 control of gene expression should also consider indirect mechanisms. For example, it is possible that the rate of transcribing polymerase through nucleosomes that are modified at H3K36 might change, and therefore the capping, cleavage and polyadenylation machinery that associates with the C-terminal domain of RNA polymerase II (Ho et al., 1998; McCracken et al., 1997) might become improperly distributed in K36R mutants. Alternatively, SETD2 could have additional (unknown) substrates that function in these processes. Finally, H3K36me\u2019s previously reported role in three-dimensional genome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016) might extend to the concentration of factors related to mRNA maturation at sites of active transcription, which would be impaired upon H3K36 mutation. Future studies using alternative genetic approaches, including specific ablation of the catalytic activity of \u2018writers\u2019 to cross-reference our observations, should be instructive in this regard.\n\n## Materials\u00a0and\u00a0methods\n\n### RNA library preparation for sequencing\n\nRNA-seq libraries were prepared using the Illumina TruSeq stranded library preparation kit from RNA prepared with TRIzol reagent (Thermo Fisher) from either whole third instar larvae (poly-A) or nuclei isolated from third instar larvae (nuclear) (adapted from [Nechaev et al., 2010]). Start-seq libraries were prepared as previously described (Henriques et al., 2013; Nechaev et al., 2010). Sequencing was carried out on a HiSeq2000 (ATAC-seq, poly-A and nuclear RNA-seq) or NextSeq500 (Start-seq) (Illumina). For all assays, at least three biological replicates were prepared (four in the case of Start-seq and nuclear RNA-seq).\n\n### Start-seq\n\nTotal nuclear RNA from whole third instar larvae was used as input to each Start-seq library. For each RNA replicate used as input for a Start-seq library, 80 whole third instar larvae were collected. Five whole third instar larvae were selected for genomic DNA recovery via phenol chloroform extraction and ethanol precipitation in order to normalize Start-seq RNA spike-in controls to DNA content. The remaining (75) larvae were washed 3x with ice cold 1x ENIB buffer (15 mM Hepes pH7.6; 10 mM KCl; 3 mM CaCl2; 2 mM MgCl2; 0.1% Triton X-100; 1 mM DTT; 1 mM PMSF), and were then combined with 1 vol 0.3 M ENIB (1x ENIB\u00a0+0.3 M Sucrose). Larvae were homogenized in a 1 mL dounce with 10 strokes with a type A pestle. Each replicate required douncing in three separate aliquots so as to avoid oversaturation of the dounce with larval cuticle, and homogenate was immediately transferred to ice once completed. Dounce was washed with 1 vol 0.3 M ENIB, combined with homogenate, and mixture was homogenized with 10 strokes with a type B pestle. Resulting homogenate was filtered through 40 \u00b5M Nitex mesh into a 50 mL conical tube on ice. For each 150 \u00b5L of filtered homogenate produced, a sucrose cushion was made by layering 400 \u00b5L 1.7 M ENIB followed by 400 \u00b5L 0.8 M ENIB in a 1.5 mL Eppendorf tube. 150 \u00b5L filtered homogenate was pipetted onto cushion, and spun at 20,000xg for 15 min at 4\u00b0C. After spinning, lipid residue was carefully removed from the walls of the tube with a micropippetor, and then the remainder of the supernatant was removed. The nuclear pellet was homogenized in 100 \u00b5L 0.3 M ENIB, and 10 \u00b5L was removed, stained with Trypan Blue, and observed under a microscope to confirm efficient nuclear isolation. Total RNA was extracted from the remaining homogenate with Trizol reagent using standard manufacturer\u2019s protocols. Start-seq libraries were prepared from nuclear RNA as previously described (Henriques et al., 2013; Nechaev et al., 2010). Libraries were sequenced on a NextSeq500 generating paired-end, 26 nt reads.\n\n### Poly-A-selected RNA-seq\n\nFor each replicate, total RNA from 25 whole third instar larvae was isolated using Trizol reagent according to manufacturer\u2019s protocols. RNA-seq libraries were generated with the Tru-seq Stranded Poly-A RNA-seq library preparation kit (Illumina). Libraries were sequenced on a HiSeq2000 generating paired-end, 100 nt reads (Illumina).\n\n### Nuclear RNA-seq\n\nNuclei from whole third instar larvae were isolated as described above for Start-seq, and RNA was extracted using Trizol reagent. Total nuclear RNA was used as input to Ribo-zero Stranded RNA-seq library preparation (Illumina). Libraries were sequenced on a HiSeq2000 generating paired-end, 50nt reads (Illumina).\n\n### ATAC-seq library preparation\n\nFor each replicate, nuclei from 10 whole third instar larvae were isolated as per Start-seq and nuclear pellets were gently homogenized with wide-bore pipette tips in 50 \u2206uL ATAC-seq lysis buffer (10 mM Tris\u00b7Cl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% (v/v) Igepal CA-630), and homogenate was directly used as input to the Nextera DNA library preparation kit (NEB) for tagmentation of chromatinized DNA, as described in Buenrostro et al. (2013). Libraries were sequenced on a HiSeq2000 generating single-end, 100 nt reads (Illumina).\n\n### Bioinformatic analysis\n\nSequencing reads were mapped to the dm3 reference genome using Bowtie2 (Langmead and Salzberg, 2012) (ATAC-seq, Start-seq) or Tophat (Trapnell et al., 2012) (RNA-seq) default parameters. We used DESeq2 (Love et al., 2014) for differential expression analysis and Cufflinks (Trapnell et al., 2012) for novel transcript detection. We used the MISO package (Katz et al., 2010) to analyze annotated alternative splicing events, and custom scripts (Source code 2) to analyze global splice junction usage. Start-seq and ATAC-seq reads were mapped using Bowtie2 (Langmead and Salzberg, 2012), and Poly-A and nuclear RNA-seq reads were mapped using the Tophat gapped read aligner (Trapnell et al., 2012). Boxplots and Start-seq plots scaled to gene length were generated using ggplot2 in R (www.r-project.org).\n\nFor Start-seq, reads were quantified at base-pair resolution using a custom script (Source code 1), and nucleotide-specific raw read counts were normalized based on reads mapping to RNA spike-in controls. Exonic, intronic, and intergenic locations were determined using the dm3 gene model.\n\nFor Poly-A and nuclear RNA-seq: to analyze annotated alternative splicing, we used MISO (Katz et al., 2010), and considered splicing events with a) a Bayes score greater than 10 with all replicates combined, b) and consistent directionality of \u2206PSI in each of the three individual replicates, as significant. To analyze global splice junction usage, we used a custom script (Source code 2) to quantify reads spanning the junction location that either map to it (\u2018junction\u2019, i.e. containing an \u2018N\u2019 CIGAR designation that maps precisely to the junction in question) or through it (\u2018non-junction\u2019). To analyze differential expression, we used DESeq2 (Love et al., 2014) to quantify log2 fold change in normalized read counts between K36R and HWT. To analyze alternative polyadenylation, we used DaPars (Xia et al., 2014).\n\nAll ChIP-seq data were downloaded from modEncode (www.modencode.org). In all cases, data were derived from the third instar larval time point as determined by modEncode developmental staging procedures. For ChIP-seq and ATAC-seq, metagene plots were generated using the Deeptools package (Ram\u00edrez et al., 2014).\n\n### Reverse transcription and PCR assays\n\nRNA was isolated with TRIzol reagent as described above, and reverse transcription was performed using random hexamers and Superscript III (Invitrogen), according to the manufacturer\u2019s protocols. For semi-quantitative PCR analysis, products were run on a 2% agarose gel, and bands were quantified using ImageJ. For qPCR, Maxima SYBR Green/ROX qPCR Master Mix (Thermo Scientific) was used. All qPCR analyses are based on three biological replicates, plotted with standard error.\n\nFor semi-quantitative PCR, PCR reactions were prepared in biological triplicate using 2x Red Master Mix (Apex Bioscience), and targets were amplified for 35 cycles of PCR with a 95\u00b0C denaturation step, a 60\u00b0C annealing step, and a 72\u00b0C elongation step. Reactions were run on a 2% agarose gel with EtBr for 30 min at 90\u00a0V, and bands were imaged on a UV transilluminator (GE Healthcare) and quantified using ImageJ. For RT-qPCR, reactions were prepared in biological triplicate using Maxima SYBR Green/ROX qPCR Master Mix (Thermo Scientific), and fluorescence was monitored across 40 cycles in 96 well plate format.\n\nFor LM-PAT, 1 \u00b5g total RNA was incubated with 5 pmol preadenylated lmPAT anchor primer (ppApCAGCTGTAGCTATGCGCACCGAGTCAGATCAG) (adenylated using 5\u2019 DNA Adenylation Kit, NEB), and ligated with T4 RNA Ligase 2, truncated K227Q (NEB) using manufacturers protocol. Ligated RNA was reverse-transcribed with Superscript III (Life Technologies) using an lmPAT RT primer (GACTCGGTGCGCATAGCTACAGCTG). Resulting first-strand cDNA was PCR-amplified using gene-specific forward primers (see Supplementary file 2) paired with nested lmPAT RT primers that contain terminal thymidines (GTGCGCATAGCTACAGCTGTTTT). PCR conditions were as follows: a preliminary round consisted of 12 cycles in which the annealing step was decreased by one degree Celsius in each cycle from 71\u00b0C to 60\u00b0C (between 95\u00b0C and 72\u00b0C denaturation and elongation steps, respectively), followed by 18 additional cycles with an annealing temperature at 60\u00b0C. After completion of the first round, 2 \u00b5L PCR product was used as template for a second round of PCR amplification with 25 cycles and an annealing temperature at 60\u00b0C. For \u2018tail\u2019 measurement, template was amplified with a nested gene-specific forward primer and lmPAT nested RT reverse primer. For \u2018UTR\u2019 measurement, template was amplified with a nested gene-specific forward primer and a \u2018TVN\u2019 primer anchored at the 3\u2019 UTR terminus.\n\n### Western blotting\n\nFor each replicate, nuclei from 30 whole third instar larvae were isolated as per Start-seq and homogenized in 50 \u00b5L Extraction Buffer (320 mM (NH4)2SO4, 200 mM Tris HCl (pH 8.0), 20 mM EDTA, 10 mM EGTA, 5 mM MgCl2, 1 mM DTT, 1x Protease Inhibitor Cocktail (Roche)). Mixture was spun at 15,000xg for 5 min at 4\u00b0C and supernatant was recovered and immediately used in polyacrylamide gel electrophoresis. Gel was transferred to PVDF membrane and incubated with rabbit anti-H3 (Abcam, ab1791), rabbit anti-H3K36me3 (Abcam, ab9050), mouse anti-H3K27me3 (Abcam, ab6002), or rabbit anti-H4ac (Active Motif, #39177) primary antibody overnight. We used ImageJ to quantify western blot band intensities, and calculated ratios of K36R/HWT intensity for each target across two independent biological replicates. Student\u2019s t-test was used to obtain p-values for ratio comparisons between H3 and other targets.\n\n### Immunofluorescence\n\nSalivary gland polytene chromosome squashes were performed on third instar larvae as previously described (McKay et al., 2015), using rabbit anti-H4K12ac polyclonal primary antibody (Active Motif, #39165) overnight, followed by AlexaFluor 594 goat anti-rabbit secondary antibody (ThermoFisher) for two hours, then DAPI for 10 min.\n",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "27c82718-1ad3-4bdc-b7e6-7d5b678dd082",
+      "submission_id": "3dedc62e-5194-4e6a-afc4-23867ff46d94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elisa Izaurralde, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23249.062](https://doi.org/10.7554/eLife.23249.062)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Histone gene replacement reveals a post-transcriptional role for H3K36 in maintaining metazoan transcriptome fidelity\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe results presented in this manuscript are novel and of great interest to the large field of gene expression regulation. Furthermore, the manuscript reveals that the phenotypes observed when the \"writer\" enzymes are depleted differ from the phenotypes observed when histone variants that cannot be modified are expressed.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript investigates the apparently direct effects on transcription and RNA levels in a Drosophila mutant strain lacking H3K36 methylation. Contrary to other studies done in multicellular eukaryotes, the present study uses a K36R mutant where modification at this position is not possible. In that way, a direct function of the H3K36 PTM may be analyzed, whereas in strains lacking the writer enzyme, observed effects can derive from an additional function of SETD2, which is not its catalytic function, or from modification of other substrates. The authors use genome-wide analysis to show a global change in expression. Expression changes anti-correlate with levels of H3K36 methylation. The authors confirm the previously reported link between H3K36me and H4ac. They use ATAC-seq to investigate whether increased H4ac in K36 mutants led to higher chromatin accessibility and they did not find this. Instead they found \u2013 using Start-seq -novel unannotated TSSs (here called nuTSSs) in both HWT and K36 mutants. However, these nuTSSs were not restricted to genes containing K36me, suggesting that cryptic transcription occurs independently of H3K36me. Thus, this study does not support a role for H3K36me in suppressing cryptic transcription in Drosophila, as described in yeast. Another not supported function for H3K36me in this study, which was described before, is its role in alternative splicing. Differential splicing events, intron retention and exon exclusion events were hardly observed between the HWT and the K36R mutant.\n\nFinally, the authors propose a role for H3K36me in post-transcriptional, mRNA maturation steps based on Poly-A-seq analysis showing downregulation of some genes in K36R mutants compared to HWT. These RNA levels were restored to more similar levels as in the HWT after RNAi of the exonuclease Xrn1. RNA levels were also restored when the deadenylation enzyme twin was depleted. In summary, this important study of H3K36 modification shows differences between yeast and multicellular eukaryotes and on the other hand addresses previous implicated roles for H3K36 methylation. The author propose a model that H3K36me maintains transcriptome fidelity, although it remains unclear how this is achieved.\n\nEssential revisions:\n\n1) Figure legends are lacking for the main figures and must be included.\n\n2) It is unknown whether arginine really behaves like lysine on H3 in position 36. The R guanidinium head group enables different hydrogen bonding stoichiometries than the lysine head group. This must be mentioned in the beginning of the paper and properly discussed. I understand it is probably the best one can do, yet one cannot exclude secondary effects \u2013 although the primary effect of this mutation is very likely due to an inability to neutralize the positive charge of the side chain by methylation.\n\n3) Figure 3A: one can see that the 4 bands in the western blots for both H3K36me and H4ac come from different pictures. Please provide the original pictures. Additionally, H4ac ChIP-seq data in the K36R mutant would strengthen the results.\n\n4) LM-PAT experiment: what are the two bands when using HWT and Tail primers? If deadenylation worked you shouldn't get any product. Or if the deadenylation was not completed, you should see lower bands for the mutant.\n\n5) Please show more examples in which the pA site changes in K36K mutants or change the conclusions to reflect the fact that only one instance was observed.\n\n6). The authors could comment on how H3K36me3 could protect mRNAs from degradation and what is the link between this phenotype and the short poly(A) tails.\n\n7) Additionally, it is very unclear how the mRNAs are degraded. XRN1 cannot degrade capped mRNAs. On the other hand, the authors show that DCP2-depletion did not prevent degradation. Based on this observation they suggest that the mRNAs may be uncapped, but they were not able to show that this indeed the case. The explanation is probably much simpler: previous studies have shown that DCP2 depletion is not sufficient to prevent mRNA degradation in Drosophila cells and that at least two decapping factors should be codepleted to effectively block decapping. In other words, the author cannot rule out that the residual amounts of DCP2 in the RNAi knockdown are sufficient to sustain decapping; this possibility should be mentioned and discussed. In particular, because the efficacy of the DCP2 depletion has not been tested by western blot. Essentially, it is very likely that the mRNAs are degraded by deadenylation-dependent decapping (i.e., the 5'-to-3' decay pathway).\n",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cdf3fc79-58f9-4287-95cd-28d39264f327",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C1",
+      "claim": "H3K36R mutants pupate at significantly reduced frequency compared to histone wild type (HWT) control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, H3K36R (K36R) mutants pupate at significantly reduced frequency compared to histone wild type (HWT) control animals, and fail to eclose into adults with 100% penetrance, despite exhibiting no obvious cell proliferation defects (McKay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McKay et al., 2015, which provides published evidence for this phenotype.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "6373be32-3d97-48d9-8369-876311c38a89",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C2",
+      "claim": "H3K36R mutants fail to eclose into adults with 100% penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, H3K36R (K36R) mutants pupate at significantly reduced frequency compared to histone wild type (HWT) control animals, and fail to eclose into adults with 100% penetrance, despite exhibiting no obvious cell proliferation defects (McKay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McKay et al., 2015, which provides published evidence for this phenotype.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "579e5c45-055d-48cd-824a-e3f339ca3444",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C3",
+      "claim": "H3K36R mutants exhibit no obvious cell proliferation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, H3K36R (K36R) mutants pupate at significantly reduced frequency compared to histone wild type (HWT) control animals, and fail to eclose into adults with 100% penetrance, despite exhibiting no obvious cell proliferation defects (McKay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McKay et al., 2015, which provides published evidence for this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b97cb738-7360-44e6-bd40-49f13e3c561f",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C4",
+      "claim": "Genes with high H3K36me3 density tend to decrease expression in K36R animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high H3K36me3 density tended to decrease expression in K36R animals, whereas genes with low H3K36me3 density tended to increase expression in K36R animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the poly-A RNA-seq data presented in Figure 2A and 2B, which show the relationship between H3K36me3 density and gene expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "2e2cfd01-f830-4e1b-9ca9-b0816ad34752",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C5",
+      "claim": "Genes with low H3K36me3 density tend to increase expression in K36R animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high H3K36me3 density tended to decrease expression in K36R animals, whereas genes with low H3K36me3 density tended to increase expression in K36R animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the poly-A RNA-seq data presented in Figure 2A and 2B, which show the relationship between H3K36me3 density and gene expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "bd78cc2c-df68-4ea4-af25-c0878e6448f5",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C6",
+      "claim": "H3K36me3 is anticorrelated with gene expression change across the entire spectrum of H3K36me3 density.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, when we stratified genes by H3K36me3 density (www.modencode.org), the mark was anticorrelated with gene expression change across the entire spectrum of H3K36me3 density, and largely uncorrelated with other methyl-states of H3K36 (Figure 2A, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of poly-A RNA-seq data stratified by H3K36me3 density, as shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "cb124a8a-24c9-4f54-af22-ba8c6dd35018",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C7",
+      "claim": "H3K36me3 is largely uncorrelated with other methyl-states of H3K36.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, when we stratified genes by H3K36me3 density (www.modencode.org), the mark was anticorrelated with gene expression change across the entire spectrum of H3K36me3 density, and largely uncorrelated with other methyl-states of H3K36 (Figure 2A, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 2A, which compares H3K36me3, H3K36me2, and H3K36me1 distributions across differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1e21b2a6-714d-466e-9807-e84a294e808e",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C8",
+      "claim": "H3K36me plays a global role in regulating gene expression that is not confined to H3K36me3-rich loci.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests a global role for H3K36me in regulating gene expression, but one that is not confined to H3K36me3-rich loci, and therefore argues against an exclusively direct, local effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that gene expression changes occur across the genome, not just at H3K36me3-rich loci, as shown in the differential expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "8d5cfef1-1285-410e-904e-cfb73ea138f3",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C9",
+      "claim": "Genes that are normally silent or lowly-expressed in HWT larvae experience the largest relative increases in expression in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, genes that were normally silent or lowly-expressed in HWT larvae experienced the largest relative increases in expression in K36R mutants, and highly expressed genes were preferentially reduced in K36R (Figure 2C, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the MA plot in Figure 2C showing the relationship between HWT expression level and log2 fold change in K36R mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "9d1767be-6b1a-4c51-9223-06e66a6482b2",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C10",
+      "claim": "Highly expressed genes are preferentially reduced in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, genes that were normally silent or lowly-expressed in HWT larvae experienced the largest relative increases in expression in K36R mutants, and highly expressed genes were preferentially reduced in K36R (Figure 2C, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the MA plot in Figure 2C showing the relationship between HWT expression level and log2 fold change in K36R mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "353179a5-2ba1-4a49-95e1-d56b4c94fe79",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C11",
+      "claim": "H4 acetylation levels are robustly increased in H3K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H4ac levels were robustly increased (Figure 3A, Figure 3\u2014figure supplement 1A), confirming the previously identified link between H3K36me and H4ac (Carrozza et al., 2005; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3A and quantification in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "79812d92-f419-4704-a1e5-6c01035dbd26",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C12",
+      "claim": "H3K27me3 levels are slightly reduced in H3K36 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27me3 levels were slightly reduced in H3K36 mutants (Figure 3A, Figure 3\u2014figure supplement 1A), however characteristic polycomb target genes were largely unaffected (Figure 2\u2014figure supplement 1A, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3A and quantification in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1a3dbe8c-d06e-4730-a1f0-f41524b35b4c",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C13",
+      "claim": "Characteristic polycomb target genes are largely unaffected in H3K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27me3 levels were slightly reduced in H3K36 mutants (Figure 3A, Figure 3\u2014figure supplement 1A), however characteristic polycomb target genes were largely unaffected (Figure 2\u2014figure supplement 1A, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of polycomb target gene expression shown in Figure 2\u2014figure supplement 1A and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "6507c085-185a-45ea-905a-e8205baf1338",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C14",
+      "claim": "H4K12ac intensity is anticorrelated with DAPI bright bands in both HWT and K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In both HWT and K36R mutants, we found that H4K12ac intensity was anticorrelated with DAPI bright bands (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence staining of polytene chromosomes shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "6b310004-a39f-4b3d-b8db-5aa67f0b8f3c",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C15",
+      "claim": "Hyperacetylation in K36R mutants occurs in the more actively transcribed (DAPI dark) regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the observed hyperacetylation in K36R mutants occurs in the more actively transcribed (DAPI dark) regions, consistent with previous observations (Carrozza et al., 2005; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that H4K12ac is anticorrelated with DAPI bright bands, combined with the knowledge that DAPI bright regions correspond to transcriptionally silent chromatin, and is supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "bc82b2c9-cac2-41eb-9f27-6e09d9092f64",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C16",
+      "claim": "Global changes in open chromatin are minimal between HWT and H3K36R animals.",
+      "claim_type": "EXPLICIT",
+      "source": "When we quantified HWT and K36R ATAC-seq signal from such a window surrounding all obsTSSs, we found that global changes in open chromatin were minimal between HWT and H3K36R animals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-seq data shown in Figure 3B, which shows high correlation between HWT and K36R ATAC-seq signal at transcription start sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "57f3b268-c913-455b-a311-3ffdb97fd6cb",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C18",
+      "claim": "Chromatin remodeling at promoters is not a major contributor to the observed global gene expression changes in H3K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that chromatin remodeling at promoters is not a major contributor to the observed global gene expression changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that ATAC-seq changes at promoters do not correlate with gene expression changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "2b06c8cc-1813-40f7-b635-6434038f0c8f",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C19",
+      "claim": "Thousands of novel unannotated TSSs (nuTSSs) are spread throughout the HWT genome, including a large proportion located within H3K36me3-enriched exons.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying Start-seq signal at loci outside of annotated start-sites (obsTSSs), we identified thousands of novel unannotated TSSs (nuTSSs) spread throughout the HWT genome, including a large proportion located within H3K36me3-enriched exons (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Start-seq data analysis shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1ab53ccf-f03c-43f7-b21e-b83d632c1386",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C20",
+      "claim": "Exonic nuTSSs are enriched for H3K36me3 relative to intronic ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of modEncode ChIP-seq read density in 400 bp windows around each nuTSS confirmed that exonic nuTSSs are enriched for H3K36me3 relative to intronic ones (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of H3K36me3 ChIP-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "a2661a6a-c334-4a00-8484-2f705cc68bb7",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C21",
+      "claim": "Exonic and antisense nuTSS usage is not dramatically increased in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, exonic and antisense nuTSS usage was not dramatically increased in K36R mutants (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Start-seq data analysis shown in Figure 4B comparing nuTSS usage between HWT and K36R mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "5af983bc-fb01-40c2-aa98-e187ff61c322",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C22",
+      "claim": "H3K36me3 density is anticorrelated with change in nuTSS usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all nuTSSs, we found that H3K36me3 density was anticorrelated with change in nuTSS 'usage,' that is, nuTSSs with lower signal in K36R than in HWT tended to have high H3K36me3 density, and vice-versa (Figure 4\u2014figure supplement 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4\u2014figure supplement 1B-E comparing H3K36me3 density with changes in nuTSS usage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "41f21bdc-4f63-4f23-b326-744a92411eb7",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C23",
+      "claim": "Modification of replication-dependent H3K36 is not required to suppress cryptic transcription in gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that modification of replication-dependent H3K36 is not required to suppress cryptic transcription in gene bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that exonic and antisense nuTSS usage is not dramatically increased in K36R mutants, as shown by Start-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "54f4afe3-d304-475c-a286-40a437ef3989",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C24",
+      "claim": "Pervasive initiation in gene bodies is widespread throughout the Drosophila genome, even in the presence of H3K36me.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that pervasive initiation in gene bodies is widespread throughout the Drosophila genome, even in the presence of H3K36me.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the identification of thousands of nuTSSs in the HWT genome using Start-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "e6968db5-f2c5-42d6-b7c4-0fdca31069ed",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C25",
+      "claim": "Antisense initiation does not globally accumulate in an H3K36me3-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed sense and antisense Start-seq reads mapping to annotated coding regions as a proxy for cryptic transcription in annotated genes, we found that antisense initiation did not globally accumulate in an H3K36me3-dependent manner (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of antisense transcription shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "42b271fb-3bd5-4a80-ab43-bea20dd0f161",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C26",
+      "claim": "Increased nuTSS usage occurs almost exclusively in intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "When absolute change in Start-seq signal at each nuTSS is scaled to gene length, increased nuTSS usage occurs almost exclusively in intergenic regions (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4D plotting nuTSS location relative to gene boundaries versus change in Start-seq signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "86ada50f-8ba8-4b19-8922-9cd8d8515415",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C27",
+      "claim": "Decreased nuTSS usage is most prominent in the gene body, proximal to the 3' end.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased usage is most prominent in the gene body, proximal to the 3' end (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4D plotting nuTSS location relative to gene boundaries versus change in Start-seq signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "522bf4b9-531f-4589-bfc0-49ba60d043b2",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C28",
+      "claim": "Very few annotated exon skipping events or retained intron events are significantly different between K36R and HWT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that very few annotated exon skipping events or retained intron events were significantly different between K36R and HWT, and there was no discernable bias toward inclusion or exclusion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MISO analysis of alternative splicing events shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "2e968059-84cd-444c-b5a8-efcd8b904943",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C29",
+      "claim": "The majority of high-confidence differential splicing events detected are mild changes (\u2206PSI < 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the majority of high-confidence differential splicing events we detected were mild changes at best (\u2206PSI < 0.25), indicating that a lack of K36 modification had little effect on alternative splicing regulation in K36R mutants (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of \u2206PSI values shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "25880bed-eec8-4031-bee4-67972ac59539",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C30",
+      "claim": "Lack of K36 modification has little effect on alternative splicing regulation in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the majority of high-confidence differential splicing events we detected were mild changes at best (\u2206PSI < 0.25), indicating that a lack of K36 modification had little effect on alternative splicing regulation in K36R mutants (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that differential splicing events are rare and mild in K36R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "7474295f-4563-41ab-8511-806068278399",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C31",
+      "claim": "Splice junction usage is unchanged in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For junctions meeting statistical power requirements (>20 total reads), we observed no changes in the retention ratio, meaning that splice junction usage was unchanged in K36R (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the global analysis of splice junction usage shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "9c7aef49-1ac6-42e5-8e0f-75542c2f8208",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C32",
+      "claim": "H3K36me plays an H3K36me-dependent role for transcriptome regulation that is independent of alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results support an H3K36me-dependent role for transcriptome regulation that is independent of alternative splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that alternative splicing is largely unaffected in K36R mutants despite widespread transcriptome changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b80de397-3fd3-439d-a2b7-fa89e22321fb",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C33",
+      "claim": "A group of highly-expressed genes have transcripts that are reduced in the mutant poly-A RNA fraction but not in the corresponding nuclear RNA fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing our poly-A and nuclear RNA-seq results, we identified a group of highly-expressed genes whose transcripts were reduced in the mutant poly-A RNA fraction but not in the corresponding nuclear RNA fraction (Figure 6A, see full RNA-seq results in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of poly-A and nuclear RNA-seq data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b1e3738a-a50a-49b8-91c6-b39623639602",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C34",
+      "claim": "There are no significant changes in subcellular localization of target transcripts between HWT and K36R larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractionation of nuclear and cytoplasmic RNA from HWT and K36R larvae prior to reverse transcription revealed no significant changes in subcellular localization of the targets (Figure 6\u2014figure supplement 1A), suggesting that a global block to mRNA export due to H3K36R mutation is unlikely.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-PCR analysis of nuclear and cytoplasmic RNA fractions shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "9ef57a01-cf0b-4dad-805d-5677303ee5f5",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C35",
+      "claim": "A global block to mRNA export due to H3K36R mutation is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractionation of nuclear and cytoplasmic RNA from HWT and K36R larvae prior to reverse transcription revealed no significant changes in subcellular localization of the targets (Figure 6\u2014figure supplement 1A), suggesting that a global block to mRNA export due to H3K36R mutation is unlikely.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that subcellular localization of target transcripts is unchanged in K36R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "4423470b-1607-45b6-aab4-1c7bdfc0ba12",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C36",
+      "claim": "Expression differences in poly-A RNA for highly expressed genes are restored to levels more similar to HWT in the K36R background by RNAi-mediated depletion of pacman.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6C, the observed expression differences in poly-A RNA for a handful of highly expressed genes were restored to levels more similar to HWT in the K36R background by RNAi-mediated depletion of pcm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 6C comparing gene expression in K36R mutants with and without pacman RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "4ef965ee-33c7-4caf-93c6-a0791be2706b",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C37",
+      "claim": "H3K36 contributes to post-transcriptional mRNA maturation in a manner that preserves target transcripts from exonuclease-mediated degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that H3K36 contributes to post-transcriptional mRNA maturation in a manner that preserves target transcripts from exonuclease-mediated degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that depletion of the exonuclease pacman rescues expression of downregulated genes in K36R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "ff02b34c-2073-4714-9cde-657b4a872130",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C38",
+      "claim": "Expression levels of K36R downregulated genes are rescued by depletion of pacman, twin, and Pop2.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a panel of K36R downregulated genes, expression levels were rescued by depletion of pcm, twin, and Pop2 (Figure 6C), but not by RNAi against Dcp2 (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 6C comparing gene expression in K36R mutants with RNAi against different RNA degradation factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b737f5a4-9cf8-47ea-a969-c9e77f5c9f5c",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C39",
+      "claim": "Expression levels of K36R downregulated genes are not rescued by RNAi against Dcp2.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a panel of K36R downregulated genes, expression levels were rescued by depletion of pcm, twin, and Pop2 (Figure 6C), but not by RNAi against Dcp2 (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 6\u2014figure supplement 1B comparing gene expression in K36R mutants with and without Dcp2 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "03820f50-cff0-45c9-87b1-2513592de05d",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C40",
+      "claim": "The YFP transcript displays reduced poly-A tail length in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6D, we found that the YFP transcript displayed reduced poly-A tail length in K36R mutants, indicative of a role for H3K36 methylation over terminal exons in recruitment or functioning of the polyadenylation machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LM-PAT assay results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "f3c0a431-240d-457c-ada6-87afa8466e7a",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C41",
+      "claim": "The shorter poly-A tail in K36R mutants is independent of deadenylation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the shorter poly-A tail in K36R mutants was independent of deadenylation activity (Figure 6D), demonstrating that the defect is in polyadenylation, not in the subsequent CCR4/twin- or CNOT7/Pop2-dependent deadenylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LM-PAT assay results shown in Figure 6D comparing poly-A tail length in K36R mutants with and without twin RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "549787bd-2fde-4e5d-854e-0819ca07a60c",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C42",
+      "claim": "The defect in K36R mutants is in polyadenylation, not in the subsequent CCR4/twin- or CNOT7/Pop2-dependent deadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the shorter poly-A tail in K36R mutants was independent of deadenylation activity (Figure 6D), demonstrating that the defect is in polyadenylation, not in the subsequent CCR4/twin- or CNOT7/Pop2-dependent deadenylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that poly-A tail length is reduced in K36R mutants even when deadenylase activity is inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "33cce924-b0f7-421a-b77a-9893b8e01785",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C43",
+      "claim": "Poly-A site specification is largely unaffected by mutation of H3K36.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational analysis of differential poly-A site usage demonstrated no change (Figure 6\u2014figure supplement 1E), indicating that poly-A site specification was largely unaffected by mutation of H3K36.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DaPars analysis shown in Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "042ca6cf-7cb3-4699-b6a3-4241cb8eebe1",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C44",
+      "claim": "H3K36 has a post-transcriptional role in the regulation of metazoan gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data uncover a post-transcriptional role for H3K36 in the regulation of metazoan gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the collective observations that H3K36 affects mRNA stability through polyadenylation and sensitivity to RNA degradation pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "d8ad5a88-44a8-4964-91df-f9cd7308b8f6",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C45",
+      "claim": "Eukaryotic genomes function within the context of chromatin fibers composed of nucleosome units.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes function within the context of chromatin fibers composed of nucleosome units, each of which contains roughly 147 bp of DNA wrapped around a single histone octamer composed of two pairs of heterodimers (histone H2A-H2B, and H3-H4) (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Luger et al., 1997, which provides established knowledge about nucleosome structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "cba2e2b6-3991-4fdc-ac78-76c7d76ed7ab",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C46",
+      "claim": "Each nucleosome contains roughly 147 bp of DNA wrapped around a single histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes function within the context of chromatin fibers composed of nucleosome units, each of which contains roughly 147 bp of DNA wrapped around a single histone octamer composed of two pairs of heterodimers (histone H2A-H2B, and H3-H4) (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Luger et al., 1997, which provides established knowledge about nucleosome structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "72637603-0c4a-4922-b88f-9880c674fe62",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C47",
+      "claim": "The histone octamer is composed of two pairs of heterodimers (histone H2A-H2B, and H3-H4).",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes function within the context of chromatin fibers composed of nucleosome units, each of which contains roughly 147 bp of DNA wrapped around a single histone octamer composed of two pairs of heterodimers (histone H2A-H2B, and H3-H4) (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Luger et al., 1997, which provides established knowledge about nucleosome structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "ceb80ea9-d98c-4d86-858d-45bfe5c07652",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C48",
+      "claim": "H3K36 di- and tri-methylation (H3K36me2/3) are enriched in coding regions and toward the 3' end of actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with many PTMs whose spatial distribution is skewed towards promoters and the 5' regions of genes, H3K36 di- and tri-methylation (H3K36me2/3) are enriched in coding regions and toward the 3' end of actively transcribed genes (Bannister et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bannister et al., 2005, which provides published evidence for the distribution of H3K36me2/3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "80aeac42-2987-4fd8-9208-0ee6593e6b17",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C49",
+      "claim": "H3K36me2/3 marks are preferentially enriched over exons as opposed to introns.",
+      "claim_type": "EXPLICIT",
+      "source": "These marks are also preferentially enriched over exons as opposed to introns (Kolasinska-Zwierz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kolasinska-Zwierz et al., 2009, which provides published evidence for the exonic enrichment of H3K36me2/3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "9dcd9581-8bdd-4df1-9c20-6d7f40e1e9d4",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C50",
+      "claim": "H3K36me3 suppresses cryptic transcription initiation from coding regions in Saccharomyces cerevisiae by recruiting a repressive Rpd3 deacetylase complex to sites of active elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, H3K36me2/3 is known to suppress cryptic transcription initiation from coding regions in Saccharomyces cerevisiae by recruiting a repressive Rpd3 deacetylase complex to sites of active elongation (Carrozza et al., 2005; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Carrozza et al., 2005 and Keogh et al., 2005, which provide published evidence for this mechanism in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "bbd454a1-4206-4ef5-971c-4241ae1c6438",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C51",
+      "claim": "H3K36me3 is implicated in suppressing active incorporation of acetylated histones via histone exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also implicated in suppressing active incorporation of acetylated histones via histone exchange (Venkatesh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Venkatesh et al., 2012, which provides published evidence for this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "3149f57b-95a5-4723-807f-7e5fbc371bcf",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C52",
+      "claim": "Ablation of human SETD2 is suggested to alter a number of exon inclusion events by recruiting RNA binding proteins in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, ablation of human SETD2, which catalyzes H3K36 trimethylation, is suggested to alter a number of exon inclusion events by recruiting RNA binding proteins (Luco et al., 2010; Pradeepa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Luco et al., 2010 and Pradeepa et al., 2012, which provide published evidence for this role of SETD2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "f034121c-570c-4536-b05e-160446e1695d",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C53",
+      "claim": "H3K36me3 distribution across gene bodies is sensitive to perturbations in splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, H3K36me3 distribution across gene bodies is itself sensitive to perturbations in splicing (de Almeida et al., 2011; Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to de Almeida et al., 2011 and Kim et al., 2011, which provide published evidence for this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "ba790a52-5863-4d13-9182-85f9fa8bd34d",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C54",
+      "claim": "H3K36me has been attributed roles in X-chromosome dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in transcription and RNA processing, a range of other activities have been attributed to H3K36me, including X-chromosome dosage compensation (Larschan et al., 2007), DNA damage response (Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; Pfister et al., 2014), and three dimensional chromosome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Larschan et al., 2007, which provides published evidence for this role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1edaa891-5e39-47bb-9bdc-bef9cd06be73",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C55",
+      "claim": "H3K36me has been attributed roles in DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in transcription and RNA processing, a range of other activities have been attributed to H3K36me, including X-chromosome dosage compensation (Larschan et al., 2007), DNA damage response (Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; Pfister et al., 2014), and three dimensional chromosome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; and Pfister et al., 2014, which provide published evidence for this role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "786d86c6-8b53-4b66-a9cb-72cadadc08e6",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C56",
+      "claim": "H3K36me has been attributed roles in three dimensional chromosome organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in transcription and RNA processing, a range of other activities have been attributed to H3K36me, including X-chromosome dosage compensation (Larschan et al., 2007), DNA damage response (Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; Pfister et al., 2014), and three dimensional chromosome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Evans et al., 2016; Smith et al., 2013; and Ulianov et al., 2016, which provide published evidence for this role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "a59a3a49-8aeb-4cbb-b6a5-682d6886b4c2",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C57",
+      "claim": "Arginine approximates the charge and steric conformation of lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginine approximates the charge and steric conformation of lysine, but cannot be targeted by lysine methyltransferases, and therefore represents an appropriate mutation with which to study the PTM-specific functions of H3K36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of amino acid properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "48cae0fe-f9de-4208-a3d0-5b55d5076c60",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C58",
+      "claim": "Arginine cannot be targeted by lysine methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginine approximates the charge and steric conformation of lysine, but cannot be targeted by lysine methyltransferases, and therefore represents an appropriate mutation with which to study the PTM-specific functions of H3K36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of enzyme specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1755d0ee-802e-4642-bd16-c198758838c8",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C59",
+      "claim": "H3K36me3 is catalyzed co-transcriptionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Because H3K36me3 is catalyzed co-transcriptionally (Kizer et al., 2005), and should therefore track roughly with gene expression, we also took the alternate approach of determining whether gene expression changes in K36R were correlated with the amount of expression normally observed in HWT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kizer et al., 2005, which provides published evidence for co-transcriptional catalysis of H3K36me3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "69d186ea-9ed0-4c27-bdd0-c20a2cd74eb9",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C60",
+      "claim": "SETD2 catalyzes trimethylation of lysine 36 in both the 'canonical' replication-dependent H3 and in the replication-independent histone variant, H3.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more importantly, SETD2 catalyzes trimethylation of lysine 36 in both the 'canonical' replication-dependent H3 and in the replication-independent histone variant, H3.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of SETD2 substrate specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "f3259fee-5b29-4a9d-8159-3181f2b13a9e",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C61",
+      "claim": "H3.3 is thought to play a particularly important role in transcriptionally active regions where H3K36 methylation is enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "H3.3 is thought to play a particularly important role in transcriptionally active regions where H3K36 methylation is enriched (Ahmad and Henikoff, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ahmad and Henikoff, 2002, which provides published evidence for the role of H3.3 in transcriptionally active regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "822b348b-a345-4b10-a828-96d62bcea3c4",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C62",
+      "claim": "A protein with specific affinity for SETD2-catalyzed trimethylation of lysine 36 of the histone H3.3 variant serves as a regulator of RNA pol II elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a protein with specific affinity for SETD2-catalyzed trimethylation of lysine 36 of the histone H3.3 variant was shown to serve as a regulator of RNA pol II elongation (Wen et al., 2014) and to associate with components of spliceosomal snRNPs to regulate co-transcriptional alternative mRNA splicing (Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wen et al., 2014, which provides published evidence for this regulatory role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "d4676403-bffa-485d-9b22-57a2aadfc52f",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C63",
+      "claim": "A protein with specific affinity for SETD2-catalyzed trimethylation of lysine 36 of the histone H3.3 variant associates with components of spliceosomal snRNPs to regulate co-transcriptional alternative mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a protein with specific affinity for SETD2-catalyzed trimethylation of lysine 36 of the histone H3.3 variant was shown to serve as a regulator of RNA pol II elongation (Wen et al., 2014) and to associate with components of spliceosomal snRNPs to regulate co-transcriptional alternative mRNA splicing (Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guo et al., 2014, which provides published evidence for this regulatory role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "2818b54b-d8c1-4ba0-a9bf-a89a0e6daa96",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C64",
+      "claim": "SETD2's prominent association with the C-terminal domain of RNA pol II makes it likely that ablating this protein will result in transcriptional consequences that are unrelated to its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond its other substrates, SETD2's prominent association with the C-terminal domain of RNA pol II (Kizer et al., 2005) makes it likely that ablating this protein will result in transcriptional consequences that are unrelated to its catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the known association of SETD2 with RNA pol II, supported by citation to Kizer et al., 2005, and represents speculation about the consequences of SETD2 ablation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b892f4d7-8f49-4f23-9f79-24139bea51fe",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C65",
+      "claim": "H3K36me3 depletion in SETD2-mutant renal cell carcinoma has been correlated with defects in transcriptional termination and readthrough into neighboring genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, H3K36me3 depletion in SETD2-mutant renal cell carcinoma has been correlated with defects in transcriptional termination and readthrough into neighboring genes (Grosso et al., 2015), suggesting that H3K36 methylation might influence termination and polyadenylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Grosso et al., 2015, which provides published evidence for this correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "deb44f1a-8511-4ba7-8bd1-f79c028559c9",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C66",
+      "claim": "Dimethylation (N6,2'-O-dimethyladenosine, or m6Am) of the nucleotide adjacent to the m7G cap enhances transcript stability.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Jaffrey and colleagues recently showed that dimethylation (N6,2'-O-dimethyladenosine, or m6Am) of the nucleotide adjacent to the m7G cap enhances transcript stability (Mauer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mauer et al., 2017, which provides published evidence for this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "0c1682d0-057e-4f0e-ac95-613a5b308bd3",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C67",
+      "claim": "The prevailing model for histone PTM modulation of gene expression suggests that it occurs directly proximal to the site of histone modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing model for histone PTM modulation of gene expression, reinforced by recent direct evidence (Hilton et al., 2015), suggests that it occurs directly proximal to the site of histone modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hilton et al., 2015, which provides published evidence for this model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "c64879ed-0f9d-4459-936d-31aab58997bb",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C68",
+      "claim": "Alpha-tubulin was recently identified as a non-histone substrate of SETD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, alpha-tubulin was recently identified as a non-histone substrate of SETD2 (Park et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Park et al., 2016, which provides published evidence for this substrate identification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "37598341-baf3-4559-b2be-a5be1bb943a6",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C69",
+      "claim": "Very low levels of H3K36me3 signal are observed in both western blots from H3K36R mutant larvae and immunofluorescent staining of salivary gland polytene chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this possibility should be tempered by the fact that we observed very low levels of H3K36me3 signal in both western blots from H3K36R mutant larvae (Figure 3A) and immunofluorescent staining of salivary gland polytene chromosomes (McKay et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data in Figure 3A and citation to McKay et al., 2015 for immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "55cec33c-31d9-4bfd-8688-79f270169cb9",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C70",
+      "claim": "H3.3 is, at best, a minor contributor to total H3K36me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus H3.3 is, at best, a minor contributor to total H3K36me3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that very low levels of H3K36me3 remain in H3K36R mutants where only H3.3 could be methylated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "7c60d44d-38b8-40d0-912f-fd08c454b32e",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C71",
+      "claim": "Start-seq signal maps faithfully and robustly, with base-pair resolution, to annotated (observed) transcription start sites (obsTSSs).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 2A\u2013C, Start-seq signal maps faithfully and robustly, with base-pair resolution, to annotated (observed) transcription start sites (obsTSSs), and demarcates sites of high nuclear RNA-seq.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the Start-seq data shown in Figure 3\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "d256505f-7c38-4df9-b9e1-f3601d4ec473",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C72",
+      "claim": "Start-seq demarcates sites of high nuclear RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 2A\u2013C, Start-seq signal maps faithfully and robustly, with base-pair resolution, to annotated (observed) transcription start sites (obsTSSs), and demarcates sites of high nuclear RNA-seq.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of Start-seq and nuclear RNA-seq data shown in Figure 3\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "7a838492-653d-4dfe-8756-252889809552",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C73",
+      "claim": "ATAC-seq signal accumulates most robustly in a window spanning roughly 150 nt upstream, and 50 nt downstream, of obsTSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq signal accumulates most robustly in a window spanning roughly 150 nt upstream, and 50 nt downstream, of obsTSSs (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ATAC-seq data shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "4710d001-4503-46f6-8295-a0c0d0c11f97",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C74",
+      "claim": "Exonic nuTSSs are depleted of ATAC-seq open chromatin signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, exonic nuTSSs are depleted of ATAC-seq open chromatin signal (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ATAC-seq analysis shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "11565566-6549-449f-80fd-4cf59a4875d9",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C75",
+      "claim": "The findings do not support a role in Drosophila for H3K36me in suppressing cryptic antisense transcription, as described in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these findings do not support a role in Drosophila for H3K36me in suppressing cryptic antisense transcription, as described in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that antisense transcription does not increase in K36R mutants, in contrast to what has been observed in yeast.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "6691d254-9cbd-446a-a711-6fcb974cc840",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C76",
+      "claim": "The SETD2 methyltransferase is reported to play a role in regulating alternative splice site choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K36me3 methyltransferase, SETD2, is reported to play a role in regulating alternative splice site choice (Luco et al., 2010; Pradeepa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Luco et al., 2010 and Pradeepa et al., 2012, which provide published evidence for this role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "cd33fbea-5d74-41ca-9956-9eb063e99602",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C77",
+      "claim": "Studies have implicated H3K36me3 in inefficient intron splicing in clear cell renal cell carcinomas via SETD2 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, studies have implicated H3K36me3 in alternative splicing in human cell culture (Luco et al., 2010; Pradeepa et al., 2012) and inefficient intron splicing in clear cell renal cell carcinomas (Simon et al., 2014), again via SETD2 mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Simon et al., 2014, which provides published evidence for this role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b3c58323-9cb2-47d0-99f0-7349cd0436d4",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C78",
+      "claim": "H3K36 is neither a significant contributor to the regulation of alternative splice site choice, nor the efficiency of canonical intron removal.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that H3K36 is neither a significant contributor to the regulation of alternative splice site choice, nor the efficiency of canonical intron removal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the MISO and splice junction analysis presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "6e4818ba-09ff-4f2f-a241-3ee92b4b6635",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C79",
+      "claim": "Methylation of H3K36 does not suppress cryptic transcription in coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also present evidence that methylation of H3K36 does not suppress cryptic transcription in coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Start-seq analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b885ee2b-79c2-48e3-a983-289389a87bc1",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C80",
+      "claim": "H4 acetylation is strongly suppressed by H3K36 modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we confirm that H4 acetylation is strongly suppressed by H3K36 modification, despite the fact that cryptic transcripts do not appear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "79ef3bde-db7a-4442-879f-a32f76c72e11",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C81",
+      "claim": "Cryptic transcripts do not appear in H3K36R mutants despite increased H4 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we confirm that H4 acetylation is strongly suppressed by H3K36 modification, despite the fact that cryptic transcripts do not appear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Start-seq analysis shown in Figure 4 combined with the western blot data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "f36b4baf-8853-417e-a8e1-224211cca756",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C82",
+      "claim": "The finding argues for an uncoupling of H4ac levels from cryptic initiation in coding regions in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding argues for an uncoupling of H4ac levels from cryptic initiation in coding regions in metazoans, and suggests that the suppression of cryptic transcription initiation in multicellular organisms may be more complex than previously appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that H4 acetylation increases in K36R mutants without a corresponding increase in cryptic transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "872d8e2f-243f-472b-a104-3667f65cbcca",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C83",
+      "claim": "The suppression of cryptic transcription initiation in multicellular organisms may be more complex than previously appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding argues for an uncoupling of H4ac levels from cryptic initiation in coding regions in metazoans, and suggests that the suppression of cryptic transcription initiation in multicellular organisms may be more complex than previously appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation based on the unexpected finding that H4 hyperacetylation does not lead to cryptic transcription in Drosophila.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "5efb7f06-d762-4e27-9faf-1818b7c27527",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C84",
+      "claim": "H3K36 is required for proper mRNA maturation, providing a post-transcriptional benefit across a range of highly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we present evidence that H3K36 is required for proper mRNA maturation, providing a post-transcriptional benefit across a range of highly expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of poly-A and nuclear RNA-seq data and the rescue experiments with RNA degradation factors shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "3fafcfea-f5f9-41c0-b755-b36f79aa8bb6",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C85",
+      "claim": "The mRNA 'fitness' benefit provided by H3K36 is linked to the efficiency of 3' end formation or polyadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genetic suppression data suggest that this mRNA 'fitness' benefit is somehow linked to the efficiency of 3' end formation or polyadenylation (Figure 6B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the rescue of gene expression by deadenylase depletion and the observation of reduced poly-A tail length in K36R mutants, as shown in Figure 6B-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "5e2c170a-975b-4801-9a04-b08616ec5ca6",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C86",
+      "claim": "The enrichment of H3K36me3 at the 3' ends of genes makes it a likely candidate to interface with termination and polyadenylation activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the enrichment of H3K36me3 at the 3' ends of genes makes it a likely candidate to interface with these activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation based on the known distribution of H3K36me3 and the observed polyadenylation defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "82d02e77-905d-462e-8c12-883b66a1d159",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C87",
+      "claim": "H3K36 modification might recruit some type of RNA modifying enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that H3K36 modification might recruit some type of RNA modifying enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation about potential mechanisms by which H3K36 might affect mRNA stability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "a01eae54-143e-41f6-8df7-be25d381a2c3",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C88",
+      "claim": "H3K36 might contribute to mRNA maturation across multiple processing steps, with the combined effect of protecting target mRNAs from surveillance and eventual degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, H3K36 might contribute to mRNA maturation across multiple processing steps, with the combined effect of protecting target mRNAs from surveillance and eventual degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation about the potential mechanism by which H3K36 affects mRNA stability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "a7a472b7-fa0f-4148-88f4-0d15c76e515a",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C89",
+      "claim": "The rate of transcribing polymerase through nucleosomes that are modified at H3K36 might change in K36R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is possible that the rate of transcribing polymerase through nucleosomes that are modified at H3K36 might change, and therefore the capping, cleavage and polyadenylation machinery that associates with the C-terminal domain of RNA polymerase II (Ho et al., 1998; McCracken et al., 1997) might become improperly distributed in K36R mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation about potential indirect mechanisms by which H3K36 might affect gene expression, supported by citations about RNA processing machinery.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "7626b29b-b505-4a22-9cfe-c50cd2686947",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C90",
+      "claim": "The capping, cleavage and polyadenylation machinery associates with the C-terminal domain of RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is possible that the rate of transcribing polymerase through nucleosomes that are modified at H3K36 might change, and therefore the capping, cleavage and polyadenylation machinery that associates with the C-terminal domain of RNA polymerase II (Ho et al., 1998; McCracken et al., 1997) might become improperly distributed in K36R mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ho et al., 1998 and McCracken et al., 1997, which provide published evidence for this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "212fed3c-fda7-4ce8-b550-6f6db43aef57",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "claim_id": "C91",
+      "claim": "H3K36me's previously reported role in three-dimensional genome organization might extend to the concentration of factors related to mRNA maturation at sites of active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, H3K36me's previously reported role in three-dimensional genome organization (Evans et al., 2016; Smith et al., 2013; Ulianov et al., 2016) might extend to the concentration of factors related to mRNA maturation at sites of active transcription, which would be impaired upon H3K36 mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents speculation about potential mechanisms by which H3K36 might affect gene expression, supported by citations about 3D genome organization.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d9fef708-86bb-494f-a844-79e0c7c5feb0",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "H3K36R mutants exhibit severe developmental defects including reduced pupation frequency and complete failure to eclose into adults, without obvious cell proliferation defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are all supported by citation to McKay et al., 2015, representing prior published work. These phenotypic observations establish the biological context for the current study and are appropriately attributed to previous research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "59d93d92-d1a0-446d-b172-91dafa8087d0",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "H3K36R mutation causes widespread transcriptome dysregulation where genes with high H3K36me3 density decrease expression while genes with low H3K36me3 density increase expression, with the strongest effects in highly expressed and lowly expressed genes respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 are well-supported by poly-A RNA-seq data shown in Figures 2A-C. The anticorrelation between H3K36me3 density and gene expression changes is demonstrated across multiple analyses. The global nature of effects argues against an exclusively local, cis-acting mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "1040abb7-5af8-4612-ad5f-aa991ac36416",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H3K36R mutants exhibit robustly increased H4 acetylation levels, particularly in transcriptionally active regions, while H3K27me3 levels are slightly reduced but polycomb target genes remain largely unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 and C80 are supported by western blot data (Figure 3A), immunofluorescence on polytene chromosomes (Figure 3\u2014figure supplement 1C), and gene expression analysis. The H4 hyperacetylation confirms the previously identified link between H3K36me and H4ac, while the minimal effect on polycomb targets is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "69d3428f-4b27-41d3-bb14-c09d7643d43b",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Global chromatin accessibility at promoters is minimally changed between HWT and H3K36R animals, indicating that chromatin remodeling at promoters is not a major contributor to observed gene expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C18 are supported by ATAC-seq data (Figure 3B) showing high correlation between HWT and K36R at transcription start sites, and by the lack of correlation between ATAC-seq changes and differential expression (Figure 3C). This argues against a promoter-centric mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Contrary to expectations from yeast studies, H3K36 methylation does not suppress cryptic transcription in Drosophila gene bodies. Instead, pervasive initiation is widespread throughout the genome even in wild-type animals, and exonic/antisense transcription does not increase in K36R mutants despite H4 hyperacetylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27, C75, C79, C81-C82 are well-supported by extensive Start-seq analysis (>200M reads, Figure 4). The identification of thousands of nuTSSs in wild-type, the lack of increased cryptic transcription in K36R mutants, and the uncoupling of H4 acetylation from cryptic initiation represent major findings that challenge the prevailing model from yeast. The depth of sequencing provides strong statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "c9874460-e17a-42cd-8bb1-73f557360227",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "H3K36 mutation has minimal effects on alternative splicing, with very few differential splicing events detected and no changes in global splice junction usage, indicating that H3K36 is not a significant contributor to splicing regulation in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C78 are supported by comprehensive MISO analysis (Figure 5A-B) and global splice junction analysis (Figure 5C). The findings contradict previous reports based on SETD2 depletion, suggesting those effects may be due to non-histone functions of SETD2. The statistical criteria for significance are clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A subset of highly expressed genes shows reduced transcript levels in poly-A RNA but not nuclear RNA in K36R mutants. This defect is rescued by RNAi depletion of the exonuclease pacman and deadenylases twin and Pop2, but not by Dcp2 depletion, indicating H3K36 contributes to post-transcriptional mRNA maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 and C84 are supported by comparison of poly-A and nuclear RNA-seq (Figure 6A-B), RT-PCR fractionation experiments (Figure 6\u2014figure supplement 1A), and RT-qPCR rescue experiments (Figure 6C). The selective rescue by specific RNA degradation factors provides mechanistic insight. However, the Dcp2 result is acknowledged as inconclusive due to known redundancies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "b2eb26c6-32a5-48bc-9fa9-03d801364358",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H3K36R mutants exhibit reduced poly-A tail length that is independent of deadenylation activity, indicating a defect in polyadenylation rather than subsequent deadenylation. Poly-A site specification remains largely unaffected, suggesting H3K36 has a post-transcriptional role in mRNA maturation linked to 3' end formation efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C85 are supported by LM-PAT assay data (Figure 6D) showing reduced poly-A tail length in K36R that persists even with deadenylase depletion, and DaPars analysis (Figure 6\u2014figure supplement 1E) showing no change in poly-A site usage. The YFP reporter provides a controlled system, though transcriptome-wide validation is noted as needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "89c4191a-f087-410d-8c59-cd79c53bd26a",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Very low levels of H3K36me3 signal remain in H3K36R mutants, indicating that the histone variant H3.3 is at best a minor contributor to total H3K36me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by western blot data (Figure 3A) and citation to immunofluorescence data from McKay et al., 2015. This observation is important for interpreting the results, as it suggests the phenotypes observed are primarily due to loss of canonical H3K36 methylation rather than H3.3K36 methylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "91bf772d-8152-49a3-b1ee-688141de030e",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Start-seq signal maps faithfully to annotated transcription start sites with base-pair resolution and correlates with nuclear RNA-seq signal. ATAC-seq signal accumulates in a defined window around TSSs, with exonic nuTSSs depleted of open chromatin signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by validation data in Figure 3\u2014figure supplement 2 and Figure 4\u2014figure supplement 1A. These technical validation results establish the quality and reliability of the sequencing methods used, which is essential for interpreting the biological findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "2a96f943-d752-4fb0-aba7-77c0125d9c03",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about chromatin structure, H3K36 methylation distribution and functions, SETD2 properties, and related mechanisms from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C68, C76-C77, and C90 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the current findings. The citations appear appropriate and accurately represent the cited work based on the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    },
+    {
+      "id": "d5161188-547d-4dd3-af00-8acb0311aa25",
+      "content_id": "d92003fd-e72e-4972-98e7-293337d5ea33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Speculative discussion of potential mechanisms by which H3K36 might affect gene expression, including effects on transcription elongation rate, recruitment of RNA modifying enzymes, contributions across multiple processing steps, and roles in 3D genome organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83, C86-C89, and C91 are explicitly speculative, representing potential mechanisms and future directions rather than demonstrated findings. These are appropriately presented as possibilities requiring further investigation. While speculation is valuable for discussion, these claims cannot be evaluated as supported or unsupported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:31:54.869735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdf3fc79-58f9-4287-95cd-28d39264f327",
+      "result_id": "d9fef708-86bb-494f-a844-79e0c7c5feb0"
+    },
+    {
+      "claim_id": "6373be32-3d97-48d9-8369-876311c38a89",
+      "result_id": "d9fef708-86bb-494f-a844-79e0c7c5feb0"
+    },
+    {
+      "claim_id": "579e5c45-055d-48cd-824a-e3f339ca3444",
+      "result_id": "d9fef708-86bb-494f-a844-79e0c7c5feb0"
+    },
+    {
+      "claim_id": "b97cb738-7360-44e6-bd40-49f13e3c561f",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "2e2cfd01-f830-4e1b-9ca9-b0816ad34752",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "bd78cc2c-df68-4ea4-af25-c0878e6448f5",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "cb124a8a-24c9-4f54-af22-ba8c6dd35018",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "1e21b2a6-714d-466e-9807-e84a294e808e",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "8d5cfef1-1285-410e-904e-cfb73ea138f3",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "9d1767be-6b1a-4c51-9223-06e66a6482b2",
+      "result_id": "59d93d92-d1a0-446d-b172-91dafa8087d0"
+    },
+    {
+      "claim_id": "353179a5-2ba1-4a49-95e1-d56b4c94fe79",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "79812d92-f419-4704-a1e5-6c01035dbd26",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "1a3dbe8c-d06e-4730-a1f0-f41524b35b4c",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "6507c085-185a-45ea-905a-e8205baf1338",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "6b310004-a39f-4b3d-b8db-5aa67f0b8f3c",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "b885ee2b-79c2-48e3-a983-289389a87bc1",
+      "result_id": "1040abb7-5af8-4612-ad5f-aa991ac36416"
+    },
+    {
+      "claim_id": "bc82b2c9-cac2-41eb-9f27-6e09d9092f64",
+      "result_id": "69d3428f-4b27-41d3-bb14-c09d7643d43b"
+    },
+    {
+      "claim_id": "57f3b268-c913-455b-a311-3ffdb97fd6cb",
+      "result_id": "69d3428f-4b27-41d3-bb14-c09d7643d43b"
+    },
+    {
+      "claim_id": "2b06c8cc-1813-40f7-b635-6434038f0c8f",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "1ab53ccf-f03c-43f7-b21e-b83d632c1386",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "a2661a6a-c334-4a00-8484-2f705cc68bb7",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "5af983bc-fb01-40c2-aa98-e187ff61c322",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "41f21bdc-4f63-4f23-b326-744a92411eb7",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "54f4afe3-d304-475c-a286-40a437ef3989",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "e6968db5-f2c5-42d6-b7c4-0fdca31069ed",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "42b271fb-3bd5-4a80-ab43-bea20dd0f161",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "86ada50f-8ba8-4b19-8922-9cd8d8515415",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "11565566-6549-449f-80fd-4cf59a4875d9",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "6e4818ba-09ff-4f2f-a241-3ee92b4b6635",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "79ef3bde-db7a-4442-879f-a32f76c72e11",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "f36b4baf-8853-417e-a8e1-224211cca756",
+      "result_id": "0fad1b9e-f41b-47f8-a54b-72c5511e4e3b"
+    },
+    {
+      "claim_id": "522bf4b9-531f-4589-bfc0-49ba60d043b2",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "2e968059-84cd-444c-b5a8-efcd8b904943",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "25880bed-eec8-4031-bee4-67972ac59539",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "7474295f-4563-41ab-8511-806068278399",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "9c7aef49-1ac6-42e5-8e0f-75542c2f8208",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "b3c58323-9cb2-47d0-99f0-7349cd0436d4",
+      "result_id": "c9874460-e17a-42cd-8bb1-73f557360227"
+    },
+    {
+      "claim_id": "b80de397-3fd3-439d-a2b7-fa89e22321fb",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "b1e3738a-a50a-49b8-91c6-b39623639602",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "9ef57a01-cf0b-4dad-805d-5677303ee5f5",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "4423470b-1607-45b6-aab4-1c7bdfc0ba12",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "4ef965ee-33c7-4caf-93c6-a0791be2706b",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "ff02b34c-2073-4714-9cde-657b4a872130",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "b737f5a4-9cf8-47ea-a969-c9e77f5c9f5c",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "5efb7f06-d762-4e27-9faf-1818b7c27527",
+      "result_id": "5fdb5772-0db2-42bc-b7f0-bd2469360e47"
+    },
+    {
+      "claim_id": "03820f50-cff0-45c9-87b1-2513592de05d",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "f3c0a431-240d-457c-ada6-87afa8466e7a",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "549787bd-2fde-4e5d-854e-0819ca07a60c",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "33cce924-b0f7-421a-b77a-9893b8e01785",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "042ca6cf-7cb3-4699-b6a3-4241cb8eebe1",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "3fafcfea-f5f9-41c0-b755-b36f79aa8bb6",
+      "result_id": "b2eb26c6-32a5-48bc-9fa9-03d801364358"
+    },
+    {
+      "claim_id": "37598341-baf3-4559-b2be-a5be1bb943a6",
+      "result_id": "89c4191a-f087-410d-8c59-cd79c53bd26a"
+    },
+    {
+      "claim_id": "55cec33c-31d9-4bfd-8688-79f270169cb9",
+      "result_id": "89c4191a-f087-410d-8c59-cd79c53bd26a"
+    },
+    {
+      "claim_id": "7c60d44d-38b8-40d0-912f-fd08c454b32e",
+      "result_id": "91bf772d-8152-49a3-b1ee-688141de030e"
+    },
+    {
+      "claim_id": "d256505f-7c38-4df9-b9e1-f3601d4ec473",
+      "result_id": "91bf772d-8152-49a3-b1ee-688141de030e"
+    },
+    {
+      "claim_id": "7a838492-653d-4dfe-8756-252889809552",
+      "result_id": "91bf772d-8152-49a3-b1ee-688141de030e"
+    },
+    {
+      "claim_id": "4710d001-4503-46f6-8295-a0c0d0c11f97",
+      "result_id": "91bf772d-8152-49a3-b1ee-688141de030e"
+    },
+    {
+      "claim_id": "d8ad5a88-44a8-4964-91df-f9cd7308b8f6",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "cba2e2b6-3991-4fdc-ac78-76c7d76ed7ab",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "72637603-0c4a-4922-b88f-9880c674fe62",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "ceb80ea9-d98c-4d86-858d-45bfe5c07652",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "80aeac42-2987-4fd8-9208-0ee6593e6b17",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "9dcd9581-8bdd-4df1-9c20-6d7f40e1e9d4",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "bbd454a1-4206-4ef5-971c-4241ae1c6438",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "3149f57b-95a5-4723-807f-7e5fbc371bcf",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "f034121c-570c-4536-b05e-160446e1695d",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "ba790a52-5863-4d13-9182-85f9fa8bd34d",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "1edaa891-5e39-47bb-9bdc-bef9cd06be73",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "786d86c6-8b53-4b66-a9cb-72cadadc08e6",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "a59a3a49-8aeb-4cbb-b6a5-682d6886b4c2",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "48cae0fe-f9de-4208-a3d0-5b55d5076c60",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "1755d0ee-802e-4642-bd16-c198758838c8",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "69d186ea-9ed0-4c27-bdd0-c20a2cd74eb9",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "f3259fee-5b29-4a9d-8159-3181f2b13a9e",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "822b348b-a345-4b10-a828-96d62bcea3c4",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "d4676403-bffa-485d-9b22-57a2aadfc52f",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "2818b54b-d8c1-4ba0-a9bf-a89a0e6daa96",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "b892f4d7-8f49-4f23-9f79-24139bea51fe",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "deb44f1a-8511-4ba7-8bd1-f79c028559c9",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "0c1682d0-057e-4f0e-ac95-613a5b308bd3",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "c64879ed-0f9d-4459-936d-31aab58997bb",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "6691d254-9cbd-446a-a711-6fcb974cc840",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "cd33fbea-5d74-41ca-9956-9eb063e99602",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "7626b29b-b505-4a22-9cfe-c50cd2686947",
+      "result_id": "2a96f943-d752-4fb0-aba7-77c0125d9c03"
+    },
+    {
+      "claim_id": "872d8e2f-243f-472b-a104-3667f65cbcca",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    },
+    {
+      "claim_id": "5e2c170a-975b-4801-9a04-b08616ec5ca6",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    },
+    {
+      "claim_id": "82d02e77-905d-462e-8c12-883b66a1d159",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    },
+    {
+      "claim_id": "a01eae54-143e-41f6-8df7-be25d381a2c3",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    },
+    {
+      "claim_id": "a7a472b7-fa0f-4148-88f4-0d15c76e515a",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    },
+    {
+      "claim_id": "212fed3c-fda7-4ce8-b550-6f6db43aef57",
+      "result_id": "d5161188-547d-4dd3-af00-8acb0311aa25"
+    }
+  ],
+  "comparisons": []
+}

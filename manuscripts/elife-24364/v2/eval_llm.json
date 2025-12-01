@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HVC(RA) neurons have compact dendrites (95% within 100 \u00b5m of soma) that are entirely confined to HVC, while axon collaterals ramify across HVC (97% within HVC boundaries) and are lined with synaptic boutons throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are based on quantitative LM reconstructions of 15 cells with clear measurements and are consistent with prior literature. The data are well-documented with appropriate sample sizes and error estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A SBEM volume (166\u00d7166\u00d777 \u00b5m\u00b3) was acquired containing 34 BDA-labeled HVC(RA) somata (14% of expected), and 12 neurons were reconstructed with dendritic path lengths ranging from 642-1956 \u00b5m, with 74 branches completely reconstructed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 describe the EM data acquisition and reconstruction procedures with specific quantitative measurements. The labeling efficiency and reconstruction completeness are clearly documented, though ~70% of branches were incomplete due to volume boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "HVC(RA) neurons receive predominantly inhibitory synaptic inputs (59% symmetric/inhibitory vs 41% asymmetric/excitatory), with inhibitory synapses enriched near the soma (68% within 40 \u00b5m vs 57% beyond).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are based on detailed EM synapse classification with validation (19/20 agreement between experts, 100% correct classification in test set). Statistical analysis across multiple cells (n=9) confirms consistency. The finding contrasts sharply with mammalian cortex (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "44 double-labeled homotypic HVC(RA)-HVC(RA) synapses were found, representing ~1% of observed excitatory synapses, but correcting for incomplete labeling (7.6% axonal labeling probability) yields an estimate of ~15% of all excitatory inputs being homotypic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 involve careful correction for labeling efficiency using a sampling approach. The correction factor is substantial (from 1% to 15%) and relies on the assumption that labeling is uniform, which may introduce uncertainty. However, the methodology is clearly described and the estimate is reasonable given the constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The three main HVC cell types (interneurons, HVC(RA), HVC(X)) can be distinguished by spine density: interneurons (0.01\u00b10.01 spines/\u00b5m), HVC(RA) (0.21\u00b10.07 spines/\u00b5m), and HVC(X) (0.70\u00b10.13 spines/\u00b5m), with this metric correctly classifying 17/18 BDA-labeled HVC(RA) dendrites in EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 establish a validated classification method based on spine density with clear quantitative thresholds and high accuracy (94% correct classification). The method is supported by both LM and EM data and validated against known cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three proximal BDA-labeled axons (path lengths 0.72-1.37 mm) made 121 connections, with 95% (115/121) targeting inhibitory interneurons and only 5% (6/121) targeting excitatory cells, consistent with paired recording data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide clear quantitative data on proximal axon targets with strong agreement with prior electrophysiological findings (C15, C59). The sample size is modest (3 axons, 121 connections) but the pattern is consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Six orphaned axon fragments (path length 0.56\u00b10.27 mm) showed dramatically different targeting: 64.6% of synapses onto excitatory neurons (13-fold increase) and 36.8% onto other HVC(RA) cells (11-fold increase) compared to proximal axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 demonstrate a striking distance-dependent change in synaptic targets with large effect sizes (11-13 fold increases). The sample includes 407 synapses from 6 orphaned fragments, providing reasonable statistical power for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Axonal branch density decreases with distance from soma (proximal: 12.4\u00b13.7 branch points/mm vs distal: 4.0\u00b14.3 branch points/mm), and this metric can be used to estimate soma distance and predict synaptic target types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 establish branch density as a proxy for soma distance with clear quantitative differences between proximal and distal axons. The relationship is used to estimate distances for orphaned fragments, though this introduces uncertainty. One outlier orphan (C73) with high branch density behaves as predicted, supporting the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Each HVC(RA) neuron has approximately 1111\u00b1513 outgoing synapses in HVC, with an estimated ~191\u00b188 homotypic synapses per cell, comprising ~24% of incoming excitatory synapses and nearly half of outgoing excitatory contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 involve multiple calculations based on measured axon path length, synapse density, and labeling efficiency. The estimates are internally consistent (incoming and outgoing homotypic synapses must balance) and the error propagation is appropriate. However, the discrepancy between dendritic (~15%, C50) and axonal (~24%, C76) estimates suggests some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Retrograde DiI tracing from HVC labeled upstream nuclei NIf and Uva heavily, but only 125-171 RA neurons in three birds, yielding approximately one RA(HVC) neuron per 200 HVC(RA) neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide an independent estimate of RA\u2192HVC projection neurons using a different tracer. The small number of labeled RA neurons argues against substantial contamination of orphaned axons by RA\u2192HVC projections, supporting the interpretation that orphaned fragments are from HVC(RA) neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C58",
+      "C63",
+      "C64",
+      "C86"
+    ],
+    "result": "HVC(RA) axons show distance-dependent targeting: proximally they almost exclusively target inhibitory interneurons (95%), while distally they mostly target excitatory neurons (65%), with about half being other HVC(RA) cells (37%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates the key finding from multiple claims showing the dramatic shift in synaptic targets with distance. The data are quantitative, statistically robust, and represent the central discovery of the paper. The finding reconciles prior paired recording data (low HVC(RA)-HVC(RA) connectivity) with the existence of substantial homotypic connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "The synaptic architecture contains sufficient HVC(RA)-HVC(RA) connections (~25% of excitatory inputs, ~200 per cell) to potentially support synaptic chain models, though the distributed nature of the circuitry would require very large EM volumes (~500 million \u00b5m\u00b3) for complete reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 represent the main interpretation of the findings. The estimate of ~200 homotypic inputs per cell is well-supported by the data, and the calculation that this yields at most 0.5% pairwise connectivity (C85) correctly reconciles the findings with prior paired recording data. The volume estimate for complete reconstruction (C88) is a reasonable extrapolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The predominance of proximal inhibitory connections and overall high fraction of inhibitory inputs (59%) suggests inhibition plays an important role in sequence generation, potentially through decorrelation of activity and winner-take-all dynamics that prevent local clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 present interpretations of the inhibitory connectivity findings. The observations (C89, C91) are well-supported by data. The proposed functions (C92-C95) are reasonable hypotheses based on the circuit architecture, though they remain speculative and would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The observed architecture may arise developmentally through activity-dependent refinement of initially promiscuous connections (Peters' rule), with inhibition shaping distance-dependent targeting. The resulting structure resembles coupled winner-take-all modules that could support robust sequence generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C101 are speculative proposals about circuit function and development, supported by citations to relevant literature but not directly tested in this study. These represent reasonable hypotheses that follow from the anatomical findings but would require additional experimental validation (developmental studies, functional imaging, perturbation experiments).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The dominance of inhibitory inputs in HVC(RA) neurons (59%) contrasts sharply with mammalian cortical neurons where inhibitory synapses are typically at most 20% of the total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 makes a comparative statement supported by citations to mammalian cortex studies. The contrast is striking and well-documented, highlighting a potentially important difference between avian and mammalian cortical circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The low pairwise connectivity (0.7%) found in electrophysiological recordings, where somata are typically <200 \u00b5m apart, is consistent with the anatomical findings since 56% of axon collateral path lies >200 \u00b5m from the soma where excitatory targeting predominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 successfully reconcile the apparent discrepancy between prior paired recording data and the current anatomical findings. The spatial sampling bias in paired recordings is clearly explained by the distance-dependent targeting revealed in the EM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study used adult male zebra finches with retrograde tracers (Fluoro-Ruby or BDA) injected into RA, and SBEM imaging at 11\u00d711\u00d729 nm voxel size and 2 kV landing energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 describe standard methodological details that are clearly documented. These are routine procedures for this type of study and are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

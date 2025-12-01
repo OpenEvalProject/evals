@@ -1,0 +1,1625 @@
+{
+  "submission": {
+    "id": "3cead550-7ace-4e32-958f-9dc206c0c611",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:03:41.808965Z",
+    "updated_at": "2025-11-30T23:03:41.808965Z"
+  },
+  "content": [
+    {
+      "id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "submission_id": "3cead550-7ace-4e32-958f-9dc206c0c611",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for the hijacking of endosomal sorting nexin proteins by Chlamydia trachomatis\n\n## Authors\n\n- Blessy Paul<sup>1</sup>\n- Hyun Sung Kim<sup>1</sup>\n- Markus C Kerr<sup>1</sup>\n- Wilhelmina M Huston<sup>2</sup>\n- Rohan D Teasdale<sup>1</sup> \u2020\n- Brett M Collins<sup>1</sup> ([ORCID: 0000-0002-6070-3774](https://orcid.org/0000-0002-6070-3774)) \u2020\n\n### Affiliations\n\n1. Institute for Molecular Bioscience The University of Queensland St. Lucia Australia\n2. School of Life Sciences University of Technology Sydney Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring infection chlamydial pathogens form an intracellular membrane-bound replicative niche termed the inclusion, which is enriched with bacterial transmembrane proteins called Incs. Incs bind and manipulate host cell proteins to promote inclusion expansion and provide camouflage against innate immune responses. Sorting nexin (SNX) proteins that normally function in endosomal membrane trafficking are a major class of inclusion-associated host proteins, and are recruited by IncE/CT116. Crystal structures of the SNX5 phox-homology (PX) domain in complex with IncE define the precise molecular basis for these interactions. The binding site is unique to SNX5 and related family members SNX6 and SNX32. Intriguingly the site is also conserved in SNX5 homologues throughout evolution, suggesting that IncE captures SNX5-related proteins by mimicking a native host protein interaction. These findings thus provide the first mechanistic insights both into how chlamydial Incs hijack host proteins, and how SNX5-related PX domains function as scaffolds in protein complex assembly.\n\n## Introduction\n\nTo counter host defence mechanisms intracellular bacterial pathogens have evolved numerous strategies to evade immune detection, replicate and cause infection. Many pathogens manipulate endocytic pathways to gain entry into host cells and generate a membrane-enclosed replicative niche. This frequently involves hijacking or inhibiting the host cell trafficking machinery, first to generate the pathogen containing vacuole (PCV) and subsequently to prevent fusion with lysosomal degradative compartments. Concomitantly the pathogen often endeavors to decorate the PCV with host proteins and lipids that mimic other host cell organelles in order to circumvent innate immune detection, expand the replicative niche and acquire nutrients to support intracellular replication (Di Russo Case and Samuel, 2016; Personnic et al., 2016). This process is often orchestrated through the action of molecular syringe-like secretion systems that deliver bacterial effector proteins directly into the host cell cytoplasm.\n\nChlamydia trachomatis is arguably one of the most successful human bacterial pathogens by virtue of its capacity to hijack host cell intracellular trafficking and lipid transport pathways to promote infection (Bastidas et al., 2013; Derr\u00e9, 2015; Elwell et al., 2016; Moore and Ouellette, 2014). C. trachomatis causes nearly 100 million sexually transmitted infections annually worldwide, and if left unchecked leads to various human diseases including infection-induced blindness, pelvic inflammatory disease, infertility and ectopic pregnancy (Aral et al., 2006; Newman et al., 2015). Even though chlamydial infections can generally be treated with antibiotics, persistent infections remain a challenge (Kohlhoff and Hammerschlag, 2015; Mpiga and Ravaoarinoro, 2006).\n\nAll Chlamydiae share a common dimorphic life cycle, where the bacteria alternates between the infectious but non-dividing elementary body (EB) form, and the non-infectious but replicative reticulate body (RB) form. Following internalization of EBs through a poorly defined endocytic process, the bacteria reside in a membrane-bound vacuole termed the inclusion, where they convert into RBs and replication occurs over 24\u201372 hr. RBs eventually redifferentiate back to EBs in an asynchronous manner, and are then released to infect neighboring cells (Di Russo Case and Samuel, 2016; Hybiske, 2015; Ward, 1983). The encapsulating inclusion membrane provides the primary interface between the bacteria and the host cell\u2019s cytoplasm and organelles. From the initial stages of invasion until eventual bacterial egress the chlamydial inclusion is extensively modified by insertion of numerous Type-III secreted bacterial effector proteins called inclusion membrane proteins or \u2018Incs\u2019. The Incs modulate host trafficking and signaling pathways to promote bacterial survival at different stages, including cell invasion, inclusion membrane remodeling, avoidance of the host cell innate immune defense system, nutrient acquisition and interactions with other host cell organelles (Elwell et al., 2016; Moore and Ouellette, 2014; Rockey et al., 2002).\n\nChlamydiae secrete more than fifty different Inc proteins. While Incs possess little sequence similarity, they share a common membrane topology with cytoplasmic N- and C-terminal domains, separated by two closely spaced transmembrane regions with a short intra-vacuolar loop (Dehoux et al., 2011; Kostriukova et al., 2008; Li et al., 2008; Lutter et al., 2012; Rockey et al., 2002) (Figure 1A). The cytoplasmic N- and C-terminal sequences of the Inc proteins act to bind and manipulate host cell proteins. Reported examples include the binding of the small GTPase Rab4A by CT229 (Rzomp et al., 2006), Rab11A by Cpn0585 (Cortes et al., 2007), SNARE proteins by IncA (Delevoye et al., 2008), centrosomal and cytoskeletal proteins by Inc850 and inclusion protein acting on microtubules (IPAM) (Dumoux et al., 2015; Mital et al., 2015, 2010), myosin phosphatase by CT228 (Lutter et al., 2013), 14-3-3 and Arf family proteins by IncG and InaC (Kokes et al., 2015; Scidmore and Hackstadt, 2001), and the lipid transfer protein CERT by IncD (Derr\u00e9 et al., 2011; Elwell et al., 2011). Despite these reports, there are no known structures of Inc family members either alone or in complex with host effectors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig1-v2.jpg)\n\n**Figure 1.:** (A) HeLa cells stably expressing the mCherry-Rab25 inclusion membrane marker (red) were infected with C. trachomatis serovar L2 (24 hr) and transfected with myc-tagged SNX expression constructs. The samples were fixed and immunolabeled with anti-myc (green) and anti-chlamydial HtrA antibodies (white) and counterstained with DAPI (blue). Similar experiments using GFP-tagged proteins are shown in Figure 1\u2014figure supplement 1A.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Hela cells were transiently transfected with GFP-tagged SNX and mCherry-Rab25 proteins as indicated, and infected with C. trachomatis serovar L2. Cells were imaged by confocal fluorescence microscopy for GFP-tagged proteins (green), endogenous SNX1 (blue), mCherry-Rab25 (red) and DAPI-stained nuclear material (white). Both GFP-SNX5 and GFP-SNX32 are recruited to inclusion membranes, but the distantly related SNX-BAR protein SNX8 is not. The images are maximum projections. (B) An example of SNX1-decorated tubules (green) often observed emanating from inclusion membranes (mCherry-Rab25 in red; DAPI staining in blue). The image is a maximum projection.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** HeLa cells stably expressing mCherry-Rab25 were infected with C. trachomatis serovar L2 (MOI\u00a0~0.5) for 24 hr and imaged by immunofluorescence microscopy using antibodies to SNX1, SNX2 and SNX5. mCherry-Rab25 provides marker for the inclusion membrane. The upper panels show control infections and lower panels show cells treated with wortmannin or Vps34-IN1 with concomitant loss of SNX association with endosomal compartments while inclusion localisation is unaffected. The images are maximum projections. Endosomal compartments are labeled with antibodies to endogenous Rab5 or Vps35 and Pearson\u2019s correlation coefficients used to quantify loss of endosomal recruitment (100 cells per group; error bars, S.D). A movie showing the effect of wortmannin on GFP-SNX5 is shown in Video 1.\n\nTwo recent studies have greatly expanded the repertoire of host cell proteins known to associate with chlamydial inclusions and Inc proteins (Aeberhard et al., 2015; Mirrashidi et al., 2015). Both reports confirmed that membrane trafficking proteins are major components of the inclusion proteome; and in particular members of the endosomal sorting nexin (SNX) family are highly enriched. Specifically it was shown that the C. trachomatis IncE/CT116 protein could recruit SNX proteins containing bin-amphiphysin-Rvs (BAR) domains SNX1, SNX2, SNX5 and SNX6 (Mirrashidi et al., 2015). SNX1 and SNX2 are highly homologous and form heterodimeric assemblies with either SNX5 or SNX6 to promote endosomal membrane tubulation and trafficking (van Weering et al., 2012). A fifth protein SNX32 is highly similar to SNX5 and SNX6 but is almost exclusively expressed in the brain and has not yet been characterized. SNX recruitment to the inclusion occurs via the C-terminal region of IncE interacting with the phox-homology (PX) domains of SNX5 or SNX6 (Mirrashidi et al., 2015) (Figure 1A). Interestingly, RNAi-mediated depletion of SNX5/SNX6 does not slow infection but rather increases the production of infectious C. trachomatis progeny suggesting that the SNX recruitment is not done to enable bacterial infection. Instead it was proposed that because SNX proteins regulate endocytic and lysosomal degradation, the manipulation by IncE could be an attempt to circumvent SNX-enhanced bacterial destruction (Aeberhard et al., 2015; Mirrashidi et al., 2015).\n\nHere we use X-ray crystallographic structure determination to define the molecular mechanism of SNX5-IncE interaction, and confirm this mechanism using mutagenesis both in vitro and in cells. When bound to SNX5, IncE adopts an elongated \u03b2-hairpin structure, with key hydrophobic residues docked into a complementary binding groove encompassing a helix-turn-helix structural extension that is unique to SNX5, SNX6, and the brain-specific homologue SNX32. A striking degree of evolutionary conservation in the IncE-binding groove suggests that IncE co-opts the SNX5-related molecules by displacing a host protein (as yet unidentified) that normally binds to this site. Our work thus provides both the first mechanistic insights into how protein hijacking is mediated by inclusion membrane proteins, and also sheds light on the functional role of the SNX5-related PX domains as scaffolds for protein complex assembly.\n\n## Results\n\n### IncE specifically binds and recruits SNX5, SNX6 and SNX32 to C.\u00a0trachomatis inclusions\n\nIt was previously shown that the sorting nexins SNX1, SNX2, SNX5 and SNX6 are recruited to the inclusion membrane in C. trachomatis infected cells (Aeberhard et al., 2015; Mirrashidi et al., 2015). We first confirmed this for myc-tagged SNX1, SNX2 and SNX5 in HeLa cells infected with C. trachomatis serovar L2 (MOI\u00a0~0.5) for 18 hr. All three proteins were recruited to the inclusion membrane as assessed by co-localisation with the inclusion marker mCherry-Rab25 (Figure 1B) (Teo et al., 2016), as were GFP-tagged SNX1 and SNX5 but not the more distantly homologous GFP-SNX8 (Figure 1\u2014figure supplement 1A). We also observed localization of the SNX proteins to extensive inclusion-associated membrane tubules in a subset of infected cells as described previously (Figure 1\u2014figure supplement 1B) (Aeberhard et al., 2015; Mirrashidi et al., 2015). Interestingly, when infected cells are treated with wortmannin, a pan-specific inhibitor of phosphoinositide-3-kinase (PI3K) activity, we see a loss of the SNX proteins from punctate endosomes, but not from the inclusion membrane (Figure 1\u2014figure supplement 2; Video 1). A similar result is seen for specific inhibition of PtdIns3P production by Vps34 using Vps34-IN1 (Figure 1\u2014figure supplement 2). This offers two possibilities; that either SNX recruitment to the inclusion occurs via protein-protein interactions, and does not depend on the presence of 3-phosphoinositide lipids that typically recruit SNX proteins to endosomal membranes, or alternatively that PI3Ks are not present at the inclusion and therefore wortmannin treatment has no effect at this particular compartment. Given our structural and mutagenesis studies below we favor the former explanation.\n\n![Video 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-media1.mp4.jpg)\n\n**Video 1.:** HeLa cells stably expressing mCherry-Rab25 (red) were transfected transiently with GFP-SNX5 (green) and infected with Chlamydia trachomatis L2 for 24 hr. Time-lapse videomicroscopy was performed using an interval of 1 min on an inverted Nikon Ti-E deconvolution microscope with environmental control at 40 x magnification. 10 min into recording 100 nM wortmannin was added.\n\nMirrashidi et al. (2015), demonstrated an in vitro interaction between IncE and the SNX5 and SNX6 PX domains. To confirm their direct association we assessed the binding affinities using isothermal titration calorimetry (ITC) (Figure 2A; Table 1). Initial experiments with the human SNX5 and SNX6 PX domains showed robust interactions with the IncE C-terminal domain (residues 107\u2013132). The affinities (Kd) for SNX5 and SNX6 were essentially indistinguishable (0.9 and 1.1 \u00b5M respectively), but we detected no interaction with the PX domain of SNX1 confirming the binding specificity. The PX domains of SNX5 and SNX6 possess a helix-turn-helix structural insert (Koharudin et al., 2009), which is not found in any other SNX family members except for SNX32 (Figure 2B), a homologue expressed primarily in neurons (BioGPS (Wu et al., 2009)). Confirming a common recruitment motif in the SNX5-related proteins, ITC showed a strong interaction between IncE and the SNX32 PX domain similar to SNX5 and SNX6 (Kd\u00a0=\u00a01.0 \u00b5M) (Figure 2A; Table 1), and SNX32 was robustly recruited to inclusion membranes in infected cells (Figure 1B; Figure 1\u2014figure supplement 1A). Overall, our data indicates that a common structure within the SNX5, SNX6 and SNX32 PX domains is required for IncE interaction.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig2-v2.jpg)\n\n**Figure 2.:** (A) Binding affinity between IncE peptide (residues 107\u2013132) and SNX PX domains by ITC. Top panels show raw data and lower panels show normalised integrated data. See Table 1 for the calculated binding parameters. Truncation analyses of the IncE peptide by ITC are shown in Figure 3, Table 2. (B) Sequence alignment of human SNX1, SNX5, SNX6 and SNX32 PX domains. Conserved residues are indicated in red. Side-chains that directly contact IncE in the crystal structure are indicated with black circles. Mutations that block IncE binding are highlighted with red triangles, and mutations that do not affect binding indicated with green circles. Secondary structure elements derived from the SNX5 crystal structure are indicated above. (C) Sequence alignment of IncE from C. trachomatis and putative homologues from C. muridarum and C. suis. IncE side-chains that directly contact SNX5 in the crystal structure are indicated with black circles. Mutations that block SNX5 binding are highlighted with red triangles, and mutations that do not affect binding indicated with green circles. Predicted transmembrane regions are indicated and C-terminal IncE sequences that form \u03b2-strands in complex with SNX5 are shown.\n\n**Table 1.**\n Thermodynamic parameters of IncE binding to SNX PX domains*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample cell</th>\n      <th>Titrant</th>\n      <th>Kd (\u00b5M)</th>\n      <th>\u25b3H (kcal/mol)</th>\n      <th>T\u25b3S (kcal/mol)</th>\n      <th>\u25b3G (kcal/mol)</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SNX5 PX</td>\n      <td>IncE peptide\u2020</td>\n      <td>0.95\u00a0\u00b1\u00a00.07</td>\n      <td>\u22126.9\u00a0\u00b1\u00a00.3</td>\n      <td>\u22121.9\u00a0\u00b1\u00a00.05</td>\n      <td>\u22128.2\u00a0\u00b1\u00a00.01</td>\n      <td>1.01\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>SNX6 PX</td>\n      <td>IncE peptide</td>\n      <td>1.13\u00a0\u00b1\u00a00.08</td>\n      <td>\u22125.0\u00a0\u00b1\u00a00.9</td>\n      <td>\u22123.0\u00a0\u00b1\u00a01</td>\n      <td>\u22128.0\u00a0\u00b1\u00a00.07</td>\n      <td>1.01\u00a0\u00b1\u00a00.08</td>\n    </tr>\n    <tr>\n      <td>SNX32 PX</td>\n      <td>IncE peptide</td>\n      <td>1.15\u00a0\u00b1\u00a00.07</td>\n      <td>\u22126.9\u00a0\u00b1\u00a00.4</td>\n      <td>\u22121.3\u00a0\u00b1\u00a00.8</td>\n      <td>\u22128.2\u00a0\u00b1\u00a00.4</td>\n      <td>1.06\u00a0\u00b1\u00a00.005</td>\n    </tr>\n    <tr>\n      <td>SNX1 PX</td>\n      <td>IncE peptide</td>\n      <td>No binding</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values are the mean from three experiments \u00b1SEM.b.\u2020IncE synthetic peptide sequence PANGPAVQFFKGKNGSADQVILVTQ._\n\nFinally we tested a series of IncE truncation mutants for their binding to the SNX5 PX domain (Figure 3A, B and C; Table 2). Synthetic peptides were used with single amino acids removed sequentially from the N and C-terminus to determine the minimal sequence required for binding. These experiments showed that the shortest region of IncE able to support full binding to SNX5 encompasses residues 110\u2013131 (GPAVQFFKGKNGSADQVILVT), while a shorter fragment containing residues 113\u2013130 (VQFFKGKNGSADQVILV) can bind to SNX5 with a slightly reduced affinity. While variations are observed across the different C. trachomatis serovars (Harris et al., 2012) the SNX5-binding sequence appears to be preserved in all detected variants (Figure 3D). A comparison with other chlamydial species suggests that IncE is not very widely conserved in this Genus, being clearly identifiable only in the closely related mouse pathogen C. muridarum and swine pathogen C. suis (Figure 2C). Residues required for binding to SNX5 are preserved in these IncE homologues, but whether SNX proteins are also recruited during infection by these other chlamydial species remains to be determined.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative ITC experiments for truncated IncE peptides. These experiments were conducted using a single batch of SNX5 PX domain to minimize batch-to-batch protein variation. (B) Plots of the affinity constants for selected peptides to highlight the progressive loss of binding with N and C-terminal truncations. (C) Sequences of the truncated IncE peptides are given, with a qualitative indication of binding strength relative to the IncE_1 peptide containing residues 107\u2013132. Full binding is indicated by \u2018++\u2019 reduced binding by \u2018+\u2019 and lack of binding by \u2018\u2212\u2018. All sequence information and their Kd values are given in Table 2. When compared to the reference ITC experiment the binding affinity of peptides was unaffected when the first three N-terminal residues were removed (IncE_2, IncE_3 and IncE_4) and gradually became weaker until IncE_7, after which binding was abolished. Results from IncE_6 are inconclusive due to the difficulty in successfully dissolving the peptides in buffer (n.d.). C-terminal truncations showed that IncE_14 and IncE_15 had similar high binding affinities to the reference, while the binding of IncE_16 and IncE_17 became progressively weaker and peptides shorter than IncE_17 showed no binding. This data indicates that the minimal IncE binding sequence retaining full SNX5 binding is GPAVQFFKGKNGSADQVILVT, and a shorter fragment VQFFKGKNGSADQVIL can bind to SNX5, albeit with a slightly reduced affinity. (D) Sequence alignment of IncE from different C. trachomatis serovars.\n\n**Table 2.**\n ITC data for SNX5 PX domain binding to truncated and mutated IncE peptides*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>Peptide</th>\n      <th>Sequence</th>\n      <th>Kd (\u00b5M)</th>\n      <th>\u25b3H (kcal/mol)</th>\n      <th>T\u25b3S (kcal/mol)</th>\n      <th>\u25b3G (kcal/mol)</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SNX5 PX</td>\n      <td>IncE_1</td>\n      <td>PANGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>0.95\u00a0\u00b1\u00a00.07</td>\n      <td>\u22126.9\u00a0\u00b1\u00a00.3</td>\n      <td>\u22121.9\u00a0\u00b1\u00a00.05</td>\n      <td>\u22128.2\u00a0\u00b1\u00a00.01</td>\n      <td>1.01\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_2</td>\n      <td>ANGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>1</td>\n      <td>\u22125.0</td>\n      <td>\u22122.6</td>\n      <td>\u22128.1</td>\n      <td>0.98</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_3</td>\n      <td>NGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>0.93</td>\n      <td>\u22126.7</td>\n      <td>\u22121.4</td>\n      <td>\u22128.1</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_4</td>\n      <td>GPAVQFFKGKNGSADQVILVTQ</td>\n      <td>0.87</td>\n      <td>\u22126.8</td>\n      <td>\u22121.2</td>\n      <td>\u22128.2</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_5</td>\n      <td>PAVQFFKGKNGSADQVILVTQ</td>\n      <td>2</td>\n      <td>\u22125.9</td>\n      <td>\u22121.2</td>\n      <td>\u22128.3</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_6</td>\n      <td>AVQFFKGKNGSADQVILVTQ</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_7</td>\n      <td>VQFFKGKNGSADQVILVTQ</td>\n      <td>2.2</td>\n      <td>\u22126.9</td>\n      <td>\u22121.1</td>\n      <td>\u22127.7</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_8</td>\n      <td>QFFKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_9</td>\n      <td>FFKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_10</td>\n      <td>FKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_11</td>\n      <td>KGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_12</td>\n      <td>GKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_13</td>\n      <td>KNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_14</td>\n      <td>PANGPAVQFFKGKNGSADQVILVT</td>\n      <td>0.72</td>\n      <td>\u22125.1</td>\n      <td>\u22121.6</td>\n      <td>\u22128.4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_15</td>\n      <td>PANGPAVQFFKGKNGSADQVILV</td>\n      <td>0.97</td>\n      <td>\u22126.5</td>\n      <td>\u22121.3</td>\n      <td>\u22128.2</td>\n      <td>0.98</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_16</td>\n      <td>PANGPAVQFFKGKNGSADQVIL</td>\n      <td>1.1</td>\n      <td>\u22125.6</td>\n      <td>\u22121.4</td>\n      <td>\u22128.12</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_17</td>\n      <td>PANGPAVQFFKGKNGSADQVI</td>\n      <td>8.7</td>\n      <td>\u22122.7</td>\n      <td>\u22122.5</td>\n      <td>\u22126.9</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_18</td>\n      <td>PANGPAVQFFKGKNGSADQV</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_19</td>\n      <td>PANGPAVQFFKGKNGSADQ</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_20</td>\n      <td>PANGPAVQFFKGKNGSAD</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_21</td>\n      <td>PANGPAVQFFKGKNGSA</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_22</td>\n      <td>PANGPAVQFFKGKNGS</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_23</td>\n      <td>PANGPAVQFFKGKNG</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE_24</td>\n      <td>PANGPAVQFFKGKN</td>\n      <td>No binding</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE Q115A</td>\n      <td>PANGPAVAFFKGKNGSADQVILVTQ</td>\n      <td>6.3</td>\n      <td>\u22125.3</td>\n      <td>\u22121.6</td>\n      <td>\u22126.9</td>\n      <td>0.90</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE F116D</td>\n      <td>PANGPAVQAFKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE K118A</td>\n      <td>PANGPAVQFFAGKNGSADQVILVTQ</td>\n      <td>2.8</td>\n      <td>\u22126.0</td>\n      <td>\u22121.5</td>\n      <td>\u22127.5</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IncE V127D</td>\n      <td>PANGPAVQFFKGKNGSADQDILVTQ</td>\n      <td>No binding</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SNX5 PX L133D</td>\n      <td>IncE_1</td>\n      <td>PANGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SNX5 PX F136A</td>\n      <td>IncE_1</td>\n      <td>PANGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>No binding</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SNX5 PX E144A</td>\n      <td>IncE_1</td>\n      <td>PANGPAVQFFKGKNGSADQVILVTQ</td>\n      <td>15</td>\n      <td>\u22129.9</td>\n      <td>\u22123.1</td>\n      <td>\u221213</td>\n      <td>0.99</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Except for IncE_1 all other peptide-binding experiments were performed only once._\n\n### The crystal structure of IncE in complex with the SNX5 PX domain\n\nThe canonical PX domain structure is composed of a three-stranded \u03b2-sheet (\u03b21, \u03b22 and \u03b23) followed by three close-packed \u03b1-helices. The first and second \u03b1-helices are connected by an extended proline-rich sequence. Typically PX domains have been found to bind to the endosome-enriched lipid phosphatidylinositol-3-phosphate (PtdIns3P) via a basic pocket formed at the junction between the \u03b23 strand, \u03b11 helix and Pro-rich loop. In contrast SNX5, SNX6 and SNX32 possess major alterations in the PtdIns3P-binding pocket that preclude canonical lipid head-group docking (see below). In addition they possess a unique extended helix-turn-helix insert between the Pro-rich loop and \u03b12 helix of unknown function (Figure 2B) (Koharudin et al., 2009).\n\nTo determine the structure of the SNX5-IncE complex we generated a fusion protein encoding the human SNX5 PX domain (residues 22\u2013170) and C. trachomatis IncE C-terminal sequence (residues 108\u2013132) attached at the PX domain C-terminus Figure 4\u2014figure supplement 1A). This construct readily crystallised in several crystal forms, and we were able to determine the structure of the complex in three different spacegroups (Figure 4; Table 3; Figure 4\u2014figure supplement 1B). Confirming that the fusion does not alter complex formation, the short linker region is disordered, and the mode of IncE-binding to SNX5 is identical in all three structures (Figure 4\u2014figure supplement 1C and D). Because of the higher resolution, we focus our discussions on the structure of the SNX5 PX-IncE complex observed in the P212121 crystal form. The first three IncE N-terminal residues (Pro107, Ala108, Asn109) and the last three IncE C-terminal residues (Val130, Thr131, Gln132) were not modeled due to lack of electron density, suggesting disorder and matching precisely with our mapping experiments showing these residues are not necessary for SNX5 association.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig4-v2.jpg)\n\n**Figure 4.:** (A) Crystal structure of the SNX5 PX domain (yellow) in complex with IncE residues 107\u2013132 (magenta) shown in cartoon representation. (B) Backbone atoms of the SNX5 and IncE proteins are shown to highlight the prominent \u03b2-sheet augmentation mediating the association between the two molecules. (C) Close up view of the SNX5-IncE interface highlighting specific contact areas at the N-terminus of the IncE peptide. (D) Close up of the SNX5-IncE interface highlighting specific contact areas at the hairpin loop of the IncE peptide shown at 90\u00b0 to Figure 4C. (E). Close up of the SNX5-IncE interface highlighting contact areas at the C-terminus of the IncE peptide in approximately the same orientation as Figure 4C. Residues in SNX5 (Phe136) and IncE (Phe116) that are critical for binding based on mutagenesis are boxed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Sequence of the SNX5 PX domain fusion protein with the IncE C-terminal peptide. (B) Refined 2fo-fc electron density contoured at 1.5\u03c3 for the SNX5-IncE structure in spacegroup P212121. (C) Overlay of each independent SNX5-IncE complex observed in the three crystal forms. (D) Ribbon structures indicating the locations of the linker regions in each crystal form. The C-terminal SNX5 residues and the N-terminal IncE residues are shown by spheres with distances indicated.\n\n**Table 3.**\n Summary of crystallographic structure determination statistics*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Crystal</th>\n      <th>SNX5 PX-IncE Form 1</th>\n      <th>SNX5 PX-IncE Form 2</th>\n      <th>SNX5 PX-IncE Form 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>5TGI</td>\n      <td>5TGJ</td>\n      <td>5TGH</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.95370</td>\n      <td>0.95370</td>\n      <td>0.95370</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>I2</td>\n      <td>P32</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Cell dimensions</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>60.7, 67.5, 88.2</td>\n      <td>58.4, 80.3, 94.6</td>\n      <td>100.6, 100.6, 71.7</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 97.2, 90</td>\n      <td>90, 90, 120</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>60.7\u20131.98 (2.03\u20131.98)</td>\n      <td>31.9\u20132.6 (2.72\u20132.60)</td>\n      <td>50.3\u20132.80 (2.95\u20132.80)</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.104 (0.525)</td>\n      <td>0.153 (0.659)</td>\n      <td>0.101 (0.713)</td>\n    </tr>\n    <tr>\n      <td>Rmeas</td>\n      <td>0.112 (0.572)</td>\n      <td>0.18 (0.777)</td>\n      <td>0.124 (0.873)</td>\n    </tr>\n    <tr>\n      <td>Rpim</td>\n      <td>0.042 (0.225)</td>\n      <td>0.096 (0.408)</td>\n      <td>0.051 (0.363)</td>\n    </tr>\n    <tr>\n      <td>&lt;I&gt; / \u03c3I</td>\n      <td>12.4 (3.4)</td>\n      <td>39.6 (3.2)</td>\n      <td>11.7 (2.3)</td>\n    </tr>\n    <tr>\n      <td>Total number reflections</td>\n      <td>178868 (11000)</td>\n      <td>46691 (5757)</td>\n      <td>115149 (16861)</td>\n    </tr>\n    <tr>\n      <td>Total unique reflections</td>\n      <td>26075 (1805)</td>\n      <td>13432 (1632)</td>\n      <td>20001 (2923)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>100 (100)</td>\n      <td>99.9 (100.0)</td>\n      <td>100 (100)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>6.9 (6.1)</td>\n      <td>3.5 (3.5)</td>\n      <td>5.8 (5.8)</td>\n    </tr>\n    <tr>\n      <td>Half-set correlation (CC(1/2))</td>\n      <td>0.997 (0.868)</td>\n      <td>0.986 (0.55)</td>\n      <td>0.997 (0.683)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>45.1\u20131.98 (2.02\u20131.98)</td>\n      <td>31.9\u20132.6 (2.69\u20132.60)</td>\n      <td>41.2\u20132.8 (2.87\u20132.80)</td>\n    </tr>\n    <tr>\n      <td>No. reflections/No. Rfree</td>\n      <td>26021/2000</td>\n      <td>13421/1342 (1208/134)</td>\n      <td>19975/1972 (1301/144)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.192/0.214 (0.221/0.246)</td>\n      <td>0.199/0.242 (0.276/0.332)</td>\n      <td>0.236/0.254 (0.329/0.372)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">No. atoms</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2579</td>\n      <td>2619</td>\n      <td>5189</td>\n    </tr>\n    <tr>\n      <td>Solvent</td>\n      <td>281</td>\n      <td>69</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Average B-factor (\u00c52)</td>\n      <td>31.8</td>\n      <td>42.5</td>\n      <td>56.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">R.m.s deviations</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.012</td>\n      <td>0.011</td>\n      <td>0.015</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.27</td>\n      <td>1.15</td>\n      <td>1.27</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Highest resolution shell is shown in parentheses._\n\nThe IncE sequence forms a long \u03b2-hairpin structure that binds within a complementary groove at the base of the extended \u03b1-helical insertion of the SNX5 PX domain and adjacent to the \u03b2-sheet sub-domain (Figure 4A; Video 2). The \u03b2-hairpin structure of IncE (N-terminal \u03b2A and C-terminal \u03b2B strands) is directly incorporated as a \u03b2-sheet augmentation of the \u03b21, \u03b22 and \u03b23 strands of SNX5 (Figure 4B). The N-terminal \u03b2A strand of the IncE sequence (Gly111-Lys118) forms the primary interface with SNX5, making main-chain hydrogen bonds with the \u03b21 strand of the SNX5 PX domain for the stable positioning of the IncE structure. The two anti-parallel \u03b2-strands of IncE are connected by a short loop (Gly119-Ala124) that makes no direct contact with the SNX5 protein, and the C-terminal IncE \u03b2B strand (Asp125-Val130) forms an interface with the extended \u03b1-helical region of the SNX5 PX domain.\n\n![Video 2.](https://cdn.elifesciences.org/articles/22311/elife-22311-media2.mp4.jpg)\n\n**Video 2.:** The SNX5 PX domain is shown in yellow ribbons and the IncE peptide is shown in magenta.\n\nDetailed views of the SNX5-IncE interface are shown in Figure 4C, D and E. Aside from main-chain hydrogen bonding to form the extended \u03b2-sheet, IncE engages in several critical side-chain interactions with the relatively hydrophobic SNX5 binding groove. At the N-terminus of the \u03b2A strand Val114 of IncE inserts into a pocket formed primarily by Tyr132 and Phe136 on the SNX5 \u03b1\u2019\u2019 helix (Figure 4C). A major contribution comes from IncE Phe116, with \u03c0-stacking occurring with the Phe136 side-chain and hydrophobic docking with Val140 of SNX5 (Figure 4D). Adjacent to IncE Phe116 at the end of the \u03b2A strand Lys118 makes an electrostatic contact with SNX5 Glu144. Finally, at the C-terminal end of the IncE \u03b2B strand Val127 and Leu129 contact an extended SNX5 surface composed of Leu133, Tyr132 and Met106 (Figure 4E).\n\n### Mutations in the SNX5-IncE interface disrupt complex formation in vitro and in cells\n\nTo verify the crystal structure we mutated residues from both SNX5 and IncE and measured their affinities using ITC (Figure 5A and B; Table 2). At the interface between SNX5 and IncE several side chains make key contributions to peptide recognition. Because Leu133 and Phe136 residues in SNX5 are located at the core of the IncE-binding interface, and also due to the structural rearrangements these residues make on binding (see below), we reasoned that L133D and F136A mutations would inhibit the interaction. Indeed these mutants abolished association with the IncE peptide (Figure 5A). The reciprocal mutations in IncE residues F116A and V127D also abolished binding to the SNX5 PX domain (Figure 5B), and the SNX6 and SNX32 PX domains (Figure 5\u2014figure supplement 1), demonstrating the importance of these hydrophobic and \u03c0-stacking interactions for stable complex formation. In contrast mutations predicted to disrupt an observed electrostatic contact (IncE K118A or SNX5 E144A) had little effect on binding. Thus the core hydrophobic interactions are critical for IncE binding but the peripheral electrostatic contact is not essential.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig5-v2.jpg)\n\n**Figure 5.:** (A) ITC experiments testing the effect of SNX5 mutations on IncE binding. Both L133D and F136A mutations prevented IncE binding, but the A144A mutation had little effect. (B) ITC experiments testing the effect of IncE mutations on SNX5 binding. Both F116A and V127D blocked SNX5 interaction, while Q115A had a partial effect and K118A had no effect on association.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** ITC experiments testing the effect of IncE peptide mutations on binding to SNX6 and SNX32 PX domains. The IncE F116A mutation blocks interaction with both PX domains similarly to SNX5 (Figure 5B).\n\nTo confirm the role of IncE in direct SNX5 protein recruitment to the chlamydial inclusion we examined the localisation of GFP-tagged SNX5 in HeLa cells infected with C. trachomatis L2 (CTL2) for 24 hr (MOI\u00a0~0.5). Cells expressing the GFP-SNX5 protein showed clear and uniform recruitment to the limiting membrane of the inclusion as defined by mCherry-Rab25 (Figure 6A), which is consistent with the localisation observed by others (Aeberhard et al., 2015; Mirrashidi et al., 2015). In contrast, the GFP-SNX5 (F136A) mutant protein showed no recruitment to the chlamydial inclusion. The change in relative distribution of these GFP-SNX5 proteins on the inclusion was quantified for wildtype SNX5 (Mander\u2019s coefficient 0.67\u00a0\u00b1\u00a00.14) and GFP-SNX5 (F136A) (0.041\u00a0\u00b1\u00a00.051) (Figure 6\u2014figure supplement 1A). Like wild-type GFP-SNX5 the GFP-SNX5 (F136A) mutant was recruited to punctate endosomal structures throughout the cytoplasm of these cells, and in addition was able to co-immunoprecipate endogenous SNX1 in heterodimeric complexes identically to the wild-type GFP-SNX5 protein (Figure 6\u2014figure supplement 1B). This implies that BAR-domain mediated heterodimer formation with SNX1 or SNX2 is required for endosomal recruitment, and is not perturbed by the IncE-binding mutation in the PX domain. Lastly, we tested the importance of IncE residues for SNX interaction in situ by expressing the GFP-tagged IncE C-terminal domain. The wild-type GFP-IncE(91-132) was recruited to endosomal structures via its interaction with SNX5-related proteins in both uninfected and infected HeLa cells (Figure 6B; Figure 6\u2014figure supplement 1C). In contrast however, GFP-IncE(91-132)(F116D), a SNX5-binding mutant, was exclusively cytosolic. Note that neither IncE construct is localised to the inclusion, as expected due to lack of signal peptides and transmembrane domains (Figure 6\u2014figure supplement 1C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig6-v2.jpg)\n\n**Figure 6.:** (A) Single amino-acid mutation in the PX domain of the SNX5 (F136A) abolishes recruitment to the chlamydial inclusion. HeLa cells stably expressing mCherry-Rab25 (red) were transfected transiently with GFP-SNX5 or GFP-SNX5 (F136A) (green) and infected with Chlamydia trachomatis L2 for 18\u201324 hr. The cells were fixed and the nucleic materials were counter-stained with DAPI (blue). (B) HeLa cells were transfected transiently with GFP-IncE(91-132) or GFP-IncE(91-132)(F116D) (green) and co-labelled for the early endosomal marker EEA1 (red). Mutation in the SNX5 binding IncE peptide (F116D) abolishes recruitment to endosomal structures. *Represents the inclusion. Scale bar 20 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Quantitation of the degree of overlap between the GFP-SNX5 constructs and the mCherry-Rab25 inclusion membrane marker from Figure 6A. Mander\u2019s correlation coefficient of mChRab25 signal over GFP-SNX5 signals (10 cells per group; error bars, S.D). (B) Co-immunoprecipitation of GFP-SNX5 from HeLa cells shows that both the wild-type and mutant protein (F136A) interact equally with endogenous SNX1. This indicates that both proteins are correctly folded and otherwise functional. (C) HeLa cells stably expressing mCherry-Rab25 (red) were transfected transiently with GFP-IncE(91-132) or GFP-IncE(91-132)(F116D) (green) and infected with C. trachomatis L2 for 18\u201324 hr. Mutation in the SNX5 binding IncE peptide (F116D) abolishes recruitment to endosomal structures. Neither construct is recruited to inclusions, which is consistent with the lack of transmembrane regions. *Represents the inclusion. Scale bar 20 \u03bcm.\n\n### A model for SNX-BAR recruitment to the inclusion membrane by IncE\n\nSuperposition of the SNX5-IncE complex with the SNX5 PX domain in the apo state (Koharudin et al., 2009) reveals a significant conformational change in the \u03b1-helical extension, as well as localized alterations in the loop between the \u03b21 and \u03b22 strands to accommodate peptide binding (Figure 7A). In essence the IncE \u03b2-hairpin acts as a tether between the core PX fold and extended \u03b1-helical hairpin, pulling the two sub-structures closer together. Overall the \u03b1-helical extension undergoes a maximal movement of\u00a0~8\u201310 \u00c5 at the furthest tip, facilitated by the flexibility of the structure following the Pro-rich linker and an apparent hinge-point at Pro97 (Figure 7A upper panel). In the immediate vicinity of Pro97 the SNX5 loop that encompasses Asp43 is significantly shifted and stabilized by the repositioning of Arg103. At both the start of the first \u03b1\u2019 helix of the extension and the end of the second \u03b1\u2019\u2019 helix more subtle changes occur in the positions of Met106, Leu128, Tyr132, Leu133 and Phe136. These changes result in formation of the hydrophobic pocket that engages the IncE side-chains Val114, Phe116, Val127 and Leu129 (Figure 7A, middle and lower panels).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22311/elife-22311-fig7-v2.jpg)\n\n**Figure 7.:** (A) Comparison of the SNX5-IncE complex (yellow-magenta) with the previously reported apo- SNX5 PX domain crystal structure (blue) (PDB ID 3HPB)(Koharudin et al., 2009). The \u03b1-helical extension undergoes a significant displacement in the bound state. The enlarged panels to the right show several close-up views of the binding pocket highlighting conformational changes that are required to accommodate IncE. (B) A model for the SNX5-SNX1 PX-BAR heterodimer and its interaction with IncE at the inclusion membrane. The PX-BAR structure was modeled in silico (see methods). The left panel shows cartoon representations of the structure, viewed from the side and from the membrane surface. Middle panels show the same structures in electrostatic surface representation (red, negative; blue positive). The right panels show close ups of the putative PtdIns3P-binding pocket in SNX1 and SNX5, with a PtdIns3P head-group (shown in spheres) docked by aligning the previous SNX9 crystal structure (Pylypenko et al., 2007). SNX1 has a canonical PtdIns3P pocket, while SNX5 lacks a clear site for lipid head-group binding. (C) Sequence conservation of SNX5-related proteins was calculated and plotted using CONSURF. The surface representation indicates exposed side-chains that are evolutionarily conserved in green. The IncE peptide binds to a highly conserved surface groove, while the putative phosphoinositide binding region (Koharudin et al., 2009) on the opposite face is neither highly conserved nor poised to allow docking. (D) Cartoon model depicting the recruitment of SNX5 and related proteins to the inclusion membrane. Heterodimers with SNX1 or SNX2 will be recruited via IncE in infected cells, and this recruitment will be in competition with the binding of SNX1 and SNX2 to PtdIns3P for normal endosomal association, as well as interactions with other proteins including retromer and unidentified molecules that potentially bind to the conserved groove of the SNX5 PX domain.\n\nTo better understand how IncE can recruit the SNX5-containing SNX-BAR complexes to inclusion membranes we constructed an in silico model of the SNX5-SNX1 heterodimeric PX-BAR proteins (Figure 7B). Consistent with the length of the IncE C-terminal cytoplasmic sequence the model predicts that the IncE sequence will bind to the surface of SNX5 close to, but oriented away from, the inclusion membrane. While PX domains are commonly able to recognise PtdIns3P lipid headgroups, SNX5-related proteins lack the typical binding pocket (Figure 7B right panel), and there is some controversy regarding their ability to mediate specific membrane interactions (Koharudin et al., 2009; Teasdale and Collins, 2012). We propose that in the context of C. trachomatis infection, SNX5-related proteins are directly associated with the inclusion via IncE protein-protein interactions in a phosphoinositide-independent manner, and are able to recruit their heterodimeric partners SNX1 and SNX2 (Sierecki et al., 2014; van Weering et al., 2012; Wassmer et al., 2009). The PX-BAR-domain containing complexes are then localised to the inclusion in a retromer-independent manner (Mirrashidi et al., 2015), and may contribute to the formation of the dynamic inclusion-associated membrane tubules.\n\nInterestingly, when a cross-species evolutionary analysis of side-chain conservation in the SNX5-related proteins is performed it is clear that the IncE peptide binds a hydrophobic surface groove that is strictly conserved in this protein family (Figure 7C). This very strongly implies that the site is normally engaged in a protein-protein interaction with an as yet unidentified binding partner(s) required for SNX5\u2019s regular biological function, and that IncE is directly competing for this interface.\n\n## Discussion\n\nAlthough more than fifty putative Incs have been identified in C. trachomatis, the exact roles of these inclusion membrane proteins are still poorly understood. Chlamydiae manipulate the host cellular and signaling networks via interactions between the cytoplasmic region of Incs and numerous host cell proteins. Recent studies reported retrograde trafficking proteins as significant components of the inclusion, with sorting nexin family members being particularly enriched (Aeberhard et al., 2015; Mirrashidi et al., 2015). In this study, we present the first reported crystal structure of a chlamydial inclusion protein (IncE) binding to its host effector protein (SNX5). While the detailed mechanism of IncE-mediated protein recruitment will be specific to this family member, the principle of extended cytoplasmic Inc sequences engaging with cellular host proteins on the inclusion is certain to be a general one. A simple analogy would be to consider the Inc proteins as being like a molecular \u2018velcro\u2019 that recognises and attaches host machinery needed for bacterial replication and survival.\n\nThe manipulation of endocytic transport machinery is clearly critical for the obligate intracellular survival of C. trachomatis (Aeberhard et al., 2015; Mirrashidi et al., 2015; Moore and Ouellette, 2014). In addition to C. trachomatis, SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have also been directly implicated in the cellular pathogenesis of Coxiella burnetii (McDonough et al., 2013), Salmonella enterica serovar Typhimurium (Bujny et al., 2008), hepatitis C virus (Yin et al., 2016), human papilloma virus (Ganti et al., 2016; Popa et al., 2015), and Legionella pneumophila (Finsel et al., 2013). Broadly then the manipulation of SNX proteins and endosomal trafficking machinery by viral and bacterial pathogens is a common occurrence during intracellular infection, and points to a wide-ranging role in host-pathogen interactions.\n\nTypically PX domains of sorting nexins, including SNX1 and SNX2 (Cozier et al., 2002; Zhong et al., 2005), play an important role in endosomal membrane recruitment by binding the endosome-enriched lipid PtdIns3P through four conserved residues (Mas et al., 2014; Teasdale and Collins, 2012). These residues are conserved in most PX domains including in SNX1 and SNX2, but are entirely absent in SNX5, SNX6 and SNX32. Although there is evidence for the weak association of the SNX5 PX domain with the lipid PtdIns(4,5)P2 from nuclear magnetic resonance (NMR) spectroscopy experiments (Koharudin et al., 2009), the crystal structure does not point to a clear binding mechanism. A second feature that sets SNX5-related proteins apart from the rest of the SNX family is the presence of an extended \u03b1-helical insertion. Our work confirms the central importance of this unique insert for the binding of the IncE inclusion protein, and provides the first clear description of how a PX domain can function as a protein-protein interaction scaffold as opposed to a lipid-binding domain.\n\nThe high degree of conservation in the IncE binding surface of SNX5 implies that this site is critical for the normal function of SNX5 and its homologs. Previously, the expression of a GFP-tagged IncE C-terminal domain was shown to interfere with the SNX5/SNX6-dependent retrograde trafficking of the cation-independent mannose-6-phosphate receptor (CI-MPR) (Mirrashidi et al., 2015). Combined with our structural data, this infers that IncE is mimicking and interfering with SNX5/SNX6-mediated protein interactions, with a ligand(s) required for normal endosomal trafficking that remains to be discovered. Once recruited to the inclusion, SNX-BAR proteins are localized to the bulk membrane and dynamic tubules. While it is logical to imagine they could play a positive role in the sculpting of the inclusion, this is somewhat difficult to reconcile with the effect of SNX5 and SNX6 knockdown, which results in an increased production of C. trachomatis infectious progeny. Alternatively, although a pool of SNX5/SNX6 and associated SNX1/SNX2 proteins remain on endosomes in C. trachomatis infected cells, their sequestering by the chlamydial inclusion may interfere with normal endosomal trafficking (Figure 7D). It was thus proposed that the role of IncE could be to compete for SNX-retromer endosomal interactions, resulting in the breakdown of normal trafficking of the CI-MPR and lysosomal hydrolases and hence perturbation of the endolysosomal system\u2019s capacity for bacterial destruction (Aeberhard et al., 2015; Mirrashidi et al., 2015). Defining the precise role of SNX proteins and other endocytic machinery in chlamydial infection will clearly require further study.\n\nIn conclusion, our work provides novel molecular insights into the mechanism of SNX protein coercion by the IncE chlamydial effector, and presents a blueprint for future studies of other inclusion protein activities. In addition, our results provide a possible clue to understanding how SNX5-related molecules mediate protein interactions required for canonical cell trafficking pathways.\n\n## Materials and methods\n\n### Peptides\n\nAll synthetic peptides used for isothermal titration were purchased from Genscript (USA). For ITC experiments, peptides were weighed and dissolved in 50 mM Tris (pH 8.0) and 100 mM NaCl (ITC buffer) to make a stock peptide concentration of 2 mM, which was diluted to 0.75 mM before use.\n\n### Antibodies and reagents\n\nPolyclonal antibodies against C. trachomatis HtrA were generated previously (Huston et al., 2008). Monoclonal antibodies against EEA1 (610457, 1:100), SNX1 (611483,1:200) and SNX2 (611308, 1:200) were supplied by BD Bioscience. Monoclonal antibodies against the myc epiptope (9B11, 1:2000) were supplied by Abcam. Rabbit polyclonal antibodies against GFP (A-6455, 1:500) were purchased from Molecular Probes (Invitrogen). Rabbit polyclonal antibodies against Rab5 (C8B1, 1:100) were from Cell Signaling Technology. Goat polyclonal antibodies against Vps35 (IMG-3575, 1:400) were from Imgenex. Secondary antibodies were purchased from Molecular Probes (Life Technologies) and Li-Cor Bioscience. Wortmannin was supplied by Sigma-Aldrich (W1628). VPS34-In1 was from Merck Millipore (532628).\n\n### Molecular biology and expression constructs\n\nThe IncE sequence used in this study is from the L3 serovar L3/404/LN (NCBI reference WP_015506602) (Harris et al., 2012). The pGEX-4T-2 bacterial expression plasmid encoding the human SNX5 PX domain (residues 22\u2013170) was generated using a standard PCR-based cloning strategy, and its identity confirmed by sequencing. All other bacterial expression constructs for human SNX proteins were synthesized and cloned into pGEX-4T-2 by Genscript (USA). These included the SNX5 PX domain IncE fusion (SNX5 residues 22\u2013170 with IncE residues 108\u2013132 fused at the C-terminus (Figure 4\u2014figure supplement 1A), SNX6 (residues 29\u2013170), SNX32 (residues 17\u2013166), and SNX5 PX domain mutants. The pcDNA3.1-N-eGFP mammalian expression constructs encoding full-length human SNX5, SNX5(F136A), IncE(91-132) and IncE(91-132)(F116D) with N-terminal GFP-tags were generated by Genscript (USA). The pCMU-myc-SNX5 was as described previously (Kerr et al., 2006), and the SNX6 and SNX32 genes cloned into the pcDNA3.1-nMyc vector at BamHI and XhoI restriction sites (Kerr et al., 2012). SNX5, SNX32 and SNX8 were also cloned by polymerase chain reaction, restriction digest and ligation into pEGFP-C1 for expression with N-terminal GFP tags as described previously (Wang et al., 2010).\n\n### Recombinant protein expression and purification\n\nAll proteins except SNX5 PX domain mutants were expressed in Escherichia coli Rosetta cells, whereas mutant constructs were expressed in BL21 Codon Plus supplemented with appropriate antibiotics. Single colonies from cultures grown on LB agar plates were inoculated into 50 mL LB2+ with ampicillin (0.1 mg/mL) and chloramphenicol (0.1 mg/mL), and grown at 37\u00b0C with shaking overnight. The following day, 30 mL from the overnight culture was used to inoculate 1 L LB media containing ampicillin (0.1 mg/mL) and chloramphenicol (0.1 mg/mL) and incubated at 37\u00b0C. Cells were grown to an optical density (OD) of 0.5\u20130.6 at 600 nm and induced with 0.5 mM isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) (except for the SNX5-IncE fusion, where expression was induced at OD600 of 0.8 with 1 mM IPTG). Cultures were incubated with shaking overnight at 18\u00b0C until the cells reach an O.D of 3.0 (~24 hr). Cells were harvested using a Beckman rotor JLA 8.1000 at 4000 RPM for 30 min at 4\u00b0C. Pellets were resuspended in 10 mL lysis buffer (50 mM Tris (pH 8.0), 100 mM NaCl, 5% glycerol, 1 mM DTT, 0.1 mg/ml benzamidine, 0.1 mg/ml DNase) per litre of culture. The cells were subjected to cell disruption and centrifugation at 18,000 RPM for 30 min at 4\u00b0C. The soluble fractions were first purified using affinity chromatography with glutathione-sepharose, and when required the GST tags were cleaved by thrombin while still bound to the column. The proteins were eluted in 50 mM Tris (pH 8.0), 100 mM NaCl, 5% glycerol, and 1 mM DTT, and then further polished using gel filtration chromatography (Superdex 200, GE healthcare) in a buffer containing 50 mM Tris (pH 8.0), 100 mM NaCl. The fractions corresponding to the respective proteins were then pooled and used directly for ITC or were further concentrated for crystallization.\n\n### Isothermal titration calorimetry\n\nITC experiments were performed on a Microcal iTC200 instrument at 25\u00b0C. The proteins were buffer exchanged into ITC buffer (50 mM Tris (pH 8.0) and 100 mM NaCl) by gel filtration prior to ITC experiments. IncE peptides at 750 \u00b5M were titrated into 50 \u00b5M PX domain samples. The binding data was processed using ORIGIN 7.0 with a single site binding model to determine the stoichiometry (n), the equilibrium association constant Ka (1/Kd), and the enthalpy (\u25b3H). The Gibbs free energy (\u25b3G) was calculated using the equation \u25b3G = \u2212RTIn(Ka); binding entropy (\u25b3S) was calculated by \u25b3G = \u25b3H \u2013 T\u25b3S. Three experiments were performed for each set of samples to determine the average \u00b1 standard error of the mean (SEM) for thermodynamic quantities, except for the peptide truncation experiments where only single experiments were performed. For these truncated peptide experiments, all experiments were performed using the same batch of protein to allow direct comparions to be made.\n\n### Crystallization, data collection and structure determination\n\nThe SNX5 PX domain fusion with IncE was concentrated to 15 mg/ml for crystallization. Eight 96-well crystallization hanging-drop screens were set up using a Mosquito Liquid Handling robot (TTP LabTech) at 20\u00b0C. Optimized diffraction-quality crystals were obtained using streak seeding in sitting drop vapor diffusion plates. The crystallisation solution for crystal form 1 was 0.2 M KSCN, 25% PEG 2K MME, 100 mM sodium acetate (pH 5.5), for crystal form 2 was 0.1 M NaCl, 0.1 M MgCl2, 0.1 M Nacitrate (pH 3.5), 12 % PEG 4000, and for crystal form 3 was 1.26 M (NH4)2SO4, acetate (pH 4.5), 0.2 M NaCl. Data were collected at the Australian Synchrotron MX1 and MX2 Beamlines, integrated with iMOSFLM (Battye et al., 2011), and scaled with AIMLESS (Evans and Murshudov, 2013) in the CCP4 suite (Winn et al., 2011). The structures were initially solved by molecular replacement with PHASER (McCoy et al., 2007) using the apo-SNX5 PX domain crystal structure as the input model (PDB code 3HPB), minus the extended \u03b1-helical domain. The resulting model was rebuilt with COOT (Emsley et al., 2010), followed by repeated rounds of refinement with PHENIX (Adams et al., 2011). All structural figures were generated using PyMOL (DeLano scientific).\n\n### Cell culture and transfections\n\nHeLa cells stably expressing mCherry-Rab25 were previously generated within the lab (Teo et al., 2016) and were maintained in DMEM (Gibco) supplemented with 10% (v/v) FCS (Bovogen) and 2 mM L-glutamine (Invitrogen) in a humidified air/atmosphere (5% CO2) at 37\u00b0C. Cells were transfected at 70% confluence with pcDNA3.1-N-eGFP plasmid constructs using Lipofectamine 2000 as per manufacturer\u2019s protocol (Invitrogen) and examined 18\u201324 hr later. The HeLa cell line used in this study was from America Type Culture Collection (#ATCC CCL2). Parental and stable cells lines were negative for mycoplasma by DAPI staining, and authenticated by STR profiling (Cell Bank Australia). For inhibitor treatments, cells were treated with either 100 nM wortmannin or 1 \u00b5M Vps34-IN1 for 1 hr.\n\n### Chlamydial infection assays\n\nC.C. trachomatis serovar L2 (ATCC VR-902B) was used to infect cells at a multiplicity of infection (MOI) of\u00a0~0.5. Cells were infected 2 hr post-transfection in normal DMEM (Gibco) supplemented with 10% (v/v) FCS (Bovogen) and 2 mM L-glutamine (Invitrogen) in a humidified air/atmosphere (5% CO2) incubator at 37\u00b0C. After 2 hr media was replaced with fresh media.\n\n### Microscopy\n\nTransfected and infected cells (18\u201324 hr post-infection) were fixed with 4% paraformaldehyde, permeabilised using TritonX-100 (Sigma) and immunolabeled as described previously (Teo et al., 2016) and counter-stained with DAPI. The coverslips were imaged using a confocal laser-scanning microscope (LSM 710 meta, Zeiss) with 63x oil immersion objective. Time-lapse videomicroscopy was carried out on individual live cells using a Nikon Ti-E inverted deconvolution microscope using a 40x, 0.9 Plan Apo DIC objective, a Hamamatsu Flash 4.0 4Mp sCMOS monochrome camera and 37\u00b0C incubated chamber with 5% CO2. GFP was excited with a 485/20 nm LED and captured using a 525/30 nm emission filter, and mCherry was excited using a 560/25 nm LED and captured using a 607/36 nm emission filter. Data was processed using ImageJ (https://imagej.nih.gov/ij/) and compiled using Adobe Illustrator CS6.\n\n### Image quantification\n\nThe immunofluorescence colocalisation of GFP-SNX5 with chlamydial inclusion membranes (Figure 6A; Figure 6\u2014figure supplement 1A) imaged on a confocal microscope was measured by Mander\u2019s correlation coefficient of red pixel (EEA1 or mCherry-Rab25) over green pixel (GFP-SNX5) signals, which were determined using ImageJ (https://imagej.nih.gov/ij/) with the JACoP plugin (Bolte and Cordeli\u00e8res, 2006). Punctate structures were automatically counted using ImageJ analyse particle tool across total of 10 cells from two biological replicates. To quantify the effect of PI3K inhibitors on SNX recruitment (Figure 1\u2014figure supplement 2), Z-stacks were captured with a Zeiss 710 confocal laser scanning microscope using a 40x objective. Maximum projections were generated with FIJI (https://fiji.sc/) and Pearson\u2019s correlation coefficients for individual cells determined using the FIJI \u2018Coloc 2\u2019 function with Costes threshold regression and 100 Costes randomisations. Co-localization analyses were conducted on two independent experiments from five images per condition each containing at least 20 cells (>100 cells analysed per condition).\n\n### Co-precipitation of GFP-SNX5 and endogenous SNX1\n\nHeLa cells were transfected with pcDNA3.1-N-eGFP plasmid constructs overnight at 70% confluence and the cells were lysed using lysis buffer (H2O, 50 mM HEPES, 150 mM NaCl, 1% Triton-X100, 10 mM Na4P2O7, 30 mM NaF, 2 mM Na3VO4, 10 mM EDTA, 0.5 mM AEBSF and protease inhibitor cocktail). Cell lysates were incubated with GFP nano-trap agarose beads (Protein Expression Facility, UQ) after preclear using protein G-agarose beads (Invitrogen). Protein complexes attached to the beads were detached by boiling for 5 min with 5x denaturing and reducing buffer (0.625 M Tris pH 6.8, 50% glycerol, 10% SDS, 0.25% Bromophenol blue and 500 mM DTT). Denatured and reduced proteins were separated by molecular mass using SDS-PAGE. Proteins were transferred onto PVDF-FL membrane (Immobilon) and were detected by immunoblotting with polyclonal anti-GFP and monoclonal SNX1 antibodies, and near-infrared fluorescent dyes (LI-COR). Immunolabelled proteins were visualised using LI-COR Odyssey imaging system.\n\n### Modelling of the SNX5-SNX1 heterodimer\n\nHuman SNX5 and SNX1 sequences were submitted to the PHYRE2 server for automated homology-based model building (Kelley et al., 2015). For both proteins the top scoring modelling template was the crystal structure of the SNX9 PX-BAR domains (PDB ID 2RAJ) (Pylypenko et al., 2007) with Confidence Scores of 100% (and sequence identities of 19% and 16% respectively). The PX domain of the SNX5 model generated using this structural template was missing the extended \u03b1-helical insert, so to complete the model the SNX5 PX domain-IncE complex was substituted and a dimer of SNX5 and SNX1 PX-BAR domains generated by overlaying with the SNX9 dimer in the PtdIns3P-bound state (PDB ID 2RAK) (Pylypenko et al., 2007). The resulting model was subjected to simple energy minimisation in PHENIX (Adams et al., 2011). Conservation of surface residues was computed using the CONSURF server (Ashkenazy et al., 2016).\n\n### Data deposition\n\nStructural data are deposited in the protein data bank (PDB) under accession numbers 5TGI, 5TGJ, and 5TGH. Raw diffraction images are available on the University of Queensland eSPACE server (http://espace.library.uq.edu.au/view/UQ:409277).\n",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "ea23617a-04d5-4b2f-b375-cfd661681c77",
+      "submission_id": "3cead550-7ace-4e32-958f-9dc206c0c611",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22311.028](https://doi.org/10.7554/eLife.22311.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structural basis for the hijacking of endosomal sorting nexin proteins by Chlamydia trachomatis\" for consideration by eLife. You will be pleased to learn that your article has been favorably reviewed by three peer reviewers, one of whom, Suzanna Pfeffer, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor. The other following individuals involved in review of your submission have agreed to reveal their identity: Oliver Daumke and Volker Haucke.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nUsing quantitative proteomics, Heuer and colleagues previously found that SNX 5 and certain other SNX proteins are enriched on Chlamydia inclusions; in particular, SNX5 controls the C. trachomatis infection and retrograde trafficking is essential for infectious progeny formation. Engel and colleagues reported similar findings and more specifically, that the C-terminal portion of IncE binds to sorting nexins (SNXs) 5/6 of the retromer. Both reports showed that depletion of retromer components enhances progeny production, indicating that Chlamydia may hijack retromer to avoid degradative trafficking.\n\nThis manuscript reports the crystal structure of IncE C-terminal residues in complex with the PX domain of SNX5; in addition, it presents a protein binding interface for a PX domain in a subfamily of PX domain proteins that does not contain a functional phosphoinositide binding domain. Comparable binding affinity is seen for SNX 5, 6 and 32 PX domains but not that of SNX1. The story is compact and of high quality; it is an interesting variation on a theme of Chlamydial hijacking and the reviewers support presentation in eLife because it highlights an interesting biological interaction of medical importance: the elucidation of the molecular basis for hijacking of endosomal SNX5/6 and possibly 32 by bacterial IncE is important and of interest to the readers of eLife. Overall, the data support the main conclusions of the paper, however a few aspects should be strengthened by a few straightforward, additional experiments.\n\n1) The authors provide qualitative data (e.g. Figure 4) from overexpression experiments in Chlamydia infected HeLa cells as an assay for IncE-mediated GFP-SNX5 recruitment. The staining in Figure 4 is hard to see and quantitative image analysis from multiple experiments will greatly strengthen the present story. The presence of endogenous endosomal SNX proteins that may interfere with recruitment and result in additional effects (e.g. as they may heterodimerize) that make the results difficult to interpret. Thus it would be worth testing IncE-mediated recruitment of SNX5 to bacterial inclusions using quantitative image analysis in HeLa cells depleted of endogenous SNX5/6/32 that express wt or mutant versions of SNX5 to verify the conclusions from transient overexpression and qualitative imaging. Moreover, do the mutations in the IncE binding interface equally hamper recruitment of SNX6 and SNX32, similar to what is seen for SNX5? Are other endogenous SNX proteins co-recruited to the inclusion in this case?\n\n2) Figure 3 would benefit from rearrangement and clearer labels. The authors may consider splitting panel C into three separate panels that are the easier to refer to in the main text. Moreover, critical amino acids delineating the SNX5 interface for IncE binding should be highlighted: Yellow labels of amino acids are difficult to see. Moreover, a different view of the interface from another angle may help to bring the message across. In 3C, maybe remove the non-relevant background and shades. The orientation of the magnifications relative to Figure 3A is not clear; for better orientation, indicate the deduced membrane binding site of the PX domain.\n\n3) Regarding the role of PI3P in SNX5 recruitment: The text in the Results section refers to Figure 1\u2014figure supplement 2, which is missing from the PDF. As for the data shown in Figure 4 please re-investigate the role of endosomal PI3P by quantitative image analysis and application of available selective Vps34 inhibitors (e.g. Vps34-IN1). Finally, split and merged channels as well as blow-ups should be shown in the actual figure to bring across this important point.\n\n4) In Tables 1 and 2Kds are given as \u03bcm concentrations, whereas in Figure 2B molar concentrations are plotted. This is somewhat confusing. I suggest to use \u03bcm throughout.\n\nFigure 5B: It is difficult to recognize the modeled head group. Better use a space filling representation; Figure 5C should be made clearer to help the reader compare the presence and absence of a phosphoinositide binding site.\n\nPlease include magnification bars in all micrographs; the word data is plural.\n\nResults section, third paragraph, should refer to Figure 1E, not 1G.\n\nFigure 2B \u2013 Instead of affinity constants, better indicate Kds, which are more familiar to the casual reader.\n\nResults section, Figure 3 \u2013 Fusion protein\n\nThe fusion protein should be more precisely described in the Results and Materials and Methods. How long is the linker, is the connection between C-terminus of PX domain and N-terminus of IncE long enough to account for the connection? Is the linker still intact upon crystallization? Are residues of the linker resolved in the crystal structure? Include the linker as dotted line in Figure 3A.\n\nFigure 4C in referred to as Figure 4B in the figure legend, and Figure 4B as Figure 4C.\n\nDoes the superimposition in Figure 3\u2014figure supplement 1B really include all 8 independent complexes found in the three crystal forms? It looks like only three complexes were superimposed.\n\nTable 3: Average B-factor is missing for PDB 5TG1.\n\nTable 3: Why is there such a huge gap in Rwork/Rfree for 5TGJ. Is this model fully refined?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structural basis for the hijacking of endosomal sorting nexin proteins by Chlamydia trachomatis\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. Although eLife tries very hard not to ask for extra, unnecessary experiments, the reviewers did not feel that you had adequately address their concerns about the presentation and quantification of the images as described below. We would like to be able to publish this story when you are able to address these issues satisfactorily and will welcome one last round of revision before we reach a binding decision.\n\nReviewer #1\n\nUnfortunately, the authors have really not adequately improved the quality or the quantification of the micrographs. I strongly suggest that the micrographs be shown as individual figures with larger images, and we need to know how many cells were counted and how the analyses were carried out before we can publish the story. I hate to ask for more work but the images are an important part of the overall proposal.\n\nNot sure how the authors came up with number of structures with 3 significant figures. The quantitative cell biological analyses have not been described.\n\nTypo in in Introduction section:\n\n\u201cA fifth protein SNX32 is highly similar to SNX5 and 'SNX6'.\u201d\n\nReviewer #3\n\nI have to say that I remain unsatisfied with the way the authors have addressed the questions regarding the binding properties and cellular localization of mutant SNX5. All they have done is adding some Mander's colocalization coefficient, but it is unclear from how many cells and how many independent experiments these are derived. More importantly, I would still like to see formal proof that the F136A mutation does not impair SNX5-SNX1 (or 2) heterodimer formation in vitro and its localization at endosomes in mammalian cells assayed quantitatively. This in my view is required to support the corresponding statement in the text. Also, some better high mag colocalization images illustrating SNX5 WT and mutant targeting to endosomes would help to convince readers of the paper.\n\nLikewise, my comment (#5 in the original review) regarding quantitative image analysis regarding effects of PI3K inhibition has not been addressed really.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structural basis for the hijacking of endosomal sorting nexin proteins by Chlamydia trachomatis\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior editor), a Reviewing editor, and an additional reviewer. You will be pleased to learn that the reviewers found the revised manuscript to be much improved, and if you are able to make the following minor corrections, they have recommended in favor of publication in eLife.\n\nThe remaining issues that need to be addressed before acceptance, are as follows:\n\nIt appears that the statistical analysis of protein co-localization in Figure 1\u2014figure supplement 2 and Figure 6\u2014figure supplement 1 is based on the number of cells analyzed: 10 cells per condition \u2013 a fairly low number \u2013 which the authors say to derive from 2 independent experiments. According to convention in experimental biology individual cells from a cell line cannot be considered n for statistical analysis. Hence, n in fact equals \"2\" in this case, which does not allow for statistical testing by either parametric or non-parametric tests. However, as the phenotypes are clear-cut and in the interest of timely publication we recommend simply eliminating the statistical test from the figure, legend, and the text and simply leave the bar diagrams including error bars as a means of quantitation.\n\nA last minor point: The heading of Figure 5 should read \"Mutations [\u2026] formation in vitro\" (e.g. delete \"and in cells\") as no cell data are contained in the respective figure. Provided these small changes we recommend acceptance and congratulate the authors on this nice piece of work.\n",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb097ab8-0f04-4939-834f-3dcbfd1828e4",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C1",
+      "claim": "Chlamydia trachomatis causes nearly 100 million sexually transmitted infections annually worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "C. trachomatis causes nearly 100 million sexually transmitted infections annually worldwide, and if left unchecked leads to various human diseases including infection-induced blindness, pelvic inflammatory disease, infertility and ectopic pregnancy (Aral et al., 2006; Newman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Aral et al., 2006; Newman et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "75a529ba-7b18-45fa-89a5-b5443cd1650e",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C2",
+      "claim": "C. trachomatis infection can lead to infection-induced blindness, pelvic inflammatory disease, infertility and ectopic pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "C. trachomatis causes nearly 100 million sexually transmitted infections annually worldwide, and if left unchecked leads to various human diseases including infection-induced blindness, pelvic inflammatory disease, infertility and ectopic pregnancy (Aral et al., 2006; Newman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Aral et al., 2006; Newman et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "fa52351d-efd8-48ba-9d7b-5fa8b283344d",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C3",
+      "claim": "Chlamydial infections can generally be treated with antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though chlamydial infections can generally be treated with antibiotics, persistent infections remain a challenge (Kohlhoff and Hammerschlag, 2015; Mpiga and Ravaoarinoro, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Kohlhoff and Hammerschlag, 2015; Mpiga and Ravaoarinoro, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "ddcea0d4-c48d-432a-8ae1-9ccafcaf07bc",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C4",
+      "claim": "Persistent chlamydial infections remain a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though chlamydial infections can generally be treated with antibiotics, persistent infections remain a challenge (Kohlhoff and Hammerschlag, 2015; Mpiga and Ravaoarinoro, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Kohlhoff and Hammerschlag, 2015; Mpiga and Ravaoarinoro, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "387f454f-ab1e-4bb8-9cbe-d1750cd56aa9",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C5",
+      "claim": "All Chlamydiae share a common dimorphic life cycle where bacteria alternate between infectious but non-dividing elementary body (EB) form and non-infectious but replicative reticulate body (RB) form.",
+      "claim_type": "EXPLICIT",
+      "source": "All Chlamydiae share a common dimorphic life cycle, where the bacteria alternates between the infectious but non-dividing elementary body (EB) form, and the non-infectious but replicative reticulate body (RB) form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about chlamydial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "909e4b49-4812-49f5-89ad-654e8ac5a80b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C6",
+      "claim": "Following internalization of EBs, bacteria reside in a membrane-bound vacuole termed the inclusion where they convert into RBs and replication occurs over 24\u201372 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Following internalization of EBs through a poorly defined endocytic process, the bacteria reside in a membrane-bound vacuole termed the inclusion, where they convert into RBs and replication occurs over 24\u201372 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about chlamydial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "e072872a-71ed-434c-8bec-7fe5ff0f80fd",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C7",
+      "claim": "Chlamydiae secrete more than fifty different Inc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Chlamydiae secrete more than fifty different Inc proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about chlamydial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "82ee46f2-b915-4d15-923b-791485d95abb",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C8",
+      "claim": "Incs possess little sequence similarity but share a common membrane topology with cytoplasmic N- and C-terminal domains, separated by two closely spaced transmembrane regions with a short intra-vacuolar loop.",
+      "claim_type": "EXPLICIT",
+      "source": "While Incs possess little sequence similarity, they share a common membrane topology with cytoplasmic N- and C-terminal domains, separated by two closely spaced transmembrane regions with a short intra-vacuolar loop (Dehoux et al., 2011; Kostriukova et al., 2008; Li et al., 2008; Lutter et al., 2012; Rockey et al., 2002) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to published literature (Dehoux et al., 2011; Kostriukova et al., 2008; Li et al., 2008; Lutter et al., 2012; Rockey et al., 2002) and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "98cb40c4-9707-4985-8f66-e93ae64cd94c",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C9",
+      "claim": "SNX1, SNX2, SNX5 and SNX6 are recruited to the inclusion membrane in C. trachomatis infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the sorting nexins SNX1, SNX2, SNX5 and SNX6 are recruited to the inclusion membrane in C. trachomatis infected cells (Aeberhard et al., 2015; Mirrashidi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Aeberhard et al., 2015; Mirrashidi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "7d081adf-ff52-40d3-a708-589c63924c13",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C10",
+      "claim": "Myc-tagged SNX1, SNX2 and SNX5 are recruited to the inclusion membrane in HeLa cells infected with C. trachomatis serovar L2.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed this for myc-tagged SNX1, SNX2 and SNX5 in HeLa cells infected with C. trachomatis serovar L2 (MOI ~0.5) for 18 hr. All three proteins were recruited to the inclusion membrane as assessed by co-localisation with the inclusion marker mCherry-Rab25 (Figure 1B) (Teo et al., 2016)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and cited literature (Teo et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f5aa60c1-9c95-472f-8581-fe495b06e35f",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C11",
+      "claim": "GFP-tagged SNX1 and SNX5 but not GFP-SNX8 are recruited to inclusion membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "as were GFP-tagged SNX1 and SNX5 but not the more distantly homologous GFP-SNX8 (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "a9fb8ddd-991d-4845-9b12-84cc0b787e3b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C12",
+      "claim": "Treatment with wortmannin causes loss of SNX proteins from punctate endosomes but not from the inclusion membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when infected cells are treated with wortmannin, a pan-specific inhibitor of phosphoinositide-3-kinase (PI3K) activity, we see a loss of the SNX proteins from punctate endosomes, but not from the inclusion membrane (Figure 1\u2014figure supplement 2; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "b1d3ca5f-2e13-4893-b43d-58774c4b4593",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C13",
+      "claim": "Specific inhibition of PtdIns3P production by Vps34 using Vps34-IN1 causes loss of SNX proteins from punctate endosomes but not from the inclusion membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result is seen for specific inhibition of PtdIns3P production by Vps34 using Vps34-IN1 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "fc06b2c9-e625-4815-ba63-0d3c3977e1ab",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C14",
+      "claim": "The C-terminal domain of IncE (residues 107\u2013132) binds to the SNX5 PX domain with a Kd of 0.9 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial experiments with the human SNX5 and SNX6 PX domains showed robust interactions with the IncE C-terminal domain (residues 107\u2013132). The affinities (Kd) for SNX5 and SNX6 were essentially indistinguishable (0.9 and 1.1 \u00b5M respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "95583f7f-bc80-4ce6-b18b-dfc21e7c468b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C15",
+      "claim": "The C-terminal domain of IncE (residues 107\u2013132) binds to the SNX6 PX domain with a Kd of 1.1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial experiments with the human SNX5 and SNX6 PX domains showed robust interactions with the IncE C-terminal domain (residues 107\u2013132). The affinities (Kd) for SNX5 and SNX6 were essentially indistinguishable (0.9 and 1.1 \u00b5M respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "c3770e1f-e40c-42ec-b6fb-f0b54c032b14",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C16",
+      "claim": "No interaction was detected between the IncE C-terminal domain and the PX domain of SNX1.",
+      "claim_type": "EXPLICIT",
+      "source": "but we detected no interaction with the PX domain of SNX1 confirming the binding specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "fe6a3790-ccf1-4496-b3dd-7832ce6160ea",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C17",
+      "claim": "The PX domains of SNX5 and SNX6 possess a helix-turn-helix structural insert not found in any other SNX family members except for SNX32.",
+      "claim_type": "EXPLICIT",
+      "source": "The PX domains of SNX5 and SNX6 possess a helix-turn-helix structural insert (Koharudin et al., 2009), which is not found in any other SNX family members except for SNX32 (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to published literature (Koharudin et al., 2009) and Figure 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "a23f3e6a-00b6-4b4a-ab76-87f3d743b88a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C18",
+      "claim": "SNX32 is a homologue expressed primarily in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "a homologue expressed primarily in neurons (BioGPS (Wu et al., 2009)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to BioGPS database (Wu et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "3729e8e1-6ae3-4042-9c9d-753141e45ac0",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C19",
+      "claim": "IncE binds to the SNX32 PX domain with a Kd of 1.0 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming a common recruitment motif in the SNX5-related proteins, ITC showed a strong interaction between IncE and the SNX32 PX domain similar to SNX5 and SNX6 (Kd = 1.0 \u00b5M) (Figure 2A; Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ITC experimental data shown in Figure 2A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "5a6fbd57-eab7-4b90-9e3e-df8bdf49e317",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C20",
+      "claim": "SNX32 was robustly recruited to inclusion membranes in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and SNX32 was robustly recruited to inclusion membranes in infected cells (Figure 1B; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "5f419de1-c319-4171-85f1-b1d46feaa014",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C21",
+      "claim": "The shortest region of IncE able to support full binding to SNX5 encompasses residues 110\u2013131 (GPAVQFFKGKNGSADQVILVT).",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments showed that the shortest region of IncE able to support full binding to SNX5 encompasses residues 110\u2013131 (GPAVQFFKGKNGSADQVILVT)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC truncation experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f3e0d3f7-24bf-46a9-b1b5-ef96d552b3f8",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C22",
+      "claim": "A shorter IncE fragment containing residues 113\u2013130 (VQFFKGKNGSADQVILV) can bind to SNX5 with a slightly reduced affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "while a shorter fragment containing residues 113\u2013130 (VQFFKGKNGSADQVILV) can bind to SNX5 with a slightly reduced affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC truncation experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "09a24f8d-287d-4acd-98b8-e563139fc6d3",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C23",
+      "claim": "The SNX5-binding sequence of IncE appears to be preserved in all detected C. trachomatis variants.",
+      "claim_type": "EXPLICIT",
+      "source": "While variations are observed across the different C. trachomatis serovars (Harris et al., 2012) the SNX5-binding sequence appears to be preserved in all detected variants (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 3D and citation (Harris et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "50fa4f08-1bd3-4d89-85f0-464e5db15921",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C24",
+      "claim": "IncE is clearly identifiable only in C. trachomatis, C. muridarum and C. suis.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison with other chlamydial species suggests that IncE is not very widely conserved in this Genus, being clearly identifiable only in the closely related mouse pathogen C. muridarum and swine pathogen C. suis (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence comparison data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "543fcf7a-c620-42e9-815b-fc4a74b63b2d",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C25",
+      "claim": "Residues required for binding to SNX5 are preserved in IncE homologues from C. muridarum and C. suis.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues required for binding to SNX5 are preserved in these IncE homologues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from sequence alignment data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "b34f74ac-7a4c-4cb3-a102-5fb7e84904dd",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C26",
+      "claim": "The canonical PX domain structure is composed of a three-stranded \u03b2-sheet (\u03b21, \u03b22 and \u03b23) followed by three close-packed \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical PX domain structure is composed of a three-stranded \u03b2-sheet (\u03b21, \u03b22 and \u03b23) followed by three close-packed \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established structural knowledge of PX domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f7fbecfa-bd39-4341-b364-20bd4fa9f099",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C27",
+      "claim": "SNX5, SNX6 and SNX32 possess major alterations in the PtdIns3P-binding pocket that preclude canonical lipid head-group docking.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast SNX5, SNX6 and SNX32 possess major alterations in the PtdIns3P-binding pocket that preclude canonical lipid head-group docking (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "26baf325-8dc6-49a6-941b-b48bfe4930ea",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C28",
+      "claim": "SNX5, SNX6 and SNX32 possess a unique extended helix-turn-helix insert between the Pro-rich loop and \u03b12 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition they possess a unique extended helix-turn-helix insert between the Pro-rich loop and \u03b12 helix of unknown function (Figure 2B) (Koharudin et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation (Koharudin et al., 2009) and Figure 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "80a78b27-bb47-432c-b0ac-73c898c8b70b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C29",
+      "claim": "The crystal structure of the SNX5-IncE complex was determined in three different spacegroups.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct readily crystallised in several crystal forms, and we were able to determine the structure of the complex in three different spacegroups (Figure 4; Table 3; Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystallographic data shown in Figure 4, Table 3, and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "82ad897a-eda8-47bf-9267-16a0f553a931",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C30",
+      "claim": "The mode of IncE-binding to SNX5 is identical in all three crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming that the fusion does not alter complex formation, the short linker region is disordered, and the mode of IncE-binding to SNX5 is identical in all three structures (Figure 4\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "ed86304f-dc73-44ae-9055-ac86846205d6",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C31",
+      "claim": "The IncE sequence forms a long \u03b2-hairpin structure that binds within a complementary groove at the base of the extended \u03b1-helical insertion of the SNX5 PX domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The IncE sequence forms a long \u03b2-hairpin structure that binds within a complementary groove at the base of the extended \u03b1-helical insertion of the SNX5 PX domain and adjacent to the \u03b2-sheet sub-domain (Figure 4A; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4A and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "c84bc0d5-76fd-4c69-952b-baf82af6b351",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C32",
+      "claim": "The \u03b2-hairpin structure of IncE is directly incorporated as a \u03b2-sheet augmentation of the \u03b21, \u03b22 and \u03b23 strands of SNX5.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-hairpin structure of IncE (N-terminal \u03b2A and C-terminal \u03b2B strands) is directly incorporated as a \u03b2-sheet augmentation of the \u03b21, \u03b22 and \u03b23 strands of SNX5 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "cdf5bbc5-506a-4785-aaa0-b2a0ac6976f1",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C33",
+      "claim": "The N-terminal \u03b2A strand of the IncE sequence (Gly111-Lys118) forms the primary interface with SNX5.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal \u03b2A strand of the IncE sequence (Gly111-Lys118) forms the primary interface with SNX5, making main-chain hydrogen bonds with the \u03b21 strand of the SNX5 PX domain for the stable positioning of the IncE structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "dea3d75a-51ee-4b6e-8425-a8a0b1e89e62",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C34",
+      "claim": "SNX5 L133D and F136A mutations abolished association with the IncE peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Leu133 and Phe136 residues in SNX5 are located at the core of the IncE-binding interface, and also due to the structural rearrangements these residues make on binding (see below), we reasoned that L133D and F136A mutations would inhibit the interaction. Indeed these mutants abolished association with the IncE peptide (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ITC experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "3c6d74fe-6171-4e8c-bbe5-abc868597f6b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C35",
+      "claim": "IncE F116A and V127D mutations abolished binding to the SNX5 PX domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The reciprocal mutations in IncE residues F116A and V127D also abolished binding to the SNX5 PX domain (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ITC experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "1705362f-92d5-4557-9c31-d7b657279dfb",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C36",
+      "claim": "IncE F116A mutation abolished binding to SNX6 and SNX32 PX domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The reciprocal mutations in IncE residues F116A and V127D also abolished binding to the SNX5 PX domain (Figure 5B), and the SNX6 and SNX32 PX domains (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ITC experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "39a73640-4023-491a-b0a6-723ed03b4b6a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C37",
+      "claim": "Mutations predicted to disrupt an observed electrostatic contact (IncE K118A or SNX5 E144A) had little effect on binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast mutations predicted to disrupt an observed electrostatic contact (IncE K118A or SNX5 E144A) had little effect on binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "7b685347-dcdd-4cf1-b6f2-5ce4afddbc60",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C38",
+      "claim": "GFP-SNX5 protein showed clear and uniform recruitment to the limiting membrane of the inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing the GFP-SNX5 protein showed clear and uniform recruitment to the limiting membrane of the inclusion as defined by mCherry-Rab25 (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "8dc5ea3a-919a-436f-833e-41603b36caf3",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C39",
+      "claim": "The GFP-SNX5 (F136A) mutant protein showed no recruitment to the chlamydial inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the GFP-SNX5 (F136A) mutant protein showed no recruitment to the chlamydial inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "2b8a7cc0-14a6-4f45-8527-14a2f16d13d5",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C40",
+      "claim": "GFP-SNX5 (F136A) mutant was able to co-immunoprecipitate endogenous SNX1 in heterodimeric complexes identically to the wild-type GFP-SNX5 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Like wild-type GFP-SNX5 the GFP-SNX5 (F136A) mutant was recruited to punctate endosomal structures throughout the cytoplasm of these cells, and in addition was able to co-immunoprecipate endogenous SNX1 in heterodimeric complexes identically to the wild-type GFP-SNX5 protein (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "e51d3805-ed40-49a6-bcd1-0f6f4ae7d608",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C41",
+      "claim": "Wild-type GFP-IncE(91-132) was recruited to endosomal structures via its interaction with SNX5-related proteins in both uninfected and infected HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type GFP-IncE(91-132) was recruited to endosomal structures via its interaction with SNX5-related proteins in both uninfected and infected HeLa cells (Figure 6B; Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 6B and Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "abf9f7d9-cdc1-4489-bce2-619310c14f8f",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C42",
+      "claim": "GFP-IncE(91-132)(F116D), a SNX5-binding mutant, was exclusively cytosolic.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast however, GFP-IncE(91-132)(F116D), a SNX5-binding mutant, was exclusively cytosolic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "793d6d94-74b2-4da0-a75c-8b01362b7c7d",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C43",
+      "claim": "Superposition of the SNX5-IncE complex with the SNX5 PX domain in the apo state reveals a significant conformational change in the \u03b1-helical extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the SNX5-IncE complex with the SNX5 PX domain in the apo state (Koharudin et al., 2009) reveals a significant conformational change in the \u03b1-helical extension, as well as localized alterations in the loop between the \u03b21 and \u03b22 strands to accommodate peptide binding (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison data shown in Figure 7A and citation (Koharudin et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "3bf88733-a25c-4b39-bba5-f7cc290cf31b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C44",
+      "claim": "The \u03b1-helical extension undergoes a maximal movement of ~8\u201310 \u00c5 at the furthest tip upon IncE binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall the \u03b1-helical extension undergoes a maximal movement of ~8\u201310 \u00c5 at the furthest tip, facilitated by the flexibility of the structure following the Pro-rich linker and an apparent hinge-point at Pro97 (Figure 7A upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural analysis data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "4be1a83d-e1e6-4986-9344-5c35af108cf2",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C45",
+      "claim": "The IncE peptide binds to a hydrophobic surface groove that is strictly conserved in the SNX5-related protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when a cross-species evolutionary analysis of side-chain conservation in the SNX5-related proteins is performed it is clear that the IncE peptide binds a hydrophobic surface groove that is strictly conserved in this protein family (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by evolutionary conservation analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "d044b653-b499-4411-8170-6711b6bf1cb4",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C46",
+      "claim": "The high degree of conservation in the IncE binding surface of SNX5 implies that this site is normally engaged in a protein-protein interaction with an as yet unidentified binding partner(s).",
+      "claim_type": "EXPLICIT",
+      "source": "This very strongly implies that the site is normally engaged in a protein-protein interaction with an as yet unidentified binding partner(s) required for SNX5's regular biological function, and that IncE is directly competing for this interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the evolutionary conservation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "d67fd925-aef5-4575-a431-d3e4d26954b9",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C47",
+      "claim": "IncE is directly competing for the conserved SNX5 binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This very strongly implies that the site is normally engaged in a protein-protein interaction with an as yet unidentified binding partner(s) required for SNX5's regular biological function, and that IncE is directly competing for this interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the evolutionary conservation data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "c11bf578-4154-4610-bbda-0315d735e3b4",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C48",
+      "claim": "More than fifty putative Incs have been identified in C. trachomatis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although more than fifty putative Incs have been identified in C. trachomatis, the exact roles of these inclusion membrane proteins are still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about chlamydial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "fae0918d-0fa7-47b6-9fb2-68dcaad7ca93",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C49",
+      "claim": "This study presents the first reported crystal structure of a chlamydial inclusion protein (IncE) binding to its host effector protein (SNX5).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present the first reported crystal structure of a chlamydial inclusion protein (IncE) binding to its host effector protein (SNX5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystallographic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "df989118-daca-4f74-ad04-561c04dcc81e",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C50",
+      "claim": "SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have been directly implicated in the cellular pathogenesis of Coxiella burnetii.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to C. trachomatis, SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have also been directly implicated in the cellular pathogenesis of Coxiella burnetii (McDonough et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (McDonough et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "18ceb2ea-a2cc-467b-90cc-7e6009015cdc",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C51",
+      "claim": "SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have been directly implicated in the cellular pathogenesis of Salmonella enterica serovar Typhimurium.",
+      "claim_type": "EXPLICIT",
+      "source": "Salmonella enterica serovar Typhimurium (Bujny et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Bujny et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "559a8a62-eda6-43c7-84d7-5974f780d095",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C52",
+      "claim": "SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have been directly implicated in the cellular pathogenesis of hepatitis C virus.",
+      "claim_type": "EXPLICIT",
+      "source": "hepatitis C virus (Yin et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Yin et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "ac97371e-d6bc-4226-a00e-b9232315d16a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C53",
+      "claim": "SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have been directly implicated in the cellular pathogenesis of human papilloma virus.",
+      "claim_type": "EXPLICIT",
+      "source": "human papilloma virus (Ganti et al., 2016; Popa et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Ganti et al., 2016; Popa et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "82c2f9ca-97a2-4467-b2c2-7421255c4c49",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C54",
+      "claim": "SNX1, SNX2, SNX5, SNX6 and the associated retromer complex have been directly implicated in the cellular pathogenesis of Legionella pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "and Legionella pneumophila (Finsel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Finsel et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "debab902-3d87-4b5b-96cb-8eae68ebc83a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C55",
+      "claim": "PX domains of sorting nexins, including SNX1 and SNX2, play an important role in endosomal membrane recruitment by binding the endosome-enriched lipid PtdIns3P.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically PX domains of sorting nexins, including SNX1 and SNX2 (Cozier et al., 2002; Zhong et al., 2005), play an important role in endosomal membrane recruitment by binding the endosome-enriched lipid PtdIns3P through four conserved residues (Mas et al., 2014; Teasdale and Collins, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Cozier et al., 2002; Zhong et al., 2005; Mas et al., 2014; Teasdale and Collins, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "cfa82e8e-0cd6-43a6-b4fc-ca264883062a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C56",
+      "claim": "The four conserved residues for PtdIns3P binding are conserved in most PX domains including in SNX1 and SNX2, but are entirely absent in SNX5, SNX6 and SNX32.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are conserved in most PX domains including in SNX1 and SNX2, but are entirely absent in SNX5, SNX6 and SNX32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence and structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "2a8a54a7-c542-48a4-bce3-7b386888dc1c",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C57",
+      "claim": "There is evidence for the weak association of the SNX5 PX domain with the lipid PtdIns(4,5)P2 from NMR spectroscopy experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is evidence for the weak association of the SNX5 PX domain with the lipid PtdIns(4,5)P2 from nuclear magnetic resonance (NMR) spectroscopy experiments (Koharudin et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Koharudin et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f3f9bfa6-ff28-41f2-8286-5f80445d17ab",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C58",
+      "claim": "The crystal structure does not point to a clear binding mechanism for PtdIns(4,5)P2 binding to SNX5.",
+      "claim_type": "EXPLICIT",
+      "source": "the crystal structure does not point to a clear binding mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "427efb33-ab59-434e-8e73-cd410ffd6ae1",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C59",
+      "claim": "Expression of a GFP-tagged IncE C-terminal domain interfered with the SNX5/SNX6-dependent retrograde trafficking of the cation-independent mannose-6-phosphate receptor (CI-MPR).",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the expression of a GFP-tagged IncE C-terminal domain was shown to interfere with the SNX5/SNX6-dependent retrograde trafficking of the cation-independent mannose-6-phosphate receptor (CI-MPR) (Mirrashidi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Mirrashidi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "9494856b-66aa-4016-b164-80a185f039ea",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C60",
+      "claim": "IncE is mimicking and interfering with SNX5/SNX6-mediated protein interactions with a ligand(s) required for normal endosomal trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our structural data, this infers that IncE is mimicking and interfering with SNX5/SNX6-mediated protein interactions, with a ligand(s) required for normal endosomal trafficking that remains to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from structural data and previous functional studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f69ae088-c613-40ba-9dfb-bc50530e05c9",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C61",
+      "claim": "Knockdown of SNX5 and SNX6 results in an increased production of C. trachomatis infectious progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is logical to imagine they could play a positive role in the sculpting of the inclusion, this is somewhat difficult to reconcile with the effect of SNX5 and SNX6 knockdown, which results in an increased production of C. trachomatis infectious progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "099f9b12-ff66-493a-9ba3-78e5d07cb8be",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C62",
+      "claim": "The role of IncE could be to compete for SNX-retromer endosomal interactions, resulting in the breakdown of normal trafficking of the CI-MPR and lysosomal hydrolases.",
+      "claim_type": "EXPLICIT",
+      "source": "It was thus proposed that the role of IncE could be to compete for SNX-retromer endosomal interactions, resulting in the breakdown of normal trafficking of the CI-MPR and lysosomal hydrolases and hence perturbation of the endolysosomal system's capacity for bacterial destruction (Aeberhard et al., 2015; Mirrashidi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed hypothesis supported by citations (Aeberhard et al., 2015; Mirrashidi et al., 2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "b701de0c-aaee-4a47-ad37-25c53a4114b5",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C63",
+      "claim": "SNX recruitment to the inclusion occurs via protein-protein interactions and does not depend on the presence of 3-phosphoinositide lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "This offers two possibilities; that either SNX recruitment to the inclusion occurs via protein-protein interactions, and does not depend on the presence of 3-phosphoinositide lipids that typically recruit SNX proteins to endosomal membranes, or alternatively that PI3Ks are not present at the inclusion and therefore wortmannin treatment has no effect at this particular compartment. Given our structural and mutagenesis studies below we favor the former explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from wortmannin treatment experiments and structural/mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "35585e59-b000-4e0e-a18d-27569d93e117",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C64",
+      "claim": "A common structure within the SNX5, SNX6 and SNX32 PX domains is required for IncE interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data indicates that a common structure within the SNX5, SNX6 and SNX32 PX domains is required for IncE interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from ITC binding data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "6d5abbe6-194c-44ae-8562-d44e73482a6b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C65",
+      "claim": "BAR-domain mediated heterodimer formation with SNX1 or SNX2 is required for endosomal recruitment of SNX5.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that BAR-domain mediated heterodimer formation with SNX1 or SNX2 is required for endosomal recruitment, and is not perturbed by the IncE-binding mutation in the PX domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from co-immunoprecipitation and localization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "fbc80683-626e-4626-a25c-4c5ef08aef13",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C66",
+      "claim": "Val114 of IncE inserts into a pocket formed primarily by Tyr132 and Phe136 on the SNX5 \u03b1'' helix.",
+      "claim_type": "EXPLICIT",
+      "source": "At the N-terminus of the \u03b2A strand Val114 of IncE inserts into a pocket formed primarily by Tyr132 and Phe136 on the SNX5 \u03b1'' helix (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "a28cf73f-e06b-44a9-b279-09c6ebaf3e5b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C67",
+      "claim": "IncE Phe116 makes \u03c0-stacking with the Phe136 side-chain and hydrophobic docking with Val140 of SNX5.",
+      "claim_type": "EXPLICIT",
+      "source": "A major contribution comes from IncE Phe116, with \u03c0-stacking occurring with the Phe136 side-chain and hydrophobic docking with Val140 of SNX5 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "3a05baab-02f6-4c6b-a6b9-3e4992147dc1",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C68",
+      "claim": "IncE Lys118 makes an electrostatic contact with SNX5 Glu144.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent to IncE Phe116 at the end of the \u03b2A strand Lys118 makes an electrostatic contact with SNX5 Glu144.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "d4dc0cee-ccf6-4803-af84-cf1e63321c51",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C69",
+      "claim": "IncE Val127 and Leu129 contact an extended SNX5 surface composed of Leu133, Tyr132 and Met106.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at the C-terminal end of the IncE \u03b2B strand Val127 and Leu129 contact an extended SNX5 surface composed of Leu133, Tyr132 and Met106 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "4cb445b2-4532-43b3-a78a-673704b8df99",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C70",
+      "claim": "The core hydrophobic interactions are critical for IncE binding but the peripheral electrostatic contact is not essential.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the core hydrophobic interactions are critical for IncE binding but the peripheral electrostatic contact is not essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "828df10e-e1ed-4fd7-9b94-abb8b868d1cb",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C71",
+      "claim": "SNX5-related proteins are directly associated with the inclusion via IncE protein-protein interactions in a phosphoinositide-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that in the context of C. trachomatis infection, SNX5-related proteins are directly associated with the inclusion via IncE protein-protein interactions in a phosphoinositide-independent manner",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on structural and experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "19f0eaec-5596-49bb-bd43-b95784e5426c",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C72",
+      "claim": "SNX5-related proteins are able to recruit their heterodimeric partners SNX1 and SNX2.",
+      "claim_type": "EXPLICIT",
+      "source": "and are able to recruit their heterodimeric partners SNX1 and SNX2 (Sierecki et al., 2014; van Weering et al., 2012; Wassmer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Sierecki et al., 2014; van Weering et al., 2012; Wassmer et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f1444e37-c667-45d7-a9c2-3b423994d337",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C73",
+      "claim": "The PX-BAR-domain containing complexes are localised to the inclusion in a retromer-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The PX-BAR-domain containing complexes are then localised to the inclusion in a retromer-independent manner (Mirrashidi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Mirrashidi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "1017c79c-6748-42cc-b31d-2379287f7c70",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C74",
+      "claim": "The IncE sequence used in this study is from the L3 serovar L3/404/LN (NCBI reference WP_015506602).",
+      "claim_type": "EXPLICIT",
+      "source": "The IncE sequence used in this study is from the L3 serovar L3/404/LN (NCBI reference WP_015506602) (Harris et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement supported by citation (Harris et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "dd4fdce3-2b18-489e-aae6-c9f31829cb4b",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C75",
+      "claim": "The first three IncE N-terminal residues (Pro107, Ala108, Asn109) and the last three IncE C-terminal residues (Val130, Thr131, Gln132) were not modeled due to lack of electron density.",
+      "claim_type": "EXPLICIT",
+      "source": "The first three IncE N-terminal residues (Pro107, Ala108, Asn109) and the last three IncE C-terminal residues (Val130, Thr131, Gln132) were not modeled due to lack of electron density, suggesting disorder and matching precisely with our mapping experiments showing these residues are not necessary for SNX5 association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data and ITC mapping experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "63f4f526-af87-4bc9-ab0e-b3e1c00f962f",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C76",
+      "claim": "The two anti-parallel \u03b2-strands of IncE are connected by a short loop (Gly119-Ala124) that makes no direct contact with the SNX5 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The two anti-parallel \u03b2-strands of IncE are connected by a short loop (Gly119-Ala124) that makes no direct contact with the SNX5 protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "b3d430bd-00c2-4676-be81-09f78310cdfd",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "claim_id": "C77",
+      "claim": "The C-terminal IncE \u03b2B strand (Asp125-Val130) forms an interface with the extended \u03b1-helical region of the SNX5 PX domain.",
+      "claim_type": "EXPLICIT",
+      "source": "and the C-terminal IncE \u03b2B strand (Asp125-Val130) forms an interface with the extended \u03b1-helical region of the SNX5 PX domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on C. trachomatis infection epidemiology, disease outcomes, treatment challenges, and the chlamydial life cycle involving inclusion membrane proteins (Incs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 and C48 are well-supported by citations to published literature and established knowledge about chlamydial biology. These background claims provide context for the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "61afd903-014a-4828-aa6e-0dc447c60959",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SNX1, SNX2, SNX5, SNX6, and SNX32 are recruited to the inclusion membrane in C. trachomatis infected cells, as confirmed by microscopy of myc-tagged and GFP-tagged constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C20 are supported by experimental microscopy data (Figure 1B, Figure 1\u2014figure supplement 1A) and citations to prior work. The authors confirm previous findings and extend them to include SNX32, providing consistent visual evidence of inclusion membrane recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "6b42778e-d10e-47f7-b7b1-b1dfe5bc6ed8",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SNX protein recruitment to the inclusion membrane is independent of phosphoinositide-3-kinase activity and PtdIns3P production, as demonstrated by wortmannin and Vps34-IN1 treatment experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, and C63 are supported by experimental data (Figure 1\u2014figure supplement 2, Video 1) showing that PI3K inhibitors remove SNX proteins from endosomes but not from inclusion membranes. This suggests protein-protein interactions rather than lipid-dependent recruitment, though alternative explanations (absence of PI3Ks at inclusion) are acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IncE C-terminal domain binds specifically to SNX5, SNX6, and SNX32 PX domains with micromolar affinity (Kd ~0.9-1.1 \u00b5M), but not to SNX1, indicating a common structural requirement in SNX5-related proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C19, and C64 are supported by ITC experimental data (Figure 2A, Table 1) showing robust and specific binding interactions. The similar affinities across SNX5, SNX6, and SNX32, combined with lack of SNX1 binding, demonstrate specificity and support the conclusion of a common structural requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "9aac990f-3ccd-4b79-8e1e-a1a854910970",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SNX5, SNX6, and SNX32 possess a unique helix-turn-helix structural insert not found in other SNX family members except SNX32, which is primarily expressed in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, and C28 are supported by citations to published literature (Koharudin et al., 2009; Wu et al., 2009) and structural data (Figure 2B). The structural feature distinguishes these proteins from other SNX family members and is relevant to IncE binding specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "a5ad97b7-daf4-491b-b3b2-fbbfafdd561a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The minimal IncE sequence required for full SNX5 binding encompasses residues 110-131, with residues 113-130 showing slightly reduced affinity, as determined by ITC truncation experiments and crystallographic analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C75 are supported by systematic ITC truncation experiments (Figure 3, Table 2) and crystallographic data showing disordered terminal residues. The mapping is internally consistent between binding studies and structural observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "0bcdc8ef-a479-48fa-a6f2-3533935babd7",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The SNX5-binding sequence of IncE is conserved across C. trachomatis serovars and identifiable in closely related species C. muridarum and C. suis, but not widely conserved across the Chlamydia genus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by sequence alignment data (Figure 2C, Figure 3D) and citations. The conservation analysis is appropriate and supports the evolutionary relationship of IncE homologues, though functional validation in other species is noted as future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The crystal structure of the SNX5-IncE complex was determined in three different spacegroups, revealing that IncE forms a \u03b2-hairpin structure that binds to SNX5 through \u03b2-sheet augmentation, representing the first reported structure of a chlamydial Inc protein with its host effector.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 and C49 are supported by comprehensive crystallographic data (Figure 4, Table 3, Figure 4\u2014figure supplement 1). The structure was solved in multiple crystal forms showing identical binding modes, providing strong validation. The structural description is detailed and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The SNX5-IncE interface involves specific hydrophobic and electrostatic interactions, with key contacts including Val114, Phe116, Lys118, Val127, and Leu129 from IncE engaging SNX5 residues in a complementary binding groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 and C76-C77 are supported by detailed structural analysis (Figure 4C-E) showing specific atomic interactions. The structural descriptions are consistent with the crystallographic data and provide molecular-level detail of the binding interface.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "9a3d6038-8ad5-431e-9077-6af719253092",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments demonstrate that core hydrophobic interactions (SNX5 L133D/F136A, IncE F116A/V127D) are critical for binding, while peripheral electrostatic contacts (K118A, E144A) are not essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 and C70 are supported by ITC mutagenesis data (Figure 5A-B, Figure 5\u2014figure supplement 1, Table 2). The systematic mutagenesis validates the structural model and distinguishes critical from non-essential interactions. The conclusions are well-supported by quantitative binding data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "4781fd21-7bed-4f85-b1e3-7f2db6cb9429",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GFP-SNX5 is recruited to inclusion membranes in infected cells, while the F136A mutant abolishes inclusion recruitment but maintains endosomal localization and SNX1 heterodimerization, indicating that BAR-domain mediated heterodimer formation is required for endosomal recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 and C65 are supported by microscopy data (Figure 6A, Figure 6\u2014figure supplement 1A-B) and co-immunoprecipitation experiments. The mutant analysis effectively separates IncE-dependent inclusion recruitment from normal endosomal function, validating the structural findings in cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "17fade9f-fe8c-4098-b35b-78b7c9978026",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Wild-type GFP-IncE(91-132) is recruited to endosomal structures via SNX5-related proteins, while the F116D mutant is exclusively cytosolic, confirming the importance of this residue for SNX binding in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by microscopy data (Figure 6B, Figure 6\u2014figure supplement 1C). The complementary experiment using IncE constructs validates the binding interface identified structurally and by mutagenesis, providing cellular confirmation of the molecular interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "5e80d527-f0f8-4d02-a866-96e06d8db47e",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "IncE binding induces a significant conformational change in the SNX5 \u03b1-helical extension, with a maximal movement of ~8-10 \u00c5 at the furthest tip, as revealed by comparison with the apo SNX5 structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by structural comparison data (Figure 7A) with the published apo-SNX5 structure (Koharudin et al., 2009). The conformational change is well-documented and provides mechanistic insight into how IncE binding is accommodated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "7b3b0a6d-3e72-4793-bf03-bc3c82ff55f7",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The IncE binding site on SNX5 is highly conserved across evolution, strongly suggesting that this site normally engages an unidentified host protein binding partner and that IncE competes for this interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by evolutionary conservation analysis (Figure 7C). The high degree of conservation in the binding groove provides strong circumstantial evidence for a native function, though the identity of the endogenous binding partner remains unknown. The inference is logical but speculative regarding the specific mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "de6bc710-af31-4079-a6f1-946cd259afd7",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SNX5, SNX6, and SNX32 lack the canonical PtdIns3P-binding residues found in most PX domains, and while weak PtdIns(4,5)P2 binding has been reported, the crystal structure does not reveal a clear lipid binding mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C55-C58 are supported by structural analysis, sequence comparisons, and citations to published literature. The absence of canonical lipid-binding residues is well-documented, though the functional implications remain somewhat uncertain. The structural analysis appropriately notes the lack of a clear binding mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "2d3fdf33-6d06-455b-9eaa-e2591517443a",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SNX proteins and retromer complexes have been implicated in the pathogenesis of multiple intracellular pathogens including Coxiella burnetii, Salmonella, hepatitis C virus, human papilloma virus, and Legionella pneumophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by citations to published literature. These claims provide important context for the broader significance of SNX manipulation by pathogens but represent prior work rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "5ede1d15-87fe-44fe-a5f9-928e1829e2b3",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "IncE expression interferes with SNX5/SNX6-dependent retrograde trafficking of CI-MPR, and the proposed role is to compete for SNX-retromer interactions to perturb endolysosomal bacterial destruction, though SNX5/SNX6 knockdown paradoxically increases infectious progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 are based on prior work (Mirrashidi et al., 2015; Aeberhard et al., 2015) and inference from the current structural data. The functional mechanism remains speculative and somewhat contradictory (knockdown increases infection). While the structural data supports competitive binding, the biological consequences require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "f56df652-a463-48dc-9fe5-dc379e518365",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A model is proposed where SNX5-related proteins are recruited to the inclusion via IncE protein-protein interactions in a phosphoinositide-independent manner, recruiting heterodimeric partners SNX1/SNX2 in a retromer-independent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 represent a proposed model integrating the structural findings with prior work. The model is supported by the structural data, mutagenesis, cellular localization studies, and citations to published literature on SNX heterodimer formation. While speculative in some aspects, the model is well-grounded in the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    },
+    {
+      "id": "34d5190c-dc47-44a4-bd3a-0b4576cdd8fa",
+      "content_id": "2a51813b-0154-440c-89a3-7a003ff4b5b8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The IncE sequence used in this study is from C. trachomatis serovar L3/404/LN (NCBI reference WP_015506602).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is a straightforward methodological statement supported by citation (Harris et al., 2012) and database reference. This is appropriate documentation of the experimental materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:03:41.808965Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb097ab8-0f04-4939-834f-3dcbfd1828e4",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "75a529ba-7b18-45fa-89a5-b5443cd1650e",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "fa52351d-efd8-48ba-9d7b-5fa8b283344d",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "ddcea0d4-c48d-432a-8ae1-9ccafcaf07bc",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "387f454f-ab1e-4bb8-9cbe-d1750cd56aa9",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "909e4b49-4812-49f5-89ad-654e8ac5a80b",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "e072872a-71ed-434c-8bec-7fe5ff0f80fd",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "82ee46f2-b915-4d15-923b-791485d95abb",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "c11bf578-4154-4610-bbda-0315d735e3b4",
+      "result_id": "64ef9c9b-c49e-4f58-90ef-b942ecd6667a"
+    },
+    {
+      "claim_id": "98cb40c4-9707-4985-8f66-e93ae64cd94c",
+      "result_id": "61afd903-014a-4828-aa6e-0dc447c60959"
+    },
+    {
+      "claim_id": "7d081adf-ff52-40d3-a708-589c63924c13",
+      "result_id": "61afd903-014a-4828-aa6e-0dc447c60959"
+    },
+    {
+      "claim_id": "f5aa60c1-9c95-472f-8581-fe495b06e35f",
+      "result_id": "61afd903-014a-4828-aa6e-0dc447c60959"
+    },
+    {
+      "claim_id": "5a6fbd57-eab7-4b90-9e3e-df8bdf49e317",
+      "result_id": "61afd903-014a-4828-aa6e-0dc447c60959"
+    },
+    {
+      "claim_id": "a9fb8ddd-991d-4845-9b12-84cc0b787e3b",
+      "result_id": "6b42778e-d10e-47f7-b7b1-b1dfe5bc6ed8"
+    },
+    {
+      "claim_id": "b1d3ca5f-2e13-4893-b43d-58774c4b4593",
+      "result_id": "6b42778e-d10e-47f7-b7b1-b1dfe5bc6ed8"
+    },
+    {
+      "claim_id": "b701de0c-aaee-4a47-ad37-25c53a4114b5",
+      "result_id": "6b42778e-d10e-47f7-b7b1-b1dfe5bc6ed8"
+    },
+    {
+      "claim_id": "fc06b2c9-e625-4815-ba63-0d3c3977e1ab",
+      "result_id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a"
+    },
+    {
+      "claim_id": "95583f7f-bc80-4ce6-b18b-dfc21e7c468b",
+      "result_id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a"
+    },
+    {
+      "claim_id": "c3770e1f-e40c-42ec-b6fb-f0b54c032b14",
+      "result_id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a"
+    },
+    {
+      "claim_id": "3729e8e1-6ae3-4042-9c9d-753141e45ac0",
+      "result_id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a"
+    },
+    {
+      "claim_id": "35585e59-b000-4e0e-a18d-27569d93e117",
+      "result_id": "07f4a8c0-34b2-4f5b-ac5d-e2166b28043a"
+    },
+    {
+      "claim_id": "fe6a3790-ccf1-4496-b3dd-7832ce6160ea",
+      "result_id": "9aac990f-3ccd-4b79-8e1e-a1a854910970"
+    },
+    {
+      "claim_id": "a23f3e6a-00b6-4b4a-ab76-87f3d743b88a",
+      "result_id": "9aac990f-3ccd-4b79-8e1e-a1a854910970"
+    },
+    {
+      "claim_id": "26baf325-8dc6-49a6-941b-b48bfe4930ea",
+      "result_id": "9aac990f-3ccd-4b79-8e1e-a1a854910970"
+    },
+    {
+      "claim_id": "5f419de1-c319-4171-85f1-b1d46feaa014",
+      "result_id": "a5ad97b7-daf4-491b-b3b2-fbbfafdd561a"
+    },
+    {
+      "claim_id": "f3e0d3f7-24bf-46a9-b1b5-ef96d552b3f8",
+      "result_id": "a5ad97b7-daf4-491b-b3b2-fbbfafdd561a"
+    },
+    {
+      "claim_id": "dd4fdce3-2b18-489e-aae6-c9f31829cb4b",
+      "result_id": "a5ad97b7-daf4-491b-b3b2-fbbfafdd561a"
+    },
+    {
+      "claim_id": "09a24f8d-287d-4acd-98b8-e563139fc6d3",
+      "result_id": "0bcdc8ef-a479-48fa-a6f2-3533935babd7"
+    },
+    {
+      "claim_id": "50fa4f08-1bd3-4d89-85f0-464e5db15921",
+      "result_id": "0bcdc8ef-a479-48fa-a6f2-3533935babd7"
+    },
+    {
+      "claim_id": "543fcf7a-c620-42e9-815b-fc4a74b63b2d",
+      "result_id": "0bcdc8ef-a479-48fa-a6f2-3533935babd7"
+    },
+    {
+      "claim_id": "80a78b27-bb47-432c-b0ac-73c898c8b70b",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "82ad897a-eda8-47bf-9267-16a0f553a931",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "ed86304f-dc73-44ae-9055-ac86846205d6",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "c84bc0d5-76fd-4c69-952b-baf82af6b351",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "cdf5bbc5-506a-4785-aaa0-b2a0ac6976f1",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "fae0918d-0fa7-47b6-9fb2-68dcaad7ca93",
+      "result_id": "1ed64be7-f6ab-49e6-94bc-a170493dcbb6"
+    },
+    {
+      "claim_id": "fbc80683-626e-4626-a25c-4c5ef08aef13",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "a28cf73f-e06b-44a9-b279-09c6ebaf3e5b",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "3a05baab-02f6-4c6b-a6b9-3e4992147dc1",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "d4dc0cee-ccf6-4803-af84-cf1e63321c51",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "63f4f526-af87-4bc9-ab0e-b3e1c00f962f",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "b3d430bd-00c2-4676-be81-09f78310cdfd",
+      "result_id": "d9ad65ae-6d23-41ec-8257-b52ba82257e8"
+    },
+    {
+      "claim_id": "dea3d75a-51ee-4b6e-8425-a8a0b1e89e62",
+      "result_id": "9a3d6038-8ad5-431e-9077-6af719253092"
+    },
+    {
+      "claim_id": "3c6d74fe-6171-4e8c-bbe5-abc868597f6b",
+      "result_id": "9a3d6038-8ad5-431e-9077-6af719253092"
+    },
+    {
+      "claim_id": "1705362f-92d5-4557-9c31-d7b657279dfb",
+      "result_id": "9a3d6038-8ad5-431e-9077-6af719253092"
+    },
+    {
+      "claim_id": "39a73640-4023-491a-b0a6-723ed03b4b6a",
+      "result_id": "9a3d6038-8ad5-431e-9077-6af719253092"
+    },
+    {
+      "claim_id": "4cb445b2-4532-43b3-a78a-673704b8df99",
+      "result_id": "9a3d6038-8ad5-431e-9077-6af719253092"
+    },
+    {
+      "claim_id": "7b685347-dcdd-4cf1-b6f2-5ce4afddbc60",
+      "result_id": "4781fd21-7bed-4f85-b1e3-7f2db6cb9429"
+    },
+    {
+      "claim_id": "8dc5ea3a-919a-436f-833e-41603b36caf3",
+      "result_id": "4781fd21-7bed-4f85-b1e3-7f2db6cb9429"
+    },
+    {
+      "claim_id": "2b8a7cc0-14a6-4f45-8527-14a2f16d13d5",
+      "result_id": "4781fd21-7bed-4f85-b1e3-7f2db6cb9429"
+    },
+    {
+      "claim_id": "6d5abbe6-194c-44ae-8562-d44e73482a6b",
+      "result_id": "4781fd21-7bed-4f85-b1e3-7f2db6cb9429"
+    },
+    {
+      "claim_id": "e51d3805-ed40-49a6-bcd1-0f6f4ae7d608",
+      "result_id": "17fade9f-fe8c-4098-b35b-78b7c9978026"
+    },
+    {
+      "claim_id": "abf9f7d9-cdc1-4489-bce2-619310c14f8f",
+      "result_id": "17fade9f-fe8c-4098-b35b-78b7c9978026"
+    },
+    {
+      "claim_id": "793d6d94-74b2-4da0-a75c-8b01362b7c7d",
+      "result_id": "5e80d527-f0f8-4d02-a866-96e06d8db47e"
+    },
+    {
+      "claim_id": "3bf88733-a25c-4b39-bba5-f7cc290cf31b",
+      "result_id": "5e80d527-f0f8-4d02-a866-96e06d8db47e"
+    },
+    {
+      "claim_id": "4be1a83d-e1e6-4986-9344-5c35af108cf2",
+      "result_id": "7b3b0a6d-3e72-4793-bf03-bc3c82ff55f7"
+    },
+    {
+      "claim_id": "d044b653-b499-4411-8170-6711b6bf1cb4",
+      "result_id": "7b3b0a6d-3e72-4793-bf03-bc3c82ff55f7"
+    },
+    {
+      "claim_id": "d67fd925-aef5-4575-a431-d3e4d26954b9",
+      "result_id": "7b3b0a6d-3e72-4793-bf03-bc3c82ff55f7"
+    },
+    {
+      "claim_id": "b34f74ac-7a4c-4cb3-a102-5fb7e84904dd",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "f7fbecfa-bd39-4341-b364-20bd4fa9f099",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "debab902-3d87-4b5b-96cb-8eae68ebc83a",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "cfa82e8e-0cd6-43a6-b4fc-ca264883062a",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "2a8a54a7-c542-48a4-bce3-7b386888dc1c",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "f3f9bfa6-ff28-41f2-8286-5f80445d17ab",
+      "result_id": "de6bc710-af31-4079-a6f1-946cd259afd7"
+    },
+    {
+      "claim_id": "df989118-daca-4f74-ad04-561c04dcc81e",
+      "result_id": "2d3fdf33-6d06-455b-9eaa-e2591517443a"
+    },
+    {
+      "claim_id": "18ceb2ea-a2cc-467b-90cc-7e6009015cdc",
+      "result_id": "2d3fdf33-6d06-455b-9eaa-e2591517443a"
+    },
+    {
+      "claim_id": "559a8a62-eda6-43c7-84d7-5974f780d095",
+      "result_id": "2d3fdf33-6d06-455b-9eaa-e2591517443a"
+    },
+    {
+      "claim_id": "ac97371e-d6bc-4226-a00e-b9232315d16a",
+      "result_id": "2d3fdf33-6d06-455b-9eaa-e2591517443a"
+    },
+    {
+      "claim_id": "82c2f9ca-97a2-4467-b2c2-7421255c4c49",
+      "result_id": "2d3fdf33-6d06-455b-9eaa-e2591517443a"
+    },
+    {
+      "claim_id": "427efb33-ab59-434e-8e73-cd410ffd6ae1",
+      "result_id": "5ede1d15-87fe-44fe-a5f9-928e1829e2b3"
+    },
+    {
+      "claim_id": "9494856b-66aa-4016-b164-80a185f039ea",
+      "result_id": "5ede1d15-87fe-44fe-a5f9-928e1829e2b3"
+    },
+    {
+      "claim_id": "f69ae088-c613-40ba-9dfb-bc50530e05c9",
+      "result_id": "5ede1d15-87fe-44fe-a5f9-928e1829e2b3"
+    },
+    {
+      "claim_id": "099f9b12-ff66-493a-9ba3-78e5d07cb8be",
+      "result_id": "5ede1d15-87fe-44fe-a5f9-928e1829e2b3"
+    },
+    {
+      "claim_id": "828df10e-e1ed-4fd7-9b94-abb8b868d1cb",
+      "result_id": "f56df652-a463-48dc-9fe5-dc379e518365"
+    },
+    {
+      "claim_id": "19f0eaec-5596-49bb-bd43-b95784e5426c",
+      "result_id": "f56df652-a463-48dc-9fe5-dc379e518365"
+    },
+    {
+      "claim_id": "f1444e37-c667-45d7-a9c2-3b423994d337",
+      "result_id": "f56df652-a463-48dc-9fe5-dc379e518365"
+    },
+    {
+      "claim_id": "1017c79c-6748-42cc-b31d-2379287f7c70",
+      "result_id": "34d5190c-dc47-44a4-bd3a-0b4576cdd8fa"
+    }
+  ],
+  "comparisons": []
+}

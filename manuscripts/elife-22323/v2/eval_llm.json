@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "DeBias is a computational method that models observed co-localization/co-orientation as the sum of global bias (GI) and local interaction (LI) components. GI is defined as the dissimilarity between uniform and resampled distributions, while LI is the difference between observed-uniform and resampled-uniform dissimilarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C11-C13 describe the core DeBias methodology with clear mathematical definitions illustrated in Figure 2. The modeling framework and computational approach are explicitly defined and demonstrated through simulations and theoretical proofs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "DeBias has well-defined theoretical properties: LI converges to 0 when X and Y are independent, GI converges to 0 when X and Y are uniform, LI is a lower bound for local interaction contribution, GI is an upper bound for global bias contribution, and GI decreases with increasing \u03c3 for truncated normal distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 present theoretical results proven in Appendix 1 (Theorems 1-5) and validated through simulations (Figure 2E). The mathematical properties establish the behavior of DeBias under limiting cases and provide bounds for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Simulations demonstrate that similar observed alignments (18.9\u00b0-19.5\u00b0) can arise from different combinations of global bias (\u03c3) and local interactions (\u03b1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are directly supported by simulation results shown in Figure 1C-D, demonstrating the confounding problem that DeBias aims to address. The quantitative values are explicitly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In vimentin-microtubule alignment during wound healing, DeBias reveals that differences in alignment between wound front and back cells, or between WT and vimentin-depleted cells, primarily originate from shifts in global bias (cell polarity) rather than changes in local cytoskeletal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 present a coherent case study with quantitative DeBias analysis (Figure 3D) showing significant GI differences (fold changes 4.8-5.2, p<0.0001) while LI remains stable. The interpretation is supported by experimental data, though C26 includes speculative elements about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Time-lapse imaging of wound healing shows that GI increases over time as cells at the wound edge gradually increase polarity and begin migrating, with correlation ~0.90 (p<10\u207b\u00b3\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by live-cell imaging data (Figure 3E-F, Video 1) with strong statistical evidence. The temporal dynamics validate that GI captures cell polarity changes during wound healing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Re-analysis of tight-junction protein screen data with DeBias reveals that Merlin, Claudin1, Patj, and Angiomotin depletion massively reduces GI, while Merlin, Patj, and Angiomotin also reduce LI to near zero. Claudin1 and Claudin2 show similar LI reductions but different GI effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 present DeBias analysis of published data (Das et al., 2015) shown in Figure 4B-D. The analysis identifies differential effects on GI and LI that were missed by previous single-parameter analysis, with appropriate statistical testing (Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Claudin1 and Claudin2 depletion impair stress-motion transmission to similar extents (similar LI), but Claudin1 additionally affects stress organization (different GI), suggesting distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by marginal distribution analysis (Figure 4D) and DeBias results. The interpretation is reasonable given the data, though it relies on the authors' model that aligned stress transforms to aligned motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ZO1, ZO2, ZO3, Occludin, and ZONAB depletion show small GI reductions but substantial LI increases (83% for ZO1), suggesting enhanced local stress-velocity alignment that compensates for mild loss in marginal alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by DeBias analysis (Figure 4B, 4D) with quantitative values. C44 provides independent validation from another screen (Bazelli\u00e8res et al., 2015), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "PKC inhibition in FRET experiments increases LI (p<0.008) as predicted by FRET mechanism, and decreases GI (p<0.008), suggesting PKC inhibition changes localization toward more random spatial distribution. Control experiments with GFP/mCherry show no such shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present a coherent FRET validation study with appropriate controls (Figure 5). The LI increase validates the FRET response, while the GI decrease provides additional mechanistic insight. Statistical significance is reported and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In clathrin-mediated endocytosis, Akt inhibition decreases LI in H1299 cancer cells but increases LI in ARPE-19 normal cells, while increasing GI in both cell types (more strongly in H1299). The (GI,LI) pair provides superior classification accuracy (AUC 0.96 vs 0.88 for H1299; 0.83 vs 0.72 for ARPE-19) compared to LI alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by quantitative DeBias analysis (Figure 6C-D) and ROC analysis (Figure 6E-F) with statistical validation via permutation testing. The differential effects between cell types and improved classification demonstrate the value of the two-dimensional (GI,LI) representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Upon Akt inhibition, joint distributions shift toward CCPs with lower TfnR intensities (increased GI), leading to increased frequency of short-lived, likely abortive CCPs in H1299 cells, which correlates with decreased CME efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 integrate multiple experimental approaches: fixed-cell imaging (Figure 6G-J), live-cell imaging (Figure 6K-L), and uptake assays (Figure 6M-N). The mechanistic interpretation connecting GI shifts to CCP dynamics and CME efficiency is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "DeBias distinguishes alterations in CME regulation between cancer and normal cells, revealing that both show global bias toward CCPs with lowered TfnR intensities upon Akt inhibition\u2014a conclusion not reachable from LI alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 summarize the CME case study conclusions. The statement is supported by the differential LI responses (opposite directions) combined with consistent GI increases, demonstrating the necessity of the two-dimensional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Global bias from external effectors can influence observed co-localization independently of local interactions, is often neglected in current studies, and previous methods either did not explicitly quantify global bias contribution or treated it only as a confounding factor to eliminate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C7 establish the motivation for DeBias through conceptual statements and literature assessment. The claims are supported by multiple citations and represent a reasonable characterization of the field, though C2 involves some subjective assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The global bias encapsulates fundamental mechanistic insight into cellular behavior, enables simultaneous investigation of global and local processes, eliminates confounder bias, and can reveal mechanisms missed by single-parameter analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C8, C68-C70 present overarching conclusions supported by the four case studies. Each case study demonstrates specific mechanistic insights from GI (cell polarity, collective migration coordination, PKC localization, CCP cargo composition), validating these general claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Previous methods (Helmuth et al., spatial statistics approaches, DREMI) addressed confounders differently: Helmuth simulated distributions without local interactions, others used spatial statistics, and DREMI uses conditional probability but is less reliable with limited data and not well-suited for image data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide context by describing and critiquing previous approaches. The descriptions are supported by appropriate citations, and the critical assessment of DREMI's limitations (C75-C76) is reasonable given the methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DeBias has limitations: it assumes constant global bias and local interaction across observations, quantification is relative rather than absolute, GI and LI are not completely orthogonal, and the mechanism encoded by GI is not always obvious and may require additional experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 honestly acknowledge methodological limitations. C79 is supported by data (Figure 2E-F, Appendix 3-figure 1), and the other limitations are conceptual acknowledgments that strengthen the paper's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Despite limitations, DeBias offers a simple means to quantify and interpret mechanisms altering confounders in variable coupling, as demonstrated by combining fixed-cell imaging with live-imaging and uptake assays to show GI shifts encode CCP population changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide balanced conclusions acknowledging limitations while asserting utility. C83 is specifically supported by the CME case study (Figure 6), and C84 is validated by all four applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Plithotaxis is defined as the tendency of individual cells to align their velocity with the maximum principal stress orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 provides a definition supported by appropriate citations. This is established knowledge used as context for the collective migration case study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "One possible mechanism for more random PKC distribution upon inhibition is that deactivation releases the kinase from the substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is explicitly speculative and not directly tested. While the GI decrease is observed (C49), the proposed mechanism is a hypothesis that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cargo receptor composition regulates CCP initiation and maturation, TfnR clustering promotes CCP initiation, and Akt plays an important role in CME in cancer cells but not normal epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 establish background knowledge for the CME case study, supported by appropriate citations to previous work (Liu et al., 2010; Loerke et al., 2009; Liberali et al., 2014; Reis et al., 2015).",
+    "result_type": "MINOR"
+  }
+]

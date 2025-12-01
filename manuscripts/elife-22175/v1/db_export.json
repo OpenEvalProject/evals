@@ -1,0 +1,1963 @@
+{
+  "submission": {
+    "id": "80da7694-abd7-4307-a8b3-a62f4e334585",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:57:58.007941Z",
+    "updated_at": "2025-11-30T23:57:58.007941Z"
+  },
+  "content": [
+    {
+      "id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "submission_id": "80da7694-abd7-4307-a8b3-a62f4e334585",
+      "content_type": "manuscript",
+      "content_text": "# Changes in the free-energy landscape of p38\u03b1 MAP kinase through its canonical activation and binding events as studied by enhanced molecular dynamics simulations\n\n## Authors\n\n- Antonija Kuzmanic<sup>1</sup> ([ORCID: 0000-0003-2815-5605](https://orcid.org/0000-0003-2815-5605))\n- Ludovico Sutto<sup>2</sup> ([ORCID: 0000-0002-4084-8562](https://orcid.org/0000-0002-4084-8562))\n- Giorgio Saladino<sup>2</sup> ([ORCID: 0000-0002-3234-5762](https://orcid.org/0000-0002-3234-5762))\n- Angel R Nebreda<sup>1</sup> ([ORCID: 0000-0002-7631-4060](https://orcid.org/0000-0002-7631-4060))\n- Francesco L Gervasio<sup>2</sup> ([ORCID: 0000-0003-4831-5039](https://orcid.org/0000-0003-4831-5039)) \u2020\n- Modesto Orozco<sup>1</sup> ([ORCID: 0000-0002-8608-3278](https://orcid.org/0000-0002-8608-3278)) \u2020\n\n### Affiliations\n\n1. Institute for Research in Biomedicine (IRB Barcelona) The Barcelona Institute of Science and Technology Barcelona Spain\n2. Department of Chemistry University College London London United Kingdom\n3. Catalan Institution for Research and Advanced Studies (ICREA) Barcelona Spain\n4. Joint BSC-CRG-IRB Program in Computational Biology Barcelona Spain\n5. Department of Biochemistry University of Barcelona Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\np38\u03b1 is a Ser/Thr protein kinase involved in a variety of cellular processes and pathological conditions, which makes it a promising pharmacological target. Although the activity of the enzyme is highly regulated, its molecular mechanism of activation remains largely unexplained, even after decades of research. By using state-of-the-art molecular dynamics simulations, we decipher the key elements of the complex molecular mechanism refined by evolution to allow for a fine tuning of p38\u03b1 kinase activity. Our study describes for the first time the molecular effects of different regulators of the enzymatic activity, and provides an integrative picture of the activation mechanism that explains the seemingly contradictory X-ray and NMR data.\n\n## Introduction\n\np38 Ser/Thr kinases are mitogen-activated protein kinases (MAPKs) involved in the regulation of multiple cellular processes, including cell proliferation, differentiation, senescence, and death (Cuadrado and Nebreda, 2010). The p38 subgroup of MAPKs comprises four members (\u03b1-\u03b4) where only p38\u03b1 is expressed ubiquitously at high levels (Cuadrado and Nebreda, 2010). p38 signaling is strongly activated by environmental stresses (e.g. osmotic shock, ionizing radiation), and biological stimuli, such as growth factors and inflammatory cytokines (Trempolec et al., 2013). Furthermore, p38\u03b1 has been implicated in several pathological conditions, for\u00a0example, chronic inflammatory diseases, cancer, and heart and neurodegenerative diseases (Yong et al., 2009, Denise Martin et al., 2012), which is why elucidation of its activation mechanism is of therapeutical importance (Yong et al., 2009; Hammaker and Firestein, 2010).\n\nLike most kinases, p38\u03b1 is composed of two lobes: the smaller N-terminal lobe, consisting mostly of \u03b2-sheets, and the \u03b1-helical C-terminal lobe. The lobes are linked by a flexible hinge that forms the ATP-binding site together with structural elements from both lobes (marked regions in Figure 1). In the canonical activation pathway, MAPK kinases (MAP2Ks) dually phosphorylate the TGY sequence in the activation loop (A-loop; Figure 1a and Video 1) which, according to X-ray crystallography (Zhang et al., 2011a), triggers its large conformational rearrangements and the formation of a characteristic \u03b2-sheet motif away from the ATP- and substrate-binding sites (Figure 1b). The new position of the A-loop brings N- and C-lobes closer and facilitates the reorientation of key residues which participate in the stabilization of ATP and the catalytically crucial Mg2+ ions (Taylor and Kornev, 2011) (i.e. the universally conserved K53, E71, and D168). Moreover, p38\u03b1 and other MAPKs possess two distinct structural elements (Figure 1): (1) the MAPK insert (MKI), which forms a lipid-binding site (Diskin et al., 2008) and (2) the L16 loop that extends from the C-lobe to the N-lobe where it folds into the C-terminal L16 helix. At its C-lobe segment, the L16 loop contains an acidic patch, called the common docking (CD) motif (Tanoue et al., 2000), which together with the hydrophobic groove, formed by the linker between \u03b1D and \u03b1E helices, and the \u03b27-\u03b28 reverse turn (also termed the ED site) (Chang et al., 2002) (Figure 1a), defines the peptide docking site recognized by the conserved docking motif present in activators, substrates, and regulators of MAPKs. The docking site enhances the specificity of MAPKs\u2019 interactions, as well as its activity, albeit through an unknown molecular mechanism (Tanoue et al., 2000). All the structural elements are detailed in the Video 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig1-v1.jpg)\n\n**Figure 1.:** Main structural elements are colored as follows: A-loop in purple (inactive) and green (active), \u03b1C helix in red, L16 loop in slate, P-loop in cyan, hinge in yellow, and MKI in orange. Key residues are shown as sticks and labeled appropriately. The ATP-binding site is indicated by the grey filled ellipse, while the \u03b1E helix, and CD and ED sites by the green dashed ellipse.\n\n![Video 1.](https://cdn.elifesciences.org/articles/22175/elife-22175-media1.mp4.jpg)\n\nThe canonical activation mechanism outlined above, derived from the analysis of phosphorylated and unphosphorylated crystal structures of p38\u03b1 (Zhang et al., 2011a) has recently been challenged by an NMR study of p38\u03b1 in solution (Tokunaga et al., 2014), which surprisingly showed that the dual phosphorylation of the A-loop induces only small conformational changes to p38\u03b1, raising doubts about the reliability of conformational states associated with the canonical activation. To understand the changes that take place upon p38\u03b1 phosphorylation and to explain the observed discrepancies between the NMR and X-ray results, we employed state-of-the-art simulation techniques. Specifically, we used unbiased molecular dynamics (MD) simulations and parallel tempering metadynamics (PT-metaD) (Bussi et al., 2006; Bonomi and Parrinello, 2010; Sutto et al., 2012), a method that combines an enhanced sampling technique with a multi-replica approach and is thus able to converge very complex conformational free-energy surfaces as a function of a few relevant variables, as has been shown previously for several protein kinases (Berteotti et al., 2009; Lovera et al., 2012; Sutto and Gervasio, 2013; Lovera et al., 2015; Marino et al., 2015) and other proteins (Bonomi et al., 2007; Papaleo et al., 2014; Lambrughi et al., 2016). In total, we obtained a high level of sampling (>115 \u03bcs) which allowed us to explore the molecular mechanism of p38\u03b1 canonical activation in unprecedented detail and reconcile the apparently contradictory X-ray and NMR data.\n\n## Results\n\nWe performed PT-metaD in the well-tempered ensemble to obtain free-energy surfaces (FESs) for human p38\u03b1 in four different states: (1) the unphosphorylated, (2) the apo dually phosphorylated, (3) the dually phosphorylated state with bound ATP-Mg2+, and (4) the dually phosphorylated state with bound ATP-Mg2+ and MK2 docking peptide (Figure 2 and Figure 2\u2014figure supplement 1), obtaining total sampling times of 24.25, 24.85, 10.35, and 9.86 \u03bcs, respectively. To analyze the systems, we projected the FESs along two collective variables (CVs) - CV1 and CV2, both of which are based on the A-loop contacts that measure the distance from the crystallographically observed inactive (CV1) and active (CV2) conformations (see Materials\u00a0and\u00a0methods), and which were successfully used previously to study protein kinases (Sutto et al., 2012; Sutto and Gervasio, 2013; Marino et al., 2015). When CV1\u00a0<\u00a00.2 and CV2\u00a0>\u00a00.8, then the system assumes an inactive conformation (as in Figure 1a). On the other hand, when CV1\u00a0>\u00a00.6 and CV2\u00a0<\u00a00.2, the A-loop has formed the characteristic \u03b2-sheet motif (as in Figure 1b) and the enzyme has adopted the canonical active state. As the representative structure of each highlighted minimum, we chose the central structure of the most populated cluster present in the minimum (see Materials\u00a0and\u00a0methods for further details).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-v1.jpg)\n\n**Figure 2.:** The contour lines are drawn every two kcal mol\u22121. Representative structures for the selected minima are shown and colored as follows: A-loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, and hinge in yellow. Key residues are shown as sticks and labeled appropriately. Part of the FES of the phosphorylated p38\u03b1 that is populated by structures which are likely to bind ATP are highlighted with a grey rectangle (upper right panel).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The contour lines are drawn every two kcal mol\u22121. Representative structures for the selected minima are shown and colored as follows: activation loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, and hinge in yellow. Key residues are shown as sticks and labeled appropriately. Part of the FES of the phosphorylated p38\u03b1 that is populated by structures which are likely to bind ATP are highlighted with a grey rectangle (upper right panel).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The elements are colored as follows: activation loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, hinge in yellow, and MKI in orange. Key residues are shown as sticks and labeled appropriately.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The elements are colored as follows: activation loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, hinge in yellow, and MKI in orange. Key residues are shown as sticks and labeled appropriately.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The average value is shown as a red dashed line, while the bin size is 0.2 \u00c5.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The elements are colored as follows: activation loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, hinge in yellow, and MKI in orange. Key residues are shown as sticks and labeled appropriately.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** The elements are colored as follows: activation loop in purple, \u03b1C helix in red, L16 loop in slate, P-loop in cyan, hinge in yellow, and MKI in orange. Key residues are shown as sticks and labeled appropriately.\n\n### Unphosphorylated p38\u03b1\n\nFES of the unphosphorylated state (upper left panel, Figure 2) and the representative structures of the explored minima (Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 2) show that the unphosphorylated protein neither explores the active conformation, nor does it populate a state able to accommodate ATP. Specifically, in the more inactive of the two free-energy minima - (CV1, CV2) = (0.2, 0.7) (upper left panel in Figure 2, Figure 2\u2014figure supplement 2a), the A-loop is positioned over the C-lobe forming contacts with residues involved in the substrate binding and phosphotransfer (Table 1). The P-loop is quite flexible and the K53-E71 salt bridge, which stabilizes ATP, is displaced from the C-lobe due to the broken regulatory spine that is otherwise formed with D168 upon ATP binding (Taylor and Kornev, 2011). Furthermore, E71 interacts with the MAPK-conserved R67 from the \u03b1C helix that stabilizes pT180 in the active form (Figure 1b, present in\u00a0>90% of structures in the most populated cluster). On the other hand, the A-loop of the second minimum contains a short helix which places the conserved R173 in direct contact with the K53-E71 salt bridge, as well as D168 of the conserved DFG motif (Figure 2, Figure 2\u2014figure supplement 2b), while the P-loop is partly collapsed into the ATP-binding site. We observe similar autoinhibitory interactions for the other two higher\u00a0energy minima explored by p38\u03b1 (Supplementary file 1, Figure 2\u2014figure supplement 2c,d). In both cases, R173 is in contact with D168 which otherwise stabilizes ATP upon binding (Kumar et al., 1995; Bellon et al., 1999). Furthermore, in the more inactive minimum (Figure 2\u2014figure supplement 2c), the P-loop is collapsed into the ATP-binding site; while the other explores a conformation reminiscent of the Src-like inactive conformation (Xu et al., 1999) (Figure 2\u2014figure supplement 2d) in which the A-loop forms a short helix stacked against the \u03b1C helix. This configuration has been previously observed also in CDK (De Bondt et al., 1993) and EGFR kinases (Sutto and Gervasio, 2013). These findings are in perfect agreement with experimental studies reporting that the unphosphorylated p38\u03b1 shows almost no affinity for ATP (Tokunaga et al., 2014; Frantz et al., 1998), confirming the strong regulation of the enzyme by phosphorylation.\n\n**Table 1.**\n Interactions of key residues observed in the free-energy minima. Residue pairs with interaction occupancy\u00a0>75% in the most populated clusters of the selected minima are bolded, while the occupancy for the rest of the pairs is in the range of 60\u201375%.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>System</th>\n      <th>Minimum</th>\n      <th>Residue pairs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">p38\u03b1</td>\n      <td>0\u20132 kcal mol\u22121 (CV1, CV2\u00a0=\u00a00.2, 0.7)</td>\n      <td>D176-R189, D177-R186, E178-K152, E178-R173</td>\n    </tr>\n    <tr>\n      <td>0\u20132 kcal mol\u22121 (CV1, CV2\u00a0=\u00a00.2, 0.6)</td>\n      <td>R173-E71, D168-R173, D177-R186</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">p38\u03b1-pTpY</td>\n      <td>0\u20132 kcal mol\u22121</td>\n      <td>E178-R149, E178-R189, D177-R67, pY182-R173</td>\n    </tr>\n    <tr>\n      <td>4\u20136 kcal mol\u22121 (CV1, CV2\u00a0=\u00a00.45, 0.4)</td>\n      <td>D176-R149, D176-R189, D177-R70, pT180-R67, R173-E328</td>\n    </tr>\n    <tr>\n      <td>p38\u03b1-pTpY (ATP-Mg2+)</td>\n      <td>0\u20132 kcal mol\u22121</td>\n      <td>pT180-R67, pT180-R70, pY182-R186, pY182-R189, E178-R70</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">p38\u03b1-pTpY (ATP-Mg2+ + MK2\u00a0peptide)</td>\n      <td>0\u20132 kcal mol\u22121 (CV1, CV2\u00a0=\u00a00.7, 0.1)</td>\n      <td>pT180-R67, pT180-R173, D112-ATP</td>\n    </tr>\n    <tr>\n      <td>0\u20132 kcal mol\u22121 (CV1, CV2\u00a0=\u00a00.4, 0.4)</td>\n      <td>pY182-R67, pY182-R70, D177-R173, D112-ATP</td>\n    </tr>\n  </tbody>\n</table>\n\nTo confirm that the extended conformation of the A-loop attributed to the active state is highly unstable in the unphosphorylated protein, we used unbiased MD simulations that were started from the conformation observed in the X-ray structure of p38\u03b1-pTpY (PDB ID: 3PY3) (Figure 1b) (see Materials\u00a0and\u00a0methods). We performed ten 500-ns-long independent runs at 380 K, all of which quickly showed a change in the A-loop conformation toward the inactive state and sampled conformations that fall in the regions explored in metadynamics simulations. Furthermore, in one of the independent runs the A-loop managed to break the \u03b2-sheet motif in the simulated time, so we extended this run to 2.675 \u03bcs to allow the protein to transition to the inactive state (Figure 3a). Indeed, the protein mostly remained in the global minima observed in metadynamics simulations, and the final conformation showed very similar features to the representative inactive structures (Figure 3b). Root-mean-square fluctuations (RMSF) reveal a high flexibility of several structural elements besides the A-loop (i.e. \u03b1C, \u03b1D, and the MKI helices, Figure 3b) that occurs due to the opening of the lobes and the local unfolding (in the case of \u03b1D helix). Both these events have been previously linked to large conformational changes occurring in other kinases (Sutto and Gervasio, 2013; Whitford et al., 2007; Shan et al., 2013) but have been so far unobserved for p38\u03b1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig3-v1.jpg)\n\n**Figure 3.:** The contour lines are drawn every two kcal mol\u22121. The CV values for the unbiased MD simulation of the same system are drawn every 0.5 ns and shown in a grey gradient as a function of time. (b) The conformation assumed by the protein at the end of the unbiased MD simulation. The backbone is colored according to the RMSF values, with purple indicating higher flexibility regions, while the key residues are shown as sticks and labeled appropriately.\n\n### Dually phosphorylated p38\u03b1\n\nSurprisingly, once p38\u03b1 is dually phosphorylated, it explores conformations that are not largely different from the ones observed for the unphosphorylated protein (upper right panel in Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 3), contrary to the reported X-ray data (Zhang et al., 2011a). In the global minimum, the A-loop moves away from the ATP-binding site, mostly due to the electrostatic interactions formed by the phosphorylated residues which subsequently also stabilize the P-loop and prevent it from collapsing into the ATP binding pocket (Table 1). However, the sampled conformation is unlikely to bind ATP due to the formation of a salt bridge between R49 (positioned beneath the P-loop) and D112 (found at the beginning of the \u03b1D helix) (Figure 2, Figure 2\u2014figure supplement 3a; distance histogram is shown in Figure 2\u2014figure supplement 4). This interaction, which seems to be specific for the phosphorylated protein, locks the hinge and occludes the ATP-binding site. However, the protein also explores a higher\u00a0energy minimum that comes closer to the active one (Figure 2, Figure 2\u2014figure supplement 3b): the A-loop extends toward the L16 loop, yet does not form the \u03b2-sheet motif associated with the active conformation. Regardless, the higher\u00a0energy conformation allows the A-loop to form a number of electrostatic interactions with the \u03b1C helix and the L16 loop (Table 1), while pT180 forms a salt bridge with the highly conserved R67 preventing the P-loop from collapsing into the ATP-binding site. Furthermore, the \u03b1D helix partly unfolds allowing the ATP-binding pocket to assume a more open conformation with the key residues aligned for ATP binding. This observation explains the protein\u2019s low affinity toward ATP in the phosphorylated state (Tokunaga et al., 2014; Frantz et al., 1998) and demonstrates that the dual phosphorylation can help define a receptive ATP-binding site but is not sufficient for the protein to adopt the conformation captured by X-ray crystallography (Figure 1b). In fact, to populate that state, we would need to add 16\u201318 kcal mol\u22121 of free energy to the phosphorylated system (minimum located at (CV1, CV2) = (0.6, 0.2) in the upper right\u00a0panel of Figure 2, Figure 2\u2014figure supplement 3d).\n\nTo further confirm the instability of the conformation observed by X-ray crystallography, we again used unbiased MD simulations that were started from the said conformation (PDB ID: 3PY3) (Figure 1b) (see Materials and methods). We performed ten 1-\u03bcs-long independent runs at 380 K, most of which showed a change in the A-loop conformation toward the regions explored by the protein in metadynamics simulations (upper right panel in Figure 2). Furthermore, in one of the independent runs the A-loop broke the \u03b2-sheet motif, so we extended this run to 2 \u03bcs during which the protein settled in the aforementioned higher\u00a0energy minima that seems likely to bind ATP (Figure 4a). The final conformation shows similar features to the representative structure of this minimum, that\u00a0is, the A-loop is positioned away from the ATP-binding site and forms several electrostatic interactions with the \u03b1c helix and the L16 loop (Figure 4b). RMSF values reveal a high flexibility of several structural elements besides the loops (i.e. \u03b1D, and the MKI helices, Figure 4b) that occurs due to local unfolding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig4-v1.jpg)\n\n**Figure 4.:** The contour lines are drawn every two kcal mol\u22121. The CV values for the unbiased MD simulation of the same system are drawn every 0.5 ns and shown in a grey gradient as a function of time. (b) The conformation assumed by the protein at the end of the unbiased MD simulation. The backbone is colored according to the RMSF values, with purple indicating higher flexibility regions, while the key residues are shown as sticks and labeled appropriately.\n\n### Dually phosphorylated p38\u03b1 with bound ATP-Mg2+\n\nThe FES plot for the phosphorylated system with bound ATP-Mg2+ complex shows a clear shift toward a more active conformation (i.e. a displacement toward right and bottom in the lower left panel of Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 5). While the representative structure of the global minimum does not form the \u03b2-sheet motif associated with the active state (Figure 2\u2014figure supplement 5a), its A-loop extends toward the L16 loop and connects to the \u03b1C helix via the coordination of pT180 by R67 and R70 (as observed in the active X-ray structure in Figure 1b). The \u03b2-sheet motif does form in the higher\u00a0energy minimum centered at (CV1, CV2) = (0.6, 0.1); however, its representative structure (lower left panel in Figure 2, Figure 2\u2014figure supplement 5b) shows pT180 forming less contacts with the \u03b1C helix and the L16 loop (Supplementary file 1). The lack of these interactions, together with the disorder present in the P-loop, breaks the contact of E71 with Mg2+ ions resulting in a less stable complex with ATP. Overall, albeit the binding of ATP stabilizes an active-like structure, it is not enough for the protein to display the active conformation observed in the crystal structure (Figure 1b). While the A-loop does adopt an extended conformation and forms the \u03b2-sheet motif at the higher\u00a0energy state, it still remains quite mobile and the phosphorylated residues do not necessarily form all the contacts observed in the X-ray structures.\n\nOnce again, we used unbiased MD simulations to give further support to our free-energy surfaces. We performed ten 1-\u03bcs-long independent runs at 380 K of the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ starting with the A-loop in the extended conformation (as in Figure 1b) (see Materials and methods). Most of the simulations explored only the local minimum close to the starting structure, while one of the runs showed more conformational diversity, so we extended it to 1.55 \u03bcs which allowed the protein to transition to the global minimum (Figure 5a). The final conformation shows the disruption of the \u03b2-sheet motif in the A-loop and the calculated RMSFs reveal its high flexibility (Figure 5b). Furthermore, pT180 remains in contact with the conserved arginine residues of the \u03b1C helix, while pY182 moves away from H228, similarly to the representative structure of the global minimum in the free-energy surface. Overall, RMSF values show a lower flexibility of the protein upon the addition of the ATP compared to the simulations of the apo systems (Figures 3b and 4b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig5-v1.jpg)\n\n**Figure 5.:** The contour lines are drawn every two kcal mol\u22121. The CV values for the unbiased MD simulation of the same system are drawn every 0.5 ns and shown in a grey gradient as a function of time. (b) The conformation assumed by the protein at the end of the unbiased MD simulation. The backbone is colored according to the RMSF values, with purple indicating higher flexibility regions, while the key residues are shown as sticks and labeled appropriately.\n\n### The active conformation\n\nWhile the dual phosphorylation and the ATP-binding drive the enzyme toward an active conformation, there is an obvious need for additional elements to complete the transition. Particularly, we wondered whether the binding of the MK2 docking peptide could provide the necessary stability to form the \u03b2-sheet motif. The FES for this system indeed shows a deepening of the minimum at (CV1, CV2) = (0.7, 0.1) which is associated with the formed \u03b2-sheet motif (lower right panel in Figure 2, enlarged structures in Figure 2\u2014figure supplement 6). The representative structure of the minimum (Figure 2\u2014figure supplement 6a) confirms this observation and shows pT180 near the three conserved arginines (R67, R70, and R173), while pY182 again displays higher mobility and moves away from H228 (Table 1, Figure 1b). Furthermore, the addition of the MK2 peptide does not eliminate the global minimum at (CV1, CV2) = (0.4, 0.4), observed also in the presence of ATP (two lower panels in Figure 2). However, it flattens the FES which would indicate an easier transition between the two described minima. The representative structure of the minimum (Figure 2\u2014figure supplement 6b) shows a conformation in which the A-loop is extended away from the ATP-binding site, yet without the formed \u03b2-sheet motif and with switched positions of phosphorylated residues compared to the X-ray structure (Table 1, Figure 1b).\n\nIn addition, we performed unbiased MD simulations of the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ and the MK2 docking peptide. We generated ten 1-\u03bcs-long independent runs at 380 K, obtaining a total accumulated sampling time of 10 \u03bcs (see Materials and methods). The protein remains mostly in the regions associated with the extended conformation of the A-loop with formed \u03b2-sheet motif, but it also explores the conformational space closer to the other global minimum (also the global minimum in the system without the MK2 peptide) (Figure 6a). Interestingly, the N-terminal part of the MK2 docking peptide binds the ED site and stabilizes the \u03b1D-\u03b1E linker hindering the flexibility of the \u03b1D helix and allowing the D112 to reorient and stabilize ATP by forming hydrogen bonds with ribose (Figure 2\u2014figure supplement 6, Figure 6b). While we also observe this interaction in the absence of the MK2 peptide, it is not as stable as in its presence which explains the phosphotransfer enhancement upon MK2 peptide docking (Tokunaga et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig6-v1.jpg)\n\n**Figure 6.:** The contour lines are drawn every two kcal mol\u22121. The CV values (calculated every 0.5 ns) for the unbiased MD simulations of the same system are shown as orange contours based on their density. (b) Histograms of the minimal distances between ATP and D112 calculated from the unbiased simulations of the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ with or without the MK2 docking peptide (colored grey and red, respectively). The average values are shown as dashed lines, while the bin size is 0.5 \u00c5.\n\nOur results suggest that p38\u03b1 predominantly samples conformations with the fully extended A-loop only upon double phosphorylation and the binding of ATP and the docking peptide. This might seem in contrast to the model obtained from X-ray crystallography (Figure 1b). However, careful analysis of the crystal contacts (which form between the molecules due to their orientation and packing within the crystal, Figure 7) reveals numerous interactions formed between functionally important structural elements, such as the L16 loop. These contacts mimic the stabilizing effects of p38\u03b1 binders. Particularly, we found an atypically long expression His-tag of a neighboring molecule bound to the hydrophobic docking groove which, upon closer inspection (see below), has the same effect on the protein as the MK2 docking peptide did in our simulations.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig7-v1.jpg)\n\n**Figure 7.:** The residues are considered to be in contact if the minimal distance between any of their atoms is under 4 \u00c5. The contacts formed by the docked elements are indicated by the solid ellipses, while the ones formed between functionally important elements are indicated by the dashed ellipses. Secondary structure elements are also shown with \u03b1-helices in purple, \u03b2-sheets in green, and loops in grey. Missing residues are shown as light grey rectangles.\n\nTo prove that this is the case, we simulated a crystal supercell of the apo dually phosphorylated p38\u03b1 composed of 4 unit cells and 16 protein molecules (see Materials and methods), which allowed us to maintain crystal contacts and obtain 8 \u03bcs of sampling for\u00a0~170,000 atoms. As shown by Figure 8, the A-loop is very stable in the conformation captured by the X-ray model - the \u03b2-sheet motif is unperturbed during the simulation, as well as the contacts made by pT180 with the three conserved arginines (R67, R70, and R173). However, pY182 is more mobile and at times breaks away from H228 and the conserved arginines of the P+1 loop (R186 and R189). This is consistent with the electron density which is not so well defined for pY182 as it is for the rest of the A-loop. Furthermore, we could also qualitatively match the B-factors reported for the X-ray structure (PDB ID: 3PY3) (Figure 8b,d), while the most mobile regions in our simulations (mainly, the N- and C-terminal tails) are missing from the deposited electron density. We would like to stress that it is impossible for our MD simulations to quantitatively match the reported B-factors for the following reasons: (1) While the crystals were grown at 293 K, the data were collected at 100 K. Since MD simulations and their algorithms have not been developed for such low temperatures, we performed our crystal simulations at 293 K which increased the overall atomic motions; (2) The experimental data collected for the crystals in general are time and ensemble averages of 1023 molecules which are in the end represented by a single model, while its B-factors then reflect both the static and the dynamic disorder of the crystal. Finally, two independent studies had shown that the refinement process underestimates the disorder present in the crystal thereby producing lower B-factors (Janowski et al., 2013; Kuzmanic et al., 2014).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig8-v1.jpg)\n\n**Figure 8.:** The contour lines are drawn every two kcal mol\u22121. The CV values (calculated every 0.5 ns) for the unbiased MD simulations of the 3PY3 crystal are shown as orange contours based on their density. (b) The average conformation of the protein calculated from the unbiased MD simulations. The protein is colored according to the calculated RMSF values after the backbone alignment with respect to the 3PY3 X-ray structure. (c) Backbone RMSD values calculated with respect to the 3PY3 X-ray structure either with or without N- and C-terminal tails. The average values over 16 molecules are shown by the black lines, the extreme values by the red lines, while the error bars depicting one standard deviation are shown every 25 ns. (d) X-ray structure of the dually phosphorylated p38\u03b1 (PDB ID: 3PY3) colored by refined B-factors.\n\nThus, our analysis and simulations strongly suggest that the deposited crystal structure does not fully capture the apo conformation that p38\u03b1 assumes under physiological conditions and it most likely suffers from artifacts due to the crystal contacts.\n\n## Discussion\n\nIn the clever paraphrase of Tolstoy\u2019s Anna Karenina, Noble et al. (Noble et al., 2004) stated how all active kinases are alike but an inactive kinase is inactive after its own fashion - referring to the attractiveness of the inactive form in the everlasting search for inhibitor selectivity. Kinases, however, seem to have a few surprises left within their folds, even when it comes to the seemingly uniform active state. In the case of p38\u03b1, the protein requires dual phosphorylation of the TGY motif for its activation and subsequent ATP binding. Based on the apo X-ray structure of p38\u03b1-pTpY (Zhang et al., 2011b), the phosphorylation event has been perceived as the trigger for the conformational change in which the A-loop moves away from the ATP-binding site enabling the N- and C-lobes to reorient and align the residues necessary for the ATP stabilization. Unlike CDK5 (Berteotti et al., 2009), EGFR (Sutto and Gervasio, 2013), and Src (Shukla et al., 2014; Foda et al., 2015), p38\u03b1 never explores the \u03b1C-out conformation (neither in any of the deposited X-ray structures - Figure 9a nor in our simulations), in which the helix rotates by\u00a0>45\u00b0 (breaking the K53-E71 salt bridge in the process). This likely occurs due to the extensive range of contacts formed between the \u03b1C and the L16 helix, which is unique to MAPKs, indicating that the observed feature could be family-specific. Furthermore, MAP kinases contain two conserved arginine residues (R67 and R70) in the \u03b1C helix that readily form salt bridges with numerous negatively charged residues in the A-loop (Figure 10), thereby stabilizing various A-loop conformations which are not necessarily observed by X-ray crystallography. Despite an overwhelming amount of structural data (with 206 structures of human p38\u03b1 in the PDB), just 47 structures have complete A-loops (i.e. without any missing or zero-occupancy residues), out of which only one structure contains the A-loop devoid of any crystal contacts (PDB ID: 2BAJ). Unfortunately, this structure has been solved in the DFG-out conformation with a bound inhibitor and it cannot be representative of the apo unphosphorylated state. However, the mere lack of information indicates just how flexible the A-loop is and why it is almost impossible to resolve it unless it forms crystal contacts. Our extensive simulations also indicate that the unphosphorylated p38\u03b1 never explores a conformation that could possibly bind and stabilize ATP - mostly due to A-loop interactions with the DFG-Asp which is crucial for ATP stabilization (Kumar et al., 1995). It is worth noting that related proteins, like ERK2, are able to bind ATP in the unphosphorylated state (Lee et al., 2005; Sours et al., 2008; Canagarajah et al., 1997; Khokhlatchev et al., 1998) most likely due to longer A-loops (Figure 10), which are then easier to stabilize away from the ATP-binding site.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig9-v1.jpg)\n\n**Figure 9.:** K53-E71 distances were calculated for structures without any mutations, while R49-D112 and R49-E160 for structures without missing R49, D112, and E160 residues. The average values are shown as red dashed lines, while the bin size is 0.5 \u00c5.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/22175/elife-22175-fig10-v1.jpg)\n\n**Figure 10.:** Selected positively charged residues are colored green, negatively charged ones magenta, while the catalytically important residues in the \u03b1C helix are bolded, as well as the phosphorylated residues in the activation loop.\n\nPhosphorylation, however, does change the free-energy surface and enables the A-loop to form salt bridge interactions with the autoinhibitory arginine residues - R67 and R173. The former of the two, as mentioned above, is MAPK-specific and its importance is highlighted further by the R67A mutation that decreases p38\u03b1 kinase activity (Gum et al., 1998), and the R67I somatic mutation that was found in colon adenocarcinoma (COSMIC: COSM1444062). The newly formed interactions keep the A-loop away from the ATP-binding site which is occluded by the formation of the R49-D112 salt bridge. ATP binding is therefore only possible in less populated conformations of the protein, explaining the experimentally observed low ATP-binding affinity (Tokunaga et al., 2014; Frantz et al., 1998). If one looks solely at X-ray structures where R49 is\u00a0~15 \u00c5 away from D112 (Figure 9b), the formation of this particular salt bridge might seem like an artifact arising from force field or methodological imperfections. However, R49 is a part of the loop positioned below the very flexible P-loop (whose residues are often unresolved) and we have often observed its interaction with E160 of the ED site in our simulations (both unbiased and biased), regardless of the protein\u2019s phosphorylation state (R49-E160 is\u00a0~9 \u00c5 in the analyzed X-ray structures - Figure 9c). We believe that the reason for these discrepancies lies in the fact that the loop containing R49 forms crystal contacts in all the 206 deposited X-ray structures which would most likely restrict its mobility and prevent the interactions observed in MD simulations.\n\nWhile the binding of ATP-Mg2+ helps p38\u03b1 come closer to the active form, it is insufficient to lead to a complete shift, as proposed by the NMR model (Tokunaga et al., 2014). The full transition, however, does occur in our simulations upon binding of the MK2 docking peptide, which has been previously shown to enhance the catalytic steps (Tokunaga et al., 2014). We hypothesize that the docking peptide prevents the formation of the R49-D112 salt bridge in the phosphorylated protein and brings in the L16 loop. This allows the A-loop to form additional stabilizing contacts, as suggested in the case of ERK2 (Zhou et al., 2006) and causes the observed 20-fold increase in the ATP-binding affinity by the MK2 docking peptide (Tokunaga et al., 2014). The changes that the docking peptide introduces into the protein structure are particularly interesting when it comes to the crystal contact analysis of the dually phosphorylated p38\u03b1 X-ray structure with the active A-loop conformation. We found an atypically long expression tag of the neighboring molecule bound in the docking site which, together with other crystal contacts, induces the active state stabilized within the crystal. These observations show how important it is to carefully analyze symmetry-related molecules and they call for caution in the interpretation of deposited X-ray structures, as they can be misleading.\n\nOverall, our extensive PT-metaD calculations converge to free-energy surfaces that together with the unbiased MD simulations offer unparalleled insight into the molecular mechanism of p38\u03b1 canonical activation elucidating a complex conformational behavior that is consistent with experimental observations. Despite the initial discrepancies between previous structural studies, our findings reconcile the deposited models from X-ray crystallography with the NMR data. Considering the importance of p38\u03b1 for both normal physiology and pathological processes, we hope the knowledge obtained in this study will help to target the protein with more specificity.\n\n## Materials and methods\n\n### Protein structures and their preparation\n\nThe X-ray structure used as the starting conformation for the PT-metaD simulations of inactive unphosphorylated and phosphorylated human p38\u03b1 is deposited under the Protein Data Bank (PDB) code 3S3I. This structure was also used with the structure of the active phosphorylated mouse p38\u03b1 (PDB ID: 3PY3) to build the human protein in the latter conformation by using ICM (RRID:SCR_014878) (Abagyan et al., 1994). The coordinates of the ATP molecule and the Mg ions were taken from the active phosphorylated human p38\u03b3 (PDB ID: 1CM8), while the coordinates of the MK2 docking peptide (residues 370\u2013393) were taken from the p38\u03b1-MK2 complex (PDB ID: 2OKR). The missing atoms in 3S3I and MK2 peptide were built with PDB2PQR (Dolinsky et al., 2004), while the residues T180 and Y182 were phosphorylated using Vienna-PTM server (Margreitter et al., 2013). All proteins consist of the sequence E4-P352 and the standard residue numbering for p38\u03b1 is applied throughout.\n\n### MD simulations\n\nEach simulated system was generated using CHARMM27 force field (MacKerell et al., 1998; Foloppe and MacKerell, Jr., 2000; MacKerell and Banavali, 2000) at pH 7.4. The protonation states of the residues were determined both by H++ server (Anandakrishnan et al., 2012) and PROPKA3.0 (Li et al., 2005) which gave identical results leaving all the residues in their usual charge states, except for His312 which was protonated. Since the pKa2 of phosphoric acid is measured at 6.7 and 7.2 (Peacock and Nickless, 1969; Lide, 2005), the charge of phosphoric residues was set at \u22121. The systems were solvated with\u00a0~20,000 TIP3P water molecules (Jorgensen et al., 1983; Mahoney and Jorgensen, 2000) in a triclinic box with periodic boundary conditions, while Na+ and Cl- ions were added to reach neutrality and the final concentration of 50 mM (the total number of atoms was\u00a0~65,000). Energy of the simulated system was initially minimized in two cycles of steepest-descent energy minimization. The initial velocities for the atoms were taken from Maxwell distribution at 100 K, and the system was subsequently heated to 300 K in five steps of 50 K simulated for 200 ps at constant volume each using velocity rescale thermostat (Bussi et al., 2007). In parallel, atomic position restraints for the protein (as well as the ATP molecule and Mg2+ ions if present) were uniformly relaxed (with the restraint spring constant going from 25,000 kJ mol\u22121 nm\u22122 to 0 kJ mol\u22121 nm\u22122 in steps of 5000 kJ mol\u22121 nm\u22122). In the end, the system was equilibrated for additional 200 ps under the final conditions. The magnesium ions were restrained to the ATP molecule, that\u00a0is its last two phosphate atoms (at 3 and 4 \u00c5) and their adjoining oxygen atoms (two restraints per Mg2+ at 2.4 \u00c5) throughout the equilibration and production runs using a restraint spring constant of 150 kJ mol\u22121 nm\u22122. The weak restraints were used to make sure that the ions do not unbind at higher temperature replicas. The production simulations were generated using the GROMACS 4.6.7 biomolecular simulation package (RRID:SCR_014565) (Pronk et al., 2013) with the PLUMED2.1 plugin (Bonomi et al., 2009; Tribello et al., 2014) with a 2-fs integration step. Constant volume conditions were employed throughout with the velocity rescale thermostat (Bussi et al., 2007). Bond lengths were constrained using LINCS (Hess et al., 1997), while van der Waals interactions were treated with a cutoff of 10 \u00c5. Electrostatic interactions were computed using the particle mesh Ewald method (Essmann et al., 1995) with the direct sum cutoff of 10 \u00c5 and the Fourier spacing of 1.2 \u00c5.\n\nIn the case of unbiased simulations (unphosphorylated p38\u03b1 with the A-loop in the extended conformation, apo dually phosphorylated p38\u03b1 with the A-loop in the extended conformation, the dually phosphorylated p38\u03b1 with bound ATP-Mg2+, and the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ and MK2 docking peptide), 10 independent runs of each system were equilibrated to a temperature of 380 K by two additional steps of 40 K compared to the aforementioned protocol, while the position restraints for the protein were uniformly relaxed in steps of 2500 kJ mol\u22121 nm\u22122. The system was equilibrated for additional 200 ps under constant pressure using Berendsen barostat (Berendsen et al., 1984). The production simulations were generated under the same conditions as above with the addition of constant pressure of one bar using Parrinello-Rahman barostat (Parrinello and Rahman, 1981) and coordinate output of 10 ps. In the case of unphosphorylated system, each independent run was initially 500 ns long. One run that showed a broken \u03b2-sheet motif after 500 ns was extended to a total of 2.675 \u03bcs. For the apo phosphorylated system, each independent run was 1 \u03bcs long. One of the trajectories showed a broken \u03b2-sheet motif early on and was extended to 2 \u03bcs. Each independent run of the phosphorylated system with bound ATP-Mg2+ was also initially simulated for 1 \u03bcs, while one run that exhibited more conformational diversity was extended to 1.55 \u03bcs to transition to the global minimum. In the case of the dually phosphorylated system with bound ATP-Mg2+ and MK2 docking peptide, each independent run was 1 \u03bcs, amounting to a total sampling time of 10 \u03bcs. The magnesium ions were restrained to the ATP molecule throughout the equilibration and production runs in the same way as in the metadynamics runs.\n\nFor the simulation of p38\u03b1 protein crystal, a supercell of the dually phosphorylated mouse p38\u03b1 (PDB ID: 3PY3) containing four unit cells (2 \u00d7\u00a02 \u00d7 1), each with four asymmetric units (i.e. 16 protein molecules in total), was built using PyMOL (RRID:SCR_000305) (Schrodinger, 2015). Missing residues of the N- and C-terminal tails were added to each protein using Modeller (RRID:SCR_008395) (Sali and Blundell, 1993). Protein chain whose tail was built buried within the crystal was chosen as the starting structure to avoid steric clashes caused by the lack of periodic boundary conditions during the modelling process. The supercell was rebuilt in PyMOL and used for pKa calculations with PROPKA3.0 (Li et al., 2005) leaving all the residues in the same charged state as in the previous simulations, while among the newly built residues His-10 was protonated. The system was solvated with\u00a0~24,000 TIP3P water molecules (Jorgensen et al., 1983; Mahoney and Jorgensen, 2000) in a triclinic box using the dimensions of the original crystal and periodic boundary conditions. Na+ and Cl- ions were added to reach neutrality and the ionic strength of sodium citrate used in the original experiment (with the final concentration of 600 mM). The total number of atoms in the system was\u00a0~170,000. The system was minimized and equilibrated as described above to the temperature of 293 K which corresponds to the temperature used for growing crystals. Canonical ensemble at 293 K was maintained for the production run which was 500 ns long. By using a supercell system, crystal contacts were present throughout the simulation, while the interaction of molecules with themselves through periodic boundary conditions was avoided and 8 \u00b5s of sampling were obtained for the dually phosphorylated p38\u03b1 in the crystal environment.\n\n### Enhanced sampling\n\nFirst, a parallel tempering metadynamics (PT-metaD) with 10 replicas per system was performed at increasing temperatures (300, 310, 320, 330, 341, 352, 363, 375, 387, and 400 K) in which only the potential energy was biased to achieve an exchange rate of 30% between the neighboring replicas. The obtained bias was saved and used further in the production runs as a constant bias. The production runs of PT-metaD in the well-tempered ensemble (Bonomi and Parrinello, 2010) were performed for each system consisting of 10 replicas, meaning that a Gaussian potential was deposited in the collective variable space every 2 ps with the height $W=W_{0}e^{\u2212V(s,t)/(f\u22121)T}$, where $W_{0}$ = 5 kJ mol\u22121 is the initial height, $V(s,t)$ is the bias potential at time $t$ and CV value $s,f$ = 10 is the biasing factor, and $T$ is the temperature of the replica. The collective variables used in the study are distances in contact map space from the inactive (CV1) and active (CV2) A-loop conformation. $CV(R)=1/N\\sum_{\\gamma\u03f5\u0393}(D_{\\gamma}(R)\u2212D_{\\gamma}(R_{ref}))^{2}$, where $D_{\\gamma}(R)$ is a sigmoidal function that measures the degree of formation of the contact $\\gamma$ in the structure $R$ and is defined as $D_{\\gamma}(R)=W_{\\gamma}\\frac{1\u2212(r_{\\gamma}/r_{\\gamma}^{0})^{n}}{1\u2212(r_{\\gamma}/r_{\\gamma}^{0})^{m}}.r_{\\gamma}$. is the contact distance in the structure $R,r_{\\gamma}^{0}$ is the contact distance in either the reference inactive or active conformation depending on which the contact $\\gamma$ is specific for, $W_{\\gamma}$ is the weight of the contact and is set to one for regular contacts and three for salt bridges,\u00a0$N$ is a normalization constant, n\u00a0=\u00a06, and m\u00a0=\u00a010. The widths of the Gaussians are \u03c31,2 = 0.05. The set of contacts $\u0393$ defining the contact maps was determined as follows: minimized structures of inactive (PDB ID: 3S3I) and active (PDB ID: 3PY3) conformations were used to determine all the pairs of C\u03b1, C\u03b2 or backbone O atoms that fall within a 5 \u00c5 distance cutoff. To relax and lose possible crystal contacts, 10 independent equilibration runs were generated for both the inactive and the active phosphorylated systems. Only those atomic pairs that appear in five or more equilibrated structures and that specifically discriminate between the inactive and active conformations were kept, that\u00a0is, those that appear either in one or the other, thereby discarding the pairs common to both conformations. A set of 97 regular contacts was obtained this way to which seven salt-bridge contacts involving residues of the A-loop that were specific to the active conformation were added and weighed three times more than regular contacts.\n\n### Convergence of metaD simulations\n\nInitially, FE surfaces were produced with a bias corresponding to an exchange rate of 30% between neighboring replicas and were subsequently refined by lowering the bias on the potential energy to achieve an exchange rate of 10% and run for additional 150 ns to convergence. The simulations were considered to be converged once the free energy in the bidimensional projections and in the monodimensional projections does not change more than 2 kcal mol\u22121 in the last 100 ns. This criterion resulted in a 2.425-\u03bcs-long simulation for the unphosphorylated, 2.485-\u03bcs-long simulation for the phosphorylated system, 1.035-\u03bcs-long simulation for the phosphorylated system with bound ATP, and 0.986-\u03bcs-long simulation for the phosphorylated system with bound ATP and MK2 docking peptide.\n\n### Analysis of structures populating the free-energy minima\n\nFree-energy surfaces (FES) for the two CVs were calculated by integrating the bias deposited during the simulations. For each system, several basins from the FES plot were chosen for further analysis. All the structures that fell within each basin were clustered using the gromos algorithm (Daura et al., 1999) and the g_cluster routine (GROMACS) by using the RMSD of C\u03b1 atoms as the distance between the structures and the cutoff value of 2 \u00c5. The central structure of the most populated cluster of each basin (i.e. the structure with the smallest distance to all the other members of the cluster) was chosen as the representative of the basin. Furthermore, central structures of top five most populated clusters (which on average contain 75% of all structures) were inspected to make sure that the main structural features in terms of P-loop and A-loop positions were captured by these clusters. To avoid highlighting interactions that occur only sporadically in the simulations, only those salt-bridge interactions that are maintained in the majority of structures of the most populated cluster, as well as most of structures of the selected basin, were highlighted in the tables throughout the paper.\n\n### Analysis of X-ray structures and their symmetry-related neighbors\n\nSymmetry-related molecules of mouse apo p38\u03b1-pTpY (PDB ID: 3PY3) that are closer than 4 \u00c5 to the original structure were generated by PyMOL (Schrodinger, 2015). The same distance criterion was used to determine which pairs of residues of neighboring molecules come into contact.\n",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "7f2ec114-108b-497c-aa4a-57c3da23dfb2",
+      "submission_id": "80da7694-abd7-4307-a8b3-a62f4e334585",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22175.023](https://doi.org/10.7554/eLife.22175.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular mechanism of canonical activation of p38\u03b1 MAP kinase\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports simulation studies aiming to elucidate the activation mechanism of p38\u03b1 kinase. Using unbiased molecular dynamics simulations and calculation of free energy surfaces of the system, the authors attempt to reconcile the apparent contradictions between the X-ray structures of p38\u03b1 (showing large structural changes associated with kinase dual-phosphorylation) and the NMR findings (the phosphorylation does not lead to significant chemical shift perturbation).\n\nEssential revisions:\n\n1) The free energy surface (FES) of ATP-bound phosphorylated system shows that the active state is accessible now, but unbiased MD simulations showed that only with substrate binding the system is stable at the active basin. To complete the paper's argument, FES of phosphorylated p38\u03b1 with ATP and substrate bound should be calculated besides the unbiased simulations at 380 K. Also, showing unbiased MD on the phosphorylated and ATP-bound system without substrate and mapping the trajectory to the two CVs analogous to Figure 4 would be helpful to this argument.\n\n2) p38\u03b1 should be simulated with its crystal contacts in unbiased simulations to support the notion that crystal contacts maintain apo p38\u03b1 in its otherwise unstable active conformation in crystal environment.\n\n3) The paper is descriptive of selected conformations representative of conformational ensembles at various free energy basins; but, it is not clear how the discussed conformations are selected to represent the ensemble of each basin. The selections should be justified based on characterization of the ensemble of the entire free-energy basin; this justification is missing as is.\n\nOther important points:\n\n1) For phosphorylated p38\u03b1, a histogram/time-series should be shown for R49-D112 salt-bridge (ascribed to occlude ATP binding). The regions in the free energy surface allowing ATP binding should also be shown. Reviewers are concerned that the free energy surfaces of the apo unphosphorylated system are very similar to the apo phosphorylated, but the latter system binds ATP much stronger than the former. (In Tokunaga et al., 2014, the ATP affinity is 430 \u03bcM, while Frantz et al., 1998 only reported the Km[ATP] to be 25 \u03bcM. Unphosphorylated systems binds ATP much weaker at millimolar affinity.) How is the \u03bcM ATP binding reconciled with the R49-D112 salt-bridge? Another concern is that, by the energy surface of the apo phosphorylated system, the ATP-bound X-ray structure is as much as 16~18 kcal/mol higher in free energy than the inactive conformation, which seems unlikely.\n\n2) The manuscript reports certain structural features differ considerably from any of the known crystallographic structures (e.g. 3S3I, 3PY3, 2OKR and 1CM8), which calls to question the structural details extracted from the PT-metaD trajectories (e.g. the activation-loop helix (purple in Figure 3B, and the R49-D112 salt bridge, which requires D113 to move 18 \u00c5 from its positions in the X-ray structures). The reliability of these simulations generated conformations need be calibrated in Discussion.\n\n3) Finally, how the simulation results explain the seemingly contradictory X-ray and NMR data needs to be further discussed in more explicit terms. The contradictory is understood to be the lack of chemical shift perturbation (CSP) between unphosphorylated and phosphorylated yet the x-ray structures are the closed and open alternative structures of the A-loop. The NMR study also shows a large CSP for ATP binding to phosphorylated p38\u03b1. The minima in the FE surfaces in Figure 2 differ between the 3 states (unphosphorylated, phosphorylated and ATP bound phosphorylated) yet have overlapping regions. The overlap could explain the lack of CSP for unphosphorylated and phosphorylated (as stated in the subsection \u201cDually phosphorylated p38\u03b1\u201d), but how the large CSP for bound ATP is rationalized by the FE surface, since, as stated in the manuscript, \"the representative structure of the global minimum [for ATP-bound] is still not too different from the dominant one in the apo phosphorylated state.\" This should be explained in more explicit terms.\n",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5cc076fd-dd51-4c98-8e03-db2fca4f7679",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C1",
+      "claim": "p38\u03b1 is a Ser/Thr protein kinase involved in a variety of cellular processes and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "p38\u03b1 is a Ser/Thr protein kinase involved in a variety of cellular processes and pathological conditions, which makes it a promising pharmacological target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general characterization of p38\u03b1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "97b17aff-2f1e-4383-87ba-ce699cddb715",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C2",
+      "claim": "p38\u03b1 is a promising pharmacological target.",
+      "claim_type": "EXPLICIT",
+      "source": "p38\u03b1 is a Ser/Thr protein kinase involved in a variety of cellular processes and pathological conditions, which makes it a promising pharmacological target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract based on the kinase's involvement in various processes and pathological conditions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "64716c17-c0e1-445b-8c04-7610da19b280",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C3",
+      "claim": "The molecular mechanism of p38\u03b1 activation remains largely unexplained despite decades of research.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the activity of the enzyme is highly regulated, its molecular mechanism of activation remains largely unexplained, even after decades of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "f75be334-b7de-4664-8acc-44e8611581d9",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C4",
+      "claim": "The study describes for the first time the molecular effects of different regulators of p38\u03b1 enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study describes for the first time the molecular effects of different regulators of the enzymatic activity, and provides an integrative picture of the activation mechanism that explains the seemingly contradictory X-ray and NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "d77ff4e1-cba1-41f8-a9ce-ff83354109b9",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C5",
+      "claim": "The study provides an integrative picture of the activation mechanism that explains the seemingly contradictory X-ray and NMR data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study describes for the first time the molecular effects of different regulators of the enzymatic activity, and provides an integrative picture of the activation mechanism that explains the seemingly contradictory X-ray and NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the abstract, supported by the simulation data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "12469dce-23c7-4f91-b8b7-64b4dc3369e6",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C6",
+      "claim": "The p38 subgroup of MAPKs comprises four members (\u03b1-\u03b4).",
+      "claim_type": "EXPLICIT",
+      "source": "The p38 subgroup of MAPKs comprises four members (\u03b1-\u03b4) where only p38\u03b1 is expressed ubiquitously at high levels (Cuadrado and Nebreda, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "2fc693d9-2870-41a6-a0a6-3931d9fdf7c1",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C7",
+      "claim": "Only p38\u03b1 is expressed ubiquitously at high levels among p38 MAPK members.",
+      "claim_type": "EXPLICIT",
+      "source": "The p38 subgroup of MAPKs comprises four members (\u03b1-\u03b4) where only p38\u03b1 is expressed ubiquitously at high levels (Cuadrado and Nebreda, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "6e407397-6a3c-4a31-90d6-4cd217a22eed",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C8",
+      "claim": "p38 signaling is strongly activated by environmental stresses such as osmotic shock and ionizing radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "p38 signaling is strongly activated by environmental stresses (e.g. osmotic shock, ionizing radiation), and biological stimuli, such as growth factors and inflammatory cytokines (Trempolec et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "de029301-5c96-40fb-8270-feb10081d5da",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C9",
+      "claim": "p38 signaling is strongly activated by biological stimuli such as growth factors and inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "p38 signaling is strongly activated by environmental stresses (e.g. osmotic shock, ionizing radiation), and biological stimuli, such as growth factors and inflammatory cytokines (Trempolec et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "7d7be072-5d26-41f4-aac6-f6247981e62b",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C10",
+      "claim": "p38\u03b1 has been implicated in several pathological conditions including chronic inflammatory diseases, cancer, and heart and neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, p38\u03b1 has been implicated in several pathological conditions, for example, chronic inflammatory diseases, cancer, and heart and neurodegenerative diseases (Yong et al., 2009, Denise Martin et al., 2012), which is why elucidation of its activation mechanism is of therapeutical importance (Yong et al., 2009; Hammaker and Firestein, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "b2699514-187f-4d02-bfc8-d9b3e816e09c",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C11",
+      "claim": "Elucidation of p38\u03b1 activation mechanism is of therapeutical importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, p38\u03b1 has been implicated in several pathological conditions, for example, chronic inflammatory diseases, cancer, and heart and neurodegenerative diseases (Yong et al., 2009, Denise Martin et al., 2012), which is why elucidation of its activation mechanism is of therapeutical importance (Yong et al., 2009; Hammaker and Firestein, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "778b9a6d-0e92-462d-985f-44e67bfdef68",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C12",
+      "claim": "p38\u03b1 is composed of two lobes: the smaller N-terminal lobe consisting mostly of \u03b2-sheets, and the \u03b1-helical C-terminal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Like most kinases, p38\u03b1 is composed of two lobes: the smaller N-terminal lobe, consisting mostly of \u03b2-sheets, and the \u03b1-helical C-terminal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a structural description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "686ed07e-5a10-4384-8bed-7fdd8e7e8ab4",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C13",
+      "claim": "The lobes of p38\u03b1 are linked by a flexible hinge that forms the ATP-binding site together with structural elements from both lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "The lobes are linked by a flexible hinge that forms the ATP-binding site together with structural elements from both lobes (marked regions in Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with reference to Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "129669d9-453b-4257-bc4c-8aae1d974e26",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C14",
+      "claim": "In the canonical activation pathway, MAPK kinases (MAP2Ks) dually phosphorylate the TGY sequence in the activation loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In the canonical activation pathway, MAPK kinases (MAP2Ks) dually phosphorylate the TGY sequence in the activation loop (A-loop; Figure 1a and Video 1) which, according to X-ray crystallography (Zhang et al., 2011a), triggers its large conformational rearrangements and the formation of a characteristic \u03b2-sheet motif away from the ATP- and substrate-binding sites (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citation and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "c740d33a-f08b-481a-a338-3e1ef304c311",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C15",
+      "claim": "According to X-ray crystallography, dual phosphorylation of the TGY sequence triggers large conformational rearrangements of the activation loop and the formation of a characteristic \u03b2-sheet motif away from the ATP- and substrate-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the canonical activation pathway, MAPK kinases (MAP2Ks) dually phosphorylate the TGY sequence in the activation loop (A-loop; Figure 1a and Video 1) which, according to X-ray crystallography (Zhang et al., 2011a), triggers its large conformational rearrangements and the formation of a characteristic \u03b2-sheet motif away from the ATP- and substrate-binding sites (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citation to X-ray crystallography study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "0709a9be-4cec-4829-b8bc-6b286100c0c4",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C16",
+      "claim": "The new position of the A-loop brings N- and C-lobes closer and facilitates the reorientation of key residues which participate in the stabilization of ATP and the catalytically crucial Mg2+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "The new position of the A-loop brings N- and C-lobes closer and facilitates the reorientation of key residues which participate in the stabilization of ATP and the catalytically crucial Mg2+ ions (Taylor and Kornev, 2011) (i.e. the universally conserved K53, E71, and D168).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8dc701e4-9256-41fe-8b01-d427e9c88405",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C17",
+      "claim": "K53, E71, and D168 are universally conserved residues that participate in the stabilization of ATP and Mg2+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "The new position of the A-loop brings N- and C-lobes closer and facilitates the reorientation of key residues which participate in the stabilization of ATP and the catalytically crucial Mg2+ ions (Taylor and Kornev, 2011) (i.e. the universally conserved K53, E71, and D168).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "fa045edc-b469-444a-b954-c7cd6f2e9260",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C18",
+      "claim": "p38\u03b1 and other MAPKs possess a MAPK insert (MKI) which forms a lipid-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p38\u03b1 and other MAPKs possess two distinct structural elements (Figure 1): (1) the MAPK insert (MKI), which forms a lipid-binding site (Diskin et al., 2008) and (2) the L16 loop that extends from the C-lobe to the N-lobe where it folds into the C-terminal L16 helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "56249131-e0d6-40fe-9866-9d500eddf2be",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C19",
+      "claim": "p38\u03b1 and other MAPKs possess the L16 loop that extends from the C-lobe to the N-lobe where it folds into the C-terminal L16 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p38\u03b1 and other MAPKs possess two distinct structural elements (Figure 1): (1) the MAPK insert (MKI), which forms a lipid-binding site (Diskin et al., 2008) and (2) the L16 loop that extends from the C-lobe to the N-lobe where it folds into the C-terminal L16 helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "e8329f04-63b1-4df6-81d9-5f30651f633e",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C20",
+      "claim": "At its C-lobe segment, the L16 loop contains an acidic patch called the common docking (CD) motif.",
+      "claim_type": "EXPLICIT",
+      "source": "At its C-lobe segment, the L16 loop contains an acidic patch, called the common docking (CD) motif (Tanoue et al., 2000), which together with the hydrophobic groove, formed by the linker between \u03b1D and \u03b1E helices, and the \u03b27-\u03b28 reverse turn (also termed the ED site) (Chang et al., 2002) (Figure 1a), defines the peptide docking site recognized by the conserved docking motif present in activators, substrates, and regulators of MAPKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "d97960d4-04e1-4f77-9773-4fa80c59c502",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C21",
+      "claim": "The CD motif together with the hydrophobic groove and the ED site defines the peptide docking site recognized by the conserved docking motif present in activators, substrates, and regulators of MAPKs.",
+      "claim_type": "EXPLICIT",
+      "source": "At its C-lobe segment, the L16 loop contains an acidic patch, called the common docking (CD) motif (Tanoue et al., 2000), which together with the hydrophobic groove, formed by the linker between \u03b1D and \u03b1E helices, and the \u03b27-\u03b28 reverse turn (also termed the ED site) (Chang et al., 2002) (Figure 1a), defines the peptide docking site recognized by the conserved docking motif present in activators, substrates, and regulators of MAPKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "3adf0572-6429-4c8b-a43f-414d8867a125",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C22",
+      "claim": "The docking site enhances the specificity of MAPKs' interactions as well as its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The docking site enhances the specificity of MAPKs' interactions, as well as its activity, albeit through an unknown molecular mechanism (Tanoue et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "e7e37853-36b6-42b5-8e94-148f90ad2b4b",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C23",
+      "claim": "The molecular mechanism by which the docking site enhances MAPK activity is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The docking site enhances the specificity of MAPKs' interactions, as well as its activity, albeit through an unknown molecular mechanism (Tanoue et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "29601cdd-b526-4f64-84bf-3699195f36c4",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C24",
+      "claim": "An NMR study of p38\u03b1 in solution showed that the dual phosphorylation of the A-loop induces only small conformational changes to p38\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical activation mechanism outlined above, derived from the analysis of phosphorylated and unphosphorylated crystal structures of p38\u03b1 (Zhang et al., 2011a) has recently been challenged by an NMR study of p38\u03b1 in solution (Tokunaga et al., 2014), which surprisingly showed that the dual phosphorylation of the A-loop induces only small conformational changes to p38\u03b1, raising doubts about the reliability of conformational states associated with the canonical activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to the NMR study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "161466f4-133a-4067-b83a-d92d5a3e19dd",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C25",
+      "claim": "The NMR study raised doubts about the reliability of conformational states associated with the canonical activation of p38\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical activation mechanism outlined above, derived from the analysis of phosphorylated and unphosphorylated crystal structures of p38\u03b1 (Zhang et al., 2011a) has recently been challenged by an NMR study of p38\u03b1 in solution (Tokunaga et al., 2014), which surprisingly showed that the dual phosphorylation of the A-loop induces only small conformational changes to p38\u03b1, raising doubts about the reliability of conformational states associated with the canonical activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a consequence of the NMR findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "f1cefc5a-59d4-4bf3-b6d1-c033cd4c6995",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C26",
+      "claim": "The study obtained a total sampling time of over 115 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we obtained a high level of sampling (>115 \u03bcs) which allowed us to explore the molecular mechanism of p38\u03b1 canonical activation in unprecedented detail and reconcile the apparently contradictory X-ray and NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a description of the computational work performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "078ee834-4383-4256-9d52-3749a90f92bd",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C27",
+      "claim": "PT-metaD simulations were performed for human p38\u03b1 in four different states: unphosphorylated, apo dually phosphorylated, dually phosphorylated with bound ATP-Mg2+, and dually phosphorylated with bound ATP-Mg2+ and MK2 docking peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed PT-metaD in the well-tempered ensemble to obtain free-energy surfaces (FESs) for human p38\u03b1 in four different states: (1) the unphosphorylated, (2) the apo dually phosphorylated, (3) the dually phosphorylated state with bound ATP-Mg2+, and (4) the dually phosphorylated state with bound ATP-Mg2+ and MK2 docking peptide (Figure 2 and Figure 2\u2014figure supplement 1), obtaining total sampling times of 24.25, 24.85, 10.35, and 9.86 \u03bcs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "51bcf003-17f0-4c40-9a16-3ba4047a9b49",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C28",
+      "claim": "The total sampling times for the four states were 24.25, 24.85, 10.35, and 9.86 \u03bcs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed PT-metaD in the well-tempered ensemble to obtain free-energy surfaces (FESs) for human p38\u03b1 in four different states: (1) the unphosphorylated, (2) the apo dually phosphorylated, (3) the dually phosphorylated state with bound ATP-Mg2+, and (4) the dually phosphorylated state with bound ATP-Mg2+ and MK2 docking peptide (Figure 2 and Figure 2\u2014figure supplement 1), obtaining total sampling times of 24.25, 24.85, 10.35, and 9.86 \u03bcs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as quantitative data about the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "697cba77-e2ce-46d1-bee9-986a1ce247a0",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C29",
+      "claim": "When CV1 < 0.2 and CV2 > 0.8, the system assumes an inactive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "When CV1 < 0.2 and CV2 > 0.8, then the system assumes an inactive conformation (as in Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a definition of the collective variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "d2df42f7-ca24-4786-a9fc-60cc117f81cd",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C30",
+      "claim": "When CV1 > 0.6 and CV2 < 0.2, the A-loop has formed the characteristic \u03b2-sheet motif and the enzyme has adopted the canonical active state.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when CV1 > 0.6 and CV2 < 0.2, the A-loop has formed the characteristic \u03b2-sheet motif (as in Figure 1b) and the enzyme has adopted the canonical active state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a definition of the collective variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "30824f64-f2d4-45c0-a222-955194c42292",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C31",
+      "claim": "The unphosphorylated p38\u03b1 neither explores the active conformation, nor does it populate a state able to accommodate ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "FES of the unphosphorylated state (upper left panel, Figure 2) and the representative structures of the explored minima (Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 2) show that the unphosphorylated protein neither explores the active conformation, nor does it populate a state able to accommodate ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on the FES analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "3f032b44-17cc-4076-b20c-cd47dec41d0c",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C32",
+      "claim": "In the more inactive of the two free-energy minima of unphosphorylated p38\u03b1, the A-loop is positioned over the C-lobe forming contacts with residues involved in the substrate binding and phosphotransfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the more inactive of the two free-energy minima - (CV1, CV2) = (0.2, 0.7) (upper left panel in Figure 2, Figure 2\u2014figure supplement 2a), the A-loop is positioned over the C-lobe forming contacts with residues involved in the substrate binding and phosphotransfer (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES minima.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "fd6b4616-afc3-4ad9-9c31-8d4fdd99de43",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C33",
+      "claim": "In the unphosphorylated p38\u03b1, the P-loop is quite flexible and the K53-E71 salt bridge is displaced from the C-lobe due to the broken regulatory spine.",
+      "claim_type": "EXPLICIT",
+      "source": "The P-loop is quite flexible and the K53-E71 salt bridge, which stabilizes ATP, is displaced from the C-lobe due to the broken regulatory spine that is otherwise formed with D168 upon ATP binding (Taylor and Kornev, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of the unphosphorylated state.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "31350dec-5dc5-4870-96b7-bfa23ca05511",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C34",
+      "claim": "E71 interacts with the MAPK-conserved R67 from the \u03b1C helix that stabilizes pT180 in the active form in over 90% of structures in the most populated cluster of unphosphorylated p38\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, E71 interacts with the MAPK-conserved R67 from the \u03b1C helix that stabilizes pT180 in the active form (Figure 1b, present in >90% of structures in the most populated cluster).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "15c485e8-8ae7-4a78-bab7-1dd2960b86b5",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C35",
+      "claim": "In the second minimum of unphosphorylated p38\u03b1, the A-loop contains a short helix which places the conserved R173 in direct contact with the K53-E71 salt bridge and D168 of the conserved DFG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the A-loop of the second minimum contains a short helix which places the conserved R173 in direct contact with the K53-E71 salt bridge, as well as D168 of the conserved DFG motif (Figure 2, Figure 2\u2014figure supplement 2b), while the P-loop is partly collapsed into the ATP-binding site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES minima.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "c5bfc96d-8fcb-4c43-8b60-77a2bb1a83ce",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C36",
+      "claim": "In both higher energy minima of unphosphorylated p38\u03b1, R173 is in contact with D168 which otherwise stabilizes ATP upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe similar autoinhibitory interactions for the other two higher energy minima explored by p38\u03b1 (Supplementary file 1, Figure 2\u2014figure supplement 2c,d). In both cases, R173 is in contact with D168 which otherwise stabilizes ATP upon binding (Kumar et al., 1995; Bellon et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "196a6664-ef49-4517-9984-ea5772a1fbb8",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C37",
+      "claim": "One of the higher energy minima of unphosphorylated p38\u03b1 explores a conformation reminiscent of the Src-like inactive conformation in which the A-loop forms a short helix stacked against the \u03b1C helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the more inactive minimum (Figure 2\u2014figure supplement 2c), the P-loop is collapsed into the ATP-binding site; while the other explores a conformation reminiscent of the Src-like inactive conformation (Xu et al., 1999) (Figure 2\u2014figure supplement 2d) in which the A-loop forms a short helix stacked against the \u03b1C helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "007f0abd-277b-43c1-b911-61e8a846d4aa",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C38",
+      "claim": "The Src-like inactive conformation has been previously observed in CDK and EGFR kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration has been previously observed also in CDK (De Bondt et al., 1993) and EGFR kinases (Sutto and Gervasio, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "e33d9c7d-a2e6-4a3c-8bca-18acaff255b4",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C39",
+      "claim": "The findings are in perfect agreement with experimental studies reporting that the unphosphorylated p38\u03b1 shows almost no affinity for ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in perfect agreement with experimental studies reporting that the unphosphorylated p38\u03b1 shows almost no affinity for ATP (Tokunaga et al., 2014; Frantz et al., 1998), confirming the strong regulation of the enzyme by phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "370530aa-e664-4db4-ba22-925857de69b1",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C40",
+      "claim": "Ten 500-ns-long independent unbiased MD runs of unphosphorylated p38\u03b1 at 380 K all quickly showed a change in the A-loop conformation toward the inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed ten 500-ns-long independent runs at 380 K, all of which quickly showed a change in the A-loop conformation toward the inactive state and sampled conformations that fall in the regions explored in metadynamics simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "0b30ac40-df6e-4feb-a5bd-2d25dc7ef93e",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C41",
+      "claim": "In one of the independent runs of unphosphorylated p38\u03b1, the A-loop managed to break the \u03b2-sheet motif, and the run was extended to 2.675 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in one of the independent runs the A-loop managed to break the \u03b2-sheet motif in the simulated time, so we extended this run to 2.675 \u03bcs to allow the protein to transition to the inactive state (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5338538c-5b7f-43f2-a001-c39778b3a645",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C42",
+      "claim": "In the extended unbiased MD run of unphosphorylated p38\u03b1, the protein mostly remained in the global minima observed in metadynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the protein mostly remained in the global minima observed in metadynamics simulations, and the final conformation showed very similar features to the representative inactive structures (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "7e22125b-0bd3-4497-be3a-a9d8f4639974",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C43",
+      "claim": "RMSF reveal a high flexibility of several structural elements besides the A-loop (i.e. \u03b1C, \u03b1D, and the MKI helices) in unphosphorylated p38\u03b1 that occurs due to the opening of the lobes and the local unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Root-mean-square fluctuations (RMSF) reveal a high flexibility of several structural elements besides the A-loop (i.e. \u03b1C, \u03b1D, and the MKI helices, Figure 3b) that occurs due to the opening of the lobes and the local unfolding (in the case of \u03b1D helix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on RMSF analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "6a493750-1f9d-4d3f-b4d4-10161906bd0f",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C44",
+      "claim": "Large conformational changes involving lobe opening and local unfolding have been previously linked to conformational changes in other kinases but have been so far unobserved for p38\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these events have been previously linked to large conformational changes occurring in other kinases (Sutto and Gervasio, 2013; Whitford et al., 2007; Shan et al., 2013) but have been so far unobserved for p38\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "4da0c6fb-83d6-4723-9583-fc10ace5aed0",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C45",
+      "claim": "Once p38\u03b1 is dually phosphorylated, it explores conformations that are not largely different from the ones observed for the unphosphorylated protein, contrary to the reported X-ray data.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, once p38\u03b1 is dually phosphorylated, it explores conformations that are not largely different from the ones observed for the unphosphorylated protein (upper right panel in Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 3), contrary to the reported X-ray data (Zhang et al., 2011a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis with citation to X-ray data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "e5002370-6dc7-4fb1-ada9-bd9a44639136",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C46",
+      "claim": "In the global minimum of dually phosphorylated p38\u03b1, the A-loop moves away from the ATP-binding site mostly due to the electrostatic interactions formed by the phosphorylated residues which also stabilize the P-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In the global minimum, the A-loop moves away from the ATP-binding site, mostly due to the electrostatic interactions formed by the phosphorylated residues which subsequently also stabilize the P-loop and prevent it from collapsing into the ATP binding pocket (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "1558b975-930e-4c1d-8f87-8fab383e3dd8",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C47",
+      "claim": "In the global minimum of dually phosphorylated p38\u03b1, the sampled conformation is unlikely to bind ATP due to the formation of a salt bridge between R49 and D112.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sampled conformation is unlikely to bind ATP due to the formation of a salt bridge between R49 (positioned beneath the P-loop) and D112 (found at the beginning of the \u03b1D helix) (Figure 2, Figure 2\u2014figure supplement 3a; distance histogram is shown in Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "59229105-0596-4115-bea2-dd8bc53b44da",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C48",
+      "claim": "The R49-D112 interaction seems to be specific for the phosphorylated protein and locks the hinge and occludes the ATP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction, which seems to be specific for the phosphorylated protein, locks the hinge and occludes the ATP-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "cfbfe3ff-847b-4f38-b1d9-14a00c6a0e5e",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C49",
+      "claim": "The dually phosphorylated p38\u03b1 also explores a higher energy minimum that comes closer to the active one where the A-loop extends toward the L16 loop but does not form the \u03b2-sheet motif.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the protein also explores a higher energy minimum that comes closer to the active one (Figure 2, Figure 2\u2014figure supplement 3b): the A-loop extends toward the L16 loop, yet does not form the \u03b2-sheet motif associated with the active conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5174a572-d6c2-4d98-b117-13105a7adba7",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C50",
+      "claim": "In the higher energy minimum of dually phosphorylated p38\u03b1, the A-loop forms a number of electrostatic interactions with the \u03b1C helix and the L16 loop, while pT180 forms a salt bridge with R67.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the higher energy conformation allows the A-loop to form a number of electrostatic interactions with the \u03b1C helix and the L16 loop (Table 1), while pT180 forms a salt bridge with the highly conserved R67 preventing the P-loop from collapsing into the ATP-binding site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8a1cdf6c-7f09-4a52-a599-0105bae51f75",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C51",
+      "claim": "In the higher energy minimum of dually phosphorylated p38\u03b1, the \u03b1D helix partly unfolds allowing the ATP-binding pocket to assume a more open conformation with the key residues aligned for ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the \u03b1D helix partly unfolds allowing the ATP-binding pocket to assume a more open conformation with the key residues aligned for ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "b193a927-cedf-4078-8ffd-44c49cadac88",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C52",
+      "claim": "The observation explains the protein's low affinity toward ATP in the phosphorylated state.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation explains the protein's low affinity toward ATP in the phosphorylated state (Tokunaga et al., 2014; Frantz et al., 1998) and demonstrates that the dual phosphorylation can help define a receptive ATP-binding site but is not sufficient for the protein to adopt the conformation captured by X-ray crystallography (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "98569477-687a-4350-ad20-b76b15196c31",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C53",
+      "claim": "The dual phosphorylation can help define a receptive ATP-binding site but is not sufficient for the protein to adopt the conformation captured by X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation explains the protein's low affinity toward ATP in the phosphorylated state (Tokunaga et al., 2014; Frantz et al., 1998) and demonstrates that the dual phosphorylation can help define a receptive ATP-binding site but is not sufficient for the protein to adopt the conformation captured by X-ray crystallography (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "cd26cdf6-7933-4d1b-8896-4736f11bbeaf",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C54",
+      "claim": "To populate the active state observed by X-ray crystallography, 16-18 kcal mol\u22121 of free energy would need to be added to the phosphorylated system.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, to populate that state, we would need to add 16\u201318 kcal mol\u22121 of free energy to the phosphorylated system (minimum located at (CV1, CV2) = (0.6, 0.2) in the upper right panel of Figure 2, Figure 2\u2014figure supplement 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "73b8fbc3-a74a-4122-add3-47c6fb382c35",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C55",
+      "claim": "Ten 1-\u03bcs-long independent unbiased MD runs of dually phosphorylated p38\u03b1 at 380 K showed a change in the A-loop conformation toward the regions explored by the protein in metadynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed ten 1-\u03bcs-long independent runs at 380 K, most of which showed a change in the A-loop conformation toward the regions explored by the protein in metadynamics simulations (upper right panel in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "d55c6acd-fe92-41d7-a2ef-fa411cf1df96",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C56",
+      "claim": "In one of the independent runs of dually phosphorylated p38\u03b1, the A-loop broke the \u03b2-sheet motif, and the run was extended to 2 \u03bcs during which the protein settled in the higher energy minima likely to bind ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in one of the independent runs the A-loop broke the \u03b2-sheet motif, so we extended this run to 2 \u03bcs during which the protein settled in the aforementioned higher energy minima that seems likely to bind ATP (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "113a7720-596e-46ac-94fe-1d9a0933a022",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C57",
+      "claim": "The FES plot for the phosphorylated system with bound ATP-Mg2+ complex shows a clear shift toward a more active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The FES plot for the phosphorylated system with bound ATP-Mg2+ complex shows a clear shift toward a more active conformation (i.e. a displacement toward right and bottom in the lower left panel of Figure 2 and Figure 2\u2014figure supplement 1, enlarged structures in Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "a8eac2b4-05c0-43db-bf3a-e1f2a3a022cc",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C58",
+      "claim": "The representative structure of the global minimum of phosphorylated p38\u03b1 with bound ATP-Mg2+ does not form the \u03b2-sheet motif associated with the active state, but its A-loop extends toward the L16 loop and connects to the \u03b1C helix via the coordination of pT180 by R67 and R70.",
+      "claim_type": "EXPLICIT",
+      "source": "While the representative structure of the global minimum does not form the \u03b2-sheet motif associated with the active state (Figure 2\u2014figure supplement 5a), its A-loop extends toward the L16 loop and connects to the \u03b1C helix via the coordination of pT180 by R67 and R70 (as observed in the active X-ray structure in Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "6dca36ea-f895-4834-af5a-8c25d76a0d48",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C59",
+      "claim": "The \u03b2-sheet motif does form in the higher energy minimum of phosphorylated p38\u03b1 with bound ATP-Mg2+, but pT180 forms less contacts with the \u03b1C helix and the L16 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-sheet motif does form in the higher energy minimum centered at (CV1, CV2) = (0.6, 0.1); however, its representative structure (lower left panel in Figure 2, Figure 2\u2014figure supplement 5b) shows pT180 forming less contacts with the \u03b1C helix and the L16 loop (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5d6cfd0c-e161-498b-8ca8-91aa1bd35fca",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C60",
+      "claim": "The lack of interactions between pT180 and the \u03b1C helix/L16 loop, together with the disorder present in the P-loop, breaks the contact of E71 with Mg2+ ions resulting in a less stable complex with ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of these interactions, together with the disorder present in the P-loop, breaks the contact of E71 with Mg2+ ions resulting in a less stable complex with ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "2be9962e-ffa7-4619-9616-458e7002f8e3",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C61",
+      "claim": "The binding of ATP stabilizes an active-like structure, but it is not enough for the protein to display the active conformation observed in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, albeit the binding of ATP stabilizes an active-like structure, it is not enough for the protein to display the active conformation observed in the crystal structure (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "584df3d7-a661-4efd-90ff-50eb05cda9d1",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C62",
+      "claim": "Ten 1-\u03bcs-long independent runs of dually phosphorylated p38\u03b1 with bound ATP-Mg2+ at 380 K were performed, and most simulations explored only the local minimum close to the starting structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed ten 1-\u03bcs-long independent runs at 380 K of the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ starting with the A-loop in the extended conformation (as in Figure 1b) (see Materials and methods). Most of the simulations explored only the local minimum close to the starting structure, while one of the runs showed more conformational diversity, so we extended it to 1.55 \u03bcs which allowed the protein to transition to the global minimum (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "98b1d12f-8a15-48d5-9b6c-81ee96b7102d",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C63",
+      "claim": "In the extended unbiased MD run of dually phosphorylated p38\u03b1 with bound ATP-Mg2+, the final conformation shows the disruption of the \u03b2-sheet motif in the A-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The final conformation shows the disruption of the \u03b2-sheet motif in the A-loop and the calculated RMSFs reveal its high flexibility (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "dd004d2f-4fb4-42e7-8fd6-85cb367b6d47",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C64",
+      "claim": "RMSF values show a lower flexibility of the protein upon the addition of ATP compared to the simulations of the apo systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, RMSF values show a lower flexibility of the protein upon the addition of the ATP compared to the simulations of the apo systems (Figures 3b and 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on RMSF analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "296738a7-fa70-4a30-90a9-6ecb4d730175",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C65",
+      "claim": "The binding of the MK2 docking peptide could provide the necessary stability to form the \u03b2-sheet motif in dually phosphorylated p38\u03b1 with bound ATP-Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "While the dual phosphorylation and the ATP-binding drive the enzyme toward an active conformation, there is an obvious need for additional elements to complete the transition. Particularly, we wondered whether the binding of the MK2 docking peptide could provide the necessary stability to form the \u03b2-sheet motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a hypothesis tested by the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "62a55c98-8b1b-4d98-9470-97eac949d798",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C66",
+      "claim": "The FES for dually phosphorylated p38\u03b1 with bound ATP-Mg2+ and MK2 docking peptide shows a deepening of the minimum associated with the formed \u03b2-sheet motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The FES for this system indeed shows a deepening of the minimum at (CV1, CV2) = (0.7, 0.1) which is associated with the formed \u03b2-sheet motif (lower right panel in Figure 2, enlarged structures in Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5febcb7d-4a12-41a9-98c4-7b8151d4ac9a",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C67",
+      "claim": "In the representative structure of the minimum with formed \u03b2-sheet motif in the presence of MK2 peptide, pT180 is near the three conserved arginines (R67, R70, and R173), while pY182 displays higher mobility and moves away from H228.",
+      "claim_type": "EXPLICIT",
+      "source": "The representative structure of the minimum (Figure 2\u2014figure supplement 6a) confirms this observation and shows pT180 near the three conserved arginines (R67, R70, and R173), while pY182 again displays higher mobility and moves away from H228 (Table 1, Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the FES.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "767d3cbe-1432-4343-9bca-2c303df08ad8",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C68",
+      "claim": "The addition of the MK2 peptide does not eliminate the global minimum observed in the presence of ATP, but it flattens the FES which would indicate an easier transition between the two minima.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the addition of the MK2 peptide does not eliminate the global minimum at (CV1, CV2) = (0.4, 0.4), observed also in the presence of ATP (two lower panels in Figure 2). However, it flattens the FES which would indicate an easier transition between the two described minima.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on FES analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "98eee484-0936-49a9-a5e0-68b8d2a03f02",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C69",
+      "claim": "Ten 1-\u03bcs-long independent unbiased MD runs of dually phosphorylated p38\u03b1 with bound ATP-Mg2+ and MK2 docking peptide at 380 K were performed, obtaining a total accumulated sampling time of 10 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we performed unbiased MD simulations of the dually phosphorylated p38\u03b1 with bound ATP-Mg2+ and the MK2 docking peptide. We generated ten 1-\u03bcs-long independent runs at 380 K, obtaining a total accumulated sampling time of 10 \u03bcs (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "48b5f324-32dc-4c80-abbf-7f293d748f3c",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C70",
+      "claim": "In the unbiased MD simulations with MK2 peptide, the protein remains mostly in the regions associated with the extended conformation of the A-loop with formed \u03b2-sheet motif, but also explores the conformational space closer to the other global minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein remains mostly in the regions associated with the extended conformation of the A-loop with formed \u03b2-sheet motif, but it also explores the conformational space closer to the other global minimum (also the global minimum in the system without the MK2 peptide) (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section describing unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "4594453d-cbb9-45ff-bb32-b03a48707848",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C71",
+      "claim": "The N-terminal part of the MK2 docking peptide binds the ED site and stabilizes the \u03b1D-\u03b1E linker hindering the flexibility of the \u03b1D helix and allowing D112 to reorient and stabilize ATP by forming hydrogen bonds with ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the N-terminal part of the MK2 docking peptide binds the ED site and stabilizes the \u03b1D-\u03b1E linker hindering the flexibility of the \u03b1D helix and allowing the D112 to reorient and stabilize ATP by forming hydrogen bonds with ribose (Figure 2\u2014figure supplement 6, Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the unbiased MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "b57b7728-485c-4753-b4f0-6b2e2a9aa006",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C72",
+      "claim": "The D112-ATP interaction is more stable in the presence of the MK2 peptide than in its absence, which explains the phosphotransfer enhancement upon MK2 peptide docking.",
+      "claim_type": "EXPLICIT",
+      "source": "While we also observe this interaction in the absence of the MK2 peptide, it is not as stable as in its presence which explains the phosphotransfer enhancement upon MK2 peptide docking (Tokunaga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to experimental study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "efe9fd86-d834-45b4-ba64-384e2c7a37f2",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C73",
+      "claim": "p38\u03b1 predominantly samples conformations with the fully extended A-loop only upon double phosphorylation and the binding of ATP and the docking peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that p38\u03b1 predominantly samples conformations with the fully extended A-loop only upon double phosphorylation and the binding of ATP and the docking peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "663e217c-b641-4021-93bc-088147c8fcd9",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C74",
+      "claim": "Careful analysis of the crystal contacts in the X-ray structure of dually phosphorylated p38\u03b1 reveals numerous interactions formed between functionally important structural elements, such as the L16 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "However, careful analysis of the crystal contacts (which form between the molecules due to their orientation and packing within the crystal, Figure 7) reveals numerous interactions formed between functionally important structural elements, such as the L16 loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "668c18a8-3c50-407b-b7c5-4f9414136f54",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C75",
+      "claim": "An atypically long expression His-tag of a neighboring molecule is bound to the hydrophobic docking groove in the crystal structure, which has the same effect on the protein as the MK2 docking peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, we found an atypically long expression His-tag of a neighboring molecule bound to the hydrophobic docking groove which, upon closer inspection (see below), has the same effect on the protein as the MK2 docking peptide did in our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "eddaa83e-364f-44d0-bbf9-e380e48ad6c5",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C76",
+      "claim": "A crystal supercell simulation of apo dually phosphorylated p38\u03b1 composed of 4 unit cells and 16 protein molecules was performed, obtaining 8 \u03bcs of sampling for ~170,000 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "To prove that this is the case, we simulated a crystal supercell of the apo dually phosphorylated p38\u03b1 composed of 4 unit cells and 16 protein molecules (see Materials and methods), which allowed us to maintain crystal contacts and obtain 8 \u03bcs of sampling for ~170,000 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the crystal simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "dd849b5c-d365-4599-bfd9-8b043f30ebea",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C77",
+      "claim": "In the crystal supercell simulation, the A-loop is very stable in the conformation captured by the X-ray model - the \u03b2-sheet motif is unperturbed during the simulation, as well as the contacts made by pT180 with the three conserved arginines.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by Figure 8, the A-loop is very stable in the conformation captured by the X-ray model - the \u03b2-sheet motif is unperturbed during the simulation, as well as the contacts made by pT180 with the three conserved arginines (R67, R70, and R173).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on the crystal simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "48c2cf0e-d486-42db-af68-fd03d967c84c",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C78",
+      "claim": "In the crystal supercell simulation, pY182 is more mobile and at times breaks away from H228 and the conserved arginines of the P+1 loop, which is consistent with the electron density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pY182 is more mobile and at times breaks away from H228 and the conserved arginines of the P+1 loop (R186 and R189). This is consistent with the electron density which is not so well defined for pY182 as it is for the rest of the A-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on the crystal simulation and comparison with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5137e5cb-29ec-4073-ad5e-cc032e6f412c",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C79",
+      "claim": "The B-factors from the crystal simulation could be qualitatively matched with those reported for the X-ray structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we could also qualitatively match the B-factors reported for the X-ray structure (PDB ID: 3PY3) (Figure 8b,d), while the most mobile regions in our simulations (mainly, the N- and C-terminal tails) are missing from the deposited electron density.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on comparison of simulation and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "3941f3ca-a965-4432-9d0f-10dd17fae60f",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C80",
+      "claim": "The deposited crystal structure does not fully capture the apo conformation that p38\u03b1 assumes under physiological conditions and it most likely suffers from artifacts due to the crystal contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis and simulations strongly suggest that the deposited crystal structure does not fully capture the apo conformation that p38\u03b1 assumes under physiological conditions and it most likely suffers from artifacts due to the crystal contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the crystal simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "c9c197d5-16f8-4fdf-9a0d-3f87103d4b58",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C81",
+      "claim": "p38\u03b1 never explores the \u03b1C-out conformation in which the helix rotates by >45\u00b0, unlike CDK5, EGFR, and Src.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike CDK5 (Berteotti et al., 2009), EGFR (Sutto and Gervasio, 2013), and Src (Shukla et al., 2014; Foda et al., 2015), p38\u03b1 never explores the \u03b1C-out conformation (neither in any of the deposited X-ray structures - Figure 9a nor in our simulations), in which the helix rotates by >45\u00b0 (breaking the K53-E71 salt bridge in the process).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion with citations to other kinase studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "cc8e234f-93b3-401b-81d1-f60e4c61de55",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C82",
+      "claim": "The lack of \u03b1C-out conformation in p38\u03b1 likely occurs due to the extensive range of contacts formed between the \u03b1C and the L16 helix, which is unique to MAPKs.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely occurs due to the extensive range of contacts formed between the \u03b1C and the L16 helix, which is unique to MAPKs, indicating that the observed feature could be family-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an explanation based on structural features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "26435301-9fc0-4f07-afa5-4cbf635ce1b8",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C83",
+      "claim": "MAP kinases contain two conserved arginine residues (R67 and R70) in the \u03b1C helix that readily form salt bridges with numerous negatively charged residues in the A-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MAP kinases contain two conserved arginine residues (R67 and R70) in the \u03b1C helix that readily form salt bridges with numerous negatively charged residues in the A-loop (Figure 10), thereby stabilizing various A-loop conformations which are not necessarily observed by X-ray crystallography.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion based on the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "41750fe4-ca0d-4059-94f6-3bbca174f92f",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C84",
+      "claim": "Just 47 out of 206 structures of human p38\u03b1 in the PDB have complete A-loops without any missing or zero-occupancy residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite an overwhelming amount of structural data (with 206 structures of human p38\u03b1 in the PDB), just 47 structures have complete A-loops (i.e. without any missing or zero-occupancy residues), out of which only one structure contains the A-loop devoid of any crystal contacts (PDB ID: 2BAJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion based on analysis of PDB structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "35c4fc1c-20b7-45d1-aa53-82e1daca69fc",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C85",
+      "claim": "The lack of complete A-loop information in most structures indicates how flexible the A-loop is and why it is almost impossible to resolve it unless it forms crystal contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mere lack of information indicates just how flexible the A-loop is and why it is almost impossible to resolve it unless it forms crystal contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "95c78e02-b421-4853-b069-89cfe62430e5",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C86",
+      "claim": "The unphosphorylated p38\u03b1 never explores a conformation that could possibly bind and stabilize ATP mostly due to A-loop interactions with the DFG-Asp which is crucial for ATP stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our extensive simulations also indicate that the unphosphorylated p38\u03b1 never explores a conformation that could possibly bind and stabilize ATP - mostly due to A-loop interactions with the DFG-Asp which is crucial for ATP stabilization (Kumar et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8a398822-0442-4482-ad68-6a04f20dae7a",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C87",
+      "claim": "Related proteins like ERK2 are able to bind ATP in the unphosphorylated state most likely due to longer A-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that related proteins, like ERK2, are able to bind ATP in the unphosphorylated state (Lee et al., 2005; Sours et al., 2008; Canagarajah et al., 1997; Khokhlatchev et al., 1998) most likely due to longer A-loops (Figure 10), which are then easier to stabilize away from the ATP-binding site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "4abee5a0-3a26-458f-9d04-bb2a590c8bef",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C88",
+      "claim": "Phosphorylation changes the free-energy surface and enables the A-loop to form salt bridge interactions with the autoinhibitory arginine residues R67 and R173.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation, however, does change the free-energy surface and enables the A-loop to form salt bridge interactions with the autoinhibitory arginine residues - R67 and R173.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion based on the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "02cbfbd1-8697-4fe1-b3c1-b1d2bdea6af2",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C89",
+      "claim": "R67 is MAPK-specific and its importance is highlighted by the R67A mutation that decreases p38\u03b1 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The former of the two, as mentioned above, is MAPK-specific and its importance is highlighted further by the R67A mutation that decreases p38\u03b1 kinase activity (Gum et al., 1998), and the R67I somatic mutation that was found in colon adenocarcinoma (COSMIC: COSM1444062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "d78ce8d7-4a01-49ed-a6fc-184568d18746",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C90",
+      "claim": "The R67I somatic mutation was found in colon adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "The former of the two, as mentioned above, is MAPK-specific and its importance is highlighted further by the R67A mutation that decreases p38\u03b1 kinase activity (Gum et al., 1998), and the R67I somatic mutation that was found in colon adenocarcinoma (COSMIC: COSM1444062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with reference to COSMIC database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8e3d8cb5-b290-4b49-9821-e750570b7646",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C91",
+      "claim": "The newly formed interactions in phosphorylated p38\u03b1 keep the A-loop away from the ATP-binding site which is occluded by the formation of the R49-D112 salt bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly formed interactions keep the A-loop away from the ATP-binding site which is occluded by the formation of the R49-D112 salt bridge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion based on the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "e383384f-2b63-4808-aaf9-f45d29c80dce",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C92",
+      "claim": "ATP binding is only possible in less populated conformations of the phosphorylated protein, explaining the experimentally observed low ATP-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding is therefore only possible in less populated conformations of the protein, explaining the experimentally observed low ATP-binding affinity (Tokunaga et al., 2014; Frantz et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "bfa8c48a-bb59-4e20-8221-4894df63728b",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C93",
+      "claim": "In X-ray structures, R49 is ~15 \u00c5 away from D112.",
+      "claim_type": "EXPLICIT",
+      "source": "If one looks solely at X-ray structures where R49 is ~15 \u00c5 away from D112 (Figure 9b), the formation of this particular salt bridge might seem like an artifact arising from force field or methodological imperfections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion based on analysis of X-ray structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "4dc8fbcf-abe6-49a6-8110-b657f0eac4d3",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C94",
+      "claim": "R49 is a part of the loop positioned below the very flexible P-loop whose residues are often unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, R49 is a part of the loop positioned below the very flexible P-loop (whose residues are often unresolved) and we have often observed its interaction with E160 of the ED site in our simulations (both unbiased and biased), regardless of the protein's phosphorylation state (R49-E160 is ~9 \u00c5 in the analyzed X-ray structures - Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion based on simulation data and X-ray structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "f29f97ff-8b1f-4dc0-a5e2-34a5b235ab99",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C95",
+      "claim": "The loop containing R49 forms crystal contacts in all the 206 deposited X-ray structures which would most likely restrict its mobility and prevent the interactions observed in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the reason for these discrepancies lies in the fact that the loop containing R49 forms crystal contacts in all the 206 deposited X-ray structures which would most likely restrict its mobility and prevent the interactions observed in MD simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an explanation for discrepancies between X-ray and simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "a88c3363-cccc-4996-b25d-999a9597fa54",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C96",
+      "claim": "The binding of ATP-Mg2+ helps p38\u03b1 come closer to the active form, but is insufficient to lead to a complete shift, as proposed by the NMR model.",
+      "claim_type": "EXPLICIT",
+      "source": "While the binding of ATP-Mg2+ helps p38\u03b1 come closer to the active form, it is insufficient to lead to a complete shift, as proposed by the NMR model (Tokunaga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to the NMR study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "16f35e4e-b3af-4e7d-8606-aca255794ad7",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C97",
+      "claim": "The full transition to the active state occurs upon binding of the MK2 docking peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The full transition, however, does occur in our simulations upon binding of the MK2 docking peptide, which has been previously shown to enhance the catalytic steps (Tokunaga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "4abc7986-967c-4c07-bba3-79d54f8f7dc5",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C98",
+      "claim": "The docking peptide prevents the formation of the R49-D112 salt bridge in the phosphorylated protein and brings in the L16 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the docking peptide prevents the formation of the R49-D112 salt bridge in the phosphorylated protein and brings in the L16 loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis based on the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5a0fcc40-f307-4e1e-97db-8f6f75198d6a",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C99",
+      "claim": "The docking peptide allows the A-loop to form additional stabilizing contacts and causes the observed 20-fold increase in the ATP-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows the A-loop to form additional stabilizing contacts, as suggested in the case of ERK2 (Zhou et al., 2006) and causes the observed 20-fold increase in the ATP-binding affinity by the MK2 docking peptide (Tokunaga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "5f4f9b39-ca38-4e27-b6c2-29eb3434f87e",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C100",
+      "claim": "The extensive PT-metaD calculations converge to free-energy surfaces that together with the unbiased MD simulations offer unparalleled insight into the molecular mechanism of p38\u03b1 canonical activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our extensive PT-metaD calculations converge to free-energy surfaces that together with the unbiased MD simulations offer unparalleled insight into the molecular mechanism of p38\u03b1 canonical activation elucidating a complex conformational behavior that is consistent with experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "eb715324-a13d-45c9-9bfa-636cccb1a56a",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "claim_id": "C101",
+      "claim": "The findings reconcile the deposited models from X-ray crystallography with the NMR data.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the initial discrepancies between previous structural studies, our findings reconcile the deposited models from X-ray crystallography with the NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a key conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7470d7f7-182f-4cd9-9f49-1e9217023e7e",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed extensive parallel tempering metadynamics (PT-metaD) simulations totaling over 115 \u03bcs of sampling time across four different states of p38\u03b1 (unphosphorylated, apo dually phosphorylated, dually phosphorylated with ATP-Mg2+, and dually phosphorylated with ATP-Mg2+ and MK2 peptide), with individual sampling times of 24.25, 24.85, 10.35, and 9.86 \u03bcs respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 provide clear quantitative data about the computational sampling performed. The total sampling time exceeds 115 \u03bcs as stated, and the individual sampling times for each system are explicitly reported. The methodology is well-documented in the Materials and Methods section, and convergence criteria are described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Unphosphorylated p38\u03b1 does not explore active conformations or ATP-binding competent states. The A-loop adopts autoinhibitory conformations with interactions between R173 and D168 (the DFG-Asp crucial for ATP stabilization), and the P-loop is flexible or collapsed into the ATP-binding site. These findings are consistent with experimental observations of negligible ATP affinity in the unphosphorylated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C44 and C86 collectively describe the conformational behavior of unphosphorylated p38\u03b1 based on FES analysis and unbiased MD simulations. The structural features are well-characterized, including specific residue interactions (Table 1), RMSF analysis showing flexibility, and comparison with experimental ATP-binding data (C39). The extended 2.675 \u03bcs unbiased MD simulation (C41-C42) provides validation of the metadynamics results. The comparison with other kinases (C37-C38, C44) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dual phosphorylation of p38\u03b1 does not induce the large conformational changes observed in X-ray structures. Instead, the phosphorylated protein explores conformations not largely different from the unphosphorylated state, with the ATP-binding site occluded by a novel R49-D112 salt bridge. A higher energy minimum (~4-6 kcal/mol) shows a more open ATP-binding pocket but still lacks the \u03b2-sheet motif. The active X-ray conformation would require 16-18 kcal/mol of free energy, explaining the low ATP affinity observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C56, C88, C91-C92 describe the surprising finding that phosphorylation alone is insufficient for activation. The FES analysis clearly shows the energy landscape, the R49-D112 interaction is documented with distance histograms (Figure 2\u2014figure supplement 4), and the 2 \u03bcs extended unbiased MD simulation (C56) validates the metadynamics results. The findings are consistent with experimental ATP-binding affinity data (C52, C92). The identification of the R49-D112 salt bridge as a phosphorylation-specific autoinhibitory interaction is a novel mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "0e784812-95bd-4169-bb79-310a3be388a4",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATP-Mg2+ binding shifts the free-energy landscape toward more active conformations, with the A-loop extending toward the L16 loop and forming contacts with R67 and R70. However, ATP binding alone is insufficient to stabilize the fully active conformation observed in crystal structures. The \u03b2-sheet motif forms in a higher energy minimum but with reduced contacts between pT180 and the \u03b1C helix/L16 loop, resulting in less stable ATP coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 and C96 describe the effect of ATP binding based on FES analysis and unbiased MD simulations. The 1.55 \u03bcs extended simulation (C62-C63) shows transition to the global minimum, validating the metadynamics results. The structural analysis is detailed with specific residue interactions, and RMSF analysis (C64) shows reduced flexibility compared to apo systems. The conclusion that ATP binding is insufficient for full activation is consistent with NMR data (C96).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The MK2 docking peptide is required for p38\u03b1 to predominantly sample the fully active conformation with the extended A-loop and \u03b2-sheet motif. The peptide stabilizes the \u03b1D-\u03b1E linker through binding at the ED site, allowing D112 to reorient and stabilize ATP through hydrogen bonds with ribose. This explains the experimentally observed 20-fold increase in ATP-binding affinity and enhancement of phosphotransfer upon peptide binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 and C97-C99 describe the critical role of the MK2 peptide in achieving full activation. The FES shows deepening of the active minimum (C66), and 10 \u03bcs of unbiased MD simulations (C69-C70) validate the stability of the active conformation. The mechanistic insight about D112 stabilization of ATP (C71-C72) is supported by distance histograms (Figure 6b) and is consistent with experimental phosphotransfer enhancement data. The hypothesis about the peptide preventing R49-D112 interaction (C98) is reasonable based on the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The X-ray crystal structure of dually phosphorylated p38\u03b1 (PDB: 3PY3) contains extensive crystal contacts, including an atypically long His-tag from a neighboring molecule bound to the hydrophobic docking groove, which mimics the effect of the MK2 peptide. Crystal supercell simulations (8 \u03bcs, ~170,000 atoms) show that these contacts stabilize the active conformation observed in the crystal, suggesting the deposited structure does not fully represent the physiological apo conformation and likely suffers from crystallization artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 provide a critical reanalysis of the X-ray structure. The crystal contact analysis (Figure 7) is thorough, identifying specific interactions including the His-tag binding. The crystal supercell simulation is technically sophisticated and provides 8 \u03bcs of sampling that validates the stability of the X-ray conformation under crystal packing constraints. The B-factor comparison (C79) shows qualitative agreement, and the authors appropriately discuss limitations of quantitative B-factor comparison due to temperature differences and ensemble averaging. This analysis explains the discrepancy between X-ray and NMR data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "419fb2c0-ccda-47a7-84bd-ca8a15b83295",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unlike other kinases (CDK5, EGFR, Src), p38\u03b1 never explores the \u03b1C-out conformation where the \u03b1C helix rotates by >45\u00b0. This is likely due to extensive contacts between the \u03b1C helix and the L16 helix, which is unique to MAPKs. Additionally, MAPKs contain two conserved arginine residues (R67 and R70) in the \u03b1C helix that form salt bridges with negatively charged A-loop residues, stabilizing various conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 describe MAPK-specific structural features based on simulation data and comparison with other kinases. The absence of \u03b1C-out conformation is documented in both simulations and X-ray structure analysis (Figure 9a). The explanation based on \u03b1C-L16 contacts is structurally reasonable. The role of R67 and R70 is supported by the simulation data showing their interactions throughout different states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "1a8a26f3-ce1b-4d8f-9370-c91702cf17e7",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of 206 human p38\u03b1 structures in the PDB reveals that only 47 have complete A-loops without missing or zero-occupancy residues, and only one structure (PDB: 2BAJ) has an A-loop devoid of crystal contacts. This lack of complete structural information indicates the high flexibility of the A-loop and the difficulty in resolving it crystallographically unless stabilized by crystal contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 provide a systematic analysis of available structural data. The quantitative assessment of PDB structures is verifiable and supports the conclusion about A-loop flexibility. This analysis strengthens the argument that crystal structures may not fully represent solution conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "7c9e4d76-fe47-4049-94a7-b2257ba599e7",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Related proteins like ERK2 can bind ATP in the unphosphorylated state, most likely due to longer A-loops that are easier to stabilize away from the ATP-binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 provides a comparative analysis with appropriate citations. The sequence alignment (Figure 10) supports the observation about A-loop length differences. The explanation is reasonable but remains somewhat speculative as it's based on inference rather than direct simulation of ERK2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "8028939a-39c7-4f3f-9f2d-05ea078053b6",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The MAPK-specific residue R67 is functionally important, as evidenced by the R67A mutation decreasing p38\u03b1 kinase activity and the R67I somatic mutation found in colon adenocarcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 cite experimental and clinical data supporting the functional importance of R67. The mutation data from the literature and COSMIC database provide independent validation of the computational findings about R67's role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "6d7eb088-ffb1-4400-aefa-1ff8b6891fc6",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The R49-D112 salt bridge observed in simulations appears inconsistent with X-ray structures where these residues are ~15 \u00c5 apart. However, R49 is part of a flexible loop below the P-loop (often unresolved in structures) and frequently interacts with E160 in simulations (~9 \u00c5 in X-ray structures). The discrepancy likely arises because the loop containing R49 forms crystal contacts in all 206 deposited structures, restricting its mobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 address a potential criticism of the R49-D112 interaction by providing a detailed analysis of X-ray structures and explaining the discrepancy. The distance analysis (Figure 9b,c) supports the explanation. The observation that R49's loop forms crystal contacts in all structures is a strong argument for why this interaction hasn't been observed crystallographically. The authors appropriately acknowledge the apparent discrepancy and provide a reasonable mechanistic explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "05619693-f842-4b2a-98fb-6a8304b7b711",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study provides the first molecular-level description of how different regulators (phosphorylation, ATP, docking peptide) affect p38\u03b1 enzymatic activity and reconciles the seemingly contradictory X-ray and NMR data through an integrative picture of the activation mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C100-C101 represent the overarching conclusions of the study. The extensive simulation data (>115 \u03bcs total sampling) across multiple states, combined with validation through unbiased MD and crystal simulations, support these conclusions. The study successfully explains why NMR shows small conformational changes upon phosphorylation (consistent with the simulation results) while X-ray shows large changes (explained by crystal artifacts). The mechanistic insights about the sequential requirements for activation (phosphorylation \u2192 ATP \u2192 docking peptide) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "a101e6a3-d2bb-4285-bd2c-ed517653e800",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The collective variables (CVs) used in the study are defined such that CV1 < 0.2 and CV2 > 0.8 corresponds to an inactive conformation, while CV1 > 0.6 and CV2 < 0.2 corresponds to the canonical active state with the \u03b2-sheet motif formed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 define the collective variables used for the metadynamics simulations. The definitions are clear and based on contact maps from reference inactive and active structures. This is a standard approach for studying protein kinase conformational changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    },
+    {
+      "id": "af5ec26e-7b64-472e-825f-54c791165880",
+      "content_id": "6e8c5487-70dd-4f13-b79c-8ca5b586a14f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information establishes that p38\u03b1 is a therapeutically important Ser/Thr kinase with a complex structure and activation mechanism. Despite decades of research, the molecular mechanism of activation remains unclear, with recent NMR data challenging the X-ray crystallography-based canonical activation model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C25 provide background information with appropriate citations. These claims establish the biological importance of p38\u03b1, describe its structural features, and identify the key scientific question (discrepancy between X-ray and NMR data) that motivates the study. All statements are properly referenced to the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:57:58.007941Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f1cefc5a-59d4-4bf3-b6d1-c033cd4c6995",
+      "result_id": "7470d7f7-182f-4cd9-9f49-1e9217023e7e"
+    },
+    {
+      "claim_id": "078ee834-4383-4256-9d52-3749a90f92bd",
+      "result_id": "7470d7f7-182f-4cd9-9f49-1e9217023e7e"
+    },
+    {
+      "claim_id": "51bcf003-17f0-4c40-9a16-3ba4047a9b49",
+      "result_id": "7470d7f7-182f-4cd9-9f49-1e9217023e7e"
+    },
+    {
+      "claim_id": "30824f64-f2d4-45c0-a222-955194c42292",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "3f032b44-17cc-4076-b20c-cd47dec41d0c",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "fd6b4616-afc3-4ad9-9c31-8d4fdd99de43",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "31350dec-5dc5-4870-96b7-bfa23ca05511",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "15c485e8-8ae7-4a78-bab7-1dd2960b86b5",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "c5bfc96d-8fcb-4c43-8b60-77a2bb1a83ce",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "196a6664-ef49-4517-9984-ea5772a1fbb8",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "007f0abd-277b-43c1-b911-61e8a846d4aa",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "e33d9c7d-a2e6-4a3c-8bca-18acaff255b4",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "370530aa-e664-4db4-ba22-925857de69b1",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "0b30ac40-df6e-4feb-a5bd-2d25dc7ef93e",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "5338538c-5b7f-43f2-a001-c39778b3a645",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "7e22125b-0bd3-4497-be3a-a9d8f4639974",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "6a493750-1f9d-4d3f-b4d4-10161906bd0f",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "95c78e02-b421-4853-b069-89cfe62430e5",
+      "result_id": "77b3fbe2-9aa2-41ea-aed2-b996eaaf509a"
+    },
+    {
+      "claim_id": "4da0c6fb-83d6-4723-9583-fc10ace5aed0",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "e5002370-6dc7-4fb1-ada9-bd9a44639136",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "1558b975-930e-4c1d-8f87-8fab383e3dd8",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "59229105-0596-4115-bea2-dd8bc53b44da",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "cfbfe3ff-847b-4f38-b1d9-14a00c6a0e5e",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "5174a572-d6c2-4d98-b117-13105a7adba7",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "8a1cdf6c-7f09-4a52-a599-0105bae51f75",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "b193a927-cedf-4078-8ffd-44c49cadac88",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "98569477-687a-4350-ad20-b76b15196c31",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "cd26cdf6-7933-4d1b-8896-4736f11bbeaf",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "73b8fbc3-a74a-4122-add3-47c6fb382c35",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "d55c6acd-fe92-41d7-a2ef-fa411cf1df96",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "4abee5a0-3a26-458f-9d04-bb2a590c8bef",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "8e3d8cb5-b290-4b49-9821-e750570b7646",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "e383384f-2b63-4808-aaf9-f45d29c80dce",
+      "result_id": "ab2afc20-7f16-4317-b2ab-d0cf4970cbb7"
+    },
+    {
+      "claim_id": "113a7720-596e-46ac-94fe-1d9a0933a022",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "a8eac2b4-05c0-43db-bf3a-e1f2a3a022cc",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "6dca36ea-f895-4834-af5a-8c25d76a0d48",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "5d6cfd0c-e161-498b-8ca8-91aa1bd35fca",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "2be9962e-ffa7-4619-9616-458e7002f8e3",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "584df3d7-a661-4efd-90ff-50eb05cda9d1",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "98b1d12f-8a15-48d5-9b6c-81ee96b7102d",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "dd004d2f-4fb4-42e7-8fd6-85cb367b6d47",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "a88c3363-cccc-4996-b25d-999a9597fa54",
+      "result_id": "0e784812-95bd-4169-bb79-310a3be388a4"
+    },
+    {
+      "claim_id": "296738a7-fa70-4a30-90a9-6ecb4d730175",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "62a55c98-8b1b-4d98-9470-97eac949d798",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "5febcb7d-4a12-41a9-98c4-7b8151d4ac9a",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "767d3cbe-1432-4343-9bca-2c303df08ad8",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "98eee484-0936-49a9-a5e0-68b8d2a03f02",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "48b5f324-32dc-4c80-abbf-7f293d748f3c",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "4594453d-cbb9-45ff-bb32-b03a48707848",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "b57b7728-485c-4753-b4f0-6b2e2a9aa006",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "efe9fd86-d834-45b4-ba64-384e2c7a37f2",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "16f35e4e-b3af-4e7d-8606-aca255794ad7",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "4abc7986-967c-4c07-bba3-79d54f8f7dc5",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "5a0fcc40-f307-4e1e-97db-8f6f75198d6a",
+      "result_id": "2e1e94a4-5804-4fd4-80b2-49d01eee0612"
+    },
+    {
+      "claim_id": "663e217c-b641-4021-93bc-088147c8fcd9",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "668c18a8-3c50-407b-b7c5-4f9414136f54",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "eddaa83e-364f-44d0-bbf9-e380e48ad6c5",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "dd849b5c-d365-4599-bfd9-8b043f30ebea",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "48c2cf0e-d486-42db-af68-fd03d967c84c",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "5137e5cb-29ec-4073-ad5e-cc032e6f412c",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "3941f3ca-a965-4432-9d0f-10dd17fae60f",
+      "result_id": "573bdcdd-be64-41a6-bf6a-f243a41f2eb5"
+    },
+    {
+      "claim_id": "c9c197d5-16f8-4fdf-9a0d-3f87103d4b58",
+      "result_id": "419fb2c0-ccda-47a7-84bd-ca8a15b83295"
+    },
+    {
+      "claim_id": "cc8e234f-93b3-401b-81d1-f60e4c61de55",
+      "result_id": "419fb2c0-ccda-47a7-84bd-ca8a15b83295"
+    },
+    {
+      "claim_id": "26435301-9fc0-4f07-afa5-4cbf635ce1b8",
+      "result_id": "419fb2c0-ccda-47a7-84bd-ca8a15b83295"
+    },
+    {
+      "claim_id": "41750fe4-ca0d-4059-94f6-3bbca174f92f",
+      "result_id": "1a8a26f3-ce1b-4d8f-9370-c91702cf17e7"
+    },
+    {
+      "claim_id": "35c4fc1c-20b7-45d1-aa53-82e1daca69fc",
+      "result_id": "1a8a26f3-ce1b-4d8f-9370-c91702cf17e7"
+    },
+    {
+      "claim_id": "8a398822-0442-4482-ad68-6a04f20dae7a",
+      "result_id": "7c9e4d76-fe47-4049-94a7-b2257ba599e7"
+    },
+    {
+      "claim_id": "02cbfbd1-8697-4fe1-b3c1-b1d2bdea6af2",
+      "result_id": "8028939a-39c7-4f3f-9f2d-05ea078053b6"
+    },
+    {
+      "claim_id": "d78ce8d7-4a01-49ed-a6fc-184568d18746",
+      "result_id": "8028939a-39c7-4f3f-9f2d-05ea078053b6"
+    },
+    {
+      "claim_id": "bfa8c48a-bb59-4e20-8221-4894df63728b",
+      "result_id": "6d7eb088-ffb1-4400-aefa-1ff8b6891fc6"
+    },
+    {
+      "claim_id": "4dc8fbcf-abe6-49a6-8110-b657f0eac4d3",
+      "result_id": "6d7eb088-ffb1-4400-aefa-1ff8b6891fc6"
+    },
+    {
+      "claim_id": "f29f97ff-8b1f-4dc0-a5e2-34a5b235ab99",
+      "result_id": "6d7eb088-ffb1-4400-aefa-1ff8b6891fc6"
+    },
+    {
+      "claim_id": "f75be334-b7de-4664-8acc-44e8611581d9",
+      "result_id": "05619693-f842-4b2a-98fb-6a8304b7b711"
+    },
+    {
+      "claim_id": "d77ff4e1-cba1-41f8-a9ce-ff83354109b9",
+      "result_id": "05619693-f842-4b2a-98fb-6a8304b7b711"
+    },
+    {
+      "claim_id": "5f4f9b39-ca38-4e27-b6c2-29eb3434f87e",
+      "result_id": "05619693-f842-4b2a-98fb-6a8304b7b711"
+    },
+    {
+      "claim_id": "eb715324-a13d-45c9-9bfa-636cccb1a56a",
+      "result_id": "05619693-f842-4b2a-98fb-6a8304b7b711"
+    },
+    {
+      "claim_id": "697cba77-e2ce-46d1-bee9-986a1ce247a0",
+      "result_id": "a101e6a3-d2bb-4285-bd2c-ed517653e800"
+    },
+    {
+      "claim_id": "d2df42f7-ca24-4786-a9fc-60cc117f81cd",
+      "result_id": "a101e6a3-d2bb-4285-bd2c-ed517653e800"
+    },
+    {
+      "claim_id": "5cc076fd-dd51-4c98-8e03-db2fca4f7679",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "97b17aff-2f1e-4383-87ba-ce699cddb715",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "64716c17-c0e1-445b-8c04-7610da19b280",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "12469dce-23c7-4f91-b8b7-64b4dc3369e6",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "2fc693d9-2870-41a6-a0a6-3931d9fdf7c1",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "6e407397-6a3c-4a31-90d6-4cd217a22eed",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "de029301-5c96-40fb-8270-feb10081d5da",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "7d7be072-5d26-41f4-aac6-f6247981e62b",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "b2699514-187f-4d02-bfc8-d9b3e816e09c",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "778b9a6d-0e92-462d-985f-44e67bfdef68",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "686ed07e-5a10-4384-8bed-7fdd8e7e8ab4",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "129669d9-453b-4257-bc4c-8aae1d974e26",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "c740d33a-f08b-481a-a338-3e1ef304c311",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "0709a9be-4cec-4829-b8bc-6b286100c0c4",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "8dc701e4-9256-41fe-8b01-d427e9c88405",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "fa045edc-b469-444a-b954-c7cd6f2e9260",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "56249131-e0d6-40fe-9866-9d500eddf2be",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "e8329f04-63b1-4df6-81d9-5f30651f633e",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "d97960d4-04e1-4f77-9773-4fa80c59c502",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "3adf0572-6429-4c8b-a43f-414d8867a125",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "e7e37853-36b6-42b5-8e94-148f90ad2b4b",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "29601cdd-b526-4f64-84bf-3699195f36c4",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    },
+    {
+      "claim_id": "161466f4-133a-4067-b83a-d92d5a3e19dd",
+      "result_id": "af5ec26e-7b64-472e-825f-54c791165880"
+    }
+  ],
+  "comparisons": []
+}

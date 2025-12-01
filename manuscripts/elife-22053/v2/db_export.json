@@ -1,0 +1,2480 @@
+{
+  "submission": {
+    "id": "e4d54dc4-5e52-4f6f-aeae-e70ccbee59ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:08:02.373729Z",
+    "updated_at": "2025-11-30T23:08:02.373729Z"
+  },
+  "content": [
+    {
+      "id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "submission_id": "e4d54dc4-5e52-4f6f-aeae-e70ccbee59ae",
+      "content_type": "manuscript",
+      "content_text": "# Data-driven identification of potential Zika virus vectors\n\n## Authors\n\n- Michelle V Evans<sup>1</sup> ([ORCID: 0000-0002-5628-0502](https://orcid.org/0000-0002-5628-0502)) \u2020\n- Tad A Dallas<sup>1</sup> ([ORCID: 0000-0003-3328-9958](https://orcid.org/0000-0003-3328-9958))\n- Barbara A Han<sup>4</sup> ([ORCID: 0000-0002-9948-3078](https://orcid.org/0000-0002-9948-3078))\n- Courtney C Murdock<sup>1</sup>\n- John M Drake<sup>1</sup> ([ORCID: 0000-0003-4646-1235](https://orcid.org/0000-0003-4646-1235))\n\n### Affiliations\n\n1. Odum School of Ecology University of Georgia Athens United States\n2. Center for the Ecology of Infectious Diseases, University of Georgia Athens United States\n3. Department of Environmental Science and Policy University of California-Davis Davis United States\n4. Cary Institute of Ecosystem Studies Millbrook United States\n5. Department of Infectious Disease University of Georgia Athens United States\n6. Center for Tropical Emerging Global Diseases, University of Georgia Athens United States\n7. Center for Vaccines and Immunology, University of Georgia Athens United States\n8. River Basin Center, University of Georgia Athens United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nZika is an emerging virus whose rapid spread is of great public health concern. Knowledge about transmission remains incomplete, especially concerning potential transmission in geographic areas in which it has not yet been introduced. To identify unknown vectors of Zika, we developed a data-driven model linking vector species and the Zika virus via vector-virus trait combinations that confer a propensity toward associations in an ecological network connecting flaviviruses and their mosquito vectors. Our model predicts that thirty-five species may be able to transmit the virus, seven of which are found in the continental United States, including Culex quinquefasciatus and Cx. pipiens. We suggest that empirical studies prioritize these species to confirm predictions of vector competence, enabling the correct identification of populations at risk for transmission within the United States.\n\n## Introduction\n\nIn 2014, Zika virus was introduced into Brazil and Haiti, from where it rapidly spread throughout the Americas. By January 2017, over 100,000 cases had been confirmed in 24 different states in Brazil (http://ais.paho.org/phip/viz/ed_zika_cases.asp), with large numbers of reports from many other counties in South and Central America (Faria et al., 2016). Originally isolated in Uganda in 1947, the virus remained poorly understood until it began to spread within the South Pacific, including an outbreak affecting 75% of the residents on the island of Yap in 2007 (49 confirmed cases) and over 32,000 cases in the rest of Oceania in 2013\u20132014, the largest outbreak prior to the Americas (2016-present) (Cao-Lormeau et al., 2016; Duffy et al., 2009). Guillian-Barr\u00e9 syndrome, a neurological pathology associated with Zika virus infection, was first recognized at this time (Cao-Lormeau et al., 2016). Similarly, an increase in newborn microcephaly was found to be correlated with the increase in Zika cases in Brazil in 2015 and 2016 (Schuler-Faccini et al., 2016). For this reason, in February 2016, the World Health Organization declared the American Zika virus epidemic to be a Public Health Emergency of International Concern.\n\nDespite its public health importance, the ecology of Zika virus transmission has been poorly understood until recently. It has been presumed that Aedes aegypti and Ae. albopictus are the primary vectors due to epidemiologic association with Zika virus (Messina et al., 2016), viral isolation from and transmission experiments with field populations (especially in Ae. aegypti [Haddow et al., 2012; Boorman and Porterfield, 1956; Haddow et al., 1964]), and association with related arboviruses (e.g. dengue fever virus, yellow fever virus). Predictions of the potential geographic range of Zika virus in the United States,and associated estimates for the size of the vulnerable population, are therefore primarily based on the distributions of Ae. aegypti and Ae. albopictus, which jointly extend across the Southwest, Gulf coast, and mid-Atlantic regions of the United States (Centers for Disease Control and Prevention, 2016). We reasoned, however, that if other, presently unidentified Zika-competent mosquitoes exist in the Americas, then these projections may be too restricted and therefore optimistically biased. Additionally, recent experimental studies show that the ability of Ae. aegypti and Ae. albopictus to transmit the virus varies significantly across mosquito populations and geographic regions (Chouin-Carneiro et al., 2016), with some populations exhibiting low dissemination rates even though the initial viral titer after inoculation may be high (Diagne et al., 2015). This suggests that in some locations other species may be involved in transmission. The outbreak on Yap, for example, was driven by a different species, Ae. hensilli (Ledermann et al., 2014). Closely related viruses of the Flaviviridae family are vectored by over nine mosquito species, on average (see Supplementary Data). Thus, because Zika virus may be associated with multiple mosquito species, we considered it necessary to develop a more comprehensive list of potential Zika vectors.\n\nThe gold standard for identifying competent disease vectors requires isolating virus from field-collected mosquitoes, followed by experimental inoculation and laboratory investigation of viral dissemination throughout the body and to the salivary glands (Barnett, 1960; Hardy et al., 1983), and, when possible, successful transmission back to the vertebrate host (e.g. Komar et al., 2003). Unfortunately, these methods are costly, often underestimate the risk of transmission (Bustamante and Lord, 2010), and the amount of time required for analyses can delay decision making during an outbreak (Day, 2001). To address the problem of identifying potential vector candidates in an actionable time frame, we therefore pursued a data-driven approach to identifying candidate vectors aided by machine learning algorithms for identifying patterns in high dimensional data. If the propensity of mosquito species to associate with Zika virus is statistically associated with common mosquito traits, it is possible to rank mosquito species by the degree of risk represented by their traits \u2013 a comparative approach similar to the analysis of risk factors in epidemiology. For instance, a model could be constructed to estimate the statistical discrepancy between the traits of known vectors (i.e., Ae. aegypti, Ae. albopictus, and Ae. hensilli) and the traits of all possible vectors. Unfortunately, this simplistic approach would inevitably fail due to the small amount of available data (i.e., sample size of 3). Thus, we developed an indirect approach that leverages the\u00a0information contained in the associations among many virus-mosquito pairs to inform us about specific associations. Specifically, our method identifies covariates associated with the propensity for mosquito species to vector any flavivirus. From this, we constructed a model of the mosquito-flavivirus network and then extracted from this model the life history profile and species list of mosquitoes predicted to associate with Zika virus, which we recommend be experimentally tested for Zika virus competence.\n\n## Results\n\nIn total, we identified 132 vector-virus pairs, consisting of 77 mosquito species and 37 flaviviruses. The majority of these species were Aedes (32) or Culex (24) species. Our supplementary dataset consisted of an additional 103 mosquito species suspected to transmit flaviviruses, but for which evidence of a full transmission cycle does not exist. This resulted in 180 potential mosquito-Zika pairs on which to predict with our trained model. As expected, closely related viruses, such as the four strains of dengue, shared many of the same vectors and were clustered in our network diagram (Figure 1). The distribution of vectors to viruses was uneven, with a few viruses vectored by many mosquito species, and rarer viruses vectored by only one or two species. The virus with the most known competent vectors was West Nile virus (31 mosquito vectors), followed by yellow fever virus (24 mosquito vectors). In general, encephalitic viruses such as West Nile virus were found to be more commonly vectored by Culex mosquitoes and hemorrhagic viruses were found to be more commonly vectored by Aedes mosquitoes (see Gould and Solomon (2008) for further distinctions within Flaviviridae) (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22053/elife-22053-fig1-v2.jpg)\n\n**Figure 1.:** The Culex mosquitoes (light blue) and primarily encephalitic viruses (blue) are more clustered than the Aedes (orange) and hemmorhagic viruses (red). Notably, West Nile Virus is vectored by both Aedes and Culex species. Predicted vectors of Zika are shown by bolded links in black. The inset shows predicted vectors of Zika and species names, ordered by the model\u2019s propensity scores. Included flaviviruses are Banzi virus (BANV), Bouboui virus (BOUV), dengue virus strains 1, 2, 3 and 4 (DENV-1,2,3,4), Edge Hill virus (EHV), Ilheus virus (ILHV), Israel turkey meningoencephalomyelitis virus (ITV), Japanese encephalitis virus (JEV), Kedougou virus (KEDV), Kokobera virus (KOKV), Kunjin virus (KUNV), Murray Valley encephalitis virus (MVEV), Rocio virus (ROCV), St. Louis encephalitis virus (SLEV), Spondwendi virus (SPOV), Stratford virus (STRV), Uganda S virus (UGSV), Wesselsbron virus (WESSV), West Nile Virus (WNV), yellow fever virus (YFV), and Zika virus (ZIKV).\n\nOur ensemble of BRT models trained on common vector and virus traits predicted mosquito vector-virus pairs in the test dataset with high accuracy (AUC\u00a0=\u00a00.92 \u00b1 0.02; sensitivity\u00a0=\u00a00.858 \u00b1 0.04; specificity\u00a0=\u00a00.872 \u00b1 0.04). Due to non-monotonicity and existence of interactions among predictor variables within our model, one cannot make general statements about the directionality of effect. Thus, we focus on the relative importance of different variables to model performance. The most important variable for accurately predicting the presence of vector-virus pair was the subgenus of the mosquito species, followed by continental range (e.g. continents on which species are present). The number of viruses vectored by a mosquito species and number of mosquito vectors of a virus were the third and fifth most important variables, respectively. Unsurprisingly, this suggests that, when controlling for other variables, mosquitoes and viruses with more known vector-virus pairs (i.e., more viruses vectored and more hosts infected, respectively), are more likely to be part of a predicted pair by the model. Mosquito ecological traits such as larval habitat and salinity tolerance were generally less important than a species\u2019 phylogeny or geographic range (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22053/elife-22053-fig2-v2.jpg)\n\n**Figure 2.:** Because some categorical variables were treated as binary by our model (i.e. continental range), the relative importance of each binary variable was summed to result in the overall importance of the categorical variable. Mosquito and virus traits are shown in blue and maroon, respectively. Error bars represent the standard error from 25 models.\n\nWhen applied to the 180 potential mosquito-Zika pairs, the model predicted thirty-five vectors to be ranked above the threshold (set at the value of the lowest-ranked known vector), for a total of nine known vectors and twenty-six novel, predicted mosquito vectors of Zika (Table 1). Of these vectors, there were twenty-four Aedes species, nine Culex species, one Psorophora species, and one Runchomyia species. The GBM model\u2019s top two ranked vectors for Zika are the most highly-suspected vectors of Zika virus, Ae. aegypti and Ae. albopictus.\n\n### Model validation\n\nOur supplementary and primary models generally concur and their ranking of potential Zika virus vectors are highly correlated (\u03c1\u00a0=\u00a00.508 and \u03c1\u00a0=\u00a00.693 on raw and thresholded predictions, respectively). As one might expect, the supplementary model assigned fewer scores of low propensity (Appendix 1\u2014figure 2), suggesting that incorporating this additional uncertainty in the training dataset eroded the model's ability to distinguish negative links. The supplementary model\u2019s performance on the testing data (AUC\u00a0=\u00a00.84 \u00b1 0.02), however, indicates that the additional uncertainty did not impede model performance.\n\nWhen trained on \u2018leave-one-out\u2019 datasets, all three models were able to predict the testing data with high accuracy (AUC\u00a0=\u00a00.91, AUC\u00a0=\u00a00.91, AUC = 0.92 for West Nile, dengue, and yellow fever viruses, respectively). Performance varied when models were validated against predictions of \u2018known outcomes\u2019. A model trained without West Nile virus predicted highly linked vectors reasonably well (AUC\u00a0=\u00a00.69), however it assigned low scores to rarer \u2018known\u2019 vectors, such as Culiseta inornata, which was only associated with West Nile virus. Similarly, the model trained on the dengue-omitted dataset predicted training data and vectors of dengue itself with high accuracy (AUC\u00a0=\u00a00.92). While the model trained without yellow fever performed well on the testing data, it performed poorly when predicting vectors of yellow fever virus (AUC\u00a0=\u00a00.47). Unlike West Nile and dengue viruses, the majority of the known vectors of yellow fever are only associated with yellow fever (i.e. a single vector-virus link), and so were excluded completely from the training data when all yellow fever links were omitted. Additionally, several of the vector species are of the Haemagogus genus, which was completely absent from the training data. Given the importance of phylogeny of the vector species in predicting vector-virus links, it follows that a dataset with a novel subgenus would be difficult for the model to predict on, resulting in low model performance. The low performance of this model illustrates that incorporating common traits and additional vector-virus links improves model prediction. When traits were not available in the training dataset, model performance was much lower, suggesting that there exists a statistical association between a vectors\u2019 traits and its ability to transmit a virus.\n\n## Discussion\n\nZika virus is unprecedented among emerging arboviruses in its combination of severe public health hazard, rapid spread, and poor scientific understanding. Particularly crucial to public health preparedness is knowledge about the geographic extent of potentially at risk populations and local environmental conditions for transmission, which are determined by the presence of competent vectors. Until now, identifying additional competent vector species has been a low priority because Zika virus has historically been geographically restricted to a narrow region of equatorial Africa and Asia (Petersen et al., 2016), and the mild symptoms of infection made its range expansion since the 1950\u2019s relatively unremarkable. However, with its relatively recent and rapid expansion into the Americas and its association with severe neurological disorders, the prediction of potential disease vectors in non-endemic areas has become a matter of critical public health importance. We identify these potential vector species by developing a data-driven model that identifies candidate vector species of Zika virus by leveraging data on traits of mosquito vectors and their flaviviruses. We suggest that empirical work should prioritize these species in their evaluation of vector competence of mosquitoes for Zika virus.\n\nOur model predicts that fewer than one third of the potential mosquito vectors of Zika virus have been identified, with over twenty-five additional mosquito species worldwide that may have the capacity to contribute to transmission. The continuing focus in the published literature on two species known to transmit Zika virus (Ae. aegypti and Ae. albopictus) ignores the potential role of other vectors, potentially misrepresenting the spatial extent of risk. In particular, four species predicted by our model to be competent vectors \u2013 Ae. vexans, Culex quinquefasciatus, Cx. pipiens, and Cx. tarsalis \u2013 are found throughout the continental United States. Further, the three Culex species are primary vectors of West Nile virus (Farajollahi et al., 2011). Cx. quinquefasciatus and Cx. pipiens were ranked 3rd and 17th by our model, respectively, and together these species were the highest-ranking species endemic to the United States after the known vectors (Ae. aegypti and Ae. albopictus). Cx. quinquefasciatus has previously been implicated as an important vector of encephalitic flaviviruses, specifically West Nile virus and St. Louis encephalitis (Turell et al., 2005; Hayes et al., 2005), and a hybridization of the species with Cx. pipiens readily bites humans (Fonseca et al., 2004). The empirical data available on the vector competence of Cx. pipiens and Cx. quinquefasciatus is currently mixed, with some studies finding evidence for virus transmission and others not (Guo et al., 2016; Aliota et al., 2016; Fernandes et al., 2016; Huang et al., 2016). These results suggest, in combination with evidence for significant genotype x genotype effects on the vector competence of Ae. aegypti and Ae. albopictus to transmit Zika (Chouin-Carneiro et al., 2016), that the vector competence of Cx. pipiens and Cx. quinquefasciatus for Zika virus could be highly dependent upon the genetic background of the mosquito-virus pairing, as well as local environmental conditions. Thus, considering their anthropophilic natures and wide geographic ranges, Cx. quinquefasciatus and Cx. pipiens could potentially play a larger role in the transmission of Zika in the continental United States. Further experimental research into the competence of populations of Cx. pipiens to transmit Zika virus across a wider geographic range is therefore highly recommended, and should be prioritized.\n\nThe vectors predicted by our model have a combined geographic range much larger than that of the currently suspected vectors of Zika (Figure 3), suggesting that, were these species to be confirmed as vectors, a larger population may be at risk of Zika infection than depicted by maps focusing solely on Ae. aegypti and Ae. albopictus. The range of Cx. pipiens includes the Pacific Northwest and the upper mid-West, areas that are not within the known range of Ae. aegypti or Ae. albopictus (Darsie and Ward, 2005). Furthermore, Ae. vexans, another predicted vector of Zika virus, is found throughout the continental US and the range of Cx. tarsalis extends along the entire West coast (Darsie and Ward, 2005). On a finer scale, these species use a more diverse set of habitats, with Ae. aegypti and Cx. quinquefasciatus mainly breeding in artificial containers, and Ae. vexans and Ae. albopictus being relatively indiscriminate in their breeding sites, including breeding in natural sites such as tree holes and swamps. Therefore, in addition to the wider geographic region supporting potential vectors, these findings suggest that both rural and urban areas could serve as habitat for potential vectors of Zika. We recommend experimental tests of these species for competency to transmit Zika virus, because a confirmation of these vectors would necessitate expanding public health efforts to these areas not currently considered at risk.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22053/elife-22053-fig3-v2.jpg)\n\n**Figure 3.:** Maps of Aedes species are based on Centers for disease control and prevention (2016). All other species\u2019 distributions are georectified maps from Darsie and Ward (2005).\n\nWhile transmission requires a competent vector, vector competence does not necessarily equal transmission risk or inform vectorial capacity. There are many biological factors that, in conjunction with positive vector competence, determine a vector\u2019s role in disease transmission. For example, although Ae. aegypti mosquitoes are efficient vectors of West Nile virus, they prefer to feed on humans, which are dead-head hosts for the disease, and therefore have low potential to serve as a vector (Turell et al., 2005). Psorophora ferox, although predicted by our model as a potential vector of Zika virus, would likely play a limited role in transmission because it rarely feeds on humans (Molaei et al., 2008). Additionally, vector competence is dynamic, and may be mediated by environmental factors that influence viral development and mosquito immunity (Muturi and Alto, 2011). Therefore, our list of potential vectors of Zika represents a comprehensive starting point, which should be furthered narrowed by empirical work and consideration of biological details that impact transmission dynamics. Given the severe neurological side-effects of Zika virus infection, beginning with the most conservative method of vector prediction ensures that risk is not underestimated, and allows public health agencies to interpret the possibility of Zika transmission given local conditions.\n\nOur model serves as a starting point to streamlining empirical efforts to identify areas and populations at risk for Zika transmission. While our model enables data-driven predictions about the geographic area at potential risk of Zika transmission, subsequent empirical work investigating Zika vector competence and transmission efficiency is required for model validation, and to inform future analyses of transmission dynamics. For example, in spite of its low transmission efficiency in certain geographic regions (Chouin-Carneiro et al., 2016), Ae. aegypti is anthropophilic (Powell and Tabachnick, 2013), and may therefore pose a greater risk of human-to-human Zika virus transmission than mosquitoes that bite a wider variety of animals. On the other hand, mosquito species that prefer certain hosts in rural environments are known to alter their feeding behaviors to bite alternative hosts (e.g., humans and rodents) in urban settings, due to changes in host community composition (Chaves et al., 2010). Environmental factors such as precipitation and temperature directly influence mosquito populations, and determine the density of vectors in a given area (Thomson et al., 2006), an important factor in transmission risk. Additionally, socio-economic factors such as housing type and lifestyle can decrease a populations\u2019 contact with mosquito vectors, and lower the risk of transmission to humans (Moreno-Madri\u00f1\u00e1n and Turell, 2017). Effective risk modeling and forecasting the range expansion of Zika virus in the United States will depend on validating the vector status of these species, as well as resolving behavioral and biological details that impact transmission dynamics.\n\nAlthough we developed this model with Zika virus in mind, our findings have implications for other emerging flaviviruses and contribute to the\u00a0recently developed methodology applying machine learning methods to the prediction of unknown agents of infectious diseases. This technique has been used to predict rodent reservoirs of disease (Han et al., 2015) and bat carriers of filoviruses (Han et al., 2016) by training models with host-specific data. Our model, however, incorporates additional data by constructing a vector-virus network that is used to inform predictions of vector-virus associations. The combination of common virus traits with vector-specific traits enabled us to predict potential mosquito vectors of specific flaviviruses, and to train the model on additional information distributed throughout the flavivirus-mosquito network.\n\nUncertainty in our model arises through uncertainty inherent in our datasets. Vector status is not static (e.g. mutation in the chikungunya virus to increase transmission by Ae. albopictus [Weaver and Forrester, 2015]) and can vary across vector populations (Bennett et al., 2002). When incorporating uncertainty in vector status through our supplementary model, our predictions generally agreed with that of our original model. However, the increased uncertainty did reduce the models\u2019 ability to distinguish negative links, resulting in higher uncertainty in propensity scores (as measured by standard deviation) and a larger number of predicted vectors. Additionally, the model performs poorly when predicting on vector-virus links with trait levels not included in the training data set, as was the case when omitting yellow fever virus. Another source of uncertainty is regarding vector and virus traits. In addition to intraspecific variation in biological traits, many vectors are understudied, and common traits such as biting activity are unknown to the level of species. Additional study into the behavior and biology of less common vector species would increase the accuracy of prediction techniques such as this, and allow for a better of understanding of species\u2019 potential role as vectors.\n\nInterestingly, our constructed flavivirus-mosquito network generally concurs with the proposed dichotomy of Aedes species vectoring hemorrhagic or febrile arboviruses and Culex species vectoring neurological or encephalitic viruses (Grard et al., 2010) (Figure 1). However, there are several exceptions to this trend, notably West Nile virus, which is vectored by several Aedes species. Additionally, our model predicts several Culex species to be possible vectors of Zika virus. While this may initially seem contrary to the common phylogenetic pairing of vectors and viruses noted above, Zika\u2019s symptoms, like West Nile virus, are both febrile and neurological. Thus, its symptoms do not follow the conventional hemorrhagic/encephalitic division. The ability of Zika virus to be vectored by a diversity of mosquito vectors could have important public health consequences, as it may expand both the geographic range and seasonal transmission risk of Zika virus, and warrants further empirical investigation.\n\nConsidering our predictions of potential vector species and their combined ranges, species on the candidate vector list need to be validated to inform the response to Zika virus. Vector control efforts that target Aedes species exclusively may ultimately be unsuccessful in controlling transmission of Zika because they do not control other, unknown vectors. For example, the release of genetically modified Ae. aegypti to control vector density through sterile insect technique is species-specific and would not control alternative vectors (Alphey et al., 2010). Additionally, species\u2019 habitat preferences differ, and control efforts based singularly on reducing Aedes larval habitat will not be as successful at controlling Cx. quinquefasciatus populations (Rey et al., 2006). Predicted vectors of Zika virus must be empirically tested and, if confirmed, vector control efforts would need to respond by widening their focus to control the abundance of all predicted vectors of Zika virus. Similarly, if control efforts are to include all areas at potential risk of disease transmission, public health efforts would need to expand to address regions such as the northern Midwest that fall within the range of the additional vector species predicted by our model. An understanding of the capacity of mosquito species to vector Zika virus is necessary to prepare for the\u00a0potential establishment of Zika virus in the United States, and we recommend that experimental work start with this list of candidate vector species.\n\n## Materials\u00a0and\u00a0methods\n\n### Data collection and feature construction\n\nOur dataset comprised a matrix of vector-virus pairs relating all known flaviviruses and their mosquito vectors. To construct this matrix, we first compiled a list of mosquito-borne flaviviruses to include in our study (Van Regenmortel et al., 2000; Kuno et al., 1998; Cook and Holmes, 2006). Viruses that only infect mosquitoes and are not known to infect humans were not included. Using this list, we constructed a mosquito-virus pair matrix based on the Global Infectious Diseases and Epidemiology Network database (GIDEON, 2016), the International Catalog of Arboviruses Including Certain Other Viruses of Vertebrates (ArboCat) (Karabatsos, 1985), The Encyclopedia of Medical and Veterinary Entomology (Russell et al., 2013)and Mackenzie et al. (2012).\n\nWe defined a known vector-virus pair as one for which the full transmission cycle (i.e, infection of mosquito via an infected host (mammal or avian) or bloodmeal that is able to be transmitted via saliva) has been observed. Basing vector competence on isolation or intrathoracic injection bypasses several important barriers to transmission (Hardy et al., 1983), and may not be true evidence of a mosquito\u2019s ability to transmit an arbovirus. We found our definition to be more conservative than that which is commonly used in disease databases (e.g. Global Infectious Diseases and Epidemiology Network database), which often assumes isolation from wild-caught mosquitoes to be evidence of a mosquito\u2019s role as a\u00a0vector. Therefore, a supplementary analysis investigates the robustness of our findings with regards to uncertainty in vector status by comparing the analysis reported in the main text to a second analysis in which any kind of evidence for association, including merely isolating the virus in wild-caught mosquitoes, is taken as a basis for connection in the virus-vector network (see Appendix 1 for analysis and results).\n\nFifteen mosquito traits (Appendix 2\u2014table 1) and twelve virus traits (Appendix 2\u2014table 2) were collected from the literature. For the mosquito species, the geographic range was defined as the number of countries in which the species has been collected, based on Walter Reed Biosystematics Unit, (2016). While there are uncertainties in species\u2019 ranges due to false absences, this represents the most comprehensive, standardized dataset available that includes both rare and common mosquito species. A species\u2019 continental extent was recorded as a binary value of its presence by continent. A species\u2019 host range was defined as the number of taxonomic classes the species is known to feed on, with the Mammalia class further split into non-human primates and other mammals, because of the important role primates play in zoonotic spillovers of vector-borne disease (e.g. dengue, chikungunya, yellow fever, and Zika viruses) (Weaver, 2005; Diallo et al., 2005; Weaver et al., 2016). The total number of unique flaviviruses observed per mosquito species was calculated from our mosquito-flavivirus matrix. All other traits were based on consensus in the literature (see Appendix III for sources by species). For three traits \u2013 urban preference, endophily (a proclivity to bite indoors), and salinity tolerance \u2013 if evidence of that trait for a mosquito was not found in the literature, it was assumed to be negative.\n\n**Table 1.**\n Predicted vectors of Zika virus, as reported by our model. Mosquito species endemic to the continental United States are bolded. A species is defined as a known vector of Zika virus if a full transmission cycle (see main text) has been observed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>GBM prediction \u00b1SD</th>\n      <th>Known vector?</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Aedes aegypti</td>\n      <td>0.81\u00a0\u00b1\u00a00.12</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. albopictus</td>\n      <td>0.54\u00a0\u00b1\u00a00.14</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Culex quinquefasciatus</td>\n      <td>0.38\u00a0\u00b1\u00a00.14</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. polynesiensis</td>\n      <td>0.36\u00a0\u00b1\u00a00.13</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. scutellaris</td>\n      <td>0.33\u00a0\u00b1\u00a00.13</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. africanus</td>\n      <td>0.32\u00a0\u00b1\u00a00.11</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. furcifer</td>\n      <td>0.31\u00a0\u00b1\u00a00.16</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. vittatus</td>\n      <td>0.30\u00a0\u00b1\u00a00.20</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. taylori</td>\n      <td>0.30\u00a0\u00b1\u00a00.16</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. luteocephalus</td>\n      <td>0.25\u00a0\u00b1\u00a00.12</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. tarsalis</td>\n      <td>0.18\u00a0\u00b1\u00a00.11</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. metallicus</td>\n      <td>0.16\u00a0\u00b1\u00a00.08</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. minutus</td>\n      <td>0.16\u00a0\u00b10.09</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. opok</td>\n      <td>0.14\u00a0\u00b1\u00a00.06</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. bromeliae</td>\n      <td>0.11\u00a0\u00b1\u00a00.06</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. scapularis</td>\n      <td>0.10\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. pipiens</td>\n      <td>0.10\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. hensilli</td>\n      <td>0.10\u00a0\u00b1\u00a00.06</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Ae. vigilax</td>\n      <td>0.10\u00a0\u00b1\u00a00.05</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. annulirostrix</td>\n      <td>0.08\u00a0\u00b1\u00a00.03</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Psorophora ferox</td>\n      <td>0.08\u00a0\u00b1\u00a00.05</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. rubinotus</td>\n      <td>0.08\u00a0\u00b1\u00a00.07</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. tarsalis</td>\n      <td>0.08\u00a0\u00b1\u00a00.03</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. occidentalis</td>\n      <td>0.08\u00a0\u00b1\u00a00.05</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. flavicolis</td>\n      <td>0.07\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. serratus</td>\n      <td>0.07\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. p. molestus</td>\n      <td>0.07\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. vexans</td>\n      <td>0.06\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. neavei</td>\n      <td>0.06\u00a0\u00b1\u00a00.02</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Runchomyia frontosa</td>\n      <td>0.06\u00a0\u00b1\u00a00.04</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. neoafricanus</td>\n      <td>0.06\u00a0\u00b1\u00a00.03</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. chemulpoensis</td>\n      <td>0.06\u00a0\u00b1\u00a00.03</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. vishnui</td>\n      <td>0.05\u00a0\u00b1\u00a00.01</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cx. tritaeniorhynchus</td>\n      <td>0.05\u00a0\u00b1\u00a00.01</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Ae. fowleri</td>\n      <td>0.04\u00a0\u00b1\u00a00.03</td>\n      <td>Yes</td>\n    </tr>\n  </tbody>\n</table>\n\nWe collected data on the following virus traits: host range (Mahy, 2009; Mackenzie et al., 2012; Chambers and Monath, 2003; Cook and Zumla, 2009b), disease severity (Mackenzie et al., 2012), human illness (Chambers and Monath, 2003; Cook and Zumla, 2009), the\u00a0presence of a mutated envelope protein, which controls viral entry into cells (Grard et al., 2010), year of isolation (Karabatsos, 1985), and host range (Karabatsos, 1985). Disease severity was based on Mackenzie et al. (2012), ranging from no known symptoms (e.g. Kunjin virus) to severe symptoms and significant human mortality (e.g. yellow fever virus). For each virus, vector range was calculated as the number of mosquito species for which the full transmission cycle has been observed. Genome length was calculated as the mean of all complete genome sequences listed for each flavivirus in the Virus Pathogen Database and Analysis Resource (http://www.viprbrc.org/). For more recently discovered flaviviruses not yet cataloged in the above databases (i.e., New Mapoon Virus, Iquape virus), viral traits were gathered from the\u00a0primary literature (sources listed in Appendix 3).\n\n### Predictive model\n\nFollowing Han et al. (2015), boosted regression trees (BRT) (Friedman, 2001) were used to fit a logistic-like predictive model relating the status of all possible virus-vector pairs (0: not associated, 1: associated) to a predictor matrix comprising the traits of the mosquito and virus traits in each pair. Boosted regression trees circumvent many issues associated with traditional regression analysis (Elith et al., 2008), allowing for complex variable interactions, collinearity, non-linear relationships between covariates and response variables, and missing data. Additionally, this technique performs well in comparison with other logistic regression approaches (Friedman, 2001). Trained boosted regression tree models are dependent on the split between training and testing data, such that each model might predict slightly different propensity values. To address this, we trained an ensemble of 25 internally cross-validated BRT models on independent partitions of training and testing data. The resulting model demonstrated low variance in relative variable importance and overall model accuracy, suggesting models all converged to a similar result.\n\nPrior to the analysis of each model, we randomly split the data into training (70%) and test (30%) sets while preserving the proportion of positive labels (known associations) in each of the training and test sets. Models were trained using the gbm package in $R$\u00a0(Ridgeway, 2015), with the maximum number of trees set to 25,000, a learning rate of 0.001, and an interaction depth of 5. To correct for optimistic bias (Smith et al., 2014), we performed 10-fold cross validation and chose a bag fraction of 50% of the training data for each iteration of the model. We estimated the performance of each individual model with three metrics: Area Under the Receiver Operator Curve, specificity, and sensitivity. For specificity and sensitivity, which require a preset threshold, we thresholded predictions on the testing data based on the value which maximized the sum of the sensitivity and specificity, a threshold robust to the ratio of presence to background points in presence-only datasets (Liu et al., 2016). Variable importance was quantified by permutation (Breiman, 2001) to assess the relative contribution of virus and vector traits to the propensity for a virus and vector to form a pair. Because we transformed many categorical variables into binary variables (e.g., continental range as binary presence or absence by continent), the sum of the relative importance for each binary feature was summed to obtain a single value for the entire variable.\n\nEach of our twenty-five trained models was then used to predict novel mosquito vectors of Zika by applying the trained model to a data set consisting of the virus traits of Zika paired with the traits of all mosquitoes for which flaviviruses have been isolated from wild caught individuals, and, depending on the species, may or may not have been tested in full transmission cycle experiments (a total of 180 mosquito species). This expanded dataset allowed us to predict over a large number of mosquito species, while reasonably limiting our dataset to those species suspected of transmitting flaviviruses. The output of this model was a propensity score ranging from 0 to 1. In our case, the final propensity score for each vector was the mean propensity score assigned by the twenty-five models. To label unobserved edges, we thresholded propensity scores at the value of lowest ranked known vector (Liu et al., 2013).\n\n### Model validation\n\nIn addition to conventional performance metrics, we conducted additional analyses to further validate both this method of prediction, and our model specifically. To account for uncertainty in the vector-virus links in our initial matrix, we repeated our analysis for a vector-virus matrix with a less conservative definition of a positive link (field isolation and above), referred to as our supplementary model. Vector competence is a dynamic trait, and there exists significant intraspecific variation in the ability of a vector to transmit a virus for certain species of mosquitoes (Diallo et al., 2005; Gubler et al., 1979). Our supplementary model is based on a less conservative definition of vector competence and includes species implicated as vectors, but not yet verified through laboratory competence studies, and therefore accounts for additional uncertainty such as intraspecific variation.\n\nWhile this approach is well-tested in epidemiological applications (Parascandola, 2004), it has only recently been applied to predict ecological associations, and, as such, has limitations unique to this application. To further evaluate this prediction method, we performed a modified \u2018leave-one-out\u2019 analysis, whereby we trained a model to a dataset from which a well-studied virus had been omitted, and then predicted vectors for this virus and compared them against a list of known vectors. We repeated this analysis for West Nile, dengue, and yellow fever viruses, following the same method of training as for our original model. While this analysis differs from our original method, it provides a more stringent evaluation of this method of prediction because the model is trained on an incomplete dataset and predicts on unfamiliar data, a more difficult task than that posed to our original model.\n",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "41103c16-a296-4954-85d9-63d9d5dfe67d",
+      "submission_id": "e4d54dc4-5e52-4f6f-aeae-e70ccbee59ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Oliver Brady, London School of Hygiene and Tropical Medicine , United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.22053.016](https://doi.org/10.7554/eLife.22053.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Data-driven identification of potential Zika virus vectors\" for consideration by eLife. Your article has been reviewed by three peer reviewers and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Anthony Wilson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nOverall, the feedback from this round of reviews was positive and all reviewers agreed that this is a novel approach to the identification of Zika's mosquito vectors. However, following a discussion among all three reviewing editors, some key themes emerged that we would like to see addressed before making a final decision on this manuscript. While we would like to see you address all of the major and minor comments of the reviewers, in particular we would like to see you pay particular attention to:\n\n1) More rigorous model evaluation- from a statistical point of view, yes the model AUCs seem reasonable, but we all felt that this alone, was not enough to judge how effective these predictions were. A key assumption of the approach is that vector competence is associated with the kinds of traits that are readily observable and comparable. In addition to this, many key indicators that might be important for this are not included/considered, e.g. sub-species of vectors, evolutionary changes in vector competence. Judging by the top model predictors, it seems that there are very few traits that offer much explanatory power in this respect and perhaps a more nuanced explanation of why the model predict each of these new Zika vector species is required. Additionally we would like to see validation against a known outcome, e.g. if the vector-virus pairs of dengue, yellow fever or West Nile were left out of the fitting set what vector species would be predicted for each of these?\n\n2) The caveats of this particular study need to be more appropriately articulated. The main output of this model is a list of candidate vector species to be tested experimentally for Zika virus competence (and ideally prioritised by likelihood of competence as predicted by the model and public health importance- i.e. additional population at risk, none of which is currently done in the paper). As it has been demonstrated many times that vector competence does not equate to sufficient vectorial capacity to cause outbreaks, let alone sustain transmission, it is perhaps premature to suggest that new risk assessments need to include other vector species at this stage. Please revise this and consider refocusing on providing useful recommendations for follow up studies.\n\nEssential revisions:\n\nReviewer #1:\n\nEvans and colleagues have submitted a manuscript detailing a novel and well conducted analysis that addresses a timely question of international public health importance. While, at times, the manuscript does overstate the significance of the findings and omits some important limitations, it is fundamentally an exciting study that could be of interest to a broad range of readers.\n\nI am struggling to reconcile the parallel findings of high model performance (as demonstrated by AUC) and the finding that subgenus and continental range (two variables with extremely limited degrees of freedom, especially where Zika is concerned) contribute a high amount of the models' power. It seems that these very general and non-specific covariates would naturally lead to low specificity- how does the model AUC vary when predicting vector virus pairs for viruses with different characteristics \u2013 are very limited geographic scope viruses much easier to predict? If so, is there a more appropriate model evaluation measure for a broadly distributed disease such as Zika (and thus differing thresholds)? It would at least be useful to explain what features of Zika lend it to such a high number of predicted vectors relative to, say dengue.\n\nThis analysis quite rightly restricts its predictions to binary endpoint of vector competence. There is, however, a big difference between a competent vector and a vector that presents a true epidemiological risk. This is exemplified by Ae. aegypti vs Ae. albopictus in dengue with the former being responsible for the vast majority of transmission (see Lambrechts et al. 2010 PLoS NTDs). While I agree with the authors that these findings warrant further investigation of the competence of these species, to suggest that they need to be included in Zika risk maps makes too many assumptions (e.g. epidemiological significance, that other species will not outcompete their role as a vector, etc.) that are not supported by analysis in this manuscript. I would suggest re-wording to reduce the emphasis on this suggestion and including more limitations on why these vector species may not ultimately be epidemiologically significant.\n\nReviewer #2:\n\nThis study used data-driven, machine-learning algorithms to identify potential vectors of Zika virus. Although the premise of the study is good, several shortcomings of the approach make it difficult to ascertain the relevance of the results, which could be largely misleading. Some of the most important shortcomings are listed below.\n\nThe authors set out to \"address the problem of identifying potential vector candidates in a suitable time frame\" because \"the amount of time required for analyses can delay decision making\". However, identifying candidate Zika virus vectors would not preclude their subsequent empirical validation. So it is unclear what is the applied value of this modeling exercise.\n\nA strong, unjustified assumption underlying the approach is that \"the propensity of mosquito species to associate with Zika virus is statistically associated with common mosquito traits\".\n\nDocumented implication of a given mosquito species in the transmission cycle of an arbovirus does not necessarily imply the universal importance of a vector species in the transmission cycle of this arbovirus. Vectorial capacity results from the combination of several factors, so that in certain local conditions (e.g., high mosquito population density, high temperature) even a poorly competent vector could play a significant role in transmission.\n\nVector status of a mosquito species for a given arbovirus cannot be permanently defined. Vector status is a dynamic process that can rapidly evolve (e.g., recent adaptation of chikungunya virus to Aedes albopictus).\n\nIntra-species variation, which can be substantial for several mosquito traits, was ignored.\n\nThere was no empirical validation of the modeling approach.\n\nReviewer #3:\n\nVector-borne pathogens are emerging with increased frequency. This manuscript presents an interesting and potentially useful approach to the incrimination of vectors of novel emerging pathogens and I believe it to be worthy of publication. I have a couple of queries and suggestions, detailed below.\n\nResults section, third paragraph: I suspect one criticism of this approach will be that it results in overly broad predictions (although even if true that would not mean it will not be useful in suggesting targets for epidemiological study). I would like the authors to add the result of applying the same method to 'predict' the vectors of dengue virus, yellow fever and West Nile virus when information on the respective viruses is removed from the training data.\n\nDiscussion section, first paragraph: could the authors elaborate on the additional regions or populations at risk from transmission based on their expanded 'worst case' vector list \u2013 or, even better, which newly-incriminated vectors make most difference to this? This should be possible using the dataset they have already collected (with the caveat that this is a worst-case scenario, and vector density and local environmental conditions also affect the potential for transmission).\n",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ecbab44-d342-4d22-95aa-13f20d9d5f16",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C1",
+      "claim": "Zika virus was introduced into Brazil and Haiti in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2014, Zika virus was introduced into Brazil and Haiti, from where it rapidly spread throughout the Americas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text without supporting data or citations provided in this specific sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1def4989-8d48-4ba5-a6b8-4464c8f8855e",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C2",
+      "claim": "By January 2017, over 100,000 Zika cases had been confirmed in 24 different states in Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "By January 2017, over 100,000 cases had been confirmed in 24 different states in Brazil (http://ais.paho.org/phip/viz/ed_zika_cases.asp), with large numbers of reports from many other counties in South and Central America (Faria et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a web database citation and a scholarly reference (Faria et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5659c29c-299d-4475-b859-07e3eaee60f1",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C3",
+      "claim": "Zika virus was originally isolated in Uganda in 1947.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally isolated in Uganda in 1947, the virus remained poorly understood until it began to spread within the South Pacific, including an outbreak affecting 75% of the residents on the island of Yap in 2007 (49 confirmed cases) and over 32,000 cases in the rest of Oceania in 2013\u20132014, the largest outbreak prior to the Americas (2016-present) (Cao-Lormeau et al., 2016; Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cao-Lormeau et al., 2016 and Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0f559b7d-984f-4699-8bbe-6801fa4d8e68",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C4",
+      "claim": "An outbreak on the island of Yap in 2007 affected 75% of residents with 49 confirmed cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally isolated in Uganda in 1947, the virus remained poorly understood until it began to spread within the South Pacific, including an outbreak affecting 75% of the residents on the island of Yap in 2007 (49 confirmed cases) and over 32,000 cases in the rest of Oceania in 2013\u20132014, the largest outbreak prior to the Americas (2016-present) (Cao-Lormeau et al., 2016; Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cao-Lormeau et al., 2016 and Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b19a1bf3-61d6-4896-83a9-8e08ec398de0",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C5",
+      "claim": "Over 32,000 Zika cases occurred in Oceania in 2013-2014, representing the largest outbreak prior to the Americas.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally isolated in Uganda in 1947, the virus remained poorly understood until it began to spread within the South Pacific, including an outbreak affecting 75% of the residents on the island of Yap in 2007 (49 confirmed cases) and over 32,000 cases in the rest of Oceania in 2013\u20132014, the largest outbreak prior to the Americas (2016-present) (Cao-Lormeau et al., 2016; Duffy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cao-Lormeau et al., 2016 and Duffy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "42f7eb49-6cc7-48fa-bf4f-40e1b2e199fb",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C6",
+      "claim": "Guillain-Barr\u00e9 syndrome, a neurological pathology, was first recognized as associated with Zika virus infection during the 2013-2014 Oceania outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Guillian-Barr\u00e9 syndrome, a neurological pathology associated with Zika virus infection, was first recognized at this time (Cao-Lormeau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cao-Lormeau et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a370a7a5-81b5-4b60-9e9e-f105b7825da5",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C7",
+      "claim": "An increase in newborn microcephaly was found to be correlated with the increase in Zika cases in Brazil in 2015 and 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an increase in newborn microcephaly was found to be correlated with the increase in Zika cases in Brazil in 2015 and 2016 (Schuler-Faccini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schuler-Faccini et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b8e5ec83-c470-4a68-8ffe-baf050ed6693",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C8",
+      "claim": "In February 2016, the World Health Organization declared the American Zika virus epidemic to be a Public Health Emergency of International Concern.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, in February 2016, the World Health Organization declared the American Zika virus epidemic to be a Public Health Emergency of International Concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a WHO declaration, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "54738458-3e86-4829-8237-89f5315d102f",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C9",
+      "claim": "Aedes aegypti and Ae. albopictus are presumed to be the primary vectors of Zika virus due to epidemiologic association.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been presumed that Aedes aegypti and Ae. albopictus are the primary vectors due to epidemiologic association with Zika virus (Messina et al., 2016), viral isolation from and transmission experiments with field populations (especially in Ae. aegypti [Haddow et al., 2012; Boorman and Porterfield, 1956; Haddow et al., 1964]), and association with related arboviruses (e.g. dengue fever virus, yellow fever virus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Messina et al., 2016, Haddow et al., 2012, Boorman and Porterfield, 1956, and Haddow et al., 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "700e2aa0-889d-49a3-b312-c3bcff51c6df",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C10",
+      "claim": "Viral isolation from and transmission experiments with field populations support Ae. aegypti as a Zika vector.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been presumed that Aedes aegypti and Ae. albopictus are the primary vectors due to epidemiologic association with Zika virus (Messina et al., 2016), viral isolation from and transmission experiments with field populations (especially in Ae. aegypti [Haddow et al., 2012; Boorman and Porterfield, 1956; Haddow et al., 1964]), and association with related arboviruses (e.g. dengue fever virus, yellow fever virus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Haddow et al., 2012, Boorman and Porterfield, 1956, and Haddow et al., 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c546f1cb-d86f-4918-bba0-288c26cdd6fa",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C11",
+      "claim": "Predictions of the potential geographic range of Zika virus in the United States are primarily based on the distributions of Ae. aegypti and Ae. albopictus.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions of the potential geographic range of Zika virus in the United States,and associated estimates for the size of the vulnerable population, are therefore primarily based on the distributions of Ae. aegypti and Ae. albopictus, which jointly extend across the Southwest, Gulf coast, and mid-Atlantic regions of the United States (Centers for Disease Control and Prevention, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c57d329d-7050-4032-a969-e98ec7e39fb3",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C12",
+      "claim": "Ae. aegypti and Ae. albopictus jointly extend across the Southwest, Gulf coast, and mid-Atlantic regions of the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions of the potential geographic range of Zika virus in the United States,and associated estimates for the size of the vulnerable population, are therefore primarily based on the distributions of Ae. aegypti and Ae. albopictus, which jointly extend across the Southwest, Gulf coast, and mid-Atlantic regions of the United States (Centers for Disease Control and Prevention, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5c89817f-4dfe-4b36-84ad-73dea9fec2cb",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C13",
+      "claim": "The ability of Ae. aegypti and Ae. albopictus to transmit Zika virus varies significantly across mosquito populations and geographic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent experimental studies show that the ability of Ae. aegypti and Ae. albopictus to transmit the virus varies significantly across mosquito populations and geographic regions (Chouin-Carneiro et al., 2016), with some populations exhibiting low dissemination rates even though the initial viral titer after inoculation may be high (Diagne et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chouin-Carneiro et al., 2016 and Diagne et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5632ddd3-35d9-4d44-b829-a68c738537cc",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C14",
+      "claim": "Some populations of Ae. aegypti and Ae. albopictus exhibit low dissemination rates even though the initial viral titer after inoculation may be high.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent experimental studies show that the ability of Ae. aegypti and Ae. albopictus to transmit the virus varies significantly across mosquito populations and geographic regions (Chouin-Carneiro et al., 2016), with some populations exhibiting low dissemination rates even though the initial viral titer after inoculation may be high (Diagne et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diagne et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "92add4da-e5db-4aa1-a7e1-e53297feed98",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C15",
+      "claim": "The Zika outbreak on Yap was driven by Ae. hensilli.",
+      "claim_type": "EXPLICIT",
+      "source": "The outbreak on Yap, for example, was driven by a different species, Ae. hensilli (Ledermann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ledermann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a5c9606c-92a4-41cf-9ed8-3cd0c5e1ac6c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C16",
+      "claim": "Closely related viruses of the Flaviviridae family are vectored by over nine mosquito species, on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Closely related viruses of the Flaviviridae family are vectored by over nine mosquito species, on average (see Supplementary Data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Supplementary Data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c84471c9-13f6-4380-91fa-a7df8a3e6dbd",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C17",
+      "claim": "The study identified 132 vector-virus pairs, consisting of 77 mosquito species and 37 flaviviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 132 vector-virus pairs, consisting of 77 mosquito species and 37 flaviviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data collected and analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "288d7054-6072-4cad-a798-5d71b668445d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C18",
+      "claim": "The majority of mosquito species in the dataset were Aedes (32) or Culex (24) species.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these species were Aedes (32) or Culex (24) species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data collected and analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "92c6f911-7dc5-49f2-94f1-614b20e28706",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C19",
+      "claim": "The supplementary dataset consisted of an additional 103 mosquito species suspected to transmit flaviviruses, but for which evidence of a full transmission cycle does not exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Our supplementary dataset consisted of an additional 103 mosquito species suspected to transmit flaviviruses, but for which evidence of a full transmission cycle does not exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data collected for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0eb12058-edc4-473f-a978-e311bb9a68f5",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C20",
+      "claim": "The analysis resulted in 180 potential mosquito-Zika pairs on which to predict with the trained model.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 180 potential mosquito-Zika pairs on which to predict with our trained model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the dataset size used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "35121245-f811-4aec-9e72-a0ab8f5e4771",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C21",
+      "claim": "Closely related viruses, such as the four strains of dengue, shared many of the same vectors and were clustered in the network diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, closely related viruses, such as the four strains of dengue, shared many of the same vectors and were clustered in our network diagram (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1 and the data analysis performed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "ef593921-e11e-46a0-900a-89e2effcfd2c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C22",
+      "claim": "West Nile virus has the most known competent vectors with 31 mosquito vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus with the most known competent vectors was West Nile virus (31 mosquito vectors), followed by yellow fever virus (24 mosquito vectors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data from the compiled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "246b1793-9924-4e05-902b-5319e62aed98",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C23",
+      "claim": "Yellow fever virus has 24 known mosquito vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus with the most known competent vectors was West Nile virus (31 mosquito vectors), followed by yellow fever virus (24 mosquito vectors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data from the compiled dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0b05b9b2-082e-4b22-a430-d7bc34d8385d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C24",
+      "claim": "Encephalitic viruses such as West Nile virus are more commonly vectored by Culex mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, encephalitic viruses such as West Nile virus were found to be more commonly vectored by Culex mosquitoes and hemorrhagic viruses were found to be more commonly vectored by Aedes mosquitoes (see Gould and Solomon (2008) for further distinctions within Flaviviridae) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 1 and citation to Gould and Solomon (2008).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1c6324d9-6bbb-4b6c-a8fc-5693689d233d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C25",
+      "claim": "Hemorrhagic viruses are more commonly vectored by Aedes mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, encephalitic viruses such as West Nile virus were found to be more commonly vectored by Culex mosquitoes and hemorrhagic viruses were found to be more commonly vectored by Aedes mosquitoes (see Gould and Solomon (2008) for further distinctions within Flaviviridae) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 1 and citation to Gould and Solomon (2008).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "98a8f178-fc74-4d3d-9af6-f7c2937748d9",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C26",
+      "claim": "The ensemble of BRT models predicted mosquito vector-virus pairs in the test dataset with high accuracy (AUC = 0.92 \u00b1 0.02; sensitivity = 0.858 \u00b1 0.04; specificity = 0.872 \u00b1 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Our ensemble of BRT models trained on common vector and virus traits predicted mosquito vector-virus pairs in the test dataset with high accuracy (AUC = 0.92 \u00b1 0.02; sensitivity = 0.858 \u00b1 0.04; specificity = 0.872 \u00b1 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model performance metrics from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a41efe9e-8e61-4541-8e86-c884d25d1ccb",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C27",
+      "claim": "The most important variable for accurately predicting the presence of vector-virus pair was the subgenus of the mosquito species.",
+      "claim_type": "EXPLICIT",
+      "source": "The most important variable for accurately predicting the presence of vector-virus pair was the subgenus of the mosquito species, followed by continental range (e.g. continents on which species are present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of variable importance from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f27eebe3-24f2-4637-b252-389b627661b0",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C28",
+      "claim": "Continental range was the second most important variable for predicting vector-virus pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The most important variable for accurately predicting the presence of vector-virus pair was the subgenus of the mosquito species, followed by continental range (e.g. continents on which species are present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of variable importance from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f0243286-05b1-4176-96c1-a7c24d529f79",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C29",
+      "claim": "The number of viruses vectored by a mosquito species was the third most important variable in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of viruses vectored by a mosquito species and number of mosquito vectors of a virus were the third and fifth most important variables, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of variable importance from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "dcce851d-138d-4cbf-89b5-153200622a41",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C30",
+      "claim": "The number of mosquito vectors of a virus was the fifth most important variable in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of viruses vectored by a mosquito species and number of mosquito vectors of a virus were the third and fifth most important variables, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of variable importance from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "6b89ba0d-1e23-468f-96a0-d98f9dbc5251",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C31",
+      "claim": "Mosquito ecological traits such as larval habitat and salinity tolerance were generally less important than a species' phylogeny or geographic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquito ecological traits such as larval habitat and salinity tolerance were generally less important than a species' phylogeny or geographic range (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 2 showing variable importance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "fc3fdf90-a1a7-47ee-8da7-b5bbc9318081",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C32",
+      "claim": "The model predicted thirty-five vectors to be ranked above the threshold for Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to the 180 potential mosquito-Zika pairs, the model predicted thirty-five vectors to be ranked above the threshold (set at the value of the lowest-ranked known vector), for a total of nine known vectors and twenty-six novel, predicted mosquito vectors of Zika (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "6c4faf49-adb6-4d09-b3b1-7bcd27cb2843",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C33",
+      "claim": "The model identified nine known vectors and twenty-six novel, predicted mosquito vectors of Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to the 180 potential mosquito-Zika pairs, the model predicted thirty-five vectors to be ranked above the threshold (set at the value of the lowest-ranked known vector), for a total of nine known vectors and twenty-six novel, predicted mosquito vectors of Zika (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1fc2b40b-8835-4574-a6be-d0c2de42755d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C34",
+      "claim": "Of the predicted vectors, there were twenty-four Aedes species, nine Culex species, one Psorophora species, and one Runchomyia species.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these vectors, there were twenty-four Aedes species, nine Culex species, one Psorophora species, and one Runchomyia species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "cd5cd8af-77f2-4498-bab4-b6b7c226d052",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C35",
+      "claim": "The GBM model's top two ranked vectors for Zika are Ae. aegypti and Ae. albopictus.",
+      "claim_type": "EXPLICIT",
+      "source": "The GBM model's top two ranked vectors for Zika are the most highly-suspected vectors of Zika virus, Ae. aegypti and Ae. albopictus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "ffe96355-34ef-48fa-a1ec-1983cf1b43d2",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C36",
+      "claim": "The supplementary and primary models' ranking of potential Zika virus vectors are highly correlated (\u03c1 = 0.508 and \u03c1 = 0.693 on raw and thresholded predictions, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Our supplementary and primary models generally concur and their ranking of potential Zika virus vectors are highly correlated (\u03c1 = 0.508 and \u03c1 = 0.693 on raw and thresholded predictions, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of correlation analysis between models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "aaff758b-00c1-4650-b9f5-ca5a97cd79ac",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C37",
+      "claim": "The supplementary model's performance on the testing data was AUC = 0.84 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "The supplementary model's performance on the testing data (AUC = 0.84 \u00b1 0.02), however, indicates that the additional uncertainty did not impede model performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "87e5db7c-ccf2-496f-9190-be0b9efb8f2c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C38",
+      "claim": "When trained on 'leave-one-out' datasets, all three models were able to predict the testing data with high accuracy (AUC = 0.91, AUC = 0.91, AUC = 0.92 for West Nile, dengue, and yellow fever viruses, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "When trained on 'leave-one-out' datasets, all three models were able to predict the testing data with high accuracy (AUC = 0.91, AUC = 0.91, AUC = 0.92 for West Nile, dengue, and yellow fever viruses, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model validation performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f8d22b0a-a8a6-46ed-9d4a-84c77b8e9190",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C39",
+      "claim": "A model trained without West Nile virus predicted highly linked vectors reasonably well (AUC = 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "A model trained without West Nile virus predicted highly linked vectors reasonably well (AUC = 0.69), however it assigned low scores to rarer 'known' vectors, such as Culiseta inornata, which was only associated with West Nile virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model validation performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0130af0d-9e34-4404-95e8-1ee7be6aa6a8",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C40",
+      "claim": "The model trained on the dengue-omitted dataset predicted training data and vectors of dengue itself with high accuracy (AUC = 0.92).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the model trained on the dengue-omitted dataset predicted training data and vectors of dengue itself with high accuracy (AUC = 0.92).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model validation performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3ba16218-67af-4b60-ba1b-7a191498dd2b",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C41",
+      "claim": "The model trained without yellow fever performed poorly when predicting vectors of yellow fever virus (AUC = 0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "While the model trained without yellow fever performed well on the testing data, it performed poorly when predicting vectors of yellow fever virus (AUC = 0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model validation performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a18b69a9-642c-4dcf-a33d-cf97dd1facbe",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C42",
+      "claim": "The majority of the known vectors of yellow fever are only associated with yellow fever (i.e. a single vector-virus link).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike West Nile and dengue viruses, the majority of the known vectors of yellow fever are only associated with yellow fever (i.e. a single vector-virus link), and so were excluded completely from the training data when all yellow fever links were omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "8970536e-9547-4515-b750-d58ede65f5f5",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C43",
+      "claim": "Several of the yellow fever vector species are of the Haemagogus genus, which was completely absent from the training data when yellow fever was omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, several of the vector species are of the Haemagogus genus, which was completely absent from the training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the dataset composition in the validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3b8088fd-f740-43fa-8906-188d60a8435d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C44",
+      "claim": "Four species predicted by the model to be competent vectors \u2013 Ae. vexans, Culex quinquefasciatus, Cx. pipiens, and Cx. tarsalis \u2013 are found throughout the continental United States.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, four species predicted by our model to be competent vectors \u2013 Ae. vexans, Culex quinquefasciatus, Cx. pipiens, and Cx. tarsalis \u2013 are found throughout the continental United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This combines model predictions with geographic distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "2959c360-b4ed-4840-b6e5-ca9589081735",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C45",
+      "claim": "Cx. quinquefasciatus, Cx. pipiens, and Cx. tarsalis are primary vectors of West Nile virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the three Culex species are primary vectors of West Nile virus (Farajollahi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farajollahi et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "32d35cd4-0048-4cc7-aad3-cff7006ab2b5",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C46",
+      "claim": "Cx. quinquefasciatus was ranked 3rd by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx. quinquefasciatus and Cx. pipiens were ranked 3rd and 17th by our model, respectively, and together these species were the highest-ranking species endemic to the United States after the known vectors (Ae. aegypti and Ae. albopictus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model ranking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0eecc44e-9105-4af7-8948-81e5bcd7e2ee",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C47",
+      "claim": "Cx. pipiens was ranked 17th by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx. quinquefasciatus and Cx. pipiens were ranked 3rd and 17th by our model, respectively, and together these species were the highest-ranking species endemic to the United States after the known vectors (Ae. aegypti and Ae. albopictus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model ranking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c90e8ca3-7184-456b-b269-bdf9fdc4a81a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C48",
+      "claim": "Cx. quinquefasciatus has previously been implicated as an important vector of encephalitic flaviviruses, specifically West Nile virus and St. Louis encephalitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx. quinquefasciatus has previously been implicated as an important vector of encephalitic flaviviruses, specifically West Nile virus and St. Louis encephalitis (Turell et al., 2005; Hayes et al., 2005), and a hybridization of the species with Cx. pipiens readily bites humans (Fonseca et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Turell et al., 2005 and Hayes et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "191537af-1d7f-45a8-aaef-c2cad1ccf001",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C49",
+      "claim": "A hybridization of Cx. quinquefasciatus with Cx. pipiens readily bites humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx. quinquefasciatus has previously been implicated as an important vector of encephalitic flaviviruses, specifically West Nile virus and St. Louis encephalitis (Turell et al., 2005; Hayes et al., 2005), and a hybridization of the species with Cx. pipiens readily bites humans (Fonseca et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fonseca et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "01696d09-b592-4970-8710-e0d6d818027c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C50",
+      "claim": "The empirical data available on the vector competence of Cx. pipiens and Cx. quinquefasciatus for Zika is currently mixed, with some studies finding evidence for virus transmission and others not.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical data available on the vector competence of Cx. pipiens and Cx. quinquefasciatus is currently mixed, with some studies finding evidence for virus transmission and others not (Guo et al., 2016; Aliota et al., 2016; Fernandes et al., 2016; Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guo et al., 2016; Aliota et al., 2016; Fernandes et al., 2016; Huang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "7fde9152-057b-4e9e-9459-0c99d427188f",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C51",
+      "claim": "There is evidence for significant genotype x genotype effects on the vector competence of Ae. aegypti and Ae. albopictus to transmit Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest, in combination with evidence for significant genotype x genotype effects on the vector competence of Ae. aegypti and Ae. albopictus to transmit Zika (Chouin-Carneiro et al., 2016), that the vector competence of Cx. pipiens and Cx. quinquefasciatus for Zika virus could be highly dependent upon the genetic background of the mosquito-virus pairing, as well as local environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chouin-Carneiro et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "4f748e87-927e-40c7-b691-f11cf8209abd",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C52",
+      "claim": "The vector competence of Cx. pipiens and Cx. quinquefasciatus for Zika virus could be highly dependent upon the genetic background of the mosquito-virus pairing, as well as local environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest, in combination with evidence for significant genotype x genotype effects on the vector competence of Ae. aegypti and Ae. albopictus to transmit Zika (Chouin-Carneiro et al., 2016), that the vector competence of Cx. pipiens and Cx. quinquefasciatus for Zika virus could be highly dependent upon the genetic background of the mosquito-virus pairing, as well as local environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited evidence and the authors' reasoning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "88a5f9c1-9fdf-45ef-9550-b5eadb7ccbc4",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C53",
+      "claim": "The vectors predicted by the model have a combined geographic range much larger than that of the currently suspected vectors of Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "The vectors predicted by our model have a combined geographic range much larger than that of the currently suspected vectors of Zika (Figure 3), suggesting that, were these species to be confirmed as vectors, a larger population may be at risk of Zika infection than depicted by maps focusing solely on Ae. aegypti and Ae. albopictus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 3 showing geographic distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "dd065d9e-0160-4588-8831-32b682fa740a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C54",
+      "claim": "The range of Cx. pipiens includes the Pacific Northwest and the upper mid-West, areas that are not within the known range of Ae. aegypti or Ae. albopictus.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of Cx. pipiens includes the Pacific Northwest and the upper mid-West, areas that are not within the known range of Ae. aegypti or Ae. albopictus (Darsie and Ward, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Darsie and Ward, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "429de0b5-bd2c-4687-a92a-65e3c9a5ef97",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C55",
+      "claim": "Ae. vexans is found throughout the continental US.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Ae. vexans, another predicted vector of Zika virus, is found throughout the continental US and the range of Cx. tarsalis extends along the entire West coast (Darsie and Ward, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Darsie and Ward, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "ac03d992-f49b-47f8-9f18-67f911df10b8",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C56",
+      "claim": "The range of Cx. tarsalis extends along the entire West coast.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Ae. vexans, another predicted vector of Zika virus, is found throughout the continental US and the range of Cx. tarsalis extends along the entire West coast (Darsie and Ward, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Darsie and Ward, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5098f45d-a6b5-4770-834b-0999d12c087d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C57",
+      "claim": "Ae. aegypti and Cx. quinquefasciatus mainly breed in artificial containers.",
+      "claim_type": "EXPLICIT",
+      "source": "On a finer scale, these species use a more diverse set of habitats, with Ae. aegypti and Cx. quinquefasciatus mainly breeding in artificial containers, and Ae. vexans and Ae. albopictus being relatively indiscriminate in their breeding sites, including breeding in natural sites such as tree holes and swamps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about mosquito breeding habits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "e2ce57ff-10fd-4a17-b98a-96a31aa2802c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C58",
+      "claim": "Ae. vexans and Ae. albopictus are relatively indiscriminate in their breeding sites, including breeding in natural sites such as tree holes and swamps.",
+      "claim_type": "EXPLICIT",
+      "source": "On a finer scale, these species use a more diverse set of habitats, with Ae. aegypti and Cx. quinquefasciatus mainly breeding in artificial containers, and Ae. vexans and Ae. albopictus being relatively indiscriminate in their breeding sites, including breeding in natural sites such as tree holes and swamps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about mosquito breeding habits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "4a63ca1c-54fe-40c2-bece-d95f98b8ff54",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C59",
+      "claim": "Although Ae. aegypti mosquitoes are efficient vectors of West Nile virus, they prefer to feed on humans, which are dead-head hosts for the disease, and therefore have low potential to serve as a vector.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although Ae. aegypti mosquitoes are efficient vectors of West Nile virus, they prefer to feed on humans, which are dead-head hosts for the disease, and therefore have low potential to serve as a vector (Turell et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Turell et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c61ed8bb-b902-4c3e-a818-32045bdc7be7",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C60",
+      "claim": "Psorophora ferox rarely feeds on humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Psorophora ferox, although predicted by our model as a potential vector of Zika virus, would likely play a limited role in transmission because it rarely feeds on humans (Molaei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Molaei et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3bb73e54-74f8-4569-ad9a-54abe5a73dc9",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C61",
+      "claim": "Vector competence is dynamic, and may be mediated by environmental factors that influence viral development and mosquito immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, vector competence is dynamic, and may be mediated by environmental factors that influence viral development and mosquito immunity (Muturi and Alto, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muturi and Alto, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "23022d6f-6f0c-4120-8a58-6837d3befb0a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C62",
+      "claim": "Ae. aegypti is anthropophilic.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in spite of its low transmission efficiency in certain geographic regions (Chouin-Carneiro et al., 2016), Ae. aegypti is anthropophilic (Powell and Tabachnick, 2013), and may therefore pose a greater risk of human-to-human Zika virus transmission than mosquitoes that bite a wider variety of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Powell and Tabachnick, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5baf771a-71c0-4099-ad42-795439e0728e",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C63",
+      "claim": "Mosquito species that prefer certain hosts in rural environments are known to alter their feeding behaviors to bite alternative hosts (e.g., humans and rodents) in urban settings, due to changes in host community composition.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, mosquito species that prefer certain hosts in rural environments are known to alter their feeding behaviors to bite alternative hosts (e.g., humans and rodents) in urban settings, due to changes in host community composition (Chaves et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chaves et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "202c53bf-8ec5-4639-af2e-b1db1f02c888",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C64",
+      "claim": "Environmental factors such as precipitation and temperature directly influence mosquito populations, and determine the density of vectors in a given area.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental factors such as precipitation and temperature directly influence mosquito populations, and determine the density of vectors in a given area (Thomson et al., 2006), an important factor in transmission risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thomson et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "aa246b7e-160d-4d2b-8512-9ef646e4fe57",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C65",
+      "claim": "Socio-economic factors such as housing type and lifestyle can decrease a populations' contact with mosquito vectors, and lower the risk of transmission to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, socio-economic factors such as housing type and lifestyle can decrease a populations' contact with mosquito vectors, and lower the risk of transmission to humans (Moreno-Madri\u00f1\u00e1n and Turell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moreno-Madri\u00f1\u00e1n and Turell, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b19e1873-9a6c-44b9-ae49-85ce55ca5f23",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C66",
+      "claim": "This technique has been used to predict rodent reservoirs of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has been used to predict rodent reservoirs of disease (Han et al., 2015) and bat carriers of filoviruses (Han et al., 2016) by training models with host-specific data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Han et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "32859f9b-e2fe-4d56-ae09-96ef962ebe06",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C67",
+      "claim": "This technique has been used to predict bat carriers of filoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has been used to predict rodent reservoirs of disease (Han et al., 2015) and bat carriers of filoviruses (Han et al., 2016) by training models with host-specific data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Han et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "d804c123-3fca-461b-8e43-fdd092a97add",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C68",
+      "claim": "Vector status is not static (e.g. mutation in the chikungunya virus to increase transmission by Ae. albopictus).",
+      "claim_type": "EXPLICIT",
+      "source": "Vector status is not static (e.g. mutation in the chikungunya virus to increase transmission by Ae. albopictus [Weaver and Forrester, 2015]) and can vary across vector populations (Bennett et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weaver and Forrester, 2015 and Bennett et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a819abd4-efde-4df7-b86c-16df5be03184",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C69",
+      "claim": "Vector status can vary across vector populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector status is not static (e.g. mutation in the chikungunya virus to increase transmission by Ae. albopictus [Weaver and Forrester, 2015]) and can vary across vector populations (Bennett et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bennett et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1ef09613-4c50-43d5-af71-ccacb92375c8",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C70",
+      "claim": "The constructed flavivirus-mosquito network generally concurs with the proposed dichotomy of Aedes species vectoring hemorrhagic or febrile arboviruses and Culex species vectoring neurological or encephalitic viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our constructed flavivirus-mosquito network generally concurs with the proposed dichotomy of Aedes species vectoring hemorrhagic or febrile arboviruses and Culex species vectoring neurological or encephalitic viruses (Grard et al., 2010) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Grard et al., 2010 and reference to Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "856150bd-1f88-49cf-a333-c63bbc540f7a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C71",
+      "claim": "West Nile virus is vectored by several Aedes species, which is an exception to the Aedes-hemorrhagic/Culex-encephalitic dichotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are several exceptions to this trend, notably West Nile virus, which is vectored by several Aedes species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "6edcc09b-4904-47d9-908f-276930848f78",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C72",
+      "claim": "Zika's symptoms are both febrile and neurological.",
+      "claim_type": "EXPLICIT",
+      "source": "While this may initially seem contrary to the common phylogenetic pairing of vectors and viruses noted above, Zika's symptoms, like West Nile virus, are both febrile and neurological.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about Zika virus symptoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f54265e0-5fba-4c9f-9673-c473b5daa021",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C73",
+      "claim": "Vector control efforts that target Aedes species exclusively may ultimately be unsuccessful in controlling transmission of Zika because they do not control other, unknown vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector control efforts that target Aedes species exclusively may ultimately be unsuccessful in controlling transmission of Zika because they do not control other, unknown vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the model predictions and understanding of vector control.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "aac06eff-8caa-4551-9378-b2d9acc8b275",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C74",
+      "claim": "The release of genetically modified Ae. aegypti to control vector density through sterile insect technique is species-specific and would not control alternative vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the release of genetically modified Ae. aegypti to control vector density through sterile insect technique is species-specific and would not control alternative vectors (Alphey et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alphey et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "854f4e31-01a7-49e8-92c1-1318f22980f7",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C75",
+      "claim": "Control efforts based singularly on reducing Aedes larval habitat will not be as successful at controlling Cx. quinquefasciatus populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, species' habitat preferences differ, and control efforts based singularly on reducing Aedes larval habitat will not be as successful at controlling Cx. quinquefasciatus populations (Rey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rey et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c064a256-c3d1-4a69-a60b-26556cf6dccf",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C76",
+      "claim": "The gold standard for identifying competent disease vectors requires isolating virus from field-collected mosquitoes, followed by experimental inoculation and laboratory investigation of viral dissemination throughout the body and to the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "The gold standard for identifying competent disease vectors requires isolating virus from field-collected mosquitoes, followed by experimental inoculation and laboratory investigation of viral dissemination throughout the body and to the salivary glands (Barnett, 1960; Hardy et al., 1983), and, when possible, successful transmission back to the vertebrate host (e.g. Komar et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barnett, 1960; Hardy et al., 1983; and Komar et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "ce931edf-3607-412c-ad9a-8670b10ce395",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C77",
+      "claim": "These methods for identifying competent disease vectors are costly, often underestimate the risk of transmission, and the amount of time required for analyses can delay decision making during an outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, these methods are costly, often underestimate the risk of transmission (Bustamante and Lord, 2010), and the amount of time required for analyses can delay decision making during an outbreak (Day, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bustamante and Lord, 2010 and Day, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "d4be1cdd-1bac-462a-9a8f-856d97f2aacf",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C78",
+      "claim": "If the propensity of mosquito species to associate with Zika virus is statistically associated with common mosquito traits, it is possible to rank mosquito species by the degree of risk represented by their traits.",
+      "claim_type": "EXPLICIT",
+      "source": "If the propensity of mosquito species to associate with Zika virus is statistically associated with common mosquito traits, it is possible to rank mosquito species by the degree of risk represented by their traits \u2013 a comparative approach similar to the analysis of risk factors in epidemiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical premise underlying the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "139ae6ea-64ad-403e-b6b9-5f40e885900c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C79",
+      "claim": "The model identifies covariates associated with the propensity for mosquito species to vector any flavivirus.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our method identifies covariates associated with the propensity for mosquito species to vector any flavivirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "8635f05a-d17e-43bb-867c-dbae5a78fe0e",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C80",
+      "claim": "A known vector-virus pair is defined as one for which the full transmission cycle (i.e, infection of mosquito via an infected host (mammal or avian) or bloodmeal that is able to be transmitted via saliva) has been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined a known vector-virus pair as one for which the full transmission cycle (i.e, infection of mosquito via an infected host (mammal or avian) or bloodmeal that is able to be transmitted via saliva) has been observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "fa7a9cce-d015-421b-95dc-5949791b58fd",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C81",
+      "claim": "Basing vector competence on isolation or intrathoracic injection bypasses several important barriers to transmission, and may not be true evidence of a mosquito's ability to transmit an arbovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "Basing vector competence on isolation or intrathoracic injection bypasses several important barriers to transmission (Hardy et al., 1983), and may not be true evidence of a mosquito's ability to transmit an arbovirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hardy et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f45aa88c-94e5-4600-bbcd-4081e216ac01",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C82",
+      "claim": "The definition of vector competence used in this study is more conservative than that which is commonly used in disease databases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found our definition to be more conservative than that which is commonly used in disease databases (e.g. Global Infectious Diseases and Epidemiology Network database), which often assumes isolation from wild-caught mosquitoes to be evidence of a mosquito's role as a vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methodological approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f66f1d80-d307-4139-af04-48447b29aef9",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C83",
+      "claim": "Fifteen mosquito traits and twelve virus traits were collected from the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen mosquito traits (Appendix 2\u2014table 1) and twelve virus traits (Appendix 2\u2014table 2) were collected from the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "90766b29-bf69-454d-af12-aad18bb46637",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C84",
+      "claim": "A species' host range was defined as the number of taxonomic classes the species is known to feed on, with the Mammalia class further split into non-human primates and other mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "A species' host range was defined as the number of taxonomic classes the species is known to feed on, with the Mammalia class further split into non-human primates and other mammals, because of the important role primates play in zoonotic spillovers of vector-borne disease (e.g. dengue, chikungunya, yellow fever, and Zika viruses) (Weaver, 2005; Diallo et al., 2005; Weaver et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weaver, 2005; Diallo et al., 2005; Weaver et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "d189b78c-b1b4-4493-82ab-9c263b68c635",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C85",
+      "claim": "Primates play an important role in zoonotic spillovers of vector-borne disease (e.g. dengue, chikungunya, yellow fever, and Zika viruses).",
+      "claim_type": "EXPLICIT",
+      "source": "A species' host range was defined as the number of taxonomic classes the species is known to feed on, with the Mammalia class further split into non-human primates and other mammals, because of the important role primates play in zoonotic spillovers of vector-borne disease (e.g. dengue, chikungunya, yellow fever, and Zika viruses) (Weaver, 2005; Diallo et al., 2005; Weaver et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weaver, 2005; Diallo et al., 2005; Weaver et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c8ae68d0-450b-4847-93ea-dbbd3e377913",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C86",
+      "claim": "For three traits \u2013 urban preference, endophily, and salinity tolerance \u2013 if evidence of that trait for a mosquito was not found in the literature, it was assumed to be negative.",
+      "claim_type": "EXPLICIT",
+      "source": "For three traits \u2013 urban preference, endophily (a proclivity to bite indoors), and salinity tolerance \u2013 if evidence of that trait for a mosquito was not found in the literature, it was assumed to be negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data coding methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f2c33a22-0802-478a-bd6a-2fc10e15dfd1",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C87",
+      "claim": "Boosted regression trees circumvent many issues associated with traditional regression analysis, allowing for complex variable interactions, collinearity, non-linear relationships between covariates and response variables, and missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Boosted regression trees circumvent many issues associated with traditional regression analysis (Elith et al., 2008), allowing for complex variable interactions, collinearity, non-linear relationships between covariates and response variables, and missing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Elith et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b47b7603-f0b5-4ad8-bbcf-be257ae2888e",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C88",
+      "claim": "Boosted regression trees perform well in comparison with other logistic regression approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this technique performs well in comparison with other logistic regression approaches (Friedman, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Friedman, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "95e8e3d1-3449-436d-a5db-667d3cdb16d2",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C89",
+      "claim": "An ensemble of 25 internally cross-validated BRT models was trained on independent partitions of training and testing data.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we trained an ensemble of 25 internally cross-validated BRT models on independent partitions of training and testing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "fbd4c88a-4778-40a7-be42-c27f53bc303a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C90",
+      "claim": "The data was randomly split into training (70%) and test (30%) sets while preserving the proportion of positive labels in each set.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the analysis of each model, we randomly split the data into training (70%) and test (30%) sets while preserving the proportion of positive labels (known associations) in each of the training and test sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data partitioning methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f91a9470-44f3-47ac-80cf-ef7bc091eadf",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C91",
+      "claim": "The final propensity score for each vector was the mean propensity score assigned by the twenty-five models.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, the final propensity score for each vector was the mean propensity score assigned by the twenty-five models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how final predictions were calculated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c494d8b5-7db6-42e3-8483-4c508281e545",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C92",
+      "claim": "Propensity scores were thresholded at the value of lowest ranked known vector.",
+      "claim_type": "EXPLICIT",
+      "source": "To label unobserved edges, we thresholded propensity scores at the value of lowest ranked known vector (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "23b20ba8-78c0-450d-aa66-2bb7d153d481",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C93",
+      "claim": "The model predicts that fewer than one third of the potential mosquito vectors of Zika virus have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that fewer than one third of the potential mosquito vectors of Zika virus have been identified, with over twenty-five additional mosquito species worldwide that may have the capacity to contribute to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b438b0c7-8579-43df-b1a3-b81f199ed884",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C94",
+      "claim": "Over twenty-five additional mosquito species worldwide may have the capacity to contribute to Zika transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that fewer than one third of the potential mosquito vectors of Zika virus have been identified, with over twenty-five additional mosquito species worldwide that may have the capacity to contribute to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b70c5fb9-d30b-4b71-a6c1-4297a37b75e1",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C95",
+      "claim": "The continuing focus in the published literature on two species known to transmit Zika virus (Ae. aegypti and Ae. albopictus) ignores the potential role of other vectors, potentially misrepresenting the spatial extent of risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuing focus in the published literature on two species known to transmit Zika virus (Ae. aegypti and Ae. albopictus) ignores the potential role of other vectors, potentially misrepresenting the spatial extent of risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model predictions and current research focus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3c64b3fb-e1e1-4154-b3f6-59f4ab10fbb7",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C96",
+      "claim": "Cx. quinquefasciatus and Cx. pipiens together are the highest-ranking species endemic to the United States after the known vectors (Ae. aegypti and Ae. albopictus).",
+      "claim_type": "EXPLICIT",
+      "source": "Cx. quinquefasciatus and Cx. pipiens were ranked 3rd and 17th by our model, respectively, and together these species were the highest-ranking species endemic to the United States after the known vectors (Ae. aegypti and Ae. albopictus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model ranking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "593bb3d2-cb93-4d1a-8d7a-6795026b611a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C97",
+      "claim": "Considering their anthropophilic natures and wide geographic ranges, Cx. quinquefasciatus and Cx. pipiens could potentially play a larger role in the transmission of Zika in the continental United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, considering their anthropophilic natures and wide geographic ranges, Cx. quinquefasciatus and Cx. pipiens could potentially play a larger role in the transmission of Zika in the continental United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on model predictions and species characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3cbe9422-ad49-4308-8664-aaafa92a11ef",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C98",
+      "claim": "Were these species to be confirmed as vectors, a larger population may be at risk of Zika infection than depicted by maps focusing solely on Ae. aegypti and Ae. albopictus.",
+      "claim_type": "EXPLICIT",
+      "source": "The vectors predicted by our model have a combined geographic range much larger than that of the currently suspected vectors of Zika (Figure 3), suggesting that, were these species to be confirmed as vectors, a larger population may be at risk of Zika infection than depicted by maps focusing solely on Ae. aegypti and Ae. albopictus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conditional inference based on model predictions and geographic data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "2b213bf5-6791-415f-beff-fc1139c5f641",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C99",
+      "claim": "Both rural and urban areas could serve as habitat for potential vectors of Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to the wider geographic region supporting potential vectors, these findings suggest that both rural and urban areas could serve as habitat for potential vectors of Zika.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diverse habitat preferences of predicted vectors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "500c1b3d-ffd0-4c39-ae41-5fde50a5efb8",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C100",
+      "claim": "Ae. aegypti is anthropophilic and may therefore pose a greater risk of human-to-human Zika virus transmission than mosquitoes that bite a wider variety of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in spite of its low transmission efficiency in certain geographic regions (Chouin-Carneiro et al., 2016), Ae. aegypti is anthropophilic (Powell and Tabachnick, 2013), and may therefore pose a greater risk of human-to-human Zika virus transmission than mosquitoes that bite a wider variety of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited evidence about Ae. aegypti behavior.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c1efe389-aeb8-4ac3-9acc-3eb59eab96d7",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C101",
+      "claim": "Psorophora ferox would likely play a limited role in Zika transmission because it rarely feeds on humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Psorophora ferox, although predicted by our model as a potential vector of Zika virus, would likely play a limited role in transmission because it rarely feeds on humans (Molaei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited evidence about Psorophora ferox feeding behavior.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "da423ee7-1368-4f47-84bc-239c327a5763",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C102",
+      "claim": "The list of potential vectors of Zika represents a comprehensive starting point, which should be further narrowed by empirical work and consideration of biological details that impact transmission dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our list of potential vectors of Zika represents a comprehensive starting point, which should be furthered narrowed by empirical work and consideration of biological details that impact transmission dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "701542f9-5fa9-4789-8051-e0fad9ae1521",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C103",
+      "claim": "The model serves as a starting point to streamlining empirical efforts to identify areas and populations at risk for Zika transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model serves as a starting point to streamlining empirical efforts to identify areas and populations at risk for Zika transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the intended application of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a6ade9ed-5fd3-489a-a5e4-6ce0bd62d735",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C104",
+      "claim": "Subsequent empirical work investigating Zika vector competence and transmission efficiency is required for model validation, and to inform future analyses of transmission dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "While our model enables data-driven predictions about the geographic area at potential risk of Zika transmission, subsequent empirical work investigating Zika vector competence and transmission efficiency is required for model validation, and to inform future analyses of transmission dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0481c8d5-f830-4021-8761-f6d1683bbd16",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C105",
+      "claim": "Effective risk modeling and forecasting the range expansion of Zika virus in the United States will depend on validating the vector status of these species, as well as resolving behavioral and biological details that impact transmission dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective risk modeling and forecasting the range expansion of Zika virus in the United States will depend on validating the vector status of these species, as well as resolving behavioral and biological details that impact transmission dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research and risk assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "647a45d3-e033-445a-b535-69dfecc70e5b",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C106",
+      "claim": "The model incorporates additional data by constructing a vector-virus network that is used to inform predictions of vector-virus associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model, however, incorporates additional data by constructing a vector-virus network that is used to inform predictions of vector-virus associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "7ef159aa-32fd-4a4f-80e3-072cf11fd1c4",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C107",
+      "claim": "The combination of common virus traits with vector-specific traits enabled prediction of potential mosquito vectors of specific flaviviruses, and training the model on additional information distributed throughout the flavivirus-mosquito network.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of common virus traits with vector-specific traits enabled us to predict potential mosquito vectors of specific flaviviruses, and to train the model on additional information distributed throughout the flavivirus-mosquito network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's methodology and capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "5d30f5af-e0fe-4251-b849-0489472828e3",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C108",
+      "claim": "When incorporating uncertainty in vector status through the supplementary model, predictions generally agreed with that of the original model.",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporating uncertainty in vector status through our supplementary model, our predictions generally agreed with that of our original model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of model validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "fe214f78-e58b-4201-99ed-1c1d2055dbea",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C109",
+      "claim": "The increased uncertainty in the supplementary model reduced the models' ability to distinguish negative links, resulting in higher uncertainty in propensity scores and a larger number of predicted vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased uncertainty did reduce the models' ability to distinguish negative links, resulting in higher uncertainty in propensity scores (as measured by standard deviation) and a larger number of predicted vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of model validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1958f51b-59db-4d0f-bd8b-1546fbf84860",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C110",
+      "claim": "The model performs poorly when predicting on vector-virus links with trait levels not included in the training data set, as was the case when omitting yellow fever virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the model performs poorly when predicting on vector-virus links with trait levels not included in the training data set, as was the case when omitting yellow fever virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of model validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "349ef57e-491d-4c59-a5f2-d03236e8c7f2",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C111",
+      "claim": "Additional study into the behavior and biology of less common vector species would increase the accuracy of prediction techniques such as this.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional study into the behavior and biology of less common vector species would increase the accuracy of prediction techniques such as this, and allow for a better of understanding of species' potential role as vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "bf7c5268-46fe-4595-a28b-59c007b03355",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C112",
+      "claim": "The constructed flavivirus-mosquito network generally concurs with the proposed dichotomy of Aedes species vectoring hemorrhagic or febrile arboviruses and Culex species vectoring neurological or encephalitic viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our constructed flavivirus-mosquito network generally concurs with the proposed dichotomy of Aedes species vectoring hemorrhagic or febrile arboviruses and Culex species vectoring neurological or encephalitic viruses (Grard et al., 2010) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Grard et al., 2010 and reference to Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "962fb823-04ed-45b2-a4a9-fe1c84edac5a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C113",
+      "claim": "The model predicts several Culex species to be possible vectors of Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our model predicts several Culex species to be possible vectors of Zika virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "04564d5b-5643-4087-8994-96d07e934d72",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C114",
+      "claim": "Zika's symptoms are both febrile and neurological, like West Nile virus.",
+      "claim_type": "EXPLICIT",
+      "source": "While this may initially seem contrary to the common phylogenetic pairing of vectors and viruses noted above, Zika's symptoms, like West Nile virus, are both febrile and neurological.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about Zika virus symptoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0a2b4d28-e8c6-45c4-a474-2150257f5c93",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C115",
+      "claim": "The ability of Zika virus to be vectored by a diversity of mosquito vectors could expand both the geographic range and seasonal transmission risk of Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of Zika virus to be vectored by a diversity of mosquito vectors could have important public health consequences, as it may expand both the geographic range and seasonal transmission risk of Zika virus, and warrants further empirical investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "d07b5793-39a6-414f-9607-cef7fb615c0e",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C116",
+      "claim": "Vector control efforts that target Aedes species exclusively may not control alternative vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector control efforts that target Aedes species exclusively may ultimately be unsuccessful in controlling transmission of Zika because they do not control other, unknown vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "f32037dc-c7c1-4bd2-9dc0-2bbd21dc3ae0",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C117",
+      "claim": "If predicted vectors are confirmed, vector control efforts would need to respond by widening their focus to control the abundance of all predicted vectors of Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted vectors of Zika virus must be empirically tested and, if confirmed, vector control efforts would need to respond by widening their focus to control the abundance of all predicted vectors of Zika virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional recommendation based on model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "b08c9892-da96-49be-a7da-356564da3b9c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C118",
+      "claim": "If control efforts are to include all areas at potential risk of disease transmission, public health efforts would need to expand to address regions such as the northern Midwest that fall within the range of the additional vector species predicted by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, if control efforts are to include all areas at potential risk of disease transmission, public health efforts would need to expand to address regions such as the northern Midwest that fall within the range of the additional vector species predicted by our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional recommendation based on model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "039fd294-7244-4dd5-a2e6-c69ce7873f9a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C119",
+      "claim": "An understanding of the capacity of mosquito species to vector Zika virus is necessary to prepare for the potential establishment of Zika virus in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "An understanding of the capacity of mosquito species to vector Zika virus is necessary to prepare for the potential establishment of Zika virus in the United States, and we recommend that experimental work start with this list of candidate vector species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "e0d572c3-d6a8-4dc9-b8a6-e5ca740f54f4",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C120",
+      "claim": "Experimental work should start with this list of candidate vector species.",
+      "claim_type": "EXPLICIT",
+      "source": "An understanding of the capacity of mosquito species to vector Zika virus is necessary to prepare for the potential establishment of Zika virus in the United States, and we recommend that experimental work start with this list of candidate vector species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c0c94df4-867a-48bf-970d-c8344e0150d3",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C121",
+      "claim": "Empirical studies should prioritize the predicted species to confirm predictions of vector competence, enabling the correct identification of populations at risk for transmission within the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that empirical studies prioritize these species to confirm predictions of vector competence, enabling the correct identification of populations at risk for transmission within the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "35971017-fd14-4c12-879d-7c8522322c71",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C122",
+      "claim": "The model developed links vector species and the Zika virus via vector-virus trait combinations that confer a propensity toward associations in an ecological network connecting flaviviruses and their mosquito vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify unknown vectors of Zika, we developed a data-driven model linking vector species and the Zika virus via vector-virus trait combinations that confer a propensity toward associations in an ecological network connecting flaviviruses and their mosquito vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's methodology stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3f399e06-2c5c-4c7e-b784-820aca6cdbef",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C123",
+      "claim": "The model predicts that thirty-five species may be able to transmit Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that thirty-five species may be able to transmit the virus, seven of which are found in the continental United States, including Culex quinquefasciatus and Cx. pipiens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "c3148cc3-5407-42b7-9d97-fdad5da6c852",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "claim_id": "C124",
+      "claim": "Seven of the predicted Zika vector species are found in the continental United States, including Culex quinquefasciatus and Cx. pipiens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that thirty-five species may be able to transmit the virus, seven of which are found in the continental United States, including Culex quinquefasciatus and Cx. pipiens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model predictions stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4248458b-01c5-4920-b35e-8daeb41225e9",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study compiled a dataset of 132 vector-virus pairs consisting of 77 mosquito species (primarily Aedes and Culex) and 37 flaviviruses, plus a supplementary dataset of 103 additional mosquito species, resulting in 180 potential mosquito-Zika pairs for prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 and C83 provide clear, internally consistent descriptions of the dataset construction. The numbers are specific and the methodology for data collection is described. These are straightforward data reporting claims that form the foundation of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The flavivirus-mosquito network shows that closely related viruses share vectors, with West Nile virus having the most vectors (31), followed by yellow fever (24). The network generally supports the dichotomy of Aedes species vectoring hemorrhagic viruses and Culex species vectoring encephalitic viruses, though exceptions exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 and C70-C71 describe patterns observed in the compiled dataset and are supported by Figure 1 and citation to Grard et al. 2010. The descriptive statistics (31 and 24 vectors) are direct data reports. The observed dichotomy is appropriately qualified as having exceptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ensemble BRT model achieved high predictive accuracy (AUC=0.92\u00b10.02, sensitivity=0.858\u00b10.04, specificity=0.872\u00b10.04). The most important predictive variables were mosquito subgenus, continental range, and the number of viruses vectored by a mosquito species, while ecological traits were less important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 report model performance metrics and variable importance rankings directly from the analysis. The metrics are clearly stated with standard deviations, and Figure 2 supports the variable importance claims. These are straightforward reports of model outputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "100cd280-e493-4630-8858-d1b90073e74b",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicted 35 mosquito species as potential Zika vectors (9 known, 26 novel), including 24 Aedes, 9 Culex, 1 Psorophora, and 1 Runchomyia species. Seven predicted vectors are found in the continental US, including Cx. quinquefasciatus and Cx. pipiens. The top-ranked species were Ae. aegypti and Ae. albopictus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C123-C124 directly report model predictions with specific numbers and species identifications shown in Table 1. The predictions are internally consistent and represent the primary output of the modeling exercise. The validation that known vectors rank highly (C35) supports model credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "17f3c627-94f5-445f-b198-8fd36e034ba3",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A supplementary model incorporating uncertainty in vector status showed high correlation with the primary model (\u03c1=0.508-0.693) and maintained good performance (AUC=0.84\u00b10.02), though with reduced ability to distinguish negative links.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C108-C109 report validation results comparing two modeling approaches. The correlation coefficients and AUC values are clearly stated, and the interpretation that uncertainty reduces discrimination of negative links is reasonable given the reported metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "69e1621c-5b09-4840-abc3-f3ac5e672327",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Leave-one-out validation showed the model could predict vectors for West Nile (AUC=0.91) and dengue (AUC=0.92) viruses well, but performed poorly for yellow fever (AUC=0.47), likely because yellow fever vectors have unique characteristics (single-virus associations, Haemagogus genus) absent from training data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 and C110 report validation results with clear performance metrics and provide a reasonable explanation for poor yellow fever prediction based on dataset characteristics. The explanation that novel trait levels reduce prediction accuracy is logically sound and supported by the data structure described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "6e539291-b7fa-4583-bb84-620b5e7c8337",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Four predicted vector species (Ae. vexans, Cx. quinquefasciatus, Cx. pipiens, Cx. tarsalis) are found throughout the continental US. Cx. quinquefasciatus (ranked 3rd) and Cx. pipiens (ranked 17th) are the highest-ranking US-endemic species after known vectors and are primary vectors of West Nile virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C96, and C124 combine model predictions with geographic distribution data from citations. The rankings are directly from model output, and the West Nile virus vector status is supported by citation to Farajollahi et al. 2011. The geographic claims are supported by appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "05e2c881-a22a-4791-b67c-d4029dde31ef",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cx. quinquefasciatus has been implicated as a vector of encephalitic flaviviruses, and hybrids with Cx. pipiens bite humans. Empirical data on Zika vector competence for these species is mixed, and competence may depend on mosquito-virus genetic background and environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 appropriately cite prior work on Culex species and acknowledge mixed empirical evidence for Zika transmission. The inference about genetic and environmental dependence (C52) is appropriately qualified as speculative and supported by citation to genotype\u00d7genotype effects in other species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a195778b-68b9-477d-9df6-4b73eea825d9",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Predicted vectors have a combined geographic range much larger than currently suspected Zika vectors, including areas like the Pacific Northwest and upper Midwest. If confirmed, this would indicate a larger at-risk population than currently estimated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C56 and C98 combine model predictions with geographic data (Figure 3, citations to Darsie and Ward 2005). While the geographic distributions are well-supported, the public health implications (C98) are conditional on experimental confirmation of vector competence, which has not been performed. The claim is appropriately qualified with 'were these species to be confirmed.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "0aa18b0f-1aa8-416f-9e3e-cc94683cbbf1",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Predicted vector species use diverse habitats: Ae. aegypti and Cx. quinquefasciatus breed in artificial containers, while Ae. vexans and Ae. albopictus use diverse sites including natural habitats. This suggests both rural and urban areas could support Zika vectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 represent established knowledge about mosquito breeding habits (marked as KNOWLEDGE evidence). Claim C99 is a reasonable inference from the diverse habitat preferences of predicted vectors. The logic connecting habitat diversity to rural/urban risk is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "8fde9b94-95ef-4fa6-b6b6-21bf5eb4ff34",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Vector competence does not equal transmission risk: Ae. aegypti has low West Nile transmission potential despite competence because it feeds on dead-end human hosts. Similarly, Psorophora ferox would play a limited role in Zika transmission because it rarely feeds on humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 and C100-C101 appropriately distinguish vector competence from transmission risk using cited examples. The logic is sound: host preference affects transmission potential. The claims are appropriately qualified (C100: 'may pose greater risk'; C101: 'would likely play limited role').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Vector competence is dynamic and influenced by environmental factors (temperature, precipitation affecting mosquito density), mosquito behavior (host preference changes in urban vs. rural settings), and socioeconomic factors (housing type, lifestyle affecting human-vector contact).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 cite appropriate literature for each factor affecting transmission dynamics. These represent established knowledge in vector biology and epidemiology, properly cited to support the authors' discussion of factors beyond their model predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "a4ba0b54-833d-44c7-9fe6-c2275089821d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Vector control efforts targeting only Aedes species may be unsuccessful because they would not control alternative vectors. Species-specific approaches (e.g., genetically modified Ae. aegypti) and habitat-specific approaches (e.g., targeting Aedes larval habitat) would not control Culex populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 and C116-C118 make logical inferences about vector control implications, appropriately supported by citations (Alphey et al. 2010, Rey et al. 2006). The conditional nature of recommendations (C117-C118: 'if confirmed') is appropriate given that predictions require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "da24e9e2-aafb-45cb-8d4c-588c728df64d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predicts fewer than one-third of potential Zika vectors have been identified, with over 25 additional species worldwide that may contribute to transmission. Current focus on Ae. aegypti and Ae. albopictus may misrepresent spatial risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 are direct inferences from model predictions (35 total predicted vectors including 9 known = 26% known). The calculation is straightforward and the inference about misrepresented risk follows logically from the expanded list of potential vectors, though it requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "868c6169-b4ca-43e0-a574-9ac3834b08da",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model provides a comprehensive starting point for empirical work to identify Zika vectors and at-risk populations. Subsequent experimental validation of vector competence and transmission efficiency is required for model validation and to inform transmission dynamics analyses and risk forecasting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 and C119-C121 appropriately frame the study's predictions as requiring experimental validation. The authors correctly identify their work as hypothesis-generating rather than definitive, and clearly state the need for followup empirical studies. This is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "3fa2b5db-3604-4706-b635-d82c7ed52c5a",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model incorporates data by constructing a vector-virus network linking species via trait combinations that confer propensity for associations. Combining virus traits with vector traits enabled prediction of specific flavivirus vectors using information distributed throughout the network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 and C122 describe the methodological approach. This network-based approach is clearly explained and distinguishes this work from simpler species-specific models. The methodology is internally consistent with the reported data collection and analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "991cfb58-4121-43e9-b05f-a1a207c140bd",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Zika's symptoms are both febrile and neurological (like West Nile virus), and the model predicts several Culex species as possible vectors. The ability of Zika to be vectored by diverse mosquito species could expand geographic range and seasonal transmission risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C114 represent established knowledge about Zika symptoms. Claim C113 directly reports model predictions. Claim C115 is appropriately qualified as speculative ('could have consequences') and the inference about expanded risk from vector diversity is logical, though requiring validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Traditional vector identification methods (field isolation, experimental inoculation, transmission studies) are costly, time-consuming, and may underestimate risk. The study uses a data-driven approach based on the premise that mosquito traits statistically associate with Zika vector propensity, using a conservative definition of vector competence requiring full transmission cycle observation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 establish the rationale for the modeling approach with appropriate citations. The definition of vector competence (C80) is clearly stated and justified as more conservative than common database definitions (C82). The methodological premise (C78) is reasonable and well-established in epidemiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "e8d4ea26-2302-4adc-8aaf-c4899d96b80c",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Host range was defined as the number of taxonomic classes a species feeds on, with mammals split into primates and other mammals due to primates' important role in zoonotic spillovers. For three traits (urban preference, endophily, salinity tolerance), absence of evidence was assumed to indicate absence of the trait.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C85 are well-justified with appropriate citations about primate roles in disease spillover. However, C86 describes a potentially problematic assumption: treating absence of evidence as evidence of absence for three traits could introduce systematic bias, especially for understudied species. This limitation is not adequately addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study used boosted regression trees (BRT), which handle complex interactions, collinearity, non-linear relationships, and missing data. An ensemble of 25 models was trained on 70/30 train/test splits with 10-fold cross-validation. Final predictions were mean propensity scores, thresholded at the lowest-ranked known vector.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C92 describe the statistical methodology with appropriate citations (Elith et al. 2008, Friedman 2001, Liu et al. 2013). The ensemble approach with cross-validation is sound. The thresholding method (C92) is reasonable for this application, though alternative thresholds could be considered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Similar machine learning techniques have been used to predict rodent disease reservoirs and bat filovirus carriers. Vector status is not static and can vary across populations. Additional study of less common vector species would increase prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 appropriately cite prior applications of similar methods and acknowledge that vector status is dynamic with citations. Claim C111 is a reasonable recommendation that additional data on understudied species would improve model performance, consistent with the yellow fever validation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "286387b6-5d9a-4223-9b34-f65f29b280c6",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Zika virus was introduced to Brazil and Haiti in 2014 and rapidly spread. By January 2017, over 100,000 cases were confirmed in Brazil. The virus was originally isolated in Uganda in 1947, with major outbreaks in Yap (2007) and Oceania (2013-2014). Guillain-Barr\u00e9 syndrome and microcephaly were recognized as associated with Zika infection, leading to WHO's Public Health Emergency declaration in February 2016.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background on Zika epidemiology with appropriate citations or references to established facts. These claims accurately represent the historical context and public health significance of Zika virus, though C1 lacks a specific citation for the 2014 introduction date.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    },
+    {
+      "id": "9c384d7b-dedb-4adf-b386-d409eec883d5",
+      "content_id": "dc7c4231-9744-4b63-8b9b-dd953773bff5",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Ae. aegypti and Ae. albopictus are presumed primary Zika vectors based on epidemiologic association, viral isolation, and transmission experiments, though transmission ability varies across populations and regions. The Yap outbreak was driven by Ae. hensilli. Related flaviviruses are vectored by over 9 mosquito species on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 establish the rationale for investigating additional vectors beyond Ae. aegypti and Ae. albopictus. All claims are supported by appropriate citations. The variation in transmission ability (C13-C14) and the Yap example (C15) effectively motivate the need for a broader vector survey.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:08:02.373729Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c84471c9-13f6-4380-91fa-a7df8a3e6dbd",
+      "result_id": "4248458b-01c5-4920-b35e-8daeb41225e9"
+    },
+    {
+      "claim_id": "288d7054-6072-4cad-a798-5d71b668445d",
+      "result_id": "4248458b-01c5-4920-b35e-8daeb41225e9"
+    },
+    {
+      "claim_id": "92c6f911-7dc5-49f2-94f1-614b20e28706",
+      "result_id": "4248458b-01c5-4920-b35e-8daeb41225e9"
+    },
+    {
+      "claim_id": "0eb12058-edc4-473f-a978-e311bb9a68f5",
+      "result_id": "4248458b-01c5-4920-b35e-8daeb41225e9"
+    },
+    {
+      "claim_id": "f66f1d80-d307-4139-af04-48447b29aef9",
+      "result_id": "4248458b-01c5-4920-b35e-8daeb41225e9"
+    },
+    {
+      "claim_id": "35121245-f811-4aec-9e72-a0ab8f5e4771",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "ef593921-e11e-46a0-900a-89e2effcfd2c",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "246b1793-9924-4e05-902b-5319e62aed98",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "0b05b9b2-082e-4b22-a430-d7bc34d8385d",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "1c6324d9-6bbb-4b6c-a8fc-5693689d233d",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "1ef09613-4c50-43d5-af71-ccacb92375c8",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "856150bd-1f88-49cf-a333-c63bbc540f7a",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "bf7c5268-46fe-4595-a28b-59c007b03355",
+      "result_id": "dfc8e504-0aba-4785-81fe-7d8a8f61fe65"
+    },
+    {
+      "claim_id": "98a8f178-fc74-4d3d-9af6-f7c2937748d9",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "a41efe9e-8e61-4541-8e86-c884d25d1ccb",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "f27eebe3-24f2-4637-b252-389b627661b0",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "f0243286-05b1-4176-96c1-a7c24d529f79",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "dcce851d-138d-4cbf-89b5-153200622a41",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "6b89ba0d-1e23-468f-96a0-d98f9dbc5251",
+      "result_id": "1d49c21b-bbe0-4cea-b572-bb0c8217ed35"
+    },
+    {
+      "claim_id": "fc3fdf90-a1a7-47ee-8da7-b5bbc9318081",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "6c4faf49-adb6-4d09-b3b1-7bcd27cb2843",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "1fc2b40b-8835-4574-a6be-d0c2de42755d",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "cd5cd8af-77f2-4498-bab4-b6b7c226d052",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "3f399e06-2c5c-4c7e-b784-820aca6cdbef",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "c3148cc3-5407-42b7-9d97-fdad5da6c852",
+      "result_id": "100cd280-e493-4630-8858-d1b90073e74b"
+    },
+    {
+      "claim_id": "ffe96355-34ef-48fa-a1ec-1983cf1b43d2",
+      "result_id": "17f3c627-94f5-445f-b198-8fd36e034ba3"
+    },
+    {
+      "claim_id": "aaff758b-00c1-4650-b9f5-ca5a97cd79ac",
+      "result_id": "17f3c627-94f5-445f-b198-8fd36e034ba3"
+    },
+    {
+      "claim_id": "5d30f5af-e0fe-4251-b849-0489472828e3",
+      "result_id": "17f3c627-94f5-445f-b198-8fd36e034ba3"
+    },
+    {
+      "claim_id": "fe214f78-e58b-4201-99ed-1c1d2055dbea",
+      "result_id": "17f3c627-94f5-445f-b198-8fd36e034ba3"
+    },
+    {
+      "claim_id": "87e5db7c-ccf2-496f-9190-be0b9efb8f2c",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "f8d22b0a-a8a6-46ed-9d4a-84c77b8e9190",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "0130af0d-9e34-4404-95e8-1ee7be6aa6a8",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "3ba16218-67af-4b60-ba1b-7a191498dd2b",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "a18b69a9-642c-4dcf-a33d-cf97dd1facbe",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "8970536e-9547-4515-b750-d58ede65f5f5",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "1958f51b-59db-4d0f-bd8b-1546fbf84860",
+      "result_id": "69e1621c-5b09-4840-abc3-f3ac5e672327"
+    },
+    {
+      "claim_id": "3b8088fd-f740-43fa-8906-188d60a8435d",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "2959c360-b4ed-4840-b6e5-ca9589081735",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "32d35cd4-0048-4cc7-aad3-cff7006ab2b5",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "0eecc44e-9105-4af7-8948-81e5bcd7e2ee",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "3c64b3fb-e1e1-4154-b3f6-59f4ab10fbb7",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "c3148cc3-5407-42b7-9d97-fdad5da6c852",
+      "result_id": "6e539291-b7fa-4583-bb84-620b5e7c8337"
+    },
+    {
+      "claim_id": "c90e8ca3-7184-456b-b269-bdf9fdc4a81a",
+      "result_id": "05e2c881-a22a-4791-b67c-d4029dde31ef"
+    },
+    {
+      "claim_id": "191537af-1d7f-45a8-aaef-c2cad1ccf001",
+      "result_id": "05e2c881-a22a-4791-b67c-d4029dde31ef"
+    },
+    {
+      "claim_id": "01696d09-b592-4970-8710-e0d6d818027c",
+      "result_id": "05e2c881-a22a-4791-b67c-d4029dde31ef"
+    },
+    {
+      "claim_id": "7fde9152-057b-4e9e-9459-0c99d427188f",
+      "result_id": "05e2c881-a22a-4791-b67c-d4029dde31ef"
+    },
+    {
+      "claim_id": "4f748e87-927e-40c7-b691-f11cf8209abd",
+      "result_id": "05e2c881-a22a-4791-b67c-d4029dde31ef"
+    },
+    {
+      "claim_id": "88a5f9c1-9fdf-45ef-9550-b5eadb7ccbc4",
+      "result_id": "a195778b-68b9-477d-9df6-4b73eea825d9"
+    },
+    {
+      "claim_id": "dd065d9e-0160-4588-8831-32b682fa740a",
+      "result_id": "a195778b-68b9-477d-9df6-4b73eea825d9"
+    },
+    {
+      "claim_id": "429de0b5-bd2c-4687-a92a-65e3c9a5ef97",
+      "result_id": "a195778b-68b9-477d-9df6-4b73eea825d9"
+    },
+    {
+      "claim_id": "ac03d992-f49b-47f8-9f18-67f911df10b8",
+      "result_id": "a195778b-68b9-477d-9df6-4b73eea825d9"
+    },
+    {
+      "claim_id": "3cbe9422-ad49-4308-8664-aaafa92a11ef",
+      "result_id": "a195778b-68b9-477d-9df6-4b73eea825d9"
+    },
+    {
+      "claim_id": "5098f45d-a6b5-4770-834b-0999d12c087d",
+      "result_id": "0aa18b0f-1aa8-416f-9e3e-cc94683cbbf1"
+    },
+    {
+      "claim_id": "e2ce57ff-10fd-4a17-b98a-96a31aa2802c",
+      "result_id": "0aa18b0f-1aa8-416f-9e3e-cc94683cbbf1"
+    },
+    {
+      "claim_id": "2b213bf5-6791-415f-beff-fc1139c5f641",
+      "result_id": "0aa18b0f-1aa8-416f-9e3e-cc94683cbbf1"
+    },
+    {
+      "claim_id": "4a63ca1c-54fe-40c2-bece-d95f98b8ff54",
+      "result_id": "8fde9b94-95ef-4fa6-b6b6-21bf5eb4ff34"
+    },
+    {
+      "claim_id": "c61ed8bb-b902-4c3e-a818-32045bdc7be7",
+      "result_id": "8fde9b94-95ef-4fa6-b6b6-21bf5eb4ff34"
+    },
+    {
+      "claim_id": "500c1b3d-ffd0-4c39-ae41-5fde50a5efb8",
+      "result_id": "8fde9b94-95ef-4fa6-b6b6-21bf5eb4ff34"
+    },
+    {
+      "claim_id": "c1efe389-aeb8-4ac3-9acc-3eb59eab96d7",
+      "result_id": "8fde9b94-95ef-4fa6-b6b6-21bf5eb4ff34"
+    },
+    {
+      "claim_id": "3bb73e54-74f8-4569-ad9a-54abe5a73dc9",
+      "result_id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d"
+    },
+    {
+      "claim_id": "23022d6f-6f0c-4120-8a58-6837d3befb0a",
+      "result_id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d"
+    },
+    {
+      "claim_id": "5baf771a-71c0-4099-ad42-795439e0728e",
+      "result_id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d"
+    },
+    {
+      "claim_id": "202c53bf-8ec5-4639-af2e-b1db1f02c888",
+      "result_id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d"
+    },
+    {
+      "claim_id": "aa246b7e-160d-4d2b-8512-9ef646e4fe57",
+      "result_id": "05bd3ebf-68e1-4603-9970-20ad8a762b0d"
+    },
+    {
+      "claim_id": "f54265e0-5fba-4c9f-9673-c473b5daa021",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "aac06eff-8caa-4551-9378-b2d9acc8b275",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "854f4e31-01a7-49e8-92c1-1318f22980f7",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "d07b5793-39a6-414f-9607-cef7fb615c0e",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "f32037dc-c7c1-4bd2-9dc0-2bbd21dc3ae0",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "b08c9892-da96-49be-a7da-356564da3b9c",
+      "result_id": "a4ba0b54-833d-44c7-9fe6-c2275089821d"
+    },
+    {
+      "claim_id": "23b20ba8-78c0-450d-aa66-2bb7d153d481",
+      "result_id": "da24e9e2-aafb-45cb-8d4c-588c728df64d"
+    },
+    {
+      "claim_id": "b438b0c7-8579-43df-b1a3-b81f199ed884",
+      "result_id": "da24e9e2-aafb-45cb-8d4c-588c728df64d"
+    },
+    {
+      "claim_id": "b70c5fb9-d30b-4b71-a6c1-4297a37b75e1",
+      "result_id": "da24e9e2-aafb-45cb-8d4c-588c728df64d"
+    },
+    {
+      "claim_id": "da423ee7-1368-4f47-84bc-239c327a5763",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "701542f9-5fa9-4789-8051-e0fad9ae1521",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "a6ade9ed-5fd3-489a-a5e4-6ce0bd62d735",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "0481c8d5-f830-4021-8761-f6d1683bbd16",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "039fd294-7244-4dd5-a2e6-c69ce7873f9a",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "e0d572c3-d6a8-4dc9-b8a6-e5ca740f54f4",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "c0c94df4-867a-48bf-970d-c8344e0150d3",
+      "result_id": "868c6169-b4ca-43e0-a574-9ac3834b08da"
+    },
+    {
+      "claim_id": "647a45d3-e033-445a-b535-69dfecc70e5b",
+      "result_id": "3fa2b5db-3604-4706-b635-d82c7ed52c5a"
+    },
+    {
+      "claim_id": "7ef159aa-32fd-4a4f-80e3-072cf11fd1c4",
+      "result_id": "3fa2b5db-3604-4706-b635-d82c7ed52c5a"
+    },
+    {
+      "claim_id": "35971017-fd14-4c12-879d-7c8522322c71",
+      "result_id": "3fa2b5db-3604-4706-b635-d82c7ed52c5a"
+    },
+    {
+      "claim_id": "6edcc09b-4904-47d9-908f-276930848f78",
+      "result_id": "991cfb58-4121-43e9-b05f-a1a207c140bd"
+    },
+    {
+      "claim_id": "962fb823-04ed-45b2-a4a9-fe1c84edac5a",
+      "result_id": "991cfb58-4121-43e9-b05f-a1a207c140bd"
+    },
+    {
+      "claim_id": "04564d5b-5643-4087-8994-96d07e934d72",
+      "result_id": "991cfb58-4121-43e9-b05f-a1a207c140bd"
+    },
+    {
+      "claim_id": "0a2b4d28-e8c6-45c4-a474-2150257f5c93",
+      "result_id": "991cfb58-4121-43e9-b05f-a1a207c140bd"
+    },
+    {
+      "claim_id": "c064a256-c3d1-4a69-a60b-26556cf6dccf",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "ce931edf-3607-412c-ad9a-8670b10ce395",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "d4be1cdd-1bac-462a-9a8f-856d97f2aacf",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "139ae6ea-64ad-403e-b6b9-5f40e885900c",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "8635f05a-d17e-43bb-867c-dbae5a78fe0e",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "fa7a9cce-d015-421b-95dc-5949791b58fd",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "f45aa88c-94e5-4600-bbcd-4081e216ac01",
+      "result_id": "e2fb8627-8a9b-41df-8c2d-7b382aa0cd35"
+    },
+    {
+      "claim_id": "90766b29-bf69-454d-af12-aad18bb46637",
+      "result_id": "e8d4ea26-2302-4adc-8aaf-c4899d96b80c"
+    },
+    {
+      "claim_id": "d189b78c-b1b4-4493-82ab-9c263b68c635",
+      "result_id": "e8d4ea26-2302-4adc-8aaf-c4899d96b80c"
+    },
+    {
+      "claim_id": "c8ae68d0-450b-4847-93ea-dbbd3e377913",
+      "result_id": "e8d4ea26-2302-4adc-8aaf-c4899d96b80c"
+    },
+    {
+      "claim_id": "f2c33a22-0802-478a-bd6a-2fc10e15dfd1",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "b47b7603-f0b5-4ad8-bbcf-be257ae2888e",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "95e8e3d1-3449-436d-a5db-667d3cdb16d2",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "fbd4c88a-4778-40a7-be42-c27f53bc303a",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "f91a9470-44f3-47ac-80cf-ef7bc091eadf",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "c494d8b5-7db6-42e3-8483-4c508281e545",
+      "result_id": "7b426dd9-799b-4d7d-9e4e-7704b5a3fba1"
+    },
+    {
+      "claim_id": "b19e1873-9a6c-44b9-ae49-85ce55ca5f23",
+      "result_id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d"
+    },
+    {
+      "claim_id": "32859f9b-e2fe-4d56-ae09-96ef962ebe06",
+      "result_id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d"
+    },
+    {
+      "claim_id": "d804c123-3fca-461b-8e43-fdd092a97add",
+      "result_id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d"
+    },
+    {
+      "claim_id": "a819abd4-efde-4df7-b86c-16df5be03184",
+      "result_id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d"
+    },
+    {
+      "claim_id": "349ef57e-491d-4c59-a5f2-d03236e8c7f2",
+      "result_id": "47b30bc1-ab0c-4dbc-83c0-c5aa4be1df7d"
+    },
+    {
+      "claim_id": "0ecbab44-d342-4d22-95aa-13f20d9d5f16",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "1def4989-8d48-4ba5-a6b8-4464c8f8855e",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "5659c29c-299d-4475-b859-07e3eaee60f1",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "0f559b7d-984f-4699-8bbe-6801fa4d8e68",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "b19a1bf3-61d6-4896-83a9-8e08ec398de0",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "42f7eb49-6cc7-48fa-bf4f-40e1b2e199fb",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "a370a7a5-81b5-4b60-9e9e-f105b7825da5",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "b8e5ec83-c470-4a68-8ffe-baf050ed6693",
+      "result_id": "286387b6-5d9a-4223-9b34-f65f29b280c6"
+    },
+    {
+      "claim_id": "54738458-3e86-4829-8237-89f5315d102f",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "700e2aa0-889d-49a3-b312-c3bcff51c6df",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "c546f1cb-d86f-4918-bba0-288c26cdd6fa",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "c57d329d-7050-4032-a969-e98ec7e39fb3",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "5c89817f-4dfe-4b36-84ad-73dea9fec2cb",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "5632ddd3-35d9-4d44-b829-a68c738537cc",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "92add4da-e5db-4aa1-a7e1-e53297feed98",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    },
+    {
+      "claim_id": "a5c9606c-92a4-41cf-9ed8-3cd0c5e1ac6c",
+      "result_id": "9c384d7b-dedb-4adf-b386-d409eec883d5"
+    }
+  ],
+  "comparisons": []
+}

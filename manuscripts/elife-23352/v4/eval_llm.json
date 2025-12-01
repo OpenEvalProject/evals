@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C65",
+      "C107",
+      "C119",
+      "C137"
+    ],
+    "result": "The Mis18\u03b1:Mis18\u03b2 complex is a hexamer with 4:2 stoichiometry that binds two copies of M18BP1 through M18BP1's N-terminal 140 residues. This was determined through analytical ultracentrifugation (AUC) experiments using MBP-tagged variants to distinguish subunit stoichiometry, and pull-down assays demonstrating that M18BP1(1-140) is necessary and sufficient for Mis18\u03b1:Mis18\u03b2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59, C65, C107, C119, and C137 are strongly supported by multiple complementary experimental approaches. The 4:2 stoichiometry is unequivocally demonstrated by AUC analysis of differentially tagged complexes (C107), showing that 6His-Mis18\u03b1:MBP-Mis18\u03b2 contains two MBPs while MBP-Mis18\u03b1:6His-Mis18\u03b2 contains four MBPs. The binding of two M18BP1 copies is supported by AUC data showing molecular masses consistent with one hexamer plus two M18BP1 N-terminal fragments (C118, C119). Pull-down assays clearly demonstrate that residues 1-140 are sufficient for binding (C65). This result contradicts a prior report (C140) suggesting a 2:2 heterotetramer, but the authors provide compelling evidence using both E. coli and insect cell expression systems showing identical hydrodynamic properties (C109, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "M18BP1's N-terminal 140 residues contain two conserved CDK phosphorylation sites at Thr40 and Ser110 that regulate binding to Mis18\u03b1:Mis18\u03b2. Phosphorylation at these sites reduces binding affinity, while non-phosphorylatable mutations (T40V, S110A) render the interaction resistant to CDK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C92 are well-supported by sequence alignment (C66, C67) and systematic mutagenesis combined with Phos-tag gel analysis and pull-down assays (C85-C92). The identification of Thr40 and Ser110 as major phosphorylation sites is demonstrated by mobility shifts on Phos-tag gels with T4V/T40V double mutants showing no shift (C85). The functional importance is shown by differential sensitivity to CDK phosphorylation: T40V mutants are resistant while wild-type is sensitive (C86, C87, C88). Similar results for Ser110 (C89-C91) and the combined T40V/S110A mutant being fully resistant (C92) provide strong evidence for the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C133",
+      "C134",
+      "C155",
+      "C156"
+    ],
+    "result": "CDK1 phosphorylation at Thr40 and Ser110 destabilizes M18BP1 binding to Mis18\u03b1:Mis18\u03b2 and restricts Mis18 complex assembly to G1 phase. Phosphomimetic mutations (T40D/S110E) reduce binding affinity comparable to actual phosphorylation and abolish CENP-A loading activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C93-C97, C133-C134, and C155-C156 are strongly supported by both in vitro biochemical and in vivo cell biological data. Pull-down assays show that phosphomimetic mutations reduce binding affinity (C94, C96, C97), with T40D completely abolishing binding (C95). The double mutant T40D/S110E shows reduction comparable to CDK1:Cyclin B1 treatment (C97). Cell-based assays demonstrate that these mutations prevent M18BP1 recruitment, Mis18\u03b1 localization, and CENP-A loading (C98-C100, C134). The T4D/T4E mutants binding normally (C93) indicates specificity for Thr40 and Ser110. This provides a molecular mechanism for cell cycle regulation of CENP-A loading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C116",
+      "C117",
+      "C131",
+      "C132"
+    ],
+    "result": "M18BP1(1-140) contains two sequential binding regions (1-60 and 61-140) that both bind Mis18\u03b1:Mis18\u03b2, with region 1-60 binding more strongly. The binding requires heterodimeric Mis18\u03b1:Mis18\u03b2 Yippee domains, as neither Mis18\u03b1 nor Mis18\u03b2 Yippee domains alone bind M18BP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C116-C117, C131-C132 are supported by pull-down assays showing that both M18BP1(1-60) and M18BP1(61-140) retain binding ability (C68), with 1-60 binding more strongly (C69). The requirement for heterodimeric Yippee domains is demonstrated by the finding that M18BP1(1-140) binds the Mis18\u03b1:Mis18\u03b2 Yippee domain dimer but not isolated Mis18\u03b1 or Mis18\u03b2 Yippee domains (C116, C117). Phosphorylation reduces binding of both fragments (C70). However, the relative binding strengths are described qualitatively ('apparently more strongly') without quantitative measurements, introducing some uncertainty in the magnitude of differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C149",
+      "C150"
+    ],
+    "result": "M18BP1 dimerization through the Mis18\u03b1:Mis18\u03b2 scaffold is important for centromere recruitment. This is demonstrated by co-IP experiments showing that M18BP1(1-140) dimerizes only when bound to Mis18\u03b1:Mis18\u03b2, and GST-mediated forced dimerization partially rescues centromere localization of M18BP1(141-1132).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C120-C122, C124, C149-C150 are supported by complementary approaches. Co-IP experiments show that EGFP-M18BP1(1-140) co-precipitates with mCherry-M18BP1(1-140) and Mis18\u03b2, while phosphomimetic mutants that cannot bind Mis18\u03b1:Mis18\u03b2 fail to dimerize (C120-C122). GST-mediated forced dimerization rescues this defect (C124) and increases centromere localization of M18BP1(141-1132) (C127, C149). However, GST-dimerized M18BP1(141-1132) still fails to recruit Mis18\u03b1 or rescue CENP-A loading (C128-C129), indicating that dimerization alone is insufficient and direct Mis18\u03b1:Mis18\u03b2 binding is also required (C130, C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "M18BP1(1-140) has a dominant-negative effect on CENP-A loading by sequestering Mis18\u03b1:Mis18\u03b2 and preventing centromere localization. Full-length M18BP1 rescues CENP-A loading and Mis18\u03b1 localization, while M18BP1(141-1132) localizes weakly to centromeres but cannot recruit Mis18\u03b1:Mis18\u03b2 or support CENP-A loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C84 are well-supported by SNAP-pulse-labeling experiments and fluorescence microscopy. M18BP1 siRNA causes clear CENP-A loading defects (C71), which are rescued by full-length EGFP-M18BP1(1-1132) (C73, C74). Expression of EGFP-M18BP1(1-140) prevents both CENP-A loading and Mis18\u03b1 localization regardless of endogenous M18BP1 depletion (C75-C77), consistent with a dominant-negative mechanism. M18BP1(141-1132) shows weak centromere localization (C82) but cannot rescue CENP-A loading or Mis18\u03b1 recruitment when endogenous M18BP1 is depleted (C80, C83), demonstrating that the N-terminal region is essential for Mis18\u03b1:Mis18\u03b2 recruitment (C84). The experiments include appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Phosphomimetic mutations T40D/S110E in full-length M18BP1 phenocopy the effects of M18BP1(141-1132), preventing CENP-A loading and Mis18\u03b1 recruitment when endogenous M18BP1 is depleted. These mutations also eliminate the dominant-negative effect of M18BP1(1-140) and prevent interaction with Mis18\u03b1:Mis18\u03b2 in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by cell biological assays showing that M18BP1(1-1132/T40D/S110E) behaves similarly to M18BP1(141-1132) (C98), with normal CENP-A loading in the presence of endogenous M18BP1 but failure to rescue upon depletion (C99, C100). The phosphomimetic mutations in M18BP1(1-140) bypass its dominant-negative effects (C101), consistent with inability to bind Mis18\u03b1:Mis18\u03b2 (C102). Co-IP experiments confirm that EGFP-M18BP1(1-140) but not the T40D/S110E mutant interacts with Mis18\u03b1:Mis18\u03b2 in HeLa cells (C103). These results provide strong in vivo validation of the in vitro binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "GST-mediated forced dimerization of M18BP1(141-1132) partially rescues centromere localization but does not rescue Mis18\u03b1 recruitment or CENP-A loading, demonstrating that both dimerization and direct Mis18\u03b1:Mis18\u03b2 interaction are required for CENP-A loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 are supported by experiments using GST-tagged constructs. GST-EGFP-M18BP1(1-1132) shows normal function (C125, C126), validating the approach. GST-EGFP-M18BP1(141-1132) shows significantly stronger centromere localization than the non-GST version (C127), but fails to recruit Mis18\u03b1 or rescue CENP-A loading when endogenous M18BP1 is depleted (C128, C129). This demonstrates that dimerization enhances centromere binding but is insufficient without direct Mis18\u03b1:Mis18\u03b2 interaction (C130). The conclusion is logical and well-supported, though quantitative comparison of localization efficiency would strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The Mis18\u03b1:Mis18\u03b2 hexamer is assembled through trimeric C-terminal helices that establish the 2:1 \u03b1:\u03b2 ratio, which then scaffold three dimeric Yippee domain interfaces (two \u03b1:\u03b2 and one \u03b1:\u03b1). This model is based on AUC analysis of truncated constructs and prior evidence of Mis18\u03b1 Yippee domain homodimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by AUC and SEC analysis of Mis18\u03b1:Mis18\u03b2 variants. Constructs containing only Yippee domains form heterodimers (C111), while constructs with C-terminal helices show molecular masses consistent with 2\u03b1:1\u03b2 stoichiometry (C112, C113). The proposed model (C115) integrating these observations with prior evidence of Mis18\u03b1 homodimerization (C114) is reasonable and consistent with the 4:2 overall stoichiometry. However, this is a model based on indirect evidence rather than direct structural determination. The model makes testable predictions but would benefit from additional validation such as cross-linking or structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C141"
+    ],
+    "result": "The Mis18\u03b1:Mis18\u03b2 complex is monodisperse with a molecular weight of ~150 kD corresponding to a hexamer, and has an elongated conformation. Complexes expressed in E. coli and insect cells show essentially identical hydrodynamic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106, C108-C110, and C141 are well-supported by multiple biophysical techniques. The complex appears monodisperse by SEC (C104) with MW estimates of ~150 kD from both sedimentation velocity and equilibrium AUC (C105), consistent with a hexamer (C106). The elongated conformation is inferred from early SEC elution and high frictional ratio (C108). Importantly, E. coli and insect cell-expressed complexes show identical SEC elution profiles (C109) and AUC behavior (C110), demonstrating that the hexameric state is not an artifact of expression system or post-translational modifications. This addresses potential concerns about the discrepancy with prior reports of tetramers (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C136"
+    ],
+    "result": "Reconstituted Mis18\u03b1:Mis18\u03b2:M18BP1(1-140)-MBP and Mis18\u03b1:Mis18\u03b2:M18BP1(1-228)-MBP complexes are stable and homogeneous, with molecular masses consistent with one Mis18\u03b1:Mis18\u03b2 hexamer plus two M18BP1 N-terminal fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C136 are supported by SEC and AUC analysis showing single-peak elution profiles and sedimentation coefficient distributions (C136), with molecular masses matching the predicted stoichiometry (C118). The stability and homogeneity of these reconstituted complexes validates their use for stoichiometry determination and demonstrates that the minimal binding region (1-140) is sufficient to form stable 4:2:2 octameric assemblies. This provides strong biochemical evidence for the proposed architecture of the Mis18 complex core.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Mis18 complex, consisting of Mis18\u03b1, Mis18\u03b2, and M18BP1, is crucial for CENP-A homeostasis. It recruits the CENP-A-specific chaperone HJURP to centromeres and interacts with CCAN subunits, enabling recruitment of new CENP-A to existing centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C33-C38 represent established knowledge supported by multiple citations. These claims provide essential background context for the study but are not novel findings. The claims are well-established in the field and appropriately cited, serving to frame the significance of the new mechanistic insights about complex assembly and regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CDK phosphorylation regulates assembly of the CENP-A deposition machinery in G1 phase by phosphorylating CENP-A, HJURP, and M18BP1. High CDK activity during S/G2/M phases keeps the machinery disassembled, while CDK decline after anaphase allows complex assembly and CENP-A loading in early G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 represent established knowledge from prior studies, appropriately cited. These claims provide important context for understanding the significance of identifying the specific CDK sites in M18BP1 (C57, C58). The statement that M18BP1 CDK sites 'remain functionally uncharacterized' (C58) correctly identifies the gap that this study addresses, motivating the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Prior studies have highlighted the importance of Mis18\u03b1/\u03b2 oligomerization for CENP-A loading, with the fission yeast ortholog forming homotetramers and human Mis18\u03b1:Mis18\u03b2 reported to form 2:2 heterotetramers via C-terminal coiled-coils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 accurately represent prior literature with appropriate citations. However, the current study's findings (hexamer with 4:2 stoichiometry) contradict the reported 2:2 heterotetramer (C140). The authors acknowledge this discrepancy and provide extensive evidence supporting their hexamer model, including comparison of different expression systems and analytical methods. This represents appropriate scientific discourse where new evidence challenges prior interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C153"
+    ],
+    "result": "The 4:2:2 stoichiometry of the Mis18 complex likely provides a foundation for understanding CENP-A loading machinery assembly, and a physical interaction of Mis18\u03b2 with CENP-C C-terminal region might account for increased binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143 and C153 are speculative statements about implications and potential mechanisms. C143 suggests the stoichiometry 'likely provides a base to understand' assembly but acknowledges that 'further structural analysis will have to examine the details.' C153 proposes that Mis18\u03b2-CENP-C interaction 'might account for increased binding affinity' based on a citation but without direct experimental evidence in this study. These are reasonable hypotheses for future work but are not experimentally validated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Overexpression of M18BP1(1-140) has a dominant-negative effect by binding Mis18\u03b1:Mis18\u03b2 and preventing centromere localization. M18BP1(141-1132) contains autonomous centromere localization modules, potentially including a CENP-C binding domain between SANTA and SANT domains identified in mouse and frog orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by the cell biological data showing dominant-negative effects (C144) and weak autonomous localization of M18BP1(141-1132) (C147, C82). The interpretation that M18BP1(1-140) prevents centromere localization by sequestering Mis18\u03b1:Mis18\u03b2 (C145, C146) is logical and supported by co-IP data (C103). The reference to CENP-C binding domains in mouse and frog orthologs (C148) is appropriately cited but represents prior work rather than new findings. The connection to human M18BP1 centromere localization is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "GST-mediated dimerization does not fully rescue centromeric localization of M18BP1(141-1132) to the levels of full-length M18BP1, indicating that Mis18\u03b1:Mis18\u03b2 interaction contributes to localization beyond its role in dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 are supported by comparison of GST-EGFP-M18BP1(141-1132) and EGFP-M18BP1(1-1132) localization (Figures 2D, 8B, 8E). While GST-dimerization improves localization compared to non-GST M18BP1(141-1132) (C127), it remains weaker than full-length protein (C151). This supports the conclusion that Mis18\u03b1:Mis18\u03b2 binding provides additional localization function beyond dimerization (C152). However, the comparison is somewhat qualitative, and the statistical significance of differences could be more rigorously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Full assembly of the Mis18 complex is important for function, and CDK1 phosphorylation of M18BP1 at Thr40 and Ser110 provides a crucial mechanism to temporally restrict CENP-A loading to early G1 phase through a complex binding mechanism involving multiple interfaces and kinase regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 represent integrative conclusions synthesizing the current findings with prior studies. The importance of full complex assembly (C154) is supported by the dominant-negative effects and rescue experiments. The mechanism of temporal restriction via CDK phosphorylation (C155, C156) is well-supported by the phosphorylation site identification and functional validation. The characterization of a 'complex binding mechanism' (C157) appropriately summarizes the multiple findings about stoichiometry, binding regions, and regulation. These are well-justified conclusions from the data presented.",
+    "result_type": "MINOR"
+  }
+]

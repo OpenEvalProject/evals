@@ -1,0 +1,2405 @@
+{
+  "submission": {
+    "id": "a451979b-4732-431c-aa78-a0f3f728c5a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:20:38.939537Z",
+    "updated_at": "2025-11-30T21:20:38.939537Z"
+  },
+  "content": [
+    {
+      "id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "submission_id": "a451979b-4732-431c-aa78-a0f3f728c5a5",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of neuronal axon specification by glia-neuron gap junctions in C. elegans\n\n## Authors\n\n- Lingfeng Meng<sup>1</sup>\n- Albert Zhang<sup>1</sup>\n- Yishi Jin<sup>4</sup> ([ORCID: 0000-0002-9371-9860](https://orcid.org/0000-0002-9371-9860))\n- Dong Yan<sup>1</sup> ([ORCID: 0000-0002-7542-1251](https://orcid.org/0000-0002-7542-1251)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics and Microbiology Duke University Medical Center Durham United States\n2. Department of Neurobiology Duke University Medical Center Durham United States\n3. Duke Institute for Brain Sciences Duke Medical Center Durham United States\n4. Neurobiology Section, Division of Biological Sciences Howard Hughes Medical Institute, University of California San Diego United States\n5. Department of Cellular and Molecular Medicine School of Medicine, University of California San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxon specification is a critical step in neuronal development, and the function of glial cells in this process is not fully understood. Here, we show that C. elegans GLR glial cells regulate axon specification of their nearby GABAergic RME neurons through GLR-RME gap junctions. Disruption of GLR-RME gap junctions causes misaccumulation of axonal markers in non-axonal neurites of RME neurons and converts microtubules in those neurites to form an axon-like assembly. We further uncover that GLR-RME gap junctions regulate RME axon specification through activation of the CDK-5 pathway in a calcium-dependent manner, involving a calpain clp-4. Therefore, our study reveals the function of glia-neuron gap junctions in neuronal axon specification and shows that calcium originated from glial cells can regulate neuronal intracellular pathways through gap junctions.\n\n## Introduction\n\nGlial cells play important roles in neural circuit formation during development, synaptic plasticity and injury repair in adulthood (Bosse, 2012; Clarke and Barres, 2013; Nave and Trapp, 2008). In mammals, they are involved in many steps of brain development: in embryos, radial glial cells serve as stem cells (Doetsch et al., 1999; Noctor et al., 2001) and act as scaffolds for neuronal migration and axon growth (Chotard and Salecker, 2004); in newborn animals, astrocytes regulate synaptogenesis through contact-mediated or secreted signals, such as glypicans, thrombospondins, hevin and SPARC (Allen et al., 2012; Christopherson et al., 2005; Elmariah\u00a0et\u00a0al., 2005; Hama et al., 2004; Hughes et al., 2010; Kucukdereli et al., 2011; Pfrieger\u00a0and Barres, 1997; Ullian\u00a0et\u00a0al., 2001); and in mature neurons, astrocytes and microglia regulate refinement of neural circuits (Chung et al., 2013; Schafer et al., 2012; Stevens et al., 2007). Similar studies using invertebrate systems have also added to our knowledge of glial cells in neural development. Studies in Drosophila have identified important roles of glial cells in neurogenesis, axon development and pruning, and synapse formation and elimination (Corty and Freeman, 2013; Coutinho-Budd and Freeman, 2013). C. elegans has 56 glial cells, which consist of 46 neuroepithelial glia that ensheath sensory dendrites, four neuroepithelial glia that envelop the nerve ring, and six GLR cells that reside in the inner nerve ring (Oikonomou and Shaham, 2011). C. elegans neuroepithelial glial cells are known to regulate axon growth, dendrite development, and synapse specification through secreted and contact-mediated signals (Colon-Ramos et al., 2007; Heiman and Shaham, 2009; Shao et al., 2013; Yoshimura et al., 2008), but the function of GLR cells in neuronal development is still unknown.\n\nNeurons are polarized cells with two functionally distinct domains: axons and dendrites. Most neurons have multiple dendrites to receive stimulation from upstream cells and a single axon to pass signals to downstream targets, and this general morphology is essential for them to integrate and transmit information in the brain. While glial cells are involved in regulating many aspects of neuronal development and function, whether and how glial cells affect axon specification remains largely unknown.\n\nDuring mammalian brain development, transient gap junctions between neurons are formed at many regions to regulate synaptogenesis, neuronal differentiation, neuronal migration, and neural circuit formation (Belousov and Fontes, 2013; Connors and Long, 2004; Li et al., 2012; Yu et al., 2012). In invertebrates, transient neuronal gap junctions regulate the formation of chemical synapses in leeches (Todd et al., 2010) and are required for the asymmetrical development of sensory neurons in C. elegans (Chuang et al., 2007). Electron microscopy and dye-filling studies have shown that neurons and glial cells also form transient gap junctions in the developing brain (Cuadras et al., 1985; Nadarajah et al., 1997; Nadarajah and Parnavelas, 1999; Nadarajah et al., 1996; Peinado et al., 1993; Shivers et al., 1988; Sinues Porta et al., 1988). Further electrophysiology analysis confirmed that those neuron-glia gap junctions are likely to be functional (Alvarez-Maubecin et al., 2000; Froes et al., 1999; Nedergaard, 1994; Nedergaard and Goldman, 1993); however, it remains unknown whether they play any roles in neuronal development.\n\nHere, we show that gap junctions between C. elegans GLR glial cells and GABAergic RME neurons are required for RME axon specification. In an unbiased genetic screen, we uncovered a loss-of-function mutant of unc-1 with defects in RME axon specification. UNC-1 is a conserved stomatin protein that plays important roles in regulating gap junctions (Chen et al., 2007; Rajaram et al., 1998). We show that unc-1 functions in both GLR cells and RME neurons to regulate RME axon specification. Mutating all RME-expressed gap junction channels causes the same extent of axon specification defects as seen in unc-1(lf) mutants, supporting the conclusion that unc-1 regulates RME axon specification by modulating GLR-RME gap junctions. Using a combination of in vivo\u00a0imaging, biochemistry, and genetic studies, we demonstrate that GLR-RME gap junctions can regulate microtubule assembly in RME neurites through activation of the CDK-5 pathway in a calcium-dependent manner. As the function of the CDK-5 pathway in regulating microtubules is highly conserved from nematodes to mammals, a similar mechanism may also be used in other organisms.\n\n## Results\n\n### unc-1 is required for RME axon specification\n\nTo study neural circuit formation in vivo, we used the C. elegans RME circuit as a model (Meng et al., 2015). The circuit contains four GABAergic motor neurons, RMED, RMEV, RMEL, and RMER, that reside at the nerve ring region to control head movement (Song et al., 2010; White et al., 1986). The axonal processes of RME neurons form a ring-shaped bundle, and RME D/V extend two neurites along the dorsal/ventral cords (Figure 1A and B). In adult control animals, presynaptic markers such as synaptobrevin (SNB-1) exclusively accumulate in axonal boutons at the end of the ring-shaped axonal process (Figure 1C and D)(White et al., 1986). In a genetic screen for RME neuronal development, we isolated a mutant, ju1057, with SNB-1::GFP puncta present along RME axonal processes and D/V neurites in addition to those in normal axonal boutons (Figure 1C and D). Careful analyses of ju1057 phenotypes showed that ju1057 did not affect the overall expression level of SNB-1::GFP but significantly changed the distribution of SNB-1::GFP. In ju1057 animals, a higher fraction of SNB-1::GFP signal was observed in RME D/V neurites (47%) than in axonal boutons (40%), while in control animals 8% of SNB-1::GFP signals were observed in D/V neurites and 67% of them at axonal boutons (Figure 1\u2014figure supplement 1A). ju1057 animals displayed kinker uncoordinated (unc) phenotypes. Based on SNB-1::GFP phenotypes, ju1057 was mapped to the left arm of the chromosome X, a region containing the classic kinker unc gene unc-1. ju1057 failed to complement two unc-1 loss-of-function alleles, e580 and e2522; and e580 and e2522 animals displayed SNB-1::GFP mislocalization defects in both axonal processes and D/V neurites resembling those in ju1057 animals (Figure 1D). Sequencing results showed that ju1057 changed a conserved alanine to valine (A248V) in the C-terminal domain of UNC-1 (Figure 1\u2014figure supplement 1B). In addition, expression of unc-1 cDNA in all tissues using the Pdpy-30 promoter rescued the SNB-1::GFP defects of ju1057 animals (Figure 1C and D). These lines of evidence support that ju1057 is a loss-of-function allele of unc-1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig1-v2.jpg)\n\n**Figure 1.:** (A) A cartoon picture and (B) GFP images show the morphology of RME neurons. Cell bodies of four RME neurons, labeled as D (RME dorsal), V (RME ventral), L (RME left) and R (RME right), form a four-fold symmetry in the head region. RMED and RMEV each sends out a posterior neurite along the dorsal/ventral cords, respectively. Red arrows highlight RMED/V cell bodies and neurites. Gut auto-fluorescence from the intestine is commonly observed between RMED/V neurites. (C) Confocal images and schematic diagrams show the distribution of SNB-1::GFP puncta in control and mutant animals. Yellow stars mark the cell bodies of RME neurons, and yellow arrowheads point to axonal boutons. Red arrowheads mark the mis-accumulated SNB-1::GFP puncta. Red dots in diagrams represent SNB-1::GFP puncta. (D) Quantification of the percentage of animals with SNB-1::GFP puncta in RME D/V neurites and along the axonal processes. (E) Confocal images and schematic diagrams of control and unc-1(lf) animals expressing SYD-2::GFP in RME neurons. (F) Quantification of percentage of animals with SYD-2::GFP puncta in RMED/V neurites. (G) SYD-2::GFP is co-localized with mCherry:: RAB-3 in RMED/V neurites of unc-1(lf) animals. (H) unc-1 regulates the establishment of RME axon specification during development. (See details of the temperature-shift experiments in the method section). Each experiment was performed with N\u00a0>\u00a0200 animals at least three times. For transgenic animals, the results shown here are generated from at least three independent lines. Data are shown as mean \u00b1 SD. Student t-test, ***p<0.001, NS: no significant difference. Scale bar: 20 \u03bcm. Details of strain and plasmid information in all Figures are listed in the Supplementary file 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of the fractions of SNB-1::GFP signals in RME D/V neurites (green), axonal boutons (blue) and cell bodies (red) in control and unc-1(lf) animals. The total intensity of SNB-1::GFP in axonal boutons, D/V neurites and cell bodies were measured and then subtracted by the background for the exact same area. The fractions of GFP signals were calculated by dividing each part with the sum of all GFP signals in RME neurons. (B) The alignment of C. elegans UNC-1 with its homologs in Drosophila, mouse, and human. The Red rectangle highlights the mutation in the ju1057 allele.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Images showed that loss-of-function in unc-1(e580) (without unc-30(ju32) background) caused the misaccumulation of SNB-1::GFP puncta in both RME nerve ring processes and RME D neurites, Scar bar: 20 \u03bcm. (B) Quantification of the number of SNB-1::GFP puncta in RME D neurites. N\u00a0>=\u00a010 for each genotypes. No significant difference (p\u00a0>\u00a00.05, one-way ANOVA) among all genotypes.\n\nOur genetic screen was carried out in a unc-30(ju32) mutant background to eliminate the expression of Punc-25::SNB-1::GFP in D-type motor neurons in the dorsal and ventral cords. To verify that the defects we observed did not depend on unc-30(ju32), we examined unc-1 animals without unc-30(ju32). As shown in Figure 1\u2014figure supplement 2A, we found mis-accumulated SNB-1::GFP puncta along the axonal process in all unc-1(lf) animals we examined (105/105), similar to those seen in unc-30(ju32) background. RME D/V neurites grow along the dorsal and ventral cords together with D-type motor neurons, making it difficult to observe RME D/V phenotypes. However, in about 2\u20133% of animals, RME D neurites grow out of the dorsal cord. After screening over 500 unc-1(lf) animals, we were able to recover 14 animals with RME D neurites outside of the dorsal cord, and all of them (14/14) displayed SNB-1::GFP puncta in RME D neurites (Figure 1\u2014figure supplement 2A).\n\nTo further illustrate the degree of RME phenotypes, we quantified the number of SNB-1::GFP puncta in RME D neurites and found that all three unc-1(lf) alleles had a similar number of SNB-1::GFP puncta (25\u201330 puncta, Figure 1\u2014figure supplement 2B). The axonal localization of SNB-1::GFP relies on the kinesin UNC-104/KIF1A (Hall and Hedgecock, 1991). Loss-of-function of unc-104 completely eliminated SNB-1::GFP signals in RME axonal processes and D/V neurites of unc-1(lf) animals (Figure 1C and D), supporting that the additional SNB-1::GFP puncta in unc-1(lf) animals are likely associated with presynaptic vesicles. In our analyses of SNB-1::GFP phenotypes, we noticed that the defects in RME axonal processes and D/V neurites displayed an all-or-none pattern such that any animals with the D/V neurite defects had SNB-1::GFP puncta along axonal processes, while animals without SNB-1::GFP puncta in D/V neurites did not show defects in axonal processes. This observation suggests that the defects in RME axonal processes and in D/V neurites are likely two aspects of one phenotype. Therefore, we decided to focus the rest of our analyses on RME D/V neurites. To further confirm unc-1(lf) phenotypes, we tested the distribution of other axonal markers, the presynaptic active zone protein SYD-2 (Yeh\u00a0et\u00a0al., 2005) and synaptic vesicle binding protein RAB-3. Consistent with the observation using the SNB-1::GFP marker, unc-1(lf) caused misaccumulation of SYD-2::GFP and mCherry::RAB-3, and SYD-2::GFP was also co-localized with mCherry::RAB-3 in RME D/V neurites (Figure 1E,F and G).\n\nThe presence of these axonal markers in D/V neurites suggests that mutation of unc-1 disrupts certain aspects of axon specification in RME neurons. unc-1(lf) phenotypes could be due to defects in either the establishment of axon specification or the maintenance of neuronal polarity. To distinguish between these two possibilities, we took advantage of a cold-sensitive unc-1(hs1, lf) allele, that has strong unc-1(lf) locomotion phenotypes at 11\u00b0C and reverse to almost wild-type at 25\u00b0C (Hecht et al., 1996). At 25\u00b0C, less than 10% of unc-1(hs1) animals had RME defects, while more than 85% of animals displayed RME defects at 11\u00b0C (Figure 1H). Next, we examined the effect of temperature-shifts on unc-1(hs1) phenotypes. As shown in Figure 1H, growing animals at the restrictive temperature (11\u00b0C) before the L1 stage or after the L4 stage showed the same degree of RME defects as those cultured at the permissive temperature (25\u00b0C), but growing larval-stage animals (L1-middle L4) at the restrictive temperature (11\u00b0C) was sufficient to cause RME defects to the same extent as those cultured at the restrictive temperature (11\u00b0C). These results support the conclusion that unc-1 functions in the larval stages, the same time period of RME D/V neurite development (Meng et al., 2015), to regulate the establishment of RME axon specification.\n\n### GLR-RME gap junctions are required for RME axon specification\n\nunc-1 encodes a stomatin protein and is widely expressed in almost all neurons and many other cells (Chen et al., 2007; Rajaram et al., 1998). To understand how unc-1 regulates RME axon specification, we carried out tissue-specific rescue experiments. To our surprise, although expressing unc-1(cDNA) in all tissues (Pdpy-30:: unc-1(cDNA)) rescued unc-1(lf) phenotypes, expression of unc-1 cDNA in all neurons (Punc-33:: unc-1(cDNA)) or in RME neurons (Punc-25:: unc-1(cDNA)) did not rescue the RME defects in unc-1(lf) animals (Figure 2A), suggesting that unc-1 functions either outside of the nervous system or in both neurons and non-neuronal cells to regulate RME axon specification.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig2-v2.jpg)\n\n**Figure 2.:** (A) Quantification of SNB-1::GFP puncta distribution defects in unc-1(lf) mutants and rescue transgenic strains. Promoters used to drive expression of unc-1 cDNA are: Pdpy-30 in all tissues; Punc-33 and Punc-25 in all neurons and RME neurons, respectively; Pgly-18, Pnep-2, Pegl-6, and Plet-2 promoters in GLR cells (note: Pgly-18, Pegl-6, and Plet-2 are also active in a few other cells that are not overlapping in identity) and Pmyo-3 in muscle. (B) Results from mosaic analyses show that unc-1 is required in both GLR cells and RME neurons. (C) Representative images of SNB-1::GFP puncta distribution in control and unc-7 unc-9 double mutant animals. (D) Quantification of SNB-1::GFP distribution defects in unc-7, unc-9 single and unc-7 unc-9 double mutant animals. (E) Quantification of SNB-1::GFP distribution defects in unc-7 and rescued transgenic strains. (F) Quantification of SNB-1::GFP distribution defects in transgenic animals expressing wild type or C191A form of unc-7. Each experiment was performed with N\u00a0>\u00a0200 animals at least three times. For transgenic animals, the results shown here are generated from at least three independent lines. Data are shown as mean \u00b1 SD. Student t-test, ***p<0.001, *p<0.05, NS: no significant difference. Scale bar: 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A\u00a0confocal image shows the relative positions of GLR cells (Pink) and RME neurons (Green). GLR cells were labeled by expression of Pgly-18::mCherry, and RME neurons were labeled by expression of Punc-25::GFP. White arrows highlight GLR cell bodies. (B) Four promoters, Pgly-18, Pnep-2, Plet-2, and Pegl-6, drive expression in GLR cells. Scale bar: 20 \u03bcm.\n\nElectrophysiology and genetic studies have shown that in C. elegans, unc-1 plays important functions in regulating gap junctions, and unc-1(lf) blocked the electrical current mediated by gap junctions in muscle (Chen et al., 2007). RME neurons form gap junctions with themselves, several nearby neurons, and GLR cells (White et al., 1986). Given that neuronal expression of unc-1 cDNA did not rescue unc-1(lf) phenotypes, we questioned whether the expression of unc-1 in GLR cells was required for RME axon specification. We expressed unc-1 cDNA in GLR cells using four different promoters (Pgly-18, Pnep-2, Pegl-6, and Plet-2). In addition to GLR cells, Pgly-18, Plet-2, and Pegl-6 promoters could drive expression in head muscle and some neurons as well, but Pnep-2 showed restricted expression in GLR cells (Figure 2\u2014figure supplement 1). As shown in Figure 2A, expression of unc-1 cDNA in GLR cells did not restore the distribution of SNB-1::GFP in unc-1(lf) animals, but co-expression of unc-1 cDNA in both RME neurons and GLR cells using any one of the four promoters significantly rescued unc-1(lf) phenotypes (Figure 2\u2014figure supplement 1). As controls, expression of unc-1(cDNA) in muscle (Pmyo-3:: unc-1(cDNA)), in both muscle and RME neurons (Pmyo-3:: unc-1(cDNA)+ Punc-25:: unc-1(cDNA)), or in both muscle and GLR cells (Pmyo-3:: unc-1(cDNA)+ Pgly-18:: unc-1(cDNA)) did not show any rescue ability (Figure 2A). To further confirm that the expression of unc-1 in both RME neurons and GLR cells was required for RME axon specification, we carried out mosaic analyses using a transgene (yadEx644) expressing unc-1(cDNA) in all tissues (Pdpy-30:: unc-1(cDNA)), a nuclear marker sur-5::mCherry in all tissues (Psur-5:: sur-5::mCherry), and mCherry in RME neurons (Punc-25::mCherry) and in GLR cells (Pgly-18::mCherry). yadEx644 had a similar rescue ability as other transgenes expressing unc-1(cDNA) under the Pdpy-30 promoter (Figure 2B). After screening 1037 transgenic animals, we were able to uncover 19 of them lost unc-1(+) in RME\u00a0neurons, 13 of them lacking unc-1(+) expression in GLR\u00a0cells, and one animal without unc-1(+) expression in both RME neurons and GLR cells. None of these mosaic animals showed rescue of unc-1(lf) RME phenotypes (Figure 2B). These results suggest that gap junctions between GLR cells and RME neurons play critical roles in regulating RME axon specification.\n\nOne gap junction channel is composed of two hemichannels connected across the intercellular space between two cells. Eliminating the expression of gap junction channels in one of the two cells is likely to be sufficient to block gap junction formation. The innexin family of gap junction proteins has 25 members in C. elegans. Only two of them, unc-7 and unc-9, are expressed in RME neurons, and ten innexins, including unc-7, appear to be expressed in GLR cells (Altun et al., 2009). To further confirm the importance of GLR-RME gap junctions in RME axon specification, we examined mutants of unc-7 and unc-9. Single mutants of unc-7 and unc-9 had lower percentages of animals with SNB-1::GFP mislocalization defects when compared with unc-1(lf) animals, and unc-7(lf) phenotype was stronger than that of unc-9(lf) (Figure 2C and D). We further generated double mutants of unc-7 and unc-9 and found that these animals had the same degree of SNB-1::GFP defects as those in unc-1(lf) animals (Figure 2C and D and Figure 1\u2014figure supplement 2B). Since unc-7 is expressed in both GLR cells and RME neurons, it is likely that the unc-7(lf) phenotype is due to its roles in both cells. Indeed, expression of unc-7 cDNA in GLR cells or RME neurons only partially rescued unc-7(lf) phenotypes, and expression of unc-7 cDNA in both GLR cells and RME neurons completely restored SNB-1::GFP distribution in unc-7(lf) animals (Figure 2E). In addition to its function as a gap junction subunit, unc-7 has been reported to regulate presynaptic development in a gap-junction-independent manner (Yeh et al., 2009). To exclude the possibility that the defects in unc-7(lf) animals were due to its non-gap-junction functions, we tested the rescue ability of a C191A mutant form of UNC-7. The C191A mutation has been shown to specifically interrupt UNC-7 gap junction functions, but not its ability to regulate presynaptic development (Bouhours et al., 2011). As shown in Figure 2F, ubiquitous expression of unc-7(C191A) (Pdpy-30:: unc-7(C191A)) failed to rescue unc-7(lf) phenotypes, while expression of wild-type unc-7 cDNA (Pdpy-30:: unc-7) completely restored SNB-1::GFP distribution in unc-7(lf) animals. In conclusion, these data suggest that GLR-RME gap junctions play an important role in regulating RME axon specification.\n\n### GLR-RME gap junctions regulate microtubule polarity through the CDK-5 pathway\n\nAssembly and polarity of microtubule cytoskeleton display different properties in axons and dendrites. Axonal microtubules are all orientated with plus-end-out, while dendritic microtubules are either a mixture of plus-end-out and minus-end-out or minus-end-out only (Barnes and Polleux, 2009). The observation of misaccumulation of axonal markers in the gap junction mutants raises the question of whether GLR-RME gap junctions can regulate microtubule polarity in RME D/V neurites. Microtubule polarity can be visualized by imaging the dynamic of microtubule plus-end binding protein EBP-2::GFP, and the growing direction of EBP-2::GFP signal implicates the direction of microtubule plus-end (Kozlowski et al., 2007). Using an EBP-2::GFP reporter expressed only in RME neurons, we found that in RME D/V neurites of control animals, microtubules showed a mixture of plus-end-out (76%) and minus-end-out (24%) (Figure 3A and B). However, in unc-1 and unc-7 unc-9 mutants, almost all microtubules were plus-end-out (unc-1: 99%, unc-7 unc-9: 96%), which mirrors the microtubule assembly found in axons (Figure 3A and B). While GLR-RME gap junctions play important roles in regulating microtubule polarity, unc-1(lf) mutants do not seem to affect the distribution or the number of microtubules in RME D/V neurites. To visualize polymerized microtubules in RME neurons, we used EMTB::GFP (MT-binding domain of ensconsin fused to GFP), which binds along the side of polymerized microtubules and has been previously used to label microtubules in C. elegans neurons (Richardson et al., 2014). As shown in Figure 3\u2014figure supplement 1A and B, unc-1(lf) did not change the overall distribution or intensity of EMTB::GFP in RME D/V neurites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig3-v2.jpg)\n\n**Figure 3.:** (A) Time kymographs generated from a 40-s movie of EBP-2::GFP dynamics in control, unc-1(e580) and unc-7 unc-9 animals. (B) Quantification of percentage of orientation in RME D/V neurites in control (n\u00a0=\u00a0123), unc-1(e580)(n\u00a0=\u00a0115) and unc-7unc-9 animals (n\u00a0=\u00a0110) based on the analysis of EBP-2::GFP movement. Values that differ significantly from wild type (Fisher\u2019s exact test) are denoted on the graphs (*p<0.05).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Confocal images (A) and quantification (B) of EMTB::GFP signals in RME D/V neurites. n\u00a0=\u00a015. Data are shown as mean \u00b1 SD. Student test, NS: no significant difference. Pink-colored neurons are AIY neurons, which express the co-injection marker Pttx-3::rfp. Scale bar: 20 \u03bcm. (C) Quantification of percentage of animals with RME D/V defects. Each experiment was performed with N\u00a0>\u00a0200 animals at least three times. No significant difference (p>0.05, t-test) was detected between unc-1(lf) and double mutants. Scale bar: 20 \u03bcm.\n\nIn C. elegans neurons, the CDK-5 pathway, consisted of cdka-1/p35 and cdk-5, has been shown to regulate microtubule polarity (Goodwin et al., 2012; Ou et al., 2010). We found that cdk-5(lf) animals had similar microtubule polarity defects in RME D/V neurites as those in unc-1(lf) animals (Figure 4A), and loss-of-function mutations of cdk-5 or its upstream regulator cdka-1/p35 induced misaccumulation of SNB-1::GFP in RME D/V neurites (Figure 4B and C). Expression of cdk-5 cDNA in RME neurons rescued cdk-5(lf) phenotypes, supporting the conclusion that the CDK-5 pathway cell-autonomously regulates RME axon specification (Figure 4C). The similar phenotypes of gap junction and cdk-5 mutants led us to test their genetic interactions. Similar to unc-1(lf) animals, almost all unc-1;cdka-1 and unc-1;cdk-5 animals had defects in RME axon specification (Figure 3\u2014figure supplement 1C), and these double mutants showed a similar number of SNB-1::GFP puncta in RME D neurites as those in single mutants (Figure 1\u2014figure supplement 2B), suggesting that the CDK-5 pathway genetically acts in the same pathway with GLR-RME gap junctions. We also analyzed the genetic interactions between unc-7 and the CDK-5 pathway and found that double mutants of unc-7;cdk-5 or unc-7;cdka-1 had a similar degree of SNB-1::GFP mislocalization defects as those in unc-7(lf) single mutants, further supporting the conclusion that the CDK-5 pathway and GLR-RME gap junctions function in the same genetic pathway (Figure 4D, Figure 1\u2014figure supplement 2B). The activation of CDK-5 is regulated by p25, a cleavage product of p35, and the production of p25 has been used to measure the activation of the p35-CDK-5 pathway (Dhavan and Tsai, 2001). To test whether GLR-RME gap junctions are involved in activating the CDK-5 pathway in C. elegans, we generated a strain expressing FLAG-tagged p35 homolog CDKA-1 in RME neurons (yadIs13). In Western blot analyses, we detected a cleaved protein fragment of CDKA-1 in control animals (Figure 4E). Remarkably, the cleavage of CDKA-1 was largely eliminated in unc-1 single and unc-9 unc-7 double mutant animals, indicating that GLR-RME gap junctions indeed play an important role in activating the CDK-5 pathway in RME neurons (Figure 4E and F). Moreover, expression of mouse p25, the cleaved active version of p35, but not p35 in RME neurons suppressed unc-1(lf) phenotypes in a dose-dependent manner, further supporting that the cdka-1/p35-cdk-5 pathway acts downstream of GLR-RME gap junctions (Figure 4G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig4-v2.jpg)\n\n**Figure 4.:** (A) Loss-of-function of cdk-5 induces microtubule polarity defects in RME D/V neurites to a similar degree as those in unc-1(lf) animals. cdk-5: n\u00a0=\u00a081. Values that differ significantly from wild type (Fisher\u2019s exact test) are denoted on the graphs (*p<0.05). (B) Representative images and (C) quantification of SNB-1::GFP distribution defects in cdka-1(lf), cdk-5(lf), and cdk-5(lf) transgenic rescued strains. (D) Quantification of SNB-1::GFP distribution defects in unc-7;cdka-1 and unc-7;cdk-5 double mutants. (E) Western blot results of FLAG::CDKA-1 (yadIs13: Punc-25::FLAG::cdka-1(cDNA)) expression in non-transgene N2, transgene control, unc-7 unc-9 and unc-1(e580) animals. Red arrowhead points to the cleaved band. Green arrowhead marks to the uncleaved band. Blue arrowheads highlight nonspecific bands recognized by the anti-FLAG antibody. (F) Quantification of effect of unc-7unc-9 and unc-1(e580) on CDKA-1 cleavage. Three independent experiments were performed. Band intensity was measured using imageJ, and the relative intensity was calculated by (Icleaved /Iuncleaved)mutant /(Icleaved /Iuncleaved)controlX100%. Icleaved or Iuncleaved = intensity of cleaved CDKA-1/ intensity of un-cleaved CDKA-1 in mutant or control animals. (G) Quantification of SNB-1::GFP distribution defects in transgenes\u00a0expressing p25 or p35 in unc-1(ju1057) background. In C, D and G, experiments were performed with N\u00a0>\u00a0200 animals at least three times. For transgenic animals, the results shown here are generated from at least three independent lines. Data are shown as mean \u00b1 SD. Student t-test, *p<0.05, **p<0.01, ***p<0.001. Scale bar: 20 \u03bcm.\n\n### GLR cells regulate the CDK-5 pathway through gap junction-mediated calcium influx\n\nThe cleavage of p35 to p25 is mediated by the calcium-dependent cysteine protease calpain (Dhavan and Tsai, 2001). To address the functional importance of calcium and calpain in the cleavage of CDKA-1/p35 in RME neurons, we treated yadIs13 animals with the calcium antagonist BAPTA-AM and calpain-specific inhibitor PD150606 as previously described (Ghosh-Roy et al., 2010; Xu and Chisholm, 2011). The cleavage of CDKA-1/p35 was suppressed by both BAPTA-AM and PD150606 treatments (Figure 5A and B), which confirms the important role of calcium and calpain in the regulation of the CDK-5 pathway in RME neurons. In animals treated with BAPTA-AM or PD150606, we observed a similar SNB-1::GFP distribution defect as seen in cdka-1(lf) and cdk-5(lf) animals (Figure 5C). Treating animals with BAPTA-AM decreases calcium level in many cells and affects the overall condition of animals, so it could be argued that the effect of BAPTA-AM treatment may be caused by the sickness of animals. Previous studies showed that expression of a calcium buffer protein calbindin D28K in C. elegans neurons could lower intracellular calcium concentration (Schumacher et al., 2012). To show the importance of calcium in RME neurons, we expressed calbindin D28K in RME neurons and found that such expression caused RME defects at a similar level as BAPTA-AM treated animals (Figure 5D). More importantly, expression of calbindin D28K only in GLR cells (Pgly-18 and Pegl-6) caused the same extent of defects as animals expressing calbindin D28K in RME neurons or in both GLR cells and RME neurons (Figure 5D). As a control, expression of calbindin D28K in muscle did not cause any obvious RME defects (Figure 5D). These results support that the GLR cells can regulate RME calcium concentration through GLR-RME gap junctions. To further illustrate the effect of lowering GLR calcium on RME axon specification, we tested microtubule polarity in animals expressing calbindin D28K in GLR cells. Consistent with our observation using the SNB-1::GFP marker, microtubule polarity was changed to be mostly plus-end-out in D/V neurites in these transgenic animals (Figure 5E plus-end-out: 96%). Furthermore, mutating cdk-5 in transgenicanimals expressing calbindin D28K in GLR cells did not enhance the RME SNB-1::GFP phenotypes, and activating the CDK-5 pathway in RME neurons by overexpressing p25 suppressed the phenotypes in those transgenic animals (Figure 5F). Taken together, we show that GLR cells can regulate RME calcium concentration through gap junctions, and such regulation can modulate the activation of the CDK-5 pathway to affect RME axon specification.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gel images and (B) quantification results show that calcium antagonist BAPTA-AM and Calpain inhibitor PD150606 suppress the cleavage of CDKA-1/p35. Three independent experiments were performed, and the relative intensity was calculated as described in Figure 4 (C) Quantification of SNB-1::GFP distribution defects in BAPTA-AM and Calpain inhibitor PD150606-treated animals. (D) Quantification of SNB-1::GFP distribution defects in animals expressing calbindin D28K (CALB) in RME neurons (Punc-25), GLR cells (Pgly-18 and Pegl-6), and muscle (Pmyo-3). For this experiment and all other experiments using calbindin D28K transgenes, only animals with normal GLR cell and RME neuron morphology were chosen for quantification. (E) Expression of calbindin D28K (CALB) in GLR cells (Pgly-18) induces microtubule polarity defects in RME D/V neurites. n\u00a0=\u00a0100. Values that differ significantly from wild type (Fisher\u2019s exact test) are denoted on the graphs ***p<0.001. (F) Quantification of SNB-1::GFP distribution defects in animals expressing calbindin D28K (CALB) in GLR cells (Pgly-18) in wild-type\u00a0background, in\u00a0cdk-5(lf)\u00a0background, or in a transgene backgound overexpressing p25 in RME neurons (Punc-25). (G) Quantification of SNB-1::GFP distribution defects in clp-4 mutants and rescue\u00a0transgenes\u00a0. (H) Quantification of SNB-1::GFP distribution defects in clp-4, unc-7, and clp-4;unc-7 double mutants. In C, D, and E, data are shown as mean \u00b1 SD. Student test, *p<0.05, **p<0.01, ***p<0.001. NS: no significant difference.\n\nTo reveal which calpain is involved in RME axon specification, we tested all seven calpains (clp-1-clp-7). We found that clp-4(lf) displayed a similar degree of RME defects as seen in cdk-5(lf) mutants, while mutations or RNAi of others did not produce obvious phenotypes (Figure 5D). Our results also showed that clp-4 cell-autonomously regulates RME axon specification (Figure 5D). Double mutants of clp-4 with unc-1 or unc-7 displayed RME polarity defects to a similar extent as those in single mutants, supporting the conclusion that clp-4 functions in the GLR-RME gap junction-cdk-5 pathway to regulate RME axon specification (Figure 5E, Figure 1\u2014figure supplement 2B).\n\nWith the finding of the important role of calcium coming from GLR cells, we further addressed whether it played a permissive or instructive role in RME axon specification. slo-1 encodes a voltage-gated potassium channel, and mutation of slo-1 has been shown to increase neuronal activity, possibly calcium (Wang et al., 2001). We found that slo-1(lf) partially suppressed RME phenotypes in unc-1(lf) and transgenic animals expressing calbindin D28K in GLR cells (Figure 6A and B). Moreover, slo-1(lf) suppressed both the microtubule polarity defects and the blockage of CDKA-1 cleavage in unc-1(lf) animals (Figure 6B,C and D). These results suggest that calcium influx from GLR cells likely plays a permissive rather than an instructive role in RME axon specification.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig6-v2.jpg)\n\n**Figure 6.:** (A) Quantification of SNB-1::GFP distribution defects in unc-1(ju1057), slo-1 and unc-1(ju1057);slo-1. (B) Quantification of SNB-1::GFP distribution defects in animals expressing calbindin D28K (CALB) in GLR cells (Pgly-18) in a control or slo-1(lf) background. (C) Quantification of EBP-2 dynamics show that loss-of-function of slo-1 suppresses microtubule polarity defects in RME D/V neurites in unc-1(e580) animals. Values that differ significantly from wild type (Fisher\u2019s exact test) are denoted on the graphs (*p<0.05). (D) Western blot results of FLAG::CDKA-1 (yadIs13) expression in non-transgene N2, slo-1, unc-1, and unc-1;slo-1 animals. Red arrowhead points to the cleaved band. Green arrowhead marks the uncleaved band. Blue arrowheads highlight nonspecific bands recognized by the anti-FLAG antibody. (E) Quantification of western results shows that loss-of-function of slo-1 suppresses the unc-1 effects on CDKA-1 cleavage. Three independent experiments were performed, and quantification uses the same method as in Figure 4 In A\u00a0and\u00a0B, experiments were performed with N\u00a0>\u00a0200 animals at least three times. For transgenic animals, the results shown here are generated from at least three independent lines. Data are shown as mean \u00b1 SD. Student t-test, *p<0.05, **p<0.01, ***p<0.001.\n\n## Discussion\n\nOur data show that in C. elegans, GLR cells can regulate axon specification of nearby RME neurons through gap junctions. Specifically, GLR-RME gap junctions can modulate the strength of the CDK-5 pathway to regulate microtubule polarity in RME D/V neurites. Two lines of evidence show that RME axon specification is interrupted in gap junction mutants: first, using well-established presynaptic vesicle and active zone markers, we found that these axonal components were mis-accumulated in non-axonal neurites; second, by imaging microtubule dynamics, we revealed that microtubule polarity in RME D/V neurites was changed from a mixture of plus-end-out and minus-end-out orientations to a predominantly axon-like plus-end-out orientation. Our analyses of the cleavage of CDKA-1/p35 show that GLR-RME gap junctions can regulate the activation of the CDK-5 pathway in a calcium-dependent manner. From these data, we propose that during development, the influx of calcium from GLR cells to RME neurons through gap junctions can induce the activation of the CDK-5 pathway to guide microtubule assembly and axon specification (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19510/elife-19510-fig7-v2.jpg)\n\n**Figure 7.:** At the early developmental stage, calcium influxes from GLR cells to RME neurons through gap junctions to induce activation of the CDK-5 pathway, which guides microtubule assembly and axon specification.\n\n### Synapse elimination and axon specification\n\nIn our previous studies, we show that RME neurons form transient synapses at the end of D/V neurites at the L1 stage, and the cell death (CED) pathway can regulate the elimination of those transient synapses through cleavage of a F-actin severing protein GSNL-1/gelsolin (Meng et al., 2015). CED mutants (egl-1(lf), ced-9(gf), ced-3(lf) and ced-4(lf)) or gsnl-1(lf) prevent the elimination of transient synapses in D/V neurites, and as a result SNB-1::GFP puncta are observed at the end of D/V neurites in adult animals. The phenotypes of gap junction mutants (unc-1, unc-7, unc-9, unc-7 unc-9) are different from those of CED and gsnl-1 mutants. Loss of function in CED or gsnl-1 animals do not show any difference with control animals at the L1 stage in that they have similar numbers of SNB-1::GFP puncta at the end of D/V neurites. In contrast, gap junction mutant animals reported here already exhibit differences with control animals in the L1 stage, as they have SNB-1::GFP puncta along the D/V neurites in addition to those at the end of D/V neurites. When animals reach the adult stage, CED or gsnl-1(lf) animals only have SNB-1::GFP at the end of D/V neurites, but gap junction mutants have SNB-1::GFP along the entire D/V neurites. While gap junction mutants have defects of SNB-1::GFP distribution in axonal processes, no such phenotypes were observed in CED or gsnl-1 mutants. Different from gap junction mutants, CED or gsnl-1\u00a0mutant animals have similar microtubule polarity in D/V neurites as that in control animals (data no shown). With these differences and other evidence presented in this study, we conclude that GLR-RME gap junctions are involved in regulating RME axon specification rather than synapse elimination.\n\n### Functions of neuron-glia gap junctions\n\nA series of ultrastructure and light microscopy studies have demonstrated that there are gap junction structures between neurons and glial cells (Cuadras et al., 1985; Nadarajah et al., 1997; Nadarajah and Parnavelas, 1999; Nadarajah et al., 1996; Peinado et al., 1993; Shivers et al., 1988; Sinues Porta et al., 1988). Several studies using electrophysiological and dye-filling methods support that those structures are likely functional gap junctions (Alvarez-Maubecin et al., 2000; Froes et al., 1999; Nedergaard, 1994; Nedergaard and Goldman, 1993). In C. elegans, the presence of gap junctions between RME neurons and GLR cells has been well documented (White et al., 1986). GLR cells are classified as glial cells in C. elegans (Oikonomou and Shaham, 2011), but since GLR cells are derived from a muscle rather than neural lineage, some studies classify them as a\u00a0part of the mesodermal/muscle system instead. In the mammalian cortex, most neurons undergo axon-dendrite polarization during migration along the radial glia (Barnes and Polleux, 2009). Radial glia, neural precursors, and immature neurons all express multiple connexins, and gap junctions between radial glia and between neurons have been shown to be critical in neurogenesis and circuit assembly (Belousov and Fontes, 2013; Connors and Long, 2004; Kunze et al., 2009; Li et al., 2012; Yu et al., 2012). Radial glia are also coupled with neural precursors through gap junctions at the ventricular and subventricular zones (Bittman et al., 1997), raising the possibility that radial glia may regulate neural precursors through gap junctions.\n\n### Signals affecting axon specification/neuronal polarity\n\nUsing the classic in vitro culture system developed by Banker et al. (Craig and Banker, 1994; Goslin\u00a0and Banker, 1989), numerous studies have revealed that asymmetric activation of intracellular signaling pathways is the major driving force in determining the fate of axons and dendrites (Barnes and Polleux, 2009). Recent evidence also shows that extracellular cues play instructive roles in regulating neuronal polarity. In cultured hippocampal neurons plated on striped substrates coated with Laminin and NgCAM, the first neurite that contacts the boundary between two stripes with different substrates always becomes the axon regardless of the initial substrate that the neurite grows on (Esch et al., 1999). Extracellular BDNF could determine which neurites will become the axon by activating the LKB1-SAD pathway in cultured neurons and the mammalian cortex (Barnes et al., 2007; Shelly et al., 2007). In Xenopus retinal ganglion cells, extracellular cues from basal lamina play an essential role in establishing neuronal polarity (Zolessi et al., 2006). Furthermore, studies in C. elegans highlight the important roles of guidance cues, such as Wnt and Netrin, in instructing neuronal polarity (Hilliard and Bargmann, 2006; Poon et al., 2008; Prasad\u00a0and Clark, 2006). Through genetic analyses of RME development in C. elegans, we reveal that the gap junctions between GLR cells and their nearby RME neurons play an important role in regulating RME axon specification by activating the CDK-5 pathway.\n\n### Gap junction signals in regulating neuronal polarity\n\nGap junction-mediated calcium signaling plays important roles in development and disease (Chuang et al., 2007; Nakase and Naus, 2004; Schumacher et al., 2012). Our results highlight the critical role of glia-neuron gap junctions in regulating a calcium-dependent CDK-5 pathway in axon specification. Besides calcium, gap junctions can mediate the exchange of small molecules that are less than 1 kDa, such as IP3, cAMP, and cGMP (Goodenough and Paul, 2009). Gap junction channels also directly bind to a large group of proteins, including Zona occludens-1(ZO-1), SRC, PKA, PKC, MAP Kinases, Cadherin, GTPase, phosphatases, microtubules, and F-actin (Giepmans, 2004). The relatively weaker phenotypes observed in mutants affecting the clp-4/calpain-p35-CDK-5 pathway suggest that GLR-RME gap junctions may regulate multiple downstream pathways. Given that many regulators of neuronal polarity, such as cAMP, cGMP, Cadherin, MAP kinases, and GTPases, have been shown to be modulated by gap junctions (Barnes and Polleux, 2009; Giepmans, 2004; Goodenough and Paul, 2009), it is possible that GLR-RME gap junctions may regulate some of those pathways as well.\n\n## Materials and methods\n\n### C. elegans genetics\n\nWe maintained C. elegans strains on NGM plates at 20\u201322.5\u00b0C. All transgenes and strains are described in Supplementary file 1. We used juIs1 (Punc-25::SNB-1::GFP) in unc-30 (ju32) background to visualize RME neuron presynaptic terminals (Meng et al., 2015). hpIs3 (Punc-25::SYD-2::GFP) (Yeh et al., 2009) was used to visualize RME presynaptic active zones. unc-1(ju1057) was isolated from the strain CZ15720 unc-30(ju32) (IV) juIs1(Punc-25::SNB-1::GFP) (IV) after ethyl methane sulfonate mutagenesis. In experiments examining the localization of SYD-2::GFP, RAB-3::mCherry and EBP-2::GFP dynamics, we used another unc-30 allele ok613.\n\n### Drug experiments\n\nBAPTA-AM and PD150606 were obtained from Sigma and were dissolved in DMSO before dilution in M9. We treated animals with drugs as previously described (Ghosh-Roy et al., 2010; Xu and Chisholm, 2011). For Western blot, we incubated mixed-stage animals in the drug solutions (containing Escherichia coli OP50) for 24 hr before experiments; for quantification of RME defects, we grew L1 animals in the drug solutions (containing Escherichia coli OP50) until they reached the adult stage (36\u201348 hr). Control animals were incubated in M9-containing DMSO solvent to the equivalent concentration as that used in the specific experiment.\n\n### Temperature shift experiments\n\nFor quantification of unc-1(hs1) phenotypes at 11\u00b0C and 25\u00b0C, animals were grown at 11\u00b0C/25\u00b0C for at least two generation before examining their phenotypes. 11\u00b0C->(L1) 25\u00b0C: L4 animals were cultured in 11\u00b0C, and in the next generation, adult animals were collected for synchronized eggs. Eggs were hatched at 11\u00b0C and then transferred to 25\u00b0C until examination of the phenotype at the day 1 adult stage. 25\u00b0C->(L1) 11\u00b0C->(L4) 25\u00b0C, animals were grown at 25\u00b0C for two generations, and then L1 animals were transferred to 11\u00b0C. When animals reached middle L4 stages at 11\u00b0C, those animals were transferred back to 25\u00b0C until examination of the phenotype at the day 1 adult stage. 25\u00b0C->(L4) 11\u00b0C: similar as described in the '11\u00b0C->(L1) 25\u00b0C' section, but using 25\u00b0C as the starting temperature and 11\u00b0C as the final temperature, and animals were transferred at L4 stage.\n\n### Cloning and constructs\n\nAll DNA expression constructs were made using Gateway cloning technology (Invitrogen,\u00a0Carlsbad, CA). Sequences of the final clones were confirmed. Supplementary file 1. lists the genotypes. unc-1 and unc-9 cDNA were amplified from yk364C8 and yk1324e06. unc-7, ebp-2, cdka-1, and clp-4 cDNA were amplified from a homemade N2 cDNA pool. DNA construct information is listed in Supplementary file 2. Transgenic animals were generated following standard procedures. In general, plasmid DNAs of interest were used at 1\u201350 ng/\u00b5l with the co-injection marker Pttx-3::RFP at 40 ng/\u00b5l.\n\n### Fluorescence microscopy\n\nRepresentative images were acquired with a Zeiss LSM700 confocal microscope using a Plan-Apochromat 40x/1.4 objective. Worms were immobilized in 1% 1-phenoxy-2-propanol (TCI America, Potland, OR) in M9 buffer. For quantification of polarity defects in RME neurons, we used a Zeiss Axio Imager 2 microscope equipped with Chroma HQ filters. RME axon specification defects were scored for the percentage of animals with evenly distributed SNB-1::GFP puncta (more than 25) in both RME D/V dendrites. Each condition consisted of at least three independent experiments and 200\u2013300 1-day-old adults. For quantification of the number of SNB-1::GFP puncta in RME D neurites, we used the Zeiss Axio Imager 2 microscope with 63X objective. We selected animals with the dorsal side up and manually counted the number of all visible SNB-1::GFP puncta. For analysis of SNB-1::GFP intensity, as shown in Figure 1\u2014figure supplement 1A, we measured the intensity of each region as labeled in the Figure 1\u2014figure supplement 1 and then subtracted by the background of the same size area close to regions of interest. The fractions of GFP signals were calculated by dividing each part with the sum of all GFP signals.\n\n### Protein analysis\n\nFor the CDKA-1 cleavage study, we generated an integrated transgene (yadIs13) expressing FLAG-CDKA-1 under the control of Pan-neuronal promoter Prgef-1. Proteins from mixed-stage animals were first extracted using sample buffer by freezing and thawing about 20 times, which consists of freezing in ethanol with dry ice followed by incubation at 95\u00b0C for 5 min. Protein samples were separated using SDS-PAGE Gradient Gels (4\u201320%), and then transferred to nitrocellulose. Blots were probed with rabbit anti-Flag antibodies (Sigma, F1804), and visualized with Amerisham HRP-conjugated anti-rabbit secondary antibodies at 1:5000 using the SuperSignal West Femto kit (Pierce, Rockford, 1L).\n\n### Dynamic imaging\n\nEBP-2::GFP dynamic experiments were performed using an Andor revolution microscope with a 60 x/1.46 Plan-Apochromat objective controlled by the MetaMorph software. All videos were acquired by an Andor EM-CCD camera (DU897). Young adult animals were immobilized in 5 mM levamisole and on 5% agar pads for imaging. Videos for EBP-2::GFP dynamic analysis were roughly 30\u00a0s with 10 frames per second. Kymographs were generated using ImageJ.\n\n### Statistical analysis\n\nWe analyzed our data using one-tailed Student\u2019s t-test, one-way ANOVA, and Fisher\u2019s exact test in Graphpad Prism (GraphPad Software, La Jolla, CA).\n",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2000b7c8-7243-4ff2-926a-91bdb4a21968",
+      "submission_id": "a451979b-4732-431c-aa78-a0f3f728c5a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19510.015](https://doi.org/10.7554/eLife.19510.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Regulation of Neuronal Axon Specification by Glia-Neuron Gap Junctions in C. elegans\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior Editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSpecifically, the reviewers expressed enthusiasm about the problems addressed in this paper and find the results of potential interest. However, the reviewers agreed that there are two issues that need to be fixed in order to support the author's conclusions:\n\n1) The authors have not provided any evidence of the key claim of the paper, namely that GLR cells provide calcium via gap junction to control RME axon specification. Their argument rests entirely on showing that a calcium-dependent pathway is required for axon specification, but whether GLR neurons provides calcium is not tested. One way to do this would be to titrate out calcium in GLR by expressing a calcium binding protein in the GLR neurons (see this paper for experiment to test calcium trafficking through gap junctions: http://dev.biologists.org/content/139/22/4191.short).\n\n2) There are some issues with the gly-18 and nep-2 promoter specificity that the authors regrettably fail to mention: both promoters are also active in muscle cells (plus a good number of additional cells) and hence the rescue experiments performed do not proof GLR involvement. This is disappointing because there appear to be a number of more suitable drivers in the literature (for example, egl-6) that the authors should have used. The authors need to use drivers with greater specificity.\n\nOn a purely editorial level, the reviewers would also appreciate if the authors could integrate \u2013 in the Discussion section \u2013 their present findings with their previous finding which demonstrated (a) that RME neurites initially do accumulate presynaptic clusters; (b) the existence of a CED-3-based mechanism to remove these clusters. What are the potential link between these mechanisms? Along these lines, it appears confusing that the author use the word \"axon specification\" in this paper, given that the process that the study is really a pruning process. Are the authors thinking that there is no polarity initially, the CDK pathway establishes this polarity and CED-3 then cleans up the \"mess\" that existed previously?\n\nThe authors will also need to have the manuscript undergo a substantial grammar check.\n",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef1fd5e9-f6b0-4b2d-a406-b12677f82097",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C1",
+      "claim": "C. elegans GLR glial cells regulate axon specification of their nearby GABAergic RME neurons through GLR-RME gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that C. elegans GLR glial cells regulate axon specification of their nearby GABAergic RME neurons through GLR-RME gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data throughout the manuscript including genetic rescue experiments and mosaic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "dd4efbcc-a509-4aa2-8d57-38599b99b111",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C2",
+      "claim": "Disruption of GLR-RME gap junctions causes misaccumulation of axonal markers in non-axonal neurites of RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of GLR-RME gap junctions causes misaccumulation of axonal markers in non-axonal neurites of RME neurons and converts microtubules in those neurites to form an axon-like assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing SNB-1::GFP, SYD-2::GFP, and RAB-3 mislocalization in gap junction mutants (Figures 1 and 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "6a9de7cc-5d9b-4113-af75-e0b9dc77387a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C3",
+      "claim": "Disruption of GLR-RME gap junctions converts microtubules in non-axonal neurites to form an axon-like assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of GLR-RME gap junctions causes misaccumulation of axonal markers in non-axonal neurites of RME neurons and converts microtubules in those neurites to form an axon-like assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by EBP-2::GFP dynamics showing conversion from mixed microtubule polarity to predominantly plus-end-out orientation in gap junction mutants (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "e24cbcfe-f88c-435f-be20-bca3132deb4e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C4",
+      "claim": "GLR-RME gap junctions regulate RME axon specification through activation of the CDK-5 pathway in a calcium-dependent manner, involving a calpain clp-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We further uncover that GLR-RME gap junctions regulate RME axon specification through activation of the CDK-5 pathway in a calcium-dependent manner, involving a calpain clp-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data showing CDKA-1 cleavage, genetic epistasis experiments, and calcium manipulation experiments (Figures 4, 5, and 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "b947cf7c-9a35-461e-b1ca-74be979ae03c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C5",
+      "claim": "Calcium originated from glial cells can regulate neuronal intracellular pathways through gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our study reveals the function of glia-neuron gap junctions in neuronal axon specification and shows that calcium originated from glial cells can regulate neuronal intracellular pathways through gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing that expression of calcium buffer calbindin D28K in GLR cells causes RME defects and that these defects can be suppressed by activating the CDK-5 pathway (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "aa656cd9-2e17-478d-8bcf-e87b2ca1e161",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C6",
+      "claim": "In mammals, glial cells are involved in many steps of brain development including serving as stem cells in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, they are involved in many steps of brain development: in embryos, radial glial cells serve as stem cells (Doetsch et al., 1999; Noctor et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "47b2d1ae-e555-4d4f-b314-a7fca87b7bdf",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C7",
+      "claim": "Radial glial cells act as scaffolds for neuronal migration and axon growth.",
+      "claim_type": "EXPLICIT",
+      "source": "in embryos, radial glial cells serve as stem cells (Doetsch et al., 1999; Noctor et al., 2001) and act as scaffolds for neuronal migration and axon growth (Chotard and Salecker, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0b256b2b-3b8d-441b-afd3-6d70946a5742",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C8",
+      "claim": "In newborn animals, astrocytes regulate synaptogenesis through contact-mediated or secreted signals, such as glypicans, thrombospondins, hevin and SPARC.",
+      "claim_type": "EXPLICIT",
+      "source": "in newborn animals, astrocytes regulate synaptogenesis through contact-mediated or secreted signals, such as glypicans, thrombospondins, hevin and SPARC (Allen et al., 2012; Christopherson et al., 2005; Elmariah et al., 2005; Hama et al., 2004; Hughes et al., 2010; Kucukdereli et al., 2011; Pfrieger and Barres, 1997; Ullian et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "be7f80b5-9968-4a9b-94ba-3ecd9ce4d03a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C9",
+      "claim": "In mature neurons, astrocytes and microglia regulate refinement of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "and in mature neurons, astrocytes and microglia regulate refinement of neural circuits (Chung et al., 2013; Schafer et al., 2012; Stevens et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "e9f5cb17-8ada-4fb8-adfd-c1107fb15ce9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C10",
+      "claim": "C. elegans has 56 glial cells, which consist of 46 neuroepithelial glia that ensheath sensory dendrites, four neuroepithelial glia that envelop the nerve ring, and six GLR cells that reside in the inner nerve ring.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans has 56 glial cells, which consist of 46 neuroepithelial glia that ensheath sensory dendrites, four neuroepithelial glia that envelop the nerve ring, and six GLR cells that reside in the inner nerve ring (Oikonomou and Shaham, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "08b23494-b064-40ea-95ee-68878edd1212",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C11",
+      "claim": "C. elegans neuroepithelial glial cells regulate axon growth, dendrite development, and synapse specification through secreted and contact-mediated signals.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans neuroepithelial glial cells are known to regulate axon growth, dendrite development, and synapse specification through secreted and contact-mediated signals (Colon-Ramos et al., 2007; Heiman and Shaham, 2009; Shao et al., 2013; Yoshimura et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "a1b61240-d43c-482d-ab5c-b8e1ea003ce5",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C12",
+      "claim": "The function of GLR cells in neuronal development is still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "but the function of GLR cells in neuronal development is still unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7d0b282f-9f08-451e-b94d-422fe8453ae1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C13",
+      "claim": "Most neurons have multiple dendrites to receive stimulation from upstream cells and a single axon to pass signals to downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons have multiple dendrites to receive stimulation from upstream cells and a single axon to pass signals to downstream targets, and this general morphology is essential for them to integrate and transmit information in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about neuronal morphology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7889d14b-235a-4bbb-8f3d-a8e4197dff6e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C14",
+      "claim": "Whether and how glial cells affect axon specification remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While glial cells are involved in regulating many aspects of neuronal development and function, whether and how glial cells affect axon specification remains largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0f6a2f6d-e522-4d29-9c61-5f31fbe848b1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C15",
+      "claim": "During mammalian brain development, transient gap junctions between neurons are formed at many regions to regulate synaptogenesis, neuronal differentiation, neuronal migration, and neural circuit formation.",
+      "claim_type": "EXPLICIT",
+      "source": "During mammalian brain development, transient gap junctions between neurons are formed at many regions to regulate synaptogenesis, neuronal differentiation, neuronal migration, and neural circuit formation (Belousov and Fontes, 2013; Connors and Long, 2004; Li et al., 2012; Yu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "28042739-816d-4209-b9ef-ec9d86660ed3",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C16",
+      "claim": "In invertebrates, transient neuronal gap junctions regulate the formation of chemical synapses in leeches.",
+      "claim_type": "EXPLICIT",
+      "source": "In invertebrates, transient neuronal gap junctions regulate the formation of chemical synapses in leeches (Todd et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "c2d6272e-ca06-409b-a0ec-7f52af78bae1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C17",
+      "claim": "Transient neuronal gap junctions are required for the asymmetrical development of sensory neurons in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "and are required for the asymmetrical development of sensory neurons in C. elegans (Chuang et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7d2fb426-5e42-47a0-9fb9-2cb99c3a23aa",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C18",
+      "claim": "Electron microscopy and dye-filling studies have shown that neurons and glial cells form transient gap junctions in the developing brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopy and dye-filling studies have shown that neurons and glial cells also form transient gap junctions in the developing brain (Cuadras et al., 1985; Nadarajah et al., 1997; Nadarajah and Parnavelas, 1999; Nadarajah et al., 1996; Peinado et al., 1993; Shivers et al., 1988; Sinues Porta et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4399db38-df69-4481-8655-91ef11d5600d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C19",
+      "claim": "Electrophysiology analysis confirmed that neuron-glia gap junctions are likely to be functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Further electrophysiology analysis confirmed that those neuron-glia gap junctions are likely to be functional (Alvarez-Maubecin et al., 2000; Froes et al., 1999; Nedergaard, 1994; Nedergaard and Goldman, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "b7a8079a-71ce-4e43-8ab1-80222e7733ae",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C20",
+      "claim": "It remains unknown whether neuron-glia gap junctions play any roles in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "however, it remains unknown whether they play any roles in neuronal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "cf36d870-b251-4db1-977d-fc942625c6bc",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C21",
+      "claim": "UNC-1 is a conserved stomatin protein that plays important roles in regulating gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC-1 is a conserved stomatin protein that plays important roles in regulating gap junctions (Chen et al., 2007; Rajaram et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "55125814-2a9e-4978-b6a8-5207ec333985",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C22",
+      "claim": "unc-1 functions in both GLR cells and RME neurons to regulate RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that unc-1 functions in both GLR cells and RME neurons to regulate RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tissue-specific rescue experiments and mosaic analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "700bbd45-7777-4fd2-9fa1-34bbe2e87c0b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C23",
+      "claim": "Mutating all RME-expressed gap junction channels causes the same extent of axon specification defects as seen in unc-1(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating all RME-expressed gap junction channels causes the same extent of axon specification defects as seen in unc-1(lf) mutants, supporting the conclusion that unc-1 regulates RME axon specification by modulating GLR-RME gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that unc-7 unc-9 double mutants have the same degree of defects as unc-1(lf) animals (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "e5b11b81-bdf3-44f1-965b-c154fc9f6452",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C24",
+      "claim": "The function of the CDK-5 pathway in regulating microtubules is highly conserved from nematodes to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "As the function of the CDK-5 pathway in regulating microtubules is highly conserved from nematodes to mammals, a similar mechanism may also be used in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about CDK-5 pathway conservation and speculation about potential mechanisms in other organisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "82331771-fae9-4fec-8ff9-c54f1a7d5334",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C25",
+      "claim": "The RME circuit contains four GABAergic motor neurons, RMED, RMEV, RMEL, and RMER, that reside at the nerve ring region to control head movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The circuit contains four GABAergic motor neurons, RMED, RMEV, RMEL, and RMER, that reside at the nerve ring region to control head movement (Song et al., 2010; White et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "06718dcb-2fe9-453c-b009-c6fdc0919f4b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C26",
+      "claim": "The axonal processes of RME neurons form a ring-shaped bundle, and RME D/V extend two neurites along the dorsal/ventral cords.",
+      "claim_type": "EXPLICIT",
+      "source": "The axonal processes of RME neurons form a ring-shaped bundle, and RME D/V extend two neurites along the dorsal/ventral cords (Figure 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "14011cd9-25ad-4d1d-88b8-8de94668bbc9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C27",
+      "claim": "In adult control animals, presynaptic markers such as synaptobrevin (SNB-1) exclusively accumulate in axonal boutons at the end of the ring-shaped axonal process.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult control animals, presynaptic markers such as synaptobrevin (SNB-1) exclusively accumulate in axonal boutons at the end of the ring-shaped axonal process (Figure 1C and D)(White et al., 1986)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 1C and D and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "83f925ad-a67f-45e7-8481-50e8b1a119cb",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C28",
+      "claim": "In ju1057 mutant animals, SNB-1::GFP puncta are present along RME axonal processes and D/V neurites in addition to those in normal axonal boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "In a genetic screen for RME neuronal development, we isolated a mutant, ju1057, with SNB-1::GFP puncta present along RME axonal processes and D/V neurites in addition to those in normal axonal boutons (Figure 1C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ae712fca-9951-47f0-90ed-869076b1a770",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C29",
+      "claim": "ju1057 did not affect the overall expression level of SNB-1::GFP but significantly changed the distribution of SNB-1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful analyses of ju1057 phenotypes showed that ju1057 did not affect the overall expression level of SNB-1::GFP but significantly changed the distribution of SNB-1::GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "13b4371a-54ce-44d4-a732-eaa291d41cd7",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C30",
+      "claim": "In ju1057 animals, 47% of SNB-1::GFP signal was observed in RME D/V neurites and 40% in axonal boutons, while in control animals 8% of SNB-1::GFP signals were observed in D/V neurites and 67% at axonal boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "In ju1057 animals, a higher fraction of SNB-1::GFP signal was observed in RME D/V neurites (47%) than in axonal boutons (40%), while in control animals 8% of SNB-1::GFP signals were observed in D/V neurites and 67% of them at axonal boutons (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "61df7a8e-7367-47cc-848c-e694bd49feef",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C31",
+      "claim": "ju1057 animals displayed kinker uncoordinated (unc) phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "ju1057 animals displayed kinker uncoordinated (unc) phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation of the mutant phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "5fc28044-f77a-41bf-8624-5598c6e14d1d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C32",
+      "claim": "ju1057 failed to complement two unc-1 loss-of-function alleles, e580 and e2522.",
+      "claim_type": "EXPLICIT",
+      "source": "ju1057 failed to complement two unc-1 loss-of-function alleles, e580 and e2522",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genetic complementation data supporting that ju1057 is an allele of unc-1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d0a185d6-f867-43de-b38e-83a67816dd88",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C33",
+      "claim": "e580 and e2522 animals displayed SNB-1::GFP mislocalization defects in both axonal processes and D/V neurites resembling those in ju1057 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and e580 and e2522 animals displayed SNB-1::GFP mislocalization defects in both axonal processes and D/V neurites resembling those in ju1057 animals (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0cd7ced4-2d8c-4757-ae6f-ff7895ff2447",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C34",
+      "claim": "ju1057 changed a conserved alanine to valine (A248V) in the C-terminal domain of UNC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing results showed that ju1057 changed a conserved alanine to valine (A248V) in the C-terminal domain of UNC-1 (Figure 1\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data and protein alignment shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "c2864afc-22c4-4af0-8362-39ceaf7768cd",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C35",
+      "claim": "Expression of unc-1 cDNA in all tissues using the Pdpy-30 promoter rescued the SNB-1::GFP defects of ju1057 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, expression of unc-1 cDNA in all tissues using the Pdpy-30 promoter rescued the SNB-1::GFP defects of ju1057 animals (Figure 1C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7cd74ba5-5ff9-44bb-95a1-306233bb999f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C36",
+      "claim": "ju1057 is a loss-of-function allele of unc-1.",
+      "claim_type": "EXPLICIT",
+      "source": "These lines of evidence support that ju1057 is a loss-of-function allele of unc-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from complementation tests, sequencing data, and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2062f429-6f44-4e61-a1a1-7cbbed824dad",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C37",
+      "claim": "Loss-of-function of unc-1 causes misaccumulation of SYD-2::GFP and mCherry::RAB-3 in RME D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observation using the SNB-1::GFP marker, unc-1(lf) caused misaccumulation of SYD-2::GFP and mCherry::RAB-3, and SYD-2::GFP was also co-localized with mCherry::RAB-3 in RME D/V neurites (Figure 1E,F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1E, F, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8e09d115-5656-433c-827a-7fc30f6d5624",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C38",
+      "claim": "SYD-2::GFP is co-localized with mCherry::RAB-3 in RME D/V neurites of unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and SYD-2::GFP was also co-localized with mCherry::RAB-3 in RME D/V neurites (Figure 1E,F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f591bb5c-5b86-4110-b0fd-97829cc15a70",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C39",
+      "claim": "The presence of axonal markers in D/V neurites suggests that mutation of unc-1 disrupts certain aspects of axon specification in RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these axonal markers in D/V neurites suggests that mutation of unc-1 disrupts certain aspects of axon specification in RME neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of axonal marker mislocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "92332871-2867-4015-bcd9-d0d5a590496c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C40",
+      "claim": "unc-1(hs1) is a cold-sensitive allele that has strong unc-1(lf) locomotion phenotypes at 11\u00b0C and reverse to almost wild-type at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between these two possibilities, we took advantage of a cold-sensitive unc-1(hs1, lf) allele, that has strong unc-1(lf) locomotion phenotypes at 11\u00b0C and reverse to almost wild-type at 25\u00b0C (Hecht et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d1be077e-a34f-4779-8009-1a5c99288048",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C41",
+      "claim": "At 25\u00b0C, less than 10% of unc-1(hs1) animals had RME defects, while more than 85% of animals displayed RME defects at 11\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "At 25\u00b0C, less than 10% of unc-1(hs1) animals had RME defects, while more than 85% of animals displayed RME defects at 11\u00b0C (Figure 1H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by temperature-shift experiment data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "5512d3b1-bdd5-46b4-8e71-f2d4063a4141",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C42",
+      "claim": "Growing animals at the restrictive temperature (11\u00b0C) before the L1 stage or after the L4 stage showed the same degree of RME defects as those cultured at the permissive temperature (25\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1H, growing animals at the restrictive temperature (11\u00b0C) before the L1 stage or after the L4 stage showed the same degree of RME defects as those cultured at the permissive temperature (25\u00b0C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by temperature-shift experiment data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f8e069bc-0faa-4bbc-80ba-df35bb5ce138",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C43",
+      "claim": "Growing larval-stage animals (L1-middle L4) at the restrictive temperature (11\u00b0C) was sufficient to cause RME defects to the same extent as those cultured at the restrictive temperature (11\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "but growing larval-stage animals (L1-middle L4) at the restrictive temperature (11\u00b0C) was sufficient to cause RME defects to the same extent as those cultured at the restrictive temperature (11\u00b0C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by temperature-shift experiment data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "bab0e7fd-e46e-402d-bddd-52474d90f5eb",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C44",
+      "claim": "unc-1 functions in the larval stages to regulate the establishment of RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the conclusion that unc-1 functions in the larval stages, the same time period of RME D/V neurite development (Meng et al., 2015), to regulate the establishment of RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from temperature-shift experiments and supported by citation to published literature about RME development timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "762c017a-c074-42c9-977b-7aaf8798429f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C45",
+      "claim": "unc-1 encodes a stomatin protein and is widely expressed in almost all neurons and many other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "unc-1 encodes a stomatin protein and is widely expressed in almost all neurons and many other cells (Chen et al., 2007; Rajaram et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4b050003-ac79-40be-9b31-36623ed73243",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C46",
+      "claim": "Expression of unc-1 cDNA in all neurons or in RME neurons did not rescue the RME defects in unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, although expressing unc-1(cDNA) in all tissues (Pdpy-30:: unc-1(cDNA)) rescued unc-1(lf) phenotypes, expression of unc-1 cDNA in all neurons (Punc-33:: unc-1(cDNA)) or in RME neurons (Punc-25:: unc-1(cDNA)) did not rescue the RME defects in unc-1(lf) animals (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "903e2536-345f-4bf5-9046-cdaa0e69b9d1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C47",
+      "claim": "unc-1 functions either outside of the nervous system or in both neurons and non-neuronal cells to regulate RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that unc-1 functions either outside of the nervous system or in both neurons and non-neuronal cells to regulate RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the tissue-specific rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "3fd3efea-488d-453d-a36a-8c6641f4b860",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C48",
+      "claim": "Expression of unc-1 cDNA in GLR cells did not restore the distribution of SNB-1::GFP in unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, expression of unc-1 cDNA in GLR cells did not restore the distribution of SNB-1::GFP in unc-1(lf) animals",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ec56a39b-a479-470f-842e-b6e19661409b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C49",
+      "claim": "Co-expression of unc-1 cDNA in both RME neurons and GLR cells significantly rescued unc-1(lf) phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "but co-expression of unc-1 cDNA in both RME neurons and GLR cells using any one of the four promoters significantly rescued unc-1(lf) phenotypes (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "6a9a146f-acec-479b-986c-63d61e605bed",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C50",
+      "claim": "Expression of unc-1(cDNA) in muscle, in both muscle and RME neurons, or in both muscle and GLR cells did not show any rescue ability.",
+      "claim_type": "EXPLICIT",
+      "source": "As controls, expression of unc-1(cDNA) in muscle (Pmyo-3:: unc-1(cDNA)), in both muscle and RME neurons (Pmyo-3:: unc-1(cDNA)+ Punc-25:: unc-1(cDNA)), or in both muscle and GLR cells (Pmyo-3:: unc-1(cDNA)+ Pgly-18:: unc-1(cDNA)) did not show any rescue ability (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "040c0f2d-0c42-4548-a032-52d7e561c9f4",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C51",
+      "claim": "Mosaic animals lacking unc-1(+) in RME neurons, GLR cells, or both did not show rescue of unc-1(lf) RME phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "After screening 1037 transgenic animals, we were able to uncover 19 of them lost unc-1(+) in RME neurons, 13 of them lacking unc-1(+) expression in GLR cells, and one animal without unc-1(+) expression in both RME neurons and GLR cells. None of these mosaic animals showed rescue of unc-1(lf) RME phenotypes (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mosaic analysis data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "513c3737-20ac-4b82-a046-89b20b327bdc",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C52",
+      "claim": "Gap junctions between GLR cells and RME neurons play critical roles in regulating RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that gap junctions between GLR cells and RME neurons play critical roles in regulating RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from tissue-specific rescue and mosaic analysis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f9e8e1c3-09aa-4f6a-b59a-8304d7ba3535",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C53",
+      "claim": "The innexin family of gap junction proteins has 25 members in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The innexin family of gap junction proteins has 25 members in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans innexins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "eecda774-85c0-456d-8e44-255b1da62615",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C54",
+      "claim": "Only two innexins, unc-7 and unc-9, are expressed in RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two of them, unc-7 and unc-9, are expressed in RME neurons, and ten innexins, including unc-7, appear to be expressed in GLR cells (Altun et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8c0eb545-356d-44e9-ad47-f53b246a48f1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C55",
+      "claim": "Ten innexins, including unc-7, appear to be expressed in GLR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and ten innexins, including unc-7, appear to be expressed in GLR cells (Altun et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "30e91e6b-a743-4cec-86cc-75bb1556f2f3",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C56",
+      "claim": "Single mutants of unc-7 and unc-9 had lower percentages of animals with SNB-1::GFP mislocalization defects when compared with unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Single mutants of unc-7 and unc-9 had lower percentages of animals with SNB-1::GFP mislocalization defects when compared with unc-1(lf) animals, and unc-7(lf) phenotype was stronger than that of unc-9(lf) (Figure 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "debb6cb7-534b-4c36-858f-2435a2271e3f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C57",
+      "claim": "unc-7(lf) phenotype was stronger than that of unc-9(lf).",
+      "claim_type": "EXPLICIT",
+      "source": "and unc-7(lf) phenotype was stronger than that of unc-9(lf) (Figure 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ea10d8b4-4d0f-42b0-a401-5678113162c7",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C58",
+      "claim": "unc-7 unc-9 double mutants had the same degree of SNB-1::GFP defects as those in unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We further generated double mutants of unc-7 and unc-9 and found that these animals had the same degree of SNB-1::GFP defects as those in unc-1(lf) animals (Figure 2C and D and Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 2C and D and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2447cb37-bd37-4bb2-852e-9d82c98e74a3",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C59",
+      "claim": "Expression of unc-7 cDNA in GLR cells or RME neurons only partially rescued unc-7(lf) phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, expression of unc-7 cDNA in GLR cells or RME neurons only partially rescued unc-7(lf) phenotypes, and expression of unc-7 cDNA in both GLR cells and RME neurons completely restored SNB-1::GFP distribution in unc-7(lf) animals (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4ec732b3-63d1-4c42-b2e6-9b44d669b07e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C60",
+      "claim": "Expression of unc-7 cDNA in both GLR cells and RME neurons completely restored SNB-1::GFP distribution in unc-7(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and expression of unc-7 cDNA in both GLR cells and RME neurons completely restored SNB-1::GFP distribution in unc-7(lf) animals (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "76987087-a174-4ac7-b8bf-c7ca0cc989d9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C61",
+      "claim": "unc-7 has been reported to regulate presynaptic development in a gap-junction-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its function as a gap junction subunit, unc-7 has been reported to regulate presynaptic development in a gap-junction-independent manner (Yeh et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4a075ee1-2fb0-45be-b34f-0ef0b41e3d4f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C62",
+      "claim": "The C191A mutation specifically interrupts UNC-7 gap junction functions, but not its ability to regulate presynaptic development.",
+      "claim_type": "EXPLICIT",
+      "source": "The C191A mutation has been shown to specifically interrupt UNC-7 gap junction functions, but not its ability to regulate presynaptic development (Bouhours et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "074eff8c-ec8e-4a78-ba0d-5d4e6b578d66",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C63",
+      "claim": "Ubiquitous expression of unc-7(C191A) failed to rescue unc-7(lf) phenotypes, while expression of wild-type unc-7 cDNA completely restored SNB-1::GFP distribution in unc-7(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2F, ubiquitous expression of unc-7(C191A) (Pdpy-30:: unc-7(C191A)) failed to rescue unc-7(lf) phenotypes, while expression of wild-type unc-7 cDNA (Pdpy-30:: unc-7) completely restored SNB-1::GFP distribution in unc-7(lf) animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2370ebac-0f84-4ce7-9afe-6d1343350207",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C64",
+      "claim": "GLR-RME gap junctions play an important role in regulating RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these data suggest that GLR-RME gap junctions play an important role in regulating RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genetic and rescue experiments with gap junction mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "665c8a6d-0e25-422e-9ac9-e1a6d1ef04f2",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C65",
+      "claim": "Axonal microtubules are all orientated with plus-end-out, while dendritic microtubules are either a mixture of plus-end-out and minus-end-out or minus-end-out only.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal microtubules are all orientated with plus-end-out, while dendritic microtubules are either a mixture of plus-end-out and minus-end-out or minus-end-out only (Barnes and Polleux, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "be2fd927-3d72-4651-8473-cac7450426d7",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C66",
+      "claim": "In RME D/V neurites of control animals, microtubules showed a mixture of plus-end-out (76%) and minus-end-out (24%).",
+      "claim_type": "EXPLICIT",
+      "source": "Using an EBP-2::GFP reporter expressed only in RME neurons, we found that in RME D/V neurites of control animals, microtubules showed a mixture of plus-end-out (76%) and minus-end-out (24%) (Figure 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EBP-2::GFP dynamics data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "43c128cf-35eb-4b0e-8ff2-9a47eb39e488",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C67",
+      "claim": "In unc-1 and unc-7 unc-9 mutants, almost all microtubules were plus-end-out (unc-1: 99%, unc-7 unc-9: 96%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in unc-1 and unc-7 unc-9 mutants, almost all microtubules were plus-end-out (unc-1: 99%, unc-7 unc-9: 96%), which mirrors the microtubule assembly found in axons (Figure 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EBP-2::GFP dynamics data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "33fe6b90-45e7-444e-88b1-6c9256aeeacb",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C68",
+      "claim": "The microtubule polarity in unc-1 and unc-7 unc-9 mutants mirrors the microtubule assembly found in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "which mirrors the microtubule assembly found in axons (Figure 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison with known axonal microtubule polarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8324a432-77eb-486e-a848-eea0cafb205a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C69",
+      "claim": "unc-1(lf) mutants do not affect the distribution or the number of microtubules in RME D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "While GLR-RME gap junctions play important roles in regulating microtubule polarity, unc-1(lf) mutants do not seem to affect the distribution or the number of microtubules in RME D/V neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMTB::GFP imaging data shown in Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "59b8bc83-564c-4be3-b90e-b50cec6af873",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C70",
+      "claim": "unc-1(lf) did not change the overall distribution or intensity of EMTB::GFP in RME D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 1A and B, unc-1(lf) did not change the overall distribution or intensity of EMTB::GFP in RME D/V neurites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMTB::GFP imaging data shown in Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "9afca532-6d48-4d2b-a733-5367d96fd61f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C71",
+      "claim": "The CDK-5 pathway, consisted of cdka-1/p35 and cdk-5, has been shown to regulate microtubule polarity in C. elegans neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans neurons, the CDK-5 pathway, consisted of cdka-1/p35 and cdk-5, has been shown to regulate microtubule polarity (Goodwin et al., 2012; Ou et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "3aa9e669-3362-4a63-8ee6-848c82b9eac3",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C72",
+      "claim": "cdk-5(lf) animals had similar microtubule polarity defects in RME D/V neurites as those in unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cdk-5(lf) animals had similar microtubule polarity defects in RME D/V neurites as those in unc-1(lf) animals (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EBP-2::GFP dynamics data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "779a6028-722b-4702-beac-9fb770f42a7d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C73",
+      "claim": "Loss-of-function mutations of cdk-5 or its upstream regulator cdka-1/p35 induced misaccumulation of SNB-1::GFP in RME D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "and loss-of-function mutations of cdk-5 or its upstream regulator cdka-1/p35 induced misaccumulation of SNB-1::GFP in RME D/V neurites (Figure 4B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f1b8165c-f5b9-4523-84b8-d85ed8219073",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C74",
+      "claim": "Expression of cdk-5 cDNA in RME neurons rescued cdk-5(lf) phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of cdk-5 cDNA in RME neurons rescued cdk-5(lf) phenotypes, supporting the conclusion that the CDK-5 pathway cell-autonomously regulates RME axon specification (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "484737fc-6440-4ab1-9e6a-c91d7f81c2bb",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C75",
+      "claim": "The CDK-5 pathway cell-autonomously regulates RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting the conclusion that the CDK-5 pathway cell-autonomously regulates RME axon specification (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the rescue experiment showing that expression of cdk-5 in RME neurons rescues the phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "911568f2-6617-4f91-88aa-fece5eeb284c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C76",
+      "claim": "Almost all unc-1;cdka-1 and unc-1;cdk-5 animals had defects in RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to unc-1(lf) animals, almost all unc-1;cdka-1 and unc-1;cdk-5 animals had defects in RME axon specification (Figure 3\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "5835cff6-be95-4874-bfa8-6bfdeb0d454d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C77",
+      "claim": "unc-1;cdka-1 and unc-1;cdk-5 double mutants showed a similar number of SNB-1::GFP puncta in RME D neurites as those in single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and these double mutants showed a similar number of SNB-1::GFP puncta in RME D neurites as those in single mutants (Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2508f7fe-ba1d-45ca-a7af-0d1709249654",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C78",
+      "claim": "The CDK-5 pathway genetically acts in the same pathway with GLR-RME gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the CDK-5 pathway genetically acts in the same pathway with GLR-RME gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genetic epistasis experiments showing no enhancement in double mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "72496ae2-ee35-4ddc-b616-0d9e8c2c1078",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C79",
+      "claim": "Double mutants of unc-7;cdk-5 or unc-7;cdka-1 had a similar degree of SNB-1::GFP mislocalization defects as those in unc-7(lf) single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the genetic interactions between unc-7 and the CDK-5 pathway and found that double mutants of unc-7;cdk-5 or unc-7;cdka-1 had a similar degree of SNB-1::GFP mislocalization defects as those in unc-7(lf) single mutants, further supporting the conclusion that the CDK-5 pathway and GLR-RME gap junctions function in the same genetic pathway (Figure 4D, Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4D and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f2a4ed44-84bd-4a61-938d-1db571bf736d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C80",
+      "claim": "The activation of CDK-5 is regulated by p25, a cleavage product of p35.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of CDK-5 is regulated by p25, a cleavage product of p35, and the production of p25 has been used to measure the activation of the p35-CDK-5 pathway (Dhavan and Tsai, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8080eb15-1603-47f9-bed2-663e788822f0",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C81",
+      "claim": "The production of p25 has been used to measure the activation of the p35-CDK-5 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "and the production of p25 has been used to measure the activation of the p35-CDK-5 pathway (Dhavan and Tsai, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d3689d57-0e66-4e48-9b6e-7af7de488fea",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C82",
+      "claim": "A cleaved protein fragment of CDKA-1 was detected in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In Western blot analyses, we detected a cleaved protein fragment of CDKA-1 in control animals (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "79658594-5b00-4794-844d-4b1d3dbd32d1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C83",
+      "claim": "The cleavage of CDKA-1 was largely eliminated in unc-1 single and unc-9 unc-7 double mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the cleavage of CDKA-1 was largely eliminated in unc-1 single and unc-9 unc-7 double mutant animals, indicating that GLR-RME gap junctions indeed play an important role in activating the CDK-5 pathway in RME neurons (Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "30ced0ed-226d-459a-8078-bc47b96c8816",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C84",
+      "claim": "GLR-RME gap junctions play an important role in activating the CDK-5 pathway in RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that GLR-RME gap junctions indeed play an important role in activating the CDK-5 pathway in RME neurons (Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that gap junction mutants block CDKA-1 cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "8888a0c3-946a-43b2-b0a8-efb55104ec09",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C85",
+      "claim": "Expression of mouse p25, the cleaved active version of p35, but not p35 in RME neurons suppressed unc-1(lf) phenotypes in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of mouse p25, the cleaved active version of p35, but not p35 in RME neurons suppressed unc-1(lf) phenotypes in a dose-dependent manner, further supporting that the cdka-1/p35-cdk-5 pathway acts downstream of GLR-RME gap junctions (Figure 4G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "18f792e8-2cec-4ea6-8759-92548fa0ba21",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C86",
+      "claim": "The cdka-1/p35-cdk-5 pathway acts downstream of GLR-RME gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "further supporting that the cdka-1/p35-cdk-5 pathway acts downstream of GLR-RME gap junctions (Figure 4G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that activating the CDK-5 pathway suppresses gap junction mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7ad9c694-7aed-43de-b204-205b9a4e6b2c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C87",
+      "claim": "The cleavage of p35 to p25 is mediated by the calcium-dependent cysteine protease calpain.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleavage of p35 to p25 is mediated by the calcium-dependent cysteine protease calpain (Dhavan and Tsai, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "dd7ed2a1-98a7-411d-b7dd-b36ef0d020fb",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C88",
+      "claim": "The cleavage of CDKA-1/p35 was suppressed by both BAPTA-AM and PD150606 treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleavage of CDKA-1/p35 was suppressed by both BAPTA-AM and PD150606 treatments (Figure 5A and B), which confirms the important role of calcium and calpain in the regulation of the CDK-5 pathway in RME neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "74be7d21-3921-4a01-a665-da6946f22edf",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C89",
+      "claim": "Calcium and calpain play important roles in the regulation of the CDK-5 pathway in RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "which confirms the important role of calcium and calpain in the regulation of the CDK-5 pathway in RME neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that calcium antagonist and calpain inhibitor suppress CDKA-1 cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "a70ac03d-9412-4d41-975f-24b61c4471c2",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C90",
+      "claim": "In animals treated with BAPTA-AM or PD150606, a similar SNB-1::GFP distribution defect was observed as seen in cdka-1(lf) and cdk-5(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals treated with BAPTA-AM or PD150606, we observed a similar SNB-1::GFP distribution defect as seen in cdka-1(lf) and cdk-5(lf) animals (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "116bdeec-5a5e-412b-add6-c8b8a22b5c2d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C91",
+      "claim": "Expression of a calcium buffer protein calbindin D28K in C. elegans neurons could lower intracellular calcium concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that expression of a calcium buffer protein calbindin D28K in C. elegans neurons could lower intracellular calcium concentration (Schumacher et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d1315b65-4647-47d3-ae4f-e6be2d34ef89",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C92",
+      "claim": "Expression of calbindin D28K in RME neurons caused RME defects at a similar level as BAPTA-AM treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To show the importance of calcium in RME neurons, we expressed calbindin D28K in RME neurons and found that such expression caused RME defects at a similar level as BAPTA-AM treated animals (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "eabd6df0-5178-402e-9c9a-18c8a948e091",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C93",
+      "claim": "Expression of calbindin D28K only in GLR cells caused the same extent of defects as animals expressing calbindin D28K in RME neurons or in both GLR cells and RME neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, expression of calbindin D28K only in GLR cells (Pgly-18 and Pegl-6) caused the same extent of defects as animals expressing calbindin D28K in RME neurons or in both GLR cells and RME neurons (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d8b85150-e40f-44fa-bda4-5186cd8caf20",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C94",
+      "claim": "Expression of calbindin D28K in muscle did not cause any obvious RME defects.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, expression of calbindin D28K in muscle did not cause any obvious RME defects (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "a426c9b8-e5c9-41e7-a8ac-913b5c86d6cc",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C95",
+      "claim": "GLR cells can regulate RME calcium concentration through GLR-RME gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support that the GLR cells can regulate RME calcium concentration through GLR-RME gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that lowering calcium in GLR cells causes RME defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ae2ce858-5b60-418f-9701-80357ce1cb74",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C96",
+      "claim": "Microtubule polarity was changed to be mostly plus-end-out in D/V neurites in animals expressing calbindin D28K in GLR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To further illustrate the effect of lowering GLR calcium on RME axon specification, we tested microtubule polarity in animals expressing calbindin D28K in GLR cells. Consistent with our observation using the SNB-1::GFP marker, microtubule polarity was changed to be mostly plus-end-out in D/V neurites in these transgenic animals (Figure 5E plus-end-out: 96%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EBP-2::GFP dynamics data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2584fa83-850e-4bfa-aacd-8214a75c66cf",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C97",
+      "claim": "Mutating cdk-5 in transgenic animals expressing calbindin D28K in GLR cells did not enhance the RME SNB-1::GFP phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutating cdk-5 in transgenicanimals expressing calbindin D28K in GLR cells did not enhance the RME SNB-1::GFP phenotypes, and activating the CDK-5 pathway in RME neurons by overexpressing p25 suppressed the phenotypes in those transgenic animals (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4791b0bf-4b2e-401c-a3e0-39106ec560d9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C98",
+      "claim": "Activating the CDK-5 pathway in RME neurons by overexpressing p25 suppressed the phenotypes in transgenic animals expressing calbindin D28K in GLR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and activating the CDK-5 pathway in RME neurons by overexpressing p25 suppressed the phenotypes in those transgenic animals (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2dea3fe2-e92b-4301-8473-69d0fb0c4317",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C99",
+      "claim": "GLR cells can regulate RME calcium concentration through gap junctions, and such regulation can modulate the activation of the CDK-5 pathway to affect RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we show that GLR cells can regulate RME calcium concentration through gap junctions, and such regulation can modulate the activation of the CDK-5 pathway to affect RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion inferred from multiple experiments involving calcium manipulation and CDK-5 pathway activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "1864a60f-5b91-4dff-813d-71099bcdeb76",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C100",
+      "claim": "clp-4(lf) displayed a similar degree of RME defects as seen in cdk-5(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To reveal which calpain is involved in RME axon specification, we tested all seven calpains (clp-1-clp-7). We found that clp-4(lf) displayed a similar degree of RME defects as seen in cdk-5(lf) mutants, while mutations or RNAi of others did not produce obvious phenotypes (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "468422ce-dc1e-4d3b-89bd-7d36ebd14a3f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C101",
+      "claim": "Mutations or RNAi of calpains other than clp-4 did not produce obvious RME phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "while mutations or RNAi of others did not produce obvious phenotypes (Figure 5D)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data testing all seven calpains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7c3572dd-6193-48f5-898a-6bae5aa001c1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C102",
+      "claim": "clp-4 cell-autonomously regulates RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also showed that clp-4 cell-autonomously regulates RME axon specification (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tissue-specific rescue experiment data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "5b774932-5a70-4f7f-99f5-c51e29ae6492",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C103",
+      "claim": "Double mutants of clp-4 with unc-1 or unc-7 displayed RME polarity defects to a similar extent as those in single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Double mutants of clp-4 with unc-1 or unc-7 displayed RME polarity defects to a similar extent as those in single mutants, supporting the conclusion that clp-4 functions in the GLR-RME gap junction-cdk-5 pathway to regulate RME axon specification (Figure 5E, Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 5H and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0144561e-9bf8-44c2-bc8e-a8ea26923d85",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C104",
+      "claim": "clp-4 functions in the GLR-RME gap junction-cdk-5 pathway to regulate RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting the conclusion that clp-4 functions in the GLR-RME gap junction-cdk-5 pathway to regulate RME axon specification (Figure 5E, Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from genetic epistasis experiments showing no enhancement in double mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "3ab5cb70-abbd-4e7d-8f98-b0b20756eb2c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C105",
+      "claim": "slo-1 encodes a voltage-gated potassium channel.",
+      "claim_type": "EXPLICIT",
+      "source": "slo-1 encodes a voltage-gated potassium channel, and mutation of slo-1 has been shown to increase neuronal activity, possibly calcium (Wang et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "01da9466-5b10-422a-909a-2e5081d965e1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C106",
+      "claim": "Mutation of slo-1 has been shown to increase neuronal activity, possibly calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "and mutation of slo-1 has been shown to increase neuronal activity, possibly calcium (Wang et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "2f581d3d-e052-4ba8-9aa5-7151cc3c6e5e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C107",
+      "claim": "slo-1(lf) partially suppressed RME phenotypes in unc-1(lf) and transgenic animals expressing calbindin D28K in GLR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that slo-1(lf) partially suppressed RME phenotypes in unc-1(lf) and transgenic animals expressing calbindin D28K in GLR cells (Figure 6A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "95d80b75-635f-4378-a323-b2f94bec3ee4",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C108",
+      "claim": "slo-1(lf) suppressed both the microtubule polarity defects and the blockage of CDKA-1 cleavage in unc-1(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, slo-1(lf) suppressed both the microtubule polarity defects and the blockage of CDKA-1 cleavage in unc-1(lf) animals (Figure 6B,C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EBP-2::GFP dynamics data and Western blot data shown in Figure 6B, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "bdc632f9-6570-4c7a-8df5-15a48a120491",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C109",
+      "claim": "Calcium influx from GLR cells likely plays a permissive rather than an instructive role in RME axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that calcium influx from GLR cells likely plays a permissive rather than an instructive role in RME axon specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that increasing neuronal activity/calcium can suppress gap junction mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "26c0407c-8351-4027-bb2a-150227f37642",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C110",
+      "claim": "During development, the influx of calcium from GLR cells to RME neurons through gap junctions can induce the activation of the CDK-5 pathway to guide microtubule assembly and axon specification.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we propose that during development, the influx of calcium from GLR cells to RME neurons through gap junctions can induce the activation of the CDK-5 pathway to guide microtubule assembly and axon specification (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "58bd4cf7-0349-40cd-b3e2-7b2af665a1e9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C111",
+      "claim": "RME neurons form transient synapses at the end of D/V neurites at the L1 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous studies, we show that RME neurons form transient synapses at the end of D/V neurites at the L1 stage, and the cell death (CED) pathway can regulate the elimination of those transient synapses through cleavage of a F-actin severing protein GSNL-1/gelsolin (Meng et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "afd3640e-8f8b-4c6b-b9b5-61823250d70b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C112",
+      "claim": "The cell death (CED) pathway can regulate the elimination of transient synapses through cleavage of a F-actin severing protein GSNL-1/gelsolin.",
+      "claim_type": "EXPLICIT",
+      "source": "and the cell death (CED) pathway can regulate the elimination of those transient synapses through cleavage of a F-actin severing protein GSNL-1/gelsolin (Meng et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "a30be45c-9d46-4171-8a89-b93f05333b37",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C113",
+      "claim": "CED mutants (egl-1(lf), ced-9(gf), ced-3(lf) and ced-4(lf)) or gsnl-1(lf) prevent the elimination of transient synapses in D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "CED mutants (egl-1(lf), ced-9(gf), ced-3(lf) and ced-4(lf)) or gsnl-1(lf) prevent the elimination of transient synapses in D/V neurites, and as a result SNB-1::GFP puncta are observed at the end of D/V neurites in adult animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously published work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "eff36d00-58ea-419a-b9ed-595771d05e36",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C114",
+      "claim": "The phenotypes of gap junction mutants (unc-1, unc-7, unc-9, unc-7 unc-9) are different from those of CED and gsnl-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypes of gap junction mutants (unc-1, unc-7, unc-9, unc-7 unc-9) are different from those of CED and gsnl-1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of phenotypes described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "56f7b198-737c-4ded-9b2b-9cec7cd5b838",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C115",
+      "claim": "Gap junction mutant animals already exhibit differences with control animals in the L1 stage, as they have SNB-1::GFP puncta along the D/V neurites in addition to those at the end of D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, gap junction mutant animals reported here already exhibit differences with control animals in the L1 stage, as they have SNB-1::GFP puncta along the D/V neurites in addition to those at the end of D/V neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations comparing gap junction mutants with controls at different developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "41af7ef6-512f-4d22-9070-1bf5371c5177",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C116",
+      "claim": "When animals reach the adult stage, CED or gsnl-1(lf) animals only have SNB-1::GFP at the end of D/V neurites, but gap junction mutants have SNB-1::GFP along the entire D/V neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "When animals reach the adult stage, CED or gsnl-1(lf) animals only have SNB-1::GFP at the end of D/V neurites, but gap junction mutants have SNB-1::GFP along the entire D/V neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations comparing different mutants at the adult stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "5192c6e7-34aa-4c0f-ab50-51c5705bf98d",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C117",
+      "claim": "Gap junction mutants have defects of SNB-1::GFP distribution in axonal processes, while no such phenotypes were observed in CED or gsnl-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While gap junction mutants have defects of SNB-1::GFP distribution in axonal processes, no such phenotypes were observed in CED or gsnl-1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations comparing different mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "4e6f9c1f-4474-4a69-be24-fb2de8251c7e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C118",
+      "claim": "CED or gsnl-1 mutant animals have similar microtubule polarity in D/V neurites as that in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from gap junction mutants, CED or gsnl-1 mutant animals have similar microtubule polarity in D/V neurites as that in control animals (data no shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations (though data not shown in the manuscript).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ff4f76b7-2801-446e-b6a3-fffe102daa6a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C119",
+      "claim": "GLR-RME gap junctions are involved in regulating RME axon specification rather than synapse elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "With these differences and other evidence presented in this study, we conclude that GLR-RME gap junctions are involved in regulating RME axon specification rather than synapse elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from comparing gap junction mutant phenotypes with CED and gsnl-1 mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "b37cf17a-46bb-4d62-bfce-fff03ae70614",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C120",
+      "claim": "The presence of gap junctions between RME neurons and GLR cells has been well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the presence of gap junctions between RME neurons and GLR cells has been well documented (White et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "a0198f2f-c08d-4228-bf55-0b0036dbbf12",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C121",
+      "claim": "GLR cells are classified as glial cells in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "GLR cells are classified as glial cells in C. elegans (Oikonomou and Shaham, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ab3a9b2c-fe80-49e1-9643-0cf31d5f5d05",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C122",
+      "claim": "GLR cells are derived from a muscle rather than neural lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "but since GLR cells are derived from a muscle rather than neural lineage, some studies classify them as a part of the mesodermal/muscle system instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GLR cell lineage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "d5dcfc91-39e2-471b-bbfb-fadafb8c6432",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C123",
+      "claim": "In the mammalian cortex, most neurons undergo axon-dendrite polarization during migration along the radial glia.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mammalian cortex, most neurons undergo axon-dendrite polarization during migration along the radial glia (Barnes and Polleux, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0f2fb135-a2e7-4501-814d-8a67bc297c5c",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C124",
+      "claim": "Radial glia, neural precursors, and immature neurons all express multiple connexins.",
+      "claim_type": "EXPLICIT",
+      "source": "Radial glia, neural precursors, and immature neurons all express multiple connexins, and gap junctions between radial glia and between neurons have been shown to be critical in neurogenesis and circuit assembly (Belousov and Fontes, 2013; Connors and Long, 2004; Kunze et al., 2009; Li et al., 2012; Yu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "64d7af8e-c17c-4d92-acde-e3e4cd57c46e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C125",
+      "claim": "Gap junctions between radial glia and between neurons have been shown to be critical in neurogenesis and circuit assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "and gap junctions between radial glia and between neurons have been shown to be critical in neurogenesis and circuit assembly (Belousov and Fontes, 2013; Connors and Long, 2004; Kunze et al., 2009; Li et al., 2012; Yu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "c1f2352e-b4f4-4a35-8c13-0f524e15581f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C126",
+      "claim": "Radial glia are coupled with neural precursors through gap junctions at the ventricular and subventricular zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Radial glia are also coupled with neural precursors through gap junctions at the ventricular and subventricular zones (Bittman et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f57abf8e-4493-40bd-8a29-2dfefa11dda4",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C127",
+      "claim": "Radial glia may regulate neural precursors through gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "raising the possibility that radial glia may regulate neural precursors through gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that radial glia are coupled with neural precursors through gap junctions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "c4032c97-b7df-44c0-bc36-3f29ff4ea217",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C128",
+      "claim": "Asymmetric activation of intracellular signaling pathways is the major driving force in determining the fate of axons and dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the classic in vitro culture system developed by Banker et al. (Craig and Banker, 1994; Goslin and Banker, 1989), numerous studies have revealed that asymmetric activation of intracellular signaling pathways is the major driving force in determining the fate of axons and dendrites (Barnes and Polleux, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "374a6f55-61f4-49c0-880d-95e6c6f0dcbe",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C129",
+      "claim": "Extracellular cues play instructive roles in regulating neuronal polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence also shows that extracellular cues play instructive roles in regulating neuronal polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on recent evidence from the field, as described in the following sentences with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "853e7342-e5fc-4d25-a3ad-2ef6fd2bca9a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C130",
+      "claim": "In cultured hippocampal neurons plated on striped substrates coated with Laminin and NgCAM, the first neurite that contacts the boundary between two stripes with different substrates always becomes the axon regardless of the initial substrate that the neurite grows on.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured hippocampal neurons plated on striped substrates coated with Laminin and NgCAM, the first neurite that contacts the boundary between two stripes with different substrates always becomes the axon regardless of the initial substrate that the neurite grows on (Esch et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "1abd4d36-8dfb-47a5-8a8a-1507d3554034",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C131",
+      "claim": "Extracellular BDNF could determine which neurites will become the axon by activating the LKB1-SAD pathway in cultured neurons and the mammalian cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular BDNF could determine which neurites will become the axon by activating the LKB1-SAD pathway in cultured neurons and the mammalian cortex (Barnes et al., 2007; Shelly et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "e2524538-acc0-41f4-9ad8-adda5e62b1f1",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C132",
+      "claim": "In Xenopus retinal ganglion cells, extracellular cues from basal lamina play an essential role in establishing neuronal polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus retinal ganglion cells, extracellular cues from basal lamina play an essential role in establishing neuronal polarity (Zolessi et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "c15d755b-8888-4596-b9d1-3b80e88b9060",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C133",
+      "claim": "Studies in C. elegans highlight the important roles of guidance cues, such as Wnt and Netrin, in instructing neuronal polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, studies in C. elegans highlight the important roles of guidance cues, such as Wnt and Netrin, in instructing neuronal polarity (Hilliard and Bargmann, 2006; Poon et al., 2008; Prasad and Clark, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "9fc4128d-7948-4be3-aef6-9fc5d43af237",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C134",
+      "claim": "Gap junction-mediated calcium signaling plays important roles in development and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Gap junction-mediated calcium signaling plays important roles in development and disease (Chuang et al., 2007; Nakase and Naus, 2004; Schumacher et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "6011c849-60b6-4fa4-87fc-b70f3750f092",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C135",
+      "claim": "Gap junctions can mediate the exchange of small molecules that are less than 1 kDa, such as IP3, cAMP, and cGMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides calcium, gap junctions can mediate the exchange of small molecules that are less than 1 kDa, such as IP3, cAMP, and cGMP (Goodenough and Paul, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "508c10bb-9fab-4ec1-bab0-b245320a7fec",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C136",
+      "claim": "Gap junction channels directly bind to a large group of proteins, including Zona occludens-1(ZO-1), SRC, PKA, PKC, MAP Kinases, Cadherin, GTPase, phosphatases, microtubules, and F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Gap junction channels also directly bind to a large group of proteins, including Zona occludens-1(ZO-1), SRC, PKA, PKC, MAP Kinases, Cadherin, GTPase, phosphatases, microtubules, and F-actin (Giepmans, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "783feec4-eae7-4042-a179-d4262674332a",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C137",
+      "claim": "The relatively weaker phenotypes observed in mutants affecting the clp-4/calpain-p35-CDK-5 pathway suggest that GLR-RME gap junctions may regulate multiple downstream pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively weaker phenotypes observed in mutants affecting the clp-4/calpain-p35-CDK-5 pathway suggest that GLR-RME gap junctions may regulate multiple downstream pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation of weaker phenotypes in pathway mutants compared to gap junction mutants.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "9a15afc5-139d-40b3-9f0d-bb1d421c5ff9",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C138",
+      "claim": "Many regulators of neuronal polarity, such as cAMP, cGMP, Cadherin, MAP kinases, and GTPases, have been shown to be modulated by gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that many regulators of neuronal polarity, such as cAMP, cGMP, Cadherin, MAP kinases, and GTPases, have been shown to be modulated by gap junctions (Barnes and Polleux, 2009; Giepmans, 2004; Goodenough and Paul, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0462e161-0be2-4969-81a0-630a8250825f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "claim_id": "C139",
+      "claim": "It is possible that GLR-RME gap junctions may regulate pathways involving cAMP, cGMP, Cadherin, MAP kinases, and GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "it is possible that GLR-RME gap junctions may regulate some of those pathways as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known functions of gap junctions and regulators of neuronal polarity.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ju1057 mutant was isolated in a genetic screen and identified as a loss-of-function allele of unc-1 based on complementation tests, sequencing showing an A248V mutation, and rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 provide converging genetic evidence that ju1057 is a loss-of-function allele of unc-1. The complementation tests (C32), sequencing data (C34), and rescue experiments (C35) are standard genetic approaches that collectively support this conclusion. The phenotypic characterization (C28-C30) is consistent with the genetic identity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "ea952e2b-3ce5-4793-b161-6259135163ea",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GLR-RME gap junctions regulate RME axon specification, as demonstrated by mislocalization of axonal markers (SNB-1, SYD-2, RAB-3) in gap junction mutants and tissue-specific rescue experiments showing that unc-1 must be expressed in both GLR cells and RME neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C37-C39 demonstrate axonal marker mislocalization in mutants. Claims C22, C46-C52 provide strong genetic evidence through tissue-specific rescue and mosaic analysis that unc-1 functions in both GLR cells and RME neurons. The mosaic analysis (C51) with 33 informative animals provides particularly compelling evidence. The convergence of marker mislocalization, genetic rescue, and mosaic data strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "66cdd876-5db6-4617-84a6-11bcd7551e00",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gap junction channels unc-7 and unc-9 mediate the GLR-RME gap junction function in RME axon specification, as unc-7 unc-9 double mutants phenocopy unc-1 mutants, and a gap junction-specific mutation (C191A) fails to rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C56-C58 show that unc-7 unc-9 double mutants have the same phenotype as unc-1 mutants, supporting genetic epistasis. Claims C59-C60 demonstrate that unc-7 must function in both cell types. Claims C61-C63 use a separation-of-function mutation (C191A) to specifically implicate gap junction function rather than other roles of unc-7. This multi-pronged genetic approach provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "dcdedea2-253e-404d-a621-6efffc07e6bc",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Disruption of GLR-RME gap junctions converts microtubule polarity in RME D/V neurites from mixed orientation (76% plus-end-out, 24% minus-end-out) to predominantly plus-end-out (99% in unc-1, 96% in unc-7 unc-9), resembling axonal microtubule organization, without affecting microtubule number or distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide quantitative EBP-2::GFP dynamics data showing the shift in microtubule polarity. The sample sizes (n=123 control, n=115 unc-1, n=110 unc-7 unc-9) are adequate. Claims C69-C70 show that overall microtubule distribution is unchanged using EMTB::GFP. The data clearly demonstrate a specific effect on polarity rather than general microtubule organization, supporting the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CDK-5 pathway (cdka-1/p35 and cdk-5) functions cell-autonomously in RME neurons and acts in the same genetic pathway as GLR-RME gap junctions to regulate RME axon specification, as shown by similar phenotypes and lack of enhancement in double mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 show that CDK-5 pathway mutants have similar phenotypes to gap junction mutants. Claim C74-C75 demonstrate cell-autonomous function through rescue experiments. Claims C76-C79 provide genetic epistasis data showing no enhancement in double mutants, supporting that they function in the same pathway. The genetic logic is sound and the data are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GLR-RME gap junctions activate the CDK-5 pathway by promoting cleavage of CDKA-1/p35, as demonstrated by Western blot showing reduced CDKA-1 cleavage in gap junction mutants and suppression of gap junction mutant phenotypes by expression of active p25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 provide Western blot evidence that CDKA-1 cleavage is reduced in gap junction mutants (Figure 4E-F). Claim C85 shows that expressing active p25 (but not p35) suppresses unc-1 phenotypes in a dose-dependent manner. These data provide biochemical and genetic evidence linking gap junctions to CDK-5 pathway activation. The Western blot quantification (C83, Figure 4F) shows three independent experiments, providing adequate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "57cb1412-9f6d-4e4a-8660-c4da3310250b",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GLR-RME gap junctions regulate RME axon specification through calcium-dependent activation of the CDK-5 pathway via calpain, as shown by suppression of CDKA-1 cleavage by calcium chelator and calpain inhibitor, and RME defects caused by expressing calcium buffer calbindin D28K in GLR cells that can be suppressed by activating CDK-5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 show that calcium chelator (BAPTA-AM) and calpain inhibitor (PD150606) block CDKA-1 cleavage and cause RME defects. Claims C92-C94 demonstrate that expressing calbindin D28K in GLR cells (but not muscle) causes RME defects. Claims C96-C98 show that this causes microtubule polarity defects and can be suppressed by activating CDK-5. The convergence of pharmacological, genetic, and biochemical evidence strongly supports the calcium-dependent mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The calpain clp-4 functions cell-autonomously in RME neurons and acts in the GLR-RME gap junction-CDK-5 pathway, as shown by similar phenotypes to cdk-5 mutants and lack of enhancement in double mutants with gap junction genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 show that clp-4 (but not other calpains) has RME defects similar to cdk-5 mutants. Claim C102 demonstrates cell-autonomous function through rescue. Claim C103 shows no enhancement in double mutants with unc-1 or unc-7, supporting epistasis. The genetic logic is sound, though the weaker phenotypes of clp-4 compared to gap junction mutants (noted in C137) suggest additional pathways may be involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "3feb8f16-43cf-41fb-b729-97b123eb028f",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Calcium from GLR cells plays a permissive rather than instructive role in RME axon specification, as loss of the potassium channel slo-1 (which increases neuronal activity/calcium) partially suppresses gap junction mutant phenotypes and restores CDKA-1 cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 show that slo-1 loss-of-function partially suppresses unc-1 phenotypes, microtubule polarity defects, and CDKA-1 cleavage blockage. This genetic suppression experiment provides evidence that increasing calcium can bypass the gap junction requirement, supporting a permissive role. However, the interpretation of 'permissive vs. instructive' (C109) is somewhat speculative and could benefit from additional experiments to definitively distinguish these mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "unc-1 functions during larval stages (L1-L4) to regulate the establishment of RME axon specification, as demonstrated by temperature-shift experiments with the cold-sensitive unc-1(hs1) allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 provide temperature-shift data showing that unc-1 function is required during larval stages but not before L1 or after L4. This temporal analysis is well-designed and the results are clear. The conclusion (C44) that unc-1 regulates establishment rather than maintenance is supported by the timing coinciding with RME D/V neurite development (cited from Meng et al., 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GLR-RME gap junctions regulate RME axon specification rather than synapse elimination, as gap junction mutants differ from CED and gsnl-1 mutants in timing of defects, distribution of SNB-1::GFP, and microtubule polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C118 provide multiple lines of evidence distinguishing gap junction mutant phenotypes from synapse elimination mutants: different timing (L1 vs. adult), different SNB-1 distribution patterns (along entire neurites vs. only at ends), presence of axonal process defects, and different microtubule polarity. These distinctions are clear and support the conclusion (C119) that gap junctions regulate axon specification rather than synapse elimination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    },
+    {
+      "id": "f70a2c23-9400-4168-978c-215b3826156e",
+      "content_id": "ea904da1-1be3-424b-a2b5-ff499d398557",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The RME circuit consists of four GABAergic motor neurons (RMED, RMEV, RMEL, RMER) with ring-shaped axonal processes and D/V neurites, where presynaptic markers normally accumulate only in axonal boutons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 describe the basic anatomy and marker distribution in RME neurons. These are supported by imaging data (Figure 1A-D) and citations to published literature (White et al., 1986; Song et al., 2010). This provides essential context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:38.939537Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83f925ad-a67f-45e7-8481-50e8b1a119cb",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "ae712fca-9951-47f0-90ed-869076b1a770",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "13b4371a-54ce-44d4-a732-eaa291d41cd7",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "61df7a8e-7367-47cc-848c-e694bd49feef",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "5fc28044-f77a-41bf-8624-5598c6e14d1d",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "d0a185d6-f867-43de-b38e-83a67816dd88",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "0cd7ced4-2d8c-4757-ae6f-ff7895ff2447",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "c2864afc-22c4-4af0-8362-39ceaf7768cd",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "7cd74ba5-5ff9-44bb-95a1-306233bb999f",
+      "result_id": "b54d3c0d-8e07-4091-b56b-a4e6eefeb6ca"
+    },
+    {
+      "claim_id": "ef1fd5e9-f6b0-4b2d-a406-b12677f82097",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "dd4efbcc-a509-4aa2-8d57-38599b99b111",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "2062f429-6f44-4e61-a1a1-7cbbed824dad",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "8e09d115-5656-433c-827a-7fc30f6d5624",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "f591bb5c-5b86-4110-b0fd-97829cc15a70",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "55125814-2a9e-4978-b6a8-5207ec333985",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "4b050003-ac79-40be-9b31-36623ed73243",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "903e2536-345f-4bf5-9046-cdaa0e69b9d1",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "3fd3efea-488d-453d-a36a-8c6641f4b860",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "ec56a39b-a479-470f-842e-b6e19661409b",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "6a9a146f-acec-479b-986c-63d61e605bed",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "040c0f2d-0c42-4548-a032-52d7e561c9f4",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "513c3737-20ac-4b82-a046-89b20b327bdc",
+      "result_id": "ea952e2b-3ce5-4793-b161-6259135163ea"
+    },
+    {
+      "claim_id": "700bbd45-7777-4fd2-9fa1-34bbe2e87c0b",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "eecda774-85c0-456d-8e44-255b1da62615",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "8c0eb545-356d-44e9-ad47-f53b246a48f1",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "30e91e6b-a743-4cec-86cc-75bb1556f2f3",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "debb6cb7-534b-4c36-858f-2435a2271e3f",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "ea10d8b4-4d0f-42b0-a401-5678113162c7",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "2447cb37-bd37-4bb2-852e-9d82c98e74a3",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "4ec732b3-63d1-4c42-b2e6-9b44d669b07e",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "76987087-a174-4ac7-b8bf-c7ca0cc989d9",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "4a075ee1-2fb0-45be-b34f-0ef0b41e3d4f",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "074eff8c-ec8e-4a78-ba0d-5d4e6b578d66",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "2370ebac-0f84-4ce7-9afe-6d1343350207",
+      "result_id": "66cdd876-5db6-4617-84a6-11bcd7551e00"
+    },
+    {
+      "claim_id": "6a9de7cc-5d9b-4113-af75-e0b9dc77387a",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "be2fd927-3d72-4651-8473-cac7450426d7",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "43c128cf-35eb-4b0e-8ff2-9a47eb39e488",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "33fe6b90-45e7-444e-88b1-6c9256aeeacb",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "8324a432-77eb-486e-a848-eea0cafb205a",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "59b8bc83-564c-4be3-b90e-b50cec6af873",
+      "result_id": "dcdedea2-253e-404d-a621-6efffc07e6bc"
+    },
+    {
+      "claim_id": "9afca532-6d48-4d2b-a733-5367d96fd61f",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "3aa9e669-3362-4a63-8ee6-848c82b9eac3",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "779a6028-722b-4702-beac-9fb770f42a7d",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "f1b8165c-f5b9-4523-84b8-d85ed8219073",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "484737fc-6440-4ab1-9e6a-c91d7f81c2bb",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "911568f2-6617-4f91-88aa-fece5eeb284c",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "5835cff6-be95-4874-bfa8-6bfdeb0d454d",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "2508f7fe-ba1d-45ca-a7af-0d1709249654",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "72496ae2-ee35-4ddc-b616-0d9e8c2c1078",
+      "result_id": "72d1cb53-b55c-46a3-8598-f320f6b8ecd3"
+    },
+    {
+      "claim_id": "e24cbcfe-f88c-435f-be20-bca3132deb4e",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "d3689d57-0e66-4e48-9b6e-7af7de488fea",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "79658594-5b00-4794-844d-4b1d3dbd32d1",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "30ced0ed-226d-459a-8078-bc47b96c8816",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "8888a0c3-946a-43b2-b0a8-efb55104ec09",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "18f792e8-2cec-4ea6-8759-92548fa0ba21",
+      "result_id": "7459fa70-d1cd-49ff-a13b-69b26bfc795b"
+    },
+    {
+      "claim_id": "7ad9c694-7aed-43de-b204-205b9a4e6b2c",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "dd7ed2a1-98a7-411d-b7dd-b36ef0d020fb",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "74be7d21-3921-4a01-a665-da6946f22edf",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "a70ac03d-9412-4d41-975f-24b61c4471c2",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "116bdeec-5a5e-412b-add6-c8b8a22b5c2d",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "d1315b65-4647-47d3-ae4f-e6be2d34ef89",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "eabd6df0-5178-402e-9c9a-18c8a948e091",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "d8b85150-e40f-44fa-bda4-5186cd8caf20",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "a426c9b8-e5c9-41e7-a8ac-913b5c86d6cc",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "ae2ce858-5b60-418f-9701-80357ce1cb74",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "2584fa83-850e-4bfa-aacd-8214a75c66cf",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "4791b0bf-4b2e-401c-a3e0-39106ec560d9",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "2dea3fe2-e92b-4301-8473-69d0fb0c4317",
+      "result_id": "57cb1412-9f6d-4e4a-8660-c4da3310250b"
+    },
+    {
+      "claim_id": "1864a60f-5b91-4dff-813d-71099bcdeb76",
+      "result_id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f"
+    },
+    {
+      "claim_id": "468422ce-dc1e-4d3b-89bd-7d36ebd14a3f",
+      "result_id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f"
+    },
+    {
+      "claim_id": "7c3572dd-6193-48f5-898a-6bae5aa001c1",
+      "result_id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f"
+    },
+    {
+      "claim_id": "5b774932-5a70-4f7f-99f5-c51e29ae6492",
+      "result_id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f"
+    },
+    {
+      "claim_id": "0144561e-9bf8-44c2-bc8e-a8ea26923d85",
+      "result_id": "0dde4c2b-77b5-47a9-837e-1bbe2fbb227f"
+    },
+    {
+      "claim_id": "b947cf7c-9a35-461e-b1ca-74be979ae03c",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "3ab5cb70-abbd-4e7d-8f98-b0b20756eb2c",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "01da9466-5b10-422a-909a-2e5081d965e1",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "2f581d3d-e052-4ba8-9aa5-7151cc3c6e5e",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "95d80b75-635f-4378-a323-b2f94bec3ee4",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "bdc632f9-6570-4c7a-8df5-15a48a120491",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "26c0407c-8351-4027-bb2a-150227f37642",
+      "result_id": "3feb8f16-43cf-41fb-b729-97b123eb028f"
+    },
+    {
+      "claim_id": "92332871-2867-4015-bcd9-d0d5a590496c",
+      "result_id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8"
+    },
+    {
+      "claim_id": "d1be077e-a34f-4779-8009-1a5c99288048",
+      "result_id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8"
+    },
+    {
+      "claim_id": "5512d3b1-bdd5-46b4-8e71-f2d4063a4141",
+      "result_id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8"
+    },
+    {
+      "claim_id": "f8e069bc-0faa-4bbc-80ba-df35bb5ce138",
+      "result_id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8"
+    },
+    {
+      "claim_id": "bab0e7fd-e46e-402d-bddd-52474d90f5eb",
+      "result_id": "9dd2fbba-a674-4d07-9849-dcc4aa371bb8"
+    },
+    {
+      "claim_id": "a30be45c-9d46-4171-8a89-b93f05333b37",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "eff36d00-58ea-419a-b9ed-595771d05e36",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "56f7b198-737c-4ded-9b2b-9cec7cd5b838",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "41af7ef6-512f-4d22-9070-1bf5371c5177",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "5192c6e7-34aa-4c0f-ab50-51c5705bf98d",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "4e6f9c1f-4474-4a69-be24-fb2de8251c7e",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "ff4f76b7-2801-446e-b6a3-fffe102daa6a",
+      "result_id": "aa40e9ec-c3a4-4c6c-84f1-50e281057495"
+    },
+    {
+      "claim_id": "82331771-fae9-4fec-8ff9-c54f1a7d5334",
+      "result_id": "f70a2c23-9400-4168-978c-215b3826156e"
+    },
+    {
+      "claim_id": "06718dcb-2fe9-453c-b009-c6fdc0919f4b",
+      "result_id": "f70a2c23-9400-4168-978c-215b3826156e"
+    },
+    {
+      "claim_id": "14011cd9-25ad-4d1d-88b8-8de94668bbc9",
+      "result_id": "f70a2c23-9400-4168-978c-215b3826156e"
+    }
+  ],
+  "comparisons": []
+}

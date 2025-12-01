@@ -1,0 +1,2021 @@
+{
+  "submission": {
+    "id": "d98edf4e-6085-417f-9529-cefcfa7b25d6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:21:12.375966Z",
+    "updated_at": "2025-11-30T20:21:12.375966Z"
+  },
+  "content": [
+    {
+      "id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "submission_id": "d98edf4e-6085-417f-9529-cefcfa7b25d6",
+      "content_type": "manuscript",
+      "content_text": "# Cellular resolution circuit mapping with temporal-focused excitation of soma-targeted channelrhodopsin\n\n## Authors\n\n- Christopher A Baker<sup>1</sup> ([ORCID: 0000-0002-0604-8449](https://orcid.org/0000-0002-0604-8449)) \u2020\n- Yishai M Elyada<sup>2</sup>\n- Andres Parra<sup>2</sup>\n- M McLean Bolton<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Disorders of Neural Circuit Function Max Planck Florida Institute for Neuroscience Jupiter United States\n2. Functional Architecture of the Cerebral Cortex Max Planck Florida Institute for Neuroscience Jupiter United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe describe refinements in optogenetic methods for circuit mapping that enable measurements of functional synaptic connectivity with single-neuron resolution. By expanding a two-photon beam in the imaging plane using the temporal focusing method and restricting channelrhodopsin to the soma and proximal dendrites, we are able to reliably evoke action potentials in individual neurons, verify spike generation with GCaMP6s, and determine the presence or absence of synaptic connections with patch-clamp electrophysiological recording.\n\n## Introduction\n\nThe synaptic organization of individual neurons into circuits is the physiological basis for the interpretation of sensory input and production of behavioral responses. Understanding the precise patterns of connectivity among the distinct types of neurons that comprise neural circuits is critical for elucidating circuit function and ultimately requires methods that can map functional connectivity with single-cell resolution. Optical activation of single neurons using two-photon excitation of caged neurotransmitters or optogenetic probes such as channelrhodopsin (ChR2) provides a powerful approach for assessing the synaptic connections of single neurons. In particular, optogenetic mapping utilizing ChR2 and the rapidly expanding family of opsin variants have increased the flexibility and precision of mapping paradigms. Variations in the single-channel properties of the opsins can be exploited to generate rapid action potential trains or sustained depolarizations (Mattis et al., 2012), and new red-shifted variants have facilitated excitation deeper in tissue and have enabled simultaneous optical control of two distinct neuronal populations (Klapoetke et al., 2014; Lin et al., 2013; Yizhar et al., 2011). In addition, genetic restriction of opsin expression using transgenic mouse lines enhances the ability to activate and assess the connectivity of specific cell types.\n\nDespite the great potential of optogenetics for mapping the synaptic connections of single neurons, there are multiple issues that have limited its effectiveness. First, two-photon activation of single neurons with ChR2 is complicated by its kinetics and low single-channel conductance. A diffraction-limited spot does not activate sufficient channels simultaneously to reliably bring neurons expressing ChR2 to action potential threshold. Several solutions have been implemented to address this. Rapid scanning of a diffraction-limited two-photon excitation spot across an opsin-expressing cell allows sufficient temporal integration to generate action potentials (Packer et al., 2012; Prakash et al., 2012; Rickgauer and Tank, 2009). Alternatively, scanless two-photon excitation by temporal focusing (Oron et al., 2005; Zhu et al., 2005) increases the number of simultaneously excited opsin molecules by expanding the beam in the imaging plane without sacrificing the optical sectioning of multiphoton microscopy (Andrasfalvy et al., 2010; Losonczy et al., 2010; Papagiakoumou et al., 2010; Rickgauer et al., 2014). The implementation of diffractive optical elements (Fino and Yuste, 2011; Nikolenko et al., 2007; Packer and Yuste, 2011) or spatial light modulators (Dal Maschio et al., 2010; Nikolenko et al., 2008; Packer et al., 2012, 2015; Papagiakoumou et al., 2010, 2009, 2008) has also allowed for more complicated excitation profiles that encompass multiple spots around a cell, ensembles of neurons, or particular branches of dendritic trees.\n\nWhile these approaches have made it possible to provide sufficient two-photon illumination to reliably drive action potentials, the ability to use optogenetic stimulation to selectively target single neurons remains challenging because the opsins are expressed throughout the dendritic and axon terminal fields, generating a potential confounding source of light-induced electrical responses. For example, it can be difficult to know whether a recorded electrophysiological event is due to stimulation of a presynaptic cell or 'direct' stimulation of a portion of the recorded cell\u2019s dendritic arbor. Although these possibilities can be distinguished by their kinetics, large amplitude direct responses may obscure simultaneous smaller synaptic events. This essentially leaves an indeterminate region of any circuit 'map' coinciding with the dendritic arbors of the recorded neuron, which can extend for 200 \u00b5m or more around the soma. In addition, the optogenetic approach could be compromised by unintended activation of fibers of passage or local axonal boutons, which are known to respond to temporal focusing of two-photon excitation (Andrasfalvy et al., 2010; Losonczy et al., 2010). Exclusion of opsins from axonal compartments has previously been achieved by fusing the opsin with targeting domains that bind to myosin Va motors necessary for transporting proteins into dendrites; one such motif from melanophilin is sufficient to exclude ChR2 from axons and enhance the resolution of neural circuit maps (Lewis et al., 2009). The resulting ChR2 distribution, however, remains throughout the dendritic tree and thus does not solve the problem of undesired direct activation of a neuron\u2019s processes while trying to stimulate other neurons in close proximity.\n\nTo overcome these limitations, we combined temporal focusing with spatial confinement of ChR2 expression to the neuronal cell body and proximal dendrites. Our alternative targeting approach took advantage of the Kv2.1 potassium channel, which has a particularly unique localization to clusters at the neuronal soma and proximal dendrites (Trimmer, 1991) achieved through a 66-amino acid domain in its C-terminus (Lim et al., 2000) that drives its association with myosin IIb and specific post-Golgi transport vesicles destined for the somatic compartment (Jensen et al., 2014). Furthermore, this targeting signal is sufficient to alter ChR2 trafficking in retinal ganglion cells (Wu et al., 2013). We have employed this approach to target ChR2 to the soma and proximal dendrites of neurons in somatosensory cortex and added a nuclear fluorescent tag to identify ChR2-expressing neurons for targeting a two-photon temporal focused mapping beam. We combined this soma-targeted ChR2 with verification of successful action potential generation with a genetically encoded calcium indicator in our mapping protocol. Our approach allows robust and precise activation of neurons in brain slices for the construction of functional synaptic connectivity maps with single-cell resolution without loss of information about local connections in the region of the dendritic arbor of the recorded neuron or inadvertent activation of axons.\n\n## Results\n\nWe stimulated neurons expressing soma-targeted ChR2 in acute slices of mouse cortex using scanless temporal focusing (TF), which has been used successfully for optogenetic stimulation at high axial resolution in scattering tissue samples (Andrasfalvy et al., 2010; Losonczy et al., 2010; Papagiakoumou et al., 2010, 2013; Rickgauer et al., 2014). TF uses a diffraction grating (Figure 1\u2014figure supplement 1) to separate the spectral components of a pulsed laser beam, resulting in a temporally broadened pulse that is inefficient at excitation except at the focal plane, where the components are recombined. This yields a volume of excitation in which the diameter in the x-y plane and the thickness in the axial plane are controlled independently (Oron et al., 2012, 2005). We designed our excitation volume to approach the dimensions of a typical neuronal soma (Figure 1\u2014figure supplement 2).\n\nTo restrict expression of ChR2 to the soma and proximal dendrites, we generated ChR2 fusion proteins by attaching a 65 amino acid motif from the Kv2.1 voltage-gated potassium channel to the carboxy terminus of ChR2-EYFP (Lim et al., 2000). Nontargeted ChR2-EYFP fluorescence was distributed throughout the processes of dissociated cortical neurons that had been filled with a fluorescent dye (Figure 1A). In contrast, targeted ChR2-EYFP-Kv2.1 was located primarily in the soma and excluded from the axon and distal dendrites (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fluorescence of ChR2-EYFP (green) in live dissociated cortical neurons that had been patched and filled with Alexa 594 dye (magenta) as visualized by two-photon microscopy. Scale bar = 100 \u00b5m. (B) Representative two-photon maximum intensity projections of Alexa 594 fluorescence and current responses to a single 150 ms TF stimulation pulse (red bar) for patched and dye-filled pyramidal cells in acute slices expressing nontargeted (N) or targeted (T) ChR2. Scale bar = 100 \u00b5m. (C) Mean (solid lines) \u00b1 s.e.m. (shaded regions) for current responses to TF stimulation measured at specific points along a single dendrite (N=10 nontargeted cells and 13 targeted cells). Fitting each curve with an exponential function demonstrated that the nontargeted and targeted datasets were significantly different (*p<0.05 by F-test). (D) Maps of direct currents in representative cells expressing ChR2 constructs when stimulating a 15\u00a0\u00d7\u00a015 grid of locations. Each pixel in a map represents the direct current observed in the patched cell when that location in the slice was stimulated. Each position in a map was stimulated with the minimum power that evoked action potentials in 10/10 trials when stimulation was applied to the soma. Currents evoked by such powers ranged from 20 to over 250 pA, as indicated by the scale at bottom. Scale bar at lower left = 100 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Scale bar = 20 \u00b5m. The full width at half maximum was 9.0 \u00b5m in the xy plane and 9.5 \u00b5m in the axial plane.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Maximum intensity projections of confocal image stacks of brain sections from animals expressing nontargeted (N) or targeted (T) ChR2. Dashed boxes in the upper panels indicate the positions of the images shown in the lower panels. Scale bars = 100 \u00b5m. (B) Representative two-photon maximum intensity projections of Alexa 594 fluorescence and current responses to a single 150 ms TF stimulation pulse (red bar) for patched and dye-filled pyramidal cells in acute slices. Scale bar = 50 \u00b5m. (C) Mean (solid lines) \u00b1 s.e.m. (shaded regions) for current responses to TF stimulation measured at specific points along an axonal process (N=16 nontargeted cells and 9 targeted cells). Fitting each curve with an exponential function demonstrated that the nontargeted and targeted datasets were significantly different (*p<0.05 by F-test).\n\nAs a functional assay to compare the distribution of ChR2 in the soma and dendrites of targeted and non-targeted constructs, we used TF stimulation at intervals along the apical dendrite of patched layer II/III pyramidal neurons in acute coronal brain slices of somatosensory cortex from mice expressing opsins from viral constructs and recorded light activated currents in voltage clamp (Figure 1B). The stimulation power for these experiments was determined independently for each neuron to be the minimum that elicited a single action potential in 10 out of 10 trials when the TF spot was placed directly over the soma; this value was 0.92 \u00b1 0.24 mW/\u00b5m2 for targeted ChR2 and 1.65 \u00b1 0.26 mW/\u00b5m2 for the nontargeted version, owing to the increased sensitivity of the targeted construct (see below). Dendrites were followed throughout the depth of the tissue and areas were selected for stimulation such that the dendrite was planar throughout the extent of the 10 \u00b5m TF disc. The TF-stimulated current declined ~10-fold at 50 \u00b5m from the soma with\u00a0the targeted construct, versus two\u00a0fold for the non-targeted construct (Figure 1C; N=10 untargeted cells from four animals and N=13 targeted cells from six animals). The reduced dendritic ChR2 in the targeted construct opens up the possibility of using light stimulation with patch recording to identify synaptic currents that originate from nearby neurons. To illustrate this point, we compared the spatial distribution of direct currents recorded in Layer II/III pyramidal neurons in acute slices of somatosensory cortex expressing non-targeted and targeted constructs while sequentially stimulating points at 20 \u00b5m intervals over a 300\u00a0\u00d7\u00a0300 um grid surrounding the soma. Stimulation of cells expressing non-targeted ChR2-evoked currents up to 200 \u00b5m away from the neuronal soma, often delineating a pattern indicative of the dendritic arbor of the cell (Figure 1D). In contrast, cells expressing the targeted construct exhibited significant currents only when stimulated within the 25\u201350 \u00b5m immediately adjacent to the cell body. The lack of direct light-activated currents throughout much of the neuron\u2019s dendritic field makes it possible to visualize synaptic currents that would be evoked by ChR2 activation of nearby presynaptic neurons, even those that lie within the neuron\u2019s dendritic field.\n\nIn brain sections from mice injected with viruses encoding ChR2 constructs, examination of regions near the edge of the extent of virus-driven expression revealed markedly denser labeling of neuronal processes around a single-neuron expressing nontargeted ChR2 versus the area around several neurons expressing the targeted version (Figure 1\u2014figure supplement 3A). We also saw processes reminiscent of axons at distances of several hundred microns away from the cell bodies of conventional ChR2-positive neurons. To functionally characterize the extent of axonal opsin expression, we again patched layer II/III pyramidal neurons in acute coronal brain slices of somatosensory cortex and recorded light-activated currents in voltage clamp while stimulating multiple positions along putative axonal processes, which were distinguished by their thin profile, absence of spines, and presence of occasional varicosities. Although the amount of detected current decreased rapidly for both constructs as TF stimulation was moved along the axon, noticeable currents could be detected at distances of 50 \u00b5m or greater from the soma of cells expressing nontargeted ChR2 (Figure 1\u2014figure supplement 3B). In contrast, cells expressing targeted ChR2 demonstrated an 80% reduction of current when stimulating just 20 \u00b5m down the axon and significantly less current than cells expressing nontargeted ChR2 throughout its examined length (Figure 1\u2014figure supplement 3C).\n\nInterestingly, the targeted ChR2 also exhibited increased peak current amplitude in response to TF activation, presumably by concentrating channel density at the soma (Figure 2A; from 308.3 \u00b1 43.5\u2009pA in 12 nontargeted cells to 760.5\u00a0\u00b1\u00a0146.0\u2009pA in 12 targeted cells at 3.63 mW/\u00b5m2; p=0.0101 for main effect of targeting by two-way repeated measures ANOVA), leading to an over three-fold reduction of the power required to reach action potential threshold (Figure 2B; from 2.75\u00a0\u00b1\u00a00.31 mW/\u00b5m2 in 17 nontargeted cells to 0.88\u00a0\u00b1\u00a00.23 mW/\u00b5m2 in 19 targeted cells; p=8.028\u00a0\u00d7\u00a010\u20135 by Mann-Whitney U Test). At the threshold stimulation power for each cell, the amount of evoked current was similar between targeted and untargeted constructs (261.06\u00a0\u00b1\u00a031.62\u2009pA for untargeted ChR2 and 222.70\u00a0\u00b1\u00a027.21\u2009pA for targeted ChR2 p=0.3677 by two sample t-test), consistent with the observation that the targeting modification had no effect on rheobase, other intrinsic physiological parameters, or action potential properties in response to current injections (Figure 2\u2014figure supplement 1 and Table 1).\n\nThe ability to trigger action potentials at lower incident power, coupled with the somatic restriction of the targeted construct, should provide enhanced spatial and temporal resolution for mapping neuronal circuits. We measured the spatial resolution of action potential generation by moving the TF spot to different lateral and axial locations relative to a patched neuron expressing targeted ChR2 and examining the proportion of 10 trials that resulted in an action potential when using the threshold stimulation intensity. The full-width at half maximum of these measurements was 11.1 \u00b5m laterally and 23.3 \u00b5m axially (N=10 cells from 7 animals; Figure 2C and D). Similar measurements using nontargeted ChR2 demonstrated resolution of 19.6 \u00b5m laterally and 36.2 \u00b5m axially (N=13 cells from 5 animals; Figure 2C and D); both curve fits were significantly different from the targeted ChR2 versions (p<0.05 by F-test). In terms of temporal precision, the mean latency from light onset to generation of a single action potential in the above experiments was 38.98\u00a0\u00b1\u00a017.33 ms; the average jitter (defined as the standard deviation of the latency across the ten trials for a given cell) was 6.8\u00a0\u00b1\u00a02.1 ms. Increasing stimulation power beyond threshold provoked additional action potentials and eventually shortened the latency to first spike to 9.3\u00a0\u00b1\u00a01.8 ms (Figure 2\u2014figure supplement 2), consistent with reported values for stimulating cortical neurons with sculpted light (Papagiakoumou et al., 2010). Targeted ChR2-expressing cells exhibited shorter action potential latencies than nontargeted ChR2 cells at equivalent stimulation intensity, consistent with latency being power-dependent and the earlier observation that targeted ChR2 is more sensitive. Although we concentrated efforts on longer stimulation pulses to increase the number of spikes and facilitate calcium imaging (see below), we verified the performance of targeted ChR2 under a shorter stimulation regimen. Temporal focusing pulses of 32 ms were effective at generating action potentials in opsin-expressing cells, and targeted ChR2 exhibited greatly enhanced photocurrents and lower power thresholds under these conditions (Figure 2\u2014figure supplement 3). Moreover, the ability to reduce latency to less than 10 ms with increased power (Figure 2\u2014figure supplement 2) suggests that even shorter stimulation pulses may still be effective. Therefore, the combination of temporal focusing and soma-targeted ChR2 expression yields a highly reliable and spatially precise means to stimulate action potentials with somatic illumination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig2-v2.jpg)\n\n**Figure 2.:** (A) Evoked currents in acute slices in response to 150 ms TF stimulation of increasing intensity; targeted ChR2 exhibited significantly greater current (two-way repeated measures ANOVA, p=0.0101 for main effect of targeting, p=0.0056 for targeting \u00d7 power interaction, *p<0.05 Holm-Bonferroni post hoc test). (B) Minimum TF power required to elicit a single action potential. Each point indicates a single cell; cells expressing targeted ChR2 had a much lower threshold (*p=8.028\u00a0\u00d7\u00a010\u20135, Mann-Whitney U Test). (C\u2013D) Probability of evoking spikes per 10 trials in cells expressing targeted (red) or nontargeted (blue) ChR2 when stimulating the soma and at laterally and axially displaced locations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mean (solid lines) \u00b1 s.e.m. (shaded regions) latency to first action potential in response to 150 ms TF stimulation of increasing intensity in cells from acute cortical slices (N=9 cells per group). Fitting each curve with an exponential function demonstrated that the nontargeted and targeted datasets were significantly different (*p<0.05 by F-test).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Evoked currents in acute slices in response to shorter 32 ms TF stimulation of increasing intensity; targeted ChR2 exhibited significantly greater current (two-way repeated measures ANOVA, p=1.951\u00a0\u00d7\u00a010\u20134 for main effect of targeting, p=0.01 for targeting \u00d7 power interaction, *p<0.05 Holm-Bonferroni post hoc test). (B) Minimum TF power required to elicit a single action potential. Each point indicates a single cell; cells expressing targeted ChR2 had a much lower threshold (*p=9.124\u00a0\u00d7\u00a010\u20136, Mann-Whitney U Test). (C) Mean (solid lines) \u00b1 s.e.m. (shaded regions) for current responses to TF stimulation measured at specific points along a single dendrite (N=6 nontargeted cells and 6 targeted cells). Fitting each curve with an exponential function demonstrated that the nontargeted and targeted datasets were significantly different (*p<0.05 by F-test).\n\n**Table 1.**\n Intrinsic electrophysiological properties of neurons expressing normal or targeted channel\u00a0rhodopsin constructs. Rheobase measurements were made in response to current injections. All measurements are mean \u00b1 s.e.m. No significant differences as an effect of targeting were found (Mann-Whitney U Tests, all p>0.05).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Nontargeted</th>\n      <th>Targeted</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Input resistance (M\u03a9)</td>\n      <td>129.16 \u00b1 8.91 (N\u00a0=\u00a011)</td>\n      <td>148.36 \u00b1 17.76 (N\u00a0=\u00a018)</td>\n      <td>0.9462</td>\n    </tr>\n    <tr>\n      <td>Capacitance (pF)</td>\n      <td>125.25 \u00b1 16.99 (N\u00a0=\u00a011)</td>\n      <td>89.85 \u00b1 7.66 (N\u00a0=\u00a018)</td>\n      <td>0.0887</td>\n    </tr>\n    <tr>\n      <td>Resting potential (mV)</td>\n      <td>\u221272.71 \u00b1 3.86 (N\u00a0=\u00a07)</td>\n      <td>\u221276.87 \u00b1 1.87 (N\u00a0=\u00a08)</td>\n      <td>0.3532</td>\n    </tr>\n    <tr>\n      <td>Rheobase (pA)</td>\n      <td>160.00 \u00b1 7.69 (N\u00a0=\u00a012)</td>\n      <td>147.39 \u00b1 12.92 (N\u00a0=\u00a023)</td>\n      <td>0.5357</td>\n    </tr>\n    <tr>\n      <td>Spikes at 1.5\u00d7 rheobase</td>\n      <td>7.18 \u00b1 0.52 (N\u00a0=\u00a012)</td>\n      <td>7.56 \u00b1 0.83 (N\u00a0=\u00a023)</td>\n      <td>0.8377</td>\n    </tr>\n  </tbody>\n</table>\n\nTo demonstrate the general utility of these techniques for mapping synaptic connections, we performed connectivity experiments in acute somatosensory cortical slices. We generated a bicistronic adeno-associated virus (AAV) construct encoding targeted ChR2-Kv2.1 followed by a P2A ribosomal skipping sequence and a histone 2B-mRuby2 fusion protein to fluorescently label neuronal nuclei to identify cells for TF stimulation. We patched a cell in layer II/III, and then stimulated surrounding cells that had been identified by nuclear mRuby2 fluorescence. Action potential firing in a light-stimulated neuron was verified by an increase in the fluorescence signal measured with the genetically encoded calcium sensor GCaMP6s (Chen et al., 2013) expressed from a separate AAV construct. For these experiments, we used an average stimulation power (2.29\u00a0\u00b1\u00a00.55 mW/\u00b5m2) that, when combined with a 150 ms stimulation pulse, frequently led to trains of 2\u20134 action potentials in the patched cells and facilitated detection of larger calcium transients. We used an imaging power and dwell time that did not lead to action potential generation in any cells recorded, instead causing an average inward current of 29.5\u00a0\u00b1\u00a09.5\u2009pA (N\u00a0= 7 cells from 5 animals)\u2014well below the average rheobase. The ability to identify a ChR2-Kv2.1-expressing neuron for TF stimulation by the presence of a fluorescent nuclear label and verify that the neuron has in fact been stimulated successfully by detecting calcium transients with GCaMP is a key advantage for the execution and interpretation of mapping experiments.\n\nExcitatory synaptic connections were identified by the presence of GCaMP fluorescence increase in only the TF stimulated neuron and a reproducible inward current with appropriate synaptic delay, kinetics and reversal potential in the patched cell (see Materials and methods). To separate spontaneous currents occurring during the stimulation epoch from bona fide synaptic events, we also required occurrence of synaptic responses on multiple stimulus repetitions and with a post-stimulus onset jitter of less than 14 ms. A lack of connection was defined as failure to reach these criteria following the presence of a GCaMP6s response to light stimulation in a potential presynaptic neuron.\n\nIn a representative experiment, we identified 43 nuclear-labeled cells in a single axial plane (Figure 3A), of which 35 cells yielded calcium transients in response to TF stimulation (Figure 3B). Three of these 35 cells elicited reproducible postsynaptic responses in the recorded neuron when photostimulated (Figure 3C), exhibiting multiple currents consistent with the production of trains of presynaptic action potentials. Every connection detected was associated with an unequivocal calcium transient in only the stimulated neuron (Figure 3B). In repeated experiments (seven neurons from five animals), another example of which is shown in Figure 3\u2014figure supplement 1, the average rate of detecting a calcium response to TF stimulation of a cell expressing the ChR2-Kv-P2A-H2B-mRuby2 bicistronic construct was 80.00 \u00b1 2.60%. Given that the GCaMP6s is expressed by a separate AAV construct and coinfection is not necessarily 100%, the 'nonresponsive' cells may express insufficient GCaMP for detection of single action potentials. Indeed, we identified three reproducible postsynaptic events (out of 316 presynaptic stimulations) that could not be correlated with a calcium transient, perhaps again due to lower GCaMP expression in those neurons. Overall, the average connectivity rate was 10.27 \u00b1 2.60% (27 connections out of 252 cells showing a calcium transient to photostimulation), which was not significantly different from our own results using paired recording (7 connections out of 115 cells; Fisher\u2019s exact test, p=0.18).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig3-v2.jpg)\n\n**Figure 3.:** (A) In acute slices expressing GCaMP6s (green) and targeted ChR2-P2A-H2B-mRuby2 (magenta), cells were identified for photostimulation based on nuclear mRuby2 fluorescence (yellow circles). A cell was patched and dye-filled (triangle) and assessed for postsynaptic currents as surrounding cells were stimulated (1.40 mW/\u00b5m2 incident power) and GCaMP fluorescence was simultaneously recorded. Scale bar = 100 \u00b5m. (B) Changes in GCaMP fluorescence over the experimental timecourse for each cell identified in (A); each cell was stimulated sequentially with ~2 s between cells. Signals are the average of four trials. In this experiment, 35 out of 43 cells yielded calcium transients in response to optical stimulation; overall the average probability of detecting an induced calcium response was 80%. (C) Calcium (blue) responses for a subset of cells reacting to TF stimulation; four trials are overlaid in light blue, with the average in dark blue. Red lines in the calcium traces indicate the onset of stimulation for each cell. The recorded currents for the four trials (black) in the patched and putatively postsynaptic cell are shown expanded below each calcium trace; the shaded red region indicates the 150 ms stimulation epoch. Three cells showed a calcium response to TF stimulation and triggered postsynaptic currents (fast onset kinetics but delayed with respect to the TF stimulation) in the patched cell. Five representative cells showing calcium transients but no reproducible postsynaptic currents are also shown. For the displayed three connected cells and the five unconnected cells, the cell numbers, spatial locations and full calcium traces are marked with plus signs and minus signs, respectively, in panels (A) and (B). Across multiple experiments, the average connection probability was 10% (27 connections out of 252 responsive cells).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) In acute slices expressing GCaMP6s (green) and targeted ChR2-P2A-H2B-mRuby2 (magenta), cells were identified for photostimulation based on nuclear mRuby2 fluorescence (yellow circles). A cell was patched and assessed for postsynaptic currents as surrounding cells were stimulated (1.40 mW/\u00b5m2 incident power) and GCaMP fluorescence was simultaneously recorded. Scale bar = 100 \u00b5m. (B) Changes in GCaMP fluorescence over the experimental timecourse for each cell identified in (A); each cell was stimulated sequentially as described in Figure 3. Signals are the average of four trials. (C) Calcium (blue) responses for a subset of cells reacting to TF stimulation; four trials are overlaid in light blue, with the average in dark blue. Red lines in the calcium traces indicate the onset of stimulation for each cell. The recorded currents for the four trials (black) in the patched and putatively postsynaptic cell are shown expanded below each calcium trace; the shaded red region indicates the 150 ms stimulation epoch. Four cells with a calcium response to TF stimulation and coincident postsynaptic currents (fast onset kinetics but delayed with respect to the TF stimulation) in the patched cell are shown, as are four representative cells showing calcium transients but no reproducible postsynaptic currents. For the displayed connected and unconnected cells, the cell numbers, spatial locations and full calcium traces are marked with plus signs and minus signs, respectively, in panels (A) and (B).\n\nFor comparison, we executed similar GCaMP6s-monitored mapping experiments (three neurons from two animals) using nontargeted ChR2 and the same average stimulation power (Figure 4). Although we were able to detect putative synaptic connections, they were frequently coincident with direct current responses indicative of stimulation of the patched cell\u2019s dendritic arbor (Figure 4C). Across the experiments, such direct responses occurred during stimulation of 28.75\u00a0\u00b1\u00a04.46% of the target cells within a single field of view. These direct responses were often large in amplitude and could easily obfuscate much smaller synaptic events associated with bona fide connections. Moreover, we also observed reproducible calcium transients in off-target cells when other target cells were being stimulated (note events in Figure 4B that lie off of the diagonal). These off-target responses occurred with a probability (the number of events divided by the number of target cells) of 15.17\u00a0\u00b1\u00a01.79% and likely result from unintentional stimulation of a ChR2-containing sensitive dendrite of one cell while intending to activate the soma of a separate cell. Consistent with this interpretation, these off-target calcium events were observed at a significantly lower frequency in experiments with the targeted opsin (5.42\u00a0\u00b1\u00a01.39%, p<0.01 by two sample t-test). Moreover, the average distance between a cell exhibiting an off-target calcium transient and the intended target cell was greater with nontargeted ChR2 (40.6\u00a0\u00b1\u00a06.4 \u00b5m versus 18.9\u00a0\u00b1\u00a02.4 \u00b5m; p<0.01 by two sample t-test), further suggesting that cells expressing nontargeted ChR2 were firing action potentials in response to unintended stimulation of distal dendrites. Our combination of TF and restricted ChR2 thus facilitated the mapping of local circuitry within the 300 \u00b5m surrounding a neuron without confounding signals from its dendritic arbor and with a higher throughput than that achieved with electrophysiological techniques alone.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14193/elife-14193-fig4-v2.jpg)\n\n**Figure 4.:** (A) In acute slices expressing GCaMP6s (green) and conventional ChR2-mRuby2, cells were identified for photostimulation based on responsiveness to widefield ChR excitation (yellow circles). A cell was patched and dye-filled (triangle) and assessed for postsynaptic currents as surrounding cells were stimulated (2.13 mW/\u00b5m2 incident power) and GCaMP fluorescence was simultaneously recorded. Scale bar = 100 \u00b5m. (B) Changes in GCaMP fluorescence over the experimental timecourse for each cell identified in (A); each cell was stimulated sequentially as described in Figure 3. Signals are the average of four trials. (C) Calcium (blue) responses for a subset of cells reacting to TF stimulation; four trials are overlaid in light blue, with the average in dark blue. Red lines in the calcium traces indicate the onset of stimulation for each cell. The recorded currents for the four trials (black) in the patched and putatively postsynaptic cell are shown expanded below each calcium trace; the shaded red region indicates the 150 ms stimulation epoch. Several types of events were observed: one cell showed a synaptic event coincident with a low amplitude current from direct stimulation of the dendritic arbor of the patched cell, and one cell showed what might be a synaptic event buried within another direct stimulation current of large amplitude (red arrows). Three other cells with a calcium response to TF stimulation and coincident direct stimulation of the patched cell\u2019s dendritic arbor are also shown, along with three cells with calcium transients but no detectable currents in the patched cell. The cell numbers, spatial locations and full calcium traces corresponding to these events are marked in panels (A) and (B).\n\n## Discussion\n\nThis study demonstrates that combining temporal focusing for two-photon activation of ChR2 with restriction of ChR2 expression to the soma and proximal dendrites of neurons yields a reliable method for evaluating synaptic connectivity with single-neuron resolution. The spatially restricted ChR2 expression we describe allows unmasking of synaptic connections from neurons whose somata lie close to the dendrites of the postsynaptic cell and would have been occluded by direct activation of ChR2 on the dendrite. In addition, depletion of ChR2 from axons prevents inadvertent depolarization of boutons or fibers of passage that could compromise attempts to identify the source of a synaptic event. ChR2 harboring the Kv2.1 localization motif also showed enhanced sensitivity, which is of particular use in situations where excitation power is at a premium. Together these features of the soma-restricted construct significantly enhance the ability to map synaptic connections with single-cell resolution.\n\nThe development of spatially-restricted optogenetic constructs is probably one of the most effective means for achieving single-cell resolution in local circuit mapping experiments. This restriction requires the identification of a relatively small compartment near the neuronal soma characterized by selective expression of particular proteins with known motifs responsible for their localization. The distribution of particular voltage-gated potassium channels defines such a subcellular domain along the soma and proximal dendrites (Trimmer, 2015), and the sufficiency of a short Kv2.1 C-terminal sequence for driving heterologous proteins to this region (Lim et al., 2000) made this strategy ideal for restricting ChR2 expression. The only obvious alternative is restriction to the axon initial segment (AIS) mediated by an ankyrin G binding motif present in voltage-gated sodium channels (Garrido et al., 2003). Although incorporating this motif into ChR2 drives its localization to the AIS (Grubb and Burrone, 2010; Wu et al., 2013), the resulting construct does not support light-generated action potentials under physiological conditions (Grubb and Burrone, 2010). Moreover, AIS-targeted ChR2 alters the intrinsic firing properties of retinal neurons, presumably by displacing endogenous voltage-gated sodium channels whose subcellular localization is also dependent on ankyrin G binding (Zhang et al., 2015). Therefore, the Kv2.1 targeting strategy currently remains the optimal means of concentrating ChR2 such that action potentials will not be generated by TF stimulation of dendrites >20 \u00b5m away from the soma. Indeed, this approach has been successfully used with opsins to artificially generate center-surround receptive fields in retinal ganglion cells (Wu et al., 2013). The Wu et al. (2013) study showed functional restriction of opsins to the soma and proximal dendrites by examining receptive field responses to wide (200\u00a0\u00b5m) bars of one-photon light. We have now measured the somatic targeting at a finer scale, demonstrated two-photon excitation of targeted ChR2 that is enhanced relative to normal ChR2 under the same conditions, and established the utility of targeted opsins for enhancing the resolution of local connectivity maps of neural circuits.\n\nThe soma-targeted ChR2 could be combined with many of the techniques for two-photon optical control of neuronal activity previously developed for caged neurotransmitters or optogenetic probes. The relative merit of the optical activation method depends on the axial resolution, temporal precision required and the number of neurons to be stimulated simultaneously in a given experimental paradigm. For example, rapid scanning of a diffraction-limited two-photon excitation spot in a pattern on the soma can generate action potentials (Packer et al., 2012; Prakash et al., 2012; Rickgauer and Tank, 2009) and combination with spatial light modulators allows for simultaneous excitation of neuronal ensembles (Packer et al., 2012, 2015). The temporal resolution of this rapid scanning approach, however, is limited by the time required to scan along the cell body. Scanless activation of untargeted ChR in brain slices using TF, alone or in combination with spatial light modulators, is capable of generating action potentials in hippocampal pyramidal neurons within 1\u20133 ms of light onset (Andrasfalvy et al., 2010) and in cortical neurons in less than 10 ms (Papagiakoumou et al., 2010). We did not take full advantage of the temporal precision capability of TF to fire action potentials in our current study, instead focusing on a screening method that would identify connections without optimizing the amount of power that would fire each potential presynaptic neuron with minimal latency. We therefore chose longer pulses at a power sufficient to fire most neurons and generate trains of action potentials, which would elicit stronger signals with calcium indicators. For experiments requiring temporal precision, the minimization of action potential latency requires optimization of excitation area and laser power (Papagiakoumou et al., 2008). Because power is also the limiting factor in extending the area of two-photon activation to large numbers of neurons with spatial light modulators, the reduced power required to bring soma-targeted opsins to threshold would be an asset to such experiments.\n\nThe optimal performance of our method relies on sufficient co-expression of an opsin, a marker for opsin expression, and a genetically encoded calcium sensor. For GCaMP6s and similar sensors, there appears to be a balance between sufficient expression to detect single action potentials and excessive levels that lead to a lack of responsiveness (Chen et al., 2013; Packer et al., 2015; Tian et al., 2009). Targeting this expression window can be complicated, particularly when simultaneously trying to achieve high opsin levels using a separate AAV construct. Indeed, heterogeneity in GCaMP expression levels between neurons with viral infection may be partially responsible for the 20% of neurons in which we did not detect a change in GCaMP fluorescence with TF stimulation. We have also explored the co-expression of GCaMP6s as the second member of a single P2A-mediated bicistronic construct, but the GCaMP6s expression level was lower than desired, resulting in inadequate detection of action potentials (data not shown). Future development of these techniques will therefore benefit from bypassing viral systems and instead expressing the calcium sensor or the opsin in transgenic animals. The enhanced sensitivity of the targeted ChR2 should alleviate the concern that there would be sufficient opsin expression from a single genetic locus for activation of neurons with two-photon excitation.\n\nThere are several opportunities for future extension of this method. The somatic targeting approach could also be exploited in the context of other opsins such as C1V1, which has recently been leveraged for two-photon stimulation of neural circuits in acute slices and in vivo\u00a0(Packer et al., 2012, 2015; Prakash et al., 2012; Rickgauer et al., 2014). Other molecules which may\u00a0be good candidates for somatic targeting include the red-shifted ReaChR for its sensitivity (Lin et al., 2013) and Chronos for its rapid temporal characteristics (Klapoetke et al., 2014). Moreover, the somatic restriction of membrane-bound genetically encoded voltage sensors could dramatically reduce background associated with the neuropil and facilitate an all-optical version of our current method. Because the Kv2.1 targeting sequence is unable to restrict the distribution of the single-pass membrane protein CD8, however, there may be certain structural constraints on the effectiveness of the motif (Lim et al., 2000). We suspect that at least for the opsins, which are all seven transmembrane domain proteins likely to have a similar structure, the Kv2.1 motif will be sufficient to achieve somatic localization.\n\nIn summary, our combination of TF and soma-restricted ChR2 enables functional connectivity mapping and is straightforward and easy to implement with standard two-photon microscopes. Furthermore, these techniques could also be used in vivo, where the enhanced resolution of the targeted ChR2 makes it especially attractive for selective cell stimulation in behavioral paradigms. These enhancements to probing brain microcircuitry through optical stimulation promise to reveal much about nervous system function and how it might be modified by experience and perturbed in animal models of neurologic or psychiatric disease.\n\n## Materials\u00a0and\u00a0methods\n\n### Construct generation\n\nThe vector pAAV-hSyn-hChR2(H134R)-EYFP (Addgene plasmid 26973) served as the backbone for generating certain modified constructs. The 'proximal restriction and clustering signal' (Lim et al., 2000) of the Kv2.1 voltage-gated potassium channel (QSQPILNTKEMAPQSKPPEELEMSSMPSPVAPLPARTEGVIDMRSMSSIDSFISCATDFPEATRF), codon optimized for mouse, was generated by automated gene synthesis (Integrated DNA Technologies, Coralville, IA) and amplified by PCR using primers CGGCATGGACGAGCTGTACAAGCAGTCCCAGCCTATTCTGAAC and TGATATCGAATTCTTACTTAAACCGCGTAGCCTCTGG. The resulting product was inserted into the BsrGI site at the C-terminus of the ChR2-EYFP fusion protein sequence using the Gibson Assembly kit (New England Biolabs, Ipswich, MA). For mapping experiments using nontargeted hChR2 with coincident visualization of GCaMP6s, the EYFP-coding sequence between the PshAI and BsrGI sites was replaced with the sequence of mRuby2.\n\nTo better visualize cells for stimulation during mapping experiments, we generated a bicistronic AAV construct consisting of hChR2 followed immediately by the Kv2.1 targeting sequence, a P2A ribosomal skipping sequence, and a histone 2B-mRuby2 fusion protein. The Kv2.1 sequence was amplified with primers ATCGAGGTCGAGACTCTCGTCGAAGACGAAGCCGAGGCCGGAGCCGTGCCAGCGGCCGCCACCCAGTCCCAGCCTATTCT and ACGTCTCCTGCTTGCTTTAACAGAGAGAAGTTCGTGGCTCCGGATCCAAACCGCGTAGCCTCTGG, histone 2B was amplified from Addgene plasmid 11680 with primers CTGTTAAAGCAAGCAGGAGACGTGGAAGAAAACCCCGGTCCTGGTTCTATGCCAGAGCCAGCGAAG and TCGGCTTCGTCTTCGACGAGCATGGTGGCGACCGGTG, and mRuby2 was amplified from Addgene plasmid\u00a040260 with primers CTCGTCGAAGACGAAGCCGAGGCCGGAGCCGTGCCAGCGGCCGCCACCATGGTGTCTAAGGGCGAA and GATAAGCTTGATATCGTTACTTGTACAGCTCG. The amplified products were incorporated into an EcoRI-PshAI fragment from Addgene plasmid 26973 by Gibson Assembly; the P2A sequence was reconstituted from the primers during the assembly process.\n\nAll plasmids were propagated in Stbl3 cells (Life Technologies, Grand Island, NY) and made into recombinant adeno-associated viral (AAV) particles of serotype 1 by the Penn Vector Core (Philadelphia, PA).\n\n### Animals and viral injections\n\nAll animal work was conducted according to the Guide for the Care and Use of Laboratory Animals from National Institute of Health. C57BL6/J mice were maintained on a 12\u2009hr light-dark cycle with ad libitum access to food and water. Under isofluorane anesthesia, P21-P25 mice were injected with AAV particles (800 nl containing ~1\u00a0\u00d7\u00a01013 genome copy units/ml) at 9.2 nl per 10\u2009s through a pipette positioned 500 \u00b5m beneath the surface of the somatosensory cortex and attached to a Nanoject II microinjector. For mapping experiments with nuclear labeling and verification of action potential generation by calcium influx, full strength AAV1 encoding ChR2-Kv2.1-P2A-H2B-mRuby2 (5\u00a0\u00d7\u00a01012 units/ml) was coinjected with a diluted concentration of AAV1 GCaMP6s (final concentration\u00a0=\u00a01.4\u00a0\u00d7\u00a01012\u00a0units/ml); diluted GCaMP6s reportedly results in nuclear exclusion of the calcium indicator and lower toxicity (Packer et al., 2015). For all data reported here, animals receiving targeted or untargeted ChR2 viruses were all examined between 3 and 4 weeks after injection. Somatic restriction was also observed in animals 5 weeks after injection.\n\n### Dissociated cortical neurons\n\nNeurons were prepared by dissecting the corticies from postnatal day 1 animals and digesting for 30\u2009min at 37\u00b0C in Earle\u2019s Balanced Salt Solution supplemented with 1.5\u2009mM MgSO4, 1\u2009mM CaCl2, and 8.3 units/ml papain (Worthington Biochemical, Lakewood, NJ) under 95%O2/5%CO2. Just prior to plating, cells were transfected with 1 \u00b5g DNA per 2.5\u00a0\u00d7\u00a0106 cells using the Amaxa nucleofector system. Neurons were then seeded onto laminin-coated coverslips containing a feeder layer of astrocytes prepared as previously described (McCarthy and de Vellis, 1980). Cells were maintained in neuronal growth media (Neurobasal (Life Technologies) supplemented with 5 \u00b5g/ml insulin, 110 \u00b5g/ml sodium pyruvate, 100 units/ml penicillin, 100 \u00b5g/ml streptomycin, 40 ng/ml thyroxine, 292 \u00b5g/ml L-glutamine, 5 \u00b5g/ml N-acetyl-L-cysteine, 100 \u00b5g/ml BSA, 100 \u00b5g/ml transferrin, 16 \u00b5g/ml putrescine, 60 ng/ml progesterone, 40 ng/ml sodium selenite, 50 ng/ml BDNF, and 5\u00a0ng/ml forskolin) for ~10 days before use in experiments.\n\n### Slice preparation and electrophysiology\n\nThree weeks after viral injection, 300\u2013400\u00a0\u00b5m slices were prepared in ice-cold cutting solution containing (in mM): 124 choline chloride, 26 NaHCO3, 2.5 KCl, 3.3 MgCl2, 1.2 NaH2PO4, 1 glucose and 0.5 CaCl2. After cutting, slices were allowed to recover for 30\u2009min at 32\u00b0C in artificial CSF containing (in mM): 124 NaCl, 26 NaHCO3, 3 KCl, 1.25 NaH2PO4, 20 glucose, 1 MgCl2, 2 CaCl2, 5 sodium ascorbate, 3 sodium pyruvate and 2 thiourea. All solutions were maintained under constant 95%O2/5%CO2. Whole-cell recordings were made through 4-7\u00a0M\u03a9 pipettes, filled with intracellular solution containing (in mM): 145 potassium gluconate, 5 NaCl, 10 HEPES, 0.5 EGTA, 4 MgATP, 0.3 NaGTP, 0.02 Alexa Fluor 488 or 594 hydrazide. In some experiments, the intracellular solution was supplemented with 0.2% biocytin. All recordings were collected using Axon Multiclamp 700B amplifiers and Digidata 1440A digitizers (Molecular Devices, Sunnyvale, CA) at 10\u00a0kHz, controlled by Clampex software.\n\n### Optical setup\n\nOur customized optical setup was based on a AxioImager Z1 platform (Zeiss,\u00a0Thornwood,\u00a0NY) fitted with an Ultima dual path scan head containing two pairs of galvanometric mirrors (Bruker, Middleton, WI) for separate control of imaging and stimulating optical pathways (Figure 1\u2014figure supplement 1). The imaging pathway used a Chameleon Ti:sapphire laser tuned to 920\u00a0nm (Coherent, Santa Clara, CA). The stimulation pathway employed a MaiTai DeepSee Ti:sapphire laser tuned to 880\u00a0nm (SpectraPhysics, Santa Clara, CA). The spectral broadening necessary for temporal focusing was achieved on this path by placing a 300 line/mm diffraction grating (Thorlabs, Newton, NJ) approximately 1\u00a0m away from the galvanometric mirrors; the laser spot on the grating was imaged onto the plane between the mirrors using a 500\u2009mm focal length lens (Thorlabs) placed 500\u2009mm away from the grating along the path of the first diffraction order from the grating. The stimulation laser was recombined with the imaging laser in the scan head using a 900\u00a0nm long-pass dichroic mirror (Chroma, Bellows Falls, VT). The power applied by either laser was controlled with a separate Pockels cell (Conoptics, Danbury, CT).\n\n### Confocal microscopy\n\nThree weeks after viral injection, animals were transcardially perfused with saline followed by 4% paraformaldehyde. Brains were removed, cryoprotected in 30% sucrose, and sectioned at 50 \u00b5m intervals on a sliding microtome. Sections were stained for ChR2-EYFP fusion proteins with a rabbit antibody raised against GFP followed by an Alexa 488-labeled secondary antibody (Thermo Fisher Scientific, Waltham, MA). Sections were mounted in Prolong Gold (Thermo Fisher Scientific) and images were collected on a Zeiss 780 confocal microscope using 10\u00d7 air- and 40\u00d7 oil-immersion objectives. Acquisition settings for laser power and PMT voltages were kept constant between nontargeted and targeted ChR2 samples.\n\n### Stimulation and resolution studies\n\nTemporal focusing stimulation was controlled by Prairie View 5.0 software (Bruker). Standard stimulation protocols used 150\u00a0ms pulses, except as noted in the text. Stimulation powers were measured after the objective, and ranged from 15 to 285 mW; assuming our spot size to be at least 10\u00a0\u00b5m in diameter, we are using powers of no greater than 0.2 to 3.6 mW/\u00b5m2. This calculation assumes a completely flat excitation profile; in reality, there is some spread in the axial dimension and thus, the power density is probably even lower. Cells filled with fluorescent Alexa dyes were visualized by two-photon microscopy and recorded in whole-cell voltage or current clamp as the temporal focusing spot was moved to different axial planes, different cell bodies or particular spots along dendrites. For each dendrite examined, the temporal focusing-induced current was plotted as a function of distance from the cell soma; the resulting curves were averaged for each construct to generate the traces shown in Figure 1C. All responses in Figure 1 were verified to exhibit kinetics associated with direct stimulation of the patched cells: that\u00a0is, exhibiting onset and offset precisely locked to the start and end of the optical stimulation. Stimulation powers were chosen separately for each cell by identifying the minimum power that evoked action potentials continually across ten trials. Resolution of spike generation was measured by moving the stimulation spot at 9 \u00b5m intervals laterally or 10 \u00b5m axially above or below the cell soma and recording the proportion of trials out of 10 leading to an action potential. Data were collected from cells until a minimum of ten cells was obtained for following ChR2 expression along dendrites; given a standard deviation of ~11% for these measurements, our sample size should be able to detect a 15% difference between groups with a power of 0.8. Data for other measures were collected in parallel, and no data were ever excluded even if a recording failed prior to collecting the dendrite expression results.\n\n### Calcium imaging and connection analysis\n\nImages of 512\u00a0\u00d7\u00a0512 pixels were simultaneously collected at 1.5\u00a0Hz using a raster scanning galvonometric system. Each stimulation epoch was timed to coincide with the onset of every other imaging frame, that\u00a0is, the first spot was stimulated at the onset of the second frame, the second spot was stimulated 1.26\u2009s later at the onset of frame 4, and so on. In this manner, a calcium peak in any frame could be associated with stimulation of a particular point in the field. During each stimulation epoch, microscope PMTs were protected from saturating fluorescence signals by Uniblitz shutters (Vincent Associates, Rochester, NY). Because this resulted in a lack of signal in the first 150\u00a0ms of every other frame as the top portion of the microscope field was scanned by the imaging laser, all stimulation points and calcium data collection were confined to a ~200\u00a0\u00d7\u00a0300\u00a0\u00b5m region of the microscope field. First-pass regions of interest (ROIs) were based on the stimulation points defined by labeled nuclei; frames containing significant calcium transients were then used to manually refine each ROI to define the soma of a responsive cell. For each ROI, the change in fluorescence relative to baseline (\u25b3F/F) was computed based on a baseline period of 10 frames prior to the onset of any stimulation. Significant calcium transients were defined as events of greater than three standard deviations above the mean for a duration of at least 2 frames. Cells with baseline GCaMP6s signals of more than 2 standard deviations above the mean in a given experiment were excluded from analysis, as GCaMP overexpression can lead to aberrant responsiveness (Chen et al., 2013; Packer et al., 2015; Tian et al., 2009). A synaptic connection was scored if the following criteria were met: (1) a latency of at least 2 ms from stimulus onset, (2) occurring in at least three out of four trials, (3) a jitter of less than 14 ms, (4) a rise time from 10% of peak to 90% of peak of less than 10 ms, and (5) the presence of a calcium transient in the photostimulated cell. Detected connections were confirmed to be excitatory in nature by altering the holding potential of the patched cell to demonstrate a reversal potential of ~0\u00a0mV. Connectivity rate was defined as then number of pairs with calcium transients in the presynaptic neuron and postsynaptic currents divided by the number of presynaptic neurons with calcium transients stimulated.\n",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "36ec0db9-b714-422d-9e71-10b6855dd3ec",
+      "submission_id": "d98edf4e-6085-417f-9529-cefcfa7b25d6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14193.015](https://doi.org/10.7554/eLife.14193.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \"Single-cell resolution circuit mapping with temporal-focused excitation of soma-targeted channelrhodopsin\" for consideration at eLife. Your full submission has been evaluated by Eve Marder as the Senior editor and three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that the work does not meet the standard for publication in eLife.\n\nWhile the reviewers agreed that the strategy you propose is elegant and potentially very powerful, and could have a major impact on the field of neuroscience, unfortunately they also expressed serious concerns regarding the details of the experiments and the presentation of the results, which dampened enthusiasm for the manuscript. In particular, the section of the manuscript on circuit mapping was felt to be especially weak and would require a major series of additional experiments. As you probably know, eLife has a policy of not asking for significant new experiments as part of a revision, thus resulting in the present decision.\n\nReviewer #1:\n\nIn this paper, the authors describe an optogenetics method to reach optogenetics activation with single cell resolution. The approach combines the use of temporal focusing with targeted opsins, which restrict the chanelrhodopsin expression to the soma and the apical dendrites. The development of somatic opsins is one of the most promising ways of reaching a true cellular resolution with optogenetics and will surely strongly impact the neuroscience community.\n\nHowever, in my opinion, the manuscript cannot be published in the present form and requires significant major modifications.\n\nIntroduction:\n\nReferences reporting optical methods using two-photon excitation, diffractive optics and temporal focusing for optogenetics are not extensively cited. Also a state of the art (including eventual references) on alternative approaches to achieve somatic ChR2 targeting will help in appreciating the novelty of the paper. The decision of using Kv2.1 voltage gated potassium channel to confine ChR2 targeting should be discussed more extensively.\n\nResults and Discussion:\n\nFigure 1 (left): The meaning of this figure is not clear. It seems that the authors want here to characterize the optical resolution of the system. If this is the case, lateral resolution will be better characterized by performing a lateral displacement of the excitation spot along the x and y direction and plotting the corresponding curves (similarly as was done in figure 1, right panel, for axial resolution). The 3D image is very confusing and not necessary.\n\nFigure 2\u2014figure supplement 2: Cross sections through the images are needed in order to appreciate the values for lateral and axial FWHM.\n\nFigure 2A: The image showing the Alexa 594 distribution (central bottom panel) has a very reduced fluorescence spreading with respect to the central top one: this difference is not justified as the spreading should be comparable in the two cells: authors should probably choose a better example.\n\nFigure 2D: The experiment on acute slice has been done only once: this is not enough to support their conclusion more statistics is needed. They should be able to derive for acute slice a figure similar to Figure 2B and C.\n\nThey need to discuss the effect of the planarity of the dendrites in the experiments: the excitation spot has been moved laterally along the objective focal plane, if the dendritic process is axially tilted this could also induce a decrease in the current (more statistic will enables removing this ambiguity).\n\nIn order to compare data from non targeted and targeted cells, authors should comment on the time they wait after injections in the two cases. Is this comparable? How long the somatic targeting stays somatic? Is there a critical time window after which the somatic ChR2 starts spreading along dendritic processes? Scale bar should be indicated in the bottom image. Why for the targeted ChR2, data have been taken with larger step?\n\nFigure 2F: The authors should better explain how they obtained this figure; how do they define the threshold?\n\nFigure 2G: In the caption they write \"each position in a map was stimulated with the minimum power that reliably evoked action potential when stimulation was applied to the soma\": they should better quantify the meaning of \"reliably evoked action potential\". Stimulation protocol (pulse duration, pulse frequency) should be indicated in the caption for all the experiments.\n\nFigure 2\u2014figure supplement 1: Not needed.\n\nFigure 3: The data and procedure reported in this figures needed to be better presented and explained.\n\nA picture showing the GCamp6 fluorescence before photostimulation is needed to visualize the distribution of the cells in rest condition.\n\nIt is not clear if the cell dye-filled and imaged in A is a ChR2 positive cell. If this is the case, authors need to show the current when the photostimulation spot is placed on the cell. The experiment should be repeated more than a single time to be convincing.\n\nThe construct used in Figure 3 uses ChR2 directly linked to GCamp6: this is a very powerful idea and should be better highlighted.\n\nResults section: \"[\u2026] owing to the lower efficiency of spike generation by ChR2 in the absence of TF [\u2026]\" this sentence is wrong. TF does not increase the efficiency of ChR2 excitation but only reduce the out of focus contribution, thus improving axial resolution.\n\n\"[\u2026] and a reproducible current with appropriate synaptic delay and kinetics [\u2026]\" this sentence is very vague, authors should define and quantify what is an \"appropriate synaptic delay and kinetics\".\n\nThe discussion on the biological results of in Figure 3 should be toned down. The paper is a methodological paper with interesting results and does not need in my opinion a biological conclusion that is not supported by enough data.\n\nReviewer #2:\n\nThe authors created a new construct that localizes ChR2 to the soma and proximal dendrites of neurons. When combined with two-photon beam shaping methods (e.g. temporal focusing), this should improve the ability to target and stimulate individual densely packed neurons without concurrently activating their neighbors.\n\nWhile the new construct may alleviate some of the concerns typically associated with optical mapping of connectivity (i.e. the inability to precisely stimulate only neurons of choice), the data presented in this manuscript are far too preliminary to make an impact in the field of circuit mapping.\n\nDetailed comments:\n\nFigure 1: Much more quantification is needed. The important variable for circuit mapping (Figure 3) is whether or not a spike is elicited, rather than the inward current. The authors should determine on what fraction of trials a spike is elicited for each power, for each location. Currently only single-trial raw current-clamp data is shown in Figure 1, but some quantification of this is required, for example:\n\nFor the final power chosen, for each neuron, what fraction of trials led to a spike when the spot was directly on the soma, and what fraction of trials led to a spike when the spot was directly, vertically, above the neuron (i.e. position iv), which seems to be the most vulnerable position for eliciting unwanted action potentials?\n\nWhat was the final power used for the example shown? 61mW is on the threshold of activating the neuron soma directly (position iii), and 89mW (the next power tested) is on the threshold of activating the neuron when the beam is not directed to the soma (position iv).\n\nAs far as I can make out, the authors go on to change the protocol later in the paper (Figure 3, \"circuit mapping\"), using 150ms long pulses in order to generate trains of action potentials. However, all of the analysis in Figure 1 needs to be redone with these experimental parameters, since longer stimulation pulses will increase the probability of unwanted spikes away from the location of light stimulation.\n\nWhat is the latency to action potential for each of the laser powers?\n\nFigure 2: In panel 2D, the authors should show an example of a \"targeted\" neuron (i.e. ChR2 localized to the soma), whilst stimulating at points along the apical dendrite at the same density as that shown for the \"non-targeted\" neuron. Also, the current elicited in the targeted neuron is here lower than the current elicited for the non-targeted neuron, which contradicts panel E, and is not \"representative\" \u2013 what was the stimulation power used in the two cases?\n\nIn panel 2G, the interesting variable is the average number of spikes elicited in current clamp and these data would have been more valuable.\n\nFigure 3: The image quality needs to be refined, and some of the somata are poorly defined. This applies particularly to the cells that are assumed to be connected.\n\nThe voltage-clamp traces in panel 3C are single trial data. The authors should show multiple traces for each connection to convince the reader that a true connection is present, rather than an EPSC which happens to coincide with light stimulation.\n\nThe authors should quantify the calcium signals in all the neurons in the imaged population when a single neuron has been targeted for stimulation (beyond what's shown in Video 1 & 2, which are not informative). Crucially, the authors must show unambiguously that there was only one neuron active on each stimulation trial.\n\nReviewer #3:\n\nThe authors present a novel combination of two known methods, light shaping and opsin targeting, for the purpose of mapping synaptic connections in vitro. This is in principle a very elegant approach for improving the spatial precision of optogenetic activation, currently a key limitation in the field. However, the manuscript has a rather preliminary flavor (several of the key observations appear to be n = 1). The authors are in the position to provide a major advance here by performing a detailed quantification of how accurate and reliable their method is, using ground truth calibrations. For example, the authors have not quantified how accurate their method is with any paired recordings to prove the connections they find are real. They only state that the average connectivity is similar to that in other experiments in which pairs were directly recorded. Most importantly, the lack of detailed quantification (with mean, SD, and N) needs to be addressed prior to publication.\n\nMajor comments:\n\n1) There are major details missing in Figure 1. What is the mean action potential reliability and resolution, i.e. the grand average result of Figure 1A across all neurons? What powers were typically used for AP generation at the soma in these experimental conditions? What are the max currents observed? Please provide mean, SD, and N. Note that the figure was not created with the construct that was ultimately used, which is a weakness.\n\n2) How many cells were used to generate the data in Figure 2\u2014figure supplement 2? It appears that some of the differences are statistically borderline and without complete data including the sample size it is difficult to determine the reliability of this result. Also, how did the authors determine the number of significant digits to include?\n\n3) In describing Figure 3, the authors mention that 3 photostimulation trials are performed at each location. Could the authors please show raw trials, perhaps in a lighter shade behind the average, to indicate the reliability of observed connections?\n\n4) Figure 3 uses a different stimulation duration that rest of paper \u2013 the photostimulation time has been increased to 150 ms for Figure 3. As this value doesn't match the previous calibrations, it is very difficult to use the data in Figure 2 to calibrate Figure 3. How does the longer duration affect spatial resolution, action potential threshold, etc.?\n\n5) Many of the calcium imaging transients in Figure 3 are quite large, and sometimes double-peaked when there is only one EPSC observed (Figure 3C, bottom row, red square). How do the authors explain the discrepancy between the fact that these long photostimulations (150 ms!) may very well induce more than one action potential, but only one post-synaptic response is observed? Many cortical synapses may depress, but not sufficiently to explain these observations.\n\n6) What is the cutoff for a connection and how reliable is this? For example, in the bottom row of Figure 3C, fourth from the right, there is a large calcium transient and some tiny EPSCs \u2013 could these be a weak connection?\n\n7) How often do the authors observe failures to confirm pre-synaptic action potential generation with imaging? They only say \"occasionally\". Excluding these from analysis could heavily bias estimation of connectivity rates!\n\n8) In Figure 3, the authors photostimulate 192 different locations in a grid-like fashion. They don't aim to zap neurons directly, but rather by shooting at many locations, they hope to hit some neurons by chance. A quick segmentation of the image to find neurons and shoot them directly would improve accuracy, reliability, and potentially even be more efficient! Why do the authors not target neurons initially?\n\n9) Have the authors repeated the experiment shown in Figure 3 more than once? If so, please present some grand average data.\n\n10) Losonczy et al. 2010, cited by the authors, shows effective activation of axons. How can the authors be sure that is not occurring here? Can they provide some presynaptic patch confirmations of any of the connections they see?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Single-cell resolution circuit mapping with temporal-focused excitation of soma-targeted channelrhodopsin\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We hope you will be able to submit the revised version within two months, so please let us know if you have any questions first.\n\nSummary:\n\nThe development of somatically targeted opsins is one of the most promising ways of achieving true cellular resolution with optogenetics and will surely have a strong impact the neuroscience community. The authors have considerably improved the quality of the manuscript by adding more data and statistical analysis. There is a strong case now for arguing that this new construct is better suited for mapping connectivity in the circuit using targeted optogenetic stimulation. However a few points of the paper still need additional work before the manuscript is ready to proceed towards publication. We encourage the authors to proceed with these final experiments as a matter of urgency, as this is a highly competitive field.\n\nEssential revisions:\n\n1) The power levels used in the different experiments are often missing, and this information is crucial to appreciate the spatial resolution achieved in the experiments (e.g. how far are the powers used from the saturation value?). The powers used to evoke a single AP are rather high and latency and jittering are rather long compared to what has been reported in the literature. This point is particularly weak considering that in several parts of the manuscript the authors insist on the \"enhanced sensitivity \"of the targeted opsin. Overall this implies that the opsins (somatic or not) used in this experiments are not very efficient and may not be suitable for experiments requiring e.g. multi-spot stimulation. Many datapoints e.g. the ones showing cellular resolution, or the connectivity experiments, are only performed using the targeted opsins and it is difficult to appreciate their importance if one can't compare the same experiments performed with the non-targeted version.\n\n2) In order to showcase the advantage of the 'new targeted' construct, it is crucial to include the axial and lateral profile of spike probability also for the 'non-targeted' construct in Figure 2C, D. Please add this quantification to existing panels in this figure. State the power at which these curves were obtained.\n\n3) Figure 1B: line scans to demonstrate somatic targeting are all done along dendritic processes, while no information or data are provided to show the expression confinement along axons. This would be helpful.\n\n4) Figure 1D: \"each pixel in the map show the direct current\" are the authors plotting the peak current here? Moreover from this map it is difficult to understand the depolarization achieved. The same experiment performed in current clamp would allow us to learn about the spike probability for spot placed out of the target, which ultimately is the key elements to support the necessity of the somatic opsin for the connectivity experiments in Figure 3 or to appreciate the enhanced spatial resolution (see next comment).\n\n5) Figure 3 is nice. The quantification of these connectivity mapping experiments could be included in this figure rather than only in the Results section of the text. For completion, please add an additional example of another such slice experiment in an extra supplementary figure. Also, the information on the stimulation protocol used here is very vague: \"each cell was stimulated in series with 2 seconds between stimuli\": how many stimuli? What power did they use? How confined is the response if experiments as the ones showed in Figure 1 C-D are done using this protocol? How do these results compare if similar experiments are done with a non-somatic opsin?\n\n6) In the discussion the authors justify the use of high power and long photostimulation power:\n\n\"We did not take full advantage of the temporal precision capability of TF to fire action potentials in our current study, instead focusing on a screening method that would identify connections without optimizing the amount of power that would fire each potential presynaptic neuron with minimal latency. We therefore chose longer pulses at a power sufficient to fire most neurons and generate trains of action potentials, which would elicit stronger signals with calcium indicators. For experiments requiring temporal precision, the minimization of action potential latency requires optimization of excitation area and laser power\"\n\nThis paper should convince us about the use of a new optogenetic construct, and (as discussed above) a more detailed characterization of the opsin showing the photostimulation area and laser power that enables AP generation with a temporal resolution and precision comparable to what has been achieved in the literature is important and should be carried out.\n\n7) The sentence \"Furthermore, these techniques could also be used in vivo, where the enhanced sensitivity of the targeted ChR2 makes it especially attractive\" is misleading: in the paper the authors do show that the targeted version is more sensitive than the non-targeted one. But in both cases they use excitation powers much higher than what has been achieved in the literature and demonstrate performances (temporal resolution, latency and jittering) inferior to what has been achieved with ChR2 or C1V1 by other labs. This should be reworded.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single-cell resolution circuit mapping in mouse brain with temporal-focused excitation of soma-targeted channelrhodopsin\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder as the Senior editor, a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) There remain concerns about the intensity and duration of the illumination pulses used (150 ms). This suggests that the construct is not very efficient. Why were such long pulses used? Were shorter pulses used in some experiments? The authors should either demonstrate that their construct is also effective in triggering spikes when using shorter pulses, or provide a convincing justification for the use of longer pulses.\n\n2) Please add to the Methods section some of the text that is currently a response to point 1, related to stimulation power needed to excite the cells. (\"Our manuscript reports excitation powers of between 15 and 285 mW (for both types of opsins); assuming our spot size to be at least 10 \u03bcm wide and 10 \u03bcm thick, we are using powers of no greater than 0.2 to 3.8 mW/\u03bcm2). Expressing power as mW/\u03bcm2 (rather than incident power in hundreds of mW) will be useful for readers.\n\n3) 'Single-cell resolution' is advertised in the title, but is not well supported. We suggest changing the beginning of the title to 'Cellular resolution\u2026'.\n\n4) Please extend the comparison between your results and those of Wu et al. 2013 Plos ONE (since they originated the somatic restriction strategy).\n",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fbbc0e35-56aa-41d9-8645-f6470faadf68",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C1",
+      "claim": "Temporal focusing uses a diffraction grating to separate the spectral components of a pulsed laser beam, resulting in a temporally broadened pulse that is inefficient at excitation except at the focal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "TF uses a diffraction grating (Figure 1\u2014figure supplement 1) to separate the spectral components of a pulsed laser beam, resulting in a temporally broadened pulse that is inefficient at excitation except at the focal plane, where the components are recombined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the temporal focusing method based on established knowledge of the technique and supported by citation to a figure showing the setup.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "437ac6a8-b6e7-447d-8654-8b0b2fba0284",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C2",
+      "claim": "Temporal focusing yields a volume of excitation in which the diameter in the x-y plane and the thickness in the axial plane are controlled independently.",
+      "claim_type": "EXPLICIT",
+      "source": "This yields a volume of excitation in which the diameter in the x-y plane and the thickness in the axial plane are controlled independently (Oron et al., 2012, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Oron et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "730a4276-5cd2-4232-996a-1ec983c1eb9e",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C3",
+      "claim": "The excitation volume was designed to approach the dimensions of a typical neuronal soma.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed our excitation volume to approach the dimensions of a typical neuronal soma (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement supported by reference to a figure showing the excitation volume dimensions.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "e55840c7-198f-4f3c-aae7-b3d3adc8e6ae",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C4",
+      "claim": "ChR2 fusion proteins were generated by attaching a 65 amino acid motif from the Kv2.1 voltage-gated potassium channel to the carboxy terminus of ChR2-EYFP.",
+      "claim_type": "EXPLICIT",
+      "source": "To restrict expression of ChR2 to the soma and proximal dendrites, we generated ChR2 fusion proteins by attaching a 65 amino acid motif from the Kv2.1 voltage-gated potassium channel to the carboxy terminus of ChR2-EYFP (Lim et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing construct generation, with citation to prior work on the Kv2.1 motif.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "1f2be02c-93f5-4181-899e-dc586c823d98",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C5",
+      "claim": "Nontargeted ChR2-EYFP fluorescence was distributed throughout the processes of dissociated cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nontargeted ChR2-EYFP fluorescence was distributed throughout the processes of dissociated cortical neurons that had been filled with a fluorescent dye (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "324c4022-4f43-4f3c-a385-bf708a51ae26",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C6",
+      "claim": "Targeted ChR2-EYFP-Kv2.1 was located primarily in the soma and excluded from the axon and distal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, targeted ChR2-EYFP-Kv2.1 was located primarily in the soma and excluded from the axon and distal dendrites (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "c6a100bd-bdff-4011-bc82-bdc3e030816b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C7",
+      "claim": "The TF-stimulated current declined approximately 10-fold at 50 \u00b5m from the soma with the targeted construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The TF-stimulated current declined ~10-fold at 50 \u00b5m from the soma with the targeted construct, versus two fold for the non-targeted construct (Figure 1C; N=10 untargeted cells from four animals and N=13 targeted cells from six animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "ecfbf416-991b-407f-8314-e442d5cf3a0e",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C8",
+      "claim": "The TF-stimulated current declined approximately 2-fold at 50 \u00b5m from the soma with the non-targeted construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The TF-stimulated current declined ~10-fold at 50 \u00b5m from the soma with the targeted construct, versus two fold for the non-targeted construct (Figure 1C; N=10 untargeted cells from four animals and N=13 targeted cells from six animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "60f5b314-73ec-4ea0-ba7a-7e2aea7741cd",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C9",
+      "claim": "Stimulation of cells expressing non-targeted ChR2 evoked currents up to 200 \u00b5m away from the neuronal soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of cells expressing non-targeted ChR2-evoked currents up to 200 \u00b5m away from the neuronal soma, often delineating a pattern indicative of the dendritic arbor of the cell (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "5271ff7c-2955-4818-a4d7-afc47b00860c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C10",
+      "claim": "Cells expressing the targeted construct exhibited significant currents only when stimulated within the 25\u201350 \u00b5m immediately adjacent to the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing the targeted construct exhibited significant currents only when stimulated within the 25\u201350 \u00b5m immediately adjacent to the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data comparing targeted and non-targeted constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "32c00e3f-1049-4209-af60-19779b3eb628",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C11",
+      "claim": "The lack of direct light-activated currents throughout much of the neuron's dendritic field makes it possible to visualize synaptic currents that would be evoked by ChR2 activation of nearby presynaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of direct light-activated currents throughout much of the neuron's dendritic field makes it possible to visualize synaptic currents that would be evoked by ChR2 activation of nearby presynaptic neurons, even those that lie within the neuron's dendritic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations about reduced dendritic currents.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "594279f6-6cd8-44c7-9559-a48e84ad50fe",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C12",
+      "claim": "Noticeable currents could be detected at distances of 50 \u00b5m or greater from the soma of cells expressing nontargeted ChR2 when stimulating along axonal processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the amount of detected current decreased rapidly for both constructs as TF stimulation was moved along the axon, noticeable currents could be detected at distances of 50 \u00b5m or greater from the soma of cells expressing nontargeted ChR2 (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "0aa73d64-ab4a-48c6-aa93-432ffbdf1c28",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C13",
+      "claim": "Cells expressing targeted ChR2 demonstrated an 80% reduction of current when stimulating just 20 \u00b5m down the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing targeted ChR2 demonstrated an 80% reduction of current when stimulating just 20 \u00b5m down the axon and significantly less current than cells expressing nontargeted ChR2 throughout its examined length (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f33f51fb-e00a-45d7-8398-c1cab15d2276",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C14",
+      "claim": "The targeted ChR2 exhibited increased peak current amplitude in response to TF activation compared to nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the targeted ChR2 also exhibited increased peak current amplitude in response to TF activation, presumably by concentrating channel density at the soma (Figure 2A; from 308.3 \u00b1 43.5 pA in 12 nontargeted cells to 760.5 \u00b1 146.0 pA in 12 targeted cells at 3.63 mW/\u00b5m2; p=0.0101 for main effect of targeting by two-way repeated measures ANOVA)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "503722c7-16cc-4340-b38c-645bb2deabd6",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C15",
+      "claim": "Targeted ChR2 exhibited over three-fold reduction of the power required to reach action potential threshold compared to nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "leading to an over three-fold reduction of the power required to reach action potential threshold (Figure 2B; from 2.75 \u00b1 0.31 mW/\u00b5m2 in 17 nontargeted cells to 0.88 \u00b1 0.23 mW/\u00b5m2 in 19 targeted cells; p=8.028 \u00d7 10\u20135 by Mann-Whitney U Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "817c1ccf-f92f-4561-8587-2bad3c05317b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C16",
+      "claim": "At the threshold stimulation power for each cell, the amount of evoked current was similar between targeted and untargeted constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "At the threshold stimulation power for each cell, the amount of evoked current was similar between targeted and untargeted constructs (261.06 \u00b1 31.62 pA for untargeted ChR2 and 222.70 \u00b1 27.21 pA for targeted ChR2 p=0.3677 by two sample t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8761c374-cfa7-4515-9af7-a3b61a632b9f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C17",
+      "claim": "The targeting modification had no effect on rheobase, other intrinsic physiological parameters, or action potential properties in response to current injections.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the observation that the targeting modification had no effect on rheobase, other intrinsic physiological parameters, or action potential properties in response to current injections (Figure 2\u2014figure supplement 1 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1 and Table 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "26b3c3fb-b9b7-48c6-982f-f4216cd49f15",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C18",
+      "claim": "The full-width at half maximum of action potential generation was 11.1 \u00b5m laterally and 23.3 \u00b5m axially for targeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-width at half maximum of these measurements was 11.1 \u00b5m laterally and 23.3 \u00b5m axially (N=10 cells from 7 animals; Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "17aca73b-589c-4e0c-a890-6bf3bcca04f5",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C19",
+      "claim": "The full-width at half maximum of action potential generation was 19.6 \u00b5m laterally and 36.2 \u00b5m axially for nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar measurements using nontargeted ChR2 demonstrated resolution of 19.6 \u00b5m laterally and 36.2 \u00b5m axially (N=13 cells from 5 animals; Figure 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d248d7a8-5f2f-4812-b6ec-1927ef6cac6f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C20",
+      "claim": "The mean latency from light onset to generation of a single action potential was 38.98 \u00b1 17.33 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of temporal precision, the mean latency from light onset to generation of a single action potential in the above experiments was 38.98 \u00b1 17.33 ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "91d805c1-12fb-480a-b323-58de5f2ade48",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C21",
+      "claim": "The average jitter (defined as the standard deviation of the latency across the ten trials for a given cell) was 6.8 \u00b1 2.1 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "the average jitter (defined as the standard deviation of the latency across the ten trials for a given cell) was 6.8 \u00b1 2.1 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "351c0c02-24c8-407e-846c-b3ee65e56c31",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C22",
+      "claim": "Increasing stimulation power beyond threshold provoked additional action potentials and eventually shortened the latency to first spike to 9.3 \u00b1 1.8 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing stimulation power beyond threshold provoked additional action potentials and eventually shortened the latency to first spike to 9.3 \u00b1 1.8 ms (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8d744f41-2657-44c3-a031-f8ced5965ff3",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C23",
+      "claim": "The latency to first spike of 9.3 \u00b1 1.8 ms is consistent with reported values for stimulating cortical neurons with sculpted light.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with reported values for stimulating cortical neurons with sculpted light (Papagiakoumou et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Papagiakoumou et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f862068a-ba4f-47a1-8258-a6ecc9205de3",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C24",
+      "claim": "Targeted ChR2-expressing cells exhibited shorter action potential latencies than nontargeted ChR2 cells at equivalent stimulation intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted ChR2-expressing cells exhibited shorter action potential latencies than nontargeted ChR2 cells at equivalent stimulation intensity, consistent with latency being power-dependent and the earlier observation that targeted ChR2 is more sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data with inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "6ace32e8-548b-4164-8c19-081ee052e41a",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C25",
+      "claim": "Temporal focusing pulses of 32 ms were effective at generating action potentials in opsin-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal focusing pulses of 32 ms were effective at generating action potentials in opsin-expressing cells, and targeted ChR2 exhibited greatly enhanced photocurrents and lower power thresholds under these conditions (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f63f68f3-dea4-4e83-917b-7c6876fa3575",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C26",
+      "claim": "The combination of temporal focusing and soma-targeted ChR2 expression yields a highly reliable and spatially precise means to stimulate action potentials with somatic illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the combination of temporal focusing and soma-targeted ChR2 expression yields a highly reliable and spatially precise means to stimulate action potentials with somatic illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "4cf5509c-618f-4650-9faa-cf2f8f2fc1a4",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C27",
+      "claim": "A bicistronic AAV construct was generated encoding targeted ChR2-Kv2.1 followed by a P2A ribosomal skipping sequence and a histone 2B-mRuby2 fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a bicistronic adeno-associated virus (AAV) construct encoding targeted ChR2-Kv2.1 followed by a P2A ribosomal skipping sequence and a histone 2B-mRuby2 fusion protein to fluorescently label neuronal nuclei to identify cells for TF stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing construct generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "04e79cc2-6f6d-4e23-b3cb-0f33dc69a27c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C28",
+      "claim": "The average stimulation power used in mapping experiments was 2.29 \u00b1 0.55 mW/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "For these experiments, we used an average stimulation power (2.29 \u00b1 0.55 mW/\u00b5m2) that, when combined with a 150 ms stimulation pulse, frequently led to trains of 2\u20134 action potentials in the patched cells and facilitated detection of larger calcium transients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "1bc34b7c-d602-442e-b86b-d31599bbe137",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C29",
+      "claim": "The imaging power and dwell time did not lead to action potential generation in any cells recorded, instead causing an average inward current of 29.5 \u00b1 9.5 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an imaging power and dwell time that did not lead to action potential generation in any cells recorded, instead causing an average inward current of 29.5 \u00b1 9.5 pA (N = 7 cells from 5 animals)\u2014well below the average rheobase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "6facdba4-6233-41e7-aa14-645bd1d44283",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C30",
+      "claim": "The average rate of detecting a calcium response to TF stimulation of a cell expressing the ChR2-Kv-P2A-H2B-mRuby2 bicistronic construct was 80.00 \u00b1 2.60%.",
+      "claim_type": "EXPLICIT",
+      "source": "In repeated experiments (seven neurons from five animals), another example of which is shown in Figure 3\u2014figure supplement 1, the average rate of detecting a calcium response to TF stimulation of a cell expressing the ChR2-Kv-P2A-H2B-mRuby2 bicistronic construct was 80.00 \u00b1 2.60%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "a35c44a5-38b0-4191-ac0d-1b0ce6c670ec",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C31",
+      "claim": "The average connectivity rate was 10.27 \u00b1 2.60% (27 connections out of 252 cells showing a calcium transient to photostimulation).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the average connectivity rate was 10.27 \u00b1 2.60% (27 connections out of 252 cells showing a calcium transient to photostimulation)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "58b59a4e-dbb2-401c-83f5-165deebde674",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C32",
+      "claim": "The connectivity rate measured with the optogenetic method was not significantly different from results using paired recording.",
+      "claim_type": "EXPLICIT",
+      "source": "which was not significantly different from our own results using paired recording (7 connections out of 115 cells; Fisher's exact test, p=0.18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison between two experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "ee24bb77-ac2c-46ae-bd1c-07e7145d4a99",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C33",
+      "claim": "Direct responses from stimulation of the patched cell's dendritic arbor occurred during stimulation of 28.75 \u00b1 4.46% of the target cells within a single field of view when using nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the experiments, such direct responses occurred during stimulation of 28.75 \u00b1 4.46% of the target cells within a single field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data using nontargeted ChR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "7d7a1904-5d96-4d24-a4c9-1ef08b4f450f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C34",
+      "claim": "Off-target calcium responses occurred with a probability of 15.17 \u00b1 1.79% when using nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "These off-target responses occurred with a probability (the number of events divided by the number of target cells) of 15.17 \u00b1 1.79%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data using nontargeted ChR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "765a2a52-46fc-4892-9361-56d6be30c081",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C35",
+      "claim": "Off-target calcium events were observed at a significantly lower frequency in experiments with the targeted opsin (5.42 \u00b1 1.39%, p<0.01 by two sample t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, these off-target calcium events were observed at a significantly lower frequency in experiments with the targeted opsin (5.42 \u00b1 1.39%, p<0.01 by two sample t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "4e7ac4d2-1b14-4e3a-a8e1-4a08143839db",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C36",
+      "claim": "The average distance between a cell exhibiting an off-target calcium transient and the intended target cell was greater with nontargeted ChR2 (40.6 \u00b1 6.4 \u00b5m versus 18.9 \u00b1 2.4 \u00b5m; p<0.01 by two sample t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the average distance between a cell exhibiting an off-target calcium transient and the intended target cell was greater with nontargeted ChR2 (40.6 \u00b1 6.4 \u00b5m versus 18.9 \u00b1 2.4 \u00b5m; p<0.01 by two sample t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "4c43b1e7-800f-477a-8f26-a0c278623162",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C37",
+      "claim": "The combination of TF and restricted ChR2 facilitated the mapping of local circuitry within the 300 \u00b5m surrounding a neuron without confounding signals from its dendritic arbor.",
+      "claim_type": "EXPLICIT",
+      "source": "Our combination of TF and restricted ChR2 thus facilitated the mapping of local circuitry within the 300 \u00b5m surrounding a neuron without confounding signals from its dendritic arbor and with a higher throughput than that achieved with electrophysiological techniques alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "fb32d1b7-b25a-41fa-ba7f-b021a177f73f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C38",
+      "claim": "Combining temporal focusing for two-photon activation of ChR2 with restriction of ChR2 expression to the soma and proximal dendrites of neurons yields a reliable method for evaluating synaptic connectivity with single-neuron resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrates that combining temporal focusing for two-photon activation of ChR2 with restriction of ChR2 expression to the soma and proximal dendrites of neurons yields a reliable method for evaluating synaptic connectivity with single-neuron resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "68bb16ba-bc4f-4059-9a3c-286c8752f237",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C39",
+      "claim": "The spatially restricted ChR2 expression allows unmasking of synaptic connections from neurons whose somata lie close to the dendrites of the postsynaptic cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatially restricted ChR2 expression we describe allows unmasking of synaptic connections from neurons whose somata lie close to the dendrites of the postsynaptic cell and would have been occluded by direct activation of ChR2 on the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b730b98d-cddd-466d-b03b-ef00d217d3b8",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C40",
+      "claim": "Depletion of ChR2 from axons prevents inadvertent depolarization of boutons or fibers of passage that could compromise attempts to identify the source of a synaptic event.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, depletion of ChR2 from axons prevents inadvertent depolarization of boutons or fibers of passage that could compromise attempts to identify the source of a synaptic event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing reduced axonal ChR2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "17883984-586e-47df-859d-aeb1f664a777",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C41",
+      "claim": "ChR2 harboring the Kv2.1 localization motif showed enhanced sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "ChR2 harboring the Kv2.1 localization motif also showed enhanced sensitivity, which is of particular use in situations where excitation power is at a premium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing lower power thresholds for targeted ChR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "68d8abeb-9a67-431a-96b5-c379d2895ead",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C42",
+      "claim": "The distribution of particular voltage-gated potassium channels defines a subcellular domain along the soma and proximal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of particular voltage-gated potassium channels defines such a subcellular domain along the soma and proximal dendrites (Trimmer, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Trimmer.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "2a906680-411f-4203-a10f-0efc62b8f1e0",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C43",
+      "claim": "A short Kv2.1 C-terminal sequence is sufficient for driving heterologous proteins to the soma and proximal dendrites region.",
+      "claim_type": "EXPLICIT",
+      "source": "and the sufficiency of a short Kv2.1 C-terminal sequence for driving heterologous proteins to this region (Lim et al., 2000) made this strategy ideal for restricting ChR2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Lim et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "85d5902c-e986-483e-a44f-1328ceb99353",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C44",
+      "claim": "Incorporating an ankyrin G binding motif into ChR2 drives its localization to the axon initial segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although incorporating this motif into ChR2 drives its localization to the AIS (Grubb and Burrone, 2010; Wu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3adc5bf6-cdd6-47ed-9974-00c06e144390",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C45",
+      "claim": "AIS-targeted ChR2 does not support light-generated action potentials under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "the resulting construct does not support light-generated action potentials under physiological conditions (Grubb and Burrone, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Grubb and Burrone.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b72ab020-04e4-43d4-bb69-75b7ad5e50a4",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C46",
+      "claim": "AIS-targeted ChR2 alters the intrinsic firing properties of retinal neurons, presumably by displacing endogenous voltage-gated sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AIS-targeted ChR2 alters the intrinsic firing properties of retinal neurons, presumably by displacing endogenous voltage-gated sodium channels whose subcellular localization is also dependent on ankyrin G binding (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Zhang et al., with speculation about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "abf76a9f-4951-4e84-a0cd-73efcbbc14fd",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C47",
+      "claim": "The Kv2.1 targeting strategy currently remains the optimal means of concentrating ChR2 such that action potentials will not be generated by TF stimulation of dendrites >20 \u00b5m away from the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Kv2.1 targeting strategy currently remains the optimal means of concentrating ChR2 such that action potentials will not be generated by TF stimulation of dendrites >20 \u00b5m away from the soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and comparison with alternative approaches.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "373ffeff-ef6d-4002-9c39-8879ce862946",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C48",
+      "claim": "The Kv2.1 targeting approach has been successfully used with opsins to artificially generate center-surround receptive fields in retinal ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this approach has been successfully used with opsins to artificially generate center-surround receptive fields in retinal ganglion cells (Wu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "ae7b9b7c-b9be-4d0e-9738-9b3f9f8f065f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C49",
+      "claim": "The Wu et al. (2013) study showed functional restriction of opsins to the soma and proximal dendrites by examining receptive field responses to wide (200 \u00b5m) bars of one-photon light.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wu et al. (2013) study showed functional restriction of opsins to the soma and proximal dendrites by examining receptive field responses to wide (200 \u00b5m) bars of one-photon light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of prior work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "fb7126eb-fc2b-4eb1-83d7-0927f563b899",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C50",
+      "claim": "The current study measured the somatic targeting at a finer scale than Wu et al. (2013).",
+      "claim_type": "IMPLICIT",
+      "source": "We have now measured the somatic targeting at a finer scale, demonstrated two-photon excitation of targeted ChR2 that is enhanced relative to normal ChR2 under the same conditions, and established the utility of targeted opsins for enhancing the resolution of local connectivity maps of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implicit comparison with prior work, inferred from the statement about measuring at a finer scale.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b0fc2934-3f54-4fa2-b15e-e0261c5feda4",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C51",
+      "claim": "The current study demonstrated two-photon excitation of targeted ChR2 that is enhanced relative to normal ChR2 under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now measured the somatic targeting at a finer scale, demonstrated two-photon excitation of targeted ChR2 that is enhanced relative to normal ChR2 under the same conditions, and established the utility of targeted opsins for enhancing the resolution of local connectivity maps of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3650a7af-e1dd-42af-b6e9-1faab167176c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C52",
+      "claim": "The current study established the utility of targeted opsins for enhancing the resolution of local connectivity maps of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now measured the somatic targeting at a finer scale, demonstrated two-photon excitation of targeted ChR2 that is enhanced relative to normal ChR2 under the same conditions, and established the utility of targeted opsins for enhancing the resolution of local connectivity maps of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "1a4e8f3f-0689-4005-b341-07ffcb946b9a",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C53",
+      "claim": "The soma-targeted ChR2 could be combined with many of the techniques for two-photon optical control of neuronal activity previously developed for caged neurotransmitters or optogenetic probes.",
+      "claim_type": "EXPLICIT",
+      "source": "The soma-targeted ChR2 could be combined with many of the techniques for two-photon optical control of neuronal activity previously developed for caged neurotransmitters or optogenetic probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "047a28ae-8e4f-4fc1-86f5-e0eff153e8c7",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C54",
+      "claim": "The relative merit of the optical activation method depends on the axial resolution, temporal precision required and the number of neurons to be stimulated simultaneously in a given experimental paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative merit of the optical activation method depends on the axial resolution, temporal precision required and the number of neurons to be stimulated simultaneously in a given experimental paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on knowledge of different optical methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "84124367-fb12-47ab-b66a-c6d9c9c83352",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C55",
+      "claim": "Rapid scanning of a diffraction-limited two-photon excitation spot in a pattern on the soma can generate action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rapid scanning of a diffraction-limited two-photon excitation spot in a pattern on the soma can generate action potentials (Packer et al., 2012; Prakash et al., 2012; Rickgauer and Tank, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "527aabfe-2ff0-4522-b3a4-7fefbe09397c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C56",
+      "claim": "Combination of rapid scanning with spatial light modulators allows for simultaneous excitation of neuronal ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "and combination with spatial light modulators allows for simultaneous excitation of neuronal ensembles (Packer et al., 2012, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "56d53437-9384-4e42-8e2a-3a745327ad1e",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C57",
+      "claim": "The temporal resolution of the rapid scanning approach is limited by the time required to scan along the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal resolution of this rapid scanning approach, however, is limited by the time required to scan along the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on knowledge of the rapid scanning method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "9ec2efe6-305e-4e0b-a49c-5ed9e8ab615b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C58",
+      "claim": "Scanless activation of untargeted ChR in brain slices using TF is capable of generating action potentials in hippocampal pyramidal neurons within 1\u20133 ms of light onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Scanless activation of untargeted ChR in brain slices using TF, alone or in combination with spatial light modulators, is capable of generating action potentials in hippocampal pyramidal neurons within 1\u20133 ms of light onset (Andrasfalvy et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Andrasfalvy et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d952bd7a-4139-4edc-ad33-2bf6c581ff8e",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C59",
+      "claim": "Scanless activation of untargeted ChR in brain slices using TF is capable of generating action potentials in cortical neurons in less than 10 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "and in cortical neurons in less than 10 ms (Papagiakoumou et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Papagiakoumou et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d6911ec4-1840-45c6-9e32-c3ef74bc11e0",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C60",
+      "claim": "The minimization of action potential latency requires optimization of excitation area and laser power.",
+      "claim_type": "EXPLICIT",
+      "source": "For experiments requiring temporal precision, the minimization of action potential latency requires optimization of excitation area and laser power (Papagiakoumou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Papagiakoumou et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "c7ba49ff-5f85-48c2-8a9d-928d28ab1f33",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C61",
+      "claim": "The reduced power required to bring soma-targeted opsins to threshold would be an asset to experiments requiring temporal precision or large numbers of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because power is also the limiting factor in extending the area of two-photon activation to large numbers of neurons with spatial light modulators, the reduced power required to bring soma-targeted opsins to threshold would be an asset to such experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d5dfbffc-c45b-4491-b965-7749bbe52a56",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C62",
+      "claim": "The optimal performance of the method relies on sufficient co-expression of an opsin, a marker for opsin expression, and a genetically encoded calcium sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal performance of our method relies on sufficient co-expression of an opsin, a marker for opsin expression, and a genetically encoded calcium sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements for the method based on the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "e5e0a361-f3e1-49b0-bd8e-d3ea20f1c703",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C63",
+      "claim": "For GCaMP6s and similar sensors, there appears to be a balance between sufficient expression to detect single action potentials and excessive levels that lead to a lack of responsiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "For GCaMP6s and similar sensors, there appears to be a balance between sufficient expression to detect single action potentials and excessive levels that lead to a lack of responsiveness (Chen et al., 2013; Packer et al., 2015; Tian et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "7fd81fe9-72e4-490f-aeb6-83173c2e36aa",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C64",
+      "claim": "Heterogeneity in GCaMP expression levels between neurons with viral infection may be partially responsible for the 20% of neurons in which a change in GCaMP fluorescence was not detected with TF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, heterogeneity in GCaMP expression levels between neurons with viral infection may be partially responsible for the 20% of neurons in which we did not detect a change in GCaMP fluorescence with TF stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the cause of the observation.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "fade11e4-1f32-4062-9337-5fce25766538",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C65",
+      "claim": "Co-expression of GCaMP6s as the second member of a single P2A-mediated bicistronic construct resulted in lower than desired GCaMP6s expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also explored the co-expression of GCaMP6s as the second member of a single P2A-mediated bicistronic construct, but the GCaMP6s expression level was lower than desired, resulting in inadequate detection of action potentials (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental results that were not included in the main figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "9b9fb4ca-6c63-4c40-9eae-c918b6a2537d",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C66",
+      "claim": "Future development of these techniques will benefit from bypassing viral systems and instead expressing the calcium sensor or the opsin in transgenic animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Future development of these techniques will therefore benefit from bypassing viral systems and instead expressing the calcium sensor or the opsin in transgenic animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d878af84-87d5-4f76-8e63-145b006560d3",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C67",
+      "claim": "The enhanced sensitivity of the targeted ChR2 should alleviate the concern that there would be sufficient opsin expression from a single genetic locus for activation of neurons with two-photon excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced sensitivity of the targeted ChR2 should alleviate the concern that there would be sufficient opsin expression from a single genetic locus for activation of neurons with two-photon excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the enhanced sensitivity finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "498935b0-6f1b-416d-b9c2-49f009fb427b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C68",
+      "claim": "The somatic targeting approach could be exploited in the context of other opsins such as C1V1.",
+      "claim_type": "EXPLICIT",
+      "source": "The somatic targeting approach could also be exploited in the context of other opsins such as C1V1, which has recently been leveraged for two-photon stimulation of neural circuits in acute slices and in vivo (Packer et al., 2012, 2015; Prakash et al., 2012; Rickgauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, with citations to prior work on C1V1.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "080ba701-e270-4b5c-a5eb-b7d9c1fba8bb",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C69",
+      "claim": "ReaChR is a good candidate for somatic targeting due to its sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Other molecules which may be good candidates for somatic targeting include the red-shifted ReaChR for its sensitivity (Lin et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, with citation to prior work on ReaChR.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "d868ab11-8d80-4783-9516-a3dba8354607",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C70",
+      "claim": "Chronos is a good candidate for somatic targeting due to its rapid temporal characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "and Chronos for its rapid temporal characteristics (Klapoetke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, with citation to prior work on Chronos.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "a1a8b364-282f-42e1-aa8a-5aa982fad06c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C71",
+      "claim": "The somatic restriction of membrane-bound genetically encoded voltage sensors could dramatically reduce background associated with the neuropil and facilitate an all-optical version of the current method.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the somatic restriction of membrane-bound genetically encoded voltage sensors could dramatically reduce background associated with the neuropil and facilitate an all-optical version of our current method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the targeting approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "206bc0a4-7cae-4598-a795-8be33fe40990",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C72",
+      "claim": "The Kv2.1 targeting sequence is unable to restrict the distribution of the single-pass membrane protein CD8.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Kv2.1 targeting sequence is unable to restrict the distribution of the single-pass membrane protein CD8, however, there may be certain structural constraints on the effectiveness of the motif (Lim et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Lim et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "e8fe1b93-b92a-471d-b695-14e75ddb5e77",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C73",
+      "claim": "For the opsins, which are all seven transmembrane domain proteins likely to have a similar structure, the Kv2.1 motif will likely be sufficient to achieve somatic localization.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that at least for the opsins, which are all seven transmembrane domain proteins likely to have a similar structure, the Kv2.1 motif will be sufficient to achieve somatic localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on knowledge of opsin structure.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f43b68a7-3fc8-48f2-bfca-78028b53f8cf",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C74",
+      "claim": "The combination of TF and soma-restricted ChR2 enables functional connectivity mapping and is straightforward and easy to implement with standard two-photon microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our combination of TF and soma-restricted ChR2 enables functional connectivity mapping and is straightforward and easy to implement with standard two-photon microscopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the method.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "34b35ac0-f9a8-43c7-b531-817516cb44da",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C75",
+      "claim": "These techniques could be used in vivo, where the enhanced resolution of the targeted ChR2 makes it especially attractive for selective cell stimulation in behavioral paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these techniques could also be used in vivo, where the enhanced resolution of the targeted ChR2 makes it especially attractive for selective cell stimulation in behavioral paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "07918790-b1bd-4bad-b6b7-f503233448c7",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C76",
+      "claim": "These enhancements to probing brain microcircuitry through optical stimulation promise to reveal much about nervous system function and how it might be modified by experience and perturbed in animal models of neurologic or psychiatric disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These enhancements to probing brain microcircuitry through optical stimulation promise to reveal much about nervous system function and how it might be modified by experience and perturbed in animal models of neurologic or psychiatric disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "eb94d09d-e4fc-4064-a4eb-8d49caa61238",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C77",
+      "claim": "Two-photon activation of single neurons with ChR2 is complicated by its kinetics and low single-channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, two-photon activation of single neurons with ChR2 is complicated by its kinetics and low single-channel conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about ChR2 properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "0e1ea9dc-638f-485f-8ac4-8c89b7a9891f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C78",
+      "claim": "A diffraction-limited spot does not activate sufficient channels simultaneously to reliably bring neurons expressing ChR2 to action potential threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "A diffraction-limited spot does not activate sufficient channels simultaneously to reliably bring neurons expressing ChR2 to action potential threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about ChR2 activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "435fed42-04b9-4c02-9ded-5366abd2f137",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C79",
+      "claim": "Rapid scanning of a diffraction-limited two-photon excitation spot across an opsin-expressing cell allows sufficient temporal integration to generate action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid scanning of a diffraction-limited two-photon excitation spot across an opsin-expressing cell allows sufficient temporal integration to generate action potentials (Packer et al., 2012; Prakash et al., 2012; Rickgauer and Tank, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f9b4a9e9-da86-42d2-bb77-df99a8c6f501",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C80",
+      "claim": "Scanless two-photon excitation by temporal focusing increases the number of simultaneously excited opsin molecules by expanding the beam in the imaging plane without sacrificing the optical sectioning of multiphoton microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, scanless two-photon excitation by temporal focusing (Oron et al., 2005; Zhu et al., 2005) increases the number of simultaneously excited opsin molecules by expanding the beam in the imaging plane without sacrificing the optical sectioning of multiphoton microscopy (Andrasfalvy et al., 2010; Losonczy et al., 2010; Papagiakoumou et al., 2010; Rickgauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "15c22f99-611d-4323-a1ca-f2b1a0bf69c8",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C81",
+      "claim": "The implementation of diffractive optical elements has allowed for more complicated excitation profiles that encompass multiple spots around a cell, ensembles of neurons, or particular branches of dendritic trees.",
+      "claim_type": "EXPLICIT",
+      "source": "The implementation of diffractive optical elements (Fino and Yuste, 2011; Nikolenko et al., 2007; Packer and Yuste, 2011) or spatial light modulators (Dal Maschio et al., 2010; Nikolenko et al., 2008; Packer et al., 2012, 2015; Papagiakoumou et al., 2010, 2009, 2008) has also allowed for more complicated excitation profiles that encompass multiple spots around a cell, ensembles of neurons, or particular branches of dendritic trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "71f4989e-9423-4c43-8c05-931e3ce8995c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C82",
+      "claim": "The ability to use optogenetic stimulation to selectively target single neurons remains challenging because the opsins are expressed throughout the dendritic and axon terminal fields.",
+      "claim_type": "EXPLICIT",
+      "source": "While these approaches have made it possible to provide sufficient two-photon illumination to reliably drive action potentials, the ability to use optogenetic stimulation to selectively target single neurons remains challenging because the opsins are expressed throughout the dendritic and axon terminal fields, generating a potential confounding source of light-induced electrical responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of existing optogenetic methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "ec3cb0aa-7703-44f5-bddd-5ece1fea48c5",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C83",
+      "claim": "It can be difficult to know whether a recorded electrophysiological event is due to stimulation of a presynaptic cell or 'direct' stimulation of a portion of the recorded cell's dendritic arbor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it can be difficult to know whether a recorded electrophysiological event is due to stimulation of a presynaptic cell or 'direct' stimulation of a portion of the recorded cell's dendritic arbor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a challenge in interpreting optogenetic mapping experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "dee052eb-bc5e-43d3-ab42-0ea42876452f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C84",
+      "claim": "Large amplitude direct responses may obscure simultaneous smaller synaptic events.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these possibilities can be distinguished by their kinetics, large amplitude direct responses may obscure simultaneous smaller synaptic events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "74ff6919-643f-491d-8f47-5b1727846d2b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C85",
+      "claim": "There is an indeterminate region of any circuit 'map' coinciding with the dendritic arbors of the recorded neuron, which can extend for 200 \u00b5m or more around the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "This essentially leaves an indeterminate region of any circuit 'map' coinciding with the dendritic arbors of the recorded neuron, which can extend for 200 \u00b5m or more around the soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of existing optogenetic mapping methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b0a2d168-2493-4e0e-853a-51874fb111c8",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C86",
+      "claim": "The optogenetic approach could be compromised by unintended activation of fibers of passage or local axonal boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the optogenetic approach could be compromised by unintended activation of fibers of passage or local axonal boutons, which are known to respond to temporal focusing of two-photon excitation (Andrasfalvy et al., 2010; Losonczy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "34345fbc-71ca-4193-af83-51b78873e7f3",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C87",
+      "claim": "Exclusion of opsins from axonal compartments has previously been achieved by fusing the opsin with targeting domains that bind to myosin Va motors necessary for transporting proteins into dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Exclusion of opsins from axonal compartments has previously been achieved by fusing the opsin with targeting domains that bind to myosin Va motors necessary for transporting proteins into dendrites; one such motif from melanophilin is sufficient to exclude ChR2 from axons and enhance the resolution of neural circuit maps (Lewis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Lewis et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "fd1896e5-7b34-42ee-a7e5-73af9df424e0",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C88",
+      "claim": "ChR2 fused with a melanophilin motif remains distributed throughout the dendritic tree and does not solve the problem of undesired direct activation of a neuron's processes while trying to stimulate other neurons in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting ChR2 distribution, however, remains throughout the dendritic tree and thus does not solve the problem of undesired direct activation of a neuron's processes while trying to stimulate other neurons in close proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the melanophilin targeting approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b3485565-49aa-42b0-ac8e-3f2543939cf9",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C89",
+      "claim": "The Kv2.1 potassium channel has a particularly unique localization to clusters at the neuronal soma and proximal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our alternative targeting approach took advantage of the Kv2.1 potassium channel, which has a particularly unique localization to clusters at the neuronal soma and proximal dendrites (Trimmer, 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Trimmer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8cf47da2-a939-4fad-ae78-5e995983d1a5",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C90",
+      "claim": "The Kv2.1 localization is achieved through a 66-amino acid domain in its C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "achieved through a 66-amino acid domain in its C-terminus (Lim et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Lim et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "98340125-bab1-4474-9ece-72bd588c28c9",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C91",
+      "claim": "The Kv2.1 targeting domain drives its association with myosin IIb and specific post-Golgi transport vesicles destined for the somatic compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "that drives its association with myosin IIb and specific post-Golgi transport vesicles destined for the somatic compartment (Jensen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Jensen et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "26f533fe-96ae-420a-94e9-5d6ffd792225",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C92",
+      "claim": "The Kv2.1 targeting signal is sufficient to alter ChR2 trafficking in retinal ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this targeting signal is sufficient to alter ChR2 trafficking in retinal ganglion cells (Wu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3a6a7341-20c8-4d3e-85da-30dc8c918817",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C93",
+      "claim": "The approach allows robust and precise activation of neurons in brain slices for the construction of functional synaptic connectivity maps with single-cell resolution without loss of information about local connections in the region of the dendritic arbor of the recorded neuron or inadvertent activation of axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach allows robust and precise activation of neurons in brain slices for the construction of functional synaptic connectivity maps with single-cell resolution without loss of information about local connections in the region of the dendritic arbor of the recorded neuron or inadvertent activation of axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings and advantages of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "6b1aed28-4272-4c78-9797-31d4f9523e1e",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C94",
+      "claim": "The full width at half maximum of the temporal focusing excitation volume was 9.0 \u00b5m in the xy plane and 9.5 \u00b5m in the axial plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The full width at half maximum was 9.0 \u00b5m in the xy plane and 9.5 \u00b5m in the axial plane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3d21a537-3ba5-46aa-be6e-e001a0690b1c",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C95",
+      "claim": "The stimulation power for dendritic measurements was 0.92 \u00b1 0.24 mW/\u00b5m2 for targeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "this value was 0.92 \u00b1 0.24 mW/\u00b5m2 for targeted ChR2 and 1.65 \u00b1 0.26 mW/\u00b5m2 for the nontargeted version",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "2038f051-3e42-4c74-9804-ab89aadabb4f",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C96",
+      "claim": "The stimulation power for dendritic measurements was 1.65 \u00b1 0.26 mW/\u00b5m2 for nontargeted ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "this value was 0.92 \u00b1 0.24 mW/\u00b5m2 for targeted ChR2 and 1.65 \u00b1 0.26 mW/\u00b5m2 for the nontargeted version",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "e409bb8b-b9a5-4ac0-bf53-8e3c3a25d6f3",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "claim_id": "C97",
+      "claim": "The increased sensitivity of targeted ChR2 is due to concentrating channel density at the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the targeted ChR2 also exhibited increased peak current amplitude in response to TF activation, presumably by concentrating channel density at the soma",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying the observed increased sensitivity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a70b71ea-70ae-408d-a039-f2b5dee57371",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Temporal focusing (TF) was implemented to create a spatially confined excitation volume with independent control of lateral and axial dimensions, designed to match typical neuronal soma dimensions (9.0 \u00b5m lateral \u00d7 9.5 \u00b5m axial FWHM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C94 describe the TF method and its implementation with appropriate citations to prior work (C1, C2) and experimental characterization (C3, C94). The measurements are supported by figure data showing the excitation volume dimensions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3934e14f-7490-483a-96c4-387d393637e6",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A soma-targeted ChR2 construct was generated by fusing a 65 amino acid Kv2.1 motif to ChR2-EYFP, resulting in localization primarily to the soma and proximal dendrites, in contrast to nontargeted ChR2 which distributed throughout neuronal processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 describe construct generation and localization patterns supported by fluorescence imaging data (Figure 1A). The approach is based on established Kv2.1 targeting mechanisms cited from prior work (Lim et al., 2000).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "50d4e1bb-9136-415b-84b5-e5409686e6c2",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Functional characterization showed that TF-stimulated current declined ~10-fold at 50 \u00b5m from soma with targeted ChR2 versus ~2-fold for nontargeted ChR2, using stimulation powers of 0.92 \u00b1 0.24 mW/\u00b5m\u00b2 and 1.65 \u00b1 0.26 mW/\u00b5m\u00b2 respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C95-C96 present quantitative measurements from dendritic stimulation experiments with appropriate sample sizes (N=10 untargeted, N=13 targeted cells) and statistical analysis showing significant differences between constructs (Figure 1C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "2355f7ce-1e53-4a11-85b0-5d9f9db31565",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spatial mapping of direct currents revealed that nontargeted ChR2 evoked currents up to 200 \u00b5m from soma, while targeted ChR2 showed significant currents only within 25-50 \u00b5m of the cell body, enabling visualization of synaptic currents from nearby presynaptic neurons without dendritic interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 describe spatial mapping results supported by experimental data (Figure 1D). The inference in C11 about enabling synaptic current visualization is logically supported by the reduced dendritic activation demonstrated in C10.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "6b8a8e38-ed7c-4170-8c37-58ac87a7cd80",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Axonal ChR2 expression was substantially reduced with targeting: nontargeted ChR2 showed detectable currents \u226550 \u00b5m along axons, while targeted ChR2 demonstrated 80% current reduction at just 20 \u00b5m from soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 present quantitative measurements of axonal ChR2 distribution supported by experimental data (Figure 1\u2014figure supplement 3B-C) with appropriate sample sizes and statistical comparison showing significant differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8683db02-7b29-4cb1-9628-4b42c472c002",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Targeted ChR2 exhibited increased peak current amplitude (308.3 \u00b1 43.5 pA to 760.5 \u00b1 146.0 pA at 3.63 mW/\u00b5m\u00b2) and >3-fold reduction in power threshold (2.75 \u00b1 0.31 to 0.88 \u00b1 0.23 mW/\u00b5m\u00b2), presumably due to concentrated channel density at the soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 present statistically significant measurements (p=0.0101 and p=8.028\u00d710\u207b\u2075) with appropriate sample sizes. However, C97's mechanistic explanation is speculative. The enhanced sensitivity is well-documented but the mechanism remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "4fc74ec1-abbe-4a3f-b3b7-7d0848d39a6a",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At threshold stimulation power, evoked currents were similar between constructs (261.06 \u00b1 31.62 pA vs 222.70 \u00b1 27.21 pA, p=0.3677), and targeting had no effect on intrinsic physiological parameters including rheobase and action potential properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by statistical analysis and comprehensive electrophysiological characterization (Table 1, Figure 2\u2014figure supplement 1) showing no significant differences in intrinsic properties, confirming that targeting affects localization but not channel function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "8f209557-9b4f-4a90-bf8c-dc5a8e50d111",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spatial resolution of action potential generation was 11.1 \u00b5m lateral \u00d7 23.3 \u00b5m axial for targeted ChR2 versus 19.6 \u00b5m lateral \u00d7 36.2 \u00b5m axial for nontargeted ChR2, with both measurements significantly different (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 present quantitative resolution measurements with appropriate sample sizes (N=10 targeted, N=13 nontargeted) and statistical comparison (Figure 2C-D). The improved resolution with targeted ChR2 is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "18090420-4a87-4e36-aa05-ee1c4910f3b9",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Temporal precision measurements showed mean latency of 38.98 \u00b1 17.33 ms with 6.8 \u00b1 2.1 ms jitter at threshold, decreasing to 9.3 \u00b1 1.8 ms at higher power, consistent with prior reports. Targeted ChR2 exhibited shorter latencies than nontargeted at equivalent intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 present temporal measurements supported by experimental data (Figure 2\u2014figure supplement 2). C23 appropriately cites prior work for comparison. C24's observation about power-dependent latency is consistent with the enhanced sensitivity findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "aff405a2-b896-434c-8b32-0ea4381254d2",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The combination of temporal focusing and soma-targeted ChR2 yields a highly reliable and spatially precise method for stimulating action potentials, effective even with shorter 32 ms pulses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 summarize the method's capabilities supported by experimental validation with 32 ms pulses (Figure 2\u2014figure supplement 3) and the collective evidence from spatial and temporal characterization experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "5ea93f2f-34ea-4150-9a45-b8cd71a62bde",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A bicistronic AAV construct (ChR2-Kv2.1-P2A-H2B-mRuby2) was used for mapping experiments with 2.29 \u00b1 0.55 mW/\u00b5m\u00b2 stimulation power, achieving 80.00 \u00b1 2.60% calcium response detection rate while imaging power caused only 29.5 \u00b1 9.5 pA current (below rheobase).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe the mapping methodology with quantitative parameters. The 80% detection rate (N=7 neurons from 5 animals) and low imaging-induced current demonstrate feasibility, though the 20% non-responsive cells raise questions about expression variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "aa093fb4-bad1-40b5-8556-ca0f1d0e787b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The optogenetic mapping method yielded 10.27 \u00b1 2.60% connectivity rate (27/252 responsive cells), not significantly different from paired recording results (7/115 cells, p=0.18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 present connectivity measurements with appropriate statistical comparison to the gold standard paired recording method. The lack of significant difference validates the optogenetic approach, though sample sizes for paired recording are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "cce00e44-2ef2-4ee9-af4f-5540f53d5cdc",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison with nontargeted ChR2 showed 28.75 \u00b1 4.46% direct dendritic responses and 15.17 \u00b1 1.79% off-target calcium events, both significantly reduced with targeted ChR2 (5.42 \u00b1 1.39% off-target, p<0.01), with off-target distances also reduced (40.6 \u00b1 6.4 \u00b5m vs 18.9 \u00b1 2.4 \u00b5m).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 present comparative data from nontargeted ChR2 experiments (N=3 neurons from 2 animals) with statistical analysis. The reduced off-target activation and shorter distances with targeted ChR2 support the improved specificity, though the nontargeted sample size is smaller.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "dc0953c9-3ffd-47d2-8784-e89d7f80b52b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The combination of TF and soma-restricted ChR2 enables functional connectivity mapping with single-neuron resolution within 300 \u00b5m of a recorded neuron, unmasking synaptic connections near dendrites and preventing inadvertent axonal activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 present the main conclusions supported by the collective experimental evidence. The method's advantages are well-demonstrated through spatial characterization, connectivity measurements, and comparison with nontargeted ChR2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Kv2.1 targeting strategy exploits the natural localization of Kv2.1 channels to soma and proximal dendrites via a 66-amino acid C-terminal domain that associates with myosin IIb and somatic transport vesicles, previously shown effective for ChR2 in retinal ganglion cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 and C89-C92 describe the targeting mechanism with appropriate citations to prior work (Trimmer 2015, Lim et al. 2000, Jensen et al. 2014, Wu et al. 2013). The enhanced sensitivity (C41) is experimentally demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "1e1d1669-9de5-4f65-91f1-9249bd6faf90",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Alternative AIS-targeting using ankyrin G binding motifs was rejected because it fails to support light-generated action potentials and alters intrinsic firing properties, making Kv2.1 targeting the optimal current strategy for preventing dendritic activation >20 \u00b5m from soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 discuss alternative approaches with appropriate citations (Grubb and Burrone 2010, Wu et al. 2013, Zhang et al. 2015). The conclusion favoring Kv2.1 targeting (C47) is supported by comparison with alternatives and experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "ebb5a991-fb51-421b-8285-e5141c7d6d08",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "This study advances beyond prior work (Wu et al. 2013) by measuring somatic targeting at finer scale, demonstrating enhanced two-photon excitation of targeted ChR2, and establishing utility for high-resolution connectivity mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 appropriately contextualize the current work relative to prior studies. The advances claimed are supported by the experimental data presented, including finer spatial characterization and connectivity mapping demonstrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "3edbddf1-505a-4408-9701-33be61232981",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The soma-targeted ChR2 could be combined with various two-photon techniques (rapid scanning, spatial light modulators), with advantages depending on experimental requirements. The reduced power threshold would particularly benefit experiments requiring temporal precision or large neuronal ensembles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C61 discuss potential applications and comparisons with other methods, supported by citations to prior work. However, C53 and C61 are speculative about future applications. The comparative advantages are logical but not experimentally validated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "b554f33e-fbd1-404c-8131-5101a92e4fad",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Optimal method performance requires balanced co-expression of opsin, marker, and calcium sensor. Heterogeneity in GCaMP6s expression may explain 20% non-responsive cells. Future improvements should use transgenic animals, where enhanced ChR2 sensitivity should ensure sufficient expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C67 discuss technical limitations and future directions. C64 is speculative about causes of non-responsiveness. C65 mentions unpublished data. C66-C67 are speculative about future improvements. These are reasonable inferences but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The somatic targeting approach could potentially be applied to other opsins (C1V1, ReaChR, Chronos) and voltage sensors, though structural constraints may limit effectiveness for some proteins (e.g., single-pass membrane proteins like CD8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C73 are largely speculative about future applications with citations to prior work on alternative opsins. C72 cites a known limitation from Lim et al. 2000. C73 speculates about opsin compatibility based on structural similarity. These are reasonable but untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "69239ee2-ad71-47a1-af5e-089164fcd36b",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The TF and soma-restricted ChR2 method is straightforward to implement on standard two-photon microscopes, could be used in vivo for behavioral studies, and promises to advance understanding of nervous system function in health and disease models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 summarize the method and speculate about future applications. C74 is supported by the experimental demonstrations. C75-C76 are speculative about in vivo applications and broader impact, lacking direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "7d761240-799d-4746-acbc-07811b059750",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background and motivation: Two-photon ChR2 activation faces challenges from low conductance requiring expanded illumination, but existing solutions suffer from dendritic/axonal expression causing confounding signals. Prior melanophilin-based axonal exclusion doesn't solve dendritic activation problems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C88 establish the background and motivation with appropriate citations to prior work. These describe established knowledge about ChR2 limitations and existing approaches, providing context for the current study's innovations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    },
+    {
+      "id": "a7fce86d-be7d-47f2-b3fa-713135506f91",
+      "content_id": "90b04c6b-7951-430c-85e5-f97fc3347b76",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The approach enables robust and precise neuronal activation in brain slices for functional connectivity mapping with single-cell resolution without information loss from dendritic arbor regions or inadvertent axonal activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 summarizes the main achievement, supported by the collective experimental evidence including spatial characterization (C7-C13), connectivity measurements (C31-C32), and comparison with nontargeted ChR2 (C33-C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:21:12.375966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fbbc0e35-56aa-41d9-8645-f6470faadf68",
+      "result_id": "a70b71ea-70ae-408d-a039-f2b5dee57371"
+    },
+    {
+      "claim_id": "437ac6a8-b6e7-447d-8654-8b0b2fba0284",
+      "result_id": "a70b71ea-70ae-408d-a039-f2b5dee57371"
+    },
+    {
+      "claim_id": "730a4276-5cd2-4232-996a-1ec983c1eb9e",
+      "result_id": "a70b71ea-70ae-408d-a039-f2b5dee57371"
+    },
+    {
+      "claim_id": "6b1aed28-4272-4c78-9797-31d4f9523e1e",
+      "result_id": "a70b71ea-70ae-408d-a039-f2b5dee57371"
+    },
+    {
+      "claim_id": "e55840c7-198f-4f3c-aae7-b3d3adc8e6ae",
+      "result_id": "3934e14f-7490-483a-96c4-387d393637e6"
+    },
+    {
+      "claim_id": "1f2be02c-93f5-4181-899e-dc586c823d98",
+      "result_id": "3934e14f-7490-483a-96c4-387d393637e6"
+    },
+    {
+      "claim_id": "324c4022-4f43-4f3c-a385-bf708a51ae26",
+      "result_id": "3934e14f-7490-483a-96c4-387d393637e6"
+    },
+    {
+      "claim_id": "c6a100bd-bdff-4011-bc82-bdc3e030816b",
+      "result_id": "50d4e1bb-9136-415b-84b5-e5409686e6c2"
+    },
+    {
+      "claim_id": "ecfbf416-991b-407f-8314-e442d5cf3a0e",
+      "result_id": "50d4e1bb-9136-415b-84b5-e5409686e6c2"
+    },
+    {
+      "claim_id": "3d21a537-3ba5-46aa-be6e-e001a0690b1c",
+      "result_id": "50d4e1bb-9136-415b-84b5-e5409686e6c2"
+    },
+    {
+      "claim_id": "2038f051-3e42-4c74-9804-ab89aadabb4f",
+      "result_id": "50d4e1bb-9136-415b-84b5-e5409686e6c2"
+    },
+    {
+      "claim_id": "60f5b314-73ec-4ea0-ba7a-7e2aea7741cd",
+      "result_id": "2355f7ce-1e53-4a11-85b0-5d9f9db31565"
+    },
+    {
+      "claim_id": "5271ff7c-2955-4818-a4d7-afc47b00860c",
+      "result_id": "2355f7ce-1e53-4a11-85b0-5d9f9db31565"
+    },
+    {
+      "claim_id": "32c00e3f-1049-4209-af60-19779b3eb628",
+      "result_id": "2355f7ce-1e53-4a11-85b0-5d9f9db31565"
+    },
+    {
+      "claim_id": "594279f6-6cd8-44c7-9559-a48e84ad50fe",
+      "result_id": "6b8a8e38-ed7c-4170-8c37-58ac87a7cd80"
+    },
+    {
+      "claim_id": "0aa73d64-ab4a-48c6-aa93-432ffbdf1c28",
+      "result_id": "6b8a8e38-ed7c-4170-8c37-58ac87a7cd80"
+    },
+    {
+      "claim_id": "f33f51fb-e00a-45d7-8398-c1cab15d2276",
+      "result_id": "8683db02-7b29-4cb1-9628-4b42c472c002"
+    },
+    {
+      "claim_id": "503722c7-16cc-4340-b38c-645bb2deabd6",
+      "result_id": "8683db02-7b29-4cb1-9628-4b42c472c002"
+    },
+    {
+      "claim_id": "e409bb8b-b9a5-4ac0-bf53-8e3c3a25d6f3",
+      "result_id": "8683db02-7b29-4cb1-9628-4b42c472c002"
+    },
+    {
+      "claim_id": "817c1ccf-f92f-4561-8587-2bad3c05317b",
+      "result_id": "4fc74ec1-abbe-4a3f-b3b7-7d0848d39a6a"
+    },
+    {
+      "claim_id": "8761c374-cfa7-4515-9af7-a3b61a632b9f",
+      "result_id": "4fc74ec1-abbe-4a3f-b3b7-7d0848d39a6a"
+    },
+    {
+      "claim_id": "26b3c3fb-b9b7-48c6-982f-f4216cd49f15",
+      "result_id": "8f209557-9b4f-4a90-bf8c-dc5a8e50d111"
+    },
+    {
+      "claim_id": "17aca73b-589c-4e0c-a890-6bf3bcca04f5",
+      "result_id": "8f209557-9b4f-4a90-bf8c-dc5a8e50d111"
+    },
+    {
+      "claim_id": "d248d7a8-5f2f-4812-b6ec-1927ef6cac6f",
+      "result_id": "18090420-4a87-4e36-aa05-ee1c4910f3b9"
+    },
+    {
+      "claim_id": "91d805c1-12fb-480a-b323-58de5f2ade48",
+      "result_id": "18090420-4a87-4e36-aa05-ee1c4910f3b9"
+    },
+    {
+      "claim_id": "351c0c02-24c8-407e-846c-b3ee65e56c31",
+      "result_id": "18090420-4a87-4e36-aa05-ee1c4910f3b9"
+    },
+    {
+      "claim_id": "8d744f41-2657-44c3-a031-f8ced5965ff3",
+      "result_id": "18090420-4a87-4e36-aa05-ee1c4910f3b9"
+    },
+    {
+      "claim_id": "f862068a-ba4f-47a1-8258-a6ecc9205de3",
+      "result_id": "18090420-4a87-4e36-aa05-ee1c4910f3b9"
+    },
+    {
+      "claim_id": "6ace32e8-548b-4164-8c19-081ee052e41a",
+      "result_id": "aff405a2-b896-434c-8b32-0ea4381254d2"
+    },
+    {
+      "claim_id": "f63f68f3-dea4-4e83-917b-7c6876fa3575",
+      "result_id": "aff405a2-b896-434c-8b32-0ea4381254d2"
+    },
+    {
+      "claim_id": "4cf5509c-618f-4650-9faa-cf2f8f2fc1a4",
+      "result_id": "5ea93f2f-34ea-4150-9a45-b8cd71a62bde"
+    },
+    {
+      "claim_id": "04e79cc2-6f6d-4e23-b3cb-0f33dc69a27c",
+      "result_id": "5ea93f2f-34ea-4150-9a45-b8cd71a62bde"
+    },
+    {
+      "claim_id": "1bc34b7c-d602-442e-b86b-d31599bbe137",
+      "result_id": "5ea93f2f-34ea-4150-9a45-b8cd71a62bde"
+    },
+    {
+      "claim_id": "6facdba4-6233-41e7-aa14-645bd1d44283",
+      "result_id": "5ea93f2f-34ea-4150-9a45-b8cd71a62bde"
+    },
+    {
+      "claim_id": "a35c44a5-38b0-4191-ac0d-1b0ce6c670ec",
+      "result_id": "aa093fb4-bad1-40b5-8556-ca0f1d0e787b"
+    },
+    {
+      "claim_id": "58b59a4e-dbb2-401c-83f5-165deebde674",
+      "result_id": "aa093fb4-bad1-40b5-8556-ca0f1d0e787b"
+    },
+    {
+      "claim_id": "ee24bb77-ac2c-46ae-bd1c-07e7145d4a99",
+      "result_id": "cce00e44-2ef2-4ee9-af4f-5540f53d5cdc"
+    },
+    {
+      "claim_id": "7d7a1904-5d96-4d24-a4c9-1ef08b4f450f",
+      "result_id": "cce00e44-2ef2-4ee9-af4f-5540f53d5cdc"
+    },
+    {
+      "claim_id": "765a2a52-46fc-4892-9361-56d6be30c081",
+      "result_id": "cce00e44-2ef2-4ee9-af4f-5540f53d5cdc"
+    },
+    {
+      "claim_id": "4e7ac4d2-1b14-4e3a-a8e1-4a08143839db",
+      "result_id": "cce00e44-2ef2-4ee9-af4f-5540f53d5cdc"
+    },
+    {
+      "claim_id": "4c43b1e7-800f-477a-8f26-a0c278623162",
+      "result_id": "dc0953c9-3ffd-47d2-8784-e89d7f80b52b"
+    },
+    {
+      "claim_id": "fb32d1b7-b25a-41fa-ba7f-b021a177f73f",
+      "result_id": "dc0953c9-3ffd-47d2-8784-e89d7f80b52b"
+    },
+    {
+      "claim_id": "68bb16ba-bc4f-4059-9a3c-286c8752f237",
+      "result_id": "dc0953c9-3ffd-47d2-8784-e89d7f80b52b"
+    },
+    {
+      "claim_id": "b730b98d-cddd-466d-b03b-ef00d217d3b8",
+      "result_id": "dc0953c9-3ffd-47d2-8784-e89d7f80b52b"
+    },
+    {
+      "claim_id": "17883984-586e-47df-859d-aeb1f664a777",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "68d8abeb-9a67-431a-96b5-c379d2895ead",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "2a906680-411f-4203-a10f-0efc62b8f1e0",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "b3485565-49aa-42b0-ac8e-3f2543939cf9",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "8cf47da2-a939-4fad-ae78-5e995983d1a5",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "98340125-bab1-4474-9ece-72bd588c28c9",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "26f533fe-96ae-420a-94e9-5d6ffd792225",
+      "result_id": "08ddebd1-b817-4e0f-8a8a-77b6a87525cf"
+    },
+    {
+      "claim_id": "85d5902c-e986-483e-a44f-1328ceb99353",
+      "result_id": "1e1d1669-9de5-4f65-91f1-9249bd6faf90"
+    },
+    {
+      "claim_id": "3adc5bf6-cdd6-47ed-9974-00c06e144390",
+      "result_id": "1e1d1669-9de5-4f65-91f1-9249bd6faf90"
+    },
+    {
+      "claim_id": "b72ab020-04e4-43d4-bb69-75b7ad5e50a4",
+      "result_id": "1e1d1669-9de5-4f65-91f1-9249bd6faf90"
+    },
+    {
+      "claim_id": "abf76a9f-4951-4e84-a0cd-73efcbbc14fd",
+      "result_id": "1e1d1669-9de5-4f65-91f1-9249bd6faf90"
+    },
+    {
+      "claim_id": "373ffeff-ef6d-4002-9c39-8879ce862946",
+      "result_id": "ebb5a991-fb51-421b-8285-e5141c7d6d08"
+    },
+    {
+      "claim_id": "ae7b9b7c-b9be-4d0e-9738-9b3f9f8f065f",
+      "result_id": "ebb5a991-fb51-421b-8285-e5141c7d6d08"
+    },
+    {
+      "claim_id": "fb7126eb-fc2b-4eb1-83d7-0927f563b899",
+      "result_id": "ebb5a991-fb51-421b-8285-e5141c7d6d08"
+    },
+    {
+      "claim_id": "b0fc2934-3f54-4fa2-b15e-e0261c5feda4",
+      "result_id": "ebb5a991-fb51-421b-8285-e5141c7d6d08"
+    },
+    {
+      "claim_id": "3650a7af-e1dd-42af-b6e9-1faab167176c",
+      "result_id": "ebb5a991-fb51-421b-8285-e5141c7d6d08"
+    },
+    {
+      "claim_id": "1a4e8f3f-0689-4005-b341-07ffcb946b9a",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "047a28ae-8e4f-4fc1-86f5-e0eff153e8c7",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "84124367-fb12-47ab-b66a-c6d9c9c83352",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "527aabfe-2ff0-4522-b3a4-7fefbe09397c",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "56d53437-9384-4e42-8e2a-3a745327ad1e",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "9ec2efe6-305e-4e0b-a49c-5ed9e8ab615b",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "d952bd7a-4139-4edc-ad33-2bf6c581ff8e",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "d6911ec4-1840-45c6-9e32-c3ef74bc11e0",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "c7ba49ff-5f85-48c2-8a9d-928d28ab1f33",
+      "result_id": "3edbddf1-505a-4408-9701-33be61232981"
+    },
+    {
+      "claim_id": "d5dfbffc-c45b-4491-b965-7749bbe52a56",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "e5e0a361-f3e1-49b0-bd8e-d3ea20f1c703",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "7fd81fe9-72e4-490f-aeb6-83173c2e36aa",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "fade11e4-1f32-4062-9337-5fce25766538",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "9b9fb4ca-6c63-4c40-9eae-c918b6a2537d",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "d878af84-87d5-4f76-8e63-145b006560d3",
+      "result_id": "b554f33e-fbd1-404c-8131-5101a92e4fad"
+    },
+    {
+      "claim_id": "498935b0-6f1b-416d-b9c2-49f009fb427b",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "080ba701-e270-4b5c-a5eb-b7d9c1fba8bb",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "d868ab11-8d80-4783-9516-a3dba8354607",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "a1a8b364-282f-42e1-aa8a-5aa982fad06c",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "206bc0a4-7cae-4598-a795-8be33fe40990",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "e8fe1b93-b92a-471d-b695-14e75ddb5e77",
+      "result_id": "f8b7845d-07fd-4f5b-85e1-7497b25e2cc2"
+    },
+    {
+      "claim_id": "f43b68a7-3fc8-48f2-bfca-78028b53f8cf",
+      "result_id": "69239ee2-ad71-47a1-af5e-089164fcd36b"
+    },
+    {
+      "claim_id": "34b35ac0-f9a8-43c7-b531-817516cb44da",
+      "result_id": "69239ee2-ad71-47a1-af5e-089164fcd36b"
+    },
+    {
+      "claim_id": "07918790-b1bd-4bad-b6b7-f503233448c7",
+      "result_id": "69239ee2-ad71-47a1-af5e-089164fcd36b"
+    },
+    {
+      "claim_id": "eb94d09d-e4fc-4064-a4eb-8d49caa61238",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "0e1ea9dc-638f-485f-8ac4-8c89b7a9891f",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "435fed42-04b9-4c02-9ded-5366abd2f137",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "f9b4a9e9-da86-42d2-bb77-df99a8c6f501",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "15c22f99-611d-4323-a1ca-f2b1a0bf69c8",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "71f4989e-9423-4c43-8c05-931e3ce8995c",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "ec3cb0aa-7703-44f5-bddd-5ece1fea48c5",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "dee052eb-bc5e-43d3-ab42-0ea42876452f",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "74ff6919-643f-491d-8f47-5b1727846d2b",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "b0a2d168-2493-4e0e-853a-51874fb111c8",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "34345fbc-71ca-4193-af83-51b78873e7f3",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "fd1896e5-7b34-42ee-a7e5-73af9df424e0",
+      "result_id": "7d761240-799d-4746-acbc-07811b059750"
+    },
+    {
+      "claim_id": "3a6a7341-20c8-4d3e-85da-30dc8c918817",
+      "result_id": "a7fce86d-be7d-47f2-b3fa-713135506f91"
+    }
+  ],
+  "comparisons": []
+}

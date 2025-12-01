@@ -1,0 +1,2405 @@
+{
+  "submission": {
+    "id": "ad9fb53e-55e6-4380-a38f-3c2bb3f9ed2b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:50:50.934836Z",
+    "updated_at": "2025-11-30T21:50:50.934836Z"
+  },
+  "content": [
+    {
+      "id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "submission_id": "ad9fb53e-55e6-4380-a38f-3c2bb3f9ed2b",
+      "content_type": "manuscript",
+      "content_text": "# A common bacterial metabolite elicits prion-based bypass of glucose repression\n\n## Authors\n\n- David M Garcia<sup>1</sup> ([ORCID: 0000-0003-0600-9527](https://orcid.org/0000-0003-0600-9527))\n- David Dietrich<sup>2</sup> ([ORCID: 0000-0002-6477-4078](https://orcid.org/0000-0002-6477-4078))\n- Jon Clardy<sup>2</sup> ([ORCID: 0000-0003-0213-8356](https://orcid.org/0000-0003-0213-8356)) \u2020\n- Daniel F Jarosz<sup>1</sup> ([ORCID: 0000-0003-3497-5888](https://orcid.org/0000-0003-3497-5888)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Systems Biology Stanford University School of Medicine Stanford United States\n2. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n3. Department of Developmental Biology Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRobust preference for fermentative glucose metabolism has motivated domestication of the budding yeast Saccharomyces cerevisiae. This program can be circumvented by a protein-based genetic element, the [GAR+] prion, permitting simultaneous metabolism of glucose and other carbon sources. Diverse bacteria can elicit yeast cells to acquire [GAR+], although the molecular details of this interaction remain unknown. Here we identify the common bacterial metabolite lactic acid as a strong [GAR+] inducer. Transient exposure to lactic acid caused yeast cells to heritably circumvent glucose repression. This trait had the defining genetic properties of [GAR+], and did not require utilization of lactic acid as a carbon source. Lactic acid also induced [GAR+]-like epigenetic states in fungi that diverged from S. cerevisiae ~200 million years ago, and in which glucose repression evolved independently. To our knowledge, this is the first study to uncover a bacterial metabolite with the capacity to potently induce a prion.\n\n## Introduction\n\nSmall molecules commonly drive productive and destructive relationships between species. The breadth of these molecular messages is vividly illustrated by examples ranging from bacterial control of fungal pathogenesis to programming of multi-cellular development (Alegado et al., 2012; Ehrhardt et al., 1992; Hogan and Kolter, 2002; Hogan et al., 2004). Small molecule interactions between mammals and their associated gut microbiota may have important consequences for human health (David et al., 2014; Lozupone et al., 2012). Cross-kingdom interactions also have commercial relevance\u00a0\u2013\u00a0for example those that occur between yeast and bacteria in the fermentation of alcoholic beverages (Bisson et al., 2007; Bokulich et al., 2012; Boulton et al., 1996). Pasteur and others since have noted that lactic acid bacteria are a common contaminant in incomplete fermentations (Boulton et al., 1996; Pasteur, 1873). Indeed, brewers and vintners have long appreciated that some bacteria have the power to both reduce the ethanol content and spoil the taste profile of fermented beverages.\n\nThe budding yeast S. cerevisiae is a metabolic specialist: it strongly favors glucose as a carbon source even when other carbohydrates are present (Johnston, 1999). This is achieved through stringent regulation of enzymes involved in glycolysis and respiration at both the transcriptional and post-transcriptional levels (Johnston, 1999; Zampar et al., 2013). Such glucose-associated repression of metabolism is a defining feature of S. cerevisiae, and many other microorganisms (Gorke and Stulke, 2008). A similar preference for glycolytic metabolism, even in the presence of oxygen, is a defining feature of cancer cells, known as the \u2018Warburg effect\u2019 (Hsu and Sabatini, 2008; Liberti and Locasale, 2016; Vander Heiden et al., 2009; Warburg, 1956).\n\nWhen yeast cultures switch from metabolizing glucose to utilizing a respirative carbon source such as glycerol, they experience a pronounced lag phase known as the diauxic shift. This pause in growth occurs as a new transcriptional program is engaged to favor respiration (Galdieri et al., 2010; Zampar et al., 2013). The robust nature of this glucose-associated repression can be readily observed by using glucose mimetics. Even in trace quantities, these molecules provide a stable glucose signal, but cannot be metabolized. For example, just 0.05% of the mimetic glucosamine prevents yeast cells from utilizing non-fermentable carbon sources present at 40-fold higher concentrations (Ball et al., 1976; Brown and Lindquist, 2009; Kunz and Ball, 1977).\n\nWe recently reported that yeast strains have the ability to overcome such glucose-associated repression of metabolism at frequencies that depend upon the ecological niche from which they were isolated (Jarosz et al., 2014a,\u00a02014b). This allows them to switch from being metabolic specialists to metabolic generalists, gaining the ability to metabolize a wide variety of carbon sources in the presence of glucose. This heritable change in metabolic program is not accompanied by a change in the yeast genotype. Rather, the trait is cytoplasmically transduced from mother cells to their daughters through the inheritance of an altered protein conformation \u2013 a prion known as [GAR+] (named for its ability to reverse glucose associated repression) (Brown and Lindquist, 2009). Although the molecular details of [GAR+] are incompletely understood, several operational tests to identify and modify it are known. [GAR+]\u2019s nomenclature derives from defining characteristics of prion biology: dominance in genetic crosses (denoted by capital letters) and transmission to all progeny of meiosis (denoted by brackets). The ability to acquire [GAR+] has been widely conserved among wild S. cerevisiae strains and is also present in fungal species separated by at least two hundred million years of evolution (Jarosz et al., 2014b).\n\nUnder monoculture conditions in the laboratory, acquisition of [GAR+] occurs much more frequently than spontaneous mutations that reverse glucose repression (Brown and Lindquist, 2009). In nature, the precise rates of [GAR+] appearance correlate with environmental niche from which yeast are derived, suggestive of a bet-hedging mechanism for adaptation in environments with fluctuating carbon stores (Griswold and Masel, 2009; Jarosz et al., 2014b; Lancaster and Masel, 2009). Perhaps most remarkably, [GAR+] can be induced by cross-kingdom communication with many bacterial species, and this interaction has been conserved over long evolutionary timescales (Jarosz et al., 2014a, 2014b). Notably, this relationship substantiates a model in which [GAR+]\u2019s benefit as a reversible bet-hedging element would alone be sufficient to motivate its evolutionary retention (Jarosz et al., 2014b).\n\nInduction of [GAR+] by bacteria occurs with an extremely high efficiency \u2013\u00a0orders of magnitude greater than the spontaneous acquisition rate\u00a0\u2013\u00a0and the consequences are mutually beneficial. [GAR+] yeast cells gain the ability to metabolize a wider range of carbohydrates, improved uptake of limiting nutrients, and increased chronological lifespan (Jarosz et al., 2014a). [GAR+] yeast cells also produce less ethanol, which itself has anti-bacterial properties. This generates a more hospitable environment for the inducing bacteria and allows them to flourish in fermentations where they would otherwise have perished (Jarosz et al., 2014a); bacterial species that strongly induce [GAR+] are common contaminants in failed wine fermentations (Bisson et al., 2007; Boulton et al., 1996; Jarosz et al., 2014a). When yeast and inducing bacteria are co-cultured on solid medium, induction of [GAR+] occurs along a spatial gradient emanating from the bacteria. Conditioned medium generated from cultures of these bacteria also induces the prion (Jarosz et al., 2014a). These results and others have led us to propose that inducing bacteria produce a diffusible signal that promotes [GAR+] in yeast.\n\nHere we report that the common bacterial metabolite lactic acid can serve as this inducing signal. Different concentrations of lactic acid elicit distinct and heritable [GAR+]-like phenotypes that have the properties of \u2018strong\u2019 and \u2018weak\u2019 variants of the prion. Lactic acid also has the capacity to induce [GAR+]-like epigenetic states in evolutionarily distant organisms in which glucose repression has evolved independently. Our results suggest that [GAR+] induction may provide a molecular explanation for Pasteur\u2019s observations, and indicate that links between lactate and diversification of metabolic strategies have been repeatedly employed to modulate the collective behavior of eukaryotic cells. More importantly, we for the first time uncover a bacterially secreted molecule that induces a prion. We do so using a straightforward approach with few technical prerequisites, which we propose could be used for discovering other natural molecules that potentiate epigenetic transformations.\n\n## Results\n\n### Lactic acid induces robust and heritable reversal of glucose repression\n\nDiverse bacteria have the capacity to induce [GAR+] in neighboring yeast cells through a cross-kingdom chemical communication. To characterize the diffusible element that was responsible for eliciting this change in yeast metabolism, we employed activity guided fractionation. We first grew large-volume cultures of the inducing bacteria S. gallinarum and L. innocua to saturation in rich media containing glycerol as a principle carbon source (YP-glycerol). After removing the bacteria from the media by filtration to create a sterile conditioned medium, we assessed its capacity to induce growth on media containing glycerol (2%) and glucosamine (0.05%), hereafter abbreviated as GLY + GlcN. GlcN provides a stable, non-metabolizable glucose signal (Ball et al., 1976; Kunz and Ball, 1977). Serial dilutions of na\u00efve [gar\u2212] yeast did not grow on GLY + GlcN alone over a five day period, but pre-treatment with the conditioned medium caused the yeast cells to grow robustly.\n\nWe then purified the extracts from each inducing bacterium using reversed-phase high performance liquid chromatography (HPLC) on a C18 column. We collected fractions and monitored their ability to induce yeast cells to grow in GLY + GlcN. Pre-treatment with this purified extract afforded growth to a similar degree as S. gallinarum itself (Figure 1A). After these two rounds of purification, the inducing activity eluted in a single fraction as a homogenous peak. We combined active fractions from multiple injections and analyzed this peak by NMR and mass spectrometry. Both analyses revealed that the active fraction contained high concentrations of lactic acid (Figure 1B; Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig1-v1.jpg)\n\n**Figure 1.:** (A) S. gallinarum spotted next to yeast on GLY + GlcN (YP with 2% glycerol and 0.05% glucosamine) induced growth of na\u00efve S. cerevisiae in a spatially dependent manner. An extract prepared from a S. gallinarum conditioned medium induced [GAR+] with similar strength. Each panel shows two biological replicates of yeast colonies spotted in five-fold serial dilutions from saturated cultures. (Bacterial spots are undiluted.) (B) Multiple-reaction monitoring-mass spectrometry (m/z 89.0200, 43.1000) traces of pure lactic acid (top), the purified active fraction from S. gallinarum conditioned medium (middle) and a co-injection of active fraction spiked with pure lactic acid (bottom). Results indicate that lactic acid is present in the active fraction (see Materials and methods). Note that y-axis scale differs between the top two traces due to the difference of lactic acid concentration in the pure standard, but they are normalized here for ease of viewing. (C) Plating assay (see Materials and methods) showing that both L- and D- isomers of lactic acid strongly induce [GAR+] in a concentration dependent manner. Plotted are the fraction of total colony forming units (CFUs) that grew on GLY + GlcN (mean with standard deviation from three biological replicates). Ten-fold dilutions were used for plates lacking lactic acid; 1000-fold and 10,000-fold dilutions were used for plates containing 0.025% LA and 0.625% LA, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Four biological replicates of [GAR+] or [gar\u2212] cells were grown in GLY or GLY + 0.35% D-lactic acid liquid media, with OD600 measurements taken every six minutes over four days using an automated Eon microplate reader (BioTek Instruments, Winooski, VT). [GAR+] cells neither grew faster than [gar\u2212] cells in glycerol alone nor when lactic acid was added. (Note that [GAR+] cells did have a slightly longer lag time, i.e. slightly more time passed before they entered exponential phase, even though their growth rate during exponential phase was equivalent to that of [gar\u2212] cells.) Solid lines mark mean values, dashed lines standard deviation.\n\nLactic acid, a small organic molecule, exists in two distinct forms: L-(+)-lactic acid (L-LA) and its mirror image D-(\u2013)-lactic acid (D-LA). Both occur naturally. Some bacteria, including the class known as lactic acid bacteria (LAB), have the ability to produce one or both forms from carbohydrates (Eiteman and Ramalingam, 2015; Salminen et al., 2004). Eukaryotes typically can metabolize both isomers, sometimes to varying degrees (Adeva-Andany et al., 2014; Pajot and Claisse, 1974). Malolactic fermentation by LAB in winemaking can typically yield up to 2.5\u2009g/L of lactic acid, or 0.25% (Boulton et al., 1996); in other fermented foods, concentrations can exceed 10\u2009g/L, or >1% (Fleming et al., 1988; Plengvidhya et al., 2007). Moreover, many bacterial species that we previously found to strongly induce [GAR+] are known LAB (Jarosz et al., 2014a).\n\nTo establish whether lactic acid was sufficient to induce heritable reversal of glucose repression in S. cerevisiae, we tested the ability of yeast to grow on GLY + GlcN agar plates supplemented with concentrations of L- or D-lactic acid at 0.025 or 0.625%. We saw robust reversal of glucose repression in this range from both stereoisomers, in a concentration dependent manner (Figure 1C). D-lactic acid induced cells to acquire the phenotype slightly more rapidly (data not shown). Addition of 0.05% lactic acid did not increase growth on YP alone, eliminating the possibility that the yeast were simply metabolizing the lactic acid (data not shown). Induction was also robust in synthetic complete medium, further establishing that it was due to the added lactic acid, rather than unknown components of the medium (e.g. yeast extract, peptone, or an unknown metabolite therein; Figure 1\u2014figure supplement 2). Finally, we addressed the possibility that the presence of lactic acid could select for pre-existing [GAR+] cells, as opposed to true induction of [gar\u2212] cells into the [GAR+] state. We examined the growth rates of isogenic [GAR+] cells and [gar\u2212] cells in liquid YP-glycerol (GLY) alone or in YP-glycerol supplemented with 0.35% lactic acid. We did not observe any significant prion-dependent differences in growth (Figure 1\u2014figure supplement 3), supporting an induction mechanism rather than selection of a pre-existing population.\n\n### Reversal of glucose-associated repression is due to [GAR+]\n\nGlucose repression can be commonly circumvented in S. cerevisiae by induction of the [GAR+] prion, but it can less frequently arise from genetic mutations (Ball et al., 1976; Kunz and Ball, 1977) and, in principle, from other heritable epigenetic modifications (Jarosz et al., 2014a,\u00a02014b). We thus tested whether the reversal of glucose repression that we observed in response to lactic acid was due to [GAR+]. To do so we examined hallmarks of prion-based inheritance: dominance in genetic crosses and the ability to be heritably reduced or eliminated by perturbations in chaperone activity (Shorter and Lindquist, 2005; Wickner et al., 2004). We first mated yeast cells that had been induced with 0.1% lactic acid to na\u00efve isogenic mating partners and selected for diploids. All diploids we tested grew on GLY + GlcN medium, and moreover exhibited the same unusual pattern of semi-dominance (Figure 2A) \u2013 in which the diploid cells exhibit a strength of reversal of glucose repression that is intermediate between the two haploid parents \u2013 that is highly characteristic of both spontaneous and bacterially-induced [GAR+] (Brown and Lindquist, 2009; Jarosz et al., 2014a). We next sporulated diploid cells induced with lactic acid, dissected multiple tetrads, and examined the ability of the resulting spores to grow on GLY + GlcN. Nearly all spores we tested (29 of 31) exhibited the [GAR+] phenotype, in agreement with the non-Mendelian, dominant inheritance previously noted for both spontaneous and bacterially induced [GAR+] cells (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig2-v1.jpg)\n\n**Figure 2.:** (A) Dominance in crosses between [GAR+] strains and [gar\u2212] strains is seen in colonies isolated from a GLY + GlcN plate (spontaneous [GAR+]), as well as those induced with 0.1% D-lactic acid (LA-induced [GAR+]). Five-fold serial dilutions are shown for three biological replicates; orange coloring indicates strains exhibiting the [GAR+] phenotype. (B) Lactic acid-induced cells can be cured of the [GAR+] phenotype with transient expression of a dominant negative Hsp70 variant (Ssa1-K69M or Hsp70DN). Single colonies were propagated alone or with a plasmid expressing Hsp70DN for ~125 generations, bottlenecked each ~25 generations. After verifying plasmid loss, colonies were again tested for their capacity to grow on GLY + GlcN medium. Each image shows five-fold serial dilutions for three biological replicates. (C) A strain with diminished expression of PMA1, pma1-DAmP, has reduced spontaneous [GAR+] acquisition and is not induced by lactic acid. Lactic acid-induction frequencies differ from those in Figure 1C due to strain background BY4741, which has a lower frequency of [GAR+] acquisition (Brown and Lindquist, 2009). Plotted as in Figure 1C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative spores from control (4), spontaneous [GAR+] (8), and lactic acid-induced [GAR+] diploids (16) are shown. Five-fold serial dilutions are shown for each spore.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each image shows five-fold serial dilutions for two representative biological replicates.\n\n[GAR+] is unusual among known prions in that it is not influenced by perturbation of the Hsp104 disaggregase (Brown and Lindquist, 2009; Jarosz et al., 2014a). Instead it is sensitive to perturbation of Hsp70 function (Brown and Lindquist, 2009; Jarosz et al., 2014a,\u00a02014b). We assembled multiple colonies that had been induced with lactic acid to grow on GLY + GlcN plates. We then transformed them with a plasmid that constitutively expressed a dominant negative Hsp70 variant (Ssa1-K69M, or Hsp70DN). We passaged these cells five times on media that selected for the plasmid. We then passaged them three times on non-selective plates (and confirmed plasmid loss) before retesting them on GLY + GlcN plates. This regimen cured multiple independent clones of their induced [GAR+] phenotype, indicating that the lactic acid induced colonies have the same Hsp70-dependency as spontaneous and bacterially induced [GAR+] cells (Figure 2B). We also grew induced cells on plates containing an Hsp70 inhibitor, myricetin (Chang et al., 2011; Koren et al., 2010), at concentrations that did not affect growth on GLY medium. This regimen, which has been shown to inhibit the growth of both spontaneous and bacterially induced [GAR+] on GLY + GlcN (Jarosz et al., 2014b),\u00a0also reduced the ability of these colonies to circumvent glucose repression that had been induced by lactic acid (Figure 2\u2014figure supplement 2).\n\nWe next tested whether our lactic acid induced isolates exhibited genetic characteristics related to proteins originally linked to spontaneous [GAR+]. PMA1 encodes the essential major plasma membrane proton pump in yeast; in [GAR+] cells Pma1 adopts an altered conformation and associates more strongly with another protein, Std1 (Brown and Lindquist, 2009). Because PMA1 is essential, we employed pma1-DAmP, a degron allele that reduces the amount of protein expressed (Breslow et al., 2008). Cells harboring this allele had a low frequency of spontaneous prion acquisition, and could not be induced to acquire [GAR+] by exposure to lactic acid (Figure 2C). Thus, the heritable bypass of glucose repression induced by lactic acid has the same prion-like patterns of inheritance and depends upon the same proteins as spontaneous and bacterially induced [GAR+]. Although this lactic acid-induced epigenetic state could in principle differ from the spontaneous prion in other unknown ways, for simplicity we hereafter refer to it as [GAR+].\n\n### Influence of yeast lactic acid metabolism on [GAR+] induction\n\nLactic acid can be imported into yeast via saturable (\u201cactive\u201d') and unsaturable ('passive') mechanisms (Casal et al., 1999; Pacheco et al., 2012; Paiva et al., 2013). Both depend upon the transcription factor SOK2, and the active mechanism is ultimately mediated by the monocarboxylate transporter JEN1. Jen1 is required for yeast to grow on lactic acid as a sole carbon source, but is down-regulated during glucose repression (Casal et al., 1999; Pacheco et al., 2012), and its transcript was not abundant in [GAR+] cells compared to control cells (Brown and Lindquist, 2009; Jarosz et al., 2014a). Deletion of JEN1 greatly reduces growth on glycerol compared to wild-type cells, precluding its emergence in the previous screens for genes affecting [GAR+] (Brown and Lindquist, 2009; Jarosz et al., 2014a). We therefore tested if lactic acid could induce jen1\u2206 cells to acquire [GAR+]. Deletion of JEN1 did not influence [GAR+] induction by lactic acid at either low or high concentrations (Figure 3A,B), indicating that active transport is not required. We also tested whether enzymes reported to be involved in lactic acid metabolism in the Saccharomyces Genome Database (Cherry et al., 2012) could influence the ability of this molecule to induce [GAR+]. Individual deletion of these various lactic acid dehydrogenases and transhydrogenases (DLD1, DLD2, DLD3, and CYB2) also had no significant effect on [GAR+] induction by lactic acid (Figure 3A,B). Thus, the cellular mechanisms engaged by lactic acid to induce [GAR+] do not require its active import or its metabolism.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig3-v1.jpg)\n\n**Figure 3.:** (A) Plating assay (see Materials and methods) measuring induction of [GAR+] at a low (left) or high concentration (right) of L-lactic acid. Strains are in the W303 background, and cell dilutions match those in Figure 1C. We note that annotations of DLD2 and DLD3 as D-lactate dehydrogenases have recently been challenged by data suggesting they are instead transhydrogenases (Becker-Kettern et al., 2016). Only DLD1 is required for yeast to grow on D-lactic acid as a sole carbon source. Plotted the same as in Figure 1C. B.) Plating assay measuring induction of [GAR+] by D-lactic acid. Otherwise as in (A).\n\nSOK2 previously emerged as a hit in the screen for yeast mutants that were impaired in their ability to acquire [GAR+] upon induction by the bacterium Staphylococcus hominis (Jarosz et al., 2014a). We replicated this result using S. gallinarum in a co-plating assay on GLY + GlcN (Figure 4A). We then tested whether loss of SOK2 impaired the capacity of lactic acid alone to induce [GAR+] in yeast cells. It did: yeast cells in which SOK2 was deleted were not induced by lactic acid (Figure 4B). Thus, the previously described passive import of lactic acid (Paiva et al., 2013) is likely the dominant means through which this inducing signal is transmitted from bacteria to neighboring fungi.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig4-v1.jpg)\n\n**Figure 4.:** (A) S. gallinarum spotted next to either wild type or sok2\u2206 yeast cells on GLY + GlcN, or control medium GLY. (B) Plating assay (see Materials and methods) comparing spontaneous and lactic acid-induced [GAR+] frequency in wild type and sok2\u2206 cells. Lactic acid-induction frequencies differ from those in Figure 1C due to strain background BY4741, which has a lower frequency of [GAR+] acquisition (Brown and Lindquist, 2009). Plotted the same as in Figure 1C.\n\n### Lactic acid concentration influences the strength of the [GAR+] activity state\n\nSince environmental conditions can exert a strong influence on the amount of lactic acid produced by bacteria, we next tested differing amounts of lactic acid, over a larger concentration regime. Even the lowest concentration we tested in this experiment, 0.015%, increased the number of colonies that arose on a GLY + GlcN plate by nearly three orders of magnitude, such that approximately 5% of cells grew into medium-sized colonies (Figure 5A). Increasing concentrations of lactic acid up to 0.25% did not strongly increase the degree of induction. However, 1% lactic acid caused an even stronger induction, such that nearly all cells in the population grew into large colonies on GLY + GlcN media (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig5-v1.jpg)\n\n**Figure 5.:** (A) Plating assay (see Materials and methods) showing that L-lactic acid strongly induced [GAR+] over a wide concentration range. Plotted the same as in Figure 1C. Ten-fold dilutions were used for plates lacking lactic acid and 10,000-fold dilutions were used for plates containing lactic acid (B) Single [GAR+] colonies were picked from two representative concentrations in (A), propagated (restreaked) on non-selective medium (GLY) for approximately 75 generations, and then re-spotted on GLY + GlcN in five-fold serial dilutions. Four biological replicates are shown for each induced group, and two for uninduced cells. Note the growth in the third spots (highest dilution) of 0.0625% L-LA induced cells on GLY + GlcN.\n\nLike virtually all prions, [GAR+] can exist in multiple \u2018strains\u2019 \u2013 different heritable and stable activity states. When they arise spontaneously on selective GLY + GlcN plates, \u2018strong\u2019 [GAR+] colonies are larger than \u2018weak\u2019 [GAR+] colonies (Brown and Lindquist, 2009; Jarosz et al., 2014a). Both activity states are heritable over long biological timescales (Brown and Lindquist, 2009; Jarosz et al., 2014a). We picked small-sized colonies that had been induced with low concentrations of lactic acid, and large colonies that had been induced with higher concentrations of lactic acid and propagated them for ~75 generations on non-selective rich medium (YPD). We then returned them to GLY + GlcN plates. The small colonies that had originally been induced with low concentrations of lactic acid grew modestly on GLY + GlcN, in a manner that mimicked \u2018weak\u2019 [GAR+] strains (Figure 5B). The large colonies that had originally been induced with high concentrations of lactic acid grew robustly on GLY + GlcN, in a manner that mimicked \u2018strong\u2019 [GAR+] strains (Figure 5B). Thus, alterations in the concentration of lactic acid produced by inducing bacteria may engage different heritable activity states, or so-called \u2018strains\u2019, of the [GAR+] prion.\n\n### Lactic acid induces [GAR+]-like epigenetic states in evolutionarily distant fungal species\n\nGlucose repression has evolved multiple times in the fungal lineage (Hagman and Piskur, 2015). Dekkera bruxellensis, an organism used in the production of lambic beers that diverged from S. cerevisiae 200 million years ago, uses a distinct mechanism for engaging stringent glucose repression (Rozpedowska et al., 2011; Woolfit et al., 2007). We previously established that despite this evolutionary distance, D. bruxellensis can spontaneously acquire a [GAR+]-like state to become a metabolic generalist (Jarosz et al., 2014b). This [GAR+]-like state can also be induced by cross-kingdom chemical communication with bacteria. Although the molecular lexicon of cross-kingdom communication can evolve extraordinarily rapidly, the simplicity and ubiquity of lactic acid led us to investigate whether it might also influence heritable reversal of stringent glucose repression in D. bruxellensis.\n\nWe exposed na\u00efve D. bruxellensis strains to lactic acid, guided by our results from S. cerevisiae. Concentrations well within the physiological range of lactic acid produced by bacteria (0.02%) induced robust growth on GLY + GlcN (Figure 6A). We picked colonies from these selections and propagated them for ~75 generations on non-selective rich medium (YPD). In each case, the trait was heritable: induced colonies maintained the ability to circumvent glucose repression (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17978/elife-17978-fig6-v1.jpg)\n\n**Figure 6.:** (A) Induction of a [GAR+]-like state in D. bruxellensis. [gar\u2212] cells were plated on GLY + GlcN (containing 0.1\u20130.15% glucosamine) medium with or without 0.02% D-lactic acid. Control cells harbor spontaneous [GAR+]. For each of the treatment images, four biological replicates are shown, in five-fold serial dilutions. (B) Maintenance and chaperone dependence of the lactic acid-induced [GAR+]-like state in D. bruxellensis. Cells induced in A. were propagated non-selectively for ~75 generations by restreaking on YPD plates, then subsequently retested for maintenance of the prion phenotype on GLY + GlcN (0.1\u20130.15% glucosamine), with or without the Hsp70 inhibitor myricetin (50 \u03bcM). Four biological replicates are shown for each induced group, and two shown for the uninduced and propagated [gar\u2212] cells.\n\nThe [GAR+]-like states that arise spontaneously or are induced by bacteria in D. bruxellensis depend strongly on the activity of Hsp70 chaperones (Jarosz et al., 2014b). We therefore tested whether the D. bruxellensis colonies induced by lactic acid to circumvent glucose repression were sensitive to Hsp70 inhibition. We plated serial dilutions of D. bruxellensis cells that had been induced with lactic acid on GLY + GlcN plates and on GLY + GlcN plates containing the Hsp70 inhibitor myricetin (Chang et al., 2011; Koren et al., 2010). We used a concentration of this inhibitor that did not significantly affect growth on GLY alone. This treatment significantly reduced the ability of these induced colonies to circumvent glucose repression (Figure 6B), just as it does for the [GAR+]-like states that arise spontaneously in this organism (Jarosz et al., 2014b). Thus, across a vast evolutionary distance, bacterial production of lactic acid can engage [GAR+]-like mechanisms to heritably convert neighboring fungi from metabolic specialists to metabolic generalists.\n\n## Discussion\n\nMore than a century ago, Louis Pasteur documented what vintners have long since appreciated: the presence of lactic acid producing bacteria in fermentations can often lead to their failure (Pasteur, 1873). Our observations suggest that the ability of lactic acid to elicit the [GAR+] prion could provide a molecular mechanism for those observations. The [GAR+] prion is found in evolutionarily distant fungal species, and can confer strong selective advantage \u2013 converting metabolic specialists to metabolic generalists in a manner that improves fitness in complex microbial communities (Jarosz et al., 2014a,\u00a02014b). Our data link the common bacterial metabolite lactic acid, both structurally simple and widespread in nature, to this ancient switch in metabolic strategies.\n\nRecent evidence points to important signaling roles for lactic acid in human cancer cells, in the context of the Warburg effect (Adeva-Andany et al., 2014; Dhup et al., 2012; Fiaschi et al., 2012; Liberti and Locasale, 2016). Other studies have linked LAB to benefits for human health and disease prevention, however it remains unclear how much these effects are due to the effects of lactic acid on host cells (Kim et al., 2007; Masood et al., 2011; Tiptiri-Kourpeti et al., 2016). In at least some cases, LAB appear to exert their health effects by influencing other microbes, for example, modulating the virulence of Clostridium difficile (Lee et al., 2013; Yun et al., 2014).\n\nMany mysteries remain regarding the genetic and biochemical features that lead to the [GAR+] prion; findings have so far been limited to its initial characterization (Brown and Lindquist, 2009) and discovery of its regulation by environmental cues (Jarosz et al., 2014a). Our discovery of a connection between passive lactic acid uptake and the ability to induce [GAR+] (via our results with SOK2) provides new insight into the initiation of this complex cross-kingdom chemical communication. Further molecular understanding of induction by lactic acid, and its links to the unusual biochemistry that fuels [GAR+], stands as a goal for future studies.\n\nSeveral lines of evidence suggest that other molecules may modulate [GAR+] induction by lactic acid. Although we were able to fully reconstitute induction with lactic acid alone, the kinetics were slightly faster in conditioned media. Moreover, some of the bacteria that induce [GAR+] in S. cerevisiae do not induce the [GAR+]-like state in D. bruxellensis, even though high levels of lactic acid can induce the prion in each of these organisms. An intriguing but plausible explanation is that other bacterially secreted factors influence perception of the lactic acid signal, and that the effects of these molecules may also be species specific. Indeed, there is precedent for this behavior in choanoflagellates, where two bacterially secreted lipids were required to recapitulate full induction of rosette, multicellular colony formation (Alegado et al., 2012; Woznica et al., 2016). Finally, although we have shown that S. gallinarium induces [GAR+] via lactic acid, it is entirely possible that other molecules could also fuel this cross-kingdom interaction in diverse ecological niches. There is also precedent in mechanisms of quorum sensing for competition among inducers secreted by different bacteria (Drescher et al., 2014; Even-Tov et al., 2016).\n\nPerhaps most remarkably, our study raises the possibility that other prion-like epigenetic states could be regulated by common metabolites, at times in service of cross-species communication. Prior studies have highlighted the fact that general stressors that perturb protein homeostasis can modestly elevate the frequency of cells harboring the [PSI+] or [MOT3+] prions (Holmes et al., 2013; Tyedmers et al., 2008). These intrinsic links between stress responses and prion switching ensure that subpopulations of cells can diversify their phenotypes when they are ill-suited to the environment. Our findings extend this biology to a more concerted, switch-like behavior in which prions can serve as a target for rapid and effective cross-species communication.\n\nBiological niches like the human body harbor microbial communities that are far more complex than those we have studied here (Lozupone et al., 2012). It is striking that the robust connection we have discovered between a simple metabolite and a heritable change in metabolic strategy has been missed despite a multitude studies in this model organism. Our observations thus underscore the potential of cross-kingdom molecular communication to illuminate biological processes, in particular its capacity to elicit heritable, epigenetic transformations of biological traits. Recent progress in metabolomics and metagenomics motivate deeper exploration of such interactions between species, at both the molecular and systems levels.\n\n## Materials and methods\n\n### Yeast and bacterial media and strain maintenance\n\nBacteria strains were cultured on LB agar (Research Products International, Mt. Prospect, IL and BD-Difco, Franklin Lakes, NJ) plates. Yeast strains were cultured on either: (1) YPD agar or liquid (RPI and BD-Difco), (2) YP-Glycerol agar (1% Yeast Extract (BD Bacto), 2% Peptone (BD BBL/Difco), 2% glycerol (Sigma-Aldrich, St. Louis, MO\u00a0and\u00a0Amresco, Solon, OH), 2% agar (IBI Scientific, Peosta, IA]), or (3) \u201c'GLY + GlcN\u201d' agar (same mixture as YP-Glycerol) which is supplemented with 0.05% glucosamine hydrochloride (Sigma-Aldrich) (0.1\u20130.15% for D. bruxellensis) that was added from a filter-sterilized 5% stock once media cooled to ~60\u00b0C after autoclaving. We noticed that the stringency of selection for [GAR+] cells on GLY\u00a0+\u00a0GlcN media was dependent on the source of yeast extract and peptone, and therefore recommend the aforementioned suppliers, as other sources for unknown reasons sometimes imposed much weaker selection. Myricetin (Sigma-Aldrich) was made into a stock solution of 15.7\u2009mM in 100% ethanol, and then diluted to a final concentration of 50\u2009\u03bcM in agar medium once cooled to ~60\u00b0C after autoclaving.\n\nStrains were maintained using standard microbiological techniques. Bacteria and S. cerevisiae strains were grown up in 2\u20135\u2009mL cultures at 30\u00b0C shaking or rotating overnight for most experiments; for experiments requiring smaller volumes they were grown in 200\u2009\u03bcL volumes in microtiter plates. All D. bruxellensis strains were grown at room temperature until saturation for liquid or sufficiently large colonies for agar plates, typically requiring at least 5 days of growth.\n\nSerial dilutions, starting from saturated cultures, were performed in 96-well plates using multichannel pipettes, and cells were spotted gently onto agar plates using a blot replicating tool (V&P Scientific VP404A, San Diego, CA). For S. cerevisiae strains, GLY plates were grown for 2 days before imaging. GLY + GlcN plates were grown 5\u20137 days before imaging. D. bruxellensis strains required several extra days of growth for single colonies to become visible.\n\n### Activity guided fractionation\n\nBacterial strains that induced yeast growth on GLY + GlcN media were grown in large scale to purify the active component. Strains were grown from single colonies in 5\u2009mL LB cultures overnight at 30\u00b0C and with 250\u2009rpm shaking. The inoculum was then transferred to Erlenmeyer flasks containing 200\u2009mL YP-Glycerol and incubated for 72\u2009hr at 250\u2009rpm, 30\u00b0C. The media were centrifuged (30\u2009min at 6000\u2009rpm, Beckman (Brea, CA) JLA 8.1 rotor), and passed through a 0.22\u2009\u03bcm filter. The filter-sterilized media was acidified to pH ~1 using 2M HCl, and extracted with a threefold volumetric excess of ethyl acetate. The organic extracts were dried over sodium sulfate, concentrated on a rotary evaporator, suspended in 2\u20134\u2009mL water, and neutralized with sodium hydroxide. The extract was purified by preparative HPLC using a gradient of acetonitrile (solvent B, Fisher\u00a0Scientific (Waltham, MA), containing 0.1% formic acid) in milli-Q water (solvent A, containing 0.1% formic acid) on a reversed-phase C18 column (Phenomenex (Torrance, CA) Luna 5U, 100A, 250 \u00d7 21.29\u2009mm). The following program was used: 10\u2009mL/min; ramp from 0 to 20\u2009min of 2% to 35% B, followed by a 10\u2009min wash cycle; collect 0.5\u2009min fractions from 7 to 13\u2009min.\n\nCollected fractions were dried in a speed-vac, suspended in water (~5\u2009mL) and passed through a 0.22\u2009\u03bcm filter. Active fractions were identified by assaying their ability to induce growth of YDJ1034 in typically non-permissive GLY + GlcN media containing crude bacterial extracts or HPLC fractions (10 to 25% of total media volume). Fractions that supported yeast growth in GLY + GlcN were combined and subjected to subsequent rounds of semi-preparative HPLC using a gradient of acetonitrile (containing 0.1% formic acid \u2013 solvent B) in water (containing 0.1% formic acid \u2013 solvent A) on a reversed-phase C18 column (Phenomenex Luna 5U, 100A, 250 x 10.00\u2009mm). The following program was used: 2.4\u2009mL/min; ramp from 0 to 20\u2009min of 2% to 10% B, followed by a 15\u2009min wash cycle; collect 0.2\u2009min fractions from 8.4 to 9.4\u2009min. Fractions were analyzed by high-resolution HPLC-MRM-mass spectrometry and NMR spectroscopy. The active fractions contained high levels of lactic acid, which was confirmed by NMR and by co-injection with a purified standard (Figure 1B).\n\n### Prion induction using lactic acid\n\nMultiple sources of lactic acid yielded similar results. We tested sodium D-lactate (Sigma-Aldrich 71716), sodium L-lactate (Sigma-Aldrich L7022), D-lactic acid zinc salt (MP Biomedicals, Santa Ana, CA), and L-(+)-lactic acid (Sigma-Aldrich L6402). Excess NaCl was tested in control reactions to mimic the sodium chloride produced during naturalization of sodium lactate and found to produce no phenotypic differences. Lactic acid was added to GLY + GlcN medium at indicated concentrations before autoclaving, and pH was balanced if necessary to ensure it was within ~0.1 units or less of control media lacking lactic acid\u00a0(pH\u00a0~6.8).\n\nFor the\u00a0plating assay, S. cerevisiae W303 strains were plated with 100\u2009\u03bcL volumes for all plates. For BY4741 strains, 250\u2009\u03bcL volumes were plated for GLY + GlcN plates +/\u2013 lactic acid (no cell dilution), while 100\u2009\u03bcL was used for GLY plates. Cell dilution was empirically determined to obtain plates containing between approximately 25 and 300 colonies per plate, which were counted using an aCOLyte colony counter (Synbiosis, Cambridge, England). For all GLY plates, a 100,000-fold dilution of saturated culture was plated. For GLY + GlcN plates for W303 strains, a 10-fold dilution of saturated culture was plated; for GLY + GlcN plates containing lactic acid, dilutions of 1000-fold or 10,000-fold were plated to achieve a suitable colony number for W303 strains.\n\nInduction frequency was calculated by normalizing the number of colony forming units (CFUs) on the GLY + GlcN plates to the total possible number on GLY plates after accounting for cell dilutions, reported as [GAR+] cfu/total cfu. We noted some variability in values of [GAR+] cfu/total cfu from experiment to experiment (e.g. for spontaneous rate between Figure 1C and Figure 5A), however the qualitative relationship between lactic acid concentration and increased [GAR+] cfu/total cfu was maintained across all dilutions tested. For induction of D. bruxellensis strains, cells were spotted in serial dilutions on plates containing lactic acid. Single colonies were picked from the highest dilution and propagated as described in figure legends.\n\n### Strain constructions\n\nDiploids were constructed by crossing indicated BY4741 haploids to the BY4742 parental strain (ATCC, Manassas, VA) by mixing a bead of cells of each strain together on a YPD plate and growing overnight. A small globule of this cell mixture was then restreaked to single colonies on SD-Lys-Met agar plates to select for diploids.\n\nDeletion mutants in the W303 background were created by amplifying a KanMX construct from corresponding gene deletion mutants from the BY4741 library, using primers listed in Supplementary file 1C. Approximately 500 ng of purified construct was transformed into YDJ1034, and integrants were selected on agar plates containing G418 (Fisher Scientific). All gene deletions were confirmed by PCR using primers listed in Supplementary file 1C.\n\n### Prion curing and sporulations\n\nCuring of the [GAR+] phenotype (Figure 2B) was achieved by transformation of lactic acid induced cells with PDJ281 (Hygromycin resistant, Supplementary file 1D), restreaking multiple transformants to single colonies on YPD plates containing 400\u00a0ug/mL hygromycin (Gold Biotechnology, Olivette, MO) a total of five times, then restreaking in the same manner on YPD plates twice before confirming each clone had lost the plasmid by testing on YPD+hygromycin. These clones were grown in liquid YPD cultures before testing on GLY + GlcN media.\n\nSpontaneous and lactic acid-induced [GAR+] diploids (W303 background,\u00a0Figure 2\u2014figure supplement 1)\u00a0were isolated from single colonies grown on GLY + GlcN or GLY + GlcN + lactic acid plates and grown in Pre-SPO liquid media (YPD with 6% glucose) for 3 days at room temperature. Cells were then pelleted and washed twice in SPO media (1% Potassium Acetate (Sigma-Aldrich), 320\u00a0mg CSM-Met powder (Sunrise Science, San Diego, CA), 20\u00a0mg Methionine (Sigma-Aldrich) per liter), and then diluted ten-fold to\u00a0obtain 3\u00a0mL cultures in SPO\u00a0media. These cultures were incubated on a rotary wheel for one week at room temperature, before dissecting tetrads on a Singer Instruments MSM400 (Somerset, UK). Recovered spores were grown to saturation in liquid YPD before testing on GLY + GlcN media.\n\n### Data collection and display\n\nYeast plates were imaged using an Epson Perfection V700 Photo Scanner (Long Beach, CA). Plots were made using PRISM 6 software (GraphPad, La Jolla, CA).\n",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9a604f4a-15af-440c-aa41-e5a2bed3a1ee",
+      "submission_id": "ad9fb53e-55e6-4380-a38f-3c2bb3f9ed2b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Yury Chernoff, Georgia Institute of Technology , United States\n\n## Review text\n\nDOI: [10.7554/eLife.17978.015](https://doi.org/10.7554/eLife.17978.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A common bacterial metabolite elicits prion-based bypass of glucose repression\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis succinct paper reports the solution to a mystery posed by the authors' earlier work on induction of the [GAR+] 'prion' by a low molecular weight molecule. That the inducer is lactic acid makes sense given the known ability of lactic acid-producing bacteria to induce [GAR+] as well as the historical context vis-\u00e0-vis Pasteur's observations. The data that demonstrate that lactic acid is a [GAR+] inducer are well controlled and nicely presented although the 'induction vs. selection' argument that is always raised in such studies should ideally have been explicitly addressed in the experimental design and resulting Discussion. The manuscript is clearly written and experimental design is straightforward.\n\nHowever, several issues need to be addressed before this manuscript can be accepted for publication.\n\nEssential revisions:\n\n1) Authors need to show that the glucosamine resistant colonies induced by lactic acid indeed contain a [GAR+] prion. The evidence provided in the manuscript includes a dominance in genetic crosses and inhibition by myricetin, an inhibitor of Hsp70. However, this is insufficient to conclude that the observed phenotype is controlled by a prion. First, authors need to show that in the lactic acid induced colonies, this phenotype shows non-Mendelian inheritance in meioisis and/or is transmitted by cytoplasmic infection (cytoduction).\n\n2) Second, they need to show that myrecitin irreversibly cures [GAR+] rather than inhibiting it. it isn't clear from the paper if the phenotypic inhibition by inhibition of HSP70 is due to \"curing\" some cells of the prion, or a general inhibition of phenotype in all cells. Also it isn't clear if this \"prion\" inhibition is present only during HSP70 inhibition or if transient inhibition of HSP70 has a lasting effect on the so called [GAR+] phenotype.\n\n3) Third, at least in some isolates obtained from induction by lactic acid, either genetic or biochemical characterization needs to be performed showing that the phenotype under investigation is indeed related to proteins implicated in originally described [GAR+]. For example, two proteins have been identified as being associated with [GAR+], one (Pma1 p) is a major plasma membrane proton pump while the other (Std1p) is a transcription factor that among other targets, regulates hexose transporters. Does lactic acid influence the levels/activity of either of these in any plausible way? (In case if non-Mendelian inheritance/cytoduction and chaperone sensitivity are proven, but clear identification of the obtained isolates as [GAR+] is not done, results might still be publishable, but authors should be more careful in interpretations and should talk about the non-Mendelian prion-like elements similar to previously described [GAR+], rather than about [GAR+] prion per se.\n\n4) The same comments apply to [GAR+] isolates obtained in Dekkera yeast. As detailed characterization of such isolates in Dekkera is more difficult than in Saccharomyces, authors should probably change wording and refer to them more accurately, e. g. as glucosamine resistant colonies similar to [GAR+].\n\n5) Authors talk about mitotic stabilities of [GAR+] isolates, but don't show actual data. These data need to be shown.\n\n6) A further complexity alluded to by the authors in their brief Discussion is the possibility that there are other molecular 'co-factors' that are part of the induction mechanism \u2013 although clearly lactic acid can induce [GAR+] without added (but unidentified) 'co-factors'.\n\n7) What is disappointing is that the authors do not really attempt to come up with a plausible model based on their data and what was previously published about [GAR+] and its induction. The very nature of the [GAR+] determinant itself remains a mystery; it certainly shows some of the key genetic properties of the other well established yeast prions, yet there are also distinct differences such as a lack of reliance on Hsp104-mediated disaggregation for propagation and the lack of an association with a specific amyloid-forming protein. The authors also mention that [GAR+] is semi-dominant in [GAR+] x [gar-] crosses; do other prions show this behaviour?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A common bacterial metabolite elicits prion-based bypass of glucose repression\" for further consideration at eLife. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The last sentence of the Abstract sounds too strong, as the paper by Holmes et al. 2013 has claimed that the [MOT3+] prion can be induced by ethanol. Even though an argument of induction versus selection could possibly be made there (especially as [MOT3+] increases ethanol resistance), such a statement requires an elaboration and is more appropriate for the Discussion rather than Abstract. Possibly a substitution of \"small molecule\" with a \"normal bacterial metabolite\" (or \"a small molecule produced by bacteria\") would suffice.\n\n2) This would be helpful to include the growth curves in the presence of lactic acid, shown in Response to reviewers, into a supplement.\n",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fb53a0df-96b6-48c8-9097-84f29aa39b48",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C1",
+      "claim": "Saccharomyces cerevisiae has a robust preference for fermentative glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust preference for fermentative glucose metabolism has motivated domestication of the budding yeast Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about S. cerevisiae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "aa974604-1f84-4338-9cb6-b315487713d1",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C2",
+      "claim": "The [GAR+] prion permits simultaneous metabolism of glucose and other carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This program can be circumvented by a protein-based genetic element, the [GAR+] prion, permitting simultaneous metabolism of glucose and other carbon sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior work cited throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1a1e9445-8b6c-4a8c-9792-5cf6cf7886fb",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C3",
+      "claim": "Diverse bacteria can elicit yeast cells to acquire [GAR+].",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse bacteria can elicit yeast cells to acquire [GAR+], although the molecular details of this interaction remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations to prior work (Jarosz et al., 2014a, 2014b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "65f36f0d-d99d-4f16-a17a-b0b7a7164fbf",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C4",
+      "claim": "Lactic acid is a strong [GAR+] inducer.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identify the common bacterial metabolite lactic acid as a strong [GAR+] inducer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data shown in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3a5a461b-82e4-4006-aaf4-954ddd5f3a47",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C5",
+      "claim": "Transient exposure to lactic acid caused yeast cells to heritably circumvent glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient exposure to lactic acid caused yeast cells to heritably circumvent glucose repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that cells exposed to lactic acid maintain the [GAR+] phenotype after propagation (Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c3c4b232-9600-479e-9ce5-e390508a9973",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C6",
+      "claim": "The lactic acid-induced trait had the defining genetic properties of [GAR+].",
+      "claim_type": "EXPLICIT",
+      "source": "This trait had the defining genetic properties of [GAR+], and did not require utilization of lactic acid as a carbon source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing dominance in crosses, non-Mendelian inheritance, Hsp70 dependence, and PMA1 dependence (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "02c10100-6f16-465b-977c-7c26ac99c624",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C7",
+      "claim": "Lactic acid induction of [GAR+] did not require utilization of lactic acid as a carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "This trait had the defining genetic properties of [GAR+], and did not require utilization of lactic acid as a carbon source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that deletion of genes involved in lactic acid metabolism did not affect induction (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "269e22b8-9e11-43e8-9455-da7ee3a79359",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C8",
+      "claim": "Lactic acid induced [GAR+]-like epigenetic states in fungi that diverged from S. cerevisiae ~200 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactic acid also induced [GAR+]-like epigenetic states in fungi that diverged from S. cerevisiae ~200 million years ago, and in which glucose repression evolved independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in D. bruxellensis (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "04873ded-5dc2-4e3c-994c-646f3ac3c826",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C9",
+      "claim": "This is the first study to uncover a bacterial metabolite with the capacity to potently induce a prion.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first study to uncover a bacterial metabolite with the capacity to potently induce a prion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "dd0dcacf-aa11-4266-85b1-6f58d9b9dbe2",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C10",
+      "claim": "Small molecules commonly drive productive and destructive relationships between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecules commonly drive productive and destructive relationships between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to examples in the literature (Alegado et al., 2012; Ehrhardt et al., 1992; Hogan and Kolter, 2002; Hogan et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "ab4db541-02cb-467b-afd3-aad5552e12c2",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C11",
+      "claim": "Small molecule interactions between mammals and their associated gut microbiota may have important consequences for human health.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecule interactions between mammals and their associated gut microbiota may have important consequences for human health (David et al., 2014; Lozupone et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "bc2a56ed-40b9-402f-97c2-8a010e4ed351",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C12",
+      "claim": "Cross-kingdom interactions have commercial relevance in the fermentation of alcoholic beverages.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-kingdom interactions also have commercial relevance \u2013 for example those that occur between yeast and bacteria in the fermentation of alcoholic beverages (Bisson et al., 2007; Bokulich et al., 2012; Boulton et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "f58d2160-8853-47b2-9eb0-2ad511e39001",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C13",
+      "claim": "Lactic acid bacteria are a common contaminant in incomplete fermentations.",
+      "claim_type": "EXPLICIT",
+      "source": "Pasteur and others since have noted that lactic acid bacteria are a common contaminant in incomplete fermentations (Boulton et al., 1996; Pasteur, 1873).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical and modern literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9119f844-c472-4591-897d-98f51e58e5ba",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C14",
+      "claim": "Some bacteria have the power to both reduce the ethanol content and spoil the taste profile of fermented beverages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, brewers and vintners have long appreciated that some bacteria have the power to both reduce the ethanol content and spoil the taste profile of fermented beverages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "d2bbf9eb-7628-478b-9239-42ebc34efafe",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C15",
+      "claim": "S. cerevisiae strongly favors glucose as a carbon source even when other carbohydrates are present.",
+      "claim_type": "EXPLICIT",
+      "source": "The budding yeast S. cerevisiae is a metabolic specialist: it strongly favors glucose as a carbon source even when other carbohydrates are present (Johnston, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "e2919665-9bd6-4aae-a66b-816f766668a0",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C16",
+      "claim": "Glucose-associated repression of metabolism is achieved through stringent regulation of enzymes involved in glycolysis and respiration at both the transcriptional and post-transcriptional levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved through stringent regulation of enzymes involved in glycolysis and respiration at both the transcriptional and post-transcriptional levels (Johnston, 1999; Zampar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9c96a5a0-f999-4d83-a3fc-99a2eb4f0e7d",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C17",
+      "claim": "Glucose-associated repression of metabolism is a defining feature of S. cerevisiae and many other microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Such glucose-associated repression of metabolism is a defining feature of S. cerevisiae, and many other microorganisms (Gorke and Stulke, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b2843792-8da7-4bdd-ad39-e9ef66816e46",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C18",
+      "claim": "A similar preference for glycolytic metabolism, even in the presence of oxygen, is a defining feature of cancer cells, known as the 'Warburg effect'.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar preference for glycolytic metabolism, even in the presence of oxygen, is a defining feature of cancer cells, known as the 'Warburg effect' (Hsu and Sabatini, 2008; Liberti and Locasale, 2016; Vander Heiden et al., 2009; Warburg, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3278a725-f72f-4458-b47b-5fb447ae6568",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C19",
+      "claim": "When yeast cultures switch from metabolizing glucose to utilizing a respirative carbon source such as glycerol, they experience a pronounced lag phase known as the diauxic shift.",
+      "claim_type": "EXPLICIT",
+      "source": "When yeast cultures switch from metabolizing glucose to utilizing a respirative carbon source such as glycerol, they experience a pronounced lag phase known as the diauxic shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "94b31bd7-6f16-4370-9802-70f452abe3ec",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C20",
+      "claim": "The diauxic shift pause in growth occurs as a new transcriptional program is engaged to favor respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "This pause in growth occurs as a new transcriptional program is engaged to favor respiration (Galdieri et al., 2010; Zampar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "0f6c785b-e1f8-4e1e-8e37-35a08e93f8ef",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C21",
+      "claim": "Just 0.05% of the glucose mimetic glucosamine prevents yeast cells from utilizing non-fermentable carbon sources present at 40-fold higher concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, just 0.05% of the mimetic glucosamine prevents yeast cells from utilizing non-fermentable carbon sources present at 40-fold higher concentrations (Ball et al., 1976; Brown and Lindquist, 2009; Kunz and Ball, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "e4e631ef-e68d-40f5-bcd6-33b89b479da9",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C22",
+      "claim": "Yeast strains have the ability to overcome glucose-associated repression of metabolism at frequencies that depend upon the ecological niche from which they were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that yeast strains have the ability to overcome such glucose-associated repression of metabolism at frequencies that depend upon the ecological niche from which they were isolated (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "58225b49-fffb-4a37-8168-38bf76ffe3b5",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C23",
+      "claim": "[GAR+] allows yeast to switch from being metabolic specialists to metabolic generalists, gaining the ability to metabolize a wide variety of carbon sources in the presence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows them to switch from being metabolic specialists to metabolic generalists, gaining the ability to metabolize a wide variety of carbon sources in the presence of glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited throughout the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "fc65ee57-cfba-43a7-a6f0-360c0dc25b8d",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C24",
+      "claim": "The heritable change in metabolic program associated with [GAR+] is not accompanied by a change in the yeast genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This heritable change in metabolic program is not accompanied by a change in the yeast genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a defining characteristic of prions, supported by prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "dce7e0c3-5a6d-438f-8116-8f318e3c4bf7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C25",
+      "claim": "The [GAR+] trait is cytoplasmically transduced from mother cells to their daughters through the inheritance of an altered protein conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the trait is cytoplasmically transduced from mother cells to their daughters through the inheritance of an altered protein conformation \u2013 a prion known as [GAR+] (named for its ability to reverse glucose associated repression) (Brown and Lindquist, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3d40c338-9880-46db-8eef-1259eb4c6c8f",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C26",
+      "claim": "[GAR+]'s nomenclature derives from defining characteristics of prion biology: dominance in genetic crosses (denoted by capital letters) and transmission to all progeny of meiosis (denoted by brackets).",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+]'s nomenclature derives from defining characteristics of prion biology: dominance in genetic crosses (denoted by capital letters) and transmission to all progeny of meiosis (denoted by brackets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the nomenclature based on established prion biology conventions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "2568ec6d-516d-4e71-8ebb-a82b8f896eaa",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C27",
+      "claim": "The ability to acquire [GAR+] has been widely conserved among wild S. cerevisiae strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to acquire [GAR+] has been widely conserved among wild S. cerevisiae strains and is also present in fungal species separated by at least two hundred million years of evolution (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "ad3dd5fc-ad50-41e0-86ac-b83b7fea58f8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C28",
+      "claim": "The ability to acquire [GAR+] is present in fungal species separated by at least two hundred million years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to acquire [GAR+] has been widely conserved among wild S. cerevisiae strains and is also present in fungal species separated by at least two hundred million years of evolution (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9be75604-b99f-4b8f-90ba-0f780f79cdd5",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C29",
+      "claim": "Under monoculture conditions in the laboratory, acquisition of [GAR+] occurs much more frequently than spontaneous mutations that reverse glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Under monoculture conditions in the laboratory, acquisition of [GAR+] occurs much more frequently than spontaneous mutations that reverse glucose repression (Brown and Lindquist, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "0002ff76-70b3-450b-8dbe-db791a012aae",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C30",
+      "claim": "The precise rates of [GAR+] appearance correlate with environmental niche from which yeast are derived, suggestive of a bet-hedging mechanism for adaptation in environments with fluctuating carbon stores.",
+      "claim_type": "EXPLICIT",
+      "source": "In nature, the precise rates of [GAR+] appearance correlate with environmental niche from which yeast are derived, suggestive of a bet-hedging mechanism for adaptation in environments with fluctuating carbon stores (Griswold and Masel, 2009; Jarosz et al., 2014b; Lancaster and Masel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "5ebcb88b-f004-4766-95f2-a9a31259b69b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C31",
+      "claim": "[GAR+] can be induced by cross-kingdom communication with many bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most remarkably, [GAR+] can be induced by cross-kingdom communication with many bacterial species, and this interaction has been conserved over long evolutionary timescales (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "32f438e0-d7ff-4519-90f3-f1d682f9aaf8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C32",
+      "claim": "The bacterial induction of [GAR+] has been conserved over long evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most remarkably, [GAR+] can be induced by cross-kingdom communication with many bacterial species, and this interaction has been conserved over long evolutionary timescales (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b325739c-6883-4471-a9c4-3a8ccaacda74",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C33",
+      "claim": "The relationship between bacteria and [GAR+] induction substantiates a model in which [GAR+]'s benefit as a reversible bet-hedging element would alone be sufficient to motivate its evolutionary retention.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this relationship substantiates a model in which [GAR+]'s benefit as a reversible bet-hedging element would alone be sufficient to motivate its evolutionary retention (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work and represents an inference about evolutionary mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1ea9d67f-e77b-4033-aef8-4e4c8fcf3424",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C34",
+      "claim": "Induction of [GAR+] by bacteria occurs with an extremely high efficiency \u2013 orders of magnitude greater than the spontaneous acquisition rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of [GAR+] by bacteria occurs with an extremely high efficiency \u2013 orders of magnitude greater than the spontaneous acquisition rate \u2013 and the consequences are mutually beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "114b99fe-57f1-4125-82eb-72177bc0bc0d",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C35",
+      "claim": "[GAR+] yeast cells gain the ability to metabolize a wider range of carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] yeast cells gain the ability to metabolize a wider range of carbohydrates, improved uptake of limiting nutrients, and increased chronological lifespan (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "ce530902-cc08-45fe-a857-dab636237e72",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C36",
+      "claim": "[GAR+] yeast cells have improved uptake of limiting nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] yeast cells gain the ability to metabolize a wider range of carbohydrates, improved uptake of limiting nutrients, and increased chronological lifespan (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "7434dd76-c035-46ef-b5f4-b47864e685b9",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C37",
+      "claim": "[GAR+] yeast cells have increased chronological lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] yeast cells gain the ability to metabolize a wider range of carbohydrates, improved uptake of limiting nutrients, and increased chronological lifespan (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "e178b560-e333-4719-a77b-7fd7e32548fb",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C38",
+      "claim": "[GAR+] yeast cells produce less ethanol.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] yeast cells also produce less ethanol, which itself has anti-bacterial properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "848521af-f7b1-4fe3-825e-b353f0109eb1",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C39",
+      "claim": "Ethanol has anti-bacterial properties.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] yeast cells also produce less ethanol, which itself has anti-bacterial properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b35dc240-80d4-4d37-9838-2bd96aa451e1",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C40",
+      "claim": "Reduced ethanol production by [GAR+] yeast generates a more hospitable environment for the inducing bacteria and allows them to flourish in fermentations where they would otherwise have perished.",
+      "claim_type": "EXPLICIT",
+      "source": "This generates a more hospitable environment for the inducing bacteria and allows them to flourish in fermentations where they would otherwise have perished (Jarosz et al., 2014a); bacterial species that strongly induce [GAR+] are common contaminants in failed wine fermentations (Bisson et al., 2007; Boulton et al., 1996; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "22ab9919-994e-48e7-b861-b2de1c539e49",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C41",
+      "claim": "Bacterial species that strongly induce [GAR+] are common contaminants in failed wine fermentations.",
+      "claim_type": "EXPLICIT",
+      "source": "This generates a more hospitable environment for the inducing bacteria and allows them to flourish in fermentations where they would otherwise have perished (Jarosz et al., 2014a); bacterial species that strongly induce [GAR+] are common contaminants in failed wine fermentations (Bisson et al., 2007; Boulton et al., 1996; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "2c60a404-43d2-439c-84f3-48051bcf6f03",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C42",
+      "claim": "When yeast and inducing bacteria are co-cultured on solid medium, induction of [GAR+] occurs along a spatial gradient emanating from the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "When yeast and inducing bacteria are co-cultured on solid medium, induction of [GAR+] occurs along a spatial gradient emanating from the bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "784fe738-fea5-4ac3-b0cf-6d8d6894717c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C43",
+      "claim": "Conditioned medium generated from cultures of inducing bacteria also induces the [GAR+] prion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditioned medium generated from cultures of these bacteria also induces the prion (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b6752423-8502-4242-a453-48e823a1372b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C44",
+      "claim": "Inducing bacteria produce a diffusible signal that promotes [GAR+] in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These results and others have led us to propose that inducing bacteria produce a diffusible signal that promotes [GAR+] in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "487a1dfc-e58a-4072-9971-4f32203e5a3a",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C45",
+      "claim": "Pre-treatment with conditioned medium from S. gallinarum caused na\u00efve [gar\u2212] yeast cells to grow robustly on GLY + GlcN.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial dilutions of na\u00efve [gar\u2212] yeast did not grow on GLY + GlcN alone over a five day period, but pre-treatment with the conditioned medium caused the yeast cells to grow robustly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b4f53406-0dce-41de-9e64-297bdbb8ac81",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C46",
+      "claim": "Pre-treatment with purified extract from S. gallinarum afforded growth to a similar degree as S. gallinarum itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-treatment with this purified extract afforded growth to a similar degree as S. gallinarum itself (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "4c5adda5-729b-4b5e-94d5-d1d8ba67a7c7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C47",
+      "claim": "After two rounds of purification, the inducing activity eluted in a single fraction as a homogenous peak.",
+      "claim_type": "EXPLICIT",
+      "source": "After these two rounds of purification, the inducing activity eluted in a single fraction as a homogenous peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from HPLC purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "29728226-00f2-40b2-9821-846bc1edb3ab",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C48",
+      "claim": "NMR and mass spectrometry analyses revealed that the active fraction contained high concentrations of lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined active fractions from multiple injections and analyzed this peak by NMR and mass spectrometry. Both analyses revealed that the active fraction contained high concentrations of lactic acid (Figure 1B; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9adc8dec-d9b3-4ec9-91b2-ce369117bd82",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C49",
+      "claim": "Both L- and D- isomers of lactic acid strongly induce [GAR+] in a concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Plating assay (see Materials and methods) showing that both L- and D- isomers of lactic acid strongly induce [GAR+] in a concentration dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "5dabe41b-db76-4551-ad6b-ace0b894dcc0",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C50",
+      "claim": "Lactic acid exists in two distinct forms: L-(+)-lactic acid (L-LA) and its mirror image D-(\u2013)-lactic acid (D-LA).",
+      "claim_type": "EXPLICIT",
+      "source": "Lactic acid, a small organic molecule, exists in two distinct forms: L-(+)-lactic acid (L-LA) and its mirror image D-(\u2013)-lactic acid (D-LA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established chemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "6b5b825d-9807-476f-92fd-0f56210724fa",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C51",
+      "claim": "Some bacteria, including lactic acid bacteria (LAB), have the ability to produce one or both forms of lactic acid from carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Some bacteria, including the class known as lactic acid bacteria (LAB), have the ability to produce one or both forms from carbohydrates (Eiteman and Ramalingam, 2015; Salminen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "259c85ef-8c2e-42df-9fe4-72579022944c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C52",
+      "claim": "Eukaryotes typically can metabolize both isomers of lactic acid, sometimes to varying degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes typically can metabolize both isomers, sometimes to varying degrees (Adeva-Andany et al., 2014; Pajot and Claisse, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "6facdf9b-add5-4b17-9212-46ebc91623c1",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C53",
+      "claim": "Malolactic fermentation by LAB in winemaking can typically yield up to 2.5 g/L of lactic acid, or 0.25%.",
+      "claim_type": "EXPLICIT",
+      "source": "Malolactic fermentation by LAB in winemaking can typically yield up to 2.5 g/L of lactic acid, or 0.25% (Boulton et al., 1996); in other fermented foods, concentrations can exceed 10 g/L, or >1% (Fleming et al., 1988; Plengvidhya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "07f2fddd-0257-429b-b540-9181cd5146c9",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C54",
+      "claim": "In some fermented foods, lactic acid concentrations can exceed 10 g/L, or >1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Malolactic fermentation by LAB in winemaking can typically yield up to 2.5 g/L of lactic acid, or 0.25% (Boulton et al., 1996); in other fermented foods, concentrations can exceed 10 g/L, or >1% (Fleming et al., 1988; Plengvidhya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "65cf0428-269c-4cee-a0b1-fbb5cc30521a",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C55",
+      "claim": "Many bacterial species that strongly induce [GAR+] are known LAB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, many bacterial species that we previously found to strongly induce [GAR+] are known LAB (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "521989a5-f62d-425c-8574-25d9e9ee7ed1",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C56",
+      "claim": "Addition of 0.05% lactic acid did not increase growth on YP alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 0.05% lactic acid did not increase growth on YP alone, eliminating the possibility that the yeast were simply metabolizing the lactic acid (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data (not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "61162d1c-07b3-441c-a1a9-e073c7cd4da7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C57",
+      "claim": "Induction of [GAR+] by lactic acid was robust in synthetic complete medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction was also robust in synthetic complete medium, further establishing that it was due to the added lactic acid, rather than unknown components of the medium (e.g. yeast extract, peptone, or an unknown metabolite therein; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "80335d4e-3dde-4552-b9d4-3e2628341262",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C58",
+      "claim": "There were no significant prion-dependent differences in growth rates between [GAR+] cells and [gar\u2212] cells in liquid YP-glycerol alone or in YP-glycerol supplemented with 0.35% lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant prion-dependent differences in growth (Figure 1\u2014figure supplement 3), supporting an induction mechanism rather than selection of a pre-existing population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "762b856e-4d32-49fb-a292-aa9f9bc78994",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C59",
+      "claim": "The lack of growth rate differences between [GAR+] and [gar\u2212] cells in the presence of lactic acid supports an induction mechanism rather than selection of a pre-existing population.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant prion-dependent differences in growth (Figure 1\u2014figure supplement 3), supporting an induction mechanism rather than selection of a pre-existing population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "bb3a0391-37f2-4568-b9e2-eae13adf6708",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C60",
+      "claim": "Glucose repression can be commonly circumvented in S. cerevisiae by induction of the [GAR+] prion.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose repression can be commonly circumvented in S. cerevisiae by induction of the [GAR+] prion, but it can less frequently arise from genetic mutations (Ball et al., 1976; Kunz and Ball, 1977) and, in principle, from other heritable epigenetic modifications (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "ded5894d-5bd5-4807-a626-35ffafbe1fc0",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C61",
+      "claim": "Glucose repression can less frequently arise from genetic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose repression can be commonly circumvented in S. cerevisiae by induction of the [GAR+] prion, but it can less frequently arise from genetic mutations (Ball et al., 1976; Kunz and Ball, 1977) and, in principle, from other heritable epigenetic modifications (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "cf56a7cd-fe13-4378-a291-476859b3ec39",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C62",
+      "claim": "All diploids from crosses between lactic acid-induced cells and na\u00efve isogenic mating partners grew on GLY + GlcN medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We first mated yeast cells that had been induced with 0.1% lactic acid to na\u00efve isogenic mating partners and selected for diploids. All diploids we tested grew on GLY + GlcN medium, and moreover exhibited the same unusual pattern of semi-dominance (Figure 2A) \u2013 in which the diploid cells exhibit a strength of reversal of glucose repression that is intermediate between the two haploid parents \u2013 that is highly characteristic of both spontaneous and bacterially-induced [GAR+] (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "199e754e-a212-41bc-ad09-f1fc134f8590",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C63",
+      "claim": "Diploids from lactic acid-induced cells exhibited the same unusual pattern of semi-dominance that is highly characteristic of both spontaneous and bacterially-induced [GAR+].",
+      "claim_type": "EXPLICIT",
+      "source": "All diploids we tested grew on GLY + GlcN medium, and moreover exhibited the same unusual pattern of semi-dominance (Figure 2A) \u2013 in which the diploid cells exhibit a strength of reversal of glucose repression that is intermediate between the two haploid parents \u2013 that is highly characteristic of both spontaneous and bacterially-induced [GAR+] (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "74ac002d-6d2e-4781-b061-c4a8c53752c8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C64",
+      "claim": "Nearly all spores from lactic acid-induced diploids (29 of 31) exhibited the [GAR+] phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We next sporulated diploid cells induced with lactic acid, dissected multiple tetrads, and examined the ability of the resulting spores to grow on GLY + GlcN. Nearly all spores we tested (29 of 31) exhibited the [GAR+] phenotype, in agreement with the non-Mendelian, dominant inheritance previously noted for both spontaneous and bacterially induced [GAR+] cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "004cc452-de4f-4097-9d12-476e98738d91",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C65",
+      "claim": "The inheritance pattern of lactic acid-induced [GAR+] is in agreement with the non-Mendelian, dominant inheritance previously noted for both spontaneous and bacterially induced [GAR+] cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all spores we tested (29 of 31) exhibited the [GAR+] phenotype, in agreement with the non-Mendelian, dominant inheritance previously noted for both spontaneous and bacterially induced [GAR+] cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "e4a99324-adc8-4f3c-8288-6e4cb99ec8a8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C66",
+      "claim": "[GAR+] is unusual among known prions in that it is not influenced by perturbation of the Hsp104 disaggregase.",
+      "claim_type": "EXPLICIT",
+      "source": "[GAR+] is unusual among known prions in that it is not influenced by perturbation of the Hsp104 disaggregase (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "a4f4a6c5-fb17-4d55-9b27-89056bf0c40e",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C67",
+      "claim": "[GAR+] is sensitive to perturbation of Hsp70 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead it is sensitive to perturbation of Hsp70 function (Brown and Lindquist, 2009; Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "138a4117-3481-4e3d-8296-c1ef03f4c7d9",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C68",
+      "claim": "Transient expression of a dominant negative Hsp70 variant cured multiple independent clones of their lactic acid-induced [GAR+] phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This regimen cured multiple independent clones of their induced [GAR+] phenotype, indicating that the lactic acid induced colonies have the same Hsp70-dependency as spontaneous and bacterially induced [GAR+] cells (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "89832e8f-8cee-43b9-b471-223fb95ecb55",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C69",
+      "claim": "Lactic acid induced colonies have the same Hsp70-dependency as spontaneous and bacterially induced [GAR+] cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This regimen cured multiple independent clones of their induced [GAR+] phenotype, indicating that the lactic acid induced colonies have the same Hsp70-dependency as spontaneous and bacterially induced [GAR+] cells (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "18a7bb9c-d6dd-47a9-9f86-f5e9265d3978",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C70",
+      "claim": "Growing lactic acid-induced cells on plates containing the Hsp70 inhibitor myricetin reduced their ability to circumvent glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "We also grew induced cells on plates containing an Hsp70 inhibitor, myricetin (Chang et al., 2011; Koren et al., 2010), at concentrations that did not affect growth on GLY medium. This regimen, which has been shown to inhibit the growth of both spontaneous and bacterially induced [GAR+] on GLY + GlcN (Jarosz et al., 2014b), also reduced the ability of these colonies to circumvent glucose repression that had been induced by lactic acid (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "49e05778-d425-45d9-91f6-20c41abaec0c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C71",
+      "claim": "PMA1 encodes the essential major plasma membrane proton pump in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "PMA1 encodes the essential major plasma membrane proton pump in yeast; in [GAR+] cells Pma1 adopts an altered conformation and associates more strongly with another protein, Std1 (Brown and Lindquist, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "16d603f8-30f2-43c4-bea3-d38b7b10f7ac",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C72",
+      "claim": "In [GAR+] cells Pma1 adopts an altered conformation and associates more strongly with another protein, Std1.",
+      "claim_type": "EXPLICIT",
+      "source": "PMA1 encodes the essential major plasma membrane proton pump in yeast; in [GAR+] cells Pma1 adopts an altered conformation and associates more strongly with another protein, Std1 (Brown and Lindquist, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "faeb7f90-c241-45e5-bd3f-cbeabcdb008e",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C73",
+      "claim": "Cells harboring the pma1-DAmP allele had a low frequency of spontaneous prion acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells harboring this allele had a low frequency of spontaneous prion acquisition, and could not be induced to acquire [GAR+] by exposure to lactic acid (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "28183d7d-189f-420c-83ac-8d49a4480944",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C74",
+      "claim": "Cells harboring the pma1-DAmP allele could not be induced to acquire [GAR+] by exposure to lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells harboring this allele had a low frequency of spontaneous prion acquisition, and could not be induced to acquire [GAR+] by exposure to lactic acid (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "96a077c7-0387-4fce-80d3-ef2bb90f32e2",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C75",
+      "claim": "Lactic acid can be imported into yeast via saturable ('active') and unsaturable ('passive') mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactic acid can be imported into yeast via saturable (\"active\"') and unsaturable ('passive') mechanisms (Casal et al., 1999; Pacheco et al., 2012; Paiva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c126af03-9cd4-46ed-a119-baf1b44002e6",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C76",
+      "claim": "Both active and passive lactic acid import mechanisms depend upon the transcription factor SOK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both depend upon the transcription factor SOK2, and the active mechanism is ultimately mediated by the monocarboxylate transporter JEN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "529b3a82-1193-4708-a981-f92e945e8aea",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C77",
+      "claim": "The active lactic acid import mechanism is ultimately mediated by the monocarboxylate transporter JEN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both depend upon the transcription factor SOK2, and the active mechanism is ultimately mediated by the monocarboxylate transporter JEN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "ec0ecc78-4d07-4f78-aaab-b6462f3e5989",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C78",
+      "claim": "Jen1 is required for yeast to grow on lactic acid as a sole carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "Jen1 is required for yeast to grow on lactic acid as a sole carbon source, but is down-regulated during glucose repression (Casal et al., 1999; Pacheco et al., 2012), and its transcript was not abundant in [GAR+] cells compared to control cells (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c241312d-f287-4fd6-88c3-955113e3acf0",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C79",
+      "claim": "Jen1 is down-regulated during glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Jen1 is required for yeast to grow on lactic acid as a sole carbon source, but is down-regulated during glucose repression (Casal et al., 1999; Pacheco et al., 2012), and its transcript was not abundant in [GAR+] cells compared to control cells (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "cf592590-1450-4265-ade4-d9cd980f4144",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C80",
+      "claim": "JEN1 transcript was not abundant in [GAR+] cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Jen1 is required for yeast to grow on lactic acid as a sole carbon source, but is down-regulated during glucose repression (Casal et al., 1999; Pacheco et al., 2012), and its transcript was not abundant in [GAR+] cells compared to control cells (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "16994d4b-660e-423d-be28-ee7d28e3c567",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C81",
+      "claim": "Deletion of JEN1 greatly reduces growth on glycerol compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of JEN1 greatly reduces growth on glycerol compared to wild-type cells, precluding its emergence in the previous screens for genes affecting [GAR+] (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "cd8db10a-91d5-4f80-9278-75532e51f874",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C82",
+      "claim": "Deletion of JEN1 did not influence [GAR+] induction by lactic acid at either low or high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested if lactic acid could induce jen1\u2206 cells to acquire [GAR+]. Deletion of JEN1 did not influence [GAR+] induction by lactic acid at either low or high concentrations (Figure 3A,B), indicating that active transport is not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "13b66838-b45b-4796-90dc-9fef8792dedf",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C83",
+      "claim": "Active transport of lactic acid is not required for [GAR+] induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of JEN1 did not influence [GAR+] induction by lactic acid at either low or high concentrations (Figure 3A,B), indicating that active transport is not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that deletion of JEN1 does not affect induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "44654204-1583-4ddb-8968-b4b84f83347c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C84",
+      "claim": "Individual deletion of lactic acid dehydrogenases and transhydrogenases (DLD1, DLD2, DLD3, and CYB2) had no significant effect on [GAR+] induction by lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether enzymes reported to be involved in lactic acid metabolism in the Saccharomyces Genome Database (Cherry et al., 2012) could influence the ability of this molecule to induce [GAR+]. Individual deletion of these various lactic acid dehydrogenases and transhydrogenases (DLD1, DLD2, DLD3, and CYB2) also had no significant effect on [GAR+] induction by lactic acid (Figure 3A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3791be07-d296-43b1-b4fc-6dd6421ffa60",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C85",
+      "claim": "The cellular mechanisms engaged by lactic acid to induce [GAR+] do not require its active import or its metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cellular mechanisms engaged by lactic acid to induce [GAR+] do not require its active import or its metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that deletion of genes involved in lactic acid import and metabolism do not affect induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "0ef305be-291e-4f71-a855-065f6d2aa655",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C86",
+      "claim": "SOK2 previously emerged as a hit in the screen for yeast mutants that were impaired in their ability to acquire [GAR+] upon induction by the bacterium Staphylococcus hominis.",
+      "claim_type": "EXPLICIT",
+      "source": "SOK2 previously emerged as a hit in the screen for yeast mutants that were impaired in their ability to acquire [GAR+] upon induction by the bacterium Staphylococcus hominis (Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "599ffac3-d358-4f90-a3bc-43bd957b418c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C87",
+      "claim": "Yeast cells in which SOK2 was deleted were not induced by lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested whether loss of SOK2 impaired the capacity of lactic acid alone to induce [GAR+] in yeast cells. It did: yeast cells in which SOK2 was deleted were not induced by lactic acid (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "8fd029ec-3c1f-4958-93ef-b4111710090a",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C88",
+      "claim": "The passive import of lactic acid is likely the dominant means through which this inducing signal is transmitted from bacteria to neighboring fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the previously described passive import of lactic acid (Paiva et al., 2013) is likely the dominant means through which this inducing signal is transmitted from bacteria to neighboring fungi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that SOK2 is required for induction and that active transport (via JEN1) is not required.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "73b97ea3-bf53-434d-abc8-93c7cefb84e5",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C89",
+      "claim": "Even the lowest concentration of lactic acid tested (0.015%) increased the number of colonies that arose on a GLY + GlcN plate by nearly three orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Even the lowest concentration we tested in this experiment, 0.015%, increased the number of colonies that arose on a GLY + GlcN plate by nearly three orders of magnitude, such that approximately 5% of cells grew into medium-sized colonies (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "64dfa3be-0cac-4353-bcaa-43e9c96d14db",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C90",
+      "claim": "Increasing concentrations of lactic acid up to 0.25% did not strongly increase the degree of [GAR+] induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing concentrations of lactic acid up to 0.25% did not strongly increase the degree of induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "d85f970e-5e7b-4558-960f-9f8433ca374f",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C91",
+      "claim": "1% lactic acid caused an even stronger induction, such that nearly all cells in the population grew into large colonies on GLY + GlcN media.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 1% lactic acid caused an even stronger induction, such that nearly all cells in the population grew into large colonies on GLY + GlcN media (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "4caa07c7-b339-47de-97c0-ad0ce6ce379f",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C92",
+      "claim": "[GAR+] can exist in multiple 'strains' \u2013 different heritable and stable activity states.",
+      "claim_type": "EXPLICIT",
+      "source": "Like virtually all prions, [GAR+] can exist in multiple 'strains' \u2013 different heritable and stable activity states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1a71614f-b15d-4ee4-b26e-fb725d40991e",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C93",
+      "claim": "When [GAR+] colonies arise spontaneously on selective GLY + GlcN plates, 'strong' [GAR+] colonies are larger than 'weak' [GAR+] colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "When they arise spontaneously on selective GLY + GlcN plates, 'strong' [GAR+] colonies are larger than 'weak' [GAR+] colonies (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9b027f32-aa9c-4227-b9e4-62ff6a373b8b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C94",
+      "claim": "Both 'strong' and 'weak' [GAR+] activity states are heritable over long biological timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Both activity states are heritable over long biological timescales (Brown and Lindquist, 2009; Jarosz et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1271b9e5-cf02-49a8-b564-271dff1978e7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C95",
+      "claim": "Small colonies induced with low concentrations of lactic acid grew modestly on GLY + GlcN after propagation, in a manner that mimicked 'weak' [GAR+] strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The small colonies that had originally been induced with low concentrations of lactic acid grew modestly on GLY + GlcN, in a manner that mimicked 'weak' [GAR+] strains (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "8952cbc5-7adb-49df-897c-8fd50823d9cf",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C96",
+      "claim": "Large colonies induced with high concentrations of lactic acid grew robustly on GLY + GlcN after propagation, in a manner that mimicked 'strong' [GAR+] strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The large colonies that had originally been induced with high concentrations of lactic acid grew robustly on GLY + GlcN, in a manner that mimicked 'strong' [GAR+] strains (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "de373c9c-a34b-41f9-bda6-2677f0cc92a8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C97",
+      "claim": "Alterations in the concentration of lactic acid produced by inducing bacteria may engage different heritable activity states, or so-called 'strains', of the [GAR+] prion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, alterations in the concentration of lactic acid produced by inducing bacteria may engage different heritable activity states, or so-called 'strains', of the [GAR+] prion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that different concentrations of lactic acid induce different strengths of [GAR+].",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "7d93b6c9-0393-46ec-9c6c-a6d143fc0b2b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C98",
+      "claim": "Glucose repression has evolved multiple times in the fungal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose repression has evolved multiple times in the fungal lineage (Hagman and Piskur, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "91e311e9-fe76-4e3a-9d24-806528c9ebbc",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C99",
+      "claim": "Dekkera bruxellensis diverged from S. cerevisiae 200 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Dekkera bruxellensis, an organism used in the production of lambic beers that diverged from S. cerevisiae 200 million years ago, uses a distinct mechanism for engaging stringent glucose repression (Rozpedowska et al., 2011; Woolfit et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "141ac165-f478-4e3d-b7f3-4c1a148289a7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C100",
+      "claim": "D. bruxellensis uses a distinct mechanism for engaging stringent glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Dekkera bruxellensis, an organism used in the production of lambic beers that diverged from S. cerevisiae 200 million years ago, uses a distinct mechanism for engaging stringent glucose repression (Rozpedowska et al., 2011; Woolfit et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "19e7ddb1-a88a-4a22-82cb-70978930281b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C101",
+      "claim": "D. bruxellensis can spontaneously acquire a [GAR+]-like state to become a metabolic generalist.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established that despite this evolutionary distance, D. bruxellensis can spontaneously acquire a [GAR+]-like state to become a metabolic generalist (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c07cc6a8-84e7-4e7c-8fc7-aeb1cb22d2d4",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C102",
+      "claim": "The [GAR+]-like state in D. bruxellensis can be induced by cross-kingdom chemical communication with bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This [GAR+]-like state can also be induced by cross-kingdom chemical communication with bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "d003a454-7c7b-46ee-8da3-4d9190571e4b",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C103",
+      "claim": "Concentrations of lactic acid well within the physiological range produced by bacteria (0.02%) induced robust growth of D. bruxellensis on GLY + GlcN.",
+      "claim_type": "EXPLICIT",
+      "source": "We exposed na\u00efve D. bruxellensis strains to lactic acid, guided by our results from S. cerevisiae. Concentrations well within the physiological range of lactic acid produced by bacteria (0.02%) induced robust growth on GLY + GlcN (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "f151788c-1b5b-49af-8483-1c361d197982",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C104",
+      "claim": "Lactic acid-induced D. bruxellensis colonies maintained the ability to circumvent glucose repression after propagation for ~75 generations on non-selective rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We picked colonies from these selections and propagated them for ~75 generations on non-selective rich medium (YPD). In each case, the trait was heritable: induced colonies maintained the ability to circumvent glucose repression (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c8000757-f79a-4507-8430-86e316dec9d9",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C105",
+      "claim": "The [GAR+]-like states that arise spontaneously or are induced by bacteria in D. bruxellensis depend strongly on the activity of Hsp70 chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The [GAR+]-like states that arise spontaneously or are induced by bacteria in D. bruxellensis depend strongly on the activity of Hsp70 chaperones (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3e49c128-03c4-466c-b53e-f967e505482f",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C106",
+      "claim": "The Hsp70 inhibitor myricetin significantly reduced the ability of lactic acid-induced D. bruxellensis colonies to circumvent glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment significantly reduced the ability of these induced colonies to circumvent glucose repression (Figure 6B), just as it does for the [GAR+]-like states that arise spontaneously in this organism (Jarosz et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "6af4280a-bee8-4aef-8275-2733af9702a2",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C107",
+      "claim": "Across a vast evolutionary distance, bacterial production of lactic acid can engage [GAR+]-like mechanisms to heritably convert neighboring fungi from metabolic specialists to metabolic generalists.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, across a vast evolutionary distance, bacterial production of lactic acid can engage [GAR+]-like mechanisms to heritably convert neighboring fungi from metabolic specialists to metabolic generalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that lactic acid induces [GAR+]-like states in both S. cerevisiae and D. bruxellensis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c0f1e7b4-df3e-4b64-8b54-d79f30a4c459",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C108",
+      "claim": "The ability of lactic acid to elicit the [GAR+] prion could provide a molecular mechanism for Pasteur's observations about lactic acid producing bacteria leading to fermentation failure.",
+      "claim_type": "EXPLICIT",
+      "source": "More than a century ago, Louis Pasteur documented what vintners have long since appreciated: the presence of lactic acid producing bacteria in fermentations can often lead to their failure (Pasteur, 1873). Our observations suggest that the ability of lactic acid to elicit the [GAR+] prion could provide a molecular mechanism for those observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings and historical observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "daf9d783-d604-4719-a77b-d7477fbeb0ee",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C109",
+      "claim": "The [GAR+] prion can confer strong selective advantage \u2013 converting metabolic specialists to metabolic generalists in a manner that improves fitness in complex microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "The [GAR+] prion is found in evolutionarily distant fungal species, and can confer strong selective advantage \u2013 converting metabolic specialists to metabolic generalists in a manner that improves fitness in complex microbial communities (Jarosz et al., 2014a, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b445d620-63f9-46dd-92ed-0de822c35010",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C110",
+      "claim": "Recent evidence points to important signaling roles for lactic acid in human cancer cells, in the context of the Warburg effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence points to important signaling roles for lactic acid in human cancer cells, in the context of the Warburg effect (Adeva-Andany et al., 2014; Dhup et al., 2012; Fiaschi et al., 2012; Liberti and Locasale, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "0770282f-9ae9-474c-a45c-d3f40a5241f8",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C111",
+      "claim": "Other studies have linked LAB to benefits for human health and disease prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have linked LAB to benefits for human health and disease prevention, however it remains unclear how much these effects are due to the effects of lactic acid on host cells (Kim et al., 2007; Masood et al., 2011; Tiptiri-Kourpeti et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "c9f1766a-cb13-4ad9-86eb-401a60353077",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C112",
+      "claim": "In at least some cases, LAB appear to exert their health effects by influencing other microbes, for example, modulating the virulence of Clostridium difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "In at least some cases, LAB appear to exert their health effects by influencing other microbes, for example, modulating the virulence of Clostridium difficile (Lee et al., 2013; Yun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "45475eba-07a4-4f7e-9d94-28c7026f48ba",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C113",
+      "claim": "The discovery of a connection between passive lactic acid uptake and the ability to induce [GAR+] (via SOK2) provides new insight into the initiation of this complex cross-kingdom chemical communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of a connection between passive lactic acid uptake and the ability to induce [GAR+] (via our results with SOK2) provides new insight into the initiation of this complex cross-kingdom chemical communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing that SOK2 is required for induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "d03d66b9-3994-4d63-a301-0a8468fdebc5",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C114",
+      "claim": "Other molecules may modulate [GAR+] induction by lactic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence suggest that other molecules may modulate [GAR+] induction by lactic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on observations about differences in induction kinetics and species-specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "f6678738-f9f4-4828-8d42-509163cf9970",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C115",
+      "claim": "The kinetics of [GAR+] induction were slightly faster in conditioned media than with lactic acid alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were able to fully reconstitute induction with lactic acid alone, the kinetics were slightly faster in conditioned media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1e4ddbc9-8009-4378-bdb0-68cc060cb542",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C116",
+      "claim": "Some of the bacteria that induce [GAR+] in S. cerevisiae do not induce the [GAR+]-like state in D. bruxellensis, even though high levels of lactic acid can induce the prion in each of these organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, some of the bacteria that induce [GAR+] in S. cerevisiae do not induce the [GAR+]-like state in D. bruxellensis, even though high levels of lactic acid can induce the prion in each of these organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "102fb032-7043-4f99-b5e7-df7e90a03eae",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C117",
+      "claim": "Other bacterially secreted factors may influence perception of the lactic acid signal, and the effects of these molecules may be species specific.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing but plausible explanation is that other bacterially secreted factors influence perception of the lactic acid signal, and that the effects of these molecules may also be species specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on observations about species-specific differences in bacterial induction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "be2080ba-5669-4d96-9941-e94339a6a8c4",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C118",
+      "claim": "There is precedent for multiple bacterially secreted molecules being required for full induction of developmental changes in choanoflagellates.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is precedent for this behavior in choanoflagellates, where two bacterially secreted lipids were required to recapitulate full induction of rosette, multicellular colony formation (Alegado et al., 2012; Woznica et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "08e290c8-39c5-41fa-ba09-a09c2a040bc5",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C119",
+      "claim": "It is possible that other molecules could also fuel the cross-kingdom interaction that induces [GAR+] in diverse ecological niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although we have shown that S. gallinarium induces [GAR+] via lactic acid, it is entirely possible that other molecules could also fuel this cross-kingdom interaction in diverse ecological niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the possibility of other inducing molecules.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "4a26cb5c-a761-4eba-86de-8663e600d44d",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C120",
+      "claim": "There is precedent in mechanisms of quorum sensing for competition among inducers secreted by different bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also precedent in mechanisms of quorum sensing for competition among inducers secreted by different bacteria (Drescher et al., 2014; Even-Tov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "27366e4e-1704-4c30-85d8-ef220d820810",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C121",
+      "claim": "Other prion-like epigenetic states could be regulated by common metabolites, at times in service of cross-species communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most remarkably, our study raises the possibility that other prion-like epigenetic states could be regulated by common metabolites, at times in service of cross-species communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "89e30635-6b4f-4f1a-ba8b-6692ecc55660",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C122",
+      "claim": "General stressors that perturb protein homeostasis can modestly elevate the frequency of cells harboring the [PSI+] or [MOT3+] prions.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have highlighted the fact that general stressors that perturb protein homeostasis can modestly elevate the frequency of cells harboring the [PSI+] or [MOT3+] prions (Holmes et al., 2013; Tyedmers et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "fde3596f-5eb6-431a-a4f5-5e280311d34c",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C123",
+      "claim": "Intrinsic links between stress responses and prion switching ensure that subpopulations of cells can diversify their phenotypes when they are ill-suited to the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These intrinsic links between stress responses and prion switching ensure that subpopulations of cells can diversify their phenotypes when they are ill-suited to the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior work about stress-induced prion switching.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "a86756b1-58ab-42a3-85d2-2caafa2d161a",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C124",
+      "claim": "The findings extend prion biology to a more concerted, switch-like behavior in which prions can serve as a target for rapid and effective cross-species communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings extend this biology to a more concerted, switch-like behavior in which prions can serve as a target for rapid and effective cross-species communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "64ca8c52-feaa-493f-8fc9-6d370b3a87d0",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C125",
+      "claim": "Biological niches like the human body harbor microbial communities that are far more complex than those studied in this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological niches like the human body harbor microbial communities that are far more complex than those we have studied here (Lozupone et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3beefa30-2a78-4ab7-9ca7-dc75430b8153",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C126",
+      "claim": "The robust connection between lactic acid and a heritable change in metabolic strategy has been missed despite a multitude of studies in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that the robust connection we have discovered between a simple metabolite and a heritable change in metabolic strategy has been missed despite a multitude studies in this model organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the novelty of the finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "5f5eea1c-6118-435c-8717-a2bace52b530",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "claim_id": "C127",
+      "claim": "The observations underscore the potential of cross-kingdom molecular communication to illuminate biological processes, in particular its capacity to elicit heritable, epigenetic transformations of biological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations thus underscore the potential of cross-kingdom molecular communication to illuminate biological processes, in particular its capacity to elicit heritable, epigenetic transformations of biological traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c9914cf8-fa39-422c-a5e5-270a351a2285",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lactic acid was identified as the active component in bacterial conditioned medium that induces [GAR+] in S. cerevisiae. Activity-guided fractionation of S. gallinarum conditioned medium, followed by HPLC purification, NMR, and mass spectrometry, revealed lactic acid as the inducing molecule. Both L- and D-isomers of lactic acid induced [GAR+] in a concentration-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of lactic acid is well-supported by systematic purification (C45-C47), chemical characterization (C48), and functional validation (C49). The use of multiple orthogonal methods (HPLC, NMR, MS) and demonstration that pure lactic acid recapitulates the induction phenotype provides strong evidence for this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lactic acid-induced glucose repression bypass exhibits the defining genetic and molecular properties of the [GAR+] prion. The trait shows dominance and semi-dominance in genetic crosses, non-Mendelian inheritance through meiosis, dependence on Hsp70 chaperone activity, and requirement for PMA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent genetic tests (C62-C65) demonstrate prion-like inheritance patterns. Chaperone dependence is shown through both dominant-negative Hsp70 curing (C68-C69) and chemical inhibition (C70). The PMA1 requirement (C73-C74) links the lactic acid-induced state to the known molecular basis of [GAR+]. These converging lines of evidence strongly support that lactic acid induces authentic [GAR+].",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lactic acid induction of [GAR+] does not require metabolism or active transport of lactic acid. Deletion of genes involved in lactic acid metabolism (DLD1, DLD2, DLD3, CYB2) and active transport (JEN1) did not affect [GAR+] induction, and lactic acid did not serve as a carbon source under the experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic deletion experiments (C82, C84) provide clear evidence that neither active transport nor metabolism is required. Control experiments (C56, C57) rule out that yeast are simply using lactic acid as a nutrient. This mechanistic insight is well-supported by the data, though the positive mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "a2d58f0b-1683-4ab4-8b04-1079a37433df",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SOK2 is required for lactic acid induction of [GAR+], suggesting passive import is the dominant mechanism. Deletion of SOK2 abolished lactic acid induction, and since active transport (via JEN1) is not required, passive import likely mediates the signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The requirement for SOK2 (C87) combined with the lack of requirement for JEN1 (from previous result) provides strong support for passive import as the mechanism (C88). However, the inference about passive import (C88) relies on prior literature about SOK2's role and could benefit from more direct mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Different concentrations of lactic acid induce distinct heritable [GAR+] strains with different activity levels. Low concentrations (0.015-0.25%) induced 'weak' [GAR+] strains, while high concentrations (1%) induced 'strong' [GAR+] strains, and these phenotypes were maintained after ~75 generations of non-selective growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dose-response data (C89-C91) and heritability experiments (C95-C96) demonstrate that lactic acid concentration influences prion strain formation. The maintenance of distinct phenotypes after extensive propagation provides strong evidence for true strain differences rather than transient effects. This extends understanding of how environmental signals can specify epigenetic states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "1ced4ad6-a6dd-4a14-885b-461916c7558d",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lactic acid induces [GAR+]-like epigenetic states in the evolutionarily distant yeast D. bruxellensis. Physiological concentrations of lactic acid (0.02%) induced heritable glucose repression bypass in D. bruxellensis that was maintained for ~75 generations and was sensitive to Hsp70 inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experiments in D. bruxellensis (C103-C104, C106) parallel those in S. cerevisiae and demonstrate conservation of the lactic acid response across 200 million years of evolution. The Hsp70 dependence (C106) suggests mechanistic similarity. This is strong evidence for evolutionary conservation of this cross-kingdom signaling mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "4cfafe79-b387-4059-a127-2579ac8e9b50",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lactic acid induces [GAR+] rather than selecting for pre-existing [GAR+] cells. Growth rate measurements showed no significant prion-dependent differences between [GAR+] and [gar\u2212] cells in the presence of lactic acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The growth curve data (C58) directly addresses the alternative hypothesis of selection versus induction. The lack of growth advantage for pre-existing [GAR+] cells in lactic acid supports an induction mechanism (C59). This is an important control that strengthens the interpretation of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "3650fb99-b230-4a46-88a8-ace7270c97c2",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "This study represents the first identification of a bacterial metabolite that potently induces a prion and extends prion biology to include targeted cross-species communication. The findings suggest lactic acid may provide a molecular mechanism for historical observations about fermentation failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the novelty claim (C9) appears reasonable based on the literature cited, the broader implications (C108, C121, C124, C127) are largely speculative. The connection to Pasteur's observations (C108) is plausible but not directly tested. The extension to other prions (C121) is speculation requiring future work. These represent important discussion points but are not experimentally validated in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "d37890c7-b896-4c1e-8310-5417f536b073",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Other molecules may modulate [GAR+] induction by lactic acid. Induction kinetics were slightly faster with conditioned media than pure lactic acid, and some bacteria show species-specific induction patterns that cannot be fully explained by lactic acid alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observations (C115-C116) suggest additional factors may be involved, but this remains speculative (C114, C117, C119). The precedent from choanoflagellates (C118) supports the plausibility but does not constitute direct evidence. These observations point to interesting future directions but do not constitute a supported result from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "793c56df-11f1-441d-ae53-3a33a3258375",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on S. cerevisiae glucose repression and the [GAR+] prion. S. cerevisiae exhibits strong glucose repression, which can be circumvented by the [GAR+] prion\u2014a heritable, protein-based epigenetic element that converts cells from metabolic specialists to generalists. [GAR+] can be induced by bacteria through a diffusible signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the scientific context and are supported by extensive citations to prior work, primarily from the authors' previous studies. This background is well-established in the literature and provides the foundation for the current study's investigation of the bacterial signal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "15173b37-7e8e-49a4-a950-cbcfe00a1953",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on lactic acid biology. Lactic acid exists as L- and D-isomers, is produced by lactic acid bacteria at physiologically relevant concentrations in fermentations, and can be imported into yeast via active (JEN1-mediated) and passive (SOK2-dependent) mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide essential biochemical and physiological context, all supported by appropriate citations to prior literature. This background information is necessary for interpreting the experimental findings and is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Broader context about cross-kingdom interactions, metabolic regulation, and prion biology. Small molecules mediate inter-species interactions across biology, glucose repression is widespread, prions can exist in multiple strains, and stress can modulate prion formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide general scientific context and are supported by appropriate citations. They frame the significance of the work within broader biological principles but do not represent findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "b2468838-a5d4-4998-8632-7eba1c5a7a01",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discovery of SOK2's role provides new insight into the initiation of cross-kingdom chemical communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim appropriately summarizes the mechanistic insight gained from the SOK2 experiments. It represents a valid inference from the experimental data showing SOK2 is required for lactic acid induction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    },
+    {
+      "id": "9e2647cb-9dc3-4d1c-96da-5cadd1eb5013",
+      "content_id": "1ae60396-89a7-419b-bcc4-bee47eed2b8a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "There is precedent for competition among bacterial inducers in quorum sensing systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by appropriate citations and provides context for speculation about multiple bacterial signals, but does not represent a finding from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:50:50.934836Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "65f36f0d-d99d-4f16-a17a-b0b7a7164fbf",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "487a1dfc-e58a-4072-9971-4f32203e5a3a",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "b4f53406-0dce-41de-9e64-297bdbb8ac81",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "4c5adda5-729b-4b5e-94d5-d1d8ba67a7c7",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "29728226-00f2-40b2-9821-846bc1edb3ab",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "9adc8dec-d9b3-4ec9-91b2-ce369117bd82",
+      "result_id": "c9914cf8-fa39-422c-a5e5-270a351a2285"
+    },
+    {
+      "claim_id": "3a5a461b-82e4-4006-aaf4-954ddd5f3a47",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "c3c4b232-9600-479e-9ce5-e390508a9973",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "cf56a7cd-fe13-4378-a291-476859b3ec39",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "199e754e-a212-41bc-ad09-f1fc134f8590",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "74ac002d-6d2e-4781-b061-c4a8c53752c8",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "004cc452-de4f-4097-9d12-476e98738d91",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "138a4117-3481-4e3d-8296-c1ef03f4c7d9",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "89832e8f-8cee-43b9-b471-223fb95ecb55",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "18a7bb9c-d6dd-47a9-9f86-f5e9265d3978",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "faeb7f90-c241-45e5-bd3f-cbeabcdb008e",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "28183d7d-189f-420c-83ac-8d49a4480944",
+      "result_id": "3bd2f6cc-0319-4bb1-8804-ba491f801b66"
+    },
+    {
+      "claim_id": "02c10100-6f16-465b-977c-7c26ac99c624",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "521989a5-f62d-425c-8574-25d9e9ee7ed1",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "61162d1c-07b3-441c-a1a9-e073c7cd4da7",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "cd8db10a-91d5-4f80-9278-75532e51f874",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "13b66838-b45b-4796-90dc-9fef8792dedf",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "44654204-1583-4ddb-8968-b4b84f83347c",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "3791be07-d296-43b1-b4fc-6dd6421ffa60",
+      "result_id": "27c31ee4-94ba-4ba6-8af2-831a572cab2e"
+    },
+    {
+      "claim_id": "0ef305be-291e-4f71-a855-065f6d2aa655",
+      "result_id": "a2d58f0b-1683-4ab4-8b04-1079a37433df"
+    },
+    {
+      "claim_id": "599ffac3-d358-4f90-a3bc-43bd957b418c",
+      "result_id": "a2d58f0b-1683-4ab4-8b04-1079a37433df"
+    },
+    {
+      "claim_id": "8fd029ec-3c1f-4958-93ef-b4111710090a",
+      "result_id": "a2d58f0b-1683-4ab4-8b04-1079a37433df"
+    },
+    {
+      "claim_id": "73b97ea3-bf53-434d-abc8-93c7cefb84e5",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "64dfa3be-0cac-4353-bcaa-43e9c96d14db",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "d85f970e-5e7b-4558-960f-9f8433ca374f",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "1271b9e5-cf02-49a8-b564-271dff1978e7",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "8952cbc5-7adb-49df-897c-8fd50823d9cf",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "de373c9c-a34b-41f9-bda6-2677f0cc92a8",
+      "result_id": "503d031c-15ea-4ae7-8e1f-65f7207ae4b7"
+    },
+    {
+      "claim_id": "269e22b8-9e11-43e8-9455-da7ee3a79359",
+      "result_id": "1ced4ad6-a6dd-4a14-885b-461916c7558d"
+    },
+    {
+      "claim_id": "d003a454-7c7b-46ee-8da3-4d9190571e4b",
+      "result_id": "1ced4ad6-a6dd-4a14-885b-461916c7558d"
+    },
+    {
+      "claim_id": "f151788c-1b5b-49af-8483-1c361d197982",
+      "result_id": "1ced4ad6-a6dd-4a14-885b-461916c7558d"
+    },
+    {
+      "claim_id": "3e49c128-03c4-466c-b53e-f967e505482f",
+      "result_id": "1ced4ad6-a6dd-4a14-885b-461916c7558d"
+    },
+    {
+      "claim_id": "6af4280a-bee8-4aef-8275-2733af9702a2",
+      "result_id": "1ced4ad6-a6dd-4a14-885b-461916c7558d"
+    },
+    {
+      "claim_id": "80335d4e-3dde-4552-b9d4-3e2628341262",
+      "result_id": "4cfafe79-b387-4059-a127-2579ac8e9b50"
+    },
+    {
+      "claim_id": "762b856e-4d32-49fb-a292-aa9f9bc78994",
+      "result_id": "4cfafe79-b387-4059-a127-2579ac8e9b50"
+    },
+    {
+      "claim_id": "04873ded-5dc2-4e3c-994c-646f3ac3c826",
+      "result_id": "3650fb99-b230-4a46-88a8-ace7270c97c2"
+    },
+    {
+      "claim_id": "c0f1e7b4-df3e-4b64-8b54-d79f30a4c459",
+      "result_id": "3650fb99-b230-4a46-88a8-ace7270c97c2"
+    },
+    {
+      "claim_id": "27366e4e-1704-4c30-85d8-ef220d820810",
+      "result_id": "3650fb99-b230-4a46-88a8-ace7270c97c2"
+    },
+    {
+      "claim_id": "a86756b1-58ab-42a3-85d2-2caafa2d161a",
+      "result_id": "3650fb99-b230-4a46-88a8-ace7270c97c2"
+    },
+    {
+      "claim_id": "5f5eea1c-6118-435c-8717-a2bace52b530",
+      "result_id": "3650fb99-b230-4a46-88a8-ace7270c97c2"
+    },
+    {
+      "claim_id": "d03d66b9-3994-4d63-a301-0a8468fdebc5",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "f6678738-f9f4-4828-8d42-509163cf9970",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "1e4ddbc9-8009-4378-bdb0-68cc060cb542",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "102fb032-7043-4f99-b5e7-df7e90a03eae",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "be2080ba-5669-4d96-9941-e94339a6a8c4",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "08e290c8-39c5-41fa-ba09-a09c2a040bc5",
+      "result_id": "d37890c7-b896-4c1e-8310-5417f536b073"
+    },
+    {
+      "claim_id": "fb53a0df-96b6-48c8-9097-84f29aa39b48",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "aa974604-1f84-4338-9cb6-b315487713d1",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "1a1e9445-8b6c-4a8c-9792-5cf6cf7886fb",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "d2bbf9eb-7628-478b-9239-42ebc34efafe",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "e2919665-9bd6-4aae-a66b-816f766668a0",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "9c96a5a0-f999-4d83-a3fc-99a2eb4f0e7d",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "3278a725-f72f-4458-b47b-5fb447ae6568",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "94b31bd7-6f16-4370-9802-70f452abe3ec",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "0f6c785b-e1f8-4e1e-8e37-35a08e93f8ef",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "e4e631ef-e68d-40f5-bcd6-33b89b479da9",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "58225b49-fffb-4a37-8168-38bf76ffe3b5",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "fc65ee57-cfba-43a7-a6f0-360c0dc25b8d",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "dce7e0c3-5a6d-438f-8116-8f318e3c4bf7",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "3d40c338-9880-46db-8eef-1259eb4c6c8f",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "2568ec6d-516d-4e71-8ebb-a82b8f896eaa",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "ad3dd5fc-ad50-41e0-86ac-b83b7fea58f8",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "9be75604-b99f-4b8f-90ba-0f780f79cdd5",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "0002ff76-70b3-450b-8dbe-db791a012aae",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "5ebcb88b-f004-4766-95f2-a9a31259b69b",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "32f438e0-d7ff-4519-90f3-f1d682f9aaf8",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "b325739c-6883-4471-a9c4-3a8ccaacda74",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "1ea9d67f-e77b-4033-aef8-4e4c8fcf3424",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "114b99fe-57f1-4125-82eb-72177bc0bc0d",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "ce530902-cc08-45fe-a857-dab636237e72",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "7434dd76-c035-46ef-b5f4-b47864e685b9",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "e178b560-e333-4719-a77b-7fd7e32548fb",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "848521af-f7b1-4fe3-825e-b353f0109eb1",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "b35dc240-80d4-4d37-9838-2bd96aa451e1",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "22ab9919-994e-48e7-b861-b2de1c539e49",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "2c60a404-43d2-439c-84f3-48051bcf6f03",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "784fe738-fea5-4ac3-b0cf-6d8d6894717c",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "b6752423-8502-4242-a453-48e823a1372b",
+      "result_id": "793c56df-11f1-441d-ae53-3a33a3258375"
+    },
+    {
+      "claim_id": "5dabe41b-db76-4551-ad6b-ace0b894dcc0",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "6b5b825d-9807-476f-92fd-0f56210724fa",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "259c85ef-8c2e-42df-9fe4-72579022944c",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "6facdf9b-add5-4b17-9212-46ebc91623c1",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "07f2fddd-0257-429b-b540-9181cd5146c9",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "65cf0428-269c-4cee-a0b1-fbb5cc30521a",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "96a077c7-0387-4fce-80d3-ef2bb90f32e2",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "c126af03-9cd4-46ed-a119-baf1b44002e6",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "529b3a82-1193-4708-a981-f92e945e8aea",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "ec0ecc78-4d07-4f78-aaab-b6462f3e5989",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "c241312d-f287-4fd6-88c3-955113e3acf0",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "cf592590-1450-4265-ade4-d9cd980f4144",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "16994d4b-660e-423d-be28-ee7d28e3c567",
+      "result_id": "15173b37-7e8e-49a4-a950-cbcfe00a1953"
+    },
+    {
+      "claim_id": "dd0dcacf-aa11-4266-85b1-6f58d9b9dbe2",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "ab4db541-02cb-467b-afd3-aad5552e12c2",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "bc2a56ed-40b9-402f-97c2-8a010e4ed351",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "f58d2160-8853-47b2-9eb0-2ad511e39001",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "9119f844-c472-4591-897d-98f51e58e5ba",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "b2843792-8da7-4bdd-ad39-e9ef66816e46",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "bb3a0391-37f2-4568-b9e2-eae13adf6708",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "ded5894d-5bd5-4807-a626-35ffafbe1fc0",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "e4a99324-adc8-4f3c-8288-6e4cb99ec8a8",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "a4f4a6c5-fb17-4d55-9b27-89056bf0c40e",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "49e05778-d425-45d9-91f6-20c41abaec0c",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "16d603f8-30f2-43c4-bea3-d38b7b10f7ac",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "4caa07c7-b339-47de-97c0-ad0ce6ce379f",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "1a71614f-b15d-4ee4-b26e-fb725d40991e",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "9b027f32-aa9c-4227-b9e4-62ff6a373b8b",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "7d93b6c9-0393-46ec-9c6c-a6d143fc0b2b",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "91e311e9-fe76-4e3a-9d24-806528c9ebbc",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "141ac165-f478-4e3d-b7f3-4c1a148289a7",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "19e7ddb1-a88a-4a22-82cb-70978930281b",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "c07cc6a8-84e7-4e7c-8fc7-aeb1cb22d2d4",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "c8000757-f79a-4507-8430-86e316dec9d9",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "daf9d783-d604-4719-a77b-d7477fbeb0ee",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "b445d620-63f9-46dd-92ed-0de822c35010",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "0770282f-9ae9-474c-a45c-d3f40a5241f8",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "c9f1766a-cb13-4ad9-86eb-401a60353077",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "89e30635-6b4f-4f1a-ba8b-6692ecc55660",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "fde3596f-5eb6-431a-a4f5-5e280311d34c",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "64ca8c52-feaa-493f-8fc9-6d370b3a87d0",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "3beefa30-2a78-4ab7-9ca7-dc75430b8153",
+      "result_id": "2ec40903-4721-4ac1-aa5e-ae150b4048bb"
+    },
+    {
+      "claim_id": "45475eba-07a4-4f7e-9d94-28c7026f48ba",
+      "result_id": "b2468838-a5d4-4998-8632-7eba1c5a7a01"
+    },
+    {
+      "claim_id": "4a26cb5c-a761-4eba-86de-8663e600d44d",
+      "result_id": "9e2647cb-9dc3-4d1c-96da-5cadd1eb5013"
+    }
+  ],
+  "comparisons": []
+}

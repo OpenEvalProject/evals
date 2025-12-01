@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Rett syndrome (RTT) is a rare genetic disease caused by MECP2 mutations in >95% of patients, predominantly affecting females who show progressive loss of motor and cognitive skills, along with stereotypic hand movements, seizures, and autonomic dysfunctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe well-established background information about RTT supported by appropriate citations (Amir et al., 1999; Chahrour and Zoghbi, 2007). These are standard characterizations of the disease found in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Increased cholesterol plasma levels and changes in cholesterol-related gene/protein expression have been found in RTT individuals with MECP2 mutations, though only one-third of RTT patients show elevated plasma cholesterol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 cite prior work (Grillo et al., 2013; Justice et al., 2013; Segatto et al., 2014) establishing the variable cholesterol phenotype in RTT patients. The inconsistency (only 1/3 showing elevated cholesterol) is appropriately noted and provides important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Cholesterol homeostasis is important for CNS function, and prior work showed that inactivation of Sqle or statin treatment improved motor deficits and survival in Mecp2-null mice (a widely-used RTT model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 appropriately cite prior literature establishing the rationale for the current study. The citations to Buchovecky et al., 2013 and other references provide the foundation for testing lovastatin in this replication study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Mecp2-null mice show complex, age-, sex-, and strain-dependent changes in cholesterol levels and metabolism. Cyp46a1 expression changes were observed in 129 background mice and replicated in B6 background, suggesting this may be a robust phenomenon leading to altered cholesterol metabolism in RTT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 cite Buchovecky et al., 2013 appropriately to describe prior findings. However, C19 is speculative inference that the Cyp46a1 reduction is \"robust and background independent\" - this claim will be tested in the current study and is actually contradicted by later findings (C54, C66).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "24S-OHC has emerged as a biomarker of brain cholesterol metabolism in neurological diseases and is a potent positive allosteric modulator of NMDA receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are well-supported by appropriate citations (Leoni and Caccia, 2013; Paul et al., 2013) and establish the rationale for measuring 24S-OHC in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mecp2-null mice showed significantly lower body weight than WT at PND35 (10.8\u00b10.7 vs 16.2\u00b10.7g, p<0.01). WT mice gained weight to 21.4\u00b10.6g by PND56, while Mecp2-null mice gained weight to PND42 (14\u00b10.5g), plateaued, then lost weight to 12.9\u00b10.6g by PND56. Lovastatin had no significant effect on body weight in either genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 present body weight data with appropriate statistics (ANOVA: genotype F1,54=206.8, p<0.0001; treatment F1,54=0.07, p=0.80). The data clearly show genotype effects but no treatment effects, supported by Figure 1. Sample sizes are adequate (n=14-16 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "During treatment, 2/15 vehicle-treated and 1/15 lovastatin-treated Mecp2-null mice died or were euthanized starting at PND54. Median survival was 71 days in both groups with no significant difference (Log-rank \u03c7\u00b2=0.023, p=0.88). All WT mice survived regardless of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present survival data with appropriate statistical analysis (Log-rank test). The data clearly show no effect of lovastatin on survival in Mecp2-null mice, supported by Figure 2. This is a key negative finding contradicting prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Both WT and Mecp2-null mice showed learning on the rotarod task (increased latency to fall across trials 1-8). Mecp2-null mice had significantly lower performance than WT (F1,56=55.7, p<0.0001). Lovastatin had no effect on rotarod performance in either genotype at PND49-50 or PND56-57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 present comprehensive rotarod data with appropriate repeated-measures ANOVA statistics showing significant genotype effects but no treatment effects. The data are supported by Figure 3. This is another key negative finding showing lovastatin does not improve motor performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mecp2-null mice showed reduced performance in the hanging-wire test compared to WT (Kruskal-Wallis: PND50 H=29.81, p<0.0001; PND57 H=27.68, p<0.0001). Lovastatin had no effect on hanging-wire performance in either genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present hanging-wire test data with appropriate non-parametric statistics (Kruskal-Wallis, Dunn's post-hoc). The data confirm motor deficits in Mecp2-null mice and lack of lovastatin effect, supported by Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C59",
+      "C100",
+      "C101"
+    ],
+    "result": "Mecp2 deletion significantly reduced serum cholesterol at both PND28 and PND56 (p<0.05 and p<0.01 respectively) but had no effect on brain cholesterol content at either age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C59, C100-C101 present cholesterol measurements with appropriate statistics (Student's t-test) and sample sizes (n=5 per group). The data in Table 1 clearly show reduced serum but not brain cholesterol. This contradicts prior findings in 129 background mice and is a key result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C87",
+      "C104"
+    ],
+    "result": "Brain 24S-OHC was significantly reduced by 10% in PND56 Mecp2-null males (p=0.0045) and by 12% in PND177 Mecp2+/- females (p=0.0003), but not in PND28 males. The reduction occurred in symptomatic but not pre-symptomatic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C84, C87, C104 present 24S-OHC measurements with appropriate statistics and low variability. The data in Table 2 show small but highly significant reductions in symptomatic mice. This is a novel finding suggesting altered cholesterol metabolism despite normal total cholesterol levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C66"
+    ],
+    "result": "No significant differences in brain Cyp46a1 expression were observed between Mecp2-null and WT mice at PND28 (p=0.21) or PND56 (p=0.51), consistent with findings by Lopez et al., 2017 in the same mouse line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C66 present qRT-PCR data with appropriate statistics (Student's t-test, n=7 per group) shown in Figure 5. This contradicts prior findings by Buchovecky et al., 2013 in 129 background mice and is supported by independent replication (Lopez et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C80",
+      "C102"
+    ],
+    "result": "The study confirmed the Mecp2tm1.1Bird/y model reproduces body weight differences, reduced lifespan, and motor deficits, but failed to reproduce elevated brain/serum cholesterol or beneficial effects of lovastatin (1.5 mg/kg, twice weekly) on motor performance and survival observed in 129 background mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C80, C102 summarize the main findings comparing current results to prior work. The failure to replicate is well-documented with appropriate statistics and citations. This is the central conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C103"
+    ],
+    "result": "The main difference between studies is the genetic background strain (B6 vs 129). Genetic background influences phenotype expression in Mecp2 mouse models, sometimes causing opposite effects of the same allele. The effects of statins may be background-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60-C65, C103 discuss genetic background effects with appropriate citations. The interpretation that background strain explains the discrepancy is reasonable given the literature on strain effects in Mecp2 models, though other factors cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "No changes in brain desmosterol were observed at PND7-14 in B6 Mecp2 mice (Lopez et al., 2017), and no cholesterol increase was detected in B6 Mecp2tm1.1Jae mice (Buchovecky et al., 2013). Mecp2 deletion may require interaction with modifier genes to affect brain cholesterol homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 cite supporting literature appropriately. The inference about modifier genes (C69) is reasonable speculation based on convergent evidence from multiple B6 lines showing no brain cholesterol changes, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Lovastatin had no effect on serum cholesterol in WT mice regardless of background strain. Statins have limited efficacy in reducing cholesterol in mice. Neither background strain nor Mecp2 mutation alone explain lovastatin's effects in 129 mice, suggesting indirect mechanisms are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 cite appropriate literature (Buchovecky et al., 2013; Pecoraro et al., 2014) and make reasonable inferences. The conclusion about indirect mechanisms is speculative but logical given the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Brain lovastatin concentrations after 1.5 mg/kg dosing are likely insufficient to inhibit HMG-CoA reductase (IC50=77 nM, Ki=150 nM), as even 3 mg/kg produces <25 nM brain levels. Direct HMG-CoA reductase inhibition is unlikely the mechanism for lovastatin's effects in 129 Mecp2-null mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 cite appropriate pharmacokinetic and biochemical data (Chen et al., 2007; Bischoff et al., 1997, 1998). The reasoning is sound: brain concentrations are well below IC50/Ki values. However, this assumes in vitro IC50 values apply in vivo, which may not always be true.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study's B6 Mecp2-null mice learned the rotarod task (improved trial 1-8), unlike 129 mice in Buchovecky's study which showed poor performance without improvement. The protocol did not prevent drug effects, as similar B6 Mecp2-null mice improved with clenbuterol (Mellios et al., 2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 address potential methodological concerns about the rotarod protocol. The comparison to clenbuterol response (C83) provides good evidence that the protocol can detect drug effects. The learning difference between strains is an interesting observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88",
+      "C105"
+    ],
+    "result": "24S-OHC is produced largely by brain neurons, so reduced levels suggest decreased neuronal cholesterol metabolism. The reduction in symptomatic but not pre-symptomatic mice suggests altered cholesterol metabolism is associated with the symptomatic disease stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C88, C105 make reasonable inferences from the 24S-OHC data, citing appropriate literature (Bj\u00f6rkhem et al., 1998). The interpretation is logical though alternative explanations (e.g., reduced Cyp46a1 activity vs. reduced substrate) are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "24S-OHC modulates NMDA receptors, and excitatory/inhibitory imbalance occurs in Mecp2 mutant mice. Changes in 24S-OHC levels may contribute to Mecp2-induced alterations in brain circuit excitability by modulating NMDA receptor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C94 cite appropriate literature establishing NMDA receptor involvement in RTT. However, C94 is highly speculative - no direct evidence is provided that the modest 10-12% reduction in 24S-OHC is sufficient to alter NMDA receptor function or circuit excitability in this model. This requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The failure to replicate bone marrow transplantation benefits in RTT mouse models highlights the importance of replication studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 appropriately cites failed replication (Derecki et al., 2012; Wang et al., 2015) to emphasize the value of the current replication study. This provides important context for the negative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Lovastatin had no effect on motor performance and survival in B6 background Mecp2-null mice. This does not negate the potential therapeutic role of statins in RTT but suggests efficacy may be limited to patients with specific cholesterol homeostasis alterations. The response to lovastatin may be controlled by genetic or biological mechanisms specific to lovastatin's brain effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 present reasonable conclusions and speculation based on the data. C96 is well-supported by the experimental results. C97-C99 are speculative but appropriately qualified. The suggestion about patient stratification (C99) is reasonable for future clinical trial design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Plasma levels of 24S-OHC may have potential utility as a biomarker of brain cholesterol homeostasis in RTT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is speculative. While the study measured brain 24S-OHC, no plasma measurements were made, and no data are presented to support the biomarker utility. This would require correlation studies between plasma and brain levels, and validation in RTT patients.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Abstract reaction-diffusion models with specific motifs (FitzHugh-Nagumo and bistable switching with feedback inhibition) exhibit strong selectivity for spatially and temporally ordered synaptic inputs over scrambled inputs. Selectivity arises from supralinear buildup when propagating chemical waves align with successive inputs, while misalignment causes inhibitory suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 demonstrate through systematic modeling (Figure 2) that different reaction-diffusion architectures show varying degrees of sequence selectivity, with the FHN and switching models achieving strong discrimination. The mechanism is clearly demonstrated through time-course and spatial profile data, with quantitative metrics showing the switching model as most selective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The temporal and spatial tuning of sequence selectivity in abstract models scales predictably with reaction rates and diffusion constants. By varying these parameters, sequence selectivity can be achieved over time-intervals of 0.5-4 s and spatial intervals of 2-6 \u03bcm, though selectivity shows differential robustness to parameter variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are well-supported by systematic parameter exploration (Figures 3-4 and supplements). The scaling relationships are demonstrated quantitatively, and parameter sensitivity analysis reveals both robust and fragile parameters. The range of achievable selectivity is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "A biologically-motivated mass-action reaction-diffusion model based on MAPK feedback and bistability exhibits sequence selectivity when configured with switch-like activation and delayed negative feedback turnoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by modeling results in Figure 5 showing that the MAPK-based model successfully discriminates sequential from scrambled inputs. The model incorporates known biochemical mechanisms and demonstrates the predicted design principles from abstract models translate to more realistic chemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In morphologically and electrically detailed pyramidal neuron models with realistic background activity, intracellular MAPK signaling pathways exhibit sequence selectivity for ordered synaptic inputs. Selectivity is observed in basal dendrites, oblique dendrites, and distal apical regions (with varying stimulus requirements), but not in primary apical dendrites. The model shows reasonable robustness to most parameter variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by extensive multiscale modeling (Figure 6). The detailed model incorporates morphology, electrical activity, stochastic synaptic input, and chemical signaling. Sequence selectivity is demonstrated across multiple dendritic regions with appropriate quantification. Parameter sensitivity analysis (Figure 6 supplement 1) shows robustness except for one parameter (Raf-Ca2+ affinity), though the limited scope of sensitivity analysis is a minor weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Based on modeling results, the authors predict that dendritic sequence-recognition zones occupy 5-30 microns spatially and recognize time-intervals of 0.2-5 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 represent predictions derived from the modeling results in Figures 3, 4, and 6. The spatial range is consistent with the ~10 \u03bcm zones showing selectivity in detailed models, and the temporal range encompasses the 0.5-4 s intervals demonstrated in abstract models. These are reasonable extrapolations from the data, though experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Local channel modulation in small dendritic regions (~20 \u03bcm) downstream of sequence-triggered signaling can elicit changes in neuronal firing. Modulation of Na channels, leak conductance, or AMPAR conductance in apical dendrites can increase firing rates, though large modulations (e.g., 10-fold) are required for detectable effects over noisy background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by modeling results in Figure 7 showing that local channel modulation can affect somatic firing. The quantitative effects are documented (e.g., 2-fold increase for 10x AMPAR modulation). However, the requirement for very large modulations (C51) and the simplified approach (not simulating the full biochemical cascade) represent limitations. The results are proof-of-principle rather than definitive predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Multiple kinase pathways (PKA, PKC, MAPK, CaMKII) could potentially implement sequence selectivity through state-switching with feedback inhibition. MAPK specifically can modulate various ion channels and is involved in plasticity events including receptor trafficking, protein synthesis, transcriptional control, and morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 and C81 are well-supported by appropriate citations to prior literature. These claims establish the biological plausibility of the proposed mechanisms by documenting known biochemical pathways and their downstream effects. The inference that other kinases could implement similar mechanisms (C81) is reasonable given the abstract modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Calcium-induced calcium release (CICR) has been proposed to support propagating wave activity in dendrites with dynamics of ~100 \u03bcm/s and length-scales of 10-20 \u03bcm, similar to those predicted for sequence recognition in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by appropriate citations and establish that CICR could provide an alternative, faster mechanism for sequence recognition. The comparison of length-scales between CICR and the current study's predictions is valid and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C19"
+    ],
+    "result": "Electrical mechanisms for sequence recognition operating on faster timescales (~40 ms) have been experimentally demonstrated, showing ~40% discrimination between forward and backward sequences through NMDA receptor amplification of inward versus outward sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C66, and C67 accurately represent prior experimental work (Branco et al. 2010) and appropriately distinguish it from the chemical mechanisms proposed in the current study. The comparison highlights different timescales and degrees of selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Theoretical calculations suggest that a pyramidal neuron could contain ~1000-5000 sequence recognition blocks and perform ~500 sequence discriminations per second. With assumptions about connectivity, a single neuron might recognize ~8.5\u00d710^7 distinct sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 involve increasingly speculative calculations. While C82-C85 are reasonable extrapolations from the modeling results and known neuronal anatomy, C86 involves multiple unvalidated assumptions about connectivity, sparsity, and spatial tolerance (\u00b13 synapses). The calculation is acknowledged as speculative but lacks sufficient justification for the assumptions. These are interesting theoretical possibilities but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors postulate that recursive sequence recognition is a fundamental computational operation in the brain, implemented through the proposed dendritic mechanism, providing highly parallel and selective neural computation in a functionally important time range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 represent the overarching hypothesis and interpretation of the work. While the modeling results support the feasibility of the mechanism, the claim that this is a 'fundamental' operation and the broader computational implications remain speculative. The work demonstrates possibility but not biological implementation or functional necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The hypothesis of single-cell sequence recognition is testable using current technology such as glutamate uncaging with activity reporters. Prior experiments have demonstrated Ca2+ buildup along 20 \u03bcm dendritic stretches under appropriate stimulus conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 appropriately describe experimental approaches and cite relevant prior work (C89) showing Ca2+ dynamics at appropriate length scales. The proposed experimental tests (C88) are reasonable and technically feasible, though the claim of 'readily testable' (C87) may be somewhat optimistic given the technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The modeling was performed using MOOSE simulation environment with appropriate numerical methods for chemical (Runge-Kutta-Fehlberg, Gillespie SSA) and electrical (Hines method) computations. Models used published morphologies, established channel kinetics, and realistic spine geometries with specified spatial discretization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 describe the computational methods and are well-documented with appropriate citations. The methods are standard and appropriate for the multiscale modeling performed. Validation of the electrical solver (C72) adds confidence. The level of detail provided is sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Historical and contemporary work has established that neural sequences are ubiquitous in brain function, from early theoretical proposals (Lorente de No, Hebb) through experimental observations in sensory systems and hippocampus, to computational models of sequence recognition and implementation in neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide appropriate background context through well-cited prior work. These claims accurately represent the literature on neural sequences, from theoretical foundations to experimental observations to computational models. This establishes the motivation and context for the current study.",
+    "result_type": "MINOR"
+  }
+]

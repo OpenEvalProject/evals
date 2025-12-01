@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Behavioral performance in the spatial attention task demonstrates that monkeys preferentially attended to cued locations. Targets were detected significantly more often at cued versus uncued locations (p<10^-26), indicating successful attentional manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 provide converging behavioral evidence that the attention manipulation was effective. The statistical tests show highly significant differences in detection performance between valid and invalid trials, supporting the inference that monkeys attended to cued locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Attention-related modulation correlates with stimulus selectivity, with stronger modulation for neurons with more selective responses. This relationship differs between cRF-cRF and sRF-cRF configurations, with steeper slopes in the cRF-cRF condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by statistical analyses (p<10^-76 to 10^-109) and direct comparison between configurations (p=5\u00d710^-4). The data clearly demonstrate the relationship between selectivity and attention modulation, though the difference between configurations appears to contradict later claims of uniformity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "V4 neurons exhibit stimulus-induced suppression when non-preferred stimuli are added to preferred stimuli, with suppression occurring both within the cRF and from the surround. Surround suppression is significantly weaker than cRF suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are well-supported by statistical tests (p<10^-28 to 10^-104) showing significant suppression in both regions. The finding that surround suppression is weaker than cRF suppression is statistically robust and consistent with the spatial tuning of suppression described later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Attention modulation correlates with stimulus-induced suppression in both cRF-cRF and sRF-cRF configurations. However, the relationship differs between configurations, with steeper slopes in the sRF-cRF condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by statistical analyses (p<10^-31 and p=5\u00d710^-4) showing significant correlations and differences between configurations. However, this finding of different slopes between configurations appears inconsistent with the later claim of uniform attention mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Stimulus selectivity and stimulus-induced suppression are not significantly correlated across neurons, indicating that the relationships between these variables and attention modulation are independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by correlation analysis (r=0.02, p=0.32). This lack of correlation is important for establishing that selectivity and suppression make independent contributions to attention modulation, though the authors acknowledge this differs from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The relationship between attention modulation, stimulus selectivity, and stimulus-induced suppression is non-additive in both receptive field configurations. Strong attention modulation occurs only when both selectivity and suppression are large.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by multiple regression analyses showing significant interactions (p<10^-6 to 10^-9) and main effects. The data demonstrate that attention modulation requires both high selectivity and high suppression, establishing a key non-additive relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The interaction between selectivity and suppression does not differ significantly between cRF-cRF and sRF-cRF configurations. Bayesian analysis strongly favors a model without RF-configuration as a predictor (Bayes factor = 347), indicating uniform attention mechanisms across receptive field regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 present the central conclusion of uniform attention mechanisms, but this appears inconsistent with earlier findings (C32, C38) showing different slopes between configurations. The Bayesian analysis supports uniformity, but the earlier statistical differences suggest some regional variation. The apparent contradiction requires reconciliation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Attention modulation depends on differential responses to component stimuli regardless of whether the difference arises from feature selectivity (orientation) or spatial selectivity (receptive field position).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by analyses of subsets of data showing similar effects for both orientation-based and position-based selectivity (p<0.001 to 10^-22). This demonstrates generality of the attention modulation principles across different sources of selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A spatially-tuned normalization model accurately accounts for neuronal responses across all stimulus and attention conditions, achieving 87% median cross-validated explained variance. The model captures attention modulation in both cRF-cRF and sRF-cRF configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by model fitting results showing high explained variance (86-88%) across neurons and configurations. The model successfully captures the non-additive relationships and attention effects, providing a unified computational framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Attention modulation to single stimuli is small compared to multiple stimuli because single stimulus conditions lack suppressive influences from flanking stimuli, which are necessary for strong attention modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by the data and model predictions, consistent with the finding that suppression is necessary for strong attention modulation (C45). This explains why attention effects are weaker with isolated stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Stimulus-induced suppression varies spatially within the receptive field, with stronger suppression near the RF center. The spatial pattern of excitation and suppression in V4 resembles that in V1, with excitation more concentrated than suppression. This suggests attention operates uniformly on spatially-continuous excitation and suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by analysis of model parameters showing distance-dependent suppression (p<10^-23) and comparison with V1 literature. The spatial tuning of suppression provides a mechanistic basis for understanding attention effects across the receptive field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Differences in attention modulation across neurons arise primarily from spatial tuning of excitation and suppression rather than from variable top-down attention signals. A model with fixed \u03b2 parameter performs nearly as well as one with variable \u03b2, while fixing \u03b1 parameters significantly reduces performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by model comparison analyses showing minimal performance loss with fixed \u03b2 (86% vs 87%) but significant loss with fixed \u03b1 (73-77%, p<0.004). This demonstrates that spatial tuning is more important than variable attention signals for explaining cross-neuron variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The lack of correlation between selectivity and suppression in this study differs from Reynolds et al. (1999) due to experimental design differences. Varying stimulus location (as in this study) affects both excitation and suppression, while varying only orientation/color (Reynolds et al.) primarily affects excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide a reasonable explanation for differences between studies based on experimental design and the finding that orientation does not tune suppression (C71). However, C71's evidence is stated to be in an Appendix not provided, limiting full evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C48",
+      "C63",
+      "C82",
+      "C89"
+    ],
+    "result": "Attention interacts uniformly with spatially-varying excitation and suppression throughout the receptive field, including the surround. This uniform interaction explains variability in attention modulation across neurons and establishes a non-additive relationship among selectivity, suppression, and attention modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This core conclusion is stated repeatedly (C2, C18, C48, C63, C82, C89) but faces tension with earlier findings of different slopes between cRF-cRF and sRF-cRF configurations (C32, C38). While Bayesian analysis (C47) supports uniformity, the statistical differences in slopes suggest some regional variation. The claim of 'uniform' interaction may be overstated given these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous studies (Sundberg et al. 2009, Sanayei et al. 2015) lacked direct comparisons between cRF and surround attention effects. The current study's inclusion of both cRF-cRF and sRF-cRF configurations, and examination of the interaction between selectivity and suppression, reveals similarities in attention mechanisms across receptive field regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 accurately describe limitations of prior work and how the current study addresses them. The criticism of prior studies appears valid, and the current experimental design does enable more direct comparisons, though the conclusion of similarity (C80) remains uncertain per the previous result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Previous normalization models assumed specific receptive field structures based on V1 findings but did not empirically test whether attention operates on spatially-varying excitation and suppression. The current model, without prior assumptions, reveals that V4 receptive field organization resembles V1, suggesting similar organizations throughout visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by the modeling approach and comparison with V1 literature. The finding that V4 resembles V1 in receptive field organization is based on model parameters fitted to data, though the generalization to 'throughout visual cortex' (C88) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The origin of stimulus-induced excitation (feature vs. spatial tuning) does not affect attention modulation magnitude. What matters is excitation in conjunction with spatially-tuned suppression. This determines which neurons are most affected by attention when viewing particular stimulus configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by analyses showing similar effects for orientation-based and position-based selectivity (C49-C51). This establishes a general principle about attention modulation that transcends specific stimulus dimensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Attention to preferred stimuli near the RF center has the greatest potential to elevate responses because center stimuli elicit both maximal excitation and maximal suppression. The elevated suppression gives center stimuli more weight in normalization, allowing them to better discount suppression from other stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are logical inferences from the model and spatial tuning of suppression (C59-C61). The reasoning about normalization mechanisms is consistent with the model structure, though these are predictions rather than directly tested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The surround can contribute considerable suppression due to its large size, particularly under natural viewing conditions. Model simulations predict that strong surround suppression amplifies attention modulation beyond what occurs without surround suppression, suggesting an important functional role for the surround.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C103 are based on model simulations (C102) and speculation about natural viewing (C100). While the model predictions are supported by simulations shown in Figure 8, the claims about natural viewing conditions and the surround's functional role are speculative and not directly tested.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C61",
+      "C73"
+    ],
+    "result": "Mutational spectra differ substantially among human continental groups and closely related populations. PCA analysis of 96 mutation types successfully separates individuals by continent of origin, with PC1 distinguishing Africans from non-Africans and PC2 separating Europeans from East Asians. These differences are composed of small shifts in the abundance of many different mutation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C25-C27, C61, and C73 collectively demonstrate that mutation spectra vary across human populations. The PCA analysis (C25-C27, C61) provides strong statistical evidence for population-level differences, and the heatmap analysis (C73) shows these differences involve many mutation types. The findings are replicated in independent datasets (C32), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C83"
+    ],
+    "result": "TCC\u2192TTC mutations show a dramatic enrichment in Europeans (p<1\u00d710^-300) that peaks at ~0.6% allele frequency in UK10K data, with practically no enrichment among the lowest frequency variants. Similar patterns are observed for C\u2192T mutations in TCT, CCC, and ACC contexts, suggesting these four mutation types comprise a single mutational pulse that is no longer active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C34-C40, and C83 provide converging evidence for a temporal mutation pulse. The allele frequency distribution analysis (C36-C37, C83) demonstrates the pulse pattern, and the similar behavior of related mutation types (C38-C40) supports a common underlying cause. The extremely significant p-value (C34) and replication across datasets strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44"
+    ],
+    "result": "The TCC\u2192TTC mutation burst in Europeans occurred from approximately 15,000 to 2,000 years ago, possibly due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate. This timing is consistent with the signal being present in prehistoric European samples from 7,000-8,000 years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C7, C43, and C44 present a temporal model for the mutation pulse. While the allele frequency data (C6) and ancient DNA evidence (C43) support the timeframe, the proposed mechanism (C7, C44) remains speculative. The dating relies on a piecewise-constant model with demographic assumptions that may not fully capture the complexity of the process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mutation spectrum differences between populations replicate strongly between the 1000 Genomes and SGDP datasets. All 43 mutation types significantly different between Africa and Europe in 1000 Genomes show differences in the same direction in SGDP. The *AC\u2192*CC enrichment in East Asia is the second-largest signal after TCC\u2192TTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate strong replication across independent datasets, which is critical for validating the findings. The consistency across datasets (C32) and the identification of the second-largest signal (C33) provide robust evidence. Minor discrepancies (C80-C82) are acknowledged and attributed to technical or sampling factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C89"
+    ],
+    "result": "The *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT mutations show elevated rates in a subset of Japanese individuals, with enrichment peaking at low frequencies (~1%). This signature appears in only a handful of Chinese individuals and no Kinh or Dai individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C89 identify a population-specific mutation signature with a temporal pattern similar to the European TCC\u2192TTC pulse. The fine-scale population analysis (C45, C89) and allele frequency distribution (C47) provide converging evidence. However, the limited sample size for Japanese individuals (noted in text) introduces some uncertainty about the precise frequency peak.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C92"
+    ],
+    "result": "The Luhya population exhibits the most distinctive mutational spectrum among Africans and is enriched for the same *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT signature identified in Japanese individuals. This sharing may suggest either parallel increases of a shared mutation modifier or a shared environmental/life history factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 identify an unexpected sharing of mutation signatures across geographically distant populations. The PCA analysis (C48) and PC loading comparison (C49) provide evidence for this pattern. The proposed explanations (C92) are speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C93"
+    ],
+    "result": "Great ape species show dramatic variation in mutational spectra. A major trend is a higher proportion of CpG mutations in species closest to humans, possibly reflecting lengthening generation time along the human lineage, consistent with lower mutation rates in species more closely related to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate mutation spectrum variation across species. The analysis of the Great Ape Diversity Panel (C93) provides the data foundation. The CpG enrichment pattern (C51) is well-documented, and the generation time explanation (C52) is supported by citations to previous work, though presented as a possible rather than definitive explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C60"
+    ],
+    "result": "Mutation rates can evolve markedly over short evolutionary timescales, and most variation in mutation spectra is likely driven by the appearance and drift of genetic modifiers of mutation rate. Mutational modifiers are likely an important part of the landscape of human genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59, and C60 represent the main conclusions of the study. These are well-supported by the extensive evidence of population-specific mutation spectrum differences (C2-C4), temporal patterns (C6, C40), and replication across datasets (C32). However, the genetic modifier hypothesis (C59) remains the most parsimonious explanation rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mutation spectrum structure replicates across both strands of transcribed and non-transcribed DNA, across multiple chromatin states, and varies little with replication timing. The patterns are unlikely to be driven by biased gene conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 address potential confounding factors and demonstrate the robustness of the mutation spectrum differences. The analysis across genomic contexts (C76-C78) and the explicit test for biased gene conversion (C79) strengthen the interpretation that the observed differences reflect genuine mutation rate variation rather than artifacts or selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "No other mutation types show a pulse-like distribution in UK10K similar to TCC\u2192TTC, although several mutation types show evidence of monotonic rate change over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide important context by showing that the TCC\u2192TTC pulse is unique in its temporal pattern, while other mutation types show different evolutionary dynamics. This is supported by the comprehensive allele frequency analysis shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Base-calling errors are not plausible as an explanation for the TCC\u2192TTC pulse. In UK10K, a minor allele at 0.6% frequency corresponds to 23 out of 3,854 haplotypes supported by ~80 reads on average, and the pulse pattern is consistent across datasets of different sizes when projected to the same sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 address a critical alternative explanation. The calculation of read support (C87) and the consistency across datasets provide strong evidence against technical artifacts. This is an important validation of the biological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Europeans and South Asians show relatively little fine-scale structure within their mutational spectra compared to other continental groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the fine-scale PCA analysis shown in supplementary figures. This finding provides context for understanding the distribution of mutation spectrum variation across populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C79",
+      "C96"
+    ],
+    "result": "Biased gene conversion (BGC) is unlikely to explain the observed mutation spectrum differences. BGC favors C/G over A/T alleles and is more efficient in large populations, but no clear trend is observed with population size or distance from Africa. Evolution of the mutational process is a better explanation than BGC or selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C79, and C96 systematically address BGC as an alternative explanation. The lack of expected patterns (C79, C96) and the explicit analysis (Figure 1\u2014supplement 4) provide strong evidence against BGC as the primary driver of the observed differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C67",
+      "C68",
+      "C97",
+      "C98"
+    ],
+    "result": "Europeans have a lower fraction of CpG variants compared to other populations, which may be consistent with a shorter average generation time. However, it is unclear whether a plausible shift in generation time could produce such a large effect. CpG transitions result from spontaneous methyl-cytosine deamination and are less affected by generation time than other mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C67-C68, C97-C98 address the CpG pattern in Europeans. While the observation is supported by data (C56), the generation time explanation is presented with uncertainty (C98). The mechanistic understanding of CpG mutations (C67-C68) is well-established, but the quantitative relationship to generation time remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C72"
+    ],
+    "result": "It may be possible to map mutational modifiers genome-wide as large datasets of de novo mutations become available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C72 represent speculative future directions. While the existence of mutation spectrum variation suggests the possibility of mapping modifiers, this remains to be demonstrated. The claims are appropriately presented as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Background knowledge and theoretical framework: DNA replication involves hundreds of genes, most fitness-affecting mutations are deleterious, human mutation rate is ~1 per 100 MB per generation (~60 genome-wide), defects in specific genes cause context-specific mutation rate increases, natural selection has limited ability to fine-tune individual repair genes, and mutation rates vary across mammalian evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13, C15-C20, C62, C69-C70 establish the background knowledge and theoretical framework. These are well-supported by citations to previous work and represent established knowledge in the field. They provide essential context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "It is unlikely that a single gene is responsible for all mutation spectrum signals observed in this study, given the diversity of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is a reasonable inference based on the diversity of mutation spectrum patterns observed across populations and mutation types. This is appropriately presented as an inference rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  }
+]

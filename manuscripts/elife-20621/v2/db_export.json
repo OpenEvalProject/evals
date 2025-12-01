@@ -1,0 +1,2189 @@
+{
+  "submission": {
+    "id": "995d6533-0011-4330-8bb3-0b89c3c3ca0d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:54:41.684558Z",
+    "updated_at": "2025-11-30T21:54:41.684558Z"
+  },
+  "content": [
+    {
+      "id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "submission_id": "995d6533-0011-4330-8bb3-0b89c3c3ca0d",
+      "content_type": "manuscript",
+      "content_text": "# Malaria parasite CelTOS targets the inner leaflet of cell membranes for pore-dependent disruption\n\n## Authors\n\n- John R Jimah<sup>1</sup>\n- Nichole D Salinas<sup>1</sup>\n- Monica Sala-Rabanal<sup>2</sup>\n- Nathaniel G Jones<sup>1</sup>\n- L David Sibley<sup>1</sup>\n- Colin G Nichols<sup>2</sup>\n- Paul H Schlesinger<sup>2</sup>\n- Niraj H Tolia<sup>1</sup> ([ORCID: 0000-0002-2689-1337](https://orcid.org/0000-0002-2689-1337)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Microbiology Washington University School of Medicine Saint Louis United States\n2. Department of Cell Biology and Physiology Washington University School of Medicine Saint Louis United States\n3. Center for the Investigation of Membrane Excitability Diseases Washington University School of Medicine Saint Louis United States\n4. Department of Biochemistry and Molecular Biophysics Washington University School of Medicine Saint Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nApicomplexan parasites contain a conserved protein CelTOS that, in malaria parasites, is essential for traversal of cells within the mammalian host and arthropod vector. However, the molecular role of CelTOS is unknown because it lacks sequence similarity to proteins of known function. Here, we determined the crystal structure of CelTOS and discovered CelTOS resembles proteins that bind to and disrupt membranes. In contrast to known membrane disruptors, CelTOS has a distinct architecture, specifically binds phosphatidic acid commonly present within the inner leaflet of plasma membranes, and potently disrupts liposomes composed of phosphatidic acid by forming pores. Microinjection of CelTOS into cells resulted in observable membrane damage. Therefore, CelTOS is unique as it achieves nearly universal inner leaflet cellular activity to enable the exit of parasites from cells during traversal. By providing novel molecular insight into cell traversal by apicomplexan parasites, our work facilitates the design of therapeutics against global pathogens.\n\n## Introduction\n\nApicomplexan parasites of the genera Plasmodium, Babesia, Cytauxzoon and Theileria are responsible for the established and emerging global infectious diseases malaria (Black et al., 2010; Price et al., 2007), babesiosis (Homer et al., 2000), cytauxzoonosis (Sherrill et al., 2015), and theileriosis (Shaw, 2003), respectively. Although these parasites infect a range of hosts and cause different diseases, they share biological adaptations for traversal through a variety of cells within their mammalian hosts and arthropod vectors to complete their life cycle (Homer et al., 2000; Sherrill et al., 2015; Shaw, 2003; Mota et al., 2001; Yuda and Ishino, 2004; Amino et al., 2008; Sinnis and Zavala, 2012; M\u00e9nard et al., 2013; Gueirard et al., 2010). Traversal refers to the ability of a eukaryotic parasite to move through host or vector cells to complete essential segments of a complicated life cycle. Within the host, cell traversal by parasites is essential for successful infection as sporozoites must negotiate and cross several distinct cell types until they enter defined cells that are receptive for replication, leading to disease progression. Traversal is also essential for transmission by vectors as parasites must cross the arthropod midgut epithelia to mature into sporozoites that are the transmissible form of these apicomplexan parasites.\n\nTraversal of parasites through host and vector cells relies on a number of different biological processes mediated by various parasite proteins. Gliding motility is the characteristic motion of parasites as they move through various tissues and invade cells (Yuda and Ishino, 2004; M\u00e9nard et al., 2013; Harupa et al., 2014; Moreira et al., 2008). Parasites also physically breach cell barriers during the invasion of cells (Homer et al., 2000; Sherrill et al., 2015; Shaw, 2003; Mota et al., 2001; Yuda and Ishino, 2004; Amino et al., 2008; Kadota et al., 2004; Risco-Castillo et al., 2015). Finally, parasites have developed strategies for immune evasion as they migrate through various cells, including phagocytic Kupffer cells (Sinnis and Zavala, 2012; Zheng et al., 2014). Ongoing efforts to identify and elucidate the function and mechanism of parasite proteins involved in diverse cell traversal processes will advance our understanding of parasite biology, and will unveil new targets for therapeutics. Of all the apicomplexan parasites, therapeutics for Plasmodium falciparum and Plasmodium vivax are desperately needed as these parasites are leading causes of human death and major burdens to socio-economic development (Black et al., 2010; Price et al., 2007).\n\nCell-traversal protein for ookinetes and sporozoites (CelTOS) is unique among traversal proteins as it is essential for traversal of malaria parasites in both the mosquito vector and human host and is therefore critical for malaria transmission and disease pathogenesis (Kariu et al., 2006). Additionally, CelTOS has been identified as a promising malaria vaccine candidate referred to as Antigen 2 (Doolan et al., 2003). Immunization of mice with recombinant CelTOS results in humoral and cellular immune responses that reduced infection, demonstrating that targeting CelTOS is a viable approach for developing a malaria vaccine (Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013). Even though CelTOS is critical during cell traversal by malaria parasites and is a leading transmission- and infection-blocking malaria vaccine candidate, its function remains unknown as it has no sequence similarity to proteins of known function.\n\nIn this study, we determined the structure of CelTOS in order to gain insight into its function. CelTOS structurally resembles viral membrane fusion proteins and a bacterial pore-forming toxin. This observation informed our hypothesis that apicomplexan CelTOS directly binds to and breaches plasma membranes. We show that CelTOS specifically binds phosphatidic acid, a lipid predominantly found in the inner leaflet of plasma membranes, and potently disrupts defined liposomes composed of phosphatidic acid. We determine that liposome disruption is achieved by the formation of CelTOS-dependent pores. Additionally, microinjection of CelTOS into Xenopus oocytes results in membrane damage. Together, these results demonstrate CelTOS is the only known apicomplexan protein with universal inner leaflet cellular activity as it addresses phosphatidic acid found specifically on the cytoplasmic face of plasma membranes, and disrupts these membranes to enable the exit of apicomplexan parasites through diverse vector and host cells. In addition to discovering this unique role of CelTOS in cell traversal, our work on the structure, function, and mechanism of CelTOS will enable structural vaccinology (Dormitzer et al., 2012) to produce a potent protective malaria vaccine, and inform the development of other therapeutics targeting CelTOS.\n\n## Results\n\n### CelTOS is conserved in apicomplexans\n\nAs CelTOS is important for multiple stages of the parasite life cycle, we examined if CelTOS was evolutionarily conserved among other apicomplexan pathogens, including those with recently sequenced genomes. We found CelTOS is conserved across various diverse branches of apicomplexan parasites including the hemosporidia (Plasmodium spp.) and piroplasms (Theileria, Babesia, Cytauxzoon spp.), groups that are thought to have diverged more than 100 million years ago (DeBarry and Kissinger, 2011) (Figure 1A and Figure 1\u2014figure supplement 1). Hence, CelTOS represents an ancient and widespread adaptation that is common to apicomplexans that have two host life cycles alternating between asexual replication in their vertebrate hosts and a sexual cycle in their arthropod vectors. This is supported by the lack of CelTOS in the apicomplexan Toxoplasma gondii that does not require an arthropod vector for transmission. This evolutionary conservation and importance in disease pathogenesis and transmission prompted the in-depth molecular study of CelTOS that is applicable to diverse pathogenic apicomplexan parasites.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig1-v2.jpg)\n\n**Figure 1.:** (A) Alignment of CelTOS from apicomplexan parasites Plasmodium, Babesia, Theileria, Cytauxzoon, and mapping of the structural elements. In the alignment, grey shading represents similarity, black shading represents identity. The secondary structure features are based on the crystal structure of PvCelTOS and shown in green. Protein accession codes as follows: Plasmodium vivax [UniProtKB - A5JZX5], Plasmodium falciparum [UniProtKB - Q8I5P1], Babesia microti [UniProtKB - I7J9D8], Theileria parva [UniProtKB - Q4N982], Cytauxzoon felis [PiroplasmaDB - CF003135]. (B) PvCelTOS is an alpha helical dimer that resembles a tuning fork. Each monomer is in green or white ribbon and surface representation. (C) Surface maps of CelTOS dimer showing the electrostatic surface potential colored from red (\u22125 kT e\u22121) to blue (5 kT e\u22121). (D) The CelTOS monomer shown as ribbon representation can be separated into two distinct subdomains composed of N-terminal (\u03b1-helices 1 and 2) and C-terminal helices (\u03b1-helices 3 and 4). (E) Surface maps of CelTOS monomer reveals the inner hydrophobic surfaces composed of the dimer interface and one face of the tuning fork prongs. Coloring as in Figure 1C.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In the alignment, grey shading represents similarity, black shading represents identity. Protein accession codes for CelTOS from the following Apicomplexan parasites are as follows: Plasmodium falciparum [UniProtKB - Q8I5P1], Plasmodium vivax [UniProtKB - A5JZX5], Plasmodium berghei [UniProtKB - Q4YC08], Plasmodium knowlesi [UniProtKB - B3LCG1], Plasmodium reichenowi [UniProtKB - A0A060RVP1], Plasmodium yoelii [UniProtKB - Q6T944], Plasmodium chabaudi chabaudi [UniProtKB - A0A077TR60], Plasmodium fragile [UniProtKB - A0A0D9QNC3], Plasmodium inui [UniProtKB - W7ABI3], Plasmodium vinckei vinckei [UniProtKB - W7B0C7], Plasmodium vinckei petteri [UniProtKB - W7B0C7], Babesia microti [UniProtKB - I7J9D8], Babesia bovis [UniProtKB - A7AQQ4], Babesia bigemina [UniProtKB - A0A061DAC2], Babesia equi [UniProtKB - L0AZQ6], Theileria parva [UniProtKB - Q4N982], Theileria annulata [UniProtKB - Q4UGH3], Theileria orientalis [UniProtKB - J7M8E0], Theileria equi [NCBI Reference Sequence: XP_004830035.1] and Cytauxzoon felis [PiroplasmaDB - CF003135].\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 2Fo-Fc electron density contoured at 1.5\u03c3 around a representative section of PvCelTOS.\n\n### Structure of Plasmodium CelTOS\n\nThe mechanism by which CelTOS enables the traversal of apicomplexan parasites through cells within the mammalian host and arthropod vector has been elusive because CelTOS has no sequence similarity to proteins of known function. Therefore, we determined the crystal structure of CelTOS from the human pathogen P. vivax (PvCelTOS) in order to obtain insight into function (Figure 1, Figure 1\u2014figure supplement 2 and Figure 1\u2014source data 1). As CelTOS is highly conserved across apicomplexans (Figure 1A and Figure 1\u2014figure supplement 1), the structural inferences derived from the PvCelTOS structure will apply to apicomplexan parasites generally. CelTOS forms an alpha helical dimer that resembles a tuning fork (Figure 1B). The dimer has a large buried surface area of 3003 \u00c52. Consistent with the structure and large buried surface area, we established that CelTOS is an obligate dimer in solution by sedimentation equilibrium analytical ultracentrifugation (Figure 1\u2014source data 2). Two N-terminal helices (\u03b1-helices 1 and 2) of one monomer pack against the C-terminal helices (\u03b1-helices 3 and 4) of a second monomer to form the dimer. The outer surface of the CelTOS dimer is mildly hydrophilic (Figure 1C and E) and masks inner hydrophobic surfaces created between the two tines of the CelTOS dimer and the dimer interface (Figure 1E).\n\n### CelTOS resembles proteins that disrupt membranes\n\nWe compared the structure of the CelTOS monomer (Figure 1D) against all structures in the Protein Data Bank to identify proteins with similar structure and to inform function using the DALI server (Holm et al., 2010). Strikingly, CelTOS resembles class I viral membrane fusion glycoproteins and a bacterial pore-forming toxin with roles in membrane binding and disruption (Figure 2). The C-terminal helices of CelTOS show structural similarity to HIV-1 gp41 (Figure 2A) and Mycobacterium bovis ESAT-6 (Figure 2D), and the N-terminal helices show similarity to Hendravirus fusion core (Figure 2B); Nipahvirus fusion subunit core (Figure 2C) (Buzon et al., 2010; Lou et al., 2006; Renshaw et al., 2005; Hsu et al., 2003). This informed the hypothesis that Plasmodium CelTOS may function to bind and disrupt cell membranes, consistent with a role in host and vector cell traversal by malaria parasites. While CelTOS resembles these viral and bacterial proteins, the CelTOS structure is unique and distinct as it contains two independent subdomains that both could act as membrane disruption modules.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig2-v2.jpg)\n\n**Figure 2.:** All panels are structural overlays of PvCelTOS (green) with pathogenic membrane disrupting proteins (orange): (A) HIV-1 gp41 PDB 3P30 (Dali Z-score: 3.2, rmsd 3.2), (B) Hendravirus fusion protein PDB 3N27 (Dali Z-score: 3.1, rmsd 3.3) (orientation of CelTOS is rotated 60\u00b0 along the y-axis compared to Figure 2A), (C) Nipahvirus fusion protein PDB 1WP7 (Dali Z-score: 3.3, rmsd 2.9) (orientation of CelTOS is rotated 60\u00b0 along the y-axis compared to Figure 2A), and (D) Mycobacterium bovis ESAT-6 PDB 1WA8 (Dali Z-score: 2.6, rmsd 2.3).\n\n### CelTOS specifically binds phosphatidic acid\n\nGiven this structural similarity, we examined if CelTOS could directly bind cell membrane phospholipids and if binding was specific to a particular lipid subset using spotted arrays. Both P. falciparum (Pf) and P. vivax (Pv) CelTOS demonstrated significant binding to phosphatidic acid (PA) (Figure 3). The specificity to this small anionic headgroup phospholipid is unique and excludes other anionic but large headgroup phospholipids. Phosphatidic acid is predominantly found on the inner leaflet of plasma membranes (Op den Kamp, 1979). Specific binding of PvCelTOS to cardiolipin was also observed. However, the relevance of this binding specificity is unclear as it is not conserved in CelTOS from both P. falciparum and P. vivax. Limited or undetectable binding was observed to phospholipids predominantly found on the outer leaflet of plasma membranes including sphingomyelin (SM) and phosphatidylcholine (PC) (Op den Kamp, 1979). These results demonstrate that CelTOS has enhanced specificity for the cytosolic face of cell membranes and suggests CelTOS possesses a specific binding pocket that preferentially accommodates PA over the headgroups of other phospholipids.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig3-v2.jpg)\n\n**Figure 3.:** (A) Spotted lipid array probed with PfCelTOS demonstrates significant binding to PA compared to the negative control (BB) in lipid arrays. Right panel: Normalized binding intensity from eight experiments shown as mean \u00b1 s.e.m. Statistical differences were determined by one-way ANOVA with matched replicates, followed by Dunnett\u2019s multiple comparison test; *p<0.05, **p<0.01, ***p<0.001. GT - Glyceryl tripalmitate, DAG - Diacylglycerol, PA - Phosphatidic Acid, PS - Phosphatidylserine, PE - Phosphatidylethanolamine, PC - Phosphatidylcholine, PG - Phosphatidylglycerol, CL - Cardiolipin, PI - Phosphatidylinositol, PI4P - Phosphatidylinositol (4)-phosphate, PIP2 - Phosphatidylinositol (4,5)-bisphosphate, PIP3 - Phoshatidylinositol\u00a0(3,4,5)-trisphosphate, CH - Cholesterol, SM - Sphingomyelin, SF - 3-sulfogalactosylceramide, and BB - Blue blank. (B) Spotted lipid array probed with PvCelTOS demonstrates significant binding to PA and PS compared to the negative control (BB) in lipid arrays. Right panel: Normalized binding intensity from three experiments shown as mean \u00b1 s.e.m. Statistical differences were determined by one-way ANOVA with matched replicates, followed by Dunnett\u2019s multiple comparison test; *p<0.05, **p<0.01, ***p<0.001. Acronyms as in Figure 3A.\n\n### CelTOS disrupts liposomes containing phosphatidic acid\n\nFurther to identifying its lipid-binding specificity, we established that CelTOS disrupts membranes in a liposome disruption assay (Figure 4 and Figure 4\u2014figure supplement 1) (Saito et al., 2000). Liposomes that mimic cell membranes were created containing carboxyfluorescein at self-quenching concentrations using 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate (POPA), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC). Liposomes containing 8:2 POPC:POPA mixtures (PA liposomes) or 8:2 POPC:POPS mixtures (PS liposomes) represent the inner leaflet of plasma membranes, while pure POPC (PC liposomes) represents the outer leaflet.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig4-v2.jpg)\n\n**Figure 4.:** (A) Time dependence of liposome disruption at various concentrations of PfCelTOS, a representative plot of three independent experiments is presented. The solid lines represent the fit of liposome disruption to Equation 2 and the dashed lines represent the raw data of liposome disruption. (B) The time constant, Tau, determined from the fit to Equation 2, is plotted against the concentration of PfCelTOS for three technical replicates is shown as mean \u00b1 s.e.m. (C) Time dependence of liposome disruption at various concentrations of PvCelTOS. (D) The time constant, Tau, plotted against the concentration of PvCelTOS.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B) Time dependence of PS liposome disruption at various concentrations of PfCelTOS and PvCelTOS respectively, a representative plot of three independent experiments is presented. The solid lines represent the fit of liposome disruption to\u00a0Equation 2and the dashed lines represent the raw data of liposome disruption. (C) Time dependence of PC liposome disruption with 10 \u00b5M PfCelTOS and PvCelTOS respectively, a representative plot of three independent experiments is presented. (D) Time dependence of PA, PS and PC liposome disruption with 10 \u00b5M E. coli IspF, a control protein with similar mass, charge and purification protocol as CelTOS.\n\nUpon incubation of either Pf or PvCelTOS with PA liposomes, carboxyfluorescein was released, fluorescence dequenched, and the time-dependent increase in liposome disruption was measured (Figure 4).\n\nNanomolar concentrations of CelTOS disrupted PA liposomes consistent with a potent role in the disruption of PA containing membranes (Figure 4). In contrast, minimal disruption of PS and PC liposomes by CelTOS was observed and this required micromolar concentrations of CelTOS (Figure 4\u2014figure supplement 1A\u2013C). Liposome disruption was specific to CelTOS as addition of the control protein E. coli IspF, that has similar mass, isoelectric point and purification method as CelTOS, had no effect (Figure 4\u2014figure supplement 1D). These results demonstrate that the CelTOS protein alone is necessary and sufficient for membrane disruption, specifically targets inner leaflet phosphatidic acid lipid compositions, and has a conserved function across Plasmodium spp.\n\n### CelTOS disrupts liposomes by forming pores\n\nWe investigated the mechanism by which CelTOS disrupts liposomes. CelTOS could disrupt liposomes either by generalized solubilization and mixed micelle formation similar to detergents, or by forming defined protein-dependent pores within the lipid bilayer. A key test of pore formation is whether leakage of liposome contents can be prevented by plugging the pore using a molecule of the correct Stoke\u2019s radius (Saito et al., 2000). We examined the CelTOS-dependent release of carboxyfluorescein from liposomes in the presence of 20 \u03bcM dextran molecules of various molecular weights: 66.9 kDa (Stoke\u2019s radius:~5.8 nm), 148 kDa (Stoke\u2019s radius:~8 nm), 500 kDa (Stoke\u2019s radius: 14.7 nm), 1500\u20132800 kDa (Stoke\u2019s radius ranging from\u00a0~25 to\u00a0~60 nm (Tang et al., 2016); Stoke\u2019s radius of 2000 kDa Dextran: 27 nm [Armstrong et al., 2004]). Remarkably, only the 500 kDa dextran blocked carboxyfluorescein release from liposomes disrupted with PfCelTOS and PvCelTOS, respectively (Figure 5A and B). Dextran molecules of higher and lower molecular weights and Stoke\u2019s radius had no effect on carboxyfluorescein release, similar to experiments without dextran. Therefore, only the 500 kDa dextran has the correct Stoke\u2019s radius to occupy the pore, while the remaining dextran molecules are either too small and diffuse through the pore or too large and may not enter the pore. The 500 kDa dextran significantly lowered the maximum amount of carboxyfluorescein released disrupted (A, in Equation 2) compared to experiments with molecules of higher and lower molecular weights, or without dextran (Figure 5\u2014figure supplement 1). This suggests that CelTOS forms pores of uniform size in liposomes and that the dextran-pore complex might be slowly reversibly\u00a0tying up the protein in a non-functional pore. We visualized the CelTOS-pore in liposomes by transmission electron microscopy of negative stained liposomes (Figure 5C). The average diameter of the pores, reported as mean \u00b1 s.d., formed by PfCelTOS and PvCelTOS were 45.85\u00a0\u00b1\u00a015.55 nm and 58.62\u00a0\u00b1\u00a021.86 nm respectively (Figure 5\u2014figure supplement 2). The dextran-blocking and electron microscopy studies suggest CelTOS forms a pore that opens a portal for parasite exit from invaded cells. The observed portal is large and strongly suggests that the membrane structure of CelTOS may continue to evolve after the initial carboxyfluorescein release.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig5-v2.jpg)\n\n**Figure 5.:** Time dependence of PA liposome disruption by (A) PfCelTOS or (B) PvCelTOS at 250 nM in the presence of dextran molecules of various molecular weights, a representative plot is presented. The solid lines represent the fit of liposome disruption to Equation 2 and the dashed lines represent the raw data of liposome disruption. (C) Transmission electron microscopy of negative stained liposomes alone (left), liposomes treated with PfCelTOS (middle), and liposomes treated with PvCelTOS (right) reveals CelTOS-dependent pores (red arrows).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Reduction in the maximum amount of liposomes disrupted (A from Equation 2) in the presence of dextran molecules after incubation with 250 nM of (a) PfCelTOS or (b) PvCelTOS. The maximum amount of liposomes disrupted of three technical replicates is shown as mean \u00b1 s.e.m. Statistical differences were determined for seven replicates by one-way ANOVA with matched replicates, followed by Dunnett\u2019s multiple comparison test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Diameters of pores in liposomes formed by PfCelTOS (45.85\u00a0\u00b1\u00a015.55 nm) and PvCelTOS (58.62\u00a0\u00b1\u00a021.86 nm) determined by transmission electron microscopy. Diameters are reported as mean \u00b1 s.d. for 23 PfCelTOS-pores and 18 PvCelTOS-pores.\n\n### CelTOS disrupts cell plasma membranes by targeting the inner leaflet\n\nThe structural and activity data above suggest CelTOS functions within the cytosol of host and vector cells to disrupt cell plasma membranes from the cytoplasmic face. To test this hypothesis, we microinjected purified CelTOS into the cytosol of Xenopus oocytes and examined the effects on membrane integrity and cell survival (Figure 6A and B, and Figure 6\u2014figure supplement 1). Microinjection allows for direct examination of the cellular effect of proteins. Only minor membrane phenotypes due to the injection process were observed in oocytes injected with buffer and in those injected with the negative control protein, EcIspF. In contrast, microinjection of Pf or PvCelTOS caused significant increase in the number of cells that had damaged membranes (Figure 6A and B, and Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig6-v2.jpg)\n\n**Figure 6.:** (A) Microinjection of Xenopus oocytes with CelTOS results in membrane damage. Cells were incubated at room temperature and examined 24 hr post-injection. Five representative images from 24 individually microinjected oocytes per condition are shown. Scale bar represents 0.2 mm. (B) Percent of oocytes with damaged membranes from six independent experiments each with 24 technical replicates. Statistical differences were determined by Kruskal-Wallis and Dunn\u2019s multiple comparison tests. The graph is shown as mean \u00b1 s.e.m. (C) RAW 264.7 macrophages used in a cytotoxicity assay demonstrate CelTOS is unable to disrupt cells from the extracellular surface. Membrane damage was measured by uptake of a membrane-impermeable fluorescent dye. Statistical differences were determined for three independent experiments each with three technical replicates by Kruskal-Wallis and Dunn\u2019s multiple comparison test. The graph is shown as mean \u00b1 s.e.m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Images were collected 24 hr after treatment of oocytes, and the treatment is denoted of the left. Scale bar represents 0.2 mm.\n\nWe examined if CelTOS can disrupt cell membranes from the extracellular face using RAW 264.7 macrophages. The cell membrane of Xenopus oocytes is protected from the extracellular environment by a vitelline membrane. This makes oocytes unsuitable for studying the effect of CelTOS on the outer surface of cell membranes. RAW macrophages have an exposed cell membrane and are an especially relevant model as they are similar to liver macrophages (Kupffer cells), which are traversed by malaria parasites in a CelTOS-dependent process. No membrane disruption, measured by uptake of a membrane-impermeable fluorescent dye, was observed for macrophages in tissue culture when CelTOS was added to the extracellular media (Figure 6C). This is fully consistent as CelTOS does not bind phospholipids found predominantly in the outer leaflet of plasma membranes, rendering it incapable of disrupting plasma membranes from the extracellular face (Figure 3, Figure 6C and Figure 4\u2014figure supplement 1C).\n\n### A model for CelTOS during cell traversal\n\nThis study provides unprecedented insight into the structure, function and mechanism of a critical protein involved in host and vector cell traversal by apicomplexan parasites. We have identified CelTOS as the only parasite protein known to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from cells during traversal. The data from this study support the model depicted in Figure 7. CelTOS is released from parasite secretory organelles and adheres to the surface of the malaria parasite prior to and during the traversal of host and vector cells (Bergmann-Leitner et al., 2010, 2011). Our results show that when the parasite is extracellular, CelTOS has limited cell membrane disrupting activity due to its low preference for lipids on the outer surface of plasma membranes. Once the parasite invades the cytosol of host and vector cells, CelTOS binds with high specificity to lipids in the inner leaflet of the plasma membrane. Binding leads to localized membrane disruption and pore formation that creates a portal to ultimately direct the exit of the parasite from the host or vector cells to complete traversal.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20621/elife-20621-fig7-v2.jpg)\n\n**Figure 7.:** (A) During the pre-erythrocytic stage, malaria\u00a0parasite sporozoites traverse various host cells including Kupffer cells and hepatocytes. CelTOS forms pores and disrupts the cell membranes of these cells to allow exit of the sporozoites to complete traversal. The inset shows CelTOS is localized to the surface of sporozoites and disrupts plasma membranes by directly binding to phosphatidic acid (PA), colored brown, in the inner leaflet to create a pore that enables\u00a0sporozoite\u00a0exit.\u00a0EEF \u2013 exo-erythrocytic form. (B) During the mosquito stage, malaria parasite ookinetes traverse the mosquito midgut epithelium to reach the basal lamina where it develops into oocysts. CelTOS forms pores and disrupts vector cell membranes to direct ookinete exit during traversal through the mosquito midgut epithelium.\u00a0The inset shows CelTOS is localized to the surface of ookinetes and disrupts plasma membranes by directly binding to phosphatidic acid (PA), colored brown, in the inner leaflet to create a pore that enables\u00a0ookinete\u00a0exit.\n\n## Discussion\n\nTraversal of apicomplexan parasites across cells of their arthropod vectors and vertebrate hosts is required for transmission and disease progression (Homer et al., 2000; Shaw, 2003; Mota et al., 2001; Yuda and Ishino, 2004; Amino et al., 2008; Sinnis and Zavala, 2012). Parasites utilize gliding motility during traversal and have the ability to breach plasma membranes from the extracellular space to invade cells. Parasite proteins involved in gliding motility (Yuda and Ishino, 2004; Tardieux and M\u00e9nard, 2008), and the breaching of plasma membranes from the extracellular space to enable entry (Kadota et al., 2004; Risco-Castillo et al., 2015; Ishino et al., 2005) have been reported. The current literature supports a model where perforin-like proteins (PLPs) mediate entry into various pre-erythrocytic cells including the PLP-1 dependent disruption of transient vacuoles created during entry of hepatocytes (Risco-Castillo et al., 2015; Ishino et al., 2005). This suggests a mechanism in which PLPs engage outer leaflet lipids for disruption, although direct studies probing the biochemical function and lipid specificity of PLPs have not been described. Further, PLPs have been shown to play a role in egress of parasites from the parasitophorous vacuole and red blood cells (Garg et al., 2013; Wirth et al., 2014). However, proteins involved in breaching the plasma membrane of invaded cells during traversal, from the cytoplasmic face, to enable the exit of parasites are unknown.\n\nWe have discovered that secreted apicomplexan CelTOS attacks plasma membranes from the cytoplasmic face. CelTOS had previously been identified as a malaria antigen, and CelTOS-deficient parasites are unable to traverse cells of their host and vector (Kariu et al., 2006; Doolan et al., 2003). The results of our study indicate that CelTOS functions to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from invaded host and vector cells during traversal. This study challenges the paradigm that motility alone is sufficient for parasite exit, as it is now clear that active membrane disruption by CelTOS is necessary for parasite release. This work identifies CelTOS-dependent pore formation leading to inner-leaflet membrane disruption as a new active molecular process during traversal, and presents novel avenues for preventing traversal by inhibiting inner leaflet membrane disruption. As CelTOS is conserved across several large groups of apicomplexan parasites including Plasmodium spp., Cytauxzoon, Theileria and Babesia, this finding informs fundamental pathogen biology applicable to multiple diseases and microorganisms of global importance with particular relevance to cell infection, traversal and membrane disruption.\n\nWhile CelTOS resembles viral membrane fusion proteins and a bacterial pore-forming toxin, our findings define a new class of membrane disruption proteins. CelTOS has a distinct structural architecture with two subdomains that independently resemble membrane binding and/or disrupting proteins and could simultaneously act during disruption (Figure 2). Further, CelTOS employs a unique lipid specificity for phosphatidic acid to achieve nearly universal inner leaflet cellular activity. This new class is also supported by the fact that primary sequence similarity searches did not identify membrane disruption proteins as relatives of CelTOS.\n\nBoth the N-terminal and C-terminal helices in CelTOS resemble the heptad repeats that form helices in class I viral fusion proteins (Figure 2A\u2013C) (Sackett and Shai, 2002; Harrison, 2015; LeDuc and Shin, 2000). Viral heptad repeats undergo conformational changes that enhance the destabilization of host membranes post-insertion of the viral fusion peptide that enables lipid mixing during fusion(38). It is plausible that the N- and C-terminal helices in CelTOS may also undergo similar conformational changes during membrane disruption. However, CelTOS employs a distinct membrane disruption mechanism from viral proteins as lipid mixing is not required for CelTOS to target inner leaflet lipids and disrupt plasma membranes.\n\nIn addition, CelTOS is structurally similar to the pore-forming toxin M. tuberculosis ESAT-6 (Figure 2D) (Hsu et al., 2003; Los et al., 2013; Smith et al., 2008). However, these toxins generally recognize a host cell target or receptor embedded within the target membrane, and ESAT-6 is secreted in complex with a chaperone that maintains it in an inactive state. Upon binding the membrane target, the toxin sheds the chaperone, oligomerizes and embeds into the membrane to form a pore on the angstrom length scale for the passage of ions and water (Los et al., 2013). In contrast to a membrane-embedded target or receptor, CelTOS specifically binds phosphatidic acid within the inner leaflet of host or vector cell membranes. The dimeric nature of CelTOS may serve as a chaperone-like function to retain CelTOS in an inactive state prior to membrane binding as the dimer masks the inner hydrophobic faces of CelTOS. We provide evidence from dextran block experiments and transmission electron microscopy that CelTOS forms a pore of uniform size in liposomes.\n\nMalaria continues to be a global health problem, with half of the world\u2019s population at risk. The lack of an effective vaccine against malaria, and the continuous evolution of drug-resistant parasites make malaria control difficult. Targeting the liver-stage (Good and Doolan, 1999) and mosquito-stages (mCGo, 2011) are of high priority for malaria vaccine development. Immunization of human volunteers with radiation-attenuated sporozoites induces sterile immunity (Good and Doolan, 1999; Hoffman et al., 2002), and all volunteers showed strong immune responses to CelTOS (referred to as Antigen 2) that were correlated with protection (Doolan et al., 2003). In contrast, circumsporozoite protein, which is the major component of the most advanced malaria vaccine RTS,S (Crompton et al., 2010), was only recognized by a third of the volunteers and mostly in those who were not protected (Doolan et al., 2003). Individuals living in malaria endemic regions mount IFN-\u03b3 responses to CelTOS suggesting that CelTOS is a target of protective immunity (Anum et al., 2015). CelTOS is also unique as it is a promising multi-stage malaria vaccine target (Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013) for both infection-blocking and transmission-blocking vaccines currently in clinical trials.\n\nWe show that CelTOS has conserved critical function in both Plasmodium falciparum and Plasmodium vivax that infect humans. The high-sequence similarity between Pf and PvCelTOS suggest that\u00a0CelTOS may elicit cross-species protection. Therefore, CelTOS could be used alone or in combination with other antigens already in development to produce an effective multicomponent vaccine which targets both the mosquito and human stages and may be cross-species protective (Doolan et al., 2003; Crompton et al., 2010; Crosnier et al., 2011). CelTOS-based vaccines have demonstrated the ability to elicit protection from malaria infection. However, protection is not absolute suggesting improvements in the immunogenicity, protectivity and formulation of CelTOS-based vaccines are necessary. Structure-function studies not only provide mechanistic insight into host-pathogen interactions (Tolia et al., 2005; Batchelor et al., 2011; Vulliez-Le Normand et al., 2012; Doud et al., 2012; Malpede et al., 2013; Batchelor et al., 2014; Wright et al., 2014; Lin et al., 2012), but also provide the necessary framework for improved vaccine design through structural vaccinology (Dormitzer et al., 2012; Chen et al., 2013, 2015, 2016). Immune recognition depends on antigen conformation and on surface accessibility of individual residues. The structure and architecture of CelTOS provides necessary insight to inform immune recognition, and enables protein engineering to retain the structural fold during immunogen design. The functional and mechanistic analyses presented here will enable assaying of immune responses for their ability to disrupt CelTOS function and provide an accurate molecular correlate for protection. Collectively, this work enables rational approaches to block CelTOS function, and rational approaches for vaccine development of global and emerging infectious diseases.\n\n## Materials\u00a0and\u00a0methods\n\n### Alignment of CelTOS from diverse apicomplexan parasites\n\nCelTOS homologs in diverse apicomplexan parasites were identified using jackhammer and examination of the EuPathDB, and aligned in ClustalW.\n\n### Protein expression and purification\n\nCodon-optimized PfCelTOS amino acids 25\u2013182, PvCelTOS amino acids 36\u2013196 and EcIspF amino acids 1\u2013159 with C-terminal hexahistidine tags, were expressed in E. coli. Tagged proteins were purified by Nickel-NTA chromatography and gel filtration using a Superdex 200 10/300 GL column (GE Healthcare Life Sciences,\u00a0Pittsburg,\u00a0PA).\n\n### Crystallization, data collection and structural studies\n\nPvCelTOS crystals were grown at 17\u00b0C by hanging-drop vapor diffusion after mixing 1 \u00b5l of protein at 20 mg/ml with 1 \u00b5l of reservoir containing 1.6 M Ammonium dihydrogen phosphate, 0.08 M Tris pH 8.5 and 20% glycerol and streak seeding PvCelTOS crystals previously obtained from the same crystallization condition. Native PvCelTOS crystals were harvested and soaked for\u00a0~1 min in cryo-protectant solution containing: 1.6 M Ammonium dihydrogen phosphate, 0.08 M Tris pH 8.5 and 30% glycerol. Crystals of the PvCelTOS Platinum- derivative were obtained by soaking native CelTOS crystals for 1\u20132 min in cryo-protectant solutions containing: 10 \u00b5M Potassium tetracyanoplatinate(II) hydrate, 1.6 M Ammonium dihydrogen phosphate, 0.08 M Tris pH 8.5 and 30% glycerol. Crystals of the CelTOS Mercury- derivative were obtained by soaking native CelTOS crystals for 1\u20132 min in cryo-protectant solutions containing: 1 \u00b5M mercury ethylphosphate, 1.6 M Ammonium dihydrogen phosphate, 0.08 M Tris pH 8.5 and 30% glycerol. The structure was phased in SHARP/autoSHARP (Vonrhein et al., 2007) as multiple isomorphous replacement with anomalous scattering. Phases were extended by solvent flattening in SHARP/autoSHARP. The structure was refined in PHENIX\u00a0(Adams et al., 2002) with NCS restraints. Map and model manipulation was aided by the CCP4 program suite (Collaborative Computational Project No. 4, 1994). MolProbity\u00a0(Davis et al., 2007) places this structure in the top 100th percentile of structures with comparable resolution. 98.44% and 1.56% of residues lie in the favored and allowed regions of the Ramachandran plot, respectively. Structurally similar PDBs were identified using the Dali server (Holm et al., 2010), and alignments and the normalized rmsd values obtained using lsqman (Kleywegt, 1996). Buried surface area of the dimer was determined using PDBePISA (Krissinel and Henrick, 2007). Atomic coordinates and structure factors for the reported crystal structure were deposited into the Protein Data Bank under PDB code 5TSZ (http://www.pdb.org).\n\n### Analytical ultracentrifugation\n\nSedimentation equilibrium experiments were conducted with a Beckman/Coulter XL-A analytical ultracentrifuge (Beckman/Coulter,\u00a0Indianapolis,\u00a0IN) using an An60Ti rotor at 10\u00b0C and \u03bb 286 nm. PfCelTOS and PvCelTOS were purified by gel filtration using a Superdex 200 10/300 GL column (GE Healthcare Life Sciences) in 150 mM NaCl and 10 mM HEPES pH 7.4. Data were collected for speeds 12,000 rpm and 15,000 rpm with PfCelTOS at 25 \u00b5M, 36 \u00b5M and 46 \u00b5M, and PvCelTOS at 29 \u00b5M, 41 \u00b5M and 53 \u00b5M. A partial specific volume of 0.730919 and 0.737102 was calculated using Sednterp for PfCelTOS and PvCelTOS, respectively. Data were analyzed using a single component model with UltraScan II version 9.9. Average molecular weight is reported as mean \u00b1 s.d.\n\n### Membrane lipid screen\n\nMembrane lipid strips (Echelon Biosciences Inc., Salt Lake City, UT) were probed with proteins according to the manufacturer specified protocol. Membrane strips were blocked at room temperature for 1 hr in blocking buffer (10 mM Tris pH 8.0, 150 mM NaCl, 0.1% Tween 20% and 3% BSA) and washed three times for 5 min with wash buffer (10 mM Tris pH 8.0, 150 mM NaCl and 0.1% Tween 20). PfCelTOS and PvCelTOS were incubated in blocking buffer at a concentration of 20 \u00b5M. Mouse anti-His monoclonal antibody (Invitrogen,\u00a0Waltham,\u00a0MA) diluted 1:500 in blocking buffer was used as the primary antibody, and Peroxidase AffiniPure Goat Anti-Mouse IgG (Jackson Laboratories) diluted 1:10,000 in blocking buffer as the secondary antibody. Binding was detected with ECL Prime Western Blotting Detection Kit (GE Healthcare Biosciences), imaged using Image Reader FLA-5000 series phosphorimager (Fuji PhotoFilm, Japan) and quantified using Image Gauge version 4.23 (Fuji PhotoFilm). Experiments were performed with eight replicates, along with one negative control where CelTOS was omitted. Spot intensities were normalized to background and the negative control strip. Data were analyzed by one-way ANOVA with Dunnett\u2019s multiple comparison tests to compare the intensity of each lipid spot to the negative control on that strip using Prism 6 (GraphPad Software, La Jolla, CA). The normalized binding intensity of each spot was plotted as mean \u00b1 s.e.m.\u00a0The membrane lipid screen is described in more detail at Bio-protocol (Jimah et al., 2017a).\n\n### Liposome preparation and liposome disruption assay\n\nLiposomes used for experiments were composed of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) alone or in combination with either 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate (POPA) or 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS) (Avanti Polar Lipids,\u00a0Alabaster,\u00a0AL). Chloroform-dissolved lipids were dried under N2 gas followed by vacuum for 3 hr. To hydrate the lipids, equal volumes of ether and a solution composed of 10 mM HEPES pH 7.4, 150 mM KCl and 20 mM carboxyfluorescein were added to the lipids, the mixture sonicated and ether evaporated using a roto-vap. Liposomes were sized by extrusion using 200 nm polycarbonate Track-Etched filters (Whatman/Nucleopore). Size exclusion chromatography with Sephadex G 25\u2013300 (Sigma Aldrich, Saint Louis, MO) was used to separate unincorporated carboxyfluorescein from liposomes. In all experiments, varying concentrations of proteins were incubated with liposomes containing 250 nM of lipids, and the time-dependence of liposome disruption was monitored using a Cary Eclipse Fluorescence Spectrophotometer (Varian Inc/ Agilent, Santa Clara CA) by observing the carboxyfluorescein fluorescence emission at 512 nm upon excitation at 492. Three replicate measurements were performed for each protein. The percent liposome disruption was calculated as:\n\n$$\n%Disruption_{time}=[(F_{512ofliposome+protein}\u2212F_{512ofliposome})/(F_{512ofliposome+triton}\u2212F_{512ofliposome})]^{\u2217}100\n$$\n\nwhere 0.2% Triton X-100 was added to normalize each sample to complete dequenching as previously described, and data fitted to Equation 1 (Saito et al., 2000).\n\nFor kinetic and pore-forming analyses, the time dependence of liposome disruption was also fitted to the following\u00a0Equation 2\u00a0(Saito et al., 2000):\n\n$$\n%LiposomesDisrupted=A(1\u2212e^{\u2212(time/tau)})+m^{\u2217}time\n$$\n\nwhere A is the maximum percentage of liposomes disrupted, Tau is the time constant for the exponential component, and m is the slope of the linear component.\n\nFor the liposome disruption assays with dextran, 20 \u00b5M dextran was added to liposomes, and then 250 nM of PfCelTOS or PvCelTOS was added, and liposome disruption monitored. The maximum amount of liposome disrupted, A, was obtained by fitting the data to\u00a0Equation 2. Data was analyzed using Prism 6 (GraphPad Software, La Jolla, CA) by performing a one-way ANOVA with Dunnett\u2019s multiple comparison test. Data with seven experimental replicates of each preparation included as mean \u00b1 s.e.m.\u00a0The membrane lipid screen is described in more detail at Bio-protocol (Jimah et al., 2017b).\n\n### Microinjection of Xenopus laevis oocytes with Plasmodium CelTOS\n\nMature female Xenopus laevis frogs were purchased from Xenopus Express (Brooksville, FL). All animal protocols followed guidelines approved by the Washington University School of Medicine and the National Institutes of Health. Frogs were anesthetized with a 0.1% tricaine solution buffered with 0.1% NaHCO3 prior to survival surgery in which a portion of the ovary is removed. Stage V-VI oocytes were isolated and maintained at 18 in modified Barth\u2019s solution of the following composition: 88 mM NaCl, 2.4 NaHCO3, 1 mM KCl, 0.3 mM Ca(NO3)2, 0.4 mM CaCl2, 0.8 mM MgSO4 and 10 mM HEPES/Tris pH 7.4, and supplemented with 50 mg/l gentamicin, 6 mg/l ciprofloxacin, and 100 mg/l streptomycin sulfate/100,000 units/l penicillin G sodium (Life Technologies, Carlsbad, CA). One day after isolation, oocytes were microinjected with 50 nl (0.1 nmol, approximately 100 \u00b5M final concentration) of EcIspF, PfCelTOS or PvCelTOS, prepared fresh as 2 mM stock solutions in Protein buffer composed of 10 mM HEPES pH 7.4 and 150 mM KCl; non-injected oocytes, oocytes injected with 50 nl of protein buffer, and oocytes injected with EcIspF, served as controls. Twenty-four\u00a0oocytes per condition were individualized in 96-well plates, and monitored for membrane damage. Oocytes were monitored 24 hr post-infection under an Olympus SZX10 microscope (Olympus Corporation, Waltham, MA), and images captured with Infinity Lite camera using Infinity capture version 6.00 software (Lumnera Corporation). Results are shown as mean \u00b1 s.e.m. of six separate experiments with independent protein preparations and with oocytes from different donor frogs. Data were analyzed using Prism 6 (GraphPad Software, La Jolla, CA) by performing Kruskal-Wallis followed by Dunn\u2019s multiple comparison tests.\n\n### RAW 264.7 macrophage cytotoxicity assay\n\nRAW 264.7 cells (ATCC) liberated using CellStripper reagent (Corning, Corning, NY) were filtered through a 40 \u00b5m mesh to yield a single-cell suspension. Cells were seeded onto clear-bottomed, white-walled 96-well plates (Corning 3610) at 2\u00d7105 cells per well in DMEM 10% FBS and allowed to adhere overnight. Wells were washed with PBS and assay reagents added. The assay was conducted in 5% FBS\u00a0with\u00a0phenol-red-free DMEM. Recombinant proteins were added to 100 \u00b5M final concentration. Triton X-100 at a final concentration of 0.05% v/v served as a positive control. Total reaction volume was 100 \u00b5l. The plates were incubated at 37\u00b0C, 5% CO2 for 3.5 hr prior to the addition of 50 \u00b5l 1x CellTox Green reagent (Promega, Madison, WI) and incubated for a further 30 min. Fluorescence at 485 nm was read using a Cytation 3 Cell Imaging Multimode Reader (Biotek, Winooski, VT). Results are shown as the mean \u00b1 s.e.m. of three separate experiments with independent RAW 264.7 cells each with three technical replicates. Data were analyzed using Prism 6 (GraphPad Software, La Jolla, CA) by performing Kruskal-Wallis and Dunn\u2019s multiple comparison tests.\n\n### Transmission electron microscopy\n\nLiposomes were treated with either 250 \u00b5M PfCelTOS or PvCelTOS. Suspension of liposomes were then allowed to absorb onto freshly glow discharged formvar/carbon-coated copper grids for 10 min. Grids were washed in dH2O and stained with 1% aqueous uranyl acetate (Ted Pella Inc., Redding, CA) for 1 min. Excess liquid was gently wicked off and grids were allowed to air dry. Samples were viewed on a JEOL 1200EX transmission electron microscope (JEOL USA, Peabody, MA) equipped with an AMT megapixel digital camera (Advanced Microscopy Techniques, Woburn, MA). Pore diameters were determined using ImageJ 1.48V.\n",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "4fba1eb8-bd06-4efc-9538-35f54fb0dddb",
+      "submission_id": "995d6533-0011-4330-8bb3-0b89c3c3ca0d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elena Levashina, Max Planck Institute for Infection Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20621.018](https://doi.org/10.7554/eLife.20621.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Malaria parasite CelTOS targets the inner leaflet of cell membranes for pore-dependent disruption\" for consideration by eLife. Your article has been favorably evaluated by Richard Losick (Senior Editor) and three reviewers, one of whom, Elena Levashina, is a member of our Board of Reviewing Editors. One of the other reviewers, Olivier Silvie, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn apicomplexan parasites, CelTOS is a critical protein required during cell traversal, and is a leading malaria vaccine candidate. CelTOS has no sequence similarity to proteins of known function, and its function remained unknown. In this study, the authors present an X-ray crystal structure of CelTOS from Plasmodium vivax. This protein is also found in several parasites other than Plasmodium providing a relevant model for other Apicomplexa. The structural data reveal that CelTOS forms an \u03b1 helical dimer, and structurally resembles class I viral membrane fusion proteins and a bacterial pore-forming toxins. The authors further show that CelTOS specifically binds lipids predominantly found in the inner leaflet of plasma membranes (phosphatidic acid and phosphatidylserine), and potently disrupts liposomes of defined composition by the formation of CelTOS-dependent pores. Additionally, the authors show that CelTOS induces membrane damage in microinjected Xenopus oocytes, but has no lytic activity on the outer membrane leaflet of RAW cells. Together, the results demonstrate that CelTOS has a universal inner leaflet cellular activity, and strongly support a role of CelTOS in inner membrane disruption to enable the exit of apicomplexan parasites through diverse vector and host cells.\n\nThis study is very well performed and provides novel and important insights into the structure, function and mechanism of a critical protein involved in host and vector cell traversal by apicomplexan parasites. In order to improve the manuscript, the authors may consider addressing the following points.\n\nEssential revisions:\n\n1) The crystallographic work appears competently executed, yet insufficiently described for experiments to be repeated. For example, in the subsection \u201cCrystallization, data collection, and structural studies\u201d: Mercury and platinum derivative data, the authors should be more specific, and give more details (compound formula, concentration, soak duration).\n\n2) The authors interpretation of their work depends on CelTOS forming an oligomer on the membrane but they provide no data to show this. The protein is a dimer in the crystal and in solution (AUC data). Does it act as a dimer or do the authors think it comes apart to act? Some other pore-forming proteins are constitutive dimers in solution and then monomerise before oligomerisation. This is a form of regulation. Since they do show binding to PA and PS-containing liposomes it can't be hard to also show that the protein then oligomerises, if it does. Can the authors propose a lipid-binding site on CelTOS?\n\n3) Did the authors attempt microinjecting CelTOS in RAW or Hep G2 cells to demonstrate membrane rupture? In the context of malaria parasite infection, these cellular models are more relevant than the Xenopus oocyte system.\n\n4) Other proteins are required for cell traversal in apicomplexan parasites, in particular perforin-like proteins (PLPs). Interestingly, expression and function of PLPs vary depending on the parasite stage. A recent paper (Risco-Castillo et al., 2015) has shown that Plasmodium sporozoites traverse cells within transient vacuoles, and the egress from these vacuoles requires PLP1. In contrast, how the parasite exits cells remained unknown, but the present study supports a crucial role of CelTOS. It thus appears that during cell traversal PLPs are required for breaching the membrane from the outer leaflet, whereas CelTOS would mediate membrane breaching from the inner leaflet. More generally, the parasites may use a range of PLPs proteins to disrupt the membrane of different host cell types, whereas a universal protein (CelTOS) would be used inside cells. Variations in membrane compositions (especially on the outer leaflet, where specific receptors might be involved in binding PLPs) may explain these specificities. The authors may consider including these considerations in the Discussion section and refine their model in Figure 7.\n",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19016149-8faa-4a4f-b7f4-6e0feaba0a76",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C1",
+      "claim": "CelTOS is conserved in apicomplexan parasites of the genera Plasmodium, Babesia, Cytauxzoon and Theileria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found CelTOS is conserved across various diverse branches of apicomplexan parasites including the hemosporidia (Plasmodium spp.) and piroplasms (Theileria, Babesia, Cytauxzoon spp.), groups that are thought to have diverged more than 100 million years ago (DeBarry and Kissinger, 2011) (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 1A and Figure 1\u2014figure supplement 1, and cited reference to evolutionary divergence.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "248f7d8a-6083-4b5f-aad2-a2312c892a0e",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C2",
+      "claim": "Apicomplexan parasites with CelTOS diverged more than 100 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "We found CelTOS is conserved across various diverse branches of apicomplexan parasites including the hemosporidia (Plasmodium spp.) and piroplasms (Theileria, Babesia, Cytauxzoon spp.), groups that are thought to have diverged more than 100 million years ago (DeBarry and Kissinger, 2011) (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeBarry and Kissinger, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e28c54f1-1ecb-47f8-acb5-d9bb8b84e245",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C3",
+      "claim": "CelTOS is absent in Toxoplasma gondii.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the lack of CelTOS in the apicomplexan Toxoplasma gondii that does not require an arthropod vector for transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact in the manuscript text.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "71245b9f-cce6-4aad-9d7c-48778339d567",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C4",
+      "claim": "Toxoplasma gondii does not require an arthropod vector for transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the lack of CelTOS in the apicomplexan Toxoplasma gondii that does not require an arthropod vector for transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about T. gondii biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "892e9e19-616c-49a0-be11-dd7fb0958032",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C5",
+      "claim": "PvCelTOS forms an alpha helical dimer that resembles a tuning fork.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS forms an alpha helical dimer that resembles a tuning fork (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystal structure data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b01e6919-0693-437a-9d97-20cc47fd93e3",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C6",
+      "claim": "The CelTOS dimer has a buried surface area of 3003 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimer has a large buried surface area of 3003 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e453789d-1a41-4703-a853-510462e35841",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C7",
+      "claim": "CelTOS is an obligate dimer in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the structure and large buried surface area, we established that CelTOS is an obligate dimer in solution by sedimentation equilibrium analytical ultracentrifugation (Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e1142bab-a35d-4292-a177-c0b8ae9067f2",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C8",
+      "claim": "The outer surface of the CelTOS dimer is mildly hydrophilic.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer surface of the CelTOS dimer is mildly hydrophilic (Figure 1C and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrostatic surface potential maps shown in Figure 1C and E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "7264b1df-3c70-457f-a62a-cdd091f0e189",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C9",
+      "claim": "CelTOS has inner hydrophobic surfaces created between the two tines of the dimer and the dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer surface of the CelTOS dimer is mildly hydrophilic (Figure 1C and E) and masks inner hydrophobic surfaces created between the two tines of the CelTOS dimer and the dimer interface (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by surface maps shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "03f33bbf-87e9-48ab-a03a-931a5845f541",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C10",
+      "claim": "The C-terminal helices of CelTOS show structural similarity to HIV-1 gp41.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal helices of CelTOS show structural similarity to HIV-1 gp41 (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural overlay shown in Figure 2A and DALI server comparison.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "05ec1d77-c1df-4f23-ae81-27e215060142",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C11",
+      "claim": "The C-terminal helices of CelTOS show structural similarity to Mycobacterium bovis ESAT-6.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal helices of CelTOS show structural similarity to HIV-1 gp41 (Figure 2A) and Mycobacterium bovis ESAT-6 (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural overlay shown in Figure 2D and DALI server comparison.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "33e2b769-11cc-48a3-8864-1e1225c88f0c",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C12",
+      "claim": "The N-terminal helices of CelTOS show structural similarity to Hendravirus fusion core.",
+      "claim_type": "EXPLICIT",
+      "source": "the N-terminal helices show similarity to Hendravirus fusion core (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural overlay shown in Figure 2B and DALI server comparison.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "26a3f89f-8599-4959-a958-73c87d4448cc",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C13",
+      "claim": "The N-terminal helices of CelTOS show structural similarity to Nipahvirus fusion subunit core.",
+      "claim_type": "EXPLICIT",
+      "source": "the N-terminal helices show similarity to Hendravirus fusion core (Figure 2B); Nipahvirus fusion subunit core (Figure 2C) (Buzon et al., 2010; Lou et al., 2006; Renshaw et al., 2005; Hsu et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural overlay shown in Figure 2C and cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "167592a4-8541-48e7-abbf-059e16b8fcc5",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C14",
+      "claim": "PfCelTOS demonstrates significant binding to phosphatidic acid (PA).",
+      "claim_type": "EXPLICIT",
+      "source": "Both P. falciparum (Pf) and P. vivax (Pv) CelTOS demonstrated significant binding to phosphatidic acid (PA) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spotted lipid array data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "bc216387-206f-4ecc-bf30-2e278ec2b9cc",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C15",
+      "claim": "PvCelTOS demonstrates significant binding to phosphatidic acid (PA).",
+      "claim_type": "EXPLICIT",
+      "source": "Both P. falciparum (Pf) and P. vivax (Pv) CelTOS demonstrated significant binding to phosphatidic acid (PA) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spotted lipid array data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "7c84c8b5-5645-4777-8a0b-ca80b8188a12",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C16",
+      "claim": "Phosphatidic acid is predominantly found on the inner leaflet of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphatidic acid is predominantly found on the inner leaflet of plasma membranes (Op den Kamp, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Op den Kamp, 1979.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "589d67b1-55fc-42db-aed8-acf16f405214",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C17",
+      "claim": "PvCelTOS binds to cardiolipin.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific binding of PvCelTOS to cardiolipin was also observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in lipid binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8f8ec4fb-6f3c-4ad9-8dc1-f4c552bd175b",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C18",
+      "claim": "Cardiolipin binding is not conserved between PfCelTOS and PvCelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relevance of this binding specificity is unclear as it is not conserved in CelTOS from both P. falciparum and P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of binding data between PfCelTOS and PvCelTOS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "a7053dc6-f5a8-4163-925f-9812d25602ba",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C19",
+      "claim": "CelTOS shows limited or undetectable binding to sphingomyelin (SM).",
+      "claim_type": "EXPLICIT",
+      "source": "Limited or undetectable binding was observed to phospholipids predominantly found on the outer leaflet of plasma membranes including sphingomyelin (SM) and phosphatidylcholine (PC) (Op den Kamp, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lipid binding assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "7a1701e7-8220-4841-8eb3-1416b5b80ac8",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C20",
+      "claim": "CelTOS shows limited or undetectable binding to phosphatidylcholine (PC).",
+      "claim_type": "EXPLICIT",
+      "source": "Limited or undetectable binding was observed to phospholipids predominantly found on the outer leaflet of plasma membranes including sphingomyelin (SM) and phosphatidylcholine (PC) (Op den Kamp, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lipid binding assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "245db403-df42-4bfc-93a3-697040edf129",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C21",
+      "claim": "Sphingomyelin is predominantly found on the outer leaflet of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited or undetectable binding was observed to phospholipids predominantly found on the outer leaflet of plasma membranes including sphingomyelin (SM) and phosphatidylcholine (PC) (Op den Kamp, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Op den Kamp, 1979.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "9663257c-42e2-462a-a297-2186965c3934",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C22",
+      "claim": "Phosphatidylcholine is predominantly found on the outer leaflet of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited or undetectable binding was observed to phospholipids predominantly found on the outer leaflet of plasma membranes including sphingomyelin (SM) and phosphatidylcholine (PC) (Op den Kamp, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Op den Kamp, 1979.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "18b3fe7d-77b3-4bb8-970e-c0a804edd119",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C23",
+      "claim": "CelTOS has enhanced specificity for the cytosolic face of cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that CelTOS has enhanced specificity for the cytosolic face of cell membranes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from preferential binding to inner leaflet lipids (PA) over outer leaflet lipids (PC, SM).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5013a00f-6c0f-4bc4-af63-d97f0e365c93",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C24",
+      "claim": "CelTOS possesses a specific binding pocket that preferentially accommodates PA over the headgroups of other phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that CelTOS has enhanced specificity for the cytosolic face of cell membranes and suggests CelTOS possesses a specific binding pocket that preferentially accommodates PA over the headgroups of other phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specific binding pattern to PA versus other phospholipids.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "291dbe09-2200-4a80-9fb2-98e9ba563dd8",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C25",
+      "claim": "Nanomolar concentrations of CelTOS disrupt PA liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanomolar concentrations of CelTOS disrupted PA liposomes consistent with a potent role in the disruption of PA containing membranes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by liposome disruption assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "aeb5e665-b383-436e-8408-659cc6482e73",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C26",
+      "claim": "Minimal disruption of PS liposomes by CelTOS was observed and required micromolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, minimal disruption of PS and PC liposomes by CelTOS was observed and this required micromolar concentrations of CelTOS (Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by liposome disruption assay data shown in Figure 4\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "35f30ace-db42-427b-8c7b-731a23d1b370",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C27",
+      "claim": "Minimal disruption of PC liposomes by CelTOS was observed and required micromolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, minimal disruption of PS and PC liposomes by CelTOS was observed and this required micromolar concentrations of CelTOS (Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by liposome disruption assay data shown in Figure 4\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "36815c44-d119-4473-8366-0c05ed04a090",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C28",
+      "claim": "E. coli IspF does not disrupt liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Liposome disruption was specific to CelTOS as addition of the control protein E. coli IspF, that has similar mass, isoelectric point and purification method as CelTOS, had no effect (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by negative control data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "46b10051-262a-4d5a-baa9-fe05dac5b0e7",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C29",
+      "claim": "The CelTOS protein alone is necessary and sufficient for membrane disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the CelTOS protein alone is necessary and sufficient for membrane disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from liposome disruption assays showing CelTOS activity and lack of activity with control protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8589a948-fac3-46ca-a90a-f0f1d81c4bcf",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C30",
+      "claim": "CelTOS specifically targets inner leaflet phosphatidic acid lipid compositions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the CelTOS protein alone is necessary and sufficient for membrane disruption, specifically targets inner leaflet phosphatidic acid lipid compositions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from preferential disruption of PA liposomes over PS and PC liposomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "166315fa-9276-4197-bed1-13191feae76d",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C31",
+      "claim": "CelTOS has a conserved membrane disruption function across Plasmodium species.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the CelTOS protein alone is necessary and sufficient for membrane disruption, specifically targets inner leaflet phosphatidic acid lipid compositions, and has a conserved function across Plasmodium spp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similar liposome disruption activity of both PfCelTOS and PvCelTOS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "815ec76f-d3cf-4322-aad6-c773602d04e8",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C32",
+      "claim": "Only 500 kDa dextran blocks carboxyfluorescein release from liposomes disrupted by PfCelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, only the 500 kDa dextran blocked carboxyfluorescein release from liposomes disrupted with PfCelTOS and PvCelTOS, respectively (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dextran blocking experiments shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "0d6ce4e1-b62b-44dd-9d33-c7ac1a831d27",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C33",
+      "claim": "Only 500 kDa dextran blocks carboxyfluorescein release from liposomes disrupted by PvCelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, only the 500 kDa dextran blocked carboxyfluorescein release from liposomes disrupted with PfCelTOS and PvCelTOS, respectively (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dextran blocking experiments shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "4a5b6112-be04-4b51-8442-213696c67bed",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C34",
+      "claim": "Dextran molecules of higher and lower molecular weights than 500 kDa had no effect on carboxyfluorescein release.",
+      "claim_type": "EXPLICIT",
+      "source": "Dextran molecules of higher and lower molecular weights and Stoke's radius had no effect on carboxyfluorescein release, similar to experiments without dextran.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dextran blocking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8941fae1-bc74-4e67-9a23-d5656eb745ab",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C35",
+      "claim": "500 kDa dextran has the correct Stoke's radius to occupy the CelTOS pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, only the 500 kDa dextran has the correct Stoke's radius to occupy the pore, while the remaining dextran molecules are either too small and diffuse through the pore or too large and may not enter the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the selective blocking effect of 500 kDa dextran.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "037784a0-187a-4458-b95c-afad362a0fd5",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C36",
+      "claim": "500 kDa dextran significantly lowered the maximum amount of carboxyfluorescein released compared to experiments with molecules of higher and lower molecular weights or without dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "The 500 kDa dextran significantly lowered the maximum amount of carboxyfluorescein released disrupted (A, in Equation 2) compared to experiments with molecules of higher and lower molecular weights, or without dextran (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "2034d12a-a00a-456b-85a6-5569cdd73c89",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C37",
+      "claim": "CelTOS forms pores of uniform size in liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that CelTOS forms pores of uniform size in liposomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specific blocking by a single dextran size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b89b74fc-be03-46a4-ab8c-b889d161f1d1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C38",
+      "claim": "The average diameter of pores formed by PfCelTOS is 45.85 \u00b1 15.55 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average diameter of the pores, reported as mean \u00b1 s.d., formed by PfCelTOS and PvCelTOS were 45.85 \u00b1 15.55 nm and 58.62 \u00b1 21.86 nm respectively (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by transmission electron microscopy as shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "f6d4ecdd-d695-4d60-8cac-26a1ac1921b6",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C39",
+      "claim": "The average diameter of pores formed by PvCelTOS is 58.62 \u00b1 21.86 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average diameter of the pores, reported as mean \u00b1 s.d., formed by PfCelTOS and PvCelTOS were 45.85 \u00b1 15.55 nm and 58.62 \u00b1 21.86 nm respectively (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by transmission electron microscopy as shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "01654971-29bf-4cbf-9c41-5de15038b10b",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C40",
+      "claim": "CelTOS forms pores visible by transmission electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized the CelTOS-pore in liposomes by transmission electron microscopy of negative stained liposomes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electron microscopy images shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e9586ed4-ac39-4dfd-acdf-493dd59ee38a",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C41",
+      "claim": "Microinjection of PfCelTOS into Xenopus oocytes causes membrane damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, microinjection of Pf or PvCelTOS caused significant increase in the number of cells that had damaged membranes (Figure 6A and B, and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microinjection experiments shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "19a7f57d-c07f-4c28-a3fb-d571a107d8b0",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C42",
+      "claim": "Microinjection of PvCelTOS into Xenopus oocytes causes membrane damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, microinjection of Pf or PvCelTOS caused significant increase in the number of cells that had damaged membranes (Figure 6A and B, and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microinjection experiments shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "3fa6ea5a-daa3-4f85-9920-bbe8e218dbf4",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C43",
+      "claim": "Microinjection of buffer into Xenopus oocytes causes only minor membrane phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Only minor membrane phenotypes due to the injection process were observed in oocytes injected with buffer and in those injected with the negative control protein, EcIspF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by negative control data from microinjection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "c7e51dcc-143d-40f5-ad8e-d679373da9b2",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C44",
+      "claim": "Microinjection of EcIspF into Xenopus oocytes causes only minor membrane phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Only minor membrane phenotypes due to the injection process were observed in oocytes injected with buffer and in those injected with the negative control protein, EcIspF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by negative control data from microinjection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b3d27186-295e-4cf3-bdf6-b603a681973b",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C45",
+      "claim": "CelTOS is unable to disrupt RAW 264.7 macrophages from the extracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "No membrane disruption, measured by uptake of a membrane-impermeable fluorescent dye, was observed for macrophages in tissue culture when CelTOS was added to the extracellular media (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cytotoxicity assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5ffc053b-53ae-4ddf-a1af-bb78b5abe172",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C46",
+      "claim": "CelTOS is incapable of disrupting plasma membranes from the extracellular face because it does not bind phospholipids found predominantly in the outer leaflet of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is fully consistent as CelTOS does not bind phospholipids found predominantly in the outer leaflet of plasma membranes, rendering it incapable of disrupting plasma membranes from the extracellular face (Figure 3, Figure 6C and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from lipid binding specificity and lack of extracellular membrane disruption activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "fe0b5128-910e-411f-a090-6a21a49d37c2",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C47",
+      "claim": "CelTOS is the only parasite protein known to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from cells during traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified CelTOS as the only parasite protein known to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from cells during traversal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the unique inner leaflet targeting and membrane disruption activity of CelTOS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "548c95af-6793-4ec8-a4af-7be0eb1165e1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C48",
+      "claim": "CelTOS is released from parasite secretory organelles and adheres to the surface of the malaria parasite prior to and during the traversal of host and vector cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS is released from parasite secretory organelles and adheres to the surface of the malaria parasite prior to and during the traversal of host and vector cells (Bergmann-Leitner et al., 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bergmann-Leitner et al., 2010, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "0cddad68-81b1-4397-954d-53cf1b016483",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C49",
+      "claim": "When the parasite is extracellular, CelTOS has limited cell membrane disrupting activity due to its low preference for lipids on the outer surface of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that when the parasite is extracellular, CelTOS has limited cell membrane disrupting activity due to its low preference for lipids on the outer surface of plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lipid binding specificity and liposome disruption data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "82e1f710-78ca-4fe7-bacc-870eea868978",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C50",
+      "claim": "Once the parasite invades the cytosol of host and vector cells, CelTOS binds with high specificity to lipids in the inner leaflet of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the parasite invades the cytosol of host and vector cells, CelTOS binds with high specificity to lipids in the inner leaflet of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from PA binding specificity and inner leaflet localization of PA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "054608a6-60e4-4413-aafd-f8ecd6976f58",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C51",
+      "claim": "CelTOS binding to inner leaflet lipids leads to localized membrane disruption and pore formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding leads to localized membrane disruption and pore formation that creates a portal to ultimately direct the exit of the parasite from the host or vector cells to complete traversal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from liposome disruption and pore formation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "dbf1207d-84c3-4ffc-afb2-1a935a1a4f33",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C52",
+      "claim": "CelTOS is essential for traversal of malaria parasites in both the mosquito vector and human host.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-traversal protein for ookinetes and sporozoites (CelTOS) is unique among traversal proteins as it is essential for traversal of malaria parasites in both the mosquito vector and human host and is therefore critical for malaria transmission and disease pathogenesis (Kariu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kariu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5b649a3f-30fa-472b-b8da-27e28848be03",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C53",
+      "claim": "CelTOS is critical for malaria transmission and disease pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-traversal protein for ookinetes and sporozoites (CelTOS) is unique among traversal proteins as it is essential for traversal of malaria parasites in both the mosquito vector and human host and is therefore critical for malaria transmission and disease pathogenesis (Kariu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from its essential role in traversal in both vector and host.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b872046e-274d-49b8-948f-53aa97e825b7",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C54",
+      "claim": "CelTOS has been identified as a promising malaria vaccine candidate referred to as Antigen 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CelTOS has been identified as a promising malaria vaccine candidate referred to as Antigen 2 (Doolan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doolan et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e56c4adf-4579-4962-8eab-f1dd62841d77",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C55",
+      "claim": "Immunization of mice with recombinant CelTOS results in humoral and cellular immune responses that reduced infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunization of mice with recombinant CelTOS results in humoral and cellular immune responses that reduced infection, demonstrating that targeting CelTOS is a viable approach for developing a malaria vaccine (Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "7d471ada-5491-4e28-8091-57a948dd0e9b",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C56",
+      "claim": "Targeting CelTOS is a viable approach for developing a malaria vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunization of mice with recombinant CelTOS results in humoral and cellular immune responses that reduced infection, demonstrating that targeting CelTOS is a viable approach for developing a malaria vaccine (Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful immunization studies cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "c91d7ed8-2723-42d7-8c35-cc0d8b282b23",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C57",
+      "claim": "CelTOS has no sequence similarity to proteins of known function.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though CelTOS is critical during cell traversal by malaria parasites and is a leading transmission- and infection-blocking malaria vaccine candidate, its function remains unknown as it has no sequence similarity to proteins of known function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "cbad15f3-c2a7-4831-869d-94605e8f2546",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C58",
+      "claim": "CelTOS structurally resembles viral membrane fusion proteins and a bacterial pore-forming toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS structurally resembles viral membrane fusion proteins and a bacterial pore-forming toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison using DALI server.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "2f131d6c-b600-4ac1-ab5d-3d7c29688ad1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C59",
+      "claim": "CelTOS specifically binds phosphatidic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CelTOS specifically binds phosphatidic acid, a lipid predominantly found in the inner leaflet of plasma membranes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lipid binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "fbbd1d6c-a039-4e70-8d8f-db86addb3c47",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C60",
+      "claim": "CelTOS potently disrupts defined liposomes composed of phosphatidic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CelTOS specifically binds phosphatidic acid, a lipid predominantly found in the inner leaflet of plasma membranes, and potently disrupts defined liposomes composed of phosphatidic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by liposome disruption assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "22437778-e20d-4f2c-a8f3-4daee40bb55c",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C61",
+      "claim": "Liposome disruption by CelTOS is achieved by the formation of CelTOS-dependent pores.",
+      "claim_type": "EXPLICIT",
+      "source": "We determine that liposome disruption is achieved by the formation of CelTOS-dependent pores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dextran blocking experiments and electron microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "23f0b937-5f0d-4cb5-a1b1-88a195a6a8d1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C62",
+      "claim": "Microinjection of CelTOS into Xenopus oocytes results in membrane damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, microinjection of CelTOS into Xenopus oocytes results in membrane damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microinjection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "56a7036d-bd4b-4887-86bf-58ad14f58c00",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C63",
+      "claim": "CelTOS is the only known apicomplexan protein with universal inner leaflet cellular activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate CelTOS is the only known apicomplexan protein with universal inner leaflet cellular activity as it addresses phosphatidic acid found specifically on the cytoplasmic face of plasma membranes, and disrupts these membranes to enable the exit of apicomplexan parasites through diverse vector and host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the unique combination of inner leaflet targeting and membrane disruption activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "9e055a90-53d7-4185-8116-6ec801186462",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C64",
+      "claim": "CelTOS addresses phosphatidic acid found specifically on the cytoplasmic face of plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate CelTOS is the only known apicomplexan protein with universal inner leaflet cellular activity as it addresses phosphatidic acid found specifically on the cytoplasmic face of plasma membranes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PA binding specificity and inner leaflet localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "2aa21ff8-556f-452f-8da4-3822f9e6575c",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C65",
+      "claim": "CelTOS disrupts membranes to enable the exit of apicomplexan parasites through diverse vector and host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate CelTOS is the only known apicomplexan protein with universal inner leaflet cellular activity as it addresses phosphatidic acid found specifically on the cytoplasmic face of plasma membranes, and disrupts these membranes to enable the exit of apicomplexan parasites through diverse vector and host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from membrane disruption activity and known role in cell traversal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "f70a4ddf-a252-4b59-83a7-93c95ea8f534",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C66",
+      "claim": "The structure of CelTOS is unique and distinct from viral and bacterial membrane disruption proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While CelTOS resembles these viral and bacterial proteins, the CelTOS structure is unique and distinct as it contains two independent subdomains that both could act as membrane disruption modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis showing two subdomains with similarity to different membrane disruption proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "95a6325a-f101-437a-9881-e39b23e15c13",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C67",
+      "claim": "CelTOS contains two independent subdomains that both could act as membrane disruption modules.",
+      "claim_type": "EXPLICIT",
+      "source": "While CelTOS resembles these viral and bacterial proteins, the CelTOS structure is unique and distinct as it contains two independent subdomains that both could act as membrane disruption modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural similarity of N-terminal and C-terminal helices to different membrane disruption proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "f8883853-38d3-4ff4-9a4e-d21c07f6da6a",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C68",
+      "claim": "The N-terminal and C-terminal helices in CelTOS resemble heptad repeats that form helices in class I viral fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the N-terminal and C-terminal helices in CelTOS resemble the heptad repeats that form helices in class I viral fusion proteins (Figure 2A\u2013C) (Sackett and Shai, 2002; Harrison, 2015; LeDuc and Shin, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8971723a-4146-4902-b7d7-494f265c8276",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C69",
+      "claim": "Viral heptad repeats undergo conformational changes that enhance the destabilization of host membranes post-insertion of the viral fusion peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral heptad repeats undergo conformational changes that enhance the destabilization of host membranes post-insertion of the viral fusion peptide that enables lipid mixing during fusion(38).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about viral fusion proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e8d78731-b187-4f0c-9d1d-0d5f269594bb",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C70",
+      "claim": "The N- and C-terminal helices in CelTOS may undergo conformational changes during membrane disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that the N- and C-terminal helices in CelTOS may also undergo similar conformational changes during membrane disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on similarity to viral fusion proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8d528a8f-3a30-43b3-9717-0294c98aacf0",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C71",
+      "claim": "CelTOS employs a distinct membrane disruption mechanism from viral proteins as lipid mixing is not required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CelTOS employs a distinct membrane disruption mechanism from viral proteins as lipid mixing is not required for CelTOS to target inner leaflet lipids and disrupt plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mechanism of CelTOS action targeting inner leaflet from cytoplasm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "607c3118-9ac3-49fa-b671-ec6dcf5ddb79",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C72",
+      "claim": "CelTOS is structurally similar to the pore-forming toxin M. tuberculosis ESAT-6.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CelTOS is structurally similar to the pore-forming toxin M. tuberculosis ESAT-6 (Figure 2D) (Hsu et al., 2003; Los et al., 2013; Smith et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "8370cfc6-7e1f-4b2c-8769-a973dd13eefb",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C73",
+      "claim": "Pore-forming toxins generally recognize a host cell target or receptor embedded within the target membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these toxins generally recognize a host cell target or receptor embedded within the target membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as general knowledge about pore-forming toxins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "d639e908-6bee-4343-8767-4aa6535b04db",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C74",
+      "claim": "ESAT-6 is secreted in complex with a chaperone that maintains it in an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these toxins generally recognize a host cell target or receptor embedded within the target membrane, and ESAT-6 is secreted in complex with a chaperone that maintains it in an inactive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about ESAT-6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b41ae8ba-4f30-4346-853a-ac5d5df26866",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C75",
+      "claim": "Upon binding the membrane target, ESAT-6 sheds the chaperone, oligomerizes and embeds into the membrane to form a pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding the membrane target, the toxin sheds the chaperone, oligomerizes and embeds into the membrane to form a pore on the angstrom length scale for the passage of ions and water (Los et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Los et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "9598a29e-7398-48a8-958f-1d439e2b2e9d",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C76",
+      "claim": "The dimeric nature of CelTOS may serve as a chaperone-like function to retain CelTOS in an inactive state prior to membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric nature of CelTOS may serve as a chaperone-like function to retain CelTOS in an inactive state prior to membrane binding as the dimer masks the inner hydrophobic faces of CelTOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on structural features and comparison to ESAT-6.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "88cdd11c-be2a-44aa-8338-fbbaab073224",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C77",
+      "claim": "The CelTOS dimer masks the inner hydrophobic faces of CelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric nature of CelTOS may serve as a chaperone-like function to retain CelTOS in an inactive state prior to membrane binding as the dimer masks the inner hydrophobic faces of CelTOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural data showing hydrophobic surfaces at dimer interface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "bd33bbfb-0bea-461d-933f-b1e15e77ffe5",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C78",
+      "claim": "Malaria continues to be a global health problem, with half of the world's population at risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria continues to be a global health problem, with half of the world's population at risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about malaria epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "3f3d547b-c7d1-4d19-9e4e-9fdc7f080c04",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C79",
+      "claim": "The lack of an effective vaccine against malaria and the continuous evolution of drug-resistant parasites make malaria control difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of an effective vaccine against malaria, and the continuous evolution of drug-resistant parasites make malaria control difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about malaria control challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "38818fa1-daf2-4033-b30f-79c2b57b2fe8",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C80",
+      "claim": "Targeting the liver-stage is of high priority for malaria vaccine development.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the liver-stage (Good and Doolan, 1999) and mosquito-stages (mCGo, 2011) are of high priority for malaria vaccine development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Good and Doolan, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "7bcb7809-821b-4b8d-9073-254c09f643d4",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C81",
+      "claim": "Targeting the mosquito-stage is of high priority for malaria vaccine development.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the liver-stage (Good and Doolan, 1999) and mosquito-stages (mCGo, 2011) are of high priority for malaria vaccine development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to mCGo, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "3b1a7eec-d936-4593-ae2a-d7b15289d604",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C82",
+      "claim": "Immunization of human volunteers with radiation-attenuated sporozoites induces sterile immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunization of human volunteers with radiation-attenuated sporozoites induces sterile immunity (Good and Doolan, 1999; Hoffman et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Good and Doolan, 1999; Hoffman et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "ca0b733e-d133-4df0-8ddb-ace08b00f6c1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C83",
+      "claim": "All volunteers immunized with radiation-attenuated sporozoites showed strong immune responses to CelTOS that were correlated with protection.",
+      "claim_type": "EXPLICIT",
+      "source": "and all volunteers showed strong immune responses to CelTOS (referred to as Antigen 2) that were correlated with protection (Doolan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doolan et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "1e0ac1ff-733d-461e-92ed-8cde854b5460",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C84",
+      "claim": "Circumsporozoite protein was only recognized by a third of volunteers immunized with radiation-attenuated sporozoites and mostly in those who were not protected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, circumsporozoite protein, which is the major component of the most advanced malaria vaccine RTS,S (Crompton et al., 2010), was only recognized by a third of the volunteers and mostly in those who were not protected (Doolan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doolan et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "c2275b03-9bdd-401a-9eea-71544530b226",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C85",
+      "claim": "Circumsporozoite protein is the major component of the most advanced malaria vaccine RTS,S.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, circumsporozoite protein, which is the major component of the most advanced malaria vaccine RTS,S (Crompton et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crompton et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "fb553f3b-49dc-43ee-9111-d637769f7cb8",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C86",
+      "claim": "Individuals living in malaria endemic regions mount IFN-\u03b3 responses to CelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals living in malaria endemic regions mount IFN-\u03b3 responses to CelTOS suggesting that CelTOS is a target of protective immunity (Anum et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anum et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5c98a0b8-f6f6-454a-af84-bf979dce5038",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C87",
+      "claim": "CelTOS is a target of protective immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals living in malaria endemic regions mount IFN-\u03b3 responses to CelTOS suggesting that CelTOS is a target of protective immunity (Anum et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from IFN-\u03b3 responses in endemic populations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "2afe81df-2978-4603-b471-e2e4c6629f6d",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C88",
+      "claim": "CelTOS is a promising multi-stage malaria vaccine target for both infection-blocking and transmission-blocking vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS is also unique as it is a promising multi-stage malaria vaccine target (Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013) for both infection-blocking and transmission-blocking vaccines currently in clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bergmann-Leitner et al., 2010; Ferraro et al., 2013; Bergmann-Leitner et al., 2011, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "cb9d420c-c26b-4e97-b4dc-7116296542aa",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C89",
+      "claim": "CelTOS has conserved critical function in both Plasmodium falciparum and Plasmodium vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CelTOS has conserved critical function in both Plasmodium falciparum and Plasmodium vivax that infect humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional data from both PfCelTOS and PvCelTOS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "240abf72-2bba-4286-811e-4813665187a1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C90",
+      "claim": "The high-sequence similarity between PfCelTOS and PvCelTOS suggests that CelTOS may elicit cross-species protection.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-sequence similarity between Pf and PvCelTOS suggest that CelTOS may elicit cross-species protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from sequence similarity and conserved function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "19332e3d-fc43-40f8-b661-640992d4bee1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C91",
+      "claim": "CelTOS could be used alone or in combination with other antigens to produce an effective multicomponent vaccine which targets both the mosquito and human stages and may be cross-species protective.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CelTOS could be used alone or in combination with other antigens already in development to produce an effective multicomponent vaccine which targets both the mosquito and human stages and may be cross-species protective (Doolan et al., 2003; Crompton et al., 2010; Crosnier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on CelTOS properties and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "d3ea8695-e9bd-4918-9f4b-d811a108b109",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C92",
+      "claim": "CelTOS-based vaccines have demonstrated the ability to elicit protection from malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS-based vaccines have demonstrated the ability to elicit protection from malaria infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "4445cd58-7a14-4e87-87ec-a01d441a27d7",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C93",
+      "claim": "Protection from CelTOS-based vaccines is not absolute.",
+      "claim_type": "EXPLICIT",
+      "source": "However, protection is not absolute suggesting improvements in the immunogenicity, protectivity and formulation of CelTOS-based vaccines are necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established from previous vaccine studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5b1b3ac7-f293-437a-bf09-72a8bec50e5e",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C94",
+      "claim": "Improvements in the immunogenicity, protectivity and formulation of CelTOS-based vaccines are necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "However, protection is not absolute suggesting improvements in the immunogenicity, protectivity and formulation of CelTOS-based vaccines are necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from incomplete protection observed in vaccine studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "662fa148-b34a-4df4-aa59-42bff240a49b",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C95",
+      "claim": "The structure and architecture of CelTOS provides necessary insight to inform immune recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and architecture of CelTOS provides necessary insight to inform immune recognition, and enables protein engineering to retain the structural fold during immunogen design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the structural data obtained.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "9014b363-2cd2-43ae-b22a-d63ba14c1c6e",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C96",
+      "claim": "The structure of CelTOS enables protein engineering to retain the structural fold during immunogen design.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and architecture of CelTOS provides necessary insight to inform immune recognition, and enables protein engineering to retain the structural fold during immunogen design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural knowledge enabling rational design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5bf68992-2d0a-4ddd-8317-8474ebb7c73d",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C97",
+      "claim": "Perforin-like proteins (PLPs) mediate entry into various pre-erythrocytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The current literature supports a model where perforin-like proteins (PLPs) mediate entry into various pre-erythrocytic cells including the PLP-1 dependent disruption of transient vacuoles created during entry of hepatocytes (Risco-Castillo et al., 2015; Ishino et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Risco-Castillo et al., 2015; Ishino et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5ef22ee6-ebbf-49b4-99ff-6707d9fc6f03",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C98",
+      "claim": "PLP-1 dependent disruption of transient vacuoles occurs during entry of hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The current literature supports a model where perforin-like proteins (PLPs) mediate entry into various pre-erythrocytic cells including the PLP-1 dependent disruption of transient vacuoles created during entry of hepatocytes (Risco-Castillo et al., 2015; Ishino et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Risco-Castillo et al., 2015; Ishino et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5055b1da-6727-408d-b444-f7e94a7ea870",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C99",
+      "claim": "PLPs have been shown to play a role in egress of parasites from the parasitophorous vacuole and red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, PLPs have been shown to play a role in egress of parasites from the parasitophorous vacuole and red blood cells (Garg et al., 2013; Wirth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garg et al., 2013; Wirth et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5d9a14f2-0814-47c3-8d21-673c9083ef75",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C100",
+      "claim": "Proteins involved in breaching the plasma membrane of invaded cells during traversal from the cytoplasmic face to enable the exit of parasites are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, proteins involved in breaching the plasma membrane of invaded cells during traversal, from the cytoplasmic face, to enable the exit of parasites are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a gap in knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "2f7b29c1-d57c-428d-97c5-1fd341685ead",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C101",
+      "claim": "CelTOS attacks plasma membranes from the cytoplasmic face.",
+      "claim_type": "EXPLICIT",
+      "source": "We have discovered that secreted apicomplexan CelTOS attacks plasma membranes from the cytoplasmic face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lipid binding specificity and cellular assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "a9b96b4b-0b1b-4a23-9e8a-c2df4a1f191f",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C102",
+      "claim": "CelTOS-deficient parasites are unable to traverse cells of their host and vector.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS had previously been identified as a malaria antigen, and CelTOS-deficient parasites are unable to traverse cells of their host and vector (Kariu et al., 2006; Doolan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kariu et al., 2006; Doolan et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "d4664319-e6ba-4586-8640-69eb5f66fcd1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C103",
+      "claim": "CelTOS functions to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from invaded host and vector cells during traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our study indicate that CelTOS functions to breach plasma membranes from the cytoplasmic face to enable the exit of parasites from invaded host and vector cells during traversal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from all functional and mechanistic data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "3c0362bd-d573-4888-a0d3-9dd1c24da94e",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C104",
+      "claim": "Motility alone is not sufficient for parasite exit.",
+      "claim_type": "EXPLICIT",
+      "source": "This study challenges the paradigm that motility alone is sufficient for parasite exit, as it is now clear that active membrane disruption by CelTOS is necessary for parasite release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the essential role of CelTOS in membrane disruption for traversal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "379fa9ee-c549-41ed-b37a-6c7092d052bc",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C105",
+      "claim": "Active membrane disruption by CelTOS is necessary for parasite release.",
+      "claim_type": "EXPLICIT",
+      "source": "This study challenges the paradigm that motility alone is sufficient for parasite exit, as it is now clear that active membrane disruption by CelTOS is necessary for parasite release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the essential role of CelTOS and its membrane disruption activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "e651dc61-37ce-4f26-bd02-a179eafda19a",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C106",
+      "claim": "CelTOS-dependent pore formation leading to inner-leaflet membrane disruption is a new active molecular process during traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "This work identifies CelTOS-dependent pore formation leading to inner-leaflet membrane disruption as a new active molecular process during traversal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discovery of CelTOS pore formation mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "3634b121-08b2-43c4-9c91-69c33012c559",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C107",
+      "claim": "CelTOS defines a new class of membrane disruption proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While CelTOS resembles viral membrane fusion proteins and a bacterial pore-forming toxin, our findings define a new class of membrane disruption proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from unique structural features and mechanism compared to known membrane disruption proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "d48d70e0-286d-4ab6-840d-0ccb14636953",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C108",
+      "claim": "CelTOS has a distinct structural architecture with two subdomains that independently resemble membrane binding and/or disrupting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "CelTOS has a distinct structural architecture with two subdomains that independently resemble membrane binding and/or disrupting proteins and could simultaneously act during disruption (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "1f9e6ded-e959-473a-a003-78799c6c59ab",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C109",
+      "claim": "CelTOS employs a unique lipid specificity for phosphatidic acid to achieve nearly universal inner leaflet cellular activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, CelTOS employs a unique lipid specificity for phosphatidic acid to achieve nearly universal inner leaflet cellular activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from PA binding specificity and its presence in inner leaflets of diverse cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "a57a0703-5fc3-4ba7-a81a-18f509973a9a",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C110",
+      "claim": "Primary sequence similarity searches did not identify membrane disruption proteins as relatives of CelTOS.",
+      "claim_type": "EXPLICIT",
+      "source": "This new class is also supported by the fact that primary sequence similarity searches did not identify membrane disruption proteins as relatives of CelTOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "672f73a8-6c44-41f6-883f-94f3e2842452",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "claim_id": "C111",
+      "claim": "Two N-terminal helices of one CelTOS monomer pack against the C-terminal helices of a second monomer to form the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Two N-terminal helices (\u03b1-helices 1 and 2) of one monomer pack against the C-terminal helices (\u03b1-helices 3 and 4) of a second monomer to form the dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "79f78836-dd35-47d9-a918-b5d9a931657c",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CelTOS is conserved across apicomplexan parasites including Plasmodium, Babesia, Cytauxzoon, and Theileria, which diverged over 100 million years ago, but is absent in Toxoplasma gondii, which does not require an arthropod vector for transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by sequence alignment data (Figure 1A and supplement), evolutionary divergence citation (DeBarry and Kissinger, 2011), and the biological knowledge about T. gondii transmission. The correlation between CelTOS presence and arthropod vector requirement is logically consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "72d0df75-3180-4168-98ec-bc719258e4e0",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PvCelTOS forms an obligate alpha-helical dimer with a tuning fork structure, featuring a large buried surface area (3003 \u00c5\u00b2), a mildly hydrophilic outer surface, and inner hydrophobic surfaces at the dimer interface and between the tines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 and C111 are strongly supported by crystal structure data (Figure 1B-E, Figure 1\u2014figure supplement 2), analytical ultracentrifugation experiments (Figure 1\u2014source data 2), and calculated surface properties. The structural characterization is comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CelTOS structurally resembles viral membrane fusion proteins (HIV-1 gp41, Hendravirus, Nipahvirus) and bacterial pore-forming toxin (M. bovis ESAT-6), but has a unique architecture with two independent subdomains that could both act as membrane disruption modules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13, C58, C66-C68, and C108 are supported by DALI server structural comparisons (Figure 2A-D) and citations. The structural similarity is demonstrated visually, and the uniqueness of CelTOS's dual subdomain architecture is a reasonable inference from the comparative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both PfCelTOS and PvCelTOS specifically bind phosphatidic acid (PA), a lipid predominantly found on the inner leaflet of plasma membranes, with limited binding to outer leaflet lipids (SM, PC), demonstrating enhanced specificity for the cytosolic face of cell membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 and C59 are well-supported by spotted lipid array data (Figure 3) with appropriate statistical analysis (one-way ANOVA with Dunnett's test, n=8 for PfCelTOS, n=3 for PvCelTOS). The lipid localization claims (C16, C21, C22) are supported by appropriate citation (Op den Kamp, 1979). The cardiolipin binding specificity (C17-C18) is appropriately noted as not conserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b8d8d605-a537-4351-a50a-a3279dae78d1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CelTOS specifically and potently disrupts PA liposomes at nanomolar concentrations, with minimal disruption of PS and PC liposomes requiring micromolar concentrations, demonstrating that CelTOS protein alone is necessary and sufficient for membrane disruption with conserved function across Plasmodium species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C60 are strongly supported by liposome disruption assays (Figure 4 and Figure 4\u2014figure supplement 1) with appropriate controls (EcIspF negative control, C28). The concentration-dependent effects are quantified with time constants (Tau), and data are fitted to appropriate kinetic models (Equation 2). The specificity for PA over PS/PC is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CelTOS disrupts liposomes by forming pores of uniform size, as demonstrated by selective blocking with 500 kDa dextran and visualization by transmission electron microscopy, with average pore diameters of 45.85 \u00b1 15.55 nm (PfCelTOS) and 58.62 \u00b1 21.86 nm (PvCelTOS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 and C61 are well-supported by dextran blocking experiments (Figure 5A-B, Figure 5\u2014figure supplement 1) and electron microscopy (Figure 5C, Figure 5\u2014figure supplement 2). The selective blocking by 500 kDa dextran provides strong evidence for pore formation. However, the large standard deviations in pore diameter (\u00b115-22 nm) suggest some heterogeneity, which somewhat contradicts the claim of 'uniform size' (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "75440349-34a4-4da9-ac29-87e9d4ebc574",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Microinjection of PfCelTOS or PvCelTOS into Xenopus oocytes causes significant membrane damage compared to buffer or EcIspF controls, demonstrating cellular membrane disruption activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 and C62 are supported by microinjection experiments (Figure 6A-B, Figure 6\u2014figure supplement 1) with appropriate controls and statistical analysis (Kruskal-Wallis with Dunn's test, n=6 experiments with 24 oocytes each). The experimental design is sound with proper negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "ee719569-f725-474e-a88c-ced186b9cf95",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CelTOS is unable to disrupt RAW 264.7 macrophages from the extracellular surface because it does not bind phospholipids found predominantly in the outer leaflet of plasma membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by cytotoxicity assay data (Figure 6C) with appropriate statistical analysis (Kruskal-Wallis with Dunn's test, n=3 experiments with 3 technical replicates). The interpretation is consistent with the lipid binding specificity data (C14-C24), providing mechanistic coherence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CelTOS is the only known apicomplexan protein that breaches plasma membranes from the cytoplasmic face by specifically targeting inner leaflet phosphatidic acid, forming pores to enable parasite exit during cell traversal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51, C63-C65, C101, and C103 represent the major mechanistic conclusion of the study. These claims are well-supported by the collective evidence from lipid binding specificity, liposome disruption, pore formation, and cellular assays. The claim of being 'the only known' protein (C47, C63) is supported by the literature gap identified (C100) but should be interpreted cautiously as absence of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "74625c43-cdda-42f2-858d-8abd5e49bb2c",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CelTOS is essential for traversal in both mosquito vector and human host, making it critical for malaria transmission and pathogenesis, and has been identified as a promising vaccine candidate with demonstrated ability to elicit protective immune responses in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 and C102 are supported by appropriate citations (Kariu et al., 2006; Doolan et al., 2003; Bergmann-Leitner et al., 2010, 2011, 2013; Ferraro et al., 2013). These are established findings from prior work that provide important context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "41019c9c-b243-4d99-9ed8-be956f39efe2",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CelTOS has no sequence similarity to proteins of known function, and primary sequence similarity searches did not identify membrane disruption proteins as relatives of CelTOS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C110 are supported by sequence analysis results. This negative finding is important as it justifies the structural biology approach and supports the novelty of CelTOS as a new class of membrane disruption protein.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "22416dde-0410-4242-9e8f-1c396a595210",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While viral heptad repeats undergo conformational changes during membrane fusion, CelTOS may undergo similar changes but employs a distinct mechanism that does not require lipid mixing, as it targets inner leaflet lipids from the cytoplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is established knowledge about viral fusion proteins. Claim C70 is explicitly speculative ('plausible,' 'may'). Claim C71 is an inference about mechanism. While the inference is reasonable given the data, no direct evidence for or against conformational changes in CelTOS is provided. This represents a mechanistic hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CelTOS is structurally similar to ESAT-6, but unlike typical pore-forming toxins that recognize membrane-embedded receptors and require chaperones, the dimeric nature of CelTOS may serve a chaperone-like function by masking inner hydrophobic faces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is supported by structural comparison (Figure 2D) and citations. Claims C73-C75 are established knowledge about pore-forming toxins. Claim C76 is explicitly speculative ('may serve'). Claim C77 is supported by structural data (Figure 1E). The chaperone-like function hypothesis (C76) is reasonable but lacks direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "fe632047-d1cf-41d9-9b6c-970b414f9b19",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Malaria remains a global health problem requiring vaccine development, with CelTOS identified as a promising multi-stage vaccine target that elicits protective immune responses, though current CelTOS-based vaccines provide incomplete protection requiring improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C88 and C92-C94 provide important context from prior work, supported by appropriate citations (Good and Doolan, 1999; Hoffman et al., 2002; Doolan et al., 2003; Crompton et al., 2010; Anum et al., 2015; Bergmann-Leitner et al., 2010, 2011, 2013; Ferraro et al., 2013). These establish the translational significance of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "4571b3f4-e94a-45f9-9b1b-52f1fa75a7d1",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CelTOS has conserved function in both P. falciparum and P. vivax, and the high sequence similarity suggests potential for cross-species protection in multicomponent vaccines targeting both mosquito and human stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by functional data from both PfCelTOS and PvCelTOS throughout the study. Claims C90-C91 are reasonable inferences from sequence similarity and functional conservation, though C91 is somewhat speculative regarding vaccine applications. The functional conservation is well-demonstrated experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "5acc5332-357e-40e8-bec4-557810017ea4",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The structure and architecture of CelTOS provides insight to inform immune recognition and enables protein engineering to retain structural fold during immunogen design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 are reasonable inferences from the structural data obtained. The structure does provide a framework for rational vaccine design (structural vaccinology), though the actual application to immunogen design is prospective rather than demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "0216c5c2-42e9-4732-895f-7d5687f9b826",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Perforin-like proteins (PLPs) mediate entry into pre-erythrocytic cells and egress from parasitophorous vacuoles, but proteins involved in breaching plasma membranes from the cytoplasmic face during traversal exit were previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 provide important context from prior literature, supported by appropriate citations (Risco-Castillo et al., 2015; Ishino et al., 2005; Garg et al., 2013; Wirth et al., 2014). Claim C100 establishes the knowledge gap that this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    },
+    {
+      "id": "a33d71e5-71c1-4d8e-808b-d73a333941f0",
+      "content_id": "d1ac111e-5ea4-4b20-8711-b20200e84aa4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This study challenges the paradigm that motility alone is sufficient for parasite exit, demonstrating that active membrane disruption by CelTOS is necessary, identifying CelTOS-dependent pore formation as a new molecular process and defining a new class of membrane disruption proteins with unique lipid specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 and C109 represent the major conceptual advances of the study. These are well-supported inferences from the collective experimental evidence. The claim of a 'new class' (C107) is justified by the unique structural features, mechanism, and lack of sequence similarity to known membrane disruption proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:54:41.684558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19016149-8faa-4a4f-b7f4-6e0feaba0a76",
+      "result_id": "79f78836-dd35-47d9-a918-b5d9a931657c"
+    },
+    {
+      "claim_id": "248f7d8a-6083-4b5f-aad2-a2312c892a0e",
+      "result_id": "79f78836-dd35-47d9-a918-b5d9a931657c"
+    },
+    {
+      "claim_id": "e28c54f1-1ecb-47f8-acb5-d9bb8b84e245",
+      "result_id": "79f78836-dd35-47d9-a918-b5d9a931657c"
+    },
+    {
+      "claim_id": "71245b9f-cce6-4aad-9d7c-48778339d567",
+      "result_id": "79f78836-dd35-47d9-a918-b5d9a931657c"
+    },
+    {
+      "claim_id": "892e9e19-616c-49a0-be11-dd7fb0958032",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "b01e6919-0693-437a-9d97-20cc47fd93e3",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "e453789d-1a41-4703-a853-510462e35841",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "e1142bab-a35d-4292-a177-c0b8ae9067f2",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "7264b1df-3c70-457f-a62a-cdd091f0e189",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "672f73a8-6c44-41f6-883f-94f3e2842452",
+      "result_id": "72d0df75-3180-4168-98ec-bc719258e4e0"
+    },
+    {
+      "claim_id": "03f33bbf-87e9-48ab-a03a-931a5845f541",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "05ec1d77-c1df-4f23-ae81-27e215060142",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "33e2b769-11cc-48a3-8864-1e1225c88f0c",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "26a3f89f-8599-4959-a958-73c87d4448cc",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "cbad15f3-c2a7-4831-869d-94605e8f2546",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "f70a4ddf-a252-4b59-83a7-93c95ea8f534",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "95a6325a-f101-437a-9881-e39b23e15c13",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "f8883853-38d3-4ff4-9a4e-d21c07f6da6a",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "d48d70e0-286d-4ab6-840d-0ccb14636953",
+      "result_id": "205bb3ee-8dfb-46ea-94e5-2a6723ee3a53"
+    },
+    {
+      "claim_id": "167592a4-8541-48e7-abbf-059e16b8fcc5",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "bc216387-206f-4ecc-bf30-2e278ec2b9cc",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "7c84c8b5-5645-4777-8a0b-ca80b8188a12",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "589d67b1-55fc-42db-aed8-acf16f405214",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "8f8ec4fb-6f3c-4ad9-8dc1-f4c552bd175b",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "a7053dc6-f5a8-4163-925f-9812d25602ba",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "7a1701e7-8220-4841-8eb3-1416b5b80ac8",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "245db403-df42-4bfc-93a3-697040edf129",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "9663257c-42e2-462a-a297-2186965c3934",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "18b3fe7d-77b3-4bb8-970e-c0a804edd119",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "5013a00f-6c0f-4bc4-af63-d97f0e365c93",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "2f131d6c-b600-4ac1-ab5d-3d7c29688ad1",
+      "result_id": "177b6ae4-5df2-4cd8-b6e5-8238ce4e69ba"
+    },
+    {
+      "claim_id": "291dbe09-2200-4a80-9fb2-98e9ba563dd8",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "aeb5e665-b383-436e-8408-659cc6482e73",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "35f30ace-db42-427b-8c7b-731a23d1b370",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "36815c44-d119-4473-8366-0c05ed04a090",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "46b10051-262a-4d5a-baa9-fe05dac5b0e7",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "8589a948-fac3-46ca-a90a-f0f1d81c4bcf",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "166315fa-9276-4197-bed1-13191feae76d",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "fbbd1d6c-a039-4e70-8d8f-db86addb3c47",
+      "result_id": "b8d8d605-a537-4351-a50a-a3279dae78d1"
+    },
+    {
+      "claim_id": "815ec76f-d3cf-4322-aad6-c773602d04e8",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "0d6ce4e1-b62b-44dd-9d33-c7ac1a831d27",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "4a5b6112-be04-4b51-8442-213696c67bed",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "8941fae1-bc74-4e67-9a23-d5656eb745ab",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "037784a0-187a-4458-b95c-afad362a0fd5",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "2034d12a-a00a-456b-85a6-5569cdd73c89",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "b89b74fc-be03-46a4-ab8c-b889d161f1d1",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "f6d4ecdd-d695-4d60-8cac-26a1ac1921b6",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "01654971-29bf-4cbf-9c41-5de15038b10b",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "22437778-e20d-4f2c-a8f3-4daee40bb55c",
+      "result_id": "f2e8577f-d75e-47ac-b8ee-e4c8c549bad1"
+    },
+    {
+      "claim_id": "e9586ed4-ac39-4dfd-acdf-493dd59ee38a",
+      "result_id": "75440349-34a4-4da9-ac29-87e9d4ebc574"
+    },
+    {
+      "claim_id": "19a7f57d-c07f-4c28-a3fb-d571a107d8b0",
+      "result_id": "75440349-34a4-4da9-ac29-87e9d4ebc574"
+    },
+    {
+      "claim_id": "3fa6ea5a-daa3-4f85-9920-bbe8e218dbf4",
+      "result_id": "75440349-34a4-4da9-ac29-87e9d4ebc574"
+    },
+    {
+      "claim_id": "c7e51dcc-143d-40f5-ad8e-d679373da9b2",
+      "result_id": "75440349-34a4-4da9-ac29-87e9d4ebc574"
+    },
+    {
+      "claim_id": "23f0b937-5f0d-4cb5-a1b1-88a195a6a8d1",
+      "result_id": "75440349-34a4-4da9-ac29-87e9d4ebc574"
+    },
+    {
+      "claim_id": "b3d27186-295e-4cf3-bdf6-b603a681973b",
+      "result_id": "ee719569-f725-474e-a88c-ced186b9cf95"
+    },
+    {
+      "claim_id": "5ffc053b-53ae-4ddf-a1af-bb78b5abe172",
+      "result_id": "ee719569-f725-474e-a88c-ced186b9cf95"
+    },
+    {
+      "claim_id": "fe0b5128-910e-411f-a090-6a21a49d37c2",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "548c95af-6793-4ec8-a4af-7be0eb1165e1",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "0cddad68-81b1-4397-954d-53cf1b016483",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "82e1f710-78ca-4fe7-bacc-870eea868978",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "054608a6-60e4-4413-aafd-f8ecd6976f58",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "56a7036d-bd4b-4887-86bf-58ad14f58c00",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "9e055a90-53d7-4185-8116-6ec801186462",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "2aa21ff8-556f-452f-8da4-3822f9e6575c",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "2f7b29c1-d57c-428d-97c5-1fd341685ead",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "d4664319-e6ba-4586-8640-69eb5f66fcd1",
+      "result_id": "b2207df7-cc9a-42df-bcb8-e6f92c3619ef"
+    },
+    {
+      "claim_id": "dbf1207d-84c3-4ffc-afb2-1a935a1a4f33",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "5b649a3f-30fa-472b-b8da-27e28848be03",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "b872046e-274d-49b8-948f-53aa97e825b7",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "e56c4adf-4579-4962-8eab-f1dd62841d77",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "7d471ada-5491-4e28-8091-57a948dd0e9b",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "a9b96b4b-0b1b-4a23-9e8a-c2df4a1f191f",
+      "result_id": "74625c43-cdda-42f2-858d-8abd5e49bb2c"
+    },
+    {
+      "claim_id": "c91d7ed8-2723-42d7-8c35-cc0d8b282b23",
+      "result_id": "41019c9c-b243-4d99-9ed8-be956f39efe2"
+    },
+    {
+      "claim_id": "a57a0703-5fc3-4ba7-a81a-18f509973a9a",
+      "result_id": "41019c9c-b243-4d99-9ed8-be956f39efe2"
+    },
+    {
+      "claim_id": "8971723a-4146-4902-b7d7-494f265c8276",
+      "result_id": "22416dde-0410-4242-9e8f-1c396a595210"
+    },
+    {
+      "claim_id": "e8d78731-b187-4f0c-9d1d-0d5f269594bb",
+      "result_id": "22416dde-0410-4242-9e8f-1c396a595210"
+    },
+    {
+      "claim_id": "8d528a8f-3a30-43b3-9717-0294c98aacf0",
+      "result_id": "22416dde-0410-4242-9e8f-1c396a595210"
+    },
+    {
+      "claim_id": "607c3118-9ac3-49fa-b671-ec6dcf5ddb79",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "8370cfc6-7e1f-4b2c-8769-a973dd13eefb",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "d639e908-6bee-4343-8767-4aa6535b04db",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "b41ae8ba-4f30-4346-853a-ac5d5df26866",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "9598a29e-7398-48a8-958f-1d439e2b2e9d",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "88cdd11c-be2a-44aa-8338-fbbaab073224",
+      "result_id": "6a5b3d91-05b2-4c54-b9db-1d9457544ac6"
+    },
+    {
+      "claim_id": "bd33bbfb-0bea-461d-933f-b1e15e77ffe5",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "3f3d547b-c7d1-4d19-9e4e-9fdc7f080c04",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "38818fa1-daf2-4033-b30f-79c2b57b2fe8",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "7bcb7809-821b-4b8d-9073-254c09f643d4",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "3b1a7eec-d936-4593-ae2a-d7b15289d604",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "ca0b733e-d133-4df0-8ddb-ace08b00f6c1",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "1e0ac1ff-733d-461e-92ed-8cde854b5460",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "c2275b03-9bdd-401a-9eea-71544530b226",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "fb553f3b-49dc-43ee-9111-d637769f7cb8",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "5c98a0b8-f6f6-454a-af84-bf979dce5038",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "2afe81df-2978-4603-b471-e2e4c6629f6d",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "d3ea8695-e9bd-4918-9f4b-d811a108b109",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "4445cd58-7a14-4e87-87ec-a01d441a27d7",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "5b1b3ac7-f293-437a-bf09-72a8bec50e5e",
+      "result_id": "fe632047-d1cf-41d9-9b6c-970b414f9b19"
+    },
+    {
+      "claim_id": "cb9d420c-c26b-4e97-b4dc-7116296542aa",
+      "result_id": "4571b3f4-e94a-45f9-9b1b-52f1fa75a7d1"
+    },
+    {
+      "claim_id": "240abf72-2bba-4286-811e-4813665187a1",
+      "result_id": "4571b3f4-e94a-45f9-9b1b-52f1fa75a7d1"
+    },
+    {
+      "claim_id": "19332e3d-fc43-40f8-b661-640992d4bee1",
+      "result_id": "4571b3f4-e94a-45f9-9b1b-52f1fa75a7d1"
+    },
+    {
+      "claim_id": "662fa148-b34a-4df4-aa59-42bff240a49b",
+      "result_id": "5acc5332-357e-40e8-bec4-557810017ea4"
+    },
+    {
+      "claim_id": "9014b363-2cd2-43ae-b22a-d63ba14c1c6e",
+      "result_id": "5acc5332-357e-40e8-bec4-557810017ea4"
+    },
+    {
+      "claim_id": "5bf68992-2d0a-4ddd-8317-8474ebb7c73d",
+      "result_id": "0216c5c2-42e9-4732-895f-7d5687f9b826"
+    },
+    {
+      "claim_id": "5ef22ee6-ebbf-49b4-99ff-6707d9fc6f03",
+      "result_id": "0216c5c2-42e9-4732-895f-7d5687f9b826"
+    },
+    {
+      "claim_id": "5055b1da-6727-408d-b444-f7e94a7ea870",
+      "result_id": "0216c5c2-42e9-4732-895f-7d5687f9b826"
+    },
+    {
+      "claim_id": "5d9a14f2-0814-47c3-8d21-673c9083ef75",
+      "result_id": "0216c5c2-42e9-4732-895f-7d5687f9b826"
+    },
+    {
+      "claim_id": "3c0362bd-d573-4888-a0d3-9dd1c24da94e",
+      "result_id": "a33d71e5-71c1-4d8e-808b-d73a333941f0"
+    },
+    {
+      "claim_id": "379fa9ee-c549-41ed-b37a-6c7092d052bc",
+      "result_id": "a33d71e5-71c1-4d8e-808b-d73a333941f0"
+    },
+    {
+      "claim_id": "e651dc61-37ce-4f26-bd02-a179eafda19a",
+      "result_id": "a33d71e5-71c1-4d8e-808b-d73a333941f0"
+    },
+    {
+      "claim_id": "3634b121-08b2-43c4-9c91-69c33012c559",
+      "result_id": "a33d71e5-71c1-4d8e-808b-d73a333941f0"
+    },
+    {
+      "claim_id": "1f9e6ded-e959-473a-a003-78799c6c59ab",
+      "result_id": "a33d71e5-71c1-4d8e-808b-d73a333941f0"
+    }
+  ],
+  "comparisons": []
+}

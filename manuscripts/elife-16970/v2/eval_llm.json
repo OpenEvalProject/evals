@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors developed a template-based Bayesian (TBB) computational approach that uses the size distribution of MNase-digested nucleosome fragments to infer a digestion variability template, enabling identification of individual nucleosome positions at base-pair resolution from both paired-end and single-end MNase-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe the core methodological contribution. The approach is validated through multiple independent comparisons (C29-C36) showing consistency with existing methods and chemical cleavage approaches, with >90% agreement within 1 bp. In silico validation (C34) demonstrates 2-3 bp accuracy even for closely spaced nucleosomes. The method's robustness across different digestion conditions (C35-C36) further supports its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The TBB approach accurately identifies nucleosome positions, with >90% of consensus centers matching Parzen window methods within 1 bp, general agreement with published reference maps, and consistency with chemical cleavage approaches that are independent of MNase bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide multiple independent validations of the TBB method against established approaches. The quantitative agreement (>90% within 1 bp, C30) and consistency with MNase-independent chemical methods (C32) provide strong evidence for accuracy. Figures 2A-C and supplements support these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The TBB approach demonstrates high precision (2-3 bp) in in silico validation and high reproducibility between independent experiments (median 2 bp difference), with reliable detection regardless of MNase digestion differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 establish precision and reproducibility through controlled simulations and biological replicates. The in silico validation (C34) provides ground truth comparison, while replicate agreement (C35) demonstrates experimental reproducibility. Figure 2D-F and Supplementary file 2 support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Application of TBB to yeast MNase-seq data (T1 and T2 experiments with ~2.8 read midpoints/bp coverage) identified ~61,800 consensus centers and ~125,000 TBB nucleosome positions covering \u226575.5% of the S. cerevisiae genome, with adjacent positions peaking at 11 and 21 bp spacing consistent with DNA helical turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the experimental application and key observations. The 11 and 21 bp spacing (C26) is consistent with known nucleosome structure (one or two helical turns, C27) and supported by citations. Figure 1D shows this spacing distribution. The inference about overlapping configurations (C28) is reasonable given the structural constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TBB-identified nucleosome positions reveal clear 10 bp periodicity of AA/AT/TA/TT and CC/CG/GC/GG dinucleotide motifs across the nucleosome core in both yeast and human cells, which is conserved in vivo and not observable at consensus centers. This periodicity is eliminated by shifting positions by 5 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C37-C41 demonstrate a key biological finding enabled by precise positioning. The 10 bp periodicity is shown in Figures 4A-C for both yeast and human, with MNase bias correction (C38). The control experiment (C39, Figure 4D) demonstrates the importance of precise positioning. The contrast with consensus centers (C41) validates the method's advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Alternative nucleosome configurations are common in yeast and human chromatin, with bimodal positioning observed at \u226575% of genes with nucleosome-covered TSSs. Alternative positions show <2-fold occupancy variation, are reproducible between experiments, and are not artifacts of differential MNase digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C42-C50 establish alternative positioning as a widespread phenomenon. The bimodal distribution (C42, Figure 5C) is reproducible (C44, Figure 5D) and not explained by digestion artifacts (C47, C50, Figures 5E-F). The similar occupancy levels (C45) support biological relevance (C46). Multiple controls and replicates strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Alternatively positioned nucleosomes at TSSs represent functionally distinct configurations: proximal nucleosomes restrict TSS accessibility and are incompatible with PIC binding, while distal nucleosomes position TSSs near the nucleosome edge with PIC enrichment at the nucleosome boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 integrate TBB positioning data with ChIP-exo data for PIC components (Figure 6A-B). The spatial relationships between nucleosome positions and PIC occupancy support the functional interpretations. However, the causal claims about compatibility (C57) are inferences from correlative data rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C23"
+    ],
+    "result": "A 3-step model for transcription initiation proposes that proximal nucleosomes represent a pre-PIC state (with accessible TATA elements), distal nucleosomes represent an initiation-competent state, and an open state allows transcription through nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61 and C23 propose a mechanistic model based on correlative genomic data. While TATA enrichment upstream of proximal nucleosomes (C58, Figure 6C) supports accessibility (C59), the model (C60-C61, C23) involves substantial speculation about temporal ordering and causality. The model is plausible and consistent with the data but lacks direct evidence for the proposed transitions or their functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Genes with uniquely positioned nucleosomes at TSSs are enriched in highly expressed genes (p=0.001), with 73% of ribosomal protein genes showing unique positioning (p<0.00001), suggesting a connection between nucleosome configuration and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 establish a statistical association between nucleosome configuration and expression. The enrichment is significant (Fisher's exact test) and particularly strong for ribosomal protein genes (C63). However, the causal direction and mechanism of this connection (C64) remain inferential. The correlation is well-supported but mechanistic understanding requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Uniquely and alternatively positioned nucleosomes show distinct DNA sequence features: alternative nucleosomes display 10 bp dinucleotide periodicity (R\u00b2=0.75) and weaker poly(dA:dT)6 flanking, while unique nucleosomes lack periodicity (R\u00b2=0.40) but show strong poly(dA:dT)6 enrichment, suggesting sequence determinants contribute to chromatin configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 identify sequence differences between nucleosome classes using multiple analyses (dinucleotide frequency, autocorrelation, poly(dA:dT) enrichment) shown in Figure 7. The quantitative differences (R\u00b2 values) are substantial. However, the causal claim (C71) that sequences 'contribute to' configurations is speculative\u2014the data show correlation but not causation. Sequence features could be consequence rather than cause of positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on chromatin structure, nucleosome positioning, and existing mapping methods establishes the context and challenges that motivate the TBB approach, including limitations of consensus center methods and MNase-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide established background knowledge supported by appropriate citations. These claims accurately represent prior work and identify the gap (precise individual nucleosome positioning) that the TBB method addresses. The characterization of existing methods' limitations (C10-C13) is supported by citations and logical reasoning.",
+    "result_type": "MINOR"
+  }
+]

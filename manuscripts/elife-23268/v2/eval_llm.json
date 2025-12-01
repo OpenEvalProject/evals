@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A genome-wide analysis of 179 cancer cell lines integrating shRNA viability screens with copy-number data identified 50 significant copy-number:gene-dependency interactions. CYCLOPS interactions (cis interactions involving copy-loss) were the most enriched class, constituting one-third of all significant interactions despite representing only 0.004% of possible interactions, with 74% of interactions associated with copy-loss rather than gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C41 provide comprehensive methodological details and statistical results supporting the identification of copy-number associated dependencies. The scale of analysis (179 cell lines, 201M gene pairs), statistical thresholds (q<0.25), and enrichment of CYCLOPS interactions are clearly documented with appropriate p-values and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C22",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C161"
+    ],
+    "result": "The CYCLOPS analysis identified 124 candidate CYCLOPS genes distributed across all autosomes and biased toward frequently deleted regions. Spliceosome components were the most prevalent, with 20 of 124 genes, and proteasome components comprised 11 genes, making these the only significantly enriched KEGG pathways. Independent validation using a separate dataset confirmed 49% of tested CYCLOPS genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 and C161 provide convergent evidence for the identification and characterization of CYCLOPS genes. The enrichment of spliceosome components is statistically significant, validated in an independent dataset (C49, p<2\u00d710\u207b\u2074), and the genomic distribution is well-documented. The 49% validation rate in an independent screen provides reasonable reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of 10,570 TCGA cancers across 31 cancer types revealed that 16% of the genome undergoes loss in the average cancer, mainly through chromosome arm or whole chromosome losses. The fraction lost ranged from 1.3% in thyroid cancer to 34.4% in ovarian cancer, and 71.6% of cancers harbored loss of at least one candidate CYCLOPS gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 describe the prevalence of genomic loss and CYCLOPS gene alterations in human cancers using a large TCGA dataset. The sample size (10,570 cancers) is substantial, and the findings are consistent with established cancer genomics literature. The data provide important context for the clinical relevance of CYCLOPS dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C160"
+    ],
+    "result": "Candidate CYCLOPS genes exhibit three key features: 58% are core-essential genes (p<2\u00d710\u207b\u2074), they show significantly less expression variation across normal tissues than average genes (p=1.8\u00d710\u207b\u00b9\u2075), and upon copy-loss their expression decreases by 28% on average compared to 18% for non-CYCLOPS genes (p<10\u207b\u2074), suggesting lack of feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C160 characterize the molecular features of CYCLOPS genes with appropriate statistical support. The enrichment for essential genes, uniform expression across tissues, and lack of compensatory regulation upon copy-loss are all statistically significant and biologically coherent. These features distinguish CYCLOPS genes from other copy-number altered genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SF3B1, a component of the SF3b complex within the U2 snRNP, was identified as a significant CYCLOPS gene. SF3B1 is partially lost in 11% of TCGA cancers and 24% of cancer cell lines, with losses 5.4 times more common than mutations (~2% of cancers). SF3B1 copy-loss and mutations are mutually exclusive (p=0.007), and SF3B1 is never homozygously deleted, consistent with its essential function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C72 establish SF3B1 as a CYCLOPS gene with comprehensive genomic characterization across TCGA and CCLE datasets. The mutual exclusivity of copy-loss and mutations, absence of homozygous deletions, and frequency data are well-documented. The biological context (SF3B1 as essential gene) is consistent with the CYCLOPS phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Validation experiments demonstrated that partial SF3B1 suppression selectively impairs growth of SF3B1loss cells but not SF3B1neutral cells, while complete suppression affects both. SF3B1loss cells exhibit G2/M arrest and apoptosis upon partial SF3B1 suppression. This vulnerability is specific to SF3B1 and not recapitulated by suppression of other SF3b complex subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 provide extensive experimental validation of the SF3B1 CYCLOPS dependency across multiple cell lines and assays. The specificity is demonstrated through dose-response experiments, cell cycle analysis, apoptosis assays, and negative controls with other SF3b subunits. The use of both naturally occurring and CRISPR-engineered SF3B1loss cells strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Expression of exogenous SF3B1 rescued the loss of viability in SF3B1loss cells upon SF3B1 suppression, confirming the specificity of the shRNAs and demonstrating that re-expression of SF3B1 is sufficient to prevent cell death and restore proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe rescue experiments that confirm the on-target effects of SF3B1 suppression. The use of codon-optimized SF3B1 resistant to shRNA targeting provides strong evidence for specificity. These experiments are critical controls that rule out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C113"
+    ],
+    "result": "SF3B1neutral cells express approximately twice as much SF3B1 mRNA and protein as SF3B1loss cells, with a significant correlation between mRNA and protein levels (p=0.0018, R\u00b2=0.772). SF3B1 mRNA levels can be reduced by ~60% from SF3B1neutral cell basal levels before viability defects appear. This excess SF3B1 in SF3B1neutral cells buffers them from partial SF3B1 suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 and C113 establish the molecular basis for differential sensitivity through quantitative measurements of SF3B1 expression. The correlation between mRNA and protein, validation across TCGA and CCLE datasets, and systematic dose-response analysis provide strong mechanistic support. The ~60% threshold is empirically determined and consistent across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C171",
+      "C172"
+    ],
+    "result": "Biochemical fractionation revealed that SF3B1 copy-loss selectively reduces the abundance of the SF3b sub-complex (~450 kDa) but only modestly affects assembled U2 snRNP levels. SF3B1neutral cells maintain a stable pool of SF3b complex outside the U2 snRNP that is absent in SF3B1loss cells. This represents the first observation of such a pool of SF3b complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107, C171-C172 describe sophisticated biochemical experiments using glycerol gradient sedimentation, gel filtration, and immunoprecipitation to characterize SF3B1-containing complexes. The differential effects on SF3b vs. U2 snRNP are demonstrated through multiple orthogonal approaches. The identification of a SF3b pool outside the U2 snRNP is novel and well-supported, though the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "Partial SF3B1 suppression leads to substantial reductions of U2 snRNP levels (SF3A3, SNRPB2, U2 snRNA) in SF3B1loss cells but not SF3B1neutral cells. In SF3B1neutral cells, SF3B1 suppression preferentially depletes the SF3b sub-complex, phenocopying the steady-state levels in SF3B1loss cells. SF3B1 copy-loss only reduces U2 snRNP levels following further SF3B1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 demonstrate that the SF3b reservoir in SF3B1neutral cells protects against U2 snRNP depletion upon partial SF3B1 suppression. The experiments use multiple complementary approaches (western blot, qPCR, fractionation) and show consistent results. The model that SF3B1neutral cells can tolerate partial suppression by drawing on the SF3b pool is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Existing SF3b inhibitors (Spliceostatin A, Pladienolide B) that target the assembled U2 snRNP did not exhibit enhanced effects in SF3B1loss cells or cells with partial SF3B1 suppression. This suggests that inhibitors of the assembled U2 snRNP will not adequately distinguish between SF3B1loss and SF3B1neutral cells, as both maintain similar U2 snRNP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119, C174-C176 demonstrate that current SF3b inhibitors do not exploit the SF3B1 CYCLOPS vulnerability. The negative results with multiple inhibitors across different cell contexts are consistent with the biochemical finding that U2 snRNP levels are preserved in SF3B1loss cells. This is an important finding that distinguishes the CYCLOPS mechanism from drug-induced SF3B1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C130",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "RNA sequencing revealed that partial SF3B1 suppression causes significantly more splicing defects in SF3B1loss cells, including increased intron retention (7353 vs. 454 transcripts, p<10\u207b\u00b9\u00b9\u00b9\u2070), alternative 3' splice site selection (1540 vs. 353 junctions, p<10\u207b\u00b9\u00b2\u00b9), and formation of nuclear mega-speckles. SF3B1loss cells showed 513 differentially expressed genes compared to 306 in SF3B1neutral cells (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C139 provide comprehensive transcriptomic evidence for differential splicing defects. The RNA-seq analysis is appropriately powered, uses statistical methods to account for sampling variability, and includes validation by qPCR and RT-PCR. The magnitude of differences is substantial and highly significant. The formation of mega-speckles provides orthogonal cellular evidence for splicing dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "In vivo xenograft experiments demonstrated that SF3B1Loss-Cal51-1 and SF3B1control-Cal51-1 cells generated tumors of similar volume without doxycycline (p=0.7), but partial SF3B1 suppression significantly reduced tumor growth and Ki67+ proliferative cells in SF3B1Loss-Cal51-1 xenografts but not controls (p=0.001). Similar results were observed with naturally occurring SF3B1loss HCC1954 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 demonstrate that the SF3B1 CYCLOPS dependency is operative in vivo. The use of both isogenic and naturally occurring SF3B1loss cells, appropriate controls, and quantification of both tumor growth and proliferation markers provide strong evidence. The statistical significance and consistency across models support the therapeutic potential of targeting this vulnerability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The deubiquitinase inhibitor b-AP15 reduces SF3B1 protein levels and demonstrates enhanced sensitivity in SF3B1loss cells and cells with reduced SF3B1 expression. b-AP15 treatment causes increased intron retention and splicing defects preferentially in SF3B1loss cells, and exogenous SF3B1 expression rescues the enhanced sensitivity, suggesting the effect is mediated through SF3B1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C155 identify b-AP15 as a compound that can exploit the SF3B1 CYCLOPS vulnerability through a distinct mechanism (protein degradation) from existing SF3b inhibitors. The evidence includes demonstration of SF3B1 ubiquitination, dose-response curves showing differential sensitivity, splicing defects consistent with SF3B1 loss, and rescue experiments. The specificity is supported by negative results with other DUBi's (C148).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C156",
+      "C184"
+    ],
+    "result": "DUBi's may represent a general therapeutic approach to target CYCLOPS gene vulnerabilities. The finding that b-AP15 specifically suppresses growth of cells with SF3B1 loss supports the use of DUBi's to target any of the 124 candidate CYCLOPS genes identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26, C156, and C184 propose that DUBi's could be a general approach for targeting CYCLOPS genes. While b-AP15 effectively targets the SF3B1 CYCLOPS dependency, the generalization to other CYCLOPS genes is speculative. Only SF3B1 was tested, and the mechanism may not apply to all CYCLOPS genes. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C27"
+    ],
+    "result": "Partial copy-loss of wild-type SF3B1 represents a novel, non-driver cancer gene dependency present in 11% of all cancers, highlighting a previously unrecognized cancer vulnerability as a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23, and C27 synthesize the major findings to characterize SF3B1 as a non-driver dependency. The 11% prevalence is documented in TCGA data (C63), the CYCLOPS mechanism is validated experimentally, and the distinction from driver mutations is supported by mutual exclusivity data (C66). This represents a well-supported conclusion about a novel therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Analysis of 179 cell lines generated more than twice as many candidate CYCLOPS genes (124) at a more stringent significance threshold (q<0.1) compared to previous work with 86 cell lines (55 genes at q<0.25). Enhanced detection with larger sample sizes suggests additional cell lines will reveal more candidates, though detection requires partial gene suppression with optimal levels that may vary by gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 appropriately contextualize the current work relative to prior studies and acknowledge limitations. The improved detection with increased sample size is well-documented, and the acknowledgment that optimal suppression levels may vary is an important caveat for interpreting negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Partial copy-loss of SF3B1 and U2AF1, likely resulting from passenger copy-number alterations, creates CYCLOPS vulnerabilities. This is consistent with mouse studies showing partial SF3B1 loss does not generate haploinsufficient phenotypes. SF3B1-mutant cancer cells depend on remaining wild-type copy, and mutant SF3B1 is associated with aberrant splicing and nonsense-mediated decay, suggesting SF3B1 mutations may be associated with CYCLOPS dependencies in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C170 integrate the current findings with literature on SF3B1 mutations and mouse models. The consistency with mouse haploinsufficiency data and the observation that ESS1 (SF3B1K666N mutant) is sensitive to partial SF3B1 suppression (C75, C167) support the conclusion. However, the generalization to all SF3B1 mutations is appropriately qualified as applying 'in some cases.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Most candidate CYCLOPS genes are not enzymes but are components of multi-protein complexes, making them unlikely to be exploited by compounds that directly inhibit enzymatic activity. An advantage of CYCLOPS targets like SF3B1 is that only moderate (~50%) reductions in protein levels are needed to exploit the vulnerability. SF3B1 has been reported as a component of the polycomb repressor complex and associates with nucleosomes, suggesting potential non-spliceosomal functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173, C177-C180 discuss therapeutic implications and alternative SF3B1 functions. The characterization of CYCLOPS genes as non-enzymatic complex components is supported by the data (C52-C53, C178-C179). The ~50% threshold is empirically determined (C95). The citation of SF3B1's polycomb association (C173) is appropriate background, though its relevance to the CYCLOPS phenotype is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C181",
+      "C182"
+    ],
+    "result": "A derivative of b-AP15, VLX1570, is already in clinical use (Trial ID: NCT02372240). The results indicate SF3B1 copy number should be tested as a potential biomarker of response for patients treated with this compound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C181-C182 propose testing SF3B1 copy number as a biomarker for VLX1570 response. While VLX1570 is indeed in clinical trials and is related to b-AP15, the recommendation is speculative. The in vitro and xenograft data with b-AP15 support the hypothesis, but clinical validation is required. This represents a reasonable suggestion for future clinical investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C120",
+      "C121",
+      "C122",
+      "C126",
+      "C129",
+      "C131",
+      "C132",
+      "C162",
+      "C163",
+      "C164",
+      "C183"
+    ],
+    "result": "Background claims establish that genomic instability causes widespread copy-number alterations in cancer, most affected genes are non-drivers, CYCLOPS genes tend to be essential, therapeutic windows can exist for essential genes, spliceosome components were previously identified as candidate CYCLOPS genes, splicing inhibitors have anti-neoplastic effects, cancers harbor recurrent splicing factor mutations that can sensitize to spliceosome drugs, and there are approximately 90 DUBs in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C9-C18, C120-C122, C126, C129, C131-C132, C162-C164, and C183 provide background context from the literature. These are appropriately cited and establish the scientific foundation for the study. They represent established knowledge rather than novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

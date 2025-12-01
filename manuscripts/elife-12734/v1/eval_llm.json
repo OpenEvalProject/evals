@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "DLK signaling upregulates parg-1 and parg-2 expression in GABA neurons in a pmk-3-dependent manner. RNA-Seq analysis showed parg-2 was upregulated 187-fold (p<0.01) and parg-1 2.5-fold (p<0.05) in dlk-1(OE) neurons compared to wild type, with upregulation eliminated in pmk-3 mutants. This represents a selective transcriptional response, as only 1.9% of genes were upregulated by DLK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by RNA-Seq data with appropriate statistical analysis (two-way ANOVA with Bonferroni post-test) and proper controls (pmk-3 mutant and rgef-1 as negative control). The data demonstrate specific transcriptional regulation of parg genes by the DLK-PMK-3 pathway with adequate replication (triplicate experiments) and statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "parg-2 promoter activity is regulated by dlk-1 in both uninjured and injured neurons. Reporter analysis showed parg-2 expression in 90% of dlk-1(OE) GABA neurons vs 19% in wild type (p<0.0001), with no expression in dlk-1(lf) animals. After axotomy, parg-2 expression increased to 47% in injured axons and 41% in neighboring uninjured axons (both significantly higher than 19% baseline), with this injury-induced expression completely dependent on dlk-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 are supported by fluorescence microscopy with appropriate statistical analysis (Fisher's exact test) and proper controls (dlk-1(lf) mutants). The data demonstrate both constitutive and injury-induced regulation of parg-2 by dlk-1, with adequate sample sizes and clear quantification. The finding of increased expression in neighboring uninjured neurons is particularly well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "Loss of parg-1 or parg-2 reduces axon regeneration to approximately half of wild type levels (39% and 36% vs 70%), with the double mutant showing similar regeneration defects as single mutants. The parg-1(lf); parg-2(lf) double mutant is viable with wild-type morphology, indicating PARG function is not essential for viability but is required for normal axon regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by laser axotomy experiments with adequate sample sizes and appropriate controls. The non-additive phenotype in the double mutant is clearly demonstrated and suggests the two genes function in the same pathway. However, the lack of complete regeneration block in double mutants indicates PARG-independent regeneration mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cell-autonomous PARG function is required for axon regeneration. GABA neuron-specific expression of parg-1 or parg-2 rescued regeneration defects in respective mutants (87% and 85% regeneration), demonstrating that PARGs act cell-intrinsically in injured neurons to promote regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are well-supported by cell-specific rescue experiments using the unc-47 promoter. The rescue to near-wild-type levels (87% and 85% vs ~70% in wild type) provides strong evidence for cell-autonomous function. The experimental design appropriately tests whether PARG acts within the injured neuron.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Loss of parp-1 or parp-2 enhances axon regeneration in C. elegans. Mutation of either parp-1 or parp-2 increased regeneration initiation (92% and 90% vs 76% in controls) and long-distance regeneration (56% and 53% reaching 3/4 distance vs 26% in controls), with some parp-2 mutants showing ectopic axon sprouting from cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by laser axotomy experiments with appropriate statistical analysis and adequate sample sizes. The opposing effects of PARG loss (reduced regeneration) and PARP loss (enhanced regeneration) provide strong evidence that PARylation levels regulate regenerative capacity. Multiple regeneration metrics strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PARP1 knockdown enhances axon regeneration in mammalian cortical neurons. Two independent PARP1 shRNAs significantly improved regeneration compared to control shRNA, with western blots confirming significant PARP protein reduction. This demonstrates conservation of PARP's inhibitory role in axon regeneration across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by cortical neuron regeneration assays with two independent shRNAs (reducing off-target concerns) and validation of knockdown by western blot. The use of multiple shRNAs and biochemical confirmation of target reduction strengthens the conclusion. Statistical analysis (ANOVA with Tukey's test) is appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "PARGs partially mediate DLK-dependent axon regeneration. Loss of parg-1 and parg-2 reduced regeneration in the dlk-1(OE) background, though not to the level seen in complete loss of DLK signaling, indicating PARGs act downstream of DLK but that DLK has additional effectors beyond PARGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by genetic epistasis experiments comparing dlk-1(OE), parg-1(lf) parg-2(lf), and dlk-1(OE); parg-1(lf) parg-2(lf) animals. The partial suppression of dlk-1(OE) by parg loss appropriately demonstrates that PARGs mediate some but not all DLK function in regeneration. The logic of the epistasis analysis is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PARylation does not regulate synapse formation or morphology. Loss of PARG activity did not affect synapse morphology in wild type animals and did not suppress synapse defects caused by dlk-1(OE), as measured by SYD-2::GFP distribution at GABA neuromuscular junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by quantitative analysis of presynaptic marker distribution with appropriate statistical analysis (ANOVA with Bonferroni post-test). The data demonstrate specificity of PARG function for regeneration rather than general effects on neuronal development. The use of baseline fluorescence as a metric for diffuse vs punctate distribution is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C58"
+    ],
+    "result": "Chemical PARP inhibition after injury enhances axon regeneration and functional recovery. Treatment with PARP inhibitor A966492 after axotomy significantly improved regeneration in both C. elegans GABA neurons and murine cortical neurons, and improved behavioral recovery in C. elegans (more animals achieving 4+ body bends, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C58 are well-supported by pharmacological experiments in two species with appropriate controls (DMSO vehicle). The behavioral assay provides functional validation that enhanced regeneration leads to circuit reconnection. The post-injury treatment paradigm is clinically relevant and demonstrates sufficiency of acute PARP inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Regulation of PARylation is a critical function of the DLK regeneration pathway. Multiple lines of evidence support this: (1) both parg genes are upregulated by DLK signaling, (2) endogenous dlk-1 drives injury-dependent parg-2 expression, (3) parg loss reduces regeneration in both wild type and dlk-1(OE) backgrounds, suggesting a model where DLK induces parg expression to facilitate regeneration by removing PAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C82-C83, C86 synthesize multiple experimental results into a coherent model. The evidence from RNA-Seq, reporter analysis, genetic epistasis, and functional assays converges to support the conclusion. However, C52 includes speculative elements about the linear pathway model that go beyond what is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DLK signaling regulates regeneration through multiple effectors beyond PARGs. Some regeneration occurs in parg-1(lf) parg-2(lf) double mutants, while no regeneration occurs in dlk-1(lf) mutants, indicating that high PAR levels do not completely prevent DLK-mediated regeneration and that DLK has additional functions beyond regulating PARylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by comparing regeneration phenotypes across genotypes. The logic is sound: partial regeneration in parg double mutants vs complete block in dlk-1 mutants indicates DLK acts through multiple pathways. This appropriately acknowledges the complexity of DLK signaling rather than oversimplifying to a single linear pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The two parg genes likely function together rather than being partially redundant. The lack of additive phenotype in the parg-1(lf); parg-2(lf) double mutant suggests they may function as a complex (as PARG homologs do in Arabidopsis) or that loss of either PARG is sufficient to raise PAR above a threshold that blocks regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C64 present interpretations of the non-additive phenotype, but these are largely speculative. While the observation of non-additivity is clear (C59), the mechanistic explanations (C60, C62-C64) are hypothetical. The Arabidopsis data (C61) provides suggestive but not direct evidence for C. elegans PARG complex formation. Additional experiments would be needed to distinguish between proposed models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Complete loss of PARG function is not essential for viability or basic morphology and behavior in C. elegans. The parg-1(lf); parg-2(lf) double mutant is viable and displays wild-type morphology and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by observations of the double mutant. This is an important control demonstrating that regeneration defects are not due to general developmental or health problems. However, more detailed behavioral and developmental characterization would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C25",
+      "C26",
+      "C42"
+    ],
+    "result": "Background on PARG and PARP function and genomic organization in C. elegans. PARGs catalyze removal of poly(ADP-ribose) from proteins while PARPs add PAR to proteins, with cellular PAR levels determined by the balance of these activities. C. elegans has two PARG genes (parg-1 and parg-2) and two PARP genes (parp-1 and parp-2). PARylation is a short-lived modification maintained by continuous PARP and PARG activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C25-C26, C42 present established knowledge supported by appropriate citations to the literature. These provide necessary context for interpreting the experimental results and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background on DLK signaling and axon regeneration. DLK-1 is a conserved MAPKKK that functions intrinsically to regulate axon regeneration across species through transcription-dependent mechanisms. CNS axons fail to regenerate after injury due to both intrinsic and extrinsic factors, with intrinsic factors playing a significant role even when extrinsic inhibition is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76, C78-C80 present established knowledge from the field supported by extensive citations. These provide appropriate context and motivation for the study. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C92"
+    ],
+    "result": "Prior work on PARP in mammalian regeneration and conservation of PARG/PARP function. PARP1 is upregulated in mammalian neurons exposed to inhibitory molecules and in crushed optic nerves, and PARP1 inhibition promotes neurite outgrowth on inhibitory substrates. PARG and PARP function are well-conserved between C. elegans and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C92 accurately represent prior work (Brochier et al., 2015; Gagnon et al., 2002; St-Laurent et al., 2007) and provide important context for the translational relevance of the findings. The conservation of function supports the use of C. elegans as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "PARP protein localization in cortical neurons. Western blot analysis showed PARP was detected in the insoluble fraction and not in the lysate, consistent with nuclear localization as previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by western blot data and is consistent with established knowledge about PARP localization. This serves as a validation control for the fractionation protocol used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Clinical context for PARP inhibitors. Multiple chemical PARP inhibitors are currently in preclinical and clinical trials for cancer therapy and stroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 accurately represents the clinical landscape for PARP inhibitors based on the citations provided (Ford and Lee, 2011; Anwar et al., 2015). This provides important context for the translational potential of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "PARP inhibitor treatment improves functional recovery after injury. Significantly more animals treated with PARP inhibitor recovered wild type function (4+ body bends) compared to DMSO controls (p<0.05) in a behavioral assay measuring touch response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is supported by behavioral data with statistical analysis (Fisher's exact test, p<0.05), but the sample sizes are small (n=11 DMSO, n=9 inhibitor). While the result is statistically significant, the small sample size and single behavioral metric limit confidence. Additional behavioral assays and larger sample sizes would strengthen this conclusion about functional recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Model for PARG-PARP balance in regulating regeneration. The balance between PARP and PARG function regulates axon regeneration, potentially by regulating PAR levels or NAD+ levels (which are substrates for PAR synthesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is well-supported by the opposing effects of PARG and PARP on regeneration demonstrated throughout the study. However, C69 is speculative about the mechanism (PAR levels vs NAD+ levels), as the study does not directly measure either PAR or NAD+ levels. The hypothesis is reasonable but requires additional experiments to test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C77"
+    ],
+    "result": "Translational implications. The conservation of PARP's role in mammalian axon regeneration may have important implications for nerve repair following injury or disease, and modulation of DLK transcriptional targets might increase the intrinsic regenerative potential of injured axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C77 are speculative statements about potential therapeutic applications. While the speculation is reasonable given the data showing conservation across species and the existence of clinical PARP inhibitors, these remain hypotheses requiring substantial additional work including in vivo mammalian injury models and safety/efficacy studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "Summary of main findings. PARGs enhance axon regeneration in C. elegans GABA neurons through cell-intrinsic mechanisms, while PARPs inhibit regeneration in both C. elegans and mammalian neurons. Chemical PARP inhibitors improve regeneration when administered after injury, and poly(ADP-ribosylation) inhibits axon regeneration across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C85, C87-C88 accurately summarize the major findings of the study. These are well-supported by the experimental data including genetic loss-of-function studies, cell-specific rescue experiments, cross-species validation, and pharmacological interventions. The conclusions appropriately reflect the strength of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C46",
+      "C57"
+    ],
+    "result": "Acute regulation of regeneration by PARylation. Acute poly(ADP-ribose) levels determine the response of neurons to axon injury, and PARG and PARP activity regulate the acute response of neurons to axon injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C57 are supported by the post-injury PARP inhibitor experiments demonstrating that acute pharmacological intervention is sufficient to improve regeneration. The reporter data showing injury-induced parg-2 expression also supports acute regulation. However, direct measurement of PAR levels over time would strengthen the conclusion about acute regulation.",
+    "result_type": "MAJOR"
+  }
+]

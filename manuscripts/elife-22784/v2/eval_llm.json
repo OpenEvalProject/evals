@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C119",
+      "C120"
+    ],
+    "result": "The study demonstrates development-dependent gene expression asymmetries in human fetal spinal cord, with the most pronounced asymmetries at 8 weeks PC (1690 transcripts, 3.29%), decreasing substantially at 10 weeks PC (24 genes, 0.05%) and 12 weeks PC (4 genes, 0.01%). At 8 weeks PC, there was a strong rightward bias (1651 vs 39 transcripts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show clear developmental stage-specific patterns (C75-C82, C119-C120), the study has critical limitations: only 5 samples analyzed (one sample excluded), no statistical testing reported for differential expression (only fold-change thresholds used), and no biological replicates at each developmental stage. The dramatic decrease from 8 to 10 weeks could reflect biological reality or technical variation. Without statistical validation and larger sample sizes, these findings require independent replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Among candidate genes previously associated with hemispheric asymmetries, FOXP2 showed rightward asymmetry at 10 weeks PC and BDNF-AS showed leftward asymmetry at 8 weeks PC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 report specific findings for candidate genes with established roles in lateralization. These are straightforward observational results from the dataset, though their functional significance remains to be determined. The findings are consistent with prior literature linking these genes to asymmetry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Gene Ontology enrichment analysis revealed 123 significant GO groups at 8 weeks PC, with leftward genes enriched in growth factor binding and collagen-related processes, while rightward genes showed enrichment in cell cycle, cellular organization, and metabolic processes. GO enrichment decreased to 41 groups at 10 weeks PC and none at 12 weeks PC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 describe GO enrichment results that follow logically from the gene expression asymmetries. The analysis used appropriate tools (WebGestalt) and reported p-values. The developmental trajectory of decreasing GO enrichment parallels the decrease in asymmetrically expressed genes, providing internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "miRNA expression analysis revealed developmental stage-specific asymmetries: at 8 weeks PC, 5 of 301 miRNAs (1.66%) showed rightward asymmetry; at 10 weeks PC, 6 of 382 miRNAs (1.57%) were asymmetric (3 left, 3 right); at 12 weeks PC, 7 of 294 miRNAs (2.38%) were asymmetric (6 left, 1 right).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 report miRNA asymmetries, but the analysis was limited to only 3 samples (samples II, IV, V) due to insufficient RNA. The small sample size (n=1 per developmental stage for some timepoints) makes it impossible to distinguish biological asymmetry from technical variation or individual differences. Statistical testing is not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Integration of miRNA and mRNA data revealed that asymmetrically expressed miRNAs target a subset of asymmetrically expressed genes (3.85% at 8 weeks, 25% at 10 and 12 weeks). KEGG pathway analysis identified the TGF-\u03b2 signaling pathway as the most significantly enriched pathway at 8 weeks PC, with all 5 rightward-asymmetric miRNAs involved, and two pathway genes (SP1, SMAD3) differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 describe integrated analysis linking miRNA expression to target genes and pathways. The TGF-\u03b2 pathway finding is particularly compelling given its known role in left-right patterning (C125-C128). The analysis used appropriate prediction tools (probability >0.8) and FDR correction. However, the functional validation of these predicted interactions is absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "DNA methylation analysis revealed strong leftward methylation bias at 8 weeks PC (31,278 vs 8,615 CpG sites), which decreased at 10 weeks PC (10,892 vs 11,081 sites). Integration with gene expression showed that 27% of asymmetric gene expression at 8 weeks PC could be explained by differential methylation, with additional contributions from miRNA (3%) and combined mechanisms (1%), leaving 69% unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C117, C122-C124 report methylation findings, but critical issues exist: only 2 samples at 8 and 10 weeks PC, and only 1 sample at 12 weeks PC. The 12-week data (281,119 left vs 352,118 right CpG sites) cannot be interpreted without replicates. The mechanistic link between methylation and gene expression (C107-C108) assumes that opposite-direction methylation causes expression differences, but this is correlative and the 27% 'explained variance' calculation lacks statistical validation. The large unexplained variance (69%) suggests other mechanisms or measurement error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C121"
+    ],
+    "result": "The authors conclude that gene expression asymmetries in fetal spinal cord are epigenetically regulated by miRNA expression asymmetries in the TGF-\u03b2 signaling pathway and lateralized methylation of CpG islands, with epigenetic processes accounting for a large part of the observed asymmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C9-C10, C121 make strong causal claims about epigenetic 'regulation' that are not supported by the correlative data. The study shows associations between methylation, miRNA, and gene expression asymmetries, but does not demonstrate causation. No functional experiments (e.g., methylation manipulation, miRNA knockdown) were performed. The majority of variance remains unexplained (69% at 8 weeks), and the small sample sizes preclude robust statistical inference about regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C11",
+      "C118",
+      "C131"
+    ],
+    "result": "The authors propose that spinal gene expression asymmetries, rather than cortical asymmetries, form the molecular basis of handedness, with a critical period before 10 weeks PC representing the starting point for handedness development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C5, C11, C118, C131 make sweeping conclusions about handedness ontogenesis that far exceed the data. The study shows gene expression asymmetries in fetal spinal cord but provides no direct link to handedness outcomes. No longitudinal data connecting fetal spinal asymmetries to later handedness are presented. The 'critical period' hypothesis (C131) is speculative, based on timing correlations with prior literature (C52-C59) rather than experimental evidence. The claim of a 'fundamental shift in understanding' (C11) is premature without functional validation or replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study analyzed genome-wide mRNA expression, miRNA expression, and DNA methylation in cervical and thoracic spinal cord segments (C2-T2) from five human fetuses at 8, 10, and 12 weeks post-conception, with appropriate ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C136-C142 accurately describe the study design and methodology. The ethical procedures were appropriate, the tissue collection was well-documented, and the analytical approaches (RNA-seq, miRNA-seq, bisulfite sequencing) were standard. The limitation to 5 samples (C139-C140) is acknowledged and justified by ethical constraints, though it remains a significant limitation for statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The TGF-\u03b2 superfamily includes Nodal and Lefty, key proteins for establishing left-right body asymmetry, and TGF-\u03b2 signaling has been directly linked to handedness through PCSK6, which encodes a protease that cleaves NODAL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 accurately cite established knowledge about TGF-\u03b2 signaling in left-right patterning and its connection to handedness candidate genes. These claims provide important biological context for interpreting the TGF-\u03b2 pathway enrichment findings (C98-C100) and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C130"
+    ],
+    "result": "Human fetuses show asymmetric arm movements beginning at 8 weeks post-conception (85% rightward bias), before the motor cortex is functionally connected to the spinal cord (which occurs at 15 weeks PC), implying that early handedness asymmetries arise from spinal rather than cortical control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52-C59, C130 accurately summarize well-established findings from prior literature about fetal motor asymmetries and the developmental timeline of corticospinal connectivity. The inference that early asymmetries must be spinally controlled (C58-C59) is logical given the anatomical constraints. This provides strong motivation for studying spinal gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior genetic studies of handedness have failed to identify single genes with large effects, with genome-wide association studies finding no significant SNPs, and twin studies suggesting only ~25% genetic contribution with ~75% from non-shared environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 accurately summarize the state of handedness genetics research, properly citing relevant GWAS and twin studies. This background effectively motivates the focus on epigenetic mechanisms and environmental factors in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Previous studies identified asymmetric gene expression in fetal cortex (27 genes at 12 weeks gestational age) and showed that Lmo4 asymmetry affects mouse paw preference, while adult brain studies yielded inconsistent results until reanalysis revealed asymmetries at the gene ontology level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 accurately summarize prior work on cortical gene expression asymmetries, providing appropriate context for the current spinal cord study. The citations are relevant and the summary is balanced, noting both positive findings and inconsistencies in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "DNA methylation and miRNAs are established epigenetic mechanisms that regulate gene expression and have been implicated in CNS development, with prior evidence linking LRRTM1 methylation to handedness and miRNAs controlling neuronal asymmetries in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide accurate background on epigenetic mechanisms relevant to the study, with appropriate citations. This establishes the biological plausibility of the study's focus on methylation and miRNA as regulators of spinal gene expression asymmetries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Comparative evidence from birds shows that epigenetic modulation during critical periods can induce motor and cognitive asymmetries, and anatomical studies show that right arm spinal segments have larger motoneurons than left segments, with fetal hand asymmetries at 14 weeks PC correlating with later handedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C132-C135 cite relevant comparative and anatomical evidence that supports the plausibility of spinal origins for handedness. The bird studies (C129) provide proof-of-principle for epigenetic induction of asymmetries, while the human anatomical data (C132-C135) show that spinal asymmetries exist and correlate with behavior.",
+    "result_type": "MINOR"
+  }
+]

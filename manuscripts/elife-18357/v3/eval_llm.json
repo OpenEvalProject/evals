@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A genome-wide siRNA screen was performed using nuclear translocation of Nrf1 as a readout, identifying 14 candidate genes that impair Nrf1 activation in response to bortezomib treatment. The screen used pooled siRNAs (4 per gene) in HEK293A cells, assessed nuclear/cytoplasmic Nrf1 ratios by high-content microscopy, and showed high robustness (Z'-factor > 0.5). Candidates were validated through secondary screens using individual siRNAs in two cell lines and tertiary screens measuring proteasome gene upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening methodology is well-described with appropriate controls (p97 as positive control, C26), robust statistical metrics (Z'-factor > 0.5, C27), and a multi-tiered validation strategy (C89, C90). The identification of known Nrf1 regulators SEL1L and FAF2 (C29, C30) validates the screening approach. The workflow from ~18,000 genes to 14 final candidates is systematic and appropriately stringent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The screen identified known Nrf1 pathway components (SEL1L and FAF2/UBXD8) and DDI2, which has a retroviral aspartyl protease domain making it a candidate Nrf1 processing enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of known Nrf1 regulators (SEL1L, FAF2) with established roles in ERAD validates the screening approach (C29, C30). DDI2's selection is justified by its protease domain structure (C31), providing a mechanistic rationale for further investigation. The citations support the prior knowledge claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C91"
+    ],
+    "result": "DDI2 knockdown partially inhibited nuclear translocation of Nrf1 and caused accumulation of full-length cytosolic Nrf1 upon bortezomib treatment, while p97 knockdown caused accumulation of glycosylated ER-luminal Nrf1. This suggests DDI2 is involved in converting full-length cytosolic Nrf1 to the processed active form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunoblotting data (C34-C40, Figure 2B) clearly distinguishes three Nrf1 forms (glycosylated, full-length, processed) and shows distinct phenotypes for DDI2 vs p97 knockdown. The accumulation of non-glycosylated full-length Nrf1 in DDI2 knockdown cells (C40) specifically implicates DDI2 in processing rather than retrotranslocation. The interpretation (C41) is well-supported by the differential effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C92",
+      "C93"
+    ],
+    "result": "Endoglycosidase H treatment demonstrated that Nrf1 accumulated in DDI2 knockdown cells is not N-glycosylated, while Nrf1 in p97 knockdown cells is glycosylated. This confirms DDI2 acts on cytosolic Nrf1 after retrotranslocation and deglycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Endo H sensitivity assay (C42-C44, Figure 2C) provides biochemical evidence distinguishing the subcellular location and processing state of Nrf1 in different knockdown conditions. The resistance of DDI2-accumulated Nrf1 to Endo H (C44) definitively shows it is cytosolic and deglycosylated, supporting DDI2's role in processing rather than earlier steps (C45, C46). The observation that deglycosylated Nrf1 migrates similarly to processed Nrf1 (C93) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C73",
+      "C74"
+    ],
+    "result": "The known Nrf1 cleavage site (Trp103-Leu104) conforms to the substrate specificity of retroviral aspartyl proteases, which typically cleave between hydrophobic residues. This is consistent with DDI2's RVP domain structure, which resembles HIV-1 protease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural and biochemical rationale is well-supported by citations (C47-C51). The cleavage site specificity argument (C49-C51) provides mechanistic plausibility for DDI2 as the Nrf1 protease. The comparison to proteasome specificity (C73) strengthens the argument by showing the cleavage site is more consistent with RVP than proteasome activity. All structural claims are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C94"
+    ],
+    "result": "Rescue experiments with siRNA-resistant DDI2 constructs showed that wild-type DDI2 restored Nrf1 processing, but protease-dead DDI2 (D252N) did not. A DDI2 mutant lacking the UBL domain only partially rescued the phenotype, suggesting both protease activity and the UBL domain are required for efficient Nrf1 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments (C54-C57, Figure 3B) provide strong evidence for DDI2's catalytic role through structure-function analysis. The D252N mutation targets the active site aspartate (C94), a standard approach for protease inactivation. The partial rescue by \u0394UBL (C57) suggests the UBL domain contributes to but is not absolutely required for activity. The experimental design with siRNA-resistant constructs is appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C95"
+    ],
+    "result": "CRISPR/Cas9-generated DDI2 knockout and D252N knock-in cell lines confirmed that loss of DDI2 or its catalytic activity causes accumulation of full-length Nrf1 rather than processed Nrf1 upon bortezomib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic validation using CRISPR/Cas9 (C95) eliminates off-target effects inherent to siRNA approaches. The consistent phenotypes in knockout and D252N knock-in cells (C60, C61) versus wild-type knock-in cells (C62) provide strong genetic evidence for DDI2's catalytic requirement. Figure 3C and Figure 3\u2014figure supplement 1 document the cell line generation and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DDI2 knockout strongly suppressed bortezomib-induced upregulation of proteasome subunit genes (PSMA3, PSMB5), and this defect was rescued by wild-type but not D252N DDI2. DDI2 deficiency also decreased basal proteasome gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR data (C63-C67, Figure 3D) demonstrate functional consequences of DDI2 loss on the Nrf1-mediated bounce-back response. The rescue by wild-type but not D252N DDI2 (C66, C67) confirms the catalytic requirement. Statistical significance is indicated (C64). The observation of decreased basal expression (C65) extends the finding beyond stress-induced activation. The interpretation (C68) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "DDI2 knockout and D252N knock-in cells showed significantly lower proteasome activity compared to wild-type DDI2 knock-in cells, suggesting DDI2 is involved in basal proteasome expression through its catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteasome activity assay (C70, Figure 3E) provides functional validation of the transcriptional changes. Statistical significance is indicated (p<0.01). The interpretation that DDI2 regulates basal proteasome levels (C71) is supported by both the activity data and the mRNA data (C65). The citation of prior work showing cell-type variation in Nrf1's basal role (C69) appropriately contextualizes the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C72"
+    ],
+    "result": "DDI2 is required to cleave and activate Nrf1, as demonstrated by reduced cleaved Nrf1, increased full-length cytosolic Nrf1, and poor proteasome upregulation in DDI2-deleted cells. These defects were restored by wild-type but not protease-defective DDI2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion (C6, C72) synthesizing multiple lines of evidence: knockdown/knockout effects (C7-C9), rescue experiments (C10, C11), and functional assays. The claim is well-supported by the comprehensive experimental approach including siRNA, CRISPR/Cas9, rescue experiments, biochemical assays, and functional readouts. All component claims are individually supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "DDI2 expression and localization are not induced by bortezomib treatment, and DDI2 appears active even without proteasome impairment, suggesting a specific activation mechanism under proteasome stress may not exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data showing no change in DDI2 mRNA (C76, Figure 2\u2014figure supplement 1A) or localization (C77, Figure 2\u2014figure supplement 1B) with bortezomib treatment are clearly presented. The inference that DDI2 is constitutively active (C78) is supported by the basal proteasome expression data (Figure 3D, E). However, the speculation that no activation mechanism exists (C79) is appropriately cautious\u2014absence of evidence is not evidence of absence. The claims are well-supported but the mechanistic interpretation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The UBL domain of DDI2 may facilitate Nrf1 processing by binding ubiquitinated proteins, which would be promoted by proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C81). While the citation about Ddi1p UBL binding ubiquitin (C80) provides precedent, and the partial rescue by \u0394UBL (C57) suggests the domain has a role, no direct evidence is provided that DDI2's UBL binds ubiquitinated Nrf1 or that this is enhanced by proteasome inhibition. This is a reasonable hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Whether DDI2 directly cleaves Nrf1 remains unknown, as in vitro reconstitution experiments with recombinant DDI2 and Nrf1 fragment failed to show cleavage. Additional factors may be required for in vitro activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge this limitation (C82) and report the negative in vitro result (C83). The speculation about required cofactors (C84) is reasonable given the complexity of the system. This honest reporting of a negative result and the gap in direct biochemical evidence is appropriate. The genetic and cellular evidence remains strong even without in vitro reconstitution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Understanding DDI2's mechanism and developing DDI2 inhibitors could improve cancer therapies by blocking compensatory proteasome synthesis during proteasome inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a translational speculation (C85, C86) based on the established role of the bounce-back response in attenuating proteasome inhibitor efficacy (C14). While the rationale is sound, no data are presented testing DDI2 inhibition in cancer models or showing that DDI2 inhibition enhances proteasome inhibitor efficacy. This is a reasonable future direction but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C75"
+    ],
+    "result": "The authors acknowledge tension with prior work suggesting the proteasome itself processes Nrf1, and speculate that proteasome activity may be required for DDI2 function or other factors involved in Nrf1 processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge conflicting prior literature (C96) and offer a speculative reconciliation (C75). This demonstrates scientific integrity in addressing contradictory findings. The speculation is reasonable but untested. The substrate specificity argument (C73, C74) provides some support for DDI2 over proteasome as the direct protease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establish that Nrf1 is an ER-resident transcription factor that is retrotranslocated and degraded by the proteasome under normal conditions, but upon proteasome inhibition escapes degradation, is cleaved to become active, and upregulates proteasome genes. The processing enzyme was previously unknown, and identifying it could improve cancer therapies using proteasome inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background claims (C1-C4, C12-C22) appropriately cited from prior literature. The knowledge gap (C5) motivates the study. The therapeutic rationale (C13-C15) is well-established. These claims provide appropriate context and are not novel findings of this study but are accurately represented.",
+    "result_type": "MINOR"
+  }
+]

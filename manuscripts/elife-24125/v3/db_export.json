@@ -1,0 +1,1778 @@
+{
+  "submission": {
+    "id": "2d038acb-adaa-469f-9e04-dd3f66b97c51",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:05:03.757998Z",
+    "updated_at": "2025-11-30T23:05:03.757998Z"
+  },
+  "content": [
+    {
+      "id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "submission_id": "2d038acb-adaa-469f-9e04-dd3f66b97c51",
+      "content_type": "manuscript",
+      "content_text": "# Phloem unloading in Arabidopsis roots is convective and regulated by the phloem-pole pericycle\n\n## Authors\n\n- Timothy J Ross-Elliott<sup>1</sup> ([ORCID: 0000-0002-0991-9588](https://orcid.org/0000-0002-0991-9588))\n- Kaare H Jensen<sup>2</sup> ([ORCID: 0000-0003-0787-5283](https://orcid.org/0000-0003-0787-5283))\n- Katrine S Haaning<sup>2</sup>\n- Brittney M Wager<sup>1</sup> ([ORCID: 0000-0001-9679-659X](https://orcid.org/0000-0001-9679-659X))\n- Jan Knoblauch<sup>1</sup> ([ORCID: 0000-0002-8952-3961](https://orcid.org/0000-0002-8952-3961))\n- Alexander H Howell<sup>1</sup> ([ORCID: 0000-0001-6735-0660](https://orcid.org/0000-0001-6735-0660))\n- Daniel L Mullendore<sup>1</sup>\n- Alexander G Monteith<sup>3</sup> ([ORCID: 0000-0003-1731-0446](https://orcid.org/0000-0003-1731-0446))\n- Danae Paultre<sup>4</sup>\n- Dawei Yan<sup>5</sup> ([ORCID: 0000-0001-8256-0279](https://orcid.org/0000-0001-8256-0279))\n- Sofia Otero<sup>5</sup> ([ORCID: 0000-0001-9409-8544](https://orcid.org/0000-0001-9409-8544))\n- Matthieu Bourdon<sup>5</sup>\n- Ross Sager<sup>6</sup>\n- Jung-Youn Lee<sup>6</sup>\n- Yk\u00e4 Helariutta<sup>5</sup>\n- Michael Knoblauch<sup>1</sup> ([ORCID: 0000-0003-0391-9891](https://orcid.org/0000-0003-0391-9891)) \u2020\n- Karl J Oparka<sup>4</sup> ([ORCID: 0000-0002-8035-5076](https://orcid.org/0000-0002-8035-5076)) \u2020\n\n### Affiliations\n\n1. School of Biological Sciences Washington State University Pullman United States\n2. Department of Physics Technical University of Denmark Lyngby Denmark\n3. Department of Biological and Medical Sciences Oxford Brookes University, Headington Oxford United Kingdom\n4. Institute of Molecular Plant Science University of Edinburgh Edinburgh United Kingdom\n5. Sainsbury Laboratory University of Cambridge Cambridge United Kingdom\n6. Department of Plant and Soil Sciences, Delaware Biotechnology Institute University of Delaware Newark United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn plants, a complex mixture of solutes and macromolecules is transported by the phloem. Here, we examined how solutes and macromolecules are separated when they exit the phloem during the unloading process. We used a combination of approaches (non-invasive imaging, 3D-electron microscopy, and mathematical modelling) to show that phloem unloading of solutes in Arabidopsis roots occurs through plasmodesmata by a combination of mass flow and diffusion (convective phloem unloading). During unloading, solutes and proteins are diverted into the phloem-pole pericycle, a tissue connected to the protophloem by a unique class of \u2018funnel plasmodesmata\u2019. While solutes are unloaded without restriction, large proteins are released through funnel plasmodesmata in discrete pulses, a phenomenon we refer to as \u2018batch unloading\u2019. Unlike solutes, these proteins remain restricted to the phloem-pole pericycle. Our data demonstrate a major role for the phloem-pole pericycle in regulating phloem unloading in roots.\n\n## Introduction\n\nIn plants, the products of photosynthesis in green tissues are delivered by the phloem to distant organs where they are utilized in growth or storage (Turgeon and Wolf, 2009; De Schepper et al., 2013). Modern agriculture aims to maximize the amounts of carbon-based products allocated to storage organs such as grains and tubers, structures that act as carbon \u2018sinks\u2019 for the assimilates delivered by the phloem. The process by which solutes exit the phloem is termed phloem unloading, and is a central target for regulating the flux of carbon into sink tissues (Ham and Lucas, 2014). In addition to assimilates, phloem sap also contains numerous proteins and RNAs (Kehr, 2006; Atkins et al., 2011; Batailler et al., 2012; Turnbull and Lopez-Cobollo, 2013). Unloading must therefore combine the seemingly antagonist functions of high selectivity with large permeability in order to allocate assimilates to growth zones while controlling the movement of macromolecules. The mechanisms that enable the precise and coordinated unloading of phloem-mobile compounds remain unknown.\n\nSolute flow occurs through sieve elements (SEs), elongated cells connected to each other by perforated end walls called sieve plates. During differentiation SEs lose most of their cellular components, including their nucleus (Oparka and Turgeon, 1999; Furuta et al., 2014). Ontogenetically related, metabolically active companion cells (CCs) support the adjacent enucleate SEs throughout their lifespan (Lucas et al., 1996; Pritchard, 1996; van Bel and Knoblauch, 2000; Lalonde et al., 2001; Otero and Helariutta, 2017). The pressure flow model of phloem transport, originally proposed by M\u00fcnch (1930), envisages that an osmotically generated pressure differential drives the\u00a0bulk flow through the SEs that connect photosynthetic tissues (sources) with those in which carbon consumption occurs (sinks). The loading of solutes in source tissues results in a high osmotic potential within SEs. The reduction of turgor pressure in sink organs due to carbon consumption leads to a pressure gradient that provides the energy to overcome viscous resistance within the SEs, resulting in a passive phloem flow from source to sink (M\u00fcnch, 1930). Phloem sap collected from excised aphid stylets contains a complex mixture of macromolecules and low-molecular weight solutes (Atkins et al., 2011). In a recent study, Paultre et al. (2016) showed that many proteins, including those with targeting sequences, can move across a graft union and be unloaded near the root tip. Significantly, these proteins entered a post-phloem domain beyond which their movement was restricted. This observation begs the question as to how the phloem is able to discriminate between macromolecules and solutes during unloading. Besides the central function in resource allocation, it is now well established that the phloem also serves as network for transmission of chemical (Kramer and Boyer, 1995a; Mullendore et al., 2015) and electrical (Hedrich et al., 2016) signals.\n\nPhloem unloading in actively growing tissues such as the shoot or root apex occurs through the protophloem, a transient tissue that connects the conducting phloem with the receiver cells in sink tissues (Oparka et al., 1994). Initial investigations of phloem unloading in the root tip of Arabidopsis (Oparka et al., 1994, 1995; Wright and Oparka, 1996) provided evidence that unloading occurs through plasmodesmata (PD), the specialized pores that connect plant cells. Due to cell division and growth in the apical region of the root the demand for assimilates is high. Protophloem sieve elements (PSEs) become mature in such regions to accommodate this demand while the neighboring cells are still differentiating (Furuta et al., 2014). Because PSEs lose their nucleus, they cannot divide to keep pace with the growth of the neighboring cells. Therefore, they become increasingly elongated until they become inactive in transport and eventually obliterated (Erwin and Evert, 1967; Eleftheriou and Tsekos, 1982; Furuta et al., 2014). In the elongation zone of the root, solutes are transferred laterally from the metaphloem SEs (MSEs) to the PSEs, allowing phloem continuity between source and sink tissues (Stadler et al., 2005; Winter et al., 1992).\n\nA currently favored hypothesis of phloem unloading is the \u2018high-pressure manifold model\u2019 proposed by Fisher (2000), recently evaluated by Patrick (2013). A central element of this model is that a low pressure gradient occurs along the flow path, with a steep drop in pressure between the PSEs and surrounding cells in the phloem unloading zone. In this scenario, allocation of carbon is controlled by the lateral hydraulic conductance in the unloading zone. Recent phloem turgor measurements in morning glory, however, did not support this model, as the bulk of the pressure is consumed by friction within the SEs, and only small pressure gradients are available for unloading (Knoblauch et al., 2016). The Fisher (2000) model also does not explain how both small solutes and macromolecules can leave the phloem simultaneously. Paultre et al., 2016 suggested recently that the removal of mobile proteins into a post-phloem domain may be necessary to prevent the terminal PSEs from becoming occluded, an event that would lead to dissipation of the turgor gradient between source and sink. Unfortunately, many of the factors that determine phloem unloading are not well studied. This is because the phloem in most sinks is difficult to access as it is embedded in an opaque layer of tissue. Phloem transport ceases immediately when the source is detached from the sink. Therefore, the function of the phloem can only be studied in situ, requiring new approaches for dissecting the factors that regulate phloem unloading.\n\nThe many unknowns surrounding phloem unloading in plants prompted us to conduct a detailed structure/function study of the terminal PSEs in the phloem unloading zone which, in Arabidopsis, is amenable to non-invasive imaging (Oparka et al., 1994; Knoblauch et al., 2015). We combined a detailed ultrastructural analysis of the cellular interfaces in the phloem unloading zone with the kinetics of phloem unloading of fluorescent solutes and macromolecules obtained by real-time imaging of growing roots. This analysis allowed us to derive new quantitative data on the factors that regulate phloem unloading in Arabidopsis. We report on the presence of a unique class of \u2018funnel plasmodesmata\u2019 that are involved specifically in the unloading of molecules into the phloem-pole pericycle. We show, by mathematical modelling, that phloem unloading of small solutes from PSEs is convective, i.e. it occurs continuously by a combination of mass flow and diffusion. In contrast, we find that macromolecules are unloaded in discrete pulses, a phenomenon we refer to as \u2018batch unloading\u2019. These macromolecules are diverted specifically into the two phloem-pole pericycle cells that abut each PSE where they are filtered out from the unloaded solutes.\n\n## Results\n\n### Calculating the dimensions of the phloem unloading zone using phloem-mobile probes\n\nIn Arabidopsis roots, phloem unloading occurs exclusively from the protophloem, a short-lived tissue that is functional in the zone of root elongation (Oparka et al., 1994). Published images of phloem unloading in Arabidopsis give the impression that the unloading zone is a relatively broad region (Oparka et al., 1994; Wright and Oparka, 1996; Knoblauch et al., 2015). However, such images represent a \u2018snapshot\u2019 of unloading, taken at a defined time point following the application of fluorescent solutes to the leaf. Carboxyfluorescein diacetate (CFDA) is the most widely utilized phloem-mobile probe (Oparka et al., 1994; Wright and Oparka, 1996; Knoblauch and van Bel, 1998). This probe is non-fluorescent when applied to source leaves but is subsequently cleaved by endogenous esterases to produce fluorescent, membrane-impermeant, carboxyfluorescein (CF; Knoblauch et al., 2015). The dye travels with the phloem translocation stream to sink tissues, where it can be visualized (Figure 1A). When studied in real time, the dye characteristically shows preferential movement outwards into the cortex relative to the stele (Figure 1A; see also Oparka et al., 1994). Unloading of the dye in the root tip indicates a symplastic (plasmodesmata-mediated) pathway (Oparka et al., 1994; Wright and Oparka, 1996; Knoblauch et al., 2015). The cells in the unloading zone sequester the dye rapidly into their vacuoles where it becomes trapped. This results in an increasing fluorescence within cells over time (Wright and Oparka, 1996). Due to root growth, the cells initially involved in unloading move out of the phloem-unloading zone basipetally, but maintain their fluorescence due to the presence of dye in their vacuoles. Therefore, the apparent unloading zone broadens over time as root growth progresses, obscuring the current site of unloading. We therefore sought to define precisely the dimensions of the true phloem-unloading zone.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig1-v3.jpg)\n\n**Figure 1.:** (A) 2D optical section of unloading of CFDA in the root tip. The two protophloem files leading into the root tip are shown (solid arrows) and sequestration of CFDA into the vacuoles is apparent (dashed arrows). (B) Unloading of esculin (blue) in the root tip of a transgenic Arabidopsis line expressing GFP (green) targeted to the ER lumen of the PSE (pMtSEO2::GFP5-ER). Esculin escapes the protophloem file (solid arrow) into the cytoplasm of neighboring cells (open arrow). In contrast to CFDA, esculin is only sequestered in the vacuoles at high concentrations (dashed arrow). (C\u2013E) Three frames extracted from Video 1. (C) GFP targeted to the ER lumen of PSEs demarcates the nuclear membrane of young sieve elements that have not yet been integrated into the unloading zone (solid arrows). Dashed arrows indicate two degrading nuclei in cells that are already filled with esculin (blue) (also for D and E). (D) Degradation of the nucleus (yellow arrow) coincides with the\u00a0opening of the sieve-plate pores, allowing esculin (blue) to enter the cell. This defines the new PSE zero. (E) As nuclear degradation continues, the sieve element becomes an integral member of the phloem unloading zone.\n\nEsculin is a naturally fluorescent, glucosylated coumarin derivative recently introduced as phloem-mobile probe (Knoblauch et al., 2015). Unlike CFDA, it is loaded into the phloem by the sucrose transporter, SUC2, in the CCs of source tissues (Gora et al., 2012; Knoblauch et al., 2015). Sequestration of this probe is minimal and occurs only when high concentrations of the probe are applied (Figure 1B). This feature allows for extended acquisition of time-lapse movies. Unlike CF, esculin can also be detected clearly in lines expressing GFP (Knoblauch et al., 2015).\n\nTo define the developmental stage at which differentiating PSEs become integrated into the unloading zone, we used transgenic Arabidopsis lines expressing GFP targeted to the sieve-element ER (HDEL-GFP) under control of the MtSEO2 promoter, a SE-specific promoter (Froelich et al., 2011; Knoblauch and Peters, 2010); Figure 1B\u2013E). This transgenic line clearly demarcates PSEs in the early stages of differentiation and is an excellent marker of the nuclear membrane (Figure 1C\u2013E). We loaded source leaves of this line with esculin and acquired time-lapse movies of unloading in the terminal PSEs. Esculin did not enter differentiating PSEs that were symplastically isolated from the rest of the protophloem file. These cells still had a fully intact nuclear membrane (Figure 1C, Video 1). Once the nuclear membrane started to degenerate the sieve-plate pores opened rapidly, allowing esculin to enter the cell, which then became an integral member of the protophloem-unloading zone (Figure 1D and E). For convenience of reference, we refer to this protophloem cell as \u2018PSE zero\u2019 (yellow dashed arrow in Figure 1D). Remnants of the nuclear membrane remained for some time in PSEs that had been newly incorporated into the phloem-unloading zone (Figure 1C\u2013E). These observations can be seen in Video 1. Our data suggest that nucleate, differentiating PSEs are isolated from the translocation stream. However, the\u00a0degeneration of the nucleus and the\u00a0opening of the sieve-plate pores are closely related events that lead to incorporation of PSE zero into the phloem-unloading zone. At this point the cell becomes competent to unload solutes (Figure 1C\u2013E; Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/24125/elife-24125-media1.mp4.jpg)\n\n**Video 1.:** An Arabidopsis line with GFP tagged ER (green) in the protophloem sieve elements is loaded with Esculin (blue). When the nucleus in the sieve element degrades, sieve plate pores open and the blue Esculin enters the cell. This integrates the cell into the unloading zone and defines a new PSE zero.\n\nIn order to acquire functional data on the dimensions of the unloading zone, we conducted flow velocity measurements in individual PSE files using fluorescence recovery after photobleaching (FRAP; Froelich et al., 2011). Phloem flow velocities in the terminal region of the root (basipetal to the unloading zone) are in the range of 25 \u00b5m/s (Froelich et al., 2011). In this study, we photobleached CF after it had arrived in the phloem unloading zone of the root. In a tube of constant diameter and impermeable walls, the flow velocity is constant. When the walls become leaky, the flow velocity decreases because of loss of fluid. In the case of the protophloem, the tube becomes leaky when unloading occurs. To define the size of the unloading zone, we measured flow velocity along the phloem files and found that deceleration started at about 300\u2013400 \u00b5m behind PSE zero (this dimension varied slightly, even within the two sieve tube files in the same root tip; Figure 2). Our data revealed that the phloem of the root is subdivided into distinct structural and functional domains. Translocation into the main root occurs through the metaphloem. In the elongation zone of the root, the metaphloem overlaps with the mature protophloem file, at which point solutes are transferred laterally from the metaphloem to the protophloem (\u2018transfer zone\u2019; Figure 2). Movement then occurs through the protophloem towards the root tip (\u2018protophloem translocation zone\u2019; Figure 2) and subsequently into the terminal functional PSEs (\u2018protophloem unloading zone\u2019), at which point solutes are distributed laterally into the root tip. Apical to this zone lies the \u2018protophloem differentiation zone\u2019 that, as described above, plays no role in phloem unloading (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig2-v3.jpg)\n\n**Figure 2.:** The graph represents experimentally derived velocities at defined points relative to the terminal sieve element (PSE zero) in the protophloem unloading zone. Error bars show standard deviation of the mean (n\u00a0=\u00a08).\n\n### Callose deposition demarcates the protophloem translocation zone\n\nArabidopsis roots grow at speeds of about 100\u2013150 \u00b5m per hour (Beemster and Baskin, 1998). Consequently, after the sieve-plate pores open, a single PSE in the phloem unloading zone is active in unloading for only about 2\u20134 hr. Initially, cellular remnants such as the nuclear membrane, ribosomes and tonoplast are degraded and removed from the PSE. Subsequently, the PSEs become physically stretched in the elongation zone and finally move into an area that is active in translocation but inactive in unloading (\u2018protophloem translocation zone\u2019; Figure 2). The PSEs that progress basipetally from the phloem unloading zone into the protophloem translocation zone must undergo a rapid cellular transformation, particularly in the PD on their lateral walls. However, the structural alterations that control the cessation of unloading are not known.\n\nCallose is deposited in the neck region of plasmodesmata and restricts the size exclusion limit of the pore in response to various stimuli (Luna et al., 2011; Nakashima et al., 2003; Radford et al., 1998). To investigate if callose was involved in occluding PD in the translocation zone, we stained roots of intact seedlings with Sirofluor (Evans et al., 1984; Vat\u00e9n et al., 2011). This fluorochrome has a strong affinity for callose and demarcates sieve plates and PD in developing cell walls (Stone et al., 1984; Vat\u00e9n et al., 2011); Figure 3). The two protophloem files could be visualized easily with this stain (Figure 3A and B) and individual lateral PD were identified in the phloem unloading zone (Figure 3C and D). At the junction of the phloem unloading zone with the phloem translocation zone, callose deposits on the PSE wall increased in number (Figure 3E) until significant parts of the PSE walls were covered in callose (Figure 3F). This deposition of callose along the lateral walls of PSEs in the protophloem translocation zone correlated with the reduction in flow we observed in dye-loading experiments and may provide a structural basis for the functional isolation of this zone.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig3-v3.jpg)\n\n**Figure 3.:** Low magnification images showing the relatively strong fluorescence at sieve plates (arrows). (C\u2013F) Higher magnification images at the locations indicated by boxes in (B). Individual plasmodesmata are resolved in the unloading zone (C, D). In the translocation zone, large deposits of callose are abundant (E, F).\n\n### Unloading of solutes and proteins involves a cellular division of labor\n\nAs well as sugars and amino acids, a large number of macromolecules including nucleic acids, and proteins occur in various amounts in the translocation stream (Fukumorita and Chino, 1982; Kehr, 2006; Turnbull and Lopez-Cobollo, 2013). Many of these may access the phloem sap via companion cells (CCs; Paultre et al., 2016). In addition, when new SEs develop in source regions of the plant, remnants of the nucleus, ribosomes, and tonoplast pass into the translocation stream. In both these scenarios, macromolecules must be removed from the terminal PSEs involved in unloading or they would impede the process of phloem unloading (Paultre et al., 2016). While small solutes and GFP (Stokes radius 2.82 nm; Terry et al., 1995) are unloaded from the PSEs into surrounding cells (Imlau et al., 1999), larger proteins unloaded from the PSE enter a unique post-phloem domain (Stadler et al., 2005; Paultre et al., 2016) and cannot cross the interface between the pericycle and endodermis (Paultre et al., 2016). We therefore sought to identify this domain as well as the routes taken by solutes and macromolecules during the unloading process.\n\nIn Arabidopsis, the root protophloem file is surrounded by five distinct cell files (Figure 4A and B). One immature metaphloem sieve element (MSE), located towards the center of the root, is in contact with the PSE. Two CCs, one to the left and one to the right, share a common cell wall area with the PSE and MSE, respectively. The complex is capped by two phloem pole pericycle (PPP) cell files (Figure 4A and B) that share cell walls with both the PSE and CCs. Small probes of the dimensions of sugars and amino acids (CFDA, esculin), and small proteins (GFP) move from cell to cell throughout the entire root tip without noticeable barriers (Figure 1; Oparka et al., 1994; Stadler et al., 2005; Wright and Oparka, 1996). However, translocated proteins of CC origin, are restricted to cells immediately adjacent to the mature protophloem file (Stadler et al., 2005; Paultre et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig4-v3.jpg)\n\n**Figure 4.:** (A, B) TEM images showing a cross section of an Arabidopsis root unloading zone. (A) An overview of the central cylinder with phloem pole pericycle cells (PPP), endodermis (EN), companion cells (CC), metaphloem sieve element (MSE), and protophloem sieve element (PSE). (B) TEM image of the pentagonal organization of cells surrounding the protophloem file. (C) Confocal micrograph of a transgenic Arabidopsis line expressing SEOR-YFP protein (yellow) and GFP targeted to the sieve element ER (green), both under control under a sieve element specific promoter. While GFP is restricted to the ER of the PSE (solid arrow), SEOR-YFP expressed into the cytoplasm escapes into two neighboring cell files (dashed arrow). (D, E) Root cross section of a fixed and embedded transgenic Arabidopsis plant expressing SEOR-YFP protein. The micrograph identifies the two cell files into which SEOR-YFP escapes as the PPP F, (G) Two confocal micrographs extracted from Video 2 showing SEOR-YFP protein (yellow) in the PPP and PSE. New PPP cells become fluorescent as unloading progresses. Note that small aggregates of SEOR-YFP become increasingly larger basipetal to the unloading zone. (H) Confocal micrograph of a transgenic Arabidopsis line expressing GFP (green) in the nuclei of companion cells (solid arrows) and SEOR-YFP. The nuclei in the CCs do not match the location of the nuclei in the cell files containing SEOR-YFP (dashed arrows), providing further evidence that the two files are the PPP. (I, J) Root tip of a grafted Arabidopsis plant in which the rootstock was wildtype and the scion expressed SEOR-YFP in the shoot. The root was imaged at 10 days after grafting and shows clearly that SEOR-YFP protein has moved from shoot to root, with subsequent unloading into the PPP. Scale Bars; B\u00a0=\u00a01 \u00b5m; F, G\u00a0=\u00a05 \u00b5m; C, D, E, H\u00a0=\u00a010 \u00b5m; I, J\u00a0=\u00a050 \u00b5m.\n\n### The phloem-pole pericycle (PPP) is the repository for unloaded macromolecules\n\nTo monitor the fate of different phloem cargos, we compared the phloem-unloading pathway of small fluorescent probes (Knoblauch et al., 2015) with fluorescent fusion proteins (Froelich et al., 2011; Stadler et al., 2005), covering a molecular mass range of 340 Da to more than 100 kDa. Experiments were conducted in situ on living roots. As shown before, small probes were unloaded laterally towards the cortex and subsequently distributed amongst all root cells (Figure 1). Large probes of CC origin, however, were restricted to a specific domain (Figures 4 and 5). We wished to determine if proteins synthesized within SEs, rather than CCs, would show a similar pattern of unloading. Accordingly, we generated a transgenic Arabidopsis line expressing the Sieve Element Occlusion Related (SEOR) protein (Froelich et al., 2011; P\u00e9lissier et al., 2008) fused to YFP (SEOR-YFP). This protein is generated exclusively in young sieve elements and remains a structural component after maturation of the cell and its integration into the translocating sieve tube file. We crossed this line with a second reporter line in which HDEL-GFP was targeted to the ER (Figure 1). Both these fluorescent fusions were generated under the sieve-element specific promoters pSEOR; pMtSEO2. The promoters are active in young sieve elements only, but the gene products remain as structural components in mature sieve tubes (P\u00e9lissier et al., 2008; Froelich et al., 2011). GFP demarcated clearly the ER of the PSEs (Figures 1 and 4). Unlike HDEL-GFP, the signal from the SEOR-YFP fusion (112 kDa), which is expressed in the cytoplasm of immature SEs, was not restricted to SEs but entered two specific cell files significantly larger than the adjacent PSEs, and did not travel outward beyond this domain (Figure 4C). We used resin embedding of the phloem-unloading zone (Bell et al., 2013) to localize the YFP signal in transverse sections of the root. The YFP signal was confined to the two large PPP cells that abut the PSE files (Figure 4D and E). Time-lapse movies of the phloem unloading zone supported this observation (Figure 4F and G; Video 2). Initially, SEOR-YFP was detected only in the immature PSEs as small aggregates. Subsequently, groups of new PPP cells became fluorescent adjacent to the PSEs, presumably when PD connections opened up between the two cell types (Figure 4F and G). Using a fluorescent marker for CC nuclei (Zhang et al., 2008) we were unable to detect phloem unloading of SEOR-YFP into CCs, only into the PPP (Figure 4H,I). This result was unexpected as most models of phloem unloading assume that the exit\u00a0of macromolecules occurs through CCs (Patrick, 1997; Thorne, 1985).\n\n![Video 2.](https://cdn.elifesciences.org/articles/24125/elife-24125-media2.mp4.jpg)\n\n**Video 2.:** During root growth, new PPP cells are integrated into the unloading domain as indicated by tagged protein entering the cells, presumably due to the opening of connecting plasmodesmata.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013F) six frames taken from Video 3. A) The unloading zone was photobleached (boxed region). Refilling of the unloading zone shows that GFP exits the PSE in discrete batches (arrows in B). Over time, all cells in the root transported GFP until an even distribution of the fluorescent protein was reinstated (C\u2013F). (G\u2013J) Compared to GFP (27 kDa), aequorin-GFP (48 kDa) was batch unloaded but did not move beyond the PPP. (K\u2013N) Four frames extracted from Video 4 showing batch unloading of SEOR-YFP (112 kDa). In contrast to the CC-expressed GFP probes, SEOR-YFP was expressed in young sieve elements and entered the translocation stream when the sieve-plate pores opened. The immature PSEs are indicated (dashed arrow) and PPP cells are visible (open arrow). When SEOR-YFP aggregates arrive in the phloem unloading zone, they are batch unloaded from the terminal PSEs (solid arrows). As the root continues to extend, the aggregates enlarge and eventually disappear (see also Figure 4F,G and Videos 2 and 4), probably due to their breakdown in the older PPP cells.\n\nIt was possible that SEOR-YFP was delivered directly to the PPP from neighboring immature PSEs in the root, rather than by long-distance transport of the protein from the shoot. To test if the latter occurred, we grafted SEOR-YFP scions onto non-transgenic rootstocks. 10 days after grafting, the roots of the grafted plants were indistinguishable from those of the native SEOR-YFP line (Figure 4I,J), demonstrating that SEOR-YFP protein, synthesized in SEs of the shoot, is unloaded from PSEs into the PPP.\n\n### Batch unloading of proteins\n\nTo monitor the unloading of large proteins in real time, we used the transgenic lines pAtSUC2-GFP (27 kDa), pAtSUC2-ubiquitin-gfp (36 kDa), pAtSUC2-aequorin-gfp (48 kDa),, and pAtSEOR-AtSEOR-yfp (112 kDa; described above) and conducted fluorescence recovery after photobleaching (FRAP) experiments. Time-lapse movies revealed that unloading of large probes (GFP 27 kDa and above) did not occur at a constant rate, as observed with small solutes. Rather, these proteins were suddenly released into the adjoining PPP cells in distinct pulses (Figure 5, Video 3). We refer to this phenomenon as \u2018batch unloading\u2019, as the proteins are delivered in discrete pulses into individual cells. These cells then became highly fluorescent relative to their neighbors. Batch unloading did not occur at the same time into all cells, but independently into individual cells (Figure 5; Video 3). It appears that specific domains exist in the root tip that confer a size-dependent filtration of the macromolecules that arrive in the unloading zone. Small proteins such as GFP were batch unloaded and subsequently moved freely throughout the root (Figure 5A\u2013F). However, large probes such as aequorin-GFP and SEOR-YFP became trapped inside the PPP after batch unloading (Figure 5G\u2013J;\u00a0Video 4).\n\n![Video 3.](https://cdn.elifesciences.org/articles/24125/elife-24125-media3.mp4.jpg)\n\n**Video 3.:** In situ time lapse movie of a transgenic line constantly supplying GFP into SEs via leakage from CCs where GFP is expressed under control of the SUC2 promoter. After photobleaching of GFP in the unloading zone, refilling reveals that GFP is unloading in batches into individual cells from where it diffuses into the post unloading zone.\n\n![Video 4.](https://cdn.elifesciences.org/articles/24125/elife-24125-media4.mp4.jpg)\n\n**Video 4.:** SEOR-YFP protein is expressed in young sieve elements and remains as aggregates in the sieve elements after degradation of the nucleus. The time-lapse movie shows batch unloading of this large protein into the PPP.\n\n### Specific induction of callose in the PPP blocks phloem unloading\n\nTo further test the role of the PPP in phloem unloading we inhibited the lateral movement of solutes into this cell layer using an inducible callose synthase system (Vat\u00e9n et al., 2011). In this approach a modified, PD-specific, callose synthase (icals3m) is induced under estradiol treatment, inhibiting cell-cell movement into the induced cell layer of the root (Vat\u00e9n et al., 2011). In Arabidopsis there are twelve CalS proteins, with diverse roles in callose production (Chen and Kim, 2009). During the course of this study, we found that CalS8 is expressed specifically in the PPP (Figure 6A,B), allowing us to generate an estradiol-inducible line expressing icals3m under the CalS8 promoter (pCALS8::icals3m). This line was generated specifically to block the connection between PSEs and the PPP. After callose induction we observed a significant arrest in primary root growth relative to roots that were transferred to a non-inducing medium (Figure 6\u2014figure supplement 1). Next we labelled the cotyledons of induced and non-induced pCALS8::icals3m roots with CF at 8 hr and 24 hr after callose induction. Control roots showed the characteristic unloading pattern of wild-type plants (Figure 6C, n\u00a0=\u00a022) while induced plants showed a severe restriction in phloem unloading. At 8 hr induction, CF was restricted to PSE files with minimal lateral unloading into the root (Figure 6D, n\u00a0=\u00a020). At 24 hr induction, this effect was even stronger. CF did not enter the unloading zone and remained completely restricted to PSEs distal to the unloading zone (Figure 6E, n\u00a0=\u00a09). To determine the potential role played by CCs in phloem unloading, we used the sister of apple (sAPL) promoter to drive the production of the mutant CALS3 protein (psAPL::icals3m). We chose this promoter as other CC-specific promoters (e.g. SUC2) were expressed only weakly within the phloem-unloading zone (data not shown). Within the phloem unloading zone the psAPL promoter was expressed strongly in CCs and MSE, but not in the PPP (Figure 6F,G). As above, CF transport in these seedlings was monitored at 8 hr and 24 hr after estradiol induction. At both time points CF was unloaded without restriction, and induced and non-induced seedlings showed an identical pattern of unloading (Figure 6H\u2013J, n\u00a0=\u00a03, n\u00a0=\u00a03, n\u00a0=\u00a02, respectively). Furthermore, we found that callose induction in the psAPL::icals3m seedlings did not significantly affect root growth relative to the uninduced control plants (Figure 6\u2014figure supplement 1). To confirm that callose synthase was overexpressed in the predicted cell layers, roots were fixed, embedded and stained for callose after the CF transport assays. Control roots showed the characteristic callose labelling associated with PSE files (Figure 6K; see also Figure 3). Confocal imaging of pCALS8::icals3m seedlings confirmed that callose was deposited strongly in the PPP relative to other cells surrounding the PSE files (Figure 6L\u2013O), while psAPL::icals3m roots showed strong callose labelling in the CC files, as predicted (Figure 6\u2014figure supplement 6P\u2013S). Collectively, these data provide strong evidence that phloem unloading occurs predominantly via the PPP, not CCs, and suggest that the PD between PSE and PPP are central players in the unloading process.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig6-v3.jpg)\n\n**Figure 6.:** (A) pCALS8::ER-YFP is expressed exclusively in the PPP. (B) Transverse optical section of A. (C) CF unloading in a control root expressing pCALS8::icals3m transferred to non-inducing medium. Unloading progresses as in wild-type roots. (D) CF unloading is restricted to the PSE files in pCALS8::icals3m roots at 8 hr after callose induction in the PPP. (E) As D but at 24 hr post-callose induction in the PPP. (F) psAPL promoter expression (psAPL-GFP) is restricted to CCs and MSE. (G) Transverse optical section of F. (H) CF unloading in a control root expressing psAPL::icals3m transferred to non-inducing medium. (I) CF unloading is not restricted in psAPL::icals3m roots at 8 hr after callose induction in CCs. J) As I but at 24 hr post-callose induction in CCs. (K) Sirofluor staining of a control root showing general background staining of PD around PSE files. L) Sirofluor staining of a pCALS8::icals3m root at 8 hr after callose induction in the PPP. (M) Sirofluor staining of a pCALS8::icals3m root at 24 hr after callose induction. In both L and M the roots were stained immediately after CF transport. (N) Callose immunolabelling (green) of a pCALS8::icals3m root at 8 hr after callose induction in the PPP. Cell walls are labelled red. (O) As N but at 24 hr after callose induction. (In addition to the PPP, sometimes callose staining is also observed in the CC). (P) Sirofluor staining of a psAPL::icals3m root at 8 hr after callose induction in CCs. (Q) As P but at 24 hr after callose induction. (R) Callose immunolabelling (green) of a psAPL::icals3m root at 8 hr after callose induction in CCs. (In addition to the CC, callose staining was sometimes observed in the MSE). Cell walls were counterstained with calcofluor white (labelled red). S) As R but at 24 hr after callose induction. Scale bars: N, O, R, S: 5 um. A, B, F, G, K, L, M, P, Q: 10 um. C, D, H, I, J: 50 um. E, J: 100 um. Abbreviations as in Figure 4.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Seedlings were transferred to inducing or non-inducing media at 4 days post germination. For pCALS8::icals3m each time point is the average of 82 independent measurements. For psAPL::icals3m each time point is the average of 67 independent measurements. Bars show standard error of the mean.\n\n### A PD-based molecular filter regulates phloem unloading\n\nIn order to understand the structural basis for the differential filtration of molecules in the unloading zone, we investigated the ultrastructure of PD at all cell interfaces between the protophloem file and its five interconnecting cells (See Figure 4A and B). We found different PD types in the unloading zone (Figure 7A). PD between the PSE and MP were simple, or occasionally branched (Figure 7B). Between PSEs and CCs, PD displayed the typical single pore on the PSE side and multiple branches towards the CC (Figure 7C), as shown often for connections between SEs and CCs in other tissues (Esau and Thorsch, 1985; Oparka and Turgeon, 1999). The structure of most of the PD between PSE and PPP, however, was quite different and showed an architecture not previously described. In addition to a few simple PD (10%; n\u00a0=\u00a020), funnel-shaped PD with apertures of up to 300 nm diameter were found at the PSE entrance, tapering towards the PPP entrance (Figure 7D\u2013H).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig7-v3.jpg)\n\n**Figure 7.:** (A) Schematic diagrams of the different plasmodesmata connecting protophloem sieve elements to surrounding cell types. (B) Image of the PSE-MSE interface showing a cell wall with two simple plasmodesmata. (C) A pore-plasmodesma in the cell wall between PSE and CC. (D\u2013I) Plasmodesmata connecting PSE with PPP. (D) Simple plasmodesmata, found rarely. (E\u2013H) Funnel plasmodesmata. These showed a wide opening on the PSE entrance tapering towards the PPP. (H) Electron-dense components (white arrow) of unknown composition were often observed within funnel plasmodesmata (black arrows). DT = desmotubule, CW = cell wall, P = pore, F = funnel, CS = cytoplasmic sleeve. Scale bars: B, C, G, H\u00a0=\u00a0200 nm; D, E, F\u00a0=\u00a0500 nm.\n\nIn order to extract the number of PD available for unloading, we conducted serial block-face scanning electron microscopy followed by 3D reconstruction of the interface between PSEs and the adjacent cells (Denk and Horstmann, 2004; Furuta et al., 2014;\u00a0Video 5). Using this method, we collected 2100 serial transverse sections that spanned six complete SEs (Figure 8A), including the junction between PSE zero and the adjacent immature PSE (Figure 8B). During reconstruction, we attributed the exact position of each PD to the different wall interfaces shared by the PSE, color-coded to ease identification\u00a0(Video 5). Using 3D reconstruction, we could image PD on both the outer (Figure 8C) and inner (Figure 8D) walls of the PSE files. A movie showing a \u2018fly through\u2019 of the interior of the PSE file is shown in Video 5. PD relative distribution was 45.3%, 40.8%, and 13.9% between PSE-PPPs, PSE-CCs, and PSE-MSE, respectively, when corrected for the total interface between the cell types. Thus, PD leading from the PSE to PPP and CCs are equally abundant while those to the MSE are significantly lower. Next, we acquired data for the total numbers of PD along the entire phloem-unloading zone. We found that the total number averaged 527\u00a0\u00b1\u00a058 (n\u00a0=\u00a04) per protophloem unloading domain (since Arabidopsis roots are diarch, twice the number is available for unloading within the entire root tip). Based on the percentage distributions of PD obtained using serial sectioning, we calculated that in the phloem-unloading zone of the root there are approximately 240 plasmodesmata at the PSE-PPP interface, 215 plasmodesmata at the PSE-CC interface, and 73 plasmodesmata at the PSE-MP interface potentially available for unloading.\n\n![Video 5.](https://cdn.elifesciences.org/articles/24125/elife-24125-media5.mp4.jpg)\n\n**Video 5.:** The movie shows the volume reconstruction of the PSE file with highlighted cell walls. Color coding reveals the location of plasmodesmata connecting the PSE to the neighboring cell types.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig8-v3.jpg)\n\n**Figure 8.:** (A) Cross-section of one phloem pole in the unloading zone. PD are indicated by darts. (B) Longitudinal section of the protophloem unloading zone. PSE zero (X) is connected to a neighboring immature protophloem sieve element. (C, D) 3D longitudinal view of the protophloem unloading zone. Serial sections were used to reconstruct the unloading zone and quantify PD connections from PSEs to adjacent cells. (C) shows PD on the outer face of the PSE. (D) is derived from Video 4 and shows the PD on the inner faces of the PSE. In the images, PD are color coded (blue/cyan PSE-PPP, red/green PSE-CC, and yellow PSE-MSE).\n\n### A new model of phloem unloading in Arabidopsis roots\n\nCurrent models of phloem unloading, such as the high-pressure-manifold model (Fisher, 2000; Patrick, 2013) assume high pressure differentials between PSEs and the unloading zone in order to drive fluids and solutes through the PD into the neighboring cells. Recently, direct sieve tube pressure, viscosity, flow velocity, and tube geometry measurements in morning glory showed, however, that the majority of energy provided by the pressure differential between source and sink is consumed to drive flow, and that a high pressure differential in the root system is unlikely to exist, calling the current model into question (Knoblauch et al., 2016). In principle, there are two possibilities of how the phloem sap might escape the PSEs. Bulk flow could move the entire volume of solvent and solutes through the PD into neighboring cells. Alternatively, the solutes could diffuse through PD while the solvent (water) could be removed from PSEs via membrane leakage, potentially via aquaporins (Doering-Saad et al., 2002). Finally, a combination of diffusion and bulk flow could account for the observed transport.\n\nIn order to evaluate the feasibility of the different routes, we gathered the necessary parameters to model flow in the phloem-unloading zone (Table 1). We measured the average phloem flow velocity in the protophloem translocation zone to be u\u00a0=\u00a022.6\u00a0\u00b1\u00a05.1 \u00b5m/s (n\u00a0=\u00a011) and the average sieve tube diameter to be: d\u00a0=\u00a03.6\u00a0\u00b1\u00a00.44 \u00b5m (n\u00a0=\u00a011) resulting in a volume flow rate of Q=\u03c04d2u= 230 femtoliter/s (230 \u00b5m3/s) to be unloaded from a single PSE file. Literature values on phloem sucrose concentration average about 500 mM (Hall and Baker, 1972; Kallarackal et al., 1989); Mendoza-C\u00f3zatl et al., 2008; Winter et al., 1992), hence the total amount of sugar to be unloaded is approximately I=Qc=1.2\u00d710\u221213\u00a0mol/s. The solutes must leave the phloem through the PD, while some of the solvent (water) may be removed via membrane leakage. To facilitate transport, an average of 240 PD are available at the PSE/PPP interface, while the water may leak anywhere along the 350 \u00b5m-length of the unloading zone. For simple PD we assumed a cylinder of constant dimensions with a desmotubule of 15 nm diameter and a cytoplasmic sleeve width of 2.8 nm, corresponding to the hydrodynamic radius of GFP. Based on our observations that GFP is batch unloaded, but diffuses relatively freely throughout the root, this molecule appears to be slightly larger than the size exclusion limit imposed by the neck region of funnel PD. For funnel PD we assumed the same dimensions on the PPP side but an average funnel opening of 150 nm (Figure 7) towards the PSE. The location of the desmotubule in funnel PDs impacts the resistance which led us to assume two extremes which are discussed in detail in the appendix. The cell wall thickness (length of the simple and funnel PDs) was taken to be 500 nm.\n\n**Table 1.**\n Base parameters used to model phloem unloading.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Assuming transport through simple PD at PSE/PPP interface</th>\n      <th>Transport through PD at PSE/PPP interface</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Length of unloading zone</td>\n      <td>350 \u00b5m</td>\n      <td>350 \u00b5m</td>\n    </tr>\n    <tr>\n      <td>Desmotubule Diameter</td>\n      <td>15 nm</td>\n      <td>15 nm</td>\n    </tr>\n    <tr>\n      <td>Cytoplasmic Sleeve Diameter</td>\n      <td>2.8 nm</td>\n      <td>2.8 nm</td>\n    </tr>\n    <tr>\n      <td>Cell Wall Thickness</td>\n      <td>500 nm</td>\n      <td>500 nm</td>\n    </tr>\n    <tr>\n      <td>Phloem Sap Osmotic Potential</td>\n      <td>500 mM</td>\n      <td>500 mM</td>\n    </tr>\n    <tr>\n      <td>Funnel opening towards PSE</td>\n      <td>\u2013</td>\n      <td>150 nm</td>\n    </tr>\n    <tr>\n      <td># of PD available for Unloading</td>\n      <td>240 simple PD</td>\n      <td>24 simple PD, 216 funnel PD</td>\n    </tr>\n    <tr>\n      <td>Total Sap Volume</td>\n      <td>230 fl/s</td>\n      <td>230 fl/s</td>\n    </tr>\n    <tr>\n      <td>Required Pressure Differential</td>\n      <td>8.14 MPa</td>\n      <td>0.05\u20130.2 MPa</td>\n    </tr>\n  </tbody>\n</table>\n\nTo elucidate the role of funnel PD in unloading, we first considered the conditions necessary to facilitate unloading by simple PD. We found that the required pressure differential to drive unloading solely by bulk flow through simple PD would be 8.14 MPa (see Appendix for detailed calculations). This pressure differential has neither been measured in SEs, nor can it be considered as feasible. However, assuming funnel PD instead of simple PD, the required pressure would be as low as 0.05\u20130.2 MPa. Such a relatively low pressure differential would be facile to maintain between plant cells. Because the viscous resistance in wide pores is greatly reduced (Appendix), funnel PD are much more efficient in unloading compared to simple PD.\n\nTo estimate the solute concentration difference that would be required to account for unloading by pure diffusion, we assumed a length of the unloading zone of 350 \u00b5m. For the geometrical and physiological values listed above, a concentration difference of 276 mM would be required for diffusive unloading through funnel PDs. In this case, however, a second route for unloading of the solvent (water) would be necessary. The permeability of the plasma membrane varies significantly between cell types and values of 10\u221214 to 10\u221212 m/s/Pa have been reported (Kramer and Boyer, 1995a). Considering the parameters outlined above, a pressure of 0.059 to 5.9 MPa would be needed to remove the solvent from the PSE. Thus, at a high membrane permeability removal of the solvent over the membrane would be feasible.\n\nOur analysis of unloading kinetics leads us to conclude that the distinctive funnel shape of the SE-to-PPP PD is crucial to enabling efficient unloading. In this case, convective phloem unloading, i.e. a combination of diffusion and bulk flow, is feasible, and that relatively moderate pressure and concentration differentials are necessary to drive transport. In our calculations (Appendix) we have assumed that PD connecting PSEs with CCs and MSEs play little or no direct role in the unloading process, consistent with our results using the icals3m system (Figure 6). In this scenario, the unique architecture of funnel PD could still accommodate the calculated unloading rates (Appendix)\n\n## Discussion\n\n### Convective phloem unloading\n\nBased on our structural and physiological data bulk flow is likely to be the dominant mechanism of unloading. Bulk flow would require a pressure differential of about 0.05\u20130.2 MPa, equal to an osmotic potential difference of about 20\u201380 mM. Solute unloading by diffusion alone, on the other hand, would require a concentration difference of 276 mM. While bulk flow predominates, the above mechanisms are not exclusive, and both may contribute to unloading. Bulk flow requires a pressure differential generated by osmosis which would lead to a concentration difference between PSEs and PPPs. This would induce diffusion, in parallel with bulk flow, even if its contribution is lower. The term for the combination of diffusion and bulk flow is convection, which leads us to propose a new model of Convective Phloem Unloading.\n\n### Post-phloem transport and size-dependent filtration\n\nWe have identified different domains within the root tip that provide a size dependent filtration of molecules. Cross sections of Arabidopsis roots (Figure 9A) show the typical diarch structure. The pentagonal architecture of the cell complex surrounding the PSEs and the different PD connecting the cell types is depicted in Figure 9B and C. Our results indicate that the PSE-PPP interface is the principal route for all solutes to be unloaded. Diffusion will, however, lead to a relatively quick redistribution of the solutes through simple PD connecting the cells within the post-phloem unloading zone, along a solute concentration gradient (Figure 9D,E). This gradient will also direct solutes to areas of highest demand, while higher consumption will lead to steeper gradients.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/24125/elife-24125-fig9-v3.jpg)\n\n**Figure 9.:** (A) Standard light micrograph showing a cross section of the Arabidopsis root. (B) A false colored cross section of the Arabidopsis root highlighting the two phloem poles in the unloading zone. (C) Diagram of the cells in the phloem pole and the types of PD that connect the PSEs to each adjacent cell. PPP cells are connected to the PSE by funnel PD, CCs are connected by pore-PD, and MSEs are connected by simple PD. (D and E) Diagram showing the location of various solutes and macromolecules depending on molecular mass. Once unloaded via the PPP, sucrose (blue dots) and GFP (green dots) are able subsequently to enter all cell types via PD. However, larger macromolecules such as SEOR-YFP (yellow/orange dots) are unloaded only into PPP cells. EN = endodermis.\n\nUnloading of small proteins such as GFP (27 kDa) occurs by batch unloading through funnel PD into PPPs. Once unloaded, GFP enters the post unloading zone and is evenly distributed throughout the root tip (Stadler et al., 2005). Large proteins of the size of aequorin-GFP (48 kDa) or SEOR-YFP (112 kDa), however, remain trapped within PPPs and cannot enter the post-phloem pathway to the meristem. Clearly, the different types of PD between PSEs and neighboring cells have major functional impacts on molecular flow in the root tip.\n\nMany proteins have been found in extracted phloem sap, most showing no obvious function in long-distance signaling (Turnbull and Lopez-Cobollo, 2013; Batailler et al., 2012; Paultre, et al., 2016). Thus, the question arises as to how many of these molecules are components of the phloem sap by default rather than by design (Paultre, et al., 2016). To address this point we need to consider where such macromolecules originate. Many systemic macromolecules are thought to arise in CCs and pass into SEs through the pore-PD that connect SEs with CCs (Fisher et al., 1992; Lucas et al., 1996; Sjolund, 1997; Oparka and Turgeon, 1999). There appears to be selectivity to this movement, large proteins (above 70 kDa) are restricted from entering the translocation stream while those below this cutoff are not (Paultre, et al., 2016). Interestingly, in our current study SEOR-YFP (112 kDa), which is translated in immature SEs rather than CCs, was able to unload into the PPP, suggesting that the size exclusion limit that regulates macromolecular exchange between PPP and SE in sinks may be larger than between SEs and CCs in source phloem tissues. Another potential origin of macromolecules in phloem sap is young developing sieve elements. As shown in Figure 1, PSEs start to conduct when their nucleus degenerates. At this point the cytoplasmic content in the PSEs is still very dense. After integration into the mature PSE file, there is no other route left for degraded structures but phloem unloading, most likely into the PPP. Unlike the xylem pole pericycle (XPP), which is involved in lateral-root formation (Parizot et al., 2012) and apoplastic xylem loading (Takano et al., 2002), a specific role for the PPP has not been proposed, although its transcriptome shares similarity to the underlying protophloem (Parizot et al., 2012). We have now identified the \u2018post-phloem domain\u2019 previously described by Stadler et al. (2005) and Paultre, et al., 2016 as the PPP. It appears that while the XPP may be involved in apoplastic xylem loading, the PPP is intimately involved in symplastic phloem unloading, and may function as a repository for degraded PSE contents as well as systemic macromolecules. Although PD connect all cell types surrounding the PSEs, our data suggest that exit via the PPP is the major route of unloading in Arabidopsis roots. In mature source tissues, as well as in secondary sieve elements produced by the cambium, macromolecules will arrive in the phloem-unloading zone. This was demonstrated when we grafted SEOR-YFP scions onto wild-type rootstocks (Figure 4I,J). Without continuous macromolecule unloading, PSEs would fill up rapidly and phloem unloading would be impaired (Paultre, et al., 2016). PPPs are the major recipients of systemic macromolecules and it might be expected that they are specialized for the degradation of proteins and RNAs, an interesting area for future research. PPPs may also protect the downstream cells from receiving unwanted, potentially interfering mRNA molecules.\n\nHow does the root distinguish between true signaling molecules and those moving by default in the phloem? One possibility is that unloaded macromolecules destined to traffic further than the PPP may have specific sequences that interact with the PD that connect the PPP to the endodermis and beyond. Phloem-mobile viruses are able to move beyond the PPP suggesting that they can break the \u2018barrier\u2019 normally imposed by the PPP (Valentine et al., 2004). A clear future challenge will be to identify systemic macromolecules that can move beyond the PPP, and to analyze these macromolecules for specific motifs that, like transcription factors (Xu et al., 2011), allow them to interact with and modify PD.\n\n## Materials and methods\n\n### Plant material\n\nArabidopsis thaliana were grown in microROCs (Advanced Science Tools LLC. Pullman, WA) as described elsewhere (Froelich et al., 2011). Soil was kept saturated by placing the microROCs in 1\u20132 inches of water daily for 5 min creating a soil water saturation of\u00a0>80%. Chamber conditions were 16 hr photoperiods with 100\u2013200 \u03bcE m\u22122 s\u22121 at 18\u00b0C to 22\u00b0C.\n\n### Fluorescence recovery after photobleaching\n\nExperiments were conducted on a Leica SP8 confocal microscope equipped with a supercontinuum laser (470\u2013630 nm) and a pulsed 405 nm diode laser. 5(6)-Carboxyfluorescein diacetate (CFDA) stock solution, 5 mg/ml in acetone, was diluted 1:10 (v/v) in ddH2O and loaded into the phloem through application to cut cotyledons at 7\u201310 days post-germination as described earlier (Knoblauch et al., 2015). Sieve elements in the most apical root protophloem loaded with CFDA were photo-bleached with 480 nm, 488 nm, and 496 nm lasers concurrently at maximum power and 6.5x zoom with a 20x lens. Bleaching started apically and moved toward the hypocotyl until the entirety of CFDA in the sieve tube in the field of view was bleached. Subsequent recording of the refilling occurred immediately following photo-bleaching at 200 Hz and 0.75x digital zoom by excitation with the 488 nm laser line at 15% of continuous power. Emission was collected between 505 and\u00a0545 nm.\n\n### Arabidopsis grafting\n\nSeeds of Arabidopsis wt and the transgenic line pAtSEOR-AtSEOR-yfp were sterilized with 8% bleach and 1% TWEEN-20. After 5x wash in distilled water seeds were plated on MS with 1.2% agar and 0.2% sucrose, pH 5.7. After 48 hr stratification in the dark at 4\u00b0C seeds were oriented vertically at 23\u00b0C with 18 hr photoperiod. After 5\u20137 days, seedlings were grafted following the hypocotyl-grafting procedure of Turnbull et al. (2002) consisting of a transverse cut and butt alignment with silicon collars. The seedlings were cut transversely in the upper region of the hypocotyl with ultrafine microknives (Interfocus, n\u00b010315\u201312). Scions were grafted onto wild type stocks using a short silicon collar for support on MS agar plates. The grafts were left to grow under LD with the plates still oriented vertically until new lateral roots of the stocks were fully established (~10 days). The grafts were imaged between 5 and 10 dag.\n\n### Fixation and embedding of fluorescent proteins\n\nTen days old seedlings of transgenic Arabidopsis thaliana, expressing AtSEO::SEO-YFP, were embedded in LR White following the method described by Bell et al. (2011). Tissue samples were fixed overnight at 4\u00b0C in a solution of 4% formaldehyde, 1% glutaraldehyde, 50 mM 1,4-piperazinediethanesulofonic acid (PIPES) and 1 mM CaCl2. The samples were then washed in buffer (50 mM PIPES, 1 mM CaCl2) three times for 10 min before dehydration in a graded ethanol series (50%, 70%, 2 \u00d7 90%). The tissue samples were then infiltrated at 4\u00b0C in medium grade LR White at 1:1, 1:2, 1:3, 1:9 ratios of 90% ethanol:resin for 45 min each before two 60 min changes in 100% LR White. The final embedding step was done at ambient temperature. The samples were then polymerised in gelatin capsules (TAAB) at 50\u00b0C for 24 hr.\n\n### Confocal imaging\n\nEsculin and Sirofluor were excited with a pulsed 405 nm diode laser. Emission was collected with a hybrid detector between 420 and\u00a0480 nm or 420 and\u00a0600 nm respectively. GFP and esculin were imaged with sequential scan for fluorescence emission separation. For GFP, excitation was 488 nm and emission detection with a hybrid detector at 495\u2013535 nm. Esculin excitation was 405 nm and emission collection with a hybrid detector at 420\u2013470 nm. GFP and YFP were sequentially scanned for separation of emission fluorescence. GFP excitation was 484 nm at 50% continuous power. Emission collected with a hybrid detector at 489\u2013505 nm. YFP excitation was 514 nm at 15% continuous power. Emission collected at 519\u2013564 nm with a hybrid detector.\n\n### Transmission electron microscopy\n\nSamples were chemically fixed in the microwave with 2% glutaraldehye, 2% paraformaldehyde and 2% DMSO in 0.1\u00a0M cacodylate buffer. Microwave fixation time was 2 min, followed by a 2 min break and a final 2 min microwave period at maximum temperature of 25\u00b0C. Samples were then washed 5x for 10 min in 0.1\u00a0M cacodylate buffer. Postfixation took place in 1% osmium tetroxide (0.1\u00a0M cacodylate) overnight at 4\u00b0C. Samples were rinsed 3x for 10 min. in 0.1\u00a0M cacodylate buffer. Dehydration was carried out with methanol in the microwave for one minute followed by 5 min at room temperature for each step in 5% increments from 5% to 100% methanol. 100% methanol was replaced twice and the samples were then transferred to 100% propylene oxide with three exchanges. Samples were embedded in Spurr resin at the following propylene oxide:Spurr ratios: 2:1 for 2 hr, 1:1 for 2 hr, 1:2 for 2 hr, and 100% Spurr overnight 3X. The resin was cured at 65\u00b0C for 24 hr. Samples were sectioned and stained with 1% uranyl acetate for 6 min followed by a ddH2O rinse and stained in Reynold\u2019s lead for 6 min. Following Reynold\u2019s lead samples were quickly rinsed in 0.1\u00a0N NaOH and ddH2O. Samples were imaged with an FEI T20 at 200kv.\n\n### Serial block face scanning electron microscopy (SBFSEM)\n\nMaterial for SBFSM was prepared as described by Furuta et al. (2014). Wild-type Columbia roots were fixed with 2.5% glutaraldehyde, 2% formaldehyde in 0.1 M Na-Cacodylate buffer (pH 7.4) supplemented with 2 mM CaCl2 for 2\u20133 hr at room temperature and embedded in Durcupan ACM resin (Fluka, Sigma-Aldrich). After standard dehydration steps, samples were embedded in silicone holders filled with 100% Durcupan and infiltrated for at least 2 hr before polymerization at 60\u00b0C. The roots were trimmed to the desired starting point from the tip using an EM Ultracut UC6i ultramicrotome (Leica Mikrosysteme GmbH). Images were acquired with a FEG-SEM Quanta 250 (FEI, Hillsboro, OR), using a backscattered electron detector (Gatan Inc.). The block faces were sectioned at 40 nm increments. The images were initially processed and segmented using Microscopy Image Browser, a self-developed program written under Matlab environment (Mathworks Inc.) and available at http://mib.helsinki.fi/. A SBFSEM dataset of 2100 images was subsequently segmented and visualized in 3D using Amira 6.0 software (FEI Corp). The outer structure cell walls were discriminated in a hybrid method of interpolated interactive masking and grey-level segmentation. The individual plasmodesmata were identified and segmented sequentially by a manual interactive method and color-coded into groups that related to the particular cell wall interface along the protophloem files.\n\n### Construction of inducible lines\n\nThe promoters of CALS8 (At3g14570) and sAPL (At3g12730) were amplified using the primers CALS8-AscI-F AAGGCGCGCCCGGCAACATGAAATACGGGA and CALS8-XhoI-R ACAGCTCGAGGTTTTGGGAGAAAATCAATCAGAA, and SAPL-AscI-F AAGGCGCGCCAGCTAATAAGAAAGGGAGATCTCTG and SAPL-XhoI-R ACAGCTCGAGTTAACTAACAAAGTACTAAATGCCGA, respectively) and cloned into P4P1RpGEMt containing the estrogen receptor XVE (Zuo et al. 2000). Using the MultiSite Gateway system (Invitrogen), the inducible promoters were combined with the icals3m construct and the nopaline synthase terminator in destination vector pBm43GW. Arabidopsis Col-0 plants were dipped with the different constructs and positive transformants were selected using Basta (pCALS8) and Hygromycin (psAPL). Lines with single insertions were selected in T2 and homozygous plants were obtained in T3.\n\n### Growth assays and phloem unloading analyses\n\npCALS8::icals3m and psAPL::icals3m seeds were stratified for 2 days at 4\u00b0C in the dark and were sown on media containing 0.5 MS and 1.2% plant agar, pH 5.8. At 4 days post sowing, seedlings were induced in plates containing the same media plus 5 \u00b5M Beta estradiol or the corresponding amount of DMSO (mock). Plates were scanned at times 0, 3, 8 and 24 hr after the induction. Roots were measured using ImageJ and seedlings were subsequently used for CFDA loading. 1 mM CFDA in a solution of 72% acetone in water was mixed with 0.5% Adigor solution (Syngenta) to 10:1 proportions. 0.2 \u00b5L of this solution was applied to the adaxial side of the leaves, separating the leaves from the media to avoid undesired dye spreading. Approximately 10 roots were used for each treatment. 20 min after loading, roots were mounted in propidium iodide and imaged by confocal laser scanning microscopy (Zeiss LSM700).\n\n### Callose detection\n\nSeedlings used for phloem unloading analysis subsequently underwent callose detection experiments through Sirofluor staining and callose immunolocalization allowing three independent experiments on the same biological material. Callose accumulation on the CFDA positive roots used for unloading experiments was confirmed first by Sirofluor staining. Whole seedlings were incubated 2 hr at room temperature in a 25 \u00b5g/mL (42.66 \u00b5M) solution of Sirofluor fluorochrome (Biosupplies, AU) in a 50 mM K2HPO4 buffer under vacuum (60 mPa). Roots were then dissected and mounted in a 1:1 solution of AF1 antifadent (Citifluor) and 67 mM K2HPO4 buffer, and subsequently imaged by confocal laser scanning microscopy (Zeiss LSM700). Following Sirofluor staining, roots were fixed for subsequent immunolocalization on cross sections in a fixative solution containing 4% formaldehyde (freshly prepared from paraformaldehyde powder, Sigma) and 0.5% glutaraldehyde (Sigma) in a 0.1\u00a0M phosphate buffer pH7. Fixation, dehydration and resin infiltration steps were done in a micro-wave using a PELCO BioWave Pro (Ted Pella, Redding, CA). Fixation was achieved at 150\u00a0W, under vacuum (20\u00a0Hg) and for 6 min (2\u2019. Followed by a 2\u2019break and a final 2\u2019 microwave). Samples were left in the fixative overnight at 4\u00b0C and then washed 3 times 3 min (20\u00a0Hg, MW 150\u00a0W 1\u2019 on \u2013 1\u2019 break \u2013 1\u2019 on). Roots were then aligned and embedded in 1% low-melting Agarose (Calbiochem) and processed through increasing dehydration steps (25%, 50%, 70%, 90%, 96%, 3 \u00d7 100% Ethanol, vacuum 20\u00a0Hg, MW 150\u00a0W 1\u2019 on followed by 5\u2019 break). Resin infiltration (LR White medium grade, Agar scientific) was achieved through increasing resin concentrations: 33% resin in ethanol 100%, 66% resin in ethanol 100%, and 3 times 100% resin (20\u00a0Hg, MW 200\u00a0W 2\u2019 on \u2013 2\u2019 break \u2013 2\u2019 on). Polymerization was conducted overnight at 60\u00b0C. Semi-thin sections (0.5 \u00b5m) were taken with a Leica EM UC7 ultramicrotome. Callose immunolocalization on semi-thin sections was micro-wave assisted and performed as follows: blocking step (BSA 2% in PBS, 1 mL per slide; primary antibody (anti (1\u21923)-\u03b2-glucan (Biosupplies, AU), 1/200 in BSA 2% in PBS, 500 \u00b5L per slide, MW 170\u00a0W 2\u2019 on \u2013 2\u2019 break \u2013 2\u2019 on); three washes in BSA 2% in PBS; secondary antibody (Alexa Fluor 488 anti-mouse IGG ThermoFisher Scientific, A-11017, 1/400 in BSA 2% in PBS (MW 170\u00a0W, 1\u2019), 500 \u00b5L per slide; three washes in BSA 2% in PBS. Slides were finally mounted in a 1:1 solution of AF1 antifadent (Citifluor) with PBS, containing calcofluor as a cell wall counterstain, and imaged by confocal laser scanning microscopy (Zeiss LSM700).\n",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "cf21199c-957c-4224-b432-8a11d9184e4d",
+      "submission_id": "2d038acb-adaa-469f-9e04-dd3f66b97c51",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian S Hardtke, University of Lausanne , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24125.021](https://doi.org/10.7554/eLife.24125.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Phloem unloading in Arabidopsis roots is convective and regulated by the phloem-pole pericycle\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Christian Hardtke as the Reviewing and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ulrich Z Hammes (Reviewer #1); David E Salt (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nAs you can see from the reviews below, all three reviewers appreciate your study and believe that your careful mapping of the root phloem unloading process and the identification of a new, specialized plasmodesmata type in this process are an exciting advance in the field. They also have a number of suggestions for further improvement of the manuscript, which we would like you to address one by one to the best of your capacity in a revised version.\n\nReviewer #1:\n\nThe manuscript \"Phloem unloading in Arabidopsis roots is convective and regulated by the phloem-pole pericycle\" by Ross-Elliot and colleagues presents a breakthrough in our current understanding of phloem unloading- an agronomically important process. This manuscript addresses (and answers) a major question that arose from a previous manuscript of this (now extended) consortium which was published in eLife last year: how is phloem unloading achieved if the pressure gradient between the phloem and the surrounding tissue in sinks is low and the high-pressure manifold model that was believed to be working in roots does not work. Additionally, the authors found that phloem unloading occurs in a specialized cell type which is different from the tissue that was \u2013 so far \u2013 thought to be the major player in this context. An interesting consequence from this paper is also that it shows that possibly/likely many of the macromolecules, a very \"hot\" topic that is currently discussed controversially, found in the phloem represent \"garbage\" rather than signaling molecules. Last not least: I spent a while going through the literature: This is the first study that provides data on the anatomy and (sub)cellular organization of the unloading zone which led to the discovery of a new type of plasmodesmata (PD).\n\nTaken together, I believe this paper contains many exciting findings that can be published pretty much without major changes.\n\nReviewer #2:\n\nIn this manuscript the authors provide a wealth of elegant experimental data to help define the process of phloem unloading in roots of Arabidopsis thaliana.\n\nI found the conclusions developed by the authors compelling and well supported by the data.\n\nBy combining confocal imaging of both GFP-tagged protophloem sieve elements (PSEs) and the fluorescent phloem mobile dye Esculin (which does not accumulate in vacuoles after unloading which is an advantage over carboxyfluorescein) the authors convincingly define the first transport competent PSE in a given file of PSE cells in the root. The authors use fluorescence recovery after photobleaching (FRAP) to measure phloem velocity and observe a reduction in this velocity in the phloem unloading zone. Using the first PSE identified as PSE-zero as a marker for the end of the unloading zone and flow rate reduction as a precise measure of phloem unloading the authors are able to precisely define the extent of the phloem unloading domain. A significant achievement. Strong evidence is presented using fluorescently tagged proteins and confocal imaging that proteins are unloaded in 'batches' and not as a steady stream. Furthermore, using cell-type specific expression of callose synthase the authors establish that unloading from the PSEs occurs into the phloem pole pericycle cells (PPP) and not into the companion cells (CC) as previously proposed. To further investigate the involvement of plasmodesmata (PD) in unloading from the PSEs into the PPP an in depth investigation using serial block-face scanning EM with 3D reconstruction is undertaken. This produces an incredible reconstruction of a file of PSEs and detailed structural information about PD that reveals a new type of 'funnel' PD that connect the PSEs and PPP. This is an exciting discovery. Modelling of phloem unloading is then used to predict that these new funnel PD provide a much more efficient pathway for phloem unloading, which presents a nice potential rational for the existence of such PD.\n\nOverall I found this manuscript to be a fascinating read that describes a study that is rich with significant new insights, observations and testable hypothesis.\n\nReviewer #3:\n\nIn this manuscript, by combination of non-invasive imaging, 3D electron microscopy and mathematical modeling, the authors show that phloem unloading in Arabidopsis root is driven by bulk flow and diffusion (\"convection\") through plasmodesmata (PD). Imaging supports the idea that phloem pole pericycle (PPP) is a predominant pathway of phloem unloading, rather than companion cells (CCs), supported by the artificial PD closure by callose deposition. Additionally, they also show that most PD interconnecting the protophloem sieve elements (PSEs) and neighboring PPP are shaped like a funnel, which could enable unloading with lower pressure differential between PSE and PPP. Furthermore, they indicate that, during unloading process, large macromolecules are trapped by PPP and restricted in further movement, whereas small solutes are unloaded through PPP and more freely move throughout the root tip, suggesting that PPP may regulate unloading process depending on molecular size, and act as a repository for unloaded macromolecules. Thus, in this study, authors reveal that PPP and its funnel PD act as central players in phloem unloading, which will adds to the regulatory mechanism of phloem unloading and PD function depending on their diverse structures.\n\nThis study is mostly descriptive, though the discovery of the phloem unloading route and funnel PDs are important advances. However the mechanism of unloading regulation (e.g. molecular size-dependent regulation, funnel PD formation) is still largely unknown.\n\nMajor issues:\n\nI am a little concerned that the data on protein movement is only from 3 proteins, one of which, GFP, is freely mobile, and another, SEOR, is involved in making aggregates, and the third is a foreign protein (aequeorin). There are plenty of native plant fusions available, how would they behave?\n\nThe batch unloading is not clear to me, and only shown for GFP in video 3.\n\nResults section, I don't understand: Once unloading occurred, the flow velocity decreased significantly due to loss of liquid volume during unloading.\n\nFigure 6: Callose staining (I assume in green) appears weaker in the psAPL line (and not all the way around the cells) compared to the pCalS8 line- could this be a reason why the latter blocks transport and not the former? \u2013 Indeed, callose could be accumulated at CCs' cell wall by psAPL:iCalS3m, but is the function of PD between SE and CC really defective? To check PD function, authors could examine whether CC-expressed GFP probe can move to surrounding cells.\n\nThe references are often very old and recent refs on protein and mRNA movement are not mentioned- the discussion should be more balanced on this and avoid strong opinions on things not investigated in the manuscript, eg: \"PPPs may also protect the downstream cells from receiving unwanted,potentially interfering mRNA molecules\"\n",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8855854f-beee-4fe2-bea3-5cfeaf29b7fa",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C1",
+      "claim": "Phloem unloading of solutes in Arabidopsis roots occurs through plasmodesmata by a combination of mass flow and diffusion (convective phloem unloading).",
+      "claim_type": "EXPLICIT",
+      "source": "We used a combination of approaches (non-invasive imaging, 3D-electron microscopy, and mathematical modelling) to show that phloem unloading of solutes in Arabidopsis roots occurs through plasmodesmata by a combination of mass flow and diffusion (convective phloem unloading).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from non-invasive imaging, 3D-electron microscopy, and mathematical modelling as stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "2ad11c19-067e-4777-a44d-66e8b7a183b7",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C2",
+      "claim": "During unloading, solutes and proteins are diverted into the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "During unloading, solutes and proteins are diverted into the phloem-pole pericycle, a tissue connected to the protophloem by a unique class of 'funnel plasmodesmata'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the abstract and detailed in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a9194b0a-5b2d-485d-8e88-fdcc398c43f5",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C3",
+      "claim": "The phloem-pole pericycle is connected to the protophloem by a unique class of 'funnel plasmodesmata'.",
+      "claim_type": "EXPLICIT",
+      "source": "During unloading, solutes and proteins are diverted into the phloem-pole pericycle, a tissue connected to the protophloem by a unique class of 'funnel plasmodesmata'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ultrastructural analysis showing funnel-shaped plasmodesmata at the PSE-PPP interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "7c149599-423d-44c0-b272-48569263f2cc",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C4",
+      "claim": "While solutes are unloaded without restriction, large proteins are released through funnel plasmodesmata in discrete pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "While solutes are unloaded without restriction, large proteins are released through funnel plasmodesmata in discrete pulses, a phenomenon we refer to as 'batch unloading'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging experiments showing discrete pulses of protein unloading.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "b4c736a7-fcee-4253-973a-60ab6e451a16",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C5",
+      "claim": "Large proteins remain restricted to the phloem-pole pericycle after unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike solutes, these proteins remain restricted to the phloem-pole pericycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fluorescence imaging showing that large proteins like SEOR-YFP and aequorin-GFP do not move beyond the PPP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c78b019d-fcff-4d21-a987-9c9e784c10df",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C6",
+      "claim": "The phloem-pole pericycle has a major role in regulating phloem unloading in roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate a major role for the phloem-pole pericycle in regulating phloem unloading in roots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of evidence including structural analysis, unloading kinetics, and callose induction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a50d4eec-9080-4e04-99b8-10b2da9dd41b",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C7",
+      "claim": "Modern agriculture aims to maximize the amounts of carbon-based products allocated to storage organs such as grains and tubers.",
+      "claim_type": "EXPLICIT",
+      "source": "Modern agriculture aims to maximize the amounts of carbon-based products allocated to storage organs such as grains and tubers, structures that act as carbon 'sinks' for the assimilates delivered by the phloem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about agricultural practices and goals, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "05251126-cd7c-43d5-ac2b-baebe77bba17",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C8",
+      "claim": "Phloem unloading is a central target for regulating the flux of carbon into sink tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The process by which solutes exit the phloem is termed phloem unloading, and is a central target for regulating the flux of carbon into sink tissues (Ham and Lucas, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ham and Lucas, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f844cd7b-d19f-47e5-bad0-e8c8abacbb59",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C9",
+      "claim": "Phloem sap contains numerous proteins and RNAs in addition to assimilates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to assimilates, phloem sap also contains numerous proteins and RNAs (Kehr, 2006; Atkins et al., 2011; Batailler et al., 2012; Turnbull and Lopez-Cobollo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "6fa3d16f-a977-4a53-a00c-5d9128b85f88",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C10",
+      "claim": "During differentiation, sieve elements lose most of their cellular components, including their nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "During differentiation SEs lose most of their cellular components, including their nucleus (Oparka and Turgeon, 1999; Furuta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Oparka and Turgeon, 1999 and Furuta et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a43ad0b0-3eb9-46a9-83e3-6a6a4c36c9fb",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C11",
+      "claim": "Companion cells support the adjacent enucleate sieve elements throughout their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Ontogenetically related, metabolically active companion cells (CCs) support the adjacent enucleate SEs throughout their lifespan (Lucas et al., 1996; Pritchard, 1996; van Bel and Knoblauch, 2000; Lalonde et al., 2001; Otero and Helariutta, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "53f040e3-ca34-4dde-bb73-9a039fd48c0f",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C12",
+      "claim": "The pressure flow model of phloem transport was originally proposed by M\u00fcnch in 1930.",
+      "claim_type": "EXPLICIT",
+      "source": "The pressure flow model of phloem transport, originally proposed by M\u00fcnch (1930), envisages that an osmotically generated pressure differential drives the bulk flow through the SEs that connect photosynthetic tissues (sources) with those in which carbon consumption occurs (sinks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a historical fact supported by citation to M\u00fcnch, 1930.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a42a4973-d811-4c80-8683-76a34ac93304",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C13",
+      "claim": "Many proteins found in phloem sap, including those with targeting sequences, can move across a graft union and be unloaded near the root tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, Paultre et al. (2016) showed that many proteins, including those with targeting sequences, can move across a graft union and be unloaded near the root tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Paultre et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "27d40e9c-20d7-446f-980e-f05b827bd742",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C14",
+      "claim": "Proteins unloaded near the root tip entered a post-phloem domain beyond which their movement was restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, these proteins entered a post-phloem domain beyond which their movement was restricted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on findings from Paultre et al., 2016 as referenced in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "11d1a946-e0e3-4044-8802-ff49039b6e81",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C15",
+      "claim": "The phloem serves as a network for transmission of chemical and electrical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the central function in resource allocation, it is now well established that the phloem also serves as network for transmission of chemical (Kramer and Boyer, 1995a; Mullendore et al., 2015) and electrical (Hedrich et al., 2016) signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "39b17308-cf7d-454d-9170-9e1a1224baff",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C16",
+      "claim": "Phloem unloading in actively growing tissues such as the shoot or root apex occurs through the protophloem.",
+      "claim_type": "EXPLICIT",
+      "source": "Phloem unloading in actively growing tissues such as the shoot or root apex occurs through the protophloem, a transient tissue that connects the conducting phloem with the receiver cells in sink tissues (Oparka et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Oparka et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "436afca6-bf52-4fb1-a497-f00843194a1e",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C17",
+      "claim": "Initial investigations of phloem unloading in the root tip of Arabidopsis provided evidence that unloading occurs through plasmodesmata.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial investigations of phloem unloading in the root tip of Arabidopsis (Oparka et al., 1994, 1995; Wright and Oparka, 1996) provided evidence that unloading occurs through plasmodesmata (PD), the specialized pores that connect plant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Oparka et al., 1994, 1995 and Wright and Oparka, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "040cf4ec-13d4-4f9c-b92b-c5647a641eda",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C18",
+      "claim": "Protophloem sieve elements become mature in regions of high assimilate demand while neighboring cells are still differentiating.",
+      "claim_type": "EXPLICIT",
+      "source": "Protophloem sieve elements (PSEs) become mature in such regions to accommodate this demand while the neighboring cells are still differentiating (Furuta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Furuta et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "41a49658-a155-40e9-87ad-80d29ac74833",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C19",
+      "claim": "Protophloem sieve elements become increasingly elongated until they become inactive in transport and eventually obliterated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, they become increasingly elongated until they become inactive in transport and eventually obliterated (Erwin and Evert, 1967; Eleftheriou and Tsekos, 1982; Furuta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c3eb5b5e-7156-43f1-b230-9ba2c663729a",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C20",
+      "claim": "In the elongation zone of the root, solutes are transferred laterally from the metaphloem sieve elements to the protophloem sieve elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In the elongation zone of the root, solutes are transferred laterally from the metaphloem SEs (MSEs) to the PSEs, allowing phloem continuity between source and sink tissues (Stadler et al., 2005; Winter et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Stadler et al., 2005 and Winter et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "129a5a47-3dcb-4e4f-9c6f-204ea7783647",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C21",
+      "claim": "The high-pressure manifold model proposes that a low pressure gradient occurs along the flow path, with a steep drop in pressure between the protophloem sieve elements and surrounding cells in the phloem unloading zone.",
+      "claim_type": "EXPLICIT",
+      "source": "A currently favored hypothesis of phloem unloading is the 'high-pressure manifold model' proposed by Fisher (2000), recently evaluated by Patrick (2013). A central element of this model is that a low pressure gradient occurs along the flow path, with a steep drop in pressure between the PSEs and surrounding cells in the phloem unloading zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model proposed by Fisher (2000) and evaluated by Patrick (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "3be0c3ba-6df7-4236-a58b-ec7681df00e2",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C22",
+      "claim": "Recent phloem turgor measurements in morning glory did not support the high-pressure manifold model.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent phloem turgor measurements in morning glory, however, did not support this model, as the bulk of the pressure is consumed by friction within the SEs, and only small pressure gradients are available for unloading (Knoblauch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Knoblauch et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f94624f1-0248-4b83-94fd-85211f82e913",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C23",
+      "claim": "The Fisher (2000) model does not explain how both small solutes and macromolecules can leave the phloem simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fisher (2000) model also does not explain how both small solutes and macromolecules can leave the phloem simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the Fisher (2000) model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "dc3d1f2d-86c6-4b73-966a-3051cc72c91e",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C25",
+      "claim": "The phloem unloading zone in Arabidopsis is amenable to non-invasive imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The many unknowns surrounding phloem unloading in plants prompted us to conduct a detailed structure/function study of the terminal PSEs in the phloem unloading zone which, in Arabidopsis, is amenable to non-invasive imaging (Oparka et al., 1994; Knoblauch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Oparka et al., 1994 and Knoblauch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f2941a7c-cf6a-4c83-b2da-9cf12451a98a",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C26",
+      "claim": "CFDA is the most widely utilized phloem-mobile probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Carboxyfluorescein diacetate (CFDA) is the most widely utilized phloem-mobile probe (Oparka et al., 1994; Wright and Oparka, 1996; Knoblauch and van Bel, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies using CFDA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "3a84da9e-c731-4495-b3fc-7a0c5bf94391",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C27",
+      "claim": "CFDA is non-fluorescent when applied to source leaves but is subsequently cleaved by endogenous esterases to produce fluorescent, membrane-impermeant, carboxyfluorescein.",
+      "claim_type": "EXPLICIT",
+      "source": "This probe is non-fluorescent when applied to source leaves but is subsequently cleaved by endogenous esterases to produce fluorescent, membrane-impermeant, carboxyfluorescein (CF; Knoblauch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Knoblauch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "e1472b1a-0309-4280-8e43-60c8cc0f5aaa",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C28",
+      "claim": "CFDA characteristically shows preferential movement outwards into the cortex relative to the stele when studied in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "When studied in real time, the dye characteristically shows preferential movement outwards into the cortex relative to the stele (Figure 1A; see also Oparka et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1A and citation to Oparka et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c7a94550-c9da-499b-813c-1deab11804a3",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C29",
+      "claim": "Unloading of CFDA in the root tip indicates a symplastic (plasmodesmata-mediated) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Unloading of the dye in the root tip indicates a symplastic (plasmodesmata-mediated) pathway (Oparka et al., 1994; Wright and Oparka, 1996; Knoblauch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "49b78733-898d-473d-a72c-35107184eabd",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C30",
+      "claim": "Cells in the unloading zone sequester CFDA rapidly into their vacuoles where it becomes trapped.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells in the unloading zone sequester the dye rapidly into their vacuoles where it becomes trapped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations described in the text and supported by Wright and Oparka, 1996 as cited in the following sentence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "b4f897b5-0d72-4be5-af49-bf8c08b16180",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C31",
+      "claim": "Esculin is a naturally fluorescent, glucosylated coumarin derivative recently introduced as phloem-mobile probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Esculin is a naturally fluorescent, glucosylated coumarin derivative recently introduced as phloem-mobile probe (Knoblauch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Knoblauch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "83649795-aaa4-4052-b748-d2d34979913c",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C32",
+      "claim": "Esculin is loaded into the phloem by the sucrose transporter, SUC2, in the companion cells of source tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike CFDA, it is loaded into the phloem by the sucrose transporter, SUC2, in the CCs of source tissues (Gora et al., 2012; Knoblauch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gora et al., 2012 and Knoblauch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "75fadf18-84c7-4822-9c29-95a9e95f16ae",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C33",
+      "claim": "Sequestration of esculin is minimal and occurs only when high concentrations of the probe are applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequestration of this probe is minimal and occurs only when high concentrations of the probe are applied (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "4b154069-960e-4471-b69a-36ca67609934",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C34",
+      "claim": "Esculin did not enter differentiating protophloem sieve elements that were symplastically isolated from the rest of the protophloem file.",
+      "claim_type": "EXPLICIT",
+      "source": "Esculin did not enter differentiating PSEs that were symplastically isolated from the rest of the protophloem file.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from time-lapse movies described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "090925a5-ecab-42d9-b6b3-8bdf9dc8b720",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C35",
+      "claim": "Once the nuclear membrane started to degenerate, the sieve-plate pores opened rapidly, allowing esculin to enter the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the nuclear membrane started to degenerate the sieve-plate pores opened rapidly, allowing esculin to enter the cell, which then became an integral member of the protophloem-unloading zone (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f9984998-e9cf-4b0a-ba95-fa0cd485a1f4",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C36",
+      "claim": "The degeneration of the nucleus and the opening of the sieve-plate pores are closely related events that lead to incorporation of PSE zero into the phloem-unloading zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that nucleate, differentiating PSEs are isolated from the translocation stream. However, the degeneration of the nucleus and the opening of the sieve-plate pores are closely related events that lead to incorporation of PSE zero into the phloem-unloading zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental observations described.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "06d90026-829c-4d91-b536-0ef4d13b3a37",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C37",
+      "claim": "Phloem flow velocities in the terminal region of the root (basipetal to the unloading zone) are in the range of 25 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Phloem flow velocities in the terminal region of the root (basipetal to the unloading zone) are in the range of 25 \u00b5m/s (Froelich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Froelich et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f7cb447e-e1e9-4fea-b146-3d4cbcedb8c7",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C38",
+      "claim": "Deceleration of phloem flow started at about 300\u2013400 \u00b5m behind PSE zero.",
+      "claim_type": "EXPLICIT",
+      "source": "To define the size of the unloading zone, we measured flow velocity along the phloem files and found that deceleration started at about 300\u2013400 \u00b5m behind PSE zero (this dimension varied slightly, even within the two sieve tube files in the same root tip; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow velocity measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "7604bbf6-3479-44ff-9387-264b4d7492ec",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C39",
+      "claim": "The phloem of the root is subdivided into distinct structural and functional domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed that the phloem of the root is subdivided into distinct structural and functional domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental data showing different zones with different functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "4535951a-7099-4b94-82ff-139e40b25ef8",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C40",
+      "claim": "Arabidopsis roots grow at speeds of about 100\u2013150 \u00b5m per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis roots grow at speeds of about 100\u2013150 \u00b5m per hour (Beemster and Baskin, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Beemster and Baskin, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "1407f522-a989-4f26-915e-5d1266dcfe10",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C41",
+      "claim": "After the sieve-plate pores open, a single protophloem sieve element in the phloem unloading zone is active in unloading for only about 2\u20134 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, after the sieve-plate pores open, a single PSE in the phloem unloading zone is active in unloading for only about 2\u20134 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the root growth rate and the dimensions of the unloading zone.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a02ebad1-abc9-4f25-b8fe-5439ed7d9862",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C42",
+      "claim": "Callose is deposited in the neck region of plasmodesmata and restricts the size exclusion limit of the pore in response to various stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Callose is deposited in the neck region of plasmodesmata and restricts the size exclusion limit of the pore in response to various stimuli (Luna et al., 2011; Nakashima et al., 2003; Radford et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "eba7c97e-0fb1-4d13-b4b7-11514b2fd8db",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C43",
+      "claim": "At the junction of the phloem unloading zone with the phloem translocation zone, callose deposits on the protophloem sieve element wall increased in number.",
+      "claim_type": "EXPLICIT",
+      "source": "At the junction of the phloem unloading zone with the phloem translocation zone, callose deposits on the PSE wall increased in number (Figure 3E) until significant parts of the PSE walls were covered in callose (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "a520ba1d-f7a5-4aad-beb6-2806cc063bf9",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C44",
+      "claim": "Deposition of callose along the lateral walls of protophloem sieve elements in the protophloem translocation zone correlated with the reduction in flow observed in dye-loading experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This deposition of callose along the lateral walls of PSEs in the protophloem translocation zone correlated with the reduction in flow we observed in dye-loading experiments and may provide a structural basis for the functional isolation of this zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the correlation between callose deposition and flow reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "e8bf1293-06b7-4328-b5bc-fb7dd082a180",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C45",
+      "claim": "A large number of macromolecules including nucleic acids and proteins occur in various amounts in the translocation stream.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as sugars and amino acids, a large number of macromolecules including nucleic acids, and proteins occur in various amounts in the translocation stream (Fukumorita and Chino, 1982; Kehr, 2006; Turnbull and Lopez-Cobollo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "70b3d4de-285f-4c7f-8b9b-00072f9a7c92",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C46",
+      "claim": "In Arabidopsis, the root protophloem file is surrounded by five distinct cell files.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, the root protophloem file is surrounded by five distinct cell files (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM images shown in Figures 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "72ea36d6-d432-4f9d-b1d3-efd57fd1f3dc",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C47",
+      "claim": "Small probes of the dimensions of sugars and amino acids (CFDA, esculin), and small proteins (GFP) move from cell to cell throughout the entire root tip without noticeable barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Small probes of the dimensions of sugars and amino acids (CFDA, esculin), and small proteins (GFP) move from cell to cell throughout the entire root tip without noticeable barriers (Figure 1; Oparka et al., 1994; Stadler et al., 2005; Wright and Oparka, 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations and citations to multiple studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "38c3d9e4-0b2f-47e7-b8ce-31efbe0a278b",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C48",
+      "claim": "Translocated proteins of companion cell origin are restricted to cells immediately adjacent to the mature protophloem file.",
+      "claim_type": "EXPLICIT",
+      "source": "However, translocated proteins of CC origin, are restricted to cells immediately adjacent to the mature protophloem file (Stadler et al., 2005; Paultre et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Stadler et al., 2005 and Paultre et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "5bc7d9b7-1313-45a4-952c-1028653089d0",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C49",
+      "claim": "SEOR-YFP signal was confined to the two large phloem-pole pericycle cells that abut the protophloem sieve element files.",
+      "claim_type": "EXPLICIT",
+      "source": "We used resin embedding of the phloem-unloading zone (Bell et al., 2013) to localize the YFP signal in transverse sections of the root. The YFP signal was confined to the two large PPP cells that abut the PSE files (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "d80280b2-9426-4024-a333-54b08704e6ca",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C50",
+      "claim": "Phloem unloading of SEOR-YFP into companion cells was not detected, only into the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a fluorescent marker for CC nuclei (Zhang et al., 2008) we were unable to detect phloem unloading of SEOR-YFP into CCs, only into the PPP (Figure 4H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 4H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "5cbaa972-a71a-462a-9a20-cdf0e2af8977",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C51",
+      "claim": "Most models of phloem unloading assume that the exit of macromolecules occurs through companion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was unexpected as most models of phloem unloading assume that the exit of macromolecules occurs through CCs (Patrick, 1997; Thorne, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Patrick, 1997 and Thorne, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "0acbc697-1824-4404-a93a-9d3361eb6520",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C52",
+      "claim": "SEOR-YFP protein, synthesized in sieve elements of the shoot, is unloaded from protophloem sieve elements into the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "10 days after grafting, the roots of the grafted plants were indistinguishable from those of the native SEOR-YFP line (Figure 4I,J), demonstrating that SEOR-YFP protein, synthesized in SEs of the shoot, is unloaded from PSEs into the PPP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by grafting experiments shown in Figures 4I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "2acb864a-4e96-4058-8fee-e1bef548908d",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C53",
+      "claim": "Unloading of large probes (GFP 27 kDa and above) did not occur at a constant rate but was suddenly released into the adjoining phloem-pole pericycle cells in distinct pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse movies revealed that unloading of large probes (GFP 27 kDa and above) did not occur at a constant rate, as observed with small solutes. Rather, these proteins were suddenly released into the adjoining PPP cells in distinct pulses (Figure 5, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging shown in Figure 5 and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "0cc8b3ec-8103-47d9-9576-abc5e35f6f92",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C54",
+      "claim": "Batch unloading did not occur at the same time into all cells, but independently into individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Batch unloading did not occur at the same time into all cells, but independently into individual cells (Figure 5; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5 and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "8558b36f-4365-49b6-af30-da8769585643",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C55",
+      "claim": "Small proteins such as GFP were batch unloaded and subsequently moved freely throughout the root.",
+      "claim_type": "EXPLICIT",
+      "source": "Small proteins such as GFP were batch unloaded and subsequently moved freely throughout the root (Figure 5A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 5A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "eb4bcb9d-52b7-44fa-9b16-d299d5aab6dc",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C56",
+      "claim": "Large probes such as aequorin-GFP and SEOR-YFP became trapped inside the phloem-pole pericycle after batch unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "However, large probes such as aequorin-GFP and SEOR-YFP became trapped inside the PPP after batch unloading (Figure 5G\u2013J; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 5G-J and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "ea4bf308-a7e1-4891-ac0b-9dd903b9ada8",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C57",
+      "claim": "Induction of callose in the phloem-pole pericycle using pCALS8::icals3m resulted in a significant arrest in primary root growth.",
+      "claim_type": "EXPLICIT",
+      "source": "After callose induction we observed a significant arrest in primary root growth relative to roots that were transferred to a non-inducing medium (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f420b605-99eb-48bd-a331-400636116418",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C58",
+      "claim": "At 8 hr induction with pCALS8::icals3m, CF was restricted to protophloem sieve element files with minimal lateral unloading into the root.",
+      "claim_type": "EXPLICIT",
+      "source": "Control roots showed the characteristic unloading pattern of wild-type plants (Figure 6C, n = 22) while induced plants showed a severe restriction in phloem unloading. At 8 hr induction, CF was restricted to PSE files with minimal lateral unloading into the root (Figure 6D, n = 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "96a78206-e8c3-43b0-b3f9-b766512f1f5c",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C59",
+      "claim": "At 24 hr induction with pCALS8::icals3m, CF did not enter the unloading zone and remained completely restricted to protophloem sieve elements distal to the unloading zone.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hr induction, this effect was even stronger. CF did not enter the unloading zone and remained completely restricted to PSEs distal to the unloading zone (Figure 6E, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "e99ea00c-3429-48d4-9113-b1a3c7249a1f",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C60",
+      "claim": "CF transport in psAPL::icals3m seedlings was unloaded without restriction at both 8 hr and 24 hr after estradiol induction.",
+      "claim_type": "EXPLICIT",
+      "source": "As above, CF transport in these seedlings was monitored at 8 hr and 24 hr after estradiol induction. At both time points CF was unloaded without restriction, and induced and non-induced seedlings showed an identical pattern of unloading (Figure 6H\u2013J, n = 3, n = 3, n = 2, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 6H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f49e99f3-fffb-4926-81f2-3753535697f5",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C61",
+      "claim": "Callose induction in the psAPL::icals3m seedlings did not significantly affect root growth relative to the uninduced control plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that callose induction in the psAPL::icals3m seedlings did not significantly affect root growth relative to the uninduced control plants (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "68531615-cfd9-4eeb-b7ee-1b4de4c27984",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C62",
+      "claim": "Callose was deposited strongly in the phloem-pole pericycle relative to other cells surrounding the protophloem sieve element files in pCALS8::icals3m seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal imaging of pCALS8::icals3m seedlings confirmed that callose was deposited strongly in the PPP relative to other cells surrounding the PSE files (Figure 6L\u2013O)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 6L-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "8b0d71c3-4990-4b3d-a34d-7d712f5638a3",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C63",
+      "claim": "psAPL::icals3m roots showed strong callose labelling in the companion cell files.",
+      "claim_type": "EXPLICIT",
+      "source": "while psAPL::icals3m roots showed strong callose labelling in the CC files, as predicted (Figure 6\u2014figure supplement 6P\u2013S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6\u2014figure supplement 6P-S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "d07006fd-d4ec-4756-8544-9ed9820d0c16",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C64",
+      "claim": "Phloem unloading occurs predominantly via the phloem-pole pericycle, not companion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data provide strong evidence that phloem unloading occurs predominantly via the PPP, not CCs, and suggest that the PD between PSE and PPP are central players in the unloading process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the callose induction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "3cb24bd3-3419-4a94-891a-eb094f996b8d",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C65",
+      "claim": "Plasmodesmata between protophloem sieve elements and phloem-pole pericycle are central players in the unloading process.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data provide strong evidence that phloem unloading occurs predominantly via the PPP, not CCs, and suggest that the PD between PSE and PPP are central players in the unloading process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the callose induction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "89295953-95df-4f3a-9da7-ba04f64e0648",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C66",
+      "claim": "Plasmodesmata between protophloem sieve elements and metaphloem sieve elements were simple, or occasionally branched.",
+      "claim_type": "EXPLICIT",
+      "source": "PD between the PSE and MP were simple, or occasionally branched (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM observations shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "8461d8d1-8a32-41a4-ac6d-3999bef2656e",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C67",
+      "claim": "Between protophloem sieve elements and companion cells, plasmodesmata displayed the typical single pore on the protophloem sieve element side and multiple branches towards the companion cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Between PSEs and CCs, PD displayed the typical single pore on the PSE side and multiple branches towards the CC (Figure 7C), as shown often for connections between SEs and CCs in other tissues (Esau and Thorsch, 1985; Oparka and Turgeon, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM observations shown in Figure 7C and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "70df3215-5891-4468-9871-1e4ba4ba037f",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C68",
+      "claim": "Most plasmodesmata between protophloem sieve elements and phloem-pole pericycle were funnel-shaped with apertures of up to 300 nm diameter at the protophloem sieve element entrance, tapering towards the phloem-pole pericycle entrance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a few simple PD (10%; n = 20), funnel-shaped PD with apertures of up to 300 nm diameter were found at the PSE entrance, tapering towards the PPP entrance (Figure 7D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM observations shown in Figures 7D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "20adb543-4932-4aa5-8f53-5a8ceb1770d5",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C69",
+      "claim": "Serial block-face scanning electron microscopy collected 2100 serial transverse sections that spanned six complete sieve elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we collected 2100 serial transverse sections that spanned six complete SEs (Figure 8A), including the junction between PSE zero and the adjacent immature PSE (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of the SBFSEM method and reference to Figures 8A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "2a391889-2e05-41ed-b2dd-5f7f3b9f8071",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C70",
+      "claim": "Plasmodesmata relative distribution was 45.3%, 40.8%, and 13.9% between protophloem sieve element-phloem-pole pericycle, protophloem sieve element-companion cells, and protophloem sieve element-metaphloem sieve element, respectively, when corrected for the total interface between the cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "PD relative distribution was 45.3%, 40.8%, and 13.9% between PSE-PPPs, PSE-CCs, and PSE-MSE, respectively, when corrected for the total interface between the cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of 3D reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "876a47e8-eb46-41df-b841-66bd1f893b1d",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C71",
+      "claim": "The total number of plasmodesmata averaged 527 \u00b1 58 (n = 4) per protophloem unloading domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the total number averaged 527 \u00b1 58 (n = 4) per protophloem unloading domain (since Arabidopsis roots are diarch, twice the number is available for unloading within the entire root tip).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of plasmodesmata counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c23be82e-5609-4275-b811-ba18c070068a",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C72",
+      "claim": "In the phloem-unloading zone of the root there are approximately 240 plasmodesmata at the protophloem sieve element-phloem-pole pericycle interface, 215 plasmodesmata at the protophloem sieve element-companion cell interface, and 73 plasmodesmata at the protophloem sieve element-metaphloem interface potentially available for unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the percentage distributions of PD obtained using serial sectioning, we calculated that in the phloem-unloading zone of the root there are approximately 240 plasmodesmata at the PSE-PPP interface, 215 plasmodesmata at the PSE-CC interface, and 73 plasmodesmata at the PSE-MP interface potentially available for unloading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from the measured PD distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "fafdef93-7030-4d73-9e9f-cd9b1a81b32a",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C73",
+      "claim": "The average phloem flow velocity in the protophloem translocation zone was measured to be 22.6 \u00b1 5.1 \u00b5m/s (n = 11).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the average phloem flow velocity in the protophloem translocation zone to be u = 22.6 \u00b1 5.1 \u00b5m/s (n = 11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on direct measurements reported in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "ca56ff75-a739-4b22-8181-7b06824a8db3",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C74",
+      "claim": "The average sieve tube diameter was measured to be 3.6 \u00b1 0.44 \u00b5m (n = 11).",
+      "claim_type": "EXPLICIT",
+      "source": "and the average sieve tube diameter to be: d = 3.6 \u00b1 0.44 \u00b5m (n = 11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on direct measurements reported in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f84c8abb-8207-49aa-a680-5ed2e963b3ea",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C75",
+      "claim": "The volume flow rate to be unloaded from a single protophloem sieve element file is 230 femtoliter/s (230 \u00b5m3/s).",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in a volume flow rate of Q=\u03c04d2u= 230 femtoliter/s (230 \u00b5m3/s) to be unloaded from a single PSE file.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from measured parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "249cc6d7-0421-47f8-a6c3-ba0fd8819d43",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C76",
+      "claim": "Literature values on phloem sucrose concentration average about 500 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Literature values on phloem sucrose concentration average about 500 mM (Hall and Baker, 1972; Kallarackal et al., 1989); Mendoza-C\u00f3zatl et al., 2008; Winter et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "57cd6617-d920-41e2-835e-803a01a0bd79",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C77",
+      "claim": "The required pressure differential to drive unloading solely by bulk flow through simple plasmodesmata would be 8.14 MPa.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the required pressure differential to drive unloading solely by bulk flow through simple PD would be 8.14 MPa (see Appendix for detailed calculations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical modeling calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "9012fcfa-79d5-4961-82c8-32fdfec741c3",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C78",
+      "claim": "Assuming funnel plasmodesmata instead of simple plasmodesmata, the required pressure would be as low as 0.05\u20130.2 MPa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, assuming funnel PD instead of simple PD, the required pressure would be as low as 0.05\u20130.2 MPa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical modeling calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "67884687-cb12-40ad-b341-85a6a12d3bb1",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C79",
+      "claim": "A concentration difference of 276 mM would be required for diffusive unloading through funnel plasmodesmata.",
+      "claim_type": "EXPLICIT",
+      "source": "For the geometrical and physiological values listed above, a concentration difference of 276 mM would be required for diffusive unloading through funnel PDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical modeling calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "f65319ad-bfe5-4b90-b386-f59e1da2bab8",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C80",
+      "claim": "The distinctive funnel shape of the sieve element-to-phloem-pole pericycle plasmodesmata is crucial to enabling efficient unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of unloading kinetics leads us to conclude that the distinctive funnel shape of the SE-to-PPP PD is crucial to enabling efficient unloading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the mathematical modeling and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "b0a8e3de-fb2b-4050-9d1d-1267cb6ef3f1",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C81",
+      "claim": "Convective phloem unloading (a combination of diffusion and bulk flow) is feasible with relatively moderate pressure and concentration differentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, convective phloem unloading, i.e. a combination of diffusion and bulk flow, is feasible, and that relatively moderate pressure and concentration differentials are necessary to drive transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "b206f1cd-e800-441f-bbdd-f8b3b1d7f283",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C82",
+      "claim": "Bulk flow is likely to be the dominant mechanism of unloading based on structural and physiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our structural and physiological data bulk flow is likely to be the dominant mechanism of unloading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the combined structural and physiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "5da46b30-f513-4fc3-84e6-903d79c1cbc3",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C83",
+      "claim": "Bulk flow would require a pressure differential of about 0.05\u20130.2 MPa, equal to an osmotic potential difference of about 20\u201380 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk flow would require a pressure differential of about 0.05\u20130.2 MPa, equal to an osmotic potential difference of about 20\u201380 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical modeling calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c141322f-5022-4b38-9928-c1c7853f5e3d",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C84",
+      "claim": "Solute unloading by diffusion alone would require a concentration difference of 276 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Solute unloading by diffusion alone, on the other hand, would require a concentration difference of 276 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical modeling calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "d8c2d2f5-776a-426c-923f-eae35e6d0e20",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C85",
+      "claim": "The protophloem sieve element-phloem-pole pericycle interface is the principal route for all solutes to be unloaded.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the PSE-PPP interface is the principal route for all solutes to be unloaded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "e7bc9136-cb69-4a6e-83b2-8c4fa1336169",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C86",
+      "claim": "Unlike the xylem pole pericycle, which is involved in lateral-root formation and apoplastic xylem loading, a specific role for the phloem-pole pericycle has not been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the xylem pole pericycle (XPP), which is involved in lateral-root formation (Parizot et al., 2012) and apoplastic xylem loading (Takano et al., 2002), a specific role for the PPP has not been proposed, although its transcriptome shares similarity to the underlying protophloem (Parizot et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies and represents a gap in knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "ee49eff0-dc97-4113-8170-de35b76845eb",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C87",
+      "claim": "The 'post-phloem domain' previously described by Stadler et al. (2005) and Paultre et al. (2016) is the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now identified the 'post-phloem domain' previously described by Stadler et al. (2005) and Paultre, et al., 2016 as the PPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the experimental identification of the PPP as the recipient of unloaded proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "9eaee4fd-e83f-48ba-b709-f256cc8a52d1",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C88",
+      "claim": "The phloem-pole pericycle may function as a repository for degraded protophloem sieve element contents as well as systemic macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that while the XPP may be involved in apoplastic xylem loading, the PPP is intimately involved in symplastic phloem unloading, and may function as a repository for degraded PSE contents as well as systemic macromolecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the observed accumulation of macromolecules in the PPP.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "5fd7e4af-c872-43b6-9f35-eb4ab108eb5b",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C89",
+      "claim": "Phloem-pole pericycle cells may be specialized for the degradation of proteins and RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "PPPs are the major recipients of systemic macromolecules and it might be expected that they are specialized for the degradation of proteins and RNAs, an interesting area for future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the potential function of PPP cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "d4ff7dbb-36f8-47c1-84f0-b6776fbde79c",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C90",
+      "claim": "Phloem-pole pericycle cells may protect the downstream cells from receiving unwanted, potentially interfering mRNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "PPPs may also protect the downstream cells from receiving unwanted, potentially interfering mRNA molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the potential protective function of PPP cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "1e3b8c99-ff9d-44e8-ab38-14f6ef445e18",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C91",
+      "claim": "Phloem-mobile viruses are able to move beyond the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Phloem-mobile viruses are able to move beyond the PPP suggesting that they can break the 'barrier' normally imposed by the PPP (Valentine et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Valentine et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "5420208a-fd42-485b-ae4a-a3d130341b57",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C92",
+      "claim": "CalS8 is expressed specifically in the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of this study, we found that CalS8 is expressed specifically in the PPP (Figure 6A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "dd78ce9c-4da3-45d4-87e2-6cd25ce91c16",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "claim_id": "C93",
+      "claim": "Within the phloem unloading zone the sAPL promoter was expressed strongly in companion cells and metaphloem sieve element, but not in the phloem-pole pericycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the phloem unloading zone the psAPL promoter was expressed strongly in CCs and MSE, but not in the PPP (Figure 6F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 6F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phloem unloading in Arabidopsis roots occurs through plasmodesmata by convective transport (a combination of mass flow and diffusion). Mathematical modeling demonstrates that funnel plasmodesmata enable efficient unloading with moderate pressure differentials (0.05-0.2 MPa), whereas simple plasmodesmata would require physiologically unrealistic pressures (8.14 MPa). Bulk flow is likely the dominant mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are supported by integrated experimental and theoretical evidence. The mathematical modeling (C77-C84) is based on measured physiological parameters (flow velocity, tube diameter, plasmodesmata counts) and demonstrates that the observed funnel plasmodesmata structure (C3, C68) is necessary for feasible unloading. The conclusion of convective transport (C1, C81) logically follows from the structural data and modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Solutes and proteins are diverted specifically into the phloem-pole pericycle (PPP) during unloading, not into companion cells. The PPP is connected to protophloem sieve elements by unique funnel plasmodesmata and represents the previously described 'post-phloem domain'. Plasmodesmata between PSE and PPP are the central route for phloem unloading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence support this result: fluorescent protein localization (C49, C50), grafting experiments (C52), callose induction experiments blocking PPP connections (C57-C64), and ultrastructural analysis (C3, C68). The identification of the PPP as the post-phloem domain (C87) is well-supported by the protein localization data matching previous descriptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Large proteins (\u226527 kDa) are unloaded from protophloem sieve elements in discrete pulses ('batch unloading') rather than continuously. Small proteins like GFP move freely after batch unloading, while large proteins (aequorin-GFP, SEOR-YFP) remain trapped in the phloem-pole pericycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Time-lapse imaging experiments (C53-C56) directly demonstrate the pulsatile nature of protein unloading and size-dependent retention. The observations are consistent across multiple protein sizes and are supported by FRAP experiments. The phenomenon is clearly distinguished from continuous solute unloading.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Specific induction of callose in the phloem-pole pericycle using pCALS8::icals3m blocks phloem unloading and arrests root growth, while callose induction in companion cells (psAPL::icals3m) does not affect unloading or growth. This demonstrates that the PPP, not companion cells, is the primary route for phloem unloading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The callose induction experiments provide strong functional evidence for the role of PPP in unloading. The contrasting results between PPP-specific (C57-C59, C62) and CC-specific (C60-C61, C63) callose induction, combined with proper controls and tissue-specific promoter validation, support the conclusion that PPP is the primary unloading route.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "73e34c12-5e86-4145-930c-0028b4f26ca1",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Three distinct types of plasmodesmata connect protophloem sieve elements to surrounding cells: funnel-shaped plasmodesmata (up to 300 nm aperture) at the PSE-PPP interface, pore-plasmodesmata at the PSE-CC interface, and simple plasmodesmata at the PSE-MSE interface. Quantitative analysis shows approximately 240 funnel plasmodesmata at the PSE-PPP interface per unloading domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ultrastructural characterization is supported by both TEM (C66-C68) and serial block-face SEM with 3D reconstruction (C69-C72). The quantitative data on plasmodesmata distribution and numbers are based on systematic analysis of serial sections. The structural diversity of plasmodesmata types is well-documented with clear images.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "6ccd808f-aad5-4d08-aad5-62ae3cba8e40",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Differentiating protophloem sieve elements are symplastically isolated until nuclear degeneration occurs, at which point sieve-plate pores open rapidly, allowing the cell to become integrated into the phloem-unloading zone. Each PSE is active in unloading for only 2-4 hours based on root growth rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Time-lapse imaging with esculin and GFP-labeled ER (C34-C36) directly demonstrates the temporal relationship between nuclear degeneration and sieve-plate opening. The calculation of active unloading time (C41) is a reasonable inference based on measured root growth rates (C40) and unloading zone dimensions (C38).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "0eda07f5-734e-4286-81e8-ced8cb2597e0",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The phloem of Arabidopsis roots is subdivided into distinct functional domains. Flow velocity measurements show deceleration starting 300-400 \u03bcm behind PSE zero, defining the unloading zone. The average flow velocity is 22.6 \u00b1 5.1 \u03bcm/s with a sieve tube diameter of 3.6 \u00b1 0.44 \u03bcm, resulting in a volume flow rate of 230 femtoliter/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional zonation (C39) is supported by direct flow velocity measurements using FRAP (C38, C73). The measured parameters (C73-C75) are clearly stated with appropriate sample sizes (n=11) and standard deviations. The calculated flow rate (C75) follows directly from the measured velocity and diameter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "c1bb71b8-51f2-46ba-8f40-02e1d4c1ccc5",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Callose deposition increases at the junction between the phloem unloading zone and translocation zone, covering significant portions of PSE lateral walls. This callose deposition correlates with the observed reduction in flow and may provide structural basis for functional isolation of the translocation zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Sirofluor staining (C43) provides direct visualization of callose deposition patterns. The correlation with flow reduction (C44) is reasonable given the known role of callose in restricting plasmodesmata. However, the claim that callose 'may provide' structural basis is appropriately cautious, as causation is not definitively established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "782c736e-428f-463a-b106-484591fade71",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CalS8 is expressed specifically in the phloem-pole pericycle, while the sAPL promoter is expressed in companion cells and metaphloem sieve elements but not in the PPP within the phloem unloading zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The promoter expression patterns (C92, C93) are directly demonstrated by fluorescence imaging (Figures 6A, B, F, G). These observations are critical for validating the tissue-specific callose induction experiments and are clearly supported by the imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "14d4246c-912a-4d46-8a92-6468fbf5e712",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The phloem-pole pericycle has a major role in regulating phloem unloading in roots and may function as a repository for degraded PSE contents and systemic macromolecules, potentially protecting downstream cells from unwanted mRNA molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the major role of PPP in unloading (C6) is well-supported by the experimental data, the proposed functions as a repository and protective barrier (C88-C90) are explicitly speculative. The authors appropriately identify these as areas for future research. The speculation is reasonable given the data but lacks direct experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Small solutes (CFDA, esculin) and small proteins (GFP) move symplastically throughout the root tip without barriers. CFDA shows preferential movement into the cortex and is rapidly sequestered into vacuoles, while esculin shows minimal sequestration except at high concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential behavior of fluorescent probes (C28, C30, C33) is supported by real-time imaging and is consistent with prior literature (C29). The observations establish baseline unloading patterns for small molecules that contrast with the restricted movement of large proteins. The claims are well-supported by imaging data and citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    },
+    {
+      "id": "06395d56-c871-4eee-9b4d-d966cc30e214",
+      "content_id": "b51064ca-9991-42ac-86c4-226900fedfbe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context for phloem biology, including agricultural importance, phloem composition, cellular organization, existing models of phloem unloading, and properties of fluorescent probes used in the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, properly cited throughout. They provide necessary context for interpreting the experimental results. The citations appear appropriate and the knowledge claims are consistent with the field. The critique of existing models (C21-C23) is supported by recent measurements (C22).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:05:03.757998Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8855854f-beee-4fe2-bea3-5cfeaf29b7fa",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "57cd6617-d920-41e2-835e-803a01a0bd79",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "9012fcfa-79d5-4961-82c8-32fdfec741c3",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "67884687-cb12-40ad-b341-85a6a12d3bb1",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "f65319ad-bfe5-4b90-b386-f59e1da2bab8",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "b0a8e3de-fb2b-4050-9d1d-1267cb6ef3f1",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "b206f1cd-e800-441f-bbdd-f8b3b1d7f283",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "5da46b30-f513-4fc3-84e6-903d79c1cbc3",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "c141322f-5022-4b38-9928-c1c7853f5e3d",
+      "result_id": "8064f8ca-3978-4a6c-a2a4-42defaaf9954"
+    },
+    {
+      "claim_id": "2ad11c19-067e-4777-a44d-66e8b7a183b7",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "a9194b0a-5b2d-485d-8e88-fdcc398c43f5",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "5bc7d9b7-1313-45a4-952c-1028653089d0",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "d80280b2-9426-4024-a333-54b08704e6ca",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "0acbc697-1824-4404-a93a-9d3361eb6520",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "d07006fd-d4ec-4756-8544-9ed9820d0c16",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "3cb24bd3-3419-4a94-891a-eb094f996b8d",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "d8c2d2f5-776a-426c-923f-eae35e6d0e20",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "ee49eff0-dc97-4113-8170-de35b76845eb",
+      "result_id": "7d5f0ae0-8e64-4385-9b43-aa21e71290f9"
+    },
+    {
+      "claim_id": "7c149599-423d-44c0-b272-48569263f2cc",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "b4c736a7-fcee-4253-973a-60ab6e451a16",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "2acb864a-4e96-4058-8fee-e1bef548908d",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "0cc8b3ec-8103-47d9-9576-abc5e35f6f92",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "8558b36f-4365-49b6-af30-da8769585643",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "eb4bcb9d-52b7-44fa-9b16-d299d5aab6dc",
+      "result_id": "791b1bf3-1f8d-4922-ba34-5ae0b5494fec"
+    },
+    {
+      "claim_id": "ea4bf308-a7e1-4891-ac0b-9dd903b9ada8",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "f420b605-99eb-48bd-a331-400636116418",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "96a78206-e8c3-43b0-b3f9-b766512f1f5c",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "e99ea00c-3429-48d4-9113-b1a3c7249a1f",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "f49e99f3-fffb-4926-81f2-3753535697f5",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "68531615-cfd9-4eeb-b7ee-1b4de4c27984",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "8b0d71c3-4990-4b3d-a34d-7d712f5638a3",
+      "result_id": "59cc4baf-aebd-43cd-ad56-bf08e7c9d33f"
+    },
+    {
+      "claim_id": "70df3215-5891-4468-9871-1e4ba4ba037f",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "89295953-95df-4f3a-9da7-ba04f64e0648",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "8461d8d1-8a32-41a4-ac6d-3999bef2656e",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "2a391889-2e05-41ed-b2dd-5f7f3b9f8071",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "876a47e8-eb46-41df-b841-66bd1f893b1d",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "c23be82e-5609-4275-b811-ba18c070068a",
+      "result_id": "73e34c12-5e86-4145-930c-0028b4f26ca1"
+    },
+    {
+      "claim_id": "4b154069-960e-4471-b69a-36ca67609934",
+      "result_id": "6ccd808f-aad5-4d08-aad5-62ae3cba8e40"
+    },
+    {
+      "claim_id": "090925a5-ecab-42d9-b6b3-8bdf9dc8b720",
+      "result_id": "6ccd808f-aad5-4d08-aad5-62ae3cba8e40"
+    },
+    {
+      "claim_id": "f9984998-e9cf-4b0a-ba95-fa0cd485a1f4",
+      "result_id": "6ccd808f-aad5-4d08-aad5-62ae3cba8e40"
+    },
+    {
+      "claim_id": "1407f522-a989-4f26-915e-5d1266dcfe10",
+      "result_id": "6ccd808f-aad5-4d08-aad5-62ae3cba8e40"
+    },
+    {
+      "claim_id": "f7cb447e-e1e9-4fea-b146-3d4cbcedb8c7",
+      "result_id": "0eda07f5-734e-4286-81e8-ced8cb2597e0"
+    },
+    {
+      "claim_id": "7604bbf6-3479-44ff-9387-264b4d7492ec",
+      "result_id": "0eda07f5-734e-4286-81e8-ced8cb2597e0"
+    },
+    {
+      "claim_id": "fafdef93-7030-4d73-9e9f-cd9b1a81b32a",
+      "result_id": "0eda07f5-734e-4286-81e8-ced8cb2597e0"
+    },
+    {
+      "claim_id": "ca56ff75-a739-4b22-8181-7b06824a8db3",
+      "result_id": "0eda07f5-734e-4286-81e8-ced8cb2597e0"
+    },
+    {
+      "claim_id": "f84c8abb-8207-49aa-a680-5ed2e963b3ea",
+      "result_id": "0eda07f5-734e-4286-81e8-ced8cb2597e0"
+    },
+    {
+      "claim_id": "eba7c97e-0fb1-4d13-b4b7-11514b2fd8db",
+      "result_id": "c1bb71b8-51f2-46ba-8f40-02e1d4c1ccc5"
+    },
+    {
+      "claim_id": "a520ba1d-f7a5-4aad-beb6-2806cc063bf9",
+      "result_id": "c1bb71b8-51f2-46ba-8f40-02e1d4c1ccc5"
+    },
+    {
+      "claim_id": "5420208a-fd42-485b-ae4a-a3d130341b57",
+      "result_id": "782c736e-428f-463a-b106-484591fade71"
+    },
+    {
+      "claim_id": "dd78ce9c-4da3-45d4-87e2-6cd25ce91c16",
+      "result_id": "782c736e-428f-463a-b106-484591fade71"
+    },
+    {
+      "claim_id": "c78b019d-fcff-4d21-a987-9c9e784c10df",
+      "result_id": "14d4246c-912a-4d46-8a92-6468fbf5e712"
+    },
+    {
+      "claim_id": "9eaee4fd-e83f-48ba-b709-f256cc8a52d1",
+      "result_id": "14d4246c-912a-4d46-8a92-6468fbf5e712"
+    },
+    {
+      "claim_id": "5fd7e4af-c872-43b6-9f35-eb4ab108eb5b",
+      "result_id": "14d4246c-912a-4d46-8a92-6468fbf5e712"
+    },
+    {
+      "claim_id": "d4ff7dbb-36f8-47c1-84f0-b6776fbde79c",
+      "result_id": "14d4246c-912a-4d46-8a92-6468fbf5e712"
+    },
+    {
+      "claim_id": "e1472b1a-0309-4280-8e43-60c8cc0f5aaa",
+      "result_id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9"
+    },
+    {
+      "claim_id": "c7a94550-c9da-499b-813c-1deab11804a3",
+      "result_id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9"
+    },
+    {
+      "claim_id": "49b78733-898d-473d-a72c-35107184eabd",
+      "result_id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9"
+    },
+    {
+      "claim_id": "75fadf18-84c7-4822-9c29-95a9e95f16ae",
+      "result_id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9"
+    },
+    {
+      "claim_id": "72ea36d6-d432-4f9d-b1d3-efd57fd1f3dc",
+      "result_id": "fd4bc562-46d9-4c42-bf77-836e1f4c54b9"
+    },
+    {
+      "claim_id": "a50d4eec-9080-4e04-99b8-10b2da9dd41b",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "05251126-cd7c-43d5-ac2b-baebe77bba17",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "f844cd7b-d19f-47e5-bad0-e8c8abacbb59",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "6fa3d16f-a977-4a53-a00c-5d9128b85f88",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "a43ad0b0-3eb9-46a9-83e3-6a6a4c36c9fb",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "53f040e3-ca34-4dde-bb73-9a039fd48c0f",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "a42a4973-d811-4c80-8683-76a34ac93304",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "27d40e9c-20d7-446f-980e-f05b827bd742",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "11d1a946-e0e3-4044-8802-ff49039b6e81",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "39b17308-cf7d-454d-9170-9e1a1224baff",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "436afca6-bf52-4fb1-a497-f00843194a1e",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "040cf4ec-13d4-4f9c-b92b-c5647a641eda",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "41a49658-a155-40e9-87ad-80d29ac74833",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "c3eb5b5e-7156-43f1-b230-9ba2c663729a",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "129a5a47-3dcb-4e4f-9c6f-204ea7783647",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "3be0c3ba-6df7-4236-a58b-ec7681df00e2",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "f94624f1-0248-4b83-94fd-85211f82e913",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "dc3d1f2d-86c6-4b73-966a-3051cc72c91e",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "f2941a7c-cf6a-4c83-b2da-9cf12451a98a",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "3a84da9e-c731-4495-b3fc-7a0c5bf94391",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "b4f897b5-0d72-4be5-af49-bf8c08b16180",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "83649795-aaa4-4052-b748-d2d34979913c",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "06d90026-829c-4d91-b536-0ef4d13b3a37",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "4535951a-7099-4b94-82ff-139e40b25ef8",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "a02ebad1-abc9-4f25-b8fe-5439ed7d9862",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "e8bf1293-06b7-4328-b5bc-fb7dd082a180",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "70b3d4de-285f-4c7f-8b9b-00072f9a7c92",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "38c3d9e4-0b2f-47e7-b8ce-31efbe0a278b",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "5cbaa972-a71a-462a-9a20-cdf0e2af8977",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "249cc6d7-0421-47f8-a6c3-ba0fd8819d43",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "e7bc9136-cb69-4a6e-83b2-8c4fa1336169",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    },
+    {
+      "claim_id": "1e3b8c99-ff9d-44e8-ab38-14f6ef445e18",
+      "result_id": "06395d56-c871-4eee-9b4d-d966cc30e214"
+    }
+  ],
+  "comparisons": []
+}

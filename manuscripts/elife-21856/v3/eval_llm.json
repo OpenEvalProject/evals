@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "CUT&RUN is a chromatin profiling method performed in situ where antibody-targeted MNase cleaves DNA around protein binding sites, releasing specific protein-DNA complexes into the supernatant. The method achieves limit digestion rapidly at 0\u00b0C, with fragment size distributions remaining consistent across a 32-fold time range (4-128 seconds), and supernatant extraction quantitatively recovers TF-bound fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C18-C22, and C24 collectively establish the core CUT&RUN methodology with strong experimental support. The gel electrophoresis (Figure 1B), fragment size distributions (Figure 1C), and comparison of supernatant vs. total DNA extraction (Figure 1\u2014figure supplement 3) provide direct evidence for the method's principles and quantitative recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CUT&RUN yields precise transcription factor profiles in yeast with high sensitivity and specificity. For Abf1 and Reb1, >90% of TF sites show occupancy over their corresponding motifs with negligible cross-occupancy, demonstrating improved sensitivity/specificity trade-offs relative to ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C25-C30 are strongly supported by motif analysis (Figure 1\u2014figure supplement 4), heat maps showing motif occupancy (Figure 2), and direct comparisons with ORGANIC and standard ChIP-seq. The near-complete correspondence between motif presence and TF occupancy with minimal cross-reactivity provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "CUT&RUN achieves near base-pair resolution, revealing sharp 20 bp footprints for Abf1 and Reb1 centered over their motifs. The method detects 10 bp periodic cleavage patterns flanking TF binding sites, matching B-form DNA helical periodicity, suggesting tethered MNase preferentially accesses one face of the DNA helix and can cleave nearby nucleosomal DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by high-resolution footprint analysis (Figure 3A) and autocorrelation analysis confirming 10 bp periodicity independent of base composition (Figure 3B). The interpretation linking periodicity to DNA structure is reasonable given the known 10 bp/turn of B-form DNA, though the mechanistic inference about chromatin flexibility (C34) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CUT&RUN efficiently maps large, dynamic chromatin-associated complexes including Mot1 and Sth1. Mot1 profiles obtained with ~15% the sequencing depth of ORGANIC show expected upstream positioning relative to TBP sites, while Sth1 profiles show gradual yield increases over time with negligible background in negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by comparative data for Mot1 (Figure 4A, Figure 4\u2014figure supplement 1) and Sth1 (Figure 4B-C) showing concordance with ORGANIC profiling but with higher efficiency. The negative control for Sth1 (C40) demonstrates specificity. The conclusion about mapping large dynamic complexes (C42) is well-justified by these examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CUT&RUN successfully maps the rare, insoluble yeast centromeric nucleosome containing Cse4 and H2A. Both histones show maximum occupancy confined to the ~120 bp functional centromere with 4-fold better resolution than standard X-ChIP, demonstrating that CUT&RUN can map rare, insoluble, AT-rich complexes without MNase sequence bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C50-C52 are strongly supported by centromere mapping data (Figure 5A-C) showing co-localization of Cse4 and H2A at all 16 yeast centromeres. The demonstration of H2A in the centromeric nucleosome (C50) addresses a controversy with appropriate citations. The lack of AT-bias (C51) is convincingly shown given the >90% A+T content of centromeric DNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of \u2265150 bp fragments reveals broad peaks around TF binding sites extending ~0.5 kb on either side, with 'notches' at the sites themselves that deepen with digestion time. This extended cleavage pattern suggests the flexibility of the antibody-MNase tether allows probing of nearby chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by \u2265150 bp fragment profiles (Figures 1D, 2, 4) and heat map analysis showing extended occupancy. The interpretation (C54, C56) that this represents gradual release of fragments with one end near the TF and flexibility of the tether is reasonable, though somewhat speculative. The comparison to DamID's >1 kb reach (C56) provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CUT&RUN maps human CTCF at high resolution with higher dynamic range than X-ChIP-seq and ChIP-exo when comparing 10 million reads. The method shows undetectable background in no-antibody controls, reveals pronounced 'tram-tracks' separated by 44 bp with consistent cleavage patterns over a ~300-fold time range, and maps both TFs and flanking nucleosomes simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are well-supported by CTCF mapping data (Figure 6A-C) showing superior dynamic range, negative controls (Figure 6\u2014figure supplement 1), and precise cleavage patterns. The consistency of cleavage over time (C62) and the interpretation of homogeneous positioning (C63) are supported by the data, though the exact biological meaning requires some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CUT&RUN successfully mapped Myc and Max at high resolution, with Max CUT&RUN showing much higher dynamic range than ENCODE ChIP-seq and identifying a much larger number of Max binding sites. Max is present at almost all Myc sites as expected, while ENCODE X-ChIP-seq identified 10-fold fewer Max sites despite showing high occupancy when aligned to Max CUT&RUN sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by Myc/Max mapping data (Figure 6\u2014figure supplement 3). The comparison with ENCODE data (C66, C68-C69) demonstrates CUT&RUN's superior sensitivity, with the heat map analysis (Figure 6\u2014figure supplement 3C) showing that X-ChIP-seq signal is present but below detection threshold. The Myc-Max overlap (C67) validates expected biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CUT&RUN maps H3K27me3 in compacted heterochromatin with similar landscapes but much higher dynamic range compared to ENCODE X-ChIP-seq. H3K27me3-marked chromatin is readily released into the soluble fraction, demonstrating that Protein A-MNase can access compacted chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by H3K27me3 mapping data (Figure 6\u2014figure supplement 4) showing successful profiling of this repressive mark. The inference that pA-MN can access compacted chromatin (C71-C72) is reasonable given H3K27me3's association with heterochromatin, though direct structural evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "By combining CUT&RUN with native ChIP, direct and indirect CTCF binding sites can be distinguished at near base-pair resolution. Native ChIP identified 2,298 high-motif-score sites while CUT&RUN detected ~22,000 sites. CUT&RUN-only sites show footprints in native ChIP input and correlate with ChIA-PET and Hi-C contact sites, enabling directional mapping of long-range genomic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are supported by native ChIP development (Figure 7\u2014figure supplement 1), comparative analysis (Figure 7A-B), and validation with ChIA-PET (Figure 8A, C) and Hi-C data (Figure 8B). The distinction between direct and indirect sites is well-established, with 91% of direct sites present in ChIA-PET data and quantitative correlation between Hi-C scores and CUT&RUN signal at indirect sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "CUT&RUN allows quantitative measurements with low cell numbers. When normalized to spike-in DNA, cleavage events are proportional to starting cell number, while standard normalization shows no clear differences between samples, suggesting high data quality is maintained with low input material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by cell titration experiments (Figure 9) showing proportional response with spike-in normalization and consistent quality with standard normalization. The data demonstrate both quantitative accuracy and robustness across different cell numbers (600,000 to 10 million cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C84",
+      "C85",
+      "C92",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CUT&RUN is simple, robust, and requires only ~1/10th the sequencing depth of ChIP-seq due to intrinsically low background from in situ targeted cleavage. The method requires ~10 million paired-end reads for CTCF (similar to low-resolution ChIP-seq but far fewer than ChIP-exo's ~100 million), making it cost-effective for transcription factor profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C84-C85, C92, C106-C108 are supported by consistent comparisons throughout showing 2-3 million reads for yeast TFs versus 20-30 million for ORGANIC, and ~10 million for human CTCF versus ~100 million for ChIP-exo. The mechanistic explanation (C92) that targeted cleavage reduces background is logical and supported by negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Because nuclei remain intact during MNase activation, CUT&RUN can probe the local chromatin environment around targeted sites. The method recovers 3D contact sites with base-pair resolution, observing cleavages on one DNA face flanking yeast TFs and at previously identified CTCF contact sites in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C96-C98 are supported by observations of flanking nucleosomes, extended cleavage patterns (Figure 3), and validation with ChIA-PET/Hi-C data (Figure 8). The ability to probe local environment is demonstrated, though the mechanistic details of how 3D contacts lead to cleavage require some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C105"
+    ],
+    "result": "CUT&RUN is antibody-based and widely applicable to any chromatin epitope, providing quantitative occupancy profiles with standard and spike-in normalization options. The only non-standard requirement is pA-MN fusion protein, which can be produced in sufficient quantities for >100,000 samples from a single bacterial culture batch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C105 are supported by successful application to multiple targets (histones, TFs, histone modifications) and spike-in normalization experiments (Figure 9). The calculation for pA-MN yield (C90) is based on the protocol but not directly validated experimentally. The spike-in strategy (C105) is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C109",
+      "C110"
+    ],
+    "result": "CUT&RUN resolves crosslinking-, sonication-, and solubilization-related issues inherent to ChIP because it operates on different principles. The method shows near absence of background under brief low-temperature conditions, lacks preference for accessible or AT-rich DNA, and achieves zero-order cleavage kinetics with steady particle release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93, C109-C110 are supported by the in situ nature of the method, recovery of essentially all Abf1/Reb1 motifs, successful mapping of AT-rich centromeres, and consistent cleavage across time points. The mechanistic explanations (C109-C110) are reasonable inferences from the data, though some aspects are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Accounting for epitope abundances, mapping ~22,000 CTCF sites with 600,000 cells is comparable in sensitivity to ultra-low input ChIP-seq protocols that map abundant histone modifications with ~5,000 cells. However, ultra-low-input ChIP provides only ~2 kb resolution while CUT&RUN provides near base-pair resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by the demonstrated cell number requirements and resolution comparisons. The sensitivity comparison (C111) requires accounting for the ~100-fold difference in epitope abundance between CTCF and H3K27me3, which is reasonable but involves some estimation. The resolution advantage is clearly demonstrated throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "CUT&RUN has practical advantages including antibody binding in intact nuclear environment (potentially successful with antibodies validated cytologically), compatibility with salt-fractionation, suitability for automation, and potential application to epigenome diagnostics. The method is an attractive alternative to ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95, C113-C115 include speculative statements about future applications and potential advantages. While C94-C95 and C113 are reasonable extrapolations marked as speculation/inference, they lack direct experimental validation. The summary statements (C114-C115) are supported by the overall body of work but represent conclusions rather than specific testable results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on existing methods: ChIP has changed little since 1985; crosslinking causes epitope masking and false positives; native ChIP provides direct protein-DNA interaction maps but has extraction efficiency issues; DamID resolution is limited by GATC site distribution; ChEC-seq achieved near base-pair resolution; enzyme tethering methods require fusion constructs for each target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 provide background context supported by appropriate citations to published literature. These are primarily literature review claims establishing the rationale for developing CUT&RUN, accurately representing prior work based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background on normalization and 3D genome mapping: Hi-C contact sites can be computationally predicted from CTCF binding; ChIP-seq normalization typically uses genome-wide background but fails for abundant proteins; spike-in controls can correct this but require cross-species cells and antibody cross-reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 provide background on normalization strategies and 3D genome methods, supported by appropriate citations. These accurately represent standard practices and published methods, providing context for CUT&RUN's spike-in normalization approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Structural information: Abf1 has two DNA-binding domains spaced ~10 bp apart while Reb1 has a single Myb-like DNA-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are factual statements about TF structure supported by citations to published structural studies. These provide relevant context for interpreting the footprinting results.",
+    "result_type": "MINOR"
+  }
+]

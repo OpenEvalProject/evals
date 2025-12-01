@@ -1,0 +1,1110 @@
+{
+  "submission": {
+    "id": "c0b7115d-a23d-4d27-b108-0d433b160457",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:20:45.466280Z",
+    "updated_at": "2025-11-30T22:20:45.466280Z"
+  },
+  "content": [
+    {
+      "id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "submission_id": "c0b7115d-a23d-4d27-b108-0d433b160457",
+      "content_type": "manuscript",
+      "content_text": "# Cooperative and acute inhibition by multiple C-terminal motifs of L-type Ca2+ channels\n\n## Authors\n\n- Nan Liu<sup>1</sup> ([ORCID: 0000-0002-9606-4732](https://orcid.org/0000-0002-9606-4732))\n- Yaxiong Yang<sup>1</sup>\n- Lin Ge<sup>1</sup>\n- Min Liu<sup>1</sup>\n- Henry M Colecraft<sup>2</sup>\n- Xiaodong Liu<sup>1</sup> ([ORCID: 0000-0002-3171-9611](https://orcid.org/0000-0002-3171-9611)) \u2020\n\n### Affiliations\n\n1. X-Lab for Transmembrane Signaling Research, Department of Biomedical Engineering, School of Medicine Tsinghua University Beijing China\n2. Department of Physiology and Cellular Biophysics Columbia University New York United States\n3. School of Life Sciences Tsinghua University Beijing China\n4. IDG/McGovern Institute for Brain Research Tsinghua University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nInhibitions and antagonists of L-type Ca2+ channels are important to both research and therapeutics. Here, we report C-terminus mediated inhibition (CMI) for CaV1.3 that multiple motifs coordinate to tune down Ca2+ current and Ca2+ influx toward the lower limits determined by end-stage CDI (Ca2+-dependent inactivation). Among IQV (preIQ3-IQ domain), PCRD and DCRD (proximal or distal C-terminal regulatory domain), spatial closeness of any two modules, e.g., by constitutive fusion, facilitates the trio to form the complex, compete against calmodulin, and alter the gating. Acute CMI by rapamycin-inducible heterodimerization helps reconcile the concurrent activation/inactivation attenuations to ensure Ca2+ influx is reduced, in that Ca2+ current activated by depolarization is potently (~65%) inhibited at the peak (full activation), but not later on (end-stage inactivation, ~300 ms). Meanwhile, CMI provides a new paradigm to develop CaV1 inhibitors, the therapeutic potential of which is implied by computational modeling of CaV1.3 dysregulations related to Parkinson\u2019s disease.\n\n## Introduction\n\nL-type Ca2+ channels (LTCC or CaV1 channels) play pivotal roles in numerous physiological functions by mediating Ca2+ influx and membrane excitability (Striessnig et al., 2014). Among four isoforms of CaV1.1\u2013CaV1.4 in LTCC family, CaV1.3 channels exhibit unique biophysical properties (Lieb et al., 2014; Xu and Lipscombe, 2001) involving diverse regulatory mechanisms (Ben-Johny and Yue, 2014; Christel and Lee, 2012; Huang et al., 2012; Tan et al., 2011). Widely distributed in various excitable tissues, including both cardiovascular and nervous systems (Brandt et al., 2003; Mangoni et al., 2003; Nemzou et al., 2006; Striessnig, 2007), CaV1.3 is also involved in a wide spectrum of pathology, including multiple inheritable diseases (Pinggera and Striessnig, 2016; Platzer et al., 2000). As one prominent exemplar of its pathophysiological linkage, CaV1.3 expressed in substantia nigra pars compacta (SNc) neurons tightly controls the autonomous subthreshold Ca2+ oscillations which have been considered to underlie the pathophysiology of Parkinson\u2019s disease (PD)\u00a0(Chan et al., 2007; Guzman et al., 2009, 2010).\n\nCaV1.3 is tuned by its own distal carboxyl tail (DCT) to compete with apoCaM (Ca2+-free calmodulin), which is pre-associated with the carboxyl terminus of the channel at preIQ3-IQ domain (denoted as IQV). Closely involved in both apoCaM and Ca2+/CaM binding (Jurado et al., 1999), IQV plays important roles in channel functions (Ben Johny et al., 2013; Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006). The competitive tuning is highly regulated by fluctuations of [apoCaM], the strength of particular DCT isoforms, or the apoCaM affinity with IQV (Adams et al., 2014; Bazzazi et al., 2013; Liu et al., 2010). DCT consists of two putative \u03b1-helical domains\u2014a proximal and a distal C-terminal regulatory domain (termed PCRD and DCRD, respectively) (Hulme et al., 2006). Positively charged PCRD could coordinate with negatively charged DCRD, in the context of CaV1.3 (Liu et al., 2010), to regulate effective CaM affinity to\u00a0the IQV region of the channel. Besides the reported inhibition on Ca2+-dependent inactivation (CDI) (Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006), several studies suggest that DCT also concurrently attenuates voltage-gated activation (VGA), reducing the\u00a0maximum open probability and positively shifting the voltage dependence (Hulme et al., 2006; Lieb et al., 2014; Liu et al., 2016; Scharinger et al., 2015; Singh et al., 2008; Wahl-Schott et al., 2006). Altogether, this competitive tuning of CaV1 gating (activation/inactivation) emerges as a new modality distinct from conventional inhibitions such as intensively-studied Ca2+ channel blockers (CCBs) that normally only reduce VGA (Hockerman et al., 1997), or Ca2+/CaM-triggered conformational changes that induce CDI (Ben-Johny and Yue, 2014). However, several key matters still remain to be clarified before such new CMI (C-terminus Mediated Inhibition) could be fully established. First, PCRD, DCRD and IQV seemingly work cooperatively to mediate CMI as suggested by aforementioned analyses, but the exact interrelationships among these three motifs are yet to be elucidated. Second, CMI is supposed to act on channels in an acute manner similar to widely-applied CCBs or like interventions, but direct evidence is still lacking. Third, CMI is expected to reduce the\u00a0overall Ca2+ influx; however, it is still unclear whether and how CMI is able to ensure the actual inhibition when both VGA and CDI are attenuated, apparently leading to contradictory effects on Ca2+ influx.\n\nEmbarking on these frontiers regarding CMI, we unveiled the principle of cooperation among the three key C-terminal motifs, with which we developed chemical-inducible CMI for CaV1.3 channels. We then resolved all the aforementioned questions crucial to establish CMI, and gained new insights into\u00a0CaV1.3 gating by comparing CMI and CDI. In addition, with computational modeling of Ca2+ oscillations and pacemaking behaviors under the control of CaV1.3 channels in SNc neurons, we explored the potentials of CMI-based inhibitors as therapeutic interventions for CaV1.3-related PD.\n\n## Results\n\n### Provisional CMI concurrently attenuates both CDI and VGA\n\nAlternative splicing at the carboxyl terminus of \u03b11D results into two important native variants of long and short forms: \u03b11DL (exon 42) and \u03b11DS (exon 42A). Short variant of \u03b11DS terminates shortly after the IQV motif and lacks almost entire DCT domain, and its Ca2+ current (ICa) exhibited strong CDI and VGA (Figure 1A). Regarding CDI, \u03b11DS still contains all the core elements including the IQV domain for apoCaM pre-association and the EF-hand motifs and N-terminal Ca2+/CaM binding NSCaTE motif (Dick et al., 2008) for CDI transduction. ICa upon depolarization rapidly decayed (second row, red trace), indicative of strong CDI. In contrast, Ba2+ current (IBa) decayed rather slowly (trace in grey) representing the background voltage-dependent inactivation (VDI). Thus, the fraction of peak current (Ipeak) remaining after depolarization for 50 ms (third row, r50) is closely correlated with inactivation, with the difference between the r50 profiles in Ba2+ and Ca2+ serving as the ideal index of CDI. In practice, due to rather weak VDI of CaV1.3 at 50 ms (r50,Ba close to 1) (Tadross et al., 2010), thus for simplicity the value of 1\u2212r50,Ca at \u221210 mV was taken as the index of CDI strength (SCa). VGA was evaluated by peak current density Jpeak (pA/pF), measured at different voltages while excluding potential artifacts due to cell-size factor (capacitance). Throughout this study, SCa and JCa (Jpeak at \u221210 mV) served as the quantitative indices for CDI and VGA respectively. Thus, by way of DCT competition against apoCaM, the provisional CMI was expected to attenuate both SCa and JCa, as suggested by prior studies (Liu et al., 2010; Singh et al., 2008, 2006; Tan et al., 2011, 2012; Wahl-Schott et al., 2006). However, most of these reports focused on either CDI or VGA only; or even when both were studied for whole-cell ICa, CDI and VGA were separately evaluated with different experimental groups. Here, we conducted a\u00a0side-by-side analysis for each variant or condition, not only more confirmative since concurrent changes in CDI and VGA would be mutually supportive, but also critical to later insights into CMI mechanisms and significance originated from such concurrency. Technically, compared to VGA and JCa, CDI and SCa are more robust so more favorable since CDI of CaV1.3 is independent of global Ca2+ so insensitive to Ca2+-buffer capacities and variations in channel expressions partly due to transient transfections (Dick et al., 2008; Tadross et al., 2008). In general, for data and analyses we provided for both CDI and VGA, CDI (SCa) was considered as the major index for CMI evaluations and VGA as the supplement.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig1-v2.jpg)\n\n**Figure 1.:** (A) Parameters and indices illustrated by the control group of short CaV1.3 channels. Representative current exemplars (Ca2+ current ICa in red, with the scale bar in red; Ba2+ current IBa in gray, rescaled) were shown for \u03b11DS at the membrane potential (V) of \u221210 mV, with the amplitudes measured at the time of peak (Ipeak) and 50 ms (I50). Inactivation profiles across the full range of V for IBa and ICa were quantified by the remaining current at 50 ms (r50), in ratio between I50 and Ipeak. The CDI strength was quantified by 1\u2212r50,Ca or SCa, serving as one of the major indices. Based on Ca2+ current density normlized to the cell capacitance (Cm), VGA in Ca2+ was profiled by Jpeak (in pA/pF), with the Jpeak amplitude at \u221210 mV or JCa as the other major index. (B) In contrast to \u03b11DS channels with pronounced CDI (SCa) and strong VGA (JCa), \u03b11DS-PCRD-DCRD incorporating all the three motifs of IQV, PCRD and DCRD exhibited strong inhibitions on both CDI and VGA (less pronounced U-shape or V-shape), indexed with SCa and JCa (smaller values) respectively. Thick semi-transparent lines in red depict the CDI and VGA profiles of the \u03b11DS control group (A); and the differences in profiles (green areas as visual cues) illustrate the potency of CMI.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The sequences of \u03b11 subunits were aligned for CaV1.1 (\u03b11S, XM_983862.1), CaV1.2 (\u03b11C, NM_199460.3), CaV1.3 (\u03b11D, NM_000720) and CaV1.4 (\u03b11F, NP005174), with GenBank accession numbers in parentheses. Key domains of pre-IQ3, IQ, IQV, PCRD, and DCRD were underlined with different colors, and the conjunction domain (\u2026) between PCRD and DCRD was skipped for clarity. Identical (yellow and blue), similar (green) and gapped (\u2212) sequences were indicated. Key residues for potential interactions were marked by red dots, including valine (V) on DCRD, and residues of positively charged arginine (R) or negatively charged aspartic acid (D) or glutamine (E) on PCRD or DCRD, respectively.\n\nTo establish CMI, several key issues as introduced earlier regarding its mechanisms of action and potential applications need to be clarified. We decided to employ homologous DCTF from CaV1.4 (\u03b11F) with the strongest DCT tuning effects (stronger than DCTD) among the CaV1 members (Figure 1\u2014figure supplement 1), to construct the channel variant by fusing PCRDF-DCRDF onto \u03b11DS right after IQV motif; meanwhile, since the potency of DCT effects is mainly determined by DCRD (Liu et al., 2010), PCRD from either CaV1.3 or CaV1.4 supposedly makes no or little difference and thus we did not distinguish these two PCRD isoforms in this work. Such channel variant was simply denoted as \u03b11DS-PCRD-DCRD, which represents CMI intrinsic to the long variant of CaV1.3 (\u03b11DL) but with higher potency since strong DCRDF replaces endogenous DCRDD. Compared with \u03b11DS control, SCa and JCa from \u03b11DS-PCRD-DCRD were substantially attenuated, which provided ample dynamic ranges (highlighted by green areas) to explore CMI effects on CDI/VGA and its mechanisms (Figure 1B).\n\n### Differential roles of DCRD and PCRD unveiled by low [apoCaM]\n\nWith such baseline CMI effects of PCRD-DCRD, we went further to examine whether both PCRD and DCRD are required, by fusing only PCRD or DCRD onto \u03b11DS. Since DCRD might need some structural freedom as in DCT or PCRD-DCRD, a glycine linker of different length (GX) was inserted between DCRD and IQV to construct \u03b11DS-GX-DCRD, mimicking the configurations that permit potent effects. From all these channel variants, we concluded no alteration in CDI in comparison with the \u03b11DS control, similarly from VGA results and analyses (Figure 2A and Figure 2\u2014figure supplement 1A). In general, current densities should be more carefully scrutinized before any conclusive claim on VGA; and effects on Jpeak profiles and JCa values normally need to be\u00a0backed up by evaluations on concurrent CDI. For instance, current densities of \u03b11DS-GX-DCRD (Figure 2\u2014figure supplement 1A, the three columns on right) seemed different from the control, potentially interpreted as mild CMI; however, considering that the changes in CDI of these channels were rather small, the mild changes in VGA should be considered as variations instead of conclusive attenuations. Statistical test of significance (Student\u2019s t-test) was performed subsequently to help identify significant CMI effects. Based on the fact that all the configurations under test failed to mediate SCa and JCa attenuations, all the three motifs of PCRD, DCRD and IQV might be required for effective CMI, consistent with the preliminary analyses on DCT subsegments from CaV1.3 and CaV1.4, in which the segment between PCRD and DCRD (\u2018B\u2019 region) was dispensable but neither PCRD nor DCRD could be excluded (Liu et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig2-v2.jpg)\n\n**Figure 2.:** (A) All the channel variants including \u03b11DS, \u03b11DS-PCRD and \u03b11DS-G24-DCRD exhibited strong CDI, indexed with SCa. (B) Schematic illustration for the strategy to explore the minimum requirement of CMI. For \u03b11DS-GX-DCRD containing glycine linkers (GX) of different length (0, 6 or 24), BSCaMIQ that binds apoCaM was overexpressed to downregulate endogenous [apoCaM], in hope to promote the binding of DCRD with the channel (IQV). (C) With low [apoCaM] by overexpressing BSCaMIQ, \u03b11DS-G24-DCRD channels exhibited much attenuated CDI, evidenced by ICa trace, SCa value and r50 profile (green area indicating the potency), in contrast to ultrastrong CDI of \u03b11DS or\u00a0\u03b11DS-PCRD, both lacking DCRD. (D) Statistical summary of CDI (SCa) and VGA (JCa) in endogenous (control) or low [apoCaM] for all channel variants of \u03b11DS, \u03b11DS-PCRD and \u03b11DS-GX-DCRD, with additional information in Figure 2\u2014figure supplement 1. Notably, for the three \u03b11DS-GX-DCRD variants, both CDI and VGA were concurrently and significantly attenuated. Statistical significance was evaluated and indicated (p<0.001, ***; p<0.05, *).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Under normal [apoCaM], channel variants of \u03b11DS, \u03b11DS-PCRD and \u03b11DS-GX-DCRD (the number of glycine X equals 0, 6 and 24, respectively) exhibited no significant changes in exemplar ICa traces (top row), CDI (middle row) and VGA (bottom row) profiles with respective indices of SCa and JCa. Small changes in VGA profiles for \u03b11DS-GX-DCRD were within the experimental variations at least partially due to expression fluctuations in transient transfections; meanwhile, CDI, supposedly concurrently changing with VGA, was very close to the \u03b11DS control (thick semitransparent red lines). (B) When [apoCaM] was substantially lower down by overexpressing the apoCaM buffer of BSCaMIQ, \u03b11DS-GX-DCRD exhibited potent attenuations on both CDI and VGA (green areas indicating the differences from the control group), but not for \u03b11DS or \u03b11DS-PCRD containing no DCRD. Thick red lines (semitransparent) represent the r50 and Jpeak profiles of the control group (\u03b11DS under low [apoCaM], left) for direct comparison. Dotted lines in the control group (left column) were replicated from \u03b11DS in normal [apoCaM] (A), essentially no difference.\n\nNotably, these channel variants expressed in HEK cells were quantified under normal concentrations of Ca2+-free CaM ([apoCaM]), in which the three-motif complex of IQV/PCRD/DCRD as the core of CMI was perturbed by apoCaM that tends to pre-associate with IQV of the channel. To alleviate the interference with the potential cooperation in forming the threesome complex, we managed to substantially reduce [apoCaM] in the\u00a0cells by overexpressing BSCaMIQ, a strong apoCaM buffer (Black et al., 2006), to help identify the minimum requirement for CMI (Figure 2B). In contrast to strong CDI in normal [apoCaM] evidenced from different channel variants (Figure 2A), with [apoCaM] being substantially reduced (but not lower than a realistic limit), surprisingly, \u03b11DS-G24-DCRD and all the other DCRD-containing variants exhibited much attenuated CDI indicative of effective CMI (Figure 2C,D and Figure 2\u2014figure supplement 1). Meanwhile, the stereotyped ultrastrong CDI normally observed from \u03b11DS or \u03b11DS-PCRD was nearly unaltered by apoCaM buffers, in that under the residue [apoCaM] these channels were still able to be pre-bound with apoCaM considering the effective affinity between apoCaM and the channel (IQV or IQV-PCRD) was reasonably high when there was no interference. Hence, mechanistically only DCRD and IQV are required by CMI so that PCRD becomes dispensable if [apoCaM] is low, unveiling the differential roles of PCRD and DCRD in the potential cooperation for CMI induction.\n\n### Cooperative scheme of CMI consists of three major combinations\n\nThe\u00a0data thus far suggest that CMI mainly relies on DCRD/IQV binding to overcome free [apoCaM] of substantial level in normal cell conditions; and PCRD could facilitate CMI potentially by enhancing the binding of DCRD/IQV and thus the competition against apoCaM. However, the trio failed to attenuate CDI when they were separately expressed as three individual peptides (Figure 3A\u2013C), even when PCRD, DCRD and IQV (contained in \u03b11DS) were all well expressed in the same cell as confirmed with fluorescent tags (Figure 3\u2014figure supplement 1). By examining VGA (JCa) with aforementioned precautions, we also concluded that no CMI effect on \u03b11DS was detectable with all the three groups of peptides: PCRD and DCRD, PCRD only, and DCRD only. When [apoCaM] was reduced with chelator BSCaMIQ as in Figure 2, CDI remained ultrastrong and indistinguishable from \u03b11DS control for all the three test groups (Figure 3D\u2013F), and VGA analyses came to the same conclusions consistently (Figure 3\u2014figure supplement 2D\u2013F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig3-v2.jpg)\n\n**Figure 3.:** (A) PCRD and DCRD tagged with fluorescent proteins were coexpressed with \u03b11DS as separate peptides. The presence of both YFP-PCRD and CFP-DCRD peptides in the same cell was confirmed under a\u00a0fluorescence microscope (Figure 3\u2014figure supplement 1). Under normal [apoCaM] in cells, no CMI effect was observed from ICa trace exhibiting CDI similarly as \u03b11DS control, confirmed by comparable SCa values and indistinguishable r50 profiles. (B and C) Experiments and analyses were performed in normal [apoCaM] similarly as (A), except that only YFP-PCRD (B) or only YFP-DCRD (C) was expressed with \u03b11DS channels. Both resulted into strong CDI, with SCa and r50 indistinguishable from \u03b11DS control. (D\u2212F) When free [apoCaM] was substantially reduced by overexpressing BSCaMIQ (apoCaM buffers), the above three cases in (A\u2212C) were re-examined. Exemplar ICa traces exhibited strong CDI as quantified by SCa values and r50 profiles, similarly as the control group of \u03b11DS in low [apoCaM] (semitransparent line in red).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) YFP-PCRD and CFP-DCRD were coexpressed with \u03b11DS (left). For one single cell under patch recording (right image), the epi-fluorescence of high intensity via CFP (left image) and YFP (middle image) channels was observed to confirm that both peptides were well expressed. (B) The exemplar recording of ICa from that particular cell in (A) exhibited strong CDI (SCa), within the range of standard SCa for \u03b11DS (0.76\u00a0\u00b1\u00a00.02, n\u00a0=\u00a05).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013C) In normal [apoCaM], when both PCRD and DCRD were expressed but as separate peptides (A), the VGA profile of \u03b11DS (control, red thick semitransparent lines) was unaltered as indexed by JCa. Similarly, no inhibition of VGA was observed when only PCRD (B) or only DCRD (C) was transfected. (D\u2212F) When [apoCaM] was reduced by overexpressing BSCaMIQ, for all the three cases in (A\u2212C), their VGA profiles were indistinguishable from the control group (red thick semitransparent lines), also confirmed by similar JCa values across different groups.\n\nUp to here, we established two extreme cases for CMI, i.e., either all the three motifs were fused together (strong CMI), or the three were totally isolated to each other (no CMI). To explore intermediate conditions between the two extremes, we physically linked every two modules out of the three to coexpress with the third one, yielding three possible combinations in total. And they were, PCRD-DCRD peptides to coexpress with IQV (contained in \u03b11DS) (Figure 4A, combination I), channels containing IQV-PCRD to coexpress with DCRD (Figure 4B, combination II), and channels containing linked IQV and DCRD to coexpress with PCRD (Figure 4C, combination III). Interestingly, all the three combinations exhibited CMI, strongly attenuating both CDI and VGA as illustrated by green areas indicating the altered r50 and Jpeak profiles compared to \u03b11DS control (Figure 4A\u2014C). Combination I also provided a great chance to revisit the assumption we made earlier regarding interchangeable PCRDD and PCRDF from CaV1.3 and CaV1.4, respectively. Instead of dealing with two different channel variants, here the same \u03b11DS served as the control to reliably evaluate PCRDD-DCRD vs PCRDF-DCRD peptides. And our assumption was validated by the negligible differences in VGA and CDI between the two PCRD-DCRD peptides (Figure 4\u2014figure supplement 1). In previous reports, combinations of I and II were already suggested when studying endogenous DCT in CaV1.3 (\u03b11DL) and CaV1.4 (Singh et al., 2008, 2006). In addition, PCRD (combination III) was able to induce pronounced CMI effects as we first observed in this work, which also completed all the three possible combinations of peptide-mediated CMI.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig4-v2.jpg)\n\n**Figure 4.:** (A) Both CDI and VGA of \u03b11DS channels were attenuated by pre-linked PCRD-DCRD illustrated in the scheme (top), shown in the exemplar traces (middle) and voltage-dependent r50 and Jpeak profiles (lower two panels). The potency of CMI was indexed by SCa and JCa values and also illustrated by the green areas. Profiles of \u03b11DS control were indicated by thick semitransparent lines in red (lower two panels). (B) Both CDI and VGA of \u03b11DS-PCRD were strongly prohibited by DCRD. (C) Both CDI and VGA of \u03b11DS-G24-DCRD were attenuated by PCRD. (D) FRET 2-hybrid assays demonstrated that pre-linked IQV-PCRD motif (YFP tagged) exhibited strong binding with CFP-DCRD, with higher binding affinity (Kd\u00a0=\u00a01135, units in donor-cube fluorescence intensity) than the binding affinity (Kd\u00a0=\u00a04700) between CFP-DCRD and YFP-IQV itself (without PCRD being fused). Additional PCRD peptides did not make any appreciable change (Kd\u00a0=\u00a04624) for the binding between CFP-DCRD and YFP-IQV, unable to rescue the low affinity back to the high level that the constitutive PCRD fusion (YFP-IQV-PCRD) could achieve. FRmax values for all these binding curves were similar (3.50\u20143.87). Each data point represented the FR (y-axis, FRET ratio) and Dfree (x-axis, free donor concentration) values averaged over five adjacent individual cells sorted by Dfree. (E) Working model to illustrate the collaboration among three components of PCRD, DCRD and IQV (embedded within \u03b11DS) for CMI induction. Grey circles represent the effective combinations, which require that at least two (out of three) components are closely engaged (e.g., fusion) to form the trio complex incorporating the third (separate) component. The three key combinations are I (IQV+PCRD-DCRD), II (IQV-PCRD+DCRD) and III (IQV-DCRD+PCRD), where \u2018\u2013\u2019 denotes fusion or spatial closeness and \u2018+\u2019 indicates the separate peptide to be coexpressed. In addition, the positive control (IQV-PCRD-DCRD) also represents the native long variant \u03b11DL; and the three components (dotted circles in green, pink and blue) completely separate to each other (IQV+PCRD+DCRD) produce no CMI effect, serving as one negative control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The pronounced CDI (SCa) and strong VGA (JCa) of \u03b11DS channels (indicated by red thick semitransparent lines in r50 and Jpeak plots) were similarly attenuated by PCRD-DCRD peptides made from either PCRDF from CaV1.4 (left column) or PCRDD from CaV1.3 (right column). Representative ICa traces (top), CDI and VGA profiles (panels in the two bottom rows) across the full voltage range were shown for the two types of peptides, with no significant difference. Green areas represent the potency of attenuation, supporting that PCRDF and PCRDD were interchangeable for CMI in this study as we assumed.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) By 2-hybrid FRET with the CFP- or YFP-labeled constructs illustrated on top, IQV-PCRD (YFP-tagged) and CaM (CFP-tagged, apo-state) exhibited strong binding (blue), quantified by the\u00a0maximum FRET ratio (FRmax) and effective equilibrium dissociation constant (Kd) from iterative curve fitting. The values of FRmax and Kd were indicated right above the fitted curves (in the same color) when applicable. Unfilled-dots and filled-dots represent individual cells and averaged results (over five cells) respectively. The binding between apoCaM and IQV-PCRD were severely perturbed by FKBP-DCRD (with FKBP tag adopted from subsequent rapamycin-inducible CMI, but without fluorescent tags of CFP/YFP), resulted into the data points (red) approaching the baseline of CFP/YFP mixture (cyan), indicative of very weak Kd. The perturbation was presumably by way of the close cooperation between FKBP-DCRD and IQV-PCRD to compete against apoCaM. The FRET binding analyses were consistent with the patch-clamp recordings confirming that CDI (SCa) of \u03b11DS-PCRD was attenuated in the presence of FKBP-DCRD (inset). (B) In the absence of PCRD, the perturbation by FKBP-DCRD was much less effective. Without the presence of PCRD, CFP-CaM and YFP-IQV (blue) were still able to bind. However, in contrast to the strong perturbation seen in (A), in the absence of PCRD, inclusion of DCRD peptides made no or very little difference in Kd and FRmaxvalues for CaM and IQV. The binding curve (dotted line in light blue) was replicated from CFP-CaM and YFP-IQV-PCRD (A) for comparison.\n\nLive-cell FRET two-hybrid assays demonstrated that DCRD bound IQV-PCRD with higher affinity (Kd\u00a0=\u00a01135, units in donor-cube fluorescence intensity) than that between DCRD and IQV (Kd\u00a0=\u00a04700), regardless of whether PCRD as the standalone peptide was also present (Kd\u00a0=\u00a04624) (Figure 4D). Owing to the high affinity between DCRD and IQV-PCRD, DCRD overexpression nearly abolished the binding between apoCaM and IQV-PCRD (i.e., apoCaM/channel pre-association) as demonstrated in the plot of FR-Dfree (FRET ratio vs free donor concentrations) (Figure 4\u2014figure supplement 1A); meanwhile, without the presence of PCRD, apoCaM was still able to bind IQV, but the DCRD perturbation was much less effective (Figure 4\u2014figure supplement 1B). The electrostatic interaction between PCRD and DCRD hinted by CaV1.2 (Hulme et al., 2006) seemed generalizable but was not detected with the FRET pairs based on CaV1.4 DCT (Liu et al., 2010). Both this putative PCRD/DCRD interaction and the binding between IQV and DCRD should be weaker and secondary compared to the strong binding between IQV-PCRD and DCRD (Figure 4D). This explained why the potential contributions of these secondary interactions may or may not be evidenced, depending on whether the trio complex would come into being in particular settings. Our FRET binding analyses are consistent with the functional data shown earlier, thus providing additional information for the collaborations among CMI motifs. For instance, coexpression of all the three but separate components would not produce CMI (Figure 3A). Also, DCRD strongly attenuated \u03b11DS-PCRD but not \u03b11DS control (Figure 4B vs Figure 3C).\n\nTaken together, a cooperative scheme of CMI under physiological [apoCaM] in the cell was unveiled by functional and binding analyses (Figure 4E), which depicted that if any two components have enough spatial closeness or intimacy, e.g., by prearranged linkage, it would be sufficient for the third component to form the \u2018trio\u2019 complex and thus induce effective CMI (combinations of I, II and III, highlighted in grey ellipses). Also, the\u00a0fusion of all the three components together mimics the intrinsic CMI in \u03b11DL (positive control, Figure 1B); and expression of three components separate to each other represents the negative control with no CMI (Figure 3A).\n\n### Acute CMI based on rapamycin-inducible heterodimerization and cooperation\n\nBased on such cooperation-dependent CMI (Figure 4E) and rapamycin-mediated heterodimerization (Yang et al., 2013, 2007), we devised the strategy to implement drug-inducible CMI, illustrated in the design of version 1 (Figure 5A). FKBP (rapamycin-binding protein) and FRB fragment (FKBP and rapamycin binding domain of the kinase mTOR) as the tags were fused onto DCRD and PCRD, respectively. A small immunosuppressant molecule rapamycin that binds both FRB and FKBP was applied to link one FKBP-DCRD together with one PCRD-FRB, aiming to bind to the IQV domain of \u03b11DS to compete off apoCaM and thus induce CMI according to the scheme of combination I (Figure 4E). This design, if successful, should be directly applicable to native CaV1.3 since no modification is needed at the channel side. Attracted by such potentials, we implemented and validated this rapamycin-inducible peptide-mediated CMI in HEK cells with \u03b11DS. In contrast to the stable time-course profiles of the control group (Figure 5B), CDI (SCa) and VGA (Ipeak) were both rapidly attenuated upon applying 1 \u03bcM rapamycin. Within tens of seconds, dimerization between FKBP-DCRD with PCRD-FRB started to attenuate ICa as evidenced by time-dependent decays (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig5-v2.jpg)\n\n**Figure 5.:** (A) Design principles for chemical-inducible CMI. Rapamycin simultaneously binds one FKBP and one FRB to combine any two FRB/FKBP-tagged components (PCRD and DCRD, in this version 1) selected from the three components of PCRD, DCRD and IQV. Thus, the three components would form the combinations (combination I, in the version 1) to satisfy the requirement of cooperative CMI (Figure 4E). (B) One representative implementation of chemical-inducible CMI. According to the design of version one in (A), PCRD-FRB and FKBP-DCRD were constructed and coexpressed with \u03b11DS. Exemplars of Ca2+ current traces demonstrated that acute effects were induced by applying 1 \u03bcM rapamycin to the multi-component system of version 1 (lower panel), in contrast to \u03b11DS control with no appreciable changes in ICa (upper panel). (C) Statistical summary of rapamycin-induced CMI (version 1). Averaged values over multiple cells (number indicated in parentheses) for the indices SCa (upper) or normalized Ipeak (lower) demonstrated time-dependent attenuations on both CDI and VGA upon rapamycin application as compared to the control group. (D) Rapamycin perfusion induced rapid translocation of YFP-FKBP-DCRD or YFP-FKBP-PCRD (version 2) onto the membrane by linking with FRB-CFP-Ras within 5 min, shown by confocal images via wide-field, CFP, and YFP channels. The local concentrations of YFP-FKBP-DCRD and YFP-FKBP-PCRD were substantially enhanced as suggested by the condensed YFP fluorescence at the membrane (outlined by CFP fluorescence). (E and F) According to rapamycin-inducible CMI of version 2, recombinant channels of \u03b11DS-G12-FRB were coexpressed with cytosolic YFP-FKBP-PCRD and YFP-FKBP-DCRD. To enhance local concentrations of FKBP-tagged peptides near the channels, membrane-localized FRB-CFP-Ras was also overexpressed. Exemplars of Ca2+ current traces (E) exhibited strong attenuation (lower), in contrast to stable ICa from \u03b11DS-G12-FRB alone (upper). In contrast to the control group, temporal profiles of rapamycin-inducible CMI (version 2) indicated strong attenuations on CDI (SCa, upper) and VGA (normalized Ipeak, lower). Based on totally five trials (cells), SCa changed from 0.77\u00a0\u00b1\u00a00.00 to 0.41\u00a0\u00b1\u00a00.06 and Ipeak was reduced to 35% \u00b1 3% of the basal levels (F).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A and B) Top rows: cartoon depicting the design of the rapamycin-induced translocation of DCRD (A) or PCRD (B) (Version 2 of chemical-inducible CMI). FRB-CFP-Ras was constitutively anchored to the plasma membrane by incorporating membrane-targeting segment from Ras protein. Lower rows: confocal images acquired via YFP channel showing rapid translocation of YFP-FKBP-DCRD (A) or YFP-FKBP-PCRD (B) to plasma membrane upon 1 \u03bcM rapamycin perfusion (left). At the time of\u00a0~120 s or later, YFP fluorescence was substantially condensed to overlap with the stable CFP fluorescence (FRB-CFP-Ras) on the membrane (right).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A and B) Voltage-dependent profiles of CDI and VGA exhibited no difference when \u03b11DS channels were with (B) or without (A) rapamycin. Thick lines (red semitransparent) represent the CDI and VGA profiles from the \u03b11DS control group. (C) Coexpression of CFP-PCRD-FRB and FKBP-DCRD-YFP with \u03b11DS representing the control conditions before rapamycin did not cause any appreciable change in CDI and VGA, confirmed by pronounced SCa and JCa comparable to the values from \u03b11DS control. (D) When rapamycin was applied to \u03b11DS coexpressed with CFP-PCRD-FRB and FKBP-DCRD-YFP, SCa and JCa averages over different cells were attenuated with moderate potency (illustrated by green areas) presumably by rapamycin-induced linkage between PCRD and DCRD (version 1 of inducible CMI) to form the cooperation for effective CMI. (E) In rapamycin, with enhanced local concentrations of YFP-FKBP-PCRD and YFP-FKBP-DCRD (version 2 of rapamycin-induced CMI), the potency was much improved, demonstrated by more pronounced attenuations concurrently on both CDI and VGA (larger green areas in both r50 and Jpeak profiles).\n\nEncouraged by the first prototype of inducible CMI, we then proceeded to enhance the potency from moderate (as in version 1) to ultrastrong attenuation similarly as in Figure 1B. We reasoned that the underperformance here should be mainly due to the low effective concentration of the linked peptides if closely comparing constitutive (Figure 4A) and the rapamycin-inducible CMI (Figure 5C). The upgrade version (version 2) was designed to enhance concentration (local to channels) and thus the potency of CMI peptides. Membrane-targeting motif Ras (Yang et al., 2007) was used to construct FRB-CFP-Ras, which would bind DCRD/PCRD tagged with FKBP through rapamycin-inducible heterodimerization. As demonstrated by confocal fluorescence imaging, in about two minutes YFP-FKBP-DCRD and YFP-FKBP-DCRD translocated to the membrane upon rapamycin application (Figure 5D, Figure 5\u2014figure supplement 1). Meanwhile, FRB was also fused onto the channel to construct \u03b11DS-G12-FRB for inducible dimerization with FKBP-PCRD or FKBP-DCRD, to facilitate peptide-mediated CMI according to the schemes of combination II and III (Figure 4E, Figure 5D). More potently than the earlier design but in a similar time course (version 1, Figure 5B,C), rapamycin induced strong CMI effects on ICa within 4\u20135 min (version 2, Figure 5E,F). Both CDI and VGA were substantially attenuated: SCa (0.41\u00a0\u00b1\u00a00.06, n\u00a0=\u00a05) and Ipeak (35% \u00b1 3%, n\u00a0=\u00a05). Both indices reached the plateau within 4\u20135 min, which was about the speed of full solution exchange in our recording system, indicating that rapamycin perfusion was the major time-limiting factor. Thus, the acute nature of CMI was strongly supported by the temporal profiles of inducible CMI effects on CDI/VGA (both version 1 and version 2).\n\nTo further consolidate the results, direct drug-channel effects were examined for rapamycin as the negative controls; and full CDI and VGA profiles were characterized across the whole voltage range before and after applying rapamycin (Figure 5\u2014figure supplement 2).\n\n### CMI is a unique type of inhibition but sharing similarities with CDI\n\nOne interesting feature we discovered from rapamycin-inducible CMI was that the current amplitude at 300 ms (I300) stayed at the same levels during the whole time course (Figure 6A, top two rows), in contrast to rapidly decayed Ipeak as outlined by blue dotted lines. In this context, CMI was quite unique compared to other conventional inhibitions. In the run-down process (Kepplinger and Romanin, 2005) or the blockage by isradipine (Anekonda and Quinn, 2011), the number of functional channels was reduced, which resulted into attenuations on ICa during the whole depolarization step including both Ipeak and I300 (Figure 6A, lower two rows). In contrast, SCa remained constant for \u03b11DS undergoing run-down or blockage since intrinsic gating properties (e.g., CDI) of each channel were not altered, whereas SCa was attenuated in CMI (Figure 6\u2014figure supplement 1A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig6-v2.jpg)\n\n**Figure 6.:** (A) Temporal profiles between CMI and conventional inhibitions were compared. For rapamycin-inducible CMI (two versions in the\u00a0top two rows of panels), representative Ca2+ current traces in rapamycin were selected from sequential time-points (left column) and superimposed together (middle column) for comparison. The time sequence was indicated by color: the first in pink, intermediate in grey, and the last in blue. Ipeak exhibited the trend of inhibition but not for I300 (ICa at 300 ms) (right column). In contrast, for run-down process and isradipine blockage (bottom two rows), both Ipeak and I300 exhibited the declining trends indicating substantial inhibitions. (B) Ca2+ current density at 300 ms (J300,Ca) remained at the same level (indicated by the J300 values at \u221210 mV), for various channel variants under test, regardless of whether CMI was in effect. Thick lines (semitransparent in red) represent the J300,Ca profile of \u03b11DS control. (C) Functional and the structural insights into the two modes of inhibition. DCT/apoCaM-dependent CMI and Ca2+/CaM-mediated CDI result in indistinguishable gating (green arrows) appearing due to similar causes, i.e., either total or partial loss of the apo-state CaM/IQV complex. That says, in CMI, apoCaM pre-association is totally lost; and in CDI, apoCaM is calcified and dislocated from the pre-association sites. Although the triggers are different for CMI vs CDI, i.e., DCT competing (off apoCaM) vs Ca2+ binding (onto apoCaM), the similarities between the two different inhibitory regulations of CMI and CDI invite the hypothesis that the core gating machinery (cyan squares) upon depolarization might step into the same scenario/mode including structural details (red arrows). A series of current traces (on the right) indicate CMI with different potency (enhanced from pink to cyan, upper), in comparison with the trace at different stages of CDI (developed from pink to cyan, lower) superimposed with the trace from ultrastrong CMI (dotted trace in cyan). These analyses point to one important notion that the lower limit of CMI is determined by end-stage CDI (the traces or the phases in cyan), and thus the dynamic changes for CMI effects on \u03b11DS (indexed with Ipeak and SCa) are preset, i.e., from the pink (no CMI and ultrastrong CDI) to the cyan (ultrastrong CMI and no CDI).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** CMI was compared with conventional inhibitions/inhibitors including channel blockage (by isradipine) and run-down process (reduction of channel numbers), indexed with SCa, Ipeak and I300. Both rapamycin-induced CMI and run-down/blockage exhibited time-dependent decreases in Ipeak, as expected from effective ICa inhibitions (B). In contrast, CDI (SCa) did not change in run-down/blockage; whereas for CMI SCa exhibited rapamycin-dependent attenuation, similar to Ipeak (A). Moreover, the plateau of ICa (I300) remained constant in spite of Ipeak attenuation in CMI, whereas I300 changed (decreased or recovered) in a similar time-course to that of Ipeak during run-down and blockage (C). Since SCa is in proportion to Ipeak/I300, the two major types of inhibitions (CMI vs conventional inhibitions) were distinct within this context: for CMI, both Ipeak and SCa changed but with I300 being kept constant; in contrast, for conventional inhibitions, both Ipeak and I300 changed, but SCa remained unaltered.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Analyses at both 300 ms and 1000 ms were able to reliably unveil that channels subject to CMI were essentially tuned to approach ICa levels in end-stage CDI. Upper panel, we set I1000 (ICa at 1000 ms) of both exemplar traces to the same level for \u03b11DS and \u03b11DS-PCRD-DCRD (in principle, they should be the same); and the levels of ICa at 300 ms (I300) turned out to be nearly the same, similarly as the analyses with I1000. At 300 ms, the kinetic difference between IBa (normalized to the peak of ICa) and ICa was very little, indicative of end-stage CDI (upper right). Full profiles of Ca2+ current density (indexed\u00a0with\u00a0J300 or J1000)\u00a0were indistinguishable for both groups of \u03b11DS and \u03b11DS-PCRD-DCRD, further supporting that both are qualified as reliable indices for CMI analysis. (B) For rapamycin-inducible CMI (version 2) by supplying PCRD, DCRD and \u03b11DS with membrane-targeting and rapamycin-inducible mechanisms, representative ICa traces were selected from sequential time-points (left), and the first (purple) and the last (cyan) traces were superimposed together for comparison (right). Ipeak exhibited a trend of time-dependent decrease; meanwhile, both I300 and I1000 remained rather constant (dotted outlines in black, blue and pink respectively). (C) Statistical summary of ICa amplitudes for rapamycin-induced CMI (version 2). ICa values were measured at different time points, i.e., Ipeak, I100, I300 and I1000, each of which was either rescaled to Ipeak (left) or to its own (right). Ipeak exhibited robust inhibition due to CMI, and a trend of moderate decline (right) was noticeable from I100 (ICa at 100 ms); whereas I300 and I1000 clearly remained constant throughout the full time-course, thus reliably representing the end stage or steady state of CDI. In line with our previous analyses, the current level of I300 or I1000 determined the lower limit of ICa (measured by Ipeak) subject to CMI of the maximum potency.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Upon applying ionomycin, an ionophore massively raising intracellular Ca2+ levels, endogenous CaM should switch from Ca2+-free state (apoCaM) to Ca2+-bound state (Ca2+/CaM). However, similar Kd values were obtained by fitting the FRET binding curves before and after ionomycin application (pink, before ionomycin; red, in ionomycin), indicating that Ca2+/CaM was unable to perturb the strong binding between DCRD and IQV-PCRD. In the FR-Dfree plots, unfilled-dots and filled-dots represent individual cells and averaged results (over five cells) respectively. (B) Following ionomycin administration, the indices (Kd and FRmax) of the binding between CaM and IQV were clearly strengthened consistent with the IQV/CaM interactions previously established.\n\nWould such constant I300 be just a coincidence? By revisiting different channel variants tested earlier, we concluded that I300 indeed remained at similar amplitudes for them all (Figure 6B), whereas their Ipeak and SCa exhibited broad dynamic ranges. To confirm, depolarization pulses of longer duration (1000 ms) were also utilized to conduct constitutive and rapamycin-inducible CMI (Figure 6\u2014figure supplement 2). In both modalities of CMI, the behavior of I300 was similar to I1000 and both indices remained constant. In addition, CDI already approached its steady-state at 300 ms (end-stage CDI), and the slight difference between I300 and I1000 was largely due to VDI and negligible in this study. Throughout this work, I300 was employed as the major index to for both CMI and CDI analyses.\n\nThe constant I300 (or J300) essentially set the lower limit for CMI. That said, while CMI potency was getting higher, Jpeak was tuned down to more closely approach J300 (e.g., Figure 6B vs Figure 1B). More clear evidence came from rapamycin-inducible CMI: the attenuated Ipeak and constant I300 altogether account for SCa (CDI) attenuation; and for ultrastrong CMI, SCa would be nearly abolished (0), indicating that Ipeak would reach approximately the level of its lower limit (I300).\n\nThese lines of evidence also led us to conclude that a reduction of Ca2+ influx is guaranteed for CMI, despite concurrent VGA/CDI (activation/inactivation) attenuations. Such concurrency apparently would cause contradictory effects on Ca2+ influx: inhibition of CDI (ICDI) would tend to enhance Ca2+ influx, in opposition to attenuation on VGA (less Ca2+ influx). Even though, we just clarified that CMI attenuation on CDI is actually realized by reducing Ipeak while maintaining the end-stage ICa (indexed with I300 or I1000), which ensures the overall Ca2+ influx is reduced. Thus, the major uncertainty was relieved for CMI to emerge as a\u00a0one new modality of Ca2+ channel inhibition.\n\nThese observations are consistent with the speculation that CDI might be the reversed process to the apoCaM promotion of open probability (Adams et al., 2014). High similarities are shared by DCT/apoCaM-dependent CMI and Ca2+/CaM-mediated CDI: functionally CMI (ultrastrong) and CDI (end-stage) could result into similar gating; and mechanistically they appear to be triggered by similar events: the pre-association between apoCaM and IQV is either totally abolished (CMI) or drastically altered (CDI) (Figure 6C). These facts suggest that potentially the same set of \u2018core machinery\u2019 (cyan square) mediates both CMI and CDI with very similar structures and structural changes. To exclude potential complications from ambient Ca2+/CaM, we performed FRET experiments to ensure that the interactions within the trio complex of IQV/PCRD/DCRD were largely unaffected by Ca2+/CaM produced from ionomycin-introduced Ca2+ and endogenous CaM, although Ca2+/CaM indeed exhibited higher binding affinity to IQV than apoCaM (Figure 6\u2014figure supplement 3).\n\n### CMI inhibits CaV1.3-mediated oscillation and pacemaking in SNc neurons\n\nCaV1.3 plays a pivotal role in subthreshold oscillation and suprathreshold pacemaking in diverse cell types including neurons (Chay and Keizer, 1983; Comunanza et al., 2010), e.g., dopaminergic neurons in the substantia nigra compacta (SNc) (Chan et al., 2007). Pathophysiological linkages of PD or other neurodegenerative diseases with CaV1.3 functions have been evidenced in multiple lines of studies (Guzman et al., 2009; Puopolo et al., 2007), including CaV1.3 antagonists as potential therapeutic interventions (Anekonda and Quinn, 2011; Pasternak et al., 2012; Triggle, 2007). To explore the\u00a0physiological tuning of CMI and its therapeutic potentials, we constructed a customized model for SNc neuron and CaV1.3 channels using the software Neuron (Carnevale and Hines, 2006). Computational analyses were performed to compare the effects between different levels of CMI attenuations, to simulate the tuning of CMI by multiple factors including endogenous DCTs and alternative splicing, apoCaM fluctuations, and apoCaM buffer proteins such as calpacitin (Gerendasy, 1999; Xia and Storm, 2005). Under CMI of different potency, ICa from \u03b11DS (no CMI), \u03b11DL (intermediate CMI), or \u03b11DS with inducible peptide dimerization (ultrastrong CMI), exhibited distinct Ipeak, SCa and Ca2+ influx (Figure 7A\u2014C, left) (green areas indicating the reduction of Ca2+ influx). Meanwhile, the time rates of Ca2+ oscillation and autonomous spiking in the SNc model were also tuned down to different levels in accordance with ICa attenuations or CMI potencies (Figure 7A\u2014C). Experimentally, CMI was compared with other conventional modalities of channel inhibition, for their differences in ICa attenuations (Figure 6A, Figure 6\u2014figure supplement 1). In parallel, we also simulated the conventional blockage in the CaV1.3/SNc model (Figure 7D). Similar attenuations in oscillation and pacemaking were observed from the SNc model when the moderate (28%) blockade clearly reduced overall Ca2+ influx (green area), supporting the current strategy to develop PD therapeutics based on conventional CaV1.3 antagonists (Gudala et al., 2015; Hurley et al., 2013; Kang et al., 2012; Pasternak et al., 2012).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21989/elife-21989-fig7-v2.jpg)\n\n**Figure 7.:** (A and B) Oscillation and pacemaking of SNc neurons are mediated by CaV1.3, presumably mixed with both short (\u03b11DS) and long (\u03b11DL) splice variants. Lack of CMI, \u03b11DS\u00a0(pink)\u00a0exhibited large Ipeak and strong SCa (A), altogether resulted into more Ca2+ influx than \u03b11DL\u00a0(blue),\u00a0as\u00a0indicated by the green area (B). Side-by-side comparison demonstrated that CaV1.3-dependent oscillation (middle column) and pacemaking (right column) were slowed down, presumably by intrinsic CMI of \u03b11DL in comparison to \u03b11DS. (C) Effects of ultrastrong CMI (cyan) on SNc neurons. Under the CMI of the maximum potency (left), Ipeak was reduced to the lower limit, i.e., the level of I300, and SCa was approaching\u00a00. Accompanied with reduction in Ca2+ influx (green area), oscillation (middle) and pacemaking (right) rates were also further reduced compared with \u03b11DS (A) or \u03b11DL (B). (D) Effects of conventional blockage. Conventional inhibition by blockers (orange) attenuated ICa (28% reduction) and Ca2+ influx (green area) but kept SCa unaltered (left), by which oscillation (middle) and pacemaking (right) rates were slowed down compared with the \u03b11DL control (B). (E) The potential regulatory scheme for CaV1.3-mediated pacemaking in SNc neurons. The actual gating of ICa (similar to B) could fall into intermediate levels between two extreme conditions of rather weak CMI (apoCaM-bound and capable of strong CDI)\u00a0(A), or ultrastrong CMI (apoCaM-off and abolishment of CDI) (C). Hence, both CaV1.3 and pacemaking behaviors are potentially bidirectionally regulated, e.g., apoCaM and apoCaM-binding proteins, to maintain the homeostatic balance of Ca2+ influx. Pathological dysregulations of CaV1.3 and the resulted Ca2+ imbalance might underlie PD and other diseases, as the rational to develop therapeutic perturbations based on CMI.\n\nCollectively, one common rule was deduced for CMI, CDI and other modalities of inhibition: Ca2+ influx via CaV1.3 serves as the major index to determine the downstream of oscillation/pacemaking, i.e., reduction of Ca2+ influx leads to attenuation of pacemaking whereas enhancement of Ca2+ influx causes augmentation of pacemaking. These analyses on the potential roles of CMI together with those on CMI mechanisms (Figure 6C) suggest that multiple molecular processes in CMI, especially those pertaining to apoCaM and the trio complex, are crucial for excitability and signaling of SNc neurons as well as related pathology, such as PD (Hurley et al., 2013; Scharinger et al., 2015) (Figure 7E). In this context, CMI, emerging as one key regulatory mechanism distinct from others, essentially reduces Ca2+ influx, local and cytosolic Ca2+ concentration, and oscillation and pacemaking, all of which are potentially subject to bidirectional tuning under pathophysiological conditions.\n\n## Discussion\n\nThis study focuses on the principle of CMI mediated by multiple carboxyl-tail motifs to compete apoCaM off the channel. Such cooperative competition is applied to rapamycin-inducible inhibition on CaV1.3 channels, unveiling that the channel inhibited by ultrastrong CMI should be functionally equivalent to the channel in end-stage CDI. Furthermore, by acute and cooperative inhibition of Ca2+ influx, this unique CMI serves as potential therapeutic interventions, as demonstrated by attenuation of CaV1.3-dependent pacemaking with a computational model of SNc neurons.\n\n### CMI across LTCC family and potential physiological linkages\n\nFor LTCCs, gating inhibition by carboxyl-tail motifs (CMI) seems to be a universal mechanism preventing excessive Ca2+ influx and intracellular Ca2+ overload. In CaV1.1 and CaV1.2 channels, C-termini of \u03b11 subunits are subject to proteolytic cleavage and the site of cleavage is located between PCRD and DCRD (Abele and Yang, 2012; Hulme et al., 2005, 2006). Hence, CMI serves as the potential mechanism for endogenous DCRD-containing fragments to attenuate ICa by cooperating with PCRD and IQV. For CaV1.3, the possibility of proteolytic cleavage has not yet been fully explored. Instead, DCT is subject to alternative splicing thus generating \u03b11D isoforms in two major categories: with (\u03b11DL) or without (\u03b11DS or similar variants) autonomous CMI (Bock et al., 2011; Singh et al., 2008), both broadly expressed in various tissues and organs. CaV1.4 channels have profound CMI due to its strong DCT against apoCaM, as evidenced by weak inactivation and small currents in native cells, altogether allowing sustained Ca2+ influx and continuous neural transmission in retinal neurons (Singh et al., 2006) and immune cells (Omilusik et al., 2011). To this end, CMI is a prevalent modality of inhibition across CaV1 family members, awaiting further investigations into the molecular mechanisms and pathophysiology.\n\n### Mechanistic insights into CaV1 gating enlightened by CMI\n\nBased on constitutive and inducible CMI effects, we have gained considerable insights into CaV1 gating. First of all, CMI as an emerging modality of channel inhibition resembles CDI, one of the prominent features of Ca2+ channels (Ben-Johny and Yue, 2014). Targeting the mechanisms of CDI, most structural efforts have been directed to channels in Ca2+ conditions, evidenced by multiple studies focusing on Ca2+/CaM bound with key channel motifs such as IQ or IQV (Ben Johny et al., 2013; Fallon et al., 2005; Kim et al., 2008; Mori et al., 2008) and NSCaTE (Dick et al., 2008), which have not achieved unequivocal viewpoints toward CDI mechanisms. CMI emphasizes on the importance of apoCaM-bound and apoCaM-off structures in Ca2+-free conditions, which represent the states of \u2018Activated\u2019 (pre-CMI) and \u2018Inhibited\u2019 (post-CMI), promisingly holding the key to understand the core mechanisms that control the gating of Ca2+ channels. Functionally, CMI helps clarify the long-standing complication on the\u00a0overall effects of CDI on the actual Ca2+ influx into the cell. Historically, CDI is considered as a negative feedback to autonomously reduce Ca2+ entries (Alseikhan et al., 2002; Budde et al., 2002; Liu et al., 2010). On the other hand, stronger CDI is often accompanied with larger amplitude or facilitated activation of ICa (Adams et al., 2014; Liu et al., 2016; Singh et al., 2008), altogether raising the question whether Ca2+ influx is reduced or enhanced by CDI. Here we provide direct evidence that attenuation of CDI via endogenous factors and mechanisms is essentially a reduction of Ca2+ influx, assured by the fixed level of Ca2+ current at the late phase of ICa, i.e., I300 measured in this work, remaining the same regardless of the changes in Ipeak or SCa. In this context, CMI (in inverse correlation to CDI strength) is the more direct index of channel inhibition. In contrast, CDI strength itself (SCa) could be changed by various mechanisms of action besides [apoCaM] tuning, which may or may not actually reduce Ca2+ influx. For instance, channel mutations in congenital diseases, e.g., Timothy syndrome (Splawski et al., 2004), could cause less inactivation in ICa and thus elevate the Ca2+ entries. Also, small-molecule compounds could produce confounding effects on Ca2+ influx by triggering multiple events opposed to each other (Hille, 2001), e.g., roscovintine (Yarotskyy et al., 2010) reportedly damps activation and meanwhile enhances inactivation, raising uncertainties in its actual effects on Ca2+ influx.\n\n### Therapeutic potentials of CMI-based interventions for PD and beyond\n\nCaV1.3 acts as the dominant factor underlying subthreshold oscillation and pacemaking activities in SNc dopaminergic neurons, although the detailed mechanisms are not fully elucidated (Chan et al., 2007; Durante et al., 2004; Putzier et al., 2009). It is currently believed that activity-dependent engagement of CaV1 channels elevates mitochondrial oxidant stress and vulnerability of SNc neurons, contributing to disease progression of PD (Guzman et al., 2010). Additional support also comes from clinical evidence that CaV1 blockers for hypertension treatment, e.g., 1,4-dihydropyridines (DHPs) appear to reduce the risk of PD (Pasternak et al., 2012; Ritz et al., 2009). However, concerns are raised on developing PD therapeutics based on DHP or like inhibitors. First of all, it has been argued whether CaV1.3 is indeed a prerequisite for pacemaking and autonomous oscillation, because of pharmacological complications of DHP, including non-specific side effects and discrepancies in dose dependence (Guzman et al., 2009; Putzier et al., 2009). Viral or transgenic delivery of CMI peptides to CaV1.3 channels in neurons could circumvent above problems, in hope to unequivocally confirm the actual role of CaV1.3. Secondly, PD interventions deploying CaV1.3 antagonists could be improved in the following aspects: (1) specificity, for which genetically-encoded CMI-based inhibitors provide the desired specificity intrinsic to CaV1 channels; (2) assurance of Ca2+ reduction, for which CMI is mechanistically guaranteed to reduce Ca2+ influx; however, certain antagonists may not be able to provide such assurance due to aforementioned reasons.\n\nCMI-based interventions and therapeutics could be beneficial to other diseases in addition to PD. A wide spectrum of mental disorders are closely involved in dysregulations of CaV1 channels, in that disease-linked mutations in \u03b11 and \u03b22 subunits result into abnormal gating properties (Azizan et al., 2013;Cross-Disorder Group of the Psychiatric Genomics Consortium, 2013;Schizophrenia Working Group of the Psychiatric Genomics Consortium, 2014; Scholl et al., 2013). Encouraged by the results from SNc modeling that the dysregulated CaV1.3, Ca2+ influx and pacemaking could be corrected back to normal, we expect CMI and its therapeutic potentials to manifest in diverse pathophysiology including CaV1 channelopathies.\n\n### Historical context and future directions\n\nDCT and DCRD effects have been suggested in a few prior works, e.g., DCT peptides truncated from long variants of CaV1.3 or CaV1.4 to coexpress with the truncated channels lacking the DCT motif (Singh et al., 2008, 2006), mainly to demonstrate the ICDI (inhibition of CDI) effect. Here, to advance the understanding, we clarify that multiple C-terminal motifs cooperatively and acutely compete apoCaM off the channel; and unveil that CMI functionally resembles CDI such that the maximum potency of CMI is preset by end-stage CDI, which also ensures CMI reduces the overall Ca2+ influx. Moreover, as one major goal beyond basic biophysics, we achieve CMI-based peptides for CaV1.3 of native forms, including the short splice variant \u03b11DS in this work and potentially also the long variant \u03b11DL, another major isoform in native tissues (Yang et al., 2015). In parallel, one study focusing on CaM, the other side of the competition, speculated on CDI mechanisms as a simple CaM-off process based on the data produced with local enrichment of apoCaM (Adams et al., 2014), which, in our view, may have the follow concerns. First, prescreening is needed to control the baseline gating since CaM itself is very well expressed in cells and easily reaches concentrations high enough to diminish the dynamic space to gauge any further change in CDI (Liu et al., 2010). Second, even with above practical issues being handled, any claims about CDI still await further proof with direct evidence based on actual inhibition such as CMI. Third, apoCaM, due to its central position and multifaceted roles in cell signaling (Cheung, 1980; Chin and Means, 2000; Guzman et al., 2010; Hoeflich and Ikura, 2002), is nearly impossible to develop into molecular tools and therapeutics.\n\nTo expand CMI-based inhibitors onto in vivo applications, the approach of rapamycin-mediated heterodimerization may not be directly applicable due to potential interferences with normal cell proliferation, growth and survival (MacMillan, 2013). Nevertheless, the proof-of-concept prototypes in this work lay the foundations for further development and optimization, e.g., by way of light-inducible dimerization (Kennedy et al., 2010; Levskaya et al., 2009; Yazawa et al., 2009), to explore the biological ramifications and therapeutic potentials of CMI in diverse settings.\n\n## Materials and methods\n\n### Molecular biology\n\n\u03b11D_Short (denoted as \u03b11DS) variants were constructed by introducing a unique XbaI site following the IQ domain. PCRD was cloned from either CaV1.4 \u03b11F (NP005174, GenBank accession number, the same as follows) or CaV1.3 \u03b11D (NM_000720); and DCRD was based on CaV1.4 \u03b11F (NP005174), and CFP/YFP-tagged DCRD constructs were made using a similar process as described previously (Liu et al., 2010). Then other CFP/YFP-tagged constructs were cloned by replacing DCRD with appropriate PCR amplified segments, via unique NotI and XbaI sites, including YFP-PCRD, CFP-PCRD-DCRD, and CFP-CaM. Peptides of IQV and IQV-PCRD were cloned from CaV1.2 \u03b11C (NM_199460.3) and CaV1.3 \u03b11D (NM_000720), based on preIQ3-IQ and preIQ3-IQ-PCRD as the templates respectively. YFP-IQV and YFP-IQV-PCRD were cloned similarly as YFP-PCRD. Segments of PCRD-DCRD, PCRD, DCRD with different glycines (G0, G6 and G24) were PCR-amplified with SpeI and XbaI sites and inserted into aforementioned \u03b11DS.BSCaMIQ, serving as the apoCaM buffer in this study, was kindly provided by Dr. A. Persechini (Black et al., 2006). Rapamycin-inducible system consisted of FRB, which was based on 93 a.a. rapamycin binding motif of MTOR; and FKBP, which was 108 a.a. human FKBP-12 (AAA58472). Constructs of CFP-PCRD-FRB, YFP-FKBP-DCRD, YFP-FKBP-PCRD and FRB-CFP-ras were made by appropriate design. PCRD segment was amplified by PCR with flanking NotI and EcoRI then cloned directionally via these two unique sites into CFP-FRB_pcDNA4_HisMaxC expressing plasmids. DCRD segment was amplified by PCR with flanking BamHI and EcoRI then cloned directionally via these two unique sites into YFP-FKBP_pcDNA4_HisMaxC expressing plasmids. The fusion of YFP-FKBP-PCRD and FRB-CFP-ras were ligated by overlap extension PCR with flanking KpnI and XbaI then cloned into pcDNA3 expressing plasmids via these two unique sites. To make constructs of PCRD-FRB and FKBP-DCRD, segments from CFP-PCRD-FRB and YFP-FKBP-DCRD respectively were amplified by PCR with flanking KpnI and XbaI then cloned directionally into pcDNA4 vector. For chimeric channel \u03b11DS-G12-FRB, a linker containing 12 glycine residues was fused with FRB by overlap PCR with flanking SpeI and XbaI and cloned into \u03b11DS containing engineered cloning sites before the stop codon.\n\n### Transfection of cDNA constructs\n\nFor whole-cell electrophysiology and confocal fluorescence imaging, HEK293 cells were cultured in 60 mm dishes or 35 mm No. 0 glass-bottom dishes, and constructs were transiently transfected according to an established calcium phosphate protocol (Liu et al., 2010). HEK293 cell line was generously provided by Dr. Zhijie Chang (Tsinghua University). The cell line was free of mycoplasma contamination, checked by PCR with primers 5\u2019- GGCGAATGGGTGAGTAACACG \u22123\u2019 and 5\u2019- CGGATAACGCTTGCGACCTATG \u22123\u2019. 5 \u03bcg of cDNA encoding the desired \u03b11D subunit, along with 4 \u03bcg of rat brain \u03b22a (M80545) and 4 \u03bcg of rat brain \u03b12\u03b4 (NM012919.2) subunits were applied. All of the above cDNA constructs contained a cytomegalovirus promoter. To enhance expression, cDNA for simian virus 40 T antigen (1\u20132 \u03bcg) was also co-transfected with channel constructs. For all the peptides co-transfected, 2 \u03bcg of plasmids were added together with channels. Cells were washed with PBS 6\u20138 hr after transfection and maintained in supplemented DMEM, then incubated for at least 48 hr in a water-saturated 5% CO2 incubator at 37\u00b0C before electrophysiology experiments and confocal microscopy experiments.\n\nFor FRET optical imaging, HEK293 cells cultured on 35 mm No. 0 glass-bottom dishes were transfected with cDNAs (1\u20135 \u03bcg each) by Lipofectamine 2000 (Invitrogen,\u00a0Waltham,\u00a0MA). Cells were washed with PBS 4\u20136 hr after transfection and maintained in supplemented DMEM, then incubated for 24\u201348 hr in a water-saturated 5% CO2 incubator at 37\u00b0C before FRET 2-hybrid experiments.\n\n### Whole-cell electrophysiology\n\nWhole-cell recordings of transfected HEK293 cells were performed at room temperature (25\u00b0C) using an Axopatch 200B amplifier (Axon Instruments,\u00a0Sunnyvale,\u00a0CA). Electrodes were pulled with borosilicate glass capillaries by a programmable puller (P-1000, Sutter Instruments,\u00a0Novato,\u00a0CA) and heat-polished by a microforge (MF-830, Narishige,\u00a0Japan), resulting in 1\u20133 M\u03a9 resistances, before series resistance compensation of about 70%. The internal solutions contained (in mM): CsMeSO3, 135; CsCl2, 5; MgCl2, 1; MgATP, 4; HEPES, 5; and EGTA, 5, adjusted to 290 mOsm with glucose and pH 7.3 with CsOH. The extracellular solutions contained (in mM): TEA-MeSO3, 140; HEPES, 10; CaCl2 or BaCl2, 10, adjusted to 300 mOsm with glucose and pH 7.3 with TEAOH, all according to the previous reports (Liu et al., 2016, 2010). For run-down experiments, the content of MgATP (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO) in the internal solutions was intentionally reduced. Chemical reagents used for blockage experiments (isradipine, Sigma-Aldrich) and drug-inducible experiments (rapamycin, Fisher Scientific,\u00a0Waltham,\u00a0MA) were dissolved in DMSO as 10 mM or 1 mM stock solution, stored at \u221220\u00b0C, and then diluted to 10 \u03bcM or 1 \u03bcM using extracellular Ca2+ solution right before experiments. Whole-cell currents were generated from a family of step depolarization (\u221270 to\u00a0+50 mV from a holding potential of \u221270 mV) or a series of repeated step depolarization (\u221210 mV from a holding potential of \u221270 mV). Currents were recorded at 2 kHz low-pass filtering of the instrument. Traces were acquired at a minimum repetition interval of 30 s. P/8 leak subtraction was used throughout.\n\n### FRET optical imaging\n\nFRET 2-hybrid imaging experiments were performed with an inverted microscope (Ti-U, Nikon,\u00a0Japan) with Neo sCMOS camera (Andor Technology,\u00a0UK). The light source was from the mercury lamp filtered at the\u00a0appropriate wavelengths for CFP and YFP by the optical filters mounted at the computer-controlled filter wheel (Sutter Instrument) for excitation, subsequently passing the dichroic mirror and the emission filters. Operations and measurements were controlled by the iQ software (Andor Technology). FRET data were acquired and analyzed by an intensity-based two-hybrid assay (33-FRET) as described (Butz et al., 2016; Erickson et al., 2001; Liu et al., 2010), based on\n\n$$\nFR=1+\\frac{FR_{max}\u22121}{1+\\frac{K_{d}}{D_{free}}}\n$$\n\nwhere\u00a0$FR_{max}$represents the maximum FRET ratio\u00a0$FR$pertaining to the receptor (YFP), and\u00a0$D_{free}$denotes the equivalent free donor (CFP-tagged) concentration. By fitting the curve of\u00a0$FR\u2212D_{free}$with a set of customized Matlab (Mathworks, Natick, MA) codes to iteratively estimate\u00a0$FR_{max}$and $D_{free}$, effective dissociation equilibrium constant ($K_{d}$) can be achieved for each binding pair to evaluate the (relative) affinity. During imaging, the bath solution was Tyrode\u2019s buffer, containing (in mM): NaCl, 129; KCl, 5; CaCl2, 2; MgCl2, 1; HEPES, 25; glucose, 30, 300 mOsm, adjusted with glucose and pH 7.3, adjusted with NaOH. Ionomycin (Sigma-Aldrich) was dissolved in DMSO as 1 mM stock solution, stored at \u221220\u00b0C, and diluted to 1 \u03bcM using Tyrode\u2019s buffer immediately before applications.\n\n### Confocal fluorescence imaging\n\nFluorescence images were achieved in HEK293 cells transfected with membrane-localized CFP-tagged FRB and cytosolic FKBP-PCRD/DCRD tagged with YFP. Dynamic translocations were observed with a ZEISS (Germany)\u00a0Laser Scanning Confocal Microscope (LSM710) through a 100X oil objective and analyzed with ZEN 2009 Light Edition software and Adobe Photoshop CS5 software (Adobe Systems, San Jose, CA).\n\n### Computer simulation\n\nSimulations were performed with NEURON (Carnevale and Hines, 2006), version 7.1. In light of the evidence that both \u03b11DS and \u03b11DL could express in SNc neurons, we simulated CaV1.3 of two extreme settings with distinct inactivation kinetics: one is lack of CDI (ultrastrong CMI) and the other exhibits pronounced CDI representing \u03b11DS (without CMI). CMI effects including the endogenous CMI as in \u03b11DL could then be simulated by adjusting the relative weights of the above two states, resulting into varying (intermediate) levels of SCa and JCa but with constant I300 throughout. Subsequently, we implemented this new CaV1.3 model and substituted the original L-type Ca2+ current mechanism in a published Neuron model of SNc (Chan et al., 2007), where amendments were incorporated to appropriately reproduce oscillation and pacemaking (Guzman et al., 2009; Putzier et al., 2009). To simulate CCB effects, ICa and its maximum conductance were decreased by\u00a0~30%.\n\n### Data analysis and statistics\n\nData were analyzed in Matlab and Origin (Origin Software, San Clemente, CA). The\u00a0standard error of the mean (S.E.M.) and Student\u2019s t-test (unpaired; two-tailed with criteria of significance: *p<0.05; **p<0.01; ***p<0.001) were calculated when applicable.\n",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "08f0e6d1-abe1-4b13-93b5-fc5e57fbc69d",
+      "submission_id": "c0b7115d-a23d-4d27-b108-0d433b160457",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Kenton J Swartz, National Institutes of Health , United States\n\n## Review text\n\nDOI: [10.7554/eLife.21989.021](https://doi.org/10.7554/eLife.21989.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cooperative and acute inhibition by multiple C-terminal motifs of L-type Ca2+ channels\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Kenton J Swartz (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports interactions among C-terminal structural components of L-type Ca channels IQ, PCRD and DCRD, and the effects of such interactions on voltage gated activation (VGA) and CaM mediated Ca dependent inactivation (CDI). The interactions among IQ, PCRD and DCRD can alter channel function (known as CMI) only when any two of them are tethered together by fusion protein or rapamycin-mediated heterodimerization. The spatial closeness of any two of these structural domains may strengthen their interactions enough to compete off the IQ-CaM interaction, which is suggested by experiments with reduced apoCaM and live cell FRET tw0-hybrid assays. This mechanism directly explains why the interactions among IQ, PCRD and DCRD reduce CDI. Previous studies suggest that CDI may actually close the channel by reducing activation and results in this study show that at the end of CDI and CMI the currents levels are the same, the overall results suggest that CMI may alter channel function similarly as CDI. The mechanism revealed by this manuscript explains well the different phenotypes of various L-type Ca channels. By computational modeling, the manuscript suggests physiological importance of CMI, and rapamycin-mediated heterodimerization experiments provided a novel rationale for pharmacological intervention of Ca channel function. The study is significant and the results in general provide a strong argument for the proposed mechanism.\n\nEssential revisions:\n\n1) An overarching and major weakness of the manuscript is the lack of clarity in the written presentation. The text requires extensive editing to be acceptable for publication in eLife. The authors need to provide clear and logical rationale for each of the experiments performed and for what the results mean. The current presentation assumes that the reader is familiar with the authors previous work, as well as an extensive body of work on CDI. The authors need to undertake a major revision of the text to make the work accessible to a broad audience, and for the authors to provide more details on how each experiment was performed. The Abstract is full of hyperbole and needs to be rewritten to convey the main findings of the study and why they are important. We emphasize that we think this is an interesting study, but that the written presentation needs a lot of work. The comments below give more specific guidance.\n\n2) The manuscript uses a lot of jargon and abbreviations, but does not give clear definition for all of them. The authors need to clearly explain, using correct and simple English sentences, in the beginning of Results the important molecular processes and parameters, such as CMI, CDI, SCa, VGA, JCa and r50 etc., and use both text and figures to illustrate the definition, the experimental phenomena of these processes, and how they are measured.\n\n3) Since CMI inhibits both voltage gated activation (VGA) and Ca dependent inactivation (CDI), it is too simplistic to measure CMI only based on CDI size (Figures 2, 4). It would be better to measure both VGA and CDI at various voltages and the variation in VGA and CDI changes observed with different experimental conditions need better explanation and discussion.\n\n4) The authors tend to make conclusions by simply referring to figures without convincing analyses or clear explanation. The authors should describe the most relevant feature of the result in the text and point out how the result leads to the conclusion. The authors should also explain clearly if the conclusion is novel or seemingly at odds with previously established mechanisms.\n\n5) Structural domains from \u03b11F and \u03b11D such as PCRD-F and PCRD-D are intermittently used in different experiments without justification or explanation. In the text or figure legend, prior to the description of results, briefly explain why D or F form is used; do not label D or F if the two forms do not make any difference to the result.\n\n6) Figure 2. CMI is supposed to inhibit both activation and CDI, but in Figure 2C the right two panels only show a reduction of CDI but not activation. The authors should explain and discuss this.\n\n7) Do the authors suggest that in Figure 2C, with IQ or IQ/PCRD, the channel can have CDI without CaM?\n\n8) Figure 3. There is no experimental evidence that PCRD or DCRD were actually expressed separately.\n\n9) There is a lack of clarity about the chimeric constructs used. The authors explain that they will \"employ homologous DCTF from \u03b11F with the strongest CMI among CaV1 family to construct chimeric CaV1.3 channels by fusing PCRDF-DCRDF onto IQ motif of \u03b11DS\". However, some of the experiments are conducted with PCRDD (Figures 1C, 2B, 4C, 4E, 6B) without giving an explanation or rationale.\n\n10) The quantification of the FRET experiments is missing: what is the equation fitting FRET strength (as in Figure 4E, etc.)? Please report fitting parameters.\n\n11) The rapamycin experiments are elegant and insightful. However, it is not clear why 300ms pulses were chosen, as it does not appear steady state for CMI (Figure 6A red current traces). This is also evident in Figure 1B, where the current does not seem to level off at 300ms. The end stage of CMI and CDI may not be the same with longer pulses (true steady-state). This point seems crucial to the authors' conclusion that CDI and CMI functionally result into indistinguishable gating at the ending stage. Experiments with longer depolarizing pulses or measurements of CDI and CMI time constants may help to discuss this point.\n",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "365a9666-3311-4d04-a259-3862ff0fcc4a",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C1",
+      "claim": "L-type Ca2+ channels (LTCC or CaV1 channels) play pivotal roles in numerous physiological functions by mediating Ca2+ influx and membrane excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "L-type Ca2+ channels (LTCC or CaV1 channels) play pivotal roles in numerous physiological functions by mediating Ca2+ influx and membrane excitability (Striessnig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Striessnig et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "dd8810ec-26b2-465b-b23f-3618f255afec",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C2",
+      "claim": "CaV1.3 channels exhibit unique biophysical properties involving diverse regulatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Among four isoforms of CaV1.1\u2013CaV1.4 in LTCC family, CaV1.3 channels exhibit unique biophysical properties (Lieb et al., 2014; Xu and Lipscombe, 2001) involving diverse regulatory mechanisms (Ben-Johny and Yue, 2014; Christel and Lee, 2012; Huang et al., 2012; Tan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "860db043-dd45-4f89-8a9d-240706e1d59c",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C3",
+      "claim": "CaV1.3 is widely distributed in various excitable tissues, including both cardiovascular and nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Widely distributed in various excitable tissues, including both cardiovascular and nervous systems (Brandt et al., 2003; Mangoni et al., 2003; Nemzou et al., 2006; Striessnig, 2007), CaV1.3 is also involved in a wide spectrum of pathology, including multiple inheritable diseases (Pinggera and Striessnig, 2016; Platzer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "6a1bc386-225d-4ef1-9945-d779a38fb79c",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C4",
+      "claim": "CaV1.3 is involved in a wide spectrum of pathology, including multiple inheritable diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Widely distributed in various excitable tissues, including both cardiovascular and nervous systems (Brandt et al., 2003; Mangoni et al., 2003; Nemzou et al., 2006; Striessnig, 2007), CaV1.3 is also involved in a wide spectrum of pathology, including multiple inheritable diseases (Pinggera and Striessnig, 2016; Platzer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pinggera and Striessnig, 2016; Platzer et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "0cb984ca-8d82-483f-b646-a312d5013b5c",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C5",
+      "claim": "CaV1.3 expressed in substantia nigra pars compacta (SNc) neurons tightly controls the autonomous subthreshold Ca2+ oscillations which have been considered to underlie the pathophysiology of Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "As one prominent exemplar of its pathophysiological linkage, CaV1.3 expressed in substantia nigra pars compacta (SNc) neurons tightly controls the autonomous subthreshold Ca2+ oscillations which have been considered to underlie the pathophysiology of Parkinson's disease (PD) (Chan et al., 2007; Guzman et al., 2009, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2007; Guzman et al., 2009, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "36cd4a78-c089-42ad-b9ac-fcbe46a4ff90",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C6",
+      "claim": "CaV1.3 is tuned by its own distal carboxyl tail (DCT) to compete with apoCaM (Ca2+-free calmodulin), which is pre-associated with the carboxyl terminus of the channel at preIQ3-IQ domain (denoted as IQV).",
+      "claim_type": "EXPLICIT",
+      "source": "CaV1.3 is tuned by its own distal carboxyl tail (DCT) to compete with apoCaM (Ca2+-free calmodulin), which is pre-associated with the carboxyl terminus of the channel at preIQ3-IQ domain (denoted as IQV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the mechanism being studied, supported by the experimental work in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "8c1e8b46-3d11-4a06-a04f-d2f5e73cabd1",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C7",
+      "claim": "IQV plays important roles in channel functions and is closely involved in both apoCaM and Ca2+/CaM binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Closely involved in both apoCaM and Ca2+/CaM binding (Jurado et al., 1999), IQV plays important roles in channel functions (Ben Johny et al., 2013; Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "f9419c48-0c99-4805-ad31-f9d65affcbae",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C8",
+      "claim": "The competitive tuning is highly regulated by fluctuations of [apoCaM], the strength of particular DCT isoforms, or the apoCaM affinity with IQV.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive tuning is highly regulated by fluctuations of [apoCaM], the strength of particular DCT isoforms, or the apoCaM affinity with IQV (Adams et al., 2014; Bazzazi et al., 2013; Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adams et al., 2014; Bazzazi et al., 2013; Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "f6ea7d41-599c-4ab4-9678-adfb8ea1d3a7",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C9",
+      "claim": "DCT consists of two putative \u03b1-helical domains\u2014a proximal and a distal C-terminal regulatory domain (termed PCRD and DCRD, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "DCT consists of two putative \u03b1-helical domains\u2014a proximal and a distal C-terminal regulatory domain (termed PCRD and DCRD, respectively) (Hulme et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hulme et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "5ae6d4b0-a508-488a-98b3-27709b7a8cc3",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C10",
+      "claim": "Positively charged PCRD could coordinate with negatively charged DCRD, in the context of CaV1.3, to regulate effective CaM affinity to the IQV region of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Positively charged PCRD could coordinate with negatively charged DCRD, in the context of CaV1.3 (Liu et al., 2010), to regulate effective CaM affinity to the IQV region of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "9357a793-9467-49ae-b5c4-ed8bac3462bb",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C11",
+      "claim": "DCT inhibits Ca2+-dependent inactivation (CDI).",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the reported inhibition on Ca2+-dependent inactivation (CDI) (Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006), several studies suggest that DCT also concurrently attenuates voltage-gated activation (VGA), reducing the maximum open probability and positively shifting the voltage dependence (Hulme et al., 2006; Lieb et al., 2014; Liu et al., 2016; Scharinger et al., 2015; Singh et al., 2008; Wahl-Schott et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "5681264a-f86c-4552-bdea-a558a26c8e05",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C12",
+      "claim": "DCT concurrently attenuates voltage-gated activation (VGA), reducing the maximum open probability and positively shifting the voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the reported inhibition on Ca2+-dependent inactivation (CDI) (Liu et al., 2010; Singh et al., 2006; Wahl-Schott et al., 2006), several studies suggest that DCT also concurrently attenuates voltage-gated activation (VGA), reducing the maximum open probability and positively shifting the voltage dependence (Hulme et al., 2006; Lieb et al., 2014; Liu et al., 2016; Scharinger et al., 2015; Singh et al., 2008; Wahl-Schott et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "fd82cb49-283d-4c87-9ca7-7971dca5deac",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C13",
+      "claim": "\u03b11DS exhibits strong CDI and VGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Short variant of \u03b11DS terminates shortly after the IQV motif and lacks almost entire DCT domain, and its Ca2+ current (ICa) exhibited strong CDI and VGA (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "b58856d6-59e5-4473-b7eb-3d8d5fa20065",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C14",
+      "claim": "\u03b11DS contains all the core elements for CDI including the IQV domain for apoCaM pre-association and the EF-hand motifs and N-terminal Ca2+/CaM binding NSCaTE motif for CDI transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding CDI, \u03b11DS still contains all the core elements including the IQV domain for apoCaM pre-association and the EF-hand motifs and N-terminal Ca2+/CaM binding NSCaTE motif (Dick et al., 2008) for CDI transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dick et al., 2008 and structural knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "3bdf83b7-8f5d-4b44-827c-1996add0589b",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C15",
+      "claim": "The value of 1\u2212r50,Ca at \u221210 mV was taken as the index of CDI strength (SCa).",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, due to rather weak VDI of CaV1.3 at 50 ms (r50,Ba close to 1) (Tadross et al., 2010), thus for simplicity the value of 1\u2212r50,Ca at \u221210 mV was taken as the index of CDI strength (SCa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study, with citation support",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "7205a346-3563-455c-adaf-2ae37e3fd889",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C16",
+      "claim": "JCa (Jpeak at \u221210 mV) served as the quantitative index for VGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout this study, SCa and JCa (Jpeak at \u221210 mV) served as the quantitative indices for CDI and VGA respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "08dbf084-71de-4252-93c3-ec088ee3ff95",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C17",
+      "claim": "CDI of CaV1.3 is independent of global Ca2+ so insensitive to Ca2+-buffer capacities and variations in channel expressions.",
+      "claim_type": "EXPLICIT",
+      "source": "Technically, compared to VGA and JCa, CDI and SCa are more robust so more favorable since CDI of CaV1.3 is independent of global Ca2+ so insensitive to Ca2+-buffer capacities and variations in channel expressions partly due to transient transfections (Dick et al., 2008; Tadross et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dick et al., 2008; Tadross et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "ac167cf3-65a2-4b5e-ad14-28036ad3f64b",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C18",
+      "claim": "\u03b11DS-PCRD-DCRD exhibited substantially attenuated SCa and JCa compared with \u03b11DS control.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with \u03b11DS control, SCa and JCa from \u03b11DS-PCRD-DCRD were substantially attenuated, which provided ample dynamic ranges (highlighted by green areas) to explore CMI effects on CDI/VGA and its mechanisms (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "9a6b88e0-1614-42b6-b03d-7d4bbb13f884",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C19",
+      "claim": "Fusing only PCRD or DCRD onto \u03b11DS resulted in no alteration in CDI in comparison with the \u03b11DS control.",
+      "claim_type": "EXPLICIT",
+      "source": "From all these channel variants, we concluded no alteration in CDI in comparison with the \u03b11DS control, similarly from VGA results and analyses (Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "af19d42b-12fb-4968-83e5-29398e24e14f",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C20",
+      "claim": "All the three motifs of PCRD, DCRD and IQV are required for effective CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the fact that all the configurations under test failed to mediate SCa and JCa attenuations, all the three motifs of PCRD, DCRD and IQV might be required for effective CMI, consistent with the preliminary analyses on DCT subsegments from CaV1.3 and CaV1.4, in which the segment between PCRD and DCRD ('B' region) was dispensable but neither PCRD nor DCRD could be excluded (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data and supported by citation to Liu et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "b5e9eb29-3a7d-4030-acbd-1fae81126af0",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C22",
+      "claim": "Under low [apoCaM], for the three \u03b11DS-GX-DCRD variants, both CDI and VGA were concurrently and significantly attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical summary of CDI (SCa) and VGA (JCa) in endogenous (control) or low [apoCaM] for all channel variants of \u03b11DS, \u03b11DS-PCRD and \u03b11DS-GX-DCRD, with additional information in Figure 2\u2014figure supplement 1. Notably, for the three \u03b11DS-GX-DCRD variants, both CDI and VGA were concurrently and significantly attenuated. Statistical significance was evaluated and indicated (p<0.001, ***; p<0.05, *).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by statistical analysis of experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "73b43e1e-c822-4947-bf86-ee5ebd0e0c84",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C23",
+      "claim": "Only DCRD and IQV are required by CMI so that PCRD becomes dispensable if [apoCaM] is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, mechanistically only DCRD and IQV are required by CMI so that PCRD becomes dispensable if [apoCaM] is low, unveiling the differential roles of PCRD and DCRD in the potential cooperation for CMI induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing CMI effects under low apoCaM conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "60e36f07-c31a-4b3b-84aa-a95b3d4e246d",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C24",
+      "claim": "The trio of PCRD, DCRD and IQV failed to attenuate CDI when they were separately expressed as three individual peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the trio failed to attenuate CDI when they were separately expressed as three individual peptides (Figure 3A\u2013C), even when PCRD, DCRD and IQV (contained in \u03b11DS) were all well expressed in the same cell as confirmed with fluorescent tags (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 3A\u2013C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "93f6d003-eeeb-4b20-b234-2aeaadd1c0fe",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C25",
+      "claim": "When [apoCaM] was reduced with chelator BSCaMIQ, CDI remained ultrastrong for all the three test groups with separate peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "When [apoCaM] was reduced with chelator BSCaMIQ as in Figure 2, CDI remained ultrastrong and indistinguishable from \u03b11DS control for all the three test groups (Figure 3D\u2013F), and VGA analyses came to the same conclusions consistently (Figure 3\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 3D\u2013F and Figure 3\u2014figure supplement 2D\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "d61a7e7c-432a-4b76-bc0c-b051d8f80e4e",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C26",
+      "claim": "All three combinations (I, II, and III) of linking any two modules out of the three exhibited CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all the three combinations exhibited CMI, strongly attenuating both CDI and VGA as illustrated by green areas indicating the altered r50 and Jpeak profiles compared to \u03b11DS control (Figure 4A\u2014C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 4A\u2014C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "5c2abce9-e5f7-44de-b46a-7f942baf7fb7",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C27",
+      "claim": "PCRDD and PCRDF from CaV1.3 and CaV1.4 are interchangeable for CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Combination I also provided a great chance to revisit the assumption we made earlier regarding interchangeable PCRDD and PCRDF from CaV1.3 and CaV1.4, respectively. Instead of dealing with two different channel variants, here the same \u03b11DS served as the control to reliably evaluate PCRDD-DCRD vs PCRDF-DCRD peptides. And our assumption was validated by the negligible differences in VGA and CDI between the two PCRD-DCRD peptides (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "219a10b7-63e5-4a4c-beba-1b3931a0a492",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C28",
+      "claim": "DCRD bound IQV-PCRD with higher affinity (Kd = 1135) than that between DCRD and IQV (Kd = 4700).",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell FRET two-hybrid assays demonstrated that DCRD bound IQV-PCRD with higher affinity (Kd = 1135, units in donor-cube fluorescence intensity) than that between DCRD and IQV (Kd = 4700), regardless of whether PCRD as the standalone peptide was also present (Kd = 4624) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET binding assay data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "764911d7-75c5-4ecc-923b-a8429c3a72a9",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C29",
+      "claim": "DCRD overexpression nearly abolished the binding between apoCaM and IQV-PCRD.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to the high affinity between DCRD and IQV-PCRD, DCRD overexpression nearly abolished the binding between apoCaM and IQV-PCRD (i.e., apoCaM/channel pre-association) as demonstrated in the plot of FR-Dfree (FRET ratio vs free donor concentrations) (Figure 4\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET binding assay data shown in Figure 4\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "7a2a0bdc-98a3-447d-912b-a29e538d472e",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C30",
+      "claim": "Without the presence of PCRD, apoCaM was still able to bind IQV, but the DCRD perturbation was much less effective.",
+      "claim_type": "EXPLICIT",
+      "source": "meanwhile, without the presence of PCRD, apoCaM was still able to bind IQV, but the DCRD perturbation was much less effective (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET binding assay data shown in Figure 4\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "9d930115-a21c-4846-9e94-f6c2729f6b94",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C31",
+      "claim": "If any two components have enough spatial closeness or intimacy, it would be sufficient for the third component to form the 'trio' complex and thus induce effective CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, a cooperative scheme of CMI under physiological [apoCaM] in the cell was unveiled by functional and binding analyses (Figure 4E), which depicted that if any two components have enough spatial closeness or intimacy, e.g., by prearranged linkage, it would be sufficient for the third component to form the 'trio' complex and thus induce effective CMI (combinations of I, II and III, highlighted in grey ellipses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on synthesis of experimental data from functional and binding analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "4f4fab89-b0c5-4963-a0c0-2fd0e15a1d88",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C32",
+      "claim": "Rapamycin application induced rapid attenuation of both CDI (SCa) and VGA (Ipeak) within tens of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the stable time-course profiles of the control group (Figure 5B), CDI (SCa) and VGA (Ipeak) were both rapidly attenuated upon applying 1 \u03bcM rapamycin. Within tens of seconds, dimerization between FKBP-DCRD with PCRD-FRB started to attenuate ICa as evidenced by time-dependent decays (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 5B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "58627193-c811-4bce-bcd2-48a138352264",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C34",
+      "claim": "Rapamycin induced strong CMI effects on ICa within 4\u20135 min in version 2, with SCa reaching 0.41 \u00b1 0.06 and Ipeak reaching 35% \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "More potently than the earlier design but in a similar time course (version 1, Figure 5B,C), rapamycin induced strong CMI effects on ICa within 4\u20135 min (version 2, Figure 5E,F). Both CDI and VGA were substantially attenuated: SCa (0.41 \u00b1 0.06, n = 5) and Ipeak (35% \u00b1 3%, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 5E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "95017b6a-70e2-47ea-b254-53bdd56bfb49",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C35",
+      "claim": "The current amplitude at 300 ms (I300) stayed at the same levels during the whole time course of rapamycin-inducible CMI, in contrast to rapidly decayed Ipeak.",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting feature we discovered from rapamycin-inducible CMI was that the current amplitude at 300 ms (I300) stayed at the same levels during the whole time course (Figure 6A, top two rows), in contrast to rapidly decayed Ipeak as outlined by blue dotted lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "5faa209a-e3e6-4537-ae4b-ca9464c80e70",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C36",
+      "claim": "In the run-down process or the blockage by isradipine, both Ipeak and I300 were attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "In the run-down process (Kepplinger and Romanin, 2005) or the blockage by isradipine (Anekonda and Quinn, 2011), the number of functional channels was reduced, which resulted into attenuations on ICa during the whole depolarization step including both Ipeak and I300 (Figure 6A, lower two rows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 6A, with citation support",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "ae818bc9-affd-40bb-8475-177d525c685a",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C37",
+      "claim": "SCa remained constant for \u03b11DS undergoing run-down or blockage since intrinsic gating properties of each channel were not altered.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SCa remained constant for \u03b11DS undergoing run-down or blockage since intrinsic gating properties (e.g., CDI) of each channel were not altered, whereas SCa was attenuated in CMI (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "61bf44f3-a2fa-49ed-b26e-e17db81d935e",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C38",
+      "claim": "I300 remained at similar amplitudes for all channel variants tested, regardless of whether CMI was in effect.",
+      "claim_type": "EXPLICIT",
+      "source": "By revisiting different channel variants tested earlier, we concluded that I300 indeed remained at similar amplitudes for them all (Figure 6B), whereas their Ipeak and SCa exhibited broad dynamic ranges.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "f1fadb75-261c-4a48-bd81-d9719f44eec3",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C39",
+      "claim": "The constant I300 essentially set the lower limit for CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "The constant I300 (or J300) essentially set the lower limit for CMI. That said, while CMI potency was getting higher, Jpeak was tuned down to more closely approach J300 (e.g., Figure 6B vs Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of experimental data across multiple figures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "1007e50f-077f-442b-9334-e8d4d6143324",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C40",
+      "claim": "CMI attenuation on CDI is realized by reducing Ipeak while maintaining the end-stage ICa (indexed with I300 or I1000), which ensures the overall Ca2+ influx is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though, we just clarified that CMI attenuation on CDI is actually realized by reducing Ipeak while maintaining the end-stage ICa (indexed with I300 or I1000), which ensures the overall Ca2+ influx is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on synthesis of experimental data showing constant I300 and reduced Ipeak",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "c5601edf-2e72-4aa2-9f20-bb18ccf3a653",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C41",
+      "claim": "The interactions within the trio complex of IQV/PCRD/DCRD were largely unaffected by Ca2+/CaM produced from ionomycin-introduced Ca2+ and endogenous CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude potential complications from ambient Ca2+/CaM, we performed FRET experiments to ensure that the interactions within the trio complex of IQV/PCRD/DCRD were largely unaffected by Ca2+/CaM produced from ionomycin-introduced Ca2+ and endogenous CaM, although Ca2+/CaM indeed exhibited higher binding affinity to IQV than apoCaM (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET experimental data shown in Figure 6\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "68974505-94aa-406f-b518-5c33a2d327da",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C42",
+      "claim": "Under CMI of different potency, ICa from \u03b11DS, \u03b11DL, or \u03b11DS with inducible peptide dimerization exhibited distinct Ipeak, SCa and Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Under CMI of different potency, ICa from \u03b11DS (no CMI), \u03b11DL (intermediate CMI), or \u03b11DS with inducible peptide dimerization (ultrastrong CMI), exhibited distinct Ipeak, SCa and Ca2+ influx (Figure 7A\u2014C, left) (green areas indicating the reduction of Ca2+ influx).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by computational modeling data shown in Figure 7A\u2014C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "c50693a1-7c1a-4a62-9965-39e8ce196bdf",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C43",
+      "claim": "The time rates of Ca2+ oscillation and autonomous spiking in the SNc model were tuned down to different levels in accordance with ICa attenuations or CMI potencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the time rates of Ca2+ oscillation and autonomous spiking in the SNc model were also tuned down to different levels in accordance with ICa attenuations or CMI potencies (Figure 7A\u2014C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by computational modeling data shown in Figure 7A\u2014C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "5dbee82c-9403-416b-9fda-5c7e031c2e78",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C44",
+      "claim": "Moderate (28%) blockade clearly reduced overall Ca2+ influx and resulted in similar attenuations in oscillation and pacemaking in the SNc model.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we also simulated the conventional blockage in the CaV1.3/SNc model (Figure 7D). Similar attenuations in oscillation and pacemaking were observed from the SNc model when the moderate (28%) blockade clearly reduced overall Ca2+ influx (green area), supporting the current strategy to develop PD therapeutics based on conventional CaV1.3 antagonists (Gudala et al., 2015; Hurley et al., 2013; Kang et al., 2012; Pasternak et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by computational modeling data shown in Figure 7D, with citation support",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "c76c0f3b-5b77-4e95-9024-aeb8d7415d39",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C45",
+      "claim": "Ca2+ influx via CaV1.3 serves as the major index to determine the downstream of oscillation/pacemaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, one common rule was deduced for CMI, CDI and other modalities of inhibition: Ca2+ influx via CaV1.3 serves as the major index to determine the downstream of oscillation/pacemaking, i.e., reduction of Ca2+ influx leads to attenuation of pacemaking whereas enhancement of Ca2+ influx causes augmentation of pacemaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on synthesis of computational modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "46e39762-1bd4-40cb-8469-d4559cab7e4c",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C46",
+      "claim": "CMI essentially reduces Ca2+ influx, local and cytosolic Ca2+ concentration, and oscillation and pacemaking, all of which are potentially subject to bidirectional tuning under pathophysiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, CMI, emerging as one key regulatory mechanism distinct from others, essentially reduces Ca2+ influx, local and cytosolic Ca2+ concentration, and oscillation and pacemaking, all of which are potentially subject to bidirectional tuning under pathophysiological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on synthesis of experimental and computational data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "baf722f4-b86c-4965-8e21-2b6c2a06616d",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C47",
+      "claim": "For LTCCs, gating inhibition by carboxyl-tail motifs (CMI) seems to be a universal mechanism preventing excessive Ca2+ influx and intracellular Ca2+ overload.",
+      "claim_type": "EXPLICIT",
+      "source": "For LTCCs, gating inhibition by carboxyl-tail motifs (CMI) seems to be a universal mechanism preventing excessive Ca2+ influx and intracellular Ca2+ overload.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data across CaV1 family members",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "4f487eb2-0fd6-413e-9b13-14375f17244c",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C48",
+      "claim": "In CaV1.1 and CaV1.2 channels, C-termini of \u03b11 subunits are subject to proteolytic cleavage and the site of cleavage is located between PCRD and DCRD.",
+      "claim_type": "EXPLICIT",
+      "source": "In CaV1.1 and CaV1.2 channels, C-termini of \u03b11 subunits are subject to proteolytic cleavage and the site of cleavage is located between PCRD and DCRD (Abele and Yang, 2012; Hulme et al., 2005, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abele and Yang, 2012; Hulme et al., 2005, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "7fcf8e69-7de3-4f4a-86f9-c7086dddeae1",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C50",
+      "claim": "CMI provides direct evidence that attenuation of CDI via endogenous factors and mechanisms is essentially a reduction of Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide direct evidence that attenuation of CDI via endogenous factors and mechanisms is essentially a reduction of Ca2+ influx, assured by the fixed level of Ca2+ current at the late phase of ICa, i.e., I300 measured in this work, remaining the same regardless of the changes in Ipeak or SCa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing constant I300 across conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "72d905a1-8e47-45a0-8e70-42e2adf0f780",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C51",
+      "claim": "CaV1.3 acts as the dominant factor underlying subthreshold oscillation and pacemaking activities in SNc dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV1.3 acts as the dominant factor underlying subthreshold oscillation and pacemaking activities in SNc dopaminergic neurons, although the detailed mechanisms are not fully elucidated (Chan et al., 2007; Durante et al., 2004; Putzier et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2007; Durante et al., 2004; Putzier et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "8d557ee1-3076-46e3-a74e-6182db017c8a",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C52",
+      "claim": "Activity-dependent engagement of CaV1 channels elevates mitochondrial oxidant stress and vulnerability of SNc neurons, contributing to disease progression of PD.",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently believed that activity-dependent engagement of CaV1 channels elevates mitochondrial oxidant stress and vulnerability of SNc neurons, contributing to disease progression of PD (Guzman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guzman et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "b2d71750-13fa-4728-a8df-537003ea305f",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "claim_id": "C53",
+      "claim": "CaV1 blockers for hypertension treatment appear to reduce the risk of PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional support also comes from clinical evidence that CaV1 blockers for hypertension treatment, e.g., 1,4-dihydropyridines (DHPs) appear to reduce the risk of PD (Pasternak et al., 2012; Ritz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pasternak et al., 2012; Ritz et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ec36d6c7-ef28-4356-a19e-1023115ed9d3",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that all three motifs (PCRD, DCRD, and IQV) are required for effective CMI under normal apoCaM concentrations. Fusing PCRD-DCRD together onto \u03b11DS substantially attenuated both CDI and VGA, while fusing only PCRD or DCRD individually showed no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are well-supported by experimental data in Figures 1B and 2A showing that the complete PCRD-DCRD fusion produces strong CMI effects, while individual motifs do not. The conclusion is further validated by citation to prior work (Liu et al., 2010) showing consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "a334012b-d56a-4b47-a46f-4d830601c492",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Under low apoCaM conditions (achieved by overexpressing BSCaMIQ), only DCRD and IQV are required for CMI, making PCRD dispensable. All three \u03b11DS-GX-DCRD variants showed significant concurrent attenuation of both CDI and VGA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by experimental data in Figure 2C-D showing that under low apoCaM, DCRD-containing variants exhibit strong CMI even without PCRD. Statistical significance is demonstrated (p<0.001). This reveals differential roles of PCRD and DCRD in CMI cooperation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "19ca1292-ffcc-4f09-87c0-b650b43268e0",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When PCRD, DCRD, and IQV are expressed as three separate peptides, they fail to induce CMI even when all are present in the same cell, and this remains true even under low apoCaM conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by experimental data in Figures 3A-F showing no CMI effects when the three motifs are expressed as separate peptides, confirmed by fluorescence imaging showing co-expression. This demonstrates the requirement for physical linkage between at least two components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "cd351eb6-6f37-46c4-a497-5d1a54a3afe0",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All three possible combinations of linking any two motifs out of the three (PCRD-DCRD + IQV, IQV-PCRD + DCRD, IQV-DCRD + PCRD) exhibited CMI, strongly attenuating both CDI and VGA. This reveals a cooperative scheme where spatial closeness of any two components is sufficient for the third to form the 'trio' complex and induce effective CMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C31 are well-supported by experimental data in Figures 4A-C showing all three combinations produce CMI. The interchangeability of PCRDD and PCRDF is validated (Figure 4\u2014figure supplement 1). The cooperative model is synthesized from both functional and binding data, providing a comprehensive mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "1889c8bf-5646-45ab-9bc4-07ecb94adcf3",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FRET binding assays demonstrate that DCRD binds IQV-PCRD with higher affinity (Kd=1135) than IQV alone (Kd=4700). DCRD overexpression nearly abolished apoCaM binding to IQV-PCRD, but this perturbation was much less effective without PCRD present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by FRET two-hybrid assay data in Figure 4D and Figure 4\u2014figure supplement 2. The quantitative Kd values provide clear evidence for differential binding affinities. The data explain why PCRD facilitates CMI by enhancing DCRD/IQV binding and competition against apoCaM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "8af82a1f-9ed5-49fe-9a3e-f2810e2e02e0",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rapamycin-inducible heterodimerization systems (versions 1 and 2) successfully induced acute CMI effects within tens of seconds to 4-5 minutes. Version 2 achieved strong CMI with SCa reaching 0.41\u00b10.06 and Ipeak reduced to 35%\u00b13%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C34 are well-supported by experimental data in Figures 5B-F showing time-dependent CMI induction. Version 2 demonstrates improved potency over version 1. The acute nature of CMI is clearly established, addressing a key question about CMI mechanisms. Sample sizes are adequate (n=5-7).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CMI uniquely reduces Ipeak while maintaining constant I300 (current at 300ms), distinguishing it from conventional inhibitions like run-down or channel blockade which reduce both. This constant I300 sets the lower limit for CMI and ensures that overall Ca2+ influx is reduced despite concurrent attenuation of both activation and inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are strongly supported by experimental data in Figures 6A-B and supplementary figures showing I300 remains constant across different CMI conditions while Ipeak varies. The comparison with run-down and isradipine blockade (where both Ipeak and I300 decrease) clearly distinguishes CMI. This resolves a critical conceptual question about how CMI ensures Ca2+ influx reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational modeling of SNc neurons demonstrates that CMI of different potencies (\u03b11DS, \u03b11DL, or inducible CMI) produces graded reductions in Ca2+ influx, oscillation rates, and pacemaking activity. Moderate channel blockade (28%) produces similar effects, supporting Ca2+ influx as the major determinant of oscillation/pacemaking downstream effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by computational modeling data in Figure 7A-D using NEURON software with a published SNc model. The modeling appropriately simulates different CMI levels and conventional blockade. However, the modeling is computational rather than experimental validation in actual neurons, which limits the strength of conclusions about therapeutic potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "fc2efacf-4494-419c-bef4-dcc866aa0878",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CMI provides direct evidence that attenuation of CDI via endogenous factors is essentially a reduction of Ca2+ influx, assured by the fixed level of I300 remaining constant regardless of changes in Ipeak or SCa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by the experimental data showing constant I300 across conditions (Figures 6A-B and supplements). This addresses a long-standing question about whether CDI attenuation increases or decreases Ca2+ influx. The evidence is direct and mechanistically clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "53977c4a-ffdc-410e-8530-386e711606f9",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FRET experiments demonstrate that interactions within the IQV/PCRD/DCRD trio complex are largely unaffected by Ca2+/CaM produced from ionomycin-introduced Ca2+ and endogenous CaM, although Ca2+/CaM exhibits higher binding affinity to IQV than apoCaM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by FRET data in Figure 6\u2014figure supplement 3 showing similar Kd values before and after ionomycin application for the trio complex, while confirming Ca2+/CaM binds IQV more strongly than apoCaM. This control experiment addresses potential complications from ambient Ca2+/CaM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "49e0066f-36c0-4d0c-acd6-68c68585926e",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The short CaV1.3 variant \u03b11DS exhibits strong CDI and VGA, contains all core elements for CDI, and serves as the experimental baseline. The study establishes SCa (1-r50,Ca at -10mV) and JCa (Jpeak at -10mV) as quantitative indices for CDI and VGA respectively, with CDI being more robust due to independence from global Ca2+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 establish the methodological framework supported by Figure 1A and citations. The choice of indices is well-justified with appropriate citations (Dick et al., 2008; Tadross et al., 2008, 2010). These methodological definitions are consistently applied throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "3b3111ed-89b9-400d-a774-836e5f484025",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing that CaV1.3 channels play important physiological roles, are widely distributed, are involved in pathology including Parkinson's disease, and control Ca2+ oscillations in SNc neurons underlying PD pathophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are standard background information supported by appropriate citations to published literature. These establish the biological and clinical context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims describing the known regulatory mechanisms of CaV1.3 involving DCT, apoCaM, IQV, PCRD, and DCRD domains, and their effects on CDI and VGA based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 summarize established knowledge from prior work (multiple citations provided) about CaV1.3 regulation. These provide necessary background but are not novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "6dcfcfb1-b8b5-44d0-86f1-a6dfb9e8d54b",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CMI appears to be a universal mechanism across LTCC family members for preventing excessive Ca2+ influx. In CaV1.1 and CaV1.2, C-termini undergo proteolytic cleavage between PCRD and DCRD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 is speculative inference based on the CaV1.3 data but lacks direct experimental evidence across all LTCC family members in this study. Claim C48 is supported by citations but represents prior knowledge rather than new findings. The universality claim requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    },
+    {
+      "id": "9536b3f9-4e97-430a-9259-94a2cacbaa9d",
+      "content_id": "3f9cf540-172d-425d-a73e-7331965265b0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about CaV1.3's role in SNc neurons and PD pathophysiology, including that CaV1 channel activity elevates oxidant stress contributing to PD, and that CaV1 blockers may reduce PD risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are background information supported by appropriate citations establishing the rationale for studying CMI in the context of PD therapeutics. These are not novel findings but provide important context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:20:45.466280Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ac167cf3-65a2-4b5e-ad14-28036ad3f64b",
+      "result_id": "ec36d6c7-ef28-4356-a19e-1023115ed9d3"
+    },
+    {
+      "claim_id": "9a6b88e0-1614-42b6-b03d-7d4bbb13f884",
+      "result_id": "ec36d6c7-ef28-4356-a19e-1023115ed9d3"
+    },
+    {
+      "claim_id": "af19d42b-12fb-4968-83e5-29398e24e14f",
+      "result_id": "ec36d6c7-ef28-4356-a19e-1023115ed9d3"
+    },
+    {
+      "claim_id": "b5e9eb29-3a7d-4030-acbd-1fae81126af0",
+      "result_id": "a334012b-d56a-4b47-a46f-4d830601c492"
+    },
+    {
+      "claim_id": "73b43e1e-c822-4947-bf86-ee5ebd0e0c84",
+      "result_id": "a334012b-d56a-4b47-a46f-4d830601c492"
+    },
+    {
+      "claim_id": "60e36f07-c31a-4b3b-84aa-a95b3d4e246d",
+      "result_id": "19ca1292-ffcc-4f09-87c0-b650b43268e0"
+    },
+    {
+      "claim_id": "93f6d003-eeeb-4b20-b234-2aeaadd1c0fe",
+      "result_id": "19ca1292-ffcc-4f09-87c0-b650b43268e0"
+    },
+    {
+      "claim_id": "d61a7e7c-432a-4b76-bc0c-b051d8f80e4e",
+      "result_id": "cd351eb6-6f37-46c4-a497-5d1a54a3afe0"
+    },
+    {
+      "claim_id": "5c2abce9-e5f7-44de-b46a-7f942baf7fb7",
+      "result_id": "cd351eb6-6f37-46c4-a497-5d1a54a3afe0"
+    },
+    {
+      "claim_id": "9d930115-a21c-4846-9e94-f6c2729f6b94",
+      "result_id": "cd351eb6-6f37-46c4-a497-5d1a54a3afe0"
+    },
+    {
+      "claim_id": "219a10b7-63e5-4a4c-beba-1b3931a0a492",
+      "result_id": "1889c8bf-5646-45ab-9bc4-07ecb94adcf3"
+    },
+    {
+      "claim_id": "764911d7-75c5-4ecc-923b-a8429c3a72a9",
+      "result_id": "1889c8bf-5646-45ab-9bc4-07ecb94adcf3"
+    },
+    {
+      "claim_id": "7a2a0bdc-98a3-447d-912b-a29e538d472e",
+      "result_id": "1889c8bf-5646-45ab-9bc4-07ecb94adcf3"
+    },
+    {
+      "claim_id": "4f4fab89-b0c5-4963-a0c0-2fd0e15a1d88",
+      "result_id": "8af82a1f-9ed5-49fe-9a3e-f2810e2e02e0"
+    },
+    {
+      "claim_id": "58627193-c811-4bce-bcd2-48a138352264",
+      "result_id": "8af82a1f-9ed5-49fe-9a3e-f2810e2e02e0"
+    },
+    {
+      "claim_id": "95017b6a-70e2-47ea-b254-53bdd56bfb49",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "5faa209a-e3e6-4537-ae4b-ca9464c80e70",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "ae818bc9-affd-40bb-8475-177d525c685a",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "61bf44f3-a2fa-49ed-b26e-e17db81d935e",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "f1fadb75-261c-4a48-bd81-d9719f44eec3",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "1007e50f-077f-442b-9334-e8d4d6143324",
+      "result_id": "d7e4a3d3-0a4c-445f-85f7-a1ea9ea4b98a"
+    },
+    {
+      "claim_id": "68974505-94aa-406f-b518-5c33a2d327da",
+      "result_id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58"
+    },
+    {
+      "claim_id": "c50693a1-7c1a-4a62-9965-39e8ce196bdf",
+      "result_id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58"
+    },
+    {
+      "claim_id": "5dbee82c-9403-416b-9fda-5c7e031c2e78",
+      "result_id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58"
+    },
+    {
+      "claim_id": "c76c0f3b-5b77-4e95-9024-aeb8d7415d39",
+      "result_id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58"
+    },
+    {
+      "claim_id": "46e39762-1bd4-40cb-8469-d4559cab7e4c",
+      "result_id": "b95cd9cf-e2d4-4782-8239-abb0784d2d58"
+    },
+    {
+      "claim_id": "7fcf8e69-7de3-4f4a-86f9-c7086dddeae1",
+      "result_id": "fc2efacf-4494-419c-bef4-dcc866aa0878"
+    },
+    {
+      "claim_id": "c5601edf-2e72-4aa2-9f20-bb18ccf3a653",
+      "result_id": "53977c4a-ffdc-410e-8530-386e711606f9"
+    },
+    {
+      "claim_id": "fd82cb49-283d-4c87-9ca7-7971dca5deac",
+      "result_id": "49e0066f-36c0-4d0c-acd6-68c68585926e"
+    },
+    {
+      "claim_id": "b58856d6-59e5-4473-b7eb-3d8d5fa20065",
+      "result_id": "49e0066f-36c0-4d0c-acd6-68c68585926e"
+    },
+    {
+      "claim_id": "3bdf83b7-8f5d-4b44-827c-1996add0589b",
+      "result_id": "49e0066f-36c0-4d0c-acd6-68c68585926e"
+    },
+    {
+      "claim_id": "7205a346-3563-455c-adaf-2ae37e3fd889",
+      "result_id": "49e0066f-36c0-4d0c-acd6-68c68585926e"
+    },
+    {
+      "claim_id": "08dbf084-71de-4252-93c3-ec088ee3ff95",
+      "result_id": "49e0066f-36c0-4d0c-acd6-68c68585926e"
+    },
+    {
+      "claim_id": "365a9666-3311-4d04-a259-3862ff0fcc4a",
+      "result_id": "3b3111ed-89b9-400d-a774-836e5f484025"
+    },
+    {
+      "claim_id": "dd8810ec-26b2-465b-b23f-3618f255afec",
+      "result_id": "3b3111ed-89b9-400d-a774-836e5f484025"
+    },
+    {
+      "claim_id": "860db043-dd45-4f89-8a9d-240706e1d59c",
+      "result_id": "3b3111ed-89b9-400d-a774-836e5f484025"
+    },
+    {
+      "claim_id": "6a1bc386-225d-4ef1-9945-d779a38fb79c",
+      "result_id": "3b3111ed-89b9-400d-a774-836e5f484025"
+    },
+    {
+      "claim_id": "0cb984ca-8d82-483f-b646-a312d5013b5c",
+      "result_id": "3b3111ed-89b9-400d-a774-836e5f484025"
+    },
+    {
+      "claim_id": "36cd4a78-c089-42ad-b9ac-fcbe46a4ff90",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "8c1e8b46-3d11-4a06-a04f-d2f5e73cabd1",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "f9419c48-0c99-4805-ad31-f9d65affcbae",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "f6ea7d41-599c-4ab4-9678-adfb8ea1d3a7",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "5ae6d4b0-a508-488a-98b3-27709b7a8cc3",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "9357a793-9467-49ae-b5c4-ed8bac3462bb",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "5681264a-f86c-4552-bdea-a558a26c8e05",
+      "result_id": "f5c0d86d-9cd2-4ac6-99bf-2d2a32873136"
+    },
+    {
+      "claim_id": "baf722f4-b86c-4965-8e21-2b6c2a06616d",
+      "result_id": "6dcfcfb1-b8b5-44d0-86f1-a6dfb9e8d54b"
+    },
+    {
+      "claim_id": "4f487eb2-0fd6-413e-9b13-14375f17244c",
+      "result_id": "6dcfcfb1-b8b5-44d0-86f1-a6dfb9e8d54b"
+    },
+    {
+      "claim_id": "72d905a1-8e47-45a0-8e70-42e2adf0f780",
+      "result_id": "9536b3f9-4e97-430a-9259-94a2cacbaa9d"
+    },
+    {
+      "claim_id": "8d557ee1-3076-46e3-a74e-6182db017c8a",
+      "result_id": "9536b3f9-4e97-430a-9259-94a2cacbaa9d"
+    },
+    {
+      "claim_id": "b2d71750-13fa-4728-a8df-537003ea305f",
+      "result_id": "9536b3f9-4e97-430a-9259-94a2cacbaa9d"
+    }
+  ],
+  "comparisons": []
+}

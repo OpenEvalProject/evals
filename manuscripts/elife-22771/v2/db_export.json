@@ -1,0 +1,2323 @@
+{
+  "submission": {
+    "id": "4685b9ab-296f-4049-8c43-a7f2610a2c04",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:48:06.060733Z",
+    "updated_at": "2025-11-30T22:48:06.060733Z"
+  },
+  "content": [
+    {
+      "id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "submission_id": "4685b9ab-296f-4049-8c43-a7f2610a2c04",
+      "content_type": "manuscript",
+      "content_text": "# Inhibitory peptidergic modulation of C. elegans serotonin neurons is gated by T-type calcium channels\n\n## Authors\n\n- Kara E Zang<sup>1</sup>\n- Elver Ho<sup>1</sup>\n- Niels Ringstad<sup>1</sup> ([ORCID: 0000-0002-8679-2269](https://orcid.org/0000-0002-8679-2269)) \u2020\n\n### Affiliations\n\n1. Skirball Institute for Biomolecular Medicine The Helen L. and Martin S. Kimmel Center for Biology and Medicine, Department of Cell Biology, NYU Langone School of Medicine New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSerotonin is an evolutionarily ancient molecule that functions in generating and modulating many behavioral states. Although much is known about how serotonin acts on its cellular targets, how serotonin release is regulated in vivo remains poorly understood. In the nematode C. elegans, serotonin neurons that drive female reproductive behavior are directly modulated by inhibitory neuropeptides. Here, we report the isolation of mutants in which inhibitory neuropeptides fail to properly modulate serotonin neurons and the behavior they mediate. The corresponding mutations affect the T-type calcium channel CCA-1 and symmetrically re-tune its voltage-dependencies of activation and inactivation towards more hyperpolarized potentials. This shift in voltage dependency strongly and specifically bypasses the behavioral and cell physiological effects of peptidergic inhibition on serotonin neurons. Our results indicate that T-type calcium channels are critical regulators of a C. elegans serotonergic circuit and demonstrate a mechanism in which T-type channels functionally gate inhibitory modulation in vivo.\n\n## Introduction\n\nNeuromodulators constitute a class of diverse chemical signals that can cause widespread and long-lasting effects on neural circuits. Many studies of vertebrate and invertebrate nervous systems illustrate how the combined impact of multiple neuromodulators on brain circuits can generate a recognizable behavioral state, suggesting that the regulation of neuromodulator release is critical for the generation and control of behavior in vivo. In the vertebrate central nervous system, the neuromodulator serotonin is released by a small population of neurons that project widely and exert influence on neural circuits throughout the brain. Serotonin is required for central control of basic physiological functions such as thermoregulation and respiratory control (Myers, 1981; Morin et al., 1990; Frazer and Hensler, 1999). Serotonin also functions in the control of affective states and behavioral drives. For example, serotonergic systems control aggression (Kravitz, 1988), appetite (Lent, 1985; Hatcher et al., 2008; Oh et al., 2015), and sexual behavior (Uphouse, 2014). Dysregulation of endogenous serotonin systems is thought to underlie psychiatric illness, notably affective disorders such as major depression and generalized anxiety (Holmes et al., 2003; Neumeister et al., 2004). Because serotonin plays critical roles in many different neural circuits that influence affect, cognition, and behavior, components of serotonin signaling pathways are important therapeutic targets for the treatment of neuropsychiatric disorders (Celada et al., 2013a, 2013b; Angoa-P\u00e9rez and Kuhn, 2015). Current targets include serotonin receptors, serotonin transporters that mediate vesicular packaging or reuptake after release, and catabolic enzymes that degrade serotonin (Celada et al., 2013a). Mechanisms that control serotonin release in vivo could be similarly important therapeutic targets. However, little is known about these mechanisms.\n\nA simple behavior of the nematode worm C. elegans offers a powerful model for the study of molecular mechanisms that regulate serotonin circuits in vivo. Female reproductive behavior - egg laying - requires serotonin, which is released from a pair of Hermaphrodite-Specific Neurons (HSNs) (Trent et al., 1983; Desai and Horvitz, 1989). Egg-laying behavior is highly stereotyped, and when it is disrupted animals visibly bloat with unlaid eggs. This easily identified behavioral change makes the neurochemical systems that generate and modulate egg-laying behavior amenable to genetic analysis. Genes that function in serotonin synthesis, release, and receptor signaling mechanisms mutate to cause egg-laying defects, and unbiased genetic screens for behavioral mutants defective in egg-laying behavior have identified genes and molecules that regulate the function of serotonin neurons (Trent et al., 1983; Desai and Horvitz, 1989; S\u00e9galat et al., 1995; Mendel et al., 1995; Brundage et al., 1996; Koelle and Horvitz, 1996).\n\nThe egg-laying circuit comprises three cell-types: the serotonergic HSNs, the cholinergic ventral cord neurons VC4 and VC5, and electrically coupled vulval and uterine muscles, of which the vulval muscles (VMs) receive direct synaptic input from motor neurons (Figure 1\u2014figure supplement 1). HSNs synapse both onto VM muscle targets and onto VC4 and VC5 motor neurons. VC4 and VC5 motor neurons synapse onto VMs (White et al., 1986) and also provide extrasynaptic inhibitory modulation to the HSNs (Bany et al., 2003; Shyn et al., 2003). In addition to modulation from local neurons, HSNs also receive inhibitory peptidergic inputs from multiple sources. The G protein-coupled neuropeptide receptor EGL-6 is expressed by HSNs and mediates their inhibition in response to FLP-10 and FLP-17 neuropeptides. FLP-10 inhibitory neuropeptides are secreted from several neuron types, as well as from epithelial cells of the reproductive system. FLP-17 peptides are secreted by a small number of cells and are principally released by a pair of chemosensory neurons, the BAGs (Ringstad and Horvitz, 2008; Kim and Li, 2004). Both inhibitory cholinergic and peptidergic modulation of the HSNs are mediated by the Go alpha ortholog GOA-1, which acts through two effectors to mediate neuronal inhibition: the diacylglycerol kinase DGK-1 and inward rectifying potassium channels comprising IRK-1 subunits (Nurrish et al., 1999; Emtage et al., 2012).\n\nA point mutation in the neuropeptide receptor EGL-6 causes it to transduce excess inhibitory signaling and thereby inactivates the HSNs. Inhibition of HSNs by this mutant receptor requires its endogenous ligands (Ringstad and Horvitz, 2008), indicating that EGL-6(gf) receptors are not constitutively active but rather amplify peptidergic inhibition received by HSNs. To identify factors required for inhibitory peptidergic modulation of the HSNs, we sought mutants that were suppressed for the egg-laying defects caused by egl-6(gf). Here, we report that cca-1, which encodes a voltage-gated calcium channel homologous to vertebrate T-type calcium channels, mutates to strongly and specifically suppress the effects of excess peptidergic inhibition onto serotonin neurons. The cca-1 suppressor mutation symmetrically shifts the voltage dependencies of channel activation and inactivation, resulting in a T-type channel that operates over more hyperpolarized membrane potentials compared to wild-type channels. Re-tuning the voltage dependency of T-type channels restores activity to inhibited HSNs at the cellular level and, at the whole animal level, restores wild-type reproductive behavior to mutants in which HSNs receive excess peptidergic inhibition. We propose that these data reveal a general mechanism by which T-type calcium channels act as functional gates to enable or disable inhibitory neuromodulatory input to cellular targets and circuits.\n\n## Results\n\n### n5209 is a potent suppressor of behavioral effects caused by increased peptidergic inhibition\n\nA mutation in the neuropeptide receptor EGL-6 increases inhibitory signaling to the HSNs in a manner that requires endogenous neuropeptide ligands and Go signaling (Ringstad and Horvitz, 2008). As a consequence of increased inhibition onto the HSNs, egl-6(gf) mutants bloat with unlaid eggs. To identify factors required for modulation of the HSNs by inhibitory neuropeptides, we performed a chemical mutagenesis screen for suppressors of the egl-6(gf) behavioral phenotype. Our screen yielded six potent suppressors, including the suppressor mutation n5209. egl-6(gf) mutants that also carry the n5209 suppressor mutation are not bloated with unlaid eggs (Figure 1A). To exclude the possibility that n5209 mutants retain fewer eggs solely because they produce fewer eggs, we assayed their egg-laying behavior by measuring the developmental stage of newly released embryos. This assay uses embryonic development as a clock to measure how long embryos have been held in utero and is independent of the rate of egg production. Consistent with their having reduced rates of egg laying, egl-6(gf) mutants released late-stage embryos. By contrast, egl-6(gf) n5209 mutants released earlier stage embryos that had not yet undergone extensive morphogenesis, similar to wild type animals (Figure 1B; P-values for all noted comparisons are in Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig1-v2.jpg)\n\n**Figure 1.:** (A) Micrograph of egl-6(gf) and egl-6(gf) n5209 animals. Eggs are colored for emphasis. Asterisk indicates vulva. (B) Distribution of the developmental stages of eggs laid by wild type, egl-6(gf), egl-6(gf) n5209, and n5209 animals. C and D) n5209 has little effect on egl-47(gf) or egl-10(lf). Shown are distributions of the developmental stages of eggs laid by egl-47(gf) and egl-10(lf) mutants with and without the n5209 allele. (E) Raster plots of egg-laying events for wild type animals (blue) and n5209 animals (red). Single animals were tracked for two hours. Each egg-laying event is represented by a hash mark. (F) Cumulative probability plots of wild type (blue) and n5209 (red) intercluster intervals fit to the model described by Waggoner et al. (1998). (G) Time constants computed from the same model. 95% confidence interval is in parentheses. Connectivity of the egg-laying neuromusculature is depicted in Figure 1\u2014figure supplement 1, and the data from 1F are replotted as a histogram of the natural log of interval times in Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Arrows denote synaptic connections. Dashed lines denote extrasynaptic inputs. Neurons are green. Sex muscles are red.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Data replotted from Figure 1F.\n\nInhibition of HSNs by egl-6(gf) is mediated by increased Go signaling downstream of the activated neuropeptide receptor (Ringstad and Horvitz, 2008). Other mutations also activate Go signaling in HSNs to cause egg-laying defects. Specifically, loss-of-function mutations affecting the GTPase-activating protein EGL-10, which is a negative regulator of Go in HSNs, and an activating mutation in the orphan G protein-coupled receptor EGL-47 cause profound defects in HSN function that strongly depend on Go signaling (Koelle and Horvitz, 1996; Moresco and Koelle, 2004). Previously, we found that the inward rectifier potassium channel gene irk-1 was required for inhibition of HSNs by EGL-6 but was not generally required for inhibitory Go signaling in HSNs (Emtage et al., 2012). We tested whether the n5209 suppressor mutation displays a similar specificity for signaling pathways downstream of the neuropeptide receptor EGL-6. We found that n5209 strongly suppressed the egl-6(gf) phenotype but had little effect on the egg-laying defects of egl-47(gf) and egl-10(lf) mutants (Figure 1C and D). These data suggest that the gene affected by n5209, like irk-1, is not generally required for inhibitory Go signaling in HSNs but has a privileged function with respect to signaling downstream of receptors for inhibitory neuropeptides.\n\n### n5209 does not change the temporal structure of female reproductive behavior\n\nWe considered the possibility that the n5209 mutation might constitutively activate the reproductive neuromusculature and bypass its normal regulation. To test this hypothesis, we separated the n5209 suppressor mutation from the egl-6(gf) mutation and determined whether n5209 mutants had abnormal reproductive behavior. We observed that n5209 alone had no measurable effect on the developmental stage of newly laid eggs (Figure 1B, bottom). These data suggest that n5209 does not grossly affect the timing of egg-laying behavior. We next used high-resolution behavior analysis to quantify parameters of egg-laying behavior of n5209 mutants. C. elegans egg-laying behavior is a stochastic process that is well described by a model in which the neuromusculature switches between active and inactive states with dynamics dictated by measurable rate constants (Waggoner et al., 1998). We tracked animals carrying the n5209 mutation to determine whether n5209 affected state transitions in the egg-laying system and, if so, whether the rate constants determining these transitions were significantly altered by the suppressor mutation. We observed that the behavior of n5209 mutants, like that of the wild type, switched between active and inactive states and displayed a very similar temporal structure (Figure 1E). We noted that one parameter of the model used to describe the behavior is altered in n5209 mutants: the time constant that defines the rate with which the egg-laying system \u2018resets\u2019 after a behavioral event (Figure 1F and G and Figure 1\u2014figure supplement 2). As a result, n5209 mutants display slightly longer intervals between egg-laying events when the system is in an active state. We noted that n5209 animals carry slightly fewer embryos in utero than do wild-type animals (average of 7.3\u00a0\u00b1\u00a02.3 embryos vs 11.25\u00a0\u00b1\u00a03.4 embryos, respectively). This might explain the slight increase in the intracluster time constant. However, the overall structure of the reproductive behavioral program is intact in n5209 mutants. These data indicate that the n5209 mutation restores behavior to egl-6(gf) mutants and does not simply cause unregulated activation of the reproductive neuromusculature.\n\n### n5209 affects the T-type calcium channel CCA-1\n\nUsing three-factor crosses, high-resolution SNP mapping, and whole-genome sequencing, we initially mapped the n5209 suppressor to the X chromosome within an interval that contained four mutations predicted to affect protein-coding sequences (Figure 2A). We separated these mutations by recombination and found that recombinants with a mutation in cca-1 were always suppressed for egg-laying defects (4/4 recombinants) while recombinants that lost this mutation were never suppressed (5/5 recombinants). The cca-1 mutation is a C->T base change in the seventh exon (Figure 2A). cca-1 encodes the pore-forming subunit of a low-voltage activated (LVA) T-type calcium channel and is the only T-type calcium channel gene encoded by the C. elegans genome (Shtonda and Avery, 2005; Steger et al., 2005). We mapped a second independently derived suppressor mutation, n6122, to the same linkage group and found that n6122 mutants carry the identical sequence change in cca-1 (Figure 2A and Figure 2\u2014figure supplement 1). That the n5209 and n6122 mutations were independently derived is indicated by the large number of unique sequence variants near the cca-1 locus in each of the mutants (Figure 2\u2014figure supplement 1). Because we mapped the n5209 mutation to a small interval that contains only one mutation that affects protein-coding sequence and because the identical mutation was recovered independently by our screen, we concluded that the n5209 and n6122 suppressor mutations affect the T-type calcium channel gene cca-1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig2-v2.jpg)\n\n**Figure 2.:** (A) The suppressor mutation, n5209, was mapped to a 2.5 Mb interval on Linkage Group X using a marked egl-6(gf) strain (top). Inset: Gene models within the 2.5 Mb interval. Sequence variants in this interval predicted to affect protein-coding sequences and that were used as markers for genetic mapping are in green. The causative suppressor mutation in cca-1 is in red. The cca-1 gene model is enlarged to show detail (bottom). (B) Schematic of CCA-1 protein. n5209 and n6122 are predicted to cause a proline to mutate to a serine in the intracellular domain next to the voltage sensor. (C) Amino acid sequence alignment shows that the affected proline residue is present in all three mammalian T-type channels. All sequence variants in this interval in n5209 and n6122 mutants are shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** New sequence variants were identified in the independently derived n5209 and n6122 mutants. Variants were called using the Genome Analysis ToolKit (McKenna et al., 2010a; DePristo et al., 2011; Van der Auwera, 2013) and variants present in egl-6(gf) mutants were filtered using SnpSift (Cingolani, 2012). The egl-6(gf) mutation is red, cca-1 variants are green, and all other variants are black.\n\nn5209 and n6122 are predicted to affect a proline residue in a short cytoplasmic loop that connects the voltage-sensing domain (transmembrane domain 4) to transmembrane domain 5 (Figure 2B). This linker is highly conserved among T-type calcium channels from diverse animal phyla (Senatore et al., 2014) and the proline affected by the n5209 and n6122 suppressor mutation is invariant between vertebrates and nematodes, suggesting its functional importance (Figure 2C).\n\nWe noted that cca-1(n5209) is a semi-dominant suppressor of the egl-6(gf) phenotype (Figure 3A). Also, a deletion allele of cca-1 - ad1650 - did not suppress egl-6(gf) as well as did cca-1(n5209) (Figure 3B). Furthermore, cca-1(ad1650) caused an egg-laying defect (Figure 3C), whereas cca-1(n5209) mutants exhibited wild-type egg-laying behavior (Figure 1B). These data indicate that n5209 does not simply cause loss of cca-1 function but rather alters the function of the CCA-1 T-type calcium channel to restore behavior to egl-6(gf) mutants.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig3-v2.jpg)\n\n**Figure 3.:** (A) cca-1(n5209) is a potent suppressor of egl-6(gf) (top; data replotted from Figure 1). One copy of the n5209 allele was sufficient to partially suppress the egl-6(gf) phenotype (bottom). (B) A deletion allele of cca-1 partially suppressed egl-6(gf), but not as potently as n5209 did. (C) cca-1(\u0394) significantly altered the stage of newly laid embryos when compared to wild type.\n\n### n5209 alters the voltage dependency of the voltage-gated T-type calcium channel\n\nTo determine the effect of the suppressor mutation on CCA-1 function, we sought to record currents passed by wild-type and mutant channels in a heterologous system. We were unable to express the C. elegans CCA-1 channels in a heterologous system, so we introduced the corresponding mutation into a very highly conserved mammalian homolog of CCA-1, Cav3.1(Figure 3C). Cav3.1 is readily expressed in heterologous expression systems such as X. laevis oocytes (Cribbs et al., 1998; Perez-Reyes et al., 1998). We recorded whole-cell currents from transgenic oocytes expressing either wild-type channels or channels carrying the suppressor mutation. Voltage steps used to measure channel activation and representative traces for wild-type and mutant channels are shown in Figure 4A and B, respectively. We observed that the P262S suppressor mutation shifted the current-voltage relationship of T-type channels towards more hyperpolarized potentials (Figure 4\u2014figure supplement 1). The suppressor mutation shifted both the steady-state activation and inactivation curves. The peak conductance was shifted by \u221210 mV, with wild-type channels exhibiting peak conductance at \u221220 mV and mutant channels exhibiting peak conductance at \u221230 mV (Figure 4C). The half-activation potential was shifted by \u22127 mV, from \u221237.14\u00a0\u00b1\u00a02.4 mV (wild-type) to \u221244.69\u00a0\u00b1\u00a01.4 mV (mutant). We observed that the suppressor mutation caused a similar shift in the steady-state inactivation curve of T-type channels. Voltage steps used to measure channel inactivation and representative traces for wild-type and mutant channels are shown in Figure 4D and E, respectively. The half-inactivation potential shifted from \u221258.18\u00a0\u00b1\u00a00.7 mV (wild-type) to \u221263.11\u00a0\u00b1\u00a00.3 mV (mutant) (Figure 4F). The slope factor (k) was unchanged for both steady-state activation and inactivation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Steady-state activation of wild-type and mutant T-type channels expressed in X. laevis oocytes. (A) Representative trace of wild type Cav3.1, the mammalian homolog of CCA-1. (B) Representative trace of mutant Cav3.1 (Cav3.1P262S). (C) Steady-state activation curve. Chord conductances were obtained using the Goldman-Hodgkin-Katz equation. Cav3.1P262S was activated at significantly more hyperpolarized potentials than wild type. (D\u2013F) Steady state inactivation measured in X. laevis oocytes. (D) Representative trace of wild type Cav3.1. (E) Representative trace of Cav3.1P262S. (F) Steady-state inactivation curve. (G) Cav3.1P262S had a window current that is significantly shifted toward hyperpolarized potentials. (H) Table of values for wild-type and mutant Cav3.1 channels. N\u00a0=\u00a010 for activation of wild-type Cav3.1 channels. N\u00a0=\u00a05 for activation of mutant Cav3.1P262S channels. N\u00a0=\u00a07 for inactivation of wild-type channels. N\u00a0=\u00a06 for inactivation of mutant channels. For the mutant and wild-type IV curves, see Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** IV curves of wild-type (blue) and mutant (red) channels. N\u00a0=\u00a010 for wild type; N\u00a0=\u00a05 for mutant.\n\nT-type channels exhibit a characteristic overlap of the steady-state activation and inactivation curves (Coulter et al., 1989; Crunelli et al., 1989; Hern\u00e1ndez-Cruz and Pape, 1989; Huguenard, 1996). This overlap gives rise to a small, steady-state \u2018window current\u2019. These data indicate that mutant channels pass a window current over a range of more hyperpolarized potentials than do wild-type channels, but the width of that range is not significantly affected (Figure 4G and H).\n\n### The cca-1 suppressor mutation functions in parallel to an intracellular signaling pathway that mediates peptidergic inhibition\n\nIn some contexts, G protein signaling directly regulates T-type calcium channels (Sun and Dale, 1997; Wolfe et al., 2003; DePuy et al., 2006; Hu et al., 2009; Perez-Reyes, 2010). To determine whether this is the case in the serotonergic HSNs, we tested whether cca-1(n5209) had any effect in the absence of the Gi/o ortholog GOA-1 or in the absence of neuropeptide ligands for the GPCR EGL-6. Loss of the sole Gi/o ortholog, GOA-1, potently suppresses egl-6(gf) (Ringstad and Horvitz, 2008). We found that the cca-1 suppressor mutation enhanced the suppression by loss of goa-1 function (Figure 5A), suggesting that the cca-1 suppressor mutation has an effect in parallel to G proteins in the control of cellular inhibition. We also found that cca-1(n5209) enhanced the suppression of the egl-6(gf) phenotype by mutation of the ligand-encoding genes flp-10 and flp-17 (Figure 5B). However, cca-1(n5209) had no measurable effect on animals that lack HSNs (Figure 5C). These data indicate that although CCA-1 acts in parallel to EGL-6, it nevertheless depends on the HSNs to modify reproductive behavior (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig5-v2.jpg)\n\n**Figure 5.:** (A) cca-1(n5209) enhanced suppression of the egl-6(gf) phenotype caused by loss of its downstream effector, GOA-1. (B) cca-1(n5209) enhanced the suppression of egl-6(gf) caused by the loss of its neuropeptide ligands, FLP-10 and FLP-17. (C) cca-1(n5209) had no effect on animals that do not have HSNs. (D) Our data support a model in which CCA-1(n5209) acts in parallel to EGL-6 signaling.\n\n### T-type calcium channels regulate function of the serotonergic neurons that drive female reproductive behavior\n\nTo test the hypothesis that the site of T-type channel function in the egg-laying system is the HSNs, we first sought to determine the cellular expression pattern of CCA-1. We generated a fosmid-based cca-1::GFP reporter transgene that contains 22 kb of regulatory sequence 5\u2019 to cca-1 coding sequences. We observed cca-1::GFP expression in neurons of the egg-laying system. Both the cholinergic VC4 and VC5 neurons and the serotonergic HSNs strongly expressed cca-1::GFP (Figure 6B). We noted that a shorter 3 kb fragment of upstream regulatory sequences only drove reporter expression in VC4 and VC5 and not the in the HSNs (Figure 6\u2014figure supplement 1). We also observed cca-1::GFP expression in many neurons in the head (Figure 6A), tail (data not shown), and in the ventral cord. We also observed cca-1::GFP expression in the non-neuronal distal tip cells of the somatic gonad (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig6-v2.jpg)\n\n**Figure 6.:** (A) A cca-1 fosmid reporter (green) is expressed in many head neurons. (B) A cca-1 fosmid reporter (green) is expressed in the egg-laying system and is co-expressed in the HSNs with an egl-6 reporter (red). (C) Expression of a cca-1 fosmid reporter in VCs but not HSNs requires the transcription factor LIN-39. (D) Fraction of animals expressing Promcca-1::GFP in VC4 and VC5. (E) Distribution of developmental stages of embyros laid by egl-6(gf) cca-1(n5209) animals carrying Promcca-1::GFP. (F) Distribution of developmental stages of embyros laid by lin-39(n709); egl-6(gf) cca-1(n5209) animals carrying Promcca-1::GFP. (G\u2013I) Tissue-specific knockdown of CCA-1 in the egg-laying neuromusculature. Knockdown of cca-1 in HSNs of egl-6(gf) cca-1(n5209) mutants restored the egl-6(gf) Egl phenotype. All three tissue-specific constructs utilized the same seed sequence to target cca-1 (listed in Supplementary file 5). Each transgene was tested in multiple independently derived lines. Shown are representative lines. Expression of the short cca-1 promoter is shown in Figure 6\u2014figure supplement 1. HSN-specific knockdown of CCA-1 in a wild-type background is shown in Figure 6\u2014figure supplement 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Wild-type animals expressing a 3 kb cca-1 promoter driving GFP. Most animals expressed Promcca-1::GFP in both VC4 and VC5. No animals expressed Promcca-1::GFP in HSNs. Asterisk denotes vulva. (B) lin-39(n709) animals expressing the same 3 kb Promcca-1::GFP. Expression of Promcca-1::GFP in the VCs is abolished in almost all animals. Like the longer promoter in Figure 6, the short cca-1 promoter depends on lin-39.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** HSN-specific knockdown of CCA-1 in HSNs in wild-type animals. Shown are pooled data from two strains outcrossed in parallel from egl-6(gf) cca-1(n5209); cca-1(RNAi) in HSNs.\n\nWe next took advantage of an existing mutant that disrupts gene expression in neurons of the egg-laying system to determine where CCA-1(n5209) mutant channels function to suppress the behavior defects of egl-6(gf) mutants. LIN-39 is a homeodomain-containing transcription factor that specifies many cell fates in the midbody. LIN-39 is required for the development of VC neurons but is not required for the development of HSNs, which are born in the posterior part of the embryo and migrate to their final position in the midbody (Clark et al., 1993; Desai et al., 1988). We found that LIN-39 was required for cca-1 expression in VC4 and VC5 neurons (Figure 6C and D, and Figure 6\u2014figure supplement 1). By contrast, cca-1 expression in HSNs was not affected by lin-39 mutation (Figure 6C). We next tested whether lin-39 was required for the ability of cca-1(n5209) to suppress egl-6(gf). lin-39 mutation did not strongly modify the suppression of egl-6(gf) by cca-1(n5209), strongly suggesting that cca-1 expression in VC4 and VC5 is dispensable for its function as a suppressor of peptidergic inhibition (Figure 6E and F).\n\nWe next tested whether CCA-1(n5209) mutant channels are required in HSNs to suppress the inhibition mediated by EGL-6(gf) receptors. We used the egl-6a promoter to drive cca-1(RNAi) in HSNs. HSN expression of cca-1 dsRNA potently reverted the suppression conferred by cca-1(n5209) (Figure 6G). We introduced this RNAi transgene into wild-type HSNs and observed only a modest effect on egg-laying behavior (Figure 6\u2014figure supplement 2), that was similar to the effect of a cca-1 deletion mutation (Figure 3D). These data are consistent with our expectation that knockdown of CCA-1 would revert the suppression of the egl-6(gf) phenotype by cca-1(n5209). When we expressed cca-1(RNAi) in vulval muscles and in VC4 and VC5, we did not observe any significant effect on the suppression of the egl-6(gf) phenotype by CCA-1(n5209) channels (Figure 6H and I). Together, these data indicate that CCA-1(n5209) mutant T-type channels act in the HSNs themselves. Thus, re-tuning T-type channels renders the cells in which they are expressed insensitive to peptidergic inhibition.\n\n### Re-tuned T-type channels restore activity to serotonin neurons that receive excess peptidergic inhibition\n\nTo determine the effects of peptidergic inhibition on the physiology of the egg-laying system, we expressed the high-sensitivity calcium indicator GCaMP6f in the HSNs (Figure 7A\u2013D) and the VMs (Figure 7\u2014figure supplement 1) of wild-type and mutant animals (Chen et al., 2013). We compared the calcium activity of wild-type and egl-6(gf) HSNs and found that HSN activity was severely affected by increased peptidergic inhibition. Wild-type HSNs displayed spontaneous calcium transients (Figure 7A and C, top), consistent with previous reports (Shyn et al., 2003; Zhang et al., 2008). By contrast, HSNs of egl-6(gf) mutants were largely silent, and only rarely did we observe a calcium transient in these mutant HSNs (Figure 7A and C, second panel). Strikingly, the cca-1(n5209) suppressor mutation restored activity to egl-6(gf) HSNs (Figure 7A\u2013D), but the calcium transients in egl-6(gf) cca-1(n5209) mutant HSNs were lower in amplitude and occurred at a higher frequency than those of wild-type HSNs. We observed similar low-amplitude, high-frequency calcium transients in the HSNs of cca-1(n5209) single mutants (Figure 7A and C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative \u25b3F/F traces of spontaneous somatic calcium transients in HSNs of partially restrained adult hermaphrodites. (B) Cumulative \u25b3F/F of wild-type and mutant HSN somas. Values for individual animals are displayed on the left; mean values for each genotype are displayed on the right. (C) Representative \u25b3F/F traces of spontaneous neurite calcium transients in the HSNs of partially restrained adult hermaphrodites. (D) Cumulative \u25b3F/F of wild-type and mutant HSN neurites. Values for individual animals on left; mean values for each genotype on right. 16\u201322 animals were imaged for all genotypes. Soma: N\u00a0=\u00a016\u201327. Neurite: N\u00a0=\u00a013\u201322. Calcium imaging of vulval muscles in these strains is shown in Figure 7\u2014figure supplement 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22771/elife-22771-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative \u0394F/F traces of spontaneous vulval muscle calcium transients in live, partially restrained adult hermaphrodites. (B) Cumulative \u0394F/F from wild-type and mutant vulval muscle calcium traces. Values for individual animals are displayed on the left; mean values for each genotype are displayed on the right.\n\nBecause we observed that calcium transients were uncorrelated with egg laying, we hypothesized that the synaptic targets of the HSNs might integrate HSN activity over time. To test this hypothesis, we calculated the cumulative GCaMP signals (cumulative \u25b3F/F) in HSN somas and axons as a proxy for neuronal activity over time. In HSN somas of egl-6(gf) cca-1(n5209) mutants, cumulative \u25b3F/F was significantly elevated compared to that measured in the somas of egl-6(gf) HSNs but was still lower than cumulative \u2206F/F measured in the somas of wild-type HSNs (Figure 7B). In HSN axons, however, cumulative \u25b3F/F of the egl-6(gf) cca-1(n5209) neurons was strikingly similar to that measured in wild-type axons. This complete restoration of cumulative activity in the HSN neurite correlated with the complete restoration of reproductive behavior conferred to egl-6(gf) mutants by the cca-1(n5209) mutation (Figure 7D). These data show that cca-1(n5209) restores activity to HSNs that have been silenced by excess peptidergic inhibition. These data further suggest that T-type channels regulate axonal, that is, presynaptic, calcium in serotonergic HSNs and that altering the voltage-gating of T-type channels may have a larger effect on axonal/presynaptic calcium than it does on calcium signaling in the HSN cell body.\n\n## Discussion\n\nA specific and coordinated change in voltage-dependent activation and inactivation of T-type calcium channels restores physiological activity to neurons of the reproductive neuromusculature that have been silenced by peptidergic inhibition. Importantly, these altered channels also restore wild-type reproductive behavior to mutants with excess endogenous peptidergic inhibition. Put another way, changing the voltage dependencies of T-type calcium channels functionally disengages the neurons in which they are expressed from a powerful modulatory input. Furthermore, in the absence of excess peptidergic inhibition, this change in T-type channel regulation causes no effect on reproductive behavior. How might a seemingly simple adjustment of channel properties exert such a powerful and specific effect on a neural circuit?\n\n### Mechanisms by which T-type currents might gate inhibitory peptidergic modulation\n\nWe propose two mechanisms by which changing the voltage-dependencies of activation and inactivation could restore wild-type function to serotonin neurons inhibited by neuropeptide modulators.\n\n1)\u00a0The window current might play a critical role in setting the resting potential of serotonergic HSNs. In the voltage range covered by the overlap of activation and inactivation curves, not all T-type channels fully inactivate, and so some continue to flux ions (Crunelli et al., 2005; Uchino et al., 2013; Williams et al., 1997). The T-type window current is known to contribute to the resting membrane potential of vertebrate thalamocortical and reticular neurons (Dreyfus et al., 2010). We previously showed that inhibitory neuropeptides require GIRK-like potassium channels to inhibit HSNs, and it is therefore likely that inhibitory neuropeptides hyperpolarize HSNs (Emtage et al., 2012). Re-tuned T-type channels might be active at these hyperpolarized potentials and thereby pass a depolarizing current that brings the membrane potential of HSNs back to their pre-modulator baseline. Importantly, in the absence of inhibitory peptides, the resting potential of HSNs would be such that re-tuned T-type channels are inactivated. Re-tuned T-type channels could have little effect on circuit function in the absence of hyperpolarizing modulatory inputs, which is consistent with our observation that re-tuned T-type channels have little effect on C. elegans reproductive behavior in the absence of peptidergic inhibition.\n\n2)\u00a0Re-tuned T-type channels might boost small depolarizing inputs onto HSNs that are hyperpolarized by peptidergic inhibition and allow those depolarizing inputs to drive behavior. Because T-type channels are low-voltage-activated, they need only a small depolarization to open, and the current they pass can then bring other ion channels to threshold. Such a role for T-type channels in boosting excitatory inputs has been observed in vertebrate neurons (Llin\u00e1s and Yarom, 1981; Perez-Reyes, 2003). T-type channels can also boost depolarizations generated by cell-intrinsic mechanisms, for example in cardiac myocytes (Hagiwara et al., 1988; Zhou and Lipsius, 1994; Mangoni et al., 2006) and their C. elegans counterparts, pharyngeal muscle cells (Shtonda and Avery, 2005). A key distinction between this model and the model proposed above is that here, re-tuned T-type channels do not affect the resting potential of cells that receive hyperpolarizing modulatory input. Rather, the re-tuned channels would boost excitatory inputs that would otherwise be below threshold for triggering behavior. The ability of T-type channels to boost excitation would also be limited to a hyperpolarized range of membrane potentials because of channel inactivation. In the absence of neuropeptide-driven hyperpolarization, re-tuned calcium channels would likely be inactivated and not affect cellular or circuit responses to excitatory inputs. Again, this model is consistent with our observation that re-tuned T-type channels only affect behavior when HSNs receive peptidergic inhibition.\n\n### How T-type channels alter the activity of HSNs suggests an integrative mechanism in targets receiving serotonergic input\n\nRe-tuned T-type channels restored wild-type behavior to animals in which HSNs receive excess inhibition, but the pattern of HSN activity in these animals was strikingly different from that in the wild type. In the wild type, we observed low-frequency, high-amplitude calcium transients in HSN cell bodies and neurites. Under the conditions we used to record HSN activity these calcium transients did not correlate with egg laying or muscle contractions (data not shown), and only rarely did we observe egg laying by immobilized animals. Recently, Collins et al. recorded HSN activity in freely moving animals and showed that HSNs are active during periods of behavioral quiescence (Collins et al., 2016). Notably, our data and those of Collins et al. are inconsistent with a model in which the HSNs function as typical motor neurons to acutely drive target muscle contractions.\n\nPeptidergic inhibition through the neuropeptide receptor EGL-6 strongly affected calcium transients in HSNs; almost none of the egl-6(gf) mutant HSNs displayed any calcium transients. On its own, the cca-1 suppressor mutation strikingly reduced the amplitude and increased the frequency of HSN calcium transients. These high-frequency, low-amplitude transients in cca-1 mutant HSNs were not affected by increased peptidergic inhibition. That is, HSNs carrying re-tuned T-type channels were functionally disengaged from inhibitory peptidergic modulation at the level of cell physiology as well as behavior.\n\nAlthough the calcium transients of wild-type and cca-1 mutant HSNs were clearly different, we found that the cumulative activity of cca-1 mutant HSNs was comparable to that of wild-type HSNs. These data suggest that reproductive behavior is not driven by fast, phasic signaling from HSNs, as might be suggested by the direct innervation of vulval muscles by serotonergic HSNs. Instead, our data indicate that HSN targets integrate signals from HSNs over longer periods. On average, bursts of reproductive behavior are separated by twenty to thirty minutes of quiescence, suggesting that the timescale over which such an integrative mechanism would function is on the order of tens of minutes. This model raises the interesting question of what molecular and biophysical mechanisms allow the reproductive circuit to integrate HSN activity during behavioral quiescence.\n\n### T-type calcium channels might play a widespread role in gating the response to modulatory inputs to neural circuits\n\nUnlike C. elegans, whose genome encodes only one T-type channel, vertebrates possess three genes that encode T-type channels, each of which is expressed in many central circuits. The duplication of T-type calcium genes in vertebrate phyla could reflect expanded and diversified roles for T-type channels that are analogous to their function in the C. elegans serotonin system. If so, different T-type channel isoforms might be involved in the gating of multiple modulatory systems in the vertebrate brain. Genetic studies of human populations have found associations between T-type channel variants and neurological or psychiatric disorders (Cheong and Shin, 2013). Alleles of T-type channel genes are strongly linked to heritable epilepsy (Kim et al., 2001; Heron et al., 2004; Khosravani et al., 2005; Singh et al., 2007; Powell et al., 2009) and neuropathic pain (Bourinet et al., 2016). A T-type channel variant is also associated with autism spectrum disorders (Splawski et al., 2006). Targeted genetic studies of T-type channels in the mouse brain confirm that these channels play roles in diverse brain circuits. T-type channels are required in thalamic circuits for normal sleep, in midbrain centers for central processing of nociception, and in cerebellar circuits for motor learning (Anderson et al., 2005; Park et al., 2010; Ly et al., 2013). Our study raises the intriguing possibility that in these brain regions altering T-type channels might affect receptivity of neural circuits to modulatory inputs and that defective gating of neuromodulation might be an underlying cause of pathologies associated with T-type channel dysfunction.\n\nT-type channel isoforms are differentially regulated by diverse intracellular signaling systems, including systems that couple to protein kinases C and A and heterotrimeric G proteins (Wolfe et al., 2003; Park et al., 2003, 2006; Kim et al., 2006; DePuy et al., 2006; Hu et al., 2009; Perez-Reyes, 2010). Furthermore, T-type channel genes encode transcripts that display a high degree of alternative splicing to generate multiple channel isoforms from a single locus (Senatore et al., 2014). Neurons can, therefore, remodel the complement of T-type channels either through genetic programs and mechanisms that couple neural activity to mRNA splicing, or acutely regulate T-type channels through canonical second messenger signaling pathways and effectors (Murbarti\u00e1n et al., 2004; Senatore et al., 2014). Because of this regulation, in the vertebrate brain a gating function of T-type channels with respect to neuromodulation would be subject to a high degree of selective control and possess a large capacity for plasticity.\n\nThe hypothesis that T-type channels gate neuromodulatory inputs to circuits implies that T-type calcium channels could be important therapeutic targets for psychiatric disorders linked to defects in neuromodulatory systems. Compounds that directly target monoamine and neuropeptide signaling systems are in widespread use for the treatment of psychiatric disease. Based on our studies of a model serotonergic circuit in C. elegans, we suggest that compounds that alter the voltage-dependencies of T-type channels might synergize with therapeutics that directly target monoamine signaling in the brain. Furthermore, our studies demonstrate the possibility that globally manipulating T-type channel function in the brain could affect specific circuits. T-type channels are widely expressed in the C. elegans nervous system, as they are in the vertebrate brain, but in C. elegans, re-tuning T-type channels by mutation had a striking effect on the modulation of a circuit that controls reproductive behavior. Our data suggest that the origins of this apparent specificity are in the combination of in the biophysical basis of inhibition of serotonin neurons and the manner in which serotonin signals are processed by a downstream circuit. It is highly likely that similar cellular and circuit mechanisms exist in the vertebrate brain, and when the pharmacological tools become available it will be important to test whether manipulating vertebrate T-type channels restores function to neural circuits in and behavior of animal models of psychiatric disorders associated with monoamine dysfunction.\n\n## Materials and methods\n\n### Nematode culture, strains, and maintenance\n\nC. elegans hermaphrodites were grown on nematode growth medium (NGM) agar at 20\u00b0C on Escherichia coli OP50 as described previously (Brenner, 1974). Wild-type C. elegans were the Bristol N2 strain. n5209 heterozygotes were generated by crossing FQ67 egl-6(n592) mec-7(e1506) lin-15AB(n765) with FQ46 egl-6(n592) cca-1(n5209) and identified as non-Muv cross-progeny. A full list of strains can be found in Supplementary file 3.\n\n### Screening for suppressors of the egg-laying defect caused by increased peptidergic inhibition\n\nThe strain MT1222, which carries the egl-6(n592gf) mutation, was mutagenized with EMS as described (Brenner, 1974). egl-6(gf) mutants are bloated with unlaid eggs. Progeny in the second generation (F2) after mutagenesis were screened for alleviation of this bloating, strains were established from non-bloated F2 progeny and those strains were subsequently scored for an egg-retention phenotype and for the developmental stage of newly laid eggs as described below. Approximately 50,000 haploid genomes (more than 100,000 F2 progeny) were screened, yielding six strains with restored egg-laying behavior.\n\n### Fine mapping of the suppressor mutation n5209\n\nInitial outcrosses indicated that the n5209 suppressor mutation was linked to the egl-6 locus on chromosome X. We confirmed that n5209 is on chromosome X by measuring its position relative to the interval defined by the genes mec-7 and lin-15 using conventional three-factor crosses (Brenner, 1974). These studies showed that n5209 was close to or right of mec-7. Next, we used whole genome sequencing (WGS) to determine the sequence of egl-6(gf) n5209 genomic DNA and identified sequence variants that were present in suppressed mutants but not in the wild-type or in the parental strain MT1222. We designed PCR primers that detect these sequence variants as previously described (Drenkard et al., 2000), and we used these variants as markers to map n5209 after outcross of egl-6(gf) n5209 mutants to either N2 or MT1222 and recovery of egg-laying defective (Egl non-Sup) or suppressed egg-laying defective (Egl Sup) recombinants.\n\n### Analysis of whole-genome sequencing data\n\nTo identify the cca-1(n6122) mutation, sequence variants were identified using the Genome Analysis ToolKit (McKenna et al., 2010a) according to best practices described in (DePristo et al., 2011a; Van der Auwera, 2013). Variant filtering to identify sequence variants in n6122 mutants was performed using snpEff and snpSift (Cingolani, 2012).\n\n### Genotyping mutant C. elegans\n\nAlleles were verified via PCR, using primers that specifically amplified sequences containing point mutations (Drenkard et al., 2000). A full list of genotyping primers can found in Supplementary file 4.\n\n### Generation of transgenes and plasmids\n\nA cca-1 fosmid reporter was generated by inserting GFP into the first exon of cca-1. GFP carrying an FRT-flanked GalK selection cassette in a synthetic intron was amplified from the plasmid pBALU1 using the following primers:\n\nKZ259 5\u2019-GGAAACTGAACTTACCGCTTTCATTCAACC-3\u2019\n\nKZ262 5\u2019-GGACTGAAAACTGCGCAGTTCCGGAACTGGCTGACGTAGCA-3\u2019\n\nFosmid recombineering was performed as previously described (Tursun et al., 2009). A 25.8 kb amplicon generated from the recombineered fosmid was used for transgenesis. Clones of mammalian Cav3.1 in plasmid pGEMHEA were a generous gift from Jung-Ha Lee (Sogang University, Korea). The n5209 mutation was introduced into mammalian Cav3.1 to generate pKEZ18 using the QuikChange II XL Site-Directed Mutagenesis Kit (Stratagene) and the following primers:\n\nKZ28 5\u2019-CATTACTGCTGGACACCTTGTCTATGCTGGGCAACGTCCT-3\u2019\n\nKZ29 5\u2019-CAGGACGTTGCCCAGCATAGACAAGGTGTCCAGCAGTAATG-3\u2019\n\nOther plasmids for C. elegans transgenesis were made using conventional methods. A full list of constructed plasmids can be found in Supplementary file 4. Sequences are available in Supplementary file 2.\n\n### Generation of transgenic C. elegans strains\n\nTransgenic animals were generated via microinjection as previously described (Mello et al., 1991). A full list of injected constructs and their concentrations can be found in Supplementary file 4.\n\nRNAi lines were made with the following constructs:\n\nHSN-specific cca-1 knockdown: pKEZ67 and pKEZ93, which were made using the egl-6a::irk-1 RNAi construct from Emtage et al. (2012) as a template.\n\nVC-specific cca-1 knockdown: pKEZ63 and pKEZ64\n\nVM-specific cca-1 knockdown: pKEZ65 and pKEZ66\n\n### Behavior assays\n\nC. elegans hermaphrodites aged 24\u201330 hr post-L4 were used for behavior assays. Egg-stage assays were performed as follows: Animals were placed on a lawn of OP50 and allowed to lay eggs for 1 hr at 20\u00b0C. Mothers were removed, and embryos were scored using a high power dissecting scope (Leica M165FC). Embryos were assigned to one of seven categories: 1\u20138 cell, 9\u201325 cell,\u00a0>26 cells but not yet undergone morphogenesis, comma stage, two-fold, three-fold, and embryos that hatched during the observation period and appeared as L1 larvae.\n\nEgg-laying data was collected on at least three separate days to an N of at least 50 embryos. All behavior was done with paired wild-type controls.\n\nFor video tracking, animals were recorded while on a 1 cm lawn of OP50 for 2 hr using a one megapixel CCD camera (UniBrain; San Ramon, CA) on a stereomicroscope (Motic; Hicksville, NY). Videos were analyzed offline by manually counting egg-laying events. Animals that left the field of view during video tracking were excluded from analysis. We fit the data to the model described in Waggoner et al. (1998) in MatLab with the following equation using the Nonlinear Least Squares method: 1-(((p*(a-b)/(a-p*b))*exp(\u22121*a*x))+((a*(1 p)/(a-p*b))*exp(\u22121*p*b*x))).\n\n### Microscopy\n\nYoung adults were anesthetized with 30 mM sodium azide and mounted on 2% agarose pads made in M9 medium. Z-stacks were obtained with either a Zeiss LSM510 or LSM700 confocal microscope, and maximum-projection images were created using ImageJ (W. S. Rasband, ImageJ, National Institutes of Health, Bethesda, MD; http://imagej.nih.gov/ij/; 1997\u20132011).\n\n### Xenopus laevis oocyte electrophysiology\n\nCapped mRNA was made using the mMessage mMachine T7 Kit (Ambion; Austin, TX). X. laevis oocytes were injected with 60\u201380 ng sense Cav3.1 or Cav3.1(n5209) cRNA using a Drummond Nanoject pipette injector (Parkway, PA) attached to a Narishige micromanipulator (Tokyo, Japan). Injected oocytes were incubated at 17\u00b0C for 3\u20135 days before recording. Oocytes were kept in ND96 (96 mM NaCl 2.5 mM KCl 1 mM MgCl2-6H2O 5 mM HEPES 1.8 mM CaCl2-2H2O pH 7.6 adjusted with NaOH) with 2.5 mM sodium pyruvate and 1:100 penicillin-streptomycin. Whole-cell current recordings were made using the two-electrode voltage-clamp method (Warner Instruments; Hamden, CT). Electrodes had a resistance between 0.2 and 1.0 M\u03a9. Oocytes were continuously superfused with Barium Hydroxide (10 mM Ba(OH)21 mM KOH 90 mM NaOH 5 mM HEPES pH 7.4 adjusted with methane sulfonic acid). Data were acquired with a Digidata 1440 digitizer (Molecular Devices; Sunnyvale, CA) and analyzed off-line with Clampfit (Molecular Devices) and MATLAB (Simulink; Natick, MA). Each oocyte was only included once in the data analysis, that is, there are no technical replicates. In order to be included in the data analysis, oocytes had to exhibit a leak current of less than \u22120.1 \u00b5A when clamped at \u221290 mV, and they had recover to normal resting membrane potential after the activation and inactivation protocols were done. V50 for activation and inactivation and the slope factor, k, as well as the confidence intervals, were computed using the Boltzmann sigmoidal fit tool in GraphPad Prism (La Jolla, CA). All experiments using Xenopus laevis were performed according to guidelines of the Committee on Animal Care at New York University Langone Medical Center.\n\n### Calcium imaging\n\nAdult animals with a single row of eggs in the uterus were selected for imaging. egl-6(gf) animals were imaged 18\u201324 hr post larval-stage 4 (L4). Wild-type, cca-1(n5209), and egl-6(gf) cca-1(n5209) animals were imaged 24\u201330 hr post-L4. Animals were mounted on 5% agarose pads made in M9 medium, immobilized using Vetbond veterinary surgical glue (3\u00a0M; St. Paul, MN), and placed under a coverslip. All videos were taken using a 10x objective on a Zeiss Axioscope Imager.M2 using Micromanager (MMstudioversion1.4.18). GCaMP6f was excited by 473 nm light using an EXFO metal halide epifluorescence light source at 12% light intensity. Images were acquired with a cooled CCD camera (Andor; Belfast, Northern Ireland). Animals were imaged at 0.5 Hz for 15 min. Only animals that survived the imaging protocol were included in the study. At least 16 animals per genotype were analyzed. If both HSNs of one animal could be clearly seen, then both were included in the analysis. Neurites were not always visible, even when the soma was. Each animal was only imaged once. GCaMP6f fluorescence was analyzed as follows: Mean background fluorescence was subtracted from mean fluorescence in the region of interest (ROI). Baseline fluorescence in the ROI was determined by taking a linear regression of the entire video and subtracting it from the raw ROI data. This baseline was used to adjust fluorescence signals within the ROI for photobleaching during the experiment. To calculate the cumulative \u25b3F/F of each trace, the absolute value of the difference between ROI fluorescence at each time point was summed. The MatLab scripts we used to analyze the data as described can be found in Figure 7\u2014source code 1.\n\n### Statistical analysis\n\nAll P-values for egg-laying behavior are listed in Supplementary file 1. For egg-laying behavior and for calcium imaging, the Wilcoxon Mann-Whitney Rank Sum Test was used because the data were not assumed to have a normal distribution.\n",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "4fdb35a0-78cf-430e-b41c-489801a9fbe2",
+      "submission_id": "4685b9ab-296f-4049-8c43-a7f2610a2c04",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\n## Review text\n\nDOI: [10.7554/eLife.22771.033](https://doi.org/10.7554/eLife.22771.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Inhibitory peptidergic modulation of C. elegans serotonin neurons is gated by T-type calcium channels\" for consideration by eLife. Your article has been reviewed by two peer reviewers (one has agreed to reveal his identity, Michael Koelle), and the evaluation has been overseen by Oliver Hobert as the Reviewing Editor and Richard Aldrich as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a very fine paper that utilizes genetics, electrophysiology, and Ca2+ imaging in the nervous system of intact animals to investigate how neuropeptides modulate activity of specific serotonergic neurons in the C. elegans egg-laying circuit. This neural circuit is very highly developed as an experimental system to study how specific genes and signals regulate the activity of the circuit and the behavior it controls. The authors take advantage of all the available tricks in this system to carry out studies that would be difficult or impossible outside of C. elegans, or even within C. elegans in less well-studied neural circuits. The state-of-the-art nature of this study within the neural circuit field in itself makes this study of considerable interest. The results of the study make it of further interest. These results arise from an unbiased genetic screen for genes required for response to neuropeptide inhibition of neural activity, and therefore we find them to be of particular interest and significance, since this approach often leads to novel and physiologically significant findings. The results are indeed novel and interesting and lead the authors to raise the hypothesis that T type calcium channels generally are specific and key regulators of the responsiveness of neurons to neuromodulators.\n\nBelow is a list of comments and technical concerns that the authors should address. Only one of them (item 1) requires additional experimental work (estimated 2-3 weeks). The remaining items on the list can be addressed with minor alterations to the writing.\n\n1) There is a technical concern about Figure 6G. Although it is a bit of a puzzle to figure this out from the information supplied in the supplemental Materials and methods, it appears that the plasmids injected to carry out cell-specific RNAi knockdown of cca-1 in the HSNs are pKEZ93 and pKEZ67, which express antisense and sense versions of cca-1 from the fairly HSN-specific egl-6a promoter. The effect of injecting these constructs is to make the animals go from relatively wild-type egg laying to becoming egg-laying defective, and the authors interpret this as showing the knockdown of cca-1(n5209) in the HSN causes this effect, i.e. cca-1(n5209) is necessary in the HSN to suppress egl-69(gf). Unfortunately, there is possibly a more mundane explanation. A number of labs working on the HSN neurons have found that high copy transgenes carrying HSN-expressed promoters (including the egl-6 promoter) can interfere with HSN development. Development of the HSN seems to be unusually susceptible to disruption, so the types of manipulations that would cause no worries for other neurons are indeed potentially problematic for the HSN. Disrupting HSN development would lead to the egg-laying defective phenotype, as the authors themselves show in Figure 5C. So, I feel that interpretation of Figure 6G would be strongly enhanced by a control showing that \"cca-1(RNAi) in the HSNs\" by itself does not cause an egg laying defective phenotype. I would like to see the authors coinject pKEZ93 and pKEZ67 into a background wild-type for both egl-6 and cca-1, at the same concentrations used in Figure 6G, do their staging of freshly laid egg assay on several lines generated in this way, and determine if the RNAi transgene itself causes an egg-laying defective phenotype. This is a relatively quick experiment to do \u2013 I would estimate 2-3 weeks.\n\n2) The genetic screen that produced n5209 is described only in passing, and no technical details are given, and it is cited as a personal communication. This is work done by the last author, Ringstad, as a postdoc in the Horvitz lab. This is a bit of an unusual way to handle this issue. Isolation of the mutant is the entire basis of the paper, so it is an odd thing to leave out. There needs to be more precise methodology for this screen and some details of the results available to other workers who might want to use this knowledge to design other suppressor of Egl screens.\n\n3) Figure 1 panels F and G show a very nice analysis. However, I have two comments. First, the authors conclude that the intracluster time constant is significantly changed, while the intercluster time constant is not. Is there an appropriate statistical analysis that could be used to determine if the data actually show this? Second, I would like to comment that it appears from Figure 1A (although no quantitative data are shown on this point) that egl-6(gf) worms carry many more unlaid eggs than do egl-6(gf) n5209 worms. I wonder if the apparent increase in the intracluster time constant in the latter worms is simply a byproduct of the fact that there are less eggs to lay, so that egg-laying muscle contractions are less likely to productively release eggs. That would be a different interpretation from thinking that n5209 has a specific effect on regulation of intracluster intervals. The authors, to their credit, do not try to conclude that n5209 has a specific effect on regulation of intracluster intervals, but rather simply conclude that the overall pattern of egg laying (alternating inactive and active phases) remains intact.\n\n4) Subsection \u201cn5209 affects the T-type calcium channel CCA-1\u201d, first paragraph. If the authors used any methods for SNP mapping or analysis of whole genome sequencing based on published methods developed by others, it would be nice if they cited that work in the Results or methods sections. I did eventually find such citations in the Figure 2\u2014figure supplement I legend, but they were hard to find.\n\n5) Subsection \u201cn5209 affects the T-type calcium channel CCA-1\u201d, first sentence. This sentence in the Results says there was only one protein coding sequence variant in the interval to which n5209 was mapped. Figure 2 and its legend shows that ubc-17, C36B7.5, and F49E2.1 are in an interval to which n5209 mapped and all three contained coding sequence variants that by methods not explained were shown not to affect the egl-6(gf) phenotype and thus to not be n5209. The apparent discrepancy between the language in the Results and in the figure/figure legend should be resolved so that this issue does not confuse the readers. Perhaps the resolution has to do with cca-1 being the only gene with sequence variants in both sequenced egl-6(gf) suppressor alleles, but that doesn't become apparent until one has read on to later in the paragraph.\n\n6) The argument that the point mutation in cca-1 is the causative mutation that suppresses egl-6(gf) appears to depend principally on this mutation having been isolated twice in two independently isolated suppressor strains. This is a reasonable argument, but there are potential holes in it (i.e. both mutations arose from a single \"jackpot\" mutation and aren't really independent). I'd prefer it if the authors explicitly address the issue of the criteria they used to determine that the cca-1 point mutation is indeed the egl-6(gf) suppressor mutation.\n\n7) Figure 3 legend. The authors write that one copy of n5209 was sufficient to suppress egl-6(gf). I suggest they change the wording to say it was sufficient to partially suppress egl-6(gf). Figure 1 shows that two copies of n5209 appear to fully suppress, and one copy does not cause nearly as much suppression. When I read the unmodified \"suppress\", I feel that full suppression is implied, and that simply saying \"suppress\" is not accurate here, especially since the authors emphasize the weaker \"partial suppression\" shown in Figure 3B.\n\n8) Subsection \u201cn5209 affects the T-type calcium channel CCA-1\u201d, last sentence. \"n5209 does not cause loss of cca-1 function\". I feel this concluding statement is an oversimplification of the results. The fact is that the deletion mutation does weakly partially suppress egl-6(gf), and n5209/+ and n5209/n5209 cause stronger suppression of egl-6(gf). So, the n5209 phenotype shares some similarity with the null phenotype and n5209 may have some loss of function character. I'd be fine with saying \"n5209 does not simply cause loss of cca-1 function.\"\n\n9) In the subsection \u201cn5209 alters the voltage dependency of the voltage-gated T-type calcium channel\u201d, the authors put a P to S point mutation into a mammalian ortholog of cca-1 analogous to the n5209 P to S mutation in cca-1, and characterize effects of the mutation on mammalian channel activity. It is implied, but not stated explicitly, that the authors either didn't try or tried and failed to get C. elegans CCA-1 functionally expressed in Xenopus oocytes, decided to functionally characterize the mammalian channel and its mutant instead, and that they are inferring that the P to S point mutation has similar effects on the worm and mammalian channels. There is nothing wrong with the authors' reasoning, but instead of making the readers read between the lines and infer all this, I would prefer it if the authors simply said these things explicitly. Perhaps this is a subjective matter of style, but I prefer things said out in the open so that reading the paper is less of a puzzle for the reader to solve.\n\n10) A separate technical concern on Figure 6G-6I: The authors show a N value for the number of eggs staged. They do not indicate (as far as I can find) whether all the eggs assayed in each Figure panel came from a single transgenic line, or from multiple lines. Because there is line to line variation in expression levels of C. elegans extrachromosomal transgenes, it would be better if the authors analyzed multiple lines, and then either pool the data from several lines, tell us they are showing data from a representative line, or if they are picking their \"best\" line, tell us that. In any case, some more explicit information on how the experiment was done is in order.\n\n11) The Discussion is largely speculative, although speculation is appropriate and welcome in a Discussion. The first section (subsection \u201cMechanisms by which T-type currents might gate inhibitory peptidergic modulation\u201d) speculates about how retuned T type channels affect the HSN, but because the HSN is not so far accessible to direct electrophysiological recording, the ideas explored remain untestable. The second section (subsection \u201cHow T-type channels alter the activity of HSNs suggests an integrative mechanism in targets receiving serotonergic input\u201d) analyzes results of the calcium imaging. Because the calcium imaging was done with immobilized animals on agarose pads, a condition in which \"normal\" egg laying behavior with active and inactive phases cannot occur and in which HSN activity is not correlated with egg laying behavior, there are limits to how well one can interpret what the data mean for normal egg laying behavior. The final Discussion section hypothesizes that T type Ca2+ channels generally \"gate\" neuromodulation and therefore could be good drug targets for psychiatric diseases that seem to involve neuromodulation. This is an interesting idea, but I am not clear how one would achieve a very specific effect with such drugs since T type channels are presumably expressed very widely in the brain.\n\n12) In Figure 1, it was not clear how the timing parameters for egg-laying were determined (the Methods says using MATLAB scripts, but it is not clear how these work). Also, I'm not sure the plot in Figure 1F illustrates the phenotype of the mutant very well; a histogram of interval times on a log scale would probably work better.\n\n13) I think it would have been useful for the authors to try to relate the behavioral phenotype to the neural phenotype seen in HSN calcium imaging. For instance, recent papers have linked individual egg-laying events to large calcium spikes in HSN, so perhaps the fact that the cca-1 mutations cause high frequency but low amplitude calcium activity in HSN is consistent with the lower rate of egg-laying within clusters that they observe behaviorally.\n\n14) In the calcium imaging experiments (Figure 7), were any egg-laying events observed? If so it would be interesting to see how they correlate with the calcium traces; if none were seen this should be noted.\n",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "24c7f3a8-28f2-413d-a123-b48429baa9b1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C1",
+      "claim": "Serotonin is an evolutionarily ancient molecule that functions in generating and modulating many behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin is an evolutionarily ancient molecule that functions in generating and modulating many behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about serotonin that draws from established scientific knowledge about its evolutionary conservation and functional roles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "47816640-e209-449c-abee-a3dec5f934ee",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C2",
+      "claim": "In the nematode C. elegans, serotonin neurons that drive female reproductive behavior are directly modulated by inhibitory neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nematode C. elegans, serotonin neurons that drive female reproductive behavior are directly modulated by inhibitory neuropeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the experimental work described in the manuscript and references to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c40d67a7-9d17-437d-90b4-f244960a556f",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C3",
+      "claim": "The n5209 and n6122 mutations affect the T-type calcium channel CCA-1 and symmetrically re-tune its voltage-dependencies of activation and inactivation towards more hyperpolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutations affect the T-type calcium channel CCA-1 and symmetrically re-tune its voltage-dependencies of activation and inactivation towards more hyperpolarized potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from Xenopus oocytes expressing mutant channels (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "cdda654b-80c0-48a3-9991-e99a486fc510",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C4",
+      "claim": "The shift in voltage dependency of CCA-1 strongly and specifically bypasses the behavioral and cell physiological effects of peptidergic inhibition on serotonin neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift in voltage dependency strongly and specifically bypasses the behavioral and cell physiological effects of peptidergic inhibition on serotonin neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral assays (Figure 1) and calcium imaging data (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "6b94d1c3-b680-4b6c-b9cf-85902ee975ac",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C5",
+      "claim": "T-type calcium channels are critical regulators of a C. elegans serotonergic circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that T-type calcium channels are critical regulators of a C. elegans serotonergic circuit and demonstrate a mechanism in which T-type channels functionally gate inhibitory modulation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the genetic, behavioral, and physiological data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d298f406-3d67-405e-94c9-b7baff8653b2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C6",
+      "claim": "T-type channels functionally gate inhibitory modulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that T-type calcium channels are critical regulators of a C. elegans serotonergic circuit and demonstrate a mechanism in which T-type channels functionally gate inhibitory modulation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is demonstrated through the suppression of peptidergic inhibition by re-tuned T-type channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "aee1a590-096e-4e4e-9663-01637798142c",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C7",
+      "claim": "In the vertebrate central nervous system, serotonin is released by a small population of neurons that project widely and exert influence on neural circuits throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vertebrate central nervous system, the neuromodulator serotonin is released by a small population of neurons that project widely and exert influence on neural circuits throughout the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate serotonergic systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "838cad56-7c7a-4b4d-b1db-f8769a46d054",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C8",
+      "claim": "Serotonin is required for central control of basic physiological functions such as thermoregulation and respiratory control.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin is required for central control of basic physiological functions such as thermoregulation and respiratory control (Myers, 1981; Morin et al., 1990; Frazer and Hensler, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "a8de1409-c00f-467f-b269-dc10a6d4daf3",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C9",
+      "claim": "Serotonergic systems control aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, serotonergic systems control aggression (Kravitz, 1988), appetite (Lent, 1985; Hatcher et al., 2008; Oh et al., 2015), and sexual behavior (Uphouse, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kravitz, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5a333ee3-364a-4181-a172-6b3aa2f725b0",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C10",
+      "claim": "Serotonergic systems control appetite.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, serotonergic systems control aggression (Kravitz, 1988), appetite (Lent, 1985; Hatcher et al., 2008; Oh et al., 2015), and sexual behavior (Uphouse, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lent, 1985; Hatcher et al., 2008; Oh et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "6a172a66-3654-490e-a1ef-7fc83446f2e8",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C11",
+      "claim": "Serotonergic systems control sexual behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, serotonergic systems control aggression (Kravitz, 1988), appetite (Lent, 1985; Hatcher et al., 2008; Oh et al., 2015), and sexual behavior (Uphouse, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uphouse, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d3bd520a-95db-4c96-bc27-6fc1ad746f13",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C12",
+      "claim": "Dysregulation of endogenous serotonin systems is thought to underlie psychiatric illness, notably affective disorders such as major depression and generalized anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of endogenous serotonin systems is thought to underlie psychiatric illness, notably affective disorders such as major depression and generalized anxiety (Holmes et al., 2003; Neumeister et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holmes et al., 2003; Neumeister et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8906c778-54ad-44cc-99cd-297f8c0be95d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C13",
+      "claim": "Female reproductive behavior (egg laying) in C. elegans requires serotonin, which is released from a pair of Hermaphrodite-Specific Neurons (HSNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Female reproductive behavior - egg laying - requires serotonin, which is released from a pair of Hermaphrodite-Specific Neurons (HSNs) (Trent et al., 1983; Desai and Horvitz, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Trent et al., 1983; Desai and Horvitz, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5b7fa325-dbc0-4fed-be0d-cf9fd2c4c7ad",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C14",
+      "claim": "The egg-laying circuit comprises three cell-types: the serotonergic HSNs, the cholinergic ventral cord neurons VC4 and VC5, and electrically coupled vulval and uterine muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The egg-laying circuit comprises three cell-types: the serotonergic HSNs, the cholinergic ventral cord neurons VC4 and VC5, and electrically coupled vulval and uterine muscles, of which the vulval muscles (VMs) receive direct synaptic input from motor neurons (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the circuit diagram in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "259f6e44-a1d9-4eed-a5d6-13a9ae999aa1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C15",
+      "claim": "HSNs synapse both onto VM muscle targets and onto VC4 and VC5 motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "HSNs synapse both onto VM muscle targets and onto VC4 and VC5 motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by anatomical data from White et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "99407a0c-fc11-4d9e-b21c-e0c47a405558",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C16",
+      "claim": "VC4 and VC5 motor neurons synapse onto VMs.",
+      "claim_type": "EXPLICIT",
+      "source": "VC4 and VC5 motor neurons synapse onto VMs (White et al., 1986) and also provide extrasynaptic inhibitory modulation to the HSNs (Bany et al., 2003; Shyn et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to White et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "a27ce94e-1222-414f-a4c8-3799e2ce00d2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C17",
+      "claim": "VC4 and VC5 motor neurons provide extrasynaptic inhibitory modulation to the HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "VC4 and VC5 motor neurons synapse onto VMs (White et al., 1986) and also provide extrasynaptic inhibitory modulation to the HSNs (Bany et al., 2003; Shyn et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bany et al., 2003; Shyn et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c2a23950-c739-4573-b8c9-37f28ffe3639",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C18",
+      "claim": "The G protein-coupled neuropeptide receptor EGL-6 is expressed by HSNs and mediates their inhibition in response to FLP-10 and FLP-17 neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The G protein-coupled neuropeptide receptor EGL-6 is expressed by HSNs and mediates their inhibition in response to FLP-10 and FLP-17 neuropeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript (Ringstad and Horvitz, 2008; Kim and Li, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "881c0b04-8e80-431b-8f14-0f5a18d55973",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C19",
+      "claim": "FLP-10 inhibitory neuropeptides are secreted from several neuron types, as well as from epithelial cells of the reproductive system.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-10 inhibitory neuropeptides are secreted from several neuron types, as well as from epithelial cells of the reproductive system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "2408b2b3-e346-4855-915c-19248e282674",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C20",
+      "claim": "FLP-17 peptides are secreted by a small number of cells and are principally released by a pair of chemosensory neurons, the BAGs.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-17 peptides are secreted by a small number of cells and are principally released by a pair of chemosensory neurons, the BAGs (Ringstad and Horvitz, 2008; Kim and Li, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ringstad and Horvitz, 2008; Kim and Li, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "6330d714-e15e-4b8e-a130-06343a934973",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C21",
+      "claim": "Both inhibitory cholinergic and peptidergic modulation of the HSNs are mediated by the Go alpha ortholog GOA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitory cholinergic and peptidergic modulation of the HSNs are mediated by the Go alpha ortholog GOA-1, which acts through two effectors to mediate neuronal inhibition: the diacylglycerol kinase DGK-1 and inward rectifying potassium channels comprising IRK-1 subunits (Nurrish et al., 1999; Emtage et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nurrish et al., 1999; Emtage et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ce86a5f6-26dd-4b2d-b3e5-d27af001d4fd",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C22",
+      "claim": "GOA-1 acts through two effectors to mediate neuronal inhibition: the diacylglycerol kinase DGK-1 and inward rectifying potassium channels comprising IRK-1 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitory cholinergic and peptidergic modulation of the HSNs are mediated by the Go alpha ortholog GOA-1, which acts through two effectors to mediate neuronal inhibition: the diacylglycerol kinase DGK-1 and inward rectifying potassium channels comprising IRK-1 subunits (Nurrish et al., 1999; Emtage et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nurrish et al., 1999; Emtage et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "0ee87b6e-6645-4522-9435-edb054142a0d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C23",
+      "claim": "A point mutation in the neuropeptide receptor EGL-6 causes it to transduce excess inhibitory signaling and thereby inactivates the HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A point mutation in the neuropeptide receptor EGL-6 causes it to transduce excess inhibitory signaling and thereby inactivates the HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work (Ringstad and Horvitz, 2008) and behavioral data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "de60796a-1129-44a5-b87b-94fb68f90810",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C24",
+      "claim": "Inhibition of HSNs by EGL-6(gf) receptors requires its endogenous ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of HSNs by this mutant receptor requires its endogenous ligands (Ringstad and Horvitz, 2008), indicating that EGL-6(gf) receptors are not constitutively active but rather amplify peptidergic inhibition received by HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ringstad and Horvitz, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "0af47306-d80c-4914-b3fd-72becabd00c2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C25",
+      "claim": "EGL-6(gf) receptors are not constitutively active but rather amplify peptidergic inhibition received by HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of HSNs by this mutant receptor requires its endogenous ligands (Ringstad and Horvitz, 2008), indicating that EGL-6(gf) receptors are not constitutively active but rather amplify peptidergic inhibition received by HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for endogenous ligands.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "fc87377e-c052-4cb9-b24d-112d15e2f64e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C26",
+      "claim": "The n5209 suppressor mutation strongly and specifically suppresses the effects of excess peptidergic inhibition onto serotonin neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that cca-1, which encodes a voltage-gated calcium channel homologous to vertebrate T-type calcium channels, mutates to strongly and specifically suppress the effects of excess peptidergic inhibition onto serotonin neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data showing suppression of egl-6(gf) phenotype (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e604ce4f-4365-4def-98fa-b294dd27ee81",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C27",
+      "claim": "egl-6(gf) mutants bloat with unlaid eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of increased inhibition onto the HSNs, egl-6(gf) mutants bloat with unlaid eggs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by visual observation (Figure 1A) and behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b4398f90-d674-425c-b2c5-163ac53b6628",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C28",
+      "claim": "egl-6(gf) n5209 mutants are not bloated with unlaid eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "egl-6(gf) mutants that also carry the n5209 suppressor mutation are not bloated with unlaid eggs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual observation in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d886d34c-2557-49fb-9fdf-3e2cfd27ab0e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C29",
+      "claim": "egl-6(gf) mutants released late-stage embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their having reduced rates of egg laying, egl-6(gf) mutants released late-stage embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the egg-stage distribution data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e8651477-57f0-40c3-b25d-057e70d65c6e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C30",
+      "claim": "egl-6(gf) n5209 mutants released earlier stage embryos that had not yet undergone extensive morphogenesis, similar to wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, egl-6(gf) n5209 mutants released earlier stage embryos that had not yet undergone extensive morphogenesis, similar to wild type animals (Figure 1B; P-values for all noted comparisons are in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the egg-stage distribution data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8a4100c0-bc7a-4263-83d9-dcd587797f1d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C31",
+      "claim": "n5209 strongly suppressed the egl-6(gf) phenotype but had little effect on the egg-laying defects of egl-47(gf) and egl-10(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that n5209 strongly suppressed the egl-6(gf) phenotype but had little effect on the egg-laying defects of egl-47(gf) and egl-10(lf) mutants (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the egg-stage distribution data in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d7321ccf-7876-487d-ab52-d3311beae57e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C32",
+      "claim": "The gene affected by n5209, like irk-1, is not generally required for inhibitory Go signaling in HSNs but has a privileged function with respect to signaling downstream of receptors for inhibitory neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the gene affected by n5209, like irk-1, is not generally required for inhibitory Go signaling in HSNs but has a privileged function with respect to signaling downstream of receptors for inhibitory neuropeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the specificity of suppression for egl-6(gf) but not egl-47(gf) or egl-10(lf).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b5677b19-40f2-47e6-96cd-2732be2aaaf7",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C33",
+      "claim": "n5209 alone had no measurable effect on the developmental stage of newly laid eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that n5209 alone had no measurable effect on the developmental stage of newly laid eggs (Figure 1B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the egg-stage distribution data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "405caa2e-7b38-46c7-bc77-40fb9992d68a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C34",
+      "claim": "n5209 does not grossly affect the timing of egg-laying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that n5209 does not grossly affect the timing of egg-laying behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect on egg stage distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ae9bb1ae-0ece-4df6-a47f-cfe41c37c2a1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C35",
+      "claim": "The behavior of n5209 mutants, like that of the wild type, switched between active and inactive states and displayed a very similar temporal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the behavior of n5209 mutants, like that of the wild type, switched between active and inactive states and displayed a very similar temporal structure (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the raster plots in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "1083a645-f475-4bf1-8214-ea45123c0ec6",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C36",
+      "claim": "One parameter of the model used to describe the behavior is altered in n5209 mutants: the time constant that defines the rate with which the egg-laying system 'resets' after a behavioral event.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that one parameter of the model used to describe the behavior is altered in n5209 mutants: the time constant that defines the rate with which the egg-laying system 'resets' after a behavioral event (Figure 1F and G and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "0688b02c-c8a2-47cc-bc89-19dc520e237c",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C37",
+      "claim": "n5209 mutants display slightly longer intervals between egg-laying events when the system is in an active state.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, n5209 mutants display slightly longer intervals between egg-laying events when the system is in an active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the altered time constant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8b510114-4ee5-420c-9d58-bb30ac4bec88",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C38",
+      "claim": "The overall structure of the reproductive behavioral program is intact in n5209 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overall structure of the reproductive behavioral program is intact in n5209 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral analysis showing similar temporal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "65a52c1a-22ff-4549-a3e5-cc4e1c163793",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C39",
+      "claim": "The n5209 mutation restores behavior to egl-6(gf) mutants and does not simply cause unregulated activation of the reproductive neuromusculature.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the n5209 mutation restores behavior to egl-6(gf) mutants and does not simply cause unregulated activation of the reproductive neuromusculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the intact behavioral structure in n5209 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "7baeee0c-3113-4399-b0aa-f68d2889b42f",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C40",
+      "claim": "The n5209 and n6122 suppressor mutations affect the T-type calcium channel gene cca-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we mapped the n5209 mutation to a small interval that contains only one mutation that affects protein-coding sequence and because the identical mutation was recovered independently by our screen, we concluded that the n5209 and n6122 suppressor mutations affect the T-type calcium channel gene cca-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic mapping, sequencing, and independent recovery of the same mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8d462ce2-40a7-4b4f-a7dc-1512abb360a1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C41",
+      "claim": "cca-1 encodes the pore-forming subunit of a low-voltage activated (LVA) T-type calcium channel and is the only T-type calcium channel gene encoded by the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "cca-1 encodes the pore-forming subunit of a low-voltage activated (LVA) T-type calcium channel and is the only T-type calcium channel gene encoded by the C. elegans genome (Shtonda and Avery, 2005; Steger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shtonda and Avery, 2005; Steger et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "da80d5a3-e30f-43cd-9a23-40877a2c5d0b",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C42",
+      "claim": "n5209 and n6122 are predicted to affect a proline residue in a short cytoplasmic loop that connects the voltage-sensing domain (transmembrane domain 4) to transmembrane domain 5.",
+      "claim_type": "EXPLICIT",
+      "source": "n5209 and n6122 are predicted to affect a proline residue in a short cytoplasmic loop that connects the voltage-sensing domain (transmembrane domain 4) to transmembrane domain 5 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the protein structure diagram in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "362f9a61-17d9-4198-aefc-abc0445471f0",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C43",
+      "claim": "The linker connecting the voltage-sensing domain to transmembrane domain 5 is highly conserved among T-type calcium channels from diverse animal phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "This linker is highly conserved among T-type calcium channels from diverse animal phyla (Senatore et al., 2014) and the proline affected by the n5209 and n6122 suppressor mutation is invariant between vertebrates and nematodes, suggesting its functional importance (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Senatore et al., 2014 and sequence alignment in Figure 2C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e1519b63-d3a5-4dac-a077-912ff705b927",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C44",
+      "claim": "The proline affected by the n5209 and n6122 suppressor mutation is invariant between vertebrates and nematodes, suggesting its functional importance.",
+      "claim_type": "EXPLICIT",
+      "source": "This linker is highly conserved among T-type calcium channels from diverse animal phyla (Senatore et al., 2014) and the proline affected by the n5209 and n6122 suppressor mutation is invariant between vertebrates and nematodes, suggesting its functional importance (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment in Figure 2C and inference about functional importance from conservation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5f969780-1126-40f7-b806-f53596969564",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C45",
+      "claim": "cca-1(n5209) is a semi-dominant suppressor of the egl-6(gf) phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that cca-1(n5209) is a semi-dominant suppressor of the egl-6(gf) phenotype (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 3A showing partial suppression in heterozygotes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "4064d620-b492-4fbd-8f56-bb1c6d81eddd",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C46",
+      "claim": "A deletion allele of cca-1 - ad1650 - did not suppress egl-6(gf) as well as did cca-1(n5209).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a deletion allele of cca-1 - ad1650 - did not suppress egl-6(gf) as well as did cca-1(n5209) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "652b49b7-8629-41ee-9633-02d0e9060ec5",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C47",
+      "claim": "cca-1(ad1650) caused an egg-laying defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cca-1(ad1650) caused an egg-laying defect (Figure 3C), whereas cca-1(n5209) mutants exhibited wild-type egg-laying behavior (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "9880b95a-c73f-40d9-8874-2a89e9471bd9",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C48",
+      "claim": "cca-1(n5209) mutants exhibited wild-type egg-laying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cca-1(ad1650) caused an egg-laying defect (Figure 3C), whereas cca-1(n5209) mutants exhibited wild-type egg-laying behavior (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "83db9edc-59af-4a7c-b300-119a00239ad1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C49",
+      "claim": "n5209 does not simply cause loss of cca-1 function but rather alters the function of the CCA-1 T-type calcium channel to restore behavior to egl-6(gf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that n5209 does not simply cause loss of cca-1 function but rather alters the function of the CCA-1 T-type calcium channel to restore behavior to egl-6(gf) mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of n5209 and deletion allele effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e41bd757-9197-4030-a816-05eef7eac669",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C50",
+      "claim": "The P262S suppressor mutation shifted the current-voltage relationship of T-type channels towards more hyperpolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the P262S suppressor mutation shifted the current-voltage relationship of T-type channels towards more hyperpolarized potentials (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the I-V curves in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "9f4860b7-fb6c-4a91-8eb7-c75bee47542a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C51",
+      "claim": "The suppressor mutation shifted both the steady-state activation and inactivation curves.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppressor mutation shifted both the steady-state activation and inactivation curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figures 4C and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "007d3af0-fd10-4cae-ab9b-6ced3dad10be",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C52",
+      "claim": "The peak conductance was shifted by \u221210 mV, with wild-type channels exhibiting peak conductance at \u221220 mV and mutant channels exhibiting peak conductance at \u221230 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak conductance was shifted by \u221210 mV, with wild-type channels exhibiting peak conductance at \u221220 mV and mutant channels exhibiting peak conductance at \u221230 mV (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "50ba99c6-8bce-46cb-911a-768f1e265a8b",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C53",
+      "claim": "The half-activation potential was shifted by \u22127 mV, from \u221237.14 \u00b1 2.4 mV (wild-type) to \u221244.69 \u00b1 1.4 mV (mutant).",
+      "claim_type": "EXPLICIT",
+      "source": "The half-activation potential was shifted by \u22127 mV, from \u221237.14 \u00b1 2.4 mV (wild-type) to \u221244.69 \u00b1 1.4 mV (mutant).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the electrophysiological measurements reported in the text and Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8ac38563-63fd-4452-8f46-3cee1391b129",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C54",
+      "claim": "The half-inactivation potential shifted from \u221258.18 \u00b1 0.7 mV (wild-type) to \u221263.11 \u00b1 0.3 mV (mutant).",
+      "claim_type": "EXPLICIT",
+      "source": "The half-inactivation potential shifted from \u221258.18 \u00b1 0.7 mV (wild-type) to \u221263.11 \u00b1 0.3 mV (mutant) (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "64c46798-0edc-426b-9b64-6faae7bad722",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C55",
+      "claim": "The slope factor (k) was unchanged for both steady-state activation and inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope factor (k) was unchanged for both steady-state activation and inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the values reported in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "9ae8384c-67a1-4a59-977a-782e930d6baa",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C56",
+      "claim": "Mutant channels pass a window current over a range of more hyperpolarized potentials than do wild-type channels, but the width of that range is not significantly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that mutant channels pass a window current over a range of more hyperpolarized potentials than do wild-type channels, but the width of that range is not significantly affected (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the window current analysis in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "57415e93-677e-4574-9864-a69feecfc36d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C57",
+      "claim": "The cca-1 suppressor mutation enhanced the suppression by loss of goa-1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cca-1 suppressor mutation enhanced the suppression by loss of goa-1 function (Figure 5A), suggesting that the cca-1 suppressor mutation has an effect in parallel to G proteins in the control of cellular inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "823cc8f2-15ac-48cb-9981-a7cc57686c1e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C58",
+      "claim": "The cca-1 suppressor mutation has an effect in parallel to G proteins in the control of cellular inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cca-1 suppressor mutation enhanced the suppression by loss of goa-1 function (Figure 5A), suggesting that the cca-1 suppressor mutation has an effect in parallel to G proteins in the control of cellular inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enhancement of suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "30b9dbe3-1b83-4c7a-9543-663ef9c686b0",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C59",
+      "claim": "cca-1(n5209) enhanced the suppression of the egl-6(gf) phenotype by mutation of the ligand-encoding genes flp-10 and flp-17.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that cca-1(n5209) enhanced the suppression of the egl-6(gf) phenotype by mutation of the ligand-encoding genes flp-10 and flp-17 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "3fc1328f-f2eb-4339-a6c4-a079c87e01b5",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C60",
+      "claim": "cca-1(n5209) had no measurable effect on animals that lack HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cca-1(n5209) had no measurable effect on animals that lack HSNs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5e88b359-3aec-4870-ac34-e123b710f515",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C61",
+      "claim": "Although CCA-1 acts in parallel to EGL-6, it nevertheless depends on the HSNs to modify reproductive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that although CCA-1 acts in parallel to EGL-6, it nevertheless depends on the HSNs to modify reproductive behavior (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of effect in HSN-ablated animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "629bb169-4ed3-4524-b0d4-42702dbc41c2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C62",
+      "claim": "Both the cholinergic VC4 and VC5 neurons and the serotonergic HSNs strongly expressed cca-1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the cholinergic VC4 and VC5 neurons and the serotonergic HSNs strongly expressed cca-1::GFP (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression pattern shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5b2f756b-fcda-4049-a614-5765f30bc428",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C63",
+      "claim": "cca-1::GFP is expressed in many neurons in the head, tail, and in the ventral cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed cca-1::GFP expression in many neurons in the head (Figure 6A), tail (data not shown), and in the ventral cord.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression pattern shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5b5ce6c6-4f3a-4ea7-bdab-c17988b2a484",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C64",
+      "claim": "cca-1::GFP is expressed in the non-neuronal distal tip cells of the somatic gonad.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed cca-1::GFP expression in the non-neuronal distal tip cells of the somatic gonad (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression pattern shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "87736f96-b96a-4550-b093-777e9865c4d3",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C65",
+      "claim": "LIN-39 was required for cca-1 expression in VC4 and VC5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LIN-39 was required for cca-1 expression in VC4 and VC5 neurons (Figure 6C and D, and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression data in lin-39 mutants shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "bdaf0f00-c882-42a2-886a-db0eec229855",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C66",
+      "claim": "cca-1 expression in HSNs was not affected by lin-39 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, cca-1 expression in HSNs was not affected by lin-39 mutation (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression data in lin-39 mutants shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "dfc72702-8570-454f-99dd-1c2b797986c2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C67",
+      "claim": "lin-39 mutation did not strongly modify the suppression of egl-6(gf) by cca-1(n5209), strongly suggesting that cca-1 expression in VC4 and VC5 is dispensable for its function as a suppressor of peptidergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested whether lin-39 was required for the ability of cca-1(n5209) to suppress egl-6(gf). lin-39 mutation did not strongly modify the suppression of egl-6(gf) by cca-1(n5209), strongly suggesting that cca-1 expression in VC4 and VC5 is dispensable for its function as a suppressor of peptidergic inhibition (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the behavioral data in Figures 6E and 6F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b1bf740a-2570-4b40-b1f8-1917492a031e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C68",
+      "claim": "HSN expression of cca-1 dsRNA potently reverted the suppression conferred by cca-1(n5209).",
+      "claim_type": "EXPLICIT",
+      "source": "HSN expression of cca-1 dsRNA potently reverted the suppression conferred by cca-1(n5209) (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the RNAi data in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "1a19724c-4713-4c4a-8a8c-ada9a625d577",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C69",
+      "claim": "When cca-1(RNAi) was expressed in vulval muscles and in VC4 and VC5, no significant effect on the suppression of the egl-6(gf) phenotype by CCA-1(n5209) channels was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When we expressed cca-1(RNAi) in vulval muscles and in VC4 and VC5, we did not observe any significant effect on the suppression of the egl-6(gf) phenotype by CCA-1(n5209) channels (Figure 6H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the RNAi data in Figures 6H and 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "beed0474-f275-4597-ac9d-4df998d7c497",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C70",
+      "claim": "CCA-1(n5209) mutant T-type channels act in the HSNs themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that CCA-1(n5209) mutant T-type channels act in the HSNs themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the tissue-specific RNAi experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "416fca66-8c54-4b07-b291-ac194a06bf8a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C71",
+      "claim": "Re-tuning T-type channels renders the cells in which they are expressed insensitive to peptidergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, re-tuning T-type channels renders the cells in which they are expressed insensitive to peptidergic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the HSN-specific function of the mutant channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "957ca349-5000-4d89-9d50-171f90d21bc6",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C72",
+      "claim": "Wild-type HSNs displayed spontaneous calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type HSNs displayed spontaneous calcium transients (Figure 7A and C, top), consistent with previous reports (Shyn et al., 2003; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7A and C and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "0aaeeb7d-b8f8-4f10-a267-29df17d1a640",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C73",
+      "claim": "HSNs of egl-6(gf) mutants were largely silent, and only rarely did a calcium transient occur in these mutant HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, HSNs of egl-6(gf) mutants were largely silent, and only rarely did we observe a calcium transient in these mutant HSNs (Figure 7A and C, second panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "3f6980ef-70fa-4222-ab54-b33c21df59fb",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C74",
+      "claim": "The cca-1(n5209) suppressor mutation restored activity to egl-6(gf) HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the cca-1(n5209) suppressor mutation restored activity to egl-6(gf) HSNs (Figure 7A\u2013D), but the calcium transients in egl-6(gf) cca-1(n5209) mutant HSNs were lower in amplitude and occurred at a higher frequency than those of wild-type HSNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data in Figures 7A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d6ff2538-45a8-48b1-92e1-1f2ad4018e8e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C75",
+      "claim": "The calcium transients in egl-6(gf) cca-1(n5209) mutant HSNs were lower in amplitude and occurred at a higher frequency than those of wild-type HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the cca-1(n5209) suppressor mutation restored activity to egl-6(gf) HSNs (Figure 7A\u2013D), but the calcium transients in egl-6(gf) cca-1(n5209) mutant HSNs were lower in amplitude and occurred at a higher frequency than those of wild-type HSNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data in Figures 7A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e28d8596-910f-428c-ac29-2b1862e544e9",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C76",
+      "claim": "Similar low-amplitude, high-frequency calcium transients were observed in the HSNs of cca-1(n5209) single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar low-amplitude, high-frequency calcium transients in the HSNs of cca-1(n5209) single mutants (Figure 7A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ab0fcd2e-1a9b-4ca5-b321-a0c435fd0baf",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C77",
+      "claim": "In HSN somas of egl-6(gf) cca-1(n5209) mutants, cumulative \u25b3F/F was significantly elevated compared to that measured in the somas of egl-6(gf) HSNs but was still lower than cumulative \u2206F/F measured in the somas of wild-type HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In HSN somas of egl-6(gf) cca-1(n5209) mutants, cumulative \u25b3F/F was significantly elevated compared to that measured in the somas of egl-6(gf) HSNs but was still lower than cumulative \u2206F/F measured in the somas of wild-type HSNs (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cumulative calcium data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "aa869051-5aa3-497e-927b-0d74f448d1ed",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C78",
+      "claim": "In HSN axons, cumulative \u25b3F/F of the egl-6(gf) cca-1(n5209) neurons was strikingly similar to that measured in wild-type axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In HSN axons, however, cumulative \u25b3F/F of the egl-6(gf) cca-1(n5209) neurons was strikingly similar to that measured in wild-type axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cumulative calcium data in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "56dcd7ff-b1fa-48cd-af43-2dbc7a738543",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C79",
+      "claim": "The complete restoration of cumulative activity in the HSN neurite correlated with the complete restoration of reproductive behavior conferred to egl-6(gf) mutants by the cca-1(n5209) mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This complete restoration of cumulative activity in the HSN neurite correlated with the complete restoration of reproductive behavior conferred to egl-6(gf) mutants by the cca-1(n5209) mutation (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a correlation observed between the physiological and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d5f7a900-123d-4724-955f-1d6bb99cc4d5",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C80",
+      "claim": "cca-1(n5209) restores activity to HSNs that have been silenced by excess peptidergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that cca-1(n5209) restores activity to HSNs that have been silenced by excess peptidergic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b3614c65-45a0-4063-a535-1b322121b92f",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C81",
+      "claim": "T-type channels regulate axonal, that is, presynaptic, calcium in serotonergic HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further suggest that T-type channels regulate axonal, that is, presynaptic, calcium in serotonergic HSNs and that altering the voltage-gating of T-type channels may have a larger effect on axonal/presynaptic calcium than it does on calcium signaling in the HSN cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects on soma vs. neurite calcium.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ff7e0f8e-11be-40f9-86b2-d205ff968e55",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C82",
+      "claim": "Altering the voltage-gating of T-type channels may have a larger effect on axonal/presynaptic calcium than it does on calcium signaling in the HSN cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further suggest that T-type channels regulate axonal, that is, presynaptic, calcium in serotonergic HSNs and that altering the voltage-gating of T-type channels may have a larger effect on axonal/presynaptic calcium than it does on calcium signaling in the HSN cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects on soma vs. neurite calcium.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "8f383068-9670-4e2f-9e0e-efe2e7ea0f24",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C83",
+      "claim": "The window current might play a critical role in setting the resting potential of serotonergic HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The window current might play a critical role in setting the resting potential of serotonergic HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on known properties of T-type channels.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ea8f9147-8e89-4480-a7c5-033e791c453a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C84",
+      "claim": "Inhibitory neuropeptides require GIRK-like potassium channels to inhibit HSNs, and it is therefore likely that inhibitory neuropeptides hyperpolarize HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that inhibitory neuropeptides require GIRK-like potassium channels to inhibit HSNs, and it is therefore likely that inhibitory neuropeptides hyperpolarize HSNs (Emtage et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior work on GIRK channels.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "f47a6ce8-32c1-44dc-a74a-c1d959567c21",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C85",
+      "claim": "Re-tuned T-type channels might be active at hyperpolarized potentials and thereby pass a depolarizing current that brings the membrane potential of HSNs back to their pre-modulator baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-tuned T-type channels might be active at these hyperpolarized potentials and thereby pass a depolarizing current that brings the membrane potential of HSNs back to their pre-modulator baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain the suppression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "f29de41c-1d42-4377-bb63-7899bfacc120",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C86",
+      "claim": "In the absence of inhibitory peptides, the resting potential of HSNs would be such that re-tuned T-type channels are inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the absence of inhibitory peptides, the resting potential of HSNs would be such that re-tuned T-type channels are inactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the voltage-dependence of the mutant channels.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "733cb014-6037-4ae4-8747-f2debe7b3e98",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C87",
+      "claim": "Re-tuned T-type channels could have little effect on circuit function in the absence of hyperpolarizing modulatory inputs, which is consistent with the observation that re-tuned T-type channels have little effect on C. elegans reproductive behavior in the absence of peptidergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-tuned T-type channels could have little effect on circuit function in the absence of hyperpolarizing modulatory inputs, which is consistent with our observation that re-tuned T-type channels have little effect on C. elegans reproductive behavior in the absence of peptidergic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral data and the proposed mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b41f0d59-0dc6-4d05-a526-6b9068918ad0",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C88",
+      "claim": "Re-tuned T-type channels might boost small depolarizing inputs onto HSNs that are hyperpolarized by peptidergic inhibition and allow those depolarizing inputs to drive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-tuned T-type channels might boost small depolarizing inputs onto HSNs that are hyperpolarized by peptidergic inhibition and allow those depolarizing inputs to drive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed alternative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "392e2191-f106-4dcb-a10e-b369963eaabf",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C89",
+      "claim": "T-type channels can boost depolarizations generated by cell-intrinsic mechanisms, for example in cardiac myocytes and their C. elegans counterparts, pharyngeal muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T-type channels can also boost depolarizations generated by cell-intrinsic mechanisms, for example in cardiac myocytes (Hagiwara et al., 1988; Zhou and Lipsius, 1994; Mangoni et al., 2006) and their C. elegans counterparts, pharyngeal muscle cells (Shtonda and Avery, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "bf2c70fd-9b37-4f46-a321-05b7fea43e16",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C90",
+      "claim": "Re-tuned T-type channels restored wild-type behavior to animals in which HSNs receive excess inhibition, but the pattern of HSN activity in these animals was strikingly different from that in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-tuned T-type channels restored wild-type behavior to animals in which HSNs receive excess inhibition, but the pattern of HSN activity in these animals was strikingly different from that in the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data showing different patterns of activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "895fbdf5-4013-4aea-b34f-9e1156491026",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C91",
+      "claim": "In the wild type, low-frequency, high-amplitude calcium transients were observed in HSN cell bodies and neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild type, we observed low-frequency, high-amplitude calcium transients in HSN cell bodies and neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "49ecda54-240e-4382-ab01-ec929cc5bf24",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C92",
+      "claim": "Under the conditions used to record HSN activity, calcium transients did not correlate with egg laying or muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the conditions we used to record HSN activity these calcium transients did not correlate with egg laying or muscle contractions (data not shown), and only rarely did we observe egg laying by immobilized animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations during calcium imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "b3c00966-6b2e-4359-9049-e86f7aab0117",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C93",
+      "claim": "Collins et al. recorded HSN activity in freely moving animals and showed that HSNs are active during periods of behavioral quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Collins et al. recorded HSN activity in freely moving animals and showed that HSNs are active during periods of behavioral quiescence (Collins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Collins et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "92c0bf57-4e09-4eac-9235-a970aab425e3",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C94",
+      "claim": "The data are inconsistent with a model in which the HSNs function as typical motor neurons to acutely drive target muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our data and those of Collins et al. are inconsistent with a model in which the HSNs function as typical motor neurons to acutely drive target muscle contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of correlation between HSN activity and muscle contractions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "349a4b80-1dcd-4020-acf7-674a7ca8e9ed",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C95",
+      "claim": "Peptidergic inhibition through the neuropeptide receptor EGL-6 strongly affected calcium transients in HSNs; almost none of the egl-6(gf) mutant HSNs displayed any calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidergic inhibition through the neuropeptide receptor EGL-6 strongly affected calcium transients in HSNs; almost none of the egl-6(gf) mutant HSNs displayed any calcium transients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "abe43ace-3fe8-4cf3-83c7-e0246aaf9e05",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C96",
+      "claim": "The cca-1 suppressor mutation strikingly reduced the amplitude and increased the frequency of HSN calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "On its own, the cca-1 suppressor mutation strikingly reduced the amplitude and increased the frequency of HSN calcium transients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "1030def7-ce61-4d0e-8d21-fe9eba9fb4e2",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C97",
+      "claim": "High-frequency, low-amplitude transients in cca-1 mutant HSNs were not affected by increased peptidergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These high-frequency, low-amplitude transients in cca-1 mutant HSNs were not affected by increased peptidergic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging data comparing cca-1(n5209) and egl-6(gf) cca-1(n5209).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "665fa33b-e52e-434b-a541-6e6e046f1e70",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C98",
+      "claim": "HSNs carrying re-tuned T-type channels were functionally disengaged from inhibitory peptidergic modulation at the level of cell physiology as well as behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, HSNs carrying re-tuned T-type channels were functionally disengaged from inhibitory peptidergic modulation at the level of cell physiology as well as behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calcium imaging and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "39a63941-8fcf-4b2f-9fc2-28208142342a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C99",
+      "claim": "The cumulative activity of cca-1 mutant HSNs was comparable to that of wild-type HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the calcium transients of wild-type and cca-1 mutant HSNs were clearly different, we found that the cumulative activity of cca-1 mutant HSNs was comparable to that of wild-type HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cumulative calcium data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "5af01d2b-4a7d-4aeb-8268-b9c876cfc40f",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C100",
+      "claim": "Reproductive behavior is not driven by fast, phasic signaling from HSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that reproductive behavior is not driven by fast, phasic signaling from HSNs, as might be suggested by the direct innervation of vulval muscles by serotonergic HSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that different patterns of activity produce similar behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "601dfbe5-ba3a-499a-b27a-fb483e8cfc3e",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C101",
+      "claim": "HSN targets integrate signals from HSNs over longer periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our data indicate that HSN targets integrate signals from HSNs over longer periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cumulative activity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "9f55a39a-f687-43e9-8586-a59140db7364",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C102",
+      "claim": "Bursts of reproductive behavior are separated by twenty to thirty minutes of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, bursts of reproductive behavior are separated by twenty to thirty minutes of quiescence, suggesting that the timescale over which such an integrative mechanism would function is on the order of tens of minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the behavioral analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d3afd2ca-71ef-45e3-9d21-c676ef6a50a4",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C103",
+      "claim": "The timescale over which an integrative mechanism would function is on the order of tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, bursts of reproductive behavior are separated by twenty to thirty minutes of quiescence, suggesting that the timescale over which such an integrative mechanism would function is on the order of tens of minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "3f12bb87-9a95-4f73-bbf3-435f03fe0e0d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C104",
+      "claim": "Vertebrates possess three genes that encode T-type channels, each of which is expressed in many central circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike C. elegans, whose genome encodes only one T-type channel, vertebrates possess three genes that encode T-type channels, each of which is expressed in many central circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate T-type channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "86537d61-a28b-40d5-81d2-7651f3566227",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C105",
+      "claim": "The duplication of T-type calcium genes in vertebrate phyla could reflect expanded and diversified roles for T-type channels that are analogous to their function in the C. elegans serotonin system.",
+      "claim_type": "EXPLICIT",
+      "source": "The duplication of T-type calcium genes in vertebrate phyla could reflect expanded and diversified roles for T-type channels that are analogous to their function in the C. elegans serotonin system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c66908c3-00a0-4e2f-b283-cd480316e55a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C106",
+      "claim": "Different T-type channel isoforms might be involved in the gating of multiple modulatory systems in the vertebrate brain.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, different T-type channel isoforms might be involved in the gating of multiple modulatory systems in the vertebrate brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "df0ac94b-d615-44fa-b939-27d94a773873",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C107",
+      "claim": "Alleles of T-type channel genes are strongly linked to heritable epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Alleles of T-type channel genes are strongly linked to heritable epilepsy (Kim et al., 2001; Heron et al., 2004; Khosravani et al., 2005; Singh et al., 2007; Powell et al., 2009) and neuropathic pain (Bourinet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "a84be700-baf8-4861-a341-5f758ecce149",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C108",
+      "claim": "Alleles of T-type channel genes are linked to neuropathic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Alleles of T-type channel genes are strongly linked to heritable epilepsy (Kim et al., 2001; Heron et al., 2004; Khosravani et al., 2005; Singh et al., 2007; Powell et al., 2009) and neuropathic pain (Bourinet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bourinet et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "f64103e5-5980-4e84-b10e-da66dd83f83d",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C109",
+      "claim": "A T-type channel variant is associated with autism spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "A T-type channel variant is also associated with autism spectrum disorders (Splawski et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Splawski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "590c785d-2b70-452c-b26d-78bdeae5366b",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C110",
+      "claim": "T-type channels are required in thalamic circuits for normal sleep, in midbrain centers for central processing of nociception, and in cerebellar circuits for motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "T-type channels are required in thalamic circuits for normal sleep, in midbrain centers for central processing of nociception, and in cerebellar circuits for motor learning (Anderson et al., 2005; Park et al., 2010; Ly et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Anderson et al., 2005; Park et al., 2010; Ly et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "d0412ab6-f263-4f4f-9b7c-fffe95cfa529",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C111",
+      "claim": "In brain regions where T-type channels function, altering T-type channels might affect receptivity of neural circuits to modulatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study raises the intriguing possibility that in these brain regions altering T-type channels might affect receptivity of neural circuits to modulatory inputs and that defective gating of neuromodulation might be an underlying cause of pathologies associated with T-type channel dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "7ee7ead8-2ab5-4a83-b92c-ad1ea27f9047",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C112",
+      "claim": "Defective gating of neuromodulation might be an underlying cause of pathologies associated with T-type channel dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study raises the intriguing possibility that in these brain regions altering T-type channels might affect receptivity of neural circuits to modulatory inputs and that defective gating of neuromodulation might be an underlying cause of pathologies associated with T-type channel dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e5db8d95-d86a-47fc-b3c6-f4c6929ab587",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C113",
+      "claim": "T-type channel isoforms are differentially regulated by diverse intracellular signaling systems, including systems that couple to protein kinases C and A and heterotrimeric G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "T-type channel isoforms are differentially regulated by diverse intracellular signaling systems, including systems that couple to protein kinases C and A and heterotrimeric G proteins (Wolfe et al., 2003; Park et al., 2003, 2006; Kim et al., 2006; DePuy et al., 2006; Hu et al., 2009; Perez-Reyes, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "3c161b24-cd3c-43fc-8749-75d1f4d559e4",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C114",
+      "claim": "T-type channel genes encode transcripts that display a high degree of alternative splicing to generate multiple channel isoforms from a single locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, T-type channel genes encode transcripts that display a high degree of alternative splicing to generate multiple channel isoforms from a single locus (Senatore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Senatore et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "2f7b48bf-1052-4d80-968b-3a1cbef9ffa6",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C115",
+      "claim": "Neurons can remodel the complement of T-type channels either through genetic programs and mechanisms that couple neural activity to mRNA splicing, or acutely regulate T-type channels through canonical second messenger signaling pathways and effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons can, therefore, remodel the complement of T-type channels either through genetic programs and mechanisms that couple neural activity to mRNA splicing, or acutely regulate T-type channels through canonical second messenger signaling pathways and effectors (Murbarti\u00e1n et al., 2004; Senatore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Murbarti\u00e1n et al., 2004; Senatore et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c06c8afa-20c6-40d3-af09-1e7301f233ac",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C116",
+      "claim": "A gating function of T-type channels with respect to neuromodulation would be subject to a high degree of selective control and possess a large capacity for plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this regulation, in the vertebrate brain a gating function of T-type channels with respect to neuromodulation would be subject to a high degree of selective control and possess a large capacity for plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the regulatory mechanisms described.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "54534298-d897-4b97-b309-41a7187bca34",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C117",
+      "claim": "T-type calcium channels could be important therapeutic targets for psychiatric disorders linked to defects in neuromodulatory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis that T-type channels gate neuromodulatory inputs to circuits implies that T-type calcium channels could be important therapeutic targets for psychiatric disorders linked to defects in neuromodulatory systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "313da0fb-897f-4bca-8e57-86840160950a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C118",
+      "claim": "Compounds that alter the voltage-dependencies of T-type channels might synergize with therapeutics that directly target monoamine signaling in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our studies of a model serotonergic circuit in C. elegans, we suggest that compounds that alter the voltage-dependencies of T-type channels might synergize with therapeutics that directly target monoamine signaling in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "ac1316f6-d7e6-40e9-9800-aa1104bd3066",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C119",
+      "claim": "Globally manipulating T-type channel function in the brain could affect specific circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our studies demonstrate the possibility that globally manipulating T-type channel function in the brain could affect specific circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the specificity observed in C. elegans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c7f447d3-256b-433f-82f5-43f310a6c752",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C120",
+      "claim": "T-type channels are widely expressed in the C. elegans nervous system, as they are in the vertebrate brain.",
+      "claim_type": "EXPLICIT",
+      "source": "T-type channels are widely expressed in the C. elegans nervous system, as they are in the vertebrate brain, but in C. elegans, re-tuning T-type channels by mutation had a striking effect on the modulation of a circuit that controls reproductive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression data in Figure 6 and knowledge about vertebrate expression.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "fee428f9-fc52-4ff0-af8a-783c1e52f525",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C121",
+      "claim": "In C. elegans, re-tuning T-type channels by mutation had a striking effect on the modulation of a circuit that controls reproductive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "T-type channels are widely expressed in the C. elegans nervous system, as they are in the vertebrate brain, but in C. elegans, re-tuning T-type channels by mutation had a striking effect on the modulation of a circuit that controls reproductive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral and physiological data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "e558e978-a7e8-410f-ab6d-d8792d4a29e6",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C122",
+      "claim": "The origins of the apparent specificity of T-type channel effects are in the combination of the biophysical basis of inhibition of serotonin neurons and the manner in which serotonin signals are processed by a downstream circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the origins of this apparent specificity are in the combination of in the biophysical basis of inhibition of serotonin neurons and the manner in which serotonin signals are processed by a downstream circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data on voltage-dependence and signal integration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "616126d4-1328-4fbe-b552-858d111af29a",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "claim_id": "C123",
+      "claim": "Similar cellular and circuit mechanisms likely exist in the vertebrate brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly likely that similar cellular and circuit mechanisms exist in the vertebrate brain, and when the pharmacological tools become available it will be important to test whether manipulating vertebrate T-type channels restores function to neural circuits in and behavior of animal models of psychiatric disorders associated with monoamine dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in C. elegans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c54fb472-0478-4412-afc0-e4dd7501a3eb",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The n5209 mutation strongly and specifically suppresses the behavioral effects of excess peptidergic inhibition mediated by egl-6(gf), restoring normal egg-laying behavior without grossly affecting the temporal structure of reproductive behavior. The suppression is specific to peptidergic inhibition pathways rather than general Go signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C39 collectively demonstrate that n5209 suppresses egl-6(gf) behavioral defects (C27-C30), shows specificity for peptidergic pathways (C31-C32), and preserves normal behavioral structure (C33-C39). The behavioral assays (Figure 1) and temporal analysis provide strong converging evidence for this specific suppression mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The n5209 and n6122 suppressor mutations affect the T-type calcium channel gene cca-1, causing a proline-to-serine substitution (P262S) at a highly conserved residue. This mutation alters channel function rather than causing loss of function, as evidenced by semi-dominance and differential effects compared to a deletion allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 are well-supported by genetic mapping (C40, Figure 2A), independent recovery of the same mutation (C40), sequence conservation analysis (C43-C44, Figure 2C), and functional comparison with deletion alleles (C45-C49, Figure 3). The convergence of genetic and functional evidence strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "62b83a62-2c57-472d-9d62-82a08fb7123f",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The P262S mutation symmetrically shifts the voltage-dependencies of CCA-1 T-type channel activation and inactivation toward more hyperpolarized potentials by approximately 7-10 mV, without changing the slope factor. This results in a window current operating over a more hyperpolarized voltage range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C50-C56 are strongly supported by electrophysiological recordings from Xenopus oocytes (Figure 4). The data show consistent shifts in both activation (C52-C53) and inactivation (C54) with unchanged slope factors (C55), demonstrating a symmetric re-tuning of channel voltage-dependence. Sample sizes (N=5-10) are adequate for electrophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "0cc4acb4-b580-4200-bb11-b8c95721e07c",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The cca-1(n5209) mutation bypasses peptidergic inhibition by acting in parallel to G protein signaling pathways, specifically requiring the HSNs to exert its suppressive effect on reproductive behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C57-C61 are supported by genetic epistasis experiments (Figure 5). Enhancement of suppression with goa-1 loss (C57-C58) and neuropeptide ligand mutations (C59) indicates parallel action, while lack of effect in HSN-ablated animals (C60-C61) demonstrates HSN-specific function. The logic of the genetic interactions is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "c607dbb1-df2e-476b-9639-452ff6c64b9c",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CCA-1 is expressed in HSNs, VC neurons, and other cells, but the n5209 mutant channels act specifically in the HSNs to suppress peptidergic inhibition. Expression in VC neurons is dispensable for the suppression phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C71 are well-supported by expression analysis (C62-C64, Figure 6A-B), genetic analysis with lin-39 mutants (C65-C67, Figure 6C-F), and tissue-specific RNAi experiments (C68-C69, Figure 6G-I). The convergence of expression, genetic, and RNAi data strongly supports HSN-specific function of the mutant channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "693a620d-02a7-4815-9bcf-f3a8814db8d8",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cca-1(n5209) mutation restores calcium activity to HSNs silenced by egl-6(gf), producing high-frequency, low-amplitude transients that differ from wild-type patterns but restore cumulative activity in neurites to wild-type levels, correlating with behavioral rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C80 are strongly supported by calcium imaging data (Figure 7). The restoration of activity (C74), altered transient patterns (C75-C76), and differential effects on soma vs. neurite cumulative activity (C77-C78) are clearly demonstrated. The correlation with behavioral rescue (C79) is observed but causation is not definitively established. Sample sizes (N=16-27) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "fe8a49b9-46ce-4142-935a-c8813cf4d9b1",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "T-type calcium channels are critical regulators of the C. elegans serotonergic circuit and functionally gate inhibitory modulation in vivo, with particular importance for regulating presynaptic calcium in HSN neurites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C81-C82 represent the main conclusions drawn from the collective data. The critical regulatory role (C5) and gating function (C6) are well-supported by the behavioral, electrophysiological, and imaging data. The inference about presynaptic calcium regulation (C81-C82) is reasonable given the differential effects on soma vs. neurite activity, though direct presynaptic measurements were not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two proposed mechanisms explain how re-tuned T-type channels bypass peptidergic inhibition: (1) window currents at hyperpolarized potentials counteract neuropeptide-induced hyperpolarization, or (2) re-tuned channels boost small depolarizing inputs in hyperpolarized HSNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C88 present mechanistic hypotheses based on known T-type channel properties and the observed voltage shifts. While the proposals are biophysically plausible and consistent with the data, they remain speculative (evidence_type includes SPECULATION). Direct measurements of HSN membrane potential and testing of these specific mechanisms were not performed. The hypotheses are reasonable but require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HSNs do not function as typical motor neurons driving acute muscle contractions. Instead, downstream targets integrate HSN signals over tens of minutes, as evidenced by the observation that different patterns of HSN activity (wild-type vs. cca-1 mutant) produce similar behavior when cumulative activity is matched.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C103 are supported by calcium imaging showing lack of correlation between transients and egg-laying (C92), citation to Collins et al. (C93), and the observation that different activity patterns yield similar cumulative activity and behavior (C99-C101). The inference about temporal integration (C101-C103) is reasonable given the behavioral timing data. However, the integrative mechanism itself is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "850a2cd3-1283-4fad-8511-d672562e8a73",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Serotonin is an evolutionarily conserved neuromodulator that regulates diverse behaviors and physiological functions in vertebrates, including thermoregulation, respiration, aggression, appetite, and sexual behavior. Dysregulation of serotonin systems underlies psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C12 represent established background knowledge supported by appropriate citations. These claims provide context for the study but are not novel findings. The citations appear appropriate for these well-established facts about serotonin function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "edc8d53f-22e9-4604-9be0-cab203946509",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The C. elegans egg-laying circuit comprises HSNs, VC neurons, and vulval muscles, with HSNs receiving inhibitory modulation from neuropeptides (FLP-10, FLP-17) via the EGL-6 receptor and Go signaling through GOA-1, DGK-1, and IRK-1. The egl-6(gf) mutation amplifies this inhibition in a ligand-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C13-C25 describe the established egg-laying circuit and are supported by appropriate citations to prior work (White et al., Ringstad and Horvitz, etc.). The circuit diagram (Figure 1\u2014figure supplement 1) is consistent with cited literature. These are well-established facts that provide essential background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "a7c606fd-2010-4583-b134-75238c895a98",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Vertebrates possess three T-type channel genes with diverse expression and regulation. The findings in C. elegans suggest that T-type channels might gate neuromodulation in vertebrate circuits, with implications for understanding neurological disorders and potential therapeutic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C119 and C123 discuss vertebrate T-type channels and extrapolate from C. elegans findings. While the background on vertebrate channels is well-cited (C104, C107-C110, C113-C115), the extrapolations to vertebrate function (C105-C106, C111-C112, C116-C119, C123) are speculative. These are reasonable hypotheses for future work but lack direct experimental support in vertebrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    },
+    {
+      "id": "3e8ddd6b-7c5d-46dc-8518-3264f8b63e69",
+      "content_id": "9f6bab54-bb22-4e05-9d51-a656cfed0d7a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "T-type channels are widely expressed in C. elegans and vertebrate nervous systems, but re-tuning these channels has specific effects on particular circuits due to the combination of biophysical properties of inhibition and downstream signal processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C120-C122 are supported by expression data (C120, Figure 6), behavioral/physiological specificity (C121), and citations to prior work on T-type channels in other systems (C89). The inference about the basis of specificity (C122) is reasonable given the data on voltage-dependence and signal integration, though alternative explanations are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:48:06.060733Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc87377e-c052-4cb9-b24d-112d15e2f64e",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "e604ce4f-4365-4def-98fa-b294dd27ee81",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "b4398f90-d674-425c-b2c5-163ac53b6628",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "d886d34c-2557-49fb-9fdf-3e2cfd27ab0e",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "e8651477-57f0-40c3-b25d-057e70d65c6e",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "8a4100c0-bc7a-4263-83d9-dcd587797f1d",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "d7321ccf-7876-487d-ab52-d3311beae57e",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "b5677b19-40f2-47e6-96cd-2732be2aaaf7",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "405caa2e-7b38-46c7-bc77-40fb9992d68a",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "ae9bb1ae-0ece-4df6-a47f-cfe41c37c2a1",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "1083a645-f475-4bf1-8214-ea45123c0ec6",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "0688b02c-c8a2-47cc-bc89-19dc520e237c",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "8b510114-4ee5-420c-9d58-bb30ac4bec88",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "65a52c1a-22ff-4549-a3e5-cc4e1c163793",
+      "result_id": "c54fb472-0478-4412-afc0-e4dd7501a3eb"
+    },
+    {
+      "claim_id": "7baeee0c-3113-4399-b0aa-f68d2889b42f",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "8d462ce2-40a7-4b4f-a7dc-1512abb360a1",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "da80d5a3-e30f-43cd-9a23-40877a2c5d0b",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "362f9a61-17d9-4198-aefc-abc0445471f0",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "e1519b63-d3a5-4dac-a077-912ff705b927",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "5f969780-1126-40f7-b806-f53596969564",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "4064d620-b492-4fbd-8f56-bb1c6d81eddd",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "652b49b7-8629-41ee-9633-02d0e9060ec5",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "9880b95a-c73f-40d9-8874-2a89e9471bd9",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "83db9edc-59af-4a7c-b300-119a00239ad1",
+      "result_id": "cce4e1e5-5c29-433e-a23e-6901ff1e690b"
+    },
+    {
+      "claim_id": "c40d67a7-9d17-437d-90b4-f244960a556f",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "e41bd757-9197-4030-a816-05eef7eac669",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "9f4860b7-fb6c-4a91-8eb7-c75bee47542a",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "007d3af0-fd10-4cae-ab9b-6ced3dad10be",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "50ba99c6-8bce-46cb-911a-768f1e265a8b",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "8ac38563-63fd-4452-8f46-3cee1391b129",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "64c46798-0edc-426b-9b64-6faae7bad722",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "9ae8384c-67a1-4a59-977a-782e930d6baa",
+      "result_id": "62b83a62-2c57-472d-9d62-82a08fb7123f"
+    },
+    {
+      "claim_id": "cdda654b-80c0-48a3-9991-e99a486fc510",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "57415e93-677e-4574-9864-a69feecfc36d",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "823cc8f2-15ac-48cb-9981-a7cc57686c1e",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "30b9dbe3-1b83-4c7a-9543-663ef9c686b0",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "3fc1328f-f2eb-4339-a6c4-a079c87e01b5",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "5e88b359-3aec-4870-ac34-e123b710f515",
+      "result_id": "0cc4acb4-b580-4200-bb11-b8c95721e07c"
+    },
+    {
+      "claim_id": "629bb169-4ed3-4524-b0d4-42702dbc41c2",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "5b2f756b-fcda-4049-a614-5765f30bc428",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "5b5ce6c6-4f3a-4ea7-bdab-c17988b2a484",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "87736f96-b96a-4550-b093-777e9865c4d3",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "bdaf0f00-c882-42a2-886a-db0eec229855",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "dfc72702-8570-454f-99dd-1c2b797986c2",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "b1bf740a-2570-4b40-b1f8-1917492a031e",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "1a19724c-4713-4c4a-8a8c-ada9a625d577",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "beed0474-f275-4597-ac9d-4df998d7c497",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "416fca66-8c54-4b07-b291-ac194a06bf8a",
+      "result_id": "c607dbb1-df2e-476b-9639-452ff6c64b9c"
+    },
+    {
+      "claim_id": "957ca349-5000-4d89-9d50-171f90d21bc6",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "0aaeeb7d-b8f8-4f10-a267-29df17d1a640",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "3f6980ef-70fa-4222-ab54-b33c21df59fb",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "d6ff2538-45a8-48b1-92e1-1f2ad4018e8e",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "e28d8596-910f-428c-ac29-2b1862e544e9",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "ab0fcd2e-1a9b-4ca5-b321-a0c435fd0baf",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "aa869051-5aa3-497e-927b-0d74f448d1ed",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "56dcd7ff-b1fa-48cd-af43-2dbc7a738543",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "d5f7a900-123d-4724-955f-1d6bb99cc4d5",
+      "result_id": "693a620d-02a7-4815-9bcf-f3a8814db8d8"
+    },
+    {
+      "claim_id": "6b94d1c3-b680-4b6c-b9cf-85902ee975ac",
+      "result_id": "fe8a49b9-46ce-4142-935a-c8813cf4d9b1"
+    },
+    {
+      "claim_id": "d298f406-3d67-405e-94c9-b7baff8653b2",
+      "result_id": "fe8a49b9-46ce-4142-935a-c8813cf4d9b1"
+    },
+    {
+      "claim_id": "b3614c65-45a0-4063-a535-1b322121b92f",
+      "result_id": "fe8a49b9-46ce-4142-935a-c8813cf4d9b1"
+    },
+    {
+      "claim_id": "ff7e0f8e-11be-40f9-86b2-d205ff968e55",
+      "result_id": "fe8a49b9-46ce-4142-935a-c8813cf4d9b1"
+    },
+    {
+      "claim_id": "8f383068-9670-4e2f-9e0e-efe2e7ea0f24",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "ea8f9147-8e89-4480-a7c5-033e791c453a",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "f47a6ce8-32c1-44dc-a74a-c1d959567c21",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "f29de41c-1d42-4377-bb63-7899bfacc120",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "733cb014-6037-4ae4-8747-f2debe7b3e98",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "b41f0d59-0dc6-4d05-a526-6b9068918ad0",
+      "result_id": "37f5670d-e8b5-4f66-9141-2d1f5c6a6ba7"
+    },
+    {
+      "claim_id": "bf2c70fd-9b37-4f46-a321-05b7fea43e16",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "895fbdf5-4013-4aea-b34f-9e1156491026",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "49ecda54-240e-4382-ab01-ec929cc5bf24",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "b3c00966-6b2e-4359-9049-e86f7aab0117",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "92c0bf57-4e09-4eac-9235-a970aab425e3",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "349a4b80-1dcd-4020-acf7-674a7ca8e9ed",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "abe43ace-3fe8-4cf3-83c7-e0246aaf9e05",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "1030def7-ce61-4d0e-8d21-fe9eba9fb4e2",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "665fa33b-e52e-434b-a541-6e6e046f1e70",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "39a63941-8fcf-4b2f-9fc2-28208142342a",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "5af01d2b-4a7d-4aeb-8268-b9c876cfc40f",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "601dfbe5-ba3a-499a-b27a-fb483e8cfc3e",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "9f55a39a-f687-43e9-8586-a59140db7364",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "d3afd2ca-71ef-45e3-9d21-c676ef6a50a4",
+      "result_id": "9ff6c9fe-ef0b-457c-8581-a8faa617fb16"
+    },
+    {
+      "claim_id": "24c7f3a8-28f2-413d-a123-b48429baa9b1",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "aee1a590-096e-4e4e-9663-01637798142c",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "838cad56-7c7a-4b4d-b1db-f8769a46d054",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "a8de1409-c00f-467f-b269-dc10a6d4daf3",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "5a333ee3-364a-4181-a172-6b3aa2f725b0",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "6a172a66-3654-490e-a1ef-7fc83446f2e8",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "d3bd520a-95db-4c96-bc27-6fc1ad746f13",
+      "result_id": "850a2cd3-1283-4fad-8511-d672562e8a73"
+    },
+    {
+      "claim_id": "47816640-e209-449c-abee-a3dec5f934ee",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "8906c778-54ad-44cc-99cd-297f8c0be95d",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "5b7fa325-dbc0-4fed-be0d-cf9fd2c4c7ad",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "259f6e44-a1d9-4eed-a5d6-13a9ae999aa1",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "99407a0c-fc11-4d9e-b21c-e0c47a405558",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "a27ce94e-1222-414f-a4c8-3799e2ce00d2",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "c2a23950-c739-4573-b8c9-37f28ffe3639",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "881c0b04-8e80-431b-8f14-0f5a18d55973",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "2408b2b3-e346-4855-915c-19248e282674",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "6330d714-e15e-4b8e-a130-06343a934973",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "ce86a5f6-26dd-4b2d-b3e5-d27af001d4fd",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "0ee87b6e-6645-4522-9435-edb054142a0d",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "de60796a-1129-44a5-b87b-94fb68f90810",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "0af47306-d80c-4914-b3fd-72becabd00c2",
+      "result_id": "edc8d53f-22e9-4604-9be0-cab203946509"
+    },
+    {
+      "claim_id": "3f12bb87-9a95-4f73-bbf3-435f03fe0e0d",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "86537d61-a28b-40d5-81d2-7651f3566227",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "c66908c3-00a0-4e2f-b283-cd480316e55a",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "df0ac94b-d615-44fa-b939-27d94a773873",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "a84be700-baf8-4861-a341-5f758ecce149",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "f64103e5-5980-4e84-b10e-da66dd83f83d",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "590c785d-2b70-452c-b26d-78bdeae5366b",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "d0412ab6-f263-4f4f-9b7c-fffe95cfa529",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "7ee7ead8-2ab5-4a83-b92c-ad1ea27f9047",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "e5db8d95-d86a-47fc-b3c6-f4c6929ab587",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "3c161b24-cd3c-43fc-8749-75d1f4d559e4",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "2f7b48bf-1052-4d80-968b-3a1cbef9ffa6",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "c06c8afa-20c6-40d3-af09-1e7301f233ac",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "54534298-d897-4b97-b309-41a7187bca34",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "313da0fb-897f-4bca-8e57-86840160950a",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "ac1316f6-d7e6-40e9-9800-aa1104bd3066",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "616126d4-1328-4fbe-b552-858d111af29a",
+      "result_id": "a7c606fd-2010-4583-b134-75238c895a98"
+    },
+    {
+      "claim_id": "392e2191-f106-4dcb-a10e-b369963eaabf",
+      "result_id": "3e8ddd6b-7c5d-46dc-8518-3264f8b63e69"
+    },
+    {
+      "claim_id": "c7f447d3-256b-433f-82f5-43f310a6c752",
+      "result_id": "3e8ddd6b-7c5d-46dc-8518-3264f8b63e69"
+    },
+    {
+      "claim_id": "fee428f9-fc52-4ff0-af8a-783c1e52f525",
+      "result_id": "3e8ddd6b-7c5d-46dc-8518-3264f8b63e69"
+    },
+    {
+      "claim_id": "e558e978-a7e8-410f-ab6d-d8792d4a29e6",
+      "result_id": "3e8ddd6b-7c5d-46dc-8518-3264f8b63e69"
+    }
+  ],
+  "comparisons": []
+}
